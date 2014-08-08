@@ -1,0 +1,13 @@
+# System files
+.project
+.DS_Store
+.sass-cache
+node_modules
+_site
+
+# Local
+.resources
+
+# Styles and Scrips
+!public/assets/styles/.gitkeep
+!public/assets/scripts/.gitkeep
