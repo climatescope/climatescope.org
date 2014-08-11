@@ -1,6 +1,15 @@
 #Climatescope
 ====
 
+## Project structure
+
+| | |
+| --- | --- |
+| / | 
+| /source_assets | Contains the js and scss files that are compiled by Grunt |
+| /source | Used by Jekyll to build the site |
+| /_site | The final site built by Jekyll |
+
 ## Development environment
 To set up the development environment for this website, you'll need to install the following on your system:
 
@@ -29,7 +38,7 @@ The system will watch files and execute tasks whenever one of them changes.
 ```
 $ grunt jk
 ```
-Spans a jekyll server, the website will be accesible on localhost:4000.
+Spins up a jekyll server accesible on localhost:4000.
 
 ### Other commands
 Clean the compiled sass, javascript, and _/site:
@@ -46,9 +55,3 @@ Compile the compass files and javascripts prepared for production (minified, ugl
 ```
 $ grunt prod
 ```
-
-## Team
-
-Daniel da Silva - [Github](https://github.com/danielfdsilva)  
-Ricardo Mestre - [Github](https://github.com/ricardomestre)  
-Olaf Veerman - [Github](https://github.com/olafveerman)

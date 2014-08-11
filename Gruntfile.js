@@ -1,14 +1,14 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     // https://github.com/gruntjs/grunt-contrib-clean
-    clean : ['assets/styles/*', '!assets/**/.gitkeep', 'assets/scripts/*', '_site/*'],
+    clean : ['source/assets/styles/*', '!source/assets/**/.gitkeep', 'source/assets/scripts/*', '_site/*'],
     
     // https://github.com/gruntjs/grunt-contrib-compass
     compass : {
       // Default options.
       options : {
-          sassDir : 'src/styles',
-          cssDir : 'assets/styles',
+          sassDir : 'source_assets/styles',
+          cssDir : 'source/assets/styles',
           //raw : 'require "sassy-strings";'
       },
       
@@ -38,17 +38,17 @@ module.exports = function(grunt) {
         options : {
           force : true
         },
-        src : ['src/scripts/**.js']
+        src : ['source_assets/scripts/**.js']
       },
       
-      prod: ['src/scripts/**.js']
+      prod: ['source_assets/scripts/**.js']
     },
     
     // https://github.com/gruntjs/grunt-contrib-uglify
     uglify: {
       prod: {
         files: {
-          'assets/scripts/website.min.js': ['src/scripts/*.js']
+          'source/assets/scripts/main.min.js': ['source_assets/scripts/*.js']
         }
       }
     },
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
     // https://npmjs.org/package/grunt-contrib-watch
     watch : {
       src: {
-        files: ['src/scripts/**.js', 'src/styles/**.scss'],
+        files: ['source_assets/scripts/**.js', 'source_assets/styles/**.scss'],
         tasks: ['build']
       },
       jekyll : {
