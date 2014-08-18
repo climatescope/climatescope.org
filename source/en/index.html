@@ -1,0 +1,38 @@
+---
+layout: base
+title : Index
+---
+<h1>Hi there</h1>
+<ul>
+  <li>One</li>
+  <li>Two</li>
+  <li>Three</li>
+  <li>Four</li>
+  <li>Three</li>
+  <li>Four</li>
+</ul>
+
+<ul>
+<h2>English countries</h2>
+{% for post in site.en_country %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a><br/>
+    Relative path: {{ post.relative_path }}<br/>
+    Path: {{ post.path }}<br/>
+    Language: {{ post.lang }}
+  </li>
+{% endfor %} 
+</ul>
+
+<ul>
+<h2>Spanish countries</h2>
+{% for post in site.es_country %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a><br/>
+    Relative path: {{ post.relative_path }}<br/>
+    Path: {{ post.path }}<br/>
+    Collection: {{ post.collection }}
+    {{ site.collections.{{ post.collection }}.lang }}
+  </li>
+{% endfor %} 
+</ul>

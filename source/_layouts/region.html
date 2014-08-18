@@ -1,0 +1,17 @@
+---
+layout: base
+---
+<h1>{{ page.title }}</h1>
+<h2>Description</h2>
+{{ content }}
+
+<h2>Countries</h2>
+<ul>
+{% for country in site.en_country %}
+  {% if country.region == page.region %}
+  <li>
+    <a href="{{ country.url }}">{{ country.title }}</a>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>

@@ -2,3 +2,28 @@ safe:           false
 domain:         http://www.global-climatescope.org
 name:           Global Climatescope 2014
 source:         source
+collections:
+  en_region:
+    output: true
+    permalink: /en/region/:path/
+    lang: en
+  es_region:
+    output: true
+    permalink: /es/region/:path/
+    lang: es
+  en_country:
+    output: true
+    permalink: /en/country/:path/
+    lang: en
+  es_country:
+    output: true
+    permalink: /es/pais/:path/
+    lang: es
+  en_parameter:
+    output: true
+    permalink: /en/topic/:path/
+    lang: en
+  es_parameter:
+    output: true
+    permalink: /es/tema/:path/
+    lang: es
