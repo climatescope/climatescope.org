@@ -37,7 +37,7 @@ collections:
       
   en_state:
     output: true
-    permalink: /en/:path/
+    permalink: /en/country/:path/
     lang: en
     i18n:
       en: en_state
@@ -45,7 +45,7 @@ collections:
       
   es_state:
     output: true
-    permalink: /es/:path/
+    permalink: /es/pais/:path/
     lang: es
     i18n:
       en: en_state
