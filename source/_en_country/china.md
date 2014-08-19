@@ -4,6 +4,6 @@ layout: country
 id: ch
 title: China
 
-region: eur
+region: asia
 ---
 English description
