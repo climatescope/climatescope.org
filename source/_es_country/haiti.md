@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: ht
+title: Haití
 
-region: asia
-grid: on
+region: lac
+grid: off
 ---
 Spanish description

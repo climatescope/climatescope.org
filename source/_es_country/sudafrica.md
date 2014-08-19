@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: za
+title: Sudáfrica
 
-region: asia
+region: africa
 grid: on
 ---
 Spanish description

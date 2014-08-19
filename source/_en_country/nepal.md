@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: np
+title: Nepal
 
-region: lac
-grid: on
+region: asia
+grid: off
 ---
 English description

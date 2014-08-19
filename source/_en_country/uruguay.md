@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: uy
+title: Uruguay
 
 region: lac
 grid: on

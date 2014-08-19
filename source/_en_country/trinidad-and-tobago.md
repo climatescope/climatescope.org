@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: tt
+title: Trinidad and Tobago
 
 region: lac
 grid: on

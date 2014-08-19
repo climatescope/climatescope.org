@@ -55,6 +55,10 @@
     "grid": "on",
     "states": [
       {
+        "name": "Fujian",
+        "iso": "CN-35"
+      },
+      {
         "name": "Gansu",
         "iso": "CN-62"
       },
@@ -63,12 +67,24 @@
         "iso": "CN-44"
       },
       {
+        "name": "Hebei",
+        "iso": "CN-13"
+      },
+      {
+        "name": "Heilongjiang",
+        "iso": "CN-23"
+      },
+      {
         "name": "Hubei",
         "iso": "CN-42"
       },
       {
         "name": "Jiangsu",
         "iso": "CN-32"
+      },
+      {
+        "name": "Jilin",
+        "iso": "CN-22"
       },
       {
         "name": "Nei Mongol",
@@ -171,8 +187,20 @@
     "grid": "on",
     "states": [
       {
+        "name": "Andhra Pradesh",
+        "iso": "IN-AP"
+      },
+      {
+        "name": "Gujarat",
+        "iso": "IN-GJ"
+      },
+      {
         "name": "Madhya Pradesh",
         "iso": "IN-MP"
+      },
+      {
+        "name": "Maharashtra",
+        "iso": "IN-MH"
       },
       {
         "name": "Karnataka",
@@ -181,6 +209,10 @@
       {
         "name": "Punjab",
         "iso": "IN-PB"
+      },
+      {
+        "name": "Rajasthan",
+        "iso": "IN-RJ"
       },
       {
         "name": "Tamil Nadu",

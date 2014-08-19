@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: bd
+title: Bangladesh
 
 region: asia
-grid: on
+grid: off
 ---
 English description

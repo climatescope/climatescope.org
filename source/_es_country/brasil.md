@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: br
+title: Brasil
 
-region: asia
+region: lac
 grid: on
 ---
 Spanish description

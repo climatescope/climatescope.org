@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: tt
+title: Trinidad y Tobago
 
-region: asia
+region: lac
 grid: on
 ---
 Spanish description

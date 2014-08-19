@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: ni
+title: Nicaragua
 
 region: lac
 grid: on

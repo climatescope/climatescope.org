@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: bz
+title: Belize
 
 region: lac
 grid: on

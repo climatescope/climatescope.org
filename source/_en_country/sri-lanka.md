@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: lk
+title: Sri Lanka
 
 region: asia
 grid: on
 ---
-Spanish description
+English description

@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: bo
+title: Bolivia
 
 region: lac
 grid: on

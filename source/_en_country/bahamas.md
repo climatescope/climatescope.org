@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: bs
+title: Bahamas
 
 region: lac
 grid: on

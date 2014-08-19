@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-63
-title: Quinghai
+id: ch-62
+title: Gansu
 
 region: asia
 country: ch
 ---
-English description
+Spanish description
 This is a Chinese state

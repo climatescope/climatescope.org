@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: sr
+title: Surinam
 
-region: asia
+region: lac
 grid: on
 ---
 Spanish description

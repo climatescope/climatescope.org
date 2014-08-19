@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: ke
+title: Kenia
 
-region: asia
-grid: on
+region: africa
+grid: off
 ---
 Spanish description

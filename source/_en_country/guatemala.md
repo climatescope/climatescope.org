@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: gt
+title: Guatemala
 
 region: lac
 grid: on

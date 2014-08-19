@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: sv
+title: El Salvador
 
 region: lac
 grid: on

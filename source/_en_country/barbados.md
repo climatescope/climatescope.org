@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: bb
+title: Barbados
 
 region: lac
 grid: on

@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: pk
+title: Pakistán
 
 region: asia
-grid: on
+grid: off
 ---
 Spanish description

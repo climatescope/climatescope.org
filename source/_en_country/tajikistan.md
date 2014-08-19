@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: tj
+title: Tajikistan
 
 region: asia
 grid: on
 ---
-Spanish description
+English description

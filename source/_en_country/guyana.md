@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: gy
+title: Guyana
 
 region: lac
 grid: on

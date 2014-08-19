@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: gy
+title: Guyana
 
-region: asia
+region: lac
 grid: on
 ---
 Spanish description

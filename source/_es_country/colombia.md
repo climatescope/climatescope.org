@@ -5,5 +5,6 @@ id: co
 title: Colombia
 
 region: lac
+grid: on
 ---
 Spanish description

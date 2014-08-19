@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: ht
+title: Haiti
 
 region: lac
-grid: on
+grid: off
 ---
 English description

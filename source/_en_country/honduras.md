@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: hn
+title: Honduras
 
 region: lac
 grid: on

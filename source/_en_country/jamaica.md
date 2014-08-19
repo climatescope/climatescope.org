@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: jm
+title: Jamaica
 
 region: lac
 grid: on

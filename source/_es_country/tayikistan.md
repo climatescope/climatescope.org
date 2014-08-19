@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: tj
+title: Tayikistán
 
 region: asia
 grid: on

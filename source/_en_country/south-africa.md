@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: za
+title: South Africa
 
-region: lac
+region: africa
 grid: on
 ---
 English description

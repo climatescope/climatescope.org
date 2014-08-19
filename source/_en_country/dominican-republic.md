@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: do
+title: Dominican Republic
 
 region: lac
 grid: on

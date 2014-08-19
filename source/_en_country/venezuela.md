@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: ve
+title: Venezuela
 
 region: lac
 grid: on

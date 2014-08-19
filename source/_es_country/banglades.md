@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: bd
+title: Bangladés
 
 region: asia
-grid: on
+grid: off
 ---
 Spanish description

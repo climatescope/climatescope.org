@@ -1,8 +1,8 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: br
+title: Brazil
 
 region: lac
 grid: on

@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: do
+title: República Dominicana
 
-region: asia
+region: lac
 grid: on
 ---
 Spanish description

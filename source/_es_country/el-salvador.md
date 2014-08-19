@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: ch
-title: China
+id: sv
+title: El Salvador
 
-region: asia
+region: lac
 grid: on
 ---
 Spanish description

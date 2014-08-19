@@ -1,10 +1,10 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: ke
+title: Kenya
 
-region: lac
-grid: on
+region: africa
+grid: off
 ---
 English description
