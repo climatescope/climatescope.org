@@ -1,9 +1,9 @@
 ---
 layout: country
 
-id: co
-title: Colombia
+id: ch
+title: China
 
-region: lac
+region: eur
 ---
 English description

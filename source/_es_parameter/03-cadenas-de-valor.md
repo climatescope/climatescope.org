@@ -1,7 +1,8 @@
 ---
 layout: parameter
+
+id: 3
 title: Cadenas de valor
-parameter: 3
 ---
 But it is a ponderous task; no ordinary letter-sorter in the Post-Office is equal to it. To grope down into the bottom of the sea after them; to have one's hands among the unspeakable foundations, ribs, and very pelvis of the world; this is a fearful thing. What am I that I should essay to hook the nose of this leviathan! The awful tauntings in Job might well appal me. Will he the (leviathan) make a covenant with thee? Behold the hope of him is vain! But I have swam through libraries and sailed through oceans; I have had to do with whales with these visible hands; I am in earnest; and I will try. There are some preliminaries to settle.
 
