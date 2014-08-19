@@ -1,0 +1,22 @@
+<div>
+{% for l in site.data.i18n.lang %}
+
+  {% if page.collection %}
+    {% assign translated_col = site.collections[page.collection].i18n[l] %}
+    
+    {% for col in site[translated_col] %}
+      {% if col.id == page.id %}
+        <a href="{{site.domain}}{{col.url}}">{{l}}</a> 
+      {% endif %}
+    {% endfor %}
+    
+  {% else %}
+    {% for pg in site.pages %}
+      {% if pg.lang == l and pg.id == page.id %}
+        <a href="{{site.domain}}{{pg.url}}">{{l}}</a> 
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+{% endfor %}
+</div>

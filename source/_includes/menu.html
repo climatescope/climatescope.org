@@ -1,3 +1,11 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
+{% case language %}
+{% when 'en' %}
 <nav id="primary" role="navigation">
   <a href="#nav-links" class="toggle"><span class="visually-hidden">Menu</span></a>
   <ul class="links" id="nav-links">
@@ -25,10 +33,15 @@
       </ul>
     </li>
     <li>
-      <a href="/en/policies.html" title="Browse the policy database">Policies</a>
+      <a href="/en/policies/" title="Browse the policy database">Policies</a>
     </li>
     <li>
-      <a href="/en/download.html" title="Download the data">Download</a>
+      <a href="/en/download/" title="Download the data">Download</a>
     </li>
   </ul>
 </nav>
+
+{% when 'es' %}
+<p>menu spanish</p>
+
+{% endcase %}
