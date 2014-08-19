@@ -5,11 +5,17 @@ layout: base
 <h2>Description</h2>
 {{ content }}
 
-{% if site.collections[page.collection].lang  == 'en' %}
+{% case site.collections[page.collection].lang %}
+{% when 'en' %}
+  {% assign col = 'en_country' %}
+  <h2>States EN </h2>
+{% when 'es' %}
+  {% assign col = 'en_country' %}
+  <h2>States ES </h2>
+{% endcase %}
 
-  <h2>Countries EN </h2>
   <ul>
-  {% for country in site.en_country %}
+  {% for country in site[col] %}
     {% if country.region == page.id %}
     <li>
       <a href="{{ country.url }}">{{ country.title }}</a>
@@ -17,18 +23,3 @@ layout: base
     {% endif %}
   {% endfor %}
   </ul>
-
-{% elsif site.collections[page.collection].lang  == 'es' %}
-
-  <h2>Countries ES </h2>
-  <ul>
-  {% for country in site.es_country %}
-    {% if country.region == page.id %}
-    <li>
-      <a href="{{ country.url }}">{{ country.title }}</a>
-    </li>
-    {% endif %}
-  {% endfor %}
-  </ul>
-
-{% endif %}

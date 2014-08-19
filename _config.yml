@@ -35,6 +35,22 @@ collections:
       en: en_country
       es: es_country
       
+  en_state:
+    output: true
+    permalink: /en/:path/
+    lang: en
+    i18n:
+      en: en_state
+      es: es_state
+      
+  es_state:
+    output: true
+    permalink: /es/:path/
+    lang: es
+    i18n:
+      en: en_state
+      es: es_state
+      
   en_parameter:
     output: true
     permalink: /en/topic/:path/
