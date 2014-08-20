@@ -1,0 +1,24 @@
+---
+layout: base
+---
+<h1>{{ page.title }}</h1>
+{{ content }}
+
+{% case site.collections[page.collection].lang %}
+{% when 'en' %}
+  {% assign col = 'en_state' %}
+  <h2>States EN </h2>
+{% when 'es' %}
+  {% assign col = 'es_state' %}
+  <h2>States ES </h2>
+{% endcase %}
+
+  <ul>
+  {% for state in site[col] %}
+    {% if state.country == page.id %}
+    <li>
+      <a href="{{ state.url }}">{{ state.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>

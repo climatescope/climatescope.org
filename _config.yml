@@ -1,4 +1,68 @@
 safe:           false
-domain:         http://www.global-climatescope.org
+domain:         http://localhost:4000
 name:           Global Climatescope 2014
 source:         source
+collections:
+  en_region:
+    output: true
+    permalink: /en/region/:path/
+    lang: en
+    i18n:
+      en: en_region
+      es: es_region
+    
+  es_region:
+    output: true
+    permalink: /es/region/:path/
+    lang: es
+    i18n:
+      en: en_region
+      es: es_region
+      
+  en_country:
+    output: true
+    permalink: /en/country/:path/
+    lang: en
+    i18n:
+      en: en_country
+      es: es_country
+      
+  es_country:
+    output: true
+    permalink: /es/pais/:path/
+    lang: es
+    i18n:
+      en: en_country
+      es: es_country
+      
+  en_state:
+    output: true
+    permalink: /en/country/:path/
+    lang: en
+    i18n:
+      en: en_state
+      es: es_state
+      
+  es_state:
+    output: true
+    permalink: /es/pais/:path/
+    lang: es
+    i18n:
+      en: en_state
+      es: es_state
+      
+  en_parameter:
+    output: true
+    permalink: /en/topic/:path/
+    lang: en
+    i18n:
+      en: en_parameter
+      es: es_parameter
+      
+  es_parameter:
+    output: true
+    permalink: /es/tema/:path/
+    lang: es
+    i18n:
+      en: en_parameter
+      es: es_parameter
