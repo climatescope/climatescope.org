@@ -1,0 +1,25 @@
+---
+layout: base
+---
+<h1>{{ page.title }}</h1>
+<h2>Description</h2>
+{{ content }}
+
+{% case site.collections[page.collection].lang %}
+{% when 'en' %}
+  {% assign col = 'en_country' %}
+  <h2>Countries EN </h2>
+{% when 'es' %}
+  {% assign col = 'es_country' %}
+  <h2>Countries ES </h2>
+{% endcase %}
+
+  <ul>
+  {% for country in site[col] %}
+    {% if country.region == page.id %}
+    <li>
+      <a href="{{ country.url }}">{{ country.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>

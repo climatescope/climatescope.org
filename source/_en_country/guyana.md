@@ -1,0 +1,10 @@
+---
+layout: country
+
+id: gy
+title: Guyana
+
+region: lac
+grid: on
+---
+English description
