@@ -2,18 +2,19 @@
 {% for l in site.data.i18n.lang %}
 
   {% if page.collection %}
+    {% assign cur_lang = site.collections[page.collection].lang %}
     {% assign translated_col = site.collections[page.collection].i18n[l] %}
     
     {% for col in site[translated_col] %}
       {% if col.id == page.id %}
-        <a href="{{site.domain}}{{col.url}}">{{l}}</a> 
+        <a href="{{site.domain}}{{col.url}}">{{l}}</a> {% if l == cur_lang %}(Active){% endif %}
       {% endif %}
     {% endfor %}
     
   {% else %}
     {% for pg in site.pages %}
       {% if pg.lang == l and pg.id == page.id %}
-        <a href="{{site.domain}}{{pg.url}}">{{l}}</a> 
+        <a href="{{site.domain}}{{pg.url}}">{{l}}</a> {% if l == page.lang %}(Active){% endif %}
       {% endif %}
     {% endfor %}
   {% endif %}
