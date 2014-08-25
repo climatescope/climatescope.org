@@ -1,0 +1,9 @@
+/* ==========================================================================
+   Settings - contains the settings of the Global Climatescope
+   ========================================================================== */
+
+// Media queries
+$small-up: "(min-width: 544px)"; // Probably not used much, since we're officially supporting only medium-up
+$medium-up: "(min-width: 768px)";
+$large-up: "(min-width: 992px)";
+$xlarge-up: "(min-width: 1200px)";
