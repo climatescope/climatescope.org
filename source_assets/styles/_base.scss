@@ -2,16 +2,9 @@
    Styles - contains the global styles of the Global Climatescope
    ========================================================================== */
 
-// Media queries
-$small-up: "(min-width: 544px)"; // Probably not used much, since we're officially supporting only medium-up
-$medium-up: "(min-width: 768px)";
-$large-up: "(min-width: 992px)";
-$xlarge-up: "(min-width: 1200px)";
-
-
 /* Layout */
 
-#site-canvas { 
+#site-canvas {
   @include edit();
 }
 
@@ -23,17 +16,16 @@ $xlarge-up: "(min-width: 1200px)";
   @include center($max-width);
 }
 
-li {
-  @include column(1);
-  @media #{$large-up} {
-    @include column(1/6);
-  }
-}
-
 #site-ftr {
   @include center($max-width);
 }
 
+li {
+  @include column(12/12);
+  @media #{$large-up} {
+    @include column(2/12);
+  }
+}
 
 /*  Jeet Syntax Quick Reference
   --------------------------
