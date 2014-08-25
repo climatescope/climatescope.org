@@ -1,0 +1,17 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+@import "compass";
+
+@import "normalize";
+@import "reset";
+
+// Import Jeet grid - a grid system for humans: jeet.gs
+@import "jeet/settings";
+@import "jeet/functions";
+@import "jeet/grid";
+
+// Climatescope settings
+@import "settings";
+
+// Climatescope's custom styles
+@import "base";
