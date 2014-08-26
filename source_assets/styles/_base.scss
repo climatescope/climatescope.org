@@ -41,16 +41,19 @@ a:focus {
 // STRUCTURE
 
 #site-canvas {
-  // @include edit();
 }
 
 #site-hdr {
   padding: 2rem 0;
 }
 
+#site-headline {
+  @include col(5/12);
+}
+
 #site-title {
   @extend .hd-xs;
-  @include col(5/12);
+  margin-bottom: 0;
   em {
     font-style: normal;
     color: tint($primary-color, 60%);
@@ -94,6 +97,10 @@ a:focus {
   padding: 0 0 2rem 0;
   .heading {
     @include col(8/12);
+  }
+  .prime-title,
+  .subtitle {
+    margin-bottom: 0;
   }
 }
 
