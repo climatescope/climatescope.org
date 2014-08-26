@@ -50,6 +50,7 @@ a:focus {
 }
 
 #site-title {
+  @extend .hd-xs;
   @include col(5/12);
   em {
     font-style: normal;
@@ -99,6 +100,9 @@ a:focus {
 
 .single-bd {
   padding: 0 0 2rem 0;
+  h2 {
+    @extend .hd-xxs;
+  }
 }
 
 .meta-actions-menu {

@@ -53,73 +53,55 @@
 
 /* Misc */
 p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 /* Headings */
 
-// h1, .hd-xl {
-//   $ft-size: 28;
-//   font-size: rem-calc($ft-size);
-//   line-height: ($ft-size + 8) / $ft-size;
-//   font-weight: $body-font-bold;
-//   margin: 0 0 1rem 0;
-//   padding: 0;
-//
-//   @media #{$small-up} {
-//     $ft-size: 32;
-//     font-size: rem-calc($ft-size);
-//     line-height: ($ft-size + 8) / $ft-size;
-//     letter-spacing: -0.5px;
-//   }
-// }
-// h2, .hd-l {
-//   $ft-size: 24;
-//   font-size: rem-calc($ft-size);
-//   line-height: ($ft-size + 8) / $ft-size;
-//   font-weight: $body-font-bold;
-//   letter-spacing: -0.2px;
-//   margin: 0 0 1rem 0;
-//   padding: 0;
-//   @media #{$small-up} {
-//     $ft-size: 28;
-//     font-size: rem-calc($ft-size);
-//     line-height: ($ft-size + 8) / $ft-size;
-//     letter-spacing: -0.5px;
-//   }
-// }
-// h3, .hd-m {
-//   $ft-size: 20;
-//   font-size: rem-calc($ft-size);
-//   line-height: ($ft-size + 8) / $ft-size;
-//   font-weight: $body-font-bold;
-//   margin: 0 0 1rem 0;
-//   padding: 0;
-//   @media #{$small-up} {
-//     $ft-size: 24;
-//     font-size: rem-calc($ft-size);
-//     line-height: ($ft-size + 8) / $ft-size;
-//     letter-spacing: -0.2px;
-//   }
-// }
-// h4, .hd-s {
-//   $ft-size: 20;
-//   font-size: rem-calc($ft-size);
-//   line-height: ($ft-size + 8) / $ft-size;
-//   font-weight: $body-font-bold;
-//   margin: 0 0 1rem 0;
-//   padding: 0;
-//   letter-spacing: normal;
-// }
-// h5, h6, .hd-xs {
-//   $ft-size: 16;
-//   font-size: rem-calc($ft-size);
-//   line-height: ($ft-size + 8) / $ft-size;
-//   font-weight: $body-font-bold;
-//   margin: 0 0 1rem 0;
-//   padding: 0;
-//   letter-spacing: normal;
-// }
+h1, .hd-xl,
+h2, .hd-l,
+h3, .hd-m,
+h4, .hd-s,
+h5, .hd-xs,
+h6, .hd-xxs {
+  font-weight: $body-font-bold;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+@mixin heading($font-size) {
+  font-size: $font-size;
+  line-height: $font-size + 0.5;
+  @media #{$small-up} {
+    $font-size: $font-size + 0.25;
+    font-size: $font-size;
+    line-height: $font-size + 0.5;
+  }
+}
+
+h1, .hd-xl {
+  @include heading(2.25rem); // 36px
+}
+
+h2, .hd-l {
+  @include heading(2rem); // 32px
+}
+
+h3, .hd-m {
+  @include heading(1.75rem); // 28px
+}
+
+h4, .hd-s {
+  @include heading(1.5rem); // 24px
+}
+
+h5, .hd-xs {
+  @include heading(1.25rem); // 20px
+}
+
+h6, .hd-xxs {
+  @include heading(1rem); // 16px
+}
 
 [class*=' hd-'], [class^='hd-'] {
   b {
