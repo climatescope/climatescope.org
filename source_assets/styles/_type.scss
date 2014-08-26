@@ -1,6 +1,8 @@
-/* Brand font */
-/* Font generated with FontPrep */
-/* Temporary font: must be replaced with a proper webfont provided by the client */
+// WEB FONTS
+
+// Brand font: Klavika
+// Font generated with FontPrep (for Mac)
+// Temporary font: must be replaced with a proper webfont provided by the client
 
 @font-face {
   font-family: 'Klavika Bold';
@@ -50,13 +52,7 @@
   font-weight:  400;
 }
 
-
-/* Misc */
-p {
-  margin-bottom: 1rem;
-}
-
-/* Headings */
+// HEADINGS
 
 h1, .hd-xl,
 h2, .hd-l,
@@ -97,4 +93,10 @@ h6, .hd-xxs {
   b {
     font-weight: normal;
   }
+}
+
+// MISC TYPOGRAPHIC STYLES
+
+p {
+  margin-bottom: 1rem;
 }

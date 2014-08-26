@@ -1,8 +1,7 @@
-/* ==========================================================================
-   Styles - contains the global styles of the Global Climatescope
-   ========================================================================== */
+// STYLES
+// Contains the global styles of the Global Climatescope
 
-/* Generic styles */
+// MISC
 
 html, body {
   height: 100%;
@@ -39,7 +38,7 @@ a:focus {
   }
 }
 
-/* Global layout */
+// STRUCTURE
 
 #site-canvas {
   // @include edit();
@@ -89,7 +88,7 @@ a:focus {
 
 }
 
-/* Single & Hub layouts */
+// SINGLE & HUB
 
 .single-hdr {
   padding: 0 0 2rem 0;
