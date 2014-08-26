@@ -1,0 +1,12 @@
+// TYPE
+// Headings
+
+@mixin heading($font-size) {
+  font-size: $font-size;
+  line-height: $font-size + 0.5;
+  @media #{$small-up} {
+    $font-size: $font-size + 0.25;
+    font-size: $font-size;
+    line-height: $font-size + 0.5;
+  }
+}
