@@ -2,36 +2,190 @@
    Styles - contains the global styles of the Global Climatescope
    ========================================================================== */
 
-/* Layout */
+/* Generic styles */
+
+html, body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+body {
+  background: $body-bg;
+  color: $body-font-color;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-style: $body-font-style;
+}
+
+a,
+a:visited {
+  cursor: pointer;
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+  opacity: 0.7;
+}
+
+.contained {
+  @include center($max-width);
+  @media #{$small-up} {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Global layout */
 
 #site-canvas {
-  @include edit();
+  // @include edit();
 }
 
 #site-hdr {
-  @include center($max-width);
+  padding: 2rem 0;
+}
+
+#site-title {
+  @include col(5/12);
+  em {
+    font-style: normal;
+    color: tint($primary-color, 60%);
+  }
+}
+
+#prime-nav {
+  @include col(7/12);
+  > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a {
+      display: block;
+    }
+    li {
+      float: left;
+      margin: 0 0 0 2rem;
+    }
+  }
+  ul ul {
+    display: none;
+  }
+}
+
+.lang-menu {
+  float: right;
+}
+
+.global-menu {
+  float: right;
 }
 
 #site-body {
-  @include center($max-width);
+
+}
+
+/* Single & Hub layouts */
+
+.single-hdr {
+  padding: 0 0 2rem 0;
+  .heading {
+    @include col(8/12);
+  }
+}
+
+.single-bd {
+  padding: 0 0 2rem 0;
+}
+
+.meta-actions-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    li {
+      margin: 0 0 0 2rem;
+      float: left;
+    }
+    a {
+      display: block;
+    }
+}
+
+.map {
+  background: tint($primary-color, 95%);
+  text-align: center;
+  padding: 4rem 3rem;
+  margin: 0 0 2rem 0;
+}
+
+.col-prime {
+  @include col(8/12);
+}
+
+.col-sec {
+  @include col(4/12);
 }
 
 #site-ftr {
-  @include center($max-width);
+  background: tint($primary-color, 95%);
+  padding: 2rem 0;
 }
 
-li {
-  @include column(12/12);
-  @media #{$large-up} {
-    @include column(2/12);
+#ftr-credits {
+  @include col(8/12);
+  h1 {
+    @extend .visually-hidden;
   }
+  .orgs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      float: left;
+      margin: 0 1rem 1rem 0;
+    }
+    a {
+      display: block;
+    }
+    span {
+      @extend .visually-hidden;
+    }
+    img {
+      vertical-align: top;
+    }
+  }
+}
+
+#comp-nav {
+  @include col(4/12);
+  .ftr-menu {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      float: left;
+      margin: 0 0 1rem 1rem;
+    }
+    a {
+      display: block;
+    }
+  }
+}
+
+#copyright {
+  @include col(12/12);
 }
 
 /*  Jeet Syntax Quick Reference
   --------------------------
-  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  col($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
   span($ratio: 1, $offset: 0)
-  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  shift($ratios: 0, $col_or_span: col, $gutter: $jeet-gutter)
   unshift()
   edit()
   center($max_width: 1410px, $pad: 0)

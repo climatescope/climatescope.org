@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>{{ site.name }}</title>
   <meta name="description" content="">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />  
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   <link rel="shortcut icon" href="{{ site.domain }}/assets/images/meta/favicon.ico" type="image/x-icon" />
   <link type="text/plain" rel="author" href="{{ site.domain }}/humans.txt" />
   <link rel="stylesheet" href="/assets/styles/main.css">
@@ -27,15 +27,43 @@
 
   <div id="site-canvas">
     <header id="site-hdr" role="banner">
-      {% include lang.html %}
-      {% include menu.html %}
+      <div class="contained">
+        <h1 id="site-title"><a title="Home" href="/">Global Climatescope <em>2014</em></a></h1>
+        <nav id="prime-nav" role="navigation">
+          {% include lang.html %}
+          {% include menu.html %}
+        </nav>
+      </div>
     </header>
 
-    <main id="site-body" role="main">
+    <main id="site-bd" role="main">
       {{ content }}
     </main>
 
     <footer id="site-ftr" role="contentinfo">
+      <div class="contained">
+        <section id="ftr-credits">
+          <h1>By</h1>
+          <ul class="orgs-list">
+            <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+            <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+            <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+            <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+            <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+          </ul>
+        </section>
+        <nav id="comp-nav">
+          <ul class="ftr-menu">
+            <li><a href="/methodology" title="Methodology">Methodology</a></li>
+            <li><a href="/about" title="About">About</a></li>
+            <li><a href="/press" title="Press">Press</a></li>
+            <li><a href="/contacts" title="Contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="contained">
+        <p id="copyright">©2014 Bloomberg New Energy Finance. All rights reserved.</p>
+      </div>
     </footer>
   </div>
 

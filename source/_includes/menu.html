@@ -6,75 +6,69 @@
 
 {% case language %}
 {% when 'en' %}
-<nav id="primary" role="navigation">
-  <a href="#nav-links" class="toggle"><span class="visually-hidden">Menu</span></a>
-  <ul class="links" id="nav-links">
-    <li>
-      <a href="/en/index.html" title="The main index">Index</a>
-    </li>
-    <li>
-      Topics
-      <ul>
-        {% for topic in site.en_parameter %}
-        <li>
-          <a href="{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </li>
-    <li>
-      Regions
-      <ul>
-        {% for region in site.en_region %}
-        <li>
-          <a href="{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </li>
-    <li>
-      <a href="/en/policies/" title="Browse the policy database">Policies</a>
-    </li>
-    <li>
-      <a href="/en/download/" title="Download the data">Download</a>
-    </li>
-  </ul>
-</nav>
+<ul class="global-menu">
+  <li>
+    <a href="/en/index.html" title="The main index">Global</a>
+  </li>
+  <li>
+    <a href="#" title="Regions">Regions</a>
+    <ul>
+      {% for region in site.en_region %}
+      <li>
+        <a href="{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+  <li>
+    <a href="#" title="Topics">Topics</a>
+    <ul>
+      {% for topic in site.en_parameter %}
+      <li>
+        <a href="{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+  <li>
+    <a href="/en/policies/" title="Browse the policy database">Policies</a>
+  </li>
+  <li>
+    <a href="/en/download/" title="Download the data">Download</a>
+  </li>
+</ul>
 
 {% when 'es' %}
-<nav id="primary" role="navigation">
-  <a href="#nav-links" class="toggle"><span class="visually-hidden">Menu</span></a>
-  <ul class="links" id="nav-links">
-    <li>
-      <a href="/es/index.html" title="The main index">Index</a>
-    </li>
-    <li>
-      Temas
-      <ul>
-        {% for topic in site.es_parameter %}
-        <li>
-          <a href="{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </li>
-    <li>
-      Regiones
-      <ul>
-        {% for region in site.es_region %}
-        <li>
-          <a href="{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </li>
-    <li>
-      <a href="/es/policies/" title="Browse the policy database">Politicas</a>
-    </li>
-    <li>
-      <a href="/es/download/" title="Download the data">Datos</a>
-    </li>
-  </ul>
-</nav>
+<ul class="global-menu">
+  <li>
+    <a href="/es/index.html" title="The main index">Index</a>
+  </li>
+  <li>
+    <a href="#" title="Regiones">Regiones</a>
+    <ul>
+      {% for region in site.es_region %}
+      <li>
+        <a href="{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+  <li>
+    <a href="#" title="Temas">Temas</a>
+    <ul>
+      {% for topic in site.es_parameter %}
+      <li>
+        <a href="{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </li>
+  <li>
+    <a href="/es/policies/" title="Browse the policy database">Politicas</a>
+  </li>
+  <li>
+    <a href="/es/download/" title="Download the data">Datos</a>
+  </li>
+</ul>
 
 {% endcase %}

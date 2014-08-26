@@ -1,0 +1,128 @@
+/* Brand font */
+/* Font generated with FontPrep */
+/* Temporary font: must be replaced with a proper webfont provided by the client */
+
+@font-face {
+  font-family: 'Klavika Bold';
+  src: url('../fonts/klavika/Klavika-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/Klavika-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/Klavika-Bold.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/klavika/Klavika-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/klavika/Klavika-Bold.svg#522fc3d7747606a4f81ed920a042787b') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Klavika Bold Italic';
+  src: url('../fonts/klavika/Klavika-BoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/Klavika-BoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/Klavika-BoldItalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/klavika/Klavika-BoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/klavika/Klavika-BoldItalic.svg#6421dcf2641f6a30601669394dbe95e4') format('svg'); /* Legacy iOS */
+
+  font-style:   italic;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Klavika Regular';
+  src: url('../fonts/klavika/Klavika-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/Klavika-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/Klavika-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/klavika/Klavika-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/klavika/Klavika-Regular.svg#1c0a77123c833724b533e6327487c008') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Klavika Regular Italic';
+  src: url('../fonts/klavika/Klavika-RegularItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/Klavika-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/Klavika-RegularItalic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/klavika/Klavika-RegularItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/klavika/Klavika-RegularItalic.svg#78847f714a762df028e6b2216c7096f7') format('svg'); /* Legacy iOS */
+
+  font-style:   italic;
+  font-weight:  400;
+}
+
+
+/* Misc */
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* Headings */
+
+// h1, .hd-xl {
+//   $ft-size: 28;
+//   font-size: rem-calc($ft-size);
+//   line-height: ($ft-size + 8) / $ft-size;
+//   font-weight: $body-font-bold;
+//   margin: 0 0 1rem 0;
+//   padding: 0;
+//
+//   @media #{$small-up} {
+//     $ft-size: 32;
+//     font-size: rem-calc($ft-size);
+//     line-height: ($ft-size + 8) / $ft-size;
+//     letter-spacing: -0.5px;
+//   }
+// }
+// h2, .hd-l {
+//   $ft-size: 24;
+//   font-size: rem-calc($ft-size);
+//   line-height: ($ft-size + 8) / $ft-size;
+//   font-weight: $body-font-bold;
+//   letter-spacing: -0.2px;
+//   margin: 0 0 1rem 0;
+//   padding: 0;
+//   @media #{$small-up} {
+//     $ft-size: 28;
+//     font-size: rem-calc($ft-size);
+//     line-height: ($ft-size + 8) / $ft-size;
+//     letter-spacing: -0.5px;
+//   }
+// }
+// h3, .hd-m {
+//   $ft-size: 20;
+//   font-size: rem-calc($ft-size);
+//   line-height: ($ft-size + 8) / $ft-size;
+//   font-weight: $body-font-bold;
+//   margin: 0 0 1rem 0;
+//   padding: 0;
+//   @media #{$small-up} {
+//     $ft-size: 24;
+//     font-size: rem-calc($ft-size);
+//     line-height: ($ft-size + 8) / $ft-size;
+//     letter-spacing: -0.2px;
+//   }
+// }
+// h4, .hd-s {
+//   $ft-size: 20;
+//   font-size: rem-calc($ft-size);
+//   line-height: ($ft-size + 8) / $ft-size;
+//   font-weight: $body-font-bold;
+//   margin: 0 0 1rem 0;
+//   padding: 0;
+//   letter-spacing: normal;
+// }
+// h5, h6, .hd-xs {
+//   $ft-size: 16;
+//   font-size: rem-calc($ft-size);
+//   line-height: ($ft-size + 8) / $ft-size;
+//   font-weight: $body-font-bold;
+//   margin: 0 0 1rem 0;
+//   padding: 0;
+//   letter-spacing: normal;
+// }
+
+[class*=' hd-'], [class^='hd-'] {
+  b {
+    font-weight: normal;
+  }
+}

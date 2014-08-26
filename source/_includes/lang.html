@@ -1,23 +1,23 @@
-<div>
+<ul class="lang-menu">
 {% for l in site.data.i18n.lang %}
 
   {% if page.collection %}
     {% assign cur_lang = site.collections[page.collection].lang %}
     {% assign translated_col = site.collections[page.collection].i18n[l] %}
-    
+
     {% for col in site[translated_col] %}
       {% if col.id == page.id %}
-        <a href="{{site.domain}}{{col.url}}">{{l}}</a> {% if l == cur_lang %}(Active){% endif %}
+        <li><a href="{{site.domain}}{{col.url}}" class="{% if l == cur_lang %}current{% endif %}">{{l}}</a></li>
       {% endif %}
     {% endfor %}
-    
+
   {% else %}
     {% for pg in site.pages %}
       {% if pg.lang == l and pg.id == page.id %}
-        <a href="{{site.domain}}{{pg.url}}">{{l}}</a> {% if l == page.lang %}(Active){% endif %}
+        <li><a href="{{site.domain}}{{pg.url}}" class="{% if l == page.lang %}current{% endif %}">{{l}}</a></li>
       {% endif %}
     {% endfor %}
   {% endif %}
 
 {% endfor %}
-</div>
+</ul>

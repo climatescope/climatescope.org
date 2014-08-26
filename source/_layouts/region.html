@@ -1,25 +1,62 @@
 ---
 layout: base
 ---
-<h1>{{ page.title }}</h1>
-<h2>Description</h2>
-{{ content }}
+<article class"single">
 
-{% case site.collections[page.collection].lang %}
-{% when 'en' %}
-  {% assign col = 'en_country' %}
-  <h2>Countries EN </h2>
-{% when 'es' %}
-  {% assign col = 'es_country' %}
-  <h2>Countries ES </h2>
-{% endcase %}
+  <header class="single-hdr">
+    <div class="contained">
+      <div class="heading">
+        <h1 class="prime-title">{{ page.title }}</h1>
+        <p class="subtitle">Lorem ipsum</p>
+      </div>
+      <ul class="meta-actions-menu">
+        <li><a href="#" title="Download">Download</a></li>
+        <li><a href="#" title="Share">Share</a></li>
+      </ul>
+    </div>
+  </header>
 
-  <ul>
-  {% for country in site[col] %}
-    {% if country.region == page.id %}
-    <li>
-      <a href="{{ country.url }}">{{ country.title }}</a>
-    </li>
-    {% endif %}
-  {% endfor %}
-  </ul>
+  <div class="single-bd">
+
+    <div class="full map">
+      <p>Insert map here.</p>
+    </div>
+
+    <div class="contained">
+
+      <div class="col-prime">
+        <h2>Description</h2>
+        {{ content }}
+      </div>
+
+      <div class="col-sec">
+        <p><a href="/" title="Global">View the global rank</a></p>
+      </div>
+
+    </div>
+
+    <div class="contained">
+
+      {% case site.collections[page.collection].lang %}
+      {% when 'en' %}
+        {% assign col = 'en_country' %}
+        <h2>Countries EN </h2>
+      {% when 'es' %}
+        {% assign col = 'es_country' %}
+        <h2>Countries ES </h2>
+      {% endcase %}
+
+      <ul>
+      {% for country in site[col] %}
+        {% if country.region == page.id %}
+        <li>
+          <a href="{{ country.url }}">{{ country.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+
+</article>
