@@ -27,9 +27,18 @@ $body-font-bold: 700;
 $global-radius: 0.25rem;
 $global-rounded: 60rem;
 
-// We use these to text shadow
+// We use these to shadow text
 %global-text-shadow {
   text-shadow: 0 1px 0 rgba($primary-color, 0.4);
+}
+
+// Font smoothing
+// Antialiased font smoothing works best for light text on a dark background.
+// Apply to single elements instead of globally to body.
+// Note this only applies to webkit-based desktop browsers and Firefox 25 (and later) on the Mac.
+%antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // Media queries

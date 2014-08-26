@@ -11,3 +11,20 @@
     line-height: $font-size + 0.5;
   }
 }
+
+// BUTTONS
+
+// Variations
+
+@mixin bttn-variation($color, $tone: false) {
+  background-color: $color;
+  &:hover {
+    background-color: shade($color, 6%);
+  }
+  @if $tone == 'light' {
+    color: tint($primary-color, 20%);
+  } @else {
+    color: #fff;
+    @extend %antialiased;
+  }
+}
