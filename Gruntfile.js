@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         }
       }
     },
-        
+          
     // https://github.com/gruntjs/grunt-contrib-jshint
     jshint: {
       // Default options.
@@ -48,9 +48,41 @@ module.exports = function(grunt) {
     uglify: {
       prod: {
         files: {
-          'source/assets/scripts/main.min.js': ['source_assets/scripts/*.js']
+          'source/assets/scripts/main.min.js': ['source_assets/scripts/*.js'],
+          
+          'source/assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js': ['source_assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'],
+          'source/assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
+          'source/assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
+          'source/assets/scripts/vendor/selectivizr-1.0.2.min.js': ['source_assets/scripts/vendor/selectivizr-1.0.2.min.js'],
         }
       }
+    },
+    
+    // https://github.com/gruntjs/grunt-contrib-copy
+    copy: {
+      main: {
+        files: [
+          {src: ['source_assets/scripts/vendor/boxsizing.htc'], dest: 'source/assets/scripts/vendor/boxsizing.htc'}
+        ]
+      },
+      jekyll_css: {
+        src: 'source/assets/styles/*',
+        dest: '_site/assets/styles/'
+      }
+    },
+    
+    // https://github.com/joeytrapp/grunt-focus
+    // Focus let us run multiple watch tasks simultaneously.
+    // This was done to ease styling. In this way, only the css is
+    // generated and copied to the jekyll folder directly.
+    // See copy:jekyll_css
+    focus: {
+      main: {
+        exclude: ['css']
+      },
+      css: {
+        include: ['css']
+      },
     },
     
     // https://npmjs.org/package/grunt-contrib-watch
@@ -60,9 +92,13 @@ module.exports = function(grunt) {
         tasks: ['build']
       },
       jekyll : {
-        files: ['**/*.html', '**/*.json', '**/*.geojson', '**/*.yml', '**/**/*.md', '!_site/**/*', '!_site/*', '!src/*', '!node_modules/*'],
+        files: ['source/**/*.html', 'source/**/*.json', 'source/**/*.geojson', 'source/**/*.yml', 'source/**/*.md'],
         tasks: ['jekyll:generate']
-      }
+      },
+      css: {
+        files: ['source_assets/styles/**.scss'],
+        tasks: ['build-css']
+      },
     },
     
     // https://github.com/dannygarcia/grunt-jekyll
@@ -87,20 +123,28 @@ module.exports = function(grunt) {
   });
 
   // Load tasks.
+  grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-focus');
   grunt.loadNpmTasks('grunt-jekyll');
   
   // Register tasks.
-  grunt.registerTask('build', ['compass:dev', 'jshint:dev', 'uglify', 'jekyll:generate']);
+  grunt.registerTask('build', ['compass:dev', 'jshint:dev', 'uglify', 'copy:main', 'jekyll:generate']);
 
-  grunt.registerTask('default', ['build', 'watch']);
+  grunt.registerTask('default', ['build', 'focus:main']);
   
-  grunt.registerTask('prod', ['clean', 'compass:prod', 'jshint:prod', 'uglify']);
+  grunt.registerTask('prod', ['clean', 'compass:prod', 'jshint:prod', 'uglify', 'copy:main']);
   
   grunt.registerTask('jk', ['jekyll:server']);
+  
+  // This was done to ease styling. In this way, only the css is
+  // generated and copied to the jekyll folder directly.
+  // See copy:jekyll_css
+  grunt.registerTask('watch-css', ['focus:css']);
+  grunt.registerTask('build-css', ['compass:dev', 'copy:jekyll_css']);
 
 };
