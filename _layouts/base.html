@@ -1,3 +1,8 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -29,7 +34,12 @@
     <header id="site-header" role="banner">
       <div class="row--contained">
         <div id="site-headline">
-          <h1 id="site-title"><a title="Home" href="/">Global Climatescope <em>2014</em></a></h1>
+          {% case language %}
+          {% when 'en' %}
+          <h1 id="site-title"><a title="Home" href="{{ site.domain }}/en/">Global Climatescope <em>2014</em></a></h1>
+          {% when 'es' %}
+          <h1 id="site-title"><a title="Home" href="{{ site.domain }}/es/">Global Climatescope <em>2014</em></a></h1>
+          {% endcase %}
         </div>
         <nav id="prime-nav" role="navigation">
           {% include lang.html %}
