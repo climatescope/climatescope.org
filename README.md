@@ -55,3 +55,8 @@ Compile the compass files and javascripts prepared for production (minified, ugl
 ```
 $ grunt prod
 ```
+
+Compile the compass files and copies them to the jekyll directory (_site). Requires a compiled version of the website.
+```
+$ grunt watch-css
+```
