@@ -1,14 +1,14 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     // https://github.com/gruntjs/grunt-contrib-clean
-    clean : ['source/assets/styles/*', '!source/assets/**/.gitkeep', 'source/assets/scripts/*', '_site/*'],
+    clean : ['assets/styles/*', '!assets/**/.gitkeep', 'assets/scripts/*', '_site/*'],
     
     // https://github.com/gruntjs/grunt-contrib-compass
     compass : {
       // Default options.
       options : {
           sassDir : 'source_assets/styles',
-          cssDir : 'source/assets/styles',
+          cssDir : 'assets/styles',
           //raw : 'require "sassy-strings";'
       },
       
@@ -48,12 +48,12 @@ module.exports = function(grunt) {
     uglify: {
       prod: {
         files: {
-          'source/assets/scripts/main.min.js': ['source_assets/scripts/*.js'],
+          './assets/scripts/main.min.js': ['source_assets/scripts/*.js'],
           
-          'source/assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js': ['source_assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'],
-          'source/assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
-          'source/assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
-          'source/assets/scripts/vendor/selectivizr-1.0.2.min.js': ['source_assets/scripts/vendor/selectivizr-1.0.2.min.js'],
+          './assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js': ['source_assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'],
+          './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
+          './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
+          './assets/scripts/vendor/selectivizr-1.0.2.min.js': ['source_assets/scripts/vendor/selectivizr-1.0.2.min.js'],
         }
       }
     },
@@ -62,11 +62,11 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {src: ['source_assets/scripts/vendor/boxsizing.htc'], dest: 'source/assets/scripts/vendor/boxsizing.htc'}
+          {src: ['source_assets/scripts/vendor/boxsizing.htc'], dest: './assets/scripts/vendor/boxsizing.htc'}
         ]
       },
       jekyll_css: {
-        src: 'source/assets/styles/*',
+        src: './assets/styles/*',
         dest: '_site/assets/styles/'
       }
     },
@@ -92,7 +92,7 @@ module.exports = function(grunt) {
         tasks: ['build']
       },
       jekyll : {
-        files: ['source/**/*.html', 'source/**/*.json', 'source/**/*.geojson', 'source/**/*.yml', 'source/**/*.md'],
+        files: ['**/*.html', '**/*.json', '**/*.geojson', '**/*.yml', '**/*.md', '!_site/**/*', '!_site/*', '!node_modules/*', '!source_assets/*'],
         tasks: ['jekyll:generate']
       },
       css: {
