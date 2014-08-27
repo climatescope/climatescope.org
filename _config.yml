@@ -1,7 +1,7 @@
 safe:           false
 domain:         http://localhost:4000
 name:           Global Climatescope 2014
-source:         source
+exclude:        ['node_modules', 'source_assets', 'Gruntfile.js', 'package.json', 'README.md']
 collections:
   en_region:
     output: true
