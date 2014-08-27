@@ -1,64 +1,41 @@
 ---
-layout: base
+layout: entry
 ---
-<article class"layout--entry region">
+<div class="row--full map">
+  <p>Insert map here.</p>
+</div>
 
-  <header class="layout--entry__header">
-    <div class="row--contained">
-      <div class="layout--entry__heading">
-        <h1 class="layout--entry__title">{{ page.title }}</h1>
-        <p class="layout--entry__subtitle">Region</p>
-      </div>
-      <div class="layout--entry__toolbar" role="toolbar">
-        <ul class="meta-actions-menu">
-          <li><button type="button" class="bttn bttn-success">Default</button></li>
-          <li><a href="#" title="Share" role="button" class="bttn bttn-success">Share</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
+<div class="row--contained">
 
-  <div class="layout--entry__body">
-
-    <div class="row--full map">
-      <p>Insert map here.</p>
-    </div>
-
-    <div class="row--contained">
-
-      <div class="col--main">
-        <h2>Description</h2>
-        {{ content }}
-      </div>
-
-      <div class="col--sec">
-        <p><a href="/" title="Global">View the global rank</a></p>
-      </div>
-
-    </div>
-
-    <div class="row--contained">
-
-      {% case site.collections[page.collection].lang %}
-      {% when 'en' %}
-        {% assign col = 'en_country' %}
-        <h2>Countries EN </h2>
-      {% when 'es' %}
-        {% assign col = 'es_country' %}
-        <h2>Countries ES </h2>
-      {% endcase %}
-
-      <ul>
-      {% for country in site[col] %}
-        {% if country.region == page.id %}
-        <li>
-          <a href="{{ country.url }}">{{ country.title }}</a>
-        </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    </div>
-
+  <div class="col--main">
+    <h2>Description</h2>
+    {{ content }}
   </div>
 
-</article>
+  <div class="col--sec">
+    <p><a href="/" title="Global">View the global rank</a></p>
+  </div>
+
+</div>
+
+<div class="row--contained">
+
+  {% case site.collections[page.collection].lang %}
+  {% when 'en' %}
+    {% assign col = 'en_country' %}
+    <h2>Countries EN </h2>
+  {% when 'es' %}
+    {% assign col = 'es_country' %}
+    <h2>Countries ES </h2>
+  {% endcase %}
+
+  <ul>
+  {% for country in site[col] %}
+    {% if country.region == page.id %}
+    <li>
+      <a href="{{ country.url }}">{{ country.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>

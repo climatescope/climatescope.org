@@ -153,14 +153,14 @@ a:active{
     }
   }
 
-  .col--main {
-    @include col(8/12);
-  }
+}
 
-  .col-main {
-    @include col(4/12);
-  }
+.col--main {
+  @include col(8/12);
+}
 
+.col--sec {
+  @include col(4/12);
 }
 
 .map {

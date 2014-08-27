@@ -1,0 +1,25 @@
+---
+layout: base
+---
+{% assign vars = site.collections[page.collection].layout_vars %}
+<article class="layout--entry {{vars.type}}">
+  <header class="layout--entry__header">
+    <div class="row--contained">
+      <div class="layout--entry__heading">
+        <h1 class="layout--entry__title">{{ page.title }}</h1>
+        <p class="layout--entry__subtitle">{{vars.subtitle}}</p>
+      </div>
+      <div class="layout--entry__toolbar" role="toolbar">
+        <ul class="meta-actions-menu">
+          <li><button type="button" class="bttn bttn-success">Default</button></li>
+          <li><a href="#" title="Share" role="button" class="bttn bttn-success">Share</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout--entry__body">
+    {{content}}
+  </div>
+
+</article>

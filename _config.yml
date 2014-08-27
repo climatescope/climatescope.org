@@ -10,6 +10,9 @@ collections:
     i18n:
       en: en_region
       es: es_region
+    layout_vars:
+      type: region
+      subtitle: Region
     
   es_region:
     output: true
@@ -18,6 +21,9 @@ collections:
     i18n:
       en: en_region
       es: es_region
+    layout_vars:
+      type: region
+      subtitle: Region
       
   en_country:
     output: true
@@ -26,6 +32,9 @@ collections:
     i18n:
       en: en_country
       es: es_country
+    layout_vars:
+      type: country
+      subtitle: Country
       
   es_country:
     output: true
@@ -34,6 +43,9 @@ collections:
     i18n:
       en: en_country
       es: es_country
+    layout_vars:
+      type: country
+      subtitle: Country
       
   en_state:
     output: true
@@ -42,6 +54,9 @@ collections:
     i18n:
       en: en_state
       es: es_state
+    layout_vars:
+      type: state
+      subtitle: State
       
   es_state:
     output: true
@@ -50,6 +65,9 @@ collections:
     i18n:
       en: en_state
       es: es_state
+    layout_vars:
+      type: state
+      subtitle: State
       
   en_parameter:
     output: true
@@ -58,6 +76,9 @@ collections:
     i18n:
       en: en_parameter
       es: es_parameter
+    layout_vars:
+      type: parameter
+      subtitle: Parameter
       
   es_parameter:
     output: true
@@ -66,3 +87,6 @@ collections:
     i18n:
       en: en_parameter
       es: es_parameter
+    layout_vars:
+      type: parameter
+      subtitle: Parameter
