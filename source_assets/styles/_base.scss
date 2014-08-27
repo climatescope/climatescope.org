@@ -42,20 +42,24 @@ a:active{
   @include transform(translate(0, 1px));
 }
 
-// Grid row
+// Row
 
-.contained {
-  @include center($max-width);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @media #{$small-up} {
-    padding-left: 2rem;
-    padding-right: 2rem;
+.row {
+
+  &--contained {
+    @include center($max-width);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media #{$small-up} {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    @media #{$medium-up} {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
   }
-  @media #{$medium-up} {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+
 }
 
 // STRUCTURE
@@ -63,7 +67,7 @@ a:active{
 #site-canvas {
 }
 
-#site-hdr {
+#site-header {
   padding: 2rem 0;
 }
 
@@ -111,38 +115,52 @@ a:active{
 
 }
 
-// SINGLE & HUB
+// LAYOUT: ENTRY
 
-.single-hdr {
-  padding: 0 0 2rem 0;
-  .heading {
+.layout--entry {
+
+  &__header {
+    padding: 0 0 2rem 0;
+  }
+
+  &__heading {
     @include col(8/12);
   }
-  .prime-title,
-  .subtitle {
-    margin-bottom: 0;
-  }
-}
 
-.single-bd {
-  padding: 0 0 2rem 0;
-  h2 {
-    @extend .hd-xxs;
-  }
-}
-
-.meta-actions-menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    float: right;
+  &__toolbar {
+    @include col(4/12);
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      float: right;
+    }
     li {
       margin: 0 0 0 2rem;
       float: left;
     }
-    a {
-      display: block;
+  }
+
+  &__title,
+  &__subtitle {
+    margin-bottom: 0;
+  }
+
+  &__body {
+    padding: 0 0 2rem 0;
+    h2 {
+      @extend .hd-xxs;
     }
+  }
+
+  .col--main {
+    @include col(8/12);
+  }
+
+  .col-main {
+    @include col(4/12);
+  }
+
 }
 
 .map {
@@ -152,15 +170,7 @@ a:active{
   margin: 0 0 2rem 0;
 }
 
-.col-prime {
-  @include col(8/12);
-}
-
-.col-sec {
-  @include col(4/12);
-}
-
-#site-ftr {
+#site-footer {
   background: tint($primary-color, 95%);
   padding: 2rem 0;
 }
