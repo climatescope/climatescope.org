@@ -86,9 +86,6 @@ a:active{
 
 #prime-nav {
   @include col(7/12);
-  ul ul {
-    display: none;
-  }
 }
 
 .lang-menu {
@@ -104,7 +101,7 @@ a:active{
   a {
     display: block;
   }
-  li {
+  > li {
     float: left;
     margin: 0 0 0 2rem;
   }
