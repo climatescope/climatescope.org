@@ -1,0 +1,49 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
+<footer id="site-footer" role="contentinfo">
+  <div class="row--contained">
+    <section id="ftr-credits">
+      {% case language %}
+      {% when 'en' %}
+      <h1>By</h1>
+      {% when 'es' %}
+      <h1>Por</h1>
+      {% endcase %}
+      <ul class="orgs-list">
+        <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+        <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+        <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+        <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+        <li><a href="#" title="Visit [org name]"><img src="http://placehold.it/128x48&text=logo" /> <span>[org name]</span></a></li>
+      </ul>
+    </section>
+    <nav id="comp-nav">
+      <ul class="ftr-menu">
+        {% case language %}
+        {% when 'en' %}
+        <li><a href="{{site.domain}}/en/methodology" title="Methodology">Methodology</a></li>
+        <li><a href="{{site.domain}}/en/about" title="About">About</a></li>
+        <li><a href="" title="Press">Press</a></li>
+        <li><a href="{{site.domain}}/en/contact" title="Contact">Contact</a></li>
+        {% when 'es' %}
+        <li><a href="{{site.domain}}/es/metodologia" title="Metodologia">Metodologia</a></li>
+        <li><a href="{{site.domain}}/es/sobre" title="Sobre">Sobre</a></li>
+        <li><a href="" title="Prensa">Prensa</a></li>
+        <li><a href="{{site.domain}}/es/contacto" title="Contacto">Contacto</a></li>
+        {% endcase %}
+      </ul>
+    </nav>
+  </div>
+  <div class="row--contained">
+    {% case language %}
+    {% when 'en' %}
+    <p id="copyright">2014 Lorem ipsum. Choose license.</p>
+    {% when 'es' %}
+    <p id="copyright">2014 Lorem ipsum. Elija licencia.</p>
+    {% endcase %}
+  </div>
+</footer>

@@ -1,3 +1,8 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -8,7 +13,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>{{ site.name }}</title>
   <meta name="description" content="">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />  
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   <link rel="shortcut icon" href="{{ site.domain }}/assets/images/meta/favicon.ico" type="image/x-icon" />
   <link type="text/plain" rel="author" href="{{ site.domain }}/humans.txt" />
   <link rel="stylesheet" href="{{ site.domain }}/assets/styles/main.css">
@@ -26,17 +31,28 @@
   <![endif]-->
 
   <div id="site-canvas">
-    <header id="site-hdr" role="banner">
-      {% include lang.html %}
-      {% include menu.html %}
+    <header id="site-header" role="banner">
+      <div class="row--contained">
+        <div id="site-headline">
+          {% case language %}
+          {% when 'en' %}
+          <h1 id="site-title"><a title="Home" href="{{ site.domain }}/en/">Global Climatescope <em>2014</em></a></h1>
+          {% when 'es' %}
+          <h1 id="site-title"><a title="Home" href="{{ site.domain }}/es/">Global Climatescope <em>2014</em></a></h1>
+          {% endcase %}
+        </div>
+        <nav id="prime-nav" role="navigation">
+          {% include lang.html %}
+          {% include menu.html %}
+        </nav>
+      </div>
     </header>
 
     <main id="site-body" role="main">
       {{ content }}
     </main>
 
-    <footer id="site-ftr" role="contentinfo">
-    </footer>
+    {% include footer.html %}
   </div>
 
   <!--[if lt IE 9]>

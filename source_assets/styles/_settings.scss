@@ -1,6 +1,45 @@
-/* ==========================================================================
-   Settings - contains the settings of the Global Climatescope
-   ========================================================================== */
+// SETTINGS
+// Contains the settings of the Global Climatescope
+
+// This is the default html and body font-size for the base rem value.
+$rem-base: 16px;
+
+// The $base-line-height is 100% while $base-font-size is 150%
+$base-line-height: 150%;
+
+// We use these as default colors throughout
+$primary-color: #000000;                            // black
+$secondary-color: #77bc1f;                          // green
+$alert-color: #D85D3F;                              // red
+$success-color: #77bc1f;                            // green (same as $secondary-color)
+$warning-color: #F4A432;                            // yellow
+$info-color: #499DD2;                               // blue
+
+// We use these to control various global styles
+$body-bg: #ffffff;
+$body-font-color: tint($primary-color, 20%);
+$body-font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+$body-font-weight: normal;
+$body-font-style: normal;
+$body-font-bold: 700;
+
+// We use these to make sure border radius matches unless we want it different.
+$global-radius: 0.25rem;
+$global-rounded: 60rem;
+
+// We use these to shadow text
+%global-text-shadow {
+  text-shadow: 0 1px 0 rgba($primary-color, 0.4);
+}
+
+// Font smoothing
+// Antialiased font smoothing works best for light text on a dark background.
+// Apply to single elements instead of globally to body.
+// Note this only applies to webkit-based desktop browsers and Firefox 25 (and later) on the Mac.
+%antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 // Media queries
 $small-up: "(min-width: 544px)"; // Probably not used much, since we're officially supporting only medium-up

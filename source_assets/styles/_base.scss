@@ -1,37 +1,231 @@
-/* ==========================================================================
-   Styles - contains the global styles of the Global Climatescope
-   ========================================================================== */
+// STYLES
+// Contains the global styles of the Global Climatescope
 
-/* Layout */
+// MISC
 
-#site-canvas {
-  @include edit();
+html, body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
 }
 
-#site-hdr {
-  @include center($max-width);
+body {
+  background: $body-bg;
+  color: $body-font-color;
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-style: $body-font-style;
+}
+
+a {
+  cursor: pointer;
+  color: $secondary-color;
+  text-decoration: none;
+  @include transform(translateZ(0));
+  @include transition-property(opacity);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease);
+  @include transition-delay(0);
+}
+
+a:visited {
+  color: $secondary-color;
+}
+
+a:hover {
+  opacity: 0.6;
+  outline: none;
+}
+
+a:active{
+  outline: none;
+  @include transform(translate(0, 1px));
+}
+
+// Row
+
+.row {
+
+  &--contained {
+    @include center($max-width);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @media #{$small-up} {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    @media #{$medium-up} {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+}
+
+// STRUCTURE
+
+#site-canvas {
+}
+
+#site-header {
+  padding: 2rem 0;
+}
+
+#site-headline {
+  @include col(5/12);
+}
+
+#site-title {
+  @extend .hd-xs;
+  margin-bottom: 0;
+  em {
+    font-style: normal;
+    color: tint($primary-color, 60%);
+  }
+}
+
+#prime-nav {
+  @include col(7/12);
+  > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    a {
+      display: block;
+    }
+    li {
+      float: left;
+      margin: 0 0 0 2rem;
+    }
+  }
+  ul ul {
+    display: none;
+  }
+}
+
+.lang-menu {
+  float: right;
+}
+
+.global-menu {
+  float: right;
 }
 
 #site-body {
-  @include center($max-width);
+
 }
 
-#site-ftr {
-  @include center($max-width);
-}
+// LAYOUT: ENTRY
 
-li {
-  @include column(12/12);
-  @media #{$large-up} {
-    @include column(2/12);
+.layout--entry {
+
+  &__header {
+    padding: 0 0 2rem 0;
   }
+
+  &__heading {
+    @include col(8/12);
+  }
+
+  &__toolbar {
+    @include col(4/12);
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      float: right;
+    }
+    li {
+      margin: 0 0 0 2rem;
+      float: left;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    margin-bottom: 0;
+  }
+
+  &__body {
+    padding: 0 0 2rem 0;
+    h2 {
+      @extend .hd-xxs;
+    }
+  }
+
+}
+
+.col--main {
+  @include col(8/12);
+}
+
+.col--sec {
+  @include col(4/12);
+}
+
+.map {
+  background: tint($primary-color, 95%);
+  text-align: center;
+  padding: 4rem 3rem;
+  margin: 0 0 2rem 0;
+}
+
+#site-footer {
+  background: tint($primary-color, 95%);
+  padding: 2rem 0;
+}
+
+#ftr-credits {
+  @include col(8/12);
+  h1 {
+    @extend .visually-hidden;
+  }
+  .orgs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      float: left;
+      margin: 0 1rem 1rem 0;
+    }
+    a {
+      display: block;
+    }
+    span {
+      @extend .visually-hidden;
+    }
+    img {
+      vertical-align: top;
+    }
+  }
+}
+
+#comp-nav {
+  @include col(4/12);
+  .ftr-menu {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      float: left;
+      margin: 0 0 1rem 1rem;
+    }
+    a {
+      display: block;
+    }
+  }
+}
+
+#copyright {
+  @include col(12/12);
 }
 
 /*  Jeet Syntax Quick Reference
   --------------------------
-  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  col($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
   span($ratio: 1, $offset: 0)
-  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  shift($ratios: 0, $col_or_span: col, $gutter: $jeet-gutter)
   unshift()
   edit()
   center($max_width: 1410px, $pad: 0)

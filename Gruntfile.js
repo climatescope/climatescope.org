@@ -88,7 +88,7 @@ module.exports = function(grunt) {
     // https://npmjs.org/package/grunt-contrib-watch
     watch : {
       src: {
-        files: ['source_assets/scripts/**.js', 'source_assets/styles/**.scss'],
+        files: ['source_assets/scripts/**.js', 'source_assets/styles/*.scss'],
         tasks: ['build']
       },
       jekyll : {

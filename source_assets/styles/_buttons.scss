@@ -1,0 +1,112 @@
+// BUTTONS
+
+// GLOBAL
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  @include transform(translateZ(0));
+  &:active {
+    @include transform(translate(0, 1px));
+  }
+}
+
+.bttn {
+  display: inline-block;
+  font-weight: $body-font-bold;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: $global-radius;
+  border: 0;
+  background-image: none;
+  text-transform: uppercase;
+  @include user-select(none);
+  line-height: 1.5rem;
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  min-height: 2rem;
+  box-shadow: inset 0 0 2px rgba($primary-color, 0.2), inset 0 -2px 0 0 rgba($primary-color, 0.2);
+  &:active, &.active {
+    box-shadow: inset 0 0 2px rgba($primary-color, 0.2), inset 0 2px 0 0 rgba($primary-color, 0.2);
+    outline: none;
+  }
+  &:hover {
+    opacity: inherit;
+  }
+  &.disabled, &[disabled] {
+    pointer-events: none;
+    cursor: not-allowed;
+    filter: alpha(opacity=60);
+    box-shadow: none;
+    opacity: .6;
+  }
+  @include transition-property(background-color);
+  @include transition-duration(0.2s);
+  @include transition-timing-function(ease);
+  @include transition-delay(0);
+}
+
+// VARIATIONS
+
+// Default (Gray)
+.bttn-default,
+.bttn-default:visited {
+  @include bttn-variation(tint($primary-color, 90%), 'light');
+}
+
+.bttn-success,
+.bttn-success:visited {
+  @include bttn-variation($success-color);
+}
+
+// SIZES
+
+// Small (24px)
+.bttn-s {
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  padding: 0.125rem 0.5rem;
+  min-height: 1.25rem;
+}
+
+// Medium (32px)
+// Default
+.bttn-m {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  min-height: 2rem;
+}
+
+/* Large (40px) */
+.bttn-l {
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  padding: 0.375rem 1rem;
+  min-height: 2.5rem;
+}
+
+/* Extra-large (44px) */
+.bttn-xl {
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.25rem;
+  min-height: 2.75rem;
+}
+
+// GROUP
+
+.bttn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.bttn-group>.bttn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
