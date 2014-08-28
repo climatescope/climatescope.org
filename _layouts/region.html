@@ -33,7 +33,7 @@ layout: entry
   {% for country in site[col] %}
     {% if country.region == page.id %}
     <li>
-      <a href="{{ country.url }}">{{ country.title }}</a>
+      <a href="{{site.domain}}{{ country.url }}">{{ country.title }}</a>
     </li>
     {% endif %}
   {% endfor %}

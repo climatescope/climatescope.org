@@ -6,6 +6,8 @@ lang: en
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
 <script>
+var domain = '{{site.domain}}';
+
   var app = angular.module('app', [], function($interpolateProvider) {
     $interpolateProvider.startSymbol('//');
     $interpolateProvider.endSymbol('//');
@@ -18,7 +20,7 @@ lang: en
     this.sortField = 'overall_ranking';
     this.sortReverse = false;
 
-    $http.get('/en/api/countries.json').success(function(data) {
+    $http.get(domain + '/en/api/countries.json').success(function(data) {
       _self.countries = data;
     });
   }]);

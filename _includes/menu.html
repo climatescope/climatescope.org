@@ -15,7 +15,7 @@
     <ul class="dropdown-menu" role="menu">
       {% for region in site.en_region %}
       <li>
-        <a href="{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
+        <a href="{{site.domain}}{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -25,7 +25,7 @@
     <ul class="dropdown-menu" role="menu">
       {% for topic in site.en_parameter %}
       <li>
-        <a href="{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
+        <a href="{{site.domain}}{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -48,7 +48,7 @@
     <ul class="dropdown-menu" role="menu">
       {% for region in site.es_region %}
       <li>
-        <a href="{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
+        <a href="{{site.domain}}{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -58,7 +58,7 @@
     <ul class="dropdown-menu" role="menu">
       {% for topic in site.es_parameter %}
       <li>
-        <a href="{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
+        <a href="{{site.domain}}{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
       </li>
       {% endfor %}
     </ul>

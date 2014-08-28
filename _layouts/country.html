@@ -71,7 +71,7 @@ layout: entry
         {% for state in site[col] %}
           {% if state.country == page.id %}
           <li>
-            <a href="{{ state.url }}">{{ state.title }}</a>
+            <a href="{{site.domain}}{{ state.url }}">{{ state.title }}</a>
           </li>
           {% endif %}
         {% endfor %}
