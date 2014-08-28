@@ -1,23 +1,51 @@
 ---
 layout: entry
 ---
-{{ content }}
+<div class="row--full map">
+  <p>Insert map here.</p>
+</div>
 
-{% case site.collections[page.collection].lang %}
-{% when 'en' %}
-  {% assign col = 'en_state' %}
-  <h2>States EN </h2>
-{% when 'es' %}
-  {% assign col = 'es_state' %}
-  <h2>States ES </h2>
-{% endcase %}
+<div class="row--contained">
 
-  <ul>
-  {% for state in site[col] %}
-    {% if state.country == page.id %}
-    <li>
-      <a href="{{ state.url }}">{{ state.title }}</a>
-    </li>
-    {% endif %}
-  {% endfor %}
-  </ul>
+  <div class="col--main">
+    <h2>Summary</h2>
+    {{ content }}
+  </div>
+
+  <div class="col--sec">
+    <dl class="country-global-meta">
+      <dt>Rank</dt>
+      <dd>01</dd>
+      <dt>Score</dt>
+      <dd>2.25</dd>
+    </dl>
+    <ul class="country-ctas">
+      <li><a href="/" title="Policies">There are 18 relevant policies ›</a></li>
+      <li><a href="/" title="Policies">Compare to ›</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="row--contained">
+
+  {% case site.collections[page.collection].lang %}
+  {% when 'en' %}
+    {% assign col = 'en_state' %}
+    <h2>States EN </h2>
+  {% when 'es' %}
+    {% assign col = 'es_state' %}
+    <h2>States ES </h2>
+  {% endcase %}
+
+    <ul>
+    {% for state in site[col] %}
+      {% if state.country == page.id %}
+      <li>
+        <a href="{{ state.url }}">{{ state.title }}</a>
+      </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    
+</div>

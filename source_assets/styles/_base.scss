@@ -171,6 +171,19 @@ a:active{
   margin: 0 0 2rem 0;
 }
 
+// LAYOUT: ENTRY/COUNTRY
+
+.country-ctas,
+.country-global-meta {
+  margin-bottom: 1rem;
+}
+
+.country-global-meta {
+  dt {
+    font-weight: bold;
+  }
+}
+
 #site-footer {
   background: tint($primary-color, 95%);
   padding: 2rem 0;
