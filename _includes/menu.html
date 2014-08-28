@@ -10,9 +10,9 @@
   <li>
     <a href="{{site.domain}}/en/" title="The main index">Global</a>
   </li>
-  <li>
-    <a href="#" title="Regions">Regions</a>
-    <ul>
+  <li class="dropdown open">
+    <a href="#" title="Regions" class="dropdown-toggle" data-toggle="dropdown">Regions</a>
+    <ul class="dropdown-menu" role="menu">
       {% for region in site.en_region %}
       <li>
         <a href="{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
@@ -20,9 +20,9 @@
       {% endfor %}
     </ul>
   </li>
-  <li>
-    <a href="#" title="Topics">Topics</a>
-    <ul>
+  <li class="dropdown">
+    <a href="#" title="Topics" class="dropdown-toggle" data-toggle="dropdown">Topics</a>
+    <ul class="dropdown-menu" role="menu">
       {% for topic in site.en_parameter %}
       <li>
         <a href="{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>

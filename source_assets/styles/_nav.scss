@@ -1,0 +1,45 @@
+// NAV
+
+.nav {
+  @extend .clearfix;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  > li {
+    position: relative;
+    display: block;
+  }
+  > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+  }
+}
+
+// TABS
+
+.nav-tabs {
+  border-bottom: 2px solid tint($primary-color, 90%);
+  > li {
+    float: left;
+    margin-bottom: -2px;
+  }
+  > li > a {
+    color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 4px;
+    border: 2px solid transparent;
+    border-radius: $global-radius $global-radius 0 0;
+    padding: 0.5rem 1rem;
+  }
+  > li.active > a,
+  > li.active > a:hover,
+  > li.active > a:focus {
+    opacity: inherit;
+    cursor: default;
+    background-color: #fff;
+    border-color: tint($primary-color, 90%);
+    border-bottom-color: transparent;
+  }
+}

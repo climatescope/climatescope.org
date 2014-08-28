@@ -86,29 +86,25 @@ a:active{
 
 #prime-nav {
   @include col(7/12);
-  > ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    a {
-      display: block;
-    }
-    li {
-      float: left;
-      margin: 0 0 0 2rem;
-    }
-  }
-  ul ul {
-    display: none;
-  }
 }
 
 .lang-menu {
   float: right;
+  margin: 0 0 0 2rem !important;
 }
 
 .global-menu {
   float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  a {
+    display: block;
+  }
+  > li {
+    float: left;
+    margin: 0 0 0 2rem;
+  }
 }
 
 #site-body {
@@ -127,18 +123,8 @@ a:active{
     @include col(8/12);
   }
 
-  &__toolbar {
+  &__tools {
     @include col(4/12);
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      float: right;
-    }
-    li {
-      margin: 0 0 0 2rem;
-      float: left;
-    }
   }
 
   &__title,
@@ -155,6 +141,18 @@ a:active{
 
 }
 
+.actions-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+  font-size: 0;
+  li {
+    margin: 0 0 0 0.5rem;
+    float: left;
+  }
+}
+
 .col--main {
   @include col(8/12);
 }
@@ -169,6 +167,26 @@ a:active{
   padding: 4rem 3rem;
   margin: 0 0 2rem 0;
 }
+
+// LAYOUT: ENTRY/COUNTRY
+
+.country-ctas,
+.country-global-meta {
+  margin-bottom: 1rem;
+}
+
+.country-global-meta {
+  dt {
+    font-weight: bold;
+  }
+}
+
+#section-switch {
+  margin-bottom: 2rem;
+}
+
+
+// Clean me v
 
 #site-footer {
   background: tint($primary-color, 95%);
