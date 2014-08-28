@@ -1,4 +1,4 @@
-<ul class="lang-menu">
+<ul class="lang-menu bttn-group bttn-group-s bttn-list">
 {% for l in site.data.i18n.lang %}
 
   {% if page.collection %}
@@ -7,14 +7,14 @@
 
     {% for col in site[translated_col] %}
       {% if col.id == page.id %}
-        <li><a href="{{site.domain}}{{col.url | remove:'index.html' }}" class="{% if l == cur_lang %}current{% endif %}">{{l}}</a></li>
+        <li><a href="{{site.domain}}{{col.url | remove:'index.html' }}" class="bttn bttn-default {% if l == cur_lang %}active{% endif %}">{{l}}</a></li>
       {% endif %}
     {% endfor %}
 
   {% else %}
     {% for pg in site.pages %}
       {% if pg.lang == l and pg.id == page.id %}
-        <li><a href="{{site.domain}}{{pg.url | remove:'index.html' }}" class="{% if l == page.lang %}current{% endif %}">{{l}}</a></li>
+        <li><a href="{{site.domain}}{{pg.url | remove:'index.html' }}" class="bttn bttn-default {% if l == page.lang %}active{% endif %}">{{l}}</a></li>
       {% endif %}
     {% endfor %}
   {% endif %}

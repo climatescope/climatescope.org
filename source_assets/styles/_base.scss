@@ -86,18 +86,6 @@ a:active{
 
 #prime-nav {
   @include col(7/12);
-  > ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    a {
-      display: block;
-    }
-    li {
-      float: left;
-      margin: 0 0 0 2rem;
-    }
-  }
   ul ul {
     display: none;
   }
@@ -105,10 +93,21 @@ a:active{
 
 .lang-menu {
   float: right;
+  margin: 0 0 0 2rem !important;
 }
 
 .global-menu {
   float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  a {
+    display: block;
+  }
+  li {
+    float: left;
+    margin: 0 0 0 2rem;
+  }
 }
 
 #site-body {
@@ -127,18 +126,8 @@ a:active{
     @include col(8/12);
   }
 
-  &__toolbar {
+  &__tools {
     @include col(4/12);
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      float: right;
-    }
-    li {
-      margin: 0 0 0 2rem;
-      float: left;
-    }
   }
 
   &__title,
@@ -153,6 +142,18 @@ a:active{
     }
   }
 
+}
+
+.actions-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+  font-size: 0;
+  li {
+    margin: 0 0 0 0.5rem;
+    float: left;
+  }
 }
 
 .col--main {
