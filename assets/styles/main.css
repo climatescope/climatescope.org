@@ -4,7 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\000039}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\000039}}
 html {
   font-family: sans-serif;
   /* 1 */
@@ -17,7 +17,7 @@ html {
 /**
  * Remove default margin.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000319}}
 body {
   margin: 0;
 }
@@ -29,7 +29,7 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000332}}
 article,
 aside,
 details,
@@ -49,7 +49,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000352}}
 audio,
 canvas,
 progress,
@@ -64,7 +64,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000365}}
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -74,7 +74,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000375}}
 [hidden],
 template {
   display: none;
@@ -85,7 +85,7 @@ template {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000387}}
 a {
   background: transparent;
 }
@@ -93,7 +93,7 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\0000395}}
 a:active,
 a:hover {
   outline: 0;
@@ -104,7 +104,7 @@ a:hover {
 /**
  * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003107}}
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -112,7 +112,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003115}}
 b,
 strong {
   font-weight: bold;
@@ -121,7 +121,7 @@ strong {
 /**
  * Address styling not present in Safari and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003124}}
 dfn {
   font-style: italic;
 }
@@ -130,16 +130,10 @@ dfn {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003133}}
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 /**
  * Address styling not present in IE 8/9.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003142}}
 mark {
   background: #ff0;
   color: #000;
@@ -148,7 +142,7 @@ mark {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003151}}
 small {
   font-size: 80%;
 }
@@ -156,7 +150,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003159}}
 sub,
 sup {
   font-size: 75%;
@@ -165,12 +159,12 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003167}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003167}}
 sup {
   top: -0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003171}}
 sub {
   bottom: -0.25em;
 }
@@ -180,7 +174,7 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9/10.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003182}}
 img {
   border: 0;
 }
@@ -188,7 +182,7 @@ img {
 /**
  * Correct overflow not hidden in IE 9/10/11.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003190}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003190}}
 svg:not(:root) {
   overflow: hidden;
 }
@@ -198,7 +192,7 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003201}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003201}}
 figure {
   margin: 1em 40px;
 }
@@ -206,7 +200,7 @@ figure {
 /**
  * Address differences between Firefox and other browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003209}}
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -216,7 +210,7 @@ hr {
 /**
  * Contain overflow in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003219}}
 pre {
   overflow: auto;
 }
@@ -224,7 +218,7 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003227}}
 code,
 kbd,
 pre,
@@ -245,7 +239,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003250}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003250}}
 button,
 input,
 optgroup,
@@ -262,7 +256,7 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003264}}
 button {
   overflow: visible;
 }
@@ -273,7 +267,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003275}}
 button,
 select {
   text-transform: none;
@@ -286,7 +280,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003288}}
 button,
 html input[type="button"],
 input[type="reset"],
@@ -300,7 +294,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003300}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003300}}
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -309,7 +303,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003309}}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -320,7 +314,7 @@ input::-moz-focus-inner {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003320}}
 input {
   line-height: normal;
 }
@@ -332,7 +326,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003332}}
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -346,7 +340,7 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003344}}
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -357,7 +351,7 @@ input[type="number"]::-webkit-outer-spin-button {
  * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
  *    (include `-moz` to future-proof).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003355}}
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -372,7 +366,7 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003368}}
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -381,7 +375,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Define consistent border, margin, and padding.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003377}}
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -392,7 +386,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9/10/11.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003388}}
 legend {
   border: 0;
   /* 1 */
@@ -403,7 +397,7 @@ legend {
 /**
  * Remove default vertical scrollbar in IE 8/9/10/11.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003397}}
 textarea {
   overflow: auto;
 }
@@ -412,7 +406,7 @@ textarea {
  * Don't inherit the `font-weight` (applied by a rule above).
  * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003406}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003406}}
 optgroup {
   font-weight: bold;
 }
@@ -422,25 +416,25 @@ optgroup {
 /**
  * Remove most spacing between table cells.
  */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003417}}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003422}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_normalize\.scss}line{font-family:\00003422}}
 td,
 th {
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\000031}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\000031}}
 body,
 .cf {
   *zoom: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\000035}}
 body:before,
 .cf:before,
 body:after,
@@ -449,13 +443,13 @@ body:after,
   display: table;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000312}}
 body:after,
 .cf:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000316}}
 *,
 *:before,
 *:after,
@@ -467,18 +461,18 @@ body:after,
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000326}}
 html {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000330}}
 body {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000333}}
 img,
 video,
 audio,
@@ -489,7 +483,7 @@ iframe {
   max-width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000342}}
 .browsehappy {
   width: 100%;
   padding: 15px 0;
@@ -497,102 +491,987 @@ iframe {
   border-bottom: 1px solid #ddd;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000348}}
 .browsehappy p {
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000351}}
 .browsehappy p:last-of-type {
   margin-bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_reset\.scss}line{font-family:\0000354}}
 .browsehappy a {
   color: #00f;
 }
 
-/* ==========================================================================
-   Settings - contains the settings of the Global Climatescope
-   ========================================================================== */
-/* ==========================================================================
-   Styles - contains the global styles of the Global Climatescope
-   ========================================================================== */
-/* Layout */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003105}}
-#site-canvas * {
-  background: rgba(0, 0, 0, 0.05);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#10000000, endColorstr=#10000000);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_settings\.scss}line{font-family:\0000339}}
+.bttn-success,
+.bttn-success:visited {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000311}}
-#site-hdr {
+@font-face {
+  font-family: 'Klavika Bold';
+  src: url("../fonts/klavika/Klavika-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/klavika/Klavika-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/klavika/Klavika-Bold.woff") format("woff"), url("../fonts/klavika/Klavika-Bold.ttf") format("truetype"), url("../fonts/klavika/Klavika-Bold.svg#522fc3d7747606a4f81ed920a042787b") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Klavika Bold Italic';
+  src: url("../fonts/klavika/Klavika-BoldItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/klavika/Klavika-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/klavika/Klavika-BoldItalic.woff") format("woff"), url("../fonts/klavika/Klavika-BoldItalic.ttf") format("truetype"), url("../fonts/klavika/Klavika-BoldItalic.svg#6421dcf2641f6a30601669394dbe95e4") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Klavika Regular';
+  src: url("../fonts/klavika/Klavika-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/klavika/Klavika-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/klavika/Klavika-Regular.woff") format("woff"), url("../fonts/klavika/Klavika-Regular.ttf") format("truetype"), url("../fonts/klavika/Klavika-Regular.svg#1c0a77123c833724b533e6327487c008") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Klavika Regular Italic';
+  src: url("../fonts/klavika/Klavika-RegularItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/klavika/Klavika-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/klavika/Klavika-RegularItalic.woff") format("woff"), url("../fonts/klavika/Klavika-RegularItalic.ttf") format("truetype"), url("../fonts/klavika/Klavika-RegularItalic.svg#78847f714a762df028e6b2216c7096f7") format("svg");
+  /* Legacy iOS */
+  font-style: italic;
+  font-weight: 400;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000357}}
+h1, .hd-xl,
+h2, .hd-l,
+h3, .hd-m,
+h4, .hd-s,
+h5, .hd-xs, #site-title,
+h6, .hd-xxs, .layout--entry__body h2 {
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  text-transform: uppercase;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000368}}
+h1, .hd-xl {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+@media (min-width: 544px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000368}}
+  h1, .hd-xl {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000372}}
+h2, .hd-l {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+@media (min-width: 544px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000372}}
+  h2, .hd-l {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000376}}
+h3, .hd-m {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+@media (min-width: 544px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000376}}
+  h3, .hd-m {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000380}}
+h4, .hd-s {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+@media (min-width: 544px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000380}}
+  h4, .hd-s {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000384}}
+h5, .hd-xs, #site-title {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+@media (min-width: 544px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000384}}
+  h5, .hd-xs, #site-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000388}}
+h6, .hd-xxs, .layout--entry__body h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+@media (min-width: 544px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000388}}
+  h6, .hd-xxs, .layout--entry__body h2 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\0000393}}
+[class*=' hd-'] b, [class^='hd-'] b {
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_type\.scss}line{font-family:\00003100}}
+p {
+  margin-bottom: 1rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\000035}}
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000312}}
+button:active,
+html input[type=button]:active,
+input[type=reset]:active,
+input[type=submit]:active {
+  -moz-transform: translate(0, 1px);
+  -ms-transform: translate(0, 1px);
+  -webkit-transform: translate(0, 1px);
+  transform: translate(0, 1px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000317}}
+.bttn {
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  border: 0;
+  background-image: none;
+  text-transform: uppercase;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  min-height: 2rem;
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-transition-property: background-color;
+  -o-transition-property: background-color;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000333}}
+.bttn:active, .bttn.active {
+  box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000337}}
+.bttn:hover {
+  opacity: inherit;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000340}}
+.bttn.disabled, .bttn[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  filter: alpha(opacity=60);
+  box-shadow: none;
+  opacity: .6;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000356}}
+.bttn-default,
+.bttn-default:visited {
+  background-color: #e5e5e5;
+  color: #333333;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_mixins\.scss}line{font-family:\0000321}}
+.bttn-default:hover,
+.bttn-default:visited:hover {
+  background-color: #cecece;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_mixins\.scss}line{font-family:\0000324}}
+.bttn-default.active, .bttn-default.active:hover,
+.bttn-default:visited.active,
+.bttn-default:visited.active:hover {
+  background-color: #c2c2c2;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000362}}
+.bttn-success,
+.bttn-success:visited {
+  background-color: #77bc1f;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_mixins\.scss}line{font-family:\0000321}}
+.bttn-success:hover,
+.bttn-success:visited:hover {
+  background-color: #6ba91b;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_mixins\.scss}line{font-family:\0000324}}
+.bttn-success.active, .bttn-success.active:hover,
+.bttn-success:visited.active,
+.bttn-success:visited.active:hover {
+  background-color: #659f1a;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000370}}
+.bttn-s,
+.bttn-group-s .bttn {
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  padding: 0.125rem 0.5rem;
+  min-height: 1.25rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000380}}
+.bttn-m,
+.bttn-group-m .bttn {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  min-height: 2rem;
+}
+
+/* Large (40px) */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000389}}
+.bttn-l,
+.bttn-group-l .bttn {
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  padding: 0.375rem 1rem;
+  min-height: 2.5rem;
+}
+
+/* Extra-large (44px) */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\0000398}}
+.bttn-xl,
+.bttn-group-xl .bttn {
+  line-height: 1.75rem;
+  font-size: 1.25rem;
+  padding: 0.5rem 1.25rem;
+  min-height: 2.75rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\00003108}}
+.bttn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\00003112}}
+.bttn-group.bttn-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\00003117}}
+.bttn-group > *,
+.bttn-group > .bttn {
+  position: relative;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\00003122}}
+.bttn-group > *:first-child:not(:last-child) .bttn,
+.bttn-group > .bttn:first-child:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\00003127}}
+.bttn-group > *:last-child:not(:first-child) .bttn,
+.bttn-group > .bttn:last-child:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_buttons\.scss}line{font-family:\00003132}}
+.bttn-group > *:not(:first-child):not(:last-child) .bttn,
+.bttn-group > .bttn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_nav\.scss}line{font-family:\000033}}
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_nav\.scss}line{font-family:\000038}}
+.nav > li {
+  position: relative;
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_nav\.scss}line{font-family:\0000312}}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_nav\.scss}line{font-family:\0000321}}
+.nav-tabs {
+  border-bottom: 2px solid #e5e5e5;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_nav\.scss}line{font-family:\0000323}}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_nav\.scss}line{font-family:\0000327}}
+.nav-tabs > li > a {
+  color: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 4px;
+  border: 2px solid transparent;
+  border-radius: 0.25rem 0.25rem 0 0;
+  padding: 0.5rem 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_nav\.scss}line{font-family:\0000336}}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  opacity: inherit;
+  cursor: default;
+  background-color: #fff;
+  border-color: #e5e5e5;
+  border-bottom-color: transparent;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\000035}}
+.dropdown {
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\000038}}
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000311}}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #ffffff;
+  border: 2px solid #cccccc;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000331}}
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000335}}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333333;
+  white-space: nowrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000344}}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000350}}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  background-color: #428bca;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000358}}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  color: #777777;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000363}}
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  cursor: not-allowed;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000371}}
+.open > .dropdown-menu {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000374}}
+.open > a {
+  outline: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000377}}
+.dropdown-menu-right {
+  left: auto;
+  right: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000381}}
+.dropdown-menu-left {
+  left: 0;
+  right: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000385}}
+.dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777777;
+  white-space: nowrap;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\0000393}}
+.dropdown-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 990;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\00003101}}
+.pull-right > .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\00003105}}
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid;
+  content: "";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_overlays\.scss}line{font-family:\00003111}}
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\000036}}
+html, body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000312}}
+body {
+  background: white;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000320}}
+a {
+  cursor: pointer;
+  color: #77bc1f;
+  text-decoration: none;
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -moz-transition-delay: 0;
+  -o-transition-delay: 0;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000331}}
+a:visited {
+  color: #77bc1f;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000335}}
+a:hover {
+  opacity: 0.6;
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000340}}
+a:active {
+  outline: none;
+  -moz-transform: translate(0, 1px);
+  -ms-transform: translate(0, 1px);
+  -webkit-transform: translate(0, 1px);
+  transform: translate(0, 1px);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000349}}
+.row--contained {
   *zoom: 1;
   width: auto;
-  max-width: 1180px;
+  max-width: 80rem;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
-#site-hdr:before, #site-hdr:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+.row--contained:before, .row--contained:after {
   content: '';
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
-#site-hdr:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+.row--contained:after {
   clear: both;
 }
+@media (min-width: 544px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000349}}
+  .row--contained {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000349}}
+  .row--contained {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000315}}
-#site-body {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000370}}
+#site-header {
+  padding: 2rem 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000374}}
+#site-headline {
   *zoom: 1;
-  width: auto;
-  max-width: 1180px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  float: left;
+  clear: none;
+  text-align: inherit;
   padding-left: 0;
   padding-right: 0;
+  width: 39.33333%;
+  margin-left: 0%;
+  margin-right: 4%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
-#site-body:before, #site-body:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+#site-headline:before, #site-headline:after {
   content: '';
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
-#site-body:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+#site-headline:after {
   clear: both;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
+#site-headline:last-child {
+  margin-right: 0%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000319}}
-#site-ftr {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000378}}
+#site-title {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000381}}
+#site-title em {
+  font-style: normal;
+  color: #999999;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000387}}
+#prime-nav {
   *zoom: 1;
-  width: auto;
-  max-width: 1180px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+  float: left;
+  clear: none;
+  text-align: inherit;
   padding-left: 0;
   padding-right: 0;
+  width: 56.66667%;
+  margin-left: 0%;
+  margin-right: 4%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
-#site-ftr:before, #site-ftr:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+#prime-nav:before, #prime-nav:after {
   content: '';
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
-#site-ftr:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+#prime-nav:after {
   clear: both;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
+#prime-nav:last-child {
+  margin-right: 0%;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000323}}
-li {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000391}}
+.lang-menu {
+  float: right;
+  margin: 0 0 0 2rem !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000396}}
+.global-menu {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003101}}
+.global-menu a {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003104}}
+.global-menu > li {
+  float: left;
+  margin: 0 0 0 2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003118}}
+.layout--entry__header {
+  padding: 0 0 2rem 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003122}}
+.layout--entry__heading {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 65.33333%;
+  margin-left: 0%;
+  margin-right: 4%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+.layout--entry__heading:before, .layout--entry__heading:after {
+  content: '';
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+.layout--entry__heading:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
+.layout--entry__heading:last-child {
+  margin-right: 0%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003126}}
+.layout--entry__tools {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 30.66667%;
+  margin-left: 0%;
+  margin-right: 4%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+.layout--entry__tools:before, .layout--entry__tools:after {
+  content: '';
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+.layout--entry__tools:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
+.layout--entry__tools:last-child {
+  margin-right: 0%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003130}}
+.layout--entry__title, .layout--entry__subtitle {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003135}}
+.layout--entry__body {
+  padding: 0 0 2rem 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003144}}
+.actions-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+  font-size: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003150}}
+.actions-menu li {
+  margin: 0 0 0 0.5rem;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003156}}
+.col--main {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 65.33333%;
+  margin-left: 0%;
+  margin-right: 4%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+.col--main:before, .col--main:after {
+  content: '';
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+.col--main:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
+.col--main:last-child {
+  margin-right: 0%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003160}}
+.col--sec {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 30.66667%;
+  margin-left: 0%;
+  margin-right: 4%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+.col--sec:before, .col--sec:after {
+  content: '';
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+.col--sec:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
+.col--sec:last-child {
+  margin-right: 0%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003164}}
+.map {
+  background: #f2f2f2;
+  text-align: center;
+  padding: 4rem 3rem;
+  margin: 0 0 2rem 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003173}}
+.country-ctas,
+.country-global-meta {
+  margin-bottom: 1rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003179}}
+.country-global-meta dt {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003184}}
+#section-switch {
+  margin-bottom: 2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003191}}
+#site-footer {
+  background: #f2f2f2;
+  padding: 2rem 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003196}}
+#ftr-credits {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 65.33333%;
+  margin-left: 0%;
+  margin-right: 4%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+#ftr-credits:before, #ftr-credits:after {
+  content: '';
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+#ftr-credits:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
+#ftr-credits:last-child {
+  margin-right: 0%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003201}}
+#ftr-credits .orgs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003205}}
+#ftr-credits .orgs-list li {
+  float: left;
+  margin: 0 1rem 1rem 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003209}}
+#ftr-credits .orgs-list a {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003215}}
+#ftr-credits .orgs-list img {
+  vertical-align: top;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003221}}
+#comp-nav {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  padding-left: 0;
+  padding-right: 0;
+  width: 30.66667%;
+  margin-left: 0%;
+  margin-right: 4%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+#comp-nav:before, #comp-nav:after {
+  content: '';
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+#comp-nav:after {
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
+#comp-nav:last-child {
+  margin-right: 0%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003223}}
+#comp-nav .ftr-menu {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003228}}
+#comp-nav .ftr-menu li {
+  float: left;
+  margin: 0 0 1rem 1rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003232}}
+#comp-nav .ftr-menu a {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\00003238}}
+#copyright {
   *zoom: 1;
   float: left;
   clear: none;
@@ -601,54 +1480,27 @@ li {
   padding-right: 0;
   width: 100%;
   margin-left: 0%;
-  margin-right: 3%;
+  margin-right: 4%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
-li:before, li:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
+#copyright:before, #copyright:after {
   content: '';
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
-li:after {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
+#copyright:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
-li:last-child {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
+#copyright:last-child {
   margin-right: 0%;
-}
-@media (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/_base\.scss}line{font-family:\0000323}}
-  li {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    padding-left: 0;
-    padding-right: 0;
-    width: 14.16667%;
-    margin-left: 0%;
-    margin-right: 3%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003204}}
-  li:before, li:after {
-    content: '';
-    display: table;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\00003208}}
-  li:after {
-    clear: both;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/guts\/projects\/climatescope\/source_assets\/styles\/jeet\/_grid\.scss}line{font-family:\0000348}}
-  li:last-child {
-    margin-right: 0%;
-  }
 }
 
 /*  Jeet Syntax Quick Reference
   --------------------------
-  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  col($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
   span($ratio: 1, $offset: 0)
-  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  shift($ratios: 0, $col_or_span: col, $gutter: $jeet-gutter)
   unshift()
   edit()
   center($max_width: 1410px, $pad: 0)
@@ -657,3 +1509,56 @@ li:last-child {
   align($direction: both)
   cf()
 */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_helpers\.scss}line{font-family:\000035}}
+.truncated {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_helpers\.scss}line{font-family:\0000314}}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_helpers\.scss}line{font-family:\0000321}}
+.visually-hidden, #ftr-credits h1, #ftr-credits .orgs-list span {
+  border: 0 none;
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_helpers\.scss}line{font-family:\0000334}}
+.visually-hidden.focusable:active, #ftr-credits h1.focusable:active, #ftr-credits .orgs-list span.focusable:active,
+.visually-hidden.focusable:focus,
+#ftr-credits h1.focusable:focus,
+#ftr-credits .orgs-list span.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_helpers\.scss}line{font-family:\0000346}}
+.invisible {
+  visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_helpers\.scss}line{font-family:\0000353}}
+.clearfix:before, .nav:before, .clearfix:after, .nav:after {
+  content: " ";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/olaf\/projects\/climatescope\/source_assets\/styles\/_helpers\.scss}line{font-family:\0000358}}
+.clearfix:after, .nav:after {
+  clear: both;
+}
