@@ -30,21 +30,28 @@ layout: entry
 <div class="row--contained">
 
   <ul class="nav nav-tabs" role="tablist" id="section-switch">
-    <li class="active"><a href="#">In detail</a></li>
-    <li><a href="#">States/Provinces</a></li>
-    <li><a href="#">Case study</a></li>
+    <li class="active"><a href="#country-detail">In detail</a></li>
+    <li><a href="#country-states">States/Provinces</a></li>
+    <li><a href="#country-case-study">Case study</a></li>
   </ul>
 
-  <section id="country-detail">
+  <section id="country-detail" class="tab-content">
     <h1 class="visually-hidden">In Detail</h1>
     <div class="prose">
       <p>In detail content</p>
     </div>
   </section>
 
-  <section id="country-states">
+  <section id="country-states" class="tab-content hidden">
     <h1 class="visually-hidden">States/Provinces</h1>
     <div class="prose">
+      {% case site.collections[page.collection].lang %}
+        {% when 'en' %}
+          {% assign col = 'en_state' %}
+        {% when 'es' %}
+          {% assign col = 'es_state' %}
+      {% endcase %}
+      
       {% for state in site[col] %}
         {% if state.country == page.id %}
           {% assign has_states = true %}
@@ -55,10 +62,8 @@ layout: entry
 
         {% case site.collections[page.collection].lang %}
         {% when 'en' %}
-          {% assign col = 'en_state' %}
           <p>States/Provinces EN content</p>
         {% when 'es' %}
-          {% assign col = 'es_state' %}
           <p>States/Provinces ES content</p>
         {% endcase %}
 
@@ -76,7 +81,7 @@ layout: entry
     </div>
   </section>
 
-  <section id="country-case-study">
+  <section id="country-case-study" class="tab-content hidden">
     <h1 class="visually-hidden">Case Study</h1>
     <div class="prose">
       <p>Case Study content</p>
