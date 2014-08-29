@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-37
+id: cn-37
 title: Shandong
 
 region: asia
-country: ch
+country: cn
 ---
 Spanish description
 This is a Chinese state

@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-51
-title: Sichuan
+id: cn-51
+title: Sicnuan
 
 region: asia
-country: ch
+country: cn
 ---
 Spanish description
 This is a Chinese state

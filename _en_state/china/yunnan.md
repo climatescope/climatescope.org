@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-53
+id: cn-53
 title: Yunnan
 
 region: asia
-country: ch
+country: cn
 ---
 English description
 This is a Chinese state

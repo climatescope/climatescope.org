@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-22
+id: cn-22
 title: Jilin
 
 region: asia
-country: ch
+country: cn
 ---
 English description
 This is a Chinese state

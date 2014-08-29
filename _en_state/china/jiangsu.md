@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-32
+id: cn-32
 title: Jiangsu
 
 region: asia
-country: ch
+country: cn
 ---
 English description
 This is a Chinese state
