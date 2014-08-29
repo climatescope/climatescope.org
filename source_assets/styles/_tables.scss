@@ -43,6 +43,19 @@
 
 }
 
+.poc-detailed-data {
+  .param td {
+    font-weight: bold;
+  }
+  .ind_group > td:first-child {
+    padding-left: 1.5rem;
+    color: tint($primary-color, 60%);
+  }
+  .ind > td:first-child {
+    padding-left: 2.5rem;
+  }
+}
+
 .table-bar {
   width: 300px;
   list-style-type: none;
