@@ -20,6 +20,25 @@
   <!--[if lt IE 9]><script src="{{ site.domain }}/assets/scripts/vendor/selectivizr-1.0.2.min.js"></script><![endif]-->
   <script src="{{ site.domain }}/assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+  <script>
+    var CS = { lang: '{{language}}', domain: '{{site.domain}}' };
+    
+    {% case language %}
+    {% when 'en' %}
+      {% assign country_col = 'en_country' %}
+    {% when 'es' %}
+      {% assign country_col = 'es_country' %}
+    {% endcase %}
+    
+    // Country index to retrieve the url.
+    CS.countryIndex = {
+      {% for country in site[country_col] %}
+        {% if country.region == page.id %}
+        "{{country.id}}":"{{site.domain}}{{country.url}}",
+        {% endif %}
+      {% endfor %}
+    };
+  </script>
 </head>
 <body>
   <!--[if lt IE 9]>
@@ -63,9 +82,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ site.domain }}/assets/scripts/vendor/jquery-2.1.0.min.js"><\/script>')</script>
   <!--<![endif]-->
-  <script>
-    var CS = { lang: '{{language}}', domain: '{{site.domain}}' };
-  </script>
   <script src="{{ site.domain }}/assets/scripts/main.min.js"></script>
 </body>
 </html>

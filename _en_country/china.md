@@ -1,7 +1,7 @@
 ---
 layout: country
 
-id: ch
+id: cn
 title: China
 
 region: asia

@@ -1,0 +1,785 @@
+{
+    "name": "Africa",
+    "id": "africa",
+    "countries": [
+        {
+            "name": "Uganda",
+            "iso": "UG",
+            "grid": "off",
+            "overall_ranking": 2,
+            "regional_ranking": null,
+            "score": 2.79,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 2.65
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 2.99
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 2.87
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 2.74
+                }
+            ]
+        },
+        {
+            "name": "DR Congo",
+            "iso": "CD",
+            "grid": "off",
+            "overall_ranking": 9,
+            "regional_ranking": null,
+            "score": 2.58,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 2.82
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 2.31
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 2.69
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 2.44
+                }
+            ]
+        },
+        {
+            "name": "Liberia",
+            "iso": "LR",
+            "grid": "off",
+            "overall_ranking": 11,
+            "regional_ranking": null,
+            "score": 2.58,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 2.8
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 2.78
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 2.18
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 2.01
+                }
+            ]
+        },
+        {
+            "name": "Mozambique",
+            "iso": "MZ",
+            "grid": "off",
+            "overall_ranking": 14,
+            "regional_ranking": null,
+            "score": 2.52,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 2.65
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 2.45
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 2.4
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 2.43
+                }
+            ]
+        },
+        {
+            "name": "C\u00f4te d'Ivoire",
+            "iso": "CI",
+            "grid": "off",
+            "overall_ranking": 20,
+            "regional_ranking": null,
+            "score": 1.84,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 1.98
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 1.81
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 1.93
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 1.58
+                }
+            ]
+        },
+        {
+            "name": "Senegal",
+            "iso": "SN",
+            "grid": "off",
+            "overall_ranking": 21,
+            "regional_ranking": null,
+            "score": 1.78,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 1.7
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 1.95
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 1.63
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 1.78
+                }
+            ]
+        },
+        {
+            "name": "Tanzania",
+            "iso": "TZ",
+            "grid": "off",
+            "overall_ranking": 23,
+            "regional_ranking": null,
+            "score": 1.55,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 1.77
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 1.47
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 1.87
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 1.1
+                }
+            ]
+        },
+        {
+            "name": "Malawi",
+            "iso": "MW",
+            "grid": "off",
+            "overall_ranking": 28,
+            "regional_ranking": null,
+            "score": 1.49,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 1.94
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 1.23
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 1.36
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 1.07
+                }
+            ]
+        },
+        {
+            "name": "Nigeria",
+            "iso": "NG",
+            "grid": "off",
+            "overall_ranking": 30,
+            "regional_ranking": null,
+            "score": 1.43,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 1.34
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 1.17
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 1.69
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 1.86
+                }
+            ]
+        },
+        {
+            "name": "Cameroon",
+            "iso": "CM",
+            "grid": "off",
+            "overall_ranking": 34,
+            "regional_ranking": null,
+            "score": 1.28,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 1
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 1.62
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 1.64
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 1.13
+                }
+            ]
+        },
+        {
+            "name": "Zimbabwe",
+            "iso": "ZW",
+            "grid": "off",
+            "overall_ranking": 36,
+            "regional_ranking": null,
+            "score": 1.2,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 1.1
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 1.05
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 1.11
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 1.65
+                }
+            ]
+        },
+        {
+            "name": "Rwanda",
+            "iso": "RW",
+            "grid": "off",
+            "overall_ranking": 37,
+            "regional_ranking": null,
+            "score": 0.8,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 0.77
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 0.86
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 0.94
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 0.72
+                }
+            ]
+        },
+        {
+            "name": "Kenya",
+            "iso": "KE",
+            "grid": "off",
+            "overall_ranking": 38,
+            "regional_ranking": null,
+            "score": 0.7,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 0.95
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 0.71
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 0.18
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 0.43
+                }
+            ]
+        },
+        {
+            "name": "Ethiopia",
+            "iso": "ET",
+            "grid": "off",
+            "overall_ranking": 41,
+            "regional_ranking": null,
+            "score": 0.62,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 0.76
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 0.41
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 0.12
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 0.88
+                }
+            ]
+        },
+        {
+            "name": "South Africa",
+            "iso": "ZA",
+            "grid": "on",
+            "overall_ranking": 44,
+            "regional_ranking": null,
+            "score": 0.53,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 0.14
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 0.99
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 0.3
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 0.72
+                }
+            ]
+        },
+        {
+            "name": "Sierra Leone",
+            "iso": "SL",
+            "grid": "off",
+            "overall_ranking": 47,
+            "regional_ranking": null,
+            "score": 0.5,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 0.6
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 0.23
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 0.1
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 0.91
+                }
+            ]
+        },
+        {
+            "name": "Ghana",
+            "iso": "GH",
+            "grid": "off",
+            "overall_ranking": 50,
+            "regional_ranking": null,
+            "score": 0.42,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 0.59
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 0.12
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 0.74
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 0.38
+                }
+            ]
+        },
+        {
+            "name": "Zambia",
+            "iso": "ZM",
+            "grid": "off",
+            "overall_ranking": 52,
+            "regional_ranking": null,
+            "score": 0.39,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 0.03
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 0.54
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 0.78
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 0.67
+                }
+            ]
+        },
+        {
+            "name": "Botswana",
+            "iso": "BW",
+            "grid": "off",
+            "overall_ranking": 53,
+            "regional_ranking": null,
+            "score": 0.36,
+            "states": [
+
+            ],
+            "parameters": [
+                {
+                    "id": 1,
+                    "name": "p1",
+                    "description": "p1 description",
+                    "weight": null,
+                    "value": 0.55
+                },
+                {
+                    "id": 2,
+                    "name": "p2",
+                    "description": "p2 description",
+                    "weight": null,
+                    "value": 0.26
+                },
+                {
+                    "id": 3,
+                    "name": "p3",
+                    "description": "p3 description",
+                    "weight": null,
+                    "value": 0.19
+                },
+                {
+                    "id": 4,
+                    "name": "p4",
+                    "description": "p4 description",
+                    "weight": null,
+                    "value": 0.2
+                }
+            ]
+        }
+    ]
+}
