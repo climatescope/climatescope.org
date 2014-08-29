@@ -121,9 +121,10 @@ a:active{
   }
 }
 
-// LAYOUT: ENTRY
+// LAYOUT: ENTRY/PAGE
 
-.layout--entry {
+.layout--entry,
+.layout--page {
 
   &__header {
     padding: 0 0 2rem 0;
