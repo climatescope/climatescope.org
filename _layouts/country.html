@@ -20,22 +20,22 @@ layout: entry
       <dd>2.25</dd>
     </dl>
     <ul class="country-ctas">
-      <li><a href="/" title="Policies">There are 18 relevant policies ›</a></li>
-      <li><a href="/" title="Policies">Compare to ›</a></li>
+      <li><a class="bttn bttn-cta" href="/" title="View policies">View policies (18) ›</a></li>
+      <li><a class="bttn bttn-cta" href="/" title="Compare to">Compare to ›</a></li>
     </ul>
   </div>
 
 </div>
 
 <div class="row--contained">
-  
+
   {% case site.collections[page.collection].lang %}
     {% when 'en' %}
       {% assign col = 'en_state' %}
     {% when 'es' %}
       {% assign col = 'es_state' %}
   {% endcase %}
-  
+
   {% for state in site[col] %}
     {% if state.country == page.id %}
       {% assign has_states = true %}
@@ -61,14 +61,14 @@ layout: entry
     <section id="country-states" class="tab-content hidden">
       <h1 class="visually-hidden">States/Provinces</h1>
       <div class="prose">
-        
+
           {% case site.collections[page.collection].lang %}
           {% when 'en' %}
             <p>States/Provinces EN content</p>
           {% when 'es' %}
             <p>States/Provinces ES content</p>
           {% endcase %}
-  
+
           <ul>
           {% for state in site[col] %}
             {% if state.country == page.id %}
@@ -78,7 +78,7 @@ layout: entry
             {% endif %}
           {% endfor %}
           </ul>
-  
+
       </div>
     </section>
   {% endif %}

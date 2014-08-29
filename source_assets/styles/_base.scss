@@ -17,6 +17,8 @@ body {
   font-style: $body-font-style;
 }
 
+// Links
+
 a {
   cursor: pointer;
   color: $secondary-color;
@@ -65,11 +67,23 @@ a:active{
 // STRUCTURE
 
 #site-canvas {
+  background: #fff;
 }
 
 #site-header {
   padding: 2rem 0;
 }
+
+#site-body {
+  margin-bottom: 2rem;
+}
+
+#site-footer {
+  background: tint($primary-color, 95%);
+  padding: 2rem 0;
+}
+
+// SITE HEADER
 
 #site-headline {
   @include col(5/12);
@@ -82,6 +96,11 @@ a:active{
     font-style: normal;
     color: tint($primary-color, 60%);
   }
+}
+
+#site-subtitle {
+  margin-bottom: 0;
+  color: tint($primary-color, 60%);
 }
 
 #prime-nav {
@@ -107,13 +126,10 @@ a:active{
   }
 }
 
-#site-body {
+// LAYOUT: ENTRY/PAGE
 
-}
-
-// LAYOUT: ENTRY
-
-.layout--entry {
+.layout--entry,
+.layout--page {
 
   &__header {
     padding: 0 0 2rem 0;
@@ -147,7 +163,7 @@ a:active{
   margin: 0;
   float: right;
   font-size: 0;
-  li {
+  > li {
     margin: 0 0 0 0.5rem;
     float: left;
   }
@@ -162,22 +178,23 @@ a:active{
 }
 
 .map {
-  background: tint($primary-color, 95%);
+  background: tint($primary-color, 95%) url(../images/layout/placeholder-map.png) no-repeat center center;
   text-align: center;
   padding: 4rem 3rem;
   margin: 0 0 2rem 0;
+  height: 16rem;
+  p {
+    @extend .visually-hidden;
+  }
 }
 
 // LAYOUT: ENTRY/COUNTRY
 
-.country-ctas,
-.country-global-meta {
-  margin-bottom: 1rem;
-}
-
-.country-global-meta {
-  dt {
-    font-weight: bold;
+.country-ctas {
+  list-style: none;
+  padding: 0;
+  li {
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -187,11 +204,6 @@ a:active{
 
 
 // Clean me v
-
-#site-footer {
-  background: tint($primary-color, 95%);
-  padding: 2rem 0;
-}
 
 #ftr-credits {
   @include col(8/12);

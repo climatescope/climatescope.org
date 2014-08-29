@@ -1,0 +1,21 @@
+---
+layout: base
+---
+{% assign vars = site.collections[page.collection].layout_vars %}
+<article class="layout--page {{vars.type}}">
+  <header class="layout--page__header">
+    <div class="row--contained">
+      <div class="layout--page__heading">
+        <h1 class="layout--page__title">{{ page.title }}</h1>
+      </div>
+      <div class="layout--page__tools">
+        {% include actions_menu.html download_exc=true %}
+      </div>
+    </div>
+  </header>
+
+  <div class="layout--page__body">
+    {{content}}
+  </div>
+
+</article>
