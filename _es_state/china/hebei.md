@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-13
+id: cn-13
 title: Hebei
 
 region: asia
-country: ch
+country: cn
 ---
 Spanish description
 This is a Chinese state

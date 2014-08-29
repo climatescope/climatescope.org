@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-54
+id: cn-54
 title: Xinjiang
 
 region: asia
-country: ch
+country: cn
 ---
 English description
 This is a Chinese state

@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-23
+id: cn-23
 title: Heilongjiang
 
 region: asia
-country: ch
+country: cn
 ---
 English description
 This is a Chinese state

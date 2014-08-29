@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-15
+id: cn-15
 title: Inner Mongolia
 
 region: asia
-country: ch
+country: cn
 ---
 English description
 This is a Chinese state

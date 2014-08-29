@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-62
+id: cn-62
 title: Gansu
 
 region: asia
-country: ch
+country: cn
 ---
 English description
 This is a Chinese state

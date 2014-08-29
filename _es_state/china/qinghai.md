@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-63
+id: cn-63
 title: Qinghai
 
 region: asia
-country: ch
+country: cn
 ---
 Spanish description
 This is a Chinese state

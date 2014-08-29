@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-35
+id: cn-35
 title: Fujian
 
 region: asia
-country: ch
+country: cn
 ---
 English description
 This is a Chinese state

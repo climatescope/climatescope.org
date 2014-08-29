@@ -1,11 +1,11 @@
 ---
 layout: state
 
-id: ch-42
+id: cn-42
 title: Hubei
 
 region: asia
-country: ch
+country: cn
 ---
 English description
 This is a Chinese state
