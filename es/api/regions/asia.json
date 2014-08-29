@@ -13,8 +13,8 @@
                 {
                     "iso": "cn-1",
                     "name": "China 1",
-                    "state_ranking": 2,
-                    "score": 1.4,
+                    "state_ranking": 1,
+                    "score": 1.86,
                     "parameters": [
                         {
                             "id": 1,
@@ -49,8 +49,8 @@
                 {
                     "iso": "cn-2",
                     "name": "China 2",
-                    "state_ranking": 1,
-                    "score": 1.86,
+                    "state_ranking": 2,
+                    "score": 1.4,
                     "parameters": [
                         {
                             "id": 1,
