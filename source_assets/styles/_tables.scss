@@ -1,0 +1,81 @@
+// TABLES
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  td, th {
+    padding: 0;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid tint($primary-color, 90%);
+  }
+
+  > thead > tr > th,
+  > tbody > tr > th,
+  > tfoot > tr > th,
+  > thead > tr > td,
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    padding: 0.5rem;
+    vertical-align: top;
+    border-top: 1px solid tint($primary-color, 90%);
+  }
+
+  > caption+thead > tr:first-child > th,
+  > colgroup+thead > tr:first-child > th,
+  > thead:first-child > tr:first-child > th,
+  > caption+thead > tr:first-child > td,
+  > colgroup+thead > tr:first-child > td,
+  > thead:first-child > tr:first-child > td {
+    border-top: 0;
+  }
+
+}
+
+.table-bar {
+  width: 300px;
+  list-style-type: none;
+  overflow: auto;
+  border-radius: $global-radius;
+  height: 1.5rem;
+  background: tint($primary-color, 95%);
+
+  li {
+    float: left;
+  }
+
+  > li:first-child {
+    border-radius: $global-radius 0 0  $global-radius;
+  }
+
+  > li:last-child {
+    border-radius: 0 $global-radius $global-radius 0;
+  }
+
+  li:nth-child(1) {
+    background-color: #62a60a;
+  }
+
+  li:nth-child(2) {
+    background-color: #009382;
+  }
+
+  li:nth-child(3) {
+    background-color: #635d9b;
+  }
+
+  li:nth-child(4) {
+    background-color: #008fbe;
+  }
+}

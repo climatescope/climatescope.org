@@ -1,6 +1,12 @@
 ---
 layout: entry
 ---
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
 <div class="row--full map">
   <p>Insert map here.</p>
 </div>
@@ -13,29 +19,31 @@ layout: entry
   </div>
 
   <div class="col--sec">
-    <p><a href="/" title="Global">View the global rank</a></p>
+    <p><a href="/" title="Global" class="bttn bttn-cta">View the global rank ›</a></p>
   </div>
 
 </div>
 
 <div class="row--contained">
-
-  {% case site.collections[page.collection].lang %}
-  {% when 'en' %}
-    {% assign col = 'en_country' %}
-    <h2>Countries EN </h2>
-  {% when 'es' %}
-    {% assign col = 'es_country' %}
-    <h2>Countries ES </h2>
-  {% endcase %}
-
-  <ul>
-  {% for country in site[col] %}
-    {% if country.region == page.id %}
-    <li>
-      <a href="{{ country.url }}">{{ country.title }}</a>
-    </li>
-    {% endif %}
-  {% endfor %}
-  </ul>
+  <script>
+    CS.regionId = '{{page.id}}';
+    
+    {% case language %}
+    {% when 'en' %}
+      {% assign country_col = 'en_country' %}
+    {% when 'es' %}
+      {% assign country_col = 'es_country' %}
+    {% endcase %}
+    
+    // Country index to retrieve the url.
+    CS.countryIndex = {
+      {% for country in site[country_col] %}
+        {% if country.region == page.id %}
+        "{{country.id}}":"{{site.domain}}{{country.url}}",
+        {% endif %}
+      {% endfor %}
+    };
+  </script>
+  
+  {% include country_table.html %}
 </div>

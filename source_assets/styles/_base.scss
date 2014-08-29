@@ -17,6 +17,8 @@ body {
   font-style: $body-font-style;
 }
 
+// Links
+
 a {
   cursor: pointer;
   color: $secondary-color;
@@ -65,11 +67,23 @@ a:active{
 // STRUCTURE
 
 #site-canvas {
+  background: #fff;
 }
 
 #site-header {
   padding: 2rem 0;
 }
+
+#site-body {
+  margin-bottom: 2rem;
+}
+
+#site-footer {
+  background: tint($primary-color, 95%);
+  padding: 2rem 0;
+}
+
+// SITE HEADER
 
 #site-headline {
   @include col(5/12);
@@ -84,40 +98,38 @@ a:active{
   }
 }
 
+#site-subtitle {
+  margin-bottom: 0;
+  color: tint($primary-color, 60%);
+}
+
 #prime-nav {
   @include col(7/12);
-  > ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    a {
-      display: block;
-    }
-    li {
-      float: left;
-      margin: 0 0 0 2rem;
-    }
-  }
-  ul ul {
-    display: none;
-  }
 }
 
 .lang-menu {
   float: right;
+  margin: 0 0 0 2rem !important;
 }
 
 .global-menu {
   float: right;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  a {
+    display: block;
+  }
+  > li {
+    float: left;
+    margin: 0 0 0 2rem;
+  }
 }
 
-#site-body {
+// LAYOUT: ENTRY/PAGE
 
-}
-
-// LAYOUT: ENTRY
-
-.layout--entry {
+.layout--entry,
+.layout--page {
 
   &__header {
     padding: 0 0 2rem 0;
@@ -127,18 +139,8 @@ a:active{
     @include col(8/12);
   }
 
-  &__toolbar {
+  &__tools {
     @include col(4/12);
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      float: right;
-    }
-    li {
-      margin: 0 0 0 2rem;
-      float: left;
-    }
   }
 
   &__title,
@@ -155,6 +157,18 @@ a:active{
 
 }
 
+.actions-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+  font-size: 0;
+  > li {
+    margin: 0 0 0 0.5rem;
+    float: left;
+  }
+}
+
 .col--main {
   @include col(8/12);
 }
@@ -164,16 +178,32 @@ a:active{
 }
 
 .map {
-  background: tint($primary-color, 95%);
+  background: tint($primary-color, 95%) url(../images/layout/placeholder-map.png) no-repeat center center;
   text-align: center;
   padding: 4rem 3rem;
   margin: 0 0 2rem 0;
+  height: 16rem;
+  p {
+    @extend .visually-hidden;
+  }
 }
 
-#site-footer {
-  background: tint($primary-color, 95%);
-  padding: 2rem 0;
+// LAYOUT: ENTRY/COUNTRY
+
+.country-ctas {
+  list-style: none;
+  padding: 0;
+  li {
+    margin-bottom: 0.5rem;
+  }
 }
+
+#section-switch {
+  margin-bottom: 2rem;
+}
+
+
+// Clean me v
 
 #ftr-credits {
   @include col(8/12);

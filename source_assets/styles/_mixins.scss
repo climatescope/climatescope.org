@@ -16,15 +16,13 @@
 
 // Variations
 
-@mixin bttn-variation($color, $tone: false) {
+@mixin bttn-variation($color) {
   background-color: $color;
   &:hover {
-    background-color: shade($color, 10%);
+    background-color: shade($color, 5%);
   }
-  @if $tone == 'light' {
-    color: tint($primary-color, 20%);
-  } @else {
-    color: #fff;
-    @extend %antialiased;
+  &.active,
+  &.active:hover {
+    background-color: shade($color, 10%);
   }
 }

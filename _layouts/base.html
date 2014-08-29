@@ -20,6 +20,9 @@
   <!--[if lt IE 9]><script src="{{ site.domain }}/assets/scripts/vendor/selectivizr-1.0.2.min.js"></script><![endif]-->
   <script src="{{ site.domain }}/assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+  <script>
+    var CS = { lang: '{{language}}', domain: '{{site.domain}}' };
+  </script>
 </head>
 <body>
   <!--[if lt IE 9]>
@@ -37,8 +40,10 @@
           {% case language %}
           {% when 'en' %}
           <h1 id="site-title"><a title="Home" href="{{ site.domain }}/en/">Global Climatescope <em>2014</em></a></h1>
+          <p id="site-subtitle">Assessing the Climate for Climate Investment</p>
           {% when 'es' %}
           <h1 id="site-title"><a title="Home" href="{{ site.domain }}/es/">Global Climatescope <em>2014</em></a></h1>
+          <p id="site-subtitle">Assessing the Climate for Climate Investment</p>
           {% endcase %}
         </div>
         <nav id="prime-nav" role="navigation">
