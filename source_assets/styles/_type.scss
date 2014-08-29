@@ -100,3 +100,25 @@ h6, .hd-xxs {
 p {
   margin-bottom: 1rem;
 }
+
+// Lists
+
+ul {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+dl {
+  margin-bottom: 1rem;
+  dt {
+    font-weight: $body-font-bold;
+  }
+  dd {
+    margin: 0;
+  }
+}
