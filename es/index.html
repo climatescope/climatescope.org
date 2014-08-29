@@ -4,28 +4,6 @@ title : Index
 id: index
 lang: es
 ---
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
-<script>
-var domain = '{{site.domain}}';
-
-  var app = angular.module('app', [], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('//');
-    $interpolateProvider.endSymbol('//');
-  });
-
-  app.controller('TableListController', ['$http', function($http) {
-    _self = this;
-    this.countries = [];
-
-    this.sortField = 'overall_ranking';
-    this.sortReverse = false;
-
-    $http.get(domain + '/es/api/countries.json').success(function(data) {
-      _self.countries = data;
-    });
-  }]);
-
-</script>
 
 <div class="row--full map">
   <p>Insert map here.</p>
@@ -33,33 +11,44 @@ var domain = '{{site.domain}}';
 
 <div class="row--contained">
 
-  <div ng-app="app">
+<div ng-app="countryApp">
 
-    <div ng-controller="TableListController as table">
+    <div ng-controller="CountryListController as countryTable" ng-cloak>
       <table border="1">
-       <tr>
-         <th><a href="" ng-click="sortField = 'overall_ranking'; sortReverse = !sortReverse">Posición</a></th>
-         <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">País</a></th>
-         <th><a href="" ng-click="sortField = 'score'; sortReverse = !sortReverse">Puntaje</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[0].value'; sortReverse = !sortReverse">Marco propicio</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[1].value'; sortReverse = !sortReverse">Financiamiento y investimiento</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[2].value'; sortReverse = !sortReverse">Cadenas de valor</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[3].value'; sortReverse = !sortReverse">Gestión de GEI</a></th>
-         <th><a href="" ng-click="sortField = 'grid'; sortReverse = !sortReverse">Grid</a></th>
-       </tr>
-       <tr ng-repeat="country in table.countries | orderBy:sortField:sortReverse">
-         <td>//country.overall_ranking//</td>
-         <td>//country.name//</td>
-         <td>//country.score//</td>
-         <td>//country.parameters[0].value//</td>
-         <td>//country.parameters[1].value//</td>
-         <td>//country.parameters[2].value//</td>
-         <td>//country.parameters[3].value//</td>
-         <td>//country.grid//</td>
-       </tr>
+      <thead>
+         <tr>
+           <th><a href="" ng-click="countryTable.setSort('overall_ranking')">Posición</a></th>
+           <th><a href="" ng-click="countryTable.setSort('name')">País</a></th>
+           <th><a href="" ng-click="countryTable.setSort('score')">Puntaje</a></th>
+           <th>0 -- 5</th>
+           <th><a href="" ng-click="countryTable.setSort('grid')">Grid</a></th>
+         </tr>
+       </thead>
+       <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortField:countryTable.sortReverse">
+         <tr>
+           <td>//country.overall_ranking//</td>
+           <td>//country.name//</td>
+           <td>//country.score//</td>
+           <td>
+             <ul class="table-bar">
+               <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+             </ul>
+           <td>//country.grid//</td>
+         </tr>
+         
+         <tr ng-repeat="state in country.states | orderBy:'state_ranking'">
+           <td>//state.state_ranking// (state)</td>
+           <td>//state.name//</td>
+           <td>//state.score//</td>
+           <td>
+             <ul class="table-bar">
+              <li ng-repeat="param in state.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+             </ul>
+           <td></td>
+         </tr>
+         
+       </tbody>
       </table>
     </div>
-
-  </div>
 
 </div>
