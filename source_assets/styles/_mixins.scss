@@ -19,14 +19,14 @@
 @mixin bttn-variation($color, $tone: false) {
   background-color: $color;
   &:hover {
-    background-color: shade($color, 10%);
+    background-color: shade($color, 5%);
   }
   &.active,
   &.active:hover {
-    background-color: shade($color, 15%);
+    background-color: shade($color, 10%);
   }
   @if $tone == 'light' {
-    color: tint($primary-color, 20%);
+    color: tint($primary-color, 40%);
   } @else {
     color: #fff;
     @extend %antialiased;
