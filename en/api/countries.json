@@ -14,28 +14,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.87
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.98
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.96
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.42
             }
         ]
@@ -55,28 +55,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.65
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.99
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.87
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.74
             }
         ]
@@ -89,35 +89,106 @@
         "regional_ranking": null,
         "score": 2.75,
         "states": [
-
+            {
+                    "iso": "cn-1",
+                    "name": "China 1",
+                    "state_ranking": 2,
+                    "score": 1.4,
+                    "parameters": [
+                        {
+                            "id": 1,
+                            "name": "p1",
+                            "description": "p1 description",
+                            "weight": 0.4,
+                            "value": 2.79
+                        },
+                        {
+                            "id": 2,
+                            "name": "p2",
+                            "description": "p2 description",
+                            "weight": 0.3,
+                            "value": 2.91
+                        },
+                        {
+                            "id": 3,
+                            "name": "p3",
+                            "description": "p3 description",
+                            "weight": 0.1,
+                            "value": 2.08
+                        },
+                        {
+                            "id": 4,
+                            "name": "p4",
+                            "description": "p4 description",
+                            "weight": 0.2,
+                            "value": 2.8
+                        }
+                    ]
+                },
+                {
+                    "iso": "cn-2",
+                    "name": "China 2",
+                    "state_ranking": 1,
+                    "score": 1.86,
+                    "parameters": [
+                        {
+                            "id": 1,
+                            "name": "p1",
+                            "description": "p1 description",
+                            "weight": 0.4,
+                            "value": 2.91
+                        },
+                        {
+                            "id": 2,
+                            "name": "p2",
+                            "description": "p2 description",
+                            "weight": 0.3,
+                            "value": 2.08
+                        },
+                        {
+                            "id": 3,
+                            "name": "p3",
+                            "description": "p3 description",
+                            "weight": 0.1,
+                            "value": 2.33
+                        },
+                        {
+                            "id": 4,
+                            "name": "p4",
+                            "description": "p4 description",
+                            "weight": 0.2,
+                            "value": 1.2
+                        }
+                    ]
+                }
         ],
         "parameters": [
             {
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.79
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.91
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.08
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.8
             }
         ]
@@ -137,28 +208,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.44
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.95
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.97
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.89
             }
         ]
@@ -178,28 +249,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.84
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.88
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.87
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.22
             }
         ]
@@ -219,28 +290,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.62
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.75
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.89
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.76
             }
         ]
@@ -260,28 +331,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.92
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.42
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.3
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.85
             }
         ]
@@ -301,28 +372,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.64
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.7
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.94
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.34
             }
         ]
@@ -342,28 +413,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.82
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.31
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.69
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.44
             }
         ]
@@ -383,28 +454,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.68
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.94
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.13
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.05
             }
         ]
@@ -424,28 +495,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.8
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.78
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.18
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.01
             }
         ]
@@ -465,28 +536,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.5
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.77
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.5
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.35
             }
         ]
@@ -506,28 +577,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.56
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.62
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.78
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.21
             }
         ]
@@ -547,28 +618,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.65
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.45
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.4
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.43
             }
         ]
@@ -588,28 +659,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.06
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.95
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.46
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.65
             }
         ]
@@ -629,28 +700,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.37
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.44
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.63
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.57
             }
         ]
@@ -670,28 +741,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.47
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.11
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.15
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.89
             }
         ]
@@ -711,28 +782,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.33
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.44
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.71
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.31
             }
         ]
@@ -752,28 +823,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 2.63
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 2.02
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 2.04
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 2.63
             }
         ]
@@ -793,28 +864,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.98
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.81
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.93
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.58
             }
         ]
@@ -834,28 +905,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.7
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.95
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.63
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.78
             }
         ]
@@ -875,28 +946,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.54
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.37
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.83
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.99
             }
         ]
@@ -916,28 +987,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.77
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.47
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.87
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.1
             }
         ]
@@ -957,28 +1028,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.87
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.21
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.65
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.23
             }
         ]
@@ -998,28 +1069,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.35
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.57
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.1
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.98
             }
         ]
@@ -1039,28 +1110,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.6
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.38
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.2
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.68
             }
         ]
@@ -1080,28 +1151,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.69
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.51
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.54
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.12
             }
         ]
@@ -1121,28 +1192,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.94
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.23
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.36
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.07
             }
         ]
@@ -1162,28 +1233,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.64
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.15
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.54
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.64
             }
         ]
@@ -1203,28 +1274,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.34
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.17
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.69
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.86
             }
         ]
@@ -1244,28 +1315,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.11
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.76
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.33
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.38
             }
         ]
@@ -1285,28 +1356,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.06
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.82
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.79
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.01
             }
         ]
@@ -1326,28 +1397,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.28
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.03
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.84
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.68
             }
         ]
@@ -1367,28 +1438,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.62
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.64
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.13
             }
         ]
@@ -1408,28 +1479,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.25
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.28
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.4
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.24
             }
         ]
@@ -1449,28 +1520,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 1.1
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 1.05
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 1.11
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 1.65
             }
         ]
@@ -1490,28 +1561,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.77
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.86
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.94
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.72
             }
         ]
@@ -1531,28 +1602,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.95
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.71
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.18
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.43
             }
         ]
@@ -1572,28 +1643,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.54
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.99
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.46
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.36
             }
         ]
@@ -1613,28 +1684,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.59
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.87
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.26
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.47
             }
         ]
@@ -1654,28 +1725,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.76
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.41
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.12
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.88
             }
         ]
@@ -1695,28 +1766,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.5
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.64
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.87
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.49
             }
         ]
@@ -1736,28 +1807,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.39
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.67
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.45
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.7
             }
         ]
@@ -1777,28 +1848,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.14
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.99
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.3
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.72
             }
         ]
@@ -1818,28 +1889,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.42
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.73
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.81
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.28
             }
         ]
@@ -1859,28 +1930,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.61
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.54
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.07
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.5
             }
         ]
@@ -1900,28 +1971,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.6
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.23
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.1
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.91
             }
         ]
@@ -1941,28 +2012,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.54
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.75
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.04
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.04
             }
         ]
@@ -1982,28 +2053,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.53
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.41
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.64
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.25
             }
         ]
@@ -2023,28 +2094,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.59
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.12
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.74
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.38
             }
         ]
@@ -2064,28 +2135,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.3
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.34
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.34
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.76
             }
         ]
@@ -2105,28 +2176,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.03
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.54
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.78
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.67
             }
         ]
@@ -2146,28 +2217,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.55
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.26
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.19
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.2
             }
         ]
@@ -2187,28 +2258,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.32
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.06
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.88
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.3
             }
         ]
@@ -2228,28 +2299,28 @@
                 "id": 1,
                 "name": "p1",
                 "description": "p1 description",
-                "weight": null,
+                "weight": 0.4,
                 "value": 0.21
             },
             {
                 "id": 2,
                 "name": "p2",
                 "description": "p2 description",
-                "weight": null,
+                "weight": 0.3,
                 "value": 0.29
             },
             {
                 "id": 3,
                 "name": "p3",
                 "description": "p3 description",
-                "weight": null,
+                "weight": 0.1,
                 "value": 0.2
             },
             {
                 "id": 4,
                 "name": "p4",
                 "description": "p4 description",
-                "weight": null,
+                "weight": 0.2,
                 "value": 0.35
             }
         ]

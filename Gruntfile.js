@@ -46,9 +46,13 @@ module.exports = function(grunt) {
     
     // https://github.com/gruntjs/grunt-contrib-uglify
     uglify: {
+      options: {
+        // Angular doesn't like mangling.
+        mangle: false
+      },
       prod: {
         files: {
-          './assets/scripts/main.min.js': ['source_assets/scripts/*.js'],
+          './assets/scripts/main.min.js': ['source_assets/scripts/*.js', 'source_assets/scripts/angular/**/*.js'],
           
           './assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js': ['source_assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'],
           './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
@@ -88,7 +92,7 @@ module.exports = function(grunt) {
     // https://npmjs.org/package/grunt-contrib-watch
     watch : {
       src: {
-        files: ['source_assets/scripts/**.js', 'source_assets/styles/*.scss'],
+        files: ['source_assets/scripts/**/*.js', 'source_assets/styles/*.scss'],
         tasks: ['build']
       },
       jekyll : {
