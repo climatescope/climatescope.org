@@ -98,6 +98,11 @@ a:active{
   }
 }
 
+#site-subtitle {
+  margin-bottom: 0;
+  color: tint($primary-color, 60%);
+}
+
 #prime-nav {
   @include col(7/12);
 }
