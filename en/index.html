@@ -23,9 +23,37 @@ var domain = '{{site.domain}}';
     $http.get(domain + '/en/api/countries.json').success(function(data) {
       _self.countries = data;
     });
+    
+    this.calc_bar_width = function(param, weight) {
+      return ( param * weight * (100/5) ) + '%';
+    };
+    
   }]);
 
 </script>
+
+<style type="text/css" media="screen">
+	.table-bar {
+	  width: 300px;
+	  list-style-type: none;
+	  overflow: auto;
+	}
+	.table-bar li {
+	  float: left;
+	}
+	.table-bar li:nth-child(1) {
+	  background-color: red;
+	}
+	.table-bar li:nth-child(2) {
+	  background-color: green;
+	}
+	.table-bar li:nth-child(3) {
+	  background-color: blue;
+	}
+	.table-bar li:nth-child(4) {
+	  background-color: yellow;
+	}
+</style>
 
 <div class="row--full map">
   <p>Insert map here.</p>
@@ -34,26 +62,28 @@ var domain = '{{site.domain}}';
 <div class="row--contained">
   <div ng-app="app">
 
-    <div ng-controller="TableListController as table">
+    <div ng-controller="TableListController as table" ng-cloak>
       <table border="1">
        <tr>
          <th><a href="" ng-click="sortField = 'overall_ranking'; sortReverse = !sortReverse">Overall rank</a></th>
          <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">Country</a></th>
          <th><a href="" ng-click="sortField = 'score'; sortReverse = !sortReverse">Overall score</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[0].value'; sortReverse = !sortReverse">Enabling framework</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[1].value'; sortReverse = !sortReverse">Financing</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[2].value'; sortReverse = !sortReverse">Value chains</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[3].value'; sortReverse = !sortReverse">Carbon offset</a></th>
+         <th>0 -- 5</th>
          <th><a href="" ng-click="sortField = 'grid'; sortReverse = !sortReverse">Grid</a></th>
        </tr>
        <tr ng-repeat="country in table.countries | orderBy:sortField:sortReverse">
          <td>//country.overall_ranking//</td>
          <td>//country.name//</td>
          <td>//country.score//</td>
-         <td>//country.parameters[0].value//</td>
-         <td>//country.parameters[1].value//</td>
-         <td>//country.parameters[2].value//</td>
-         <td>//country.parameters[3].value//</td>
+         <td>
+           
+           <ul class="table-bar">
+           	<li style="width: //table.calc_bar_width(country.parameters[0].value, 0.4)//"><span class="visually-hidden">// country.parameters[0].value //</span>&nbsp;</li>
+           	<li style="width: //table.calc_bar_width(country.parameters[1].value, 0.3)//"><span class="visually-hidden">// country.parameters[1].value //</span>&nbsp;</li>
+           	<li style="width: //table.calc_bar_width(country.parameters[2].value, 0.2)//"><span class="visually-hidden">// country.parameters[2].value //</span>&nbsp;</li>
+           	<li style="width: //table.calc_bar_width(country.parameters[3].value, 0.1)//"><span class="visually-hidden">// country.parameters[3].value //</span>&nbsp;</li>
+           </ul>
+           
          <td>//country.grid//</td>
        </tr>
       </table>
