@@ -89,7 +89,82 @@
         "regional_ranking": null,
         "score": 2.75,
         "states": [
-
+        
+        
+              {
+                "iso": "cn-1",
+                "name": "China 1",
+                "state_ranking": 2,
+                "score": 1.86,
+                "parameters": [
+                  {
+                      "id": 1,
+                      "name": "p1",
+                      "description": "p1 description",
+                      "weight": null,
+                      "value": 2.79
+                  },
+                  {
+                      "id": 2,
+                      "name": "p2",
+                      "description": "p2 description",
+                      "weight": null,
+                      "value": 2.91
+                  },
+                  {
+                      "id": 3,
+                      "name": "p3",
+                      "description": "p3 description",
+                      "weight": null,
+                      "value": 2.08
+                  },
+                  {
+                      "id": 4,
+                      "name": "p4",
+                      "description": "p4 description",
+                      "weight": null,
+                      "value": 2.8
+                  }
+                ]
+              },
+              {
+                "iso": "cn-2",
+                "name": "China 2",
+                "state_ranking": 1,
+                "score": 1.4,
+                "parameters": [
+                  {
+                      "id": 1,
+                      "name": "p1",
+                      "description": "p1 description",
+                      "weight": null,
+                      "value": 2.91
+                  },
+                  {
+                      "id": 2,
+                      "name": "p2",
+                      "description": "p2 description",
+                      "weight": null,
+                      "value": 2.08
+                  },
+                  {
+                      "id": 3,
+                      "name": "p3",
+                      "description": "p3 description",
+                      "weight": null,
+                      "value": 2.33
+                  },
+                  {
+                      "id": 4,
+                      "name": "p4",
+                      "description": "p4 description",
+                      "weight": null,
+                      "value": 1.2
+                  }
+                ]
+              }
+              
+              
         ],
         "parameters": [
             {

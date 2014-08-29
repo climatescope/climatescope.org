@@ -19,10 +19,11 @@ var domain = '{{site.domain}}';
 
     this.sortField = 'overall_ranking';
     this.sortReverse = false;
-
+setTimeout(function(){
     $http.get(domain + '/en/api/countries.json').success(function(data) {
       _self.countries = data;
     });
+    }, 1000);
     
     this.calc_bar_width = function(param, weight) {
       return ( param * weight * (100/5) ) + '%';
@@ -64,28 +65,45 @@ var domain = '{{site.domain}}';
 
     <div ng-controller="TableListController as table" ng-cloak>
       <table border="1">
-       <tr>
-         <th><a href="" ng-click="sortField = 'overall_ranking'; sortReverse = !sortReverse">Overall rank</a></th>
-         <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">Country</a></th>
-         <th><a href="" ng-click="sortField = 'score'; sortReverse = !sortReverse">Overall score</a></th>
-         <th>0 -- 5</th>
-         <th><a href="" ng-click="sortField = 'grid'; sortReverse = !sortReverse">Grid</a></th>
-       </tr>
-       <tr ng-repeat="country in table.countries | orderBy:sortField:sortReverse">
-         <td>//country.overall_ranking//</td>
-         <td>//country.name//</td>
-         <td>//country.score//</td>
-         <td>
-           
-           <ul class="table-bar">
-           	<li style="width: //table.calc_bar_width(country.parameters[0].value, 0.4)//"><span class="visually-hidden">// country.parameters[0].value //</span>&nbsp;</li>
-           	<li style="width: //table.calc_bar_width(country.parameters[1].value, 0.3)//"><span class="visually-hidden">// country.parameters[1].value //</span>&nbsp;</li>
-           	<li style="width: //table.calc_bar_width(country.parameters[2].value, 0.2)//"><span class="visually-hidden">// country.parameters[2].value //</span>&nbsp;</li>
-           	<li style="width: //table.calc_bar_width(country.parameters[3].value, 0.1)//"><span class="visually-hidden">// country.parameters[3].value //</span>&nbsp;</li>
-           </ul>
-           
-         <td>//country.grid//</td>
-       </tr>
+      <thead>
+         <tr>
+           <th><a href="" ng-click="sortField = 'overall_ranking'; sortReverse = !sortReverse">Overall rank</a></th>
+           <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">Country</a></th>
+           <th><a href="" ng-click="sortField = 'score'; sortReverse = !sortReverse">Overall score</a></th>
+           <th>0 -- 5</th>
+           <th><a href="" ng-click="sortField = 'grid'; sortReverse = !sortReverse">Grid</a></th>
+         </tr>
+       </thead>
+       <tbody ng-repeat="country in table.countries | orderBy:sortField:sortReverse">
+         <tr>
+           <td>//country.overall_ranking//</td>
+           <td>//country.name//</td>
+           <td>//country.score//</td>
+           <td>
+             <ul class="table-bar">
+             	<li style="width: //table.calc_bar_width(country.parameters[0].value, 0.4)//"><span class="visually-hidden">// country.parameters[0].value //</span>&nbsp;</li>
+             	<li style="width: //table.calc_bar_width(country.parameters[1].value, 0.3)//"><span class="visually-hidden">// country.parameters[1].value //</span>&nbsp;</li>
+             	<li style="width: //table.calc_bar_width(country.parameters[2].value, 0.1)//"><span class="visually-hidden">// country.parameters[2].value //</span>&nbsp;</li>
+             	<li style="width: //table.calc_bar_width(country.parameters[3].value, 0.2)//"><span class="visually-hidden">// country.parameters[3].value //</span>&nbsp;</li>
+             </ul>
+           <td>//country.grid//</td>
+         </tr>
+         
+         <tr ng-repeat="state in country.states | orderBy:'state_ranking'">
+           <td>//state.state_ranking// (state)</td>
+           <td>//state.name//</td>
+           <td>//state.score//</td>
+           <td>
+             <ul class="table-bar">
+              <li style="width: //table.calc_bar_width(state.parameters[0].value, 0.4)//"><span class="visually-hidden">// state.parameters[0].value //</span>&nbsp;</li>
+              <li style="width: //table.calc_bar_width(state.parameters[1].value, 0.3)//"><span class="visually-hidden">// state.parameters[1].value //</span>&nbsp;</li>
+              <li style="width: //table.calc_bar_width(state.parameters[2].value, 0.1)//"><span class="visually-hidden">// state.parameters[2].value //</span>&nbsp;</li>
+              <li style="width: //table.calc_bar_width(state.parameters[3].value, 0.2)//"><span class="visually-hidden">// state.parameters[3].value //</span>&nbsp;</li>
+             </ul>
+           <td></td>
+         </tr>
+         
+       </tbody>
       </table>
     </div>
 
