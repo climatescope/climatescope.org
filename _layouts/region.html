@@ -1,6 +1,12 @@
 ---
 layout: entry
 ---
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
 <div class="row--full map">
   <p>Insert map here.</p>
 </div>
@@ -21,63 +27,23 @@ layout: entry
 <div class="row--contained">
   <script>
     CS.regionId = '{{page.id}}';
+    
+    {% case language %}
+    {% when 'en' %}
+      {% assign country_col = 'en_country' %}
+    {% when 'es' %}
+      {% assign country_col = 'es_country' %}
+    {% endcase %}
+    
+    // Country index to retrieve the url.
+    CS.countryIndex = {
+      {% for country in site[country_col] %}
+        {% if country.region == page.id %}
+        "{{country.id}}":"{{site.domain}}{{country.url}}",
+        {% endif %}
+      {% endfor %}
+    };
   </script>
   
-  <div ng-app="countryApp">
-
-    <div ng-controller="CountryListController as countryTable" ng-cloak>
-      <table border="1">
-      <thead>
-         <tr>
-           {% case site.collections[page.collection].lang %}
-           {% when 'en' %}
-             <th><a href="" ng-click="countryTable.setSort('overall_ranking')">Overall rank</a></th>
-             <th><a href="" ng-click="countryTable.setSort('name')">Country</a></th>
-             <th><a href="" ng-click="countryTable.setSort('score')">Overall score</a></th>
-             <th>0 -- 5</th>
-             <th><a href="" ng-click="countryTable.setSort('grid')">Grid</a></th>
-           {% when 'es' %}
-             <th><a href="" ng-click="countryTable.setSort('overall_ranking')">Posición</a></th>
-             <th><a href="" ng-click="countryTable.setSort('name')">País</a></th>
-             <th><a href="" ng-click="countryTable.setSort('score')">Puntaje</a></th>
-             <th>0 -- 5</th>
-             <th><a href="" ng-click="countryTable.setSort('grid')">Grid</a></th>
-           {% endcase %}
-         </tr>
-       </thead>
-       <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortField:countryTable.sortReverse">
-         <tr>
-           <td>//country.overall_ranking//</td>
-           <td><a href="//countryTable.getCountryUrl(country)//">//country.name//</a></td>
-           <td>//country.score//</td>
-           <td>
-             <ul class="table-bar">
-              <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
-             </ul>
-           <td>//country.grid//</td>
-         </tr>
-         
-         <tr ng-repeat="state in country.states | orderBy:'state_ranking'">
-           <td>//state.state_ranking// (state)</td>
-           <td>//state.name//</td>
-           <td>//state.score//</td>
-           <td>
-             <ul class="table-bar">
-               <li ng-repeat="param in state.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
-             </ul>
-           <td></td>
-         </tr>
-         
-       </tbody>
-      </table>
-    </div>
-
-  </div>
-  
-  
-  
-  
-  
-  
-  
+  {% include country_table.html %}
 </div>
