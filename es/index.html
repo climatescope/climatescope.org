@@ -34,67 +34,22 @@ lang: es
   </header>
 
   <div class="layout--home__body">
-    
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
-<script>
-var domain = '{{site.domain}}';
-
-  var app = angular.module('app', [], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('//');
-    $interpolateProvider.endSymbol('//');
-  });
-
-  app.controller('TableListController', ['$http', function($http) {
-    _self = this;
-    this.countries = [];
-
-    this.sortField = 'overall_ranking';
-    this.sortReverse = false;
-
-    $http.get(domain + '/es/api/countries.json').success(function(data) {
-      _self.countries = data;
-    });
-  }]);
-
-</script>
-
-<div class="row--full map">
-  <p>Insert map here.</p>
-</div>
-
-<div class="row--contained">
-
-  <div ng-app="app">
-
-    <div ng-controller="TableListController as table">
-      <table border="1">
-       <tr>
-         <th><a href="" ng-click="sortField = 'overall_ranking'; sortReverse = !sortReverse">Posición</a></th>
-         <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">País</a></th>
-         <th><a href="" ng-click="sortField = 'score'; sortReverse = !sortReverse">Puntaje</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[0].value'; sortReverse = !sortReverse">Marco propicio</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[1].value'; sortReverse = !sortReverse">Financiamiento y investimiento</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[2].value'; sortReverse = !sortReverse">Cadenas de valor</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[3].value'; sortReverse = !sortReverse">Gestión de GEI</a></th>
-         <th><a href="" ng-click="sortField = 'grid'; sortReverse = !sortReverse">Grid</a></th>
-       </tr>
-       <tr ng-repeat="country in table.countries | orderBy:sortField:sortReverse">
-         <td>//country.overall_ranking//</td>
-         <td>//country.name//</td>
-         <td>//country.score//</td>
-         <td>//country.parameters[0].value//</td>
-         <td>//country.parameters[1].value//</td>
-         <td>//country.parameters[2].value//</td>
-         <td>//country.parameters[3].value//</td>
-         <td>//country.grid//</td>
-       </tr>
-      </table>
+    <div class="row--full map">
+      <p>Insert map here.</p>
     </div>
-
-  </div>
-
-</div>
-
+    
+    <div class="row--contained">
+      <script>    
+        // Country index to retrieve the url.
+        CS.countryIndex = {
+          {% for country in site.es_country %}
+            "{{country.id}}":"{{site.domain}}{{country.url}}",
+          {% endfor %}
+        };
+      </script>
+      
+      {% include country_table.html %}
+    </div>
   </div>
 
 </article>
