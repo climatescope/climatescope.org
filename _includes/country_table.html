@@ -5,7 +5,7 @@
 {% endif %}
 
 <div ng-app="countryApp" ng-controller="CountryListController as countryTable" ng-cloak>
-  <table class="table">
+  <table class="table country-table">
     <thead>
       <tr>
         {% case language %}
@@ -37,7 +37,7 @@
         <td>//country.grid//</td>
       </tr>
 
-      <tr ng-if="country.states.length > 0">
+      <tr ng-if="country.states.length > 0" class="wrapper-row">
         <td colspan="5">
           <table class="table table-nested">
             <thead>
