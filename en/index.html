@@ -1,63 +1,98 @@
 ---
 layout: base
-title : Index
+title : Global
 id: index
 lang: en
 ---
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
-<script>
-var domain = '{{site.domain}}';
+<article class="layout--home {{vars.type}}">
+  <header class="layout--home__header sticky">
+    <div class="row--contained">
+      <div class="layout--home__heading">
+        <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
+      </div>
+      <div class="layout--home__tools">
+        <div id="vis-controls">
+          <div class="control">
+            <h3>Enabling framework</h3>
+            <input id="param-01" type="range" />
+          </div>
+          <div class="control">
+            <h3>Financing & Investment</h3>
+            <input id="param-02" type="range" />
+          </div>
+          <div class="control">
+            <h3>Value Chains</h3>
+            <input id="param-03" type="range" />
+          </div>
+          <div class="control">
+            <h3>GHG Management</h3>
+            <input id="param-04" type="range" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-  var app = angular.module('app', [], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('//');
-    $interpolateProvider.endSymbol('//');
-  });
+  <div class="layout--home__body">
 
-  app.controller('TableListController', ['$http', function($http) {
-    _self = this;
-    this.countries = [];
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+    <script>
+    var domain = '{{site.domain}}';
 
-    this.sortField = 'overall_ranking';
-    this.sortReverse = false;
+      var app = angular.module('app', [], function($interpolateProvider) {
+        $interpolateProvider.startSymbol('//');
+        $interpolateProvider.endSymbol('//');
+      });
 
-    $http.get(domain + '/en/api/countries.json').success(function(data) {
-      _self.countries = data;
-    });
-  }]);
+      app.controller('TableListController', ['$http', function($http) {
+        _self = this;
+        this.countries = [];
 
-</script>
+        this.sortField = 'overall_ranking';
+        this.sortReverse = false;
 
-<div class="row--full map">
-  <p>Insert map here.</p>
-</div>
+        $http.get(domain + '/en/api/countries.json').success(function(data) {
+          _self.countries = data;
+        });
+      }]);
 
-<div class="row--contained">
-  <div ng-app="app">
+    </script>
 
-    <div ng-controller="TableListController as table">
-      <table border="1">
-       <tr>
-         <th><a href="" ng-click="sortField = 'overall_ranking'; sortReverse = !sortReverse">Overall rank</a></th>
-         <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">Country</a></th>
-         <th><a href="" ng-click="sortField = 'score'; sortReverse = !sortReverse">Overall score</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[0].value'; sortReverse = !sortReverse">Enabling framework</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[1].value'; sortReverse = !sortReverse">Financing</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[2].value'; sortReverse = !sortReverse">Value chains</a></th>
-         <th><a href="" ng-click="sortField = 'parameters[3].value'; sortReverse = !sortReverse">Carbon offset</a></th>
-         <th><a href="" ng-click="sortField = 'grid'; sortReverse = !sortReverse">Grid</a></th>
-       </tr>
-       <tr ng-repeat="country in table.countries | orderBy:sortField:sortReverse">
-         <td>//country.overall_ranking//</td>
-         <td>//country.name//</td>
-         <td>//country.score//</td>
-         <td>//country.parameters[0].value//</td>
-         <td>//country.parameters[1].value//</td>
-         <td>//country.parameters[2].value//</td>
-         <td>//country.parameters[3].value//</td>
-         <td>//country.grid//</td>
-       </tr>
-      </table>
+    <div class="row--full map">
+      <p>Insert map here.</p>
+    </div>
+
+    <div class="row--contained">
+      <div ng-app="app">
+
+        <div ng-controller="TableListController as table">
+          <table border="1">
+           <tr>
+             <th><a href="" ng-click="sortField = 'overall_ranking'; sortReverse = !sortReverse">Overall rank</a></th>
+             <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">Country</a></th>
+             <th><a href="" ng-click="sortField = 'score'; sortReverse = !sortReverse">Overall score</a></th>
+             <th><a href="" ng-click="sortField = 'parameters[0].value'; sortReverse = !sortReverse">Enabling framework</a></th>
+             <th><a href="" ng-click="sortField = 'parameters[1].value'; sortReverse = !sortReverse">Financing</a></th>
+             <th><a href="" ng-click="sortField = 'parameters[2].value'; sortReverse = !sortReverse">Value chains</a></th>
+             <th><a href="" ng-click="sortField = 'parameters[3].value'; sortReverse = !sortReverse">Carbon offset</a></th>
+             <th><a href="" ng-click="sortField = 'grid'; sortReverse = !sortReverse">Grid</a></th>
+           </tr>
+           <tr ng-repeat="country in table.countries | orderBy:sortField:sortReverse">
+             <td>//country.overall_ranking//</td>
+             <td>//country.name//</td>
+             <td>//country.score//</td>
+             <td>//country.parameters[0].value//</td>
+             <td>//country.parameters[1].value//</td>
+             <td>//country.parameters[2].value//</td>
+             <td>//country.parameters[3].value//</td>
+             <td>//country.grid//</td>
+           </tr>
+          </table>
+        </div>
+
+      </div>
     </div>
 
   </div>
-</div>
+
+</article>
