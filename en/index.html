@@ -4,30 +4,6 @@ title : Index
 id: index
 lang: en
 ---
-
-<style type="text/css" media="screen">
-	.table-bar {
-	  width: 300px;
-	  list-style-type: none;
-	  overflow: auto;
-	}
-	.table-bar li {
-	  float: left;
-	}
-	.table-bar li:nth-child(1) {
-	  background-color: red;
-	}
-	.table-bar li:nth-child(2) {
-	  background-color: green;
-	}
-	.table-bar li:nth-child(3) {
-	  background-color: blue;
-	}
-	.table-bar li:nth-child(4) {
-	  background-color: yellow;
-	}
-</style>
-
 <div class="row--full map">
   <p>Insert map here.</p>
 </div>
@@ -35,8 +11,8 @@ lang: en
 <div class="row--contained">
   <div ng-app="countryApp">
 
-    <div ng-controller="CountryListController as countryTable" ng-cloak>
-      <table border="1">
+    <div ng-controller="TableListController as table" ng-cloak>
+      <table class="table">
       <thead>
          <tr>
            <th><a href="#" ng-click="countryTable.setSort('overall_ranking')">Overall rank</a></th>
@@ -57,7 +33,7 @@ lang: en
              </ul>
            <td>//country.grid//</td>
          </tr>
-         
+
          <tr ng-repeat="state in country.states | orderBy:'state_ranking'">
            <td>//state.state_ranking// (state)</td>
            <td>//state.name//</td>
@@ -68,7 +44,7 @@ lang: en
              </ul>
            <td></td>
          </tr>
-         
+
        </tbody>
       </table>
     </div>
