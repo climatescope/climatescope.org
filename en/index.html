@@ -1,23 +1,55 @@
 ---
 layout: base
-title : Index
+title : Global
 id: index
 lang: en
 ---
+<article class="layout--home">
+  <header class="layout--home__header sticky" id="parameters-controls">
+    <div class="row--contained">
+      <div class="layout--home__heading">
+        <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
+      </div>
+      <div class="layout--home__tools">
+        <div id="vis-controls">
+          <div class="control">
+            <h3>Enabling framework</h3>
+            <input id="param-01" type="range" />
+          </div>
+          <div class="control">
+            <h3>Financing & Investment</h3>
+            <input id="param-02" type="range" />
+          </div>
+          <div class="control">
+            <h3>Value Chains</h3>
+            <input id="param-03" type="range" />
+          </div>
+          <div class="control">
+            <h3>GHG Management</h3>
+            <input id="param-04" type="range" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<div class="row--full map">
-  <p>Insert map here.</p>
-</div>
+  <div class="layout--home__body">
+    <div class="row--full map">
+      <p>Insert map here.</p>
+    </div>
+    
+    <div class="row--contained">
+      <script>    
+        // Country index to retrieve the url.
+        CS.countryIndex = {
+          {% for country in site.en_country %}
+            "{{country.id}}":"{{site.domain}}{{country.url}}",
+          {% endfor %}
+        };
+      </script>
+      
+      {% include country_table.html %}
+    </div>
+  </div>
 
-<div class="row--contained">
-  <script>    
-    // Country index to retrieve the url.
-    CS.countryIndex = {
-      {% for country in site.en_country %}
-        "{{country.id}}":"{{site.domain}}{{country.url}}",
-      {% endfor %}
-    };
-  </script>
-  
-  {% include country_table.html %}
-</div>
+</article>

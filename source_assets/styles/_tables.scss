@@ -100,6 +100,8 @@
   border-radius: $global-radius;
   height: 1.5rem;
   background: tint($primary-color, 95%);
+  padding: 0;
+  margin: 0;
 
   li {
     float: left;
