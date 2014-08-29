@@ -55,13 +55,23 @@ input[type=submit] {
 // Default (Gray)
 .bttn-default,
 .bttn-default:visited {
-  @include bttn-variation(tint($primary-color, 90%), 'light');
+  @include bttn-variation(tint($primary-color, 90%));
+  color: tint($primary-color, 40%);
 }
 
 // Success (Green)
 .bttn-success,
 .bttn-success:visited {
   @include bttn-variation($success-color);
+  color: #fff;
+  @extend .antialiased;
+}
+
+// Call to Action
+.bttn-cta,
+.bttn-cta:visited {
+  @include bttn-variation(tint($success-color, 80%));
+  box-shadow: none;
 }
 
 // SIZES

@@ -181,14 +181,11 @@ a:active{
 
 // LAYOUT: ENTRY/COUNTRY
 
-.country-ctas,
-.country-global-meta {
-  margin-bottom: 1rem;
-}
-
-.country-global-meta {
-  dt {
-    font-weight: bold;
+.country-ctas {
+  list-style: none;
+  padding: 0;
+  li {
+    margin-bottom: 0.5rem;
   }
 }
 
