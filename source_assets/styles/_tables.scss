@@ -41,6 +41,56 @@
     border-top: 0;
   }
 
+  .wrapper-row {
+    > td {
+      padding: 0;
+    }
+  }
+
+}
+
+.country-table {
+  tr:first-child > th:nth-child(1),
+  tr:first-child > td:nth-child(1) {
+    width: 10%;
+  }
+  tr:first-child > th:nth-child(2),
+  tr:first-child > td:nth-child(2) {
+    width: 25%;
+  }
+  tr:first-child > th:nth-child(3),
+  tr:first-child > td:nth-child(3) {
+    width: 10%;
+  }
+  tr:first-child > th:nth-child(4),
+  tr:first-child > td:nth-child(4) {
+    width: 50%;
+  }
+  tr:first-child > th:nth-child(5),
+  tr:first-child > td:nth-child(5) {
+    width: 5%;
+  }
+}
+
+.table-nested {
+  background-color: tint($primary-color, 95%);
+  margin-bottom: 0;
+  > thead > tr > th {
+    @extend .visually-hidden;
+  }
+}
+
+.poc-detailed-data {
+  .param td {
+    font-weight: bold;
+  }
+  .ind_group > td:first-child {
+    padding-left: 1.5rem;
+    color: tint($primary-color, 60%);
+  }
+  .ind > td:first-child {
+    padding-left: 2.5rem;
+  }
 }
 
 .table-bar {
