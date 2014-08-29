@@ -28,10 +28,25 @@ layout: entry
 </div>
 
 <div class="row--contained">
+  
+  {% case site.collections[page.collection].lang %}
+    {% when 'en' %}
+      {% assign col = 'en_state' %}
+    {% when 'es' %}
+      {% assign col = 'es_state' %}
+  {% endcase %}
+  
+  {% for state in site[col] %}
+    {% if state.country == page.id %}
+      {% assign has_states = true %}
+    {% endif %}
+  {% endfor %}
 
   <ul class="nav nav-tabs" role="tablist" id="section-switch">
     <li class="active"><a href="#country-detail">In detail</a></li>
+    {% if has_states %}
     <li><a href="#country-states">States/Provinces</a></li>
+    {% endif %}
     <li><a href="#country-case-study">Case study</a></li>
   </ul>
 
@@ -42,44 +57,31 @@ layout: entry
     </div>
   </section>
 
-  <section id="country-states" class="tab-content hidden">
-    <h1 class="visually-hidden">States/Provinces</h1>
-    <div class="prose">
-      {% case site.collections[page.collection].lang %}
-        {% when 'en' %}
-          {% assign col = 'en_state' %}
-        {% when 'es' %}
-          {% assign col = 'es_state' %}
-      {% endcase %}
-      
-      {% for state in site[col] %}
-        {% if state.country == page.id %}
-          {% assign has_states = true %}
-        {% endif %}
-      {% endfor %}
-
-      {% if has_states %}
-
-        {% case site.collections[page.collection].lang %}
-        {% when 'en' %}
-          <p>States/Provinces EN content</p>
-        {% when 'es' %}
-          <p>States/Provinces ES content</p>
-        {% endcase %}
-
-        <ul>
-        {% for state in site[col] %}
-          {% if state.country == page.id %}
-          <li>
-            <a href="{{site.domain}}{{ state.url }}">{{ state.title }}</a>
-          </li>
-          {% endif %}
-        {% endfor %}
-        </ul>
-
-      {% endif %}
-    </div>
-  </section>
+  {% if has_states %}
+    <section id="country-states" class="tab-content hidden">
+      <h1 class="visually-hidden">States/Provinces</h1>
+      <div class="prose">
+        
+          {% case site.collections[page.collection].lang %}
+          {% when 'en' %}
+            <p>States/Provinces EN content</p>
+          {% when 'es' %}
+            <p>States/Provinces ES content</p>
+          {% endcase %}
+  
+          <ul>
+          {% for state in site[col] %}
+            {% if state.country == page.id %}
+            <li>
+              <a href="{{site.domain}}{{ state.url }}">{{ state.title }}</a>
+            </li>
+            {% endif %}
+          {% endfor %}
+          </ul>
+  
+      </div>
+    </section>
+  {% endif %}
 
   <section id="country-case-study" class="tab-content hidden">
     <h1 class="visually-hidden">Case Study</h1>
