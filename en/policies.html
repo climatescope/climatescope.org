@@ -5,5 +5,98 @@ title : Policies
 id: policies
 lang: en
 ---
-<h1>Policies</h1>
-<p>Policy database pulled in from Bloomberg.</p>
+<script>
+  var app = angular.module('app', [], function($interpolateProvider) {
+    $interpolateProvider.startSymbol('//');
+    $interpolateProvider.endSymbol('//');
+  });
+  
+  app.controller('TableListController', ['$http', function($http) {
+    _self = this;
+    this.policies = [];
+    this.filters_enabled = false;
+    
+    $http.get(CS.domain + '/poc/api/policies.json').success(function(data) {
+      _self.policies = data;
+    });
+  }]);
+  
+</script>
+
+<section class="layout--policies" ng-app="app" ng-controller="TableListController as table">
+  <header class="layout--policies__header">
+    <div class="row--contained">
+      <div class="layout--policies__heading">
+        <h1 class="layout--policies__title">{{ page.title }}</h1>
+      </div>
+      <div class="layout--policies__tools">
+        
+        
+        <div ng-show="filters_enabled == true">Filters are enabled. <a href="" ng-click="search = null; filters_enabled = false">disable</a></div>
+  
+        <label for="policy_title">
+          Title:
+          <input type="text" name="policy_title" id="policy_title" ng-model="search.name" ng-change="filters_enabled = search.name != ''" />
+        </label>
+        
+        <label for="policy_country">
+          Country:
+          <select ng-model="search.country[0].iso" id="policy_country" name="policy_country" ng-change="filters_enabled = search.country[0].iso != ''">
+            <option value="">Any</option>
+            <option value="ch">Chile</option>
+            <option value="cn">China</option>
+            <option value="uk">United Kingdom</option>
+          </select>
+        </label>
+        
+        <label for="policy_status">
+          Status:
+          <select ng-model="search.status.name" id="policy_status" name="policy_status" ng-change="filters_enabled = search.status.name != ''">
+            <option value="">Any</option>
+            <option value="In force">In force</option>
+            <option value="Ratified pending enforcement">Ratified pending enforcement</option>
+          </select>
+        </label>
+        
+        <label for="policy_mechanism">
+          Mechanism:
+          <select ng-model="search.type.mechanism[0].name" id="policy_mechanism" name="policy_mechanism" ng-change="filters_enabled = search.type.mechanism[0].name != ''">
+            <option value="">Any</option>
+            <option value="Tax Based Mechanism">Tax Based Mechanism</option>
+            <option value="Energy Market Mechanism">Energy Market Mechanism</option>
+          </select>
+        </label>
+        
+        <button>submit</button>
+        
+        
+      </div>
+    </div>
+  </header>
+
+  <div class="layout--policies__body">
+    <div class="row--contained">
+    
+    
+      <table class="table" ng-show="(table.policies | filter:search).length > 0">
+       <tr>
+         <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">Policy Name</a></th>
+         <th><a href="" ng-click="sortField = 'country[0].name'; sortReverse = !sortReverse">Country</a></th>
+         <th><a href="" ng-click="sortField = 'type.mechanism[0].name'; sortReverse = !sortReverse">Policy Mechanism</a></th>
+         <th><a href="" ng-click="sortField = 'status.name'; sortReverse = !sortReverse">Status</a></th>
+       </tr>
+       <tr ng-repeat="policy in table.policies | filter:search | orderBy:sortField:sortReverse">
+         <td>//policy.name//</td>
+         <td>//policy.country[0].name//</td>
+         <td>//policy.type.mechanism[0].name//</td>
+         <td>//policy.status.name//</td>
+       </tr>
+      </table>
+      
+      <div ng-show="(table.policies | filter:search).length == 0">No results</div>
+    
+    
+    </div>
+  </div>
+
+</section>
