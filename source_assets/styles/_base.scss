@@ -72,13 +72,11 @@ a:active{
 
 #site-header {
   padding: 2rem 0;
-  background: #fff url(../images/layout/cover-img.jpg) no-repeat center bottom;
+  background: tint($primary-color, 20%) url(../images/layout/cover-img.jpg) no-repeat center bottom;
   background-size: cover;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background-clip: padding-box;
-  font-family: $brand-font-family;
   color: #fff;
   @extend .antialiased;
+  font-family: $brand-font-family;
 }
 
 #site-body {
@@ -99,6 +97,7 @@ a:active{
 #site-title {
   @extend .hd-xs;
   margin-bottom: 0;
+  line-height: 1;
   em {
     font-style: normal;
     color: #fff;
@@ -123,12 +122,16 @@ a:active{
   list-style: none;
   padding: 0;
   margin: 0;
-  a {
-    display: block;
-  }
   > li {
     float: left;
     margin: 0 0 0 2rem;
+  }
+
+  > li > a {
+    display: block;
+    color: #fff;
+    font-weight: $brand-font-bold;
+    text-transform: uppercase;
   }
 }
 

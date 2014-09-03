@@ -60,7 +60,8 @@ h3, .hd-m,
 h4, .hd-s,
 h5, .hd-xs,
 h6, .hd-xxs {
-  font-weight: $body-font-bold;
+  font-family: $brand-font-family;
+  font-weight: $brand-font-bold;
   margin: 0 0 1rem 0;
   text-transform: uppercase;
 }
