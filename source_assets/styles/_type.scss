@@ -75,7 +75,12 @@
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
+
+  // Improvements
+  // line-height: 1;
+  line-height: inherit;
+  display: inline-block;
+  vertical-align: middle;
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
