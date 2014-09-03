@@ -72,9 +72,13 @@ a:active{
 
 #site-header {
   padding: 2rem 0;
-  background: #fff;
+  background: #fff url(../images/layout/cover-img.jpg) no-repeat center bottom;
+  background-size: cover;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   background-clip: padding-box;
+  font-family: $brand-font-family;
+  color: #fff;
+  @extend .antialiased;
 }
 
 #site-body {
@@ -97,13 +101,12 @@ a:active{
   margin-bottom: 0;
   em {
     font-style: normal;
-    color: tint($primary-color, 60%);
+    color: #fff;
   }
 }
 
 #site-subtitle {
   margin-bottom: 0;
-  color: tint($primary-color, 60%);
 }
 
 #prime-nav {
