@@ -36,6 +36,7 @@ a:visited {
 
 a:hover {
   opacity: 0.6;
+  filter: alpha(opacity=60);
   outline: none;
 }
 

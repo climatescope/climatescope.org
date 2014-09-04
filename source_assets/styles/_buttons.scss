@@ -34,6 +34,7 @@ input[type=submit] {
     @include transform(translate(0));
   }
   &:hover {
+    filter: alpha(opacity=100);
     opacity: inherit;
   }
   &.disabled, &[disabled] {
