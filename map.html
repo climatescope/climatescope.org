@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="stylesheet" href="_site/assets/styles/main.css">
+  <script>
+    var CS = { lang: '{{language}}', domain: '{{site.domain}}' };
+  </script>
+  <style>
+
+    path {
+      stroke: grey;
+      stroke-width: .25px;
+    }
+
+    .map-tooltip {
+      line-height: 1;
+      background: #fff;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 4px;
+      padding: 12px 12px 6px;
+      pointer-events: none;
+    }
+
+    .map-tooltip > h5 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    .map-tooltip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 14px;
+      width: 100%;
+      line-height: 1;
+      color: #fff;
+      color: rgba(255, 255, 255, 0.9);
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .map-tooltip.n:after {
+      content: "\25BC";
+      margin: -3px 0 0 0;
+      top: 100%;
+      left: 0;
+      text-align: center;
+    }
+
+    .map-tooltip > p {
+      font-size: 13px;
+      line-height: 18px;
+      margin: 0 0 13px;
+      color: #333;
+    }
+
+    .map-legend {
+      fill: #fff;
+    }
+
+    .map-legend text {
+      font-size: 11px;
+      stroke: #555;
+      font-weight: 200;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="row--full map">
+    <p>Insert map here.</p>
+  </div>
+
+  <script src="_site/assets/scripts/vendor/jquery-2.1.0.min.js"></script>
+  <script src="source_assets/scripts/vendor/d3.v3.min.js"></script>
+  <script src="source_assets/scripts/vendor/topojson.js"></script>
+  <script src="source_assets/scripts/vendor/queue.min.js"></script>
+  <script src="source_assets/scripts/vendor/d3.tip.js"></script>
+  <script src="source_assets/scripts/index-viz.js"></script>
+
+</body>
+</html>
