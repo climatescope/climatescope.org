@@ -15,6 +15,7 @@ body {
   font-family: $body-font-family;
   font-weight: $body-font-weight;
   font-style: $body-font-style;
+  min-width: 768px;
 }
 
 // Links
