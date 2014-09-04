@@ -61,6 +61,13 @@ input[type=submit] {
   color: tint($primary-color, 40%);
 }
 
+// Light (Gray)
+.bttn-light,
+.bttn-light:visited {
+  @include bttn-variation(#fff);
+  color: tint($primary-color, 40%);
+}
+
 // Success (Green)
 .bttn-success,
 .bttn-success:visited {
