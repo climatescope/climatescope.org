@@ -68,158 +68,198 @@
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+.icon, [class^="icon-"], [class*=" icon-"] {
   font-family: 'climatescope-icons';
   speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
+  vertical-align: bottom;
 
-  // Improvements
-  // line-height: 1;
-  line-height: inherit;
-  display: inline-block;
-  vertical-align: middle;
-
-  /* Better Font Rendering =========== */
+  // Better Font Rendering
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-add:before {
+.icon-add {
+  @extend .icon;
   content: "\e600";
 }
-.icon-arr-down:before {
+.icon-arr-down {
+  @extend .icon;
   content: "\e601";
 }
-.icon-arr-left-first:before {
+.icon-arr-left-first {
+  @extend .icon;
   content: "\e602";
 }
-.icon-arr-left:before {
+.icon-arr-left {
+  @extend .icon;
   content: "\e603";
 }
-.icon-arr-right-last:before {
+.icon-arr-right-last {
+  @extend .icon;
   content: "\e604";
 }
-.icon-arr-right:before {
+.icon-arr-right {
+  @extend .icon;
   content: "\e605";
 }
-.icon-arr-tail-down:before {
+.icon-arr-tail-down {
+  @extend .icon;
   content: "\e606";
 }
-.icon-arr-tail-left:before {
+.icon-arr-tail-left {
+  @extend .icon;
   content: "\e607";
 }
-.icon-arr-tail-right:before {
+.icon-arr-tail-right {
+  @extend .icon;
   content: "\e608";
 }
-.icon-arr-tail-up:before {
+.icon-arr-tail-up {
+  @extend .icon;
   content: "\e609";
 }
-.icon-arr-up:before {
+.icon-arr-up {
+  @extend .icon;
   content: "\e60a";
 }
-.icon-cancel:before {
+.icon-cancel {
+  @extend .icon;
   content: "\e60b";
 }
-.icon-circle-error:before {
+.icon-circle-error {
+  @extend .icon;
   content: "\e60c";
 }
-.icon-circle-info:before {
+.icon-circle-info {
+  @extend .icon;
   content: "\e60d";
 }
-.icon-circle-play:before {
+.icon-circle-play {
+  @extend .icon;
   content: "\e60e";
 }
-.icon-circle-question:before {
+.icon-circle-question {
+  @extend .icon;
   content: "\e60f";
 }
-.icon-circle-success:before {
+.icon-circle-success {
+  @extend .icon;
   content: "\e610";
 }
-.icon-circle-warning:before {
+.icon-circle-warning {
+  @extend .icon;
   content: "\e611";
 }
-.icon-disc-cancel:before {
+.icon-disc-cancel {
+  @extend .icon;
   content: "\e612";
 }
-.icon-download:before {
+.icon-download {
+  @extend .icon;
   content: "\e613";
 }
-.icon-email:before {
+.icon-email {
+  @extend .icon;
   content: "\e614";
 }
-.icon-menu:before {
+.icon-menu {
+  @extend .icon;
   content: "\e615";
 }
-.icon-power:before {
+.icon-power {
+  @extend .icon;
   content: "\e616";
 }
-.icon-power2:before {
+.icon-power2 {
+  @extend .icon;
   content: "\e617";
 }
-.icon-refresh:before {
+.icon-refresh {
+  @extend .icon;
   content: "\e618";
 }
-.icon-s-add:before {
+.icon-s-add {
+  @extend .icon;
   content: "\e619";
 }
-.icon-s-arr-down:before {
+.icon-s-arr-down {
+  @extend .icon;
   content: "\e61a";
 }
-.icon-s-arr-left:before {
+.icon-s-arr-left {
+  @extend .icon;
   content: "\e61b";
 }
-.icon-s-arr-right:before {
+.icon-s-arr-right {
+  @extend .icon;
   content: "\e61c";
 }
-.icon-s-arr-up:before {
+.icon-s-arr-up {
+  @extend .icon;
   content: "\e61d";
 }
-.icon-s-cancel:before {
+.icon-s-cancel {
+  @extend .icon;
   content: "\e61e";
 }
-.icon-s-new-window:before {
+.icon-s-new-window {
+  @extend .icon;
   content: "\e61f";
 }
-.icon-s-tick:before {
+.icon-s-tick {
+  @extend .icon;
   content: "\e620";
 }
-.icon-s-triangle-down:before {
+.icon-s-triangle-down {
+  @extend .icon;
   content: "\e621";
 }
-.icon-s-triangle-left:before {
+.icon-s-triangle-left {
+  @extend .icon;
   content: "\e622";
 }
-.icon-s-triangle-right:before {
+.icon-s-triangle-right {
+  @extend .icon;
   content: "\e623";
 }
-.icon-s-triangle-up:before {
+.icon-s-triangle-up {
+  @extend .icon;
   content: "\e624";
 }
-.icon-share:before {
+.icon-share {
+  @extend .icon;
   content: "\e625";
 }
-.icon-spinner:before {
+.icon-spinner {
+  @extend .icon;
   content: "\e626";
 }
-.icon-tick:before {
+.icon-tick {
+  @extend .icon;
   content: "\e627";
 }
-.icon-triangle-down:before {
+.icon-triangle-down {
+  @extend .icon;
   content: "\e628";
 }
-.icon-triangle-left:before {
+.icon-triangle-left {
+  @extend .icon;
   content: "\e629";
 }
-.icon-triangle-right:before {
+.icon-triangle-right {
+  @extend .icon;
   content: "\e62a";
 }
-.icon-triangle-up:before {
+.icon-triangle-up {
+  @extend .icon;
   content: "\e62b";
 }
-.icon-twitter:before {
+.icon-twitter {
+  @extend .icon;
   content: "\e62c";
 }
 

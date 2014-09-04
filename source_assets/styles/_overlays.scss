@@ -6,9 +6,14 @@
   position: relative;
 }
 .dropdown-toggle {
-  .icon-s-arr-down {
-    opacity: 0.5;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  &.caret {
+    &:after {
+      @extend .icon-s-arr-down;
+      opacity: .6;
+      filter: alpha(opacity=60);
+      font-size: 1rem;
+      margin-left: 0.25rem;
+    }
   }
   &:focus {
     outline: 0;
