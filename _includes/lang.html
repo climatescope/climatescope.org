@@ -1,23 +1,35 @@
 <ul class="lang-menu bttn-group bttn-group-s bttn-list">
-{% for l in site.data.i18n.lang %}
-
   {% if page.collection %}
     {% assign cur_lang = site.collections[page.collection].lang %}
-    {% assign translated_col = site.collections[page.collection].i18n[l] %}
 
+    {% assign translated_col = site.collections[page.collection].i18n['en'] %}
     {% for col in site[translated_col] %}
       {% if col.id == page.id %}
-        <li><a href="{{site.domain}}{{col.url | remove:'index.html' }}" class="bttn bttn-light {% if l == cur_lang %}active{% endif %}">{{l}}</a></li>
+        <li><a title="Switch to English" href="{{site.domain}}{{col.url | remove:'index.html' }}" class="bttn bttn-light {% if 'en' == cur_lang %}active{% endif %}">EN</a></li>
+      {% endif %}
+    {% endfor %}
+
+    {% assign translated_col = site.collections[page.collection].i18n['es'] %}
+    {% for col in site[translated_col] %}
+      {% if col.id == page.id %}
+        <li><a title="Cambiar a Español" href="{{site.domain}}{{col.url | remove:'index.html' }}" class="bttn bttn-light {% if 'es' == cur_lang %}active{% endif %}">ES</a></li>
       {% endif %}
     {% endfor %}
 
   {% else %}
+
     {% for pg in site.pages %}
-      {% if pg.lang == l and pg.id == page.id %}
-        <li><a href="{{site.domain}}{{pg.url | remove:'index.html' }}" class="bttn bttn-light {% if l == page.lang %}active{% endif %}">{{l}}</a></li>
+      {% if pg.lang == 'en' and pg.id == page.id %}
+        <li><a title="Switch to English" href="{{site.domain}}{{pg.url | remove:'index.html' }}" class="bttn bttn-light {% if 'en' == page.lang %}active{% endif %}">EN</a></li>
       {% endif %}
     {% endfor %}
+
+    {% for pg in site.pages %}
+      {% if pg.lang == 'es' and pg.id == page.id %}
+        <li><a title="Cambiar a Español" href="{{site.domain}}{{pg.url | remove:'index.html' }}" class="bttn bttn-light {% if 'es' == page.lang %}active{% endif %}">ES</a></li>
+      {% endif %}
+    {% endfor %}
+
   {% endif %}
 
-{% endfor %}
 </ul>
