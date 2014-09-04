@@ -10,8 +10,8 @@
     this.countries = [];
     
     // Sort related.
-    this.sortField = 'overall_ranking';
-    this.sortReverse = false;
+    this.sortField = 'score';
+    this.sortReverse = true;
     
     // Helper function.
     var getRequestUrl = function(regionId) {
@@ -25,7 +25,7 @@
       }
     };
     
-    // Heler function used in html.
+    // Helper function used in html.
     this.setSort = function(field) {
       _self.sortField = field;
       _self.sortReverse = !_self.sortReverse;

@@ -58,7 +58,7 @@
                 {% endcase %}
               </tr>
             </thead>
-            <tr ng-repeat="state in country.states | orderBy:'state_ranking'">
+            <tr ng-repeat="state in country.states | orderBy:'score':true">
               <td>//state.state_ranking//</td>
               <td>//state.name//</td>
               <td>//state.score//</td>
