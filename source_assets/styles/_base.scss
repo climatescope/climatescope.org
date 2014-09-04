@@ -76,8 +76,6 @@ a:active{
   background: tint($primary-color, 20%) url(../images/layout/cover-img.jpg) no-repeat center bottom;
   background-size: cover;
   color: #fff;
-  @extend .antialiased;
-  font-family: $brand-font-family;
 }
 
 #site-body {
@@ -93,6 +91,8 @@ a:active{
 
 #site-headline {
   @include col(5/12);
+  @extend .antialiased;
+  font-family: $brand-font-family;
 }
 
 #site-title {
@@ -133,6 +133,8 @@ a:active{
     color: #fff;
     font-weight: $brand-font-bold;
     text-transform: uppercase;
+    @extend .antialiased;
+    font-family: $brand-font-family;
   }
 }
 
