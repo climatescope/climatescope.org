@@ -15,7 +15,7 @@ To set up the development environment for this website, you'll need to install t
 
 - Npm
 - compass & sass
-- Sassy Strings ( $ gem install sassy-strings )
+- Sass CSS Importer ( $ gem install --pre sass-css-importer )
 - Grunt ( $ npm install -g grunt-cli )
 - jekyll ( $ gem install jekyll )
 
