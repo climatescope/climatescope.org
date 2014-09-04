@@ -1,0 +1,57 @@
+$tooltip-background: rgba(255, 255, 255, 0.9);
+
+path {
+  stroke: grey;
+  stroke-width: .25px;
+}
+
+.map-tooltip {
+  line-height: 1;
+  background: #fff;
+  background: $tooltip-background;
+  border-radius: $global-radius;
+  padding: 12px 12px 6px;
+  pointer-events: none;
+}
+
+.map-tooltip > h5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.map-tooltip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 14px;
+  width: 100%;
+  line-height: 1;
+  color: #fff;
+  color: $tooltip-background;
+  position: absolute;
+  pointer-events: none;
+}
+
+.map-tooltip.n:after {
+  content: "\25BC";
+  margin: -3px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.map-tooltip > p {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 0 13px;
+  color: $primary-color
+}
+
+.map-legend {
+  fill: #fff;
+}
+
+.map-legend text {
+  font-size: 11px;
+  stroke: #555;
+  font-weight: 200;
+}
