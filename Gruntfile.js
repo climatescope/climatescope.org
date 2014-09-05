@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       options : {
           sassDir : 'source_assets/styles',
           cssDir : 'assets/styles',
-          //raw : 'require "sassy-strings";'
+          raw : 'require "sass-css-importer";'
       },
       
       dev : {

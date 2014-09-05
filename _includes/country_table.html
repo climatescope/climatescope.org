@@ -3,7 +3,6 @@
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
-
 <div ng-app="countryApp" ng-controller="CountryListController as countryTable" ng-cloak>
   <table class="table country-table">
     <thead>
@@ -31,7 +30,7 @@
         <td>//country.score//</td>
         <td>
           <ul class="table-bar">
-            <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+            <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//" class="bar-segment" tooltip-animation="false" tooltip-placement="top" tooltip="//param.value//" tooltip-append-to-body="true"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
           </ul>
         </td>
         <td>//country.grid//</td>
