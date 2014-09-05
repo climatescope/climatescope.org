@@ -15,6 +15,7 @@ body {
   font-family: $body-font-family;
   font-weight: $body-font-weight;
   font-style: $body-font-style;
+  min-width: 768px;
 }
 
 // Links
@@ -36,6 +37,7 @@ a:visited {
 
 a:hover {
   opacity: 0.6;
+  filter: alpha(opacity=60);
   outline: none;
 }
 
@@ -72,9 +74,12 @@ a:active{
 
 #site-header {
   padding: 2rem 0;
-  background: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background-clip: padding-box;
+  background: tint($primary-color, 20%) url(../images/layout/cover-img.jpg) no-repeat center bottom;
+  background-size: cover;
+  color: #fff;
+  .row--contained {
+    position: relative;
+  }
 }
 
 #site-body {
@@ -89,43 +94,78 @@ a:active{
 // SITE HEADER
 
 #site-headline {
-  @include col(5/12);
+  @include span(12/12);
+  @extend .antialiased;
+  font-family: $brand-font-family;
+  margin-bottom: 2rem;
+  @media #{$xlarge-up} {
+    @include col(4/12);
+    margin-bottom: 0;
+  }
 }
 
 #site-title {
   @extend .hd-xs;
   margin-bottom: 0;
+  line-height: 1;
   em {
     font-style: normal;
-    color: tint($primary-color, 60%);
+    color: #fff;
   }
 }
 
 #site-subtitle {
   margin-bottom: 0;
-  color: tint($primary-color, 60%);
 }
 
 #prime-nav {
-  @include col(7/12);
+  @include span(12/12);
+  @media #{$xlarge-up} {
+    @include col(8/12);
+  }
 }
 
 .lang-menu {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+  z-index: 1;
   margin: 0 0 0 2rem !important;
+  @media #{$medium-up} {
+    right: 3rem;
+  }
+  @media #{$xlarge-up} {
+    position: static;
+    float: right;
+  }
 }
 
 .global-menu {
-  float: right;
+  float: left;
   list-style: none;
   padding: 0;
   margin: 0;
-  a {
-    display: block;
-  }
   > li {
     float: left;
     margin: 0 0 0 2rem;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  > li > a {
+    display: block;
+    color: #fff;
+    font-weight: $brand-font-bold;
+    text-transform: uppercase;
+    @extend .antialiased;
+    font-family: $brand-font-family;
+  }
+  .open > .dropdown-toggle {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+  }
+  @media #{$xlarge-up} {
+    float: right;
   }
 }
 

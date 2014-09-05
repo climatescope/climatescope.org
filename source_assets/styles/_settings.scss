@@ -18,10 +18,14 @@ $info-color: #499DD2;                               // blue
 // We use these to control various global styles
 $body-bg: tint($primary-color, 95%);
 $body-font-color: tint($primary-color, 20%);
-$body-font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;;
+$body-font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $body-font-weight: normal;
 $body-font-style: normal;
 $body-font-bold: 700;
+
+$brand-font-family: "Klavika", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$brand-font-weight: normal;
+$brand-font-bold: 700;
 
 // We use these to make sure border radius matches unless we want it different.
 $global-radius: 0.25rem;
