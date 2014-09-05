@@ -53,8 +53,11 @@ $(document).ready(function() {
     $parent.on('weight:change', redraw);
 
     queue()
-      .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
-      .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.json')
+      // .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
+      // .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.json')
+
+      .defer(d3.json, 'en/api/countries.topojson')
+      .defer(d3.json, 'en/api/countries.json')
       .await(function(error, land, indicators) {
 
         var land = topojson.feature(land, land.objects.countries).features
