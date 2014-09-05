@@ -8,6 +8,7 @@
   <table class="table country-table">
     <thead>
       <tr>
+        <th>&nbsp;</th>
         {% case language %}
         {% when 'en' %}
         <th><a href="" ng-click="countryTable.setSort('overall_ranking')">Overall rank</a></th>
@@ -26,6 +27,12 @@
     </thead>
     <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortField:countryTable.sortReverse">
       <tr>
+        {% case language %}
+        {% when 'en' %}
+        <td><a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expand</span></a></td>
+        {% when 'es' %}
+        <td><a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expandir</span></a></td>
+        {% endcase %}
         <td>//country.overall_ranking//</td>
         <td><a href="//countryTable.getCountryUrl(country)//">//country.name//</a></td>
         <td>//country.score//</td>
@@ -37,11 +44,12 @@
         <td>//country.grid//</td>
       </tr>
 
-      <tr ng-if="country.states.length > 0" class="wrapper-row">
-        <td colspan="5">
+      <tr ng-if="country.states.length > 0" class="wrapper-row country-states" style="display: none">
+        <td colspan="6">
           <table class="table table-nested">
             <thead>
               <tr>
+                <th>&nbsp;</th>
                 {% case language %}
                 {% when 'en' %}
                 <th>Overall rank</th>
@@ -59,6 +67,7 @@
               </tr>
             </thead>
             <tr ng-repeat="state in country.states | orderBy:'state_ranking'">
+              <td>&nbsp;</td>
               <td>//state.state_ranking//</td>
               <td>//state.name//</td>
               <td>//state.score//</td>
