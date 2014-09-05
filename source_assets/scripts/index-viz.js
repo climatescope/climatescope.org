@@ -4,13 +4,11 @@ $(document).ready(function() {
 
     var $parent = $(parent)
       ,width = $parent.width()
-      ,height = 500
-      ,ratio = window.devicePixelRatio || 1
+      ,height = 256
 
       ,tooltipHTML = function(d) {
         return ['<h5>#' + d.overall_ranking, d.name, '</h5><p>Score:<strong>',
           d.score, '</strong></p>'
-
         ].join(' ');
       }
 
@@ -24,7 +22,7 @@ $(document).ready(function() {
 
       ,mouseout = function() { tooltip.hide(); }
 
-      ,redraw = function(weight) { }
+      ,redraw = function() { }
 
       // TODO select using element
       ,svg = d3.select('.map').append('svg')
@@ -46,7 +44,7 @@ $(document).ready(function() {
     ;
 
     projection.translate([width / 2, height / 2 ])
-      .scale(200);
+      .scale(105);
 
     path.projection(projection);
 
@@ -54,10 +52,9 @@ $(document).ready(function() {
     // listen for re-draws
     $parent.on('weight:change', redraw);
 
-
     queue()
-      .defer(d3.json, 'poc/api/countries.topojson')
-      .defer(d3.json, 'en/api/countries.json')
+      .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
+      .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.json')
       .await(function(error, land, indicators) {
 
         var land = topojson.feature(land, land.objects.countries).features
@@ -152,7 +149,7 @@ $(document).ready(function() {
           .attr('y', '3em')
           .attr('dy', '1em')
           .style('text-anchor', 'middle')
-          .text(function(d, i) {
+          .text(function(d) {
             var extent = fill.invertExtent(d);
             return Math.ceil(extent[0]) + ' - ' + Math.floor(extent[1]);
           })

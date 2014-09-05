@@ -253,10 +253,6 @@ a:active{
 }
 
 .map {
-  background: tint($primary-color, 95%) url(../images/layout/placeholder-map.png) no-repeat center center;
-  text-align: center;
-  padding: 4rem 3rem;
-  margin: -2rem 0 2rem 0;
   height: 16rem;
   p {
     @extend .visually-hidden;
