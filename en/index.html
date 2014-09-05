@@ -37,9 +37,9 @@ lang: en
     <div class="row--full map">
       <p>Insert map here.</p>
     </div>
-    
+
     <div class="row--contained">
-      <script>    
+      <script>
         // Country index to retrieve the url.
         CS.countryIndex = {
           {% for country in site.en_country %}
@@ -47,9 +47,10 @@ lang: en
           {% endfor %}
         };
       </script>
-      
+
       {% include country_table.html %}
     </div>
   </div>
 
+  <script src="{{ site.domain }}/assets/scripts/vendor/map-dependencies.min.js"></script>
 </article>
