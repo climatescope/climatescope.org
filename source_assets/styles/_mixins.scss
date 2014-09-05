@@ -21,6 +21,7 @@
   &:hover {
     background-color: shade($color, 5%);
   }
+  .open > &,
   &.active,
   &.active:hover {
     background-color: shade($color, 10%);

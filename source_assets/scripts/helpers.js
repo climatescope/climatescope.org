@@ -2,6 +2,7 @@
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
+/* jshint unused: false */
 function debounce(func, wait, immediate) {
   var timeout;
   return function() {
@@ -13,4 +14,4 @@ function debounce(func, wait, immediate) {
     }, wait);
     if (immediate && !timeout) func.apply(context, args);
   };
-};
+}
