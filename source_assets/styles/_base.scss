@@ -187,15 +187,43 @@ a:active{
 }
 
 #vis-controls {
-  .control {
-    @include col(3/12);
-    h3 {
-      @extend .hd-xxs;
-      font-size: 0.85rem;
-      line-height: 1.25rem;
+  .prime-title {
+    @extend .hd-xxs;
+    float: left;
+  }
+  .reset {
+    float: left;
+    border: 0;
+    background: none;
+    margin-left: 0.5rem;
+    clear: right;
+    &:before {
+      @extend .icon-refresh;
+    }
+    span {
+      @extend .visually-hidden;
     }
   }
+  .control {
+    @include col(3/12);
+    &.first {
+      clear: left;
+    }
+  }
+  .control-title {
+    @extend .hd-label;
+    @extend .truncated;
+    width: 100%;
+  }
+  .slider {
+    margin-bottom: 2rem;
+  }
+  .lock {
+    float: right;
+  }
 }
+
+
 
 .layout--home,
 .layout--entry,

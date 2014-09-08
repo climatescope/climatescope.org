@@ -310,6 +310,13 @@ h6, .hd-xxs {
   @include heading(1rem); // 16px
 }
 
+.hd-label {
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  color: tint($primary-color, 60%);
+  font-weight: normal;
+}
+
 [class*=' hd-'], [class^='hd-'] {
   b {
     font-weight: normal;

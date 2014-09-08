@@ -93,7 +93,10 @@ $(document).ready(function() {
     });
 
     // Temp data!
-    $('#res').html('p1: ' + data['1'] + '<br>p2: ' + data['2'] + '<br>p3: ' + data['3'] + '<br>p4: ' + data['4']);
+    $('.slider-value.one').text(data['1'] + '%');
+    $('.slider-value.two').text(data['2'] + '%');
+    $('.slider-value.three').text(data['3'] + '%');
+    $('.slider-value.four').text(data['4'] + '%');
   });
   
 });

@@ -78,7 +78,7 @@
     sliders.each(function() {
       var $slider = $(this);
       // Search for a sibling lock.
-      $slider.siblings('.lock').click(function() {        
+      $slider.siblings('.lock').click(function() {
         
         var $lock = $(this);
         if ($lock.hasClass('locked')) {
