@@ -15,8 +15,33 @@ $(document).ready(function() {
 
       ,clicked = false
       ,tooltip = d3.tip().attr('class', 'rank-tooltip').html(function(d) {
-        return ['<h5>#' + d.rank.overall_ranking, d.rank.name, '</h5><p>Score:<strong>',
-          d.rank.score, '</strong></p>'].join(' ');
+        var d = d.rank,
+          rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
+        return [
+          '<div class="rank-tooltip-head"><label>Region goes here</label>'
+          ,'<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>'
+          ,'<div class="rank-tooltip-body">'
+          ,'<table><tr><td class="first">' + d.overall_ranking, '</td><td>Rank</td></tr>'
+          ,'<tr><td class="first">' + d.score, '</td><td>Score</td></tr>'
+
+          // four indicators
+          ,'<tr><td class="first">' + d.parameters[0].value
+          ,'</td><td class="tooltip-table-indicator indicator-0">Enabling Framework</td></tr>'
+
+          ,'<tr><td class="first">' + d.parameters[1].value
+          ,'</td><td class="tooltip-table-indicator indicator-1">Financing & Investment</td></tr>'
+
+          ,'<tr><td class="first">' + d.parameters[2].value
+          ,'</td><td class="tooltip-table-indicator indicator-2">Value Chains</td></tr>'
+
+          ,'<tr><td class="first">' + d.parameters[3].value
+          ,'</td><td class="tooltip-table-indicator indicator-3">GHG Management</td></tr>'
+
+          ,'</table>'
+          ,'<button class="rank-tooltip-link">View Country &rsaquo;</button>'
+          ,'</div>'
+
+        ].join(' ');
       })
       ,svg = d3.select(map.getPanes().overlayPane)
         .append('svg:svg')
@@ -109,7 +134,7 @@ $(document).ready(function() {
     function getSlice(land, visibleCountries) {
       return visibleCountries === 0 ?
         land : visibleCountries === -1 ?
-        land.slice(-10, 0) : land.slice(0, 10);
+        land.slice(-10) : land.slice(0, 10);
     }
 
     function reset() {
@@ -131,14 +156,17 @@ $(document).ready(function() {
       if (reset) {
         // radius.domain([data[data.length-1].rank.score, data[0].rank.score]);
 
+        g.selectAll('.rank-marker').remove();
         markers = g.selectAll('.rank-marker')
           .data(data)
-        ;
-
-        markers.enter().append('g')
+        .enter().append('g')
           .attr('class', 'rank-marker')
           .style('opacity', 0)
           .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
+        ;
+
+        var circles = markers.append('circle')
+          .attr('r', 16)
           .on('mouseover', function(d) {
             if (!clicked) { tooltip.show(d); }
           })
@@ -159,20 +187,14 @@ $(document).ready(function() {
           })
         ;
 
-        var circles = markers.append('circle')
-          .attr('r', 18)
-        ;
-
         markers.append('text')
           .attr('dy', '6px')
           .text(function(d) { return d.rank.overall_ranking < 10 ?
                 '0' + d.rank.overall_ranking : d.rank.overall_ranking; })
         ;
 
-        markers.exit().remove();
-
         markers.transition()
-          .delay(function(d, i) { return 600 + i * 20 })
+          .delay(function(d, i) { return 200 + i * 20 })
           .duration(200)
           .style('opacity', 1)
         ;
@@ -185,8 +207,8 @@ $(document).ready(function() {
     }
 
     function toZoom(visibleCountries) {
-      if (visibleCountries === 0 && zoom < 3) {
-          map.setZoom(3);
+      if (visibleCountries === 0 && zoom < 4) {
+          map.setZoom(4);
       }
       else if (visibleCountries !== 0 && zoom > 2) {
         map.setZoom(2);
@@ -194,8 +216,15 @@ $(document).ready(function() {
     }
 
     map.on('viewreset', function() {
-      reset(), redraw(false);
+      reset();
       zoom = map.getZoom();
+      if (visibleCountries === 0 && zoom < 4) {
+        visibleCountries = 1;
+        redraw(true, getSlice(land, visibleCountries));
+      }
+      else {
+        redraw(false);
+      }
     });
   };
 
