@@ -5,7 +5,7 @@ path {
   stroke-width: .25px;
 }
 
-.map-tooltip {
+.rank-tooltip {
   line-height: 1;
   background: #fff;
   background: $tooltip-background;
@@ -14,12 +14,12 @@ path {
   pointer-events: none;
 }
 
-.map-tooltip > h5 {
+.rank-tooltip > h5 {
   font-size: 16px;
   line-height: 24px;
 }
 
-.map-tooltip:after {
+.rank-tooltip:after {
   box-sizing: border-box;
   display: inline;
   font-size: 14px;
@@ -31,7 +31,7 @@ path {
   pointer-events: none;
 }
 
-.map-tooltip.n:after {
+.rank-tooltip.n:after {
   content: "\25BC";
   margin: -3px 0 0 0;
   top: 100%;
@@ -39,24 +39,24 @@ path {
   text-align: center;
 }
 
-.map-tooltip > p {
+.rank-tooltip > p {
   font-size: 13px;
   line-height: 18px;
   margin: 0 0 13px;
   color: $primary-color
 }
 
-.map-legend {
+.rank-legend {
   fill: #fff;
 }
 
-.map-legend text {
+.rank-legend text {
   font-size: 11px;
   stroke: #555;
   font-weight: 200;
 }
 
-.ranking-marker {
+.rank-marker {
   fill-opacity: .5;
   stroke: #fff;
   stroke-width: .5px;
