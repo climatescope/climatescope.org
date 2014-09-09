@@ -7,6 +7,7 @@
   background-color: transparent;
   border-spacing: 0;
   border-collapse: collapse;
+  font-family: $brand-font-family;
 
   td, th {
     padding: 0;
@@ -19,6 +20,10 @@
   > thead > tr > th {
     vertical-align: bottom;
     border-bottom: 2px solid tint($primary-color, 90%);
+    @extend .hd-label;
+    a {
+      color: tint($primary-color, 60%);
+    }
   }
 
   > thead > tr > th,
@@ -50,6 +55,13 @@
 }
 
 .country-table {
+  .cell-rank,
+  .cell-country {
+    font-weight: $brand-font-bold;
+    a {
+      color: inherit;
+    }
+  }
   tr:first-child > th:nth-child(1),
   tr:first-child > td:nth-child(1) {
     width: 10%;
