@@ -22,7 +22,23 @@
     border-bottom: 2px solid tint($primary-color, 90%);
     @extend .hd-label;
     a {
+      display: block;
       color: tint($primary-color, 60%);
+      &.sort:after {
+        font-size: 1rem;
+        color: tint($primary-color, 20%);
+        margin-left: 0.25rem;
+      }
+      &.sort-none:after {
+        @extend .icon-sort;
+      }
+      &.sort-asc:after {
+        @extend .icon-sort-asc;
+        
+      }
+      &.sort-desc:after {
+        @extend .icon-sort-desc;
+      }
     }
   }
 
