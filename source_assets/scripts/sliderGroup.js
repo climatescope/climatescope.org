@@ -78,9 +78,9 @@
     sliders.each(function() {
       var $slider = $(this);
       // Search for a sibling lock.
-      $slider.siblings('.lock').click(function() {
+      $slider.siblings('.lock .switch-checkbox').change(function() {
         
-        var $lock = $(this);
+        var $lock = $(this).parent();
         if ($lock.hasClass('locked')) {
           $lock.removeClass('locked');
           $slider.removeAttr('disabled');
