@@ -318,20 +318,54 @@ a:active{
 }
 
 
-// Clean me v
+// SITE FOOTER
+
+#comp-nav {
+  @include span(12/12);
+  border-bottom: 1px solid tint($primary-color, 90%);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  .ftr-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    > li {
+      float: left;
+      margin: 0 2rem 0 0;
+    }
+    > li > a {
+      display: block;
+      font-family: $brand-font-family;
+      font-weight: $brand-font-bold;
+      text-transform: uppercase;
+      color: inherit;
+    }
+  }
+  @media #{$xlarge-up} {
+    @include col(7/12);
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    .ftr-menu {
+      padding: 1rem 0;
+    }
+  }
+}
 
 #ftr-credits {
-  @include col(8/12);
+  @include span(12/12);
   h1 {
     @extend .visually-hidden;
   }
   .orgs-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 -1.5rem;
     li {
       float: left;
       margin: 0 1rem 1rem 0;
+      width: 6rem;
     }
     a {
       display: block;
@@ -340,42 +374,27 @@ a:active{
       @extend .visually-hidden;
     }
     img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
       vertical-align: top;
     }
   }
-}
-
-#comp-nav {
-  @include col(4/12);
-  .ftr-menu {
-    float: right;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-      float: left;
-      margin: 0 0 1rem 1rem;
-    }
-    a {
-      display: block;
+  @media #{$xlarge-up} {
+    @include col(5/12);
+    .orgs-list {
+      float: right;
     }
   }
 }
 
 #copyright {
-  @include col(12/12);
+  float: left;
+  clear: both;
+  font-family: $brand-font-family;
+  color: tint($primary-color, 60%);
+  margin-bottom: 0;
+  @media #{$xlarge-up} {
+    float: right;
+  }
 }
-
-/*  Jeet Syntax Quick Reference
-  --------------------------
-  col($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
-  span($ratio: 1, $offset: 0)
-  shift($ratios: 0, $col_or_span: col, $gutter: $jeet-gutter)
-  unshift()
-  edit()
-  center($max_width: 1410px, $pad: 0)
-  stack($pad: 0, $align: false)
-  unstack()
-  align($direction: both)
-  cf()
-*/
