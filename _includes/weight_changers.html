@@ -1,0 +1,102 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
+
+
+
+<div id="vis-controls" class="slider-group">
+  <h2 class="prime-title">Customize Topic Weights</h2>
+  {% case language %}
+  {% when 'en' %}
+  <a href="#" class="reset" title="Reset topic weights"><span>Reset</span></a>
+  {% when 'es' %}
+  <a href="#" class="reset" title="Restablecer el peso de los temas"><span>Restablecer</span></a>
+  {% endcase %}
+  <div class="control a first">
+    {% case language %}
+    {% when 'en' %}
+    <h3 class="control-title">Enabling framework</h3>
+    {% when 'es' %}
+    <h3 class="control-title">Marco propicio</h3>
+    {% endcase %}
+    <div class="slider" id='1' data-starting="40"></div>
+    <span class="slider-value one"></span>
+    <label class="switch lock" for="myswitch1">
+      <input type="checkbox" name="switch" class="switch-checkbox" id="myswitch1" />
+      <span class="switch-inner"></span>
+      <span class="switch-switch"></span>
+      {% case language %}
+      {% when 'en' %}
+      <span class="swtich-text">Lock</span>
+      {% when 'es' %}
+      <span class="swtich-text">Bloquear</span>
+      {% endcase %}
+    </label>
+  </div>
+  <div class="control b">
+    {% case language %}
+    {% when 'en' %}
+    <h3 class="control-title">Financing & Investment</h3>
+    {% when 'es' %}
+    <h3 class="control-title">Financiamiento y investimiento</h3>
+    {% endcase %}
+    <div class="slider" id='2' data-starting="30"></div>
+    <span class="slider-value two"></span>
+    <label class="switch lock" for="myswitch2">
+      <input type="checkbox" name="switch" class="switch-checkbox" id="myswitch2" />
+      <span class="switch-inner"></span>
+      <span class="switch-switch"></span>
+      {% case language %}
+      {% when 'en' %}
+      <span class="swtich-text">Lock</span>
+      {% when 'es' %}
+      <span class="swtich-text">Bloquear</span>
+      {% endcase %}
+    </label>
+  </div>
+  <div class="control c">
+    {% case language %}
+    {% when 'en' %}
+    <h3 class="control-title">Value Chains</h3>
+    {% when 'es' %}
+    <h3 class="control-title">Cadenas de valor</h3>
+    {% endcase %}
+    <div class="slider" id='3' data-starting="10"></div>
+    <span class="slider-value three"></span>
+    <label class="switch lock" for="myswitch3">
+      <input type="checkbox" name="switch" class="switch-checkbox" id="myswitch3" />
+      <span class="switch-inner"></span>
+      <span class="switch-switch"></span>
+      {% case language %}
+      {% when 'en' %}
+      <span class="swtich-text">Lock</span>
+      {% when 'es' %}
+      <span class="swtich-text">Bloquear</span>
+      {% endcase %}
+    </label>
+  </div>
+  <div class="control d">
+    {% case language %}
+    {% when 'en' %}
+    <h3 class="control-title">GHG Management</h3>
+    {% when 'es' %}
+    <h3 class="control-title">Gestión de GEI</h3>
+    {% endcase %}
+    <div class="slider" id="4" data-starting="20"></div>
+    <span class="slider-value four"></span>
+    <label class="switch lock" for="myswitch4">
+      <input type="checkbox" name="switch" class="switch-checkbox" id="myswitch4" />
+      <span class="switch-inner"></span>
+      <span class="switch-switch"></span>
+      {% case language %}
+      {% when 'en' %}
+      <span class="swtich-text">Lock</span>
+      {% when 'es' %}
+      <span class="swtich-text">Bloquear</span>
+      {% endcase %}
+    </label>
+  </div>
+</div>
