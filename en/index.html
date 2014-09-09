@@ -22,7 +22,7 @@ lang: en
       <div class="layout--home__tools">
         <div id="vis-controls" class="slider-group">
           <h2 class="prime-title">Customize Topic Weights</h2>
-          <button class="reset"><span>Reset</span></button>
+          <a href="#" class="reset" title="Reset topic weights"><span>Reset</span></a>
           <div class="control first">
             <h3 class="control-title">Enabling framework</h3>
             <div class="slider" id='1'></div>
@@ -38,19 +38,34 @@ lang: en
             <h3 class="control-title">Financing & Investment</h3>
             <div class="slider" id='2'></div>
             <span class="slider-value two">10%</span>
-            <button class="switch lock"><span class="switch-text">Lock</span></button>
+            <label class="switch lock" for="myswitch" />
+              <input type="checkbox" name="switch" class="switch-checkbox" id="myswitch">
+              <span class="switch-inner"></span>
+              <span class="switch-switch"></span>
+              <span class="swtich-text">Lock</span>
+            </label>
           </div>
           <div class="control">
             <h3 class="control-title">Value Chains</h3>
             <div class="slider" id='3'></div>
             <span class="slider-value three">10%</span>
-            <button class="switch lock"><span class="switch-text">Lock</span></button>
+            <label class="switch lock" for="myswitch" />
+              <input type="checkbox" name="switch" class="switch-checkbox" id="myswitch">
+              <span class="switch-inner"></span>
+              <span class="switch-switch"></span>
+              <span class="swtich-text">Lock</span>
+            </label>
           </div>
           <div class="control">
             <h3 class="control-title">GHG Management</h3>
             <div class="slider" id="4"></div>
             <span class="slider-value four">10%</span>
-            <button class="switch lock"><span class="switch-text">Lock</span></button>
+            <label class="switch lock" for="myswitch" />
+              <input type="checkbox" name="switch" class="switch-checkbox" id="myswitch">
+              <span class="switch-inner"></span>
+              <span class="switch-switch"></span>
+              <span class="swtich-text">Lock</span>
+            </label>
           </div>
         </div>
       </div>

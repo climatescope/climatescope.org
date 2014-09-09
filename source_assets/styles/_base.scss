@@ -193,10 +193,8 @@ a:active{
   }
   .reset {
     float: left;
-    border: 0;
-    background: none;
     margin-left: 0.5rem;
-    clear: right;
+    color: tint($primary-color, 40%);
     &:before {
       @extend .icon-refresh;
     }
@@ -216,7 +214,13 @@ a:active{
     width: 100%;
   }
   .slider {
-    margin-bottom: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .slider-value {
+    @extend .hd-xxs;
+    float: left;
+    line-height: 2rem;
+    margin-bottom: 0;
   }
   .lock {
     float: right;
