@@ -13,7 +13,7 @@
   function sliderGroup(options) {
     var $group = $(this);
     var sliders = $('.slider', $group);
-    
+
     // Returns the sum of all the slider's values.
     var getGroupTotal = function() {
       var total = 0;
@@ -21,12 +21,58 @@
         total += parseFloat($(this).val());
       });
       return total;
-    };    
+    };
+
+    // Gets the slider's data prepared to send to the listener.
+    var getSlidersData = function() {
+      var data = {};
+      sliders.each(function(index) {
+        var id = $(this).attr('id') || index;
+        data[id] = parseFloat($(this).val());
+      });
+      return data;
+    };
+
+    // Sets the slider's defaults using the data attribute.
+    var setSlidersDefaultValues = function() {
+      sliders.each(function() {
+        var starting = $(this).attr('data-starting');
+        if (!starting) {
+          throw Error("sliderGroup: missing 'data-starting' attribute.");
+        }
+         $(this).val($(this).attr('data-starting'));
+      });
+
+      // Send data to event listener as init.
+      var data = getSlidersData();
+      $group.trigger('update-sliders', [data]);
+    };
+    
+    // Reset Option.
+    if (options == 'reset') {
+      setSlidersDefaultValues();
+      // Unlock.
+      sliders.siblings('.lock').find('.switch-checkbox').removeAttr('checked').trigger('change');
+      return this;
+    }
 
     // Initialize all sliders.
     sliders.noUiSlider(options);
+    setSlidersDefaultValues();
     
-    sliders.on('slide', function() {      
+    // When setting up the slider the listener is not yet attached
+    // to the slider group, so the trigger wouldn't work.
+    // By delaying the execution a few millis there is time for the
+    // listener to be attached.
+    // An alternative to this would be to have a init function callback
+    // but let's pick one and go with it.
+    setTimeout(function() {
+      var data = getSlidersData();
+      $group.trigger('update-sliders', [data]);
+    }, 10);
+    
+
+    sliders.on('slide', function() {
       var _self = this;
       var _selfValue = parseFloat($(this).val());
 
@@ -50,9 +96,9 @@
         if (new_value > 100) {
           new_value = 100;
         }
-        $(this).val(new_value);     
+        $(this).val(new_value);
       });
-      
+
       // Get the updated value of the sliders.
       var updatedTotal = getGroupTotal();
       // Value for other slides.
@@ -62,40 +108,33 @@
       if (updatedTotal != 100) {
         $(_self).val(100 - updatedOthersTotal);
       }
-      
+
       // Prepare data to send to event listener.  
-      var data = {};
-      sliders.each(function(index) {
-        var id = $(this).attr('id') || index;
-        data[id] = parseFloat($(this).val());
-      });
-      
-      $group.trigger('update-sliders', [data]);      
+      var data = getSlidersData();      
+      $group.trigger('update-sliders', [data]);
       
     });
-    
+
     // Initialize locks.
     sliders.each(function() {
       var $slider = $(this);
       // Search for a sibling lock.
-      $slider.siblings('.lock .switch-checkbox').change(function() {
-        
-        var $lock = $(this).parent();
-        if ($lock.hasClass('locked')) {
-          $lock.removeClass('locked');
-          $slider.removeAttr('disabled');
+      $slider.siblings('.lock').find('.switch-checkbox').change(function() {
+        if ($(this).is(':checked')) {
+          $slider.attr('disabled', 'disabled');
         }
         else {
-          $lock.addClass('locked');
-          $slider.attr('disabled', 'disabled');
+          $slider.removeAttr('disabled');
         }
       });
     });
+    
+    return this;
   }
 
-  $.fn.sliderGroup = function(options) {
+  $.fn.sliderGroup = function(options) {    
     return this.each(function() {
-      sliderGroup.apply(this, [options]);
+      return sliderGroup.apply(this, [options]);
     });
   };
   

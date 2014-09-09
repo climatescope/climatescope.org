@@ -99,4 +99,10 @@ $(document).ready(function() {
     $('.slider-value.four').text(data['4'] + '%');
   });
   
+  // Reset button.
+  $('#vis-controls .reset').click(function(e) {
+    e.preventDefault();
+    $('#vis-controls.slider-group').sliderGroup('reset');
+  });
+  
 });
