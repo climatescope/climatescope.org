@@ -4,46 +4,14 @@ title : Index
 id: index
 lang: es
 ---
-<style type="text/css" media="screen">
-  .lock {
-    background-color: green;
-  }
-  .locked {
-    background-color: red;
-  }
-</style>
-
-<article class="layout--home">
+<section class="layout--home">
   <header class="layout--home__header sticky" id="parameters-controls">
     <div class="row--contained">
       <div class="layout--home__heading">
         <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
       </div>
       <div class="layout--home__tools">
-        <div id="vis-controls" class="slider-group">
-          <div class="control">
-            <h3>Marco propicio</h3>
-            <div class="slider" id='1'></div>
-            <button class="lock">Lock</button>
-          </div>
-          <div class="control">
-            <h3>Financiamiento y investimiento</h3>
-            <div class="slider" id='2'></div>
-            <button class="lock">Lock</button>
-          </div>
-          <div class="control">
-            <h3>Cadenas de valor</h3>
-            <div class="slider" id='3'></div>
-            <button class="lock">Lock</button>
-          </div>
-          <div class="control">
-            <h3>Gestión de GEI</h3>
-            <div class="slider" id="4"></div>
-            <button class="lock">Lock</button>
-          </div>
-        </div>
-        <div id="res" style="clear:both"></div>
-      </div>
+        {% include weight_changers.html %}
     </div>
   </header>
 
@@ -66,4 +34,4 @@ lang: es
     </div>
   </div>
 
-</article>
+</section>

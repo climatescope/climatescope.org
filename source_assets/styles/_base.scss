@@ -187,15 +187,59 @@ a:active{
 }
 
 #vis-controls {
-  .control {
-    @include col(3/12);
-    h3 {
-      @extend .hd-xxs;
-      font-size: 0.85rem;
-      line-height: 1.25rem;
+  .prime-title {
+    @extend .hd-xxs;
+    float: left;
+  }
+  .reset {
+    float: left;
+    margin-left: 0.5rem;
+    color: tint($primary-color, 40%);
+    &:before {
+      @extend .icon-refresh;
+    }
+    span {
+      @extend .visually-hidden;
     }
   }
+  .control {
+    @include col(3/12);
+    &.first {
+      clear: left;
+    }
+  }
+  .control-title {
+    @extend .hd-label;
+    @extend .truncated;
+    width: 100%;
+  }
+  .slider {
+    margin-bottom: 0.75rem;
+  }
+  .control.a .noUi-connect {
+    background: $infograph-color-a;
+  }
+  .control.b .noUi-connect {
+    background: $infograph-color-b;
+  }
+  .control.c .noUi-connect {
+    background: $infograph-color-c;
+  }
+  .control.d .noUi-connect {
+    background: $infograph-color-d;
+  }
+  .slider-value {
+    @extend .hd-xxs;
+    float: left;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+  .lock {
+    float: right;
+  }
 }
+
+
 
 .layout--home,
 .layout--entry,

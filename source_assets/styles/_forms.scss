@@ -1,0 +1,75 @@
+// SWITCH
+
+.switch {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  @include user-select(none);
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: $global-rounded;
+  box-shadow: inset 0 2px 0 0 rgba($primary-color, 0.1);
+  background: tint($primary-color, 95%);
+}
+
+.switch-checkbox,
+.swtich-text {
+  @extend .visually-hidden;
+}
+
+.switch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  @include transition(margin 0.2s ease-in 0s);
+  @include transform(translateZ(0));
+}
+
+.switch-inner:before, .switch-inner:after {
+  float: left;
+  width: 50%;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0;
+  color: tint($primary-color, 40%);
+}
+
+.switch-inner:before {
+  @extend .icon-lock;
+  padding-left: 0.75rem;
+}
+
+.switch-inner:after {
+  @extend .icon-unlock;
+  padding-right: 0.75rem;
+  text-align: right;
+}
+
+.switch-switch {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2rem;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.25rem;
+  background: tint($primary-color, 90%);
+  box-shadow: inset 0 -2px 0 0 rgba($primary-color, 0.1);
+  border-radius: $global-rounded;
+  @include transition(all 0.2s ease-in 0s);
+  @include transform(translateZ(0));
+}
+
+.switch:hover .switch-switch {
+  background: tint($primary-color, 85%);
+}
+
+.switch-checkbox:checked + .switch-inner {
+  margin-left: 0;
+}
+
+.switch-checkbox:checked ~ .switch-switch {
+  right: 0;
+}

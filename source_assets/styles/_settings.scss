@@ -8,12 +8,17 @@ $rem-base: 16px;
 $base-line-height: 150%;
 
 // We use these as default colors throughout
-$primary-color: #000000;                            // black
+$primary-color: #000;                            	// black
 $secondary-color: #77bc1f;                          // green
 $alert-color: #D85D3F;                              // red
 $success-color: #77bc1f;                            // green (same as $secondary-color)
 $warning-color: #F4A432;                            // yellow
 $info-color: #499DD2;                               // blue
+
+$infograph-color-a: #F0C30E;						// yellow
+$infograph-color-b: #62A60A;						// dark green
+$infograph-color-c: #008FBE;						// blue
+$infograph-color-d: #635D9B;						// purple
 
 // We use these to control various global styles
 $body-bg: tint($primary-color, 95%);
