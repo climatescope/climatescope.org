@@ -31,6 +31,18 @@
       _self.sortReverse = !_self.sortReverse;
     };
     
+    this.checkSortClasses = function(field) {
+      if (_self.sortField != field) {
+        return 'sort-none';
+      }
+      if (_self.sortReverse === true) {
+        return 'sort-desc';
+      }
+      else {
+        return 'sort-asc';
+      }
+    };
+    
     this.calcBarSegment = function(param) {
       weight = param.weight != null ? param.weight : 0.25; 
       return ( param.value * weight * (100/5) ) + '%';
