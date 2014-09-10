@@ -66,6 +66,43 @@ a:active{
 
 }
 
+// Labels
+
+.label-grid {
+  display: inline-block;
+  padding: 0 0.125rem;
+  color: #fff;
+  font-weight: $brand-font-bold;
+  text-transform: uppercase;
+  @extend .antialiased;
+  font-family: $brand-font-family;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  font-style: normal;
+  border-radius: $global-rounded;
+  &:before {
+    @extend .icon-power;
+    font-size: 1rem;
+  }
+  span {
+    margin: 0 0.5rem 0 0;
+    .table & {
+      display: none;
+    }
+  }
+}
+
+.label-grid-on {
+  background: $secondary-color;
+}
+
+.label-grid-off {
+  background: tint($primary-color, 60%);
+  .table & {
+     @extend .visually-hidden;
+  }
+}
+
 // STRUCTURE
 
 #site-canvas {
@@ -246,10 +283,13 @@ a:active{
 .layout--page {
   &__header {
     &.sticky {
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
+      @media #{$medium-up} {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+      }
     }
   }
 }
