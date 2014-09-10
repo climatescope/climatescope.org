@@ -1,10 +1,10 @@
 (function(){
-  var app = angular.module('countryListApp', [], function($interpolateProvider) {
+  var app = angular.module('countryListApp', ['ui.bootstrap'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('//');
     $interpolateProvider.endSymbol('//');
   });
 
-  app.controller('CountryListController', ['$http', function($http) {
+  app.controller('CountryListController', ['$http',  function($http) {
     _self = this;
     // Data
     this.countries = [];

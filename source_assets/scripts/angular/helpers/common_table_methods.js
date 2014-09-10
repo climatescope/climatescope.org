@@ -41,6 +41,21 @@ function setupCommonTableMethods(scope) {
       default:
         return '';
       break;
-    }    
+    }
+  };
+  
+  scope.getTooltipContent = function(params) {
+    var t = '<dl>';
+    angular.forEach(params, function(param) {
+      t += '<dd>';
+      t += param.name;
+      t += '</dd>';
+      t += '<dt>';
+      t += param.value;
+      t += '</dt>';
+    });
+    t += '</dl>';
+    
+    return t;
   };
 };

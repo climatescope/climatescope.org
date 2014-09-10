@@ -38,10 +38,12 @@
         <td class="cell-country"><a href="//countryTable.getCountryUrl(country)//">//country.name//</a></td>
         <td>//country.score//</td>
         <td>
-          <ul class="table-bar">
-            <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//" class="bar-segment" tooltip-animation="false" tooltip-placement="top" tooltip="//param.value//" tooltip-append-to-body="true"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
-          </ul>
-        </td>
+          <a href="" tooltip-animation="false" tooltip-placement="top" tooltip-trigger="focus" tooltip-html-unsafe="//countryTable.getTooltipContent(country.parameters)//">
+            <ul class="table-bar">
+              <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//" class="bar-segment"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+            </ul>
+          </a>
+         </td>
         <td><em class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>//country.grid//</span></em></td>
       </tr>
 
@@ -73,9 +75,11 @@
               <td class="cell-country"><a href="//countryTable.getStateUrl(state)//">//state.name//</a></td>
               <td>//state.score//</td>
               <td>
-                <ul class="table-bar">
-                  <li ng-repeat="param in state.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
-                </ul>
+                <a href="" tooltip-animation="false" tooltip-placement="top" tooltip-trigger="focus" tooltip-html-unsafe="//countryTable.getTooltipContent(state.parameters)//">
+                  <ul class="table-bar">
+                    <li ng-repeat="param in state.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+                  </ul>
+                </a>
               </td>
               <td></td>
             </tr>
