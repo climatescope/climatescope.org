@@ -202,11 +202,13 @@ a:active{
 .layout--page {
   &__header {
     &.sticky {
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 900;
+      @media #{$medium-up} {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+      }
     }
   }
 }
