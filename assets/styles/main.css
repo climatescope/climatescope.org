@@ -3515,6 +3515,13 @@ path {
   pointer-events: none;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DER\/Documents\/2014\/08-climatescope\/source_assets\/styles\/_map\.scss}line{font-family:\00003142}}
+.bttn-group.map-country-toggle {
+  padding: 8px;
+  background: #fff;
+  border-radius: 0.25rem;
+}
+
 /* Functional styling;
  * These styles are required for noUiSlider to function.
  * You don't need to change these rules to apply your design.

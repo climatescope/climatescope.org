@@ -43,6 +43,10 @@ $(document).ready(function() {
 
         ].join(' ');
       })
+      // UI element for toggling the map
+      ,$countryFilter = $('<ul>', {
+        'class': 'leaflet-control bttn-group bttn-group-s bttn-list map-country-toggle'
+      })
       ,svg = d3.select(map.getPanes().overlayPane)
         .append('svg:svg')
         .call(tooltip)
@@ -68,11 +72,11 @@ $(document).ready(function() {
     ;
 
     queue()
-    //.defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
-    //.defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.json')
+    .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
+    .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.json')
 
-    .defer(d3.json, 'en/api/countries.topojson')
-    .defer(d3.json, 'en/api/countries.json')
+    //.defer(d3.json, 'en/api/countries.topojson')
+    //.defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
 
       land = topojson.feature(geography, geography.objects.countries).features;
@@ -104,25 +108,23 @@ $(document).ready(function() {
       land = filtered.sort(function(a, b) { return a.rank.overall_ranking - b.rank.overall_ranking });
       reset(), redraw(true, getSlice(land, visibleCountries));
 
-      // UI element for toggling the map
-      var $countryFilter = $('<div>', { 'class': 'leaflet-control map-country-toggle' })
-        .on('click', 'button', function(e) {
+      $countryFilter.on('click', 'button', function(e) {
 
-          var cls = e.currentTarget.className
-            ,toShow = countryFilter[cls.slice(cls.indexOf('show') + 5)];
+        var cls = e.currentTarget.className
+          ,toShow = countryFilter[cls.slice(cls.indexOf('show') + 5)];
 
-          if (visibleCountries === toShow) return;  // ignore if already showing
-          $countryFilter.find('.active-filter').removeClass('active-filter');
-          e.currentTarget.className = 'active-filter ' + cls;  // selection class
-          toZoom(visibleCountries = toShow);  // zoom to appropriate level
-          redraw(true, getSlice(land, visibleCountries));
-        })
+        if (visibleCountries === toShow) return;  // ignore if already showing
+        $countryFilter.find('.active').removeClass('active');
+        e.currentTarget.className = 'active ' + cls;  // selection class
+        toZoom(visibleCountries = toShow);  // zoom to appropriate level
+        redraw(true, getSlice(land, visibleCountries));
+      })
 
       // Creating each button, making top-ten the first active button
       $.each(countryFilter, function(key) {
-        var cls = 'btn btn-default show-' + key;
+        var cls = 'bttn bttn-default show-' + key;
         if (key === 'top-ten') {
-          cls = 'active-btn ' + cls;
+          cls = 'active ' + cls;
         }
         $('<button>', { 'type': 'button', 'class': cls, 'text': key.split('-').join(' ')})
           .appendTo($countryFilter);
@@ -221,6 +223,9 @@ $(document).ready(function() {
       if (visibleCountries === 0 && zoom < 4) {
         visibleCountries = 1;
         redraw(true, getSlice(land, visibleCountries));
+        $countryFilter.find('.active').removeClass('active');
+        var topTen = document.querySelectorAll('.show-top-ten')[0];
+        topTen.className = 'active ' + topTen.className;
       }
       else {
         redraw(false);

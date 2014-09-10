@@ -138,3 +138,9 @@ path {
   font-size: 16px;
   pointer-events: none;
 }
+
+.bttn-group.map-country-toggle {
+  padding: 8px;
+  background: #fff;
+  border-radius: $global-radius;
+}
