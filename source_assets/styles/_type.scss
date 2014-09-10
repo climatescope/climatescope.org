@@ -86,7 +86,6 @@
   @extend .icon;
   content: "\e62f";
 }
-
 .icon-sort-desc {
   @extend .icon;
   content: "\e630";
@@ -98,6 +97,14 @@
 .icon-sort {
   @extend .icon;
   content: "\e632";
+}
+.icon-lock {
+  @extend .icon;
+  content: "\e62d";
+}
+.icon-unlock {
+  @extend .icon;
+  content: "\e62e";
 }
 .icon-add {
   @extend .icon;
