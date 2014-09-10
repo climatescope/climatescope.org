@@ -2,6 +2,7 @@
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
+/* jshint unused: false */
 function debounce(func, wait, immediate) {
   var timeout;
   return function() {
@@ -13,4 +14,40 @@ function debounce(func, wait, immediate) {
     }, wait);
     if (immediate && !timeout) func.apply(context, args);
   };
-};
+}
+
+// Table row slideUp and slideDown.
+// This is not a general approach as it only works for the states
+// because you have two tr inside a tbody.
+(function($) {
+  $.fn.trSlideUp = function() {
+    return this.filter('tr').each(function() {
+      var _self = $(this);
+
+      _self.children("td").each(function() {
+        if ($(this).children("div.tr-slide-wrapper").length === 0) {
+          $(this).wrapInner("<div class='tr-slide-wrapper'></div>");
+        }
+        $(this).children("div.tr-slide-wrapper").slideUp(function() {
+          _self.hide();
+        });
+      });
+    });
+  };
+
+  $.fn.trSlideDown = function() {
+    return this.filter('tr').each(function() {
+      var _self = $(this);
+      _self.show();
+
+      _self.children("td").each(function() {
+        if ($(this).children("div.tr-slide-wrapper").length === 0) {
+          // If the wrapping is done before showing the data, the divs
+          // must be hidden.
+          $(this).wrapInner("<div class='tr-slide-wrapper' style='display: none'></div>");
+        }
+        $(this).children("div.tr-slide-wrapper").slideDown();
+      });
+    });
+  };
+})(jQuery);

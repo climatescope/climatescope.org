@@ -3,63 +3,74 @@
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
-<div ng-app="countryApp" ng-controller="CountryListController as countryTable" ng-cloak>
+<div ng-app="countryListApp" ng-controller="CountryListController as countryTable" ng-cloak>
   <table class="table country-table">
     <thead>
       <tr>
+        <th>&nbsp;</th>
         {% case language %}
         {% when 'en' %}
-        <th><a href="" ng-click="countryTable.setSort('overall_ranking')">Overall rank</a></th>
-        <th><a href="" ng-click="countryTable.setSort('name')">Country</a></th>
-        <th><a href="" ng-click="countryTable.setSort('score')">Overall score</a></th>
-        <th>0 - - 5</th>
-        <th><a href="" ng-click="countryTable.setSort('grid')">Grid</a></th>
+        <th><a href="" ng-click="countryTable.setSort('overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('overall_ranking')]">Rank</a></th>
+        <th><a href="" ng-click="countryTable.setSort('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">Country</a></th>
+        <th><a href="" ng-click="countryTable.setSort('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Score</a></th>
+        <th><span class="visually-hidden">Topics:</span> 0.0 - 5.0</th>
+        <th><a href="" ng-click="countryTable.setSort('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
         {% when 'es' %}
-        <th><a href="" ng-click="countryTable.setSort('overall_ranking')">Posición</a></th>
-        <th><a href="" ng-click="countryTable.setSort('name')">País</a></th>
-        <th><a href="" ng-click="countryTable.setSort('score')">Puntaje</a></th>
-        <th>0 - - 5</th>
-        <th><a href="" ng-click="countryTable.setSort('grid')">Grid</a></th>
+        <th><a href="" ng-click="countryTable.setSort('overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('overall_ranking')]">Posición</a></th>
+        <th><a href="" ng-click="countryTable.setSort('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
+        <th><a href="" ng-click="countryTable.setSort('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Puntaje</a></th>
+        <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
+        <th><a href="" ng-click="countryTable.setSort('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Red</a></th>
         {% endcase %}
       </tr>
     </thead>
     <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortField:countryTable.sortReverse">
       <tr>
-        <td>//country.overall_ranking//</td>
-        <td><a href="//countryTable.getCountryUrl(country)//">//country.name//</a></td>
+        <td>
+          {% case language %}
+          {% when 'en' %}
+          <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expand</span></a>
+          {% when 'es' %}
+          <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expandir</span></a>
+          {% endcase %}
+        </td>
+        <td class="cell-rank">//country.overall_ranking//</td>
+        <td class="cell-country"><a href="//countryTable.getCountryUrl(country)//">//country.name//</a></td>
         <td>//country.score//</td>
         <td>
           <ul class="table-bar">
             <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//" class="bar-segment" tooltip-animation="false" tooltip-placement="top" tooltip="//param.value//" tooltip-append-to-body="true"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
           </ul>
         </td>
-        <td>//country.grid//</td>
+        <td><em class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>//country.grid//</span></em></td>
       </tr>
 
-      <tr ng-if="country.states.length > 0" class="wrapper-row">
-        <td colspan="5">
+      <tr ng-if="country.states.length > 0" class="wrapper-row country-states" style="display: none">
+        <td colspan="6">
           <table class="table table-nested">
             <thead>
               <tr>
+                <th>&nbsp;</th>
                 {% case language %}
                 {% when 'en' %}
-                <th>Overall rank</th>
+                <th>Rank</th>
                 <th>Country</th>
-                <th>Overall score</th>
-                <th>0 - - 5</th>
+                <th>Score</th>
+                <th><span class="visually-hidden">Topics:</span> 0.0 - 5.0</th>
                 <th></th>
                 {% when 'es' %}
                 <th>Posición</th>
                 <th>País</th>
                 <th>Puntaje</th>
-                <th>0 - - 5</th>
+                <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
                 <th></th>
                 {% endcase %}
               </tr>
             </thead>
-            <tr ng-repeat="state in country.states | orderBy:'state_ranking'">
-              <td>//state.state_ranking//</td>
-              <td>//state.name//</td>
+            <tr ng-repeat="state in country.states | orderBy:'score':true">
+              <td>&nbsp;</td>
+              <td class="cell-rank">//state.state_ranking//</td>
+              <td class="cell-country"><a href="//countryTable.getStateUrl(state)//">//state.name//</a></td>
               <td>//state.score//</td>
               <td>
                 <ul class="table-bar">

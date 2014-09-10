@@ -4,31 +4,14 @@ title : Global
 id: index
 lang: en
 ---
-<article class="layout--home">
+<section class="layout--home">
   <header class="layout--home__header sticky" id="parameters-controls">
     <div class="row--contained">
       <div class="layout--home__heading">
         <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
       </div>
       <div class="layout--home__tools">
-        <div id="vis-controls">
-          <div class="control">
-            <h3>Enabling framework</h3>
-            <input id="param-01" type="range" />
-          </div>
-          <div class="control">
-            <h3>Financing & Investment</h3>
-            <input id="param-02" type="range" />
-          </div>
-          <div class="control">
-            <h3>Value Chains</h3>
-            <input id="param-03" type="range" />
-          </div>
-          <div class="control">
-            <h3>GHG Management</h3>
-            <input id="param-04" type="range" />
-          </div>
-        </div>
+        {% include weight_changers.html %}
       </div>
     </div>
   </header>
@@ -39,17 +22,10 @@ lang: en
     </div>
     
     <div class="row--contained">
-      <script>    
-        // Country index to retrieve the url.
-        CS.countryIndex = {
-          {% for country in site.en_country %}
-            "{{country.id}}":"{{site.domain}}{{country.url}}",
-          {% endfor %}
-        };
-      </script>
+      {% include country_state_index.html %}
       
       {% include country_table.html %}
     </div>
   </div>
 
-</article>
+</section>

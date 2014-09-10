@@ -52,7 +52,11 @@ module.exports = function(grunt) {
       },
       prod: {
         files: {
-          './assets/scripts/main.min.js': ['source_assets/scripts/*.js', 'source_assets/scripts/angular/**/*.js'],
+          './assets/scripts/main.min.js': [
+            'source_assets/scripts/*.js',
+            'source_assets/scripts/angular/**/*.js',
+            'source_assets/vendor/noUiSlider/jquery.nouislider.min.js',
+           ],
           
           './assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js': ['source_assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'],
           './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
