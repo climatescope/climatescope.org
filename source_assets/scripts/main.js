@@ -1,4 +1,5 @@
 $(function() {
+  /*
   $('#section-switch a').click(function(e) {
     e.preventDefault();
     
@@ -13,7 +14,7 @@ $(function() {
     var dest = $(this).attr('href');
     $(dest).removeClass('hidden');
   });
-  
+  */
   
   $('[data-toggle="dropdown"]').click(function(e) {
     e.preventDefault();
