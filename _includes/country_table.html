@@ -21,7 +21,7 @@
         <th><a href="" ng-click="countryTable.setSort('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
         <th><a href="" ng-click="countryTable.setSort('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Puntaje</a></th>
         <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
-        <th><a href="" ng-click="countryTable.setSort('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
+        <th><a href="" ng-click="countryTable.setSort('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Red</a></th>
         {% endcase %}
       </tr>
     </thead>
@@ -30,9 +30,9 @@
         <td>
           {% case language %}
           {% when 'en' %}
-          <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hiddens">Expand</span></a>
+          <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expand</span></a>
           {% when 'es' %}
-          <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hiddens">Expandir</span></a>
+          <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expandir</span></a>
           {% endcase %}
         </td>
         <td class="cell-rank">//country.overall_ranking//</td>
@@ -43,7 +43,7 @@
             <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
           </ul>
         </td>
-        <td>//country.grid//</td>
+        <td><em class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>//country.grid//</span></em></td>
       </tr>
 
       <tr ng-if="country.states.length > 0" class="wrapper-row country-states" style="display: none">
@@ -54,16 +54,16 @@
                 <th>&nbsp;</th>
                 {% case language %}
                 {% when 'en' %}
-                <th>Overall rank</th>
+                <th>Rank</th>
                 <th>Country</th>
-                <th>Overall score</th>
-                <th>0 - - 5</th>
+                <th>Score</th>
+                <th><span class="visually-hidden">Topics:</span> 0.0 - 5.0</th>
                 <th></th>
                 {% when 'es' %}
                 <th>Posición</th>
                 <th>País</th>
                 <th>Puntaje</th>
-                <th>0 - - 5</th>
+                <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
                 <th></th>
                 {% endcase %}
               </tr>
