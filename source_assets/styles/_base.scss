@@ -401,7 +401,6 @@ a:active{
   margin-bottom: 2rem;
 }
 
-
 // SITE FOOTER
 
 #comp-nav {
@@ -482,3 +481,20 @@ a:active{
     float: right;
   }
 }
+
+// MODALS
+
+// Welcome
+#welcome {
+  .modal__inner {
+    color: #fff;
+    @extend .antialiased;
+    background: tint($primary-color, 20%) url(../images/layout/cover-img.jpg) no-repeat center bottom;
+    background-size: cover;
+  }
+  .modal__body {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
