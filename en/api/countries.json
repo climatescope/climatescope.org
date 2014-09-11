@@ -90,7 +90,7 @@
         "score": 2.75,
         "states": [
             {
-                    "iso": "cn-1",
+                    "iso": "cn-35",
                     "name": "China 1",
                     "state_ranking": 1,
                     "score": 1.86,
@@ -126,7 +126,7 @@
                     ]
                 },
                 {
-                    "iso": "cn-2",
+                    "iso": "cn-62",
                     "name": "China 2",
                     "state_ranking": 2,
                     "score": 1.4,

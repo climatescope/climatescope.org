@@ -1,0 +1,30 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
+<script>    
+  {% case language %}
+  {% when 'en' %}
+    {% assign country_col = 'en_country' %}
+    {% assign state_col = 'en_state' %}
+  {% when 'es' %}
+    {% assign country_col = 'es_country' %}
+    {% assign state_col = 'es_state' %}
+  {% endcase %}
+  
+  // Country index to retrieve the url.
+  CS.countryIndex = {
+    {% for country in site[country_col] %}
+      "{{country.id}}":"{{site.domain}}{{country.url}}",
+    {% endfor %}
+  };
+  
+  // State index to retrieve the url.
+  CS.stateIndex = {
+    {% for state in site[state_col] %}
+      "{{state.id}}":"{{site.domain}}{{state.url}}",
+    {% endfor %}
+  };
+</script>

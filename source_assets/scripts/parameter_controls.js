@@ -22,7 +22,7 @@ $(document).ready(function() {
   
   check_sticky();
   
-  var appElement = document.querySelector('[ng-app=countryApp]');
+  var appElement = document.querySelector('[ng-app=countryListApp]');
   var countryAppScope = angular.element(appElement).scope();
   // Slider group for homepage.
   $('.slider-group').sliderGroup({

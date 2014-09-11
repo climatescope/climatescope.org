@@ -4,7 +4,7 @@
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
 
-<div ng-app="countryApp" ng-controller="CountryListController as countryTable" ng-cloak>
+<div ng-app="countryListApp" ng-controller="CountryListController as countryTable" ng-cloak>
   <table class="table country-table">
     <thead>
       <tr>
@@ -71,7 +71,7 @@
             <tr ng-repeat="state in country.states | orderBy:'score':true">
               <td>&nbsp;</td>
               <td class="cell-rank">//state.state_ranking//</td>
-              <td class="cell-country">//state.name//</td>
+              <td class="cell-country"><a href="//countryTable.getStateUrl(state)//">//state.name//</a></td>
               <td>//state.score//</td>
               <td>
                 <ul class="table-bar">

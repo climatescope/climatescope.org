@@ -1,88 +1,96 @@
 (function(){
-  var app = angular.module('countryApp', [], function($interpolateProvider) {
+  var app = angular.module('countryApp', ['ngRoute', 'countryAppControllers'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('//');
     $interpolateProvider.endSymbol('//');
   });
-
-  app.controller('CountryListController', ['$http', function($http) {
-    _self = this;
-    // Data
-    this.countries = [];
-
-    // Sort related.
-    this.sortField = 'score';
-    this.sortReverse = true;
-
-    // Helper function.
-    var getRequestUrl = function(regionId) {
-      regionId = regionId || null;
-
-      if (regionId == null) {
-        return CS.domain + '/' + CS.lang + '/api/countries.json';
+  
+  app.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.when('/details', {
+        templateUrl: 'in_detail.html',
+        controller: 'DetailsTabController',
+        controllerAs: 'detailsCtrl',
+        activeTab: 'details'
+      })
+      .when('/states', {
+        templateUrl: 'states.html',
+        controller: 'StatesTabController',
+        controllerAs: 'statesCtrl',
+        activeTab: 'states'
+      })
+      .when('/case-study', {
+        templateUrl: 'case_study.html',
+        controller: 'CaseStudyTabController',
+        controllerAs: 'caseStudyCtrl',
+        activeTab: 'case_study'
+      })
+      .otherwise({
+        redirectTo: '/details'
+      });
+  }]);
+  
+  // Service to provide data. Uses a simple cache to avoid making
+  // several requests.
+  app.factory('CountryData', ['$http', function($http) {
+    var cache;
+    this.get = function(cb) {
+      if (cache) {
+        cb(cache);
       }
       else {
-        return CS.domain + '/' + CS.lang + '/api/regions/' + regionId + '.json';
+        var url = CS.domain + '/' + CS.lang + '/api/countries/' + CS.countryId + '.json';
+        $http.get(url).success(function(data) {
+          cache = data;
+          cb(data);
+        });
       }
     };
+    return this;
+  }]);
+  
+  
+  // Module
+  var countryAppControllers = angular.module('countryAppControllers', []);  
+  
+  // Controller for the navigation to activate the right tab.
+  countryAppControllers.controller('CountryTabsController', ['$http', '$route', function($http, $route) {
+    this.isActive = function(name) {
+      return ($route.current) ? $route.current.activeTab == name : false;
+    };
+  }]);
+  
+  // Controller for the DETAILS TAB
+  countryAppControllers.controller('DetailsTabController', ['$http', '$route', function($http, $route) {
+    // code;
+  }]);
+  
+  // Controller for the STATES TAB
+  countryAppControllers.controller('StatesTabController', ['$http', '$route', '$location', 'CountryData', function($http, $route, $location, CountryData) {
+    _self = this;
+    
+    // If there are no states for the country redirect.
+    if (!CS.countryHasStates) {
+      $location.path('/details');
+    }
+    
+    // Data
+    this.states = [];
 
-    // Helper function used in html.
-    this.setSort = function(field) {
-      _self.sortField = field;
-      _self.sortReverse = !_self.sortReverse;
+    setupCommonTableMethods(_self);
+    
+    this.getStateUrl = function(state) {
+      var iso = state.iso.toLowerCase();
+      return _self.getTranslatedUrl('state', iso);
     };
     
-    this.checkSortClasses = function(field) {
-      if (_self.sortField != field) {
-        return 'sort-none';
-      }
-      if (_self.sortReverse === true) {
-        return 'sort-desc';
-      }
-      else {
-        return 'sort-asc';
-      }
-    };
-
-    this.calcBarSegment = function(param) {
-      weight = param.weight != null ? param.weight : 0.25; 
-      return ( param.value * weight * (100/5) ) + '%';
-    };
-
-    this.getCountryUrl = function(country) {
-      if (CS.countryIndex) {
-        var iso = country.iso.toLowerCase();
-        return CS.countryIndex[iso];
-      }
-      else {
-        return '';
-      }
-    };
-
-    this.toggleStates = function($event) {
-      var tbody = jQuery($event.target).closest('tbody');
-      var statesRow = tbody.find('.country-states');
-      if (statesRow.is(':hidden')) {
-        tbody.addClass('open');
-        statesRow.trSlideDown();
-      }
-      else {
-        tbody.removeClass('open');
-        statesRow.trSlideUp();
-      }
-    };
-
-    // ---- Logic ----
-
-    if (CS.regionId) {
-      $http.get(getRequestUrl(CS.regionId)).success(function(data) {
-        _self.countries = data.countries;
-      });
-    }
-    else {
-      $http.get(getRequestUrl()).success(function(data) {
-        _self.countries = data;
-      });
-    }
-
+    CountryData.get(function(data) {
+      _self.states = data.states;
+    });
+    
   }]);
+  
+  // Controller for the CASE STUDY TAB
+  countryAppControllers.controller('CaseStudyTabController', ['$http', '$route', function($http, $route) {
+    // code;
+  }]);
+  
 })();

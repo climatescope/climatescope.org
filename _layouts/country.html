@@ -1,6 +1,31 @@
 ---
 layout: entry
 ---
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
+{% case site.collections[page.collection].lang %}
+  {% when 'en' %}
+    {% assign col = 'en_state' %}
+  {% when 'es' %}
+    {% assign col = 'es_state' %}
+{% endcase %}
+
+{% assign has_states = false %}
+{% for state in site[col] %}
+  {% if state.country == page.id %}
+    {% assign has_states = true %}
+  {% endif %}
+{% endfor %}
+
+<script>
+    CS.countryId = '{{page.id}}';
+    CS.countryHasStates = {{has_states}};
+</script>
+
 <div class="row--full map">
   <p>Insert map here.</p>
 </div>
@@ -27,65 +52,69 @@ layout: entry
 
 </div>
 
-<div class="row--contained">
-
-  {% case site.collections[page.collection].lang %}
-    {% when 'en' %}
-      {% assign col = 'en_state' %}
-    {% when 'es' %}
-      {% assign col = 'es_state' %}
-  {% endcase %}
-
-  {% for state in site[col] %}
-    {% if state.country == page.id %}
-      {% assign has_states = true %}
-    {% endif %}
-  {% endfor %}
-
-  <ul class="nav nav-tabs" role="tablist" id="section-switch">
-    <li class="active"><a href="#country-detail">In detail</a></li>
-    {% if has_states %}
-    <li><a href="#country-states">States/Provinces</a></li>
-    {% endif %}
-    <li><a href="#country-case-study">Case study</a></li>
-  </ul>
-
-  <section id="country-detail" class="tab-content">
-    <h1 class="visually-hidden">In Detail</h1>
-    {% include poc_country-table.html %}
-  </section>
-
-  {% if has_states %}
-    <section id="country-states" class="tab-content hidden">
-      <h1 class="visually-hidden">States/Provinces</h1>
-      <div class="prose">
-
-          {% case site.collections[page.collection].lang %}
+<div class="row--contained" ng-app="countryApp">
+  
+  <!-- Template for the In Detail tab -->
+  <script type="text/ng-template" id="in_detail.html">
+    <section id="country-detail">
+      <h1 class="visually-hidden">In Detail</h1>
+      {% include poc_country-table.html %}
+    </section>
+  </script>
+  
+  <!-- Template for the States tab -->
+  <script type="text/ng-template" id="states.html">
+    <table class="table country-table">
+      <thead>
+        <tr>
+          {% case language %}
           {% when 'en' %}
-            <p>States/Provinces EN content</p>
+          <th><a href="" ng-click="statesCtrl.setSort('state_ranking')" class="sort" ng-class="[statesCtrl.checkSortClasses('state_ranking')]">Rank</a></th>
+          <th><a href="" ng-click="statesCtrl.setSort('name')" class="sort" ng-class="[statesCtrl.checkSortClasses('name')]">State</a></th>
+          <th><a href="" ng-click="statesCtrl.setSort('score')" class="sort" ng-class="[statesCtrl.checkSortClasses('score')]">Score</a></th>
+          <th><span class="visually-hidden">Topics:</span> 0.0 - 5.0</th>
           {% when 'es' %}
-            <p>States/Provinces ES content</p>
+          <th><a href="" ng-click="statesCtrl.setSort('state_ranking')" class="sort" ng-class="[statesCtrl.checkSortClasses('state_ranking')]">Posición</a></th>
+          <th><a href="" ng-click="statesCtrl.setSort('name')" class="sort" ng-class="[statesCtrl.checkSortClasses('name')]">Estado</a></th>
+          <th><a href="" ng-click="statesCtrl.setSort('score')" class="sort" ng-class="[statesCtrl.checkSortClasses('score')]">Puntaje</a></th>
+          <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
           {% endcase %}
-
-          <ul>
-          {% for state in site[col] %}
-            {% if state.country == page.id %}
-            <li>
-              <a href="{{site.domain}}{{ state.url }}">{{ state.title }}</a>
-            </li>
-            {% endif %}
-          {% endfor %}
-          </ul>
-
+        </tr>
+      </thead>
+      <tbody ng-repeat="state in statesCtrl.states | orderBy:statesCtrl.sortField:statesCtrl.sortReverse">
+        <tr>
+          <td class="cell-rank">//state.state_ranking//</td>
+          <td class="cell-country"><a href="//statesCtrl.getStateUrl(state)//">//state.name//</a></td>
+          <td>//state.score//</td>
+          <td>
+            <ul class="table-bar">
+              <li ng-repeat="param in state.parameters" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </script>
+  
+  <!-- Template for the Case Study tab -->
+  <script type="text/ng-template" id="case_study.html">
+    <section id="country-case-study">
+      <h1 class="visually-hidden">Case Study</h1>
+      <div class="prose">
+        <p>Case Study content</p>
       </div>
     </section>
-  {% endif %}
-
-  <section id="country-case-study" class="tab-content hidden">
-    <h1 class="visually-hidden">Case Study</h1>
-    <div class="prose">
-      <p>Case Study content</p>
-    </div>
-  </section>
+  </script>
+  
+  <!-- END TEMPLATES -->
+  
+  <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="CountryTabsController as navCtrl">
+    <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details">In detail</a></li>
+    {% if has_states %}
+    <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states">States/Provinces</a></li>
+    {% endif %}
+    <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study">Case study</a></li>
+  </ul>
+  <div ng-view></div>
 
 </div>
