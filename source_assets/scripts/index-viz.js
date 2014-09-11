@@ -75,8 +75,8 @@ $(document).ready(function() {
     .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
     .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.json')
 
-    //.defer(d3.json, 'en/api/countries.topojson')
-    //.defer(d3.json, 'en/api/countries.json')
+    // .defer(d3.json, 'en/api/countries.topojson')
+    // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
 
       land = topojson.feature(geography, geography.objects.countries).features;
@@ -101,15 +101,16 @@ $(document).ready(function() {
         iso = land[i].id;
         if (lookup[iso] !== undef) {
           land[i].rank = indicators[lookup[iso]];
+          land[i].d = land[i].rank.overall_ranking;
           filtered.push(land[i]);
         }
       }
 
-      land = filtered.sort(function(a, b) { return a.rank.overall_ranking - b.rank.overall_ranking });
-      reset(), redraw(true, getSlice(land, visibleCountries));
+      land = filtered.sort(function(a, b) { return a.d - b.d });
+      reset(), redraw();
 
+      // creating the country filter
       $countryFilter.on('click', 'button', function(e) {
-
         var cls = e.currentTarget.className
           ,toShow = countryFilter[cls.slice(cls.indexOf('show') + 5)];
 
@@ -117,9 +118,8 @@ $(document).ready(function() {
         $countryFilter.find('.active').removeClass('active');
         e.currentTarget.className = 'active ' + cls;  // selection class
         toZoom(visibleCountries = toShow);  // zoom to appropriate level
-        redraw(true, getSlice(land, visibleCountries));
+        redraw();
       })
-
       // Creating each button, making top-ten the first active button
       $.each(countryFilter, function(key) {
         var cls = 'bttn bttn-default show-' + key;
@@ -129,15 +129,8 @@ $(document).ready(function() {
         $('<button>', { 'type': 'button', 'class': cls, 'text': key.split('-').join(' ')})
           .appendTo($countryFilter);
       });
-
       $countryFilter.appendTo($('.leaflet-bottom.leaflet-left'));
     });
-
-    function getSlice(land, visibleCountries) {
-      return visibleCountries === 0 ?
-        land : visibleCountries === -1 ?
-        land.slice(-10) : land.slice(0, 10);
-    }
 
     function reset() {
       var bounds = path.bounds({type: 'FeatureCollection', features: land})
@@ -154,58 +147,56 @@ $(document).ready(function() {
       g.attr('transform', 'translate(' + transform[0] + ',' + transform[1] + ')');
     }
 
-    function redraw(reset, data) {
-      if (reset) {
-        // radius.domain([data[data.length-1].rank.score, data[0].rank.score]);
+    function getSlice(land, visibleCountries) {
+      return visibleCountries === 0 ?
+        land : visibleCountries === -1 ?
+        land.slice(-10) : land.slice(0, 10);
+    }
 
-        g.selectAll('.rank-marker').remove();
-        markers = g.selectAll('.rank-marker')
-          .data(data)
-        .enter().append('g')
-          .attr('class', 'rank-marker')
-          .style('opacity', 0)
-          .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
-        ;
+    function redraw() {
+      // radius.domain([data[data.length-1].rank.score, data[0].rank.score]);
+      var data = getSlice(land, visibleCountries);
+      g.selectAll('.rank-marker').remove();
+      markers = g.selectAll('.rank-marker')
+        .data(data)
+      .enter().append('g')
+        .attr('class', 'rank-marker')
+        .style('opacity', 0)
+        .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
+      ;
 
-        var circles = markers.append('circle')
-          .attr('r', 16)
-          .on('mouseover', function(d) {
-            if (!clicked) { tooltip.show(d); }
-          })
-          .on('mouseout', function() {
-            if (!clicked) { tooltip.hide(); }
-          })
-          .on('click', function(d) {
-            clicked = true, tooltip.show(d);
+      var circles = markers.append('circle')
+        .attr('r', 16)
+        .on('mouseover', function(d) {
+          if (!clicked) { tooltip.show(d); }
+        })
+        .on('mouseout', function() {
+          if (!clicked) { tooltip.hide(); }
+        })
+        .on('click', function(d) {
+          clicked = true, tooltip.show(d);
+          // close tooltip on next click, unless it's on another circle el
+          window.setTimeout(function() {
+            $(document).one('click', function(e) {
+              if (e.target.localName !== 'circle') {
+                clicked = false, tooltip.hide();
+              }
+            });
+          }, 100);
+        })
+      ;
 
-            // close tooltip on next click, unless it's on another circle el
-            window.setTimeout(function() {
-              $(document).one('click', function(e) {
-                if (e.target.localName !== 'circle') {
-                  clicked = false, tooltip.hide();
-                }
-              });
-            }, 100);
-          })
-        ;
+      markers.append('text')
+        .attr('dy', '6px')
+        .text(function(d) { return d.d < 10 ?
+              '0' + d.d : d.d  })
+      ;
 
-        markers.append('text')
-          .attr('dy', '6px')
-          .text(function(d) { return d.rank.overall_ranking < 10 ?
-                '0' + d.rank.overall_ranking : d.rank.overall_ranking; })
-        ;
-
-        markers.transition()
-          .delay(function(d, i) { return 200 + i * 20 })
-          .duration(200)
-          .style('opacity', 1)
-        ;
-      }
-
-      else {
-        markers
-          .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
-      }
+      markers.transition()
+        .delay(function(d, i) { return 200 + i * 20 })
+        .duration(200)
+        .style('opacity', 1)
+      ;
     }
 
     function toZoom(visibleCountries) {
@@ -220,17 +211,39 @@ $(document).ready(function() {
     map.on('viewreset', function() {
       reset();
       zoom = map.getZoom();
+
+      // zoomed too far out on all-countries filter, force redraw to top ten
       if (visibleCountries === 0 && zoom < 4) {
         visibleCountries = 1;
-        redraw(true, getSlice(land, visibleCountries));
+        redraw();
         $countryFilter.find('.active').removeClass('active');
         var topTen = document.querySelectorAll('.show-top-ten')[0];
         topTen.className = 'active ' + topTen.className;
       }
+
+      // just need to re-translate the centroids
       else {
-        redraw(false);
+        markers
+          .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
       }
     });
+
+    // listening for weight changer changes
+    var updateSliders = debounce(function(e, weight) {
+      for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
+        d = land[i].rank.parameters;
+
+        land[i].rank.score = (Math.round(weight['1'] * d[0].value + weight['2'] * d[1].value
+          + weight['3'] * d[2].value + weight['4'] * d[3].value)) / 100;
+
+      }
+      land = land.sort(function(a, b) { return b.rank.score - a.rank.score });
+      for(i = 0; i < ii; ++i) {
+        land[i].d = land[i].rank.overall_ranking = i + 1;
+      }
+      redraw();
+    }, 100, false);
+    $('.slider-group').on('update-sliders', updateSliders);
   };
 
 
