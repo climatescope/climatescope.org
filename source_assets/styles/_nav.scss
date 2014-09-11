@@ -26,12 +26,13 @@
   }
   > li > a {
     color: inherit;
-    font-weight: bold;
+    font-weight: $brand-font-bold;
     text-transform: uppercase;
+    font-family: $brand-font-family;
     margin-right: 4px;
     border: 2px solid transparent;
     border-radius: $global-radius $global-radius 0 0;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
   }
   > li.active > a,
   > li.active > a:hover,
