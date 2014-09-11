@@ -70,7 +70,13 @@ module.exports = function(grunt) {
     copy: {
       main: {
         files: [
-          {src: ['source_assets/scripts/vendor/boxsizing.htc'], dest: './assets/scripts/vendor/boxsizing.htc'}
+          {src: ['source_assets/scripts/vendor/boxsizing.htc'], dest: './assets/scripts/vendor/boxsizing.htc'},
+          {
+            expand: true,
+            cwd: 'source_assets/vendor/mapbox/images/',
+            src: ['*.{png,svg,jpg}'],
+            dest: './assets/styles/images/'
+          },
         ]
       },
       jekyll_css: {
