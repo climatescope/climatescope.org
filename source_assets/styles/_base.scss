@@ -276,8 +276,6 @@ a:active{
   }
 }
 
-
-
 .layout--home,
 .layout--entry,
 .layout--page {
@@ -312,15 +310,35 @@ a:active{
 .layout--page {
 
   &__heading {
-    @include col(8/12);
+    @include col(6/12);
+    position: relative;
+    @media #{$large-up} {
+      @include col(8/12);
+    }
   }
 
   &__tools {
-    @include col(4/12);
+    @include col(6/12);
+    margin: 0.125rem 0;
+    @media #{$small-up} {
+      margin: 0.25rem 0;
+    }
+    @media #{$large-up} {
+      @include col(4/12);
+    }
+  }
+  
+  &__title {
+    @extend .hd-xl;
+    margin-bottom: 0;
   }
 
-  &__title,
   &__subtitle {
+    position: absolute;
+    top: -1.25rem;
+    left: 0;
+    z-index: 10;
+    @extend .hd-label;
     margin-bottom: 0;
   }
 
@@ -331,6 +349,12 @@ a:active{
     }
   }
 
+}
+
+.layout--entry {
+  &__header {
+    padding-top: 3rem;
+  }
 }
 
 // LAYOUT: POLICIES
@@ -365,6 +389,9 @@ a:active{
   > li {
     margin: 0 0 0 0.5rem;
     float: left;
+  }
+  > li:first-child {
+    margin-left: 0;
   }
 }
 
