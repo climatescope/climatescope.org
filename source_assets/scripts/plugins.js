@@ -24,7 +24,7 @@ $(function() {
       }
     });
 
-    $('.modal .dismiss').click(function(e) {
+    $('[data-modal-dismiss]').click(function(e) {
         e.preventDefault();
         $(this).closest('.modal').removeClass('revealed');
     });

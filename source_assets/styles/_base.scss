@@ -477,6 +477,7 @@ a:active{
   font-family: $brand-font-family;
   color: tint($primary-color, 60%);
   margin-bottom: 0;
+  font-size: 0.85rem;
   @media #{$xlarge-up} {
     float: right;
   }
@@ -491,6 +492,10 @@ a:active{
     @extend .antialiased;
     background: tint($primary-color, 20%) url(../images/layout/cover-img.jpg) no-repeat center bottom;
     background-size: cover;
+  }
+  .modal__title a em {
+    font-style: normal;
+    color: #fff;
   }
   .modal__body {
     font-size: 1.25rem;

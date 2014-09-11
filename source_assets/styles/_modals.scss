@@ -99,7 +99,7 @@
   &__title {
     @extend .hd-l;
   }
-  .dismiss {
+  .close {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -115,5 +115,13 @@
     &:before {
       @extend .icon-s-cancel;
     }
+  }
+  &__body {
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__footer {
+    margin-top: 2rem;
   }
 }
