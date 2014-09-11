@@ -122,6 +122,24 @@ input[type=submit] {
   min-height: 2.75rem;
 }
 
+// ICONS
+
+.bttn {
+  &:after {
+    margin-left: 0.25rem;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    font-size: 1rem;
+  }
+  &.go:after {
+    @extend .icon-s-arr-right;
+  }
+  &:before {
+    margin-right: 0.25rem;
+    font-size: 1rem;
+  }
+}
+
 // GROUP
 
 .bttn-group {

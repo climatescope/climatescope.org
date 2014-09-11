@@ -144,13 +144,14 @@
   list-style-type: none;
   overflow: auto;
   border-radius: $global-radius;
-  height: 1.5rem;
+  height: 1.25rem;
   background: tint($primary-color, 95%);
   padding: 0;
-  margin: 0;
+  margin: 0.125rem 0;
 
   li {
     float: left;
+    height: 100%;
   }
 
   > li:first-child {
@@ -162,19 +163,19 @@
   }
 
   li:nth-child(1) {
-    background-color: #62a60a;
+    background-color: $infograph-color-a;
   }
 
   li:nth-child(2) {
-    background-color: #009382;
+    background-color: $infograph-color-b;
   }
 
   li:nth-child(3) {
-    background-color: #635d9b;
+    background-color: $infograph-color-c;
   }
 
   li:nth-child(4) {
-    background-color: #008fbe;
+    background-color: $infograph-color-d;
   }
 }
 
