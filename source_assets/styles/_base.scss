@@ -90,6 +90,9 @@ a:active{
       display: none;
     }
   }
+  .layout--entry__heading & {
+    margin-left: 0.5rem;
+  }
 }
 
 .label-grid-on {
@@ -354,6 +357,9 @@ a:active{
 .layout--entry {
   &__header {
     padding-top: 3rem;
+  }
+  &__title {
+    float: left;
   }
 }
 
