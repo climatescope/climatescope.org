@@ -2,61 +2,63 @@
   
   <!-- Template for the policy hub -->
   <script type="text/ng-template" id="policy_list.html">
-  <header class="layout--policies__header">
+  <header class="layout--policies__header" ng-controller="policyFiltersController as filterCtrl">
     <div class="row--contained">
       <div class="layout--policies__heading">
-        <h1 class="layout--policies__title">{{ page.title }}</h1>
+        <h1 class="layout--policies__title">Policies</h1>
+        <a href="" class="reset" title="Reset filters" ng-click="filterCtrl.disableFilters()"><span>Reset</span></a>
       </div>
-      <div class="layout--policies__tools" ng-controller="policyFiltersController as filterCtrl">
-        <div>
-          //filterCtrl.filters | json//
-        </div>
-        <div ng-show="filterCtrl.filtersEnabled == true">Filters are enabled. <a href="" ng-click="filterCtrl.disableFilters()">disable</a></div>
+      <div class="layout--policies__tools"></div>
+      
+      <div class="layout--policies__controls">
         
-        <label for="policy_country">
-          Country:
+        <div class="control">
+          <label for="policy_country">Country:</label>
           <select id="policy_country" name="policy_country" ng-model="filterCtrl.filters.country" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.country)" ng-change="filterCtrl.filters.state = null">
             <option value="">-- Any --</option>
           </select>
-        </label>
+        </div>
         
-        <label for="policy_state">
-          State:
+        <div class="control">
+          <label for="policy_state">State:</label>
           <select id="policy_state" name="policy_state" ng-model="filterCtrl.filters.state" ng-options="value.id as value.name for value in filterCtrl.getSelectOptsState(filterCtrl.filterData.state)" ng-disabled="!filterCtrl.getSelectOptsState(filterCtrl.filterData.state).length">
             <option value="">-- Any --</option>
           </select>
-        </label>
-
-        <label for="policy_status">
-          Status:
+        </div>
+          
+        <div class="control">
+          <label for="policy_status">Status:</label>
           <select id="policy_status" name="policy_status" ng-model="filterCtrl.filters.status" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.status)">
             <option value="">-- Any --</option>
           </select>
-        </label>
+        </div>
         
-        <!-- <label for="policy_subsector">
-          subsector:
+        <div class="control">
+          <button ng-click="filterCtrl.apply()" class="bttn bttn-default">Apply</button>
+        </div>
+        
+        <!-- <div class="control">
+          <label for="policy_subsector">Subsector:</label>
           <select id="policy_subsector" name="policy_subsector" ng-model="filterCtrl.filters.subsector" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.subsector)">
             <option value="">-- Any --</option>
           </select>
-        </label> -->
+        </div> -->
         
-        <button ng-click="filterCtrl.apply()">Apply</button>
-
       </div>
+      
     </div>
   </header>
 
   <div class="layout--policies__body">
     <div class="row--contained" ng-controller="policyTableController as tableCtrl">
       
-      <table class="table" ng-show="tableCtrl.policies.length > 0">
+      <table class="table" ng-show="tableCtrl.policies.length > 0" ng-if="!tableCtrl.loadingData">
         <thead>
           <tr>
-            <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">Policy Name</a></th>
-            <th><a href="" ng-click="sortField = 'country[0].name'; sortReverse = !sortReverse">Country</a></th>
-            <th><a href="" ng-click="sortField = 'type.mechanism[0].name'; sortReverse = !sortReverse">Policy Mechanism</a></th>
-            <th><a href="" ng-click="sortField = 'status.name'; sortReverse = !sortReverse">Status</a></th>
+            <th>Policy Name</th>
+            <th>Country</th>
+            <th>Policy Mechanism</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -69,7 +71,11 @@
         </tbody>
       </table>
       
-      <div ng-show="tableCtrl.policies.length == 0">No results</div>
+      <div ng-show="tableCtrl.policies.length == 0" ng-if="!tableCtrl.loadingData">No results avaliable with current filters.</div>
+      
+      <div ng-if="tableCtrl.loadingData">
+        Loading data... Please wait.
+      </div>
       
     </div>
   </div>
@@ -77,7 +83,7 @@
   
   <!-- Template for the policy -->
   <script type="text/ng-template" id="policy.html">
-    <header class="layout--policies__header" ng-if="policyCtrl.policy.name">
+    <header class="layout--policies__header" ng-if="!policyCtrl.loadingData">
       <div class="row--contained">
         <div class="layout--policies__heading">
           <h1 class="layout--policies__title">//policyCtrl.policy.name//</h1>
@@ -85,8 +91,8 @@
       </div>
     </header>
 
-    <div class="layout--policies__body" ng-if="policyCtrl.policy.name">
-      <div class="row--contained">
+    <div class="layout--policies__body">
+      <div class="row--contained" ng-if="!policyCtrl.loadingData">
         <div class="col--main">
           <section>
             <h1>Overview</h1>
@@ -143,7 +149,13 @@
         </div>
         
       </div>
+      
+      <div class="row--contained" ng-if="policyCtrl.loadingData">
+        Loading data... Please wait.
+      </div>
+        
     </div>
+    
   </script>
   
   <div ng-view></div>

@@ -223,6 +223,7 @@ a:active{
 
 }
 
+.layout--policies__heading,
 #vis-controls {
   .prime-title {
     @extend .hd-xxs;
@@ -353,7 +354,36 @@ a:active{
       @extend .hd-xxs;
     }
   }
-
+  
+  &__heading {
+    .layout--policies__title {
+      float: left;
+    }
+    .reset {
+      margin-top: 0.5rem;
+    }
+  }
+  
+  &__controls {
+    .control {
+      @include col(3/12);
+      
+      label {
+        @extend .hd-label;
+        display: block;
+      }
+      select {
+        display: block;
+        width: 100%;
+        &:disabled {
+          cursor: not-allowed;
+        }
+      }
+      .bttn {
+        margin-top: 1.15rem;
+      }
+    }
+  }
 }
 
 .actions-menu {

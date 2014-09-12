@@ -79,6 +79,7 @@
     };
     
     this.disableFilters = function() {
+      if (!_self.filtersEnabled) return;
       _self.filtersEnabled = false;
       // Set every filter to null.
       for (var key in _self.filters) {
@@ -130,11 +131,15 @@
     this.filters = {};
     this.policies = {};
     
+    this.loadingData = true;
+    
     this.getPolicyLink = function(policy) {
       return '#/policy/' + policy.id;
     };
 
     var getPolicies = function() {
+      _self.loadingData = true;
+      
       var queryString = [];
       angular.forEach(_self.filters, function(value, key) {
         if (value !== null) {
@@ -151,11 +156,13 @@
       
       $http.get(CS.policyProxy + 'policy' + queryString).success(function(data) {
         _self.policies = objToArray(data);
+        _self.loadingData = false;
       });
     };
 
     $scope.$on('apply-filters', function(event, filters) {
       _self.filters = filters;
+      _self.loadingData = true;
       getPolicies();
     });
     
@@ -172,8 +179,11 @@
     var _self = this;
     this.policy = {};
     
+    this.loadingData = true;
+    
     $http.get(CS.policyProxy + 'policy/' + $routeParams.policyId).success(function(data) {
       _self.policy = data;
+      _self.loadingData = false;
     });
   }]);
   
