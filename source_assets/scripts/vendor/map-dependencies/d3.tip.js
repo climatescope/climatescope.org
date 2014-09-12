@@ -13,7 +13,7 @@
   }
 }(this, function (d3) {
 
-  // if firefox, apply translation of $pane to result
+  // if firefox, undo parent transform to correctly place the tooltip
   var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
 
   // Public - contructs a new tooltip
@@ -27,6 +27,7 @@
         svg       = null,
         point     = null,
         target    = null,
+        // transformed pane to read css transform from
         $pane     = $('.leaflet-map-pane')
 
     function tip(vis) {
@@ -61,6 +62,7 @@
       while(i--) nodel.classed(directions[i], false)
       coords = direction_callbacks.get(dir).apply(this)
 
+      // remove the transform if firefox
       if (isFirefox) {
         coords.left += parseInt(transform[4], 10);
         coords.top += parseInt(transform[5], 10);
