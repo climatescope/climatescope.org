@@ -1,27 +1,27 @@
 $(document).ready(function() {
 
   var rank = function () {
-    
+
     // Never used.
     // var $parent = $(parent);
     var map = L.mapbox.map('index-viz', 'derrr.f5dvlsor')
         .setView([0,0], 2);
-      
+
     var point = function(x, y) {
       var pt = map.latLngToLayerPoint([y, x]);
       this.stream.point(pt.x, pt.y);
     };
-      
+
     var projection = d3.geo.transform({point: point});
-      
+
     var path = d3.geo.path().projection(projection);
     var clicked = false;
-    
+
     var tooltip = d3.tip().attr('class', 'rank-tooltip').html(function(d) {
       d = d.rank;
       // Never used.
       // var rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
-      
+
       return [
         '<div class="rank-tooltip-head"><label>Region goes here</label>',
         '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
@@ -46,9 +46,9 @@ $(document).ready(function() {
         '<button class="rank-tooltip-link">View Country &rsaquo;</button>',
         '</div>'
       ].join(' ');
-      
+
     });
-    
+
       // UI element for toggling the map
     var $countryFilter = $('<ul>', {
         'class': 'leaflet-control bttn-group bttn-group-s bttn-list map-country-toggle'

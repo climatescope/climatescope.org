@@ -218,7 +218,7 @@ a:active{
   }
 
   &__body {
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
     h2 {
       @extend .hd-xxs;
     }
@@ -289,7 +289,7 @@ a:active{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 900;
+        z-index: 1010;
       }
     }
   }
@@ -361,6 +361,10 @@ a:active{
   &__title {
     float: left;
   }
+}
+
+.region .layout--entry__body {
+  padding-top: 0; 
 }
 
 // LAYOUT: POLICIES
