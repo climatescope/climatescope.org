@@ -1,0 +1,38 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
+<section class="modal modal--welcome" id="welcome">
+  <div class="modal__inner">
+    {% case language %}
+    {% when 'en' %}
+    <header class="modal__header">
+      <h1 class="modal__title"><a href="#" title="Start Browsing" data-modal-dismiss>Global Climatescope <em>2014</em></a></h1>
+      <a class="close" data-modal-dismiss href="#" title="Close"><span>Close</span></a>
+    </header>
+    <div class="modal__body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non ipsum vehicula, dignissim ex id, rhoncus felis. Morbi rutrum aliquam lorem, id suscipit velit hendrerit eu. Integer iaculis nibh id vulputate luctus.</p>
+      <p>Tiam id augue eu risus convallis dapibus et nec elit. Quisque tristique eleifend lorem, ac faucibus nisl pulvinar et. Curabitur a dictum urna.</p>
+    </div>
+    <footer class="modal__footer">
+      <a class="bttn bttn-success bttn-l go" data-modal-dismiss href="#" title="Start Browsing">Start Browsing</a>
+    </footer>
+
+    {% when 'es' %}
+    <header class="modal__header">
+      <h1 class="modal__title"><a href="#" title="Start Browsing" data-modal-dismiss>[ES] Global Climatescope <em>2014</em></a></h1>
+      <a class="close" data-modal-dismiss href="#" title="Cerrar"><span>Cerrar</span></a>
+    </header>
+    <div class="modal__body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non ipsum vehicula, dignissim ex id, rhoncus felis. Morbi rutrum aliquam lorem, id suscipit velit hendrerit eu. Integer iaculis nibh id vulputate luctus.</p>
+      <p>Tiam id augue eu risus convallis dapibus et nec elit. Quisque tristique eleifend lorem, ac faucibus nisl pulvinar et. Curabitur a dictum urna.</p>
+    </div>
+    <footer class="modal__footer">
+      <a class="bttn bttn-success bttn-l go" data-modal-dismiss href="#" title="Start Browsing">Start Browsing</a>
+    </footer>
+    {% endcase %}
+
+  </div>
+</section>

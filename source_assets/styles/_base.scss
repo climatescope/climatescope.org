@@ -66,6 +66,46 @@ a:active{
 
 }
 
+// Labels
+
+.label-grid {
+  display: inline-block;
+  padding: 0 0.125rem;
+  color: #fff;
+  font-weight: $brand-font-bold;
+  text-transform: uppercase;
+  @extend .antialiased;
+  font-family: $brand-font-family;
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  font-style: normal;
+  border-radius: $global-rounded;
+  &:before {
+    @extend .icon-power;
+    font-size: 1rem;
+  }
+  span {
+    margin: 0 0.5rem 0 0;
+    .table & {
+      display: none;
+    }
+  }
+  .layout--entry__heading & {
+    margin-left: 0.5rem;
+  }
+}
+
+.label-grid-on {
+  background: $secondary-color;
+}
+
+.label-grid-off {
+  background: tint($primary-color, 60%);
+  .table & {
+     @extend .visually-hidden;
+  }
+}
+
 // STRUCTURE
 
 #site-canvas {
@@ -187,13 +227,55 @@ a:active{
 }
 
 #vis-controls {
+  .prime-title {
+    @extend .hd-xxs;
+    float: left;
+  }
+  .reset {
+    float: left;
+    margin-left: 0.5rem;
+    color: tint($primary-color, 40%);
+    &:before {
+      @extend .icon-refresh;
+    }
+    span {
+      @extend .visually-hidden;
+    }
+  }
   .control {
     @include col(3/12);
-    h3 {
-      @extend .hd-xxs;
-      font-size: 0.85rem;
-      line-height: 1.25rem;
+    &.first {
+      clear: left;
     }
+  }
+  .control-title {
+    @extend .hd-label;
+    @extend .truncated;
+    width: 100%;
+  }
+  .slider {
+    margin-bottom: 0.75rem;
+  }
+  .control.a .noUi-connect {
+    background: $infograph-color-a;
+  }
+  .control.b .noUi-connect {
+    background: $infograph-color-b;
+  }
+  .control.c .noUi-connect {
+    background: $infograph-color-c;
+  }
+  .control.d .noUi-connect {
+    background: $infograph-color-d;
+  }
+  .slider-value {
+    @extend .hd-xxs;
+    float: left;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+  .lock {
+    float: right;
   }
 }
 
@@ -202,10 +284,13 @@ a:active{
 .layout--page {
   &__header {
     &.sticky {
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
+      @media #{$medium-up} {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+      }
     }
   }
 }
@@ -228,15 +313,35 @@ a:active{
 .layout--page {
 
   &__heading {
-    @include col(8/12);
+    @include col(6/12);
+    position: relative;
+    @media #{$large-up} {
+      @include col(8/12);
+    }
   }
 
   &__tools {
-    @include col(4/12);
+    @include col(6/12);
+    margin: 0.125rem 0;
+    @media #{$small-up} {
+      margin: 0.25rem 0;
+    }
+    @media #{$large-up} {
+      @include col(4/12);
+    }
+  }
+  
+  &__title {
+    @extend .hd-xl;
+    margin-bottom: 0;
   }
 
-  &__title,
   &__subtitle {
+    position: absolute;
+    top: -1.25rem;
+    left: 0;
+    z-index: 10;
+    @extend .hd-label;
     margin-bottom: 0;
   }
 
@@ -247,6 +352,15 @@ a:active{
     }
   }
 
+}
+
+.layout--entry {
+  &__header {
+    padding-top: 3rem;
+  }
+  &__title {
+    float: left;
+  }
 }
 
 // LAYOUT: POLICIES
@@ -282,6 +396,9 @@ a:active{
     margin: 0 0 0 0.5rem;
     float: left;
   }
+  > li:first-child {
+    margin-left: 0;
+  }
 }
 
 .col--main {
@@ -313,21 +430,54 @@ a:active{
   margin-bottom: 2rem;
 }
 
+// SITE FOOTER
 
-// Clean me v
+#comp-nav {
+  @include span(12/12);
+  border-bottom: 1px solid tint($primary-color, 90%);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  .ftr-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+    > li {
+      float: left;
+      margin: 0 2rem 0 0;
+    }
+    > li > a {
+      display: block;
+      font-family: $brand-font-family;
+      font-weight: $brand-font-bold;
+      text-transform: uppercase;
+      color: inherit;
+    }
+  }
+  @media #{$xlarge-up} {
+    @include col(7/12);
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    .ftr-menu {
+      padding: 1rem 0;
+    }
+  }
+}
 
 #ftr-credits {
-  @include col(8/12);
+  @include span(12/12);
   h1 {
     @extend .visually-hidden;
   }
   .orgs-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 -1.5rem;
     li {
       float: left;
       margin: 0 1rem 1rem 0;
+      width: 6rem;
     }
     a {
       display: block;
@@ -336,42 +486,49 @@ a:active{
       @extend .visually-hidden;
     }
     img {
+      width: auto;
+      max-width: 100%;
+      height: auto;
       vertical-align: top;
     }
   }
-}
-
-#comp-nav {
-  @include col(4/12);
-  .ftr-menu {
-    float: right;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-      float: left;
-      margin: 0 0 1rem 1rem;
-    }
-    a {
-      display: block;
+  @media #{$xlarge-up} {
+    @include col(5/12);
+    .orgs-list {
+      float: right;
     }
   }
 }
 
 #copyright {
-  @include col(12/12);
+  float: left;
+  clear: both;
+  font-family: $brand-font-family;
+  color: tint($primary-color, 60%);
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  @media #{$xlarge-up} {
+    float: right;
+  }
 }
 
-/*  Jeet Syntax Quick Reference
-  --------------------------
-  col($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
-  span($ratio: 1, $offset: 0)
-  shift($ratios: 0, $col_or_span: col, $gutter: $jeet-gutter)
-  unshift()
-  edit()
-  center($max_width: 1410px, $pad: 0)
-  stack($pad: 0, $align: false)
-  unstack()
-  align($direction: both)
-  cf()
-*/
+// MODALS
+
+// Welcome
+#welcome {
+  .modal__inner {
+    color: #fff;
+    @extend .antialiased;
+    background: tint($primary-color, 20%) url(../images/layout/cover-img.jpg) no-repeat center bottom;
+    background-size: cover;
+  }
+  .modal__title a em {
+    font-style: normal;
+    color: #fff;
+  }
+  .modal__body {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
