@@ -214,6 +214,10 @@ $(document).ready(function() {
       }
     }
 
+    map.on('dragstart', function() {
+      tooltip.hide();
+    });
+
     map.on('viewreset', function() {
       reset();
       zoom = map.getZoom();
