@@ -147,21 +147,20 @@ $tooltip-arr-size: 1rem;
   border-radius: $global-radius;
   box-shadow: 4px 4px 0 rgba($primary-color, 0.05);
   background-clip: padding-box;
+  filter: alpha(opacity=0);
   opacity: 0;
   visibility: hidden;
-
   .open > & {
     @include transform(translate3d(0, 0, 0));
     @include transition-property(opacity, margin, visibility);
     @include transition-duration(0.1s, 0.1s, 0.1s);
     @include transition-timing-function(ease, ease, linear);
     @include transition-delay(0, 0, 0);
-    
+    filter: alpha(opacity=100);
     opacity: 1;
     margin-top: 0.5rem;
     visibility: visible;
   }
-
   &:before {
     @extend .icon-triangle-up;
     position: absolute;

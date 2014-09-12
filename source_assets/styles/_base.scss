@@ -414,6 +414,100 @@ a:active{
   }
 }
 
+// LAYOUT: ENTRY/COUNTRY
+
+.country-ctas {
+  list-style: none;
+  padding: 0;
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+#section-switch {
+  margin-bottom: 2rem;
+}
+
+.layout--entry.country {
+  .intro {
+    position: relative;
+    overflow: hidden;
+    height: 16rem;
+    margin-bottom: 2rem;
+    background: tint($primary-color, 95%);
+    .row--contained {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        width: 1px;
+        margin-right: -0.25em; // Adjusts for spacing
+      }
+    }
+    img {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .meta-details {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    dt {
+      clear: left;
+      @extend .hd-label;
+      float: left;
+      line-height: 1.5rem;
+      margin-right: 0.5rem;
+    }
+    dd {
+      float: left;
+      clear: right;
+      font-family: $brand-font-family;
+      font-weight: $brand-font-bold;
+      line-height: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+  .layout--entry {
+    &__body {
+      padding: 0 0 2rem 0;
+    }
+  }
+  @media #{$medium-up} {
+    .intro {
+      img {
+        top: -12.5%;
+      }
+    }
+  }
+  @media #{$large-up} {
+    .intro {
+      img {
+        top: -25%;
+      }
+    }
+  }
+  @media #{$xlarge-up} {
+    .intro {
+      img {
+        top: -50%;
+      }
+    }
+  }
+}
+
 // LAYOUT: POLICIES
 
 .layout--policies {
@@ -436,6 +530,8 @@ a:active{
   }
 
 }
+
+// MOVE ME /////////
 
 .actions-menu {
   list-style: none;
@@ -469,20 +565,6 @@ a:active{
   p {
     @extend .visually-hidden;
   }
-}
-
-// LAYOUT: ENTRY/COUNTRY
-
-.country-ctas {
-  list-style: none;
-  padding: 0;
-  li {
-    margin-bottom: 0.5rem;
-  }
-}
-
-#section-switch {
-  margin-bottom: 2rem;
 }
 
 // SITE FOOTER
