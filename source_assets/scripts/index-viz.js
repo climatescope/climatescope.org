@@ -74,7 +74,7 @@ $(document).ready(function() {
     var visibleCountries = countryFilter['top-ten'];
     var zoom = map.getZoom();
 
-    var undef;
+    var undef = void 0;
 
     queue()
     .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
@@ -135,7 +135,7 @@ $(document).ready(function() {
         $('<button>', { 'type': 'button', 'class': cls, 'text': key.split('-').join(' ')})
           .appendTo($countryFilter);
       });
-      
+
       $countryFilter.appendTo($('.leaflet-bottom.leaflet-left'));
     });
 
@@ -232,6 +232,8 @@ $(document).ready(function() {
         markers
           .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
       }
+
+      tooltip.hide();
     });
 
     // listening for weight changer changes
