@@ -4,7 +4,7 @@
     $interpolateProvider.endSymbol('//');
   });
 
-  app.controller('CountryListController', ['$http',  function($http) {
+  app.controller('CountryListController', ['$http', function($http) {
     _self = this;
     // Data
     this.countries = [];

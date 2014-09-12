@@ -39,9 +39,9 @@
         <td>//country.score//</td>
         <td>
           <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//countryTable.getTooltipContent(country.parameters)//">
-            <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//" class="bar-segment"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+            <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
           </ul>
-         </td>
+        </td>
         <td><em class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>//country.grid//</span></em></td>
       </tr>
 
