@@ -6,69 +6,174 @@ id: policies
 lang: en
 ---
 <script>
-  var app = angular.module('app', [], function($interpolateProvider) {
+(function() {
+  var app = angular.module('policyApp', ['ngRoute'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('//');
     $interpolateProvider.endSymbol('//');
   });
-
-  app.controller('TableListController', ['$http', function($http) {
-    _self = this;
-    this.policies = [];
-    this.filters_enabled = false;
-
-    $http.get(CS.domain + '/poc/api/policies.json').success(function(data) {
-      _self.policies = data;
-    });
+  
+   app.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.when('/', {
+        templateUrl: 'policy_list.html',
+        controller: 'policyListController',
+        controllerAs: 'policyListCtrl'
+      })
+      .when('/policy/:policyId', {
+        templateUrl: 'policy.html',
+        controller: 'policyController',
+        controllerAs: 'policyCtrl'
+      })
+      .otherwise({
+        redirectTo: '/'
+      });
+  }]);
+  
+  app.controller('policyListController', ['$http', '$routeParams', function($http, $routeParams) {
   }]);
 
+  app.controller('policyFiltersController', ['$http', '$filter', '$rootScope', function($http, $filter, $rootScope) {
+    var _self = this;
+    
+    this.filterData = {};
+    
+    this.filters = {
+      country: null,
+      status: null,
+      subsector: null,
+      state: null
+    };
+    
+    // All the results from the API come in object format.
+    // Repeats can't be sorted when looping over objects
+    // Since we don't need the object key, we can safely
+    // convert to array.
+    // Another approach: http://justinklemm.com/angularjs-filter-ordering-objects-ngrepeat/
+    this.objToArray = function(obj) {
+      var arr = [];
+      angular.forEach(obj, function(value) {
+        arr.push(value);
+      });
+      return arr;
+    };
+    
+    // Get the ordered options.
+    // This could be done in the html but it's more organised like this.
+    this.getSelectOpts = function(field) {
+      var data = _self.objToArray(field);
+      return $filter('orderBy')(data, 'name');
+    };
+    
+    // Get the filtered options.
+    // This could be done in the html but it's more organised like this.
+    this.getSelectOptsState = function(field) {
+      var data = _self.objToArray(field);
+      var filtered = $filter('filter')(data, {countyId: _self.filters.country});
+      return $filter('orderBy')(filtered, 'name');
+    };
+    
+    this.apply = function() {
+      $rootScope.$broadcast('apply-filters', _self.filters);
+    };
+    
+    $http.get('http://splinter.fs/climatescope/policy/filter').success(function(data) {
+      _self.filterData = data;
+    });
+    
+  }]);
+
+  app.controller('policyTableController', ['$http', '$scope', function($http, $scope) {
+    var _self = this;
+
+    this.policies = {};
+    
+    this.getPolicyLink = function(policy) {
+      return '#/policy/' + policy.id;
+    };
+
+    var getPolicies = function(queryString) {
+      queryString = queryString || '';
+      $http.get('http://splinter.fs/climatescope/policy' + queryString).success(function(data) {
+        _self.policies = data;
+      });
+    };
+
+    getPolicies();
+
+    $scope.$on('apply-filters', function(event, filters) {
+      var query = [];
+      angular.forEach(filters, function(value, key) {
+        if (value !== null) {
+          query.push(key + '=' + value);
+        }
+      });
+      
+      if (query.length) {
+        query = '?' + query.join('&');
+        getPolicies(query);
+      }
+      else {
+        getPolicies();
+      }
+      
+    });
+
+  }]);
+
+  app.controller('policyController', ['$http', '$routeParams', function($http, $routeParams) {
+    var _self = this;
+    this.policy = {};
+    
+    $http.get('http://splinter.fs/climatescope/policy/' + $routeParams.policyId).success(function(data) {
+      _self.policy = data;
+    });
+  }]);
+  
+})();
 </script>
 
-<section class="layout--policies" ng-app="app" ng-controller="TableListController as table">
+<section class="layout--policies" ng-app="policyApp">
+  
+  <!-- Template for the policy hub -->
+  <script type="text/ng-template" id="policy_list.html">
   <header class="layout--policies__header">
     <div class="row--contained">
       <div class="layout--policies__heading">
         <h1 class="layout--policies__title">{{ page.title }}</h1>
       </div>
-      <div class="layout--policies__tools">
-
-
-        <div ng-show="filters_enabled == true">Filters are enabled. <a href="" ng-click="search = null; filters_enabled = false">disable</a></div>
-
-        <label for="policy_title">
-          Title:
-          <input type="text" name="policy_title" id="policy_title" ng-model="search.name" ng-change="filters_enabled = search.name != ''" />
-        </label>
-
+      <div class="layout--policies__tools" ng-controller="policyFiltersController as filterCtrl">
+        <div>
+          //filterCtrl.filters | json//
+        </div>
+        
         <label for="policy_country">
           Country:
-          <select ng-model="search.country[0].iso" id="policy_country" name="policy_country" ng-change="filters_enabled = search.country[0].iso != ''">
-            <option value="">Any</option>
-            <option value="ch">Chile</option>
-            <option value="cn">China</option>
-            <option value="uk">United Kingdom</option>
+          <select id="policy_country" name="policy_country" ng-model="filterCtrl.filters.country" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.country)" ng-change="filterCtrl.filters.state = null">
+            <option value="">-- Any --</option>
+          </select>
+        </label>
+        
+        <label for="policy_state">
+          State:
+          <select id="policy_state" name="policy_state" ng-model="filterCtrl.filters.state" ng-options="value.id as value.name for value in filterCtrl.getSelectOptsState(filterCtrl.filterData.state)" ng-disabled="!filterCtrl.getSelectOptsState(filterCtrl.filterData.state).length">
+            <option value="">-- Any --</option>
           </select>
         </label>
 
         <label for="policy_status">
           Status:
-          <select ng-model="search.status.name" id="policy_status" name="policy_status" ng-change="filters_enabled = search.status.name != ''">
-            <option value="">Any</option>
-            <option value="In force">In force</option>
-            <option value="Ratified pending enforcement">Ratified pending enforcement</option>
+          <select id="policy_status" name="policy_status" ng-model="filterCtrl.filters.status" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.status)">
+            <option value="">-- Any --</option>
           </select>
         </label>
-
-        <label for="policy_mechanism">
-          Mechanism:
-          <select ng-model="search.type.mechanism[0].name" id="policy_mechanism" name="policy_mechanism" ng-change="filters_enabled = search.type.mechanism[0].name != ''">
-            <option value="">Any</option>
-            <option value="Tax Based Mechanism">Tax Based Mechanism</option>
-            <option value="Energy Market Mechanism">Energy Market Mechanism</option>
+        
+        <label for="policy_subsector">
+          subsector:
+          <select id="policy_subsector" name="policy_subsector" ng-model="filterCtrl.filters.subsector" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.subsector)">
+            <option value="">-- Any --</option>
           </select>
         </label>
-
-        <button>submit</button>
-
+        
+        <button ng-click="filterCtrl.apply()">Apply</button>
 
       </div>
     </div>
@@ -76,8 +181,8 @@ lang: en
 
   <div class="layout--policies__body">
     <div class="row--contained">
-
-      <table class="table" ng-show="(table.policies | filter:search).length > 0">
+      
+      <table class="table" ng-controller="policyTableController as tableCtrl">
         <thead>
           <tr>
             <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">Policy Name</a></th>
@@ -87,19 +192,36 @@ lang: en
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="policy in table.policies | filter:search | orderBy:sortField:sortReverse">
-           <td>//policy.name//</td>
+          <tr ng-repeat="policy in tableCtrl.policies">
+           <td><a href="//tableCtrl.getPolicyLink(policy)//">//policy.name//</a></td>
            <td>//policy.country[0].name//</td>
            <td>//policy.type.mechanism[0].name//</td>
            <td>//policy.status.name//</td>
           </tr>
         </tbody>
       </table>
-
-      <div ng-show="(table.policies | filter:search).length == 0">No results</div>
-
-
+      
     </div>
   </div>
+  </script>
+  
+  <!-- Template for the policy -->
+  <script type="text/ng-template" id="policy.html">
+    <header class="layout--policies__header">
+      <div class="row--contained">
+        <div class="layout--policies__heading">
+          <h1 class="layout--policies__title">//policyCtrl.policy.name//</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="layout--policies__body">
+      <div class="row--contained">
+        //policyCtrl.policy | json//
+      </div>
+    </div>
+  </script>
+  
+  <div ng-view></div>
 
 </section>
