@@ -70,6 +70,12 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ site.domain }}/assets/scripts/vendor/jquery-2.1.0.min.js"><\/script>')</script>
   <!--<![endif]-->
+  
+  {% assign vars = site.collections[page.collection].layout_vars %}
+  {% if vars.include_map or page.include_map %}
+  <script src="{{ site.domain }}/assets/scripts/vendor/map-dependencies.min.js"></script>
+  {% endif %}
+  
   <script src="{{ site.domain }}/assets/scripts/main.min.js"></script>
 </body>
 </html>

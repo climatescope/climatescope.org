@@ -3,6 +3,8 @@ layout: base
 title : Global
 id: index
 lang: en
+
+include_map: true
 ---
 <section class="layout--home">
   <header class="layout--home__header sticky" id="parameters-controls">
@@ -17,15 +19,11 @@ lang: en
   </header>
 
   <div class="layout--home__body">
-    <div id="index-viz" class="row--full map">
-      <p>Insert map here.</p>
-    </div>
+    <div id="index-viz" class="row--full map"><!-- Insert map here. --></div>
 
     <div class="row--contained">
       {% include country_state_index.html %}
       {% include country_table.html %}
     </div>
   </div>
-
-  <script src="{{ site.domain }}/assets/scripts/vendor/map-dependencies.min.js"></script>
 </section>
