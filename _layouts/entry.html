@@ -1,6 +1,12 @@
 ---
 layout: base
 ---
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
 {% assign vars = site.collections[page.collection].layout_vars %}
 <article class="layout--entry {{vars.type}}">
   <header class="layout--entry__header">
@@ -8,6 +14,24 @@ layout: base
       <div class="layout--entry__heading">
         <h1 class="layout--entry__title">{{ page.title }}</h1>
         <p class="layout--entry__subtitle">{{vars.subtitle}}</p>
+        {% case language %}
+        {% when 'en' %}
+
+          {% if page.grid == true %}
+          <em class="label-grid label-grid-on"><span>On-grid</span></em>
+          {% elsif page.grid == false %}
+          <em class="label-grid label-grid-off"><span>Off-grid</span></em>
+          {% endif %}
+
+        {% when 'es' %}
+
+          {% if page.grid == true %}
+          <em class="label-grid label-grid-on"><span>On-grid ES</span></em>
+          {% elsif page.grid == false %}
+          <em class="label-grid label-grid-off"><span>Off-grid ES</span></em>
+          {% endif %}
+
+        {% endcase %}
       </div>
       <div class="layout--entry__tools">
         {% include actions_menu.html %}

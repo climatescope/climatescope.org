@@ -131,13 +131,13 @@ input[type=submit] {
     filter: alpha(opacity=60);
     font-size: 1rem;
   }
-  &.go:after {
-    @extend .icon-s-arr-right;
-  }
   &:before {
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
     font-size: 1rem;
   }
+  &.go:after { @extend .icon-s-arr-right; }
+  &.download:before { @extend .icon-download; }
+  &.share:before { @extend .icon-share; }
 }
 
 // GROUP

@@ -109,11 +109,22 @@ layout: entry
   <!-- END TEMPLATES -->
   
   <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="CountryTabsController as navCtrl">
-    <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details">In detail</a></li>
-    {% if has_states %}
-    <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states">States/Provinces</a></li>
-    {% endif %}
-    <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study">Case study</a></li>
+    {% case language %}
+    {% when 'en' %}
+      <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="In detail">In detail</a></li>
+      {% if has_states %}
+      <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces</a></li>
+      {% endif %}
+      <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li>
+
+    {% when 'es' %}
+
+      <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="In detail">In detail ES</a></li>
+      {% if has_states %}
+      <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces ES</a></li>
+      {% endif %}
+      <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study ES</a></li>
+    {% endcase %}
   </ul>
   <div ng-view></div>
 
