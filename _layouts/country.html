@@ -87,9 +87,11 @@ layout: entry
           <td class="cell-country"><a href="//statesCtrl.getStateUrl(state)//">//state.name//</a></td>
           <td>//state.score//</td>
           <td>
-            <ul class="table-bar">
-              <li ng-repeat="param in state.parameters" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
-            </ul>
+            <a href="" tooltip-animation="false" tooltip-placement="top" tooltip-trigger="focus" tooltip-html-unsafe="//statesCtrl.getTooltipContent(state.parameters)//">
+              <ul class="table-bar">
+                <li ng-repeat="param in state.parameters" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+              </ul>
+            </a>
           </td>
         </tr>
       </tbody>

@@ -3,7 +3,6 @@
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
-
 <div ng-app="countryListApp" ng-controller="CountryListController as countryTable" ng-cloak>
   <table class="table country-table">
     <thead>
@@ -39,7 +38,7 @@
         <td class="cell-country"><a href="//countryTable.getCountryUrl(country)//">//country.name//</a></td>
         <td>//country.score//</td>
         <td>
-          <ul class="table-bar">
+          <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//countryTable.getTooltipContent(country.parameters)//">
             <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
           </ul>
         </td>
@@ -74,7 +73,7 @@
               <td class="cell-country"><a href="//countryTable.getStateUrl(state)//">//state.name//</a></td>
               <td>//state.score//</td>
               <td>
-                <ul class="table-bar">
+                <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//countryTable.getTooltipContent(state.parameters)//">
                   <li ng-repeat="param in state.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
                 </ul>
               </td>
