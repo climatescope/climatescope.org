@@ -5,7 +5,7 @@
   });
 
   app.controller('CountryListController', ['$http', function($http) {
-    _self = this;
+    var _self = this;
     // Data
     this.countries = [];
     
