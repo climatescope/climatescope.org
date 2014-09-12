@@ -7,6 +7,20 @@ lang: en
 ---
 <script>
 (function() {
+  
+  // All the results from the API come in object format.
+  // Repeats can't be sorted when looping over objects
+  // Since we don't need the object key, we can safely
+  // convert to array.
+  // Another approach: http://justinklemm.com/angularjs-filter-ordering-objects-ngrepeat/
+  var objToArray = function(obj) {
+    var arr = [];
+    angular.forEach(obj, function(value) {
+      arr.push(value);
+    });
+    return arr;
+  };
+  
   var app = angular.module('policyApp', ['ngRoute'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('//');
     $interpolateProvider.endSymbol('//');
@@ -16,7 +30,8 @@ lang: en
     $routeProvider.when('/', {
         templateUrl: 'policy_list.html',
         controller: 'policyListController',
-        controllerAs: 'policyListCtrl'
+        controllerAs: 'policyListCtrl',
+        reloadOnSearch: false
       })
       .when('/policy/:policyId', {
         templateUrl: 'policy.html',
@@ -31,7 +46,7 @@ lang: en
   app.controller('policyListController', ['$http', '$routeParams', function($http, $routeParams) {
   }]);
 
-  app.controller('policyFiltersController', ['$http', '$filter', '$rootScope', function($http, $filter, $rootScope) {
+  app.controller('policyFiltersController', ['$http', '$filter', '$rootScope', '$location', function($http, $filter, $rootScope, $location) {
     var _self = this;
     
     this.filterData = {};
@@ -43,35 +58,44 @@ lang: en
       state: null
     };
     
-    // All the results from the API come in object format.
-    // Repeats can't be sorted when looping over objects
-    // Since we don't need the object key, we can safely
-    // convert to array.
-    // Another approach: http://justinklemm.com/angularjs-filter-ordering-objects-ngrepeat/
-    this.objToArray = function(obj) {
-      var arr = [];
-      angular.forEach(obj, function(value) {
-        arr.push(value);
-      });
-      return arr;
-    };
+    this.filtersEnabled = false;
     
     // Get the ordered options.
     // This could be done in the html but it's more organised like this.
     this.getSelectOpts = function(field) {
-      var data = _self.objToArray(field);
+      var data = objToArray(field);
       return $filter('orderBy')(data, 'name');
     };
     
     // Get the filtered options.
     // This could be done in the html but it's more organised like this.
     this.getSelectOptsState = function(field) {
-      var data = _self.objToArray(field);
+      var data = objToArray(field);
       var filtered = $filter('filter')(data, {countyId: _self.filters.country});
       return $filter('orderBy')(filtered, 'name');
     };
     
+    this.disableFilters = function() {
+      _self.filtersEnabled = false;
+      // Set every filter to null.
+      for (var key in _self.filters) {
+        _self.filters[key] = null;
+      }
+      
+      $location.search(_self.filters);
+      $rootScope.$broadcast('apply-filters', _self.filters);
+    };
+    
     this.apply = function() {
+      // Check if filters are enabled.
+      _self.filtersEnabled = false;
+      angular.forEach(_self.filters, function(value) {
+        if (value != null) {
+          _self.filtersEnabled = true;
+        }
+      });
+      
+      $location.search(_self.filters);
       $rootScope.$broadcast('apply-filters', _self.filters);
     };
     
@@ -79,44 +103,66 @@ lang: en
       _self.filterData = data;
     });
     
+    // Check if there are filters in the url.
+    if (!angular.equals({}, $location.search())) {
+      // Set already preset filters.
+      angular.extend(_self.filters, $location.search());
+      _self.filtersEnabled = true;
+      
+      // Both the status and subsector have numeric values
+      // but when they come from the url they are string.
+      // They must be converted to integers in order to work.
+      if (_self.filters.status) {
+        _self.filters.status = parseInt(_self.filters.status);
+      }
+      if (_self.filters.subsector) {
+        _self.filters.subsector = parseInt(_self.filters.subsector);
+      }
+    }
   }]);
 
-  app.controller('policyTableController', ['$http', '$scope', function($http, $scope) {
+  app.controller('policyTableController', ['$http', '$scope', '$location', function($http, $scope, $location) {
     var _self = this;
-
+    
+    this.filters = {};
     this.policies = {};
     
     this.getPolicyLink = function(policy) {
       return '#/policy/' + policy.id;
     };
 
-    var getPolicies = function(queryString) {
-      queryString = queryString || '';
-      $http.get('http://splinter.fs/climatescope/policy' + queryString).success(function(data) {
-        _self.policies = data;
-      });
-    };
-
-    getPolicies();
-
-    $scope.$on('apply-filters', function(event, filters) {
-      var query = [];
-      angular.forEach(filters, function(value, key) {
+    var getPolicies = function() {
+      var queryString = [];
+      angular.forEach(_self.filters, function(value, key) {
         if (value !== null) {
-          query.push(key + '=' + value);
+          queryString.push(key + '=' + value);
         }
       });
       
-      if (query.length) {
-        query = '?' + query.join('&');
-        getPolicies(query);
+      if (queryString.length) {
+        queryString = '?' + queryString.join('&');
       }
       else {
-        getPolicies();
+        queryString = '';
       }
       
-    });
+      $http.get('http://splinter.fs/climatescope/policy' + queryString).success(function(data) {
+        _self.policies = objToArray(data);
+      });
+    };
 
+    $scope.$on('apply-filters', function(event, filters) {
+      _self.filters = filters;
+      getPolicies();
+    });
+    
+    // Check if there are filters in the url.
+    if (!angular.equals({}, $location.search())) {
+      // Set already preset filters.
+      angular.extend(_self.filters, $location.search());
+    }
+    
+    getPolicies();
   }]);
 
   app.controller('policyController', ['$http', '$routeParams', function($http, $routeParams) {
@@ -144,6 +190,7 @@ lang: en
         <div>
           //filterCtrl.filters | json//
         </div>
+        <div ng-show="filterCtrl.filtersEnabled == true">Filters are enabled. <a href="" ng-click="filterCtrl.disableFilters()">disable</a></div>
         
         <label for="policy_country">
           Country:
@@ -180,9 +227,9 @@ lang: en
   </header>
 
   <div class="layout--policies__body">
-    <div class="row--contained">
+    <div class="row--contained" ng-controller="policyTableController as tableCtrl">
       
-      <table class="table" ng-controller="policyTableController as tableCtrl">
+      <table class="table" ng-show="tableCtrl.policies.length > 0">
         <thead>
           <tr>
             <th><a href="" ng-click="sortField = 'name'; sortReverse = !sortReverse">Policy Name</a></th>
@@ -200,6 +247,8 @@ lang: en
           </tr>
         </tbody>
       </table>
+      
+      <div ng-show="tableCtrl.policies.length == 0">No results</div>
       
     </div>
   </div>
