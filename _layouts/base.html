@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="{{ site.domain }}/assets/styles/main.css">
   <!--[if lt IE 9]><script src="{{ site.domain }}/assets/scripts/vendor/selectivizr-1.0.2.min.js"></script><![endif]-->
   <script src="{{ site.domain }}/assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.22/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular-route.min.js"></script>
   <script>
     var CS = { lang: '{{language}}', domain: '{{site.domain}}' };
   </script>
@@ -55,6 +56,7 @@
 
     <main id="site-body" role="main">
       {{ content }}
+      {% include modal-welcome.html %}
     </main>
 
     {% include footer.html %}

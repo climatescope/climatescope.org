@@ -21,14 +21,7 @@ lang: es
     </div>
     
     <div class="row--contained">
-      <script>    
-        // Country index to retrieve the url.
-        CS.countryIndex = {
-          {% for country in site.es_country %}
-            "{{country.id}}":"{{site.domain}}{{country.url}}",
-          {% endfor %}
-        };
-      </script>
+      {% include country_state_index.html %}
       
       {% include country_table.html %}
     </div>

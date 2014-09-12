@@ -23,7 +23,7 @@ collections:
       es: es_region
     layout_vars:
       type: region
-      subtitle: Region
+      subtitle: Región
       
   en_country:
     output: true

@@ -27,22 +27,6 @@ layout: entry
 <div class="row--contained">
   <script>
     CS.regionId = '{{page.id}}';
-    
-    {% case language %}
-    {% when 'en' %}
-      {% assign country_col = 'en_country' %}
-    {% when 'es' %}
-      {% assign country_col = 'es_country' %}
-    {% endcase %}
-    
-    // Country index to retrieve the url.
-    CS.countryIndex = {
-      {% for country in site[country_col] %}
-        {% if country.region == page.id %}
-        "{{country.id}}":"{{site.domain}}{{country.url}}",
-        {% endif %}
-      {% endfor %}
-    };
   </script>
   
   {% include country_table.html %}

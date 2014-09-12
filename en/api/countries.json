@@ -12,28 +12,28 @@
         "parameters": [
             {
                 "id": 1,
-                "name": "p1",
+                "name": "Enabling framework",
                 "description": "p1 description",
                 "weight": 0.4,
                 "value": 2.87
             },
             {
                 "id": 2,
-                "name": "p2",
+                "name": "Financing & Investment",
                 "description": "p2 description",
                 "weight": 0.3,
                 "value": 2.98
             },
             {
                 "id": 3,
-                "name": "p3",
+                "name": "Value Chains",
                 "description": "p3 description",
                 "weight": 0.1,
                 "value": 2.96
             },
             {
                 "id": 4,
-                "name": "p4",
+                "name": "GHG Management",
                 "description": "p4 description",
                 "weight": 0.2,
                 "value": 2.42
@@ -90,7 +90,7 @@
         "score": 2.75,
         "states": [
             {
-                    "iso": "cn-1",
+                    "iso": "cn-35",
                     "name": "China 1",
                     "state_ranking": 1,
                     "score": 1.86,
@@ -126,7 +126,7 @@
                     ]
                 },
                 {
-                    "iso": "cn-2",
+                    "iso": "cn-62",
                     "name": "China 2",
                     "state_ranking": 2,
                     "score": 1.4,

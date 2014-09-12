@@ -90,6 +90,9 @@ a:active{
       display: none;
     }
   }
+  .layout--entry__heading & {
+    margin-left: 0.5rem;
+  }
 }
 
 .label-grid-on {
@@ -100,6 +103,57 @@ a:active{
   background: tint($primary-color, 60%);
   .table & {
      @extend .visually-hidden;
+  }
+}
+
+// Legends
+
+.params-legend {
+  dt {
+    position: relative;
+    @extend .hd-label;
+    @extend .truncated;
+    margin-left: 5.5rem;
+    line-height: 1.5rem;
+    padding: 0 0 0 1rem;
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+      margin-top: -0.25rem;
+      content: '';
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: $global-rounded;
+    }
+    &.param-1:before {
+      background: $infograph-color-a;
+    }
+    &.param-2:before {
+      background: $infograph-color-b;
+    }
+    &.param-3:before {
+      background: $infograph-color-c;
+    }
+    &.param-4:before {
+      background: $infograph-color-d;
+    }
+  }
+  dd {
+    float: left;
+    width: 4.5rem;
+    clear: left;
+    margin-top: -1.5rem;
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    line-height: 1.5rem;
+    small {
+      font-weight: normal;
+      font-size: 0.85rem;
+      color: tint($primary-color, 60%);
+      margin-left: 0.5rem;
+    }
   }
 }
 
@@ -276,8 +330,6 @@ a:active{
   }
 }
 
-
-
 .layout--home,
 .layout--entry,
 .layout--page {
@@ -312,15 +364,35 @@ a:active{
 .layout--page {
 
   &__heading {
-    @include col(8/12);
+    @include col(6/12);
+    position: relative;
+    @media #{$large-up} {
+      @include col(8/12);
+    }
   }
 
   &__tools {
-    @include col(4/12);
+    @include col(6/12);
+    margin: 0.125rem 0;
+    @media #{$small-up} {
+      margin: 0.25rem 0;
+    }
+    @media #{$large-up} {
+      @include col(4/12);
+    }
+  }
+  
+  &__title {
+    @extend .hd-xl;
+    margin-bottom: 0;
   }
 
-  &__title,
   &__subtitle {
+    position: absolute;
+    top: -1.25rem;
+    left: 0;
+    z-index: 10;
+    @extend .hd-label;
     margin-bottom: 0;
   }
 
@@ -331,6 +403,15 @@ a:active{
     }
   }
 
+}
+
+.layout--entry {
+  &__header {
+    padding-top: 3rem;
+  }
+  &__title {
+    float: left;
+  }
 }
 
 // LAYOUT: POLICIES
@@ -366,6 +447,9 @@ a:active{
     margin: 0 0 0 0.5rem;
     float: left;
   }
+  > li:first-child {
+    margin-left: 0;
+  }
 }
 
 .col--main {
@@ -400,7 +484,6 @@ a:active{
 #section-switch {
   margin-bottom: 2rem;
 }
-
 
 // SITE FOOTER
 
@@ -478,7 +561,29 @@ a:active{
   font-family: $brand-font-family;
   color: tint($primary-color, 60%);
   margin-bottom: 0;
+  font-size: 0.85rem;
   @media #{$xlarge-up} {
     float: right;
   }
 }
+
+// MODALS
+
+// Welcome
+#welcome {
+  .modal__inner {
+    color: #fff;
+    @extend .antialiased;
+    background: tint($primary-color, 20%) url(../images/layout/cover-img.jpg) no-repeat center bottom;
+    background-size: cover;
+  }
+  .modal__title a em {
+    font-style: normal;
+    color: #fff;
+  }
+  .modal__body {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+}
+
