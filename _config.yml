@@ -13,6 +13,7 @@ collections:
     layout_vars:
       type: region
       subtitle: Region
+      include_map: true
     
   es_region:
     output: true
@@ -23,7 +24,8 @@ collections:
       es: es_region
     layout_vars:
       type: region
-      subtitle: Region
+      subtitle: Región
+      include_map: true
       
   en_country:
     output: true
@@ -90,3 +92,23 @@ collections:
     layout_vars:
       type: parameter
       subtitle: Parameter
+
+  en_page:
+    output: true
+    permalink: /en/:path/
+    lang: en
+    i18n:
+      en: en_page
+      es: es_page
+    layout_vars:
+      type: page
+      
+  es_page:
+    output: true
+    permalink: /es/:path/
+    lang: es
+    i18n:
+      en: en_page
+      es: es_page
+    layout_vars:
+      type: page

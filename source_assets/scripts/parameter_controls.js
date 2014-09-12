@@ -1,28 +1,49 @@
 $(document).ready(function() {
-  
+
   // Stop here if the parameters do not exist.
   if ($('#parameters-controls').length === 0) {
     return;
   }
-  
+
   var header_height = $('#site-header').outerHeight();
-  
+
   var check_sticky = function() {
      if ($(document).scrollTop() >= header_height) {
-       $('#parameters-controls').addClass('sticky');
+       if (!$('#parameters-controls').hasClass('sticky')) {
+         $('#parameters-controls').addClass('sticky');
+         check_sticky_padding();
+       }
      }
      else {
        $('#parameters-controls').removeClass('sticky');
+       check_sticky_padding();
      }
   };
-  
+
+  // When the parameter controls become sticky
+  // its height must be added as a padding to the parent
+  // to make up for its absence.
+  var check_sticky_padding = function() {
+    var parameter_controls = $('#parameters-controls');
+    if (parameter_controls.css('position') == 'fixed') {
+      var parameter_height = parameter_controls.outerHeight();
+      parameter_controls.parent().css('padding-top', parameter_height);
+    }
+    else {
+      parameter_controls.parent().css('padding-top', 0);
+    }
+  };
+
   // Setup listeners.
   $(document).on('scroll', check_sticky);
-  $(window).on('resize', debounce(function() { header_height = $('#site-header').outerHeight(); }, 50));
-  
+  $(window).on('resize', debounce(function() {
+    header_height = $('#site-header').outerHeight();
+    check_sticky_padding();
+  }, 50));
+
   check_sticky();
-  
-  var appElement = document.querySelector('[ng-app=countryApp]');
+
+  var appElement = document.querySelector('[ng-app=countryListApp]');
   var countryAppScope = angular.element(appElement).scope();
   // Slider group for homepage.
   $('.slider-group').sliderGroup({
@@ -93,7 +114,16 @@ $(document).ready(function() {
     });
 
     // Temp data!
-    $('#res').html('p1: ' + data['1'] + '<br>p2: ' + data['2'] + '<br>p3: ' + data['3'] + '<br>p4: ' + data['4']);
+    $('.slider-value.one').text(data['1'] + '%');
+    $('.slider-value.two').text(data['2'] + '%');
+    $('.slider-value.three').text(data['3'] + '%');
+    $('.slider-value.four').text(data['4'] + '%');
+  });
+  
+  // Reset button.
+  $('#vis-controls .reset').click(function(e) {
+    e.preventDefault();
+    $('#vis-controls.slider-group').sliderGroup('reset');
   });
   
 });

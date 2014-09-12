@@ -3,68 +3,27 @@ layout: base
 title : Global
 id: index
 lang: en
----
-<style type="text/css" media="screen">
-  .lock {
-    background-color: green;
-  }
-	.locked {
-	  background-color: red;
-	}
-</style>
 
-<article class="layout--home">
+include_map: true
+---
+<section class="layout--home">
   <header class="layout--home__header sticky" id="parameters-controls">
     <div class="row--contained">
       <div class="layout--home__heading">
         <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
       </div>
       <div class="layout--home__tools">
-        <div id="vis-controls" class="slider-group">
-          <div class="control">
-            <h3>Enabling framework</h3>
-            <div class="slider" id='1'></div>
-            <button class="lock">Lock</button>
-          </div>
-          <div class="control">
-            <h3>Financing & Investment</h3>
-            <div class="slider" id='2'></div>
-            <button class="lock">Lock</button>
-          </div>
-          <div class="control">
-            <h3>Value Chains</h3>
-            <div class="slider" id='3'></div>
-            <button class="lock">Lock</button>
-          </div>
-          <div class="control">
-            <h3>GHG Management</h3>
-            <div class="slider" id="4"></div>
-            <button class="lock">Lock</button>
-          </div>
-        </div>
-        <div id="res" style="clear:both"></div>
+        {% include weight_changers.html %}
       </div>
     </div>
   </header>
 
   <div class="layout--home__body">
-    <div id="index-viz" class="row--full map">
-      <p>Insert map here.</p>
-    </div>
+    <div id="index-viz" class="row--full map"><!-- Insert map here. --></div>
 
     <div class="row--contained">
-      <script>
-        // Country index to retrieve the url.
-        CS.countryIndex = {
-          {% for country in site.en_country %}
-            "{{country.id}}":"{{site.domain}}{{country.url}}",
-          {% endfor %}
-        };
-      </script>
-
+      {% include country_state_index.html %}
       {% include country_table.html %}
     </div>
   </div>
-
-  <script src="{{ site.domain }}/assets/scripts/vendor/map-dependencies.min.js"></script>
-</article>
+</section>

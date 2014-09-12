@@ -158,7 +158,7 @@
  */
 [disabled].noUi-connect,
 [disabled] .noUi-connect {
-	background: #B8B8B8;
+	/*background: #B8B8B8;*/
 }
 [disabled] .noUi-handle {
 	cursor: not-allowed;

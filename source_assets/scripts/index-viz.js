@@ -1,75 +1,80 @@
 $(document).ready(function() {
 
-  var rank = function (parent) {
+  var rank = function () {
 
-    var $parent = $(parent),
-      map = L.mapbox.map('index-viz', 'derrr.f5dvlsor')
-        .setView([0,0], 2)
+    // Never used.
+    // var $parent = $(parent);
+    var map = L.mapbox.map('index-viz', 'derrr.f5dvlsor')
+        .setView([0,0], 2);
 
-      ,point = function(x, y) {
-        var pt = map.latLngToLayerPoint([y, x]);
-        this.stream.point(pt.x, pt.y);
-      }
-      ,projection = d3.geo.transform({point: point})
-      ,path = d3.geo.path().projection(projection)
+    var point = function(x, y) {
+      var pt = map.latLngToLayerPoint([y, x]);
+      this.stream.point(pt.x, pt.y);
+    };
 
-      ,clicked = false
-      ,tooltip = d3.tip().attr('class', 'rank-tooltip').html(function(d) {
-        var d = d.rank,
-          rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
-        return [
-          '<div class="rank-tooltip-head"><label>Region goes here</label>'
-          ,'<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>'
-          ,'<div class="rank-tooltip-body">'
-          ,'<table><tr><td class="first">' + d.overall_ranking, '</td><td>Rank</td></tr>'
-          ,'<tr><td class="first">' + d.score, '</td><td>Score</td></tr>'
+    var projection = d3.geo.transform({point: point});
 
-          // four indicators
-          ,'<tr><td class="first">' + d.parameters[0].value
-          ,'</td><td class="tooltip-table-indicator indicator-0">Enabling Framework</td></tr>'
+    var path = d3.geo.path().projection(projection);
+    var clicked = false;
 
-          ,'<tr><td class="first">' + d.parameters[1].value
-          ,'</td><td class="tooltip-table-indicator indicator-1">Financing & Investment</td></tr>'
+    var tooltip = d3.tip().attr('class', 'rank-tooltip').html(function(d) {
+      d = d.rank;
+      // Never used.
+      // var rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
 
-          ,'<tr><td class="first">' + d.parameters[2].value
-          ,'</td><td class="tooltip-table-indicator indicator-2">Value Chains</td></tr>'
+      return [
+        '<div class="rank-tooltip-head"><label>Region goes here</label>',
+        '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
+        '<div class="rank-tooltip-body">',
+        '<table><tr><td class="first">' + d.overall_ranking, '</td><td>Rank</td></tr>',
+        '<tr><td class="first">' + d.score, '</td><td>Score</td></tr>',
 
-          ,'<tr><td class="first">' + d.parameters[3].value
-          ,'</td><td class="tooltip-table-indicator indicator-3">GHG Management</td></tr>'
+        // four indicators
+        '<tr><td class="first">' + d.parameters[0].value,
+        '</td><td class="tooltip-table-indicator indicator-0">Enabling Framework</td></tr>',
 
-          ,'</table>'
-          ,'<button class="rank-tooltip-link">View Country &rsaquo;</button>'
-          ,'</div>'
+        '<tr><td class="first">' + d.parameters[1].value,
+        '</td><td class="tooltip-table-indicator indicator-1">Financing & Investment</td></tr>',
 
-        ].join(' ');
-      })
+        '<tr><td class="first">' + d.parameters[2].value,
+        '</td><td class="tooltip-table-indicator indicator-2">Value Chains</td></tr>',
+
+        '<tr><td class="first">' + d.parameters[3].value,
+        '</td><td class="tooltip-table-indicator indicator-3">GHG Management</td></tr>',
+
+        '</table>',
+        '<button class="rank-tooltip-link">View Country &rsaquo;</button>',
+        '</div>'
+      ].join(' ');
+
+    });
+
       // UI element for toggling the map
-      ,$countryFilter = $('<ul>', {
+    var $countryFilter = $('<ul>', {
         'class': 'leaflet-control bttn-group bttn-group-s bttn-list map-country-toggle'
-      })
-      ,svg = d3.select(map.getPanes().overlayPane)
-        .append('svg:svg')
-        .call(tooltip)
-      ,g = svg.append('svg:g').attr('class', 'leaflet-zoom-hide')
+    });
+    var svg = d3.select(map.getPanes().overlayPane)
+      .append('svg:svg')
+      .call(tooltip);
+    var g = svg.append('svg:g').attr('class', 'leaflet-zoom-hide');
 
-      // ,radius = d3.scale.sqrt().range([4, 24])
+    // var radius = d3.scale.sqrt().range([4, 24]);
 
-      // placeholder variables to query via http request
-      ,land
-      ,indicators
-      ,markers
+    // placeholder variables to query via http request
+    var land;
+    var indicators;
+    var markers;
 
-      // 1: top ten; -1: bottom ten; 0: all
-      ,countryFilter = {
-        'bottom-ten': -1
-        ,'top-ten': 1
-        ,'all': 0
-      }
-      ,visibleCountries = countryFilter['top-ten']
-      ,zoom = map.getZoom()
+    // 1: top ten; -1: bottom ten; 0: all
+    var countryFilter = {
+      'bottom-ten': -1,
+      'top-ten': 1,
+      'all': 0
+    };
+    var visibleCountries = countryFilter['top-ten'];
+    var zoom = map.getZoom();
 
-      ,undef
-    ;
+    var undef = void 0;
 
     queue()
     .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
@@ -82,11 +87,10 @@ $(document).ready(function() {
       land = topojson.feature(geography, geography.objects.countries).features;
       indicators = countryRank;
 
-      var lookup = {}
-        ,max = []
-        ,filtered = []
-        ,iso
-      ;
+      var lookup = {};
+      var max = [];
+      var filtered = [];
+      var iso;
 
       // create a look-up table for each indicator by country code
       // also get a list of each overall ranking to create color scale
@@ -106,20 +110,22 @@ $(document).ready(function() {
         }
       }
 
-      land = filtered.sort(function(a, b) { return a.d - b.d });
-      reset(), redraw();
+      land = filtered.sort(function(a, b) { return a.d - b.d; });
+      reset();
+      redraw();
 
       // creating the country filter
       $countryFilter.on('click', 'button', function(e) {
-        var cls = e.currentTarget.className
-          ,toShow = countryFilter[cls.slice(cls.indexOf('show') + 5)];
+        var cls = e.currentTarget.className;
+        var toShow = countryFilter[cls.slice(cls.indexOf('show') + 5)];
 
         if (visibleCountries === toShow) return;  // ignore if already showing
         $countryFilter.find('.active').removeClass('active');
         e.currentTarget.className = 'active ' + cls;  // selection class
         toZoom(visibleCountries = toShow);  // zoom to appropriate level
         redraw();
-      })
+      });
+
       // Creating each button, making top-ten the first active button
       $.each(countryFilter, function(key) {
         var cls = 'bttn bttn-default show-' + key;
@@ -129,15 +135,15 @@ $(document).ready(function() {
         $('<button>', { 'type': 'button', 'class': cls, 'text': key.split('-').join(' ')})
           .appendTo($countryFilter);
       });
+
       $countryFilter.appendTo($('.leaflet-bottom.leaflet-left'));
     });
 
     function reset() {
-      var bounds = path.bounds({type: 'FeatureCollection', features: land})
-        ,topLeft = bounds[0]
-        ,bottomRight = bounds[1]
-        ,transform = [-topLeft[0] + 50, -topLeft[1] + 50]
-      ;
+      var bounds = path.bounds({type: 'FeatureCollection', features: land});
+      var topLeft = bounds[0];
+      var bottomRight = bounds[1];
+      var transform = [-topLeft[0] + 50, -topLeft[1] + 50];
 
       svg.attr('width', bottomRight[0] - topLeft[0] + 100)
         .attr('height', bottomRight[1] - topLeft[1] + 100)
@@ -162,10 +168,11 @@ $(document).ready(function() {
       .enter().append('g')
         .attr('class', 'rank-marker')
         .style('opacity', 0)
-        .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
-      ;
+        .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
 
-      var circles = markers.append('circle')
+      // Never used.
+      // var circles = markers.append('circle')
+      markers.append('circle')
         .attr('r', 16)
         .on('mouseover', function(d) {
           if (!clicked) { tooltip.show(d); }
@@ -174,12 +181,14 @@ $(document).ready(function() {
           if (!clicked) { tooltip.hide(); }
         })
         .on('click', function(d) {
-          clicked = true, tooltip.show(d);
+          clicked = true;
+          tooltip.show(d);
           // close tooltip on next click, unless it's on another circle el
           window.setTimeout(function() {
             $(document).one('click', function(e) {
               if (e.target.localName !== 'circle') {
-                clicked = false, tooltip.hide();
+                clicked = false;
+                tooltip.hide();
               }
             });
           }, 100);
@@ -188,15 +197,12 @@ $(document).ready(function() {
 
       markers.append('text')
         .attr('dy', '6px')
-        .text(function(d) { return d.d < 10 ?
-              '0' + d.d : d.d  })
-      ;
+        .text(function(d) { return d.d < 10 ? '0' + d.d : d.d; });
 
       markers.transition()
-        .delay(function(d, i) { return 200 + i * 20 })
+        .delay(function(d, i) { return 200 + i * 20; })
         .duration(200)
-        .style('opacity', 1)
-      ;
+        .style('opacity', 1);
     }
 
     function toZoom(visibleCountries) {
@@ -207,6 +213,10 @@ $(document).ready(function() {
         map.setZoom(2);
       }
     }
+
+    map.on('dragstart', function() {
+      tooltip.hide();
+    });
 
     map.on('viewreset', function() {
       reset();
@@ -224,8 +234,10 @@ $(document).ready(function() {
       // just need to re-translate the centroids
       else {
         markers
-          .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
+          .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
       }
+
+      tooltip.hide();
     });
 
     // listening for weight changer changes
@@ -233,28 +245,32 @@ $(document).ready(function() {
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
         d = land[i].rank.parameters;
 
-        land[i].rank.score = (Math.round(weight['1'] * d[0].value + weight['2'] * d[1].value
-          + weight['3'] * d[2].value + weight['4'] * d[3].value)) / 100;
+        land[i].rank.score = (Math.round(weight['1'] * d[0].value + weight['2'] * d[1].value +
+          weight['3'] * d[2].value + weight['4'] * d[3].value)) / 100;
 
       }
-      land = land.sort(function(a, b) { return b.rank.score - a.rank.score });
+      land = land.sort(function(a, b) { return b.rank.score - a.rank.score; });
       for(i = 0; i < ii; ++i) {
         land[i].d = land[i].rank.overall_ranking = i + 1;
       }
       redraw();
     }, 100, false);
+
     $('.slider-group').on('update-sliders', updateSliders);
   };
 
 
-  // check to see if anything has a class of map
+  // Since the map holder is index-viz check if it exists.
   // if false, probably isn't the index page so do nothing
-  var parent = document.querySelectorAll('.map');
-  if (!parent.length) return;
-
+  var parent = document.querySelector('#index-viz');
+  if (!parent) {
+    return;
+  }
   // load the map
   else {
-    var ranking = new rank(parent);
+    // Never used.
+    // var ranking = new rank(parent);
+    new rank();
   }
 
 });
