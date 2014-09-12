@@ -45,9 +45,10 @@ function setupCommonTableMethods(scope) {
   };
   
   scope.getTooltipContent = function(params) {
-    var t = '<dl>';
+    var t = '<dl class="params-legend">';
     angular.forEach(params, function(param) {
-      t += '<dt>';
+      var className = 'param-' + param.id;
+      t += '<dt class="' + className + '">';
       t += param.name;
       t += '</dt>';
       t += '<dd>';
