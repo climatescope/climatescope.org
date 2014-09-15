@@ -102,8 +102,36 @@ layout: entry
   <!-- Template for the In Detail tab -->
   <script type="text/ng-template" id="in_detail.html">
     <section id="country-detail">
+      {% case language %}
+      {% when 'en' %}
       <h1 class="visually-hidden">In Detail</h1>
-      {% include poc_country-table.html %}
+      {% when 'es' %}
+      <h1 class="visually-hidden">En Detalle</h1>
+      {% endcase %}
+      <table class="table poc-detailed-data">
+        <thead>
+        {% case language %}
+        {% when 'en' %}
+          <tr>
+            <th><span class="visually-hidden">Parameter</span></th>
+            <th>Score</th>
+            <th>Rank</th>
+          </tr>
+        {% when 'es' %}
+          <tr>
+            <th><span class="visually-hidden">Tema</span></th>
+            <th>Puntaje</th>
+            <th>Posición</th>
+          </tr>
+        {% endcase %}
+        </thead>
+        <tbody ng-repeat="param in detailsCtrl.parameters">
+          <tr class="param"><td class="label">//param.name// </td><td class="value">//param.data[0].value//<td></td></td></tr>
+          <tr class="ind_group" ng-repeat-start="ind_group in param.indicator_groups"><td class="label">//ind_group.name//</td><td><td></td></td></tr>
+          <tr class="ind" ng-repeat-end ng-repeat="ind in ind_group.indicators"><td class="label">//ind.name// </td><td class="value">//ind.data[0].value//<td></td></td></tr>
+          
+        </tbody>
+      </table>
     </section>
   </script>
   
