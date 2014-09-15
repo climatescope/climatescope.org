@@ -71,6 +71,9 @@ $(document).ready(function() {
         country.overall_ranking = key + 1;
 
         // Do everything done to countries to the states.
+        if (!country.states) {
+          return;
+        }
         // --- States ---
         angular.forEach(country.states, function(state) {
           // Update params and calc score.
