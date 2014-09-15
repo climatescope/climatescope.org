@@ -295,15 +295,12 @@ a:active{
 // LAYOUT: HOME
 
 .layout--home {
-
   &__tools {
     @include col(12/12);
   }
-
   .intro {
     height: 20rem;
   }
-
 }
 
 #vis-controls {
@@ -480,6 +477,7 @@ a:active{
     float: left;
   }
 }
+
 
 // LAYOUT: ENTRY
 // COUNTRY/STATE
@@ -661,6 +659,7 @@ a:active{
   }
 
 }
+
 
 // SITE FOOTER
 
