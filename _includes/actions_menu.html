@@ -8,7 +8,7 @@
 {% case language %}
 {% when 'en' %}
 
-  {% if include.download_exc != true %}
+  {% if include.download_exc != true and page.id != 'policies' %}
     <li class="dropdown">
       <a href="#" title="Download data" class="bttn bttn-success dropdown-toggle download" data-toggle="dropdown">Download</a>
       <ul class="dropdown-menu dropdown-menu-right" role="menu">
@@ -27,7 +27,7 @@
 
 {% when 'es' %}
 
-  {% if include.download_exc != true %}
+  {% if include.download_exc != true and page.id != 'policies' %}
     <li class="dropdown">
       <a href="#" title="Descargar datos" class="bttn bttn-success dropdown-toggle download" data-toggle="dropdown">Descargar</a>
       <ul class="dropdown-menu dropdown-menu-right" role="menu">
