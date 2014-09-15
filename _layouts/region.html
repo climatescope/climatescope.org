@@ -7,7 +7,7 @@ layout: entry
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
 
-<div id="index-viz" class="row--full map"><!-- Insert map here. --></div>
+<div id="index-viz" class="row--full intro"><!-- Insert map here. --></div>
 
 <div class="row--contained">
 
@@ -17,7 +17,31 @@ layout: entry
   </div>
 
   <div class="col--sec">
-    <p><a href="/" title="Global" class="bttn bttn-cta">View the global rank ›</a></p>
+    {% case language %}
+    {% when 'en' %}
+      <dl class="stats-list duo">
+        <dt>Lorem</dt>
+        <dd>40<sup>%</sup></dd>
+        <dt>Ipsum</dt>
+        <dd>2.25</dd>
+      </dl>
+      <ul class="ctas-list">
+        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/" title="View the global rank">View the global rank</a></li>
+      </ul>
+
+    {% when 'es' %}
+
+      <dl class="stats-list duo">
+        <dt>Lorem</dt>
+        <dd>40<sup>%</sup></dd>
+        <dt>Ipsum</dt>
+        <dd>2.25</dd>
+      </dl>
+      <ul class="ctas-list">
+        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/" title="View the global rank">View the global rank ES</a></li>
+      </ul>
+
+    {% endcase %}
   </div>
 
 </div>

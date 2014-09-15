@@ -1,8 +1,11 @@
 ---
 layout: entry
 ---
-
-
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
 
 <div class="row--contained">
 
@@ -12,23 +15,38 @@ layout: entry
   </div>
 
   <div class="col--sec">
-    <dl class="country-global-meta">
-      <dt>Weight</dt>
-      <dd>40%</dd>
-      <dt>Highest score</dt>
-      <dd>2.25</dd>
-      <dt>Lowest score</dt>
-      <dd>0.83</dd>
-    </dl>
+    {% case language %}
+    {% when 'en' %}
+      <dl class="stats-list uno">
+        <dt>Weight</dt>
+        <dd>40<sup>%</sup></dd>
+      </dl>
+      <dl class="stats-list duo">
+        <dt>Highest score</dt>
+        <dd>2.25 <small>(Brazil)</small></dd>
+        <dt>Lowest score</dt>
+        <dd>0.83  <small>(Botswana)</small></dd>
+      </dl>
+
+    {% when 'es' %}
+
+      <dl class="stats-list uno">
+        <dt>Weight</dt>
+        <dd>40<sup>%</sup></dd>
+      </dl>
+      <dl class="stats-list duo">
+        <dt>Highest score</dt>
+        <dd>2.25 <small>(Brazil)</small></dd>
+        <dt>Lowest score</dt>
+        <dd>0.83  <small>(Botswana)</small></dd>
+      </dl>
+
+    {% endcase %}
   </div>
 
 </div>
 
 <div class="row--contained">
-
-
-
-
 
 <script>
 
