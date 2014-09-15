@@ -1,6 +1,6 @@
 (function() {
   
-  CS.policyProxy = 'http://splinter.fs/climatescope/';
+  CS.policyProxy = 'http://146.185.136.6/climatescope/';
   
   // All the results from the API come in object format.
   // Repeats can't be sorted when looping over objects

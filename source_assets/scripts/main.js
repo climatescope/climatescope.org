@@ -24,13 +24,13 @@ $(function() {
   
   $('#welcome [data-modal-dismiss]').click(function(e) {
     e.preventDefault();
-    createCookie('welcome_modal', 'hide', 10, '/' + CS.lang);
+    createCookie('welcome_modal', 'hide', 10, CS.domain + '/' + CS.lang);
   });
   
   $('#welcome.modal').click(function(e) {
     // Prevent children from triggering this.
     if(e.target == e.currentTarget) {
-      createCookie('welcome_modal', 'hide', 10, '/' + CS.lang);
+      createCookie('welcome_modal', 'hide', 10, CS.domain + '/' + CS.lang);
     }
   });
   
