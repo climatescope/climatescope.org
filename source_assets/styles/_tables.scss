@@ -126,6 +126,15 @@
   }
 }
 
+.policies-table {
+  .cell-policy-name {
+    font-weight: $brand-font-bold;
+    a {
+      color: inherit;
+    }
+  }
+}
+
 .poc-detailed-data {
   .param td {
     font-weight: bold;

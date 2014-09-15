@@ -1,0 +1,193 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
+<div ng-app="policyApp">
+  
+  <!-- Template for the policy hub -->
+  <script type="text/ng-template" id="policy_list.html">
+  <section class="layout--hub policies">
+
+    <header class="layout--hub__header" ng-controller="policyFiltersController as filterCtrl">
+      <div class="row--contained">
+        <div class="layout--hub__heading">
+          <h1 class="layout--hub__title">Policies</h1>
+          <a href="" class="reset" title="Reset filters" ng-click="filterCtrl.disableFilters()"><span>Reset</span></a>
+        </div>
+        <div class="layout--hub__tools">
+          {% include actions_menu.html %}
+        </div>
+        
+        <div class="layout--hub__controls">
+          
+          <div class="control">
+            <label class="control-title" for="policy_country">Country:</label>
+            <select id="policy_country" name="policy_country" ng-model="filterCtrl.filters.country" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.country)" ng-change="filterCtrl.filters.state = null">
+              <option value="">-- Any --</option>
+            </select>
+          </div>
+          
+          <div class="control">
+            <label class="control-title" for="policy_state">State:</label>
+            <select id="policy_state" name="policy_state" ng-model="filterCtrl.filters.state" ng-options="value.id as value.name for value in filterCtrl.getSelectOptsState(filterCtrl.filterData.state)" ng-disabled="!filterCtrl.getSelectOptsState(filterCtrl.filterData.state).length">
+              <option value="">-- Any --</option>
+            </select>
+          </div>
+            
+          <div class="control">
+            <label class="control-title" for="policy_status">Status:</label>
+            <select id="policy_status" name="policy_status" ng-model="filterCtrl.filters.status" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.status)">
+              <option value="">-- Any --</option>
+            </select>
+          </div>
+          
+          <div class="control">
+            <button ng-click="filterCtrl.apply()" class="bttn bttn-default">Apply</button>
+          </div>
+          
+          <!-- <div class="control">
+            <label for="policy_subsector">Subsector:</label>
+            <select id="policy_subsector" name="policy_subsector" ng-model="filterCtrl.filters.subsector" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.subsector)">
+              <option value="">-- Any --</option>
+            </select>
+          </div> -->
+          
+        </div>
+        
+      </div>
+    </header>
+
+    <div class="layout--hub__body">
+      <div class="row--contained" ng-controller="policyTableController as tableCtrl">
+        
+        <table class="table policies-table" ng-show="tableCtrl.policies.length > 0" ng-if="!tableCtrl.loadingData">
+          <thead>
+            <tr>
+              <th>Policy Name</th>
+              <th>Country</th>
+              <th>Policy Mechanism</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="policy in tableCtrl.policies">
+             <td class="cell-policy-name"><a href="//tableCtrl.getPolicyLink(policy)//">//policy.name//</a></td>
+             <td>//policy.country[0].name//</td>
+             <td>//policy.type.mechanism[0].name//</td>
+             <td>//policy.status.name//</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div ng-show="tableCtrl.policies.length == 0" ng-if="!tableCtrl.loadingData">No results avaliable with current filters.</div>
+        
+        <div ng-if="tableCtrl.loadingData">
+          Loading data... Please wait.
+        </div>
+        
+      </div>
+    </div>
+
+  </section>
+  </script>
+  
+  <!-- Template for the policy -->
+  <script type="text/ng-template" id="policy.html">
+    <article class="layout--entry policies">
+
+      <header class="layout--entry__header" ng-if="!policyCtrl.loadingData">
+        <div class="row--contained">
+          <div class="layout--entry__heading">
+            <h1 class="layout--entry__title">//policyCtrl.policy.name//</h1>
+
+            {% case language %}
+            {% when 'en' %}
+
+              <p class="layout--entry__subtitle">Policy</p>
+
+            {% when 'es' %}
+
+              <p class="layout--entry__subtitle">Politica</p>
+
+            {% endcase %}
+
+          </div>
+          <div class="layout--entry__tools">
+            {% include actions_menu.html %}
+          </div>
+        </div>
+      </header>
+
+      <div class="layout--entry__body">
+        <div class="row--contained" ng-if="!policyCtrl.loadingData">
+          <div class="col--main">
+            <section>
+              <h1>Overview</h1>
+            	<div class="abstract" ng-bind-html="policyCtrl.policy.abstract | nl2br">//policyCtrl.policy.abstract//</div>
+            	<div class="description" ng-bind-html="policyCtrl.policy.description | nl2br"></div>
+            </section>
+            
+            <section>
+              <h1>Policy actions</h1>
+            	<dl>
+            		<dt ng-if="policyCtrl.policy.effectiveStartDate">Effective start date</dt>
+            		<dd ng-if="policyCtrl.policy.effectiveStartDate">//policyCtrl.policy.effectiveStartDate//</dd>
+            		<dt ng-if="policyCtrl.policy.legislationOrGovernance">Legislation or governance</dt>
+            		<dd ng-if="policyCtrl.policy.legislationOrGovernance">//policyCtrl.policy.legislationOrGovernance//</dd>
+            		<dt ng-if="policyCtrl.policy.legislationOrGovernanceInformation">Legislation or governance information</dt>
+            		<dd ng-if="policyCtrl.policy.legislationOrGovernanceInformation">//policyCtrl.policy.legislationOrGovernanceInformation//</dd>
+            		<dt ng-if="policyCtrl.policy.legislationOrGovernanceUrl.length">Legislation or governance url</dt>
+            		<dd ng-if="policyCtrl.policy.legislationOrGovernanceUrl.length">
+            		  <ul>
+            		    <li ng-repeat="policyUrl in policyCtrl.policy.legislationOrGovernanceUrl"><a href="//policyUrl.url//" title="Go to //policyUrl.label//">//policyUrl.label//</a></li>
+            		  </ul>
+            		</dd>
+            	</dl>
+            </section>
+            
+            <section>
+            	<h1>Subsector</h1>
+        			<ul>
+        				<li ng-repeat="policySubsector in policyCtrl.policy.subsector">//policySubsector.name//</li>
+        			</ul>
+            </section>
+            
+          </div>
+        
+          <div class="col--sec">
+            <section>
+            	<h1>Countries</h1>
+        			<ul>
+        				<li ng-repeat="policyCountry in policyCtrl.policy.country">//policyCountry.name//</li>
+        			</ul>
+            </section>
+            
+            <section>
+            	<h1>Attributes</h1>
+            	<dl>
+            		<dt>Status</dt>
+                <dd>//policyCtrl.policy.status.name//</dd>
+            		<dt ng-if="policyCtrl.policy.fundingMethod">Funding method</dt>
+                <dd ng-if="policyCtrl.policy.fundingMethod">//policyCtrl.policy.fundingMethod//</dd>
+            		<dt ng-if="policyCtrl.policy.process">Process</dt>
+                <dd ng-if="policyCtrl.policy.process" ng-bind-html="policyCtrl.policy.process | nl2br">//policyCtrl.policy.process//</dd>
+            	</dl>
+            </section>
+          </div>
+          
+        </div>
+        
+        <div class="row--contained" ng-if="policyCtrl.loadingData">
+          Loading data... Please wait.
+        </div>
+          
+      </div>
+    
+    </article>
+  </script>
+  
+  <div ng-view></div>
+
+</div>

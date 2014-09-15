@@ -65,7 +65,7 @@
   
   // Controller for the STATES TAB
   countryAppControllers.controller('StatesTabController', ['$http', '$route', '$location', 'CountryData', function($http, $route, $location, CountryData) {
-    _self = this;
+    var _self = this;
     
     // If there are no states for the country redirect.
     if (!CS.countryHasStates) {

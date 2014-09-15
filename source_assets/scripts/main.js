@@ -1,5 +1,5 @@
 $(function() {
-  
+
   $('[data-toggle="dropdown"]').click(function(e) {
     e.preventDefault();
     e.stopPropagation();
