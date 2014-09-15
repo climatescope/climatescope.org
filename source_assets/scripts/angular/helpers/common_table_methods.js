@@ -54,7 +54,9 @@ function setupCommonTableMethods(scope) {
       t += '<dd>';
       t += param.value;
       t += '<small>';
-      t += (param.weight * 100) + '%';
+      // 0.29 * 100 = 28.999999999999
+      // Round to solve the problem.
+      t += (Math.round(param.weight * 100 * 100) / 100) + '%';
       t += '</small>';
       t += '</dd>';
     });
