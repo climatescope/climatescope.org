@@ -22,9 +22,16 @@ $(function() {
     $('#welcome').addClass('revealed');
   }
   
-  $('[data-modal-dismiss]').click(function(e) {
+  $('#welcome [data-modal-dismiss]').click(function(e) {
     e.preventDefault();
     createCookie('welcome_modal', 'hide', 10, '/' + CS.lang);
+  });
+  
+  $('#welcome.modal').click(function(e) {
+    // Prevent children from triggering this.
+    if(e.target == e.currentTarget) {
+      createCookie('welcome_modal', 'hide', 10, '/' + CS.lang);
+    }
   });
   
 });

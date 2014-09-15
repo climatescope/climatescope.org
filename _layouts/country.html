@@ -26,8 +26,53 @@ layout: entry
     CS.countryHasStates = {{has_states}};
 </script>
 
-<div class="row--full map">
-  <p>Insert map here.</p>
+<div class="row--full intro">
+  {% include static_map.html %}
+  <div class="row--contained">
+    <dl class="meta-details">
+      {% case language %}
+      {% when 'en' %}
+
+      <dt>Gdp</dt>
+      <dd>$2,396bn</dd>
+      <dt>Seven-year Economic Growth Rate</dt>
+      <dd>6%</dd>
+      <dt>Population</dt>
+      <dd>198m</dd>
+      <dt>Total Clean Energy Investments</dt>
+      <dd>$82.2bn</dd>
+      <dt>Installed Power Capacity</dt>
+      <dd>123gw</dd>
+      <dt>Renewable Share</dt>
+      <dd>13%</dd>
+      <dt>Total Clean Energy Generation</dt>
+      <dd>57,400gwh</dd>
+      <dt>Top Energy Authority</dt>
+      <dd>Ministry Of Mines & Energy</dd>
+
+      {% when 'es' %}
+
+      <dt>Gdp</dt>
+      <dd>$2,396bn</dd>
+      <dt>Seven-year Economic Growth Rate</dt>
+      <dd>6%</dd>
+      <dt>Population</dt>
+      <dd>198m</dd>
+      <dt>Total Clean Energy Investments</dt>
+      <dd>$82.2bn</dd>
+      <dt>Installed Power Capacity</dt>
+      <dd>123gw</dd>
+      <dt>Renewable Share</dt>
+      <dd>13%</dd>
+      <dt>Total Clean Energy Generation</dt>
+      <dd>57,400gwh</dd>
+      <dt>Top Energy Authority</dt>
+      <dd>Ministry Of Mines & Energy</dd>
+
+      {% endcase %}
+
+    </dl>
+  </div>
 </div>
 
 <div class="row--contained">
@@ -38,16 +83,33 @@ layout: entry
   </div>
 
   <div class="col--sec">
-    <dl class="country-global-meta">
-      <dt>Rank</dt>
-      <dd>01</dd>
-      <dt>Score</dt>
-      <dd>2.25</dd>
-    </dl>
-    <ul class="country-ctas">
-      <li><a class="bttn bttn-cta" href="/" title="View policies">View policies (18) ›</a></li>
-      <li><a class="bttn bttn-cta" href="/" title="Compare to">Compare to ›</a></li>
-    </ul>
+    {% case language %}
+    {% when 'en' %}
+      <dl class="stats-list duo">
+        <dt>Rank</dt>
+        <dd>01</dd>
+        <dt>Score</dt>
+        <dd>2.25</dd>
+      </dl>
+      <ul class="ctas-list">
+        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.id }}" title="View policies">View policies <span class="badge">18</span></a></li>
+        <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
+      </ul>
+
+    {% when 'es' %}
+
+      <dl class="stats-list duo">
+        <dt>Rank</dt>
+        <dd>01</dd>
+        <dt>Score</dt>
+        <dd>2.25</dd>
+      </dl>
+      <ul class="ctas-list">
+        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/es/politicas/#/?country={{ page.id }}" title="View policies">View policies ES <span class="badge">18</span></a></li>
+        <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to ES</a></li>
+      </ul>
+
+    {% endcase %}
   </div>
 
 </div>
@@ -87,9 +149,11 @@ layout: entry
           <td class="cell-country"><a href="//statesCtrl.getStateUrl(state)//">//state.name//</a></td>
           <td>//state.score//</td>
           <td>
-            <ul class="table-bar">
-              <li ng-repeat="param in state.parameters" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
-            </ul>
+            <a href="" tooltip-animation="false" tooltip-placement="top" tooltip-trigger="focus" tooltip-html-unsafe="//statesCtrl.getTooltipContent(state.parameters)//">
+              <ul class="table-bar">
+                <li ng-repeat="param in state.parameters" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+              </ul>
+            </a>
           </td>
         </tr>
       </tbody>
@@ -109,11 +173,22 @@ layout: entry
   <!-- END TEMPLATES -->
   
   <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="CountryTabsController as navCtrl">
-    <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details">In detail</a></li>
-    {% if has_states %}
-    <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states">States/Provinces</a></li>
-    {% endif %}
-    <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study">Case study</a></li>
+    {% case language %}
+    {% when 'en' %}
+      <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="In detail">In detail</a></li>
+      {% if has_states %}
+      <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces</a></li>
+      {% endif %}
+      <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li>
+
+    {% when 'es' %}
+
+      <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="In detail">In detail ES</a></li>
+      {% if has_states %}
+      <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces ES</a></li>
+      {% endif %}
+      <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study ES</a></li>
+    {% endcase %}
   </ul>
   <div ng-view></div>
 

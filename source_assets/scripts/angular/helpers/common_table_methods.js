@@ -41,6 +41,27 @@ function setupCommonTableMethods(scope) {
       default:
         return '';
       break;
-    }    
+    }
+  };
+  
+  scope.getTooltipContent = function(params) {
+    var t = '<dl class="params-legend">';
+    angular.forEach(params, function(param) {
+      var className = 'param-' + param.id;
+      t += '<dt class="' + className + '">';
+      t += param.name;
+      t += '</dt>';
+      t += '<dd>';
+      t += param.value;
+      t += '<small>';
+      // 0.29 * 100 = 28.999999999999
+      // Round to solve the problem.
+      t += (Math.round(param.weight * 100 * 100) / 100) + '%';
+      t += '</small>';
+      t += '</dd>';
+    });
+    t += '</dl>';
+    
+    return t;
   };
 };

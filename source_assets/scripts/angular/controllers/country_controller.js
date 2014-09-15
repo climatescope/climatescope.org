@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('countryApp', ['ngRoute', 'countryAppControllers'], function($interpolateProvider) {
+  var app = angular.module('countryApp', ['ngRoute', 'countryAppControllers', 'ui.bootstrap'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('//');
     $interpolateProvider.endSymbol('//');
   });

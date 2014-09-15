@@ -52,7 +52,7 @@
   <div class="layout--policies__body">
     <div class="row--contained" ng-controller="policyTableController as tableCtrl">
       
-      <table class="table" ng-show="tableCtrl.policies.length > 0" ng-if="!tableCtrl.loadingData">
+      <table class="table policies-table" ng-show="tableCtrl.policies.length > 0" ng-if="!tableCtrl.loadingData">
         <thead>
           <tr>
             <th>Policy Name</th>
@@ -63,7 +63,7 @@
         </thead>
         <tbody>
           <tr ng-repeat="policy in tableCtrl.policies">
-           <td><a href="//tableCtrl.getPolicyLink(policy)//">//policy.name//</a></td>
+           <td class="cell-policy-name"><a href="//tableCtrl.getPolicyLink(policy)//">//policy.name//</a></td>
            <td>//policy.country[0].name//</td>
            <td>//policy.type.mechanism[0].name//</td>
            <td>//policy.status.name//</td>

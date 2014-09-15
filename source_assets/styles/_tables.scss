@@ -126,6 +126,15 @@
   }
 }
 
+.policies-table {
+  .cell-policy-name {
+    font-weight: $brand-font-bold;
+    a {
+      color: inherit;
+    }
+  }
+}
+
 .poc-detailed-data {
   .param td {
     font-weight: bold;
@@ -148,6 +157,7 @@
   background: tint($primary-color, 95%);
   padding: 0;
   margin: 0.125rem 0;
+  cursor: help;
 
   li {
     float: left;
