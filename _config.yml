@@ -1,5 +1,6 @@
 safe:           false
 domain:         http://localhost:4000
+#domain:         http://demo.flipside.org/climatescope
 name:           Global Climatescope 2014
 exclude:        ['node_modules', 'source_assets', 'Gruntfile.js', 'package.json', 'README.md']
 collections:
