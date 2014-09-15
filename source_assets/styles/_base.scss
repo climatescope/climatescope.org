@@ -298,9 +298,6 @@ a:active{
   &__tools {
     @include col(12/12);
   }
-  .intro {
-    height: 20rem;
-  }
 }
 
 #vis-controls {
@@ -395,6 +392,9 @@ a:active{
     h2 {
       @extend .hd-xxs;
     }
+  }
+  .intro {
+    height: 20rem;
   }
 }
 
@@ -762,4 +762,3 @@ a:active{
     line-height: 1.5rem;
   }
 }
-
