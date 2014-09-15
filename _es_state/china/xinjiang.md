@@ -1,7 +1,7 @@
 ---
 layout: state
 
-id: cn-54
+id: cn-65
 title: Xinjiang
 
 region: asia

@@ -1,8 +1,8 @@
 ---
 layout: state
 
-id: in-pb
-title: Punjab
+id: in-wb
+title: West Bengal
 
 region: asia
 country: in
