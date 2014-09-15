@@ -19,33 +19,67 @@ $(document).ready(function() {
 
     var tooltip = d3.tip().attr('class', 'rank-tooltip').html(function(d) {
       d = d.rank;
+      var tooltip_content = "";
       // Never used.
       // var rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
+      
+      switch(CS.lang) {
+        case 'en':
+          tooltip_content = [
+            '<div class="rank-tooltip-head"><label>Region goes here</label>',
+            '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
+            '<div class="rank-tooltip-body">',
+            '<table><tr><td class="first">' + d.overall_ranking, '</td><td>Rank</td></tr>',
+            '<tr><td class="first">' + d.score, '</td><td>Score</td></tr>',
+    
+            // four indicators
+            '<tr><td class="first">' + d.parameters[0].value,
+            '</td><td class="tooltip-table-indicator indicator-0">Enabling Framework</td></tr>',
+    
+            '<tr><td class="first">' + d.parameters[1].value,
+            '</td><td class="tooltip-table-indicator indicator-1">Financing & Investment</td></tr>',
+    
+            '<tr><td class="first">' + d.parameters[2].value,
+            '</td><td class="tooltip-table-indicator indicator-2">Value Chains</td></tr>',
+    
+            '<tr><td class="first">' + d.parameters[3].value,
+            '</td><td class="tooltip-table-indicator indicator-3">GHG Management</td></tr>',
+    
+            '</table>',
+            '<button class="rank-tooltip-link">View Country &rsaquo;</button>',
+            '</div>'
+          ].join(' ');
+        break;
+        
+        case 'es':
+          tooltip_content = [
+            '<div class="rank-tooltip-head"><label>Region goes here</label>',
+            '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
+            '<div class="rank-tooltip-body">',
+            '<table><tr><td class="first">' + d.overall_ranking, '</td><td>Rank</td></tr>',
+            '<tr><td class="first">' + d.score, '</td><td>Score</td></tr>',
+    
+            // four indicators
+            '<tr><td class="first">' + d.parameters[0].value,
+            '</td><td class="tooltip-table-indicator indicator-0">Enabling Framework ES</td></tr>',
+    
+            '<tr><td class="first">' + d.parameters[1].value,
+            '</td><td class="tooltip-table-indicator indicator-1">Financing & Investment ES</td></tr>',
+    
+            '<tr><td class="first">' + d.parameters[2].value,
+            '</td><td class="tooltip-table-indicator indicator-2">Value Chains ES</td></tr>',
+    
+            '<tr><td class="first">' + d.parameters[3].value,
+            '</td><td class="tooltip-table-indicator indicator-3">GHG Management ES</td></tr>',
+    
+            '</table>',
+            '<button class="rank-tooltip-link">View Country &rsaquo;</button>',
+            '</div>'
+          ].join(' ');
+        break;
+      }
 
-      return [
-        '<div class="rank-tooltip-head"><label>Region goes here</label>',
-        '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
-        '<div class="rank-tooltip-body">',
-        '<table><tr><td class="first">' + d.overall_ranking, '</td><td>Rank</td></tr>',
-        '<tr><td class="first">' + d.score, '</td><td>Score</td></tr>',
-
-        // four indicators
-        '<tr><td class="first">' + d.parameters[0].value,
-        '</td><td class="tooltip-table-indicator indicator-0">Enabling Framework</td></tr>',
-
-        '<tr><td class="first">' + d.parameters[1].value,
-        '</td><td class="tooltip-table-indicator indicator-1">Financing & Investment</td></tr>',
-
-        '<tr><td class="first">' + d.parameters[2].value,
-        '</td><td class="tooltip-table-indicator indicator-2">Value Chains</td></tr>',
-
-        '<tr><td class="first">' + d.parameters[3].value,
-        '</td><td class="tooltip-table-indicator indicator-3">GHG Management</td></tr>',
-
-        '</table>',
-        '<button class="rank-tooltip-link">View Country &rsaquo;</button>',
-        '</div>'
-      ].join(' ');
+      return tooltip_content;
 
     });
 

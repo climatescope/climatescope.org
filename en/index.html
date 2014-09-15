@@ -12,14 +12,15 @@ include_map: true
       <div class="layout--home__heading">
         <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
       </div>
-      <div class="layout--home__tools">
+      <div class="layout--home__controls">
         {% include weight_changers.html %}
       </div>
     </div>
   </header>
 
   <div class="layout--home__body">
-    <div id="index-viz" class="row--full map"><!-- Insert map here. --></div>
+
+    <div id="index-viz" class="row--full intro"><!-- Insert map here. --></div>
 
     <div class="row--contained">
       {% include country_state_index.html %}

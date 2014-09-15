@@ -49,7 +49,6 @@ a:active{
 // Row
 
 .row {
-
   &--contained {
     @include center($max-width);
     padding-left: 1rem;
@@ -63,7 +62,6 @@ a:active{
       padding-right: 3rem;
     }
   }
-
 }
 
 // Labels
@@ -103,6 +101,29 @@ a:active{
   background: tint($primary-color, 60%);
   .table & {
      @extend .visually-hidden;
+  }
+}
+
+// Badges
+.badge {
+  display: inline-block;
+  min-width: 0.85rem;
+  padding: 0.225rem 0.5rem;
+  font-size: 0.75rem;
+  font-family: $brand-font-family;
+  font-weight: $brand-font-bold;
+  text-transform: uppercase;
+  line-height: 0.85rem;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: rgba($primary-color, 0.4);
+  border-radius: $global-rounded;
+  margin-left: 0.25rem;
+  @extend .antialiased;
+  .bttn-cta & {
+    background-color: $secondary-color;
   }
 }
 
@@ -157,6 +178,15 @@ a:active{
   }
 }
 
+// Intro stripe
+
+.intro {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  background: tint($primary-color, 95%);
+}
+
+
 // STRUCTURE
 
 #site-canvas {
@@ -181,6 +211,7 @@ a:active{
   background: tint($primary-color, 95%);
   padding: 2rem 0;
 }
+
 
 // SITE HEADER
 
@@ -263,18 +294,9 @@ a:active{
 // LAYOUT: HOME
 
 .layout--home {
-
   &__tools {
     @include col(12/12);
   }
-
-  &__body {
-    padding: 0 0 2rem 0;
-    h2 {
-      @extend .hd-xxs;
-    }
-  }
-
 }
 
 #vis-controls {
@@ -330,10 +352,27 @@ a:active{
   }
 }
 
+// LAYOUT
+// Common styles
+
 .layout--home,
 .layout--entry,
-.layout--page {
+.layout--page,
+.layout--hub {
   &__header {
+    padding: 2rem 0;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    background-clip: padding-box;
+    margin-bottom: -2px;
+    position: relative;
+    z-index: 2;
+    @include transform(translate3d(0, 0, 0));
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease);
+    @include transition-delay(0);
     &.sticky {
       @media #{$medium-up} {
         width: 100%;
@@ -341,28 +380,82 @@ a:active{
         top: 0;
         left: 0;
         z-index: 1010;
+        margin-bottom: 0;
+        border-bottom: 4px solid #ccc;
+        border-bottom: 4px solid rgba(0, 0, 0, 0.05);
       }
+    }
+  }
+  &__body {
+    padding: 2rem 0;
+    h2 {
+      @extend .hd-xxs;
+    }
+  }
+  .intro {
+    height: 20rem;
+  }
+}
+
+.actions-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  float: right;
+  font-size: 0;
+  > li {
+    margin: 0 0 0 0.5rem;
+    float: left;
+  }
+  > li:first-child {
+    margin-left: 0;
+  }
+}
+
+.layout--home__header,
+.layout--hub__header {
+  .reset {
+    float: left;
+    margin-left: 0.5rem;
+    color: tint($primary-color, 40%);
+    &:before {
+      @extend .icon-refresh;
+    }
+    span {
+      @extend .visually-hidden;
     }
   }
 }
 
-.layout--home,
-.layout--entry,
-.layout--page,
-.layout--policies {
-  &__header {
-    padding: 2rem 0;
-    background: #fff;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-    background-clip: padding-box;
+.layout--hub__controls,
+.layout--home__controls {
+  @include col(12/12);
+  .control-title {
+    @extend .hd-label;
+    @extend .truncated;
+    width: 100%;
   }
 }
 
-// LAYOUT: ENTRY/PAGE
+.col--main {
+  @include col(7/12);
+  margin-bottom: 2rem;
+  @media #{$large-up} {
+    @include col(8/12);
+  }
+}
+
+.col--sec {
+  @include col(5/12);
+  margin-bottom: 2rem;
+  @media #{$large-up} {
+    @include col(4/12);
+  }
+}
 
 .layout--entry,
-.layout--page {
-
+.layout--page,
+.layout--hub, {
   &__heading {
     @include col(6/12);
     position: relative;
@@ -370,23 +463,73 @@ a:active{
       @include col(8/12);
     }
   }
-
+  &__title {
+    @extend .hd-xl;
+    margin-bottom: 0;
+    float: left;
+  }
   &__tools {
     @include col(6/12);
-    margin: 0.125rem 0;
-    @media #{$small-up} {
-      margin: 0.25rem 0;
-    }
+    margin-right: 0 !important;
     @media #{$large-up} {
       @include col(4/12);
     }
   }
-  
-  &__title {
-    @extend .hd-xl;
+}
+
+
+// LAYOUT: HOME
+
+.layout--home {
+  .intro {
+    height: 20rem;
+  }
+}
+
+.layout--home__controls {
+  .prime-title {
+    @extend .hd-xxs;
+    float: left;
+  }
+  .control {
+    @include col(3/12);
+    &.first {
+      clear: left;
+    }
+  }
+  .slider {
+    margin-bottom: 0.75rem;
+  }
+  .control.a .noUi-connect {
+    background: $infograph-color-a;
+  }
+  .control.b .noUi-connect {
+    background: $infograph-color-b;
+  }
+  .control.c .noUi-connect {
+    background: $infograph-color-c;
+  }
+  .control.d .noUi-connect {
+    background: $infograph-color-d;
+  }
+  .slider-value {
+    @extend .hd-xxs;
+    float: left;
+    line-height: 2rem;
     margin-bottom: 0;
   }
+  .lock {
+    float: right;
+  }
+}
 
+
+// LAYOUT: ENTRY/PAGE
+
+.layout--entry {
+  &__header {
+    padding-top: 3rem;
+  }
   &__subtitle {
     position: absolute;
     top: -1.25rem;
@@ -395,32 +538,13 @@ a:active{
     @extend .hd-label;
     margin-bottom: 0;
   }
-
-  &__body {
-    padding: 2rem 0;
-    h2 {
-      @extend .hd-xxs;
-    }
-  }
-
 }
 
-.layout--entry {
-  &__header {
-    padding-top: 3rem;
-  }
-  &__title {
-    float: left;
-  }
-}
 
-.region .layout--entry__body {
-  padding-top: 0;
-}
+// LAYOUT: ENTRY
+// COUNTRY/STATE
 
-// LAYOUT: ENTRY/COUNTRY
-
-.country-ctas {
+.ctas-list {
   list-style: none;
   padding: 0;
   li {
@@ -428,17 +552,85 @@ a:active{
   }
 }
 
+.stats-list {
+  text-align: center;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 0;
+  &:after {
+    content: '';
+    position: absolute;
+    background: tint($primary-color, 90%);
+  }
+  dt, dd {
+    padding: 0 1rem;
+  }
+  dt {
+    @extend .hd-label;
+    @extend .truncated;
+  }
+  dd {
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    sup {
+      font-size: 1rem;
+      top: -1rem;
+    }
+    small {
+      @extend .hd-label;
+      display: block;
+    }
+  }
+  &.uno {
+    margin-bottom: 0;
+    &:after {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+    }
+    dt, dd {
+      width: 100%;
+    }
+  }
+  &.duo {
+    margin-bottom: 2rem;
+    &:after {
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+    }
+    dt, dd {
+      width: 50%;
+    }
+    dd:nth-child(2) {
+      float: left;
+    }
+    dt:nth-child(3) {
+      float: right;
+      margin-top: -1.25rem;
+    }
+    dd:nth-child(4) {
+      float: right;
+    }
+  }
+}
+
 #section-switch {
   margin-bottom: 2rem;
 }
 
-.layout--entry.country {
+.layout--entry.country,
+.layout--entry.state {
   .intro {
     position: relative;
     overflow: hidden;
     height: 16rem;
-    margin-bottom: 2rem;
-    background: tint($primary-color, 95%);
     .row--contained {
       position: absolute;
       top: 0;
@@ -484,11 +676,6 @@ a:active{
       text-transform: uppercase;
     }
   }
-  .layout--entry {
-    &__body {
-      padding: 0 0 2rem 0;
-    }
-  }
   @media #{$medium-up} {
     .intro {
       img {
@@ -512,60 +699,60 @@ a:active{
   }
 }
 
-// LAYOUT: POLICIES
+// LAYOUT HUB
+// POLICIES
 
-.layout--policies {
-
-  &__tools {
-    @include col(12/12);
-    padding-top: 1rem;
-  }
-
-  &__title,
-  &__subtitle {
-    margin-bottom: 0;
-  }
-
-  &__body {
-    padding: 2rem 0;
-    h2 {
-      @extend .hd-xxs;
+.layout--hub {
+  
+  &__controls {
+    .control {
+      @include col(3/12);
+      select {
+        display: block;
+        width: 100%;
+        &:disabled {
+          cursor: not-allowed;
+        }
+      }
+      .bttn {
+        margin-top: 1.15rem;
+      }
     }
   }
-
 }
 
-// MOVE ME /////////
-
-.actions-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  float: right;
-  font-size: 0;
-  > li {
-    margin: 0 0 0 0.5rem;
-    float: left;
+.layout--entry.policies {
+  .col--main,
+  .col--sec {
+    section {
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid tint($primary-color, 90%);
+      > h1 {
+        @extend .hd-xxs;
+      }
+      dl {
+        > :last-child {
+          margin-bottom: 0;
+        }
+      }
+      dd {
+        margin-bottom: 0.5rem;
+        > :last-child {
+          margin-bottom: 0;
+        }
+      }
+      > :last-child {
+        margin-bottom: 0;
+      }
+      &:last-child {
+        border-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
   }
-  > li:first-child {
-    margin-left: 0;
-  }
 }
 
-.col--main {
-  @include col(8/12);
-}
-
-.col--sec {
-  @include col(4/12);
-}
-
-.map {
-  height: 16rem;
-  p {
-    @extend .visually-hidden;
-  }
-}
 
 // SITE FOOTER
 
@@ -668,4 +855,3 @@ a:active{
     line-height: 1.5rem;
   }
 }
-
