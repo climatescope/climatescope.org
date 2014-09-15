@@ -26,8 +26,53 @@ layout: entry
     CS.countryHasStates = {{has_states}};
 </script>
 
-<div class="row--full map">
-  <p>Insert map here.</p>
+<div class="row--full intro">
+  {% include static_map.html %}
+  <div class="row--contained">
+    <dl class="meta-details">
+      {% case language %}
+      {% when 'en' %}
+
+      <dt>Gdp</dt>
+      <dd>$2,396bn</dd>
+      <dt>Seven-year Economic Growth Rate</dt>
+      <dd>6%</dd>
+      <dt>Population</dt>
+      <dd>198m</dd>
+      <dt>Total Clean Energy Investments</dt>
+      <dd>$82.2bn</dd>
+      <dt>Installed Power Capacity</dt>
+      <dd>123gw</dd>
+      <dt>Renewable Share</dt>
+      <dd>13%</dd>
+      <dt>Total Clean Energy Generation</dt>
+      <dd>57,400gwh</dd>
+      <dt>Top Energy Authority</dt>
+      <dd>Ministry Of Mines & Energy</dd>
+
+      {% when 'es' %}
+
+      <dt>Gdp</dt>
+      <dd>$2,396bn</dd>
+      <dt>Seven-year Economic Growth Rate</dt>
+      <dd>6%</dd>
+      <dt>Population</dt>
+      <dd>198m</dd>
+      <dt>Total Clean Energy Investments</dt>
+      <dd>$82.2bn</dd>
+      <dt>Installed Power Capacity</dt>
+      <dd>123gw</dd>
+      <dt>Renewable Share</dt>
+      <dd>13%</dd>
+      <dt>Total Clean Energy Generation</dt>
+      <dd>57,400gwh</dd>
+      <dt>Top Energy Authority</dt>
+      <dd>Ministry Of Mines & Energy</dd>
+
+      {% endcase %}
+
+    </dl>
+  </div>
 </div>
 
 <div class="row--contained">
@@ -87,9 +132,11 @@ layout: entry
           <td class="cell-country"><a href="//statesCtrl.getStateUrl(state)//">//state.name//</a></td>
           <td>//state.score//</td>
           <td>
-            <ul class="table-bar">
-              <li ng-repeat="param in state.parameters" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
-            </ul>
+            <a href="" tooltip-animation="false" tooltip-placement="top" tooltip-trigger="focus" tooltip-html-unsafe="//statesCtrl.getTooltipContent(state.parameters)//">
+              <ul class="table-bar">
+                <li ng-repeat="param in state.parameters" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+              </ul>
+            </a>
           </td>
         </tr>
       </tbody>
