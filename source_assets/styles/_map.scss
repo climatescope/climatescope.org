@@ -1,0 +1,146 @@
+$tooltip-background: rgba(255, 255, 255, 0.9);
+$tooltip-border: #E5E5E5;
+$tooltip-light-color: #888;
+$marker-stroke: #D9D9D9;
+$marker-fill: #333333;
+
+path {
+  stroke: grey;
+  stroke-width: .25px;
+}
+
+.rank-marker,
+.rank-tooltip {
+  font-family: $brand-font-family;
+}
+
+.rank-tooltip {
+  line-height: 1;
+  background: #fff;
+  background: $tooltip-background;
+  border: 1px solid $tooltip-border;
+  border-radius: $global-radius;
+  padding: 0 0 12px;
+  text-transform: uppercase;
+  width: 280px;
+}
+
+.rank-tooltip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 14px;
+  width: 100%;
+  line-height: 1;
+  color: #fff;
+  color: $tooltip-background;
+  position: absolute;
+  pointer-events: none;
+}
+
+.rank-tooltip.n:after {
+  content: "\25BC";
+  margin: -3px 0 0 0;
+  top: 100%;
+  left: 0;
+  text-align: center;
+}
+
+.rank-tooltip-head {
+  padding: 8px 12px 0;
+  border-bottom: 1px solid $tooltip-border;
+  position: relative;
+}
+
+.rank-tooltip-head > h5 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.rank-tooltip-head > label {
+  color: $tooltip-light-color;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.rank-tooltip-close {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  color: $tooltip-light-color;
+  cursor: pointer;
+}
+
+.rank-tooltip-body {
+  padding: 8px 12px 0;
+}
+
+.rank-tooltip-body > table {
+  table-layout: fixed;
+  overflow: hidden;
+  width: 100%;
+  margin: 4px 0 10px;
+}
+
+.rank-tooltip-body > table td {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 200;
+  color: $tooltip-light-color;
+  position: relative;
+}
+
+.rank-tooltip-body > table td.first {
+  font-size: 16px;
+  width: 24%;
+  font-weight: 600;
+  color: $body-font-color;
+}
+
+.rank-tooltip-body > table td.tooltip-table-indicator:before {
+  content: "";
+  font-size: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  left: -14px;
+  top: 6px;
+}
+
+.indicator-0:before {  background: #F1C40F; }
+.indicator-1:before {  background: #61A60E; }
+.indicator-2:before {  background: #0090BF; }
+.indicator-3:before {  background: #7771A9; }
+
+.rank-tooltip-link {
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #E6F3D5;
+  color: $secondary-color;
+  border-radius: $global-radius;
+  border: none;
+}
+
+.rank-marker circle {
+  stroke: $marker-stroke;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-opacity: 0.8;
+  fill: $marker-fill;
+}
+
+.rank-marker text {
+  fill: #ffffff;
+  text-anchor: middle;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.bttn-group.map-country-toggle {
+  padding: 8px;
+  background: #fff;
+  border-radius: $global-radius;
+}

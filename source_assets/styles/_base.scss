@@ -290,7 +290,7 @@ a:active{
   }
 
   &__body {
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
     h2 {
       @extend .hd-xxs;
     }
@@ -379,7 +379,7 @@ a:active{
       position: fixed;
       top: 0;
       left: 0;
-      z-index: 900;
+      z-index: 1010;
       margin-bottom: 0;
       border-bottom: 4px solid #ccc;
       border-bottom: 4px solid rgba(0, 0, 0, 0.05);
@@ -608,6 +608,15 @@ a:active{
   }
 }
 
+// LAYOUT: ENTRY
+// REGION
+
+.layout--entry.region {
+  .layout--entry__body {
+    padding-top: 0;
+  }
+}
+
 // LAYOUT: POLICIES
 
 .layout--policies {
@@ -663,10 +672,6 @@ a:active{
 }
 
 .map {
-  background: tint($primary-color, 95%) url(../images/layout/placeholder-map.png) no-repeat center center;
-  text-align: center;
-  padding: 4rem 3rem;
-  margin: -2rem 0 2rem 0;
   height: 16rem;
   p {
     @extend .visually-hidden;

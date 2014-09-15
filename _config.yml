@@ -13,6 +13,7 @@ collections:
     layout_vars:
       type: region
       subtitle: Region
+      include_map: true
     
   es_region:
     output: true
@@ -24,6 +25,7 @@ collections:
     layout_vars:
       type: region
       subtitle: Región
+      include_map: true
       
   en_country:
     output: true

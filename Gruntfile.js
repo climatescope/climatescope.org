@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     // https://github.com/gruntjs/grunt-contrib-clean
     clean : ['assets/styles/*', '!assets/**/.gitkeep', 'assets/scripts/*', '_site/*'],
-    
+
     // https://github.com/gruntjs/grunt-contrib-compass
     compass : {
       // Default options.
@@ -11,7 +11,7 @@ module.exports = function(grunt) {
           cssDir : 'assets/styles',
           raw : 'require "sass-css-importer";'
       },
-      
+
       dev : {
         options : {
           environment: 'development',
@@ -26,24 +26,24 @@ module.exports = function(grunt) {
         }
       }
     },
-          
+
     // https://github.com/gruntjs/grunt-contrib-jshint
     jshint: {
       // Default options.
       options : {
         unused : true
       },
-      
+
       dev : {
         options : {
           force : true
         },
         src : ['source_assets/scripts/**.js']
       },
-      
+
       prod: ['source_assets/scripts/**.js']
     },
-    
+
     // https://github.com/gruntjs/grunt-contrib-uglify
     uglify: {
       options: {
@@ -57,20 +57,26 @@ module.exports = function(grunt) {
             'source_assets/scripts/angular/**/*.js',
             'source_assets/vendor/noUiSlider/jquery.nouislider.min.js',
            ],
-          
           './assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js': ['source_assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'],
           './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
           './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
           './assets/scripts/vendor/selectivizr-1.0.2.min.js': ['source_assets/scripts/vendor/selectivizr-1.0.2.min.js'],
+          './assets/scripts/vendor/map-dependencies.min.js' : ['source_assets/scripts/vendor/d3.v3.min.js', 'source_assets/scripts/vendor/map-dependencies/*.js', 'source_assets/vendor/mapbox/mapbox.js'],
         }
       }
     },
-    
+
     // https://github.com/gruntjs/grunt-contrib-copy
     copy: {
       main: {
         files: [
-          {src: ['source_assets/scripts/vendor/boxsizing.htc'], dest: './assets/scripts/vendor/boxsizing.htc'}
+          {src: ['source_assets/scripts/vendor/boxsizing.htc'], dest: './assets/scripts/vendor/boxsizing.htc'},
+          {
+            expand: true,
+            cwd: 'source_assets/vendor/mapbox/images/',
+            src: ['*.{png,svg,jpg}'],
+            dest: './assets/styles/images/'
+          },
         ]
       },
       jekyll_css: {
@@ -78,7 +84,7 @@ module.exports = function(grunt) {
         dest: '_site/assets/styles/'
       }
     },
-    
+
     // https://github.com/joeytrapp/grunt-focus
     // Focus let us run multiple watch tasks simultaneously.
     // This was done to ease styling. In this way, only the css is
@@ -92,7 +98,7 @@ module.exports = function(grunt) {
         include: ['css']
       },
     },
-    
+
     // https://npmjs.org/package/grunt-contrib-watch
     watch : {
       src: {
@@ -108,7 +114,7 @@ module.exports = function(grunt) {
         tasks: ['build-css']
       },
     },
-    
+
     // https://github.com/dannygarcia/grunt-jekyll
     jekyll : {
       generate : {
@@ -127,7 +133,7 @@ module.exports = function(grunt) {
         }
       }
     }
-    
+
   });
 
   // Load tasks.
@@ -139,16 +145,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-focus');
   grunt.loadNpmTasks('grunt-jekyll');
-  
+
   // Register tasks.
   grunt.registerTask('build', ['compass:dev', 'jshint:dev', 'uglify', 'copy:main', 'jekyll:generate']);
 
   grunt.registerTask('default', ['build', 'focus:main']);
-  
+
   grunt.registerTask('prod', ['clean', 'compass:prod', 'jshint:prod', 'uglify', 'copy:main']);
-  
+
   grunt.registerTask('jk', ['jekyll:server']);
-  
+
   // This was done to ease styling. In this way, only the css is
   // generated and copied to the jekyll folder directly.
   // See copy:jekyll_css
