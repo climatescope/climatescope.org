@@ -49,7 +49,6 @@ a:active{
 // Row
 
 .row {
-
   &--contained {
     @include center($max-width);
     padding-left: 1rem;
@@ -63,7 +62,6 @@ a:active{
       padding-right: 3rem;
     }
   }
-
 }
 
 // Labels
@@ -103,6 +101,29 @@ a:active{
   background: tint($primary-color, 60%);
   .table & {
      @extend .visually-hidden;
+  }
+}
+
+// Badges
+.badge {
+  display: inline-block;
+  min-width: 0.85rem;
+  padding: 0.225rem 0.5rem;
+  font-size: 0.75rem;
+  font-family: $brand-font-family;
+  font-weight: $brand-font-bold;
+  text-transform: uppercase;
+  line-height: 0.85rem;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: rgba($primary-color, 0.4);
+  border-radius: $global-rounded;
+  margin-left: 0.25rem;
+  @extend .antialiased;
+  .bttn-cta & {
+    background-color: $secondary-color;
   }
 }
 
@@ -423,11 +444,80 @@ a:active{
 // LAYOUT: ENTRY
 // COUNTRY/STATE
 
-.country-ctas {
+.ctas-list {
   list-style: none;
   padding: 0;
   li {
     margin-bottom: 0.5rem;
+  }
+}
+
+.stats-list {
+  text-align: center;
+  clear: both;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 0;
+  &:after {
+    content: '';
+    position: absolute;
+    background: tint($primary-color, 90%);
+  }
+  dt, dd {
+    padding: 0 1rem;
+  }
+  dt {
+    @extend .hd-label;
+    @extend .truncated;
+  }
+  dd {
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    sup {
+      font-size: 1rem;
+      top: -1rem;
+    }
+    small {
+      @extend .hd-label;
+      display: block;
+    }
+  }
+  &.uno {
+    margin-bottom: 0;
+    &:after {
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+    }
+    dt, dd {
+      width: 100%;
+    }
+  }
+  &.duo {
+    margin-bottom: 2rem;
+    &:after {
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+    }
+    dt, dd {
+      width: 50%;
+    }
+    dd:nth-child(2) {
+      float: left;
+    }
+    dt:nth-child(3) {
+      float: right;
+      margin-top: -1.25rem;
+    }
+    dd:nth-child(4) {
+      float: right;
+    }
   }
 }
 
@@ -557,11 +647,17 @@ a:active{
 }
 
 .col--main {
-  @include col(8/12);
+  @include col(7/12);
+  @media #{$large-up} {
+    @include col(8/12);
+  }
 }
 
 .col--sec {
-  @include col(4/12);
+  @include col(5/12);
+  @media #{$large-up} {
+    @include col(4/12);
+  }
 }
 
 .map {
