@@ -358,6 +358,7 @@ a:active{
   &__header {
     padding: 2rem 0;
     background: #fff;
+    border-bottom: 2px solid #ccc;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     background-clip: padding-box;
     margin-bottom: -2px;
@@ -380,6 +381,7 @@ a:active{
       left: 0;
       z-index: 900;
       margin-bottom: 0;
+      border-bottom: 4px solid #ccc;
       border-bottom: 4px solid rgba(0, 0, 0, 0.05);
     }
   }
