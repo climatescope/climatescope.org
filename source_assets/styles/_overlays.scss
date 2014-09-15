@@ -27,7 +27,7 @@ $tooltip-arr-size: 1rem;
 // Appearance
 .tooltip-inner {
   position: relative;
-  width: 20rem;
+  max-width: 20rem;
   padding: 1rem;
   background-color: #fff;
   border: 1px solid #cccccc;
