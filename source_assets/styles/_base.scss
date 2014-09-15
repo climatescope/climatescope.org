@@ -300,12 +300,6 @@ a:active{
     @include col(12/12);
   }
 
-  &__body {
-    h2 {
-      @extend .hd-xxs;
-    }
-  }
-
   .intro {
     height: 20rem;
   }
