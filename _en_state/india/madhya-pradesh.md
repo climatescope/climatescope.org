@@ -1,7 +1,7 @@
 ---
 layout: state
 
-id: in-35
+id: in-mp
 title: Madhya Pradesh
 
 region: asia
