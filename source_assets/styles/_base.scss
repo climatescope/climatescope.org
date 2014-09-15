@@ -332,32 +332,35 @@ a:active{
 
 .layout--home,
 .layout--entry,
-.layout--page {
-  &__header {
-    &.sticky {
-      @media #{$medium-up} {
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 900;
-      }
-    }
-  }
-}
-
-.layout--home,
-.layout--entry,
 .layout--page,
 .layout--policies {
   &__header {
     padding: 2rem 0;
     background: #fff;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     background-clip: padding-box;
     margin-bottom: -2px;
     position: relative;
     z-index: 2;
+    @include transform(translate3d(0, 0, 0));
+    @include transition-property(all);
+    @include transition-duration(0.2s);
+    @include transition-timing-function(ease);
+    @include transition-delay(0);
+  }
+}
+
+.layout--home__header {
+  &.sticky {
+    @media #{$medium-up} {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 900;
+      margin-bottom: 0;
+      border-bottom: 4px solid rgba(0, 0, 0, 0.05);
+    }
   }
 }
 
