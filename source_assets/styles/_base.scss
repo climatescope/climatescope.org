@@ -291,6 +291,66 @@ a:active{
   }
 }
 
+// LAYOUT: HOME
+
+.layout--home {
+  &__tools {
+    @include col(12/12);
+  }
+}
+
+#vis-controls {
+  .prime-title {
+    @extend .hd-xxs;
+    float: left;
+  }
+  .reset {
+    float: left;
+    margin-left: 0.5rem;
+    color: tint($primary-color, 40%);
+    &:before {
+      @extend .icon-refresh;
+    }
+    span {
+      @extend .visually-hidden;
+    }
+  }
+  .control {
+    @include col(3/12);
+    &.first {
+      clear: left;
+    }
+  }
+  .control-title {
+    @extend .hd-label;
+    @extend .truncated;
+    width: 100%;
+  }
+  .slider {
+    margin-bottom: 0.75rem;
+  }
+  .control.a .noUi-connect {
+    background: $infograph-color-a;
+  }
+  .control.b .noUi-connect {
+    background: $infograph-color-b;
+  }
+  .control.c .noUi-connect {
+    background: $infograph-color-c;
+  }
+  .control.d .noUi-connect {
+    background: $infograph-color-d;
+  }
+  .slider-value {
+    @extend .hd-xxs;
+    float: left;
+    line-height: 2rem;
+    margin-bottom: 0;
+  }
+  .lock {
+    float: right;
+  }
+}
 
 // LAYOUT
 // Common styles
@@ -331,6 +391,9 @@ a:active{
     h2 {
       @extend .hd-xxs;
     }
+  }
+  .intro {
+    height: 20rem;
   }
 }
 
@@ -792,4 +855,3 @@ a:active{
     line-height: 1.5rem;
   }
 }
-
