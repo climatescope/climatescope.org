@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     // Never used.
     // var $parent = $(parent);
-    var map = L.mapbox.map('index-viz', 'derrr.f5dvlsor')
+    var map = L.mapbox.map('index-viz', 'flipside.e6958sxs')
         .setView([0,0], 2);
 
     var point = function(x, y) {
