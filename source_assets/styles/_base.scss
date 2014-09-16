@@ -438,7 +438,7 @@ a:active{
 }
 
 .col--main {
-  @include col(7/12);
+  @include col(8/12);
   margin-bottom: 2rem;
   @media #{$large-up} {
     @include col(8/12);
@@ -446,7 +446,7 @@ a:active{
 }
 
 .col--sec {
-  @include col(5/12);
+  @include col(4/12);
   margin-bottom: 2rem;
   @media #{$large-up} {
     @include col(4/12);
@@ -553,71 +553,42 @@ a:active{
 }
 
 .stats-list {
-  text-align: center;
-  clear: both;
-  position: relative;
   overflow: hidden;
-  padding: 1rem 0;
-  &:after {
-    content: '';
-    position: absolute;
-    background: tint($primary-color, 90%);
-  }
+  border-bottom: 1px solid tint($primary-color, 90%);
+  margin-bottom: 2rem;
   dt, dd {
-    padding: 0 1rem;
+    border-top: 1px solid tint($primary-color, 90%);
+    float: right;
+  }
+  > :nth-child(1),
+  > :nth-child(2) {
+    border-top: 0;
   }
   dt {
     @extend .hd-label;
-    @extend .truncated;
-  }
-  dd {
-    font-family: $brand-font-family;
-    font-weight: $brand-font-bold;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    sup {
-      font-size: 1rem;
-      top: -1rem;
-    }
+    clear: right;
+    width: 60%;
+    padding: 0.5rem 0;
     small {
-      @extend .hd-label;
+      font-size: inherit;
       display: block;
     }
   }
-  &.uno {
-    margin-bottom: 0;
-    &:after {
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-    }
-    dt, dd {
-      width: 100%;
+  dd {
+    width: 40%;
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0.5rem 1rem 0.5rem 0;
+    sup {
+      font-size: 1rem;
+      top: -0.5rem;
     }
   }
-  &.duo {
-    margin-bottom: 2rem;
-    &:after {
-      top: 0;
-      left: 50%;
-      width: 1px;
-      height: 100%;
-    }
-    dt, dd {
-      width: 50%;
-    }
-    dd:nth-child(2) {
-      float: left;
-    }
-    dt:nth-child(3) {
-      float: right;
-      margin-top: -1.25rem;
-    }
-    dd:nth-child(4) {
-      float: right;
-    }
+  @media #{$large-up} {
+    dt { width: 70%; }
+    dd { width: 30%; }
   }
 }
 
