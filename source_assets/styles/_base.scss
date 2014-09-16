@@ -455,7 +455,7 @@ a:active{
 
 .layout--entry,
 .layout--page,
-.layout--hub, {
+.layout--hub {
   &__heading {
     @include col(6/12);
     position: relative;
@@ -672,6 +672,15 @@ a:active{
 
 // LAYOUT HUB
 // POLICIES
+
+.policies.layout--entry {
+  .layout--entry__heading {
+    @include col(8/12);
+  }
+  .layout--entry__tools {
+    @include col(4/12);
+  }
+}
 
 .layout--hub {
   
