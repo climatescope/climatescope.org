@@ -8,7 +8,12 @@ layout: base
 {% endif %}
 
 {% assign vars = site.collections[page.collection].layout_vars %}
-<article class="layout--entry {{vars.type}}">
+
+{% if vars.type == 'parameter' %}
+  {% capture custom_class %}param-{{ page.id }}{% endcapture %}
+{% endif %}
+
+<article class="layout--entry {{vars.type}} {{ custom_class }}">
   <header class="layout--entry__header">
     <div class="row--contained">
       <div class="layout--entry__heading">
