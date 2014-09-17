@@ -292,61 +292,6 @@ a:active{
   }
 }
 
-// LAYOUT: HOME
-
-#vis-controls {
-  .prime-title {
-    @extend .hd-xxs;
-    float: left;
-  }
-  .reset {
-    float: left;
-    margin-left: 0.5rem;
-    color: tint($primary-color, 40%);
-    &:before {
-      @extend .icon-refresh;
-    }
-    span {
-      @extend .visually-hidden;
-    }
-  }
-  .control {
-    @include col(3/12);
-    &.first {
-      clear: left;
-    }
-  }
-  .control-title {
-    @extend .hd-label;
-    @extend .truncated;
-    width: 100%;
-  }
-  .slider {
-    margin-bottom: 0.75rem;
-  }
-  .control.a .noUi-connect {
-    background: $infograph-color-a;
-  }
-  .control.b .noUi-connect {
-    background: $infograph-color-b;
-  }
-  .control.c .noUi-connect {
-    background: $infograph-color-c;
-  }
-  .control.d .noUi-connect {
-    background: $infograph-color-d;
-  }
-  .slider-value {
-    @extend .hd-xxs;
-    float: left;
-    line-height: 2rem;
-    margin-bottom: 0;
-  }
-  .lock {
-    float: right;
-  }
-}
-
 // LAYOUT
 // Common styles
 
@@ -410,8 +355,9 @@ a:active{
 .layout--home__header,
 .layout--hub__header {
   .reset {
-    float: left;
-    margin-left: 0.5rem;
+    vertical-align: top;
+    margin-top: 0.25rem;
+    display: inline-block;
     color: tint($primary-color, 40%);
     &:before {
       @extend .icon-refresh;
@@ -489,6 +435,11 @@ a:active{
   .prime-title {
     @extend .hd-xxs;
     float: left;
+    margin: 0 0.5rem 1rem 0;
+  }
+  .reset {
+    float: left;
+    margin-top: 0 !important;
   }
   .control {
     @include col(3/12);
