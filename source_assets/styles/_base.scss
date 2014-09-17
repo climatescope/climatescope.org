@@ -89,7 +89,8 @@ a:active{
     }
   }
   .layout--entry__heading & {
-    margin-left: 0.5rem;
+    vertical-align: top;
+    margin-top: 0.25rem;
   }
 }
 
@@ -183,7 +184,7 @@ a:active{
 .intro {
   margin-top: -2rem;
   margin-bottom: 2rem;
-  background: tint($primary-color, 95%);
+  background: tint($primary-color, 95%) !important;
 }
 
 
@@ -201,10 +202,6 @@ a:active{
   .row--contained {
     position: relative;
   }
-}
-
-#site-body {
-  margin-bottom: 2rem;
 }
 
 #site-footer {
@@ -291,67 +288,6 @@ a:active{
   }
 }
 
-// LAYOUT: HOME
-
-.layout--home {
-  &__tools {
-    @include col(12/12);
-  }
-}
-
-#vis-controls {
-  .prime-title {
-    @extend .hd-xxs;
-    float: left;
-  }
-  .reset {
-    float: left;
-    margin-left: 0.5rem;
-    color: tint($primary-color, 40%);
-    &:before {
-      @extend .icon-refresh;
-    }
-    span {
-      @extend .visually-hidden;
-    }
-  }
-  .control {
-    @include col(3/12);
-    &.first {
-      clear: left;
-    }
-  }
-  .control-title {
-    @extend .hd-label;
-    @extend .truncated;
-    width: 100%;
-  }
-  .slider {
-    margin-bottom: 0.75rem;
-  }
-  .control.a .noUi-connect {
-    background: $infograph-color-a;
-  }
-  .control.b .noUi-connect {
-    background: $infograph-color-b;
-  }
-  .control.c .noUi-connect {
-    background: $infograph-color-c;
-  }
-  .control.d .noUi-connect {
-    background: $infograph-color-d;
-  }
-  .slider-value {
-    @extend .hd-xxs;
-    float: left;
-    line-height: 2rem;
-    margin-bottom: 0;
-  }
-  .lock {
-    float: right;
-  }
-}
-
 // LAYOUT
 // Common styles
 
@@ -415,8 +351,9 @@ a:active{
 .layout--home__header,
 .layout--hub__header {
   .reset {
-    float: left;
-    margin-left: 0.5rem;
+    vertical-align: top;
+    margin-top: 0.25rem;
+    display: inline-block;
     color: tint($primary-color, 40%);
     &:before {
       @extend .icon-refresh;
@@ -434,11 +371,13 @@ a:active{
     @extend .hd-label;
     @extend .truncated;
     width: 100%;
+    margin-bottom: 1rem;
+    display: block;
   }
 }
 
 .col--main {
-  @include col(7/12);
+  @include col(8/12);
   margin-bottom: 2rem;
   @media #{$large-up} {
     @include col(8/12);
@@ -446,7 +385,7 @@ a:active{
 }
 
 .col--sec {
-  @include col(5/12);
+  @include col(4/12);
   margin-bottom: 2rem;
   @media #{$large-up} {
     @include col(4/12);
@@ -455,7 +394,7 @@ a:active{
 
 .layout--entry,
 .layout--page,
-.layout--hub, {
+.layout--hub {
   &__heading {
     @include col(6/12);
     position: relative;
@@ -465,12 +404,16 @@ a:active{
   }
   &__title {
     @extend .hd-xl;
-    margin-bottom: 0;
-    float: left;
+    margin: 0 0.5rem 0 0;
+    white-space: pre-wrap;
+    display: inline;
   }
   &__tools {
     @include col(6/12);
     margin-right: 0 !important;
+    @media #{$small-up} {
+      padding: 0.375rem 0;
+    }
     @media #{$large-up} {
       @include col(4/12);
     }
@@ -480,16 +423,15 @@ a:active{
 
 // LAYOUT: HOME
 
-.layout--home {
-  .intro {
-    height: 20rem;
-  }
-}
-
 .layout--home__controls {
   .prime-title {
     @extend .hd-xxs;
     float: left;
+    margin: 0 0.5rem 1rem 0;
+  }
+  .reset {
+    float: left;
+    margin-top: 0 !important;
   }
   .control {
     @include col(3/12);
@@ -553,71 +495,42 @@ a:active{
 }
 
 .stats-list {
-  text-align: center;
-  clear: both;
-  position: relative;
   overflow: hidden;
-  padding: 1rem 0;
-  &:after {
-    content: '';
-    position: absolute;
-    background: tint($primary-color, 90%);
-  }
+  border-bottom: 1px solid tint($primary-color, 90%);
+  margin-bottom: 2rem;
   dt, dd {
-    padding: 0 1rem;
+    border-top: 1px solid tint($primary-color, 90%);
+    float: right;
+  }
+  > :nth-child(1),
+  > :nth-child(2) {
+    border-top: 0;
   }
   dt {
     @extend .hd-label;
-    @extend .truncated;
-  }
-  dd {
-    font-family: $brand-font-family;
-    font-weight: $brand-font-bold;
-    line-height: 1;
-    text-transform: uppercase;
-    font-size: 2.5rem;
-    sup {
-      font-size: 1rem;
-      top: -1rem;
-    }
+    clear: right;
+    width: 60%;
+    padding: 0.5rem 0;
     small {
-      @extend .hd-label;
+      font-size: inherit;
       display: block;
     }
   }
-  &.uno {
-    margin-bottom: 0;
-    &:after {
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 1px;
-    }
-    dt, dd {
-      width: 100%;
+  dd {
+    width: 40%;
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0.5rem 1rem 0.5rem 0;
+    sup {
+      font-size: 1rem;
+      top: -0.5rem;
     }
   }
-  &.duo {
-    margin-bottom: 2rem;
-    &:after {
-      top: 0;
-      left: 50%;
-      width: 1px;
-      height: 100%;
-    }
-    dt, dd {
-      width: 50%;
-    }
-    dd:nth-child(2) {
-      float: left;
-    }
-    dt:nth-child(3) {
-      float: right;
-      margin-top: -1.25rem;
-    }
-    dd:nth-child(4) {
-      float: right;
-    }
+  @media #{$large-up} {
+    dt { width: 70%; }
+    dd { width: 30%; }
   }
 }
 
@@ -631,6 +544,7 @@ a:active{
     position: relative;
     overflow: hidden;
     height: 16rem;
+    z-index: 1;
     .row--contained {
       position: absolute;
       top: 0;
@@ -699,24 +613,61 @@ a:active{
   }
 }
 
-// LAYOUT HUB
+// LAYOUT ENTRY
+// PARAMETERS
+
+.parameter.layout--entry {
+  .layout--entry__title {
+    position: relative;
+    padding-right: 1.5rem;
+    margin-right: 0; 
+    &:after {
+      position: absolute;
+      bottom: 0.875rem;
+      right: 0;
+      z-index: 1;
+      content: '';
+      width: 1rem;
+      height: 1rem;
+      border-radius: $global-rounded;
+    }
+  }
+}
+
+.parameter.param-1 .layout--entry__title:after { background: $infograph-color-a; }
+.parameter.param-2 .layout--entry__title:after { background: $infograph-color-b; }
+.parameter.param-3 .layout--entry__title:after { background: $infograph-color-c; }
+.parameter.param-4 .layout--entry__title:after { background: $infograph-color-d; }
+
+
+// LAYOUT ENTRY/HUB
 // POLICIES
 
+.policies.layout--entry {
+  .layout--entry__heading {
+    @include col(8/12);
+  }
+  .layout--entry__tools {
+    @include col(4/12);
+  }
+}
+
 .layout--hub {
-  
+  &__heading {
+    margin-bottom: 1rem;
+  }
   &__controls {
+    .control-title {
+      margin-bottom: 0.5rem;
+    }
     .control {
       @include col(3/12);
       select {
-        display: block;
         width: 100%;
-        &:disabled {
-          cursor: not-allowed;
-        }
       }
-      .bttn {
-        margin-top: 1.15rem;
-      }
+    }
+    .control:last-child {
+      padding-top: 1.75rem;
     }
   }
 }
