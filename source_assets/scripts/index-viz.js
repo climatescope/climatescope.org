@@ -22,6 +22,7 @@ $(document).ready(function() {
 
       // Never used.
       // var rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
+      
       var link_text = "";
       var rank_text = "";
       var score_text = "";
@@ -123,6 +124,16 @@ $(document).ready(function() {
         if (lookup[iso] !== undef) {
           land[i].rank = indicators[lookup[iso]];
           land[i].d = land[i].rank.overall_ranking;
+          land[i].parameters = {};
+
+          // create an object as a property of rank
+          // object keys are ids of parameters
+          for(var k = 0; k < 4; ++k) {
+            land[i].parameters[
+              land[i].rank.parameters[k].id
+            ] = land[i].rank.parameters[k];
+          }
+
           filtered.push(land[i]);
         }
       }
@@ -259,12 +270,16 @@ $(document).ready(function() {
 
     // listening for weight changer changes
     var updateSliders = debounce(function(e, weight) {
+      var keys = $.map(land[0].rank.parameters, function(d) { return d.id; });
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
-        d = land[i].rank.parameters;
+        d = land[i].parameters;
 
-        land[i].rank.score = (Math.round(weight['1'] * d[0].value + weight['2'] * d[1].value +
-          weight['3'] * d[2].value + weight['4'] * d[3].value)) / 100;
-
+        land[i].rank.score = (Math.round(
+          weight[keys[0]] * d[keys[0]].value +
+          weight[keys[1]] * d[keys[1]].value +
+          weight[keys[2]] * d[keys[2]].value +
+          weight[keys[3]] * d[keys[3]].value
+                                        )) / 100;
       }
       land = land.sort(function(a, b) { return b.rank.score - a.rank.score; });
       for(i = 0; i < ii; ++i) {
