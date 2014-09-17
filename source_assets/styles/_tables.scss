@@ -151,7 +151,7 @@
 .table-bar {
   width: 90%;
   list-style-type: none;
-  overflow: auto;
+  overflow: hidden;
   border-radius: $global-radius;
   height: 1.25rem;
   background: tint($primary-color, 95%);
