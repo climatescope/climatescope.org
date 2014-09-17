@@ -375,6 +375,8 @@ a:active{
     @extend .hd-label;
     @extend .truncated;
     width: 100%;
+    margin-bottom: 1rem;
+    display: block;
   }
 }
 
@@ -647,7 +649,8 @@ a:active{
 .parameter.param-3 .layout--entry__title:after { background: $infograph-color-c; }
 .parameter.param-4 .layout--entry__title:after { background: $infograph-color-d; }
 
-// LAYOUT HUB
+
+// LAYOUT ENTRY/HUB
 // POLICIES
 
 .policies.layout--entry {
@@ -660,8 +663,13 @@ a:active{
 }
 
 .layout--hub {
-  
+  &__heading {
+    margin-bottom: 1rem;
+  }
   &__controls {
+    .control-title {
+      margin-bottom: 0.5rem;
+    }
     .control {
       @include col(3/12);
       select {
