@@ -667,15 +667,11 @@ a:active{
     .control {
       @include col(3/12);
       select {
-        display: block;
         width: 100%;
-        &:disabled {
-          cursor: not-allowed;
-        }
       }
-      .bttn {
-        margin-top: 1.15rem;
-      }
+    }
+    .control:last-child {
+      padding-top: 1.75rem;
     }
   }
 }

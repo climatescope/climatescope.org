@@ -24,32 +24,32 @@
           
           <div class="control">
             <label class="control-title" for="policy_country">Country</label>
-            <select id="policy_country" name="policy_country" ng-model="filterCtrl.filters.country" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.country)" ng-change="filterCtrl.filters.state = null">
+            <select class="sllt sllt-m" id="policy_country" name="policy_country" ng-model="filterCtrl.filters.country" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.country)" ng-change="filterCtrl.filters.state = null">
               <option value="">-- Any --</option>
             </select>
           </div>
           
           <div class="control">
             <label class="control-title" for="policy_state">State</label>
-            <select id="policy_state" name="policy_state" ng-model="filterCtrl.filters.state" ng-options="value.id as value.name for value in filterCtrl.getSelectOptsState(filterCtrl.filterData.state)" ng-disabled="!filterCtrl.getSelectOptsState(filterCtrl.filterData.state).length">
+            <select class="sllt sllt-m" id="policy_state" name="policy_state" ng-model="filterCtrl.filters.state" ng-options="value.id as value.name for value in filterCtrl.getSelectOptsState(filterCtrl.filterData.state)" ng-disabled="!filterCtrl.getSelectOptsState(filterCtrl.filterData.state).length">
               <option value="">-- Any --</option>
             </select>
           </div>
             
           <div class="control">
             <label class="control-title" class="control-title" for="policy_status">Status</label>
-            <select id="policy_status" name="policy_status" ng-model="filterCtrl.filters.status" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.status)">
+            <select class="sllt sllt-m" id="policy_status" name="policy_status" ng-model="filterCtrl.filters.status" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.status)">
               <option value="">-- Any --</option>
             </select>
           </div>
           
           <div class="control">
-            <button ng-click="filterCtrl.apply()" class="bttn bttn-default">Apply</button>
+            <button ng-click="filterCtrl.apply()" class="bttn bttn-default bttn-m">Apply</button>
           </div>
           
           <!-- <div class="control">
             <label for="policy_subsector">Subsector</label>
-            <select id="policy_subsector" name="policy_subsector" ng-model="filterCtrl.filters.subsector" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.subsector)">
+            <select class="sllt sllt-m" id="policy_subsector" name="policy_subsector" ng-model="filterCtrl.filters.subsector" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.subsector)">
               <option value="">-- Any --</option>
             </select>
           </div> -->
