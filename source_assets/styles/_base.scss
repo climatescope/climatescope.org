@@ -89,7 +89,8 @@ a:active{
     }
   }
   .layout--entry__heading & {
-    margin-left: 0.5rem;
+    vertical-align: top;
+    margin-top: 0.25rem;
   }
 }
 
@@ -293,12 +294,6 @@ a:active{
 
 // LAYOUT: HOME
 
-.layout--home {
-  &__tools {
-    @include col(12/12);
-  }
-}
-
 #vis-controls {
   .prime-title {
     @extend .hd-xxs;
@@ -465,12 +460,16 @@ a:active{
   }
   &__title {
     @extend .hd-xl;
-    margin-bottom: 0;
-    float: left;
+    margin: 0 0.5rem 0 0;
+    white-space: pre-wrap;
+    display: inline;
   }
   &__tools {
     @include col(6/12);
     margin-right: 0 !important;
+    @media #{$small-up} {
+      padding: 0.375rem 0;
+    }
     @media #{$large-up} {
       @include col(4/12);
     }
