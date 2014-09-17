@@ -184,7 +184,7 @@ a:active{
 .intro {
   margin-top: -2rem;
   margin-bottom: 2rem;
-  background: tint($primary-color, 95%);
+  background: tint($primary-color, 95%) !important;
 }
 
 
@@ -426,12 +426,6 @@ a:active{
 
 
 // LAYOUT: HOME
-
-.layout--home {
-  .intro {
-    height: 20rem;
-  }
-}
 
 .layout--home__controls {
   .prime-title {
