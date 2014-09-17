@@ -127,30 +127,58 @@ layout: entry
       {% when 'es' %}
       <h1 class="visually-hidden">En Detalle</h1>
       {% endcase %}
-      <table class="table poc-detailed-data">
-        <thead>
-        {% case language %}
-        {% when 'en' %}
-          <tr>
-            <th><span class="visually-hidden">Parameter</span></th>
-            <th>Score</th>
-            <th>Rank</th>
-          </tr>
-        {% when 'es' %}
-          <tr>
-            <th><span class="visually-hidden">Tema</span></th>
-            <th>Puntaje</th>
-            <th>Posición</th>
-          </tr>
-        {% endcase %}
-        </thead>
-        <tbody ng-repeat="param in detailsCtrl.parameters">
-          <tr class="param"><td class="label">//param.name// </td><td class="value">//param.data[0].value//<td></td></td></tr>
-          <tr class="ind_group" ng-repeat-start="ind_group in param.indicator_groups"><td class="label">//ind_group.name//</td><td><td></td></td></tr>
-          <tr class="ind" ng-repeat-end ng-repeat="ind in ind_group.indicators"><td class="label">//ind.name// </td><td class="value">//ind.data[0].value//<td></td></td></tr>
-          
-        </tbody>
-      </table>
+
+      <!-- Individual parameter details -->
+      <section class="param-details">
+
+        <header class="param-details__header">
+          <div class="param-details__heading">
+            <h1 class="param-details__title">Enabling framework</h1>
+          </div>
+          <dl class="param-details__stats">
+            <dt>Rank</dt>
+            <dd>01</dd>
+            <dt>Score</dt>
+            <dd>225</dd>
+          </dl>
+        </header>
+
+        <div class="param-details__body">
+
+          <table class="table poc-detailed-data param-details__table">
+            <thead>
+            {% case language %}
+            {% when 'en' %}
+              <tr>
+                <th><span class="visually-hidden">Parameter</span></th>
+                <th>Score</th>
+                <th>Rank</th>
+              </tr>
+            {% when 'es' %}
+              <tr>
+                <th><span class="visually-hidden">Tema</span></th>
+                <th>Puntaje</th>
+                <th>Posición</th>
+              </tr>
+            {% endcase %}
+            </thead>
+            <tbody ng-repeat="param in detailsCtrl.parameters">
+              <tr class="param"><td class="label">//param.name// </td><td class="value">//param.data[0].value//<td></td></td></tr>
+              <tr class="ind_group" ng-repeat-start="ind_group in param.indicator_groups"><td class="label">//ind_group.name//</td><td><td></td></td></tr>
+              <tr class="ind" ng-repeat-end ng-repeat="ind in ind_group.indicators"><td class="label">//ind.name// </td><td class="value">//ind.data[0].value//<td></td></td></tr>
+              
+            </tbody>
+          </table>
+
+          <div class="param-details__graph">
+            <img src="http://placehold.it/350x150">
+          </div>
+
+        </div>
+        
+      </section>
+      <!--/ Individual parameter details -->
+      
     </section>
   </script>
   

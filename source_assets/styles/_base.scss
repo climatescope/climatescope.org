@@ -484,7 +484,7 @@ a:active{
 
 
 // LAYOUT: ENTRY
-// COUNTRY/STATE
+// Country/State
 
 .ctas-list {
   list-style: none;
@@ -535,7 +535,7 @@ a:active{
 }
 
 #section-switch {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .layout--entry.country,
@@ -613,8 +613,42 @@ a:active{
   }
 }
 
-// LAYOUT ENTRY
-// PARAMETERS
+// Parameters details
+
+.param-details {
+  &__header {
+    overflow: hidden;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    border-bottom: 4px solid tint($primary-color, 90%);
+    margin-bottom: 2rem;
+  }
+  &__heading {
+    @include col(8/12);
+  }
+  &__title {
+    @extend .hd-xs;
+    margin-bottom: 0;
+  }
+  &__stats {
+    float: right;
+    margin-bottom: 0;
+    dt, dd {
+      float: left;
+    }
+    dt {
+      @extend .hd-label;
+    }
+  }
+  &__table {
+    @include col(8/12);
+  }
+  &__graph {
+    @include col(4/12);
+  }
+}
+
+// LAYOUT: ENTRY
+// Parameters
 
 .parameter.layout--entry {
   .layout--entry__title {
@@ -640,8 +674,8 @@ a:active{
 .parameter.param-4 .layout--entry__title:after { background: $infograph-color-d; }
 
 
-// LAYOUT ENTRY/HUB
-// POLICIES
+// LAYOUT: ENTRY/HUB
+// Policies
 
 .policies.layout--entry {
   .layout--entry__heading {
