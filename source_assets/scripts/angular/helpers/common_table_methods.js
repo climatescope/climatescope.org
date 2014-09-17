@@ -10,7 +10,7 @@ function setupCommonTableMethods(scope) {
   
   scope.setSort = function(field) {
     scope.sortField = field;
-    scope.sortReverse = !_self.sortReverse;
+    scope.sortReverse = !scope.sortReverse;
   };
   
   scope.checkSortClasses = function(field) {
