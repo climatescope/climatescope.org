@@ -121,7 +121,8 @@ $(document).ready(function() {
     }
 
     queue()
-    .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
+    // The topo json file is the same for all languages.
+    .defer(d3.json, CS.domain + '/en/api/countries.topojson')
     .defer(d3.json, countryListUrl)
 
     // .defer(d3.json, 'en/api/countries.topojson')
