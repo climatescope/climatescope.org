@@ -131,15 +131,28 @@ layout: entry
       <section class="param-details" ng-repeat="param in detailsCtrl.parameters" ng-class="'param-' + param.id">
 
         <header class="param-details__header">
-          <div class="param-details__heading">
-            <h1 class="param-details__title"><a href="//detailsCtrl.getParamUrl(param)//" title="Go to topic page">// param.name //</a></h1>
-          </div>
-          <dl class="param-details__stats">
-            <dt>Score</dt>
-            <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value //</dd>
-            <dt>Rank</dt>
-            <dd>01</dd>
-          </dl>
+          {% case language %}
+          {% when 'en' %}
+            <div class="param-details__heading">
+              <h1 class="param-details__title"><a href="//detailsCtrl.getParamUrl(param)//" title="Go to topic page">// param.name //</a></h1>
+            </div>
+            <dl class="param-details__stats">
+              <dt>Score</dt>
+              <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value //</dd>
+              <dt>Rank</dt>
+              <dd>01</dd>
+            </dl>
+          {% when 'es' %}
+            <div class="param-details__heading">
+              <h1 class="param-details__title"><a href="//detailsCtrl.getParamUrl(param)//" title="Visita la pagina del tema">// param.name //</a></h1>
+            </div>
+            <dl class="param-details__stats">
+              <dt>Puntaje</dt>
+              <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value //</dd>
+              <dt>Posición</dt>
+              <dd>01</dd>
+            </dl>
+          {% endcase %}
         </header>
 
         <div class="param-details__body">
