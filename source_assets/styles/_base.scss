@@ -179,6 +179,54 @@ a:active{
   }
 }
 
+// Infographics
+
+.table-bar {
+  width: 90%;
+  list-style-type: none;
+  overflow: hidden;
+  border-radius: $global-radius;
+  height: 1.25rem;
+  background: tint($primary-color, 95%);
+  padding: 0;
+  margin: 0.125rem 0;
+  cursor: help;
+
+  li {
+    float: left;
+    height: 100%;
+  }
+
+  > li:first-child {
+    border-radius: $global-radius 0 0  $global-radius;
+  }
+
+  > li:last-child {
+    border-radius: 0 $global-radius $global-radius 0;
+  }
+
+  li.param-1 {
+    background-color: $infograph-color-a;
+  }
+
+  li.param-2 {
+    background-color: $infograph-color-b;
+  }
+
+  li.param-3 {
+    background-color: $infograph-color-c;
+  }
+
+  li.param-4 {
+    background-color: $infograph-color-d;
+  }
+}
+
+.table-nested .table-bar {
+  background: #fff;
+}
+
+
 // Intro stripe
 
 .intro {
@@ -442,16 +490,16 @@ a:active{
   .slider {
     margin-bottom: 0.75rem;
   }
-  .control.a .noUi-connect {
+  .control.param-1 .noUi-connect {
     background: $infograph-color-a;
   }
-  .control.b .noUi-connect {
+  .control.param-2 .noUi-connect {
     background: $infograph-color-b;
   }
-  .control.c .noUi-connect {
+  .control.param-3 .noUi-connect {
     background: $infograph-color-c;
   }
-  .control.d .noUi-connect {
+  .control.param-4 .noUi-connect {
     background: $infograph-color-d;
   }
   .slider-value {

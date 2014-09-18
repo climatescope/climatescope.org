@@ -117,10 +117,10 @@ $(document).ready(function() {
     });
 
     // Temp data!
-    $('.slider-value.one').text(data['1'] + '%');
-    $('.slider-value.two').text(data['2'] + '%');
-    $('.slider-value.three').text(data['3'] + '%');
-    $('.slider-value.four').text(data['4'] + '%');
+    $('.slider-value.param-1').text(data['1'] + '%');
+    $('.slider-value.param-2').text(data['2'] + '%');
+    $('.slider-value.param-3').text(data['3'] + '%');
+    $('.slider-value.param-4').text(data['4'] + '%');
   });
   
   // Reset button.
