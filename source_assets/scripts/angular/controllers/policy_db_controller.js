@@ -74,7 +74,7 @@
     // This could be done in the html but it's more organised like this.
     this.getSelectOptsState = function(field) {
       var data = objToArray(field);
-      var filtered = $filter('filter')(data, {countyId: _self.filters.country});
+      var filtered = $filter('filter')(data, {countyId: _self.filters.country || null});
       return $filter('orderBy')(filtered, 'name');
     };
     
