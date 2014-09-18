@@ -2,10 +2,31 @@ $(document).ready(function() {
 
   var rank = function () {
 
-    // Never used.
-    // var $parent = $(parent);
-    var map = L.mapbox.map('index-viz', 'flipside.e6958sxs')
-        .setView([0,0], 2);
+    var mapSettings = {
+      'world': {
+        mapId: 'flipside.e6958sxs',
+        zoom: 2,
+        center: [0, 0]
+      },
+      'africa': {
+        mapId: 'flipside.cdw17lf8',
+        zoom: 3,
+        center: [-9.6224, 25.8398]
+      },
+      'asia': {
+        mapId: 'flipside.j7e3okc6',
+        zoom: 3,
+        center: [20.63278, 104.0625]
+      },
+      'lac': {
+        mapId: 'flipside.b1dsv657',
+        zoom: 2,
+        center: [-15.6230, -59.0625]
+      }
+    };
+    var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
+    var map = L.mapbox.map('index-viz', mapConf.mapId)
+      .setView(mapConf.center, mapConf.zoom);
 
     var point = function(x, y) {
       var pt = map.latLngToLayerPoint([y, x]);
@@ -94,16 +115,22 @@ $(document).ready(function() {
 
     var undef = void 0;
 
+    var countryListUrl = CS.domain + '/' + CS.lang + '/api/countries.json';
+    if (CS.regionId) {
+      countryListUrl = CS.domain + '/' + CS.lang + '/api/regions/' + CS.regionId + '.json';
+    }
+
     queue()
     .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
-    .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.json')
+    .defer(d3.json, countryListUrl)
 
     // .defer(d3.json, 'en/api/countries.topojson')
     // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
-
       land = topojson.feature(geography, geography.objects.countries).features;
-      indicators = countryRank;
+
+      // If there's a region, the countries are inside an object.
+      indicators = CS.regionId ? countryRank.countries : countryRank;
 
       var lookup = {};
       var max = [];
