@@ -22,6 +22,19 @@
         return CS.domain + '/' + CS.lang + '/api/regions/' + regionId + '.json';
       }
     };
+    // Order the parameter array in countries and states.
+    var orderParamsArray = function() {
+      angular.forEach(_self.countries, function(country) {
+        country.parameters.sort(function(a, b) {
+          return a.id > b.id;
+        });
+        angular.forEach(country.states, function(state) {
+          state.parameters.sort(function(a, b) {
+            return a.id > b.id;
+          });
+        });
+      });
+    };
 
     this.getCountryUrl = function(country) {
       var iso = country.iso.toLowerCase();
@@ -51,11 +64,15 @@
     if (CS.regionId) {
       $http.get(getRequestUrl(CS.regionId)).success(function(data) {
         _self.countries = data.countries;
+        // Order data once available.
+        orderParamsArray();
       });
     }
     else {
       $http.get(getRequestUrl()).success(function(data) {
         _self.countries = data;
+        // Order data once available.
+        orderParamsArray();
       });
     }
 

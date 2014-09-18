@@ -93,7 +93,7 @@ layout: entry
       </dl>
       <ul class="ctas-list">
         <!-- <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.id }}" title="View policies">View policies <span class="badge">18</span></a></li> -->
-        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.id }}" title="View policies">View policies</a></li>
+        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.id | upcase }}" title="View policies">View policies</a></li>
         <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
       </ul>
 
@@ -107,7 +107,7 @@ layout: entry
       </dl>
       <ul class="ctas-list">
         <!-- <li><a class="bttn bttn-cta go" href="{{ site.domain }}/es/politicas/#/?country={{ page.id }}" title="View policies">View policies ES <span class="badge">18</span></a></li> -->
-        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/es/politicas/#/?country={{ page.id }}" title="View policies">View policies ES</a></li>
+        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/es/politicas/#/?country={{ page.id | upcase }}" title="View policies">View policies ES</a></li>
         <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to ES</a></li>
       </ul>
 
@@ -127,30 +127,76 @@ layout: entry
       {% when 'es' %}
       <h1 class="visually-hidden">En Detalle</h1>
       {% endcase %}
-      <table class="table poc-detailed-data">
-        <thead>
-        {% case language %}
-        {% when 'en' %}
-          <tr>
-            <th><span class="visually-hidden">Parameter</span></th>
-            <th>Score</th>
-            <th>Rank</th>
-          </tr>
-        {% when 'es' %}
-          <tr>
-            <th><span class="visually-hidden">Tema</span></th>
-            <th>Puntaje</th>
-            <th>Posición</th>
-          </tr>
-        {% endcase %}
-        </thead>
-        <tbody ng-repeat="param in detailsCtrl.parameters">
-          <tr class="param"><td class="label">//param.name// </td><td class="value">//param.data[0].value//<td></td></td></tr>
-          <tr class="ind_group" ng-repeat-start="ind_group in param.indicator_groups"><td class="label">//ind_group.name//</td><td><td></td></td></tr>
-          <tr class="ind" ng-repeat-end ng-repeat="ind in ind_group.indicators"><td class="label">//ind.name// </td><td class="value">//ind.data[0].value//<td></td></td></tr>
-          
-        </tbody>
-      </table>
+
+      <section class="param-details" ng-repeat="param in detailsCtrl.parameters" ng-class="'param-' + param.id">
+
+        <header class="param-details__header">
+          {% case language %}
+          {% when 'en' %}
+            <div class="param-details__heading">
+              <h1 class="param-details__title"><a href="//detailsCtrl.getParamUrl(param)//" title="Go to topic page">// param.name //</a></h1>
+            </div>
+            <dl class="param-details__stats">
+              <dt>Score</dt>
+              <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value //</dd>
+              <dt>Rank</dt>
+              <dd>01</dd>
+            </dl>
+          {% when 'es' %}
+            <div class="param-details__heading">
+              <h1 class="param-details__title"><a href="//detailsCtrl.getParamUrl(param)//" title="Visita la pagina del tema">// param.name //</a></h1>
+            </div>
+            <dl class="param-details__stats">
+              <dt>Puntaje</dt>
+              <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value //</dd>
+              <dt>Posición</dt>
+              <dd>01</dd>
+            </dl>
+          {% endcase %}
+        </header>
+
+        <div class="param-details__body">
+
+          <table class="table detailed-data param-details__table">
+            <thead>
+            {% case language %}
+            {% when 'en' %}
+              <tr>
+                <th><span class="visually-hidden">Parameter</span></th>
+                <th>Score</th>
+                <th>Rank</th>
+                <th><span class="visually-hidden">Info</span></th>
+              </tr>
+            {% when 'es' %}
+              <tr>
+                <th><span class="visually-hidden">Tema</span></th>
+                <th>Puntaje</th>
+                <th>Posición</th>
+                <th><span class="visually-hidden">Info</span></th>
+              </tr>
+            {% endcase %}
+            </thead>
+            <tbody ng-repeat="ind_group in param.indicator_groups">
+              <tr>
+                <th class="cell-hd" colspan="4">// ind_group.name //</th>
+              </tr>
+              <tr ng-repeat="ind in ind_group.indicators">
+                <td class="cell-ind">// ind.name //</td>
+                <td class="cell-rank" ng-repeat="score in ind.data | orderBy:'year':true | limitTo:1">// score.value //</td>
+                <td class="cell-score"></td>
+                <td class="cell-info"><a href="" title="About this indicator" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="//detailsCtrl.getTooltipContent(ind)//"><span>Info</span></a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="param-details__graph">
+            <img class="placeholder" src="http://placehold.it/300x300&text=graphic" alt="Placeholder" />
+          </div>
+
+        </div>
+        
+      </section>
+      
     </section>
   </script>
   
@@ -179,9 +225,9 @@ layout: entry
           <td class="cell-country"><a href="//statesCtrl.getStateUrl(state)//">//state.name//</a></td>
           <td>//state.score | round:2 //</td>
           <td>
-            <a href="" tooltip-animation="false" tooltip-placement="top" tooltip-trigger="focus" tooltip-html-unsafe="//statesCtrl.getTooltipContent(state.parameters)//">
+            <a href="" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//statesCtrl.getTooltipContent(state.parameters)//">
               <ul class="table-bar">
-                <li ng-repeat="param in state.parameters" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+                <li ng-repeat="param in state.parameters" ng-class="'param-' + param.id" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
               </ul>
             </a>
           </td>

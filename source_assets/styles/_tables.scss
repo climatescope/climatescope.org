@@ -135,60 +135,26 @@
   }
 }
 
-.poc-detailed-data {
-  .param td {
-    font-weight: bold;
+.detailed-data {
+  .cell-hd {
+    @extend .hd-label;
   }
-  .ind_group > td:first-child {
+  .cell-ind {
     padding-left: 1.5rem;
-    color: tint($primary-color, 60%);
   }
-  .ind > td:first-child {
-    padding-left: 2.5rem;
+  .cell-info {
+    a {
+      display: block;
+      color: tint($primary-color, 60%);
+      width: 1.5rem;
+      height: 1.5rem;
+      text-align: center;
+      &:before {
+        @extend .icon-circle-info;
+      }
+      span {
+        @extend .visually-hidden;
+      }
+    }
   }
-}
-
-.table-bar {
-  width: 90%;
-  list-style-type: none;
-  overflow: hidden;
-  border-radius: $global-radius;
-  height: 1.25rem;
-  background: tint($primary-color, 95%);
-  padding: 0;
-  margin: 0.125rem 0;
-  cursor: help;
-
-  li {
-    float: left;
-    height: 100%;
-  }
-
-  > li:first-child {
-    border-radius: $global-radius 0 0  $global-radius;
-  }
-
-  > li:last-child {
-    border-radius: 0 $global-radius $global-radius 0;
-  }
-
-  li:nth-child(1) {
-    background-color: $infograph-color-a;
-  }
-
-  li:nth-child(2) {
-    background-color: $infograph-color-b;
-  }
-
-  li:nth-child(3) {
-    background-color: $infograph-color-c;
-  }
-
-  li:nth-child(4) {
-    background-color: $infograph-color-d;
-  }
-}
-
-.table-nested .table-bar {
-  background: #fff;
 }

@@ -38,6 +38,9 @@ function setupCommonTableMethods(scope) {
       case 'state':
         return (CS.stateIndex) ? CS.stateIndex[id] : '';
       break;
+      case 'parameter':
+        return (CS.parameterIndex) ? CS.parameterIndex[id] : '';
+      break;
       default:
         return '';
       break;

@@ -9,9 +9,11 @@
   {% when 'en' %}
     {% assign country_col = 'en_country' %}
     {% assign state_col = 'en_state' %}
+    {% assign param_col = 'en_parameter' %}
   {% when 'es' %}
     {% assign country_col = 'es_country' %}
     {% assign state_col = 'es_state' %}
+    {% assign param_col = 'es_parameter' %}
   {% endcase %}
   
   // Country index to retrieve the url.
@@ -25,6 +27,13 @@
   CS.stateIndex = {
     {% for state in site[state_col] %}
       "{{state.id}}":"{{site.domain}}{{state.url}}",
+    {% endfor %}
+  };
+
+  // Parameter index to retrieve the url.
+  CS.parameterIndex = {
+    {% for param in site[param_col] %}
+      "{{param.id}}":"{{site.domain}}{{param.url}}",
     {% endfor %}
   };
 </script>
