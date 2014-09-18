@@ -135,15 +135,26 @@
   }
 }
 
-.poc-detailed-data {
-  .param td {
-    font-weight: bold;
+.detailed-data {
+  .cell-hd {
+    @extend .hd-label;
   }
-  .ind_group > td:first-child {
+  .cell-ind {
     padding-left: 1.5rem;
-    color: tint($primary-color, 60%);
   }
-  .ind > td:first-child {
-    padding-left: 2.5rem;
+  .cell-info {
+    a {
+      display: block;
+      color: tint($primary-color, 60%);
+      width: 1.5rem;
+      height: 1.5rem;
+      text-align: center;
+      &:before {
+        @extend .icon-circle-info;
+      }
+      span {
+        @extend .visually-hidden;
+      }
+    }
   }
 }

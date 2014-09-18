@@ -532,7 +532,7 @@ a:active{
 
 
 // LAYOUT: ENTRY
-// COUNTRY/STATE
+// Country/State
 
 .ctas-list {
   list-style: none;
@@ -583,7 +583,7 @@ a:active{
 }
 
 #section-switch {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .layout--entry.country,
@@ -661,8 +661,94 @@ a:active{
   }
 }
 
-// LAYOUT ENTRY
-// PARAMETERS
+// Parameters details
+
+#country-detail {
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.param-details {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  &__header {
+    overflow: hidden;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    border-bottom: 4px solid tint($primary-color, 90%);
+    margin-bottom: 2rem;
+  }
+  &__heading {
+    @include col(7/12);
+  }
+  &__title {
+    @extend .hd-xs;
+    margin-bottom: 0;
+    a {
+      color: inherit;
+    }
+  }
+  &__stats {
+    @include col(5/12);
+    margin-bottom: 0;
+    dt {
+      @extend .hd-label;
+      margin: 0 0 0 1rem;
+    }
+    dd {
+      font-family: $brand-font-family;
+      font-weight: $brand-font-bold;
+      font-size: 1.25rem;
+      margin: 0 0 0 1rem;
+      padding: 0 0 0 1rem;
+      border-left: 1px solid tint($primary-color, 90%);
+    }
+    dt, dd {
+      float: right;
+      text-align: right;
+      line-height: 1.75rem;
+    }
+    > :last-child {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+  }
+  &__table {
+    @include col(12/12);
+  }
+  &__graph {
+    @include col(12/12);
+    text-align: center !important;
+    padding: 4rem 0;
+    .placeholder {
+      border-radius: $global-rounded;
+    }
+  }
+  @media #{$large-up} {
+    &__heading {
+      @include col(8/12);
+    }
+    &__stats {
+      @include col(4/12);
+    }
+    &__table {
+    @include col(8/12);
+    }
+    &__graph {
+      @include col(4/12);
+    }
+  }
+}
+
+.param-details.param-1 .param-details__header { border-bottom-color: $infograph-color-a; }
+.param-details.param-2 .param-details__header { border-bottom-color: $infograph-color-b; }
+.param-details.param-3 .param-details__header { border-bottom-color: $infograph-color-c; }
+.param-details.param-4 .param-details__header { border-bottom-color: $infograph-color-d; }
+
+
+// LAYOUT: ENTRY
+// Parameters
 
 .parameter.layout--entry {
   .layout--entry__title {
@@ -688,8 +774,8 @@ a:active{
 .parameter.param-4 .layout--entry__title:after { background: $infograph-color-d; }
 
 
-// LAYOUT ENTRY/HUB
-// POLICIES
+// LAYOUT: ENTRY/HUB
+// Policies
 
 .policies.layout--entry {
   .layout--entry__heading {
