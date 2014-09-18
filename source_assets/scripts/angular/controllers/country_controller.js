@@ -91,6 +91,12 @@
 
     CountryData.get(function(data) {
       _self.states = data.states;
+      // Order states parameter array.
+      angular.forEach(_self.states, function(state) {
+        state.parameters.sort(function(a, b) {
+          return a.id > b.id;
+        });
+      });
     });
 
   }]);
