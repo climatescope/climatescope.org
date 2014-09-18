@@ -70,6 +70,13 @@
     this.getParamUrl = function(param) {
       return _self.getTranslatedUrl('parameter', param.id);
     };
+    
+    this.getTooltipContent = function(ind) {
+      return [
+        '<h6>' + ind.name + '</h6>',
+        '<p>Parameter description will go here.</p>'
+      ].join('');
+    };
 
     CountryData.get(function(data) {
       _self.parameters = data.parameters;

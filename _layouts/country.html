@@ -184,7 +184,7 @@ layout: entry
                 <td class="cell-ind">// ind.name //</td>
                 <td class="cell-rank" ng-repeat="score in ind.data | orderBy:'year':true | limitTo:1">// score.value //</td>
                 <td class="cell-score"></td>
-                <td class="cell-info"><a href="" title="About this indicator"><span>Info</span></a></td>
+                <td class="cell-info"><a href="" title="About this indicator" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="//detailsCtrl.getTooltipContent(ind)//"><span>Info</span></a></td>
               </tr>
             </tbody>
           </table>

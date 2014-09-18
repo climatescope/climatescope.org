@@ -146,6 +146,9 @@
     a {
       display: block;
       color: tint($primary-color, 60%);
+      width: 1.5rem;
+      height: 1.5rem;
+      text-align: center;
       &:before {
         @extend .icon-circle-info;
       }
