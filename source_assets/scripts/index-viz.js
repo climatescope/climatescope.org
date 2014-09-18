@@ -309,10 +309,10 @@ $(document).ready(function() {
         d = land[i].parameters;
 
         land[i].rank.score = (Math.round(
-          weight[keys[0]] * d[keys[0]].value +
-          weight[keys[1]] * d[keys[1]].value +
-          weight[keys[2]] * d[keys[2]].value +
-          weight[keys[3]] * d[keys[3]].value
+          weight['param-' + keys[0]] * d[keys[0]].value +
+          weight['param-' + keys[1]] * d[keys[1]].value +
+          weight['param-' + keys[2]] * d[keys[2]].value +
+          weight['param-' + keys[3]] * d[keys[3]].value
                                         )) / 100;
       }
       land = land.sort(function(a, b) { return b.rank.score - a.rank.score; });

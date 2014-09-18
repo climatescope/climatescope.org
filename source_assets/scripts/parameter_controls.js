@@ -67,7 +67,7 @@ $(document).ready(function() {
         var globalScore = 0;
         angular.forEach(params, function(param) {
           // Update param weight.
-          param.weight = data[param.id] / 100;
+          param.weight = data['param-' + param.id] / 100;
           // Country score.
           globalScore += (param.weight * param.value);
         });
@@ -117,10 +117,10 @@ $(document).ready(function() {
     });
 
     // Temp data!
-    $('.slider-value.param-1').text(data['1'] + '%');
-    $('.slider-value.param-2').text(data['2'] + '%');
-    $('.slider-value.param-3').text(data['3'] + '%');
-    $('.slider-value.param-4').text(data['4'] + '%');
+    $('.slider-value.param-1').text(data['param-1'] + '%');
+    $('.slider-value.param-2').text(data['param-2'] + '%');
+    $('.slider-value.param-3').text(data['param-3'] + '%');
+    $('.slider-value.param-4').text(data['param-4'] + '%');
   });
   
   // Reset button.
