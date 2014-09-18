@@ -68,7 +68,7 @@ $(document).ready(function() {
     });
 
       // UI element for toggling the map
-    var $countryFilter = $('<ul>', {
+    var $countryFilter = $('<div>', {
         'class': 'leaflet-control bttn-group bttn-group-s bttn-list map-country-toggle'
     });
     var svg = d3.select(map.getPanes().overlayPane)
