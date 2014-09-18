@@ -141,7 +141,40 @@ path {
 }
 
 .bttn-group.map-country-toggle {
-  padding: 8px;
+  padding: 0.5rem;
   background: #fff;
   border-radius: $global-radius;
+  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  background-clip: padding-box;
+}
+
+.leaflet-control-container {
+  @include center($max-width);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @media #{$small-up} {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @media #{$medium-up} {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.leaflet-left.leaflet-top {
+  top: 1rem;
+}
+
+.leaflet-left.leaflet-bottom {
+  bottom: 1rem;
+}
+
+.leaflet-left.leaflet-top,
+.leaflet-left.leaflet-bottom {
+  left: auto;
+  .leaflet-control {
+    margin: 0;
+  }
 }
