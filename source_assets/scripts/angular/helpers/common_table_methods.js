@@ -38,6 +38,9 @@ function setupCommonTableMethods(scope) {
       case 'state':
         return (CS.stateIndex) ? CS.stateIndex[id] : '';
       break;
+      case 'parameter':
+        return (CS.parameterIndex) ? CS.parameterIndex[id] : '';
+      break;
       default:
         return '';
       break;
@@ -52,11 +55,11 @@ function setupCommonTableMethods(scope) {
       t += param.name;
       t += '</dt>';
       t += '<dd>';
-      t += param.value;
+      t += round(param.value, 2);
       t += '<small>';
       // 0.29 * 100 = 28.999999999999
       // Round to solve the problem.
-      t += (Math.round(param.weight * 100 * 100) / 100) + '%';
+      t += round(param.weight * 100, 2) + '%';
       t += '</small>';
       t += '</dd>';
     });

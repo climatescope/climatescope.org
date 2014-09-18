@@ -179,6 +179,54 @@ a:active{
   }
 }
 
+// Infographics
+
+.table-bar {
+  width: 90%;
+  list-style-type: none;
+  overflow: hidden;
+  border-radius: $global-radius;
+  height: 1.25rem;
+  background: tint($primary-color, 95%);
+  padding: 0;
+  margin: 0.125rem 0;
+  cursor: help;
+
+  li {
+    float: left;
+    height: 100%;
+  }
+
+  > li:first-child {
+    border-radius: $global-radius 0 0  $global-radius;
+  }
+
+  > li:last-child {
+    border-radius: 0 $global-radius $global-radius 0;
+  }
+
+  li.param-1 {
+    background-color: $infograph-color-a;
+  }
+
+  li.param-2 {
+    background-color: $infograph-color-b;
+  }
+
+  li.param-3 {
+    background-color: $infograph-color-c;
+  }
+
+  li.param-4 {
+    background-color: $infograph-color-d;
+  }
+}
+
+.table-nested .table-bar {
+  background: #fff;
+}
+
+
 // Intro stripe
 
 .intro {
@@ -442,16 +490,16 @@ a:active{
   .slider {
     margin-bottom: 0.75rem;
   }
-  .control.a .noUi-connect {
+  .control.param-1 .noUi-connect {
     background: $infograph-color-a;
   }
-  .control.b .noUi-connect {
+  .control.param-2 .noUi-connect {
     background: $infograph-color-b;
   }
-  .control.c .noUi-connect {
+  .control.param-3 .noUi-connect {
     background: $infograph-color-c;
   }
-  .control.d .noUi-connect {
+  .control.param-4 .noUi-connect {
     background: $infograph-color-d;
   }
   .slider-value {
@@ -484,7 +532,7 @@ a:active{
 
 
 // LAYOUT: ENTRY
-// COUNTRY/STATE
+// Country/State
 
 .ctas-list {
   list-style: none;
@@ -535,7 +583,7 @@ a:active{
 }
 
 #section-switch {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .layout--entry.country,
@@ -613,8 +661,94 @@ a:active{
   }
 }
 
-// LAYOUT ENTRY
-// PARAMETERS
+// Parameters details
+
+#country-detail {
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.param-details {
+  overflow: hidden;
+  margin-bottom: 2rem;
+  &__header {
+    overflow: hidden;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    border-bottom: 4px solid tint($primary-color, 90%);
+    margin-bottom: 2rem;
+  }
+  &__heading {
+    @include col(7/12);
+  }
+  &__title {
+    @extend .hd-xs;
+    margin-bottom: 0;
+    a {
+      color: inherit;
+    }
+  }
+  &__stats {
+    @include col(5/12);
+    margin-bottom: 0;
+    dt {
+      @extend .hd-label;
+      margin: 0 0 0 1rem;
+    }
+    dd {
+      font-family: $brand-font-family;
+      font-weight: $brand-font-bold;
+      font-size: 1.25rem;
+      margin: 0 0 0 1rem;
+      padding: 0 0 0 1rem;
+      border-left: 1px solid tint($primary-color, 90%);
+    }
+    dt, dd {
+      float: right;
+      text-align: right;
+      line-height: 1.75rem;
+    }
+    > :last-child {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+  }
+  &__table {
+    @include col(12/12);
+  }
+  &__graph {
+    @include col(12/12);
+    text-align: center !important;
+    padding: 4rem 0;
+    .placeholder {
+      border-radius: $global-rounded;
+    }
+  }
+  @media #{$large-up} {
+    &__heading {
+      @include col(8/12);
+    }
+    &__stats {
+      @include col(4/12);
+    }
+    &__table {
+    @include col(8/12);
+    }
+    &__graph {
+      @include col(4/12);
+    }
+  }
+}
+
+.param-details.param-1 .param-details__header { border-bottom-color: $infograph-color-a; }
+.param-details.param-2 .param-details__header { border-bottom-color: $infograph-color-b; }
+.param-details.param-3 .param-details__header { border-bottom-color: $infograph-color-c; }
+.param-details.param-4 .param-details__header { border-bottom-color: $infograph-color-d; }
+
+
+// LAYOUT: ENTRY
+// Parameters
 
 .parameter.layout--entry {
   .layout--entry__title {
@@ -640,8 +774,8 @@ a:active{
 .parameter.param-4 .layout--entry__title:after { background: $infograph-color-d; }
 
 
-// LAYOUT ENTRY/HUB
-// POLICIES
+// LAYOUT: ENTRY/HUB
+// Policies
 
 .policies.layout--entry {
   .layout--entry__heading {

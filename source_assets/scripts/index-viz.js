@@ -2,10 +2,31 @@ $(document).ready(function() {
 
   var rank = function () {
 
-    // Never used.
-    // var $parent = $(parent);
-    var map = L.mapbox.map('index-viz', 'flipside.e6958sxs')
-        .setView([0,0], 2);
+    var mapSettings = {
+      'world': {
+        mapId: 'flipside.e6958sxs',
+        zoom: 2,
+        center: [0, 0]
+      },
+      'africa': {
+        mapId: 'flipside.cdw17lf8',
+        zoom: 3,
+        center: [-9.6224, 25.8398]
+      },
+      'asia': {
+        mapId: 'flipside.j7e3okc6',
+        zoom: 3,
+        center: [20.63278, 104.0625]
+      },
+      'lac': {
+        mapId: 'flipside.b1dsv657',
+        zoom: 2,
+        center: [-15.6230, -59.0625]
+      }
+    };
+    var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
+    var map = L.mapbox.map('index-viz', mapConf.mapId)
+      .setView(mapConf.center, mapConf.zoom);
 
     var point = function(x, y) {
       var pt = map.latLngToLayerPoint([y, x]);
@@ -45,23 +66,23 @@ $(document).ready(function() {
         '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
         '<div class="rank-tooltip-body">',
         '<table><tr><td class="first">' + d.overall_ranking + '</td><td>' + rank_text + '</td></tr>',
-        '<tr><td class="first">' + d.score + '</td><td>' + score_text + '</td></tr>',
+        '<tr><td class="first">' + round(d.score, 2) + '</td><td>' + score_text + '</td></tr>',
 
         // four indicators
-        '<tr><td class="first">' + d.parameters[0].value,
+        '<tr><td class="first">' + round(d.parameters[0].value, 2),
         '</td><td class="tooltip-table-indicator indicator-0">' + d.parameters[0].name + '</td></tr>',
 
-        '<tr><td class="first">' + d.parameters[1].value,
+        '<tr><td class="first">' + round(d.parameters[1].value, 2),
         '</td><td class="tooltip-table-indicator indicator-1">' + d.parameters[1].name + '</td></tr>',
 
-        '<tr><td class="first">' + d.parameters[2].value,
+        '<tr><td class="first">' + round(d.parameters[2].value, 2),
         '</td><td class="tooltip-table-indicator indicator-2">' + d.parameters[2].name + '</td></tr>',
 
-        '<tr><td class="first">' + d.parameters[3].value,
+        '<tr><td class="first">' + round(d.parameters[3].value, 2),
         '</td><td class="tooltip-table-indicator indicator-3">' + d.parameters[3].name + '</td></tr>',
 
         '</table>',
-        '<button class="rank-tooltip-link">' + link_text + '</button>',
+        '<a href="' + CS.countryIndex[d.iso] +'" class="rank-tooltip-link">' + link_text + '</a>',
         '</div>'
       ].join(' ');
 
@@ -94,16 +115,30 @@ $(document).ready(function() {
 
     var undef = void 0;
 
+    var countryListUrl = CS.domain + '/' + CS.lang + '/api/countries.json';
+    if (CS.regionId) {
+      countryListUrl = CS.domain + '/' + CS.lang + '/api/regions/' + CS.regionId + '.json';
+    }
+
     queue()
-    .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.topojson')
-    .defer(d3.json, CS.domain + '/' + CS.lang + '/api/countries.json')
+    // The topo json file is the same for all languages.
+    .defer(d3.json, CS.domain + '/en/api/countries.topojson')
+    .defer(d3.json, countryListUrl)
 
     // .defer(d3.json, 'en/api/countries.topojson')
     // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
-
       land = topojson.feature(geography, geography.objects.countries).features;
-      indicators = countryRank;
+
+      // If there's a region, the countries are inside an object.
+      indicators = CS.regionId ? countryRank.countries : countryRank;
+
+      // Sort parameters.
+      $.each(indicators, function(index, country) {
+        country.parameters.sort(function(a, b) {
+          return a.id > b.id;
+        });
+      });
 
       var lookup = {};
       var max = [];
@@ -275,10 +310,10 @@ $(document).ready(function() {
         d = land[i].parameters;
 
         land[i].rank.score = (Math.round(
-          weight[keys[0]] * d[keys[0]].value +
-          weight[keys[1]] * d[keys[1]].value +
-          weight[keys[2]] * d[keys[2]].value +
-          weight[keys[3]] * d[keys[3]].value
+          weight['param-' + keys[0]] * d[keys[0]].value +
+          weight['param-' + keys[1]] * d[keys[1]].value +
+          weight['param-' + keys[2]] * d[keys[2]].value +
+          weight['param-' + keys[3]] * d[keys[3]].value
                                         )) / 100;
       }
       land = land.sort(function(a, b) { return b.rank.score - a.rank.score; });

@@ -36,10 +36,10 @@
         </td>
         <td class="cell-rank">//country.overall_ranking//</td>
         <td class="cell-country"><a href="//countryTable.getCountryUrl(country)//">//country.name//</a></td>
-        <td>//country.score//</td>
+        <td>//country.score | round:2 //</td>
         <td>
           <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//countryTable.getTooltipContent(country.parameters)//">
-            <li ng-repeat="param in country.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+            <li ng-repeat="param in country.parameters" ng-class="'param-' + param.id" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
           </ul>
         </td>
         <td><em class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>//country.grid//</span></em></td>
@@ -71,10 +71,10 @@
               <td>&nbsp;</td>
               <td class="cell-rank">//state.state_ranking//</td>
               <td class="cell-country"><a href="//countryTable.getStateUrl(state)//">//state.name//</a></td>
-              <td>//state.score//</td>
+              <td>//state.score | round:2 //</td>
               <td>
                 <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//countryTable.getTooltipContent(state.parameters)//">
-                  <li ng-repeat="param in state.parameters" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+                  <li ng-repeat="param in state.parameters" ng-class="'param-' + param.id" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
                 </ul>
               </td>
               <td></td>

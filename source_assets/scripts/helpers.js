@@ -51,3 +51,10 @@ function debounce(func, wait, immediate) {
     });
   };
 })(jQuery);
+
+// Rounds the given number.
+// From http://www.jacklmoore.com/notes/rounding-in-javascript/
+/* jshint unused: false */
+function round(value, decimals) {
+    return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+}
