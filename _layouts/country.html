@@ -129,17 +129,17 @@ layout: entry
       {% endcase %}
 
       <!-- Individual parameter details -->
-      <section class="param-details">
+      <section class="param-details param-1">
 
         <header class="param-details__header">
           <div class="param-details__heading">
-            <h1 class="param-details__title">Enabling framework</h1>
+            <h1 class="param-details__title"><a href="#" title="Go to topic page">Enabling framework</a></h1>
           </div>
           <dl class="param-details__stats">
+            <dt>Score</dt>
+            <dd>2.25</dd>
             <dt>Rank</dt>
             <dd>01</dd>
-            <dt>Score</dt>
-            <dd>225</dd>
           </dl>
         </header>
 
@@ -165,13 +165,12 @@ layout: entry
             <tbody ng-repeat="param in detailsCtrl.parameters">
               <tr class="param"><td class="label">//param.name// </td><td class="value">//param.data[0].value//<td></td></td></tr>
               <tr class="ind_group" ng-repeat-start="ind_group in param.indicator_groups"><td class="label">//ind_group.name//</td><td><td></td></td></tr>
-              <tr class="ind" ng-repeat-end ng-repeat="ind in ind_group.indicators"><td class="label">//ind.name// </td><td class="value">//ind.data[0].value//<td></td></td></tr>
-              
+              <tr class="ind" ng-repeat-end ng-repeat="ind in ind_group.indicators"><td class="label">//ind.name// </td><td class="value">//ind.data[0].value//<td></td></td></tr> 
             </tbody>
           </table>
 
           <div class="param-details__graph">
-            <img src="http://placehold.it/350x150">
+            <img class="placeholder" src="http://placehold.it/300x300&text=graphic" alt="Placeholder" />
           </div>
 
         </div>
