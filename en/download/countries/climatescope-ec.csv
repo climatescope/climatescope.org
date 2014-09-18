@@ -1,0 +1,61 @@
+name:en_var,type_var,2014
+Score,score,0.959
+Enabling framework,param,0.999
+Clean energy policies,ind,0.103
+Power sector structure,ind,0.135
+Distributed energy regulatory framework,ind,0.0
+Clean energy rural electrification,ind,0.04
+Energy access policies,ind,0.0
+Policy barriers,ind,0.007
+Clean energy installed capacity,ind,0.022
+Growth rate of installed capacity,ind,0.0
+Clean energy electricity generation,ind,0.015
+Growth rate of electricity generation,ind,0.005
+Biofuels production,ind,0.0
+Growth rate biofuels production,ind,0.0
+Average electricity spot prices,ind,0.016
+Average retail electricity prices,ind,0.015
+Average residential electricity prices,ind,0.0
+Average commercial electricity prices,ind,0.0
+Average industrial electricity prices,ind,0.0
+Average kerosene prices,ind,0.0
+Average diesel prices,ind,0.0
+Growth rate of power demand,ind,0.04
+Electrification rate,ind,0.002
+Population using solid fuels for cooking,ind,0.0
+Financing and Investments,param,0.71
+Clean energy investments,ind,0.006
+Growth rate of clean energy investments,ind,0.043
+Asset finance investments,ind,0.0
+Corporate finance investments,ind,0.0
+VC/PE investments,ind,0.0
+"Loans, grants, grant programs",ind,0.003
+Local investments,ind,0.009
+Number of Green MFI,ind,0.048
+Green micro-loans,ind,0.0
+Green micro-borrowers,ind,0.001
+Average cost of green micro debt,ind,0.004
+Average cost of debt,ind,0.055
+Swap rate,ind,0.043
+Value chains,param,0.72
+Financial institutions in clean energy,ind,0.0
+Value chains by clean energy sector,ind,0.099
+Distributed clean energy value chains by sector,ind,0.0
+Clean energy service providers,ind,0.009
+Distributed clean energy service providers,ind,0.0
+GHG management,param,1.586
+Carbon offsets historical activity,ind,0.075
+CDM risk,ind,0.038
+Carbon offsets future potential,ind,0.013
+GHG emissions reduction target,ind,0.0
+GHG country registry,ind,0.0
+GHG market-based instruments,ind,0.0
+PMR & NAMA,ind,0.0
+Voluntary GHG reporting by corporates,ind,0.038
+Investor pressure – PRI signatories,ind,0.0
+Corporate energy efficiency initiatives,ind,0.0
+Corporate emission reduction policies,ind,0.0
+Capacity building – env. business training,ind,0.038
+Capacity building – think tanks,ind,0.038
+Global rank,rank,35.0
+Regional rank,rank,16.0
