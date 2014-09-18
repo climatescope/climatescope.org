@@ -132,6 +132,13 @@ $(document).ready(function() {
       // If there's a region, the countries are inside an object.
       indicators = CS.regionId ? countryRank.countries : countryRank;
 
+      // Sort parameters.
+      $.each(indicators, function(index, country) {
+        country.parameters.sort(function(a, b) {
+          return a.id > b.id;
+        });
+      });
+
       var lookup = {};
       var max = [];
       var filtered = [];
