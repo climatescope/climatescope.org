@@ -1,0 +1,60 @@
+name:es_var,type_var,2014
+Puntaje,score,1.575
+Marco Propicio,param,1.895
+Es...Clean energy policies,ind,0.249
+Es...Power sector structure,ind,0.141
+Es...Distributed energy regulatory framework,ind,0.0
+Es...Clean energy rural electrification,ind,0.04
+Es...Energy access policies,ind,0.0
+Es...Policy barriers,ind,0.004
+Es...Clean energy installed capacity,ind,0.086
+Es...Growth rate of installed capacity,ind,0.0
+Es...Clean energy electricity generation,ind,0.03
+Es...Growth rate of electricity generation,ind,0.16
+Es...Biofuels production,ind,0.0
+Es...Growth rate biofuels production,ind,0.0
+Es...Average electricity spot prices,ind,0.026
+Es...Average retail electricity prices,ind,0.02
+Es...Average residential electricity prices,ind,0.0
+Es...Average commercial electricity prices,ind,0.0
+Es...Average industrial electricity prices,ind,0.0
+Es...Average kerosene prices,ind,0.0
+Es...Average diesel prices,ind,0.0
+Es...Growth rate of power demand,ind,0.0
+Es...Electrification rate,ind,0.002
+Es...Population using solid fuels for cooking,ind,0.0
+Financiamiento y Inversión,param,0.954
+Es...Clean energy investments,ind,0.172
+Es...Growth rate of clean energy investments,ind,0.021
+Es...Asset finance investments,ind,0.0
+Es...Corporate finance investments,ind,0.0
+Es...VC/PE investments,ind,0.0
+"Es...Loans, grants, grant programs",ind,0.0
+Es...Local investments,ind,0.0
+Es...Number of Green MFI,ind,0.0
+Es...Green micro-loans,ind,0.0
+Es...Green micro-borrowers,ind,0.0
+Es...Average cost of green micro debt,ind,0.0
+Es...Average cost of debt,ind,0.053
+Es...Swap rate,ind,0.04
+Cadenas de valor,param,1.941
+Es...Financial institutions in clean energy,ind,0.038
+Es...Value chains by clean energy sector,ind,0.197
+Es...Distributed clean energy value chains by sector,ind,0.0
+Es...Clean energy service providers,ind,0.056
+Es...Distributed clean energy service providers,ind,0.0
+Gestión de GEI,param,1.599
+Es...Carbon offsets historical activity,ind,0.112
+Es...CDM risk,ind,0.012
+Es...Carbon offsets future potential,ind,0.0
+Es...GHG emissions reduction target,ind,0.0
+Es...GHG country registry,ind,0.0
+Es...GHG market-based instruments,ind,0.0
+Es...PMR & NAMA,ind,0.019
+Es...Voluntary GHG reporting by corporates,ind,0.001
+Es...Investor pressure – PRI signatories,ind,0.0
+Es...Corporate energy efficiency initiatives,ind,0.015
+Es...Corporate emission reduction policies,ind,0.004
+Es...Capacity building – env. business training,ind,0.038
+Es...Capacity building – think tanks,ind,0.038
+Es...State rank,rank,1.0

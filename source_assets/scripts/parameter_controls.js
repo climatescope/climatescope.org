@@ -71,7 +71,7 @@ $(document).ready(function() {
           // Country score.
           globalScore += (param.weight * param.value);
         });
-        return Math.round(globalScore * 100) / 100;
+        return round(globalScore, 5);
       };
 
       // Update country scores.

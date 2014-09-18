@@ -138,7 +138,7 @@ layout: entry
             </div>
             <dl class="param-details__stats">
               <dt>Score</dt>
-              <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value //</dd>
+              <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value | round:2 //</dd>
               <dt>Rank</dt>
               <dd>01</dd>
             </dl>
@@ -148,7 +148,7 @@ layout: entry
             </div>
             <dl class="param-details__stats">
               <dt>Puntaje</dt>
-              <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value //</dd>
+              <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value | round:2 //</dd>
               <dt>Posición</dt>
               <dd>01</dd>
             </dl>
@@ -223,7 +223,7 @@ layout: entry
         <tr>
           <td class="cell-rank">//state.state_ranking//</td>
           <td class="cell-country"><a href="//statesCtrl.getStateUrl(state)//">//state.name//</a></td>
-          <td>//state.score//</td>
+          <td>//state.score | round:2 //</td>
           <td>
             <a href="" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//statesCtrl.getTooltipContent(state.parameters)//">
               <ul class="table-bar">

@@ -66,19 +66,19 @@ $(document).ready(function() {
         '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
         '<div class="rank-tooltip-body">',
         '<table><tr><td class="first">' + d.overall_ranking + '</td><td>' + rank_text + '</td></tr>',
-        '<tr><td class="first">' + d.score + '</td><td>' + score_text + '</td></tr>',
+        '<tr><td class="first">' + round(d.score, 2) + '</td><td>' + score_text + '</td></tr>',
 
         // four indicators
-        '<tr><td class="first">' + d.parameters[0].value,
+        '<tr><td class="first">' + round(d.parameters[0].value, 2),
         '</td><td class="tooltip-table-indicator indicator-0">' + d.parameters[0].name + '</td></tr>',
 
-        '<tr><td class="first">' + d.parameters[1].value,
+        '<tr><td class="first">' + round(d.parameters[1].value, 2),
         '</td><td class="tooltip-table-indicator indicator-1">' + d.parameters[1].name + '</td></tr>',
 
-        '<tr><td class="first">' + d.parameters[2].value,
+        '<tr><td class="first">' + round(d.parameters[2].value, 2),
         '</td><td class="tooltip-table-indicator indicator-2">' + d.parameters[2].name + '</td></tr>',
 
-        '<tr><td class="first">' + d.parameters[3].value,
+        '<tr><td class="first">' + round(d.parameters[3].value, 2),
         '</td><td class="tooltip-table-indicator indicator-3">' + d.parameters[3].name + '</td></tr>',
 
         '</table>',
