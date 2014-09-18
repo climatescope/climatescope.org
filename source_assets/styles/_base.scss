@@ -667,10 +667,10 @@ a:active{
     }
   }
   &__table {
-    @include col(7/12);
+    @include col(12/12);
   }
   &__graph {
-    @include col(5/12);
+    @include col(12/12);
     text-align: center !important;
     padding: 4rem 0;
     .placeholder {
