@@ -82,7 +82,7 @@ $(document).ready(function() {
         '</td><td class="tooltip-table-indicator indicator-3">' + d.parameters[3].name + '</td></tr>',
 
         '</table>',
-        '<button class="rank-tooltip-link">' + link_text + '</button>',
+        '<a href="' + CS.countryIndex[d.iso] +'" class="rank-tooltip-link">' + link_text + '</a>',
         '</div>'
       ].join(' ');
 
