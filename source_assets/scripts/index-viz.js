@@ -4,7 +4,7 @@ $(document).ready(function() {
 
     // Never used.
     // var $parent = $(parent);
-    var map = L.mapbox.map('index-viz', 'derrr.f5dvlsor')
+    var map = L.mapbox.map('index-viz', 'flipside.e6958sxs')
         .setView([0,0], 2);
 
     var point = function(x, y) {
@@ -19,67 +19,51 @@ $(document).ready(function() {
 
     var tooltip = d3.tip().attr('class', 'rank-tooltip').html(function(d) {
       d = d.rank;
-      var tooltip_content = "";
+
       // Never used.
       // var rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
+      
+      var link_text = "";
+      var rank_text = "";
+      var score_text = "";
 
       switch(CS.lang) {
         case 'en':
-          tooltip_content = [
-            '<div class="rank-tooltip-head"><label>Region goes here</label>',
-            '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
-            '<div class="rank-tooltip-body">',
-            '<table><tr><td class="first">' + d.overall_ranking, '</td><td>Rank</td></tr>',
-            '<tr><td class="first">' + d.score, '</td><td>Score</td></tr>',
-
-            // four indicators
-            '<tr><td class="first">' + d.parameters[0].value,
-            '</td><td class="tooltip-table-indicator indicator-0">Enabling Framework</td></tr>',
-
-            '<tr><td class="first">' + d.parameters[1].value,
-            '</td><td class="tooltip-table-indicator indicator-1">Financing & Investment</td></tr>',
-
-            '<tr><td class="first">' + d.parameters[2].value,
-            '</td><td class="tooltip-table-indicator indicator-2">Value Chains</td></tr>',
-
-            '<tr><td class="first">' + d.parameters[3].value,
-            '</td><td class="tooltip-table-indicator indicator-3">GHG Management</td></tr>',
-
-            '</table>',
-            '<button class="rank-tooltip-link">View Country &rsaquo;</button>',
-            '</div>'
-          ].join(' ');
+          link_text = "View Country &rsaquo;";
+          rank_text = "Rank";
+          score_text = "Score";
         break;
-
         case 'es':
-          tooltip_content = [
-            '<div class="rank-tooltip-head"><label>Region goes here</label>',
-            '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
-            '<div class="rank-tooltip-body">',
-            '<table><tr><td class="first">' + d.overall_ranking, '</td><td>Rank</td></tr>',
-            '<tr><td class="first">' + d.score, '</td><td>Score</td></tr>',
-
-            // four indicators
-            '<tr><td class="first">' + d.parameters[0].value,
-            '</td><td class="tooltip-table-indicator indicator-0">Enabling Framework ES</td></tr>',
-
-            '<tr><td class="first">' + d.parameters[1].value,
-            '</td><td class="tooltip-table-indicator indicator-1">Financing & Investment ES</td></tr>',
-
-            '<tr><td class="first">' + d.parameters[2].value,
-            '</td><td class="tooltip-table-indicator indicator-2">Value Chains ES</td></tr>',
-
-            '<tr><td class="first">' + d.parameters[3].value,
-            '</td><td class="tooltip-table-indicator indicator-3">GHG Management ES</td></tr>',
-
-            '</table>',
-            '<button class="rank-tooltip-link">View Country &rsaquo;</button>',
-            '</div>'
-          ].join(' ');
+          link_text = "Ver País &rsaquo;";
+          rank_text = "Posición";
+          score_text = "Puntaje";
         break;
       }
+          
+      return [
+        '<div class="rank-tooltip-head"><label>Region goes here</label>',
+        '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
+        '<div class="rank-tooltip-body">',
+        '<table><tr><td class="first">' + d.overall_ranking + '</td><td>' + rank_text + '</td></tr>',
+        '<tr><td class="first">' + d.score + '</td><td>' + score_text + '</td></tr>',
 
-      return tooltip_content;
+        // four indicators
+        '<tr><td class="first">' + d.parameters[0].value,
+        '</td><td class="tooltip-table-indicator indicator-0">' + d.parameters[0].name + '</td></tr>',
+
+        '<tr><td class="first">' + d.parameters[1].value,
+        '</td><td class="tooltip-table-indicator indicator-1">' + d.parameters[1].name + '</td></tr>',
+
+        '<tr><td class="first">' + d.parameters[2].value,
+        '</td><td class="tooltip-table-indicator indicator-2">' + d.parameters[2].name + '</td></tr>',
+
+        '<tr><td class="first">' + d.parameters[3].value,
+        '</td><td class="tooltip-table-indicator indicator-3">' + d.parameters[3].name + '</td></tr>',
+
+        '</table>',
+        '<button class="rank-tooltip-link">' + link_text + '</button>',
+        '</div>'
+      ].join(' ');
 
     });
 
