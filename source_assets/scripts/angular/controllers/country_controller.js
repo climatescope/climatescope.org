@@ -65,6 +65,12 @@
     // Data.
     this.parameters = [];
 
+    setupCommonTableMethods(_self);
+
+    this.getParamUrl = function(param) {
+      return _self.getTranslatedUrl('parameter', param.id);
+    };
+
     CountryData.get(function(data) {
       _self.parameters = data.parameters;
     });

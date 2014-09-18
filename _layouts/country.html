@@ -128,16 +128,15 @@ layout: entry
       <h1 class="visually-hidden">En Detalle</h1>
       {% endcase %}
 
-      <!-- Individual parameter details -->
-      <section class="param-details param-1">
+      <section class="param-details" ng-repeat="param in detailsCtrl.parameters" ng-class="'param-' + param.id">
 
         <header class="param-details__header">
           <div class="param-details__heading">
-            <h1 class="param-details__title"><a href="#" title="Go to topic page">Enabling framework</a></h1>
+            <h1 class="param-details__title"><a href="//detailsCtrl.getParamUrl(param)//" title="Go to topic page">// param.name //</a></h1>
           </div>
           <dl class="param-details__stats">
             <dt>Score</dt>
-            <dd>2.25</dd>
+            <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value //</dd>
             <dt>Rank</dt>
             <dd>01</dd>
           </dl>
@@ -145,7 +144,7 @@ layout: entry
 
         <div class="param-details__body">
 
-          <table class="table poc-detailed-data param-details__table">
+          <table class="table detailed-data param-details__table">
             <thead>
             {% case language %}
             {% when 'en' %}
@@ -153,19 +152,27 @@ layout: entry
                 <th><span class="visually-hidden">Parameter</span></th>
                 <th>Score</th>
                 <th>Rank</th>
+                <th><span class="visually-hidden">Info</span></th>
               </tr>
             {% when 'es' %}
               <tr>
                 <th><span class="visually-hidden">Tema</span></th>
                 <th>Puntaje</th>
                 <th>Posición</th>
+                <th><span class="visually-hidden">Info</span></th>
               </tr>
             {% endcase %}
             </thead>
-            <tbody ng-repeat="param in detailsCtrl.parameters">
-              <tr class="param"><td class="label">//param.name// </td><td class="value">//param.data[0].value//<td></td></td></tr>
-              <tr class="ind_group" ng-repeat-start="ind_group in param.indicator_groups"><td class="label">//ind_group.name//</td><td><td></td></td></tr>
-              <tr class="ind" ng-repeat-end ng-repeat="ind in ind_group.indicators"><td class="label">//ind.name// </td><td class="value">//ind.data[0].value//<td></td></td></tr> 
+            <tbody ng-repeat="ind_group in param.indicator_groups">
+              <tr>
+                <th class="cell-hd" colspan="4">// ind_group.name //</th>
+              </tr>
+              <tr ng-repeat="ind in ind_group.indicators">
+                <td class="cell-ind">// ind.name //</td>
+                <td class="cell-rank" ng-repeat="score in ind.data | orderBy:'year':true | limitTo:1">// score.value //</td>
+                <td class="cell-score"></td>
+                <td class="cell-info"><a href="" title="About this indicator"><span>Info</span></a></td>
+              </tr>
             </tbody>
           </table>
 
@@ -176,7 +183,6 @@ layout: entry
         </div>
         
       </section>
-      <!--/ Individual parameter details -->
       
     </section>
   </script>
