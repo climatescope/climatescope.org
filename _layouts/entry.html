@@ -7,18 +7,16 @@ layout: base
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
 
-{% assign vars = site.collections[page.collection].layout_vars %}
-
 {% if vars.type == 'parameter' %}
   {% capture custom_class %}param-{{ page.id }}{% endcapture %}
 {% endif %}
 
-<article class="layout--entry {{vars.type}} {{ custom_class }}">
+<article class="layout--entry {{ layout.conf.type }} {{ custom_class }}">
   <header class="layout--entry__header">
     <div class="row--contained">
       <div class="layout--entry__heading">
         <h1 class="layout--entry__title">{{ page.title }}</h1>
-        <p class="layout--entry__subtitle">{{vars.subtitle}}</p>
+        <p class="layout--entry__subtitle">{{ layout.conf.subtitle[language] }}</p>
         {% case language %}
         {% when 'en' %}
 
