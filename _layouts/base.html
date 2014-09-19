@@ -3,37 +3,15 @@
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
-{% if page.id == 'index' %}
-  {% capture meta_title %}{{ site.name[language] }} {{ site.edition }}{% endcapture %}
-{% else %}
-  {% capture meta_title %}{{ page.title }} — {{ site.name[language] }} {{ site.edition }}{% endcapture %}
-{% endif %}
+
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-  <title>{{ meta_title }}</title>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="{{ site.description }}" />
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-
-  {% include facebook_og.html %}
-  {% include twitter_card.html %}
-
-  <link rel="shortcut icon" href="{{ site.domain }}/assets/images/meta/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="{{ site.domain }}/assets/images/meta/apple-touch-icon.png" />
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-152x152.png" /> 
+  
+  {% include meta.html %}
 
   <link type="text/plain" rel="author" href="{{ site.domain }}/humans.txt" />
   <link rel="stylesheet" href="{{ site.domain }}/assets/styles/main.css">

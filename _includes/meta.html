@@ -1,0 +1,69 @@
+{% if page.id == 'index' %}
+  {% capture meta_title %}{{ site.name[language] }} {{ site.edition }}{% endcapture %}
+{% else %}
+  {% capture meta_title %}{{ page.title }} — {{ site.name[language] }} {{ site.edition }}{% endcapture %}
+{% endif %}
+
+<title>{{ meta_title }}</title>
+<meta name="description" content="{{ site.description }}" />
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+<!-- Twiter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.data.flipside.twitter }}">
+<meta name="twitter:title" content="{{ meta_title }}">
+{% if page.description %}
+  <meta property="twitter:description" content="{{ page.description }}" />
+{% elsif page.excerpt %}
+  <meta property="twitter:description" content="{{ page.excerpt | strip_html | truncate: 200 }}" >
+{% else %}
+  <meta property="twitter:description" content="{{ site.data.flipside.description }}" >
+{% endif %}
+{% if page.image %}
+  {% if page.category == "note" %}
+    <meta property="twitter:image" content="{{ site.domain }}/images/notes/{{ page.image }}" />
+  {% elsif page.category == "project" %}
+    <meta property="twitter:image" content="{{ site.domain }}/images/projects/{{ page.image }}" />
+  {% endif %}
+{% else %}
+  <meta property="twitter:image" content="{{ site.domain }}/images/meta/og-image.png" />  
+{% endif %}
+<!--/ Twiter Cards -->
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Flipside" />
+{% if page.category == "note" || "project" %}
+  <meta property="og:type" content="article" />
+{% else %}
+  <meta property="og:type" content="website" />
+{% endif %}
+<meta property="og:title" content="{{ page.title }} - Flipside" />
+<meta property="og:url" content="{{ site.domain }}{{ page.url }}" />
+{% if page.description %}
+  <meta property="og:description" content="{{ page.description }}" />
+{% elsif page.excerpt %}
+  <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 40 }}" >
+{% else %}
+  <meta property="og:description" content="{{ site.data.flipside.description }}" >
+{% endif %}
+{% if page.category == "note" %}
+  <meta property="og:image" content="{{ site.domain }}/images/notes/{{ page.image }}" />
+{% elsif page.category == "project" %}
+  <meta property="og:image" content="{{ site.domain }}/images/projects/{{ page.image }}" />
+{% endif %}
+<meta property="og:image" content="{{ site.domain }}/images/meta/og-image.png" />  
+<!--/ Open Graph -->
+
+<link rel="shortcut icon" href="{{ site.domain }}/assets/images/meta/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="{{ site.domain }}/assets/images/meta/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-152x152.png" /> 
