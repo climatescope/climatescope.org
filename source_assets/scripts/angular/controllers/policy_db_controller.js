@@ -15,6 +15,25 @@
     return arr;
   };
   
+  // When switching languages the url must reflect the current one
+  // otherwise the page will not load properly.
+  var updateLangSwitcherUrl = function(new_url) {
+    $('.lang-menu a').each(function() {
+      var url;
+      // If the original url is set return it.
+      if ($(this).data('orig_href')) {
+        url = $(this).data('orig_href');
+      }
+      // Otherwise store it and return the href value.
+      else {
+        url = $(this).attr('href');
+        $(this).data('orig_href', url);
+      }
+      url += '#' + new_url;
+      $(this).attr('href', url);
+    });
+  };
+  
   var app = angular.module('policyApp', ['ngRoute'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('//');
     $interpolateProvider.endSymbol('//');
@@ -109,6 +128,9 @@
     
     // Check if there are filters in the url.
     if (!angular.equals({}, $location.search())) {
+      // Update language switcher url.
+      updateLangSwitcherUrl($location.url());
+      
       // Set already preset filters.
       angular.extend(_self.filters, $location.search());
       _self.filtersEnabled = true;
@@ -123,6 +145,11 @@
       //   _self.filters.subsector = parseInt(_self.filters.subsector);
       // }
     }
+    
+    $rootScope.$on('$locationChangeSuccess', function() {
+      updateLangSwitcherUrl($location.url());
+    });
+
   }]);
 
   app.controller('policyTableController', ['$http', '$scope', '$location', function($http, $scope, $location) {
@@ -175,7 +202,10 @@
     getPolicies();
   }]);
 
-  app.controller('policyController', ['$http', '$routeParams', function($http, $routeParams) {
+  app.controller('policyController', ['$http', '$routeParams', '$location', function($http, $routeParams, $location) {
+    // Update language switcher url.
+    updateLangSwitcherUrl($location.url());
+
     var _self = this;
     this.policy = {};
     
