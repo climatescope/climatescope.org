@@ -1,7 +1,13 @@
 safe:           false
 domain:         http://localhost:4000
 #domain:         http://demo.flipside.org/climatescope
-name:           Global Climatescope 2014
+name:
+  en:           Global Climatescope
+  es:           Climascopio Global
+tagline:
+  en:           Assessing the Climate for Climate Investment
+  es:           Assessing the Climate for Climate Investment ES
+edition:        2014
 exclude:        ['node_modules', 'source_assets', 'Gruntfile.js', 'package.json', 'README.md']
 collections:
   en_region:
