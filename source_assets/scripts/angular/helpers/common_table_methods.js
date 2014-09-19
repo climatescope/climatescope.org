@@ -68,3 +68,21 @@ function setupCommonTableMethods(scope) {
     return t;
   };
 };
+
+/**
+ * Common methods used in the parameter Details table
+ * Modifies the scope object
+ * @param {Object} scope
+ */
+function setupCommonParamDetailTableMethods(scope) {
+  scope.getParamUrl = function(param) {
+    return scope.getTranslatedUrl('parameter', param.id);
+  };
+  
+  scope.getTooltipContent = function(ind) {
+    return [
+      '<h6>' + ind.name + '</h6>',
+      '<p>Parameter description will go here.</p>'
+    ].join('');
+  };
+}
