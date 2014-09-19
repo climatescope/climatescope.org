@@ -25,8 +25,9 @@ $(document).ready(function() {
       }
     };
     var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
-    var map = L.mapbox.map('index-viz', mapConf.mapId)
-      .setView(mapConf.center, mapConf.zoom);
+    var map = L.mapbox.map('index-viz', mapConf.mapId, {
+                          minZoom: 2
+    }).setView(mapConf.center, mapConf.zoom);
 
     var point = function(x, y) {
       var pt = map.latLngToLayerPoint([y, x]);
@@ -43,7 +44,7 @@ $(document).ready(function() {
 
       // Never used.
       // var rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
-      
+
       var link_text = "";
       var rank_text = "";
       var score_text = "";
@@ -60,7 +61,7 @@ $(document).ready(function() {
           score_text = "Puntaje";
         break;
       }
-          
+
       return [
         '<div class="rank-tooltip-head"><label>Region goes here</label>',
         '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
