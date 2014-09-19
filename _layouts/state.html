@@ -1,6 +1,9 @@
 ---
 layout: entry
 ---
+<script>
+    CS.stateId = '{{page.id}}';
+</script>
 
 <div class="row--full intro">
   {% include static_map.html %}
@@ -28,7 +31,7 @@ layout: entry
 
       {% when 'es' %}
 
-      <dt>Gdp</dt>
+      <dt>ES Gdp</dt>
       <dd>$2,396bn</dd>
       <dt>Seven-year Economic Growth Rate</dt>
       <dd>6%</dd>
@@ -92,7 +95,8 @@ layout: entry
 
 </div>
 
-<div class="row--contained">
-  <h1 class="visually-hidden">In Detail</h1>
-  
+<div class="row--contained" ng-app="stateApp">
+  <section id="state-detail" ng-controller="DetailsController as detailsCtrl">
+    {% include parameter_detail.html %}
+  </section>
 </div>
