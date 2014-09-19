@@ -6,7 +6,7 @@ exclude:        ['node_modules', 'source_assets', 'Gruntfile.js', 'package.json'
 collections:
   en_region:
     output: true
-    permalink: /en/region/:path/
+    permalink: /en/region/:title/
     lang: en
     i18n:
       en: en_region
@@ -18,7 +18,7 @@ collections:
     
   es_region:
     output: true
-    permalink: /es/region/:path/
+    permalink: /es/region/:title/
     lang: es
     i18n:
       en: en_region
@@ -30,7 +30,7 @@ collections:
       
   en_country:
     output: true
-    permalink: /en/country/:path/
+    permalink: /en/country/:title/
     lang: en
     i18n:
       en: en_country
@@ -41,7 +41,7 @@ collections:
       
   es_country:
     output: true
-    permalink: /es/pais/:path/
+    permalink: /es/pais/:title/
     lang: es
     i18n:
       en: en_country
@@ -74,7 +74,7 @@ collections:
       
   en_parameter:
     output: true
-    permalink: /en/topic/:path/
+    permalink: /en/topic/:title/
     lang: en
     i18n:
       en: en_parameter
@@ -85,7 +85,7 @@ collections:
       
   es_parameter:
     output: true
-    permalink: /es/tema/:path/
+    permalink: /es/tema/:title/
     lang: es
     i18n:
       en: en_parameter
@@ -96,7 +96,7 @@ collections:
 
   en_page:
     output: true
-    permalink: /en/:path/
+    permalink: /en/:title/
     lang: en
     i18n:
       en: en_page
@@ -106,7 +106,7 @@ collections:
       
   es_page:
     output: true
-    permalink: /es/:path/
+    permalink: /es/:title/
     lang: es
     i18n:
       en: en_page
