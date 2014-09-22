@@ -7,6 +7,9 @@ name:
 tagline:
   en:           Assessing the Climate for Climate Investment
   es:           Assessing the Climate for Climate Investment ES
+description:
+  en:           This is a custom description
+  es:           This is a custom description ES
 edition:        2014
 exclude:        ['node_modules', 'source_assets', 'Gruntfile.js', 'package.json', 'README.md']
 collections:
