@@ -4,6 +4,16 @@
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
 
+{% assign en_coll = site.collections[page.collection].i18n.en %}
+{% case en_coll %}
+{% when 'en_country' or 'en_state' %}
+  {% capture dlink %}{{ site.domain }}/{{ language }}/download/countries/climatescope-{{ page.id }}.csv{% endcapture %}
+{% when 'en_region' %}
+  {% capture dlink %}{{ site.domain }}/{{ language }}/download/regions/climatescope-{{ page.id }}.csv{% endcapture %}
+{% when 'en_parameter' %}
+  {% capture dlink %}{{ site.domain }}/{{ language }}/download/parameters/climatescope-{{ page.id }}.csv{% endcapture %}
+{% endcase %}
+
 <ul class="actions-menu">
 {% case language %}
 {% when 'en' %}
@@ -12,7 +22,7 @@
     <li class="dropdown">
       <a href="#" title="Download data" class="bttn bttn-success dropdown-toggle download" data-toggle="dropdown">Download</a>
       <ul class="dropdown-menu dropdown-menu-right" role="menu">
-        <li><a href="{{ site.domain }}/en/download/prototype_example.csv" title="Download raw data">Raw data (CSV)</a></li>
+        <li><a href="{{ dlink }}" title="Download raw data">Raw data (CSV)</a></li>
       </ul>
     </li>
   {% endif %}
@@ -31,7 +41,7 @@
     <li class="dropdown">
       <a href="#" title="Descargar datos" class="bttn bttn-success dropdown-toggle download" data-toggle="dropdown">Descargar</a>
       <ul class="dropdown-menu dropdown-menu-right" role="menu">
-        <li><a href="{{ site.domain }}/en/download/prototype_example.csv" title="Download raw data">Raw data (CSV)</a></li>
+        <li><a href="{{ dlink }}" title="Download raw data">Raw data (CSV)</a></li>
       </ul>
     </li>
   {% endif %}
