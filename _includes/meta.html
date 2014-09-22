@@ -26,9 +26,10 @@
   {% capture meta_image %}{{ site.domain }}/assets/images/meta/region-meta-img-{{ page.id }}.jpg{% endcapture %} 
 {% endcase %}
 
+{% capture meta_def_image %}{{ site.domain }}/assets/images/meta/og-image-{{ language }}.jpg{% endcapture %}
+
 <title>{{ meta_title }}</title>
 <meta name="description" content="{{ meta_description }}" />
-
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -41,12 +42,7 @@
 {% if meta_image %}
   <meta property="twitter:image" content="{{ meta_image }}" />
 {% else %}
-  {% case language %}
-  {% when 'en' %}
-    <meta property="og:image" content="{{ site.domain }}/images/meta/og-image-en.png" />
-  {% when 'es' %}
-    <meta property="og:image" content="{{ site.domain }}/images/meta/og-image-es.png" />
-  {% endcase %} 
+  <meta property="og:image" content="{{ meta_def_image }}" />
 {% endif %}
 <!--/ Twiter Cards -->
 
@@ -57,10 +53,5 @@
 <meta property="og:url" content="{{ site.domain }}{{ page.url }}" />
 <meta property="og:description" content="{{ meta_description }}" />
 <meta property="og:image" content="{{ meta_image }}" />
-{% case language %}
-{% when 'en' %}
-  <meta property="og:image" content="{{ site.domain }}/images/meta/og-image-en.png" />
-{% when 'es' %}
-  <meta property="og:image" content="{{ site.domain }}/images/meta/og-image-es.png" />
-{% endcase %}
+<meta property="og:image" content="{{ meta_def_image }}" />
 <!--/ Open Graph -->
