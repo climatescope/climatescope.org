@@ -45,87 +45,82 @@ layout: entry
 <div class="row--contained">
 
 <script>
+    CS.parameterId = {{page.id}};
+</script>
 
-	var app = angular.module('countryApp2', [], function($interpolateProvider) {
+<script>
+
+
+	var app = angular.module('parameterApp', ['mathFilters'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('//');
     $interpolateProvider.endSymbol('//');
   });
   
-  app.controller('CountryListController2', ['$http', function($http) {
-    _self = this;
+  app.controller('CountryListController', ['$http', function($http) {
+    var _self = this;
     // Data
+    this.parameter = {};
     this.countries = [];
+    this.scoreAvg = 0;
     
-    // Not a safe option. DEMO only.
-    this.param_id = {{page.id}} - 1;
+    setupCommonTableMethods(_self);
     
-    // Sort related.
-    this.sortField = 'overall_ranking';
-    this.sortReverse = false;
-    
-    // Helper function.
-    var getRequestUrl = function(regionId) {
-      regionId = regionId || null;
-      
-      if (regionId == null) {
-        return CS.domain + '/' + CS.lang + '/api/countries.json';
-      }
-      else {
-        return CS.domain + '/' + CS.lang + '/api/regions/' + regionId + '.json';
-      }
+    var calcAvgScore = function() {
+      var score = 0;
+      angular.forEach(_self.countries, function(country) {
+        score += country.data[0].value;
+      });
+
+      _self.scoreAvg = score / _self.countries.length;
     };
-    
-    // Heler function used in html.
-    this.setSort = function(field) {
-      _self.sortField = field;
-      _self.sortReverse = !_self.sortReverse;
-    };
-    
+        
     this.getCountryUrl = function(country) {
-      if (CS.countryIndex) {
-        var iso = country.iso.toLowerCase();
-        return CS.countryIndex[iso];
-      }
-      else {
-        return '';
-      }
-    };
-    
-    this.getParameterValue = function(country) {
-      return country.parameters[_self.param_id].value;
-    };
-    this.getParameterFieldName = function() {
-      return 'parameters[' + _self.param_id + '].value';
+      var iso = country.iso.toLowerCase();
+      return _self.getTranslatedUrl('country', iso);
     };
     
     // ---- Logic ----
-    
-    $http.get(getRequestUrl()).success(function(data) {
-      _self.countries = data;
+    var url = CS.domain + '/' + CS.lang + '/api/topic/' + CS.parameterId + '.json';
+    $http.get(url).success(function(data) {
+
+      angular.forEach(data.countries, function(country) {
+        country.data.sort(function(a, b) {
+          return b.year - a.year;
+        });
+      });
+
+      _self.parameter = data;
+      _self.countries = data.countries;
+      calcAvgScore();
     });
         
   }]);
 </script>
 
-<div ng-app="countryApp2">
-<div ng-controller="CountryListController2 as countryTable" ng-cloak>
+<div ng-app="parameterApp">
+<div ng-controller="CountryListController as countryTable" ng-cloak>
   <table class="table">
     <thead>
       <tr>
         <th><a href="" ng-click="countryTable.setSort('overall_ranking')">Overall rank</a></th>
         <th><a href="" ng-click="countryTable.setSort('name')">Country</a></th>
         <th><a href="" ng-click="countryTable.setSort('score')">Overall score</a></th>
-        <th><a href="" ng-click="countryTable.setSort(countryTable.getParameterFieldName())">Parameter</a></th>
+        <th><a href="" ng-click="countryTable.setSort('data[0].value')">Parameter</a></th>
         <th><a href="" ng-click="countryTable.setSort('grid')">Grid</a></th>
       </tr>
     </thead>
     <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortField:countryTable.sortReverse">
       <tr>
-        <td>//country.overall_ranking//</td>
-        <td>//country.name//</td>
-        <td>//country.score//</td>
-        <td>//countryTable.getParameterValue(country)//</td>
-        <td>//country.grid//</td>
+        <td>// country.overall_ranking //</td>
+        <td><a href="//countryTable.getCountryUrl(country)//" title="Go to country page">// country.name //</a></td>
+        <td>// country.score | round:3 //</td>
+        
+        <td>
+          <ul class="table-bar">
+            <li ng-class="'param-' + countryTable.parameter.id" style="width: //countryTable.calcBarSegment(country.data[0].value, countryTable.parameter.weight)//"><span class="visually-hidden">// country.data[0].value //</span>&nbsp;</li>
+          </ul>
+        </td>
+        <td><em class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>// country.grid //</span></em></td>
       </tr>
     </tbody>
   </table>
