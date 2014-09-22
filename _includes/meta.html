@@ -11,9 +11,9 @@
 {% endif %}
 
 {% if page.description %}
-  {% assign meta_description = page.description %}  
+  {% assign meta_description = page.description %}
 {% elsif page.excerpt %}
-  {% assign meta_description = page.excerpt | strip_html | truncate: 200 %} 
+  {% assign meta_description = page.excerpt | strip_html | truncate: 200 %}
 {% else %}
   {% assign meta_description = site.description[language] %}
 {% endif %}
@@ -21,13 +21,12 @@
 {% assign en_coll = site.collections[page.collection].i18n.en %}
 {% case en_coll %}
 {% when 'en_country' or 'en_state' %}
-  {% capture meta_image %}{{ site.domain }}/assets/images/content/maps/{{ page.id }}.png{% endcapture %}
+  {% capture meta_image %}{{ site.domain }}/assets/images/content/maps/{{ page.id }}.png{% endcapture %}
 {% when 'en_region' %}
-  {% capture meta_image %}{{ site.domain }}/assets/images/meta/region-meta-img-{{ page.id }}.jpg{% endcapture %} 
+  {% capture meta_image %}{{ site.domain }}/assets/images/meta/region-meta-img-{{ page.id }}.jpg{% endcapture %}
 {% endcase %}
 
 {% capture meta_def_image %}{{ site.domain }}/assets/images/meta/og-image-{{ language }}.jpg{% endcapture %}
-
 <title>{{ meta_title }}</title>
 <meta name="description" content="{{ meta_description }}" />
 <meta charset="utf-8">
