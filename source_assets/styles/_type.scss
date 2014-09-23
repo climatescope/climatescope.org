@@ -298,7 +298,7 @@ h5, .hd-xs,
 h6, .hd-xxs {
   font-family: $brand-font-family;
   font-weight: $brand-font-bold;
-  margin: 0 0 1rem 0;
+  margin: 0 0 1.25rem 0;
   text-transform: uppercase;
 }
 
@@ -336,6 +336,28 @@ h6, .hd-xxs {
   font-weight: normal;
 }
 
+.hd-param-1,
+.hd-param-2,
+.hd-param-3,
+.hd-param-4 {
+  position: relative;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1.5rem;
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 4px;
+    width: 8rem;
+    content: '';
+  }
+}
+
+.hd-param-1:before { background: $infograph-color-a; }
+.hd-param-2:before { background: $infograph-color-b; }
+.hd-param-3:before { background: $infograph-color-c; }
+.hd-param-4:before { background: $infograph-color-d; }
+
 [class*=' hd-'], [class^='hd-'] {
   b {
     font-weight: normal;
@@ -345,23 +367,23 @@ h6, .hd-xxs {
 // BODY COPY
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 // Lists
 
 ul {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   padding-left: 2rem;
 }
 
 ol {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   padding-left: 2rem;
 }
 
 dl {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   dt {
     font-weight: $body-font-bold;
   }

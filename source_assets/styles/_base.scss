@@ -372,9 +372,6 @@ a:active{
   }
   &__body {
     padding: 2rem 0;
-    h2 {
-      @extend .hd-xxs;
-    }
   }
   .intro {
     height: 20rem;
@@ -427,8 +424,19 @@ a:active{
 .col--main {
   @include col(8/12);
   margin-bottom: 2rem;
+  .layout--page & {
+    @include col(12/12);
+  }
+  @media #{$medium-up} {
+    .layout--page & {
+      @include col(10/12);
+    }
+  }
   @media #{$large-up} {
     @include col(8/12);
+    .layout--page & {
+      @include col(8/12);
+    }
   }
 }
 
@@ -466,6 +474,14 @@ a:active{
       @include col(4/12);
     }
   }
+}
+
+.prose-copy {
+  > :last-child {
+    margin-bottom: 0;
+  }
+  h1, h2 { @extend .hd-xs; }
+  h3, h4, h5, h6 { @extend .hd-xxs; }
 }
 
 
