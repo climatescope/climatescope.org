@@ -895,6 +895,14 @@ a:active{
   h1 {
     @extend .visually-hidden;
   }
+  .copyright {
+    float: left;
+    clear: both;
+    font-family: $brand-font-family;
+    color: tint($primary-color, 60%);
+    margin-bottom: 0;
+    font-size: 0.85rem;
+  }
   .orgs-list {
     list-style: none;
     padding: 0;
@@ -922,20 +930,12 @@ a:active{
     .orgs-list {
       float: right;
     }
+    .copyright {
+      float: right;
+    }
   }
 }
 
-#copyright {
-  float: left;
-  clear: both;
-  font-family: $brand-font-family;
-  color: tint($primary-color, 60%);
-  margin-bottom: 0;
-  font-size: 0.85rem;
-  @media #{$xlarge-up} {
-    float: right;
-  }
-}
 
 // MODALS
 
