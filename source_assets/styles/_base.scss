@@ -100,9 +100,6 @@ a:active{
 
 .label-grid-off {
   background: tint($primary-color, 60%);
-  .table & {
-     @extend .visually-hidden;
-  }
 }
 
 // Badges
