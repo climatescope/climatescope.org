@@ -1,0 +1,56 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
+{% if page.id == 'index' %}
+  {% capture meta_title %}{{ site.name[language] }} {{ site.edition }}{% endcapture %}
+{% else %}
+  {% capture meta_title %}{{ page.title }} — {{ site.name[language] }} {{ site.edition }}{% endcapture %}
+{% endif %}
+
+{% if page.description %}
+  {% assign meta_description = page.description %}
+{% elsif page.excerpt %}
+  {% assign meta_description = page.excerpt | strip_html | truncate: 200 %}
+{% else %}
+  {% assign meta_description = site.description[language] %}
+{% endif %}
+
+{% assign en_coll = site.collections[page.collection].i18n.en %}
+{% case en_coll %}
+{% when 'en_country' or 'en_state' %}
+  {% capture meta_image %}{{ site.domain }}/assets/images/content/maps/{{ page.id }}.png{% endcapture %}
+{% when 'en_region' %}
+  {% capture meta_image %}{{ site.domain }}/assets/images/meta/region-meta-img-{{ page.id }}.jpg{% endcapture %}
+{% endcase %}
+
+{% capture meta_def_image %}{{ site.domain }}/assets/images/meta/og-image-{{ language }}.jpg{% endcapture %}
+<title>{{ meta_title }}</title>
+<meta name="description" content="{{ meta_description }}" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+<!-- Twiter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.data.flipside.twitter }}">
+<meta name="twitter:title" content="{{ meta_title }}">
+<meta property="twitter:description" content="{{ meta_description }}" />
+{% if meta_image %}
+  <meta property="twitter:image" content="{{ meta_image }}" />
+{% else %}
+  <meta property="og:image" content="{{ meta_def_image }}" />
+{% endif %}
+<!--/ Twiter Cards -->
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="{{ site.name[language] }} {{ site.edition }}" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ meta_title }}" />
+<meta property="og:url" content="{{ site.domain }}{{ page.url }}" />
+<meta property="og:description" content="{{ meta_description }}" />
+<meta property="og:image" content="{{ meta_image }}" />
+<meta property="og:image" content="{{ meta_def_image }}" />
+<!--/ Open Graph -->
