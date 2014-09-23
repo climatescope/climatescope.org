@@ -1,32 +1,30 @@
-$tooltip-background: #fff;
-$tooltip-border: #E5E5E5;
-$tooltip-light-color: #888;
-$marker-stroke: #D9D9D9;
-$marker-fill: #333333;
+// MAP
 
-path {
-  stroke: grey;
-  stroke-width: .25px;
-}
+// MARKERS
 
 .rank-marker {
   font-family: $brand-font-family;
+  font-weight: $brand-font-bold;
+  @extend .antialiased;
 }
 
 .rank-marker circle {
-  stroke: $marker-stroke;
-  stroke-width: 4px;
+  stroke: #000;
+  stroke-width: 8px;
   stroke-linecap: round;
-  stroke-opacity: 0.8;
-  fill: $marker-fill;
+  stroke-opacity: 0.15;
+  fill: tint($primary-color, 20%);
 }
 
 .rank-marker text {
-  fill: #ffffff;
+  fill: #fff;
   text-anchor: middle;
-  font-size: 16px;
+  font-size: 1rem;
   pointer-events: none;
 }
+
+
+// CONTROLS
 
 .bttn-group.map-country-toggle {
   padding: 0.5rem;
