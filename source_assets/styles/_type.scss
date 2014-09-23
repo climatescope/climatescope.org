@@ -351,6 +351,9 @@ h6, .hd-xxs {
     width: 8rem;
     content: '';
   }
+  a {
+    color: inherit;
+  }
 }
 
 .hd-param-1:before { background: $infograph-color-a; }
