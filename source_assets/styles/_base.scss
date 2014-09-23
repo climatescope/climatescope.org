@@ -766,25 +766,23 @@ a:active{
 .parameter.layout--entry {
   .layout--entry__title {
     position: relative;
-    padding-right: 1.5rem;
     margin-right: 0; 
-    &:after {
+    &:before {
       position: absolute;
-      bottom: 0.875rem;
-      right: 0;
+      bottom: -8px;
+      left: 0;
       z-index: 1;
       content: '';
-      width: 1rem;
-      height: 1rem;
-      border-radius: $global-rounded;
+      width: 12rem;
+      height: 5px;
     }
   }
 }
 
-.parameter.param-1 .layout--entry__title:after { background: $infograph-color-a; }
-.parameter.param-2 .layout--entry__title:after { background: $infograph-color-b; }
-.parameter.param-3 .layout--entry__title:after { background: $infograph-color-c; }
-.parameter.param-4 .layout--entry__title:after { background: $infograph-color-d; }
+.parameter.param-1 .layout--entry__title:before { background: $infograph-color-a; }
+.parameter.param-2 .layout--entry__title:before { background: $infograph-color-b; }
+.parameter.param-3 .layout--entry__title:before { background: $infograph-color-c; }
+.parameter.param-4 .layout--entry__title:before { background: $infograph-color-d; }
 
 
 // LAYOUT: ENTRY/HUB
