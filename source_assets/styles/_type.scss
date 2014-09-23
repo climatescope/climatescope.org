@@ -391,3 +391,11 @@ dl {
     margin: 0;
   }
 }
+
+hr {
+  margin: 2rem 0;
+  border: 0;
+  clear: both;
+  height: 1px;
+  background: tint($primary-color, 90%);
+}
