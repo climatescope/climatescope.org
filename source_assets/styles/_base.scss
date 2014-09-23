@@ -84,13 +84,18 @@ a:active{
   }
   span {
     margin: 0 0.5rem 0 0;
-    .table & {
-      display: none;
+    .table &,
+    .tooltip__header & {
+      @extend .visually-hidden;
     }
   }
   .layout--entry__heading & {
     vertical-align: top;
     margin-top: 0.25rem;
+  }
+  .tooltip-map & {
+    vertical-align: top;
+    margin-top: 0.15rem;
   }
 }
 
@@ -175,6 +180,7 @@ a:active{
       font-size: 0.85rem;
       color: tint($primary-color, 60%);
       margin-left: 0.5rem;
+      float: right;
     }
   }
 }

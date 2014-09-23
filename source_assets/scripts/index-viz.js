@@ -39,52 +39,68 @@ $(document).ready(function() {
     var path = d3.geo.path().projection(projection);
     var clicked = false;
 
-    var tooltip = d3.tip().attr('class', 'rank-tooltip').html(function(d) {
+    var tooltip = d3.tip().attr('class', 'tooltip-map top').html(function(d) {
       d = d.rank;
 
       // Never used.
       // var rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
 
-      var link_text = "";
-      var rank_text = "";
-      var score_text = "";
+      var link_text, close_text, rank_text, score_text;
 
       switch(CS.lang) {
         case 'en':
-          link_text = "View Country &rsaquo;";
+          link_text = "View Country";
+          close_text = "Close";
           rank_text = "Rank";
           score_text = "Score";
+          grid_on_text = "On-grid";
+          grid_off_text = "Off-grid";
         break;
         case 'es':
-          link_text = "Ver País &rsaquo;";
+          link_text = "Ver País";
+          close_text = "Cerrar";
           rank_text = "Posición";
           score_text = "Puntaje";
+          grid_on_text = "On-grid ES";
+          grid_off_text = "Off-grid ES";
         break;
       }
 
+      var param_code = '';
+      $.each(d.parameters, function(index, param) {
+        var className = 'param-' + param.id;
+        param_code += [
+          '<dt class="' + className + '">' + param.name + '</dt>',
+          '<dd>',
+            round(param.value, 2),
+            '<small>' + round(param.weight * 100, 2) + '%' + '</small>', 
+          '</dd>',
+        ].join(' ');
+      });
+
+      var grid_code = d.grid == 'on' ? '<em class="label-grid label-grid-on" title="' + grid_on_text + '"><span>' + grid_on_text + '</span></em>' : '<em class="label-grid label-grid-off"><span>' + grid_off_text + '</span></em>';
+
       return [
-        '<div class="rank-tooltip-head"><label>Region goes here</label>',
-        '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
-        '<div class="rank-tooltip-body">',
-        '<table><tr><td class="first">' + d.overall_ranking + '</td><td>' + rank_text + '</td></tr>',
-        '<tr><td class="first">' + round(d.score, 2) + '</td><td>' + score_text + '</td></tr>',
+        '<article class="tooltip-inner">',
+          '<header class="tooltip__header">',
+            '<h1 class="tooltip__title"><a href="' + CS.countryIndex[d.iso] +'" title="' + link_text + '">' + d.name + '</a></h1>',
+            '<p class="tooltip__subtitle">Region goes here</p>',
+            grid_code,
+            '<a href="#" title="' + close_text + '" class="close" onClick="return false;"><span>' + close_text + '</span></a>',
+          '</header>',
 
-        // four indicators
-        '<tr><td class="first">' + round(d.parameters[0].value, 2),
-        '</td><td class="tooltip-table-indicator indicator-0">' + d.parameters[0].name + '</td></tr>',
-
-        '<tr><td class="first">' + round(d.parameters[1].value, 2),
-        '</td><td class="tooltip-table-indicator indicator-1">' + d.parameters[1].name + '</td></tr>',
-
-        '<tr><td class="first">' + round(d.parameters[2].value, 2),
-        '</td><td class="tooltip-table-indicator indicator-2">' + d.parameters[2].name + '</td></tr>',
-
-        '<tr><td class="first">' + round(d.parameters[3].value, 2),
-        '</td><td class="tooltip-table-indicator indicator-3">' + d.parameters[3].name + '</td></tr>',
-
-        '</table>',
-        '<a href="' + CS.countryIndex[d.iso] +'" class="rank-tooltip-link">' + link_text + '</a>',
-        '</div>'
+          '<div class="tooltip__body">',
+            '<dl class="params-legend">',
+              '<dt>' + rank_text + '</dt>',
+              '<dd>' + d.overall_ranking + '</dd>',
+              '<dt>' + score_text + '</dt>',
+              '<dd>' + round(d.score, 2) + '</dd>',
+              param_code,
+            '</dl>',
+            '<a href="' + CS.countryIndex[d.iso] +'" class="bttn bttn-cta go" title="' + link_text + '">' + link_text + '</a>',
+          '</div>',
+          
+        '</article>'
       ].join(' ');
 
     });
