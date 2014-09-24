@@ -337,6 +337,35 @@ a:active{
   @media #{$xlarge-up} {
     float: right;
   }
+  .topics {
+    > li > a {
+      padding-left: 2rem;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        z-index: 1;
+        margin-top: -0.25rem;
+        content: '';
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: $global-rounded;
+      }
+      &.param-1:before {
+        background: $infograph-color-a;
+      }
+      &.param-2:before {
+        background: $infograph-color-b;
+      }
+      &.param-3:before {
+        background: $infograph-color-c;
+      }
+      &.param-4:before {
+        background: $infograph-color-d;
+      }
+    }
+  }
 }
 
 // LAYOUT
