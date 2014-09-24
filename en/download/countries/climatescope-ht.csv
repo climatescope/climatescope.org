@@ -1,13 +1,13 @@
 name:en_var,type_var,2014
 Score,score,0.724
-Enabling framework,param,0.908
+Enabling framework,param,0.921
 Clean energy policies,ind,0.0
 Power sector structure,ind,0.035
 Distributed energy regulatory framework,ind,0.053
 Clean energy rural electrification,ind,0.04
 Energy access policies,ind,0.008
 Policy barriers,ind,0.005
-Clean energy installed capacity,ind,0.06
+Clean energy installed capacity,ind,0.066
 Growth rate of installed capacity,ind,0.0
 Clean energy electricity generation,ind,0.023
 Growth rate of electricity generation,ind,0.0
@@ -57,5 +57,3 @@ Corporate energy efficiency initiatives,ind,0.0
 Corporate emission reduction policies,ind,0.0
 Capacity building – env. business training,ind,0.0
 Capacity building – think tanks,ind,0.0
-Global rank,rank,45.0
-Regional rank,rank,20.0

@@ -1,13 +1,13 @@
 name:es_var,type_var,2014
 Puntaje,score,1.208
-Marco Propicio,param,1.27
+Marco Propicio,param,1.317
 Es...Clean energy policies,ind,0.087
 Es...Power sector structure,ind,0.044
-Es...Distributed energy regulatory framework,ind,0.093
+Es...Distributed energy regulatory framework,ind,0.111
 Es...Clean energy rural electrification,ind,0.04
 Es...Energy access policies,ind,0.063
 Es...Policy barriers,ind,0.02
-Es...Clean energy installed capacity,ind,0.009
+Es...Clean energy installed capacity,ind,0.01
 Es...Growth rate of installed capacity,ind,0.0
 Es...Clean energy electricity generation,ind,0.005
 Es...Growth rate of electricity generation,ind,0.0
@@ -57,5 +57,3 @@ Es...Corporate energy efficiency initiatives,ind,0.0
 Es...Corporate emission reduction policies,ind,0.0
 Es...Capacity building – env. business training,ind,0.0
 Es...Capacity building – think tanks,ind,0.0
-Es...Global rank,rank,21.0
-Es...Regional rank,rank,5.0
