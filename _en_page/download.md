@@ -13,10 +13,14 @@ Download the source data.
 
 Excel & CSV
 
+***
+
 ## Copyright
 To be defined and updated to reflect the open sourceness of the project. Something along the lines:
 
 The Global Climatescope is a report and index that assesses the investment climate for climate-related investment worldwide. It adheres to an open source (LINK GITHUB) and open data policy, providing access to data that are free for everyone. The tool is intended for use by investors, companies, governments, NGOs, researchers, communities, and others seeking to assess the opportunities of investing in green energy.
+
+***
 
 ## Disclaimer
 The information and opinions presented in this publication are entirely those of the author(s), and no endorsement by the Multilateral Investment Fund of the Inter-American Development Bank, its Board of Executive Directors, or the countries they represent is expressed or implied. The views and opinions expressed in this publication are those of Bloomberg New Energy Finance and do not necessarily reflect the official position of the MIF.

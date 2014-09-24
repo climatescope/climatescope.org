@@ -105,9 +105,6 @@ a:active{
 
 .label-grid-off {
   background: tint($primary-color, 60%);
-  .table & {
-     @extend .visually-hidden;
-  }
 }
 
 // Badges
@@ -378,9 +375,6 @@ a:active{
   }
   &__body {
     padding: 2rem 0;
-    h2 {
-      @extend .hd-xxs;
-    }
   }
   .intro {
     height: 20rem;
@@ -433,8 +427,19 @@ a:active{
 .col--main {
   @include col(8/12);
   margin-bottom: 2rem;
+  .layout--page & {
+    @include col(12/12);
+  }
+  @media #{$medium-up} {
+    .layout--page & {
+      @include col(10/12);
+    }
+  }
   @media #{$large-up} {
     @include col(8/12);
+    .layout--page & {
+      @include col(8/12);
+    }
   }
 }
 
@@ -472,6 +477,14 @@ a:active{
       @include col(4/12);
     }
   }
+}
+
+.prose-copy {
+  > :last-child {
+    margin-bottom: 0;
+  }
+  h1, h2 { @extend .hd-xs; }
+  h3, h4, h5, h6 { @extend .hd-xxs; }
 }
 
 
@@ -759,25 +772,23 @@ a:active{
 .parameter.layout--entry {
   .layout--entry__title {
     position: relative;
-    padding-right: 1.5rem;
     margin-right: 0; 
-    &:after {
+    &:before {
       position: absolute;
-      bottom: 0.875rem;
-      right: 0;
+      bottom: -8px;
+      left: 0;
       z-index: 1;
       content: '';
-      width: 1rem;
-      height: 1rem;
-      border-radius: $global-rounded;
+      width: 12rem;
+      height: 5px;
     }
   }
 }
 
-.parameter.param-1 .layout--entry__title:after { background: $infograph-color-a; }
-.parameter.param-2 .layout--entry__title:after { background: $infograph-color-b; }
-.parameter.param-3 .layout--entry__title:after { background: $infograph-color-c; }
-.parameter.param-4 .layout--entry__title:after { background: $infograph-color-d; }
+.parameter.param-1 .layout--entry__title:before { background: $infograph-color-a; }
+.parameter.param-2 .layout--entry__title:before { background: $infograph-color-b; }
+.parameter.param-3 .layout--entry__title:before { background: $infograph-color-c; }
+.parameter.param-4 .layout--entry__title:before { background: $infograph-color-d; }
 
 
 // LAYOUT: ENTRY/HUB
@@ -885,6 +896,14 @@ a:active{
   h1 {
     @extend .visually-hidden;
   }
+  .copyright {
+    float: left;
+    clear: both;
+    font-family: $brand-font-family;
+    color: tint($primary-color, 60%);
+    margin-bottom: 0;
+    font-size: 0.85rem;
+  }
   .orgs-list {
     list-style: none;
     padding: 0;
@@ -912,20 +931,12 @@ a:active{
     .orgs-list {
       float: right;
     }
+    .copyright {
+      float: right;
+    }
   }
 }
 
-#copyright {
-  float: left;
-  clear: both;
-  font-family: $brand-font-family;
-  color: tint($primary-color, 60%);
-  margin-bottom: 0;
-  font-size: 0.85rem;
-  @media #{$xlarge-up} {
-    float: right;
-  }
-}
 
 // MODALS
 
