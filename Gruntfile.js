@@ -65,6 +65,26 @@ module.exports = function(grunt) {
         }
       }
     },
+    
+    // https://github.com/gruntjs/grunt-contrib-concat
+    // Use concat with the same options as uglify.
+    // During development uglify is not needed.
+    concat: {
+      dev: {
+        files: {
+          './assets/scripts/main.min.js': [
+            'source_assets/scripts/*.js',
+            'source_assets/scripts/angular/**/*.js',
+            'source_assets/vendor/noUiSlider/jquery.nouislider.min.js',
+           ],
+          './assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js': ['source_assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'],
+          './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
+          './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
+          './assets/scripts/vendor/selectivizr-1.0.2.min.js': ['source_assets/scripts/vendor/selectivizr-1.0.2.min.js'],
+          './assets/scripts/vendor/map-dependencies.min.js' : ['source_assets/scripts/vendor/d3.v3.min.js', 'source_assets/scripts/vendor/map-dependencies/*.js', 'source_assets/vendor/mapbox/mapbox.js'],
+        }
+      },
+    },
 
     // https://github.com/gruntjs/grunt-contrib-copy
     copy: {
@@ -143,11 +163,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-focus');
   grunt.loadNpmTasks('grunt-jekyll');
 
   // Register tasks.
-  grunt.registerTask('build', ['compass:dev', 'jshint:dev', 'uglify', 'copy:main', 'jekyll:generate']);
+  grunt.registerTask('build', ['compass:dev', 'jshint:dev', 'concat', 'copy:main', 'jekyll:generate']);
 
   grunt.registerTask('default', ['build', 'focus:main']);
 
