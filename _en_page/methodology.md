@@ -7,6 +7,8 @@ lang: en
 ---
 To assign each country an overall score, the Global Climatescope examines four overarching and interrelated parameters described below. These parameters are supported by a series of 50 indicators based on data captured by Bloomberg New Energy Finance through first-hand research, consultation of publicly available sources and discussions with experts. Together, these indicators and their corresponding parameters form a holistic picture of a particular country's climate for climate-related investment.
 
+***
+
 ## [Enabling Framework]({{site.domain}}/en/topic/enabling-framework/ "Go to Enabling Framework topic page")
 {: .hd-param-1}
 
