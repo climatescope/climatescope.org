@@ -4,20 +4,23 @@
 
 $tooltip-arr-size: 1rem;
 
+.tooltip-map,
 .tooltip {
+  display: block;
   position: absolute;
   z-index: 1070;
-  display: block;
+  @include transform(translate3d(0, 0, 0));
+  @include transition-property(opacity, margin, visibility);
+  @include transition-duration(0.1s, 0.1s, 0.1s);
+  @include transition-timing-function(ease, ease, linear);
+  @include transition-delay(0, 0, 0);
+}
+
+.tooltip {
   filter: alpha(opacity=0);
   opacity: 0;
   visibility: hidden;
   &.in {
-    @include transform(translate3d(0, 0, 0));
-    @include transition-property(opacity, margin, visibility);
-    @include transition-duration(0.1s, 0.1s, 0.1s);
-    @include transition-timing-function(ease, ease, linear);
-    @include transition-delay(0, 0, 0);
-
     filter: alpha(opacity=100);
     opacity: 1;
     visibility: visible;
@@ -50,11 +53,9 @@ $tooltip-arr-size: 1rem;
 }
 
 // Placement
-.tooltip.top {
-  margin-top: $tooltip-arr-size;
-  &.in {
-    margin-top: -($tooltip-arr-size/2);
-  }
+.tooltip.top,
+.tooltip-map.top {
+  margin-top: -($tooltip-arr-size/2);
   .tooltip-inner:before {
     @extend .icon-triangle-down;
     bottom: -0.625rem;
@@ -64,11 +65,9 @@ $tooltip-arr-size: 1rem;
   }
 }
 
-.tooltip.right {
-  margin-left: -$tooltip-arr-size;
-  &.in {
-    margin-left: $tooltip-arr-size/2;
-  }
+.tooltip.right,
+.tooltip-map.right {
+  margin-left: $tooltip-arr-size/2;
   .tooltip-inner:before {
     @extend .icon-triangle-left;
     left: -0.625rem;
@@ -78,11 +77,9 @@ $tooltip-arr-size: 1rem;
   }
 }
 
-.tooltip.bottom {
-  margin-top: -$tooltip-arr-size;
-  &.in {
-    margin-top: $tooltip-arr-size/2;
-  }
+.tooltip.bottom,
+.tooltip-map.bottom {
+  margin-top: $tooltip-arr-size/2;
   .tooltip-inner:before {
     @extend .icon-triangle-up;
     top: -0.625rem;
@@ -92,11 +89,9 @@ $tooltip-arr-size: 1rem;
   }
 }
 
-.tooltip.left {
-  margin-left: $tooltip-arr-size;
-  &.in {
-    margin-left: -($tooltip-arr-size/2);
-  }
+.tooltip.left,
+.tooltip-map.left {
+  margin-left: -($tooltip-arr-size/2);
   .tooltip-inner:before {
     @extend .icon-triangle-right;
     right: -0.625rem;
@@ -108,6 +103,58 @@ $tooltip-arr-size: 1rem;
 
 .tooltip-arrow {
   display: none;
+}
+
+// Contents
+
+.tooltip-map {
+  .tooltip__header {
+    padding: 2.25rem 1rem 1rem 1rem;
+    margin: -1rem;
+    border-bottom: 1px solid tint($primary-color, 90%);
+    position: relative;
+  }
+  .tooltip__title {
+    @extend .hd-xxs;
+    margin: 0;
+    white-space: pre-wrap;
+    display: inline;
+    a {
+      color: inherit;
+    }
+  }
+  .tooltip__subtitle {
+    position: absolute;
+    top: 1rem;
+    left: auto;
+    z-index: 10;
+    @extend .hd-label;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
+  .tooltip__body {
+    margin: 1rem -1rem -1rem -1rem;
+    padding: 1rem;
+  }
+  .close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 10;
+    display: block;
+    font-size: 1rem;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    color: tint($primary-color, 60%);
+    span {
+      @extend .visually-hidden;
+    }
+    &:before {
+      @extend .icon-s-cancel;
+    }
+  }
 }
 
 
@@ -150,12 +197,12 @@ $tooltip-arr-size: 1rem;
   filter: alpha(opacity=0);
   opacity: 0;
   visibility: hidden;
+  @include transform(translate3d(0, 0, 0));
+  @include transition-property(opacity, margin, visibility);
+  @include transition-duration(0.1s, 0.1s, 0.1s);
+  @include transition-timing-function(ease, ease, linear);
+  @include transition-delay(0, 0, 0);
   .open > & {
-    @include transform(translate3d(0, 0, 0));
-    @include transition-property(opacity, margin, visibility);
-    @include transition-duration(0.1s, 0.1s, 0.1s);
-    @include transition-timing-function(ease, ease, linear);
-    @include transition-delay(0, 0, 0);
     filter: alpha(opacity=100);
     opacity: 1;
     margin-top: 0.5rem;
@@ -234,32 +281,8 @@ $tooltip-arr-size: 1rem;
 .dropdown-header {
   display: block;
   padding: 3px 20px;
-  font-size: 12px;
+  font-size: 0.85rem;
   line-height: 1.42857143;
   color: #777777;
   white-space: nowrap;
-}
-.dropdown-backdrop {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 990;
-}
-.pull-right > .dropdown-menu {
-  right: 0;
-  left: auto;
-}
-.dropup .caret,
-.navbar-fixed-bottom .dropdown .caret {
-  border-top: 0;
-  border-bottom: 4px solid;
-  content: "";
-}
-.dropup .dropdown-menu,
-.navbar-fixed-bottom .dropdown .dropdown-menu {
-  top: auto;
-  bottom: 100%;
-  margin-bottom: 1px;
 }

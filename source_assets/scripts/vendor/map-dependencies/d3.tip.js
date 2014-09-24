@@ -156,6 +156,11 @@
       return tip
     }
 
+    // Public: returns the html node for custom event listeners
+    tip.getNode = function() {
+      return node
+    }
+
     function d3_tip_direction() { return 'n' }
     function d3_tip_offset() { return [0, 0] }
     function d3_tip_html() { return ' ' }

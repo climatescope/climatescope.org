@@ -1,13 +1,13 @@
 name:es_var,type_var,2014
 Puntaje,score,1.674
-Marco Propicio,param,1.546
+Marco Propicio,param,1.559
 Es...Clean energy policies,ind,0.26
 Es...Power sector structure,ind,0.072
 Es...Distributed energy regulatory framework,ind,0.0
 Es...Clean energy rural electrification,ind,0.04
 Es...Energy access policies,ind,0.0
 Es...Policy barriers,ind,0.004
-Es...Clean energy installed capacity,ind,0.054
+Es...Clean energy installed capacity,ind,0.059
 Es...Growth rate of installed capacity,ind,0.001
 Es...Clean energy electricity generation,ind,0.019
 Es...Growth rate of electricity generation,ind,0.067
@@ -43,7 +43,7 @@ Es...Value chains by clean energy sector,ind,0.089
 Es...Distributed clean energy value chains by sector,ind,0.0
 Es...Clean energy service providers,ind,0.009
 Es...Distributed clean energy service providers,ind,0.0
-Gestión de GEI,param,1.773
+Gestión de GEI,param,1.87
 Es...Carbon offsets historical activity,ind,0.038
 Es...CDM risk,ind,0.062
 Es...Carbon offsets future potential,ind,0.0
@@ -57,4 +57,3 @@ Es...Corporate energy efficiency initiatives,ind,0.038
 Es...Corporate emission reduction policies,ind,0.038
 Es...Capacity building – env. business training,ind,0.038
 Es...Capacity building – think tanks,ind,0.038
-Es...State rank,rank,2.0

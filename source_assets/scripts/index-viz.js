@@ -37,59 +37,77 @@ $(document).ready(function() {
     var projection = d3.geo.transform({point: point});
 
     var path = d3.geo.path().projection(projection);
+
+    // two switches to detect whether marker is clicked,
+    // and whether mouse is over tooltip
     var clicked = false;
+    var mouseInFeature = false;
 
-    var tooltip = d3.tip().attr('class', 'rank-tooltip').html(function(d) {
-      d = d.rank;
+    var tooltip = d3.tip().attr('class', 'tooltip-map top')
+      .attr('id', 'index-viz-tooltip')
+      .html(function(d) {
 
-      // Never used.
-      // var rank = d.overall_ranking < 10 ? '0' + d.overall_ranking : d.overall_ranking;
+        d = d.rank;
+        var link_text, close_text, rank_text, score_text;
 
-      var link_text = "";
-      var rank_text = "";
-      var score_text = "";
+        switch(CS.lang) {
+          case 'en':
+            link_text = "View Country";
+            close_text = "Close";
+            rank_text = "Rank";
+            score_text = "Score";
+            grid_on_text = "On-grid";
+            grid_off_text = "Off-grid";
+          break;
+          case 'es':
+            link_text = "Ver País";
+            close_text = "Cerrar";
+            rank_text = "Posición";
+            score_text = "Puntaje";
+            grid_on_text = "On-grid ES";
+            grid_off_text = "Off-grid ES";
+          break;
+        }
 
-      switch(CS.lang) {
-        case 'en':
-          link_text = "View Country &rsaquo;";
-          rank_text = "Rank";
-          score_text = "Score";
-        break;
-        case 'es':
-          link_text = "Ver País &rsaquo;";
-          rank_text = "Posición";
-          score_text = "Puntaje";
-        break;
-      }
+        var param_code = '';
+        $.each(d.parameters, function(index, param) {
+          var className = 'param-' + param.id;
+          param_code += [
+            '<dt class="' + className + '">' + param.name + '</dt>',
+            '<dd>',
+              round(param.value, 2),
+              '<small>' + round(param.weight * 100, 2) + '%' + '</small>',
+            '</dd>',
+          ].join(' ');
+        });
 
-      return [
-        '<div class="rank-tooltip-head"><label>Region goes here</label>',
-        '<h5>' + d.name, '</h5><span class="rank-tooltip-close">&#10005;</span></div>',
-        '<div class="rank-tooltip-body">',
-        '<table><tr><td class="first">' + d.overall_ranking + '</td><td>' + rank_text + '</td></tr>',
-        '<tr><td class="first">' + round(d.score, 2) + '</td><td>' + score_text + '</td></tr>',
+        var grid_code = d.grid == 'on' ? '<em class="label-grid label-grid-on" title="' + grid_on_text + '"><span>' + grid_on_text + '</span></em>' : '<em class="label-grid label-grid-off"><span>' + grid_off_text + '</span></em>';
 
-        // four indicators
-        '<tr><td class="first">' + round(d.parameters[0].value, 2),
-        '</td><td class="tooltip-table-indicator indicator-0">' + d.parameters[0].name + '</td></tr>',
+        return [
+          '<article class="tooltip-inner">',
+            '<header class="tooltip__header">',
+              '<h1 class="tooltip__title"><a href="' + CS.countryIndex[d.iso] +'" title="' + link_text + '">' + d.name + '</a></h1>',
+              '<p class="tooltip__subtitle">Region goes here</p>',
+              grid_code,
+              '<a href="#" title="' + close_text + '" class="close" onClick="return false;"><span>' + close_text + '</span></a>',
+            '</header>',
 
-        '<tr><td class="first">' + round(d.parameters[1].value, 2),
-        '</td><td class="tooltip-table-indicator indicator-1">' + d.parameters[1].name + '</td></tr>',
+            '<div class="tooltip__body">',
+              '<dl class="params-legend">',
+                '<dt>' + rank_text + '</dt>',
+                '<dd>' + d.overall_ranking + '</dd>',
+                '<dt>' + score_text + '</dt>',
+                '<dd>' + round(d.score, 2) + '</dd>',
+                param_code,
+              '</dl>',
+              '<a href="' + CS.countryIndex[d.iso] +'" class="bttn bttn-cta go" title="' + link_text + '">' + link_text + '</a>',
+            '</div>',
 
-        '<tr><td class="first">' + round(d.parameters[2].value, 2),
-        '</td><td class="tooltip-table-indicator indicator-2">' + d.parameters[2].name + '</td></tr>',
+          '</article>'
+        ].join(' ');
+    }); // end tooltip html fn
 
-        '<tr><td class="first">' + round(d.parameters[3].value, 2),
-        '</td><td class="tooltip-table-indicator indicator-3">' + d.parameters[3].name + '</td></tr>',
-
-        '</table>',
-        '<a href="' + CS.countryIndex[d.iso] +'" class="rank-tooltip-link">' + link_text + '</a>',
-        '</div>'
-      ].join(' ');
-
-    });
-
-      // UI element for toggling the map
+    // UI element for toggling the map
     var $countryFilter = $('<div>', {
         'class': 'leaflet-control bttn-group bttn-group-s bttn-list map-country-toggle'
     });
@@ -97,8 +115,6 @@ $(document).ready(function() {
       .append('svg:svg')
       .call(tooltip);
     var g = svg.append('svg:g').attr('class', 'leaflet-zoom-hide');
-
-    // var radius = d3.scale.sqrt().range([4, 24]);
 
     // placeholder variables to query via http request
     var land;
@@ -126,6 +142,7 @@ $(document).ready(function() {
     .defer(d3.json, CS.domain + '/en/api/countries.topojson')
     .defer(d3.json, countryListUrl)
 
+    // these are used for local testing only - Derek
     // .defer(d3.json, 'en/api/countries.topojson')
     // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
@@ -201,6 +218,24 @@ $(document).ready(function() {
       });
 
       $countryFilter.appendTo($('.leaflet-bottom.leaflet-left'));
+
+      // if someone moves their mouse from a marker to the tooltip,
+      // marker hands off the responsibility of closing the tooltip
+      // to the tooltip itself
+      var $tooltip = $('#index-viz-tooltip');
+      $tooltip.on('mouseenter', function() {
+        mouseInFeature = true;
+      })
+      .on('mouseleave', function() {
+        mouseInFeature = false;
+        if (!clicked) {
+          tooltip.hide();
+        }
+      })
+      .on('click', '.close', function() {
+        tooltip.hide();
+        mouseInFeature = false;
+      });
     });
 
     function reset() {
@@ -224,7 +259,6 @@ $(document).ready(function() {
     }
 
     function redraw() {
-      // radius.domain([data[data.length-1].rank.score, data[0].rank.score]);
       var data = getSlice(land, visibleCountries);
       g.selectAll('.rank-marker').remove();
       markers = g.selectAll('.rank-marker')
@@ -239,10 +273,18 @@ $(document).ready(function() {
       markers.append('circle')
         .attr('r', 16)
         .on('mouseover', function(d) {
+          mouseInFeature = true;
           if (!clicked) { tooltip.show(d); }
         })
         .on('mouseout', function() {
-          if (!clicked) { tooltip.hide(); }
+          mouseInFeature = false;
+          if (!clicked) {
+            window.setTimeout(function() {
+              if (!mouseInFeature) {
+                tooltip.hide();
+              }
+            }, 300);
+          }
         })
         .on('click', function(d) {
           clicked = true;
