@@ -575,6 +575,9 @@ a:active{
     z-index: 10;
     @extend .hd-label;
     margin-bottom: 0;
+    a {
+      color: inherit;
+    }
   }
 }
 
