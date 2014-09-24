@@ -24,26 +24,10 @@ function setupCommonTableMethods(scope) {
       return 'sort-asc';
     }
   };
-  
-  /**
-   * Calc the bar segment.
-   * Can provide a parameter object with value and weight
-   * or
-   * 1st param is value
-   * 2nd param is weight.
-   */
-  scope.calcBarSegment = function(param, weight) {
-    weight = weight || null;
-    var v, w;
-    if (typeof param == 'object') {
-      v = param.value;
-      w = param.weight;
-    }
-    else {
-      v = param;
-      w = weight;
-    }
-    return ( v * w * (100/5) ) + '%';
+
+  scope.calcBarSegment = function(param) {
+    weight = param.weight != null ? param.weight : 0.25;
+    return ( param.value * weight * (100/5) ) + '%';
   };
   
   scope.getTranslatedUrl = function(subject, id) {
