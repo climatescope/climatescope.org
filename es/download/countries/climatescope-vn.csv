@@ -1,13 +1,13 @@
 name:es_var,type_var,2014
 Puntaje,score,1.448
-Marco Propicio,param,1.317
+Marco Propicio,param,1.326
 Es...Clean energy policies,ind,0.129
 Es...Power sector structure,ind,0.122
 Es...Distributed energy regulatory framework,ind,0.0
 Es...Clean energy rural electrification,ind,0.04
 Es...Energy access policies,ind,0.0
 Es...Policy barriers,ind,0.004
-Es...Clean energy installed capacity,ind,0.043
+Es...Clean energy installed capacity,ind,0.047
 Es...Growth rate of installed capacity,ind,0.16
 Es...Clean energy electricity generation,ind,0.0
 Es...Growth rate of electricity generation,ind,0.0
@@ -37,13 +37,13 @@ Es...Green micro-borrowers,ind,0.0
 Es...Average cost of green micro debt,ind,0.0
 Es...Average cost of debt,ind,0.052
 Es...Swap rate,ind,0.038
-Cadenas de valor,param,3.253
+Cadenas de valor,param,2.99
 Es...Financial institutions in clean energy,ind,0.15
-Es...Value chains by clean energy sector,ind,0.197
+Es...Value chains by clean energy sector,ind,0.158
 Es...Distributed clean energy value chains by sector,ind,0.0
 Es...Clean energy service providers,ind,0.141
 Es...Distributed clean energy service providers,ind,0.0
-Gestión de GEI,param,1.87
+Gestión de GEI,param,1.998
 Es...Carbon offsets historical activity,ind,0.112
 Es...CDM risk,ind,0.038
 Es...Carbon offsets future potential,ind,0.016
@@ -57,5 +57,3 @@ Es...Corporate energy efficiency initiatives,ind,0.0
 Es...Corporate emission reduction policies,ind,0.0
 Es...Capacity building – env. business training,ind,0.0
 Es...Capacity building – think tanks,ind,0.038
-Es...Global rank,rank,13.0
-Es...Regional rank,rank,4.0

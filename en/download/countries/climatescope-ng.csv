@@ -1,6 +1,6 @@
 name:en_var,type_var,2014
 Score,score,1.232
-Enabling framework,param,1.171
+Enabling framework,param,1.188
 Clean energy policies,ind,0.096
 Power sector structure,ind,0.117
 Distributed energy regulatory framework,ind,0.071
@@ -57,5 +57,3 @@ Corporate energy efficiency initiatives,ind,0.001
 Corporate emission reduction policies,ind,0.001
 Capacity building – env. business training,ind,0.0
 Capacity building – think tanks,ind,0.0
-Global rank,rank,20.0
-Regional rank,rank,4.0

@@ -1,18 +1,18 @@
-name:es_aa,2014
-Argentina,2.037
+name:en_aa,2014
+Argentina,1.731
 Barbados,0.562
-Banglades,0.657
+Bangladesh,0.657
 Bolivia,1.332
-Brasil,3.237
+Brazil,3.237
 Bahamas,0.417
-Botsuana,0.393
-Belice,1.053
-RD Congo,0.905
-Costa de Marfil,0.419
+Botswana,0.393
+Belize,1.053
+DR Congo,0.905
+Côte d'Ivoire,0.419
 Chile,3.479
-Camerun,0.884
+Cameroon,0.884
 China,3.123
-Hebei,1.998
+Hebei,2.037
 Nei Mongol,2.454
 Jilin,2.204
 Heilongjiang,1.704
@@ -25,14 +25,14 @@ Sichuan,2.12
 Yunnan,2.454
 Xizang,0.954
 Gansu,2.204
-Qinghai,1.773
+Qinghai,1.87
 Xinjiang,2.454
 Colombia,2.95
 Costa Rica,2.413
-Republica Dominicana,2.117
+Dominican Republic,2.117
 Ecuador,1.586
-Etiopia,0.966
-Ghana,1.743
+Ethiopia,0.966
+Ghana,1.773
 Guatemala,1.446
 Guyana,0.706
 Honduras,1.561
@@ -50,11 +50,11 @@ Tamil Nadu,1.682
 Uttar Pradesh,1.099
 West Bengal,0.849
 Jamaica,1.176
-Kenia,1.731
+Kenya,1.743
 Sri Lanka,0.077
 Liberia,0.183
-Birmania,0.711
-Malaui,1.015
+Myanmar,0.711
+Malawi,1.015
 Mexico,3.024
 Mozambique,0.819
 Nigeria,0.986
@@ -64,18 +64,18 @@ Panama,0.912
 Peru,2.46
 Pakistan,0.81
 Paraguay,1.264
-Ruanda,0.667
-Sierra Leona,0.265
+Rwanda,0.667
+Sierra Leone,0.265
 Senegal,0.441
-Surinam,0.334
+Suriname,0.334
 El Salvador,0.852
-Tayikistan,0.801
-Trinidad y Tobago,0.586
+Tajikistan,0.801
+Trinidad and Tobago,0.586
 Tanzania,0.973
 Uganda,1.684
 Uruguay,2.653
 Venezuela,0.597
-Vietnam,1.87
-Sudafrica,2.78
+Vietnam,1.998
+South africa,2.78
 Zambia,1.34
-Zimbabue,0.967
+Zimbabwe,0.967
