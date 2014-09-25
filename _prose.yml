@@ -110,6 +110,11 @@ prose:
         field:
           element: "text"
           label: "Region id"
+      - name: "weight"
+        field:
+          element: "text"
+          label: "Region weight"
+          help: "Used to order the regions in the menu. Each one must have a different value."
     
     ## PAGE
     _en_page:
@@ -142,6 +147,11 @@ prose:
         field:
           element: "text"
           label: "Parameter id"
+      - name: "weight"
+        field:
+          element: "text"
+          label: "Parameter weight"
+          help: "Used to order the parameters in the menu. Each one must have a different value."
 
 
 
@@ -230,6 +240,11 @@ prose:
         field:
           element: "text"
           label: "Region id"
+      - name: "weight"
+        field:
+          element: "text"
+          label: "Region weight"
+          help: "Used to order the regions in the menu. Each one must have a different value."
     
     ## PAGE
     _es_page:
@@ -262,3 +277,8 @@ prose:
         field:
           element: "text"
           label: "Parameter id"
+      - name: "weight"
+        field:
+          element: "text"
+          label: "Parameter weight"
+          help: "Used to order the parameters in the menu. Each one must have a different value."
