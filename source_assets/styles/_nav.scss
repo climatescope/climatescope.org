@@ -44,3 +44,13 @@
     border-bottom-color: transparent;
   }
 }
+
+
+.pagination-wrapper {
+  margin: 2rem 0;
+  text-align: center;
+  
+  .pagination {
+    display: inline-block;
+  }
+}
