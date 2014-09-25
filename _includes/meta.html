@@ -12,10 +12,13 @@
 
 {% if page.description %}
   {% assign meta_description = page.description %}
-{% elsif page.excerpt %}
-  {% assign meta_description = page.excerpt | strip_html | truncate: 200 %}
 {% else %}
-  {% assign meta_description = site.description[language] %}
+  {% assign stripped_ct = page.content | strip_newlines %}
+  {% unless stripped_ct == '' %}
+    {% assign meta_description = stripped_ct | strip_html | truncate: 200 %}
+  {% else %}
+    {% assign meta_description = site.description[language] %}
+  {% endunless %}
 {% endif %}
 
 {% assign en_coll = site.collections[page.collection].i18n.en %}
