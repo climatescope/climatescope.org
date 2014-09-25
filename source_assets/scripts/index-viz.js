@@ -81,13 +81,13 @@ $(document).ready(function() {
           ].join(' ');
         });
 
-        var grid_code = d.grid == 'on' ? '<em class="label-grid label-grid-on" title="' + grid_on_text + '"><span>' + grid_on_text + '</span></em>' : '<em class="label-grid label-grid-off"><span>' + grid_off_text + '</span></em>';
+        var grid_code = d.grid == 'on' ? '<em class="label-grid label-grid-on" data-title="' + grid_on_text + '"><span>' + grid_on_text + '</span></em>' : '<em class="label-grid label-grid-off" data-title="' + grid_off_text + '"><span>' + grid_off_text + '</span></em>';
 
         return [
           '<article class="tooltip-inner">',
             '<header class="tooltip__header">',
               '<h1 class="tooltip__title"><a href="' + CS.countryIndex[d.iso] +'" title="' + link_text + '">' + d.name + '</a></h1>',
-              '<p class="tooltip__subtitle">Region goes here</p>',
+              '<p class="tooltip__subtitle">' + d.region.name + '</p>',
               grid_code,
               '<a href="#" title="' + close_text + '" class="close" onClick="return false;"><span>' + close_text + '</span></a>',
             '</header>',

@@ -78,6 +78,5 @@
 }
 [disabled] .noUi-handle {
   cursor: not-allowed;
-  filter: alpha(opacity=60);
-  opacity: .6;
+  @include opacity(0.6);
 }
