@@ -81,6 +81,12 @@
     @extend .icon-s-arr-up;
   }
 
+  tr.disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+      @include opacity(0.3);
+  }
+
 }
 
 .parameter-table,
