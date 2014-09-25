@@ -83,6 +83,7 @@
 
 }
 
+.parameter-table,
 .country-table {
   table-layout: fixed;
   .cell-rank,
@@ -92,6 +93,7 @@
       color: inherit;
     }
   }
+
   tr:first-child > th:nth-child(1),
   tr:first-child > td:nth-child(1) {
     width: 5%;

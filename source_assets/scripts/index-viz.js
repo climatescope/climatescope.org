@@ -87,7 +87,7 @@ $(document).ready(function() {
           '<article class="tooltip-inner">',
             '<header class="tooltip__header">',
               '<h1 class="tooltip__title"><a href="' + CS.countryIndex[d.iso] +'" title="' + link_text + '">' + d.name + '</a></h1>',
-              '<p class="tooltip__subtitle">Region goes here</p>',
+              '<p class="tooltip__subtitle">' + d.region.name + '</p>',
               grid_code,
               '<a href="#" title="' + close_text + '" class="close" onClick="return false;"><span>' + close_text + '</span></a>',
             '</header>',
