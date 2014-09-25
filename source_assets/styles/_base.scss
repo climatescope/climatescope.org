@@ -29,6 +29,12 @@ a {
   @include transition-duration(0.2s);
   @include transition-timing-function(ease);
   @include transition-delay(0);
+  &[rel~="external"]:after {
+    @extend .icon-s-new-window;
+    font-size: 1rem;
+    @include opacity(0.4);
+    margin-left: 0.25rem;
+  }
 }
 
 a:visited {
@@ -36,8 +42,7 @@ a:visited {
 }
 
 a:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  @include opacity(0.6);
   outline: none;
 }
 
@@ -64,6 +69,60 @@ a:active{
   }
 }
 
+// Well
+
+.well {
+  position: relative;
+  padding: 1rem;
+  box-shadow: inset 0 3px 0 0 rgba($primary-color, 0.1);
+  min-height: 4rem;
+  margin-bottom: 1.25rem;
+  background-color: tint($primary-color, 95%);
+  border-radius: $global-radius;
+  > :last-child {
+    margin-bottom: 0;
+  }
+  &:before {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: $global-radius;
+  }
+  &.download {
+    min-height: 10rem;
+    &:after {
+      position: absolute;
+      z-index: 1;
+      font-size: 6rem;
+      @include opacity(0.2); 
+      color: $primary-color;
+      line-height: 1;
+    }
+  }
+  &.download-pdf:after { @extend .icon-file-pdf; }
+  &.download-data:after { @extend .icon-file-src-dat; }
+}
+
+.well-l {
+  padding: 2rem;
+  &.download {
+    padding-right: 10rem;
+    margin-bottom: 2rem;
+    &:after {
+      top: 2rem;
+      right: 2rem;
+    }
+  }
+}
+
+.well-s {
+  padding: 0.5rem;
+}
+
 // Labels
 
 .label-grid {
@@ -84,13 +143,18 @@ a:active{
   }
   span {
     margin: 0 0.5rem 0 0;
-    .table & {
-      display: none;
+    .table &,
+    .tooltip__header & {
+      @extend .visually-hidden;
     }
   }
   .layout--entry__heading & {
     vertical-align: top;
     margin-top: 0.25rem;
+  }
+  .tooltip-map & {
+    vertical-align: top;
+    margin-top: 0.15rem;
   }
 }
 
@@ -100,9 +164,6 @@ a:active{
 
 .label-grid-off {
   background: tint($primary-color, 60%);
-  .table & {
-     @extend .visually-hidden;
-  }
 }
 
 // Badges
@@ -175,57 +236,10 @@ a:active{
       font-size: 0.85rem;
       color: tint($primary-color, 60%);
       margin-left: 0.5rem;
+      float: right;
     }
   }
 }
-
-// Infographics
-
-.table-bar {
-  width: 90%;
-  list-style-type: none;
-  overflow: hidden;
-  border-radius: $global-radius;
-  height: 1.25rem;
-  background: tint($primary-color, 95%);
-  padding: 0;
-  margin: 0.125rem 0;
-  cursor: help;
-
-  li {
-    float: left;
-    height: 100%;
-  }
-
-  > li:first-child {
-    border-radius: $global-radius 0 0  $global-radius;
-  }
-
-  > li:last-child {
-    border-radius: 0 $global-radius $global-radius 0;
-  }
-
-  li.param-1 {
-    background-color: $infograph-color-a;
-  }
-
-  li.param-2 {
-    background-color: $infograph-color-b;
-  }
-
-  li.param-3 {
-    background-color: $infograph-color-c;
-  }
-
-  li.param-4 {
-    background-color: $infograph-color-d;
-  }
-}
-
-.table-nested .table-bar {
-  background: #fff;
-}
-
 
 // Intro stripe
 
@@ -234,7 +248,6 @@ a:active{
   margin-bottom: 2rem;
   background: tint($primary-color, 95%) !important;
 }
-
 
 // STRUCTURE
 
@@ -328,11 +341,39 @@ a:active{
     font-family: $brand-font-family;
   }
   .open > .dropdown-toggle {
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    @include opacity(0.4);
   }
   @media #{$xlarge-up} {
     float: right;
+  }
+  .topics {
+    > li > a {
+      padding-left: 2rem;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        z-index: 1;
+        margin-top: -0.25rem;
+        content: '';
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: $global-rounded;
+      }
+      &.param-1:before {
+        background: $infograph-color-a;
+      }
+      &.param-2:before {
+        background: $infograph-color-b;
+      }
+      &.param-3:before {
+        background: $infograph-color-c;
+      }
+      &.param-4:before {
+        background: $infograph-color-d;
+      }
+    }
   }
 }
 
@@ -372,9 +413,6 @@ a:active{
   }
   &__body {
     padding: 2rem 0;
-    h2 {
-      @extend .hd-xxs;
-    }
   }
   .intro {
     height: 20rem;
@@ -427,8 +465,19 @@ a:active{
 .col--main {
   @include col(8/12);
   margin-bottom: 2rem;
+  .layout--page & {
+    @include col(12/12);
+  }
+  @media #{$medium-up} {
+    .layout--page & {
+      @include col(10/12);
+    }
+  }
   @media #{$large-up} {
     @include col(8/12);
+    .layout--page & {
+      @include col(8/12);
+    }
   }
 }
 
@@ -466,6 +515,14 @@ a:active{
       @include col(4/12);
     }
   }
+}
+
+.prose-copy {
+  > :last-child {
+    margin-bottom: 0;
+  }
+  h1, h2 { @extend .hd-xs; }
+  h3, h4, h5, h6 { @extend .hd-xxs; }
 }
 
 
@@ -527,6 +584,9 @@ a:active{
     z-index: 10;
     @extend .hd-label;
     margin-bottom: 0;
+    a {
+      color: inherit;
+    }
   }
 }
 
@@ -753,25 +813,23 @@ a:active{
 .parameter.layout--entry {
   .layout--entry__title {
     position: relative;
-    padding-right: 1.5rem;
     margin-right: 0; 
-    &:after {
+    &:before {
       position: absolute;
-      bottom: 0.875rem;
-      right: 0;
+      bottom: -8px;
+      left: 0;
       z-index: 1;
       content: '';
-      width: 1rem;
-      height: 1rem;
-      border-radius: $global-rounded;
+      width: 12rem;
+      height: 5px;
     }
   }
 }
 
-.parameter.param-1 .layout--entry__title:after { background: $infograph-color-a; }
-.parameter.param-2 .layout--entry__title:after { background: $infograph-color-b; }
-.parameter.param-3 .layout--entry__title:after { background: $infograph-color-c; }
-.parameter.param-4 .layout--entry__title:after { background: $infograph-color-d; }
+.parameter.param-1 .layout--entry__title:before { background: $infograph-color-a; }
+.parameter.param-2 .layout--entry__title:before { background: $infograph-color-b; }
+.parameter.param-3 .layout--entry__title:before { background: $infograph-color-c; }
+.parameter.param-4 .layout--entry__title:before { background: $infograph-color-d; }
 
 
 // LAYOUT: ENTRY/HUB
@@ -879,6 +937,14 @@ a:active{
   h1 {
     @extend .visually-hidden;
   }
+  .copyright {
+    float: left;
+    clear: both;
+    font-family: $brand-font-family;
+    color: tint($primary-color, 60%);
+    margin-bottom: 0;
+    font-size: 0.85rem;
+  }
   .orgs-list {
     list-style: none;
     padding: 0;
@@ -906,20 +972,12 @@ a:active{
     .orgs-list {
       float: right;
     }
+    .copyright {
+      float: right;
+    }
   }
 }
 
-#copyright {
-  float: left;
-  clear: both;
-  font-family: $brand-font-family;
-  color: tint($primary-color, 60%);
-  margin-bottom: 0;
-  font-size: 0.85rem;
-  @media #{$xlarge-up} {
-    float: right;
-  }
-}
 
 // MODALS
 
@@ -938,5 +996,63 @@ a:active{
   .modal__body {
     font-size: 1.25rem;
     line-height: 1.5rem;
+  }
+}
+
+// LISTS
+
+.download-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid tint($primary-color, 90%);
+  .well.download & {
+    border-top-color: tint($primary-color, 85%);
+  }
+  > li {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid tint($primary-color, 90%);
+    padding: 0.5rem 0;
+    margin: 0;
+    .well.download & {
+      border-bottom-color: tint($primary-color, 85%);
+    }
+  }
+  .term {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    display: block;
+    text-transform: uppercase;
+    height: 1.5rem;
+    margin-top: -0.75rem;
+  }
+  .bttn {
+    float: right;
+  }
+}
+
+
+// IE<8
+
+.lt-ie8 {
+  #site-canvas {
+    display: none;
+  }
+  #nocando {
+    margin: 200px auto;
+    padding: 32px;
+    width: 440px;
+    background: #fff;
+
+    h1 {
+      font-size: 24px;
+      line-height: 1.1;
+      margin-bottom: 32px;
+    }
   }
 }

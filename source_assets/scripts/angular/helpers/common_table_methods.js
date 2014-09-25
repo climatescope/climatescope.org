@@ -24,7 +24,7 @@ function setupCommonTableMethods(scope) {
       return 'sort-asc';
     }
   };
-  
+
   scope.calcBarSegment = function(param) {
     weight = param.weight != null ? param.weight : 0.25;
     return ( param.value * weight * (100/5) ) + '%';

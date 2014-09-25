@@ -1,6 +1,6 @@
 name:en_aa,name:en_var,type_var,2014
 Argentina,Score,score,1.242
-Argentina,Enabling framework,param,1.19
+Argentina,Enabling framework,param,1.171
 Argentina,Clean energy policies,ind,0.18
 Argentina,Power sector structure,ind,0.155
 Argentina,Distributed energy regulatory framework,ind,0.0
@@ -43,7 +43,7 @@ Argentina,Value chains by clean energy sector,ind,0.227
 Argentina,Distributed clean energy value chains by sector,ind,0.0
 Argentina,Clean energy service providers,ind,0.047
 Argentina,Distributed clean energy service providers,ind,0.0
-Argentina,GHG management,param,2.037
+Argentina,GHG management,param,1.731
 Argentina,Carbon offsets historical activity,ind,0.075
 Argentina,CDM risk,ind,0.062
 Argentina,Carbon offsets future potential,ind,0.022
@@ -57,8 +57,6 @@ Argentina,Corporate energy efficiency initiatives,ind,0.005
 Argentina,Corporate emission reduction policies,ind,0.004
 Argentina,Capacity building – env. business training,ind,0.038
 Argentina,Capacity building – think tanks,ind,0.038
-Argentina,Global rank,rank,19.0
-Argentina,Regional rank,rank,9.0
 Barbados,Score,score,0.786
 Barbados,Enabling framework,param,0.761
 Barbados,Clean energy policies,ind,0.072
@@ -117,15 +115,13 @@ Barbados,Corporate energy efficiency initiatives,ind,0.0
 Barbados,Corporate emission reduction policies,ind,0.0
 Barbados,Capacity building – env. business training,ind,0.038
 Barbados,Capacity building – think tanks,ind,0.038
-Barbados,Global rank,rank,41.0
-Barbados,Regional rank,rank,19.0
 Bangladesh,Score,score,1.353
-Bangladesh,Enabling framework,param,1.209
+Bangladesh,Enabling framework,param,1.23
 Bangladesh,Clean energy policies,ind,0.065
 Bangladesh,Power sector structure,ind,0.167
 Bangladesh,Distributed energy regulatory framework,ind,0.058
 Bangladesh,Clean energy rural electrification,ind,0.04
-Bangladesh,Energy access policies,ind,0.052
+Bangladesh,Energy access policies,ind,0.06
 Bangladesh,Policy barriers,ind,0.005
 Bangladesh,Clean energy installed capacity,ind,0.0
 Bangladesh,Growth rate of installed capacity,ind,0.0
@@ -157,12 +153,12 @@ Bangladesh,Green micro-borrowers,ind,0.024
 Bangladesh,Average cost of green micro debt,ind,0.007
 Bangladesh,Average cost of debt,ind,0.042
 Bangladesh,Swap rate,ind,0.07
-Bangladesh,Value chains,param,3.211
-Bangladesh,Financial institutions in clean energy,ind,0.15
-Bangladesh,Value chains by clean energy sector,ind,0.012
+Bangladesh,Value chains,param,2.571
+Bangladesh,Financial institutions in clean energy,ind,0.09
+Bangladesh,Value chains by clean energy sector,ind,0.02
 Bangladesh,Distributed clean energy value chains by sector,ind,0.094
-Bangladesh,Clean energy service providers,ind,0.098
-Bangladesh,Distributed clean energy service providers,ind,0.129
+Bangladesh,Clean energy service providers,ind,0.075
+Bangladesh,Distributed clean energy service providers,ind,0.107
 Bangladesh,GHG management,param,0.657
 Bangladesh,Carbon offsets historical activity,ind,0.0
 Bangladesh,CDM risk,ind,0.012
@@ -177,17 +173,15 @@ Bangladesh,Corporate energy efficiency initiatives,ind,0.0
 Bangladesh,Corporate emission reduction policies,ind,0.001
 Bangladesh,Capacity building – env. business training,ind,0.038
 Bangladesh,Capacity building – think tanks,ind,0.038
-Bangladesh,Global rank,rank,16.0
-Bangladesh,Regional rank,rank,6.0
 Bolivia,Score,score,0.915
-Bolivia,Enabling framework,param,0.655
+Bolivia,Enabling framework,param,0.649
 Bolivia,Clean energy policies,ind,0.0
 Bolivia,Power sector structure,ind,0.081
 Bolivia,Distributed energy regulatory framework,ind,0.0
 Bolivia,Clean energy rural electrification,ind,0.04
 Bolivia,Energy access policies,ind,0.0
 Bolivia,Policy barriers,ind,0.005
-Bolivia,Clean energy installed capacity,ind,0.05
+Bolivia,Clean energy installed capacity,ind,0.048
 Bolivia,Growth rate of installed capacity,ind,0.0
 Bolivia,Clean energy electricity generation,ind,0.033
 Bolivia,Growth rate of electricity generation,ind,0.0
@@ -237,17 +231,15 @@ Bolivia,Corporate energy efficiency initiatives,ind,0.0
 Bolivia,Corporate emission reduction policies,ind,0.0
 Bolivia,Capacity building – env. business training,ind,0.038
 Bolivia,Capacity building – think tanks,ind,0.038
-Bolivia,Global rank,rank,36.0
-Bolivia,Regional rank,rank,17.0
 Brazil,Score,score,2.133
-Brazil,Enabling framework,param,2.128
+Brazil,Enabling framework,param,2.136
 Brazil,Clean energy policies,ind,0.269
 Brazil,Power sector structure,ind,0.169
 Brazil,Distributed energy regulatory framework,ind,0.0
 Brazil,Clean energy rural electrification,ind,0.04
 Brazil,Energy access policies,ind,0.0
 Brazil,Policy barriers,ind,0.002
-Brazil,Clean energy installed capacity,ind,0.036
+Brazil,Clean energy installed capacity,ind,0.039
 Brazil,Growth rate of installed capacity,ind,0.0
 Brazil,Clean energy electricity generation,ind,0.014
 Brazil,Growth rate of electricity generation,ind,0.0
@@ -263,7 +255,7 @@ Brazil,Average diesel prices,ind,0.0
 Brazil,Growth rate of power demand,ind,0.035
 Brazil,Electrification rate,ind,0.002
 Brazil,Population using solid fuels for cooking,ind,0.0
-Brazil,Financing and Investments,param,0.577
+Brazil,Financing and Investments,param,0.574
 Brazil,Clean energy investments,ind,0.046
 Brazil,Growth rate of clean energy investments,ind,0.02
 Brazil,Asset finance investments,ind,0.0
@@ -277,8 +269,8 @@ Brazil,Green micro-borrowers,ind,0.0
 Brazil,Average cost of green micro debt,ind,0.017
 Brazil,Average cost of debt,ind,0.02
 Brazil,Swap rate,ind,0.032
-Brazil,Value chains,param,4.158
-Brazil,Financial institutions in clean energy,ind,0.15
+Brazil,Value chains,param,4.408
+Brazil,Financial institutions in clean energy,ind,0.188
 Brazil,Value chains by clean energy sector,ind,0.286
 Brazil,Distributed clean energy value chains by sector,ind,0.0
 Brazil,Clean energy service providers,ind,0.188
@@ -297,8 +289,6 @@ Brazil,Corporate energy efficiency initiatives,ind,0.014
 Brazil,Corporate emission reduction policies,ind,0.014
 Brazil,Capacity building – env. business training,ind,0.038
 Brazil,Capacity building – think tanks,ind,0.038
-Brazil,Global rank,rank,2.0
-Brazil,Regional rank,rank,1.0
 Bahamas,Score,score,0.527
 Bahamas,Enabling framework,param,0.466
 Bahamas,Clean energy policies,ind,0.0
@@ -357,34 +347,32 @@ Bahamas,Corporate energy efficiency initiatives,ind,0.0
 Bahamas,Corporate emission reduction policies,ind,0.0
 Bahamas,Capacity building – env. business training,ind,0.0
 Bahamas,Capacity building – think tanks,ind,0.038
-Bahamas,Global rank,rank,52.0
-Bahamas,Regional rank,rank,24.0
 Botswana,Score,score,0.614
-Botswana,Enabling framework,param,0.749
-Botswana,Clean energy policies,ind,0.063
-Botswana,Power sector structure,ind,0.089
-Botswana,Distributed energy regulatory framework,ind,0.056
-Botswana,Clean energy rural electrification,ind,0.1
-Botswana,Energy access policies,ind,0.1
-Botswana,Policy barriers,ind,0.057
-Botswana,Clean energy installed capacity,ind,0.003
+Botswana,Enabling framework,param,0.77
+Botswana,Clean energy policies,ind,0.025
+Botswana,Power sector structure,ind,0.035
+Botswana,Distributed energy regulatory framework,ind,0.022
+Botswana,Clean energy rural electrification,ind,0.04
+Botswana,Energy access policies,ind,0.049
+Botswana,Policy barriers,ind,0.023
+Botswana,Clean energy installed capacity,ind,0.001
 Botswana,Growth rate of installed capacity,ind,0.0
-Botswana,Clean energy electricity generation,ind,0.002
+Botswana,Clean energy electricity generation,ind,0.001
 Botswana,Growth rate of electricity generation,ind,0.0
-Botswana,Biofuels production,ind,0.003
+Botswana,Biofuels production,ind,0.001
 Botswana,Growth rate biofuels production,ind,0.0
 Botswana,Average electricity spot prices,ind,0.0
-Botswana,Average retail electricity prices,ind,0.112
+Botswana,Average retail electricity prices,ind,0.045
 Botswana,Average residential electricity prices,ind,0.0
 Botswana,Average commercial electricity prices,ind,0.0
 Botswana,Average industrial electricity prices,ind,0.0
-Botswana,Average kerosene prices,ind,0.058
-Botswana,Average diesel prices,ind,0.041
-Botswana,Growth rate of power demand,ind,0.041
-Botswana,Electrification rate,ind,0.007
-Botswana,Population using solid fuels for cooking,ind,0.019
+Botswana,Average kerosene prices,ind,0.023
+Botswana,Average diesel prices,ind,0.017
+Botswana,Growth rate of power demand,ind,0.016
+Botswana,Electrification rate,ind,0.003
+Botswana,Population using solid fuels for cooking,ind,0.008
 Botswana,Financing and Investments,param,0.302
-Botswana,Clean energy investments,ind,0.0
+Botswana,Clean energy investments,ind,0.001
 Botswana,Growth rate of clean energy investments,ind,0.0
 Botswana,Asset finance investments,ind,0.0
 Botswana,Corporate finance investments,ind,0.0
@@ -395,39 +383,37 @@ Botswana,Number of Green MFI,ind,0.0
 Botswana,Green micro-loans,ind,0.0
 Botswana,Green micro-borrowers,ind,0.0
 Botswana,Average cost of green micro debt,ind,0.0
-Botswana,Average cost of debt,ind,0.0
-Botswana,Swap rate,ind,0.0
+Botswana,Average cost of debt,ind,0.053
+Botswana,Swap rate,ind,0.037
 Botswana,Value chains,param,1.099
-Botswana,Financial institutions in clean energy,ind,0.0
-Botswana,Value chains by clean energy sector,ind,0.0
-Botswana,Distributed clean energy value chains by sector,ind,0.0
-Botswana,Clean energy service providers,ind,0.0
-Botswana,Distributed clean energy service providers,ind,0.0
+Botswana,Financial institutions in clean energy,ind,0.03
+Botswana,Value chains by clean energy sector,ind,0.008
+Botswana,Distributed clean energy value chains by sector,ind,0.019
+Botswana,Clean energy service providers,ind,0.022
+Botswana,Distributed clean energy service providers,ind,0.086
 Botswana,GHG management,param,0.393
 Botswana,Carbon offsets historical activity,ind,0.0
 Botswana,CDM risk,ind,0.0
-Botswana,Carbon offsets future potential,ind,0.0
+Botswana,Carbon offsets future potential,ind,0.017
 Botswana,GHG emissions reduction target,ind,0.0
 Botswana,GHG country registry,ind,0.0
 Botswana,GHG market-based instruments,ind,0.0
 Botswana,PMR & NAMA,ind,0.0
 Botswana,Voluntary GHG reporting by corporates,ind,0.0
-Botswana,Investor pressure – PRI signatories,ind,0.0
-Botswana,Corporate energy efficiency initiatives,ind,0.0
-Botswana,Corporate emission reduction policies,ind,0.0
+Botswana,Investor pressure – PRI signatories,ind,0.027
+Botswana,Corporate energy efficiency initiatives,ind,0.007
+Botswana,Corporate emission reduction policies,ind,0.008
 Botswana,Capacity building – env. business training,ind,0.0
 Botswana,Capacity building – think tanks,ind,0.0
-Botswana,Global rank,rank,48.0
-Botswana,Regional rank,rank,19.0
 Belize,Score,score,0.977
-Belize,Enabling framework,param,1.304
+Belize,Enabling framework,param,1.308
 Belize,Clean energy policies,ind,0.049
 Belize,Power sector structure,ind,0.052
 Belize,Distributed energy regulatory framework,ind,0.0
 Belize,Clean energy rural electrification,ind,0.0
 Belize,Energy access policies,ind,0.0
 Belize,Policy barriers,ind,0.004
-Belize,Clean energy installed capacity,ind,0.158
+Belize,Clean energy installed capacity,ind,0.16
 Belize,Growth rate of installed capacity,ind,0.0
 Belize,Clean energy electricity generation,ind,0.16
 Belize,Growth rate of electricity generation,ind,0.021
@@ -477,17 +463,15 @@ Belize,Corporate energy efficiency initiatives,ind,0.0
 Belize,Corporate emission reduction policies,ind,0.0
 Belize,Capacity building – env. business training,ind,0.038
 Belize,Capacity building – think tanks,ind,0.038
-Belize,Global rank,rank,33.0
-Belize,Regional rank,rank,15.0
 DR Congo,Score,score,0.757
-DR Congo,Enabling framework,param,0.797
+DR Congo,Enabling framework,param,0.799
 DR Congo,Clean energy policies,ind,0.015
 DR Congo,Power sector structure,ind,0.02
 DR Congo,Distributed energy regulatory framework,ind,0.036
 DR Congo,Clean energy rural electrification,ind,0.04
 DR Congo,Energy access policies,ind,0.034
 DR Congo,Policy barriers,ind,0.005
-DR Congo,Clean energy installed capacity,ind,0.012
+DR Congo,Clean energy installed capacity,ind,0.013
 DR Congo,Growth rate of installed capacity,ind,0.0
 DR Congo,Clean energy electricity generation,ind,0.008
 DR Congo,Growth rate of electricity generation,ind,0.0
@@ -503,9 +487,9 @@ DR Congo,Average diesel prices,ind,0.04
 DR Congo,Growth rate of power demand,ind,0.0
 DR Congo,Electrification rate,ind,0.038
 DR Congo,Population using solid fuels for cooking,ind,0.019
-DR Congo,Financing and Investments,param,0.351
-DR Congo,Clean energy investments,ind,0.0
-DR Congo,Growth rate of clean energy investments,ind,0.0
+DR Congo,Financing and Investments,param,0.664
+DR Congo,Clean energy investments,ind,0.008
+DR Congo,Growth rate of clean energy investments,ind,0.085
 DR Congo,Asset finance investments,ind,0.0
 DR Congo,Corporate finance investments,ind,0.0
 DR Congo,VC/PE investments,ind,0.0
@@ -537,17 +521,15 @@ DR Congo,Corporate energy efficiency initiatives,ind,0.0
 DR Congo,Corporate emission reduction policies,ind,0.0
 DR Congo,Capacity building – env. business training,ind,0.0
 DR Congo,Capacity building – think tanks,ind,0.0
-DR Congo,Global rank,rank,42.0
-DR Congo,Regional rank,rank,14.0
 Côte d'Ivoire,Score,score,0.686
-Côte d'Ivoire,Enabling framework,param,1.06
+Côte d'Ivoire,Enabling framework,param,1.061
 Côte d'Ivoire,Clean energy policies,ind,0.031
 Côte d'Ivoire,Power sector structure,ind,0.114
 Côte d'Ivoire,Distributed energy regulatory framework,ind,0.053
 Côte d'Ivoire,Clean energy rural electrification,ind,0.04
 Côte d'Ivoire,Energy access policies,ind,0.049
 Côte d'Ivoire,Policy barriers,ind,0.004
-Côte d'Ivoire,Clean energy installed capacity,ind,0.006
+Côte d'Ivoire,Clean energy installed capacity,ind,0.007
 Côte d'Ivoire,Growth rate of installed capacity,ind,0.0
 Côte d'Ivoire,Clean energy electricity generation,ind,0.004
 Côte d'Ivoire,Growth rate of electricity generation,ind,0.012
@@ -597,17 +579,15 @@ Côte d'Ivoire,Corporate energy efficiency initiatives,ind,0.0
 Côte d'Ivoire,Corporate emission reduction policies,ind,0.0
 Côte d'Ivoire,Capacity building – env. business training,ind,0.0
 Côte d'Ivoire,Capacity building – think tanks,ind,0.0
-Côte d'Ivoire,Global rank,rank,47.0
-Côte d'Ivoire,Regional rank,rank,18.0
 Chile,Score,score,1.788
-Chile,Enabling framework,param,1.419
+Chile,Enabling framework,param,1.384
 Chile,Clean energy policies,ind,0.161
 Chile,Power sector structure,ind,0.188
 Chile,Distributed energy regulatory framework,ind,0.0
 Chile,Clean energy rural electrification,ind,0.04
 Chile,Energy access policies,ind,0.0
 Chile,Policy barriers,ind,0.005
-Chile,Clean energy installed capacity,ind,0.022
+Chile,Clean energy installed capacity,ind,0.024
 Chile,Growth rate of installed capacity,ind,0.0
 Chile,Clean energy electricity generation,ind,0.016
 Chile,Growth rate of electricity generation,ind,0.032
@@ -657,16 +637,14 @@ Chile,Corporate energy efficiency initiatives,ind,0.013
 Chile,Corporate emission reduction policies,ind,0.013
 Chile,Capacity building – env. business training,ind,0.038
 Chile,Capacity building – think tanks,ind,0.038
-Chile,Global rank,rank,5.0
-Chile,Regional rank,rank,2.0
 Cameroon,Score,score,0.693
-Cameroon,Enabling framework,param,0.723
-Cameroon,Clean energy policies,ind,0.077
-Cameroon,Power sector structure,ind,0.083
-Cameroon,Distributed energy regulatory framework,ind,0.156
-Cameroon,Clean energy rural electrification,ind,0.1
-Cameroon,Energy access policies,ind,0.127
-Cameroon,Policy barriers,ind,0.006
+Cameroon,Enabling framework,param,0.734
+Cameroon,Clean energy policies,ind,0.031
+Cameroon,Power sector structure,ind,0.033
+Cameroon,Distributed energy regulatory framework,ind,0.062
+Cameroon,Clean energy rural electrification,ind,0.04
+Cameroon,Energy access policies,ind,0.055
+Cameroon,Policy barriers,ind,0.003
 Cameroon,Clean energy installed capacity,ind,0.0
 Cameroon,Growth rate of installed capacity,ind,0.0
 Cameroon,Clean energy electricity generation,ind,0.0
@@ -674,39 +652,39 @@ Cameroon,Growth rate of electricity generation,ind,0.0
 Cameroon,Biofuels production,ind,0.0
 Cameroon,Growth rate biofuels production,ind,0.0
 Cameroon,Average electricity spot prices,ind,0.0
-Cameroon,Average retail electricity prices,ind,0.045
+Cameroon,Average retail electricity prices,ind,0.018
 Cameroon,Average residential electricity prices,ind,0.0
 Cameroon,Average commercial electricity prices,ind,0.0
 Cameroon,Average industrial electricity prices,ind,0.0
-Cameroon,Average kerosene prices,ind,0.043
-Cameroon,Average diesel prices,ind,0.037
+Cameroon,Average kerosene prices,ind,0.017
+Cameroon,Average diesel prices,ind,0.015
 Cameroon,Growth rate of power demand,ind,0.0
-Cameroon,Electrification rate,ind,0.01
-Cameroon,Population using solid fuels for cooking,ind,0.04
-Cameroon,Financing and Investments,param,0.447
-Cameroon,Clean energy investments,ind,0.0
+Cameroon,Electrification rate,ind,0.004
+Cameroon,Population using solid fuels for cooking,ind,0.016
+Cameroon,Financing and Investments,param,0.275
+Cameroon,Clean energy investments,ind,0.005
 Cameroon,Growth rate of clean energy investments,ind,0.0
 Cameroon,Asset finance investments,ind,0.0
 Cameroon,Corporate finance investments,ind,0.0
 Cameroon,VC/PE investments,ind,0.0
 Cameroon,"Loans, grants, grant programs",ind,0.0
 Cameroon,Local investments,ind,0.0
-Cameroon,Number of Green MFI,ind,0.0
+Cameroon,Number of Green MFI,ind,0.001
 Cameroon,Green micro-loans,ind,0.0
 Cameroon,Green micro-borrowers,ind,0.0
-Cameroon,Average cost of green micro debt,ind,0.0
-Cameroon,Average cost of debt,ind,0.0
+Cameroon,Average cost of green micro debt,ind,0.004
+Cameroon,Average cost of debt,ind,0.072
 Cameroon,Swap rate,ind,0.0
 Cameroon,Value chains,param,0.915
-Cameroon,Financial institutions in clean energy,ind,0.0
-Cameroon,Value chains by clean energy sector,ind,0.0
-Cameroon,Distributed clean energy value chains by sector,ind,0.0
-Cameroon,Clean energy service providers,ind,0.0
-Cameroon,Distributed clean energy service providers,ind,0.0
+Cameroon,Financial institutions in clean energy,ind,0.03
+Cameroon,Value chains by clean energy sector,ind,0.012
+Cameroon,Distributed clean energy value chains by sector,ind,0.038
+Cameroon,Clean energy service providers,ind,0.015
+Cameroon,Distributed clean energy service providers,ind,0.043
 Cameroon,GHG management,param,0.884
-Cameroon,Carbon offsets historical activity,ind,0.0
-Cameroon,CDM risk,ind,0.0
-Cameroon,Carbon offsets future potential,ind,0.0
+Cameroon,Carbon offsets historical activity,ind,0.038
+Cameroon,CDM risk,ind,0.075
+Cameroon,Carbon offsets future potential,ind,0.02
 Cameroon,GHG emissions reduction target,ind,0.0
 Cameroon,GHG country registry,ind,0.0
 Cameroon,GHG market-based instruments,ind,0.0
@@ -717,17 +695,15 @@ Cameroon,Corporate energy efficiency initiatives,ind,0.0
 Cameroon,Corporate emission reduction policies,ind,0.0
 Cameroon,Capacity building – env. business training,ind,0.0
 Cameroon,Capacity building – think tanks,ind,0.0
-Cameroon,Global rank,rank,46.0
-Cameroon,Regional rank,rank,17.0
 China,Score,score,2.23
-China,Enabling framework,param,1.56
+China,Enabling framework,param,1.568
 China,Clean energy policies,ind,0.26
 China,Power sector structure,ind,0.142
 China,Distributed energy regulatory framework,ind,0.0
 China,Clean energy rural electrification,ind,0.04
 China,Energy access policies,ind,0.0
 China,Policy barriers,ind,0.004
-China,Clean energy installed capacity,ind,0.036
+China,Clean energy installed capacity,ind,0.039
 China,Growth rate of installed capacity,ind,0.0
 China,Clean energy electricity generation,ind,0.013
 China,Growth rate of electricity generation,ind,0.005
@@ -777,17 +753,15 @@ China,Corporate energy efficiency initiatives,ind,0.038
 China,Corporate emission reduction policies,ind,0.038
 China,Capacity building – env. business training,ind,0.038
 China,Capacity building – think tanks,ind,0.038
-China,Global rank,rank,1.0
-China,Regional rank,rank,1.0
 Hebei,Score,score,1.399
-Hebei,Enabling framework,param,1.427
+Hebei,Enabling framework,param,1.445
 Hebei,Clean energy policies,ind,0.26
 Hebei,Power sector structure,ind,0.072
 Hebei,Distributed energy regulatory framework,ind,0.0
 Hebei,Clean energy rural electrification,ind,0.04
 Hebei,Energy access policies,ind,0.0
 Hebei,Policy barriers,ind,0.004
-Hebei,Clean energy installed capacity,ind,0.047
+Hebei,Clean energy installed capacity,ind,0.051
 Hebei,Growth rate of installed capacity,ind,0.0
 Hebei,Clean energy electricity generation,ind,0.012
 Hebei,Growth rate of electricity generation,ind,0.078
@@ -823,7 +797,7 @@ Hebei,Value chains by clean energy sector,ind,0.158
 Hebei,Distributed clean energy value chains by sector,ind,0.0
 Hebei,Clean energy service providers,ind,0.019
 Hebei,Distributed clean energy service providers,ind,0.0
-Hebei,GHG management,param,1.998
+Hebei,GHG management,param,2.037
 Hebei,Carbon offsets historical activity,ind,0.075
 Hebei,CDM risk,ind,0.05
 Hebei,Carbon offsets future potential,ind,0.0
@@ -837,16 +811,15 @@ Hebei,Corporate energy efficiency initiatives,ind,0.038
 Hebei,Corporate emission reduction policies,ind,0.038
 Hebei,Capacity building – env. business training,ind,0.038
 Hebei,Capacity building – think tanks,ind,0.038
-Hebei,State rank,rank,9.0
 Nei Mongol,Score,score,1.495
-Nei Mongol,Enabling framework,param,1.317
+Nei Mongol,Enabling framework,param,1.351
 Nei Mongol,Clean energy policies,ind,0.26
 Nei Mongol,Power sector structure,ind,0.072
 Nei Mongol,Distributed energy regulatory framework,ind,0.0
 Nei Mongol,Clean energy rural electrification,ind,0.04
 Nei Mongol,Energy access policies,ind,0.0
 Nei Mongol,Policy barriers,ind,0.004
-Nei Mongol,Clean energy installed capacity,ind,0.063
+Nei Mongol,Clean energy installed capacity,ind,0.069
 Nei Mongol,Growth rate of installed capacity,ind,0.0
 Nei Mongol,Clean energy electricity generation,ind,0.015
 Nei Mongol,Growth rate of electricity generation,ind,0.043
@@ -896,16 +869,15 @@ Nei Mongol,Corporate energy efficiency initiatives,ind,0.038
 Nei Mongol,Corporate emission reduction policies,ind,0.038
 Nei Mongol,Capacity building – env. business training,ind,0.038
 Nei Mongol,Capacity building – think tanks,ind,0.0
-Nei Mongol,State rank,rank,5.0
 Jilin,Score,score,1.244
-Jilin,Enabling framework,param,1.277
+Jilin,Enabling framework,param,1.289
 Jilin,Clean energy policies,ind,0.26
 Jilin,Power sector structure,ind,0.072
 Jilin,Distributed energy regulatory framework,ind,0.0
 Jilin,Clean energy rural electrification,ind,0.04
 Jilin,Energy access policies,ind,0.0
 Jilin,Policy barriers,ind,0.004
-Jilin,Clean energy installed capacity,ind,0.05
+Jilin,Clean energy installed capacity,ind,0.055
 Jilin,Growth rate of installed capacity,ind,0.0
 Jilin,Clean energy electricity generation,ind,0.018
 Jilin,Growth rate of electricity generation,ind,0.02
@@ -955,16 +927,15 @@ Jilin,Corporate energy efficiency initiatives,ind,0.038
 Jilin,Corporate emission reduction policies,ind,0.038
 Jilin,Capacity building – env. business training,ind,0.038
 Jilin,Capacity building – think tanks,ind,0.038
-Jilin,State rank,rank,13.0
 Heilongjiang,Score,score,1.252
-Heilongjiang,Enabling framework,param,1.307
+Heilongjiang,Enabling framework,param,1.32
 Heilongjiang,Clean energy policies,ind,0.26
 Heilongjiang,Power sector structure,ind,0.072
 Heilongjiang,Distributed energy regulatory framework,ind,0.0
 Heilongjiang,Clean energy rural electrification,ind,0.04
 Heilongjiang,Energy access policies,ind,0.0
 Heilongjiang,Policy barriers,ind,0.004
-Heilongjiang,Clean energy installed capacity,ind,0.058
+Heilongjiang,Clean energy installed capacity,ind,0.063
 Heilongjiang,Growth rate of installed capacity,ind,0.0
 Heilongjiang,Clean energy electricity generation,ind,0.018
 Heilongjiang,Growth rate of electricity generation,ind,0.021
@@ -1014,16 +985,15 @@ Heilongjiang,Corporate energy efficiency initiatives,ind,0.038
 Heilongjiang,Corporate emission reduction policies,ind,0.038
 Heilongjiang,Capacity building – env. business training,ind,0.038
 Heilongjiang,Capacity building – think tanks,ind,0.038
-Heilongjiang,State rank,rank,12.0
 Jiangsu,Score,score,1.536
-Jiangsu,Enabling framework,param,1.409
+Jiangsu,Enabling framework,param,1.419
 Jiangsu,Clean energy policies,ind,0.26
 Jiangsu,Power sector structure,ind,0.072
 Jiangsu,Distributed energy regulatory framework,ind,0.0
 Jiangsu,Clean energy rural electrification,ind,0.04
 Jiangsu,Energy access policies,ind,0.0
 Jiangsu,Policy barriers,ind,0.004
-Jiangsu,Clean energy installed capacity,ind,0.013
+Jiangsu,Clean energy installed capacity,ind,0.014
 Jiangsu,Growth rate of installed capacity,ind,0.0
 Jiangsu,Clean energy electricity generation,ind,0.003
 Jiangsu,Growth rate of electricity generation,ind,0.048
@@ -1039,9 +1009,9 @@ Jiangsu,Average diesel prices,ind,0.0
 Jiangsu,Growth rate of power demand,ind,0.077
 Jiangsu,Electrification rate,ind,0.002
 Jiangsu,Population using solid fuels for cooking,ind,0.0
-Jiangsu,Financing and Investments,param,1.143
+Jiangsu,Financing and Investments,param,1.145
 Jiangsu,Clean energy investments,ind,0.054
-Jiangsu,Growth rate of clean energy investments,ind,0.09
+Jiangsu,Growth rate of clean energy investments,ind,0.091
 Jiangsu,Asset finance investments,ind,0.0
 Jiangsu,Corporate finance investments,ind,0.0
 Jiangsu,VC/PE investments,ind,0.0
@@ -1073,16 +1043,15 @@ Jiangsu,Corporate energy efficiency initiatives,ind,0.038
 Jiangsu,Corporate emission reduction policies,ind,0.038
 Jiangsu,Capacity building – env. business training,ind,0.038
 Jiangsu,Capacity building – think tanks,ind,0.038
-Jiangsu,State rank,rank,4.0
 Fujian,Score,score,1.263
-Fujian,Enabling framework,param,1.353
+Fujian,Enabling framework,param,1.388
 Fujian,Clean energy policies,ind,0.26
 Fujian,Power sector structure,ind,0.072
 Fujian,Distributed energy regulatory framework,ind,0.0
 Fujian,Clean energy rural electrification,ind,0.04
 Fujian,Energy access policies,ind,0.0
 Fujian,Policy barriers,ind,0.004
-Fujian,Clean energy installed capacity,ind,0.059
+Fujian,Clean energy installed capacity,ind,0.065
 Fujian,Growth rate of installed capacity,ind,0.0
 Fujian,Clean energy electricity generation,ind,0.034
 Fujian,Growth rate of electricity generation,ind,0.001
@@ -1132,16 +1101,15 @@ Fujian,Corporate energy efficiency initiatives,ind,0.038
 Fujian,Corporate emission reduction policies,ind,0.038
 Fujian,Capacity building – env. business training,ind,0.0
 Fujian,Capacity building – think tanks,ind,0.0
-Fujian,State rank,rank,11.0
 Shandong,Score,score,1.429
-Shandong,Enabling framework,param,1.451
+Shandong,Enabling framework,param,1.465
 Shandong,Clean energy policies,ind,0.26
 Shandong,Power sector structure,ind,0.072
 Shandong,Distributed energy regulatory framework,ind,0.0
 Shandong,Clean energy rural electrification,ind,0.04
 Shandong,Energy access policies,ind,0.0
 Shandong,Policy barriers,ind,0.004
-Shandong,Clean energy installed capacity,ind,0.024
+Shandong,Clean energy installed capacity,ind,0.026
 Shandong,Growth rate of installed capacity,ind,0.0
 Shandong,Clean energy electricity generation,ind,0.006
 Shandong,Growth rate of electricity generation,ind,0.086
@@ -1191,16 +1159,15 @@ Shandong,Corporate energy efficiency initiatives,ind,0.038
 Shandong,Corporate emission reduction policies,ind,0.038
 Shandong,Capacity building – env. business training,ind,0.0
 Shandong,Capacity building – think tanks,ind,0.038
-Shandong,State rank,rank,7.0
 Hubei,Score,score,1.226
-Hubei,Enabling framework,param,1.266
+Hubei,Enabling framework,param,1.27
 Hubei,Clean energy policies,ind,0.26
 Hubei,Power sector structure,ind,0.072
 Hubei,Distributed energy regulatory framework,ind,0.0
 Hubei,Clean energy rural electrification,ind,0.04
 Hubei,Energy access policies,ind,0.0
 Hubei,Policy barriers,ind,0.004
-Hubei,Clean energy installed capacity,ind,0.018
+Hubei,Clean energy installed capacity,ind,0.019
 Hubei,Growth rate of installed capacity,ind,0.0
 Hubei,Clean energy electricity generation,ind,0.014
 Hubei,Growth rate of electricity generation,ind,0.019
@@ -1250,16 +1217,15 @@ Hubei,Corporate energy efficiency initiatives,ind,0.038
 Hubei,Corporate emission reduction policies,ind,0.038
 Hubei,Capacity building – env. business training,ind,0.0
 Hubei,Capacity building – think tanks,ind,0.038
-Hubei,State rank,rank,14.0
 Guangdong,Score,score,1.488
-Guangdong,Enabling framework,param,1.387
+Guangdong,Enabling framework,param,1.399
 Guangdong,Clean energy policies,ind,0.26
 Guangdong,Power sector structure,ind,0.072
 Guangdong,Distributed energy regulatory framework,ind,0.0
 Guangdong,Clean energy rural electrification,ind,0.04
 Guangdong,Energy access policies,ind,0.0
 Guangdong,Policy barriers,ind,0.004
-Guangdong,Clean energy installed capacity,ind,0.032
+Guangdong,Clean energy installed capacity,ind,0.035
 Guangdong,Growth rate of installed capacity,ind,0.0
 Guangdong,Clean energy electricity generation,ind,0.013
 Guangdong,Growth rate of electricity generation,ind,0.058
@@ -1309,16 +1275,15 @@ Guangdong,Corporate energy efficiency initiatives,ind,0.038
 Guangdong,Corporate emission reduction policies,ind,0.038
 Guangdong,Capacity building – env. business training,ind,0.038
 Guangdong,Capacity building – think tanks,ind,0.038
-Guangdong,State rank,rank,6.0
 Sichuan,Score,score,1.375
-Sichuan,Enabling framework,param,1.258
+Sichuan,Enabling framework,param,1.267
 Sichuan,Clean energy policies,ind,0.26
 Sichuan,Power sector structure,ind,0.072
 Sichuan,Distributed energy regulatory framework,ind,0.0
 Sichuan,Clean energy rural electrification,ind,0.04
 Sichuan,Energy access policies,ind,0.0
 Sichuan,Policy barriers,ind,0.004
-Sichuan,Clean energy installed capacity,ind,0.041
+Sichuan,Clean energy installed capacity,ind,0.044
 Sichuan,Growth rate of installed capacity,ind,0.0
 Sichuan,Clean energy electricity generation,ind,0.027
 Sichuan,Growth rate of electricity generation,ind,0.014
@@ -1368,16 +1333,15 @@ Sichuan,Corporate energy efficiency initiatives,ind,0.038
 Sichuan,Corporate emission reduction policies,ind,0.038
 Sichuan,Capacity building – env. business training,ind,0.038
 Sichuan,Capacity building – think tanks,ind,0.0
-Sichuan,State rank,rank,10.0
 Yunnan,Score,score,1.41
-Yunnan,Enabling framework,param,1.337
+Yunnan,Enabling framework,param,1.352
 Yunnan,Clean energy policies,ind,0.26
 Yunnan,Power sector structure,ind,0.072
 Yunnan,Distributed energy regulatory framework,ind,0.0
 Yunnan,Clean energy rural electrification,ind,0.04
 Yunnan,Energy access policies,ind,0.0
 Yunnan,Policy barriers,ind,0.004
-Yunnan,Clean energy installed capacity,ind,0.065
+Yunnan,Clean energy installed capacity,ind,0.07
 Yunnan,Growth rate of installed capacity,ind,0.0
 Yunnan,Clean energy electricity generation,ind,0.033
 Yunnan,Growth rate of electricity generation,ind,0.023
@@ -1427,16 +1391,15 @@ Yunnan,Corporate energy efficiency initiatives,ind,0.038
 Yunnan,Corporate emission reduction policies,ind,0.038
 Yunnan,Capacity building – env. business training,ind,0.0
 Yunnan,Capacity building – think tanks,ind,0.038
-Yunnan,State rank,rank,8.0
 Xizang,Score,score,1.065
-Xizang,Enabling framework,param,1.375
+Xizang,Enabling framework,param,1.394
 Xizang,Clean energy policies,ind,0.26
 Xizang,Power sector structure,ind,0.072
 Xizang,Distributed energy regulatory framework,ind,0.0
 Xizang,Clean energy rural electrification,ind,0.04
 Xizang,Energy access policies,ind,0.0
 Xizang,Policy barriers,ind,0.004
-Xizang,Clean energy installed capacity,ind,0.074
+Xizang,Clean energy installed capacity,ind,0.08
 Xizang,Growth rate of installed capacity,ind,0.0
 Xizang,Clean energy electricity generation,ind,0.049
 Xizang,Growth rate of electricity generation,ind,0.015
@@ -1486,16 +1449,15 @@ Xizang,Corporate energy efficiency initiatives,ind,0.038
 Xizang,Corporate emission reduction policies,ind,0.038
 Xizang,Capacity building – env. business training,ind,0.0
 Xizang,Capacity building – think tanks,ind,0.038
-Xizang,State rank,rank,15.0
 Gansu,Score,score,1.637
-Gansu,Enabling framework,param,1.473
+Gansu,Enabling framework,param,1.511
 Gansu,Clean energy policies,ind,0.26
 Gansu,Power sector structure,ind,0.072
 Gansu,Distributed energy regulatory framework,ind,0.0
 Gansu,Clean energy rural electrification,ind,0.04
 Gansu,Energy access policies,ind,0.0
 Gansu,Policy barriers,ind,0.004
-Gansu,Clean energy installed capacity,ind,0.079
+Gansu,Clean energy installed capacity,ind,0.086
 Gansu,Growth rate of installed capacity,ind,0.0
 Gansu,Clean energy electricity generation,ind,0.027
 Gansu,Growth rate of electricity generation,ind,0.035
@@ -1545,16 +1507,15 @@ Gansu,Corporate energy efficiency initiatives,ind,0.038
 Gansu,Corporate emission reduction policies,ind,0.038
 Gansu,Capacity building – env. business training,ind,0.038
 Gansu,Capacity building – think tanks,ind,0.0
-Gansu,State rank,rank,3.0
 Qinghai,Score,score,1.674
-Qinghai,Enabling framework,param,1.546
+Qinghai,Enabling framework,param,1.559
 Qinghai,Clean energy policies,ind,0.26
 Qinghai,Power sector structure,ind,0.072
 Qinghai,Distributed energy regulatory framework,ind,0.0
 Qinghai,Clean energy rural electrification,ind,0.04
 Qinghai,Energy access policies,ind,0.0
 Qinghai,Policy barriers,ind,0.004
-Qinghai,Clean energy installed capacity,ind,0.054
+Qinghai,Clean energy installed capacity,ind,0.059
 Qinghai,Growth rate of installed capacity,ind,0.001
 Qinghai,Clean energy electricity generation,ind,0.019
 Qinghai,Growth rate of electricity generation,ind,0.067
@@ -1590,7 +1551,7 @@ Qinghai,Value chains by clean energy sector,ind,0.089
 Qinghai,Distributed clean energy value chains by sector,ind,0.0
 Qinghai,Clean energy service providers,ind,0.009
 Qinghai,Distributed clean energy service providers,ind,0.0
-Qinghai,GHG management,param,1.773
+Qinghai,GHG management,param,1.87
 Qinghai,Carbon offsets historical activity,ind,0.038
 Qinghai,CDM risk,ind,0.062
 Qinghai,Carbon offsets future potential,ind,0.0
@@ -1604,16 +1565,15 @@ Qinghai,Corporate energy efficiency initiatives,ind,0.038
 Qinghai,Corporate emission reduction policies,ind,0.038
 Qinghai,Capacity building – env. business training,ind,0.038
 Qinghai,Capacity building – think tanks,ind,0.038
-Qinghai,State rank,rank,2.0
 Xinjiang,Score,score,1.694
-Xinjiang,Enabling framework,param,1.601
+Xinjiang,Enabling framework,param,1.61
 Xinjiang,Clean energy policies,ind,0.26
 Xinjiang,Power sector structure,ind,0.072
 Xinjiang,Distributed energy regulatory framework,ind,0.0
 Xinjiang,Clean energy rural electrification,ind,0.04
 Xinjiang,Energy access policies,ind,0.0
 Xinjiang,Policy barriers,ind,0.004
-Xinjiang,Clean energy installed capacity,ind,0.042
+Xinjiang,Clean energy installed capacity,ind,0.046
 Xinjiang,Growth rate of installed capacity,ind,0.0
 Xinjiang,Clean energy electricity generation,ind,0.014
 Xinjiang,Growth rate of electricity generation,ind,0.077
@@ -1663,16 +1623,15 @@ Xinjiang,Corporate energy efficiency initiatives,ind,0.038
 Xinjiang,Corporate emission reduction policies,ind,0.038
 Xinjiang,Capacity building – env. business training,ind,0.038
 Xinjiang,Capacity building – think tanks,ind,0.0
-Xinjiang,State rank,rank,1.0
 Colombia,Score,score,1.328
-Colombia,Enabling framework,param,0.978
+Colombia,Enabling framework,param,0.981
 Colombia,Clean energy policies,ind,0.063
 Colombia,Power sector structure,ind,0.181
 Colombia,Distributed energy regulatory framework,ind,0.0
 Colombia,Clean energy rural electrification,ind,0.04
 Colombia,Energy access policies,ind,0.0
 Colombia,Policy barriers,ind,0.005
-Colombia,Clean energy installed capacity,ind,0.012
+Colombia,Clean energy installed capacity,ind,0.013
 Colombia,Growth rate of installed capacity,ind,0.0
 Colombia,Clean energy electricity generation,ind,0.008
 Colombia,Growth rate of electricity generation,ind,0.0
@@ -1722,17 +1681,15 @@ Colombia,Corporate energy efficiency initiatives,ind,0.011
 Colombia,Corporate emission reduction policies,ind,0.011
 Colombia,Capacity building – env. business training,ind,0.038
 Colombia,Capacity building – think tanks,ind,0.038
-Colombia,Global rank,rank,17.0
-Colombia,Regional rank,rank,8.0
 Costa Rica,Score,score,1.5
-Costa Rica,Enabling framework,param,1.378
+Costa Rica,Enabling framework,param,1.253
 Costa Rica,Clean energy policies,ind,0.074
 Costa Rica,Power sector structure,ind,0.067
 Costa Rica,Distributed energy regulatory framework,ind,0.0
 Costa Rica,Clean energy rural electrification,ind,0.04
 Costa Rica,Energy access policies,ind,0.0
 Costa Rica,Policy barriers,ind,0.029
-Costa Rica,Clean energy installed capacity,ind,0.141
+Costa Rica,Clean energy installed capacity,ind,0.089
 Costa Rica,Growth rate of installed capacity,ind,0.0
 Costa Rica,Clean energy electricity generation,ind,0.066
 Costa Rica,Growth rate of electricity generation,ind,0.002
@@ -1782,17 +1739,15 @@ Costa Rica,Corporate energy efficiency initiatives,ind,0.0
 Costa Rica,Corporate emission reduction policies,ind,0.0
 Costa Rica,Capacity building – env. business training,ind,0.038
 Costa Rica,Capacity building – think tanks,ind,0.038
-Costa Rica,Global rank,rank,11.0
-Costa Rica,Regional rank,rank,6.0
 Dominican Republic,Score,score,1.158
-Dominican Republic,Enabling framework,param,1.534
+Dominican Republic,Enabling framework,param,1.54
 Dominican Republic,Clean energy policies,ind,0.215
 Dominican Republic,Power sector structure,ind,0.115
 Dominican Republic,Distributed energy regulatory framework,ind,0.0
 Dominican Republic,Clean energy rural electrification,ind,0.04
 Dominican Republic,Energy access policies,ind,0.0
 Dominican Republic,Policy barriers,ind,0.013
-Dominican Republic,Clean energy installed capacity,ind,0.023
+Dominican Republic,Clean energy installed capacity,ind,0.026
 Dominican Republic,Growth rate of installed capacity,ind,0.0
 Dominican Republic,Clean energy electricity generation,ind,0.014
 Dominican Republic,Growth rate of electricity generation,ind,0.039
@@ -1842,17 +1797,15 @@ Dominican Republic,Corporate energy efficiency initiatives,ind,0.0
 Dominican Republic,Corporate emission reduction policies,ind,0.0
 Dominican Republic,Capacity building – env. business training,ind,0.038
 Dominican Republic,Capacity building – think tanks,ind,0.038
-Dominican Republic,Global rank,rank,23.0
-Dominican Republic,Regional rank,rank,10.0
 Ecuador,Score,score,0.959
-Ecuador,Enabling framework,param,0.999
+Ecuador,Enabling framework,param,1.004
 Ecuador,Clean energy policies,ind,0.103
 Ecuador,Power sector structure,ind,0.135
 Ecuador,Distributed energy regulatory framework,ind,0.0
 Ecuador,Clean energy rural electrification,ind,0.04
 Ecuador,Energy access policies,ind,0.0
 Ecuador,Policy barriers,ind,0.007
-Ecuador,Clean energy installed capacity,ind,0.022
+Ecuador,Clean energy installed capacity,ind,0.024
 Ecuador,Growth rate of installed capacity,ind,0.0
 Ecuador,Clean energy electricity generation,ind,0.015
 Ecuador,Growth rate of electricity generation,ind,0.005
@@ -1902,17 +1855,15 @@ Ecuador,Corporate energy efficiency initiatives,ind,0.0
 Ecuador,Corporate emission reduction policies,ind,0.0
 Ecuador,Capacity building – env. business training,ind,0.038
 Ecuador,Capacity building – think tanks,ind,0.038
-Ecuador,Global rank,rank,35.0
-Ecuador,Regional rank,rank,16.0
 Ethiopia,Score,score,1.187
-Ethiopia,Enabling framework,param,1.216
+Ethiopia,Enabling framework,param,1.296
 Ethiopia,Clean energy policies,ind,0.104
 Ethiopia,Power sector structure,ind,0.027
-Ethiopia,Distributed energy regulatory framework,ind,0.013
+Ethiopia,Distributed energy regulatory framework,ind,0.038
 Ethiopia,Clean energy rural electrification,ind,0.04
-Ethiopia,Energy access policies,ind,0.055
+Ethiopia,Energy access policies,ind,0.059
 Ethiopia,Policy barriers,ind,0.003
-Ethiopia,Clean energy installed capacity,ind,0.038
+Ethiopia,Clean energy installed capacity,ind,0.042
 Ethiopia,Growth rate of installed capacity,ind,0.0
 Ethiopia,Clean energy electricity generation,ind,0.028
 Ethiopia,Growth rate of electricity generation,ind,0.056
@@ -1928,9 +1879,9 @@ Ethiopia,Average diesel prices,ind,0.013
 Ethiopia,Growth rate of power demand,ind,0.054
 Ethiopia,Electrification rate,ind,0.008
 Ethiopia,Population using solid fuels for cooking,ind,0.02
-Ethiopia,Financing and Investments,param,0.616
-Ethiopia,Clean energy investments,ind,0.038
-Ethiopia,Growth rate of clean energy investments,ind,0.0
+Ethiopia,Financing and Investments,param,0.635
+Ethiopia,Clean energy investments,ind,0.039
+Ethiopia,Growth rate of clean energy investments,ind,0.005
 Ethiopia,Asset finance investments,ind,0.0
 Ethiopia,Corporate finance investments,ind,0.0
 Ethiopia,VC/PE investments,ind,0.0
@@ -1942,11 +1893,11 @@ Ethiopia,Green micro-borrowers,ind,0.0
 Ethiopia,Average cost of green micro debt,ind,0.006
 Ethiopia,Average cost of debt,ind,0.135
 Ethiopia,Swap rate,ind,0.0
-Ethiopia,Value chains,param,2.474
+Ethiopia,Value chains,param,2.629
 Ethiopia,Financial institutions in clean energy,ind,0.03
-Ethiopia,Value chains by clean energy sector,ind,0.083
+Ethiopia,Value chains by clean energy sector,ind,0.099
 Ethiopia,Distributed clean energy value chains by sector,ind,0.075
-Ethiopia,Clean energy service providers,ind,0.098
+Ethiopia,Clean energy service providers,ind,0.105
 Ethiopia,Distributed clean energy service providers,ind,0.086
 Ethiopia,GHG management,param,0.966
 Ethiopia,Carbon offsets historical activity,ind,0.0
@@ -1962,10 +1913,8 @@ Ethiopia,Corporate energy efficiency initiatives,ind,0.0
 Ethiopia,Corporate emission reduction policies,ind,0.0
 Ethiopia,Capacity building – env. business training,ind,0.038
 Ethiopia,Capacity building – think tanks,ind,0.038
-Ethiopia,Global rank,rank,22.0
-Ethiopia,Regional rank,rank,6.0
 Ghana,Score,score,1.151
-Ghana,Enabling framework,param,1.17
+Ghana,Enabling framework,param,1.171
 Ghana,Clean energy policies,ind,0.137
 Ghana,Power sector structure,ind,0.081
 Ghana,Distributed energy regulatory framework,ind,0.053
@@ -2008,7 +1957,7 @@ Ghana,Value chains by clean energy sector,ind,0.036
 Ghana,Distributed clean energy value chains by sector,ind,0.075
 Ghana,Clean energy service providers,ind,0.038
 Ghana,Distributed clean energy service providers,ind,0.129
-Ghana,GHG management,param,1.743
+Ghana,GHG management,param,1.773
 Ghana,Carbon offsets historical activity,ind,0.075
 Ghana,CDM risk,ind,0.075
 Ghana,Carbon offsets future potential,ind,0.023
@@ -2022,17 +1971,15 @@ Ghana,Corporate energy efficiency initiatives,ind,0.0
 Ghana,Corporate emission reduction policies,ind,0.0
 Ghana,Capacity building – env. business training,ind,0.038
 Ghana,Capacity building – think tanks,ind,0.038
-Ghana,Global rank,rank,25.0
-Ghana,Regional rank,rank,8.0
 Guatemala,Score,score,1.106
-Guatemala,Enabling framework,param,1.384
+Guatemala,Enabling framework,param,1.321
 Guatemala,Clean energy policies,ind,0.064
 Guatemala,Power sector structure,ind,0.145
 Guatemala,Distributed energy regulatory framework,ind,0.0
 Guatemala,Clean energy rural electrification,ind,0.04
 Guatemala,Energy access policies,ind,0.0
 Guatemala,Policy barriers,ind,0.029
-Guatemala,Clean energy installed capacity,ind,0.059
+Guatemala,Clean energy installed capacity,ind,0.065
 Guatemala,Growth rate of installed capacity,ind,0.0
 Guatemala,Clean energy electricity generation,ind,0.037
 Guatemala,Growth rate of electricity generation,ind,0.006
@@ -2082,17 +2029,15 @@ Guatemala,Corporate energy efficiency initiatives,ind,0.0
 Guatemala,Corporate emission reduction policies,ind,0.0
 Guatemala,Capacity building – env. business training,ind,0.038
 Guatemala,Capacity building – think tanks,ind,0.038
-Guatemala,Global rank,rank,29.0
-Guatemala,Regional rank,rank,14.0
 Guyana,Score,score,0.6
-Guyana,Enabling framework,param,0.597
+Guyana,Enabling framework,param,0.602
 Guyana,Clean energy policies,ind,0.0
 Guyana,Power sector structure,ind,0.05
 Guyana,Distributed energy regulatory framework,ind,0.0
 Guyana,Clean energy rural electrification,ind,0.04
 Guyana,Energy access policies,ind,0.0
 Guyana,Policy barriers,ind,0.004
-Guyana,Clean energy installed capacity,ind,0.023
+Guyana,Clean energy installed capacity,ind,0.025
 Guyana,Growth rate of installed capacity,ind,0.0
 Guyana,Clean energy electricity generation,ind,0.0
 Guyana,Growth rate of electricity generation,ind,0.0
@@ -2142,17 +2087,15 @@ Guyana,Corporate energy efficiency initiatives,ind,0.0
 Guyana,Corporate emission reduction policies,ind,0.0
 Guyana,Capacity building – env. business training,ind,0.038
 Guyana,Capacity building – think tanks,ind,0.038
-Guyana,Global rank,rank,49.0
-Guyana,Regional rank,rank,21.0
 Honduras,Score,score,1.144
-Honduras,Enabling framework,param,1.264
+Honduras,Enabling framework,param,1.29
 Honduras,Clean energy policies,ind,0.129
-Honduras,Power sector structure,ind,0.064
+Honduras,Power sector structure,ind,0.074
 Honduras,Distributed energy regulatory framework,ind,0.0
 Honduras,Clean energy rural electrification,ind,0.04
 Honduras,Energy access policies,ind,0.0
 Honduras,Policy barriers,ind,0.029
-Honduras,Clean energy installed capacity,ind,0.063
+Honduras,Clean energy installed capacity,ind,0.064
 Honduras,Growth rate of installed capacity,ind,0.0
 Honduras,Clean energy electricity generation,ind,0.027
 Honduras,Growth rate of electricity generation,ind,0.04
@@ -2202,17 +2145,15 @@ Honduras,Corporate energy efficiency initiatives,ind,0.0
 Honduras,Corporate emission reduction policies,ind,0.0
 Honduras,Capacity building – env. business training,ind,0.0
 Honduras,Capacity building – think tanks,ind,0.038
-Honduras,Global rank,rank,26.0
-Honduras,Regional rank,rank,11.0
 Haiti,Score,score,0.724
-Haiti,Enabling framework,param,0.908
+Haiti,Enabling framework,param,0.921
 Haiti,Clean energy policies,ind,0.0
 Haiti,Power sector structure,ind,0.035
 Haiti,Distributed energy regulatory framework,ind,0.053
 Haiti,Clean energy rural electrification,ind,0.04
 Haiti,Energy access policies,ind,0.008
 Haiti,Policy barriers,ind,0.005
-Haiti,Clean energy installed capacity,ind,0.06
+Haiti,Clean energy installed capacity,ind,0.066
 Haiti,Growth rate of installed capacity,ind,0.0
 Haiti,Clean energy electricity generation,ind,0.023
 Haiti,Growth rate of electricity generation,ind,0.0
@@ -2262,17 +2203,15 @@ Haiti,Corporate energy efficiency initiatives,ind,0.0
 Haiti,Corporate emission reduction policies,ind,0.0
 Haiti,Capacity building – env. business training,ind,0.0
 Haiti,Capacity building – think tanks,ind,0.0
-Haiti,Global rank,rank,45.0
-Haiti,Regional rank,rank,20.0
 Indonesia,Score,score,1.606
-Indonesia,Enabling framework,param,1.196
+Indonesia,Enabling framework,param,1.2
 Indonesia,Clean energy policies,ind,0.19
 Indonesia,Power sector structure,ind,0.148
 Indonesia,Distributed energy regulatory framework,ind,0.0
 Indonesia,Clean energy rural electrification,ind,0.04
 Indonesia,Energy access policies,ind,0.0
 Indonesia,Policy barriers,ind,0.004
-Indonesia,Clean energy installed capacity,ind,0.017
+Indonesia,Clean energy installed capacity,ind,0.019
 Indonesia,Growth rate of installed capacity,ind,0.0
 Indonesia,Clean energy electricity generation,ind,0.008
 Indonesia,Growth rate of electricity generation,ind,0.001
@@ -2302,11 +2241,11 @@ Indonesia,Green micro-borrowers,ind,0.0
 Indonesia,Average cost of green micro debt,ind,0.014
 Indonesia,Average cost of debt,ind,0.046
 Indonesia,Swap rate,ind,0.047
-Indonesia,Value chains,param,4.227
+Indonesia,Value chains,param,3.645
 Indonesia,Financial institutions in clean energy,ind,0.15
-Indonesia,Value chains by clean energy sector,ind,0.306
+Indonesia,Value chains by clean energy sector,ind,0.247
 Indonesia,Distributed clean energy value chains by sector,ind,0.0
-Indonesia,Clean energy service providers,ind,0.178
+Indonesia,Clean energy service providers,ind,0.15
 Indonesia,Distributed clean energy service providers,ind,0.0
 Indonesia,GHG management,param,2.407
 Indonesia,Carbon offsets historical activity,ind,0.112
@@ -2322,17 +2261,15 @@ Indonesia,Corporate energy efficiency initiatives,ind,0.005
 Indonesia,Corporate emission reduction policies,ind,0.006
 Indonesia,Capacity building – env. business training,ind,0.038
 Indonesia,Capacity building – think tanks,ind,0.038
-Indonesia,Global rank,rank,8.0
-Indonesia,Regional rank,rank,3.0
 India,Score,score,1.851
-India,Enabling framework,param,1.434
+India,Enabling framework,param,1.459
 India,Clean energy policies,ind,0.249
 India,Power sector structure,ind,0.151
 India,Distributed energy regulatory framework,ind,0.0
 India,Clean energy rural electrification,ind,0.04
 India,Energy access policies,ind,0.0
 India,Policy barriers,ind,0.004
-India,Clean energy installed capacity,ind,0.037
+India,Clean energy installed capacity,ind,0.041
 India,Growth rate of installed capacity,ind,0.0
 India,Clean energy electricity generation,ind,0.009
 India,Growth rate of electricity generation,ind,0.038
@@ -2382,17 +2319,15 @@ India,Corporate energy efficiency initiatives,ind,0.015
 India,Corporate emission reduction policies,ind,0.004
 India,Capacity building – env. business training,ind,0.038
 India,Capacity building – think tanks,ind,0.038
-India,Global rank,rank,3.0
-India,Regional rank,rank,2.0
 Andhra Pradesh,Score,score,1.176
-Andhra Pradesh,Enabling framework,param,1.223
+Andhra Pradesh,Enabling framework,param,1.227
 Andhra Pradesh,Clean energy policies,ind,0.249
 Andhra Pradesh,Power sector structure,ind,0.109
 Andhra Pradesh,Distributed energy regulatory framework,ind,0.0
 Andhra Pradesh,Clean energy rural electrification,ind,0.04
 Andhra Pradesh,Energy access policies,ind,0.0
 Andhra Pradesh,Policy barriers,ind,0.004
-Andhra Pradesh,Clean energy installed capacity,ind,0.021
+Andhra Pradesh,Clean energy installed capacity,ind,0.023
 Andhra Pradesh,Growth rate of installed capacity,ind,0.0
 Andhra Pradesh,Clean energy electricity generation,ind,0.006
 Andhra Pradesh,Growth rate of electricity generation,ind,0.01
@@ -2408,9 +2343,9 @@ Andhra Pradesh,Average diesel prices,ind,0.0
 Andhra Pradesh,Growth rate of power demand,ind,0.0
 Andhra Pradesh,Electrification rate,ind,0.002
 Andhra Pradesh,Population using solid fuels for cooking,ind,0.0
-Andhra Pradesh,Financing and Investments,param,0.696
-Andhra Pradesh,Clean energy investments,ind,0.043
-Andhra Pradesh,Growth rate of clean energy investments,ind,0.073
+Andhra Pradesh,Financing and Investments,param,0.573
+Andhra Pradesh,Clean energy investments,ind,0.035
+Andhra Pradesh,Growth rate of clean energy investments,ind,0.045
 Andhra Pradesh,Asset finance investments,ind,0.0
 Andhra Pradesh,Corporate finance investments,ind,0.0
 Andhra Pradesh,VC/PE investments,ind,0.0
@@ -2442,16 +2377,15 @@ Andhra Pradesh,Corporate energy efficiency initiatives,ind,0.015
 Andhra Pradesh,Corporate emission reduction policies,ind,0.004
 Andhra Pradesh,Capacity building – env. business training,ind,0.038
 Andhra Pradesh,Capacity building – think tanks,ind,0.0
-Andhra Pradesh,State rank,rank,6.0
 Gujarat,Score,score,1.292
-Gujarat,Enabling framework,param,1.391
+Gujarat,Enabling framework,param,1.401
 Gujarat,Clean energy policies,ind,0.249
 Gujarat,Power sector structure,ind,0.188
 Gujarat,Distributed energy regulatory framework,ind,0.0
 Gujarat,Clean energy rural electrification,ind,0.0
 Gujarat,Energy access policies,ind,0.0
 Gujarat,Policy barriers,ind,0.004
-Gujarat,Clean energy installed capacity,ind,0.039
+Gujarat,Clean energy installed capacity,ind,0.043
 Gujarat,Growth rate of installed capacity,ind,0.0
 Gujarat,Clean energy electricity generation,ind,0.012
 Gujarat,Growth rate of electricity generation,ind,0.015
@@ -2467,9 +2401,9 @@ Gujarat,Average diesel prices,ind,0.0
 Gujarat,Growth rate of power demand,ind,0.007
 Gujarat,Electrification rate,ind,0.002
 Gujarat,Population using solid fuels for cooking,ind,0.0
-Gujarat,Financing and Investments,param,0.749
-Gujarat,Clean energy investments,ind,0.129
-Gujarat,Growth rate of clean energy investments,ind,0.003
+Gujarat,Financing and Investments,param,0.675
+Gujarat,Clean energy investments,ind,0.106
+Gujarat,Growth rate of clean energy investments,ind,0.004
 Gujarat,Asset finance investments,ind,0.0
 Gujarat,Corporate finance investments,ind,0.0
 Gujarat,VC/PE investments,ind,0.0
@@ -2501,16 +2435,15 @@ Gujarat,Corporate energy efficiency initiatives,ind,0.015
 Gujarat,Corporate emission reduction policies,ind,0.004
 Gujarat,Capacity building – env. business training,ind,0.038
 Gujarat,Capacity building – think tanks,ind,0.0
-Gujarat,State rank,rank,3.0
 Karnataka,Score,score,1.575
-Karnataka,Enabling framework,param,1.895
+Karnataka,Enabling framework,param,1.914
 Karnataka,Clean energy policies,ind,0.249
 Karnataka,Power sector structure,ind,0.141
 Karnataka,Distributed energy regulatory framework,ind,0.0
 Karnataka,Clean energy rural electrification,ind,0.04
 Karnataka,Energy access policies,ind,0.0
 Karnataka,Policy barriers,ind,0.004
-Karnataka,Clean energy installed capacity,ind,0.086
+Karnataka,Clean energy installed capacity,ind,0.094
 Karnataka,Growth rate of installed capacity,ind,0.0
 Karnataka,Clean energy electricity generation,ind,0.03
 Karnataka,Growth rate of electricity generation,ind,0.16
@@ -2526,9 +2459,9 @@ Karnataka,Average diesel prices,ind,0.0
 Karnataka,Growth rate of power demand,ind,0.0
 Karnataka,Electrification rate,ind,0.002
 Karnataka,Population using solid fuels for cooking,ind,0.0
-Karnataka,Financing and Investments,param,0.954
-Karnataka,Clean energy investments,ind,0.172
-Karnataka,Growth rate of clean energy investments,ind,0.021
+Karnataka,Financing and Investments,param,0.906
+Karnataka,Clean energy investments,ind,0.155
+Karnataka,Growth rate of clean energy investments,ind,0.024
 Karnataka,Asset finance investments,ind,0.0
 Karnataka,Corporate finance investments,ind,0.0
 Karnataka,VC/PE investments,ind,0.0
@@ -2560,16 +2493,15 @@ Karnataka,Corporate energy efficiency initiatives,ind,0.015
 Karnataka,Corporate emission reduction policies,ind,0.004
 Karnataka,Capacity building – env. business training,ind,0.038
 Karnataka,Capacity building – think tanks,ind,0.038
-Karnataka,State rank,rank,1.0
 Maharashtra,Score,score,1.286
-Maharashtra,Enabling framework,param,1.493
+Maharashtra,Enabling framework,param,1.514
 Maharashtra,Clean energy policies,ind,0.249
 Maharashtra,Power sector structure,ind,0.172
 Maharashtra,Distributed energy regulatory framework,ind,0.0
 Maharashtra,Clean energy rural electrification,ind,0.04
 Maharashtra,Energy access policies,ind,0.0
 Maharashtra,Policy barriers,ind,0.004
-Maharashtra,Clean energy installed capacity,ind,0.047
+Maharashtra,Clean energy installed capacity,ind,0.051
 Maharashtra,Growth rate of installed capacity,ind,0.0
 Maharashtra,Clean energy electricity generation,ind,0.012
 Maharashtra,Growth rate of electricity generation,ind,0.031
@@ -2585,9 +2517,9 @@ Maharashtra,Average diesel prices,ind,0.0
 Maharashtra,Growth rate of power demand,ind,0.0
 Maharashtra,Electrification rate,ind,0.002
 Maharashtra,Population using solid fuels for cooking,ind,0.0
-Maharashtra,Financing and Investments,param,0.656
-Maharashtra,Clean energy investments,ind,0.065
-Maharashtra,Growth rate of clean energy investments,ind,0.039
+Maharashtra,Financing and Investments,param,0.63
+Maharashtra,Clean energy investments,ind,0.059
+Maharashtra,Growth rate of clean energy investments,ind,0.038
 Maharashtra,Asset finance investments,ind,0.0
 Maharashtra,Corporate finance investments,ind,0.0
 Maharashtra,VC/PE investments,ind,0.0
@@ -2619,16 +2551,15 @@ Maharashtra,Corporate energy efficiency initiatives,ind,0.015
 Maharashtra,Corporate emission reduction policies,ind,0.004
 Maharashtra,Capacity building – env. business training,ind,0.038
 Maharashtra,Capacity building – think tanks,ind,0.038
-Maharashtra,State rank,rank,4.0
 Madhya Pradesh,Score,score,0.984
-Madhya Pradesh,Enabling framework,param,1.291
+Madhya Pradesh,Enabling framework,param,1.295
 Madhya Pradesh,Clean energy policies,ind,0.249
 Madhya Pradesh,Power sector structure,ind,0.101
 Madhya Pradesh,Distributed energy regulatory framework,ind,0.0
 Madhya Pradesh,Clean energy rural electrification,ind,0.04
 Madhya Pradesh,Energy access policies,ind,0.0
 Madhya Pradesh,Policy barriers,ind,0.004
-Madhya Pradesh,Clean energy installed capacity,ind,0.014
+Madhya Pradesh,Clean energy installed capacity,ind,0.015
 Madhya Pradesh,Growth rate of installed capacity,ind,0.001
 Madhya Pradesh,Clean energy electricity generation,ind,0.002
 Madhya Pradesh,Growth rate of electricity generation,ind,0.019
@@ -2644,9 +2575,9 @@ Madhya Pradesh,Average diesel prices,ind,0.0
 Madhya Pradesh,Growth rate of power demand,ind,0.039
 Madhya Pradesh,Electrification rate,ind,0.002
 Madhya Pradesh,Population using solid fuels for cooking,ind,0.0
-Madhya Pradesh,Financing and Investments,param,0.816
+Madhya Pradesh,Financing and Investments,param,0.822
 Madhya Pradesh,Clean energy investments,ind,0.034
-Madhya Pradesh,Growth rate of clean energy investments,ind,0.118
+Madhya Pradesh,Growth rate of clean energy investments,ind,0.12
 Madhya Pradesh,Asset finance investments,ind,0.0
 Madhya Pradesh,Corporate finance investments,ind,0.0
 Madhya Pradesh,VC/PE investments,ind,0.0
@@ -2678,16 +2609,15 @@ Madhya Pradesh,Corporate energy efficiency initiatives,ind,0.015
 Madhya Pradesh,Corporate emission reduction policies,ind,0.004
 Madhya Pradesh,Capacity building – env. business training,ind,0.038
 Madhya Pradesh,Capacity building – think tanks,ind,0.0
-Madhya Pradesh,State rank,rank,9.0
 Punjab,Score,score,1.037
-Punjab,Enabling framework,param,1.237
+Punjab,Enabling framework,param,1.245
 Punjab,Clean energy policies,ind,0.249
 Punjab,Power sector structure,ind,0.115
 Punjab,Distributed energy regulatory framework,ind,0.0
 Punjab,Clean energy rural electrification,ind,0.04
 Punjab,Energy access policies,ind,0.0
 Punjab,Policy barriers,ind,0.004
-Punjab,Clean energy installed capacity,ind,0.035
+Punjab,Clean energy installed capacity,ind,0.039
 Punjab,Growth rate of installed capacity,ind,0.0
 Punjab,Clean energy electricity generation,ind,0.003
 Punjab,Growth rate of electricity generation,ind,0.0
@@ -2737,16 +2667,15 @@ Punjab,Corporate energy efficiency initiatives,ind,0.015
 Punjab,Corporate emission reduction policies,ind,0.004
 Punjab,Capacity building – env. business training,ind,0.038
 Punjab,Capacity building – think tanks,ind,0.0
-Punjab,State rank,rank,8.0
 Rajasthan,Score,score,1.263
-Rajasthan,Enabling framework,param,1.347
+Rajasthan,Enabling framework,param,1.371
 Rajasthan,Clean energy policies,ind,0.249
 Rajasthan,Power sector structure,ind,0.097
 Rajasthan,Distributed energy regulatory framework,ind,0.0
 Rajasthan,Clean energy rural electrification,ind,0.04
 Rajasthan,Energy access policies,ind,0.0
 Rajasthan,Policy barriers,ind,0.004
-Rajasthan,Clean energy installed capacity,ind,0.079
+Rajasthan,Clean energy installed capacity,ind,0.086
 Rajasthan,Growth rate of installed capacity,ind,0.0
 Rajasthan,Clean energy electricity generation,ind,0.012
 Rajasthan,Growth rate of electricity generation,ind,0.013
@@ -2762,8 +2691,8 @@ Rajasthan,Average diesel prices,ind,0.0
 Rajasthan,Growth rate of power demand,ind,0.0
 Rajasthan,Electrification rate,ind,0.002
 Rajasthan,Population using solid fuels for cooking,ind,0.0
-Rajasthan,Financing and Investments,param,1.173
-Rajasthan,Clean energy investments,ind,0.236
+Rajasthan,Financing and Investments,param,1.15
+Rajasthan,Clean energy investments,ind,0.229
 Rajasthan,Growth rate of clean energy investments,ind,0.023
 Rajasthan,Asset finance investments,ind,0.0
 Rajasthan,Corporate finance investments,ind,0.0
@@ -2796,16 +2725,15 @@ Rajasthan,Corporate energy efficiency initiatives,ind,0.015
 Rajasthan,Corporate emission reduction policies,ind,0.004
 Rajasthan,Capacity building – env. business training,ind,0.038
 Rajasthan,Capacity building – think tanks,ind,0.0
-Rajasthan,State rank,rank,5.0
 Tamil Nadu,Score,score,1.432
-Tamil Nadu,Enabling framework,param,1.47
+Tamil Nadu,Enabling framework,param,1.497
 Tamil Nadu,Clean energy policies,ind,0.249
 Tamil Nadu,Power sector structure,ind,0.092
 Tamil Nadu,Distributed energy regulatory framework,ind,0.0
 Tamil Nadu,Clean energy rural electrification,ind,0.04
 Tamil Nadu,Energy access policies,ind,0.0
 Tamil Nadu,Policy barriers,ind,0.004
-Tamil Nadu,Clean energy installed capacity,ind,0.107
+Tamil Nadu,Clean energy installed capacity,ind,0.116
 Tamil Nadu,Growth rate of installed capacity,ind,0.0
 Tamil Nadu,Clean energy electricity generation,ind,0.03
 Tamil Nadu,Growth rate of electricity generation,ind,0.0
@@ -2855,7 +2783,6 @@ Tamil Nadu,Corporate energy efficiency initiatives,ind,0.015
 Tamil Nadu,Corporate emission reduction policies,ind,0.004
 Tamil Nadu,Capacity building – env. business training,ind,0.038
 Tamil Nadu,Capacity building – think tanks,ind,0.038
-Tamil Nadu,State rank,rank,2.0
 Uttar Pradesh,Score,score,0.956
 Uttar Pradesh,Enabling framework,param,1.164
 Uttar Pradesh,Clean energy policies,ind,0.249
@@ -2914,9 +2841,8 @@ Uttar Pradesh,Corporate energy efficiency initiatives,ind,0.015
 Uttar Pradesh,Corporate emission reduction policies,ind,0.004
 Uttar Pradesh,Capacity building – env. business training,ind,0.038
 Uttar Pradesh,Capacity building – think tanks,ind,0.0
-Uttar Pradesh,State rank,rank,10.0
 West Bengal,Score,score,1.043
-West Bengal,Enabling framework,param,1.311
+West Bengal,Enabling framework,param,1.314
 West Bengal,Clean energy policies,ind,0.249
 West Bengal,Power sector structure,ind,0.143
 West Bengal,Distributed energy regulatory framework,ind,0.0
@@ -2973,16 +2899,15 @@ West Bengal,Corporate energy efficiency initiatives,ind,0.015
 West Bengal,Corporate emission reduction policies,ind,0.004
 West Bengal,Capacity building – env. business training,ind,0.038
 West Bengal,Capacity building – think tanks,ind,0.0
-West Bengal,State rank,rank,7.0
 Jamaica,Score,score,0.802
-Jamaica,Enabling framework,param,0.996
+Jamaica,Enabling framework,param,1.0
 Jamaica,Clean energy policies,ind,0.124
 Jamaica,Power sector structure,ind,0.062
 Jamaica,Distributed energy regulatory framework,ind,0.0
 Jamaica,Clean energy rural electrification,ind,0.04
 Jamaica,Energy access policies,ind,0.0
 Jamaica,Policy barriers,ind,0.004
-Jamaica,Clean energy installed capacity,ind,0.018
+Jamaica,Clean energy installed capacity,ind,0.02
 Jamaica,Growth rate of installed capacity,ind,0.0
 Jamaica,Clean energy electricity generation,ind,0.01
 Jamaica,Growth rate of electricity generation,ind,0.0
@@ -3032,17 +2957,15 @@ Jamaica,Corporate energy efficiency initiatives,ind,0.0
 Jamaica,Corporate emission reduction policies,ind,0.0
 Jamaica,Capacity building – env. business training,ind,0.0
 Jamaica,Capacity building – think tanks,ind,0.0
-Jamaica,Global rank,rank,39.0
-Jamaica,Regional rank,rank,18.0
 Kenya,Score,score,1.688
-Kenya,Enabling framework,param,1.459
+Kenya,Enabling framework,param,1.564
 Kenya,Clean energy policies,ind,0.139
-Kenya,Power sector structure,ind,0.055
-Kenya,Distributed energy regulatory framework,ind,0.067
+Kenya,Power sector structure,ind,0.064
+Kenya,Distributed energy regulatory framework,ind,0.08
 Kenya,Clean energy rural electrification,ind,0.04
-Kenya,Energy access policies,ind,0.06
+Kenya,Energy access policies,ind,0.07
 Kenya,Policy barriers,ind,0.013
-Kenya,Clean energy installed capacity,ind,0.059
+Kenya,Clean energy installed capacity,ind,0.064
 Kenya,Growth rate of installed capacity,ind,0.0
 Kenya,Clean energy electricity generation,ind,0.048
 Kenya,Growth rate of electricity generation,ind,0.004
@@ -3078,7 +3001,7 @@ Kenya,Value chains by clean energy sector,ind,0.079
 Kenya,Distributed clean energy value chains by sector,ind,0.131
 Kenya,Clean energy service providers,ind,0.142
 Kenya,Distributed clean energy service providers,ind,0.107
-Kenya,GHG management,param,1.731
+Kenya,GHG management,param,1.743
 Kenya,Carbon offsets historical activity,ind,0.15
 Kenya,CDM risk,ind,0.038
 Kenya,Carbon offsets future potential,ind,0.023
@@ -3092,35 +3015,33 @@ Kenya,Corporate energy efficiency initiatives,ind,0.004
 Kenya,Corporate emission reduction policies,ind,0.0
 Kenya,Capacity building – env. business training,ind,0.038
 Kenya,Capacity building – think tanks,ind,0.0
-Kenya,Global rank,rank,7.0
-Kenya,Regional rank,rank,2.0
 Sri Lanka,Score,score,0.962
-Sri Lanka,Enabling framework,param,1.07
-Sri Lanka,Clean energy policies,ind,0.138
-Sri Lanka,Power sector structure,ind,0.085
+Sri Lanka,Enabling framework,param,1.041
+Sri Lanka,Clean energy policies,ind,0.092
+Sri Lanka,Power sector structure,ind,0.07
 Sri Lanka,Distributed energy regulatory framework,ind,0.0
 Sri Lanka,Clean energy rural electrification,ind,0.0
-Sri Lanka,Energy access policies,ind,0.0
+Sri Lanka,Energy access policies,ind,0.008
 Sri Lanka,Policy barriers,ind,0.011
-Sri Lanka,Clean energy installed capacity,ind,0.047
+Sri Lanka,Clean energy installed capacity,ind,0.051
 Sri Lanka,Growth rate of installed capacity,ind,0.0
 Sri Lanka,Clean energy electricity generation,ind,0.007
 Sri Lanka,Growth rate of electricity generation,ind,0.097
 Sri Lanka,Biofuels production,ind,0.0
 Sri Lanka,Growth rate biofuels production,ind,0.0
 Sri Lanka,Average electricity spot prices,ind,0.0
-Sri Lanka,Average retail electricity prices,ind,0.04
+Sri Lanka,Average retail electricity prices,ind,0.024
 Sri Lanka,Average residential electricity prices,ind,0.0
 Sri Lanka,Average commercial electricity prices,ind,0.0
 Sri Lanka,Average industrial electricity prices,ind,0.0
-Sri Lanka,Average kerosene prices,ind,0.0
-Sri Lanka,Average diesel prices,ind,0.0
+Sri Lanka,Average kerosene prices,ind,0.02
+Sri Lanka,Average diesel prices,ind,0.016
 Sri Lanka,Growth rate of power demand,ind,0.0
 Sri Lanka,Electrification rate,ind,0.002
-Sri Lanka,Population using solid fuels for cooking,ind,0.0
-Sri Lanka,Financing and Investments,param,0.253
-Sri Lanka,Clean energy investments,ind,0.0
-Sri Lanka,Growth rate of clean energy investments,ind,0.0
+Sri Lanka,Population using solid fuels for cooking,ind,0.015
+Sri Lanka,Financing and Investments,param,0.368
+Sri Lanka,Clean energy investments,ind,0.026
+Sri Lanka,Growth rate of clean energy investments,ind,0.008
 Sri Lanka,Asset finance investments,ind,0.0
 Sri Lanka,Corporate finance investments,ind,0.0
 Sri Lanka,VC/PE investments,ind,0.0
@@ -3132,11 +3053,11 @@ Sri Lanka,Green micro-borrowers,ind,0.001
 Sri Lanka,Average cost of green micro debt,ind,0.004
 Sri Lanka,Average cost of debt,ind,0.043
 Sri Lanka,Swap rate,ind,0.023
-Sri Lanka,Value chains,param,2.98
-Sri Lanka,Financial institutions in clean energy,ind,0.15
-Sri Lanka,Value chains by clean energy sector,ind,0.128
+Sri Lanka,Value chains,param,2.174
+Sri Lanka,Financial institutions in clean energy,ind,0.12
+Sri Lanka,Value chains by clean energy sector,ind,0.071
 Sri Lanka,Distributed clean energy value chains by sector,ind,0.0
-Sri Lanka,Clean energy service providers,ind,0.169
+Sri Lanka,Clean energy service providers,ind,0.135
 Sri Lanka,Distributed clean energy service providers,ind,0.0
 Sri Lanka,GHG management,param,0.077
 Sri Lanka,Carbon offsets historical activity,ind,0.0
@@ -3152,17 +3073,15 @@ Sri Lanka,Corporate energy efficiency initiatives,ind,0.007
 Sri Lanka,Corporate emission reduction policies,ind,0.0
 Sri Lanka,Capacity building – env. business training,ind,0.0
 Sri Lanka,Capacity building – think tanks,ind,0.0
-Sri Lanka,Global rank,rank,34.0
-Sri Lanka,Regional rank,rank,9.0
 Liberia,Score,score,0.902
-Liberia,Enabling framework,param,1.392
+Liberia,Enabling framework,param,1.439
 Liberia,Clean energy policies,ind,0.06
 Liberia,Power sector structure,ind,0.025
 Liberia,Distributed energy regulatory framework,ind,0.044
 Liberia,Clean energy rural electrification,ind,0.04
-Liberia,Energy access policies,ind,0.034
+Liberia,Energy access policies,ind,0.042
 Liberia,Policy barriers,ind,0.004
-Liberia,Clean energy installed capacity,ind,0.04
+Liberia,Clean energy installed capacity,ind,0.043
 Liberia,Growth rate of installed capacity,ind,0.0
 Liberia,Clean energy electricity generation,ind,0.013
 Liberia,Growth rate of electricity generation,ind,0.0
@@ -3178,8 +3097,8 @@ Liberia,Average diesel prices,ind,0.019
 Liberia,Growth rate of power demand,ind,0.0
 Liberia,Electrification rate,ind,0.12
 Liberia,Population using solid fuels for cooking,ind,0.02
-Liberia,Financing and Investments,param,0.521
-Liberia,Clean energy investments,ind,0.001
+Liberia,Financing and Investments,param,0.517
+Liberia,Clean energy investments,ind,0.0
 Liberia,Growth rate of clean energy investments,ind,0.0
 Liberia,Asset finance investments,ind,0.0
 Liberia,Corporate finance investments,ind,0.0
@@ -3212,8 +3131,6 @@ Liberia,Corporate energy efficiency initiatives,ind,0.0
 Liberia,Corporate emission reduction policies,ind,0.0
 Liberia,Capacity building – env. business training,ind,0.0
 Liberia,Capacity building – think tanks,ind,0.0
-Liberia,Global rank,rank,38.0
-Liberia,Regional rank,rank,12.0
 Myanmar,Score,score,1.004
 Myanmar,Enabling framework,param,0.647
 Myanmar,Clean energy policies,ind,0.017
@@ -3252,11 +3169,11 @@ Myanmar,Green micro-borrowers,ind,0.0
 Myanmar,Average cost of green micro debt,ind,0.0
 Myanmar,Average cost of debt,ind,0.042
 Myanmar,Swap rate,ind,0.035
-Myanmar,Value chains,param,3.735
-Myanmar,Financial institutions in clean energy,ind,0.15
-Myanmar,Value chains by clean energy sector,ind,0.063
-Myanmar,Distributed clean energy value chains by sector,ind,0.112
-Myanmar,Clean energy service providers,ind,0.128
+Myanmar,Value chains,param,2.221
+Myanmar,Financial institutions in clean energy,ind,0.03
+Myanmar,Value chains by clean energy sector,ind,0.02
+Myanmar,Distributed clean energy value chains by sector,ind,0.094
+Myanmar,Clean energy service providers,ind,0.082
 Myanmar,Distributed clean energy service providers,ind,0.107
 Myanmar,GHG management,param,0.711
 Myanmar,Carbon offsets historical activity,ind,0.0
@@ -3272,17 +3189,15 @@ Myanmar,Corporate energy efficiency initiatives,ind,0.0
 Myanmar,Corporate emission reduction policies,ind,0.0
 Myanmar,Capacity building – env. business training,ind,0.038
 Myanmar,Capacity building – think tanks,ind,0.038
-Myanmar,Global rank,rank,32.0
-Myanmar,Regional rank,rank,8.0
 Malawi,Score,score,0.911
-Malawi,Enabling framework,param,1.188
+Malawi,Enabling framework,param,1.207
 Malawi,Clean energy policies,ind,0.032
 Malawi,Power sector structure,ind,0.022
 Malawi,Distributed energy regulatory framework,ind,0.073
 Malawi,Clean energy rural electrification,ind,0.04
 Malawi,Energy access policies,ind,0.055
 Malawi,Policy barriers,ind,0.007
-Malawi,Clean energy installed capacity,ind,0.075
+Malawi,Clean energy installed capacity,ind,0.081
 Malawi,Growth rate of installed capacity,ind,0.0
 Malawi,Clean energy electricity generation,ind,0.041
 Malawi,Growth rate of electricity generation,ind,0.0
@@ -3298,8 +3213,8 @@ Malawi,Average diesel prices,ind,0.028
 Malawi,Growth rate of power demand,ind,0.002
 Malawi,Electrification rate,ind,0.021
 Malawi,Population using solid fuels for cooking,ind,0.02
-Malawi,Financing and Investments,param,0.132
-Malawi,Clean energy investments,ind,0.003
+Malawi,Financing and Investments,param,0.123
+Malawi,Clean energy investments,ind,0.0
 Malawi,Growth rate of clean energy investments,ind,0.0
 Malawi,Asset finance investments,ind,0.0
 Malawi,Corporate finance investments,ind,0.0
@@ -3332,20 +3247,18 @@ Malawi,Corporate energy efficiency initiatives,ind,0.0
 Malawi,Corporate emission reduction policies,ind,0.0
 Malawi,Capacity building – env. business training,ind,0.038
 Malawi,Capacity building – think tanks,ind,0.038
-Malawi,Global rank,rank,37.0
-Malawi,Regional rank,rank,11.0
 Mexico,Score,score,1.566
-Mexico,Enabling framework,param,0.889
+Mexico,Enabling framework,param,0.898
 Mexico,Clean energy policies,ind,0.149
 Mexico,Power sector structure,ind,0.057
 Mexico,Distributed energy regulatory framework,ind,0.0
 Mexico,Clean energy rural electrification,ind,0.04
 Mexico,Energy access policies,ind,0.0
 Mexico,Policy barriers,ind,0.005
-Mexico,Clean energy installed capacity,ind,0.014
+Mexico,Clean energy installed capacity,ind,0.015
 Mexico,Growth rate of installed capacity,ind,0.0
 Mexico,Clean energy electricity generation,ind,0.008
-Mexico,Growth rate of electricity generation,ind,0.016
+Mexico,Growth rate of electricity generation,ind,0.018
 Mexico,Biofuels production,ind,0.0
 Mexico,Growth rate biofuels production,ind,0.0
 Mexico,Average electricity spot prices,ind,0.0
@@ -3392,15 +3305,13 @@ Mexico,Corporate energy efficiency initiatives,ind,0.011
 Mexico,Corporate emission reduction policies,ind,0.01
 Mexico,Capacity building – env. business training,ind,0.038
 Mexico,Capacity building – think tanks,ind,0.038
-Mexico,Global rank,rank,9.0
-Mexico,Regional rank,rank,4.0
 Mozambique,Score,score,0.794
-Mozambique,Enabling framework,param,0.821
+Mozambique,Enabling framework,param,0.844
 Mozambique,Clean energy policies,ind,0.084
 Mozambique,Power sector structure,ind,0.033
 Mozambique,Distributed energy regulatory framework,ind,0.027
 Mozambique,Clean energy rural electrification,ind,0.04
-Mozambique,Energy access policies,ind,0.055
+Mozambique,Energy access policies,ind,0.064
 Mozambique,Policy barriers,ind,0.004
 Mozambique,Clean energy installed capacity,ind,0.006
 Mozambique,Growth rate of installed capacity,ind,0.0
@@ -3432,10 +3343,10 @@ Mozambique,Green micro-borrowers,ind,0.0
 Mozambique,Average cost of green micro debt,ind,0.0
 Mozambique,Average cost of debt,ind,0.035
 Mozambique,Swap rate,ind,0.042
-Mozambique,Value chains,param,1.66
+Mozambique,Value chains,param,1.561
 Mozambique,Financial institutions in clean energy,ind,0.03
-Mozambique,Value chains by clean energy sector,ind,0.02
-Mozambique,Distributed clean energy value chains by sector,ind,0.112
+Mozambique,Value chains by clean energy sector,ind,0.024
+Mozambique,Distributed clean energy value chains by sector,ind,0.094
 Mozambique,Clean energy service providers,ind,0.022
 Mozambique,Distributed clean energy service providers,ind,0.064
 Mozambique,GHG management,param,0.819
@@ -3452,10 +3363,8 @@ Mozambique,Corporate energy efficiency initiatives,ind,0.0
 Mozambique,Corporate emission reduction policies,ind,0.0
 Mozambique,Capacity building – env. business training,ind,0.0
 Mozambique,Capacity building – think tanks,ind,0.038
-Mozambique,Global rank,rank,40.0
-Mozambique,Regional rank,rank,13.0
 Nigeria,Score,score,1.232
-Nigeria,Enabling framework,param,1.171
+Nigeria,Enabling framework,param,1.188
 Nigeria,Clean energy policies,ind,0.096
 Nigeria,Power sector structure,ind,0.117
 Nigeria,Distributed energy regulatory framework,ind,0.071
@@ -3512,17 +3421,15 @@ Nigeria,Corporate energy efficiency initiatives,ind,0.001
 Nigeria,Corporate emission reduction policies,ind,0.001
 Nigeria,Capacity building – env. business training,ind,0.0
 Nigeria,Capacity building – think tanks,ind,0.0
-Nigeria,Global rank,rank,20.0
-Nigeria,Regional rank,rank,4.0
 Nicaragua,Score,score,1.387
-Nicaragua,Enabling framework,param,1.556
+Nicaragua,Enabling framework,param,1.377
 Nicaragua,Clean energy policies,ind,0.061
 Nicaragua,Power sector structure,ind,0.114
 Nicaragua,Distributed energy regulatory framework,ind,0.0
 Nicaragua,Clean energy rural electrification,ind,0.04
 Nicaragua,Energy access policies,ind,0.0
 Nicaragua,Policy barriers,ind,0.029
-Nicaragua,Clean energy installed capacity,ind,0.16
+Nicaragua,Clean energy installed capacity,ind,0.089
 Nicaragua,Growth rate of installed capacity,ind,0.0
 Nicaragua,Clean energy electricity generation,ind,0.068
 Nicaragua,Growth rate of electricity generation,ind,0.031
@@ -3572,17 +3479,15 @@ Nicaragua,Corporate energy efficiency initiatives,ind,0.0
 Nicaragua,Corporate emission reduction policies,ind,0.0
 Nicaragua,Capacity building – env. business training,ind,0.038
 Nicaragua,Capacity building – think tanks,ind,0.038
-Nicaragua,Global rank,rank,14.0
-Nicaragua,Regional rank,rank,7.0
 Nepal,Score,score,1.327
-Nepal,Enabling framework,param,1.337
+Nepal,Enabling framework,param,1.392
 Nepal,Clean energy policies,ind,0.085
 Nepal,Power sector structure,ind,0.045
 Nepal,Distributed energy regulatory framework,ind,0.047
 Nepal,Clean energy rural electrification,ind,0.04
-Nepal,Energy access policies,ind,0.048
+Nepal,Energy access policies,ind,0.056
 Nepal,Policy barriers,ind,0.002
-Nepal,Clean energy installed capacity,ind,0.106
+Nepal,Clean energy installed capacity,ind,0.116
 Nepal,Growth rate of installed capacity,ind,0.0
 Nepal,Clean energy electricity generation,ind,0.074
 Nepal,Growth rate of electricity generation,ind,0.006
@@ -3612,11 +3517,11 @@ Nepal,Green micro-borrowers,ind,0.008
 Nepal,Average cost of green micro debt,ind,0.009
 Nepal,Average cost of debt,ind,0.068
 Nepal,Swap rate,ind,0.044
-Nepal,Value chains,param,2.878
+Nepal,Value chains,param,2.653
 Nepal,Financial institutions in clean energy,ind,0.12
 Nepal,Value chains by clean energy sector,ind,0.02
-Nepal,Distributed clean energy value chains by sector,ind,0.131
-Nepal,Clean energy service providers,ind,0.075
+Nepal,Distributed clean energy value chains by sector,ind,0.112
+Nepal,Clean energy service providers,ind,0.06
 Nepal,Distributed clean energy service providers,ind,0.086
 Nepal,GHG management,param,1.265
 Nepal,Carbon offsets historical activity,ind,0.075
@@ -3632,17 +3537,15 @@ Nepal,Corporate energy efficiency initiatives,ind,0.0
 Nepal,Corporate emission reduction policies,ind,0.0
 Nepal,Capacity building – env. business training,ind,0.038
 Nepal,Capacity building – think tanks,ind,0.038
-Nepal,Global rank,rank,18.0
-Nepal,Regional rank,rank,7.0
 Panama,Score,score,1.112
-Panama,Enabling framework,param,1.379
+Panama,Enabling framework,param,1.392
 Panama,Clean energy policies,ind,0.153
 Panama,Power sector structure,ind,0.153
 Panama,Distributed energy regulatory framework,ind,0.0
 Panama,Clean energy rural electrification,ind,0.04
 Panama,Energy access policies,ind,0.0
 Panama,Policy barriers,ind,0.005
-Panama,Clean energy installed capacity,ind,0.021
+Panama,Clean energy installed capacity,ind,0.023
 Panama,Growth rate of installed capacity,ind,0.0
 Panama,Clean energy electricity generation,ind,0.014
 Panama,Growth rate of electricity generation,ind,0.052
@@ -3692,17 +3595,15 @@ Panama,Corporate energy efficiency initiatives,ind,0.0
 Panama,Corporate emission reduction policies,ind,0.004
 Panama,Capacity building – env. business training,ind,0.038
 Panama,Capacity building – think tanks,ind,0.038
-Panama,Global rank,rank,28.0
-Panama,Regional rank,rank,13.0
 Peru,Score,score,1.508
-Peru,Enabling framework,param,1.416
+Peru,Enabling framework,param,1.398
 Peru,Clean energy policies,ind,0.205
 Peru,Power sector structure,ind,0.155
 Peru,Distributed energy regulatory framework,ind,0.0
 Peru,Clean energy rural electrification,ind,0.04
 Peru,Energy access policies,ind,0.0
 Peru,Policy barriers,ind,0.04
-Peru,Clean energy installed capacity,ind,0.03
+Peru,Clean energy installed capacity,ind,0.022
 Peru,Growth rate of installed capacity,ind,0.0
 Peru,Clean energy electricity generation,ind,0.014
 Peru,Growth rate of electricity generation,ind,0.016
@@ -3752,8 +3653,6 @@ Peru,Corporate energy efficiency initiatives,ind,0.002
 Peru,Corporate emission reduction policies,ind,0.001
 Peru,Capacity building – env. business training,ind,0.038
 Peru,Capacity building – think tanks,ind,0.038
-Peru,Global rank,rank,10.0
-Peru,Regional rank,rank,5.0
 Pakistan,Score,score,1.385
 Pakistan,Enabling framework,param,1.211
 Pakistan,Clean energy policies,ind,0.114
@@ -3792,9 +3691,9 @@ Pakistan,Green micro-borrowers,ind,0.0
 Pakistan,Average cost of green micro debt,ind,0.004
 Pakistan,Average cost of debt,ind,0.045
 Pakistan,Swap rate,ind,0.037
-Pakistan,Value chains,param,4.289
+Pakistan,Value chains,param,4.131
 Pakistan,Financial institutions in clean energy,ind,0.15
-Pakistan,Value chains by clean energy sector,ind,0.095
+Pakistan,Value chains by clean energy sector,ind,0.071
 Pakistan,Distributed clean energy value chains by sector,ind,0.15
 Pakistan,Clean energy service providers,ind,0.12
 Pakistan,Distributed clean energy service providers,ind,0.129
@@ -3812,8 +3711,6 @@ Pakistan,Corporate energy efficiency initiatives,ind,0.008
 Pakistan,Corporate emission reduction policies,ind,0.005
 Pakistan,Capacity building – env. business training,ind,0.0
 Pakistan,Capacity building – think tanks,ind,0.038
-Pakistan,Global rank,rank,15.0
-Pakistan,Regional rank,rank,5.0
 Paraguay,Score,score,0.59
 Paraguay,Enabling framework,param,0.668
 Paraguay,Clean energy policies,ind,0.037
@@ -3872,17 +3769,15 @@ Paraguay,Corporate energy efficiency initiatives,ind,0.0
 Paraguay,Corporate emission reduction policies,ind,0.0
 Paraguay,Capacity building – env. business training,ind,0.038
 Paraguay,Capacity building – think tanks,ind,0.038
-Paraguay,Global rank,rank,50.0
-Paraguay,Regional rank,rank,22.0
 Rwanda,Score,score,1.154
-Rwanda,Enabling framework,param,1.614
+Rwanda,Enabling framework,param,1.721
 Rwanda,Clean energy policies,ind,0.089
 Rwanda,Power sector structure,ind,0.053
 Rwanda,Distributed energy regulatory framework,ind,0.044
 Rwanda,Clean energy rural electrification,ind,0.04
 Rwanda,Energy access policies,ind,0.056
 Rwanda,Policy barriers,ind,0.02
-Rwanda,Clean energy installed capacity,ind,0.144
+Rwanda,Clean energy installed capacity,ind,0.157
 Rwanda,Growth rate of installed capacity,ind,0.0
 Rwanda,Clean energy electricity generation,ind,0.083
 Rwanda,Growth rate of electricity generation,ind,0.0
@@ -3893,7 +3788,7 @@ Rwanda,Average retail electricity prices,ind,0.053
 Rwanda,Average residential electricity prices,ind,0.0
 Rwanda,Average commercial electricity prices,ind,0.0
 Rwanda,Average industrial electricity prices,ind,0.0
-Rwanda,Average kerosene prices,ind,0.0
+Rwanda,Average kerosene prices,ind,0.03
 Rwanda,Average diesel prices,ind,0.023
 Rwanda,Growth rate of power demand,ind,0.009
 Rwanda,Electrification rate,ind,0.011
@@ -3932,17 +3827,15 @@ Rwanda,Corporate energy efficiency initiatives,ind,0.0
 Rwanda,Corporate emission reduction policies,ind,0.0
 Rwanda,Capacity building – env. business training,ind,0.0
 Rwanda,Capacity building – think tanks,ind,0.0
-Rwanda,Global rank,rank,24.0
-Rwanda,Regional rank,rank,7.0
 Sierra Leone,Score,score,0.736
-Sierra Leone,Enabling framework,param,0.966
+Sierra Leone,Enabling framework,param,0.984
 Sierra Leone,Clean energy policies,ind,0.0
 Sierra Leone,Power sector structure,ind,0.032
 Sierra Leone,Distributed energy regulatory framework,ind,0.013
 Sierra Leone,Clean energy rural electrification,ind,0.04
 Sierra Leone,Energy access policies,ind,0.042
 Sierra Leone,Policy barriers,ind,0.002
-Sierra Leone,Clean energy installed capacity,ind,0.082
+Sierra Leone,Clean energy installed capacity,ind,0.089
 Sierra Leone,Growth rate of installed capacity,ind,0.0
 Sierra Leone,Clean energy electricity generation,ind,0.032
 Sierra Leone,Growth rate of electricity generation,ind,0.0
@@ -3992,15 +3885,13 @@ Sierra Leone,Corporate energy efficiency initiatives,ind,0.0
 Sierra Leone,Corporate emission reduction policies,ind,0.0
 Sierra Leone,Capacity building – env. business training,ind,0.0
 Sierra Leone,Capacity building – think tanks,ind,0.0
-Sierra Leone,Global rank,rank,44.0
-Sierra Leone,Regional rank,rank,16.0
 Senegal,Score,score,1.06
-Senegal,Enabling framework,param,1.132
+Senegal,Enabling framework,param,1.153
 Senegal,Clean energy policies,ind,0.091
 Senegal,Power sector structure,ind,0.059
 Senegal,Distributed energy regulatory framework,ind,0.067
 Senegal,Clean energy rural electrification,ind,0.04
-Senegal,Energy access policies,ind,0.061
+Senegal,Energy access policies,ind,0.07
 Senegal,Policy barriers,ind,0.003
 Senegal,Clean energy installed capacity,ind,0.0
 Senegal,Growth rate of installed capacity,ind,0.0
@@ -4018,7 +3909,7 @@ Senegal,Average diesel prices,ind,0.023
 Senegal,Growth rate of power demand,ind,0.002
 Senegal,Electrification rate,ind,0.007
 Senegal,Population using solid fuels for cooking,ind,0.011
-Senegal,Financing and Investments,param,0.723
+Senegal,Financing and Investments,param,0.139
 Senegal,Clean energy investments,ind,0.018
 Senegal,Growth rate of clean energy investments,ind,0.0
 Senegal,Asset finance investments,ind,0.0
@@ -4031,7 +3922,7 @@ Senegal,Green micro-loans,ind,0.0
 Senegal,Green micro-borrowers,ind,0.0
 Senegal,Average cost of green micro debt,ind,0.005
 Senegal,Average cost of debt,ind,0.0
-Senegal,Swap rate,ind,0.175
+Senegal,Swap rate,ind,0.0
 Senegal,Value chains,param,2.158
 Senegal,Financial institutions in clean energy,ind,0.06
 Senegal,Value chains by clean energy sector,ind,0.036
@@ -4052,17 +3943,15 @@ Senegal,Corporate energy efficiency initiatives,ind,0.0
 Senegal,Corporate emission reduction policies,ind,0.0
 Senegal,Capacity building – env. business training,ind,0.0
 Senegal,Capacity building – think tanks,ind,0.0
-Senegal,Global rank,rank,30.0
-Senegal,Regional rank,rank,9.0
 Suriname,Score,score,0.303
-Suriname,Enabling framework,param,0.209
+Suriname,Enabling framework,param,0.218
 Suriname,Clean energy policies,ind,0.0
 Suriname,Power sector structure,ind,0.06
 Suriname,Distributed energy regulatory framework,ind,0.0
 Suriname,Clean energy rural electrification,ind,0.0
 Suriname,Energy access policies,ind,0.0
 Suriname,Policy barriers,ind,0.004
-Suriname,Clean energy installed capacity,ind,0.0
+Suriname,Clean energy installed capacity,ind,0.004
 Suriname,Growth rate of installed capacity,ind,0.0
 Suriname,Clean energy electricity generation,ind,0.0
 Suriname,Growth rate of electricity generation,ind,0.0
@@ -4112,17 +4001,15 @@ Suriname,Corporate energy efficiency initiatives,ind,0.0
 Suriname,Corporate emission reduction policies,ind,0.0
 Suriname,Capacity building – env. business training,ind,0.038
 Suriname,Capacity building – think tanks,ind,0.0
-Suriname,Global rank,rank,55.0
-Suriname,Regional rank,rank,26.0
 El Salvador,Score,score,1.117
-El Salvador,Enabling framework,param,1.313
+El Salvador,Enabling framework,param,1.33
 El Salvador,Clean energy policies,ind,0.059
 El Salvador,Power sector structure,ind,0.164
 El Salvador,Distributed energy regulatory framework,ind,0.0
 El Salvador,Clean energy rural electrification,ind,0.04
 El Salvador,Energy access policies,ind,0.0
 El Salvador,Policy barriers,ind,0.029
-El Salvador,Clean energy installed capacity,ind,0.057
+El Salvador,Clean energy installed capacity,ind,0.063
 El Salvador,Growth rate of installed capacity,ind,0.0
 El Salvador,Clean energy electricity generation,ind,0.049
 El Salvador,Growth rate of electricity generation,ind,0.005
@@ -4172,10 +4059,8 @@ El Salvador,Corporate energy efficiency initiatives,ind,0.0
 El Salvador,Corporate emission reduction policies,ind,0.0
 El Salvador,Capacity building – env. business training,ind,0.038
 El Salvador,Capacity building – think tanks,ind,0.038
-El Salvador,Global rank,rank,27.0
-El Salvador,Regional rank,rank,12.0
 Tajikistan,Score,score,0.481
-Tajikistan,Enabling framework,param,0.45
+Tajikistan,Enabling framework,param,0.451
 Tajikistan,Clean energy policies,ind,0.09
 Tajikistan,Power sector structure,ind,0.051
 Tajikistan,Distributed energy regulatory framework,ind,0.0
@@ -4232,8 +4117,6 @@ Tajikistan,Corporate energy efficiency initiatives,ind,0.0
 Tajikistan,Corporate emission reduction policies,ind,0.0
 Tajikistan,Capacity building – env. business training,ind,0.038
 Tajikistan,Capacity building – think tanks,ind,0.038
-Tajikistan,Global rank,rank,53.0
-Tajikistan,Regional rank,rank,10.0
 Trinidad and Tobago,Score,score,0.539
 Trinidad and Tobago,Enabling framework,param,0.24
 Trinidad and Tobago,Clean energy policies,ind,0.0
@@ -4292,17 +4175,15 @@ Trinidad and Tobago,Corporate energy efficiency initiatives,ind,0.0
 Trinidad and Tobago,Corporate emission reduction policies,ind,0.0
 Trinidad and Tobago,Capacity building – env. business training,ind,0.038
 Trinidad and Tobago,Capacity building – think tanks,ind,0.0
-Trinidad and Tobago,Global rank,rank,51.0
-Trinidad and Tobago,Regional rank,rank,23.0
 Tanzania,Score,score,1.208
-Tanzania,Enabling framework,param,1.27
+Tanzania,Enabling framework,param,1.317
 Tanzania,Clean energy policies,ind,0.087
 Tanzania,Power sector structure,ind,0.044
-Tanzania,Distributed energy regulatory framework,ind,0.093
+Tanzania,Distributed energy regulatory framework,ind,0.111
 Tanzania,Clean energy rural electrification,ind,0.04
 Tanzania,Energy access policies,ind,0.063
 Tanzania,Policy barriers,ind,0.02
-Tanzania,Clean energy installed capacity,ind,0.009
+Tanzania,Clean energy installed capacity,ind,0.01
 Tanzania,Growth rate of installed capacity,ind,0.0
 Tanzania,Clean energy electricity generation,ind,0.005
 Tanzania,Growth rate of electricity generation,ind,0.0
@@ -4352,17 +4233,15 @@ Tanzania,Corporate energy efficiency initiatives,ind,0.0
 Tanzania,Corporate emission reduction policies,ind,0.0
 Tanzania,Capacity building – env. business training,ind,0.0
 Tanzania,Capacity building – think tanks,ind,0.0
-Tanzania,Global rank,rank,21.0
-Tanzania,Regional rank,rank,5.0
 Uganda,Score,score,1.482
-Uganda,Enabling framework,param,1.307
+Uganda,Enabling framework,param,1.321
 Uganda,Clean energy policies,ind,0.063
 Uganda,Power sector structure,ind,0.066
 Uganda,Distributed energy regulatory framework,ind,0.069
 Uganda,Clean energy rural electrification,ind,0.04
 Uganda,Energy access policies,ind,0.055
 Uganda,Policy barriers,ind,0.02
-Uganda,Clean energy installed capacity,ind,0.045
+Uganda,Clean energy installed capacity,ind,0.049
 Uganda,Growth rate of installed capacity,ind,0.001
 Uganda,Clean energy electricity generation,ind,0.04
 Uganda,Growth rate of electricity generation,ind,0.0
@@ -4392,8 +4271,8 @@ Uganda,Green micro-borrowers,ind,0.058
 Uganda,Average cost of green micro debt,ind,0.006
 Uganda,Average cost of debt,ind,0.023
 Uganda,Swap rate,ind,0.022
-Uganda,Value chains,param,3.726
-Uganda,Financial institutions in clean energy,ind,0.09
+Uganda,Value chains,param,3.926
+Uganda,Financial institutions in clean energy,ind,0.12
 Uganda,Value chains by clean energy sector,ind,0.055
 Uganda,Distributed clean energy value chains by sector,ind,0.15
 Uganda,Clean energy service providers,ind,0.135
@@ -4412,17 +4291,15 @@ Uganda,Corporate energy efficiency initiatives,ind,0.0
 Uganda,Corporate emission reduction policies,ind,0.0
 Uganda,Capacity building – env. business training,ind,0.038
 Uganda,Capacity building – think tanks,ind,0.038
-Uganda,Global rank,rank,12.0
-Uganda,Regional rank,rank,3.0
 Uruguay,Score,score,1.751
-Uruguay,Enabling framework,param,1.503
+Uruguay,Enabling framework,param,1.433
 Uruguay,Clean energy policies,ind,0.199
 Uruguay,Power sector structure,ind,0.1
 Uruguay,Distributed energy regulatory framework,ind,0.0
 Uruguay,Clean energy rural electrification,ind,0.04
 Uruguay,Energy access policies,ind,0.0
 Uruguay,Policy barriers,ind,0.006
-Uruguay,Clean energy installed capacity,ind,0.026
+Uruguay,Clean energy installed capacity,ind,0.029
 Uruguay,Growth rate of installed capacity,ind,0.0
 Uruguay,Clean energy electricity generation,ind,0.012
 Uruguay,Growth rate of electricity generation,ind,0.034
@@ -4472,8 +4349,6 @@ Uruguay,Corporate energy efficiency initiatives,ind,0.0
 Uruguay,Corporate emission reduction policies,ind,0.0
 Uruguay,Capacity building – env. business training,ind,0.038
 Uruguay,Capacity building – think tanks,ind,0.038
-Uruguay,Global rank,rank,6.0
-Uruguay,Regional rank,rank,3.0
 Venezuela,Score,score,0.323
 Venezuela,Enabling framework,param,0.107
 Venezuela,Clean energy policies,ind,0.0
@@ -4532,17 +4407,15 @@ Venezuela,Corporate energy efficiency initiatives,ind,0.0
 Venezuela,Corporate emission reduction policies,ind,0.0
 Venezuela,Capacity building – env. business training,ind,0.038
 Venezuela,Capacity building – think tanks,ind,0.038
-Venezuela,Global rank,rank,54.0
-Venezuela,Regional rank,rank,25.0
 Vietnam,Score,score,1.448
-Vietnam,Enabling framework,param,1.317
+Vietnam,Enabling framework,param,1.326
 Vietnam,Clean energy policies,ind,0.129
 Vietnam,Power sector structure,ind,0.122
 Vietnam,Distributed energy regulatory framework,ind,0.0
 Vietnam,Clean energy rural electrification,ind,0.04
 Vietnam,Energy access policies,ind,0.0
 Vietnam,Policy barriers,ind,0.004
-Vietnam,Clean energy installed capacity,ind,0.043
+Vietnam,Clean energy installed capacity,ind,0.047
 Vietnam,Growth rate of installed capacity,ind,0.16
 Vietnam,Clean energy electricity generation,ind,0.0
 Vietnam,Growth rate of electricity generation,ind,0.0
@@ -4572,13 +4445,13 @@ Vietnam,Green micro-borrowers,ind,0.0
 Vietnam,Average cost of green micro debt,ind,0.0
 Vietnam,Average cost of debt,ind,0.052
 Vietnam,Swap rate,ind,0.038
-Vietnam,Value chains,param,3.253
+Vietnam,Value chains,param,2.99
 Vietnam,Financial institutions in clean energy,ind,0.15
-Vietnam,Value chains by clean energy sector,ind,0.197
+Vietnam,Value chains by clean energy sector,ind,0.158
 Vietnam,Distributed clean energy value chains by sector,ind,0.0
 Vietnam,Clean energy service providers,ind,0.141
 Vietnam,Distributed clean energy service providers,ind,0.0
-Vietnam,GHG management,param,1.87
+Vietnam,GHG management,param,1.998
 Vietnam,Carbon offsets historical activity,ind,0.112
 Vietnam,CDM risk,ind,0.038
 Vietnam,Carbon offsets future potential,ind,0.016
@@ -4592,10 +4465,8 @@ Vietnam,Corporate energy efficiency initiatives,ind,0.0
 Vietnam,Corporate emission reduction policies,ind,0.0
 Vietnam,Capacity building – env. business training,ind,0.0
 Vietnam,Capacity building – think tanks,ind,0.038
-Vietnam,Global rank,rank,13.0
-Vietnam,Regional rank,rank,4.0
 South africa,Score,score,1.841
-South africa,Enabling framework,param,0.991
+South africa,Enabling framework,param,0.992
 South africa,Clean energy policies,ind,0.246
 South africa,Power sector structure,ind,0.063
 South africa,Distributed energy regulatory framework,ind,0.0
@@ -4618,23 +4489,23 @@ South africa,Average diesel prices,ind,0.0
 South africa,Growth rate of power demand,ind,0.0
 South africa,Electrification rate,ind,0.002
 South africa,Population using solid fuels for cooking,ind,0.0
-South africa,Financing and Investments,param,1.485
+South africa,Financing and Investments,param,1.531
 South africa,Clean energy investments,ind,0.032
 South africa,Growth rate of clean energy investments,ind,0.184
 South africa,Asset finance investments,ind,0.0
 South africa,Corporate finance investments,ind,0.0
 South africa,VC/PE investments,ind,0.0
 South africa,"Loans, grants, grant programs",ind,0.0
-South africa,Local investments,ind,0.121
+South africa,Local investments,ind,0.135
 South africa,Number of Green MFI,ind,0.0
 South africa,Green micro-loans,ind,0.0
 South africa,Green micro-borrowers,ind,0.0
 South africa,Average cost of green micro debt,ind,0.0
 South africa,Average cost of debt,ind,0.064
 South africa,Swap rate,ind,0.044
-South africa,Value chains,param,3.882
+South africa,Value chains,param,4.342
 South africa,Financial institutions in clean energy,ind,0.188
-South africa,Value chains by clean energy sector,ind,0.207
+South africa,Value chains by clean energy sector,ind,0.276
 South africa,Distributed clean energy value chains by sector,ind,0.0
 South africa,Clean energy service providers,ind,0.188
 South africa,Distributed clean energy service providers,ind,0.0
@@ -4652,17 +4523,15 @@ South africa,Corporate energy efficiency initiatives,ind,0.018
 South africa,Corporate emission reduction policies,ind,0.019
 South africa,Capacity building – env. business training,ind,0.038
 South africa,Capacity building – think tanks,ind,0.038
-South africa,Global rank,rank,4.0
-South africa,Regional rank,rank,1.0
 Zambia,Score,score,1.023
-Zambia,Enabling framework,param,0.909
+Zambia,Enabling framework,param,0.986
 Zambia,Clean energy policies,ind,0.031
-Zambia,Power sector structure,ind,0.049
+Zambia,Power sector structure,ind,0.07
 Zambia,Distributed energy regulatory framework,ind,0.058
 Zambia,Clean energy rural electrification,ind,0.04
-Zambia,Energy access policies,ind,0.056
+Zambia,Energy access policies,ind,0.064
 Zambia,Policy barriers,ind,0.004
-Zambia,Clean energy installed capacity,ind,0.014
+Zambia,Clean energy installed capacity,ind,0.015
 Zambia,Growth rate of installed capacity,ind,0.0
 Zambia,Clean energy electricity generation,ind,0.009
 Zambia,Growth rate of electricity generation,ind,0.003
@@ -4692,11 +4561,11 @@ Zambia,Green micro-borrowers,ind,0.0
 Zambia,Average cost of green micro debt,ind,0.0
 Zambia,Average cost of debt,ind,0.057
 Zambia,Swap rate,ind,0.041
-Zambia,Value chains,param,2.319
+Zambia,Value chains,param,2.395
 Zambia,Financial institutions in clean energy,ind,0.03
-Zambia,Value chains by clean energy sector,ind,0.036
+Zambia,Value chains by clean energy sector,ind,0.039
 Zambia,Distributed clean energy value chains by sector,ind,0.094
-Zambia,Clean energy service providers,ind,0.06
+Zambia,Clean energy service providers,ind,0.068
 Zambia,Distributed clean energy service providers,ind,0.129
 Zambia,GHG management,param,1.34
 Zambia,Carbon offsets historical activity,ind,0.15
@@ -4712,17 +4581,15 @@ Zambia,Corporate energy efficiency initiatives,ind,0.0
 Zambia,Corporate emission reduction policies,ind,0.0
 Zambia,Capacity building – env. business training,ind,0.0
 Zambia,Capacity building – think tanks,ind,0.0
-Zambia,Global rank,rank,31.0
-Zambia,Regional rank,rank,10.0
 Zimbabwe,Score,score,0.755
-Zimbabwe,Enabling framework,param,0.846
+Zimbabwe,Enabling framework,param,0.869
 Zimbabwe,Clean energy policies,ind,0.059
 Zimbabwe,Power sector structure,ind,0.022
 Zimbabwe,Distributed energy regulatory framework,ind,0.053
 Zimbabwe,Clean energy rural electrification,ind,0.04
-Zimbabwe,Energy access policies,ind,0.044
+Zimbabwe,Energy access policies,ind,0.053
 Zimbabwe,Policy barriers,ind,0.006
-Zimbabwe,Clean energy installed capacity,ind,0.011
+Zimbabwe,Clean energy installed capacity,ind,0.012
 Zimbabwe,Growth rate of installed capacity,ind,0.0
 Zimbabwe,Clean energy electricity generation,ind,0.008
 Zimbabwe,Growth rate of electricity generation,ind,0.003
@@ -4772,5 +4639,3 @@ Zimbabwe,Corporate energy efficiency initiatives,ind,0.0
 Zimbabwe,Corporate emission reduction policies,ind,0.0
 Zimbabwe,Capacity building – env. business training,ind,0.0
 Zimbabwe,Capacity building – think tanks,ind,0.0
-Zimbabwe,Global rank,rank,43.0
-Zimbabwe,Regional rank,rank,15.0

@@ -83,12 +83,12 @@ conf:
 
 <div class="row--contained">
 
-  <div class="col--main">
+  <div class="col--main prose-copy">
     <h2>Summary</h2>
     {{ content }}
   </div>
 
-  <div class="col--sec">
+  <div class="col--sec prose-copy">
     {% case language %}
     {% when 'en' %}
       <dl class="stats-list">
@@ -156,11 +156,11 @@ conf:
           <td class="cell-country"><a href="//statesCtrl.getStateUrl(state)//">//state.name//</a></td>
           <td>//state.score | round:2 //</td>
           <td>
-            <a href="" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//statesCtrl.getTooltipContent(state.parameters)//">
-              <ul class="table-bar">
+            <div class="table-graph">
+              <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//statesCtrl.getTooltipContent(state.parameters)//">
                 <li ng-repeat="param in state.parameters" ng-class="'param-' + param.id" style="width: //statesCtrl.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
               </ul>
-            </a>
+            </div>
           </td>
         </tr>
       </tbody>

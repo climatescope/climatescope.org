@@ -5,18 +5,38 @@ title : Datos
 id: download
 lang: es
 ---
-Download the full report. 
+<div class="well well-l download download-pdf">
+	<h2>Full Report</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula a pulvinar venenatis rhoncus nec varius at,vulputate sed eros.</p>
+  <ul class="download-list">
+    <li>
+      <strong class="term">PDF</strong>
+      <a href="#" title="Download PDF" class="bttn bttn-success download">Download</a>
+    </li>
+  </ul>
+</div>
 
-English & Spanish
-
-Download the source data.
-
-Excel & CSV
+<div class="well well-l download download-data">
+  <h2>Source Data</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula a pulvinar venenatis rhoncus nec varius at,vulputate sed eros.</p>
+  <ul class="download-list">
+    <li>
+      <strong class="term">CSV</strong>
+      <a href="#" title="Download CSV" class="bttn bttn-success download">Download</a>
+    </li>
+    <li>
+      <strong class="term">Excel</strong>
+      <a href="#" title="Download Excel" class="bttn bttn-success download">Download</a>
+    </li>
+  </ul>
+</div>
 
 ## Copyright
 To be defined and updated to reflect the open sourceness of the project. Something along the lines:
 
 The Global Climatescope is a report and index that assesses the investment climate for climate-related investment worldwide. It adheres to an open source (LINK GITHUB) and open data policy, providing access to data that are free for everyone. The tool is intended for use by investors, companies, governments, NGOs, researchers, communities, and others seeking to assess the opportunities of investing in green energy.
+
+***
 
 ## Disclaimer
 The information and opinions presented in this publication are entirely those of the author(s), and no endorsement by the Multilateral Investment Fund of the Inter-American Development Bank, its Board of Executive Directors, or the countries they represent is expressed or implied. The views and opinions expressed in this publication are those of Bloomberg New Energy Finance and do not necessarily reflect the official position of the MIF.

@@ -1,13 +1,13 @@
 name:en_var,type_var,2014
 Score,score,0.902
-Enabling framework,param,1.392
+Enabling framework,param,1.439
 Clean energy policies,ind,0.06
 Power sector structure,ind,0.025
 Distributed energy regulatory framework,ind,0.044
 Clean energy rural electrification,ind,0.04
-Energy access policies,ind,0.034
+Energy access policies,ind,0.042
 Policy barriers,ind,0.004
-Clean energy installed capacity,ind,0.04
+Clean energy installed capacity,ind,0.043
 Growth rate of installed capacity,ind,0.0
 Clean energy electricity generation,ind,0.013
 Growth rate of electricity generation,ind,0.0
@@ -23,8 +23,8 @@ Average diesel prices,ind,0.019
 Growth rate of power demand,ind,0.0
 Electrification rate,ind,0.12
 Population using solid fuels for cooking,ind,0.02
-Financing and Investments,param,0.521
-Clean energy investments,ind,0.001
+Financing and Investments,param,0.517
+Clean energy investments,ind,0.0
 Growth rate of clean energy investments,ind,0.0
 Asset finance investments,ind,0.0
 Corporate finance investments,ind,0.0
@@ -57,5 +57,3 @@ Corporate energy efficiency initiatives,ind,0.0
 Corporate emission reduction policies,ind,0.0
 Capacity building – env. business training,ind,0.0
 Capacity building – think tanks,ind,0.0
-Global rank,rank,38.0
-Regional rank,rank,12.0

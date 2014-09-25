@@ -1,7 +1,8 @@
 ---
 layout: none
 ---
-/* TEAM */
+
+/* FLIPSIDE TEAM */
 
 Developer: Daniel da Silva
 Site: http://flipside.org
@@ -18,7 +19,28 @@ Site: http://flipside.org
 Twitter: @ricardoduplos
 Location: Lisbon, Portugal
 
+
+/* DEVELOPMENT SEED TEAM */
+
+Developer: Derek Lieu
+Site: http://developmentseed.org
+Twitter: @dereklieu
+Location: Washington, D.C, USA
+
+Strategist: Ian Schuler
+Site: http://developmentseed.org
+Twitter: @ianschuler
+Location: Washington, D.C, USA
+
+Strategist: Nate Smith
+Site: http://developmentseed.org
+Twitter: @nas_smith
+Location: Washington, D.C, USA
+
+
 /* SITE */
 
 Last update: {{ site.time | date: "%Y/%m/%d"}}
-Standards: HTML5, CSS3, RWD
+Standards: HTML5, CSS3, RWD 
+Components: Bootstrap (loosely based), Modernizr, jQuery, Selectivzr, Jekyll, AngularJS, D3.js, Mapbox, Natural Earth (data), Pandas                      
+Software: Sublime Text, Eclipse, Adobe Illustrator CC, GitHub (Mac)

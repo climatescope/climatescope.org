@@ -1,13 +1,13 @@
 name:en_var,type_var,2014
 Score,score,1.448
-Enabling framework,param,1.317
+Enabling framework,param,1.326
 Clean energy policies,ind,0.129
 Power sector structure,ind,0.122
 Distributed energy regulatory framework,ind,0.0
 Clean energy rural electrification,ind,0.04
 Energy access policies,ind,0.0
 Policy barriers,ind,0.004
-Clean energy installed capacity,ind,0.043
+Clean energy installed capacity,ind,0.047
 Growth rate of installed capacity,ind,0.16
 Clean energy electricity generation,ind,0.0
 Growth rate of electricity generation,ind,0.0
@@ -37,13 +37,13 @@ Green micro-borrowers,ind,0.0
 Average cost of green micro debt,ind,0.0
 Average cost of debt,ind,0.052
 Swap rate,ind,0.038
-Value chains,param,3.253
+Value chains,param,2.99
 Financial institutions in clean energy,ind,0.15
-Value chains by clean energy sector,ind,0.197
+Value chains by clean energy sector,ind,0.158
 Distributed clean energy value chains by sector,ind,0.0
 Clean energy service providers,ind,0.141
 Distributed clean energy service providers,ind,0.0
-GHG management,param,1.87
+GHG management,param,1.998
 Carbon offsets historical activity,ind,0.112
 CDM risk,ind,0.038
 Carbon offsets future potential,ind,0.016
@@ -57,5 +57,3 @@ Corporate energy efficiency initiatives,ind,0.0
 Corporate emission reduction policies,ind,0.0
 Capacity building – env. business training,ind,0.0
 Capacity building – think tanks,ind,0.038
-Global rank,rank,13.0
-Regional rank,rank,4.0
