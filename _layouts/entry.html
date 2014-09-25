@@ -7,7 +7,7 @@ layout: base
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
 
-{% if vars.type == 'parameter' %}
+{% if layout.conf.type == 'parameter' %}
   {% capture custom_class %}param-{{ page.id }}{% endcapture %}
 {% endif %}
 
