@@ -1,6 +1,5 @@
-$(function() {
-
-  $('[data-toggle="dropdown"]').click(function(e) {
+function initDropdown() {
+  $('[data-toggle="dropdown"]').once('dropdown').click(function(e) {
     e.preventDefault();
     e.stopPropagation();
     
@@ -8,12 +7,18 @@ $(function() {
     parent.toggleClass('open');
     
     $('.dropdown.open').not(parent).removeClass('open');
-    
   });
   
-  $(document).click(function() {
-    $('.dropdown.open').removeClass('open');
+  $('body').once('dropdown', function() {
+    $(document).click(function() {
+      $('.dropdown.open').removeClass('open');
+    });
   });
+  
+}
+
+$(function() {
+  initDropdown();
   
   // Modal cookie.
   // Only show modal the first time the user enters the page.
