@@ -5,15 +5,31 @@ title : Download
 id: download
 lang: en
 ---
-Download the full report. 
+<div class="well well-l download download-pdf">
+	<h2>Full Report</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula a pulvinar venenatis rhoncus nec varius at,vulputate sed eros.</p>
+  <ul class="download-list">
+    <li>
+      <strong class="term">PDF</strong>
+      <a href="#" title="Download PDF" class="bttn bttn-success download">Download</a>
+    </li>
+  </ul>
+</div>
 
-English & Spanish
-
-Download the source data.
-
-Excel & CSV
-
-***
+<div class="well well-l download download-data">
+  <h2>Source Data</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo ligula a pulvinar venenatis rhoncus nec varius at,vulputate sed eros.</p>
+  <ul class="download-list">
+    <li>
+      <strong class="term">CSV</strong>
+      <a href="#" title="Download CSV" class="bttn bttn-success download">Download</a>
+    </li>
+    <li>
+      <strong class="term">Excel</strong>
+      <a href="#" title="Download Excel" class="bttn bttn-success download">Download</a>
+    </li>
+  </ul>
+</div>
 
 ## Copyright
 To be defined and updated to reflect the open sourceness of the project. Something along the lines:

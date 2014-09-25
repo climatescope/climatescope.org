@@ -22,10 +22,10 @@
   </li>
   <li class="dropdown">
     <a href="#" title="Topics" class="dropdown-toggle caret" data-toggle="dropdown">Topics</a>
-    <ul class="dropdown-menu" role="menu">
+    <ul class="dropdown-menu topics" role="menu">
       {% for topic in site.en_parameter %}
       <li>
-        <a href="{{site.domain}}{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
+        <a href="{{site.domain}}{{ topic.url }}" title="More about {{ topic.title }}" class="param-{{ topic.id }}">{{ topic.title }}</a>
       </li>
       {% endfor %}
     </ul>
@@ -55,10 +55,10 @@
   </li>
   <li class="dropdown">
     <a href="#" title="Temas" class="dropdown-toggle caret" data-toggle="dropdown">Temas</a>
-    <ul class="dropdown-menu" role="menu">
+    <ul class="dropdown-menu topics" role="menu">
       {% for topic in site.es_parameter %}
       <li>
-        <a href="{{site.domain}}{{ topic.url }}" title="More about {{ topic.title }}">{{ topic.title }}</a>
+        <a href="{{site.domain}}{{ topic.url }}" title="More about {{ topic.title }}" class="param-{{ topic.id }}">{{ topic.title }}</a>
       </li>
       {% endfor %}
     </ul>

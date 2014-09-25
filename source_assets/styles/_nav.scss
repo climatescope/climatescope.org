@@ -37,7 +37,7 @@
   > li.active > a,
   > li.active > a:hover,
   > li.active > a:focus {
-    opacity: inherit;
+    @include opacity(1);
     cursor: default;
     background-color: #fff;
     border-color: tint($primary-color, 90%);
