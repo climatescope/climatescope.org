@@ -27,3 +27,14 @@
     background-color: shade($color, 10%);
   }
 }
+
+
+// MISC
+
+// Opacity
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}

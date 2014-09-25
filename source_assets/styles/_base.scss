@@ -29,6 +29,12 @@ a {
   @include transition-duration(0.2s);
   @include transition-timing-function(ease);
   @include transition-delay(0);
+  &[rel~="external"]:after {
+    @extend .icon-s-new-window;
+    font-size: 1rem;
+    @include opacity(0.4);
+    margin-left: 0.25rem;
+  }
 }
 
 a:visited {
@@ -36,8 +42,7 @@ a:visited {
 }
 
 a:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  @include opacity(0.6);
   outline: none;
 }
 
@@ -331,8 +336,7 @@ a:active{
     font-family: $brand-font-family;
   }
   .open > .dropdown-toggle {
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    @include opacity(0.4);
   }
   @media #{$xlarge-up} {
     float: right;
