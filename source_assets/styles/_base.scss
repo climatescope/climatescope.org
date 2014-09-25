@@ -29,6 +29,12 @@ a {
   @include transition-duration(0.2s);
   @include transition-timing-function(ease);
   @include transition-delay(0);
+  &[rel~="external"]:after {
+    @extend .icon-s-new-window;
+    font-size: 1rem;
+    @include opacity(0.4);
+    margin-left: 0.25rem;
+  }
 }
 
 a:visited {
@@ -36,8 +42,7 @@ a:visited {
 }
 
 a:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  @include opacity(0.6);
   outline: none;
 }
 
@@ -62,6 +67,60 @@ a:active{
       padding-right: 3rem;
     }
   }
+}
+
+// Well
+
+.well {
+  position: relative;
+  padding: 1rem;
+  box-shadow: inset 0 3px 0 0 rgba($primary-color, 0.1);
+  min-height: 4rem;
+  margin-bottom: 1.25rem;
+  background-color: tint($primary-color, 95%);
+  border-radius: $global-radius;
+  > :last-child {
+    margin-bottom: 0;
+  }
+  &:before {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    bottom: 0;
+    content: '';
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: $global-radius;
+  }
+  &.download {
+    min-height: 10rem;
+    &:after {
+      position: absolute;
+      z-index: 1;
+      font-size: 6rem;
+      @include opacity(0.2); 
+      color: $primary-color;
+      line-height: 1;
+    }
+  }
+  &.download-pdf:after { @extend .icon-file-pdf; }
+  &.download-data:after { @extend .icon-file-src-dat; }
+}
+
+.well-l {
+  padding: 2rem;
+  &.download {
+    padding-right: 10rem;
+    margin-bottom: 2rem;
+    &:after {
+      top: 2rem;
+      right: 2rem;
+    }
+  }
+}
+
+.well-s {
+  padding: 0.5rem;
 }
 
 // Labels
@@ -182,7 +241,6 @@ a:active{
   }
 }
 
-
 // Intro stripe
 
 .intro {
@@ -190,7 +248,6 @@ a:active{
   margin-bottom: 2rem;
   background: tint($primary-color, 95%) !important;
 }
-
 
 // STRUCTURE
 
@@ -284,11 +341,39 @@ a:active{
     font-family: $brand-font-family;
   }
   .open > .dropdown-toggle {
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    @include opacity(0.4);
   }
   @media #{$xlarge-up} {
     float: right;
+  }
+  .topics {
+    > li > a {
+      padding-left: 2rem;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 1rem;
+        z-index: 1;
+        margin-top: -0.25rem;
+        content: '';
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: $global-rounded;
+      }
+      &.param-1:before {
+        background: $infograph-color-a;
+      }
+      &.param-2:before {
+        background: $infograph-color-b;
+      }
+      &.param-3:before {
+        background: $infograph-color-c;
+      }
+      &.param-4:before {
+        background: $infograph-color-d;
+      }
+    }
   }
 }
 
@@ -499,6 +584,9 @@ a:active{
     z-index: 10;
     @extend .hd-label;
     margin-bottom: 0;
+    a {
+      color: inherit;
+    }
   }
 }
 
@@ -908,6 +996,43 @@ a:active{
   .modal__body {
     font-size: 1.25rem;
     line-height: 1.5rem;
+  }
+}
+
+// LISTS
+
+.download-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid tint($primary-color, 90%);
+  .well.download & {
+    border-top-color: tint($primary-color, 85%);
+  }
+  > li {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid tint($primary-color, 90%);
+    padding: 0.5rem 0;
+    margin: 0;
+    .well.download & {
+      border-bottom-color: tint($primary-color, 85%);
+    }
+  }
+  .term {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    display: block;
+    text-transform: uppercase;
+    height: 1.5rem;
+    margin-top: -0.75rem;
+  }
+  .bttn {
+    float: right;
   }
 }
 

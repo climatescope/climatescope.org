@@ -37,15 +37,13 @@ input[type=submit] {
     @include transform(translate(0));
   }
   &:hover {
-    filter: alpha(opacity=100);
-    opacity: inherit;
+    @include opacity(1);
   }
   &.disabled, &[disabled] {
     pointer-events: none;
     cursor: not-allowed;
-    filter: alpha(opacity=60);
+    @include opacity(0.6);
     box-shadow: none;
-    opacity: .6;
   }
   @include transition-property(background-color);
   @include transition-duration(0.2s);
@@ -128,8 +126,7 @@ input[type=submit] {
 .bttn {
   &:after {
     margin-left: 0.25rem;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    @include opacity(0.4);
     font-size: 1rem;
   }
   &:before {

@@ -1,5 +1,38 @@
 // OVERLAYS
 
+// TITLED
+
+*[data-title]:hover {
+  position: relative;
+  cursor: help;
+  &:after {
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+    z-index: 1400;
+    max-width: 6rem;
+    padding: 0.125rem 0.5rem;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: $global-radius;
+    box-shadow: 2px 2px 0 rgba($primary-color, 0.05);
+    background-clip: padding-box;
+    margin-bottom: 0.125rem;
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+    color: tint($primary-color, 60%);
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: $brand-font-family;
+    font-weight: normal;
+    @extend .truncated;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-align: center;
+  }
+}
+
 // TOOLTIPS
 
 $tooltip-arr-size: 1rem;
@@ -167,8 +200,7 @@ $tooltip-arr-size: 1rem;
   &.caret {
     &:after {
       @extend .icon-s-arr-down;
-      opacity: .6;
-      filter: alpha(opacity=60);
+      @include opacity(0.4);
       font-size: 1rem;
       margin-left: 0.25rem;
     }

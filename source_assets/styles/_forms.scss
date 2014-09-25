@@ -7,9 +7,8 @@
   cursor: pointer;
   &.disabled, &[disabled] {
     cursor: not-allowed;
-    filter: alpha(opacity=60);
+    @include opacity(0.6);
     box-shadow: none;
-    opacity: .6;
   }
 }
 

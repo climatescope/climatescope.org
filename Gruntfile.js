@@ -62,7 +62,6 @@ module.exports = function(grunt) {
           './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
           './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
           './assets/scripts/vendor/selectivizr-1.0.2.min.js': ['source_assets/scripts/vendor/selectivizr-1.0.2.min.js'],
-          './assets/scripts/vendor/map-dependencies.min.js' : ['source_assets/scripts/vendor/d3.v3.min.js', 'source_assets/scripts/vendor/map-dependencies/*.js', 'source_assets/vendor/mapbox/mapbox.js'],
         }
       }
     },
