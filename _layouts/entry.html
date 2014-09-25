@@ -16,7 +16,39 @@ layout: base
     <div class="row--contained">
       <div class="layout--entry__heading">
         <h1 class="layout--entry__title">{{ page.title }}</h1>
-        <p class="layout--entry__subtitle">{{ layout.conf.subtitle[language] }}</p>
+
+        {% case layout.conf.type %}
+        {% when 'country' or 'state' %}
+
+          {% assign coll_region = site.collections.en_region.i18n[language] %}
+          {% for region in site[coll_region] %}
+            {% if page.region == region.id %}
+              {% assign parent_region = region %}
+            {% endif %}
+          {% endfor %}
+
+        {% when 'state' %}
+
+          {% assign coll_country = site.collections.en_country.i18n[language] %}
+          {% for country in site[coll_country] %}
+            {% if page.country == country.id %}
+              {% assign parent_country = country %}
+            {% endif %}
+          {% endfor %}
+
+        {% endcase %}
+
+        {% if parent_region %}
+          <p class="layout--entry__subtitle">
+            <a href="{{ parent_region.url }}" title="Go to {{ parent_region.title }}">{{ parent_region.title }}</a>
+            {% if parent_country %}
+             / <a href="{{ parent_country.url }}" title="Go to {{ parent_country.title }}">{{ parent_country.title }}</a>
+            {% endif %}
+          </p>
+        {% else %}
+          <p class="layout--entry__subtitle">{{ layout.conf.subtitle[language] }}</p>
+        {% endif %}
+
         {% case language %}
         {% when 'en' %}
 
