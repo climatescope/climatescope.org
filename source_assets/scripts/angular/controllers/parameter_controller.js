@@ -14,7 +14,7 @@
     setupCommonTableMethods(_self);
 
     // Override sortfield
-    this.sortField = 'score[0].value';
+    this.sortField = 'data[0].value';
 
     var calcAvgScore = function() {
       var score = 0;
