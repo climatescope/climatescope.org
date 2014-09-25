@@ -9,8 +9,8 @@
     content: attr(data-title);
     position: absolute;
     left: 0;
-    top: 100%;
-    z-index: 20px;
+    bottom: 100%;
+    z-index: 1400;
     max-width: 6rem;
     padding: 0.125rem 0.5rem;
     background-color: #fff;
@@ -19,7 +19,7 @@
     border-radius: $global-radius;
     box-shadow: 2px 2px 0 rgba($primary-color, 0.05);
     background-clip: padding-box;
-    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
     font-size: 0.85rem;
     line-height: 1.25rem;
     color: tint($primary-color, 60%);
