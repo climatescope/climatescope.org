@@ -17,7 +17,7 @@
         <dt>Score</dt>
         <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value | round:2 //</dd>
         <dt>Rank</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.overall_ranking //</dd>
+        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.overall_ranking || score.state_ranking//</dd>
       </dl>
     {% when 'es' %}
       <div class="param-details__heading">
@@ -27,7 +27,7 @@
         <dt>Puntaje</dt>
         <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value | round:2 //</dd>
         <dt>Posición</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.overall_ranking //</dd>
+        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.overall_ranking || score.state_ranking//</dd>
       </dl>
     {% endcase %}
   </header>
