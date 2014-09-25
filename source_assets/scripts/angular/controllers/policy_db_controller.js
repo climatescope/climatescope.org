@@ -62,14 +62,9 @@
       redirectTo : '/'
     });
   }]);
-
-  app.controller('policyListController', ['$http', '$routeParams', function($http, $routeParams) {
-  }]);
-
-  app.controller('policyFiltersController', ['$http', '$filter', '$rootScope', '$location', function($http, $filter, $rootScope, $location) {
+  
+  app.factory('queryStringData', ['$location', function($location) {
     var _self = this;
-
-    this.filterData = {};
 
     this.filters = {
       country : null,
@@ -78,7 +73,79 @@
       state : null
     };
 
-    this.filtersEnabled = false;
+    this.pagination = {
+      page: null
+    };
+
+    this.sort = {
+      name: null
+    };
+
+    this.disableFilters = function() {
+      // Set every filter to null.
+      for (var key in _self.filters) {
+        _self.filters[key] = null;
+      }
+      _self.update();
+    };
+
+    this.areFiltersEnabled = function() {
+      var control = false;
+      angular.forEach(_self.filters, function(value) {
+        if (value != null) control = true;
+      });
+      return control;
+    };
+
+    this.update = function() {
+      var queryString = {};
+      angular.extend(queryString, _self.filters, _self.pagination, _self.sort);
+      $location.search(queryString);
+    };
+
+    // Check if there are filters in the url.
+    if (!angular.equals({}, $location.search())) {
+      // Update language switcher url.
+      updateLangSwitcherUrl($location.url());
+
+      // Set already preset filters.
+      var data = $location.search();
+      for (var key in _self.filters) {
+        _self.filters[key] = data[key] || null;
+      }
+
+      // Both the status and subsector have numeric values
+      // but when they come from the url they are string.
+      // They must be converted to integers in order to work.
+      if (_self.filters.status) {
+        _self.filters.status = parseInt(_self.filters.status);
+      }
+      // if (_self.filters.subsector) {
+      //   _self.filters.subsector = parseInt(_self.filters.subsector);
+      // }
+
+      // Set already preset pagination.
+      for (var key in _self.pagination) {
+        _self.pagination[key] = data[key] || null;
+      }
+
+      // Set already preset sort.
+      for (var key in _self.sort) {
+        _self.sort[key] = data[key] || null;
+      }
+    }
+
+    return this;
+  }]);
+
+  app.controller('policyListController', function() {});
+
+  app.controller('policyFiltersController', ['$http', '$filter', '$rootScope', '$location', 'queryStringData', function($http, $filter, $rootScope, $location, queryStringData) {
+    var _self = this;
+
+    this.filterData = {};
+    this.filters = queryStringData.filters;
+    this.filtersEnabled = queryStringData.areFiltersEnabled();
 
     // Get the ordered options.
     // This could be done in the html but it's more organised like this.
@@ -91,35 +158,24 @@
     // This could be done in the html but it's more organised like this.
     this.getSelectOptsState = function(field) {
       var data = objToArray(field);
-      var filtered = $filter('filter')(data, {
-        countyId : _self.filters.country || null
-      });
+      var filtered = $filter('filter')(data, { countryId : _self.filters.country || null });
       return $filter('orderBy')(filtered, 'name');
     };
 
     this.disableFilters = function() {
-      if (!_self.filtersEnabled)
-        return;
+      if (!_self.filtersEnabled) return;
+      
       _self.filtersEnabled = false;
-      // Set every filter to null.
-      for (var key in _self.filters) {
-        _self.filters[key] = null;
-      }
-
-      $location.search(_self.filters);
+      queryStringData.disableFilters();
+      
       $rootScope.$broadcast('apply-filters', _self.filters);
     };
 
     this.apply = function() {
       // Check if filters are enabled.
-      _self.filtersEnabled = false;
-      angular.forEach(_self.filters, function(value) {
-        if (value != null) {
-          _self.filtersEnabled = true;
-        }
-      });
+      _self.filtersEnabled = queryStringData.areFiltersEnabled();
+      queryStringData.update();
 
-      $location.search(_self.filters);
       $rootScope.$broadcast('apply-filters', _self.filters);
     };
 
@@ -127,33 +183,13 @@
       _self.filterData = data;
     });
 
-    // Check if there are filters in the url.
-    if (!angular.equals({}, $location.search())) {
-      // Update language switcher url.
-      updateLangSwitcherUrl($location.url());
-
-      // Set already preset filters.
-      angular.extend(_self.filters, $location.search());
-      _self.filtersEnabled = true;
-
-      // Both the status and subsector have numeric values
-      // but when they come from the url they are string.
-      // They must be converted to integers in order to work.
-      if (_self.filters.status) {
-        _self.filters.status = parseInt(_self.filters.status);
-      }
-      // if (_self.filters.subsector) {
-      //   _self.filters.subsector = parseInt(_self.filters.subsector);
-      // }
-    }
-
     $rootScope.$on('$locationChangeSuccess', function() {
       updateLangSwitcherUrl($location.url());
     });
 
   }]);
 
-  app.controller('policyTableController', ['$http', '$scope', '$location', '$templateCache', function($http, $scope, $location, $templateCache) {
+  app.controller('policyTableController', ['$http', '$scope', '$location', '$templateCache', 'queryStringData', function($http, $scope, $location, $templateCache, queryStringData) {
     var _self = this;
 
     // Override pagination template.
@@ -162,13 +198,13 @@
       "  <li ng-repeat='page in pages'><a class='bttn bttn-light' ng-class='{active: page.active, disabled: page.disabled}' ng-click='selectPage(page.number)'>{{page.text}}</a></li>\n" +
       "</ul>");
 
-    this.filters = {};
+    this.filters = queryStringData.filters;
     this.policies = {};
 
     this.loadingData = true;
 
     // Pagination.
-    this.currentPage = 1;
+    this.currentPage = queryStringData.pagination.page || 1;
     this.totalItems = 0;
     this.itemsPerPage = 50;
     // Pages to show in the pager.
@@ -177,7 +213,7 @@
     this.getPolicyLink = function(policy) {
       return '#/policy/' + policy.id;
     };
-    
+
     // List of stuff to show in the tooltip.
     this.getTooltipContentList = function(list) {
       var data = [];
@@ -188,9 +224,13 @@
       }
       return data.join(', ');
     };
-    
+
     this.changePage = function(page) {
       _self.currentPage = page;
+      // Update query string.
+      queryStringData.pagination.page = page;
+      queryStringData.update();
+      // Reload policies.
       getPolicies();
     };
 
@@ -223,16 +263,9 @@
     };
 
     $scope.$on('apply-filters', function(event, filters) {
-      _self.filters = filters;
       _self.loadingData = true;
       getPolicies();
     });
-
-    // Check if there are filters in the url.
-    if (!angular.equals({}, $location.search())) {
-      // Set already preset filters.
-      angular.extend(_self.filters, $location.search());
-    }
 
     getPolicies();
   }]);
