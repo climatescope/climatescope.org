@@ -16,7 +16,7 @@
           <h1 class="layout--hub__title">Policies</h1>
           <a href="" class="reset" title="Reset filters" ng-click="filterCtrl.disableFilters()"><span>Reset</span></a>
         </div>
-        <div class="layout--hub__tools">
+        <div class="layout--hub__tools" init-dropdown>
           {% include actions_menu.html %}
         </div>
         
@@ -140,7 +140,7 @@
             {% endcase %}
 
           </div>
-          <div class="layout--entry__tools">
+          <div class="layout--entry__tools" init-dropdown>
             {% include actions_menu.html %}
           </div>
         </div>

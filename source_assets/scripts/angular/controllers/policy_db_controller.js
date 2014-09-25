@@ -63,6 +63,16 @@
     });
   }]);
   
+  app.directive("initDropdown", function() {
+    return {
+      restrict: 'AE',
+      link: function () {
+        console.log('asdasd');
+        initDropdown();
+      }
+    };
+  });
+  
   app.factory('queryStringData', ['$location', function($location) {
     var _self = this;
 
