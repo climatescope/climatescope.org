@@ -65,11 +65,11 @@
         <table class="table policies-table" ng-show="tableCtrl.policies.length > 0" ng-if="!tableCtrl.loadingData">
           <thead>
             <tr>
-              <th>Policy Name</th>
-              <th>Country</th>
-              <th>State</th>
+              <th><a href="" ng-click="tableCtrl.setSort('name')" class="sort" ng-class="[tableCtrl.checkSortClasses('name')]">Policy Name</a></th>
+              <th><a href="" ng-click="tableCtrl.setSort('country')" class="sort" ng-class="[tableCtrl.checkSortClasses('country')]">Country</a></th>
+              <th><a href="" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">State</a></th>
               <th>Policy Mechanism</th>
-              <th>Status</th>
+              <th><a href="" ng-click="tableCtrl.setSort('status')" class="sort" ng-class="[tableCtrl.checkSortClasses('status')]">Status</a></th>
             </tr>
           </thead>
           <tbody>

@@ -78,7 +78,8 @@
     };
 
     this.sort = {
-      name: null
+      'sort-on': 'name',
+      'sort-direction': 'asc'
     };
 
     this.disableFilters = function() {
@@ -95,6 +96,12 @@
         if (value != null) control = true;
       });
       return control;
+    };
+
+    this.setSort = function(field) {
+      _self.sort['sort-on'] = field;
+      _self.sort['sort-direction'] = _self.sort['sort-direction'] == 'asc' ? 'desc' : 'asc';
+      _self.update();
     };
 
     this.update = function() {
@@ -199,6 +206,7 @@
       "</ul>");
 
     this.filters = queryStringData.filters;
+    this.sort = queryStringData.sort;
     this.policies = {};
 
     this.loadingData = true;
@@ -209,6 +217,26 @@
     this.itemsPerPage = 50;
     // Pages to show in the pager.
     this.pagesToShow = 5;
+
+    // Sort default.
+    this.sort = queryStringData.sort;
+
+    this.setSort = function(field) {
+      queryStringData.setSort(field);
+      getPolicies();
+    };
+
+    this.checkSortClasses = function(field) {
+      if (_self.sort['sort-on'] != field) {
+        return 'sort-none';
+      }
+      else if (_self.sort['sort-direction'] == 'desc') {
+        return 'sort-desc';
+      }
+      else {
+        return 'sort-asc';
+      }
+    };
 
     this.getPolicyLink = function(policy) {
       return '#/policy/' + policy.id;
@@ -244,6 +272,13 @@
 
       // Filters.
       angular.forEach(_self.filters, function(value, key) {
+        if (value !== null) {
+          queryString.push(key + '=' + value);
+        }
+      });
+      
+      // Sort.
+      angular.forEach(_self.sort, function(value, key) {
         if (value !== null) {
           queryString.push(key + '=' + value);
         }
