@@ -1,59 +1,59 @@
 name:es_var,type_var,2014
-Puntaje,score,1.158
-Marco Propicio,param,1.54
-Es...Clean energy policies,ind,0.215
-Es...Power sector structure,ind,0.115
+Puntaje,score,1.15999
+Marco Propicio,param,1.54001
+Es...Clean energy policies,ind,0.21499
+Es...Power sector structure,ind,0.1149
 Es...Distributed energy regulatory framework,ind,0.0
 Es...Clean energy rural electrification,ind,0.04
 Es...Energy access policies,ind,0.0
-Es...Policy barriers,ind,0.013
-Es...Clean energy installed capacity,ind,0.026
-Es...Growth rate of installed capacity,ind,0.0
-Es...Clean energy electricity generation,ind,0.014
-Es...Growth rate of electricity generation,ind,0.039
+Es...Policy barriers,ind,0.01275
+Es...Clean energy installed capacity,ind,0.02572
+Es...Growth rate of installed capacity,ind,1e-05
+Es...Clean energy electricity generation,ind,0.01393
+Es...Growth rate of electricity generation,ind,0.03924
 Es...Biofuels production,ind,0.0
 Es...Growth rate biofuels production,ind,0.0
-Es...Average electricity spot prices,ind,0.071
-Es...Average retail electricity prices,ind,0.038
+Es...Average electricity spot prices,ind,0.0714
+Es...Average retail electricity prices,ind,0.03825
 Es...Average residential electricity prices,ind,0.0
 Es...Average commercial electricity prices,ind,0.0
 Es...Average industrial electricity prices,ind,0.0
 Es...Average kerosene prices,ind,0.0
 Es...Average diesel prices,ind,0.0
-Es...Growth rate of power demand,ind,0.043
-Es...Electrification rate,ind,0.002
+Es...Growth rate of power demand,ind,0.04314
+Es...Electrification rate,ind,0.00167
 Es...Population using solid fuels for cooking,ind,0.0
-Financiamiento y Inversión,param,0.308
-Es...Clean energy investments,ind,0.004
+Financiamiento y Inversión,param,0.30752
+Es...Clean energy investments,ind,0.00408
 Es...Growth rate of clean energy investments,ind,0.0
 Es...Asset finance investments,ind,0.0
 Es...Corporate finance investments,ind,0.0
 Es...VC/PE investments,ind,0.0
 "Es...Loans, grants, grant programs",ind,0.0
 Es...Local investments,ind,0.0
-Es...Number of Green MFI,ind,0.015
-Es...Green micro-loans,ind,0.0
-Es...Green micro-borrowers,ind,0.0
-Es...Average cost of green micro debt,ind,0.006
-Es...Average cost of debt,ind,0.04
-Es...Swap rate,ind,0.027
-Cadenas de valor,param,0.895
+Es...Number of Green MFI,ind,0.01479
+Es...Green micro-loans,ind,1e-05
+Es...Green micro-borrowers,ind,0.00038
+Es...Average cost of green micro debt,ind,0.00582
+Es...Average cost of debt,ind,0.03985
+Es...Swap rate,ind,0.02731
+Cadenas de valor,param,0.89474
 Es...Financial institutions in clean energy,ind,0.075
-Es...Value chains by clean energy sector,ind,0.059
+Es...Value chains by clean energy sector,ind,0.05921
 Es...Distributed clean energy value chains by sector,ind,0.0
 Es...Clean energy service providers,ind,0.0
 Es...Distributed clean energy service providers,ind,0.0
-Gestión de GEI,param,2.117
+Gestión de GEI,param,2.1168
 Es...Carbon offsets historical activity,ind,0.075
 Es...CDM risk,ind,0.05
-Es...Carbon offsets future potential,ind,0.005
-Es...GHG emissions reduction target,ind,0.094
+Es...Carbon offsets future potential,ind,0.00502
+Es...GHG emissions reduction target,ind,0.09375
 Es...GHG country registry,ind,0.0
 Es...GHG market-based instruments,ind,0.0
-Es...PMR & NAMA,ind,0.019
+Es...PMR & NAMA,ind,0.01875
 Es...Voluntary GHG reporting by corporates,ind,0.0
 Es...Investor pressure – PRI signatories,ind,0.0
 Es...Corporate energy efficiency initiatives,ind,0.0
 Es...Corporate emission reduction policies,ind,0.0
-Es...Capacity building – env. business training,ind,0.038
-Es...Capacity building – think tanks,ind,0.038
+Es...Capacity building – env. business training,ind,0.0375
+Es...Capacity building – think tanks,ind,0.0375
