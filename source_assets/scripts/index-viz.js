@@ -122,12 +122,11 @@ $(document).ready(function() {
     var markers;
 
     // 1: top ten; -1: bottom ten; 0: all
-    var countryFilter = {
-      'bottom-ten': -1,
-      'top-ten': 1,
-      'all': 0
-    };
-    var visibleCountries = countryFilter['top-ten'];
+    var countryFilter = [
+      'top-ten',
+      'bottom-ten'
+    ];
+    var visibleCountries = 'top-ten';
     var zoom = map.getZoom();
 
     var undef = void 0;
@@ -198,17 +197,18 @@ $(document).ready(function() {
       // creating the country filter
       $countryFilter.on('click', 'button', function(e) {
         var cls = e.currentTarget.className;
-        var toShow = countryFilter[cls.slice(cls.indexOf('show') + 5)];
+        var toShow = cls.slice(cls.indexOf('show') + 5);
 
         if (visibleCountries === toShow) return;  // ignore if already showing
+
+        visibleCountries = toShow;
         $countryFilter.find('.active').removeClass('active');
         e.currentTarget.className = 'active ' + cls;  // selection class
-        toZoom(visibleCountries = toShow);  // zoom to appropriate level
         redraw();
       });
 
       // Creating each button, making top-ten the first active button
-      $.each(countryFilter, function(key) {
+      $.each(countryFilter, function(index, key) {
         var cls = 'bttn bttn-default show-' + key;
         if (key === 'top-ten') {
           cls = 'active ' + cls;
@@ -253,9 +253,9 @@ $(document).ready(function() {
     }
 
     function getSlice(land, visibleCountries) {
-      return visibleCountries === 0 ?
-        land : visibleCountries === -1 ?
-        land.slice(-10) : land.slice(0, 10);
+
+      return visibleCountries === 'top-ten' ?
+        land.slice(0, 10) : land.slice(-10);
     }
 
     function redraw() {
@@ -268,8 +268,6 @@ $(document).ready(function() {
         .style('opacity', 0)
         .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
 
-      // Never used.
-      // var circles = markers.append('circle')
       markers.append('circle')
         .attr('r', 16)
         .on('mouseover', function(d) {
@@ -311,15 +309,6 @@ $(document).ready(function() {
         .style('opacity', 1);
     }
 
-    function toZoom(visibleCountries) {
-      if (visibleCountries === 0 && zoom < 4) {
-          map.setZoom(4);
-      }
-      else if (visibleCountries !== 0 && zoom > 2) {
-        map.setZoom(2);
-      }
-    }
-
     map.on('dragstart', function() {
       tooltip.hide();
     });
@@ -328,20 +317,9 @@ $(document).ready(function() {
       reset();
       zoom = map.getZoom();
 
-      // zoomed too far out on all-countries filter, force redraw to top ten
-      if (visibleCountries === 0 && zoom < 4) {
-        visibleCountries = 1;
-        redraw();
-        $countryFilter.find('.active').removeClass('active');
-        var topTen = document.querySelectorAll('.show-top-ten')[0];
-        topTen.className = 'active ' + topTen.className;
-      }
-
-      // just need to re-translate the centroids
-      else {
-        markers
-          .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
-      }
+      markers.attr('transform', function(d) {
+        return 'translate(' + path.centroid(d) + ')';
+      });
 
       tooltip.hide();
     });
@@ -378,9 +356,6 @@ $(document).ready(function() {
   }
   // load the map
   else {
-    // Never used.
-    // var ranking = new rank(parent);
     new rank();
   }
-
 });
