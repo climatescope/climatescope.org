@@ -38,11 +38,6 @@ $(document).ready(function() {
 
     var path = d3.geo.path().projection(projection);
 
-    // two switches to detect whether marker is clicked,
-    // and whether mouse is over tooltip
-    var clicked = false;
-    var mouseInFeature = false;
-
     var tooltip = d3.tip().attr('class', 'tooltip-map top')
       .attr('id', 'index-viz-tooltip')
       .html(function(d) {
@@ -119,7 +114,10 @@ $(document).ready(function() {
     // placeholder variables to query via http request
     var land;
     var indicators;
+    // markers holds svg circles for all countries
     var markers;
+    // this only holds svg g elements for rankings
+    var rankMarkers;
 
     // 1: top ten; -1: bottom ten; 0: all
     var countryFilter = [
@@ -135,6 +133,16 @@ $(document).ready(function() {
     if (CS.regionId) {
       countryListUrl = CS.domain + '/' + CS.lang + '/api/regions/' + CS.regionId + '.json';
     }
+
+    // two switches to detect whether marker is clicked,
+    // and whether mouse is over tooltip
+    var clicked = false;
+    var mouseInFeature = false;
+
+    // allRanking is true when everything is ranked
+    // this happens at zoom levels larger than allRankingLevel
+    var allRanking = false;
+    var allRankingLevel = 3;
 
     queue()
     // The topo json file is the same for all languages.
@@ -192,10 +200,17 @@ $(document).ready(function() {
 
       land = filtered.sort(function(a, b) { return a.d - b.d; });
       reset();
-      redraw();
+      drawCountries(land);
+      drawRanking(getSlice(visibleCountries));
 
       // creating the country filter
       $countryFilter.on('click', 'button', function(e) {
+
+        // if all countries are ranked, no need for this
+        if (allRanking) {
+          return false;
+        }
+
         var cls = e.currentTarget.className;
         var toShow = cls.slice(cls.indexOf('show') + 5);
 
@@ -204,7 +219,7 @@ $(document).ready(function() {
         visibleCountries = toShow;
         $countryFilter.find('.active').removeClass('active');
         e.currentTarget.className = 'active ' + cls;  // selection class
-        redraw();
+        drawRanking(getSlice(visibleCountries));
       });
 
       // Creating each button, making top-ten the first active button
@@ -252,24 +267,41 @@ $(document).ready(function() {
       g.attr('transform', 'translate(' + transform[0] + ',' + transform[1] + ')');
     }
 
-    function getSlice(land, visibleCountries) {
+    function drawCountries(countries) {
+      g.selectAll('.country-marker').remove();
 
-      return visibleCountries === 'top-ten' ?
-        land.slice(0, 10) : land.slice(-10);
+      markers = drawMarker(countries, 'country-marker');
+      markers.append('circle').attr('r', 5);
+
+      markers.transition()
+        .delay(700)
+        .duration(200)
+        .style('opacity', 1);
     }
 
-    function redraw() {
-      var data = getSlice(land, visibleCountries);
+    function drawRanking(highlighted) {
       g.selectAll('.rank-marker').remove();
-      markers = g.selectAll('.rank-marker')
+
+      rankMarkers = drawMarker(highlighted, 'rank-marker');
+      rankMarkers.append('circle').attr('r', 16);
+
+      rankMarkers.append('text')
+        .attr('dy', '6px')
+        .text(function(d) { return d.d < 10 ? '0' + d.d : d.d; });
+
+      rankMarkers.transition()
+        .delay(function(d, i) { return 200 + i * 20; })
+        .duration(200)
+        .style('opacity', 1);
+    }
+
+    function drawMarker(data, cls) {
+      return g.selectAll('.' + cls)
         .data(data)
       .enter().append('g')
-        .attr('class', 'rank-marker')
+        .attr('class', cls)
         .style('opacity', 0)
-        .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
-
-      markers.append('circle')
-        .attr('r', 16)
+        .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
         .on('mouseover', function(d) {
           mouseInFeature = true;
           if (!clicked) { tooltip.show(d); }
@@ -296,17 +328,13 @@ $(document).ready(function() {
               }
             });
           }, 100);
-        })
-      ;
+        });
+    }
 
-      markers.append('text')
-        .attr('dy', '6px')
-        .text(function(d) { return d.d < 10 ? '0' + d.d : d.d; });
-
-      markers.transition()
-        .delay(function(d, i) { return 200 + i * 20; })
-        .duration(200)
-        .style('opacity', 1);
+    function getSlice(visible) {
+      return visible === 'top-ten' ?
+        land.slice(0, 10) : visible === 'bottom-ten' ?
+        land.slice(-10) : land;
     }
 
     map.on('dragstart', function() {
@@ -317,10 +345,26 @@ $(document).ready(function() {
       reset();
       zoom = map.getZoom();
 
-      markers.attr('transform', function(d) {
-        return 'translate(' + path.centroid(d) + ')';
-      });
+      // we've zoomed in and need to show all markers as ranks
+      if (zoom > allRankingLevel && !allRanking) {
+        allRanking = true;
+        $countryFilter.addClass('disabled');
+        g.selectAll('.country-marker').remove();
+        drawRanking(land);
+      }
 
+      else if (zoom <= allRankingLevel && allRanking) {
+        allRanking = false;
+        $countryFilter.removeClass('disabled');
+        g.selectAll('.rank-marker').remove();
+        drawCountries(land);
+        drawRanking(getSlice(visibleCountries));
+      }
+
+      else {
+        rankMarkers.attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
+        markers.attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
+      }
       tooltip.hide();
     });
 
@@ -341,7 +385,7 @@ $(document).ready(function() {
       for(i = 0; i < ii; ++i) {
         land[i].d = land[i].rank.overall_ranking = i + 1;
       }
-      redraw();
+      drawRanking(getSlice(visibleCountries));
     }, 100, false);
 
     $('.slider-group').on('update-sliders', updateSliders);

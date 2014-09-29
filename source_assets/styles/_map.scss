@@ -8,6 +8,7 @@
   @extend .antialiased;
 }
 
+.country-marker circle,
 .rank-marker circle {
   stroke: #000;
   stroke-width: 8px;
@@ -26,6 +27,10 @@
 .light-stroke {
   stroke: #fff;
   stroke-opacity: 0.85;
+}
+
+.disabled button {
+// disabled button styling here
 }
 
 
