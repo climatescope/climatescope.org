@@ -154,14 +154,15 @@ $(document).ready(function() {
 
     queue()
     // The topo json file is the same for all languages.
-    .defer(d3.json, CS.domain + '/en/api/countries.topojson')
+    //.defer(d3.json, CS.domain + '/en/api/countries.topojson')
+    .defer(d3.json, CS.domain + '/en/api/centroids.topojson')
     .defer(d3.json, countryListUrl)
 
     // these are used for local testing only - Derek
     // .defer(d3.json, 'en/api/countries.topojson')
     // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
-      land = topojson.feature(geography, geography.objects.countries).features;
+      land = topojson.feature(geography, geography.objects.centroids).features;
 
       // If there's a region, the countries are inside an object.
       indicators = CS.regionId ? countryRank.countries : countryRank;
@@ -324,7 +325,13 @@ $(document).ready(function() {
       .enter().append('g')
         .attr('class', cls)
         .style('opacity', 0)
-        .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
+        .attr('transform', function(d) {
+          var coords = map.latLngToLayerPoint([
+            d.geometry.coordinates[1],
+            d.geometry.coordinates[0]
+          ]);
+          return 'translate(' + coords.x + ',' + coords.y + ')';
+        })
 
         .on('mouseover', function(d) {
           mouseInFeature = true;
@@ -392,8 +399,15 @@ $(document).ready(function() {
       }
 
       else {
-        rankMarkers.attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
-        markers.attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
+        $.each([rankMarkers, markers], function(index, els) {
+          els.attr('transform', function(d) {
+            var coords = map.latLngToLayerPoint([
+              d.geometry.coordinates[1],
+              d.geometry.coordinates[0]
+            ]);
+            return 'translate(' + coords.x + ',' + coords.y + ')';
+          });
+        });
       }
       tooltip.hide();
     });
