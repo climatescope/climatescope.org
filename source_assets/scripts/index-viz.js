@@ -207,17 +207,11 @@ $(document).ready(function() {
       }
 
       land = filtered.sort(function(a, b) { return a.d - b.d; });
-      reset();
-      drawCountries(land);
-      drawRanking(getSlice(visibleCountries));
+      resetSVG();
+      redrawMarkers({reset: true});
 
       // creating the country filter
       $countryFilter.on('click', 'button', function(e) {
-
-        // if all countries are ranked, no need for this
-        if (allRanking) {
-          return false;
-        }
 
         var cls = e.currentTarget.className;
         var toShow = cls.slice(cls.indexOf('show') + 5);
@@ -227,7 +221,8 @@ $(document).ready(function() {
         visibleCountries = toShow;
         $countryFilter.find('.active').removeClass('active');
         e.currentTarget.className = 'active ' + cls;  // selection class
-        drawRanking(getSlice(visibleCountries));
+
+        redrawMarkers({rankOnly: true });
       });
 
       // Creating each button, making top-ten the first active button
@@ -261,7 +256,9 @@ $(document).ready(function() {
       });
     });
 
-    function reset() {
+    // resetSVG alters the SVG bounds when map changes
+    // It does NOT alter the locations of markers.
+    function resetSVG() {
       var bounds = path.bounds({type: 'FeatureCollection', features: land});
       var topLeft = bounds[0];
       var bottomRight = bounds[1];
@@ -275,24 +272,42 @@ $(document).ready(function() {
       g.attr('transform', 'translate(' + transform[0] + ',' + transform[1] + ')');
     }
 
-    function drawCountries(countries) {
-      g.selectAll('.country-marker').remove();
+    function redrawMarkers(options) {
 
-      markers = drawMarker(countries, 'country-marker');
-      markers.append('circle').attr('r', 5);
+      // full reset; draws all countries as country-markers,
+      // then draws highlighted rank markers on top.
+      if (options.reset) {
+        g.selectAll('g').remove();
+        drawCountries(land, '');
+        drawRanking(getSlice(visibleCountries), ' highlight');
+      }
 
+      // only draw rankings;
+      // used when someone changes the top-/bottom-ten toggle,
+      // and we're still drawing country markers as un-ranked (higher zoom levels)
+      else if (options.rankOnly && !allRanking) {
+        g.selectAll('.rank-marker').remove();
+        drawRanking(getSlice(visibleCountries), ' highlight');
+      }
+
+      // this is used for all draws in which all countries show rank (lower zooms)
+      else if ((options.rankOnly && allRanking) || options.rankAll) {
+        g.selectAll('g').remove();
+        drawRanking(land, '');
+        drawRanking(getSlice(visibleCountries), ' highlight');
+      }
+    }
+
+    function drawCountries(countries, cls) {
+      markers = drawMarker(countries, 'country-marker' + cls, 5);
       markers.transition()
         .delay(700)
         .duration(200)
         .style('opacity', 1);
     }
 
-    function drawRanking(highlighted) {
-      g.selectAll('.rank-marker').remove();
-
-      rankMarkers = drawMarker(highlighted, 'rank-marker');
-      rankMarkers.append('circle').attr('r', 16);
-
+    function drawRanking(highlighted, cls) {
+      rankMarkers = drawMarker(highlighted, 'rank-marker' + cls, 16);
       rankMarkers.append('text')
         .attr('dy', '6px')
         .text(function(d) { return d.d < 10 ? '0' + d.d : d.d; });
@@ -303,17 +318,19 @@ $(document).ready(function() {
         .style('opacity', 1);
     }
 
-    function drawMarker(data, cls) {
-      return g.selectAll('.' + cls)
+    function drawMarker(data, cls, radius) {
+      var markers = g.selectAll('.' + cls)
         .data(data)
       .enter().append('g')
         .attr('class', cls)
         .style('opacity', 0)
         .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; })
+
         .on('mouseover', function(d) {
           mouseInFeature = true;
           if (!clicked) { tooltip.show(d); }
         })
+
         .on('mouseout', function() {
           mouseInFeature = false;
           if (!clicked) {
@@ -324,6 +341,7 @@ $(document).ready(function() {
             }, 300);
           }
         })
+
         .on('click', function(d) {
           clicked = true;
           tooltip.show(d);
@@ -336,7 +354,12 @@ $(document).ready(function() {
               }
             });
           }, 100);
-        });
+        })
+
+      markers.append('circle')
+        .attr('r', radius);
+
+      return markers;
     }
 
     function getSlice(visible) {
@@ -350,7 +373,7 @@ $(document).ready(function() {
     });
 
     map.on('viewreset', function() {
-      reset();
+      resetSVG();
       zoom = map.getZoom();
 
       // we've zoomed in and need to show all markers as ranks
@@ -358,15 +381,14 @@ $(document).ready(function() {
         allRanking = true;
         $countryFilter.addClass('disabled');
         g.selectAll('.country-marker').remove();
-        drawRanking(land);
+        redrawMarkers({rankAll: true});
       }
 
       else if (zoom <= allRankingLevel && allRanking) {
         allRanking = false;
         $countryFilter.removeClass('disabled');
         g.selectAll('.rank-marker').remove();
-        drawCountries(land);
-        drawRanking(getSlice(visibleCountries));
+        redrawMarkers({reset: true});
       }
 
       else {
@@ -393,7 +415,8 @@ $(document).ready(function() {
       for(i = 0; i < ii; ++i) {
         land[i].d = land[i].rank.overall_ranking = i + 1;
       }
-      drawRanking(getSlice(visibleCountries));
+
+      redrawMarkers({rankOnly: true });
     }, 100, false);
 
     $('.slider-group').on('update-sliders', updateSliders);

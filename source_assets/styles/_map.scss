@@ -17,6 +17,10 @@
   fill: tint($primary-color, 20%);
 }
 
+.highlight circle {
+  fill: #008FBE;
+}
+
 .rank-marker text {
   fill: #fff;
   text-anchor: middle;
@@ -27,10 +31,6 @@
 .light-stroke {
   stroke: #fff;
   stroke-opacity: 0.85;
-}
-
-.disabled button {
-// disabled button styling here
 }
 
 

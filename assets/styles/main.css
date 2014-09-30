@@ -5641,6 +5641,11 @@ a:active {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DER\/Documents\/2014\/08-climatescope\/source_assets\/styles\/_map\.scss}line{font-family:\0000320}}
+.highlight circle {
+  fill: #008FBE;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DER\/Documents\/2014\/08-climatescope\/source_assets\/styles\/_map\.scss}line{font-family:\0000324}}
 .rank-marker text {
   fill: #fff;
   text-anchor: middle;
@@ -5648,7 +5653,7 @@ a:active {
   pointer-events: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DER\/Documents\/2014\/08-climatescope\/source_assets\/styles\/_map\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/DER\/Documents\/2014\/08-climatescope\/source_assets\/styles\/_map\.scss}line{font-family:\0000331}}
 .light-stroke {
   stroke: #fff;
   stroke-opacity: 0.85;
