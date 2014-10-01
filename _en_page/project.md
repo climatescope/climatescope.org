@@ -1,8 +1,8 @@
 ---
 layout: page
 
-title : About
-id: about
+title : Project
+id: project
 lang: en
 ---
 ##What is the Global Climatescope?
