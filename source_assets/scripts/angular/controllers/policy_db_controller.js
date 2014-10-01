@@ -67,7 +67,6 @@
     return {
       restrict: 'AE',
       link: function () {
-        console.log('asdasd');
         initDropdown();
       }
     };
@@ -303,7 +302,7 @@
       }
 
       $http.get(CS.policyProxy + 'policy' + queryString).success(function(data) {
-        _self.policies = objToArray(data.listData);
+        _self.policies = data.listData;
         _self.totalItems = data.metaData.totalResults;
         _self.loadingData = false;
       });
