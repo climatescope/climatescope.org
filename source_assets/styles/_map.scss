@@ -8,12 +8,17 @@
   @extend .antialiased;
 }
 
+.country-marker circle,
 .rank-marker circle {
   stroke: #000;
   stroke-width: 8px;
   stroke-linecap: round;
   stroke-opacity: 0.15;
   fill: tint($primary-color, 20%);
+}
+
+.highlight circle {
+  fill: #008FBE;
 }
 
 .rank-marker text {

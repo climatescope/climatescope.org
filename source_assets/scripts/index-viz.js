@@ -26,7 +26,15 @@ $(document).ready(function() {
     };
     var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
     var map = L.mapbox.map('index-viz', mapConf.mapId, {
-                          minZoom: 2
+                          minZoom: 2,
+                          maxBounds: [
+                            [84.812743, -178.629215],
+                            [-78.229733, 179.964543]
+                          ],
+                          tileLayer: {
+                            continuousWorld: false,
+                            noWrap: true
+                          }
     }).setView(mapConf.center, mapConf.zoom);
 
     var point = function(x, y) {
@@ -37,11 +45,6 @@ $(document).ready(function() {
     var projection = d3.geo.transform({point: point});
 
     var path = d3.geo.path().projection(projection);
-
-    // two switches to detect whether marker is clicked,
-    // and whether mouse is over tooltip
-    var clicked = false;
-    var mouseInFeature = false;
 
     var tooltip = d3.tip().attr('class', 'tooltip-map top')
       .attr('id', 'index-viz-tooltip')
@@ -119,15 +122,19 @@ $(document).ready(function() {
     // placeholder variables to query via http request
     var land;
     var indicators;
-    var markers;
+
+    // object of svg markers to move on map viewreset
+    var markers = {
+      highlight: [],
+      countries: []
+    }
 
     // 1: top ten; -1: bottom ten; 0: all
-    var countryFilter = {
-      'bottom-ten': -1,
-      'top-ten': 1,
-      'all': 0
-    };
-    var visibleCountries = countryFilter['top-ten'];
+    var countryFilter = [
+      'top-ten',
+      'bottom-ten'
+    ];
+    var visibleCountries = 'top-ten';
     var zoom = map.getZoom();
 
     var undef = void 0;
@@ -137,16 +144,27 @@ $(document).ready(function() {
       countryListUrl = CS.domain + '/' + CS.lang + '/api/regions/' + CS.regionId + '.json';
     }
 
+    // two switches to detect whether marker is clicked,
+    // and whether mouse is over tooltip
+    var clicked = false;
+    var mouseInFeature = false;
+
+    // allRanking is true when everything is ranked
+    // this happens at zoom levels larger than allRankingLevel
+    var allRanking = false;
+    var allRankingLevel = 3;
+
     queue()
     // The topo json file is the same for all languages.
-    .defer(d3.json, CS.domain + '/en/api/countries.topojson')
+    //.defer(d3.json, CS.domain + '/en/api/countries.topojson')
+    .defer(d3.json, CS.domain + '/en/api/centroids.topojson')
     .defer(d3.json, countryListUrl)
 
     // these are used for local testing only - Derek
     // .defer(d3.json, 'en/api/countries.topojson')
     // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
-      land = topojson.feature(geography, geography.objects.countries).features;
+      land = topojson.feature(geography, geography.objects.centroids).features;
 
       // If there's a region, the countries are inside an object.
       indicators = CS.regionId ? countryRank.countries : countryRank;
@@ -192,23 +210,26 @@ $(document).ready(function() {
       }
 
       land = filtered.sort(function(a, b) { return a.d - b.d; });
-      reset();
-      redraw();
+      resetSVG();
+      redrawMarkers({reset: true});
 
       // creating the country filter
       $countryFilter.on('click', 'button', function(e) {
+
         var cls = e.currentTarget.className;
-        var toShow = countryFilter[cls.slice(cls.indexOf('show') + 5)];
+        var toShow = cls.slice(cls.indexOf('show') + 5);
 
         if (visibleCountries === toShow) return;  // ignore if already showing
+
+        visibleCountries = toShow;
         $countryFilter.find('.active').removeClass('active');
         e.currentTarget.className = 'active ' + cls;  // selection class
-        toZoom(visibleCountries = toShow);  // zoom to appropriate level
-        redraw();
+
+        redrawMarkers({rankOnly: true });
       });
 
       // Creating each button, making top-ten the first active button
-      $.each(countryFilter, function(key) {
+      $.each(countryFilter, function(index, key) {
         var cls = 'bttn bttn-default show-' + key;
         if (key === 'top-ten') {
           cls = 'active ' + cls;
@@ -238,7 +259,9 @@ $(document).ready(function() {
       });
     });
 
-    function reset() {
+    // resetSVG alters the SVG bounds when map changes
+    // It does NOT alter the locations of markers.
+    function resetSVG() {
       var bounds = path.bounds({type: 'FeatureCollection', features: land});
       var topLeft = bounds[0];
       var bottomRight = bounds[1];
@@ -252,30 +275,72 @@ $(document).ready(function() {
       g.attr('transform', 'translate(' + transform[0] + ',' + transform[1] + ')');
     }
 
-    function getSlice(land, visibleCountries) {
-      return visibleCountries === 0 ?
-        land : visibleCountries === -1 ?
-        land.slice(-10) : land.slice(0, 10);
+    function redrawMarkers(options) {
+
+      // full reset; draws all countries as country-markers,
+      // then draws highlighted rank markers on top.
+      if (options.reset) {
+        g.selectAll('g').remove();
+        markers.countries = drawCountries(land, '');
+        markers.highlight = drawRanking(getSlice(visibleCountries), ' highlight');
+      }
+
+      // only draw rankings;
+      // used when someone changes the top-/bottom-ten toggle,
+      // and we're still drawing country markers as un-ranked (higher zoom levels)
+      else if (options.rankOnly && !allRanking) {
+        g.selectAll('.rank-marker').remove();
+        markers.highlight = drawRanking(getSlice(visibleCountries), ' highlight');
+      }
+
+      // this is used for all draws in which all countries show rank (lower zooms)
+      else if ((options.rankOnly && allRanking) || options.rankAll) {
+        g.selectAll('g').remove();
+        markers.countries = drawRanking(land, '');
+        markers.highlight = drawRanking(getSlice(visibleCountries), ' highlight');
+      }
     }
 
-    function redraw() {
-      var data = getSlice(land, visibleCountries);
-      g.selectAll('.rank-marker').remove();
-      markers = g.selectAll('.rank-marker')
+    function drawCountries(countries, cls) {
+      var marker = drawMarker(countries, 'country-marker' + cls, 5)
+      marker.transition()
+          .delay(700)
+          .duration(200)
+          .style('opacity', 1);
+      return marker;
+    }
+
+    function drawRanking(highlighted, cls) {
+      var marker = drawMarker(highlighted, 'rank-marker' + cls, 16);
+      marker.append('text')
+        .attr('dy', '6px')
+        .text(function(d) { return d.d < 10 ? '0' + d.d : d.d; });
+      marker.transition()
+        .delay(function(d, i) { return 200 + i * 20; })
+        .duration(200)
+        .style('opacity', 1);
+      return marker;
+    }
+
+    function drawMarker(data, cls, radius) {
+      var markers = g.selectAll('.' + cls)
         .data(data)
       .enter().append('g')
-        .attr('class', 'rank-marker')
+        .attr('class', cls)
         .style('opacity', 0)
-        .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
+        .attr('transform', function(d) {
+          var coords = map.latLngToLayerPoint([
+            d.geometry.coordinates[1],
+            d.geometry.coordinates[0]
+          ]);
+          return 'translate(' + coords.x + ',' + coords.y + ')';
+        })
 
-      // Never used.
-      // var circles = markers.append('circle')
-      markers.append('circle')
-        .attr('r', 16)
         .on('mouseover', function(d) {
           mouseInFeature = true;
           if (!clicked) { tooltip.show(d); }
         })
+
         .on('mouseout', function() {
           mouseInFeature = false;
           if (!clicked) {
@@ -286,6 +351,7 @@ $(document).ready(function() {
             }, 300);
           }
         })
+
         .on('click', function(d) {
           clicked = true;
           tooltip.show(d);
@@ -299,25 +365,17 @@ $(document).ready(function() {
             });
           }, 100);
         })
-      ;
 
-      markers.append('text')
-        .attr('dy', '6px')
-        .text(function(d) { return d.d < 10 ? '0' + d.d : d.d; });
+      markers.append('circle')
+        .attr('r', radius);
 
-      markers.transition()
-        .delay(function(d, i) { return 200 + i * 20; })
-        .duration(200)
-        .style('opacity', 1);
+      return markers;
     }
 
-    function toZoom(visibleCountries) {
-      if (visibleCountries === 0 && zoom < 4) {
-          map.setZoom(4);
-      }
-      else if (visibleCountries !== 0 && zoom > 2) {
-        map.setZoom(2);
-      }
+    function getSlice(visible) {
+      return visible === 'top-ten' ?
+        land.slice(0, 10) : visible === 'bottom-ten' ?
+        land.slice(-10) : land;
     }
 
     map.on('dragstart', function() {
@@ -325,24 +383,35 @@ $(document).ready(function() {
     });
 
     map.on('viewreset', function() {
-      reset();
+      resetSVG();
       zoom = map.getZoom();
 
-      // zoomed too far out on all-countries filter, force redraw to top ten
-      if (visibleCountries === 0 && zoom < 4) {
-        visibleCountries = 1;
-        redraw();
-        $countryFilter.find('.active').removeClass('active');
-        var topTen = document.querySelectorAll('.show-top-ten')[0];
-        topTen.className = 'active ' + topTen.className;
+      // we've zoomed in and need to show all markers as ranks
+      if (zoom > allRankingLevel && !allRanking) {
+        allRanking = true;
+        $countryFilter.addClass('disabled');
+        g.selectAll('.country-marker').remove();
+        redrawMarkers({rankAll: true});
       }
 
-      // just need to re-translate the centroids
+      else if (zoom <= allRankingLevel && allRanking) {
+        allRanking = false;
+        $countryFilter.removeClass('disabled');
+        g.selectAll('.rank-marker').remove();
+        redrawMarkers({reset: true});
+      }
+
       else {
-        markers
-          .attr('transform', function(d) { return 'translate(' + path.centroid(d) + ')'; });
+        for (var key in markers) {
+          markers[key].attr('transform', function(d) {
+            var coords = map.latLngToLayerPoint([
+              d.geometry.coordinates[1],
+              d.geometry.coordinates[0]
+            ]);
+            return 'translate(' + coords.x + ',' + coords.y + ')';
+          });
+        }
       }
-
       tooltip.hide();
     });
 
@@ -363,7 +432,8 @@ $(document).ready(function() {
       for(i = 0; i < ii; ++i) {
         land[i].d = land[i].rank.overall_ranking = i + 1;
       }
-      redraw();
+
+      redrawMarkers({rankOnly: true });
     }, 100, false);
 
     $('.slider-group').on('update-sliders', updateSliders);
@@ -378,9 +448,6 @@ $(document).ready(function() {
   }
   // load the map
   else {
-    // Never used.
-    // var ranking = new rank(parent);
     new rank();
   }
-
 });
