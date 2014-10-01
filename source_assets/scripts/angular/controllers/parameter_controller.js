@@ -12,9 +12,12 @@
     this.scoreAvg = 0;
 
     setupCommonTableMethods(_self);
-
-    // Override sortfield
-    this.sortField = 'data[0].value';
+    // Score sort field for when we're using a sort expression.
+    this.sortExpScoreField = '-data[0].value';
+    // setSortExpression() will reverse again.
+    this.sortReverse = false;
+    // Override sortfield.
+    this.setSortExpression('data[0].value');
 
     var calcAvgScore = function() {
       var score = 0;
@@ -27,6 +30,24 @@
     this.getCountryUrl = function(country) {
       var iso = country.iso.toLowerCase();
       return _self.getTranslatedUrl('country', iso);
+    };
+    
+    this.getStateUrl = function(state) {
+      var iso = state.iso.toLowerCase();
+      return _self.getTranslatedUrl('state', iso);
+    };
+
+    this.toggleStates = function($event) {
+      var tbody = jQuery($event.target).closest('tbody');
+      var statesRow = tbody.find('.country-states');
+      if (statesRow.is(':hidden')) {
+        tbody.addClass('open');
+        statesRow.trSlideDown();
+      }
+      else {
+        tbody.removeClass('open');
+        statesRow.trSlideUp();
+      }
     };
 
     // Override function to only have one parameter.

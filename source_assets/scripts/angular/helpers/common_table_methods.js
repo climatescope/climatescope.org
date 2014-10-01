@@ -7,10 +7,23 @@ function setupCommonTableMethods(scope) {
   // Sort default.
   scope.sortField = 'score';
   scope.sortReverse = true;
+  scope.sortExpression = [];
+  // Score sort field for when we're using a sort expression.
+  scope.sortExpScoreField = '-score';
   
   scope.setSort = function(field) {
     scope.sortField = field;
     scope.sortReverse = !scope.sortReverse;
+  };
+  
+  scope.setSortExpression = function(field) {
+    // Set normal sort.
+    scope.setSort(field);
+    var expr = scope.sortField;
+    if (scope.sortReverse) {
+      expr = '-' + expr;
+    }
+    scope.sortExpression = [expr, scope.sortExpScoreField];
   };
   
   scope.checkSortClasses = function(field) {
