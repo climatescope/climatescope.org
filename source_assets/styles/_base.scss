@@ -451,7 +451,7 @@ a:active{
     @extend .hd-label;
     @extend .truncated;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     display: block;
   }
 }
@@ -522,15 +522,25 @@ a:active{
 
 // LAYOUT: HOME
 
+
+.layout--home__header {
+  padding: 1.5rem 0;
+}
+
 .layout--home__controls {
   .prime-title {
     @extend .hd-xxs;
     float: left;
-    margin: 0 0.5rem 1rem 0;
+    margin: 0 0.5rem 1.25rem 0;
+    font-size: 1rem;
+    line-height: 1.25rem;
   }
   .reset {
     float: left;
     margin-top: 0 !important;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
   }
   .control {
     @include col(3/12);
@@ -556,7 +566,7 @@ a:active{
   .slider-value {
     @extend .hd-xxs;
     float: left;
-    line-height: 2rem;
+    line-height: 1.5rem;
     margin-bottom: 0;
   }
   .lock {
