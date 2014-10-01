@@ -278,7 +278,7 @@ a:active{
 #site-title {
   @extend .hd-xs;
   margin-bottom: 0;
-  line-height: 1;
+  line-height: 1.5;
   em {
     font-style: normal;
     color: #fff;
@@ -286,10 +286,6 @@ a:active{
   a, a:visited {
     color: $secondary-color;
   }
-}
-
-#site-subtitle {
-  margin-bottom: 0;
 }
 
 #prime-nav {
