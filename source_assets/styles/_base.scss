@@ -149,14 +149,15 @@ a:active{
 }
 
 .label-grid-on {
-  background: $secondary-color;
+  background: tint($primary-color, 40%);
 }
 
 .label-grid-off {
-  background: tint($primary-color, 60%);
+  background: tint($primary-color, 80%);
 }
 
 // Badges
+
 .badge {
   display: inline-block;
   min-width: 0.85rem;
@@ -281,6 +282,9 @@ a:active{
   em {
     font-style: normal;
     color: #fff;
+  }
+  a, a:visited {
+    color: $secondary-color;
   }
 }
 
