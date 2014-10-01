@@ -10,8 +10,9 @@ $base-line-height: 150%;
 // We use these as default colors throughout
 $primary-color: #000;                            	// black
 $secondary-color: #77bc1f;                          // green
+$tertiary-color: #C3D500;                          	// light green
 $alert-color: #D85D3F;                              // red
-$success-color: #77bc1f;                            // green (same as $secondary-color)
+$success-color: $secondary-color;                   // same as $secondary-color
 $warning-color: #F4A432;                            // yellow
 $info-color: #499DD2;                               // blue
 

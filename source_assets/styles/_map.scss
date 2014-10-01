@@ -2,30 +2,33 @@
 
 // MARKERS
 
+circle {
+  stroke: $primary-color;
+  stroke-linecap: round;
+  stroke-opacity: 0.15;
+  .country-marker & {
+    stroke-width: 4px;
+    fill: $secondary-color;
+  }
+  .rank-marker & {
+    stroke-width: 6px;
+    fill: $secondary-color;
+  }
+  .highlight & {
+    fill: shade($secondary-color, 20%);
+  }
+}
+
 .rank-marker {
   font-family: $brand-font-family;
   font-weight: $brand-font-bold;
   @extend .antialiased;
-}
-
-.country-marker circle,
-.rank-marker circle {
-  stroke: #000;
-  stroke-width: 8px;
-  stroke-linecap: round;
-  stroke-opacity: 0.15;
-  fill: tint($primary-color, 20%);
-}
-
-.highlight circle {
-  fill: #008FBE;
-}
-
-.rank-marker text {
-  fill: #fff;
-  text-anchor: middle;
-  font-size: 1rem;
-  pointer-events: none;
+  text {
+    fill: #fff;
+    text-anchor: middle;
+    font-size: 1rem;
+    pointer-events: none;
+  }
 }
 
 .light-stroke {
