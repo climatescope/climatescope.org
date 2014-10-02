@@ -33,8 +33,8 @@
         <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expandir</span></a>
         {% endcase %}
       </td>
-      <td class="cell-rank">%%country.data[0].overall_ranking%%</td>
-      <td class="cell-country"><a href="%%countryTable.getCountryUrl(country)%%" title="Go to country page">%%country.name%%</a></td>
+      <td class="cell-rank">%% country.data[0].overall_ranking | leadingZero:2 %%</td>
+      <td class="cell-country"><a href="%% countryTable.getCountryUrl(country) %%" title="Go to country page">%% country.name %%</a></td>
       <td>%% country.data[0].value | round:2 %%</td>
       <td class="cell-graph">
         <div class="table-graph">
@@ -71,8 +71,8 @@
         </thead>
         <tr ng-repeat="state in country.states | orderBy:'value':true">
           <td>&nbsp;</td>
-          <td class="cell-rank">%%state.state_ranking%%</td>
-          <td class="cell-country"><a href="%%countryTable.getStateUrl(state)%%">%%state.name%%</a></td>
+          <td class="cell-rank">%% state.state_ranking | leadingZero:2 %%</td>
+          <td class="cell-country"><a href="%% countryTable.getStateUrl(state) %%">%% state.name %%</a></td>
           <td>%% state.value | round:2 %%</td>
           <td>
             <div class="table-graph">
