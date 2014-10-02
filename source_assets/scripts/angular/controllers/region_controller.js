@@ -20,4 +20,16 @@
     });
 
   }]);
+
+  app.controller('StatsController', ['$http', function($http) {
+    var _self = this;
+    // Data.
+    this.regionStats = [];
+
+    var url = CS.domain + '/' + CS.lang + '/api/stats.json';
+    $http.get(url).success(function(data) {
+      _self.regionStats = data.regions;
+    });
+
+  }]);
 })();

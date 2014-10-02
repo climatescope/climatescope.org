@@ -51,4 +51,24 @@
     });
 
   }]);
+  
+  app.controller('StatsController', ['$http', '$filter', function($http, $filter) {
+    var _self = this;
+    // Data.
+    this.paramStats = [];
+
+    var url = CS.domain + '/' + CS.lang + '/api/stats.json';
+    $http.get(url).success(function(data) {
+      // Remove all the data we don't need.
+      // From the parameter array of each region, remove all params
+      // except current one.
+      angular.forEach(data.regions, function(region) {
+        region.parameters = $filter('filter')(region.parameters, function(value) {
+          return value.id == CS.parameterId;
+        });
+      });
+      
+      _self.regionStats = data.regions;
+    });
+  }]);
 })();

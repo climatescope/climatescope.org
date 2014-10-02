@@ -12,49 +12,37 @@ conf:
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
-<script>
-  CS.parameterId = {{page.id}};
-</script>
+<script>CS.parameterId = {{page.id}};</script>
+<div ng-app="parameterApp">
 
-<div class="row--contained">
-
-  <div class="col--main prose-copy">
-    <h2>Description</h2>
-    {{ content }}
-  </div>
-
-  <div class="col--sec prose-copy">
-    {% case language %}
-    {% when 'en' %}
-      <dl class="stats-list">
-        <dt>Weight</dt>
-        <dd>40<sup>%</sup></dd>
-        <dt>Highest score <small>(Brazil)</small></dt>
-        <dd>2.25</dd>
-        <dt>Lowest score <small>(Botswana)</small></dt>
-        <dd>0.83</dd>
-      </dl>
-
-    {% when 'es' %}
-
-      <dl class="stats-list">
-        <dt>Weight</dt>
-        <dd>40<sup>%</sup></dd>
-        <dt>Highest score <small>(Brazil)</small></dt>
-        <dd>2.25</dd>
-        <dt>Lowest score <small>(Botswana)</small></dt>
-        <dd>0.83</dd>
-      </dl>
-
-    {% endcase %}
-  </div>
-
-</div>
-
-<div class="row--contained">
+  <div class="row--contained">
+    <div class="col--main prose-copy">
+      <h2>Description</h2>
+      {{ content }}
+    </div>
   
-  <div ng-app="parameterApp" ng-controller="CountryListController as countryTable" ng-cloak>
+    <div class="col--sec prose-copy" ng-controller="StatsController as statsCrtl" ng-cloak>
+      {% case language %}
+      {% when 'en' %}
+        <h2>Regional average</h2>
+        <dl class="stats-list">
+          <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %%</dt>
+          <dd ng-repeat-end>%% region.parameters[0].data[0].mean | round:2 %%</dd>
+        </dl>
+  
+      {% when 'es' %}
+  
+        <h2>Regional average</h2>
+        <dl class="stats-list">
+          <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %%</dt>
+          <dd ng-repeat-end>%% region.parameters[0].data[0].mean | round:2 %%</dd>
+        </dl>
+  
+      {% endcase %}
+    </div>
+  </div>
+
+  <div class="row--contained" ng-controller="CountryListController as countryTable" ng-cloak>
     {% include country_list_param_table.html %}
   </div>
-
 </div>
