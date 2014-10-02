@@ -11,23 +11,23 @@
     {% case language %}
     {% when 'en' %}
       <div class="param-details__heading">
-        <h1 class="param-details__title"><a href="//detailsCtrl.getParamUrl(param)//" title="Go to topic page">// param.name //</a></h1>
+        <h1 class="param-details__title"><a href="%% detailsCtrl.getParamUrl(param) %%" title="Go to topic page">%% param.name %%</a></h1>
       </div>
       <dl class="param-details__stats">
         <dt>Score</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value | round:2 //</dd>
+        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">%% score.value | round:2 %%</dd>
         <dt>Rank</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.overall_ranking || score.state_ranking//</dd>
+        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">%% (score.overall_ranking || score.state_ranking) | leadingZero:2 %%</dd>
       </dl>
     {% when 'es' %}
       <div class="param-details__heading">
-        <h1 class="param-details__title"><a href="//detailsCtrl.getParamUrl(param)//" title="Visita la pagina del tema">// param.name //</a></h1>
+        <h1 class="param-details__title"><a href="%% detailsCtrl.getParamUrl(param) %%" title="Visita la pagina del tema">%% param.name %%</a></h1>
       </div>
       <dl class="param-details__stats">
         <dt>Puntaje</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.value | round:2 //</dd>
+        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">%% score.value | round:2 %%</dd>
         <dt>Posición</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">// score.overall_ranking || score.state_ranking//</dd>
+        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">%% (score.overall_ranking || score.state_ranking) | leadingZero:2 %%</dd>
       </dl>
     {% endcase %}
   </header>
@@ -55,13 +55,13 @@
       </thead>
       <tbody ng-repeat="ind_group in param.indicator_groups">
         <tr>
-          <th class="cell-hd" colspan="4">// ind_group.name //</th>
+          <th class="cell-hd" colspan="4">%% ind_group.name %%</th>
         </tr>
         <tr ng-repeat="ind in ind_group.indicators" ng-class="{disabled: !ind.active}">
-          <td class="cell-ind">// ind.name //</td>
-          <td class="cell-rank" ng-repeat="score in ind.data | orderBy:'year':true | limitTo:1">// score.overall_ranking //</td>
-          <td class="cell-score" ng-repeat="score in ind.data | orderBy:'year':true | limitTo:1">// score.value | round:3 //</td>
-          <td class="cell-info"><a href="" title="About this indicator" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="//detailsCtrl.getTooltipContent(ind)//"><span>Info</span></a></td>
+          <td class="cell-ind">%% ind.name %%</td>
+          <td class="cell-rank" ng-repeat="score in ind.data | orderBy:'year':true | limitTo:1">%% score.overall_ranking %%</td>
+          <td class="cell-score" ng-repeat="score in ind.data | orderBy:'year':true | limitTo:1">%% score.value | round:3 %%</td>
+          <td class="cell-info"><a href="" title="About this indicator" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>Info</span></a></td>
         </tr>
       </tbody>
     </table>

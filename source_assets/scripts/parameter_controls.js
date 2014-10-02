@@ -43,8 +43,8 @@ $(document).ready(function() {
 
   check_sticky();
 
-  var appElement = document.querySelector('[ng-app=countryListApp]');
-  var countryAppScope = angular.element(appElement).scope();
+  var appElement = document.querySelector('[ng-app=globalApp]');
+  var globalAppScope = angular.element(appElement).scope();
   // Slider group for homepage.
   $('.slider-group').sliderGroup({
     start: 25,
@@ -58,8 +58,8 @@ $(document).ready(function() {
   })
   .on('update-sliders', function(event, data) {
     // Get inside angular scope.
-    countryAppScope.$apply(function() {
-      var countries = countryAppScope.countryTable.countries;
+    globalAppScope.$apply(function() {
+      var countries = globalAppScope.countryTable.countries;
 
       // Helper functions.
       // Update parameters and return new global score.

@@ -1,7 +1,7 @@
 (function(){
   var app = angular.module('parameterApp', ['mathFilters', 'ui.bootstrap'], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('//');
-    $interpolateProvider.endSymbol('//');
+    $interpolateProvider.startSymbol('%%');
+    $interpolateProvider.endSymbol('%%');
   });
 
   app.controller('CountryListController', ['$http', function($http) {
@@ -10,11 +10,11 @@
     this.parameter = {};
     this.countries = [];
     this.scoreAvg = 0;
-
-    setupCommonTableMethods(_self);
-
-    // Override sortfield
-    this.sortField = 'data[0].value';
+    
+    setupCommonCountryListMethods(_self);
+    // Set sort.
+    this.sortExpScoreField = '-data[0].value';
+    this.setSortExpression('data[0].value');
 
     var calcAvgScore = function() {
       var score = 0;
@@ -24,50 +24,51 @@
       _self.scoreAvg = score / _self.countries.length;
     };
 
-    this.getCountryUrl = function(country) {
-      var iso = country.iso.toLowerCase();
-      return _self.getTranslatedUrl('country', iso);
-    };
-
+    // Since we're not using object, we get a copy of the original
+    // getTooltipContent() to be able to simulate a call to the parent.
+    var getTooltipContent_orig  = this.getTooltipContent;
     // Override function to only have one parameter.
     this.getTooltipContent = function(data) {
-      var t = '<dl class="params-legend">';
-      var className = 'param-' + _self.parameter.id;
-      t += '<dt class="' + className + '">';
-      t += _self.parameter.name;
-      t += '</dt>';
-      t += '<dd>';
-      t += round(data.value, 2);
-      t += '<small>';
-      // 0.29 * 100 = 28.999999999999
-      // Round to solve the problem.
-      t += round(_self.parameter.weight * 100, 2) + '%';
-      t += '</small>';
-      t += '</dd>';
-      t += '</dl>';
-
-      return t;
+      // The parent getTooltipContent() expects and array of parameter
+      // object with all the data. Since we only have the value we
+      // need to simulate the object and the array.
+      // This is only being done to avoid repeating markup.
+      var param = {
+        id: _self.parameter.id,
+        name: _self.parameter.name,
+        value: data.value,
+        weight: _self.parameter.weight
+      };
+      return getTooltipContent_orig([param]);
     };
 
     // ---- Logic ----
     var url = CS.domain + '/' + CS.lang + '/api/parameters/' + CS.parameterId + '.json';
     $http.get(url).success(function(data) {
-
-      // Order parameter data array and country score
-      // so we don't need to search the value every time.
-      angular.forEach(data.countries, function(country) {
-        country.data.sort(function(a, b) {
-          return b.year - a.year;
-        });
-        country.score.sort(function(a, b) {
-          return b.year - a.year;
-        });
-      });
-
       _self.parameter = data;
       _self.countries = data.countries;
       calcAvgScore();
     });
 
+  }]);
+  
+  app.controller('StatsController', ['$http', '$filter', function($http, $filter) {
+    var _self = this;
+    // Data.
+    this.paramStats = [];
+
+    var url = CS.domain + '/' + CS.lang + '/api/stats.json';
+    $http.get(url).success(function(data) {
+      // Remove all the data we don't need.
+      // From the parameter array of each region, remove all params
+      // except current one.
+      angular.forEach(data.regions, function(region) {
+        region.parameters = $filter('filter')(region.parameters, function(value) {
+          return value.id == CS.parameterId;
+        });
+      });
+      
+      _self.regionStats = data.regions;
+    });
   }]);
 })();

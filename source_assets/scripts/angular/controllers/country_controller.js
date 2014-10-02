@@ -1,7 +1,7 @@
 (function(){
   var app = angular.module('countryApp', ['ngRoute', 'countryAppControllers', 'ui.bootstrap', 'mathFilters'], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('//');
-    $interpolateProvider.endSymbol('//');
+    $interpolateProvider.startSymbol('%%');
+    $interpolateProvider.endSymbol('%%');
   });
 
   app.config(['$routeProvider', function($routeProvider) {
@@ -49,7 +49,19 @@
 
 
   // Module
-  var countryAppControllers = angular.module('countryAppControllers', []);  
+  var countryAppControllers = angular.module('countryAppControllers', []);
+  
+  countryAppControllers.controller('StatsController', ['$http', function($http) {
+    var _self = this;
+    // Data.
+    this.policyCount = 0;
+
+    var url = CS.policyProxy + 'policy?limit=1&country=' + CS.countryId.toUpperCase();
+    $http.get(url).success(function(data) {
+      _self.policyCount = data.metaData.totalResults;
+    });
+
+  }]);
 
   // Controller for the navigation to activate the right tab.
   countryAppControllers.controller('CountryTabsController', ['$http', '$route', function($http, $route) {
@@ -61,11 +73,9 @@
   // Controller for the DETAILS TAB
   countryAppControllers.controller('DetailsTabController', ['$http', '$route', 'CountryData', function($http, $route, CountryData) {
     var _self = this;
-
     // Data.
     this.parameters = [];
 
-    setupCommonTableMethods(_self);
     setupCommonParamDetailTableMethods(_self);
 
     CountryData.get(function(data) {
@@ -76,30 +86,25 @@
   // Controller for the STATES TAB
   countryAppControllers.controller('StatesTabController', ['$http', '$route', '$location', 'CountryData', function($http, $route, $location, CountryData) {
     var _self = this;
-
+    // Data
+    this.states = [];
     // If there are no states for the country redirect.
     if (!CS.countryHasStates) {
       $location.path('/details');
     }
 
-    // Data
-    this.states = [];
-
-    setupCommonTableMethods(_self);
-
-    this.getStateUrl = function(state) {
-      var iso = state.iso.toLowerCase();
-      return _self.getTranslatedUrl('state', iso);
-    };
+    setupCommonCountryListMethods(_self);
+    // Set sort.
+    this.setSort('score');
 
     CountryData.get(function(data) {
       _self.states = data.states;
       // Order states parameter array.
-      angular.forEach(_self.states, function(state) {
+      /*angular.forEach(_self.states, function(state) {
         state.parameters.sort(function(a, b) {
           return a.id > b.id;
         });
-      });
+      });*/
     });
 
   }]);

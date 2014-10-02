@@ -14,9 +14,10 @@
     });
     return arr;
   };
-
+  
   // When switching languages the url must reflect the current one
   // otherwise the page will not load properly.
+  // This is done with jQuery because it's outside the angular scope.
   var updateLangSwitcherUrl = function(new_url) {
     $('.lang-menu a').each(function() {
       var url;
@@ -67,7 +68,6 @@
     return {
       restrict: 'AE',
       link: function () {
-        console.log('asdasd');
         initDropdown();
       }
     };
@@ -157,7 +157,7 @@
 
   app.controller('policyListController', function() {});
 
-  app.controller('policyFiltersController', ['$http', '$filter', '$rootScope', '$location', 'queryStringData', function($http, $filter, $rootScope, $location, queryStringData) {
+  app.controller('policyFiltersController', ['$http', '$filter', '$rootScope', '$scope', '$location', 'queryStringData', function($http, $filter, $rootScope, $scope, $location, queryStringData) {
     var _self = this;
 
     this.filterData = {};
@@ -201,6 +201,8 @@
     });
 
     $rootScope.$on('$locationChangeSuccess', function() {
+      $scope.currentPath = $location.url();
+      // Update language switcher url.
       updateLangSwitcherUrl($location.url());
     });
 
@@ -303,7 +305,7 @@
       }
 
       $http.get(CS.policyProxy + 'policy' + queryString).success(function(data) {
-        _self.policies = objToArray(data.listData);
+        _self.policies = data.listData;
         _self.totalItems = data.metaData.totalResults;
         _self.loadingData = false;
       });
@@ -317,7 +319,9 @@
     getPolicies();
   }]);
 
-  app.controller('policyController', ['$http', '$routeParams', '$location', function($http, $routeParams, $location) {
+  app.controller('policyController', ['$http', '$routeParams', '$location', '$scope', function($http, $routeParams, $location, $scope) {
+    // Update language switcher url.
+    $scope.currentPath = $location.url();
     // Update language switcher url.
     updateLangSwitcherUrl($location.url());
 

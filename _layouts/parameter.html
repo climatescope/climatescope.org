@@ -12,86 +12,37 @@ conf:
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
-<script>
-  CS.parameterId = {{page.id}};
-</script>
+<script>CS.parameterId = {{page.id}};</script>
+<div ng-app="parameterApp">
 
-<div class="row--contained">
-
-  <div class="col--main prose-copy">
-    <h2>Description</h2>
-    {{ content }}
-  </div>
-
-  <div class="col--sec prose-copy">
-    {% case language %}
-    {% when 'en' %}
-      <dl class="stats-list">
-        <dt>Weight</dt>
-        <dd>40<sup>%</sup></dd>
-        <dt>Highest score <small>(Brazil)</small></dt>
-        <dd>2.25</dd>
-        <dt>Lowest score <small>(Botswana)</small></dt>
-        <dd>0.83</dd>
-      </dl>
-
-    {% when 'es' %}
-
-      <dl class="stats-list">
-        <dt>Weight</dt>
-        <dd>40<sup>%</sup></dd>
-        <dt>Highest score <small>(Brazil)</small></dt>
-        <dd>2.25</dd>
-        <dt>Lowest score <small>(Botswana)</small></dt>
-        <dd>0.83</dd>
-      </dl>
-
-    {% endcase %}
-  </div>
-
-</div>
-
-<div class="row--contained">
+  <div class="row--contained">
+    <div class="col--main prose-copy">
+      <h2>Description</h2>
+      {{ content }}
+    </div>
   
-  <div ng-app="parameterApp" ng-controller="CountryListController as countryTable" ng-cloak>
-    <table class="table parameter-table">
-      <thead>
-        <tr>
-          <th>&nbsp;</th>
-          {% case language %}
-          {% when 'en' %}
-          <th><a href="" ng-click="countryTable.setSort('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Parameter rank</a></th>
-          <th><a href="" ng-click="countryTable.setSort('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">Country</a></th>
-          <th><a href="" ng-click="countryTable.setSort('score[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('score[0].value')]">Overall score</a></th>
-          <th><span class="visually-hidden">Parameter score</span> <small>0</small> <small>5</small> <small>// countryTable.scoreAvg | round:2 //</small></th>
-          <th><a href="" ng-click="countryTable.setSort('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
-          {% when 'es' %}
-          <th><a href="" ng-click="countryTable.setSort('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Puntaje tema</a></th>
-          <th><a href="" ng-click="countryTable.setSort('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
-          <th><a href="" ng-click="countryTable.setSort('score[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('score[0].value')]">Overall score ES</a></th>
-          <th><span class="visually-hidden">Puntaje tema</span> <small>0</small> <small>5</small> <small>// countryTable.scoreAvg | round:2 //</small></th>
-          <th><a href="" ng-click="countryTable.setSort('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Red</a></th>
-          {% endcase %}
-        </tr>
-      </thead>
-      <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortField:countryTable.sortReverse">
-        <tr>
-          <td>&nbsp;</td>
-          <td class="cell-rank">//country.data[0].overall_ranking//</td>
-          <td class="cell-country"><a href="//countryTable.getCountryUrl(country)//" title="Go to country page">//country.name//</a></td>
-          <td>// country.score[0].value | round:2 //</td>
-          <td class="cell-graph">
-            <div class="table-graph">
-              <span class="avg" style="left: //(countryTable.scoreAvg * 100 / 5) + '%'//"></span>
-              <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//countryTable.getTooltipContent(country.data[0])//">
-                <li ng-class="'param-' + countryTable.parameter.id" style="width: //(country.data[0].value * 100 / 5) + '%'//"><span class="visually-hidden">// country.data[0].value //</span>&nbsp;</li>
-              </ul>
-            </div>
-          </td>
-          <td><em class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>// country.grid //</span></em></td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="col--sec prose-copy" ng-controller="StatsController as statsCrtl" ng-cloak>
+      {% case language %}
+      {% when 'en' %}
+        <h2>Regional average</h2>
+        <dl class="stats-list">
+          <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %%</dt>
+          <dd ng-repeat-end>%% region.parameters[0].data[0].mean | round:2 %%</dd>
+        </dl>
+  
+      {% when 'es' %}
+  
+        <h2>Regional average</h2>
+        <dl class="stats-list">
+          <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %%</dt>
+          <dd ng-repeat-end>%% region.parameters[0].data[0].mean | round:2 %%</dd>
+        </dl>
+  
+      {% endcase %}
+    </div>
   </div>
 
+  <div class="row--contained" ng-controller="CountryListController as countryTable" ng-cloak>
+    {% include country_list_param_table.html %}
+  </div>
 </div>

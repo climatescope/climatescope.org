@@ -8,4 +8,17 @@
     };
   });
   
+  mathFilters.filter('leadingZero', function() {
+    return function(input, digits) {
+      var count = input.toString().length;
+      if (count < digits) {
+        var total = digits - count;
+        for (var i = 0; i < total; i++) {
+          input = '0' + input;
+        }
+      }
+      return input;
+    };
+  });
+  
 })();

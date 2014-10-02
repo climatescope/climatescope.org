@@ -1,0 +1,37 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+<table class="table country-table">
+  <thead>
+    <tr>
+      {% case language %}
+      {% when 'en' %}
+      <th><a href="" ng-click="statesCtrl.setSort('state_ranking')" class="sort" ng-class="[statesCtrl.checkSortClasses('state_ranking')]">Rank</a></th>
+      <th><a href="" ng-click="statesCtrl.setSort('name')" class="sort" ng-class="[statesCtrl.checkSortClasses('name')]">State</a></th>
+      <th><a href="" ng-click="statesCtrl.setSort('score')" class="sort" ng-class="[statesCtrl.checkSortClasses('score')]">Score</a></th>
+      <th><span class="visually-hidden">Topics:</span> 0.0 - 5.0</th>
+      {% when 'es' %}
+      <th><a href="" ng-click="statesCtrl.setSort('state_ranking')" class="sort" ng-class="[statesCtrl.checkSortClasses('state_ranking')]">Posición</a></th>
+      <th><a href="" ng-click="statesCtrl.setSort('name')" class="sort" ng-class="[statesCtrl.checkSortClasses('name')]">Estado</a></th>
+      <th><a href="" ng-click="statesCtrl.setSort('score')" class="sort" ng-class="[statesCtrl.checkSortClasses('score')]">Puntaje</a></th>
+      <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
+      {% endcase %}
+    </tr>
+  </thead>
+  <tbody ng-repeat="state in statesCtrl.states | orderBy:statesCtrl.sortField:statesCtrl.sortReverse">
+    <tr>
+      <td class="cell-rank">%% state.state_ranking | leadingZero:2 %%</td>
+      <td class="cell-country"><a href="%% statesCtrl.getStateUrl(state) %%">%% state.name %%</a></td>
+      <td>%%state.score | round:2 %%</td>
+      <td>
+        <div class="table-graph">
+          <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%% statesCtrl.getTooltipContent(state.parameters) %%">
+            <li ng-repeat="param in state.parameters" ng-class="'param-' + param.id" style="width: %% statesCtrl.calcBarSegment(param) %%"><span class="visually-hidden">%% param.value %%</span>&nbsp;</li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
