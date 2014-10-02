@@ -1,0 +1,27 @@
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+
+<div class="row--contained">
+  <div class="intro-block">
+    {% case language %}
+    {% when 'en' %}
+
+    <h2 class="intro-block__title">Assessing the Climate for Climate Investment</h2>
+    <div class="intro-block__body">
+      <p>The Global Climatescope is an interactive index and tool that ranks and profiles 55 countries worldwide according to their investment climate for attracting capital for clean energy sources. Lorem ipsum dolor sit amet lorem.</p>
+      <p><a href="{{site.domain}}/en/project" class="bttn bttn-success go" title="Learn more">Learn more</a></p>
+    </div>
+
+    {% when 'es' %}
+    <h2 class="intro-block__title">Assessing the Climate for Climate Investment ES</h2>
+    <div class="intro-block__body">
+      <p>The Global Climatescope is an interactive index and tool that ranks and profiles 55 countries worldwide according to their investment climate for attracting capital for clean energy sources. Lorem ipsum dolor sit amet lorem.</p>
+      <p><a href="{{site.domain}}/es/proyecto" class="bttn bttn-success go" title="Learn more">Learn more</a></p>
+    </div>
+
+    {% endcase %}
+  </div>
+</div>
