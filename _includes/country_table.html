@@ -10,15 +10,15 @@
         <th>&nbsp;</th>
         {% case language %}
         {% when 'en' %}
-        <th><a href="" ng-click="countryTable.setSort('overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('overall_ranking')]">Rank</a></th>
+        <th><a href="" ng-click="countryTable.setSort('overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('overall_ranking')]">Global Rank</a></th>
         <th><a href="" ng-click="countryTable.setSort('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">Country</a></th>
-        <th><a href="" ng-click="countryTable.setSort('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Score</a></th>
+        <th><a href="" ng-click="countryTable.setSort('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Global Score</a></th>
         <th><span class="visually-hidden">Topics:</span> 0.0 - 5.0</th>
         <th><a href="" ng-click="countryTable.setSort('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
         {% when 'es' %}
-        <th><a href="" ng-click="countryTable.setSort('overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('overall_ranking')]">Posición</a></th>
+        <th><a href="" ng-click="countryTable.setSort('overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('overall_ranking')]">Posición Global</a></th>
         <th><a href="" ng-click="countryTable.setSort('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
-        <th><a href="" ng-click="countryTable.setSort('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Puntaje</a></th>
+        <th><a href="" ng-click="countryTable.setSort('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Puntaje Global</a></th>
         <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
         <th><a href="" ng-click="countryTable.setSort('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Red</a></th>
         {% endcase %}

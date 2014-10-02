@@ -18,11 +18,11 @@
   }
 
   > thead > tr > th {
-    vertical-align: bottom;
+    vertical-align: bottom !important;
     border-bottom: 2px solid tint($primary-color, 90%);
     @extend .hd-label;
     a {
-      display: block;
+      display: inline-block;
       color: tint($primary-color, 60%);
       &.sort:after {
         font-size: 1rem;
