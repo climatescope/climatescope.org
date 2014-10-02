@@ -24,7 +24,9 @@ include_map: true
 
     <div class="row--contained">
       {% include url_index.html %}
-      {% include country_table.html %}
+      <div ng-app="globalApp" ng-controller="CountryListController as countryTable" ng-cloak>
+        {% include country_list_table.html %}
+      </div>
     </div>
   </div>
 </section>

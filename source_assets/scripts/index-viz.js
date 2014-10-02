@@ -417,6 +417,11 @@ $(document).ready(function() {
 
     // listening for weight changer changes
     var updateSliders = debounce(function(e, weight) {
+      // Once the page loads the sliders fire a update-sliders event
+      // and it may happens that the map didn't load yet. To avoid errors
+      // we do a check.
+      if (!land[0]) return;
+      
       var keys = $.map(land[0].rank.parameters, function(d) { return d.id; });
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
         d = land[i].parameters;
