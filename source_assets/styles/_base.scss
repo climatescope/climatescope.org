@@ -268,7 +268,7 @@ a:active{
   @include span(12/12);
   @extend .antialiased;
   font-family: $brand-font-family;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   @media #{$xlarge-up} {
     @include col(4/12);
     margin-bottom: 0;
@@ -366,6 +366,29 @@ a:active{
     }
   }
 }
+
+.intro-block {
+  @include span(12/12);
+  color: #fff;
+  @extend .antialiased;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  &__title {
+    @extend .hd-m;
+  }
+  &__body {
+    font-family: $brand-font-family;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media #{$large-up} {
+    @include col(8/12);
+  }
+}
+
 
 // LAYOUT
 // Common styles
@@ -980,26 +1003,6 @@ a:active{
   }
 }
 
-
-// MODALS
-
-// Welcome
-#welcome {
-  .modal__inner {
-    color: #fff;
-    @extend .antialiased;
-    background: tint($primary-color, 20%) url(../images/layout/cover-img.jpg) no-repeat center bottom;
-    background-size: cover;
-  }
-  .modal__title a em {
-    font-style: normal;
-    color: #fff;
-  }
-  .modal__body {
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-  }
-}
 
 // LISTS
 
