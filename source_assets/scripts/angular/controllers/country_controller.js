@@ -1,7 +1,7 @@
 (function(){
   var app = angular.module('countryApp', ['ngRoute', 'countryAppControllers', 'ui.bootstrap', 'mathFilters'], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('//');
-    $interpolateProvider.endSymbol('//');
+    $interpolateProvider.startSymbol('%%');
+    $interpolateProvider.endSymbol('%%');
   });
 
   app.config(['$routeProvider', function($routeProvider) {

@@ -33,17 +33,17 @@
         <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expandir</span></a>
         {% endcase %}
       </td>
-      <td class="cell-rank">//country.overall_ranking//</td>
-      <td class="cell-country"><a href="//countryTable.getCountryUrl(country)//">//country.name//</a></td>
-      <td>//country.score | round:2 //</td>
+      <td class="cell-rank">%%country.overall_ranking%%</td>
+      <td class="cell-country"><a href="%%countryTable.getCountryUrl(country)%%">%%country.name%%</a></td>
+      <td>%%country.score | round:2 %%</td>
       <td>
         <div class="table-graph">
-          <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//countryTable.getTooltipContent(country.parameters)//">
-            <li ng-repeat="param in country.parameters" ng-class="'param-' + param.id" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+          <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%%countryTable.getTooltipContent(country.parameters)%%">
+            <li ng-repeat="param in country.parameters" ng-class="'param-' + param.id" style="width: %%countryTable.calcBarSegment(param)%%"><span class="visually-hidden">%% param.value %%</span>&nbsp;</li>
           </ul>
         </div>
       </td>
-      <td><em data-title="//country.grid//" class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>//country.grid//</span></em></td>
+      <td><em data-title="%%country.grid%%" class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>%%country.grid%%</span></em></td>
     </tr>
 
     <tr ng-if="country.states.length > 0" class="wrapper-row country-states" style="display: none">
@@ -70,13 +70,13 @@
           </thead>
           <tr ng-repeat="state in country.states | orderBy:'score':true">
             <td>&nbsp;</td>
-            <td class="cell-rank">//state.state_ranking//</td>
-            <td class="cell-country"><a href="//countryTable.getStateUrl(state)//">//state.name//</a></td>
-            <td>//state.score | round:2 //</td>
+            <td class="cell-rank">%%state.state_ranking%%</td>
+            <td class="cell-country"><a href="%%countryTable.getStateUrl(state)%%">%%state.name%%</a></td>
+            <td>%%state.score | round:2 %%</td>
             <td>
               <div class="table-graph">
-                <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="//countryTable.getTooltipContent(state.parameters)//">
-                  <li ng-repeat="param in state.parameters" ng-class="'param-' + param.id" style="width: //countryTable.calcBarSegment(param)//"><span class="visually-hidden">// param.value //</span>&nbsp;</li>
+                <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%%countryTable.getTooltipContent(state.parameters)%%">
+                  <li ng-repeat="param in state.parameters" ng-class="'param-' + param.id" style="width: %%countryTable.calcBarSegment(param)%%"><span class="visually-hidden">%% param.value %%</span>&nbsp;</li>
                 </ul>
               </div>
             </td>

@@ -1,7 +1,7 @@
 (function(){
   var app = angular.module('stateApp', ['ui.bootstrap', 'mathFilters'], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('//');
-    $interpolateProvider.endSymbol('//');
+    $interpolateProvider.startSymbol('%%');
+    $interpolateProvider.endSymbol('%%');
   });
   
   // Controller for the DETAILS

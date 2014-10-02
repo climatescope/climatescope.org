@@ -1,7 +1,7 @@
 (function(){
   var app = angular.module('globalApp', ['ui.bootstrap', 'mathFilters'], function($interpolateProvider) {
-    $interpolateProvider.startSymbol('//');
-    $interpolateProvider.endSymbol('//');
+    $interpolateProvider.startSymbol('%%');
+    $interpolateProvider.endSymbol('%%');
   });
 
   app.controller('CountryListController', ['$http', function($http) {
