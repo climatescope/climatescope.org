@@ -9,13 +9,25 @@
       <th>&nbsp;</th>
       {% case language %}
       {% when 'en' %}
+
+      {% if layout.conf.type == 'region' %}
+      <th><a href="" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">Regional Rank</a></th>
+      {% else %}
       <th><a href="" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">Global Rank</a></th>
+      {% endif %}
+
       <th><a href="" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">Country</a></th>
       <th><a href="" ng-click="countryTable.setSortExpression('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Global Score</a></th>
       <th><span class="visually-hidden">Topics:</span> 0.0 - 5.0</th>
       <th><a href="" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
       {% when 'es' %}
+
+      {% if layout.conf.type == 'region' %}
+      <th><a href="" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">Posición Regional</a></th>
+      {% else %}
       <th><a href="" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">Posición Global</a></th>
+      {% endif %}
+      
       <th><a href="" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
       <th><a href="" ng-click="countryTable.setSortExpression('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Puntaje Global</a></th>
       <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
