@@ -10,13 +10,10 @@
     this.parameter = {};
     this.countries = [];
     this.scoreAvg = 0;
-
-    setupCommonTableMethods(_self);
-    // Score sort field for when we're using a sort expression.
+    
+    setupCommonCountryListMethods(_self);
+    // Set sort.
     this.sortExpScoreField = '-data[0].value';
-    // setSortExpression() will reverse again.
-    this.sortReverse = false;
-    // Override sortfield.
     this.setSortExpression('data[0].value');
 
     var calcAvgScore = function() {
@@ -27,64 +24,27 @@
       _self.scoreAvg = score / _self.countries.length;
     };
 
-    this.getCountryUrl = function(country) {
-      var iso = country.iso.toLowerCase();
-      return _self.getTranslatedUrl('country', iso);
-    };
-    
-    this.getStateUrl = function(state) {
-      var iso = state.iso.toLowerCase();
-      return _self.getTranslatedUrl('state', iso);
-    };
-
-    this.toggleStates = function($event) {
-      var tbody = jQuery($event.target).closest('tbody');
-      var statesRow = tbody.find('.country-states');
-      if (statesRow.is(':hidden')) {
-        tbody.addClass('open');
-        statesRow.trSlideDown();
-      }
-      else {
-        tbody.removeClass('open');
-        statesRow.trSlideUp();
-      }
-    };
-
+    // Since we're not using object, we get a copy of the original
+    // getTooltipContent() to be able to simulate a call to the parent.
+    var getTooltipContent_orig  = this.getTooltipContent;
     // Override function to only have one parameter.
     this.getTooltipContent = function(data) {
-      var t = '<dl class="params-legend">';
-      var className = 'param-' + _self.parameter.id;
-      t += '<dt class="' + className + '">';
-      t += _self.parameter.name;
-      t += '</dt>';
-      t += '<dd>';
-      t += round(data.value, 2);
-      t += '<small>';
-      // 0.29 * 100 = 28.999999999999
-      // Round to solve the problem.
-      t += round(_self.parameter.weight * 100, 2) + '%';
-      t += '</small>';
-      t += '</dd>';
-      t += '</dl>';
-
-      return t;
+      // The parent getTooltipContent() expects and array of parameter
+      // object with all the data. Since we only have the value we
+      // need to simulate the object and the array.
+      // This is only being done to avoid repeating markup.
+      var param = {
+        id: _self.parameter.id,
+        name: _self.parameter.name,
+        value: data.value,
+        weight: _self.parameter.weight
+      };
+      return getTooltipContent_orig([param]);
     };
 
     // ---- Logic ----
     var url = CS.domain + '/' + CS.lang + '/api/parameters/' + CS.parameterId + '.json';
     $http.get(url).success(function(data) {
-
-      // Order parameter data array and country score
-      // so we don't need to search the value every time.
-      angular.forEach(data.countries, function(country) {
-        country.data.sort(function(a, b) {
-          return b.year - a.year;
-        });
-        country.score.sort(function(a, b) {
-          return b.year - a.year;
-        });
-      });
-
       _self.parameter = data;
       _self.countries = data.countries;
       calcAvgScore();

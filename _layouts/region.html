@@ -58,5 +58,7 @@ conf:
     CS.regionId = '{{page.id}}';
   </script>
   
-  {% include country_table.html %}
+  <div ng-app="regionApp" ng-controller="CountryListController as countryTable" ng-cloak>
+    {% include country_list_table.html %}
+  </div>
 </div>

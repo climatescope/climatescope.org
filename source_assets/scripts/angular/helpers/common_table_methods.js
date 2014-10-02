@@ -1,3 +1,35 @@
+function setupCommonCountryListMethods(scope) {
+  setupCommonTableMethods(scope);
+
+  scope.calcBarSegment = function(param) {
+    weight = param.weight != null ? param.weight : 0.25;
+    return ( param.value * weight * (100/5) ) + '%';
+  };
+  
+  scope.getCountryUrl = function(country) {
+    var iso = country.iso.toLowerCase();
+    return scope.getTranslatedUrl('country', iso);
+  };
+  
+  scope.getStateUrl = function(state) {
+    var iso = state.iso.toLowerCase();
+    return scope.getTranslatedUrl('state', iso);
+  };
+
+  scope.toggleStates = function($event) {
+    var tbody = jQuery($event.target).closest('tbody');
+    var statesRow = tbody.find('.country-states');
+    if (statesRow.is(':hidden')) {
+      tbody.addClass('open');
+      statesRow.trSlideDown();
+    }
+    else {
+      tbody.removeClass('open');
+      statesRow.trSlideUp();
+    }
+  };
+}
+
 /**
  * Common methods used in the table related controllers.
  * Modifies the scope object
@@ -5,11 +37,11 @@
  */
 function setupCommonTableMethods(scope) {
   // Sort default.
-  scope.sortField = 'score';
-  scope.sortReverse = true;
+  scope.sortField = null;
+  scope.sortReverse = false;
   scope.sortExpression = [];
   // Score sort field for when we're using a sort expression.
-  scope.sortExpScoreField = '-score';
+  scope.sortExpScoreField = null;
   
   scope.setSort = function(field) {
     scope.sortField = field;
@@ -36,11 +68,6 @@ function setupCommonTableMethods(scope) {
     else {
       return 'sort-asc';
     }
-  };
-
-  scope.calcBarSegment = function(param) {
-    weight = param.weight != null ? param.weight : 0.25;
-    return ( param.value * weight * (100/5) ) + '%';
   };
   
   scope.getTranslatedUrl = function(subject, id) {
@@ -88,6 +115,8 @@ function setupCommonTableMethods(scope) {
  * @param {Object} scope
  */
 function setupCommonParamDetailTableMethods(scope) {
+  setupCommonTableMethods(scope);
+
   scope.getParamUrl = function(param) {
     return scope.getTranslatedUrl('parameter', param.id);
   };
