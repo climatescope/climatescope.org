@@ -92,13 +92,6 @@
 .parameter-table,
 .country-table {
   table-layout: fixed;
-  .cell-rank,
-  .cell-country {
-    font-weight: $brand-font-bold;
-    a {
-      color: inherit;
-    }
-  }
 
   tr:first-child > th:nth-child(1),
   tr:first-child > td:nth-child(1) {
@@ -134,15 +127,6 @@
   }
 }
 
-.policies-table {
-  .cell-policy-name {
-    font-weight: $brand-font-bold;
-    a {
-      color: inherit;
-    }
-  }
-}
-
 .detailed-data {
   .cell-hd {
     @extend .hd-label;
@@ -166,3 +150,14 @@
     }
   }
 }
+
+// Misc
+
+.table {
+  .cell-rank,
+  .cell-country,
+  .cell-policy-name {
+    font-weight: $brand-font-bold;
+  }
+}
+
