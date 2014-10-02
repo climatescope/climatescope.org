@@ -49,7 +49,19 @@
 
 
   // Module
-  var countryAppControllers = angular.module('countryAppControllers', []);  
+  var countryAppControllers = angular.module('countryAppControllers', []);
+  
+  countryAppControllers.controller('StatsController', ['$http', function($http) {
+    var _self = this;
+    // Data.
+    this.policyCount = 0;
+
+    var url = CS.policyProxy + 'policy?limit=1&country=' + CS.countryId.toUpperCase();
+    $http.get(url).success(function(data) {
+      _self.policyCount = data.metaData.totalResults;
+    });
+
+  }]);
 
   // Controller for the navigation to activate the right tab.
   countryAppControllers.controller('CountryTabsController', ['$http', '$route', function($http, $route) {
