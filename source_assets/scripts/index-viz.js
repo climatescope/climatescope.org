@@ -120,7 +120,7 @@ $(document).ready(function() {
     var g = svg.append('svg:g').attr('class', 'leaflet-zoom-hide');
 
     // placeholder variables to query via http request
-    var land;
+    var land = null;
     var indicators;
 
     // object of svg markers to move on map viewreset
@@ -423,7 +423,7 @@ $(document).ready(function() {
       // Once the page loads the sliders fire a update-sliders event
       // and it may happens that the map didn't load yet. To avoid errors
       // we do a check.
-      if (!land[0]) return;
+      if (land === null) return;
       
       var keys = $.map(land[0].rank.parameters, function(d) { return d.id; });
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
