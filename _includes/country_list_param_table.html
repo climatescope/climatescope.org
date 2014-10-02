@@ -9,16 +9,16 @@
       <th>&nbsp;</th>
       {% case language %}
       {% when 'en' %}
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Parameter rank</a></th>
+      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Topic Rank</a></th>
       <th><a href="" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">Country</a></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Parameter score</a></th>
-      <th><span class="visually-hidden">Parameter score</span> <small>0</small> <small>5</small> <small>%% countryTable.scoreAvg | round:2 %%</small></th>
+      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Topic Score</a></th>
+      <th>0.0 - 5.0 <span class="avg">Average: <strong>%% countryTable.scoreAvg | round:2 %%</strong></span></th>
       <th><a href="" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
       {% when 'es' %}
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Puntaje tema</a></th>
+      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Tema Posición</a></th>
       <th><a href="" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Parameter score ES</a></th>
-      <th><span class="visually-hidden">Puntaje tema</span> <small>0</small> <small>5</small> <small>%% countryTable.scoreAvg | round:2 %%</small></th>
+      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Tema Puntaje</a></th>
+      <th>0.0 - 5.0 <span class="avg">Media: <strong>%% countryTable.scoreAvg | round:2 %%</strong></span></th>
       <th><a href="" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Red</a></th>
       {% endcase %}
     </tr>
