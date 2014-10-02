@@ -8,6 +8,7 @@
     var _self = this;
     // Data.
     this.countries = [];
+    this.rankingField = 'regional_ranking';
     
     setupCommonCountryListMethods(_self);
     // Set sort.
