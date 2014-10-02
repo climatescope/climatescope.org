@@ -37,7 +37,7 @@ conf:
         </ul>
   
       {% when 'es' %}
-  
+        <h2>Average scores</h2>
         <dl class="stats-list">
           <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %% <small>Average score ES</small></dt>
           <dd ng-repeat-end>%% region.score[0].mean | round:2 %%</dd>
