@@ -38,9 +38,9 @@
       <td>%% country.data[0].value | round:2 %%</td>
       <td class="cell-graph">
         <div class="table-graph">
-          <span class="avg" style="left: %%(countryTable.scoreAvg * 100 / 5) + '%'%%"></span>
+          <span class="avg" ng-style="{'left': (countryTable.scoreAvg * 100 / 5) + '%' }"></span>
           <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%%countryTable.getTooltipContent(country.data[0])%%">
-            <li ng-class="'param-' + countryTable.parameter.id" style="width: %%(country.data[0].value * 100 / 5) + '%'%%"><span class="visually-hidden">%% country.data[0].value %%</span>&nbsp;</li>
+            <li ng-class="'param-' + countryTable.parameter.id" ng-style="{'width': (country.data[0].value * 100 / 5) + '%'}"><span class="visually-hidden">%% country.data[0].value %%</span>&nbsp;</li>
           </ul>
         </div>
       </td>
@@ -77,7 +77,7 @@
           <td>
             <div class="table-graph">
               <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%%countryTable.getTooltipContent(state)%%">
-                <li ng-class="'param-' + countryTable.parameter.id" style="width: %%(state.value * 100 / 5) + '%'%%"><span class="visually-hidden">%% state.value %%</span>&nbsp;</li>
+                <li ng-class="'param-' + countryTable.parameter.id" ng-style="{'width': (state.value * 100 / 5) + '%'}"><span class="visually-hidden">%% state.value %%</span>&nbsp;</li>
               </ul>
             </div>
           </td>
