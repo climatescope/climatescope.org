@@ -49,6 +49,9 @@ input[type=submit] {
   @include transition-duration(0.2s);
   @include transition-timing-function(ease);
   @include transition-delay(0);
+  @media print {
+    display: none;
+  }
 }
 
 // VARIATIONS

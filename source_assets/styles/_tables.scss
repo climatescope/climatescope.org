@@ -87,6 +87,12 @@
       @include opacity(0.3);
   }
 
+  @media print {
+    .expand-toggle,
+    > thead > tr > th a:after {
+      display: none;
+    }
+  }
 }
 
 .parameter-table,
