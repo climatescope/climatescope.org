@@ -56,5 +56,5 @@ function debounce(func, wait, immediate) {
 // From http://www.jacklmoore.com/notes/rounding-in-javascript/
 /* jshint unused: false */
 function round(value, decimals) {
-    return Number(Math.round(value+'e'+decimals)+'e-'+decimals);
+  return isNaN(value) || value == null ? null : Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 }
