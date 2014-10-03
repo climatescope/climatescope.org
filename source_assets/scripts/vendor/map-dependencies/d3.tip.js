@@ -57,7 +57,11 @@
       transform = transform.slice(transform.indexOf('(') + 1, transform.indexOf(')')).split(', ');
 
       nodel.html(content)
-        .style({ opacity: 1, 'pointer-events': 'all' })
+        .style({
+            //opacity: 1,
+            display: 'block',
+            'pointer-events': 'all'
+        })
 
       while(i--) nodel.classed(directions[i], false)
       coords = direction_callbacks.get(dir).apply(this)
@@ -81,7 +85,11 @@
     // Returns a tip
     tip.hide = function() {
       nodel = d3.select(node)
-      nodel.style({ opacity: 0, 'pointer-events': 'none' })
+      nodel.style({
+          //opacity: 0,
+          display: 'none',
+          'pointer-events': 'none'
+      })
       return tip
     }
 
@@ -247,7 +255,8 @@
       node.style({
         position: 'absolute',
         top: 0,
-        opacity: 0,
+        //opacity: 0,
+        display: 'none',
         'pointer-events': 'none',
         'box-sizing': 'border-box'
       })
