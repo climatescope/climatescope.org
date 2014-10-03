@@ -35,6 +35,15 @@
   padding: 0;
   position: absolute;
   width: 1px;
+  @media print {
+    clip: auto;
+    height: auto;
+    margin: auto;
+    overflow: auto;
+    padding: inherit;
+    position: static;
+    width: auto;
+  }
 }
 
 // Extends the .visually-hidden class to allow the element to be focusable when navigated to via the keyboard

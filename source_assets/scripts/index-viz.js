@@ -34,7 +34,8 @@ $(document).ready(function() {
                           tileLayer: {
                             continuousWorld: false,
                             noWrap: true
-                          }
+                          },
+                          scrollWheelZoom: false,
     }).setView(mapConf.center, mapConf.zoom);
 
     var point = function(x, y) {

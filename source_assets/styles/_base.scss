@@ -16,6 +16,11 @@ body {
   font-weight: $body-font-weight;
   font-style: $body-font-style;
   min-width: 768px;
+  @media print {
+    body {
+      margin: 2cm 0;
+    }
+  }
 }
 
 // Links
@@ -259,6 +264,9 @@ a:active{
 #site-footer {
   background: tint($primary-color, 95%);
   padding: 2rem 0;
+  @media print {
+    display: none;
+  }
 }
 
 
@@ -292,6 +300,9 @@ a:active{
   @include span(12/12);
   @media #{$xlarge-up} {
     @include col(8/12);
+  }
+  @media print {
+    display: none;
   }
 }
 
@@ -472,6 +483,9 @@ a:active{
     width: 100%;
     margin-bottom: 0.75rem;
     display: block;
+  }
+  @media print {
+    display: none;
   }
 }
 
