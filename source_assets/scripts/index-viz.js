@@ -121,14 +121,14 @@ $(document).ready(function() {
     var g = svg.append('svg:g').attr('class', 'leaflet-zoom-hide');
 
     // placeholder variables to query via http request
-    var land;
+    var land = null;
     var indicators;
 
     // object of svg markers to move on map viewreset
     var markers = {
       highlight: [],
       countries: []
-    }
+    };
 
     // 1: top ten; -1: bottom ten; 0: all
     var countryFilter = [
@@ -303,7 +303,7 @@ $(document).ready(function() {
     }
 
     function drawCountries(countries, cls) {
-      var marker = drawMarker(countries, 'country-marker' + cls, 5)
+      var marker = drawMarker(countries, 'country-marker' + cls, 5);
       marker.transition()
           .delay(700)
           .duration(200)
@@ -326,7 +326,7 @@ $(document).ready(function() {
     function drawMarker(data, cls, radius) {
       var markers = g.selectAll('.' + cls)
         .data(data)
-      .enter().append('g')
+        .enter().append('g')
         .attr('class', cls)
         .style('opacity', 0)
         .attr('transform', function(d) {
@@ -365,7 +365,7 @@ $(document).ready(function() {
               }
             });
           }, 100);
-        })
+        });
 
       markers.append('circle')
         .attr('r', radius);
@@ -403,14 +403,17 @@ $(document).ready(function() {
       }
 
       else {
+        // Define function outside for loop because jshint doesn't like it.
+        var transform_func = function(d) {
+          var coords = map.latLngToLayerPoint([
+            d.geometry.coordinates[1],
+            d.geometry.coordinates[0]
+          ]);
+          return 'translate(' + coords.x + ',' + coords.y + ')';
+        };
+
         for (var key in markers) {
-          markers[key].attr('transform', function(d) {
-            var coords = map.latLngToLayerPoint([
-              d.geometry.coordinates[1],
-              d.geometry.coordinates[0]
-            ]);
-            return 'translate(' + coords.x + ',' + coords.y + ')';
-          });
+          markers[key].attr('transform', transform_func);
         }
       }
       tooltip.hide();
@@ -421,7 +424,7 @@ $(document).ready(function() {
       // Once the page loads the sliders fire a update-sliders event
       // and it may happens that the map didn't load yet. To avoid errors
       // we do a check.
-      if (!land[0]) return;
+      if (land === null) return;
       
       var keys = $.map(land[0].rank.parameters, function(d) { return d.id; });
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
