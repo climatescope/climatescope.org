@@ -61,9 +61,9 @@
         </tr>
         <tr ng-repeat="ind in ind_group.indicators" ng-class="{disabled: !ind.active}">
           <td class="cell-ind">%% ind.name %%</td>
-          <td class="cell-rank">%% ind.data[0].overall_ranking %%</td>
+          <td class="cell-rank">%% ind.data[0].overall_ranking || '-' %%</td>
           <td class="cell-score">%% ind.data[0].value | round:3 %%</td>
-          <td class="cell-score">%% ind.data[0].raw.value | round:3 %%<sup>%% ind.data[0].raw.unit %%</sup></td>
+          <td class="cell-score">%% (ind.data[0].raw.value | round:3) || '-' %%<sup>%% ind.data[0].raw.unit %%</sup></td>
           <td class="cell-info"><a href="" title="About this indicator" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>Info</span></a></td>
         </tr>
       </tbody>
