@@ -28,7 +28,7 @@
       <td>
         <div class="table-graph">
           <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%% statesCtrl.getTooltipContent(state.parameters) %%">
-            <li ng-repeat="param in state.parameters" ng-class="'param-' + param.id" style="width: %% statesCtrl.calcBarSegment(param) %%"><span class="visually-hidden">%% param.value %%</span>&nbsp;</li>
+            <li ng-repeat="param in state.parameters" ng-class="'param-' + param.id" ng-style="{'width': statesCtrl.calcBarSegment(param) }"><span class="visually-hidden">%% param.value %%</span>&nbsp;</li>
           </ul>
         </div>
       </td>
