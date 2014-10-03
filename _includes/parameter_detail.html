@@ -42,7 +42,7 @@
           <th><span class="visually-hidden">Parameter</span></th>
           <th>Rank</th>
           <th>Score</th>
-          <th>Raw</th>
+          <th>Value</th>
           <th><span class="visually-hidden">Info</span></th>
         </tr>
       {% when 'es' %}
@@ -50,7 +50,7 @@
           <th><span class="visually-hidden">Tema</span></th>
           <th>Posición</th>
           <th>Puntaje</th>
-          <th>Raw</th>
+          <th>Value</th>
           <th><span class="visually-hidden">Info</span></th>
         </tr>
       {% endcase %}
@@ -63,7 +63,7 @@
           <td class="cell-ind">%% ind.name %%</td>
           <td class="cell-rank">%% ind.data[0].overall_ranking %%</td>
           <td class="cell-score">%% ind.data[0].value | round:3 %%</td>
-          <td class="cell-score">%% ind.data[0].raw.value | round:3 %% %% ind.data[0].raw.unit %%</td>
+          <td class="cell-score">%% ind.data[0].raw.value | round:3 %%<sup>%% ind.data[0].raw.unit %%</sup></td>
           <td class="cell-info"><a href="" title="About this indicator" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>Info</span></a></td>
         </tr>
       </tbody>
