@@ -2,8 +2,8 @@ safe:           false
 domain:         http://localhost:4000
 #domain:         http://demo.flipside.org/climatescope
 name:
-  en:           Global Climatescope
-  es:           Climascopio Global
+  en:           Climatescope
+  es:           Climascopio
 tagline:
   en:           Assessing the Climate for Climate Investment
   es:           Assessing the Climate for Climate Investment ES
