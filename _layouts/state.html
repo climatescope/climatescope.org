@@ -10,99 +10,100 @@ conf:
 <script>
     CS.stateId = '{{page.id}}';
 </script>
-
-<div class="row--full intro">
-  {% include static_map.html %}
+<div ng-app="stateApp">
+  <div class="row--full intro">
+    {% include static_map.html %}
+    <div class="row--contained">
+      <dl class="meta-details">
+        {% case language %}
+        {% when 'en' %}
+  
+        <dt>Gdp</dt>
+        <dd>$2,396bn</dd>
+        <dt>Seven-year Economic Growth Rate</dt>
+        <dd>6%</dd>
+        <dt>Population</dt>
+        <dd>198m</dd>
+        <dt>Total Clean Energy Investments</dt>
+        <dd>$82.2bn</dd>
+        <dt>Installed Power Capacity</dt>
+        <dd>123gw</dd>
+        <dt>Renewable Share</dt>
+        <dd>13%</dd>
+        <dt>Total Clean Energy Generation</dt>
+        <dd>57,400gwh</dd>
+        <dt>Top Energy Authority</dt>
+        <dd>Ministry Of Mines & Energy</dd>
+  
+        {% when 'es' %}
+  
+        <dt>ES Gdp</dt>
+        <dd>$2,396bn</dd>
+        <dt>Seven-year Economic Growth Rate</dt>
+        <dd>6%</dd>
+        <dt>Population</dt>
+        <dd>198m</dd>
+        <dt>Total Clean Energy Investments</dt>
+        <dd>$82.2bn</dd>
+        <dt>Installed Power Capacity</dt>
+        <dd>123gw</dd>
+        <dt>Renewable Share</dt>
+        <dd>13%</dd>
+        <dt>Total Clean Energy Generation</dt>
+        <dd>57,400gwh</dd>
+        <dt>Top Energy Authority</dt>
+        <dd>Ministry Of Mines & Energy</dd>
+  
+        {% endcase %}
+  
+      </dl>
+    </div>
+  </div>
+  
   <div class="row--contained">
-    <dl class="meta-details">
+  
+    <div class="col--main prose-copy">
+      <h2>Summary</h2>
+      {{ content }}
+    </div>
+  
+    <div class="col--sec prose-copy" ng-controller="StatsController as statsCtrl" ng-cloak>
       {% case language %}
       {% when 'en' %}
-
-      <dt>Gdp</dt>
-      <dd>$2,396bn</dd>
-      <dt>Seven-year Economic Growth Rate</dt>
-      <dd>6%</dd>
-      <dt>Population</dt>
-      <dd>198m</dd>
-      <dt>Total Clean Energy Investments</dt>
-      <dd>$82.2bn</dd>
-      <dt>Installed Power Capacity</dt>
-      <dd>123gw</dd>
-      <dt>Renewable Share</dt>
-      <dd>13%</dd>
-      <dt>Total Clean Energy Generation</dt>
-      <dd>57,400gwh</dd>
-      <dt>Top Energy Authority</dt>
-      <dd>Ministry Of Mines & Energy</dd>
-
+        <h2>Performance</h2>
+        <dl class="stats-list">
+          <dt>State Rank</dt>
+          <dd>%% statsCtrl.stateStats.state_ranking | leadingZero:2 %%</dd>
+          <dt>Score</dt>
+          <dd>%% statsCtrl.stateStats.value | round:2 %%</dd>
+        </dl>
+        <ul class="ctas-list">
+          <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
+          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
+        </ul>
+  
       {% when 'es' %}
-
-      <dt>ES Gdp</dt>
-      <dd>$2,396bn</dd>
-      <dt>Seven-year Economic Growth Rate</dt>
-      <dd>6%</dd>
-      <dt>Population</dt>
-      <dd>198m</dd>
-      <dt>Total Clean Energy Investments</dt>
-      <dd>$82.2bn</dd>
-      <dt>Installed Power Capacity</dt>
-      <dd>123gw</dd>
-      <dt>Renewable Share</dt>
-      <dd>13%</dd>
-      <dt>Total Clean Energy Generation</dt>
-      <dd>57,400gwh</dd>
-      <dt>Top Energy Authority</dt>
-      <dd>Ministry Of Mines & Energy</dd>
-
+  
+        <h2>Performance</h2>
+        <dl class="stats-list">
+          <dt>State Rank</dt>
+          <dd>%% statsCtrl.stateStats.state_ranking | leadingZero:2 %%</dd>
+          <dt>Score</dt>
+          <dd>%% statsCtrl.stateStats.value | round:2 %%</dd>
+        </dl>
+        <ul class="ctas-list">
+          <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to ES</a></li>
+          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
+        </ul>
+  
       {% endcase %}
-
-    </dl>
+    </div>
+  
   </div>
-</div>
-
-<div class="row--contained">
-
-  <div class="col--main prose-copy">
-    <h2>Summary</h2>
-    {{ content }}
+  
+  <div class="row--contained">
+    <section id="state-detail" ng-controller="DetailsController as detailsCtrl">
+      {% include parameter_detail.html %}
+    </section>
   </div>
-
-  <div class="col--sec prose-copy">
-    {% case language %}
-    {% when 'en' %}
-      <dl class="stats-list">
-        <dt>Rank</dt>
-        <dd>01</dd>
-        <dt>Score</dt>
-        <dd>2.25</dd>
-      </dl>
-      <ul class="ctas-list">
-        <!-- <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?scountry={{ page.country }}&state={{ page.id }}" title="View policies">View policies <span class="badge">18</span></a></li> -->
-        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies</a></li>
-        <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
-      </ul>
-
-    {% when 'es' %}
-
-      <dl class="stats-list">
-        <dt>Rank</dt>
-        <dd>01</dd>
-        <dt>Score</dt>
-        <dd>2.25</dd>
-      </dl>
-      <ul class="ctas-list">
-        <!-- <li><a class="bttn bttn-cta go" href="{{ site.domain }}/es/politicas/#/?country={{ page.country }}&state={{ page.id }}" title="View policies">View policies ES <span class="badge">18</span></a></li> -->
-        <li><a class="bttn bttn-cta go" href="{{ site.domain }}/es/politicas/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies ES</a></li>
-        <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to ES</a></li>
-      </ul>
-
-    {% endcase %}
-  </div>
-
-</div>
-
-<div class="row--contained" ng-app="stateApp">
-  <section id="state-detail" ng-controller="DetailsController as detailsCtrl">
-    {% include parameter_detail.html %}
-  </section>
 </div>

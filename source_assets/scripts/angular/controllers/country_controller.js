@@ -51,14 +51,20 @@
   // Module
   var countryAppControllers = angular.module('countryAppControllers', []);
   
-  countryAppControllers.controller('StatsController', ['$http', function($http) {
+  countryAppControllers.controller('StatsController', ['$http', 'CountryData', function($http, CountryData) {
     var _self = this;
     // Data.
     this.policyCount = 0;
+    this.countryStats = {};
 
     var url = CS.policyProxy + 'policy?limit=1&country=' + CS.countryId.toUpperCase();
     $http.get(url).success(function(data) {
       _self.policyCount = data.metaData.totalResults;
+    });
+    
+    // Temporarily use country data on the sidebar.
+    CountryData.get(function(data) {
+      _self.countryStats = data.score[0];
     });
 
   }]);

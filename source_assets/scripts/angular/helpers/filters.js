@@ -10,6 +10,9 @@
   
   mathFilters.filter('leadingZero', function() {
     return function(input, digits) {
+      if (isNaN(input) || input === null) {
+        return null;
+      }
       var count = input.toString().length;
       if (count < digits) {
         var total = digits - count;
