@@ -136,14 +136,14 @@ conf:
     </script>
     
     <!-- Template for the Case Study tab -->
-    <script type="text/ng-template" id="case_study.html">
+    <!-- <script type="text/ng-template" id="case_study.html">
       <section id="country-case-study">
         <h1 class="visually-hidden">Case Study</h1>
         <div class="prose">
           <p>Case Study content</p>
         </div>
       </section>
-    </script>
+    </script> -->
     
     <!-- END TEMPLATES -->
     
@@ -154,7 +154,7 @@ conf:
         {% if has_states %}
         <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces</a></li>
         {% endif %}
-        <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li>
+        <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li> -->
   
       {% when 'es' %}
   
@@ -162,7 +162,7 @@ conf:
         {% if has_states %}
         <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces ES</a></li>
         {% endif %}
-        <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study ES</a></li>
+        <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study ES</a></li> -->
       {% endcase %}
     </ul>
     <div ng-view></div>

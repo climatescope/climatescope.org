@@ -17,12 +17,12 @@
         controllerAs: 'statesCtrl',
         activeTab: 'states'
       })
-      .when('/case-study', {
-        templateUrl: 'case_study.html',
-        controller: 'CaseStudyTabController',
-        controllerAs: 'caseStudyCtrl',
-        activeTab: 'case_study'
-      })
+     // .when('/case-study', {
+     //   templateUrl: 'case_study.html',
+     //   controller: 'CaseStudyTabController',
+     //   controllerAs: 'caseStudyCtrl',
+     //   activeTab: 'case_study'
+     // })
       .otherwise({
         redirectTo: '/details'
       });
