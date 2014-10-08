@@ -707,12 +707,14 @@ a:active{
       }
     }
     img {
-      position: absolute;
+      //position: absolute;
       z-index: 1;
-      top: 0;
-      left: 0;
-      max-width: 100%;
+      //top: 0;
+      //left: 0;
+      float: right;
       height: auto;
+      width: 16rem;
+      //max-width: 100%;
     }
   }
   .meta-details {
@@ -738,21 +740,21 @@ a:active{
   @media #{$medium-up} {
     .intro {
       img {
-        top: -12.5%;
+        //top: -12.5%;
       }
     }
   }
   @media #{$large-up} {
     .intro {
       img {
-        top: -25%;
+        //top: -25%;
       }
     }
   }
   @media #{$xlarge-up} {
     .intro {
       img {
-        top: -50%;
+        //top: -50%;
       }
     }
   }
