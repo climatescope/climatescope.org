@@ -57,7 +57,7 @@
     this.policyCount = 0;
     this.countryStats = {};
 
-    var url = CS.policyProxy + 'policy?limit=1&country=' + CS.countryId.toUpperCase();
+    var url = CS.policyProxy + '/policy?limit=1&country=' + CS.countryId.toUpperCase();
     $http.get(url).success(function(data) {
       _self.policyCount = data.metaData.totalResults;
     });

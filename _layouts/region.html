@@ -33,7 +33,7 @@ conf:
           <dd ng-repeat-end>%% region.score[0].mean | round:2 %%</dd>
         </dl>
         <ul class="ctas-list">
-          <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/" title="View the global rank">View the global rank</a></li>
+          <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/" title="View the global rank">View the global rank</a></li>
         </ul>
   
       {% when 'es' %}
@@ -43,7 +43,7 @@ conf:
           <dd ng-repeat-end>%% region.score[0].mean | round:2 %%</dd>
         </dl>
         <ul class="ctas-list">
-          <li><a class="bttn bttn-cta go" href="{{ site.domain }}/en/" title="View the global rank">View the global rank ES</a></li>
+          <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/" title="View the global rank">View the global rank ES</a></li>
         </ul>
   
       {% endcase %}

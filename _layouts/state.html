@@ -84,7 +84,7 @@ conf:
         </dl>
         <ul class="ctas-list">
           <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
-          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
+          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
         </ul>
   
       {% when 'es' %}
@@ -98,7 +98,7 @@ conf:
         </dl>
         <ul class="ctas-list">
           <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to ES</a></li>
-          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
+          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
         </ul>
   
       {% endcase %}

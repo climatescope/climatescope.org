@@ -1,7 +1,4 @@
 (function() {
-
-  CS.policyProxy = 'http://146.185.136.6/climatescope/';
-
   // All the results from the API come in object format.
   // Repeats can't be sorted when looping over objects
   // Since we don't need the object key, we can safely
@@ -196,7 +193,7 @@
       $rootScope.$broadcast('apply-filters', _self.filters);
     };
 
-    $http.get(CS.policyProxy + 'policy/filter').success(function(data) {
+    $http.get(CS.policyProxy + '/policy/filter').success(function(data) {
       _self.filterData = data;
     });
 
@@ -304,7 +301,7 @@
         queryString = '';
       }
 
-      $http.get(CS.policyProxy + 'policy' + queryString).success(function(data) {
+      $http.get(CS.policyProxy + '/policy' + queryString).success(function(data) {
         _self.policies = data.listData;
         _self.totalItems = data.metaData.totalResults;
         _self.loadingData = false;
@@ -330,7 +327,7 @@
 
     this.loadingData = true;
 
-    $http.get(CS.policyProxy + 'policy/' + $routeParams.policyId).success(function(data) {
+    $http.get(CS.policyProxy + '/policy/' + $routeParams.policyId).success(function(data) {
       _self.policy = data;
       _self.loadingData = false;
     });

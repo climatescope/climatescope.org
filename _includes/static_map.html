@@ -4,11 +4,11 @@
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
 
-<!-- <div class="media"> -->
+<div class="media">
 	{% case language %}
 	{% when 'en' %}
-	<img src="{{ site.domain }}/assets/images/content/maps/en/{{ page.id }}.png" alt="Map of {{ page.title }}" width="512" height="512" />
+	<img src="{{ site.domain }}{{ site.path_prefix }}/assets/images/content/maps/en/{{ page.id }}.png" alt="Map of {{ page.title }}" width="512" height="512" />
 	{% when 'es' %}
-	<img src="{{ site.domain }}/assets/images/content/maps/es/{{ page.id }}.png" alt="Mapa de {{ page.title }}" width="512" height="512" />
+	<img src="{{ site.domain }}{{ site.path_prefix }}/assets/images/content/maps/es/{{ page.id }}.png" alt="Mapa de {{ page.title }}" width="512" height="512" />
 	{% endcase %}
-<!-- </div> -->
+</div>

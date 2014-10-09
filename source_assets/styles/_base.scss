@@ -688,38 +688,14 @@ a:active{
   .intro {
     position: relative;
     overflow: hidden;
-    height: 16rem;
+    // min-height: 16rem;
     z-index: 1;
-    .row--contained {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 2;
-      &:before {
-        content: '';
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-        width: 1px;
-        margin-right: -0.25em; // Adjusts for spacing
-      }
-    }
-    img {
-      //position: absolute;
-      z-index: 1;
-      //top: 0;
-      //left: 0;
-      float: right;
-      height: auto;
-      width: 16rem;
-      //max-width: 100%;
-    }
+    padding: 2rem 0;
+    height: auto;
   }
   .meta-details {
-    display: inline-block;
-    vertical-align: middle;
+    float: left;
+    max-width: 28rem;
     margin-bottom: 0;
     dt {
       clear: left;
@@ -737,25 +713,23 @@ a:active{
       text-transform: uppercase;
     }
   }
-  @media #{$medium-up} {
-    .intro {
-      img {
-        //top: -12.5%;
-      }
+  .media {
+    float: right;
+    margin: -2rem 0;
+    img {
+      display: block;
+      height: auto;
+      width: 16rem;
     }
   }
   @media #{$large-up} {
-    .intro {
-      img {
-        //top: -25%;
-      }
+    .media {
+      margin: -2rem 4rem -2rem 0;
     }
   }
   @media #{$xlarge-up} {
-    .intro {
-      img {
-        //top: -50%;
-      }
+    .media {
+      margin: -2rem 6rem -2rem 0;
     }
   }
 }
@@ -1054,6 +1028,13 @@ a:active{
   }
   .bttn {
     float: right;
+  }
+}
+
+// IE8
+.lt-ie9 {
+  #index-viz {
+    display: none;
   }
 }
 
