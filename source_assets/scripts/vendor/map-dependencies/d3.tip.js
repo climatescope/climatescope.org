@@ -39,7 +39,7 @@
     // Public - show the tooltip on the screen
     //
     // Returns a tip
-    tip.show = function() {
+    tip.centerOnTarget = function() {
       var args = Array.prototype.slice.call(arguments)
       if(args[args.length - 1] instanceof SVGElement) target = args.pop()
 
@@ -78,6 +78,33 @@
       })
 
       return tip
+    }
+
+    tip.centerOnMouse = function() {
+      var args = Array.prototype.slice.call(arguments)
+      if(args[args.length - 1] instanceof SVGElement) target = args.pop()
+
+      var content = html.apply(this, args),
+          i       = directions.length,
+          dir     = direction.apply(this, args),
+          nodel   = d3.select(node);
+
+      nodel.html(content)
+        .style({
+            //opacity: 1,
+            display: 'block',
+            'pointer-events': 'all'
+        })
+
+      while(i--) nodel.classed(directions[i], false)
+
+      nodel.classed(dir, true).style({
+        top: d3.event.pageY - node.offsetHeight - 7 + 'px',
+        left: d3.event.pageX - node.offsetWidth / 2 + 'px'
+      })
+
+      return tip
+
     }
 
     // Public - hide the tooltip

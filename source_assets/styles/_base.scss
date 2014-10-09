@@ -16,6 +16,7 @@ body {
   font-weight: $body-font-weight;
   font-style: $body-font-style;
   min-width: 768px;
+  position: relative;
   @media print {
     body {
       margin: 2cm 0;
@@ -93,7 +94,7 @@ a:active{
       position: absolute;
       z-index: 1;
       font-size: 6rem;
-      @include opacity(0.2); 
+      @include opacity(0.2);
       color: $primary-color;
       line-height: 1;
     }
