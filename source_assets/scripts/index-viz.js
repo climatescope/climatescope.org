@@ -452,11 +452,8 @@ $(document).ready(function() {
   // Since the map holder is index-viz check if it exists.
   // if false, probably isn't the index page so do nothing
   var parent = document.querySelector('#index-viz');
-  if (!parent) {
-    return;
-  }
-  // load the map
-  else {
+  if (parent && CS.gtIE8) {
+    // load the map
     new rank();
   }
 });

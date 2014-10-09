@@ -85,7 +85,10 @@
   </div>
 
   {% if layout.conf.include_map or page.include_map %}
-  <script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/vendor/map-dependencies.min.js"></script>
+  <!--[if gt IE 8]><!-->
+    <script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/vendor/map-dependencies.min.js"></script>
+    <script>CS.gtIE8 = true;</script>
+  <!--<![endif]-->
   {% endif %}
   
   <script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/main.min.js"></script>
