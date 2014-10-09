@@ -34,7 +34,6 @@ conf:
 
 <div ng-app="countryApp">
   <div class="row--full intro">
-    {% include static_map.html %}
     <div class="row--contained">
       <dl class="meta-details">
         {% case language %}
@@ -79,6 +78,7 @@ conf:
         {% endcase %}
   
       </dl>
+      {% include static_map.html %}
     </div>
   </div>
   
