@@ -24,7 +24,7 @@
     this.policyCount = 0;
     this.stateStats = {};
 
-    var url = CS.policyProxy + 'policy?limit=1&state=' + CS.stateId.toUpperCase();
+    var url = CS.policyProxy + '/policy?limit=1&state=' + CS.stateId.toUpperCase();
     $http.get(url).success(function(data) {
       _self.policyCount = data.metaData.totalResults;
     });

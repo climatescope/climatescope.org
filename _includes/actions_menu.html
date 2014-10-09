@@ -7,11 +7,11 @@
 {% assign en_coll = site.collections[page.collection].i18n.en %}
 {% case en_coll %}
 {% when 'en_country' or 'en_state' %}
-  {% capture dlink %}{{ site.domain }}/{{ language }}/download/countries/climatescope-{{ page.id }}.csv{% endcapture %}
+  {% capture dlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/countries/climatescope-{{ page.id }}.csv{% endcapture %}
 {% when 'en_region' %}
-  {% capture dlink %}{{ site.domain }}/{{ language }}/download/regions/climatescope-{{ page.id }}.csv{% endcapture %}
+  {% capture dlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/regions/climatescope-{{ page.id }}.csv{% endcapture %}
 {% when 'en_parameter' %}
-  {% capture dlink %}{{ site.domain }}/{{ language }}/download/parameters/climatescope-{{ page.id }}.csv{% endcapture %}
+  {% capture dlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/parameters/climatescope-{{ page.id }}.csv{% endcapture %}
 {% endcase %}
 
 <ul class="actions-menu">
@@ -29,8 +29,8 @@
   <li class="dropdown">
     <a href="#" title="Share on social networks" class="bttn bttn-success dropdown-toggle share" data-toggle="dropdown">Share</a>
     <ul class="dropdown-menu dropdown-menu-right" role="menu">
-      <li><a href="https://twitter.com/share?url={{ site.domain }}{{ page.url }}" ng-href="https://twitter.com/share?url={{ site.domain }}{{ page.url }}#%% currentPath %%" target="_blank" title="Share on Twitter">Twitter</a></li>
-      <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ page.url }}" ng-href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ page.url }}#%% currentPath %%" target="_blank" title="Share on Facebook">Facebook</a></li>
+      <li><a href="https://twitter.com/share?url={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" ng-href="https://twitter.com/share?url={{ site.domain }}{{ site.path_prefix }}{{ page.url }}#%% currentPath %%" target="_blank" title="Share on Twitter">Twitter</a></li>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" ng-href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ site.path_prefix }}{{ page.url }}#%% currentPath %%" target="_blank" title="Share on Facebook">Facebook</a></li>
     </ul>
   </li>
 
@@ -47,8 +47,8 @@
   <li class="dropdown">
     <a href="#" title="Compartir en redes sociales" class="bttn bttn-success dropdown-toggle share" data-toggle="dropdown">Compartir</a>
     <ul class="dropdown-menu dropdown-menu-right" role="menu">
-      <li><a href="https://twitter.com/share?url={{ site.domain }}{{ page.url }}" ng-href="https://twitter.com/share?url={{ site.domain }}{{ page.url }}#%% currentPath %%" target="_blank" title="Compartir en Twitter">Twitter</a></li>
-      <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ page.url }}" ng-href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ page.url }}#%% currentPath %%" target="_blank" title="Compartir en Facebook">Facebook</a></li>
+      <li><a href="https://twitter.com/share?url={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" ng-href="https://twitter.com/share?url={{ site.domain }}{{ site.path_prefix }}{{ page.url }}#%% currentPath %%" target="_blank" title="Compartir en Twitter">Twitter</a></li>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" ng-href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ site.path_prefix }}{{ page.url }}#%% currentPath %%" target="_blank" title="Compartir en Facebook">Facebook</a></li>
     </ul>
   </li>
 

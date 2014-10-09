@@ -13,30 +13,42 @@
   
   {% include meta.html %}
 
-  <link rel="shortcut icon" href="{{ site.domain }}/assets/images/meta/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="{{ site.domain }}/assets/images/meta/apple-touch-icon.png" />
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.domain }}/assets/images/meta/apple-touch-icon-152x152.png" />
+  <link rel="shortcut icon" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-152x152.png" />
 
-  <link type="text/plain" rel="author" href="{{ site.domain }}/humans.txt" />
-  <link rel="stylesheet" href="{{ site.domain }}/assets/styles/main.css">
+  <link type="text/plain" rel="author" href="{{ site.domain }}{{ site.path_prefix }}/humans.txt" />
+  <link rel="stylesheet" href="{{ site.domain }}{{ site.path_prefix }}/assets/styles/main.css">
 
-  <script src="{{ site.domain }}/assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-  <!--[if lt IE 9]>
-    <script src="{{ site.domain }}/assets/scripts/vendor/selectivizr-1.0.2.min.js"></script>
-    <script src="{{ site.domain }}/assets/scripts/vendor/rem.min.js"></script>
+  <!--[if lte IE 9]>
+    <script src="//cdn.rawgit.com/jpillora/xdomain/0.6.15/dist/0.6/xdomain.min.js" slave="{{ site.pdbproxy }}/proxy.html"></script>
   <![endif]-->
 
+  <script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/vendor/selectivizr-1.0.2.min.js"></script>
+    <script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/vendor/rem.min.js"></script>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+  <![endif]-->
+
+  <!--[if gt IE 8]><!-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/vendor/jquery-2.1.0.min.js"><\/script>');</script>
+  <!--<![endif]-->
+  
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.24/angular-route.min.js"></script>
   <script>
-    var CS = { lang: '{{language}}', domain: '{{site.domain}}' };
+    var CS = { lang: '{{language}}', domain: '{{ site.path_prefix }}', policyProxy: '{{ site.pdbproxy }}' };
   </script>
 </head>
 <body>
@@ -53,7 +65,7 @@
     <header id="site-header" role="banner">
       <div class="row--contained">
         <div id="site-headline">
-          <h1 id="site-title"><a title="{{ site.name[language] }} {{ site.edition }}" href="{{ site.domain }}/{{ language }}/">{{ site.name[language] }} <em>{{ site.edition }}</em></a></h1>
+          <h1 id="site-title"><a title="{{ site.name[language] }} {{ site.edition }}" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/">{{ site.name[language] }} <em>{{ site.edition }}</em></a></h1>
         </div>
         <nav id="prime-nav" role="navigation">
           {% include lang.html %}
@@ -72,19 +84,10 @@
     {% include footer.html %}
   </div>
 
-  <!--[if lt IE 9]>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ site.domain }}/assets/scripts/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ site.domain }}/assets/scripts/vendor/jquery-2.1.0.min.js"><\/script>')</script>
-  <!--<![endif]-->
-  
   {% if layout.conf.include_map or page.include_map %}
-  <script src="{{ site.domain }}/assets/scripts/vendor/map-dependencies.min.js"></script>
+  <script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/vendor/map-dependencies.min.js"></script>
   {% endif %}
   
-  <script src="{{ site.domain }}/assets/scripts/main.min.js"></script>
+  <script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/main.min.js"></script>
 </body>
 </html>
