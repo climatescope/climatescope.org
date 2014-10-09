@@ -25,7 +25,7 @@ $(document).ready(function() {
     var regExp = new RegExp('\/([a-z-]+.csv)$');
     var filename = url.match(regExp)[1];
     
-    var label = CS.lang.toUpperCase() + ' - ' + filename;
+    var label = filename + ' - ' + CS.lang.toUpperCase();
     ga('send', 'event', 'Data', 'Download', label);
   });
 });
