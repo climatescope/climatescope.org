@@ -89,31 +89,37 @@ conf:
       {{ content }}
     </div>
   
-    <div class="col--sec prose-copy" ng-controller="StatsController as statsCrtl" ng-cloak>
+    <div class="col--sec prose-copy" ng-controller="StatsController as statsCtrl" ng-cloak>
       {% case language %}
       {% when 'en' %}
+        <h2>Performance</h2>
         <dl class="stats-list">
-          <dt>Rank</dt>
-          <dd>01</dd>
+          <dt>Overall Rank</dt>
+          <dd>%% statsCtrl.countryStats.overall_ranking | leadingZero:2 %%</dd>
+          <dt>Regional Rank</dt>
+          <dd>%% statsCtrl.countryStats.regional_ranking | leadingZero:2 %%</dd>
           <dt>Score</dt>
-          <dd>2.25</dd>
+          <dd>%% statsCtrl.countryStats.value | round:2 %%</dd>
         </dl>
         <ul class="ctas-list">
           <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
-          <li ng-if="statsCrtl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCrtl.policyCount %%</span></a></li>
+          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}/en/policies/#/?country={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
         </ul>
   
       {% when 'es' %}
   
+        <h2>Performance</h2>
         <dl class="stats-list">
-          <dt>Rank</dt>
-          <dd>01</dd>
+          <dt>Overall Rank</dt>
+          <dd>%% statsCtrl.countryStats.overall_ranking | leadingZero:2 %%</dd>
+          <dt>Regional Rank</dt>
+          <dd>%% statsCtrl.countryStats.regional_ranking | leadingZero:2 %%</dd>
           <dt>Score</dt>
-          <dd>2.25</dd>
+          <dd>%% statsCtrl.countryStats.value | round:2 %%</dd>
         </dl>
         <ul class="ctas-list">
           <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
-          <li ng-if="statsCrtl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}/es/politicas/#/?country={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCrtl.policyCount %%</span></a></li>
+          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}/es/politicas/#/?country={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
         </ul>
   
       {% endcase %}
@@ -136,14 +142,14 @@ conf:
     </script>
     
     <!-- Template for the Case Study tab -->
-    <script type="text/ng-template" id="case_study.html">
+    <!-- <script type="text/ng-template" id="case_study.html">
       <section id="country-case-study">
         <h1 class="visually-hidden">Case Study</h1>
         <div class="prose">
           <p>Case Study content</p>
         </div>
       </section>
-    </script>
+    </script> -->
     
     <!-- END TEMPLATES -->
     
@@ -154,7 +160,7 @@ conf:
         {% if has_states %}
         <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces</a></li>
         {% endif %}
-        <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li>
+        <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li> -->
   
       {% when 'es' %}
   
@@ -162,7 +168,7 @@ conf:
         {% if has_states %}
         <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces ES</a></li>
         {% endif %}
-        <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study ES</a></li>
+        <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study ES</a></li> -->
       {% endcase %}
     </ul>
     <div ng-view></div>

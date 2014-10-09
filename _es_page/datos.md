@@ -11,7 +11,7 @@ lang: es
   <ul class="download-list">
     <li>
       <strong class="term">PDF</strong>
-      <a href="#" title="Download PDF" class="bttn bttn-success download">Download</a>
+      <a href="#" title="Download PDF" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
 </div>
@@ -22,11 +22,11 @@ lang: es
   <ul class="download-list">
     <li>
       <strong class="term">CSV</strong>
-      <a href="#" title="Download CSV" class="bttn bttn-success download">Download</a>
+      <a href="#" title="Download CSV" class="bttn bttn-success download data-download">Download</a>
     </li>
     <li>
       <strong class="term">Excel</strong>
-      <a href="#" title="Download Excel" class="bttn bttn-success download">Download</a>
+      <a href="#" title="Download Excel" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
 </div>
