@@ -329,9 +329,6 @@ $(document).ready(function() {
     }
 
     function drawMarker(data, cls, radius) {
-      for(var i = 0, ii = data.length; i < ii;
-          data[i].layerPoint = map.latLngToLayerPoint([data[i].geometry.coordinates[1],
-                                                        data[i].geometry.coordinates[0]]), ++i);
 
       var markers = g.selectAll('.' + cls)
         .data(data)
