@@ -11,8 +11,21 @@ ga('send', 'pageview');
 // Event tracking.
 $(document).ready(function() {
   // Track downloads.
-  $('.data-download').click(function() {
+  $('.data-download').click(function(e) {
     $(this).attr('target', '_blank');
-    ga('send', 'event', 'download', 'click', $(this).attr('href'));
+    
+    var url = $(this).attr('href');
+    
+    if (url == '#') {
+      e.preventDefault();
+      return;
+    }
+    
+    // Extract the filename from string.
+    var regExp = new RegExp('\/([a-z-]+.csv)$');
+    var filename = url.match(regExp)[1];
+    
+    var label = CS.lang.toUpperCase() + ' - ' + filename;
+    ga('send', 'event', 'Data', 'Download', label);
   });
 });
