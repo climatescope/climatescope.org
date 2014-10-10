@@ -4,26 +4,6 @@
 // Klavika font licensed to the MIF for use on *.global-climatescope.*
 
 @font-face {
-  font-family: 'Klavika'; // 'Klavika Bold'
-  src: url('../fonts/klavika/KlavikaWebBasicBold.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/klavika/KlavikaWebBasicBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/klavika/KlavikaWebBasicBold.woff') format('woff'); /* Modern Browsers */
-
-  font-style:   normal;
-  font-weight:  700;
-}
-
-@font-face {
-  font-family: 'Klavika'; // 'Klavika Bold Italic'
-  src: url('../fonts/klavika/KlavikaWebBasicBoldItalic.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/klavika/KlavikaWebBasicBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/klavika/KlavikaWebBasicBoldItalic.woff') format('woff'); /* Modern Browsers */
-
-  font-style:   italic;
-  font-weight:  700;
-}
-
-@font-face {
   font-family: 'Klavika'; // 'Klavika Regular'
   src: url('../fonts/klavika/KlavikaWebBasicRegular.eot'); /* IE9 Compat Modes */
   src: url('../fonts/klavika/KlavikaWebBasicRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -41,6 +21,26 @@
 
   font-style:   italic;
   font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Bold'
+  src: url('../fonts/klavika/KlavikaWebBasicBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/KlavikaWebBasicBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/KlavikaWebBasicBold.woff') format('woff'); /* Modern Browsers */
+
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Bold Italic'
+  src: url('../fonts/klavika/KlavikaWebBasicBoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/KlavikaWebBasicBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/KlavikaWebBasicBoldItalic.woff') format('woff'); /* Modern Browsers */
+
+  font-style:   italic;
+  font-weight:  700;
 }
 
 
