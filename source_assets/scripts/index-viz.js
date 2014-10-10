@@ -111,6 +111,8 @@ $(document).ready(function() {
         ].join(' ');
     }); // end tooltip html fn
 
+    var showToolTip = Modernizr.touch ? tooltip.centerOnMouse : tooltip.centerOnTarget;
+
     // UI element for toggling the map
     var $countryFilter = $('<div>', {
         'class': 'leaflet-control bttn-group bttn-group-s bttn-list map-country-toggle'
@@ -148,7 +150,9 @@ $(document).ready(function() {
     // two switches to detect whether marker is clicked,
     // and whether mouse is over tooltip
     var clicked = false;
-    var mouseInFeature = false;
+    var mouseState = {
+      hover: false
+    };
 
     // allRanking is true when everything is ranked
     // this happens at zoom levels larger than allRankingLevel
@@ -246,17 +250,17 @@ $(document).ready(function() {
       // to the tooltip itself
       var $tooltip = $('#index-viz-tooltip');
       $tooltip.on('mouseenter', function() {
-        mouseInFeature = true;
+        mouseState.hover = true;
       })
       .on('mouseleave', function() {
-        mouseInFeature = false;
+        mouseState.hover = false;
         if (!clicked) {
           tooltip.hide();
         }
       })
       .on('click', '.close', function() {
         tooltip.hide();
-        mouseInFeature = false;
+        mouseState.hover = false;
       });
     });
 
@@ -315,6 +319,7 @@ $(document).ready(function() {
       var marker = drawMarker(highlighted, 'rank-marker' + cls, 16);
       marker.append('text')
         .attr('dy', '6px')
+        .attr('pointer-events', 'none')
         .text(function(d) { return d.d < 10 ? '0' + d.d : d.d; });
       marker.transition()
         .delay(function(d, i) { return 200 + i * 20; })
@@ -324,29 +329,36 @@ $(document).ready(function() {
     }
 
     function drawMarker(data, cls, radius) {
+
       var markers = g.selectAll('.' + cls)
         .data(data)
         .enter().append('g')
         .attr('class', cls)
         .style('opacity', 0)
+
         .attr('transform', function(d) {
           var coords = map.latLngToLayerPoint([
             d.geometry.coordinates[1],
             d.geometry.coordinates[0]
           ]);
           return 'translate(' + coords.x + ',' + coords.y + ')';
-        })
+        });
+
+      markers.append('circle')
+        .attr('r', radius)
 
         .on('mouseover', function(d) {
-          mouseInFeature = true;
-          if (!clicked) { tooltip.show(d); }
+          mouseState.hover = true;
+          if (!clicked) {
+            showToolTip(d);
+          }
         })
 
         .on('mouseout', function() {
-          mouseInFeature = false;
+          mouseState.hover = false;
           if (!clicked) {
             window.setTimeout(function() {
-              if (!mouseInFeature) {
+              if (!mouseState.hover) {
                 tooltip.hide();
               }
             }, 300);
@@ -355,7 +367,7 @@ $(document).ready(function() {
 
         .on('click', function(d) {
           clicked = true;
-          tooltip.show(d);
+          showToolTip(d);
           // close tooltip on next click, unless it's on another circle el
           window.setTimeout(function() {
             $(document).one('click', function(e) {
@@ -366,9 +378,6 @@ $(document).ready(function() {
             });
           }, 100);
         });
-
-      markers.append('circle')
-        .attr('r', radius);
 
       return markers;
     }
@@ -425,7 +434,7 @@ $(document).ready(function() {
       // and it may happens that the map didn't load yet. To avoid errors
       // we do a check.
       if (land === null) return;
-      
+
       var keys = $.map(land[0].rank.parameters, function(d) { return d.id; });
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
         d = land[i].parameters;
