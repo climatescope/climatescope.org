@@ -39,6 +39,7 @@
 
   app.filter('nl2br', ['$sce', function($sce) {
     return function(msg, is_xhtml) {
+      if (!msg || msg === null) return null;
       var is_xhtml = is_xhtml || true;
       var breakTag = (is_xhtml) ? '<br />' : '<br>';
       var msg = (msg + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + breakTag + '$2');
