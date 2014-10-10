@@ -149,13 +149,13 @@
       <div class="layout--entry__body">
         <div class="row--contained" ng-if="!policyCtrl.loadingData">
           <div class="col--main">
-            <section>
+            <section class="blk">
               <h1>Overview</h1>
             	<div class="abstract" ng-bind-html="policyCtrl.policy.abstract | nl2br">%%policyCtrl.policy.abstract%%</div>
             	<div class="description" ng-bind-html="policyCtrl.policy.description | nl2br"></div>
             </section>
             
-            <section>
+            <section class="blk">
               <h1>Policy actions</h1>
             	<dl>
             		<dt ng-if="policyCtrl.policy.effectiveStartDate">Effective start date</dt>
@@ -173,7 +173,7 @@
             	</dl>
             </section>
             
-            <section>
+            <section class="blk">
             	<h1>Subsector</h1>
         			<ul>
         				<li ng-repeat="policySubsector in policyCtrl.policy.subsector">%%policySubsector.name%%</li>
@@ -183,14 +183,14 @@
           </div>
         
           <div class="col--sec">
-            <section>
+            <section class="blk">
             	<h1>Countries</h1>
         			<ul>
         				<li ng-repeat="policyCountry in policyCtrl.policy.country">%%policyCountry.name%%</li>
         			</ul>
             </section>
             
-            <section>
+            <section class="blk">
             	<h1>Attributes</h1>
             	<dl>
             		<dt>Status</dt>

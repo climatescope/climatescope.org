@@ -491,7 +491,7 @@ a:active{
 
 .col--main {
   @include col(8/12);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   .layout--page & {
     @include col(12/12);
   }
@@ -510,9 +510,9 @@ a:active{
 
 .col--sec {
   @include col(4/12);
-  margin-bottom: 2rem;
-  @media #{$large-up} {
-    @include col(4/12);
+  margin-bottom: 3rem;
+  .lt-ie9 & {
+    margin-right: 0 !important;
   }
 }
 
@@ -688,7 +688,6 @@ a:active{
   .intro {
     position: relative;
     overflow: hidden;
-    // min-height: 16rem;
     z-index: 1;
     padding: 2rem 0;
     height: auto;
@@ -716,10 +715,12 @@ a:active{
   .media {
     float: right;
     margin: -2rem 0;
+    width: 16rem;
+    height: 16rem;
     img {
-      display: block;
-      height: auto;
-      width: 16rem;
+      width: inherit;  /* This makes the next two lines work in IE8. */
+      max-width: 100%;
+      height: auto; 
     }
   }
   @media #{$large-up} {
@@ -786,6 +787,9 @@ a:active{
       padding: 0;
       border: 0;
     }
+    .lt-ie9 & {
+      margin-right: 0 !important;
+    }
   }
   &__table {
     @include col(12/12);
@@ -810,6 +814,9 @@ a:active{
     }
     &__graph {
       @include col(4/12);
+      .lt-ie9 & {
+        margin-right: 0 !important;
+      }
     }
   }
 }
@@ -882,7 +889,7 @@ a:active{
 .layout--entry.policies {
   .col--main,
   .col--sec {
-    section {
+    .blk {
       padding-bottom: 2rem;
       margin-bottom: 2rem;
       border-bottom: 1px solid tint($primary-color, 90%);
@@ -1036,6 +1043,21 @@ a:active{
   #index-viz {
     display: none;
   }
+}
+
+\:article,
+\:aside,
+\:details,
+\:figcaption,
+\:figure,
+\:footer,
+\:header,
+\:hgroup,
+\:main,
+\:nav,
+\:section,
+\:summary {
+  display: block;
 }
 
 
