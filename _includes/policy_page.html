@@ -13,7 +13,12 @@
     <header class="layout--hub__header" ng-controller="policyFiltersController as filterCtrl">
       <div class="row--contained">
         <div class="layout--hub__heading">
+          {% case language %}
+          {% when 'en' %}
           <h1 class="layout--hub__title">Policies</h1>
+          {% when 'es' %}
+          <h1 class="layout--hub__title">Politicas</h1>
+          {% endcase %}
           <a href="" class="reset" title="Reset filters" ng-click="filterCtrl.disableFilters()"><span>Reset</span></a>
         </div>
         <div class="layout--hub__tools" init-dropdown>
@@ -23,28 +28,48 @@
         <div class="layout--hub__controls">
           
           <div class="control">
+            {% case language %}
+            {% when 'en' %}
             <label class="control-title" for="policy_country">Country</label>
+            {% when 'es' %}
+            <label class="control-title" for="policy_country">País</label>
+            {% endcase %}
             <select class="sllt sllt-m" id="policy_country" name="policy_country" ng-model="filterCtrl.filters.country" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.country)" ng-change="filterCtrl.filters.state = null">
               <option value="">All</option>
             </select>
           </div>
           
           <div class="control">
-            <label class="control-title" for="policy_state">State</label>
+            {% case language %}
+            {% when 'en' %}
+            <label class="control-title" for="policy_state">State / province</label>
+            {% when 'es' %}
+            <label class="control-title" for="policy_state">Estado / provincia</label>
+            {% endcase %}
             <select class="sllt sllt-m" id="policy_state" name="policy_state" ng-model="filterCtrl.filters.state" ng-options="value.id as value.name for value in filterCtrl.getSelectOptsState(filterCtrl.filterData.state)" ng-disabled="!filterCtrl.getSelectOptsState(filterCtrl.filterData.state).length">
               <option value="">All</option>
             </select>
           </div>
             
           <div class="control">
+            {% case language %}
+            {% when 'en' %}
             <label class="control-title" class="control-title" for="policy_status">Status</label>
+            {% when 'es' %}
+            <label class="control-title" class="control-title" for="policy_status">Estatus</label>
+            {% endcase %}
             <select class="sllt sllt-m" id="policy_status" name="policy_status" ng-model="filterCtrl.filters.status" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.status)">
               <option value="">All</option>
             </select>
           </div>
           
           <div class="control">
-            <button ng-click="filterCtrl.apply()" class="bttn bttn-default bttn-m">Apply</button>
+            {% case language %}
+            {% when 'en' %}
+            <button ng-click="filterCtrl.apply()" class="bttn bttn-default bttn-m">Filter</button>
+            {% when 'es' %}
+            <button ng-click="filterCtrl.apply()" class="bttn bttn-default bttn-m">Filtrar</button>
+            {% endcase %}
           </div>
           
           <!-- <div class="control">
@@ -65,11 +90,20 @@
         <table class="table policies-table" ng-show="tableCtrl.policies.length > 0" ng-if="!tableCtrl.loadingData">
           <thead>
             <tr>
-              <th><a href="" ng-click="tableCtrl.setSort('name')" class="sort" ng-class="[tableCtrl.checkSortClasses('name')]">Policy Name</a></th>
+            {% case language %}
+            {% when 'en' %}
+              <th><a href="" ng-click="tableCtrl.setSort('name')" class="sort" ng-class="[tableCtrl.checkSortClasses('name')]">Policy name</a></th>
               <th><a href="" ng-click="tableCtrl.setSort('country')" class="sort" ng-class="[tableCtrl.checkSortClasses('country')]">Country</a></th>
-              <th><a href="" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">State</a></th>
+              <th><a href="" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">State / province</a></th>
               <th>Policy Mechanism</th>
               <th><a href="" ng-click="tableCtrl.setSort('status')" class="sort" ng-class="[tableCtrl.checkSortClasses('status')]">Status</a></th>
+            {% when 'es' %}
+              <th><a href="" ng-click="tableCtrl.setSort('name')" class="sort" ng-class="[tableCtrl.checkSortClasses('name')]">Nome da politica</a></th>
+              <th><a href="" ng-click="tableCtrl.setSort('country')" class="sort" ng-class="[tableCtrl.checkSortClasses('country')]">País</a></th>
+              <th><a href="" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">Estado / provincia</a></th>
+              <th>Policy Mechanism</th>
+              <th><a href="" ng-click="tableCtrl.setSort('status')" class="sort" ng-class="[tableCtrl.checkSortClasses('status')]">Estatus</a></th>
+            {% endcase %}
             </tr>
           </thead>
           <tbody>
@@ -107,11 +141,19 @@
         
         <div pagination page="tableCtrl.currentPage" total-items="tableCtrl.totalItems" items-per-page="tableCtrl.itemsPerPage" max-size="tableCtrl.pagesToShow" on-select-page="tableCtrl.changePage(page)" ng-if="!tableCtrl.loadingData" ng-show="tableCtrl.policies.length > 0"></div>
         
+        {% case language %}
+        {% when 'en' %}
         <div ng-show="tableCtrl.policies.length == 0" ng-if="!tableCtrl.loadingData">No results avaliable with current filters.</div>
-        
         <div ng-if="tableCtrl.loadingData">
           Loading data... Please wait.
         </div>
+        {% when 'es' %}
+        <div ng-show="tableCtrl.policies.length == 0" ng-if="!tableCtrl.loadingData">No fueron encontrados politicas para este conjunto de filtros.</div>
+        <div ng-if="tableCtrl.loadingData">
+          Cargar datos... Por favor espere.
+        </div>
+        {% endcase %}
+        
         
       </div>
     </div>
@@ -130,13 +172,9 @@
 
             {% case language %}
             {% when 'en' %}
-
               <p class="layout--entry__subtitle">Policy</p>
-
             {% when 'es' %}
-
               <p class="layout--entry__subtitle">Politica</p>
-
             {% endcase %}
 
           </div>

@@ -58,16 +58,16 @@ $(document).ready(function() {
           case 'en':
             link_text = "View Country";
             close_text = "Close";
-            rank_text = "Rank";
-            score_text = "Score";
+            rank_text = "Global rank";
+            score_text = "Global score";
             grid_on_text = "On-grid";
             grid_off_text = "Off-grid";
           break;
           case 'es':
             link_text = "Ver País";
             close_text = "Cerrar";
-            rank_text = "Posición";
-            score_text = "Puntaje";
+            rank_text = "Posición global";
+            score_text = "Puntuación global";
             grid_on_text = "On-grid ES";
             grid_off_text = "Off-grid ES";
           break;
@@ -135,6 +135,18 @@ $(document).ready(function() {
       'top-ten',
       'bottom-ten'
     ];
+    var countryFilterLabel = {};
+    switch(CS.lang) {
+      case 'en':
+        countryFilterLabel['top-ten'] = "Top ten";
+        countryFilterLabel['bottom-ten'] = "Bottom ten";
+      break;
+      case 'es':
+        countryFilterLabel['top-ten'] = "Top diez";
+        countryFilterLabel['bottom-ten'] = "Bottom ten";
+      break;
+    }
+
     var visibleCountries = 'top-ten';
     var zoom = map.getZoom();
 
@@ -235,7 +247,7 @@ $(document).ready(function() {
         if (key === 'top-ten') {
           cls = 'active ' + cls;
         }
-        $('<button>', { 'type': 'button', 'class': cls, 'text': key.split('-').join(' ')})
+        $('<button>', { 'type': 'button', 'class': cls, 'text': countryFilterLabel[key]})
           .appendTo($countryFilter);
       });
 

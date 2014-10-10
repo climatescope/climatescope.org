@@ -85,7 +85,13 @@ conf:
   <div class="row--contained">
   
     <div class="col--main prose-copy">
-      <h2>Summary</h2>
+      {% case language %}
+      {% when 'en' %}
+        <h2>Description</h2>
+      {% when 'es' %}
+        <h2>Descripción</h2>
+      {% endcase %}
+
       {{ content }}
     </div>
   
@@ -108,18 +114,18 @@ conf:
   
       {% when 'es' %}
   
-        <h2>Performance</h2>
+        <h2>Desempeño</h2>
         <dl class="stats-list">
-          <dt>Overall Rank</dt>
+          <dt>Posición global</dt>
           <dd>%% statsCtrl.countryStats.overall_ranking | leadingZero:2 %%</dd>
-          <dt>Regional Rank</dt>
+          <dt>Posición regional</dt>
           <dd>%% statsCtrl.countryStats.regional_ranking | leadingZero:2 %%</dd>
-          <dt>Score</dt>
+          <dt>Puntuación</dt>
           <dd>%% statsCtrl.countryStats.value | round:2 %%</dd>
         </dl>
         <ul class="ctas-list">
-          <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
-          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/es/politicas/#/?country={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
+          <li><a class="bttn bttn-cta go" href="#" title="Compare con">Compare con</a></li>
+          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/es/politicas/#/?country={{ page.id | upcase }}" title="Ver politicas">Ver politicas <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
         </ul>
   
       {% endcase %}
@@ -164,9 +170,9 @@ conf:
   
       {% when 'es' %}
   
-        <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="In detail">In detail ES</a></li>
+        <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="En detalle">En detalle</a></li>
         {% if has_states %}
-        <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces ES</a></li>
+        <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="Estados / Provincias">Estados/Provincias</a></li>
         {% endif %}
         <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study ES</a></li> -->
       {% endcase %}
