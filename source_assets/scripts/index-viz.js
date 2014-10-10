@@ -207,7 +207,7 @@ $(document).ready(function() {
         iso = land[i].id;
         if (lookup[iso] !== undef) {
           land[i].rank = indicators[lookup[iso]];
-          land[i].d = land[i].rank.overall_ranking;
+          land[i].d = CS.regionId ? land[i].rank.regional_ranking : land[i].rank.overall_ranking;
           land[i].parameters = {};
 
           // create an object as a property of rank
