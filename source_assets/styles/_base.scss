@@ -688,7 +688,6 @@ a:active{
   .intro {
     position: relative;
     overflow: hidden;
-    // min-height: 16rem;
     z-index: 1;
     padding: 2rem 0;
     height: auto;
@@ -716,10 +715,12 @@ a:active{
   .media {
     float: right;
     margin: -2rem 0;
+    width: 16rem;
+    height: 16rem;
     img {
-      display: block;
-      height: auto;
-      width: 16rem;
+      width: inherit;  /* This makes the next two lines work in IE8. */
+      max-width: 100%;
+      height: auto; 
     }
   }
   @media #{$large-up} {
