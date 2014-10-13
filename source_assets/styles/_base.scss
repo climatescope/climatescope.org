@@ -244,6 +244,7 @@ a:active{
   margin-top: -2rem;
   margin-bottom: 2rem;
   background: tint($primary-color, 95%) !important;
+  z-index: 1;
 }
 
 // STRUCTURE
