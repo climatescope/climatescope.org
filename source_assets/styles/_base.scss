@@ -641,12 +641,15 @@ a:active{
 }
 
 .stats-list {
-  overflow: hidden;
   border-bottom: 1px solid tint($primary-color, 90%);
   margin-bottom: 2rem;
+  position: relative;
+  @extend .clearfix;
   dt, dd {
     border-top: 1px solid tint($primary-color, 90%);
-    float: right;
+    float: left;
+    position: relative;
+    padding: 0.5rem 0;
   }
   > :nth-child(1),
   > :nth-child(2) {
@@ -654,9 +657,8 @@ a:active{
   }
   dt {
     @extend .hd-label;
-    clear: right;
     width: 60%;
-    padding: 0.5rem 0;
+    left: 40%;
     small {
       font-size: inherit;
       display: block;
@@ -664,19 +666,25 @@ a:active{
   }
   dd {
     width: 40%;
+    left: -60%;
     font-family: $brand-font-family;
     font-weight: $brand-font-bold;
     font-size: 2rem;
     line-height: 1;
-    padding: 0.5rem 1rem 0.5rem 0;
     sup {
       font-size: 1rem;
       top: -0.5rem;
     }
   }
   @media #{$large-up} {
-    dt { width: 70%; }
-    dd { width: 30%; }
+    dt {
+      width: 70%;
+      left: 30%;
+    }
+    dd {
+      width: 30%;
+      left: -70%;
+    }
   }
 }
 
@@ -719,9 +727,17 @@ a:active{
     width: 16rem;
     height: 16rem;
     img {
-      width: inherit;  /* This makes the next two lines work in IE8. */
       max-width: 100%;
-      height: auto; 
+      height: auto;
+      display: block;
+    }
+    .lt-ie9 & {
+      width: 272px;
+      height: 272px;
+      img {
+        width: 256px;
+        height: 256px;
+      }
     }
   }
   @media #{$large-up} {
