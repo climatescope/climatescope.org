@@ -58,12 +58,13 @@ module.exports = function(grunt) {
             'source_assets/vendor/noUiSlider/jquery.nouislider.min.js',
             'source_assets/scripts/vendor/jquery.once.min.js'
            ],
-          './assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js': ['source_assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'],
-          './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
-          './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
-          './assets/scripts/vendor/selectivizr-1.0.2.min.js': ['source_assets/scripts/vendor/selectivizr-1.0.2.min.js'],
+          './assets/scripts/vendor/modernizr.custom.2.8.3.js': ['source_assets/scripts/vendor/modernizr.custom.2.8.3.js'],
+          './assets/scripts/vendor/selectivizr-1.0.3b.js': ['source_assets/scripts/vendor/selectivizr-1.0.3b.js'],
+          './assets/scripts/vendor/respond.min.js': ['source_assets/scripts/vendor/respond.min.js'],
           './assets/scripts/vendor/rem.min.js': ['source_assets/scripts/vendor/rem.min.js'],
           './assets/scripts/vendor/map-dependencies.min.js' : ['source_assets/scripts/vendor/d3.v3.min.js', 'source_assets/scripts/vendor/map-dependencies/*.js', 'source_assets/vendor/mapbox/mapbox.js'],
+          './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
+          './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
         }
       }
     },
@@ -80,12 +81,13 @@ module.exports = function(grunt) {
             'source_assets/vendor/noUiSlider/jquery.nouislider.min.js',
             'source_assets/scripts/vendor/jquery.once.min.js'
            ],
-          './assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js': ['source_assets/scripts/vendor/modernizr-2.6.2-respond-1.1.0.min.js'],
-          './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
-          './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
-          './assets/scripts/vendor/selectivizr-1.0.2.min.js': ['source_assets/scripts/vendor/selectivizr-1.0.2.min.js'],
+          './assets/scripts/vendor/modernizr.custom.2.8.3.js': ['source_assets/scripts/vendor/modernizr.custom.2.8.3.js'],
+          './assets/scripts/vendor/selectivizr-1.0.3b.js': ['source_assets/scripts/vendor/selectivizr-1.0.3b.js'],
+          './assets/scripts/vendor/respond.min.js': ['source_assets/scripts/vendor/respond.min.js'],
           './assets/scripts/vendor/rem.min.js': ['source_assets/scripts/vendor/rem.min.js'],
           './assets/scripts/vendor/map-dependencies.min.js' : ['source_assets/scripts/vendor/d3.v3.min.js', 'source_assets/scripts/vendor/map-dependencies/*.js', 'source_assets/vendor/mapbox/mapbox.js'],
+          './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
+          './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
         }
       },
     },
