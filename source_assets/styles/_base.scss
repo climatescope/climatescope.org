@@ -727,9 +727,17 @@ a:active{
     width: 16rem;
     height: 16rem;
     img {
-      width: inherit;  /* This makes the next two lines work in IE8. */
       max-width: 100%;
-      height: auto; 
+      height: auto;
+      display: block;
+    }
+    .lt-ie9 & {
+      width: 272px;
+      height: 272px;
+      img {
+        width: 256px;
+        height: 256px;
+      }
     }
   }
   @media #{$large-up} {
