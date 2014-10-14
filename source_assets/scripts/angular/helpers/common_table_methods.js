@@ -124,7 +124,7 @@ function setupCommonParamDetailTableMethods(scope) {
   scope.getTooltipContent = function(ind) {
     return [
       '<h6>' + ind.name + '</h6>',
-      '<p>Parameter description will go here.</p>'
+      '<p>' + ind.description + '</p>'
     ].join('');
   };
 }
