@@ -9,15 +9,15 @@
       <th>&nbsp;</th>
       {% case language %}
       {% when 'en' %}
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Topic Rank</a></th>
+      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Topic rank</a></th>
       <th><a href="" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">Country</a></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Topic Score</a></th>
+      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Topic score</a></th>
       <th>0.0 - 5.0 <span class="avg">Average: <strong>%% countryTable.scoreAvg | round:2 %%</strong></span></th>
       <th><a href="" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
       {% when 'es' %}
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Tema Posición</a></th>
+      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Posición tema</a></th>
       <th><a href="" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Tema Puntaje</a></th>
+      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Puntuación tema</a></th>
       <th>0.0 - 5.0 <span class="avg">Media: <strong>%% countryTable.scoreAvg | round:2 %%</strong></span></th>
       <th><a href="" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Red</a></th>
       {% endcase %}
@@ -34,7 +34,13 @@
         {% endcase %}
       </td>
       <td class="cell-rank">%% country.data[0].overall_ranking | leadingZero:2 %%</td>
-      <td class="cell-country"><a href="%% countryTable.getCountryUrl(country) %%" title="Go to country page">%% country.name %%</a></td>
+      {% case language %}
+        {% when 'en' %}
+        <td class="cell-country"><a href="%% countryTable.getCountryUrl(country) %%" title="Go to country page">%% country.name %%</a></td>
+        {% when 'es' %}
+        <td class="cell-country"><a href="%% countryTable.getCountryUrl(country) %%" title="Ir a la página del país">%% country.name %%</a></td>
+      {% endcase %}
+      
       <td>%% country.data[0].value | round:2 %%</td>
       <td class="cell-graph">
         <div class="table-graph">
@@ -55,16 +61,16 @@
             <th>&nbsp;</th>
             {% case language %}
             {% when 'en' %}
-            <th>Parameter Rank</th>
+            <th>Parameter rank</th>
             <th>Country</th>
             <th>Score</th>
-            <th><span class="visually-hidden">Parameter score</span> <small>0</small> <small>5</small></th>
+            <th><span class="visually-hidden">Topic score</span> <small>0</small> <small>5</small></th>
             <th></th>
             {% when 'es' %}
-            <th>Posición Tema</th>
+            <th>Posición tema</th>
             <th>País</th>
-            <th>Puntaje</th>
-            <th><span class="visually-hidden">Parameter score</span> <small>0</small> <small>5</small></th>
+            <th>Puntuación</th>
+            <th><span class="visually-hidden">Puntuación tema</span> <small>0</small> <small>5</small></th>
             <th></th>
             {% endcase %}
           </tr>

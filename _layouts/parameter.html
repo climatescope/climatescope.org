@@ -17,7 +17,13 @@ conf:
 
   <div class="row--contained">
     <div class="col--main prose-copy">
+    {% case language %}
+      {% when 'en' %}
       <h2>Description</h2>
+      {% when 'es' %}
+      <h2>Descripción</h2>
+    {% endcase %}
+
       {{ content }}
     </div>
   
@@ -32,7 +38,7 @@ conf:
   
       {% when 'es' %}
   
-        <h2>Regional average</h2>
+        <h2>Puntuación regional</h2>
         <dl class="stats-list">
           <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %%</dt>
           <dd ng-repeat-end>%% region.parameters[0].data[0].mean | round:2 %%</dd>

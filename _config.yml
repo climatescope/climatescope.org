@@ -13,9 +13,6 @@ pdbproxy:       http://146.185.136.6/climatescope
 name:
   en:           Climatescope
   es:           Climascopio
-tagline:
-  en:           Assessing the Climate for Climate Investment
-  es:           Assessing the Climate for Climate Investment ES
 description:
   en:           This is a custom description
   es:           This is a custom description ES
