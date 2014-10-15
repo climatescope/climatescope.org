@@ -9,17 +9,17 @@
       <th>&nbsp;</th>
       {% case language %}
       {% when 'en' %}
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Topic rank</a></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">Country</a></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Topic score</a></th>
+      <th><a href="" title="Sort by topic rank" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Topic rank</a></th>
+      <th><a href="" title="Sort by country" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">Country</a></th>
+      <th><a href="" title="Sort by topic score" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Topic score</a></th>
       <th>0.0 - 5.0 <span class="avg">Average: <strong>%% countryTable.scoreAvg | round:2 %%</strong></span></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
+      <th><a href="" title="Sort by grid" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
       {% when 'es' %}
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Posición tema</a></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Puntuación tema</a></th>
+      <th><a href="" title="Ordernar por posición tema" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">Posición tema</a></th>
+      <th><a href="" title="Ordernar por país" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
+      <th><a href="" title="Ordernar por puntuacióne tema" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">Puntuación tema</a></th>
       <th>0.0 - 5.0 <span class="avg">Media: <strong>%% countryTable.scoreAvg | round:2 %%</strong></span></th>
-      <th><a href="" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Red</a></th>
+      <th><a href="" title="Ordernar por red" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Red</a></th>
       {% endcase %}
     </tr>
   </thead>
@@ -28,29 +28,31 @@
       <td>
         {% case language %}
         {% when 'en' %}
-        <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expand</span></a>
+        <a href="" title="Show states / provinces" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expand</span></a>
         {% when 'es' %}
-        <a href="" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expandir</span></a>
+        <a href="" title="Mostrar los estados / provincias" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expandir</span></a>
         {% endcase %}
       </td>
       <td class="cell-rank">%% country.data[0].overall_ranking | leadingZero:2 %%</td>
-      {% case language %}
+      <td class="cell-country">
+        {% case language %}
         {% when 'en' %}
-        <td class="cell-country"><a href="%% countryTable.getCountryUrl(country) %%" title="Go to country page">%% country.name %%</a></td>
+        <a href="%% countryTable.getCountryUrl(country) %%" title="Go to country page">%% country.name %%</a>
         {% when 'es' %}
-        <td class="cell-country"><a href="%% countryTable.getCountryUrl(country) %%" title="Ir a la página del país">%% country.name %%</a></td>
-      {% endcase %}
+        <a href="%% countryTable.getCountryUrl(country) %%" title="Ir a la página del país">%% country.name %%</a>
+        {% endcase %}
+      </td>
       
       <td>%% country.data[0].value | round:2 %%</td>
       <td class="cell-graph">
         <div class="table-graph">
           <span class="avg" ng-style="{'left': (countryTable.scoreAvg * 100 / 5) + '%' }"></span>
-          <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%%countryTable.getTooltipContent(country.data[0])%%">
+          <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%% countryTable.getTooltipContent(country.data[0]) %%">
             <li ng-class="'param-' + countryTable.parameter.id" ng-style="{'width': (country.data[0].value * 100 / 5) + '%'}"><span class="visually-hidden">%% country.data[0].value %%</span>&nbsp;</li>
           </ul>
         </div>
       </td>
-      <td><em data-title="%%country.grid%%" class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>%% country.grid %%</span></em></td>
+      <td><em data-title="%% country.grid %%" class="label-grid" ng-class="{'label-grid-on': country.grid == 'on', 'label-grid-off': country.grid == 'off'}"><span>%% country.grid %%</span></em></td>
     </tr>
     
     <tr ng-if="country.states.length > 0" class="wrapper-row country-states" style="display: none">
@@ -78,11 +80,18 @@
         <tr ng-repeat="state in country.states | orderBy:'value':true">
           <td>&nbsp;</td>
           <td class="cell-rank">%% state.state_ranking | leadingZero:2 %%</td>
-          <td class="cell-country"><a href="%% countryTable.getStateUrl(state) %%">%% state.name %%</a></td>
+          <td class="cell-country">
+            {% case language %}
+            {% when 'en' %}
+            <a href="%% countryTable.getStateUrl(state) %%" title="Go to state / province page">%% state.name %%</a>
+            {% when 'es' %}
+            <a href="%% countryTable.getStateUrl(state) %%" title="Ir a la página del estado / provincia">%% state.name %%</a>
+            {% endcase %}
+          </td>
           <td>%% state.value | round:2 %%</td>
           <td>
             <div class="table-graph">
-              <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%%countryTable.getTooltipContent(state)%%">
+              <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%% countryTable.getTooltipContent(state) %%">
                 <li ng-class="'param-' + countryTable.parameter.id" ng-style="{'width': (state.value * 100 / 5) + '%'}"><span class="visually-hidden">%% state.value %%</span>&nbsp;</li>
               </ul>
             </div>

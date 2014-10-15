@@ -16,10 +16,11 @@
           {% case language %}
           {% when 'en' %}
           <h1 class="layout--hub__title">Policies</h1>
+          <a href="" class="reset" title="Reset filters" ng-click="filterCtrl.disableFilters()"><span>Reset</span></a>
           {% when 'es' %}
           <h1 class="layout--hub__title">Politicas</h1>
+          <a href="" class="reset" title="Restablecer los filtros" ng-click="filterCtrl.disableFilters()"><span>Restablecer</span></a>
           {% endcase %}
-          <a href="" class="reset" title="Reset filters" ng-click="filterCtrl.disableFilters()"><span>Reset</span></a>
         </div>
         <div class="layout--hub__tools" init-dropdown>
           {% include actions_menu.html %}
@@ -92,23 +93,31 @@
             <tr>
             {% case language %}
             {% when 'en' %}
-              <th><a href="" ng-click="tableCtrl.setSort('name')" class="sort" ng-class="[tableCtrl.checkSortClasses('name')]">Policy name</a></th>
-              <th><a href="" ng-click="tableCtrl.setSort('country')" class="sort" ng-class="[tableCtrl.checkSortClasses('country')]">Country</a></th>
-              <th><a href="" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">State / province</a></th>
+              <th><a href="" title="Sort by policy name" ng-click="tableCtrl.setSort('name')" class="sort" ng-class="[tableCtrl.checkSortClasses('name')]">Policy name</a></th>
+              <th><a href="" title="Sort by country" ng-click="tableCtrl.setSort('country')" class="sort" ng-class="[tableCtrl.checkSortClasses('country')]">Country</a></th>
+              <th><a href="" title="Sort by state / province" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">State / province</a></th>
               <th>Policy Mechanism</th>
-              <th><a href="" ng-click="tableCtrl.setSort('status')" class="sort" ng-class="[tableCtrl.checkSortClasses('status')]">Status</a></th>
+              <th><a href="" title="Sort by status" ng-click="tableCtrl.setSort('status')" class="sort" ng-class="[tableCtrl.checkSortClasses('status')]">Status</a></th>
             {% when 'es' %}
-              <th><a href="" ng-click="tableCtrl.setSort('name')" class="sort" ng-class="[tableCtrl.checkSortClasses('name')]">Nome da politica</a></th>
-              <th><a href="" ng-click="tableCtrl.setSort('country')" class="sort" ng-class="[tableCtrl.checkSortClasses('country')]">País</a></th>
-              <th><a href="" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">Estado / provincia</a></th>
+              <th><a href="" title="Ordernar por nombre da la politica" ng-click="tableCtrl.setSort('name')" class="sort" ng-class="[tableCtrl.checkSortClasses('name')]">Nombre da la politica</a></th>
+              <th><a href="" title="Ordernar por país" ng-click="tableCtrl.setSort('country')" class="sort" ng-class="[tableCtrl.checkSortClasses('country')]">País</a></th>
+              <th><a href="" title="Ordernar por estado / provincia" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">Estado / provincia</a></th>
               <th>Policy Mechanism</th>
-              <th><a href="" ng-click="tableCtrl.setSort('status')" class="sort" ng-class="[tableCtrl.checkSortClasses('status')]">Estatus</a></th>
+              <th><a href="" title="Ordernar por estatus" ng-click="tableCtrl.setSort('status')" class="sort" ng-class="[tableCtrl.checkSortClasses('status')]">Estatus</a></th>
             {% endcase %}
             </tr>
           </thead>
           <tbody>
             <tr ng-repeat="policy in tableCtrl.policies">
-             <td class="cell-policy-name"><a href="%%tableCtrl.getPolicyLink(policy)%%">%% policy.name %%</a></td>
+              <td class="cell-policy-name">
+                {% case language %}
+                {% when 'en' %}
+                <a href="%% tableCtrl.getPolicyLink(policy)%%" title="Go to policy page">%% policy.name %%</a>
+                {% when 'es' %}
+                <a href="%% tableCtrl.getPolicyLink(policy)%%" title="Ir a la página de la politica">%% policy.name %%</a>
+                {% endcase %}
+              </td>
+
              
              <td>
                <div ng-if="policy.country.length > 1" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%% tableCtrl.getTooltipContentList(policy.country) %%">
@@ -168,7 +177,7 @@
       <header class="layout--entry__header" ng-if="!policyCtrl.loadingData">
         <div class="row--contained">
           <div class="layout--entry__heading">
-            <h1 class="layout--entry__title">%%policyCtrl.policy.name%%</h1>
+            <h1 class="layout--entry__title">%% policyCtrl.policy.name %%</h1>
 
             {% case language %}
             {% when 'en' %}
@@ -189,7 +198,7 @@
           <div class="col--main">
             <section class="blk">
               <h1>Overview</h1>
-            	<div class="abstract" ng-bind-html="policyCtrl.policy.abstract | nl2br">%%policyCtrl.policy.abstract%%</div>
+            	<div class="abstract" ng-bind-html="policyCtrl.policy.abstract | nl2br">%% policyCtrl.policy.abstract %%</div>
             	<div class="description" ng-bind-html="policyCtrl.policy.description | nl2br"></div>
             </section>
             
@@ -197,15 +206,15 @@
               <h1>Policy actions</h1>
             	<dl>
             		<dt ng-if="policyCtrl.policy.effectiveStartDate">Effective start date</dt>
-            		<dd ng-if="policyCtrl.policy.effectiveStartDate">%%policyCtrl.policy.effectiveStartDate%%</dd>
+            		<dd ng-if="policyCtrl.policy.effectiveStartDate">%% policyCtrl.policy.effectiveStartDate %%</dd>
             		<dt ng-if="policyCtrl.policy.legislationOrGovernance">Legislation or governance</dt>
-            		<dd ng-if="policyCtrl.policy.legislationOrGovernance">%%policyCtrl.policy.legislationOrGovernance%%</dd>
+            		<dd ng-if="policyCtrl.policy.legislationOrGovernance">%% policyCtrl.policy.legislationOrGovernance %%</dd>
             		<dt ng-if="policyCtrl.policy.legislationOrGovernanceInformation">Legislation or governance information</dt>
-            		<dd ng-if="policyCtrl.policy.legislationOrGovernanceInformation">%%policyCtrl.policy.legislationOrGovernanceInformation%%</dd>
+            		<dd ng-if="policyCtrl.policy.legislationOrGovernanceInformation">%% policyCtrl.policy.legislationOrGovernanceInformation %%</dd>
             		<dt ng-if="policyCtrl.policy.legislationOrGovernanceUrl.length">Legislation or governance url</dt>
             		<dd ng-if="policyCtrl.policy.legislationOrGovernanceUrl.length">
             		  <ul>
-            		    <li ng-repeat="policyUrl in policyCtrl.policy.legislationOrGovernanceUrl"><a href="%%policyUrl.url%%" title="Go to %%policyUrl.label%%">%%policyUrl.label%%</a></li>
+            		    <li ng-repeat="policyUrl in policyCtrl.policy.legislationOrGovernanceUrl"><a href="%% policyUrl.url %%" title="Go to %% policyUrl.label %%">%% policyUrl.label %%</a></li>
             		  </ul>
             		</dd>
             	</dl>
@@ -214,7 +223,7 @@
             <section class="blk">
             	<h1>Subsector</h1>
         			<ul>
-        				<li ng-repeat="policySubsector in policyCtrl.policy.subsector">%%policySubsector.name%%</li>
+        				<li ng-repeat="policySubsector in policyCtrl.policy.subsector">%% policySubsector.name %%</li>
         			</ul>
             </section>
             
@@ -224,7 +233,7 @@
             <section class="blk">
             	<h1>Countries</h1>
         			<ul>
-        				<li ng-repeat="policyCountry in policyCtrl.policy.country">%%policyCountry.name%%</li>
+        				<li ng-repeat="policyCountry in policyCtrl.policy.country">%% policyCountry.name %%</li>
         			</ul>
             </section>
             
@@ -232,11 +241,11 @@
             	<h1>Attributes</h1>
             	<dl>
             		<dt>Status</dt>
-                <dd>%%policyCtrl.policy.status.name%%</dd>
+                <dd>%% policyCtrl.policy.status.name %%</dd>
             		<dt ng-if="policyCtrl.policy.fundingMethod">Funding method</dt>
-                <dd ng-if="policyCtrl.policy.fundingMethod">%%policyCtrl.policy.fundingMethod%%</dd>
+                <dd ng-if="policyCtrl.policy.fundingMethod">%% policyCtrl.policy.fundingMethod %%</dd>
             		<dt ng-if="policyCtrl.policy.process">Process</dt>
-                <dd ng-if="policyCtrl.policy.process" ng-bind-html="policyCtrl.policy.process | nl2br">%%policyCtrl.policy.process%%</dd>
+                <dd ng-if="policyCtrl.policy.process" ng-bind-html="policyCtrl.policy.process | nl2br">%% policyCtrl.policy.process %%</dd>
             	</dl>
             </section>
           </div>
