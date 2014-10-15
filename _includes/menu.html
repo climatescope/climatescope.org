@@ -26,31 +26,31 @@
     </ul>
   </li>
   <li>
-    {% assign page = site.pages | where:"id","policies" | where:"lang",language | first %}
-    <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url | remove:'index.html' }}" title="{{ t['Browse the policy database'][language] }}">{{ t['Policies'][language] }}</a>
+    {% assign pg = site.pages | where:"id","policies" | where:"lang",language | first %}
+    <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['Browse the policy database'][language] }}">{{ t['Policies'][language] }}</a>
   </li>
   <li>
     {% assign col_name = site.collections['en_page'].i18n[language] %}
-    {% assign page = site[col_name] | where:"id","download" | first %}
-    <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url }}" title="{{ t['Download the data and report'][language] }}">{{ t['Download'][language] }}</a>
+    {% assign pg = site[col_name] | where:"id","download" | first %}
+    <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['Download the data and report'][language] }}">{{ t['Download'][language] }}</a>
   </li>
   <li class="dropdown">
     <a href="#" title="{{ t['About the Climatescope'][language] }}" class="dropdown-toggle caret" data-toggle="dropdown">{{ t['About'][language] }}</a>
     <ul class="dropdown-menu about" role="menu">
       <li>
         {% assign col_name = site.collections['en_page'].i18n[language] %}
-        {% assign page = site[col_name] | where:"id","project" | first %}
-        <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url }}" title="{{ t['More about the project'][language] }}">{{ t['Project'][language] }}</a>
+        {% assign pg = site[col_name] | where:"id","project" | first %}
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['More about the project'][language] }}">{{ t['Project'][language] }}</a>
       </li>
       <li>
         {% assign col_name = site.collections['en_page'].i18n[language] %}
-        {% assign page = site[col_name] | where:"id","methodology" | first %}
-        <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url }}" title="{{ t['More about the methodology'][language] }}">{{ t['Methodology'][language] }}</a>
+        {% assign pg = site[col_name] | where:"id","methodology" | first %}
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['More about the methodology'][language] }}">{{ t['Methodology'][language] }}</a>
       </li>
       <li>
         {% assign col_name = site.collections['en_page'].i18n[language] %}
-        {% assign page = site[col_name] | where:"id","contact" | first %}
-        <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url }}" title="{{ t['Contact us'][language] }}">{{ t['Contact'][language] }}</a>
+        {% assign pg = site[col_name] | where:"id","contact" | first %}
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['Contact us'][language] }}">{{ t['Contact'][language] }}</a>
       </li>
     </ul>
   </li>
