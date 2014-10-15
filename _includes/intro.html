@@ -3,25 +3,13 @@
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
-
+{% assign t = site.data.i18n_strings %}
 <div class="row--contained">
   <div class="intro-block">
-    {% case language %}
-    {% when 'en' %}
-
-    <h2 class="intro-block__title">Assessing the Climate for Climate Investment</h2>
+    <h2 class="intro-block__title">{{ t['Assessing the Climate for Climate Investment'][language] }}</h2>
     <div class="intro-block__body">
-      <p>The Climatescope is an interactive index and tool that ranks and profiles 55 countries worldwide according to their investment climate for attracting capital for clean energy sources.</p>
-      <p><a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" class="bttn bttn-success go" title="Learn more">About the methodology</a></p>
+      <p>{{ t['The Climatescope is an interactive index and tool that ranks and profiles 55 countries worldwide according to their investment climate for attracting capital for clean energy sources.'][language] }}</p>
+      <p><a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" class="bttn bttn-success go" title="{{ t['Learn more about the methodology'][language] }}">{{ t['About the methodology'][language] }}</a></p>
     </div>
-
-    {% when 'es' %}
-    <h2 class="intro-block__title">Assessing the Climate for Climate Investment ES</h2>
-    <div class="intro-block__body">
-      <p>The Climatescope is an interactive index and tool that ranks and profiles 55 countries worldwide according to their investment climate for attracting capital for clean energy sources.</p>
-      <p><a href="{{ site.domain }}{{ site.path_prefix }}/es/metodologia" class="bttn bttn-success go" title="Más sobre la metodologia">Sobre la metodologia</a></p>
-    </div>
-
-    {% endcase %}
   </div>
 </div>

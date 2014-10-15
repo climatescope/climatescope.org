@@ -3,56 +3,32 @@
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
+{% assign t = site.data.i18n_strings %}
 <table class="table country-table">
   <thead>
     <tr>
       <th>&nbsp;</th>
-      {% case language %}
-      {% when 'en' %}
 
       {% if layout.conf.type == 'region' %}
-      <th><a href="" title="Sort by regional rank" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">Regional rank</a></th>
+      <th><a href="" title="{{ t['Sort by regional rank'][language] }}" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">{{ t['Regional rank'][language] }}</a></th>
       {% else %}
-      <th><a href="" title="Sort by global rank" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">Global rank</a></th>
+      <th><a href="" title="{{ t['Sort by global rank'][language] }}" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">{{ t['Global rank'][language] }}</a></th>
       {% endif %}
 
-      <th><a href="" title="Sort by country" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">Country</a></th>
-      <th><a href="" title="Sort by global score" ng-click="countryTable.setSortExpression('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Global score</a></th>
-      <th><span class="visually-hidden">Topics:</span> 0.0 - 5.0</th>
-      <th><a href="" title="Sort by grid" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Grid</a></th>
-      {% when 'es' %}
-
-      {% if layout.conf.type == 'region' %}
-      <th><a href="" title="Ordernar por posición regional" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">Posición regional</a></th>
-      {% else %}
-      <th><a href="" title="Ordernar por posición global" ng-click="countryTable.setSortExpression(countryTable.rankingField)" class="sort" ng-class="[countryTable.checkSortClasses(countryTable.rankingField)]">Posición global</a></th>
-      {% endif %}
-      
-      <th><a href="" title="Ordernar por país" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">País</a></th>
-      <th><a href="" title="Ordernar por puntuación global" ng-click="countryTable.setSortExpression('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">Puntuación global</a></th>
-      <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
-      <th><a href="" title="Ordernar por red" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">Red</a></th>
-      {% endcase %}
+      <th><a href="" title="{{ t['Sort by country'][language] }}" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">{{ t['Country'][language] }}</a></th>
+      <th><a href="" title="{{ t['Sort by global score'][language] }}" ng-click="countryTable.setSortExpression('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">{{ t['Global score'][language] }}</a></th>
+      <th><span class="visually-hidden">{{ t['Topics'][language] }}:</span> 0.0 - 5.0</th>
+      <th><a href="" title="{{ t['Sort by grid'][language] }}" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">{{ t['Grid'][language] }}</a></th>
     </tr>
   </thead>
   <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortExpression ">
     <tr>
       <td>
-        {% case language %}
-        {% when 'en' %}
-        <a href="" title="Show states / provinces" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expand</span></a>
-        {% when 'es' %}
-        <a href="" title="Mostrar los estados / provincias" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">Expandir</span></a>
-        {% endcase %}
+        <a href="" title="{{ t['Show states / provinces'][language] }}" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">{{ t['Expand'][language] }}</span></a>
       </td>
       <td class="cell-rank">%% country[countryTable.rankingField] | leadingZero:2 %%</td>
       <td class="cell-country">
-        {% case language %}
-        {% when 'en' %}
-        <a href="%% countryTable.getCountryUrl(country) %%" title="Go to country page">%% country.name %%</a>
-        {% when 'es' %}
-        <a href="%% countryTable.getCountryUrl(country) %%" title="Ir a la página del país">%% country.name %%</a>
-        {% endcase %}
+        <a href="%% countryTable.getCountryUrl(country) %%" title="{{ t['Go to country page'][language] }}">%% country.name %%</a>
       </td>
       <td>%% country.score | round:2 %%</td>
       <td>
@@ -71,31 +47,17 @@
           <thead>
             <tr>
               <th>&nbsp;</th>
-              {% case language %}
-              {% when 'en' %}
-              <th>Rank</th>
-              <th>Country</th>
-              <th>Score</th>
-              <th><span class="visually-hidden">Topics:</span> 0.0 - 5.0</th>
-              <th></th>
-              {% when 'es' %}
-              <th>Posición</th>
-              <th>País</th>
-              <th>Puntaje</th>
-              <th><span class="visually-hidden">Temas:</span> 0.0 - 5.0</th>
-              <th></th>
-              {% endcase %}
+              <th>{{ t['Rank'][language] }}</th>
+              <th>{{ t['Country'][language] }}</th>
+              <th>{{ t['Score'][language] }}</th>
+              <th><span class="visually-hidden">{{ t['Topics'][language] }}:</span> 0.0 - 5.0</th>
+              <th>&nbsp;</th>
             </tr>
           </thead>
           <tr ng-repeat="state in country.states | orderBy:'score':true">
             <td>&nbsp;</td>
             <td class="cell-rank">%% state.state_ranking | leadingZero:2 %%</td>
-            {% case language %}
-            {% when 'en' %}
-            <td class="cell-country"><a href="%% countryTable.getStateUrl(state) %%" title="Go to state / province page">%% state.name %%</a></td>
-            {% when 'es' %}
-            <td class="cell-country"><a href="%% countryTable.getStateUrl(state) %%" title="Ir a la página del estado / provincia">%% state.name %%</a></td>
-            {% endcase %}
+            <td class="cell-country"><a href="%% countryTable.getStateUrl(state) %%" title="{{ t['Go to state / province page'][language] }}">%% state.name %%</a></td>
             <td>%% state.score | round:2 %%</td>
             <td>
               <div class="table-graph">
@@ -104,7 +66,7 @@
                 </ul>
               </div>
             </td>
-            <td></td>
+            <td>&nbsp;</td>
           </tr>
         </table>
       </td>

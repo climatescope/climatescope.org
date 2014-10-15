@@ -3,104 +3,62 @@
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
+{% assign t = site.data.i18n_strings %}
 
-{% case language %}
-{% when 'en' %}
 <ul class="global-menu">
   <li>
-    <a href="{{ site.domain }}{{ site.path_prefix }}/en/" title="The global index">Global</a>
+    <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/" title="{{ t['The global index'][language] }}">{{ t['Global'][language] }}</a>
   </li>
   <li class="dropdown">
-    <a href="#" title="Explore data by region" class="dropdown-toggle caret" data-toggle="dropdown">Regions</a>
+    <a href="#" title="{{ t['Explore data by region'][language] }}" class="dropdown-toggle caret" data-toggle="dropdown">{{ t['Regions'][language] }}</a>
     <ul class="dropdown-menu" role="menu">
       {% assign sorted_regions = (site.en_region | sort: 'weight') %}
       {% for region in sorted_regions %}
       <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}{{ region.url }}" title="See detailed data on {{ region.title }}">{{ region.title }}</a>
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ region.url }}" title="{{ t['See detailed data on'][language] }} {{ region.title }}">{{ region.title }}</a>
       </li>
       {% endfor %}
     </ul>
   </li>
   <li class="dropdown">
-    <a href="#" title="Explore data by topic" class="dropdown-toggle caret" data-toggle="dropdown">Topics</a>
+    <a href="#" title="{{ t['Explore data by topic'][language] }}" class="dropdown-toggle caret" data-toggle="dropdown">{{ t['Topics'][language] }}</a>
     <ul class="dropdown-menu topics" role="menu">
-      {% assign sorted_params = (site.en_parameter | sort: 'weight') %}
+      {% assign col_name = site.collections['en_parameter'].i18n[language] %}
+      {% assign sorted_params = (site[col_name] | sort: 'weight') %}
       {% for topic in sorted_params %}
       <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}{{ topic.url }}" title="More about {{ topic.title }}" class="param-{{ topic.id }}">{{ topic.title }}</a>
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ topic.url }}" title="{{ t['More about'][language] }} {{ topic.title }}" class="param-{{ topic.id }}">{{ topic.title }}</a>
       </li>
       {% endfor %}
     </ul>
   </li>
   <li>
-    <a href="{{ site.domain }}{{ site.path_prefix }}/en/policies/" title="Browse the policy database">Policies</a>
+    {% assign page = site.pages | where:"id","policies" | where:"lang",language | first %}
+    <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url | remove:'index.html' }}" title="{{ t['Browse the policy database'][language] }}">{{ t['Policies'][language] }}</a>
   </li>
   <li>
-    <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/" title="Download the data and report">Download</a>
+    {% assign col_name = site.collections['en_page'].i18n[language] %}
+    {% assign page = site[col_name] | where:"id","download" | first %}
+    <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url }}" title="{{ t['Download the data and report'][language] }}">{{ t['Download'][language] }}</a>
   </li>
   <li class="dropdown">
-    <a href="#" title="About the Climatescope" class="dropdown-toggle caret" data-toggle="dropdown">About</a>
+    <a href="#" title="{{ t['About the Climatescope'][language] }}" class="dropdown-toggle caret" data-toggle="dropdown">{{ t['About'][language] }}</a>
     <ul class="dropdown-menu about" role="menu">
       <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}/en/project" title="More about the project">Project</a>
+        {% assign col_name = site.collections['en_page'].i18n[language] %}
+        {% assign page = site[col_name] | where:"id","project" | first %}
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url }}" title="{{ t['More about the project'][language] }}">{{ t['Project'][language] }}</a>
       </li>
       <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" title="More about the methodology">Methodology</a>
+        {% assign col_name = site.collections['en_page'].i18n[language] %}
+        {% assign page = site[col_name] | where:"id","methodology" | first %}
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url }}" title="{{ t['More about the methodology'][language] }}">{{ t['Methodology'][language] }}</a>
       </li>
       <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}/en/contact" title="Contact us">Contact</a>
+        {% assign col_name = site.collections['en_page'].i18n[language] %}
+        {% assign page = site[col_name] | where:"id","contact" | first %}
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ page.url }}" title="{{ t['Contact us'][language] }}">{{ t['Contact'][language] }}</a>
       </li>
     </ul>
   </li>
 </ul>
-
-{% when 'es' %}
-<ul class="global-menu">
-  <li>
-    <a href="{{ site.domain }}{{ site.path_prefix }}/es/" title="El índice global">Global</a>
-  </li>
-  <li class="dropdown">
-    <a href="#" title="Explore los datos por región" class="dropdown-toggle caret" data-toggle="dropdown">Regiones</a>
-    <ul class="dropdown-menu" role="menu">
-      {% assign sorted_regions = (site.es_region | sort: 'weight') %}
-      {% for region in sorted_regions %}
-      <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}{{ region.url }}" title="Datos sobre {{ region.title }}">{{ region.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a href="#" title="Explore los datos por tema" class="dropdown-toggle caret" data-toggle="dropdown">Temas</a>
-    <ul class="dropdown-menu topics" role="menu">
-      {% assign sorted_params = (site.es_parameter | sort: 'weight') %}
-      {% for topic in sorted_params %}
-      <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}{{ topic.url }}" title="Más sobre {{ topic.title }}" class="param-{{ topic.id }}">{{ topic.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </li>
-  <li>
-    <a href="{{ site.domain }}{{ site.path_prefix }}/es/politicas/" title="Navegue la base de datos de las políticas">Políticas</a>
-  </li>
-  <li>
-    <a href="{{ site.domain }}{{ site.path_prefix }}/es/datos/" title="Descargue los datos y el reporte">Datos</a>
-  </li>
-  <li class="dropdown">
-    <a href="#" title="Sobre el Climascopio" class="dropdown-toggle caret" data-toggle="dropdown">Sobre</a>
-    <ul class="dropdown-menu about" role="menu">
-      <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}/es/proyecto" title="Más sobre el proyecto">Proyecto</a>
-      </li>
-      <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}/es/metodologia" title="Más sobre la metodologia">Metodologia</a>
-      </li>
-      <li>
-        <a href="{{ site.domain }}{{ site.path_prefix }}/es/contacto" title="Contáctenos">Contacto</a>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-{% endcase %}

@@ -3,48 +3,26 @@
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
-
+{% assign t = site.data.i18n_strings %}
 <footer id="site-footer" role="contentinfo">
   <div class="row--contained">
     <nav id="comp-nav">
       <ul class="ftr-menu">
-        {% case language %}
-        {% when 'en' %}
-        <li><a href="#welcome" title="Welcome" data-modal-id="welcome" class="visually-hidden">Welcome</a></li>
-        <li><a href="http://www.fomin.org/climatescope/2012/index.html" title="2012 Edition" target="_blank" rel="external">2012 Edition</a></li>
-        <li><a href="http://www.fomin.org/climatescope/2013/index.html" title="2013 Edition" target="_blank" rel="external">2013 Edition</a></li>
-        <li><a href="http://www.fomin.org/Knowledge/DevelopmentData/Climatescope/ClimatescopeNews/tabid/594/language/en-US/Default.aspx" title="Press" target="_blank" rel="external">Press</a></li>
-        <li><a href="{{ site.domain }}{{ site.path_prefix }}/en/contact" title="Contact">Contact</a></li>
-        {% when 'es' %}
-        <li><a href="#welcome" title="Bienvenidos" data-modal-id="welcome" class="visually-hidden">Bienvenidos</a></li>
-        <li><a href="http://www.fomin.org/climatescope/2012/index.html" title="Edición 2012" target="_blank" rel="external">Edición 2012</a></li>
-        <li><a href="http://www.fomin.org/climatescope/2013/index.html" title="Edición 2013" target="_blank" rel="external">Edición 2013</a></li>
-        <li><a href="http://www.fomin.org/Knowledge/DevelopmentData/Climatescope/ClimatescopeNews/tabid/594/language/en-US/Default.aspx" title="Prensa" target="_blank" rel="external">Prensa</a></li>
-        <li><a href="{{ site.domain }}{{ site.path_prefix }}/es/contacto" title="Contáctenos">Contacto</a></li>
-        {% endcase %}
+        <li><a href="http://www.fomin.org/climatescope/2012/index.html" title="{{ t['Visit 2012 Edition'][language] }}" target="_blank" rel="external">{{ t['2012 Edition'][language] }}</a></li>
+        <li><a href="http://www.fomin.org/climatescope/2013/index.html" title="{{ t['Visit 2013 Edition'][language] }}" target="_blank" rel="external">{{ t['2013 Edition'][language] }}</a></li>
+        <li><a href="http://www.fomin.org/Knowledge/DevelopmentData/Climatescope/ClimatescopeNews/tabid/594/language/en-US/Default.aspx" title="{{ t['Visit press'][language] }}" target="_blank" rel="external">{{ t['Press'][language] }}</a></li>
+        <li><a href="{{ site.domain }}{{ site.path_prefix }}/en/contact" title="{{ t['View contact'][language] }}">{{ t['Contact'][language] }}</a></li>
       </ul>
     </nav>
     <section id="ftr-credits">
-      {% case language %}
-      {% when 'en' %}
-      <h1>By</h1>
+      <h1>{{ t['By'][language] }}</h1>
       <ul class="orgs-list">
-        <li><a href="https://www.gov.uk/government/organisations/department-for-international-development" title="Visit UK Aid"><img width="256" height="128" alt="UK Aid logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-ukaid.png" /> <span>UK Aid</span></a></li>
-        <li><a href="http://www.usaid.gov/powerafrica" title="Visit Power Africa"><img width="256" height="128" alt="Power Africa logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-power-africa.png" /> <span>Power Africa</span></a></li>
-        <li><a href="http://www.newenergyfinance.com/" title="Visit Bloomberg"><img width="256" height="128" alt="Bloomberg logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-bloomberg.png" /> <span>Bloomberg</span></a></li>
-        <li><a href="http://www.fomin.org/" title="Visit The Multilateral Investment Fund"><img width="256" height="128" alt="The Multilateral Investment Fund logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-fomin-en.png" /> <span>The Multilateral Investment Fund</span></a></li>
+        <li><a href="https://www.gov.uk/government/organisations/department-for-international-development" title="{{ t['Visit UK Aid'][language] }}"><img width="256" height="128" alt="{{ t['UK Aid logo'][language] }}" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-ukaid.png" /> <span>{{ t['UK Aid'][language] }}</span></a></li>
+        <li><a href="http://www.usaid.gov/powerafrica" title="{{ t['Visit Power Africa'][language] }}"><img width="256" height="128" alt="{{ t['Power Africa logo'][language] }}" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-power-africa.png" /> <span>{{ t['Power Africa'][language] }}</span></a></li>
+        <li><a href="http://www.newenergyfinance.com/" title="{{ t['Visit Bloomberg'][language] }}"><img width="256" height="128" alt="{{ t['Bloomberg logo'][language] }}" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-bloomberg.png" /> <span>{{ t['Bloomberg'][language] }}</span></a></li>
+        <li><a href="http://www.fomin.org/" title="{{ t['Visit The Multilateral Investment Fund'][language] }}"><img width="256" height="128" alt="{{ t['The Multilateral Investment Fund logo'][language] }}" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-fomin-en.png" /> <span>{{ t['The Multilateral Investment Fund'][language] }}</span></a></li>
       </ul>
-      <p class="copyright">2014 Lorem ipsum. Choose license.</p>
-      {% when 'es' %}
-      <h1>Por</h1>
-      <ul class="orgs-list">
-        <li><a href="https://www.gov.uk/government/organisations/department-for-international-development" title="Visite UK Aid"><img width="256" height="128" alt="UK Aid logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-ukaid.png" /> <span>UK Aid</span></a></li>
-        <li><a href="http://www.usaid.gov/powerafrica" title="Visite Power Africa"><img width="256" height="128" alt="Power Africa logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-power-africa.png" /> <span>Power Africa</span></a></li>
-        <li><a href="http://www.newenergyfinance.com/" title="Visite Bloomberg"><img width="256" height="128" alt="Bloomberg logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-bloomberg.png" /> <span>Bloomberg</span></a></li>
-        <li><a href="http://www.fomin.org/" title="Visite Fomin"><img width="256" height="128" alt="The Multilateral Investment Fund logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-fomin-es.png" /> <span>Fondo Multilateral de Inversiones</span></a></li>
-      </ul>
-      <p class="copyright">2014 Lorem ipsum. Elija licencia.</p>
-      {% endcase %}
+      <p class="copyright">{{ t['2014 Lorem ipsum. Choose license.'][language] }}</p>
     </section>
   </div>
 </footer>
