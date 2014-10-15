@@ -52,26 +52,6 @@ $(document).ready(function() {
       .html(function(d) {
 
         d = d.rank;
-        var link_text, close_text, rank_text, score_text;
-
-        switch(CS.lang) {
-          case 'en':
-            link_text = "View Country";
-            close_text = "Close";
-            rank_text = "Global rank";
-            score_text = "Global score";
-            grid_on_text = "On-grid";
-            grid_off_text = "Off-grid";
-          break;
-          case 'es':
-            link_text = "Ver País";
-            close_text = "Cerrar";
-            rank_text = "Posición global";
-            score_text = "Puntuación global";
-            grid_on_text = "On-grid ES";
-            grid_off_text = "Off-grid ES";
-          break;
-        }
 
         var param_code = '';
         $.each(d.parameters, function(index, param) {
@@ -85,26 +65,26 @@ $(document).ready(function() {
           ].join(' ');
         });
 
-        var grid_code = d.grid == 'on' ? '<em class="label-grid label-grid-on" data-title="' + grid_on_text + '"><span>' + grid_on_text + '</span></em>' : '<em class="label-grid label-grid-off" data-title="' + grid_off_text + '"><span>' + grid_off_text + '</span></em>';
+        var grid_code = d.grid == 'on' ? '<em class="label-grid label-grid-on" data-title="' + CS.t("On-grid") + '"><span>' + CS.t("On-grid") + '</span></em>' : '<em class="label-grid label-grid-off" data-title="' + CS.t("Off-grid") + '"><span>' + CS.t("Off-grid") + '</span></em>';
 
         return [
           '<article class="tooltip-inner">',
             '<header class="tooltip__header">',
-              '<h1 class="tooltip__title"><a href="' + CS.countryIndex[d.iso] +'" title="' + link_text + '">' + d.name + '</a></h1>',
+              '<h1 class="tooltip__title"><a href="' + CS.countryIndex[d.iso] +'" title="' + CS.t("View country") + '">' + d.name + '</a></h1>',
               '<p class="tooltip__subtitle">' + d.region.name + '</p>',
               grid_code,
-              '<a href="#" title="' + close_text + '" class="close" onClick="return false;"><span>' + close_text + '</span></a>',
+              '<a href="#" title="' + CS.t("Close") + '" class="close" onClick="return false;"><span>' + CS.t("Close") + '</span></a>',
             '</header>',
 
             '<div class="tooltip__body">',
               '<dl class="params-legend">',
-                '<dt>' + rank_text + '</dt>',
+                '<dt>' + CS.t("Global rank") + '</dt>',
                 '<dd>' + d.overall_ranking + '</dd>',
-                '<dt>' + score_text + '</dt>',
+                '<dt>' + CS.t("Global score") + '</dt>',
                 '<dd>' + round(d.score, 2) + '</dd>',
                 param_code,
               '</dl>',
-              '<a href="' + CS.countryIndex[d.iso] +'" class="bttn bttn-cta go" title="' + link_text + '">' + link_text + '</a>',
+              '<a href="' + CS.countryIndex[d.iso] +'" class="bttn bttn-cta go" title="' + CS.t("View country") + '">' + CS.t("View country") + '</a>',
             '</div>',
 
           '</article>'
@@ -137,17 +117,10 @@ $(document).ready(function() {
       'top-ten',
       'bottom-ten'
     ];
-    var countryFilterLabel = {};
-    switch(CS.lang) {
-      case 'en':
-        countryFilterLabel['top-ten'] = "Top ten";
-        countryFilterLabel['bottom-ten'] = "Bottom ten";
-      break;
-      case 'es':
-        countryFilterLabel['top-ten'] = "Top diez";
-        countryFilterLabel['bottom-ten'] = "Bottom ten";
-      break;
-    }
+    var countryFilterLabel = {
+      'top-ten': CS.t("Top ten"),
+      'bottom-ten': CS.t("Bottom ten"),
+    };
 
     var visibleCountries = 'top-ten';
     var zoom = map.getZoom();

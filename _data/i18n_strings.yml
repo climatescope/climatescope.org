@@ -37,6 +37,9 @@ Bloomberg:
 Bloomberg logo: 
   en: "Bloomberg logo"
   es: "Bloomberg logo"
+Bottom ten: 
+  en: "Bottom ten"
+  es: "Bottom ten"
 Browse the policy database: 
   en: "Browse the policy database"
   es: "Navegue la base de datos de las políticas"
@@ -46,6 +49,9 @@ By:
 Calculate your own score: 
   en: "Calculate your own score"
   es: "Calcule su propia puntuación"
+Close: 
+  en: "Close"
+  es: "Cerrar"
 Compare with: 
   en: "Compare with"
   es: "Compare con"
@@ -103,6 +109,9 @@ Global:
 Global rank: 
   en: "Global rank"
   es: "Posición global"
+Global score: 
+  en: "Global score"
+  es: "Puntuación global"
 Go to: 
   en: "Go to"
   es: "Ir a"
@@ -307,6 +316,9 @@ The Multilateral Investment Fund logo:
 The global index: 
   en: "The global index"
   es: "El índice global"
+Top ten: 
+  en: "Top ten"
+  es: "Top ten"
 Topic rank: 
   en: "Topic rank"
   es: "Posición tema"
@@ -334,6 +346,9 @@ Value Chains:
 View contact: 
   en: "View contact"
   es: "Ver contacto"
+View country: 
+  en: "View country"
+  es: "Ver país"
 View in detail: 
   en: "View in detail"
   es: "Ver en detalle"
