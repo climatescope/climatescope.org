@@ -1,9 +1,3 @@
-{% if page.lang %}
-  {% assign language = page.lang %}
-{% elsif site.collections[page.collection].lang %}
-  {% assign language = site.collections[page.collection].lang %}
-{% endif %}
-{% assign t = site.data.i18n_strings %}
 <div id="vis-controls" class="slider-group">
   <h2 class="prime-title">{{ t['Calculate your own score'][language] }}</h2>
   <a href="#" class="reset" title="{{ t['Reset topic weights'][language] }}"><span>{{ t['Reset'][language] }}</span></a>

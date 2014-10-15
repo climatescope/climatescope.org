@@ -1,10 +1,3 @@
-{% if page.lang %}
-  {% assign language = page.lang %}
-{% elsif site.collections[page.collection].lang %}
-  {% assign language = site.collections[page.collection].lang %}
-{% endif %}
-{% assign t = site.data.i18n_strings %}
-
 {% assign en_coll = site.collections[page.collection].i18n.en %}
 {% case en_coll %}
 {% when 'en_country' or 'en_state' %}

@@ -14,13 +14,7 @@ conf:
 {% endif %}
 {% assign t = site.data.i18n_strings %}
 
-{% case site.collections[page.collection].lang %}
-  {% when 'en' %}
-    {% assign col = 'en_state' %}
-  {% when 'es' %}
-    {% assign col = 'es_state' %}
-{% endcase %}
-
+{% assign col = site.collections['en_state'].i18n[language] %}
 {% assign has_states = false %}
 {% for state in site[col] %}
   {% if state.country == page.id %}
