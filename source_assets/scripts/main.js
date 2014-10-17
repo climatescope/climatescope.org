@@ -19,4 +19,7 @@ function initDropdown() {
 
 $(function() {
   initDropdown();
+
+  // Create cookie with language to use on the 404.
+  createCookie('CS_lang', CS.lang, null, CS.domain);
 });
