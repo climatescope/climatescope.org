@@ -5,7 +5,8 @@
   <li class="dropdown">
     <a href="#" title="{{ t['Explore data by region'][language] }}" class="dropdown-toggle caret" data-toggle="dropdown">{{ t['Regions'][language] }}</a>
     <ul class="dropdown-menu" role="menu">
-      {% assign sorted_regions = (site.en_region | sort: 'weight') %}
+      {% assign col_name = site.collections['en_region'].i18n[language] %}
+      {% assign sorted_regions = (site[col_name] | sort: 'weight') %}
       {% for region in sorted_regions %}
       <li>
         <a href="{{ site.domain }}{{ site.path_prefix }}{{ region.url }}" title="{{ t['See detailed data on'][language] }} {{ region.title }}">{{ region.title }}</a>
