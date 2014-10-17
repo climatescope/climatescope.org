@@ -3,7 +3,6 @@ layout: page
 
 title : Contact
 id: contact
-lang: en
 ---
 If you have further questions or comments regarding the Global Climatescope please contact:
 

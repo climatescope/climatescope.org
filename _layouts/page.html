@@ -1,6 +1,13 @@
 ---
 layout: base
 ---
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+{% assign t = site.data.i18n_strings %}
+
 <article class="layout--page">
   <header class="layout--page__header">
     <div class="row--contained">
