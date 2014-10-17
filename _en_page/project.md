@@ -3,7 +3,6 @@ layout: page
 
 title : Project
 id: project
-lang: en
 ---
 ##What is the Global Climatescope?
 

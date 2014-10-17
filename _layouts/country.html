@@ -12,14 +12,9 @@ conf:
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
+{% assign t = site.data.i18n_strings %}
 
-{% case site.collections[page.collection].lang %}
-  {% when 'en' %}
-    {% assign col = 'en_state' %}
-  {% when 'es' %}
-    {% assign col = 'es_state' %}
-{% endcase %}
-
+{% assign col = site.collections['en_state'].i18n[language] %}
 {% assign has_states = false %}
 {% for state in site[col] %}
   {% if state.country == page.id %}
@@ -36,9 +31,8 @@ conf:
   <div class="row--full intro">
     <div class="row--contained">
       <dl class="meta-details">
-        {% case language %}
-        {% when 'en' %}
-  
+        
+        <!-- TO TRANSLATE IF TO BE KEPT -->
         <dt>Gdp</dt>
         <dd>$2,396bn</dd>
         <dt>Seven-year Economic Growth Rate</dt>
@@ -55,27 +49,7 @@ conf:
         <dd>57,400gwh</dd>
         <dt>Top Energy Authority</dt>
         <dd>Ministry Of Mines & Energy</dd>
-  
-        {% when 'es' %}
-  
-        <dt>Gdp</dt>
-        <dd>$2,396bn</dd>
-        <dt>Seven-year Economic Growth Rate</dt>
-        <dd>6%</dd>
-        <dt>Population</dt>
-        <dd>198m</dd>
-        <dt>Total Clean Energy Investments</dt>
-        <dd>$82.2bn</dd>
-        <dt>Installed Power Capacity</dt>
-        <dd>123gw</dd>
-        <dt>Renewable Share</dt>
-        <dd>13%</dd>
-        <dt>Total Clean Energy Generation</dt>
-        <dd>57,400gwh</dd>
-        <dt>Top Energy Authority</dt>
-        <dd>Ministry Of Mines & Energy</dd>
-  
-        {% endcase %}
+        <!--/ TO TRANSLATE IF TO BE KEPT -->
   
       </dl>
       {% include static_map.html %}
@@ -85,50 +59,24 @@ conf:
   <div class="row--contained">
   
     <div class="col--main prose-copy">
-      {% case language %}
-      {% when 'en' %}
-        <h2>Description</h2>
-      {% when 'es' %}
-        <h2>Descripción</h2>
-      {% endcase %}
-
+      <h2>{{ t['Description'][language] }}</h2>
       {{ content }}
     </div>
   
     <div class="col--sec prose-copy" ng-controller="StatsController as statsCtrl" ng-cloak>
-      {% case language %}
-      {% when 'en' %}
-        <h2>Performance</h2>
+        <h2>{{ t['Performance'][language] }}</h2>
         <dl class="stats-list">
-          <dt>Overall Rank</dt>
+          <dt>{{ t['Overall Rank'][language] }}</dt>
           <dd>%% statsCtrl.countryStats.overall_ranking | leadingZero:2 %%</dd>
-          <dt>Regional Rank</dt>
+          <dt>{{ t['Regional Rank'][language] }}</dt>
           <dd>%% statsCtrl.countryStats.regional_ranking | leadingZero:2 %%</dd>
-          <dt>Score</dt>
+          <dt>{{ t['Score'][language] }}</dt>
           <dd>%% statsCtrl.countryStats.value | round:2 %%</dd>
         </dl>
         <ul class="ctas-list">
-          <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
-          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
+          <li><a class="bttn bttn-cta go" href="#" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
+          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.id | upcase }}" title="{{ t['View policies'][language] }}">{{ t['View policies'][language] }} <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
         </ul>
-  
-      {% when 'es' %}
-  
-        <h2>Desempeño</h2>
-        <dl class="stats-list">
-          <dt>Posición global</dt>
-          <dd>%% statsCtrl.countryStats.overall_ranking | leadingZero:2 %%</dd>
-          <dt>Posición regional</dt>
-          <dd>%% statsCtrl.countryStats.regional_ranking | leadingZero:2 %%</dd>
-          <dt>Puntuación</dt>
-          <dd>%% statsCtrl.countryStats.value | round:2 %%</dd>
-        </dl>
-        <ul class="ctas-list">
-          <li><a class="bttn bttn-cta go" href="#" title="Compare con">Compare con</a></li>
-          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/es/politicas/#/?country={{ page.id | upcase }}" title="Ver politicas">Ver politicas <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
-        </ul>
-  
-      {% endcase %}
     </div>
   
   </div>
@@ -161,18 +109,9 @@ conf:
     
     {% if has_states %}
     <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="CountryTabsController as navCtrl">
-      {% case language %}
-      {% when 'en' %}
-      <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="In detail">In detail</a></li>
-      <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="States/Provinces">States/Provinces</a></li>
+      <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="{{ t['View in detail'][language] }}">{{ t['In detail'][language] }}</a></li>
+      <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="{{ t['View states / provinces'][language] }}">{{ t['States / provinces'][language] }}</a></li>
       <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li> -->
-  
-      {% when 'es' %}
-      <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="En detalle">En detalle</a></li>
-      <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="Estados / Provincias">Estados/Provincias</a></li>
-      <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study ES</a></li> -->
-
-      {% endcase %}
     </ul>
     {% endif %}
     <div ng-view></div>

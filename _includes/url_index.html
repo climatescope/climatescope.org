@@ -1,21 +1,9 @@
-{% if page.lang %}
-  {% assign language = page.lang %}
-{% elsif site.collections[page.collection].lang %}
-  {% assign language = site.collections[page.collection].lang %}
-{% endif %}
+<script>
 
-<script>    
-  {% case language %}
-  {% when 'en' %}
-    {% assign country_col = 'en_country' %}
-    {% assign state_col = 'en_state' %}
-    {% assign param_col = 'en_parameter' %}
-  {% when 'es' %}
-    {% assign country_col = 'es_country' %}
-    {% assign state_col = 'es_state' %}
-    {% assign param_col = 'es_parameter' %}
-  {% endcase %}
-  
+  {% assign country_col = site.collections['en_country'].i18n[language] %}
+  {% assign state_col = site.collections['en_state'].i18n[language] %}
+  {% assign param_col = site.collections['en_parameter'].i18n[language] %}
+
   // Country index to retrieve the url.
   CS.countryIndex = {
     {% for country in site[country_col] %}

@@ -3,7 +3,6 @@ layout: page
 
 title : Datos
 id: download
-lang: es
 ---
 <div class="well well-l download download-pdf">
 	<h2>Full Report</h2>

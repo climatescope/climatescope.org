@@ -12,6 +12,7 @@ conf:
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
+{% assign t = site.data.i18n_strings %}
 
 <script>
     CS.stateId = '{{page.id}}';
@@ -21,9 +22,8 @@ conf:
   <div class="row--full intro">
     <div class="row--contained">
       <dl class="meta-details">
-        {% case language %}
-        {% when 'en' %}
-  
+
+        <!-- TO TRANSLATE IF TO BE KEPT -->
         <dt>Gdp</dt>
         <dd>$2,396bn</dd>
         <dt>Seven-year Economic Growth Rate</dt>
@@ -40,27 +40,8 @@ conf:
         <dd>57,400gwh</dd>
         <dt>Top Energy Authority</dt>
         <dd>Ministry Of Mines & Energy</dd>
-  
-        {% when 'es' %}
-  
-        <dt>ES Gdp</dt>
-        <dd>$2,396bn</dd>
-        <dt>Seven-year Economic Growth Rate</dt>
-        <dd>6%</dd>
-        <dt>Population</dt>
-        <dd>198m</dd>
-        <dt>Total Clean Energy Investments</dt>
-        <dd>$82.2bn</dd>
-        <dt>Installed Power Capacity</dt>
-        <dd>123gw</dd>
-        <dt>Renewable Share</dt>
-        <dd>13%</dd>
-        <dt>Total Clean Energy Generation</dt>
-        <dd>57,400gwh</dd>
-        <dt>Top Energy Authority</dt>
-        <dd>Ministry Of Mines & Energy</dd>
-  
-        {% endcase %}
+        <!--/ TO TRANSLATE IF TO BE KEPT -->
+
       </dl>
       {% include static_map.html %}
     </div>
@@ -73,35 +54,17 @@ conf:
     </div>
 
     <div class="col--sec prose-copy" ng-controller="StatsController as statsCtrl" ng-cloak>
-      {% case language %}
-      {% when 'en' %}
-        <h2>Performance</h2>
-        <dl class="stats-list">
-          <dt>State Rank</dt>
-          <dd>%% statsCtrl.stateStats.state_ranking | leadingZero:2 %%</dd>
-          <dt>Score</dt>
-          <dd>%% statsCtrl.stateStats.value | round:2 %%</dd>
-        </dl>
-        <ul class="ctas-list">
-          <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to</a></li>
-          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
-        </ul>
-  
-      {% when 'es' %}
-  
-        <h2>Performance</h2>
-        <dl class="stats-list">
-          <dt>State Rank</dt>
-          <dd>%% statsCtrl.stateStats.state_ranking | leadingZero:2 %%</dd>
-          <dt>Score</dt>
-          <dd>%% statsCtrl.stateStats.value | round:2 %%</dd>
-        </dl>
-        <ul class="ctas-list">
-          <li><a class="bttn bttn-cta go" href="#" title="Compare to">Compare to ES</a></li>
-          <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="View policies">View policies <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
-        </ul>
-  
-      {% endcase %}
+      <h2>{{ t['Performance'][language] }}</h2>
+      <dl class="stats-list">
+        <dt>{{ t['State Rank'][language] }}</dt>
+        <dd>%% statsCtrl.stateStats.state_ranking | leadingZero:2 %%</dd>
+        <dt>{{ t['Score'][language] }}</dt>
+        <dd>%% statsCtrl.stateStats.value | round:2 %%</dd>
+      </dl>
+      <ul class="ctas-list">
+        <li><a class="bttn bttn-cta go" href="#" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
+        <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.country | upcase }}&state={{ page.id | upcase }}" title="{{ t['View policies'][language] }}">{{ t['View policies'][language] }} <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
+      </ul>
     </div>
   </div>
 

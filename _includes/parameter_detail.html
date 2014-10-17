@@ -1,59 +1,30 @@
-{% case language %}
-{% when 'en' %}
-<h1 class="visually-hidden">In Detail</h1>
-{% when 'es' %}
-<h1 class="visually-hidden">En Detalle</h1>
-{% endcase %}
+<h1 class="visually-hidden">{{ t['In detail'][language] }}</h1>
 
 <section class="param-details" ng-repeat="param in detailsCtrl.parameters" ng-class="'param-' + param.id">
 
   <header class="param-details__header">
-    {% case language %}
-    {% when 'en' %}
       <div class="param-details__heading">
-        <h1 class="param-details__title"><a href="%% detailsCtrl.getParamUrl(param) %%" title="Go to topic page">%% param.name %%</a></h1>
+        <h1 class="param-details__title"><a href="%% detailsCtrl.getParamUrl(param) %%" title="{{ t['Go to topic page'][language] }}">%% param.name %%</a></h1>
       </div>
       <dl class="param-details__stats">
-        <dt>Score</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">%% score.value | round:2 %%</dd>
-        <dt>Rank</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">%% (score.overall_ranking || score.state_ranking) | leadingZero:2 %%</dd>
+        <dt>{{ t['Score'][language] }}</dt>
+        <dd>%% param.data[0].value | round:2 %%</dd>
+        <dt>{{ t['Rank'][language] }}</dt>
+        <dd>%% (param.data[0].overall_ranking || param.data[0].state_ranking) | leadingZero:2 %%</dd>
       </dl>
-    {% when 'es' %}
-      <div class="param-details__heading">
-        <h1 class="param-details__title"><a href="%% detailsCtrl.getParamUrl(param) %%" title="Visita la pagina del tema">%% param.name %%</a></h1>
-      </div>
-      <dl class="param-details__stats">
-        <dt>Puntuación</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">%% score.value | round:2 %%</dd>
-        <dt>Posición</dt>
-        <dd ng-repeat="score in param.data | orderBy:'year':true | limitTo:1">%% (score.overall_ranking || score.state_ranking) | leadingZero:2 %%</dd>
-      </dl>
-    {% endcase %}
   </header>
 
   <div class="param-details__body">
 
     <table class="table detailed-data param-details__table">
       <thead>
-      {% case language %}
-      {% when 'en' %}
         <tr>
-          <th><span class="visually-hidden">Parameter</span></th>
-          <th>Rank</th>
-          <th>Score</th>
-          <th>Value</th>
-          <th><span class="visually-hidden">Info</span></th>
+          <th><span class="visually-hidden">{{ t['Parameter'][language] }}</span></th>
+          <th>{{ t['Rank'][language] }}</th>
+          <th>{{ t['Score'][language] }}</th>
+          <th>{{ t['Value'][language] }}</th>
+          <th><span class="visually-hidden">{{ t['Info'][language] }}</span></th>
         </tr>
-      {% when 'es' %}
-        <tr>
-          <th><span class="visually-hidden">Tema</span></th>
-          <th>Posición</th>
-          <th>Puntuación</th>
-          <th>Valor</th>
-          <th><span class="visually-hidden">Info</span></th>
-        </tr>
-      {% endcase %}
       </thead>
       <tbody ng-repeat="ind_group in param.indicator_groups">
         <tr>
@@ -64,12 +35,7 @@
           <td class="cell-rank">%% ind.data[0].overall_ranking || '-' %%</td>
           <td class="cell-score">%% ind.data[0].value | round:3 %%</td>
           <td class="cell-score">%% (ind.data[0].raw.value | round:3) || '-' %%<sup>%% ind.data[0].raw.unit %%</sup></td>
-          {% case language %}
-            {% when 'en' %}
-            <td class="cell-info"><a href="" title="About this indicator" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>Info</span></a></td>
-            {% when 'es' %}
-            <td class="cell-info"><a href="" title="Sobre el indicador" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>Info</span></a></td>
-          {% endcase %}
+          <td class="cell-info"><a href="" title="{{ t['About this indicator'][language] }}" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>{{ t['Info'][language] }}</span></a></td>
         </tr>
       </tbody>
     </table>

@@ -3,6 +3,7 @@
 {% elsif site.collections[page.collection].lang %}
   {% assign language = site.collections[page.collection].lang %}
 {% endif %}
+{% assign t = site.data.i18n_strings %}
 
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -92,7 +93,7 @@
     <script>CS.gtIE8 = true;</script>
   <!--<![endif]-->
   {% endif %}
-  
+  {% include language_index.html %}
   <script src="{{ site.domain }}{{ site.path_prefix }}/assets/scripts/main.min.js"></script>
 </body>
 </html>
