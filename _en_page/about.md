@@ -14,5 +14,17 @@ This marks the third year of the Climatescope project. In 2012 and 2013, the Cli
 
 In 2014, the UK Department for International Development and the US Agency for International Development have joined as supporters and advisors. The project has been expanded to include 55 countries, states, and provinces in sub-Saharan Africa and Asia. Bloomberg New Energy Finance serves as research partner and author of the report.
 
+***
+
 ## Credits
 All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
+
+<h3 class="hd-label adjacent-bottom">Developed by</h3>
+<ul class="logo-list">
+  <li>
+    <a href="http://flipside.org/" title="Visit Flipside" target="_blank"><img width="256" height="128" alt="Flipside logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-flipside.png" /> <span>Flipside</span></a>
+  </li>
+  <li>
+    <a href="http://developmentseed.org/" title="Visit Development Seed" target="_blank"><img width="256" height="128" alt="Development Seed logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-devseed.png" /> <span>Development Seed</span></a>
+  </li>
+</ul>
