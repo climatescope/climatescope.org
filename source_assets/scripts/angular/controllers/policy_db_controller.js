@@ -212,7 +212,7 @@
     // Override pagination template.
     $templateCache.put("template/pagination/pagination.html",
       "<div class='pagination-wrapper'>\n" +
-      "  <ul class='pagination bttn-group bttn-group-s bttn-list'>\n" +
+      "  <ul class='pagination bttn-group bttn-group-m bttn-list'>\n" +
       "    <li ng-repeat='page in pages'><a class='bttn bttn-default' ng-class='{active: page.active, disabled: page.disabled}' ng-click='selectPage(page.number)'>{{page.text}}</a></li>\n" +
       "  </ul>\n" +
       "</div>");

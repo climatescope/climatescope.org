@@ -8,7 +8,6 @@
       <div class="row--contained">
         <div class="layout--hub__heading">
           <h1 class="layout--hub__title">{{ t['Policies'][language] }}</h1>
-          <a href="" class="reset" title="{{ t['Reset filters'][language] }}" ng-click="filterCtrl.disableFilters()"><span>{{ t['Reset'][language] }}</span></a>
         </div>
         <div class="layout--hub__tools" init-dropdown>
           {% include actions_menu.html %}
@@ -38,7 +37,8 @@
           </div>
           
           <div class="control">
-            <button ng-click="filterCtrl.apply()" class="bttn bttn-default bttn-m">{{ t['Filter'][language] }}</button>
+            <button ng-click="filterCtrl.disableFilters()" class="bttn bttn-default bttn-m">{{ t['Reset'][language] }}</button>
+            <button ng-click="filterCtrl.apply()" class="bttn bttn-dark bttn-m">{{ t['Filter'][language] }}</button>
           </div>
           
           <!-- <div class="control">
@@ -47,7 +47,6 @@
               <option value="">-- Any --</option>
             </select>
           </div> -->
-          
         </div>
         
       </div>

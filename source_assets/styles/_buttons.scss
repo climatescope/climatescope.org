@@ -78,6 +78,14 @@ input[type=submit] {
   @extend .antialiased;
 }
 
+// Dark (Gray)
+.bttn-dark,
+.bttn-dark:visited {
+  @include bttn-variation(tint($primary-color, 40%));
+  color: #fff;
+  @extend .antialiased;
+}
+
 // Call to Action
 .bttn-cta,
 .bttn-cta:visited {
