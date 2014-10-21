@@ -533,6 +533,12 @@ a:active{
     white-space: pre-wrap;
     display: inline;
   }
+  &__lead {
+    font-family: $brand-font-family;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: 1rem 0 1.25rem 0;
+  }
   &__tools {
     @include col(6/12);
     margin-right: 0 !important;
