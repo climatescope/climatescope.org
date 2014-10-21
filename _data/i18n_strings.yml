@@ -22,6 +22,9 @@ About this indicator:
 All: 
   en: "All"
   es: "Todos"
+Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope.:
+  en: "Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope."
+  es: "Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope."
 Assessing the Climate for Climate Investment: 
   en: "Assessing the Climate for Climate Investment"
   es: "Assessing the Climate for Climate Investment ES"
@@ -39,7 +42,7 @@ Bloomberg logo:
   es: "Bloomberg logo"
 Bottom ten: 
   en: "Bottom ten"
-  es: "Diez últimos"
+  es: "Últimos 10"
 Browse the policy database: 
   en: "Browse the policy database"
   es: "Navegue la base de datos de las políticas"
@@ -49,6 +52,9 @@ By:
 Calculate your own score: 
   en: "Calculate your own score"
   es: "Calcule su propia puntuación"
+Climatescope:
+  en: "Climatescope"
+  es: "Climascopio"
 Close: 
   en: "Close"
   es: "Cerrar"
@@ -157,9 +163,9 @@ More about:
 More about the methodology: 
   en: "More about the methodology"
   es: "Más sobre la metodologia"
-More about the project: 
-  en: "More about the project"
-  es: "Más sobre el proyecto"
+More about the Climatescope: 
+  en: "More about the Climatescope"
+  es: "Más sobre el Climascopio"
 No results avaliable with current filters.: 
   en: "No results avaliable with current filters."
   es: "No fueron encontrados politicas para este conjunto de filtros."
@@ -304,9 +310,9 @@ States / provinces:
 Status: 
   en: "Status"
   es: "Estatus"
-The Climatescope is an interactive index and tool that ranks and profiles 55 countries worldwide according to their investment climate for attracting capital for clean energy sources.: 
-  en: "The Climatescope is an interactive index and tool that ranks and profiles 55 countries worldwide according to their investment climate for attracting capital for clean energy sources."
-  es: "The Climatescope is an interactive index and tool that ranks and profiles 55 countries worldwide according to their investment climate for attracting capital for clean energy sources. ES"
+Explore and assess the investment climate and policies for clean energy investments in 55 emerging markets in Africa, Asia, and in Latin America and the Caribbean offered by the Climatescope 2014 – a unique country-by-country assessment, interactive report and index.:
+  en: "Explore and assess the investment climate and policies for clean energy investments in 55 emerging markets in Africa, Asia, and in Latin America and the Caribbean offered by the Climatescope 2014 – a unique country-by-country assessment, interactive report and index."
+  es: "Explore and assess the investment climate and policies for clean energy investments in 55 emerging markets in Africa, Asia, and in Latin America and the Caribbean offered by the Climatescope 2014 – a unique country-by-country assessment, interactive report and index."
 The Multilateral Investment Fund: 
   en: "The Multilateral Investment Fund"
   es: "Fondo Multilateral de Inversiones"
@@ -318,7 +324,7 @@ The global index:
   es: "El índice global"
 Top ten: 
   en: "Top ten"
-  es: "Top diez"
+  es: "Mejores 10"
 Topic rank: 
   en: "Topic rank"
   es: "Posición tema"

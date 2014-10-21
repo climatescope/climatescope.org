@@ -1,62 +1,14 @@
-#Climatescope
-====
+# Climatescope
+The [Climatescope](http://global-climatescope.org) is a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide. It is a project by [UK AID](https://www.gov.uk/government/organisations/department-for-international-development), [Power Africa](http://www.usaid.gov/powerafrica), [BNEF](http://www.newenergyfinance.com/) and the [Multilateral Investment Fund](http://www.fomin.org/)
 
-## Project structure
+![Homepage of the Climatescope 2014](https://cloud.githubusercontent.com/assets/751330/4717596/a890d596-5916-11e4-81c4-4c678d83a34c.png)
 
-| | |
-| --- | --- |
-| / | 
-| /source_assets | Contains the js and scss files that are compiled by Grunt |
-| /source | Used by Jekyll to build the site |
-| /_site | The final site built by Jekyll |
+## Credits
+The current Climatescope website was built by [Flipside](http://flipside.org) in collaboration with [Development Seed](http://developmentseed.org).
 
-## Development environment
-To set up the development environment for this website, you'll need to install the following on your system:
+## License
+Copyright (c) 2014. Multilateral Investment Fund, Inter-American Development Bank.
 
-- Npm
-- compass & sass
-- Sass CSS Importer ( $ gem install --pre sass-css-importer )
-- Grunt ( $ npm install -g grunt-cli )
-- jekyll ( $ gem install jekyll )
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
-After these basic requirements are met, run the following commands in the website's folder:
-```
-$ npm install
-
-```
-You might have to run these as sudo.
-
-### Getting started
-To set up your development environment, you'll have to run the following two commands in seperate terminals.
-
-```
-$ grunt
-```
-Compiles the compass files, javascripts and generates the website.
-The system will watch files and execute tasks whenever one of them changes.
-
-```
-$ grunt jk
-```
-Spins up a jekyll server accesible on localhost:4000.
-
-### Other commands
-Clean the compiled sass, javascript, and _/site:
-```
-$ grunt clean
-```
-
-Compile the compass files, javascripts and generate the website. Use this instead of ```grunt``` if you just want to render it once:
-```
-$ grunt build
-```
-
-Compile the compass files and javascripts prepared for production (minified, uglyfied). Every time changes will be pushed to production, this command needs to be run:
-```
-$ grunt prod
-```
-
-Compile the compass files and copies them to the jekyll directory (_site). Requires a compiled version of the website.
-```
-$ grunt watch-css
-```
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](http://www.gnu.org/licenses/gpl-3.0.txt) for more details.
