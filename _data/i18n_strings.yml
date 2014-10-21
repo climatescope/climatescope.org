@@ -49,6 +49,9 @@ By:
 Calculate your own score: 
   en: "Calculate your own score"
   es: "Calcule su propia puntuación"
+Climatescope:
+  en: "Climatescope"
+  es: "Climascopio"
 Close: 
   en: "Close"
   es: "Cerrar"
@@ -157,9 +160,9 @@ More about:
 More about the methodology: 
   en: "More about the methodology"
   es: "Más sobre la metodologia"
-More about the project: 
-  en: "More about the project"
-  es: "Más sobre el proyecto"
+More about the Climatescope: 
+  en: "More about the Climatescope"
+  es: "Más sobre el Climascopio"
 No results avaliable with current filters.: 
   en: "No results avaliable with current filters."
   es: "No fueron encontrados politicas para este conjunto de filtros."
