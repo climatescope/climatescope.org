@@ -551,6 +551,12 @@ a:active{
   }
   h1, h2 { @extend .hd-xs; }
   h3, h4, h5, h6 { @extend .hd-xxs; }
+  .hd-label {
+    @extend .hd-label;
+    &.adjacent-bottom {
+      margin-bottom: 0;
+    }
+  }
 }
 
 
@@ -984,31 +990,15 @@ a:active{
     margin-bottom: 0;
     font-size: 0.85rem;
   }
-  .orgs-list {
-    list-style: none;
-    padding: 0;
+  .logo-list {
     margin: 0 -1.5rem;
     li {
-      float: left;
-      margin: 0 1rem 1rem 0;
       width: 6rem;
-    }
-    a {
-      display: block;
-    }
-    span {
-      @extend .visually-hidden;
-    }
-    img {
-      width: auto;
-      max-width: 100%;
-      height: auto;
-      vertical-align: top;
     }
   }
   @media #{$xlarge-up} {
     @include col(5/12);
-    .orgs-list {
+    .logo-list {
       float: right;
     }
     .copyright {
@@ -1019,6 +1009,35 @@ a:active{
 
 
 // LISTS
+
+.logo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+  overflow: hidden;
+  li {
+    float: left;
+    margin: 0 1.5rem 1.5rem 0;
+    width: 8rem;
+  }
+  .label {
+    @extend .hd-label;
+    line-height: 1rem;
+    display: block;
+  }
+  a {
+    display: block;
+  }
+  span {
+    @extend .visually-hidden;
+  }
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+  }
+}
 
 .download-list {
   list-style: none;
@@ -1054,6 +1073,7 @@ a:active{
     float: right;
   }
 }
+
 
 // IE8
 .lt-ie9 {
