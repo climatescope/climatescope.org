@@ -125,6 +125,40 @@
   }
 }
 
+.region-table {
+  table-layout: fixed;
+
+  tr:first-child > th:nth-child(1),
+  tr:first-child > td:nth-child(1) {
+    width: 6%;
+  }
+  tr:first-child > th:nth-child(2),
+  tr:first-child > td:nth-child(2) {
+    width: 12%;
+
+  }
+  tr:first-child > th:nth-child(3),
+  tr:first-child > td:nth-child(3) {
+    width: 12%;
+  }
+  tr:first-child > th:nth-child(4),
+  tr:first-child > td:nth-child(4) {
+    width: 22%;
+  }
+  tr:first-child > th:nth-child(5),
+  tr:first-child > td:nth-child(5) {
+    width: 13%;
+  }
+  tr:first-child > th:nth-child(6),
+  tr:first-child > td:nth-child(6) {
+    width: 26%;
+  }
+  tr:first-child > th:nth-child(7),
+  tr:first-child > td:nth-child(7) {
+    width: 9%;
+  }
+}
+
 .table-nested {
   background-color: tint($primary-color, 95%);
   margin-bottom: 0;
