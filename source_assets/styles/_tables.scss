@@ -96,40 +96,42 @@
 }
 
 .parameter-table,
-.country-table {
+.region-table,
+.country-table,
+.state-table {
   table-layout: fixed;
-
-  tr:first-child > th:nth-child(1),
-  tr:first-child > td:nth-child(1) {
-    width: 5%;
+  td, th {
+    break-word: word-wrap;
   }
-  tr:first-child > th:nth-child(2),
-  tr:first-child > td:nth-child(2) {
-    width: 12.5%;
+  .th-expand {
+    width: 2rem;
   }
-  tr:first-child > th:nth-child(3),
-  tr:first-child > td:nth-child(3) {
-    width: 30%;
+  .th-rank {
+    width: 6rem;
   }
-  tr:first-child > th:nth-child(4),
-  tr:first-child > td:nth-child(4) {
-    width: 12.5%;
+  .th-score {
+    width: 7rem;
   }
-  tr:first-child > th:nth-child(5),
-  tr:first-child > td:nth-child(5) {
-    width: 30%;
+  .th-country {
+    width: 13rem;
   }
-  tr:first-child > th:nth-child(6),
-  tr:first-child > td:nth-child(6) {
-    width: 10%;
+  .th-graph {
+    width: auto;
   }
-}
-
-.table-nested {
-  background-color: tint($primary-color, 95%);
-  margin-bottom: 0;
-  > thead > tr > th {
-    @extend .visually-hidden;
+  .th-grid {
+    width: 5rem;
+  }
+  .table-nested {
+    table-layout: fixed;
+    background-color: tint($primary-color, 95%);
+    margin-bottom: 0;
+    > thead > tr > th {
+      padding: 0;
+      height: 0;
+      line-height: 0;
+      overflow: hidden;
+      border-bottom: 0;
+    }
   }
 }
 
@@ -167,7 +169,6 @@
   }
   .avg {
     float: right;
-    margin-right: 10%;
   }
   
   sup {
