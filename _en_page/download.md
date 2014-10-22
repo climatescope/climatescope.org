@@ -10,11 +10,11 @@ id: download
   <ul class="download-list">
     <li>
       <strong class="term">PDF - English</strong>
-      <a href="http://global-climatescope.org/en/download/CS2014-pressrelease.pdf" title="Download Climatescope press release (English)" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/en/download/docs/climatescope-2014-pressrelease.pdf" title="Download Climatescope press release (English)" class="bttn bttn-success download data-download">Download</a>
     </li>
     <li>
       <strong class="term">PDF - Portuguese</strong>
-      <a href="http://global-climatescope.org/pt/download/CS2014-pressrelease.pdf" title="Download Climatescope press release (Portuguese)" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/pt/download/docs/climatescope-2014-pressrelease.pdf" title="Download Climatescope press release (Portuguese)" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
 </div>
@@ -25,7 +25,7 @@ id: download
   <ul class="download-list">
     <li>
       <strong class="term">PDF</strong>
-      <a href="http://global-climatescope.org/en/download/CS2014-report.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/en/download/report/climatescope-2014-report.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
 </div>
@@ -36,11 +36,11 @@ id: download
   <ul class="download-list">
     <li>
       <strong class="term">CSV</strong>
-      <a href="#" title="Download Climatescope data in CSV format" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/en/download/data/climatescope-full.csv" title="Download Climatescope data in CSV format" class="bttn bttn-success download data-download">Download</a>
     </li>
     <li>
       <strong class="term">Excel</strong>
-      <a href="#" title="Download Climatescope data in Excel format" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/en/download/model/climatescope-2014.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
 </div>
