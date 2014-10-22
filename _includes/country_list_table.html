@@ -6,15 +6,15 @@
 
   <thead>
     <tr>
-      <th>&nbsp;</th>
+      <th class="th-expand">&nbsp;</th>
     {% if layout.conf.type == 'region' %}
-      <th>{{ t['Regional rank'][language] }}</th>
+      <th class="th-rank">{{ t['Regional rank'][language] }}</th>
     {% endif %}
-      <th><a href="" title="{{ t['Sort by global rank'][language] }}" ng-click="countryTable.setSortExpression('overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('overall_ranking')]">{{ t['Global rank'][language] }}</a></th>
-      <th><a href="" title="{{ t['Sort by country'][language] }}" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">{{ t['Country'][language] }}</a></th>
-      <th><a href="" title="{{ t['Sort by global score'][language] }}" ng-click="countryTable.setSortExpression('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">{{ t['Global score'][language] }}</a></th>
-      <th><span class="visually-hidden">{{ t['Topics'][language] }}:</span> 0.0 - 5.0</th>
-      <th><a href="" title="{{ t['Sort by grid'][language] }}" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">{{ t['Grid'][language] }}</a></th>
+      <th class="th-rank"><a href="" title="{{ t['Sort by global rank'][language] }}" ng-click="countryTable.setSortExpression('overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('overall_ranking')]">{{ t['Global rank'][language] }}</a></th>
+      <th class="th-country"><a href="" title="{{ t['Sort by country'][language] }}" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">{{ t['Country'][language] }}</a></th>
+      <th class="th-score"><a href="" title="{{ t['Sort by global score'][language] }}" ng-click="countryTable.setSortExpression('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">{{ t['Global score'][language] }}</a></th>
+      <th class="th-graph"><span class="visually-hidden">{{ t['Topics'][language] }}:</span> 0.0 - 5.0</th>
+      <th class="th-grid"><a href="" title="{{ t['Sort by grid'][language] }}" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">{{ t['Grid'][language] }}</a></th>
     </tr>
   </thead>
   <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortExpression ">
@@ -49,15 +49,15 @@
         <table class="table table-nested">
           <thead>
             <tr>
-              <th>&nbsp;</th>
-              {% if layout.conf.type == 'region' %}
-                <th>&nbsp;</th>
-              {% endif %}
-              <th>{{ t['Global rank'][language] }}</th>
-              <th>{{ t['Country'][language] }}</th>
-              <th>{{ t['Score'][language] }}</th>
-              <th><span class="visually-hidden">{{ t['Topics'][language] }}:</span> 0.0 - 5.0</th>
-              <th>&nbsp;</th>
+              <th class="th-expand">&nbsp;</th>
+            {% if layout.conf.type == 'region' %}
+              <th class="th-rank">&nbsp;</th>
+            {% endif %}
+              <th class="th-rank"><span class="visually-hidden">{{ t['Global rank'][language] }}</span></th>
+              <th class="th-country"><span class="visually-hidden">{{{ t['Country'][language] }}</span></th>
+              <th class="th-score"><span class="visually-hidden">{{{ t['Score'][language] }}</span></th>
+              <th class="th-graph"><span class="visually-hidden">{{ t['Topics'][language] }}: 0.0 - 5.0</span></th>
+              <th class="th-grid">&nbsp;</th>
             </tr>
           </thead>
           <tr ng-repeat="state in country.states | orderBy:'score':true">
