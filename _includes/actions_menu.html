@@ -2,7 +2,7 @@
 {% case en_coll %}
 {% when 'en_country' or 'en_state' %}
   {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/countries/climatescope-{{ page.id }}.csv{% endcapture %}
-  {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/countries/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.csv{% endcapture %}
+  {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/countries/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
 {% when 'en_region' %}
   {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/regions/climatescope-{{ site.edition }}-{{ page.id }}.csv{% endcapture %}
 {% when 'en_parameter' %}
