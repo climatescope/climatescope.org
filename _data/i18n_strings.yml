@@ -82,6 +82,9 @@ Download data:
 Download raw data in CSV format: 
   en: "Download raw data in CSV format"
   es: "Descargue los datos en formato CSV"
+Download report in PDF format:
+  en: "Download report in PDF format"
+  es: "Descargue el informe en formato PDF"
 Download the data and report: 
   en: "Download the data and report"
   es: "Descargue los datos y el reporte"
@@ -229,6 +232,9 @@ Regional rank:
 Regions: 
   en: "Regions"
   es: "Regiones"
+Report (PDF):
+  en: "Report (PDF)"
+  es: "Informe (PDF)"
 Reset: 
   en: "Reset"
   es: "Restablecer"
