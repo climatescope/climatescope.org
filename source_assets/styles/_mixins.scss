@@ -5,7 +5,7 @@
 @mixin heading($font-size) {
   font-size: $font-size;
   line-height: $font-size + 0.25;
-  @media #{$small-up} {
+  @media #{$medium-up} {
     $font-size: $font-size + 0.25;
     font-size: $font-size;
     line-height: $font-size + 0.25;

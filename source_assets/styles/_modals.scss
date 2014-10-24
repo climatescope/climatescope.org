@@ -17,7 +17,7 @@
   
   // The ghost, nudged to maintain perfect centering
   // Only medium-up queries
-  @media #{$medium-up} {
+  @media #{$large-up} {
     &:before {
       content: '';
       display: inline-block;
@@ -42,7 +42,7 @@
   border-radius: $global-radius;
   padding: 4rem 12rem 4rem 6rem;
   text-align: left;
-  @media #{$medium-up} {
+  @media #{$large-up} {
     width: 100%;
     max-width: 46rem;
   }
