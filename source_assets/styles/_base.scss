@@ -385,7 +385,6 @@ a:active{
   @extend .antialiased;
   margin-top: 2rem;
   margin-bottom: 1rem;
-  background: red;
   &__title {
     @extend .hd-m;
   }
@@ -399,7 +398,6 @@ a:active{
   }
   @media #{$xlarge-up} {
     @include col(8/12);
-    background: blue;
   }
 }
 
