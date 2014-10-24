@@ -63,11 +63,11 @@ a:active{
     @include center($max-width);
     padding-left: 1rem;
     padding-right: 1rem;
-    @media #{$small-up} {
+    @media #{$medium-up} {
       padding-left: 2rem;
       padding-right: 2rem;
     }
-    @media #{$medium-up} {
+    @media #{$large-up} {
       padding-left: 3rem;
       padding-right: 3rem;
     }
@@ -278,7 +278,7 @@ a:active{
   @extend .antialiased;
   font-family: $brand-font-family;
   margin-bottom: 1rem;
-  @media #{$xlarge-up} {
+  @media #{$xxlarge-up} {
     @include col(4/12);
     margin-bottom: 0;
   }
@@ -299,7 +299,7 @@ a:active{
 
 #prime-nav {
   @include span(12/12);
-  @media #{$xlarge-up} {
+  @media #{$xxlarge-up} {
     @include col(8/12);
   }
   @media print {
@@ -313,10 +313,10 @@ a:active{
   right: 2rem;
   z-index: 1;
   margin: 0 0 0 2rem !important;
-  @media #{$medium-up} {
+  @media #{$large-up} {
     right: 3rem;
   }
-  @media #{$xlarge-up} {
+  @media #{$xxlarge-up} {
     position: static;
     float: right;
   }
@@ -345,7 +345,7 @@ a:active{
   .open > .dropdown-toggle {
     @include opacity(0.4);
   }
-  @media #{$xlarge-up} {
+  @media #{$xxlarge-up} {
     float: right;
   }
   .topics {
@@ -396,7 +396,7 @@ a:active{
       margin-bottom: 0;
     }
   }
-  @media #{$large-up} {
+  @media #{$xlarge-up} {
     @include col(8/12);
   }
 }
@@ -424,7 +424,7 @@ a:active{
     @include transition-timing-function(ease);
     @include transition-delay(0);
     &.sticky {
-      @media #{$medium-up} {
+      @media #{$large-up} {
         width: 100%;
         position: fixed;
         top: 0;
@@ -496,12 +496,12 @@ a:active{
   .layout--page & {
     @include col(12/12);
   }
-  @media #{$medium-up} {
+  @media #{$large-up} {
     .layout--page & {
       @include col(10/12);
     }
   }
-  @media #{$large-up} {
+  @media #{$xlarge-up} {
     @include col(8/12);
     .layout--page & {
       @include col(8/12);
@@ -523,7 +523,7 @@ a:active{
   &__heading {
     @include col(6/12);
     position: relative;
-    @media #{$large-up} {
+    @media #{$xlarge-up} {
       @include col(8/12);
     }
   }
@@ -542,10 +542,10 @@ a:active{
   &__tools {
     @include col(6/12);
     margin-right: 0 !important;
-    @media #{$small-up} {
+    @media #{$medium-up} {
       padding: 0.375rem 0;
     }
-    @media #{$large-up} {
+    @media #{$xlarge-up} {
       @include col(4/12);
     }
   }
@@ -688,7 +688,7 @@ a:active{
       top: -0.5rem;
     }
   }
-  @media #{$large-up} {
+  @media #{$xlarge-up} {
     dt {
       width: 70%;
       left: 30%;
@@ -752,12 +752,12 @@ a:active{
       }
     }
   }
-  @media #{$large-up} {
+  @media #{$xlarge-up} {
     .media {
       margin: -2rem 4rem -2rem 0;
     }
   }
-  @media #{$xlarge-up} {
+  @media #{$xxlarge-up} {
     .media {
       margin: -2rem 6rem -2rem 0;
     }
@@ -831,7 +831,7 @@ a:active{
       border-radius: $global-rounded;
     }
   }
-  @media #{$large-up} {
+  @media #{$xlarge-up} {
     &__heading {
       @include col(8/12);
     }
@@ -972,7 +972,7 @@ a:active{
       color: inherit;
     }
   }
-  @media #{$xlarge-up} {
+  @media #{$xxlarge-up} {
     @include col(7/12);
     border-bottom: 0;
     padding-bottom: 0;
@@ -1002,7 +1002,7 @@ a:active{
       width: 6rem;
     }
   }
-  @media #{$xlarge-up} {
+  @media #{$xxlarge-up} {
     @include col(5/12);
     .logo-list {
       float: right;

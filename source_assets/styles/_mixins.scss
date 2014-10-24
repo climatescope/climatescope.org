@@ -5,7 +5,7 @@
 @mixin heading($font-size) {
   font-size: $font-size;
   line-height: $font-size + 0.25;
-  @media #{$small-up} {
+  @media #{$medium-up} {
     $font-size: $font-size + 0.25;
     font-size: $font-size;
     line-height: $font-size + 0.25;
@@ -19,12 +19,13 @@
 @mixin bttn-variation($color) {
   background-color: $color;
   &:hover {
-    background-color: shade($color, 5%);
+    background-color: shade($color, 8%);
   }
   .open > &,
   &.active,
-  &.active:hover {
-    background-color: shade($color, 10%);
+  &.active:hover,
+  &:active {
+    background-color: shade($color, 16%);
   }
 }
 
