@@ -74,7 +74,7 @@ conf:
           <dd>%% statsCtrl.countryStats.value | round:2 %%</dd>
         </dl>
         <ul class="ctas-list">
-          <li><a class="bttn bttn-cta go" href="#" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
+          <!--<li><a class="bttn bttn-cta go" href="#" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>-->
           <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.id | upcase }}" title="{{ t['View policies'][language] }}">{{ t['View policies'][language] }} <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
         </ul>
     </div>
