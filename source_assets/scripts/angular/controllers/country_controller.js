@@ -57,13 +57,7 @@
     this.data = {};
     
     this.getIndicatorValue = function(indicator) {
-      if (indicator.value == null) {
-        return 'N/A';
-      }
       var value = indicator.value + indicator.unit;
-      if (indicator.year != indicator.exp_year) {
-        value += ' (' + indicator.year + ')';
-      }
       return value;
     };
 
