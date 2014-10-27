@@ -4,20 +4,6 @@ layout: page
 title : Descargas
 id: download
 ---
-<div class="well well-l download download-pdf">
-  <h2>Comunicado de prensa</h2>
-  <p>Descargar el comunicado de prensa global: 'Un estudio global muestra el aumento de las actividades de energía limpia en los países en desarrollo'.</p>
-  <ul class="download-list">
-    <li>
-      <strong class="term">PDF - Español</strong>
-      <a href="http://global-climatescope.org/es/download/docs/climatescope-2014-pressrelease.pdf" title="Descargar el comunicado de prensa (Español)" class="bttn bttn-success download data-download">Descargar</a>
-    </li>
-    <li>
-      <strong class="term">PDF - Portugués</strong>
-      <a href="http://global-climatescope.org/pt/download/docs/climatescope-2014-pressrelease.pdf" title="Descargar el comunicado de prensa (Portugués)" class="bttn bttn-success download data-download">Descargar</a>
-    </li>
-  </ul>
-</div>
 
 <div class="well well-l download download-pdf">
   <h2>Informe completo</h2>
@@ -44,6 +30,21 @@ id: download
     </li>
   </ul>
 </div>
+
+<!--<div class="well well-l download download-pdf">
+  <h2>Comunicado de prensa</h2>
+  <p>Descargar el comunicado de prensa global: 'Un estudio global muestra el aumento de las actividades de energía limpia en los países en desarrollo'.</p>
+  <ul class="download-list">
+    <li>
+      <strong class="term">PDF - Español</strong>
+      <a href="http://global-climatescope.org/es/download/docs/climatescope-2014-pressrelease.pdf" title="Descargar el comunicado de prensa (Español)" class="bttn bttn-success download data-download">Descargar</a>
+    </li>
+    <li>
+      <strong class="term">PDF - Portugués</strong>
+      <a href="http://global-climatescope.org/pt/download/docs/climatescope-2014-pressrelease.pdf" title="Descargar el comunicado de prensa (Portugués)" class="bttn bttn-success download data-download">Descargar</a>
+    </li>
+  </ul>
+</div>-->
 
 <div class="well well-l download download-pdf">
   <h2>Metodologia</h2>

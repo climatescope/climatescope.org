@@ -5,23 +5,8 @@ title : Download
 id: download
 ---
 <div class="well well-l download download-pdf">
-  <h2>Press release</h2>
-  <p>Download the global press release 'Global study shows clean energy activity surges in developing world'.</p>
-  <ul class="download-list">
-    <li>
-      <strong class="term">PDF - English</strong>
-      <a href="http://global-climatescope.org/en/download/docs/climatescope-2014-pressrelease.pdf" title="Download Climatescope press release (English)" class="bttn bttn-success download data-download">Download</a>
-    </li>
-    <li>
-      <strong class="term">PDF - Portuguese</strong>
-      <a href="http://global-climatescope.org/pt/download/docs/climatescope-2014-pressrelease.pdf" title="Download Climatescope press release (Portuguese)" class="bttn bttn-success download data-download">Download</a>
-    </li>
-  </ul>
-</div>
-
-<div class="well well-l download download-pdf">
-	<h2>Full Report</h2>
-	<p>Download the full Climatescope 2014 report.</p>
+  <h2>Full Report</h2>
+  <p>Download the full Climatescope 2014 report.</p>
   <ul class="download-list">
     <li>
       <strong class="term">PDF</strong>
@@ -45,13 +30,28 @@ id: download
   </ul>
 </div>
 
+<!--<div class="well well-l download download-pdf">
+  <h2>Press release</h2>
+  <p>Download the global press release 'Global study shows clean energy activity surges in developing world'.</p>
+  <ul class="download-list">
+    <li>
+      <strong class="term">PDF - English</strong>
+      <a href="http://global-climatescope.org/en/download/docs/climatescope-2014-pressrelease.pdf" title="Download Climatescope press release (English)" class="bttn bttn-success download data-download">Download</a>
+    </li>
+    <li>
+      <strong class="term">PDF - Portuguese</strong>
+      <a href="http://global-climatescope.org/pt/download/docs/climatescope-2014-pressrelease.pdf" title="Download Climatescope press release (Portuguese)" class="bttn bttn-success download data-download">Download</a>
+    </li>
+  </ul>
+</div>-->
+
 <div class="well well-l download download-pdf">
   <h2>Methodology</h2>
   <p>Download the full methodology used in the Climatescope 2014.</p>
   <ul class="download-list">
     <li>
       <strong class="term">PDF</strong>
-      <a href="http://global-climatescope.org/en/download/CS2014-methodology.pdf" title="Download methodology in PDF" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/en/download/docs/climatescope-2014-methodology-en.pdf" title="Download methodology in PDF" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
 </div>
