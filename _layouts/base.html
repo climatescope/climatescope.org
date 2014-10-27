@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 eq-ie8"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
   
@@ -63,6 +63,10 @@
       <p>Here: <a href="http://browsehappy.com/" title="Visit Broser happy">upgrade your browser</a>!</p>
     </div>
   <![endif]-->
+  
+  <div id="ie8-nocando">
+    <p>{{ t['To enjoy a full experience'][language] }} <a href="http://browsehappy.com/" title="{{ t['Visit Browser happy'][language] }}">{{ t['upgrade your browser'][language] }}</a>.</p>
+  </div>
 
   <div id="site-canvas">
     <header id="site-header" role="banner">
