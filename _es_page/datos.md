@@ -25,7 +25,7 @@ id: download
   <ul class="download-list">
     <li>
       <strong class="term">PDF</strong>
-      <a href="http://global-climatescope.org/es/download/report/climatescope-2014-report.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/es/download/report/climatescope-2014-report-es.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
 </div>
