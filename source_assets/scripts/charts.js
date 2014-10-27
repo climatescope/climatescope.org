@@ -100,11 +100,13 @@ function chart__installed_capacity(element_id) {
 
   var stacked_data;
   var meta_info;
-  var margin = {top: 20, right: 20, bottom: 82, left: 82};
+  var margin = {top: 20, right: 20, bottom: 82, left: 100};
   var width, height;
 
-  // Requets data
-  d3.json("/to_delete.json", function(error, DATA) {
+  // Request data.
+  var id = CS.stateId ? CS.stateId : CS.countryId;
+  var url = CS.domain + '/' + CS.lang + '/api/auxiliary/installed-capacity/' + id + '.json';
+  d3.json(url, function(error, DATA) {
     if (error) {
       return console.log(error);
     }

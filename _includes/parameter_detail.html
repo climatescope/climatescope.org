@@ -41,9 +41,10 @@
     </table>
 
     <div class="param-details__graph">
-      <div ng-if="param.id == 1">
+      <figure ng-if="param.id == 1" class="chart-wrapper">
+        <figcaption>{{ t['Installed capacity'][language] }}</figcaption>
         <div id="installed-capacity" class="chart-std" init-chart="installed_capacity"><!-- Chart --></div>
-      </div>
+      </figure>
     </div>
 
   </div>

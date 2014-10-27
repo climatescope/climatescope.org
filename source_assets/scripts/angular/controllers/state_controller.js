@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('stateApp', ['ui.bootstrap', 'mathFilters'], function($interpolateProvider) {
+  var app = angular.module('stateApp', ['ui.bootstrap', 'mathFilters', 'csDirectives'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('%%');
     $interpolateProvider.endSymbol('%%');
   });

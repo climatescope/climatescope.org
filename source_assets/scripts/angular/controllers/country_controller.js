@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('countryApp', ['ngRoute', 'countryAppControllers', 'ui.bootstrap', 'mathFilters'], function($interpolateProvider) {
+  var app = angular.module('countryApp', ['ngRoute', 'countryAppControllers', 'ui.bootstrap', 'mathFilters', 'csDirectives'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('%%');
     $interpolateProvider.endSymbol('%%');
   });
@@ -46,38 +46,6 @@
     };
     return this;
   }]);
-  
-  app.directive("initChart", function() {
-    return {
-      restrict: 'A',
-      scope: {
-        chart_to_load: '@initChart'
-      },
-      link: function (scope, element, attr) {
-        var chart = null;
-        // Initialise the chart and return an object that
-        // has a draw method. This will be used to redraw
-        // the chart on window resize.
-        switch(scope.chart_to_load) {
-          case 'installed_capacity':
-            chart = chart__installed_capacity(attr.id);
-          break;
-        }
-        
-        if (chart) {
-          var resize_func = debounce(function() {
-            chart.draw();
-          }, 100);
-
-          $(window).on('resize', resize_func);
-          
-          scope.$on("$destroy", function(event) {
-             $(window).off('resize', resize_func);
-          });
-        }
-      }
-    };
-  });
 
   // Module
   var countryAppControllers = angular.module('countryAppControllers', []);

@@ -149,6 +149,15 @@
   }
 }
 
+.chart-wrapper {
+  margin: 0;
+  padding: 0;
+  figcaption {
+    @extend .hd-xxs;
+    text-align: center;
+  }
+}
+
 .tooltip-chart {
   position: absolute;
   pointer-events: none;
@@ -161,7 +170,7 @@
     position: relative;
     @extend .hd-label;
     @extend .truncated;
-    margin-left: 5.5rem;
+    margin-left: 6.5rem;
     line-height: 1.5rem;
     padding: 0 0 0 1rem;
     &:before {
