@@ -17,7 +17,7 @@ In 2014, the UK Department for International Development and the US Agency for I
 ***
 
 ## Credits
-All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo). The country data for GDP per capita, GDP growth and population by [World Bank Open Data](http://data.worldbank.org).
+All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
 
 <h3 class="hd-label adjacent-bottom">Developed by</h3>
 <ul class="logo-list">
