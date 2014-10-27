@@ -7,4 +7,4 @@ title: Etiopía
 region: africa
 grid: off
 ---
-Spanish description
+-

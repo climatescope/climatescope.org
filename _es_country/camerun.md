@@ -7,4 +7,4 @@ title: Camerún
 region: africa
 grid: off
 ---
-Spanish description
+-

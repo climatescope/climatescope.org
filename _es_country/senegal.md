@@ -7,4 +7,4 @@ title: Senegal
 region: africa
 grid: off
 ---
-Spanish description
+-

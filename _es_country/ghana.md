@@ -7,4 +7,4 @@ title: Ghana
 region: africa
 grid: off
 ---
-Spanish description
+-
