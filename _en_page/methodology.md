@@ -4,8 +4,6 @@ layout: page
 title : Methodology
 id: methodology
 ---
-__Download complete methodology__
-
 Climatescope ranks countries on their past, present, and future ability to attract investment for clean energy companies and projects. 
 
 Climatescope seeks to bring quantitative rigor to the basic question of what makes a country attractive for clean energy investment, development, and deployment. It seeks to answer this by collecting as much relevant data as possible, then organizing it in a manner that is both easy to consume and empowers users to gain key insights. 
