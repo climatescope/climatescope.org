@@ -6,7 +6,10 @@ The [Climatescope](http://global-climatescope.org) is a unique country-by-countr
 ## Credits
 The current Climatescope website was built by [Flipside](http://flipside.org) in collaboration with [Development Seed](http://developmentseed.org).
 
-## License
+## License content and data
+The content and data of the Climatescope available under a Creative Commons license [CC-BY 4.0](http://creativecommons.org/licenses/by/4.0/).
+
+## License code
 Copyright (c) 2014. Multilateral Investment Fund, Inter-American Development Bank.
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
