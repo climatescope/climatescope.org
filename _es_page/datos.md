@@ -1,69 +1,70 @@
 ---
 layout: page
 
-title : Datos
+title : Descargas
 id: download
 ---
 <div class="well well-l download download-pdf">
-  <h2>Press release</h2>
-  <p>Download the global press release 'Global study shows clean energy activity surges in developing world'.</p>
+  <h2>Comunicado de prensa</h2>
+  <p>Descargar el comunicado de prensa global: 'Un estudio global muestra el aumento de las actividades de energía limpia en los países en desarrollo'.</p>
   <ul class="download-list">
     <li>
-      <strong class="term">PDF - Spanish</strong>
-      <a href="http://global-climatescope.org/es/download/docs/climatescope-2014-pressrelease.pdf" title="Download Climatescope press release (Spanish)" class="bttn bttn-success download data-download">Download</a>
+      <strong class="term">PDF - Español</strong>
+      <a href="http://global-climatescope.org/es/download/docs/climatescope-2014-pressrelease.pdf" title="Descargar el comunicado de prensa (Español)" class="bttn bttn-success download data-download">Descargar</a>
     </li>
     <li>
-      <strong class="term">PDF - Portuguese</strong>
-      <a href="http://global-climatescope.org/pt/download/docs/climatescope-2014-pressrelease.pdf" title="Download Climatescope press release (Portuguese)" class="bttn bttn-success download data-download">Download</a>
+      <strong class="term">PDF - Portugués</strong>
+      <a href="http://global-climatescope.org/pt/download/docs/climatescope-2014-pressrelease.pdf" title="Descargar el comunicado de prensa (Portugués)" class="bttn bttn-success download data-download">Descargar</a>
     </li>
   </ul>
 </div>
 
 <div class="well well-l download download-pdf">
-  <h2>Full Report</h2>
-  <p>Download the full Climatescope 2014 report.</p>
+  <h2>Informe completo</h2>
+  <p>Descargar el informe del Climascopio 2014 completo</p>
   <ul class="download-list">
     <li>
       <strong class="term">PDF</strong>
-      <a href="http://global-climatescope.org/es/download/report/climatescope-2014-report-es.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/es/download/report/climatescope-2014-report-es.pdf" title="Descargar el informe del Climascopio 2014 completo" class="bttn bttn-success download data-download">Descargar</a>
     </li>
   </ul>
 </div>
 
 <div class="well well-l download download-data">
-  <h2>Source Data</h2>
-  <p>Download the complete set of underlying data.</p>
+  <h2>Datos</h2>
+  <p>Descargar la totalidad de los datos subyacentes.</p>
   <ul class="download-list">
     <li>
       <strong class="term">CSV</strong>
-      <a href="http://global-climatescope.org/es/download/data/climatescope-full.csv" title="Download Climatescope data in CSV format" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/es/download/data/climatescope-full.csv" title="Descargar datos Climascopio en formato CSV" class="bttn bttn-success download data-download">Descargar</a>
     </li>
     <li>
       <strong class="term">Excel</strong>
-      <a href="http://global-climatescope.org/es/download/model/climatescope-2014.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/es/download/model/climatescope-2014.xlsm" title="Descargar datos Climascopio en formato Excel" class="bttn bttn-success download data-download">Descargar</a>
     </li>
   </ul>
 </div>
 
 <div class="well well-l download download-pdf">
-  <h2>Methodology</h2>
-  <p>Download the full methodology used in the Climatescope 2014.</p>
+  <h2>Metodologia</h2>
+  <p>Descargar la metodología completa.</p>
   <ul class="download-list">
     <li>
       <strong class="term">PDF</strong>
-      <a href="http://global-climatescope.org/es/download/docs/climatescope-methodology.pdf" title="Download methodology in PDF" class="bttn bttn-success download data-download">Download</a>
+      <a href="http://global-climatescope.org/es/download/docs/climatescope-methodology.pdf" title="Download methodology in PDF" class="bttn bttn-success download data-download">Descargar</a>
     </li>
   </ul>
 </div>
 
 ## Copyright
-The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide. It adheres to an [open source](http://choosealicense.com/licenses/gpl-3.0/) and open data policy, providing access to data that are free for everyone. The tool is intended for use by investors, companies, governments, NGOs, researchers, communities, and others seeking to assess the opportunities of investing in green energy.
+El Climascopio es una evaluación única hecha país por país con un informe interactivo e indexado que evalúa el clima de inversiones para las inversiones relacionadas con el clima a nivel mundial. 
+The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide. Adopta una política de [código abierto](http://github.com/climatescope/global-climatescope.org), proveyendo acceso a datos de manera gratuita para cualquiera. La herramienta está orientada a inversionistas, empresas, gobiernos, ONG, investigadores, comunidades y otros que estén sopesando las oportunidades de invertir en energías verdes.
 
 ***
 
-## Disclaimer
-The information and opinions presented in this publication are entirely those of the author(s), and no endorsement is expressed or implied by the UK Department for International Development (DFID), the United States Agency for International Development or the US Government, the Multilateral Investment Fund of the Inter-American Development Bank, its Board of Executive Directors, or the countries they represent. The views and opinions expressed in this publication are those of Bloomberg New Energy Finance and do not necessarily state or reflect the official position of the UK Department for International Development (DFID), the United States Agency for International Development or the US Government, the Multilateral Investment Fund of the Inter-American Development Bank.
+## Descargo de Responsabilidad
+La información y opiniones presentadas en esta publicación son enteramente aquellas de su(s) autor(es) y no hay garantías expresadas o implícitas por parte del Departamento para el Desarrollo Internacional del Reino Unido (DFID),  la Agencia de los Estados Unidos para el Desarrollo Internacional, el Fondo Multilateral de Inversiones del Grupo del Banco Interamericano de Desarrollo, su Directorio Ejecutivo, ni los países que representa. Los puntos de vista y opiniones expresados en esta publicación son los de Bloomberg New Energy Finance y no necesariamente expresan o reflejan la posición oficial del Departamento para el Desarrollo Internacional del Reino Unido (DFID),  la Agencia de los Estados Unidos para el Desarrollo Internacional, ni del Fondo Multilateral de Inversiones del Grupo del Banco Interamericano de Desarrollo.
 
-The information contained in this publication is derived from carefully selected public sources we believe are reasonable. We do not guarantee its accuracy or completeness and nothing in this document shall be construed to be a representation of such a guarantee. Any opinions expressed reflect the current judgment of the author of the relevant article or features, and does not necessarily reflect the opinion of Bloomberg New Energy Finance.
+La información contenida en esta publicación deriva de publicaciones cuidadosamente seleccionadas que consideramos razonables. No garantizamos su fidelidad ni totalidad y ninguna parte de este documento deberá ser considerada una representación de tal garantía. Cualquier opinión expresada refleja el juicio actual del autor de el/los artículo/s en cuestión y no manifiesta necesariamente la opinión de Bloomberg New Energy Finance.
 
-The opinions presented are subject to change without notice. Bloomberg New Energy Finance accepts no responsibility for any liability arising from use of this document or its contents. Bloomberg New Energy Finance does not consider itself to undertake Regulated Activities as defined in Section 22 of the Financial Services and Markets Act 2000 and is not registered with the Financial Services Authority of the UK.
+Las opiniones presentadas están sujetas a modificación sin previo aviso. Bloomberg New Energy Finance no acepta ninguna responsabilidad que surja a partir del uso de este documento o su contenido. Bloomberg New Energy Finance no considera que esté realizando Actividades Reguladas tales como se las define en la Sección 22 de la Ley de Servicios y Mercados Financieros de 2000 y no está registrado por la Autoridad de Servicios Financieros del Reino Unido.

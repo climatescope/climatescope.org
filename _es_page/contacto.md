@@ -1,10 +1,10 @@
 ---
 layout: page
 
-title : Contacto
+title : Contáctenos
 id: contact
 ---
-If you have further questions or comments regarding the Global Climatescope please contact:
+Si tiene consultas o comentarios relacionados al Climascopio, o desea contribuir con información o feedback por favor comuníquese con:
 
 __Michael Hofmann__  
 Multilateral Investment Fund  

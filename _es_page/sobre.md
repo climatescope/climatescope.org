@@ -4,20 +4,20 @@ layout: page
 title : Sobre el Climascopio
 id: about
 ---
-The Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
+El Climascopio es una evaluación única hecha país por país con un informe interactivo e indexado que evalúa el clima de inversiones para las inversiones relacionadas con el clima a nivel mundial. 
 
-It profiles 55 countries worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy. 
+Incluye los perfiles de 55 países, evaluando su capacidad para atraer capital para fuentes de energía reducidas en emisiones de carbono, aportando al desarrollo de una economía verde.
 
-The Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to where clean energy can go tomorrow.
+El Climascopio aporta un vistazo a las condiciones en que se encuentran en la actualidad las políticas y finanzas de energías limpias, y a la vez estima hacia dónde pueden evolucionar.
 
-This marks the third year of the Climatescope project. In 2012 and 2013, the Climatescope focused exclusively on Latin America and the Caribbean. The first edition was developed by the Multilateral Investment Fund of the Inter-American Development Bank Group in partnership with Bloomberg New Energy Finance. 
+Este es el tercer año del proyecto Climascopio. En 2012 y 2013, el Climascopio se enfocó exclusivamente en América Latina y el Caribe. La primera edición fue desarrollada por el Fondo Multilateral de Inversiones del Grupo del Banco Interamericano de Desarrollo en asociación con Bloomberg New Energy Finance.
 
-In 2014, the UK Department for International Development and the US Agency for International Development have joined as supporters and advisors. The project has been expanded to include 55 countries, states, and provinces in sub-Saharan Africa and Asia. Bloomberg New Energy Finance serves as research partner and author of the report.
+En 2014, el Departamento para el Desarrollo Internacional del Reino Unido y la Agencia de los Estados Unidos para el Desarrollo Internacional se han unido para dar apoyo y asesoramiento. El Climascopio ha crecido, incluyendo un total de 55 países, estados  y provincias del África subsahariana y Asia. Bloomberg New Energy Finance es socio en la investigación y autor del informe.
 
 ***
 
-## Credits
-All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
+## Créditos
+Todas las imágenes satelitales pertenecen a [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
 
 <h3 class="hd-label adjacent-bottom">Desarrollado por</h3>
 <ul class="logo-list">
