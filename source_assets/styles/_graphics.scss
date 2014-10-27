@@ -156,6 +156,10 @@
     @extend .hd-xxs;
     text-align: center;
   }
+  
+  .lt-ie9 & {
+    display: none;
+  }
 }
 
 .tooltip-chart {
