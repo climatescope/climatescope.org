@@ -29,45 +29,12 @@ conf:
 
 
 <style>
-
-  #chart .area.clean-energy {
-    fill: #f0c30e;
-  }
-  #chart .area-line.clean-energy {
-    stroke: orange;
-  }
-  #chart .area-line-points.clean-energy circle {
-    fill: orange;
-  }
-  #chart .area.dirty-energy {
-    fill: #ddd;
-  }
-  #chart .area-line.dirty-energy {
-    stroke: #888;
-  }
-  #chart .area-line-points.dirty-energy circle {
-    fill: #888;
-  }
-  
-  #chart .area-line-group {
-    fill: none;
-  }
-  
-  #chart .focus-elements .focus-line {
-    stroke: black;
-    stroke-opacity: 1;
-  }
-  
-  #chart .focus-elements .focus-circles .outer{
-    fill: white;
-    stroke-width: 2;
-  }
-  
-  #chart .focus-elements .focus-circles .inner{
+   
+  #installed-capacity .focus-elements .focus-circles .inner{
     fill: black;
   }
   
-  #chart #chart-tooltip {
+  #installed-capacity #chart-tooltip {
     position: absolute;
     pointer-events: none;
     top: 0;
@@ -75,33 +42,15 @@ conf:
   }
 
   
-  #chart {
+  #installed-capacity {
     margin: 0 0 100px 100px;
-    position: relative;
-  }
-  #chart svg {
-    border: 1px solid red;
+    
+    height: 300px;
   }
 
-  .axis path,
-  .axis line {
-    fill: none;
-    stroke: black;
-    shape-rendering: crispEdges;
-  }
-  .axis text {
-    font-family: sans-serif;
-    font-size: 11px;
-  }
-  .axis.x {
-    margin-top: 20px;
-  }
-  .axis.y {
-    margin-left: -20px;
-  }
 </style>
 
-<div id="chart">
+<div id="installed-capacity" class="chart-std">
   
 </div>
 

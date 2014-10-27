@@ -41,7 +41,7 @@ $(function() {
     },
     {
       name: 'dirty energy',
-      id: 'dirty-energy',
+      id: 'non-clean-energy',
       values: [
         { year: 2006, value: 13 },
         { year: 2007, value: 22 },
@@ -56,42 +56,77 @@ $(function() {
   ];
   
   
-  
-  // D3 margins.
-  var margin = {top: 20, right: 20, bottom: 50, left: 50},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
-
   // Svg element containing the chart.
-  var svg = d3.select("#chart").append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+  var chart_container = d3.select("#installed-capacity");
+  var $chart_container = $("#installed-capacity");
+  var svg = chart_container.append("svg")
     .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      .attr('class', 'chart-container');
+      
+  /////////////////////////////////////////////////////
+  // Svg element that will contain others.
 
-  // X scale.
-  var x = d3.scale.linear()
-    .range([0, width]);
+  // Group to hold the areas.
+  var areas_group = svg.append("g")
+    .attr("class", "area-group");
 
-  // Y scale.
-  var y = d3.scale.linear()
-    .range([height, 0]);
+  // Group to hold the area delimiter lines.
+  var area_delimiters_group = svg.append("g")
+    .attr("class", "area-line-group");
+
+  // Group to hold the area delimiter line points.
+  var points_group = svg.append("g")
+    .attr("class", "area-line-points-group");
+    
+  /////////////////////////////////////////////////////
+  // Focus elements.
+  // Focus line and circles show on hover.
+
+  // Group to hold the focus elements.
+  var focus = svg.append('g')
+    .attr('class', 'focus-elements')
+    .style('display', 'none');
+  
+  // Vertical focus line.
+  focus.append('line')
+   .attr('class', 'focus-line');
+      
+  /////////////////////////////////////////////////////
+  // Append Axis.
+
+  svg.append("g")
+    .attr("class", "x axis")
+    .append("text")
+      .attr("class", "label")
+      .style("text-anchor", "end");
+
+  svg.append("g")
+    .attr("class", "y axis")
+    .append("text")
+      .attr("class", "label")
+      .attr("transform", "rotate(-90)")
+      .style("text-anchor", "end");
+  
+  /////////////////////////////////////////////////////
+  // Draw functions.
+  
+  // X scale. Range updated in function.
+  var x = d3.scale.linear();
+
+  // Y scale. Range updated in function.
+  var y = d3.scale.linear();
 
   // Define xAxis function.
   var xAxis = d3.svg.axis()
     .scale(x)
+    .tickFormat(d3.format('d'))
     .orient("bottom");
 
   // Define yAxis function.
   var yAxis = d3.svg.axis()
     .scale(y)
     .orient("left");
- 
-  // Domain for the X Axis.
-  // Since the years are the same for all the data, just create
-  // the domain from one.
-  x.domain(d3.extent(DATA[0].values, function(d) { return d.year; }));
-
+    
   // Area definition function.
   var area = d3.svg.area()
     .x(function(d) { return x(d.year); })
@@ -113,190 +148,217 @@ $(function() {
   var line = d3.svg.line()
     .x(function(d) { return x(d.year); })
     .y(function(d) { return y(d.y0 + d.y); });
-
-  // Stack the values.
-  var data_values = stack(DATA);
   
-  // Compute the y domain taking into account the stacked values.
-  y.domain([0, d3.max(data_values, function (c) { 
-    return d3.max(c.values, function (d) { return d.y0 + d.y; });
-  })]);
-
-
   /////////////////////////////////////////////////////
-  // Start adding elements to the svg.
+  // Data request.
 
-  // Group to hold the areas.
-  var areas = svg.append("g")
-    .attr("class", "area-group");
-
-  areas.selectAll("path")
-    .data(data_values)
-    .enter().append("path")
-      .attr("d", function(d) { return area(d.values); })
-      .attr("class", function(d) { return "area " + d.id; });
-
-
-  // Group to hold the area delimiter lines.
-  var area_delimiters = svg.append("g")
-    .attr("class", "area-line-group");
-
-  area_delimiters.selectAll("path")
-    .data(data_values)
-    .enter().append("path")
-      .attr("d", function(d) { return line(d.values); })
-      .attr("class", function(d) { return "area-line " + d.id; });
-
-
-  // Group to hold the area delimiter line points.
-  var points = svg.append("g")
-    .attr("class", "area-line-points-group");
+  var stacked_data;
+  var margin = {top: 20, right: 20, bottom: 82, left: 82};
+  var width, height;
+  // Temporary defer of data request.
+  setTimeout(function() {
+    // Domain for the X Axis.
+    // Since the years are the same for all the data, just create
+    // the domain from one.
+    x.domain(d3.extent(DATA[0].values, function(d) { return d.year; }));
+    
+    // Stack the values.
+    stacked_data = stack(DATA);
+    
+    // Compute the y domain taking into account the stacked values.
+    y.domain([0, d3.max(stacked_data, function (c) { 
+      return d3.max(c.values, function (d) { return d.y0 + d.y; });
+    })]);
+    
+    // Groups to hold the focus circles.
+    // One group per line. Will hold two circles:
+    // An outer and bigger and an inner and smaller one
+    var focus_circles = focus.selectAll("g")
+      .data(stacked_data)
+        .enter().append('g')
+        .attr('class', function(d) {
+          return 'focus-circles ' + d.id;
+        });
+    
+    // Outer circle.
+    focus_circles.append('circle')
+      .attr("r", 8)
+      .attr('class', 'outer');
   
-  // Group to hold the line points.
-  // One group for each line points.
-  points = points.selectAll(".area-line-points")
-    .data(data_values)
-    .enter().append("g")
-      .attr("class", function(d) { return "area-line-points " + d.id; });
+    // Inner circle.
+    focus_circles.append('circle')
+      .attr("r", 3)
+      .attr('class', 'inner');
+    
+    // Add focus rectangle. Will be responsible to trigger the events.
+    svg.append("rect")
+      .attr('class', 'trigger-rect')
+      .style("fill", "none")
+      .style("pointer-events", "all")
+      .on("mouseover", function() { focus.style("display", null); chart_tooltip.style("display", null); })
+      .on("mouseout", function() { focus.style("display", "none"); chart_tooltip.style("display", "none"); })
+      .on("mousemove", function() {
+        // Define bisector function. Is used to find the closest year
+        // to the mouse position.
+        var bisector = d3.bisector(function(d) { return d.year; }).left;
+        var mousex = x.invert(d3.mouse(this)[0]);
+    
+        var xpos;
+        var doc_index;
+        // Position the circles.
+        focus.selectAll(".focus-circles circle") 
+          .attr("transform", function(d) {
+            var closest_year = Math.round(mousex);
+            doc_index = bisector(d.values, closest_year);
+            var doc = d.values[doc_index];
+            
+            xpos = x(doc.year);
+    
+            return "translate(" + x(doc.year) + "," +  y(doc.y + doc.y0) + ")";
+          });
+    
+        // Position the focus line.
+        focus.select('.focus-line')
+          .attr('x1', xpos).attr('y1', height)
+          .attr('x2', xpos).attr('y2', 0);
+
+        // Position tooltip.
+        chart_tooltip
+          .attr('style', function() {
+            // Calculate tooltip width, taking the margin into account.
+            // add some extra margin.
+            var tooltip_width = chart_tooltip.style('width').replace('px', '') - margin.left + 10;
+            return 'transform: translate(' + (xpos - tooltip_width) + 'px, 50px)';
+          })
+          .html(function() {
+            var content = '<div class="tooltip-inner">';
+            content += '<dl class="chart-legend">';
+
+            // Reverse the array to ensure the order is the same.
+            stacked_data.slice(0).reverse().forEach(function(doc) {
+              // Correct object from values array.
+              var value_doc = doc.values[doc_index];
+              content += '<dt class="param-' + doc.id + '">' + doc.name + '</dt>';
+              content += '<dd>' + value_doc.value + '</dd>';
+            });
+
+            content += '</dl>';
+            content += '</div>';
+
+            return content;
+          });
+    });
+    
+    var chart_tooltip = chart_container.append('div')
+      .style('display', 'none')
+      .attr('id', 'chart-tooltip')
+      .attr('class', 'tooltip-map left');
+    
+    draw_chart();
+  }, 0);
+ 
   
-  // Add the points.
-  points.selectAll("circle")
-    .data(function(d) { return d.values; })
-      .enter().append('circle')
+  function draw_chart() {
+    var w = $chart_container.width();
+    var h = $chart_container.height();
+
+    // Size..
+    width = w - margin.left - margin.right,
+    height = h - margin.top - margin.bottom;
+      
+    // Set chart size.
+    chart_container.select("svg")
+      //.attr("width", width + margin.left + margin.right)
+      //.attr("height", height + margin.top + margin.bottom);
+      .attr("width", "100%")
+      .attr("height", "100%");
+
+    // Chart container translate.
+    chart_container.select(".chart-container")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+    chart_container.select(".trigger-rect")
+      .attr("width", width)
+      .attr("height", height);
+    
+    // Update scale ranges
+    x.range([0, width]);
+    y.range([height, 0]);
+    
+    // Areas.
+    var areas = areas_group.selectAll("path")
+      .data(stacked_data);
+    // Handle new.
+    areas.enter().append("path");
+    // Remove old.
+    areas.exit().remove();
+    // Update current.
+    areas
+        .attr("d", function(d) { return area(d.values); })
+        .attr("class", function(d) { return "area " + d.id; });
+  
+    // Area delimiters
+    var area_delimiters = area_delimiters_group.selectAll("path")
+      .data(stacked_data);
+    // Handle new.
+    area_delimiters.enter().append("path");
+    // Remove old.
+    area_delimiters.exit().remove();
+    // Update current.
+    area_delimiters
+        .attr("d", function(d) { return line(d.values); })
+        .attr("class", function(d) { return "area-line " + d.id; });
+
+    // Group to hold the line points.
+    // One group for each line points.
+    var points = points_group.selectAll(".area-line-points")
+      .data(stacked_data);
+    // Handle new.
+    points.enter().append("g");
+    // Remove old.
+    points.exit().remove();
+    // Update current.
+    points
+        .attr("class", function(d) { return "area-line-points " + d.id; });
+    
+    // Add the points.
+    var individual_points = points.selectAll("circle")
+      .data(function(d) { return d.values; });
+    // Handle new.
+    individual_points.enter().append('circle');
+    // Remove old.
+    individual_points.exit().remove();
+    // Update current.
+    individual_points
       .attr("cx", function(d) { return x(d.year); })
       .attr("cy", function(d) { return y(d.y0 + d.y); })
-      .attr("r", 2);
+      .attr("r", 3);
 
-  /////////////////////////////////////////////////////
-  // Focus elements.
-  // Focus line and circles show on hover.
-
-  // Group to hold the focus elements.
-  var focus = svg.append('g')
-    .attr('class', 'focus-elements')
-    .style('display', 'none');
+    /////////////////////////////////////////////////////
+    // Append Axis.
   
-  // Vertical focus line.
-  focus.append('line')
-   .attr('class', 'focus-line');
-
-  // Groups to hold the focus circles.
-  // One group per line. Will hold two circles:
-  // An outer and bigger and an inner and smaller one
-  var focus_circles = focus.selectAll("g")
-    .data(data_values)
-      .enter().append('g')
-      .attr('class', 'focus-circles');
-  
-  // Outer circle.
-  focus_circles.append('circle')
-    .attr("r", 8)
-    .attr('class', 'outer');
-
-  // Inner circle.
-  focus_circles.append('circle')
-    .attr("r", 2)
-    .attr('class', 'inner');
-  
-  // Chart tooltip.
-  var chart_tooltip = d3.select("#chart").append('div')
-    .style('display', 'none')
-    .attr('id', 'chart-tooltip')
-    .attr('class', 'tooltip-map left')
-    .html(function(d) {
-      return [
-      '<div class="tooltip-inner">',
-        '<dl class="params-legend">',
-          '<dt class="param-1">Clean</dt>',
-          '<dd>1.56</dd>',
-          '<dt class="param-2">Dirty</dt>',
-          '<dd>2.13</dd>',
-        '</dl>',
-        '</div>',
-      ].join(' ');
-    });
-
-  // Add focus rectangle. Will be responsible to trigger the events.
-  svg.append("rect")
-    .attr("width", width)
-    .attr("height", height)
-    .style("fill", "none")
-    .style("pointer-events", "all")
-    .on("mouseover", function() { focus.style("display", null); chart_tooltip.style("display", null); })
-    .on("mouseout", function() { focus.style("display", "none"); chart_tooltip.style("display", "none");})
-    .on("mousemove", function() {
-      // Define bisector function. Is used to find the closest year
-      // to the mouse position.
-      var bisector = d3.bisector(function(d) { return d.year; }).left;
-      var mousex = x.invert(d3.mouse(this)[0]);
-  
-      var xpos;
-      // Position the circles.
-      focus.selectAll(".focus-circles circle") 
-        .attr("transform", function(d) {
-          var i = bisector(d.values, mousex, 1);
-          var d0 = d.values[i - 1];
-          var d1 = d.values[i];
-          var doc = mousex - d0.year > d1.year - mousex ? d1 : d0;
-          
-          xpos = x(doc.year);
-  
-          return "translate(" + x(doc.year) + "," +  y(doc.y + doc.y0) + ")";
-        });
-  
-      // Position the focus line.
-      focus.select('.focus-line')
-        .attr('x1', xpos).attr('y1', height)
-        .attr('x2', xpos).attr('y2', 0);
+    d3.select(".x.axis")
+      .attr("transform", "translate(0," + (height + 32) + ")")
+      .call(xAxis);
       
-      // Position tooltip.
-      chart_tooltip.attr('style', function() {
-        // Calculate tooltip width, taking the margin into account.
-        // add some extra margin.
-        var tooltip_width = chart_tooltip.style('width').replace('px', '') - margin.left + 10;
-        return 'transform: translate(' + (xpos - tooltip_width) + 'px, 50px)';
-      });
-      
-  });
-
-  /////////////////////////////////////////////////////
-  // Append Axis.
-
-  svg.append("g")
-    .attr("class", "x axis")
-    .attr("transform", "translate(0," + (height + 10) + ")")
-    .call(xAxis)
-    .append("text")
-      .attr("class", "label")
+    d3.select(".x.axis .label")
       .attr("x", width)
-      .attr("y", -6)
-      .style("text-anchor", "end")
-      .text("Sepal Width (cm)");
+      .attr("y", -12)
+      .text(stacked_data[0].name);
+  
+    d3.select(".y.axis")
+      .attr("transform", "translate(-32,0)")
+      .call(yAxis);
+   
+    d3.select(".y.axis .label")
+      .attr("y", 20)
+      .text(stacked_data[1].name);
 
-  svg.append("g")
-    .attr("class", "y axis")
-    .attr("transform", "translate(-10,0)")
-    .call(yAxis)
-    .append("text")
-      .attr("class", "label")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 6)
-      .attr("dy", ".71em")
-      .style("text-anchor", "end")
-      .text("Sepal Length (cm)");
-      
-
-  function draw_chart() {
-    
   }
   
-  draw_chart();
-  
-  
-  
-  
-  
-  
-  
-  
+  $(window).on('resize', debounce(function() {
+      draw_chart();
+  },100));
+
+
 });

@@ -11,9 +11,8 @@
     z-index: 1;
     height: 150%;
     width: 1px;
-    background: #000;
-    opacity: 0.2;
-    filter: alpha(opacity=20);
+    background: $primary-color;
+    @include opacity(0.2);
   }
 }
 
@@ -53,4 +52,125 @@
 
 .table-nested .table-bar {
   background: #fff;
+}
+
+
+
+
+#installed-capacity {
+  .area-line-group {
+    fill: none;
+  }
+
+  .clean-energy {
+    &.area {
+      fill: $infograph-color-a;
+    }
+    &.area-line {
+      stroke: shade($infograph-color-a, 15%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-a, 15%);
+    }
+  }
+  .non-clean-energy {
+    &.area {
+      fill: tint($primary-color, 90%);
+    }
+    &.area-line {
+      stroke: tint($primary-color, 75%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: tint($primary-color, 75%);
+    }
+  }
+  
+  .focus-elements {
+    .focus-line {
+      stroke: $primary-color;
+      stroke-opacity: 0.2;
+      stroke-width: 0.5;
+    }
+    .focus-circles {
+      .outer {
+        fill: #FFF;
+        stroke-width: 0.5;
+      }
+      &.non-clean-energy .inner {
+        stroke: none;
+        fill: tint($primary-color, 75%);
+      }
+      &.clean-energy .inner {
+        stroke: none;
+        fill: shade($infograph-color-a, 15%);
+      }
+    }
+  }
+  
+  .chart-legend {
+    dt {
+      &.param-clean-energy:before {
+        background: $infograph-color-a;
+      }
+      &.param-non-clean-energy:before {
+        background: tint($primary-color, 90%);
+      }
+    }
+  }
+}
+
+.chart-std {
+  position: relative;
+  
+  .axis {
+    line {
+      fill: none;
+      stroke: tint($primary-color, 90%);
+      shape-rendering: crispEdges;
+    }
+
+    text {
+      @extend .hd-label;
+      fill: tint($primary-color, 60%);
+    }
+
+    path.domain {
+      fill: none;
+      stroke: none;
+    }
+  }
+}
+
+.chart-legend {
+  dt {
+    position: relative;
+    @extend .hd-label;
+    @extend .truncated;
+    margin-left: 2.5rem;
+    line-height: 1.5rem;
+    padding: 0 0 0 1rem;
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+      margin-top: -0.25rem;
+      content: '';
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: $global-rounded;
+    }
+  }
+  dd {
+    float: left;
+    clear: left;
+    margin-top: -1.5rem;
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    line-height: 1.5rem;
+  }
 }
