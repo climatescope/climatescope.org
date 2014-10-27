@@ -125,6 +125,7 @@
 
 .chart-std {
   position: relative;
+  height: 250px;
   
   .axis {
     line {
@@ -135,6 +136,9 @@
 
     text {
       @extend .hd-label;
+      fill: $primary-color;
+    }
+    text.label {
       fill: tint($primary-color, 60%);
     }
 
@@ -145,12 +149,19 @@
   }
 }
 
+.tooltip-chart {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
 .chart-legend {
   dt {
     position: relative;
     @extend .hd-label;
     @extend .truncated;
-    margin-left: 2.5rem;
+    margin-left: 5.5rem;
     line-height: 1.5rem;
     padding: 0 0 0 1rem;
     &:before {
@@ -168,6 +179,8 @@
   dd {
     float: left;
     clear: left;
+    width: 4rem;
+    text-align: right;
     margin-top: -1.5rem;
     font-family: $brand-font-family;
     font-weight: $brand-font-bold;

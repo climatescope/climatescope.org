@@ -41,7 +41,9 @@
     </table>
 
     <div class="param-details__graph">
-      <img class="placeholder" src="http://placehold.it/300x300&text=graphic" alt="Placeholder" />
+      <div ng-if="param.id == 1">
+        <div id="installed-capacity" class="chart-std" init-chart="installed_capacity"><!-- Chart --></div>
+      </div>
     </div>
 
   </div>
