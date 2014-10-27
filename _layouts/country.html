@@ -48,10 +48,36 @@ conf:
   #chart .area-line-points.dirty-energy circle {
     fill: #888;
   }
+  
+  #chart .area-line-group {
+    fill: none;
+  }
+  
+  #chart .focus-elements .focus-line {
+    stroke: black;
+    stroke-opacity: 1;
+  }
+  
+  #chart .focus-elements .focus-circles .outer{
+    fill: white;
+    stroke-width: 2;
+  }
+  
+  #chart .focus-elements .focus-circles .inner{
+    fill: black;
+  }
+  
+  #chart #chart-tooltip {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+  }
 
   
   #chart {
     margin: 0 0 100px 100px;
+    position: relative;
   }
   #chart svg {
     border: 1px solid red;
