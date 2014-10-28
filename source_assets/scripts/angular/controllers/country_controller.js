@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('countryApp', ['ngRoute', 'countryAppControllers', 'ui.bootstrap', 'mathFilters'], function($interpolateProvider) {
+  var app = angular.module('countryApp', ['ngRoute', 'countryAppControllers', 'ui.bootstrap', 'mathFilters', 'csDirectives'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('%%');
     $interpolateProvider.endSymbol('%%');
   });
@@ -46,7 +46,6 @@
     };
     return this;
   }]);
-
 
   // Module
   var countryAppControllers = angular.module('countryAppControllers', []);

@@ -41,7 +41,10 @@
     </table>
 
     <div class="param-details__graph">
-      <img class="placeholder" src="http://placehold.it/300x300&text=graphic" alt="Placeholder" />
+      <figure ng-if="param.id == 1" class="chart-wrapper">
+        <figcaption>{{ t['Installed capacity'][language] }}</figcaption>
+        <div id="installed-capacity" class="chart-std" init-chart="installed_capacity"><!-- Chart --></div>
+      </figure>
     </div>
 
   </div>

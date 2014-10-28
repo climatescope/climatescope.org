@@ -828,7 +828,7 @@ a:active{
   &__graph {
     @include col(12/12);
     text-align: center !important;
-    padding: 4rem 0;
+    padding: 2rem 0;
     .placeholder {
       border-radius: $global-rounded;
     }
@@ -845,6 +845,7 @@ a:active{
     }
     &__graph {
       @include col(4/12);
+      padding: 8rem 0;
       .lt-ie9 & {
         margin-right: 0 !important;
       }
