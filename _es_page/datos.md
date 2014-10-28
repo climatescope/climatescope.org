@@ -6,12 +6,12 @@ id: download
 ---
 
 <div class="well well-l download download-pdf">
-  <h2>Informe completo</h2>
-  <p>Descargar el informe del Climascopio 2014 completo</p>
+  <h2>Informe regional</h2>
+  <p>Descargar el informe del Climascopio 2014 sobre Latinoamérica y el Caribe.</p>
   <ul class="download-list">
     <li>
       <strong class="term">PDF</strong>
-      <a href="http://global-climatescope.org/es/download/report/climatescope-2014-report-es.pdf" title="Descargar el informe del Climascopio 2014 completo" class="bttn bttn-success download data-download">Descargar</a>
+      <a href="http://global-climatescope.org/es/download/reports/climatescope-2014-lac-es.pdf" title="Descargar el informe regional del Climascopio 2014 completo" class="bttn bttn-success download data-download">Descargar</a>
     </li>
   </ul>
 </div>
