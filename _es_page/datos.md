@@ -7,7 +7,7 @@ id: download
 
 <div class="well well-l download download-pdf">
   <h2>Informe regional</h2>
-  <p>Descargar el informe regional del Climascopio 2014 sobre Latinoamérica y el Caribe.</p>
+  <p>Descargar el informe del Climascopio 2014 sobre Latinoamérica y el Caribe.</p>
   <ul class="download-list">
     <li>
       <strong class="term">PDF</strong>
