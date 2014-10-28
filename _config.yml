@@ -8,7 +8,7 @@ path_prefix:
 #path_prefix:    /climatescope
 
 # Address of climatescope's proxy server.
-pdbproxy:       http://146.185.136.6/climatescope
+pdbproxy:       http://pdbproxy.global-climatescope.org/ 
 
 name:
   en:           Climatescope
