@@ -259,6 +259,7 @@ $tooltip-arr-size: 1rem;
 }
 .dropdown-menu > li > a {
   display: block;
+  position: relative;
   padding: 0.25rem 1rem;
   clear: both;
   font-weight: normal;
@@ -267,6 +268,21 @@ $tooltip-arr-size: 1rem;
   font-size: 0.85rem;
   text-transform: uppercase;
   font-family: $brand-font-family;
+  &.has-icon {
+    padding-left: 2.5rem;
+    &:before {
+      position: absolute;
+      z-index: 1;
+      left: 1rem;
+      top: 0.2rem;
+      color: $secondary-color;
+      font-size: 1rem;
+    }
+  }
+  &.twitter:before { @extend .icon-twitter; }
+  &.facebook:before { @extend .icon-facebook; }
+  &.pdf:before { @extend .icon-file-pdf; }
+  &.source:before { @extend .icon-file-src-dat; }
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
