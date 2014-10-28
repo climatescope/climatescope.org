@@ -7,4 +7,4 @@ title: Botsuana
 region: africa
 grid: off
 ---
-Spanish description
+-

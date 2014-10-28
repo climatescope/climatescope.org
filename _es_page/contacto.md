@@ -1,10 +1,10 @@
 ---
 layout: page
 
-title : Contacto
+title : Contáctenos
 id: contact
 ---
-If you have further questions or comments regarding the Global Climatescope please contact:
+Si tiene consultas o comentarios relacionados al Climascopio, o desea contribuir con información o feedback por favor comuníquese con:
 
 __Michael Hofmann__  
 Multilateral Investment Fund  
@@ -13,5 +13,3 @@ Multilateral Investment Fund
 __Lilian Clea Rodriques Alves__  
 Bloomberg New Energy Finance  
 [climatescope@bloomberg.net](mailto:climatescope@bloomberg.net)
-
-If you wish to contribute with data or feedback, please click here to submit your comments.

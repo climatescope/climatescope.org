@@ -7,4 +7,4 @@ title: Costa de Marfil
 region: africa
 grid: off
 ---
-Spanish description
+-

@@ -7,4 +7,4 @@ title: Tayikistán
 region: asia
 grid: on
 ---
-Spanish description
+-

@@ -5,6 +5,7 @@
   {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/countries/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
 {% when 'en_region' %}
   {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/regions/climatescope-{{ site.edition }}-{{ page.id }}.csv{% endcapture %}
+  {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/regions/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
 {% when 'en_parameter' %}
   {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/parameters/climatescope-{{ page.id }}.csv{% endcapture %}
 {% endcase %}
