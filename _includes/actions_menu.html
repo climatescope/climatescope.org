@@ -4,7 +4,7 @@
   {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/countries/climatescope-{{ page.id }}.csv{% endcapture %}
 
   {% if page.region == 'africa' or page.region == 'asia' %}
-    {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/countries/climatescope-{{ site.edition }}-{{ page.id }}-en.pdf{% endcapture %}
+    {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/en/download/reports/countries/climatescope-{{ site.edition }}-{{ page.id }}-en.pdf{% endcapture %}
   {% else %}
     {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/countries/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
   {% endif %}
