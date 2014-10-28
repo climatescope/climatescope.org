@@ -30,26 +30,10 @@ conf:
 <div ng-app="countryApp">
   <div class="row--full intro">
     <div class="row--contained">
-      <dl class="meta-details">
+      <dl class="meta-details" ng-controller="ProfileController as profCtrl" ng-cloak>
         
-        <!-- TO TRANSLATE IF TO BE KEPT -->
-        <dt>Gdp</dt>
-        <dd>$2,396bn</dd>
-        <dt>Seven-year Economic Growth Rate</dt>
-        <dd>6%</dd>
-        <dt>Population</dt>
-        <dd>198m</dd>
-        <dt>Total Clean Energy Investments</dt>
-        <dd>$82.2bn</dd>
-        <dt>Installed Power Capacity</dt>
-        <dd>123gw</dd>
-        <dt>Renewable Share</dt>
-        <dd>13%</dd>
-        <dt>Total Clean Energy Generation</dt>
-        <dd>57,400gwh</dd>
-        <dt>Top Energy Authority</dt>
-        <dd>Ministry Of Mines & Energy</dd>
-        <!--/ TO TRANSLATE IF TO BE KEPT -->
+        <dt ng-repeat-start="indicator in profCtrl.data.indicators">%% indicator.name %%</dt>
+        <dd ng-repeat-end>%% profCtrl.getIndicatorValue(indicator) %%</dd>
   
       </dl>
       {% include static_map.html %}

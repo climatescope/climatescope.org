@@ -50,6 +50,23 @@
   // Module
   var countryAppControllers = angular.module('countryAppControllers', []);
   
+  countryAppControllers.controller('ProfileController', ['$http', function($http) {
+    var _self = this;
+    // Data.
+    this.data = {};
+    
+    this.getIndicatorValue = function(indicator) {
+      var value = indicator.value + indicator.unit;
+      return value;
+    };
+
+    var url = CS.domain + '/' + CS.lang + '/api/countries-profile/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      _self.data = data;
+    });
+
+  }]);
+
   countryAppControllers.controller('StatsController', ['$http', 'CountryData', function($http, CountryData) {
     var _self = this;
     // Data.
