@@ -14,8 +14,11 @@ name:
   en:           Climatescope
   es:           Climascopio
 description:
-  en:           This is a custom description
-  es:           This is a custom description ES
+  en:           The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
+  es:           El Climascopio es un análisis a fondo de 55 países a nivel mundial y un informe e índice interactivo que evalúa el clima de inversión para las energías limpias.
+keywords:
+  en:           Climatescope, Clean Energy, Investment, Latin America and the Caribbean, Climate Change, Investment Climate, Green Economy, Greenhouse Gas Management, Carbon Management, Clean Energy, Low-Carbon Business, Value Chain, Renewables, Climate Financing, Multilateral Investment Fund, Inter-American Development Bank, Bloomberg New Energy Finance, DfiD, Power Africa
+  es:           Climascopio, Energía Limpia, Inversion, América Latina y el Caribe, Cambio Climático, Clima de Inversión, Economía Verde, Gestión Gases de Efecto Invernadero, Negocios de Bajo Carbono, Energía Limpia, Cadenas de Valor, Financiamiento Climático, Renovables, Fondo Multilateral de Inversiones, Banco Interamericano de Desarrollo, Bloomberg New Energy Finance, DfiD, Power Africa
 edition:        2014
 exclude:        ['node_modules', 'source_assets', 'Gruntfile.js', 'package.json', 'README.md']
 collections:
