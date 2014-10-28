@@ -2,7 +2,7 @@ safe:           false
 
 # Domain and path_prefix are neede for IE9 CORS.
 # More in: https://github.com/flipside-org/climatescope/issues/221
-domain:         http://climatescope.github.io
+domain:         http://global-climatescope.org
 path_prefix:    
 
 # Address of climatescope's proxy server.
