@@ -425,6 +425,7 @@ a:active{
     @include transition-duration(0.2s);
     @include transition-timing-function(ease);
     @include transition-delay(0);
+    width: 100%;
     &.sticky {
       @media #{$large-up} {
         width: 100%;
