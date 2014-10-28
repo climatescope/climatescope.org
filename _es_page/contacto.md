@@ -13,5 +13,3 @@ Multilateral Investment Fund
 __Lilian Clea Rodriques Alves__  
 Bloomberg New Energy Finance  
 [climatescope@bloomberg.net](mailto:climatescope@bloomberg.net)
-
-If you wish to contribute with data or feedback, please click here to submit your comments.
