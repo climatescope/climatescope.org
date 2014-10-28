@@ -1,3 +1,4 @@
+/* jshint unused: false */
 function chart__installed_capacity(element_id) {
   // Svg element containing the chart.
   var chart_container = d3.select("#" + element_id);
@@ -237,7 +238,7 @@ function chart__installed_capacity(element_id) {
     var h = $chart_container.height();
 
     // Size..
-    width = w - margin.left - margin.right,
+    width = w - margin.left - margin.right;
     height = h - margin.top - margin.bottom;
       
     // Set chart size.
