@@ -1,0 +1,37 @@
+---
+layout: entry
+
+conf:
+  type: parameter
+  subtitle:
+    en: Topic
+    es: Tema
+---
+{% if page.lang %}
+  {% assign language = page.lang %}
+{% elsif site.collections[page.collection].lang %}
+  {% assign language = site.collections[page.collection].lang %}
+{% endif %}
+{% assign t = site.data.i18n_strings %}
+<script>CS.parameterId = {{page.id}};</script>
+<div ng-app="parameterApp">
+
+  <div class="row--contained">
+    <div class="col--main prose-copy">
+      <h2>{{ t['Description'][language] }}</h2>
+      {{ content }}
+    </div>
+  
+    <div class="col--sec prose-copy" ng-controller="StatsController as statsCrtl" ng-cloak>
+        <h2>{{ t['Regional average'][language] }}</h2>
+        <dl class="stats-list">
+          <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %%</dt>
+          <dd ng-repeat-end>%% region.parameters[0].data[0].mean | round:2 %%</dd>
+        </dl>
+    </div>
+  </div>
+
+  <div class="row--contained" ng-controller="CountryListController as countryTable" ng-cloak>
+    {% include country_list_param_table.html %}
+  </div>
+</div>

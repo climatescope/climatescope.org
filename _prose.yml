@@ -1,0 +1,284 @@
+prose:
+  ignore:
+    - /_data
+    - /assets
+    - /index.html
+    - /humans.txt
+    - /_includes
+    - /_layouts
+    
+    # These contain the API, the download and the index and policies pages.
+    # However those pages only contain markup, not content.
+    # Therefore block.
+    - /en
+    - /es
+    
+    # In due time block _prose and _config.
+    - /_prose.yml
+    - /_config.yml
+    
+    # Development stuff
+    - /source_assets
+    - /.gitignore
+    - /Gruntfile.js
+    - /LICENSE.md
+    - /README.md
+    - /package.json
+  metadata:
+    # English collections.
+    ####################################
+    
+    ## COUNTRY
+    _en_country:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "country"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Country name"
+          placeholder: "Country name"
+      - name: "id"
+        field:
+          element: "text"
+          label: "Country ISO code"
+      - name: "region"
+        field:
+          element: "select"
+          label: "Region"
+          options:
+            - name: "Africa"
+              value: "africa"
+            - name: "Asia"
+              value: "asia"
+            - name: "Latin America & the Caribbean"
+              value: "lac"
+      - name: "grid"
+        field:
+          element: "select"
+          label: "Grid"
+          options:
+            - name: "On Grid"
+              value: "on"
+            - name: "Off Grid"
+              value: "off"
+    
+    ## STATE
+    _en_state:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "state"
+      - name: "title"
+        field:
+          element: "text"
+          label: "State name"
+          placeholder: "State name"
+      - name: "id"
+        field:
+          element: "text"
+          label: "State ISO code"
+      - name: "region"
+        field:
+          element: "select"
+          label: "Region"
+          options:
+            - name: "Africa"
+              value: "africa"
+            - name: "Asia"
+              value: "asia"
+            - name: "Latin America & the Caribbean"
+              value: "lac"
+      - name: "country"
+        field:
+          element: "select"
+          label: "Country this states belongs"
+          options:
+            - name: "China"
+              value: "cn"
+            - name: "India"
+              value: "in"
+    
+    ## REGION
+    _en_region:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "region"
+      - name: "id"
+        field:
+          element: "text"
+          label: "Region id"
+      - name: "weight"
+        field:
+          element: "text"
+          label: "Region weight"
+          help: "Used to order the regions in the menu. Each one must have a different value."
+    
+    ## PAGE
+    _en_page:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Page name"
+          placeholder: "Page name"
+      - name: "id"
+        field:
+          element: "text"
+          label: "Page id"
+    
+    ## PARAMETER
+    _en_parameter:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "parameter"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Parameter name"
+          placeholder: "Parameter name"
+      - name: "id"
+        field:
+          element: "text"
+          label: "Parameter id"
+      - name: "weight"
+        field:
+          element: "text"
+          label: "Parameter weight"
+          help: "Used to order the parameters in the menu. Each one must have a different value."
+
+
+
+    # Spanish collections.
+    ####################################
+    
+    ## COUNTRY
+    _es_country:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "country"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Country name"
+          placeholder: "Country name"
+      - name: "id"
+        field:
+          element: "text"
+          label: "Country ISO code"
+      - name: "region"
+        field:
+          element: "select"
+          label: "Region"
+          options:
+            - name: "Africa"
+              value: "africa"
+            - name: "Asia"
+              value: "asia"
+            - name: "Latin America & the Caribbean"
+              value: "lac"
+      - name: "grid"
+        field:
+          element: "select"
+          label: "Grid"
+          options:
+            - name: "On Grid"
+              value: "on"
+            - name: "Off Grid"
+              value: "off"
+    
+    ## STATE
+    _es_state:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "state"
+      - name: "title"
+        field:
+          element: "text"
+          label: "State name"
+          placeholder: "State name"
+      - name: "id"
+        field:
+          element: "text"
+          label: "State ISO code"
+      - name: "region"
+        field:
+          element: "select"
+          label: "Region"
+          options:
+            - name: "Africa"
+              value: "africa"
+            - name: "Asia"
+              value: "asia"
+            - name: "Latin America & the Caribbean"
+              value: "lac"
+      - name: "country"
+        field:
+          element: "select"
+          label: "Country this states belongs"
+          options:
+            - name: "China"
+              value: "cn"
+            - name: "India"
+              value: "in"
+    
+    ## REGION
+    _es_region:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "region"
+      - name: "id"
+        field:
+          element: "text"
+          label: "Region id"
+      - name: "weight"
+        field:
+          element: "text"
+          label: "Region weight"
+          help: "Used to order the regions in the menu. Each one must have a different value."
+    
+    ## PAGE
+    _es_page:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Page name"
+          placeholder: "Page name"
+      - name: "id"
+        field:
+          element: "text"
+          label: "Page id"
+    
+    ## PARAMETER
+    _es_parameter:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "parameter"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Parameter name"
+          placeholder: "Parameter name"
+      - name: "id"
+        field:
+          element: "text"
+          label: "Parameter id"
+      - name: "weight"
+        field:
+          element: "text"
+          label: "Parameter weight"
+          help: "Used to order the parameters in the menu. Each one must have a different value."

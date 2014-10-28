@@ -1,0 +1,34 @@
+{% assign en_coll = site.collections[page.collection].i18n.en %}
+{% case en_coll %}
+{% when 'en_country' or 'en_state' %}
+  {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/countries/climatescope-{{ page.id }}.csv{% endcapture %}
+  {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/countries/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
+{% when 'en_region' %}
+  {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/regions/climatescope-{{ site.edition }}-{{ page.id }}.csv{% endcapture %}
+  {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/regions/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
+{% when 'en_parameter' %}
+  {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/parameters/climatescope-{{ page.id }}.csv{% endcapture %}
+{% endcase %}
+
+<ul class="actions-menu">
+
+  {% if include.download_exc != true and page.id != 'policies' %}
+    <li class="dropdown">
+      <a href="#" title="{{ t['Download data'][language] }}" class="bttn bttn-success dropdown-toggle download" data-toggle="dropdown">{{ t['Download'][language] }}</a>
+      <ul class="dropdown-menu dropdown-menu-right" role="menu">
+        <li><a href="{{ csvlink }}" title="{{ t['Download raw data in CSV format'][language] }}" class="data-download has-icon source">{{ t['Raw data (CSV)'][language] }}</a></li>
+        {% if pdflink %}
+        <li><a href="{{ pdflink }}" title="{{ t['Download report in PDF format'][language] }}" class="data-download has-icon pdf">{{ t['Report (PDF)'][language] }}</a></li>
+        {% endif %}
+      </ul>
+    </li>
+  {% endif %}
+  <li class="dropdown">
+    <a href="#" title="{{ t['Share on social networks'][language] }}" class="bttn bttn-success dropdown-toggle share" data-toggle="dropdown">{{ t['Share'][language] }}</a>
+    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+      <li><a href="https://twitter.com/share?url={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" class="has-icon twitter" ng-href="https://twitter.com/share?url={{ site.domain }}{{ site.path_prefix }}{{ page.url }}#%% currentPath %%" target="_blank" title="{{ t['Share on Twitter'][language] }}">{{ t['Twitter'][language] }}</a></li>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" class="has-icon facebook" ng-href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ site.path_prefix }}{{ page.url }}#%% currentPath %%" target="_blank" title="{{ t['Share on Facebook'][language] }}">{{ t['Facebook'][language] }}</a></li>
+    </ul>
+  </li>
+  
+</ul>

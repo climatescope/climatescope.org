@@ -1,0 +1,36 @@
+---
+layout: base
+title : Global Rank
+id: index
+lang: en
+
+include_map: true
+
+description: This is a custom description (Index)
+---
+{% assign language = page.lang %}
+{% assign t = site.data.i18n_strings %}
+<section class="layout--home">
+  <header class="layout--home__header sticky" id="parameters-controls">
+    <div class="row--contained">
+      <div class="layout--home__heading">
+        <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
+      </div>
+      <div class="layout--home__controls">
+        {% include weight_changers.html %}
+      </div>
+    </div>
+  </header>
+
+  <div class="layout--home__body">
+
+    <div id="index-viz" class="row--full intro"><!-- Insert map here. --></div>
+
+    <div class="row--contained">
+      {% include url_index.html %}
+      <div ng-app="globalApp" ng-controller="CountryListController as countryTable" ng-cloak>
+        {% include country_list_table.html %}
+      </div>
+    </div>
+  </div>
+</section>
