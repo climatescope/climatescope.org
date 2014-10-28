@@ -121,7 +121,9 @@
         <div class="row--contained">
           <div class="layout--entry__heading">
             <h1 class="layout--entry__title">%% policyCtrl.policy.name %%</h1>
-            <p class="layout--entry__subtitle">{{ t['Policy'][language] }}</p>
+            <p class="layout--entry__subtitle">
+              <a href="#/" title="{{ t['Browse the policy database'][language] }}">{{ t['Policies'][language] }}</a>
+            </p>
           </div>
           <div class="layout--entry__tools" init-dropdown>
             {% include actions_menu.html %}
