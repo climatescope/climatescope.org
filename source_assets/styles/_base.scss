@@ -265,6 +265,8 @@ a:active{
 #site-footer {
   background: tint($primary-color, 95%);
   padding: 2rem 0;
+  position: relative;
+  z-index: 2000;
   @media print {
     display: none;
   }
@@ -1088,6 +1090,25 @@ a:active{
   }
 }
 
+.eq-ie8 #ie8-nocando {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1900;
+  padding: 1rem;
+  color: tint($primary-color, 60%);
+  background: tint($primary-color, 20%);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 \:article,
 \:aside,
 \:details,
@@ -1102,7 +1123,6 @@ a:active{
 \:summary {
   display: block;
 }
-
 
 // IE<8
 

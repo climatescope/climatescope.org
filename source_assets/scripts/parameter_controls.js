@@ -1,21 +1,26 @@
 $(document).ready(function() {
-
+  
   // Stop here if the parameters do not exist.
   if ($('#parameters-controls').length === 0) {
     return;
   }
 
   var header_height = $('#site-header').outerHeight();
+  var parameter_controls = $('#parameters-controls');
 
+  // Loading fonts is causing a small delay.
+  // Delay the header size calculation for a few millis.
+  setTimeout(function() { header_height = $('#site-header').outerHeight(); }, 200);
+  
   var check_sticky = function() {
      if ($(document).scrollTop() >= header_height) {
-       if (!$('#parameters-controls').hasClass('sticky')) {
-         $('#parameters-controls').addClass('sticky');
+       if (!parameter_controls.hasClass('sticky')) {
+         parameter_controls.addClass('sticky');
          check_sticky_padding();
        }
      }
      else {
-       $('#parameters-controls').removeClass('sticky');
+       parameter_controls.removeClass('sticky');
        check_sticky_padding();
      }
   };
@@ -24,7 +29,6 @@ $(document).ready(function() {
   // its height must be added as a padding to the parent
   // to make up for its absence.
   var check_sticky_padding = function() {
-    var parameter_controls = $('#parameters-controls');
     if (parameter_controls.css('position') == 'fixed') {
       var parameter_height = parameter_controls.outerHeight();
       parameter_controls.parent().css('padding-top', parameter_height);
@@ -39,7 +43,7 @@ $(document).ready(function() {
   $(window).on('resize', debounce(function() {
     header_height = $('#site-header').outerHeight();
     check_sticky_padding();
-  }, 50));
+  }, 100));
 
   check_sticky();
 
@@ -128,5 +132,5 @@ $(document).ready(function() {
     e.preventDefault();
     $('#vis-controls.slider-group').sliderGroup('reset');
   });
-  
+
 });
