@@ -22,7 +22,7 @@ $(document).ready(function() {
     }
     
     // Extract the filename from string.
-    var regExp = new RegExp('\/([a-z-]+.csv)$');
+    var regExp = new RegExp('\/([a-z0-9-.]+)$');
     var filename = url.match(regExp)[1];
     
     var label = filename + ' - ' + CS.lang.toUpperCase();
