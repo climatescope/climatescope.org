@@ -66,6 +66,7 @@ module.exports = function(grunt) {
           './assets/scripts/vendor/map-dependencies.min.js' : ['source_assets/scripts/vendor/map-dependencies/*.js', 'source_assets/vendor/mapbox/mapbox.js'],
           './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
           './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
+          './assets/scripts/vendor/angular-deps.min.js': ['source_assets/scripts/vendor/angular.min.js', 'source_assets/scripts/vendor/angular-route.min.js'],
         }
       }
     },
@@ -90,6 +91,7 @@ module.exports = function(grunt) {
           './assets/scripts/vendor/map-dependencies.min.js' : ['source_assets/scripts/vendor/map-dependencies/*.js', 'source_assets/vendor/mapbox/mapbox.js'],
           './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
           './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
+          './assets/scripts/vendor/angular-deps.min.js': ['source_assets/scripts/vendor/angular.min.js', 'source_assets/scripts/vendor/angular-route.min.js'],
         }
       },
     },
