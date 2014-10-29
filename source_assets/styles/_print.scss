@@ -1,0 +1,14 @@
+// PRINT STYLES
+
+@page {
+  margin: 0.5cm;
+}
+
+@media print {
+  * {
+    color: $body-font-color;
+  }
+  .no-print {
+    display: none;
+  }
+}
