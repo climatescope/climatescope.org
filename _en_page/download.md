@@ -1,15 +1,16 @@
 ---
 layout: page
-
-title : Download
+title: Download
 id: download
+published: true
 ---
+
 <div class="well well-l download download-pdf">
   <h2>Full Report</h2>
   <p>Download the full Climatescope 2014 report.</p>
   <ul class="download-list">
     <li>
-      <strong class="term">PDF</strong>
+      <strong class="term">PDF (19Mb)</strong>
       <a href="http://global-climatescope.org/en/download/reports/climatescope-2014-report-en.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
@@ -20,11 +21,11 @@ id: download
   <p>Download the complete set of underlying data.</p>
   <ul class="download-list">
     <li>
-      <strong class="term">CSV</strong>
+      <strong class="term">CSV (0.2Mb)</strong>
       <a href="http://global-climatescope.org/en/download/data/climatescope-full.csv" title="Download Climatescope data in CSV format" class="bttn bttn-success download data-download">Download</a>
     </li>
     <li>
-      <strong class="term">Excel</strong>
+      <strong class="term">Excel (5Mb)</strong>
       <a href="http://global-climatescope.org/en/download/model/climatescope-2014.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
@@ -50,7 +51,7 @@ id: download
   <p>Download the full methodology used in the Climatescope 2014.</p>
   <ul class="download-list">
     <li>
-      <strong class="term">PDF</strong>
+      <strong class="term">PDF (0.4Mb)</strong>
       <a href="http://global-climatescope.org/en/download/docs/climatescope-2014-methodology-en.pdf" title="Download methodology in PDF" class="bttn bttn-success download data-download">Download</a>
     </li>
   </ul>
