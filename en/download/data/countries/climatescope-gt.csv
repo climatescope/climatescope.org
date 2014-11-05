@@ -1,6 +1,6 @@
 name:en_var,type_var,2014
 Score,score,1.09652696599
-Enabling framework,param,1.32052097186
+Enabling framework,param,1.28249496778
 Clean energy policies,ind,0.0637601465326
 Power sector structure,ind,0.1451
 Distributed energy regulatory framework,ind,0.0
@@ -13,8 +13,8 @@ Clean energy electricity generation,ind,0.03671168883
 Growth rate of electricity generation,ind,0.00637243542899
 Biofuels production,ind,0.0044923122165
 Growth rate biofuels production,ind,0.00776456866293
-Average electricity spot prices,ind,0.120018330089
-Average retail electricity prices,ind,0.0
+Average electricity spot prices,ind,0.0600091650445
+Average retail electricity prices,ind,0.0447987634115
 Average residential electricity prices,ind,0.0
 Average commercial electricity prices,ind,0.0
 Average industrial electricity prices,ind,0.0

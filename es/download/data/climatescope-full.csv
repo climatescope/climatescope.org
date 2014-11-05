@@ -115,64 +115,64 @@ Barbados,Iniciativas de eficiencia energética,ind,0.0
 Barbados,Políticas de reducción de emisiones,ind,0.0
 Barbados,Formación empresarial centrada en el medioambiente,ind,0.0375
 Barbados,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Banglades,Puntaje,score,1.26548976686
-Banglades,Marco Propicio,param,1.2304820711
-Banglades,Políticas de energía limpia,ind,0.0648334618379
-Banglades,Estructura del sector energético,ind,0.166833333333
-Banglades,Marco regulatorio de la energía distribuida,ind,0.0577777777778
-Banglades,Electrificación rural de energía limpia,ind,0.04
-Banglades,Políticas de acceso a la energía,ind,0.0604194777691
-Banglades,Obstáculos políticos,ind,0.0051650800081
-Banglades,Capacidad instalada de energía limpia,ind,0.0
-Banglades,Tasa de crecimiento de la capacidad instalada,ind,0.0
-Banglades,Generación eléctrica de energía limpia,ind,0.0
-Banglades,Tasa de crecimiento de generación eléctrica,ind,0.0
-Banglades,Producción de biocombustibles,ind,0.0
-Banglades,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Banglades,Precio promedio de la electricidad spot,ind,0.0138534943843
-Banglades,Precio promedio de la electricidad al por menor,ind,0.00926079979596
-Banglades,Precio promedio de la electricidad residencial,ind,0.0
-Banglades,Precio promedio de la electricidad comercial,ind,0.0
-Banglades,Precio promedio de la electricidad industrial,ind,0.0
-Banglades,Precio promedio de queroseno,ind,0.0214619891818
-Banglades,Precio promedio de diesel,ind,0.0183652173913
-Banglades,Tasa de crecimiento de la demanda de energía,ind,0.0129621574598
-Banglades,Tasa de electrificación,ind,0.00309677419355
-Banglades,Población que utiliza combustibles sólidos para cocinar,ind,0.0181632653061
-Banglades,Financiamiento y Inversión,param,0.963627304942
-Banglades,Inversiones en energía limpia,ind,0.000253073413499
-Banglades,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0
-Banglades,Inversiones en activos,ind,0.0
-Banglades,Inversiones en finanzas corporativas,ind,0.0
-Banglades,Inversiones en capital de riesgo / capital privado,ind,0.0
-Banglades,"Préstamos, donaciones, programas de donaciones",ind,0.00933809590141
-Banglades,Inversiones locales,ind,0.0
-Banglades,Número de instituciones de microfinanzas verdes,ind,0.0780887087321
-Banglades,Microcréditos verdes,ind,0.0585
-Banglades,Microprestatarios verdes,ind,0.0238286237234
-Banglades,Coste medio de la microdeuda verde,ind,0.00728834355828
-Banglades,Coste medio de la deuda,ind,0.0416663461538
-Banglades,Tasa swap,ind,0.070125
-Banglades,Cadenas de valor,param,2.57086466165
-Banglades,Instituciones financieras en relación a la energía limpia,ind,0.09
-Banglades,Cadenas de valor de energía limpia por sector,ind,0.0197368421053
-Banglades,Cadenas de valor de energía limpia distribuida por sector,ind,0.09375
-Banglades,Proveedores de servicios de energía limpia,ind,0.075
-Banglades,Proveedores de servicios de energía limpia distribuida,ind,0.107142857143
-Banglades,Gestión de GEI,param,0.657193651248
-Banglades,Actividad histórica de derechos de emisión de carbono,ind,0.0
-Banglades,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.0125
-Banglades,Potencial de proyectos,ind,0.00589366443559
-Banglades,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.0
-Banglades,Registro de GEI,ind,0.0
-Banglades,Instrumentos basados en el mercado,ind,0.0
-Banglades,Instrumentos de PMR & NAMA,ind,0.0
-Banglades,Iniciativa de reporte global,ind,0.0041062005277
-Banglades,Principios de inversión responsable,ind,0.0
-Banglades,Iniciativas de eficiencia energética,ind,0.0
-Banglades,Políticas de reducción de emisiones,ind,0.00107918272392
-Banglades,Formación empresarial centrada en el medioambiente,ind,0.0375
-Banglades,‘Think tanks’ centrado en el medioambiente,ind,0.0375
+Bangladés,Puntaje,score,1.26431877795
+Bangladés,Marco Propicio,param,1.22755459884
+Bangladés,Políticas de energía limpia,ind,0.0648334618379
+Bangladés,Estructura del sector energético,ind,0.166833333333
+Bangladés,Marco regulatorio de la energía distribuida,ind,0.0577777777778
+Bangladés,Electrificación rural de energía limpia,ind,0.04
+Bangladés,Políticas de acceso a la energía,ind,0.059248488866
+Bangladés,Obstáculos políticos,ind,0.0051650800081
+Bangladés,Capacidad instalada de energía limpia,ind,0.0
+Bangladés,Tasa de crecimiento de la capacidad instalada,ind,0.0
+Bangladés,Generación eléctrica de energía limpia,ind,0.0
+Bangladés,Tasa de crecimiento de generación eléctrica,ind,0.0
+Bangladés,Producción de biocombustibles,ind,0.0
+Bangladés,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
+Bangladés,Precio promedio de la electricidad spot,ind,0.0138534943843
+Bangladés,Precio promedio de la electricidad al por menor,ind,0.00926079979596
+Bangladés,Precio promedio de la electricidad residencial,ind,0.0
+Bangladés,Precio promedio de la electricidad comercial,ind,0.0
+Bangladés,Precio promedio de la electricidad industrial,ind,0.0
+Bangladés,Precio promedio de queroseno,ind,0.0214619891818
+Bangladés,Precio promedio de diesel,ind,0.0183652173913
+Bangladés,Tasa de crecimiento de la demanda de energía,ind,0.0129621574598
+Bangladés,Tasa de electrificación,ind,0.00309677419355
+Bangladés,Población que utiliza combustibles sólidos para cocinar,ind,0.0181632653061
+Bangladés,Financiamiento y Inversión,param,0.963627304942
+Bangladés,Inversiones en energía limpia,ind,0.000253073413499
+Bangladés,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0
+Bangladés,Inversiones en activos,ind,0.0
+Bangladés,Inversiones en finanzas corporativas,ind,0.0
+Bangladés,Inversiones en capital de riesgo / capital privado,ind,0.0
+Bangladés,"Préstamos, donaciones, programas de donaciones",ind,0.00933809590141
+Bangladés,Inversiones locales,ind,0.0
+Bangladés,Número de instituciones de microfinanzas verdes,ind,0.0780887087321
+Bangladés,Microcréditos verdes,ind,0.0585
+Bangladés,Microprestatarios verdes,ind,0.0238286237234
+Bangladés,Coste medio de la microdeuda verde,ind,0.00728834355828
+Bangladés,Coste medio de la deuda,ind,0.0416663461538
+Bangladés,Tasa swap,ind,0.070125
+Bangladés,Cadenas de valor,param,2.57086466165
+Bangladés,Instituciones financieras en relación a la energía limpia,ind,0.09
+Bangladés,Cadenas de valor de energía limpia por sector,ind,0.0197368421053
+Bangladés,Cadenas de valor de energía limpia distribuida por sector,ind,0.09375
+Bangladés,Proveedores de servicios de energía limpia,ind,0.075
+Bangladés,Proveedores de servicios de energía limpia distribuida,ind,0.107142857143
+Bangladés,Gestión de GEI,param,0.657193651248
+Bangladés,Actividad histórica de derechos de emisión de carbono,ind,0.0
+Bangladés,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.0125
+Bangladés,Potencial de proyectos,ind,0.00589366443559
+Bangladés,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.0
+Bangladés,Registro de GEI,ind,0.0
+Bangladés,Instrumentos basados en el mercado,ind,0.0
+Bangladés,Instrumentos de PMR & NAMA,ind,0.0
+Bangladés,Iniciativa de reporte global,ind,0.0041062005277
+Bangladés,Principios de inversión responsable,ind,0.0
+Bangladés,Iniciativas de eficiencia energética,ind,0.0
+Bangladés,Políticas de reducción de emisiones,ind,0.00107918272392
+Bangladés,Formación empresarial centrada en el medioambiente,ind,0.0375
+Bangladés,‘Think tanks’ centrado en el medioambiente,ind,0.0375
 Bolivia,Puntaje,score,0.912422373058
 Bolivia,Marco Propicio,param,0.648963044475
 Bolivia,Políticas de energía limpia,ind,0.0
@@ -347,13 +347,13 @@ Bahamas,Iniciativas de eficiencia energética,ind,0.0
 Bahamas,Políticas de reducción de emisiones,ind,0.0
 Bahamas,Formación empresarial centrada en el medioambiente,ind,0.0
 Bahamas,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Botsuana,Puntaje,score,0.62245156887
-Botsuana,Marco Propicio,param,0.770011374387
+Botsuana,Puntaje,score,0.620495076276
+Botsuana,Marco Propicio,param,0.765120142902
 Botsuana,Políticas de energía limpia,ind,0.0250292392733
 Botsuana,Estructura del sector energético,ind,0.0354166666667
 Botsuana,Marco regulatorio de la energía distribuida,ind,0.0222222222222
 Botsuana,Electrificación rural de energía limpia,ind,0.04
-Botsuana,Políticas de acceso a la energía,ind,0.0486029857957
+Botsuana,Políticas de acceso a la energía,ind,0.0465571996199
 Botsuana,Obstáculos políticos,ind,0.0226666666667
 Botsuana,Capacidad instalada de energía limpia,ind,0.00128514854972
 Botsuana,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -369,7 +369,7 @@ Botsuana,Precio promedio de la electricidad industrial,ind,0.0
 Botsuana,Precio promedio de queroseno,ind,0.0230844355819
 Botsuana,Precio promedio de diesel,ind,0.0165717268954
 Botsuana,Tasa de crecimiento de la demanda de energía,ind,0.0163581470525
-Botsuana,Tasa de electrificación,ind,0.00281979732707
+Botsuana,Tasa de electrificación,ind,0.00290909090909
 Botsuana,Población que utiliza combustibles sólidos para cocinar,ind,0.00755102040816
 Botsuana,Financiamiento y Inversión,param,0.302006355171
 Botsuana,Inversiones en energía limpia,ind,0.000533731518614
@@ -463,13 +463,13 @@ Belice,Iniciativas de eficiencia energética,ind,0.0
 Belice,Políticas de reducción de emisiones,ind,0.0
 Belice,Formación empresarial centrada en el medioambiente,ind,0.0375
 Belice,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-RD Congo,Puntaje,score,0.852241595426
-RD Congo,Marco Propicio,param,0.79927357305
+RD Congo,Puntaje,score,0.834892179019
+RD Congo,Marco Propicio,param,0.755900032033
 RD Congo,Políticas de energía limpia,ind,0.0148032798682
 RD Congo,Estructura del sector energético,ind,0.0195833333333
 RD Congo,Marco regulatorio de la energía distribuida,ind,0.0355555555556
 RD Congo,Electrificación rural de energía limpia,ind,0.04
-RD Congo,Políticas de acceso a la energía,ind,0.0340622814757
+RD Congo,Políticas de acceso a la energía,ind,0.0337795317353
 RD Congo,Obstáculos políticos,ind,0.00463636363636
 RD Congo,Capacidad instalada de energía limpia,ind,0.012625753082
 RD Congo,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -485,7 +485,7 @@ RD Congo,Precio promedio de la electricidad industrial,ind,0.0
 RD Congo,Precio promedio de queroseno,ind,0.037972729021
 RD Congo,Precio promedio de diesel,ind,0.04
 RD Congo,Tasa de crecimiento de la demanda de energía,ind,0.0
-RD Congo,Tasa de electrificación,ind,0.0384
+RD Congo,Tasa de electrificación,ind,0.0213333333333
 RD Congo,Población que utiliza combustibles sólidos para cocinar,ind,0.0189795918367
 RD Congo,Financiamiento y Inversión,param,0.663980702792
 RD Congo,Inversiones en energía limpia,ind,0.00835391879171
@@ -521,13 +521,13 @@ RD Congo,Iniciativas de eficiencia energética,ind,0.0
 RD Congo,Políticas de reducción de emisiones,ind,0.0
 RD Congo,Formación empresarial centrada en el medioambiente,ind,0.0
 RD Congo,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Costa de Marfil,Puntaje,score,0.687039626488
-Costa de Marfil,Marco Propicio,param,1.06111640577
+Costa de Marfil,Puntaje,score,0.690313481715
+Costa de Marfil,Marco Propicio,param,1.06930104384
 Costa de Marfil,Políticas de energía limpia,ind,0.0313605858639
 Costa de Marfil,Estructura del sector energético,ind,0.11425
 Costa de Marfil,Marco regulatorio de la energía distribuida,ind,0.0533333333333
 Costa de Marfil,Electrificación rural de energía limpia,ind,0.04
-Costa de Marfil,Políticas de acceso a la energía,ind,0.049194351291
+Costa de Marfil,Políticas de acceso a la energía,ind,0.0476209406482
 Costa de Marfil,Obstáculos políticos,ind,0.00434042553191
 Costa de Marfil,Capacidad instalada de energía limpia,ind,0.00679626437585
 Costa de Marfil,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -543,7 +543,7 @@ Costa de Marfil,Precio promedio de la electricidad industrial,ind,0.0
 Costa de Marfil,Precio promedio de queroseno,ind,0.0293425633344
 Costa de Marfil,Precio promedio de diesel,ind,0.0176811594203
 Costa de Marfil,Tasa de crecimiento de la demanda de energía,ind,0.0175127706704
-Costa de Marfil,Tasa de electrificación,ind,0.00259459459459
+Costa de Marfil,Tasa de electrificación,ind,0.00744186046512
 Costa de Marfil,Población que utiliza combustibles sólidos para cocinar,ind,0.0161224489796
 Costa de Marfil,Financiamiento y Inversión,param,0.0451427873396
 Costa de Marfil,Inversiones en energía limpia,ind,0.00545719780743
@@ -637,64 +637,64 @@ Chile,Iniciativas de eficiencia energética,ind,0.0128143832418
 Chile,Políticas de reducción de emisiones,ind,0.0127153446331
 Chile,Formación empresarial centrada en el medioambiente,ind,0.0375
 Chile,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Camerun,Puntaje,score,0.645774863035
-Camerun,Marco Propicio,param,0.733725178723
-Camerun,Políticas de energía limpia,ind,0.0307692548852
-Camerun,Estructura del sector energético,ind,0.0331515541787
-Camerun,Marco regulatorio de la energía distribuida,ind,0.0622222222222
-Camerun,Electrificación rural de energía limpia,ind,0.04
-Camerun,Políticas de acceso a la energía,ind,0.0548558165411
-Camerun,Obstáculos políticos,ind,0.00255
-Camerun,Capacidad instalada de energía limpia,ind,2.39370720459e-05
-Camerun,Tasa de crecimiento de la capacidad instalada,ind,0.0
-Camerun,Generación eléctrica de energía limpia,ind,1.18046443284e-05
-Camerun,Tasa de crecimiento de generación eléctrica,ind,0.0
-Camerun,Producción de biocombustibles,ind,0.0
-Camerun,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Camerun,Precio promedio de la electricidad spot,ind,0.0
-Camerun,Precio promedio de la electricidad al por menor,ind,0.0178719101124
-Camerun,Precio promedio de la electricidad residencial,ind,0.0
-Camerun,Precio promedio de la electricidad comercial,ind,0.0
-Camerun,Precio promedio de la electricidad industrial,ind,0.0
-Camerun,Precio promedio de queroseno,ind,0.0170137552107
-Camerun,Precio promedio de diesel,ind,0.0149275362319
-Camerun,Tasa de crecimiento de la demanda de energía,ind,0.0
-Camerun,Tasa de electrificación,ind,0.00417391304348
-Camerun,Población que utiliza combustibles sólidos para cocinar,ind,0.0159183673469
-Camerun,Financiamiento y Inversión,param,0.274760768915
-Camerun,Inversiones en energía limpia,ind,0.00468273692043
-Camerun,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0
-Camerun,Inversiones en activos,ind,0.0
-Camerun,Inversiones en finanzas corporativas,ind,0.0
-Camerun,Inversiones en capital de riesgo / capital privado,ind,0.0
-Camerun,"Préstamos, donaciones, programas de donaciones",ind,0.0
-Camerun,Inversiones locales,ind,0.0
-Camerun,Número de instituciones de microfinanzas verdes,ind,0.00114288810713
-Camerun,Microcréditos verdes,ind,6.47744278927e-06
-Camerun,Microprestatarios verdes,ind,0.00013160439467
-Camerun,Coste medio de la microdeuda verde,ind,0.00424285714286
-Camerun,Coste medio de la deuda,ind,0.0722216666667
-Camerun,Tasa swap,ind,0.0
-Camerun,Cadenas de valor,param,0.914661654135
-Camerun,Instituciones financieras en relación a la energía limpia,ind,0.03
-Camerun,Cadenas de valor de energía limpia por sector,ind,0.0118421052632
-Camerun,Cadenas de valor de energía limpia distribuida por sector,ind,0.0375
-Camerun,Proveedores de servicios de energía limpia,ind,0.015
-Camerun,Proveedores de servicios de energía limpia distribuida,ind,0.0428571428571
-Camerun,Gestión de GEI,param,0.884382085007
-Camerun,Actividad histórica de derechos de emisión de carbono,ind,0.0375
-Camerun,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.075
-Camerun,Potencial de proyectos,ind,0.0201573127511
-Camerun,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.0
-Camerun,Registro de GEI,ind,0.0
-Camerun,Instrumentos basados en el mercado,ind,0.0
-Camerun,Instrumentos de PMR & NAMA,ind,0.0
-Camerun,Iniciativa de reporte global,ind,0.0
-Camerun,Principios de inversión responsable,ind,0.0
-Camerun,Iniciativas de eficiencia energética,ind,0.0
-Camerun,Políticas de reducción de emisiones,ind,0.0
-Camerun,Formación empresarial centrada en el medioambiente,ind,0.0
-Camerun,‘Think tanks’ centrado en el medioambiente,ind,0.0
+Camerún,Puntaje,score,0.645155135084
+Camerún,Marco Propicio,param,0.732175858846
+Camerún,Políticas de energía limpia,ind,0.0307692548852
+Camerún,Estructura del sector energético,ind,0.0331515541787
+Camerún,Marco regulatorio de la energía distribuida,ind,0.0622222222222
+Camerún,Electrificación rural de energía limpia,ind,0.04
+Camerún,Políticas de acceso a la energía,ind,0.05486101827
+Camerún,Obstáculos políticos,ind,0.00255
+Camerún,Capacidad instalada de energía limpia,ind,2.39370720459e-05
+Camerún,Tasa de crecimiento de la capacidad instalada,ind,0.0
+Camerún,Generación eléctrica de energía limpia,ind,1.18046443284e-05
+Camerún,Tasa de crecimiento de generación eléctrica,ind,0.0
+Camerún,Producción de biocombustibles,ind,0.0
+Camerún,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
+Camerún,Precio promedio de la electricidad spot,ind,0.0
+Camerún,Precio promedio de la electricidad al por menor,ind,0.0178719101124
+Camerún,Precio promedio de la electricidad residencial,ind,0.0
+Camerún,Precio promedio de la electricidad comercial,ind,0.0
+Camerún,Precio promedio de la electricidad industrial,ind,0.0
+Camerún,Precio promedio de queroseno,ind,0.0170137552107
+Camerún,Precio promedio de diesel,ind,0.0149275362319
+Camerún,Tasa de crecimiento de la demanda de energía,ind,0.0
+Camerún,Tasa de electrificación,ind,0.00354898336414
+Camerún,Población que utiliza combustibles sólidos para cocinar,ind,0.0159183673469
+Camerún,Financiamiento y Inversión,param,0.274760768915
+Camerún,Inversiones en energía limpia,ind,0.00468273692043
+Camerún,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0
+Camerún,Inversiones en activos,ind,0.0
+Camerún,Inversiones en finanzas corporativas,ind,0.0
+Camerún,Inversiones en capital de riesgo / capital privado,ind,0.0
+Camerún,"Préstamos, donaciones, programas de donaciones",ind,0.0
+Camerún,Inversiones locales,ind,0.0
+Camerún,Número de instituciones de microfinanzas verdes,ind,0.00114288810713
+Camerún,Microcréditos verdes,ind,6.47744278927e-06
+Camerún,Microprestatarios verdes,ind,0.00013160439467
+Camerún,Coste medio de la microdeuda verde,ind,0.00424285714286
+Camerún,Coste medio de la deuda,ind,0.0722216666667
+Camerún,Tasa swap,ind,0.0
+Camerún,Cadenas de valor,param,0.914661654135
+Camerún,Instituciones financieras en relación a la energía limpia,ind,0.03
+Camerún,Cadenas de valor de energía limpia por sector,ind,0.0118421052632
+Camerún,Cadenas de valor de energía limpia distribuida por sector,ind,0.0375
+Camerún,Proveedores de servicios de energía limpia,ind,0.015
+Camerún,Proveedores de servicios de energía limpia distribuida,ind,0.0428571428571
+Camerún,Gestión de GEI,param,0.884382085007
+Camerún,Actividad histórica de derechos de emisión de carbono,ind,0.0375
+Camerún,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.075
+Camerún,Potencial de proyectos,ind,0.0201573127511
+Camerún,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.0
+Camerún,Registro de GEI,ind,0.0
+Camerún,Instrumentos basados en el mercado,ind,0.0
+Camerún,Instrumentos de PMR & NAMA,ind,0.0
+Camerún,Iniciativa de reporte global,ind,0.0
+Camerún,Principios de inversión responsable,ind,0.0
+Camerún,Iniciativas de eficiencia energética,ind,0.0
+Camerún,Políticas de reducción de emisiones,ind,0.0
+Camerún,Formación empresarial centrada en el medioambiente,ind,0.0
+Camerún,‘Think tanks’ centrado en el medioambiente,ind,0.0
 China,Puntaje,score,2.23316001679
 China,Marco Propicio,param,1.56765344621
 China,Políticas de energía limpia,ind,0.260089639837
@@ -753,10 +753,10 @@ China,Iniciativas de eficiencia energética,ind,0.0375
 China,Políticas de reducción de emisiones,ind,0.0375
 China,Formación empresarial centrada en el medioambiente,ind,0.0375
 China,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Hebei,Puntaje,score,1.40318273973
-Hebei,Marco Propicio,param,1.44456218314
-Hebei,Políticas de energía limpia,ind,0.260089639837
-Hebei,Estructura del sector energético,ind,0.0725
+Hebei,Puntaje,score,1.16906198797
+Hebei,Marco Propicio,param,1.14010584214
+Hebei,Políticas de energía limpia,ind,0.173393093224
+Hebei,Estructura del sector energético,ind,0.0604166666667
 Hebei,Marco regulatorio de la energía distribuida,ind,0.0
 Hebei,Electrificación rural de energía limpia,ind,0.04
 Hebei,Políticas de acceso a la energía,ind,0.0
@@ -767,19 +767,19 @@ Hebei,Generación eléctrica de energía limpia,ind,0.0119222437293
 Hebei,Tasa de crecimiento de generación eléctrica,ind,0.0776496737472
 Hebei,Producción de biocombustibles,ind,0.0
 Hebei,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Hebei,Precio promedio de la electricidad spot,ind,0.0264159219748
-Hebei,Precio promedio de la electricidad al por menor,ind,0.0189570921348
+Hebei,Precio promedio de la electricidad spot,ind,0.0158495531849
+Hebei,Precio promedio de la electricidad al por menor,ind,0.0113742552809
 Hebei,Precio promedio de la electricidad residencial,ind,0.0
 Hebei,Precio promedio de la electricidad comercial,ind,0.0
 Hebei,Precio promedio de la electricidad industrial,ind,0.0
 Hebei,Precio promedio de queroseno,ind,0.0
 Hebei,Precio promedio de diesel,ind,0.0
-Hebei,Tasa de crecimiento de la demanda de energía,ind,0.0129352302327
-Hebei,Tasa de electrificación,ind,0.00160320641283
+Hebei,Tasa de crecimiento de la demanda de energía,ind,0.00776113813959
+Hebei,Tasa de electrificación,ind,0.00192384769539
 Hebei,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Hebei,Financiamiento y Inversión,param,0.893955765055
-Hebei,Inversiones en energía limpia,ind,0.0378840822605
-Hebei,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0321409485381
+Hebei,Financiamiento y Inversión,param,0.89778452087
+Hebei,Inversiones en energía limpia,ind,0.0454608987126
+Hebei,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0257127588305
 Hebei,Inversiones en activos,ind,0.0
 Hebei,Inversiones en finanzas corporativas,ind,0.0
 Hebei,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -791,11 +791,11 @@ Hebei,Microprestatarios verdes,ind,0.0
 Hebei,Coste medio de la microdeuda verde,ind,0.0
 Hebei,Coste medio de la deuda,ind,0.0902770833333
 Hebei,Tasa swap,ind,0.107884615385
-Hebei,Cadenas de valor,param,1.67763157895
-Hebei,Instituciones financieras en relación a la energía limpia,ind,0.075
-Hebei,Cadenas de valor de energía limpia por sector,ind,0.157894736842
+Hebei,Cadenas de valor,param,0.921052631579
+Hebei,Instituciones financieras en relación a la energía limpia,ind,0.06
+Hebei,Cadenas de valor de energía limpia por sector,ind,0.0631578947368
 Hebei,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Hebei,Proveedores de servicios de energía limpia,ind,0.01875
+Hebei,Proveedores de servicios de energía limpia,ind,0.015
 Hebei,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Hebei,Gestión de GEI,param,2.03684266746
 Hebei,Actividad histórica de derechos de emisión de carbono,ind,0.075
@@ -811,10 +811,10 @@ Hebei,Iniciativas de eficiencia energética,ind,0.0375
 Hebei,Políticas de reducción de emisiones,ind,0.0375
 Hebei,Formación empresarial centrada en el medioambiente,ind,0.0375
 Hebei,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Nei Mongol,Puntaje,score,1.50032394002
-Nei Mongol,Marco Propicio,param,1.35100291045
-Nei Mongol,Políticas de energía limpia,ind,0.260089639837
-Nei Mongol,Estructura del sector energético,ind,0.0725
+Nei Mongol,Puntaje,score,1.31596488002
+Nei Mongol,Marco Propicio,param,1.07020327204
+Nei Mongol,Políticas de energía limpia,ind,0.173393093224
+Nei Mongol,Estructura del sector energético,ind,0.0604166666667
 Nei Mongol,Marco regulatorio de la energía distribuida,ind,0.0
 Nei Mongol,Electrificación rural de energía limpia,ind,0.04
 Nei Mongol,Políticas de acceso a la energía,ind,0.0
@@ -825,19 +825,19 @@ Nei Mongol,Generación eléctrica de energía limpia,ind,0.0151025932577
 Nei Mongol,Tasa de crecimiento de generación eléctrica,ind,0.0432961212643
 Nei Mongol,Producción de biocombustibles,ind,0.0
 Nei Mongol,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Nei Mongol,Precio promedio de la electricidad spot,ind,0.0196636835496
-Nei Mongol,Precio promedio de la electricidad al por menor,ind,0.0149878582022
+Nei Mongol,Precio promedio de la electricidad spot,ind,0.0117982101298
+Nei Mongol,Precio promedio de la electricidad al por menor,ind,0.00899271492135
 Nei Mongol,Precio promedio de la electricidad residencial,ind,0.0
 Nei Mongol,Precio promedio de la electricidad comercial,ind,0.0
 Nei Mongol,Precio promedio de la electricidad industrial,ind,0.0
 Nei Mongol,Precio promedio de queroseno,ind,0.0
 Nei Mongol,Precio promedio de diesel,ind,0.0
 Nei Mongol,Tasa de crecimiento de la demanda de energía,ind,0.0
-Nei Mongol,Tasa de electrificación,ind,0.00160320641283
+Nei Mongol,Tasa de electrificación,ind,0.00192384769539
 Nei Mongol,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Nei Mongol,Financiamiento y Inversión,param,1.29371160328
-Nei Mongol,Inversiones en energía limpia,ind,0.154927221658
-Nei Mongol,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0350245606094
+Nei Mongol,Financiamiento y Inversión,param,1.37364671065
+Nei Mongol,Inversiones en energía limpia,ind,0.18591266599
+Nei Mongol,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0280196484875
 Nei Mongol,Inversiones en activos,ind,0.0
 Nei Mongol,Inversiones en finanzas corporativas,ind,0.0
 Nei Mongol,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -849,11 +849,11 @@ Nei Mongol,Microprestatarios verdes,ind,0.0
 Nei Mongol,Coste medio de la microdeuda verde,ind,0.0
 Nei Mongol,Coste medio de la deuda,ind,0.0902770833333
 Nei Mongol,Tasa swap,ind,0.107884615385
-Nei Mongol,Cadenas de valor,param,1.35855263158
-Nei Mongol,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Nei Mongol,Cadenas de valor de energía limpia por sector,ind,0.138157894737
+Nei Mongol,Cadenas de valor,param,0.718421052632
+Nei Mongol,Instituciones financieras en relación a la energía limpia,ind,0.03
+Nei Mongol,Cadenas de valor de energía limpia por sector,ind,0.0552631578947
 Nei Mongol,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Nei Mongol,Proveedores de servicios de energía limpia,ind,0.028125
+Nei Mongol,Proveedores de servicios de energía limpia,ind,0.0225
 Nei Mongol,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Nei Mongol,Gestión de GEI,param,2.45350933412
 Nei Mongol,Actividad histórica de derechos de emisión de carbono,ind,0.15
@@ -869,10 +869,10 @@ Nei Mongol,Iniciativas de eficiencia energética,ind,0.0375
 Nei Mongol,Políticas de reducción de emisiones,ind,0.0375
 Nei Mongol,Formación empresarial centrada en el medioambiente,ind,0.0375
 Nei Mongol,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Jilin,Puntaje,score,1.24894235311
-Jilin,Marco Propicio,param,1.28883078286
-Jilin,Políticas de energía limpia,ind,0.260089639837
-Jilin,Estructura del sector energético,ind,0.0725
+Jilin,Puntaje,score,1.06624966802
+Jilin,Marco Propicio,param,0.999194035243
+Jilin,Políticas de energía limpia,ind,0.173393093224
+Jilin,Estructura del sector energético,ind,0.0604166666667
 Jilin,Marco regulatorio de la energía distribuida,ind,0.0
 Jilin,Electrificación rural de energía limpia,ind,0.04
 Jilin,Políticas de acceso a la energía,ind,0.0
@@ -883,19 +883,19 @@ Jilin,Generación eléctrica de energía limpia,ind,0.0182760001375
 Jilin,Tasa de crecimiento de generación eléctrica,ind,0.0201957768731
 Jilin,Producción de biocombustibles,ind,0.0
 Jilin,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Jilin,Precio promedio de la electricidad spot,ind,0.025157030065
-Jilin,Precio promedio de la electricidad al por menor,ind,0.0183316208989
+Jilin,Precio promedio de la electricidad spot,ind,0.015094218039
+Jilin,Precio promedio de la electricidad al por menor,ind,0.0109989725393
 Jilin,Precio promedio de la electricidad residencial,ind,0.0
 Jilin,Precio promedio de la electricidad comercial,ind,0.0
 Jilin,Precio promedio de la electricidad industrial,ind,0.0
 Jilin,Precio promedio de queroseno,ind,0.0
 Jilin,Precio promedio de diesel,ind,0.0
 Jilin,Tasa de crecimiento de la demanda de energía,ind,0.0
-Jilin,Tasa de electrificación,ind,0.00160320641283
+Jilin,Tasa de electrificación,ind,0.00192384769539
 Jilin,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Jilin,Financiamiento y Inversión,param,0.824853360882
-Jilin,Inversiones en energía limpia,ind,0.043818637036
-Jilin,Tasa de crecimiento de las inversiones en energía limpia,ind,0.00547567251067
+Jilin,Financiamiento y Inversión,param,0.850415337232
+Jilin,Inversiones en energía limpia,ind,0.0525823644432
+Jilin,Tasa de crecimiento de las inversiones en energía limpia,ind,0.00438053800854
 Jilin,Inversiones en activos,ind,0.0
 Jilin,Inversiones en finanzas corporativas,ind,0.0
 Jilin,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -907,11 +907,11 @@ Jilin,Microprestatarios verdes,ind,0.0
 Jilin,Coste medio de la microdeuda verde,ind,0.0
 Jilin,Coste medio de la deuda,ind,0.0902770833333
 Jilin,Tasa swap,ind,0.107884615385
-Jilin,Cadenas de valor,param,1.03618421053
-Jilin,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Jilin,Cadenas de valor de energía limpia por sector,ind,0.108552631579
+Jilin,Cadenas de valor,param,0.539473684211
+Jilin,Instituciones financieras en relación a la energía limpia,ind,0.03
+Jilin,Cadenas de valor de energía limpia por sector,ind,0.0434210526316
 Jilin,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Jilin,Proveedores de servicios de energía limpia,ind,0.009375
+Jilin,Proveedores de servicios de energía limpia,ind,0.0075
 Jilin,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Jilin,Gestión de GEI,param,2.20350933412
 Jilin,Actividad histórica de derechos de emisión de carbono,ind,0.075
@@ -927,10 +927,10 @@ Jilin,Iniciativas de eficiencia energética,ind,0.0375
 Jilin,Políticas de reducción de emisiones,ind,0.0375
 Jilin,Formación empresarial centrada en el medioambiente,ind,0.0375
 Jilin,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Heilongjiang,Puntaje,score,1.25674092098
-Heilongjiang,Marco Propicio,param,1.31985236754
-Heilongjiang,Políticas de energía limpia,ind,0.260089639837
-Heilongjiang,Estructura del sector energético,ind,0.0725
+Heilongjiang,Puntaje,score,1.05960947004
+Heilongjiang,Marco Propicio,param,1.02601031126
+Heilongjiang,Políticas de energía limpia,ind,0.173393093224
+Heilongjiang,Estructura del sector energético,ind,0.0604166666667
 Heilongjiang,Marco regulatorio de la energía distribuida,ind,0.0
 Heilongjiang,Electrificación rural de energía limpia,ind,0.04
 Heilongjiang,Políticas de acceso a la energía,ind,0.0
@@ -941,19 +941,19 @@ Heilongjiang,Generación eléctrica de energía limpia,ind,0.0176435197103
 Heilongjiang,Tasa de crecimiento de generación eléctrica,ind,0.0209421299063
 Heilongjiang,Producción de biocombustibles,ind,0.0
 Heilongjiang,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Heilongjiang,Precio promedio de la electricidad spot,ind,0.025157030065
-Heilongjiang,Precio promedio de la electricidad al por menor,ind,0.0170008247191
+Heilongjiang,Precio promedio de la electricidad spot,ind,0.015094218039
+Heilongjiang,Precio promedio de la electricidad al por menor,ind,0.0102004948315
 Heilongjiang,Precio promedio de la electricidad residencial,ind,0.0
 Heilongjiang,Precio promedio de la electricidad comercial,ind,0.0
 Heilongjiang,Precio promedio de la electricidad industrial,ind,0.0
 Heilongjiang,Precio promedio de queroseno,ind,0.0
 Heilongjiang,Precio promedio de diesel,ind,0.0
-Heilongjiang,Tasa de crecimiento de la demanda de energía,ind,0.00553610483395
-Heilongjiang,Tasa de electrificación,ind,0.00160320641283
+Heilongjiang,Tasa de crecimiento de la demanda de energía,ind,0.00332166290037
+Heilongjiang,Tasa de electrificación,ind,0.00192384769539
 Heilongjiang,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Heilongjiang,Financiamiento y Inversión,param,0.903236474238
-Heilongjiang,Inversiones en energía limpia,ind,0.0471219980645
-Heilongjiang,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0256872454889
+Heilongjiang,Financiamiento y Inversión,param,0.917526309288
+Heilongjiang,Inversiones en energía limpia,ind,0.0565463976774
+Heilongjiang,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0205497963911
 Heilongjiang,Inversiones en activos,ind,0.0
 Heilongjiang,Inversiones en finanzas corporativas,ind,0.0
 Heilongjiang,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -965,11 +965,11 @@ Heilongjiang,Microprestatarios verdes,ind,0.0
 Heilongjiang,Coste medio de la microdeuda verde,ind,0.0
 Heilongjiang,Coste medio de la deuda,ind,0.0902770833333
 Heilongjiang,Tasa swap,ind,0.107884615385
-Heilongjiang,Cadenas de valor,param,1.34868421053
-Heilongjiang,Instituciones financieras en relación a la energía limpia,ind,0.075
-Heilongjiang,Cadenas de valor de energía limpia por sector,ind,0.108552631579
+Heilongjiang,Cadenas de valor,param,0.789473684211
+Heilongjiang,Instituciones financieras en relación a la energía limpia,ind,0.06
+Heilongjiang,Cadenas de valor de energía limpia por sector,ind,0.0434210526316
 Heilongjiang,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Heilongjiang,Proveedores de servicios de energía limpia,ind,0.01875
+Heilongjiang,Proveedores de servicios de energía limpia,ind,0.015
 Heilongjiang,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Heilongjiang,Gestión de GEI,param,1.70350933412
 Heilongjiang,Actividad histórica de derechos de emisión de carbono,ind,0.0375
@@ -985,10 +985,10 @@ Heilongjiang,Iniciativas de eficiencia energética,ind,0.0375
 Heilongjiang,Políticas de reducción de emisiones,ind,0.0375
 Heilongjiang,Formación empresarial centrada en el medioambiente,ind,0.0375
 Heilongjiang,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Jiangsu,Puntaje,score,1.53730602846
-Jiangsu,Marco Propicio,param,1.41870146693
-Jiangsu,Políticas de energía limpia,ind,0.260089639837
-Jiangsu,Estructura del sector energético,ind,0.0725
+Jiangsu,Puntaje,score,1.25321805673
+Jiangsu,Marco Propicio,param,1.04906138452
+Jiangsu,Políticas de energía limpia,ind,0.173393093224
+Jiangsu,Estructura del sector energético,ind,0.0604166666667
 Jiangsu,Marco regulatorio de la energía distribuida,ind,0.0
 Jiangsu,Electrificación rural de energía limpia,ind,0.04
 Jiangsu,Políticas de acceso a la energía,ind,0.0
@@ -999,19 +999,19 @@ Jiangsu,Generación eléctrica de energía limpia,ind,0.00329413154609
 Jiangsu,Tasa de crecimiento de generación eléctrica,ind,0.0480565523678
 Jiangsu,Producción de biocombustibles,ind,0.0
 Jiangsu,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Jiangsu,Precio promedio de la electricidad spot,ind,0.027882895192
-Jiangsu,Precio promedio de la electricidad al por menor,ind,0.018700907191
+Jiangsu,Precio promedio de la electricidad spot,ind,0.0167297371152
+Jiangsu,Precio promedio de la electricidad al por menor,ind,0.0112205443146
 Jiangsu,Precio promedio de la electricidad residencial,ind,0.0
 Jiangsu,Precio promedio de la electricidad comercial,ind,0.0
 Jiangsu,Precio promedio de la electricidad industrial,ind,0.0
 Jiangsu,Precio promedio de queroseno,ind,0.0
 Jiangsu,Precio promedio de diesel,ind,0.0
-Jiangsu,Tasa de crecimiento de la demanda de energía,ind,0.0769081833763
-Jiangsu,Tasa de electrificación,ind,0.00160320641283
+Jiangsu,Tasa de crecimiento de la demanda de energía,ind,0.0461449100258
+Jiangsu,Tasa de electrificación,ind,0.00192384769539
 Jiangsu,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Jiangsu,Financiamiento y Inversión,param,1.14470294559
-Jiangsu,Inversiones en energía limpia,ind,0.0540019824123
-Jiangsu,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0912472025453
+Jiangsu,Financiamiento y Inversión,param,1.11987279883
+Jiangsu,Inversiones en energía limpia,ind,0.0648023788948
+Jiangsu,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0729977620362
 Jiangsu,Inversiones en activos,ind,0.0
 Jiangsu,Inversiones en finanzas corporativas,ind,0.0
 Jiangsu,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1023,11 +1023,11 @@ Jiangsu,Microprestatarios verdes,ind,0.0
 Jiangsu,Coste medio de la microdeuda verde,ind,0.0
 Jiangsu,Coste medio de la deuda,ind,0.0902770833333
 Jiangsu,Tasa swap,ind,0.107884615385
-Jiangsu,Cadenas de valor,param,2.05592105263
-Jiangsu,Instituciones financieras en relación a la energía limpia,ind,0.075
-Jiangsu,Cadenas de valor de energía limpia por sector,ind,0.167763157895
+Jiangsu,Cadenas de valor,param,1.19736842105
+Jiangsu,Instituciones financieras en relación a la energía limpia,ind,0.06
+Jiangsu,Cadenas de valor de energía limpia por sector,ind,0.0671052631579
 Jiangsu,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Jiangsu,Proveedores de servicios de energía limpia,ind,0.065625
+Jiangsu,Proveedores de servicios de energía limpia,ind,0.0525
 Jiangsu,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Jiangsu,Gestión de GEI,param,2.12017600079
 Jiangsu,Actividad histórica de derechos de emisión de carbono,ind,0.075
@@ -1043,10 +1043,10 @@ Jiangsu,Iniciativas de eficiencia energética,ind,0.0375
 Jiangsu,Políticas de reducción de emisiones,ind,0.0375
 Jiangsu,Formación empresarial centrada en el medioambiente,ind,0.0375
 Jiangsu,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Fujian,Puntaje,score,1.26798403999
-Fujian,Marco Propicio,param,1.38845198969
-Fujian,Políticas de energía limpia,ind,0.260089639837
-Fujian,Estructura del sector energético,ind,0.0725
+Fujian,Puntaje,score,1.00028481712
+Fujian,Marco Propicio,param,1.0647828702
+Fujian,Políticas de energía limpia,ind,0.173393093224
+Fujian,Estructura del sector energético,ind,0.0604166666667
 Fujian,Marco regulatorio de la energía distribuida,ind,0.0
 Fujian,Electrificación rural de energía limpia,ind,0.04
 Fujian,Políticas de acceso a la energía,ind,0.0
@@ -1057,19 +1057,19 @@ Fujian,Generación eléctrica de energía limpia,ind,0.0338088650625
 Fujian,Tasa de crecimiento de generación eléctrica,ind,0.0006923650327
 Fujian,Producción de biocombustibles,ind,0.0
 Fujian,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Fujian,Precio promedio de la electricidad spot,ind,0.0275447630675
-Fujian,Precio promedio de la electricidad al por menor,ind,0.018978465618
+Fujian,Precio promedio de la electricidad spot,ind,0.0165268578405
+Fujian,Precio promedio de la electricidad al por menor,ind,0.0113870793708
 Fujian,Precio promedio de la electricidad residencial,ind,0.0
 Fujian,Precio promedio de la electricidad comercial,ind,0.0
 Fujian,Precio promedio de la electricidad industrial,ind,0.0
 Fujian,Precio promedio de queroseno,ind,0.0
 Fujian,Precio promedio de diesel,ind,0.0
-Fujian,Tasa de crecimiento de la demanda de energía,ind,0.030997794147
-Fujian,Tasa de electrificación,ind,0.00160320641283
+Fujian,Tasa de crecimiento de la demanda de energía,ind,0.0185986764882
+Fujian,Tasa de electrificación,ind,0.00192384769539
 Fujian,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Fujian,Financiamiento y Inversión,param,0.761528076484
-Fujian,Inversiones en energía limpia,ind,0.0124970560126
-Fujian,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0177996682146
+Fujian,Financiamiento y Inversión,param,0.757993001682
+Fujian,Inversiones en energía limpia,ind,0.0149964672151
+Fujian,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0142397345717
 Fujian,Inversiones en activos,ind,0.0
 Fujian,Inversiones en finanzas corporativas,ind,0.0
 Fujian,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1081,11 +1081,11 @@ Fujian,Microprestatarios verdes,ind,0.0
 Fujian,Coste medio de la microdeuda verde,ind,0.0
 Fujian,Coste medio de la deuda,ind,0.0902770833333
 Fujian,Tasa swap,ind,0.107884615385
-Fujian,Cadenas de valor,param,1.94078947368
-Fujian,Instituciones financieras en relación a la energía limpia,ind,0.075
-Fujian,Cadenas de valor de energía limpia por sector,ind,0.197368421053
+Fujian,Cadenas de valor,param,1.02631578947
+Fujian,Instituciones financieras en relación a la energía limpia,ind,0.06
+Fujian,Cadenas de valor de energía limpia por sector,ind,0.0789473684211
 Fujian,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Fujian,Proveedores de servicios de energía limpia,ind,0.01875
+Fujian,Proveedores de servicios de energía limpia,ind,0.015
 Fujian,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Fujian,Gestión de GEI,param,1.28684266746
 Fujian,Actividad histórica de derechos de emisión de carbono,ind,0.0375
@@ -1101,10 +1101,10 @@ Fujian,Iniciativas de eficiencia energética,ind,0.0375
 Fujian,Políticas de reducción de emisiones,ind,0.0375
 Fujian,Formación empresarial centrada en el medioambiente,ind,0.0
 Fujian,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Shandong,Puntaje,score,1.43162084802
-Shandong,Marco Propicio,param,1.46472387291
-Shandong,Políticas de energía limpia,ind,0.260089639837
-Shandong,Estructura del sector energético,ind,0.0725
+Shandong,Puntaje,score,1.13904905055
+Shandong,Marco Propicio,param,1.12904767898
+Shandong,Políticas de energía limpia,ind,0.173393093224
+Shandong,Estructura del sector energético,ind,0.0604166666667
 Shandong,Marco regulatorio de la energía distribuida,ind,0.0
 Shandong,Electrificación rural de energía limpia,ind,0.04
 Shandong,Políticas de acceso a la energía,ind,0.0
@@ -1115,19 +1115,19 @@ Shandong,Generación eléctrica de energía limpia,ind,0.00586613611839
 Shandong,Tasa de crecimiento de generación eléctrica,ind,0.0857172932263
 Shandong,Producción de biocombustibles,ind,0.0
 Shandong,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Shandong,Precio promedio de la electricidad spot,ind,0.0276540057539
-Shandong,Precio promedio de la electricidad al por menor,ind,0.0196012651685
+Shandong,Precio promedio de la electricidad spot,ind,0.0165924034523
+Shandong,Precio promedio de la electricidad al por menor,ind,0.0117607591011
 Shandong,Precio promedio de la electricidad residencial,ind,0.0
 Shandong,Precio promedio de la electricidad comercial,ind,0.0
 Shandong,Precio promedio de la electricidad industrial,ind,0.0
 Shandong,Precio promedio de queroseno,ind,0.0
 Shandong,Precio promedio de diesel,ind,0.0
-Shandong,Tasa de crecimiento de la demanda de energía,ind,0.0422728263525
-Shandong,Tasa de electrificación,ind,0.00160320641283
+Shandong,Tasa de crecimiento de la demanda de energía,ind,0.0253636958115
+Shandong,Tasa de electrificación,ind,0.00192384769539
 Shandong,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Shandong,Financiamiento y Inversión,param,0.837415451927
-Shandong,Inversiones en energía limpia,ind,0.0173735634378
-Shandong,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0356893734224
+Shandong,Financiamiento y Inversión,param,0.825204911938
+Shandong,Inversiones en energía limpia,ind,0.0208482761254
+Shandong,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0285514987379
 Shandong,Inversiones en activos,ind,0.0
 Shandong,Inversiones en finanzas corporativas,ind,0.0
 Shandong,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1139,11 +1139,11 @@ Shandong,Microprestatarios verdes,ind,0.0
 Shandong,Coste medio de la microdeuda verde,ind,0.0
 Shandong,Coste medio de la deuda,ind,0.0902770833333
 Shandong,Tasa swap,ind,0.107884615385
-Shandong,Cadenas de valor,param,2.25986842105
-Shandong,Instituciones financieras en relación a la energía limpia,ind,0.075
-Shandong,Cadenas de valor de energía limpia por sector,ind,0.217105263158
+Shandong,Cadenas de valor,param,1.22894736842
+Shandong,Instituciones financieras en relación a la energía limpia,ind,0.06
+Shandong,Cadenas de valor de energía limpia por sector,ind,0.0868421052632
 Shandong,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Shandong,Proveedores de servicios de energía limpia,ind,0.046875
+Shandong,Proveedores de servicios de energía limpia,ind,0.0375
 Shandong,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Shandong,Gestión de GEI,param,1.70350933412
 Shandong,Actividad histórica de derechos de emisión de carbono,ind,0.0375
@@ -1159,10 +1159,10 @@ Shandong,Iniciativas de eficiencia energética,ind,0.0375
 Shandong,Políticas de reducción de emisiones,ind,0.0375
 Shandong,Formación empresarial centrada en el medioambiente,ind,0.0
 Shandong,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Hubei,Puntaje,score,1.22801400615
-Hubei,Marco Propicio,param,1.26966281036
-Hubei,Políticas de energía limpia,ind,0.260089639837
-Hubei,Estructura del sector energético,ind,0.0725
+Hubei,Puntaje,score,0.999386367616
+Hubei,Marco Propicio,param,0.946671653568
+Hubei,Políticas de energía limpia,ind,0.173393093224
+Hubei,Estructura del sector energético,ind,0.0604166666667
 Hubei,Marco regulatorio de la energía distribuida,ind,0.0
 Hubei,Electrificación rural de energía limpia,ind,0.04
 Hubei,Políticas de acceso a la energía,ind,0.0
@@ -1173,19 +1173,19 @@ Hubei,Generación eléctrica de energía limpia,ind,0.0144192847623
 Hubei,Tasa de crecimiento de generación eléctrica,ind,0.0186319297946
 Hubei,Producción de biocombustibles,ind,0.0
 Hubei,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Hubei,Precio promedio de la electricidad spot,ind,0.0294268584929
-Hubei,Precio promedio de la electricidad al por menor,ind,0.0194222622472
+Hubei,Precio promedio de la electricidad spot,ind,0.0176561150958
+Hubei,Precio promedio de la electricidad al por menor,ind,0.0116533573483
 Hubei,Precio promedio de la electricidad residencial,ind,0.0
 Hubei,Precio promedio de la electricidad comercial,ind,0.0
 Hubei,Precio promedio de la electricidad industrial,ind,0.0
 Hubei,Precio promedio de queroseno,ind,0.0
 Hubei,Precio promedio de diesel,ind,0.0
-Hubei,Tasa de crecimiento de la demanda de energía,ind,0.0279939393939
-Hubei,Tasa de electrificación,ind,0.00160320641283
+Hubei,Tasa de crecimiento de la demanda de energía,ind,0.0167963636364
+Hubei,Tasa de electrificación,ind,0.00192384769539
 Hubei,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Hubei,Financiamiento y Inversión,param,0.883171430848
-Hubei,Inversiones en energía limpia,ind,0.00932350467749
-Hubei,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0574662258589
+Hubei,Financiamiento y Inversión,param,0.851076283394
+Hubei,Inversiones en energía limpia,ind,0.011188205613
+Hubei,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0459729806871
 Hubei,Inversiones en activos,ind,0.0
 Hubei,Inversiones en finanzas corporativas,ind,0.0
 Hubei,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1197,11 +1197,11 @@ Hubei,Microprestatarios verdes,ind,0.0
 Hubei,Coste medio de la microdeuda verde,ind,0.0
 Hubei,Coste medio de la deuda,ind,0.0902770833333
 Hubei,Tasa swap,ind,0.107884615385
-Hubei,Cadenas de valor,param,1.41447368421
-Hubei,Instituciones financieras en relación a la energía limpia,ind,0.075
-Hubei,Cadenas de valor de energía limpia por sector,ind,0.118421052632
+Hubei,Cadenas de valor,param,0.815789473684
+Hubei,Instituciones financieras en relación a la energía limpia,ind,0.06
+Hubei,Cadenas de valor de energía limpia por sector,ind,0.0473684210526
 Hubei,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Hubei,Proveedores de servicios de energía limpia,ind,0.01875
+Hubei,Proveedores de servicios de energía limpia,ind,0.015
 Hubei,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Hubei,Gestión de GEI,param,1.62017600079
 Hubei,Actividad histórica de derechos de emisión de carbono,ind,0.0375
@@ -1217,10 +1217,10 @@ Hubei,Iniciativas de eficiencia energética,ind,0.0375
 Hubei,Políticas de reducción de emisiones,ind,0.0375
 Hubei,Formación empresarial centrada en el medioambiente,ind,0.0
 Hubei,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Guangdong,Puntaje,score,1.4909430874
-Guangdong,Marco Propicio,param,1.39851712273
-Guangdong,Políticas de energía limpia,ind,0.260089639837
-Guangdong,Estructura del sector energético,ind,0.0725
+Guangdong,Puntaje,score,1.22111920198
+Guangdong,Marco Propicio,param,1.07699892319
+Guangdong,Políticas de energía limpia,ind,0.173393093224
+Guangdong,Estructura del sector energético,ind,0.0604166666667
 Guangdong,Marco regulatorio de la energía distribuida,ind,0.0
 Guangdong,Electrificación rural de energía limpia,ind,0.04
 Guangdong,Políticas de acceso a la energía,ind,0.0
@@ -1231,19 +1231,19 @@ Guangdong,Generación eléctrica de energía limpia,ind,0.0129245901566
 Guangdong,Tasa de crecimiento de generación eléctrica,ind,0.0579083068317
 Guangdong,Producción de biocombustibles,ind,0.0
 Guangdong,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Guangdong,Precio promedio de la electricidad spot,ind,0.032127753863
-Guangdong,Precio promedio de la electricidad al por menor,ind,0.0225576334831
+Guangdong,Precio promedio de la electricidad spot,ind,0.0192766523178
+Guangdong,Precio promedio de la electricidad al por menor,ind,0.0135345800899
 Guangdong,Precio promedio de la electricidad residencial,ind,0.0
 Guangdong,Precio promedio de la electricidad comercial,ind,0.0
 Guangdong,Precio promedio de la electricidad industrial,ind,0.0
 Guangdong,Precio promedio de queroseno,ind,0.0
 Guangdong,Precio promedio de diesel,ind,0.0
-Guangdong,Tasa de crecimiento de la demanda de energía,ind,0.0206847155404
-Guangdong,Tasa de electrificación,ind,0.00160320641283
+Guangdong,Tasa de crecimiento de la demanda de energía,ind,0.0124108293243
+Guangdong,Tasa de electrificación,ind,0.00192384769539
 Guangdong,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Guangdong,Financiamiento y Inversión,param,0.789550337812
-Guangdong,Inversiones en energía limpia,ind,0.00627729258611
-Guangdong,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0324261100397
+Guangdong,Financiamiento y Inversión,param,0.772117792843
+Guangdong,Inversiones en energía limpia,ind,0.00753275110333
+Guangdong,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0259408880317
 Guangdong,Inversiones en activos,ind,0.0
 Guangdong,Inversiones en finanzas corporativas,ind,0.0
 Guangdong,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1255,11 +1255,11 @@ Guangdong,Microprestatarios verdes,ind,0.0
 Guangdong,Coste medio de la microdeuda verde,ind,0.0
 Guangdong,Coste medio de la deuda,ind,0.0902770833333
 Guangdong,Tasa swap,ind,0.107884615385
-Guangdong,Cadenas de valor,param,2.42763157895
-Guangdong,Instituciones financieras en relación a la energía limpia,ind,0.15
-Guangdong,Cadenas de valor de energía limpia por sector,ind,0.157894736842
+Guangdong,Cadenas de valor,param,1.52105263158
+Guangdong,Instituciones financieras en relación a la energía limpia,ind,0.12
+Guangdong,Cadenas de valor de energía limpia por sector,ind,0.0631578947368
 Guangdong,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Guangdong,Proveedores de servicios de energía limpia,ind,0.05625
+Guangdong,Proveedores de servicios de energía limpia,ind,0.045
 Guangdong,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Guangdong,Gestión de GEI,param,2.20350933412
 Guangdong,Actividad histórica de derechos de emisión de carbono,ind,0.075
@@ -1275,10 +1275,10 @@ Guangdong,Iniciativas de eficiencia energética,ind,0.0375
 Guangdong,Políticas de reducción de emisiones,ind,0.0375
 Guangdong,Formación empresarial centrada en el medioambiente,ind,0.0375
 Guangdong,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Sichuan,Puntaje,score,1.37831117613
-Sichuan,Marco Propicio,param,1.26747337606
-Sichuan,Políticas de energía limpia,ind,0.260089639837
-Sichuan,Estructura del sector energético,ind,0.0725
+Sichuan,Puntaje,score,1.11308224067
+Sichuan,Marco Propicio,param,0.978386051113
+Sichuan,Políticas de energía limpia,ind,0.173393093224
+Sichuan,Estructura del sector energético,ind,0.0604166666667
 Sichuan,Marco regulatorio de la energía distribuida,ind,0.0
 Sichuan,Electrificación rural de energía limpia,ind,0.04
 Sichuan,Políticas de acceso a la energía,ind,0.0
@@ -1289,19 +1289,19 @@ Sichuan,Generación eléctrica de energía limpia,ind,0.0268780896887
 Sichuan,Tasa de crecimiento de generación eléctrica,ind,0.0141412909371
 Sichuan,Producción de biocombustibles,ind,0.0
 Sichuan,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Sichuan,Precio promedio de la electricidad spot,ind,0.0280285521072
-Sichuan,Precio promedio de la electricidad al por menor,ind,0.0149106761798
+Sichuan,Precio promedio de la electricidad spot,ind,0.0168171312643
+Sichuan,Precio promedio de la electricidad al por menor,ind,0.00894640570787
 Sichuan,Precio promedio de la electricidad residencial,ind,0.0
 Sichuan,Precio promedio de la electricidad comercial,ind,0.0
 Sichuan,Precio promedio de la electricidad industrial,ind,0.0
 Sichuan,Precio promedio de queroseno,ind,0.0
 Sichuan,Precio promedio de diesel,ind,0.0
 Sichuan,Tasa de crecimiento de la demanda de energía,ind,0.0
-Sichuan,Tasa de electrificación,ind,0.00160320641283
+Sichuan,Tasa de electrificación,ind,0.00192384769539
 Sichuan,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Sichuan,Financiamiento y Inversión,param,0.934778611604
-Sichuan,Inversiones en energía limpia,ind,0.0108186918393
-Sichuan,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0714531929239
+Sichuan,Financiamiento y Inversión,param,0.894355610881
+Sichuan,Inversiones en energía limpia,ind,0.0129824302072
+Sichuan,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0571625543391
 Sichuan,Inversiones en activos,ind,0.0
 Sichuan,Inversiones en finanzas corporativas,ind,0.0
 Sichuan,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1313,11 +1313,11 @@ Sichuan,Microprestatarios verdes,ind,0.0
 Sichuan,Coste medio de la microdeuda verde,ind,0.0
 Sichuan,Coste medio de la deuda,ind,0.0902770833333
 Sichuan,Tasa swap,ind,0.107884615385
-Sichuan,Cadenas de valor,param,1.81907894737
-Sichuan,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Sichuan,Cadenas de valor de energía limpia por sector,ind,0.207236842105
+Sichuan,Cadenas de valor,param,0.902631578947
+Sichuan,Instituciones financieras en relación a la energía limpia,ind,0.03
+Sichuan,Cadenas de valor de energía limpia por sector,ind,0.0828947368421
 Sichuan,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Sichuan,Proveedores de servicios de energía limpia,ind,0.028125
+Sichuan,Proveedores de servicios de energía limpia,ind,0.0225
 Sichuan,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Sichuan,Gestión de GEI,param,2.12017600079
 Sichuan,Actividad histórica de derechos de emisión de carbono,ind,0.1125
@@ -1333,10 +1333,10 @@ Sichuan,Iniciativas de eficiencia energética,ind,0.0375
 Sichuan,Políticas de reducción de emisiones,ind,0.0375
 Sichuan,Formación empresarial centrada en el medioambiente,ind,0.0375
 Sichuan,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Yunnan,Puntaje,score,1.41623413828
-Yunnan,Marco Propicio,param,1.35180560564
-Yunnan,Políticas de energía limpia,ind,0.260089639837
-Yunnan,Estructura del sector energético,ind,0.0725
+Yunnan,Puntaje,score,1.20394801189
+Yunnan,Marco Propicio,param,1.06948720856
+Yunnan,Políticas de energía limpia,ind,0.173393093224
+Yunnan,Estructura del sector energético,ind,0.0604166666667
 Yunnan,Marco regulatorio de la energía distribuida,ind,0.0
 Yunnan,Electrificación rural de energía limpia,ind,0.04
 Yunnan,Políticas de acceso a la energía,ind,0.0
@@ -1347,19 +1347,19 @@ Yunnan,Generación eléctrica de energía limpia,ind,0.0330813649809
 Yunnan,Tasa de crecimiento de generación eléctrica,ind,0.0225683618513
 Yunnan,Producción de biocombustibles,ind,0.0
 Yunnan,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Yunnan,Precio promedio de la electricidad spot,ind,0.0225352055918
-Yunnan,Precio promedio de la electricidad al por menor,ind,0.0136350948315
+Yunnan,Precio promedio de la electricidad spot,ind,0.0135211233551
+Yunnan,Precio promedio de la electricidad al por menor,ind,0.00818105689888
 Yunnan,Precio promedio de la electricidad residencial,ind,0.0
 Yunnan,Precio promedio de la electricidad comercial,ind,0.0
 Yunnan,Precio promedio de la electricidad industrial,ind,0.0
 Yunnan,Precio promedio de queroseno,ind,0.0
 Yunnan,Precio promedio de diesel,ind,0.0
 Yunnan,Tasa de crecimiento de la demanda de energía,ind,0.0
-Yunnan,Tasa de electrificación,ind,0.00160320641283
+Yunnan,Tasa de electrificación,ind,0.00192384769539
 Yunnan,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Yunnan,Financiamiento y Inversión,param,1.04194726706
-Yunnan,Inversiones en energía limpia,ind,0.0542912954988
-Yunnan,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0601311858998
+Yunnan,Financiamiento y Inversión,param,1.03805400679
+Yunnan,Inversiones en energía limpia,ind,0.0651495545986
+Yunnan,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0481049487198
 Yunnan,Inversiones en activos,ind,0.0
 Yunnan,Inversiones en finanzas corporativas,ind,0.0
 Yunnan,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1371,11 +1371,11 @@ Yunnan,Microprestatarios verdes,ind,0.0
 Yunnan,Coste medio de la microdeuda verde,ind,0.0
 Yunnan,Coste medio de la deuda,ind,0.0902770833333
 Yunnan,Tasa swap,ind,0.107884615385
-Yunnan,Cadenas de valor,param,1.29934210526
-Yunnan,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Yunnan,Cadenas de valor de energía limpia por sector,ind,0.148026315789
+Yunnan,Cadenas de valor,param,0.644736842105
+Yunnan,Instituciones financieras en relación a la energía limpia,ind,0.03
+Yunnan,Cadenas de valor de energía limpia por sector,ind,0.0592105263158
 Yunnan,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Yunnan,Proveedores de servicios de energía limpia,ind,0.009375
+Yunnan,Proveedores de servicios de energía limpia,ind,0.0075
 Yunnan,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Yunnan,Gestión de GEI,param,2.45350933412
 Yunnan,Actividad histórica de derechos de emisión de carbono,ind,0.15
@@ -1391,10 +1391,10 @@ Yunnan,Iniciativas de eficiencia energética,ind,0.0375
 Yunnan,Políticas de reducción de emisiones,ind,0.0375
 Yunnan,Formación empresarial centrada en el medioambiente,ind,0.0
 Yunnan,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Xizang,Puntaje,score,1.0720097978
-Xizang,Marco Propicio,param,1.39438487251
-Xizang,Políticas de energía limpia,ind,0.260089639837
-Xizang,Estructura del sector energético,ind,0.0725
+Xizang,Puntaje,score,0.95465993653
+Xizang,Marco Propicio,param,1.11284050664
+Xizang,Políticas de energía limpia,ind,0.173393093224
+Xizang,Estructura del sector energético,ind,0.0604166666667
 Xizang,Marco regulatorio de la energía distribuida,ind,0.0
 Xizang,Electrificación rural de energía limpia,ind,0.04
 Xizang,Políticas de acceso a la energía,ind,0.0
@@ -1406,18 +1406,18 @@ Xizang,Tasa de crecimiento de generación eléctrica,ind,0.0146102162779
 Xizang,Producción de biocombustibles,ind,0.0
 Xizang,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
 Xizang,Precio promedio de la electricidad spot,ind,0.0
-Xizang,Precio promedio de la electricidad al por menor,ind,0.0353962692135
+Xizang,Precio promedio de la electricidad al por menor,ind,0.0212377615281
 Xizang,Precio promedio de la electricidad residencial,ind,0.0
 Xizang,Precio promedio de la electricidad comercial,ind,0.0
 Xizang,Precio promedio de la electricidad industrial,ind,0.0
 Xizang,Precio promedio de queroseno,ind,0.0
 Xizang,Precio promedio de diesel,ind,0.0
 Xizang,Tasa de crecimiento de la demanda de energía,ind,0.0
-Xizang,Tasa de electrificación,ind,0.00160320641283
+Xizang,Tasa de electrificación,ind,0.00192384769539
 Xizang,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Xizang,Financiamiento y Inversión,param,1.01539202191
-Xizang,Inversiones en energía limpia,ind,0.0944404297821
-Xizang,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0120154780724
+Xizang,Financiamiento y Inversión,param,1.07034198971
+Xizang,Inversiones en energía limpia,ind,0.113328515739
+Xizang,Tasa de crecimiento de las inversiones en energía limpia,ind,0.00961238245794
 Xizang,Inversiones en activos,ind,0.0
 Xizang,Inversiones en finanzas corporativas,ind,0.0
 Xizang,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1429,11 +1429,11 @@ Xizang,Microprestatarios verdes,ind,0.0
 Xizang,Coste medio de la microdeuda verde,ind,0.0
 Xizang,Coste medio de la deuda,ind,0.0902770833333
 Xizang,Tasa swap,ind,0.107884615385
-Xizang,Cadenas de valor,param,0.444078947368
-Xizang,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Xizang,Cadenas de valor de energía limpia por sector,ind,0.0197368421053
+Xizang,Cadenas de valor,param,0.302631578947
+Xizang,Instituciones financieras en relación a la energía limpia,ind,0.03
+Xizang,Cadenas de valor de energía limpia por sector,ind,0.00789473684211
 Xizang,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Xizang,Proveedores de servicios de energía limpia,ind,0.009375
+Xizang,Proveedores de servicios de energía limpia,ind,0.0075
 Xizang,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Xizang,Gestión de GEI,param,0.953509334122
 Xizang,Actividad histórica de derechos de emisión de carbono,ind,0.0
@@ -1449,10 +1449,10 @@ Xizang,Iniciativas de eficiencia energética,ind,0.0375
 Xizang,Políticas de reducción de emisiones,ind,0.0375
 Xizang,Formación empresarial centrada en el medioambiente,ind,0.0
 Xizang,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Gansu,Puntaje,score,1.6444750244
-Gansu,Marco Propicio,param,1.51110715967
-Gansu,Políticas de energía limpia,ind,0.260089639837
-Gansu,Estructura del sector energético,ind,0.0725
+Gansu,Puntaje,score,1.51977698079
+Gansu,Marco Propicio,param,1.18784097648
+Gansu,Políticas de energía limpia,ind,0.173393093224
+Gansu,Estructura del sector energético,ind,0.0604166666667
 Gansu,Marco regulatorio de la energía distribuida,ind,0.0
 Gansu,Electrificación rural de energía limpia,ind,0.04
 Gansu,Políticas de acceso a la energía,ind,0.0
@@ -1463,19 +1463,19 @@ Gansu,Generación eléctrica de energía limpia,ind,0.0269234871054
 Gansu,Tasa de crecimiento de generación eléctrica,ind,0.0351223845147
 Gansu,Producción de biocombustibles,ind,0.0
 Gansu,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Gansu,Precio promedio de la electricidad spot,ind,0.0205896453675
-Gansu,Precio promedio de la electricidad al por menor,ind,0.0127314714607
+Gansu,Precio promedio de la electricidad spot,ind,0.0123537872205
+Gansu,Precio promedio de la electricidad al por menor,ind,0.0076388828764
 Gansu,Precio promedio de la electricidad residencial,ind,0.0
 Gansu,Precio promedio de la electricidad comercial,ind,0.0
 Gansu,Precio promedio de la electricidad industrial,ind,0.0
 Gansu,Precio promedio de queroseno,ind,0.0
 Gansu,Precio promedio de diesel,ind,0.0
-Gansu,Tasa de crecimiento de la demanda de energía,ind,0.043796969697
-Gansu,Tasa de electrificación,ind,0.00160320641283
+Gansu,Tasa de crecimiento de la demanda de energía,ind,0.0262781818182
+Gansu,Tasa de electrificación,ind,0.00192384769539
 Gansu,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Gansu,Financiamiento y Inversión,param,2.04429551717
-Gansu,Inversiones en energía limpia,ind,0.316535210274
-Gansu,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0985917461594
+Gansu,Financiamiento y Inversión,param,2.18959115991
+Gansu,Inversiones en energía limpia,ind,0.379842252329
+Gansu,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0788733969275
 Gansu,Inversiones en activos,ind,0.0
 Gansu,Inversiones en finanzas corporativas,ind,0.0
 Gansu,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1487,11 +1487,11 @@ Gansu,Microprestatarios verdes,ind,0.0
 Gansu,Coste medio de la microdeuda verde,ind,0.0
 Gansu,Coste medio de la deuda,ind,0.0902770833333
 Gansu,Tasa swap,ind,0.107884615385
-Gansu,Cadenas de valor,param,0.641447368421
-Gansu,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Gansu,Cadenas de valor de energía limpia por sector,ind,0.0493421052632
+Gansu,Cadenas de valor,param,0.381578947368
+Gansu,Instituciones financieras en relación a la energía limpia,ind,0.03
+Gansu,Cadenas de valor de energía limpia por sector,ind,0.0197368421053
 Gansu,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Gansu,Proveedores de servicios de energía limpia,ind,0.009375
+Gansu,Proveedores de servicios de energía limpia,ind,0.0075
 Gansu,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Gansu,Gestión de GEI,param,2.20350933412
 Gansu,Actividad histórica de derechos de emisión de carbono,ind,0.1125
@@ -1507,10 +1507,10 @@ Gansu,Iniciativas de eficiencia energética,ind,0.0375
 Gansu,Políticas de reducción de emisiones,ind,0.0375
 Gansu,Formación empresarial centrada en el medioambiente,ind,0.0375
 Gansu,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Qinghai,Puntaje,score,1.67869754309
-Qinghai,Marco Propicio,param,1.55853038015
-Qinghai,Políticas de energía limpia,ind,0.260089639837
-Qinghai,Estructura del sector energético,ind,0.0725
+Qinghai,Puntaje,score,1.52488132065
+Qinghai,Marco Propicio,param,1.21360425963
+Qinghai,Políticas de energía limpia,ind,0.173393093224
+Qinghai,Estructura del sector energético,ind,0.0604166666667
 Qinghai,Marco regulatorio de la energía distribuida,ind,0.0
 Qinghai,Electrificación rural de energía limpia,ind,0.04
 Qinghai,Políticas de acceso a la energía,ind,0.0
@@ -1521,19 +1521,19 @@ Qinghai,Generación eléctrica de energía limpia,ind,0.0193463645853
 Qinghai,Tasa de crecimiento de generación eléctrica,ind,0.0673043440349
 Qinghai,Producción de biocombustibles,ind,0.0
 Qinghai,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Qinghai,Precio promedio de la electricidad spot,ind,0.0219109616695
-Qinghai,Precio promedio de la electricidad al por menor,ind,0.011026045618
+Qinghai,Precio promedio de la electricidad spot,ind,0.0131465770017
+Qinghai,Precio promedio de la electricidad al por menor,ind,0.00661562737079
 Qinghai,Precio promedio de la electricidad residencial,ind,0.0
 Qinghai,Precio promedio de la electricidad comercial,ind,0.0
 Qinghai,Precio promedio de la electricidad industrial,ind,0.0
 Qinghai,Precio promedio de queroseno,ind,0.0
 Qinghai,Precio promedio de diesel,ind,0.0
-Qinghai,Tasa de crecimiento de la demanda de energía,ind,0.0658410165767
-Qinghai,Tasa de electrificación,ind,0.00160320641283
+Qinghai,Tasa de crecimiento de la demanda de energía,ind,0.039504609946
+Qinghai,Tasa de electrificación,ind,0.00192384769539
 Qinghai,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Qinghai,Financiamiento y Inversión,param,2.13022733812
-Qinghai,Inversiones en energía limpia,ind,0.3375
-Qinghai,Tasa de crecimiento de las inversiones en energía limpia,ind,0.103406502718
+Qinghai,Financiamiento y Inversión,param,2.28628966964
+Qinghai,Inversiones en energía limpia,ind,0.405
+Qinghai,Tasa de crecimiento de las inversiones en energía limpia,ind,0.082725202174
 Qinghai,Inversiones en activos,ind,0.0
 Qinghai,Inversiones en finanzas corporativas,ind,0.0
 Qinghai,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1545,11 +1545,11 @@ Qinghai,Microprestatarios verdes,ind,0.0
 Qinghai,Coste medio de la microdeuda verde,ind,0.0
 Qinghai,Coste medio de la deuda,ind,0.0902770833333
 Qinghai,Tasa swap,ind,0.107884615385
-Qinghai,Cadenas de valor,param,0.904605263158
-Qinghai,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Qinghai,Cadenas de valor de energía limpia por sector,ind,0.0888157894737
+Qinghai,Cadenas de valor,param,0.486842105263
+Qinghai,Instituciones financieras en relación a la energía limpia,ind,0.03
+Qinghai,Cadenas de valor de energía limpia por sector,ind,0.0355263157895
 Qinghai,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Qinghai,Proveedores de servicios de energía limpia,ind,0.009375
+Qinghai,Proveedores de servicios de energía limpia,ind,0.0075
 Qinghai,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Qinghai,Gestión de GEI,param,1.87017600079
 Qinghai,Actividad histórica de derechos de emisión de carbono,ind,0.0375
@@ -1565,10 +1565,10 @@ Qinghai,Iniciativas de eficiencia energética,ind,0.0375
 Qinghai,Políticas de reducción de emisiones,ind,0.0375
 Qinghai,Formación empresarial centrada en el medioambiente,ind,0.0375
 Qinghai,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Xinjiang,Puntaje,score,1.69771698338
-Xinjiang,Marco Propicio,param,1.61040830893
-Xinjiang,Políticas de energía limpia,ind,0.260089639837
-Xinjiang,Estructura del sector energético,ind,0.0725
+Xinjiang,Puntaje,score,1.44715161069
+Xinjiang,Marco Propicio,param,1.23578698051
+Xinjiang,Políticas de energía limpia,ind,0.173393093224
+Xinjiang,Estructura del sector energético,ind,0.0604166666667
 Xinjiang,Marco regulatorio de la energía distribuida,ind,0.0
 Xinjiang,Electrificación rural de energía limpia,ind,0.04
 Xinjiang,Políticas de acceso a la energía,ind,0.0
@@ -1579,19 +1579,19 @@ Xinjiang,Generación eléctrica de energía limpia,ind,0.0138278522337
 Xinjiang,Tasa de crecimiento de generación eléctrica,ind,0.0768113369741
 Xinjiang,Producción de biocombustibles,ind,0.0
 Xinjiang,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Xinjiang,Precio promedio de la electricidad spot,ind,0.0156060980552
-Xinjiang,Precio promedio de la electricidad al por menor,ind,0.0128671337079
+Xinjiang,Precio promedio de la electricidad spot,ind,0.00936365883314
+Xinjiang,Precio promedio de la electricidad al por menor,ind,0.00772028022472
 Xinjiang,Precio promedio de la electricidad residencial,ind,0.0
 Xinjiang,Precio promedio de la electricidad comercial,ind,0.0
 Xinjiang,Precio promedio de la electricidad industrial,ind,0.0
 Xinjiang,Precio promedio de queroseno,ind,0.0
 Xinjiang,Precio promedio de diesel,ind,0.0
-Xinjiang,Tasa de crecimiento de la demanda de energía,ind,0.1
-Xinjiang,Tasa de electrificación,ind,0.00160320641283
+Xinjiang,Tasa de crecimiento de la demanda de energía,ind,0.06
+Xinjiang,Tasa de electrificación,ind,0.00192384769539
 Xinjiang,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Xinjiang,Financiamiento y Inversión,param,1.63541981301
-Xinjiang,Inversiones en energía limpia,ind,0.139916992965
-Xinjiang,Tasa de crecimiento de las inversiones en energía limpia,ind,0.152547252219
+Xinjiang,Financiamiento y Inversión,param,1.62699964017
+Xinjiang,Inversiones en energía limpia,ind,0.167900391558
+Xinjiang,Tasa de crecimiento de las inversiones en energía limpia,ind,0.122037801775
 Xinjiang,Inversiones en activos,ind,0.0
 Xinjiang,Inversiones en finanzas corporativas,ind,0.0
 Xinjiang,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -1603,11 +1603,11 @@ Xinjiang,Microprestatarios verdes,ind,0.0
 Xinjiang,Coste medio de la microdeuda verde,ind,0.0
 Xinjiang,Coste medio de la deuda,ind,0.0902770833333
 Xinjiang,Tasa swap,ind,0.107884615385
-Xinjiang,Cadenas de valor,param,1.29934210526
-Xinjiang,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Xinjiang,Cadenas de valor de energía limpia por sector,ind,0.148026315789
+Xinjiang,Cadenas de valor,param,0.644736842105
+Xinjiang,Instituciones financieras en relación a la energía limpia,ind,0.03
+Xinjiang,Cadenas de valor de energía limpia por sector,ind,0.0592105263158
 Xinjiang,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Xinjiang,Proveedores de servicios de energía limpia,ind,0.009375
+Xinjiang,Proveedores de servicios de energía limpia,ind,0.0075
 Xinjiang,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Xinjiang,Gestión de GEI,param,2.45350933412
 Xinjiang,Actividad histórica de derechos de emisión de carbono,ind,0.15
@@ -1739,64 +1739,64 @@ Costa Rica,Iniciativas de eficiencia energética,ind,0.0
 Costa Rica,Políticas de reducción de emisiones,ind,0.0
 Costa Rica,Formación empresarial centrada en el medioambiente,ind,0.0375
 Costa Rica,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Republica Dominicana,Puntaje,score,1.15998759379
-Republica Dominicana,Marco Propicio,param,1.5400061023
-Republica Dominicana,Políticas de energía limpia,ind,0.214994785741
-Republica Dominicana,Estructura del sector energético,ind,0.1149
-Republica Dominicana,Marco regulatorio de la energía distribuida,ind,0.0
-Republica Dominicana,Electrificación rural de energía limpia,ind,0.04
-Republica Dominicana,Políticas de acceso a la energía,ind,0.0
-Republica Dominicana,Obstáculos políticos,ind,0.01275
-Republica Dominicana,Capacidad instalada de energía limpia,ind,0.0257195004276
-Republica Dominicana,Tasa de crecimiento de la capacidad instalada,ind,5.65309293708e-06
-Republica Dominicana,Generación eléctrica de energía limpia,ind,0.013927348107
-Republica Dominicana,Tasa de crecimiento de generación eléctrica,ind,0.0392426493743
-Republica Dominicana,Producción de biocombustibles,ind,0.0
-Republica Dominicana,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Republica Dominicana,Precio promedio de la electricidad spot,ind,0.0714044466039
-Republica Dominicana,Precio promedio de la electricidad al por menor,ind,0.0382486329919
-Republica Dominicana,Precio promedio de la electricidad residencial,ind,0.0
-Republica Dominicana,Precio promedio de la electricidad comercial,ind,0.0
-Republica Dominicana,Precio promedio de la electricidad industrial,ind,0.0
-Republica Dominicana,Precio promedio de queroseno,ind,0.0
-Republica Dominicana,Precio promedio de diesel,ind,0.0
-Republica Dominicana,Tasa de crecimiento de la demanda de energía,ind,0.0431410199955
-Republica Dominicana,Tasa de electrificación,ind,0.00166840458811
-Republica Dominicana,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Republica Dominicana,Financiamiento y Inversión,param,0.307517045632
-Republica Dominicana,Inversiones en energía limpia,ind,0.00408448880298
-Republica Dominicana,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0
-Republica Dominicana,Inversiones en activos,ind,0.0
-Republica Dominicana,Inversiones en finanzas corporativas,ind,0.0
-Republica Dominicana,Inversiones en capital de riesgo / capital privado,ind,0.0
-Republica Dominicana,"Préstamos, donaciones, programas de donaciones",ind,1.99147996799e-06
-Republica Dominicana,Inversiones locales,ind,0.0
-Republica Dominicana,Número de instituciones de microfinanzas verdes,ind,0.0147942413621
-Republica Dominicana,Microcréditos verdes,ind,1.08740206367e-05
-Republica Dominicana,Microprestatarios verdes,ind,0.000379420827171
-Republica Dominicana,Coste medio de la microdeuda verde,ind,0.00582352941176
-Republica Dominicana,Coste medio de la deuda,ind,0.0398533247944
-Republica Dominicana,Tasa swap,ind,0.0273072429907
-Republica Dominicana,Cadenas de valor,param,0.894736842105
-Republica Dominicana,Instituciones financieras en relación a la energía limpia,ind,0.075
-Republica Dominicana,Cadenas de valor de energía limpia por sector,ind,0.0592105263158
-Republica Dominicana,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Republica Dominicana,Proveedores de servicios de energía limpia,ind,0.0
-Republica Dominicana,Proveedores de servicios de energía limpia distribuida,ind,0.0
-Republica Dominicana,Gestión de GEI,param,2.1167967524
-Republica Dominicana,Actividad histórica de derechos de emisión de carbono,ind,0.075
-Republica Dominicana,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.05
-Republica Dominicana,Potencial de proyectos,ind,0.00501951285929
-Republica Dominicana,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.09375
-Republica Dominicana,Registro de GEI,ind,0.0
-Republica Dominicana,Instrumentos basados en el mercado,ind,0.0
-Republica Dominicana,Instrumentos de PMR & NAMA,ind,0.01875
-Republica Dominicana,Iniciativa de reporte global,ind,0.0
-Republica Dominicana,Principios de inversión responsable,ind,0.0
-Republica Dominicana,Iniciativas de eficiencia energética,ind,0.0
-Republica Dominicana,Políticas de reducción de emisiones,ind,0.0
-Republica Dominicana,Formación empresarial centrada en el medioambiente,ind,0.0375
-Republica Dominicana,‘Think tanks’ centrado en el medioambiente,ind,0.0375
+República Dominicana,Puntaje,score,1.15998759379
+República Dominicana,Marco Propicio,param,1.5400061023
+República Dominicana,Políticas de energía limpia,ind,0.214994785741
+República Dominicana,Estructura del sector energético,ind,0.1149
+República Dominicana,Marco regulatorio de la energía distribuida,ind,0.0
+República Dominicana,Electrificación rural de energía limpia,ind,0.04
+República Dominicana,Políticas de acceso a la energía,ind,0.0
+República Dominicana,Obstáculos políticos,ind,0.01275
+República Dominicana,Capacidad instalada de energía limpia,ind,0.0257195004276
+República Dominicana,Tasa de crecimiento de la capacidad instalada,ind,5.65309293708e-06
+República Dominicana,Generación eléctrica de energía limpia,ind,0.013927348107
+República Dominicana,Tasa de crecimiento de generación eléctrica,ind,0.0392426493743
+República Dominicana,Producción de biocombustibles,ind,0.0
+República Dominicana,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
+República Dominicana,Precio promedio de la electricidad spot,ind,0.0714044466039
+República Dominicana,Precio promedio de la electricidad al por menor,ind,0.0382486329919
+República Dominicana,Precio promedio de la electricidad residencial,ind,0.0
+República Dominicana,Precio promedio de la electricidad comercial,ind,0.0
+República Dominicana,Precio promedio de la electricidad industrial,ind,0.0
+República Dominicana,Precio promedio de queroseno,ind,0.0
+República Dominicana,Precio promedio de diesel,ind,0.0
+República Dominicana,Tasa de crecimiento de la demanda de energía,ind,0.0431410199955
+República Dominicana,Tasa de electrificación,ind,0.00166840458811
+República Dominicana,Población que utiliza combustibles sólidos para cocinar,ind,0.0
+República Dominicana,Financiamiento y Inversión,param,0.307517045632
+República Dominicana,Inversiones en energía limpia,ind,0.00408448880298
+República Dominicana,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0
+República Dominicana,Inversiones en activos,ind,0.0
+República Dominicana,Inversiones en finanzas corporativas,ind,0.0
+República Dominicana,Inversiones en capital de riesgo / capital privado,ind,0.0
+República Dominicana,"Préstamos, donaciones, programas de donaciones",ind,1.99147996799e-06
+República Dominicana,Inversiones locales,ind,0.0
+República Dominicana,Número de instituciones de microfinanzas verdes,ind,0.0147942413621
+República Dominicana,Microcréditos verdes,ind,1.08740206367e-05
+República Dominicana,Microprestatarios verdes,ind,0.000379420827171
+República Dominicana,Coste medio de la microdeuda verde,ind,0.00582352941176
+República Dominicana,Coste medio de la deuda,ind,0.0398533247944
+República Dominicana,Tasa swap,ind,0.0273072429907
+República Dominicana,Cadenas de valor,param,0.894736842105
+República Dominicana,Instituciones financieras en relación a la energía limpia,ind,0.075
+República Dominicana,Cadenas de valor de energía limpia por sector,ind,0.0592105263158
+República Dominicana,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
+República Dominicana,Proveedores de servicios de energía limpia,ind,0.0
+República Dominicana,Proveedores de servicios de energía limpia distribuida,ind,0.0
+República Dominicana,Gestión de GEI,param,2.1167967524
+República Dominicana,Actividad histórica de derechos de emisión de carbono,ind,0.075
+República Dominicana,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.05
+República Dominicana,Potencial de proyectos,ind,0.00501951285929
+República Dominicana,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.09375
+República Dominicana,Registro de GEI,ind,0.0
+República Dominicana,Instrumentos basados en el mercado,ind,0.0
+República Dominicana,Instrumentos de PMR & NAMA,ind,0.01875
+República Dominicana,Iniciativa de reporte global,ind,0.0
+República Dominicana,Principios de inversión responsable,ind,0.0
+República Dominicana,Iniciativas de eficiencia energética,ind,0.0
+República Dominicana,Políticas de reducción de emisiones,ind,0.0
+República Dominicana,Formación empresarial centrada en el medioambiente,ind,0.0375
+República Dominicana,‘Think tanks’ centrado en el medioambiente,ind,0.0375
 Ecuador,Puntaje,score,0.960638789979
 Ecuador,Marco Propicio,param,1.00387118198
 Ecuador,Políticas de energía limpia,ind,0.103451747997
@@ -1855,13 +1855,13 @@ Ecuador,Iniciativas de eficiencia energética,ind,0.0
 Ecuador,Políticas de reducción de emisiones,ind,0.0
 Ecuador,Formación empresarial centrada en el medioambiente,ind,0.0375
 Ecuador,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Etiopia,Puntaje,score,1.24808717162
-Etiopia,Marco Propicio,param,1.29593705492
+Etiopia,Puntaje,score,1.24908332142
+Etiopia,Marco Propicio,param,1.29842742941
 Etiopia,Políticas de energía limpia,ind,0.104174967691
 Etiopia,Estructura del sector energético,ind,0.0270833333333
 Etiopia,Marco regulatorio de la energía distribuida,ind,0.0377777777778
 Etiopia,Electrificación rural de energía limpia,ind,0.04
-Etiopia,Políticas de acceso a la energía,ind,0.0593246858946
+Etiopia,Políticas de acceso a la energía,ind,0.0603208356898
 Etiopia,Obstáculos políticos,ind,0.00264935064935
 Etiopia,Capacidad instalada de energía limpia,ind,0.0419100901168
 Etiopia,Tasa de crecimiento de la capacidad instalada,ind,0.000448922011519
@@ -1913,13 +1913,13 @@ Etiopia,Iniciativas de eficiencia energética,ind,0.0
 Etiopia,Políticas de reducción de emisiones,ind,0.0
 Etiopia,Formación empresarial centrada en el medioambiente,ind,0.0375
 Etiopia,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Ghana,Puntaje,score,1.15102232703
-Ghana,Marco Propicio,param,1.17109693098
+Ghana,Puntaje,score,1.15036336547
+Ghana,Marco Propicio,param,1.16944952707
 Ghana,Políticas de energía limpia,ind,0.136931219975
 Ghana,Estructura del sector energético,ind,0.0809166666667
 Ghana,Marco regulatorio de la energía distribuida,ind,0.0533333333333
 Ghana,Electrificación rural de energía limpia,ind,0.04
-Ghana,Políticas de acceso a la energía,ind,0.051621399463
+Ghana,Políticas de acceso a la energía,ind,0.0509624378975
 Ghana,Obstáculos políticos,ind,0.0057200538358
 Ghana,Capacidad instalada de energía limpia,ind,0.000232922729672
 Ghana,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -1972,7 +1972,7 @@ Ghana,Políticas de reducción de emisiones,ind,0.0
 Ghana,Formación empresarial centrada en el medioambiente,ind,0.0375
 Ghana,‘Think tanks’ centrado en el medioambiente,ind,0.0375
 Guatemala,Puntaje,score,1.09652696599
-Guatemala,Marco Propicio,param,1.32052097186
+Guatemala,Marco Propicio,param,1.28249496778
 Guatemala,Políticas de energía limpia,ind,0.0637601465326
 Guatemala,Estructura del sector energético,ind,0.1451
 Guatemala,Marco regulatorio de la energía distribuida,ind,0.0
@@ -1985,8 +1985,8 @@ Guatemala,Generación eléctrica de energía limpia,ind,0.03671168883
 Guatemala,Tasa de crecimiento de generación eléctrica,ind,0.00637243542899
 Guatemala,Producción de biocombustibles,ind,0.0044923122165
 Guatemala,Tasa de crecimiento de la producción de biocombustibles,ind,0.00776456866293
-Guatemala,Precio promedio de la electricidad spot,ind,0.120018330089
-Guatemala,Precio promedio de la electricidad al por menor,ind,0.0
+Guatemala,Precio promedio de la electricidad spot,ind,0.0600091650445
+Guatemala,Precio promedio de la electricidad al por menor,ind,0.0447987634115
 Guatemala,Precio promedio de la electricidad residencial,ind,0.0
 Guatemala,Precio promedio de la electricidad comercial,ind,0.0
 Guatemala,Precio promedio de la electricidad industrial,ind,0.0
@@ -2319,10 +2319,10 @@ India,Iniciativas de eficiencia energética,ind,0.0154199557129
 India,Políticas de reducción de emisiones,ind,0.00382294605796
 India,Formación empresarial centrada en el medioambiente,ind,0.0375
 India,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Andhra Pradesh,Puntaje,score,1.14116158857
-Andhra Pradesh,Marco Propicio,param,1.2272907126
-Andhra Pradesh,Políticas de energía limpia,ind,0.249070196326
-Andhra Pradesh,Estructura del sector energético,ind,0.1086
+Andhra Pradesh,Puntaje,score,0.913409553974
+Andhra Pradesh,Marco Propicio,param,0.926801776137
+Andhra Pradesh,Políticas de energía limpia,ind,0.166046797551
+Andhra Pradesh,Estructura del sector energético,ind,0.0905
 Andhra Pradesh,Marco regulatorio de la energía distribuida,ind,0.0
 Andhra Pradesh,Electrificación rural de energía limpia,ind,0.04
 Andhra Pradesh,Políticas de acceso a la energía,ind,0.0
@@ -2333,19 +2333,19 @@ Andhra Pradesh,Generación eléctrica de energía limpia,ind,0.0058456855389
 Andhra Pradesh,Tasa de crecimiento de generación eléctrica,ind,0.00960301915095
 Andhra Pradesh,Producción de biocombustibles,ind,0.0
 Andhra Pradesh,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Andhra Pradesh,Precio promedio de la electricidad spot,ind,0.0263930483828
-Andhra Pradesh,Precio promedio de la electricidad al por menor,ind,0.0223498081423
+Andhra Pradesh,Precio promedio de la electricidad spot,ind,0.0158358290297
+Andhra Pradesh,Precio promedio de la electricidad al por menor,ind,0.0134098848854
 Andhra Pradesh,Precio promedio de la electricidad residencial,ind,0.0
 Andhra Pradesh,Precio promedio de la electricidad comercial,ind,0.0
 Andhra Pradesh,Precio promedio de la electricidad industrial,ind,0.0
 Andhra Pradesh,Precio promedio de queroseno,ind,0.0
 Andhra Pradesh,Precio promedio de diesel,ind,0.0
 Andhra Pradesh,Tasa de crecimiento de la demanda de energía,ind,0.0
-Andhra Pradesh,Tasa de electrificación,ind,0.00212483399734
+Andhra Pradesh,Tasa de electrificación,ind,0.00254980079681
 Andhra Pradesh,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Andhra Pradesh,Financiamiento y Inversión,param,0.573131851639
-Andhra Pradesh,Inversiones en energía limpia,ind,0.0347075895558
-Andhra Pradesh,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0445293632753
+Andhra Pradesh,Financiamiento y Inversión,param,0.566584002493
+Andhra Pradesh,Inversiones en energía limpia,ind,0.041649107467
+Andhra Pradesh,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0356234906203
 Andhra Pradesh,Inversiones en activos,ind,0.0
 Andhra Pradesh,Inversiones en finanzas corporativas,ind,0.0
 Andhra Pradesh,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -2357,11 +2357,11 @@ Andhra Pradesh,Microprestatarios verdes,ind,0.0
 Andhra Pradesh,Coste medio de la microdeuda verde,ind,0.0
 Andhra Pradesh,Coste medio de la deuda,ind,0.0526311740891
 Andhra Pradesh,Tasa swap,ind,0.0400714285714
-Andhra Pradesh,Cadenas de valor,param,2.00657894737
-Andhra Pradesh,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Andhra Pradesh,Cadenas de valor de energía limpia por sector,ind,0.207236842105
-Andhra Pradesh,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Andhra Pradesh,Proveedores de servicios de energía limpia,ind,0.05625
+Andhra Pradesh,Cadenas de valor,param,1.30263157895
+Andhra Pradesh,Instituciones financieras en relación a la energía limpia,ind,0.03
+Andhra Pradesh,Cadenas de valor de energía limpia por sector,ind,0.0828947368421
+Andhra Pradesh,Cadenas de valor de energía limpia distribuida por sector,ind,0.0375
+Andhra Pradesh,Proveedores de servicios de energía limpia,ind,0.045
 Andhra Pradesh,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Andhra Pradesh,Gestión de GEI,param,1.18212603953
 Andhra Pradesh,Actividad histórica de derechos de emisión de carbono,ind,0.075
@@ -2377,10 +2377,10 @@ Andhra Pradesh,Iniciativas de eficiencia energética,ind,0.0154199557129
 Andhra Pradesh,Políticas de reducción de emisiones,ind,0.00382294605796
 Andhra Pradesh,Formación empresarial centrada en el medioambiente,ind,0.0375
 Andhra Pradesh,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Gujarat,Puntaje,score,1.27366662876
-Gujarat,Marco Propicio,param,1.40057044661
-Gujarat,Políticas de energía limpia,ind,0.249070196326
-Gujarat,Estructura del sector energético,ind,0.1882
+Gujarat,Puntaje,score,1.03962534827
+Gujarat,Marco Propicio,param,1.06821735875
+Gujarat,Políticas de energía limpia,ind,0.166046797551
+Gujarat,Estructura del sector energético,ind,0.156833333333
 Gujarat,Marco regulatorio de la energía distribuida,ind,0.0
 Gujarat,Electrificación rural de energía limpia,ind,0.0
 Gujarat,Políticas de acceso a la energía,ind,0.0
@@ -2391,19 +2391,19 @@ Gujarat,Generación eléctrica de energía limpia,ind,0.0119673351447
 Gujarat,Tasa de crecimiento de generación eléctrica,ind,0.0145206047449
 Gujarat,Producción de biocombustibles,ind,0.0
 Gujarat,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Gujarat,Precio promedio de la electricidad spot,ind,0.0263930483828
-Gujarat,Precio promedio de la electricidad al por menor,ind,0.0141371669746
+Gujarat,Precio promedio de la electricidad spot,ind,0.0158358290297
+Gujarat,Precio promedio de la electricidad al por menor,ind,0.00848230018474
 Gujarat,Precio promedio de la electricidad residencial,ind,0.0
 Gujarat,Precio promedio de la electricidad comercial,ind,0.0
 Gujarat,Precio promedio de la electricidad industrial,ind,0.0
 Gujarat,Precio promedio de queroseno,ind,0.0
 Gujarat,Precio promedio de diesel,ind,0.0
-Gujarat,Tasa de crecimiento de la demanda de energía,ind,0.00691012588974
-Gujarat,Tasa de electrificación,ind,0.00212483399734
+Gujarat,Tasa de crecimiento de la demanda de energía,ind,0.00414607553384
+Gujarat,Tasa de electrificación,ind,0.00254980079681
 Gujarat,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Gujarat,Financiamiento y Inversión,param,0.674674796425
-Gujarat,Inversiones en energía limpia,ind,0.105800462648
-Gujarat,Tasa de crecimiento de las inversiones en energía limpia,ind,0.00389937361933
+Gujarat,Financiamiento y Inversión,param,0.742608855777
+Gujarat,Inversiones en energía limpia,ind,0.126960555177
+Gujarat,Tasa de crecimiento de las inversiones en energía limpia,ind,0.00311949889547
 Gujarat,Inversiones en activos,ind,0.0
 Gujarat,Inversiones en finanzas corporativas,ind,0.0
 Gujarat,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -2415,11 +2415,11 @@ Gujarat,Microprestatarios verdes,ind,0.0
 Gujarat,Coste medio de la microdeuda verde,ind,0.0
 Gujarat,Coste medio de la deuda,ind,0.0526311740891
 Gujarat,Tasa swap,ind,0.0400714285714
-Gujarat,Cadenas de valor,param,2.14144736842
-Gujarat,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Gujarat,Cadenas de valor de energía limpia por sector,ind,0.236842105263
-Gujarat,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Gujarat,Proveedores de servicios de energía limpia,ind,0.046875
+Gujarat,Cadenas de valor,param,1.33157894737
+Gujarat,Instituciones financieras en relación a la energía limpia,ind,0.03
+Gujarat,Cadenas de valor de energía limpia por sector,ind,0.0947368421053
+Gujarat,Cadenas de valor de energía limpia distribuida por sector,ind,0.0375
+Gujarat,Proveedores de servicios de energía limpia,ind,0.0375
 Gujarat,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Gujarat,Gestión de GEI,param,1.26545937286
 Gujarat,Actividad histórica de derechos de emisión de carbono,ind,0.075
@@ -2435,10 +2435,10 @@ Gujarat,Iniciativas de eficiencia energética,ind,0.0154199557129
 Gujarat,Políticas de reducción de emisiones,ind,0.00382294605796
 Gujarat,Formación empresarial centrada en el medioambiente,ind,0.0375
 Gujarat,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Karnataka,Puntaje,score,1.56851137158
-Karnataka,Marco Propicio,param,1.91427945206
-Karnataka,Políticas de energía limpia,ind,0.249070196326
-Karnataka,Estructura del sector energético,ind,0.1406
+Karnataka,Puntaje,score,1.37062805367
+Karnataka,Marco Propicio,param,1.6030212626
+Karnataka,Políticas de energía limpia,ind,0.166046797551
+Karnataka,Estructura del sector energético,ind,0.117166666667
 Karnataka,Marco regulatorio de la energía distribuida,ind,0.0
 Karnataka,Electrificación rural de energía limpia,ind,0.04
 Karnataka,Políticas de acceso a la energía,ind,0.0
@@ -2449,19 +2449,19 @@ Karnataka,Generación eléctrica de energía limpia,ind,0.0297150467519
 Karnataka,Tasa de crecimiento de generación eléctrica,ind,0.16
 Karnataka,Producción de biocombustibles,ind,0.0
 Karnataka,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Karnataka,Precio promedio de la electricidad spot,ind,0.0263930483828
-Karnataka,Precio promedio de la electricidad al por menor,ind,0.0197857278037
+Karnataka,Precio promedio de la electricidad spot,ind,0.0158358290297
+Karnataka,Precio promedio de la electricidad al por menor,ind,0.0118714366822
 Karnataka,Precio promedio de la electricidad residencial,ind,0.0
 Karnataka,Precio promedio de la electricidad comercial,ind,0.0
 Karnataka,Precio promedio de la electricidad industrial,ind,0.0
 Karnataka,Precio promedio de queroseno,ind,0.0
 Karnataka,Precio promedio de diesel,ind,0.0
 Karnataka,Tasa de crecimiento de la demanda de energía,ind,0.0
-Karnataka,Tasa de electrificación,ind,0.00212483399734
+Karnataka,Tasa de electrificación,ind,0.00254980079681
 Karnataka,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Karnataka,Financiamiento y Inversión,param,0.906207545922
-Karnataka,Inversiones en energía limpia,ind,0.155307356819
-Karnataka,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0238523042971
+Karnataka,Financiamiento y Inversión,param,0.993844247603
+Karnataka,Inversiones en energía limpia,ind,0.186368828183
+Karnataka,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0190818434377
 Karnataka,Inversiones en activos,ind,0.0
 Karnataka,Inversiones en finanzas corporativas,ind,0.0
 Karnataka,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -2473,11 +2473,11 @@ Karnataka,Microprestatarios verdes,ind,0.0
 Karnataka,Coste medio de la microdeuda verde,ind,0.0
 Karnataka,Coste medio de la deuda,ind,0.0526311740891
 Karnataka,Tasa swap,ind,0.0400714285714
-Karnataka,Cadenas de valor,param,1.94078947368
-Karnataka,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Karnataka,Cadenas de valor de energía limpia por sector,ind,0.197368421053
-Karnataka,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Karnataka,Proveedores de servicios de energía limpia,ind,0.05625
+Karnataka,Cadenas de valor,param,1.27631578947
+Karnataka,Instituciones financieras en relación a la energía limpia,ind,0.03
+Karnataka,Cadenas de valor de energía limpia por sector,ind,0.0789473684211
+Karnataka,Cadenas de valor de energía limpia distribuida por sector,ind,0.0375
+Karnataka,Proveedores de servicios de energía limpia,ind,0.045
 Karnataka,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Karnataka,Gestión de GEI,param,1.5987927062
 Karnataka,Actividad histórica de derechos de emisión de carbono,ind,0.1125
@@ -2493,10 +2493,10 @@ Karnataka,Iniciativas de eficiencia energética,ind,0.0154199557129
 Karnataka,Políticas de reducción de emisiones,ind,0.00382294605796
 Karnataka,Formación empresarial centrada en el medioambiente,ind,0.0375
 Karnataka,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Maharashtra,Puntaje,score,1.2823197366
-Maharashtra,Marco Propicio,param,1.51399695407
-Maharashtra,Políticas de energía limpia,ind,0.249070196326
-Maharashtra,Estructura del sector energético,ind,0.1716
+Maharashtra,Puntaje,score,1.01249962374
+Maharashtra,Marco Propicio,param,1.19139001936
+Maharashtra,Políticas de energía limpia,ind,0.166046797551
+Maharashtra,Estructura del sector energético,ind,0.143
 Maharashtra,Marco regulatorio de la energía distribuida,ind,0.0
 Maharashtra,Electrificación rural de energía limpia,ind,0.04
 Maharashtra,Políticas de acceso a la energía,ind,0.0
@@ -2507,19 +2507,19 @@ Maharashtra,Generación eléctrica de energía limpia,ind,0.0118587534426
 Maharashtra,Tasa de crecimiento de generación eléctrica,ind,0.030584026628
 Maharashtra,Producción de biocombustibles,ind,0.0
 Maharashtra,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Maharashtra,Precio promedio de la electricidad spot,ind,0.0263930483828
-Maharashtra,Precio promedio de la electricidad al por menor,ind,0.0182178063895
+Maharashtra,Precio promedio de la electricidad spot,ind,0.0158358290297
+Maharashtra,Precio promedio de la electricidad al por menor,ind,0.0109306838337
 Maharashtra,Precio promedio de la electricidad residencial,ind,0.0
 Maharashtra,Precio promedio de la electricidad comercial,ind,0.0
 Maharashtra,Precio promedio de la electricidad industrial,ind,0.0
 Maharashtra,Precio promedio de queroseno,ind,0.0
 Maharashtra,Precio promedio de diesel,ind,0.0
 Maharashtra,Tasa de crecimiento de la demanda de energía,ind,0.0
-Maharashtra,Tasa de electrificación,ind,0.00212483399734
+Maharashtra,Tasa de electrificación,ind,0.00254980079681
 Maharashtra,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Maharashtra,Financiamiento y Inversión,param,0.630134023117
-Maharashtra,Inversiones en energía limpia,ind,0.0586432178669
-Maharashtra,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0376943864078
+Maharashtra,Financiamiento y Inversión,param,0.644099910757
+Maharashtra,Inversiones en energía limpia,ind,0.0703718614402
+Maharashtra,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0301555091262
 Maharashtra,Inversiones en activos,ind,0.0
 Maharashtra,Inversiones en finanzas corporativas,ind,0.0
 Maharashtra,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -2531,11 +2531,11 @@ Maharashtra,Microprestatarios verdes,ind,0.0
 Maharashtra,Coste medio de la microdeuda verde,ind,0.0
 Maharashtra,Coste medio de la deuda,ind,0.0526311740891
 Maharashtra,Tasa swap,ind,0.0400714285714
-Maharashtra,Cadenas de valor,param,2.06907894737
-Maharashtra,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Maharashtra,Cadenas de valor de energía limpia por sector,ind,0.207236842105
+Maharashtra,Cadenas de valor,param,1.10263157895
+Maharashtra,Instituciones financieras en relación a la energía limpia,ind,0.03
+Maharashtra,Cadenas de valor de energía limpia por sector,ind,0.0828947368421
 Maharashtra,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Maharashtra,Proveedores de servicios de energía limpia,ind,0.065625
+Maharashtra,Proveedores de servicios de energía limpia,ind,0.0525
 Maharashtra,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Maharashtra,Gestión de GEI,param,1.18212603953
 Maharashtra,Actividad histórica de derechos de emisión de carbono,ind,0.0375
@@ -2551,10 +2551,10 @@ Maharashtra,Iniciativas de eficiencia energética,ind,0.0154199557129
 Maharashtra,Políticas de reducción de emisiones,ind,0.00382294605796
 Maharashtra,Formación empresarial centrada en el medioambiente,ind,0.0375
 Maharashtra,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Madhya Pradesh,Puntaje,score,0.987214298171
-Madhya Pradesh,Marco Propicio,param,1.29458924861
-Madhya Pradesh,Políticas de energía limpia,ind,0.249070196326
-Madhya Pradesh,Estructura del sector energético,ind,0.1006
+Madhya Pradesh,Puntaje,score,0.812868763634
+Madhya Pradesh,Marco Propicio,param,0.96097046051
+Madhya Pradesh,Políticas de energía limpia,ind,0.166046797551
+Madhya Pradesh,Estructura del sector energético,ind,0.0838333333333
 Madhya Pradesh,Marco regulatorio de la energía distribuida,ind,0.0
 Madhya Pradesh,Electrificación rural de energía limpia,ind,0.04
 Madhya Pradesh,Políticas de acceso a la energía,ind,0.0
@@ -2565,19 +2565,19 @@ Madhya Pradesh,Generación eléctrica de energía limpia,ind,0.00229223201174
 Madhya Pradesh,Tasa de crecimiento de generación eléctrica,ind,0.0185840668273
 Madhya Pradesh,Producción de biocombustibles,ind,0.0
 Madhya Pradesh,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Madhya Pradesh,Precio promedio de la electricidad spot,ind,0.0263930483828
-Madhya Pradesh,Precio promedio de la electricidad al por menor,ind,0.0194454748661
+Madhya Pradesh,Precio promedio de la electricidad spot,ind,0.0158358290297
+Madhya Pradesh,Precio promedio de la electricidad al por menor,ind,0.0116672849197
 Madhya Pradesh,Precio promedio de la electricidad residencial,ind,0.0
 Madhya Pradesh,Precio promedio de la electricidad comercial,ind,0.0
 Madhya Pradesh,Precio promedio de la electricidad industrial,ind,0.0
 Madhya Pradesh,Precio promedio de queroseno,ind,0.0
 Madhya Pradesh,Precio promedio de diesel,ind,0.0
-Madhya Pradesh,Tasa de crecimiento de la demanda de energía,ind,0.0393675182408
-Madhya Pradesh,Tasa de electrificación,ind,0.00212483399734
+Madhya Pradesh,Tasa de crecimiento de la demanda de energía,ind,0.0236205109445
+Madhya Pradesh,Tasa de electrificación,ind,0.00254980079681
 Madhya Pradesh,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Madhya Pradesh,Financiamiento y Inversión,param,0.821668274243
-Madhya Pradesh,Inversiones en energía limpia,ind,0.0336177073483
-Madhya Pradesh,Tasa de crecimiento de las inversiones en energía limpia,ind,0.120180172264
+Madhya Pradesh,Financiamiento y Inversión,param,0.763959964299
+Madhya Pradesh,Inversiones en energía limpia,ind,0.0403412488179
+Madhya Pradesh,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0961441378114
 Madhya Pradesh,Inversiones en activos,ind,0.0
 Madhya Pradesh,Inversiones en finanzas corporativas,ind,0.0
 Madhya Pradesh,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -2589,11 +2589,11 @@ Madhya Pradesh,Microprestatarios verdes,ind,0.0
 Madhya Pradesh,Coste medio de la microdeuda verde,ind,0.0
 Madhya Pradesh,Coste medio de la deuda,ind,0.0526311740891
 Madhya Pradesh,Tasa swap,ind,0.0400714285714
-Madhya Pradesh,Cadenas de valor,param,0.720394736842
+Madhya Pradesh,Cadenas de valor,param,0.563157894737
 Madhya Pradesh,Instituciones financieras en relación a la energía limpia,ind,0.0
-Madhya Pradesh,Cadenas de valor de energía limpia por sector,ind,0.0986842105263
-Madhya Pradesh,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Madhya Pradesh,Proveedores de servicios de energía limpia,ind,0.009375
+Madhya Pradesh,Cadenas de valor de energía limpia por sector,ind,0.0394736842105
+Madhya Pradesh,Cadenas de valor de energía limpia distribuida por sector,ind,0.0375
+Madhya Pradesh,Proveedores de servicios de energía limpia,ind,0.0075
 Madhya Pradesh,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Madhya Pradesh,Gestión de GEI,param,0.765459372863
 Madhya Pradesh,Actividad histórica de derechos de emisión de carbono,ind,0.0
@@ -2609,10 +2609,10 @@ Madhya Pradesh,Iniciativas de eficiencia energética,ind,0.0154199557129
 Madhya Pradesh,Políticas de reducción de emisiones,ind,0.00382294605796
 Madhya Pradesh,Formación empresarial centrada en el medioambiente,ind,0.0375
 Madhya Pradesh,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Punjab,Puntaje,score,1.04053847007
-Punjab,Marco Propicio,param,1.24493022758
-Punjab,Políticas de energía limpia,ind,0.249070196326
-Punjab,Estructura del sector energético,ind,0.1152
+Punjab,Puntaje,score,0.864296510596
+Punjab,Marco Propicio,param,0.944533156835
+Punjab,Políticas de energía limpia,ind,0.166046797551
+Punjab,Estructura del sector energético,ind,0.096
 Punjab,Marco regulatorio de la energía distribuida,ind,0.0
 Punjab,Electrificación rural de energía limpia,ind,0.04
 Punjab,Políticas de acceso a la energía,ind,0.0
@@ -2623,18 +2623,18 @@ Punjab,Generación eléctrica de energía limpia,ind,0.00274620046939
 Punjab,Tasa de crecimiento de generación eléctrica,ind,0.0
 Punjab,Producción de biocombustibles,ind,0.0
 Punjab,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Punjab,Precio promedio de la electricidad spot,ind,0.0263930483828
-Punjab,Precio promedio de la electricidad al por menor,ind,0.0195079424261
+Punjab,Precio promedio de la electricidad spot,ind,0.0158358290297
+Punjab,Precio promedio de la electricidad al por menor,ind,0.0117047654557
 Punjab,Precio promedio de la electricidad residencial,ind,0.0
 Punjab,Precio promedio de la electricidad comercial,ind,0.0
 Punjab,Precio promedio de la electricidad industrial,ind,0.0
 Punjab,Precio promedio de queroseno,ind,0.0
 Punjab,Precio promedio de diesel,ind,0.0
 Punjab,Tasa de crecimiento de la demanda de energía,ind,0.0
-Punjab,Tasa de electrificación,ind,0.00212483399734
+Punjab,Tasa de electrificación,ind,0.00254980079681
 Punjab,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Punjab,Financiamiento y Inversión,param,0.616066138426
-Punjab,Inversiones en energía limpia,ind,0.0921172388673
+Punjab,Financiamiento y Inversión,param,0.677477631004
+Punjab,Inversiones en energía limpia,ind,0.110540686641
 Punjab,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0
 Punjab,Inversiones en activos,ind,0.0
 Punjab,Inversiones en finanzas corporativas,ind,0.0
@@ -2647,11 +2647,11 @@ Punjab,Microprestatarios verdes,ind,0.0
 Punjab,Coste medio de la microdeuda verde,ind,0.0
 Punjab,Coste medio de la deuda,ind,0.0526311740891
 Punjab,Tasa swap,ind,0.0400714285714
-Punjab,Cadenas de valor,param,1.03618421053
-Punjab,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Punjab,Cadenas de valor de energía limpia por sector,ind,0.108552631579
+Punjab,Cadenas de valor,param,0.539473684211
+Punjab,Instituciones financieras en relación a la energía limpia,ind,0.03
+Punjab,Cadenas de valor de energía limpia por sector,ind,0.0434210526316
 Punjab,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Punjab,Proveedores de servicios de energía limpia,ind,0.009375
+Punjab,Proveedores de servicios de energía limpia,ind,0.0075
 Punjab,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Punjab,Gestión de GEI,param,1.3487927062
 Punjab,Actividad histórica de derechos de emisión de carbono,ind,0.075
@@ -2667,10 +2667,10 @@ Punjab,Iniciativas de eficiencia energética,ind,0.0154199557129
 Punjab,Políticas de reducción de emisiones,ind,0.00382294605796
 Punjab,Formación empresarial centrada en el medioambiente,ind,0.0375
 Punjab,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Rajasthan,Puntaje,score,1.26314793189
-Rajasthan,Marco Propicio,param,1.37113185122
-Rajasthan,Políticas de energía limpia,ind,0.249070196326
-Rajasthan,Estructura del sector energético,ind,0.0966
+Rajasthan,Puntaje,score,1.15433005997
+Rajasthan,Marco Propicio,param,1.07884854013
+Rajasthan,Políticas de energía limpia,ind,0.166046797551
+Rajasthan,Estructura del sector energético,ind,0.0805
 Rajasthan,Marco regulatorio de la energía distribuida,ind,0.0
 Rajasthan,Electrificación rural de energía limpia,ind,0.04
 Rajasthan,Políticas de acceso a la energía,ind,0.0
@@ -2681,19 +2681,19 @@ Rajasthan,Generación eléctrica de energía limpia,ind,0.0121846988619
 Rajasthan,Tasa de crecimiento de generación eléctrica,ind,0.0125989334557
 Rajasthan,Producción de biocombustibles,ind,0.0
 Rajasthan,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Rajasthan,Precio promedio de la electricidad spot,ind,0.0263930483828
-Rajasthan,Precio promedio de la electricidad al por menor,ind,0.0191441827662
+Rajasthan,Precio promedio de la electricidad spot,ind,0.0158358290297
+Rajasthan,Precio promedio de la electricidad al por menor,ind,0.0114865096597
 Rajasthan,Precio promedio de la electricidad residencial,ind,0.0
 Rajasthan,Precio promedio de la electricidad comercial,ind,0.0
 Rajasthan,Precio promedio de la electricidad industrial,ind,0.0
 Rajasthan,Precio promedio de queroseno,ind,0.0
 Rajasthan,Precio promedio de diesel,ind,0.0
 Rajasthan,Tasa de crecimiento de la demanda de energía,ind,0.0
-Rajasthan,Tasa de electrificación,ind,0.00212483399734
+Rajasthan,Tasa de electrificación,ind,0.00254980079681
 Rajasthan,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Rajasthan,Financiamiento y Inversión,param,1.14980691649
-Rajasthan,Inversiones en energía limpia,ind,0.228759683232
-Rajasthan,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0234797890537
+Rajasthan,Financiamiento y Inversión,param,1.28666017927
+Rajasthan,Inversiones en energía limpia,ind,0.274511619879
+Rajasthan,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0187838312429
 Rajasthan,Inversiones en activos,ind,0.0
 Rajasthan,Inversiones en finanzas corporativas,ind,0.0
 Rajasthan,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -2705,11 +2705,11 @@ Rajasthan,Microprestatarios verdes,ind,0.0
 Rajasthan,Coste medio de la microdeuda verde,ind,0.0
 Rajasthan,Coste medio de la deuda,ind,0.0526311740891
 Rajasthan,Tasa swap,ind,0.0400714285714
-Rajasthan,Cadenas de valor,param,1.03289473684
-Rajasthan,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Rajasthan,Cadenas de valor de energía limpia por sector,ind,0.0986842105263
-Rajasthan,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Rajasthan,Proveedores de servicios de energía limpia,ind,0.01875
+Rajasthan,Cadenas de valor,param,0.813157894737
+Rajasthan,Instituciones financieras en relación a la energía limpia,ind,0.03
+Rajasthan,Cadenas de valor de energía limpia por sector,ind,0.0394736842105
+Rajasthan,Cadenas de valor de energía limpia distribuida por sector,ind,0.0375
+Rajasthan,Proveedores de servicios de energía limpia,ind,0.015
 Rajasthan,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Rajasthan,Gestión de GEI,param,1.43212603953
 Rajasthan,Actividad histórica de derechos de emisión de carbono,ind,0.075
@@ -2725,10 +2725,10 @@ Rajasthan,Iniciativas de eficiencia energética,ind,0.0154199557129
 Rajasthan,Políticas de reducción de emisiones,ind,0.00382294605796
 Rajasthan,Formación empresarial centrada en el medioambiente,ind,0.0375
 Rajasthan,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Tamil Nadu,Puntaje,score,1.44114654207
-Tamil Nadu,Marco Propicio,param,1.49719690892
-Tamil Nadu,Políticas de energía limpia,ind,0.249070196326
-Tamil Nadu,Estructura del sector energético,ind,0.092
+Tamil Nadu,Puntaje,score,1.19901035164
+Tamil Nadu,Marco Propicio,param,1.18683669877
+Tamil Nadu,Políticas de energía limpia,ind,0.166046797551
+Tamil Nadu,Estructura del sector energético,ind,0.0766666666667
 Tamil Nadu,Marco regulatorio de la energía distribuida,ind,0.0
 Tamil Nadu,Electrificación rural de energía limpia,ind,0.04
 Tamil Nadu,Políticas de acceso a la energía,ind,0.0
@@ -2739,19 +2739,19 @@ Tamil Nadu,Generación eléctrica de energía limpia,ind,0.0297852539343
 Tamil Nadu,Tasa de crecimiento de generación eléctrica,ind,0.0
 Tamil Nadu,Producción de biocombustibles,ind,0.0
 Tamil Nadu,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Tamil Nadu,Precio promedio de la electricidad spot,ind,0.0263930483828
-Tamil Nadu,Precio promedio de la electricidad al por menor,ind,0.0183822838479
+Tamil Nadu,Precio promedio de la electricidad spot,ind,0.0158358290297
+Tamil Nadu,Precio promedio de la electricidad al por menor,ind,0.0110293703087
 Tamil Nadu,Precio promedio de la electricidad residencial,ind,0.0
 Tamil Nadu,Precio promedio de la electricidad comercial,ind,0.0
 Tamil Nadu,Precio promedio de la electricidad industrial,ind,0.0
 Tamil Nadu,Precio promedio de queroseno,ind,0.0
 Tamil Nadu,Precio promedio de diesel,ind,0.0
-Tamil Nadu,Tasa de crecimiento de la demanda de energía,ind,0.0207554646511
-Tamil Nadu,Tasa de electrificación,ind,0.00212483399734
+Tamil Nadu,Tasa de crecimiento de la demanda de energía,ind,0.0124532787906
+Tamil Nadu,Tasa de electrificación,ind,0.00254980079681
 Tamil Nadu,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Tamil Nadu,Financiamiento y Inversión,param,0.765838347171
-Tamil Nadu,Inversiones en energía limpia,ind,0.126340237457
-Tamil Nadu,Tasa de crecimiento de las inversiones en energía limpia,ind,0.010708664034
+Tamil Nadu,Financiamiento y Inversión,param,0.842926062786
+Tamil Nadu,Inversiones en energía limpia,ind,0.151608284948
+Tamil Nadu,Tasa de crecimiento de las inversiones en energía limpia,ind,0.00856693122716
 Tamil Nadu,Inversiones en activos,ind,0.0
 Tamil Nadu,Inversiones en finanzas corporativas,ind,0.0
 Tamil Nadu,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -2763,11 +2763,11 @@ Tamil Nadu,Microprestatarios verdes,ind,0.0
 Tamil Nadu,Coste medio de la microdeuda verde,ind,0.0
 Tamil Nadu,Coste medio de la deuda,ind,0.0526311740891
 Tamil Nadu,Tasa swap,ind,0.0400714285714
-Tamil Nadu,Cadenas de valor,param,2.40131578947
-Tamil Nadu,Instituciones financieras en relación a la energía limpia,ind,0.0375
-Tamil Nadu,Cadenas de valor de energía limpia por sector,ind,0.266447368421
-Tamil Nadu,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Tamil Nadu,Proveedores de servicios de energía limpia,ind,0.05625
+Tamil Nadu,Cadenas de valor,param,1.46052631579
+Tamil Nadu,Instituciones financieras en relación a la energía limpia,ind,0.03
+Tamil Nadu,Cadenas de valor de energía limpia por sector,ind,0.106578947368
+Tamil Nadu,Cadenas de valor de energía limpia distribuida por sector,ind,0.0375
+Tamil Nadu,Proveedores de servicios de energía limpia,ind,0.045
 Tamil Nadu,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Tamil Nadu,Gestión de GEI,param,1.68212603953
 Tamil Nadu,Actividad histórica de derechos de emisión de carbono,ind,0.1125
@@ -2783,10 +2783,10 @@ Tamil Nadu,Iniciativas de eficiencia energética,ind,0.0154199557129
 Tamil Nadu,Políticas de reducción de emisiones,ind,0.00382294605796
 Tamil Nadu,Formación empresarial centrada en el medioambiente,ind,0.0375
 Tamil Nadu,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Uttar Pradesh,Puntaje,score,0.956102745926
-Uttar Pradesh,Marco Propicio,param,1.16433065638
-Uttar Pradesh,Políticas de energía limpia,ind,0.249070196326
-Uttar Pradesh,Estructura del sector energético,ind,0.1188
+Uttar Pradesh,Puntaje,score,0.768788165253
+Uttar Pradesh,Marco Propicio,param,0.860646089758
+Uttar Pradesh,Políticas de energía limpia,ind,0.166046797551
+Uttar Pradesh,Estructura del sector energético,ind,0.099
 Uttar Pradesh,Marco regulatorio de la energía distribuida,ind,0.0
 Uttar Pradesh,Electrificación rural de energía limpia,ind,0.04
 Uttar Pradesh,Políticas de acceso a la energía,ind,0.0
@@ -2797,19 +2797,19 @@ Uttar Pradesh,Generación eléctrica de energía limpia,ind,0.00277282102324
 Uttar Pradesh,Tasa de crecimiento de generación eléctrica,ind,0.0
 Uttar Pradesh,Producción de biocombustibles,ind,0.0
 Uttar Pradesh,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Uttar Pradesh,Precio promedio de la electricidad spot,ind,0.0263930483828
-Uttar Pradesh,Precio promedio de la electricidad al por menor,ind,0.021295438303
+Uttar Pradesh,Precio promedio de la electricidad spot,ind,0.0158358290297
+Uttar Pradesh,Precio promedio de la electricidad al por menor,ind,0.0127772629818
 Uttar Pradesh,Precio promedio de la electricidad residencial,ind,0.0
 Uttar Pradesh,Precio promedio de la electricidad comercial,ind,0.0
 Uttar Pradesh,Precio promedio de la electricidad industrial,ind,0.0
 Uttar Pradesh,Precio promedio de queroseno,ind,0.0
 Uttar Pradesh,Precio promedio de diesel,ind,0.0
 Uttar Pradesh,Tasa de crecimiento de la demanda de energía,ind,0.0
-Uttar Pradesh,Tasa de electrificación,ind,0.00212483399734
+Uttar Pradesh,Tasa de electrificación,ind,0.00254980079681
 Uttar Pradesh,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Uttar Pradesh,Financiamiento y Inversión,param,0.400961398496
-Uttar Pradesh,Inversiones en energía limpia,ind,0.0258357602272
-Uttar Pradesh,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0017500566611
+Uttar Pradesh,Financiamiento y Inversión,param,0.417018534207
+Uttar Pradesh,Inversiones en energía limpia,ind,0.0310029122727
+Uttar Pradesh,Tasa de crecimiento de las inversiones en energía limpia,ind,0.00140004532888
 Uttar Pradesh,Inversiones en activos,ind,0.0
 Uttar Pradesh,Inversiones en finanzas corporativas,ind,0.0
 Uttar Pradesh,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -2821,11 +2821,11 @@ Uttar Pradesh,Microprestatarios verdes,ind,0.0
 Uttar Pradesh,Coste medio de la microdeuda verde,ind,0.0
 Uttar Pradesh,Coste medio de la deuda,ind,0.0526311740891
 Uttar Pradesh,Tasa swap,ind,0.0400714285714
-Uttar Pradesh,Cadenas de valor,param,1.36842105263
+Uttar Pradesh,Cadenas de valor,param,0.897368421053
 Uttar Pradesh,Instituciones financieras en relación a la energía limpia,ind,0.0
-Uttar Pradesh,Cadenas de valor de energía limpia por sector,ind,0.167763157895
-Uttar Pradesh,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Uttar Pradesh,Proveedores de servicios de energía limpia,ind,0.0375
+Uttar Pradesh,Cadenas de valor de energía limpia por sector,ind,0.0671052631579
+Uttar Pradesh,Cadenas de valor de energía limpia distribuida por sector,ind,0.0375
+Uttar Pradesh,Proveedores de servicios de energía limpia,ind,0.03
 Uttar Pradesh,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Uttar Pradesh,Gestión de GEI,param,1.0987927062
 Uttar Pradesh,Actividad histórica de derechos de emisión de carbono,ind,0.0375
@@ -2841,10 +2841,10 @@ Uttar Pradesh,Iniciativas de eficiencia energética,ind,0.0154199557129
 Uttar Pradesh,Políticas de reducción de emisiones,ind,0.00382294605796
 Uttar Pradesh,Formación empresarial centrada en el medioambiente,ind,0.0375
 Uttar Pradesh,‘Think tanks’ centrado en el medioambiente,ind,0.0
-West Bengal,Puntaje,score,1.04380943841
-West Bengal,Marco Propicio,param,1.31398863524
-West Bengal,Políticas de energía limpia,ind,0.249070196326
-West Bengal,Estructura del sector energético,ind,0.1426
+West Bengal,Puntaje,score,0.783694658027
+West Bengal,Marco Propicio,param,1.00309228852
+West Bengal,Políticas de energía limpia,ind,0.166046797551
+West Bengal,Estructura del sector energético,ind,0.118833333333
 West Bengal,Marco regulatorio de la energía distribuida,ind,0.0
 West Bengal,Electrificación rural de energía limpia,ind,0.04
 West Bengal,Políticas de acceso a la energía,ind,0.0
@@ -2855,18 +2855,18 @@ West Bengal,Generación eléctrica de energía limpia,ind,0.00264205307869
 West Bengal,Tasa de crecimiento de generación eléctrica,ind,0.0356214574251
 West Bengal,Producción de biocombustibles,ind,0.0
 West Bengal,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-West Bengal,Precio promedio de la electricidad spot,ind,0.0263930483828
-West Bengal,Precio promedio de la electricidad al por menor,ind,0.0185905517307
+West Bengal,Precio promedio de la electricidad spot,ind,0.0158358290297
+West Bengal,Precio promedio de la electricidad al por menor,ind,0.0111543310384
 West Bengal,Precio promedio de la electricidad residencial,ind,0.0
 West Bengal,Precio promedio de la electricidad comercial,ind,0.0
 West Bengal,Precio promedio de la electricidad industrial,ind,0.0
 West Bengal,Precio promedio de queroseno,ind,0.0
 West Bengal,Precio promedio de diesel,ind,0.0
 West Bengal,Tasa de crecimiento de la demanda de energía,ind,0.0
-West Bengal,Tasa de electrificación,ind,0.00212483399734
+West Bengal,Tasa de electrificación,ind,0.00254980079681
 West Bengal,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-West Bengal,Financiamiento y Inversión,param,0.332588857781
-West Bengal,Inversiones en energía limpia,ind,0.00707405467388
+West Bengal,Financiamiento y Inversión,param,0.33730489423
+West Bengal,Inversiones en energía limpia,ind,0.00848886560865
 West Bengal,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0
 West Bengal,Inversiones en activos,ind,0.0
 West Bengal,Inversiones en finanzas corporativas,ind,0.0
@@ -2879,11 +2879,11 @@ West Bengal,Microprestatarios verdes,ind,0.0
 West Bengal,Coste medio de la microdeuda verde,ind,0.0
 West Bengal,Coste medio de la deuda,ind,0.0526311740891
 West Bengal,Tasa swap,ind,0.0400714285714
-West Bengal,Cadenas de valor,param,1.94078947368
-West Bengal,Instituciones financieras en relación a la energía limpia,ind,0.0375
-West Bengal,Cadenas de valor de energía limpia por sector,ind,0.197368421053
+West Bengal,Cadenas de valor,param,1.02631578947
+West Bengal,Instituciones financieras en relación a la energía limpia,ind,0.03
+West Bengal,Cadenas de valor de energía limpia por sector,ind,0.0789473684211
 West Bengal,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-West Bengal,Proveedores de servicios de energía limpia,ind,0.05625
+West Bengal,Proveedores de servicios de energía limpia,ind,0.045
 West Bengal,Proveedores de servicios de energía limpia distribuida,ind,0.0
 West Bengal,Gestión de GEI,param,0.848792706196
 West Bengal,Actividad histórica de derechos de emisión de carbono,ind,0.0
@@ -2957,13 +2957,13 @@ Jamaica,Iniciativas de eficiencia energética,ind,0.0
 Jamaica,Políticas de reducción de emisiones,ind,0.0
 Jamaica,Formación empresarial centrada en el medioambiente,ind,0.0
 Jamaica,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Kenia,Puntaje,score,1.72572437621
-Kenia,Marco Propicio,param,1.56412403197
+Kenia,Puntaje,score,1.7264080228
+Kenia,Marco Propicio,param,1.56583314846
 Kenia,Políticas de energía limpia,ind,0.138951693062
 Kenia,Estructura del sector energético,ind,0.0635
 Kenia,Marco regulatorio de la energía distribuida,ind,0.08
 Kenia,Electrificación rural de energía limpia,ind,0.04
-Kenia,Políticas de acceso a la energía,ind,0.0704523934524
+Kenia,Políticas de acceso a la energía,ind,0.0711360400482
 Kenia,Obstáculos políticos,ind,0.01275
 Kenia,Capacidad instalada de energía limpia,ind,0.0640906018925
 Kenia,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -3015,13 +3015,13 @@ Kenia,Iniciativas de eficiencia energética,ind,0.00407666367967
 Kenia,Políticas de reducción de emisiones,ind,0.0
 Kenia,Formación empresarial centrada en el medioambiente,ind,0.0375
 Kenia,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Sri Lanka,Puntaje,score,0.864211372076
-Sri Lanka,Marco Propicio,param,1.04067756533
-Sri Lanka,Políticas de energía limpia,ind,0.0920216122855
-Sri Lanka,Estructura del sector energético,ind,0.0705
+Sri Lanka,Puntaje,score,1.04809702648
+Sri Lanka,Marco Propicio,param,1.08029736671
+Sri Lanka,Políticas de energía limpia,ind,0.138032418428
+Sri Lanka,Estructura del sector energético,ind,0.0846
 Sri Lanka,Marco regulatorio de la energía distribuida,ind,0.0
 Sri Lanka,Electrificación rural de energía limpia,ind,0.0
-Sri Lanka,Políticas de acceso a la energía,ind,0.00842105263158
+Sri Lanka,Políticas de acceso a la energía,ind,0.0
 Sri Lanka,Obstáculos políticos,ind,0.0113333333333
 Sri Lanka,Capacidad instalada de energía limpia,ind,0.0512463359778
 Sri Lanka,Tasa de crecimiento de la capacidad instalada,ind,0.000105276357527
@@ -3030,18 +3030,18 @@ Sri Lanka,Tasa de crecimiento de generación eléctrica,ind,0.0971340064148
 Sri Lanka,Producción de biocombustibles,ind,0.000342097983961
 Sri Lanka,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
 Sri Lanka,Precio promedio de la electricidad spot,ind,0.0
-Sri Lanka,Precio promedio de la electricidad al por menor,ind,0.0242474949133
+Sri Lanka,Precio promedio de la electricidad al por menor,ind,0.0404124915221
 Sri Lanka,Precio promedio de la electricidad residencial,ind,0.0
 Sri Lanka,Precio promedio de la electricidad comercial,ind,0.0
 Sri Lanka,Precio promedio de la electricidad industrial,ind,0.0
-Sri Lanka,Precio promedio de queroseno,ind,0.0202483906253
-Sri Lanka,Precio promedio de diesel,ind,0.0162799275362
+Sri Lanka,Precio promedio de queroseno,ind,0.0
+Sri Lanka,Precio promedio de diesel,ind,0.0
 Sri Lanka,Tasa de crecimiento de la demanda de energía,ind,0.0
-Sri Lanka,Tasa de electrificación,ind,0.00225882352941
-Sri Lanka,Población que utiliza combustibles sólidos para cocinar,ind,0.0151020408163
-Sri Lanka,Financiamiento y Inversión,param,0.367814904044
-Sri Lanka,Inversiones en energía limpia,ind,0.0261798171231
-Sri Lanka,Tasa de crecimiento de las inversiones en energía limpia,ind,0.00828835734663
+Sri Lanka,Tasa de electrificación,ind,0.00188235294118
+Sri Lanka,Población que utiliza combustibles sólidos para cocinar,ind,0.0
+Sri Lanka,Financiamiento y Inversión,param,0.360177525653
+Sri Lanka,Inversiones en energía limpia,ind,0.0218165142692
+Sri Lanka,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0103604466833
 Sri Lanka,Inversiones en activos,ind,0.0
 Sri Lanka,Inversiones en finanzas corporativas,ind,0.0
 Sri Lanka,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -3053,11 +3053,11 @@ Sri Lanka,Microprestatarios verdes,ind,0.00103610799312
 Sri Lanka,Coste medio de la microdeuda verde,ind,0.0037125
 Sri Lanka,Coste medio de la deuda,ind,0.0429237931718
 Sri Lanka,Tasa swap,ind,0.023375
-Sri Lanka,Cadenas de valor,param,2.17368421053
-Sri Lanka,Instituciones financieras en relación a la energía limpia,ind,0.12
-Sri Lanka,Cadenas de valor de energía limpia por sector,ind,0.0710526315789
+Sri Lanka,Cadenas de valor,param,3.30921052632
+Sri Lanka,Instituciones financieras en relación a la energía limpia,ind,0.15
+Sri Lanka,Cadenas de valor de energía limpia por sector,ind,0.177631578947
 Sri Lanka,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Sri Lanka,Proveedores de servicios de energía limpia,ind,0.135
+Sri Lanka,Proveedores de servicios de energía limpia,ind,0.16875
 Sri Lanka,Proveedores de servicios de energía limpia distribuida,ind,0.0
 Sri Lanka,Gestión de GEI,param,0.0769549543491
 Sri Lanka,Actividad histórica de derechos de emisión de carbono,ind,0.0
@@ -3073,13 +3073,13 @@ Sri Lanka,Iniciativas de eficiencia energética,ind,0.00699955461981
 Sri Lanka,Políticas de reducción de emisiones,ind,0.0
 Sri Lanka,Formación empresarial centrada en el medioambiente,ind,0.0
 Sri Lanka,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Liberia,Puntaje,score,0.912398467688
-Liberia,Marco Propicio,param,1.43852508013
+Liberia,Puntaje,score,0.912976877545
+Liberia,Marco Propicio,param,1.43997110477
 Liberia,Políticas de energía limpia,ind,0.0596514330743
 Liberia,Estructura del sector energético,ind,0.025
 Liberia,Marco regulatorio de la energía distribuida,ind,0.0444444444444
 Liberia,Electrificación rural de energía limpia,ind,0.04
-Liberia,Políticas de acceso a la energía,ind,0.0422395363244
+Liberia,Políticas de acceso a la energía,ind,0.0428179461814
 Liberia,Obstáculos políticos,ind,0.004
 Liberia,Capacidad instalada de energía limpia,ind,0.0430959588854
 Liberia,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -3131,13 +3131,13 @@ Liberia,Iniciativas de eficiencia energética,ind,0.0
 Liberia,Políticas de reducción de emisiones,ind,0.0
 Liberia,Formación empresarial centrada en el medioambiente,ind,0.0
 Liberia,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Birmania,Puntaje,score,0.777209013143
-Birmania,Marco Propicio,param,0.647190830788
+Birmania,Puntaje,score,0.777278964819
+Birmania,Marco Propicio,param,0.647365709978
 Birmania,Políticas de energía limpia,ind,0.0166046022549
 Birmania,Estructura del sector energético,ind,0.0583333333333
 Birmania,Marco regulatorio de la energía distribuida,ind,0.0755555555556
 Birmania,Electrificación rural de energía limpia,ind,0.0
-Birmania,Políticas de acceso a la energía,ind,0.0211682898124
+Birmania,Políticas de acceso a la energía,ind,0.0212382414882
 Birmania,Obstáculos políticos,ind,0.0132916340891
 Birmania,Capacidad instalada de energía limpia,ind,0.0
 Birmania,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -3189,13 +3189,13 @@ Birmania,Iniciativas de eficiencia energética,ind,0.0
 Birmania,Políticas de reducción de emisiones,ind,0.0
 Birmania,Formación empresarial centrada en el medioambiente,ind,0.0375
 Birmania,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Malaui,Puntaje,score,0.914664406032
-Malaui,Marco Propicio,param,1.20691534923
+Malaui,Puntaje,score,0.916861463426
+Malaui,Marco Propicio,param,1.21240799271
 Malaui,Políticas de energía limpia,ind,0.0324108688755
 Malaui,Estructura del sector energético,ind,0.0218333333333
 Malaui,Marco regulatorio de la energía distribuida,ind,0.0733333333333
 Malaui,Electrificación rural de energía limpia,ind,0.04
-Malaui,Políticas de acceso a la energía,ind,0.0549959437915
+Malaui,Políticas de acceso a la energía,ind,0.0571930011861
 Malaui,Obstáculos políticos,ind,0.00714786264891
 Malaui,Capacidad instalada de energía limpia,ind,0.081308224403
 Malaui,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -3247,71 +3247,71 @@ Malaui,Iniciativas de eficiencia energética,ind,0.0
 Malaui,Políticas de reducción de emisiones,ind,0.0
 Malaui,Formación empresarial centrada en el medioambiente,ind,0.0375
 Malaui,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Mexico,Puntaje,score,1.57019243391
-Mexico,Marco Propicio,param,0.898183457537
-Mexico,Políticas de energía limpia,ind,0.148600739037
-Mexico,Estructura del sector energético,ind,0.05722
-Mexico,Marco regulatorio de la energía distribuida,ind,0.0
-Mexico,Electrificación rural de energía limpia,ind,0.04
-Mexico,Políticas de acceso a la energía,ind,0.0
-Mexico,Obstáculos políticos,ind,0.00540254237288
-Mexico,Capacidad instalada de energía limpia,ind,0.015155789879
-Mexico,Tasa de crecimiento de la capacidad instalada,ind,0.000151114832238
-Mexico,Generación eléctrica de energía limpia,ind,0.0078674318041
-Mexico,Tasa de crecimiento de generación eléctrica,ind,0.0184405132428
-Mexico,Producción de biocombustibles,ind,0.0
-Mexico,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Mexico,Precio promedio de la electricidad spot,ind,0.0
-Mexico,Precio promedio de la electricidad al por menor,ind,0.0647959075843
-Mexico,Precio promedio de la electricidad residencial,ind,0.0
-Mexico,Precio promedio de la electricidad comercial,ind,0.0
-Mexico,Precio promedio de la electricidad industrial,ind,0.0
-Mexico,Precio promedio de queroseno,ind,0.0
-Mexico,Precio promedio de diesel,ind,0.0
-Mexico,Tasa de crecimiento de la demanda de energía,ind,0.0
-Mexico,Tasa de electrificación,ind,0.0016393442623
-Mexico,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Mexico,Financiamiento y Inversión,param,1.11633177015
-Mexico,Inversiones en energía limpia,ind,0.00958137654224
-Mexico,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0578059426146
-Mexico,Inversiones en activos,ind,0.0
-Mexico,Inversiones en finanzas corporativas,ind,0.0
-Mexico,Inversiones en capital de riesgo / capital privado,ind,0.0
-Mexico,"Préstamos, donaciones, programas de donaciones",ind,0.000420575048972
-Mexico,Inversiones locales,ind,0.009505788296
-Mexico,Número de instituciones de microfinanzas verdes,ind,0.065917833132
-Mexico,Microcréditos verdes,ind,0.000262442597478
-Mexico,Microprestatarios verdes,ind,0.000433707672633
-Mexico,Coste medio de la microdeuda verde,ind,0.00575581395349
-Mexico,Coste medio de la deuda,ind,0.1275
-Mexico,Tasa swap,ind,0.0577160511878
-Mexico,Cadenas de valor,param,2.81578947368
-Mexico,Instituciones financieras en relación a la energía limpia,ind,0.1125
-Mexico,Cadenas de valor de energía limpia por sector,ind,0.197368421053
-Mexico,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Mexico,Proveedores de servicios de energía limpia,ind,0.1125
-Mexico,Proveedores de servicios de energía limpia distribuida,ind,0.0
-Mexico,Gestión de GEI,param,3.02434065863
-Mexico,Actividad histórica de derechos de emisión de carbono,ind,0.075
-Mexico,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.05
-Mexico,Potencial de proyectos,ind,0.0206318227218
-Mexico,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.09375
-Mexico,Registro de GEI,ind,0.05625
-Mexico,Instrumentos basados en el mercado,ind,0.01875
-Mexico,Instrumentos de PMR & NAMA,ind,0.0375
-Mexico,Iniciativa de reporte global,ind,0.0051875
-Mexico,Principios de inversión responsable,ind,0.0
-Mexico,Iniciativas de eficiencia energética,ind,0.0111292918455
-Mexico,Políticas de reducción de emisiones,ind,0.0104524842271
-Mexico,Formación empresarial centrada en el medioambiente,ind,0.0375
-Mexico,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Mozambique,Puntaje,score,0.788151831049
-Mozambique,Marco Propicio,param,0.843875605277
+México,Puntaje,score,1.57019243391
+México,Marco Propicio,param,0.898183457537
+México,Políticas de energía limpia,ind,0.148600739037
+México,Estructura del sector energético,ind,0.05722
+México,Marco regulatorio de la energía distribuida,ind,0.0
+México,Electrificación rural de energía limpia,ind,0.04
+México,Políticas de acceso a la energía,ind,0.0
+México,Obstáculos políticos,ind,0.00540254237288
+México,Capacidad instalada de energía limpia,ind,0.015155789879
+México,Tasa de crecimiento de la capacidad instalada,ind,0.000151114832238
+México,Generación eléctrica de energía limpia,ind,0.0078674318041
+México,Tasa de crecimiento de generación eléctrica,ind,0.0184405132428
+México,Producción de biocombustibles,ind,0.0
+México,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
+México,Precio promedio de la electricidad spot,ind,0.0
+México,Precio promedio de la electricidad al por menor,ind,0.0647959075843
+México,Precio promedio de la electricidad residencial,ind,0.0
+México,Precio promedio de la electricidad comercial,ind,0.0
+México,Precio promedio de la electricidad industrial,ind,0.0
+México,Precio promedio de queroseno,ind,0.0
+México,Precio promedio de diesel,ind,0.0
+México,Tasa de crecimiento de la demanda de energía,ind,0.0
+México,Tasa de electrificación,ind,0.0016393442623
+México,Población que utiliza combustibles sólidos para cocinar,ind,0.0
+México,Financiamiento y Inversión,param,1.11633177015
+México,Inversiones en energía limpia,ind,0.00958137654224
+México,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0578059426146
+México,Inversiones en activos,ind,0.0
+México,Inversiones en finanzas corporativas,ind,0.0
+México,Inversiones en capital de riesgo / capital privado,ind,0.0
+México,"Préstamos, donaciones, programas de donaciones",ind,0.000420575048972
+México,Inversiones locales,ind,0.009505788296
+México,Número de instituciones de microfinanzas verdes,ind,0.065917833132
+México,Microcréditos verdes,ind,0.000262442597478
+México,Microprestatarios verdes,ind,0.000433707672633
+México,Coste medio de la microdeuda verde,ind,0.00575581395349
+México,Coste medio de la deuda,ind,0.1275
+México,Tasa swap,ind,0.0577160511878
+México,Cadenas de valor,param,2.81578947368
+México,Instituciones financieras en relación a la energía limpia,ind,0.1125
+México,Cadenas de valor de energía limpia por sector,ind,0.197368421053
+México,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
+México,Proveedores de servicios de energía limpia,ind,0.1125
+México,Proveedores de servicios de energía limpia distribuida,ind,0.0
+México,Gestión de GEI,param,3.02434065863
+México,Actividad histórica de derechos de emisión de carbono,ind,0.075
+México,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.05
+México,Potencial de proyectos,ind,0.0206318227218
+México,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.09375
+México,Registro de GEI,ind,0.05625
+México,Instrumentos basados en el mercado,ind,0.01875
+México,Instrumentos de PMR & NAMA,ind,0.0375
+México,Iniciativa de reporte global,ind,0.0051875
+México,Principios de inversión responsable,ind,0.0
+México,Iniciativas de eficiencia energética,ind,0.0111292918455
+México,Políticas de reducción de emisiones,ind,0.0104524842271
+México,Formación empresarial centrada en el medioambiente,ind,0.0375
+México,‘Think tanks’ centrado en el medioambiente,ind,0.0375
+Mozambique,Puntaje,score,0.78560804208
+Mozambique,Marco Propicio,param,0.837516132854
 Mozambique,Políticas de energía limpia,ind,0.0840174916141
 Mozambique,Estructura del sector energético,ind,0.0333333333333
 Mozambique,Marco regulatorio de la energía distribuida,ind,0.0266666666667
 Mozambique,Electrificación rural de energía limpia,ind,0.04
-Mozambique,Políticas de acceso a la energía,ind,0.0635674668563
+Mozambique,Políticas de acceso a la energía,ind,0.0644484270511
 Mozambique,Obstáculos políticos,ind,0.00384905660377
 Mozambique,Capacidad instalada de energía limpia,ind,0.00642445662261
 Mozambique,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -3327,7 +3327,7 @@ Mozambique,Precio promedio de la electricidad industrial,ind,0.0
 Mozambique,Precio promedio de queroseno,ind,0.0219506053286
 Mozambique,Precio promedio de diesel,ind,0.0176941468439
 Mozambique,Tasa de crecimiento de la demanda de energía,ind,0.0
-Mozambique,Tasa de electrificación,ind,0.00834782608696
+Mozambique,Tasa de electrificación,ind,0.00492307692308
 Mozambique,Población que utiliza combustibles sólidos para cocinar,ind,0.0195918367347
 Mozambique,Financiamiento y Inversión,param,0.311632836588
 Mozambique,Inversiones en energía limpia,ind,0.00416075707115
@@ -3363,13 +3363,13 @@ Mozambique,Iniciativas de eficiencia energética,ind,0.0
 Mozambique,Políticas de reducción de emisiones,ind,0.0
 Mozambique,Formación empresarial centrada en el medioambiente,ind,0.0
 Mozambique,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Nigeria,Puntaje,score,1.23219280331
-Nigeria,Marco Propicio,param,1.18842537531
+Nigeria,Puntaje,score,1.23295102177
+Nigeria,Marco Propicio,param,1.19032092147
 Nigeria,Políticas de energía limpia,ind,0.0962825279225
 Nigeria,Estructura del sector energético,ind,0.116666666667
 Nigeria,Marco regulatorio de la energía distribuida,ind,0.0711111111111
 Nigeria,Electrificación rural de energía limpia,ind,0.04
-Nigeria,Políticas de acceso a la energía,ind,0.0592380897846
+Nigeria,Políticas de acceso a la energía,ind,0.0591338969003
 Nigeria,Obstáculos políticos,ind,0.00463636363636
 Nigeria,Capacidad instalada de energía limpia,ind,0.000869251275064
 Nigeria,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -3385,7 +3385,7 @@ Nigeria,Precio promedio de la electricidad industrial,ind,0.0
 Nigeria,Precio promedio de queroseno,ind,0.0232264627212
 Nigeria,Precio promedio de diesel,ind,0.0150166573066
 Nigeria,Tasa de crecimiento de la demanda de energía,ind,0.0
-Nigeria,Tasa de electrificación,ind,0.00340425531915
+Nigeria,Tasa de electrificación,ind,0.00426666666667
 Nigeria,Población que utiliza combustibles sólidos para cocinar,ind,0.015306122449
 Nigeria,Financiamiento y Inversión,param,0.382117919799
 Nigeria,Inversiones en energía limpia,ind,0.000627914616615
@@ -3421,18 +3421,18 @@ Nigeria,Iniciativas de eficiencia energética,ind,0.00110739222343
 Nigeria,Políticas de reducción de emisiones,ind,0.00122092612647
 Nigeria,Formación empresarial centrada en el medioambiente,ind,0.0
 Nigeria,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Nicaragua,Puntaje,score,1.31515086087
-Nicaragua,Marco Propicio,param,1.37736039534
+Nicaragua,Puntaje,score,1.36927826645
+Nicaragua,Marco Propicio,param,1.51267890929
 Nicaragua,Políticas de energía limpia,ind,0.061153272104
 Nicaragua,Estructura del sector energético,ind,0.114
 Nicaragua,Marco regulatorio de la energía distribuida,ind,0.0
 Nicaragua,Electrificación rural de energía limpia,ind,0.04
 Nicaragua,Políticas de acceso a la energía,ind,0.0
 Nicaragua,Obstáculos políticos,ind,0.0291428571429
-Nicaragua,Capacidad instalada de energía limpia,ind,0.0887556946872
-Nicaragua,Tasa de crecimiento de la capacidad instalada,ind,1.46704092521e-05
-Nicaragua,Generación eléctrica de energía limpia,ind,0.0682297571487
-Nicaragua,Tasa de crecimiento de generación eléctrica,ind,0.0312118475848
+Nicaragua,Capacidad instalada de energía limpia,ind,0.111244148544
+Nicaragua,Tasa de crecimiento de la capacidad instalada,ind,1.23968315295e-05
+Nicaragua,Generación eléctrica de energía limpia,ind,0.081992641279
+Nicaragua,Tasa de crecimiento de generación eléctrica,ind,0.0490901887562
 Nicaragua,Producción de biocombustibles,ind,0.000989715093824
 Nicaragua,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
 Nicaragua,Precio promedio de la electricidad spot,ind,0.0614070076443
@@ -3479,13 +3479,13 @@ Nicaragua,Iniciativas de eficiencia energética,ind,0.0
 Nicaragua,Políticas de reducción de emisiones,ind,0.0
 Nicaragua,Formación empresarial centrada en el medioambiente,ind,0.0375
 Nicaragua,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Nepal,Puntaje,score,1.31130388028
-Nepal,Marco Propicio,param,1.39235251293
+Nepal,Puntaje,score,1.31036445423
+Nepal,Marco Propicio,param,1.3900039478
 Nepal,Políticas de energía limpia,ind,0.0854076774179
 Nepal,Estructura del sector energético,ind,0.0445833333333
 Nepal,Marco regulatorio de la energía distribuida,ind,0.0466666666667
 Nepal,Electrificación rural de energía limpia,ind,0.04
-Nepal,Políticas de acceso a la energía,ind,0.0563092301493
+Nepal,Políticas de acceso a la energía,ind,0.0553698040963
 Nepal,Obstáculos políticos,ind,0.0024578313253
 Nepal,Capacidad instalada de energía limpia,ind,0.115770318335
 Nepal,Tasa de crecimiento de la capacidad instalada,ind,0.000125561655649
@@ -3653,13 +3653,13 @@ Perú,Iniciativas de eficiencia energética,ind,0.00231137940716
 Perú,Políticas de reducción de emisiones,ind,0.00127417524102
 Perú,Formación empresarial centrada en el medioambiente,ind,0.0375
 Perú,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Pakistán,Puntaje,score,1.36140255302
-Pakistán,Marco Propicio,param,1.21133545737
+Pakistán,Puntaje,score,1.36138398825
+Pakistán,Marco Propicio,param,1.21128904546
 Pakistán,Políticas de energía limpia,ind,0.113589814609
 Pakistán,Estructura del sector energético,ind,0.0359666666667
 Pakistán,Marco regulatorio de la energía distribuida,ind,0.0644444444444
 Pakistán,Electrificación rural de energía limpia,ind,0.04
-Pakistán,Políticas de acceso a la energía,ind,0.0674120295051
+Pakistán,Políticas de acceso a la energía,ind,0.0673934647395
 Pakistán,Obstáculos políticos,ind,0.00199016623742
 Pakistán,Capacidad instalada de energía limpia,ind,0.00319208257643
 Pakistán,Tasa de crecimiento de la capacidad instalada,ind,0.000139647923464
@@ -3769,13 +3769,13 @@ Paraguay,Iniciativas de eficiencia energética,ind,0.0
 Paraguay,Políticas de reducción de emisiones,ind,0.0
 Paraguay,Formación empresarial centrada en el medioambiente,ind,0.0375
 Paraguay,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Ruanda,Puntaje,score,1.1952190966
-Ruanda,Marco Propicio,param,1.72120324716
+Ruanda,Puntaje,score,1.20284589541
+Ruanda,Marco Propicio,param,1.74027024419
 Ruanda,Políticas de energía limpia,ind,0.0885261255591
 Ruanda,Estructura del sector energético,ind,0.0534166666667
 Ruanda,Marco regulatorio de la energía distribuida,ind,0.0444444444444
 Ruanda,Electrificación rural de energía limpia,ind,0.04
-Ruanda,Políticas de acceso a la energía,ind,0.055665549705
+Ruanda,Políticas de acceso a la energía,ind,0.0631578947368
 Ruanda,Obstáculos políticos,ind,0.0204
 Ruanda,Capacidad instalada de energía limpia,ind,0.156711299691
 Ruanda,Tasa de crecimiento de la capacidad instalada,ind,7.16644197955e-05
@@ -3791,11 +3791,11 @@ Ruanda,Precio promedio de la electricidad industrial,ind,0.0
 Ruanda,Precio promedio de queroseno,ind,0.0300822918219
 Ruanda,Precio promedio de diesel,ind,0.0228252540396
 Ruanda,Tasa de crecimiento de la demanda de energía,ind,0.00859119738612
-Ruanda,Tasa de electrificación,ind,0.0112941176471
+Ruanda,Tasa de electrificación,ind,0.0114285714286
 Ruanda,Población que utiliza combustibles sólidos para cocinar,ind,0.02
-Ruanda,Financiamiento y Inversión,param,0.434185329323
-Ruanda,Inversiones en energía limpia,ind,0.0514628990565
-Ruanda,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0261717216399
+Ruanda,Financiamiento y Inversión,param,0.428255065123
+Ruanda,Inversiones en energía limpia,ind,0.0357166810763
+Ruanda,Tasa de crecimiento de las inversiones en energía limpia,ind,0.0401388603599
 Ruanda,Inversiones en activos,ind,0.0
 Ruanda,Inversiones en finanzas corporativas,ind,0.0
 Ruanda,Inversiones en capital de riesgo / capital privado,ind,0.0
@@ -3827,13 +3827,13 @@ Ruanda,Iniciativas de eficiencia energética,ind,0.0
 Ruanda,Políticas de reducción de emisiones,ind,0.0
 Ruanda,Formación empresarial centrada en el medioambiente,ind,0.0
 Ruanda,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Sierra Leona,Puntaje,score,0.742933644828
-Sierra Leona,Marco Propicio,param,0.984390137734
+Sierra Leona,Puntaje,score,0.7601085747
+Sierra Leona,Marco Propicio,param,1.02732746242
 Sierra Leona,Políticas de energía limpia,ind,0.0
 Sierra Leona,Estructura del sector energético,ind,0.0315
 Sierra Leona,Marco regulatorio de la energía distribuida,ind,0.0133333333333
 Sierra Leona,Electrificación rural de energía limpia,ind,0.04
-Sierra Leona,Políticas de acceso a la energía,ind,0.0421650300084
+Sierra Leona,Políticas de acceso a la energía,ind,0.0422732932143
 Sierra Leona,Obstáculos políticos,ind,0.00238596491228
 Sierra Leona,Capacidad instalada de energía limpia,ind,0.0892393754945
 Sierra Leona,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -3849,7 +3849,7 @@ Sierra Leona,Precio promedio de la electricidad industrial,ind,0.0
 Sierra Leona,Precio promedio de queroseno,ind,0.0256439208973
 Sierra Leona,Precio promedio de diesel,ind,0.0150724637681
 Sierra Leona,Tasa de crecimiento de la demanda de energía,ind,0.0
-Sierra Leona,Tasa de electrificación,ind,0.0213333333333
+Sierra Leona,Tasa de electrificación,ind,0.0384
 Sierra Leona,Población que utiliza combustibles sólidos para cocinar,ind,0.02
 Sierra Leona,Financiamiento y Inversión,param,0.575008429223
 Sierra Leona,Inversiones en energía limpia,ind,0.0974277031806
@@ -3885,13 +3885,13 @@ Sierra Leona,Iniciativas de eficiencia energética,ind,0.0
 Sierra Leona,Políticas de reducción de emisiones,ind,0.0
 Sierra Leona,Formación empresarial centrada en el medioambiente,ind,0.0
 Sierra Leona,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Senegal,Puntaje,score,0.892865845028
-Senegal,Marco Propicio,param,1.15331106408
+Senegal,Puntaje,score,0.889121478376
+Senegal,Marco Propicio,param,1.14395014745
 Senegal,Políticas de energía limpia,ind,0.0907139248752
 Senegal,Estructura del sector energético,ind,0.0591666666667
 Senegal,Marco regulatorio de la energía distribuida,ind,0.0666666666667
 Senegal,Electrificación rural de energía limpia,ind,0.04
-Senegal,Políticas de acceso a la energía,ind,0.0696472761089
+Senegal,Políticas de acceso a la energía,ind,0.0697645890614
 Senegal,Obstáculos políticos,ind,0.00345762711864
 Senegal,Capacidad instalada de energía limpia,ind,0.0
 Senegal,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -3907,7 +3907,7 @@ Senegal,Precio promedio de la electricidad industrial,ind,0.0
 Senegal,Precio promedio de queroseno,ind,0.0310685964718
 Senegal,Precio promedio de diesel,ind,0.0227536231884
 Senegal,Tasa de crecimiento de la demanda de energía,ind,0.0022800722353
-Senegal,Tasa de electrificación,ind,0.00738461538462
+Senegal,Tasa de electrificación,ind,0.00352293577982
 Senegal,Población que utiliza combustibles sólidos para cocinar,ind,0.0114285714286
 Senegal,Financiamiento y Inversión,param,0.138837087496
 Senegal,Inversiones en energía limpia,ind,0.0177973790105
@@ -4175,13 +4175,13 @@ Trinidad y Tobago,Iniciativas de eficiencia energética,ind,0.0
 Trinidad y Tobago,Políticas de reducción de emisiones,ind,0.0
 Trinidad y Tobago,Formación empresarial centrada en el medioambiente,ind,0.0375
 Trinidad y Tobago,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Tanzania,Puntaje,score,1.22666033126
-Tanzania,Marco Propicio,param,1.31650815308
+Tanzania,Puntaje,score,1.23486640534
+Tanzania,Marco Propicio,param,1.30988518038
 Tanzania,Políticas de energía limpia,ind,0.0869988489111
 Tanzania,Estructura del sector energético,ind,0.0439166666667
 Tanzania,Marco regulatorio de la energía distribuida,ind,0.111111111111
 Tanzania,Electrificación rural de energía limpia,ind,0.04
-Tanzania,Políticas de acceso a la energía,ind,0.0631666043365
+Tanzania,Políticas de acceso a la energía,ind,0.0631840819264
 Tanzania,Obstáculos políticos,ind,0.0204
 Tanzania,Capacidad instalada de energía limpia,ind,0.0102008188755
 Tanzania,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -4197,7 +4197,7 @@ Tanzania,Precio promedio de la electricidad industrial,ind,0.0
 Tanzania,Precio promedio de queroseno,ind,0.0308220203093
 Tanzania,Precio promedio de diesel,ind,0.0188405797101
 Tanzania,Tasa de crecimiento de la demanda de energía,ind,0.0488064095484
-Tanzania,Tasa de electrificación,ind,0.0106666666667
+Tanzania,Tasa de electrificación,ind,0.008
 Tanzania,Población que utiliza combustibles sólidos para cocinar,ind,0.0195918367347
 Tanzania,Financiamiento y Inversión,param,0.344007174611
 Tanzania,Inversiones en energía limpia,ind,0.00492106813103
@@ -4213,10 +4213,10 @@ Tanzania,Microprestatarios verdes,ind,0.00422615330095
 Tanzania,Coste medio de la microdeuda verde,ind,0.0037125
 Tanzania,Coste medio de la deuda,ind,0.0342468571961
 Tanzania,Tasa swap,ind,0.02921875
-Tanzania,Cadenas de valor,param,3.00639097744
+Tanzania,Cadenas de valor,param,3.0787593985
 Tanzania,Instituciones financieras en relación a la energía limpia,ind,0.15
-Tanzania,Cadenas de valor de energía limpia por sector,ind,0.0513157894737
-Tanzania,Cadenas de valor de energía limpia distribuida por sector,ind,0.075
+Tanzania,Cadenas de valor de energía limpia por sector,ind,0.0434210526316
+Tanzania,Cadenas de valor de energía limpia distribuida por sector,ind,0.09375
 Tanzania,Proveedores de servicios de energía limpia,ind,0.0675
 Tanzania,Proveedores de servicios de energía limpia distribuida,ind,0.107142857143
 Tanzania,Gestión de GEI,param,0.972641806873
@@ -4233,13 +4233,13 @@ Tanzania,Iniciativas de eficiencia energética,ind,0.0
 Tanzania,Políticas de reducción de emisiones,ind,0.0
 Tanzania,Formación empresarial centrada en el medioambiente,ind,0.0
 Tanzania,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Uganda,Puntaje,score,1.51623792323
-Uganda,Marco Propicio,param,1.32129424833
+Uganda,Puntaje,score,1.51556751188
+Uganda,Marco Propicio,param,1.31961821995
 Uganda,Políticas de energía limpia,ind,0.0633038196681
 Uganda,Estructura del sector energético,ind,0.06575
 Uganda,Marco regulatorio de la energía distribuida,ind,0.0688888888889
 Uganda,Electrificación rural de energía limpia,ind,0.04
-Uganda,Políticas de acceso a la energía,ind,0.0547663352581
+Uganda,Políticas de acceso a la energía,ind,0.0548372366464
 Uganda,Obstáculos políticos,ind,0.0204
 Uganda,Capacidad instalada de energía limpia,ind,0.0487131525734
 Uganda,Tasa de crecimiento de la capacidad instalada,ind,0.000535004307695
@@ -4255,7 +4255,7 @@ Uganda,Precio promedio de la electricidad industrial,ind,0.0
 Uganda,Precio promedio de queroseno,ind,0.0255270437963
 Uganda,Precio promedio de diesel,ind,0.0195652173913
 Uganda,Tasa de crecimiento de la demanda de energía,ind,0.0
-Uganda,Tasa de electrificación,ind,0.0137142857143
+Uganda,Tasa de electrificación,ind,0.012972972973
 Uganda,Población que utiliza combustibles sólidos para cocinar,ind,0.0197959183673
 Uganda,Financiamiento y Inversión,param,0.487560046103
 Uganda,Inversiones en energía limpia,ind,0.0170784799238
@@ -4465,71 +4465,71 @@ Vietnam,Iniciativas de eficiencia energética,ind,0.0
 Vietnam,Políticas de reducción de emisiones,ind,0.0
 Vietnam,Formación empresarial centrada en el medioambiente,ind,0.0
 Vietnam,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Sudafrica,Puntaje,score,1.92437084709
-Sudafrica,Marco Propicio,param,0.991827333118
-Sudafrica,Políticas de energía limpia,ind,0.246363878414
-Sudafrica,Estructura del sector energético,ind,0.06318
-Sudafrica,Marco regulatorio de la energía distribuida,ind,0.0
-Sudafrica,Electrificación rural de energía limpia,ind,0.04
-Sudafrica,Políticas de acceso a la energía,ind,0.0
-Sudafrica,Obstáculos políticos,ind,0.00971428571429
-Sudafrica,Capacidad instalada de energía limpia,ind,0.00337370582776
-Sudafrica,Tasa de crecimiento de la capacidad instalada,ind,0.000647344830097
-Sudafrica,Generación eléctrica de energía limpia,ind,0.00109757363096
-Sudafrica,Tasa de crecimiento de generación eléctrica,ind,0.00184545332069
-Sudafrica,Producción de biocombustibles,ind,0.0
-Sudafrica,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
-Sudafrica,Precio promedio de la electricidad spot,ind,0.0
-Sudafrica,Precio promedio de la electricidad al por menor,ind,0.0286329588015
-Sudafrica,Precio promedio de la electricidad residencial,ind,0.0
-Sudafrica,Precio promedio de la electricidad comercial,ind,0.0
-Sudafrica,Precio promedio de la electricidad industrial,ind,0.0
-Sudafrica,Precio promedio de queroseno,ind,0.0
-Sudafrica,Precio promedio de diesel,ind,0.0
-Sudafrica,Tasa de crecimiento de la demanda de energía,ind,0.0
-Sudafrica,Tasa de electrificación,ind,0.00187573270809
-Sudafrica,Población que utiliza combustibles sólidos para cocinar,ind,0.0
-Sudafrica,Financiamiento y Inversión,param,1.53131065414
-Sudafrica,Inversiones en energía limpia,ind,0.0320329322666
-Sudafrica,Tasa de crecimiento de las inversiones en energía limpia,ind,0.18426161999
-Sudafrica,Inversiones en activos,ind,0.0
-Sudafrica,Inversiones en finanzas corporativas,ind,0.0
-Sudafrica,Inversiones en capital de riesgo / capital privado,ind,0.0
-Sudafrica,"Préstamos, donaciones, programas de donaciones",ind,0.000377410406825
-Sudafrica,Inversiones locales,ind,0.134981044464
-Sudafrica,Número de instituciones de microfinanzas verdes,ind,0.0
-Sudafrica,Microcréditos verdes,ind,0.0
-Sudafrica,Microprestatarios verdes,ind,0.0
-Sudafrica,Coste medio de la microdeuda verde,ind,0.0
-Sudafrica,Coste medio de la deuda,ind,0.063725
-Sudafrica,Tasa swap,ind,0.0440151891136
-Sudafrica,Cadenas de valor,param,4.34210526316
-Sudafrica,Instituciones financieras en relación a la energía limpia,ind,0.1875
-Sudafrica,Cadenas de valor de energía limpia por sector,ind,0.276315789474
-Sudafrica,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
-Sudafrica,Proveedores de servicios de energía limpia,ind,0.1875
-Sudafrica,Proveedores de servicios de energía limpia distribuida,ind,0.0
-Sudafrica,Gestión de GEI,param,2.77953952083
-Sudafrica,Actividad histórica de derechos de emisión de carbono,ind,0.075
-Sudafrica,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.0125
-Sudafrica,Potencial de proyectos,ind,0.0193662531526
-Sudafrica,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.05625
-Sudafrica,Registro de GEI,ind,0.05625
-Sudafrica,Instrumentos basados en el mercado,ind,0.0
-Sudafrica,Instrumentos de PMR & NAMA,ind,0.046875
-Sudafrica,Iniciativa de reporte global,ind,0.00181064572426
-Sudafrica,Principios de inversión responsable,ind,0.0362624940505
-Sudafrica,Iniciativas de eficiencia energética,ind,0.0183438007925
-Sudafrica,Políticas de reducción de emisiones,ind,0.0192727344047
-Sudafrica,Formación empresarial centrada en el medioambiente,ind,0.0375
-Sudafrica,‘Think tanks’ centrado en el medioambiente,ind,0.0375
-Zambia,Puntaje,score,1.06529596356
-Zambia,Marco Propicio,param,0.985798347051
+Sudáfrica,Puntaje,score,1.92437084709
+Sudáfrica,Marco Propicio,param,0.991827333118
+Sudáfrica,Políticas de energía limpia,ind,0.246363878414
+Sudáfrica,Estructura del sector energético,ind,0.06318
+Sudáfrica,Marco regulatorio de la energía distribuida,ind,0.0
+Sudáfrica,Electrificación rural de energía limpia,ind,0.04
+Sudáfrica,Políticas de acceso a la energía,ind,0.0
+Sudáfrica,Obstáculos políticos,ind,0.00971428571429
+Sudáfrica,Capacidad instalada de energía limpia,ind,0.00337370582776
+Sudáfrica,Tasa de crecimiento de la capacidad instalada,ind,0.000647344830097
+Sudáfrica,Generación eléctrica de energía limpia,ind,0.00109757363096
+Sudáfrica,Tasa de crecimiento de generación eléctrica,ind,0.00184545332069
+Sudáfrica,Producción de biocombustibles,ind,0.0
+Sudáfrica,Tasa de crecimiento de la producción de biocombustibles,ind,0.0
+Sudáfrica,Precio promedio de la electricidad spot,ind,0.0
+Sudáfrica,Precio promedio de la electricidad al por menor,ind,0.0286329588015
+Sudáfrica,Precio promedio de la electricidad residencial,ind,0.0
+Sudáfrica,Precio promedio de la electricidad comercial,ind,0.0
+Sudáfrica,Precio promedio de la electricidad industrial,ind,0.0
+Sudáfrica,Precio promedio de queroseno,ind,0.0
+Sudáfrica,Precio promedio de diesel,ind,0.0
+Sudáfrica,Tasa de crecimiento de la demanda de energía,ind,0.0
+Sudáfrica,Tasa de electrificación,ind,0.00187573270809
+Sudáfrica,Población que utiliza combustibles sólidos para cocinar,ind,0.0
+Sudáfrica,Financiamiento y Inversión,param,1.53131065414
+Sudáfrica,Inversiones en energía limpia,ind,0.0320329322666
+Sudáfrica,Tasa de crecimiento de las inversiones en energía limpia,ind,0.18426161999
+Sudáfrica,Inversiones en activos,ind,0.0
+Sudáfrica,Inversiones en finanzas corporativas,ind,0.0
+Sudáfrica,Inversiones en capital de riesgo / capital privado,ind,0.0
+Sudáfrica,"Préstamos, donaciones, programas de donaciones",ind,0.000377410406825
+Sudáfrica,Inversiones locales,ind,0.134981044464
+Sudáfrica,Número de instituciones de microfinanzas verdes,ind,0.0
+Sudáfrica,Microcréditos verdes,ind,0.0
+Sudáfrica,Microprestatarios verdes,ind,0.0
+Sudáfrica,Coste medio de la microdeuda verde,ind,0.0
+Sudáfrica,Coste medio de la deuda,ind,0.063725
+Sudáfrica,Tasa swap,ind,0.0440151891136
+Sudáfrica,Cadenas de valor,param,4.34210526316
+Sudáfrica,Instituciones financieras en relación a la energía limpia,ind,0.1875
+Sudáfrica,Cadenas de valor de energía limpia por sector,ind,0.276315789474
+Sudáfrica,Cadenas de valor de energía limpia distribuida por sector,ind,0.0
+Sudáfrica,Proveedores de servicios de energía limpia,ind,0.1875
+Sudáfrica,Proveedores de servicios de energía limpia distribuida,ind,0.0
+Sudáfrica,Gestión de GEI,param,2.77953952083
+Sudáfrica,Actividad histórica de derechos de emisión de carbono,ind,0.075
+Sudáfrica,Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.0125
+Sudáfrica,Potencial de proyectos,ind,0.0193662531526
+Sudáfrica,Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.05625
+Sudáfrica,Registro de GEI,ind,0.05625
+Sudáfrica,Instrumentos basados en el mercado,ind,0.0
+Sudáfrica,Instrumentos de PMR & NAMA,ind,0.046875
+Sudáfrica,Iniciativa de reporte global,ind,0.00181064572426
+Sudáfrica,Principios de inversión responsable,ind,0.0362624940505
+Sudáfrica,Iniciativas de eficiencia energética,ind,0.0183438007925
+Sudáfrica,Políticas de reducción de emisiones,ind,0.0192727344047
+Sudáfrica,Formación empresarial centrada en el medioambiente,ind,0.0375
+Sudáfrica,‘Think tanks’ centrado en el medioambiente,ind,0.0375
+Zambia,Puntaje,score,1.06547737836
+Zambia,Marco Propicio,param,0.986251884041
 Zambia,Políticas de energía limpia,ind,0.030751622439
 Zambia,Estructura del sector energético,ind,0.06975
 Zambia,Marco regulatorio de la energía distribuida,ind,0.0577777777778
 Zambia,Electrificación rural de energía limpia,ind,0.04
-Zambia,Políticas de acceso a la energía,ind,0.0642547819892
+Zambia,Políticas de acceso a la energía,ind,0.0644361967852
 Zambia,Obstáculos políticos,ind,0.00425
 Zambia,Capacidad instalada de energía limpia,ind,0.0152911578889
 Zambia,Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -4581,13 +4581,13 @@ Zambia,Iniciativas de eficiencia energética,ind,0.0
 Zambia,Políticas de reducción de emisiones,ind,0.0
 Zambia,Formación empresarial centrada en el medioambiente,ind,0.0
 Zambia,‘Think tanks’ centrado en el medioambiente,ind,0.0
-Zimbabue,Puntaje,score,0.764081741999
-Zimbabue,Marco Propicio,param,0.869198432399
+Zimbabue,Puntaje,score,0.76393947636
+Zimbabue,Marco Propicio,param,0.8688427683
 Zimbabue,Políticas de energía limpia,ind,0.0585368708016
 Zimbabue,Estructura del sector energético,ind,0.02155
 Zimbabue,Marco regulatorio de la energía distribuida,ind,0.0533333333333
 Zimbabue,Electrificación rural de energía limpia,ind,0.04
-Zimbabue,Políticas de acceso a la energía,ind,0.0526824953789
+Zimbabue,Políticas de acceso a la energía,ind,0.0529294189286
 Zimbabue,Obstáculos políticos,ind,0.00566666666667
 Zimbabue,Capacidad instalada de energía limpia,ind,0.0116414155855
 Zimbabue,Tasa de crecimiento de la capacidad instalada,ind,3.23475790052e-05
@@ -4603,7 +4603,7 @@ Zimbabue,Precio promedio de la electricidad industrial,ind,0.0
 Zimbabue,Precio promedio de queroseno,ind,0.0263836493847
 Zimbabue,Precio promedio de diesel,ind,0.0202898550725
 Zimbabue,Tasa de crecimiento de la demanda de energía,ind,0.0
-Zimbabue,Tasa de electrificación,ind,0.00518918918919
+Zimbabue,Tasa de electrificación,ind,0.0048
 Zimbabue,Población que utiliza combustibles sólidos para cocinar,ind,0.0142857142857
 Zimbabue,Financiamiento y Inversión,param,0.271581505973
 Zimbabue,Inversiones en energía limpia,ind,0.0368600767919

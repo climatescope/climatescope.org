@@ -1,11 +1,11 @@
 name:es_var,type_var,2014
-Puntaje,score,1.23219280331
-Marco Propicio,param,1.18842537531
+Puntaje,score,1.23295102177
+Marco Propicio,param,1.19032092147
 Políticas de energía limpia,ind,0.0962825279225
 Estructura del sector energético,ind,0.116666666667
 Marco regulatorio de la energía distribuida,ind,0.0711111111111
 Electrificación rural de energía limpia,ind,0.04
-Políticas de acceso a la energía,ind,0.0592380897846
+Políticas de acceso a la energía,ind,0.0591338969003
 Obstáculos políticos,ind,0.00463636363636
 Capacidad instalada de energía limpia,ind,0.000869251275064
 Tasa de crecimiento de la capacidad instalada,ind,0.0
@@ -21,7 +21,7 @@ Precio promedio de la electricidad industrial,ind,0.0
 Precio promedio de queroseno,ind,0.0232264627212
 Precio promedio de diesel,ind,0.0150166573066
 Tasa de crecimiento de la demanda de energía,ind,0.0
-Tasa de electrificación,ind,0.00340425531915
+Tasa de electrificación,ind,0.00426666666667
 Población que utiliza combustibles sólidos para cocinar,ind,0.015306122449
 Financiamiento y Inversión,param,0.382117919799
 Inversiones en energía limpia,ind,0.000627914616615

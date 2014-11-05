@@ -1,6 +1,6 @@
 name:es_var,type_var,2014
 Puntaje,score,1.09652696599
-Marco Propicio,param,1.32052097186
+Marco Propicio,param,1.28249496778
 Políticas de energía limpia,ind,0.0637601465326
 Estructura del sector energético,ind,0.1451
 Marco regulatorio de la energía distribuida,ind,0.0
@@ -13,8 +13,8 @@ Generación eléctrica de energía limpia,ind,0.03671168883
 Tasa de crecimiento de generación eléctrica,ind,0.00637243542899
 Producción de biocombustibles,ind,0.0044923122165
 Tasa de crecimiento de la producción de biocombustibles,ind,0.00776456866293
-Precio promedio de la electricidad spot,ind,0.120018330089
-Precio promedio de la electricidad al por menor,ind,0.0
+Precio promedio de la electricidad spot,ind,0.0600091650445
+Precio promedio de la electricidad al por menor,ind,0.0447987634115
 Precio promedio de la electricidad residencial,ind,0.0
 Precio promedio de la electricidad comercial,ind,0.0
 Precio promedio de la electricidad industrial,ind,0.0
