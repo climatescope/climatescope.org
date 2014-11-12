@@ -220,6 +220,9 @@ Press:
 Project: 
   en: "Project"
   es: "Proyecto"
+Provinces:
+  en: "Provinces"
+  es: "Provincias"
 Rank: 
   en: "Rank"
   es: "Posición"
@@ -268,9 +271,12 @@ Share on Twitter:
 Share on social networks: 
   en: "Share on social networks"
   es: "Compartir en redes sociales"
-Show states / provinces: 
-  en: "Show states / provinces"
-  es: "Mostrar los estados / provincias"
+Show states: 
+  en: "Show states"
+  es: "Mostrar los estados"
+Show provinces: 
+  en: "Show provinces"
+  es: "Mostrar las provincias"
 Sort by country: 
   en: "Sort by country"
   es: "Ordenar por país"
@@ -316,6 +322,9 @@ State / province page:
 State Rank: 
   en: "State Rank"
   es: "State Rank"
+States:
+  en: "States"
+  es: "Estados"
 States / provinces: 
   en: "States / provinces"
   es: "Estados / provincias"
@@ -379,9 +388,12 @@ View in detail:
 View policies: 
   en: "View policies"
   es: "Ver politicas"
-View states / provinces: 
-  en: "View states / provinces"
-  es: "Ver estados / provincias"
+View states: 
+  en: "View states"
+  es: "Ver estados"
+View provinces: 
+  en: "View provinces"
+  es: "Ver provincias"
 View the global rank: 
   en: "View the global rank"
   es: "Ver el índice global"
