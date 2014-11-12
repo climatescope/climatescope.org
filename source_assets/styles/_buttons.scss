@@ -149,9 +149,21 @@ input[type=submit] {
     margin-right: 0.5rem;
     font-size: 1rem;
   }
+  &.hide-txt {
+    &:after {
+      margin-left: 0;
+    }
+    &:before {
+      margin-right: 0;
+    }
+    > * {
+      @extend .visually-hidden;
+    }
+  }
   &.go:after { @extend .icon-s-arr-right; }
   &.download:before { @extend .icon-download; }
   &.share:before { @extend .icon-share; }
+  &.restart:before { @extend .icon-refresh; }
 }
 
 // GROUP
