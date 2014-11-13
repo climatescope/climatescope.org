@@ -110,6 +110,7 @@
     var _self = this;
     // Data
     this.states = [];
+    this.countryId = CS.countryId;
     // If there are no states for the country redirect.
     if (!CS.countryHasStates) {
       $location.path('/details');
