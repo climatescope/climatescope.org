@@ -6,7 +6,6 @@
 
   <thead>
     <tr>
-      <th class="th-expand">&nbsp;</th>
     {% if layout.conf.type == 'region' %}
       <th class="th-rank">{{ t['Regional rank'][language] }}</th>
     {% endif %}
@@ -19,15 +18,14 @@
   </thead>
   <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortExpression ">
     <tr>
-      <td>
-        <a href="" title="{{ t['Show states / provinces'][language] }}" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">{{ t['Expand'][language] }}</span></a>
-      </td>
       {% if layout.conf.type == 'region' %}
         <td class="cell-rank">%% country.regional_ranking | leadingZero:2 %%</td>
       {% endif %}
       <td class="cell-rank">%% country.overall_ranking | leadingZero:2 %%</td>
       <td class="cell-country">
         <a href="%% countryTable.getCountryUrl(country) %%" title="{{ t['Go to country page'][language] }}">%% country.name %%</a>
+        <a href="" title="{{ t['Show states'][language] }}" ng-if="country.iso == 'in'" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span>{{ t['States'][language] }}</span></a>
+        <a href="" title="{{ t['Show provinces'][language] }}" ng-if="country.iso == 'cn'" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span>{{ t['Provinces'][language] }}</span></a>
       </td>
       <td>%% country.score | round:2 %%</td>
       <td>
@@ -42,14 +40,13 @@
 
     <tr ng-if="country.states.length > 0" class="wrapper-row country-states" style="display: none">
     {% if layout.conf.type == 'region' %}
-      <td colspan="7">
-    {% else %}
       <td colspan="6">
+    {% else %}
+      <td colspan="5">
     {% endif %}
         <table class="table table-nested">
           <thead>
             <tr>
-              <th class="th-expand">&nbsp;</th>
             {% if layout.conf.type == 'region' %}
               <th class="th-rank">&nbsp;</th>
             {% endif %}
@@ -61,7 +58,6 @@
             </tr>
           </thead>
           <tr ng-repeat="state in country.states | orderBy:'score':true">
-            <td>&nbsp;</td>
           {% if layout.conf.type == 'region' %}
             <td class="cell-rank">&nbsp;</td>
           {% endif %}

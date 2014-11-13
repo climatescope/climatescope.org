@@ -130,9 +130,15 @@ Go to country page:
 Go to policy page: 
   en: "Go to topic page"
   es: "Ir a la página de la politica"
+Go to province page: 
+  en: "Go to province page"
+  es: "Ir a la página del provincia"
 Go to state / province page: 
   en: "Go to state / province page"
   es: "Ir a la página del estado / provincia"
+  Go to state page: 
+  en: "Go to state province page"
+  es: "Ir a la página del estado"
 Go to topic page: 
   en: "Go to topic page"
   es: "Ir a la página del tema"
@@ -220,6 +226,12 @@ Press:
 Project: 
   en: "Project"
   es: "Proyecto"
+Provinces:
+  en: "Provinces"
+  es: "Provincias"
+Province:
+  en: "Province"
+  es: "Provincia"
 Rank: 
   en: "Rank"
   es: "Posición"
@@ -268,9 +280,12 @@ Share on Twitter:
 Share on social networks: 
   en: "Share on social networks"
   es: "Compartir en redes sociales"
-Show states / provinces: 
-  en: "Show states / provinces"
-  es: "Mostrar los estados / provincias"
+Show states: 
+  en: "Show states"
+  es: "Mostrar los estados"
+Show provinces: 
+  en: "Show provinces"
+  es: "Mostrar las provincias"
 Sort by country: 
   en: "Sort by country"
   es: "Ordenar por país"
@@ -316,6 +331,12 @@ State / province page:
 State Rank: 
   en: "State Rank"
   es: "State Rank"
+States:
+  en: "States"
+  es: "Estados"
+State:
+  en: "State"
+  es: "Estado"
 States / provinces: 
   en: "States / provinces"
   es: "Estados / provincias"
@@ -379,9 +400,12 @@ View in detail:
 View policies: 
   en: "View policies"
   es: "Ver politicas"
-View states / provinces: 
-  en: "View states / provinces"
-  es: "Ver estados / provincias"
+View states: 
+  en: "View states"
+  es: "Ver estados"
+View provinces: 
+  en: "View provinces"
+  es: "Ver provincias"
 View the global rank: 
   en: "View the global rank"
   es: "Ver el índice global"

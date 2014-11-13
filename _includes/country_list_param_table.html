@@ -1,7 +1,6 @@
 <table class="table parameter-table">
   <thead>
     <tr>
-      <th class="th-expand">&nbsp;</th>
       <th class="th-rank"><a href="" title="{{ t['Sort by topic rank'][language] }}" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">{{ t['Topic rank'][language] }}</a></th>
       <th class="th-country"><a href="" title="{{ t['Sort by country'][language] }}" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">{{ t['Country'][language] }}</a></th>
       <th class="th-score"><a href="" title="{{ t['Sort by topic score'][language] }}" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">{{ t['Topic score'][language] }}</a></th>
@@ -11,14 +10,12 @@
   </thead>
   <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortExpression">
     <tr>
-      <td>
-        <a href="" title="{{ t['Show states / provinces'][language] }}" ng-if="country.states.length > 0" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span class="visually-hidden">{{ t['Expand'][language] }}</span></a>
-      </td>
       <td class="cell-rank">%% country.data[0].overall_ranking | leadingZero:2 %%</td>
       <td class="cell-country">
         <a href="%% countryTable.getCountryUrl(country) %%" title="{{ t['Go to country page'][language] }}">%% country.name %%</a>
+        <a href="" title="{{ t['Show states'][language] }}" ng-if="country.iso == 'in'" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span>{{ t['States'][language] }}</span></a>
+        <a href="" title="{{ t['Show provinces'][language] }}" ng-if="country.iso == 'cn'" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span>{{ t['Provinces'][language] }}</span></a>
       </td>
-      
       <td>%% country.data[0].value | round:2 %%</td>
       <td class="cell-graph">
         <div class="table-graph">
@@ -32,11 +29,10 @@
     </tr>
     
     <tr ng-if="country.states.length > 0" class="wrapper-row country-states" style="display: none">
-    <td colspan="6">
+    <td colspan="5">
       <table class="table table-nested">
         <thead>
           <tr>
-            <th class="th-expand">&nbsp;</th>
             <th class="th-rank"><span class="visually-hidden">{{ t['Parameter rank'][language] }}</span></th>
             <th class="th-country"><span class="visually-hidden">{{ t['Country'][language] }}</span></th>
             <th class="th-score"><span class="visually-hidden">{{ t['Score'][language] }}</span></th>
@@ -45,7 +41,6 @@
           </tr>
         </thead>
         <tr ng-repeat="state in country.states | orderBy:'value':true">
-          <td>&nbsp;</td>
           <td class="cell-rank">%% state.state_ranking | leadingZero:2 %%</td>
           <td class="cell-country">
             <a href="%% countryTable.getStateUrl(state) %%" title="{{ t['Go to state / province page'][language] }}">%% state.name %%</a>

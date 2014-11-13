@@ -69,22 +69,24 @@
   }
   
   .expand-toggle {
-    display: block;
-    &:before {
+    float: right;
+    color: tint($primary-color, 60%);
+    margin-left: 1rem;
+    &:after {
       @extend .icon-s-arr-down;
-      color: tint($primary-color, 20%);
       font-size: 1rem;
+      margin-left: 0.125rem;
     }
   }
 
-  .open .expand-toggle:before {
+  .open .expand-toggle:after {
     @extend .icon-s-arr-up;
   }
 
   tr.disabled {
-      pointer-events: none;
-      cursor: not-allowed;
-      @include opacity(0.3);
+    pointer-events: none;
+    cursor: not-allowed;
+    @include opacity(0.3);
   }
 
   @media print {
@@ -103,9 +105,6 @@
   td, th {
     break-word: word-wrap;
   }
-  .th-expand {
-    width: 2rem;
-  }
   .th-rank {
     width: 6rem;
   }
@@ -113,7 +112,7 @@
     width: 7rem;
   }
   .th-country {
-    width: 13rem;
+    width: 15rem;
   }
   .th-graph {
     width: auto;
