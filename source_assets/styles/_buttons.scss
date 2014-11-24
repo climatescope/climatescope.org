@@ -137,7 +137,7 @@ input[type=submit] {
   min-height: 2.75rem;
 }
 
-// ICONS
+// ICONS & BADGES
 
 .bttn {
   &:after {
@@ -164,6 +164,9 @@ input[type=submit] {
   &.download:before { @extend .icon-download; }
   &.share:before { @extend .icon-share; }
   &.restart:before { @extend .icon-refresh; }
+  .badge {
+    background-color: rgba($primary-color, 0.15);
+  }
 }
 
 // GROUP
