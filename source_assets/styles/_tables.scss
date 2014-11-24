@@ -79,6 +79,7 @@
       @extend .icon-s-arr-down;
       font-size: 1rem;
       margin-left: 0.125rem;
+      @include opacity(0.6);
     }
   }
 
