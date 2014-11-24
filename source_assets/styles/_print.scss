@@ -6,7 +6,8 @@
 
 @media print {
   * {
-    color: $body-font-color;
+    color: $body-font-color !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   }
   .no-print {
     display: none;
