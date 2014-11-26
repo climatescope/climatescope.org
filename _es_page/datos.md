@@ -40,7 +40,7 @@ arrange: full
       <p>Descargar la metodología completa.</p>
       <ul class="download-list">
         <li>
-          <a href="http://global-climatescope.org/es/download/docs/climatescope-methodology.pdf" title="Download methodology in PDF" class="bttn bttn-success download data-download">PDF <span class="badge">0.4Mb</span></a>
+          <a href="http://global-climatescope.org/es/download/docs/climatescope-2014-methodology-es.pdf" title="Descargar metodologia en formato PDF" class="bttn bttn-success download data-download">PDF <span class="badge">0.4Mb</span></a>
         </li>
       </ul>
     </div>
