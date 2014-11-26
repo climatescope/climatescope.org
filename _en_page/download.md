@@ -50,3 +50,5 @@ arrange: full
   </li>
 
 </ul>
+
+{% include download_table.html %}

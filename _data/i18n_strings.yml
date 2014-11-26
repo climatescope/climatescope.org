@@ -25,12 +25,18 @@ About the methodology:
 About this indicator: 
   en: "About this indicator"
   es: "Sobre el indicador"
+africa:
+  en: "Africa"
+  es: "África"
 All: 
   en: "All"
   es: "Todos"
 Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope.:
   en: "Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope."
   es: "Analizar más de 450 políticas que buscan estimular el desarrollo de las energías limpias en los países, estados y provincias relevados por el Climascopio."
+asia:
+  en: "Asia"
+  es: "Asia"
 Average: 
   en: "Average"
   es: "Media"
@@ -73,12 +79,21 @@ Contact us:
 Country: 
   en: "Country"
   es: "País"
+Data (CSV):
+  en: "Data (CSV)"
+  es: "Datos (CSV)"
 Description: 
   en: "Description"
   es: "Descripción"
 Download: 
   en: "Download"
   es: "Descargar"
+Download by country:
+  en: "Download by country"
+  es: "Descargar por país"
+Download by state / province:
+  en: "Download by state / province"
+  es: "Descargar por estado / provincia"
 Download data: 
   en: "Download data"
   es: "Descargar datos"
@@ -157,6 +172,9 @@ Info:
 Installed capacity: 
   en: "Installed capacity"
   es: "Capacidad instalada"
+lac:
+  en: "Latin America and the Caribbean"
+  es: "América Latina y el Caribe"
 Learn more about the methodology: 
   en: "Learn more about the methodology"
   es: "Más sobre la metodologia"
@@ -244,6 +262,9 @@ Rank:
 Raw data (CSV): 
   en: "Raw data (CSV)"
   es: "Raw data (CSV)"
+Region:
+  en: "Region"
+  es: "Region"
 Regional Rank: 
   en: "Regional Rank"
   es: "Posición regional"
