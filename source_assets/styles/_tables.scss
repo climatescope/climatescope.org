@@ -138,6 +138,20 @@
   }
 }
 
+.download-table {
+  margin-bottom: 3rem;
+  table-layout: fixed;
+  td, th {
+    break-word: word-wrap;
+  }
+  .th-country {
+    width: 12rem;
+  }
+  .th-download {
+    width: 17rem;
+  }
+}
+
 .detailed-data {
   .cell-hd {
     @extend .hd-label;

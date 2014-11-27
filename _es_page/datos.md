@@ -48,4 +48,10 @@ arrange: full
 
 </ul>
 
-{% include download_table.html %}
+## Descargar por país
+
+{% include download_table.html type='country' %}
+
+## Descargar por estado / provincia
+
+{% include download_table.html type='state' %}

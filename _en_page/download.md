@@ -51,4 +51,10 @@ arrange: full
 
 </ul>
 
-{% include download_table.html %}
+## Download by country
+
+{% include download_table.html type='country' %}
+
+## Download by state / province
+
+{% include download_table.html type='state' %}

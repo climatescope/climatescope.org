@@ -1,52 +1,32 @@
 {% assign language = site.collections[page.collection].lang %}
 {% assign t = site.data.i18n_strings %}
 
-<h2>{{ t['Download by country'][language] }}</h2>
+{% assign type = include.type %}
+{% case type %}
+  {% when 'country' %}
+    {% assign col_name = site.collections['en_country'].i18n[language] %}
+  {% when 'state' %}
+    {% assign col_name = site.collections['en_state'].i18n[language] %}
+{% endcase %}
+
+{% assign country_col_name = site.collections['en_country'].i18n[language] %}
+
 <table class="table download-table">
   <thead>
     <tr>
+    {% case type %}
+      {% when 'country' %}
       <th class="th-country">{{ t['Country'][language] }}</th>
       <th class="th-region">{{ t['Region'][language] }}</th>
       <th class="th-download">{{ t['Download'][language] }}</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% assign col_name = site.collections['en_country'].i18n[language] %}
-    {% for aa in site[col_name] %}
-
-        {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/countries/climatescope-{{ aa.id }}.csv{% endcapture %}
-
-        {% if aa.region == 'africa' or aa.region == 'asia' %}
-          {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/en/download/reports/countries/climatescope-{{ site.edition }}-{{ aa.id }}-en.pdf{% endcapture %}
-        {% else %}
-          {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/countries/climatescope-{{ site.edition }}-{{ aa.id }}-{{ language }}.pdf{% endcapture %}
-        {% endif %}
-
-      <tr>
-        <td class="cell-country">{{ aa.title }}</td>
-        <td class="cell-region">{{ t[aa.region][language] }}</td>
-        <td class="cell-download">
-          <a href="{{ csvlink }}" title="{{ t['Download raw data in CSV format'][language] }}" class="bttn bttn-s bttn-success download">{{ t['Data (CSV)'][language] }}</a>
-          {% if pdflink %}
-          <a href="{{ pdflink }}" title="{{ t['Download report in PDF format'][language] }}" class="bttn bttn-s bttn-success download">{{ t['Report (PDF)'][language] }}</a>
-          {% endif %}
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-<h2>{{ t['Download by state / province'][language] }}</h2>
-<table class="table download-table">
-  <thead>
-    <tr>
+      {% when 'state' %}
       <th class="th-country">{{ t['State / province'][language] }}</th>
       <th class="th-region">{{ t['Country'][language] }}</th>
       <th class="th-download">{{ t['Download'][language] }}</th>
+    {% endcase %}
     </tr>
   </thead>
   <tbody>
-  {% assign col_name = site.collections['en_state'].i18n[language] %}
     {% for aa in site[col_name] %}
 
         {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/countries/climatescope-{{ aa.id }}.csv{% endcapture %}
@@ -57,13 +37,21 @@
           {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/countries/climatescope-{{ site.edition }}-{{ aa.id }}-{{ language }}.pdf{% endcapture %}
         {% endif %}
 
+        {% case type %}
+          {% when 'country' %}
+            {% capture aa_parent %}{{ t[aa.region][language] }}{% endcapture %}
+          {% when 'state' %}
+            {% assign country = site[country_col_name] | where:"id", aa.country | first %}
+            {% capture aa_parent %}{{ country.title }}{% endcapture %}
+        {% endcase %}
+
       <tr>
-        <td class="cell-country">{{ aa.title }}</td>
-        <td class="cell-region">{{ aa.country }}</td>
+        <td class="cell-country"><a href="{{ site.domain }}{{ site.path_prefix }}{{ aa.url }}" title="{{ t['Go to page'][language] }}">{{ aa.title }}</a></td>
+        <td class="cell-region">{{ aa_parent }}</td>
         <td class="cell-download">
-          <a href="{{ csvlink }}" title="{{ t['Download raw data in CSV format'][language] }}" class="bttn bttn-s bttn-success download">{{ t['Data (CSV)'][language] }}</a>
+          <a href="{{ csvlink }}" title="{{ t['Download raw data in CSV format'][language] }}" class="bttn bttn-s bttn-success download data-download">{{ t['Data (CSV)'][language] }}</a>
           {% if pdflink %}
-          <a href="{{ pdflink }}" title="{{ t['Download report in PDF format'][language] }}" class="bttn bttn-s bttn-success download">{{ t['Report (PDF)'][language] }}</a>
+          <a href="{{ pdflink }}" title="{{ t['Download report in PDF format'][language] }}" class="bttn bttn-s bttn-success download data-download">{{ t['Report (PDF)'][language] }}</a>
           {% endif %}
         </td>
       </tr>
