@@ -5,10 +5,17 @@
 }
 
 @media print {
+  html, body {
+    font-size: 80%;
+  }
   * {
-    color: $body-font-color;
+    color: $body-font-color !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   }
   .no-print {
     display: none;
+  }
+  .layout--home {
+  	padding-top: 0 !important;
   }
 }

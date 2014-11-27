@@ -132,6 +132,12 @@
       border-bottom: 0;
     }
   }
+  @media print {
+    .table-nested {
+      margin-left: 1rem;
+      display: block;
+    }
+  }
 }
 
 .detailed-data {
