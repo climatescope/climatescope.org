@@ -92,7 +92,7 @@ a:active{
     &:after {
       position: absolute;
       z-index: 1;
-      font-size: 6rem;
+      font-size: 4rem;
       @include opacity(0.2);
       color: $primary-color;
       line-height: 1;
@@ -105,7 +105,7 @@ a:active{
 .well-l {
   padding: 2rem;
   &.download {
-    padding-right: 10rem;
+    padding-right: 7rem;
     margin-bottom: 2rem;
     &:after {
       top: 2rem;
@@ -116,6 +116,21 @@ a:active{
 
 .well-s {
   padding: 0.5rem;
+}
+
+.well-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  > li {
+    @include col(12/12);
+  }
+  @media #{$xlarge-up} {
+     > li {
+      @include col(6/12, $cycle: 2);
+    }
+  }
 }
 
 // Labels
@@ -506,11 +521,17 @@ a:active{
     .layout--page & {
       @include col(10/12);
     }
+    .layout--page.full & {
+      @include col(12/12);
+    }
   }
   @media #{$xlarge-up} {
     @include col(8/12);
     .layout--page & {
       @include col(8/12);
+    }
+    .layout--page.full & {
+      @include col(12/12);
     }
   }
 }
@@ -1056,34 +1077,10 @@ a:active{
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid tint($primary-color, 90%);
-  .well.download & {
-    border-top-color: tint($primary-color, 85%);
-  }
+  overflow: hidden;
   > li {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    border-bottom: 1px solid tint($primary-color, 90%);
-    padding: 0.5rem 0;
-    margin: 0;
-    .well.download & {
-      border-bottom-color: tint($primary-color, 85%);
-    }
-  }
-  .term {
-    position: absolute;
-    top: 50%;
-    left: auto;
-    font-family: $brand-font-family;
-    font-weight: $brand-font-bold;
-    display: block;
-    text-transform: uppercase;
-    height: 1.5rem;
-    margin-top: -0.75rem;
-  }
-  .bttn {
-    float: right;
+    float: left;
+    margin: 0 0.5rem 0.5rem 0;
   }
 }
 
