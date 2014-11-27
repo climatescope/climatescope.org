@@ -14,6 +14,10 @@
     background: $primary-color;
     @include opacity(0.2);
   }
+  @media print {
+    height: auto;
+    position: static;
+  }
 }
 
 .table-bar {
@@ -47,6 +51,20 @@
 
   li.param-4 {
     background-color: $infograph-color-d;
+  }
+  @media print {
+    height: auto;
+    list-style-type: disc; 
+    box-shadow: none;
+    li {
+      display: block;
+      float: none;
+      height: auto;
+      box-shadow: none;
+      width: auto !important;
+      height: auto;
+      background: none;
+    }
   }
 }
 

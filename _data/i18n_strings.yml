@@ -4,9 +4,6 @@
 2013 Edition: 
   en: "2013 Edition"
   es: "Edición 2013"
-2012 - 2014, Climatescope: 
-  en: "2012 - 2014, Climatescope"
-  es: "2012 - 2014, Climascopio"
 about:
   en: "about"
   es: "sobre"
@@ -16,18 +13,27 @@ About:
 About the Climatescope: 
   en: "About the Climatescope"
   es: "Sobre el Climascopio"
+About the license: 
+  en: "About the license"
+  es: "Sobre la licencia"
 About the methodology: 
   en: "About the methodology"
   es: "Sobre la metodologia"
 About this indicator: 
   en: "About this indicator"
   es: "Sobre el indicador"
+africa:
+  en: "Africa"
+  es: "África"
 All: 
   en: "All"
   es: "Todos"
 Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope.:
   en: "Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope."
   es: "Analizar más de 450 políticas que buscan estimular el desarrollo de las energías limpias en los países, estados y provincias relevados por el Climascopio."
+asia:
+  en: "Asia"
+  es: "Asia"
 Average: 
   en: "Average"
   es: "Media"
@@ -70,12 +76,21 @@ Contact us:
 Country: 
   en: "Country"
   es: "País"
+Data (CSV):
+  en: "Data (CSV)"
+  es: "Datos (CSV)"
 Description: 
   en: "Description"
   es: "Descripción"
 Download: 
   en: "Download"
   es: "Descargar"
+Download by country:
+  en: "Download by country"
+  es: "Descargar por país"
+Download by state / province:
+  en: "Download by state / province"
+  es: "Descargar por estado / provincia"
 Download data: 
   en: "Download data"
   es: "Descargar datos"
@@ -154,9 +169,15 @@ Info:
 Installed capacity: 
   en: "Installed capacity"
   es: "Capacidad instalada"
+lac:
+  en: "Latin America and the Caribbean"
+  es: "América Latina y el Caribe"
 Learn more about the methodology: 
   en: "Learn more about the methodology"
   es: "Más sobre la metodologia"
+License: 
+  en: "License"
+  es: "Licencia"
 Loading data... Please wait.: 
   en: "Loading data... Please wait."
   es: "Cargar datos... Por favor espere."
@@ -238,6 +259,9 @@ Rank:
 Raw data (CSV): 
   en: "Raw data (CSV)"
   es: "Raw data (CSV)"
+Region:
+  en: "Region"
+  es: "Region"
 Regional Rank: 
   en: "Regional Rank"
   es: "Posición regional"

@@ -70,12 +70,16 @@
   
   .expand-toggle {
     float: right;
-    color: tint($primary-color, 60%);
+    color: tint($primary-color, 40%);
     margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
     &:after {
       @extend .icon-s-arr-down;
       font-size: 1rem;
       margin-left: 0.125rem;
+      @include opacity(0.6);
     }
   }
 
@@ -131,6 +135,26 @@
       overflow: hidden;
       border-bottom: 0;
     }
+  }
+  @media print {
+    .table-nested {
+      margin-left: 1rem;
+      display: block;
+    }
+  }
+}
+
+.download-table {
+  margin-bottom: 3rem;
+  table-layout: fixed;
+  td, th {
+    break-word: word-wrap;
+  }
+  .th-country {
+    width: 12rem;
+  }
+  .th-download {
+    width: 17rem;
   }
 }
 
