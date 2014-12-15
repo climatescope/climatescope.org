@@ -2,7 +2,7 @@
 layout: parameter
 
 id: 2
-title: Financiamiento y inversiones
+title: Financiamiento e inversiones
 weight: "2"
 ---
 El Parámetro II, Inversiones en Energía Limpia y Financiamiento Climático, toma en cuenta 14 indicadores y registra la cantidad de inversiones en energías limpias que atrae un país, la disponibilidad de fondos locales, el costo local de la deuda, y la actividad de las microfinanzas verdes.
