@@ -64,6 +64,9 @@ Climatescope:
 Close: 
   en: "Close"
   es: "Cerrar"
+Compare: 
+  en: "Compare"
+  es: "Compare"
 Compare with: 
   en: "Compare with"
   es: "Compare con"
@@ -76,6 +79,9 @@ Contact us:
 Country: 
   en: "Country"
   es: "País"
+"Country / state / province": 
+  en: "Country / state / province"
+  es: "Country / state / province ES"
 Data (CSV):
   en: "Data (CSV)"
   es: "Datos (CSV)"

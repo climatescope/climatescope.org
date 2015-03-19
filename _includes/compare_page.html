@@ -1,0 +1,66 @@
+<section class="layout--hub policies" ng-app="compareApp" ng-controller="compareController as compareCtrl">
+
+  <header class="layout--hub__header">
+    <div class="row--contained">
+      <div class="layout--hub__heading">
+        <h1 class="layout--hub__title">{{ t['Compare'][language] }}</h1>
+      </div>
+      <div class="layout--hub__tools" init-dropdown>
+        {% include actions_menu.html download_exc=true %}
+      </div>
+      
+      <div class="layout--hub__controls"> 
+        
+        <div class="control">
+          <label class="control-title" for="country_compare">{{ t['Country / state / province'][language] }}</label>
+          <select class="sllt sllt-m" id="country_compare" name="country_compare" ng-model="compareCtrl.compare[0]" ng-options="value as value.name for value in compareCtrl.countries">
+            <option value="">{{ t['All'][language] }}</option>
+          </select>
+        </div>
+        
+        <div class="control">
+          <label class="control-title" for="country_with">{{ t['Country / state / province'][language] }}</label>
+            <select class="sllt sllt-m" id="country_with" name="country_with" ng-model="compareCtrl.compare[1]" ng-options="value as value.name for value in compareCtrl.countries">
+            <option value="">{{ t['All'][language] }}</option>
+          </select>
+        </div>
+          
+        
+        <div class="control">
+          <button ng-click="compareCtrl.reset()" class="bttn bttn-default bttn-m restart hide-txt"><span>{{ t['Reset'][language] }}</span></button>
+          <button ng-click="compareCtrl.apply()" class="bttn bttn-dark bttn-m">{{ t['Compare'][language] }}</button>
+        </div>
+        
+      </div>
+      
+    </div>
+  </header>
+
+  <div class="layout--hub__body">
+    <div class="row--contained">
+
+
+<div class="layout--entry__heading" ng-if="compareCtrl.compare[0]">
+    <h1 class="layout--entry__title">%% compareCtrl.compare[0].name %%</h1>
+    <p class="layout--entry__subtitle">
+      <a href="#" title="no">parent</a>
+    </p>
+    <em class="label-grid label-grid-on" ng-if="compareCtrl.compare[0].grid == 'on'"><span>{{ t['On-grid'][language] }}</span></em>
+    <em class="label-grid label-grid-off" ng-if="compareCtrl.compare[0].grid == 'off'"><span>{{ t['Off-grid'][language] }}</span></em>
+</div>
+
+<div class="layout--entry__heading" ng-if="compareCtrl.compare[1]">
+    <h1 class="layout--entry__title">%% compareCtrl.compare[1].name %%</h1>
+    <p class="layout--entry__subtitle">
+      <a href="#" title="no">parent</a>
+    </p>
+    <em class="label-grid label-grid-on" ng-if="compareCtrl.compare[1].grid == 'on'"><span>{{ t['On-grid'][language] }}</span></em>
+    <em class="label-grid label-grid-off" ng-if="compareCtrl.compare[1].grid == 'off'"><span>{{ t['Off-grid'][language] }}</span></em>
+</div>
+
+
+
+    </div>
+  </div>
+
+</section>
