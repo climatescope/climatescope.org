@@ -58,6 +58,9 @@ By:
 Calculate your own score: 
   en: "Calculate your own score"
   es: "Calcule su propia puntuación"
+Chinese provinces: 
+  en: "Chinese provinces"
+  es: "Chinese states ES"
 Climatescope:
   en: "Climatescope"
   es: "Climascopio"
@@ -79,9 +82,9 @@ Contact us:
 Country: 
   en: "Country"
   es: "País"
-"Country / state / province": 
+Country / state / province: 
   en: "Country / state / province"
-  es: "Country / state / province ES"
+  es: "País / estado / provincia"
 Data (CSV):
   en: "Data (CSV)"
   es: "Datos (CSV)"
@@ -157,7 +160,7 @@ Go to province page:
 Go to state / province page: 
   en: "Go to state / province page"
   es: "Ir a la página del estado / provincia"
-  Go to state page: 
+Go to state page: 
   en: "Go to state province page"
   es: "Ir a la página del estado"
 Go to topic page: 
@@ -169,6 +172,9 @@ Grid:
 In detail: 
   en: "In detail"
   es: "En detalle"
+Indian states: 
+  en: "Indian states"
+  es: "Indian states ES"
 Info: 
   en: "Info"
   es: "Info"
