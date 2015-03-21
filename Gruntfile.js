@@ -38,10 +38,10 @@ module.exports = function(grunt) {
         options : {
           force : true
         },
-        src : ['source_assets/scripts/**.js']
+        src : ['source_assets/scripts/**/*.js', '!source_assets/scripts/angular/bootstrap/**', '!source_assets/scripts/vendor/**']
       },
 
-      prod: ['source_assets/scripts/**.js']
+      prod: ['source_assets/scripts/**/*.js', '!source_assets/scripts/angular/bootstrap/**', '!source_assets/scripts/vendor/**']
     },
 
     // https://github.com/gruntjs/grunt-contrib-uglify
