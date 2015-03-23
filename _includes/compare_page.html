@@ -65,7 +65,9 @@
 
     <dl class="stats-list">
       <dt>{{ t['Global rank'][language] }}</dt>
-      <dd>%% compareCtrl.compareSelected[0].overall_ranking | round:2 %%</dd>
+      <dd>%% (compareCtrl.compareSelected[0].overall_ranking | round:2)  || '-' %%</dd>
+      <dt>{{ t['State Rank'][language] }}</dt>
+      <dd>%% (compareCtrl.compareSelected[0].state_ranking | round:2)  || '-' %%</dd>
       <dt>{{ t['Global score'][language] }}</dt>
       <dd>%% compareCtrl.compareSelected[0].score | round:2 %%</dd>
 
@@ -93,7 +95,9 @@
 
     <dl class="stats-list">
       <dt>{{ t['Global rank'][language] }}</dt>
-      <dd>%% compareCtrl.compareSelected[1].overall_ranking | round:2 %%</dd>
+      <dd>%% (compareCtrl.compareSelected[1].overall_ranking | round:2)  || '-' %%</dd>
+      <dt>{{ t['State Rank'][language] }}</dt>
+      <dd>%% (compareCtrl.compareSelected[1].state_ranking | round:2)  || '-' %%</dd>
       <dt>{{ t['Global score'][language] }}</dt>
       <dd>%% compareCtrl.compareSelected[1].score | round:2 %%</dd>
 
