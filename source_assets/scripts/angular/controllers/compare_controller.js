@@ -1,5 +1,5 @@
 (function() {
-  var app = angular.module('compareApp', ['ngRoute', 'ui.bootstrap', 'mathFilters'], function($interpolateProvider) {
+  var app = angular.module('compareApp', ['ngRoute', 'ui.bootstrap', 'mathFilters', 'csDirectives'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('%%');
     $interpolateProvider.endSymbol('%%');
   });

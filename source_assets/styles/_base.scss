@@ -1035,6 +1035,19 @@ a:active{
   .admin-select optgroup option {
     padding-left: 1rem;
   }
+
+  .compare--entry__heading > *:last-child {
+    margin-bottom: 0; 
+  }
+
+  .params {
+    margin-top: 3rem;
+  }
+
+  .param-details {
+    // Because of chart tooltips.
+    overflow: visible;
+  }
 }
 
 
