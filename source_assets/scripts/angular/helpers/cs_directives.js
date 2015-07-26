@@ -17,10 +17,11 @@
           case 'installed_capacity':
             chart = chart__installed_capacity(attr.id);
           break;
-        }
-        switch(scope.chart_to_load) {
           case 'clean_energy_investments':
             chart = chart__clean_energy_investments(attr.id);
+          break;
+          case 'carbon_offset':
+            chart = chart__carbon_offset(attr.id);
           break;
         }
         

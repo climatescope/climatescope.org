@@ -49,6 +49,10 @@
         <figcaption>{{ t['Clean energy investments'][language] }}</figcaption>
         <div id="clean-energy-investments" class="chart-std" init-chart="clean_energy_investments"><!-- Chart --></div>
       </figure>
+      <figure ng-if="param.id == 4" class="chart-wrapper">
+        <figcaption>{{ t['Carbon offset'][language] }}</figcaption>
+        <div id="carbon-offset" class="chart-std" init-chart="carbon_offset"><!-- Chart --></div>
+      </figure>
     </div>
 
   </div>

@@ -227,6 +227,38 @@
   }
 }
 
+#carbon-offset {
+  .power-generation {
+    fill: tint(blue, 15%);
+  }
+  .methane {
+    fill: tint($infograph-color-a, 15%);
+  }
+  .forestry {
+    fill: tint($infograph-color-b, 15%);
+  }
+  .waste {
+    fill: tint($infograph-color-c, 15%);
+  }
+  .energy-efficiency {
+    fill: tint($infograph-color-d, 15%);
+  }
+  .other {
+    fill: tint(red, 15%);
+  }
+
+  .chart-legend {
+    .label, .value {
+      fill: $body-font-color;
+      font-family: $brand-font-family;
+      font-weight: $brand-font-weight;
+    }
+    .label {
+      font-weight: $brand-font-bold;
+    }
+  }
+}
+
 .chart-std {
   position: relative;
   height: 250px;
