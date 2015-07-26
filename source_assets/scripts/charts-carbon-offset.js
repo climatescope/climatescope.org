@@ -1,5 +1,5 @@
 /* jshint unused: false */
-function chart__carbon_offset(element_id) {
+function chart__carbon_offset(element_id, iso) {
   // NOTE:
   // This chart was derived from the installed capacity.
   // It was modified to be a line chart, however some on the class names
@@ -61,21 +61,22 @@ function chart__carbon_offset(element_id) {
   var margin = {top: 10, right: 0, bottom: 10, left: 0};
   var width, height, radius;
 
-  // Request data.
-  var id = CS.stateId ? CS.stateId : CS.countryId;
-  var url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset/' + id + '.json';
-  d3.json(url, function(error, DATA) {
-    if (error) {
-      return console.log(error);
-    }
-    
-    meta_info = DATA.meta;
-    chart_data = DATA.data;
+  var fetch_data = function(iso) {
+    // Request data.
+    var id = iso ? iso : (CS.stateId ? CS.stateId : CS.countryId);
+    var url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset/' + id + '.json';
+    d3.json(url, function(error, DATA) {
+      if (error) {
+        return console.log(error);
+      }
+      
+      meta_info = DATA.meta;
+      chart_data = DATA.data;
 
-    draw_chart();
-  });
- 
-  
+      draw_chart();
+    });
+  }
+
   var draw_chart = function() {
     var w = $chart_container.width();
     var h = $chart_container.height();
@@ -133,8 +134,12 @@ function chart__carbon_offset(element_id) {
       .attr("class", function(d) { return "arc segment " + d.data.id; });
 
   };
+
+  // GO!
+  fetch_data(iso);
   
   return {
-    draw: draw_chart
+    draw: draw_chart,
+    fetch: fetch_data
   };
 }

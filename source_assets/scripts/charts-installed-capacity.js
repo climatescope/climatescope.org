@@ -112,23 +112,23 @@ function chart__installed_capacity(element_id, iso) {
       if (error) {
         return console.log(error);
       }
-      
+
       meta_info = DATA.meta;
       var chart_data = DATA.data;
-      
+
       // Domain for the X Axis.
       // Since the years are the same for all the data, just create
       // the domain from one.
       x.domain(d3.extent(chart_data[0].values, function(d) { return d.year; }));
-      
+
       // Stack the values.
       stacked_data = stack(chart_data);
-      
+
       // Compute the y domain taking into account the stacked values.
       y.domain([0, d3.max(stacked_data, function (c) { 
         return d3.max(c.values, function (d) { return d.y0 + d.y; });
       })]);
-      
+
       // Groups to hold the focus circles.
       // One group per line. Will hold two circles:
       // An outer and bigger and an inner and smaller one
@@ -138,17 +138,17 @@ function chart__installed_capacity(element_id, iso) {
           .attr('class', function(d) {
             return 'focus-circles ' + d.id;
           });
-      
+
       // Outer circle.
       focus_circles.append('circle')
         .attr("r", 8)
         .attr('class', 'outer');
-    
+
       // Inner circle.
       focus_circles.append('circle')
         .attr("r", 3)
         .attr('class', 'inner');
-      
+
       // Add focus rectangle. Will be responsible to trigger the events.
       svg.append("rect")
         .attr('class', 'trigger-rect')
@@ -161,7 +161,7 @@ function chart__installed_capacity(element_id, iso) {
           // to the mouse position.
           var bisector = d3.bisector(function(d) { return d.year; }).left;
           var mousex = x.invert(d3.mouse(this)[0]);
-      
+
           var xpos;
           var doc_index;
           // Position the circles.
@@ -170,12 +170,12 @@ function chart__installed_capacity(element_id, iso) {
               var closest_year = Math.round(mousex);
               doc_index = bisector(d.values, closest_year);
               var doc = d.values[doc_index];
-              
+
               xpos = x(doc.year);
-      
+
               return "translate(" + x(doc.year) + "," +  y(doc.y + doc.y0) + ")";
             });
-      
+
           // Position the focus line.
           focus.select('.focus-line')
             .attr('x1', xpos).attr('y1', height)
@@ -189,7 +189,7 @@ function chart__installed_capacity(element_id, iso) {
               var tooltip_width = chart_tooltip.style('width').replace('px', '');
               // Remove left and right classes.
               chart_tooltip.classed({right: false, left: false});
-              
+
               // Get chart container position in space.
               // Use jQuery object since it's easier.
               var container_left = $chart_container.offset().left;
@@ -205,7 +205,7 @@ function chart__installed_capacity(element_id, iso) {
                 chart_tooltip.classed({left: true});
                 return 'transform: translate(' + (xpos - tooltip_width + margin.left - 10) + 'px, 50px)';
               }
-              
+
             })
             .html(function() {
               var content = '<div class="tooltip-inner">';
@@ -225,15 +225,15 @@ function chart__installed_capacity(element_id, iso) {
               return content;
             });
       });
-      
+
       var chart_tooltip = chart_container.append('div')
         .style('display', 'none')
         .attr('class', 'tooltip-map left tooltip-chart');
-      
+
       draw_chart();
     });
   }
-  
+
   var draw_chart = function() {
     var w = $chart_container.width();
     var h = $chart_container.height();
@@ -241,7 +241,7 @@ function chart__installed_capacity(element_id, iso) {
     // Size..
     width = w - margin.left - margin.right;
     height = h - margin.top - margin.bottom;
-      
+
     // Set chart size.
     chart_container.select("svg")
       //.attr("width", width + margin.left + margin.right)
@@ -252,15 +252,15 @@ function chart__installed_capacity(element_id, iso) {
     // Chart container translate.
     chart_container.select(".chart-container")
       .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
+
     chart_container.select(".trigger-rect")
       .attr("width", width)
       .attr("height", height);
-    
+
     // Update scale ranges
     x.range([0, width]);
     y.range([height, 0]);
-    
+
     // Areas.
     var areas = areas_group.selectAll("path")
       .data(stacked_data);
@@ -272,7 +272,7 @@ function chart__installed_capacity(element_id, iso) {
     areas
         .attr("d", function(d) { return area(d.values); })
         .attr("class", function(d) { return "area " + d.id; });
-  
+
     // Area delimiters
     var area_delimiters = area_delimiters_group.selectAll("path")
       .data(stacked_data);
@@ -296,7 +296,7 @@ function chart__installed_capacity(element_id, iso) {
     // Update current.
     points
         .attr("class", function(d) { return "area-line-points " + d.id; });
-    
+
     // Add the points.
     var individual_points = points.selectAll("circle")
       .data(function(d) { return d.values; });
@@ -312,20 +312,20 @@ function chart__installed_capacity(element_id, iso) {
 
     /////////////////////////////////////////////////////
     // Append Axis.
-  
+
     svg.select(".x.axis")
       .attr("transform", "translate(0," + (height + 32) + ")")
       .call(xAxis);
-      
+
     svg.select(".x.axis .label")
       .attr("x", width)
       .attr("y", -12)
       .text(meta_info['label-x']);
-  
+
     svg.select(".y.axis")
       .attr("transform", "translate(-32,0)")
       .call(yAxis);
-   
+
     svg.select(".y.axis .label")
       .attr("y", 20)
       .text(meta_info['label-y']);
@@ -334,7 +334,7 @@ function chart__installed_capacity(element_id, iso) {
 
   // GO!
   fetch_data(iso);
-  
+
   return {
     draw: draw_chart,
     fetch: fetch_data

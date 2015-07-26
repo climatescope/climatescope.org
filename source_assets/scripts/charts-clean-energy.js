@@ -1,5 +1,5 @@
 /* jshint unused: false */
-function chart__clean_energy_investments(element_id) {
+function chart__clean_energy_investments(element_id, iso) {
   // NOTE:
   // This chart was derived from the installed capacity.
   // It was modified to be a line chart, however some on the class names
@@ -88,132 +88,133 @@ function chart__clean_energy_investments(element_id) {
   var margin = {top: 20, right: 20, bottom: 82, left: 100};
   var width, height;
 
-  // Request data.
-  var id = CS.stateId ? CS.stateId : CS.countryId;
-  var url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + id + '.json';
-  d3.json(url, function(error, DATA) {
-    if (error) {
-      return console.log(error);
-    }
-    
-    meta_info = DATA.meta;
-    chart_data = DATA.data;
-    
-    // Domain for the X Axis.
-    // Since the years are the same for all the data, just create
-    // the domain from one.
-    x.domain(d3.extent(chart_data[0].values, function(d) { return d.year; }));
-    
-    // Compute the y domain.
-    y.domain([0, d3.max(chart_data, function (d) {
-      return d3.max(d.values, function(o) { return o.value });
-    })]);
-    
-    // Groups to hold the focus circles.
-    // One group per line. Will hold two circles:
-    // An outer and bigger and an inner and smaller one
-    var focus_circles = focus.selectAll("g")
-      .data(chart_data)
-        .enter().append('g')
-        .attr('class', function(d) {
-          return 'focus-circles ' + d.id;
-        });
-    
-    // Outer circle.
-    focus_circles.append('circle')
-      .attr("r", 8)
-      .attr('class', 'outer');
-  
-    // Inner circle.
-    focus_circles.append('circle')
-      .attr("r", 3)
-      .attr('class', 'inner');
-    
-    // Add focus rectangle. Will be responsible to trigger the events.
-    svg.append("rect")
-      .attr('class', 'trigger-rect')
-      .style("fill", "none")
-      .style("pointer-events", "all")
-      .on("mouseover", function() { focus.style("display", null); chart_tooltip.style("display", null); })
-      .on("mouseout", function() { focus.style("display", "none"); chart_tooltip.style("display", "none"); })
-      .on("mousemove", function() {
-        // Define bisector function. Is used to find the closest year
-        // to the mouse position.
-        var bisector = d3.bisector(function(d) { return d.year; }).left;
-        var mousex = x.invert(d3.mouse(this)[0]);
-    
-        var xpos;
-        var doc_index;
-        // Position the circles.
-        focus.selectAll(".focus-circles circle") 
-          .attr("transform", function(d) {
-            var closest_year = Math.round(mousex);
-            doc_index = bisector(d.values, closest_year);
-            var doc = d.values[doc_index];
-            
-            xpos = x(doc.year);
-    
-            return "translate(" + x(doc.year) + "," +  y(doc.value) + ")";
+  var fetch_data = function(iso) {
+    // Request data.
+    var id = iso ? iso : (CS.stateId ? CS.stateId : CS.countryId);
+    var url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + id + '.json';
+    d3.json(url, function(error, DATA) {
+      if (error) {
+        return console.log(error);
+      }
+      
+      meta_info = DATA.meta;
+      chart_data = DATA.data;
+      
+      // Domain for the X Axis.
+      // Since the years are the same for all the data, just create
+      // the domain from one.
+      x.domain(d3.extent(chart_data[0].values, function(d) { return d.year; }));
+      
+      // Compute the y domain.
+      y.domain([0, d3.max(chart_data, function (d) {
+        return d3.max(d.values, function(o) { return o.value });
+      })]);
+      
+      // Groups to hold the focus circles.
+      // One group per line. Will hold two circles:
+      // An outer and bigger and an inner and smaller one
+      var focus_circles = focus.selectAll("g")
+        .data(chart_data)
+          .enter().append('g')
+          .attr('class', function(d) {
+            return 'focus-circles ' + d.id;
           });
+      
+      // Outer circle.
+      focus_circles.append('circle')
+        .attr("r", 8)
+        .attr('class', 'outer');
     
-        // Position the focus line.
-        focus.select('.focus-line')
-          .attr('x1', xpos).attr('y1', height)
-          .attr('x2', xpos).attr('y2', 0);
-
-        // Position tooltip.
-        chart_tooltip
-          .attr('style', function() {
-            // Calculate tooltip width, taking the margin into account.
-            // add some extra margin.
-            var tooltip_width = chart_tooltip.style('width').replace('px', '');
-            // Remove left and right classes.
-            chart_tooltip.classed({right: false, left: false});
-            
-            // Get chart container position in space.
-            // Use jQuery object since it's easier.
-            var container_left = $chart_container.offset().left;
-            // By default the tooltip will be left of the line.
-            // Calc where the tooltip would be if aligned to the left.
-            var new_xpos = xpos - tooltip_width;
-            // If it doesn't fit in the viewport show it at the right.
-            if (container_left + new_xpos <= 0) {
-              chart_tooltip.classed({right: true});
-              return 'transform: translate(' + (xpos + margin.left + 10) + 'px, 50px)';
-            }
-            else {
-              chart_tooltip.classed({left: true});
-              return 'transform: translate(' + (xpos - tooltip_width + margin.left - 10) + 'px, 50px)';
-            }
-            
-          })
-          .html(function() {
-            var content = '<div class="tooltip-inner">';
-            content += '<dl class="chart-legend">';
-
-            // Reverse the array to ensure the order is the same.
-            chart_data.slice(0).reverse().forEach(function(doc) {
-              // Correct object from values array.
-              var value_doc = doc.values[doc_index];
-              content += '<dt class="param-' + doc.id + '">' + doc.name + '</dt>';
-              content += '<dd>' + value_doc.value + '</dd>';
+      // Inner circle.
+      focus_circles.append('circle')
+        .attr("r", 3)
+        .attr('class', 'inner');
+      
+      // Add focus rectangle. Will be responsible to trigger the events.
+      svg.append("rect")
+        .attr('class', 'trigger-rect')
+        .style("fill", "none")
+        .style("pointer-events", "all")
+        .on("mouseover", function() { focus.style("display", null); chart_tooltip.style("display", null); })
+        .on("mouseout", function() { focus.style("display", "none"); chart_tooltip.style("display", "none"); })
+        .on("mousemove", function() {
+          // Define bisector function. Is used to find the closest year
+          // to the mouse position.
+          var bisector = d3.bisector(function(d) { return d.year; }).left;
+          var mousex = x.invert(d3.mouse(this)[0]);
+      
+          var xpos;
+          var doc_index;
+          // Position the circles.
+          focus.selectAll(".focus-circles circle") 
+            .attr("transform", function(d) {
+              var closest_year = Math.round(mousex);
+              doc_index = bisector(d.values, closest_year);
+              var doc = d.values[doc_index];
+              
+              xpos = x(doc.year);
+      
+              return "translate(" + x(doc.year) + "," +  y(doc.value) + ")";
             });
+      
+          // Position the focus line.
+          focus.select('.focus-line')
+            .attr('x1', xpos).attr('y1', height)
+            .attr('x2', xpos).attr('y2', 0);
 
-            content += '</dl>';
-            content += '</div>';
+          // Position tooltip.
+          chart_tooltip
+            .attr('style', function() {
+              // Calculate tooltip width, taking the margin into account.
+              // add some extra margin.
+              var tooltip_width = chart_tooltip.style('width').replace('px', '');
+              // Remove left and right classes.
+              chart_tooltip.classed({right: false, left: false});
+              
+              // Get chart container position in space.
+              // Use jQuery object since it's easier.
+              var container_left = $chart_container.offset().left;
+              // By default the tooltip will be left of the line.
+              // Calc where the tooltip would be if aligned to the left.
+              var new_xpos = xpos - tooltip_width;
+              // If it doesn't fit in the viewport show it at the right.
+              if (container_left + new_xpos <= 0) {
+                chart_tooltip.classed({right: true});
+                return 'transform: translate(' + (xpos + margin.left + 10) + 'px, 50px)';
+              }
+              else {
+                chart_tooltip.classed({left: true});
+                return 'transform: translate(' + (xpos - tooltip_width + margin.left - 10) + 'px, 50px)';
+              }
+              
+            })
+            .html(function() {
+              var content = '<div class="tooltip-inner">';
+              content += '<dl class="chart-legend">';
 
-            return content;
-          });
+              // Reverse the array to ensure the order is the same.
+              chart_data.slice(0).reverse().forEach(function(doc) {
+                // Correct object from values array.
+                var value_doc = doc.values[doc_index];
+                content += '<dt class="param-' + doc.id + '">' + doc.name + '</dt>';
+                content += '<dd>' + value_doc.value + '</dd>';
+              });
+
+              content += '</dl>';
+              content += '</div>';
+
+              return content;
+            });
+      });
+
+      var chart_tooltip = chart_container.append('div')
+        .style('display', 'none')
+        .attr('class', 'tooltip-map left tooltip-chart');
+      
+      draw_chart();
     });
-    
-    var chart_tooltip = chart_container.append('div')
-      .style('display', 'none')
-      .attr('class', 'tooltip-map left tooltip-chart');
-    
-    draw_chart();
-  });
- 
-  
+  }
+
   var draw_chart = function() {
     var w = $chart_container.width();
     var h = $chart_container.height();
@@ -299,8 +300,12 @@ function chart__clean_energy_investments(element_id) {
       .text(meta_info['label-y']);
 
   };
+
+  // GO!
+  fetch_data(iso);
   
   return {
-    draw: draw_chart
+    draw: draw_chart,
+    fetch: fetch_data
   };
 }
