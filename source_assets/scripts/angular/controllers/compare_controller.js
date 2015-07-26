@@ -14,7 +14,7 @@
     this.compareSelected = [];
 
     this.apply = function() {
-      console.log(_self.compare);
+      //console.log(_self.compare);
       var qstring = {
         compare: _self.compare[0] ? _self.compare[0] : null,
         with: _self.compare[1] ? _self.compare[1] : null
@@ -94,18 +94,18 @@
         }
       }
 
-      console.log('_self.compareSelected', _self.compareSelected);
-      console.log('_self.compare', _self.compare);
+      //console.log('_self.compareSelected', _self.compareSelected);
+      //console.log('_self.compare', _self.compare);
     };
 
     $http.get(CS.domain + '/' + CS.lang + '/api/countries.json').success(function(data) {
       _self.countries = data;
       computeSelected();
-      console.log('request finished');
+      //console.log('request finished');
     });
 
     $rootScope.$on('$locationChangeSuccess', function() {
-      console.log('$locationChangeSuccess');
+      //console.log('$locationChangeSuccess');
       
       var qstring = $location.search();
 
