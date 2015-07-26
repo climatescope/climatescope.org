@@ -141,6 +141,92 @@
   }
 }
 
+#clean-energy-investments {
+  .area-line-group {
+    fill: none;
+  }
+
+  .country {
+    &.area {
+      fill: tint($primary-color, 90%);
+    }
+    &.area-line {
+      stroke: tint($primary-color, 75%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: tint($primary-color, 75%);
+    }
+  }
+  .regional {
+    &.area {
+      fill: $infograph-color-a;
+    }
+    &.area-line {
+      stroke: shade($infograph-color-a, 15%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-a, 15%);
+    }
+  }
+  .global {
+    &.area {
+      fill: $infograph-color-b;
+    }
+    &.area-line {
+      stroke: shade($infograph-color-b, 15%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle {
+      stroke: none;
+      fill: shade($infograph-color-b, 15%);
+    }
+  }
+
+  .focus-elements {
+    .focus-line {
+      stroke: $primary-color;
+      stroke-opacity: 0.2;
+      stroke-width: 0.5;
+    }
+    .focus-circles {
+      .outer {
+        fill: #FFF;
+        stroke-width: 0.5;
+      }
+      &.country .inner {
+        stroke: none;
+        fill: tint($primary-color, 75%);
+      }
+      &.regional .inner {
+        stroke: none;
+        fill: shade($infograph-color-a, 15%);
+      }
+      &.global .inner {
+        stroke: none;
+        fill: shade($infograph-color-b, 15%);
+      }
+    }
+  }
+
+  .chart-legend {
+    dt {
+      &.param-country:before {
+        background: tint($primary-color, 90%);
+      }
+      &.param-regional:before {
+        background: shade($infograph-color-a, 15%);
+      }
+      &.param-global:before {
+        background: shade($infograph-color-b, 15%);
+      }
+    }
+  }
+}
+
 .chart-std {
   position: relative;
   height: 250px;

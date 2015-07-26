@@ -18,6 +18,11 @@
             chart = chart__installed_capacity(attr.id);
           break;
         }
+        switch(scope.chart_to_load) {
+          case 'clean_energy_investments':
+            chart = chart__clean_energy_investments(attr.id);
+          break;
+        }
         
         if (chart) {
           var resize_func = debounce(function() {

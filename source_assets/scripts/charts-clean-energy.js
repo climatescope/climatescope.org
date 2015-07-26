@@ -1,5 +1,10 @@
 /* jshint unused: false */
-function chart__installed_capacity(element_id) {
+function chart__clean_energy_investments(element_id) {
+  // NOTE:
+  // This chart was derived from the installed capacity.
+  // It was modified to be a line chart, however some on the class names
+  // remained the same to reuse styles.
+
   // Svg element containing the chart.
   var chart_container = d3.select("#" + element_id);
   var $chart_container = $("#" + element_id);
@@ -9,10 +14,6 @@ function chart__installed_capacity(element_id) {
       
   /////////////////////////////////////////////////////
   // Svg element that will contain others.
-
-  // Group to hold the areas.
-  var areas_group = svg.append("g")
-    .attr("class", "area-group");
 
   // Group to hold the area delimiter lines.
   var area_delimiters_group = svg.append("g")
@@ -54,10 +55,10 @@ function chart__installed_capacity(element_id) {
   /////////////////////////////////////////////////////
   // Draw functions.
   
-  // X scale. Range updated in function.
+  // X scale. Range updated in draw_chart() function.
   var x = d3.scale.linear();
 
-  // Y scale. Range updated in function.
+  // Y scale. Range updated in draw_chart() function.
   var y = d3.scale.linear();
 
   // Define xAxis function.
@@ -74,65 +75,45 @@ function chart__installed_capacity(element_id) {
     .ticks(6)
     .orient("left");
     
-  // Area definition function.
-  var area = d3.svg.area()
-    .x(function(d) { return x(d.year); })
-    // The y0 and y1 define the upper and lower positions for the
-    // area. This will be used to stack the areas.
-    .y0(function(d) { return y(d.y0); })
-    .y1(function(d) { return y(d.y0 + d.y); });
-
-  // Stack definition function.
-  var stack = d3.layout.stack()
-    // Define where to get the values from.
-    .values(function(d) { return d.values; })
-    .x(function (d) { return d.year; })
-    // Where to get the y value. This will be used by the
-    // area function as y0 (which is used to stack.)
-    .y(function (d) { return d.value; });
-
-  // Line function for the delimit the area.
+  // Line function for the area delimiter.
   var line = d3.svg.line()
     .x(function(d) { return x(d.year); })
-    .y(function(d) { return y(d.y0 + d.y); });
+    .y(function(d) { return y(d.value); });
   
   /////////////////////////////////////////////////////
   // Data request.
 
-  var stacked_data;
   var meta_info;
+  var chart_data;
   var margin = {top: 20, right: 20, bottom: 82, left: 100};
   var width, height;
 
   // Request data.
   var id = CS.stateId ? CS.stateId : CS.countryId;
-  var url = CS.domain + '/' + CS.lang + '/api/auxiliary/installed-capacity/' + id + '.json';
+  var url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + id + '.json';
   d3.json(url, function(error, DATA) {
     if (error) {
       return console.log(error);
     }
     
     meta_info = DATA.meta;
-    var chart_data = DATA.data;
+    chart_data = DATA.data;
     
     // Domain for the X Axis.
     // Since the years are the same for all the data, just create
     // the domain from one.
     x.domain(d3.extent(chart_data[0].values, function(d) { return d.year; }));
     
-    // Stack the values.
-    stacked_data = stack(chart_data);
-    
-    // Compute the y domain taking into account the stacked values.
-    y.domain([0, d3.max(stacked_data, function (c) { 
-      return d3.max(c.values, function (d) { return d.y0 + d.y; });
+    // Compute the y domain.
+    y.domain([0, d3.max(chart_data, function (d) {
+      return d3.max(d.values, function(o) { return o.value });
     })]);
     
     // Groups to hold the focus circles.
     // One group per line. Will hold two circles:
     // An outer and bigger and an inner and smaller one
     var focus_circles = focus.selectAll("g")
-      .data(stacked_data)
+      .data(chart_data)
         .enter().append('g')
         .attr('class', function(d) {
           return 'focus-circles ' + d.id;
@@ -172,7 +153,7 @@ function chart__installed_capacity(element_id) {
             
             xpos = x(doc.year);
     
-            return "translate(" + x(doc.year) + "," +  y(doc.y + doc.y0) + ")";
+            return "translate(" + x(doc.year) + "," +  y(doc.value) + ")";
           });
     
         // Position the focus line.
@@ -211,7 +192,7 @@ function chart__installed_capacity(element_id) {
             content += '<dl class="chart-legend">';
 
             // Reverse the array to ensure the order is the same.
-            stacked_data.slice(0).reverse().forEach(function(doc) {
+            chart_data.slice(0).reverse().forEach(function(doc) {
               // Correct object from values array.
               var value_doc = doc.values[doc_index];
               content += '<dt class="param-' + doc.id + '">' + doc.name + '</dt>';
@@ -259,22 +240,10 @@ function chart__installed_capacity(element_id) {
     // Update scale ranges
     x.range([0, width]);
     y.range([height, 0]);
-    
-    // Areas.
-    var areas = areas_group.selectAll("path")
-      .data(stacked_data);
-    // Handle new.
-    areas.enter().append("path");
-    // Remove old.
-    areas.exit().remove();
-    // Update current.
-    areas
-        .attr("d", function(d) { return area(d.values); })
-        .attr("class", function(d) { return "area " + d.id; });
-  
+
     // Area delimiters
     var area_delimiters = area_delimiters_group.selectAll("path")
-      .data(stacked_data);
+      .data(chart_data);
     // Handle new.
     area_delimiters.enter().append("path");
     // Remove old.
@@ -287,7 +256,7 @@ function chart__installed_capacity(element_id) {
     // Group to hold the line points.
     // One group for each line points.
     var points = points_group.selectAll(".area-line-points")
-      .data(stacked_data);
+      .data(chart_data);
     // Handle new.
     points.enter().append("g");
     // Remove old.
@@ -306,12 +275,12 @@ function chart__installed_capacity(element_id) {
     // Update current.
     individual_points
       .attr("cx", function(d) { return x(d.year); })
-      .attr("cy", function(d) { return y(d.y0 + d.y); })
+      .attr("cy", function(d) { return y(d.value); })
       .attr("r", 3);
 
     /////////////////////////////////////////////////////
     // Append Axis.
-  
+
     svg.select(".x.axis")
       .attr("transform", "translate(0," + (height + 32) + ")")
       .call(xAxis);
