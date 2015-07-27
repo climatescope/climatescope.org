@@ -147,42 +147,33 @@
   }
 
   .country {
-    &.area {
-      fill: tint($primary-color, 90%);
-    }
     &.area-line {
-      stroke: tint($primary-color, 75%);
+      stroke: shade($infograph-color-b, 32%);
       stroke-opacity: 1;
     }
     &.area-line-points circle{
       stroke: none;
-      fill: tint($primary-color, 75%);
+      fill: shade($infograph-color-b, 32%);
     }
   }
   .regional {
-    &.area {
-      fill: $infograph-color-a;
-    }
     &.area-line {
-      stroke: shade($infograph-color-a, 15%);
+      stroke: tint($infograph-color-b, 0%);
       stroke-opacity: 1;
     }
     &.area-line-points circle{
       stroke: none;
-      fill: shade($infograph-color-a, 15%);
+      fill: tint($infograph-color-b, 0%);
     }
   }
   .global {
-    &.area {
-      fill: $infograph-color-b;
-    }
     &.area-line {
-      stroke: shade($infograph-color-b, 15%);
+      stroke: tint($infograph-color-b, 64%);
       stroke-opacity: 1;
     }
     &.area-line-points circle {
       stroke: none;
-      fill: shade($infograph-color-b, 15%);
+      fill: tint($infograph-color-b, 64%);
     }
   }
 
@@ -199,15 +190,15 @@
       }
       &.country .inner {
         stroke: none;
-        fill: tint($primary-color, 75%);
+        fill: shade($infograph-color-b, 32%);
       }
       &.regional .inner {
         stroke: none;
-        fill: shade($infograph-color-a, 15%);
+        fill: tint($infograph-color-b, 0%);
       }
       &.global .inner {
         stroke: none;
-        fill: shade($infograph-color-b, 15%);
+        fill: tint($infograph-color-b, 64%);
       }
     }
   }
@@ -215,13 +206,13 @@
   .chart-legend {
     dt {
       &.param-country:before {
-        background: tint($primary-color, 90%);
+        background: shade($infograph-color-b, 32%);
       }
       &.param-regional:before {
-        background: shade($infograph-color-a, 15%);
+        background: tint($infograph-color-b, 0%);
       }
       &.param-global:before {
-        background: shade($infograph-color-b, 15%);
+        background: tint($infograph-color-b, 64%);
       }
     }
   }
@@ -229,22 +220,22 @@
 
 .carbon-offset {
   .power-generation {
-    fill: tint(blue, 15%);
+    fill: $infograph-color-d;
   }
   .methane {
-    fill: tint($infograph-color-a, 15%);
+    fill: tint($infograph-color-d, 16%);
   }
   .forestry {
-    fill: tint($infograph-color-b, 15%);
+    fill: tint($infograph-color-d, 32%);
   }
   .waste {
-    fill: tint($infograph-color-c, 15%);
+    fill: tint($infograph-color-d, 48%);
   }
   .energy-efficiency {
-    fill: tint($infograph-color-d, 15%);
+    fill: tint($infograph-color-d, 64%);
   }
   .other {
-    fill: tint(red, 15%);
+    fill: tint($infograph-color-d, 80%);
   }
 
   .chart-legend {

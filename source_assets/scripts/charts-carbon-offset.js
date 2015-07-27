@@ -80,6 +80,7 @@ function chart__carbon_offset(element_id, iso) {
   var draw_chart = function() {
     var w = $chart_container.width();
     var h = $chart_container.height();
+    var total = 0;
 
     // Size.
     width = w - margin.left - margin.right;
@@ -90,6 +91,15 @@ function chart__carbon_offset(element_id, iso) {
       .innerRadius(radius - 40);
     arc_over.outerRadius(radius + 5)
       .innerRadius(radius - 40 + 5);
+
+    // Reduce - ie8.
+    for (var i = 0; i < chart_data.length; i++) {
+      total += chart_data[i].values[0].value;
+    }
+
+    // Set total.
+    donut_legend.text('Total');
+    donut_legend_value.text(total);
 
     // Set chart size.
     chart_container.select("svg")
@@ -120,8 +130,8 @@ function chart__carbon_offset(element_id, iso) {
           .attr("d", arc_over);
       })
       .on("mouseout", function(d) {
-        donut_legend.text('');
-        donut_legend_value.text('');
+        donut_legend.text('Total');
+        donut_legend_value.text(total);
         d3.select(this).transition()
          .duration(100)
          .attr("d", arc);

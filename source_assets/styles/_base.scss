@@ -1048,6 +1048,19 @@ a:active{
     // Because of chart tooltips.
     overflow: visible;
   }
+
+  .placeholder {
+    font-family: $brand-font-family;
+    border: 1px dashed tint($primary-color, 90%);
+    padding: 8rem 2rem;
+    text-align: center;
+    color: tint($primary-color, 60%);
+    border-radius: $global-radius;
+
+    > *:last-child {
+      margin-bottom: 0; 
+    }
+  }
 }
 
 

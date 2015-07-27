@@ -124,6 +124,10 @@
         </div>
         <!-- END params-->
 
+        <div class="placeholder" ng-if="!compareCtrl.compareSelected[0]">
+          <p>{{ t['Nothing to compare. Choose a Country / State / Province.'][language] }}</p>
+        </div>
+
       </div>
       <!-- END column left -->
 
@@ -202,6 +206,10 @@
           </div>
         </div>
         <!-- END params-->
+
+        <div class="placeholder" ng-if="!compareCtrl.compareSelected[1]">
+          <p>{{ t['Nothing to compare. Choose a Country / State / Province.'][language] }}</p>
+        </div>
 
       </div>
       <!-- END column right -->
