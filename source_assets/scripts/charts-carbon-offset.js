@@ -64,7 +64,7 @@ function chart__carbon_offset(element_id, iso) {
   var fetch_data = function(iso) {
     // Request data.
     var id = iso ? iso : (CS.stateId ? CS.stateId : CS.countryId);
-    var url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset/' + id + '.json';
+    var url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset-projects/' + id + '.json';
     d3.json(url, function(error, DATA) {
       if (error) {
         return console.log(error);
