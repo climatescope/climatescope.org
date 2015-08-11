@@ -58,12 +58,24 @@ By:
 Calculate your own score: 
   en: "Calculate your own score"
   es: "Calcule su propia puntuación"
+Carbon offset: 
+  en: "Carbon offset projects by sector"
+  es: "Compensaciones de carbono por sector"
+Chinese provinces: 
+  en: "Chinese provinces"
+  es: "Chinese states ES"
+Clean energy investments:
+  en: "Clean energy investments"
+  es: "Inversiones en energía limpia"
 Climatescope:
   en: "Climatescope"
   es: "Climascopio"
 Close: 
   en: "Close"
   es: "Cerrar"
+Compare: 
+  en: "Compare"
+  es: "Compare"
 Compare with: 
   en: "Compare with"
   es: "Compare con"
@@ -76,6 +88,9 @@ Contact us:
 Country: 
   en: "Country"
   es: "País"
+Country / state / province: 
+  en: "Country / state / province"
+  es: "País / estado / provincia"
 Data (CSV):
   en: "Data (CSV)"
   es: "Datos (CSV)"
@@ -151,7 +166,7 @@ Go to province page:
 Go to state / province page: 
   en: "Go to state / province page"
   es: "Ir a la página del estado / provincia"
-  Go to state page: 
+Go to state page: 
   en: "Go to state province page"
   es: "Ir a la página del estado"
 Go to topic page: 
@@ -163,6 +178,9 @@ Grid:
 In detail: 
   en: "In detail"
   es: "En detalle"
+Indian states: 
+  en: "Indian states"
+  es: "Indian states ES"
 Info: 
   en: "Info"
   es: "Info"
@@ -205,6 +223,9 @@ More about the Climatescope:
 No results avaliable with current filters.: 
   en: "No results avaliable with current filters."
   es: "No fueron encontrados politicas para este conjunto de filtros."
+Nothing to compare. Choose a Country / State / Province.: 
+  en: "Nothing to compare. Choose a Country / State / Province."
+  es: "No hay nada que comparar. Seleccione un País / Estado / Provincia."
 Off-grid: 
   en: "Off-grid"
   es: "Off-grid"

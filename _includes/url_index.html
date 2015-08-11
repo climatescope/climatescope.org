@@ -3,6 +3,7 @@
   {% assign country_col = site.collections['en_country'].i18n[language] %}
   {% assign state_col = site.collections['en_state'].i18n[language] %}
   {% assign param_col = site.collections['en_parameter'].i18n[language] %}
+  {% assign region_col = site.collections['en_region'].i18n[language] %}
 
   // Country index to retrieve the url.
   CS.countryIndex = {
@@ -21,6 +22,13 @@
   // Parameter index to retrieve the url.
   CS.parameterIndex = {
     {% for param in site[param_col] %}
+      "{{param.id}}":"{{ site.domain }}{{ site.path_prefix }}{{param.url}}",
+    {% endfor %}
+  };
+
+  // Region index to retrieve the url.
+  CS.regionIndex = {
+    {% for param in site[region_col] %}
       "{{param.id}}":"{{ site.domain }}{{ site.path_prefix }}{{param.url}}",
     {% endfor %}
   };
