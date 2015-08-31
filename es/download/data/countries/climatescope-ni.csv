@@ -1,16 +1,16 @@
 name:es_var,type_var,2014
-Puntaje,score,1.31515086087
-Marco Propicio,param,1.37736039534
+Puntaje,score,1.36927826645
+Marco Propicio,param,1.51267890929
 Políticas de energía limpia,ind,0.061153272104
 Estructura del sector energético,ind,0.114
 Marco regulatorio de la energía distribuida,ind,0.0
 Electrificación rural de energía limpia,ind,0.04
 Políticas de acceso a la energía,ind,0.0
 Obstáculos políticos,ind,0.0291428571429
-Capacidad instalada de energía limpia,ind,0.0887556946872
-Tasa de crecimiento de la capacidad instalada,ind,1.46704092521e-05
-Generación eléctrica de energía limpia,ind,0.0682297571487
-Tasa de crecimiento de generación eléctrica,ind,0.0312118475848
+Capacidad instalada de energía limpia,ind,0.111244148544
+Tasa de crecimiento de la capacidad instalada,ind,1.23968315295e-05
+Generación eléctrica de energía limpia,ind,0.081992641279
+Tasa de crecimiento de generación eléctrica,ind,0.0490901887562
 Producción de biocombustibles,ind,0.000989715093824
 Tasa de crecimiento de la producción de biocombustibles,ind,0.0
 Precio promedio de la electricidad spot,ind,0.0614070076443

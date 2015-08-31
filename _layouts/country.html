@@ -58,7 +58,7 @@ conf:
           <dd>%% statsCtrl.countryStats.value | round:2 %%</dd>
         </dl>
         <ul class="ctas-list">
-          <!--<li><a class="bttn bttn-cta go" href="#" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>-->
+          <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/compare/#?compare={{ page.id }}" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
           <li ng-if="statsCtrl.policyCount > 0"><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.id | upcase }}" title="{{ t['View policies'][language] }}">{{ t['View policies'][language] }} <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
         </ul>
     </div>
@@ -94,7 +94,11 @@ conf:
     {% if has_states %}
     <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="CountryTabsController as navCtrl">
       <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="{{ t['View in detail'][language] }}">{{ t['In detail'][language] }}</a></li>
-      <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="{{ t['View states / provinces'][language] }}">{{ t['States / provinces'][language] }}</a></li>
+      {% if page.id == 'cn' %}
+        <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="{{ t['View provinces'][language] }}">{{ t['Provinces'][language] }}</a></li>
+      {% elsif page.id == 'in' %}
+        <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="{{ t['View states'][language] }}">{{ t['States'][language] }}</a></li>
+      {% endif %}
       <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li> -->
     </ul>
     {% endif %}

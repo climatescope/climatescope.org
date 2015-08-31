@@ -38,10 +38,10 @@ module.exports = function(grunt) {
         options : {
           force : true
         },
-        src : ['source_assets/scripts/**.js']
+        src : ['source_assets/scripts/**/*.js', '!source_assets/scripts/angular/bootstrap/**', '!source_assets/scripts/vendor/**']
       },
 
-      prod: ['source_assets/scripts/**.js']
+      prod: ['source_assets/scripts/**/*.js', '!source_assets/scripts/angular/bootstrap/**', '!source_assets/scripts/vendor/**']
     },
 
     // https://github.com/gruntjs/grunt-contrib-uglify
@@ -66,6 +66,7 @@ module.exports = function(grunt) {
           './assets/scripts/vendor/map-dependencies.min.js' : ['source_assets/scripts/vendor/map-dependencies/*.js', 'source_assets/vendor/mapbox/mapbox.js'],
           './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
           './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
+          './assets/scripts/vendor/angular-deps.min.js': ['source_assets/scripts/vendor/angular.min.js', 'source_assets/scripts/vendor/angular-route.min.js'],
         }
       }
     },
@@ -90,6 +91,7 @@ module.exports = function(grunt) {
           './assets/scripts/vendor/map-dependencies.min.js' : ['source_assets/scripts/vendor/map-dependencies/*.js', 'source_assets/vendor/mapbox/mapbox.js'],
           './assets/scripts/vendor/jquery-1.11.0.min.js': ['source_assets/scripts/vendor/jquery-1.11.0.min.js'],
           './assets/scripts/vendor/jquery-2.1.0.min.js': ['source_assets/scripts/vendor/jquery-2.1.0.min.js'],
+          './assets/scripts/vendor/angular-deps.min.js': ['source_assets/scripts/vendor/angular.min.js', 'source_assets/scripts/vendor/angular-route.min.js'],
         }
       },
     },

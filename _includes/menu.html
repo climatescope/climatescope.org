@@ -50,6 +50,11 @@
       </li>
       <li>
         {% assign col_name = site.collections['en_page'].i18n[language] %}
+        {% assign pg = site[col_name] | where:"id","license" | first %}
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['About the license'][language] }}">{{ t['License'][language] }}</a>
+      </li>
+      <li>
+        {% assign col_name = site.collections['en_page'].i18n[language] %}
         {% assign pg = site[col_name] | where:"id","contact" | first %}
         <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['Contact us'][language] }}">{{ t['Contact'][language] }}</a>
       </li>

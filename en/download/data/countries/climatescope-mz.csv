@@ -1,11 +1,11 @@
 name:en_var,type_var,2014
-Score,score,0.788151831049
-Enabling framework,param,0.843875605277
+Score,score,0.78560804208
+Enabling framework,param,0.837516132854
 Clean energy policies,ind,0.0840174916141
 Power sector structure,ind,0.0333333333333
 Distributed energy regulatory framework,ind,0.0266666666667
 Clean energy rural electrification,ind,0.04
-Energy access policies,ind,0.0635674668563
+Energy access policies,ind,0.0644484270511
 Policy barriers,ind,0.00384905660377
 Clean energy installed capacity,ind,0.00642445662261
 Growth rate of installed capacity,ind,0.0
@@ -21,7 +21,7 @@ Average industrial electricity prices,ind,0.0
 Average kerosene prices,ind,0.0219506053286
 Average diesel prices,ind,0.0176941468439
 Growth rate of power demand,ind,0.0
-Electrification rate,ind,0.00834782608696
+Electrification rate,ind,0.00492307692308
 Population using solid fuels for cooking,ind,0.0195918367347
 Financing and Investments,param,0.311632836588
 Clean energy investments,ind,0.00416075707115

@@ -14,6 +14,10 @@
     background: $primary-color;
     @include opacity(0.2);
   }
+  @media print {
+    height: auto;
+    position: static;
+  }
 }
 
 .table-bar {
@@ -48,6 +52,20 @@
   li.param-4 {
     background-color: $infograph-color-d;
   }
+  @media print {
+    height: auto;
+    list-style-type: disc; 
+    box-shadow: none;
+    li {
+      display: block;
+      float: none;
+      height: auto;
+      box-shadow: none;
+      width: auto !important;
+      height: auto;
+      background: none;
+    }
+  }
 }
 
 .table-nested .table-bar {
@@ -57,7 +75,7 @@
 
 
 
-#installed-capacity {
+.installed-capacity {
   .area-line-group {
     fill: none;
   }
@@ -119,6 +137,115 @@
       &.param-non-clean-energy:before {
         background: tint($primary-color, 90%);
       }
+    }
+  }
+}
+
+.clean-energy-investments {
+  .area-line-group {
+    fill: none;
+  }
+
+  .country {
+    &.area-line {
+      stroke: shade($infograph-color-b, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-b, 32%);
+    }
+  }
+  .regional {
+    &.area-line {
+      stroke: tint($infograph-color-b, 0%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: tint($infograph-color-b, 0%);
+    }
+  }
+  .global {
+    &.area-line {
+      stroke: tint($infograph-color-b, 64%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle {
+      stroke: none;
+      fill: tint($infograph-color-b, 64%);
+    }
+  }
+
+  .focus-elements {
+    .focus-line {
+      stroke: $primary-color;
+      stroke-opacity: 0.2;
+      stroke-width: 0.5;
+    }
+    .focus-circles {
+      .outer {
+        fill: #FFF;
+        stroke-width: 0.5;
+      }
+      &.country .inner {
+        stroke: none;
+        fill: shade($infograph-color-b, 32%);
+      }
+      &.regional .inner {
+        stroke: none;
+        fill: tint($infograph-color-b, 0%);
+      }
+      &.global .inner {
+        stroke: none;
+        fill: tint($infograph-color-b, 64%);
+      }
+    }
+  }
+
+  .chart-legend {
+    dt {
+      &.param-country:before {
+        background: shade($infograph-color-b, 32%);
+      }
+      &.param-regional:before {
+        background: tint($infograph-color-b, 0%);
+      }
+      &.param-global:before {
+        background: tint($infograph-color-b, 64%);
+      }
+    }
+  }
+}
+
+.carbon-offset {
+  .power-generation {
+    fill: $infograph-color-d;
+  }
+  .methane {
+    fill: tint($infograph-color-d, 16%);
+  }
+  .forestry {
+    fill: tint($infograph-color-d, 32%);
+  }
+  .waste {
+    fill: tint($infograph-color-d, 48%);
+  }
+  .energy-efficiency {
+    fill: tint($infograph-color-d, 64%);
+  }
+  .other {
+    fill: tint($infograph-color-d, 80%);
+  }
+
+  .chart-legend {
+    .label, .value {
+      fill: $body-font-color;
+      font-family: $brand-font-family;
+      font-weight: $brand-font-weight;
+    }
+    .label {
+      font-weight: $brand-font-bold;
     }
   }
 }

@@ -92,7 +92,7 @@ a:active{
     &:after {
       position: absolute;
       z-index: 1;
-      font-size: 6rem;
+      font-size: 4rem;
       @include opacity(0.2);
       color: $primary-color;
       line-height: 1;
@@ -105,7 +105,7 @@ a:active{
 .well-l {
   padding: 2rem;
   &.download {
-    padding-right: 10rem;
+    padding-right: 7rem;
     margin-bottom: 2rem;
     &:after {
       top: 2rem;
@@ -116,6 +116,21 @@ a:active{
 
 .well-s {
   padding: 0.5rem;
+}
+
+.well-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  > li {
+    @include col(12/12);
+  }
+  @media #{$xlarge-up} {
+     > li {
+      @include col(6/12, $cycle: 2);
+    }
+  }
 }
 
 // Labels
@@ -143,7 +158,8 @@ a:active{
       @extend .visually-hidden;
     }
   }
-  .layout--entry__heading & {
+  .layout--entry__heading &,
+  .compare--entry__heading & {
     vertical-align: top;
     margin-top: 0.25rem;
   }
@@ -244,6 +260,9 @@ a:active{
   margin-bottom: 2rem;
   background: tint($primary-color, 95%) !important;
   z-index: 1;
+  @media print {
+    display: none;
+  }
 }
 
 // STRUCTURE
@@ -503,11 +522,17 @@ a:active{
     .layout--page & {
       @include col(10/12);
     }
+    .layout--page.full & {
+      @include col(12/12);
+    }
   }
   @media #{$xlarge-up} {
     @include col(8/12);
     .layout--page & {
       @include col(8/12);
+    }
+    .layout--page.full & {
+      @include col(12/12);
     }
   }
 }
@@ -518,6 +543,13 @@ a:active{
   .lt-ie9 & {
     margin-right: 0 !important;
   }
+}
+
+.col--double {
+  @media #{$medium-up} {
+    @include col(6/12);
+  }
+  margin-bottom: 3rem;
 }
 
 .layout--entry,
@@ -551,6 +583,25 @@ a:active{
     @media #{$xlarge-up} {
       @include col(4/12);
     }
+  }
+}
+
+.compare--entry {
+  &__heading {
+    position: relative;
+
+    .stats-list {
+      margin-top: 1.5rem;
+    }
+  }
+  &__title {
+    @extend .hd-l;
+    margin: 0 0.25rem 0 0;
+    white-space: pre-wrap;
+    display: inline;
+  }
+  &__subtitle {
+    @extend .layout--entry__subtitle;
   }
 }
 
@@ -672,16 +723,40 @@ a:active{
   }
   dt {
     @extend .hd-label;
-    width: 60%;
-    left: 40%;
+    width: 70%;
+    left: 30%;
     small {
       font-size: inherit;
       display: block;
     }
+
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: -1rem;
+      z-index: 1;
+      margin-top: -0.25rem;
+      content: '';
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: $global-rounded;
+    }
+    &.param-1:before {
+      background: $infograph-color-a;
+    }
+    &.param-2:before {
+      background: $infograph-color-b;
+    }
+    &.param-3:before {
+      background: $infograph-color-c;
+    }
+    &.param-4:before {
+      background: $infograph-color-d;
+    }
   }
   dd {
-    width: 40%;
-    left: -60%;
+    width: 30%;
+    left: -70%;
     font-family: $brand-font-family;
     font-weight: $brand-font-bold;
     font-size: 2rem;
@@ -691,16 +766,16 @@ a:active{
       top: -0.5rem;
     }
   }
-  @media #{$xlarge-up} {
-    dt {
-      width: 70%;
-      left: 30%;
+    @media #{$xlarge-up} {
+      dt {
+        width: 75%;
+        left: 25%;
+      }
+      dd {
+        width: 25%;
+        left: -75%;
+      }
     }
-    dd {
-      width: 30%;
-      left: -70%;
-    }
-  }
 }
 
 #section-switch {
@@ -951,6 +1026,43 @@ a:active{
   }
 }
 
+// Compare
+.compare {
+  .layout--hub__body .row--contained {
+    margin-top: 1.5rem; 
+  }
+
+  .admin-select optgroup option {
+    padding-left: 1rem;
+  }
+
+  .compare--entry__heading > *:last-child {
+    margin-bottom: 0; 
+  }
+
+  .params {
+    margin-top: 3rem;
+  }
+
+  .param-details {
+    // Because of chart tooltips.
+    overflow: visible;
+  }
+
+  .placeholder {
+    font-family: $brand-font-family;
+    border: 1px dashed tint($primary-color, 90%);
+    padding: 8rem 2rem;
+    text-align: center;
+    color: tint($primary-color, 60%);
+    border-radius: $global-radius;
+
+    > *:last-child {
+      margin-bottom: 0; 
+    }
+  }
+}
+
 
 // SITE FOOTER
 
@@ -1053,37 +1165,12 @@ a:active{
   list-style: none;
   margin: 0;
   padding: 0;
-  border-top: 1px solid tint($primary-color, 90%);
-  .well.download & {
-    border-top-color: tint($primary-color, 85%);
-  }
+  overflow: hidden;
   > li {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    border-bottom: 1px solid tint($primary-color, 90%);
-    padding: 0.5rem 0;
-    margin: 0;
-    .well.download & {
-      border-bottom-color: tint($primary-color, 85%);
-    }
-  }
-  .term {
-    position: absolute;
-    top: 50%;
-    left: auto;
-    font-family: $brand-font-family;
-    font-weight: $brand-font-bold;
-    display: block;
-    text-transform: uppercase;
-    height: 1.5rem;
-    margin-top: -0.75rem;
-  }
-  .bttn {
-    float: right;
+    float: left;
+    margin: 0 0.5rem 0.5rem 0;
   }
 }
-
 
 // IE8
 .lt-ie9 {

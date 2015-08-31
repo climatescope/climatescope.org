@@ -25,7 +25,7 @@ Son 22 los indicadores que proporcionan la información relevada por el Parámet
 
 ***
 
-## [Financiamiento y inversiones]({{ site.domain }}{{ site.path_prefix }}/es/tema/financiamiento-y-inversiones/ "Ir a la pagina de Financiamiento y inversiones")
+## [Financiamiento e inversiones]({{ site.domain }}{{ site.path_prefix }}/es/tema/financiamiento-e-inversiones/ "Ir a la pagina de Financiamiento e inversiones")
 {: .hd-param-2}
 
 Pocos inversores se sienten cómodos siendo los primeros en invertir en una nueva tecnología o región. Para puntuar la habilidad de un país de atraer inversiones en fuentes de energía con bajas emisiones de carbono, es importante considerar sus logros en el área hasta la fecha. El parámetro de Inversiones en Energías Limpias y Créditos evalúa el historial de inversiones en un país mientras expone las condiciones financieras para futuros compromisos.

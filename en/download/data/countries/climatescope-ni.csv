@@ -1,16 +1,16 @@
 name:en_var,type_var,2014
-Score,score,1.31515086087
-Enabling framework,param,1.37736039534
+Score,score,1.36927826645
+Enabling framework,param,1.51267890929
 Clean energy policies,ind,0.061153272104
 Power sector structure,ind,0.114
 Distributed energy regulatory framework,ind,0.0
 Clean energy rural electrification,ind,0.04
 Energy access policies,ind,0.0
 Policy barriers,ind,0.0291428571429
-Clean energy installed capacity,ind,0.0887556946872
-Growth rate of installed capacity,ind,1.46704092521e-05
-Clean energy electricity generation,ind,0.0682297571487
-Growth rate of electricity generation,ind,0.0312118475848
+Clean energy installed capacity,ind,0.111244148544
+Growth rate of installed capacity,ind,1.23968315295e-05
+Clean energy electricity generation,ind,0.081992641279
+Growth rate of electricity generation,ind,0.0490901887562
 Biofuels production,ind,0.000989715093824
 Growth rate biofuels production,ind,0.0
 Average electricity spot prices,ind,0.0614070076443

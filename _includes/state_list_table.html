@@ -2,7 +2,10 @@
   <thead>
     <tr>
       <th class="th-rank"><a href="" title="{{ t['Sort by rank'][language] }}" ng-click="statesCtrl.setSort('state_ranking')" class="sort" ng-class="[statesCtrl.checkSortClasses('state_ranking')]">{{ t['Rank'][language] }}</a></th>
-      <th class="th-country"><a href="" title="{{ t['Sort by state / province'][language] }}" ng-click="statesCtrl.setSort('name')" class="sort" ng-class="[statesCtrl.checkSortClasses('name')]">{{ t['State / province'][language] }}</a></th>
+      <th class="th-country">
+        <a href="" title="{{ t['Sort by province'][language] }}" ng-if="statesCtrl.countryId == 'cn'" ng-click="statesCtrl.setSort('name')" class="sort" ng-class="[statesCtrl.checkSortClasses('name')]">{{ t['Province'][language] }}</a>
+        <a href="" title="{{ t['Sort by state'][language] }}" ng-if="statesCtrl.countryId == 'in'" ng-click="statesCtrl.setSort('name')" class="sort" ng-class="[statesCtrl.checkSortClasses('name')]">{{ t['State'][language] }}</a>
+      </th>
       <th class="th-score"><a href="" title="{{ t['Sort by score'][language] }}" ng-click="statesCtrl.setSort('score')" class="sort" ng-class="[statesCtrl.checkSortClasses('score')]">{{ t['Score'][language] }}</a></th>
       <th class="th-graph"><span class="visually-hidden">{{ t['Topics'][language] }}:</span> 0.0 - 5.0</th>
     </tr>
@@ -11,7 +14,8 @@
     <tr>
       <td class="cell-rank">%% state.state_ranking | leadingZero:2 %%</td>
       <td class="cell-country">
-        <a href="%% statesCtrl.getStateUrl(state) %%" title="{{ t['Go to state / province page'][language] }}">%% state.name %%</a>
+        <a href="%% statesCtrl.getStateUrl(state) %%" ng-if="statesCtrl.countryId == 'cn'" title="{{ t['Go to province page'][language] }}">%% state.name %%</a>
+        <a href="%% statesCtrl.getStateUrl(state) %%" ng-if="statesCtrl.countryId == 'in'" title="{{ t['Go to state page'][language] }}">%% state.name %%</a>
       </td>
       <td>%%state.score | round:2 %%</td>
       <td>

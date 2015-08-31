@@ -1,8 +1,8 @@
 name:en_var,type_var,2014
-Score,score,1.27366662876
-Enabling framework,param,1.40057044661
-Clean energy policies,ind,0.249070196326
-Power sector structure,ind,0.1882
+Score,score,1.03962534827
+Enabling framework,param,1.06821735875
+Clean energy policies,ind,0.166046797551
+Power sector structure,ind,0.156833333333
 Distributed energy regulatory framework,ind,0.0
 Clean energy rural electrification,ind,0.0
 Energy access policies,ind,0.0
@@ -13,19 +13,19 @@ Clean energy electricity generation,ind,0.0119673351447
 Growth rate of electricity generation,ind,0.0145206047449
 Biofuels production,ind,0.0
 Growth rate biofuels production,ind,0.0
-Average electricity spot prices,ind,0.0263930483828
-Average retail electricity prices,ind,0.0141371669746
+Average electricity spot prices,ind,0.0158358290297
+Average retail electricity prices,ind,0.00848230018474
 Average residential electricity prices,ind,0.0
 Average commercial electricity prices,ind,0.0
 Average industrial electricity prices,ind,0.0
 Average kerosene prices,ind,0.0
 Average diesel prices,ind,0.0
-Growth rate of power demand,ind,0.00691012588974
-Electrification rate,ind,0.00212483399734
+Growth rate of power demand,ind,0.00414607553384
+Electrification rate,ind,0.00254980079681
 Population using solid fuels for cooking,ind,0.0
-Financing and Investments,param,0.674674796425
-Clean energy investments,ind,0.105800462648
-Growth rate of clean energy investments,ind,0.00389937361933
+Financing and Investments,param,0.742608855777
+Clean energy investments,ind,0.126960555177
+Growth rate of clean energy investments,ind,0.00311949889547
 Asset finance investments,ind,0.0
 Corporate finance investments,ind,0.0
 VC/PE investments,ind,0.0
@@ -37,11 +37,11 @@ Green micro-borrowers,ind,0.0
 Average cost of green micro debt,ind,0.0
 Average cost of debt,ind,0.0526311740891
 Swap rate,ind,0.0400714285714
-Value chains,param,2.14144736842
-Financial institutions in clean energy,ind,0.0375
-Value chains by clean energy sector,ind,0.236842105263
-Distributed clean energy value chains by sector,ind,0.0
-Clean energy service providers,ind,0.046875
+Value chains,param,1.33157894737
+Financial institutions in clean energy,ind,0.03
+Value chains by clean energy sector,ind,0.0947368421053
+Distributed clean energy value chains by sector,ind,0.0375
+Clean energy service providers,ind,0.0375
 Distributed clean energy service providers,ind,0.0
 GHG management,param,1.26545937286
 Carbon offsets historical activity,ind,0.075
