@@ -12,7 +12,7 @@ before_install:
 - chmod +x ./.build_scripts/deploy.sh
 
 script:
-- gulp prod
+- gulp stage
 
 after_success:
 - ./.build_scripts/deploy.sh
