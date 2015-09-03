@@ -1,14 +1,18 @@
 safe:           false
+source:         app
 
 # Domain and path_prefix are neede for IE9 CORS.
 # More in: https://github.com/flipside-org/climatescope/issues/221
-#domain:         http://localhost:4000
-#path_prefix:    
 domain:         http://global-climatescope.org
 path_prefix:    
 
 # Address of climatescope's proxy server.
 pdbproxy:       http://pdbproxy.global-climatescope.org 
+
+exclude:
+  - assets/scripts
+  - assets/vendor
+  - assets/styles
 
 name:
   en:           Climatescope
@@ -20,7 +24,7 @@ keywords:
   en:           Climatescope, Clean Energy, Investment, Latin America and the Caribbean, Climate Change, Investment Climate, Green Economy, Greenhouse Gas Management, Carbon Management, Clean Energy, Low-Carbon Business, Value Chain, Renewables, Climate Financing, Multilateral Investment Fund, Inter-American Development Bank, Bloomberg New Energy Finance, DfiD, Power Africa
   es:           Climascopio, Energía Limpia, Inversion, América Latina y el Caribe, Cambio Climático, Clima de Inversión, Economía Verde, Gestión Gases de Efecto Invernadero, Negocios de Bajo Carbono, Energía Limpia, Cadenas de Valor, Financiamiento Climático, Renovables, Fondo Multilateral de Inversiones, Banco Interamericano de Desarrollo, Bloomberg New Energy Finance, DfiD, Power Africa
 edition:        2014
-exclude:        ['node_modules', 'source_assets', 'Gruntfile.js', 'package.json', 'README.md']
+
 collections:
   en_region:
     output: true

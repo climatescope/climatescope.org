@@ -2,13 +2,11 @@
 .project
 .DS_Store
 .sass-cache
-node_modules
-_site
+.bundle
+bundle
 
 # Local
 .resources
-_config.dev.yml
-
-# Styles and Scrips
-!public/assets/styles/.gitkeep
-!public/assets/scripts/.gitkeep
+node_modules
+_site
+.tmp
