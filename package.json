@@ -22,6 +22,6 @@
     "run-sequence": "~1.0.2"
   },
   "scripts": {
-    "install": "bundle install --path bundle/cache",
+    "install": "bundle install --path bundle/cache"
   }
 }
