@@ -2,17 +2,26 @@
   "name": "climatescope1.0",
   "version": "0.0.1",
   "description": "Climatescope",
-  "author": "Flipside",
+  "author": "developmentseed",
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-contrib-compass": "~0.9.1",
-    "grunt-contrib-uglify": "~0.5.1",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-jekyll": "~0.4.2",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-focus": "~0.1.1",
-    "grunt-contrib-concat": "~0.5.0"
+    "async": "^0.9.0",
+    "bower": "~1.3.12",
+    "browser-sync": "~2.1.1",
+    "chai": "^1.10.0",
+    "colors": "^1.0.3",
+    "glob": "^4.3.5",
+    "glob-all": "^3.0.1",
+    "gulp": "^3.8.11",
+    "gulp-clean": "~0.3.1",
+    "gulp-compass": "~2.0.3",
+    "gulp-concat": "^2.6.0",
+    "gulp-plumber": "~0.6.6",
+    "gulp-uglifyjs": "~0.6.0",
+    "js-yaml": "^3.2.6",
+    "lodash": "^3.5.0",
+    "run-sequence": "~1.0.2"
+  },
+  "scripts": {
+    "install": "bundle install --path bundle/cache"
   }
 }

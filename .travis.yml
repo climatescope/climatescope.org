@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '0.12'
+
+env:
+  global:
+  - GH_REF=github.com/developmentseed/climatescope.git
+  - DEPLOY_BRANCH=master
+  - secure: "QprRfF9pFsN9UZ2AsIIn8DLbNHYalsMP3PFtA3Qe4PAbQaDBKjSEdIuyOvaJOqt0z517aQBKiXbiMyOx6HyORaciaXELzn4uvtQr2STw2BbXbC8h8Ba8UomC2BkE62VOaOiR6dySfVdskp3sNVsvDRH0t8dLpO7QA0W+1RCpx+s="
+
+before_install:
+- chmod +x ./.build_scripts/deploy.sh
+
+script:
+- gulp stage
+
+after_success:
+- ./.build_scripts/deploy.sh
