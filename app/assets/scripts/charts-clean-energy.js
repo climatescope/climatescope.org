@@ -114,22 +114,26 @@ function chart__clean_energy_investments(element_id, iso) {
       // One group per line. Will hold two circles:
       // An outer and bigger and an inner and smaller one
       var focus_circles = focus.selectAll("g")
-        .data(chart_data)
-          .enter().append('g')
-          .attr('class', function(d) {
-            return 'focus-circles ' + d.id;
-          });
-      
+        .data(chart_data);
+
+      var enteringCircles = focus_circles.enter()
+        .append('g');
+
       // Outer circle.
-      focus_circles.append('circle')
+      enteringCircles.append('circle')
         .attr("r", 8)
         .attr('class', 'outer');
-    
       // Inner circle.
-      focus_circles.append('circle')
+      enteringCircles.append('circle')
         .attr("r", 3)
         .attr('class', 'inner');
-      
+
+      focus_circles.attr('class', function(d) {
+        return 'focus-circles ' + d.id;
+      });
+
+      focus_circles.exit().remove();
+
       // Add focus rectangle. Will be responsible to trigger the events.
       svg.append("rect")
         .attr('class', 'trigger-rect')
@@ -142,18 +146,18 @@ function chart__clean_energy_investments(element_id, iso) {
           // to the mouse position.
           var bisector = d3.bisector(function(d) { return d.year; }).left;
           var mousex = x.invert(d3.mouse(this)[0]);
-      
+
           var xpos;
           var doc_index;
           // Position the circles.
-          focus.selectAll(".focus-circles circle") 
+          focus.selectAll(".focus-circles")
             .attr("transform", function(d) {
               var closest_year = Math.round(mousex);
               doc_index = bisector(d.values, closest_year);
               var doc = d.values[doc_index];
-              
+
               xpos = x(doc.year);
-      
+
               return "translate(" + x(doc.year) + "," +  y(doc.value) + ")";
             });
       

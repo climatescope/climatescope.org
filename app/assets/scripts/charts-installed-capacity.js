@@ -133,21 +133,25 @@ function chart__installed_capacity(element_id, iso) {
       // One group per line. Will hold two circles:
       // An outer and bigger and an inner and smaller one
       var focus_circles = focus.selectAll("g")
-        .data(stacked_data)
-          .enter().append('g')
-          .attr('class', function(d) {
-            return 'focus-circles ' + d.id;
-          });
+        .data(stacked_data);
+
+      var enteringCircles = focus_circles.enter()
+        .append('g');
 
       // Outer circle.
-      focus_circles.append('circle')
+      enteringCircles.append('circle')
         .attr("r", 8)
         .attr('class', 'outer');
-
       // Inner circle.
-      focus_circles.append('circle')
+      enteringCircles.append('circle')
         .attr("r", 3)
         .attr('class', 'inner');
+
+      focus_circles.attr('class', function(d) {
+        return 'focus-circles ' + d.id;
+      });
+
+      focus_circles.exit().remove();
 
       // Add focus rectangle. Will be responsible to trigger the events.
       svg.append("rect")
@@ -165,7 +169,7 @@ function chart__installed_capacity(element_id, iso) {
           var xpos;
           var doc_index;
           // Position the circles.
-          focus.selectAll(".focus-circles circle") 
+          focus.selectAll(".focus-circles") 
             .attr("transform", function(d) {
               var closest_year = Math.round(mousex);
               doc_index = bisector(d.values, closest_year);
