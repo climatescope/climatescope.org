@@ -82,6 +82,18 @@ function chart__carbon_offset(element_id, iso) {
     var h = $chart_container.height();
     var total = 0;
 
+    // The total value must be calculated on every mouseout
+    // otherwise the function retains the value that the variable had a the
+    // time of the function's creation.
+    var calcTotal = function() {
+      var tot = 0;
+      // Reduce - ie8.
+      for (var i = 0; i < chart_data.length; i++) {
+        tot += chart_data[i].values[0].value;
+      }
+      return tot;
+    }
+
     // Size.
     width = w - margin.left - margin.right;
     height = h - margin.top - margin.bottom;
@@ -92,10 +104,7 @@ function chart__carbon_offset(element_id, iso) {
     arc_over.outerRadius(radius + 5)
       .innerRadius(radius - 40 + 5);
 
-    // Reduce - ie8.
-    for (var i = 0; i < chart_data.length; i++) {
-      total += chart_data[i].values[0].value;
-    }
+    total = calcTotal();
 
     // Set total.
     donut_legend.text('Total');
@@ -131,7 +140,7 @@ function chart__carbon_offset(element_id, iso) {
       })
       .on("mouseout", function(d) {
         donut_legend.text('Total');
-        donut_legend_value.text(total);
+        donut_legend_value.text(calcTotal());
         d3.select(this).transition()
          .duration(100)
          .attr("d", arc);
