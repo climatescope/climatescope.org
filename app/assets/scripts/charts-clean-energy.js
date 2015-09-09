@@ -1,13 +1,18 @@
 /* jshint unused: false */
-function chart__clean_energy_investments(element_id, iso) {
+function chart__clean_energy_investments(element, chartData) {
   // NOTE:
   // This chart was derived from the installed capacity.
   // It was modified to be a line chart, however some on the class names
   // remained the same to reuse styles.
 
+  var meta_info = null;
+  var chart_data = null;
+  var margin = {top: 20, right: 20, bottom: 82, left: 100};
+  var width, height;
+
   // Svg element containing the chart.
-  var chart_container = d3.select("#" + element_id);
-  var $chart_container = $("#" + element_id);
+  var chart_container = d3.select(element);
+  var $chart_container = $(element);
   var svg = chart_container.append("svg")
     .append("g")
       .attr('class', 'chart-container');
@@ -79,144 +84,135 @@ function chart__clean_energy_investments(element_id, iso) {
   var line = d3.svg.line()
     .x(function(d) { return x(d.year); })
     .y(function(d) { return y(d.value); });
-  
-  /////////////////////////////////////////////////////
-  // Data request.
 
-  var meta_info;
-  var chart_data;
-  var margin = {top: 20, right: 20, bottom: 82, left: 100};
-  var width, height;
 
-  var fetch_data = function(iso) {
-    // Request data.
-    var id = iso ? iso : (CS.stateId ? CS.stateId : CS.countryId);
-    var url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + id + '.json';
-    d3.json(url, function(error, DATA) {
-      if (error) {
-        return console.log(error);
-      }
-      
-      meta_info = DATA.meta;
-      chart_data = DATA.data;
-      
-      // Domain for the X Axis.
-      // Since the years are the same for all the data, just create
-      // the domain from one.
-      x.domain(d3.extent(chart_data[0].values, function(d) { return d.year; }));
-      
-      // Compute the y domain.
-      y.domain([0, d3.max(chart_data, function (d) {
-        return d3.max(d.values, function(o) { return o.value });
-      })]);
-      
-      // Groups to hold the focus circles.
-      // One group per line. Will hold two circles:
-      // An outer and bigger and an inner and smaller one
-      var focus_circles = focus.selectAll("g")
-        .data(chart_data);
+  var setData = function(data) {
+    if (!data) {
+      return false;
+    }
 
-      var enteringCircles = focus_circles.enter()
-        .append('g');
+    meta_info = data.meta;
+    chart_data = data.data;
 
-      // Outer circle.
-      enteringCircles.append('circle')
-        .attr("r", 8)
-        .attr('class', 'outer');
-      // Inner circle.
-      enteringCircles.append('circle')
-        .attr("r", 3)
-        .attr('class', 'inner');
+    update();
+  };
 
-      focus_circles.attr('class', function(d) {
-        return 'focus-circles ' + d.id;
-      });
+  var update = function() {
+    // Domain for the X Axis.
+    // Since the years are the same for all the data, just create
+    // the domain from one.
+    x.domain(d3.extent(chart_data[0].values, function(d) { return d.year; }));
+    
+    // Compute the y domain.
+    y.domain(meta_info.yDomain);
+    
+    // Groups to hold the focus circles.
+    // One group per line. Will hold two circles:
+    // An outer and bigger and an inner and smaller one
+    var focus_circles = focus.selectAll("g")
+      .data(chart_data);
 
-      focus_circles.exit().remove();
+    var enteringCircles = focus_circles.enter()
+      .append('g');
 
-      // Add focus rectangle. Will be responsible to trigger the events.
-      svg.append("rect")
-        .attr('class', 'trigger-rect')
-        .style("fill", "none")
-        .style("pointer-events", "all")
-        .on("mouseover", function() { focus.style("display", null); chart_tooltip.style("display", null); })
-        .on("mouseout", function() { focus.style("display", "none"); chart_tooltip.style("display", "none"); })
-        .on("mousemove", function() {
-          // Define bisector function. Is used to find the closest year
-          // to the mouse position.
-          var bisector = d3.bisector(function(d) { return d.year; }).left;
-          var mousex = x.invert(d3.mouse(this)[0]);
+    // Outer circle.
+    enteringCircles.append('circle')
+      .attr("r", 8)
+      .attr('class', 'outer');
+    // Inner circle.
+    enteringCircles.append('circle')
+      .attr("r", 3)
+      .attr('class', 'inner');
 
-          var xpos;
-          var doc_index;
-          // Position the circles.
-          focus.selectAll(".focus-circles")
-            .attr("transform", function(d) {
-              var closest_year = Math.round(mousex);
-              doc_index = bisector(d.values, closest_year);
-              var doc = d.values[doc_index];
-
-              xpos = x(doc.year);
-
-              return "translate(" + x(doc.year) + "," +  y(doc.value) + ")";
-            });
-      
-          // Position the focus line.
-          focus.select('.focus-line')
-            .attr('x1', xpos).attr('y1', height)
-            .attr('x2', xpos).attr('y2', 0);
-
-          // Position tooltip.
-          chart_tooltip
-            .attr('style', function() {
-              // Calculate tooltip width, taking the margin into account.
-              // add some extra margin.
-              var tooltip_width = chart_tooltip.style('width').replace('px', '');
-              // Remove left and right classes.
-              chart_tooltip.classed({right: false, left: false});
-              
-              // Get chart container position in space.
-              // Use jQuery object since it's easier.
-              var container_left = $chart_container.offset().left;
-              // By default the tooltip will be left of the line.
-              // Calc where the tooltip would be if aligned to the left.
-              var new_xpos = xpos - tooltip_width;
-              // If it doesn't fit in the viewport show it at the right.
-              if (container_left + new_xpos <= 0) {
-                chart_tooltip.classed({right: true});
-                return 'transform: translate(' + (xpos + margin.left + 10) + 'px, 50px)';
-              }
-              else {
-                chart_tooltip.classed({left: true});
-                return 'transform: translate(' + (xpos - tooltip_width + margin.left - 10) + 'px, 50px)';
-              }
-              
-            })
-            .html(function() {
-              var content = '<div class="tooltip-inner">';
-              content += '<dl class="chart-legend">';
-
-              // Reverse the array to ensure the order is the same.
-              chart_data.slice(0).reverse().forEach(function(doc) {
-                // Correct object from values array.
-                var value_doc = doc.values[doc_index];
-                content += '<dt class="param-' + doc.id + '">' + doc.name + '</dt>';
-                content += '<dd>' + value_doc.value + '</dd>';
-              });
-
-              content += '</dl>';
-              content += '</div>';
-
-              return content;
-            });
-      });
-
-      var chart_tooltip = chart_container.append('div')
-        .style('display', 'none')
-        .attr('class', 'tooltip-map left tooltip-chart');
-      
-      draw_chart();
+    focus_circles.attr('class', function(d) {
+      return 'focus-circles ' + d.id;
     });
+
+    focus_circles.exit().remove();
+
+    // Add focus rectangle. Will be responsible to trigger the events.
+    svg.append("rect")
+      .attr('class', 'trigger-rect')
+      .style("fill", "none")
+      .style("pointer-events", "all")
+      .on("mouseover", function() { focus.style("display", null); chart_tooltip.style("display", null); })
+      .on("mouseout", function() { focus.style("display", "none"); chart_tooltip.style("display", "none"); })
+      .on("mousemove", function() {
+        // Define bisector function. Is used to find the closest year
+        // to the mouse position.
+        var bisector = d3.bisector(function(d) { return d.year; }).left;
+        var mousex = x.invert(d3.mouse(this)[0]);
+
+        var xpos;
+        var doc_index;
+        // Position the circles.
+        focus.selectAll(".focus-circles")
+          .attr("transform", function(d) {
+            var closest_year = Math.round(mousex);
+            doc_index = bisector(d.values, closest_year);
+            var doc = d.values[doc_index];
+
+            xpos = x(doc.year);
+
+            return "translate(" + x(doc.year) + "," +  y(doc.value) + ")";
+          });
+    
+        // Position the focus line.
+        focus.select('.focus-line')
+          .attr('x1', xpos).attr('y1', height)
+          .attr('x2', xpos).attr('y2', 0);
+
+        // Position tooltip.
+        chart_tooltip
+          .attr('style', function() {
+            // Calculate tooltip width, taking the margin into account.
+            // add some extra margin.
+            var tooltip_width = chart_tooltip.style('width').replace('px', '');
+            // Remove left and right classes.
+            chart_tooltip.classed({right: false, left: false});
+            
+            // Get chart container position in space.
+            // Use jQuery object since it's easier.
+            var container_left = $chart_container.offset().left;
+            // By default the tooltip will be left of the line.
+            // Calc where the tooltip would be if aligned to the left.
+            var new_xpos = xpos - tooltip_width;
+            // If it doesn't fit in the viewport show it at the right.
+            if (container_left + new_xpos <= 0) {
+              chart_tooltip.classed({right: true});
+              return 'transform: translate(' + (xpos + margin.left + 10) + 'px, 50px)';
+            }
+            else {
+              chart_tooltip.classed({left: true});
+              return 'transform: translate(' + (xpos - tooltip_width + margin.left - 10) + 'px, 50px)';
+            }
+            
+          })
+          .html(function() {
+            var content = '<div class="tooltip-inner">';
+            content += '<dl class="chart-legend">';
+
+            // Reverse the array to ensure the order is the same.
+            chart_data.slice(0).reverse().forEach(function(doc) {
+              // Correct object from values array.
+              var value_doc = doc.values[doc_index];
+              content += '<dt class="param-' + doc.id + '">' + doc.name + '</dt>';
+              content += '<dd>' + value_doc.value + '</dd>';
+            });
+
+            content += '</dl>';
+            content += '</div>';
+
+            return content;
+          });
+    });
+
+    var chart_tooltip = chart_container.append('div')
+      .style('display', 'none')
+      .attr('class', 'tooltip-map left tooltip-chart');
+    
+    draw_chart();
+
   }
 
   var draw_chart = function() {
@@ -306,10 +302,50 @@ function chart__clean_energy_investments(element_id, iso) {
   };
 
   // GO!
-  fetch_data(iso);
+  setData(chartData);
   
   return {
     draw: draw_chart,
-    fetch: fetch_data
+    setData: setData
   };
+}
+
+/**
+ * Static method to prepare the chart data to be used on the compare page.
+ * Since this is to be used on the compare page, the yDomain must be the same
+ * across all the charts of this type.
+ * All the compare data is being passed as a parameter and the domain is being
+ * computed.
+ * The data array is then changed setting the same domain for all the charts
+ * of this type.
+ */
+chart__clean_energy_investments.prepareDataCompare = function(compareData) {
+  var maxY = []
+  for (var c in compareData) {
+    if (compareData[c].chartData && compareData[c].chartData['clean-energy-investments']) {
+      var data = compareData[c].chartData['clean-energy-investments'].data;
+      var max = d3.max(data, function (d) {
+        return d3.max(d.values, function(o) { return o.value });
+      });
+
+      maxY.push(max);
+    }
+  }
+
+  // Apply.
+  for (var c in compareData) {
+    if (compareData[c].chartData && compareData[c].chartData['clean-energy-investments']) {
+      compareData[c].chartData['clean-energy-investments'].meta.yDomain = [0, d3.max(maxY)];
+    }
+  }
+}
+
+/**
+ * Static method to prepare the chart data for one instance alone.
+ * Used by the charts on the country and states pages.
+ */
+chart__clean_energy_investments.prepareData = function(chartData) {
+  chartData.meta.yDomain = [0, d3.max(chartData.data, function (d) {
+    return d3.max(d.values, function(o) { return o.value });
+  })];
 }

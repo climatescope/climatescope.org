@@ -1,13 +1,18 @@
 /* jshint unused: false */
-function chart__carbon_offset(element_id, iso) {
+function chart__carbon_offset(element, chartData) {
   // NOTE:
   // This chart was derived from the installed capacity.
   // It was modified to be a line chart, however some on the class names
   // remained the same to reuse styles.
+  
+  var meta_info = null;
+  var chart_data = null;
+  var margin = {top: 10, right: 0, bottom: 10, left: 0};
+  var width, height, radius;
 
   // Svg element containing the chart.
-  var chart_container = d3.select("#" + element_id);
-  var $chart_container = $("#" + element_id);
+  var chart_container = d3.select(element);
+  var $chart_container = $(element);
   var svg = chart_container.append("svg")
     .append("g")
       .attr('class', 'chart-container');
@@ -15,7 +20,7 @@ function chart__carbon_offset(element_id, iso) {
   /////////////////////////////////////////////////////
   // Svg elements that will contain others.
 
-/*  // Group to hold the area delimiter lines.
+  /* // Group to hold the area delimiter lines.
   var area_delimiters_group = svg.append("g")
     .attr("class", "area-line-group");
 
@@ -53,28 +58,20 @@ function chart__carbon_offset(element_id, iso) {
     .value(function(d) { return d.values[0].value; });
 
 
-  /////////////////////////////////////////////////////
-  // Data request.
+  var setData = function(data) {
+    if (!data) {
+      return false;
+    }
 
-  var meta_info;
-  var chart_data;
-  var margin = {top: 10, right: 0, bottom: 10, left: 0};
-  var width, height, radius;
+    meta_info = data.meta;
+    chart_data = data.data;
 
-  var fetch_data = function(iso) {
-    // Request data.
-    var id = iso ? iso : (CS.stateId ? CS.stateId : CS.countryId);
-    var url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset-projects/' + id + '.json';
-    d3.json(url, function(error, DATA) {
-      if (error) {
-        return console.log(error);
-      }
-      
-      meta_info = DATA.meta;
-      chart_data = DATA.data;
+    update();
+  };
 
-      draw_chart();
-    });
+
+  var update = function() {
+    draw_chart();
   }
 
   var draw_chart = function() {
@@ -155,10 +152,10 @@ function chart__carbon_offset(element_id, iso) {
   };
 
   // GO!
-  fetch_data(iso);
-  
+  setData(chartData);
+
   return {
     draw: draw_chart,
-    fetch: fetch_data
+    setData: setData
   };
 }

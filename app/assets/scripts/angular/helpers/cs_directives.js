@@ -7,7 +7,7 @@
       restrict: 'A',
       scope: {
         chart_to_load: '@initChart',
-        iso: '='
+        chartData: '='
       },
       link: function (scope, element, attr) {
         var chart = null;
@@ -16,16 +16,16 @@
         // the chart on window resize.
         switch(scope.chart_to_load) {
           case 'installed_capacity':
-            chart = chart__installed_capacity(attr.id, scope.iso);
+            chart = chart__installed_capacity(element[0], scope.chartData);
           break;
           case 'clean_energy_investments':
-            chart = chart__clean_energy_investments(attr.id, scope.iso);
+            chart = chart__clean_energy_investments(element[0], scope.chartData);
           break;
           case 'carbon_offset':
-            chart = chart__carbon_offset(attr.id, scope.iso);
+            chart = chart__carbon_offset(element[0], scope.chartData);
           break;
         }
-        
+
         if (chart) {
           var resize_func = debounce(function() {
             chart.draw();
@@ -37,11 +37,9 @@
              $(window).off('resize', resize_func);
           });
 
-          // Redraw on iso change.
-          scope.$watch('iso', function(value){
-            chart.fetch(value);
+          scope.$watch('chartData', function(value){
+            chart.setData(value);
           });
-
         }
       }
     };
