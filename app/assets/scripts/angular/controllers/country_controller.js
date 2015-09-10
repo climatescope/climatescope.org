@@ -97,12 +97,41 @@
     var _self = this;
     // Data.
     this.parameters = [];
+    this.chartData = {
+      'clean-energy-investments': null,
+      'installed-capacity': null,
+      'carbon-offset': null
+    }
 
     setupCommonParamDetailTableMethods(_self);
 
     CountryData.get(function(data) {
       _self.parameters = data.parameters;
     });
+
+    // The following lines load the data for each of the charts.
+    // Some of the data needs to be processed before being sent to the chart.
+    // This is done by calling the prepareData(). This function is implemented
+    // on each of the chart's files.
+    var url = null;
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      chart__clean_energy_investments.prepareData(data);
+      _self.chartData['clean-energy-investments'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/installed-capacity/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      chart__installed_capacity.prepareData(data);
+      _self.chartData['installed-capacity'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset-projects/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      // No data preparation for this one.
+      _self.chartData['carbon-offset'] = data;
+    });
+
   }]);
   
   // Controller for the STATES TAB

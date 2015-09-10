@@ -21,6 +21,8 @@
       };
       computeSelected();
       $location.search(qstring);
+
+      handleCharts();
     };
 
     this.reset = function() {
@@ -50,6 +52,64 @@
     this.getCountryUrl = function(iso) {
       return CS.countryIndex[iso];
     };
+
+    /**
+     * When the comparison countries change the chart data is loaded.
+     * The compare page requires the chart data to be prepared in a special
+     * way. The Y domain must be the same in the case of the line and area
+     * charts.
+     * So the data must be loaded by the controller instead of the chart itself.
+     *
+     * What happens here:
+     *  - The data is loaded for every chart.
+     *  - The prepareDataCompare() is called (when needed), passing all the
+     *  data in the compareSelected object (all the data being compared)
+     *  - The function prepares the data (compute the yDomain, stack data)
+     *  in the way each chart needs. (the functions are declared int each
+     *  chart file.)
+     */
+    var handleCharts = function() {
+      // Loop over the countries being compared.
+      for (var c in _self.compareSelected) {
+        // Safe check to ensure that there's country data already.
+        if (_self.compareSelected[c]) {
+          // console.log('loading data for', _self.compareSelected[c].iso);
+          loadChartData('clean-energy-investments', _self.compareSelected[c], function(chartName) {
+            // START computing the y domain.
+              chart__clean_energy_investments.prepareDataCompare(_self.compareSelected);
+            // END computing the y domain.
+          });
+
+          loadChartData('installed-capacity', _self.compareSelected[c], function(chartName) {
+            // START stack values and compute the y domain.
+            chart__installed_capacity.prepareDataCompare(_self.compareSelected);
+            // END stack values and compute the y domain.
+          });
+
+          // This chart doesn't need data preparation.
+          loadChartData('carbon-offset-projects', _self.compareSelected[c]);
+        }
+      }
+    };
+
+    /**
+     * Loads the data for a specific chart of a country and executes a
+     * callback when done.
+     */
+    var loadChartData = function(chartName, countryData, callback) {
+      var url = CS.domain + '/' + CS.lang + '/api/auxiliary/' + chartName + '/' + countryData.iso + '.json';
+      $http.get(url).success(function(data) {
+        //console.log('loaded', countryData.iso);
+        if (!countryData.chartData) {
+          countryData.chartData = {};
+        }
+        countryData.chartData[chartName] = data;
+
+        if (callback) {
+          callback(chartName, countryData);
+        }
+      });
+    }
 
     var getCountry = function(prop, val) {
       for (var i in _self.countries) {
@@ -94,19 +154,20 @@
         }
       }
 
-      //console.log('_self.compareSelected', _self.compareSelected);
-      //console.log('_self.compare', _self.compare);
+      // console.log('_self.compareSelected', _self.compareSelected);
+      // console.log('_self.compare', _self.compare);
     };
 
     $http.get(CS.domain + '/' + CS.lang + '/api/countries.json').success(function(data) {
       _self.countries = data;
       computeSelected();
+
+      handleCharts();
       //console.log('request finished');
     });
 
     $rootScope.$on('$locationChangeSuccess', function() {
       //console.log('$locationChangeSuccess');
-      
       var qstring = $location.search();
 
       if (qstring.compare) {
@@ -120,6 +181,7 @@
       $scope.currentPath = $location.url();
 
       computeSelected();
+      handleCharts();
     });
 
   }]);
