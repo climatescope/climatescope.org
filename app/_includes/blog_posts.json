@@ -1,0 +1,17 @@
+[
+  {% assign comma = false %}
+  {% assign posts = (site.posts | where:"lang",include.language) %}
+  {% for post in posts %}
+  {% unless post.hidden == true %}
+    {% if comma %},{% endif %}
+    {% assign comma = true %}
+    {
+      "type": "blog",
+      "title": "{{ post.title | escape_once }}",
+      "date": "{{ post.date | date: '%Y/%m/%d' }}",
+      "dateFormatted": "{{ post.date | date: '%b %-d, %Y' }}",
+      "url": "{{ site.domain }}{{ site.path_prefix }}{{ post.url }}"
+    }
+  {% endunless %}
+  {% endfor %}
+]

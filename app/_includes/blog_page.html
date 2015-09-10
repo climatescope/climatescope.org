@@ -1,0 +1,36 @@
+<section class="layout--hub compare" ng-app="blogApp" ng-controller="blogController as blogCtrl">
+
+  <header class="layout--hub__header">
+    <div class="row--contained">
+      <div class="layout--hub__heading">
+        <h1 class="layout--hub__title">{{ t['Blog'][language] }}</h1>
+      </div>
+      <div class="layout--hub__tools" init-dropdown>
+        {% include actions_menu.html download_exc=true %}
+      </div>
+    </div>
+  </header>
+
+  <div class="layout--hub__body">
+    <div class="row--contained">
+
+      <ul>
+        <li ng-repeat="post in blogCtrl.posts">
+          <a href="%% post.url %%" alt="View post">%% post.title %%</a>
+        </li>
+      </ul>
+
+      <hr>
+
+      <ul>
+        <li>
+          <a href="" ng-click="blogCtrl.prev()" ng-class="{disabled: blogCtrl.isControlDisabled('prev')}" alt="Previous">Previous Page</a>
+        </li>
+        <li>
+          <a href="" ng-click="blogCtrl.next()" ng-class="{disabled: blogCtrl.isControlDisabled('next')}" alt="Next">Next Page</a>
+        </li>
+      </ul>
+
+    </div>
+  </div> <!-- END layout--hub__body -->
+</section>

@@ -25,6 +25,42 @@ keywords:
   es:           Climascopio, Energía Limpia, Inversion, América Latina y el Caribe, Cambio Climático, Clima de Inversión, Economía Verde, Gestión Gases de Efecto Invernadero, Negocios de Bajo Carbono, Energía Limpia, Cadenas de Valor, Financiamiento Climático, Renovables, Fondo Multilateral de Inversiones, Banco Interamericano de Desarrollo, Bloomberg New Energy Finance, DfiD, Power Africa
 edition:        2014
 
+defaults:
+  ## Start blog defaults
+
+  # WTF explanation:
+  # Apparently when using system variables (like permalink and layout)
+  # it's only possible to set them by type (and a subpath is accepted)
+  # Any other variable (like language in this case) must be set by full path
+  # otherwise it won't be picked up. That's the reason behind this redundancy.
+  # 
+  # Why you ask? Because reasons.
+  -
+    scope:
+      path: "en"
+      type: "posts"
+    values:
+      permalink: /en/blog/:year/:month/:day/:title
+      layout: blog
+  -
+    scope:
+      path: "es"
+      type: "posts"
+    values:
+      permalink: /es/blog/:year/:month/:day/:title
+      layout: blog
+  -
+    scope:
+      path: "_posts/en"
+    values:
+      lang: en
+  -
+    scope:
+      path: "_posts/es"
+    values:
+      lang: es
+  ## END blog defaults
+
 collections:
   en_region:
     output: true
