@@ -250,6 +250,50 @@
   }
 }
 
+.chart-trendline {
+  position: relative;
+  height: 2rem;
+  width: 8rem;
+
+  svg {
+    background: tint($primary-color, 96%);;
+  }
+
+  .trendline {
+    &.param-1 {
+      stroke: $infograph-color-a;
+    }
+    &.param-2 {
+      stroke: $infograph-color-b;
+    }
+    &.param-3 {
+      stroke: $infograph-color-c;
+    }
+    &.param-4 {
+      stroke: $infograph-color-d;
+    }
+  }
+
+  .focus-elements {
+    .focus-line {
+      stroke: $primary-color;
+      stroke-opacity: 0.2;
+      stroke-width: 0.5;
+    }
+    .focus-circles {
+      .outer {
+        fill: #FFF;
+        stroke-width: 0.5;
+      }
+    }
+  }
+}
+
+.trendline-tooltip .tooltip-inner {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
 .chart-std {
   position: relative;
   height: 250px;

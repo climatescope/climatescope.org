@@ -24,6 +24,9 @@
           case 'carbon_offset':
             chart = chart__carbon_offset(element[0], scope.chartData);
           break;
+          case 'trendline':
+            chart = chart__trendline(element[0], scope.chartData);
+          break;
         }
 
         if (chart) {
