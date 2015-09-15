@@ -28,4 +28,7 @@ layout: base
     </div>
   </div>
 
+  {% assign blogPosts = (site.posts | where:"lang",language) %}
+  {% include pager.html posts=blogPosts for='blog' %}
+
 </article>

@@ -1,0 +1,95 @@
+{% comment %}
+  <!-- How to use the pager: -->
+
+  <!-- Include the pager and pass the array of posts as
+  the "posts" parameter -->
+  {% include pager.html posts=site.categories.blog %}
+
+  <!-- - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+  <!-- Let's explain what's happening in the code below.
+  This approach allows us to have a next post link even if
+  the immediate next post is hidden.-->
+
+  <!-- The way to get the page url changes depending on wether it's
+  a normal post or a collection.
+  Also, since posts and collection have a different natural order
+  ensure a default. -->
+  if page.collection
+    assign pageUrl = page.permalink
+    assign posts = include.posts | reverse
+  else
+    assign pageUrl = page.url
+    assign posts = include.posts
+  endif
+
+  <!-- Loop over all the posts. -->
+  for post in include.posts
+    <!-- Current post acts as a marker to find the previous and next. -->
+    if post.url == pageUrl
+      assign currentFound = true
+
+    <!-- Current post not found meaning is a previous post. -->
+    elsif currentFound == false and post.hidden != true
+      assign prevPost = post
+
+    <!-- Current post found meaning is a next post. -->
+    elsif currentFound == true and post.hidden != true
+      assign nextPost = post
+      <!-- We have everything break the cycle. -->
+      break
+    endif
+  endfor
+
+{% endcomment %}
+
+<!-- START pager -->
+{% assign prevPost = null %}
+{% assign nextPost = null %}
+{% assign currentFound = false %}
+
+{% if page.collection %}
+  {% assign pageUrl = page.permalink %}
+  {% assign posts = include.posts | reverse %}
+{% else %}
+  {% assign pageUrl = page.url %}
+  {% assign posts = include.posts %}
+{% endif %}
+
+{% for post in posts %}
+
+  {% if post.url == pageUrl %}
+    {% assign currentFound = true %}
+
+  {% elsif currentFound == false and post.hidden != true %}
+    {% assign prevPost = post %}
+
+  {% elsif currentFound == true and post.hidden != true %}
+    {% assign nextPost = post %}
+    {% break %}
+  {% endif %}
+
+{% endfor %}
+
+<ul class="page-pager">
+  <li>
+    {% if include.for == 'blog' %}
+    <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" title="View all" class="bttn-pager all"><span>All</span></a>
+    {% endif %}
+  </li>
+  <li>
+    {% if prevPost %}
+    <a href="{{ site.domain }}{{ site.path_prefix }}{{prevPost.url}}" title="View previous" class="bttn-pager prev" data-pager-prev><span>Prev</span></a>
+    {% else %}
+    <a href="#" title="View previous" class="bttn-pager prev disabled" data-pager-prev><span>Prev</span></a>
+    {% endif %}
+  </li>
+  <li>
+    {% if nextPost %}
+    <a href="{{ site.domain }}{{ site.path_prefix }}{{nextPost.url}}" title="View next" class="bttn-pager next" data-pager-next><span>Next</span></a>
+    {% else %}
+    <a href="#" title="View next" class="bttn-pager next disabled" data-pager-next><span>Next</span></a>
+    {% endif %}
+  </li>
+</ul>
+<!-- END pager -->
