@@ -26,10 +26,13 @@ layout: base
       <div class="col--main prose-copy">
         {{content}}
       </div>
+      <div class="col--main">
+        {% assign blogPosts = (site.posts | where:"lang",language) %}
+        {% include pager.html posts=blogPosts for='blog' %}
+      </div>
     </div>
   </div>
 
-  {% assign blogPosts = (site.posts | where:"lang",language) %}
-  {% include pager.html posts=blogPosts for='blog' %}
+  
 
 </article>

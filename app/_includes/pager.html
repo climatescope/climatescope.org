@@ -71,14 +71,14 @@
 
 {% endfor %}
 
-  <ul class="page-all bttn-group">
+  <ul class="page-all bttn-pager-group bttn-group">
     <li>
       {% if include.for == 'blog' %}
       <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" title="View all" class="  bttn-pager all bttn bttn-s bttn-dark"><span>All</span></a>
       {% endif %}
     </li>
   </ul>
-  <ul class="page-pager bttn-group">
+  <ul class="page-pager bttn-pager-group bttn-group">
     <li>
       {% if prevPost %}
       <a href="{{ site.domain }}{{ site.path_prefix }}{{prevPost.url}}" title="View previous" class=" bttn-pager prev bttn bttn-s bttn-dark back" data-pager-prev><span>Prev</span></a>
