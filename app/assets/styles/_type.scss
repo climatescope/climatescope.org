@@ -367,6 +367,10 @@ h6, .hd-xxs {
   }
 }
 
+.blog-post-title, .blog-post-title:visited{
+  color:$primary-color;
+}
+
 .hd-param-1:before { background: $infograph-color-a; }
 .hd-param-2:before { background: $infograph-color-b; }
 .hd-param-3:before { background: $infograph-color-c; }
@@ -381,6 +385,10 @@ h6, .hd-xxs {
 // BODY COPY
 
 p {
+  margin-bottom: 1.25rem;
+}
+
+iframe{
   margin-bottom: 1.25rem;
 }
 

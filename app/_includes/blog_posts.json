@@ -10,7 +10,9 @@
       "title": "{{ post.title | escape_once }}",
       "date": "{{ post.date | date: '%Y/%m/%d' }}",
       "dateFormatted": "{{ post.date | date: '%b %-d, %Y' }}",
-      "url": "{{ site.domain }}{{ site.path_prefix }}{{ post.url }}"
+      "url": "{{ site.domain }}{{ site.path_prefix }}{{ post.url }}",
+      "author": "{{ post.author }}",
+      "description": "{{ post.description }}"
     }
   {% endunless %}
   {% endfor %}

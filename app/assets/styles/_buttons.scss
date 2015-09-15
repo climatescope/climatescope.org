@@ -161,6 +161,8 @@ input[type=submit] {
     }
   }
   &.go:after { @extend .icon-s-arr-right; }
+  &.back:before { @extend .icon-s-arr-left; }
+  &.all:after { @extend .icon-menu; }
   &.download:before { @extend .icon-download; }
   &.share:before { @extend .icon-share; }
   &.restart:before { @extend .icon-refresh; }
@@ -208,4 +210,16 @@ input[type=submit] {
   &.bttn-list > li + li {
     margin-left: -1px;
   }
+}
+
+.bttn-page-nav{
+  padding: 2rem 0 3rem 0;
+}
+
+.page-pager {
+  padding: 0 1rem 3rem 0;
+}
+
+.page-all{
+  padding:0 0 3rem 3rem;
 }
