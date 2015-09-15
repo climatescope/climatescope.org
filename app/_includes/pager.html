@@ -81,14 +81,14 @@
   <ul class="page-pager bttn-group">
     <li>
       {% if prevPost %}
-      <a href="{{ site.domain }}{{ site.path_prefix }}{{prevPost.url}}" title="View previous" class=" bttn-pager prev disabled bttn bttn-s bttn-dark back" data-pager-prev><span>Prev</span></a>
+      <a href="{{ site.domain }}{{ site.path_prefix }}{{prevPost.url}}" title="View previous" class=" bttn-pager prev bttn bttn-s bttn-dark back" data-pager-prev><span>Prev</span></a>
       {% else %}
       <a href="#" title="View previous" class="bttn-pager prev disabled bttn bttn-s bttn-dark back"   data-pager-prev><span>Prev</span></a>
       {% endif %}
     </li>
     <li>
       {% if nextPost %}
-      <a href="{{ site.domain }}{{ site.path_prefix }}{{nextPost.url}}" title="View next" class="bttn -pager bttn bttn-s bttn-dark go next" data-pager-next><span>Next</span></a>
+      <a href="{{ site.domain }}{{ site.path_prefix }}{{nextPost.url}}" title="View next" class="bttn-pager bttn bttn-s bttn-dark go next" data-pager-next><span>Next</span></a>
       {% else %}
       <a href="#" title="View next" class="bttn-pager next disabled bttn bttn-s bttn-dark go" data- pager-next><span>Next</span></a>
       {% endif %}
