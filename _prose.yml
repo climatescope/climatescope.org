@@ -18,8 +18,6 @@ prose:
     - /_config.yml
     - /_config-dev.yml
     - /_config-stage.yml
-    - /_config.yml
-    - /.build_scripts
     
     # Development stuff
     - /.gitignore
@@ -29,6 +27,8 @@ prose:
     - /LICENSE.md
     - /README.md
     - /package.json
+    - /.travis.yml
+    - /.build_scripts
   metadata:
     # English collections.
     ####################################
