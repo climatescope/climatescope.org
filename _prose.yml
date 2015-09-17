@@ -16,6 +16,10 @@ prose:
     # In due time block _prose and _config.
     - /_prose.yml
     - /_config.yml
+    - /_config-dev.yml
+    - /_config-stage.yml
+    - /_config.yml
+    - /.build_scripts
     
     # Development stuff
     - /.gitignore
@@ -154,6 +158,28 @@ prose:
           label: "Parameter weight"
           help: "Used to order the parameters in the menu. Each one must have a different value."
 
+    ## POSTS
+    "app/_posts/en":
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post name"
+          placeholder: "Post name"
+      - name: "postId"
+        field:
+          element: "text"
+          label: "Post id"
+          help: "All translations of a post must have the same id."
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          placeholder: "Author name"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          help: "Small description of the post. Will show up on the post list."
 
 
     # Spanish collections.
@@ -283,3 +309,26 @@ prose:
           element: "text"
           label: "Parameter weight"
           help: "Used to order the parameters in the menu. Each one must have a different value."
+    
+    ## POSTS
+    "app/_posts/es":
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post name"
+          placeholder: "Post name"
+      - name: "postId"
+        field:
+          element: "text"
+          label: "Post id"
+          help: "All translations of a post must have the same id."
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          placeholder: "Author name"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          help: "Small description of the post. Will show up on the post list."
