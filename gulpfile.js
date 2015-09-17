@@ -171,7 +171,7 @@ gulp.task('serve', ['build'], function () {
     runSequence('dependencies', browserReload);
   });
 
-  gulp.watch(['app/**/*.html', 'app/**/*.md', 'app/**/*.json', 'app/**/*.geojson'], function() {
+  gulp.watch(['app/**/*.html', 'app/**/*.md', 'app/**/*.json', 'app/**/*.geojson', '_config*'], function() {
     runSequence('jekyll', browserReload);
   });
 

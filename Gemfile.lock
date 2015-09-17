@@ -28,7 +28,7 @@ GEM
     fast-stemmer (1.0.2)
     ffi (1.9.10)
     hitimes (1.2.2)
-    jekyll (2.4.0)
+    jekyll (2.5.3)
       classifier-reborn (~> 2.0)
       colorator (~> 0.1)
       jekyll-coffeescript (~> 1.0)
@@ -84,6 +84,6 @@ PLATFORMS
 
 DEPENDENCIES
   compass (~> 1.0.1)
-  jekyll (~> 2.4.0)
+  jekyll (~> 2.5.3)
   sass (~> 3.4.9)
   sass-css-importer (~> 1.0.0.beta.0)
