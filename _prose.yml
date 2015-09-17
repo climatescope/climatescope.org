@@ -29,6 +29,9 @@ prose:
     - /package.json
     - /.travis.yml
     - /.build_scripts
+  
+  rooturl: /app
+  
   metadata:
     # English collections.
     ####################################
