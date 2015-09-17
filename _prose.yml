@@ -30,7 +30,7 @@ prose:
     - /.travis.yml
     - /.build_scripts
   
-  rooturl: /app
+  rooturl: app
   
   metadata:
     # English collections.
