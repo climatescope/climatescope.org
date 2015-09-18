@@ -300,20 +300,21 @@ a:active{
   font-family: $brand-font-family;
   margin-bottom: 1rem;
   @media #{$xxlarge-up} {
-    @include col(4/12);
+    @include col(3/12);
     margin-bottom: 0;
   }
 }
 
 #site-title {
-  @extend .hd-xs;
+  font-size: 1.5rem;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1;
   em {
     font-style: normal;
     color: #fff;
   }
   a, a:visited {
+    display: block;
     color: $secondary-color;
   }
 }
@@ -321,7 +322,7 @@ a:active{
 #prime-nav {
   @include span(12/12);
   @media #{$xxlarge-up} {
-    @include col(8/12);
+    @include col(9/12);
   }
   @media print {
     display: none;
