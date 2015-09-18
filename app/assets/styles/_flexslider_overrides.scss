@@ -3,11 +3,11 @@
   border: none;
   border-radius: 0;
   box-shadow: none;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
   overflow: hidden;
   
   .flex-control-paging li a {
-    background-color: rgba(#fff, 0.24);
+    background-color: rgba(#fff, 0.75);
     border: none;
     height: 0.5rem;
     width: 0.5rem;
@@ -22,7 +22,7 @@
   
   .flex-control-nav {
     height: 0;
-    bottom: 2.5rem;
+    bottom: 1rem;
     li {
       margin: 0;
     }
@@ -35,7 +35,7 @@
   line-height: 1;
   li {
     position: absolute;
-    top: 50%;
+    bottom: 1rem;
     left: 0;
     z-index: 10;
     opacity: 0.64;
@@ -65,6 +65,7 @@
 
 .flexslider .flex-direction-nav .flex-prev:before {
   @extend .icon-arr-left;
+  left:0;
 }
 .flexslider .flex-direction-nav .flex-next:before {
   @extend .icon-arr-right;
