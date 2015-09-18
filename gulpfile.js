@@ -92,6 +92,7 @@ gulp.task('compress:main', function() {
       'app/assets/scripts/angular/**/*.js',
       'app/assets/vendor/noUiSlider/jquery.nouislider.min.js',
       'app/assets/scripts/vendor/jquery.once.min.js',
+      'app/assets/vendor/flexslider/jquery.flexslider.js',
       'app/assets/scripts/vendor/d3.v3.min.js'
     ])
     .pipe(plumber());
