@@ -327,3 +327,91 @@
     line-height: 1.5rem;
   }
 }
+
+$circle-size: 0.625rem;
+$circle-gutter: 0.5rem;
+.value-chains {
+  list-style: none;
+  font-family: $brand-font-family;
+
+  > li {
+    @include col(6/12, $cycle: 2);
+    background-color: tint($infograph-color-c, 90%);
+    margin-bottom: 1rem;
+    padding: 1rem;
+
+    .card-title {
+      @include col(4/12, $gutter: 0);
+      margin-bottom: 0;
+      font-size: 1rem;
+      line-height: 1;
+      padding-right: 1rem;
+      text-align: center;
+
+      &:after {
+        margin-top: 0.5rem;
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+
+    .card-content {
+      @include col(8/12, $gutter: 0);
+      padding-left: 1rem;
+      border-left: 1px solid $body-font-color;
+    }
+
+    &.biofuels .card-title:after { @extend .icon-power; }
+    &.geothermal .card-title:after { @extend .icon-github; }
+    &.small-hydro .card-title:after { @extend .icon-circle-play; }
+    &.solar .card-title:after { @extend .icon-circle-warning; }
+
+    .available-list,
+    .non-available-list {
+      list-style: none;
+      position: relative;
+      font-size: 0.875rem;
+      padding: $circle-size 0 0 0;
+      margin-bottom: 0;
+
+      li {
+        display: inline;
+
+        &:before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          z-index: 1;
+          border-radius: $global-rounded;
+          height: $circle-size;
+          width: $circle-size;
+          margin-right: $circle-gutter;
+        }
+
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}):before {
+            left: ($circle-size + $circle-gutter) * ($i - 1);
+          }
+        }
+      }
+    }
+
+    .available-list {
+      margin-bottom: 1rem;
+
+      li:before {
+        background-color: $body-font-color;
+      }
+    }
+
+    .non-available-list li {
+      color: tint($primary-color, 48%);
+
+      &:before {
+        background-color: tint($primary-color, 48%);
+      }
+    }
+  }
+}

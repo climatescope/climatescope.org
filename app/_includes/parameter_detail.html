@@ -16,6 +16,20 @@
 
   <div class="param-details__body">
 
+    <ul ng-if="param.id == 3" class="value-chains chart-wrapper">
+      <li ng-repeat="card in detailsCtrl.chartData['value-chains'].data" ng-class="card.id">
+        <h2 class="card-title">%% card.name %%</h2>
+        <div class="card-content">
+          <ul class="available-list">
+            <li ng-repeat="avl in card.available">%% $last ? avl : avl + ';' %% </li>
+          </ul>
+          <ul class="non-available-list">
+            <li ng-repeat="notavl in card['non-available']">%% $last ? notavl : notavl + ';' %% </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
     <table class="table detailed-data param-details__table">
       <thead>
         <tr>
