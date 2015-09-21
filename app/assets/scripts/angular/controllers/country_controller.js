@@ -100,7 +100,8 @@
     this.chartData = {
       'clean-energy-investments': null,
       'installed-capacity': null,
-      'carbon-offset': null
+      'carbon-offset': null,
+      'price-attractiveness-electricity': null
     }
 
     setupCommonParamDetailTableMethods(_self);
@@ -130,6 +131,18 @@
     $http.get(url).success(function(data) {
       // No data preparation for this one.
       _self.chartData['carbon-offset'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-electricity/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      // No data preparation for this one.
+      _self.chartData['price-attractiveness-electricity'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-fuel/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      // No data preparation for this one.
+      _self.chartData['price-attractiveness-fuel'] = data;
     });
 
   }]);

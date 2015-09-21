@@ -327,3 +327,21 @@
     line-height: 1.5rem;
   }
 }
+
+//price attractiveness 
+
+.chart-price-bars{
+  fill: $infograph-color-a;
+}
+
+.chart-background-bar{
+  fill: tint($primary-color, 95%);
+}
+
+.chart-subhead{
+  @extend .hd-label;
+  margin:0;
+  padding:0;
+  text-align: left;
+  margin-left:100px;
+}

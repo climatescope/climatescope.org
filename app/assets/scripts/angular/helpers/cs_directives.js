@@ -24,6 +24,9 @@
           case 'carbon_offset':
             chart = chart__carbon_offset(element[0], scope.chartData);
           break;
+          case 'price_attractiveness_electricity':
+            chart = chart__price_attractiveness_electricity(element[0], scope.chartData);
+          break;
         }
 
         if (chart) {
