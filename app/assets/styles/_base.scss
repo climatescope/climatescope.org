@@ -901,6 +901,20 @@ a:active{
   }
   &__table {
     @include col(12/12);
+
+    &-actions {
+      text-align: center;
+    }
+
+    .table-wrapper {
+      max-height: 15rem;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      margin-bottom: 0;
+    }
   }
   &__graph {
     @include col(12/12);
