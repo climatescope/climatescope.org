@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "available": [
+        "Producers",
+        "Engineering",
+        "O&M",
+        "Equipment"
+      ],
+      "non-available": [
+        "Manufacturing",
+        "Distribution and Blending"
+      ],
+      "name": "Biofuels",
+      "id": "biofuels"
+    },
+    {
+      "available": [
+        "Engineering",
+        "Producers",
+        "Equipment"
+      ],
+      "non-available": [
+        "Manufacturing"
+      ],
+      "name": "Geothermal",
+      "id": "geothermal"
+    },
+    {
+      "available": [
+        "Engineering",
+        "Producers",
+        "Equipment",
+        "Another"
+      ],
+      "non-available": [
+        "Manufacturing",
+        "A long one to check text"
+      ],
+      "name": "solar",
+      "id": "solar"
+    },
+    {
+      "available": [
+        "Engineering",
+        "Producers",
+        "Equipment",
+        "Another",
+        "All active"
+      ],
+      "non-available": [
+      ],
+      "name": "Small Hydro",
+      "id": "small-hydro"
+    }
+  ],
+  "meta": {
+    "title": "Value Chains"
+  },
+  "iso": "cn",
+  "name": "China"
+}
