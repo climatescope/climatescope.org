@@ -12,10 +12,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "%",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": null
@@ -23,10 +23,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "%",
-                    "value": 45.0
+                    "value": 45
                   },
                   "year": 2014,
                   "regional_ranking": null
@@ -167,7 +167,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -178,7 +178,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -257,7 +257,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -268,7 +268,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -336,7 +336,7 @@
                   "value": 0.03892,
                   "raw": {
                     "unit": "MW",
-                    "value": 166381.0
+                    "value": 166381
                   },
                   "year": 2014,
                   "regional_ranking": 5
@@ -355,7 +355,7 @@
                   "value": 0.00154,
                   "raw": {
                     "unit": "Billion litres",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": 3
@@ -415,7 +415,7 @@
                   "value": 0.04739,
                   "raw": {
                     "unit": "%",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": 1
@@ -477,10 +477,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/Litre",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": null
@@ -488,10 +488,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/Litre",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2014,
                   "regional_ranking": null
@@ -507,7 +507,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/MWh",
                     "value": 103.05385
@@ -518,7 +518,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/MWh",
                     "value": 131.18778
@@ -567,7 +567,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/MWh",
                     "value": 100.83457
@@ -578,7 +578,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/MWh",
                     "value": 142.71435
@@ -627,10 +627,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/Litre",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": null
@@ -638,10 +638,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/Litre",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2014,
                   "regional_ranking": null
@@ -657,7 +657,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/MWh",
                     "value": 60.09652
@@ -668,7 +668,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD/MWh",
                     "value": 82.04582
@@ -780,10 +780,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USDm",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": null
@@ -791,7 +791,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USDm",
                     "value": 3540.2741
@@ -810,10 +810,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USDm",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": null
@@ -821,7 +821,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USDm",
                     "value": 32528.97824
@@ -840,7 +840,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USDm",
                     "value": 10960.53627
@@ -851,7 +851,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USDm",
                     "value": 266106.77197
@@ -878,7 +878,7 @@
                   "value": 0.12629,
                   "raw": {
                     "unit": "USDm",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": 1
@@ -908,7 +908,7 @@
                   "value": 0.00109,
                   "raw": {
                     "unit": "USDm",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": 4
@@ -940,10 +940,10 @@
                 {
                   "overall_ranking": 32,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "Borrowers",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": 8
@@ -951,10 +951,10 @@
                 {
                   "overall_ranking": 33,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "Borrowers",
-                    "value": 10.0
+                    "value": 10
                   },
                   "year": 2014,
                   "regional_ranking": 8
@@ -970,10 +970,10 @@
                 {
                   "overall_ranking": 29,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": 7
@@ -981,10 +981,10 @@
                 {
                   "overall_ranking": 30,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "USD",
-                    "value": 350000.0
+                    "value": 350000
                   },
                   "year": 2014,
                   "regional_ranking": 7
@@ -1003,7 +1003,7 @@
                   "value": 0.00394,
                   "raw": {
                     "unit": "%",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": 7
@@ -1014,7 +1014,7 @@
                   "value": 0.00371,
                   "raw": {
                     "unit": "%",
-                    "value": 20.0
+                    "value": 20
                   },
                   "year": 2014,
                   "regional_ranking": 7
@@ -1030,10 +1030,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "Companies",
-                    "value": 0.0
+                    "value": 0
                   },
                   "year": 2015,
                   "regional_ranking": null
@@ -1041,10 +1041,10 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": "Companies",
-                    "value": 1.0
+                    "value": 1
                   },
                   "year": 2014,
                   "regional_ranking": null
@@ -1068,7 +1068,7 @@
                   "value": 0.07132,
                   "raw": {
                     "unit": "%",
-                    "value": 6.0
+                    "value": 6
                   },
                   "year": 2015,
                   "regional_ranking": 2
@@ -1079,7 +1079,7 @@
                   "value": 0.09028,
                   "raw": {
                     "unit": "%",
-                    "value": 6.0
+                    "value": 6
                   },
                   "year": 2014,
                   "regional_ranking": 1
@@ -1153,7 +1153,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -1164,7 +1164,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -1273,7 +1273,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -1284,7 +1284,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -1305,14 +1305,14 @@
           "overall_ranking": 1,
           "regional_ranking": 1,
           "state_ranking": null,
-          "value": 5.0,
+          "value": 5,
           "year": 2015
         },
         {
           "overall_ranking": 1,
           "regional_ranking": 1,
           "state_ranking": null,
-          "value": 5.0,
+          "value": 5,
           "year": 2014
         }
       ],
@@ -1421,7 +1421,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -1432,7 +1432,7 @@
                 {
                   "overall_ranking": null,
                   "state_ranking": null,
-                  "value": 0.0,
+                  "value": 0,
                   "raw": {
                     "unit": null,
                     "value": null
@@ -1755,709 +1755,1609 @@
   },
   "states": [
     {
-      "score": 1.1995,
-      "grid": "on",
       "name": "Fujian",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.3534,
-          "state_ranking": 9
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 0.76153,
-          "state_ranking": 15
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 1.94079,
-          "state_ranking": 4
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 1.28684,
-          "state_ranking": 14
-        }
-      ],
+      "grid": "on",
       "iso": "cn-35",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 12
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 12,
+          "value": 1.6340643535786075,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 12,
+          "value": 1.1995,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 9,
+              "value": 1.210303073817771,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 9,
+              "value": 1.3534,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 15,
+              "value": 0.9155685064953356,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 15,
+              "value": 0.76153,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 0.7697651718537812,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 1.94079,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 14,
+              "value": 1.2965393371831626,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 14,
+              "value": 1.28684,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.5085,
-      "grid": "on",
       "name": "Hubei",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.26569,
-          "state_ranking": 14
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 0.88317,
-          "state_ranking": 11
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 1.41447,
-          "state_ranking": 7
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 1.62018,
-          "state_ranking": 13
-        }
-      ],
+      "grid": "on",
       "iso": "cn-42",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 9
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 9,
+          "value": 1.29305082070583,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 9,
+          "value": 1.5085,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 14,
+              "value": 0.9083637955205655,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 14,
+              "value": 1.26569,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 11,
+              "value": 1.1029170922443503,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 11,
+              "value": 0.88317,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 0.7801605680106534,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 1.41447,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 13,
+              "value": 2.710138454940347,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 13,
+              "value": 1.62018,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.59225,
-      "grid": "on",
       "name": "Guangdong",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.38691,
-          "state_ranking": 7
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 0.78955,
-          "state_ranking": 14
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 2.42763,
-          "state_ranking": 1
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 2.20351,
-          "state_ranking": 4
-        }
-      ],
+      "grid": "on",
       "iso": "cn-44",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 8
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 8,
+          "value": 2.7133640515988806,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 8,
+          "value": 1.59225,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 1.3255175897089533,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 1.38691,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 14,
+              "value": 0.4710733648746274,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 14,
+              "value": 0.78955,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 1.7612459514748562,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 2.42763,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 1.0367501889248263,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 2.20351,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.90408,
-      "grid": "on",
       "name": "Jiangsu",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.40856,
-          "state_ranking": 6
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 1.14266,
-          "state_ranking": 5
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 2.05592,
-          "state_ranking": 3
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 2.12018,
-          "state_ranking": 7
-        }
-      ],
+      "grid": "on",
       "iso": "cn-32",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 2
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 2,
+          "value": 0.8422891807766072,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 2,
+          "value": 1.90408,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 6,
+              "value": 1.9571469419676997,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 6,
+              "value": 1.40856,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 5,
+              "value": 0.6125956803255901,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 5,
+              "value": 1.14266,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 3,
+              "value": 2.585729080855325,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 3,
+              "value": 2.05592,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 1.0940490982143487,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 2.12018,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.07192,
-      "grid": "on",
       "name": "Yunnan",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.33679,
-          "state_ranking": 10
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 1.04195,
-          "state_ranking": 6
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 1.29934,
-          "state_ranking": 10
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 2.45351,
-          "state_ranking": 1
-        }
-      ],
+      "grid": "on",
       "iso": "cn-53",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 13
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 13,
+          "value": 0.6886887740260176,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 13,
+          "value": 1.07192,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 1.2489439061418897,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 1.33679,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 6,
+              "value": 1.3594528008395224,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 6,
+              "value": 1.04195,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 1.2621723352830716,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 1.29934,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 1.5373294065159444,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 2.45351,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 2.15126,
-      "grid": "on",
       "name": "Xinjiang",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.60088,
-          "state_ranking": 1
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 1.63542,
-          "state_ranking": 3
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 1.29934,
-          "state_ranking": 10
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 2.45351,
-          "state_ranking": 1
-        }
-      ],
+      "grid": "on",
       "iso": "cn-65",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 1
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 1,
+          "value": 3.5000435520794198,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 1,
+          "value": 2.15126,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 2.120175318264738,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 1.60088,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 3,
+              "value": 1.1892781015331253,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 3,
+              "value": 1.63542,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 1.122619744041059,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 1.29934,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 2.2528874823038048,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 2.45351,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.37256,
-      "grid": "on",
       "name": "Qinghai",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.54643,
-          "state_ranking": 2
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 2.13023,
-          "state_ranking": 1
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 0.90461,
-          "state_ranking": 13
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 1.77328,
-          "state_ranking": 10
-        }
-      ],
+      "grid": "on",
       "iso": "cn-63",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 11
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 11,
+          "value": 1.1976612069882453,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 11,
+          "value": 1.37256,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 2,
+              "value": 1.7827601543153078,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 2,
+              "value": 1.54643,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 1.8922896496261448,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 2.13023,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 13,
+              "value": 0.50064400483076,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 13,
+              "value": 0.90461,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 1.363380705264248,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 1.77328,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.63732,
-      "grid": "on",
       "name": "Gansu",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.47317,
-          "state_ranking": 3
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 2.0443,
-          "state_ranking": 2
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 0.64145,
-          "state_ranking": 14
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 2.20351,
-          "state_ranking": 4
-        }
-      ],
+      "grid": "on",
       "iso": "cn-62",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 6
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 6,
+          "value": 2.60336128477199,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 6,
+          "value": 1.63732,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 3,
+              "value": 1.1928742310435954,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 3,
+              "value": 1.47317,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 2,
+              "value": 3.5297127150786105,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 2,
+              "value": 2.0443,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 14,
+              "value": 0.7407537190558156,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 14,
+              "value": 0.64145,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 2.3630036949371593,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 2.20351,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.84403,
-      "grid": "on",
       "name": "Shandong",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.45109,
-          "state_ranking": 4
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 0.83742,
-          "state_ranking": 12
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 2.25987,
-          "state_ranking": 2
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 1.70351,
-          "state_ranking": 11
-        }
-      ],
+      "grid": "on",
       "iso": "cn-37",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 3
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 3,
+          "value": 1.8086207972686574,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 3,
+          "value": 1.84403,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 0.9477269389879308,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 1.45109,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 12,
+              "value": 0.6921799349019863,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 12,
+              "value": 0.83742,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 2,
+              "value": 4.005272334169959,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 2,
+              "value": 2.25987,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 11,
+              "value": 0.881848846627702,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 11,
+              "value": 1.70351,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.70456,
-      "grid": "on",
       "name": "Sichuan",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.2583,
-          "state_ranking": 15
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 0.93478,
-          "state_ranking": 8
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 1.81908,
-          "state_ranking": 5
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 2.12018,
-          "state_ranking": 7
-        }
-      ],
+      "grid": "on",
       "iso": "cn-51",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 5
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 5,
+          "value": 0.8555044305725769,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 5,
+          "value": 1.70456,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 15,
+              "value": 0.9925210221174173,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 15,
+              "value": 1.2583,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 8,
+              "value": 0.8653818446655804,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 8,
+              "value": 0.93478,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 5,
+              "value": 3.1101486476192157,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 5,
+              "value": 1.81908,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 1.2120906231289823,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 2.12018,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.06381,
-      "grid": "on",
       "name": "Heilongjiang",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.30685,
-          "state_ranking": 12
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 0.90324,
-          "state_ranking": 9
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 1.34868,
-          "state_ranking": 9
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 1.70351,
-          "state_ranking": 11
-        }
-      ],
+      "grid": "on",
       "iso": "cn-23",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 14
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 14,
+          "value": 0.837467567911921,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 14,
+          "value": 1.06381,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 12,
+              "value": 1.842117839301331,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 12,
+              "value": 1.30685,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 9,
+              "value": 1.2958875116623287,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 9,
+              "value": 0.90324,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 9,
+              "value": 1.785150269684801,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 9,
+              "value": 1.34868,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 11,
+              "value": 1.7573531093559112,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 11,
+              "value": 1.70351,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.60528,
-      "grid": "on",
       "name": "Jilin",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.27748,
-          "state_ranking": 13
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 0.82485,
-          "state_ranking": 13
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 1.03618,
-          "state_ranking": 12
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 2.20351,
-          "state_ranking": 4
-        }
-      ],
+      "grid": "on",
       "iso": "cn-22",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 7
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 7,
+          "value": 1.4015646702973545,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 7,
+          "value": 1.60528,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 13,
+              "value": 1.60086467996601,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 13,
+              "value": 1.27748,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 13,
+              "value": 0.17854930393667892,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 13,
+              "value": 0.82485,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 12,
+              "value": 1.400741905960967,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 12,
+              "value": 1.03618,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 4.097219257944308,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 2.20351,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.49464,
-      "grid": "on",
       "name": "Nei Mongol",
-      "parameters": [
-        {
-          "name": "Enabling framework",
-          "weight": 0.4,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.3167,
-          "state_ranking": 11
-        },
-        {
-          "name": "Financing and Investments",
-          "weight": 0.3,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 1.29371,
-          "state_ranking": 4
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 1.35855,
-          "state_ranking": 8
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 2.45351,
-          "state_ranking": 1
-        }
-      ],
+      "grid": "on",
       "iso": "cn-15",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 10
+      "score": [
+        {
+          "overall_ranking": null,
+          "state_ranking": 10,
+          "value": 0.7277001936477981,
+          "year": 2015,
+          "regional_ranking": null
+        },
+        {
+          "overall_ranking": null,
+          "state_ranking": 10,
+          "value": 1.49464,
+          "year": 2014,
+          "regional_ranking": null
+        }
+      ],
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 11,
+              "value": 1.3024459208180197,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 11,
+              "value": 1.3167,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 2.124430761983383,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 4,
+              "value": 1.29371,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 8,
+              "value": 0.8307343859716434,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 8,
+              "value": 1.35855,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 3.268042274612098,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 1,
+              "value": 2.45351,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.7207,
-      "grid": "on",
       "name": "Hebei",
-      "parameters": [
+      "grid": "on",
+      "iso": "cn-13",
+      "score": [
         {
-          "name": "Enabling framework",
-          "weight": 0.4,
           "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.42661,
-          "state_ranking": 5
+          "state_ranking": 4,
+          "value": 0.37538402415176386,
+          "year": 2015,
+          "regional_ranking": null
         },
         {
-          "name": "Financing and Investments",
-          "weight": 0.3,
           "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 0.89396,
-          "state_ranking": 10
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 1.67763,
-          "state_ranking": 6
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 1.99772,
-          "state_ranking": 9
+          "state_ranking": 4,
+          "value": 1.7207,
+          "year": 2014,
+          "regional_ranking": null
         }
       ],
-      "iso": "cn-13",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 4
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 5,
+              "value": 2.708464886851802,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 5,
+              "value": 1.42661,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 0.38347403212042525,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 10,
+              "value": 0.89396,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 6,
+              "value": 1.3416077783441172,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 6,
+              "value": 1.67763,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 9,
+              "value": 1.7792394802629854,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 9,
+              "value": 1.99772,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     },
     {
-      "score": 1.01209,
-      "grid": "on",
       "name": "Xizang",
-      "parameters": [
+      "grid": "on",
+      "iso": "cn-54",
+      "score": [
         {
-          "name": "Enabling framework",
-          "weight": 0.4,
           "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 1,
-          "value": 1.37507,
-          "state_ranking": 8
+          "state_ranking": 15,
+          "value": 0.4709980466845352,
+          "year": 2015,
+          "regional_ranking": null
         },
         {
-          "name": "Financing and Investments",
-          "weight": 0.3,
           "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 2,
-          "value": 1.01539,
-          "state_ranking": 7
-        },
-        {
-          "name": "Value chains",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 3,
-          "value": 0.44408,
-          "state_ranking": 15
-        },
-        {
-          "name": "GHG management",
-          "weight": 0.15,
-          "overall_ranking": null,
-          "regional_ranking": null,
-          "id": 4,
-          "value": 0.95351,
-          "state_ranking": 15
+          "state_ranking": 15,
+          "value": 1.01209,
+          "year": 2014,
+          "regional_ranking": null
         }
       ],
-      "iso": "cn-54",
-      "overall_ranking": null,
-      "regional_ranking": null,
-      "state_ranking": 15
+      "parameters": [
+        {
+          "id": 1,
+          "weight": 0.4,
+          "name": "Enabling framework",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 8,
+              "value": 1.5807052009973814,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 8,
+              "value": 1.37507,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "weight": 0.3,
+          "name": "Financing and Investments",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 0.8799700783979008,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 7,
+              "value": 1.01539,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "weight": 0.15,
+          "name": "Value chains",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 15,
+              "value": 0.47024898406824095,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 15,
+              "value": 0.44408,
+              "year": 2014
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "weight": 0.15,
+          "name": "GHG management",
+          "data": [
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 15,
+              "value": 0.5545219474111172,
+              "year": 2015
+            },
+            {
+              "overall_ranking": null,
+              "regional_ranking": null,
+              "state_ranking": 15,
+              "value": 0.95351,
+              "year": 2014
+            }
+          ]
+        }
+      ]
     }
   ],
   "score": [
