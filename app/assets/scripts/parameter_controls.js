@@ -65,30 +65,41 @@ $(document).ready(function() {
     globalAppScope.$apply(function() {
       var countries = globalAppScope.countryTable.countries;
 
+      // NOTE:
+      // Many time throughout this code, data array will be accessed by
+      // the index [0]. This is safe to do because we know that the first value
+      // is always the most recent year. The processing script must ensure
+      // that the array has the correct order.
+
       // Helper functions.
       // Update parameters and return new global score.
-      var updateParams = function(params) {
+      var updateParams = function(params, dataIndex) {
+        // The data index allows us to calc the score based on the correct year.
         var globalScore = 0;
         angular.forEach(params, function(param) {
           // Update param weight.
           param.weight = data['param-' + param.id] / 100;
           // Country score.
-          globalScore += (param.weight * param.value);
+          // Use the most recent value. The other values are for the trendlines.
+          globalScore += (param.weight * param.data[dataIndex].value);
         });
         return round(globalScore, 5);
       };
 
       // Update country scores.
       angular.forEach(countries, function(country) {
-        // Update params and calc score.
-        var newCountryScore = updateParams(country.parameters);
-        // Set country score.
-        country.score = newCountryScore;
+        // Update params and calc score for every year.
+        angular.forEach(country.score, function(score, index) {
+          score.value = updateParams(country.parameters, index);
+        });
+
+        // Compute trendline data.
+        globalAppScope.countryTable.computeTrendlineData(country);
       });
 
       // Sort Countries
       countries.sort(function(a, b) {
-        return b.score - a.score;
+        return b.score[0].value - a.score[0].value;
       });
 
       // Based on the array order update the overall ranking.
@@ -101,14 +112,17 @@ $(document).ready(function() {
         }
         // --- States ---
         angular.forEach(country.states, function(state) {
-          // Update params and calc score.
-          var newStateScore = updateParams(state.parameters);
-          // Set state score.
-          state.score = newStateScore;
+          // Update params and calc score for every year.
+          angular.forEach(state.score, function(score, index) {
+            score.value = updateParams(state.parameters, index);
+          });
+
+            // Compute trendline data.
+            globalAppScope.countryTable.computeTrendlineData(state);
         });
         // Sort states.
         country.states.sort(function(a, b) {
-          return b.score - a.score;
+          return b.score[0].value - a.score[0].value;
         });
         // Based on the array order set the overall ranking.
         angular.forEach(country.states, function(state, key) {

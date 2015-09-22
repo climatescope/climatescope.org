@@ -9,9 +9,10 @@
     {% if layout.conf.type == 'region' %}
       <th class="th-rank">{{ t['Regional rank'][language] }}</th>
     {% endif %}
-      <th class="th-rank"><a href="" title="{{ t['Sort by global rank'][language] }}" ng-click="countryTable.setSortExpression('overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('overall_ranking')]">{{ t['Global rank'][language] }}</a></th>
+      <th class="th-rank"><a href="" title="{{ t['Sort by global rank'][language] }}" ng-click="countryTable.setSortExpression('score[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('score[0].overall_ranking')]">{{ t['Global rank'][language] }}</a></th>
       <th class="th-country"><a href="" title="{{ t['Sort by country'][language] }}" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">{{ t['Country'][language] }}</a></th>
-      <th class="th-score"><a href="" title="{{ t['Sort by global score'][language] }}" ng-click="countryTable.setSortExpression('score')" class="sort" ng-class="[countryTable.checkSortClasses('score')]">{{ t['Global score'][language] }}</a></th>
+      <th class="th-score"><a href="" title="{{ t['Sort by global score'][language] }}" ng-click="countryTable.setSortExpression('score[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('score[0].value')]">{{ t['Global score'][language] }}</a></th>
+      <th>Trend (i18n)</th>
       <th class="th-graph"><span class="visually-hidden">{{ t['Topics'][language] }}:</span> 0.0 - 5.0</th>
       <th class="th-grid"><a href="" title="{{ t['Sort by grid'][language] }}" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">{{ t['Grid'][language] }}</a></th>
     </tr>
@@ -19,15 +20,16 @@
   <tbody ng-repeat="country in countryTable.countries | orderBy:countryTable.sortExpression ">
     <tr>
       {% if layout.conf.type == 'region' %}
-        <td class="cell-rank">%% country.regional_ranking | leadingZero:2 %%</td>
+        <td class="cell-rank">%% country.score[0].regional_ranking | leadingZero:2 %%</td>
       {% endif %}
-      <td class="cell-rank">%% country.overall_ranking | leadingZero:2 %%</td>
+      <td class="cell-rank">%% country.score[0].overall_ranking | leadingZero:2 %%</td>
       <td class="cell-country">
         <a href="%% countryTable.getCountryUrl(country) %%" title="{{ t['Go to country page'][language] }}">%% country.name %%</a>
         <a href="" title="{{ t['Show states'][language] }}" ng-if="country.iso == 'in'" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span>{{ t['States'][language] }}</span></a>
         <a href="" title="{{ t['Show provinces'][language] }}" ng-if="country.iso == 'cn'" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span>{{ t['Provinces'][language] }}</span></a>
       </td>
-      <td>%% country.score | round:2 %%</td>
+      <td>%% country.score[0].value | round:2 %%</td>
+      <td class="cell-trendline"><div ng-init="countryTable.computeTrendlineData(country)" init-chart="trendline" class="chart-trendline" chart-data="country.trendline"><!-- Chart --></div></td>
       <td>
         <div class="table-graph">
           <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%% countryTable.getTooltipContent(country.parameters) %%">
@@ -53,17 +55,19 @@
               <th class="th-rank"><span class="visually-hidden">{{ t['Global rank'][language] }}</span></th>
               <th class="th-country"><span class="visually-hidden">{{{ t['Country'][language] }}</span></th>
               <th class="th-score"><span class="visually-hidden">{{{ t['Score'][language] }}</span></th>
+              <th>Trend (i18n)</th>
               <th class="th-graph"><span class="visually-hidden">{{ t['Topics'][language] }}: 0.0 - 5.0</span></th>
               <th class="th-grid">&nbsp;</th>
             </tr>
           </thead>
-          <tr ng-repeat="state in country.states | orderBy:'score':true">
+          <tr ng-repeat="state in country.states | orderBy:'score[0].value':true">
           {% if layout.conf.type == 'region' %}
             <td class="cell-rank">&nbsp;</td>
           {% endif %}
-            <td class="cell-rank">%% state.state_ranking | leadingZero:2 %%</td>
+            <td class="cell-rank">%% state.score[0].state_ranking | leadingZero:2 %%</td>
             <td class="cell-country"><a href="%% countryTable.getStateUrl(state) %%" title="{{ t['Go to state / province page'][language] }}">%% state.name %%</a></td>
-            <td>%% state.score | round:2 %%</td>
+            <td>%% state.score[0].value | round:2 %%</td>
+            <td class="cell-trendline"><div ng-init="countryTable.computeTrendlineData(state)" init-chart="trendline" class="chart-trendline" chart-data="state.trendline"><!-- Chart --></div></td>
             <td>
               <div class="table-graph">
                 <ul class="table-bar" tooltip-animation="false" tooltip-placement="top" tooltip-html-unsafe="%% countryTable.getTooltipContent(state.parameters) %%">

@@ -3,7 +3,7 @@ function setupCommonCountryListMethods(scope) {
 
   scope.calcBarSegment = function(param) {
     weight = param.weight != null ? param.weight : 0.25;
-    return ( param.value * weight * (100/5) ) + '%';
+    return ( param.data[0].value * weight * (100/5) ) + '%';
   };
   
   scope.getCountryUrl = function(country) {
@@ -27,6 +27,17 @@ function setupCommonCountryListMethods(scope) {
       tbody.removeClass('open');
       statesRow.trSlideUp();
     }
+  };
+
+  // The trendline data needs to be computed.
+  // Using a function and returning data in chart-data will result in a
+  // infinite digest loop because the chart directive will watch for changes,
+  // and the value is returned by the function is not bound to the scope.
+  scope.computeTrendlineData = function(country) {
+    country.trendline = {
+      id: country.iso,
+      data: country.score
+    };
   };
 }
 
@@ -95,7 +106,7 @@ function setupCommonTableMethods(scope) {
       t += param.name;
       t += '</dt>';
       t += '<dd>';
-      t += round(param.value, 2);
+      t += round(param.data[0].value, 2);
       t += '<small>';
       // 0.29 * 100 = 28.999999999999
       // Round to solve the problem.
