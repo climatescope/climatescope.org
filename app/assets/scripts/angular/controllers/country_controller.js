@@ -147,16 +147,10 @@
 
     setupCommonCountryListMethods(_self);
     // Set sort.
-    this.setSort('score');
+    this.setSort('score[0].value');
 
     CountryData.get(function(data) {
       _self.states = data.states;
-      // Order states parameter array.
-      /*angular.forEach(_self.states, function(state) {
-        state.parameters.sort(function(a, b) {
-          return a.id > b.id;
-        });
-      });*/
     });
 
   }]);
