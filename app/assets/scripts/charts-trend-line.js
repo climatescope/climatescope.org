@@ -76,7 +76,7 @@ function chart__trendline(element, chartData) {
     var ymax = d3.max(chart_data, function (d) { return d.value });
 
     // Give the domain some margin.
-    y.domain([ymin - ymin * 0.1, ymax + ymax * 0.1]);
+    y.domain([ymin - ((ymax - ymin) * 0.1), ymax + ((ymax - ymin) * 0.1)]);
     
     // Groups to hold the focus circles.
     // One group per line. Will hold two circles:
@@ -184,8 +184,10 @@ function chart__trendline(element, chartData) {
     y.range([height, 0]);
 
     // Compute the paramId for the class.
-    // id will be [pram_id].[indicator_id]
-    var paramId = 'param-' + Math.floor(all_data.id);
+    // id will be [trendline].[indicator_id]
+    // When NaN just append, if is a number floor it. This is needed
+    // to get the param id out of the indicator id (Eg 1.25)
+    var klass = 'trendline-' + (isNaN(all_data.id) ? all_data.id : Math.floor(all_data.id));
 
     // Area delimiters
     var the_line = line_group.selectAll("path")
@@ -196,8 +198,8 @@ function chart__trendline(element, chartData) {
     the_line.exit().remove();
     // Update current.
     the_line
-        .attr("d", line)
-        .attr("class", function(d, i) { return "trendline " + paramId; });
+      .attr("d", line)
+      .attr("class", function(d, i) { return "trendline " + klass; });
   };
 
   // GO!

@@ -59,7 +59,7 @@ $(document).ready(function() {
           param_code += [
             '<dt class="' + className + '">' + param.name + '</dt>',
             '<dd>',
-              round(param.value, 2),
+              round(param.data[0].value, 2),
               '<small>' + round(param.weight * 100, 2) + '%' + '</small>',
             '</dd>',
           ].join(' ');
@@ -79,9 +79,9 @@ $(document).ready(function() {
             '<div class="tooltip__body">',
               '<dl class="params-legend">',
                 '<dt>' + CS.t("Global rank") + '</dt>',
-                '<dd>' + d.overall_ranking + '</dd>',
+                '<dd>' + d.score[0].overall_ranking + '</dd>',
                 '<dt>' + CS.t("Global score") + '</dt>',
-                '<dd>' + round(d.score, 2) + '</dd>',
+                '<dd>' + round(d.score[0].value, 2) + '</dd>',
                 param_code,
               '</dl>',
               '<a href="' + CS.countryIndex[d.iso] +'" class="bttn bttn-cta go" title="' + CS.t("View country") + '">' + CS.t("View country") + '</a>',
@@ -175,7 +175,7 @@ $(document).ready(function() {
       // also get a list of each overall ranking to create color scale
       for (var i = 0, ii = indicators.length; i < ii; ++i) {
         lookup[indicators[i].iso] = i;
-        max.push(indicators[i].overall_ranking);
+        max.push(indicators[i].score[0].overall_ranking);
       }
 
       // using lookup, filter out geographies that don't have data;
@@ -184,7 +184,7 @@ $(document).ready(function() {
         iso = land[i].id;
         if (lookup[iso] !== undef) {
           land[i].rank = indicators[lookup[iso]];
-          land[i].d = CS.regionId ? land[i].rank.regional_ranking : land[i].rank.overall_ranking;
+          land[i].d = CS.regionId ? land[i].rank.score[0].regional_ranking : land[i].rank.score[0].overall_ranking;
           land[i].parameters = {};
 
           // create an object as a property of rank
@@ -424,16 +424,16 @@ $(document).ready(function() {
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
         d = land[i].parameters;
 
-        land[i].rank.score = (Math.round(
-          weight['param-' + keys[0]] * d[keys[0]].value +
-          weight['param-' + keys[1]] * d[keys[1]].value +
-          weight['param-' + keys[2]] * d[keys[2]].value +
-          weight['param-' + keys[3]] * d[keys[3]].value
+        land[i].rank.score[0].value = (Math.round(
+          weight['param-' + keys[0]] * d[keys[0]].data[0].value +
+          weight['param-' + keys[1]] * d[keys[1]].data[0].value +
+          weight['param-' + keys[2]] * d[keys[2]].data[0].value +
+          weight['param-' + keys[3]] * d[keys[3]].data[0].value
                                         )) / 100;
       }
-      land = land.sort(function(a, b) { return b.rank.score - a.rank.score; });
+      land = land.sort(function(a, b) { return b.rank.score[0].value - a.rank.score[0].value; });
       for(i = 0; i < ii; ++i) {
-        land[i].d = land[i].rank.overall_ranking = i + 1;
+        land[i].d = land[i].rank.score[0].overall_ranking = i + 1;
       }
 
       redrawMarkers({rankOnly: true });
