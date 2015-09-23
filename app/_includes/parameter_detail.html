@@ -47,11 +47,13 @@
       </figure>
       <figure ng-if="param.id == 1" class="chart-wrapper">
         <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
-        <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
-        <div id="price-attractiveness-e" class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-electricity']"><!-- Chart --></div>
+        <div id="price-attractiveness-e" class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-electricity']">
+         <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
+         <!-- Chart --></div>
+        
+        <div id="price-attractiveness-fuel" class="chart-std price-attractiveness-fuel" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-fuel']">
         <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
-        <div>{{detailsCtrl.chartData['price-attractiveness-fuel'].data.values.value}}</div>
-        <div id="price-attractiveness-fuel" class="chart-std price-attractiveness-fuel" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-fuel']"><!-- Chart --></div>
+        <!-- Chart --></div>
       </figure>
       <figure ng-if="param.id == 2" class="chart-wrapper">
         <figcaption>{{ t['Clean energy investments'][language] }}</figcaption>
