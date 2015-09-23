@@ -20,8 +20,8 @@ gulp.task('collecticons', function (done) {
     'compile',
     'app/assets/graphics/collecticons/',
     '--font-embed',
-    '--font-dest', 'app/assets/fonts',
-    '--font-types', 'woff',
+    '--font-dest', 'app/assets/fonts/collecticons',
+//    '--font-types', 'woff',
     '--style-format', 'sass',
     '--style-dest', 'app/assets/styles/',
     '--no-preview'

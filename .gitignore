@@ -11,4 +11,7 @@ node_modules
 _site
 .tmp
 _config-dev.yml
+
+# Font
 app/assets/styles/_icons.scss
+app/assets/fonts/collecticons
