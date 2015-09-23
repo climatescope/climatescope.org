@@ -109,29 +109,6 @@
       _self.parameters = data.parameters;
     });
 
-    this.toggleTable = function(id, e) {
-      var $section = $('.param-' + id);
-      var $tableWrapper = $('.table-wrapper', $section);
-      var $table = $('table', $section);
-
-      // First run.
-      if ($tableWrapper.data('visible') === undefined) {
-        $tableWrapper.data('visible', false);
-        $tableWrapper.data('orig_max_height', $tableWrapper.css('max-height'));
-      }
-
-      var maxHeight = $tableWrapper.data('visible') ? $tableWrapper.data('orig_max_height') : $table.height();
-
-      $tableWrapper.animate({
-        'max-height': maxHeight
-      });
-
-      $tableWrapper.data('visible', !$tableWrapper.data('visible'));
-
-      e.target.text = $tableWrapper.data('visible') ? 'View less' : 'View more';
-    }
-
-
     // The following lines load the data for each of the charts.
     // Some of the data needs to be processed before being sent to the chart.
     // This is done by calling the prepareData(). This function is implemented
