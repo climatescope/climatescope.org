@@ -70,11 +70,14 @@
   countryAppControllers.controller('StatsController', ['$http', 'CountryData', function($http, CountryData) {
     var _self = this;
     // Data.
-    this.policyCount = 0;
     this.countryStats = {};
 
-    var url = CS.policyProxy + '/policy?limit=1&country=' + CS.countryId.toUpperCase();
+    setupPolicyStatsVizMethods(this);
+
+    // Requests.
+    var url = CS.policyProxy + '/policy?country=' + CS.countryId.toUpperCase();
     $http.get(url).success(function(data) {
+      _self.countPolicyTypes(data.listData);
       _self.policyCount = data.metaData.totalResults;
     });
     
