@@ -13,8 +13,14 @@ function chart__price_attractiveness_electricity(element, chartData) {
     .append("g")
     .attr('class', 'chart-container');
 
-  // svg element containing the bars
-  var bars_group = svg.append("g")
+  var chartPopover = new DSPopover();
+
+  // svg element containing the bar
+
+  var background_group = svg.append("g")
+    .attr("class", "bars-group");
+
+  var attractiveness_group = svg.append("g")
     .attr("class", "bars-group");
 
   var x = d3.scale.linear();
@@ -52,8 +58,6 @@ function chart__price_attractiveness_electricity(element, chartData) {
     meta_info = data.meta;
     chart_data = data.data;
 
-    console.log(chart_data);
-
     update();
   };
 
@@ -63,7 +67,7 @@ function chart__price_attractiveness_electricity(element, chartData) {
     x.domain([0, d3.max(chart_data, function(d){ return d.values[0].value}) ]);
 
     y.domain(chart_data.map(function(d) { return d.name; }));
-    
+
     draw_chart();
 
   };
@@ -124,24 +128,31 @@ function chart__price_attractiveness_electricity(element, chartData) {
       .attr("y", 20)
       .text(meta_info['label-y']);
 
-    bars_group.selectAll("rect")
-      .data(chart_data)
-      .enter()
-      .append("rect")
-      .attr("class", "chart-background-bar")
-      .attr("width", 700)
-      .attr("height", 20)
-      .attr("y", function(d) { return y(d.name); });
-
-    bars_group.selectAll("g")
-      .data(chart_data)
-      .enter()
-      .append("rect")
-      .attr("class", "chart-price-bars")
-      .attr("width", function(d){ return x(d.values[0].value)})
-      .attr("y", function(d) { return y(d.name); })
-      .attr('height', 20);
-
+    var background_bars =  background_group.selectAll("rect")
+        .data(chart_data)
+  
+    var attractiveness_bars =  attractiveness_group.selectAll("rect")
+        .data(chart_data)
+  
+    background_bars.enter().append("rect");
+  
+    background_bars.exit().remove();
+  
+    background_bars
+        .attr("class", "chart-background-bar")
+        .attr("width", function(d){ return x(d3.max(chart_data, function(d){ return d.values[0].value}))})
+        .attr("height", 20)
+        .attr("y", function(d) { return y(d.name); });
+  
+    attractiveness_bars.enter().append("rect");
+  
+    attractiveness_bars.exit().remove();
+  
+    attractiveness_bars
+        .attr("class", "chart-price-bars")
+        .attr("width", function(d){ return x(d.values[0].value)})
+        .attr("y", function(d) { return y(d.name); })
+        .attr('height', 20);
   };
 
   setData(chartData);
