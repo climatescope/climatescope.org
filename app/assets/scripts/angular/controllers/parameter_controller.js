@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('parameterApp', ['mathFilters', 'ui.bootstrap'], function($interpolateProvider) {
+  var app = angular.module('parameterApp', ['mathFilters', 'ui.bootstrap', 'csDirectives'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('%%');
     $interpolateProvider.endSymbol('%%');
   });
@@ -36,10 +36,22 @@
       var param = {
         id: _self.parameter.id,
         name: _self.parameter.name,
-        value: data.value,
+        data: data,
         weight: _self.parameter.weight
       };
       return getTooltipContent_orig([param]);
+    };
+
+    // OVERRIDE.
+    // The trendline data needs to be computed.
+    // Using a function and returning data in chart-data will result in a
+    // infinite digest loop because the chart directive will watch for changes,
+    // and the value is returned by the function is not bound to the scope.
+    this.computeTrendlineData = function(country) {
+      country.trendline = {
+        id: _self.parameter.id,
+        data: country.data
+      };
     };
 
     // ---- Logic ----
