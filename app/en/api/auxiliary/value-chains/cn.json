@@ -52,6 +52,34 @@
       ],
       "name": "Small Hydro",
       "id": "small-hydro"
+    },
+    {
+      "available": [
+        "Producers",
+        "Engineering",
+        "O&M",
+        "Equipment"
+      ],
+      "non-available": [
+        "Manufacturing",
+        "Distribution and Blending"
+      ],
+      "name": "wind",
+      "id": "wind"
+    },
+    {
+      "available": [
+        "Producers",
+        "Engineering",
+        "O&M",
+        "Equipment"
+      ],
+      "non-available": [
+        "Manufacturing",
+        "Distribution and Blending"
+      ],
+      "name": "Biomass & Waste",
+      "id": "biomass_waste"
     }
   ],
   "meta": {

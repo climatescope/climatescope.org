@@ -10,3 +10,4 @@ bundle
 node_modules
 _site
 .tmp
+app/assets/styles/_icons.scss

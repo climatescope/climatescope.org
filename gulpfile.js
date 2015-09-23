@@ -7,6 +7,30 @@ var clean = require('gulp-clean');
 var browserSync = require('browser-sync');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
+var cp = require('child_process');
+
+////////////////////////////////////////////////////////////////////////////////
+//------------------------- Collecticon tasks --------------------------------//
+//--------------------- (Font generation related) ----------------------------//
+//----------------------------------------------------------------------------//
+
+gulp.task('collecticons', function (done) {
+  var args = [
+    'node_modules/collecticons-processor/bin/collecticons.js',
+    'compile',
+    'app/assets/graphics/collecticons/',
+    '--font-embed',
+    '--font-dest', 'app/assets/fonts',
+    '--font-types', 'woff',
+    '--style-format', 'sass',
+    '--style-dest', 'app/assets/styles/',
+    '--no-preview'
+  ];
+
+  return cp.spawn('node', args, {stdio: 'inherit'})
+    .on('close', done);
+});
+
 
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////

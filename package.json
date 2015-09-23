@@ -8,6 +8,7 @@
     "bower": "~1.3.12",
     "browser-sync": "~2.1.1",
     "chai": "^1.10.0",
+    "collecticons-processor": "^1.0.2",
     "colors": "^1.0.3",
     "glob": "^4.3.5",
     "glob-all": "^3.0.1",

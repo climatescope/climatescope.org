@@ -336,8 +336,9 @@ $circle-gutter: 0.5rem;
 
   > li {
     @include col(6/12, $cycle: 2);
-    background-color: tint($infograph-color-c, 90%);
+    background-color: tint($primary-color, 97%);
     margin-bottom: 1rem;
+/*    min-height:125px;*/
     padding: 1rem;
 
     .card-title {
@@ -347,6 +348,7 @@ $circle-gutter: 0.5rem;
       line-height: 1;
       padding-right: 1rem;
       text-align: center;
+      color: $infograph-color-c;
 
       &:after {
         margin-top: 0.5rem;
@@ -359,13 +361,20 @@ $circle-gutter: 0.5rem;
     .card-content {
       @include col(8/12, $gutter: 0);
       padding-left: 1rem;
-      border-left: 1px solid $body-font-color;
+      border-left: 1px solid tint($primary-color, 68%);
     }
 
-    &.biofuels .card-title:after { @extend .icon-power; }
-    &.geothermal .card-title:after { @extend .icon-github; }
-    &.small-hydro .card-title:after { @extend .icon-circle-play; }
-    &.solar .card-title:after { @extend .icon-circle-warning; }
+    .card-icon{
+      color: tint($primary-color, 38%);
+      padding-top:.5rem;
+    }
+
+    &.biofuels .card-title:after { @extend .collecticon-leaf; @extend .card-icon }
+    &.small-hydro .card-title:after { @extend .collecticon-drop; @extend .card-icon }
+    &.solar .card-title:after { @extend .collecticon-sun; @extend .card-icon}
+    &.geothermal .card-title:after { @extend .collecticon-flame; @extend .card-icon}
+    &.biomass_waste .card-title:after { @extend .collecticon-trashcan_2; @extend .card-icon}
+    &.wind .card-title:after { @extend .collecticon-wind; @extend .card-icon}
 
     .available-list,
     .non-available-list {
@@ -402,16 +411,55 @@ $circle-gutter: 0.5rem;
       margin-bottom: 1rem;
 
       li:before {
-        background-color: $body-font-color;
+        background-color: $infograph-color-c;
       }
     }
 
     .non-available-list li {
-      color: tint($primary-color, 48%);
+      color: tint($primary-color, 78%);
 
       &:before {
-        background-color: tint($primary-color, 48%);
+        background-color: tint($primary-color, 78%);
       }
     }
   }
 }
+
+.key{
+      font-size: 0.875rem;
+      padding-bottom: 1rem;
+      margin: 0;
+
+     li {
+        display: inline;
+
+        &:before {
+          content: '';
+          position: absolute;
+          border-radius: $global-rounded;
+          height: $circle-size;
+          width: $circle-size;
+          margin-right: $circle-gutter;
+          }   
+        }
+
+      .key-unavailable  {
+      color: tint($primary-color, 68%);
+
+      &:before {
+        background-color: tint($primary-color, 68%);
+      }
+    }
+
+    
+    .key-available  {
+      color: $primary-color;
+
+      &:before {
+        background-color: $infograph-color-c;
+      }
+    }
+      
+  }
+
+  
