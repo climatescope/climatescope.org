@@ -255,10 +255,10 @@
   height: 2rem;
   width: 8rem;
 
-
   .trendline {
     stroke: tint($primary-color, 32%);
-    stroke-width:2;
+    stroke-width: 2;
+    fill: none;
     // Parameter trendlines.
     &.trendline-1 {
       stroke: $infograph-color-a;
@@ -271,6 +271,24 @@
     }
     &.trendline-4 {
       stroke: $infograph-color-d;
+    }
+  }
+
+  .trendline-end {
+    stroke: none;
+    fill: tint($primary-color, 32%);
+    // Parameter trendlines.
+    &.trendline-1 {
+      fill: $infograph-color-a;
+    }
+    &.trendline-2 {
+      fill: $infograph-color-b;
+    }
+    &.trendline-3 {
+      fill: $infograph-color-c;
+    }
+    &.trendline-4 {
+      fill: $infograph-color-d;
     }
   }
 

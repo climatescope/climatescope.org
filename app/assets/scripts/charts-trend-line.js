@@ -1,4 +1,5 @@
 /* jshint unused: false */
+
 function chart__trendline(element, chartData) {
 
   var chart_data = null;
@@ -62,6 +63,7 @@ function chart__trendline(element, chartData) {
     //all_data = data;
     all_data = data;
     chart_data = data.data.sort(function(a, b) { return a.year > b.year});
+
     update();
   };
 
@@ -76,7 +78,16 @@ function chart__trendline(element, chartData) {
     var ymax = d3.max(chart_data, function (d) { return d.value });
 
     // Give the domain some margin.
-    y.domain([ymin - ((ymax - ymin) * 0.1), ymax + ((ymax - ymin) * 0.1)]);
+    ymin -= ((ymax - ymin) * 0.1);
+    ymax += ((ymax - ymin) * 0.1);
+    // When the values don't change ensure that the line is
+    // more or less centered.
+    if (ymin == 0 && ymax == 0) {
+      ymin = -1;
+      ymax = 1;
+    }
+
+    y.domain([ymin, ymax]);
     
     // Groups to hold the focus circles.
     // One group per line. Will hold two circles:
@@ -96,9 +107,7 @@ function chart__trendline(element, chartData) {
       .attr("r", 2)
       .attr('class', 'inner');
 
-    focus_circles.attr('class', function(d) {
-      return 'focus-circles ' + d.id;
-    });
+    focus_circles.attr('class', 'focus-circles');
 
     focus_circles.exit().remove();
 
@@ -144,7 +153,7 @@ function chart__trendline(element, chartData) {
 
         // Tooltip content.
         var value_doc = chart_data[doc_index];
-        var content = '<p class="trendline__tooltip">' + value_doc.year + ' &mdash; ' + value_doc.value + '</p>';
+        var content = '<p class="trendline__tooltip">' + value_doc.year + ' &mdash; ' + round(value_doc.value, 2) + '</p>';
 
         // Compute the paramId for the class.
         // id will be [pram_id].[indicator_id]
@@ -189,7 +198,7 @@ function chart__trendline(element, chartData) {
     // to get the param id out of the indicator id (Eg 1.25)
     var klass = 'trendline-' + (isNaN(all_data.id) ? all_data.id : Math.floor(all_data.id));
 
-    // Area delimiters
+    // Line.
     var the_line = line_group.selectAll("path")
       .data([chart_data]);
 
@@ -201,6 +210,22 @@ function chart__trendline(element, chartData) {
     the_line
       .attr("d", line)
       .attr("class", function(d, i) { return "trendline " + klass; });
+
+    // Terminal circle.
+    var terminal_circle = line_group.selectAll("circle")
+      .data([chart_data[chart_data.length - 1]]);
+
+    // Handle new.
+    terminal_circle.enter()
+      .append("circle")
+      .attr("r", 3);
+    // Remove old.
+    terminal_circle.exit().remove();
+    // Update current.
+    terminal_circle
+      .attr("cx", function(d) { return x(d.year); })
+      .attr("cy", function(d) { return y(d.value); })
+      .attr("class", function(d, i) { return "trendline-end " + klass; });
 
   };
 
