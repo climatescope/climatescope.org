@@ -334,11 +334,14 @@ $circle-gutter: 0.5rem;
   list-style: none;
   font-family: $brand-font-family;
 
-  > li {
+  .card-wrapper {
     @include col(6/12, $cycle: 2);
-    background-color: tint($primary-color, 97%);
     margin-bottom: 1rem;
-/*    min-height:125px;*/
+  }
+
+  .card {
+    overflow: hidden;
+    background-color: tint($primary-color, 97%);
     padding: 1rem;
 
     .card-title {
@@ -364,9 +367,9 @@ $circle-gutter: 0.5rem;
       border-left: 1px solid tint($primary-color, 68%);
     }
 
-    .card-icon{
+    .card-icon {
       color: tint($primary-color, 38%);
-      padding-top:.5rem;
+      padding-top: 0.5rem;
     }
 
     &.biofuels .card-title:after { @extend .collecticon-leaf; @extend .card-icon }
@@ -425,41 +428,44 @@ $circle-gutter: 0.5rem;
   }
 }
 
-.key{
-      font-size: 0.875rem;
-      padding-bottom: 1rem;
-      margin: 0;
+.key {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: 1rem;
 
-     li {
-        display: inline;
+  li {
+    float: left;
+    position: relative;
+    padding-left: $circle-size + $circle-gutter;
+    margin-right: 1rem;
 
-        &:before {
-          content: '';
-          position: absolute;
-          border-radius: $global-rounded;
-          height: $circle-size;
-          width: $circle-size;
-          margin-right: $circle-gutter;
-          }   
-        }
-
-      .key-unavailable  {
-      color: tint($primary-color, 68%);
-
-      &:before {
-        background-color: tint($primary-color, 68%);
-      }
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: (1.25rem - $circle-size) / 2;
+      left: 0;
+      border-radius: $global-rounded;
+      height: $circle-size;
+      width: $circle-size;
     }
-
-    
-    .key-available  {
-      color: $primary-color;
-
-      &:before {
-        background-color: $infograph-color-c;
-      }
-    }
-      
   }
 
-  
+  .key-unavailable {
+    color: tint($primary-color, 68%);
+
+    &:before {
+      background-color: tint($primary-color, 68%);
+    }
+  }
+
+  .key-available {
+    color: $primary-color;
+
+    &:before {
+      background-color: $infograph-color-c;
+    }
+  }
+}

@@ -21,16 +21,18 @@
           <li class="key-unavailable">Unavailable</li>
       </ul>
       <ul class="value-chains chart-wrapper">
-        <li ng-repeat="card in detailsCtrl.chartData['value-chains'].data" ng-class="card.id">
-          <h2 class="card-title">%% card.name %%</h2>
-          <div class="card-content">
-            <ul class="available-list">
-              <li ng-repeat="avl in card.available">%% $last ? avl : avl + ';' %% </li>
-            </ul>
-            <ul class="non-available-list">
-              <li ng-repeat="notavl in card['non-available']">%% $last ? notavl : notavl + ';' %% </li>
-            </ul>
-          </div>
+        <li ng-repeat="card in detailsCtrl.chartData['value-chains'].data" class="card-wrapper">
+          <article class="card" ng-class="card.id">
+              <h2 class="card-title">%% card.name %%</h2>
+              <div class="card-content">
+                <ul class="available-list">
+                  <li ng-repeat="avl in card.available">%% $last ? avl : avl + ';' %% </li>
+                </ul>
+                <ul class="non-available-list">
+                  <li ng-repeat="notavl in card['non-available']">%% $last ? notavl : notavl + ';' %% </li>
+                </ul>
+              </div>
+            </article>
         </li>
       </ul>
     </div>
