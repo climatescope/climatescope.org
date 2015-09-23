@@ -100,7 +100,8 @@
     this.chartData = {
       'clean-energy-investments': null,
       'installed-capacity': null,
-      'carbon-offset': null
+      'carbon-offset': null,
+      'value-chains': null
     }
 
     setupCommonParamDetailTableMethods(_self);
@@ -130,6 +131,12 @@
     $http.get(url).success(function(data) {
       // No data preparation for this one.
       _self.chartData['carbon-offset'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/value-chains/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      // No data preparation for this one.
+      _self.chartData['value-chains'] = data;
     });
 
   }]);

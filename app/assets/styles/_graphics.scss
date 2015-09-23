@@ -371,3 +371,147 @@
     line-height: 1.5rem;
   }
 }
+
+$circle-size: 0.625rem;
+$circle-gutter: 0.5rem;
+.value-chains {
+  list-style: none;
+  font-family: $brand-font-family;
+
+  .card-wrapper {
+    @include col(6/12, $cycle: 2);
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    overflow: hidden;
+    background-color: tint($primary-color, 97%);
+    padding: 1rem;
+
+    .card-title {
+      @include col(4/12, $gutter: 0);
+      margin-bottom: 0;
+      font-size: 1rem;
+      line-height: 1;
+      padding-right: 1rem;
+      text-align: center;
+      color: $infograph-color-c;
+
+      &:after {
+        margin-top: 0.5rem;
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+
+    .card-content {
+      @include col(8/12, $gutter: 0);
+      padding-left: 1rem;
+      border-left: 1px solid tint($primary-color, 68%);
+    }
+
+    .card-icon {
+      color: tint($primary-color, 38%);
+      padding-top: 0.5rem;
+    }
+
+    &.biofuels .card-title:after { @extend .collecticon-leaf; @extend .card-icon }
+    &.small-hydro .card-title:after { @extend .collecticon-drop; @extend .card-icon }
+    &.solar .card-title:after { @extend .collecticon-sun; @extend .card-icon}
+    &.geothermal .card-title:after { @extend .collecticon-flame; @extend .card-icon}
+    &.biomass_waste .card-title:after { @extend .collecticon-trashcan_2; @extend .card-icon}
+    &.wind .card-title:after { @extend .collecticon-wind; @extend .card-icon}
+
+    .available-list,
+    .non-available-list {
+      list-style: none;
+      position: relative;
+      font-size: 0.875rem;
+      padding: $circle-size 0 0 0;
+      margin-bottom: 0;
+
+      li {
+        display: inline;
+
+        &:before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          z-index: 1;
+          border-radius: $global-rounded;
+          height: $circle-size;
+          width: $circle-size;
+          margin-right: $circle-gutter;
+        }
+
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}):before {
+            left: ($circle-size + $circle-gutter) * ($i - 1);
+          }
+        }
+      }
+    }
+
+    .available-list {
+      margin-bottom: 1rem;
+
+      li:before {
+        background-color: $infograph-color-c;
+      }
+    }
+
+    .non-available-list li {
+      color: tint($primary-color, 78%);
+
+      &:before {
+        background-color: tint($primary-color, 78%);
+      }
+    }
+  }
+}
+
+.key {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  padding-left: 0;
+  font-family: "Klavika", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+  li {
+    float: left;
+    position: relative;
+    padding-left: $circle-size + $circle-gutter;
+    margin-right: 1rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: (1.25rem - $circle-size) / 2;
+      left: 0;
+      border-radius: $global-rounded;
+      height: $circle-size;
+      width: $circle-size;
+    }
+  }
+
+  .key-unavailable {
+    color: tint($primary-color, 68%);
+
+    &:before {
+      background-color: tint($primary-color, 68%);
+    }
+  }
+
+  .key-available {
+    color: $primary-color;
+
+    &:before {
+      background-color: $infograph-color-c;
+    }
+  }
+}
