@@ -10,4 +10,5 @@ bundle
 node_modules
 _site
 .tmp
+_config-dev.yml
 app/assets/styles/_icons.scss

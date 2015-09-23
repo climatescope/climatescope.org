@@ -23,6 +23,7 @@
     "run-sequence": "~1.0.2"
   },
   "scripts": {
+    "postinstall": "[ -f _config-dev.yml ] || echo 'domain: http://localhost:3000\npath_prefix:' > _config-dev.yml",
     "install": "bundle install --path bundle/cache"
   }
 }
