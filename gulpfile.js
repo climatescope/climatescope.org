@@ -51,6 +51,7 @@ gulp.task('copy:assets', function(done) {
 
 gulp.task('compass', function() {
   return gulp.src('app/assets/styles/*.scss')
+    .pipe(plumber())
     .pipe(compass({
       css: '.tmp/assets/styles',
       sass: 'app/assets/styles',
@@ -58,7 +59,11 @@ gulp.task('compass', function() {
       sourcemap: true,
       require: ['sass-css-importer'],
       bundle_exec: true
-    }));
+    }))
+    .on('error', function(err) {
+      this.emit('end');
+    })
+    .pipe(browserSync.reload({stream:true}));
 });
 
 // Dependencies.
@@ -164,7 +169,7 @@ gulp.task('jekyll:rebuild', ['jekyll'], function () {
 // Main build task
 // Builds the site. Destination --> _site
 gulp.task('build', function(done) {
-  runSequence(['jekyll', 'compress:main', 'dependencies', 'compass'], ['copy:assets'], done);
+  runSequence(['collecticons'], ['jekyll', 'compress:main', 'dependencies', 'compass'], ['copy:assets'], done);
 });
 
 // Default task.
@@ -185,7 +190,11 @@ gulp.task('serve', ['build'], function () {
   });
 
   gulp.watch('app/assets/styles/**/*.scss', function() {
-    runSequence('compass', browserReload);
+    runSequence('compass');
+  });
+
+  gulp.watch('app/assets/graphics/collecticons/*.svg', function() {
+    runSequence('collecticons', 'compass');
   });
 
   gulp.watch(['./app/assets/scripts/**/*.js', '!./app/assets/scripts/vendor/**/*'], function() {
