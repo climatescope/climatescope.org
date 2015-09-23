@@ -255,12 +255,10 @@
   height: 2rem;
   width: 8rem;
 
-  svg {
-    background: tint($primary-color, 96%);
-  }
 
   .trendline {
     stroke: tint($primary-color, 32%);
+    stroke-width:2;
     // Parameter trendlines.
     &.trendline-1 {
       stroke: $infograph-color-a;

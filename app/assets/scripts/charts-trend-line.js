@@ -89,11 +89,11 @@ function chart__trendline(element, chartData) {
 
     // Outer circle.
     enteringCircles.append('circle')
-      .attr("r", 4)
+      .attr("r", 6)
       .attr('class', 'outer');
     // Inner circle.
     enteringCircles.append('circle')
-      .attr("r", 1)
+      .attr("r", 2)
       .attr('class', 'inner');
 
     focus_circles.attr('class', function(d) {
@@ -144,7 +144,7 @@ function chart__trendline(element, chartData) {
 
         // Tooltip content.
         var value_doc = chart_data[doc_index];
-        var content = '<p>' + value_doc.year + ' / ' + value_doc.value + '</p>';
+        var content = '<p class="trendline__tooltip">' + value_doc.year + ' &mdash; ' + value_doc.value + '</p>';
 
         // Compute the paramId for the class.
         // id will be [pram_id].[indicator_id]
@@ -192,6 +192,7 @@ function chart__trendline(element, chartData) {
     // Area delimiters
     var the_line = line_group.selectAll("path")
       .data([chart_data]);
+
     // Handle new.
     the_line.enter().append("path");
     // Remove old.
@@ -200,6 +201,7 @@ function chart__trendline(element, chartData) {
     the_line
       .attr("d", line)
       .attr("class", function(d, i) { return "trendline " + klass; });
+
   };
 
   // GO!

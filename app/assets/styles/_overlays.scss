@@ -164,6 +164,12 @@ $tooltip-arr-size: 1rem;
     font-size: 0.75rem;
     margin-bottom: 0;
   }
+
+  .trendline__tooltip{
+    @extend h6;
+    font-size: 0.75rem; 
+  }
+
   .tooltip__body {
     margin: 1rem -1rem -1rem -1rem;
     padding: 1rem;
