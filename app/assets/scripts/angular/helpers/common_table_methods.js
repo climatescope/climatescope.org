@@ -143,6 +143,7 @@ function setupCommonParamDetailTableMethods(scope) {
     var $section = $('.param-' + id);
     var $tableWrapper = $('.table-wrapper', $section);
     var $table = $('table', $section);
+    var $gradient = $('.table-fade', $section);
 
     // First run.
     if ($tableWrapper.data('visible') === undefined) {
@@ -153,14 +154,17 @@ function setupCommonParamDetailTableMethods(scope) {
     var maxHeight = $tableWrapper.data('visible') ? $tableWrapper.data('orig_max_height') : $table.height();
 
     $tableWrapper.animate({
-      'max-height': maxHeight
+      'max-height': maxHeight,
     });
+
+    $tableWrapper.data('visible') ? $gradient.show() : $gradient.hide();
 
     $tableWrapper.data('visible', !$tableWrapper.data('visible'));
 
     var text = $tableWrapper.data('visible') ? CS.t('View less') : CS.t('View more');
     e.target.text = text;
     e.target.setAttribute('title', text);
+
   }
 };
 
