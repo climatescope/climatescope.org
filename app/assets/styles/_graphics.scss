@@ -535,12 +535,11 @@ $circle-gutter: 0.5rem;
 }
 
 .policies-type-stats {
+  padding-right: 1rem;
 
-    padding-right:1rem;
-
-  .policies-bttn-va{
-    margin-bottom:.5rem;
-      }
+  .policies-bttn-va {
+    margin-bottom: 0.5rem;
+  }
 
   .policies-type-list {
     list-style: none;
@@ -549,16 +548,23 @@ $circle-gutter: 0.5rem;
     padding: 0;
 
     .policies-type-wrapper {
-      @include col(4/12, $cycle: 3);
+      @include col(6/12, $cycle: 2);
+
+      @media #{$xlarge-up} {
+        @include col(4/12, $uncycle: 2, $cycle: 3);
+      }
+
       margin-bottom: 1rem;
 
-      a {
+      .policy-type {
         color: $primary-color;
         font-weight: 700;
+        cursor: not-allowed;
 
         &.active {
-        background: tint($secondary-color, 85%);
-        color:$secondary-color;
+          background: tint($secondary-color, 85%);
+          color:$secondary-color;
+          cursor: auto;
         }
 
         border-radius: $global-radius;
@@ -572,5 +578,4 @@ $circle-gutter: 0.5rem;
       }
     }
   }
-
 }
