@@ -139,3 +139,32 @@ function setupCommonParamDetailTableMethods(scope) {
     ].join('');
   };
 }
+
+function setupPolicyStatsVizMethods(scope) {
+  scope.policyCount = 0;
+  scope.pMechanisms = [
+    { count: 0, id: 'Energy Market Mechanism', name: 'Energy Market' },
+    { count: 0, id: 'Equity Finance Mechanism', name: 'Equity Finance' },
+    { count: 0, id: 'Carbon Market Mechanism', name: 'Carbon Market' },
+    { count: 0, id: 'Debt Finance Mechanism', name: 'Debt Finance' },
+    { count: 0, id: 'Tax-based Mechanism', name: 'Tax-based' },
+    { count: 0, id: 'unknown', name: 'Policy Barrier' }
+  ];
+
+  scope.countPolicyTypes = function(policyList) {
+    $.each(policyList, function(i, policy) {
+      if (policy.type === null || policy.status.name == 'Expired') {
+        return;
+      }
+
+      $.each(policy.type.mechanism, function(ii, mechanism) {
+        for (var i in scope.pMechanisms) {
+          if (scope.pMechanisms[i].id == mechanism.name) {
+            scope.pMechanisms[i].count++;
+            break;
+          }
+        }
+      });
+    });
+  };
+}
