@@ -14,7 +14,30 @@
       </dl>
   </header>
 
+<!-- <div init-chart="trendline" class="chart-trendline" chart-data="detailsCtrl.parameters[0].indicator_groups[0].indicators[2].data">Chart</div> -->
+
   <div class="param-details__body">
+    <div ng-if="param.id == 3" >
+      <ul class="key">
+          <li class="key-available">Available</li>
+          <li class="key-unavailable">Unavailable</li>
+      </ul>
+      <ul class="value-chains chart-wrapper">
+        <li ng-repeat="card in detailsCtrl.chartData['value-chains'].data" class="card-wrapper">
+          <article class="card" ng-class="card.id">
+              <h2 class="card-title">%% card.name %%</h2>
+              <div class="card-content">
+                <ul class="available-list">
+                  <li ng-repeat="avl in card.available">%% $last ? avl : avl + ';' %% </li>
+                </ul>
+                <ul class="non-available-list">
+                  <li ng-repeat="notavl in card['non-available']">%% $last ? notavl : notavl + ';' %% </li>
+                </ul>
+              </div>
+            </article>
+        </li>
+      </ul>
+    </div>
 
     <div class="param-details__table">
       <div class="table-wrapper">
@@ -24,6 +47,7 @@
               <th><span class="visually-hidden">{{ t['Parameter'][language] }}</span></th>
               <th>{{ t['Rank'][language] }}</th>
               <th>{{ t['Score'][language] }}</th>
+              <th>Trend (i18n)</th>
               <th>{{ t['Value'][language] }}</th>
               <th><span class="visually-hidden">{{ t['Info'][language] }}</span></th>
             </tr>
@@ -36,6 +60,7 @@
               <td class="cell-ind">%% ind.name %%</td>
               <td class="cell-rank">%% ind.data[0].overall_ranking || '-' %%</td>
               <td class="cell-score">%% ind.data[0].value | round:3 %%</td>
+              <td class="cell-trendline"><div ng-if="ind.active" init-chart="trendline" class="chart-trendline" chart-data="ind"><!-- Chart --></div></td>
               <td class="cell-score">%% (ind.data[0].raw.value | round:3) || '-' %%<sup>%% ind.data[0].raw.unit %%</sup></td>
               <td class="cell-info"><a href="" title="{{ t['About this indicator'][language] }}" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>{{ t['Info'][language] }}</span></a></td>
             </tr>
@@ -60,7 +85,7 @@
       </figure>
       <figure ng-if="param.id == 4" class="chart-wrapper">
         <figcaption>{{ t['Carbon offset'][language] }}</figcaption>
-        <div d="carbon-offset" class="chart-std carbon-offset" init-chart="carbon_offset" chart-data="detailsCtrl.chartData['carbon-offset']"><!-- Chart --></div>
+        <div id="carbon-offset" class="chart-std carbon-offset" init-chart="carbon_offset" chart-data="detailsCtrl.chartData['carbon-offset']"><!-- Chart --></div>
       </figure>
     </div>
 

@@ -3,7 +3,7 @@ function setupCommonCountryListMethods(scope) {
 
   scope.calcBarSegment = function(param) {
     weight = param.weight != null ? param.weight : 0.25;
-    return ( param.value * weight * (100/5) ) + '%';
+    return ( param.data[0].value * weight * (100/5) ) + '%';
   };
   
   scope.getCountryUrl = function(country) {
@@ -27,6 +27,17 @@ function setupCommonCountryListMethods(scope) {
       tbody.removeClass('open');
       statesRow.trSlideUp();
     }
+  };
+
+  // The trendline data needs to be computed.
+  // Using a function and returning data in chart-data will result in a
+  // infinite digest loop because the chart directive will watch for changes,
+  // and the value is returned by the function is not bound to the scope.
+  scope.computeTrendlineData = function(country) {
+    country.trendline = {
+      id: country.iso,
+      data: country.score
+    };
   };
 }
 
@@ -95,7 +106,7 @@ function setupCommonTableMethods(scope) {
       t += param.name;
       t += '</dt>';
       t += '<dd>';
-      t += round(param.value, 2);
+      t += round(param.data[0].value, 2);
       t += '<small>';
       // 0.29 * 100 = 28.999999999999
       // Round to solve the problem.
@@ -149,6 +160,35 @@ function setupCommonParamDetailTableMethods(scope) {
 
     var text = $tableWrapper.data('visible') ? CS.t('View less') : CS.t('View more');
     e.target.text = text;
-    e.target.setAttribute('title', text)
-  };
-}
+    e.target.setAttribute('title', text);
+  }
+};
+
+function setupPolicyStatsVizMethods(scope) {
+  scope.policyCount = 0;
+  scope.pMechanisms = [
+    { count: 0, id: 'Energy Market Mechanism', name: 'Energy Market' },
+    { count: 0, id: 'Equity Finance Mechanism', name: 'Equity Finance' },
+    { count: 0, id: 'Carbon Market Mechanism', name: 'Carbon Market' },
+    { count: 0, id: 'Debt Finance Mechanism', name: 'Debt Finance' },
+    { count: 0, id: 'Tax-based Mechanism', name: 'Tax-based' },
+    { count: 0, id: 'unknown', name: 'Policy Barrier' }
+  ];
+
+  scope.countPolicyTypes = function(policyList) {
+    $.each(policyList, function(i, policy) {
+      if (policy.type === null || policy.status.name == 'Expired') {
+        return;
+      }
+
+      $.each(policy.type.mechanism, function(ii, mechanism) {
+        for (var i in scope.pMechanisms) {
+          if (scope.pMechanisms[i].id == mechanism.name) {
+            scope.pMechanisms[i].count++;
+            break;
+          }
+        }
+      });
+    });
+  }
+};
