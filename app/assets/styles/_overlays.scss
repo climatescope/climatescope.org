@@ -137,6 +137,7 @@ $tooltip-arr-size: 1rem;
   display: none;
 }
 
+
 // Contents
 
 .tooltip-map {
@@ -189,6 +190,15 @@ $tooltip-arr-size: 1rem;
   }
 }
 
+.price_chart_tooltip{
+  font-family: $brand-font-family;
+  font-size:.875rem;
+
+    .price{
+      font-weight: 600;
+    }
+
+}
 
 // DROPDOWN
 

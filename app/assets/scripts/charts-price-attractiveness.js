@@ -15,8 +15,7 @@ function chart__price_attractiveness_electricity(element, chartData) {
 
   var chartPopover = new DSPopover();
 
-  // svg element containing the bar
-
+  // svg element containing the bars
   var background_group = svg.append("g")
     .attr("class", "bars-group");
 
@@ -27,7 +26,7 @@ function chart__price_attractiveness_electricity(element, chartData) {
 
   var xAxis = d3.svg.axis()
     .scale(x)
-    .ticks(7)
+    .ticks(5)
     .orient("bottom");
 
   var y = d3.scale.ordinal()
@@ -152,7 +151,27 @@ function chart__price_attractiveness_electricity(element, chartData) {
         .attr("class", "chart-price-bars")
         .attr("width", function(d){ return x(d.values[0].value)})
         .attr("y", function(d) { return y(d.name); })
-        .attr('height', 20);
+        .attr('height', 20)
+
+    attractiveness_bars
+        .on('mouseover', function(d, i) {
+
+            var matrix = this.getScreenCTM()
+                    .translate(+this.getAttribute("x"), +this.getAttribute("y"));
+
+            var posX = (window.pageXOffset + matrix.e) + width/2;
+            var posY =  (window.pageYOffset + matrix.f) + y.rangeBand()/2;
+
+  
+            var content = '<p class="price_chart_tooltip">' + '<span class="price">' + '$' + d.values[0].value + '</span>' + ' ' + meta_info['label-x'] + '</p>';
+
+            chartPopover.setContent(content, 'top price_chart_tooltip ').show(posX, posY);
+
+            });
+
+    attractiveness_bars
+        .on('mouseout', function(){ d3.select(".price_chart_tooltip").style("display", "none"), chartPopover.hide() });
+
   };
 
   setData(chartData);
@@ -163,6 +182,4 @@ function chart__price_attractiveness_electricity(element, chartData) {
 
   };
 
-
 };
-

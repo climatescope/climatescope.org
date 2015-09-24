@@ -1,8 +1,6 @@
 /* jshint unused: false */
 function chart__installed_capacity(element, chartData) {
 
-  console.log(chartData);
-
   var stacked_data = null;
   var meta_info = null;
   var chart_data = null;
