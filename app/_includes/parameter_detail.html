@@ -39,10 +39,6 @@
 
     <div class="param-details__graph">
       <figure ng-if="param.id == 1" class="chart-wrapper">
-        <figcaption>{{ t['Installed capacity'][language] }}</figcaption>
-        <div id="installed-capacity" class="chart-std installed-capacity" init-chart="installed_capacity" chart-data="detailsCtrl.chartData['installed-capacity']"><!-- Chart --></div>
-      </figure>
-      <figure ng-if="param.id == 1" class="chart-wrapper">
         <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
         <div id="price-attractiveness-e" class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-electricity']">
           <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
@@ -53,6 +49,10 @@
           <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
           <!-- Chart -->
         </div>
+      </figure>
+      <figure ng-if="param.id == 1" class="chart-wrapper">
+        <figcaption>{{ t['Installed capacity'][language] }}</figcaption>
+        <div id="installed-capacity" class="chart-std installed-capacity" init-chart="installed_capacity" chart-data="detailsCtrl.chartData['installed-capacity']"><!-- Chart --></div>
       </figure>
       <figure ng-if="param.id == 2" class="chart-wrapper">
         <figcaption>{{ t['Clean energy investments'][language] }}</figcaption>
