@@ -13,6 +13,8 @@
       'clean-energy-investments': null,
       'installed-capacity': null,
       'carbon-offset': null,
+      'price-attractiveness-electricity': null,
+      'price-attractiveness-fuel': null,
       'value-chains': null
     }
 
@@ -52,6 +54,18 @@
       _self.chartData['value-chains'] = data;
     });
 
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-electricity/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      // No data preparation for this one.
+      _self.chartData['price-attractiveness-electricity'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-fuel/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      // No data preparation for this one.
+      _self.chartData['price-attractiveness-fuel'] = data;
+    });
+
   }]);
 
   app.controller('ProfileController', ['$http', function($http) {
@@ -74,11 +88,13 @@
   app.controller('StatsController', ['$http', function($http) {
     var _self = this;
     // Data.
-    this.policyCount = 0;
     this.stateStats = {};
 
-    var url = CS.policyProxy + '/policy?limit=1&state=' + CS.stateId.toUpperCase();
+    setupPolicyStatsVizMethods(this);
+
+    var url = CS.policyProxy + '/policy?state=' + CS.stateId.toUpperCase();
     $http.get(url).success(function(data) {
+      _self.countPolicyTypes(data.listData);
       _self.policyCount = data.metaData.totalResults;
     });
     

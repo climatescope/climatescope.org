@@ -138,4 +138,61 @@ function setupCommonParamDetailTableMethods(scope) {
       '<p>' + ind.description + '</p>'
     ].join('');
   };
-}
+
+  scope.toggleTable = function(id, e) {
+    var $section = $('.param-' + id);
+    var $tableWrapper = $('.table-wrapper', $section);
+    var $table = $('table', $section);
+    var $gradient = $('.table-fade', $section);
+
+    // First run.
+    if ($tableWrapper.data('visible') === undefined) {
+      $tableWrapper.data('visible', false);
+      $tableWrapper.data('orig_max_height', $tableWrapper.css('max-height'));
+    }
+
+    var maxHeight = $tableWrapper.data('visible') ? $tableWrapper.data('orig_max_height') : $table.height();
+
+    $tableWrapper.animate({
+      'max-height': maxHeight,
+    });
+
+    $tableWrapper.data('visible') ? $gradient.show() : $gradient.hide();
+
+    $tableWrapper.data('visible', !$tableWrapper.data('visible'));
+
+    var text = $tableWrapper.data('visible') ? CS.t('View less') : CS.t('View more');
+    e.target.text = text;
+    e.target.setAttribute('title', text);
+
+  }
+};
+
+function setupPolicyStatsVizMethods(scope) {
+  scope.policyCount = 0;
+  scope.pMechanisms = [
+    { count: 0, id: 'Energy Market Mechanism', name: 'Energy Market' },
+    { count: 0, id: 'Equity Finance Mechanism', name: 'Equity Finance' },
+    { count: 0, id: 'Carbon Market Mechanism', name: 'Carbon Market' },
+    { count: 0, id: 'Debt Finance Mechanism', name: 'Debt Finance' },
+    { count: 0, id: 'Tax-based Mechanism', name: 'Tax-based' },
+    { count: 0, id: 'unknown', name: 'Policy Barrier' }
+  ];
+
+  scope.countPolicyTypes = function(policyList) {
+    $.each(policyList, function(i, policy) {
+      if (policy.type === null || policy.status.name == 'Expired') {
+        return;
+      }
+
+      $.each(policy.type.mechanism, function(ii, mechanism) {
+        for (var i in scope.pMechanisms) {
+          if (scope.pMechanisms[i].id == mechanism.name) {
+            scope.pMechanisms[i].count++;
+            break;
+          }
+        }
+      });
+    });
+  }
+};

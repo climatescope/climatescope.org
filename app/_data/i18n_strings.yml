@@ -121,6 +121,9 @@ Download report in PDF format:
 Download the data and report: 
   en: "Download the data and report"
   es: "Descargue los datos y el reporte"
+Electricity 2014:
+  en: "Electricity 2014"
+  es: "Electricity 2014 es"
 Enabling framework: 
   en: "Enabling framework"
   es: "Marco propicio"
@@ -142,6 +145,9 @@ Filter:
 Financing & Investment: 
   en: "Financing & Investment"
   es: "Financiamiento e inversiones"
+Fuel 2014:
+  en: "Fuel 2014"
+  es: "Fuel 2014 es"
 Get the Executive Summary: 
   en: "Get the Executive Summary"
   es: "Get the Executive Summary es"
@@ -271,6 +277,12 @@ Power Africa logo:
 Press: 
   en: "Press"
   es: "Prensa"
+Price Attractiveness:
+  en: "Price Attractiveness Electricity"
+  es: "Price Attractiveness Electricity es"
+Price Attractiveness Fuel:
+  en: "Price Attractiveness Fuel"
+  es: "Price Attractiveness Fuel es"
 Project: 
   en: "Project"
   es: "Proyecto"
@@ -442,6 +454,9 @@ Value:
 Value Chains: 
   en: "Value Chains"
   es: "Cadenas de valor"
+View all:
+  en: "View all"
+  es: "Ver todas"
 View blog posts:
   en: "View blog posts"
   es: "Ver mensajes del blog"
@@ -454,6 +469,12 @@ View country:
 View in detail: 
   en: "View in detail"
   es: "Ver en detalle"
+View less:
+  en: "View less"
+  es: "Ver menos"
+View more:
+  en: "View more"
+  es: "Ver mais"
 View policies: 
   en: "View policies"
   es: "Ver politicas"
