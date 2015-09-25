@@ -160,12 +160,12 @@ input[type=submit] {
       @extend .visually-hidden;
     }
   }
-  &.go:after { @extend .icon-s-arr-right; }
-  &.back:before { @extend .icon-s-arr-left; }
-  &.all:after { @extend .icon-menu; }
-  &.download:before { @extend .icon-download; }
-  &.share:before { @extend .icon-share; }
-  &.restart:before { @extend .icon-refresh; }
+  &.go:after { @extend .collecticon-s-arr-right; }
+  &.back:before { @extend .collecticon-s-arr-left; }
+  &.all:after { @extend .collecticon-menu; }
+  &.download:before { @extend .collecticon-download; }
+  &.share:before { @extend .collecticon-share; }
+  &.restart:before { @extend .collecticon-refresh; }
   .badge {
     background-color: rgba($primary-color, 0.15);
   }

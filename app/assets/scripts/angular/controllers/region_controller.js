@@ -1,5 +1,5 @@
 (function(){
-  var app = angular.module('regionApp', ['ui.bootstrap', 'mathFilters'], function($interpolateProvider) {
+  var app = angular.module('regionApp', ['ui.bootstrap', 'mathFilters', 'csDirectives'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('%%');
     $interpolateProvider.endSymbol('%%');
   });
@@ -11,14 +11,13 @@
     
     setupCommonCountryListMethods(_self);
     // Set sort.
-    this.sortExpScoreField = '-score';
-    this.setSortExpression('score');
+    this.sortExpScoreField = '-score[0].value';
+    this.setSortExpression('score[0].value');
 
     var url = CS.domain + '/' + CS.lang + '/api/regions/' + CS.regionId + '.json';
     $http.get(url).success(function(data) {
       _self.countries = data.countries;
     });
-
   }]);
 
   app.controller('StatsController', ['$http', function($http) {

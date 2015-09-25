@@ -64,11 +64,11 @@
 }
 
 .flexslider .flex-direction-nav .flex-prev:before {
-  @extend .icon-arr-left;
+  @extend .collecticon-arr-left;
   left:0;
 }
 .flexslider .flex-direction-nav .flex-next:before {
-  @extend .icon-arr-right;
+  @extend .collecticon-arr-right;
 }
 .flexslider .flex-direction-nav .flex-prev { 
   left: -4rem;

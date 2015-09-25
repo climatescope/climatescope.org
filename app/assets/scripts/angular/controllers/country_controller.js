@@ -70,11 +70,14 @@
   countryAppControllers.controller('StatsController', ['$http', 'CountryData', function($http, CountryData) {
     var _self = this;
     // Data.
-    this.policyCount = 0;
     this.countryStats = {};
 
-    var url = CS.policyProxy + '/policy?limit=1&country=' + CS.countryId.toUpperCase();
+    setupPolicyStatsVizMethods(this);
+
+    // Requests.
+    var url = CS.policyProxy + '/policy?country=' + CS.countryId.toUpperCase();
     $http.get(url).success(function(data) {
+      _self.countPolicyTypes(data.listData);
       _self.policyCount = data.metaData.totalResults;
     });
     
@@ -101,8 +104,9 @@
       'clean-energy-investments': null,
       'installed-capacity': null,
       'carbon-offset': null,
-      'price-attractiveness-electricity': null
-    }
+      'price-attractiveness-electricity': null,
+      'value-chains': null
+    };
 
     setupCommonParamDetailTableMethods(_self);
 
@@ -145,6 +149,12 @@
       _self.chartData['price-attractiveness-fuel'] = data;
     });
 
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/value-chains/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      // No data preparation for this one.
+      _self.chartData['value-chains'] = data;
+    });
+
   }]);
   
   // Controller for the STATES TAB
@@ -160,16 +170,10 @@
 
     setupCommonCountryListMethods(_self);
     // Set sort.
-    this.setSort('score');
+    this.setSort('score[0].value');
 
     CountryData.get(function(data) {
       _self.states = data.states;
-      // Order states parameter array.
-      /*angular.forEach(_self.states, function(state) {
-        state.parameters.sort(function(a, b) {
-          return a.id > b.id;
-        });
-      });*/
     });
 
   }]);
