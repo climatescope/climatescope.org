@@ -45,6 +45,18 @@
       _self.chartData['carbon-offset'] = data;
     });
 
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-electricity/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      // No data preparation for this one.
+      _self.chartData['price-attractiveness-electricity'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-fuel/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      // No data preparation for this one.
+      _self.chartData['price-attractiveness-fuel'] = data;
+    });
+
   }]);
 
   app.controller('ProfileController', ['$http', function($http) {
