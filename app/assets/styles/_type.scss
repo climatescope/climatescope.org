@@ -165,3 +165,11 @@ hr {
   height: 1px;
   background: tint($primary-color, 90%);
 }
+
+hr.sm {
+  margin: 0;
+  border: 0;
+  clear: both;
+  height: 1px;
+  background: tint($primary-color, 90%);
+}

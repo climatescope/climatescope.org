@@ -390,6 +390,28 @@
   }
 }
 
+
+// Price attractiveness 
+.chart-price-bars {
+  fill: $infograph-color-a;
+}
+
+.chart-background-bar {
+  fill: tint($primary-color, 95%);
+}
+
+.chart-subhead {
+  @extend .hd-label;
+  padding: 0;
+  text-align: left;
+  margin: 10px 0 0 100px;
+}
+
+.chart-price-bars:hover {
+  opacity: 0.6;
+}
+
+
 $circle-size: 0.625rem;
 $circle-gutter: 0.5rem;
 .value-chains {

@@ -8,7 +8,7 @@
  *  popover.hide();
  *
  */
- function DSPopover() {
+function DSPopover () {
   var _id = 'ds-popover-' + (++DSPopover.uniqueId);
   var $popover = null;
   var _working = false;
@@ -23,11 +23,11 @@
 
   /**
    * Sets the popover content.
-   * 
+   *
    * @param ReactElement
-   * Content for the popover. Can be anything supported by react. 
+   * Content for the popover. Can be anything supported by react.
    */
-  this.setContent = function(content, classes) {
+  this.setContent = function (content, classes) {
     classes = 'tooltip-map tooltip-chart' + (classes ? ' ' + classes : '');
     _prev_content = _content;
 
@@ -38,22 +38,22 @@
     _content += '</div>';
 
     return this;
-  }
+  };
 
   /**
    * Appends the popover to #site-canvas positioning it absolutely
-   * at the specified coordinates. 
+   * at the specified coordinates.
    * If the popover already exists it will be repositioned.
    * The anchor point for the popover is the bottom center with 8px of offset.
    *
    * Note: The popover needs to have content before being shown.
-   * 
+   *
    * @param  anchorX
    *   Where to position the popover horizontally.
    * @param  anchorY
    *   Where to position the popover vertically.
    */
-  this.show = function(anchorX, anchorY) {
+  this.show = function (anchorX, anchorY) {
     _prev_x = _x;
     _prev_y = _y;
     _x = anchorX;
@@ -66,15 +66,14 @@
       return this;
     }
 
-    var changePos = !(_prev_x == _x && _prev_y == _y);
+    var changePos = !(_prev_x === _x && _prev_y === _y);
 
     // Different content?
     if (_content != _prev_content) {
       $popover = $('#' + _id);
       if ($popover.length > 0) {
         $popover.replaceWith(_content);
-      }
-      else {
+      } else {
         $popover = $(_content);
         $('#site-canvas').append($popover);
       }
@@ -92,13 +91,13 @@
         var sizeW = $popover.outerWidth();
         var sizeH = $popover.outerHeight();
 
-        var leftOffset = anchorX  - sizeW / 2;
+        var leftOffset = anchorX - sizeW / 2;
         var topOffset = anchorY - sizeH - 8;
 
         // If the popover would be to appear outside the window on the right
         // move it to the left by that amount.
         // And add some padding.
-        var overflowR = (leftOffset + sizeW) - containerW ;
+        var overflowR = (leftOffset + sizeW) - containerW;
         if (overflowR > 0) {
           leftOffset -= overflowR + 16;
         }
@@ -118,12 +117,12 @@
     }
 
     return this;
-  }
+  };
 
   /**
    * Removes the popover from the DOM.
    */
-  this.hide = function() {
+  this.hide = function () {
     $('#' + _id).remove();
     _content = null;
     _prev_content = null;
@@ -132,7 +131,7 @@
     _prev_x = null;
     _prev_y = null;
     return this;
-  }
+  };
 
   return this;
 };

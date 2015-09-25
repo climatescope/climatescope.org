@@ -28,6 +28,9 @@
           case 'trendline':
             chart = chart__trendline(element[0], dataCopy);
           break;
+          case 'price_attractiveness_electricity':
+            chart = chart__price_attractiveness_electricity(element[0], scope.chartData);
+          break;
         }
 
         if (chart) {
