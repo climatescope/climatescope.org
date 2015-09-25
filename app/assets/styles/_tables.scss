@@ -1,5 +1,25 @@
 // TABLES
 
+.table-graident{
+  width: 100%;
+  max-width: 100%;
+  min-height: 0rem;
+  height: 15rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  z-index:1;
+  background-image:
+    linear-gradient(
+      transparent, white
+    );
+  position:absolute;
+  top:0;
+}
+
+.param-details__table {
+  position:relative;
+}
+
 .table {
   width: 100%;
   max-width: 100%;
@@ -8,6 +28,7 @@
   border-spacing: 0;
   border-collapse: collapse;
   font-family: $brand-font-family;
+  
 
   td, th {
     padding: 0;

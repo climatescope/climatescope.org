@@ -138,7 +138,35 @@ function setupCommonParamDetailTableMethods(scope) {
       '<p>' + ind.description + '</p>'
     ].join('');
   };
-}
+
+  scope.toggleTable = function(id, e) {
+    var $section = $('.param-' + id);
+    var $tableWrapper = $('.table-wrapper', $section);
+    var $table = $('table', $section);
+    var $gradient = $('.table-fade', $section);
+
+    // First run.
+    if ($tableWrapper.data('visible') === undefined) {
+      $tableWrapper.data('visible', false);
+      $tableWrapper.data('orig_max_height', $tableWrapper.css('max-height'));
+    }
+
+    var maxHeight = $tableWrapper.data('visible') ? $tableWrapper.data('orig_max_height') : $table.height();
+
+    $tableWrapper.animate({
+      'max-height': maxHeight,
+    });
+
+    $tableWrapper.data('visible') ? $gradient.show() : $gradient.hide();
+
+    $tableWrapper.data('visible', !$tableWrapper.data('visible'));
+
+    var text = $tableWrapper.data('visible') ? CS.t('View less') : CS.t('View more');
+    e.target.text = text;
+    e.target.setAttribute('title', text);
+
+  }
+};
 
 function setupPolicyStatsVizMethods(scope) {
   scope.policyCount = 0;
@@ -166,5 +194,5 @@ function setupPolicyStatsVizMethods(scope) {
         }
       });
     });
-  };
-}
+  }
+};
