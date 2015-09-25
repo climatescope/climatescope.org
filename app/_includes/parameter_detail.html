@@ -17,8 +17,8 @@
   <div class="param-details__body">
     <div ng-if="param.id == 3" >
       <ul class="key">
-          <li class="key-available">Available</li>
-          <li class="key-unavailable">Unavailable</li>
+          <li class="key-available">{{ t['Available'][language] }}</li>
+          <li class="key-unavailable">{{ t['Unavailable'][language] }}</li>
       </ul>
       <ul class="value-chains chart-wrapper">
         <li ng-repeat="card in detailsCtrl.chartData['value-chains'].data" class="card-wrapper">
@@ -39,10 +39,6 @@
 
     <div class="param-details__graph">
       <figure ng-if="param.id == 1" class="chart-wrapper">
-        <figcaption>{{ t['Installed capacity'][language] }}</figcaption>
-        <div id="installed-capacity" class="chart-std installed-capacity" init-chart="installed_capacity" chart-data="detailsCtrl.chartData['installed-capacity']"><!-- Chart --></div>
-      </figure>
-      <figure ng-if="param.id == 1" class="chart-wrapper">
         <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
         <div id="price-attractiveness-e" class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-electricity']">
           <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
@@ -53,6 +49,10 @@
           <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
           <!-- Chart -->
         </div>
+      </figure>
+      <figure ng-if="param.id == 1" class="chart-wrapper">
+        <figcaption>{{ t['Installed capacity'][language] }}</figcaption>
+        <div id="installed-capacity" class="chart-std installed-capacity" init-chart="installed_capacity" chart-data="detailsCtrl.chartData['installed-capacity']"><!-- Chart --></div>
       </figure>
       <figure ng-if="param.id == 2" class="chart-wrapper">
         <figcaption>{{ t['Clean energy investments'][language] }}</figcaption>
@@ -65,7 +65,7 @@
     </div>
 
     <div class="param-details__table">
-      <h2 class="param-details__sectitle">Indicators</h2>
+      <h2 class="param-details__sectitle">{{ t['Indicators'][language] }}</h2>
       <div class="table-wrapper">
         <table class="table detailed-data">
           <thead>

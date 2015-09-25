@@ -34,6 +34,9 @@ Analyze more than 450 policies intended to spur clean energy development in the 
 asia:
   en: "Asia"
   es: "Asia"
+Available: 
+  en: "Available"
+  es: "Available ES"
 Average: 
   en: "Average"
   es: "Media"
@@ -193,6 +196,9 @@ In detail:
 Indian states: 
   en: "Indian states"
   es: "Indian states ES"
+Indicators: 
+  en: "Indicators"
+  es: "Indicators ES"
 Info: 
   en: "Info"
   es: "Info"
@@ -451,6 +457,9 @@ UK Aid:
 UK Aid logo: 
   en: "UK Aid logo"
   es: "Logo UK Aid"
+Unavailable: 
+  en: "Unavailable"
+  es: "Unavailable ES"
 upgrade your browser: 
   en: "upgrade your browser"
   es: "actualice su navegador"
