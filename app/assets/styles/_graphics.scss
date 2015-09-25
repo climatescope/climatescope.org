@@ -257,7 +257,7 @@
 
   .trendline {
     stroke: tint($primary-color, 32%);
-    stroke-width: 2;
+    stroke-width: 1;
     fill: none;
     // Parameter trendlines.
     &.trendline-1 {

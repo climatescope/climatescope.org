@@ -143,7 +143,6 @@ function setupCommonParamDetailTableMethods(scope) {
     var $section = $('.param-' + id);
     var $tableWrapper = $('.table-wrapper', $section);
     var $table = $('table', $section);
-    var $gradient = $('.table-fade', $section);
 
     // First run.
     if ($tableWrapper.data('visible') === undefined) {
@@ -151,13 +150,18 @@ function setupCommonParamDetailTableMethods(scope) {
       $tableWrapper.data('orig_max_height', $tableWrapper.css('max-height'));
     }
 
+    if ($tableWrapper.data('visible')) {
+      $tableWrapper.removeClass('revealed');
+    }
+    else {
+      $tableWrapper.addClass('revealed');
+    }
+
     var maxHeight = $tableWrapper.data('visible') ? $tableWrapper.data('orig_max_height') : $table.height();
 
     $tableWrapper.animate({
       'max-height': maxHeight,
     });
-
-    $tableWrapper.data('visible') ? $gradient.show() : $gradient.hide();
 
     $tableWrapper.data('visible', !$tableWrapper.data('visible'));
 
