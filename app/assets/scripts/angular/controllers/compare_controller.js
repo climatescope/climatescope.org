@@ -53,6 +53,11 @@
       return CS.countryIndex[iso];
     };
 
+    this.isFuelChartAvailable = function(index) {
+      var c = _self.compareSelected[index].chartData;
+      return c && c['price-attractiveness-fuel'] && c['price-attractiveness-fuel'].data[0].values[0].value !== 0;
+    };
+
     /**
      * When the comparison countries change the chart data is loaded.
      * The compare page requires the chart data to be prepared in a special
@@ -88,6 +93,18 @@
 
           // This chart doesn't need data preparation.
           loadChartData('carbon-offset-projects', _self.compareSelected[c]);
+
+          loadChartData('price-attractiveness-electricity', _self.compareSelected[c], function(chartName) {
+            // START compute the x domain.
+            chart__price_attractiveness_electricity.prepareDataCompare(_self.compareSelected, chartName);
+            // END compute the x domain.
+          });
+
+          loadChartData('price-attractiveness-fuel', _self.compareSelected[c], function(chartName) {
+            // START compute the x domain.
+            chart__price_attractiveness_electricity.prepareDataCompare(_self.compareSelected, chartName);
+            // END compute the x domain.
+          });
         }
       }
     };
