@@ -853,12 +853,12 @@ a:active{
 
 .param-details {
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   &__header {
     overflow: hidden;
     padding: 0 0.5rem 0.5rem 0.5rem;
     border-bottom: 4px solid tint($primary-color, 90%);
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
   &__heading {
     @include col(7/12);
@@ -869,6 +869,10 @@ a:active{
     a {
       color: inherit;
     }
+  }
+  &__sectitle {
+    @extend .hd-xxs;
+    text-align: center;
   }
   &__stats {
     @include col(5/12);
@@ -901,16 +905,21 @@ a:active{
   }
   &__table {
     @include col(12/12);
+    margin-top: 3rem;
 
     &-actions {
       text-align: center;
+      margin-bottom: 1rem;
     }
 
     .table-wrapper {
       max-height: 15rem;
       overflow: hidden;
-      margin-bottom: 1rem;
       position: relative;
+
+      &.revealed {
+        margin-bottom: 1rem;
+      }
 
       &:not(.revealed):before {
         width: 100%;
@@ -933,9 +942,17 @@ a:active{
   &__graph {
     @include col(12/12);
     text-align: center !important;
-    padding: 2rem 0;
     .placeholder {
       border-radius: $global-rounded;
+    }
+
+    .chart-wrapper {
+      @include col(6/12, $cycle: 2);
+
+      .param-2 &,
+      .param-4 & {
+        @include col(6/12, $offset: 3/12);
+      }
     }
   }
   @media #{$xlarge-up} {
@@ -945,12 +962,7 @@ a:active{
     &__stats {
       @include col(4/12);
     }
-    &__table {
-    @include col(8/12);
-    }
     &__graph {
-      @include col(4/12);
-      padding: 8rem 0;
       .lt-ie9 & {
         margin-right: 0 !important;
       }

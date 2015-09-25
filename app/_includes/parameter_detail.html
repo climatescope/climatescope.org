@@ -14,8 +14,6 @@
       </dl>
   </header>
 
-<!-- <div init-chart="trendline" class="chart-trendline" chart-data="detailsCtrl.parameters[0].indicator_groups[0].indicators[2].data">Chart</div> -->
-
   <div class="param-details__body">
     <div ng-if="param.id == 3" >
       <ul class="key">
@@ -39,7 +37,35 @@
       </ul>
     </div>
 
+    <div class="param-details__graph">
+      <figure ng-if="param.id == 1" class="chart-wrapper">
+        <figcaption>{{ t['Installed capacity'][language] }}</figcaption>
+        <div id="installed-capacity" class="chart-std installed-capacity" init-chart="installed_capacity" chart-data="detailsCtrl.chartData['installed-capacity']"><!-- Chart --></div>
+      </figure>
+      <figure ng-if="param.id == 1" class="chart-wrapper">
+        <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
+        <div id="price-attractiveness-e" class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-electricity']">
+          <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
+          <!-- Chart -->
+        </div>
+
+        <div id="price-attractiveness-fuel" class="chart-std price-attractiveness-fuel" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-fuel']">
+          <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
+          <!-- Chart -->
+        </div>
+      </figure>
+      <figure ng-if="param.id == 2" class="chart-wrapper">
+        <figcaption>{{ t['Clean energy investments'][language] }}</figcaption>
+        <div id="clean-energy-investments" class="chart-std clean-energy-investments" init-chart="clean_energy_investments" chart-data="detailsCtrl.chartData['clean-energy-investments']"><!-- Chart --></div>
+      </figure>
+      <figure ng-if="param.id == 4" class="chart-wrapper">
+        <figcaption>{{ t['Carbon offset'][language] }}</figcaption>
+        <div id="carbon-offset" class="chart-std carbon-offset" init-chart="carbon_offset" chart-data="detailsCtrl.chartData['carbon-offset']"><!-- Chart --></div>
+      </figure>
+    </div>
+
     <div class="param-details__table">
+      <h2 class="param-details__sectitle">Indicators</h2>
       <div class="table-wrapper">
         <table class="table detailed-data">
           <thead>
@@ -74,32 +100,5 @@
 
     </div>
 
-    <div class="param-details__graph">
-      <figure ng-if="param.id == 1" class="chart-wrapper">
-        <figcaption>{{ t['Installed capacity'][language] }}</figcaption>
-        <div id="installed-capacity" class="chart-std installed-capacity" init-chart="installed_capacity" chart-data="detailsCtrl.chartData['installed-capacity']"><!-- Chart --></div>
-      </figure>
-      <figure ng-if="param.id == 1" class="chart-wrapper">
-        <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
-        <div id="price-attractiveness-e" class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-electricity']">
-         <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
-         <!-- Chart --></div>
-        
-        <div id="price-attractiveness-fuel" class="chart-std price-attractiveness-fuel" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-fuel']">
-        <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
-        <!-- Chart --></div>
-      </figure>
-      <figure ng-if="param.id == 2" class="chart-wrapper">
-        <figcaption>{{ t['Clean energy investments'][language] }}</figcaption>
-        <div id="clean-energy-investments" class="chart-std clean-energy-investments" init-chart="clean_energy_investments" chart-data="detailsCtrl.chartData['clean-energy-investments']"><!-- Chart --></div>
-      </figure>
-      <figure ng-if="param.id == 4" class="chart-wrapper">
-        <figcaption>{{ t['Carbon offset'][language] }}</figcaption>
-        <div id="carbon-offset" class="chart-std carbon-offset" init-chart="carbon_offset" chart-data="detailsCtrl.chartData['carbon-offset']"><!-- Chart --></div>
-      </figure>
-    </div>
-
-
   </div>
-  
 </section>
