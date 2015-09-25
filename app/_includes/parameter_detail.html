@@ -28,10 +28,10 @@
               <h2 class="card-title">%% card.name %%</h2>
               <div class="card-content">
                 <ul class="available-list">
-                  <li ng-repeat="avl in card.available">%% $last ? avl : avl + ';' %% </li>
+                  <li ng-repeat="avl in card.values | filter:{active:true}">%% $last ? avl.name : avl.name + ';' %% </li>
                 </ul>
                 <ul class="non-available-list">
-                  <li ng-repeat="notavl in card['non-available']">%% $last ? notavl : notavl + ';' %% </li>
+                  <li ng-repeat="notavl in card.values | filter:{active:false}">%% $last ? notavl.name : notavl.name + ';' %% </li>
                 </ul>
               </div>
             </article>

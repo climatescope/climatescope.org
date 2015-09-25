@@ -105,6 +105,7 @@
       'installed-capacity': null,
       'carbon-offset': null,
       'price-attractiveness-electricity': null,
+      'price-attractiveness-fuel': null,
       'value-chains': null
     };
 
