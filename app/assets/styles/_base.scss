@@ -910,6 +910,20 @@ a:active{
       max-height: 15rem;
       overflow: hidden;
       margin-bottom: 1rem;
+      position: relative;
+
+      &:not(.revealed):before {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 12rem;
+        content: '';
+        background-image: linear-gradient(rgba(#FFF, 0), rgba(#FFF, 1));
+        pointer-events: none;
+      }
     }
 
     table {
