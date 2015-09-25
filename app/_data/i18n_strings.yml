@@ -278,6 +278,9 @@ Press:
   en: "Press"
   es: "Prensa"
 Price Attractiveness:
+  en: "Price Attractiveness"
+  es: "Price Attractiveness es"
+Price Attractiveness Electricity:
   en: "Price Attractiveness Electricity"
   es: "Price Attractiveness Electricity es"
 Price Attractiveness Fuel:
@@ -421,6 +424,9 @@ The Multilateral Investment Fund logo:
 The global index: 
   en: "The global index"
   es: "El índice global"
+There is no fuel data for this Country / State / Province.:
+  en: "There is no fuel data for this Country / State / Province."
+  es: "There is no fuel data for this Country / State / Province. ES"
 To enjoy a full experience: 
   en: "To enjoy a full experience"
   es: "Para disfrutar de una experiencia completa"
