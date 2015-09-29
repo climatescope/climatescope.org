@@ -43,22 +43,38 @@
 
     if (!errored) {
       // Submit.
-      
-      // Store cookie.
-      createCookie('CS_kown_your_user__submit', 'complete', null, CS.domain);
-      
-      // Hide errors
-      getError('[name="usefulness"]').hide();
-      getError('[name="usage"]').hide();
-      getError('[name="organization"]').hide();
+      // Map values with google forms:
+      var formData = {
+        'entry.709291448': usefulness,
+        'entry.1261682105': usage,
+        'entry.1368725634': organization
+      };
 
-      // Hide modal.
-      modal.removeClass('revealed');
+      $.ajax({
+        type: "POST",
+        url: 'https://docs.google.com/forms/d/1ir4mUopmro3Z0qftpTdA6zfHU4BWNo3B2BlDyJMXi9s/formResponse',
+        data: formData,
+        dataType: "xml"
+      })
+      .always(function() {
+        console.log('Error but data was written.');
 
-      // Open url.
-      setTimeout(function() {
-        window.location = modal.find('[data-download="direct"]').attr('href');
-      }, 1000);
+        // Store cookie.
+        createCookie('CS_kown_your_user__submit', 'complete', null, CS.domain);
+
+        // Hide errors
+        getError('[name="usefulness"]').hide();
+        getError('[name="usage"]').hide();
+        getError('[name="organization"]').hide();
+
+        // Hide modal.
+        modal.removeClass('revealed');
+
+        // Open url.
+
+        // TODO: Uncomment
+        // window.location = modal.find('[data-download="direct"]').attr('href');
+      });
     }
 
   });
@@ -71,6 +87,7 @@
   $('.data-download').click(function(e) {
     // Do show modal if user already filled the survey.
     if (readCookie('CS_kown_your_user__submit') == 'complete') {
+      // TODO: Uncomment
       //return true;
     }
 
