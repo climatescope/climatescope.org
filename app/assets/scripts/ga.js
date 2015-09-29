@@ -11,21 +11,21 @@ ga('send', 'pageview');
 // Event tracking.
 $(document).ready(function() {
   // Track downloads.
-  $('.data-download').click(function(e) {
-    $(this).attr('target', '_blank');
+  // $('.data-download').click(function(e) {
+  //   $(this).attr('target', '_blank');
     
-    var url = $(this).attr('href');
+  //   var url = $(this).attr('href');
     
-    if (url == '#') {
-      e.preventDefault();
-      return;
-    }
+  //   if (url == '#') {
+  //     e.preventDefault();
+  //     return;
+  //   }
     
-    // Extract the filename from string.
-    var regExp = new RegExp('\/([a-z0-9-.]+)$');
-    var filename = url.match(regExp)[1];
+  //   // Extract the filename from string.
+  //   var regExp = new RegExp('\/([a-z0-9-.]+)$');
+  //   var filename = url.match(regExp)[1];
     
-    var label = filename + ' - ' + CS.lang.toUpperCase();
-    ga('send', 'event', 'Data', 'Download', label);
-  });
+  //   var label = filename + ' - ' + CS.lang.toUpperCase();
+  //   ga('send', 'event', 'Data', 'Download', label);
+  // });
 });
