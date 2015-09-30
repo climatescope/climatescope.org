@@ -1,6 +1,6 @@
 (function(){
   
-  var directives = angular.module('csDirectives', []);
+  var directives = angular.module('csDirectives', ['i18nFilters']);
   
   directives.directive("initChart", function() {
     return {
@@ -63,7 +63,7 @@
         '<table>',
           '<thead>',
             '<tr>',
-              '<th><span class="visually-hidden">Question</span></th>',
+              '<th><span class="visually-hidden">%% \'Question\' | translate %%</span></th>',
               '<th ng-repeat="key in data.meta[\'label-x\']">%% key %%</th>',
             '</tr>',
           '</thead>',

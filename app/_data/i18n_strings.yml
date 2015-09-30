@@ -280,6 +280,9 @@ Power Africa:
 Power Africa logo: 
   en: "Power Africa logo"
   es: "Power Africa logo"
+Power sector structure: 
+  en: "Power sector structure"
+  es: "Power sector structure ES"
 Press: 
   en: "Press"
   es: "Prensa"
@@ -301,6 +304,9 @@ Provinces:
 Province:
   en: "Province"
   es: "Provincia"
+Question:
+  en: "Question"
+  es: "Cuestión"
 Rank: 
   en: "Rank"
   es: "Posición"
