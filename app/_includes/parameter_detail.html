@@ -15,6 +15,14 @@
   </header>
 
   <div class="param-details__body">
+    <div ng-if="param.id == 1" class="power-sector">
+      <h2 class="param-details__sectitle">Power sector structure</h2>
+      <div power-chart="detailsCtrl.chartData['power-sector-1']"><!-- Angular directive - cs_directives.js --></div>
+      <div power-chart="detailsCtrl.chartData['power-sector-2']"><!-- Angular directive - cs_directives.js --></div>
+      <div power-chart="detailsCtrl.chartData['power-sector-3']"><!-- Angular directive - cs_directives.js --></div>
+      <div power-chart="detailsCtrl.chartData['power-sector-4']"><!-- Angular directive - cs_directives.js --></div>
+    </div>
+
     <div ng-if="param.id == 3" >
       <ul class="key">
           <li class="key-available">{{ t['Available'][language] }}</li>

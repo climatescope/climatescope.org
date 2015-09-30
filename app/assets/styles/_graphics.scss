@@ -601,3 +601,18 @@ $circle-gutter: 0.5rem;
     }
   }
 }
+
+.power-sector {
+  table {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  th, td {
+    padding: 0.25rem;
+  }
+
+  td:not(:first-child) {
+    text-align: center;
+  }
+}
