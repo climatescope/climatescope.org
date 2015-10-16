@@ -22,6 +22,9 @@ function chart__price_attractiveness_electricity (element, chartData) {
   var attractiveness_group = svg.append("g")
     .attr("class", "bars-group");
 
+  var global_average_group = svg.append("g")
+    .attr("class", "bars-group");
+
   var x = d3.scale.linear();
 
   var xAxis = d3.svg.axis()
@@ -37,7 +40,7 @@ function chart__price_attractiveness_electricity (element, chartData) {
     .orient("left");
 
   // Append axis.
-  svg.append("g")
+svg.append("g")
     .attr("class", "x axis")
     .append("text")
     .attr("class", "label")
@@ -67,7 +70,14 @@ function chart__price_attractiveness_electricity (element, chartData) {
       x.domain(meta_info.xDomain);
     }
     else {
-      x.domain([0, d3.max(chart_data, function (d) { return d.values[0].value; })]);
+      x.domain([0, d3.max(chart_data, function (d) { 
+        if(d.values[0].global_average > d.values[0].value){
+          return d.values[0].global_average; 
+        }else{
+          return d.values[0].value; 
+        }
+        
+      })]);
     }
 
     y.domain(chart_data.map(function (d) { return d.name; }));
@@ -135,6 +145,9 @@ function chart__price_attractiveness_electricity (element, chartData) {
     var attractiveness_bars = attractiveness_group.selectAll("rect")
       .data(chart_data);
 
+    var global_average_bar = global_average_group.selectAll("rect")
+      .data(chart_data);
+
     background_bars.enter().append("rect");
 
     background_bars.exit().remove();
@@ -152,6 +165,17 @@ function chart__price_attractiveness_electricity (element, chartData) {
     attractiveness_bars
       .attr("class", "chart-price-bars")
       .attr("width", function (d) { return x(d.values[0].value); })
+      .attr("y", function (d) { return y(d.name); })
+      .attr('height', 20);
+
+    global_average_bar.enter().append("rect");
+
+    global_average_bar.exit().remove();
+
+    global_average_bar
+      .attr("class", "global_average_bar")
+      .attr("width", 1)
+      .attr("x", function (d) { return x(d.values[0].global_average); })
       .attr("y", function (d) { return y(d.name); })
       .attr('height', 20);
 

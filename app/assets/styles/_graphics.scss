@@ -396,6 +396,10 @@
   fill: $infograph-color-a;
 }
 
+.global_average_bar{
+  fill: shade($infograph-color-a, 25%);
+}
+
 .chart-background-bar {
   fill: tint($primary-color, 95%);
 }
