@@ -15,7 +15,12 @@
       'carbon-offset': null,
       'price-attractiveness-electricity': null,
       'price-attractiveness-fuel': null,
-      'value-chains': null
+      'value-chains': null,
+
+      'power-sector-1': null,
+      'power-sector-2': null,
+      'power-sector-3': null,
+      'power-sector-4': null
     }
 
     setupCommonParamDetailTableMethods(_self);
@@ -32,38 +37,56 @@
     var url = null;
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + CS.stateId + '.json';
     $http.get(url).success(function(data) {
+      // Data for this chart requires preparation.
       chart__clean_energy_investments.prepareData(data);
       _self.chartData['clean-energy-investments'] = data;
     });
 
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/installed-capacity/' + CS.stateId + '.json';
     $http.get(url).success(function(data) {
+      // Data for this chart requires preparation.
       chart__installed_capacity.prepareData(data);
       _self.chartData['installed-capacity'] = data;
     });
 
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset-projects/' + CS.stateId + '.json';
     $http.get(url).success(function(data) {
-      // No data preparation for this one.
       _self.chartData['carbon-offset'] = data;
     });
 
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/value-chains/' + CS.stateId + '.json';
     $http.get(url).success(function(data) {
-      // No data preparation for this one.
       _self.chartData['value-chains'] = data;
     });
 
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-electricity/' + CS.stateId + '.json';
     $http.get(url).success(function(data) {
-      // No data preparation for this one.
       _self.chartData['price-attractiveness-electricity'] = data;
     });
 
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-fuel/' + CS.stateId + '.json';
     $http.get(url).success(function(data) {
-      // No data preparation for this one.
       _self.chartData['price-attractiveness-fuel'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/power-sector-1/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      _self.chartData['power-sector-1'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/power-sector-2/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      _self.chartData['power-sector-2'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/power-sector-3/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      _self.chartData['power-sector-3'] = data;
+    });
+
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/power-sector-4/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      _self.chartData['power-sector-4'] = data;
     });
 
   }]);

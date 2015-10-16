@@ -1,6 +1,6 @@
 (function(){
   
-  var directives = angular.module('csDirectives', []);
+  var directives = angular.module('csDirectives', ['i18nFilters']);
   
   directives.directive("initChart", function() {
     return {
@@ -52,4 +52,32 @@
     };
   });
 
+  directives.directive("powerChart", function() {
+    return {
+      restrict: 'A',
+      scope: {
+        data: '=powerChart'
+      },
+      template: function() {
+        var t = [
+        '<table>',
+          '<thead>',
+            '<tr>',
+              '<th><span class="visually-hidden">%% \'Question\' | translate %%</span></th>',
+              '<th ng-repeat="key in data.meta[\'label-x\']">%% key %%</th>',
+            '</tr>',
+          '</thead>',
+          '<tbody>',
+            '<tr ng-repeat="question in data.data">',
+              '<td>%% question.name %%</td>',
+              '<td ng-repeat="key in data.meta[\'label-x\']" ng-init="isActive = question.values[0].value == $index" ng-class="{active: isActive}"><span ng-if="isActive">x</span></td>',
+            '</tr>',
+          '</tbody>',
+        '</table>'
+        ].join('');
+
+        return t;
+      }
+    };
+  });
 })();

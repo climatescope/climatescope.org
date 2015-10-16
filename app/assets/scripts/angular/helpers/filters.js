@@ -1,13 +1,13 @@
 (function(){
   
   var mathFilters = angular.module('mathFilters', []);
-  
+
   mathFilters.filter('round', function() {
     return function(input, precision) {
       return round(input, precision);
     };
   });
-  
+
   mathFilters.filter('leadingZero', function() {
     return function(input, digits) {
       if (isNaN(input) || input === null) {
@@ -21,6 +21,14 @@
         }
       }
       return input;
+    };
+  });
+
+  var i18nFilters = angular.module('i18nFilters', []);
+
+  i18nFilters.filter('translate', function() {
+    return function(input) {
+      return CS.t(input);
     };
   });
   
