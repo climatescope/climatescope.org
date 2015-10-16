@@ -396,12 +396,21 @@
   fill: $infograph-color-a;
 }
 
-.global_average_bar{
-  fill: shade($infograph-color-a, 25%);
+.global_average_bar {
+  fill: tint($primary-color, 60%);
+}
+
+.global_average_tooltip {
+  color: tint($primary-color, 60%);
+  font-size: .75rem;
 }
 
 .chart-background-bar {
   fill: tint($primary-color, 95%);
+}
+
+.empty-hover-bars {
+  fill: transparent;
 }
 
 .chart-subhead {

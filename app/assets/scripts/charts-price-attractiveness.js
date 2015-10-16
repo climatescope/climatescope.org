@@ -25,6 +25,9 @@ function chart__price_attractiveness_electricity (element, chartData) {
   var global_average_group = svg.append("g")
     .attr("class", "bars-group");
 
+  var empty_hover_group = svg.append("g")
+    .attr("class", "bars-group");
+
   var x = d3.scale.linear();
 
   var xAxis = d3.svg.axis()
@@ -148,6 +151,9 @@ svg.append("g")
     var global_average_bar = global_average_group.selectAll("rect")
       .data(chart_data);
 
+    var empty_hover_bar = empty_hover_group.selectAll("rect")
+      .data(chart_data);
+
     background_bars.enter().append("rect");
 
     background_bars.exit().remove();
@@ -179,7 +185,17 @@ svg.append("g")
       .attr("y", function (d) { return y(d.name); })
       .attr('height', 20);
 
-    attractiveness_bars
+    empty_hover_bar.enter().append("rect");
+
+    empty_hover_bar.exit().remove();
+
+    empty_hover_bar
+      .attr("class", "empty-hover-bars")
+      .attr("width", function (d) { return x(x.domain()[1]); })
+      .attr("y", function (d) { return y(d.name); })
+      .attr('height', 20);
+
+    empty_hover_bar
       .on('mouseover', function (d, i) {
         var matrix = this.getScreenCTM()
           .translate(+this.getAttribute("x"), +this.getAttribute("y"));
@@ -187,12 +203,15 @@ svg.append("g")
         var posX = (window.pageXOffset + matrix.e) + width / 2;
         var posY = (window.pageYOffset + matrix.f) + y.rangeBand() / 2;
 
-        var content = '<p class="price_chart_tooltip">' + '<span class="price">' + '$' + d.values[0].value + '</span>' + ' ' + meta_info['label-x'] + '</p>';
+        var globalAverage = Math.round(d.values[0].global_average * 100) / 100
+
+        var content = '<p class="price_chart_tooltip">' + '<span class="price">' + '$' + d.values[0].value + '</span>' + ' ' + meta_info['label-x'] + 
+        '</br>' + '<span class="global_average_tooltip">' + globalAverage + ' Global Average' + '</span>' + '</p>';
 
         chartPopover.setContent(content, 'top price_chart_tooltip').show(posX, posY);
       });
 
-    attractiveness_bars
+    empty_hover_bar
       .on('mouseout', function () { chartPopover.hide(); });
   };
 
