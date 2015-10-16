@@ -602,17 +602,64 @@ $circle-gutter: 0.5rem;
   }
 }
 
+
 .power-sector {
+  h2{
+
+      margin-top: 2em;
+
+  }
+
   table {
     width: 100%;
     margin-bottom: 2rem;
+    font-family: $brand-font-family;
+    table-layout: fixed;
+    border: 1px solid tint($primary-color, 90%);
+  }
+
+  .top-questions{
+     table tr th:first-child{
+       width: 75%;
+    } 
+  }
+
+  table tr th:first-child{
+       width: 50%;
+  }
+
+  th{
+    background-color: tint($primary-color, 95%);
+    font-size: .9em;
+  }
+
+  tr{
+    td:nth-child(2){
+      background-color: tint($infograph-color-a, 15%);
+    }
+    td:nth-child(3){
+    background-color: tint($infograph-color-a,40%);
+    }
+    td:nth-child(4){
+    background-color: tint($infograph-color-a, 60%);
+    }
+    td:nth-child(5){
+    background-color: tint($infograph-color-a, 75%);
+    }
+    td:nth-child(6){
+    background-color: tint($infograph-color-a, 90%);
+    }
   }
 
   th, td {
-    padding: 0.25rem;
+    padding: 0.5rem;
+    border-right: 1px solid tint($primary-color, 90%);
+    border-bottom: 1px solid tint($primary-color, 90%);
   }
 
   td:not(:first-child) {
     text-align: center;
+    font-size: 1.3em;
+    font-weight: 800;
   }
 }
