@@ -206,7 +206,7 @@ svg.append("g")
         var globalAverage = Math.round(d.values[0].global_average * 100) / 100
 
         var content = '<p class="price_chart_tooltip">' + '<span class="price">' + '$' + d.values[0].value + '</span>' + ' ' + meta_info['label-x'] + 
-        '</br>' + '<span class="global_average_tooltip">' + globalAverage + ' Global Average' + '</span>' + '</p>';
+        '</br>' + '<span class="global_average_tooltip">' + '<span class="avg">$' + globalAverage + '</span>' + ' Global Average' + '</span>' + '</p>';
 
         chartPopover.setContent(content, 'top price_chart_tooltip').show(posX, posY);
       });

@@ -403,6 +403,10 @@
 .global_average_tooltip {
   color: tint($primary-color, 60%);
   font-size: .75rem;
+
+  .avg {
+    font-weight: $body-font-bold
+  }
 }
 
 .chart-background-bar {
