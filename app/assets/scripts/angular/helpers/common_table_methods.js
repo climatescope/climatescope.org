@@ -139,37 +139,35 @@ function setupCommonParamDetailTableMethods(scope) {
     ].join('');
   };
 
-  scope.toggleTable = function(id, e) {
-    var $section = $('.param-' + id);
-    var $tableWrapper = $('.table-wrapper', $section);
-    var $table = $('table', $section);
+  scope.toggleExpandable = function(target, e) {
+    var $target = $(target);
+    var $targetInner = $('.expandable-wrapper', $target);
 
     // First run.
-    if ($tableWrapper.data('visible') === undefined) {
-      $tableWrapper.data('visible', false);
-      $tableWrapper.data('orig_max_height', $tableWrapper.css('max-height'));
+    if ($target.data('visible') === undefined) {
+      $target.data('visible', false);
+      $target.data('orig_max_height', $target.css('max-height'));
     }
 
-    if ($tableWrapper.data('visible')) {
-      $tableWrapper.removeClass('revealed');
+    if ($target.data('visible')) {
+      $target.removeClass('revealed');
     }
     else {
-      $tableWrapper.addClass('revealed');
+      $target.addClass('revealed');
     }
 
-    var maxHeight = $tableWrapper.data('visible') ? $tableWrapper.data('orig_max_height') : $table.height();
+    var maxHeight = $target.data('visible') ? $target.data('orig_max_height') : $targetInner.height();
 
-    $tableWrapper.animate({
+    $target.animate({
       'max-height': maxHeight,
     });
 
-    $tableWrapper.data('visible', !$tableWrapper.data('visible'));
+    $target.data('visible', !$target.data('visible'));
 
-    var text = $tableWrapper.data('visible') ? CS.t('View less') : CS.t('View more');
+    var text = $target.data('visible') ? CS.t('View less') : CS.t('View more');
     e.target.text = text;
     e.target.setAttribute('title', text);
-
-  }
+  };
 };
 
 function setupPolicyStatsVizMethods(scope) {
