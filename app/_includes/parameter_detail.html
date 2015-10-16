@@ -66,8 +66,8 @@
 
     <div class="param-details__table">
       <h2 class="param-details__sectitle">{{ t['Indicators'][language] }}</h2>
-      <div class="table-wrapper">
-        <table class="table detailed-data">
+      <div class="table-wrapper expandable" data-hook="table-expand-%%param.id%%">
+        <table class="table detailed-data expandable-wrapper">
           <thead>
             <tr>
               <th><span class="visually-hidden">{{ t['Parameter'][language] }}</span></th>
@@ -95,7 +95,7 @@
       </div>
 
       <div class="param-details__table-actions">
-        <a class="bttn bttn-cta" href="" ng-click="detailsCtrl.toggleTable(param.id, $event)" title="{{ t['View more'][language] }}">{{ t['View more'][language] }}</a>
+        <a class="bttn bttn-cta" href="" ng-click="detailsCtrl.toggleExpandable('[data-hook=\'table-expand-' + param.id + '\']', $event)" title="{{ t['View more'][language] }}">{{ t['View more'][language] }}</a>
       </div>
 
     </div>

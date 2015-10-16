@@ -912,29 +912,6 @@ a:active{
       margin-bottom: 1rem;
     }
 
-    .table-wrapper {
-      max-height: 15rem;
-      overflow: hidden;
-      position: relative;
-
-      &.revealed {
-        margin-bottom: 1rem;
-      }
-
-      &:not(.revealed):before {
-        width: 100%;
-        position: absolute;
-        z-index: 1;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        height: 12rem;
-        content: '';
-        background-image: linear-gradient(rgba(#FFF, 0), rgba(#FFF, 1));
-        pointer-events: none;
-      }
-    }
-
     table {
       margin-bottom: 0;
     }
@@ -1277,4 +1254,39 @@ a:active{
       margin-bottom: 32px;
     }
   }
+}
+
+.expandable {
+  overflow: hidden;
+  position: relative;
+
+  &.revealed {
+    margin-bottom: 1rem;
+  }
+
+  &:not(.revealed):before {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 12rem;
+    content: '';
+    background-image: linear-gradient(rgba(#FFF, 0), rgba(#FFF, 1));
+    pointer-events: none;
+  }
+}
+
+.table-wrapper {
+  max-height: 15rem;
+}
+
+.description-inner {
+  max-height: 25rem;
+}
+
+.prose-copy-actions {
+  text-align: center;
+  margin-bottom: 1rem;
 }

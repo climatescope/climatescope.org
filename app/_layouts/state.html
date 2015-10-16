@@ -33,9 +33,18 @@ conf:
   </div>
 
   <div class="row--contained">
-    <div class="col--main prose-copy">
-      <h2>Summary</h2>
-      {{ content }}
+    <div class="col--main prose-copy" ng-controller="DescriptionController as descCtrl">
+      <h2>{{ t['Description'][language] }}</h2>
+
+      <div class="description-inner expandable" data-hook="expand-description">
+        <div class="expandable-wrapper">
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="prose-copy-actions">
+        <a class="bttn bttn-cta" href="" ng-init="descCtrl.checkExpandable('[data-hook=\'expand-description\']')" ng-click="descCtrl.toggleExpandable('[data-hook=\'expand-description\']', $event)" title="{{ t['View more'][language] }}">{{ t['View more'][language] }}</a>
+      </div>
     </div>
 
     <div class="col--sec prose-copy" ng-controller="StatsController as statsCtrl" ng-cloak>
