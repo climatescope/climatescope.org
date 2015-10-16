@@ -7,12 +7,6 @@ title: Tamil Nadu
 region: asia
 country: in
 ---
-Tamil Nadu ranked second among the 10 Indian states included in Climatescope 2014. It scored 1.20 and performed best on Parameter I, Enabling Framework because of a very high share of clean energy in installed capacity. The state also has welldeveloped manufacturing value chains in the biomass, wind and solar sectors.
-
-Tamil Nadu is one of India’s most industrialized states, with the result that services constitute more than two-thirds of its $142bn economy. The state attracted $363m in clean energy investments in 2013, a small fraction of the $8.4bn that flooded into the state from 2006–13.
-
-In 2013, Tamil Nadu produced an estimated 80TWh, although not all of this was consumed within the state. Coal-fired plants supplied the bulk (66%) with renewable capacity contributing a significant 17.5% (and 41% of installed capacity). The state’s distribution utility, The Tamil Nadu Generation and Distribution Corporation, is in poor financial health and has a ‘B’ rating issued by the Ministry of Power.
-
-Tamil Nadu was once regarded as India’s leading wind power state. It has the largest installed wind capacity (7.2GW), and the sector accounts for 82% of all dollars invested and 86% of its 8.4GW clean energy capacity. However, it has lost some of its shine recently because of issues such as low feed-in-tariffs, power evacuation and payment delays. New installations in 2013 were a mere 77MW, down from 540MW in 2012 and 1,093MW in 2011.
-
-The state conducted a 1GW solar auction in 2013, which was generally deemed to be unsuccessful due to low developer interest and delays getting projects underway. Still, its historical strength and well-developed value chains mean that it performed well relative to other Indian states.
+Until recently, Tamil Nadu was regarded India’s unrivalled leader for wind development due to exceptional local conditions and high installation rates. Today, at 7.4GW, Tamil Nadu still has more wind installed than any other state. 
+Since 2012, however, annual new-build rates have fallen and in 2014 just 208MW was commissioned. This is largely due the poor financial health of state-owned distribution utility companies and occasional payment delays to power project owners. Cases of wind generation curtailment during the peak windy season have also dimmed investor enthusiasm for Tamil Nadu considerably.
+The state’s total power generation capacity is 23.8GW of which renewables account for 37%, or 8.8GW. Wind represents 84% of all renewables followed by 869MW of biomass. In 2013, the state conducted a tender for 1GW of solar power delivery capacity but that received a poor response and was deemed unsuccessful. In September 2014, Tamil Nadu issued a flat feed-in tariff of INR 7.01/kWh to solar projects without any auction provided they be commissioned by September 2015. The final commissioning deadline has since been pushed back by six months to March 2016 to give developers more time to complete their work. The state also has a net-metering policy for rooftop solar projects.

@@ -7,10 +7,11 @@ title: Argentina
 region: lac
 grid: on
 ---
-Argentina se ubicó en el puesto 19 entre los 55 países evaluadosanalizados por el Climascopio 2014, con un puntaje de 1,24 sobre un máximo de 5. Entre sus vecinos de América Latina y el Caribe se ubicó en el noveno puesto.
+Resumen de Puntajes
 
-El país, que otrora se veía atractivo para los inversores en proyectos de energía limpia no relacionados con las plantas hidroeléctricas a escala comercial, ha perdido en los últimos tiempos buena parte de su atractivo: mientras que entre 2006 y 2012 atrajo US$2.700 millones, en 2013 las inversiones se desplomaron un 70% respecto al año anterior, alcanzando sólo US$153 millones.
-
-Los principales obstáculos a los que se enfrentan las energías renovables en la actualidad incluyen el riesgo del mercado en general, la falta de alternativas de financiamiento, los subsidios, las bajas tarifas, el riesgo de la contraparte adquiriente, y la falta de implementación plena de políticas adoptadas. Como resultado, el desarrollo de las energías limpias se ha desacelerado y hoy el país está lejos de poder alcanzar la meta previamente establecida de generar un 8% de energías limpias no vinculadas a las centrales hidroeléctricas a escala comercial para 2016.
-
-Argentina sigue albergando importantes cadenas de valor de proveedores de bienes y servicios que atienden a las energías limpias, pero ambos sectores son más bien un reflejo del tamaño de la economía del país –US$488.000 millones— que de la existencia de un pujante sector de energías renovables. Mirando al futuro, existen escasos indicios de crecimiento sustancial de las energías limpias, a menos que se produzcan significativos cambios en las condiciones macroeconómicas, en los subsidios a las fuentes convencionales de electricidad, o en ambos factores.
+Argentina se mantuvo en el puesto 20 en el Climascopio 2015, si bien su puntaje aumentó levemente de 1.24 en 2014 a 1.39 en 2015.
+La inamovilidad de los resultados de Argentina se debe en parte a que su adelanto en el Parámetro I fue opacado por un deterioro en el Parámetro II.
+En el Parámetro I Marco Propicio, Argentina escaló ocho posiciones en 2015, hasta la posición número 20. En 2015 y 2014, sus puntajes en el Parámetro I fueron 1.32 y 1.17, respectivamente.
+En el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, el país se encuentra en el puesto 47 en 2015, dos por debajo del alcanzado en 2014. Sus puntajes para el Parámetro II fueron 0.21 en 2015 y 0.30 en 2014.
+En el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, Argentina demostró su mejor desempeño en el Climascopio, ocupando el décimo puesto con un puntaje de 3.55. Esto representó un ascenso de cuatro posiciones con respecto a 2014, cuando el país obtuvo un puntaje de 2.83.
+En el Parámetro IV Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, Argentina  ocupó el puesto 13 con un puntaje de 1.77 en 2015, mientras que en 2014 había ocupado el puesto 16 con un puntaje de 1.73.

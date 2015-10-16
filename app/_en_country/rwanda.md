@@ -7,10 +7,10 @@ title: Rwanda
 region: africa
 grid: off
 ---
-Rwanda placed 23rd in Climatescope 2014 with a score of 1.20.
+Score Summary
 
-It was strongest on Enabling Framework Parameter I, taking second place globally, partly reflecting the fact that its 62MW of small hydro capacity comprises more than half the country’s entire generating output. The remainder it derives from dieselfired power plants.
-
-Strong economic growth over the last decade has drawn the government’s attention to the power sector. It has very ambitious goals to install more capacity and connect more people to the grid. Under its five-year plan, the Economic Development and Poverty Reduction Strategy 2, the government aims to increase power capacity to 563MW by 2017 from 113MW today, and to raise the electrification rate to 70% by July 2008, from 17% currently.
-
-The Ministry of Infrastructure – the main energy policy-setting body – seeks to meet the generating target through a mix of geothermal, peat, methane gas, solar and hydropower. It has introduced a feed-in tariff for small hydro and is holding smallscale tenders for solar, while the Electricity Access Rollout Programme is seeking to extend the grid.
+Rwanda scored 1.41 in Climatescope 2015, placing it 17th on the list of countries overall. The country gained six places on its ranking in 2014 thanks to improved scores on Enabling Framework Parameter I and Clean Energy Investment and Climate Financing Parameter II. 
+The country was strongest on Parameter I, where it placed second globally, behind only Uruguay. This reflected growth in its already high proportion of clean energy generating capacity.
+On Parameter II, Rwanda’s score rose sharply thanks to an increase in the growth rate of clean energy investment.
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country’s score was slightly better than average. It was supported by a relatively high number of distributed clean energy value chains and service providers. 
+Rwanda was ranked 47th on Greenhouse Gas Management Activities Parameter IV as it has no carbon reduction policies.

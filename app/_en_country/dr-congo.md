@@ -7,16 +7,10 @@ title: DR Congo
 region: africa
 grid: off
 ---
-The Democratic Republic of Congo scored 0.83 on Climatescope 2014, placing it 38th. Its best ranking was on Clean Energy Investment Parameter II, reflecting particularly the country’s growth rate of investment, albeit off a low base of small hydro installations.
+Score Summary
 
-In 2013, $61.8m was invested in the country’s renewables sector.
-
-This represents nearly one third of the $200m the country has attracted cumulatively since 2006 and all of that has supported small hydro project development.
-
-The DRC receives almost all (98%) of its electricity from large hydropower projects, but many years of conflict, mismanagement and institutional weakness have taken their toll. Only around 45% of the country’s 2.6GW of generating capacity today is operational.
-
-Consequently, the electrification rate is very low. For those on the grid, supply shortfalls can be severe.
-
-The government’s aim to liberalize the electricity sector should make it easier for investors to develop the country’s vast potential, in particular its estimated 100GW of potential hydro power resource – the largest in sub-Saharan Africa.
-
-While the DRC has no specific incentives for renewable energy projects yet on the books, the government does offer reductions on import duties and various taxes and levies under the country’s investment code.
+The Democratic Republic of Congo (DRC) scored 0.55 overall in Climatescope 2015, slipping several places to finish 50th on the list of countries overall and last among the African nations. The country’s highest score was on Greenhouse Gas Management Activities Parameter IV. 
+On Enabling Framework Parameter I, the DRC ranked 50th. Its score was weakened by the lack of clean energy incentives and the lack of openness in the structure of its power sector. 
+The country fell 29 places to take 49th position on Clean Energy Investment and Climate Financing Parameter II, partly reflecting the absence of any new investment. 
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the DRC finished 47th, down 16 places on 2014, with an absence of value chain players in most clean energy segments. 
+On Parameter IV, the country ranked 29th, scoring best in the carbon-offsetting category, in particular for the number of carbon credits generated relative to its overall emissions.

@@ -7,16 +7,7 @@ title: Karnataka
 region: asia
 country: in
 ---
-Karnataka ranked first among the 10 Indian states surveyed for Climatescope 2014. It obtained a score of 1.37, performing best in Parameter I, Enabling Framework because of its favorable renewable energy policies. The state has a fully-developed small hydro value chain and several parts of the wind and solar value chains.
-
-The service sector contributes 66% to the state’s $97bn economy.
-
-Karnataka received $602m in clean energy investments in 2013 out of a total of $7.3bn during 2006–13. Wind, with a capacity of 2.4GW, is the flagship sector having attracted 64% of 2006–13 investments, and accounting for 52% of Karnakata’s 4.5GW of clean energy capacity.
-
-In 2013, power plants located in Karnataka generated an estimated 56TWh, although not all of it was consumed within the state. Coal plants were responsible for 48% of total electricity generation, while renewables had a significant 17.5% share (and 33% of installed capacity) in 2013. The state’s power distribution utilities are reasonably healthy financially, with integrated ratings of ‘B+’ issued by the Ministry of Power.
-
-Karnataka is aggressively pushing for development of solar capacity.
-
-It has held or announced four tenders to date, targeting 760MW of capacity. It also increased its earlier solar target of 200MW by 2016 to 2GW by 2021.
-
-Karnataka has some of India’s best wind resources but permitting projects is time-consuming, as many sites are in ecologically sensitive forests. The state last revised its wind feed-in tariffs in 2012, and the next revision is planned for 2017. With such a gap between revisions, the tariff is expected to become less attractive to investors, and slow new investment.
+Karnataka is perhaps best known for Bangalore, 'India’s Silicon Valley', where much of the country's information technology and software services industries resides. A number of companies in these sectors are today contemplating procuring dedicated renewable energy, particularly solar, to power their offices and data centers. 
+Of Karnataka's 14GW of power-generating capacity, 4.8GW is coal and 3.4GW is large hydro.  Renewables account for 4.7GW, or one-third of the total, and wind represents half of that.  Still, some of the state's best wind resources remain unexploited in forested areas. It is estimated that projects in some of the best sites could achieve capacity utilization factors of 40% – far above India's national average for wind of just 23%. Karnataka's regulators appear comfortable with wind's rising share of generation because of the additional significant presence of large hydro capacity to stabilize the grid.
+Karnataka had just 74MW solar installed at year-end 2014 but that is poised to grow considerably in coming years. The state has set a target of 2GW solar by 2022 and conducted a 500MW tender in 2014 after three smaller tenders in 2012 and 2013. 
+Finally, Karnataka has considerable biomass capacity (1.3GW) online operating at a higher capacity factor compared to many other states.

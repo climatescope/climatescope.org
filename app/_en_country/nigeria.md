@@ -7,12 +7,10 @@ title: Nigeria
 region: africa
 grid: off
 ---
-Nigeria placed 22nd in Climatescope 2014, with a score of 1.23.
+Score Summary
 
-Its highest rank was 10th on Value Chains Parameter III. Notably, Nigeria’s efforts at power sector reforms and the introduction of feed-in tariffs (FiTs) have not translated into major new investment; the country’s worst performance was on Clean Energy Investment Parameter II for which it came in 36th.
-
-Investment stood at just $140m for 2006-13, of which over 70% went into biofuels production facilities. The country’s installed generation capacity amounts to 8.4GW overall, though available capacity is often only a third of that due to issues such as vandalism of gas pipelines, insufficient fuel supply and transmission constraints.
-
-In 2013, there was only 31MW of non-large hydro clean capacity, all of it small hydro.
-
-The federal government embarked on privatizing the power sector with the aim of attracting investment to increase generation and improve reliability – it has a target of over $20bn for generation assets 2014-20. However, there are already questions over the ability of the new private companies to recover their costs.
+Nigeria scored 1.58 in Climatescope 2015, placing it 12th on the list of countries overall. This was an increase from 2014 and was largely due to a higher score on Clean Energy Investment and Climate Financing Parameter II in general, and the growth rate of clean energy investment in particular. 
+On Enabling Framework Parameter I, the country’s score increased thanks largely to a rise on its small base of clean energy generating capacity.
+On Parameter II, Nigeria ranked 7th overall and highest among the African nations. This reflected an increase of 158% in the volume of asset finance to $359m in 2015. 
+Nigeria’s high score on Low-Carbon Business & Clean Energy Value Chains Parameter III was supported by a high number of value chains and service providers. 
+On Greenhouse Gas Management Activities Parameter IV, the country was ranked 30th and showed some strength in the carbon offsets category. 

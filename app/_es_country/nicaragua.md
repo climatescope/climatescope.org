@@ -7,12 +7,12 @@ title: Nicaragua
 region: lac
 grid: on
 ---
-Nicaragua obtuvo el puesto 16 entre los 55 países evaluados para el Climascopio 2014, con un puntaje final de 1,32. Con su pequeña economía, de un PIB relativamente bajo –-US$11.000 millones — superó a varios países de mayores dimensiones, incluyendo Nigeria y Argentina.
 
-Entre los 26 países de América Latina y el Caribe evaluados, obtuvo la octava posición; y habría obtenido una aún más alta si las inversiones en energía limpia se hubieran mantenido en el pico que alcanzaron en 2012. El país también fue impactado negativamente por la nueva ponderación de los parámetros del Climascopio 2014 respecto de años anteriores. El cambio dio mayor importancia a las cadenas de valor de energía limpia en el resultado final.
+Resumen de Puntajes 
 
-El país tiene el menor sector eléctrico de toda América Central, con una capacidad instalada de 1,3GW, y está conectado a sus vecinos a través del mercado de electricidad regional. Tiene uno de los índices de penetración de energía limpia más altos de la región, ya que el 39% de su capacidad nacional proviene de generación geotérmica (12%), eólica (11%), biomasa (11%) y pequeñas centrales hidroeléctricas (5%). Sin embargo, utilizó petróleo y diésel para prácticamente la mitad de los 4TWh generados en 2013, denotando que aún hay un considerable potencial para que la energía limpia se expanda.
-
-Nicaragua ha atraído US$1.600 millones en inversiones en energía limpia desde 2006. El año pasado hubo una reducción significativa: de US$290 millones en 2012 a US$219 millones en 2013. Esta variación no es llamativa, dado lo acotado del sector eléctrico.
-
-Con vistas al futuro, el gobierno tiene un plan ambicioso para casi duplicar su capacidad instalada de energía limpia (que incluye grandes centrales hidroeléctricas) durante los próximos 15 años, y alejarse de la generación térmica, hacia un sistema basado en energías renovables.
+En 2015 Nicaragua descendió 13 puestos en el Climascopio, cayendo hasta la posición 27 con un puntaje de 1.14, en tanto que en 2014 había ocupado el puesto 14 con un puntaje de 1.37.
+El desempeño de Nicaragua en 2015 fue marcado por el descenso en los resultados obtenidos en la categoría de Cantidad Invertida incluida en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático. También desmejoró en el indicador de Préstamos, Donaciones, Programas de Donaciones incluido en el mismo parámetro.
+En el Parámetro I Marco Propicio, el resultado que Nicaragua obtuvo en 2015 de 1.53 le alcanzó para ubicarse en el noveno lugar dentro del parámetro. En 2014, con un resultado levemente menor, 1.51, había logrado ocupar el sexto puesto. 
+En 2015 Nicaragua tuvo resultados menos favorables en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, desmoronándose hasta el puesto 26 desde el cuarto lugar que había ocupado el año anterior. Su resultado en el Parámetro II fue de 0.53 en 2015, mientras que en 2014 había sido de 1.16.
+En cuanto al Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, Nicaragua ocupó el puesto 42 en 2015 con un puntaje de 0.97. En 2014, sus resultados para el Parámetro III habían logrado colocarlo en el puesto 36 con un puntaje de 1.16.
+En el Parámetro IV Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, en 2015 Nicaragua se posicionó en el puesto 21 con un puntaje de 1.53. En 2014, un puntaje de 1.61 lo había colocado en el puesto 18.

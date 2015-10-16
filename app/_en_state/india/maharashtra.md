@@ -7,16 +7,7 @@ title: Maharashtra
 region: asia
 country: in
 ---
-Maharashtra ranked fifth among the 10 Indian states assessed by Climatescope 2014. It scored 1.01 and performed best in Parameter I, Enabling Framework because of its favorable feed-in tariff policies.
-
-The state has a heavy concentration of financial institutions in its capital Mumbai, and well-developed bioenergy and wind value chains. Maharashtra’s $246bn state economy is India’s biggest, representing 14% of the country’s GDP. Services make up two-thirds of economic output.
-
-The state received $1.2bn in clean energy investments in 2013 out of a total of $8.6bn during 2006-13. Wind, the flagship sector, attracted 69% of 2006-13 clean energy investment and accounts for 66% of the state’s 5.2GW clean energy capacity.
-
-In 2013, power plants located in Maharashtra generated an estimated 124TWh, although not all of it was consumed within the state. Coal-fired plants contributed 69% of total electricity generation, while renewables contributed a relatively small 7% (and 18% of the installed capacity). The state’s distribution utility is in good financial and operational health, with an ‘A’ rating issued by the Ministry of Power.
-
-Most of the state’s solar capacity has been developed by state government-owned electricity company Maharashtra State Power Generation Company, which awarded turnkey contracts for building the plants. In its latest tender for 50MW of solar power, the utility adopted a revenue-sharing model with a private developer and investor who was selected based on competitive bidding.
-
-In 2013, wind installations in the state surged thanks to high feed-in tariffs, even though wind resources are not optimal.
-
-Maharashtra reduced its wind tariffs in 2014, and as a result installation growth is expected to slow.
+Maharashtra is the home to Mumbai, India’s financial capital, with its heavy concentration of banks, financial institutions and corporate headquarters. Mumbai is one of India’s few cities to feature private distribution utilities. Meanwhile, the state as a whole is highly industrialized and its economy is largest among all Indian states. 
+Of Maharashtra's total 37GW of power generation capacity, 23GW is represented by coal. Renewables account for 6.4GW, or 17% of total capacity with wind accounting for two-thirds of that. While the state does not feature India's best wind resource, its high feed-in tariff has led to a surge in wind capacity. In 2014 alone, Maharashtra added 920MW of wind, or 40% of what was built nation-wide that year. 
+This rising share of wind generation has begun to pose grid-stability challenges as the power is often generated during the monsoon season when the power deficit is among the lowest. Still, Maharashtra is now contemplating a new renewable energy target of 14.4GW by 2020. Of this, 7.5GW would come from solar with 5GW from wind. At present, the state has just 287MW solar on line, most of it owned by the Maharashtra State Power Generation Company. 
+To date, Maharashtra has done relatively little to encourage private investment in solar; it has held no tenders for power contracts and offers no feed-in tariffs. Due to heavy industrialization the state has a high and growing power demand and may be able to accommodate the ambitious new renewable energy targets. Still, renewables will surely face stiff competition; the state commissioned no less than 6.6GW of coal in 2014.

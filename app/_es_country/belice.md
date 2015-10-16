@@ -7,8 +7,11 @@ title: Belice
 region: lac
 grid: on
 ---
-Belice obtuvo una puntuación de 0,98 y se encuentra en el puesto 31 entre los 55 países incluidos en el Climascopio 2014 y en el decimoquinto lugar en América Latina y el Caribe. El país recibió un alto puntaje en los indicadores de capacidad instalada e inversiones en energías limpias sobre una base nivelada, pero tuvo un desempeño pobre en los indicadores de estructura del sector energético y cadena de valor.
+Resumen de Puntajes 
 
-Belice es la menor de las economías de América Latina, con un PIB de US$3.000 millones que depende del turismo y las exportaciones de productos primarios. Sobre una base nivelada, el país cuenta con el mayor porcentaje de energías renovables en su matriz energética partir de pequeñas centrales hidroeléctricas de América Latina y el Caribe. Las pequeñas centrales, la biomasa y los residuos representan el 56% de la capacidad de su red de 155MW. El resto de la capacidad local se cubre con generación a partir del diésel. Asimismo, el país importa de México un sustancial volumen de electricidad.
-
-En un intento por reducir su dependencia de la electricidad importada y por dar impulso a las fuentes propias de energías limpias, Belice lanzó en 2013 su primera licitación de contratos de suministro de energías renovables. Dicha subasta propone contratar 75MW de electricidad, de los cuales 60MW se destinan a los oferentes de todo tipo de energía y 15MW se reservan exclusivamente para las energías solar y eólica. Se espera que los resultados de la licitación se anuncien a finales de 2014.
+Belice bajó seis puestos hasta la posición 38 en el puntaje general del Climascopio 2015, con un puntaje general de 0.81. En 2014, el puntaje de Belice había sido de 0.98.
+El posicionamiento general del país se vio afectado debido a la menor actividad en el indicador de Préstamos, Donaciones, Programas de Donaciones del Parámetro II.
+En el Parámetro I Marco Propicio, Belice descendió nueve posiciones en 2015, alcanzando el puesto 27 con un puntaje de 1.21. En 2014 su puntaje había sido 1.31.
+Belice cayó abruptamente del puesto 19 en 2014 al 44 en 2015, en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático. En 2015 su puntaje fue de 0,26 mientras que en 2014 había sido de 0.67.
+Respecto al Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, en 2015 Belice obtuvo el puesto 52 con un puntaje de 0.46. En 2014 había ocupado el puesto 50 con un puntaje de 0,63.
+En lo que respecta al Parámetro IV Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, en 2015 Belice ascendió un lugar al 26 , con un puntaje de 1.22. En 2014, había ocupado el puesto 27, habiendo obtenido un puntaje de 1.05.

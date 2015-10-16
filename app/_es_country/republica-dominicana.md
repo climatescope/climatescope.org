@@ -7,10 +7,13 @@ title: República Dominicana
 region: lac
 grid: on
 ---
-La República Dominicana alcanzó una puntuación de 1,16 y finalizó vigesimocuarta entre las 55 naciones evaluadas por el Climascopio 2014, en tanto que se ubicó décima entre los 26 países de América Latina y el Caribe. 
+Resumen de Puntajes
 
-El país tuvo un buen desempeño en el Parámetro I, Marco Propicio, merced a su gama de políticas e incentivos en favor de las energías renovables. Pero no le fue tan bien en el Parámetro II, Inversión en Energías Limpias, ni en el Parámetro III, Cadenas de Valor de Energías Limpias, dado el bajo nivel de inversiones en energías renovables en 2013 y su reducida red de proveedores de servicios para las energías limpias. 
+El puntaje general de 1.02 de República Dominicana en el Climascopio 2015 lo posicionó en el puesto 32 entre todos los países. En 2014, el país había logrado el puesto 24, con un puntaje de 1.16.
+La disminución del puntaje de 2014 a 2015 está en gran medida relacionada con su caída de 19 lugares dentro del Parámetro I Marco Propicio. En 2015, obtuvo puntajes inferiores en los indicadores Políticas de Energía Limpia, Capacidad Instalada de Energía Limpia, y Tasa de Crecimiento de Generación Eléctrica, todos ellos correspondientes al Parámetro I.
+En el Parámetro I Marco Propicio, República Dominicana obtuvo el puesto 24 en 2015, con un puntaje de 1.26. En 2014 había obtenido la quinta posición en este parámetro con un puntaje de 1.54. 
+En el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, el país escaló un puesto, del 43 en 2014 al 42 en 2015.
+En cuanto al Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, República Dominicana cayó hasta el puesto 48 en 2015, frente a la posición 43 obtenida en 2014. Los puntajes del país para el Parámetro III, fueron de 0.89 y 0.71 en 2015 y 2014, respectivamente. 
+Con respecto al Parámetro IV Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, República Dominicana  mantuvo el puesto 12 obtenido el año anterior. Su puntaje dentro de dicho parámetro había sido de 2.12 en 2014 y 2.20 en 2015.
 
-La red eléctrica de esta nación insular es una mezcla de distintas fuentes: el 91% del total de 3GW es aportado por gas natural (690MW), plantas hidroeléctricas (380MW), carbón (314MW), y petróleo y diésel (1,7GW). Las energías limpias representan el restante 9%, con 85MW de eólica y 223MW aportado por pequeñas centrales hidroeléctricas. 
 
-El gobierno se ha fijado la ambiciosa meta de obtener el 10% de la generación a partir de fuentes renovables para 2015 y de alcanzar el 25% en 2020. También se fijó el objetivo de reducir las emisiones de GEI en un 50% por debajo de los niveles de 2010 en 2050. Mirando al futuro, serán necesarios esfuerzos adicionales para lograr las ambiciosas metas que se ha propuesto el país.

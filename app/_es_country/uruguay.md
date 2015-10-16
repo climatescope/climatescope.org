@@ -7,9 +7,16 @@ title: Uruguay
 region: lac
 grid: on
 ---
-Uruguay obtuvo un puntaje de 1,75 y terminó sexto entre los 55 países del Climascopio, siendo la nación más pequeña entre las 10 de mayor puntaje en el estudio. En América Latina se ubica tercero, por debajo sólo de Brasil y Chile.
+Resumen de Puntajes
 
-Tras la crisis energética que sufrió la década pasada, Uruguay ha realizado exitosas subastas inversas por contratos de energía limpia. Estos han dado impulso al desarrollo de proyectos de energías renovables y deberían llevar al país a diversificar sustancialmente su matriz energética y reducir su fuerte dependencia de las centrales hidroeléctricas y de las costosas plantas térmicas. Para fines de 2013, el 49% de los 3,5GW de capacidad instalada de Uruguay provenía de las hidroeléctricas. Desde 2009, el país ha celebrado contratos para obtener 880MW de capacidad eólica y 58MW de proyectos solares, con el fin de incrementar el porcentual de su generación no hídrica.
+Uruguay ocupó el octavo lugar en el Climascopio 2015, dos posiciones por debajo de donde se ubicó en 2014. Su puntaje general en 2015 fue de 1.69, en tanto en 2014 había sido de 1.75. 
 
-Esas licitaciones produjeron un salto en las inversiones. En 2013, Uruguay, con una economía de $56.000m, atrajo inversiones en energías limpias por US$1.300 millones. La mayor parte de esos fondos provino de instituciones multilaterales y de importación-exportación que ven en Uruguay una plaza estable y atractiva.
-Puede que en el futuro no halle fácil mantener los recientes nieles de inversión en energías limpias, simplemente debido a su limitado tamaño. No obstante, se encamina a convertirse en un líder mundial en capacidad eólica instalada como porcentaje de la capacidad total.
+La mejora más significativa de Uruguay tuvo lugar en el Parámetro I Marco Propicio, en el que se desarrolló en la categoría Penetración de Energía Limpia. Sin embargo, dichas mejorías fueron contrarrestadas por un retroceso en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, en que el país no logró igualar su desempeño de 2014 en los indicadores de la Tasa de Crecimiento de las Inversiones en Energía Limpia ni de Inversiones Locales.
+
+En 2015, Uruguay ocupó el primer puesto entre todos los países del Climascopio en el Parámetro I Marco Propicio, con un puntaje de 2.04. En 2014 el país había alcanzado el noveno puesto en dicho parámetro, con un puntaje de 1.43.
+
+Los avances de Uruguay en el Parámetro I Marco Propicio, fueron neutralizados por su caída en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático desde el primer puesto en 2014, al noveno en 2015. El puntaje obtenido por el país en 2015 en el Parámetro II fue de 0.89 frente a los 2.03 puntos obtenidos en 2014.
+
+En el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, el puntaje de Uruguay en 2015 fue de 1.41, elevándolo en seis posiciones respecto del año anterior, y ubicándolo en el puesto 29. Su puntaje en 2014 había sido 1.16.
+
+En cuanto al Parámetro IV Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, Uruguay ocupó el séptimo puesto en 2015 con un puntaje de 2.64 que no difirió significativamente del obtenido en 2014, de 2.65, que lo había llevado a ocupar el octavo puesto.

@@ -7,12 +7,10 @@ title: Zambia
 region: africa
 grid: off
 ---
-Zambia ranked 30th out of 55 in Climatescope 2014 countries, with a score of 1.07. It performed best on Low-Carbon Business and Clean Energy Value Chains Parameter III, and achieved high marks for its distributed energy regulatory framework and energy access policies, both of which are components of Enabling Framework Parameter I.
+Score Summary
 
-There was no investment in the country’s clean energy sector in 2013; however a total of $215m was invested in small hydro schemes through asset financing and corporate finance deals between 2010 and 2011.
-
-Zambia has a more liberalized power sector than many of its negi hbors.
-
-Each of the three main market sectors – generation, transmission and distribution – has more than one player, but it remains dominated by a single public utility.
-
-Zambia has one of the largest water resources in Africa and relies on large hydro for nearly 90% of installed power generation capacity. The country’s off-grid energy sector continues to grow, although the majority of the rural electrification budget is invested in grid extension projects.
+Zambia scored 0.99 in Climatescope 2015, placing it 34th on the list of countries overall, a drop of four places compared with 2014. Its highest ranking was on Greenhouse Gas Management Activities Parameter IV. 
+On Enabling Framework Parameter I, Zambia dropped one place to rank 38th. Areas of strength included the presence of regulations governing the distributed energy sector and energy access policies.
+The country slipped one place to 39th position on Clean Energy Investment and Climate Financing Parameter II, reflecting the absence of any new investment in clean energy. 
+Zambia also fell on Low-Carbon Business & Clean Energy Value Chains Parameter III, losing three places to rank 23rd. A number of distributed energy service providers bolstered its score in this area.
+On Parameter IV, the country was placed 22nd, a relatively strong position that was largely built on its historic carbon offsetting activity relative to total emissions.
