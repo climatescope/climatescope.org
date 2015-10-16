@@ -22,6 +22,12 @@ function chart__price_attractiveness_electricity (element, chartData) {
   var attractiveness_group = svg.append("g")
     .attr("class", "bars-group");
 
+  var global_average_group = svg.append("g")
+    .attr("class", "bars-group");
+
+  var empty_hover_group = svg.append("g")
+    .attr("class", "bars-group");
+
   var x = d3.scale.linear();
 
   var xAxis = d3.svg.axis()
@@ -37,7 +43,7 @@ function chart__price_attractiveness_electricity (element, chartData) {
     .orient("left");
 
   // Append axis.
-  svg.append("g")
+svg.append("g")
     .attr("class", "x axis")
     .append("text")
     .attr("class", "label")
@@ -67,7 +73,14 @@ function chart__price_attractiveness_electricity (element, chartData) {
       x.domain(meta_info.xDomain);
     }
     else {
-      x.domain([0, d3.max(chart_data, function (d) { return d.values[0].value; })]);
+      x.domain([0, d3.max(chart_data, function (d) { 
+        if(d.values[0].global_average > d.values[0].value){
+          return d.values[0].global_average; 
+        }else{
+          return d.values[0].value; 
+        }
+        
+      })]);
     }
 
     y.domain(chart_data.map(function (d) { return d.name; }));
@@ -135,6 +148,12 @@ function chart__price_attractiveness_electricity (element, chartData) {
     var attractiveness_bars = attractiveness_group.selectAll("rect")
       .data(chart_data);
 
+    var global_average_bar = global_average_group.selectAll("rect")
+      .data(chart_data);
+
+    var empty_hover_bar = empty_hover_group.selectAll("rect")
+      .data(chart_data);
+
     background_bars.enter().append("rect");
 
     background_bars.exit().remove();
@@ -155,7 +174,28 @@ function chart__price_attractiveness_electricity (element, chartData) {
       .attr("y", function (d) { return y(d.name); })
       .attr('height', 20);
 
-    attractiveness_bars
+    global_average_bar.enter().append("rect");
+
+    global_average_bar.exit().remove();
+
+    global_average_bar
+      .attr("class", "global_average_bar")
+      .attr("width", 1)
+      .attr("x", function (d) { return x(d.values[0].global_average); })
+      .attr("y", function (d) { return y(d.name); })
+      .attr('height', 20);
+
+    empty_hover_bar.enter().append("rect");
+
+    empty_hover_bar.exit().remove();
+
+    empty_hover_bar
+      .attr("class", "empty-hover-bars")
+      .attr("width", function (d) { return x(x.domain()[1]); })
+      .attr("y", function (d) { return y(d.name); })
+      .attr('height', 20);
+
+    empty_hover_bar
       .on('mouseover', function (d, i) {
         var matrix = this.getScreenCTM()
           .translate(+this.getAttribute("x"), +this.getAttribute("y"));
@@ -163,12 +203,15 @@ function chart__price_attractiveness_electricity (element, chartData) {
         var posX = (window.pageXOffset + matrix.e) + width / 2;
         var posY = (window.pageYOffset + matrix.f) + y.rangeBand() / 2;
 
-        var content = '<p class="price_chart_tooltip">' + '<span class="price">' + '$' + d.values[0].value + '</span>' + ' ' + meta_info['label-x'] + '</p>';
+        var globalAverage = Math.round(d.values[0].global_average * 100) / 100
+
+        var content = '<p class="price_chart_tooltip">' + '<span class="price">' + '$' + d.values[0].value + '</span>' + ' ' + meta_info['label-x'] + 
+        '</br>' + '<span class="global_average_tooltip">' + '<span class="avg">$' + globalAverage + '</span>' + ' Global Average' + '</span>' + '</p>';
 
         chartPopover.setContent(content, 'top price_chart_tooltip').show(posX, posY);
       });
 
-    attractiveness_bars
+    empty_hover_bar
       .on('mouseout', function () { chartPopover.hide(); });
   };
 
