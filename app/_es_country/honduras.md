@@ -7,12 +7,11 @@ title: Honduras
 region: lac
 grid: on
 ---
-Honduras obtuvo el puesto número 25 entre los 55 países en vías de desarrollo analizados por el Climascopio 2014, con un puntaje de 1,15. También se ubicó en la franja media entre sus 25 pares de América Latina y el Caribe, situándose en el undécimo puesto.
+Resumen de Puntajes
 
-Este país de América Central obtiene más de la mitad de su energía eléctrica de plantas que utilizan como base el petróleo y el diésel para la generación. El sector eléctrico se encuentra en condiciones precarias: el servicio estatal es financieramente pobre, lo que se debe en parte al alto nivel de pérdida de energía en sus sectores de transmisión y distribución.
-
-No obstante, en 2013 la energía limpia (con excepción de las grandes centrales hidroeléctricas) representaba un 22% de los 1,8GW de la capacidad total de generación conectada a la red. El país ha introducido numerosos incentivos, incluyendo una prima sobre los precios (con especial énfasis en energía solar) que es mayormente responsable del crecimiento, así como descuentos impositivos.
-
-Desde 2006, un total de US$815 millones han sido invertidos en energía limpia, cifra significativa si se tiene en cuenta que se trata de una economía relativamente reducida, de unos US$19.000 millones. Los bancos de desarrollo están jugando un papel clave, dado el perfil de alto riesgo que tiene el país.
-
-En 2014, Honduras aprobó una nueva ley que apunta a aumentar la participación privada en el sector de la energía eléctrica. Si es eficazmente implementada, debería estimular la confianza entre los promotores privados e inversores y, por lo tanto, fomentar su rápido crecimiento.
+Honduras avanzó 11 posiciones en el Climascopio 2015 con un puntaje general de 1.50, llegando al puesto 14. Las mediciones del país en 2014 habían dado un resultado de 1.15, ubicándolo en el puesto 25.
+En 2015 Honduras se benefició de un vigoroso desempeño en el indicador de la Tasa de Crecimiento de las Inversiones en Energía Limpia, componente del Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático. El país también registró una mejoría pronunciada en el indicador de Inversiones Locales del mismo parámetro.
+En cuanto al Parámetro I Marco Propicio, en 2015 Honduras cedió terreno, con un puntaje de 1,06, lo que lo colocó en el puesto 34. En 2014 había obtenido un puntaje de 1.29 y había ocupado el puesto 20.
+Honduras superó a todos los países del Climascopio en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, con un puntaje de 2.06 en 2015. En cambio, en 2014 había obtenido 0.64 puntos y había ocupado el puesto 22.
+En el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, en 2015 Honduras obtuvo 1.48 puntos, ubicándose en el puesto 27. En 2014 su puntaje había sido 1.42 y ocupaba el puesto 30.
+Con respecto al Parámetro IV Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, en 2015 Honduras volvió a colocarse en el puesto 20 y nuevamente obtuvo un puntaje de 1.56, reiterando los resultados obtenidos el año anterior.

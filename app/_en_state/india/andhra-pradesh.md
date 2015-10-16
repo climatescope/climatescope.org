@@ -7,12 +7,8 @@ title: Andhra Pradesh
 region: asia
 country: in
 ---
-Andhra Pradesh ranked sixth among the 10 Indian states surveyed on Climatescope 2014, with a score of 0.91. It performed best on Parameter III, Low-Carbon Business, as it has manufacturers across the entire biomass and solar value chains, as well as some in the wind sector.
-
-The service sectors make up 59% of the state’s $142bn economy.
-
-In 2013, Andhra Pradesh received $636m in clean energy investments, compared with a total of $2.7bn since 2006. The wind sector attracted the largest share (49%) of this investment, although at 564MW it has marginally less installed capacity than the biomass and waste-to-energy sector with 589MW; however, most of the latter was installed prior to 2006. Total renewable energy capacity stands at 1.5GW.
-
-In 2013, Andhra Pradesh generated an estimated 86TWh, although not all of it was consumed within the state. Coal plants accounted for 82% of this, with renewable energy accounting for just 3% (but 8% of installed capacity). Gas-fired generation has fallen since 2012 owing to shortages. The state’s electricity distribution utilities are reasonably healthy financially, with three out of four attaining ‘B+’ credit ratings.
-
-In July 2014, Andhra Pradesh launched a 500MW solar tender, despite the failure of an earlier 1GW auction due to delays and pricing issues. Wind capacity falls far short of its potential to install 14GW, leaving substantial room for growth. However, owing to political changes and the creation of Telengana as a new state in 2014, the large-scale build-out of renewable energy may be delayed for some time.
+In 2014, the state of Andhra Pradesh was bifurcated to carve out the new state of Telangana. For Climatescope 2015, we have assessed both states as one - Andhra Pradesh - for uniform comparison with the previous year.
+Of the total 20GW power-generating capacity on line in the state, 11GW is represented by coal. Renewables account for 10% (2GW), mostly in the form of wind and biomass. The state's wind potential is largely untapped. With just 912MW commissioned, there is substantial room for new projects. 
+New state and political uncertainties are creating new challenges to project development, however. Some wind farms in Andhra Pradesh have existing power purchase agreements signed with firms located in what is now Telangana and are facing hiccups as charges for wheeling power across the state line have not fully been determined. In an attempt to at least partially compensate for this, the states have raised the limit of accelerated depreciation claims allowed by 15%, which results in larger tax benefits for developers. 
+After the bifurcation, both new states have set very ambitious plans for adding solar capacity to address an existing power deficit. Combined, Andhra Pradesh and Telangana had 243MW on line at year-end 2014, up 350% from 2013 levels. Each state conducted a 500MW auction in 2014 that generated strong responses from developers and delivered some of the lowest priced offers to deliver clean power in the country. Both Telangana and Andhra Pradesh have announced plans for solar auctions for 2015, including Telangana’s 2GW.
+NTPC, India's largest power generator, is seeking to develop 1.75GW of new solar capacity in the new Andhra Pradesh through various schemes. Most of these projects will be built in solar parks developed by the states that offer clear title to land with support infrastructure such as road, water and transmission connectivity. 

@@ -7,12 +7,8 @@ title: West Bengal
 region: asia
 country: in
 ---
-West Bengal ranked ninth among the 10 Indian states included in Climatescope 2014. It scored 0.78 and performed best in Parameter III, Low-Carbon Business, as it is home to some of the oldest solar manufacturers in India.
-
-The services sector comprises two-thirds of the state’s $116bn economy. A total of $378m was invested in its clean energy sector from 2006–12, the last year for which data is available.
-
-Small hydro is the main clean energy sector in West Bengal, making up most of its installed renewable energy capacity. The state has several small-scale biomass plants, but very little wind or solar. Despite its solar manufacturing capacity, it lags behind in deploying solar projects.
-
-In 2012, West Bengal generated an estimated 57TWh, although not all of it was consumed within the state. Coal-fired plants supplied 91% of total electricity generation, while renewables contributed a very slight 1.4% (and represented an equally slight 1.4% of installed capacity). The state’s distribution utility, the West Bengal Electricity Distribution Company, is in good financial and operational health and has an ‘A’ rating issued by the Ministry of Power.
-
-West Bengal has been contemplating large-scale groundmounted solar as well as large rooftop solar installations in some of its major cities such as Kolkata. Coastal and low-lying, the state does not have very good wind resources.
+West Bengal is among India's most populous and coal-rich states. For more than three decades until 2011, it had been governed by a communist government, which appeared to stunt growth of private sector activity in renewables. Still, the state is home to some of India’s oldest solar equipment manufacturers.
+West Bengal has a privately-owned distribution utility serving its capital Kolkata but state-owned utilities predominate elsewhere. State utilities are in good financial health and were rated ‘A’ in 2013 by the Ministry of Power. West Bengal has total power generation capacity of 10GW with coal accounting for 8.6GW. Renewables play a small role in the power matrix at 400MW, or 0.4% with nearly all of that small hydro and biomass. Grid-connected solar capacity is miniscule at roughly 7MW.
+Slow growth in renewable energy capacity can also be attributed to the state’s claim of having a power surplus. West Bengal does not have particularly good wind resources and it has been formulating policies for the growth of rooftop and net-metering based solar. 
+Availability of land and its timely acquisition is also a constraint. In recent times, the government has spoken of using state-owned barren land for utility scale solar projects and disclosed plans for setting up a 250MW project. 
+West Bengal was one of the first to install solar micro-grids in India to bring electricity to the densely forested Sunderbans delta region. The state has an active micro-grid sector especially within the remote tribal areas. Many of these projects are being set up within the national rural electrification program’s decentralized distribution and generation component for remote villages.

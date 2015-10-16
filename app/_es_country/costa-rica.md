@@ -7,8 +7,11 @@ title: Costa Rica
 region: lac
 grid: on
 ---
-Costa Rica se ubicó decimosegundo entre los 55 países evaluados por el Climascopio, con un puntaje de 1,45 y tuvo buen desempeño entre sus pares de América Latina, situándose en el sexto lugar, por encima de economías mucho mayores como Colombia, Argentina y Venezuela. 
+Resumen de Puntajes 
 
-Con la mayor capacidad de generación instalada de América Central –2,7GW—, Costa Rica ha atraído desde 2006 US$1.400 millones en nuevas inversiones de energías limpias no relacionadas con las grandes centrales hidroeléctricas. Esos fondos se tradujeron directamente en nueva capacidad comisionada en el país, con un total de 856MW de plantas de producción de energías renovables en funcionamiento a fines de 2013. Mientras que las pequeñas centrales hidroeléctricas cobran importancia en Costa Rica (junto a una capacidad de 1,2GW de las grandes plantas hidroeléctricas), es la geotérmica la que se espera tenga el mayor crecimiento en los próximos años, ya que hay en la actualidad proyectos en desarrollo que producirán 155MW con ese tipo de energía. 
-
-Mirando al futuro, se espera una mayor diversificación hacia fuentes renovables no relacionadas con las grandes hidroeléctricas, ya que recientes las sequías y los altos precios de la electricidad han obligado al país a buscar tecnologías de generación de electricidad que no dependan del régimen de lluvias.
+Costa Rica cayó del puesto 12 en que se encontraba en 2014 al 15 en el Climascopio 2015. Esta pequeña caída ocurrió a pesar de una ligera mejoría en su puntaje general, de 1.45 a 1.49, dado que otros países registraron progresos más significativos.
+El país centroamericano vio importantes avances en el indicador de Políticas de Energía Limpia correspondiente al Parámetro I.
+En el Parámetro I Marco Propicio, Costa Rica escaló 12 posiciones en 2015 alcanzando el puesto 10. Su puntaje de 2015 en este parámetro fue de 1.52, en tanto en 2014 había sido de 1.25.
+En el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, Costa Rica perdió seis posiciones, cayendo hasta el puesto 14. Los puntajes obtenidos en este parámetro fueron 0.79 en 2015 y 1.05 en 2014.
+En el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, en 2015 Costa Rica obtuvo el puesto 24 con un puntaje de 1.92. En cambio, en 2014 había obtenido el puesto 26 con un puntaje de 1.79.
+Costa Rica obtuvo 2,41 nuevamente en el Parámetro IV Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero. Sin embargo bajó una posición en dicho parámetro, ubicándose en el puesto 11.

@@ -7,10 +7,15 @@ title: Paraguay
 region: lac
 grid: on
 ---
-Paraguay finalizó en el puesto 50 del Climascopio, con 0,59 puntos. Entre los 26 países de América Latina y el Caribe se ubicó vigesimosegundo.
+Resumen de Puntajes
 
-Paraguay, un país fuertemente dependiente de los grandes recursos hidroeléctricos, se vio perjudicado por el hecho de que la metodología del Climascopio sólo tiene en cuenta los recursos hidroeléctricos de hasta 50MW.
+Paraguay obtuvo un puntaje general de 0.49 en el Climascopio 2015 que lo ubicó en el puesto 52 entre todos los países, cayendo  del puesto 50 en que se encontraba en 2014, año en que obtuvo un puntaje final de 0.59.
 
-Se trata de un país mediterráneo recorrido por dos grandes ríos: el Paraguay y el Paraná, que no sólo le dan una salida al Océano Atlántico sino que además representan una inmensa fuente de recursos hidroeléctricos. A pesar de tener sólo siete millones de habitantes, Paraguay cuenta con una capacidad de generación de 8,8GW. En comparación, Perú tiene una población cuatro veces superior pero una capacidad sólo 9% mayor.
+El país demostró un rendimiento inferior en todos los parámetros con excepción del Parámetro IV Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, en el que se mantuvo igual al año anterior. Su mayor descenso fue de cuatro posiciones en el Parámetro I Marco Propicio, en el que disminuyó su desempeño en el indicador Políticas de Energía Limpia.
+En el Parámetro I Marco Propicio, Paraguay obtuvo el puesto 51 con un puntaje de 0.49. En 2014 había ocupado el puesto 47 con un puntaje de 0.67.
 
-Como resultado, Paraguay exporta la mayor parte de la electricidad que genera a sus vecinos Argentina y Brasil. Debido a la generación hidroeléctrica local superavitaria y a los bajos precios de la electricidad (las tarifas al consumidor promedian los US$0,07kWh), desde el punto de vista económico, los recursos renovables no hidroeléctricos no tienen mucho sentido en la actualidad. Podría darse una excepción en la región del Chaco, una zona semiárida y de baja densidad poblacional con acceso limitado a la red de transmisión del país.
+Entretanto en el Parámetro II Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, Paraguay obtuvo un puntaje de 0.26 en 2015, inferior al de 0.35 obtenido en 2014. Asimismo, el puesto que ocupó el país dentro de dicho parámetro fue el 43 en 2015, mientras que en 2014 había sido el 40.
+
+En cuanto al Parámetro III Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, Paraguay bajó una posición, ocupando el puesto 54 en 2015. Su puntaje se mantuvo sin alteración entre 2014 y 2015, en 0.20.
+
+En el Parámetro IV, Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, en 2015 Paraguay igualó su rendimiento de 2014 preservándose en el puesto 25 con un puntaje de 1.26 en ambos años.

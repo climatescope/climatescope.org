@@ -7,10 +7,11 @@ title: Haití
 region: lac
 grid: off
 ---
-Haití obtuvo un puntaje de 0,73, ubicándose en el puesto 45 entre las 55 naciones relevadas por el Climascopio 2014. Entre los 26 países de América Latina y el Caribe, se situó en el vigésimo lugar.
+Resumen de Puntajes
 
-El 77% de la capacidad instalada del país, de 295MW, es aportado por plantas que utilizan petróleo importado. Las empresas locales de servicios eléctricos afrontan numerosos desafíos, incluyendo el suministro intermitente debido a la inadecuada infraestructura y a la falta de un marco regulador que implemente y haga cumplir reglas y estándares de calidad.
-
-Sólo el 28 por ciento de sus 10,3 millones de habitantes tiene acceso a la red, lo que lo pone al final de la tasa de electrificación de América Latina. Como resultado, la mayoría de los haitianos deben utilizar combustibles fósiles como el kerosene y el diésel para alimentar sistemas eléctricos distribuidos. El 72% de la población utiliza el carbón de leña para cocinar. Si bien el país posee un considerable potencial para el desarrollo de energías limpias, cuenta en la actualidad con una sola planta hidroeléctrica (de 54MW) que responde por aproximadamente el 19% de su capacidad de generación, a la que se suman otras pequeñas centrales hidroeléctricas que aportan 7MW.
-
-Desde el terremoto de 2010, la mayor parte de la actividad relacionada con energías limpias en Haití fue auspiciada por organismos multilaterales y organizaciones sin fines de lucro que se propusieron restablecer el sector eléctrico del país. Esto se refleja en su significativo progreso en iniciativas solares no conectadas a la red. En 2014, Haití fue incluido en la metodología “fuera de red” (“off-grid”) del Climascopio, que tiene en cuenta su cadena de valor fuera de la red y que otorga mayores puntajes a los indicadores relacionados con proyectos de esa naturaleza.
+El puntaje general de Haití de 0.64 en el Climascopio 2015 fue algo inferior al de 0.73 obtenido en 2014, pero le resultó suficiente para retener su posición en el puesto 45.
+En 2015, el progreso de Haití chocó con un pobre desempeño en la categoría de Microfinanzas Verdes del Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático. Otro obstáculo fue un puntaje poco favorable en el indicador de Costo Medio de la Deuda, también componente del Parámetro II.
+En cuanto al Parámetro I Marco Propicio, en 2015 Haití volvió a ocupar el puesto 39, tal como en 2014. Sus puntajes para este parámetro fueron de 0.89 y 0.92 en 2015 y 2014, respectivamente.
+En el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, el país cayó del puesto 37 al 45. Su puntaje para el Parámetro II en 2015 fue de 0.24, en tanto que en 2014 había sido de 0.38.
+En el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, en 2015 Haití obtuvo un puntaje de 1.32, situándose en el puesto 32. En 2014, en cambio, sus 1.58 puntos lo habían ubicado en el puesto 28.
+En tanto en el Parámetro IV Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero, en 2015 Haití obtuvo nuevamente el último puesto, repitiendo la posición ocupada en 2014. Su puntaje en ambos años fue de 0.07.

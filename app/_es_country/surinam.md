@@ -7,10 +7,15 @@ title: Surinam
 region: lac
 grid: on
 ---
-Surinam obtuvo el último puesto entre las 55 naciones evaluadas por el Climascopio 2014, con un puntaje de 0,31. Sus mayores debilidades fueron en lo que respecta al Parámetro I, Marco Propicio, y al Parámetro III, Cadenas de Valor de Energía Limpia, obteniendo el penúltimo puesto en ambas categorías. Su única fortaleza fue en el Parámetro II, Inversiones en Energía Limpia, en el que obtuvo el puesto 31, dadas las subvenciones estatales que recibió la energía renovable en 2013.
+Resumen de Puntajes
 
-Una gran parte del PIB total de US$7.100 millones del pequeño país de Sudamérica deriva de industrias de extracción tales como la minería de oro y las perforaciones de petróleo. Estas actividades requieren gran cantidad de energía, que proviene de la termoeléctrica (petróleo y diésel) y de grandes centrales hidroeléctricas, lo que refleja la situación general del país: la capacidad de generación se divide equitativamente entre esas dos fuentes.
+Surinam no logró abandonar el último puesto en el Climascopio que ya había ocupado en 2014, incluso registrando un peor resultado general en 2015, con un puntaje de 0.22 contra 0.31 en 2014.
+La pequeña mejoría que Surinam vio en el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, no pudo compensar el deterioro sufrido en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, en el que sufrió un impacto negativo en el indicador de Préstamos, Donaciones, Programas de Donaciones.
 
-El país tiene un considerable potencial para las energías limpias, dadas las importantes dimensiones de sus reservas de agua y altos niveles de irradiación solar. Pero con las bajas tarifas (en 2013, el promedio era US$0,04KWh), el incentivo para desarrollar proyectos de energías renovables es mínimo.
+En el Parámetro I Marco Propicio, Surinam obtuvo el puesto 54 tanto en 2015 como en 2014 con puntajes de 0.19 y 0.22, respectivamente .
 
-Aun así, Surinam ha dado algunos pequeños pasos: en 2014, se le otorgó financiamiento a la primera planta fotovoltaica del país. Dicha planta producirá 5MW para cubrir las demandas energéticas de una mina de oro (IAMGold Rosebel), y debería ayudar a elevar su puntaje en la próxima edición del Climascopio.
+A su vez, en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, Surinam obtuvo un puntaje de 0.26 en 2015, por debajo del 0.47 obtenido en 2014. Esto lo llevó a ocupar el puesto 41 en 2015 mientras que en 2014 había alcanzado el puesto 31.
+
+En el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, el puntaje de Surinam en 2015 fue de 0.20, igualando al de 2014 , ubicándose en el puesto 53.
+
+En el Parámetro IV Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, Surinam descendió una posición lo que llevó al país a ocupar el puesto 52 en 2015. Su puntaje en 2015 fue de 0.25 en tanto el de 2014 fue de 0.33.

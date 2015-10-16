@@ -7,16 +7,8 @@ title: Punjab
 region: asia
 country: in
 ---
-Punjab ranked seventh among the 10 Indian states surveyed by Climatescope 2014. It scored 0.86 and had its best performance in Parameter IV, GHG Management Activities.
-
-Punjab is known for its fertile lands that generate more than a quarter of its $25.4bn GDP. Land is scarce, making conditions challenging for wind and solar deployment, but with ample feedstock, biomass has become the main clean energy source.
-
-From 2006-2012, Punjab invested a total of $2.2bn in clean energy, while no major project investments were made in 2013.
-
-Biomass and waste-to-energy accounted for nearly all (96%) of 2006–12 clean energy investment, and it makes up 73% of the state’s 4.5GW of clean energy capacity.
-
-In 2013, the Punjab generated an estimated 21TWh, although not all of it was consumed within the state. Coal-fired plants were responsible for 77% of total electricity generation, while renewables contributed a very small portion, just 1.6% of generation and 13% of installed capacity.
-
-Subsidies are distorting power tariffs. From 2005 to 2010, the state provided subsidies equivalent to 22% of the revenue of Punjab’s distribution company. These price distortions had an impact on the financial strength of the company, although it received a relatively healthy ‘B+’ rating issued by the Ministry of Power in 2013.
-
-In 2013, Punjab held auctions for 300MW of solar capacity, although no new capacity has been built. It has invited bids for 300MW of projects based on biomass or agricultural waste, and it does not have any meaningful wind resource.
+Punjab is known for its fertile lands, small-scale manufacturing industry and good infrastructure. Agriculture contributes about a quarter of the state’s GDP and land prices are higher on average than in other states. 
+Located close to the Himalayas, Punjab has several prominent rivers useful in hydro power generation. As of year-end 2014, the state had 4.7GW of coal and 1.1GW of large hydro capacity on line. Non-large hydro renewables represented 10% of total capacity with biomass and waste accounting for the biggest chunk at 71% of that. Other sources of renewables capacity: small hydro and solar. 
+Punjab has recently stepped up efforts to add more solar capacity locally. It held a tender offering 300MW in power contracts in 2013 and a 250MW tender at the end of 2014. Scarcity of land for solar and high land prices have led to higher bids from solar developers than in other states, however. 
+By year-end 2014, Punjab had roughly 60MW of solar on line and was expecting to see that ramp up sharply with capacity to surpass 200MW by the end of 2015. The state is also keen on solar rooftop generation and recently made 'net metering' available to system owners, allowing them essentially to be compensated for excess power they push back into the grid. 
+Punjab is not very windy and has seen no major wind projects developed yet. Its distribution utility has a favourable ‘B+’ rating and was recently recognized for the significant reduction in its transmission and distribution losses over the past seven years. The utility is also upgrading its distribution network by increasing the share of information technology used in network management and monitoring. The scheme is incentivized and financially supported by the federal government which is helping the utility in reducing losses, theft and offering better quality of services.
