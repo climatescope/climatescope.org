@@ -1,4 +1,8 @@
 (function() {
+  // Setup parse and its models.
+  Parse.initialize("UU4YIQ2yfOv3fjzEboDuvTWI73IlQ1BAugR04mR9", "HJdnmGWPrEwGs4PG8kohU172V2CIZcm3UpQCNTl8");
+
+  var KnowYourUserResponse = Parse.Object.extend("KnowYourUserResponse");
 
   var modal = $('[data-modal="know-your-user"]');
 
@@ -42,41 +46,32 @@
     }
 
     if (!errored) {
-      // Submit.
-      // Map values with google forms:
-      var formData = {
-        'entry.709291448': usefulness,
-        'entry.1261682105': usage,
-        'entry.1368725634': organization
-      };
+      var knowYourUserResponse = new KnowYourUserResponse();
+      knowYourUserResponse.save({
+        'usefulness': usefulness,
+        'usage': usage,
+        'organization': organization
+      }, {
+        success: function(knowYourUserResponse) {
+          // Store cookie.
+          createCookie('CS_kown_your_user__submit', 'complete', null, CS.domain);
 
-      $.ajax({
-        type: "POST",
-        url: 'https://docs.google.com/forms/d/1ir4mUopmro3Z0qftpTdA6zfHU4BWNo3B2BlDyJMXi9s/formResponse',
-        data: formData,
-        dataType: "xml"
-      })
-      .always(function() {
-        console.log('Error but data was written.');
+          // Hide errors
+          getError('[name="usefulness"]').hide();
+          getError('[name="usage"]').hide();
+          getError('[name="organization"]').hide();
 
-        // Store cookie.
-        createCookie('CS_kown_your_user__submit', 'complete', null, CS.domain);
+          // Hide modal.
+          modal.removeClass('revealed');
 
-        // Hide errors
-        getError('[name="usefulness"]').hide();
-        getError('[name="usage"]').hide();
-        getError('[name="organization"]').hide();
-
-        // Hide modal.
-        modal.removeClass('revealed');
-
-        // Open url.
-
-        // TODO: Uncomment
-        // window.location = modal.find('[data-download="direct"]').attr('href');
+          // Open url.
+          window.location = modal.find('[data-download="direct"]').attr('href');
+        },
+        error: function(knowYourUserResponse, error) {
+          alert('An error occurred while saving your response.');
+        }
       });
     }
-
   });
 
   var getError = function(field) {
