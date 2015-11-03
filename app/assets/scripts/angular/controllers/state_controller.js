@@ -118,7 +118,7 @@
     this.data = {};
     
     this.getIndicatorValue = function(indicator) {
-      var value = indicator.value + indicator.unit;
+      var value = formatThousands(indicator.value) + indicator.unit;
       return value;
     };
 

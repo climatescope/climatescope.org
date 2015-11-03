@@ -206,7 +206,7 @@ function chart__installed_capacity(element, chartData) {
               // Correct object from values array.
               var value_doc = doc.values[doc_index];
               content += '<dt class="param-' + doc.id + '">' + doc.name + '</dt>';
-              content += '<dd>' + value_doc.value + '</dd>';
+              content += '<dd>' + formatThousands(value_doc.value) + '</dd>';
             });
 
             content += '</dl>';
