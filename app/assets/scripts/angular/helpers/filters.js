@@ -1,10 +1,16 @@
 (function(){
-  
+
   var mathFilters = angular.module('mathFilters', []);
 
   mathFilters.filter('round', function() {
     return function(input, precision) {
       return round(input, precision);
+    };
+  });
+
+  mathFilters.filter('thousands', function() {
+    return function(input, precision) {
+      return formatThousands(input, precision);
     };
   });
 
@@ -24,6 +30,8 @@
     };
   });
 
+  ///////////////////////////////////////////////////////////////
+
   var i18nFilters = angular.module('i18nFilters', []);
 
   i18nFilters.filter('translate', function() {
@@ -31,5 +39,5 @@
       return CS.t(input);
     };
   });
-  
+
 })();

@@ -58,3 +58,10 @@ function debounce(func, wait, immediate) {
 function round(value, decimals) {
   return isNaN(value) || value === null ? null : Number(Math.round(value+'e'+decimals)+'e-'+decimals);
 }
+
+function formatThousands(number, decimals) {
+  if (decimals === undefined) {
+    decimals = 2;
+  }
+  return d3.format(',')(round(number, decimals));
+}

@@ -105,7 +105,7 @@ function chart__carbon_offset(element, chartData) {
 
     // Set total.
     donut_legend.text('Total');
-    donut_legend_value.text(total);
+    donut_legend_value.text(formatThousands(total));
 
     // Set chart size.
     chart_container.select("svg")
@@ -130,14 +130,14 @@ function chart__carbon_offset(element, chartData) {
       .attr("d", arc)
       .on("mouseover", function(d) {
         donut_legend.text(d.data.name);
-        donut_legend_value.text(d.value);
+        donut_legend_value.text(formatThousands(d.value));
         d3.select(this).transition()
           .duration(100)
           .attr("d", arc_over);
       })
       .on("mouseout", function(d) {
         donut_legend.text('Total');
-        donut_legend_value.text(calcTotal());
+        donut_legend_value.text(formatThousands(calcTotal()));
         d3.select(this).transition()
          .duration(100)
          .attr("d", arc);
