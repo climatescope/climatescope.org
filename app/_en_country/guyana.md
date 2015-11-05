@@ -7,8 +7,6 @@ title: Guyana
 region: lac
 grid: on
 ---
-Overview
-
 Guyana’s demand for electricity has grown 18% in five years. That growth, plus the volatility of fossil fuel prices, highlights the country’s need for a renewable energy policy framework. At this time, its renewables policy is limited to tax incentives.
 Guyana’s electricity market is controlled by the state-owned Guyana Power and Light (GPL), a vertically integrated company responsible for electricity distribution, transmission and part of generation. The country’s market also includes independent power producers (IPP), which must sell their electricity to GPL. 
 
@@ -23,7 +21,7 @@ Approximately 82% of the country’s 0.8m population is connected to the grid, w
 
 Since 2012, the government of Guyana exempts machinery and equipment that generates or utilizes power from renewable sources from the value-added tax (VAT) and import duties. This is the only renewable energy incentive currently in force
 
-Score Summary 
+#### Score Summary 
 
 Guyana’s 0.54 overall score in Climatescope 2015 is a slight devaluation from its 2014 score of 0.60. The change left Guyana in 51st place overall in 2015, down from 49th place in 2014.
 In 2015, Guyana registered improvement on the Growth Rate of Clean Energy Investments Indicator of Clean Energy Investment and Climate Financing Parameter II. However, its progress on that indicator was neutralized by diminished performance on the Loans, Grants and Grant Programs Indicator of Parameter II.

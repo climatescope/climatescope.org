@@ -7,8 +7,6 @@ title: Senegal
 region: africa
 grid: off
 ---
-Overview
-
 Senegal, which in late 2014 discovered offshore oil reserves, is first and foremost a country with abundant solar, wind and bioenergy potential. The government has recognized this potential for some time: the national utility first applied renewable energy to rural electrification in the late 1970s.
 
 However, the lack of a clear legal framework, weak implementation capacity within the government and at the national power company, and disappointing economic growth, have all held back the development of the power sector: its capacity is 857 MW for 14m inhabitants. In turn, the IMF estimates that power shortages and losses from transmission lines cost Senegal up to 1% of GDP growth per year.
@@ -27,7 +25,7 @@ The first concessions have notably attracted France’s EDF and Morocco’s ONE.
 
 Key government agencies in Senegal’s energy sector include the Ministry of Energy, the Commission of Energy Sector Regulation, the National Agency for Rural Electrification, SENELEC and the Inter-ministerial Committee on Renewable Energy, which aims to ensure coherence in integrating renewable energy into the national grid. 
 
-Score Summary
+#### Score Summary
 
 Senegal scored 0.86 in Climatescope 2015, placing it 36th on the list of countries overall, an increase of one place compared with 2014. Its highest score was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
 On Enabling Framework Parameter I, Senegal dropped one place to rank 31st. Its score drew support from the country’s energy access policies, the relatively high prices of diesel and kerosene and growing demand for power.

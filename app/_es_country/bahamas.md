@@ -7,8 +7,6 @@ title: Bahamas
 region: lac
 grid: on
 ---
-Perfil
-
 La dependencia de Bahamas de la generación eléctrica a partir de petróleo y diésel importados, junto a sus elevadas tarifas de electricidad, resaltan la necesidad de desarrollar energías renovables para mejorar la seguridad energética y reducir los costos del combustible. Sin embargo, es indispensable una mayor acción por parte de las políticas locales para dar lugar a cualquier búsqueda de expansión local de energía limpia en este país insular.
 
 En la actualidad, el mercado eléctrico del país está controlado por la empresa estatal Bahamas Electricity Corporation (BEC), que posee el 76% de los 575MW de capacidad instalada total, y controla la generación, transmisión y distribución en la mayoría de las islas. La capacidad instalada restante está en manos de una empresa privada, Grand Bahama Power Company (GBPC), que controla la generación, transmisión y distribución en la isla de Gran Bahama. La electricidad se distribuye a nivel nacional a través de 16 redes aisladas.

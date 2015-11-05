@@ -7,16 +7,14 @@ title: Hebei
 region: asia
 country: cn
 ---
-Hebei ranked eighth among the 15 Chinese provinces surveyed in Climatescope 2014, with a score of 1.17. It performed best on Greenhouse Gas Management Activities Parameter IV, reflecting corporate awareness of emission reduction policies, energy efficiency initiatives and clean energy capacity building.
+Located in the north of China and adjacent to Beijing, Hebei in 2014 had a nominal GDP of $474bn, contributing about 4.3% to China's overall economy. 
 
-Located in northern China, Hebei is a hub for heavy industry. It is home to the world’s largest PV module manufacturer, Yingli Solar, and has China’s second-largest volume of installed wind capacity, after Inner Mongolia. The province surrounds Beijing and experiences similar air quality issues, and so is increasing its renewables initiatives. In 2013, it had a GDP of $467.4bn
+By year-end 2014, Hebei had total installed power generating capacity of 55.5GW with 77.1% (42.8GW) represented by thermal power. On a generation basis, thermal accounted for a larger share at 92.4% of the total with 238.2TWh produced in 2014.
+Thanks to extensive coal burn, Hebei has been accused of being a major contributor to air pollution in neighboring Beijing and Tianjin municipalities. In response, the National Development and Reform Commission (NDRC) in September 2014 set a coal usage reduction target for Hebei by 2017. Over the next two years, Hebei should see expanding renewable energy generation, particularly as more wind and solar come on line to replace retiring coal units.
 
-Hebei sourced 92.7% of its electricity needs (a total of 231.7TWh) from coal in 2013, and the remaining 7% from renewables. Wind accounted for 77.6% of this; however, more than 70% of the province’s wind capacity experiences curtailment rates of 20% or more.
+As of year-end 2014, Hebei had 9.6GW of installed wind, up 1.7GW from 2013. Wind generation totalled 16.4TWh in 2014, up 8.3% from the year prior.
+Despite rapid wind growth over the past five years, wind penetration remains relatively negligible at 6.8% in Hebei, largely due to inefficient grid integration. Hebei’s wind curtailment rate was 20% in 2014, well above the 8% national average. In response, the Hebei local grid corporation plans three new 500kV cross-province transmission lines to improve wind connectivity and power exports. The new lines are intended to connect and dispatch up to 1.8GW of power, with 900MW of the transmission capacity specifically intended for wind.
 
-Improved transmission lines should reduce this from 2015 onwards.
+To promote solar PV expansion, the Hebei provincial government offers a benefit of CNY 0.1-0.3/kWh (USD 0.016-0.048/kWh) in addition to the national subsidy. Despite these supports, solar build-out to date has been limited by land constraints and complex approval procedures. 
 
-In total, Hebei has 8.9GW of installed renewable energy capacity, representing 17.9% of the province’s total.
-
-In 2013, Hebei received $1.97bn in clean energy investment, out of a cumulative $16.6bn since 2006. During this period, the largest share went to the wind sector.
-
-In late 2013, Hebei launched a subsidy scheme for distributed PV projects, in addition to the nationwide feed-in tarif scheme. China’s revised goal is to install 5GW of new distributed PV in 2014; so far, it has installed 1GW, with a substantial contribution from Hebei.
+Hebei’s 12th Five-Year Plan for Greenhouse Gas Emission Management was released in February 2014 and seeks to cut the province’s carbon intensity 18% by the end of 2015 compared to 2011 levels. However, Hebei is not one of the seven emission trading pilots initiated by the NDRC. 

@@ -7,8 +7,6 @@ title: Sierra Leone
 region: africa
 grid: off
 ---
-Overview
-
 Sierra Leone was one of Africa’s fastest growing economies since its civil war ended in 2002, but was slowed by the recent Ebola outbreak. Sierra Leone remains one of the poorest countries, with Gross Domestic Product of $868 per capita in 2014. The country’s electrification rate, estimated at 9%, is one of the lowest in the world. Average electricity tariffs are high ($0.27 per kWh), but were considerably higher in 2008 ($0.41 per kWh) before the rehabilitation of the Bumbuna hydro power plant.
 
 Much of Sierra Leone’s infrastructure, including its power network, was destroyed during the war and is being rebuilt slowly. At the end of 2014, total installed capacity on the national grid around the capital Freetown was 98MW, comprising small hydro (56MW), thermal (27MW) and biomass (15MW). However, hydro generation decreases drastically during the three-month dry season. Captive thermal generation by industry – predominantly owned by mining companies – is estimated at around 90MW. Transmission and distribution infrastructure is in poor condition resulting in power losses of up to 40%.
@@ -22,7 +20,7 @@ Despite a lack of specific policy incentives, Sierra Leone has been relatively s
 In May 2014, the 32MW Addax biomass plant, running on bagasse feedstock and adding 15MW to the national grid, was commissioned. More recently, the company is understood to have faced financial and technical difficulties. In 2014, the government announced it had awarded a contract to build a 6MW PV plant in Freetown. The project is expected to cost $18m and to be funded with 50% debt. More solar projects are expected to be announced over 2015. 
 A transmission project to interconnect the West African Power Pool countries of Sierra Leone, Guinea, Liberia and Ivory Coast was approved in 2013 and is expected to be completed by 2017.
 
-Score Summary
+#### Score Summary
 
 Sierra Leone scored 0.79 in Climatescope 2015, placing it 40th on the list of countries overall. The country’s highest score was on Clean Energy Investment and Climate Financing Parameter II. 
 On Enabling Framework Parameter I, Sierra Leone gained five places to rank 28th. Its score was supported by an increase in the volume of installed clean energy capacity, relatively high diesel and kerosene prices and growing demand for power.

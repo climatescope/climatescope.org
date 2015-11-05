@@ -7,8 +7,6 @@ title: Dominican Republic
 region: lac
 grid: on
 ---
-Overview
-
 Dominican Republic has set an ambitious target to get 10% of electricity generation from renewable sources by 2015, raising it to 25% by 2020. As of 2014, only 10.5% of a total 15TWh was coming from clean energy generation. 
 The Organismo Coordinador del Sistema Eléctrico Nacional Interconectado (OC-SENI) was created in 1998 to coordinate the electricity generation, transmission and distribution companies. The Ministry of Energy and Mines was created at the end of 2014 and is now in charge of developing energy policies, while the Superintendencia de Electridicad (SIE) regulates and oversees Dominican Republic’s electricity sector. The state-owned Empresa de Transmisión Eléctrica Dominicana (ETED) is the sole transmission company in the country and it is responsible for operating the national system. 
 Although generation is open to private players, there is still a strong presence of state-owned company. The distribution segment is divided into three public companies: EDEESTE, EDENORTE and EDESUR. All the state-owned companies are managed by the Corporación Dominicana de Empresas Eléctricas Estatales (CDEEE).  
@@ -18,7 +16,7 @@ In May 2007, following the guidelines of PEN, the government established an ince
 From 2009 to 2012 (latest figure available), the government provided renewable energy incentives of $21m for people to install renewable energy systems in their homes or businesses.
 Renewable energy generators have dispatch priority and open access to transmission and distribution. Dominican Republic also has a net metering program, which allows retail electricity consumers who have renewable self-generation facilities to interconnect with the distribution company, deliver surplus generation to the grid and obtain a billing credit. 
 
-Score Summary
+#### Score Summary
 
 Dominican Republic’s 1.02 overall score in Climatescope 2015 placed it 32nd among all countries. In 2014, the country was ranked 24th overall, with a score of 1.16.
 Dominican Republic’s de-rating from 2014 to 2015 is explained mostly by a 19-position decline in its ranking on Enabling Framework Parameter I. It received lower scores in 2015 on the  Parameter I indicators Clean Energy Policies, Clean Energy Installed Capacity and Growth Rate of Electricity Generation.
