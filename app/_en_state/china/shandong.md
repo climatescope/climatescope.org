@@ -7,16 +7,15 @@ title: Shandong
 region: asia
 country: cn
 ---
-Shandong ranked ninth among the 15 Chinese provinces surveyed by Climatescope 2014. It scored 1.14, performing best in Low-Carbon Business, Parameter III, thanks to high scores for its number of value chains and high level of investment (on the back of support from the provincial government).
+Located on China's east coast, Shandong had a nominal GDP of $957bn in 2014, contributing about 9% to the overall economy. Shandong is one of the major industrial manufacturing hubs in China with a heavy reliance on coal-fired generation. However, in recent years the province has seen rapid growth in renewables thanks to a combination of surging electricity demand and growing government support.
 
-Shandong is a coastal province in eastern China and the country’s biggest industrial producer. In 2013, its nominal GDP was $903.1bn, ranking it third nationally.
+By year-end 2014, Shandong had an installed capacity of 79.8GW, of which 90.2% (72GW) was coal. Wind and large hydro represented just under 8% with solar accounting for the rest at 400MW. In terms of actual generation, nearly all (97%) of Shandong's 373.8TWh came from burning coal. Zero-carbon power penetration has to date been very limited in the local energy mix. 
 
-The province’s clean energy sector has grown significantly owing to abundant natural resources, increasing power demand and government support. It is among the country’s top five wind and biomass power producers.
+Shandong's wind resources are not the best in China.  To compensate, the provincial government has since 2010 offered a CNY0.06/kWh ($0.01/kWh) subsidy to wind-generated power on top of the national benchmark power price of CNY 0.61/kWh ($0.10/kWh). This premium has had its intended impact and wind capacity has grown at an annual rate of 137% per year over the past five years. 
 
-Shandong received $1.9bn in clean energy investments in 2013, compared with a cumulative total of $14.7bn between 2006 and 2013. Wind took the largest share of 2006-13 investment, and represented 72% of new capacity added in 2013. Overall, it accounts for 5.7GW out of total renewable capacity of 6.8GW.
+Unlike in provinces such as Heilongjiang, Jilin and Inner Mongolia, Shandong's wind projects have rarely experienced curtailment due to grid constraints.  This is due to high electricity demand from local industry. 
+Local industrial demand is also driving solar growth more directly. More than 60% of Shandong's PV capacity is distributed and often small projects serve industrial consumer directly through bilateral power purchase agreements. 
 
-In 2013, Shandong sourced 96% of its total 310TWh electricity needs from coal. Renewable power is therefore a very small part of the province’s energy mix, corresponding to just 3.4% of generation and 9% of installed capacity.
+In 2011, the Shandong government released its Guidelines to Encourage Solar Industry Development which set explicit goals of 600MW of utility-scale solar and 1.2GW of small-scale projects by 2015. Given that those targets that have yet to be achieved, Shandong is likely to see further growth in 2015. 
 
-The provincial government undertook further development of renewable energy in 2013 to lower its reliance on thermal power and address air pollution concerns. In addition to national feedin tariffs, wind developers in Shandong can apply for a subsidy of CNY0.06/kWh, while distributed PV projects are eligible for a subsidy of CNY0.2/kWh.
-
-Shandong is a leader in distributed PV - it already makes up more than 60% of the province’s solar capacity - and is likely to grow further due to national policy support.
+To rein in local power sector CO2 emissions, the Shandong government in 2011 released its 12th Five-Year Plan for Energy Conservation. It set targets to cut CO2 intensity in the power sector to 0.85 tons of coal equivalent per kWh by 2015. That would mark 17% and 35% drops compared to 2010 and 2005 levels, respectively.

@@ -7,7 +7,6 @@ title: Argentina
 region: lac
 grid: on
 ---
-Overview
 
 In 2014, non-large hydro renewables accounted for 2.6TWh of renewable generation, roughly 2% of the 130TWh produced. Argentina’s matrix is dominated by fossil-based thermoelectric plants, which corresponded to 64% of total power produced in 2014. Large hydro provided 30% and nuclear contributed to 4% of the electricity generated.
 
@@ -17,7 +16,7 @@ In 2009, Argentina contracted renewable capacity through its first and only fede
 In the meantime, some provinces have also taken action. Santa Fe province opened a tender to contract a 1MW PV project in November 2014, and San Luis province approved a provincial law adding additional provincial tax breaks. 
 Argentina requires that conventional diesel be blended with 10% biodiesel and gasoline be blended with 10% ethanol. Previously, Argentina exported most of its biodiesel production. In 2011, it exported 2bn liters out of the 2.9bn produced, mostly to European Union (EU) countries. In August 2012, the EU initiated an anti-dumping investigation on Argentine and Indonesian biodiesel, which resulted in a 10.6% anti-dumping duty implemented in May 2013. In order to support local production, Argentina increased its biodiesel blending mandate, increased the price and reduced its export tax.
 
-Score Summary
+#### Score Summary
 
 Argentina repeated its overall Climatescope ranking of 20th place in 2015, although its score increased slightly from 2014’s 1.24 to a 1.39 in 2015. Argentina’s notable improvement on Enabling Framework Parameter I was blunted by a decline on Clean Energy Investment and Climate Financing Parameter II. 
 On Parameter I, Argentina moved up eight places in 2015 to 20th position. Its 2015 and 2014 Parameter I scores were 1.32 and 1.17, respectively. On Parameter II, Argentina ranked 47th in 2015, down two places from 2014. Its Parameter II scores were 0.21 in 2015 and 0.30 in 2014. 

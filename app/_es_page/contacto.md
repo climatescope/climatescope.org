@@ -6,8 +6,10 @@ id: contact
 ---
 Si tiene consultas o comentarios relacionados al Climascopio, o desea contribuir con información o feedback por favor comuníquese con:
 
-**Multilateral Investment Fund**  
+__Michael Hofmann__  
+Multilateral Investment Fund  
 [climatescope@iadb.org](mailto:climatescope@iadb.org)
 
-**Bloomberg New Energy Finance**  
+__Lilian Clea Rodriques Alves__  
+Bloomberg New Energy Finance  
 [climatescope@bloomberg.net](mailto:climatescope@bloomberg.net)

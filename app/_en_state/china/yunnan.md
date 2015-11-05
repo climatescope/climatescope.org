@@ -7,14 +7,17 @@ title: Yunnan
 region: asia
 country: cn
 ---
-Yunnan ranked seventh among the 15 Chinese provinces with a score of 1.20 on Climatescope 2014, performing best in the Greenhouse Gas Management Parameter IV. The province performed the best in carbon offsets and corporate awareness.
+Yunnan, in southern China, in 2014 contributed $206bn, or 2%, to China’s nominal GDP, up 6.6% from 2013.  Yunnan is less industrialized than other Chinese provinces covered in Climatescope, although it has the country’s second-largest hydro power fleet.  Hydro has been one of Yunnan’s economic pillars for decades, allowing it to sell electricity to neighboring provinces. The surplus of hydro power also has been a major impediment to wind and solar penetration. 
 
-Yunnan is located in southwest China. Its 2013 GDP was $193.6bn. As part of national measures to develop economies in central and western China, Yunnan also enjoys lower business income taxes than those in developed regions. Small hydropower is the main source of renewable power in Yunnan.
+At the end of 2014, Yunnan had a total installed power capacity of 68GW, of which 74.6% (50.7 GW) was hydro, 20.9% (14.2GW) was coal and 4.1% (2.8 GW) was wind. In terms of generation, hydro power dominates with 82% of the total 212TWh in 2014. Wind and solar power combined accounted for less than 3%. The development of wind and solar in Yunnan have been slow despite higher-than-average incentives for those technologies.
 
-In 2013, Yunnan received $1.98bn in clean energy investments, out of a cumulative $9.84bn from 2006 -2013. The wind sector received the largest amount of clean energy investments in Yunnan. Yunnan hosts most of China’s small hydropower projects, with an efficient capacity factor of 43.4%. Yunnan’s installed renewable energy capacity is 11.75GW.
+In 2014, 35% of Yunnan’s hydro power (62TWh) was sold to Guangdong, an industrialized demand center. That means more than 11% of Guangdong’s 2014 total power consumption was met with Yunnan generation. We expect this energy transfer will remain and expand between the two provinces despite Guangdong’s efforts at local generation development. The main reasons are: 1) additional interprovincial transmission networks started operations in 2014 and 2) a lower retail price established in early 2015 by the National Development and Reform Commission.
 
-The commissioning of the second UHV transmission line from Yunnan to Guangdong supports more energy transfers derived from Yunnan’s vast clean energy sources, to the eastern coastal provinces of China with high power demands. Between the provinces of Yunnan and Sichuan, the commissioned 13.9 GW Xiluodu Dam hydropower station in 2013 also serves to meet the power demands of the region. Wind capacity in Yunnan has almost tripled, due to increased investments in this sector from 2010.
+The 2014 transmission additions consist of two parallel ±800 kV ultra-high-voltage transmission lines extending from the west of Yunnan to central Guangdong. Those lines doubled the existing capacity and lifted power exports from Yunnan to Guangdong by 15% from 2013. 
 
-In 2013, Yunnan sourced 17.5% of its electricity needs from small hydropower alone, out of a total of 174.8TWh. Renewables add a substantial mix to Yunnan’s power generation, providing 19.4% of power for 2013 (and 24.5% of installed capacity).
+As a result of the NRDC-ordered price cuts, Guangdong’s industrial and commercial users are paying CNY 0.45/kWh for hydroelectricity from Yunnan. That is CNY 0.01/kWh lower than the price of power imported from Sichuan and CNY 0.22/kWh lower than Guangdong’s benchmark retail price.  
 
-Large hydropower in Yunnan still contributes to the majority of power generation, with 53.4% for 2013.
+Yunnan is experiencing declining utilization of coal-fired and wind assets. Yunnan coal-fired plants are approaching their minimum output limit, which threatens overall grid stability. The policy of directing hydro power to export markets can help avoid further cuts in coal-fired power plants, which would address the threat to grid stability and improve Yunnan’s coal-generation economics. 
+
+Wind power’s decline is directly price-driven. The tariff for in-province wind power, CNY 0.34/kWh, is more expensive than the on-grid price for in-province hydro. 
+To promote electric vehicles, the Yunnan government in 2012 released a “New Energy Vehicles Promotion and Industrial Development Action Plan” for Kunming, the provincial capital.  The plan sets a target of increasing Kunming’s new energy vehicles to 3,400 units by 2015 from just 123 at the end of 2014, with 3,700 charging stations built. It is too soon to report target attainment because 2015 data is not yet available.

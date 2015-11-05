@@ -7,14 +7,17 @@ title: Inner Mongolia
 region: asia
 country: cn
 ---
-The Inner Mongolia Autonomous Region ranked fourth among the 15 Chinese provinces surveyed on Climatescope 2014, with a score of 1.32. Its best performance was on Greenhouse Gas Management Activities Parameter IV thanks to its CDM projects and corporate awareness of emission reduction policies, energy efficiency initiatives and clean energy capacity building.
+Inner Mongolia (IMAR), located in the north, is China's third largest province spanning about 12% of the country’s total land area. In 2014, its nominal GDP was $286bn, accounting for 2.6% of China’s overall economy. 
 
-Inner Mongolia is the third largest subdivision in China and in 2013 its GDP was $278bn. Although rich in coal resources, it also uses its vast wind resources to generate power. Any excess is distributed to northern and north-eastern China.
+As of year-end 2014, IMAR had an aggregate installed power generating capacity of 92.1GW, of which 72.8% (67.1GW) was thermal (mainly coal), 22.5% (20.7GW) wind and 3.1% (2.9GW) solar. In terms of generation, coal-fired power dominated with 88% or 386TWh in 2014. Wind power was the second largest source, producing nearly 10% of the province's power.
 
-In 2013, Inner Mongolia received $5.2bn in clean energy investments, out of a cumulative $40.3bn since 2006. The wind sector received the largest share, with solar picking up the pace from 2012. The province has 19.2GW of renewable energy capacity, which represents 24% of total installed capacity.
+IMAR has abundant wind resources and the farm build-out has been very significant over the past decade. Three of the five first wind concession project auctions in China were held in IMAR from 2003 to 2007. This was followed by rapid expansion with up to 2GW of wind added each year between 2008 and 2012.
 
-In 2013, Inner Mongolia generated a total of 334.7TWh, of which 90% was sourced from coal and 8.9% from renewables.
+Wind development in IMAR benefits from the province's open spaces and inviting construction environment. This historically has meant typically shorter construction cycles compared to elsewhere in the country. By year-end 2014, IMAR was home to nearly as much wind generating capacity as in the entire United Kingdom. 
 
-Wind accounted for 95.6% of the latter; indeed, the province has more than 20% of China’s total wind capacity.
+Development hit an unexpected speed bump in 2011, however, after the National Energy Administration (NEA) began delaying permits for further build in light of major grid congestion. At one point in 2011, production from 30% of the province's projects was curtailed due to lack of available transmission capacity. 
 
-In 2013, wind power equipment worked an average of 2,076 hours per year, while the curtailment rate of 18% was higher than the national average of 11%. With planned ultra-high voltage transmission projects underway, it will be able to distribute more excess wind from 2015. In addition, over 1GW of gridconnected PV projects were commissioned in 2013.
+To better align local transmission and wind power development, the NEA banned wind project starts.  Still, a significant number of projects were already under development at the time of the rule and were ultimately allowed to advance, albeit at a slower pace. In all, these projects should total 5GW and are expected to get built over the next five years.
+
+Recognizing that the long-term issue is less about over development of wind and more about lack of transmission, the NEA has permitted the build of a cross-province high voltage transmission network. As a result, the NEA now expects the grid congestion issue in IMAR to be alleviated sometime during the implementation of the 13th Five Year Plan, between 2016 and 2020. The first 54GW of transmission capacity carried by the ultra-high-voltage-cables from the heart of IMAR wind bases to the load center of Beijing-Tianjin is due on line in the next few years. That change could soon result in wind power being exported in bulk to consumers outside of IMAR. 
+IMAR’s local 12th Five-Year Plan for Energy Conservation and Emission Reduction released in 2012 guidelines for greenhouse activities management. By 2015, IMAR’s energy intensity contribution to China's overall economy is targeted to be cut by 15% compared to a 2010 baseline level. 

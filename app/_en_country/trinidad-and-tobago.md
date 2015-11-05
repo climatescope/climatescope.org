@@ -7,8 +7,6 @@ title: Trinidad and Tobago
 region: lac
 grid: on
 ---
-Overview
-
 Like many Caribbean countries, Trinidad & Tobago relies on fossil fuels for electricity generation. But unlike many of its neighbors, Trinidad & Tobago is a natural gas producer and exporter. The islands are among the leading natural gas producers in Latin America and the Caribbean, and the oil and gas industry is one of the biggest contributors to the country’s $27.5bn economy.
 	
 Trinidad & Tobago’s electricity market is controlled by the state-owned Trinidad & Tobago Electricity Commission (T&TEC), the sole transmission and distribution company in the country. 
@@ -22,7 +20,7 @@ On January 2011 the MEEA published its Renewable Energy Policy Framework, which 
 
 On 1 October 2014, the government launched the Sustainable and Renewable Energy Business Incubator. Aside from that, the only renewable energy policy currently in place in Trinidad & Tobago is a “wear and tear” tax allowance of 150% of the expenditure for plant, machinery, parts and materials for use in the manufacture of solar water heaters, the acquisition of solar water heaters, the acquisition of wind turbines and supporting equipment or the acquisition of solar photovoltaic systems and supporting equipment.
 
-Score Summary
+#### Score Summary
 
 Trinidad & Tobago’s 0.57 overall score in Climatescope 2015 placed it 48th among all countries, up from 51st position in 2014, when it scored 0.54. 
 Trinidad & Tobago’s gain was largely tied to improvement on both the Financial Institutions in Clean Energy Indicator and the Value Chains by Clean Energy Sector Indicator of Low-Carbon Business & Clean Energy Value Chains Parameter III.

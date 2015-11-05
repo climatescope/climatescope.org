@@ -7,16 +7,11 @@ title: Xizang
 region: asia
 country: cn
 ---
-The Tibet Autonomous Region ranked last out of 15 Chinese provinces surveyed for Climatescope 2014. It scored 0.95, performing best on Enabling Framework Parameter I. It was judged to be strong on policy and regulation due to its clean energy policies and rural electrification through renewable energy.
+Tibet is located in the west of China, bordering the Indian subcontinent. Its 2014 nominal GDP was $14.8bn, with a very high growth rate of 11.2% from 2013. As part of a China Western Development Program, it benefits from a lower business income tax rate (15%) than other, further developed provinces (25%). Tibet has also piloted China’s early rural electrification programs employing renewable energy since the 1980s.
 
-Tibet is located in the west of China, bordering the Indian subcontinent. Its 2013 GDP was $13.3bn, with a very high growth rate of 16.1%. As part of a national program to develop economies in central and western China, it enjoys lower business income tax rates than those in more developed regions.
+As of year-end 2014, Tibet had an aggregate power installed capacity of only 1.4GW, of which 60.4% (879MW) was large hydro, 28.1% (400MW) coal, and 9% (130MW) solar. By comparison, Tibet’s wind capacity totals just 10MW. In 2014, Tibet generated 76.3% of its 2.5TWh electricity from hydro thanks to its abundant local resources. 
 
-It is not a manufacturing center and its clean energy value chain and financial institutions are limited. However, it did host some of China’s early rural electrification programs using renewable energy.
+Tibet has the best solar resources in China, according to Energy Institute of Tibet. A typical PV plant in Tibet can produce power 1,800 hours per year – 432 hours above the national average.  
+To exploit this natural resource, since 2012 Tibetan PV projects have been offered higher feed-in tariffs of CNY 1.0/KWh ($0.16/KWh) than projects in other provinces.  The higher FiT remains valid through 2015. However, a limited existing grid infrastructure has hindered a serious spurt in large-scale PV project development.
 
-In 2013, Tibet received $56.6m in clean energy investments, a small fraction of the total $1.2bn since 2006. Solar was the only sector to receive meaningful investment.
-
-The region has the best solar resources in China, with an average of 3,000 hours of insolation per year. PV projects have received higher feed-in tariffs than those in other provinces since 2012 and will continue to do so until 2015. However, its remote location and grid limitations mean that developers are cautious about taking on large-scale projects.
-
-Tibet has China’s only geothermal plant, and it installed its first grid-connected wind project in 2013. The province’s total installed renewable energy capacity is 291MW.
-
-In 2013, it sourced 49.5% of its total 2.29TWh electricity needs from large hydropower. Renewable energy forms a significant part of the region’s power mix, providing 28.6% of generation and representing 28.1% of installed capacity.
+Tibet’s government has set stated its intention to see 2.6GW of hydro installed by 2015 and over 100GW added by 2025 for both domestic consumption and cross-provincial power trades. To accommodate power from gigawatt-scale hydro plants outside of Tibet, the local grid company has applied for licenses to build six extra-high voltage cross-provincial transmission lines. Bundled with hydro power, wind and solar are able to serve the power demands in central and southern China through those transmission lines. According to Tibet’s 12th Five-year Plan for general economic and social development, the cumulative installed solar PV capacity will reach 160MW by 2015, indicating a 100MW increase from 2014.

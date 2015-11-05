@@ -7,8 +7,6 @@ title: South Africa
 region: africa
 grid: on
 ---
-Overview
-
 South Africa's power sector continues to be dominated by an aging coal-fired power plant fleet that accounts for 85% of the energy mix. Their reliability has become a major issue: the national utility Eskom has maintenance backlogs, which means it can only run around two-thirds of its installed capacity. As a result, rolling black-outs plague the system. Dependence on fossil fuels is starting to change, however, with 1.3GW of renewable capacity added under the flagship Renewable Energy Independent Power Producer Programme (REIPPP).
 
 In 2010, South Africa released its Integrated Resource Plan which outlines the country’s energy build-out strategy to 2030. Under the plan the country seeks to increase its power capacity from 43GW to 89.5GW, with renewables making up as much as 20% of the mix. Wind and solar PV make up the largest portions of the renewables mix, receiving 9.2GW and 8.4GW, respectively. 
@@ -38,7 +36,7 @@ A carbon tax, which is expected to come into force in 2016, is perhaps one of th
 
 South Africa offers other incentives including grants-for-equity in large-scale manufacturers, debt and equity financing for green initiatives and tax incentives for manufacturers and developers of large-scale projects. Since the launch of the REIPPP and manufacturing incentives, the country has seen its clean energy manufacturing sector flourish. In the solar sector the country now has a number of module and inverter production facilities, and blade and tower manufacturers are active within the wind sector.
 
-Score Summary
+#### Score Summary
 
 South Africa scored 1.91 in Climatescope 2015, ranking it 4th on the list of countries overall, one place lower than in 2014. Its highest finish was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
 On Enabling Framework Parameter I, South Africa climbed to 6th place among all nations in 2015, compared with 36th in 2014. This jump reflected strong growth in the amount of installed clean energy generating capacity. 

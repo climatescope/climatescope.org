@@ -7,16 +7,13 @@ title: Jiangsu
 region: asia
 country: cn
 ---
-Jiangsu ranked fifth out of 15 Chinese provinces analysed by Climatescope 2014. It scored 1.25, performing best in Greenhouse Gas Management Parameter IV. More specifically, the province’s highest score was for corporate awareness of GHG management, and it has one of the highest emissions reduction targets in China: an 18% reduction on 2010 levels by 2015.
+Located on China's eastern seaboard, Jiangsu in 2014 had a nominal GDP of $1,049bn and is the country’s second largest provincial economy contributing 10% to China’s overall GDP. 
 
-Jiangsu is located on the eastern coast of mainland China. An urban and affluent province, its 2013 GDP was $962bn. Jiangsu received $3.3bn in clean energy investments in 2013, out of a total of $12.1bn from 2006-13. Solar (478MW) represented the largest share (51%) of 2006-13 investments, though wind has a greater installed capacity (2.4GW). Total renewable energy capacity is 3.6GW.
+As of year-end 2014, Jiangsu had an installed power generation capacity of 87GW, 80% of which was coal-fired. Clean energy (inclusive of large hydro) accounted for just under 8%. In terms of generation, coal-fired power dominated with nearly 85%, wind power accounted for 1.3% while solar power was less than a half percent. 
 
-Jiangsu is one of the most proactive of China’s populous coastal provinces in promoting renewable energy, in particular solar as it is home to a number of the world’s largest solar manufacturers.
+Due to strong coastal breezes, Jiangsu has been a focal point for offshore wind development in China. In September 2010, the province hosted the first round of national concession bids for offshore project development. Total capacity won was 2GW and was divided into four projects located along the Jiangsu coastline. 
 
-It is also home to the majority of China’s offshore wind projects.
+Actual construction of these projects has been delayed since, however, mainly due to haggling between the developers who won in the auctions and the NEA over the delivery price of the electricity. Complicating matters, in June 2014, the NEA released a new nationwide offshore wind benchmark price that was 15% higher than the price at which the first Jiangsu projects bid back in 2010. While there has been no official announcement confirming that these projects may now qualify to sell their power at this new higher price, developers are reportedly adjusting the siting of their projects to fit the new national benchmarking requirements. 
 
-In 2013, Sinohydro Group installed a 50MW intertidal project, the only offshore wind built that year. However, three further projects exceeding a combined 1GW were approved in 2013.
-
-In 2013, the provincial government announced subsidies on top of national support for distributed solar power. Clean energy development in Jiangsu is likely to continue, particularly distributed PV solar and offshore wind projects.
-
-In 2013, Jiangsu sourced 86% of its electricity needs from coal, out of a total of 415.8TWh. Renewables represented only 1.9% of generation in 2013 (and 4.8% of installed capacity).
+Despite these challenges, 516MW of offshore wind had been installed in Jiangsu as of year-end 2014 accounting for 70% of China’s total offshore wind capacity. Jiangsu also has a healthy pipeline of future offshore wind projects totaling 1GW expected to be built in the next five years. 
+In addition to offshore wind, Jiangsu has built a robust solar PV supply chain over the past decade. The local government provides additional subsidies over the national solar PV feed-in tariffs launched in 2013 to promote local distributed PV projects. 

@@ -7,14 +7,11 @@ title: Hubei
 region: asia
 country: cn
 ---
-Hubei ranked 14th among the 15 Chinese provinces surveyed by Climatescope 2014, with a score of 1.00. It performed best on Greenhouse Gas Management Parameter IV, reflecting corporate awareness of emission reduction policies, energy efficiency initiatives and clean energy capacity building, as well as its CDM projects.
+Located in central China, Hubei in 2014 had a nominal GDP of $441bn in 2014, contributing about 4% to China’s overall economy. Hubei is one China’s most industrialized provinces and industrial activity in 2014 accounted for 47% of its local economy, 5% above the national average of 42%.
 
-Located in central China, Hubei is highly-industrialized with a GDP of $407bn in 2013. The province relies predominantly on large hydropower and coal for power generation, about half of which is distributed to the power-hungry south and east of China.
+As of year-end 2014, Hubei had a total installed power generating capacity of 62.1 GW, of which 58.4% (36.3GW) was accounted for by hydro, 40.2% (25GW) thermal and 1.2% (770MW) wind. Hubei installed 90MW of PV in 2014 and has a healthy project pipeline with up to 500MW expected to be built in 2015. In terms of generation, thermal (mostly coal) and large hydro projects combined to meet over 99% of local power demand in 2014. 
 
-Hubei generated a total of 122.5TWh in 2013, of which 67% was sourced from coal and 8.5% from renewables. While most of this (73.5%) was small hydropower, wind capacity is on the increase, growing by more than 200% between 2010 and 2013.
+Given the Hubei government target of 1,300MW additional wind and 500MW more solar PV by 2020, new and more aggressive local incentives are expected soon. However, local natural resources are somewhat limited. Hubei’s province-wide average annual wind speed of just 5m/second is the lowest among all China’s provinces (6m/second is typically needed to rotate a utility-scale turbine). To compensate, the local government provides a subsidy on top of what is offered by the federal government. This benefit is set at roughly 10% the current national feed-in tariff to allow Hubei wind farms to earn the same as average Chinese projects. 
 
-The province is targeting 2GW of wind capacity by 2015, as per its provincial 12th five-year energy development plan. In all, it has 3.9GW of renewable energy capacity, representing 6.7% of total installed capacity.
-
-In 2013, Hubei received $690.6m in clean energy investment, and a cumulative $3.6bn since 2006. The wind sector received the largest amount during this period.
-
-As one of seven provinces chosen to pilot an emissions trading program in 2013, Hubei launched what is now China’s secondbiggest carbon market in early April 2014. The program aims to decrease carbon intensity, and prepare for the launch of a national trading system as early as 2016.
+The outlook for solar is somewhat brighter over the next five years, given relatively stronger local conditions and demand from industrial players. 
+Hubei was one of seven provinces where carbon emissions trading pilots were initiated in China in 2013 by April 2014 had become the country’s second-biggest carbon market. The Hubei government has stated its interest in in joining a national emission trading market planned for 2016-17.

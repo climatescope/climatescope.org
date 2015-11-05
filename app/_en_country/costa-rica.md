@@ -7,8 +7,6 @@ title: Costa Rica
 region: lac
 grid: on
 ---
-Overview
-
 Costa Rica has committed itself to becoming the world's first truly carbon-neutral economy by 2021, with renewable energy playing an important role in that goal. The country aims to have a 100% renewable energy (including large hydro) matrix by 2030. Already, large hydro is the main source of generation in the country, accounting for 44% of the 10.2TWh generated in 2014.  
 Costa Rica's electricity market is controlled by state-owned Instituto Costarricense de Electricidad (ICE), a vertically integrated utility also involved in telecommunications. The Costa Rican market includes private players, in the form of cooperatives involved with generation and distribution in parts of the country and independent power producers selling electricity to ICE. 
 Costa Rica is part of the Central American Regional Market (Mercado Eléctrico Regional, MER), which interconnects seven countries in the region via the Central American Electrical System (SIEPAC). The MER became fully operational in 2013. Due to severe droughts since the first half of 2013, Costa Rica has relied on the regional market to help meet its domestic electricity needs. In 2014, Costa Rica imported 251GWh from the MER. 
@@ -17,7 +15,7 @@ In 2014, Costa Rica's matrix had 2.8GW of installed generating capacity. Large h
 To become carbon neutral by 2021, Costa Rica has developed a voluntary GHG emissions registry and a "C-Neutral" certificate scheme for entities that offset their emissions. It has also put in place a voluntary trading scheme in which reforestation credits can be sold to organizations wanting to offset emissions.
 Costa Rica also offers import, value added and income tax breaks on select renewable energy materials and equipment. In addition, ICE periodically holds tenders to contract new clean energy capacity. A five-year net metering pilot program was in place in Costa Rica until February 2015. The project was cancelled when the capacity limit of 10MW was achieved, but consumers that had already joined the program will remain connected for 15 years. In March 2015, ARESEP, Costa Rica’s regulatory utility agency, was analyzing the net metering regulation and may announce a further policy update soon. The Costa Rican Environmental and Energy Ministry is promoting the design and implementation of net metering regulation for small power producers connected to the distribution grid.
 
-Score Summary
+#### Score Summary
 
 Costa Rica’s overall rank in Climatescope 2015 fell to 15th from the 12th-place level of 2014. Its small regression came despite a slight increase in overall score from 1.45 to 1.49, as other countries registered more substantial improvements.
 The Central American nation saw notable improvement on the Clean Energy Policies Indicator of Parameter I.
