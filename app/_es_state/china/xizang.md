@@ -7,5 +7,5 @@ title: Xizang
 region: asia
 country: cn
 ---
--
-This is a Chinese state
+
+Consulte la versión en inglés para una descripción detallada del desempeño.
