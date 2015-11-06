@@ -7,5 +7,5 @@ title: Punjab
 region: asia
 country: in
 ---
--
-This is a Indian state
+
+Consulte la versión en inglés para una descripción detallada del desempeño.

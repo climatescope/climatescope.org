@@ -4,7 +4,7 @@
       <th class="th-rank"><a href="" title="{{ t['Sort by topic rank'][language] }}" ng-click="countryTable.setSortExpression('data[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].overall_ranking')]">{{ t['Topic rank'][language] }}</a></th>
       <th class="th-country"><a href="" title="{{ t['Sort by country'][language] }}" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">{{ t['Country'][language] }}</a></th>
       <th class="th-score"><a href="" title="{{ t['Sort by topic score'][language] }}" ng-click="countryTable.setSortExpression('data[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('data[0].value')]">{{ t['Topic score'][language] }}</a></th>
-      <th>Trend (i18n)</th>
+      <th>{{ t['Trend'][language] }}</th>
       <th class="th-graph">0.0 - 5.0 <span class="avg">{{ t['Average'][language] }}: <strong>%% countryTable.scoreAvg | round:2 %%</strong></span></th>
       <th class="th-grid"><a href="" title="{{ t['Sort by grid'][language] }}" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">{{ t['Grid'][language] }}</a></th>
     </tr>
@@ -38,7 +38,7 @@
             <th class="th-rank"><span class="visually-hidden">{{ t['Parameter rank'][language] }}</span></th>
             <th class="th-country"><span class="visually-hidden">{{ t['Country'][language] }}</span></th>
             <th class="th-score"><span class="visually-hidden">{{ t['Score'][language] }}</span></th>
-            <th>Trend (i18n)</th>
+            <th>{{ t['Trend'][language] }}</th>
             <th class="th-graph"><span class="visually-hidden">0.0 - 5.0</span></th>
             <th class="th-grid">&nbsp;</th>
           </tr>

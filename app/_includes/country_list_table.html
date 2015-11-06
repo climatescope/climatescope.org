@@ -12,7 +12,7 @@
       <th class="th-rank"><a href="" title="{{ t['Sort by global rank'][language] }}" ng-click="countryTable.setSortExpression('score[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('score[0].overall_ranking')]">{{ t['Global rank'][language] }}</a></th>
       <th class="th-country"><a href="" title="{{ t['Sort by country'][language] }}" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">{{ t['Country'][language] }}</a></th>
       <th class="th-score"><a href="" title="{{ t['Sort by global score'][language] }}" ng-click="countryTable.setSortExpression('score[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('score[0].value')]">{{ t['Global score'][language] }}</a></th>
-      <th>Trend (i18n)</th>
+      <th>{{ t['Trend'][language] }}</th>
       <th class="th-graph"><span class="visually-hidden">{{ t['Topics'][language] }}:</span> 0.0 - 5.0</th>
       <th class="th-grid"><a href="" title="{{ t['Sort by grid'][language] }}" ng-click="countryTable.setSortExpression('grid')" class="sort" ng-class="[countryTable.checkSortClasses('grid')]">{{ t['Grid'][language] }}</a></th>
     </tr>
