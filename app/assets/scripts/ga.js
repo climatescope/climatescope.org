@@ -7,25 +7,3 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-56170738-1', 'auto');
 ga('send', 'pageview');
 /* jshint ignore:end */
-
-// Event tracking.
-$(document).ready(function() {
-  // Track downloads.
-  // $('.data-download').click(function(e) {
-  //   $(this).attr('target', '_blank');
-    
-  //   var url = $(this).attr('href');
-    
-  //   if (url == '#') {
-  //     e.preventDefault();
-  //     return;
-  //   }
-    
-  //   // Extract the filename from string.
-  //   var regExp = new RegExp('\/([a-z0-9-.]+)$');
-  //   var filename = url.match(regExp)[1];
-    
-  //   var label = filename + ' - ' + CS.lang.toUpperCase();
-  //   ga('send', 'event', 'Data', 'Download', label);
-  // });
-});

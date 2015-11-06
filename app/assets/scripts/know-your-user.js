@@ -8,6 +8,7 @@
 
   // Close the modal before opening the file.
   modal.find('[data-download="direct"]').click(function() {
+    trackGA($(this).attr('href'), false);
     modal.removeClass('revealed');
   });
 
@@ -64,8 +65,13 @@
           // Hide modal.
           modal.removeClass('revealed');
 
+          var url = modal.find('[data-download="direct"]').attr('href');
+
+          // Track GA.
+          trackGA(url, true);
+
           // Open url.
-          window.location = modal.find('[data-download="direct"]').attr('href');
+          window.location = url;
         },
         error: function(knowYourUserResponse, error) {
           alert('An error occurred while saving your response.');
@@ -80,14 +86,16 @@
 
   // Add modal action to every data download button.
   $('.data-download').click(function(e) {
+    var url = $(this).attr('href');
     // Do show modal if user already filled the survey.
     if (readCookie('CS_kown_your_user__submit') == 'complete') {
+      if (url != '#') {
+        trackGA(url, true);
+      }
       // TODO: Uncomment
-      //return true;
+      return true;
     }
-
     e.preventDefault();
-    var url = $(this).attr('href');
     
     if (url == '#') {
       return;
@@ -98,7 +106,17 @@
       .attr('title', $(this).attr('title'));
 
     modal.addClass('revealed');
-
   });
 
+  function trackGA (url, surveyCompleted) {
+    var msg = surveyCompleted ? 'Download with Survey' : 'Download without Survey';
+
+    // Extract the filename from string.
+    var regExp = new RegExp('\/([a-z0-9-.]+)$');
+    var filename = url.match(regExp)[1];
+
+    var label = filename + ' - ' + CS.lang.toUpperCase();
+    //ga('send', 'event', 'Data', msg, label);
+    console.log ('send', 'event', 'Data', msg, label);
+  }
 })();
