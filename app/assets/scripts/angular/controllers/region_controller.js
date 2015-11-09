@@ -20,6 +20,27 @@
     });
   }]);
 
+  app.controller('DescriptionController', [function() {
+    var fakeScope = {};
+    // We only want to get a single method out of this.
+    setupCommonParamDetailTableMethods(fakeScope);
+    this.toggleExpandable = fakeScope.toggleExpandable;
+
+    // Note: This is not the angular way of doing things.
+    // However moving everything to a directive would prove to be to great
+    // of an effort.
+    this.checkExpandable = function(target) {
+      var $target = $(target);
+      var $targetInner = $('.expandable-wrapper', $target);
+      var height = $targetInner.height();
+      var max = $target.css('max-height').replace('px', '');
+      if (height <= max) {
+        $target.addClass('revealed');
+        $('.prose-copy-actions .bttn').remove();
+      }
+    };
+  }]);
+
   app.controller('StatsController', ['$http', function($http) {
     var _self = this;
     // Data.
