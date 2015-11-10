@@ -1,23 +1,46 @@
-// SELECTS
+/* Most of the options are set in the settings file. */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+input[type="file"],
+textarea,
+select {
+  display: block;
+}
 
-.sllt {
-  background: #fff;
-  border-radius: $global-radius;
-  border: 1px solid tint($primary-color, 90%);
-  cursor: pointer;
-  &.disabled, &[disabled] {
-    cursor: not-allowed;
-    @include opacity(0.6);
-    box-shadow: none;
+.form-control {
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  label {
+    display: block;
+  }
+
+  .error {
+    display: none;
+    color: $alert-color;
+    padding: 0.5rem;
+  }
+
+  .form-options-set {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 }
-
-.sllt-m {
-  height: 2rem;
-  line-height: 2rem;
-  padding: 0 0.75rem;
-}
-
 
 // SWITCH
 

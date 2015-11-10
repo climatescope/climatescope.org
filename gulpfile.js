@@ -117,6 +117,7 @@ gulp.task('dependencies', function(done) {
 gulp.task('compress:main', function() {
   // main.min.js
   var task = gulp.src([
+      'app/assets/scripts/vendor/parse-1.6.7.min.js',
       'app/assets/scripts/*.js',
       'app/assets/scripts/angular/**/*.js',
       'app/assets/vendor/noUiSlider/jquery.nouislider.min.js',

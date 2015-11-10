@@ -1,0 +1,48 @@
+<section class="modal" data-modal="know-your-user">
+  <div class="modal__inner">
+    <header class="modal__header">
+      <h1 class="modal__title">Data survey</h1>
+      <a class="close" title="Close" data-modal-dismiss><span>Close</span></a>
+    </header>
+    <div class="modal__body">
+
+      <form name="know-your-user">
+        <p class="form-description">We want to provide the best content. Please help us improve our site by answering a few questions.</p>
+
+        <div class="form-control">
+          <label class="form-label">How helpful is this site?</label>
+          <ul class="form-options-set">
+            <li class="radio"><label><input type="radio" name="usefulness" value="very-helpful"/> Very Helpful</label></li>
+            <li class="radio"><label><input type="radio" name="usefulness" value="somewhat-helpful"/> Somewhat Helpful</label></li>
+            <li class="radio"><label><input type="radio" name="usefulness" value="not-helpful"/> Not Helpful</label></li>
+          </ul>
+          <small class="error">Please select one option.</small>
+        </div>
+
+        <div class="form-control">
+          <label class="form-label">How would you describe yourself?</label>
+          <ul class="form-options-set">
+            <li class="radio"><label><input type="radio" name="usage" value="policymaker"/> Policymaker</label></li>
+            <li class="radio"><label><input type="radio" name="usage" value="interest-clean-energy"/> Interested in clean energy</label></li>
+            <li class="radio"><label><input type="radio" name="usage" value="entrepreneur"/> Entrepreneur</label></li>
+            <li class="radio"><label><input type="radio" name="usage" value="advisor-consultant"/> Advisor/Consultant</label></li>
+            <li class="radio"><label><input type="radio" name="usage" value="investor"/> Investor</label></li>
+            <li class="radio"><label><input type="radio" name="usage" value="financier"/> Financier</label></li>
+            <li class="radio"><label><input type="radio" name="usage" value="researcher"/> Researcher</label></li>
+            <li class="radio"><label><input type="radio" name="usage" value="other"/> Other</label></li>
+          </ul>
+          <small class="error">Please select one option.</small>
+        </div>
+
+        <div class="form-control">
+          <label class="form-label" for="organization">Organization</label>
+          <input type="text" name="organization" id="organization"/>
+          <small class="error">Please fill in the organization</small>
+        </div>
+
+        <button type="submit" class="bttn bttn-success download">Submit & Download</button>
+        <p><a href="#" title="" target="_blank" data-download="direct">No thanks, I just want the data</a></p>
+      </form>
+    </div>
+  </div>
+</section>
