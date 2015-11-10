@@ -20,8 +20,7 @@ En 2013, se lanzó la segunda edición del programa del esquema de primas median
 
 Los desarrolladores de energía renovable también pueden solicitar la exención de aranceles de importación para equipos de energía limpia y una exención de cinco años en el impuesto a las ganancias. En lo que respecta al transporte, Ecuador posee un mandato de mezcla de combustibles del 5% de biodiésel en el diésel convencional desde 2013.
 
-
-Resumen de Puntajes
+#### Resumen de Puntajes
 
 El puntaje general de 1.03 obtenido por Ecuador en 2015 lo ubicó en el puesto 31 entre todos los países, trepando dos posiciones respecto de su posición en 2014. El puntaje general obtenido por Ecuador en 2014 había sido de 0.96.
 El progreso respecto del año anterior se debió a su desempeño notable en los indicadores Electrificación Rural de Energía Limpia y Tasa de Crecimiento de la Demanda de Energía, correspondientes al Parámetro I. También progresó en los indicadores del Parámetro III concernientes a Instituciones Financieras en Relación a la Energía Limpia y Cadenas de Valor de Energía Limpia por Sector.

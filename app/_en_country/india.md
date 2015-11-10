@@ -32,18 +32,22 @@ Wind has traditionally been the flagship sector in India’s renewable energy ba
 
 In 2015, some states are poised to raise wind feed-in tariffs offered for new projects and this is likely to boost installations. However the 60GW by 2022 target outlined by the Modi government remains ambitious. A National Wind Mission is currently in the works and is intended to accelerate progress toward the long-term goal.
 
-Regarding the smaller clean energy sectors ¬of biomass and small hydro, a variety of federal programs are either in place or in the works. Biomass and bagasse-based cogeneration are the main sources of bio power in the country. Growth in this sector depends on the availability of fuel and its supply chain; hence this sector is concentrated around agricultural locations.
+Regarding the smaller clean energy sectors of biomass and small hydro, a variety of federal programs are either in place or in the works. Biomass and bagasse-based cogeneration are the main sources of bio power in the country. Growth in this sector depends on the availability of fuel and its supply chain; hence this sector is concentrated around agricultural locations.
 India today classifies projects less than 25MW as small hydro. The federal government is currently working on a National Small Hydro Mission to accelerate growth in this sector.
 
 Finally, India has an ongoing National Mission on Enhanced Energy Efficiency that focuses on various initiatives such as demand side energy management including labelling of appliances based on their efficiency. This has also led to the implementation of an innovative industrial energy efficiency initiative that will result into trading of so-called energy saving certificates. 
 
 #### Score Summary
 
-India scored 1.809 in Climatescope 2015, placing it 5th on the list of countries overall.  The country’s ranking fell one place on the list from 2014, largely due to decline of its score on Clean Energy Investment Parameter II in general and on Green Micro Finance Indicator, in particular.
-On Enabling Framework Parameter I, India scored 1.514 thanks to a particularly good performance on Growth Rate of Power Demand Indicator.  In fact, it had the second highest score on Parameter I among all nations in APAC.
-On Clean Energy Investment and Climate Financing Parameter II, the country scored 0.66, down from 0.845 in 2014.
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country repeated its 2014 score of 4.099 (ranking fifth in both years globally) thanks to a well-developed value chain.
-On Greenhouse Gas Management Activities Parameter IV, India scored 2.602, down from its 2.682 in 2014, because of a decline in its GHG Country Registry Indicator score.
+India scored 1.81 in Climatescope 2015, placing it 5th on the list of countries overall.  The country’s ranking fell one place on the list from 2014, largely due to decline of its score on Clean Energy Investment Parameter II in general and on Green Micro Finance Indicator, in particular.
+
+On Enabling Framework Parameter I, India scored 1.51 thanks to a particularly good performance on Growth Rate of Power Demand Indicator.  In fact, it had the second highest score on Parameter I among all nations in APAC.
+
+On Clean Energy Investment and Climate Financing Parameter II, the country scored 0.66, down from 0.85 in 2014.
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country repeated its 2014 score of 4.1 (ranking fifth in both years globally) thanks to a well-developed value chain.
+
+On Greenhouse Gas Management Activities Parameter IV, India scored 2.60, down from its 2.68 in 2014, because of a decline in its GHG Country Registry Indicator score.
 
 #### Score Summary - Indian states
 
@@ -53,12 +57,13 @@ Tamil Nadu took the top ranking in 2015, displacing last year’s leader, Karnat
 Uttar Pradesh climbed three places, from 10th to seventh rank.
 
 In Madhya Pradesh and Uttar Pradesh, the overall installed clean energy capacity base is still low; their scoring gains came on a relative surge in new projects, investments and allocations.
-
-States that lost rank this year are Rajasthan, Gujarat, Andhra Pradesh and Punjab; each of which fell by two places. 
+Other states that lost rank this year are Rajasthan, Gujarat, Andhra Pradesh and Punjab; each of which fell by two places. 
 Independent of rankings, the numerical scores of all states except Karnataka increased from 2014 to 2015. 
 
 Tamil Nadu’s overall first-place ranking is attributable to its top score on clean energy installed capacity and its well-developed value chain. While its rate of new installations has declined, Tamil Nadu boasts a mature wind sector and has the most installed wind capacity in the country.
+
 Karnataka had high scores on power sector structure, carbon offsets historical activity and value chains.
 Madhya Pradesh scored the highest among Indian states on growth rate of clean energy investments. It also had the second highest score on growth rate of installed capacity and growth rate of electricity generation. 
 Uttar Pradesh scored highest on the growth rate of electricity generation indicator. It also had the second highest score on growth rate of clean energy investments. 
+
 Maharashtra delivered the highest indicator score on growth rate of power demand and scored in the upper reaches on clean energy value chain indicators.

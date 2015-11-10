@@ -18,5 +18,12 @@ Bolivia has a low electrification rate when compared to other Latin America coun
 
 #### Score Summary
 
-Bolivia scored 1.04 in Climatescope 2015, 29th among countries overall. It gained seven places from 2014’s overall country rankings by advancing from seventh to second place on Clean Energy Investment and Climate Financing Parameter II, in which it performed especially well on the Growth Rate of Clean Energy Investments Indicator. 
-On Enabling Framework Parameter I, Bolivia ranked 48th, unchanged from 2014, with a score of 0.61. It registered a particularly good performance on the Clean Energy Rural Electrification Indicator. On Parameter II, Bolivia rated second overall with a score of 1.73, up from 1.10 in 2014, when it finished seventh. On Low-Carbon Business & Clean Energy Value Chains Parameter III, Bolivia ranked 50th in 2015 with a score of 0.64, down three positions from 2014. On Greenhouse Gas Management Activities Parameter IV, Bolivia’s 2015 ranking of 27th was four spots below 2014’s, with scores of 1.21 in 2015 and 1.33 the previous year.
+Bolivia scored 1.04 in Climatescope 2015, 29th among countries overall. It gained seven places from 2014’s overall country rankings by advancing from seventh to second place on Clean Energy Investment and Climate Financing Parameter II, in which it performed especially well on the Growth Rate of Clean Energy Investments indicator. 
+
+On Enabling Framework Parameter I, Bolivia ranked 48th, unchanged from 2014, with a score of 0.61. It registered a particularly good performance on the Clean Energy Rural Electrification indicator. 
+
+On Parameter II, Bolivia rated second overall with a score of 1.73, up from 1.10 in 2014, when it finished seventh. 
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, Bolivia ranked 51st in 2015 with a score of 0.64, down three positions from 2014. 
+
+On Greenhouse Gas Management Activities Parameter IV, Bolivia’s 2015 ranking of 27th was four spots below 2014’s, with scores of 1.21 in 2015 and 1.33 the previous year.

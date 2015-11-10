@@ -20,7 +20,7 @@ Un año más tarde, el Plan Estratégico Nacional 2012–2017 creó un marco par
 
 En 2013 se llevó a cabo la primera licitación en el país, que apuntaba a contratar 75MW de energía eléctrica, de los cuales 60MW estaban destinados a licitantes de todo tipo de fuentes, mientras que 15MW estaban reservados exclusivamente para las energías solar y eólica. En junio de 2014 la PUC recibió 22 presentaciones de ofertas, de las que 20 fueron aprobadas para continuar hacia la siguiente etapa. Entre ellas había proyectos hidroeléctricos, de biomasa, eólicos y solares, así como propuestas de fuentes fósiles. Hasta marzo de 2015 los ganadores no habían sido anunciados.
 
-Resumen de Puntajes 
+#### Resumen de Puntajes 
 
 Belice bajó seis puestos hasta la posición 38 en el puntaje general del Climascopio 2015, con un puntaje general de 0.81. En 2014, el puntaje de Belice había sido de 0.98.
 El posicionamiento general del país se vio afectado debido a la menor actividad en el indicador de Préstamos, Donaciones, Programas de Donaciones del Parámetro II.

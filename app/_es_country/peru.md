@@ -21,7 +21,8 @@ En un primer momento, Perú luchó por alcanzar su meta de mezcla de biocombusti
 
 El gobierno de Perú ha postulado su Contribución Prevista y Determinada a nivel Nacional (INDC) en vistas a las negociaciones climáticas que se llevarán a cabo en París. Dichas contribuciones incluyen a las energías renovables y un incremento en el énfasis puesto en la energía solar.
 
-Resumen de Puntajes
+
+#### Resumen de Puntajes
 
 Perú obtuvo un puntaje general de 1.31 en el Climascopio 2015, lo que lo coloca en el puesto 16 entre todos los países, descendiendo de la posición 11 en que se encontraba en 2014, año en que logró un puntaje de 1.50.
 El declive interanual de Perú se basa, entre otros motivos, en el empobrecimiento de los resultados del indicador Políticas de Energía Limpia que forma parte del Parámetro I Marco Propicio. También sufrió una pequeña rebaja en el indicador que analiza las Inversiones en Energía Limpia como parte del Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático.
