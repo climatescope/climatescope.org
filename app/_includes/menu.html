@@ -49,6 +49,11 @@
       </li>
       <li>
         {% assign col_name = site.collections['en_page'].i18n[language] %}
+        {% assign pg = site[col_name] | where:"id","summary" | first %}
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['More about the executive summary'][language] }}">{{ t['Summary'][language] }}</a>
+      </li>
+      <li>
+        {% assign col_name = site.collections['en_page'].i18n[language] %}
         {% assign pg = site[col_name] | where:"id","methodology" | first %}
         <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['More about the methodology'][language] }}">{{ t['Methodology'][language] }}</a>
       </li>
