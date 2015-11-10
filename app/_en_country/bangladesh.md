@@ -24,6 +24,14 @@ In May 2014, BPDB signed a deal for the development of a 60MW wind farm in Cox�
 In 2010, the country developed a Power System Master Plan for 2030 with cooperation from Japan International Cooperation Agency and Tokyo Electric Power Company. The plan set out the following priorities: 1. Develop domestic energy sources to ensure at least 50% share. This includes development of coal and natural gas resources. 2. Generate 50% of power from coal, 25% from natural gas and 25% from other sources. This includes an intermediate installation target of 20GW by 2021. 3. Adopt efficient and low carbon technologies for thermal power generation to limit emissions. 4. Build a deep sea port for fuel imports and transmission lines. 5. Reform policies to ensure realistic tariffs and establish an organization for fuel procurement. 6. Promote socioeconomic development through increased energy access by promoting rural electrification and industrial growth.
 
 #### Score Summary
-Bangladesh scored 1.20 in Climatescope 2015, ranking it 24th among countries overall. The country’s ranking fell six places on the list from 2014, largely due to a nine-place decline in its rank on Clean Energy Investment Parameter II in general and on its Green Micro Finance Indicator, in particular. 
-On Enabling Framework Parameter I, Bangladesh scored 1.30 thanks to a particularly good performance on its Distributed Energy Regulatory Framework Indicator. On Clean Energy Investment and Climate Financing Parameter II, the country scored 0.66, down from 0.96 in 2014. On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country saw its score unchanged at 2.57. On Greenhouse Gas Management Activities Parameter IV, Bangladesh scored just 0.65 because of a lack of effective emissions reduction policies.
+
+Bangladesh scored 1.21 in Climatescope 2015, ranking it 24th among countries overall. The country’s ranking fell six places on the list from 2014, largely due to a nine-place decline in its rank on Clean Energy Investment Parameter II in general and on its Green Micro Finance Indicator, in particular. 
+
+On Enabling Framework Parameter I, Bangladesh scored 1.30 thanks to a particularly good performance on its Distributed Energy Regulatory Framework Indicator. 
+
+On Clean Energy Investment and Climate Financing Parameter II, the country scored 0.66, down from 0.96 in 2014. 
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country saw its score unchanged at 2.57. On Greenhouse 
+
+Gas Management Activities Parameter IV, Bangladesh scored just 0.65 because of a lack of effective emissions reduction policies.
 

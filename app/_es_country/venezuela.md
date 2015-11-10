@@ -17,7 +17,7 @@ El país sudamericano tiene una cobertura de red de casi el 100% y las tarifas e
 
 En 2005, FUNELEC, una institución técnica para el desarrollo del sector eléctrico, creó el Programa Sembrando Luz, para llevar electrificación solar y eólica a un puñado de áreas rurales e indígenas que se encontraban fuera de la red. Desde septiembre de 2012, el programa ha instalado 3.139 sistemas de energía renovable en más de 1.000 comunidades. También han tenido lugar algunos desarrollos en proyectos al nivel de los servicios eléctricos. A comienzos de 2015, se comisionó un proyectó solar de 1MW en el archipiélago Los Roques, parte de una planta híbrida diésel-fotovoltaica.
 
-Resumen de Puntajes
+#### Resumen de Puntajes
 
 Venezuela se ubicó en el puesto general 54 del Climascopio 2015, idéntica posición a la de 2014. Su puntaje general en 2015 fue de 0.40, frente a una puntuación general en 2014 de 0.32.
 Venezuela en 2015 logró un mejor puntaje en el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia merced a un mejor indicador de las Instituciones Financieras en relación a la Energía Limpia. Sin embargo, el puntaje general del país se vio afectado por la falta de progreso en otros parámetros.

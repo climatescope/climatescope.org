@@ -17,7 +17,7 @@ Costa Rica also offers import, value added and income tax breaks on select renew
 
 #### Score Summary
 
-Costa Rica’s overall rank in Climatescope 2015 fell to 15th from the 12th-place level of 2014. Its small regression came despite a slight increase in overall score from 1.45 to 1.49, as other countries registered more substantial improvements.
+Costa Rica’s overall rank in Climatescope 2015 fell to 15th from 12 in 2014. Its small regression came despite a slight increase in its overall score from 1.45 to 1.49, as other countries registered more substantial improvements.
 The Central American nation saw notable improvement on the Clean Energy Policies Indicator of Parameter I.
 On Enabling Framework Parameter I, Costa Rica in 2015 jumped 12 places to 10th position. Its 2015 Parameter I score of 1.52 compares with a 2014 score of 1.25.
 On Clean Energy Investment and Climate Financing Parameter II, Costa Rica surrendered six positions to 14th. Its Parameter II scores were 0.79 in 2015 and 1.05 in 2014.

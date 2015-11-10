@@ -21,7 +21,7 @@ La medición neta ha estado permitida en Barbados desde 2010 y los usuarios que 
 
 En 2014, BLPC anunció un proceso de licitaciones para que los proveedores diseñen y construyan una planta fotovoltaica de 8MW en el distrito de St. Lucy, que pertenecerá y será operado por BLPC, y que se espera sea comisionado para marzo de 2016. Adicionalmente, actualmente el gobierno se encuentra organizando el documento Acciones de Mitigación Nacionalmente Apropiadas (NAMA, por sus siglas en inglés), que consolidará los esfuerzos de la isla por reducir las emisiones de CO2 para el año 2020.
 
-Resumen de Puntajes
+#### Resumen de Puntajes
 
 Barbados cayó tres lugares hasta el puesto 44 en el puntaje general del Climascopio 2015, al obtener un puntaje general de 0.64. En 2014 había logrado 0.79 puntos. 
 El principal factor que impactó negativamente sobre el resultado de 2015, fueron los indicadores del Parámetro II: Préstamos, Donaciones, Programas de Donaciones e Inversiones en Energía Limpia. 

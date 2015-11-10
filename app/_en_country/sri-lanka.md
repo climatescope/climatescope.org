@@ -21,8 +21,12 @@ Sri Lanka’s transmission and distribution sectors are state-owned, while 48% o
 
 #### Score Summary
 
-Sri Lanka scored 1.192 in Climatescope 2015, placing it 25th on the list of countries overall.  The country’s ranking rose six places on the list from 2014, thanks largely to strong improvement of its score on Clean Energy Investment Parameter II in general and on the Growth Rate of Clean Energy Investments Indicator, in particular. 
-On Enabling Framework Parameter I, Sri Lanka scored 0.886, down from 1.08 in 2014, due to a lack of policy activity and the expiration and non-renewal of a feed-in tariff.
-On Clean Energy Investment and Climate Financing Parameter II, the country scored 0.848.  Its parameter score rose primarily due to jump in its clean energy investments. In fact, it had the fourth highest score on Parameter II among all nations in APAC.  
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country saw its score unchanged at 3.309. 
+Sri Lanka scored 1.19 in Climatescope 2015, placing it 25th on the list of countries overall.  The country’s ranking rose six places on the list from 2014, thanks largely to strong improvement of its score on Clean Energy Investment Parameter II in general and on the Growth Rate of Clean Energy Investments Indicator, in particular.
+
+On Enabling Framework Parameter I, Sri Lanka scored 0.89, down from 1.08 in 2014, due to a lack of policy activity and the expiration and non-renewal of a feed-in tariff.
+
+On Clean Energy Investment and Climate Financing Parameter II, the country scored 0.85.  Its parameter score rose primarily due to jump in its clean energy investments. In fact, it had the fourth highest score on Parameter II among all nations in APAC.  
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country saw its score unchanged at 3.31. 
+
 On Greenhouse Gas Management Activities Parameter IV, Sri Lanka scored just 0.58 because of its lack of effective emissions reduction policies and very few offset projects currently in operation.

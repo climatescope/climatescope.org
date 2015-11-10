@@ -19,8 +19,12 @@ Tajikistan faces power shortages in the winter, when its large hydro plants oper
 
 #### Score Summary
 
-Tajikistan scored 0.619 in Climatescope 2015, placing it 46th on the list of countries overall.  The country’s ranking rose seven places on the list from 2014, thanks largely to strong improvement of its score on Enabling Framework Parameter I in general and on the Growth Rate of Installed Capacity Indicator, in particular. 
-On Enabling Framework Parameter I, Tajikistan scored 0.858 thanks to a particularly good performance on the Growth Rate of Installed Capacity Indicator, the Growth Rate of Electricity Generation Indicator and the Clean Energy Rural Electrification Indicator.  The country saw a jump in investment that helped drive this change.
-On Clean Energy Investment and Climate Financing Parameter II, the country scored 0.137.  Its score fell primarily due to a decline in its score on the Green Micro Finance Indicator.
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Tajikistan’s score was unchanged at 0.763. 
-On Greenhouse Gas Management Activities Parameter IV, Tajikistan scored just 0.801 because of lack of effective emissions reduction policies and voluntary corporate activities in this domain.
+Tajikistan scored 0.62 in Climatescope 2015, placing it 46th on the list of countries overall.  The country’s ranking rose seven places on the list from 2014, thanks largely to strong improvement of its score on Enabling Framework Parameter I in general and on the Growth Rate of Installed Capacity Indicator, in particular. 
+
+On Enabling Framework Parameter I, Tajikistan scored 0.86 thanks to a particularly good performance on the Growth Rate of Installed Capacity Indicator, the Growth Rate of Electricity Generation Indicator and the Clean Energy Rural Electrification Indicator.  The country saw a jump in investment that helped drive this change.
+
+On Clean Energy Investment and Climate Financing Parameter II, the country scored 0.14.  Its score fell primarily due to a decline in its score on the Green Micro Finance Indicator.
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, Tajikistan’s score was unchanged at 0.76. 
+
+On Greenhouse Gas Management Activities Parameter IV, Tajikistan scored just 0.80 because of lack of effective emissions reduction policies and voluntary corporate activities in this domain.

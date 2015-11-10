@@ -22,9 +22,13 @@ On 1 October 2014, the government launched the Sustainable and Renewable Energy 
 
 #### Score Summary
 
-Trinidad & Tobago’s 0.57 overall score in Climatescope 2015 placed it 48th among all countries, up from 51st position in 2014, when it scored 0.54. 
+Trinidad & Tobago’s 0.57 overall score in Climatescope this year placed it 48th among all countries, up from 51st position last year, when it scored 0.54. 
 Trinidad & Tobago’s gain was largely tied to improvement on both the Financial Institutions in Clean Energy Indicator and the Value Chains by Clean Energy Sector Indicator of Low-Carbon Business & Clean Energy Value Chains Parameter III.
-On Enabling Framework Parameter I, Trinidad & Tobago finished 52nd, up one place from 2014. Its scores were 0.41 in 2015 and 0.24 in 2014.
-On Clean Energy Investment and Climate Financing Parameter II, Trinidad & Tobago scored 0.63, down from 0.87 in 2014. Its Parameter II ranking was 22nd in 2015 versus 14th in 2014.
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Trinidad & Tobago’s 43rd-place finish in 2015 was eight places above its 2014 position. The country’s 2015 and 2014 Parameter III scores were 0.95 and 0.63, respectively.
-On Greenhouse Gas Management Activities Parameter IV, Trinidad & Tobago ranked 47th in 2015. Its 0.50 2015 score is a slight improvement over 2014’s 0.59, when it finished 45th.
+
+On Enabling Framework Parameter I, Trinidad & Tobago finished 52nd, up one place from last year.
+
+On Clean Energy Investment and Climate Financing Parameter II, Trinidad & Tobago scored 0.63, down from 0.87 last year. Its Parameter II ranking was 22nd versus 14th last year.
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, Trinidad & Tobago’s 43rd-place finish was eight places above its 2014 position. The country’s 2015 and 2014 Parameter III scores were 0.95 and 0.63, respectively.
+
+On Greenhouse Gas Management Activities Parameter IV, Trinidad & Tobago ranked 47th. Its 0.50 score is a slight improvement over last year's 0.59, when it finished 45th.
