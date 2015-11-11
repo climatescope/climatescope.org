@@ -428,6 +428,12 @@
   opacity: 0.6;
 }
 
+.chart-note {
+  float: left;
+  @extend .hd-label;
+  margin: 0 0 0 100px;
+}
+
 
 $circle-size: 0.625rem;
 $circle-gutter: 0.5rem;
