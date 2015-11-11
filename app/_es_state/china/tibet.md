@@ -2,7 +2,7 @@
 layout: state
 
 id: cn-54
-title: Xizang
+title: Tibet
 
 region: asia
 country: cn
