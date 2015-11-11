@@ -28,7 +28,14 @@ In the last year JCM Greenquest Solar Corporation announced plans to build a 72M
 #### Score Summary
 
 Cameroon scored 0.56 in Climatescope 2015, placing it 49th on the list of countries overall, above only the Democratic Republic of the Congo among the African nations. The country’s highest score was on Greenhouse Gas Management Activities Parameter IV. 
-On Enabling Framework Parameter I, Cameroon slipped one place to rank 47th. While there is no discernible installed clean energy capacity and little in the way of policy support, the country does have energy access policies. Cameroon was ranked 46th on Clean Energy Investment and Climate Financing Parameter II, unchanged from 2014. Investment in the sector to date has been scarce. On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country placed 49th due to the low number of value chains and service providers. On Parameter IV, the country was ranked 37th, reflecting in particular a low failure rate among its small number of carbon offset projects.
+
+On Enabling Framework Parameter I, Cameroon slipped one place to rank 47th. While there is no discernible installed clean energy capacity and little in the way of policy support, the country does have energy access policies. 
+
+Cameroon was ranked 46th on Clean Energy Investment and Climate Financing Parameter II, unchanged from 2014. Investment in the sector to date has been scarce. 
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country placed 49th due to the low number of value chains and service providers. 
+
+On Parameter IV, the country was ranked 37th, reflecting in particular a low failure rate among its small number of carbon offset projects.
 
 
 

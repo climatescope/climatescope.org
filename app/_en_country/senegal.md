@@ -28,7 +28,11 @@ Key government agencies in Senegal’s energy sector include the Ministry of Ene
 #### Score Summary
 
 Senegal scored 0.86 in Climatescope 2015, placing it 36th on the list of countries overall, an increase of one place compared with 2014. Its highest score was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
+
 On Enabling Framework Parameter I, Senegal dropped one place to rank 31st. Its score drew support from the country’s energy access policies, the relatively high prices of diesel and kerosene and growing demand for power.
+
 The country slipped one place to 54th position on Clean Energy Investment and Climate Financing Parameter II, reflecting the absence of investment in projects so far. 
+
 Senegal also fell on Parameter III, losing three places to rank 25th. Its score was underpinned by the development of a number of value chains and service providers. 
+
 On Greenhouse Gas Management Activities Parameter IV, the country jumped six places to rank 41st thanks to an increase in its carbon offsetting activity.

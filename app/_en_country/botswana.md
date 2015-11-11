@@ -23,4 +23,11 @@ In 2012 Japan’s Itochu Corp. financed a 1MW PV plant through a $12.5m grant. T
 #### Score Summary
 
 Botswana scored 0.59 in Climatescope 2015, placing it 47th on the list of countries overall, one place higher than in 2014. The country’s highest score was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
-On Enabling Framework Parameter I, the country dropped six places to rank 49th. On the whole, its policy and regulatory environment scored weakly, though it does have some energy access policies in place. The country finished 35th on Clean Energy Investment and Climate Financing Parameter II. There has been little investment in the sector to date, though financing conditions are more favorable than others in the region. On Parameter III, Botswana placed 34th, partly reflecting the presence of a number of distributed clean energy service providers. On Greenhouse Gas Management Activities Parameter IV, the country was ranked 50th. Modest inroads are being made in the area of corporate awareness.
+
+On Enabling Framework Parameter I, the country dropped six places to rank 49th. On the whole, its policy and regulatory environment scored weakly, though it does have some energy access policies in place.
+
+The country finished 35th on Clean Energy Investment and Climate Financing Parameter II. There has been little investment in the sector to date, though financing conditions are more favorable than others in the region. 
+
+On Parameter III, Botswana placed 34th, partly reflecting the presence of a number of distributed clean energy service providers.
+
+On Greenhouse Gas Management Activities Parameter IV, the country was ranked 50th. Modest inroads are being made in the area of corporate awareness.

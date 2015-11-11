@@ -20,7 +20,11 @@ The country also offers fiscal and financial incentives to project developers. R
 #### Score Summary
 
 Pakistan in 2015 scored 1.53 to finish 13th among all Climatescope nations. The country moved up two places from 2014 on the basis of improvements on parameters I and IV.
+
 Pakistan ranked 16th on Parameter I Enabling Framework, with a score of 1.42. In 2014, it was 25th with a score of 1.21.  The country approved direct electricity sales by private generation companies and net metering to encourage off-grid generation, particularly rooftop solar. 
+
 Pakistan’s score on Parameter II Clean Energy Investment & Climate Financing slipped somewhat, from 0.45 to 0.39. Its latest investment total stood at $232m, a marginal decrease from the previous year. 
+
 On Parameter III Low-Carbon Business & Clean Energy Value Chains, Pakistan in 2015 posted a 4.32 score, which placed it third among Climatescope countries and was a one-place advance from 2014, when it scored 4.13. The country benefited from strong off-grid value chains, especially in distributed clean energy service providers and financial institutions. 
+
 Pakistan’s 2015 rank improved 14 places on Parameter IV Greenhouse Gas Management, as its score jumped from 0.81 to 1.30. While it lacks a national carbon policy, Pakistan hosts a growing level of carbon offsets activity and environmental business training.

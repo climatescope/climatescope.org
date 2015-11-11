@@ -8,6 +8,7 @@ region: lac
 grid: on
 ---
 Given its reliance on large hydroelectric power generating plants, Colombia to date has offered relatively weak policy support to other forms of low- or zero-carbon energy. The introduction of a renewable energy and energy efficiency law in 2014 may mark a turning point, as the industry awaits further regulation and incentives. 
+
 Previously, the country set a target of 6.5% on-grid and 30% off-grid non-large hydro renewable power consumption by 2020. In addition, Colombia enforces blending mandates of 10% biodiesel with conventional diesel and 10% ethanol with conventional gasoline.
 
 As of 2014, Colombia had a total installed capacity of 15.5GW. In that year, large hydro represented 65% of the 64TWh generated, with natural gas as the second most important source, with 29% of generation. Clean energy accounted for 6% of generation, mostly coming from small hydro, and to a lesser degree from biomass and wind.
@@ -15,6 +16,7 @@ As of 2014, Colombia had a total installed capacity of 15.5GW. In that year, lar
 Published in October 2001, Law 697 established Colombia's clean energy mandate, with distinct targets for on-grid and off-grid generation. The target for 2015 was set at 3.5% on-grid and 20% off-grid renewable generation, and both were surpassed by 2012. The longer-term 2020 goals also look to be easily achieved. 
 
 Under a December 2002 law, biomass and wind energy generators with projects registered under the UN's Clean Development Mechanism (CDM) may receive income tax and import duty exemption. Meanwhile, a May 2014 law regulates the integration of clean energy technologies on-grid and off-grid and sets tax incentives for clean energy generation. It also created a fund for the financing of clean energy and energy efficiency programs.
+
 The capital city, Bogotá, in 2011 enacted a law exempting electric vehicles (EVs) from circulation limits applicable to conventional vehicles based on license plate numbers and created a five-year pilot programme for EV taxi deployment.
 
 #### Score Summary

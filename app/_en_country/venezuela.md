@@ -25,4 +25,5 @@ Venezuela was ranked last among all Climatescope countries on Enabling Framework
 On Clean Energy Investment and Climate Financing Parameter II, Venezuela equaled its last year ranking of 51st. Its 2015 Parameter II score was 0.17 versus 0.19 in 2014.
 
 On Low-Carbon Business & Clean Energy Value Chains Parameter III, Venezuela in 2015 advanced 13 places to 31st with a score of 1.34. Its 2014 score of 0.89 put it in 44th place.
+
 On Greenhouse Gas Management Activities Parameter IV, Venezuela’s 2015 metrics of 44th place at 0.60 were unchanged from its 2014 metrics.

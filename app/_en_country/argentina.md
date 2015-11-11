@@ -13,7 +13,9 @@ In 2014, non-large hydro renewables accounted for 2.6TWh of renewable generation
 Law 26.190, in force since 2006, has been the main policy supporting renewables and established the country’s clean energy mandate, which introduced a feed-in tariff scheme and tax incentives. Recently a new law has been approved by the Congress which modifies the existing regulation, introducing targets of 8% by 2017 and 20% by 2025, including tax incentives and the creation of a trust fund for the development of renewable energy (FODER) which may help quick-start Argentina’s clean energy market. 
 
 In 2009, Argentina contracted renewable capacity through its first and only federal level auction, GENREN. Energías Argentinas SA (ENARSA), a state-owned company active in the hydrocarbon and electricity segments, conducted the auction and the Ministry of Energy, Secretaria de Energía, established regulations. ENARSA awarded 15-year contracts to 895MW of wind, small hydro and solar projects. As of March 2015, 217MW of solar and wind projects were either under construction or had been commissioned.
+
 In the meantime, some provinces have also taken action. Santa Fe province opened a tender to contract a 1MW PV project in November 2014, and San Luis province approved a provincial law adding additional provincial tax breaks. 
+
 Argentina requires that conventional diesel be blended with 10% biodiesel and gasoline be blended with 10% ethanol. Previously, Argentina exported most of its biodiesel production. In 2011, it exported 2bn liters out of the 2.9bn produced, mostly to European Union (EU) countries. In August 2012, the EU initiated an anti-dumping investigation on Argentine and Indonesian biodiesel, which resulted in a 10.6% anti-dumping duty implemented in May 2013. In order to support local production, Argentina increased its biodiesel blending mandate, increased the price and reduced its export tax.
 
 #### Score Summary

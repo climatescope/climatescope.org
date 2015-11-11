@@ -39,7 +39,11 @@ South Africa offers other incentives including grants-for-equity in large-scale 
 #### Score Summary
 
 South Africa scored 1.91 in Climatescope 2015, ranking it 4th on the list of countries overall, one place lower than in 2014. Its highest finish was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
+
 On Enabling Framework Parameter I, South Africa climbed to 6th place among all nations in 2015, compared with 36th in 2014. This jump reflected strong growth in the amount of installed clean energy generating capacity. 
+
 On Clean Energy Investment and Climate Financing Parameter II, however, the country plummeted to 24th place on the list, having been second overall in 2014. This largely reflected a fall – or rather, delays – in new clean energy investment.
+
 South Africa ranked fourth overall on Parameter III thanks to its well-developed financial sector and relatively high number of service providers. 
+
 On Greenhouse Gas Management Activities Parameter IV the country ranked 6th overall reflecting its offset project activity and high level of corporate awareness.

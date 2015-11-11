@@ -5,6 +5,7 @@ title: Executive Summary
 id: summary
 ---
 In its first year, the inaugural global Climatescope chronicled the rapid proliferation of clean energy in 55 emerging market nations over the previous five years.  What drove this surge was: national pursuits for energy security, dramatically falling costs for renewable technologies, improving clean energy policy frameworks, and generally strong macroeconomic growth.
+
 This second edition of the global survey documents important continued progress during the 2014 calendar year across these nations, which can be regarded as a proxy for emerging market countries more broadly. Once again, Climatescope focused its attention on the newest low-carbon emitting clean energy technologies – wind, solar, geothermal, biomass, small hydro and biofuel technologies, but not large hydro and nuclear power.
 
 #### Key findings

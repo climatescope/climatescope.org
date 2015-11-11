@@ -23,5 +23,13 @@ In 2014, BLPC announced a bid process for contractors to design and build an 8MW
 
 #### Score Summary
 
-Barbados moved three places lower to 44th place overall in Climatescope 2015, with an overall score of 0.64. Barbados’s 2014 score was 0.79. The country’s overall 2015 finish was influenced most strongly by negative progress on two Parameter II indicators: Loans, Grants, Grant Programs and Clean Energy Investments. On Enabling Framework Parameter I, Barbados lost two levels, arriving at 46th place with a score of 0.74. Its 2014 score was 0.76. Barbados in 2015 tumbled from 13th to 36th place on Clean Energy Investment and Climate Financing Parameter II. Its 2015 score of 0.36 contrasted with a 2014 rating of 0.88. On Low-Carbon Business & Clean Energy Value Chains Parameter III, Barbados in 2015 scored 1.02, ranking 41st. Its 2014 metrics were a 0.88 score and a rank of 45th. On Greenhouse Gas Management Activities Parameter IV, Barbados in 2015 repeated its 46th-place ranking and its 0.56 score of the previous year.
+Barbados moved three places lower to 44th place overall in Climatescope 2015, with an overall score of 0.64. Barbados’s 2014 score was 0.79. The country’s overall 2015 finish was influenced most strongly by negative progress on two Parameter II indicators: Loans, Grants, Grant Programs and Clean Energy Investments. 
+
+On Enabling Framework Parameter I, Barbados lost two levels, arriving at 46th place with a score of 0.74. Its 2014 score was 0.76. 
+
+Barbados in 2015 tumbled from 13th to 36th place on Clean Energy Investment and Climate Financing Parameter II. Its 2015 score of 0.36 contrasted with a 2014 rating of 0.88. 
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, Barbados in 2015 scored 1.02, ranking 41st. Its 2014 metrics were a 0.88 score and a rank of 45th. 
+
+On Greenhouse Gas Management Activities Parameter IV, Barbados in 2015 repeated its 46th-place ranking and its 0.56 score of the previous year.
 
