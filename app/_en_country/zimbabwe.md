@@ -25,7 +25,11 @@ Zimbabwe's rural electrification fund has struggled since inception due to cash-
 #### Score Summary
 
 Zimbabwe scored 0.70 in Climatescope 2015, placing it 43rd on the list of countries overall, the same position it held in 2014. The country’s highest score was on Greenhouse Gas Management Activities Parameter IV. 
+
 On Enabling Framework Parameter I, Zimbabwe slipped one place to rank 42nd. Its score was supported by the presence of energy access policies and relatively high diesel and kerosene prices.
+
 On Clean Energy Investment and Climate Financing Parameter II, the country was positioned near the bottom of the list. It took 48th place, one lower than in 2014, largely due to the lack of new investment.
+
 Zimbabwe was placed 38th on Low-Carbon Business & Clean Energy Value Chains Parameter III, a decline of six places. Its score is supported by a modest number of clean energy service providers. 
+
 On Parameter IV, the country was ranked 34th, with moderately good scores for the number and diversity of carbon credits generated.

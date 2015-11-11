@@ -22,5 +22,12 @@ The country held its first tender in 2013, which aimed to contract 75MW of power
 #### Score Summary
 
 Belize moved six places lower, to 38th place overall, in Climatescope 2015, with a score of 0.81. Belize’s 2014 score was 0.98. The country’s overall rating suffered from reduced activity on the Loans, Grants, Grant Programs Indicator of Parameter II. 
-On Enabling Framework Parameter I, Belize in 2015 lost nine places, arriving at rank 27 with a score of 1.21. Its 2014 score was 1.31. Belize in 2015 slumped to 44th place from 19th place in 2014 on Clean Energy Investment and Climate Financing Parameter II. Its 2015 score of 0.26 contrasted with a 2014 rating of 0.67. On Low-Carbon Business & Clean Energy Value Chains Parameter III, Belize in 2015 scored 0.46, ranking 52nd. Its 2014 metrics were a 0.63 score and a rank of 50th. On Greenhouse Gas Management Activities Parameter IV, Belize in 2015 gained one rank, scoring 1.22. In 2014 it was 27th on the parameter, with a 1.05 score.
+
+On Enabling Framework Parameter I, Belize in 2015 lost nine places, arriving at rank 27 with a score of 1.21. Its 2014 score was 1.31.
+
+Belize in 2015 slumped to 44th place from 19th place in 2014 on Clean Energy Investment and Climate Financing Parameter II. Its 2015 score of 0.26 contrasted with a 2014 rating of 0.67. 
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, Belize in 2015 scored 0.46, ranking 52nd. Its 2014 metrics were a 0.63 score and a rank of 50th. 
+
+On Greenhouse Gas Management Activities Parameter IV, Belize in 2015 gained one rank, scoring 1.22. In 2014 it was 27th on the parameter, with a 1.05 score.
 

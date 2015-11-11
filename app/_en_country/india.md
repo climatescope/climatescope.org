@@ -9,10 +9,12 @@ grid: on
 ---
 
 India had 258GW of total power capacity at the end of 2014 of which renewables represented 34GW (13%). Overall, coal represented the largest share with 60%, followed by large hydro at 16%.
+
 2014 was a watershed year for Indian politics and the implications for energy policy could be felt for years, perhaps even decades to come. Elections concluded in May handed Narendra Modi and his BJP a decisive victory and a mandate to form a new federal government.
 Modi has outlined broad ambitions to provide around-the-clock power and to expand electricity access to all 1.25bn Indians by 2019. This, in turn, has prompted major energy policy reform. 
 
 Step one was a move to put ministries overseeing the coal, power and new and renewable energy sectors under a single minister. This has improved coordination between ministries and speeded decision making. It has also strengthened the presence of Ministry of New and Renewable Energy and brought it to the forefront.
+
 Renewables represent an important part of the government’s energy security ambitions while at the same time helping to address India's rapidly rising CO2 emissions. Distributed renewables, typically in the form of photovoltaics, also have the potential to electrify India’s remote villages without the need of extending the grid. 
 Hence the government has set highly ambitious goals for adding renewable capacity. The country’s previous target of adding 20GW solar by 2022 has been upped to 100GW while a new target for wind has been set at 60GW under the same time frame.
 
@@ -26,6 +28,7 @@ While the target is national, achieving it will rely to a large degree on the ef
 At the federal level, the National Solar Mission program runs parallel to state efforts and also offers reverse auctions and subsidies. By the end of 2014, 1.9GW capacity had been permitted under the Solar Mission with a target to add a further 17GW by 2019.
 
 The federal government is currently considering different approaches to reduce risks perceived associated with these long-term PPAs and their bankability. These include bundling of solar power with cheaper coal to make its price market attractive, offering upfront Viability Gap Funding capital grants or creating a payment security fund to cover defaults. The states are also developing solar parks with the help of the federal government. These parks offer clear land with all necessary infrastructure that can significantly reduce many challenges such as land acquisition or road connectivity. 
+
 Of the 100GW solar target, 40GW has been earmarked for rooftop solar. While the federal government offers capital subsidies for these projects, approximately 14 states offer net-metering policies that allow system owners to receive the benefit of the excess power they generate back into the grid. Approximately five states provide feed-in tariffs for rooftop projects or offer additional grants to the national subsidies.
 
 Wind has traditionally been the flagship sector in India’s renewable energy basket with 22GW installed as of the end of 2014. The sector has seen solid growth in the last several years with allowable accelerated depreciation having served as a key tax incentive for developers. This incentive allows the investors to defer tax liabilities by claiming 80% of the residual value of the project as depreciation. After it was withdrawn in 2012, new installations dropped dramatically in 2013. The new government restored the incentive in H2 2014 leading to a rebound and 2.3GW of new build in the year.
@@ -57,6 +60,7 @@ Tamil Nadu took the top ranking in 2015, displacing last year’s leader, Karnat
 Uttar Pradesh climbed three places, from 10th to seventh rank.
 
 In Madhya Pradesh and Uttar Pradesh, the overall installed clean energy capacity base is still low; their scoring gains came on a relative surge in new projects, investments and allocations.
+
 Other states that lost rank this year are Rajasthan, Gujarat, Andhra Pradesh and Punjab; each of which fell by two places. 
 Independent of rankings, the numerical scores of all states except Karnataka increased from 2014 to 2015. 
 
@@ -64,6 +68,7 @@ Tamil Nadu’s overall first-place ranking is attributable to its top score on c
 
 Karnataka had high scores on power sector structure, carbon offsets historical activity and value chains.
 Madhya Pradesh scored the highest among Indian states on growth rate of clean energy investments. It also had the second highest score on growth rate of installed capacity and growth rate of electricity generation. 
+
 Uttar Pradesh scored highest on the growth rate of electricity generation indicator. It also had the second highest score on growth rate of clean energy investments. 
 
 Maharashtra delivered the highest indicator score on growth rate of power demand and scored in the upper reaches on clean energy value chain indicators.

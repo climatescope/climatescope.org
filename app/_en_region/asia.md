@@ -18,7 +18,7 @@ The second observation is that Asia remains the tops among the regions examined 
 
 Finally, the newly concerted efforts to remedy local pollution issues – and not just global climate change impacts – in Asia’s urban areas provides a new impetus for investment in low-carbon power generation and environmental goods and services.  China’s “war on pollution” and similar efforts in India are not only a health imperative – they are a bright opportunity for investment. 
 
-#### PARAMETER I   
+#### ENABLING FRAMEWORK PARAMETER I   
 
 Asian countries had a range of performance on Global Climatescope Enabling Framework Parameter I. This includes 22 indicators that between them account for a country’s policy and regulatory frameworks, levels of clean energy penetration, level of price attractiveness for clean energy development, and the expectations for how large the market for clean energy can become.
 Last year, there were a number of notable developments in country and state/provincial enabling frameworks for Climatescope Asia. 
@@ -31,7 +31,7 @@ As last year, Sri Lanka (0.87), Tajikistan (0.86), and Myanmar (0.84) had relati
 
 Climatescope Asia countries remain a very mixed story on electrification. China completed its electrification effort more than a decade ago; India still has hundreds of millions without reliable access to the grid. Low electrification rates, as in Bangladesh, Myanmar, or Pakistan, are a hindrance to development. At the same time, remedying those low electrification rates is an opportunity for capacity and value-chain building in countries considered “off-grid”. Likewise in Indonesia, with relatively high electrification but with tens of thousands of small islands still largely dependent on diesel power, newly increased feed-in tariffs for small hydropower and fiscal incentives for geothermal could attract and enable new clean energy investment. 
 
-#### PARAMETER II	
+#### CLEAN ENERGY INVESTMENT & CLIMATE FINANCING PARAMETER II	
 
 Asia excels in Clean Energy Investment & Climate Financing Parameter II, which accounts for the amount of clean energy capital a country attracts, the availability of local funds, the local cost of debt, and green microfinance activity through a total of 14 indicators. 
 In 2013, China placed first amongst the 10 Asia Climatescope countries, but in 2014 Nepal had the highest score, of 1.68 thanks to a very strong growth in clean energy investment. China placed second, with a score of 1.46, and Indonesia third with a score of 0.88.  Bangladesh, which scored second in 2013, placed fifth with a score of 0.67. Tajikistan had the lowest score in Asia, with 0.14. 
@@ -44,7 +44,7 @@ On a proportional basis, some countries with smaller non-large hydro clean energ
 
 The Asian countries studied in Climatescope have a wide range of capital availability. China’s capital markets for clean energy extend from private venture capital to asset finance from state-sponsored banks. India has active financial markets but high costs of capital, as well as high costs to swap currency risks. Indonesia has introduced a geothermal drilling fund which helps develop its superb natural resources, and Vietnam Development Bank provides for loans for renewable energy as well. Bangladesh continues to excel in green microfinance mechanisms suited specifically to off-grid clean energy projects, in particular solar PV.  
 
-#### PARAMETER III
+####  LOW -CARBON BUSINESS AND CLEAN ENERGY VALUE CHAIN PARAMETER III
 	
 Asian countries performed exceptionally well in Low-Carbon Business and Clean Energy Value Chains Parameter III, which assesses the ability of local manufacturing and other capacity to spur clean energy deployment through five indicators. These parameters account for the presence of local manufacturers, service providers and, in the case of lesser-developed nations, players participating in facilitating the growth of distributed generation. 
 
@@ -57,7 +57,7 @@ China’s and India’s states and provinces, however, score very differently th
 Each country’s wealthier and more industrialized areas have high scores for value chains – while their less-developed areas have low scores.  Inner Mongolia, the heart of China’s wind industry, has a nearly-complete clean energy value chain (4.75) while remote Tibet has a very low score (only 0.25). India has a more tightly grouped clean energy value chain than China. Its highest state score is in relatively developed Tamil Nadu (2.40), which would rank second from bottom in China; however, its lowest score in Madhya Pradesh (0.72) is much higher than Tibet’s very low score.  Remote sites which are often ideal for clean energy asset deployment, are not often home to thriving value chains beyond engineering and operations and maintenance.
 Value chain completeness also correlates highly total deployed capital for clean energy, and total installed capacity. 
 
-#### PARAMETER IV	
+#### GREENHOUSE GAS MANAGEMENT ACTIVITIES PARAMETER IV	
 
 Asian countries had a wide range of scores in Greenhouse Gas Management Activities Parameter IV, which takes into account carbon offset project activity, the level of policy support for carbon emissions reduction, and local corporate awareness of carbon issues.
 

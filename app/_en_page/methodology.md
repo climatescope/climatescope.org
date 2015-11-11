@@ -5,8 +5,11 @@ title : Methodology
 id: methodology
 ---
 Climatescope seeks to bring quantitative rigor to the basic question of what makes a country attractive for clean energy investment, development, and deployment. It seeks to answer this by collecting as much relevant data as possible, then organizing it in a manner that is both easy to consume and empowers users to gain key insights. 
+
 Climatescope ranks countries on their past, present, and future ability to attract investment for clean energy companies and projects. Clean energy is defined as biofuels, biomass & waste, geothermal, solar, wind and small hydro (up to 50MW). While a number of Climatescope nations have historically embraced large hydro generation to meet local power needs, this study focused exclusively on newer sources of low-carbon generation, both because they are often technologically cutting edge and because they can generally be deployed far faster than large hydro projects, which can take years or even decades to commission.  By comparison, wind projects can be sited and erected in as little as two to three years. Utility-scale solar photovoltaic projects can be constructed in as little as six months and distributed photovoltaic systems can be added to rooftops in a day or less. In short, these technologies are poised to make – and in many cases are already making – near immediate impact on energy supply and access in the developing world. Climatescope sought to assess how ready these countries are to embrace them.
+
 In this fourth edition of the project, the index once again consists of four overarching parameters.  Beneath these parameters are 53 data inputs, or indicators.  Some indicators consist of a single data input but many consist of multiple data points that have been synthesized into a single figure. Each indicator counts toward a country's final score but these are not weighted equally. Scores range from 0 to a maximum of 5. 
+
 The final score a country receives under Climatescope is determined by a weighted combination of its four parameter scores. For 2015, the weighting of these parameters remains as it was in 2014: 
 
 ●	Enabling Framework Parameter I – 40%
@@ -18,7 +21,9 @@ The final score a country receives under Climatescope is determined by a weighte
 ●	Greenhouse Gas Management Activities Parameter IV – 15% 
 
 The entire Climatescope model can be viewed at www.global-climatescope.org  where users are encouraged to adjust the parameter weightings according to their priorities and download the aggregate data available. 
-Accounting for lesser developed nations through the “off-grid focus” methodology
+
+#### Accounting for lesser developed nations through the “off-grid focus” methodology
+
 As in 2014, Climatescope 2015 assessed nations ranging from lowest income to those firmly considered "middle income".  As a result, Climatescope 2015 once again includes a special, augmented “off-grid focus” methodology that includes seven special indicators, with weightings adjusted in the model accordingly.  These indicators were taken into account alongside the other “on-grid” indicators for a sub-set of 23 Climatescope nations: 18 in Africa, one in Latin America and Caribbean, and four in Asia. 
 
 The goal of the off-grid effort is to level the playing field so that all countries can be compared in the fairest possible manner against one another in a single 55-country list. In addition, visitors to www.global-climatescope.org can examine the specific off-grid focus indicators in detail if they choose and compare in isolation the 23 nations that were assessed using this methodology. 
@@ -70,9 +75,13 @@ For 2015, the Climatescope methodology was left almost entirely unchanged from 2
 
 Scoring approaches employed in the first three editions of Climatescope were also used for this 2014 edition. These include:
 
-●	Indexing – The Climatescope index is based entirely on a 0-5 scoring system, with 5 representing the highest possible score. Using the indexing approach, the country with the maximum output for a given indicator, after levelization in most cases, received the highest score in the index (5). All other countries’ outputs were mapped relative to the maximum score. This approach was employed on quantitative indicators such as clean energy installed capacity, clean energy investment and electrification rate.  For growth rates, benchmark maximum high score scores were capped at 150% to avoid extremely high rates (e.g. where a small country has added a single, significant project onto a very low base) impacting all nations unfairly.
+●	Indexing – The Climatescope index is based entirely on a 0-5 scoring system, with 5 representing the highest possible score. Using the indexing approach, the country with the maximum output for a given indicator, after levelization in most cases, received the highest score in the index (5). 
 
-●	Tiering – In other cases, country indicator scores were tiered into predefined quintiles. For example, in the case of the clean energy policies indicator, tiering was used and countries were placed in different quintiles depending on the perceived policy ambition or effectiveness of their clean energy policy framework. This methodology is better suited than indexing for qualitative assessments such as rating the ease of carbon offset project development. Tiering was also used in cases when the quantitative outputs are based on limited data.
+All other countries’ outputs were mapped relative to the maximum score. This approach was employed on quantitative indicators such as clean energy installed capacity, clean energy investment and electrification rate.  For growth rates, benchmark maximum high score scores were capped at 150% to avoid extremely high rates (e.g. where a small country has added a single, significant project onto a very low base) impacting all nations unfairly.
+
+●	Tiering – In other cases, country indicator scores were tiered into predefined quintiles. For example, in the case of the clean energy policies indicator, tiering was used and countries were placed in different quintiles depending on the perceived policy ambition or effectiveness of their clean energy policy framework. 
+
+This methodology is better suited than indexing for qualitative assessments such as rating the ease of carbon offset project development. Tiering was also used in cases when the quantitative outputs are based on limited data.
 
 ●	Simple counting – Some indicators were simply binary and thus countable. In such cases, the country either received a 0 or a 5 score. For instance, one indicator simply sought to take into account whether countries have rural electrification programs using clean energy sources. Those that did received scores of 5. Those that did not received scores of zero.
 
@@ -83,7 +92,9 @@ Scoring approaches employed in the first three editions of Climatescope were als
 
 I. Enabling Framework
 The Enabling Framework parameter encompasses fundamental structures and market conditions typically required for a given country to attract investment and interest from financiers, project developers, or independent power producers looking to develop new low-carbon projects, companies or manufacturing facilities. It also takes into account how amenable such structures are to the deployment of distributed generation capacity, such as mini-grids, or residential wind or solar systems.
+
 A welcoming enabling framework is one where: a comprehensive, effective and stable set of rules are in place; the power market structure encourages and adequately rewards new market entrants; the private and public sectors foster universal access to clean and sustainable energy in rural or isolated communities; clean energy penetration of the power and primary energy matrices is ever increasing; adequate price signals are available; and growing demand for power and rapid electrification combine to create a substantial market.
+
 A total of 22 indicators serve as the inputs into Parameter I. These fall into four categories: Policy and Regulation, Clean Energy Penetration, Price Attractiveness, and Market Size Expectation. Each category contributed with varying weights to the overall Enabling Framework parameter score. Five of the 22 indicators were applied exclusively to countries which were assessed under the off-grid focus methodology.
 
 #### POLICY & REGULATION
@@ -105,22 +116,26 @@ In cases where a country did not have a specific type of policy, it received no 
 A policy “equalizer” consisting of two subcomponents ‒ comprehensiveness and political risk ‒ was included in the methodology. Comprehensiveness was defined as the level of completeness of a country’s overall policy framework – the number of different policy types it has vis-à-vis its peers. The comprehensiveness metric was obtained by assigning each country a relative score based on how many policies were available in that country out of a possible maximum of eight. Scores were then benchmarked against one.
 
 The World Bank’s Worldwide Governance Indicators (WGI) 2014 index was used to address the question of political risk. This index covers six overarching political and country risk-related factors ‒ voice and accountability, political stability and absence of violence, governance effectiveness, regulatory quality, rule of law, and control of corruption. The six components of the WGI score were averaged to obtain the final political risk metric. The political risk subcomponent score was then added to the comprehensiveness score rank to derive a final policy equalizer per country. A nation’s equalizer was then multiplied by its raw country policy score to derive a final clean energy policy score.
+
 It should be noted that in the cases of the Indian states and Chinese provinces analyzed, the overall policy scores for India and China nationally were applied.
 
 #### Power sector structure
 
 A fundamental assumption underlies the power sector structure indicator: a liberalized power market is more conducive to attracting investment in renewable energy development than a tightly controlled market. This indicator seeks to gauge the degree of liberalization in a country’s power market.
+
 To derive the power sector score, 13 specific questions were asked about a country’s power market, with possible scores of low, medium, and high per question with a maximum possible score for any country of 5. As these questions were relatively non-qualitative, Bloomberg New Energy Finance conducted primary research on the power market structures for all 80 countries, states and provinces and assigned the scores on each question for each. 
-Distributed energy regulatory framework
+
+#### Distributed energy regulatory framework
 
 Climatescope examined some of the core regulatory characteristics related to enabling off-grid, mini-grid and small power project activity. This was done through a series of 15 questions posed about each off-grid focus country. These were answered by BNEF analysts after consultations with local officials and private market players. 
+
 Countries received a score on each question. The total score was benchmarked among the off-grid focus countries to derive a score for this indicator.
 
 #### Clean energy rural electrification
 
 The third indicator in the Policy & Regulation category of Parameter I assesses the efforts of nations to expand access to power to the rural poor using clean energy technologies. This also applied to previous years and thus formed part of the score for all countries. Scoring on this indicator was binary: countries with rural electrification programs that promote clean energy received a 1 while others received a 0.
 
-Energy access policies
+#### Energy access policies
 
 The energy access policies indicator was applied only to countries analyzed under the off-grid focus methodology. Like the distributed energy regulatory framework indicator discussed above, this indicator relied on a series of 10 questions BNEF analysts asked about individual nations and answered after local consultation. All but one of these were scored in a manner similar to the approach used for the distributed energy regulatory framework indicator. One question simply looked at the amount an individual government has budgeted for its rural electrification program. 
 	      -  
@@ -128,12 +143,15 @@ The energy access policies indicator was applied only to countries analyzed unde
 The trade barrier indicator was based on data from the World Trade Organization on the average import duties levied by each Climatescope country on a range of clean energy products. These covered nine categories of products across the solar, wind and hydro value chains: inverters, solar lanterns, PV cells and modules, wind towers (of iron or steel), wind turbine blades, wind gearboxes, wind and hydro generators, hydraulic turbine parts. The duties were averaged by sector and then benchmarked against the other countries on the index. Lower overall duties achieved higher scores on the indicator, as higher duties raise the cost of bringing clean technology into the country and contribute to making growth in these sectors harder.
 
 #### CLEAN ENERGY PENETRATION
+
 This category consists of six distinct indicators that seek to measure shares of clean energy installed capacity, shares of clean energy generation and levels of biofuels production, as well as the associated growth rates for each. Again, note that our definition of clean energy here does not include large hydro (50MW or greater), nor does it include nuclear power. These indicators are: clean energy installed capacity, growth rate of clean energy installed capacity, clean energy electricity generation, growth rate of clean energy electricity generation, biofuels production, and growth rate of biofuels production.
+
 Each of the three Indicators related to growth rates contributed 20% to the Clean Energy Penetration category score, and had a net weight of 3.2% toward the overall Climatescope score. Each non-growth energy indicator held a 15% weighting of the category score, with a 2.4% net weight, while the biofuels production indicator held a 10% category weighting, with a 1.6% net weight for the overall Climatescope index. 
 
 In 2015, the method for calculating a country's final clean energy capacity rate score was tweaked slightly.  As in years past, this score was derived using the indexing approach (with the highest scorer receiving a 5 and all other nations scored against that country on a graduated basis).  This year, however, the high scorer benchmark was capped at 150%. There was a simple reason for this: one country that prior to 2014 had virtually no clean energy capacity saw a jump in one year of 289%.  Having all other countries benchmarked against this 289% would have badly hurt the scores of them all (even nations that had posted otherwise remarkable growth rates of 100% or more). As a result, a cap of 150% was used for this particular benchmarking/indexing exercise.   A similar 150% cap on the benchmark was placed on the clean energy electricity generation for the same reason.
 
 Twenty-one countries studied for Climatescope were deemed to have notable biofuels production capacity: Argentina, Brazil, Colombia, Costa Rica, Guatemala, Nicaragua, Paraguay and Peru in Latin America; Ethiopia, Kenya, Malawi, Nigeria, Senegal, and Zimbabwe in Africa; and China, India, Indonesia, Myanmar, Pakistan, Sri Lanka, and Vietnam. These countries were judged based on all six indicators . The remaining set of countries ‒ those with no commercial-scale biofuels production ‒ were assessed based on the first four indicators only; thus the scoring system did not penalize them for not having biofuels production capacity.
+
 Data for all six indicators comprising the clean energy penetration category were derived from primary sources, including websites and publications from energy ministries, power market regulators, system operators and utilities. Whenever possible, 2014 data were employed for Climatescope. Growth rates were calculated based on changes between the latest two years for which data were available. 
 
 #### PRICE ATTRACTIVENESS
@@ -160,7 +178,9 @@ BNEF then used the indexing approach to determine 0-5 scores. The country with t
 #### MARKET SIZE EXPECTATIONS CATEGORY
 
 Markets poised for growth are attractive to clean energy investors. Recent strong growth in power demand, a high percentage of the population without access to reliable electricity, or a high number of citizens reliant on solid fuels for cooking all potential opportunities for clean energy deployment. The Market Size Expectations category sought to measure countries with such characteristics through three indicators, two of which applied to all nations surveyed and one specifically intended to take into account conditions in lesser developed countries.
+
 The clean energy electrification indicator assessed electrification levels in a country. The nation with the lowest such rate was considered the benchmark and received a mark of 5, with all others then receiving scores mapped relative to the maximum. The power demand growth rate indicator examined the last five years of growth in electricity demand in a country, again with countries benchmarked against a high scorer of 5. 
+
 Finally, for the off-grid focus countries, the population using solid fuels for cooking indicator employed data collected by the Alliance for Clean Cook Stoves to determine what percentage of a country’s population could potentially be served with clean cook stoves or other technology that could allow them to cook using cleaner fuels instead of solid fuels.
 
 ***
@@ -173,9 +193,12 @@ Few investors are comfortable with being the first to invest in a new technology
 In all, Parameter II comprises 11 indicators distributed across four categories: Amount Invested, Fund Sources, Green Microfinance and Cost of Debt. Each of these four categories contributed with varying weights to the overall Clean Energy Investment and Climate Financing parameter score (see figure above).
 
 #### AMOUNT INVESTED
+
 The Amount Invested category consists of two indicators related to historic financial commitments to low-carbon companies and projects: cumulative clean energy investment and clean energy investment growth rate. The timeframe used was 2010 to 2014. 
+
 Data sources employed in the category were drawn from BNEF’s proprietary Industry Intelligence database ‒ the world’s most accurate database of clean energy and carbon investment activity. The database contains detailed information on funds invested in clean energy projects and technologies, grant programs and grants, venture, private equity and corporate finance transactions, and project financing. The Amount Invested methodology follows that employed in Climatescope 2014. 
-Cumulative clean energy investment
+
+#### Cumulative clean energy investment
 
 The clean energy investment indicator of the Amount Invested category includes four metrics related to the investment type: asset finance, corporate finance, venture capital and private equity investment. All three investment-type metrics were aggregated to derive the total cumulative clean energy investment figure. Data points underlying these metrics are available online for the purpose of external analysis.
 
@@ -195,6 +218,7 @@ The methodology employed to track loan, grants and grant program commitments rem
 #### Local investment by local players
 
 Only total new investments were used in the analysis of this indicator. Investment into small distributed projects was not considered. The total investment data for each country was then filtered by investor domicile to derive the dollar amount committed in any given country by investors domiciled in the same country. The score for this indicator was obtained by taking the ratio of dollar amount committed by local players for local projects over total clean energy investment at a national level. The country with the highest ratio received the maximum score of 5 and was considered the benchmark.
+
 Investors were classified by the country in which they are registered in all instances except where a non-governmental agency was deemed to hold a stake of 50% or greater in the ownership structure of the investor. In such cases, the majority stakeholder’s domicile was applied. In cases where specific investors in a project could not be identified, the value of the deal was considered to be “unknown” for the purpose of this analysis. 
 
 To illustrate the methodology, consider the 2012 $130m financing of the 100.8MW Satara wind farm in Panama. In this specific transaction only $41.42m – not the entire financial commitment to the project – was recorded toward the total value of investments by local players for Panama.
@@ -221,6 +245,7 @@ A nation’s ability to attract capital and accelerate low-carbon energy deploym
 #### Service providers
 
 A well-developed local presence of service providers for the low-carbon economy, including firms involved in legal and marketing services, project development and ancillary services is imperative to propel and sustain the development of clean energy. Points were given if the country had at least one provider in each sub-sector. For the off-grid focus countries, a separate indicator for those service providers specifically related to distributed clean energy is taken into consideration.
+
 #### Sector value chains
 
 The clean energy sector value chains indicator tracked the presence of six distinct sector value chains – and their subsectors – in each country, biofuels, biomass & waste, geothermal, small hydro, solar and wind. Combining all segments yielded a maximum possible score of 40 points per country. Nations were awarded 1 point per segment they had in place. A strong manufacturing base is imperative for attracting investment and producing the necessary equipment to help expand clean energy capacity. For the off-grid focus countries, we added a separate indicator for those companies that operate within the distributed clean energy sectors.
