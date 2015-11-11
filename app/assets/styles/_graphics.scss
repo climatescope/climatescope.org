@@ -429,9 +429,11 @@
 }
 
 .chart-note {
-  float: left;
   @extend .hd-label;
-  margin: 0 0 0 100px;
+  margin: -1rem 1rem 0 0;
+  text-align: right;
+  position: relative;
+  z-index: 100;
 }
 
 
