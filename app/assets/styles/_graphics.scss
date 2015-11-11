@@ -428,6 +428,14 @@
   opacity: 0.6;
 }
 
+.chart-note {
+  @extend .hd-label;
+  margin: -1rem 1rem 0 0;
+  text-align: right;
+  position: relative;
+  z-index: 100;
+}
+
 
 $circle-size: 0.625rem;
 $circle-gutter: 0.5rem;
