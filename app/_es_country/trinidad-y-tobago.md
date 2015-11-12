@@ -18,7 +18,7 @@ En enero de 2011, el MEEA publicó su Marco de Políticas de Energía Renovable,
 
 El 1 de octubre de 2014, el gobierno lanzó la Incubadora de Negocios de Energía Sostenible y Renovable. Fuera de eso, la única política de energía renovable que está vigente en la actualidad en Trinidad y Tobago es una desgravación impositiva “por desgaste” del 150% del gasto en plantas, maquinarias, partes y materiales para el uso en la construcción de calentadores de agua solares, la adquisición de turbinas eólicas y sus equipos complementarios, o la adquisición de sistemas solares fotovoltaicos y sus equipos complementarios.
 
-#### Resumen de Puntajes 
+#### Resumen de Puntaje
 
 Trinidad y Tobago consiguió un puntaje general de 0.57 en el Climascopio 2015, colocándose en el puesto 48 entre todos los países, trepando tres lugares desde el puesto 51 en que se encontraba en 2014 cuando había obtenido un puntaje de 0.54.
 Su crecimiento estuvo fuertemente relacionado con los indicadores dedicados a Instituciones Financieras en Relación a la Energía Limpia y Cadenas de Valor de Energía Limpia por Sector, ambos pertenecientes al Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia.

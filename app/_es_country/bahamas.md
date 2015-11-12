@@ -19,7 +19,7 @@ La red eléctrica nacional depende en su totalidad de fuentes fósiles importada
 En 2013, el gobierno lanzó su Política Nacional de Energía 2013–2033 exponiendo su visión y sus metas para un sector reformado, moderno y diversificado para 2033. Este documento abarca cuatro objetivos relacionados a la conservación y eficiencia energéticas. Una de las áreas prioritarias que expone es el desarrollo de energías renovables con una meta del 30% de la matriz nacional generada a través de fuentes de energía limpia para 2030. A pesar de esta publicación, hasta 2015, no se ha publicado legislación vinculante alguna para propulsar al país en dirección a tales objetivos. 
 Finalmente, en Bahamas se consideró la adopción de políticas de medición neta y del sistema de primas (feed-in tariff) como formas de promover el desarrollo de la energía solar. Sin embargo, hasta marzo de 2015, no se adoptaron nuevas regulaciones energéticas.
 
-#### Resumen de Puntajes
+#### Resumen de Puntaje
 
 Bahamas descendió una posición hasta el puesto 53 considerando el puntaje total obtenido en el Climascopio 2015, siendo este de 0.48. El puntaje obtenido en 2014 había sido 0.53.
 El descenso de la posición del país en el ranking general puede ser en gran medida atribuido al Parámetro I Marco Propicio, en el cual desmejoró en su indicador del Precio Promedio de la Electricidad al Por Menor.

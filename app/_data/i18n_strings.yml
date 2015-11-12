@@ -154,9 +154,9 @@ Financing & Investment:
 Fuel 2014:
   en: "Fuel 2014"
   es: "Fuel 2014 es"
-Get the main findings: 
-  en: "Get the main findings"
-  es: "Get the main findings es"
+Get the key findings: 
+  en: "Get the key findings"
+  es: "Obtener Descubrimientos Claves"
 GHG Management: 
   en: "GHG Management"
   es: "Gestión de GEI"
@@ -210,7 +210,7 @@ Installed capacity:
   es: "Capacidad instalada"
 Key Findings:
   en: "Key Findings"
-  es: "Key Findings ES"
+  es: "Descubrimientos Claves"
 lac:
   en: "Latin America and the Caribbean"
   es: "América Latina y el Caribe"
@@ -510,7 +510,7 @@ View in detail:
   es: "Ver en detalle"
 View key findings:
   en: "View key findings"
-  es: "View key findings ES"
+  es: "Ver Descubrimientos Claves"
 View less:
   en: "View less"
   es: "Ver menos"
