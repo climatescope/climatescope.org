@@ -27,6 +27,9 @@ After two rounds of revision, three more technologies (biogas, geothermal and so
 
 Kenya has made significant progress in increasing electricity access by extending the grid and off-grid projects (both diesel and renewable). As a result, electrification rates have nearly doubled since 2010, to 35% by end-2014. Overall, the country now aims to reach universal electricity access by 2020, after the government brought forward the deadline by a decade.
 
+Among the African countries, Kenya hosts the second highest number of carbon offset projects after South Africa. As part of
+its Intended Nationally Determined Contribution (INDC) in the run up to the Paris climate conference, the country committed to cutting greenhouse gas emissions by 30% relative to business as usual by 2013.
+
 #### Score Summary
 
 Kenya scored 1.74 in Climatescope 2015, placing it 6th on the list of countries overall. Among the 19 African nations, it was second only to South Africa. Its highest ranking was on Enabling Framework Parameter I.

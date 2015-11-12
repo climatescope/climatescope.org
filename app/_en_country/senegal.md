@@ -9,7 +9,7 @@ grid: off
 ---
 Senegal, which in late 2014 discovered offshore oil reserves, is first and foremost a country with abundant solar, wind and bioenergy potential. The government has recognized this potential for some time: the national utility first applied renewable energy to rural electrification in the late 1970s.
 
-However, the lack of a clear legal framework, weak implementation capacity within the government and at the national power company, and disappointing economic growth, have all held back the development of the power sector: its capacity is 857 MW for 14m inhabitants. In turn, the IMF estimates that power shortages and losses from transmission lines cost Senegal up to 1% of GDP growth per year.
+However, the lack of a clear legal framework, weak implementation capacity within the government and at the national power company, and disappointing economic growth, have all held back the development of the power sector: its capacity is 864 MW for 14m inhabitants. In turn, the IMF estimates that power shortages and losses from transmission lines cost Senegal up to 1% of GDP growth per year.
 
 The country hopes to reach an average yearly growth of 7.1% through its “Plan Senegal Emergent,” launched in early 2014. The plan foresees over $16bn of targeted spending up to 2018 ($7bn has already been pledged by the international community). However, the country’s aging oil-based generation fleet is not sufficient to support the targeted growth.
 

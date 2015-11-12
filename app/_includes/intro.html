@@ -9,7 +9,9 @@
             <h2 class="intro-block__title">{{ t['Mapping the Global Frontiers for Clean Energy Investment'][language] }}</h2>
             <div class="intro-block__body">
               <p>{{ t['Explore and assess the investment climate and policies for clean energy investments in 55 emerging markets in Africa, Asia, and in Latin America and the Caribbean offered by the Climatescope 2014 – a unique country-by-country assessment, interactive report and index.'][language] }}</p>
-              <p><a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" class="bttn bttn-success go" title="{{ t['Learn more about the methodology'][language] }}">{{ t['About the methodology'][language] }}</a></p>
+              {% assign col_name = site.collections['en_page'].i18n[language] %}
+              {% assign pg = site[col_name] | where:"id","findings" | first %}
+              <p><a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" class="bttn bttn-success go" title="{{ t['Get the key findings'][language] }}">{{ t['Get the key findings'][language] }}</a></p>
             </div>
           </div>
         </div>
@@ -24,7 +26,7 @@
             <h2 class="intro-block__title">{{ t['The clean energy country competitiveness index'][language] }}</h2>
             <div class="intro-block__body">
               <p>{{ t['Climatescope tracks the conditions for clean energy investment on and off the grid and provides a wealth of publicly-available information.'][language] }}</p>
-              <p><a href="https://www.bnef.com/dataview/climatescope-2015/index.html" class="bttn bttn-success go" title="{{ t['Get the Executive Summary'][language] }}">{{ t['Get the main findings'][language] }}</a></p>
+              <p><a href="https://www.bnef.com/dataview/climatescope-2015/index.html" class="bttn bttn-success go" title="View the visualization showcase">View the visualization showcase</a></p>
             </div>
           </div>
         </div>

@@ -19,13 +19,17 @@ Siguiendo una ley de diciembre de 2002, los generadores de biomasa y eólicos cu
 
 Con respecto al transporte, desde 2010 Colombia ha establecido un mandato de mezcla de combustibles del 10% de biodiésel y etanol en el diésel convencional y la gasolina, respectivamente. En la ciudad de Bogotá, una ley de 2011 exime a los vehículos eléctricos de la restricción de la circulación de vehículos por patente, y desarrolló un programa piloto de cinco años para el fomento de taxis eléctricos.
 
-#### Resumen de Puntajes
+#### Resumen de Puntaje
 
 La posición final de Colombia en el Climascopio 2015 fue en el puesto 19, habiendo ocupado el 16 en 2014. Sus puntajes no presentaron gran variación: 1.39 en 2015 contra 1.33 en 2014.
 Su declive ocurrió a pesar de la notable mejoría en cuanto al indicador de Tasa de Crecimiento de la Capacidad Instalada del Parámetro I. Colombia también registró un crecimiento favorable en la Tasa de Electrificación correspondiente al Parámetro I, en 2015.
+
 En el Parámetro I Marco Propicio, Colombia tuvo un ascenso de 12 posiciones colocándose en el puesto 26. En 2015, su puntaje en el Parámetro I fue de 1.23 contra 0.98 obtenido en 2014.
+
 En tanto, en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, el país cayó siete posiciones hasta el puesto 28. Su puntaje para el Parámetro II fue 0.48 en 2015 y 0.66 en 2014.
+
 En el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, Colombia mejoró su posición respecto del 2014, ascendiendo dos posiciones en 2015 al puesto 22 con un puntaje de 2.05 contra 1.99 del año anterior.
+
 Colombia conservó el quinto puesto en el Parámetro IV Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero. Su puntaje de 2.97 obtenido en 2015 no varió significativamente del de 2.95 correspondiente a 2014.
 
 

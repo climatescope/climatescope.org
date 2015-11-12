@@ -17,7 +17,7 @@ Durante 2015, el gobierno se ha comprometido a conducir un número de reformas e
 
 Surinam es el tercer productor de petróleo en el Caribe detrás de Trinidad y Tobago y Cuba. Produce aproximadamente 16.000 barriles de petróleo diarios. La producción nacional de crudo apenas alcanza a der abasto con el consumo local. La capacidad de refinado de Staatsolie está siendo extendida actualmente, a 15.000 barriles de petróleo por día. Los inversores extranjeros o empresas petroleras tienen permitida la exploración petrolera y la producción, a través de acuerdos de asociación con Staatsolie. En 2014, 10 empresas petroleras internacionales estaban explorando en aguas de Surinam. 
 
-#### Resumen de Puntajes
+#### Resumen de Puntaje
 
 Surinam no logró abandonar el último puesto en el Climascopio que ya había ocupado en 2014, incluso registrando un peor resultado general en 2015, con un puntaje de 0.22 contra 0.31 en 2014.
 La pequeña mejoría que Surinam vio en el Parámetro III Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia, no pudo compensar el deterioro sufrido en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, en el que sufrió un impacto negativo en el indicador de Préstamos, Donaciones, Programas de Donaciones.
