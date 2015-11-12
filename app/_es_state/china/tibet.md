@@ -2,7 +2,7 @@
 layout: state
 
 id: cn-54
-title: Tibet
+title: Tíbet
 
 region: asia
 country: cn
