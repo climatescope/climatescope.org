@@ -2,10 +2,10 @@
 postId: climatescope-2015-launches
 title: Climatescope goes live!
 
-description: The 2015 edition of Climatescope officially goes live on 18 November. Read more for the official announcement.
+description: This year's edition of Climatescope officially goes live on 18 November. Read the official press release here.
 ---
  
-The 2015 edition of Climatescope officially goes live on 18 November. Have a look below for the official announcement.
+On 18 November, Climatescope 2015 officially goes live with the launch of this site and release of an accompanying 200-page report and major data file. Enjoy.
 
 
 EMBARGOED UNTIL 12:01AM EST / 5:01AM GMT, 18 NOVEMBER  
