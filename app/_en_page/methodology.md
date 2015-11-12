@@ -138,8 +138,9 @@ The third indicator in the Policy & Regulation category of Parameter I assesses 
 #### Energy access policies
 
 The energy access policies indicator was applied only to countries analyzed under the off-grid focus methodology. Like the distributed energy regulatory framework indicator discussed above, this indicator relied on a series of 10 questions BNEF analysts asked about individual nations and answered after local consultation. All but one of these were scored in a manner similar to the approach used for the distributed energy regulatory framework indicator. One question simply looked at the amount an individual government has budgeted for its rural electrification program. 
-	      -  
+	      
 #### Policy barriers
+
 The trade barrier indicator was based on data from the World Trade Organization on the average import duties levied by each Climatescope country on a range of clean energy products. These covered nine categories of products across the solar, wind and hydro value chains: inverters, solar lanterns, PV cells and modules, wind towers (of iron or steel), wind turbine blades, wind gearboxes, wind and hydro generators, hydraulic turbine parts. The duties were averaged by sector and then benchmarked against the other countries on the index. Lower overall duties achieved higher scores on the indicator, as higher duties raise the cost of bringing clean technology into the country and contribute to making growth in these sectors harder.
 
 #### CLEAN ENERGY PENETRATION
