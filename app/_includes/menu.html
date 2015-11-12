@@ -24,6 +24,11 @@
         <a href="{{ site.domain }}{{ site.path_prefix }}{{ topic.url }}" title="{{ t['More about'][language] }} {{ topic.title }}" class="param-{{ topic.id }}">{{ topic.title }}</a>
       </li>
       {% endfor %}
+      <li class="separator-top">
+        {% assign col_name = site.collections['en_page'].i18n[language] %}
+        {% assign pg = site[col_name] | where:"id","findings" | first %}
+        <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['View key findings'][language] }}">{{ t['Key Findings'][language] }}</a>
+      </li>
     </ul>
   </li>
   <li>

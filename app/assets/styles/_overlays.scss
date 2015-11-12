@@ -236,7 +236,6 @@ $tooltip-arr-size: 1rem;
   list-style: none;
   text-align: left;
   background-color: #fff;
-  border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: $global-radius;
   box-shadow: 4px 4px 0 rgba($primary-color, 0.05);
@@ -305,6 +304,18 @@ $tooltip-arr-size: 1rem;
   color: $success-color;
   background-color: tint($success-color, 80%);
   opacity: 1;
+}
+.dropdown-menu > li {
+  &:not(:first-child).separator-top {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &:not(:last-child).separator-bottom {
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,

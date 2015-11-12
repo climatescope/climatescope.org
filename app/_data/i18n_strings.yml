@@ -208,6 +208,9 @@ Info:
 Installed capacity: 
   en: "Installed capacity"
   es: "Capacidad instalada"
+Key Findings:
+  en: "Key Findings"
+  es: "Key Findings ES"
 lac:
   en: "Latin America and the Caribbean"
   es: "América Latina y el Caribe"
@@ -505,6 +508,9 @@ View country:
 View in detail: 
   en: "View in detail"
   es: "Ver en detalle"
+View key findings:
+  en: "View key findings"
+  es: "View key findings ES"
 View less:
   en: "View less"
   es: "Ver menos"
