@@ -98,6 +98,9 @@ function chart__clean_energy_investments(element, chartData) {
   };
 
   var update = function() {
+    // Ticks is the same as the number of years.
+    xAxis.ticks(chart_data[0].values.length);
+
     // Domain for the X Axis.
     // Since the years are the same for all the data, just create
     // the domain from one.
