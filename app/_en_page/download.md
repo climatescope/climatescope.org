@@ -13,7 +13,7 @@ arrange: full
       <p>Download the full Climatescope 2015 report.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2014-report-en.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">PDF <span class="badge">19Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2014-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download">PDF <span class="badge">19Mb</span></a>
         </li>
       </ul>
     </div>
@@ -85,7 +85,7 @@ arrange: full
       <p>Download the full Climatescope 2014 report.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2014-report-en.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">PDF <span class="badge">19Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2014-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download">PDF <span class="badge">19Mb</span></a>
         </li>
       </ul>
     </div>
