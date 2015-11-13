@@ -19,7 +19,7 @@ Un mandato determina que para el año 2018, el 5% del consumo eléctrico del pa�
 México también posee objetivos para la reducción de emisión de gases invernaderos, proponiéndose mitigar sus emisiones en un 30% para el año 2020, y en un 50% para el 2050, con los niveles de emisión del año 2000 tomados como punto de partida.
 Los desarrolladores de energías renovables pueden beneficiarse de la depreciación acelerada del valor de sus inversiones en equipos. Los bienes utilizados para el control de la contaminación, investigación, y desarrollo también están exentos de aranceles de importación y exportación. México posee dos fondos estatales para energía renovable: uno apoya a las iniciativas de eficiencia energética y de electrificación rural, en tanto que el otro subsidios a los proyectos de energía renovable y de eficiencia energética desarrollados por investigadores e instituciones académicas nacionales.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 México trepó una posición en 2015 hasta el séptimo puesto en el Climascopio habiendo logrado obtener un puntaje de 1.72. En 2014, México había registrado un puntaje general de 1.57.
 En 2015, México mostró adelantos en el indicador de Políticas de Energía Limpia que forma parte del Parámetro I Marco Propicio. Sin embargo, ese desarrollo fue parcialmente eclipsado por su debilidad en el indicador Inversión de Financiación de Activos  del Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático.

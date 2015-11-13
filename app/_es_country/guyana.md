@@ -21,7 +21,7 @@ Aproximadamente el 82% de la población total del país (0,8 millones de habitan
 
 Desde 2012, el gobierno de Guyana exime a los equipos y maquinarias que generan o utilizan electricidad de fuentes de energías renovables del impuesto al valor agregado y de aranceles de importación. Este es el único incentivo a las energías renovables vigente en la actualidad.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 El puntaje general de Guyana en el Climascopio 2015, de 0.54, está levemente por debajo de su puntaje de 0.60 en 2014. Esa pequeña diferencia la dejó en el puesto 51 en 2015, descendiendo desde el puesto 49 en que se encontraba el año anterior.
 En 2015, Guyana registró mejorías en el indicador de las Tasas de Crecimiento de las Inversiones en Energía Limpia que forma parte del Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático. Sin embargo, su progreso en dicho indicador fue neutralizado por un desempeño inferior en aquel que se refiere a Préstamos, Donaciones, Programas de Donaciones, presente en el mismo parámetro.

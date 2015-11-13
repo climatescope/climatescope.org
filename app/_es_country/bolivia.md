@@ -15,7 +15,7 @@ El sector eléctrico del país se encuentra mayormente en manos de la estatal Em
 
 Bolivia tiene una tasa de electrificación baja en comparación a otros países de América Latina. Alrededor del 87% de los bolivianos se encuentra conectado a la red, con una penetración superior en las áreas urbanas (alrededor del 97%, contra el 67% en zonas rurales). Se espera que este índice se eleve gracias al programa del gobierno Electricidad para Vivir con Dignidad, el cual se enfoca en la expansión de la red y la instalación de sistemas solares fotovoltaicos,  eólicos e híbridos en municipios de bajos recursos a lo ancho del país.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 Bolivia obtuvo 1.04 puntos en el Climascopio 2015, lo que posicionó al país en el puesto 29 en los resultados generales. 
 Escaló siete posiciones desde 2014 en la escala general, ya que logró ascender desde el séptimo hasta el segundo puesto en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático, en el que obtuvo un puntaje destacado en el indicador Tasa de Crecimiento de las Inversiones en Energía Limpia.

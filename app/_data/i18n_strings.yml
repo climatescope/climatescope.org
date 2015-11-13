@@ -4,6 +4,9 @@
 2013 Edition: 
   en: "2013 Edition"
   es: "Edición 2013"
+2014 Edition: 
+  en: "2014 Edition"
+  es: "Edición 2014"
 about:
   en: "about"
   es: "sobre"
@@ -175,6 +178,9 @@ Go to:
 Go to country page: 
   en: "Go to country page"
   es: "Ir a la página del país"
+Go to page:
+  en: "Go to page"
+  es: "Ir a la página"
 Go to policy page: 
   en: "Go to topic page"
   es: "Ir a la página de la politica"
@@ -246,7 +252,7 @@ More about the Climatescope:
   es: "Más sobre el Climascopio"
 More about the executive summary: 
   en: "More about the executive summary"
-  es: "More about the executive summary"
+  es: "More about the executive summary ES"
 No results avaliable with current filters.: 
   en: "No results avaliable with current filters."
   es: "No fueron encontrados politicas para este conjunto de filtros."

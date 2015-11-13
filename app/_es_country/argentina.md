@@ -17,7 +17,7 @@ Entretanto, algunas provincias también han tomado acciones. La provincia de San
 
 Argentina requiere que el diésel convencional sea combinado con biodiésel en un 10% y que la gasolina lo sea con etanol en la misma proporción. En el pasado, Argentina exportaba la mayor parte de su producción de biodiésel. En 2011, exportaba 2.000 millones de litros de los 2.900 millones que producía, mayormente a los países de la Unión Europea. En agosto de 2012, la Unión Europea lanzó una investigación antidumping del biodiésel proveniente de Argentina e Indonesia, lo que resultó en un derecho antidumping del 10,6% implementado en mayo de 2013. A fin de apoyar a la producción local, Argentina incrementó su mandato de mezcla de biodiésel, aumentó el precio regulado y redujo el arancel de exportación.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 Argentina se mantuvo en el puesto 20 en el Climascopio 2015, si bien su puntaje aumentó levemente de 1.24 en 2014 a 1.39 en 2015.
 La inamovilidad de los resultados de Argentina se debe en parte a que su adelanto en el Parámetro I fue opacado por un deterioro en el Parámetro II.
