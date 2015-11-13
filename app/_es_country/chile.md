@@ -23,7 +23,7 @@ Chile también promueve la energía limpia a través de la exención total del p
 
 En 2014, se incorporó una normativa de medición neta. Bajo esta regulación, aquellos consumidores del mercado eléctrico minorista que tuvieran energía renovable o instalaciones de cogeneración menores a 100kW pueden conectarse a la red nacional, entregar su excedente y obtener crédito a cambio de la electricidad provista. Dicho crédito equivale al precio por kWh que la empresa de servicios eléctricos percibe de sus consumidores. 
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 El puntaje total de 1.97 obtenido por Chile en el Climascopio 2015 le valió el tercer puesto entre todos los países, escalando desde la quinta posición en que se encontraba en 2014, cuando había obtenido un puntaje de 1.79.
 Su ascenso se vio impulsado por los importantes logros que obtuvo tanto en el Parámetro I Marco Propicio como en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático. La fortaleza de Chile en los indicadores altamente ponderados Políticas de Energía Limpia y Estructura del Sector Energético, ambos pertenecientes al Parámetro I, tuvo una gran influencia, como también lo tuvo su desempeño en las categorías del Parámetro II Costo de la Deuda y Cantidad Invertida.

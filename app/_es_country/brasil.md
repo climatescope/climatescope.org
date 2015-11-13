@@ -41,7 +41,7 @@ En líneas generales, Brasil posee una amplia capacidad de producción de fuente
 
 Dado el nivel de desarrollo de la economía de Brasil y un gran número de empresas multinacionales, el país alberga a por lo menos 100 compañías que han adoptado medidas ya sea de eficiencia energética o de reducción de emisiones. También ha sumado 14 proyectos de compensación de carbono, elevando el total del país a 423, la mayoría de las cuales se encuentra dentro del sector eléctrico. En su preparación para la reunión del COP que se llevará a cabo este año en París, el gobierno ha anunciado una meta de reducción de emisiones del 37% para 2025.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 En 2015, Brasil volvió a colocarse en el segundo puesto en el ranking general del Climascopio, y estuvo primero entre todos los países de América del Norte, Central y Sur. El puntaje general de Brasil en 2015 fue de 2.12, habiendo sido de 2.17 en 2014.
 Brasil mantuvo su segundo puesto en el puntaje general a pesar de haber descendido del primero al tercer puesto en el Parámetro I. Mostró una importante mejoría en el indicador Tasa de   Crecimiento de las Inversiones en Energía Limpia del Parámetro II.

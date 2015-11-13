@@ -5,12 +5,15 @@ id: 4
 title: Gestión de gases de efecto invernadero
 weight: "4"
 ---
-El Parámetro IV, Actividades de Gestión de los Gases de Efecto Invernadero, toma en cuenta los proyectos de compensación de emisiones de carbono, el nivel de las políticas de apoyo a las reducciones de emisiones, y la conciencia corporativa local sobre cuestiones relacionas con el carbono mediante 13 indicadores distintos.
+El parámetros IV de las actividades de Gestión del gas de efecto invernadero tiene en cuenta la actividad del proyecto de
+compensación de carbono, nivel de apoyo a las políticas para la reducción de emisiones de carbono, y la conciencia corporativa local de asuntos relacionados al carbono a través de un total de 13 inputs indicadores. Parámetro IV aportó 15% hacia el puntaje general de cada nación.
 
-Este parámetro abarcó una amplia gama de puntajes, dado que algunas naciones han estado activas en varios aspectos relacionados con su huella de CO2 mediante la adopción de registros o de otras actividades, o bien han puesto en marcha políticas sobre la cuestión a nivel nacional o local. Muchas naciones cuentan con proyectos de reducción de CO2 registrados internacionalmente.
+Los indicadores relevantes se organizan en tres categorías: las compensaciones de carbono, Política de carbono y la conciencia corporativa. La categoría de compensación de carbono mide lo que los países han hecho para desarrollar proyectos de compensación y mide su potencial para continuar los mismos en el futuro. Tiene el mayor peso en lo que se refiere a la puntuación global del Parámetro IV con un 40%. Las otras dos categorías representan el 30% cada uno.
 
-Las cinco mejor ubicadas tendieron a ser naciones que hasta la fecha han desplegado gran actividad para conseguir proyectos registrados internacionalmente, pero la mayoría de ellas también han tenido algún tipo de participación en los esfuerzos por desarrollar políticas concretas de reducción de CO2. 
+En todos los 55 países del Climascopio, la puntuación media de parámetros IV aumento a 1.36 de 1.34 del año anterior.
+Una vez más, esto sugiere una considerable de mejora en los próximos años y probablemente estas puntuaciones aumenten con motivo de las negociaciones sobre el clima patrocinadas por la ONU previstas para diciembre de 2015.
 
-Chile, que encabezó el ranking en el Parámetro II, ha aprobado ahora el primer impuesto al carbono de Sudamérica. China, tercero en el parámetro a pesar de ser el mayor emisor de CO2 del mundo, ha lanzado ahora varios programas piloto de tope y canje. Por su parte, México ha anunciado planes de poner un precio al carbono en 2014.
+La aparición de China, el mayor emisor de CO2 del mundo, en lo alto de esta tabla puede sorprender a algunos. Sin embargo, vale la pena señalar que la metodología del Climascopio no mide las emisiones de los países o reduce sus resultados cuando éstos son altos. Más bien, se trata de tener en cuenta los esfuerzos lanzados explícitamente para reducir las emisiones futuras.
 
-En el otro extremo del espectro, algunas pocas naciones han hecho poco y nada al respecto a la fecha. Algo menos de la mitad de todos los países evaluados tuvieron un puntaje inferior a 1.0 en este parámetro. En algunos casos eso no llamó la atención dado el nivel de desarrollo de muchos de ellos. De hecho, la gran mayoría de las naciones que se ubicaron de la mitad de la tabla para abajo fueron algunas de las menos desarrolladas.
+Es en gran parte por esta razón que China se dio bien y su puntuación fue alta en la edición anterior del Climascopio (tercero el año pasado). El país ha sido acreditado para el establecimiento de programas y registros de comercio de emisiones en las provincias para el recuento de las mismas. En noviembre de 2014, China declaró por primera vez su plan para frenar el crecimiento de al totalidad de emisiones de CO2 a finales de la próxima década.
+

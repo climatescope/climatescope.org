@@ -92,7 +92,7 @@ South Africa’s strong performance on Parameter III again reflects not just its
 
 For the value chains and service providers assessed under the off-grid focus methodology, Uganda again came out top, with at least one locally-based company involved in off-grid energy including distributed solar, mini-hydro and clean cooking. Kenya, Tanzania, Rwanda and Nigeria also score strongly. In general, in many African countries the business of off-grid clean energy access – particularly through the retail of small-scale solar products – is gathering pace, albeit that may be restricted to larger towns (our analysis does not extend to the availability of these options in rural areas).
 
-####  PARAMETER IV
+#### GREENHOUSE GAS MANAGEMENT ACTIVITIES PARAMETER IV
 
 Greenhouse Gas Management Activities Parameter IV takes into account carbon offset project activity, level of policy support
 for carbon emissions reduction, and local corporate awareness of carbon issues through a total of 13 indicators.

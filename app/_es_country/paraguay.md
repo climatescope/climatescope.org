@@ -17,7 +17,7 @@ La abundante disponibilidad de electricidad de bajo costo tiene un impacto direc
 
 Paraguay exige que todo el diésel de venta comercial en el país contenga 5% de biodiésel, en tanto que la gasolina debe contener entre 18% y 24% de etanol, según el requerimiento de octanaje. En junio de 2015, el Congreso de Paraguay sancionó una ley para apoyar el consumo de biocombustibles en el país, requiriendo la existencia de surtidores de etanol in situ.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 Paraguay obtuvo un puntaje general de 0.49 en el Climascopio 2015 que lo ubicó en el puesto 52 entre todos los países, cayendo  del puesto 50 en que se encontraba en 2014, año en que obtuvo un puntaje final de 0.59.
 

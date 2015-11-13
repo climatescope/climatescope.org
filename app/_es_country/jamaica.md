@@ -17,7 +17,7 @@ En 2014, el 73% de los 4TWh de electricidad que produjo Jamaica provino de plant
 
 La política nacional de electricidad de Jamaica engloba cinco proyectos regulatorios: de energías renovables, de biocombustibles, de eficiencia energética, de generación de energía a partir de la combustión de residuos, y del comercio de créditos de carbono. Cada uno incluye objetivos voluntarios que, hasta marzo de 2015, no habían resultado en legislación vinculante. Los usuarios que posean sus propios sistemas de generación pueden participar del programa de medición neta de JPS. A cambio, reciben una tasa de costo evitado con una recarga adicional del 15% por la electricidad suministrada a la red nacional.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 En 2015 Jamaica volvió a ocupar el puesto 39 en el Climascopio obteniendo un puntaje general de 0.81. En 2014 había conseguido 0.80.
 Jamaica presentó mejorías en 2015, tanto en el indicador de Políticas de Energía Limpia perteneciente al Parámetro I Marco Propicio, como en el de la Tasa de Crecimiento de Inversiones en Energía Limpia que forma parte del Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático.

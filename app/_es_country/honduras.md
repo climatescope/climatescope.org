@@ -22,7 +22,7 @@ Un esquema de primas ofreció contratos por US$180 por MWh a los primeros 300MV 
 Hasta la culminación de la primera mitad de 2015, un total de 387MW de capacidad  fotovoltaica había sido comisionada en el país, convirtiéndolo en el segundo mercado de energía solar más importante de América Latina.
 Honduras también apela a las subastas para contratar nueva capacidad eléctrica. En 2010, ENEE llevó adelante una licitación exclusivamente de energía limpia, a través de la cual contrató un total de 250MW de capacidad de 39 proyectos hidroeléctricos, de biomasa, de cogeneración y geotérmicos.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 Honduras avanzó 11 posiciones en el Climascopio 2015 con un puntaje general de 1.50, llegando al puesto 14. Las mediciones del país en 2014 habían dado un resultado de 1.15, ubicándolo en el puesto 25.
 En 2015 Honduras se benefició de un vigoroso desempeño en el indicador de la Tasa de Crecimiento de las Inversiones en Energía Limpia, componente del Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático. El país también registró una mejoría pronunciada en el indicador de Inversiones Locales del mismo parámetro.

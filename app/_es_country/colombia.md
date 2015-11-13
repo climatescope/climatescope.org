@@ -19,7 +19,7 @@ Siguiendo una ley de diciembre de 2002, los generadores de biomasa y eólicos cu
 
 Con respecto al transporte, desde 2010 Colombia ha establecido un mandato de mezcla de combustibles del 10% de biodiésel y etanol en el diésel convencional y la gasolina, respectivamente. En la ciudad de Bogotá, una ley de 2011 exime a los vehículos eléctricos de la restricción de la circulación de vehículos por patente, y desarrolló un programa piloto de cinco años para el fomento de taxis eléctricos.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 La posición final de Colombia en el Climascopio 2015 fue en el puesto 19, habiendo ocupado el 16 en 2014. Sus puntajes no presentaron gran variación: 1.39 en 2015 contra 1.33 en 2014.
 Su declive ocurrió a pesar de la notable mejoría en cuanto al indicador de Tasa de Crecimiento de la Capacidad Instalada del Parámetro I. Colombia también registró un crecimiento favorable en la Tasa de Electrificación correspondiente al Parámetro I, en 2015.
