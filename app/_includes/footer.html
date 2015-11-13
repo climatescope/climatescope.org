@@ -1,14 +1,14 @@
 {% assign col_name = site.collections['en_page'].i18n[language] %}
 {% assign contact = site[col_name] | where:"id", "contact" | first %}
 {% assign license = site[col_name] | where:"id", "license" | first %}
+{% assign press = site[col_name] | where:"id", "press" | first %}
 
 <footer id="site-footer" role="contentinfo">
   <div class="row--contained">
     <nav id="comp-nav">
       <ul class="ftr-menu">
-        <li><a href="http://www.fomin.org/climatescope/2012/index.html" title="{{ t['Visit 2012 Edition'][language] }}" target="_blank" rel="external">{{ t['2012 Edition'][language] }}</a></li>
-        <li><a href="http://www.fomin.org/climatescope/2013/index.html" title="{{ t['Visit 2013 Edition'][language] }}" target="_blank" rel="external">{{ t['2013 Edition'][language] }}</a></li>
-        <li><a href="http://www.fomin.org/Knowledge/DevelopmentData/Climatescope/ClimatescopeNews/tabid/594/language/en-US/Default.aspx" title="{{ t['Visit press'][language] }}" target="_blank" rel="external">{{ t['Press'][language] }}</a></li>
+        <li><a href="http://2014.global-climatescope.org" title="{{ t['Visit 2014 Edition'][language] }}" target="_blank" rel="external">{{ t['2014 Edition'][language] }}</a></li>
+        <li><a href="{{ site.domain }}{{ site.path_prefix }}{{ press.url }}" title="{{ t['Visit press'][language] }}">{{ t['Press'][language] }}</a></li>
         <li><a href="{{ site.domain }}{{ site.path_prefix }}{{ contact.url }}" title="{{ t['View contact'][language] }}">{{ t['Contact'][language] }}</a></li>
       </ul>
     </nav>
