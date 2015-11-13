@@ -13,7 +13,7 @@ arrange: full
       <p>Descargar el informe del Climascopio 2015 sobre Latinoamérica y el Caribe.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/reports/climatescope-2015-report-es.pdf.zip" title="Descargar el informe regional del Climascopio 2015 completo" class="bttn bttn-success download data-download">PDF <span class="badge">9.2Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/reports/climatescope-2015-report-es.pdf.zip" title="Descargar el informe regional del Climascopio 2015 completo" class="bttn bttn-success download data-download">PDF <span class="badge">3Mb</span></a>
         </li>
       </ul>
     </div>
@@ -115,7 +115,7 @@ arrange: full
       <p>Descargar el informe del Climascopio 2013 sobre Latinoamérica y el Caribe.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/reports/climatescope-2013-lac-es.pdf" title="Descargar el informe regional del Climascopio 2013 completo" class="bttn bttn-success download data-download">PDF <span class="badge">9.2Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/reports/climatescope-2013-lac-es.pdf" title="Descargar el informe regional del Climascopio 2013 completo" class="bttn bttn-success download data-download">PDF <span class="badge">10.2Mb</span></a>
         </li>
       </ul>
     </div>
@@ -145,7 +145,7 @@ arrange: full
       <p>Descargar el informe del Climascopio 2012 sobre Latinoamérica y el Caribe.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/reports/climatescope-2012-lac-es.pdf" title="Descargar el informe regional del Climascopio 2012 completo" class="bttn bttn-success download data-download">PDF <span class="badge">9.2Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/reports/climatescope-2012-lac-es.pdf" title="Descargar el informe regional del Climascopio 2012 completo" class="bttn bttn-success download data-download">PDF <span class="badge">9.1Mb</span></a>
         </li>
       </ul>
     </div>
