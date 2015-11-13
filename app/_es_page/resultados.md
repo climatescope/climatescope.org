@@ -1,8 +1,8 @@
 ---
 layout: page
 
-title: Descubrimientos Claves
-id: findings
+title: Resultados Globales
+id: results
 ---
 
 El objetivo principal de Climascopio es presentar al público con un compendio dedicado a la inversión y distribución de energías

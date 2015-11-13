@@ -1,8 +1,8 @@
 ---
 layout: page
 
-title: Key Findings
-id: findings
+title: Global Results
+id: results
 ---
 
 Climatescope’s primary goal is to present the public with an almanac of clean energy investment and deployment facts on 55 of the world’s most important developing nations, along with 25 Indian states and Chinese provinces. To that end, it takes into account four over-riding parameters, 54 data indicators, and 199 sub-indicators. In all, over 15,000 individual pieces of data were collected over a six-month period that included in-person visits to three quarters of the countries, states and provinces by the Bloomberg New Energy Finance team.
