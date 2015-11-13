@@ -59,7 +59,7 @@ arrange: full
         </td>
       </tr>
       <tr>
-        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/findings" title="Ir a la página">Resumen Tema</a></td>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/results" title="Ir a la página">Resumen Tema</a></td>
         <td class="cell-download">
           <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/docs/climatescope-2015-parameter-summary-es.pdf" title="Descargue el informe en formato PDF" class="bttn bttn-s bttn-success download data-download">Informe (PDF)</a>
         </td>
