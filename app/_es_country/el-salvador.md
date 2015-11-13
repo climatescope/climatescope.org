@@ -20,7 +20,7 @@ En el país, la electricidad es contratada entre generadores y distribuidores. S
 
 Los proyectos renovables de hasta 20MW  se encuentran exentos de aranceles de importación. La comercialización de créditos bajo el Mecanismo de Desarrollo Limpio (MDL) de las Naciones Unidas para proyectos de hasta 10MW está libre del impuesto a las ganancias.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 El Salvador obtuvo un puntaje general de 1.03 en el Climascopio 2015, posicionándose en el puesto 30 entre todos los países, y descendiendo tres lugares con respecto a 2014, año en que se ubicó en la posición 27 con un puntaje de 1.12.
 La diferencia en el puntaje del país se debió en gran medida a una disminución en los indicadores de Inversiones en Energía Limpia del Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático. Como resultado, también se vio desfavorecido por el puntaje obtenido en el indicador de la Tasa de Crecimiento de las Inversiones en Energía Limpia del Parámetro II.

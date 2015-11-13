@@ -19,7 +19,7 @@ En 2013, Uruguay realizó una licitación solar, con la meta de contratar alrede
 
 Otros incentivos para las energías renovables incluyen la exención del impuesto al valor agregado para la generación eólica y una reducción del impuesto a las ganancias para proyectos de energía limpia y de eficiencia energética. Los usuarios minoristas pueden solicitar participar del programa de medición neta de la UTE, recibiendo créditos a cambio de la generación de energía limpia entregada a la red. Asimismo, Uruguay ha establecido que un 5% de biodiesel y etanol sean mezclados con el diésel convencional y la gasolina, respectivamente, para fines de 2015.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 Uruguay ocupó el octavo lugar en el Climascopio 2015, dos posiciones por debajo de donde se ubicó en 2014. Su puntaje general en 2015 fue de 1.69, en tanto en 2014 había sido de 1.75. 
 

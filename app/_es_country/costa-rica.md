@@ -21,7 +21,7 @@ Para lograr compensar por completo las emisiones de carbono para 2021, Costa Ric
 
 Costa Rica también ofrece exenciones fiscales en los aranceles de importación, el impuesto al valor agregado, y el impuesto a las ganancias sobre determinados materiales y equipos de energías renovables. Asimismo, el ICE sostiene regularmente licitaciones, a fin de contratar capacidad adicional de energía limpia. Un programa piloto de medición neta a cinco años se hallaba vigente en Costa Rica hasta febrero de 2015. El proyecto fue cancelado cuando el límite de capacidad de 10MW fue alcanzado, si bien los usuarios que ya se habían inscripto al programa mantendrán su conexión durante 15 años. En marzo de 2015, ARESEP, la agencia reguladora de servicios públicos de Costa Rica, analizaba la regulación de la medición neta, y es posible que anuncie una actualización de tales políticas a la brevedad. El Ministerio de Ambiente y Energía de Costa Rica está promoviendo el diseño y la implementación de la regulación de medición neta para los pequeños productores de energía solar que se encuentran conectados a la red de distribución.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 Costa Rica cayó del puesto 12 en que se encontraba en 2014 al 15 en el Climascopio 2015. Esta pequeña caída ocurrió a pesar de una ligera mejoría en su puntaje general, de 1.45 a 1.49, dado que otros países registraron progresos más significativos.
 El país centroamericano vio importantes avances en el indicador de Políticas de Energía Limpia correspondiente al Parámetro I.

@@ -20,7 +20,7 @@ La Ley 532 es la principal norma que apoya el desarrollo de energías renovables
 La legislación también ofrece una variedad de incentivos fiscales para los proyectos de energía renovable. Además de las exenciones nacionales, los desarrolladores gozan de reducciones tributarias a nivel municipal.
 En 2015, el gobierno creó precios de referencia para las tecnologías de energía renovable a fin de mejorar la competitividad de las fuentes de energía limpia a lo largo del país. Estos precios referenciales se aplicarían a los proyectos de biomasa, geotérmicos, hidroeléctricos, solares y eólicos. Los precios pueden variar entre US$66 por MWh y US$80 por MWh (rango inferior) para los proyectos eólicos, hasta entre US$103 por MWh y US$118 por MWh (rango superior) para plantas solares.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 En 2015 Nicaragua descendió 13 puestos en el Climascopio, cayendo hasta la posición 27 con un puntaje de 1.14, en tanto que en 2014 había ocupado el puesto 14 con un puntaje de 1.37.
 El desempeño de Nicaragua en 2015 fue marcado por el descenso en los resultados obtenidos en la categoría de Cantidad Invertida incluida en el Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático. También desmejoró en el indicador de Préstamos, Donaciones, Programas de Donaciones incluido en el mismo parámetro.

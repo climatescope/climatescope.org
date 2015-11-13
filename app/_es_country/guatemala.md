@@ -21,7 +21,7 @@ Las subastas han sido el principal motor para la inversión en energías renovab
 
 En 2015, los primeros proyectos subastados comenzaron a entrar en funcionamiento. El primer parque eólico del país, una central de 53MW, fue encargado, en el departamento de Guatemala. Asimismo, dos centrales fotovoltaicas de gran escala (30MW y 50MW) también fueron comisionadas en el departamento de Santa Rosa, aumentando la proporción de energía renovable en Guatemala. La anexión de la nueva capacidad renovable y la cartera de proyectos deberían tener un impacto positivo sobre las tarifas eléctricas, haciendo que estas decrezcan en el largo plazo.
 
-#### Resumen de Puntaje
+#### Resumen de Puntuacion
 
 El puntaje general de Guatemala en el Climascopio 2015 fue de 1.40, lo que lo llevó al puesto 18, 11 niveles por encima del lugar que ocupaba en 2014, año en que obtuvo un puntaje general de 1.10.
 El puntaje del país fue impulsado mayormente por su progreso en cuanto a la Tasa de Crecimiento de las Inversiones en Energía Limpia que forma parte del Parámetro II Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático.
