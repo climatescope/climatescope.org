@@ -10,8 +10,8 @@
             <div class="intro-block__body">
               <p>{{ t['Explore and assess the investment climate and policies for clean energy investments in 55 emerging markets in Africa, Asia, and in Latin America and the Caribbean offered by the Climatescope 2014 – a unique country-by-country assessment, interactive report and index.'][language] }}</p>
               {% assign col_name = site.collections['en_page'].i18n[language] %}
-              {% assign pg = site[col_name] | where:"id","findings" | first %}
-              <p><a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" class="bttn bttn-success go" title="{{ t['Get the key findings'][language] }}">{{ t['Get the key findings'][language] }}</a></p>
+              {% assign pg = site[col_name] | where:"id","results" | first %}
+              <p><a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" class="bttn bttn-success go" title="{{ t['Get the Global Results'][language] }}">{{ t['Get the Global Results'][language] }}</a></p>
             </div>
           </div>
         </div>
