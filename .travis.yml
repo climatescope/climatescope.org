@@ -4,9 +4,9 @@ node_js:
 
 env:
   global:
-  - GH_REF=github.com/developmentseed/climatescope.git
+  - GH_REF=github.com/climatescope/climatescope.github.io.git
   - DEPLOY_BRANCH=master
-  - secure: "QprRfF9pFsN9UZ2AsIIn8DLbNHYalsMP3PFtA3Qe4PAbQaDBKjSEdIuyOvaJOqt0z517aQBKiXbiMyOx6HyORaciaXELzn4uvtQr2STw2BbXbC8h8Ba8UomC2BkE62VOaOiR6dySfVdskp3sNVsvDRH0t8dLpO7QA0W+1RCpx+s="
+  - secure: "Z159wfAlqF9wjKIQidjYCECUMQb3SvB5IvpaKKsXXx0ghd6KAfH/74BGrgOHcPWu67mqKOSGdqQDe2RZ3A3WA8f1aPwT+1Qw6OeaIxWD8eMTL58gEhY68PlhnTUvY+QwV7ufxxi/gZGltvM/1+X3nA12hzyfV/Tn+gqrpEMEUmM="
 
 before_install:
 - chmod +x ./.build_scripts/deploy.sh
