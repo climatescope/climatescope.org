@@ -1,0 +1,1 @@
+{"indicators": [{"value": 8.51, "id": "gdp", "unit": "$bn", "name": "GDP"}, {"value": 1.0, "id": "growth_rate", "unit": "%", "name": "Five-year economic growth rate"}, {"value": 0.38, "id": "population", "unit": "m", "name": "Population"}, {"value": 0.58, "id": "installed_power_capacity", "unit": "GW", "name": "Installed power capacity"}], "iso": "bs", "name": "bs"}

@@ -1,0 +1,707 @@
+  
+// TABLE BAR
+
+.table-graph {
+  position: relative;
+  
+  .avg {
+    position: absolute;
+    top: -25%;
+    left: 0;
+    z-index: 1;
+    height: 150%;
+    width: 1px;
+    background: $primary-color;
+    @include opacity(0.2);
+  }
+  @media print {
+    height: auto;
+    position: static;
+  }
+}
+
+.table-bar {
+  list-style-type: none;
+  overflow: hidden;
+  border-radius: $global-radius;
+  height: 1.25rem;
+  background: tint($primary-color, 95%);
+  box-shadow: inset 0 2px 0 0 rgba($primary-color, 0.1);
+  padding: 0;
+  margin: 0.125rem 0;
+  cursor: help;
+
+  li {
+    float: left;
+    height: 100%;
+    box-shadow: inset 0 2px 0 0 rgba($primary-color, 0.1);
+  }
+
+  li.param-1 {
+    background-color: $infograph-color-a;
+  }
+
+  li.param-2 {
+    background-color: $infograph-color-b;
+  }
+
+  li.param-3 {
+    background-color: $infograph-color-c;
+  }
+
+  li.param-4 {
+    background-color: $infograph-color-d;
+  }
+  @media print {
+    height: auto;
+    list-style-type: disc; 
+    box-shadow: none;
+    li {
+      display: block;
+      float: none;
+      height: auto;
+      box-shadow: none;
+      width: auto !important;
+      height: auto;
+      background: none;
+    }
+  }
+}
+
+.table-nested .table-bar {
+  background: #fff;
+}
+
+
+
+
+.installed-capacity {
+  .area-line-group {
+    fill: none;
+  }
+
+  .clean-energy {
+    &.area {
+      fill: $infograph-color-a;
+    }
+    &.area-line {
+      stroke: shade($infograph-color-a, 15%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-a, 15%);
+    }
+  }
+  .non-clean-energy {
+    &.area {
+      fill: tint($primary-color, 90%);
+    }
+    &.area-line {
+      stroke: tint($primary-color, 75%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: tint($primary-color, 75%);
+    }
+  }
+  
+  .focus-elements {
+    .focus-line {
+      stroke: $primary-color;
+      stroke-opacity: 0.2;
+      stroke-width: 0.5;
+    }
+    .focus-circles {
+      .outer {
+        fill: #FFF;
+        stroke-width: 0.5;
+      }
+      &.non-clean-energy .inner {
+        stroke: none;
+        fill: tint($primary-color, 75%);
+      }
+      &.clean-energy .inner {
+        stroke: none;
+        fill: shade($infograph-color-a, 15%);
+      }
+    }
+  }
+  
+  .chart-legend {
+    dt {
+      &.param-clean-energy:before {
+        background: $infograph-color-a;
+      }
+      &.param-non-clean-energy:before {
+        background: tint($primary-color, 90%);
+      }
+    }
+  }
+}
+
+.clean-energy-investments {
+  .area-line-group {
+    fill: none;
+  }
+
+  .country {
+    &.area-line {
+      stroke: shade($infograph-color-b, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-b, 32%);
+    }
+  }
+  .regional {
+    &.area-line {
+      stroke: tint($infograph-color-b, 0%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: tint($infograph-color-b, 0%);
+    }
+  }
+  .global {
+    &.area-line {
+      stroke: tint($infograph-color-b, 64%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle {
+      stroke: none;
+      fill: tint($infograph-color-b, 64%);
+    }
+  }
+
+  .focus-elements {
+    .focus-line {
+      stroke: $primary-color;
+      stroke-opacity: 0.2;
+      stroke-width: 0.5;
+    }
+    .focus-circles {
+      .outer {
+        fill: #FFF;
+        stroke-width: 0.5;
+      }
+      &.country .inner {
+        stroke: none;
+        fill: shade($infograph-color-b, 32%);
+      }
+      &.regional .inner {
+        stroke: none;
+        fill: tint($infograph-color-b, 0%);
+      }
+      &.global .inner {
+        stroke: none;
+        fill: tint($infograph-color-b, 64%);
+      }
+    }
+  }
+
+  .chart-legend {
+    dt {
+      &.param-country:before {
+        background: shade($infograph-color-b, 32%);
+      }
+      &.param-regional:before {
+        background: tint($infograph-color-b, 0%);
+      }
+      &.param-global:before {
+        background: tint($infograph-color-b, 64%);
+      }
+    }
+  }
+}
+
+.carbon-offset {
+  .power-generation {
+    fill: $infograph-color-d;
+  }
+  .methane {
+    fill: tint($infograph-color-d, 16%);
+  }
+  .forestry {
+    fill: tint($infograph-color-d, 32%);
+  }
+  .waste {
+    fill: tint($infograph-color-d, 48%);
+  }
+  .energy-efficiency {
+    fill: tint($infograph-color-d, 64%);
+  }
+  .other {
+    fill: tint($infograph-color-d, 80%);
+  }
+
+  .chart-legend {
+    .label, .value {
+      fill: $body-font-color;
+      font-family: $brand-font-family;
+      font-weight: $brand-font-weight;
+    }
+    .label {
+      font-weight: $brand-font-bold;
+    }
+  }
+}
+
+.chart-trendline {
+  position: relative;
+  height: 2rem;
+  width: 8rem;
+
+  .trendline {
+    stroke: tint($primary-color, 32%);
+    stroke-width: 1;
+    fill: none;
+    // Parameter trendlines.
+    &.trendline-1 {
+      stroke: $infograph-color-a;
+    }
+    &.trendline-2 {
+      stroke: $infograph-color-b;
+    }
+    &.trendline-3 {
+      stroke: $infograph-color-c;
+    }
+    &.trendline-4 {
+      stroke: $infograph-color-d;
+    }
+  }
+
+  .trendline-end {
+    stroke: none;
+    fill: tint($primary-color, 32%);
+    // Parameter trendlines.
+    &.trendline-1 {
+      fill: $infograph-color-a;
+    }
+    &.trendline-2 {
+      fill: $infograph-color-b;
+    }
+    &.trendline-3 {
+      fill: $infograph-color-c;
+    }
+    &.trendline-4 {
+      fill: $infograph-color-d;
+    }
+  }
+
+  .focus-elements {
+    .focus-line {
+      stroke: $primary-color;
+      stroke-opacity: 0.2;
+      stroke-width: 0.5;
+    }
+    .focus-circles {
+      .outer {
+        fill: #FFF;
+        stroke-width: 0.5;
+      }
+    }
+  }
+}
+
+.trendline-tooltip .tooltip-inner {
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.chart-std {
+  position: relative;
+  height: 250px;
+  
+  .axis {
+    line {
+      fill: none;
+      stroke: tint($primary-color, 90%);
+      shape-rendering: crispEdges;
+    }
+
+    text {
+      @extend .hd-label;
+      fill: $primary-color;
+    }
+    text.label {
+      fill: tint($primary-color, 60%);
+    }
+
+    path.domain {
+      fill: none;
+      stroke: none;
+    }
+  }
+}
+
+.chart-wrapper {
+  margin: 0;
+  padding: 0;
+  figcaption {
+    @extend .hd-xxs;
+    text-align: center;
+  }
+  
+  .lt-ie9 & {
+    display: none;
+  }
+}
+
+.tooltip-chart {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+.chart-legend {
+  dt {
+    position: relative;
+    @extend .hd-label;
+    @extend .truncated;
+    margin-left: 6.5rem;
+    line-height: 1.5rem;
+    padding: 0 0 0 1rem;
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+      margin-top: -0.25rem;
+      content: '';
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: $global-rounded;
+    }
+  }
+  dd {
+    float: left;
+    clear: left;
+    width: 4rem;
+    text-align: right;
+    margin-top: -1.5rem;
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    line-height: 1.5rem;
+  }
+}
+
+
+// Price attractiveness 
+.chart-price-bars {
+  fill: $infograph-color-a;
+}
+
+.global_average_bar {
+  fill: tint($primary-color, 60%);
+}
+
+.global_average_tooltip {
+  color: tint($primary-color, 60%);
+  font-size: .75rem;
+
+  .avg {
+    font-weight: $body-font-bold
+  }
+}
+
+.chart-background-bar {
+  fill: tint($primary-color, 95%);
+}
+
+.empty-hover-bars {
+  fill: transparent;
+}
+
+.chart-subhead {
+  @extend .hd-label;
+  padding: 0;
+  text-align: left;
+  margin: 10px 0 0 100px;
+}
+
+.chart-price-bars:hover {
+  opacity: 0.6;
+}
+
+.chart-note {
+  @extend .hd-label;
+  margin: -1rem 1rem 0 0;
+  text-align: right;
+  position: relative;
+  z-index: 100;
+}
+
+
+$circle-size: 0.625rem;
+$circle-gutter: 0.5rem;
+.value-chains {
+  list-style: none;
+  font-family: $brand-font-family;
+
+  .card-wrapper {
+    @include col(6/12, $cycle: 2);
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    overflow: hidden;
+    background-color: tint($primary-color, 97%);
+    padding: 1rem;
+
+    .card-title {
+      @include col(4/12, $gutter: 0);
+      margin-bottom: 0;
+      font-size: 1rem;
+      line-height: 1;
+      padding-right: 1rem;
+      text-align: center;
+      color: $infograph-color-c;
+
+      &:after {
+        margin-top: 0.5rem;
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+
+    .card-content {
+      @include col(8/12, $gutter: 0);
+      padding-left: 1rem;
+      border-left: 1px solid tint($primary-color, 68%);
+    }
+
+    .card-icon {
+      color: tint($primary-color, 38%);
+      padding-top: 0.5rem;
+    }
+
+    &.biofuels .card-title:after { @extend .collecticon-leaf; @extend .card-icon }
+    &.small-hydro .card-title:after { @extend .collecticon-drop; @extend .card-icon }
+    &.solar .card-title:after { @extend .collecticon-sun; @extend .card-icon}
+    &.geothermal .card-title:after { @extend .collecticon-flame; @extend .card-icon}
+    &.biomass .card-title:after { @extend .collecticon-trashcan_2; @extend .card-icon}
+    &.wind .card-title:after { @extend .collecticon-wind; @extend .card-icon}
+
+    .available-list,
+    .non-available-list {
+      list-style: none;
+      position: relative;
+      font-size: 0.875rem;
+      padding: $circle-size 0 0 0;
+      margin-bottom: 0;
+
+      li {
+        display: inline;
+
+        &:before {
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          z-index: 1;
+          border-radius: $global-rounded;
+          height: $circle-size;
+          width: $circle-size;
+          margin-right: $circle-gutter;
+        }
+
+        @for $i from 1 through 6 {
+          &:nth-child(#{$i}):before {
+            left: ($circle-size + $circle-gutter) * ($i - 1);
+          }
+        }
+      }
+    }
+
+    .available-list {
+      margin-bottom: 1rem;
+
+      li:before {
+        background-color: $infograph-color-c;
+      }
+    }
+
+    .non-available-list li {
+      color: tint($primary-color, 78%);
+
+      &:before {
+        background-color: tint($primary-color, 78%);
+      }
+    }
+  }
+}
+
+.key {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  list-style: none;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  padding-left: 0;
+  font-family: "Klavika", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+  li {
+    float: left;
+    position: relative;
+    padding-left: $circle-size + $circle-gutter;
+    margin-right: 1rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: (1.25rem - $circle-size) / 2;
+      left: 0;
+      border-radius: $global-rounded;
+      height: $circle-size;
+      width: $circle-size;
+    }
+  }
+
+  .key-unavailable {
+    color: tint($primary-color, 68%);
+
+    &:before {
+      background-color: tint($primary-color, 68%);
+    }
+  }
+
+  .key-available {
+    color: $primary-color;
+
+    &:before {
+      background-color: $infograph-color-c;
+    }
+  }
+}
+
+.policies-type-stats {
+  padding-right: 1rem;
+
+  .policies-bttn-va {
+    margin-bottom: 0.5rem;
+  }
+
+  .policies-type-list {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+    .policies-type-wrapper {
+      @include col(6/12, $cycle: 2);
+
+      @media #{$xxlarge-up} {
+        @include col(4/12, $uncycle: 2, $cycle: 3);
+      }
+
+      margin-bottom: 1rem;
+
+      .policy-type {
+        color: $primary-color;
+        font-weight: 700;
+        cursor: not-allowed;
+
+        &.active {
+          background: tint($secondary-color, 85%);
+          color:$secondary-color;
+          cursor: auto;
+        }
+
+        border-radius: $global-radius;
+        background: tint($primary-color, 95%);
+        box-shadow: inset 0 2px 0 0 rgba($primary-color, 0.1);
+        color: tint($primary-color, 82%);
+        display: block;
+        text-align: center;
+        padding: 0 1rem;
+        min-height: 5rem;
+        font-family: $brand-font-family;
+
+        // Make sure the boxes are all the same size by centering it.
+        // Using the centering the unknown technique.
+        &:before {
+          content: '';
+          display: inline-block;
+          height: 100%;
+          min-height: inherit;
+          vertical-align: middle;
+          margin-right: -0.25em; /* Adjusts for spacing */
+        }
+
+        > span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+
+.power-sector {
+  h2{
+
+      margin-top: 2em;
+
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 2rem;
+    font-family: $brand-font-family;
+    table-layout: fixed;
+    border: 1px solid tint($primary-color, 90%);
+  }
+
+  .top-questions{
+     table tr th:first-child{
+       width: 75%;
+    } 
+  }
+
+  table tr th:first-child{
+       width: 50%;
+  }
+
+  th{
+    background-color: tint($primary-color, 95%);
+    font-size: .9em;
+  }
+
+  tr{
+    td:nth-child(2){
+      background-color: tint($infograph-color-a, 15%);
+    }
+    td:nth-child(3){
+    background-color: tint($infograph-color-a,40%);
+    }
+    td:nth-child(4){
+    background-color: tint($infograph-color-a, 60%);
+    }
+    td:nth-child(5){
+    background-color: tint($infograph-color-a, 75%);
+    }
+    td:nth-child(6){
+    background-color: tint($infograph-color-a, 90%);
+    }
+  }
+
+  th, td {
+    padding: 0.5rem;
+    border-right: 1px solid tint($primary-color, 90%);
+    border-bottom: 1px solid tint($primary-color, 90%);
+  }
+
+  td:not(:first-child) {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 800;
+  }
+}
