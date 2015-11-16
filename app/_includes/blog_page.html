@@ -13,27 +13,28 @@
 
   <div class="layout--page__body">
     <div class="row--contained">
+  
+      <div class="col--main">
+        <ul class="ctas-list">
+          <li ng-repeat="post in blogCtrl.posts">
+            <article>
+              <h4><a class="blog-post-title" href="%% post.url %%" alt="View post">%% post.title %%</a></h4>
+              <p>%% post.description %%</p>
+              <a class="bttn bttn-m bttn-cta go" href="%% post.url %%" title="{{ t['Read more'][language] }}">{{ t['Read more'][language] }}</a>
+              <hr>
+            </article>
+          </li>
+        </ul>
 
-      <ul ng-repeat="post in blogCtrl.posts" class="ctas-list">
-        <li>
-         <h4> <a class="blog-post-title" href="%% post.url %%" alt="View post">%% post.title %%</a></h4>
-        </li>
-        <li>
-         <p>%% post.description %%</p>
-        </li>
-        <li><a class="bttn bttn-m bttn-cta go" href="%% post.url %%" title="{{ t['Read more'][language] }}">{{ t['Read more'][language] }}</a></li>
-        <hr>
-      </ul>
-
-
-      <ul class="bttn-group bttn-page-nav">
-        <li>
-          <a href="" class="bttn bttn-s bttn-dark back" ng-click="blogCtrl.prev()" ng-class="{disabled: blogCtrl.isControlDisabled('prev')}" alt="Previous">Prev</a>
-        </li>
-        <li>
-          <a href="" class="bttn bttn-s bttn-dark go" ng-click="blogCtrl.next()" ng-class="{disabled: blogCtrl.isControlDisabled('next')}" alt="Next">Next</a>
-        </li>
-      </ul>
+        <ul class="bttn-group bttn-page-nav">
+          <li>
+            <a href="" class="bttn bttn-s bttn-dark back" ng-click="blogCtrl.prev()" ng-class="{disabled: blogCtrl.isControlDisabled('prev')}" alt="Previous">Prev</a>
+          </li>
+          <li>
+            <a href="" class="bttn bttn-s bttn-dark go" ng-click="blogCtrl.next()" ng-class="{disabled: blogCtrl.isControlDisabled('next')}" alt="Next">Next</a>
+          </li>
+        </ul>
+      </div>
 
     </div>
   </div> <!-- END layout--hub__body -->
