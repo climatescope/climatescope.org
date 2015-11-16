@@ -44,7 +44,7 @@ On a proportional basis, some countries with smaller non-large hydro clean energ
 
 The Asian countries studied in Climatescope have a wide range of capital availability. China’s capital markets for clean energy extend from private venture capital to asset finance from state-sponsored banks. India has active financial markets but high costs of capital, as well as high costs to swap currency risks. Indonesia has introduced a geothermal drilling fund which helps develop its superb natural resources, and Vietnam Development Bank provides for loans for renewable energy as well. Bangladesh continues to excel in green microfinance mechanisms suited specifically to off-grid clean energy projects, in particular solar PV.  
 
-####  LOW -CARBON BUSINESS AND CLEAN ENERGY VALUE CHAIN PARAMETER III
+####  LOW - CARBON BUSINESS AND CLEAN ENERGY VALUE CHAIN PARAMETER III
 	
 Asian countries performed exceptionally well in Low-Carbon Business and Clean Energy Value Chains Parameter III, which assesses the ability of local manufacturing and other capacity to spur clean energy deployment through five indicators. These parameters account for the presence of local manufacturers, service providers and, in the case of lesser-developed nations, players participating in facilitating the growth of distributed generation. 
 
