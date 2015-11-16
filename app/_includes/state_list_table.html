@@ -18,7 +18,7 @@
         <a href="%% statesCtrl.getStateUrl(state) %%" ng-if="statesCtrl.countryId == 'cn'" title="{{ t['Go to province page'][language] }}">%% state.name %%</a>
         <a href="%% statesCtrl.getStateUrl(state) %%" ng-if="statesCtrl.countryId == 'in'" title="{{ t['Go to state page'][language] }}">%% state.name %%</a>
       </td>
-      <td>%%state.score[0].value | round:2 %%</td>
+      <td>%%state.score[0].value | thousands:2 %%</td>
       <td class="cell-trendline"><div ng-init="statesCtrl.computeTrendlineData(state)" init-chart="trendline" class="chart-trendline" chart-data="state.trendline"><!-- Chart --></div></td>
       <td>
         <div class="table-graph">
