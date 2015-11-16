@@ -10,7 +10,7 @@ limpias en las 55 naciones en desarrollo más importantes del mundo, en conjunto
 las provincias de China. Para llevarlo a cabo, se tiene en cuenta cuatro parámetros decisivos, 54 indicadores de datos, y 199
 subindicadores. Al final, sobre 15,000 piezas de data individuales fueron recolectadas atreves de un periodo de 6 meses en
 el cual se logró visitar en persona a tres cuartas partes de los países, estados y provincias por el equipo de Bloomberg New
-Energy Finance Team.
+Energy Finance.
 
 Los autores esperan que esta valiosa compilación de datos potencialmente útiles se ponga a buen uso por inversionistas,
 desarrolladores de proyectos, fabricantes de equipos, académicos, y legisladores entre otros. Además, que www.globalclimatescope. org se convierta en una herramienta esencial cuando se trate de conducir investigaciones significativas.

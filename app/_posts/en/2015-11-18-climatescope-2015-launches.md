@@ -1,6 +1,6 @@
 ---
 postId: climatescope-2015-launches
-title: Climatescope goes live!
+title: Climatescope 2015 goes live!
 
 description: This year's edition of Climatescope officially goes live on 18 November. Read the official press release here.
 ---

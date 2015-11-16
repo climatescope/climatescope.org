@@ -2,7 +2,7 @@
 postId: climatescope-2015-launches
 title: Bienvenidos a Climascopio!
 
-description: "Bienvenidos a Climascopio! Este portal será oficialmente lanzado el 18 de noviembre, junto con el estreno de un informe suplementario de 200 páginas y un archivo de datos integro."
+description: "EN BREVE CLIMASCOPIO 2015! La edición 2015 de Climascopio será lanzada oficialmente el 18 de noviembre. Consulte el Comunicado de Prensa oficial aquí."
 ---
 
-Bienvenidos a Climascopio! Este portal será oficialmente lanzado el 18 de noviembre, junto con el estreno de un informe suplementario de 200 páginas y un archivo de datos integro. 
+EN BREVE CLIMASCOPIO 2015! La edición 2015 de Climascopio será lanzada oficialmente el 18 de noviembre.  Consulte el Comunicado de Prensa oficial aquí. 

@@ -10,7 +10,7 @@ Incluye los perfiles de 55 países, evaluando su capacidad para atraer capital p
 
 El Climascopio aporta un vistazo a las condiciones en que se encuentran en la actualidad las políticas y finanzas de energías limpias, y a la vez estima hacia dónde pueden evolucionar.
 
-Este es el tercer año del proyecto Climascopio. En 2012 y 2013, el Climascopio se enfocó exclusivamente en América Latina y el Caribe. La primera edición fue desarrollada por el Fondo Multilateral de Inversiones del Grupo del Banco Interamericano de Desarrollo en asociación con Bloomberg New Energy Finance.
+Este es el cuarto año del proyecto Climascopio. En 2012 y 2013, el Climascopio se enfocó exclusivamente en América Latina y el Caribe. La primera edición fue desarrollada por el Fondo Multilateral de Inversiones del Grupo del Banco Interamericano de Desarrollo en asociación con Bloomberg New Energy Finance.
 
 En 2014, el Departamento para el Desarrollo Internacional del Reino Unido y la Agencia de los Estados Unidos para el Desarrollo Internacional se han unido para dar apoyo y asesoramiento. El Climascopio ha crecido, incluyendo un total de 55 países, estados  y provincias del África subsahariana y Asia. Bloomberg New Energy Finance es socio en la investigación y autor del informe.
 
