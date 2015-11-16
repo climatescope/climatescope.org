@@ -1,0 +1,59 @@
+name:es_var,type_var,2015,2014
+Puntaje,score,0.769365537424,0.78560804208
+Marco Propicio,param,0.843661822837,0.837516132854
+Políticas de energía limpia,ind,0.11932208115,0.0840174916141
+Estructura del sector energético,ind,0.0227272727273,0.0333333333333
+Marco regulatorio de la energía distribuida,ind,0.00444444444444,0.0266666666667
+Electrificación rural de energía limpia,ind,0.04,0.04
+Políticas de acceso a la energía,ind,0.0463157894737,0.0644484270511
+Obstáculos políticos,ind,0.00181132075472,0.00384905660377
+Capacidad instalada de energía limpia,ind,0.0055112211943,0.00642445662261
+Tasa de crecimiento de la capacidad instalada,ind,0.00304761904762,0.0
+Generación eléctrica de energía limpia,ind,0.00133105320975,0.00121072620639
+Tasa de crecimiento de generación eléctrica,ind,0.00209605442177,0.0
+Producción de biocombustibles,ind,2.75429327665e-05,0.0
+Tasa de crecimiento de la producción de biocombustibles,ind,0.0,0.0
+Precio promedio de la electricidad spot,ind,0.0,0.0
+Precio promedio de la electricidad al por menor,ind,0.0200836945717,0.0108966292135
+Precio promedio de la electricidad residencial,ind,0.0,0.0
+Precio promedio de la electricidad comercial,ind,0.0,0.0
+Precio promedio de la electricidad industrial,ind,0.0,0.0
+Precio promedio de queroseno,ind,0.0205830296737,0.0219506053286
+Precio promedio de diesel,ind,0.0244179226446,0.0176941468439
+Tasa de crecimiento de la demanda de energía,ind,0.0,0.0
+Tasa de electrificación,ind,0.00615384615385,0.00492307692308
+Población que utiliza combustibles sólidos para cocinar,ind,0.0195918367347,0.0195918367347
+Financiamiento y Inversión,param,0.361139006352,0.311632836588
+Inversiones en energía limpia,ind,0.000134496693679,0.00416075707115
+Tasa de crecimiento de las inversiones en energía limpia,ind,0.0,0.00832027160935
+Inversiones en activos,ind,0.0,0.0
+Inversiones en finanzas corporativas,ind,0.0,0.0
+Inversiones en capital de riesgo / capital privado,ind,0.0,0.0
+"Préstamos, donaciones, programas de donaciones",ind,0.0447449444568,0.0
+Inversiones locales,ind,0.0,0.00317233785
+Número de instituciones de microfinanzas verdes,ind,0.0,0.0
+Microcréditos verdes,ind,0.0,0.0
+Microprestatarios verdes,ind,0.0,0.0
+Coste medio de la microdeuda verde,ind,0.0,0.0
+Coste medio de la deuda,ind,0.030601436013,0.0353364844458
+Tasa swap,ind,0.0328608247423,0.0425
+Cadenas de valor,param,1.33778195489,1.56146616541
+Instituciones financieras en relación a la energía limpia,ind,0.03,0.03
+Cadenas de valor de energía limpia por sector,ind,0.0276315789474,0.0236842105263
+Cadenas de valor de energía limpia distribuida por sector,ind,0.05625,0.09375
+Proveedores de servicios de energía limpia,ind,0.0225,0.0225
+Proveedores de servicios de energía limpia distribuida,ind,0.0642857142857,0.0642857142857
+Gestión de GEI,param,0.819278754332,0.819278754332
+Actividad histórica de derechos de emisión de carbono,ind,0.0,0.0
+Riesgo del mecanismo de desarrollo limpio (MDL),ind,0.0625,0.0625
+Potencial de proyectos,ind,0.0228918131498,0.0228918131498
+Objetivos para la reducción de emisiones de gas de efecto invernadero (GEI),ind,0.0,0.0
+Registro de GEI,ind,0.0,0.0
+Instrumentos basados en el mercado,ind,0.0,0.0
+Instrumentos de PMR & NAMA,ind,0.0,0.0
+Iniciativa de reporte global,ind,0.0,0.0
+Principios de inversión responsable,ind,0.0,0.0
+Iniciativas de eficiencia energética,ind,0.0,0.0
+Políticas de reducción de emisiones,ind,0.0,0.0
+Formación empresarial centrada en el medioambiente,ind,0.0,0.0
+‘Think tanks’ centrado en el medioambiente,ind,0.0375,0.0375

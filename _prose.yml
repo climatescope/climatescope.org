@@ -1,35 +1,43 @@
 prose:
   ignore:
-    - /_data
-    - /assets
-    - /index.html
-    - /humans.txt
-    - /_includes
-    - /_layouts
+    - /app/_data
+    - /app/assets
+    - /app/index.html
+    - /app/humans.txt
+    - /app/_includes
+    - /app/_layouts
     
     # These contain the API, the download and the index and policies pages.
     # However those pages only contain markup, not content.
     # Therefore block.
-    - /en
-    - /es
+    - /app/en
+    - /app/es
     
     # In due time block _prose and _config.
     - /_prose.yml
     - /_config.yml
+    - /_config-dev.yml
+    - /_config-stage.yml
     
     # Development stuff
-    - /source_assets
     - /.gitignore
-    - /Gruntfile.js
+    - /gulpfile.js
+    - /Gemfile
+    - /Gemfile.lock
     - /LICENSE.md
     - /README.md
     - /package.json
+    - /.travis.yml
+    - /.build_scripts
+  
+  rooturl: app
+  
   metadata:
     # English collections.
     ####################################
     
     ## COUNTRY
-    _en_country:
+    "app/_en_country":
       - name: "layout"
         field:
           element: "hidden"
@@ -65,7 +73,7 @@ prose:
               value: "off"
     
     ## STATE
-    _en_state:
+    "app/_en_state":
       - name: "layout"
         field:
           element: "hidden"
@@ -101,7 +109,7 @@ prose:
               value: "in"
     
     ## REGION
-    _en_region:
+    "app/_en_region":
       - name: "layout"
         field:
           element: "hidden"
@@ -117,7 +125,7 @@ prose:
           help: "Used to order the regions in the menu. Each one must have a different value."
     
     ## PAGE
-    _en_page:
+    "app/_en_page":
       - name: "layout"
         field:
           element: "hidden"
@@ -133,7 +141,7 @@ prose:
           label: "Page id"
     
     ## PARAMETER
-    _en_parameter:
+    "app/_en_parameter":
       - name: "layout"
         field:
           element: "hidden"
@@ -153,13 +161,35 @@ prose:
           label: "Parameter weight"
           help: "Used to order the parameters in the menu. Each one must have a different value."
 
+    ## POSTS
+    "app/_posts/en":
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post name"
+          placeholder: "Post name"
+      - name: "postId"
+        field:
+          element: "text"
+          label: "Post id"
+          help: "All translations of a post must have the same id."
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          placeholder: "Author name"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          help: "Small description of the post. Will show up on the post list."
 
 
     # Spanish collections.
     ####################################
     
     ## COUNTRY
-    _es_country:
+    "app/_es_country":
       - name: "layout"
         field:
           element: "hidden"
@@ -195,7 +225,7 @@ prose:
               value: "off"
     
     ## STATE
-    _es_state:
+    "app/_es_state":
       - name: "layout"
         field:
           element: "hidden"
@@ -231,7 +261,7 @@ prose:
               value: "in"
     
     ## REGION
-    _es_region:
+    "app/_es_region":
       - name: "layout"
         field:
           element: "hidden"
@@ -247,7 +277,7 @@ prose:
           help: "Used to order the regions in the menu. Each one must have a different value."
     
     ## PAGE
-    _es_page:
+    "app/_es_page":
       - name: "layout"
         field:
           element: "hidden"
@@ -263,7 +293,7 @@ prose:
           label: "Page id"
     
     ## PARAMETER
-    _es_parameter:
+    "app/_es_parameter":
       - name: "layout"
         field:
           element: "hidden"
@@ -282,3 +312,26 @@ prose:
           element: "text"
           label: "Parameter weight"
           help: "Used to order the parameters in the menu. Each one must have a different value."
+    
+    ## POSTS
+    "app/_posts/es":
+      - name: "title"
+        field:
+          element: "text"
+          label: "Post name"
+          placeholder: "Post name"
+      - name: "postId"
+        field:
+          element: "text"
+          label: "Post id"
+          help: "All translations of a post must have the same id."
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          placeholder: "Author name"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          help: "Small description of the post. Will show up on the post list."

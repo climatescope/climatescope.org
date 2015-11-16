@@ -1,0 +1,98 @@
+.flexslider {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  
+  .flex-control-paging li a {
+    background-color: rgba(#fff, 0.75);
+    border: none;
+    height: 0.5rem;
+    width: 0.5rem;
+    @include box-shadow(none);
+    margin: 0 0.25rem;
+    @include transition(all 0.2s ease 0s);
+    &.flex-active {
+      @include transform(scale(1.5));
+      margin: 0 0.5rem;
+    }
+  }
+  
+  .flex-control-nav {
+    height: 0;
+    bottom: 1rem;
+    li {
+      margin: 0;
+    }
+  }
+}
+
+/* Direction Nav */
+.flex-direction-nav {
+  font-size: 2rem;
+  line-height: 1;
+  li {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    z-index: 10;
+    opacity: 0.64;
+    @include transform(translate(0, -50%));
+    &:last-child {
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
+.flex-direction-nav a  {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  text-shadow: none;
+  top: 0;
+  color: #FFF;
+  &:before {
+    color: inherit;
+    font-size: inherit;
+  }
+  &:active {
+    position: absolute;
+  }
+}
+
+.flexslider .flex-direction-nav .flex-prev:before {
+  @extend .collecticon-arr-left;
+  left:0;
+}
+.flexslider .flex-direction-nav .flex-next:before {
+  @extend .collecticon-arr-right;
+}
+.flexslider .flex-direction-nav .flex-prev { 
+  left: -4rem;
+  text-align: center;
+}
+.flexslider .flex-direction-nav .flex-next { 
+  right: -4rem;
+  text-align: center;
+}
+.flexslider:hover .flex-direction-nav .flex-prev { 
+  opacity: 1;
+  left: 1rem;
+}
+.flexslider:hover .flex-direction-nav .flex-next { 
+  opacity: 1;
+  right: 1rem;
+}
+
+.flexslider:hover .flex-direction-nav .flex-prev:hover,
+.flexslider:hover .flex-direction-nav .flex-next:hover { 
+  opacity: 0.64;
+}
+
+.flex-direction-nav .flex-disabled { 
+  opacity: 0 !important;
+  cursor: default; 
+}

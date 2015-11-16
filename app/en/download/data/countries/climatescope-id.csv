@@ -1,0 +1,59 @@
+name:en_var,type_var,2015,2014
+Score,score,1.61438803749,1.52051409613
+Enabling framework,param,1.04828707293,1.20025103437
+Clean energy policies,ind,0.213890938895,0.190259440015
+Power sector structure,ind,0.0562909090909,0.147746
+Distributed energy regulatory framework,ind,0.0,0.0
+Clean energy rural electrification,ind,0.04,0.04
+Energy access policies,ind,0.0,0.0
+Policy barriers,ind,0.00193418401612,0.0041099202192
+Clean energy installed capacity,ind,0.0157483890065,0.0188087887852
+Growth rate of installed capacity,ind,0.00703763906275,0.0
+Clean energy electricity generation,ind,0.0153727376546,0.00847228892917
+Growth rate of electricity generation,ind,0.00527011363171,0.00122684442385
+Biofuels production,ind,0.00363123311642,0.00876351457711
+Growth rate biofuels production,ind,0.0,0.0
+Average electricity spot prices,ind,0.0,0.0
+Average retail electricity prices,ind,0.0293052631579,0.0290561382847
+Average residential electricity prices,ind,0.0,0.0
+Average commercial electricity prices,ind,0.0,0.0
+Average industrial electricity prices,ind,0.0,0.0
+Average kerosene prices,ind,0.0,0.0
+Average diesel prices,ind,0.0,0.0
+Growth rate of power demand,ind,0.0284668377033,0.0295969505033
+Electrification rate,ind,0.00236658383623,0.0020605280103
+Population using solid fuels for cooking,ind,0.0,0.0
+Financing and Investments,param,0.882698790181,0.442298381816
+Clean energy investments,ind,0.00481101594942,0.00701749880471
+Growth rate of clean energy investments,ind,0.154871814887,0.0176787696878
+Asset finance investments,ind,0.0,0.0
+Corporate finance investments,ind,0.0,0.0
+VC/PE investments,ind,0.0,0.0
+"Loans, grants, grant programs",ind,0.000450553289602,0.000976397895255
+Local investments,ind,0.0014914265959,0.0
+Number of Green MFI,ind,0.00506383051873,0.000243192093474
+Green micro-loans,ind,0.00747973983635,7.9721510758e-06
+Green micro-borrowers,ind,3.52789324659e-06,5.0961630709e-05
+Average cost of green micro debt,ind,0.0037125,0.0135
+Average cost of debt,ind,0.0359252280841,0.0464647222818
+Swap rate,ind,0.051,0.04675
+Value chains,param,3.76973684211,3.64473684211
+Financial institutions in clean energy,ind,0.15,0.15
+Value chains by clean energy sector,ind,0.246710526316,0.246710526316
+Distributed clean energy value chains by sector,ind,0.0,0.0
+Clean energy service providers,ind,0.16875,0.15
+Distributed clean energy service providers,ind,0.0,0.0
+GHG management,param,2.43202029967,2.40675761013
+Carbon offsets historical activity,ind,0.1125,0.1125
+CDM risk,ind,0.025,0.0375
+Carbon offsets future potential,ind,0.0223811459658,0.0223811459658
+GHG emissions reduction target,ind,0.05625,0.01875
+GHG country registry,ind,0.0,0.01125
+GHG market-based instruments,ind,0.009375,0.01875
+PMR & NAMA,ind,0.046875,0.046875
+Voluntary GHG reporting by corporates,ind,0.000576716738197,0.00172342192691
+Investor pressure – PRI signatories,ind,0.00440461592362,0.00460208396255
+Corporate energy efficiency initiatives,ind,0.00631905907438,0.00534074544081
+Corporate emission reduction policies,ind,0.00612150724812,0.00634124422273
+Capacity building – env. business training,ind,0.0375,0.0375
+Capacity building – think tanks,ind,0.0375,0.0375

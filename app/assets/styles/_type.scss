@@ -1,0 +1,175 @@
+// WEB FONTS
+
+// Brand font: Klavika
+// Klavika font licensed to the MIF for use on *.global-climatescope.*
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Regular'
+  src: url('../fonts/klavika/KlavikaWebBasicRegular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/KlavikaWebBasicRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/KlavikaWebBasicRegular.woff') format('woff'); /* Modern Browsers */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Regular Italic'
+  src: url('../fonts/klavika/KlavikaWebBasicRegularItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/KlavikaWebBasicRegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/KlavikaWebBasicRegularItalic.woff') format('woff'); /* Modern Browsers */
+
+  font-style:   italic;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Bold'
+  src: url('../fonts/klavika/KlavikaWebBasicBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/KlavikaWebBasicBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/KlavikaWebBasicBold.woff') format('woff'); /* Modern Browsers */
+
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Bold Italic'
+  src: url('../fonts/klavika/KlavikaWebBasicBoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/klavika/KlavikaWebBasicBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/klavika/KlavikaWebBasicBoldItalic.woff') format('woff'); /* Modern Browsers */
+
+  font-style:   italic;
+  font-weight:  700;
+}
+
+// HEADINGS
+
+h1, .hd-xl,
+h2, .hd-l,
+h3, .hd-m,
+h4, .hd-s,
+h5, .hd-xs,
+h6, .hd-xxs {
+  font-family: $brand-font-family;
+  font-weight: $brand-font-bold;
+  margin: 0 0 1.25rem 0;
+  text-transform: uppercase;
+}
+
+h1, .hd-xl {
+  @include heading(2.25rem); // 36px
+}
+
+h2, .hd-l {
+  @include heading(2rem); // 32px
+}
+
+h3, .hd-m {
+  @include heading(1.75rem); // 28px
+}
+
+h4, .hd-s {
+  @include heading(1.5rem); // 24px
+}
+
+h5, .hd-xs {
+  @include heading(1.25rem); // 20px
+}
+
+h6, .hd-xxs {
+  @include heading(1rem); // 16px
+}
+
+.hd-label {
+  font-size: 0.85rem;
+  line-height: 1.25rem;
+  color: tint($primary-color, 60%);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: $brand-font-family;
+  font-weight: normal;
+}
+
+.hd-param-1,
+.hd-param-2,
+.hd-param-3,
+.hd-param-4 {
+  position: relative;
+  padding-bottom: 0.25rem;
+  margin-bottom: 1.5rem;
+  &:before {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 4px;
+    width: 8rem;
+    content: '';
+  }
+  a, a:visited {
+    color: tint($primary-color, 20%);
+  }
+}
+
+.blog-post-title, .blog-post-title:visited {
+  color: $primary-color;
+}
+
+.hd-param-1:before { background: $infograph-color-a; }
+.hd-param-2:before { background: $infograph-color-b; }
+.hd-param-3:before { background: $infograph-color-c; }
+.hd-param-4:before { background: $infograph-color-d; }
+
+[class*=' hd-'], [class^='hd-'] {
+  b {
+    font-weight: normal;
+  }
+}
+
+// BODY COPY
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+iframe{
+  margin-bottom: 1.25rem;
+}
+
+// Lists
+
+ul {
+  margin-bottom: 1.25rem;
+  padding-left: 2rem;
+}
+
+ol {
+  margin-bottom: 1.25rem;
+  padding-left: 2rem;
+}
+
+dl {
+  margin-bottom: 1.25rem;
+  dt {
+    font-weight: $body-font-bold;
+  }
+  dd {
+    margin: 0;
+  }
+}
+
+hr {
+  margin: 2rem 0;
+  border: 0;
+  clear: both;
+  height: 1px;
+  background: tint($primary-color, 90%);
+}
+
+hr.sm {
+  margin: 0;
+  border: 0;
+  clear: both;
+  height: 1px;
+  background: tint($primary-color, 90%);
+}

@@ -1,0 +1,1 @@
+{"data": [{"values": [{"global_average": null, "value": 1.116, "year": 2014}], "name": "Diesel", "id": "diesel"}, {"values": [{"global_average": null, "value": 1.6131, "year": 2014}], "name": "Kerosene", "id": "kerosene"}], "meta": {"label-y": "", "label-x": "USD/Liter", "title": "Price attractiveness"}, "iso": "tj", "name": "tj"}
