@@ -8,7 +8,6 @@ if [ $TRAVIS_PULL_REQUEST = "false" ] && [ $TRAVIS_BRANCH = "publish" ]; then
   git init
   git config user.name "DevSeed Build Bot"
   git config user.email "dsbb@developmentseed.org"
-  rm ./CNAME
   git add .
   git commit -m "CI deploy to gh-pages"
   git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
