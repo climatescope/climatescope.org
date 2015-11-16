@@ -7,7 +7,7 @@ title: Indonesia
 region: asia
 grid: on
 ---
-Indonesia has ambitious renewable energy and rural electrification targets. It aims to boost renewables’ share of the total primary energy mix to 23% by 2020, compared to 15% previously. The government also plans to encourage distributed renewable energy with an eye toward achieving 100% electrification by 2020 (up from 84.5% today).
+Indonesia has ambitious renewable energy and rural electrification targets. It aims to boost renewables’ share of the total primary energy mix to 23% by 2025, compared to 15% previously. The government also plans to encourage distributed renewable energy with an eye toward achieving 100% electrification by 2020 (up from 84.5% today).
 
 To date, Indonesia has been relatively ambitious in introducing clean energy-friendly policies. It has conducted reverse auction programs for power contracts with geothermal and solar projects. Meanwhile, biomass & waste and small hydro projects have been offered feed-in tariffs. The country also has biofuel consumption mandates for the transport, commercial and power generation sectors.
 
