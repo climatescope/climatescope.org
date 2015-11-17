@@ -41,7 +41,7 @@ developing nations exceeds that in OECD countries.
 
 #### The importance of China
 
-China continues to play a critical role in clean energy’s evolution, not just in emerging markets but in all countries. The nation added 35GW of new renewable power generating capacity all on its own – more than all capacity online today in sub-Saharan Africa’s 49 nations combined, excluding South Africa and Nigeria1 – and attracted $89bn in all types of new clean energy capital.
+China continues to play a critical role in clean energy’s evolution, not just in emerging markets but in all countries. The nation added 35GW of new renewable power generating capacity all on its own – more than all capacity online today in sub-Saharan Africa’s 49 nations combined, excluding South Africa and Nigeria – and attracted $89bn in all types of new clean energy capital.
 
 Subtracting out China’s impact, however, Climatescope’s other 54 nations achieved important progress in 2014. On a percentage
 basis, the growth rate for cumulative clean energy installed in these countries spiked to 21.2%, again more than twice the rate of growth seen in OECD countries. In all, the non-China Climatescope nations added 15.5GW of new capacity in 2014 compared to 9.4GW installed the year prior – a 64% jump.
@@ -56,7 +56,7 @@ over renewables’ ability to address this challenge continues; critics insist o
 
 The first global edition of Climatescope, released in 2014, illustrated how exorbitantly high electricity prices for businesses and consumers in these nations make renewable generation there more cost competitive. This year’s study not only confirmed this but suggested renewables are making further progress.
 
-Industrial power prices remained stubbornly high in many of the 55 Climatescope nations in 2014 even as the “levelized cost of electricity” as calculated by Bloomberg New Energy Finance ticked down 15% year-on-year.2 Wind prices have stayed roughly level, but the technology is already price competitive in many emerging markets.
+Industrial power prices remained stubbornly high in many of the 55 Climatescope nations in 2014 even as the “levelized cost of electricity” as calculated by Bloomberg New Energy Finance ticked down 15% year-on-year. Wind prices have stayed roughly level, but the technology is already price competitive in many emerging markets.
 
 Looking ahead, there is an open question about whether renewables can continue to achieve such progress on costs. The last quarter of 2014 saw a precipitous drop in crude oil prices. While the impact of that decline on power prices was not evident
 in the annual average figures collected by Bloomberg New Energy Finance, oil has continued to trade in a lower band in
