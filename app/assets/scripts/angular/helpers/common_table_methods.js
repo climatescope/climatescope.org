@@ -106,7 +106,7 @@ function setupCommonTableMethods(scope) {
       t += param.name;
       t += '</dt>';
       t += '<dd>';
-      t += round(param.data[0].value, 2);
+      t += formatThousands(param.data[0].value, 2);
       t += '<small>';
       // 0.29 * 100 = 28.999999999999
       // Round to solve the problem.

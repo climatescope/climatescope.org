@@ -59,7 +59,7 @@ $(document).ready(function() {
           param_code += [
             '<dt class="' + className + '">' + param.name + '</dt>',
             '<dd>',
-              round(param.data[0].value, 2),
+              formatThousands(param.data[0].value, 2),
               '<small>' + round(param.weight * 100, 2) + '%' + '</small>',
             '</dd>',
           ].join(' ');
@@ -81,7 +81,7 @@ $(document).ready(function() {
                 '<dt>' + CS.t("Global rank") + '</dt>',
                 '<dd>' + d.score[0].overall_ranking + '</dd>',
                 '<dt>' + CS.t("Global score") + '</dt>',
-                '<dd>' + round(d.score[0].value, 2) + '</dd>',
+                '<dd>' + formatThousands(d.score[0].value, 2) + '</dd>',
                 param_code,
               '</dl>',
               '<a href="' + CS.countryIndex[d.iso] +'" class="bttn bttn-cta go" title="' + CS.t("View country") + '">' + CS.t("View country") + '</a>',

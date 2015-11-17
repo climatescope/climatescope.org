@@ -63,5 +63,5 @@ function formatThousands(number, decimals) {
   if (decimals === undefined) {
     decimals = 2;
   }
-  return d3.format(',')(round(number, decimals));
+  return d3.format(',.' + decimals + 'f')(number);
 }

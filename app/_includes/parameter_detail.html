@@ -94,7 +94,7 @@
               <td class="cell-rank">%% ind.data[0].overall_ranking || '-' %%</td>
               <td class="cell-score">%% ind.data[0].value | thousands:3 %%</td>
               <td class="cell-trendline"><div ng-if="ind.active" init-chart="trendline" class="chart-trendline" chart-data="ind"><!-- Chart --></div></td>
-              <td class="cell-score">%% (ind.data[0].raw.value | thousands:3) || '-' %%<sup>%% ind.data[0].raw.unit %%</sup></td>
+              <td class="cell-score">%% (ind.data[0].raw.value | thousands:2) || '-' %%<sup>%% ind.data[0].raw.unit %%</sup></td>
               <td class="cell-info"><a href="" title="{{ t['About this indicator'][language] }}" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>{{ t['Info'][language] }}</span></a></td>
             </tr>
           </tbody>
