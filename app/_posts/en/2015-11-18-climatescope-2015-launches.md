@@ -18,7 +18,7 @@ nglickman@bloomberg.net
 
 Ahead of important round of climate talks, new study shows majority of 2014 clean energy investment, activity occurred in 55 developing nations
 
-London and Washington D.C., 18 November 2015 – Developing nations eclipsed the world’s wealthiest countries in 2014, attracting more clean energy investment and building more wind, solar, and other renewable power generation than ever before, according to a global assessment released today. 
+London and Washington D.C., 23 November 2015 – Developing nations eclipsed the world’s wealthiest countries in 2014, attracting more clean energy investment and building more wind, solar, and other renewable power generation than ever before, according to a global assessment released today. 
 
 Climatescope, the clean energy country competitiveness index, interactive report, and online tool supported by the UK government, US government, and the Inter-American Development Bank Group offers a compelling portrait of clean energy activity in 55 emerging markets in Africa, Asia and Latin America and the Caribbean. The group includes major developing nations China, India, Pakistan, Brazil, Chile, Mexico, Kenya, Tanzania and South Africa, as well as dozens of others.  
 
