@@ -7,7 +7,7 @@ title: DR Congo
 region: africa
 grid: off
 ---
-Over the last ten years the economy of the Democratic Republic of Congo has grown at an annual rate of 6.3%. Despite this, and its rich endowment of natural resources, the country displays low development indicators with a gross national income of only $430 per capita. The civil war from 1997 to 2003 collapsed much of the country’s infrastructure.
+Over the last ten years the economy of the Democratic Republic of Congo (DRC) has grown at an annual rate of 6.3%. Despite this, and its rich endowment of natural resources, the country displays low development indicators with a gross national income of only $430 per capita. The civil war from 1997 to 2003 collapsed much of the country’s infrastructure.
 
 Hydro accounts for 99% of the country’s generation capacity. Current hydro installed capacity is 2,420MW, of which only 1,281MW is operational. A project to develop an additional 4,800MW at the Inga 3 site is at the development stage, with support from institutions such as the World Bank and the African Development Bank. The country has about 100GW of hydropower potential, the highest in Africa.
 
@@ -24,7 +24,7 @@ The DRC has no specific incentives for renewable energy projects. Imports of goo
 
 #### Score Summary
 
-The Democratic Republic of Congo (DRC) scored 0.55 overall in Climatescope 2015, slipping several places to finish 50th on the list of countries overall and last among the African nations. The country’s highest score was on Greenhouse Gas Management Activities Parameter IV. 
+The DRC scored 0.55 in Climatescope 2015, slipping several places to finish 50th on the list of countries overall and last among the African nations. The country’s highest score was on Greenhouse Gas Management Activities Parameter IV. 
 
 On Enabling Framework Parameter I, the DRC ranked 50th. Its score was weakened by the lack of clean energy incentives and the lack of openness in the structure of its power sector. 
 
