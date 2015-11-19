@@ -25,10 +25,10 @@ arrange: full
       <p>Download the Climatescope model, which includes country data profiles, and the complete set of scores.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/data/climatescope-2015.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">Excel <span class="badge">7Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2015.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">Excel <span class="badge">7Mb</span></a>
         </li>
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-full.csv" title="Download Climatescope scores in CSV format" class="bttn bttn-success download data-download">CSV <span class="badge">0.2Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/data/climatescope-full.csv" title="Download Climatescope scores in CSV format" class="bttn bttn-success download data-download">CSV <span class="badge">0.2Mb</span></a>
         </li>
       </ul>
     </div>
