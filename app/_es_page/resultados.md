@@ -29,5 +29,15 @@ La energía generada por grandes hidroeléctricas continúa desempeñando un pap
 
 Sin embargo, cuando las grandes centrales hidroeléctricas se incluyen en las cifras globales, los países del Climascopio tienen casi la misma capacidad de generación en línea que los países de la OECD: 777GW en comparación con 790GW al cerrar el año 2014. Una vez más, la tasa de crecimiento de la energía baja en carbono (incluyendo las centrales hidroeléctricas grandes) es dos veces más rápida en los países Climascopio que la de los países de la OCDE.Cuando los restantes países no miembros de la OCDE (que no son parte de Climascopio) también se incluyen, la total capacidad de energía limpia en estas naciones emergentes y en desarrollo —incluyendo a las grandes centrales hidroeléctricas— supera la de los países pertenecientes a la OCDE.  
 
+#### La importancia de China
+
+#### Competitividad de costo para las energías renovables
+
+#### Crecimiento de la energía limpia a pesar de los cambios macroeconómicas
+
+#### Las puntuaciones del Climascopio
+
+
+
 
 
