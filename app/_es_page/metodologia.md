@@ -9,10 +9,11 @@ El Climascopio clasifica a los países según su capacidad pasada, presente y fu
 Mientras que históricamente muchas naciones en todo el mundo han recurrido a las grandes plantas hidroeléctricas para cubrir su necesidad local, el estudio se enfocó exclusivamente en las nuevas fuentes de generación con baja emisión de carbono, por ser generalmente las más avanzadas en tecnología y porque por lo general se pueden desarrollar mucho más rápido que los grandes proyectos hidroeléctricos, que pueden llevar años o incluso décadas para entrar en funcionamiento. En comparación, los proyectos eólicos pueden ponerse en marcha en tan sólo dos o tres años; los proyectos fotovoltaicos a escala comercial pueden ser construidos en solamente seis meses y los sistemas fotovoltaicos distribuidos pueden ser agregados a los techos en menos de un día. 
 En resumen, estas tecnologías están preparadas para provocar – y en muchos casos ya lo están logrando – un impacto inmediato sobre el suministro y el acceso a la energía eléctrica en los países en vías de desarrollo. El Climascopio logró evaluar qué tan preparados están estos países a fin de que puedan adoptarlas. En esta cuarta edición, el índice comprende 53 datos o “indicadores”. Algunos de estos indicadores consisten de un solo dato, en tanto que muchos de ellos constan de múltiples datos que han sido sintetizados en una sola cifra. Cada indicador y el parámetro al que corresponde aportan al puntaje total de cada país, pero no se les pondera de la misma manera. El puntaje va desde 0 a un máximo de 5.
 El puntaje final que recibe cada país en el Climascopio está determinado por una combinación ponderada de sus cuatro puntajes de parámetro. Para 2015, la ponderación de estos parámetros se mantiene igual que en 2014:
-•	Marco Propicio Parámetro I – 40%
-•	Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático Parámetro II – 30%
-•	Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia Parámetro III – 15%
-•	Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero Parámetro IV – 15%
+
+* Marco Propicio Parámetro I – 40%
+* Inversiones en Energía Limpia y Créditos para Proyectos Relativos al Cambio Climático Parámetro II – 30%
+* Negocios de Bajas Emisiones de Carbono y Cadenas de Valor de Energía Limpia Parámetro III – 15%
+* Actividades de Gestión de las Emisiones de Gases de Efecto Invernadero Parámetro IV – 15%
 
 El modelo del Climascopio puede ser visto en su totalidad en at www.global-climatescope.org. Se recomienda a los usuarios ajustar la ponderación de los parámetros de acuerdo a sus prioridades y descargar a sus computadoras los datos agregados disponibles.
 Incluyendo a los países menos desarrollados mediante la metodología de “foco fuera de la red”
@@ -48,21 +49,22 @@ Fuente de los Datos: PNUD
 
  Los indicadores adicionales de la metodología “enfoque fuera de la red” fueron específicamente diseñados en consulta con expertos externos para evaluar las condiciones prevalecientes en las naciones en desarrollo. Estos indicadores incidieron sobre los tres primeros parámetros del Climascopio, pero no tuvieron impacto alguno sobre el Parámetro IV, Actividades de Gestión de Gases de Efecto Invernadero. Los indicadores son los siguientes:
 
-•	Marcos regulatorios de la electricidad distribuida: ¿En qué medida la estructura local del mercado de los países facilita el desarrollo de proyectos fuera de la red o de pequeña escala? 
-•	Políticas de acceso a la electricidad: ¿Qué políticas locales específicas hay para impulsar la actividad fuera de la red? 
-•	Precio promedio local del queroseno y el diésel: ¿Qué tan altos son dichos precios y cuán atractivas tornan a las potenciales (y más limpias) fuentes alternativas de generación? 
-•	Población que utiliza combustibles sólidos para la preparación de alimentos: ¿Cuántas personas podrían preferir potencialmente el uso de fuentes alternativas de combustibles para cocinar? 
-•	Cadenas de valor de la electricidad distribuida: ¿Qué bancos de baterías locales, fabricantes de equipos mini-eólicos, proveedores de sistemas mini-fotovoltaicos y otros agentes de similares características existen en el país?
-•	Proveedores de servicios de la electricidad distribuida: ¿Qué promotores locales, facilitadores de sistemas de pago inmediato (pay-as-you-go), proveedores de seguros, etc. hay en el país?
+* Marcos regulatorios de la electricidad distribuida: ¿En qué medida la estructura local del mercado de los países facilita el desarrollo de proyectos fuera de la red o de pequeña escala? 
+* Políticas de acceso a la electricidad: ¿Qué políticas locales específicas hay para impulsar la actividad fuera de la red? 
+* Precio promedio local del queroseno y el diésel: ¿Qué tan altos son dichos precios y cuán atractivas tornan a las potenciales (y más limpias) fuentes alternativas de generación? 
+* Población que utiliza combustibles sólidos para la preparación de alimentos: ¿Cuántas personas podrían preferir potencialmente el uso de fuentes alternativas de combustibles para cocinar? 
+* Cadenas de valor de la electricidad distribuida: ¿Qué bancos de baterías locales, fabricantes de equipos mini-eólicos, proveedores de sistemas mini-fotovoltaicos y otros agentes de similares características existen en el país?
+* Proveedores de servicios de la electricidad distribuida: ¿Qué promotores locales, facilitadores de sistemas de pago inmediato (pay-as-you-go), proveedores de seguros, etc. hay en el país?
 
 En 2015 la metodología del Climascopio se mantiene prácticamente sin variaciones respecto de 2014. Para más detalles sobre la metodología y para poder ver todos los datos relevantes en forma agregada, visite www.global-climatescope.org. Tanto preguntas como comentarios sobre la metodología y los datos son bienvenidos y deben ser dirigidos a climascopio@bloomberg.net.
 
 #### Metodología de puntaje
 
 La metodología de puntaje empleada en las tres primeras ediciones del Climascopio volvió a ser utilizada en esta edición de 2015. Estos métodos incluyen:
-•	Indexado – El índice del Climascopio se basa enteramente en un sistema de puntaje del 0 al 5, en el que 5 representa el puntaje más alto posible. Utilizando el método de indexación, el país con el máximo resultado para un indicador determinado, en la mayoría de los casos luego de una nivelación, recibió el puntaje más alto del índice (5). Los resultados de todos los otros países fueron mapeados en relación con el máximo puntaje. Este método se utilizó con indicadores cuantitativos tales como la capacidad instalada de energía limpia, inversiones en energía limpia y tasas de electrificación. Para la tasa de crecimiento, se adoptó un puntaje guía tope de 150% para evitar que tasas extremadamente elevadas (por ej., en los casos en que un país pequeño agrega un solo proyecto muy significativo a una base muy reducida) tengan un impacto injusto sobre todos los países.
-•	Agrupamiento – En otros casos, los puntajes indicadores de los países fueron agrupados en quintiles predefinidos. Por ejemplo, en el caso del indicador de políticas de energías limpias, se utilizó el agrupamiento para ubicar a los países en diferentes quintiles de acuerdo a la percepción de grado de ambición de sus políticas o la efectividad de su marco político para energías limpias. Esta metodología es más apropiada que la indexación cuando se trata de evaluaciones cualitativas tales como una apreciación sobre la aptitud con la que se desarrollan proyectos de compensación de carbono. El agrupamiento también se utilizó en casos en los que los resultados cuantitativos se basan en datos limitados.
-•	Cómputo simple – Algunos indicadores son binarios y por tanto cuantificables. En algunos casos, el país recibió un puntaje de 0 o de 5. Por ejemplo, uno de los indicadores simplemente se proponía registrar si los países cuentan con programas de electrificación rural que utilicen fuentes de energías limpias. Los que los tenían recibieron un puntaje 5. Los que no, un puntaje 0.
+
+* Indexado – El índice del Climascopio se basa enteramente en un sistema de puntaje del 0 al 5, en el que 5 representa el puntaje más alto posible. Utilizando el método de indexación, el país con el máximo resultado para un indicador determinado, en la mayoría de los casos luego de una nivelación, recibió el puntaje más alto del índice (5). Los resultados de todos los otros países fueron mapeados en relación con el máximo puntaje. Este método se utilizó con indicadores cuantitativos tales como la capacidad instalada de energía limpia, inversiones en energía limpia y tasas de electrificación. Para la tasa de crecimiento, se adoptó un puntaje guía tope de 150% para evitar que tasas extremadamente elevadas (por ej., en los casos en que un país pequeño agrega un solo proyecto muy significativo a una base muy reducida) tengan un impacto injusto sobre todos los países.
+* Agrupamiento – En otros casos, los puntajes indicadores de los países fueron agrupados en quintiles predefinidos. Por ejemplo, en el caso del indicador de políticas de energías limpias, se utilizó el agrupamiento para ubicar a los países en diferentes quintiles de acuerdo a la percepción de grado de ambición de sus políticas o la efectividad de su marco político para energías limpias. Esta metodología es más apropiada que la indexación cuando se trata de evaluaciones cualitativas tales como una apreciación sobre la aptitud con la que se desarrollan proyectos de compensación de carbono. El agrupamiento también se utilizó en casos en los que los resultados cuantitativos se basan en datos limitados.
+* Cómputo simple – Algunos indicadores son binarios y por tanto cuantificables. En algunos casos, el país recibió un puntaje de 0 o de 5. Por ejemplo, uno de los indicadores simplemente se proponía registrar si los países cuentan con programas de electrificación rural que utilicen fuentes de energías limpias. Los que los tenían recibieron un puntaje 5. Los que no, un puntaje 0.
 
 ***
 
@@ -134,13 +136,13 @@ La categoría de los indicadores referente a los precios atractivos tiene en cue
 
 En total, BNEF recolectó datos sobre las cuatro siguientes clases de tarifas eléctricas en cada uno de los países donde estaban disponibles:
 
-•	Spot – El precio promedio pagado en 2014 (o en el último año del que haya datos disponibles) en el mercado liberalizado del país en el que se comercia la electricidad
+* Spot – El precio promedio pagado en 2014 (o en el último año del que haya datos disponibles) en el mercado liberalizado del país en el que se comercia la electricidad
 
-•	Residencial – El precio promedio pagado por la gente en sus hogares
+* Residencial – El precio promedio pagado por la gente en sus hogares
 
-•	Comercial – El precio promedio pagado por los usuarios “comerciales” según la clasificación que de ellos hagan los reguladores locales
+* Comercial – El precio promedio pagado por los usuarios “comerciales” según la clasificación que de ellos hagan los reguladores locales
 
-•	Industrial – El precio promedio pagado por los usuarios “industriales” según la clasificación que de ellos hagan los reguladores locales
+* Industrial – El precio promedio pagado por los usuarios “industriales” según la clasificación que de ellos hagan los reguladores locales
 
 El puntaje final sobre precios atractivos se tomó de dos formas distintas, dependiendo de si un país fue evaluado bajo la metodología de foco de fuera de la red o no. En el caso de los que no lo fueron, se utilizó una combinación de los precios anteriormente mencionados para determinar un puntaje. En el caso de los países con foco fuera de la red, se tomaron en cuenta los precios de la electricidad sumados a los de otras dos fuentes de combustibles.
 
@@ -259,13 +261,13 @@ El puntaje máximo que cada país podía alcanzar en el indicador de riesgo del 
 #### Potencial para el desarrollo de proyectos de compensación de emisiones
 El indicador de potencial de un proyecto evaluó las oportunidades que tienen los proyectos de compensación de emisiones en los países. Las economías carbono-intensivas – aquéllas con altas emisiones por unidad de PIB, o las que en general son altamente ineficientes en el uso de la energía – tienen significativas oportunidades de reducción. Este indicador busca evaluar el tamaño de dicha oportunidad mediante el examen de cuatro métricas:
 
-•	Potencial de reducción mediante la eficiencia energética, medido por la energía utilizada por kilo de equivalente de petróleo por cada $1.000 de PIB
+* Potencial de reducción mediante la eficiencia energética, medido por la energía utilizada por kilo de equivalente de petróleo por cada $1.000 de PIB
 
-•	Potencial de Reducción de Emisiones por Deforestación y Degradación Forestal en los Países en Desarrollo (REDD, por sus siglas en inglés), medido por el potencial de reducción por hectárea de bosque combinado con un puntaje que mide la disposición a REDD
+* Potencial de Reducción de Emisiones por Deforestación y Degradación Forestal en los Países en Desarrollo (REDD, por sus siglas en inglés), medido por el potencial de reducción por hectárea de bosque combinado con un puntaje que mide la disposición a REDD
 
-•	Emisiones antropogénicas de metano
+* Emisiones antropogénicas de metano
 
-•	Alto potencial de emisiones de gas que producen recalentamiento global por óxido nitroso (N2O) y tres tipos principales de gases fluorados – hidrofluorocarbonos (HFCs), perfluorocarbonos (PFCs), y exafluoruro de azufre (SF6), medidos por emisiones de ktCO2 desde 2010
+* Alto potencial de emisiones de gas que producen recalentamiento global por óxido nitroso (N2O) y tres tipos principales de gases fluorados – hidrofluorocarbonos (HFCs), perfluorocarbonos (PFCs), y exafluoruro de azufre (SF6), medidos por emisiones de ktCO2 desde 2010
 
 A cada país se le asignó un puntaje de 1 o de 0 por métrica, permitiéndose un total máximo de cuatro puntos para este indicador. Utilizando el método de indexación, el país con la puntuación máxima en cada métrica recibió el puntaje más alto en la evaluación de dicha métrica. Por su parte, todos los resultados de todos los otros países fueron registrados en comparación con ese puntaje máximo. El puntaje final del indicador se obtuvo sumando los puntajes de las métricas. Este indicador tiene un impacto del 25% en la categoría Compensaciones de Carbono y una incidencia del 1,5% sobre el puntaje general de cada país en el Climascopio.
 
@@ -273,13 +275,13 @@ A cada país se le asignó un puntaje de 1 o de 0 por métrica, permitiéndose u
 
 La categoría políticas de carbono del Parámetro IV se propuso evaluar las políticas e iniciativas públicas adoptadas por los países del Climascopio para reducir las emisiones de gases de efecto invernadero. Esta categoría cubre cuatro amplios indicadores que se hallan interrelacionados (ver figura a la derecha) que responden a las siguientes preguntas:
 
-•	¿Tiene el país metas de reducción de emisiones?
+* ¿Tiene el país metas de reducción de emisiones?
 
-•	¿Cuenta con un registro de gases de efecto invernadero (GEI)?
+* ¿Cuenta con un registro de gases de efecto invernadero (GEI)?
 
-•	¿Planea el país desarrollar instrumentos basados en el mercado para reducir las emisiones de GEI?
+* ¿Planea el país desarrollar instrumentos basados en el mercado para reducir las emisiones de GEI?
 
-•	¿Es un “país participante como implementador” en la Partnership for Market Readiness (PMR, Alianza de Preparación para el Mercado del Carbono), o ha asumido algún compromiso con las políticas y acciones de la Nationally Appropriate Mitigation Action (NAMA, Acciones de Mitigación Nacionalmente Apropiadas)?
+* ¿Es un “país participante como implementador” en la Partnership for Market Readiness (PMR, Alianza de Preparación para el Mercado del Carbono), o ha asumido algún compromiso con las políticas y acciones de la Nationally Appropriate Mitigation Action (NAMA, Acciones de Mitigación Nacionalmente Apropiadas)?
 
 Estos cuatro indicadores miden si un país ha implementado o legislado políticas específicas de reducción de emisiones y, si lo hizo, qué tipo de acciones ha llevado a cabo. Cada uno de estos indicadores contribuyó con una ponderación diferente a la categoría Políticas de Carbono y tiene por tanto una incidencia distinta sobre el índice general del Climascopio.
 
@@ -310,5 +312,3 @@ Los indicadores de iniciativas de eficiencia energética y políticas de reducci
 #### Desarrollo de capacidades: formación empresarial con foco ambiental y grupos de trabajo
 
 Estos dos indicadores son binarios. Se llevó a cabo investigación primaria para determinar si existía al menos un programa de formación empresarial con foco ambiental y un grupo de trabajo (think tank). El país recibe el puntaje máximo por cada uno de estos indicadores si cuenta con una de estas dos estructuras.  
-
-***

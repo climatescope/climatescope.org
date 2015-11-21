@@ -12,13 +12,13 @@ In this fourth edition of the project, the index once again consists of four ove
 
 The final score a country receives under Climatescope is determined by a weighted combination of its four parameter scores. For 2015, the weighting of these parameters remains as it was in 2014: 
 
-●	Enabling Framework Parameter I – 40%
+* Enabling Framework Parameter I – 40%
 
-●	Clean Energy Investment and Climate Financing Parameter II – 30% 
+* Clean Energy Investment and Climate Financing Parameter II – 30% 
 
-●	Low-carbon Business and Clean Energy Value Chains Parameter III – 15%
+* Low-carbon Business and Clean Energy Value Chains Parameter III – 15%
 
-●	Greenhouse Gas Management Activities Parameter IV – 15% 
+* Greenhouse Gas Management Activities Parameter IV – 15% 
 
 The entire Climatescope model can be viewed at www.global-climatescope.org  where users are encouraged to adjust the parameter weightings according to their priorities and download the aggregate data available. 
 
@@ -57,17 +57,17 @@ Data source: UNDP
 
 The off-grid focus methodology’s additional indicators were specifically designed in consultation with outside experts to assess conditions in developing nations. These indicators fell under Climatescope’s first three parameters but had no impact on Greenhouse Gas Management Activities Parameter IV. They were:
 
-●	Distributed energy regulatory frameworks: How well does a country’s local market structure facilitate off-grid or small-scale development of projects?
+* Distributed energy regulatory frameworks: How well does a country’s local market structure facilitate off-grid or small-scale development of projects?
 
-●	Energy access policies: What local policies exist specifically to spur off-grid activity?
+* Energy access policies: What local policies exist specifically to spur off-grid activity?
 
-●	Average local kerosene and diesel prices: How high are these prices and how attractive do they make potential alternative (cleaner) sources of generation?
+* Average local kerosene and diesel prices: How high are these prices and how attractive do they make potential alternative (cleaner) sources of generation?
 
-●	Population using solid fuels for cooking: How many citizens would potentially value alternative fuel sources to cook?
+* Population using solid fuels for cooking: How many citizens would potentially value alternative fuel sources to cook?
 
-●	Distributed clean energy value chains: What local mini-hydro and mini-wind equipment makers, mini-photovoltaic systems providers, and other similar types of players exist in-country? 
+* Distributed clean energy value chains: What local mini-hydro and mini-wind equipment makers, mini-photovoltaic systems providers, and other similar types of players exist in-country? 
 
-●	Distributed clean energy service providers: What local retailers, pay-as-you go facilitators, insurance providers, and others specializing in off-grid and small-scale clean energy services are in-country?
+* Distributed clean energy service providers: What local retailers, pay-as-you go facilitators, insurance providers, and others specializing in off-grid and small-scale clean energy services are in-country?
 
 For 2015, the Climatescope methodology was left almost entirely unchanged from 2014. For further elaboration on the methodology as well as to review all relevant data in aggregated form, please visit www.global-climatescope.org. Questions or comments on the methodology and feedback on data are welcome and should be submitted to climatescope@bloomberg.net. 
 
@@ -75,15 +75,15 @@ For 2015, the Climatescope methodology was left almost entirely unchanged from 2
 
 Scoring approaches employed in the first three editions of Climatescope were also used for this 2014 edition. These include:
 
-●	Indexing – The Climatescope index is based entirely on a 0-5 scoring system, with 5 representing the highest possible score. Using the indexing approach, the country with the maximum output for a given indicator, after levelization in most cases, received the highest score in the index (5). 
+* Indexing – The Climatescope index is based entirely on a 0-5 scoring system, with 5 representing the highest possible score. Using the indexing approach, the country with the maximum output for a given indicator, after levelization in most cases, received the highest score in the index (5). 
 
 All other countries’ outputs were mapped relative to the maximum score. This approach was employed on quantitative indicators such as clean energy installed capacity, clean energy investment and electrification rate.  For growth rates, benchmark maximum high score scores were capped at 150% to avoid extremely high rates (e.g. where a small country has added a single, significant project onto a very low base) impacting all nations unfairly.
 
-●	Tiering – In other cases, country indicator scores were tiered into predefined quintiles. For example, in the case of the clean energy policies indicator, tiering was used and countries were placed in different quintiles depending on the perceived policy ambition or effectiveness of their clean energy policy framework. 
+* Tiering – In other cases, country indicator scores were tiered into predefined quintiles. For example, in the case of the clean energy policies indicator, tiering was used and countries were placed in different quintiles depending on the perceived policy ambition or effectiveness of their clean energy policy framework. 
 
 This methodology is better suited than indexing for qualitative assessments such as rating the ease of carbon offset project development. Tiering was also used in cases when the quantitative outputs are based on limited data.
 
-●	Simple counting – Some indicators were simply binary and thus countable. In such cases, the country either received a 0 or a 5 score. For instance, one indicator simply sought to take into account whether countries have rural electrification programs using clean energy sources. Those that did received scores of 5. Those that did not received scores of zero.
+* Simple counting – Some indicators were simply binary and thus countable. In such cases, the country either received a 0 or a 5 score. For instance, one indicator simply sought to take into account whether countries have rural electrification programs using clean energy sources. Those that did received scores of 5. Those that did not received scores of zero.
 
 ***
 
@@ -160,13 +160,14 @@ Data for all six indicators comprising the clean energy penetration category wer
 The price attractiveness category of indicators takes an accounting of local electricity prices and, in the case of countries being analyzed under the off-grid focus methodology, the price of fuels used to power small-scale generators. The general principle: higher priced energy markets are generally more attractive for clean energy development and deployment as clean energy is all the more cost-competitive.
 
 In all, BNEF collected data on the following four classes of electricity tariff in every country where it was available: 
-●	Spot – The average price paid in 2014 (or last year when data was available) in the country’s liberalized market where electricity is traded
 
-●	Residential – The average price paid by citizens
+* Spot – The average price paid in 2014 (or last year when data was available) in the country’s liberalized market where electricity is traded
 
-●	Commercial – The average paid by “commercial” users as classified locally by regulators
+* Residential – The average price paid by citizens
 
-●	Industrial – The average paid by “industrial” users as classified locally by regulators
+* Commercial – The average paid by “commercial” users as classified locally by regulators
+
+* Industrial – The average paid by “industrial” users as classified locally by regulators
 
 The final price attractiveness score was derived in one of two ways depending on whether a country was assessed under the off-grid focus methodology or not. In the case of those that were not, a combination of the above electricity prices was used to determine a score. In the case of the off-grid focus countries, electricity prices plus the prices of two other sources of fuel were taken into account.
 
@@ -296,14 +297,14 @@ Six was the maximum score a given country could achieve in the CDM risk indicato
 
 The project potential indicator assessed opportunities for developing emission offset projects in a given country. Carbon intensive economies – those with high emissions per unit of GDP, or those highly inefficient in their use of energy generally – have significant abatement opportunities. This indicator aims to assess the size of this opportunity by examining four metrics: 
 
-●	Abatement potential from energy efficiency, measured by the energy use per kilogram of oil equivalent per $1,000 GDP 
+* Abatement potential from energy efficiency, measured by the energy use per kilogram of oil equivalent per $1,000 GDP 
 
-●	Potential for Reducing Emissions from Deforestation and Forest Degradation in Developing Countries (REDD), measured
+* Potential for Reducing Emissions from Deforestation and Forest Degradation in Developing Countries (REDD), measured
 by forestry abatement potential per hectare combined with a REDD-readiness score
 
-●	Anthropogenic methane emissions 
+* Anthropogenic methane emissions 
 
-●	High global warming potential gas emissions from nitrous oxide (N2O) and three main types of fluorinated gases hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), and sulfur hexafluoride (SF6) measured by ktCO2 emissions from 2010.
+* High global warming potential gas emissions from nitrous oxide (N2O) and three main types of fluorinated gases hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), and sulfur hexafluoride (SF6) measured by ktCO2 emissions from 2010.
 
 Each country could receive a 1 or 0 score per metric, allowing a total maximum for this indicator of four points. Using the indexing approach, the country with the maximum output for a given metric received the highest score in the ranking for that metric. All other countries’ outputs were mapped relative to the maximum score. The final indicator score was derived by summing the metric scores. This indicator had a 25% impact on the Carbon Offsets category and a 1.5% impact on a country's overall Climatescope score.
 
@@ -311,13 +312,13 @@ Each country could receive a 1 or 0 score per metric, allowing a total maximum f
 
 The carbon policy category of Parameter IV sought to evaluate public policies and initiatives Climatescope countries have undertaken to reduce greenhouse gas emissions. This category covers four broad but interrelated indicators (see figure on the right) that answer the following questions:
 
-●	Does a country have emissions reductions targets? 
+* Does a country have emissions reductions targets? 
 
-●	Does it have a greenhouse-gas (GHG) registry? 
+* Does it have a greenhouse-gas (GHG) registry? 
 
-●	Is the country planning to develop market-based instruments to cut GHG emissions? 
+* Is the country planning to develop market-based instruments to cut GHG emissions? 
 
-●	Is it an “implementing country participant” of the Partnership for Market Readiness (PMR) or has it committed to the Nationally Appropriate Mitigation Action (NAMA) policies and actions?
+* Is it an “implementing country participant” of the Partnership for Market Readiness (PMR) or has it committed to the Nationally Appropriate Mitigation Action (NAMA) policies and actions?
 
 These four indicators measure if a country has implemented or legislated specific emission reduction policies, and if so, what actions have been undertaken. Each of these indicators contributed a different weight to the overall Carbon Policy category and thus had a varied net weight on the overall Climatescope index.
 
@@ -347,6 +348,3 @@ The energy efficiency initiatives and emission reduction policies indicators eac
 #### Capacity building: environmentally focused business training & think tanks
 
 These two indicators were binary. Primary research was conducted to trace if there was at least one environmentally-focused business training program in place and think tank. The country received the maximum score for each of these indicators if it had one of these entities. 
-
-
-***

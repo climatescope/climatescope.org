@@ -25,9 +25,14 @@ Es importante destacar que la mayoría de los US$126 mil millones que llegaron a
 
 El desplazamiento hacia las economías emergentes también se nota en términos de dónde se está construyendo la capacidad de generación de energía limpia. Se emplazó un total de 50,4 gigavatios (GW) de capacidad nueva limpia en los países de Climascopio, marcando un 21% de incremento con respecto al año anterior. La capacidad de energía limpia anual emplazada en mercados emergentes superó, por primera vez, la de las naciones más ricas de la OECD. Por otra parte, a nivel porcentual, la capacidad de energía limpia está creciendo dos veces más rápido en los países del Climascopio, en comparación a naciones de la OCDE. 
 
+<img src="../../assets/images/content/global-results-chart1-es.png">
+
 La energía generada por grandes hidroeléctricas continúa desempeñando un papel importante en las economías emergentes y en desarrollo, especialmente en China y Latinoamérica. Es importante notar que Climascopio no incluye centrales hidroeléctricas grandes en su contabilidad de las energías limpias, ya que su objetivo es enfocarse en tecnologías que puedan ser desarrolladas con rapidez y que tengan un impacto inmediato. 
 
 Sin embargo, cuando las grandes centrales hidroeléctricas se incluyen en las cifras globales, los países del Climascopio tienen casi la misma capacidad de generación en línea que los países de la OECD: 777GW en comparación con 790GW al cerrar el año 2014. Una vez más, la tasa de crecimiento de la energía baja en carbono (incluyendo las centrales hidroeléctricas grandes) es dos veces más rápida en los países Climascopio que la de los países de la OCDE.Cuando los restantes países no miembros de la OCDE (que no son parte de Climascopio) también se incluyen, la total capacidad de energía limpia en estas naciones emergentes y en desarrollo —incluyendo a las grandes centrales hidroeléctricas— supera la de los países pertenecientes a la OCDE.  
+
+<img src="../../assets/images/content/global-results-chart3-es.png" width="350">
+<img src="../../assets/images/content/global-results-chart4-es.png" width="350" style="margin-left:20px;">
 
 #### La importancia de China
 
@@ -36,6 +41,8 @@ China sigue desempeñando un papel fundamental en la evolución de la energía l
 Substrayendo el impacto de China, las otras 54 naciones del Climascopio lograron avances importantes en 2014. En términos porcentuales, la tasa de crecimiento para la energía limpia acumulada instalada  en estos países se disparó a 21,2%, más del doble de la tasa de crecimiento observada en los países de la OCDE. En su totalidad, las naciones del Climascopio, sin tomar en consideración a China, añadieron 15,5GW de nueva capacidad durante el 2014; un salto de 64% en comparación con los 9,4GW instalados en el año anterior.
 
 China actualmente parece encaminada hacia otro año sólido en el 2015. En los primeros seis meses del año, había desplegado unos 20 GW adicionales. Sin embargo, actualmente una cantidad considerable de energía limpia producida en China nunca llega a su destino debido a las limitaciones de transmisión. Durante la primera mitad del 2015, el 9,5% de toda la producción china de proyectos de energía solar se redujo debido a estos “cuellos de botella”. Las autoridades están tratando de abordar esto a través de las nuevas reglas de "envíos verdes", que dictaminan que la energía limpia generada sea utilizada por los consumidores finales, pero aún queda bastante trabajo por hacer para nacionalizar esta política.
+
+<img src="../../assets/images/content/global-results-chart2-en.png">
 
 #### Competitividad de costo para las energías renovables
 
