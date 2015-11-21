@@ -5,7 +5,7 @@ id: 4
 title: Gestión de gases de efecto invernadero
 weight: "4"
 ---
-El parámetros IV de las actividades de Gestión de gases de efecto invernadero tiene en cuenta la actividad del proyecto de compensación de carbono, el nivel de apoyo a las políticas para la reducción de emisiones de carbono, y la conciencia corporativa local de asuntos relacionados al  carbono, a través de un total de 13 indicadores. El Parámetro III aportó un 15% hacia el puntaje general de cada nación.
+El parámetro IV de las actividades de gestión de gases de efecto invernadero tiene en cuenta la actividad del proyecto de compensación de carbono, el nivel de apoyo a las políticas para la reducción de emisiones de carbono, y la conciencia corporativa local de asuntos relacionados al  carbono, a través de un total de 13 indicadores. El Parámetro III aportó un 15% hacia el puntaje general de cada nación.
 
 Los indicadores relevantes se organizan en tres categorías: las compensaciones de carbono, política de carbono y la conciencia corporativa. La categoría de compensación de carbono mide lo que los países han hecho para desarrollar proyectos de compensación y mide su potencial para continuar los mismos en el futuro. Tiene el mayor peso en lo que se refiere a la puntuación global del Parámetro IV con un 40%. Las otras dos categorías representan el 30% cada uno.
 
