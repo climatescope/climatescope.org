@@ -36,7 +36,7 @@ Sin embargo, cuando las grandes centrales hidroeléctricas se incluyen en las ci
 
 #### La importancia de China
 
-China sigue desempeñando un papel fundamental en la evolución de la energía limpia, no sólo en los mercados emergentes, sino en todos los países. La nación agregó 35GW de nueva capacidad de generación de energía renovable por sí solo; más que toda la capacidad en línea actualmente en los 49 países de África subsahariana combinados, sin tomar en consideración a Sudáfrica y Nigeria; y atrajo US$89mil millones en todo tipo de capital en energía limpia nueva.
+China sigue desempeñando un papel fundamental en la evolución de la energía limpia, no sólo en los mercados emergentes, sino en todos los países. La nación agregó 35GW de nueva capacidad de generación de energía renovable por sí solo; más que toda la capacidad en línea actualmente en los 49 países de África subsahariana combinados, sin tomar en consideración a Sudáfrica y Nigeria; y atrajo US$89 mil millones en todo tipo de capital en energía limpia nueva.
 
 Substrayendo el impacto de China, las otras 54 naciones del Climascopio lograron avances importantes en 2014. En términos porcentuales, la tasa de crecimiento para la energía limpia acumulada instalada  en estos países se disparó a 21,2%, más del doble de la tasa de crecimiento observada en los países de la OCDE. En su totalidad, las naciones del Climascopio, sin tomar en consideración a China, añadieron 15,5GW de nueva capacidad durante el 2014; un salto de 64% en comparación con los 9,4GW instalados en el año anterior.
 
