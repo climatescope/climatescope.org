@@ -72,7 +72,7 @@ A nivel regional, las 10 naciones asiáticas lograron la puntuación media globa
 
 Como se mencionó anteriormente, China registró otro año sin precedentes en términos de inversión y despliegue, y por segundo año recibió el mayor puntaje general del Climascopio, alcanzando un puntaje de 2,29. El país tuvo la máxima puntuación en dos parámetros y no terminó más abajo del octavo  lugar en ninguno de los otros parámetros.
 
-Repitiendo su actuación en el Climascopio del año pasado, Brasil llego segundo en la lista, pero vio su puntuación disminuir de 2,12 a 2,17. La menor puntuación del país se debió principalmente a una fuerte caída en su puntaje en Parámetro I Marco Propicio. Esto se debió en parte a la desaceleración del crecimiento económico en el país.
+Repitiendo su actuación en el Climascopio del año pasado, Brasil llego segundo en la lista, pero vio su puntuación disminuir de 2,17 a 2,12. La menor puntuación del país se debió principalmente a una fuerte caída en su puntaje en Parámetro I Marco Propicio. Esto se debió en parte a la desaceleración del crecimiento económico en el país.
 
 Chile vio su ranking subir un puesto año a año, llegando al tercer lugar con una puntuación que subió a 1,97, de 1,79 debido a un salto importante en la puntuación del Parámetro I. Sudáfrica disminuyó un puesto, llegando al cuarto lugar, pero vio su puntaje general permanecer aproximadamente nivelado en  1,91. Por último, la India completó los cinco primeros con una puntuación de 1,81.
 
