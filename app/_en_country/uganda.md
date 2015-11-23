@@ -24,7 +24,7 @@ Uganda has one of the lowest electrification rates in Africa, at 15% in 2014. Un
 
 #### Score Summary
 
-Uganda scored 1.68 in Climatescope 2015, placing it 9th on the list of countries overall. The country’s ranking fell one place on the list from 2014. Its highest ranking came on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
+Uganda scored 1.68 in Climatescope 2015, placing it 9th on the list of countries overall. The country’s ranking climbed one place on the list from 2014. Its highest ranking came on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
 
 On Enabling Framework Parameter I, Uganda climbed to 7th place overall. This was partly driven by its policy score and an improvement in regulations governing distributed energy.
 
