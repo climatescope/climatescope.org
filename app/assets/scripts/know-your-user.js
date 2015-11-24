@@ -92,7 +92,6 @@
       if (url != '#') {
         trackGA(url, true);
       }
-      // TODO: Uncomment
       return true;
     }
     e.preventDefault();
@@ -116,7 +115,7 @@
     var filename = url.match(regExp)[1];
 
     var label = filename + ' - ' + CS.lang.toUpperCase();
-    //ga('send', 'event', 'Data', msg, label);
+    ga('send', 'event', 'Data', msg, label);
     console.log ('send', 'event', 'Data', msg, label);
   }
 })();
