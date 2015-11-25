@@ -10,7 +10,7 @@ arrange: full
   <li>
     <div class="well well-l download download-pdf">
       <h2>Full Report</h2>
-      <p>Download the full Climatescope 2015 report.<br/></p>
+      <p>Download the full Climatescope 2015 report.</p>
       <ul class="download-list">
         <li>
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2015-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download">PDF <span class="badge">6Mb</span></a>
@@ -22,13 +22,13 @@ arrange: full
   <li>
     <div class="well well-l download download-data">
       <h2>Model and Data</h2>
-      <p>Download the Climatescope model, which includes country data profiles, and the complete set of scores.</p>
+      <p>Download the Climatescope model and raw data.</p>
       <ul class="download-list">
         <li>
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2015.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">Excel <span class="badge">7Mb</span></a>
         </li>
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/data/climatescope-full-2015.csv" title="Download Climatescope scores in CSV format" class="bttn bttn-success download data-download">CSV <span class="badge">0.2Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/data/climatescope-full-2015.csv" title="Download raw data in CSV format" class="bttn bttn-success download data-download">CSV <span class="badge">0.2Mb</span></a>
         </li>
       </ul>
     </div>
