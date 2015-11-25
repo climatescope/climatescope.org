@@ -29,7 +29,7 @@
   <tbody>
     {% for aa in site[col_name] %}
 
-        {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/countries/climatescope-{{ aa.id }}.csv{% endcapture %}
+        {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/climatescope-full-2015.csv{% endcapture %}
 
         {% if aa.region == 'africa' or aa.region == 'asia' %}
           {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/en/download/reports/countries/climatescope-{{ site.edition }}-{{ aa.id }}-en.pdf{% endcapture %}

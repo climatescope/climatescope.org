@@ -25,7 +25,7 @@ arrange: full
       <p>Descargar la totalidad de los datos subyacentes.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/data/climatescope-full.csv" title="Descargar datos Climascopio en formato CSV" class="bttn bttn-success download data-download">CSV <span class="badge">0.2Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/data/climatescope-full-2015.csv" title="Descargar datos Climascopio en formato CSV" class="bttn bttn-success download data-download">CSV <span class="badge">0.2Mb</span></a>
         </li>
         <li>
           <a href="{{ site.domain }}{{ site.path_prefix }}/es/download/model/climatescope-2014.xlsm" title="Descargar datos Climascopio en formato Excel" class="bttn bttn-success download data-download">Excel <span class="badge">5Mb</span></a>
