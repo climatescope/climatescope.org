@@ -36,7 +36,7 @@ Sin embargo, cuando las grandes centrales hidroeléctricas se incluyen en las ci
 
 #### La importancia de China
 
-China sigue desempeñando un papel fundamental en la evolución de la energía limpia, no sólo en los mercados emergentes, sino en todos los países. La nación agregó 35GW de nueva capacidad de generación de energía renovable por sí solo; más que toda la capacidad en línea actualmente en los 49 países de África subsahariana combinados, sin tomar en consideración a Sudáfrica y Nigeria; y atrajo US$89mil millones en todo tipo de capital en energía limpia nueva.
+China sigue desempeñando un papel fundamental en la evolución de la energía limpia, no sólo en los mercados emergentes, sino en todos los países. La nación agregó 35GW de nueva capacidad de generación de energía renovable por sí solo; más que toda la capacidad en línea actualmente en los 49 países de África subsahariana combinados, sin tomar en consideración a Sudáfrica y Nigeria; y atrajo US$89 mil millones en todo tipo de capital en energía limpia nueva.
 
 Substrayendo el impacto de China, las otras 54 naciones del Climascopio lograron avances importantes en 2014. En términos porcentuales, la tasa de crecimiento para la energía limpia acumulada instalada  en estos países se disparó a 21,2%, más del doble de la tasa de crecimiento observada en los países de la OCDE. En su totalidad, las naciones del Climascopio, sin tomar en consideración a China, añadieron 15,5GW de nueva capacidad durante el 2014; un salto de 64% en comparación con los 9,4GW instalados en el año anterior.
 
@@ -52,7 +52,7 @@ La primera edición mundial de Climascopio, lanzada en 2014, ilustra lo extremad
 
 Los precios de la energía industrial se mantuvieron obstinadamente altos en muchas de las 55 naciones Climascopio en 2014, incluso cuando el "costo nivelado de la electricidad", según los cálculos de Bloomberg New Energy Finance disminuyó un 15% año a año. Los precios de la energía eólica se han mantenido más o menos nivelados, pero la tecnología ya tiene precios competitivos en muchos mercados emergentes.
 
-#### Crecimiento de la energía limpia a pesar de los cambios macroeconómicas
+#### Crecimiento de la energía limpia a pesar de los cambios macroeconómicos
 
 Lo que hace que los progresos alcanzados en el 2014 sean mucho más notables es que los mismos se llevaron a cabo mientras que una serie de países experimentaban un desaceleramiento del crecimiento económico. El crecimiento del producto interno bruto promedio entre las naciones Climascopio cayó a 5,7% en 2014, de 6,4% en 2013 y la desaceleración fue más aguda en varios de los países más grandes de la encuesta. El crecimiento del PIB de Brasil, por ejemplo, bajó de 2,8% en el 2013 a sólo un 0,1% en el 2014. Sudáfrica disminuyó de 2,2% a 1,5%; China, mientras tanto, disminuyó  de 7,4% a 7,1%, según las estadísticas oficiales del gobierno.
 
@@ -72,7 +72,7 @@ A nivel regional, las 10 naciones asiáticas lograron la puntuación media globa
 
 Como se mencionó anteriormente, China registró otro año sin precedentes en términos de inversión y despliegue, y por segundo año recibió el mayor puntaje general del Climascopio, alcanzando un puntaje de 2,29. El país tuvo la máxima puntuación en dos parámetros y no terminó más abajo del octavo  lugar en ninguno de los otros parámetros.
 
-Repitiendo su actuación en el Climascopio del año pasado, Brasil llego segundo en la lista, pero vio su puntuación aumentar de 2,12 a 2,17. La menor puntuación del país se debió principalmente a una fuerte caída en su puntaje en Parámetro I Marco Propicio. Esto se debió en parte a la desaceleración del crecimiento económico en el país.
+Repitiendo su actuación en el Climascopio del año pasado, Brasil llego segundo en la lista, pero vio su puntuación disminuir de 2,17 a 2,12. La menor puntuación del país se debió principalmente a una fuerte caída en su puntaje en Parámetro I Marco Propicio. Esto se debió en parte a la desaceleración del crecimiento económico en el país.
 
 Chile vio su ranking subir un puesto año a año, llegando al tercer lugar con una puntuación que subió a 1,97, de 1,79 debido a un salto importante en la puntuación del Parámetro I. Sudáfrica disminuyó un puesto, llegando al cuarto lugar, pero vio su puntaje general permanecer aproximadamente nivelado en  1,91. Por último, la India completó los cinco primeros con una puntuación de 1,81.
 
