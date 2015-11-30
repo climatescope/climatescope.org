@@ -328,9 +328,9 @@ Rank:
 Raw data (CSV): 
   en: "Raw data (CSV)"
   es: "Datos brutos (CSV)"
-Raw data (XLS):
-  en: "Raw data (XLS)"
-  es: "Datos brutos (XLS)"
+Full model (XLS):
+  en: "Full model (XLS)"
+  es: "Modelo completo (XLS)"
 Read more:
   en: "Read more"
   es: "Lea más"
