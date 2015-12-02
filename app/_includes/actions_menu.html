@@ -1,7 +1,7 @@
 {% assign en_coll = site.collections[page.collection].i18n.en %}
 {% case en_coll %}
 {% when 'en_country' or 'en_state' %}
-  {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/countries/climatescope-full-2015.csv{% endcapture %}
+  {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/climatescope-full-2015.csv{% endcapture %}
 
   {% if page.region == 'africa' or page.region == 'asia' %}
     {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/en/download/reports/countries/climatescope-{{ site.edition }}-{{ page.id }}-en.pdf{% endcapture %}
@@ -10,10 +10,10 @@
   {% endif %}
 
 {% when 'en_region' %}
-  {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/regions/climatescope-full-2015.csv{% endcapture %}
+  {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/climatescope-full-2015.csv{% endcapture %}
   {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/regions/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
 {% when 'en_parameter' %}
-  {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/parameters/climatescope-full-2015.csv{% endcapture %}
+  {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/climatescope-full-2015.csv{% endcapture %}
 {% endcase %}
 
 <ul class="actions-menu">
