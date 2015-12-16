@@ -14,7 +14,7 @@
 
   {% if page.id == 'africa' or page.id == 'asia' %}
     {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/en/download/reports/regions/climatescope-{{ site.edition }}-{{ page.id }}-en.pdf{% endcapture %}
-  {% else %}  
+  {% else %}
     {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/regions/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
   {% endif %}
 
