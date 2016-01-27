@@ -25,7 +25,7 @@ Kenya’s main tool to incentivize renewable energy development is the feed-in t
 
 After two rounds of revision, three more technologies (biogas, geothermal and solar PV) have been included in the feed-in tariff and some rates have been increased. The feed-in tariff review that was due to take place last year was not held, but the Ministry of Energy has said it is scheduled to begin in Q4 2015. In the meantime, the government is working on a proposal to implement renewable energy auctions, though there is a question of whether Kenya’s renewables market and the required financing structures are sufficiently mature for such a policy mechanism.
 
-Kenya has made significant progress in increasing electricity access by extending the grid and off-grid projects (both diesel and renewable). As a result, electrification rates have nearly doubled since 2010, to 35% by end-2014. Overall, the country now aims to reach universal electricity access by 2020, after the government brought forward the deadline by a decade.
+Kenya has made significant progress in increasing electricity access by extending the grid and off-grid projects (both diesel and renewable). As a result, electrification rates have nearly doubled since 2010, to around 30% by end-2014. Overall, the country now aims to reach universal electricity access by 2020, after the government brought forward the deadline by a decade.
 
 Among the African countries, Kenya hosts the second highest number of carbon offset projects after South Africa. As part of
 its Intended Nationally Determined Contribution (INDC) in the run up to the Paris climate conference, the country committed to cutting greenhouse gas emissions by 30% relative to business as usual by 2013.
