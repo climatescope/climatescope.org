@@ -5,15 +5,6 @@ title: Climatescope 2015 goes live!
 description: This year's edition of Climatescope officially goes live on 23 November. Read the official press release here.
 ---
  
-On 23 November, Climatescope 2015 officially goes live with the launch of this site and release of an accompanying 200-page report and major data file. Enjoy.
-
-
-EMBARGOED UNTIL 12:01AM EST / 5:01AM GMT, 23 NOVEMBER  
-Noemi Glickman (London, UK)  
-Bloomberg New Energy Finance  
-+44 (0)791 957 1273  
-nglickman@bloomberg.net  
-
 ### TOPPING WEALTHIER NATIONS, KEY EMERGING MARKETS ATTRACT RECORD $126BN IN CLEAN ENERGY INVESTMENT
 
 Ahead of important round of climate talks, new study shows majority of 2014 clean energy investment, activity occurred in 55 developing nations
