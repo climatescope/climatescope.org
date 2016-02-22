@@ -1,7 +1,7 @@
 # Climatescope
 The [Climatescope](http://global-climatescope.org) is a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide. It is a project by [UK AID](https://www.gov.uk/government/organisations/department-for-international-development), [Power Africa](http://www.usaid.gov/powerafrica), [BNEF](http://www.newenergyfinance.com/) and the [Multilateral Investment Fund](http://www.fomin.org/)
 
-![Homepage of the Climatescope 2014](https://cloud.githubusercontent.com/assets/751330/4717596/a890d596-5916-11e4-81c4-4c678d83a34c.png)
+![Homepage of the climatescope 2015](https://cloud.githubusercontent.com/assets/1016701/13225969/2b679a26-d987-11e5-96c4-282484d5d645.png)
 
 ## Credits
 The current Climatescope website was built by [Flipside](http://flipside.org) in collaboration with [Development Seed](http://developmentseed.org).
