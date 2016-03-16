@@ -19,4 +19,5 @@ Sara Giordano
 ###LINKS TO RELATED CONTENT
 
 [GET FiT policy website](http://www.getfit-uganda.org/)
+
 [Uganda's Climatescope country profile](http://global-climatescope.org/en/country/uganda/#/details)
