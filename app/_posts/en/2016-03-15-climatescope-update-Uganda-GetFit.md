@@ -1,10 +1,10 @@
 ---
 postId: 2016-03-15-climatescope-update-Uganda-GetFit
-title: How the "GET FiT" policy attracted clean energy investors to Uganda 
+title: How Uganda's 'GET FiT' policy attracted clean energy investors 
 
-description: The "GET FiT" policy addresses a number of the challenges faced by developers in emerging markets. Read this post to find out how. 
+description: The 'GET FiT' policy addresses a number of the challenges faced by developers in emerging markets. Read this post to find out how. 
 ---
-## THE SUCCESS OF UGANDA'S "GET FiT" POLICY
+## THE SUCCESS OF UGANDA'S 'GET FiT' POLICY
 
 With a quarter of a billion dollars invested in renewables over 2009-14, Uganda is home to one of the most active clean energy markets in Sub-Saharan Africa. Renewable energy excluding large hydro currently accounts for 17% of the country’s 900MW installed generation capacity. And the government aims to increase the share of renewables including large hydro in total energy consumption from 25% in 2014 to an ambitious 61% by 2017.
 
