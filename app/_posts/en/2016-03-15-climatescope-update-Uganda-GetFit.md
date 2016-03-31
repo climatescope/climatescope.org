@@ -1,8 +1,8 @@
 ---
 postId: 2016-03-15-climatescope-update-Uganda-GetFit
-title: How Uganda's "GET FiT" policy attracted clean energy investors 
+title: How the "GET FiT" policy attracted clean energy investors to Uganda 
 
-description: Uganda’s "GET FiT" policy addresses a number of the challenges faced by developers in emerging markets. Read this post to find out how. 
+description: The "GET FiT" policy addresses a number of the challenges faced by developers in emerging markets. Read this post to find out how. 
 ---
 ## THE SUCCESS OF UGANDA'S "GET FiT" POLICY
 
