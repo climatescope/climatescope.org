@@ -24,6 +24,8 @@ Countries like Senegal, with vast swaths of rural land, are focusing on accelera
 
 <b>Sola Renner, Bloomberg New Energy Finance</b>
 
+
+
 ##Climatescope’s 2015 West African global rankings 
 
 ###Nigeria
