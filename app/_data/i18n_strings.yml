@@ -13,6 +13,8 @@ about:
 About: 
   en: "About"
   es: "Sobre"
+About Climatescope:
+  en: "About Climatescope"
 About the Climatescope: 
   en: "About the Climatescope"
   es: "Sobre el Climascopio"
@@ -145,6 +147,10 @@ Explore data by region:
 Explore data by topic: 
   en: "Explore data by topic"
   es: "Explore los datos por tema"
+Explore our insights:
+  en: "Explore our insights"
+Explore our resources:
+  en: "Explore our resources"
 Facebook: 
   en: "Facebook"
   es: "Facebook"
@@ -172,6 +178,8 @@ Global rank:
 Global score: 
   en: "Global score"
   es: "Puntuación global"
+Go home:
+  en: "Go Home"
 Go to: 
   en: "Go to"
   es: "Ir a"
@@ -199,6 +207,8 @@ Go to topic page:
 Grid: 
   en: "Grid"
   es: "Red"
+Home:
+  en: "Home"
 In detail: 
   en: "In detail"
   es: "En detalle"
@@ -211,6 +221,8 @@ Indicators:
 Info: 
   en: "Info"
   es: "Info"
+Insights:
+  en: "Insights"
 Installed capacity: 
   en: "Installed capacity"
   es: "Capacidad instalada"
@@ -361,6 +373,10 @@ Reset filters:
 Reset topic weights: 
   en: "Reset topic weights"
   es: "Restablecer el peso de los temas"
+Resource Center:
+  en: "Resource Center"
+Results:
+  en: "Results"
 Score: 
   en: "Score"
   es: "Puntuación"
