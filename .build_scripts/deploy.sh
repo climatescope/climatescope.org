@@ -3,7 +3,6 @@ set -e # halt script on error
 
 echo "Get ready, we're pushing to gh-pages!"
 cd _site
-cp ../CNAME ./
 git init
 git config user.name "DevSeed Build Bot"
 git config user.email "dsbb@developmentseed.org"
