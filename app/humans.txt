@@ -2,39 +2,26 @@
 layout: null
 ---
 
-/* FLIPSIDE TEAM */
+/* DEVELOPMENT SEED TEAM */
 
 Developer: Daniel da Silva
-Site: http://flipside.org
 Twitter: @danielfdsilva
 Location: Lisbon, Portugal
 
 Developer: Olaf Veerman
-Site: http://flipside.org
 Twitter: @oBirdman
-Location: Lisbon, Portugal
+Location: Washington, D.C, USA
 
 UI Designer: Ricardo Mestre
-Site: http://flipside.org
 Twitter: @ricardoduplos
 Location: Lisbon, Portugal
 
-
-/* DEVELOPMENT SEED TEAM */
-
 Developer: Derek Lieu
-Site: http://developmentseed.org
 Twitter: @dereklieu
 Location: Washington, D.C, USA
 
 Strategist: Ian Schuler
-Site: http://developmentseed.org
 Twitter: @ianschuler
-Location: Washington, D.C, USA
-
-Strategist: Nate Smith
-Site: http://developmentseed.org
-Twitter: @nas_smith
 Location: Washington, D.C, USA
 
 
