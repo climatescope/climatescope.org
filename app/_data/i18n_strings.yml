@@ -10,6 +10,8 @@ about:
   en: "about"
 About: 
   en: "About"
+About Climatescope:
+  en: "About Climatescope"
 About the Climatescope: 
   en: "About the Climatescope"
 About the license: 
@@ -98,6 +100,10 @@ Explore data by region:
   en: "Explore data by region"
 Explore data by topic: 
   en: "Explore data by topic"
+Explore our insights:
+  en: "Explore our insights"
+Explore our resources:
+  en: "Explore our resources"
 Facebook: 
   en: "Facebook"
 Filter: 
@@ -116,6 +122,8 @@ Global rank:
   en: "Global rank"
 Global score: 
   en: "Global score"
+Go home:
+  en: "Go Home"
 Go to: 
   en: "Go to"
 Go to country page: 
@@ -134,6 +142,8 @@ Go to topic page:
   en: "Go to topic page"
 Grid: 
   en: "Grid"
+Home:
+  en: "Home"
 In detail: 
   en: "In detail"
 Indian states: 
@@ -142,6 +152,8 @@ Indicators:
   en: "Indicators"
 Info: 
   en: "Info"
+Insights:
+  en: "Insights"
 Installed capacity: 
   en: "Installed capacity"
 Global Results:
@@ -242,6 +254,10 @@ Reset filters:
   en: "Reset filters"
 Reset topic weights: 
   en: "Reset topic weights"
+Resource Center:
+  en: "Resource Center"
+Results:
+  en: "Results"
 Score: 
   en: "Score"
 See detailed data on: 
