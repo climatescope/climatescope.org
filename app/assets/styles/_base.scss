@@ -571,6 +571,11 @@ a:active{
   &__heading {
     @include col(6/12);
     position: relative;
+
+    > * {
+      margin-bottom: 0;
+    }
+
     @media #{$xlarge-up} {
       @include col(8/12);
     }
