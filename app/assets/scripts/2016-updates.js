@@ -15,6 +15,8 @@ $(window).load(function() {
     modal.find('[data-modal-dismiss]').click(function(e) {
       e.preventDefault();
       modal.removeClass('revealed');
+      // Create cookie with language to use on the 404.
+      createCookie('CS_2016_update', 'hidden', null, CS.domain);
     });
 
     // No thank you closes the modal and sets the cookie
