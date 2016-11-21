@@ -10,13 +10,12 @@ published: true
 
 #### Score Summary
 
-Cote D’Ivoire scored 0.71 in Climatescope 2016, which was identical to its performance the previous year, but insufficient to maintain its position amid rising standards in many of the nations surveyed. The country dropped 10 places to 52nd overall and lowest among the 19 African nations surveyed. 
+The DRC scored 0.74 in Climatescope 2016, an increase on the previous year. It placed 51st overall and second last among the 19 African nations surveyed, above only Cote D’Ivoire. The country’s best performance by far was on Greenhouse Gas Management Activities Parameter IV.
 
-The country dropped eighteen places to 47th, on Enabling Framework Parameter I, reflecting slower growth in demand for power among other factors. Set against this, lower taxes on clean energy goods boosted the country’s Barriers indicator.
- 
-Cote D’Ivoire was placed last among the 58 nations on Clean Energy Investment and Climate Financing Parameter II, reflecting the very low level of investment to date.
+On Enabling Framework Parameter I, the DRC ranked 53rd. This reflected, among other things, its unbundled power sector and the lack of a clean energy rural electrification programme.
 
-The country ranked 38th on Low-Carbon Business & Clean Energy Value Chains Parameter III, one place lower than last year. However, the presence of a number of clean energy value chains and service providers helped to prop up its score.
+It was also weak on Clean Energy Investment and Climate Financing Parameter II, taking 54th position. The clean energy sector has not attracted any investment since 2010, and the average cost of debt is high.
 
-On Greenhouse Gas Management Activities Parameter IV, the country ranked a very poor 53rd 53rd overall, ahead of only Liberia among the African nations surveyed.
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the DRC fell four places to 51st, highlighting weaknesses such as the absence of clean energy service providers. 
 
+On Parameter IV, the country gained six places to rank 23rd, thanks to strength in the carbon-offsetting category and the establishment of organisations dedicated to building corporate awareness.
