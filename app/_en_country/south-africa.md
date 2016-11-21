@@ -8,6 +8,7 @@ published: true
 ---
 
 
+
 #### Score Summary
 
 South Africa scored 2.21 in Climatescope 2016, ranking it 5th on the list of countries overall, one place lower than in 2015. Its highest finish was on Greenhouse Gas Management Activities Parameter IV.
