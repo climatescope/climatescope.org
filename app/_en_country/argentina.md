@@ -6,9 +6,6 @@ region: lac
 grid: 'on'
 published: true
 ---
-
-
-
 #### Score Summary
 
 Argentina repeated its overall Climatescope ranking of 20th place in 2015, its score increased slightly from 2014’s 1.24 to a 1.39 in 2015. Argentina’s notable improvement on Enabling Framework Parameter I was blunted by a decline on Clean Energy Investment and Climate Financing Parameter II. 
