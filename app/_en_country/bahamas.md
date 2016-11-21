@@ -6,7 +6,7 @@ region: lac
 grid: 'on'
 published: true
 ---
-The island nation of the Bahamas’ dependence on imported oil and diesel generation, along with its high electricity prices, highlights the need for renewable energy development to improve energy security and lower fuel costs. However, more local policy action will clearly be required to spark any kind of local clean energy boom.
+The island nation of the Bahamas’ dependence on imported oil and diesel generation, along with its high electricity prices, highlights the need for renewable energy development to improve energy security and lower fuel costs. However, more local policy action will clearly be required to spark any kind of local clean energy boom. 
 
 Currently, the country's electricity market is controlled by state-owned Bahamas Electricity Corporation (BEC), which owns 76% of the total 575MW of installed capacity and controls generation, transmission and distribution in the majority of the islands; and by the Grand Bahama Power Company (GBPC), a private company which owns the remaining installed capacity share and controls generation, transmission and distribution on Grand Bahama Island. The national electricity is distributed along 16 isolated grids. 
 
