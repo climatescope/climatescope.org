@@ -1,17 +1,15 @@
 ---
 layout: country
-
 id: bd
 title: Bangladesh
-
 region: asia
-grid: off
+grid: 'off'
+published: true
 ---
 Bangladesh – one of the countries most vulnerable to climate change – generates most of its renewable energy from small scale installations. In 2008, it set a target of 5% renewable energy share, equivalent to 800MW by 2015. It claims to have installed 403MW of renewable capacity, including a large hydro project of 230MW. 
 
 About 60% of the population has access to electricity. As much as 98% of the country’s 10.8GW installed capacity is based on fossil fuels (of which about 70% is natural gas), with large hydro representing the remaining 2%. Due to a rise in economic activity, Bangladesh installed more than 2GW of oil and diesel based rental power plants during 2010-2013. These rental power plants provide a quick but expensive solution to meet power demand. They are usually set up by private players for terms of three to seven years, with the purpose of meeting energy deficit, peak deficit and seasonal demand. 
-
-The government owned generation utility, Bangladesh Power Development Board (BPDB) is the sole buyer of all of the power generated in the country and sells it to the distribution utilities. Transmission and distribution of electricity is controlled by government owned utilities that serve their respective allocated zones. 
+e allocated zones. 
 
 Bangladesh’s Sustainable and Renewable Energy Development Agency (SREDA) addresses renewable energy policy and regulatory matters. Powercell Bangladesh carries out technical assessments for the government through its Sustainable Energy division. Bangladesh has had success installing solar home systems (SHS) that were introduced by Grameen Shakti through a micro-credit facility. This solar off-grid initiative was scaled up through the $500m World Bank funded Rural Electrification and Renewable Energy Development (RERED) project initiated in 2003. This was followed by the $386m RERED II project in September 2012. By the end of 2014, about 3.5m, or 10%, of the country’s households had installed SHS systems. The target of the program is to reach 6m SHS installations by 2016. 
 
@@ -34,4 +32,3 @@ On Clean Energy Investment and Climate Financing Parameter II, the country score
 On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country saw its score unchanged at 2.57. On Greenhouse 
 
 Gas Management Activities Parameter IV, Bangladesh scored just 0.65 because of a lack of effective emissions reduction policies.
-
