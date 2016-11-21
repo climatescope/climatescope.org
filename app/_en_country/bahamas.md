@@ -1,17 +1,16 @@
 ---
 layout: country
-
 id: bs
 title: Bahamas
-
 region: lac
-grid: on
+grid: 'on'
+published: true
 ---
 The island nation of the Bahamas’ dependence on imported oil and diesel generation, along with its high electricity prices, highlights the need for renewable energy development to improve energy security and lower fuel costs. However, more local policy action will clearly be required to spark any kind of local clean energy boom.
 
 Currently, the country's electricity market is controlled by state-owned Bahamas Electricity Corporation (BEC), which owns 76% of the total 575MW of installed capacity and controls generation, transmission and distribution in the majority of the islands; and by the Grand Bahama Power Company (GBPC), a private company which owns the remaining installed capacity share and controls generation, transmission and distribution on Grand Bahama Island. The national electricity is distributed along 16 isolated grids. 
 
-According to the Out Islands Electricity Act, private utilities are allowed to supply power to the Family Islands (outer islands) if it is in the nation’s best interest, but the provision is ambiguous and open to wide interpretation. Furthermore, BEC is not required to buy electricity from independent power producers. Both make it challenging for newcomers to gain a local foothold in the market. 
+According to the Out Islands Electricity Act, private utilities are allowed to supply power to the Family Islands (outer islands) if it is in the nation’s best interest, but the provision is ambiguous and open to wide interpretation. Furthermore, BEC is not required to buy electricity from independent power producers. Both make it challenging for newcomers to gain a local foothold in the market.
 
 The Bahamas consist of over 700 islands. The capital, Nassau, is located on the island of New Providence, home to more than 60% of the country's 338,000 habitants. The second most populated island is Grand Bahama, where 16% of the population lives. The national grid is 100% dependent on imported fossil fuels, which results in high electricity prices. In 2013, average retail electricity rates ($0.31/kWh) were 50% above the average price in the Caribbean. 
 
@@ -30,4 +29,3 @@ Bahamas in 2015 equaled its 23rd-place finish on Clean Energy Investment and Cli
 On Low-Carbon Business & Clean Energy Value Chains Parameter III, Bahamas in 2015 scored 0.64, ranking 50th. Its 2014 metrics were a 0.58 score and a rank of 52nd. 
 
 On Greenhouse Gas Management Activities Parameter IV, Bahamas in 2015 repeated its 49th-place ranking and its 0.42 score of the previous year.
-
