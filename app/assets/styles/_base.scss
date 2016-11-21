@@ -299,8 +299,9 @@ a:active{
   @extend .antialiased;
   font-family: $brand-font-family;
   margin-bottom: 1rem;
-  @media #{$xxlarge-up} {
-    @include col(3/12);
+
+  @media #{$xlarge-up} {
+    @include col(4/12);
     margin-bottom: 0;
   }
 }
@@ -309,10 +310,12 @@ a:active{
   font-size: 1.5rem;
   margin-bottom: 0;
   line-height: 1;
+
   em {
     font-style: normal;
     color: #fff;
   }
+
   a, a:visited {
     display: block;
     color: $secondary-color;
@@ -321,9 +324,11 @@ a:active{
 
 #prime-nav {
   @include span(12/12);
-  @media #{$xxlarge-up} {
-    @include col(9/12);
+
+  @media #{$xlarge-up} {
+    @include col(8/12);
   }
+
   @media print {
     display: none;
   }
@@ -335,10 +340,12 @@ a:active{
   right: 2rem;
   z-index: 1;
   margin: 0 0 0 2rem !important;
+
   @media #{$large-up} {
     right: 3rem;
   }
-  @media #{$xxlarge-up} {
+
+  @media #{$xlarge-up} {
     position: static;
     float: right;
   }
@@ -349,6 +356,7 @@ a:active{
   list-style: none;
   padding: 0;
   margin: 0;
+
   > li {
     float: left;
     margin: 0 0 0 2rem;
@@ -356,6 +364,7 @@ a:active{
       margin-left: 0;
     }
   }
+
   > li > a {
     display: block;
     color: #fff;
@@ -364,12 +373,15 @@ a:active{
     @extend .antialiased;
     font-family: $brand-font-family;
   }
+
   .open > .dropdown-toggle {
     @include opacity(0.4);
   }
-  @media #{$xxlarge-up} {
+
+  @media #{$xlarge-up} {
     float: right;
   }
+
   .topics {
     > li > a {
       padding-left: 2rem;
@@ -559,6 +571,11 @@ a:active{
   &__heading {
     @include col(6/12);
     position: relative;
+
+    > * {
+      margin-bottom: 0;
+    }
+
     @media #{$xlarge-up} {
       @include col(8/12);
     }
@@ -1112,7 +1129,7 @@ a:active{
       color: inherit;
     }
   }
-  @media #{$xxlarge-up} {
+  @media #{$xlarge-up} {
     @include col(7/12);
     border-bottom: 0;
     padding-bottom: 0;
@@ -1142,7 +1159,7 @@ a:active{
       width: 6rem;
     }
   }
-  @media #{$xxlarge-up} {
+  @media #{$xlarge-up} {
     @include col(5/12);
     .logo-list {
       float: right;

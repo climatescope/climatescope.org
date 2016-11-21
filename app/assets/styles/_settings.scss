@@ -37,6 +37,9 @@ $brand-font-bold: 700;
 $global-radius: 0.25rem;
 $global-rounded: 60rem;
 
+// Spacing
+$global-spacing: 1rem;
+
 // We use these to shadow text
 %global-text-shadow {
   text-shadow: 0 1px 0 rgba($primary-color, 0.4);
