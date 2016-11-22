@@ -18,7 +18,41 @@ description: The Climatescope a unique country-by-country assessment, interactiv
 
   <div class="layout--home__body">
     <div class="row--contained">
-      <p>Hello world!</p>
+      <div class="col--sec prose-copy">
+        <section>
+          <h2>Compare results</h2>
+          <p>Content goes here</p>
+        </section>
+      </div>
+
+      <div class="col--sec prose-copy">
+        <section>
+          <h2>Latest updates</h2>
+          <ol class="latest-updates-list">
+            {% assign posts = (site.posts | where:"lang",language) %}
+            {% for post in posts limit:2 %}
+            {% unless post.hidden == true %}
+            <li class="update-wrapper">
+              <article class="update">
+                <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View update">
+                  <p class="update__date">{{ post.date | date: '%b %-d, %Y' }}</p>
+                  <h1 class="update__title">{{ post.title }}</h1>
+                </a>
+              </article>
+            </li>
+            {% endunless %}
+            {% endfor %}
+          </ol>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" class="bttn bttn-success go" title="{{ t['View all'][language] }}">{{ t['View all'][language] }}</a>
+        </section>
+      </div>
+
+      <div class="col--sec prose-copy">
+        <section>
+          <h2>Recent tweets</h2>
+          <p>Content goes here</p>
+        </section>
+      </div>
     </div>
   </div>
 </section>
