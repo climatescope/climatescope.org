@@ -7,6 +7,8 @@ grid: 'on'
 published: true
 ---
 
+
+
 #### Score Summary
 
 Chile scored 2.36 in Climatescope 2016, placing it second on the list of 58 countries, beneath only China. (In 2015, it managed 3rd with a score of 1.97.) The country was in the top 10 on all parameters, and achieved its highest ranking on Greenhouse Gas Management Activities Parameter IV.
