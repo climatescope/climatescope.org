@@ -1,16 +1,22 @@
 ---
 layout: state
-
 id: in-up
 title: Uttar Pradesh
-
 region: asia
 country: in
+published: true
 ---
-Situated on the highly fertile Gangetic Plain, Uttar Pradesh is India’s most populous state with over 200 million inhabitants. It is also India’s largest sugarcane producer and among its top wheat producers. And it has a sizeable presence of small and medium enterprises (SME). 
 
-Of 22GW total power capacity, coal represents 17.6GW and renewables 2.7GW, or 12%. Nearly all renewable capacity in the state is accounted for biomass. Several sugar mills operate in the state, and use bagasse (fibrous cane waste) for biomass-fired cogeneration. The state’s policy of maintaining a high minimum sugarcane purchase price has affected the profitability and viability of sugar mills which can impact the operation of cogeneration plants as well.
 
-Uttar Pradesh has no major wind projects installed to date. Its wind potential is regarded as relatively low and has as a result been largely unexploited. The government is keen on developing solar and has conducted tenders of 200MW and 300MW in 2013 and 2014, respectively. However, due to the poor financial health of local distribution utilities and problems associated with the structure of power purchase agreements, these auctions did not generate strong responses and received high bid prices. Solar projects totaling just 29MW were commissioned in 2014. The state has also allowed net-metering to encourage rooftop solar power generation.
 
-Many villages in the state lack access to reliable grid electricity. This has led to the deployment of micro-grid and off-grid systems by entrepreneurs and companies supported by various national and international grants. 
+####Score summary
+
+Uttar Pradesh scored 0.714 in Climatescope 2016, placing it 4th among the six Indian states surveyed. Its best performance was on Greenhouse Gas Management Activities Parameter IV. 
+
+On Enabling Framework Parameter I, the state scored 0.740 and was ranked 4th. Its relatively weak performance reflected, among other things, the incomplete unbundling and privatisation of its power sector. 
+
+Uttar Pradesh scored zero on Clean Energy Investment and Climate Financing Parameter II, as did four other Indian states. It did not attract any investment in 2015.
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the state scored 1.618 and was placed 4th. The state has 17 clean energy value chains spread across wind, solar, biomass, biofuel and small hydro.
+
+Uttar Pradesh’s 1.167 score on Parameter IV put it 2nd place, equal with Bihar and beneath Madhya Pradesh. It has undertaken some carbon offsetting activities, but has not put any carbon policies in place.
