@@ -14,7 +14,7 @@ South Africa’s government launched an ambitious plan to address the power shor
 
 Climatescope shows that the country is able to deliver these ambitious goals. The country installed just under a gigawatt of new solar capacity in 2014 alone, and around half a megawatt of onshore wind in both 2014 and 2015. This impressive growth was brought about by South Africa’s flagship renewable energy auction program, which has become an example for policy makers around the world. The program is still in full swing, with 2.2 gigawatts of contracts awarded in 2015 and a new 1.8-gigawatt tender round announced for 2016. A delay in the final investment decision of winning projects caused South Africa’s drop from third to fourth position in Climatescope 2015, but the program will ensure South Africa ranks high in Climatescope 2016 once again. 
 
-![South Africa clean energy investment and capacity figures](http://global-climatescope.org/assets/images/content/blog-SA-chart-24022016.png)
+![South Africa clean energy investment and capacity figures](http://global-climatescope.org/assets/images/content/content/CS2016_exec_fig1.png)
 
 The consistency and success of South Africa’s auction program is also making way for an increasing amount of the clean energy value chain to be located in the country – South Africa ranks fourth on Parameter III “Low Carbon Business and Clean Energy Value Chains” in Climatescope. The DCD onshore wind tower and the I-WEC blade manufacturing plants, which aim to create more than 200 jobs each, are a perfect example of how the clean energy sector is creating new socio-economic opportunities. 
 
