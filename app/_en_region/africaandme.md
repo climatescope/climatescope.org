@@ -2,7 +2,7 @@
 layout: region
 
 id: africa
-title: Africa
+title: Africa and the Middle East
 weight: "1"
 ---
 Clean energy is making inroads in sub-Saharan Africa, with over $25bn deployed in renewables (excluding large hydro) by the
