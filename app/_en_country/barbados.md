@@ -25,7 +25,7 @@ Since 2013, Barbados has granted tax exemptions and deductions for activities re
 The first centralised PV plant is under construction in the St. Lucy district. The 10MW plant will be owned and operated by BLPC and is expected to be commissioned by the end of 2016.
 
 
-###  Score Summary
+###Score summary
 
 Barbados scored 0.94 in Climatescope 2016, a marked increase on the previous year. It gained one place to rank 43<sup>rd</sup> on the list of countries overall, but jumped eleven  notches on Enabling Framework Parameter I.
 
