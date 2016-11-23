@@ -26,7 +26,7 @@ Argentina scored 1.39 in Climatescope 2016, unchanged from the previous year. It
 
 On Enabling Framework Parameter I, the country’s score fell and it slid seventeen places to 37th. Policies such as the biofuel blending mandate offered a degree of support, but the score was weakened by the absence of any new renewable power generating capacity.
 
-Argentina’s score on Clean Energy Investment and Climate Financing Parameter II rose slightly and it was placed 50th.
+Argentina’s score on Clean Energy Investment and Climate Financing Parameter II rose slightly and it was placed 50<sup>th</sup>.
 This reflected the high average cost of debt (25%) in 2015 and the relatively small volume of new investment ($81m) compared with recent years.
 
 On Parameter III, the country earned 14th place thanks chiefly to the large number of clean energy value chains present and the diversity of financial institutions serving the sector.
