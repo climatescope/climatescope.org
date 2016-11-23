@@ -23,7 +23,7 @@ In addition to increasing the renewable energy capacity of the country, these pr
 
 Among commercial-scale systems in Ma’an, MDC installed a 1MW net-metering project at its student dorms, the first MW-scale project for the country. This has helped show the potential for this segment, given the very high retail electricity prices in Jordan: depending on consumption levels, commercial organisations can pay as much as $0.40/kWh. The payback period is only two years for the project.
 
-![Winners of Jordan’s Direct Proposal Schemes – PV projects]
+![Winners of Jordan’s Direct Proposal Schemes – PV projects](climatescope.org/app/assets/images/content/CS2016_blog_Jordan_fig3.png)
 *1MW system installed at a university accommodation in Ma’an*
 
 Finally, at the smaller end of the solar scale, a royal initiative is funding the installation of 2,200 PV systems on homes in the region. The project will help residents with their energy costs, raise awareness and help in Ma’an’s transition to a greener economy.
