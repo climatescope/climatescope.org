@@ -8,7 +8,7 @@ published: true
 ---
 
 
-#### Score Summary
+###Score summary
 
 Cameroon scored 1.13 in Climatescope 2016, ranking it 36<sup>th</sup> on the list of countries overall, an increase of thirteen places. Most of the momentum for this increase came from a vastly improved performance on Enabling Framework Parameter I. 
 
