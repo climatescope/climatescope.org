@@ -22,14 +22,14 @@ Since 2012, the government of Guyana has exempted machinery and equipment that g
 On 30 September 2015, the government of Guyana submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, committing conditionally to mitigate the equivalent of 48.7MtCO2e per year by 2025 versus the business as usual scenario.
 
 
-### Score Summary 
+###Score summary 
 
-Guyana scored 0.67 in Climatescope 2016, an increase of 0.13 on its tally in the 2015 survey. It took 54th place on the list of 58 countries, a decline of three from the previous year. The country performed relatively poorly on all four parameters, ranking between 46th and 58th on each.
+Guyana scored 0.67 in Climatescope 2016, an increase of 0.13 on its tally in the 2015 survey. It took 54<sup>th</sup> place on the list of 58 countries, a decline of three from the previous year. The country performed relatively poorly on all four parameters, ranking between 46<sup>th</sup> and 58<sup>th</sup> on each.
 
-Its score on Enabling Framework Parameter I increased to 1.00 from 0.78, but it slipped one place to 46th position. Its weakness stems from a lack of coherent clean energy policy and the absence of project development since 2010.
+Its score on Enabling Framework Parameter I increased to 1.00 from 0.78, but it slipped one place to 46<sup>th</sup> position. Its weakness stems from a lack of coherent clean energy policy and the absence of project development since 2010.
 
-Guyana’s score on Clean Energy Investment and Climate Financing Parameter II fell slightly, and it dropped fourteen places to 48th. There is no record of any investment in the sector between 2010 and 2015. However, the average cost of debt (at 12.89%) did offer a small degree of support. 
+Guyana’s score on Clean Energy Investment and Climate Financing Parameter II fell slightly, and it dropped fourteen places to 48<sup>th</sup>. There is no record of any investment in the sector between 2010 and 2015. However, the average cost of debt (at 12.89%) did offer a small degree of support. 
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country’s score was unchanged at 0.07, which put it in 58th position. Guyana’s only clean energy company in 2015 was a biomass project developer.
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country’s score was unchanged at 0.07, which put it in 58<sup>th</sup> position. Guyana’s only clean energy company in 2015 was a biomass project developer.
 
-On Greenhouse Gas Management Activities Parameter IV, its score rose and yet it dropped six places to 46th. The presence of a GHG emissions reduction target was one of few positive attributes.
+On Greenhouse Gas Management Activities Parameter IV, its score rose and yet it dropped six places to 46<sup>th</sup>. The presence of a GHG emissions reduction target was one of few positive attributes.
