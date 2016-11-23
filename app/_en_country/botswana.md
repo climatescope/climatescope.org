@@ -9,7 +9,7 @@ published: true
 
 
 
-#### Score Summary
+###Score summary
 
 Botswana scored 0.84 in Climatescope 2016, placing it 47<sup>th</sup> on the list of countries overall, the same position it occupied in 2015. The country’s best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
