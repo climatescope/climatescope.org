@@ -20,7 +20,7 @@ On 1 October 2015, the government of Belize submitted its Intended Nationally De
 Belize held its first tender in 2013. It aimed to contract 75MW of power, of which 60MW was open to bidders across all energy sources, while 15MW was reserved exclusively for solar and wind. By June 2014, PUC had received 22 bid submissions, and 20 were approved for the next step. On 6 March 2015, PUC chose a few projects for further negotiations. Among these were two small hydro projects, with a combined capacity of 21.8MW. As of May 2016, there was no further information about whether contracts had been signed between BEL and the respective bidders.
 
 
-### Score Summary
+###Score summary
 
 Belize scored 1.13 in Climatescope 2016, up from 0.81 the year before. It gained one place to rank 37<sup>th</sup> on the list of countries overall, and its best performance was on Enabling Framework Parameter I.
 
