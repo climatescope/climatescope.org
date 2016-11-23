@@ -1,8 +1,9 @@
 ---
-postId: 2016-11-23-climatescope-blog-Jordan
-title: Jordan’s Ma’an Development Area: How renewable energy can bolster the economy
+published: false 
+postId: test
+title: Test blog post
 
-description: 
+description: Test blog post description
 ---
 ## JORDAN’S MA’AN DEVELOPMENT AREA: HOW RENEWABLE ENERGY CAN BOLSTER THE ECONOMY
 
@@ -31,3 +32,4 @@ Finally, at the smaller end of the solar scale, a royal initiative is funding th
 MDA’s success in adopting renewable energy speaks for itself. It is a model of what the government is trying to achieve on a national scale: a self-reliant market that attracts private sector investment and contributes to the local economy. MDC is currently in discussions to allocate another plot of land covering 18 square kilometres for utility-scale solar -- almost four times as big as the current area. Should these projects go ahead, Ma’an would provide 20% of Jordan’s current electricity demand while benefitting the local and national economy, improving energy security and cutting carbon emissions. That’s no mean feat and may be achievable, assuming the current limitations of the grid are resolved. 
 
 **Lara Hayim**
+Solar Analyst, BNEF
