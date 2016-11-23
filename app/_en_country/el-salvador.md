@@ -19,7 +19,7 @@ Tenders have been introduced to replace expiring bilateral power agreements and 
 Under decree 462 of 2007, El Salvador grants tax incentives for development of renewable energy sources, including 10 years of import tax exemption to machines and equipment, and income tax breaks for renewable energy projects. Additionally, the sale of credits under the UN’s Clean Development Mechanism (CDM) for renewable energy projects is not subject to income tax. Furthermore, ETESAL is required to guarantee priority dispatch to electricity generated from renewable sources.
 
 
-### Score summary
+###Score summary
 
 El Salvador scored 1.26 in Climatescope 2016, an increase of 0.23 on its score in the 2015 survey. It placed 33<sup>rd</sup> overall, down three from its position the previous year, and was strongest on Enabling Framework Parameter I. 
 
