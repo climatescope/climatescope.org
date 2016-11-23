@@ -20,7 +20,7 @@ On 18 May 2016, Argentina’s Ministry of Energy and Mines announced a new renew
 Argentina exports most of its biodiesel production. In 2011, it exported 2bn litres out of 2.9bn litres produced, mostly to European Union (EU) countries. In August 2012, the EU initiated an anti-dumping investigation on Argentine and Indonesian biodiesel, which resulted in a 24.6% anti-dumping duty implemented in May 2013. In order to support local production, Argentina increased its biodiesel blending mandate, increased the mandated price and reduced the export tax.
 
 
-### Score Summary
+### Score summary
 
 Argentina scored 1.39 in Climatescope 2016, unchanged from the previous year. It dropped six places to rank 26<sup>th</sup> and its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
