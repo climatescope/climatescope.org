@@ -24,4 +24,5 @@ It must also be said that Senegal has a well-developed government policy to brin
 Selling small-scale solar products is subject to much less regulation and has good prospects in the electricity-starved regions of Senegal. As the industry gains ground we are likely to see more advanced products coming to market – ranging from larger televisions and energy-efficient fridges to solar-powered pumps and solar water heaters. Around 75% of Senegal’s population works in agriculture, according to the US CIA, so where the demand is, industry will follow…  And as East Africa’s small-scale solar models move West, Senegal could be the next place on the map for fast-growing companies like M-KOPA Solar. Let’s just say, watch this space.
 
 **Briony Bennett**
+
 EMEA Policy Analyst, Bloomberg New Energy Finance
