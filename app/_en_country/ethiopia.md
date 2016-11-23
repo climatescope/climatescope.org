@@ -8,7 +8,7 @@ published: true
 ---
 
 
-#### Score summary
+###Score summary
 
 Ethiopia scored 1.29 in Climatescope 2016, placing it 32<sup>nd</sup> overall, a drop of six places compared with the previous year. The country’s best performance was on Clean Energy Investment and Climate Financing Parameter II.
 
