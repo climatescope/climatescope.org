@@ -21,7 +21,8 @@ Honduras has a total installed capacity of 2.3GW. More than half (54%) of the el
 
 Honduras also uses auctions to contract new power capacity. In 2010, ENEE held a clean energy-only tender, which contracted a total of 250MW of capacity from 39 hydro, biomass, cogeneration and geothermal projects.
 
-#### Score Summary
+
+### Score Summary
 
 Honduras scored 2.03 in Climatescope 2016, an increase of 0.53 on its 2015 tally. The country climbed six places up the list to rank 8th overall. Most notably, it took the number one spot globally on Clean Energy Investment and Climate Financing Parameter II.
 
