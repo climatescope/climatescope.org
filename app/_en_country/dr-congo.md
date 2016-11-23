@@ -12,7 +12,7 @@ published: true
 
 The DRC scored 0.74 in Climatescope 2016, an increase on the previous year. It placed 51st overall and second last among the 19 African nations surveyed, above only Cote D’Ivoire. The country’s best performance by far was on Greenhouse Gas Management Activities Parameter IV.
 
-On Enabling Framework Parameter I, the DRC ranked 53rd. This reflected, among other things, its unbundled power sector and the lack of a clean energy rural electrification programme.
+On Enabling Framework Parameter I, the DRC ranked 53<sup>rd</sup>. This reflected, among other things, its unbundled power sector and the lack of a clean energy rural electrification programme.
 
 It was also weak on Clean Energy Investment and Climate Financing Parameter II, taking 54th position. The clean energy sector has not attracted any investment since 2010, and the average cost of debt is high.
 
