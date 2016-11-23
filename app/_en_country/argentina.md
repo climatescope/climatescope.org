@@ -22,13 +22,13 @@ Argentina exports most of its biodiesel production. In 2011, it exported 2bn lit
 
 ### Score Summary
 
-Argentina scored 1.39 in Climatescope 2016, unchanged from the previous year. It dropped six places to rank 26th and its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
+Argentina scored 1.39 in Climatescope 2016, unchanged from the previous year. It dropped six places to rank 26<sup>th</sup> and its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
-On Enabling Framework Parameter I, the country’s score fell and it slid seventeen places to 37th. Policies such as the biofuel blending mandate offered a degree of support, but the score was weakened by the absence of any new renewable power generating capacity.
+On Enabling Framework Parameter I, the country’s score fell and it slid seventeen places to 37<sup>th</sup>. Policies such as the biofuel blending mandate offered a degree of support, but the score was weakened by the absence of any new renewable power generating capacity.
 
-Argentina’s score on Clean Energy Investment and Climate Financing Parameter II rose slightly and it was placed 50.
+Argentina’s score on Clean Energy Investment and Climate Financing Parameter II rose slightly and it was placed 50<sup>th</sup>.
 This reflected the high average cost of debt (25%) in 2015 and the relatively small volume of new investment ($81m) compared with recent years.
 
-On Parameter III, the country earned 14th place thanks chiefly to the large number of clean energy value chains present and the diversity of financial institutions serving the sector.
+On Parameter III, the country earned 14<sup>th</sup> place thanks chiefly to the large number of clean energy value chains present and the diversity of financial institutions serving the sector.
 
-On Greenhouse Gas Management Activities Parameter IV, Argentina’s score rose and it took 11th position. It performed well in the Carbon Offsets and Carbon Policy categories, the latter benefiting from the presence of an emissions reduction target.
+On Greenhouse Gas Management Activities Parameter IV, Argentina’s score rose and it took 11<sup>th</sup> position. It performed well in the Carbon Offsets and Carbon Policy categories, the latter benefiting from the presence of an emissions reduction target.
