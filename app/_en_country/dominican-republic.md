@@ -25,7 +25,7 @@ The Dominican Republic also has a net metering programme, which allows retail el
 On 18 August 2015, the government of the Dominican Republic submitted its Intended Nationally Determined Contribution to the United Nations, committing to cut greenhouse gas (GHG) emissions by 25% by 2030, compared with 2010 levels. This reduction is conditional upon favourable and predictable support, feasible climate finance mechanisms and corrections to the failures of existing market mechanisms. To achieve the target, an estimated $17m of mitigation actions in the energy, transport, forestry, tourism, solid waste and cement sectors will be required.
 
 
-### Score Summary
+###Score summary
 
 The Dominican Republic scored 1.20 in Climatescope 2016, an improvement of 0.18 on its total the year before. It edged down two places to 34<sup>th</sup> on the list of 58 nations, and its biggest improvement was on Clean Energy Investment and Climate Financing Parameter II.
 
