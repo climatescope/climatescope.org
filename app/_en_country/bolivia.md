@@ -20,7 +20,7 @@ Bolivia has a low electrification rate compared with other Latin America countri
 In October 2015, the government submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, in which it committed to increasing installed renewable energy capacity (including large hydro) to 79% by 2030. The target is in line with country’s National Development Plan 2016 – 2020, which aims to add 3GW of capacity by 2020 – 1.5GW from hydro plants, 1.1GW from combined cycle gas plants and 0.4GW from wind, biomass, geothermal and solar plants.
 
 
-### Score Summary
+###Score summary
 
 Bolivia scored 0.89 in Climatescope 2016 and dropped sixteen places to 45<sup>th</sup> on the list of 58 countries surveyed. Its score in 2015 was 1.04. One specific area of weakness was the country’s performance on Clean Energy Investment and Climate Financing Parameter II.
 
