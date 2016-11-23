@@ -21,7 +21,6 @@ The Renewable Energy Self-Generation Programme was established in May 2015, but 
 In November 2015, the government submitted its Intended Nationally Determined Contribution (INDC) to the United Nations. The document reaffirms the islands’ energy target and commits conditionally to cut greenhouse gas (GHG) emissions by 30% below the business as usual scenario by 2030. The commitment depends on international support in the form of finance, investment, technology development and transfer as well as capacity-building. The cost of implementing the mitigation actions required to achieve the goal is estimated at $900m.
 
 
-
 ###  Score summary
 
 Bahamas gained three places in Climatescope 2016 to take 50th position with a score of 0.75. The country’s 2015 score was 0.48. Its biggest improvement was on Enabling Framework Parameter I. 
