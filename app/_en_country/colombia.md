@@ -19,7 +19,7 @@ The capital city, Bogotá, in 2011 enacted a law exempting electric vehicles (EV
 On 7 September 2015, the government of Colombia submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, committing unconditionally to cut greenhouse gas (GHG) emissions by 20% relative to the business as usual (BAU) scenario by 2030. It is prepared to increase this target to 30%, subject to availability of international support. Since 2013, Colombia has been working on developing a system for monitoring, reporting and verification of GHG emission reductions and climate financing. 
 
 
-### Score Summary
+###Score summary
 
 Colombia scored 1.45 in Climatescope 2016, placing it 22<sup>nd</sup> on the list of 58 countries, down from 19<sup>th</sup>  the previous year. Its score in 2015 was 1.39. The country achieved it highest ranking on Greenhouse Gas Management Activities Parameter IV.
 
