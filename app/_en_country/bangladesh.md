@@ -9,7 +9,7 @@ published: true
 
 
 
-#### Score Summary
+###Score summary
 
 Bangladesh scored 1.40 in Climatescope 2016, placing it 25<sup>th</sup> among countries overall. Its score was higher than on the previous year’s survey, yet it dropped one place on the list. Its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
