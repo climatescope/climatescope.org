@@ -25,7 +25,7 @@ In 2015, the first auctioned projects started to come online. The country’s fi
 Guatemala’s renewable energy installed capacity increased 38%, reaching 1GW in December 2015. The country’s average retail electricity prices fell 21%, from $228/MWh in 2014 to $181/MWh in 2015.
 
 
-### Score Summary
+### Score summary
 
 Guatemala scored 1.49 in Climatescope 2016, an increase of 0.09 on its total the year before. It placed 21<sup>st</sup> overall, down three from its position in the previous survey. The country’s strongest performance by far was on Enabling Framework Parameter I.
 
