@@ -8,7 +8,7 @@ published: true
 ---
 
 
-#### Score Summary
+###Score summary
 
 The DRC scored 0.74 in Climatescope 2016, an increase on the previous year. It placed 51,<sup>st</sup> overall and second last among the 19 African nations surveyed, above only Cote D’Ivoire. The country’s best performance by far was on Greenhouse Gas Management Activities Parameter IV.
 
