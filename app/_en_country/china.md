@@ -9,7 +9,7 @@ published: true
 
 
 
-#### Score Summary
+###Score summary
 
 China scored 2.53 in Climatescope 2016 and was placed 1<sup>st</sup> on the list of 58 countries for the third consecutive year. Its score was better than its tally the year before, and considerably higher than that of Chile, which took second spot with a score of 2.36. China was ranked among the top three countries on all parameters except Enabling Framework Parameter I.
 
