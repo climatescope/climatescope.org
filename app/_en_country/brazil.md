@@ -26,7 +26,7 @@ Brazil’s ethanol production is exceeded only by that of the US. The South Amer
 Energy efficiency is promoted through an energy savings obligation, requiring electricity distribution companies to allocate 0.5% of their net operating revenue towards end-use energy efficiency investments. Since 2014, electricity distributors have been obliged to provide smart meters at no cost to customers who opt into the dynamic tariff scheme. Customers who request additional smart-meter functionality are charged for the cost of the meter. However, the final regulation on smart meters is unfinished, and deployment has been delayed.
 
 
-### Score Summary
+###Score summary
 
 Brazil scored 2.29 in Climatescope 2016 to rank third overall on the list of countries. It slipped from second last year, when it scored 2.12. The country placed in the top five on all parameters, except for Clean Energy Investment and Climate Financing Parameter II.
 
