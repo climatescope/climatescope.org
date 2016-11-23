@@ -20,7 +20,7 @@ On 30 September 2015, the government submitted its Intended Nationally Determine
 Costa Rica offers exemptions on import, value added and income tax for selected renewable energy materials and equipment. ICE periodically holds tenders to contract new clean energy capacity. A net metering programme is also in place, allowing retail electricity customers to install self-generation facilities, interconnect with the utility grid, deliver surplus generation to the grid and obtain compensation in the form of a billing credit.
 
 
-### Score Summary
+###Score summary
 
 Costa Rica scored 1.51 in Climatescope 2016, an improvement of just 0.02 on its 2015 tally. It dropped five places to 20<sup>th</sup> overall, and its highest ranking was on Greenhouse Gas Management Activities Parameter IV.
 
