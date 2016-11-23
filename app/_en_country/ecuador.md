@@ -22,7 +22,7 @@ The country has set a target to get 90% of its electricity from hydro in 2017 an
 On 13 October 2015, the government of Ecuador submitted its unconditional Intended Nationally Determined Contribution to the United Nations, in which it committed to cutting greenhouse gas (GHG) emissions in the energy sector by 20.4% to 25% below the business-as-usual (BAU) scenario by 2025. Ecuador also committed to a further reduction of GHG emissions in the energy sector to a level between 37.5% and 45.8% below the BAU scenario by 2025. This further reduction is conditional upon availability of resources and international support.
 
 
-### Score Summary
+### Score summary
 
 Ecuador scored 1.19 in Climatescope 2016, an increase of 0.16 on its tally in 2015. It fell four places to 35<sup>th</sup> however, and its best performance was on Greenhouse Gas Management Activities Parameter IV.
 
