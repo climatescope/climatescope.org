@@ -31,4 +31,4 @@ Bahamas placed 22<sup>nd</sup> on Clean Energy Investment and Climate Financing 
 
 On Parameter III, the country ranked 53<sup>rd</sup>, two places down from last year. The sector had just five clean energy value chains and one financial institution.
 
-It took 51<sup>st</sup> position on Greenhouse Gas Management Activities Parameter IV, a decline from 49th the year before. Among its few attributes in this area is a GHG emissions reduction target.
+It took 51<sup>st</sup> position on Greenhouse Gas Management Activities Parameter IV, a decline from 49<sup>th</sup> the year before. Among its few attributes in this area is a GHG emissions reduction target.
