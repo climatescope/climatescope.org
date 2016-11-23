@@ -23,7 +23,7 @@ First and most significant, the revised plan calls for an increased renewable en
 
 Second, the plans set technology-specific targets for wind, biomass and, more recently, solar. Vietnam hopes to add 6GW of new wind and 12GW of new solar by 2030 – an exponential increase from its current installed base of ~60MW for both (Figure 3). 
 
-![Figure 3:	Vietnam cumulative renewable capacity according to the revised PDP VII (climatescope.org/app/assets/images/content/CS2016_blog_Vietnam1_fig3.png)
+![Figure 3:	Vietnam cumulative renewable capacity according to the revised PDP VII] (climatescope.org/app/assets/images/content/CS2016_blog_Vietnam1_fig3.png)
 *Source: Revised Power Development Plan of Vietnam VII. Note: Other renewables includes biomass and geothermal. Small hydro is <30MW.* 
 
 Third, the original plan sets out a framework for liberalising the power markets, beginning with a wholesale market by 2021 and later a retail market by 2023. Currently, there is a live pilot for a competitive wholesale market, and a retail version is scheduled for 2021.  This will break the monopoly of the state utility, EVN, and hopefully attract foreign investment into generation assets. 
