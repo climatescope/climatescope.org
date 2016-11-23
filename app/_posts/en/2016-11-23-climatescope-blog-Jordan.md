@@ -8,7 +8,7 @@ description:
 
 A two-hour car journey south from Amman on Jordan’s Desert Highway takes us to Ma’an. This is a city of 50,000 people and is one of the five development areas announced in Jordan to promote economic activity. It has become a case-study of how government support for renewable energy investment can give a boost to the local economy. Ma’an Development Area (MDA), managed by Ma’an Development Co. (MDC), hosts solar projects that range from small domestic systems to large utility-scale plants that cover five square kilometres and has drawn $400m of investment. 
 
-(climatescope.org/app/assets/images/content/CS2016_blog_Jordan_fig1.png)
+![Solar park in the Ma’an Development Area, Jordan](climatescope.org/app/assets/images/content/CS2016_blog_Jordan_fig1.png)
 *Solar park in the Ma’an Development Area, Jordan*
 
 But let’s take a step back. The spurt of growth in Jordan’s renewable energy sector is the result of the government’s efforts to tackle the country’s recent energy crisis. Jordan is uniquely disadvantaged in the Middle East as it has scarce resources for power generation and imports 96% of its energy needs from countries that have been politically unstable in recent years. This has led to ever-higher power prices and disruptions to the energy supply, which in turn has hurt the nation’s economy -- spending on energy equated to 18% of GDP in 2014. This situation culminated in the government resolving to support the use of local resources, including renewables, for generating electricity. Investment in the sector was encouraged following the adoption of the Renewable Energy and Energy Efficiency Law in 2012. 
@@ -23,7 +23,8 @@ In addition to increasing the renewable energy capacity of the country, these pr
 
 Among commercial-scale systems in Ma’an, MDC installed a 1MW net-metering project at its student dorms, the first MW-scale project for the country. This has helped show the potential for this segment, given the very high retail electricity prices in Jordan: depending on consumption levels, commercial organisations can pay as much as $0.40/kWh. The payback period is only two years for the project.
 
-(climatescope.org/app/assets/images/content/CS2016_blog_Jordan_fig3.png) *1MW system installed at a university accommodation in Ma’an*
+![Winners of Jordan’s Direct Proposal Schemes – PV projects]
+*1MW system installed at a university accommodation in Ma’an*
 
 Finally, at the smaller end of the solar scale, a royal initiative is funding the installation of 2,200 PV systems on homes in the region. The project will help residents with their energy costs, raise awareness and help in Ma’an’s transition to a greener economy.
 
