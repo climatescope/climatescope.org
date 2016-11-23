@@ -33,4 +33,5 @@ Fourth, the plan outlines a number of other objectives, including and not limite
 In a separate policy, Vietnam has submitted its official INDC emission-reduction goal. The country targets an 8% decrease in emissions by 2030 under a business-as-usual scenario. 
 
 **Jacqueline Lilinshtein**
+
 Product Owner, Product Management and Marketing Strategy, Bloomberg New Energy Finance
