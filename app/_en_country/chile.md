@@ -21,7 +21,7 @@ The country is the leader in Latin American solar installations – as of the en
 In 2014, a net metering programme was introduced. This enables retail electricity consumers who have renewable energy or co-generation installations smaller than 100kW to connect to the national grid, deliver surplus generation and obtain credit for excess electricity provided. The credit is equivalent to the price charged by the utilities to their consumers.
 
 
-### Score Summary
+###Score summary
 
 Chile scored 2.36 in Climatescope 2016, placing it second on the list of 58 countries, beneath only China. (In 2015, it managed 3<sup>rd</sup> with a score of 1.97.) The country was in the top 10 on all parameters, and achieved its highest ranking on Greenhouse Gas Management Activities Parameter IV.
 
