@@ -9,7 +9,7 @@ published: true
 
 
 
-### Score summary
+###Score summary
 
 Ghana scored 1.34 in Climatescope 2016, ranking it 29<sup>th</sup> on the list of countries overall, one place below its position in 2015. The country’s best performance came on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
