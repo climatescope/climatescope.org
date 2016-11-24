@@ -8,13 +8,13 @@ published: true
 ---
 China has the largest power generation fleet in the world, totaling 1,525GW of installed capacity by the end of 2015. The country installed a record amount of new build of 142GW including a record high of 33GW wind and 18GW solar PV, and a resurgence of thermal capacity with 72GW of newly installed capacity. The country is entering into the first year of its 13<sup>th</sup> Five-year-plan (FYP) in 2016. Many energy targets have been set or proposed in the last two years to bring China to a greener, more sustainable development path by 2020, including:
 
-1) Reducing carbon intensity by 40-45% below 2005 levels by 2020, 
+1) Reducing carbon intensity by 40-45% below 2005 levels by 2020; 
 
-2) Capping primary energy consumption at 5,000m tonnes of coal equivalent (Mtce) by 2020,
+2) Capping primary energy consumption at 5,000m tonnes of coal equivalent (Mtce) by 2020;
 
-3) Increasing non-fossil fuels share of primary energy consumption to 15% by 2020,
+3) Increasing non-fossil fuels share of primary energy consumption to 15% by 2020;
 
-4) Decreasing the share of coal in primary energy consumption to less than 62% by 2020,
+4) Decreasing the share of coal in primary energy consumption to less than 62% by 2020;
 
 5) Connecting at least 210GW of wind, 105GW of PV and 5GW of solar thermal to grids by 2020. However, although the wind and PV numbers are just bottom lines, they are significantly lower than those in the previous proposals, where targets were set as 250GW and 150GW for wind and PV respectively. 
 
