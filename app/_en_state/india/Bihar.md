@@ -8,7 +8,7 @@ region: asia
 country: in
 ---
 
-### Score summary
+###Score summary
 
 Bihar scored 0.630 in Climatescope 2016, placing it last on the list of six Indian states surveyed in the current year. Its highest position was on Greenhouse Gas Management Activities Parameter IV. 
 
