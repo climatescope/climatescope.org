@@ -20,7 +20,6 @@ The two specific areas where countries demonstrated progress were on strengthene
 
 This year’s Climatescope analysed for the first time three nations in the Middle East and North Africa region – Jordan, Egypt, and Lebanon. The three achieved mixed results.  Jordan made it to the top 4 with a score of 2.31 out of a possible 5 and ranked 11<sup>th</sup> overall. For their part, Egypt and Lebanon scored 1.03 and 0.87, respectively reflecting challenging socio-economic and security conditions in those nations in recent years. 
 
-**An Improving Policy Landscape**
 #### AN IMPROVING POLICY LANDSCAPE
 
 Clean energy-friendly policies are becoming ever more common in Climatescope nations. The number of countries in the survey with no such policies on the books fell to just four in 2016<sup>1</sup> , down from six in 2015 and eight in 2014. The types of policies countries are adopting have also evolved over the past three years (Figure 1).
@@ -85,12 +84,17 @@ One example of where lower commodity prices have resulted in higher credit-worth
 
 Currency gyrations represent major risk for investors looking to put money to work in emerging markets and in recent years the US dollar has appreciated substantially against many local currencies in Climatescope nations (Figure 7 and Figure 8). This is partly due to the unwinding of unconventional monetary policy measures first introduced by the US Federal Reserve in response to the 2008 financial crisis. 
 
+![PI Fig 7 - Climatescope currencies vs. the US dollar 2013-2016 (rebased to 1)](add link)
+![PI Fig 8 - The US dollar index (dollar vs other currencies in major OECD nations), 2013-2016 ](add link)
 
+The appreciation of the dollar affects Climatescope countries differently depending on the characteristics of their economies and their clean energy markets. Those most reliant on imported goods and services to develop clean energy projects have seen the higher dollar boost local costs. 
 
+Only a few countries – namely China and, to a lesser degree, India - currently employ almost entirely domestically-made equipment. Generally speaking, the more domestically-oriented a country’s clean energy manufacturing, the less exposure local developers have to an appreciating dollar. 
 
-_____________________________________________________________
+The vast majority of Climatescope’s 58 nations rely on trading partners to secure wind turbines, solar modules, and other equipment, however. When prices for such gear spike unexpectedly due to local currency declines, local project owners suffer.
+
+Efforts to address this include state-run utilities agreeing to long-term contracts, sometimes explicitly denominated in dollars, or local governments essentially agreeing to backstop shortfalls caused by currency changes.  While risks associated with currency fluctuations can be shifted to different parties, they cannot be eliminated. For example, South Africa’s state-run utility Eskom has signed multiple 20-year power purchase agreements backstopped by the South African government. The arrangement has helped spur just under $16bn in clean energy investment representing around 9GW of contracts since the programme was launched in 2011. It has also added $13bn to the South African Treasury’s liabilities, the equivalent of around one third of South Africa’s foreign exchange reserves as of July 2016, according to Bloomberg. 
+
+Risks aside, such long-term commitments to address the currency question have clearly helped clean energy projects get financed and built.  Indeed, Climatescope countries where project owners can receive payments in dollars or have their contracts otherwise indexed or insured against currency changes have seen some of the strongest levels of investment to date.
+____________________________________________________________
 <sup>1</sup> The countries with no active legislation are Sierra Leone, Suriname, Trinidad & Tobago and Venezuela.
-
-
-<sup>number</sup>
-
