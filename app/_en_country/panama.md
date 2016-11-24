@@ -25,14 +25,14 @@ In June 2012, net metering was adopted by the country. Under the regulation, ret
 In April 2016, the government of Panama submitted its Nationally Determined Contributions NDC to the United Nations. The NDC establishes a renewable energy generation target of 15% for 2030 and 30% for 2050.
 
 
-### Score Summary
+###Score summary
 
-Panama scored 1.62 in Climatescope 2016, an increase of 0.31 on its tally in the 2015 survey. The country climbed six places to rank 15th overall, and its highest position by far was on Enabling Framework Parameter I.
+Panama scored 1.62 in Climatescope 2016, an increase of 0.31 on its tally in the 2015 survey. The country climbed six places to rank 15<sup>th</sup> overall, and its highest position by far was on Enabling Framework Parameter I.
 
-It placed 3rdglobally on Parameter I (behind Uruguay and Rwanda) on a score of 2.32, up from 1.48 the previous year. This was largely a reflection of the 546MW of new installed capacity, mainly small hydro and wind.
+It placed 3<sup>rd</sup> globally on Parameter I (behind Uruguay and Rwanda) on a score of 2.32, up from 1.48 the previous year. This was largely a reflection of the 546MW of new installed capacity, mainly small hydro and wind.
 
-Panama fell eleven places to 17th on Clean Energy Investment and Climate Financing Parameter II. Its score was supported by a high level of investment ($1.4bn) between 2011 and 2015, and a quite low (7.46%) average cost of debt in 2015.
+Panama fell eleven places to 17<sup>th</sup> on Clean Energy Investment and Climate Financing Parameter II. Its score was supported by a high level of investment ($1.4bn) between 2011 and 2015, and a quite low (7.46%) average cost of debt in 2015.
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country scored 1.27 and was placed 39th. 
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country scored 1.27 and was placed 39<sup>th</sup>. 
 
-On Greenhouse Gas Management Activities Parameter IV, Panama placed 39th. It has not adopted any carbon policies, but is engaged in a small number of carbon offsetting projects.
+On Greenhouse Gas Management Activities Parameter IV, Panama placed 39<sup>th</sup>. It has not adopted any carbon policies, but is engaged in a small number of carbon offsetting projects.
