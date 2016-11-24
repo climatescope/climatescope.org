@@ -60,7 +60,9 @@ The benefits of self-generation policies are clearly seen in island nations heav
 
 Compelled by the Paris talks, last year 24 Latin America and Caribbean countries submitted plans to the UN to address climate change. Among these, 20 included specific greenhouse gas (GHG) emission reduction targets, which are split in three types of commitments:
 
-* <strong>Absolute targets</strong> 
+* <strong>Absolute targets</strong> are relative to real emissions in a base year and therefore are a commitment to an absolute reduction. Brazil and Costa Rica submitted absolute targets. Brazil, for instance, has committed to cut greenhouse gas emissions 37% below 2005 levels by 2025. 
+* <strong>Intensity targets</strong> are relative to GHG emissions per unit of GDP. Chile and Uruguay submitted intensity targets. Chile, for instance, has committed to cut greenhouse gas emissions by GDP unit by 30% below the 2007 level by 2030. We estimate that this will result in over 50% growth in emissions over the same period. 
+* <strong>Business as usual targets (BAU) </strong> are relative to a BAU scenario, which is projected considering future economic and population growth and therefore result in increase in emissions in absolute terms (Figure 3). 16 Latin America and Caribbean countries surveyed in Climatescope submitted BAU targets. Haiti, for instance, has committed to cut greenhouse gas emissions by 5% below the BAU by 2030. This implies an absolute increase in emissions of 149% by the target year. Targets can be conditional, unconditional or a combination of both. Conditional commitments are subject to international support while unconditional commitments rely on domestic resources alone. Nine countries in the region have disclosed detailed unconditional and conditional targets (Figure 3).
 
 
 
