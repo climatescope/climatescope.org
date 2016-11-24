@@ -21,14 +21,14 @@ While Haiti does not have specific legislation mandating microgrids, private com
 On 30 September 2030, Haiti submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, in which it committed unconditionally to cut greenhouse gas (GHG) emissions by 5% below the business as usual (BAU) scenario by 2030. This unconditional target represents a total emission reduction of 10MtCO2e by 2030. The country also committed to a further reduction of GHG emissions by 26% below the BAU scenario by 2030 conditional upon international support. This represents a total reduction of 35.24MtCO2e by 2030.
 
 
-### Score Summary 
+###Score summary 
 
-Haiti scored 0.78 in Climatescope 2016, an increase of 0.14 on the previous year. It ranked 49th overall, representing a drop of four compared with 2015. The country’s best performance was on Clean Energy Investment and Climate Financing Parameter II.
+Haiti scored 0.78 in Climatescope 2016, an increase of 0.14 on the previous year. It ranked 49<sup>th</sup> overall, representing a drop of four compared with 2015. The country’s best performance was on Clean Energy Investment and Climate Financing Parameter II.
 
-Haiti’s score on Enabling Framework Parameter I increased to 1.02 from 0.89, but it declined four places to 43rd position. The country’s relatively well-developed off-grid energy sector  contrasts with its almost total lack of clean energy policies.
+Haiti’s score on Enabling Framework Parameter I increased to 1.02 from 0.89, but it declined four places to 43<sup>rd</sup> position. The country’s relatively well-developed off-grid energy sector  contrasts with its almost total lack of clean energy policies.
 
-Its score on Parameter II increased and it climbed one place to 44th. While there is no record of any investment in the sector between 2010 and 2015, the average cost of debt (at 12.92%) offered a degree of support.
+Its score on Parameter II increased and it climbed one place to 44<sup>th</sup>. While there is no record of any investment in the sector between 2010 and 2015, the average cost of debt (at 12.92%) offered a degree of support.
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country scored 1.32 (unchanged from 2015) and was placed 36th. The handful of distributed clean energy companies and service providers were the only bright spots in this category.
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country scored 1.32 (unchanged from 2015) and was placed 36<sup>th</sup>. The handful of distributed clean energy companies and service providers were the only bright spots in this category.
 
-On Greenhouse Gas Management Activities Parameter IV, Haiti was just two from the bottom in 56th place, having minimal carbon offsetting activity and policies.
+On Greenhouse Gas Management Activities Parameter IV, Haiti was just two from the bottom in 56<sup>th</sup> place, having minimal carbon offsetting activity and policies.
