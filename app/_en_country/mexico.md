@@ -22,7 +22,7 @@ Mexico has an aggressive mandate to generate 35% of its power from clean sources
 Ahead of the United Nations Framework Convention on Climate Change meeting in Paris in November 2015, Mexico was one of the first developing countries to submit its Intended Nationally Determined Contribution. It committed to a 30% emission reduction under a business-as-usual scenario (BAU) by 2020. For the 2030 commitment, it included unconditional (22% decrease) and conditional (36% decrease) targets. By 2050, it aims for a 50% reduction on emissions below BAU.
 
 
-### Score Summary
+###Score summary
 
 Mexico scored 2.02 in Climatescope 2016 (up from 1.72 in the previous survey), ranking it 9<sup>th</sup> overall, two places below its position in 2015. The country’s lowest position was on Enabling Framework Parameter I, but it was also the scene of some improvement. 
 
