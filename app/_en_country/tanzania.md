@@ -7,6 +7,15 @@ grid: 'off'
 published: true
 ---
 
+Tanzania’s power sector is dominated by state-owned TANESCO, which has a monopoly on transmission and most distribution and owns just over half of the generating capacity. However, the market is due to see significant change in the next few years: the 2014 Electricity Supply Industry Reform Strategy and Roadmap set a target of 10.7GW of generating capacity by 2025 – six times the level at end-2015. The roadmap also sets out a power sector reform that would see TANESCO fully unbundled by 2025, though full liberalisation will be hard to achieve within the prescribed timelines.
+
+Most new installations will be gas and coal, as the government aims to reduce its reliance on the costly emergency diesel-fired power stations that stepped in when drought scuppered its hydro plants. These efforts are starting to bear fruit: by end of 2015, gas capacity topped large hydro for the first time. The roadmap only foresees modest renewables capacity by 2025: 100MW of solar and 200MW each of geothermal and wind. Even so, that would require a step up in clean energy investment, as Tanzania attracted just $176m over 2010-15. But its position as a hub for small-scale solar meant that $51m or 69% of the total investment over 2014-15 was from venture capital and private equity funds buying into off-grid solar companies.
+
+One issue holding back investment is non-payment by the utility to independent generators: TANESCO owed $208m to private power producers in February 2016. It is making an effort to pay off its debts of over $400m by the end of 2016, in line with the Roadmap. In October 2016, a parliamentary committee ruled that the government must repay its debt to TANESCO within 6 months. TANESCO also announced that it is seeking regulatory approval for an 18% tariff increase that month. 
+
+Tanzania has one of the most robust regulatory and legal frameworks in the region, to encourage the construction of small power projects. By December 2015, 11 small power developers had signed power-purchase agreements (PPA) to supply 46MW and another six had letters of intent for 31MW. At end of 2015, the regulator approved the ‘second-generation’ framework, which improves on its predecessor in several ways: projects will earn a fixed tariff for the lifetime of the PPA. Previously the rates fluctuated annually based on the distribution network operator’s avoided costs. The selection method will vary by technology, so there will be an administrative process for small hydro and biomass projects, and competitive bidding for solar and wind. Indeed, competitive bidding is now the catchphrase of Tanzania’s approach to energy policy and will form part of the regulatory framework for utility-scale renewable power producers.
+
+The country should soon have its first utility-scale solar plant, 5MW developed by NextGen Solar that has taken three years to negotiate. Construction began in October 2016. Plans are still in place for two wind farms at Singida – one being developed by Aldwych International, responsible for Kenya’s flagship Turkana project.
 
 
 #### Score Summary
