@@ -7,8 +7,6 @@ grid: 'on'
 published: true
 ---
 
-
-
 ###Score summary
 
 Egypt scored 0.97 in Climatescope 2016 and it took 42<sup>nd</sup> place on the list of countries overall. Its best performance was on Greenhouse Gas Management Activities Parameter IV.
