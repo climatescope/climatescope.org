@@ -25,5 +25,4 @@ Simply said, rates are too cheap. This is measured by comparing FiTs to the leve
 *Source: Bloomberg New Energy Finance, Vietnam Ministry of Industry and Trade*
 
 **Jacqueline Lilinshtein**
-
 Product Owner, Product Management and Marketing Strategy, Bloomberg New Energy Finance
