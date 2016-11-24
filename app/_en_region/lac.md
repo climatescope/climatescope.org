@@ -64,7 +64,57 @@ Compelled by the Paris talks, last year 24 Latin America and Caribbean countries
 * <strong>Intensity targets</strong> are relative to GHG emissions per unit of GDP. Chile and Uruguay submitted intensity targets. Chile, for instance, has committed to cut greenhouse gas emissions by GDP unit by 30% below the 2007 level by 2030. We estimate that this will result in over 50% growth in emissions over the same period. 
 * <strong>Business as usual targets (BAU) </strong> are relative to a BAU scenario, which is projected considering future economic and population growth and therefore result in increase in emissions in absolute terms (Figure 3). 16 Latin America and Caribbean countries surveyed in Climatescope submitted BAU targets. Haiti, for instance, has committed to cut greenhouse gas emissions by 5% below the BAU by 2030. This implies an absolute increase in emissions of 149% by the target year. Targets can be conditional, unconditional or a combination of both. Conditional commitments are subject to international support while unconditional commitments rely on domestic resources alone. Nine countries in the region have disclosed detailed unconditional and conditional targets (Figure 3).
 
+![LAC Fig 3 - Unconditional and conditional absolute emissions in target year for select Latin America & Caribbean countries, relative to base year levels] (add link)
 
+Brazil has one of the world’s most ambitious targets. The country’s commitment to cut greenhouse gas emissions 37% below 2005 levels by 2025 can rise to 43% if the country receives international support. That would translate to 903MtCO2e reduction by 2025 compared to 2005. This figure is three times the amount emitted in 2012 by the 13 Central American and Caribbean countries combined.
+
+Costa Rica is the only country in the region, and one of a handful in the world, that has included a carbon neutral component in its INDC. The carbon neutrality commitment was first announced back in 2007 as part of the country’s National Climate Change Strategy. Costa Rica may use its Domestic Carbon Market as a complement to national and sectorial policies for emissions reduction in order to achieve this goal. 
+
+Latin American and Caribbean countries will have to considerably increase the reach of their carbon offset regulations and activities to meet their targets. Currently, only two countries have carbon tax policies in force, both enacted in 2014. Chile has approved a $5/t tax on CO2 and will begin to measure emissions in 2017. Collections of the tax are expected to start the following year. Mexico has introduced a carbon tax on the sale and import of fossil fuels. Additionally, Mexican-based companies with yearly emissions over 100Mt must provide performance information to the National Register of Emissions and have their annual reports verified by a third party organisation authorised by the government.
+
+### INVESTMENT
+
+By clean energy sector, wind continued to attract the bulk of investment in 2015 with $15.5bn (Figure 4). Activity in solar, which kicked off in 2012, continued to grow steadily in 2015 to reach $4.1bn. Small hydro and biomass have been traditional clean energy sectors in the region. While these technologies did not attract growing amounts of investment, they continued to be relevant given LAC’s hydro resources and agriculture production. 
+
+![LAC Fig 4 - Clean energy investment by source, 2010 - 2015] (add link)
+
+In terms of geography, Brazil, the largest power market in Latin America, continues to top regionally in terms of amount of investment, registering $10.7bn of new funds for renewables in 2015. However, geographic diversification continues as investors seek opportunities beyond the main consolidated markets. Last year, Mexico ($4.1bn) and Chile ($3.4bn) were the second and third largest renewable investment destinations (Figure 5). Much smaller countries have gone through waves of investment given the size of their economies and power grids. For instance, Honduras saw a surge of $675m invested last year and Jamaica received $205m for renewable energy projects, compared to only $3m in 2014. These countries will be unable to sustain such levels of investment on a yearly basis, but their successes in 2015 demonstrate how the clean energy map has expanded.  
+
+![LAC Fig 5 - Clean energy investment by country, 2010 - 2015] (add link)
+
+Other notable trends include the entry of new financiers into the region and some financial innovation. Historically, development banks and multilateral institutions have dominated financing of clean energy projects in the region. As the market has consolidated, however, international and local private banks have stepped up. As for innovation, one area of growth has been greater use of green bonds. Last year, a major offering in Mexico by development bank NAFIN accounted for most the clean energy investment in the country (Figure 6). Green bonds have been an interesting instrument for institutional investors to tap into the clean energy market.
+
+![LAC Fig 6 - Top five clean energy projects financed in Latin America & Caribbean, 2015] (add link)
+
+### MARKETS IN TRANSFORMATION
+
+The first half of 2016 has been marked by significant policy progress in Argentina, Brazil, and Mexico. Colombia is one of the last markets in Latin America that has yet truly to open its power sector to clean energy. These are certainly four markets to watch for next year’s Climatescope.
+
+![LAC Fig 7 - Mexico’s power market structure, before and after reform] (add link)
+
+After a decade of nearly no activity, Argentina is angling to become a renewable investment destination. At the end of 2015, the government published a new renewable energy law (27.191). Several months later, the government issued accompanying regulations, marking a turning point for the clean energy industry in the country. The law raised the country’s national target to 8% of power consumption by 2017. This will be challenging to reach, since clean energy only represented 2% of 135TWh generated in 2015. The government is aiming to at least contract sufficient capacity to meet the goal the following year. 
+
+With an eye toward achieving that, Argentina followed its neighbours in launching a new auction mechanism which contracted 1.1GW of wind and solar capacity in October 2016. The next renewable energy auction is now expected to be held in April 2017. 
+
+Brazil’s crisis has hurt the country’s renewable energy industry primarily through exchange rate volatility. It has also led to policy-makers to rethink the structures of energy planning, regulation and financing. Conversations are now underway about strengthening the country’s auction system and improving transmission planning and market certainty. Additionally, there is a push to seek new financing options and move away from overreliance on the country’s development bank, BNDES. 
+
+Mexico is in the process of implementing its energy reform, which should be completed by 2018 (Figure 7). The country’s newly introduced auctions have attracted international investors and produced the lowest average tendered prices for wind and solar contracts seen globally. Its nascent wholesale market, which launched at the beginning of 2016, is gaining liquidity. Once it is fully implemented, we expect a new wave of investment of clean energy projects to supply power to large offtakers.  
+
+Between 2015 and 2016, Colombia endured one of its worst droughts driven by the ‘El Niño’ phenomenon. This significantly impaired the country’s power matrix, which is 70% composed of hydro plants. We expect that this will lead Colombia to re-consider its grid planning and seek greater diversification in its energy mix, potentially creating new opportunities for renewables.
+
+### A CLOSER LOOK AT THE CARIBBEAN
+
+Caribbean island nations remain largely dependent on fossil fuels. However, some are taking important strides toward transitioning to a cleaner energy future. 
+
+In 2008, Jamaica became the first Caribbean country to hold a clean energy-specific auction. Its National Energy Plan calls for 20% of generation to come from renewables by 2030. A significant jump in clean energy investment, along with greater value chain penetration, have moved Jamaica up in the Climatescope rankings.
+
+Barbados serves as an example of how well-structured policy incentives can boost demand for distributed renewable energy and reduce utility-scale generation. In 2013, the country published an extensive tax incentive policy to benefit activities related to renewable energy, particularly self-generation. The Barbados net metering regulation has been in force since 2010 and has since been modified to quadruple the program’s capacity cap. Solar self-generation systems will soon meet 8% of the country’s electricity needs. This has led to a 7% cut in generation from thermal plant, which remain the only source of utility-scale electricity on the island. 
+
+Lower prices for crude have prompted substantial cuts in retail electricity rates in the Caribbean and most of Central America but prices overall remain high (Figure 8). 
+
+![LAC Fig 8 - Average retail electricity price in Climatescope Caribbean countries ($/kWh), 2014 – 2015 ] (add link)
+
+Finally, of seven Central American countries, five saw reduced electricity rates in 2015 due to lower fuel prices. Only Panama saw an increase – mainly to cover costs of excessive thermal generation caused by the 2014 drought. Unlike most of its regional neighbours, fuel prices have a small impact in Costa Rica’s power tariffs rate, as the country was able to meet 99% of its power demand needs with renewable resources (including large hydro) in 2015.
 
 _________________________________________________
 <sup>1</sup> Climatescope covers 10 countries in Asia and 19 countries in Africa and 3 in MENA. For the full list, please see (insert link). 
