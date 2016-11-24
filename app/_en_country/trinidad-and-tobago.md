@@ -20,7 +20,7 @@ On 30 March 2015, the government of Trinidad and Tobago submitted its Intended N
 The government’s National Climate Change Policy maps out its low-carbon development plan, and its Carbon Reduction Strategy for the power generation, transportation and industrial sectors forms the basis of its INDC. In order to reduce emissions in the energy sector, the country is working towards achieving greater efficiency through combined cycle generation at all its power plants. Implementation of renewable energy sources looks set to be the next stage in emissions reduction.
 
 
-### Score Summary
+###Score summary
 
 Trinidad & Tobago scored 0.63 in Climatescope 2016, a slight improvement on its score of 0.57 the previous year. This placed it 55<sup>th</sup> overall, some seven places below its position in 2015. The country was among the bottom four countries on two out of four parameters. 
 
