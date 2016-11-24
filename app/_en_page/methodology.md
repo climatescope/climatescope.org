@@ -70,7 +70,7 @@ The off-grid focus methodology’s additional indicators were specifically desig
 
 For 2016, the Climatescope methodology for off-grid countries was refined, building on the experience acquire in the previous editions of the index. In addition, six barriers specific to off-grid countries focusing on the challenges to the importing and retailing of off-grid renewable technology products were introduced.
 
-#### Scoring approaches
+####**Scoring approaches
 
 Scoring approaches employed in the first four editions of Climatescope were also used for this 2015 edition. These include:
 
