@@ -23,7 +23,7 @@ The final score a country receives under Climatescope is determined by a weighte
 The entire Climatescope model can be viewed at www.global-climatescope.org  where users are encouraged to adjust the parameter weightings according to their priorities and download the aggregate data available. 
 
 
-### ACCOUNTING FOR LESSER DEVELOPED NATIONS THROUGH THE “OFF-GRID FOCUS” METHODOLOGY
+###ACCOUNTING FOR LESSER DEVELOPED NATIONS THROUGH THE “OFF-GRID FOCUS” METHODOLOGY
 
 As in 2015, Climatescope 2016 assessed nations ranging from lowest income to those firmly considered “middle income”. As a result, Climatescope 2016 once again includes a special, augmented “off-grid focus” methodology that includes seven special indicators, with weightings adjusted in the model accordingly. These indicators were taken into account alongside the other “on-grid” indicators for a sub-set of 23 Climatescope nations: 18 in Africa, one in Latin America and Caribbean, and four in Asia.
 The goal of the off-grid effort is to level the playing field so that all countries can be compared in the fairest possible manner against one another in a single 58-country list. In addition, visitors to www.global-climatescope.org can examine the specific off-grid focus indicators in detail if they choose and compare in isolation the 23 nations that were assessed using this methodology.
