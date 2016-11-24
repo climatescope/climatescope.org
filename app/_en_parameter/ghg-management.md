@@ -26,7 +26,7 @@ More importantly, Climatescope countries are where emissions are projected to gr
 
 In 2015, countries submitted their INDCs to the United Nations to communicate steps they plan to take to address climate change. INDCs include emission reduction targets which can be conditional upon support of the international community, unconditional, or a combination of both. Participation among the 58 Climatescope countries was broad, with 43 nations submitting their INDCs with emission reduction targets (Figure 2). The targets include three types of commitments: 
 
-** •	Absolute targets ** relative to total actual emissions in a base year and therefore a commitment to an absolute reduction. Six Climatescope countries submitted absolute targets.
+*	**Absolute targets ** relative to total actual emissions in a base year and therefore a commitment to an absolute reduction. Six Climatescope countries submitted absolute targets.
 
 
 ___________________________________
