@@ -6,7 +6,7 @@ weight: '1'
 published: true
 ---
 
-## **PARAMETER I – ENABLING FRAMEWORK**
+## ** PARAMETER I – ENABLING FRAMEWORK **
 
 Climatescope’s Enabling Framework Parameter I includes a total of 22 indicators, which assess a country’s policy and power sector structure, levels of clean energy penetration, level of price attractiveness for clean energy deployment, and the expectations for how large the market for clean energy can become. Parameter I took into account a wide variety of indicators to compile a final score. This ranged from the macro in the form of overall policy scores for a country’s clean energy policy regime, to the micro in the form of kerosene or diesel prices for lesser developed nations. Parameter I contributed 40% toward each nation’s overall score. For more on how this parameter and others were compiled, please see the complete Climatescope methodology.
 
