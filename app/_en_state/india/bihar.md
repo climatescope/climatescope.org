@@ -34,4 +34,4 @@ The state scored zero on Clean Energy Investment and Climate Financing Parameter
 
 On Low-Carbon Business & Clean Energy Value Chains Parameter III, Bihar scored 1.612, and was placed above only Odisha. Nevertheless, 15 different clean energy value chains were recorded and six service providers.
 
-The state’s 0.167 score on Parameter IV put it in 2<sup>nnd</sup> place, equal with Uttar Pradesh and beneath Madhya Pradesh. In the Carbon Offsets category, the state boasts five Clean Development Mechanism projects.
+The state’s 0.167 score on Parameter IV put it in 2<sup>nd</sup> place, equal with Uttar Pradesh and beneath Madhya Pradesh. In the Carbon Offsets category, the state boasts five Clean Development Mechanism projects.
