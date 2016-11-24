@@ -6,7 +6,7 @@ region: asia
 grid: 'on'
 published: true
 ---
-India, which recently became the world’s third largest power generator after China and the US, had a total installed power generation capacity of 290GW by the end of 2015. The country’s installed power generation capacity grew by 10.6% during the year, with a record 27.8GW of new capacity added, including 18.9GW of coal, 2.6GW of wind and 1.7GW of solar PV. Renewables capacity accounted for 15.2% of the total at the end of 2015.
+India, which recently became the world’s 3<sup>rd</sup> largest power generator after China and the US, had a total installed power generation capacity of 290GW by the end of 2015. The country’s installed power generation capacity grew by 10.6% during the year, with a record 27.8GW of new capacity added, including 18.9GW of coal, 2.6GW of wind and 1.7GW of solar PV. Renewables capacity accounted for 15.2% of the total at the end of 2015.
 
 The peak power demand in the country increased by 3.7% in 2015 to 153GW. Despite the record growth in the new capacity addition, the peak power shortage stood at around 4.9GW or 3.2% of the total maximum demand. The Central Electricity Authority estimates that the peak power demand will increase to 165GW but the country will be peak power surplus by 4.2GW in FY2016-17.
 In June 2015, India formally adopted the target of reaching adding 175GW of renewable energy capacity by 2022: 100GW of solar power (including 40GW of rooftop solar power), 60GW of wind power, 10GW of biomass power and 5GW of small hydro power (project size less than 25MW).
