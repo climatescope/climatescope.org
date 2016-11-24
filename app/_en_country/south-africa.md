@@ -19,7 +19,7 @@ In mid-2015, the 4th round of the REIPPP programme culminated in the announcemen
 
 In October 2015, the winners of the first round of the small projects auction were announced. The 10 winning projects amount to 49MW, with a combined value of ZAR 1.5bn. The small projects REIPPP is planned to add 200MW of generation capacity over four rounds. 
 
-In May 2016, the DOE requested expressions of interest for 1,500MW of solar thermal or PV solar to be developed in the Northern Cape with a focus on developing local manufacturing over the course of what the department has named “The Solar Parks Project”.#
+In May 2016, the DOE requested expressions of interest for 1,500MW of solar thermal or PV solar to be developed in the Northern Cape with a focus on developing local manufacturing over the course of what the department has named “The Solar Parks Project”.
 
 In a dramatic turn of events, in August 2016, Eskom cast the future of the South African renewable sector into doubt by refusing to sign new PPAs unless the grid-operator is given more control of the prices that are agreed to through the auction process. Eskom is the sole off taker for IPPs and refusing to formalise agreements places financial strain on the IPPs, investors and equipment suppliers while Eskom is still able to purchase electricity from the power purchasing division of the utility.
 
