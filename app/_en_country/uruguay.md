@@ -23,14 +23,14 @@ Other renewable energy incentives include VAT exemption for wind generation and 
 Since January 2015, it has been mandatory in Uruguay to blend 5% biodiesel and ethanol with conventional diesel and gasoline. Biodiesel and ethanol producers are exempt from income tax on industrial and commercial activities for ten years.
 
 
-### Score Summary
+###Score summary
 
-Uruguay scored 2.29 in Climatescope 2016, a substantial increase on its 2015 tally of 1.69. The country climbed four places to rank 4thoverall, and most notably, it took the number one spot globally on Enabling Framework Parameter I.
+Uruguay scored 2.29 in Climatescope 2016, a substantial increase on its 2015 tally of 1.69. The country climbed four places to rank 4<sup>th</sup> overall, and most notably, it took the number one spot globally on Enabling Framework Parameter I.
 
 The country’s score on Parameter I was 2.55, up from 2.04 the year before. This world-beating total reflected the presence of policies such as tax incentives and auctions, as well as its supportive power sector structure. 
 
-On Clean Energy Investment and Climate Financing Parameter II, Uruguay took 3rd place with a score of 2.14. Slightly more than $1.3bn was invested in the sector in 2015, a similar amount to the two previous years.
+On Clean Energy Investment and Climate Financing Parameter II, Uruguay took 3<sup>rd</sup> place with a score of 2.14. Slightly more than $1.3bn was invested in the sector in 2015, a similar amount to the two previous years.
 
-The country scored 1.41 and was placed 31st on Low-Carbon Business & Clean Energy Value Chains Parameter III, its lowest position in 2016. Several project developers were present, but very little equipment manufacturing.
+The country scored 1.41 and was placed 31<sup>st</sup> on Low-Carbon Business & Clean Energy Value Chains Parameter III, its lowest position in 2016. Several project developers were present, but very little equipment manufacturing.
 
-On Greenhouse Gas Management Activities Parameter IV, Uruguay was ranked 8th thanks to its considerable carbon-offsetting activities and policies, including a GHG emissions reduction target and Partnership for Market Readiness initiatives.
+On Greenhouse Gas Management Activities Parameter IV, Uruguay was ranked 8<sup>th</sup> thanks to its considerable carbon-offsetting activities and policies, including a GHG emissions reduction target and Partnership for Market Readiness initiatives.
