@@ -9,7 +9,7 @@ published: true
 
 
 
-#### Score Summary
+###Score summary
 
 India scored 2.17 in Climatescope 2016, an improvement on its score the previous year. This placed it 6<sup>th</sup> on the list of countries overall, down one from the previous year. Its strongest performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
