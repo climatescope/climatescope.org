@@ -1,11 +1,11 @@
-
-
-
-
-
-
-
-
+---
+layout: country
+id: lbn
+title: Lebanon
+region: mena
+grid: 'on'
+published: true
+---
 
 Lebanon scored 1.02 in Climatescope 2016, placing it 40<sup>th</sup> on the list of countries overall. Its highest ranking was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
