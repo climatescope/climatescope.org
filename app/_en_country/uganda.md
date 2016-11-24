@@ -19,4 +19,4 @@ On Parameter II, the country’s score more than doubled thanks to a sharp rise 
 
 Uganda ranked 8<sup>th</sup> on Low-Carbon Business & Clean Energy Value Chains Parameter III. Its score is supported by its distributed energy sector, both in terms of the diversity of the value chains present and number of service providers.
 
-On Greenhouse Gas Management Activities Parameter IV it scored higher owing to improvements in its carbon policies. It ranked 13<sup>th</sup> globally, and third in Africa behind South Africa and Kenya.
+On Greenhouse Gas Management Activities Parameter IV it scored higher owing to improvements in its carbon policies. It ranked 13<sup>th</sup> globally, and 3<sup>rd</sup> in Africa behind South Africa and Kenya.
