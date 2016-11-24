@@ -18,7 +18,7 @@ Suriname’s lack of legislation for clean energy and the low power prices are t
 On 5 December 2012, the Inter-American Development Bank (IDB) announced a USD 15m loan for Suriname’s power sector reform. One of the outcomes will be the Suriname’s Green Paper, which would focus on an integrated policy and regulatory energy framework. As of October 2016, it had not been released. On 18 December 2014, IDB announced a USD 33m loan to EBS, which aims to contribute to the sustainability of the power sector in Suriname by supporting EBS’ operation and performance; expanding reliable electricity coverage; and upgrading the power infrastructure.
 
 
-### Score Summary
+###Score summary
 
 Suriname scored 0.55 in Climatescope 2016 (an increase of 0.33), which placed it last, or 58<sup>th</sup>  on the list of countries. Its best performance was on Clean Energy Investment and Climate Financing Parameter II, the only area in which it placed higher than 50<sup>th</sup>.
 
