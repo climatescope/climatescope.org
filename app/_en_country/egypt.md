@@ -1,7 +1,7 @@
 ---
 layout: country
 id: egy
-title: 
+title: Egypt
 region: mena
 grid: 'on'
 published: true
