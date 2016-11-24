@@ -4,13 +4,13 @@ layout: page
 title : Methodology
 id: methodology
 ---
-Climatescope seeks to bring quantitative rigor to the basic question of what makes a country attractive for clean energy investment, development, and deployment. It seeks to answer this by collecting as much relevant data as possible, then organizing it in a manner that is both easy to consume and empowers users to gain key insights. 
+Climatescope seeks to bring quantitative rigor to the basic question of what makes a country attractive for clean energy investment, development, and deployment. It seeks to answer this by collecting as much relevant data as possible, then organizing it in a manner that is both easy to consume and empowers users to gain key insights.
 
-Climatescope ranks countries on their past, present, and future ability to attract investment for clean energy companies and projects. Clean energy is defined as biofuels, biomass & waste, geothermal, solar, wind and small hydro (up to 50MW). While a number of Climatescope nations have historically embraced large hydro generation to meet local power needs, this study focused exclusively on newer sources of low-carbon generation, both because they are often technologically cutting edge and because they can generally be deployed far faster than large hydro projects, which can take years or even decades to commission.  By comparison, wind projects can be sited and erected in as little as two to three years. Utility-scale solar photovoltaic projects can be constructed in as little as six months and distributed photovoltaic systems can be added to rooftops in a day or less. In short, these technologies are poised to make – and in many cases are already making – near immediate impact on energy supply and access in the developing world. Climatescope sought to assess how ready these countries are to embrace them.
+Climatescope ranks countries on their past, present, and future ability to attract investment for clean energy companies and projects. Clean energy is defined as biofuels, biomass & waste, geothermal, solar, wind and small hydro (up to 50MW). While a number of Climatescope nations have historically embraced large hydro generation to meet local power needs, this study focused exclusively on newer sources of low-carbon generation, both because they are often technologically cutting edge and because they can generally be deployed far faster than large hydro projects, which can take years or even decades to commission. By comparison, wind projects can be sited and erected in as little as two to three years. Utility-scale solar photovoltaic projects can be constructed in as little as six months and distributed photovoltaic systems can be added to rooftops in a day or less. In short, these technologies are poised to make – and in many cases are already making – near immediate impact on energy supply and access in the developing world. Climatescope sought to assess how ready these countries are to embrace them.
 
-In this fourth edition of the project, the index once again consists of four overarching parameters.  Beneath these parameters are 53 data inputs, or indicators.  Some indicators consist of a single data input but many consist of multiple data points that have been synthesized into a single figure. Each indicator counts toward a country's final score but these are not weighted equally. Scores range from 0 to a maximum of 5. 
-
-The final score a country receives under Climatescope is determined by a weighted combination of its four parameter scores. For 2015, the weighting of these parameters remains as it was in 2014: 
+In this 5<sup>th</sup> edition, the project includes three new Middle East and North Africa (MENA) countries: Egypt, Jordan and Lebanon.  
+Climatescope’s index once again consists of four overarching parameters. Beneath these parameters are 50 data inputs, or indicators. Some indicators consist of a single data input but many consist of multiple data points that have been synthesized into a single figure. Each indicator counts toward a country’s final score but these are not weighted equally. Scores range from 0 to a maximum of 5.
+The final score a country receives under Climatescope is determined by a weighted combination of its four parameter scores. For 2016, the weighting of these parameters remains as it was in 2015:
 
 * Enabling Framework Parameter I – 40%
 
@@ -22,12 +22,11 @@ The final score a country receives under Climatescope is determined by a weighte
 
 The entire Climatescope model can be viewed at www.global-climatescope.org  where users are encouraged to adjust the parameter weightings according to their priorities and download the aggregate data available. 
 
-#### Accounting for lesser developed nations through the “off-grid focus” methodology
 
-As in 2014, Climatescope 2015 assessed nations ranging from lowest income to those firmly considered "middle income".  As a result, Climatescope 2015 once again includes a special, augmented “off-grid focus” methodology that includes seven special indicators, with weightings adjusted in the model accordingly.  These indicators were taken into account alongside the other “on-grid” indicators for a sub-set of 23 Climatescope nations: 18 in Africa, one in Latin America and Caribbean, and four in Asia. 
+### ACCOUNTING FOR LESSER DEVELOPED NATIONS THROUGH THE “OFF-GRID FOCUS” METHODOLOGY
 
-The goal of the off-grid effort is to level the playing field so that all countries can be compared in the fairest possible manner against one another in a single 55-country list. In addition, visitors to www.global-climatescope.org can examine the specific off-grid focus indicators in detail if they choose and compare in isolation the 23 nations that were assessed using this methodology. 
-
+As in 2015, Climatescope 2016 assessed nations ranging from lowest income to those firmly considered “middle income”. As a result, Climatescope 2016 once again includes a special, augmented “off-grid focus” methodology that includes seven special indicators, with weightings adjusted in the model accordingly. These indicators were taken into account alongside the other “on-grid” indicators for a sub-set of 23 Climatescope nations: 18 in Africa, one in Latin America and Caribbean, and four in Asia.
+The goal of the off-grid effort is to level the playing field so that all countries can be compared in the fairest possible manner against one another in a single 58-country list. In addition, visitors to www.global-climatescope.org can examine the specific off-grid focus indicators in detail if they choose and compare in isolation the 23 nations that were assessed using this methodology.
 To determine which countries are assessed using the off-grid focus methodology, a 0-5 scoring system was once again applied. Five factors contributed at different weightings to this score; those that score a 2.5 or higher are considered “off-grid focus countries”.
 
 Factor: Electrification rate	
@@ -69,11 +68,11 @@ The off-grid focus methodology’s additional indicators were specifically desig
 
 * Distributed clean energy service providers: What local retailers, pay-as-you go facilitators, insurance providers, and others specializing in off-grid and small-scale clean energy services are in-country?
 
-For 2015, the Climatescope methodology was left almost entirely unchanged from 2014. For further elaboration on the methodology as well as to review all relevant data in aggregated form, please visit www.global-climatescope.org. Questions or comments on the methodology and feedback on data are welcome and should be submitted to climatescope@bloomberg.net. 
+For 2016, the Climatescope methodology for off-grid countries was refined, building on the experience acquire in the previous editions of the index. In addition, six barriers specific to off-grid countries focusing on the challenges to the importing and retailing of off-grid renewable technology products were introduced.
 
 #### Scoring approaches
 
-Scoring approaches employed in the first three editions of Climatescope were also used for this 2014 edition. These include:
+Scoring approaches employed in the first four editions of Climatescope were also used for this 2015 edition. These include:
 
 * Indexing – The Climatescope index is based entirely on a 0-5 scoring system, with 5 representing the highest possible score. Using the indexing approach, the country with the maximum output for a given indicator, after levelization in most cases, received the highest score in the index (5). 
 
@@ -90,45 +89,41 @@ This methodology is better suited than indexing for qualitative assessments such
 ## [Enabling Framework]({{ site.domain }}{{ site.path_prefix }}/en/topic/enabling-framework/ "Go to Enabling Framework topic page")
 {: .hd-param-1}
 
-I. Enabling Framework
 The Enabling Framework parameter encompasses fundamental structures and market conditions typically required for a given country to attract investment and interest from financiers, project developers, or independent power producers looking to develop new low-carbon projects, companies or manufacturing facilities. It also takes into account how amenable such structures are to the deployment of distributed generation capacity, such as mini-grids, or residential wind or solar systems.
 
 A welcoming enabling framework is one where: a comprehensive, effective and stable set of rules are in place; the power market structure encourages and adequately rewards new market entrants; the private and public sectors foster universal access to clean and sustainable energy in rural or isolated communities; clean energy penetration of the power and primary energy matrices is ever increasing; adequate price signals are available; and growing demand for power and rapid electrification combine to create a substantial market.
 
-A total of 22 indicators serve as the inputs into Parameter I. These fall into four categories: Policy and Regulation, Clean Energy Penetration, Price Attractiveness, and Market Size Expectation. Each category contributed with varying weights to the overall Enabling Framework parameter score. Five of the 22 indicators were applied exclusively to countries which were assessed under the off-grid focus methodology.
+A total of 18 indicators serve as the inputs into Parameter I. These fall into four categories: Policy and Regulation, Clean Energy Penetration, Price Attractiveness, and Market Size Expectation. Each category contributed with varying weights to the overall Enabling Framework parameter score. Scoring for Parameter I is completed with 5 indicators applied exclusively to countries which were assessed under the off-grid focus methodology.
+
 
 #### POLICY & REGULATION
-The Policy and Regulation category includes four specific indicators for all nations in the survey: clean energy policies, power sector structure, clean energy rural electrification, and policy barriers. For nations assessed under the off-grid focus methodology, two additional indicators were taken into account: distributed regulatory framework and energy access policies.
+
+The Policy and Regulation category includes four specific indicators for all nations in the survey: clean energy policies, power sector structure, clean energy rural electrification, and policy barriers. For nations assessed under the off-grid focus methodology, the scope of the policy barriers was extended and two additional indicators were taken into account: distributed regulatory framework and energy access policies. 
 
 #### Clean energy policies
 
-For the 2015 Climatescope, a comprehensive search for relevant policies was undertaken by examining primary source documents and conducting interviews with local policy-makers. In the end, the number of policies being tracked by BNEF for these nations in its online database expanded to 599 from 470 (all are accessible via www.global-climatescope.org). Policies were then divided by type: (1) energy target (2) feed-in-tariff/price premium, (3) auctions, (4) biofuels blending mandate, (5) debt/equity incentive, (6) tax incentive, (7) utility regulation and (8) net metering.
+For the 2016 Climatescope, a comprehensive search for relevant policies was undertaken by examining primary source documents and conducting interviews with local policy-makers. In the end, the number of policies being tracked by BNEF for these nations in its online database expanded to 838 from 599 (all are accessible via www.global-climatescope.org). Policies were then divided by type: (1) energy target (2) feed-in-tariff/price premium, (3) auctions, (4) biofuels blending mandate, (5) debt/equity incentive, (6) tax incentive, (7) utility regulation and (8) net metering.
 
-A review panel consisting of 78 external energy policy experts was then convened to assess the policies. Each expert was assigned the task of examining and scoring a set number of policies of specific types across multiple countries. At no point were panelists asked to assess a country’s overall policy framework. This was intended to reduce any potential national bias a panelist might have toward a certain country.
+A review panel consisting of 42 external energy policy experts was then convened to assess the policies. Each expert was assigned the task of examining and scoring a set number of policies of specific types across multiple countries. At no point were panelists asked to assess a country’s overall policy framework. This was intended to reduce any potential national bias a panelist might have toward a certain country.
 
-Three to seven external experts were assigned to review policies for each of the eight clean energy policy types. The experts were asked to take into account six cross-cutting factors when judging a specific clean energy policy.
-Each panelist was assigned to a specific policy type based on his or her area of expertise, and the panelist then reviewed and scored those policies. Some judges assessed more than one policy type due to their knowledge base and willingness to contribute. For each policy they reviewed, expert panelists assigned “high”, “medium” or “low” scores corresponding to the six cross-cutting factors. The high, medium, and low scores were then translated into numerical values of five, three and one, respectively. Participation was done remotely and all scores were submitted electronically via an online survey. In the end, each of the policies was reviewed by at least three expert panelists with most having been reviewed by four.
+External experts were assigned to review policies for each of the eight clean energy policy types. The experts were asked to take into account six cross-cutting factors when judging a specific clean energy policy. Each panelist was assigned to a specific policy type based on his or her area of expertise, and the panelist then reviewed and scored those policies. For each policy they reviewed, expert panelists assigned “high”, “medium” or “low” scores corresponding to the six cross-cutting factors. The high, medium, and low scores were then translated into numerical values of five, three and one, respectively. Participation was done remotely and all scores were submitted electronically. In the end, each of the policies was reviewed by at least three expert panelists.
+Each policy then received a “raw” policy score – the average score for each of the cross-cutting factors given by all experts assigned to judging the policy in question. From these scores, an overall raw clean energy policy score per country was derived by adding the scores assigned by panellists.
 
-Each policy then received a “raw” policy score – the average score for each of the cross-cutting factors given by all experts assigned to judging the policy in question. From these scores, an overall raw clean energy policy score per country was derived by adding the scores assigned by panelists.
-
-In cases where a country did not have a specific type of policy, it received no score. For instance, 15 Climatescope nations have net metering laws and thus received scores for those. The other 40 nations without such policies received no net metering score. Thus countries that have established policies in a given area were rewarded while those that have not were, in effect, penalized. 
-
+In cases where a country did not have a specific type of policy, it received no score. For instance, 18 Climatescope nations have net metering laws and thus received scores for those. The other 40 nations without such policies received no net metering score. Thus countries that have established policies in a given area were rewarded while those that have not were, in effect, penalized.
 A policy “equalizer” consisting of two subcomponents ‒ comprehensiveness and political risk ‒ was included in the methodology. Comprehensiveness was defined as the level of completeness of a country’s overall policy framework – the number of different policy types it has vis-à-vis its peers. The comprehensiveness metric was obtained by assigning each country a relative score based on how many policies were available in that country out of a possible maximum of eight. Scores were then benchmarked against one.
 
-The World Bank’s Worldwide Governance Indicators (WGI) 2014 index was used to address the question of political risk. This index covers six overarching political and country risk-related factors ‒ voice and accountability, political stability and absence of violence, governance effectiveness, regulatory quality, rule of law, and control of corruption. The six components of the WGI score were averaged to obtain the final political risk metric. The political risk subcomponent score was then added to the comprehensiveness score rank to derive a final policy equalizer per country. A nation’s equalizer was then multiplied by its raw country policy score to derive a final clean energy policy score.
-
-It should be noted that in the cases of the Indian states and Chinese provinces analyzed, the overall policy scores for India and China nationally were applied.
+The World Bank’s Worldwide Governance Indicators (WGI) 2015 index was used to address the question of political risk. This index covers six overarching political and country risk-related factors ‒ voice and accountability, political stability and absence of violence, governance effectiveness, regulatory quality, rule of law, and control of corruption. The six components of the WGI score were averaged to obtain the final political risk metric. The political risk subcomponent score was then added to the comprehensiveness score rank to derive a final policy equalizer per country. A nation’s equalizer was then multiplied by its raw country policy score to derive a final clean energy policy score.
+It should be noted that in the cases of the Indian states, the overall policy scores for India was applied.
 
 #### Power sector structure
 
 A fundamental assumption underlies the power sector structure indicator: a liberalized power market is more conducive to attracting investment in renewable energy development than a tightly controlled market. This indicator seeks to gauge the degree of liberalization in a country’s power market.
 
-To derive the power sector score, 13 specific questions were asked about a country’s power market, with possible scores of low, medium, and high per question with a maximum possible score for any country of 5. As these questions were relatively non-qualitative, Bloomberg New Energy Finance conducted primary research on the power market structures for all 80 countries, states and provinces and assigned the scores on each question for each. 
+To derive the power sector score, 15 specific questions were asked about a country’s power market, with possible scores of low, medium, and high per question with a maximum possible score for any country of 5. As these questions were relatively non-qualitative, Bloomberg New Energy Finance conducted primary research on the power market structures for all 64 countries, states and provinces and assigned the scores on each question for each.
 
 #### Distributed energy regulatory framework
 
-Climatescope examined some of the core regulatory characteristics related to enabling off-grid, mini-grid and small power project activity. This was done through a series of 15 questions posed about each off-grid focus country. These were answered by BNEF analysts after consultations with local officials and private market players. 
-
+Climatescope examined some of the core regulatory characteristics related to enabling off-grid, mini-grid and small power project activity. This was done through a series of 17 questions posed about each off-grid focus country. These were answered by BNEF analysts after consultations with local officials and private market players.
 Countries received a score on each question. The total score was benchmarked among the off-grid focus countries to derive a score for this indicator.
 
 #### Clean energy rural electrification
@@ -137,11 +132,13 @@ The third indicator in the Policy & Regulation category of Parameter I assesses 
 
 #### Energy access policies
 
-The energy access policies indicator was applied only to countries analyzed under the off-grid focus methodology. Like the distributed energy regulatory framework indicator discussed above, this indicator relied on a series of 10 questions BNEF analysts asked about individual nations and answered after local consultation. All but one of these were scored in a manner similar to the approach used for the distributed energy regulatory framework indicator. One question simply looked at the amount an individual government has budgeted for its rural electrification program. 
+The energy access policies indicator was applied only to countries analyzed under the off-grid focus methodology. Like the distributed energy regulatory framework indicator discussed above, this indicator relied on a series of 14 questions BNEF analysts asked about individual nations and answered after local consultation. All but three of these were scored in a manner similar to the approach used for the distributed energy regulatory framework indicator. Two questions simply looked at the amount an individual government has budgeted for its rural electrification program and one of question looked at the base upfront cost for a new grid connection for a household near the grid.
 	      
 #### Policy barriers
 
-The trade barrier indicator was based on data from the World Trade Organization on the average import duties levied by each Climatescope country on a range of clean energy products. These covered nine categories of products across the solar, wind and hydro value chains: inverters, solar lanterns, PV cells and modules, wind towers (of iron or steel), wind turbine blades, wind gearboxes, wind and hydro generators, hydraulic turbine parts. The duties were averaged by sector and then benchmarked against the other countries on the index. Lower overall duties achieved higher scores on the indicator, as higher duties raise the cost of bringing clean technology into the country and contribute to making growth in these sectors harder.
+The trade barrier indicator for all countries was based on data from the World Trade Organization on the average import duties levied by each Climatescope country on a range of clean energy products. These covered nine categories of products across the solar, wind and hydro value chains: inverters, solar lanterns, PV cells and modules, wind towers (of iron or steel), wind turbine blades, wind gearboxes, wind and hydro generators, hydraulic turbine parts. The duties were averaged by sector and then benchmarked against the other countries on the index. Lower overall duties achieved higher scores on the indicator, as higher duties raise the cost of bringing clean technology into the country and contribute to making growth in these sectors harder.
+In 2016, the barrier indicator was expanded for off-grid countries with six new elements: the presence of diesel or kerosene subsidies; the import duty and VAT rate charged for off-grid products and how they compare to those for other energy carriers; and the presence of other barriers to the retail and import of off-grid products.
+
 
 #### CLEAN ENERGY PENETRATION
 
