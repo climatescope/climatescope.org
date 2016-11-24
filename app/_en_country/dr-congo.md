@@ -25,7 +25,7 @@ The DRC has no specific incentives for renewable energy projects. Imports of goo
 
 ###Score summary
 
-The DRC scored 0.74 in Climatescope 2016, an increase on the previous year. It placed 51,<sup>st</sup> overall and second last among the 19 African nations surveyed, above only Cote D’Ivoire. The country’s best performance by far was on Greenhouse Gas Management Activities Parameter IV.
+The DRC scored 0.74 in Climatescope 2016, an increase on the previous year. It placed 51<sup>st</sup>, overall and second last among the 19 African nations surveyed, above only Cote D’Ivoire. The country’s best performance by far was on Greenhouse Gas Management Activities Parameter IV.
 
 On Enabling Framework Parameter I, the DRC ranked 53<sup>rd</sup>. This reflected, among other things, its unbundled power sector and the lack of a clean energy rural electrification programme.
 
