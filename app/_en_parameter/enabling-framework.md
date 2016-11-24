@@ -20,6 +20,7 @@ The two specific areas where countries demonstrated progress were on strengthene
 
 This year’s Climatescope analysed for the first time three nations in the Middle East and North Africa region – Jordan, Egypt, and Lebanon. The three achieved mixed results.  Jordan made it to the top 4 with a score of 2.31 out of a possible 5 and ranked 11<sup>th</sup> overall. For their part, Egypt and Lebanon scored 1.03 and 0.87, respectively reflecting challenging socio-economic and security conditions in those nations in recent years. 
 
+**An Improving Policy Landscape**
 #### AN IMPROVING POLICY LANDSCAPE
 
 Clean energy-friendly policies are becoming ever more common in Climatescope nations. The number of countries in the survey with no such policies on the books fell to just four in 2016<sup>1</sup> , down from six in 2015 and eight in 2014. The types of policies countries are adopting have also evolved over the past three years (Figure 1).
