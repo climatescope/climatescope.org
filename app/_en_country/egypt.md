@@ -1,3 +1,11 @@
+---
+layout: country
+id: egy
+title: 
+region: mena
+grid: 'on'
+published: true
+---
 
 
 
