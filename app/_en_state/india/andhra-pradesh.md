@@ -9,7 +9,7 @@ published: true
 
 
 
-####Score summary
+###Score summary
 
 Andhra Pradesh scored 0.953 in Climatescope 2016, placing it 1st on the list of six Indian states surveyed in the current year. It ranked top on all parameters, except Greenhouse Gas Management Activities Parameter IV, in which it was placed last.
  
