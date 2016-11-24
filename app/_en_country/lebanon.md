@@ -7,6 +7,8 @@ grid: 'on'
 published: true
 ---
 
+###Score summary
+
 Lebanon scored 1.02 in Climatescope 2016, placing it 40<sup>th</sup> on the list of countries overall. Its highest ranking was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
 On Enabling Framework Parameter I, the country ranked 51<sup>st</sup> , reflecting its low power prices and small volume of clean energy generating capacity. It has energy generation targets and a policy on net metering, as well as debt/equity incentives.
