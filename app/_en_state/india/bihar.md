@@ -1,7 +1,7 @@
 ---
 layout: state
 
-id: in-mh
+id: in-bi
 title: Bihar
 
 region: asia
