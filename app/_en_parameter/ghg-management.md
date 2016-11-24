@@ -6,7 +6,7 @@ title: Greenhouse Gas management
 weight: "4"
 ---
 
-## <strong>PARAMETER IV – GREENHOUSE GAS MANAGEMENT ACTIVITIES</strong>
+ ## <strong>PARAMETER IV – GREENHOUSE GAS MANAGEMENT ACTIVITIES</strong>
 
 Greenhouse Gas Management Activities-Parameter IV takes into account carbon offset project activity, level of policy support for carbon emissions reduction, and local corporate awareness of carbon issues through a total of 13 indicator inputs. Parameter IV contributed 15% toward each nation’s overall score.
 
