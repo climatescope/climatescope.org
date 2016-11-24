@@ -9,7 +9,7 @@ published: true
 
 
 
-#### Score Summary
+###Score summary
 
 Nepal scored 1.54 in Climatescope 2016, which was slightly lower than its score the previous year. It ranked 18<sup>th</sup> on the list of countries overall, down eight places from the previous year. Its strongest performance was on Enabling Framework Parameter I.
 
