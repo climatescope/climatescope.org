@@ -21,7 +21,7 @@ Simply said, rates are too cheap. This is measured by comparing FiTs to the leve
 
 4.	There is a proposal to establish a PV FiT of $110-140/MWh. As of June 2016, there has been no progress. 
 
-![Figure 1:	Vietnam LCOEs compared to Feed-in-Tariffs ($/MWh)](climatescope.org/app/assets/images/content/CS2016_blog_Vietnam3_fig1.png)
+![Figure 1:	Vietnam LCOEs compared to Feed-in-Tariffs ($/MWh)](http://global-climatescope.org/assets/images/content/CS2016_blog_Vietnam3_fig1.png)
 *Source: Bloomberg New Energy Finance, Vietnam Ministry of Industry and Trade*
 
 **Jacqueline Lilinshtein**
