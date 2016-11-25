@@ -6,7 +6,7 @@ id: about
 ---
 The Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment condition for clean energy and climate-related investment worldwide.
 
-It profiles 55 countries worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy. 
+It profiles 58 countries worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy. 
 
 The Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to where clean energy can go tomorrow.
 
