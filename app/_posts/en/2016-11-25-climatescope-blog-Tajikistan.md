@@ -24,3 +24,5 @@ On the transmission side - can Afghanistan be a secure transit country for energ
 
 Finally, corruption is still a factor in both of the exporting countries. Transparent monitoring systems need to be put in place to make sure the revenues gained from summer exports are effectively invested to grow (clean) power generation capacity.
 Yet, it is possible to overcome these hurdles through effective cross-border cooperation, and it is hoped that the development of CASA-1000 will trigger this. The project is planned to be completed in 2020 and is supervised by a specially set up Inter-Governmental Council. 
+
+**Katya Sharavzhamtsyna**
