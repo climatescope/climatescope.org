@@ -24,6 +24,11 @@
   },
   "scripts": {
     "postinstall": "[ -f _config-dev.yml ] || echo 'domain: http://localhost:3000\npath_prefix:' > _config-dev.yml",
-    "install": "bundle install --path bundle/cache"
+    "install": "bundle install --path bundle/cache",
+    "clean": "gulp clean",
+    "serve": "DS_ENV=development NODE_ENV=development gulp serve",
+    "compile": "DS_ENV=development NODE_ENV=development gulp",
+    "stage": "DS_ENV=staging NODE_ENV=staging gulp stage",
+    "build": "DS_ENV=production NODE_ENV=production gulp prod"
   }
 }
