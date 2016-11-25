@@ -18,16 +18,16 @@ description: The Climatescope a unique country-by-country assessment, interactiv
 
   <div class="layout--home__body">
     <div class="row--contained">
-      <div class="col--sec prose-copy">
-        <section>
-          <h2>Compare results</h2>
+      <div class="featured-col">
+        <section class="featured-section">
+          <h1 class="featured-section__title">Compare results</h1>
           <p>Content goes here</p>
         </section>
       </div>
 
-      <div class="col--sec prose-copy">
-        <section>
-          <h2>Latest updates</h2>
+      <div class="featured-col">
+        <section class="featured-section">
+          <h1 class="featured-section__title">Latest updates</h1>
           <ol class="latest-updates-list">
             {% assign posts = (site.posts | where:"lang",language) %}
             {% for post in posts limit:2 %}
@@ -47,9 +47,9 @@ description: The Climatescope a unique country-by-country assessment, interactiv
         </section>
       </div>
 
-      <div class="col--sec prose-copy">
-        <section>
-          <h2>Recent tweets</h2>
+      <div class="featured-col">
+        <section class="featured-section">
+          <h1 class="featured-section__title">Recent tweets</h1>
           <p>Content goes here</p>
         </section>
       </div>

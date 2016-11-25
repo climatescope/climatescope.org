@@ -16,7 +16,7 @@
 // Climatescope settings
 @import "settings";
 
-// Climatescope's custom styles
+// Climatescope's global
 @import "mixins";
 @import "icons";
 @import "type";
@@ -34,4 +34,9 @@
 @import "helpers";
 @import "CSS:./../vendor/mapbox/mapbox";
 @import "map";
+
+// Climatescope's pages
+@import "homepage";
+
+// Climatescope's print
 @import "print";
