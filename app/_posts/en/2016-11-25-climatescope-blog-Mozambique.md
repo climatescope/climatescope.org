@@ -24,5 +24,6 @@ Figure 2 plots the electrification rate in rural areas against the size of the r
 
 Moving towards the future, as African states strive for universal electricity access, off-grid solutions pose an attractive alternative to expensive grid expansions. With a large rural population, an undeveloped and unconnected national grid and a low electrification rate, Mozambique looks like it could be one of the largest potential markets for off-grid solutions.
 
-** Ben Gidlow ** 
+**Ben Gidlow** 
+
 Data Analyst, Bloomberg New Energy Finance
