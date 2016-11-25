@@ -7,6 +7,8 @@ $(document).ready(function() {
 
   var header_height = $('#site-header').outerHeight();
   var parameter_controls = $('#parameters-controls');
+  // Include heading/tools elements height + margin-bottom 
+  var title_height = 60;
 
   // Loading fonts is causing a small delay.
   // Delay the header size calculation for a few millis.
@@ -30,7 +32,7 @@ $(document).ready(function() {
   // to make up for its absence.
   var check_sticky_padding = function() {
     if (parameter_controls.css('position') == 'fixed') {
-      var parameter_height = parameter_controls.outerHeight();
+      var parameter_height = parameter_controls.outerHeight() - title_height;
       parameter_controls.parent().css('padding-top', parameter_height);
     }
     else {

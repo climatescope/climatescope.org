@@ -1,35 +1,57 @@
 ---
 layout: base
-title : Global Rank
+title : Welcome
 id: index
 lang: en
-
-include_map: true
-
 description: The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
 ---
 {% assign language = page.lang %}
 {% assign t = site.data.i18n_strings %}
 <section class="layout--home">
-  <header class="layout--home__header sticky" id="parameters-controls">
+  <header class="layout--home__header visually-hidden">
     <div class="row--contained">
       <div class="layout--home__heading">
-        <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
-      </div>
-      <div class="layout--home__controls">
-        {% include weight_changers.html %}
+        <h1 class="layout--home__title">{{ page.title }}</h1>
       </div>
     </div>
   </header>
 
   <div class="layout--home__body">
-
-    <div id="index-viz" class="row--full intro"><!-- Insert map here. --></div>
-
     <div class="row--contained">
-      {% include url_index.html %}
-      <div ng-app="globalApp" ng-controller="CountryListController as countryTable" ng-cloak>
-        {% include country_list_table.html %}
+      <div class="featured-col">
+        <section class="featured-section">
+          <h1 class="featured-section__title">Compare results</h1>
+          <p>Content goes here</p>
+        </section>
+      </div>
+
+      <div class="featured-col">
+        <section class="featured-section">
+          <h1 class="featured-section__title">Latest updates</h1>
+          <ol class="latest-updates-list">
+            {% assign posts = (site.posts | where:"lang",language) %}
+            {% for post in posts limit:2 %}
+            {% unless post.hidden == true %}
+            <li class="update-wrapper">
+              <article class="update">
+                <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View update">
+                  <p class="update__date">{{ post.date | date: '%b %-d, %Y' }}</p>
+                  <h1 class="update__title">{{ post.title }}</h1>
+                </a>
+              </article>
+            </li>
+            {% endunless %}
+            {% endfor %}
+          </ol>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" class="bttn bttn-success go" title="{{ t['View all'][language] }}">{{ t['View all'][language] }}</a>
+        </section>
+      </div>
+
+      <div class="featured-col">
+        <section class="featured-section">
+          <h1 class="featured-section__title">Recent tweets</h1>
+          <p>Content goes here</p>
+        </section>
       </div>
     </div>
   </div>

@@ -440,6 +440,7 @@ a:active{
 // Common styles
 
 .layout--home,
+.layout--results,
 .layout--entry,
 .layout--page,
 .layout--hub {
@@ -494,7 +495,7 @@ a:active{
   }
 }
 
-.layout--home__header,
+.layout--results__header,
 .layout--hub__header {
   .reset {
     vertical-align: top;
@@ -511,7 +512,7 @@ a:active{
 }
 
 .layout--hub__controls,
-.layout--home__controls {
+.layout--results__controls {
   @include col(12/12);
   .control-title {
     @extend .hd-label;
@@ -565,6 +566,7 @@ a:active{
   margin-bottom: 3rem;
 }
 
+.layout--results,
 .layout--entry,
 .layout--page,
 .layout--hub {
@@ -638,14 +640,28 @@ a:active{
 }
 
 
-// LAYOUT: HOME
+// LAYOUT: RESULTS
 
+.layout--results__heading,
+.layout--results__tools {
+  transition: all 0.24s ease 0s;
+  max-height: 32rem;
+  margin-bottom: 1rem;;
 
-.layout--home__header {
+  .sticky & {
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+
+.layout--results__header {
   padding: 1.5rem 0;
 }
 
-.layout--home__controls {
+.layout--results__controls {
   .prime-title {
     @extend .hd-xxs;
     float: left;
