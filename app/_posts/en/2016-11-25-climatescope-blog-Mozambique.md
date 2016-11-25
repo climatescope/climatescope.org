@@ -23,3 +23,6 @@ Figure 1 plots electrification rates against population density for all of the s
 Figure 2 plots the electrification rate in rural areas against the size of the rural population for the sub-Saharan African countries covered by Climatescope – whilst Figure 1 served as a measure of the potential for off-grid solutions to increasing electrification rates, Figure 2 shows how the size of these potential markets. As evident from this chart, Ethiopia, the DRC, Tanzania, Kenya, Uganda, and Mozambique are all characterised by a combination of extremely low rates of rural electrification and large rural populations. 
 
 Moving towards the future, as African states strive for universal electricity access, off-grid solutions pose an attractive alternative to expensive grid expansions. With a large rural population, an undeveloped and unconnected national grid and a low electrification rate, Mozambique looks like it could be one of the largest potential markets for off-grid solutions.
+
+** Ben Gidlow ** 
+Data Analyst, Bloomberg New Energy Finance
