@@ -4,15 +4,17 @@ layout: page
 title : About the Climatescope
 id: about
 ---
-The Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
+The Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment condition for clean energy and climate-related investment worldwide.
 
 It profiles 55 countries worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy. 
 
 The Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to where clean energy can go tomorrow.
 
-This marks the fourth year of the Climatescope project. In 2012 and 2013, the Climatescope focused exclusively on Latin America and the Caribbean. The first edition was developed by the Multilateral Investment Fund of the Inter-American Development Bank Group in partnership with Bloomberg New Energy Finance. 
+This marks the fifth year of the Climatescope project. In 2012 and 2013, the Climatescope focused exclusively on Latin America and the Caribbean. The first edition was developed by the Multilateral Investment Fund of the Inter-American Development Bank Group in partnership with Bloomberg New Energy Finance. 
 
 In 2014, the UK Department for International Development and the US Agency for International Development have joined as supporters and advisors. The project has been expanded to include 55 countries, states, and provinces in sub-Saharan Africa and Asia. Bloomberg New Energy Finance serves as research partner and author of the report.
+
+In 2016, the project was supported by the UK Department for International Development and the US Agency for International Development. The coverage was expanded further to include three countries from the Middle-East and North Africa, as well as with an updated methodology for the off-grid energy coverage.
 
 ***
 
