@@ -272,12 +272,30 @@ a:active{
 }
 
 #site-header {
+  position: relative;
   padding: 2rem 0;
-  background: tint($primary-color, 85%) url(../images/layout/cover-img-2015.jpg) no-repeat center top;
+  background: $quaternary-color url(../images/layout/cover-img-2016.jpg) no-repeat center bottom;
   background-size: cover;
   color: #fff;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(shade($quaternary-color, 92%), 0.4);
+    z-index: 1;
+    content: '';
+  }
+
   .row--contained {
     position: relative;
+    z-index: 3;
+  }
+
+  .row--contained-alt {
+    z-index: 2;
   }
 }
 
@@ -410,28 +428,6 @@ a:active{
         background: $infograph-color-d;
       }
     }
-  }
-}
-
-.intro-block {
-  @include span(12/12);
-  color: #fff;
-  @extend .antialiased;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  &__title {
-    @extend .hd-m;
-  }
-  &__body {
-    font-family: $brand-font-family;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    > *:last-child {
-      margin-bottom: 0;
-    }
-  }
-  @media #{$xlarge-up} {
-    @include col(8/12);
   }
 }
 
