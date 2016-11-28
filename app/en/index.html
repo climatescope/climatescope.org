@@ -28,34 +28,35 @@ description: The Climatescope a unique country-by-country assessment, interactiv
       <div class="featured-col">
         <section class="featured-section">
           <h1 class="featured-section__title">Latest updates</h1>
-          <ol class="latest-updates-list">
-            {% assign posts = (site.posts | where:"lang",language) %}
-            {% for post in posts limit:2 %}
-            {% unless post.hidden == true %}
-            <li class="update-wrapper">
-              <article class="update">
-                <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View update">
-                  <p class="update__date">{{ post.date | date: '%b %-d, %Y' }}</p>
-                  <h1 class="update__title">{{ post.title }}</h1>
-                </a>
-              </article>
-            </li>
-            {% endunless %}
-            {% endfor %}
-          </ol>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" class="bttn bttn-success go" title="{{ t['View all'][language] }}">{{ t['View all'][language] }}</a>
+          <div class="featured-section__body">
+            <ol class="latest-updates-list">
+              {% assign posts = (site.posts | where:"lang",language) %}
+              {% for post in posts limit:3 %}
+              {% unless post.hidden == true %}
+              <li class="update-wrapper">
+                <article class="update">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View update">
+                    <p class="update__date">{{ post.date | date: '%b %-d, %Y' }}</p>
+                    <h1 class="update__title">{{ post.title }}</h1>
+                  </a>
+                </article>
+              </li>
+              {% endunless %}
+              {% endfor %}
+            </ol>
+          </div>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" title="{{ t['View all'][language] }}" class="bttn bttn-success go">{{ t['View all'][language] }}</a>
         </section>
       </div>
 
       <div class="featured-col">
-        <section class="featured-section">
+        <section class="featured-section recent-tweets">
           <h1 class="featured-section__title">Recent tweets</h1>
-
-          <a class="twitter-timeline"  href="https://twitter.com/search?q=climatescope" data-widget-id="802127681433272320" data-tweet-limit="3" data-chrome="noheader nofooter noborders noscrollbar transparent" data-link-color="#77bc1f">Tweets about climatescope</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-           <a class="bttn bttn-dark bttn-m" href="https://twitter.com/search?q=climatescope" title="{{ t['View all'][language] }}">{{ t['View all'][language] }}</a>
-
+          <div class="featured-section__body">
+            <a class="twitter-timeline"  href="https://twitter.com/search?q=climatescope" data-widget-id="802127681433272320" data-tweet-limit="3" data-chrome="noheader nofooter noborders noscrollbar transparent" data-link-color="#77bc1f">Tweets about climatescope</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <a href="https://twitter.com/search?q=climatescope" title="{{ t['View all'][language] }}" class="bttn bttn-success go">{{ t['View all'][language] }}</a>
         </section>
       </div>
     </div>

@@ -44,9 +44,19 @@
   @include col(4/12);
 }
 
+.featured-section {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .featured-section__title {
   font-size: 1.25rem;
   line-height: 1.75;
+}
+
+.featured-section__body {
+  margin-bottom: $global-spacing;
 }
 
 
@@ -54,14 +64,14 @@
 
 .latest-updates-list {
   list-style: none;
-  margin: 0 0 $global-spacing 0;
+  margin: 0;
   padding: 0;
 }
 
 .update-wrapper {
   padding-bottom: $global-spacing;
   margin-bottom: $global-spacing;
-  box-shadow: 0 1px 0 0 rgba($primary-color, 0.12);
+  box-shadow: 0 1px 0 0 rgba($primary-color, 0.08);
 
   &:last-child {
     margin: 0;
@@ -86,4 +96,27 @@
 .update__date {
   @extend .hd-label;
   margin: 0;
+}
+
+
+// Recent tweets
+
+.recent-tweets {
+  .featured-section__body {
+    position: relative;
+    max-height: $global-spacing * 18;
+    overflow: hidden;
+
+    &::after {
+      @include background-image(linear-gradient(rgba(#fff, 0), rgba(#fff, 1)));
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: $global-spacing * 8;
+      width: 100%;
+      z-index: 1;
+      content: '';
+      pointer-events: none;
+    }
+  }
 }
