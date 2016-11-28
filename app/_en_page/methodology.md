@@ -312,7 +312,7 @@ Accounting for 30% of the Parameter IV score, the Corporate Awareness category e
 
 The GHG Global Reporting Initiative indicator investigated whether companies in a country voluntarily reported their emissions to the Global Reporting Initiative (GRI), using the initiative’s online database. The number of companies in Bloomberg’s Environmental, Social and Governance (ESG) database was used as a proxy for the total number of companies in a given country. The indicator score was derived by dividing the number of companies reporting to the GRI by the total number of companies in a given country (i.e., those listed in the ESG database). The maximum ratio for the region was obtained by compiling the same dataset across all countries. If the country ratio was greater than the maximum ratio for all, the country received 1 point; if it was lower, it received 0.
 
-### <b>Principle of responsible investment<b>
+### <b>Principle of responsible investment</b>
 
 The Principles of Responsible Investment indicator assessed how many asset owners in a given country are represented among the signatories of the UN’s Principles for Responsible Investment (PRI) ‒ a network of investors working to put into practice the six voluntary and aspirational principles. The PRI database was used to count the number of asset owners, investment managers and professional service partners who signed up to the initiative. The same scoring method used in the GRI indicator was applied to the Principles indicator. The maximum point a country received was 1 if its maximum ratio fell above the maximum ratio for all countries.
 
