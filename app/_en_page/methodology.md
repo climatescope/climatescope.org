@@ -316,10 +316,10 @@ The GHG Global Reporting Initiative indicator investigated whether companies in 
 
 The Principles of Responsible Investment indicator assessed how many asset owners in a given country are represented among the signatories of the UN’s Principles for Responsible Investment (PRI) ‒ a network of investors working to put into practice the six voluntary and aspirational principles. The PRI database was used to count the number of asset owners, investment managers and professional service partners who signed up to the initiative. The same scoring method used in the GRI indicator was applied to the Principles indicator. The maximum point a country received was 1 if its maximum ratio fell above the maximum ratio for all countries.
 
-### <b>Energy efficiency initiatives & emissison reduction policies</b>   
+### <b> Energy efficiency initiatives & emissison reduction policies </b>   
 
 The energy efficiency initiatives and emission reduction policies indicators each looked at how many companies reported dedicated initiatives based on the Bloomberg ESG database. The number of companies reporting energy efficiency or emission reduction initiatives to Bloomberg’s Environment, Social and Governance database (ESG) was counted. The data was levelized by dividing the number of companies reporting these initiatives by the number of active companies in a given country on the Bloomberg terminal. These fields in the Bloomberg terminal are maintained by a team of outsourced vendors, contracted by Bloomberg. The team combs annual reports and sustainability reports, looking for any of the following three indications to determine whether a company is serious about its energy efficiency initiatives: the initiatives merit more than a passing mention in the annual or sustainability report; there is more than one initiative related to energy efficiency; there is numeric metric associated with the initiative (e.g., quantified goal).
 
-### <b>Capacity building: Environmentally focused business training & think thanks</b>  
+### <b> Capacity building: Environmentally focused business training & think thanks</b>  
 
 These two indicators were binary. Primary research was conducted to trace if there was at least one environmentally-focused business training program in place and think tank. The country received the maximum score for each of these indicators if it had one of these entities.
