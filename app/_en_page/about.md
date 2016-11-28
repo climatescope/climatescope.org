@@ -77,9 +77,6 @@ Ana Verena Lima
 ### LEAD MODELLING ANALYST
 Uli Ezekiel
 
-### WEB TOOL DEVELOPMENT
-Development Seed
-
 ### SPECIAL THANKS
 
 ### ACKNOWLEDGEMENTS
