@@ -42,7 +42,7 @@ Ben Vickers
 
 ### RESEARCHERS & DATA GATHERING
 
-#### Africa and Middle East
+#### <b>Africa and Middle East</b>
 Nicole	Aspinal;
 Joe	Byrne;
 Victoria Cuming;
@@ -58,7 +58,7 @@ Jonas	Rooze;
 James	Sprinz;
 Kieron	Stopforth
 
-#### Asia 
+#### <b>Asia</b> 
 Muhammad	Altamash;
 Janis	Hoberg;
 Atin Jain;
@@ -68,7 +68,7 @@ Luke	Mills;
 Steph	Munro;
 Katya	Sharavzhamtsyna
 
-#### Latin America and Caribbean
+#### <b>Latin America and Caribbean</b>
 Laura Castro;
 Raphael Barbosa Correa;
 Helena Chung;
