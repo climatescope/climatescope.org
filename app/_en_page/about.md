@@ -18,6 +18,73 @@ In 2016, the project was supported by the UK Department for International Develo
 
 ***
 
+### PROJECT DIRECTOR
+Ethan Zindler
+
+####PROJECT MANAGER
+Dario Traum 
+
+### PROJECT COORDINATORS
+Lilian Alves;
+Luiza Demorô;
+Sara Giordano;
+Maggie Kuang;
+Itamar Orlandi;
+Ashish Sethia;
+Nico Tyabji
+
+### EDITORS
+Rohan Boyle;
+Bryony Collins;
+Vandana Gombar;
+Angus McCrone;
+Ben Vickers
+
+### RESEARCHERS & DATA GATHERING
+
+#### Africa and Middle East
+Nicole	Aspinal;
+Joe	Byrne;
+Victoria Cuming;
+Monne	Depratere;
+Ben	Gidlow;
+Andrew Grant;
+Tom	Harries;
+Kyle	Harrison;
+Lara	Hayim;
+Keegan	Kruger;
+Will	Nelson;
+Jonas	Rooze;
+James	Sprinz;
+Kieron	Stopforth
+
+#### Asia 
+Muhammad	Altamash;
+Janis	Hoberg;
+Atin Jain;
+Jacky	Lilinshtein;
+Yvonne	Liu;
+Luke	Mills;
+Steph	Munro;
+Katya	Sharavzhamtsyna
+
+#### Latin America and Caribbean
+Laura Castro;
+Raphael Barbosa Correa;
+Helena Chung;
+Ana Verena Lima
+
+### LEAD MODELLING ANALYST
+Uli Ezekiel
+
+### WEB TOOL DEVELOPMENT
+Development Seed
+
+### SPECIAL THANKS
+
+### ACKNOWLEDGEMENTS
+
+
 ## Credits
 All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
 
