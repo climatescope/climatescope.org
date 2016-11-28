@@ -15,7 +15,6 @@
       <td class="cell-country">
         <a href="%% countryTable.getCountryUrl(country) %%" title="{{ t['Go to country page'][language] }}">%% country.name %%</a>
         <a href="" title="{{ t['Show states'][language] }}" ng-if="country.iso == 'in'" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span>{{ t['States'][language] }}</span></a>
-        <a href="" title="{{ t['Show provinces'][language] }}" ng-if="country.iso == 'cn'" ng-click="countryTable.toggleStates($event)" class="expand-toggle"><span>{{ t['Provinces'][language] }}</span></a>
       </td>
       <td>%% country.data[0].value | thousands:2 %%</td>
       <td class="cell-trendline"><div ng-init="countryTable.computeTrendlineData(country)" init-chart="trendline" class="chart-trendline" chart-data="country.trendline"><!-- Chart --></div></td>
