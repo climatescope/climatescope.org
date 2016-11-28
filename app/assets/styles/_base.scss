@@ -272,12 +272,26 @@ a:active{
 }
 
 #site-header {
+  position: relative;
   padding: 2rem 0;
-  background: tint($primary-color, 85%) url(../images/layout/cover-img-2015.jpg) no-repeat center top;
+  background: tint($secondary-color, 85%) url(../images/layout/cover-img-2016.jpg) no-repeat center bottom;
   background-size: cover;
   color: #fff;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba($primary-color, 0.32);
+    z-index: 1;
+    content: '';
+  }
+
   .row--contained {
     position: relative;
+    z-index: 2;
   }
 }
 
