@@ -6,6 +6,38 @@
   }
 }
 
+
+// Intro Block
+
+.intro-block {
+  @include span(12/12);
+  @extend .antialiased;
+  color: #fff;
+  margin-top: $global-spacing * 2;
+  margin-bottom: $global-spacing;
+
+  &__title {
+    @extend .hd-m;
+  }
+
+  &__body {
+    font-family: $brand-font-family;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media #{$xlarge-up} {
+    @include col(8/12, $offset: 2/12);
+    text-align: center !important;
+    margin-top: $global-spacing * 4;
+    margin-bottom: $global-spacing * 2;
+  }
+}
+
+
 // Featured columns
 
 .featured-col {

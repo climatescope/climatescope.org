@@ -413,28 +413,6 @@ a:active{
   }
 }
 
-.intro-block {
-  @include span(12/12);
-  color: #fff;
-  @extend .antialiased;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  &__title {
-    @extend .hd-m;
-  }
-  &__body {
-    font-family: $brand-font-family;
-    font-size: 1.25rem;
-    line-height: 1.5rem;
-    > *:last-child {
-      margin-bottom: 0;
-    }
-  }
-  @media #{$xlarge-up} {
-    @include col(8/12);
-  }
-}
-
 
 // LAYOUT
 // Common styles
