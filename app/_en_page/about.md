@@ -82,7 +82,7 @@ Uli Ezekiel
 ### ACKNOWLEDGEMENTS
 
 
-## Credits
+### CREDITS
 All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
 
 <h3 class="hd-label adjacent-bottom">Developed by</h3>
