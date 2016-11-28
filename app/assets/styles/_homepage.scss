@@ -24,6 +24,7 @@
     font-family: $brand-font-family;
     font-size: 1.25rem;
     line-height: 1.5rem;
+
     > *:last-child {
       margin-bottom: 0;
     }
@@ -60,7 +61,35 @@
 }
 
 
-// Latest Updates
+// Compare results
+
+.prose-intro {
+  font-family: $brand-font-family;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-bottom: $global-spacing;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.compare-results {
+  .control-title {
+    @extend .visually-hidden;
+  }
+
+  .control {
+    margin-bottom: $global-spacing;
+
+    select {
+      width: 100%;
+    }
+  }
+}
+
+
+// Latest updates
 
 .latest-updates-list {
   list-style: none;

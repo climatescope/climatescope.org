@@ -19,9 +19,44 @@ description: The Climatescope a unique country-by-country assessment, interactiv
   <div class="layout--home__body">
     <div class="row--contained">
       <div class="featured-col">
-        <section class="featured-section">
+        <section class="featured-section compare-results">
           <h1 class="featured-section__title">Compare results</h1>
-          <p>Content goes here</p>
+
+          <div class="featured-section__body">
+            <div class="prose-intro">
+              <p>Choose a Country, State or Province to compare results side by side.</p>
+            </div>
+
+            <div ng-app="compareApp" ng-controller="compareControllerSelector as compareCtrlSelector" class="compare-controls">
+              <div class="control">
+                <label class="control-title" for="country_with">{{ t['Country / state / province'][language] }}</label>
+                  <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrlSelector.compare[0]">
+                  <option value="">{{ t['Choose location A'][language] }}</option>
+
+                  <option ng-repeat-start="country in compareCtrlSelector.countries" ng-value="country.iso" ng-selected="country.iso == compareCtrlSelector.compare[0]">%% country.name %%</option>
+                  <optgroup ng-repeat-end ng-if="country.states.length" label="%% compareCtrlSelector.getOptgroupLabel(country) %%">
+                    <option ng-repeat="state in country.states" ng-value="state.iso" ng-selected="state.iso == compareCtrlSelector.compare[0]">%% state.name %%</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="control">
+                <label class="control-title" for="country_with">{{ t['Country / state / province'][language] }}</label>
+                  <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrlSelector.compare[1]">
+                  <option value="">{{ t['Choose location B'][language] }}</option>
+
+                  <option ng-repeat-start="country in compareCtrlSelector.countries" ng-value="country.iso" ng-selected="country.iso == compareCtrlSelector.compare[1]">%% country.name %%</option>
+                  <optgroup ng-repeat-end ng-if="country.states.length" label="%% compareCtrlSelector.getOptgroupLabel(country) %%">
+                    <option ng-repeat="state in country.states" ng-value="state.iso" ng-selected="state.iso == compareCtrlSelector.compare[1]">%% state.name %%</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="control">
+                <a class="bttn bttn-success" ng-href="%% compareCtrlSelector.getCompareUrl() %%" title="{{ t['Compare with'][language] }}">{{ t['Compare'][language] }}</a>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
 

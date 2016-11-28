@@ -14,7 +14,7 @@
         <div class="control">
           <label class="control-title" for="country_with">{{ t['Country / state / province'][language] }}</label>
             <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrl.compare[0]">
-            <option value="">{{ t['All'][language] }}</option>
+            <option value="">{{ t['Choose location A'][language] }}</option>
 
             <option ng-repeat-start="country in compareCtrl.countries" ng-value="country.iso" ng-selected="country.iso == compareCtrl.compare[0]">%% country.name %%</option>
             <optgroup ng-repeat-end ng-if="country.states.length" label="%% compareCtrl.getOptgroupLabel(country) %%">
@@ -26,7 +26,7 @@
         <div class="control">
           <label class="control-title" for="country_with">{{ t['Country / state / province'][language] }}</label>
             <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrl.compare[1]">
-            <option value="">{{ t['All'][language] }}</option>
+            <option value="">{{ t['Choose location B'][language] }}</option>
 
             <option ng-repeat-start="country in compareCtrl.countries" ng-value="country.iso" ng-selected="country.iso == compareCtrl.compare[1]">%% country.name %%</option>
             <optgroup ng-repeat-end ng-if="country.states.length" label="%% compareCtrl.getOptgroupLabel(country) %%">
