@@ -99,7 +99,7 @@ A total of 18 indicators serve as the inputs into Parameter I. These fall into f
 
 The Policy and Regulation category includes four specific indicators for all nations in the survey: clean energy policies, power sector structure, clean energy rural electrification, and policy barriers. For nations assessed under the off-grid focus methodology, the scope of the policy barriers was extended and two additional indicators were taken into account: distributed regulatory framework and energy access policies. 
 
-#### Clean energy policies
+#### <b>Clean energy policies</b>
 
 For the 2016 Climatescope, a comprehensive search for relevant policies was undertaken by examining primary source documents and conducting interviews with local policy-makers. In the end, the number of policies being tracked by BNEF for these nations in its online database expanded to 838 from 599 (all are accessible via www.global-climatescope.org). Policies were then divided by type: (1) energy target (2) feed-in-tariff/price premium, (3) auctions, (4) biofuels blending mandate, (5) debt/equity incentive, (6) tax incentive, (7) utility regulation and (8) net metering.
 
@@ -114,26 +114,26 @@ A policy “equalizer” consisting of two subcomponents ‒ comprehensiveness a
 The World Bank’s Worldwide Governance Indicators (WGI) 2015 index was used to address the question of political risk. This index covers six overarching political and country risk-related factors ‒ voice and accountability, political stability and absence of violence, governance effectiveness, regulatory quality, rule of law, and control of corruption. The six components of the WGI score were averaged to obtain the final political risk metric. The political risk subcomponent score was then added to the comprehensiveness score rank to derive a final policy equalizer per country. A nation’s equalizer was then multiplied by its raw country policy score to derive a final clean energy policy score.
 It should be noted that in the cases of the Indian states, the overall policy scores for India was applied.
 
-#### Power sector structure
+#### <b>Power sector structure</b>
 
 A fundamental assumption underlies the power sector structure indicator: a liberalized power market is more conducive to attracting investment in renewable energy development than a tightly controlled market. This indicator seeks to gauge the degree of liberalization in a country’s power market.
 
 To derive the power sector score, 15 specific questions were asked about a country’s power market, with possible scores of low, medium, and high per question with a maximum possible score for any country of 5. As these questions were relatively non-qualitative, Bloomberg New Energy Finance conducted primary research on the power market structures for all 64 countries, states and provinces and assigned the scores on each question for each.
 
-#### Distributed energy regulatory framework
+#### <b>Distributed energy regulatory framework</b>
 
 Climatescope examined some of the core regulatory characteristics related to enabling off-grid, mini-grid and small power project activity. This was done through a series of 17 questions posed about each off-grid focus country. These were answered by BNEF analysts after consultations with local officials and private market players.
 Countries received a score on each question. The total score was benchmarked among the off-grid focus countries to derive a score for this indicator.
 
-#### Clean energy rural electrification
+#### <b>Clean energy rural electrification</b>
 
 The third indicator in the Policy & Regulation category of Parameter I assesses the efforts of nations to expand access to power to the rural poor using clean energy technologies. This also applied to previous years and thus formed part of the score for all countries. Scoring on this indicator was binary: countries with rural electrification programs that promote clean energy received a 1 while others received a 0.
 
-#### Energy access policies
+#### <b>Energy access policies</b>
 
 The energy access policies indicator was applied only to countries analyzed under the off-grid focus methodology. Like the distributed energy regulatory framework indicator discussed above, this indicator relied on a series of 14 questions BNEF analysts asked about individual nations and answered after local consultation. All but three of these were scored in a manner similar to the approach used for the distributed energy regulatory framework indicator. Two questions simply looked at the amount an individual government has budgeted for its rural electrification program and one of question looked at the base upfront cost for a new grid connection for a household near the grid.
 	      
-#### Policy barriers
+#### <b>Policy barriers</b>
 
 The trade barrier indicator for all countries was based on data from the World Trade Organization on the average import duties levied by each Climatescope country on a range of clean energy products. These covered nine categories of products across the solar, wind and hydro value chains: inverters, solar lanterns, PV cells and modules, wind towers (of iron or steel), wind turbine blades, wind gearboxes, wind and hydro generators, hydraulic turbine parts. The duties were averaged by sector and then benchmarked against the other countries on the index. Lower overall duties achieved higher scores on the indicator, as higher duties raise the cost of bringing clean technology into the country and contribute to making growth in these sectors harder.
 In 2016, the barrier indicator was expanded for off-grid countries with six new elements: the presence of diesel or kerosene subsidies; the import duty and VAT rate charged for off-grid products and how they compare to those for other energy carriers; and the presence of other barriers to the retail and import of off-grid products.
@@ -187,13 +187,13 @@ In all, Parameter II comprises 9 indicators distributed across three categories:
 The Amount Invested category consists of two indicators related to historic financial commitments to low-carbon companies and projects: cumulative clean energy investment and clean energy investment growth rate. The timeframe used was 2011 to 2015. The category contributes to 51% of the score for this parameter.
 Data sources employed in the category were drawn from BNEF’s proprietary Industry Intelligence database ‒ the world’s most accurate database of clean energy and carbon investment activity. The database contains detailed information on funds invested in clean energy projects larger than 1MW and technologies, grants, venture, private equity and corporate finance transactions, and project financing. The Amount Invested methodology follows that employed in Climatescope 2015.
 
-#### Cumulative clean energy investment
+#### <b>Cumulative clean energy investment</b>
 
 The clean energy investment indicator of the Amount Invested category includes four metrics related to the investment type: asset finance, corporate finance, venture capital and private equity investment. All three investment-type metrics were aggregated to derive the total cumulative clean energy investment figure. Data points underlying these metrics are available online for the purpose of external analysis.
 
 Note that the total clean energy investment indicator accounts for cumulative commitments from 2011 through 2015. Investment commitments follow different orders of magnitude because of the variation in the size of the 58 Climatescope countries. Thus, countries were ranked for this indicator based on the value of total clean energy investments as a percentage of GDP to ensure standardization. Once investments were benchmarked by the size of the economy, countries were ranked using the indexing approach. The country with the highest share of cumulative clean energy investment relative to the size of its economy was set as the benchmark with a score of 5; all other country scores were derived based on their relative position to 5.
 
-#### Clean energy investment growth rate
+#### <b>Clean energy investment growth rate</b>
 
 Similarly, the growth rate for the clean energy investment indicator took into account the same five-year period and was based on compound annual growth rates. Scoring was also derived by using the index approach with the country with the highest compound six-year annual growth rate receiving the maximum score of 5. Since 2015, the maximum growth rate used in the indexing is capped at 150%. There was a simple reason for this: one country that prior to 2014 had seen virtually zero clean investment technically saw its growth rate hit 583% in 2014 thanks to a small level of investment in the year. Having all other countries benchmarked against this 583% would have badly hurt them all (even nations that had posted otherwise remarkable growth rates of 100% or more). As a result, a cap of 150% was used for this particular benchmarking/indexing exercise.
 
@@ -201,11 +201,11 @@ Similarly, the growth rate for the clean energy investment indicator took into a
 
 The sources of funds category contributed 26% to the Parameter II score. Its two unique indicators – loans grants and local investment by local players – each made up half of the parameter weight and contributed 3% apiece to the overall Climatescope score.
 
-#### Loans, grants 
+#### <b>Loans and grants</b>
 
 The methodology employed to track loan and grants commitments remained the same as employed in the first four editions of Climatescope. Data were gathered using primary sources and BNEF’s proprietary Industry Intelligence database. Standardization was achieved by comparing fund source commitments to GDP. Scoring was determined based on the index approach.  
 
-#### Local investment by local players
+#### <b>Local investment by local players</b>
 
 Only total new investments were used in the analysis of this indicator. Investment into small distributed projects was not considered. The total investment data for each country was then filtered by investor domicile to derive the dollar amount committed in any given country by investors domiciled in the same country. The score for this indicator was obtained by taking the ratio of dollar amount committed by local players for local projects over total clean energy investment at a national level. The country with the highest ratio received the maximum score of 5 and was considered the benchmark.
 
@@ -250,7 +250,7 @@ A total of 14 unique indicators serve as inputs into Parameter IV. These are arr
 
 The Carbon Offsets category comprises three distinct indicators assessing the historic activity of CDM and other offset project types in a given country, the risk projects will fail to gain CDM accreditation or approval, and offset project potential considering existing capacity in each country to support further project development. Each indicator contributes with varying weights in turn to the category, parameter and overall score. Each country’s Carbon Offset category score was derived by multiplying a “raw” score for each indicator by that indicator’s weighting, then aggregating the three final scores.
 
-#### Historic activity
+#### <b>Historic activity</b>
 
 The historic activity indicator investigates whether a country has CDM projects or other types of voluntary offset projects in place. It also assesses the depth of a country’s current project pipeline by tracking sectors covered by these offset projects as well as the volume of current and expected credit issuance.
 
@@ -260,7 +260,7 @@ Metrics captured for this indicator include the number of credit scheme types, p
 
 For example, Brazil had 409 carbon offset projects, which means 0.00000097 per tonne of CO2 equivalent in 2013 while the average across all countries was 0.00000141. Thus Brazil received a score of 0 for the metric assessing number of projects because it had a higher CO2 profile than the average. A separate example: 2,206,277.2 credits were recorded as having actually been issued or expected to have been issued for projects in Chile, which means 0.03 credits per tonne of CO2 equivalent. Meanwhile, the Climatescope average for this metric was 0.03 credits per tonne of CO2 equivalent. Thus Chile received a score of 1 for meeting the regional mean.
 
-#### CDM risk 
+#### <b>CDM risk</b>
 
 The CDM risk indicator assessed the likelihood that CDM offset projects in a given country fail to get commissioned or otherwise fail to gain accreditation or local approval. It also took into account the average processing time for project registration within CDM. Given the limited data available for other offset project types for the purposes of this analysis, CDM project risk was tracked exclusively.
 The CDM risk indicator incorporated three distinct metrics: (1) the average number of failures per active CDM project, (2) the average number of restarts per CDM project, and (3) the number of days it takes for a project to successfully complete the registration process. The scoring system for the first two metrics ‒ number of project failures and restarts – followed the scoring system used for the metrics in the carbon offsets historic activity indicator. Each country was categorized as above or below average compared with all other Climatescope nations, provinces and states. Above average geographies received 1’s and below-average nations received 0’s. This calculation was done separately for both the number of project failures and number of project restarts.
@@ -272,7 +272,7 @@ The standard deviations from the first and second phases for each country were t
 
 Six was the maximum score a given country could achieve in the CDM risk indicator, comprising the aggregated scores from failures, restarts, phase I duration, phase I standard deviation, phase II duration and phase II standard deviation. The CDM risk indicator has a 25% weighting toward the Carbon Offset category and a 1.5% impact on a country’s overall Climatescope score.
 
-#### Potential for developing emission offset projects
+#### <b>Potential for developing emission offset projects</b>
 
 The project potential indicator assessed opportunities for developing emission offset projects in a given country. Carbon intensive economies – those with high emissions per unit of GDP, or those highly inefficient in their use of energy generally – have significant abatement opportunities. This indicator aims to assess the size of this opportunity by examining three metrics:
 
