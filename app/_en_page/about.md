@@ -21,7 +21,7 @@ In 2016, the project was supported by the UK Department for International Develo
 ### PROJECT DIRECTOR
 Ethan Zindler
 
-####PROJECT MANAGER
+### PROJECT MANAGER
 Dario Traum 
 
 ### PROJECT COORDINATORS
