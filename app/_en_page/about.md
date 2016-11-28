@@ -75,7 +75,7 @@ Helena Chung;
 Ana Verena Lima
 
 ### LEAD MODELLING ANALYST
-Uli Ezekiel
+Ulimmeh Ezekiel
 
 ### SPECIAL THANKS
 
