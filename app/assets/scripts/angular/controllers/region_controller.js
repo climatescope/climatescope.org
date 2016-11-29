@@ -54,10 +54,10 @@
         // Section to contain elements.
         var $section = $('<section>').addClass('prose-block');
         // Prepare title link.
-        var $titleLink = $('<a href="#">').append(o);
+        var $titleLink = $('<a href="#">').addClass('prose-block__toggle').append(o);
         // Construct header.
         $('<header>')
-          .addClass('prose-block__title')
+          .addClass('prose-block__header')
           .append($titleLink)
           .appendTo($section);
 
