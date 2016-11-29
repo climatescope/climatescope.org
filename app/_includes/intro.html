@@ -1,11 +1,9 @@
-<div class="row--contained">
+<div class="row--contained row--contained-alt">
   <div class="intro-block">
     <h2 class="intro-block__title">{{ t['Mapping the Global Frontiers for Clean Energy Investment'][language] }}</h2>
     <div class="intro-block__body">
-      <p>{{ t['Explore and assess the investment climate and policies for clean energy investments in 55 emerging markets in Africa, Asia, and in Latin America and the Caribbean offered by the Climatescope 2015 – a unique country-by-country assessment, interactive report and index.'][language] }}</p>
-      {% assign col_name = site.collections['en_page'].i18n[language] %}
-      {% assign pg = site[col_name] | where:"id","results" | first %}
-      <p><a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" class="bttn bttn-success go" title="{{ t['Get the Global Results'][language] }}">{{ t['Get the Global Results'][language] }}</a></p>
+      <p>{{ t['Climatescope tracks the conditions for clean energy investment on and off the grid, and provides a wealth of publicly-available information on 55 emerging markets in Africa, Asia and Latin America & the Caribbean'][language] }}</p>
+      <p><a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/results" class="bttn bttn-success bttn-l go" title="{{ t['Get the results'][language] }}">{{ t['Get the results'][language] }}</a></p>
     </div>
   </div>
 </div>
