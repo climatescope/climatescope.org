@@ -42,6 +42,28 @@ select {
   }
 }
 
+
+// SELECTS
+
+.sllt {
+  background: #fff;
+  border-radius: $global-radius;
+  border: 1px solid tint($primary-color, 90%);
+  cursor: pointer;
+  &.disabled, &[disabled] {
+    cursor: not-allowed;
+    @include opacity(0.6);
+    box-shadow: none;
+  }
+}
+
+.sllt-m {
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0 0.75rem;
+}
+
+
 // SWITCH
 
 .switch {

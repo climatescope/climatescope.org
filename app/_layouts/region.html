@@ -20,17 +20,11 @@ conf:
   <div id="index-viz" class="row--full intro"><!-- Insert map here. --></div>
 
   <div class="row--contained">
-    <div class="col--main prose-copy" ng-controller="DescriptionController as descCtrl">
+    <div class="col--main prose-copy" ng-controller="DescriptionAccordionController as descCtrl">
       <h2>{{ t['Description'][language] }}</h2>
 
-      <div class="description-inner expandable" data-hook="expand-description">
-        <div class="expandable-wrapper">
-          {{ content }}
-        </div>
-      </div>
-
-      <div class="prose-copy-actions">
-        <a class="bttn bttn-cta" href="" ng-init="descCtrl.checkExpandable('[data-hook=\'expand-description\']')" ng-click="descCtrl.toggleExpandable('[data-hook=\'expand-description\']', $event)" title="{{ t['View more'][language] }}">{{ t['View more'][language] }}</a>
+      <div class="description" data-hook="accordionfy" ng-init="descCtrl.initAccordion('[data-hook=\'accordionfy\']')">
+        {{ content }}
       </div>
 
     </div>
