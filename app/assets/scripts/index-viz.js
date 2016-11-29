@@ -4,39 +4,43 @@ $(document).ready(function() {
 
     var mapSettings = {
       'world': {
-        mapId: 'flipside.e6958sxs',
+        mapId: 'climatescope/ciw2u8z4j001x2jl91e0cmk62',
         zoom: 2,
         center: [0, 0]
       },
       'africa': {
-        mapId: 'flipside.cdw17lf8',
-        zoom: 3,
-        center: [-9.6224, 25.8398]
+        mapId: 'climatescope/ciw2ut4ed00642kr34v3l4ltg',
+        zoom: 2,
+        center: [10, 0]
       },
       'asia': {
-        mapId: 'flipside.j7e3okc6',
+        mapId: 'climatescope/ciw2ut9ji000z2jr16qiwz5p7',
         zoom: 3,
         center: [20.63278, 104.0625]
       },
       'lac': {
-        mapId: 'flipside.b1dsv657',
+        mapId: 'climatescope/ciw2v7gwp00202jl9fpka83pf',
         zoom: 2,
         center: [-15.6230, -59.0625]
       }
     };
     var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
-    var map = L.mapbox.map('index-viz', mapConf.mapId, {
-                          minZoom: 2,
-                          maxBounds: [
+    var map = L.mapbox.map('index-viz')
+          .setView(mapConf.center, mapConf.zoom)
+
+    map.scrollWheelZoom.disable()
+
+    L.mapbox.accessToken = "pk.eyJ1IjoiY2xpbWF0ZXNjb3BlIiwiYSI6ImNpdzJmb2dwcjBhMzQyenBia2E1azBjODUifQ.9I6shKgqM1xeBA13VX5a4g"
+
+    L.mapbox.styleLayer(`mapbox://styles/${mapConf.mapId}`, {
+                          minZoom: 1,
+                          bounds: [
                             [84.812743, -178.629215],
                             [-78.229733, 179.964543]
                           ],
-                          tileLayer: {
-                            continuousWorld: false,
-                            noWrap: true
-                          },
-                          scrollWheelZoom: false,
-    }).setView(mapConf.center, mapConf.zoom);
+                          continuousWorld: false,
+                          noWrap: true,
+    }).addTo(map);
 
     var point = function(x, y) {
       var pt = map.latLngToLayerPoint([y, x]);
@@ -377,7 +381,7 @@ $(document).ready(function() {
       tooltip.hide();
     });
 
-    map.on('viewreset', function() {
+    map.on('zoom', function() {
       resetSVG();
       zoom = map.getZoom();
 
