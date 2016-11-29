@@ -250,7 +250,7 @@ A total of 14 unique indicators serve as inputs into Parameter IV. These are arr
 
 The Carbon Offsets category comprises three distinct indicators assessing the historic activity of CDM and other offset project types in a given country, the risk projects will fail to gain CDM accreditation or approval, and offset project potential considering existing capacity in each country to support further project development. Each indicator contributes with varying weights in turn to the category, parameter and overall score. Each country’s Carbon Offset category score was derived by multiplying a “raw” score for each indicator by that indicator’s weighting, then aggregating the three final scores.
 
-#### <b>Historic activity</b>
+####<b>Historic activity</b>
 
 The historic activity indicator investigates whether a country has CDM projects or other types of voluntary offset projects in place. It also assesses the depth of a country’s current project pipeline by tracking sectors covered by these offset projects as well as the volume of current and expected credit issuance.
 
@@ -260,7 +260,7 @@ Metrics captured for this indicator include the number of credit scheme types, p
 
 For example, Brazil had 409 carbon offset projects, which means 0.00000097 per tonne of CO2 equivalent in 2013 while the average across all countries was 0.00000141. Thus Brazil received a score of 0 for the metric assessing number of projects because it had a higher CO2 profile than the average. A separate example: 2,206,277.2 credits were recorded as having actually been issued or expected to have been issued for projects in Chile, which means 0.03 credits per tonne of CO2 equivalent. Meanwhile, the Climatescope average for this metric was 0.03 credits per tonne of CO2 equivalent. Thus Chile received a score of 1 for meeting the regional mean.
 
-#### <b>CDM risk</b>
+####<b>CDM risk</b>
 
 The CDM risk indicator assessed the likelihood that CDM offset projects in a given country fail to get commissioned or otherwise fail to gain accreditation or local approval. It also took into account the average processing time for project registration within CDM. Given the limited data available for other offset project types for the purposes of this analysis, CDM project risk was tracked exclusively.
 The CDM risk indicator incorporated three distinct metrics: (1) the average number of failures per active CDM project, (2) the average number of restarts per CDM project, and (3) the number of days it takes for a project to successfully complete the registration process. The scoring system for the first two metrics ‒ number of project failures and restarts – followed the scoring system used for the metrics in the carbon offsets historic activity indicator. Each country was categorized as above or below average compared with all other Climatescope nations, provinces and states. Above average geographies received 1’s and below-average nations received 0’s. This calculation was done separately for both the number of project failures and number of project restarts.
@@ -272,7 +272,7 @@ The standard deviations from the first and second phases for each country were t
 
 Six was the maximum score a given country could achieve in the CDM risk indicator, comprising the aggregated scores from failures, restarts, phase I duration, phase I standard deviation, phase II duration and phase II standard deviation. The CDM risk indicator has a 25% weighting toward the Carbon Offset category and a 1.5% impact on a country’s overall Climatescope score.
 
-#### <b>Potential for developing emission offset projects</b>
+####<b>Potential for developing emission offset projects</b>
 
 The project potential indicator assessed opportunities for developing emission offset projects in a given country. Carbon intensive economies – those with high emissions per unit of GDP, or those highly inefficient in their use of energy generally – have significant abatement opportunities. This indicator aims to assess the size of this opportunity by examining three metrics:
 
@@ -312,14 +312,14 @@ Accounting for 30% of the Parameter IV score, the Corporate Awareness category e
 
 The GHG Global Reporting Initiative indicator investigated whether companies in a country voluntarily reported their emissions to the Global Reporting Initiative (GRI), using the initiative’s online database. The number of companies in Bloomberg’s Environmental, Social and Governance (ESG) database was used as a proxy for the total number of companies in a given country. The indicator score was derived by dividing the number of companies reporting to the GRI by the total number of companies in a given country (i.e., those listed in the ESG database). The maximum ratio for the region was obtained by compiling the same dataset across all countries. If the country ratio was greater than the maximum ratio for all, the country received 1 point; if it was lower, it received 0.
 
-#### <b>Principle of responsible investment</b>
+####<b>Principle of responsible investment</b>
 
 The Principles of Responsible Investment indicator assessed how many asset owners in a given country are represented among the signatories of the UN’s Principles for Responsible Investment (PRI) ‒ a network of investors working to put into practice the six voluntary and aspirational principles. The PRI database was used to count the number of asset owners, investment managers and professional service partners who signed up to the initiative. The same scoring method used in the GRI indicator was applied to the Principles indicator. The maximum point a country received was 1 if its maximum ratio fell above the maximum ratio for all countries.
 
-#### <b>Energy efficiency initiatives & emission reduction policies</b>   
+####<b>Energy efficiency initiatives & emission reduction policies</b>   
 
 The energy efficiency initiatives and emission reduction policies indicators each looked at how many companies reported dedicated initiatives based on the Bloomberg ESG database. The number of companies reporting energy efficiency or emission reduction initiatives to Bloomberg’s Environment, Social and Governance database (ESG) was counted. The data was levelized by dividing the number of companies reporting these initiatives by the number of active companies in a given country on the Bloomberg terminal. These fields in the Bloomberg terminal are maintained by a team of outsourced vendors, contracted by Bloomberg. The team combs annual reports and sustainability reports, looking for any of the following three indications to determine whether a company is serious about its energy efficiency initiatives: the initiatives merit more than a passing mention in the annual or sustainability report; there is more than one initiative related to energy efficiency; there is numeric metric associated with the initiative (e.g., quantified goal).
 
-#### <b>Capacity building: Environmentally focused business training & think thanks</b>  
+####<b>Capacity building: Environmentally focused business training & think thanks</b>  
 
 These two indicators were binary. Primary research was conducted to trace if there was at least one environmentally-focused business training program in place and think tank. The country received the maximum score for each of these indicators if it had one of these entities.
