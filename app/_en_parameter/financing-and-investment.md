@@ -6,11 +6,11 @@ title: Financing and investment
 weight: "2"
 ---
 
-## PARAMETER II – FINANCING AND INVESTMENT
+## <b>PARAMETER II – FINANCING AND INVESTMENT</b>
 
 Climatescope’s Clean Energy Investment & Climate Financing Parameter (Parameter II) encapsulates nine contributing data indicators. It accounts for the amount and growth of clean energy investment in projects larger than 1MW in each country, the availability of local funds and local financing costs. Parameter II contributed 30% toward each nation’s overall score.
 
-### KEY FINDINGS
+### <b>KEY FINDINGS</b>
 
 Investment volumes across Climatescope countries overall continued to climb in 2015 and achieved an all-time high of $154.1bn, up from $129.3bn in 2014. Investment in China, which accounts for three quarters of total Climatescope investment (and about one third of all global investment), grew 28% and helped drive top-line growth.  However, activity is clearly spreading to other nations. Excluding China, the ten countries which saw the highest level of clean energy investment attracted $37.4bn in 2015 compared with $28.2bn in 2013. An impressive 38 of 55 countries reviewed in this year’s Climatescope and last year’s edition saw their investment scores improve. Amongst the three nations added to the survey year, Jordan stood out by scoring 1.62 out of a maximum of 5 and joining the top 10 list on this parameter. 
 
