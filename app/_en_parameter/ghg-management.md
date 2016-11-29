@@ -6,7 +6,7 @@ title: Greenhouse Gas management
 weight: "4"
 ---
 
-## PARAMETER IV – GREENHOUSE GAS MANAGEMENT ACTIVITIES
+## <b>PARAMETER IV – GREENHOUSE GAS MANAGEMENT ACTIVITIES</b>
 
 Greenhouse Gas Management Activities-Parameter IV takes into account carbon offset project activity, level of policy support for carbon emissions reduction, and local corporate awareness of carbon issues through a total of 13 indicator inputs. Parameter IV contributed 15% toward each nation’s overall score.
 
@@ -14,7 +14,7 @@ Relevant indicators are arranged into three categories: Carbon Offsets, Carbon P
 
 It is worth noting that Climatescope methodology does not measure countries’ emissions or reduce their scores when these are high. Rather, it seeks to take into account efforts launched explicitly to reduce future emissions.
 
-### KEY FINDINGS
+### <b>KEY FINDINGS</b>
 
 Across all 58 Climatescope nations, the average Parameter IV score ticked up to 1.56 from 1.36 in 2015 and 1.34 in 2014. This increase is generally explained by the fact that the majority of countries submitted greenhouse gas (GHG) emission reduction targets as Intended National Determined Contributions (INDC) in advance of the COP21 meeting in Paris in December 2015. Assuming countries follow through on promises to improve their mitigation efforts and carbon policies, further score improvements may be expected in coming years.  The critical importance of climate change mitigation policies in Climatescope countries is highlighted by the fact that these nations accounted for just over half of total GHG emissions worldwide and China alone for just under a quarter in 2012, the latest year for which complete data exists (Figure 1). 
 
