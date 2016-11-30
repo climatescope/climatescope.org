@@ -10,10 +10,6 @@
     <div class="dropdown-content">
       <ul class="dropdown-menu" role="menu">
         <li>
-          {% assign pg = site.pages | where:"id","policies" | where:"lang",language | first %}
-          <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['Browse the policy database'][language] }}">{{ t['Policies'][language] }}</a>
-        </li>
-        <li>
           {% assign pg = site.pages | where:"id","blog" | where:"lang",language | first %}
           <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['View blog posts'][language] }}">{{ t['Blog'][language] }}</a>
         </li>
@@ -44,6 +40,10 @@
     <a href="#" title="{{ t['Explore our resources'][language] }}" class="dropdown-toggle caret" data-toggle="dropdown">{{ t['Resource Center'][language] }}</a>
     <div class="dropdown-content">
       <ul class="dropdown-menu" role="menu">
+        <li>
+          {% assign pg = site.pages | where:"id","policies" | where:"lang",language | first %}
+          <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['Browse the policy database'][language] }}">{{ t['Policies'][language] }}</a>
+        </li>
         <li>
           {% assign col_name = site.collections['en_page'].i18n[language] %}
           {% assign pg = site[col_name] | where:"id","download" | first %}
