@@ -43,7 +43,7 @@ Ben Vickers
 ### RESEARCHERS & DATA GATHERING
 
 #### Africa and Middle East
-Nicole	Aspinal;
+Nicole	Aspinall;
 Joe	Byrne;
 Victoria Cuming;
 Monne	Depratere;
