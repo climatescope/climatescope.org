@@ -1,8 +1,8 @@
 ---
 layout: country
-id: egy
+id: eg
 title: Egypt
-region: mena
+region: africa
 grid: 'on'
 published: true
 ---

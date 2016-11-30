@@ -1,11 +1,10 @@
 ---
 layout: state
-
-id: in-bi
+id: in-br
 title: Bihar
-
 region: asia
 country: in
+published: true
 ---
 Bihar, located in the east of India, is the 13<sup>th</sup> largest state in terms of area, but has the third highest population. Approximately 85% of people live in rural areas. The state has one of the lowest levels of rural electrification in the country, and the peak power deficit stood at 6.7% in the last financial year, which ended in March 2016.
 

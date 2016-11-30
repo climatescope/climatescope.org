@@ -1,8 +1,8 @@
 ---
 layout: country
-id: lbn
+id: lb
 title: Lebanon
-region: mena
+region: africa
 grid: 'on'
 published: true
 ---
