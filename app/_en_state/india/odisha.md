@@ -1,11 +1,10 @@
 ---
 layout: state
-
-id: in-od
+id: in-or
 title: Odisha
-
 region: asia
 country: in
+published: true
 ---
 Odisha, located on the east coast of India, is rich in natural resources, having large reserves of iron ore, bauxite (aluminium ore) and coal. This has made it home to a large number of steel and aluminium manufacturers, as well as coal power generators. The state had a marginal power deficit of 0.6% in the last fiscal year (ended March 2016), but no peak time power deficit.  
 

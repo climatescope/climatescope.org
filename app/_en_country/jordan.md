@@ -1,8 +1,8 @@
 ---
 layout: country
-id: jor
+id: jo
 title: Jordan
-region: mena
+region: africa
 grid: 'on'
 published: true
 ---
