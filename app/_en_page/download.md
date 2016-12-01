@@ -71,7 +71,7 @@ arrange: full
 
 {% include download_table.html type='country' %}
 
-## Download by state / province
+## Download by state
 
 {% include download_table.html type='state' %}
 

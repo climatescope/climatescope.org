@@ -12,7 +12,7 @@
       <div class="layout--hub__controls">
 
         <div class="control">
-          <label class="control-title" for="country_with">{{ t['Country / state / province'][language] }}</label>
+          <label class="control-title" for="country_with">{{ t['Country / state'][language] }}</label>
             <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrl.compare[0]">
             <option value="">{{ t['Choose location A'][language] }}</option>
 
@@ -24,7 +24,7 @@
         </div>  
 
         <div class="control">
-          <label class="control-title" for="country_with">{{ t['Country / state / province'][language] }}</label>
+          <label class="control-title" for="country_with">{{ t['Country / state'][language] }}</label>
             <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrl.compare[1]">
             <option value="">{{ t['Choose location B'][language] }}</option>
 
@@ -105,7 +105,7 @@
                 <div class="chart-std price-attractiveness-fuel" ng-if="!compareCtrl.isFuelChartAvailable(0)">
                   <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
                   <div class="placeholder">
-                    <p>{{ t['There is no fuel data for this Country / State / Province.'][language] }}</p>
+                    <p>{{ t['There is no fuel data for this Country / State.'][language] }}</p>
                   </div>
                 </div>
 
@@ -144,7 +144,7 @@
         <!-- END params-->
 
         <div class="placeholder" ng-if="!compareCtrl.compareSelected[0]">
-          <p>{{ t['Nothing to compare. Choose a Country / State / Province.'][language] }}</p>
+          <p>{{ t['Nothing to compare. Choose a Country / State.'][language] }}</p>
         </div>
 
       </div>
@@ -207,7 +207,7 @@
                 <div class="chart-std price-attractiveness-fuel" ng-if="!compareCtrl.isFuelChartAvailable(1)">
                   <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
                   <div class="placeholder">
-                    <p>{{ t['There is no fuel data for this Country / State / Province.'][language] }}</p>
+                    <p>{{ t['There is no fuel data for this Country / State.'][language] }}</p>
                   </div>
                 </div>
 
@@ -246,7 +246,7 @@
         <!-- END params-->
 
         <div class="placeholder" ng-if="!compareCtrl.compareSelected[1]">
-          <p>{{ t['Nothing to compare. Choose a Country / State / Province.'][language] }}</p>
+          <p>{{ t['Nothing to compare. Choose a Country / State.'][language] }}</p>
         </div>
 
       </div>
