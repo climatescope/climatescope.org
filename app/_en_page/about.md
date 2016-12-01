@@ -1,10 +1,10 @@
 ---
 layout: page
 
-title : About the Climatescope
+title : About Climatescope
 id: about
 ---
-The Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment condition for clean energy and climate-related investment worldwide.
+Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment condition for clean energy and climate-related investment worldwide.
 
 It profiles 58 countries worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy. 
 
