@@ -21,9 +21,9 @@ The federal government has set a target to reach 175GW of renewable energy capac
 
 ###Score summary
 
-West Bengal scored 0.759 in Climatescope 2016, placing it 3<sup>rd</sup> on the list of six Indian states. Its highest position was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
+West Bengal scored 0.754 in Climatescope 2016, placing it 3<sup>rd</sup> on the list of six Indian states. Its highest position was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
 
-On Enabling Framework Parameter I, the state scored 0.762 and ranked 3<sup>rd</sup>. Its performance was supported by the presence of a clean energy rural electrification programme, and an unbundled power sector. 
+On Enabling Framework Parameter I, the state scored 0.749 and ranked 3<sup>rd</sup>. Its performance was supported by the presence of a clean energy rural electrification programme, and an unbundled power sector. 
 
 The state scored zero on Clean Energy Investment and Climate Financing Parameter II, as did four other Indian states. It did not attract any investment in 2015, or in the two previous years.
 
