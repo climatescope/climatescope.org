@@ -27,9 +27,9 @@ Odisha has a low level of rural electrification and low per capita income. The t
 
 ###Score summary
 
-Odisha scored 0.649 in Climatescope 2016, placing it 5<sup>th</sup> among the six Indian states surveyed, marginally ahead of Bihar. It was either last or second-last on all parameters.
+Odisha scored 0.643 in Climatescope 2016, placing it 5<sup>th</sup> among the six Indian states surveyed, marginally ahead of Bihar. It was either last or second-last on all parameters.
 
-On Enabling Framework Parameter I, the state scored 0.664. Its relatively weak performance reflected, among other things, the incomplete unbundling and privatisation of its power sector. 
+On Enabling Framework Parameter I, the state scored 0.651. Its relatively weak performance reflected, among other things, the incomplete unbundling and privatisation of its power sector. 
 
 Odisha scored zero on Clean Energy Investment and Climate Financing Parameter II, as did four other Indian states. It did not attract any investment in 2015, or in the four previous years.
 
