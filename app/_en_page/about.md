@@ -8,9 +8,9 @@ Climatescope is a unique country-by-country assessment, interactive report and i
 
 It profiles 58 countries worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy. 
 
-Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to where clean energy can go tomorrow.
+The Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to where clean energy can go tomorrow.
 
-This marks the fifth year of the Climatescope project. In 2012 and 2013, Climatescope focused exclusively on Latin America and the Caribbean. The first edition was developed by the Multilateral Investment Fund of the Inter-American Development Bank Group in partnership with Bloomberg New Energy Finance. 
+This marks the fifth year of the Climatescope project. In 2012 and 2013, the Climatescope focused exclusively on Latin America and the Caribbean. The first edition was developed by the Multilateral Investment Fund of the Inter-American Development Bank Group in partnership with Bloomberg New Energy Finance. 
 
 In 2014, the UK Department for International Development and the US Agency for International Development have joined as supporters and advisors. The project has been expanded to include 55 countries, states, and provinces in sub-Saharan Africa and Asia. Bloomberg New Energy Finance serves as research partner and author of the report.
 
@@ -25,62 +25,109 @@ Ethan Zindler
 Dario Traum 
 
 ### PROJECT COORDINATORS
-Lilian Alves;
-Luiza Demorô;
-Sara Giordano;
-Maggie Kuang;
-Itamar Orlandi;
-Ashish Sethia;
-Nico Tyabji
+Lilian Alves,
+Luiza Demorô,
+Sara Giordano,
+Maggie Kuang,
+Itamar Orlandi,
+Ashish Sethia,
+Nico Tyabji.
 
 ### EDITORS
-Rohan Boyle;
-Bryony Collins;
-Vandana Gombar;
-Angus McCrone;
-Ben Vickers
+Rohan Boyle,
+Bryony Collins,
+Vandana Gombar,
+Angus McCrone,
+Ben Vickers.
 
 ### RESEARCHERS & DATA GATHERING
 
 #### Africa and Middle East
-Nicole	Aspinall;
-Joe	Byrne;
-Victoria Cuming;
-Monne	Depratere;
-Ben	Gidlow;
-Andrew Grant;
-Tom	Harries;
-Kyle	Harrison;
-Lara	Hayim;
-Keegan	Kruger;
-Will	Nelson;
-Jonas	Rooze;
-James	Sprinz;
-Kieron	Stopforth
+Nicole	Aspinall,
+Joe	Byrne,
+Victoria Cuming,
+Monne	Depratere,
+Ben	Gidlow,
+Andrew Grant,
+Tom	Harries,
+Kyle	Harrison,
+Lara	Hayim,
+Keegan	Kruger,
+Will	Nelson,
+Jonas	Rooze,
+James	Sprinz,
+Kieron	Stopforth.
 
 #### Asia
-Muhammad	Altamash;
-Janis	Hoberg;
-Atin Jain;
-Jacky	Lilinshtein;
-Yvonne	Liu;
-Luke	Mills;
-Steph	Munro;
-Katya	Sharavzhamtsyna
+Muhammad	Altamash,
+Janis	Hoberg,
+Atin Jain,
+Jacky	Lilinshtein,
+Yvonne	Liu,
+Luke	Mills,
+Steph	Munro,
+Katya	Sharavzhamtsyna.
 
 #### Latin America and Caribbean
-Laura Castro;
-Raphael Barbosa Correa;
-Helena Chung;
-Ana Verena Lima
+Laura Castro,
+Raphael Barbosa Correa,
+Helena Chung,
+Ana Verena Lima.
 
 ### LEAD MODELLING ANALYST
 Ulimmeh Ezekiel
 
-### SPECIAL THANKS
+### POLICY EXPERT PANEL
+Dario Abramskiehn, CPI;
+Dominique	Auverlot;
+Alex	Avila;	
+Carlos 	Barria;	
+Paul 	Bertheau;
+Abbas	Bilgrami, Juniper Advisors Ltd;
+Phillip	Brown;	
+Anna	Czajkowska,	Nest;
+Gabriela 	da Rocha Oliveira;
+Patrick	D'addario, Fiorello H. LaGuardia Foundation;
+Vincent Delporte;	
+Yasemin Erboy Ruff,	United Nations Foundation;
+John	Fenton;	
+Brindusa 	Fidanza,	The Ground_Up Project;
+Florian	Fritzsche;
+Manuel	Garmendia Zarandona, Gamesa;
+Mike	Gratwicke;
+Deepak 	Gupta;	
+Victoria 	Healey;	
+Lisa 	Jacobson;
+K G Chamila	Jayasekara;	
+David 	Lecoque;	
+Hugo	Lucas,	Factor;
+Rupesh Madlani;	
+Miguel	Martinez Rodriguez;	
+Federico 	Mazza, CPI;
+Sam	Miles;	
+Anna Paola	Minervini;
+Riquel 	Mitma;	
+Nathan	Moore;	
+Ángeles	Mora Sanchez, Gamesa;
+Laurence 	Mulliez;	
+Hannah	Murdock;
+Jonathan 	Myrtle;	
+Ruggero	Paterno;	
+Tobias	Rinke;	
+Rachel 	Ross,	Allotrope Partners;
+Barbara Rubim;	
+Chris	Twomey;	
+Michael	Weber;	
+Brian 	Whitesides;
+Jane 	Wilkinson, CPI;
+Ming	Yang.
 
-### ACKNOWLEDGEMENTS
-
+###SPECIAL THANKS
+Jon Moore,
+Benjamin Kafri,
+Noemi Glickman,
+Arlinda Mezini,
+Eve Ottlakan.
 
 ### CREDITS
 All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
