@@ -22,11 +22,11 @@ In 2015, Asian nations surveyed in Climatescope set an annual record for new cle
 
 Still, deployment has been unevenly split across the region. China, the world’s second biggest economy, has embarked on what is by far the largest renewables deployment programme in history. It accounted for 90% of the region’s new clean energy generation capacity installed in 2015. India was a distant second with 9% (5.6GW), mostly from wind and solar plants. China and India have seen renewable energy capacity installations grow every year since 2013, with onshore wind representing the bulk of the activity but solar accelerating considerably recently (Figure 1).
 
-![Asia Fig 1 - Annual capacity additions in China and India (GW), 2011-2015] (add link)
+![Asia Fig 1 - Annual capacity additions in China and India (GW), 2011-2015](/assets/images/content/2016/AS_Fig.1.jpg)
 
 Installations in the rest of the Asian countries reviewed by Climatescope have been more irregular, although total new solar and wind have grown each year since 2011(Figure 2). Pakistan saw the biggest uptick in 2015 with 758MW of mostly wind and solar, approximately five times what got built the prior year. Further deployment is set to continue thanks to new support made available by the Pakistani government in 2015, some of which is support by China [(for more, click here to read the Pakistan country profile).] (Add hyperlink)
 
-![Asia Fig 2 - Annual capacity additions in Climatescope Asia nations, excluding China and India (GW), 2011-2015] (add link)
+![Asia Fig 2 - Annual capacity additions in Climatescope Asia nations, excluding China and India (GW), 2011-2015](/assets/images/content/2016/AS_Fig.2.jpg)
 
 Vietnam and Tajikistan have doubled their small hydro capacity from 2010 to 2015 while Sri Lanka and Nepal increased theirs by around a third. Finally, Nepal and Bangladesh have made important progress in off-grid clean energy, which is not accounted for in Figure 2, which shows only utility-scale activity.
 
@@ -36,9 +36,9 @@ In 2015, the Climatescope Asia countries secured $127bn in clean energy investme
 
 China and India in 2015 remained the first and second largest renewable investment destinations, respectively, and continued to see capital flows grow steadily (Figure 3). For the first time, solar surpassed wind by attracting $64bn, or just over half of total investment. Bioenergy and small hydro have seen their shares shrink in recent years and accounted for a combined $6bn in 2015 (Figure 4). 
 
-![Asia Fig 3 - Clean energy investment by country ($bn), 2010 - 2015] (add link)
+![Asia Fig 3 - Clean energy investment by country ($bn), 2010 - 2015](/assets/images/content/2016/AS_Fig.3.jpg)
 
-![Asia Fig 3 - Clean energy investment in India and China by technology ($bn), 2010 – 2015] (add link)
+![Asia Fig 4 - Clean energy investment in India and China by technology ($bn), 2010 – 2015](/assets/images/content/2016/AS_Fig.4.jpg)
 
 Away from India and China, other Asian nations saw a stark investment drop led by a fall of investment in geothermal projects. Total capital deployed in these countries fell by more than half, from $2.8bn to $1.3bn (Figure 5 and Figure 6). 
 
@@ -46,13 +46,13 @@ Pakistan and Vietnam continued to raise their profiles with investors in 2015. C
 
 Indonesia, which had one of the highest levels of investment across all Climatescope countries in 2014 with $1.8bn slipped to $308m in 2015. Indonesia’s headline figure was substantially boosted in 2014 by the $1.6bn Chevron Gunung Salak 330MW geothermal plant. 
 
-![Asia Fig 5 - Clean energy investment in Climatescope Asia countries (excluding India and China, $bn), 2010-2015] (add link)
+![Asia Fig 5 - Clean energy investment in Climatescope Asia countries (excluding India and China, $bn), 2010-2015](/assets/images/content/2016/AS_Fig.5.jpg)
 
-![Asia Fig 6 - Clean energy investment in Climatescope Asia countries (excluding India and China) by technology ($bn), 2010-2015] (add link)
+![Asia Fig 6 - Clean energy investment in Climatescope Asia countries (excluding India and China) by technology ($bn), 2010-2015](/assets/images/content/2016/AS_Fig.6.jpg)
 
 On the technology front, solar struggled to exceed 200MW installed in non-China/India Climatescope Asia nations once again in 2015 (Figure 6). However, the spread of projects has improved. In 2014, 98% of solar PV project financings occurred in Pakistan. In 2015, Pakistan still lead with just over half of investments into solar but Vietnam took a third and Indonesia the rest. Vietnam and Pakistan are the only countries in which onshore wind projects was financed, confirming their leading role in this sector amongst this sub-group of Climatescope Asia countries. Other countries in the region saw no financings of utility-scale assets in 2015; however Nepal and Bangladesh continue to have activity in off-grid renewables. 
 
-![Asia Fig 7 - Top five clean energy projects financed in Asian countries reviewed in Climatescope, 2015] (add link)
+![Asia Fig 7 - Top five clean energy projects financed in Asian countries reviewed in Climatescope, 2015](/assets/images/content/2016/AS_Fig.7.jpg)
 
 ### POLICY FRAMEWORKS EVOLVE IN FAVOUR OF RENEWABLES OR THEIR INTEGRATION
 
@@ -104,11 +104,11 @@ Grid curtailment of renewable energy in China became more severe in 2015 (Figure
 
 Curtailment woes have been compounded by subsidy payment delays. As of end-2015, the Chinese government owed solar and wind developers a cumulative subsidy payment of $8.2bn, with some developers awaiting arrears of more than three years.
 
-![Asia Fig 8 - Solar curtailment, Q1-3 2015, and 2016 PV feed-in tariff] (add link)
+![Asia Fig 8 - Solar curtailment, Q1-3 2015, and 2016 PV feed-in tariff](/assets/images/content/2016/AS_Fig.8.jpg)
 
 Development of long-distance transmission infrastructure to reduce curtailment risk is going full steam in China and represents a definite bright spot for renewables project owners. China says it plans to invest $270bn in such infrastructure over the coming years, including in 11 new ultra-high voltage lines, many of which are already under construction. This is by far the most ambitious programme of its sort in the world and stands to have a transformative effect on the country’s power system and its economy more broadly. 
 
-![Asia Fig 9 - China provincial wind capacity factors and curtailment rates in H1 2015, (hr, %)] (add link)
+![Asia Fig 9 - China provincial wind capacity factors and curtailment rates in H1 2015, (hr, %)](/assets/images/content/2016/AS_Fig.9.jpg)
 
 The first signs of solar curtailment have started to emerge in India, particularly in the state of Tamil Nadu. Seeking to address the problems and preventing more from emerging, India’s federal energy ministry has asked central and state electricity regulators to award a must-run status for all solar and wind power plants in the country. However, this has proved ineffective thus far as local officials have largely avoided the edict. As of 2016, the Indian government has started considering additional regulations such as penalties on utilities that fail to prioritize zero-carbon energy. 
 
@@ -126,7 +126,7 @@ Asia as a region has become the world’s manufacturing hub, a fact reflected in
 
 This change was largely due to supply chain expansions in India and Vietnam as China continues to achieve maximum scores for having the most complete renewables value chain amongst all Climatescope countries. As China’s supply chain matures and labor costs in the country rise, international companies are relocating production lines to South and Southeast Asia. Chinese-owned companies themselves are also expanding abroad, choosing South and Southeast Asia as first locations for overseas manufacturing. 
 
-![Asia Fig 10 - Value chain performance for Asia Climatescope countries, 2015] (add link)
+![Asia Fig 10 - Value chain performance for Asia Climatescope countries, 2015](/assets/images/content/2016/AS_Fig.10.jpg)
 
 Other value chain enhancements came from the number of venture capital and funds specialising in clean energy companies and projects which went up in Indonesia, Bangladesh and Nepal.
  
