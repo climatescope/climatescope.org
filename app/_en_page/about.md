@@ -81,11 +81,16 @@ Ulimmeh Ezekiel
 Dario Abramskiehn, CPI; Dominique	Auverlot; Alex	Avila; Carlos 	Barria;	Paul 	Bertheau; Abbas	Bilgrami, Juniper Advisors Ltd; Phillip	Brown; Anna	Czajkowska,	Nest; Gabriela da Rocha Oliveira; Patrick D'addario, Fiorello H. LaGuardia Foundation; Vincent Delporte;	Yasemin Erboy Ruff,	United Nations Foundation; John	Fenton;	 Brindusa Fidanza, The Ground_Up Project; Florian	Fritzsche; Manuel	Garmendia Zarandona, Gamesa; Mike	Gratwicke; Deepak 	Gupta; Victoria 	Healey;	Lisa 	Jacobson; K G Chamila	Jayasekara;	David	Lecoque;	Hugo	Lucas, Factor; Rupesh Madlani;	Miguel	Martinez Rodriguez;	Federico 	Mazza, CPI; Sam	Miles;	Anna Paola	Minervini; Riquel 	Mitma;	Nathan	Moore; Ángeles	Mora Sanchez, Gamesa; Laurence 	Mulliez; Hannah	Murdock; Jonathan Myrtle;	Ruggero	Paterno; Tobias	Rinke; Rachel 	Ross,	Allotrope Partners; Barbara Rubim; Chris Twomey;	Michael	Weber; Brian Whitesides; Jane Wilkinson, CPI; Ming Yang.
 
 ###SPECIAL THANKS
+Dharshan Wignarajah,
+Karen Johnson,
+María Hilda Rivera,
+Kathleen Auth,
 Jon Moore,
 Benjamin Kafri,
 Noemi Glickman,
 Arlinda Mezini,
-Eve Ottlakan.
+Eve Ottlakan,
+And the many energy sector stakeholders researchers have met in their Climatescope research trips.
 
 ### CREDITS
 All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
