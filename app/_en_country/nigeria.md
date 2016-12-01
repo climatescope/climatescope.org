@@ -24,7 +24,7 @@ In November 2015, Nigeria introduced a Feed-in tariff for small scale grid-conne
 The good news is there is approximately 1.2GW i.e. 15 utility scale solar projects, which have gone quite far in the PPA negotiation process and have all managed to secure generation permits from the Nigerian Electricity Regulatory Commission (NERC). Due to the pro-longed negotiation process and in order to reduce the cost of renewables to the consumer, the Nigerian Bulk Electricity Trader (NBET) plan to carry out closed competitive reverse power auctions to determine what to pay these projects. NBET plan to award PPAs to the cheapest 500MW of the competing 1.2GW. The remaining 700MW will compete in another open auction with possibly new competitors to take place by year-end 2016. The tariffs underwritten by NBET will be paid in Nigerian Naira but denominated in USD, hedging out exchange rate risk. Once contracts are signed they will be implemented based on their contracted operation date, penalties will apply to developers who do not meet their commercial operations deadline. Realistically we expect construction of these projects to commence in Q1 2017 and operation by early Q3 2017.
 
 
-#### Score Summary
+#### Score summary
 
 Nigeria scored 1.34 in Climatescope 2016 and ranked 30<sup>th</sup> on the list of countries overall. This was a descent of eighteen places and largely reflected the country’s low score on Clean Energy Investment and Climate Financing Parameter II, which plummeted in the absence of new investment.
  
