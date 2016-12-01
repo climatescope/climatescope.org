@@ -26,9 +26,9 @@ The state has made good progress in rural electrification through grid extension
 
 ###Score summary
 
-Madhya Pradesh scored 0.884 in Climatescope 2016, earning it 2<sup>nd</sup> place among the six Indian states included in this year’s survey. Its best position was on Greenhouse Gas Management Activities Parameter IV.
+Madhya Pradesh scored 0.863 in Climatescope 2016, earning it 2<sup>nd</sup> place among the six Indian states included in this year’s survey. Its best position was on Greenhouse Gas Management Activities Parameter IV.
 
-On Enabling Framework Parameter I, Madhya Pradesh scored 1.037, placing it behind only Andhra Pradesh. Its unbundled power sector, wholesale power market and availability of finance helped to boost its score.
+On Enabling Framework Parameter I, Madhya Pradesh scored 0.985, placing it behind only Andhra Pradesh. Its unbundled power sector, wholesale power market and availability of finance helped to boost its score.
 
 The state scored zero on Clean Energy Investment and Climate Financing Parameter II, as did four other Indian states. It did not attract any investment in 2015, or in the five previous years. 
 
