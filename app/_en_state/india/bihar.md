@@ -25,9 +25,9 @@ Bihar saw 25% growth in power demand in 2015. This is expected to increase stead
 
 ###Score summary
 
-Bihar scored 0.630 in Climatescope 2016, placing it last on the list of six Indian states surveyed in the current year. Its highest position was on Greenhouse Gas Management Activities Parameter IV. 
+Bihar scored 0.625 in Climatescope 2016, placing it last on the list of six Indian states surveyed in the current year. Its highest position was on Greenhouse Gas Management Activities Parameter IV. 
 
-On Enabling Framework Parameter I, Bihar scored 0.533, putting it at the bottom of the pile. Among other things, this reflects its only partially unbundled power sector, its unliberalised retail electricity market and frequent power outages.
+On Enabling Framework Parameter I, Bihar scored 0.520, putting it at the bottom of the pile. Among other things, this reflects its only partially unbundled power sector, its unliberalised retail electricity market and frequent power outages.
 
 The state scored zero on Clean Energy Investment and Climate Financing Parameter II, as did four other Indian states. It did not attract any investment in 2015, or in the two previous years.
 
