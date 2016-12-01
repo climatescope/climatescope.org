@@ -24,9 +24,10 @@ Historically, Brazil, Costa Rica, Uruguay and Panama have all suffered from drou
 
 All of this has moved countries to contemplate energy diversification and support development of non-hydro renewables. This trend has accelerated in 2014 (Figure 1 and Figure 2). And in 2015, wind, solar, small hydro, geothermal and biomass plants accounted for half of the 13GW of new capacity added in the region. The bulk came from wind (4.1GW), mostly in Brazil (2.6GW), Mexico (769MW), Uruguay (376MW) and Panama (150MW) and the market is expected to continue growing. In the next five years, BNEF expects 22.5GW of new wind to be added in Latin America.
 
-![LAC Fig 1 - Annual capacity additions in Latin America and the Caribbean, 2011 – 2015 (GW)] (add link)
+![LAC Fig 1 - Annual capacity additions in Latin America and the Caribbean, 2011 – 2015 (GW)](/assets/images/content/2016/LAC_Fig. 1.jpg)
 
-![LAC Fig 2 - Annual renewable energy capacity additions in Latin America and the Caribbean, 2011 – 2015 (GW)] (add link)
+![LAC Fig 2 - Annual renewable energy capacity additions in Latin America and the Caribbean, 2011 – 2015 (GW)](/assets/images/content/2016/LAC_Fig. 2.jpg)
+
 
 Solar projects still represent just a small share of commissioned capacity in the region, but this expected to change in coming years. BNEF foresees 9GW of utility-scale PV to be installed in Latin America between 2016 and 2018. 
 
@@ -64,7 +65,7 @@ Compelled by the Paris talks, last year 24 Latin America and Caribbean countries
 * <strong>Intensity targets</strong> are relative to GHG emissions per unit of GDP. Chile and Uruguay submitted intensity targets. Chile, for instance, has committed to cut greenhouse gas emissions by GDP unit by 30% below the 2007 level by 2030. We estimate that this will result in over 50% growth in emissions over the same period. 
 * <strong>Business as usual targets (BAU) </strong> are relative to a BAU scenario, which is projected considering future economic and population growth and therefore result in increase in emissions in absolute terms (Figure 3). 16 Latin America and Caribbean countries surveyed in Climatescope submitted BAU targets. Haiti, for instance, has committed to cut greenhouse gas emissions by 5% below the BAU by 2030. This implies an absolute increase in emissions of 149% by the target year. Targets can be conditional, unconditional or a combination of both. Conditional commitments are subject to international support while unconditional commitments rely on domestic resources alone. Nine countries in the region have disclosed detailed unconditional and conditional targets (Figure 3).
 
-![LAC Fig 3 - Unconditional and conditional absolute emissions in target year for select Latin America & Caribbean countries, relative to base year levels] (add link)
+![LAC Fig 3 - Unconditional and conditional absolute emissions in target year for select Latin America & Caribbean countries, relative to base year levels](/assets/images/content/2016/LAC_Fig. 3.jpg)
 
 Brazil has one of the world’s most ambitious targets. The country’s commitment to cut greenhouse gas emissions 37% below 2005 levels by 2025 can rise to 43% if the country receives international support. That would translate to 903MtCO2e reduction by 2025 compared to 2005. This figure is three times the amount emitted in 2012 by the 13 Central American and Caribbean countries combined.
 
@@ -76,21 +77,23 @@ Latin American and Caribbean countries will have to considerably increase the re
 
 By clean energy sector, wind continued to attract the bulk of investment in 2015 with $15.5bn (Figure 4). Activity in solar, which kicked off in 2012, continued to grow steadily in 2015 to reach $4.1bn. Small hydro and biomass have been traditional clean energy sectors in the region. While these technologies did not attract growing amounts of investment, they continued to be relevant given LAC’s hydro resources and agriculture production. 
 
-![LAC Fig 4 - Clean energy investment by source, 2010 - 2015] (add link)
+![LAC Fig 4 - Clean energy investment by source, 2010 - 2015](/assets/images/content/2016/LAC_Fig. 4.jpg)
 
 In terms of geography, Brazil, the largest power market in Latin America, continues to top regionally in terms of amount of investment, registering $10.7bn of new funds for renewables in 2015. However, geographic diversification continues as investors seek opportunities beyond the main consolidated markets. Last year, Mexico ($4.1bn) and Chile ($3.4bn) were the second and third largest renewable investment destinations (Figure 5). Much smaller countries have gone through waves of investment given the size of their economies and power grids. For instance, Honduras saw a surge of $675m invested last year and Jamaica received $205m for renewable energy projects, compared to only $3m in 2014. These countries will be unable to sustain such levels of investment on a yearly basis, but their successes in 2015 demonstrate how the clean energy map has expanded.  
 
-![LAC Fig 5 - Clean energy investment by country, 2010 - 2015] (add link)
+![LAC Fig 5 - Clean energy investment by country, 2010 - 2015](/assets/images/content/2016/LAC_Fig. 5.jpg)
+
 
 Other notable trends include the entry of new financiers into the region and some financial innovation. Historically, development banks and multilateral institutions have dominated financing of clean energy projects in the region. As the market has consolidated, however, international and local private banks have stepped up. As for innovation, one area of growth has been greater use of green bonds. Last year, a major offering in Mexico by development bank NAFIN accounted for most the clean energy investment in the country (Figure 6). Green bonds have been an interesting instrument for institutional investors to tap into the clean energy market.
 
-![LAC Fig 6 - Top five clean energy projects financed in Latin America & Caribbean, 2015] (add link)
+![LAC Fig 6 - Top five clean energy projects financed in Latin America & Caribbean, 2015](/assets/images/content/2016/LAC_Fig. 6.jpg)
+
 
 ### MARKETS IN TRANSFORMATION
 
 The first half of 2016 has been marked by significant policy progress in Argentina, Brazil, and Mexico. Colombia is one of the last markets in Latin America that has yet truly to open its power sector to clean energy. These are certainly four markets to watch for next year’s Climatescope.
 
-![LAC Fig 7 - Mexico’s power market structure, before and after reform] (add link)
+![LAC Fig 7 - Mexico’s power market structure, before and after reform](/assets/images/content/2016/LAC_Fig. 7.jpg)
 
 After a decade of nearly no activity, Argentina is angling to become a renewable investment destination. At the end of 2015, the government published a new renewable energy law (27.191). Several months later, the government issued accompanying regulations, marking a turning point for the clean energy industry in the country. The law raised the country’s national target to 8% of power consumption by 2017. This will be challenging to reach, since clean energy only represented 2% of 135TWh generated in 2015. The government is aiming to at least contract sufficient capacity to meet the goal the following year. 
 
@@ -112,7 +115,8 @@ Barbados serves as an example of how well-structured policy incentives can boost
 
 Lower prices for crude have prompted substantial cuts in retail electricity rates in the Caribbean and most of Central America but prices overall remain high (Figure 8). 
 
-![LAC Fig 8 - Average retail electricity price in Climatescope Caribbean countries ($/kWh), 2014 – 2015 ] (add link)
+![LAC Fig 8 - Average retail electricity price in Climatescope Caribbean countries ($/kWh), 2014 – 2015](/assets/images/content/2016/LAC_Fig. 8.jpg)
+
 
 Finally, of seven Central American countries, five saw reduced electricity rates in 2015 due to lower fuel prices. Only Panama saw an increase – mainly to cover costs of excessive thermal generation caused by the 2014 drought. Unlike most of its regional neighbours, fuel prices have a small impact in Costa Rica’s power tariffs rate, as the country was able to meet 99% of its power demand needs with renewable resources (including large hydro) in 2015.
 
