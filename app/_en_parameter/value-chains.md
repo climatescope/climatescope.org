@@ -19,11 +19,11 @@ Climatescope 2016 confirmed that expanding manufacturing chains in the survey’
 
 Progress on value chains since Climatescope 2013 has been the strongest for wind, solar and geothermal (Figure 1). Wind and solar have by far been the most dynamic technologies in terms of new investment (see Parameter II summary). The spread and coverage of the geothermal value chain is the lowest of all technologies. This is linked to the fact that resources are spread less evenly than for other renewables and that the upfront cost of developing the sector is higher.
 
-![PIII Fig 1 - Completeness of technology specific value chains for all Climatescope countries as a share of the maximum score for all countries combined, 2013-15 (%)] (add link)
+![PIII Fig 1 - Completeness of technology specific value chains for all Climatescope countries as a share of the maximum score for all countries combined, 2013-15 (%)](/assets/images/content/2016/PIII_Fig. 1.jpg)
 
 From a regional perspective, Asia scores highest across all renewable energy technology value chains (Figure 2). This is primarily due to two giants, China and India. Africa and Latin America and the Caribbean have similar scores overall, although Brazil is contributing to the latter’s strong performance on wind. The Middle-East region scores lowest overall. This is explained in part by a small sample of just three countries (Egypt, Lebanon and Jordan) and the moderate activity in the region to date. That said, Jordan drives the region’s performance on solar and all three countries score well on the presence of financial and services firms. 
 
-![PIII Fig 2 - Completeness of technology specific value chains for Climatescope countries by region as a share of the maximum score for all countries in the region, 2015 (%)] (add link)
+![PIII Fig 2 - Completeness of technology specific value chains for Climatescope countries by region as a share of the maximum score for all countries in the region, 2015 (%)](/assets/images/content/2016/PIII_Fig. 2.jpg)
 
 #### VALUE CHAIN SCORES AND INVESTMENT
 
@@ -37,6 +37,6 @@ Peru is an interesting outlier among this group. It has seen substantial clean e
 Uruguay, Honduras and Nicaragua are amongst those that have seen the highest level of investment in clean energy per unit of GDP without developing strong local value chains. This can be explained by the small sizes of their economies and their proximity to other, supplier nations. 
 Climatescope also allows us to explore the relationship between the frequency of investment and the development of a domestic value chain. Figure 3 shows the average value chain score of Climatescope countries divided into groups according to the frequency of clean energy investment over the 2006 and 2015 period. More frequent clean energy investment has a clear positive relationship with value chain scores. This is an important factor to take into account in setting government plans for clean energy deployment.    
 
-![PIII Fig 3 - Distribution of country value chain scores (left axis) by years with clean energy investment over 2006-2015 ] (add link)
+![PIII Fig 3 - Distribution of country value chain scores (left axis) by years with clean energy investment over 2006-2015 ](/assets/images/content/2016/PIII_Fig. 3.jpg)
 
 A country with ambition to develop its domestic clean energy manufacturing industry may consider designing its renewable energy targets and support mechanisms to ensure that activity is spread evenly or incrementally across years. In this respect, auction policies are a particularly powerful tool.  Manufacturers and suppliers that are given medium- to long-term certainty over annual auctioned capacity are more likely to develop a local supply base. India, South Africa or Brazil are good examples of markets where the frequency of auctions combined to positive local content rules have led to a strengthening of the domestic manufacturing and service base. 
