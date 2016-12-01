@@ -6,7 +6,7 @@ region: asia
 grid: 'off'
 published: true
 ---
-Nepal has all the potential hydro power resources it needs to do away with the supply shortages and load shedding that plague the country. A combination of slow bureaucracy, limited financial resources and specific setbacks mean the country only has 780MW total capacity. Two disastrous earthquakes and an unseemly trade blockage with India kept progress slow in 2015.
+Nepal has all the potential hydro-power resources it needs to do away with the supply shortages and load shedding that plague the country. A combination of slow bureaucracy, limited financial resources and specific setbacks mean the country only has 780MW total capacity. Two disastrous earthquakes and an unseemly trade blockage with India kept progress slow in 2015.
 
 Hydro is Nepal’s only game in town, providing all its grid electricity and around 30MW off-grid installations, the majority of which is run-of-river projects. 50MW of grid-connected fuel oil capacity goes unused because of the high cost of fuel. The only other technology seeing significant deployment is small-scale off-grid solar to aid energy access, as the government has a subsidy programme operated by the Alternative Energy Promotion Centre – and claims to have facilitated the sale of around 700,000 systems amounting to 15MW.
 The Nepal Electricity Authority (NEA) delivers around 700MW (including imports from India) against a demand of 1,350MW, resulting in ten hours of load-shedding per day for consumers – an improvement on recent years.
