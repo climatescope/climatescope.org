@@ -23,9 +23,9 @@ The lack of reliable power in rural areas has created an opportunity for install
 
 ###Score summary
 
-Uttar Pradesh scored 0.714 in Climatescope 2016, placing it 4<sup>th</sup> among the six Indian states surveyed. Its best performance was on Greenhouse Gas Management Activities Parameter IV. 
+Uttar Pradesh scored 0.708 in Climatescope 2016, placing it 4<sup>th</sup> among the six Indian states surveyed. Its best performance was on Greenhouse Gas Management Activities Parameter IV. 
 
-On Enabling Framework Parameter I, the state scored 0.740 and was ranked 4<sup>th</sup>. Its relatively weak performance reflected, among other things, the incomplete unbundling and privatisation of its power sector. 
+On Enabling Framework Parameter I, the state scored 0.727 and was ranked 4<sup>th</sup>. Its relatively weak performance reflected, among other things, the incomplete unbundling and privatisation of its power sector. 
 
 Uttar Pradesh scored zero on Clean Energy Investment and Climate Financing Parameter II, as did four other Indian states. It did not attract any investment in 2015.
 
