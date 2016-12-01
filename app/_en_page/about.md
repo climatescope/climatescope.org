@@ -90,7 +90,7 @@ Benjamin Kafri,
 Noemi Glickman,
 Arlinda Mezini,
 Eve Ottlakan,
-and the many energy sector stakeholders researchers have met in their Climatescope research trips.
+and the many energy sector stakeholders our analyst team has met during their research trips.
 
 ### CREDITS
 All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
