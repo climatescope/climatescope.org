@@ -7,7 +7,7 @@ grid: 'off'
 published: true
 ---
 
-Over the last ten years the economy of the Democratic Republic of Congo (DRC) has grown at an annual rate of 6.5%. Despite this, and its rich endowment of natural resources, the country displays low development indicators with a gross national income of only $440 per capita. The civil war from 1997 to 2003 destroyed much of the country’s infrastructure.
+Over the last ten years, the economy of the Democratic Republic of Congo (DRC) has grown at an annual rate of 6.5%. Despite this, and its rich endowment of natural resources, the country displays low development indicators with a gross national income of only $440 per capita. The civil war from 1997 to 2003 destroyed much of the country’s infrastructure.
 
 Hydro accounts for 99% of the country’s generation capacity. We estimate current hydro installed capacity at 2,583MW, of which 1,113MW (43%) is out of service as a result of underinvestment. A project to develop an additional 4,800MW at the Inga 3 site is at the development stage, with support from institutions such as the African Development Bank and the European Investment Bank. The country has about 100GW of hydropower potential, the highest in Africa.
 
