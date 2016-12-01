@@ -7,7 +7,7 @@ grid: 'on'
 published: true
 ---
 
-Guyana’s demand for electricity grew18% in the five years to the end of 2015. That growth, plus the volatility of fossil fuel prices, highlights the country’s need for a renewable energy policy framework. Its renewables policy is limited to tax incentives. 
+Guyana’s demand for electricity grew 18% in the five years to the end of 2015. That growth, plus the volatility of fossil fuel prices, highlights the country’s need for a renewable energy policy framework. Its renewables policy is limited to tax incentives. 
 
 Guyana’s electricity market is controlled by the state-owned Guyana Power and Light (GPL), a vertically integrated company responsible for electricity distribution, transmission and part of the country’s generation portfolio. The power market includes independent power producers, which must sell their electricity to GPL.
 
