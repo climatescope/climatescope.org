@@ -24,9 +24,9 @@ According to the federal government’s definition of rural electrification – 
 
 ###Score summary
 
-Andhra Pradesh scored 0.953 in Climatescope 2016, placing it 1<sup>st</sup> on the list of six Indian states surveyed in the current year. It ranked top on all parameters, except Greenhouse Gas Management Activities Parameter IV, in which it was placed last.
+Andhra Pradesh scored 0.937 in Climatescope 2016, placing it 1<sup>st</sup> on the list of six Indian states surveyed in the current year. It ranked top on all parameters, except Greenhouse Gas Management Activities Parameter IV, in which it was placed last.
  
-On Enabling Framework Parameter I, Andhra Pradesh scored 1.060. This reflects certain aspects of its power sector structure, including unbundled utilities and wholesale power market.
+On Enabling Framework Parameter I, Andhra Pradesh scored 1.021. This reflects certain aspects of its power sector structure, including unbundled utilities and wholesale power market.
 
 The state ran up a score of 0.301 on Clean Energy Investment and Climate Financing Parameter II, which was considerably higher than the others’ scores thanks to investment of $56m in 2015, and accumulated commitments of $236m since 2011. 
 
