@@ -18,7 +18,7 @@ It is worth noting that Climatescope methodology does not measure countries’ e
 
 Across all 58 Climatescope nations, the average Parameter IV score ticked up to 1.56 from 1.36 in 2015 and 1.34 in 2014. This increase is generally explained by the fact that the majority of countries submitted greenhouse gas (GHG) emission reduction targets as Intended National Determined Contributions (INDC) in advance of the COP21 meeting in Paris in December 2015. Assuming countries follow through on promises to improve their mitigation efforts and carbon policies, further score improvements may be expected in coming years.  The critical importance of climate change mitigation policies in Climatescope countries is highlighted by the fact that these nations accounted for just over half of total GHG emissions worldwide and China alone for just under a quarter in 2012, the latest year for which complete data exists (Figure 1). 
 
-![PIV Fig 1 - Climatescope countries GHG emissions and rest of the world, 2012](add link)
+![PIV Fig 1 - Climatescope countries GHG emissions and rest of the world, 2012](/assets/images/content/2016/PIV_Fig. 1.jpg)
 
 More importantly, Climatescope countries are where emissions are projected to grow most from their current levels as they encompass some of the fastest growing economies in the world.  India for example is expected to more than double its GHG emissions by 2030 under current policy projections. Hence the support of carbon reduction activities in Climatescope countries must be a cornerstone of global climate change mitigation efforts. 
 
@@ -30,11 +30,11 @@ In 2015, countries submitted their INDCs to the United Nations to communicate st
 *	<strong>Intensity targets</strong> relative to GHG emissions per unit of GDP. Four Climatescope countries submitted intensity targets.
 * <strong>Business as usual targets (BAU)</strong> relative to a future BAU scenario, which takes into consideration future economic and population growth. A total of 33 Climatescope countries submitted BAU targets.  
 
-![PIV Fig 2 - Emission reduction targets by type and potential use of international market mechanisms](add link)
+![PIV Fig 2 - Emission reduction targets by type and potential use of international market mechanisms](/assets/images/content/2016/PIV_Fig. 2.jpg)
 
 Botswana, Brazil, Costa Rica and Ethiopia are the only Climatescope countries that have committed to emit less in the future than they did in 2012 (Figure 3). This is explained by the fact that most emerging markets are banking on high emission increases in line with high economic growth projections. China and India are forecasting emissions growth but are committed to reduce the carbon intensity of their economies by 65% and 35% respectively by 2030. We estimate that this will represent a 123% increase in China’s emissions (or an addition of 13,120MtCO2e) and 162% increase in India’s emissions (+4,675MtCO2e) in 2030 compared to 2012. South Africa has set itself the goal of having emissions total 398-614MtCO2e for the period 2025 and 2030. 
 
-![PIV Fig 3 - Climatescope nation unconditional emission reduction targets trajectories relative to 2012 levels (2012 = 1), 2012-2030](add link)
+![PIV Fig 3 - Climatescope nation unconditional emission reduction targets trajectories relative to 2012 levels (2012 = 1), 2012-2030](/assets/images/content/2016/PIV_Fig. 3.jpg)
 
 #### THE POTENTIAL IMPACT OF INTERNATIONAL SUPPORT 
 
@@ -42,7 +42,7 @@ In addition to unconditional goals, 27 Climatescope countries submitted further 
 
 We estimate that with appropriate support, these countries together can cut their emissions by an additional 1,205MtCO2e compared to their unconditional targets (Figure 4). This is equivalent to around 2.6% of the world’s total emissions as of 2012. 
 
-![PIV Fig 4 - Emissions increases/reductions under Climatescope countries’ unconditional (Unc.) and conditional (Cond.) targets (MtCO2e, relative to base year)](add link)
+![PIV Fig 4 - Emissions increases/reductions under Climatescope countries’ unconditional (Unc.) and conditional (Cond.) targets (MtCO2e, relative to base year)](/assets/images/content/2016/PIV_Fig. 4.jpg)
 
 The five Asian Climatescope countries which have made emissions reduction pledges (excluding India and China) are also expected to have the most significant rise in emissions over the next 15 years according to the projections made in their INDCs.  Collectively, they have committed to cut this increase in half – if financial and technical support is provided. Indonesia accounts for the majority of these emissions. The country has committed to limit its increase to 245MtCO2e by 2030 against 2005 levels unconditionally and to a net decrease of 100MtCO2e by 2030 if overseas support is provided. 
 
@@ -56,7 +56,7 @@ Among Climatescope’s three Middle East and North African nations, Jordan and L
 
 Climatescope Parameter IV scores highlight strong relationships between a country’s potential to cut emissions, the GHG management activities already seen in-country (typically through offset projects or other actions), and its current policy structures. Charting emissions reduction target ambitions against Parameter IV scores and level of abatement required to meet those targets illuminates which countries have adequate policies in place and which do not (Figure 5). For example, Nigeria has a relatively ambitious target (left axis) and volume of emissions it has pledged to abate to reach it (bubble size) but it scores below the average for the parameter (bottom axis).  This suggests the country has work ahead on emissions reduction.
 
-![PIV Fig 5 - BAU emissions reduction targets compared to Parameter IV scores (abatement required reflected in bubble size, MtCO2e) ](add link)
+![PIV Fig 5 - BAU emissions reduction targets compared to Parameter IV scores (abatement required reflected in bubble size, MtCO2e) ](/assets/images/content/2016/PIV_Fig. 5.jpg)
 
 Most carbon reduction activities in Climatescope countries remain under-developed – with some notable exceptions. South Africa, Chile, China and Brazil have the top four Parameter IV scores and the largest potential to cut emissions. These countries have set non-BAU emissions reduction targets, which tend to be more ambitious and therefore require more robust carbon policy frameworks and successful GHG management activities. 
 
