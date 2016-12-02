@@ -45,7 +45,7 @@
         <tr ng-repeat="state in country.states | orderBy:'value':true">
           <td class="cell-rank">%% state.score[0].state_ranking | leadingZero:2 %%</td>
           <td class="cell-country">
-            <a href="%% countryTable.getStateUrl(state) %%" title="{{ t['Go to state / province page'][language] }}">%% state.name %%</a>
+            <a href="%% countryTable.getStateUrl(state) %%" title="{{ t['Go to state page'][language] }}">%% state.name %%</a>
           </td>
           <td>%% state.data[0].value | thousands:2 %%</td>
           <td class="cell-trendline"><div ng-init="countryTable.computeTrendlineData(state)" init-chart="trendline" class="chart-trendline" chart-data="state.trendline"><!-- Chart --></div></td>

@@ -6,8 +6,6 @@
 
   function getOptgroupLabel(country) {
     switch (country.iso) {
-      case 'cn':
-        return CS.t('Chinese provinces');
       case 'in':
         return CS.t('Indian states');
     }

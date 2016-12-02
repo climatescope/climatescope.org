@@ -36,6 +36,37 @@ arrange: full
 
 </ul>
 
+## Download by region
+
+<table class="table download-table">
+  <thead>
+    <tr>
+      <th class="th-region">Region</th>
+      <th class="th-download">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/region/africa" title="Go to page">Africa and Middle East</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/regions/climatescope-2016-africa-mena.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/region/asia" title="Go to page">Asia</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/regions/climatescope-2016-asia.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/region/lac" title="Go to page">Latin American and the Caribbean</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/regions/climatescope-2016-lac.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
+  </tbody>
+</table>
+
 ## Download by section
 
 <table class="table download-table">
@@ -66,14 +97,6 @@ arrange: full
       </tr>
   </tbody>
 </table>
-
-## Download by country
-
-{% include download_table.html type='country' %}
-
-## Download by state / province
-
-{% include download_table.html type='state' %}
 
 ## Previous editions
 

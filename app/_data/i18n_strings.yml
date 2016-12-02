@@ -24,8 +24,8 @@ africa:
   en: "Africa"
 All: 
   en: "All"
-Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope.:
-  en: "Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope."
+Analyze more than 450 policies intended to spur clean energy development in the nations and states surveyed by the Climatescope.:
+  en: "Analyze more than 450 policies intended to spur clean energy development in the nations and states surveyed by the Climatescope."
 asia:
   en: "Asia"
 Available: 
@@ -74,8 +74,8 @@ Contact us:
   en: "Contact us"
 Country: 
   en: "Country"
-Country / state / province: 
-  en: "Country / state / province"
+Country / state: 
+  en: "Country / state"
 Data (CSV):
   en: "Data (CSV)"
 Description: 
@@ -84,8 +84,8 @@ Download:
   en: "Download"
 Download by country:
   en: "Download by country"
-Download by state / province:
-  en: "Download by state / province"
+Download by state:
+  en: "Download by state"
 Download data: 
   en: "Download data"
 Download raw data in CSV format: 
@@ -138,10 +138,8 @@ Go to policy page:
   en: "Go to topic page"
 Go to province page: 
   en: "Go to province page"
-Go to state / province page: 
-  en: "Go to state / province page"
 Go to state page: 
-  en: "Go to state province page"
+  en: "Go to state page"
 Go to topic page: 
   en: "Go to topic page"
 Grid: 
@@ -188,8 +186,8 @@ More about the executive summary:
   en: "More about the executive summary"
 No results avaliable with current filters.: 
   en: "No results avaliable with current filters."
-Nothing to compare. Choose a Country / State / Province.: 
-  en: "Nothing to compare. Choose a Country / State / Province."
+Nothing to compare. Choose a Country / State.: 
+  en: "Nothing to compare. Choose a Country / State."
 Off-grid: 
   en: "Off-grid"
 On-grid: 
@@ -296,8 +294,8 @@ Sort by regional rank:
   en: "Sort by regional rank"
 Sort by score: 
   en: "Sort by score"
-Sort by state / province: 
-  en: "Sort by state / province"
+Sort by state: 
+  en: "Sort by state"
 Sort by status: 
   en: "Sort by status"
 Sort by topic rank: 
@@ -308,6 +306,8 @@ State / province:
   en: "State / province"
 State / province page: 
   en: "State / province page"
+State page: 
+  en: "State page"
 State Rank: 
   en: "State Rank"
 States:
@@ -320,8 +320,8 @@ Status:
   en: "Status"
 Summary:
   en: "Executive Summary"
-Climatescope tracks the conditions for clean energy investment on and off the grid, and provides a wealth of publicly-available information on 55 emerging markets in Africa, Asia and Latin America & the Caribbean:
-  en: "Climatescope tracks the conditions for clean energy investment on and off the grid, and provides a wealth of publicly-available information on 55 emerging markets in Africa, Asia and Latin America & the Caribbean."
+Climatescope tracks the conditions for clean energy investment on and off the grid, and provides a wealth of publicly-available information on 58 emerging markets in Africa, Asia and Latin America & the Caribbean:
+  en: "Climatescope tracks the conditions for clean energy investment on and off the grid, and provides a wealth of publicly-available information on 58 emerging markets in Africa, Asia and Latin America & the Caribbean."
 The clean energy country competitiveness index:
   en: "The clean energy country competitiveness index"
 The Multilateral Investment Fund:
@@ -330,8 +330,8 @@ The Multilateral Investment Fund logo:
   en: "The Multilateral Investment Fund logo"
 The global index: 
   en: "The global index"
-There is no fuel data for this Country / State / Province.:
-  en: "There is no fuel data for this Country / State / Province."
+There is no fuel data for this Country / State.:
+  en: "There is no fuel data for this Country / State."
 To enjoy a full experience: 
   en: "To enjoy a full experience"
 Top ten: 

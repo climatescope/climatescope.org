@@ -24,12 +24,12 @@ description: The Climatescope a unique country-by-country assessment, interactiv
 
           <div class="featured-section__body">
             <div class="prose-intro">
-              <p>Choose a Country, State or Province to compare results side by side.</p>
+              <p>Choose a Country or State to compare results side by side.</p>
             </div>
 
             <div ng-app="compareApp" ng-controller="compareControllerSelector as compareCtrlSelector" class="compare-controls">
               <div class="control">
-                <label class="control-title" for="country_with">{{ t['Country / state / province'][language] }}</label>
+                <label class="control-title" for="country_with">{{ t['Country / state'][language] }}</label>
                   <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrlSelector.compare[0]">
                   <option value="">{{ t['Choose location A'][language] }}</option>
 
@@ -41,7 +41,7 @@ description: The Climatescope a unique country-by-country assessment, interactiv
               </div>
 
               <div class="control">
-                <label class="control-title" for="country_with">{{ t['Country / state / province'][language] }}</label>
+                <label class="control-title" for="country_with">{{ t['Country / state'][language] }}</label>
                   <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrlSelector.compare[1]">
                   <option value="">{{ t['Choose location B'][language] }}</option>
 
