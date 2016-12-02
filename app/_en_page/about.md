@@ -69,10 +69,10 @@ Steph	Munro,
 Katya	Sharavzhamtsyna.
 
 #### Latin America and Caribbean
-Laura Castro,
-Raphael Barbosa Correa,
+Ana Verena Lima
 Helena Chung,
-Ana Verena Lima.
+Laura Castro,
+Raphael Barbosa Correa.
 
 ### LEAD MODELLING ANALYST
 Ulimmeh Ezekiel
