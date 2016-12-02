@@ -69,7 +69,7 @@ Steph	Munro,
 Katya	Sharavzhamtsyna.
 
 #### Latin America and Caribbean
-Ana Verena Lima
+Ana Verena Lima,
 Helena Chung,
 Laura Castro,
 Raphael Barbosa Correa.
