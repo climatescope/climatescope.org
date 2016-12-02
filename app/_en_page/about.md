@@ -26,7 +26,7 @@ Dario Traum
 
 ### PROJECT COORDINATORS
 Lilian Alves,
-Luiza Demorô,
+Luiza Demôro,
 Sara Giordano,
 Maggie Kuang,
 Itamar Orlandi,
