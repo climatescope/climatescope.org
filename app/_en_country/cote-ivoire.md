@@ -1,7 +1,7 @@
 ---
 layout: country
 id: ci
-title: Ivory Coast
+title: Côte d'Ivoire
 region: africa
 grid: 'off'
 published: true
