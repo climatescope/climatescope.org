@@ -21,7 +21,6 @@ conf:
 
   <div class="row--contained">
     <div class="col--main prose-copy" ng-controller="DescriptionAccordionController as descCtrl">
-      <h2>{{ t['Description'][language] }}</h2>
 
       <div class="description" data-hook="accordionfy" ng-init="descCtrl.initAccordion('[data-hook=\'accordionfy\']')">
         {{ content }}
