@@ -23,7 +23,7 @@ In 2014, a net metering programme was introduced. This enables retail electricit
 
 ###Score summary
 
-Chile scored 2.36 in Climatescope 2016, placing it second on the list of 58 countries, beneath only China. (In 2015, it managed 3<sup>rd</sup> with a score of 1.97.) The country was in the top 10 on all parameters, and achieved its highest ranking on Greenhouse Gas Management Activities Parameter IV.
+Chile scored 2.36 in Climatescope 2016, placing it 2<sup>nd</sup> on the list of 58 countries, beneath only China. (In 2015, it managed 3<sup>rd</sup> with a score of 1.97.) The country was in the top 10 on all parameters, and achieved its highest ranking on Greenhouse Gas Management Activities Parameter IV.
 
 On Enabling Framework Parameter I, Chile earned a higher score, but it slipped three places to 7<sup>th</sup>. It has a supportive power structure, for instance it is open to independent power producers, and importantly it added more than 3GW of clean energy capacity in 2015.
 
