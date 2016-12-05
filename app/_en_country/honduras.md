@@ -7,7 +7,7 @@ grid: 'on'
 published: true
 ---
 
-As a result of a generous feed-in tariff (FiT), most solar photovoltaic installations in Central America in 2015 occurred in Honduras. The FiT, along with a new electricity law, has created major changes to the renewable energy sector in the country.
+As a result of a generous feed-in tariff (FiT), most solar PV installations in Central America in 2015 occurred in Honduras. The FiT, along with a new electricity law, has created major changes to the renewable energy sector in the country.
 
 Honduras’s power sector is going through a period of transition. The power market has been controlled by state-owned utility Empresa Nacional de Energia Eléctrica (ENEE), which is responsible for all transmission and distribution. ENEE also generated 20% of the total 8.5TWh produced in 2015.
 
