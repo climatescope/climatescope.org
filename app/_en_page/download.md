@@ -36,6 +36,37 @@ arrange: full
 
 </ul>
 
+## Download by section
+
+<table class="table download-table">
+  <thead>
+    <tr>
+      <th class="th-section">Section</th>
+      <th class="th-download">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/summary" title="Go to page">Executive Summary</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-executive-summary-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/results" title="Go to page">Parameter Summary</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-parameter-summary-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" title="Go to page">Methodology</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-methodology-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
+  </tbody>
+</table>
+
 ## Download by region
 
 <table class="table download-table">
@@ -67,37 +98,6 @@ arrange: full
   </tbody>
 </table>
 
-## Download by section
-
-<table class="table download-table">
-  <thead>
-    <tr>
-      <th class="th-section">Section</th>
-      <th class="th-download">Download</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr>
-        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" title="Go to page">Methodology</a></td>
-        <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-methodology-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
-        </td>
-      </tr>
-      <tr>
-        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/summary" title="Go to page">Executive Summary</a></td>
-        <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-executive-summary-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
-        </td>
-      </tr>
-      <tr>
-        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/results" title="Go to page">Parameter Summary</a></td>
-        <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-parameter-summary-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
-        </td>
-      </tr>
-  </tbody>
-</table>
-
 ## Previous editions
 
 <ul class="well-list">
@@ -106,6 +106,9 @@ arrange: full
       <h2>Full Report</h2>
       <p>Download the full Climatescope report.</p>
       <ul class="download-list">
+        <li>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2015-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download"> 2015 (PDF) <span class="badge">6Mb</span></a>
+        </li>
         <li>
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2014-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download"> 2014 (PDF) <span class="badge">6Mb</span></a>
         </li>
