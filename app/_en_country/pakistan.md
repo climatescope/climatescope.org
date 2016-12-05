@@ -26,7 +26,7 @@ The Pakistan government was expected to announce the update to the Alternative a
 
 ###Score summary
 
-Pakistan scored 1.87 in Climatescope 2016, a slight increase on the previous survey. It is placed 12<sup>th</sup> on the list of countries overall, one place higher than in 2015. Its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
+Pakistan scored 1.87 in Climatescope 2016, a slight increase on the previous survey. It was placed 12<sup>th</sup> on the list of countries overall, one place higher than in 2015. Its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
 
 The country’s score on Parameter I increased and it gained three places in the order to rank 13<sup>th</sup>. This reflects a strong set of clean energy policies and extensive distributed clean energy regulatory framework, but also weaknesses in its power sector structure.
 
