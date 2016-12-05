@@ -22,7 +22,7 @@ This year’s Climatescope analysed for the first time three nations in the Midd
 
 #### AN IMPROVING POLICY LANDSCAPE
 
-Clean energy-friendly policies are becoming ever more common in Climatescope nations. The number of countries in the survey with no such policies on the books fell to just four in 2016<sup>1</sup> , down from six in 2015 and eight in 2014. The types and sophistication of policies countries are adopting have also evolved over the past three years (Figure 1).
+Clean energy-friendly policies are becoming ever more common in Climatescope nations. The number of countries in the survey with no such policies on the books fell to just four in 2016<sup>1</sup>, down from six in 2015 and eight in 2014. The types and sophistication of policies countries are adopting have also evolved over the past three years (Figure 1).
 
 ![PI Fig 1 - The evolving policy landscape of Climatescope countries, 2014-2016, % of countries surveyed](/assets/images/content/2016/PI_Fig. 1.jpg)
 
