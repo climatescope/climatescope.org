@@ -7,7 +7,7 @@ grid: 'on'
 published: true
 ---
 
-Barbados’ power generation fleet relies mainly on imported oil. Although Barbados produces some oil, domestic demand greatly exceeds local supply. This dependency impacts the Barbadian economy at the macroeconomic level and at the consumer level. In 2012, Barbados committed to increasing the share of renewables in its energy mix.
+Barbados’ power generation fleet relies mainly on imported oil. Although Barbados produces some oil, domestic demand greatly exceeds local supply. This dependency impacts the Barbadian economy at the macroeconomic level and at the consumer level. In 2012, Barbados committed to increasing the share of renewables in its energy mix to 29% by 2029.
 
 Barbados’ electricity market is managed by the Barbados Light & Power Company (BLPC), a private vertically-integrated utility. The Fair Trading Commission regulates electricity rates and service standards. The Energy and Telecommunications Division in the Prime Minister’s Office is responsible for developing and implementing energy policies.
 
@@ -18,7 +18,7 @@ In 2012, the Barbados Declaration on Achieving Sustainable Energy for All in Sma
 
 In February 2015, the Barbados Wind and Solar Integration Study was published by BLPC. It concluded that under current operating conditions, the existing grid can accommodate up to 20MW of distributed PV, 15MW of wind and 20MW of centralised PV. The study also suggests measures to maintain grid reliability and security.
 
-Net metering has been allowed in Barbados since 2010, and consumers with wind and/or solar self-generation facilities may supply energy to the national grid via the Renewable Energy Rider program. In February 2015, the programme limit was raised from 5MW to 20MW.
+Net metering has been allowed in Barbados since 2010, and consumers with wind and/or solar self-generation facilities may supply energy to the national grid via the Renewable Energy Rider programme. In February 2015, the programme limit was raised from 5MW to 20MW.
 As of May 2015, 8MW of distributed solar PV had been installed. The 20MW distributed PV limit is expected to be reached by the end of 2016.
 
 Since 2013, Barbados has granted tax exemptions and deductions for activities related to renewable energy and energy efficiency.
