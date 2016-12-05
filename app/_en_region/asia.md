@@ -60,13 +60,13 @@ Asian Climatescope nations are the most heterogeneous compared to those in other
 
 Most adopted more ambitious renewables targets over the course of the year. Others, such as Bangladesh and Indonesia, were unsatisfied with their first attempts at competitive tenders and reverted to using feed-in tariffs to support clean energy. Still others, including China, are moving in the opposite direction and plan to hold further auctions in coming months. 
 
-#### MORE AMBITIOUS TARGETS FOR RENEWABLES, EMISSIONS
+### MORE AMBITIOUS TARGETS FOR RENEWABLES, EMISSIONS
 
 Four of Climatescope’s Asia countries ratcheted their renewables targets up in 2015 or are now in the process of doing so. India adopted the extremely ambitious goal of installing 175GW of renewables by 2022, including 100GW of solar PV. The Vietnamese government introduced a more modest rise in its renewable generation target from 4.5% of generation to 6.5% by 2020, primarily to be achieved through solar PV. The target includes 850MW capacity by 2020 and 12GW by 2030. Bangladesh raised its renewable energy capacity target from 2GW to 3.1GW by 2020 with the aim of having renewables account for 10% of total capacity. Finally, Tajikistan’s government approved a new renewable energy programme for 2016-2020 which includes over 63MW of small-hydro projects and 4.3MW of solar to be built over the next five years. 
 
 Growing policy ambition around renewables was paired with new greenhouse gas (GHG) emissions reduction commitments made by all Climatescope Asia countries ahead of the UNFCC-organized climate talks in December 2015. China and India, which accounted for 30% of 2012 GHG emissions and are expected to see the highest absolute CO2 growth of all countries in coming years, ultimately played a critical role in the signing of the Paris accord. China pledged to cut the emissions intensity of its GDP by 60-65% against 2005 levels by 2030, and India by 33-35%.
 
-#### MIXED EXPERIENCES WITH CLEAN ENERGY AUCTIONS
+### MIXED EXPERIENCES WITH CLEAN ENERGY AUCTIONS
 
 In 2004, China became the first country in the world to use competitive tenders on a large scale as part of its renewable energy policy regime (well ahead of Brazil’s first renewables specific auction in 2007). China used the auction to contract a sample of onshore wind projects ranging from 200MW to 1GW to establish the feed-in tariff that would be applied to the wider industry. The tariffs set started at $67.2/MWh (CNY 469) in 2003, bottomed out at $66.9/MWh (CNY 448) in 2006, and rose again to $78.2/MWH (CNY 515) in 2007, the year of the last auction. 
 
@@ -80,7 +80,7 @@ India’s government is now looking to replicate the successes enjoyed in PV wit
 
 The transition towards market-based mechanisms and the competitive procurement of renewables is less clear in the smaller Asian nations examined by Climatescope. Indonesia introduced its first solar PV feed-in tariff only in 2016 and is targeting just 250MW of new capacity following a complicated experience with tenders in 2013. Participants challenged the results of that reverse auction on the basis that bidding requirements and local-content regulations were set unfairly. Bangladesh’s tender programme on the other hand generated insufficient interest with around 150MW of projects contracted to date against a 500MW target in the pipeline. 
 
-#### BRIGHTENING CONDITIONS FOR RENEWABLE PROJECT DEVELOPERS
+### BRIGHTENING CONDITIONS FOR RENEWABLE PROJECT DEVELOPERS
 
 Lack of readily available capital and the risks associated with shaky off-takers are two challenges that have consistently plagued clean energy developers in emerging markets. But 2015 saw financial institutions and governments taking steps to mitigate both.
 
@@ -92,7 +92,7 @@ Tajikistan has released a new energy sector strategy which calls for the restruc
 
 Finally, Indonesia has focused on cutting red tape that has slowed project development by moving all permitting processes to a “one stop shop” in an agency set up by the ministry.
 
-#### GROWING SUPPORT FOR DISTRIBUTED POWER GENERATION
+### GROWING SUPPORT FOR DISTRIBUTED POWER GENERATION
 
 India and Pakistan have joined Bangladesh and Nepal to become among the most supportive countries of distributed renewable energy with an eye toward boosting energy access.  Almost all major Indian states had adopted net-metering policies by the end of 2015 and the federal government reinstated a 30% investment subsidy for solar rooftop systems installed by residential and institutional consumers such as schools, colleges and hospitals. In September 2015, Pakistan approved net metering regulations to allow domestic, commercial and industrial owners of distributed solar and wind to sell surpluses generated back to the grid.
 
