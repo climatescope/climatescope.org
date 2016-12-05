@@ -21,7 +21,6 @@ conf:
 
   <div class="row--contained">
     <div class="col--main prose-copy" ng-controller="DescriptionAccordionController as descCtrl">
-      <h2>{{ t['Description'][language] }}</h2>
 
       <div class="description" data-hook="accordionfy" ng-init="descCtrl.initAccordion('[data-hook=\'accordionfy\']')">
         {{ content }}
@@ -29,15 +28,29 @@ conf:
 
     </div>
   
-    <div class="col--sec prose-copy" ng-controller="StatsController as statsCrtl" ng-cloak>
-      <h2>{{ t['Average scores'][language] }}</h2>
-      <dl class="stats-list">
-        <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %%</dt>
-        <dd ng-repeat-end>%% region.score[0].mean | round:2 %%</dd>
-      </dl>
-      <ul class="ctas-list">
-        <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/" title="{{ t['View the global rank'][language] }}">{{ t['Global rank'][language] }}</a></li>
-      </ul>
+    <div class="col--sec">
+      <section class="sec-section" ng-controller="StatsController as statsCrtl" ng-cloak>
+        <h2 class="sec-section__title">{{ t['Average scores'][language] }}</h2>
+        <dl class="stats-list">
+          <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %%</dt>
+          <dd ng-repeat-end>%% region.score[0].mean | round:2 %%</dd>
+        </dl>
+        <ul class="ctas-list">
+          <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/" title="{{ t['View the global rank'][language] }}">{{ t['Global rank'][language] }}</a></li>
+        </ul>
+      </section>
+      <nav class="sec-nav">
+        <h2 class="sec-nav__title">{{ t['Other regions'][language] }}</h2>
+        {% assign col_name = site.collections['en_region'].i18n[language] %}
+        {% assign sorted_regions = (site[col_name] | sort: 'weight') %}
+        <ul class="sec-menu">
+          {% for region in sorted_regions %}
+          {% unless page.title == region.title %}
+          <li><a href="{{ site.domain }}{{ site.path_prefix }}{{ region.url }}">{{ region.title }}</a></li>
+          {% endunless %}
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
   </div>
 
