@@ -1,11 +1,5 @@
 // HOMEPAGE
 
-.layout--home__body {
-  @media #{$xlarge-up} {
-    padding: ($global-spacing * 4) 0;
-  }
-}
-
 
 // Intro Block
 
@@ -46,6 +40,16 @@
 }
 
 .featured-section {
+  padding-bottom: $global-spacing * 1.25;
+  margin-bottom: $global-spacing;
+  box-shadow: 0 1px 0 0 rgba($primary-color, 0.08);
+
+  &:last-child {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
   > *:last-child {
     margin-bottom: 0;
   }
@@ -61,7 +65,7 @@
 }
 
 
-// Compare results
+// Compare results block
 
 .prose-intro {
   font-family: $brand-font-family;
@@ -74,12 +78,12 @@
   }
 }
 
-.compare-results {
+.compare-results-block {
   .control-title {
     @extend .visually-hidden;
   }
 
-  .control {
+  .control:not(:last-child) {
     margin-bottom: $global-spacing;
 
     select {
@@ -87,6 +91,9 @@
     }
   }
 }
+
+
+// Policies
 
 
 // Latest updates
@@ -133,7 +140,7 @@
 .recent-tweets {
   .featured-section__body {
     position: relative;
-    max-height: $global-spacing * 18;
+    max-height: $global-spacing * 20;
     overflow: hidden;
 
     &::after {

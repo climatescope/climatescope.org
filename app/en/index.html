@@ -19,12 +19,12 @@ description: The Climatescope a unique country-by-country assessment, interactiv
   <div class="layout--home__body">
     <div class="row--contained">
       <div class="featured-col">
-        <section class="featured-section compare-results">
+        <section class="featured-section compare-results-block">
           <h1 class="featured-section__title">Compare results</h1>
 
           <div class="featured-section__body">
             <div class="prose-intro">
-              <p>Choose a Country or State to compare results side by side.</p>
+              <p>Choose a Country or State to view results side by side.</p>
             </div>
 
             <div ng-app="compareApp" ng-controller="compareControllerSelector as compareCtrlSelector" class="compare-controls">
@@ -53,10 +53,20 @@ description: The Climatescope a unique country-by-country assessment, interactiv
               </div>
 
               <div class="control">
-                <a class="bttn bttn-success" ng-href="%% compareCtrlSelector.getCompareUrl() %%" title="{{ t['Compare with'][language] }}">{{ t['Compare'][language] }}</a>
+                <a class="bttn bttn-success go" ng-href="%% compareCtrlSelector.getCompareUrl() %%" title="{{ t['Compare with'][language] }}">{{ t['Compare'][language] }}</a>
               </div>
             </div>
           </div>
+        </section>
+
+        <section class="featured-section policies-block">
+          <h1 class="featured-section__title">Policies</h1>
+          <div class="featured-section__body">
+            <div class="prose-intro">
+              <p>Analyze more than 450 policies intended to spur clean energy development in the nations and states surveyed by the Climatescope.</p>
+            </div>
+          </div>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" title="{{ t['View all'][language] }}" class="bttn bttn-success go">{{ t['View all'][language] }}</a>
         </section>
       </div>
 
@@ -66,7 +76,7 @@ description: The Climatescope a unique country-by-country assessment, interactiv
           <div class="featured-section__body">
             <ol class="latest-updates-list">
               {% assign posts = (site.posts | where:"lang",language) %}
-              {% for post in posts limit:3 %}
+              {% for post in posts limit:4 %}
               {% unless post.hidden == true %}
               <li class="update-wrapper">
                 <article class="update">
