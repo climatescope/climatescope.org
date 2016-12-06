@@ -17,7 +17,7 @@ Climatescope 2016 tracked notable improvements in the enabling framework conditi
 Not only did the number of countries who saw progress rise, but the average level of improvement also jumped. The average per-country gain on Parameter 1 from 2015-2016 was twice as high as from 2014-2015 and, for that matter, from 2013-2014. 
 
 The two specific areas where countries demonstrated progress were on strengthened clean energy policy frameworks and power sector structures. Climatescope tracked 28 countries which enhanced laws or regulations to better support renewables. The survey also counted 15 countries that achieved progress in liberalizing power market, often through the unbundling of state-run utilities. 
-This year’s Climatescope analysed for the first time three nations in the Middle East and North Africa region – Jordan, Egypt, and Lebanon. The three achieved mixed results.  Jordan made it to the top 4 with a score of 2.31 and ranked11thoverall. For their part, Egypt and Lebanon scored 1.03 and 0.87, respectively reflecting challenging socio-economic and security conditions in those nations in recent years. 
+This year’s Climatescope analysed for the first time three nations in the Middle East and North Africa region – Jordan, Egypt, and Lebanon. The three achieved mixed results.  Jordan made it to the top 4 with a score of 2.31 and ranked 11th overall. For their part, Egypt and Lebanon scored 1.03 and 0.87, respectively reflecting challenging socio-economic and security conditions in those nations in recent years. 
 
 
 #### AN IMPROVING POLICY LANDSCAPE
