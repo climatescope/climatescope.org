@@ -7,11 +7,11 @@ grid: 'off'
 published: true
 ---
 Myanmar’s annual per-capita consumption of 156kWh places it in the bottom quintile of nations on that measure of energy poverty.
-About 32% of Myanmar’s homes, businesses and factories are connected to the national grid. Some of the off-grid population has intermittent access to electricity from diesel- or small hydro-based microgrids or pico-solar systems of 80-200 peak Watts. Still, millions of households rely on battery-powered lanterns, kerosene lamps and candles for light and solid fuel for cooking.
+About 32% of Myanmar’s homes, businesses and factories are connected to the national grid. Some of the off-grid population has intermittent access to electricity from diesel, small hydro-based microgrids or pico-solar systems of 80-200 peak watts. Still, millions of households rely on battery-powered lanterns, kerosene lamps and candles for light and solid fuel for cooking.
 
 A democratically elected government, which assumed power in April 2016 after 53 years of military rule, must decide how closely to embrace Myanmar’s 2015 energy master plan, drafted with assistance from the Asian Development Bank. That plan entails raising Myanmar’s generating capacity more than threefold by 2030, to 15,000MW. Almost a third of the new capacity would be either new or repowered hydro generation; the rest would be supplied by installing 3,000MW of combined-cycle natural gas turbines, raising coal-fired capacity 2,880MW from its present level of 120MW and building 300MW of grid-connected solar, wind and geothermal projects (at present there is none). The new government’s manifesto calls for a greater share of renewables in Myanmar’s energy portfolio.
 
-Leading gas turbine vendors are present in the country and pursuing that business, encouraged by the success of a 2015 tender that led to a contract for a 225MW combined cycle project in the central Mandalay region.
+Leading gas turbine vendors are present in the country and pursuing opportunities having been encouraged by the success of a 2015 tender that led to a contract for a 225MW combined cycle project in the central Mandalay region.
 The government has not published a national grid-extension timetable or rules for tariff setting and project permitting. On-grid retail rates are heavily subsidised at $0.03 per kWh for residential customers and $0.06 per kWh for commercial and industrial users. An expectation – however unrealistic – that those rates will be available on future grid extensions stymies off-grid development, even in regions that are unlikely to have grid access for years to come.
 
 Not surprisingly, announced solar and wind projects are moving forward fitfully.
