@@ -6,7 +6,7 @@ id: license
 ---
 
 ## Copyright
-The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment condition for clean energy and climate-related investment worldwide. It adheres to an [open source](http://choosealicense.com/licenses/gpl-3.0/) and open data policy, providing access to data that are free for everyone. The tool is intended for use by investors, companies, governments, NGOs, researchers, communities, and others seeking to assess the opportunities of investing in green energy.
+Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment condition for clean energy and climate-related investment worldwide. It adheres to an [open source](http://choosealicense.com/licenses/gpl-3.0/) and open data policy, providing access to data that are free for everyone. The tool is intended for use by investors, companies, governments, NGOs, researchers, communities, and others seeking to assess the opportunities of investing in green energy.
 
 ***
 
