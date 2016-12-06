@@ -98,7 +98,5 @@ Efforts to address this include state-run utilities agreeing to long-term contra
 
 Risks aside, such long-term commitments to address the currency question have clearly helped clean energy projects get financed and built.  Indeed, Climatescope countries where project owners can receive payments in dollars or have their contracts otherwise indexed or insured against currency changes have seen some of the strongest levels of investment to date.
 
-
 ____________________________________________________________
-
 <sup>1</sup> The countries with no active legislation are Sierra Leone, Suriname, Trinidad & Tobago and Venezuela.
