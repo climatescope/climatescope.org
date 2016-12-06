@@ -7,7 +7,7 @@ grid: 'off'
 published: true
 ---
 
-Malawi’s electricity generation relies predominantly on large hydro, which accounts for 97% of the total installed capacity. All the major power stations are located in the southern region along the Shire River, which runs from Lake Malawi. They make up 346 MW of the total 363MW capacity. One small hydro station, the 4.5MW Wovwe power station, operates in the north of the country. 
+Malawi’s electricity generation relies predominantly on large hydro, which accounts for 97% of the total installed capacity. All the major power stations are located in the southern region along the Shire River, which runs from Lake Malawi. They make up 346 MW of the total 363MW capacity (on grid). One small hydro station, the 4.5MW Wovwe power station, operates in the north of the country. 
 The remaining capacity is on two isolated diesel mini-grids in the Likoma and Chizumulu islands, newly installed 10MW diesel generators in Lilongwe and a PV plant that powers the Kamuzu International Airport of the capital Lilongwe. There are also two captive biomass plants owned by a sugarcane producer.
 
 The country’s electrification rate is 10%, with a rural share of only 1%, according to the Malawi Energy Regulatory Authority. Increased power demand and the instability of the electricity system have forced the government to incentivize reform of the power market and the build-out of new capacity.
