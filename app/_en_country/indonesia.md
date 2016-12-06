@@ -18,7 +18,7 @@ A new Geothermal Law was enacted in August 2014, removing the label of 'mining a
 In June 2013, the government introduced a solar auction programme, aimed at developing the country's solar power capacity through regular tenders. The programme was a failure, as only a negligible number of small projects made it through the bidding process and even fewer were actually built. A year after its introduction the programme was ruled unconstitutional by the Supreme Court, after the association of PV manufacturers sued the government for allowing foreign equipment to be used at all.
 Feed-in tariffs are in place for biomass, waste-to-energy and small hydro projects. In 2015, the small hydro and waste-to energy tariffs were converted into dollars to appease investor concerns about currency fluctuations. Plans were under way to also introduce tariffs for utility-scale PV and wind projects, but in October 2016, the parliament rejected the proposal and the government is now looking at fiscal incentives as an alternative.
 
-In theory, national utility PLN is obliged to pay IPPs the aforementioned tariffs. However, in practice PLN is unable to sign PPAs above the running cost of its internal production, which has hampered renewables build-out. The government has been is now pondering the spin-off of the renewables arm of the utility to separate the pay-out of subsidies from the generation and supply business. This could is likely to alleviate pressure on the cash-strapped company and eventually resolve the dispute. However progress on the proposed changes stalled following a cabinet reshuffle and it is unclear whether the plan will be implemented.
+In theory, national utility PLN is obliged to pay IPPs the aforementioned tariffs. However, in practice PLN is unable to sign PPAs above the running cost of its internal production, which has hampered renewables build-out. The government has been is now pondering the spin-off of the renewables arm of the utility to separate the pay-out of subsidies from the generation and supply business. This could alleviate pressure on the cash-strapped company and eventually resolve the dispute. However progress on the proposed changes stalled following a cabinet reshuffle and it is unclear whether the plan will be implemented.
 
 
 ###Score summary 
@@ -27,7 +27,7 @@ Indonesia scored 1.69 in Climatescope 2016, a slight improvement on its score th
 
 On Enabling Framework Parameter I, Indonesia scored 1.31 and gained seven places to rank 30<sup>th</sup>. The score was supported by a number of clean energy policies, including feed-in tariffs, but weakened by the lack of utility unbundling and absence of a wholesale power market.
 
-Indonesia’s score on Clean Energy Investment and Climate Financing Parameter II fell slightly, and it slid twenty-four places, a clear reflection of the the volume of new investment ($308m) represented just 7.4% of total investment in the sector since 2011.
+Indonesia’s score on Clean Energy Investment and Climate Financing Parameter II fell slightly, and it slid twenty-four places, a clear reflection of the volume of new investment ($308m) represented just 7.4% of total investment in the sector since 2011.
  
 On Parameter III, the country’s score increased and it climbed two places to take the 6<sup>th</sup> spot. Its solid performance reflected, among other things, the sector’s 26 value chains and 18 service providers. 
 
