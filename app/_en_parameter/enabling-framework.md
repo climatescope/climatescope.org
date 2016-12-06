@@ -97,5 +97,8 @@ The vast majority of Climatescope’s 58 nations rely on trading partners to sec
 Efforts to address this include state-run utilities agreeing to long-term contracts, sometimes explicitly denominated in dollars, or local governments essentially agreeing to backstop shortfalls caused by currency changes.  While risks associated with currency fluctuations can be shifted to different parties, they cannot be eliminated. For example, South Africa’s state-run utility Eskom has signed multiple 20-year power purchase agreements backstopped by the South African government. The arrangement has helped spur just under $16bn in clean energy investment representing around 9GW of contracts since the programme was launched in 2011. It has also added $13bn to the South African Treasury’s liabilities, the equivalent of around one third of South Africa’s foreign exchange reserves as of July 2016, according to Bloomberg. 
 
 Risks aside, such long-term commitments to address the currency question have clearly helped clean energy projects get financed and built.  Indeed, Climatescope countries where project owners can receive payments in dollars or have their contracts otherwise indexed or insured against currency changes have seen some of the strongest levels of investment to date.
+
+
 ____________________________________________________________
+
 <sup>1</sup> The countries with no active legislation are Sierra Leone, Suriname, Trinidad & Tobago and Venezuela.
