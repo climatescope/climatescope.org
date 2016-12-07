@@ -29,7 +29,7 @@ Installations in the rest of the Asian countries reviewed by Climatescope have b
 
 ![Asia Fig 2 - Annual capacity additions in Climatescope Asia nations, excluding China and India (GW), 2011-2015](/assets/images/content/2016/AS_Fig.2.jpg)
 
-[Vietnam](/en/country/vietnam) and [Tajikistan](/en/country/tajikistan) have doubled their small hydro capacity from 2010 to 2015 while [Sri Lanka](/en/country/sri lanka) and [Nepal](/en/country/nepal) increased theirs by around a third. Finally, [Nepal](/en/country/nepal) and  [Bangladesh](/en/country/bangladesh) have made important progress in off-grid clean energy, which is not accounted for in Figure 2, which shows only utility-scale activity.
+[Vietnam](/en/country/vietnam) and [Tajikistan](/en/country/tajikistan) have doubled their small hydro capacity from 2010 to 2015 while [Sri Lanka](/en/country/sri-lanka) and [Nepal](/en/country/nepal) increased theirs by around a third. Finally, [Nepal](/en/country/nepal) and  [Bangladesh](/en/country/bangladesh) have made important progress in off-grid clean energy, which is not accounted for in Figure 2, which shows only utility-scale activity.
 
 ### INVESTMENT IS SPREADING TO PAKISTAN
 
