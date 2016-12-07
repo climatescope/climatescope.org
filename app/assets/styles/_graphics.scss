@@ -256,6 +256,10 @@
   width: 100%;
   max-width: 8rem;
 
+  .chart-container {
+    cursor: help;
+  }
+
   .trendline {
     stroke: tint($primary-color, 32%);
     stroke-width: 1;
@@ -275,7 +279,9 @@
     }
   }
 
-  .trendline-end {
+  .trendline-point,
+  .trendline-point-end {
+    pointer-events: none;
     stroke: none;
     fill: tint($primary-color, 32%);
     // Parameter trendlines.
@@ -294,6 +300,9 @@
   }
 
   .focus-elements {
+    * {
+      pointer-events: none;
+    }
     .focus-line {
       stroke: $primary-color;
       stroke-opacity: 0.2;
