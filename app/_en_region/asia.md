@@ -24,7 +24,7 @@ Still, deployment has been unevenly split across the region. China, the world’
 
 ![Asia Fig 1 - Annual capacity additions in China and India (GW), 2011-2015](/assets/images/content/2016/AS_Fig.1.jpg)
 
-Installations in the rest of the Asian countries reviewed by Climatescope have been more irregular, although total new solar and wind have grown each year since 2011(Figure 2). Pakistan saw the biggest uptick in 2015 with 758MW of mostly wind and solar, approximately five times what got built the prior year. Further deployment is set to continue thanks to new support made available by the Pakistani government in 2015, some of which is support by China ([for more, click here for China country profile](/en/country/china)).
+Installations in the rest of the Asian countries reviewed by Climatescope have been more irregular, although total new solar and wind have grown each year since 2011(Figure 2). Pakistan saw the biggest uptick in 2015 with 758MW of mostly wind and solar, approximately five times what got built the prior year. Further deployment is set to continue thanks to new support made available by the Pakistani government in 2015, some of which is support by [China](/en/country/china).
 
 
 ![Asia Fig 2 - Annual capacity additions in Climatescope Asia nations, excluding China and India (GW), 2011-2015](/assets/images/content/2016/AS_Fig.2.jpg)
