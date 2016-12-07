@@ -14,7 +14,7 @@ Of the three regions surveyed in Climatescope, sub-Saharan Africa has by far the
 
 ![AM Fig 1 - Megawatts installed generation capacity per million inhabitants in Climatescope regions (MW), 2015](/assets/images/content/2016/AM_Fig. 1.jpg)
 
-Among sub-Saharan nations, South Africa is the outlier. The country has 845MW of installed capacity for every million inhabitants. It is also home to more than half of the regional Climatescope countries’ total capacity and renewable capacity, with 43.7GW and 2.6GW, respectively.
+Among sub-Saharan nations, [South Africa](/en/country/south-africa) is the outlier. The country has 845MW of installed capacity for every million inhabitants. It is also home to more than half of the regional Climatescope countries’ total capacity and renewable capacity, with 43.7GW and 2.6GW, respectively.
 Annual capacity additions in sub-Saharan Africa are quite uneven due to the relatively small size of the region’s power systems. In fact, the commissioning of a single project or two can have major impact on the region’s overall figures for a year (Figure 2 and Figure 3). This explains what would otherwise appear to be a significant slowdown in solar projects commissioning in South Africa, which dropped from 909MW in 2014, a record year for new solar thermal plant connections, to 101MW in 2015. 
 Ethiopia, which commissioned 150MW of onshore wind in 2015, nearly doubling its cumulative wind capacity since 2010, is second only to South Africa in terms of new installations. Kenya’s geothermal sector consolidated its standing as a global leader, adding 58MW and raising total installed capacity for the technology to 740MW at the end of 2015. 
 
