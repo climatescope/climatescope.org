@@ -9,7 +9,7 @@ weight: "3"
 
 This parameter employs three indicators to measure local value chain resources available to facilitate clean energy deployment. These seek to take into account the availability of local manufacturers to provide the equipment needed to construct technology-specific projects (Figure 1 and Figure 2), financial firms to provide capital, and service firms to provide assistance such as legal support. 
 
-For the nations with the least developed power systems in the survey categorised as “off-grid”  (see [methodology](/en/methodology/) for more details), this parameter includes two additional off-grid indicators , which take into account the availability of technical assistance and service providers in value chains specifically related to distributed clean energy. In all, Climatescope sought to account for no less than 63 value chain segments for the on-grid nations and 78 for those in the off-grid category. Parameter III contributed 15% toward each nation’s overall score.
+For the nations with the least developed power systems in the survey categorised as “off-grid”  ([see methodology](/en/methodology/) for more details]), this parameter includes two additional off-grid indicators , which take into account the availability of technical assistance and service providers in value chains specifically related to distributed clean energy. In all, Climatescope sought to account for no less than 63 value chain segments for the on-grid nations and 78 for those in the off-grid category. Parameter III contributed 15% toward each nation’s overall score.
 
 It is important to note that Parameter III measures the presence and absence of specific value chain segments. It does not take into account the volume of actual output occurring locally.
 
