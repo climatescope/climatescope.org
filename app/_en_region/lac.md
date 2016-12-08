@@ -81,7 +81,7 @@ Wind continued to attract the bulk of investment in 2015 with $15.5bn (Figure 4)
 
 In terms of geography, [Brazil](/en/country/brazil), the largest power market in Latin America, continues to lead regionally in terms of amount of investment, registering $10.7bn of new funds for renewables in 2015. However, geographic diversification continues.
 
-Last year, [Mexico](/en/country/mexico) ($4.1bn) and [Chile](/en/country/brazil) ($3.4bn) were the second and third largest renewable investment destinations (Figure 5). Much smaller countries have gone through waves of investment given the size of their economies and power grids. For instance, Honduras saw a surge of $675m invested last year and Jamaica received $205m for renewable energy projects, compared to only $3m in 2014. These countries will be unable to sustain such levels of investment on a yearly basis, but their successes in 2015 demonstrate how the clean energy map has expanded.  
+Last year, [Mexico](/en/country/mexico) ($4.1bn) and [Chile](/en/country/brazil) ($3.4bn) were the 2<sup>nd</sup> and 3<sup>rd</sup> largest renewable investment destinations (Figure 5). Much smaller countries have gone through waves of investment given the size of their economies and power grids. For instance, Honduras saw a surge of $675m invested last year and Jamaica received $205m for renewable energy projects, compared to only $3m in 2014. These countries will be unable to sustain such levels of investment on a yearly basis, but their successes in 2015 demonstrate how the clean energy map has expanded.  
 
 ![LAC Fig 5 - Clean energy investment by country, 2010 - 2015](/assets/images/content/2016/LAC_Fig. 5.jpg)
 
