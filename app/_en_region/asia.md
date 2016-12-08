@@ -8,7 +8,7 @@ weight: "2"
 
 ## ASIA
 
-Asia, led by [China](/en/country/china) and [India](/en/country/india), installed far more clean energy capacity in 2015 than the other two regions surveyed by Climatescope. [China](/en/country/china) is of course at the heart of this and it posted another record year despite being in the midst of far-reaching power sector reforms. Taking a cue from Germany and others, [China](/en/country/china) now plans to transition away from fixed tariff-based mechanisms toward market-based incentives for renewables. This follows the trend seen in [India](/en/country/india)India where auctions have allowed the procurement of new solar PV capacity at record-low prices. 
+Asia, led by [China](/en/country/china) and [India](/en/country/india), installed far more clean energy capacity in 2015 than the other two regions surveyed by Climatescope. [China](/en/country/china) is of course at the heart of this and it posted another record year despite being in the midst of far-reaching power sector reforms. Taking a cue from Germany and others, [China](/en/country/china) now plans to transition away from fixed tariff-based mechanisms toward market-based incentives for renewables. This follows the trend seen in [India](/en/country/india) where auctions have allowed the procurement of new solar PV capacity at record-low prices. 
 
 The growth of renewables has, however, not been free of challenges in [China](/en/country/china) and [India](/en/country/india). Both are grappling with integrating this new, clean, but variable resource. Each are also confronting costs associated with subsidy programmes.
 
@@ -45,7 +45,7 @@ Away from [India](/en/country/india) and [China](/en/country/china), other Asian
 
 [Pakistan](/en/country/pakistan) and [Vietnam](/en/country/vietnam) continued to raise their profiles with investors in 2015. Capital deployed doubled from $360m to $719m in [Pakistan](/en/country/pakistan). In [Vietnam](/en/country/vietnam), investment spiked to $280m in 2015 from $91m the prior year. 
 
-Indonesia, which had one of the highest levels of investment across all Climatescope countries in 2014, with $1.8bn, slipped to $308m in 2015. [Indonesia's](/en/country/indonesia) headline figure was substantially boosted in 2014 by the $1.6bn Chevron Gunung Salak 330MW geothermal plant. 
+[Indonesia's](/en/country/indonesia), which had one of the highest levels of investment across all Climatescope countries in 2014, with $1.8bn, slipped to $308m in 2015. [Indonesia's](/en/country/indonesia) headline figure was substantially boosted in 2014 by the $1.6bn Chevron Gunung Salak 330MW geothermal plant. 
 
 ![Asia Fig 5 - Clean energy investment in Climatescope Asia countries (excluding India and China, $bn), 2010-2015](/assets/images/content/2016/AS_Fig.5.jpg)
 
