@@ -21,12 +21,14 @@ $(function() {
       // Prevent children from triggering this.
       if(e.target == e.currentTarget) {
         $(this).removeClass('revealed');
+        $(this).trigger('dismiss');
       }
     });
 
     $('[data-modal-dismiss]').click(function(e) {
         e.preventDefault();
         $(this).closest('.modal').removeClass('revealed');
+        $(this).closest('.modal').trigger('dismiss');
     });
 
   });
