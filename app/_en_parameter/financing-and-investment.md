@@ -16,7 +16,7 @@ Investment volumes across Climatescope countries overall continued to climb in 2
 
 #### CLIMATESCOPE COUNTRIES TOP ALL OTHERS FOR THE FIRST TIME
 
-Climatescope countries for the first time attracted more new clean energy investment than nations member of the Organisation for Economic Co-operation and Development in 2015 (Figure 1). Investment in Climatescope countries grew 16% from 2014 to 2015 to reach $154bn, somewhat below the 2013-2014 jump of 24%. In addition, the $147bn invested into new clean energy generation in Climatescope nations in 2015 topped the $126bn global investment in thermal power generation in 2015 [recorded by the International Energy Agency.] (http://www.slideshare.net/MarcellusDN/iea-2016-world-energy-investment-report-powerpoint)    
+Climatescope countries for the first time attracted more new clean energy investment than nations member of the Organisation for Economic Co-operation and Development in 2015 (Figure 1). Investment in Climatescope countries grew 16% from 2014 to 2015 to reach $154bn, somewhat below the 2013-2014 jump of 24%. In addition, the $147bn invested into new clean energy generation in Climatescope nations in 2015 topped the $126bn global investment in thermal power generation in 2015 recorded by the International Energy Agency<sup>1</sup>.    
 
 ![PII Fig 1 - Annual clean energy investment in Climatescope and OECD countries ($bn), 2011-2015](/assets/images/content/2016/PII_Fig. 1.jpg)
 
@@ -24,7 +24,7 @@ Solar and wind accounted for 46.5% and 47.5% of this, respectively, and other re
 
 #### INVESTMENT PERFORMANCES VARY GREATLY
 
-Climatescope countries collectively had another exceptional year in 2015. Still, there continues to be substantial variation between the countries in which investors are continuously active and the rest (Figure 2). Ten countries<sup>1</sup> in Climatescope saw clean energy investment exceed $4bn between 2010 and 2015. At the other end of the spectrum, 10 countries<sup>2</sup> have failed to attract any clean energy investment in projects larger than 1MW at all since 2010 and most countries have seen less than $600m<sup>3</sup> of investment over the 2010-2015 period. 
+Climatescope countries collectively had another exceptional year in 2015. Still, there continues to be substantial variation between the countries in which investors are continuously active and the rest (Figure 2). Ten countries<sup>2</sup> in Climatescope saw clean energy investment exceed $4bn between 2010 and 2015. At the other end of the spectrum, 10 countries<sup>3</sup> have failed to attract any clean energy investment in projects larger than 1MW at all since 2010 and most countries have seen less than $600m<sup>4</sup> of investment over the 2010-2015 period. 
 
 ![PII Fig 2 - Distribution of countries by clean energy investment, 2010-2015 (number of countries)](/assets/images/content/2016/PII_Fig. 2.jpg)
 
@@ -52,7 +52,7 @@ Project developers have provided around one third of all the capital across Clim
 
 This appears to be changing. Clean energy finance from utilities grew at an average rate of 21% per year from 2010-2015 compared to 9% for finance from project developers globally. Italy’s Enel, Brazil’s Electrosul Centrais Electricas, Japan’s Kyushu Electric Power and Spain’s Acciona are among those that have financed over $1.5bn of renewable energy assets in Climatescope countries between 2010 and 2015.
 
-In [Sub-Saharan Africa](/en/region/africa), commercial banks have been heavily involved in [South Africa](/en/country/south-africa) where they have played an active role in financing projects executed under the government’s Renewable Energy Independent Power Producer Procurement programme. [Sub-Saharan Africa](/en/region/africa) is also the region where development finance<sup>4</sup> has been prominent (Figure 4). 
+In [Sub-Saharan Africa](/en/region/africa), commercial banks have been heavily involved in [South Africa](/en/country/south-africa) where they have played an active role in financing projects executed under the government’s Renewable Energy Independent Power Producer Procurement programme. [Sub-Saharan Africa](/en/region/africa) is also the region where development finance<sup>5</sup> has been prominent (Figure 4). 
 
 In the [Middle East](/en/region/africa), development banks have played a greater role as the risks are clearly viewed as too high for many commercial institutions. In [Egypt](/en/country/egyppt), for instance, the 200MW El Zayt wind farm was financed in 2010 by European sovereign and development institutions, Japan’s International Cooperation Agency and the government of Egypt itself. Development finance has been leveraged effectively in Jordan where five of seven clean energy projects to date have involved such institutions, project developers and commercial banks. In a promising sign, the other two projects there were fully financed by their developers in 2015 and 2014, respectively.
 
@@ -77,7 +77,8 @@ On the other hand, as discussed above, capital is coming from more heterogeneous
 The largest investments also tend to bring together the financing and expertise of the greatest number of partner organizations alongside development banks. The Karoshoek, Xina and Kaxu concentrated solar power plants in [South Africa](/en/country/south-africa), the Marena onshore wind project in [Mexico](/en/country/mexico), and the Lake Turkana onshore wind project in [Kenya](/en/country/kenya) are each worth in excess of $800m which involved development banks and six to seven more partner organisations.  
 
 ___________________________________
-<sup>1</sup> China, Brazil, India, South Africa, Mexico, Chile, Indonesia, Uruguay, Peru and Kenya.
-<sup>2</sup> Bahamas, Barbados, Belize, Democratic Republic of Congo, Guyana, Haiti, Lebanon, Liberia, Tajikistan and Trinidad and Tobago.
-<sup>3</sup> $600m is the average capex of a 380MW solar plant and a 324MW onshore wind plant in the United States. 
-<sup>4</sup> In Figure 4 development finance is included in the development bank category.
+<sup>1</sup> International Energy Agency, World Energy Investment Report, 2016.
+<sup>2</sup> China, Brazil, India, South Africa, Mexico, Chile, Indonesia, Uruguay, Peru and Kenya.
+<sup>3</sup> Bahamas, Barbados, Belize, Democratic Republic of Congo, Guyana, Haiti, Lebanon, Liberia, Tajikistan and Trinidad and Tobago.
+<sup>4</sup> $600m is the average capex of a 380MW solar plant and a 324MW onshore wind plant in the United States. 
+<sup>5</sup> In Figure 4 development finance is included in the development bank category.
