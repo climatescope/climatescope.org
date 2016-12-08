@@ -45,7 +45,7 @@ Clean energy policies are becoming more widely adopted across Sub-Saharan Africa
 
 ![AM Fig 7 - Select renewable energy targets and 2015 share of renewables in Sub-Saharan Africa](/assets/images/content/2016/AM_Fig. 7.jpg)
 
-Some targets have also become more sophisticated. For example, the government of [Rwanda](/en/country/rwanda) has been working on an update of its electrification plan that includes a new breakdown of electrification targets by off-grid systems and mini-grids. As before, [Rwanda](/en/country/rwanda)aims to reach an installed capacity of 563MW, up from just over 170MW, and 70% of electrification, both by 2018. 
+Some targets have also become more sophisticated. For example, the government of [Rwanda](/en/country/rwanda) has been working on an update of its electrification plan that includes a new breakdown of electrification targets by off-grid systems and mini-grids. As before, [Rwanda](/en/country/rwanda) aims to reach an installed capacity of 563MW, up from just over 170MW, and 70% of electrification, both by 2018. 
 
 While the overall trend appears positive, there are countries that have not reviewed the ambition of their targets, which remain relatively low. [Tanzania](/en/country/tanzania) only plans to install 100MW of solar, 200MW of geothermal and 200MW of onshore wind by 2025 against a complete power-generating matrix of 10.7GW. 
 
