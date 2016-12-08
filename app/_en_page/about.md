@@ -34,11 +34,12 @@ Ashish Sethia,
 Nico Tyabji.
 
 ### EDITORS
+Angus McCrone,
+Ben Vickers,
 Rohan Boyle,
 Bryony Collins,
-Vandana Gombar,
-Angus McCrone,
-Ben Vickers.
+Vandana Gombar.
+
 
 ### RESEARCHERS & DATA GATHERING
 
@@ -90,6 +91,8 @@ Benjamin Kafri,
 Noemi Glickman,
 Arlinda Mezini,
 Eve Ottlakan,
+Max Duluc,
+Flow Bohl,
 and the many energy sector stakeholders our analyst team has met during research trips.
 
 ### CREDITS
