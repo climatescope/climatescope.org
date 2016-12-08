@@ -95,7 +95,7 @@ Finally, [Indonesia](/en/country/indonesia) has focused on cutting red tape that
 
 ### GROWING SUPPORT FOR DISTRIBUTED POWER GENERATION
 
-[India](/en/country/india) and [Pakistan](/en/country/pakistan) have joined [Bangladesh](/en/country/bangladesh) and [Nepal](/en/country/nepal) in supporting distributed renewable energy with an eye toward boosting energy access.  Almost all major Indian states had adopted net-metering policies by the end of 2015, and the federal government reinstated a 30% investment subsidy for solar rooftop systems installed by residential and institutional consumers such as schools, colleges and hospitals. In September 2015, [Pakistan](/en/country/pakistan) approved net metering regulations to allow domestic, commercial and industrial owners of distributed solar and wind to sell surpluses generated back to the grid.
+[India](/en/country/india) and [Pakistan](/en/country/pakistan) have joined [Bangladesh](/en/country/bangladesh) and [Nepal](/en/country/nepal) in supporting distributed renewable energy with an eye toward boosting energy access.  Almost all major Indian states had adopted net-metering [policies](/en/policies/#/) by the end of 2015, and the federal government reinstated a 30% investment subsidy for solar rooftop systems installed by residential and institutional consumers such as schools, colleges and hospitals. In September 2015, [Pakistan](/en/country/pakistan) approved [net metering](/en/policies/#/policy/4079) regulations to allow domestic, commercial and industrial owners of distributed solar and wind to sell surpluses generated back to the grid.
 
 ### GRID CURTAILMENT, SUBSIDY PAYMENT DELAYS, AND OTHER CONTINUING CHALLENGES 
 
