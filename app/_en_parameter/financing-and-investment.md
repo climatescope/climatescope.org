@@ -32,7 +32,7 @@ Somewhat understandably, the countries with the smallest economies were also fai
 
 Looking at investment as a share of the economy size paints a different picture (Figure 3) which is the reason why all quantitative indicators in Climatescope are levelized against a country’s GDP and population.  
 
-![PII Fig 3 - Distribution of countries by ratio of clean energy investment as share of 2015 GDP, 2010-2015 (number of countries)] (/assets/images/content/2016/PII_Fig. 3.jpg)
+![PII Fig 3 - Distribution of countries by ratio of clean energy investment as share of 2015 GDP, 2010-2015 (number of countries)](/assets/images/content/2016/PII_Fig. 3.jpg)
 
 When investment is measured against a country’s GDP, [Uruguay](/en/country/uruguay) (8.76% of 2015 GDP), [South Africa](/en/country/south-africa) (5.14%), [Chile](/en/country/chile) (4.69%), [Brazil](/en/country/brazil) (4.23%) and [China](/en/country/china) (3.81%) are the only countries that remain in the top 10. [Nicaragua](/en/country/nicaragua) (10.47%), [Honduras](/en/country/honduras) (10.06%), and [Kenya](/en/country/kenya) (6.68%) are the other countries with investment in excess of $1bn between 2010 and 2015, completing this ranking. [Sierra Leone](/en/country/sierra-leone) (9.15%) and [Zimbabwe](/en/country/zimbabwe) (3.69%) are also in the top 10. However, this is caused by the presence of large one-off bioenergy deals in these small economies. At the other end of the scale, countries such as [Nigeria](/en/country/nigeria), [Indonesia](/en/country/indonesia), [Colombia](/en/country/colombia), [Argentina](/en/country/argentina) and [Ecuador](/en/country/ecuador) have seen underinvestment in relation to the size of their economies. 
 
