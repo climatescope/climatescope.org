@@ -41,7 +41,7 @@ Activity in [Ethiopia's](/en/country/ethiopia) geothermal sector also continued 
 
 ### THE ROLE OF RENEWABLES IN GOVERNMENT OBJECTIVES IS GROWING 
 
-Clean energy policies are becoming more widely adopted across Sub-Saharan Africa. Fourteen of 19 Climatescope countries from the region have set domestic renewable energy build targets. Specifically, the negotiations that culminated in governments signing the Paris climate pact in late 2015 have prompted African nations to commit to clean energy targets or to update their existing commitments [see Parameter I summary](/en/parameter/anabling-framework). The overall target levels are ambitious in a number of markets, especially when considering the current contribution of renewables to the power mix (Figure 7). 
+Clean energy policies are becoming more widely adopted across Sub-Saharan Africa. Fourteen of 19 Climatescope countries from the region have set domestic renewable energy build targets. Specifically, the negotiations that culminated in governments signing the Paris climate pact in late 2015 have prompted African nations to commit to clean energy targets or to update their existing commitments ([see Parameter I summary](/en/parameter/anabling-framework)). The overall target levels are ambitious in a number of markets, especially when considering the current contribution of renewables to the power mix (Figure 7). 
 
 ![AM Fig 7 - Select renewable energy targets and 2015 share of renewables in Sub-Saharan Africa](/assets/images/content/2016/AM_Fig. 7.jpg)
 
