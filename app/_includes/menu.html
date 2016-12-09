@@ -57,7 +57,7 @@
         <li>
           {% assign col_name = site.collections['en_page'].i18n[language] %}
           {% assign pg = site[col_name] | where:"id","about" | first %}
-          <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['More about the Climatescope'][language] }}">{{ t['About Climatescope'][language] }}</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['More about Climatescope'][language] }}">{{ t['About Climatescope'][language] }}</a>
         </li>
         <li>
           {% assign col_name = site.collections['en_page'].i18n[language] %}
