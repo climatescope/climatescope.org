@@ -6,7 +6,7 @@ title: blog post
 description: FINANCING INDIA'S CLEAN ENERGY TRANSITION
 ---
 
-##FINANCING INDIA'S CLEAN ENERGY TRANSITION
+##<b>FINANCING INDIA'S CLEAN ENERGY TRANSITION</b>
 
 The Paris UN Climate Agreement in December 2015 refocused attention on the need to mobilize substantial private capital flows into climate solutions at the pace and scale required to combat climate change with the required urgency.
 
