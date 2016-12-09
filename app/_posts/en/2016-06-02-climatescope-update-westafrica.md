@@ -22,7 +22,8 @@ New energy investment figures are also encouraging. Between 2009 and 2014, the s
 
 Countries like Senegal, with vast swaths of rural land, are focusing on accelerating energy access through off-grid technologies. These projects could reach 65% of West Africa’s rural population. Even though grid-connected projects are imperative, particularly for the growth of industry, off-grid technologies can be deployed in sparsely populated areas without the large-scale, complex and costly infrastructure needed to extend the national grid. Sierra Leone, Liberia and Ivory Coast are in the process of setting up rural electrification agencies as part of their national action plans. Most countries in the region have signed up to initiatives run by development finance institutions that aim to scale-up the off-grid market through concessionary loans and grants to power developers. 
 
-Sola Renner
+**Sola Renner**
+
 Bloomberg New Energy Finance
 
 
