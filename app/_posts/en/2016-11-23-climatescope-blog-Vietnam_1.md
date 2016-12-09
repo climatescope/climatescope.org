@@ -5,7 +5,7 @@ title: Test blog post
 
 description: Test blog post description
 ---
-## THE NEXT FIFTEEN YEARS THAT WILL (RE)DEFINE VIETNAM’S ENERGY INDUSTRY
+## <b>THE NEXT FIFTEEN YEARS THAT WILL (RE)DEFINE VIETNAM’S ENERGY INDUSTRY</b>
 
 Vietnam has made positive commitments to renewable energy. Its most recent long-term energy plan outlines the Government’s vision for a more diversified energy mix, including 27GW of new renewables by 2030. 
 
