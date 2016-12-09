@@ -1,29 +1,30 @@
 ---
 layout: base
 permalink: en/results/index.html
-title : Global Rank
+title: Results
 id: results
 lang: en
-
 include_map: true
-
 description: The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
 ---
 {% assign language = page.lang %}
 {% assign t = site.data.i18n_strings %}
-<section class="layout--home">
-  <header class="layout--home__header sticky" id="parameters-controls">
+<section class="layout--results">
+  <header class="layout--results__header sticky" id="parameters-controls">
     <div class="row--contained">
-      <div class="layout--home__heading">
-        <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
+      <div class="layout--results__heading">
+        <h1 class="layout--results__title">{{ page.title }}</h1>
       </div>
-      <div class="layout--home__controls">
+      <div class="layout--results__tools" init-dropdown>
+        {% include actions_menu.html download_exc=true %}
+      </div>
+      <div class="layout--results__controls">
         {% include weight_changers.html %}
       </div>
     </div>
   </header>
 
-  <div class="layout--home__body">
+  <div class="layout--results__body">
 
     <div id="index-viz" class="row--full intro"><!-- Insert map here. --></div>
 

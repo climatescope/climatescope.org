@@ -1,0 +1,1 @@
+{"data": [{"values": [{"global_average": null, "value": 3.0, "year": 2015}], "name": "Power outages - frequency", "id": "q10"}], "meta": {"label-y": "", "label-x": ["Low", "Regular", "High", "Very high"], "title": "Power sector structure"}, "iso": "in-or", "name": "in-or"}

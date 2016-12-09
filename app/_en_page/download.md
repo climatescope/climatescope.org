@@ -47,12 +47,6 @@ arrange: full
   </thead>
   <tbody>
       <tr>
-        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" title="Go to page">Methodology</a></td>
-        <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-methodology-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
-        </td>
-      </tr>
-      <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/summary" title="Go to page">Executive Summary</a></td>
         <td class="cell-download">
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-executive-summary-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
@@ -64,16 +58,45 @@ arrange: full
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-parameter-summary-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" title="Go to page">Methodology</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-methodology-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
   </tbody>
 </table>
 
-## Download by country
+## Download by region
 
-{% include download_table.html type='country' %}
-
-## Download by state / province
-
-{% include download_table.html type='state' %}
+<table class="table download-table">
+  <thead>
+    <tr>
+      <th class="th-region">Region</th>
+      <th class="th-download">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/region/africa" title="Go to page">Africa and Middle East</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/regions/climatescope-2016-africa-mena.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/region/asia" title="Go to page">Asia</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/regions/climatescope-2016-asia.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/region/lac" title="Go to page">Latin American and the Caribbean</a></td>
+        <td class="cell-download">
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/regions/climatescope-2016-lac.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+        </td>
+      </tr>
+  </tbody>
+</table>
 
 ## Previous editions
 
@@ -83,6 +106,9 @@ arrange: full
       <h2>Full Report</h2>
       <p>Download the full Climatescope report.</p>
       <ul class="download-list">
+        <li>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2015-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download"> 2015 (PDF) <span class="badge">6Mb</span></a>
+        </li>
         <li>
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2014-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download"> 2014 (PDF) <span class="badge">6Mb</span></a>
         </li>

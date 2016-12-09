@@ -1,0 +1,1 @@
+{"data": [{"values": [{"global_average": null, "value": 1.0, "year": 2015}], "name": "Power offtake risk for independent generators", "id": "q12"}], "meta": {"label-y": "", "label-x": ["Very low risk", "Low risk", "Neutral", "Risky", "Very risky"], "title": "Power sector structure"}, "iso": "in-br", "name": "in-br"}

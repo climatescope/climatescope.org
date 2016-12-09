@@ -25,6 +25,14 @@ layout: base
       <div class="col--main prose-copy">
         {{content}}
       </div>
+
+      <div class="col--sec">
+        {% if page.id == 'summary' %}
+        {% include sec-nav-topics.html %}
+        {% include sec-nav-regions.html %}
+        {% endif %}
+      </div>
+
     </div>
   </div>
 
