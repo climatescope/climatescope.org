@@ -1,7 +1,7 @@
 ---
 published: false 
 postId: test
-title: Test blog post
+title: blog post
 
 description: FINANCING INDIA'S CLEAN ENERGY TRANSITION
 ---
