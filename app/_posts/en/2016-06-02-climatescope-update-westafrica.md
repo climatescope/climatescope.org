@@ -4,7 +4,7 @@ title: Mixed results for West Africa in Climatescope 2015
 
 description: West Africa is home to some of the most vibrant economies on the continent. But is this reflected in the clean energy sector? 
 ---
-##WEST AFRICA IN CLIMATESCOPE 2015
+##<b>WEST AFRICA IN CLIMATESCOPE 2015</b>
 
 Climatescope 2015 revealed mixed results for the six West African countries tracked in the report – Nigeria, Ghana, Liberia, Senegal, Sierra Leone and Cote d'Ivoire. Clean energy sources accounted for only 1% of total power generation in 2014 – though the figure is up 22% on 2013. Leaders from the six nations have all signalled their intention to encourage greater use of clean energy and harness the region’s abundant renewables resources, most notably solar, given average daily irradiation levels of as much as 6.52 kWh/m2. The region should see at least 2GW of solar, wind and hydro projects auctioned by the end of 2016, half of which would be located in Nigeria. If this target is achieved it would give a much needed boost to West Africa’s clean energy sector: of all the projects announced so far, only 110MW have been installed to date.
 
