@@ -1,0 +1,12 @@
+<nav class="sec-nav">
+  <h2 class="sec-nav__title">Regions</h2>
+  {% assign col_name = site.collections['en_region'].i18n[language] %}
+  {% assign sorted_regions = (site[col_name] | sort: 'weight') %}
+  <ul class="sec-menu">
+    {% for region in sorted_regions %}
+    {% unless page.title == region.title %}
+    <li><a href="{{ site.domain }}{{ site.path_prefix }}{{ region.url }}">{{ region.title }}</a></li>
+    {% endunless %}
+    {% endfor %}
+  </ul>
+</nav>
