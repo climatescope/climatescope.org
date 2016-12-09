@@ -5,7 +5,7 @@ title: Test blog post
 
 description: Test blog post description
 ---
-## SRI LANKA’S ENERGY FUTURE, WHAT NEXT? 
+##<b>SRI LANKA’S ENERGY FUTURE, WHAT NEXT?</b> 
 
 Sri Lanka’s power sector has an increasingly urgent to do list. Firstly, it must increase generation capacity to supply the rapid electricity demand growth, then, modernise aging grid infrastructure to improve the reliability of supply and avoid yet more nationwide black outs. Meanwhile, it must keep tariffs as low and affordable as possible, especially for the rural sector, which they have spent the last decade expanding the grid to connect.  Finally, the government also wants the state-run utility Ceylon Electricity Board (CEB) to increase renewable generation (including large hydro) from 58% today to 100% of total generation by 2030. 
 
