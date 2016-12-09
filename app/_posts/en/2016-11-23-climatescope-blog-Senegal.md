@@ -25,4 +25,4 @@ Selling small-scale solar products is subject to much less regulation and has go
 
 **Bryony Collins**
 
-Editor at Bloomberg New Energy Finance
+Editor, Bloomberg New Energy Finance
