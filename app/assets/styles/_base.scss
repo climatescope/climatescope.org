@@ -1119,21 +1119,50 @@ a:active{
 
 
 // SITE FOOTER
+#site-footer {
+  ul {
+    display: inline-block;
+  }
+  @media #{$xlarge-up} {
+    text-align: center;
+  }
+}
+
+.ftr-credits {
+  display: inline-block;
+
+  h1 {
+    color: tint($primary-color, 60%);
+    font-size: 0.875rem;
+    font-weight: $body-font-weight;
+    margin-bottom: 0;
+    line-height: 1rem;
+  }
+
+  &.current {
+    margin-right: 1.5rem;
+  }
+
+  @media #{$xlarge-up} {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
 
 #comp-nav {
-  @include span(12/12);
-  border-bottom: 1px solid tint($primary-color, 90%);
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
+  display: block;
+  overflow: hidden;
+
   .ftr-menu {
     list-style: none;
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
-    float: left;
+
     > li {
       float: left;
       margin: 0 2rem 0 0;
     }
+
     > li > a {
       display: block;
       font-family: $brand-font-family;
@@ -1141,77 +1170,70 @@ a:active{
       text-transform: uppercase;
       color: inherit;
     }
-  }
-  @media #{$xlarge-up} {
-    @include col(7/12);
-    border-bottom: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-    .ftr-menu {
-      padding: 1rem 0;
+
+    li:last-child {
+      margin-right: 0;
     }
   }
 }
 
-#ftr-credits {
-  @include span(12/12);
-  h1 {
-    @extend .visually-hidden;
-  }
+#ftr-copyright {
   .copyright {
-    float: left;
-    clear: both;
     font-family: $brand-font-family;
     color: tint($primary-color, 60%);
     margin-bottom: 0;
     font-size: 0.85rem;
   }
-  .logo-list {
-    margin: 0 -1.5rem;
-    li {
-      width: 6rem;
-    }
-  }
-  @media #{$xlarge-up} {
-    @include col(5/12);
-    .logo-list {
-      float: right;
-    }
-    .copyright {
-      float: right;
-    }
-  }
 }
-
 
 // LISTS
 
 .logo-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 1.25rem 0;
+  margin: 0 0 0 (-$global-spacing);
   overflow: hidden;
+
   li {
-    float: left;
-    margin: 0 1.5rem 1.5rem 0;
-    width: 8rem;
+    display: inline-block;
+    margin: $global-spacing;
   }
+
+  li:last-child {
+    margin-right: 0;
+  }
+
   .label {
     @extend .hd-label;
     line-height: 1rem;
     display: block;
   }
+
   a {
     display: block;
   }
+
   span {
     @extend .visually-hidden;
   }
+
   img {
     width: auto;
     max-width: 100%;
-    height: auto;
+    max-height: 3rem;
     vertical-align: top;
+    opacity: 0.8;
+  }
+
+  /* Compensate Bloomberg logo proportions and alignment */
+  .logo-bnef img {
+    transform: translate(0, 0.5em);
+    max-height: 1.75rem;
+  }
+
+  /* Compensate DevSeed logo proportions and alignment */
+  .logo-devseed img {
+    max-height: 2rem;
   }
 }
 
@@ -1220,6 +1242,7 @@ a:active{
   margin: 0;
   padding: 0;
   overflow: hidden;
+
   > li {
     float: left;
     margin: 0 0.5rem 0.5rem 0;
