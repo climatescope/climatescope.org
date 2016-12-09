@@ -15,4 +15,6 @@ grid access to modern energy. The government has set the target of building 175G
 
 ####<b>Utility-scale projects</b>
 • Installed capacity: at the end of FY2016, the country had 42.6GW of installed renewable energy capacity (excluding large hydro) – representing 14% of total generation capacity – and 2016 is on track to become the best year for renewable installations. The sector is not only drawing Indian firms but also foreign utilities. Power generation companies particularly from Europe and Asia are increasing their presence through greenfield investments or acquisitions. 
+
+[!Figure 2: Annual capacity additions in India’s renewable energy sector (MW)]
  
