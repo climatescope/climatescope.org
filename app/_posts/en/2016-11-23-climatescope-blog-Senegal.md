@@ -5,7 +5,7 @@ title: Test blog post
 
 description: Test blog post description
 ---
-## SENEGAL VILLAGES LIGHT UP FAST WITH HOUSEHOLD SOLAR PRODUCTS
+##<b>SENEGAL VILLAGES LIGHT UP FAST WITH HOUSEHOLD SOLAR PRODUCTS</b>
 
 In Senegal, where only 30% of people living in rural areas have access to electricity, change is afoot.  Households that up till now have been reliant on kerosene for cooking and light are being targeted by a passionate workforce selling quality solar lanterns and solar home systems. 
 
@@ -23,6 +23,6 @@ It must also be said that Senegal has a well-developed government policy to brin
 
 Selling small-scale solar products is subject to much less regulation and has good prospects in the electricity-starved regions of Senegal. As the industry gains ground we are likely to see more advanced products coming to market – ranging from larger televisions and energy-efficient fridges to solar-powered pumps and solar water heaters. Around 75% of Senegal’s population works in agriculture, according to the US CIA, so where the demand is, industry will follow…  And as East Africa’s small-scale solar models move West, Senegal could be the next place on the map for fast-growing companies like M-KOPA Solar. Let’s just say, watch this space.
 
-**Briony Bennett**
+**Briony Collins**
 
-EMEA Policy Analyst, Bloomberg New Energy Finance
+Bloomberg New Energy Finance
