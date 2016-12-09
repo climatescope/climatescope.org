@@ -1,10 +1,9 @@
 ---
 published: false 
 postId: test
-title: Test blog post
+title:blog post
 
-description: Test blog post description
----
+description: HOW CAN PAY-AS-YOU-GO SOLAR BE FINANCED?
 
 ##HOW CAN PAY-AS-YOU-GO SOLAR BE FINANCED?
 
