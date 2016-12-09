@@ -1,30 +1,36 @@
 ---
 layout: country
-
 id: mm
 title: Myanmar
-
 region: asia
-grid: off
+grid: 'off'
+published: true
 ---
-Myanmar’s energy sector confronts a low electrification rate of 35%. The country had an installed power capacity of 4.4GW in 2014, of which 4.1GW was connected to the grid, mainly large hydro (3GW). The off-grid generation is mainly small hydro and biomass.
+Myanmar’s annual per-capita consumption of 156kWh places it in the bottom quintile of nations on that measure of energy poverty.
+About 32% of Myanmar’s homes, businesses and factories are connected to the national grid. Some of the off-grid population has intermittent access to electricity from diesel, small hydro-based microgrids or pico-solar systems of 80-200 peak watts. Still, millions of households rely on battery-powered lanterns, kerosene lamps and candles for light and solid fuel for cooking.
 
-With assistance from multilateral agencies, Myanmar is formulating a long-term policy to address its low electrification. However, in the medium term (2013-2016) increasing efficiency of the existing power generation projects is a prime focus. Another objective is to reduce its reliance on coal and increase cleaner forms of power generation. The country targets an additional 3.5GW of capacity from upgrades and new power projects by 2016, including geothermal, wind and solar PV power plants. 
+A democratically elected government, which assumed power in April 2016 after 53 years of military rule, must decide how closely to embrace Myanmar’s 2015 energy master plan, drafted with assistance from the Asian Development Bank. That plan entails raising Myanmar’s generating capacity more than threefold by 2030, to 15,000MW. Almost a third of the new capacity would be either new or repowered hydro generation; the rest would be supplied by installing 3,000MW of combined-cycle natural gas turbines, raising coal-fired capacity 2,880MW from its present level of 120MW and building 300MW of grid-connected solar, wind and geothermal projects (at present there is none). The new government’s manifesto calls for a greater share of renewables in Myanmar’s energy portfolio.
 
-Myanmar has recently opened to international commerce, and its economy and power sector are at an infant stage. It has limited capacity to develop its power sector and must rely on foreign investment for capacity building. 
-To encourage foreign investment the government passed a revised version of the electricity law in 2014 that permits foreign investment in power projects of any size in Myanmar with a maximum 80% ownership. The previous electricity law only allowed Myanmar citizens to invest in power projects and the project size was limited to 10MW.  After the electricity law’s revision, Myanmar’s electric power ministry signed a memorandum of agreement with Thai developer Green Earth Power to build a 220MW solar plant in the Magway Region. 
+Leading gas turbine vendors are present in the country and pursuing opportunities having been encouraged by the success of a 2015 tender that led to a contract for a 225MW combined cycle project in the central Mandalay region.
+The government has not published a national grid-extension timetable or rules for tariff setting and project permitting. On-grid retail rates are heavily subsidised at $0.03 per kWh for residential customers and $0.06 per kWh for commercial and industrial users. An expectation – however unrealistic – that those rates will be available on future grid extensions stymies off-grid development, even in regions that are unlikely to have grid access for years to come.
 
-In 2015, the government released a National Energy Policy that aims to refine and develop regulations and guidelines for investors to help maximize the usage of the country’s renewable resources. 
-Despite significant equity-investment interest from foreign developers, substantial challenges remain in the form of off-take and sovereign risk. The state-owned Rural Development Bank and multilateral banks to date are the few providers for loans to infrastructure projects. 
+Not surprisingly, announced solar and wind projects are moving forward fitfully.
+In 2014, Myanmar’s electricity ministry executed agreements with Convalt Energy, a portfolio company of US-based ACO Investment Group, for two 150MW photovoltaic projects in the Mandalay region. While the projects have secured more than $150m in equity financing from US investors, a development timetable has not been released.
 
-#### Score Summary
+A 210MW solar project at Magway that Thai developer Green Earth Power said would be ready for commercial operation in the first quarter of 2016 has not advanced. Its status could not be ascertained.
+To date, no established wind developers have disclosed project development plans in Myanmar.
+There is consensus that the country can increase its hydro generation by installing modestly-sized projects on waterways where hydro has already been built.
+Given the extent of Myanmar’s energy poverty and the public’s expectations that the shortages will be addressed soon, it is likely that a large-scale transition to renewables will be postponed in the near term.
 
-Myanmar in 2015 achieved a 0.85 overall score, to finish 37th among all Climatescope nations. The country’s ranking rose five places from 2014, when it scored 0.78. This was largely due to improved scores on both parameters I and II. 
 
-Myanmar’s score on Parameter I Enabling Framework increased year-to-year from 0.65 to 0.84, while its ranking improved from 49th to 44th. A new electricity law was introduced in 2014 to promote foreign investment in power projects.
+###Score summary
 
-The country’s ranking on Parameter II Clean Energy Investment & Climate Financing rose thanks to a tenfold surge in clean energy investment, to $575m. The showcase deal was the financing of a two-phase 300MW solar project. Myanmar’s Parameter II metrics were 38th place in 2015 with a score of 0.84 and 48th place in 2014 with a score of 0.26.
+Myanmar scored 0.90 in Climatescope 2016, up from 0.85 the previous year. This placed it 44<sup>th</sup> on the list of 58 countries, a decline of seven places on the previous year. Its best performance came on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
-Myanmar in 2015 scored 2.60 on Parameter III Low-carbon Business & Clean Energy Value Chains, ranking 17th. An increasing number of distributed solar project developers and distributed energy service providers were added. Myanmar was ranked 21st on Parameter III in 2014, with a score of 2.22.
+On Enabling Framework Parameter I, Myanmar’s score edged slightly higher, but the country remained towards the lower end of the order in 49<sup>th</sup> position. The country has seen little clean energy development to date, and there are few policies in place.  
 
-On Parameter IV Greenhouse Gas Management Activities, Myanmar fell to 53rd position in 2015 from 40th in 2014, scoring 0.21 in 2015 versus 0.71 in 2014. It experienced reverse momentum on capacity-building indicators.
+The country’s score was unchanged on Clean Energy Investment and Climate Financing Parameter II and it was ranked 46<sup>th</sup>.There has been no discernible investment in the sector since 2011, and little in the way of loans and grants.
+
+Myanmar ranked 18<sup>th</sup> on Parameter III. Its score was supported by the presence of a small number of solar, small hydro and biofuel value chains, and a relatively diverse range of service companies. 
+
+On Greenhouse Gas Management Activities Parameter IV the country ranked a poor 57<sup>th</sup>, ahead of only Suriname.

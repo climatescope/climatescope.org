@@ -1,32 +1,34 @@
 ---
 layout: country
-
 id: id
 title: Indonesia
-
 region: asia
-grid: on
+grid: 'on'
+published: true
 ---
-Indonesia has ambitious renewable energy and rural electrification targets. It aims to boost renewables’ share of the total primary energy mix to 23% by 2025, compared to 15% previously. The government also plans to encourage distributed renewable energy with an eye toward achieving 100% electrification by 2020 (up from 84.5% today).
+Indonesia is estimated to possess 40% of the world’s geothermal power potential, and its biomass and hydro resources are abundant. Support mechanisms for renewables are also in place and the installation targets are ambitious, but a subsidy dispute between the government and the national utility is holding back progress.
 
-To date, Indonesia has been relatively ambitious in introducing clean energy-friendly policies. It has conducted reverse auction programs for power contracts with geothermal and solar projects. Meanwhile, biomass & waste and small hydro projects have been offered feed-in tariffs. The country also has biofuel consumption mandates for the transport, commercial and power generation sectors.
+Indonesia aims to generate 23% of its primary energy consumption from renewables by 2025, up from around 5-6% now. There is also a 2019 interim target of 19%, which looks at the very least challenging, given the low levels of finance committed to the sector recently.
+The vertically integrated utility PLN owns the majority of generation assets as well as all transmission and distribution. In late 2015, the government launched a 35GW programme to meet future power demand growth, with more than 70% to be developed by independent power producers (IPPs). In a separate announcement, it stated plans to develop 5GW of solar projects, including both on-grid and off-grid installations.
 
-Furthermore, the government makes available a broad range of tax incentives, including income tax rebates, accelerated depreciation and exemptions on import VAT. The government has offered still other supporting mechanisms, including business viability guarantees to back power purchase obligations between the state utility and private generators and a geothermal fund supporting early-stage resource exploration activities.
+The government also plans to encourage distributed renewable energy to achieve 100% electrification by 2020, from a 2015 estimate of around 88%. Remote islands are expected to be electrified through grid expansion and off-grid small-scale renewable installations combined with either storage facilities or diesel power. The government also launched a Centre of Excellence for Clean Energy in February 2016 which is tasked with supporting the country’s transition towards a cleaner energy system.
 
-All of this would suggest a regulatory climate highly conducive to clean energy development. However, project development has been slower than expected largely because these policies have not delivered. The reverse auctions have not been conducted successfully, and the feed-in tariff rates were not sufficiently high to generate excitement among private developers. 
-Furthermore, regulatory barriers have significantly slowed the rate of project approval, and financing difficulties have caused a halt in project development. In 2014 only 100MW of renewable capacity was built.
+A new Geothermal Law was enacted in August 2014, removing the label of 'mining activity' for geothermal exploration drilling. This law will open up the possibility for geothermal plants to be located in protected forest areas, and benefit from expedited permitting, once the technical regulations have been published. Geothermal power tariffs ranging from $0.118 – 0.296/kWh are offered to projects from 2015 to 2025. Recent drilling attempts have not been particularly encouraging, leading to renegotiation of power purchase agreements (PPAs) and concern among developers.
 
-Still, some policy milestones achieved in 2014 are expected to improve the situation in the coming years.
-A geothermal law was enacted in August 2014 to enable exploration drilling in protected forest areas and provide expedited permitting. Fossil-fuel subsidies were mostly removed to make renewable energy cost-competitive. The small-hydro feed-in tariff was increased.
+In June 2013, the government introduced a solar auction programme, aimed at developing the country's solar power capacity through regular tenders. The programme was a failure, as only a negligible number of small projects made it through the bidding process and even fewer were actually built. A year after its introduction the programme was ruled unconstitutional by the Supreme Court, after the association of PV manufacturers sued the government for allowing foreign equipment to be used at all.
+Feed-in tariffs are in place for biomass, waste-to-energy and small hydro projects. In 2015, the small hydro and waste-to energy tariffs were converted into dollars to appease investor concerns about currency fluctuations. Plans were under way to also introduce tariffs for utility-scale PV and wind projects, but in October 2016, the parliament rejected the proposal and the government is now looking at fiscal incentives as an alternative.
 
-On the financing front, Indonesian financial services authority OJK launched a ‘Roadmap for Sustainable Finance’ in late 2014 to improve financing mechanisms for the industry. A regulatory framework for green finance was set to emerge after 2016. Some export credit agencies have started to offer political risk products to international investors.
+In theory, national utility PLN is obliged to pay IPPs the aforementioned tariffs. However, in practice PLN is unable to sign PPAs above the running cost of its internal production, which has hampered renewables build-out. The government has been is now pondering the spin-off of the renewables arm of the utility to separate the pay-out of subsidies from the generation and supply business. This could alleviate pressure on the cash-strapped company and eventually resolve the dispute. However progress on the proposed changes stalled following a cabinet reshuffle and it is unclear whether the plan will be implemented.
 
-#### Score Summary 
 
-Indonesia scored 1.614 overall in Climatescope 2015, placing it 11th on the list of countries. The country’s ranking slipped two places from 2014, largely due to a lower score on Parameter I Enabling Framework. A delayed implementation of geothermal and solar policies dragged down its performance on that indicator.
+###Score summary 
 
-Indonesia’s score on Parameter II Clean Energy Investment & Climate Financing, 0.88, improved significantly from last year’s 0.44. Total clean energy investment surged from $0.4bn in 2013 to $1.9bn in 2014, largely due to a consortium’s investment of $1.6bn in the Sarulla geothermal project.
+Indonesia scored 1.69 in Climatescope 2016, a slight improvement on its score the previous year. It fell three places to 14<sup>th</sup> on the list of countries overall and its strongest performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
-The country in 2015 matched its 8th-place 2014 ranking on Parameter III Low-Carbon Business & Clean Energy Value Chains. Its 2015 score was 3.77 versus 3.64 in 2014. The gain was due to a slight increase in the number of service providers entering the renewable energy sector. 
+On Enabling Framework Parameter I, Indonesia scored 1.31 and gained seven places to rank 30<sup>th</sup>. The score was supported by a number of clean energy policies, including feed-in tariffs, but weakened by the lack of utility unbundling and absence of a wholesale power market.
 
-Indonesia scored 2.43 in Parameter IV Greenhouse Gas Management Activities, which was good for a 10th-place ranking. Its 2014 metrics were 2.41 and 11th position. The government updated its national energy policy with a more ambitious renewable energy target for 2025.
+Indonesia’s score on Clean Energy Investment and Climate Financing Parameter II fell slightly, and it slid twenty-four places, a clear reflection of the volume of new investment ($308m) represented just 7.4% of total investment in the sector since 2011.
+ 
+On Parameter III, the country’s score increased and it climbed two places to take the 6<sup>th</sup> spot. Its solid performance reflected, among other things, the sector’s 26 value chains and 18 service providers. 
+
+On Greenhouse Gas Management Activities Parameter IV, Indonesia ranked 10<sup>th</sup>, unchanged from the previous year. Its solid performance was partly thanks to its carbon policies, including a GHG emissions reduction target.

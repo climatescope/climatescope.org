@@ -1,35 +1,34 @@
 ---
 layout: country
-
 id: zw
 title: Zimbabwe
-
 region: africa
-grid: off
+grid: 'off'
+published: true
 ---
-Of the 2.0GW of installed capacity in Zimbabwe, national power generator, Zimbabwe Power Corporation (ZPC) owns 1.9GW. Those plants suffer from reliability issues, and currently only around 900MW is available, equating to 50% of installed capacity and meeting 40% of peak connected demand. Due to this the country relies heavily on imports from its neighbours to meet demand, but they have been curtailed due to non-payment.
 
-Zimbabwe’s power sector is split between ZPC and Zimbabwe Electricity Transmission and Distribution Co (ZETDC) which are both subsidiaries of Zimbabwe Electricity Supply Authority (ZESA).
-The power generation sector recently received a boost with the financing of the Lake Kariba South expansion project to add 300MW more large hydro capacity, although the reservoir has recently faced low water levels. ZESA and ZPC are currently seeking finance to upgrade the Hwange coal plant and develop a coal bed methane project with a potential of up to 300MW in Lupane.
+While Zimbabwe has not added any substantive new energy capacity since 2014, motions are under way to significantly alter its future generation mix, in light of events over 2014 and 2015. Most noteworthy are Zimbabwe Power Company’s (ZPC) plans to expand its asset portfolio through tenders awarded to three solar companies for 100MW each. These will be the country’s first grid-scale PV projects. ZPC also has plans to develop 1.72GW in large hydro projects alongside a 30MW small hydro project by 2022. These will help gradually diversify the country’s largely coal-fired energy fleet.
 
-Zimbabwe's clean energy sector was also boosted in 2014 as Nyangani Renewable Energy commissioned a 15MW small hydro plant to increase the country's cumulative (non-large hydro) renewables capacity to around 120MW. Of that, 96MW comes from three biomass plants, with the rest made up of small hydro. The donor-supported Zimbabwe Reconstruction Fund is also looking at the commercial feasibility of five more mini-hydro systems.
+Large hydro already accounts for 37% of current capacity, thanks to the 750MW Kariba Hydroelectric Dam, while small hydro assets add another 1%. ZPC’s asset portfolio of 1,878MW of nameplate generation capacity is virtually all coal-fired except for Kariba. Drought conditions in 2015 led the government-owned utility, Zimbabwe Electricity Supply Authority (ZESA), to announce a generation reduction at Kariba from 750MW to 475MW, beginning in September 2014 and extending until January 2016. Daily lake levels for 2015-2016 in the Kariba Reservoir, which straddles Zambia and Zimbabwe, are currently at their lowest biannual average in the past twenty years, according to Zambezi River Authority data. On 25 February 2016, lake levels were at 477 meters above sea level, or just 11% of operating volume1.
 
-The country’s regulatory framework makes it relatively easy for an independent power producer (IPP) to set up a project. But an IPP needs to sign a power purchase agreement (PPA) with ZETDC in order to sell into the grid, which has proven to be a major stumbling block. The transmission provider suffers cash-flow shortages and the onus is on the IPP to draw up the framework surrounding an agreeable tariff, which needs approval from the regulator.
-Zimbabwe still lacks a clear renewable energy policy although the country has been working on renewable energy targets, feed-in tariffs (FiTs) and net metering for more than two years. The government expects to see its renewable energy and FiT policy come into force over the next year. Discussions continue over the implementation of FiTs, which were first proposed in 2013.
-There is a biofuels blending mandate in force, which is set at 5%. The mandate changes sporadically depending on supply and has reached up to 15%. While the government intends to raise the mandate, investment has been slow due to non-cost reflective fuel prices and public resistance over perceived damage to engines.
+Out of the country’s current generation mix, roughly 6% of assets are privately-owned, and coincidentally represent the only operational renewable assets in Zimbabwe. Triangle Sugar, Hippo Valley Estates and Green Fuel Ltd. each operates a biomass plant, amounting to 96MW of electricity produced, utilising the sugarcane by-product of bagasse.
 
-The country offers tax incentives including import duty exemptions and tax holidays. The former apply to solar and electrical equipment but have not been updated since coming into force in 2010 – importers see it as outdated. While the tax holidays offer attractive rates they have yet to lead to any major investment from the private sector in energy projects, as some developers see the terms that the government currently offers as unfavourable.
+Nyangani Renewable Energy is the most active small hydro developer in Zimbabwe, and the only independent power producer generating exclusively for the grid. As of 2015, its portfolio has 24.8MW of installed capacity for a total investment of USD 51.25m. Its largest installation is the Pungwe B plant, which generates 15MW of power, and its most recent addition, the 2.72MW Pungwe C plant, came online in March 2016. An additional 2.3MW is expected by the end of 2016 as the Hauna Power Station will be constructed at a cost of USD 6m. Numerous other small hydro projects have been granted initial IPP licenses, but have failed to reach construction stages. These include the 5MW Great Zimbabwe Mtirikwi project, the 2.5MW Manako Hydro project, the 3.3MW HT Gen project, and the 1.6MW Kupinga Renewable Energy project.
 
-Zimbabwe's rural electrification fund has struggled since inception due to cash-flow shortages. Electricity access currently sits at 31% and utilizes grid extension and solar to expand access. The country has a target of electrifying all rural public institutions by 2018 with universal access by 2040. The fund offers different forms of subsidies depending on whether the applicant is a public institution or a rural home.
+Fluctuation in generation from hydro plants and other assets means Zimbabwe imports power from neighbouring nations as needed, but ZPC intends to build 1.8GW of coal and 600MW of methane gas facilities in order to combat this reliance on imports. The government awarded a first licence for a 660MW coal power station in October 2016. Domestic energy efficiency improvements and a solar water heater programme will help manage overall generation volumes, while expansion of biogas digester installations will help diversify Zimbabwe’s generation stack. The lack of a comprehensive renewable energy policy has meant that private investors and developers had to drive the energy transition in the country to date. However, the government has made some progress on defining new energy sector targets which are expected to be enacted at the end of 2016 or in early 2017.
 
-#### Score Summary
 
-Zimbabwe scored 0.70 in Climatescope 2015, placing it 43rd on the list of countries overall, the same position it held in 2014. The country’s highest score was on Greenhouse Gas Management Activities Parameter IV. 
+###Score summary
 
-On Enabling Framework Parameter I, Zimbabwe slipped one place to rank 42nd. Its score was supported by the presence of energy access policies and relatively high diesel and kerosene prices.
+Zimbabwe scored 1.01 in Climatescope 2016, up from 0.70 the year before. This placed it 41<sup>st</sup> on the list of countries overall, two higher than in 2015. The country’s best performance was on Clean Energy Investment and Climate Financing Parameter II.
 
-On Clean Energy Investment and Climate Financing Parameter II, the country was positioned near the bottom of the list. It took 48th place, one lower than in 2014, largely due to the lack of new investment.
+On Enabling Framework Parameter I, the country’s score increased and it gained one place to rank 41<sup>st</sup>. This reflected an improvement in its distributed energy framework and a reduction in import duties on certain renewable energy goods.
 
-Zimbabwe was placed 38th on Low-Carbon Business & Clean Energy Value Chains Parameter III, a decline of six places. Its score is supported by a modest number of clean energy service providers. 
+The country’s score on Parameter II increased more than threefold and it gained twenty-one places to rank 27<sup>th</sup>. Almost $30m of investment was recorded in 2015, in contrast to the complete absence of new money in the two previous years.
 
-On Parameter IV, the country was ranked 34th, with moderately good scores for the number and diversity of carbon credits generated.
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, Zimbabwe’s score rose and it gained one place to rank 37<sup>th</sup>. There is a small number of clean energy service companies present and a handful of financial institutions serving the sector. 
+
+There was an improvement in the country’s score on Greenhouse Gas Management Activities Parameter IV, partly thanks to the introduction of a target to reduce greenhouse gases.
+
+_______________________________
+<sup>1</sup> Operational levels are between 475 and 488 meters

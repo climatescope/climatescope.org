@@ -1,35 +1,44 @@
 ---
 layout: country
-
 id: et
 title: Ethiopia
-
 region: africa
-grid: off
+grid: 'off'
+published: true
 ---
-Ethiopia has seen a surge of activity in recent years, with the government commissioning over 1GW of large hydro and 80MW of wind since 2009, and contracting several more projects. It has also finalised terms with its first independent power producer (IPP) for up to 1GW of geothermal power.
 
-The power generation mix is dominated by large hydro, which accounts for approximately 80% of the 2.3GW of installed capacity. The government’s guiding Growth and Transformation Plan 2010-15 aims for 10GW of hydro power by 2015 – largely based on the 6GW Grand Ethiopian Renaissance Dam Project – while a draft ministry plan sees 24GW overall capacity by 2030. For its part, the state utility is targeting 37GW by 2037 in a draft update to its 25-year master plan, originally introduced in 2000. There have also been attempts to update the 20-year old National Energy Policy to provide a coherent strategy. The country has serious ambitions to become a major regional exporter of power based on its abundant energy resources. Renewables (excluding large hydro) currently make up just under 20% of the mix, with the largest share going to wind energy, followed by small hydro.
+Like Ethiopia’s economy as a whole, the country’s electricity sector is underdeveloped but with prospects for rapid growth. It has been distorted by policy but would benefit greatly from private-sector investment. Its government is committed to urban and industrial upgrades but the majority of its population resides in rural areas. 
 
-Ethiopia's power sector was until recently under the control of the state owned monopoly utility, the Ethiopian Electric Power Corporation (EEPCo). In late 2013, EEPCo was split into two, with Ethiopian Electric Power retaining control of generation and transmission and Ethiopian Electric Services taking charge of distribution. Both remain state owned, though three Indian companies have been contracted to manage the latter. The 2013 legislation also established a new Ethiopian Energy Authority (EEA) to replace the existing Ethiopian Electric Agency, with expanded regulatory power, among them the permitting of IPPs and tariff scrutiny. The new law also established an Energy Efficiency Fund under the EEA’s remit.
-In 2015, the country may see an additional 223MW of renewable energy commissioned, increasing its total to 640MW. The largest contribution will be from wind power, which will add 153MW. 
+Only one quarter of Ethiopia’s population has access to electricity – and that privileged minority consumes on average only 250kWh/year (just 2% of what is used by the average US citizen.) There are plans in place to expand coverage, through rural electrification targets embedded within the Ethiopian government’s second five-year Growth and Transformation Plan (GTP II).
 
-While Ethiopia has vast geothermal resources, the technology remains untapped with only 7MW installed. In 2015 a power purchase agreement was concluded for the first 500MW from the Corbetti project – the country’s first IPP (the goal is to expand that project to 1GW eventually). 
+In short, paradox abounds in Ethiopia, where energy poverty limits economic activity, and where low wages render grid-scale electricity access unaffordable for most.  
 
-The government is working on its second Growth and Transformation Plan for 2015-20. Under the new plan it expects to invest $20bn over those years and increase overall installed capacity to 15GW. While there are no hard targets for renewables, geothermal and wind remain target areas for further investment.
+Historically, Ethiopia’s federal government has addressed this conundrum relatively heavy-handedly: through top-down fiscal and monetary policies designed to satisfy the public by subsidizing electricity prices, but without necessarily inducing structural changes (and without attracting meaningful private investment to the sector). These policies have been punctuated by large state-sponsored infrastructure projects intended to steer the country toward a strategic vision of Ethiopia as a regional manufacturing hub.
 
-Ethiopia offers import duty exemptions on solar equipment, but importers report that the lack of technical standards has allowed the market to be flooded with substandard products. Manufacturers are eligible for a range of tax incentives but the country has not yet attracted significant clean energy manufacturing. 
+Only recently has the federal government shown signs of embracing semi-organic growth<sup>1</sup>  through the private sector, to coexist alongside a heavily planned economy that traces back to the country’s recent communist-then-socialist rule. The once vertically integrated Ethiopian Electric Power Company (EEPCo) was disbanded in December 2013, giving way to two new entities: Ethiopian Electric Power (EEP), in charge of generation and transmission; and Ethiopian Electric Utility (EEU), in charge of distribution and retail sales.
 
-The country has had a biofuels blending mandate in place since 2008 when it introduced a 5% ethanol blend. The government planned to increase the blend to 20% in January 2015 but cancelled the increase due to delays in the commissioning of ethanol plants.
+This partial deregulation of the electricity industry paves the way for independent power producers (IPPs) to commit much-needed capital towards the expansion of the country’s generating capacity. Ethiopia has ambitious goals to quadruple the size of its plant stack in the next five years – targeting growth from just over 4GW at the end of 2015 to 17.220GW by 2020.
 
-#### Score Summary
+In 2015 the country awarded its first-ever power purchase agreement (PPA), to Reykjavik Geothermal’s 500MW Corbetti plant. As a follow up, in 2016, EEP issued requests for proposals (RFPs) to install a dozen additional projects, introducing a competitive auction bidding process that is hugely significant for the sector: it establishes for the first time a transparent role for independent players. Four of the new projects will be privately owned (by IPPs); the rest will be built under engineering, procurement and construction contracts (EPC) and then retained by EEP.
 
-Ethiopia scored 1.17 in Climatescope 2015, placing it 26th on the list of countries overall. This was a drop of seven places compared with 2014. The country’s highest ranking was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
+Resource-wise, Ethiopia’s capacity mix is 94% hydro – a technology that will likely forever remain the backbone of the country’s grid. The flagship 6GW Grand Ethiopia Renaissance Dam (GERD) is slated for completion in 2018, with a slew of additional large hydro projects to follow. But Ethiopian grid planners are deliberately trying to diversify their fuel mix away from hydro, to hedge against the constant threat of drought and seasonal scarcity.
 
-On Parameter I, Ethiopia finished 30th overall. It was supported by the presence of a rural electrification programme and energy access policies, including targets and tax incentives. 
+For decades the development aid community has sought to support projects that exploit the Great Rift Valley’s geothermal potential. The United Nations Development Programme started exploring the opportunity in 1969, promoting the technology by conducting drill tests, temperature gradient readings and surface investigations. Ethiopian policymakers took notice, penciling a ‘5GW by 2037’ target into their 25-year Energy Master Plan. But the utility seems to be taking a different stance, now favoring solar and wind – which have experienced dramatic cost declines that make these technologies Ethiopia’s best bet behind hydropower.
 
-On Clean Energy Investment and Climate Financing Parameter II, the country placed 25th. The country’s relatively low average cost of debt was a positive factor, but clean energy investment dropped to less than $10m in 2014 from $840m a year earlier. 
+Even with cost reductions, the levelized costs of all new grid-scale build are not competitive with Ethiopia’s ultra-cheap retail electricity rates (~$60/MWh). This is a problem for a grid that needs to expand: EEP will incur losses with every new contract executed, unless retail electricity rates are permitted to reflect the true costs of generation, transmission and distribution (allegedly closer to $90/MWh). Ultimate authority to raise rates lies with the federal government, which has been reluctant to take action, given the political ramifications of putting a greater burden on an impoverished population.
 
-Ethiopia’s relatively high score on Parameter III saw it ranked 16th overall, helped by the presence of 14 service providers.
 
-On Greenhouse Gas Management Activities Parameter IV, the country scored below average. Its strongest performance was in the Carbon Offsets category. 
+###Score summary
+
+Ethiopia scored 1.29 in Climatescope 2016, placing it 32<sup>nd</sup> overall, a drop of six places compared with the previous year. The country’s best performance was on Clean Energy Investment and Climate Financing Parameter II.
+
+On Enabling Framework Parameter I, it slipped three places to 33<sup>rd</sup> despite achieving a slightly higher score than in 2015. This reflected a relatively robust set of energy access policies, including a well-funded rural electrification program, and off-grid financing facilities.
+
+Ethiopia’s score on Parameter II jumped to 0.94 from 0.53 in 2015, elevating the country seven places to 18<sup>th</sup>. This reflected an increase in clean energy investment to $108m from almost zero. The relatively low average cost of debt was another positive factor.
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country fell six places to 22<sup>nd</sup> owing to a slight decline in the number of value chains with active companies.
+
+The introduction of an emissions reduction target produced an improvement in its score on Greenhouse Gas Management Activities Parameter IV. However, this was not sufficient to maintain its ranking and it slid eight places to 43<sup>rd</sup>.
+
+___________________________
+<sup>1</sup> For example, private firms are now able to bid to provide services for a sector whose infrastructure decisions are still broadly governed by state planners.

@@ -1,35 +1,35 @@
 ---
 layout: country
-
 id: ec
 title: Ecuador
-
 region: lac
-grid: on
+grid: 'on'
+published: true
 ---
-Ecuador is one of the few countries in Latin America with a feed-in tariff (FiT) scheme in place, although project development has remained slow. The original Ecuadorian FiT, which expired in 2012, featured high rates and mostly benefited solar photovoltaic projects. The country now offers a non-solar FiT scheme, which is open for applications until 2016.
 
-In Ecuador, the Ministry of Electricity and Renewable Energy (MEER) oversees renewable energy policy and planning.
-In 2015, the Act Establishing the Public Electric Power Service (LOSPEE) was published, overseeing regulation and structure of the power sector in Ecuador. Under this law, the National Electricity Board (CONELEC) becomes the Agency for Regulation and Control of Electricity (ARCONEL). 
-While generation is open to private players in Ecuador, transmission is under the responsibility of state-owned utility Corporación Eléctrica del Ecuador (CELEC EP Transelectric). Distribution is divided between 11 majority-public companies, where MEER is the majority shareholder. 
+Ecuador is one of the few countries in Latin America with a feed-in tariff (FiT) in place, although project development has been slow. The original Ecuadorian FiT, which expired in 2012, featured high rates and mostly benefited solar photovoltaic projects. The country now offers a non-solar FiT, which was open for applications until December 2016.
 
-In 2014, Ecuador had a total of 5.4GW of installed capacity, with 43% coming from thermal power and just over one third from large hydropower. Clean energy, encompassing small hydro, biomass, wind and solar plants, amounted to less than 11% of total capacity.
+In Ecuador, the Ministry of Electricity and Renewable Energy (MEER) oversees renewable energy policy and planning. In 2015, an act was published establishing the Public Electric Power Service, which will oversee the country’s power sector. The law also established the National Electricity Board as the Agency for Regulation and Control of Electricity. While generation is open to private players in Ecuador, transmission is the responsibility of state-owned utility Corporación Eléctrica del Ecuador, and distribution is divided between 11 majority-public companies, in which MEER is the majority shareholder.
 
-In 2011, the government published regulation 004/11, which created and set rates for Ecuador's first FiT scheme for 15-year contracts. Biomass, geothermal, solar photovoltaic and thermal, wave and tidal and wind plants were included. Photovoltaic plants received the highest tariffs, at $400/MWh. For projects in the Galapagos Islands, a premium was added. The first FiT program contracted a total of 645MW from 111 projects from biomass, small hydro, solar and wind sources. In spite of the incentives, project development has been slow and only a few projects have been commissioned so far. 
-In 2013, a second FiT was launched through regulation 001/13. This time, solar PV was not included, but other technologies may apply. Project applications will be received until December 2016.
+In 2015, Ecuador had a total of 6.2GW of installed capacity, with 56% coming from thermal power and one-third from large hydropower. Clean energy, encompassing small hydro, biomass, wind and solar plants, amounted to 11% of total capacity.
+In 2011, the government published regulation 004/11, which created and set rates for Ecuador’s first FiT scheme for 15-year contracts. Biomass, geothermal, solar photovoltaic and thermal, wave, tidal and wind plants were included. PV plants received the highest tariffs, at $400/MWh. For projects in the Galapagos Islands, a premium was added. The first FiT programme contracted a total of 645MW from 111 biomass, small hydro, solar and wind projects. 
 
+Despite these incentives, project development has been slow and only a few projects have been commissioned so far. In 2013, a second FiT was launched through regulation 001/13. This time, solar PV was not included. It closed to new project applications in December 2016.
 Renewable energy developers may also apply for import tax exemption on clean energy equipment and a five-year waiver on income tax. On the transportation side, Ecuador has had a 5% biodiesel blending mandate with conventional diesel since 2013.
 
-#### Score Summary
+The country has set a target to get 90% of its electricity from hydro in 2017 and to raise the proportion of renewable power even higher by 2025. The target is expected to be surpassed thanks to the partial commissioning of the 1.5GW Coca Codo Sinclair hydro project, which will be the largest such plant in the country. Its first phase (750MW) was commissioned in April 2016, while the second phase is expected to come online by the end of the same year. In 2015, 55% of the country’s total 23.8TWh was supplied by hydro plants.
 
-Ecuador’s 1.03 overall 2015 score in Climatescope placed it 31st among all countries and was a two-position improvement from 2014. Ecuador’s 2014 overall score was 0.96.
+On 13 October 2015, the government of Ecuador submitted its unconditional Intended Nationally Determined Contribution to the United Nations, in which it committed to cutting greenhouse gas (GHG) emissions in the energy sector by 20.4% to 25% below the business-as-usual (BAU) scenario by 2025. Ecuador also committed to a further reduction of GHG emissions in the energy sector to a level between 37.5% and 45.8% below the BAU scenario by 2025. This further reduction is conditional upon availability of resources and international support.
 
-Ecuador’s year-over-year improvement was based on a notable performance on the Clean Energy Rural Electrification and Growth Rate of Power Demand indicators of Parameter I. It also registered improvement in the Parameter III indicators of Financial Institutions in Clean Energy and Value Chains by Clean Energy Sectors.
 
-On Enabling Framework Parameter I, Ecuador finished 25th in 2015, with a score of 1.24. It was 34th in 2014 on that parameter, with a 1.00.
+###Score summary
 
-On Clean Energy Investment and Climate Financing Parameter II, Dominican Republic ranked 30thnd, down 12 positions from the previous year. Its Parameter II scores were 0.46 in 2015 and 0.71 in 2014.
+Ecuador scored 1.19 in Climatescope 2016, an increase of 0.16 on its tally in 2015. It fell four places to 35<sup>th</sup> however, and its best performance was on Greenhouse Gas Management Activities Parameter IV.
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Ecuador’s 39th-place finish in 2015 was a 10-place improvement from its 2014 rank. The country’s 2015 and 2014 Parameter III scores were 1.04 and 0.72, respectively.
+The country’s score on Enabling Framework Parameter I increased by 0.25 to 1.49, and it took 22<sup>nd</sup> place, up from 25<sup>th</sup> the previous year. It has adopted a series of clean energy policies that include a biofuel blending mandate and feed-in tariffs. 
 
-On Greenhouse Gas Management Activities Parameter IV, Ecuador’s 2015 and 2014 Climatescope ratings were identical: 19th place at 1.59.
+On Clean Energy Investment and Climate Financing Parameter II, Ecuador’s score was almost unchanged at 0.45, and it fell ten places to 40<sup>th</sup>.  No new investment was recorded, which stands in contrast to $346m over the preceding four years.
+ 
+Its score on Low-Carbon Business & Clean Energy Value Chains Parameter III was unchanged at 1.04, yet the country fell six places to 45<sup>th</sup>, a relatively poor performance that reflected, among things, a lack of service companies active in the country.
+ 
+On Parameter IV, Ecuador’s score increased by 0.45 to 2.04, placing it 17<sup>th</sup>, a performance that was partly influenced by the introduction of a GHG emissions reduction target.

@@ -1,40 +1,37 @@
 ---
 layout: country
-
 id: ng
 title: Nigeria
-
 region: africa
-grid: off
+grid: 'off'
+published: true
 ---
-At year-end 2014, Nigeria had an installed electricity capacity of 10.7GW, of which 11.9% was large hydro, 0.6% small hydro and 87.5% fossil fuels. Having gone through major power sector reform, and elections in 2015, it has yet to deploy grid-scale renewable energy projects despite having a feed-in tariff (FiT) in place.
 
-With a population of 177m and a GDP of $569bn, Nigeria is the continent’s most populous country, and its GDP growth is 6.3% per year. It is an OPEC member endowed with abundant oil and gas resources, and exports 2m barrels of oil per day. Nigeria’s economy is highly fossil-fuel dependent. 
+At year-end 2015, Nigeria had installed electricity capacity of 11.5GW, of which 11.9% was large hydro, 0.6% small hydro and 87.5% fossil fuels. From that base, around 4GW are technically available on average throughout the year to generate electricity.
 
-The country’s annual power capacity utilization is 37% and its peak demand is 12.5GW. Power cuts are a common occurrence, so owning a gasoline/diesel generator is common for most households and businesses that can afford one. Overall, around 58% of the Nigerian population has access to grid electricity – but among the rural population this drops to less than 20%. The electrification target is 75% by 2020 and 100% by 2030. The Nigerian grid also suffers from a lack of maintenance. In its current state, the grid would struggle to handle much more than it now delivers.
+Nigeria is currently trying to create an enabling environment which will lead to an increase of grid capacity. As of year-end 2015, Nigeria still doesn’t have any renewable energy projects connected to the grid except for large hydro.
 
-In March 2015, Nigeria elected a new president, General Muhammadu Buhari of the opposing APC party to succeed the PDP’s Goodluck Ebele Jonathan. Indications are that the new government will maintain the momentum on renewables and energy-efficiency policy development.
+Over 14 Independent Power Producers (IPP's) developing on-grid solar production facilities (75-100 MWp each) are awaiting official approvals and power buy back arrangements from government. The Lagos Solar project, a joint investment of Lagos State Electricity Board (LSEB) and the UK Department for International Development (DFID), has installed nearly 5 MWp of solar generated off-grid power for 172 schools and 11 clinics within Lagos State.  An additional 1.5 MWp is being installed at public health clinics in Kaduna State under the Solar Nigeria programme. However, there are many small scale (<50kW) solar PV mini-grid and rooftop PV projects distributed across the country built with small loans issued by the Bank of Industry and other lenders.  
 
-In May 2015, the Nigerian Federal Executive Council approved the National Renewable Energy and Energy Efficiency Policy (NREEEP). The NREEEP does not contain hard numbers. Rather, it mandates which instruments (FiTs, energy targets, etc.) will be applied.
+Given that 2015 was an election year, things have been rather slow from a policy perspective. In 6 May 2016, the president, Muhammadu Buhari signed the countries 2016 budget of 6.1 trillion Naira ($30.6 billion) almost six months after proposing it. Now this has been signed, the ministries can get to work. N422 billion has been budgeted to the recently combined ministry of Works, Power and Housing.
 
-Following the enactment of the NREEEP, the relevant energy ministries have started the work required to produce a quantitative document of targets and tariff rates called the National Renewable Energy Action Plan (NREAP). Local players and ministers expect the NREAP to be made available to power producers in 2016 as Nigeria’s first ever renewable energy-specific policy.
+In Q2 2015 the Federal Executive Council (FEC) approved Nigeria’s first ever renewable energy specific policy, the National Renewable Energy and Energy Efficiency Policy (NREEEP) for the Nigerian power sector. The NREEEP is a qualitative policy which doesn’t contain hard numbers. Rather, it mandates a direction and which instruments (feed-in tariffs, energy targets, etc.) will exist. Though the NREEEP does specify that by 2020 the aim is to achieve a total on-grid installed capacity of 33GW of which 11% is planned to come from renewables, this figure has been revised down from the previous 40GW by 2020 and 10% renewables (Nigeria 20:2020 Vision policy).
 
-Nigeria currently has a target for 40GW of installed power capacity by 2020, of which 10% must come from renewable energy. Under the Multi-Year Tariff Order 2 (MYTO2), it also has a FiT set by the Nigerian Electricity Regulatory Commission (NERC) and underwritten by the government-backed electricity trader the Nigerian Bulk Electricity Trading Company (NBET).
+Following the approval of the NREEEP, the relevant ministries have begun work on the National Renewable Energy Action Plan (NREAP) document which is intended to quantify targets and Feed-in tariff values. The NREAP was expected to be completed before the end of 2016 for the FEC approval. Once approved, the funds required for the action plan will be included in the annual national budget signed by the president.
 
-New draft regulations for the country’s feed-in tariff were published in July 2015. They introduce another renewable energy target: for some 1GW of grid renewable power by end-2018, reaching 2GW two years later. That also acts as a cap on the available capacity under the FiT, while individual projects are limited to 30MW, with technology-specific caps for overall PV, wind, hydro and biomass capacity. Other crucial differences that make the FiT more attractive: it will be denominated in US dollars rather than Nigerian naira, and FiT rates will be fixed for the duration of the power purchase agreement (i.e. 20 years) rather than reviewed every five years.
+In November 2015, Nigeria introduced a Feed-in tariff for small scale grid-connected renewables over 1MW. The tariff applies to projects less than of 30MW, 10MW and 5MW for small-hydro, onshore wind (and biomass) and solar PV respectively. However this tariff is very unlikely to be adopted as the Feed-in tariffs will be paid directly by one of Nigeria’s 11 distribution companies (depending on location) and not by the government-backed bulk trader, NBET. In the current climate, the distribution companies come with pretty high risks due to them having to deal directly with consumers who often struggle with payments, so when modelling out a 20 year plus project, the cash flow guarantee becomes less bankable.
 
-The country has no operating grid-connected renewable energy projects except for hydro. However, there are many small scale (<50kW) solar PV mini-grid and rooftop PV projects distributed across the country built with small loans issued by the Bank of Industry and other lenders.
+The good news is there is approximately 1.2GW i.e. 15 utility scale solar projects, which have gone quite far in the PPA negotiation process and have all managed to secure generation permits from the Nigerian Electricity Regulatory Commission (NERC). Due to the pro-longed negotiation process and in order to reduce the cost of renewables to the consumer, the Nigerian Bulk Electricity Trader (NBET) plan to carry out closed competitive reverse power auctions to determine what to pay these projects. NBET plan to award PPAs to the cheapest 500MW of the competing 1.2GW. The remaining 700MW will compete in another open auction with possibly new competitors to take place by year-end 2016. The tariffs underwritten by NBET will be paid in Nigerian Naira but denominated in USD, hedging out exchange rate risk. Once contracts are signed they will be implemented based on their contracted operation date, penalties will apply to developers who do not meet their commercial operations deadline. Realistically we expect construction of these projects to commence in Q1 2017 and operation by early Q3 2017.
 
-Aside from the NREEEP policy and FiT proposal, the most significant recent development was the unbundling and privatisation of generation and distribution companies in the Nigerian power sector. That process began in earnest in 2003 with the National Electric Power Policy, which resulted in unbundling in 2005. Privatisation began in 2010 and was completed in late 2013. The so-called transitional electricity market began in February 2015, after multiple delays, with NBET acting as a clearing house and guarantor for power purchases.
 
-#### Score Summary
+#### Score summary
 
-Nigeria scored 1.58 in Climatescope 2015, placing it 12th on the list of countries overall. This was an increase from 2014 and was largely due to a higher score on Clean Energy Investment and Climate Financing Parameter II in general, and the growth rate of clean energy investment in particular. 
+Nigeria scored 1.34 in Climatescope 2016 and ranked 30<sup>th</sup> on the list of countries overall. This was a descent of eighteen places and largely reflected the country’s low score on Clean Energy Investment and Climate Financing Parameter II, which plummeted in the absence of new investment.
+ 
+On Enabling Framework Parameter I, the country’s score fell slightly and the country dropped twelve places in the ranking. Nevertheless, the Policy and Regulation category saw some modest improvements, for instance in its tax regime and distributed energy framework.
 
-On Enabling Framework Parameter I, the country’s score increased thanks largely to a rise on its small base of clean energy generating capacity.
+In a reversal of the scenario in the previous year, Nigeria’s score on Parameter II tumbled to less than a quarter of its 2015 tally as new investment failed to materialise. It dropped forty-four places to rank 51<sup>st</sup> out of the 58 nations surveyed for Climatescope 2016.
 
-On Parameter II, Nigeria ranked 7th overall and highest among the African nations. This reflected an increase of 158% in the volume of asset finance to $359m in 2015. 
+The country score on Low-Carbon Business & Clean Energy Value Chains Parameter III remained unchanged, ranking 13<sup>th</sup> and fourth amongst African nations.
 
-Nigeria’s high score on Low-Carbon Business & Clean Energy Value Chains Parameter III was supported by a high number of value chains and service providers. 
-
-On Greenhouse Gas Management Activities Parameter IV, the country was ranked 30th and showed some strength in the carbon offsets category. 
+Nigeria’s only positive performance was on Greenhouse Gas Management Activities Parameter IV. It climbed seven places to 24<sup>th</sup> thanks to improved scores in the Corporate Awareness category.

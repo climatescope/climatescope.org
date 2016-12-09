@@ -1,37 +1,38 @@
 ---
 layout: country
-
 id: do
 title: Dominican Republic
-
 region: lac
-grid: on
+grid: 'on'
+published: true
 ---
-The Dominican Republic has set an ambitious target to get 10% of electricity generation from renewable sources by 2015, raising it to 25% by 2020. As of 2014, only 10.5% of a total 15TWh was coming from clean energy generation. 
-The Organismo Coordinador del Sistema Eléctrico Nacional Interconectado (OC-SENI) was created in 1998 to coordinate the electricity generation, transmission and distribution companies. 
 
-The Ministry of Energy and Mines was created at the end of 2014 and is now in charge of developing energy policies, while the Superintendencia de Electridicad (SIE) regulates and oversees Dominican Republic’s electricity sector. The state-owned Empresa de Transmisión Eléctrica Dominicana (ETED) is the sole transmission company in the country and it is responsible for operating the national system. 
+The Dominican Republic has set an ambitious target to get 10% of its electricity supply from renewable sources (including large hydro) by 2015, rising to 25% by 2020. As of December 2015, 8.6% of the nation’s total 14TWh came from clean energy generation.
 
-Although generation is open to private players, there is still a strong presence of the state-owned company. The distribution segment is divided into three public companies: EDEESTE, EDENORTE and EDESUR. All the state-owned companies are managed by the Corporación Dominicana de Empresas Eléctricas Estatales (CDEEE).  
+The Organismo Coordinador del Sistema Eléctrico Nacional Interconectado was created in 1998 to coordinate the Dominican Republic’s electricity generation, transmission and distribution. The Ministry of Energy and Mines was created at the end of 2014 and develops energy policies, while the Superintendencia de Electricidad regulates and oversees the country’s electricity sector. The state-owned Empresa de Transmisión Eléctrica Dominicana is the sole transmission company in the country and is responsible for operating the national system.
 
-In 2014, the Dominican Republic had a total installed capacity of 3.7GW. The bulk of it was represented by from oil and diesel (2.1GW), natural gas (600MW) and coal (314MW). Large hydro represents 435MW, small hydro 171MW, wind 85MW and solar 1.5MW. A 60MW PV plant is under construction in the municipality of Monte Plata. The first phase of the project (30MW) is expected to be commissioned by the end of 2015 and the second phase (30MW) by the first half of 2016. 
+Although generation is open to private players, it is still dominated by state-owned assets. The distribution segment is divided into three public companies: Edeeste, Edenorte and Edesur. All the state-owned companies are managed by the Corporación Dominicana de Empresas Eléctricas Estatales.
 
-Energy regulation for renewable power dates from the mid-2000s. In 2004, the government published the Plan Energético Nacional (PEN), which defines energy policies in the country until 2015 and aims to contribute to Dominican Republic’s sustainable development, ensure energy security, lower costs of electricity and lower environmental impact. 
+In 2015, the Dominican Republic had a total installed capacity of 3.9GW. The bulk of it was represented by oil and diesel (2.2GW), natural gas (722MW) and coal (314MW). Large hydro represents 440MW, small hydro 170MW, wind 85MW and solar 3MW.
+As of May 2016, 133MW from wind, solar and biomass plants had been commissioned, with a further 337MW of renewable energy plants currently under construction and expected to come online by the end of the year.
 
-In May 2007, following the guidelines of PEN, the government established an incentive regime for the development of clean energy sources in Dominican Republic based on mechanisms including an investment tax credit; corporate and income tax exemption; external financing tax reductions; exemption from tax on transfer of industrialized goods and services; and import duty exemption. 
-From 2009 to 2012 (latest figure available), the government provided renewable energy incentives of $21m for people to install renewable energy systems in their homes or businesses.
+Energy planning for renewable power dates from the mid-2000s. In 2004, the government published the Plan Energético Nacional (PEN), which defined energy policies in the country until 2015 and aimed to contribute to the Dominican Republic’s sustainable development, ensure energy security, lower the costs of electricity and reduce its environmental impact.
 
-Renewable energy generators have dispatch priority and open access to transmission and distribution. Dominican Republic also has a net metering program, which allows retail electricity consumers who have renewable self-generation facilities to interconnect with the distribution company, deliver surplus generation to the grid and obtain a billing credit. 
+Since May 2007, following the guidelines of PEN, an incentive regime for the development of clean energy sources has been in place. It includes an investment tax credit, external financing tax reductions, exemption from tax on transfer of industrialised goods and services, and import duty exemption. Renewable energy generators have dispatch priority and open access to transmission and distribution. 
 
-#### Score Summary
+The Dominican Republic also has a net metering programme, which allows retail electricity consumers who have renewable self-generation facilities to interconnect with the distribution company, deliver surplus generation to the grid and obtain a billing credit. As of February 2016, there was a total of 23MW of generation under the country’s net metering programme.
 
-The Dominican Republic’s 1.02 overall score in Climatescope 2015 placed it 32nd among all countries. In 2014, the country was ranked 24th overall, with a score of 1.16.
-The country's de-rating from 2014 to 2015 is explained mostly by a 19-position decline in its ranking on Enabling Framework Parameter I. It received lower scores in 2015 on the  Parameter I indicators Clean Energy Policies, Clean Energy Installed Capacity and Growth Rate of Electricity Generation.
+On 18 August 2015, the government of the Dominican Republic submitted its Intended Nationally Determined Contribution to the United Nations, committing to cut greenhouse gas (GHG) emissions by 25% by 2030, compared with 2010 levels. This reduction is conditional upon favourable and predictable support, feasible climate finance mechanisms and corrections to the failures of existing market mechanisms. To achieve the target, an estimated $17m of mitigation actions in the energy, transport, forestry, tourism, solid waste and cement sectors will be required.
 
-On Enabling Framework Parameter I, the Dominican Republic finished 24th in 2015, with a score of 1.26. It was fifth in 2014 on that parameter, scoring 1.54.
 
-On Clean Energy Investment and Climate Financing Parameter II, the Dominican Republic ranked 42nd, up from 43rd the previous year.
+###Score summary
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the Dominican Republic’s 48th-place finish in 2015 lagged its 2014 rank of 43. The country’s 2015 and 2014 Parameter III scores were 0.89 and 0.71, respectively.
+The Dominican Republic scored 1.20 in Climatescope 2016, an improvement of 0.18 on its total the year before. It edged down two places to 34<sup>th</sup> on the list of 58 nations, and its biggest improvement was on Clean Energy Investment and Climate Financing Parameter II.
 
-On Greenhouse Gas Management Activities Parameter IV, the Dominican Republic’s 2015 ranking of 12th was the same as its 2014 ranking. Its Parameter IV scores were 2.12 in 2014 and 2.20 in 2015.
+The country’s score on Enabling Framework Parameter I increased by 0.20 to 1.46, and it was placed 24<sup>th</sup>, unchanged from the previous survey. It has a supportive power sector structure that is open to independent power producers and has finance available. 
+
+On Parameter II the Dominican Republic scored 0.73, a dramatic improvement on its score of 0.26 the year before that saw it jump eighteen places to 24<sup>th</sup>. This reflected $126m of new investment, all of which went to finance wind projects. 
+
+The Dominican Republic’s score edged slightly higher on Low-Carbon Business & Clean Energy Value Chains Parameter III, but it slipped one spot to 49<sup>th</sup>. There is a scattering of manufacturers and project developers present, but no service providers. 
+
+The country’s score fell on Greenhouse Gas Management Activities Parameter IV and it dropped seven places to 19<sup>th</sup>. It was strongest in the Carbon Offsetting category.
