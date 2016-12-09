@@ -1,34 +1,38 @@
 ---
 layout: country
-
 id: uy
 title: Uruguay
-
 region: lac
-grid: on
+grid: 'on'
+published: true
 ---
-One of South America’s smaller countries, Uruguay has become a dynamic wind market thanks to a set of reverse-auction mechanisms that have contracted 1GW of wind capacity so far. Of this total, 481MW were commissioned by the end of 2014. The government of Uruguay established a 15% clean energy installed capacity target by 2015. As of the end of 2014, Uruguay had achieved the target, with a total clean energy installed capacity of 24% including biomass, solar and wind plants. The country now aims to generate as much as 38% of its electricity needs from wind energy alone by 2017.
 
-Uruguay's electricity market is overseen by the Ministry of Industry, Energy and Mines and controlled by state-owned vertically integrated utility Administración Nacional de Usinas y Trasmisiones Eléctricas (UTE). UTE allows the participation of independent power producers (IPPs) through project- or technology-specific tenders, usually for 20-year power purchase agreements.
+Uruguay has become a dynamic wind market thanks to a set of reverse-auction mechanisms that have contracted 1GW of wind capacity so far. Of that total, 856MW were commissioned by the end of 2015.
 
-Uruguay relies primarily on hydroelectric sources to meet its power needs. In 2014, 82% of the 10.3TWh consumed in the country came from large hydro plants, while 13% came from other renewable sources (biomass, solar and wind). The remaining 5% was supplied by plants burning oil, diesel and natural gas.
+The government of Uruguay established a 15% clean energy installed capacity target by 2015. As of the end of 2015, Uruguay had exceeded the target, with a total clean energy installed capacity of 34% including biomass, solar and wind plants. The country aims to generate as much as 38% of its electricity needs from wind energy alone by 2017.
 
-From 2006 to 2012, UTE held six technology-specific renewable auctions, two for biomass plants and four for wind farms. The biomass auctions have not been successful, failing to contract new capacity due to lack of new available biomass resources. However, the wind tenders contracted all capacity solicited – 1GW. The tenders offered a premium for projects that reach a local content superior to 40% of the value of the total project. This meant that Uruguay attracted record-levels of investment in the past years. In 2014 alone, $1.2bn was invested in the country’s renewable energy sector. 
+Uruguay’s electricity market is overseen by the Ministry of Industry, Energy and Mines and controlled by state-owned vertically integrated utility Administración Nacional de Usinas y Trasmisiones Eléctricas (UTE). UTE allows the participation of independent power producers through project- or technology-specific tenders, usually based on 20-year power purchase agreements.
 
-In 2013, Uruguay launched a solar tender, aiming to contract around 206MW of photovoltaic utility-scale capacity to be delivered by 2015, divided into three ranges: less than 1MW, between 1MW and less than 5MW, and from 5MW to 50MW. As of November 2014, 16 PV projects, with a total capacity of 199MW, had been awarded contracts. Moving forward, wind investment activity should slow down, while solar projects will attract more funds in the coming years. 
+Uruguay relies primarily on hydroelectric sources to meet its power needs. In 2015, 59% of the 13.3TWh generated in the country came from large hydro plants, while 18% came from biomass, 15% from wind and less than 1% from PV plants. The remaining 7% was supplied by plants burning oil and diesel.
 
-Other renewable energy incentives include VAT exemption for wind generation and income tax reduction for clean energy and energy efficiency projects. Retail consumers may apply to UTE's net metering program and receive credits for clean energy generation delivered to the grid. In addition, Uruguay has set a 5% biodiesel and ethanol blend with conventional diesel and gasoline, respectively, to be achieved by end of 2015.
+From 2006 to 2012, UTE held six technology-specific renewables auctions, two for biomass plants and four for wind farms. The biomass auctions have not been successful, failing to contract new capacity. However, the wind tenders contracted all 1GW of capacity solicited. 
 
-#### Score Summary
+The tenders offered a premium for projects that use local content equivalent to more than 40% of the value of the total project. This meant that Uruguay has attracted record levels of investment in the recent years. In 2015 alone, $1.1bn was invested in the country’s wind sector.
 
-Uruguay ranked eighth in Climatescope 2015, two levels lower than in last year's survey. Its overall score was 1.69.
+In 2013, Uruguay launched a solar tender, aiming to contract around 206MW of photovoltaic utility-scale capacity to be delivered by 2015, divided into three ranges: less than 1MW, between 1MW and less than 5MW, and from 5MW to 50MW. As of November 2014, 16 PV projects, with a total capacity of 199MW, had been awarded contracts. In the coming years, wind investment activity should slow down, while solar projects will attract more funds.
 
-Uruguay’s biggest improvement came on Enabling Framework Parameter I, where it registered gains in the Clean Energy Penetration Category. Those gains were offset by a retreat on Clean Energy Investment and Climate Financing Parameter II, in which the country failed to match its previous performance on the Growth Rate of Clean Energy Investments and Local Investments indicators.
+Other renewable energy incentives include VAT exemption for wind generation and income tax reduction for clean energy and energy efficiency projects. Retail consumers may apply to UTE’s net metering program and receive credits for clean energy generation delivered to the grid.
+Since January 2015, it has been mandatory in Uruguay to blend 5% biodiesel and ethanol with conventional diesel and gasoline. Biodiesel and ethanol producers are exempt from income tax on industrial and commercial activities for ten years.
 
-Uruguay in 2015 was ranked first among all Climatescope countries on Enabling Framework Parameter I, with a 2.04. The country was ninth on Parameter I last year, with a 1.43 score.
 
-Uruguay’s Parameter I gain was neutralized by its fall from first to ninth position on Clean Energy Investment and Climate Financing Parameter II. Its 2015 Parameter II score was 0.89 versus 2.03 last year.
+###Score summary
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Uruguay’s 2015 score of 1.41 elevated it to 29th place, a six-position improvement from last year. Its earlier Parameter III score was 1.16.
+Uruguay scored 2.29 in Climatescope 2016, a substantial increase on its 2015 tally of 1.69. The country climbed four places to rank 4<sup>th</sup> overall, and most notably, it took the number one spot globally on Enabling Framework Parameter I.
 
-On Greenhouse Gas Management Activities Parameter IV, Uruguay’s 2015 metrics of seventh place at 2.64 were little changed from its 2014 metrics of eighth place at 2.65.
+The country’s score on Parameter I was 2.55, up from 2.04 the year before. This world-beating total reflected the presence of policies such as tax incentives and auctions, as well as its supportive power sector structure. 
+
+On Clean Energy Investment and Climate Financing Parameter II, Uruguay took 3<sup>rd</sup> place with a score of 2.14. Slightly more than $1.3bn was invested in the sector in 2015, a similar amount to the two previous years.
+
+The country scored 1.41 and was placed 31<sup>st</sup> on Low-Carbon Business & Clean Energy Value Chains Parameter III, its lowest position in 2016. Several project developers were present, but very little equipment manufacturing.
+
+On Greenhouse Gas Management Activities Parameter IV, Uruguay was ranked 8<sup>th</sup> thanks to its considerable carbon-offsetting activities and policies, including a GHG emissions reduction target and Partnership for Market Readiness initiatives.

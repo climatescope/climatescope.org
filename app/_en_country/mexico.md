@@ -1,35 +1,35 @@
 ---
 layout: country
-
 id: mx
 title: Mexico
-
 region: lac
-grid: on
+grid: 'on'
+published: true
 ---
-Mexico’s energy sector is at a historical turning point. At the end of 2013, Congress passed sweeping reforms of Mexico's energy sector, intended to lead to the liberalization of the power generation sector historically controlled by state-owned Federal Electricity Commission (Comisión Federal de Electricidad, or CFE). 
-Regulation has been rolled-out since then, and the first new market mechanisms will start operation in 2016. By 2018, Mexico’s generation market will operate under new grounds.
 
-In 2014, Mexico generated 6% of its electricity from renewables, made up of biomass and waste, geothermal, small hydro, wind and solar plants. As Latin America’s largest natural gas producer, the country relies primarily on gas-fueled power plants, which produced around 60% of the estimated 285TWh generated in 2014.
+Mexico is the second largest power market in Latin America and one of the key clean energy markets in the world. It has 66GW of installed capacity, in which renewables represent 6%. This share is set to increase as the country attracts new funds for projects. In 2015, Mexico was among the top 10 destinations in the world for new clean energy investment, attracting a total of $4bn.
 
-Mexico's electricity market is very regulated – although this is about to change thanks to the reforms.  CFE controlled all on-grid power supplies and determined which projects could be developed privately by independent power producers (IPPs). These projects could sell electricity to CFE, which awarded power contracts through tenders. The only other options for private generators was to sell electricity directly to large consumers via bilateral agreements or under a permit of small producer of electricity. 
+Mexico’s power market is undergoing a profound transformation, moving away from a power sector controlled by a vertically integrated utility to a liberalised generation market with more opportunities for private companies. The energy reform started in 2013 and will be fully implemented by 2018. Among the power market mechanisms introduced by the reform are: unbundling of state-owned utility Comisión Federal de Electricidad (CFE), creation of an independent system operator Centro Nacional de Control de Energía, auctions in the wholesale, capacity, medium and long-term markets, transmission rights and clean energy certificates.
 
-Mexico's energy reform amended the constitution and opened generation to private developers, while transmission and distribution will remain under CFE (with some role for private investment). In addition, the reform creates a wholesale power market, operated by a newly formed independent system operator, the Energy Control National Centre (Centro Nacional de Control de Energía, or CENACE). The reform introduces auctions to contract power to the system and pave the way for clean energy certificates (certificados de energias limpias or CELs), which will be required for compliance with a yearly clean energy obligation. The first mandate established requires that in 2018, 5% of the country’s power consumption comes from clean sources (which include renewables, large hydro, nuclear and efficient cogeneration). 
+Mexico’s energy reform entered its implementation phase in 2015 with the publication of the clean energy power auction rules. In March 2016, it was announced that the first auction had contracted 394MW of wind and 1.7GW of PV projects for an average price of $48/MWh. It is expected that these projects alone will attract more than $2bn in investment in the next two years. Some of the winning projects will use locally-manufactured equipment, like PV panels and wind towers.
+In 2016, Mexico’s energy reform implementation continued. At the end of January in that year, the wholesale market started operations, albeit with limited liquidity. A second long-term auction was held in the second half of 2016, and it is expected that further regulation of the capacity market and financial transmission rights will be published.
 
-Mexico has two targets pertaining to clean energy generation and greenhouse gas reduction. The first one refers to total electricity generation coming from non-fossil sources, including renewable technologies, large hydro and nuclear. The second target aims to achieve a 30% reduction in greenhouse gas emissions by 2020 and 50% by 2050, with emission levels from 2000 set as the baseline. In 2014, around 21% of the country's 285TWh generation was from non-fossil sources (applicable to the country's renewable energy target, which includes nuclear and large hydro). 
+Electricity rates in Mexico have been falling, driven by CFE’s reduction of generation costs. Between 2014 and 2015, tariffs decreased around 25%, going from $0.14/kWh in 2014 to $0.10/kWh in 2015. 
+Mexico has a net metering policy and is a potential market for distributed generation. Installations of the latter have progressed, reaching 118MW last year, the largest amount of distributed generation in Latin America. However, deployment has been slow given the decrease of retail tariffs.
 
-Renewable energy developers may benefit from accelerated depreciation on the value of their investment in equipment. Goods used for anti-pollution and research and development purposes are also exempt from import and export taxes. Mexico has two state-run renewable energy funds: one supports energy efficiency and rural electrification initiatives, while the other offers grants to renewable energy and energy efficiency projects developed by Mexican research and academic institutions.
+Mexico has an aggressive mandate to generate 35% of its power from clean sources by 2024. The government’s definition of clean energy includes wind, solar, geothermal and biomass, as well as hydro, nuclear and efficient cogeneration. To help achieve this target, the new power market rules established clean energy certificates, imposing on all large consumers a minimum level of consumption from emission-free technologies. The target for 2018 was set at 5% for all large consumers, including CFE, increasing to 5.8% in 2019. Annual goals are set three years before and cannot be revised down.
+
+Ahead of the United Nations Framework Convention on Climate Change meeting in Paris in November 2015, Mexico was one of the first developing countries to submit its Intended Nationally Determined Contribution. It committed to a 30% emission reduction under a business-as-usual scenario (BAU) by 2020. For the 2030 commitment, it included unconditional (22% decrease) and conditional (36% decrease) targets. By 2050, it aims for a 50% reduction on emissions below BAU.
 
 
-#### Score Summary
+###Score summary
 
-Mexico in 2015 moved up one position to seventh in its overall Climatescope ranking and achieved a 1.72 score. In 2014, Mexico recorded an overall score of 1.57.
-In 2015, Mexico improved on the Clean Energy Policies Indicator of Enabling Framework Parameter I. However, that development was partially offset by softness on the Asset Finance Investment Indicator of Clean Energy Investment and Climate Financing Parameter II.
+Mexico scored 2.02 in Climatescope 2016 (up from 1.72 in the previous survey), ranking it 9<sup>th</sup> overall, two places below its position in 2015. The country’s lowest position was on Enabling Framework Parameter I, but it was also the scene of some improvement. 
 
-On Enabling Framework Parameter I, Mexico ranked 32nd in 2015, an eight-level improvement on 2014. Its Parameter I scores were 1.10 and 0.90 in 2015 and 2014, respectively.
+It took 29<sup>th</sup> place on Parameter I, an increase of three places, and its score jumped to 1.37 from 1.10. This reflected an improvement in its power sector structure, specifically the privatisation and unbundling of the power utility and introduction of a wholesale power market. 
 
-Mexico in 2015 lost ground on Clean Energy Investment and Climate Financing Parameter II, sinking to 12th from sixth. Its 2015 Parameter II score was 0.85 versus 1.12 in 2014.
+On Clean Energy Investment and Climate Financing Parameter II, its score climbed from 0.85 the previous year to 1.54 and it edged up one place to 11<sup>th</sup>. This was thanks chiefly to the seismic investment of $4.1bn, mainly in wind.
+ 
+Mexico’s score on Low-Carbon Business & Clean Energy Value Chains Parameter III was unchanged at 3.84 and it remained in 7<sup>th</sup> place. Some 27 value chains were identified and five types of financial institution.
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Mexico joined the top 10 group of countries with a move into seventh place, with a score of 3.84. Its 2014 Parameter III metrics were fifteenth position and a score of 2.82.
-
-On Greenhouse Gas Management Activities Parameter IV, Mexico matched its fourth-place rating from the prior year. Its parameter scores were materially unchanged: 3.01 in 2015 and 3.02 in 2014.
+On Greenhouse Gas Management Activities Parameter IV it took 6<sup>th</sup> position thanks to a strong set of clean energy policies and its carbon offsetting activities.

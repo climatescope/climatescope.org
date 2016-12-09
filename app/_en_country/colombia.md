@@ -1,35 +1,32 @@
 ---
 layout: country
-
 id: co
 title: Colombia
-
 region: lac
-grid: on
+grid: 'on'
+published: true
 ---
-Given its reliance on large hydroelectric power generating plants, Colombia to date has offered relatively weak policy support to other forms of low- or zero-carbon energy. The introduction of a renewable energy and energy efficiency law in 2014 may mark a turning point, as the industry awaits further regulation and incentives. 
 
-Previously, the country set a target of 6.5% on-grid and 30% off-grid non-large hydro renewable power consumption by 2020. In addition, Colombia enforces blending mandates of 10% biodiesel with conventional diesel and 10% ethanol with conventional gasoline.
+With its reliance on large hydroelectric generating plants, Colombia has offered relatively weak policy support to other forms of low-carbon energy. The renewable energy and energy efficiency law enacted in 2015 may mark a turning point for non-conventional renewable energy integration in Colombia.
 
-As of 2014, Colombia had a total installed capacity of 15.5GW. In that year, large hydro represented 65% of the 64TWh generated, with natural gas as the second most important source, with 29% of generation. Clean energy accounted for 6% of generation, mostly coming from small hydro, and to a lesser degree from biomass and wind.
+In June 2010, the country set a target of 6.5% on-grid and 30% off-grid non-large hydro renewable power consumption by 2020. In addition, Colombia enforces blending mandates of 10% biodiesel with conventional diesel and 10% ethanol with conventional gasoline.
+As of 2015, Colombia had total installed capacity of 16.3GW. In that year, large hydro represented 63% of the 66.5TWh generated, with natural gas as the second most important source, at 25% of generation. Clean energy accounted for 5% of generation, mostly coming from small hydro, and to a lesser degree from biomass and wind.
 
-Published in October 2001, Law 697 established Colombia's clean energy mandate, with distinct targets for on-grid and off-grid generation. The target for 2015 was set at 3.5% on-grid and 20% off-grid renewable generation, and both were surpassed by 2012. The longer-term 2020 goals also look to be easily achieved. 
+Under a December 2002 law, biomass and wind energy generators with projects registered under the UN’s Clean Development Mechanism (CDM) may receive income tax and import duty exemption. On 13 May 2014, law 1715 was enacted, establishing legal frameworks and instruments to promote and integrate non-conventional renewable energy (NCRE) into the national energy system. The incentives established in the law were set in November 2015 and include income tax exemption, accelerated depreciation of assets, value-added-tax exemption and import duty exemption. A fund was also created for financing clean energy and energy efficiency programmes. Colombia defines NCRE as biomass and waste, geothermal, small hydro, tidal and wave.
 
-Under a December 2002 law, biomass and wind energy generators with projects registered under the UN's Clean Development Mechanism (CDM) may receive income tax and import duty exemption. Meanwhile, a May 2014 law regulates the integration of clean energy technologies on-grid and off-grid and sets tax incentives for clean energy generation. It also created a fund for the financing of clean energy and energy efficiency programs.
+The capital city, Bogotá, in 2011 enacted a law exempting electric vehicles (EVs) from usage limits applicable to conventional vehicles to try to reduce congestion. In 2013, a government decree exempted EVs from import duty and created a five-year pilot programme for EV taxi deployment.
 
-The capital city, Bogotá, in 2011 enacted a law exempting electric vehicles (EVs) from circulation limits applicable to conventional vehicles based on license plate numbers and created a five-year pilot programme for EV taxi deployment.
+On 7 September 2015, the government of Colombia submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, committing unconditionally to cut greenhouse gas (GHG) emissions by 20% relative to the business as usual (BAU) scenario by 2030. It is prepared to increase this target to 30%, subject to availability of international support. Since 2013, Colombia has been working on developing a system for monitoring, reporting and verification of GHG emission reductions and climate financing. 
 
-#### Score Summary
 
-Colombia’s overall rank in Climatescope 2015 was 19th, compared with its 16th-place 2014 position. Its quantitative ratings were little changed: 1.39 in 2015 versus 1.33 in 2014. 
+###Score summary
 
-Colombia’s regression occurred despite a notable improvement in the Growth Rate of Installed Capacity Indicator of Parameter I. Colombia also recorded a positive Growth Rate of Power Demand Indicator in Parameter I in 2015. 
+Colombia scored 1.45 in Climatescope 2016, placing it 22<sup>nd</sup> on the list of 58 countries, down from 19<sup>th</sup>  the previous year. Its score in 2015 was 1.39. The country achieved it highest ranking on Greenhouse Gas Management Activities Parameter IV.
 
-On Enabling Framework Parameter I, Colombia in 2015 registered a 12-place improvement to 26th place. Its 2015 Parameter I score of 1.23 compares with a 2014 score of 0.98. 
+On Enabling Framework Parameter I, Colombia’s score made modest gains but it slipped one spot to 27<sup>th</sup>. An additional energy access policy and a modest increase in the volume of installed capacity were supportive factors. 
 
-On Clean Energy Investment and Climate Financing Parameter II, Colombia surrendered seven positions to 28th. Its Parameter II scores were 0.48 in 2015 and 0.66 in 2014. 
+The country’s score on Clean Energy Investment and Climate Financing Parameter II fell slightly, and it slid eleven places to 39<sup>th</sup>. This reflects the absence of new investment in 2015, having seen more than $100m in each of the two preceding years, as well as a slight rise in the average cost of debt. 
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Colombia in 2015 bettered its 2014 ratings by climbing two positions in 2015 to 22nd place at 2.05 from 1.99. 
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, Colombia’s score rose slightly but its ranking dropped by one place to rank 23<sup>rd</sup>. A wide range of value chains are covered.  
 
-Colombia stayed even with its fifth-place finish on Greenhouse Gas Management Activities Parameter IV. Its 2015 score of 2.97 was not significantly changed from 2014’s 2.95.
-
+The country’s score on Parameter IV was slightly lower, and it fell two notches to a still-strong 7<sup>th</sup>. It has adopted a broad range of carbon policies and has engaged in considerable carbon offsetting activity.

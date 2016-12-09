@@ -2,114 +2,115 @@
 layout: region
 
 id: africa
-title: Africa
+title: Africa and the Middle East
 weight: "1"
 ---
-Clean energy is making inroads in sub-Saharan Africa, with over $25bn deployed in renewables (excluding large hydro) by the
-second half of 2015. And in 2014, the region saw clean energy capacity almost double on the previous year. These technologies
-give developing countries the opportunity to build a different kind of energy system as they seek to address low electrification rates and high demand for new sources of power.
 
-But progress has not been evenly spread across the 19 African countries featured in Climatescope. South Africa accounts for
-over $16bn of the region’s clean energy investment tally, and Kenya a further $4bn. After Ethiopia, at $1.8bn, no other country has attracted more than $500m cumulatively. In addition, South Africa and Kenya have also had more success in squeezing out large projects than building broader pipelines of smaller ones. There are few countries with the frameworks in place for the latter, with Tanzania and Uganda leading the pack.
+## AFRICA & THE MIDDLE-EAST
 
-These trends are reflected in the Climatescope ranking this year. South Africa is again the out and out high flyer, with Kenya and Uganda keeping second and third places. Nigeria did rise up the rankings; but this had more to do with the large influence on investment and growth rates of a relatively small amount of financing in 2014 on a very low base than with progress on its policy framework – though its reform efforts do give it one of the most liberalized power sectors on the continent. Rwanda, Tanzania and Ethiopia follow next, in similar positions to last year. Beyond them, many countries struggle to score well, with policies and power sector reforms slow to materialize, and significant investment in clean energy even slower.
+### SUB-SAHARAN AFRICA’S GENERATION CAPACITY GAP 
 
-Notably, many of the Climatescope Africa scores did not increase, and in some cases actually decreased. South Africa’s
-score of 1.91 was marginally lower than last year, reflecting delays in the financing of projects selected under the third round of its renewable auction program. After Nigeria’s advance, Kenya clocked the next highest advance in score (from 1.69 to 1.74) partly related to the $860m financing of the Lake Turkana wind farm, sub-Saharan Africa’s largest wind deal to date.
+Of the three regions surveyed in Climatescope, sub-Saharan Africa has by far the least installed generation capacity per capita, highlighting severe shortages and massive unmet demand (Figure 1). In all, the 19 Climatescope countries in the region had a total installed capacity of just over 86GW in 2015, 4.6GW of which are renewables.  By comparison, the United Kingdom has over 90GW of total capacity installed and the US over 1,000GW installed.
 
-The biggest variations in scores between years were under Enabling Framework Parameter I and Clean Energy Investment
-Parameter II. There was very little movement for the African countries in terms of their value chains, under Parameter III,
-or carbon market activity under Parameter IV. This reflects the limited development of local value chains, and the slow growth of carbon offset projects.
+![AM Fig 1 - Megawatts installed generation capacity per million inhabitants in Climatescope regions (MW), 2015](/assets/images/content/2016/AM_Fig. 1.jpg)
 
-Africa of course includes a wide range of development and power sector situations. This diversity is exemplified by stacking
-power prices against the technological make-up of the power systems. Liberia still has among the highest power prices in the
-world, and relies heavily on fossil fuel generation, while others – especially those with a high stock of large hydro such as
-Ethiopia, Zambia and the DRC – can have prices an order of magnitude lower.
+Among sub-Saharan nations, [South Africa](/en/country/south-africa) is the outlier. The country has 845MW of installed capacity for every million inhabitants. It is also home to more than half of the regional Climatescope countries’ total capacity and renewable capacity, with 43.7GW and 2.6GW, respectively.
+Annual capacity additions in sub-Saharan Africa are quite uneven due to the relatively small size of the region’s power systems. In fact, the commissioning of a single project or two can have major impact on the region’s overall figures for a year (Figure 2 and Figure 3). This explains what would otherwise appear to be a significant slowdown in solar projects commissioning in [South Africa](/en/country/south-africa), which dropped from 909MW in 2014, a record year for new solar thermal plant connections, to 101MW in 2015. 
+[Ethiopia](/en/country/ethiopia), which commissioned 150MW of onshore wind in 2015, nearly doubling its cumulative wind capacity since 2010, is second only to [South Africa](/en/country/south-africa) in terms of new installations. [Kenya's](/en/country/kenya) geothermal sector consolidated its standing as a global leader, adding 58MW and raising total installed capacity for the technology to 740MW at the end of 2015. 
 
-Even with a low cost power source like large hydro, many governments artificially suppress power prices, leading to inefficient utilities and a barrier to entry for other players. Few have the stomach for the politically difficult task of raising them: only five Climatescope Africa countries have cost reflective tariffs. Despite increasingly favorable economics, large-scale solar development has yet to take off outside South Africa: Rwanda boasts the largest such project to date, at 8.5MW, one of the few successes of 2014. One reason is that feed-in tariffs – for instance in Ghana, Nigeria and, going as far back as 2008, in Kenya – have been slow to become operational or attract investors. Another is that governments and utilities have been slow to respond to new technologies and their reductions in cost. Another still is the low capacity of the grid for utility scale additions, and the perceived difficulty of managing their variable output.
+![AM Fig 2 - Total annual capacity additions in Climatescope sub-Saharan Africa nations, 2011 – 2015 (GW)](/assets/images/content/2016/AM_Fig. 2.jpg)
+![AM Fig 3 - Annual renewable energy capacity additions in sub-Saharan Climatescope Africa nations, 2011 – 2015 (GW)](/assets/images/content/2016/AM_Fig. 3.jpg)
 
-This in turn presents an opportunity for off-grid clean energy technologies, especially small-scale solar coupled with battery storage. Pico solar lanterns with integrated phone chargers are now becoming commonplace, sold as low-cost consumer items in the millions. Entrepreneurs are scaling the services enabled by solar to include appliances made affordable through pay-asyou-go – with some already offering TVs and refrigerators to off-grid customers. Companies working at this level of the clean energy market in Africa have raised at least $250m to date, and we expect further investment and growth in this segment.
+Hydro, large and small, is the carbon-neutral source of electricity on which the continent currently relies most, with just under 20GW of capacity installed, 671MW of which is in [South Africa](/en/country/south-africa). The overall reliability of generation fluctuates with the availability of water resources and the condition of hydro generators, which is often poor. The average capacity factor for hydro projects in the region stood at 53% in 2015 – far below typical hydro capacity factors, which can top 80%. In countries suffering from drought conditions, capacity factors can be much lower. In [Zambia](/en/country/zambia), for instance, hydro accounts for 95% of installed capacity but droughts have meant that, at best, only a third of that capacity was available in 2015.
 
-#### ENABLING FRAMEWORK PARAMETER I 
+### CLEAN ENERGY INVESTMENTS AND THE RISE OF SOLAR
 
-Enabling Framework Parameter I does more than measure policies in place. It includes 22 indicators that account for a
-country’s policy and regulatory frameworks, levels of clean energy penetration, level of price attractiveness for clean energy development, and the expectations for how large the market for clean energy can become.
+Clean energy investment across sub-Saharan Africa nearly doubled from 2014 to 2015, rising to $5.2bn (Figure 4 and Figure 5). This was largely due to a strong performance from [South Africa](/en/country/south-africa), where investment recovered from $1.3bn in 2014 to $4.1bn in 2015, closer to the record levels seen in 2012 and 2013. 
+[South Africa's](/en/country/south-africa) landmark deal in 2015 was the $1.1bn 100MW solar thermal Ilangalethu Karoshoek Solar Valley project. Other significant deals included three onshore wind farms and a solar PV portfolio, each financed for $200-400m. These deals confirmed [South Africa's](/en/country/south-africa) status as one of the world’s top investment destinations for clean energy.  
 
-For the second year running, Rwanda came out top for Parameter I. It scored highly on multiple indicators, including its high proportion of clean energy in its overall power generation capacity, while its policy framework attracted solid scores across its small-scale clean energy incentives and energy access policies. High power and fossil fuel prices are also credited as part of the enabling framework, as they signify opportunity for renewable alternatives.
+![AM Fig 4 - Sub-Saharan Africa Climatescope clean energy investment by country, 2010 - 2015  ](/assets/images/content/2016/AM_Fig. 4.jpg)
+![AM Fig 5 -  Sub-Saharan Africa Climatescope Clean energy investment by source, 2010 - 2015 ](/assets/images/content/2016/AM_Fig. 5.jpg)
 
-In 2014, the Climatescope Africa countries as a whole nearly doubled their clean energy capacity, to 4.1GW from 2.1GW at
-the end of the previous year. This was predominantly through the addition of wind and solar capacity – with the latter accounting for 45% of the increase, and the two nearly 80% combined. This achievement should be put into some perspective
-– the unsunny UK added well over 2.1GW of just solar capacity in just the first quarter of 2015 in an end-of-subsidy rush – but it is an achievement to build on nonetheless.
+Seven other African countries reviewed in Climatescope attracted new investment in 2015. The $316m financing of the 100MW Kipeto onshore wind farm in [Kenya's](/en/country/kenya) was another record-breaking deal for the country following the conclusion of the $859m Lake Turkana wind project financing in 2014. [Ghana](/en/country/ghana), [Senegal](/en/country/senegal) and [Uganda](/en/country/uganda) enabled Sub-Saharan Africa to post an all-time record year for new asset finance in the solar PV sector outside of [South Africa](/en/country/south-africa). Together, they attracted a combined estimated $160m in investment for 110MW of solar PV projects.  
 
-The new capacity was highly concentrated, however, with 73% built in South Africa. At the start of 2014, that country had 511MW of clean capacity, but that had climbed four-fold to 2GW by yearend. This was the result of the commissioning of projects selected in early rounds of its auction program. As a result, it scored higher in 2015 for the growth rates of its installed capacity and renewable electricity generation, which helped it climb to third among African nations on Parameter I, up eight places. Only Kenya and Ethiopia had significant renewable energy projects commissioned, with the former notably more than doubling its geothermal capacity with an expansion of nearly 300MW at the Olkaria project.
+All of this marked a remarkable step up for the region, considering just 12MW of solar PV secured financing in 2014 and 56MW in 2013. This acceleration is set to continue in 2016, with 145MW of solar PV already tracked by Bloomberg New Energy Finance as of Q3 (South Africa excluded). [Senegal](/en/country/senegal) continues to make progress on its pipeline, with 80MW of solar PV and 158MW of onshore wind financed in the first three quarters of 2016. 
 
-There was some progress for clean energy policy through 2014. Uganda ran the first tenders under its GET FiT program, and was
-credited by our panel of international policy experts for doing so, seeing its policy score improve more than any other Climatescope Africa nation. The success of that policy was echoed in its neighbor Tanzania, which augmented its small power producer program to introduce similar competitively-allocated FiTs in spring 2015. Mozambique also introduced a FiT in late 2014, with implementation through 2015. 
+Activity in [Ethiopia's](/en/country/ethiopia) geothermal sector also continued in 2015 with the $100m financing of the first phase of  Reykjavik Geothermal's Corbetti power plant. The year 2015 was good for new investment in clean energy across Sub-Saharan Africa, with deals exceeding $95m recorded in four countries outside [South Africa](/en/country/south-africa) (Figure 6). Finally, private equity and venture capital flows into off-grid solar accelerated from 2014 to 2015. Off-grid electrification companies in [Kenya's](/en/country/kenya), [Tanzania](/en/country/tanzania) and [Zimbabwe](/en/country/zimbabwe) received approximately $80m in 2015, more than four times the amount recorded in 2014, confirming the emergence of East Africa as the global leading region in the sector. 
 
-South Africa, with its globally-significant REIPPP auctions, again took the highest policy score overall for Africa. At the other end of the scale, Botswana, the DRC and Sierra Leone again registered low scores for their scant policy environments. Complete descriptions of all of individual policies are available at www.global-climatescope.org.
+![AM Fig 6 - Top five 2015 clean energy project financings in Sub-Saharan African countries reviewed by Climatescope](/assets/images/content/2016/AM_Fig. 6.jpg)
 
-There were no significant changes for power sector scores based on national reforms. Tanzania launched its reform process
-in 2014, with four stages that aim to see the national utility fully unbundled by 2025; its generation segment is slated to be split from transmission and distribution by the end of 2017. The DRC, which has the least open power sector among the Climatescope Africa countries, adopted a new electricity sector law in 2014, though the reforms have a long way to go in practice. Nigeria and Cote d’Ivoire again scored highest for power sector structure, reflecting the more advanced stages of sector liberalization in those countries. As with last year, it is notable that this has yet to translate into significant clean energy investment.
+### THE ROLE OF RENEWABLES IN GOVERNMENT OBJECTIVES IS GROWING 
 
-#### Off grid focus enabling framework
+Clean energy [policies](/en/policies/#/) are becoming more widely adopted across Sub-Saharan Africa. Fourteen of 19 Climatescope countries from the region have set domestic renewable energy build targets. Specifically, the negotiations that culminated in governments signing the Paris climate pact in late 2015 have prompted African nations to commit to clean energy targets or to update their existing commitments ([see Parameter I summary](/en/parameter/anabling-framework)). The overall target levels are ambitious in a number of markets, especially when considering the current contribution of renewables to the power mix (Figure 7). 
 
-For the enabling framework related to energy access, Climatescope assesses some of the key policy and regulatory questions
-around involving private investors, project developers and other companies in the off-grid and mini-grid sectors, as well as energy access policy, electrification rates and the size of the population using solid fuel for cooking.
+![AM Fig 7 - Select renewable energy targets and 2015 share of renewables in Sub-Saharan Africa](/assets/images/content/2016/AM_Fig. 7.jpg)
 
-As last year, Tanzania stands out for its policy-related off-grid focus score. The country’s program for small and mini-grid
-power producers has continued to develop a pipeline of projects. Kenya follows, as last year, with standardized power purchase agreements also available for small projects there, while Uganda moves up, a reflection of its own innovative GET FiT program. East Africa clearly leads the way for tackling energy access through policy mechanisms.
+Some targets have also become more sophisticated. For example, the government of [Rwanda](/en/country/rwanda) has been working on an update of its electrification [plan](/en/policies/#/policy/4607) that includes a new breakdown of electrification targets by off-grid systems and mini-grids. As before, [Rwanda](/en/country/rwanda) aims to reach an installed capacity of 563MW, up from just over 170MW, and 70% of electrification, both by 2018. 
 
-#### CLEAN ENERGY INVESTMENT & CLIMATE FINANCING PARAMETER II 
+While the overall trend appears positive, there are countries that have not reviewed the ambition of their targets, which remain relatively low. [Tanzania](/en/country/tanzania) only [plans](/en/policies/#/policy/4219) to install 100MW of solar, 200MW of geothermal and 200MW of onshore wind by 2025 against a complete power-generating matrix of 10.7GW. 
 
-Clean Energy Investment & Climate Financing Parameter II looks at 14 indicators and accounts for the amount of clean energy
-investment a country attracts, the availability of local funds, the local cost of debt and green microfinance activity.
+![AM Fig 8 - Utility-scale renewables support in Africa, 2013 ](/assets/images/content/2016/AM_Fig. 8.jpg)
 
-South Africa was again the leading African country for clean energy investment, followed by Kenya. But no other country came
-within touching distance for 2014. Overall, the continent saw a 57% drop from 2013 levels. This was largely due to delays in
-the financing of projects selected under the third round of South Africa’s auction program – which was completed in the first half of 2015 to the tune of $3.6bn. The Climatescope Africa countries excluding South Africa saw their clean energy investment decline 10% overall year-on-year – but this was again very chunky, with large projects having a significant impact, rather than a more diverse deal flow of smaller projects.
+Meeting those objectives will also require governments to establish supporting [policies](/en/policies/#/), as well as to ensure the existence of power markets and physical systems to support renewables growth. Nearly two thirds of the sub-Saharan African countries reviewed in Climatescope either have no target, or have targets without feed-in tariffs, auction or other forms of support policies in place to ensure they are met (Figure 8).
 
-In 2014, Kenya replaced Ethiopia as the country with the most significant financing outside of South Africa. The 310MW Lake
-Turkana wind project reached financial close in March 2014 after nine years of development. At $860m it remains sub-Saharan Africa’s largest wind financing to date, and was one of the largest in the world in 2014. This helped push wind’s share of total clean energy investment up to 38% in 2014 from 29% the previous year, while solar again took about half.
+Clean energy equipment is partly or completely exempted from  taxation or import duties in all Sub-Saharan Africa countries reviewed in Climatescope, with the exception of [Sierra Leone](/en/country/sierra-leone). However, actually securing such duty or tax exemptions is often difficult due to poor implementation or corruption. Some governments in the region are now looking to review such duty exemptions, most notably those in the East African Community, now that activity is accelerating and the associated lost revenue becomes more evident. 
 
-With 13 organizations involved in the financing, Turkana is a totemic achievement in project financing for the region. It overcame multiple setbacks, including the withdrawal of the World Bank, which was unable to give a partial risk guarantee as the government would not sign a sovereign guarantee. The lead developer, Aldwych International, is also seeking to develop a
-100MW wind project in Tanzania.
+There have also been promising examples of countries looking to emulate the successes of South Africa’s [auction program](/en/policies/#/policy/4366). [Senegal](/en/country/senegal), [Tanzania](/en/country/tanzania) and [Zambia](/en/country/zambia) are all part of the International Finance Corporation’s Scaling Solar initiative, which seeks to support the development of privately funded grid-connected solar projects at competitive tariffs. 
 
-Overall, Nigeria came out top among the African countries for Parameter II. Its score was bolstered by the only other financing outside of Kenya and South Africa above a hundred million dollars in 2014, for 40MW of small hydro. As it had no significant deals the year before, Nigeria achieved maximum points for the growth rate of clean energy investment.
+The first round of [tenders](/en/policies/#/policy/4867) in [Zambia](/en/country/zambia) was held between January and June 2016 and produced average bids of $67/MWh, with Italy’s Enel and a consortium of USA based solar manufacturer First Solar and France’s Neoen. Supported by IFC, the tenders offer successful developers risk guarantees and access to concessional financing. [Nigeria](/en/country/nigeria) has also recently committed to using auctions and will be a country to watch in Climatescope 2017.
 
-Kenya climbed four places to finish second, largely thanks to the level of investment brought in by Turkana, while South Africa slipped from third to fifth. Their high finishes on Parameter II are also explained by relatively favorable financing conditions within both countries. Third place was instead taken by Rwanda, primarily from the uptick in investment from GigaWatt Global’s solar project in early 2014. That project, which was fully commissioned in the first quarter of 2015, is at 8.5MW by far the largest solar farm in the region, outside South Africa.
+### ENERGY MARKET REORGANISATION IS MAKING SOME PROGRESS AND OFF-TAKE RISK IS INCREASINGLY BEING ADDRESSED
 
-#### LOW-CARBON BUSINESS AND CLEAN ENERGY VALUE CHAIN PARAMETER III
+Energy sectors in the Sub-Saharan African markets reviewed in Climatescope tend to be dominated by single, and often state-owned utilities responsible for a large share of generation, as well as all transmission and distribution. “Unbundling” such utilities and liberalizing a country’s electricity sector are often challenging, lengthy and politicized processes.
 
-Low-Carbon Business and Clean Energy Value Chain Parameter III assesses through three indicators the availability of local manufacturing and other capacity to spur clean energy deployment. These take into account the presence of local manufacturers, service providers, financiers and (for the African countries apart from South Africa) include those companies serving the off-grid and distributed energy sectors.
+Seven of the 19 Climatescope sub-Saharan Africa countries failed to score any points for taking action on utility unbundling in Climatescope 2016, down from 11 in the 2015 edition. New countries to take at least some action on this front include [Cameroon](/en/country/cameroon), [Mozambique](/en/country/mozambique), [Rwanda](/en/country/rwanda), [Sierra Leone](/en/country/sierra-leone) and [Tanzania](/en/country/tanzania). [Liberia](/en/country/liberia) and [Malawi](/en/country/malawi) are amongst the countries that have already introduced policies to unbundle the energy sector further in coming years. [Côte d’Ivoire](/en/country/cote-ivoire), [Ethiopia](/en/country/cote-ivoire), [Ghana](/en/country/ghana), [Kenya](/en/country/kenya), [Nigeria](/en/country/nigeria), [Senegal](/en/country/senegal), [Uganda](/en/country/uganda) and [Zambia](/en/country/zambia) introduced some level of unbundling as of 2013. 
 
-There was almost no variation in the clean energy value chains in place in the African countries in Climatescope over the course of 2014. South Africa, Uganda and Kenya again take the top three spots, and there is no change in the top 12 ranking apart from Ethiopia and Tanzania switching fifth and sixth places. We found a South African insurance provider for clean energy projects to add to the country’s impressive roster of service companies active in the sector. The biggest movement in the parameter, however, was the DRC, which dropped several places as we found we had moderately overstated its meagre
-local manufacturing capacity in last year’s assessment.
+Scores on this indicator demonstrate the progress achieved by Sub-Saharan African countries in improving their power sector structures (Figure 9). [Nigeria](/en/country/nigeria), [Côte d’Ivoire](/en/country/cote-ivoire) and [Ghana](/en/country/ghana) are the only countries that scored significantly lower on this assessment between 2013 and 2015. 
 
-On the other hand, the higher ranked countries again demonstrate the presence of local players that could benefit from investment inc lean energy. Aside from South Africa, which is really a separate case entirely, the countries that clocked high scores are those with relatively larger economies or that have seen the start of renewable energy project development
-in recent years. There is a clear relationship between clean energy investment and installed capacity, on one hand, and the size of the clean energy value chain, on the other. This is not controversial, or surprising, but Climatescope helps us demonstrate this with data.
+The financial situation of off-takers in [Nigeria](/en/country/nigeria) has prevented the growth of new generation capacity both from renewable and fossil fuel sources. The government has introduced the Nigerian Bulk Electricity Trading organization to act as a viable off-taker in an attempt to address this. 
 
-South Africa’s strong performance on Parameter III again reflects not just its regional relevance, but also the “local content” rules under its renewable energy auctions. Bidders are favored if they use components manufactured in-country. Solar and wind manufacturers have seen a surge in recent years, while biofuels, biomass and small hydro companies have existed for longer. South Africa’s services sector befits an economy of its size, while many of its banks haveb een involved in financing the projects delivered through the REIPPP
+In [Côte d’Ivoire](/en/country/cote-ivoire) the generation sector has been opened to private sector participation but little has been done to support access to the market for renewables and the state remains heavily involved in the transmission system operator. Similar dynamics have affected [Ghana's](/en/country/ghana) power sector, where developers have found it difficult to negotiate new PPAs with the government. However, the rising frequency of power outages in [Côte d’Ivoire](/en/country/cote-ivoire) has also helped create a new incentive for solar PV and storage solutions in the residential and commercial sectors. 
 
-For the value chains and service providers assessed under the off-grid focus methodology, Uganda again came out top, with at least one locally-based company involved in off-grid energy including distributed solar, mini-hydro and clean cooking. Kenya, Tanzania, Rwanda and Nigeria also score strongly. In general, in many African countries the business of off-grid clean energy access – particularly through the retail of small-scale solar products – is gathering pace, albeit that may be restricted to larger towns (our analysis does not extend to the availability of these options in rural areas).
+![AM Fig 9 -Sub-Saharan Africa Climatescope nations power market structures scores (% of maximum score, Climatescope 2014 vs. 2016)](/assets/images/content/2016/AM_Fig. 9.jpg)
 
-#### GREENHOUSE GAS MANAGEMENT ACTIVITIES PARAMETER IV
+Liberalization is focused on the generation market with transmission and distribution almost always in the hand of either a single national utility, or several utilities each with monopolies over specific geographic areas. The role of independent power producers (IPPs) remained relatively stable between 2013 and 2015, averaging 23% of generation across the region. However, the near doubling of IPP generation market share in [Tanzania](/en/country/tanzania) and [South Africa](/en/country/south-africa) over this period, from 26% to 47% and 3% to 6% respectively, shows how rapidly the situation can evolve.
 
-Greenhouse Gas Management Activities Parameter IV takes into account carbon offset project activity, level of policy support
-for carbon emissions reduction, and local corporate awareness of carbon issues through a total of 13 indicators.
+Structural challenges such as offtake risk, abuse of influence by incumbent utilities and political or currency risk continue to limit the growth of IPPs and renewables in the region. However, a number of countries have taken measures to address these challenges, and the average score on the off-take risk indicator for sub-Saharan African nations in the survey has risen from 0.38 in 2014 (against a maximum 2.0 score) to 0.61 in this latest update.  
 
-In general, African countries have seen much less Clean Development Mechanism activity than Asia. This relates to risk
-perception, and the lower demand for credits from forestry projects versus industrial efficiency. Carbon reductions have
-also not been a priority for many African countries, which have lower emissions profiles to match their lower levels of
-industrialization.
+The Nigerian government has created Nigeria Bulk Electricity Trading to act as a single offtaker for all IPPs, as the poor financial health and management of the country’s distribution company has caused payment delays. Uganda received support from the International Finance Corporation and World Bank to award two 50MW solar PV project contracts that protect developers from political and currency risk and give access to concessional financing. [Senegal](/en/country/senegal) and [Tanzania](/en/country/tanzania) are expected to follow suit. Finally, the South African treasury has agreed to assume responsibility for all payments to renewable energy project developers under the country’s IPP program in cases where state-owned utility ESKOM cannot. Climatescope scores countries based on the risk posed to project developers by local off-takers, or buyers of their power.  
 
-South Africa ranked 1st on Parameter IV, followed by Uganda, Ghana and Kenya. The only new entrant in the top five came
-with Malawi moving up a place: it registered three additional projects across the CDM and two voluntary carbon offset
-standards, as did South Africa, Kenya, Rwanda and the DRC. South Africa’s 64 projects in total were trailed by 44 in Kenya,
-25 in Uganda; but only Nigeria, with 11, is otherwise in double figures. The most common type of project was again energy
-efficiency with 14 of the Climatescope Africa countries’ 18 new projects in 2014 falling under that category.
+### OFF-GRID RENEWABLES ARE MAKING INROADS
 
-In Climatescope, the carbon offset score is levelized against total emissions, which meant South Africa did not score highly in this category because of its superior number of projects. Rather, it was among the few countries that host think tanks and business training in the sector – along with several East African countries and Ghana.
+Exceptional cost reductions for different components used in off-grid electrification solutions are starting to transform the power sector in Sub-Saharan Africa (Figure 10). 
 
-In Climatescope, the carbon offset score is levelized against total emissions, which meant South Africa did not score highly in this category because of its superior number of projects. Rather, it was among the few countries that host think tanks and business training in the sector – along with several East African countries and Ghana.
+![AM Fig 10 - Pico-solar lantern cost development ($ per unit)](/assets/images/content/2016/AM_Fig.10.jpg)
 
-South Africa’s Parameter IV score was also bolstered by its still being the only Climatescope Africa country to have any carbon policy to speak of. That may change beyond 2015, in the wake of the Paris climate conference – as indeed may the level of emissions reduction project activity on the continent.
+Just under 11m households in the region were using pico-PV systems to electrify their homes as of June 2015, typically with solutions sufficient to power a couple of lights and charge mobile phones, according to BNEF research (Figure 11). However, it is also clear that the penetration of off-grid solutions is quite uneven across the continent.
+
+![AM Fig 11 - Estimated number of households using pico-PV (millions), June 2015](/assets/images/content/2016/AM_Fig.11.jpg)
+
+East African nations have seen the highest uptake of off-grid technology, and this includes the Sub-Saharan markets reviewed in Climatescope. This was achieved due in large part to a positive enabling environment combining high mobile phone and mobile money penetration with harmonized taxation schemes favoring renewable energy off-grid technologies applied across all members of the East Africa economic community. 
+
+The region is home to some of the world’s most successful pay-as-you-go (PAYG) solar companies, and they have attracted a growing interest from venture capital (VC) investors. Off-grid solar companies located in the sub-Saharan Africa markets reviewed in Climatescope attracted around $115m of VC investments since 2012, $90m of which was invested in East African countries, primarily into PAYG activities. 
+
+Globally, Bloomberg New Energy Finance tracked $551m of investment in the off-grid renewables sector, excluding minigrids, as of the first quarter of 2016.
+
+The potential for off-grid electrification solutions is also increasingly being recognised by the governments of the region. All 19 Sub-Saharan Climatescope countries have stated targets for improving electrification rates. Among them, 13 have explicitly detailed plans to incorporate off-grid solutions to achieve their goals (Figure 12).
+
+![AM Fig 12 - Countries including off-grid solutions in their national electrification targets ](/assets/images/content/2016/AM_Fig.12.jpg)
+
+The effective level of government support for off-grid solutions still varies greatly across the continent. Rwanda has fully recognized the cost saving potential and application of different off-grid technologies and has established [targets](/en/policies/#/policy/4607) for pico-solar system distributions, mini-grids and grid extensions with similarly ambitious budget targets for each. This a marked move away from electrification plans in the region in the past, which have tended to focus heavily on grid extensions. 
+
+[Côte d’Ivoire](/en/country/cote-ivoire) on the other hand, has earmarked just under 5% of its rural electrification budget for isolated systems and the government has made clear that a stronger emphasis will be put on the subsidization of grid extensions and new consumer connections. 
+Coming years will be critical in deciding what contribution off-grid energy solutions will make toward electrification of Sub-Saharan African markets as governments and donor agencies have made access to electricity a top priority. 
+
+In many cases, the use of renewables in mini-grids or stand-alone systems offers a cost-effective way to provide consumers access to the energy services they need most, lighting and the charging of low-power devices such as mobile phones. Ensuring that electrification plans are drafted with full recognition of the costs and technological profiles of different solutions will be essential toward ensuring that access scales as quickly – and cost effectively – as possible. 
+
+
+_Starting in 2017, the Global Climatescope website will be enriched with quarterly market updates on trends in the off-grid industry._
+
+
+
+
+
+

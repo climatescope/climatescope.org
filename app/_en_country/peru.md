@@ -1,34 +1,33 @@
 ---
 layout: country
-
 id: pe
 title: Peru
-
 region: lac
-grid: on
+grid: 'on'
+published: true
 ---
-Technology-specific auctions have been one of the key drivers of non-conventional renewable deployment in Peru, helping to promote diversification of the country’s matrix through contract awards for biomass, small hydro, solar and wind plants. The country also has a modest clean energy generation target and a biofuel blending mandate.
 
-In 2014, Peru generated 9% of its total 45TWh from renewable sources (biomass, wind, solar and small hydro), large hydro accounting for 41%, natural gas accounting for 27%, and coal, oil and diesel for the rest. To promote renewables, Peru offers several policy incentives, including priority dispatch, 20% accelerated depreciation and technology-specific auctions for renewables. Because of the country’s hydro and gas resources, intermittent clean energy sources are usually only contracted through the auction system. 
+Technology-specific auctions have been one of the key drivers of renewables deployment in Peru, helping to promote diversification of the country’s matrix through contract awards to biomass, wind, solar and small hydro plants. The country also features a modest clean energy generation target, which is pending revision and a biofuel blending mandate.
 
-Introduced in 2008, the auctions have been key in spurring project development. The Ministerio de Energia y Minas (MINEM) every two years evaluates the need for auctions, and the Organismo Supervisor de la Inversión en Energía y Mineria (OSINERGMIN) conducts the tenders. The auctions are technology-specific and contracts are awarded to developers who offer the lowest tariff per kWh for a given technology. 
+In 2015, Peru generated 9.5% of its total 48TWh from renewable sources (biomass, wind, solar and small hydro). Large hydro accounted for 41.2%, natural gas for 30.8%, and coal, oil and diesel for the rest. To promote renewables, Peru offers priority dispatch and 20% accelerated depreciation for renewables projects.
 
-Peru has held three renewable on-grid auctions and one for off-grid solar capacity. In the on-grid tenders, OSINERGMIN has awarded power contracts to 58 projects for a total of 882MW from biomass, small hydro, solar and wind sources. The off-grid auction was introduced to support government’s rural electrification programs. As a result, 500,000 off-grid solar PV systems are expected to be in operation in 15,000 remote locations in the country by December 2018.  A fourth renewable energy on-grid auction was launched in September 2015. The auction will contract 450GWh from small hydro projects up to 20MW and another 1,300GWh of biomass, wind and solar PV. 
+Introduced in 2008, the auctions have been key in spurring project development. The Ministerio de Energia y Minas (MINEM) every two years evaluates the need for auctions, and the Organismo Supervisor de la Inversión en Energía y Mineria (OSINERGMIN) conducts the tenders. The auctions are technology-specific and contracts are awarded to developers who offer the lowest tariff per kWh for a given technology. Peru has held five renewable auctions, including one for off-grid solar capacity. In the on-grid tenders, OSINERGMIN has awarded power contracts to 64 projects for a total of 1,257MW from biomass, small hydro, solar and wind sources. The latest renewable energy auction winners were identified in February 2016. The average contracts awarded for wind and solar projects represented the lowest prices recorded on an unsubsidised basis in the Western Hemisphere at the time.
 
-Peru is one of a handful of countries in Latin America with a renewable energy target, which is subject to revision every five years. Established in 2008 by MINEM, the first target for the 2008-2013 period was set at 5% of the country’s total electricity consumption. As of September 2015, the target had not been revised.
+Peru is one of a handful of countries in Latin America with a mandatory renewable energy target, which is subject to revision every five years. Established in 2008 by MINEM, the first target for the 2008-2013 period was set at 5% of the country’s total electricity consumption. As of 2016, the target had not been revised.
 
-Peru initially struggled to meet its biofuel blending target established in 2007, which mandated that 7.8% ethanol be blended into the gasoline stock and 5% biodiesel be blended with diesel fuel. Limited national biofuel production and a lack of operations and maintenance service providers to support the industry prompted the government to twice delay the blend start date in certain parts of the country. As of the end of 2011, however, the blend was in force country-wide.
+Peru initially struggled to meet its biofuels blending target established in 2007, which mandated that 7.8% ethanol be blended into the gasoline stock and 5% biodiesel be blended with diesel fuel. Limited national biofuel production and a lack of operations and maintenance service providers to support the industry prompted the government to twice delay the blend start date in certain parts of the country. However, the blend has been in force country-wide since 2011.
 
-Peru’s government has submitted its Intended Nationally Determined Contributions (INDC) in advance of the climate negotiations in Paris. Contributions include renewable energy and greater emphasis on solar energy. 
+In September 2015, the government of Peru submitted its Intended Nationally Determined Contribution (INDC) to the United Nations. The INDC does not establish a new renewable energy target, but indicates it will promote renewable energy sources and replace coal, oil and diesel with natural gas in thermal plants by way of GHG emissions reduction actions.
 
-#### Score Summary
 
-Peru’s 1.31 overall score in Climatescope 2015 placed it 16th among all countries, down from 11th position in 2014, when it scored 1.50. 
-Peru’s year-over-year decline was based in part on deterioration in the Clean Energy Policies Indicator of Enabling Framework Parameter I. It also saw a minor decline in the Growth Rate of Clean Energy Investments Indicator of Clean Energy Investment and Climate Financing Parameter II.
+###Score summary
 
-On Enabling Framework Parameter I, Peru finished 18th, down eight places from 2014, with a 2015 score of 1.34. Its 2014 score was 1.40.
-On Clean Energy Investment and Climate Financing Parameter II, Peru scored 0.70, down from 0.88 in 2014. Its Parameter II ranking was 16th in 2015 versus 12th in 2014.
+Peru scored 1.60 in Climatescope 2016 (an increase of 0.16), which placed it in 16<sup>th</sup> position overall, unchanged from the previous year. The country’s best performance was on Greenhouse Gas Management Activities Parameter IV. 
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Peru’s 21st-place finish in 2015 was two places above its 2014 position. The country’s 2015 and 2014 Parameter III scores were 2.11 and 2.05, respectively.
+It placed 20<sup>th</sup> on Enabling Framework Parameter I with a score of 1.56, up from 1.34 the year before. This relatively strong result reflects the country’s clean energy policies, such as energy auctions and tax incentives, as well as its moderately supportive power structure. 
 
-On Greenhouse Gas Management Activities Parameter IV, Peru maintained its ninth-place rating of 2014. Its 2.49 2015 score is a slight improvement over 2014’s 2.46.
+Peru fell seven places to 23<sup>rd</sup> on Clean Energy Investment and Climate Financing Parameter II. Investment has flowed into the sector at a high rate since 2011, and 2015 was no exception.
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country scored 2.11, unchanged from the year before. It took 24<sup>th</sup> place, three spots down from its previous ranking. There were fifteen clean energy value chains identified in 2015, and 10 service companies. 
+
+On Parameter IV, Peru earned its highest position, taking 5<sup>th</sup> place globally, up from 9<sup>th</sup>. It was engaged in a significant number of carbon offsetting projects, and has a GHG emissions reduction target in place, among other supportive policies.

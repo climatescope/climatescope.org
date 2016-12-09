@@ -1,38 +1,43 @@
 ---
 layout: country
-
 id: rw
 title: Rwanda
-
 region: africa
-grid: off
+grid: 'off'
+published: true
 ---
-Rwanda has one of the smaller energy sectors among sub-Saharan countries – but one with a lot of activity. The government is pressing toward two ambitious targets by June 2018: to increase Rwanda’s total power capacity to 563MW and access to electricity by its residents to 70%.
 
-The government has several tools to hit its 563MW target: tenders, unsolicited proposals, a small hydro feed-in tariff, mini-grids and utility reform. Renewables supply most of the country's power, with 57% hydro and 6% solar; the rest is mostly diesel. The capacity pipeline has solar and hydro falling just below 50% of the total by July 2018, with a natural gas recovery project and peat taking greater shares.
-The Rwanda Electricity Group (REG) contracts new capacity through a competitive tendering process. Most large power projects go through this route. For unsolicited proposals, developers can approach the Rwanda Development Board (RDB) to start the process.
+Rwanda is a small country that has one of the smaller energy sectors among sub-Saharan African countries – but one with a lot of activity and innovation. The government is pressing toward two ambitious targets by June 2018: to increase total power capacity to 563MW and access to electricity to 70% while reducing carbon intensity of the power mix by 10%.
 
-In 2014, Rwanda commissioned the largest PV project in sub-Saharan Africa outside South Africa – and the only one of significant size. The 8.5MW solar farm was developed by GigaWatt Global and built by Scatec Solar, which is also an equity investor. Norfund, FMO, OPIC and the Emerging Africa Infrastructure Fund were other investors in the $23.7m project.
-Feed-in tariffs are the main support for small hydro and micro-hydro projects. Developers have complained that the current FiTs, at $67–$166/MWh, are not high enough to support new projects. The Rwanda Utilities Regulatory Authority (RURA), is considering whether to raise the FiTs, and needed to publish new regulations in 2015 to avoid the scheme lapsing.
+To meet its 2018 installed capacity target, Rwanda will need to add 400MW to the 160MW installed in 2015: 80MW of hydro, 40MW of solar PV, 150MW of interconnections)1, 75MW of methane, 85MW of peat and the rest of heavy fuel oil. The country will struggle to meet this target in the original timeframe and installations more in line with its own ‘likely demand’ prediction of 444MW are more likely.
+Nevertheless, the government has introduced several tools that will allow it to reach its 563MW target soon. These include a utility reform, tenders, unsolicited proposals, favourable tax regimes, innovative mini-grids regulation, as well as substantial backing from international donors and private sector interest.
 
-RURA is also producing new regulations for mini-grids. The new regulations will simplify the licensing process and create three new forms of mini-grids. They will also provide for new ‘small power distribution providers’ serving up to 20,000 customers without being involved in generation. Operators are allowed to set their own rates; RURA will intervene if they are judged to be unfair.
+The electricity sector can also build on existing experience. Renewables supplied most of the country's power in 2015, with 57% hydro and 3% solar. The rest is mostly diesel (37%) but the first phase of the Kivuwatt gas plant brought 25MW online at the end of 2015. This ground-breaking project recovers methane in Lake Kivu to supply 100MW of gas capacity once completed, reducing the risks linked to a sudden release of the trapped methane in the environment.
 
-The government issued a law in August 2014 splitting the former state utility apparatus into two parts – electricity, and water and sanitation. This was to increase effectiveness in operations, reduce cross-subsidisation and set each on a route to needing zero subsidy from the government.
-The new electric utility, REG, is a wholly owned government enterprise. Operations are carried out by two subsidiaries – the Energy Development Corporation Limited (EDCL) and the Energy Utility Corporation Limited (EUCL). EDCL supports new capacity development – by itself and independent power producers. EUCL is a more traditional utility, operating generation and selling the power.
+Rwanda has processes for creating power purchase agreements through tenders and unsolicited proposals for grid-connected projects. The Rwanda Electricity Group (REG) contracts new capacity through a competitive tendering process. Most projects go through this route which is preferred by the authorities. For unsolicited proposals, developers can approach the Rwanda Development Board (RDB) to start the process. All the contracts awarded are 20- or 25-year “take-or-pay” agreements. Off-grid power generation (< 5MW) or mini-grid projects (< 1MW) must apply for licences at the Rwanda Utilities Regulatory Authority which are awarded for 5 to 25 years.
 
-The 70% access target has two components – 48% of households gaining access through the grid and 22% through off-grid solutions. The Electricity Access Rollout Program (EARP)’s main focus is on grid extension. EARP is funded by the government, the World Bank and several other development agencies and banks.
+The new electric utility, the Rwanda Electricity Group (REG), is a private company established in 2014, albeit wholly owned by the government. Operations are carried out by two subsidiaries – the Energy Development Corporation Limited (EDCL) and the Energy Utility Corporation Limited (EUCL). EDCL supports new capacity development – by itself and independent power producers. EUCL is a more traditional utility, operating generation and selling the power.
 
-New connections cost an average of $1,000 each, with 80% paid by EARP, 10% from the utility and 10% from the customer. In most cases, the customer’s share is paid by a low-cost loan from the utility and repaid via a charge on electricity bills.
-EARP plans to mostly meet the off-grid part with distributed solar. A full survey of rural areas later this year will help to identify priority locations for the off-grid efforts.
+The country also has a feed-in tariff programme which is currently under review (Q1 2016) historically used to support small hydro and micro-hydro projects that will be extended to solar and bioenergy in the future. A further 26MW of small hydro and a combined 12MW of solar and bioenergy projects are expected to be supported to 2018.
 
-#### Score Summary
+RURA released the off-grid simplified licensing regulation in the summer of 2015. Mini-grid (>1MW) and distributed generation projects (>5MW) can now apply for operational licences for between 5 and 25 years of operation awarding them the right to sell electricity at tariffs set by themselves. The regulator verifies that the tariffs do not exceed a reasonable rate of return. The processing time for licence application may not exceed 60 days according to the regulation.
 
-Rwanda scored 1.41 in Climatescope 2015, placing it 17th on the list of countries overall. The country gained six places on its ranking in 2014 thanks to improved scores on Enabling Framework Parameter I and Clean Energy Investment and Climate Financing Parameter II. 
+This development should contribute to the scaling of Rwanda’s vibrant distributed solar sector which has mostly been focused on pico-solar and home appliances to date. Rwanda has been one of the most welcoming countries for the sector with 22% of the 70% energy access target to be achieved through off-grid solutions. VAT exemptions have been extended to cover renewable energy generation and associated products including DC appliances such as TVs and fridges in 2015. Finally, a number of donors have recently committed to support off grid electrification in the country including the European Union, which has signed a $202m financing agreement with government in May 2016, and the Climate Investment Fund’s Scaling Up Renewable Energy Program.
 
-The country was strongest on Parameter I, where it placed second globally, behind only Uruguay. This reflected growth in its already high proportion of clean energy generating capacity.
+On grid, new connections are heavily supported by the government electrification programme. Connections cost an average of $750 each, with 80% paid by Electricity Access Rollout Project, 10% from the utility and 10% from the customer, in most cases supported by a low-cost loan from the utility and repaid via a charge on electricity bills spread over 5 years. A rural electrification plan update was released in the summer of 2016 in which the areas to be electrified by off-grid solutions, split between solar lighting and solar home system priority areas, and those to be connected to the grid are defined.
 
-On Parameter II, Rwanda’s score rose sharply thanks to an increase in the growth rate of clean energy investment.
+ 
+###Score summary
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country’s score was slightly better than average. It was supported by a relatively high number of distributed clean energy value chains and service providers. 
+Rwanda’s score increased to 1.73 in Climatescope 2016 (up from 1.41 in 2015) as it made gains on all parameters, apart from Clean Energy Investment and Climate Financing Parameter II. The country ascended four places to 13<sup>th</sup> position overall.
 
-Rwanda was ranked 47th on Greenhouse Gas Management Activities Parameter IV as it has no carbon reduction policies.
+The country was strongest on Enabling Framework Parameter I, where it placed 2<sup>nd</sup> globally, just behind Uruguay. This reflected its well-developed distributed energy framework and improvements in the structure of its power sector.
+
+On Parameter II, Rwanda’s score fell and it dropped fourteen places to 29<sup>th</sup> as no new investment was recorded in 2015. 
+
+The presence of financial institutions, including venture capital and private equity clean energy investors, boosted the country’s score on Low-Carbon Business & Clean Energy Value Chains Parameter III. It gained nine places to rank 17<sup>th</sup>.
+
+On Greenhouse Gas Management Activities Parameter IV, the country climbed fifteen places to rank 27<sup>th</sup> thanks to the presence of a number of corporate awareness initiatives as well as the World Bank’s Partnership for Market Readiness programme.
+
+____________________________________________________
+<sup>1</sup>Rwanda’s power supply cost are on average 50% higher than its neighbours
