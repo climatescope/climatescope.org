@@ -1,10 +1,9 @@
 ---
 published: false 
-postId:tes
-title: blog post
+postId: test
+title: Test blog post
 
-
-description: ASIA’S ENERGY TRANSITION IN AN AGE OF PLENTY
+description: Test blog post description
 ---
 
 ##ASIA’S ENERGY TRANSITION IN AN AGE OF PLENTY
