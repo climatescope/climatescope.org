@@ -5,11 +5,11 @@ title: Test blog post
 
 description: Test blog post description
 ---
-## JORDAN’S MA’AN DEVELOPMENT AREA: HOW RENEWABLE ENERGY CAN BOLSTER THE ECONOMY
+##<b>JORDAN’S MA’AN DEVELOPMENT AREA: HOW RENEWABLE ENERGY CAN BOLSTER THE ECONOMY</b>
 
 A two-hour car journey south from Amman on Jordan’s Desert Highway takes us to Ma’an. This is a city of 50,000 people and is one of the five development areas announced in Jordan to promote economic activity. It has become a case-study of how government support for renewable energy investment can give a boost to the local economy. Ma’an Development Area (MDA), managed by Ma’an Development Co. (MDC), hosts solar projects that range from small domestic systems to large utility-scale plants that cover five square kilometres and has drawn $400m of investment. 
 
-![Solar park in the Ma’an Development Area, Jordan](http://global-climatescope.org/assets/images/content/CS2016_blog_Jordan_fig1.png)
+![Solar park in the Ma’an Development Area, Jordan](/assets/images/content/CS2016_blog_Jordan_fig1.png)
 
 *Solar park in the Ma’an Development Area, Jordan*
 
@@ -19,7 +19,7 @@ Firas Rimawi, adviser to the chief executive officer of MDC, recalls being asked
 
 Eight years on, we drive into Ma’an’s solar park, where panels stretch as far as the eye can see. The early positioning of MDA in solar discussions has played an important part in Ma’an’s renewables success. The region was in a very favourable position to attract investors when the government announced the first round of its so-called direct proposal scheme in 2011. Out of the 200MW of solar projects allocated in the first round, 160MW is being built in this area and is expected to be operational by year-end. Driving around the park, Rimawi says that he is proud of what has been achieved, but adds that it has been a learning process for both developers and the government. Still, the hard work seems to have paid off: the execution of these projects has led to greater investor confidence and to the second round of proposals. Four 50MW solar projects were the winners, and strike prices were halved to $0.06-$0.08 per kWh, from the first round’s $0.17 per kWh. 
 
-![Winners of Jordan’s Direct Proposal Schemes – PV projects](http://global-climatescope.org/assets/images/content/CS2016_blog_Jordan_fig2.png)
+![Winners of Jordan’s Direct Proposal Schemes – PV projects](/assets/images/content/CS2016_blog_Jordan_fig2.png)
 
 *Source: Bloomberg New Energy Finance*
 
@@ -27,7 +27,7 @@ In addition to increasing the renewable energy capacity of the country, these pr
 
 Among commercial-scale systems in Ma’an, MDC installed a 1MW net-metering project at its student dorms, the first MW-scale project for the country. This has helped show the potential for this segment, given the very high retail electricity prices in Jordan: depending on consumption levels, commercial organisations can pay as much as $0.40/kWh. The payback period is only two years for the project. 
 
-![Winners of Jordan’s Direct Proposal Schemes – PV projects](http://global-climatescope.org/assets/images/content/CS2016_blog_Jordan_fig3.png)
+![Winners of Jordan’s Direct Proposal Schemes – PV projects](/assets/images/content/CS2016_blog_Jordan_fig3.png)
 
 *1MW system installed at a university accommodation in Ma’an*
 
