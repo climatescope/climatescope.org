@@ -20,7 +20,9 @@ The consistency and success of South Africa’s auction program is also making w
 
 The South African success story is a good illustration of how an innovative and stable policy framework can build on strong fundamentals to attract investment and deliver a socially-inclusive energy transition. Climatescope dives deep into the foundations of this success. Explore [South Africa’s country profile](/en/country/south-africa/) and more in this year’s edition of Global Climatescope!
 
-Sara Giordano
+**Sara Giordano**
+
+Bloomberg New Energy Finance
 
 ###LINKS TO RELATED CONTENT
 
