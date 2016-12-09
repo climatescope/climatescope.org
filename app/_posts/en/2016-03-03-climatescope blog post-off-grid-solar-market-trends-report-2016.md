@@ -1,10 +1,11 @@
 ---
 published: false 
-postId: test
+postId: blog post
 title: blog post
 
-description:off-grid-solar-market-trends-report-2016
+description: Off-grid solar market trends
 ---
+
 
 ##<b>OFF-GRID SOLAR MARKET TRENDS REPORT 2016</b>
 
