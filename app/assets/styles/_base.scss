@@ -1120,15 +1120,16 @@ a:active{
 
 // SITE FOOTER
 #site-footer {
+  ul {
+    display: inline-block;
+  }
   @media #{$xlarge-up} {
-    ul {
-      display: inline-block;
-    }
+    text-align: center;
   }
 }
 
 .ftr-credits {
-  @include span(12/12);
+  display: inline-block;
   h1 {
     color: tint($primary-color, 60%);
     font-size: 0.85rem;
@@ -1141,27 +1142,21 @@ a:active{
       width: 6rem;
     }
   }
+  &.current {
+    margin-right: 1.5rem;
+  }
   @media #{$xlarge-up} {
-    @include span(5/12);
-    text-align: center;
-    &.current {
-      @include span(5/12, $offset: 1/12);
-      text-align: center;
-    }
-    ul {
-      // display: inline-block;
-    }
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 }
 
 #comp-nav {
-  @include span(12/12);
-  border-bottom: 1px solid tint($primary-color, 90%);
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
+  display: block;
+  overflow: hidden;
   .ftr-menu {
     list-style: none;
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
     float: left;
     > li {
@@ -1175,22 +1170,23 @@ a:active{
       text-transform: uppercase;
       color: inherit;
     }
+    li:last-child {
+      margin-right: 0;
+    }
   }
   @media #{$xlarge-up} {
-    // @include clearfix();
-    border-bottom: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    // border-bottom: 0;
+    // padding-bottom: 0;
+    // margin-bottom: 0;
     text-align: center;
     .ftr-menu {
       float: none;
-      padding: 1rem 0;
     }
   }
 }
 
 #ftr-copyright {
-  @include span(12/12);
+  // @include span(12/12);
   .copyright {
     font-family: $brand-font-family;
     color: tint($primary-color, 60%);
@@ -1198,10 +1194,10 @@ a:active{
     font-size: 0.85rem;
   }
   @media #{$xlarge-up} {
-    @include clearfix();
-    text-align: center;
-    .copyright {
-    }
+    // @include clearfix();
+    // text-align: center;
+    // .copyright {
+    // }
   }
 }
 
@@ -1210,10 +1206,10 @@ a:active{
 .logo-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 1.25rem 0;
+  margin: 0;
   overflow: hidden;
   li {
-    float: left;
+    display: inline-block;
     margin: 0 1.5rem 1.5rem 0;
     width: 8rem;
   }
