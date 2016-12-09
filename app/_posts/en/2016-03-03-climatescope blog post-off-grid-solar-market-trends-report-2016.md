@@ -3,7 +3,7 @@ published: false
 postId: test
 title: blog post
 
-description:off-grid-solar-market-trends-report-2016.md
+description:off-grid-solar-market-trends-report-2016
 ---
 
 ##<b>OFF-GRID SOLAR MARKET TRENDS REPORT 2016</b>
