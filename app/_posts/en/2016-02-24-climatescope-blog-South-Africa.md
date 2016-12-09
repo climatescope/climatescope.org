@@ -6,7 +6,7 @@ description: South Africa is one of the most active clean energy markets. Read t
 ---
 ## ANOTHER YEAR IN THE TOP 5 FOR SOUTH AFRICA!
 
-South Africa has become one of the world’s most vibrant clean energy markets ever since it launched its auction program in 2011. The country confirmed its attractiveness in 2015 by ranking fourth out of 55 nations in Climatescope 2015, down one spot from the previous edition.
+South Africa has become one of the world’s most vibrant clean energy markets ever since it launched its auction program in 2011. The country confirmed its attractiveness in 2015 by ranking 4<sup>th</sup> out of 55 nations in Climatescope 2015, down one spot from the previous edition.
 
 Dr Rob Davies, Minister of Trade and Industry, [recently lauded](http://www.sanews.gov.za/features/south-africa-open-business) his country’s performance in the Climatescope ranking. He pointed to the fact that the clean energy sector had become one of the most reliable sources of foreign direct investment and activity in South Africa, at a time where many sectors are plagued by the rout in commodity prices and global macroeconomic headwinds.
 
