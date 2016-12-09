@@ -3,7 +3,7 @@ published: false
 postId: test
 title: Test blog post
 
-description: mapping the gap: the road from paris
+description: mapping the gap -the road from paris
 ---
 
 ##<b>MAPPING THE GAP: THE ROAD FROM PARIS</b>
