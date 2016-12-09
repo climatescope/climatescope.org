@@ -1118,6 +1118,40 @@ a:active{
 
 
 // SITE FOOTER
+#site-footer {
+  @media #{$xlarge-up} {
+    ul {
+      display: inline-block;
+    }
+  }
+}
+
+.ftr-credits {
+  @include span(12/12);
+  h1 {
+    color: tint($primary-color, 60%);
+    font-size: 0.85rem;
+    font-weight: $body-font-weight;
+    margin-bottom: 0;
+  }
+  .logo-list {
+    li {
+      width: auto;
+      width: 6rem;
+    }
+  }
+  @media #{$xlarge-up} {
+    @include span(5/12);
+    text-align: center;
+    &.current {
+      @include span(5/12, $offset: 1/12);
+      text-align: center;
+    }
+    ul {
+      // display: inline-block;
+    }
+  }
+}
 
 #comp-nav {
   @include span(12/12);
@@ -1142,46 +1176,33 @@ a:active{
     }
   }
   @media #{$xlarge-up} {
-    @include col(7/12);
+    // @include clearfix();
     border-bottom: 0;
     padding-bottom: 0;
     margin-bottom: 0;
+    text-align: center;
     .ftr-menu {
+      float: none;
       padding: 1rem 0;
     }
   }
 }
 
-#ftr-credits {
+#ftr-copyright {
   @include span(12/12);
-  h1 {
-    @extend .visually-hidden;
-  }
   .copyright {
-    float: left;
-    clear: both;
     font-family: $brand-font-family;
     color: tint($primary-color, 60%);
     margin-bottom: 0;
     font-size: 0.85rem;
   }
-  .logo-list {
-    margin: 0 -1.5rem;
-    li {
-      width: 6rem;
-    }
-  }
   @media #{$xlarge-up} {
-    @include col(5/12);
-    .logo-list {
-      float: right;
-    }
+    @include clearfix();
+    text-align: center;
     .copyright {
-      float: right;
     }
   }
 }
-
 
 // LISTS
 
@@ -1194,6 +1215,9 @@ a:active{
     float: left;
     margin: 0 1.5rem 1.5rem 0;
     width: 8rem;
+  }
+  li:last-child {
+    margin-right: 0;
   }
   .label {
     @extend .hd-label;
