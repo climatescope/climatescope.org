@@ -1,15 +1,11 @@
 language: node_js
 node_js:
-- '4'
+- '0.12'
 
 env:
   global:
   - DEPLOY_BRANCH=master
   - secure: "uYdQRkIMLm9zOnOhCLnczYEhmj9vAdomAbh8/qIDxFLQ5l0fBTlpKTggsxUIZ06MPEFyAlQ7TVpLsPEPy9VwyIi9AE4PHTgo5iHFb1tiU92wmJew470lH8t92mGAP2CebcPf6cCqLBC8+i8uRl1w8USZGeqW+RJtlMwHlK9xBMo="
-
-cache:
-  directories:
-  - node_modules
 
 before_install:
 - chmod +x ./.build_scripts/deploy.sh
