@@ -14,11 +14,11 @@ What does set Mozambique apart from its neighbours is the way in which its natio
 
 Whilst the development of a transmission line connecting the southern grid to the central and northern grids is under way, progress has been slow. Developers would be forgiven for any pessimism on their parts when evaluating the risks of the grid connection process.
 
-![Figure 1:	Electrification rates and population densities in Climatescope SSA countries](add link)
+![Figure 1:	Electrification rates and population densities in Climatescope SSA countries](/assets/images/content/Mozambique_Fig. 1)
 
 Figure 1 plots electrification rates against population density for all of the sub-Saharan African countries covered by Climatescope, in order to get a sense of the relative potential of off-grid solutions to increasing electrification rates in African countries. As evident from this graph, Mozambique has a low electrification rate and low population density relative to other sub-Saharan African countries – this implies a bigger potential market for off-grid solutions, as grid extensions to connect the unelectrified population to the grid would be significantly more expensive on a per capita basis than in countries with higher population density.
 
-![Figure 2:	Rural electrification rates and rural populations in Climatescope SSA countries](add link)
+![Figure 2:	Rural electrification rates and rural populations in Climatescope SSA countries](/assets/images/content/Mozambique_Fig. 2)
 
 Figure 2 plots the electrification rate in rural areas against the size of the rural population for the sub-Saharan African countries covered by Climatescope – whilst Figure 1 served as a measure of the potential for off-grid solutions to increasing electrification rates, Figure 2 shows how the size of these potential markets. As evident from this chart, Ethiopia, the DRC, Tanzania, Kenya, Uganda, and Mozambique are all characterised by a combination of extremely low rates of rural electrification and large rural populations. 
 
