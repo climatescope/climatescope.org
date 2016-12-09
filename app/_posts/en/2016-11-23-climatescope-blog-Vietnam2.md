@@ -5,7 +5,7 @@ title: Test blog post
 
 description: Test blog post description
 ---
-## COAL IS DEAD. LONG LIVE COAL
+##<b>COAL IS DEAD. LONG LIVE COAL</b>
 
 Vietnam’s government will need to fuel its industrializing economy with cheap energy. Much of that will come from nearly 40GW of new coal. 
 
@@ -15,7 +15,7 @@ In preparation for its economic transformation, the government released the 2011
 
 The government has also stated that it will no longer issue permits for coal generation. This should be great news for the country’s low-carbon targets, except that is does not pertain to coal projects already permitted in the revised PDP VII. Vietnam plans to build an additional 40GW of new coal, a quadrupling of its current installed base and a quintupling on a generation basis (Figure 1). This is no small matter, especially for a country quickly depleting its cheap domestic coal reserves. Consequently, Vietnam plans to purchase more expensive imported coal from its neighbours and build import facilities in the south connected to ground transportation to the north.  This vast new infrastructure will be built solely for the purpose of distributing cheap coal to electrify industrial areas. 
 
-![Figure 1:	Vietnam coal capacity as a percentage of total cumulative capacity, according to the revised PDP VII](http://global-climatescope.org/assets/images/content/CS2016_blog_Vietnam2_fig1.png)
+![Figure 1:	Vietnam coal capacity as a percentage of total cumulative capacity, according to the revised PDP VII](/assets/images/content/CS2016_blog_Vietnam2_fig1.png)
 *Source: Revised Power Development Plan of Vietnam VII.*
 
 All in all, Vietnam is making impressive progress in its commitment to renewables through its revised power plan and its GHG reduction goals. Yet, at the same time, it has reaffirmed, and perhaps increased, the importance of coal in its future energy matrix. 
