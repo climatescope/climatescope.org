@@ -15,7 +15,7 @@ The 1.2 billion people living without access to the power grid spend about $27 b
 <b>The off-grid solar sector has seen impressive growth in the past five years</b>
 From a near-standing start less than ten years ago, more than 100 companies are now actively focusing on stand-alone solar lanterns and solar home system kits targeted at those without modern energy access. By mid-2015 they had sold 20 million branded pico-solar products (defined as having a PV panel smaller than 10W), mainly portable lights.
 
-<b>Pico-solar is becoming mainstream<b/>
+<b>Pico-solar is becoming mainstream</b>
 While off-grid solar has still barely scratched the surface of its potential globally, it is no longer a niche product in the countries that have seen the most concentrated sales efforts. In Kenya, more than 30 percent of people living off the grid have a solar product at home, according to our estimates. The pioneers have helped to create a vibrant market.
 
 <b>Pay-as-you-go (PAYG) makes solar kits affordable and helps capture consumer value</b>
