@@ -6,7 +6,7 @@ title: Test blog post
 description: Test blog post description
 ---
 
-## TO BOLDLY GO WHERE NO GRID HAS GONE BEFORE: THE COMPELLING CASE FOR OFF-GRID POWER IN MOZAMBIQUE
+## <b>TO BOLDLY GO WHERE NO GRID HAS GONE BEFORE: THE COMPELLING CASE FOR OFF-GRID POWER IN MOZAMBIQUE</b>
 
 Whilst transmission woes are far from unique to Mozambique amongst its neighbours in Africa, what stands as a major obstacle to utility-scale development spells out a convincing case for the viability of off-grid solutions to electrification. 
 
