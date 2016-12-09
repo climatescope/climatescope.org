@@ -1130,21 +1130,19 @@ a:active{
 
 .ftr-credits {
   display: inline-block;
+
   h1 {
     color: tint($primary-color, 60%);
-    font-size: 0.85rem;
+    font-size: 0.875rem;
     font-weight: $body-font-weight;
     margin-bottom: 0;
+    line-height: 1rem;
   }
-  .logo-list {
-    li {
-      width: auto;
-      width: 6rem;
-    }
-  }
+
   &.current {
     margin-right: 1.5rem;
   }
+
   @media #{$xlarge-up} {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -1154,15 +1152,17 @@ a:active{
 #comp-nav {
   display: block;
   overflow: hidden;
+
   .ftr-menu {
     list-style: none;
     padding: 1rem 0;
     margin: 0;
-    float: left;
+
     > li {
       float: left;
       margin: 0 2rem 0 0;
     }
+
     > li > a {
       display: block;
       font-family: $brand-font-family;
@@ -1170,34 +1170,19 @@ a:active{
       text-transform: uppercase;
       color: inherit;
     }
+
     li:last-child {
       margin-right: 0;
-    }
-  }
-  @media #{$xlarge-up} {
-    // border-bottom: 0;
-    // padding-bottom: 0;
-    // margin-bottom: 0;
-    text-align: center;
-    .ftr-menu {
-      float: none;
     }
   }
 }
 
 #ftr-copyright {
-  // @include span(12/12);
   .copyright {
     font-family: $brand-font-family;
     color: tint($primary-color, 60%);
     margin-bottom: 0;
     font-size: 0.85rem;
-  }
-  @media #{$xlarge-up} {
-    // @include clearfix();
-    // text-align: center;
-    // .copyright {
-    // }
   }
 }
 
@@ -1206,32 +1191,48 @@ a:active{
 .logo-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 (-$global-spacing);
   overflow: hidden;
+
   li {
     display: inline-block;
-    margin: 0 1.5rem 1.5rem 0;
-    width: 8rem;
+    margin: $global-spacing;
   }
+
   li:last-child {
     margin-right: 0;
   }
+
   .label {
     @extend .hd-label;
     line-height: 1rem;
     display: block;
   }
+
   a {
     display: block;
   }
+
   span {
     @extend .visually-hidden;
   }
+
   img {
     width: auto;
     max-width: 100%;
-    height: auto;
+    max-height: 3rem;
     vertical-align: top;
+  }
+
+  /* Compensate Bloomberg logo proportions and alignment */
+  .logo-bnef img {
+    transform: translate(0, 0.5em);
+    max-height: 1.75rem;
+  }
+
+  /* Compensate DevSeed logo proportions and alignment */
+  .logo-devseed img {
+    max-height: 2rem;
   }
 }
 
@@ -1240,6 +1241,7 @@ a:active{
   margin: 0;
   padding: 0;
   overflow: hidden;
+
   > li {
     float: left;
     margin: 0 0.5rem 0.5rem 0;

@@ -22,9 +22,6 @@ All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eo
 <h3 class="hd-label adjacent-bottom">Developed by</h3>
 <ul class="logo-list">
   <li>
-    <a href="http://flipside.org/" title="Visit Flipside" target="_blank"><img width="256" height="128" alt="Flipside logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-flipside.png" /> <span>Flipside</span></a>
-  </li>
-  <li>
-    <a href="http://developmentseed.org/" title="Visit Development Seed" target="_blank"><img width="256" height="128" alt="Development Seed logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/credits-logo-devseed.png" /> <span>Development Seed</span></a>
+    <a class="logo-devseed" href="http://developmentseed.org/" title="Visit Development Seed" target="_blank"><img width="750" height="128" alt="Development Seed logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-devseed-flat-pos.svg" /><span>Development Seed</span></a>
   </li>
 </ul>
