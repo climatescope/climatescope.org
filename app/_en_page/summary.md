@@ -119,5 +119,5 @@ This performance was largely driven by markedly higher scores on the [first para
 
 [Honduras](/en/country/honduras) (+0.86 between 2014 and 2016), [Chile](/en/country/chile) (+0.57), [Uruguay](/en/country/uruguay) (+0.53), [Mexico](/en/country/mexico) (+0.28) and [Kenya](/en/country/kenya) (+0.32) have all scored over 2 out of 5 and are among the countries that recorded the biggest progress since the first edition of Global Climatescope in 2014. Four of the eight new countries that have exceeded the score of 2 are located in [Latin America and the Caribbean](/en/region/lac). This was generally due to improving enabling frameworks for clean energy in the region and specifically due to the national uses of feed-in tariffs and auctions policies.
 
-_________________________________
+_________________________________ 
 <sup>1</sup> International Energy Agency, World Energy Investment Report, 2016.
