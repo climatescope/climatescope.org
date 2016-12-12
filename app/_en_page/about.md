@@ -43,8 +43,8 @@ Vandana Gombar.
 ### RESEARCHERS & DATA GATHERING
 
 #### Africa and Middle East
-Ben Gidlow, 
 Andrew Grant, 
+Ben Gidlow, 
 James Sprinz, 
 Joe Byrne, 
 Jonas Rooze, 
