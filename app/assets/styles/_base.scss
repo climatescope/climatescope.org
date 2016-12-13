@@ -1231,6 +1231,12 @@ a:active{
     max-height: 1.75rem;
   }
 
+  /* Compensate USAID logo proportions and alignment */
+  .logo-usaid img {
+    transform: translate(0, 0.5em);
+    max-height: 1.75rem;
+  }
+
   /* Compensate DevSeed logo proportions and alignment */
   .logo-devseed img {
     max-height: 2rem;
