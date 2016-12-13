@@ -25,49 +25,48 @@ Ethan Zindler
 Dario Traum 
 
 ### PROJECT COORDINATORS
-Lilian Alves,
-Luiza Demôro,
-Sara Giordano,
-Maggie Kuang,
-Itamar Orlandi,
-Ashish Sethia,
-Nico Tyabji.
+Ashish Sethia, 
+Itamar Orlandi, 
+Lilian Alves, 
+Luiza Demôro, 
+Maggie Kuang, 
+Nico Tyabji, 
+Sara Giordano.
 
 ### EDITORS
-Angus McCrone,
-Ben Vickers,
-Rohan Boyle,
-Bryony Collins,
+Angus McCrone, 
+Ben Vickers, 
+Bryony Collins, 
+Rohan Boyle, 
 Vandana Gombar.
-
 
 ### RESEARCHERS & DATA GATHERING
 
 #### Africa and Middle East
-Nicole	Aspinall,
-Joe	Byrne,
-Victoria Cuming,
-Monne	Depratere,
-Ben	Gidlow,
-Andrew Grant,
-Tom	Harries,
-Kyle	Harrison,
-Lara	Hayim,
-Keegan	Kruger,
-Will	Nelson,
-Jonas	Rooze,
-James	Sprinz,
-Kieron	Stopforth.
+Andrew Grant, 
+Ben Gidlow, 
+James Sprinz, 
+Joe Byrne, 
+Jonas Rooze, 
+Keegan Kruger, 
+Kieron Stopforth, 
+Kyle Harrison, 
+Lara Hayim, 
+Monne Depratere, 
+Nicole Aspinall, 
+Tom Harries, 
+Victoria Cuming, 
+Will Nelson.
 
 #### Asia
-Muhammad	Altamash,
-Janis	Hoberg,
-Atin Jain,
-Jacky	Lilinshtein,
-Yvonne	Liu,
-Luke	Mills,
-Steph	Munro,
-Katya	Sharavzhamtsyna.
+Atin Jain, 
+Jacky Lilinshtein, 
+Janis Hoberg, 
+Katya Sharavzhamtsyna, 
+Luke Mills, 
+Muhammad Altamash, 
+Steph Munro, 
+Yvonne Liu.
 
 #### Latin America and Caribbean
 Ana Verena Lima,
@@ -79,20 +78,20 @@ Raphael Barbosa Correa.
 Ulimmeh Ezekiel
 
 ### POLICY EXPERT PANEL
-Dario Abramskiehn, CPI; Dominique	Auverlot; Alex	Avila; Carlos 	Barria;	Paul 	Bertheau; Abbas	Bilgrami, Juniper Advisors Ltd; Phillip	Brown; Anna	Czajkowska,	Nest; Gabriela da Rocha Oliveira; Patrick D'addario, Fiorello H. LaGuardia Foundation; Vincent Delporte;	Yasemin Erboy Ruff,	United Nations Foundation; John	Fenton;	 Brindusa Fidanza, The Ground_Up Project; Florian	Fritzsche; Manuel	Garmendia Zarandona, Gamesa; Mike	Gratwicke; Deepak 	Gupta; Victoria 	Healey;	Lisa 	Jacobson; K G Chamila	Jayasekara;	David	Lecoque;	Hugo	Lucas, Factor; Rupesh Madlani;	Miguel	Martinez Rodriguez;	Federico 	Mazza, CPI; Sam	Miles;	Anna Paola	Minervini; Riquel 	Mitma;	Nathan	Moore; Ángeles	Mora Sanchez, Gamesa; Laurence 	Mulliez; Hannah	Murdock; Jonathan Myrtle;	Ruggero	Paterno; Tobias	Rinke; Rachel 	Ross,	Allotrope Partners; Barbara Rubim; Chris Twomey;	Michael	Weber; Brian Whitesides; Jane Wilkinson, CPI; Ming Yang.
+Abbas Bilgrami, Juniper Advisors Ltd; Ángeles Mora Sanchez, Gamesa; Anna Czajkowska, Nest; Anna Paola Minervini; Barbara Rubim; Brian Whitesides; Brindusa Fidanza, The Ground_Up Project; Carlos Barria; Paul Bertheau; Chris Twomey; Dario Abramskiehn, CPI; David Lecoque; Deepak Gupta; Dominique Auverlot; Alex Avila; Florian Fritzsche; Gabriela da Rocha Oliveira; Hannah Murdock; Hugo Lucas, Factor; Rupesh Madlani; Jane Wilkinson, CPI; John Fenton; Jonathan Myrtle; K G Chamila Jayasekara; Laurence Mulliez; Lisa Jacobson; Manuel Garmendia Zarandona, Gamesa; Michael Weber; Miguel Martinez Rodriguez; Federico Mazza, CPI; Mike Gratwicke; Ming Yang; Nathan Moore; Patrick D'addario, Fiorello H. LaGuardia Foundation; Phillip Brown; Rachel Ross, Allotrope Partners; Riquel Mitma; Ruggero Paterno; Sam Miles; Tobias Rinke; Victoria Healey; Vincent Delporte; Yasemin Erboy Ruff, United Nations Foundation.
 
 ###SPECIAL THANKS
-Dharshan Wignarajah,
-Karen Johnson,
-María Hilda Rivera,
-Kathleen Auth,
-Jon Moore,
-Benjamin Kafri,
-Noemi Glickman,
-Arlinda Mezini,
-Eve Ottlakan,
-Max Duluc,
-Flow Bohl,
+Arlinda Mezini, 
+Benjamin Kafri, 
+Dharshan Wignarajah, 
+Eve Ottlakan, 
+Flow Bohl, 
+Jon Moore, 
+Karen Johnson, 
+Kathleen Auth, 
+María Hilda Rivera, 
+Max Duluc, 
+Noemi Glickman, 
 and the many energy sector stakeholders our analyst team has met during research trips.
 
 ### CREDITS
