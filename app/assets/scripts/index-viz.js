@@ -428,14 +428,14 @@ $(document).ready(function() {
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
         d = land[i].parameters;
 
-        land[i].rank.score[0].value = (Math.round(
+        land[i].rank.score[0].value = (
           weight['param-' + keys[0]] * d[keys[0]].data[0].value +
           weight['param-' + keys[1]] * d[keys[1]].data[0].value +
           weight['param-' + keys[2]] * d[keys[2]].data[0].value +
           weight['param-' + keys[3]] * d[keys[3]].data[0].value
-                                        )) / 100;
+                                        ) / 100;
       }
-      land = land.sort(function(a, b) { return b.rank.score[0].value - a.rank.score[0].value; });
+      land.sort(function(a, b) { return b.rank.score[0].value - a.rank.score[0].value; });
       for(i = 0; i < ii; ++i) {
         land[i].d = land[i].rank.score[0].overall_ranking = i + 1;
       }
