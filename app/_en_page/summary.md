@@ -69,7 +69,7 @@ There is hardly a one-size-fits-all answer to the energy access conundrum, howev
 
 #### SPURRED BY THE PARIS ACCORD, FOUR OUT OF FIVE CLIMATESCOPE NATIONS NOW HAVE NATIONAL CLEAN ENERGY TARGETS WHILE THREE IN FOUR HAVE SET CO2 EMISSIONS GOALS
 
-Developing countries, [China](/en/country/china) and [India](/en/country/india) especially, greatly contributed to the successful ratification of the Paris Agreement at the 21st meeting of the parties to the United Nations Framework Convention on Climate Change (UNFCCC) in December 2015. Every one of the 58 Climatescope countries with the exception of Nicaragua was a Paris signatory as of Q3 2016.
+Developing countries, [China](/en/country/china) and [India](/en/country/india) especially, greatly contributed to the successful ratification of the Paris Agreement at the 21<sup>st</sup> meeting of the parties to the United Nations Framework Convention on Climate Change (UNFCCC) in December 2015. Every one of the 58 Climatescope countries with the exception of Nicaragua was a Paris signatory as of Q3 2016.
 
 More than three quarters of Climatescope countries had set emissions reductions and clean energy targets by year-end 2015, up markedly from 2013 when 18% had such goals and just half had set clean energy deployment objectives (Figure 6). This is a key development in global efforts to mitigate climate change given that Climatescope countries accounted half the world’s greenhouse gas emissions in 2012. With the economies of emerging market countries growing at a much faster pace than more developed nations, they are expected to account for the lion’s share of future CO2 emissions growth. 
 
