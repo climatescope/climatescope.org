@@ -5,6 +5,7 @@ title: "Press Release: Con nuevos compromisos y proyectos, los países en vías 
 weight: 2
 description: Un grupo clave de naciones emergentes construye 18% más capacidad de energía renovable que los países desarrollados. Cuatro de cada cinco ahora tienen metas nacionales de energías limpias.
 ---
+__Un grupo clave de naciones emergentes construye 18% más capacidad de energía renovable que los países desarrollados. Cuatro de cada cinco ahora tienen metas nacionales de energías limpias.__
 
 _Londres y Washington, 15 de diciembre de 2016_ - Los países desarrollados han establecido compromisos sin precedentes para consumir más energías limpias en el futuro, incluso cuando actualmente lideran en las instalaciones de proyectos de energía eólica y solar, de acuerdo al último estudio de Climatescope.
 

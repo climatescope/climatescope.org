@@ -5,6 +5,7 @@ title: "Press Release: Com novos compromissos e projectos, países em desenvolvi
 weight: 3
 description: Grupo chave de nações emergentes constrói 18% mais  capacidade de energia renovável que países mais ricos, e quatro entre cinco nações já estabeleceram metas nacionais de energia limpa
 ---
+__Grupo chave de nações emergentes constrói 18% mais  capacidade de energia renovável que países mais ricos, e quatro entre cinco nações já estabeleceram metas nacionais de energia limpa.__
 
 _London e Washington, 15 de dezembro de 2016_ – De acordo com a última edição do Climatescope, os países em desenvolvimento assumiram compromissos sem precedentes para consumir mais energia limpa no futuro, mesmo sendo os atuais líderes no desenvolvimento de energias renováveis, com recorde de instalações de novos projetos eólicos e solares.
 
