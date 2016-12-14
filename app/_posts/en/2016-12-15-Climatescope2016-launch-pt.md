@@ -1,7 +1,8 @@
 ---
 postId: climatescope-2016-launch-pt
-title: Com novos compromissos e projectos, países em desenvolvimento assumem a liderança global de energia limpa
+title: "Press Release: Com novos compromissos e projectos, países em desenvolvimento assumem a liderança global de energia limpa"
 
+weight: 3
 description: Grupo chave de nações emergentes constrói 18% mais  capacidade de energia renovável que países mais ricos, e quatro entre cinco nações já estabeleceram metas nacionais de energia limpa
 ---
 

@@ -1,7 +1,8 @@
 ---
 postId: climatescope-2016-launch-es
-title: Con nuevos compromisos y proyectos, los países en vías de desarrollo adquieren una ventaja global en energías limpias 
+title: "Press Release: Con nuevos compromisos y proyectos, los países en vías de desarrollo adquieren una ventaja global en energías limpias"
 
+weight: 2
 description: Un grupo clave de naciones emergentes construye 18% más capacidad de energía renovable que los países desarrollados. Cuatro de cada cinco ahora tienen metas nacionales de energías limpias.
 ---
 
