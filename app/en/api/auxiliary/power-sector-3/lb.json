@@ -1,0 +1,1 @@
+{"data": [{"values": [{"global_average": null, "value": 1.0, "year": 2015}], "name": "Power outages - duration", "id": "q11"}], "meta": {"label-y": "", "label-x": ["Short", "Regular", "Very regular", "Long", "Very long"], "title": "Power sector structure"}, "iso": "lb", "name": "lb"}

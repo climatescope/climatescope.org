@@ -1,32 +1,28 @@
 ---
 layout: country
-
 id: vn
 title: Vietnam
-
 region: asia
-grid: on
+grid: 'on'
+published: true
 ---
-Vietnam currently relies mostly on large hydropower and natural gas to meet its electricity needs, with the former accounting for 40% (59.8TWh) and the latter 30% (44.9TWh) of its total power generation of 148TWh. Both sources will recede from the total power mix in coming decades if the country’s ‘Power Master Plan 7’ is carried out. 
+The energy fleet in Vietnam is composed primarily of large hydropower (37%), coal (33%) and natural gas (19%). Renewables contribute only a fraction of total installed capacity (39GW), with small hydropower (2GW) and other renewables (less than 100MW) making up 5.2% of capacity or 3.7% of the nation’s electricity generation. A recent government plan aims to increase the share of renewables, while simultaneously promoting new coal build and LNG import facilities to support a growing industrial sector. Electricity demand is forecast to increase 9% annually from 141TWh in 2015 to 506TWh by 2030.
 
-Coal would become a major power source for Vietnam under Power Master Plan 7, which envisages coal-fired power accounting for 47% of Vietnam’s energy mix by 2020 and 56% by 2030. Construction work has already started on Vinh Tan 1 (1,200MW), one of the major planned coal plants. Five Chinese banks provided a syndicated loan of $1.4bn, accounting for 80% of the total project cost. Non-hydro renewables play a minor role in Vietnam’s energy mix but one that also is set to grow. 
+In March 2016, the Prime Minister approved the revised Power Development Plan VII for the period 2016-2030, a follow up to the previous 2011 Power Development Plan. The new legislation puts stronger emphasis on renewable growth, fuel diversification and transmission reliability. Most importantly, it increases the renewable generation target to 6.5% by 2020 (previously 4.5%) and to 10.7% by 2030 (previously 6%). It also adds technology-specific targets for biomass and solar, in addition to previously set wind goals. The targets are: 710-800MW of wind by 2020 and 6GW by 2030; 850MW of PV by 2020 and 12GW by 2030; and 1GW of biomass, biogas and geothermal by 2020 and 3.4GW by 2030. At the same time, the plan calls for another 40GW of new coal to be built by 2030 and several new LNG import facilities.
 
-The government targets an increase in electricity generated from non-hydro renewable sources from the present 3.5% to 4.5% in 2020 and 6% in 2030. Wind and biomass are the sectors identified to realize the target. The installation target for wind is 1GW by 2020 and 6.2GW by 2030; for biomass it is 0.5GW by 2020 and 2GW by 2030.
+Vietnam has a number of existing laws and incentives to support renewables. This includes a feed-in tariff (FiT) of $0.087 per kWh for wind, $0.10 per kWh for waste-to-energy, and $0.07 per kWh for CHP biomass, as well as an avoided-cost tariff of $0.034 per kWh for all other renewables. These are adjusted annually according to inflation and currency fluctuations. A 2001 investment law allows renewable projects to claim a preferential corporate income tax rate of 10% for 15 years, compared to 25% for other industries and accelerated depreciation on assets 1.5 times faster than other property.
 
-To incentivize those two renewable technologies, feed-in tariffs (FiT) have been introduced. Early in 2011, a FiT of $0.087/kWh was introduced for wind energy. In 2014 the government extended FiTs to new waste-to-energy and biomass. For waste-to-energy projects using solid waste, a FiT as high as VND 2,114/kWh ($0.1/kWh) was offered. For biomass-fueled combined heat and power projects, the FiT provided was more modest at VND 1,220/kWh ($0.07/kWh). The government is considering a FiT for biogas. 
+Nonetheless, existing incentives have failed to boost the industry and development remains stagnant. Projects cannot compete against subsidised coal and natural gas prices, and FiTs for wind and biomass are insufficient to encourage new build. The avoided-cost tariff is only relevant for existing hydro, and renewable projects, which typically do not have taxable income so have little use for the tax exemption. As a result, to date only 53MW of wind has been built, 150MW of biomass plants remain unconnected to the grid, small-hydro resources are becoming scarce and no major utility-scale PV has been commissioned.
 
-A preferential taxation policy offers an income tax rate of 10% for 15 years to all renewable energy technologies, compared to the statutory rate of 25%. Alternatively, project developers can enjoy tax exemption for the first four years and a 50% reduction in tax payable for nine subsequent years. Depreciation on certain renewable energy assets is allowed 1.5 times faster than other property. 
 
-Vietnam’s project development has been limited due to high project costs, steep financing rates and soft costs loaded on due to unclear project permit procedures. The government’s intended revision of the wind FiT has not taken place after several years’ consideration. As of 2014, only 54MW of wind power capacity had been commissioned, though there is a pipeline of 5GW awaiting policy improvements.
+###Score summary
 
-#### Score Summary
+Vietnam scored 1.56 in Climatescope 2016, up from 1.28 in the previous survey. This improvement moved it five places up the order to 17<sup>th</sup> position on the list of countries overall. Its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
-Vietnam in 2015 scored 1.28 to finish 22th overall among Climatescope 2015 nations. Its ranking dropped nine places from 2014.  This was largely due to a retreat on Parameter I.
+On Enabling Parameter I, the country’s score was almost unchanged, yet it fell five places to 40<sup>th</sup>. Clean energy policies, such as feed-in tariffs and an energy target supported the score, but the absence of a distributed energy framework was a weakness. 
 
-Vietnam’s 2015 score on Parameter I Enabling Framework was 1.05, compared with 1.33 in 2014. Although the country introduced feed-in tariffs to the biomass and waste-to-energy sector in 2014, its wind feed-in-tariff has been ineffective so far and an anticipated revision did not materialize.
+Vietnam’s score on Clean Energy Investment and Climate Financing Parameter II more than doubled from last year and the country took 20<sup>th</sup> position in the ranking. 
 
-On Parameter II Clean Energy Investment & Climate Financing, Vietnam’s 2015 score was little changed from 2014 and its ranking improved one spot, to 32nd. The country’s clean energy investment dropped to $67m most recently, less than half that of the previous year. 
+On Parameter III, the country’s score increased and it was ranked 10<sup>th</sup> globally, up from 14<sup>th</sup> the year before. It has value chains in every clean energy sector, and four varieties of financial institutions serve the clean energy sector.
 
-Vietnam improved its score on Parameter III Low-Carbon Business & Clean Energy Value Chains from 2.99 to 3.19, although it slipped one rank to 14th. Wind and solar equipment manufacturers have emerged in the country, while the number of clean energy service providers continues to grow.
-
-On Parameter IV Greenhouse Gas Management Activities, Vietnam in 2015 surrendered four ranks to 17th place, with a 2015 score of 1.68 versus 2014’s 2.00.  The country backslid on the GHG Emissions Reduction Target Indicator.
+On Greenhouse Gas Management Activities Parameter IV, its score increased in the Carbon Policy category, thanks to the introduction of a GHG emissions reduction target and a carbon tax. It was placed 14<sup>th</sup>.

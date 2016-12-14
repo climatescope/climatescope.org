@@ -4,6 +4,13 @@
     $interpolateProvider.endSymbol('%%');
   });
 
+  function getOptgroupLabel(country) {
+    switch (country.iso) {
+      case 'in':
+        return CS.t('Indian states');
+    }
+  };
+
   app.controller('compareController', ['$http', '$filter', '$rootScope', '$scope', '$location',
   function($http, $filter, $rootScope, $scope, $location) {
     var _self = this;
@@ -36,14 +43,7 @@
       _self.compareSelected = [];
     };
 
-    this.getOptgroupLabel = function(country) {
-      switch (country.iso) {
-        case 'cn':
-          return CS.t('Chinese provinces');
-        case 'in':
-          return CS.t('Indian states');
-      }
-    };
+    this.getOptgroupLabel = getOptgroupLabel;
 
     this.getRegionUrl = function(id) {
       return CS.regionIndex[id];
@@ -201,6 +201,27 @@
       handleCharts();
     });
 
+  }]);
+
+  app.controller('compareControllerSelector', ['$http', '$filter', '$rootScope', '$scope', '$location',
+    function($http, $filter, $rootScope, $scope, $location) {
+    var _self = this;
+    this.countries = [];
+    // Init options to null to prevent the select from adding an empty option.
+    this.compare = [];
+
+    this.getOptgroupLabel = getOptgroupLabel;
+
+    this.getCompareUrl = function () {
+      var el = [];
+      _self.compare[0] && el.push('compare=' + _self.compare[0]);
+      _self.compare[1] && el.push('with=' + _self.compare[1]);
+      return CS.domain + '/' + CS.lang + '/compare/#?' + el.join('&');
+    };
+
+    $http.get(CS.domain + '/' + CS.lang + '/api/countries.json').success(function(data) {
+      _self.countries = data;
+    });
   }]);
 
 })(); 

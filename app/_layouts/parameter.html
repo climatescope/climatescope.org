@@ -18,16 +18,29 @@ conf:
 
   <div class="row--contained">
     <div class="col--main prose-copy">
-      <h2>{{ t['Description'][language] }}</h2>
       {{ content }}
     </div>
   
-    <div class="col--sec prose-copy" ng-controller="StatsController as statsCrtl" ng-cloak>
-        <h2>{{ t['Regional average'][language] }}</h2>
+    <div class="col--sec">
+      <section class="sec-section" ng-controller="StatsController as statsCrtl" ng-cloak>
+        <h2 class="sec-section__title">{{ t['Regional average'][language] }}</h2>
         <dl class="stats-list">
           <dt ng-repeat-start="region in statsCrtl.regionStats">%% region.name %%</dt>
           <dd ng-repeat-end>%% region.parameters[0].data[0].mean | round:2 %%</dd>
         </dl>
+      </section>
+      <nav class="sec-nav">
+        <h2 class="sec-nav__title">{{ t['Other topics'][language] }}</h2>
+        {% assign col_name = site.collections['en_parameter'].i18n[language] %}
+        {% assign sorted_params = (site[col_name] | sort: 'weight') %}
+        <ul class="sec-menu">
+          {% for topic in sorted_params %}
+          {% unless page.title == topic.title %}
+          <li><a href="{{ site.domain }}{{ site.path_prefix }}{{ topic.url }}">{{ topic.title }}</a></li>
+          {% endunless %}
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
   </div>
 

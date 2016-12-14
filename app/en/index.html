@@ -1,35 +1,110 @@
 ---
 layout: base
-title : Global Rank
+title : Welcome
 id: index
 lang: en
-
 include_map: true
 
-description: The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
+description: Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
 ---
 {% assign language = page.lang %}
 {% assign t = site.data.i18n_strings %}
 <section class="layout--home">
-  <header class="layout--home__header sticky" id="parameters-controls">
+  <header class="layout--home__header visually-hidden">
     <div class="row--contained">
       <div class="layout--home__heading">
-        <h1 class="layout--home__title visually-hidden">{{ page.title }}</h1>
-      </div>
-      <div class="layout--home__controls">
-        {% include weight_changers.html %}
+        <h1 class="layout--home__title">{{ page.title }}</h1>
       </div>
     </div>
   </header>
 
   <div class="layout--home__body">
-
-    <div id="index-viz" class="row--full intro"><!-- Insert map here. --></div>
-
     <div class="row--contained">
-      {% include url_index.html %}
-      <div ng-app="globalApp" ng-controller="CountryListController as countryTable" ng-cloak>
-        {% include country_list_table.html %}
+      <div class="featured-col">
+        <section class="featured-section compare-results-block">
+          <h1 class="featured-section__title">Compare results</h1>
+
+          <div class="featured-section__body">
+            <div class="prose-intro">
+              <p>Choose a Country or State to view results side by side.</p>
+            </div>
+
+            <div ng-app="compareApp" ng-controller="compareControllerSelector as compareCtrlSelector" class="compare-controls">
+              <div class="control">
+                <label class="control-title" for="country_with">{{ t['Country / state'][language] }}</label>
+                  <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrlSelector.compare[0]">
+                  <option value="">{{ t['Choose location A'][language] }}</option>
+
+                  <option ng-repeat-start="country in compareCtrlSelector.countries" ng-value="country.iso" ng-selected="country.iso == compareCtrlSelector.compare[0]">%% country.name %%</option>
+                  <optgroup ng-repeat-end ng-if="country.states.length" label="%% compareCtrlSelector.getOptgroupLabel(country) %%">
+                    <option ng-repeat="state in country.states" ng-value="state.iso" ng-selected="state.iso == compareCtrlSelector.compare[0]">%% state.name %%</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="control">
+                <label class="control-title" for="country_with">{{ t['Country / state'][language] }}</label>
+                  <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrlSelector.compare[1]">
+                  <option value="">{{ t['Choose location B'][language] }}</option>
+
+                  <option ng-repeat-start="country in compareCtrlSelector.countries" ng-value="country.iso" ng-selected="country.iso == compareCtrlSelector.compare[1]">%% country.name %%</option>
+                  <optgroup ng-repeat-end ng-if="country.states.length" label="%% compareCtrlSelector.getOptgroupLabel(country) %%">
+                    <option ng-repeat="state in country.states" ng-value="state.iso" ng-selected="state.iso == compareCtrlSelector.compare[1]">%% state.name %%</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <div class="control">
+                <a class="bttn bttn-success go" ng-href="%% compareCtrlSelector.getCompareUrl() %%" title="{{ t['Compare with'][language] }}">{{ t['Compare'][language] }}</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="featured-section policies-block">
+          <h1 class="featured-section__title">Policies</h1>
+          <div class="featured-section__body">
+            <div class="prose-intro">
+              <p>{{ t['Analyze more than 800 policies intended to spur clean energy development in the nations and states surveyed by Climatescope.'][language] }}</p>
+            </div>
+          </div>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/policies" title="{{ t['View all'][language] }}" class="bttn bttn-success go">{{ t['View all'][language] }}</a>
+        </section>
+      </div>
+
+      <div class="featured-col">
+        <section class="featured-section">
+          <h1 class="featured-section__title">Latest updates</h1>
+          <div class="featured-section__body">
+            <ol class="latest-updates-list">
+              {% assign posts = (site.posts | where:"lang",language) %}
+              {% for post in posts limit:4 %}
+              {% unless post.hidden == true %}
+              <li class="update-wrapper">
+                <article class="update">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View update">
+                    <p class="update__date">{{ post.date | date: '%b %-d, %Y' }}</p>
+                    <h1 class="update__title">{{ post.title }}</h1>
+                  </a>
+                </article>
+              </li>
+              {% endunless %}
+              {% endfor %}
+            </ol>
+          </div>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" title="{{ t['View all'][language] }}" class="bttn bttn-success go">{{ t['View all'][language] }}</a>
+        </section>
+      </div>
+
+      <div class="featured-col">
+        <section class="featured-section recent-tweets">
+          <h1 class="featured-section__title">Recent tweets</h1>
+          <div class="featured-section__body">
+            <a class="twitter-timeline"  href="https://twitter.com/search?q=climatescope" data-widget-id="802127681433272320" data-tweet-limit="3" data-chrome="noheader nofooter noborders noscrollbar transparent" data-link-color="#77bc1f">Tweets about climatescope</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <a href="https://twitter.com/search?q=climatescope" title="{{ t['View all'][language] }}" class="bttn bttn-success go" target="_blank" rel="external">{{ t['View all'][language] }}</a>
+        </section>
       </div>
     </div>
   </div>

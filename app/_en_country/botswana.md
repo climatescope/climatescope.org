@@ -1,33 +1,30 @@
 ---
 layout: country
-
 id: bw
 title: Botswana
-
 region: africa
-grid: off
+grid: 'off'
+published: true
 ---
-Botswana’s outdated power sector relies on coal for 60% of its generation, while approximately one-third of the population lacks access to electricity of any kind. The country’s 600MW peak demand is met through importing electricity from surrounding countries when available (roughly 200-300MW per day from South Africa) and running expensive back-up power plants.
 
-The current policy framework provides no specific incentives for clean energy, and the impetus for implementing new policy in the near future is unclear. However, the government is crafting a national energy policy, which outlines new strategies and highlights the need for renewables to be integrated into the power sector. In the meantime, the manufacturing investment incentive and import duty exemption provide limited policy support for renewable energy investment and build-out in Botswana.
-In 2015, the government requested the World Bank to provide technical assistance in establishing a renewable energy strategy for Botswana. Through the Africa Renewable Energy Access (AFREA) programme, it will help formulate a renewable energy strategy with a strong emphasis on the development of solar energy alongside an assessment of resource availability and a review of legal, regulatory, policy and institutional frameworks.
+The power sector in Botswana is dominated by coal, which accounts for 82% of the current installed capacity. By contrast, solar currently accounts for just 0.1%. Whilst the solar potential remains untapped, the country is also sitting on coal reserves of around 200 billion tonnes. Despite this resource abundance, Botswana relies heavily on power from expensive back-up diesel plants and electricity imports. On the flip side, Botswana boasts impressive electrification rates compared to its neighbours, with over two-thirds of the rural population having access to electricity – as of 2015. Whilst policy frameworks are still lacking, a number of important developments occurred in 2015 – including the approval by Cabinet of the National Energy Policy that has been in draft form since October 2009. Parliamentary sign-off is expected in 2016.
 
-Botswana continues to explore the potential for locally produced solar power. It has considered feed-in tariffs but not yet implemented them due to limited technical capacity, the government’s focus on coal expansion and the potential cost. In June 2015, the government announced it would release a tender for two 50MW solar PV plants. Renewable energy currently makes up less than 2% of the country’s generation mix.
+The Department of Energy within the Ministry of Minerals, Energy, and Water Resources is responsible for formulating and implementing national energy policy, while the Botswana Power Corporation (BPC) holds a monopoly over generation, transmission and distribution. Power prices are suppressed, resulting in financial struggles for BPC. In December 2007, the Electricity Supply Act of 1973 was amended to allow for independent power producers (IPPs). Still, without a proper framework or an independent regulator, participation has been limited to the single IPP for one of the temporary diesel plants. This is expected to change with the establishment of the Botswana Energy Regulator (BERA), which has also been approved by Cabinet and is awaiting parliamentary sign-off.
 
-The vertically integrated government-owned utility, Botswana Power Corporation, runs the power system, which until 2015 had only the Morupule A 132MW coal-fired power plant. The utility has tried to bring online the 600MW Morupule B coal plant, but technical issues and the lack of project management foresight have delayed the full operation of its four units.
+The current nameplate installed capacity in Botswana is 893MW, which exceeds the 2015 peak demand of 610MW. However, with half of coal-fired power station Morupule B’s operating capacity down and Morupule A awaiting refurbishment, the effective capacity is just 461MW. This includes high-cost diesel plants: Matshelagabedi (70MW) and Orapa (90MW). To close the shortfall, Botswana draws power from its neighbours, putting its energy security at risk. Botswana’s net electricity imports for 2015 were around 1.2TWh – the bulk of which came from Eskom in South Africa, a country that has struggled to meet its own demand in recent years. If the government achieves their goal of becoming net exporters of power, both solar and coal resources will need to be exploited.
 
-Back-up power plants include the 70MW Matshelagabedi, and the 90MW Orapa peaker plant owned by independent power producer Debswana, which operates at a high environmental cost, as it consumes approximately 17,000 litres of diesel per hour. Meanwhile, Botswana Power Corporation has struggled financially due to the country’s suppressed power prices and the cost of imported diesel. The utility has stated its intention to raise prices to match the cost of production.
+Following completion of the bankable feasibility study in 2013, which recommended a 100MW concentrating solar thermal plant be constructed in Jwaneng, an expression of interest was sent out in 2015. It received overwhelming interest from IPPs with 118 bids, however there were a number of concerns surrounding the tariff. Feed-in tariffs have also been considered, but not yet implemented due to limited technical capacity, a focus on coal expansion and the potential cost. The Manufacturing Investment Incentive and Import Duty Exemption provide limited policy support for renewable energy investment and the 1.3MW PV plant, financed through a Japanese grant in 2012, remains the only renewable grid-connected plant to date. In addition to the National Energy Policy, the Renewable Energy Strategy, which is receiving technical assistance from the World Bank, is also expected to be finalised in 2016.
 
-In 2012 Japan’s Itochu Corp. financed a 1MW PV plant through a $12.5m grant. The country has completed feasibility studies for a 100MW concentrated solar thermal plant and in July 2015 invited bids to build the plant. In the biofuels sector, a diesel substitute 0.36mLpa plant was commissioned in 2006 while a $1.9m 5mLpa diesel substitute plant is currently under construction. The biofuels sector in Botswana remains stagnant due to policy constraints, while the debate over a biofuels blending mandate continues to hamper the sector’s growth potential.
 
-#### Score Summary
+###Score summary
 
-Botswana scored 0.59 in Climatescope 2015, placing it 47th on the list of countries overall, one place higher than in 2014. The country’s highest score was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
+Botswana scored 0.84 in Climatescope 2016, placing it 47<sup>th</sup> on the list of countries overall, the same position it occupied in 2015. The country’s best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
-On Enabling Framework Parameter I, the country dropped six places to rank 49th. On the whole, its policy and regulatory environment scored weakly, though it does have some energy access policies in place.
+On Enabling Framework Parameter I, the country fell three places to rank 52<sup>nd</sup>. In contrast, its score increased thanks to improvements in the area of policy and regulation, particularly the addition of a clean energy rural electrification programme.
 
-The country finished 35th on Clean Energy Investment and Climate Financing Parameter II. There has been little investment in the sector to date, though financing conditions are more favorable than others in the region. 
+The country slipped two places on Clean Energy Investment and Climate Financing Parameter II to 37<sup>th</sup>. Again, this was despite garnering a higher score (reflecting a decline in the average cost of debt). To date, Botswana’s clean energy sector has not attracted any investment.
+ 
+On Parameter III, Botswana placed 33<sup>rd</sup>, a gain of one place that reflected a slight increase in the number of distributed clean energy value chains.
 
-On Parameter III, Botswana placed 34th, partly reflecting the presence of a number of distributed clean energy service providers.
+There was a marked improvement in the country’s score on Greenhouse Gas Management Activities Parameter IV. This pulled Botswana up three places to 47<sup>th</sup> and was largely thanks to the introduction of a target to reduce greenhouse gases.
 
-On Greenhouse Gas Management Activities Parameter IV, the country was ranked 50th. Modest inroads are being made in the area of corporate awareness.

@@ -1,74 +1,49 @@
 ---
 layout: country
-
 id: in
 title: India
-
 region: asia
-grid: on
+grid: 'on'
+published: true
 ---
+India, which recently became the world’s 3<sup>rd</sup> largest power generator after China and the US, had a total installed power generation capacity of 290GW by the end of 2015. The country’s installed power generation capacity grew by 10.6% during the year, with a record 27.8GW of new capacity added, including 18.9GW of coal, 2.6GW of wind and 1.7GW of solar PV. Renewables capacity accounted for 15.2% of the total at the end of 2015.
 
-India had 258GW of total power capacity at the end of 2014 of which renewables represented 34GW (13%). Overall, coal represented the largest share with 60%, followed by large hydro at 16%.
+The peak power demand in the country increased by 3.7% in 2015 to 153GW. Despite the record growth in the new capacity addition, the peak power shortage stood at around 4.9GW or 3.2% of the total maximum demand. The Central Electricity Authority estimates that the peak power demand will increase to 165GW but the country will be peak power surplus by 4.2GW in FY2016-17.
+In June 2015, India formally adopted the target of adding 175GW of renewable energy capacity by 2022: 100GW of solar power (including 40GW of rooftop solar power), 60GW of wind power, 10GW of biomass power and 5GW of small hydro power (project size less than 25MW).
 
-2014 was a watershed year for Indian politics and the implications for energy policy could be felt for years, perhaps even decades to come. Elections concluded in May handed Narendra Modi and his BJP a decisive victory and a mandate to form a new federal government.
-Modi has outlined broad ambitions to provide around-the-clock power and to expand electricity access to all 1.25bn Indians by 2019. This, in turn, has prompted major energy policy reform. 
+In September 2015, India submitted its Intended Nationally Determined Contribution (INDC) to the United Nations Framework Convention on Climate Change (UNFCCC). It aims to reduce the emissions intensity of its GDP by 33-35% below the 2005 levels by 2030. The country also aims to achieve 40% cumulative electric power installed capacity from non-fossil energy resources by 2030.
+Solar power in India overtook the wind sector in terms of attracting total investments, partly aided by a boost in activity in the rooftop solar market, primarily driven by commercial and large industrial consumers. Almost all the major Indian states have adopted net-metering policies. At the end of 2015, the federal government re-instated 30% subsidy for capital costs of solar rooftop installations. However, the scope of the subsidy is now limited to residential and institutional consumers (schools, colleges, hospitals etc.). 
 
-Step one was a move to put ministries overseeing the coal, power and new and renewable energy sectors under a single minister. This has improved coordination between ministries and speeded decision making. It has also strengthened the presence of Ministry of New and Renewable Energy and brought it to the forefront.
+Competitive bidding for utility scale grid-connected projects is driving the cost of procurement of solar power in the country to record low levels. 4,840MW of new utility scale solar capacity was awarded through auctions in 2015. The declining costs of panels, among other things, led to a drop in auction bid prices to INR 4.34/kWh (6.7 US cents/kWh) in early 2016. 
+In June 2016, the federal government announced a proposal to invite competitive bids for wind power projects for the first time. These auctions will run separately from the existing feed-in-tariffs offered by different states. The government also released a draft wind repowering policy aimed at replacing all sub-1MW wind turbines commissioned before 2000. About 1.2GW of wind turbines will be eligible to receive interest subsidy for project loans. 
 
-Renewables represent an important part of the government’s energy security ambitions while at the same time helping to address India's rapidly rising CO2 emissions. Distributed renewables, typically in the form of photovoltaics, also have the potential to electrify India’s remote villages without the need of extending the grid. 
-Hence the government has set highly ambitious goals for adding renewable capacity. The country’s previous target of adding 20GW solar by 2022 has been upped to 100GW while a new target for wind has been set at 60GW under the same time frame.
+India announced its offshore wind policy in October 2015. The policy does not set targets or detail incentives but provides an overview of responsibilities and functions of various stakeholders.
+In April 2015, the Reserve Bank of India issued revised guidelines to the commercial banks to include renewable energy projects under 'priority sector lending'. The decline in the year-on-year inflation rate in the country also prompted the Reserve Bank to reduce interest rates: the Bank’s repo rate decreased from 8% to 6.75% and the reverse repo rate decreased from 7% to 5.75% in 2015. This led to a drop in the minimum lending rates offered by commercial banks by more than 0.5% in most cases.
+The federal government established the National Smart Grid Mission in May 2015. The total planned expenditure for the mission is INR 9.8bn ($153m) for the 12<sup>th</sup> five year plan which runs from 2012 to 2017. The mission will facilitate grants of up to 30% of the cost of smart grid projects. 
 
-Including 10GW of biomass and 5GW of small hydro, the overall aim is to reach 175GW of renewable energy capacity by 2022.
-To fuel these targets, the government has quadrupled the clean energy taxes on coal to INR 200/tonne from INR 50/tonne under the previous government. Revenues from this are pooled into a National Clean Energy Fund intended to finance most national level clean energy subsidies and support programs. Subsidies include capital grants for rooftop and small solar applications or creation of a payment security fund to cover payment defaults for utility scale projects.
+In August 2016, a new taxation regime was passed by the Indian parliament which abolishes all the existing direct and indirect taxes and introduces a single tax across all the states in India referred to as the goods and services tax or GST. The new tax regime is expected to take away the fiscal incentives which the renewable energy sector in India enjoyed. This is anticipated to increase the cost of grid connected solar and wind power by 12-16% and 11-15% respectively, though there may be some compensating mechanisms put in place.
+The federal government announced Deendayal Upadhyaya Gram Jyoti Yojna (new rural electrification scheme) in December 2014 and plans to electrify all the un-electrified villages by March 2017. The government plans to invest INR 756bn ($11bn) for rural electrification activities until 2022. As of September 2016, more than 7,400 Villages remain un-electrified, and the government’s rural electrification targets are not expected to be met on scheduled deadlines.
 
-It has been estimated that thanks to strong sun, India has the potential to host no less than 749GW of solar power generating capacity.  As of the end of 2014, however, the country had just 3GW installed. The 100GW solar by 2022 target outlined by the Modi government suggests 12GW of new build will be needed per year. 
+The electricity distribution utilities are the weakest links in the Indian power sector. As per the latest estimates, the average Aggregated Technical and Commercial (AT&C) losses in the country were at 25% in FY2014-15. Most of the state-owned electricity distribution utilities have operational losses. The total accumulated debt of the state owned electricity distribution was INR 4,300bn ($67bn) as of March 2015.
 
-While the target is national, achieving it will rely to a large degree on the efforts of states who formulate their own solar targets and incentive policies. Most have taken an auction-based approach under which private developers bid to sell power to state distribution companies at the lowest possible rates. Rules of these tenders vary by state but usually 25-year fixed rate power purchase agreements (PPAs) are available. A few states have opted for feed-in tariffs over auctions to award solar contracts.
+The weak financial health of the distribution utilities has resulted in payment delays and curtailment in some states despite the central electricity regulators granting a ‘must-run’ status for renewable energy plants. Nevertheless, over 30GW of new solar and wind power is under various stages of implementation as of October 2016. 
 
-At the federal level, the National Solar Mission program runs parallel to state efforts and also offers reverse auctions and subsidies. By the end of 2014, 1.9GW capacity had been permitted under the Solar Mission with a target to add a further 17GW by 2019.
+In November 2015, India announced Ujwal Discom Assurance Yojna or UDAY (the federal government’s debt restructuring scheme) aimed at revival of financially stressed state owned electricity distribution companies. It aims at improving the operational efficiencies of the distribution utilities, reducing the cost of power, decreasing the interest costs of distribution companies and enforcing financial discipline. The federal government aims to bring down the overall AT&C losses of the state distribution utilities to 15% under through the new scheme.
+India is also rapidly adding new transmission infrastructure for evacuation of power. The country added 28,114 circuit kilometres of new transmission lines and 62,849 MVA of transformer capacity in FY2015-16.
 
-The federal government is currently considering different approaches to reduce risks perceived associated with these long-term PPAs and their bankability. These include bundling of solar power with cheaper coal to make its price market attractive, offering upfront Viability Gap Funding capital grants or creating a payment security fund to cover defaults. The states are also developing solar parks with the help of the federal government. These parks offer clear land with all necessary infrastructure that can significantly reduce many challenges such as land acquisition or road connectivity. 
 
-Of the 100GW solar target, 40GW has been earmarked for rooftop solar. While the federal government offers capital subsidies for these projects, approximately 14 states offer net-metering policies that allow system owners to receive the benefit of the excess power they generate back into the grid. Approximately five states provide feed-in tariffs for rooftop projects or offer additional grants to the national subsidies.
+###Score summary
 
-Wind has traditionally been the flagship sector in India’s renewable energy basket with 22GW installed as of the end of 2014. The sector has seen solid growth in the last several years with allowable accelerated depreciation having served as a key tax incentive for developers. This incentive allows the investors to defer tax liabilities by claiming 80% of the residual value of the project as depreciation. After it was withdrawn in 2012, new installations dropped dramatically in 2013. The new government restored the incentive in H2 2014 leading to a rebound and 2.3GW of new build in the year.
+India scored 2.17 in Climatescope 2016, an improvement on its score the previous year. This placed it 6<sup>th</sup> on the list of countries overall, down one from the previous year. Its strongest performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
-In 2015, some states are poised to raise wind feed-in tariffs offered for new projects and this is likely to boost installations. However the 60GW by 2022 target outlined by the Modi government remains ambitious. A National Wind Mission is currently in the works and is intended to accelerate progress toward the long-term goal.
+On Enabling Framework Parameter I, India scored 1.85 and gained two places to rank 9<sup>th</sup>. This reflected, among other things, a number of positive features in its power sector structure, such as independent power transmission and a wholesale power market.
 
-Regarding the smaller clean energy sectors of biomass and small hydro, a variety of federal programs are either in place or in the works. Biomass and bagasse-based cogeneration are the main sources of bio power in the country. Growth in this sector depends on the availability of fuel and its supply chain; hence this sector is concentrated around agricultural locations.
-India today classifies projects less than 25MW as small hydro. The federal government is currently working on a National Small Hydro Mission to accelerate growth in this sector.
+India ranked 15<sup>th</sup> on Clean Energy Investment and Climate Financing Parameter II. It saw $11.2bn of new money in 2015, which was split almost evenly between the wind and solar sectors, and up from approximately $9bn in 2014.
 
-Finally, India has an ongoing National Mission on Enhanced Energy Efficiency that focuses on various initiatives such as demand side energy management including labelling of appliances based on their efficiency. This has also led to the implementation of an innovative industrial energy efficiency initiative that will result into trading of so-called energy saving certificates. 
+On Parameter III, the country placed 2<sup>nd</sup> globally, behind only China. Its clean energy sector is exceptionally well developed, with 34 value chains and 19 service providers. 
 
-#### Score Summary
+The country’s score on Greenhouse Gas Management Activities Parameter IV improved thanks, in part, to an increase in Clean Development Mechanism activities. It was ranked 9<sup>th</sup>.
 
-India scored 1.81 in Climatescope 2015, placing it 5th on the list of countries overall.  The country’s ranking fell one place on the list from 2014, largely due to decline of its score on Clean Energy Investment Parameter II in general and on Green Micro Finance Indicator, in particular.
 
-On Enabling Framework Parameter I, India scored 1.51 thanks to a particularly good performance on Growth Rate of Power Demand Indicator.  In fact, it had the second highest score on Parameter I among all nations in APAC.
 
-On Clean Energy Investment and Climate Financing Parameter II, the country scored 0.66, down from 0.85 in 2014.
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country repeated its 2014 score of 4.1 (ranking fifth in both years globally) thanks to a well-developed value chain.
-
-On Greenhouse Gas Management Activities Parameter IV, India scored 2.60, down from its 2.68 in 2014, because of a decline in its GHG Country Registry Indicator score.
-
-#### Score Summary - Indian states
-
-The Climatescope assessment includes 10 Indian states where there has been significant clean energy activity. The 2015 edition features a reshuffling of the highest-ranked Indian states.
-
-Tamil Nadu took the top ranking in 2015, displacing last year’s leader, Karnataka, to second position. Madhya Pradesh climbed five places to third this year, thanks to its policies favoring wind, biomass and solar installations. 
-Uttar Pradesh climbed three places, from 10th to seventh rank.
-
-In Madhya Pradesh and Uttar Pradesh, the overall installed clean energy capacity base is still low; their scoring gains came on a relative surge in new projects, investments and allocations.
-
-Other states that lost rank this year are Rajasthan, Gujarat, Andhra Pradesh and Punjab; each of which fell by two places. 
-Independent of rankings, the numerical scores of all states except Karnataka increased from 2014 to 2015. 
-
-Tamil Nadu’s overall first-place ranking is attributable to its top score on clean energy installed capacity and its well-developed value chain. While its rate of new installations has declined, Tamil Nadu boasts a mature wind sector and has the most installed wind capacity in the country.
-
-Karnataka had high scores on power sector structure, carbon offsets historical activity and value chains.
-Madhya Pradesh scored the highest among Indian states on growth rate of clean energy investments. It also had the second highest score on growth rate of installed capacity and growth rate of electricity generation. 
-
-Uttar Pradesh scored highest on the growth rate of electricity generation indicator. It also had the second highest score on growth rate of clean energy investments. 
-
-Maharashtra delivered the highest indicator score on growth rate of power demand and scored in the upper reaches on clean energy value chain indicators.

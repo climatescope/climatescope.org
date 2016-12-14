@@ -225,6 +225,14 @@
       {
         "name": "West Bengal",
         "iso": "IN-WB"
+      },
+      {
+        "name": "Odisha",
+        "iso": "IN-OR"
+      },
+      {
+        "name": "Bihar",
+        "iso": "IN-BR"
       }
     ]
   },

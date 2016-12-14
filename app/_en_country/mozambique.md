@@ -1,34 +1,35 @@
 ---
 layout: country
-
 id: mz
 title: Mozambique
-
 region: africa
-grid: off
+grid: 'off'
+published: true
 ---
-Mozambique’s power sector runs predominantly on hydro generation. However, large discoveries of coal reserves and offshore natural gas in the north of the country may change this mix in the future. These discoveries also create challenges for how to develop infrastructure and provide power supply to serve increasing demand from these industries. 
 
-The hydrocarbon discoveries, coupled with agricultural growth, have boosted Mozambique’s economy, which grew at an average rate of 7.3% in the past four years. That growth has exacerbated the country’s infrastructure and logistics challenges. In the power sector, aging transmission and distribution networks constrain capacity and require frequent and expensive maintenance and repair.
+Mozambique’s power sector consists predominantly of hydro-electric power generation. However, this mix can be expected to change in the future following large discoveries of coal reserves and offshore natural gas.
+The Ministry of Energy oversees the power sector, while the National Electricity Council (CNELEC) acts as the regulator and the National Fund for Rural Electrification (FUNAE) is charged with implementing off-grid projects.
 
-As of 2014, Mozambique’s on-grid generating capacity was 2.2GW, with large hydro power making up 2GW. The remaining capacity is comprised of small scale fossil plants and small hydro. Electricidade de Moçambique (EDM), the country’s state-owned vertically integrated utility, has 5% of its generation capacity and is responsible for transmission and distribution services. Hidroeléctrica de Cahora Bassa’s 2GW large hydro plant is responsible for the remaining generation and is a large exporter of electricity to surrounding countries. MoTraCo runs transmission lines to large industrial projects and to neighbouring Swaziland.
+The market is currently structured around two companies operating in the generation sector (both majority state-owned), three in transmission, and the vertically-integrated state monopoly that is in charge of distribution. Electricidade de Mocambique (EDM) has 5% of the generation capacity and is in charge of transmission and distribution. Hidroelectrica Cahora Bassa – 92.5% owned by EDM – makes up 95% of the generation mix through a single large hydro project and is a large exporter of electricity to surrounding countries. MoTraCo runs transmission lines to large industrial projects and to neighbouring Swaziland.
 
-In 2011, a public-private partnership law was published, creating opportunities for private generators. There are currently a 110MW gas-fired plant, two coal-fired power plants amounting to 900MW and a 1.5GW large hydro project being developed by independent power producers (IPPs). Additionally, two other projects are being developed to supply coal mines. All IPPs must sell electricity to EDM under negotiated prices.
+The national transmission grid is in fact three separate grids – the Southern System, which serves the capital city Maputo, the Central System, and the Northern System, where the Cahora Bassa hydro plant is located. Whilst there is some interconnection between the Northern and Central Systems, the Southern System is isolated – power from the Cahora Bassa plant is delivered through Eskom’s transmission grid in South Africa.
 
-To date, clean energy has mainly been deployed to increase the country’s electrification rate, which stands at 40%. Distributed solar systems have been fundamental to bring electricity to small villages, where transmission infrastructure has not arrived. The National Energy Fund (FUNAE) is a government agency dedicated to implementing off-grid projects. FUNAE holds tenders for the installation of systems across the country by private developers. 
+Agricultural growth and discoveries of coal and natural gas reserves have boosted Mozambique’s economy, which grew at an average of 7.3% in the past four years. Challenges around infrastructure and logistics remain, especially in the north of the country. In the power sector, aging transmission and distribution networks create capacity constraints and difficulties for maintenance and collection.
+As of 2014, Mozambique’s installed generating capacity was 2.2GW, and large hydro accounted for 2.1GW of this. The remaining capacity is comprised of small-scale thermal plants and small hydro. Due to the country's natural resources, the energy mix is beginning to transform from a strictly hydro mix to a more diversified one. On 10 August 2011, the Public-Private Partnership law was published, opening up a space for private generators. There is currently an 110MW gas-fired plant under development, two coal-fired power plants amounting to 900MW, and a 1.5GW large hydro project at various stages of development by independent power producers (IPPs). All IPPs must sell electricity to EDM and negotiate prices on a contract-by-contract basis.
 
-To foster the development of renewable energy technologies in the country, the Ministry of Energy in 2014 launched a feed-in tariff to provide price premiums to small-scale projects from 10kW to 10MW for biomass, small hydro, solar and wind. Premium rates varied from $0.13-$0.41/kWh. However, regulation to implement the feed-in tariff is still pending. On the utility-scale side, there are plans to develop a wind farm close to Inhambane, 500km north of Maputo. 
+On 17 October 2014, Mozambique’s feed-in tariff was published, aiming to provide price premiums to small-scale projects from 10kW to 10MW for biomass, small hydro, solar and wind. Regulation is still pending.
+Biofuels are viewed as an important sector for development within the country. In 2009, a national policy and strategy for biofuels was released, which seeks to develop the biofuels sector in a number of phases. In 2011, the blending mandate and tax schedule for biofuels was released. All projects can apply for a host of tax-based incentives aimed at attracting foreign investment.
 
-Mozambique is one of the few countries in Sub-Saharan Africa to have a solar supply-chain facility. The module assembly plant near Maputo aims to produce components for the national market.
 
-#### Score Summary
+###Score summary
 
-Mozambique scored 0.77 in Climatescope 2015, placing it 41st on the list of countries overall, a decline of one place from its position in 2014. The country’s highest score was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
+Mozambique scored 0.80 in Climatescope 2016, placing it 48<sup>th</sup> on the list of countries overall, a decline of seven places from its position in 2015. The country’s highest score was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
-On Enabling Framework Parameter I, Mozambique lost one place to rank 43rd. Its score was supported by its relatively high diesel and kerosene prices.
+On Enabling Framework Parameter I, Mozambique lost five places to rank 48<sup>th</sup>. Its score was supported by its relatively robust distributed energy framework.
 
-The country gained five places to take 37th position on Clean Energy Investment and Climate Financing Parameter II. While there has been little investment to date, the sector has benefited from a modest volume of grants and loans. 
+The country also took 49<sup>th</sup> position on Clean Energy Investment and Climate Financing Parameter II, a fall of twelve places compared with 2015. The average cost of debt is quite high and there has been minimal investment to date.
 
-On Parameter III, Mozambique was placed 30th, reflecting the presence of a small number of clean energy value chains and service providers, including a solar module assembly plant. 
+On Parameter III, Mozambique’s score was unchanged on the previous year, but fell four places to 34<sup>th</sup> on the list of countries. There are value chains in the solar, biofuels and small hydro sectors. 
 
-On Greenhouse Gas Management Activities Parameter IV, the country ranked 38th, scoring best on the Clean Development Mechanism risk indicator.
+On Greenhouse Gas Management Activities Parameter IV, the country ranked 50<sup>th</sup> scoring best on the Clean Development Mechanism risk indicator.
+

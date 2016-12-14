@@ -1,34 +1,34 @@
 ---
 layout: country
-
 id: mw
 title: Malawi
-
 region: africa
-grid: off
+grid: 'off'
+published: true
 ---
-Malawi’s electricity generation mix consists predominantly of large hydro power plants, mainly on the Shire River that flows from Lake Malawi. With an electrification rate of at most 9% and increasing power demand, the country is struggling to reform its power market and incentivise the build-out of new capacity.
 
-Malawi’s Ministry of Natural Resources, Energy and Environment oversees its electricity sector along with the Malawi Energy Regularity Authority (MERA). The Electricity Supply Corporation of Malawi (ESCOM) is a vertically integrated government utility and responsible for all generation, transmission, distribution and retail within the country.
+Malawi’s electricity generation relies predominantly on large hydro, which accounts for 97% of the total installed capacity. All the major power stations are located in the southern region along the Shire River, which runs from Lake Malawi. They make up 346 MW of the total 363MW capacity (on grid). One small hydro station, the 4.5MW Wovwe power station, operates in the north of the country. 
+The remaining capacity is on two isolated diesel mini-grids in the Likoma and Chizumulu islands, newly installed 10MW diesel generators in Lilongwe and a PV plant that powers the Kamuzu International Airport of the capital Lilongwe. There are also two captive biomass plants owned by a sugarcane producer.
 
-In September 2012, MERA finalised a feed-in tariff, but to date it has not been made available to developers. Clean energy project developers and manufacturers can qualify for general tax incentives that were set up to support foreign investment. A biofuels blending mandate has been in place since the 1980s.
+The country’s electrification rate is 10%, with a rural share of only 1%, according to the Malawi Energy Regulatory Authority. Increased power demand and the instability of the electricity system have forced the government to incentivize reform of the power market and the build-out of new capacity.
 
-Large hydro power plants make up 282MW of the 372MW of installed capacity. Small hydro contributes 68MW, with the remainder composed of biomass, diesel and a single 0.83MW PV plant. The two biomass plants are captive and owned by a sugar cane producer, while the PV plant – financed through a grant from Japan – is used to power Lilongwe’s airport. A micro-grid run by Mulanje Electricity Generation Association (MEGA) in Mulanje district with 56kW of hydro capacity is the only example of a functioning off-grid system.
+In early 2015, the government announced the partial unbundling of the power sector. The state-owned Electricity Supply Corporation of Malawi (ESCOM) has been responsible for all generation, transmission, distribution and retail within the country. The restructuring, expected to be completed by December 2016, will create a new company in charge of the generation segment, whereas ESCOM will continue to control the rest of the market’s segments as well as establish a single buyer entity. Malawi is not connected to power systems with neighboring countries, although this option remains open. A plan to interconnect with [Mozambique](/en/country/mozambique) for the purchase of at least 50MW is being developed.
 
-The government is conducting feasibility studies for new large hydro power plants with a total capacity of 310MW. To attract foreign investment in the power sector, the country has started opening up the electricity market with a standardised power purchase agreement to allow independent power producers to operate. It is early days, however: only two IPPs are developing projects. HE Power has licenses for a 41MW hydro project and is only lacking an equity investor. IntraEnergy, from Australia, has signed a memorandum of understanding with the government for a 120MW coal-fired power plant in Pamodzi.
+In September 2012, the Malawi Energy Regulatory Authority (MERA) drafted a feed-in tariff plan, but it has not been enacted yet. To attract foreign investment in the power sector, the country has started opening up the electricity market with a standardized power purchase agreement to allow independent power producers to operate. 
 
-The existing Rural Electrification Programme under the energy ministry uses revenues from a 1% electricity tax for a fund to extend the main grid to trade centres. Malawi has few public schemes to help develop off-grid solutions despite having an energy access target of 30% by 2020. These include the UNDP funded Decentralised Energy management program and Sustainable Energy Management program. There are a number of entrepreneurs selling solar lanterns, installing small-scale home systems and offering finance for their uptake. They are helped by an exemption from import duties for solar panels and lanterns.
+Several IPPs are developing projects and more than 30 memoranda of understanding have been signed, the majority on renewable energy projects. Clean energy project developers and manufacturers can qualify for general tax incentives that were set up to support foreign investment. A biofuels blending mandate has been in place since the 1980s.
 
-The government has acknowledged the need for sectoral reform and an external consultant is developing options for unbundling the power market as part of a new energy policy package. President Mutharika announced in February plans to create two separate companies, responsible for generation on the one hand and transmission and distribution on the other.
+The existing Rural Electrification Program under the Ministry of Energy Affairs uses revenue from a 1% levy on electricity consumption and fuel imports to fund the extension of the main grid to trading centers. The country aims to increase energy access to 30% by 2020 and 40% by 2050 and has set a target of 2 million clean and efficient cookstoves in use in the country by 2020. All public institutions including hospitals and schools are to have access to electricity by 2035 through grid connection and/or minigrid/off-grid projects. The National Energy Policy, currently being reviewed, will diversify further the energy mix with a major focus on renewable sources. The new energy policy is expected to raise the renewable-energy target from 7% now to 11% by 2020 and 22% by 2030. These efforts should be more clearly defined in an Integrated Resource Plan under development by the Ministry of Natural Resources, Energy and Mining, expected to be completed in mid-2017.
+
 
 #### Score Summary
 
-Malawi scored 1.01 in Climatescope 2015, placing it 33rd on the list of countries overall, up one place on 2014. Its best performance was on Greenhouse Gas Management Activities Parameter IV. 
+Malawi scored 0.89 in Climatescope 2016, placing it 46<sup>th</sup> on the list of countries overall. This was a decline of thirteen places on the previous year and reflected a fall in its scores on both Enabling Framework Parameter I and Greenhouse Gas Management Activities Parameter IV.
 
-The country was ranked 22nd on Enabling Framework Parameter I, which was a slight improvement on 2014. This largely reflected the country’s relatively robust framework for distributed energy and the presence of energy access policies.
+On Parameter I, the country tumbled twenty-two places to 44<sup>th</sup> position. This reflected the low level of installed clean energy capacity (just 25MW) and slower growth in demand for power. Malawi’s distributed energy framework is relatively robust.
 
-On Clean Energy Investment and Climate Financing Parameter II, the country was placed near the bottom of the list in 53rd place, reflecting the absence of investment in the sector.
+On Clean Energy Investment and Climate Financing Parameter II, the country placed near the bottom of the list in 55<sup>th</sup> place, reflecting the absence of investment in the sector. 
 
-Malawi was ranked 28th on Low-Carbon Business & Clean Energy Value Chains Parameter III, with a number of service providers present related to the distributed energy sectors. 
+Malawi’s score on Low-Carbon Business & Clean Energy Value Chains Parameter III rose slightly and its ranking fell by one place to 29<sup>th</sup>. There is a relatively large number of clean energy service providers present, but the sector is served by just one financial institution.
 
-On Parameter IV, the country climbed 10 places to 18th thanks to a better performance on the Clean Development Mechanism risk indicator. 
+On Parameter IV, the country plummeted twenty-four places to 42<sup>nd</sup>, owing to a moderate deterioration in its performance on the carbon offsets indicator.

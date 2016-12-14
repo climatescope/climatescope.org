@@ -41,6 +41,44 @@
     };
   }]);
 
+  app.controller('DescriptionAccordionController', [function() {
+    this.initAccordion = function(target) {
+      var $target = $(target);
+      // Perform transformation on the page content.
+      // Content comes from markdown like:
+      // h4+p+p+h4 ...
+      // Basically we wrap a section around a set of h4+p until the next h4.
+      var transformed = $.map($('h4', $target), function (o, i) {
+        var headings = $(o).nextUntil('h4')
+
+        // Section to contain elements.
+        var $section = $('<section>').addClass('prose-block');
+        // Prepare title link.
+        var $titleLink = $('<a href="#">').addClass('prose-block__toggle').append(o);
+        // Construct header.
+        $('<header>')
+          .addClass('prose-block__header')
+          .append($titleLink)
+          .appendTo($section);
+
+        // Container for the text.
+        var $container = $('<div>').addClass('prose-block__body');
+        $container.append(headings);
+        $container.appendTo($section);
+
+        // Accordion listener.
+        $titleLink.click(function (e) {
+          e.preventDefault();
+          $titleLink.closest('.prose-block').toggleClass('prose-block--expanded')
+        });
+
+        return $section;
+      });
+
+      $target.append(transformed);
+    }
+  }]);
+
   app.controller('StatsController', ['$http', function($http) {
     var _self = this;
     // Data.

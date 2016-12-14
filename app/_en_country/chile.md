@@ -1,34 +1,34 @@
 ---
 layout: country
-
 id: cl
 title: Chile
-
 region: lac
-grid: on
+grid: 'on'
+published: true
 ---
-Chile was one of the first nations in Latin America to set long-range targets for clean generating capacity. Today, the mandate stands at 20% of renewable energy generation by 2025. However, given the rapid development of wind and solar projects in the country, Chile is likely to achieve its target earlier than 2025. 
 
-The Chilean electricity market is divided into four segments: Central Interconnected System (SIC), Norte Grande Interconnected System (SING), Aysén and Magallanes. Chile is the world's largest copper exporter, and the energy-intensive nature of that industry creates substantial challenges in meeting power demand. In 2013, the copper industry consumed 22TWh, which represents 32% of the total generated in the country that year. Mining operations are geographically located in the northern part of the country, mostly serviced by the SING system. Although most of the mining's electricity demand occurs in the SING area, two thirds of the country’s generating capacity (19GW) is located in the SIC system.
+Chile was one of the first nations in Latin America to set long-range targets for adding clean generating capacity. These included a clean energy mandate of 20% of generation by 2025. In 2015, the sector represented 18% of all energy generated, and is expected to surpass the 20% by 2025 target.
 
-In 2014, Chile generated 12% of a total of 69TWh from biomass and waste, solar, wind and small hydro. Large hydro accounted for 28% and natural gas, coal, oil and diesel accounted for the rest. 
+The Chilean electricity market is divided into four segments: Central Interconnected System (SIC), Norte Grande Interconnected System (SING), Aysén and Magallanes.
+Chile is the world's largest copper exporter, and the energy-intensive nature of that industry creates substantial correlation with power demand growth. In 2015, the copper industry consumed 23TWh, which represented 33% of the total power generated in the country that year. Mining operations are located in the northern part of the country, mostly serviced by the SING system. Although most of the mining industry's electricity demand occurs in the SING area, two-thirds of the country’s total installed capacity (21GW) is in the SIC system.
 
-The country is the leader in Latin America in solar installations – as of the first half of 2015, 0.5GW was already installed in the country. Most of this development has been merchant projects – PV plants developed to sell electricity in the spot market or to single offtakers. 
+On September 2014, Chile created a renewable energy-specific auction system, in which all clean energy technologies would compete. Under the system, generators commit to supply electricity during a certain time block. By the end of 2015, two auctions had been conducted under this format.
 
-Chile’s renewables policies support the use of auctions as a tool to help achieve its renewables objectives. 
-In order to improve the competitiveness of renewable projects in auctions, in September 2014 the government approved a resolution that created three supply time blocks: 11pm-8am; 8am-6pm; 6pm-11pm. Generators bid to supply electricity during a certain time block. 
+In 2015, Chile generated 72TWh from renewable sources (biomass and waste, solar, wind and small hydro), equivalent to 18% of the national total. Large hydro accounted for 23%, and natural gas, coal, oil and diesel made up the rest.
 
-Chile also encourages clean energy through total exemption from transmission taxes for renewable projects up to 9MW and partial exemption for projects of 9MW to 20MW.
-In 2014, a net metering regulation was published. Under the regulation, retail electricity consumers who have renewable energy or cogeneration installations smaller than 100kW will be able to connect to the grid, deliver surplus generation and obtain credit for electricity delivered. The credit is equivalent to the price per kWh charged by the utilities to their consumers.
+The country is the leader in Latin American solar installations – as of the end of 2015, 750MW was installed. In 2014, most of the PV development was propelled by merchant projects that were developed to sell electricity in the spot market. However, a recent fall of prices in the wholesale market has seen developers shift to secure contracts in the regulated market.
 
-#### Score Summary
+In 2014, a net metering programme was introduced. This enables retail electricity consumers who have renewable energy or co-generation installations smaller than 100kW to connect to the national grid, deliver surplus generation and obtain credit for excess electricity provided. The credit is equivalent to the price charged by the utilities to their consumers.
 
-Chile’s 1.97 overall score in Climatescope 2015 placed it third among all countries, up from fifth position in 2014, when it scored 1.79. The country’s ascent was powered by significant gains on both Enabling Framework Parameter I and Clean Energy Investment and Climate Financing Parameter II. Chile’s strength in the heavily weighted clean energy policies and power sector structures indicators of Parameter I were instrumental, as was its performance on the Parameter II categories of cost of debt and amount invested.
 
-On Parameter I, Chile finished fourth, up nine levels from 2014, with a score of 1.81. Its 2014 score was 1.38.
+###Score summary
 
-On Parameter II, Chile scored 0.93, up from 0.79 in 2014. Its Parameter II ranking was eighth in 2015 versus 17th in 2014.
+Chile scored 2.36 in Climatescope 2016, placing it 2<sup>nd</sup> on the list of 58 countries, beneath only China. (In 2015, it managed 3<sup>rd</sup> with a score of 1.97.) The country was in the top 10 on all parameters, and achieved its highest ranking on Greenhouse Gas Management Activities Parameter IV.
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Chile’s 11th-place finish in 2015 equaled its 2014 position. The country’s 2015 and 2014 Parameter III scores were 3.38 and 3.18, respectively.
+On Enabling Framework Parameter I, Chile earned a higher score, but it slipped three places to 7<sup>th</sup>. It has a supportive power structure, for instance it is open to independent power producers, and importantly it added more than 3GW of clean energy capacity in 2015.
 
-On Greenhouse Gas Management Activities Parameter IV, Chile relinquished its first-place finish of 2014, falling to third position. Its 2015 and 2014 Parameter IV scores were 3.05 and 3.48, respectively.
+The country’s score more than doubled on Clean Energy Investment and Climate Financing Parameter II and it climbed from 8<sup>th</sup> to 5<sup>th</sup> position. This reflected $3.3bn of new investment, chiefly in solar.
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, Chile’s score improved slightly but its position in the ranking remained the same. The country is served by a wide variety of manufacturers and developers.  
+
+The country’s score on Parameter IV jumped to 3.21 from 3.05, and it took 2<sup>nd</sup> place globally, behind only South Africa with 3.39. It has adopted a broad range of carbon policies and is engaged in considerable carbon offsetting activity.

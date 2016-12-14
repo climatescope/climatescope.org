@@ -8,7 +8,7 @@
       <div class="row--contained">
         <div class="layout--hub__heading">
           <h1 class="layout--hub__title">{{ t['Policies'][language] }}</h1>
-          <p class="layout--hub__lead">{{ t['Analyze more than 450 policies intended to spur clean energy development in the nations, states, and provinces surveyed by the Climatescope.'][language] }}</p>
+          <p class="layout--hub__lead">{{ t['Analyze more than 800 policies intended to spur clean energy development in the nations and states surveyed by Climatescope.'][language] }}</p>
         </div>
         <div class="layout--hub__tools" init-dropdown>
           {% include actions_menu.html %}
@@ -24,7 +24,7 @@
           </div>
           
           <div class="control">
-            <label class="control-title" for="policy_state">{{ t['State / province'][language] }}</label>
+            <label class="control-title" for="policy_state">{{ t['State'][language] }}</label>
             <select class="sllt sllt-m" id="policy_state" name="policy_state" ng-model="filterCtrl.filters.state" ng-options="value.id as value.name for value in filterCtrl.getSelectOptsState(filterCtrl.filterData.state)" ng-disabled="!filterCtrl.getSelectOptsState(filterCtrl.filterData.state).length">
               <option value="">{{ t['All'][language] }}</option>
             </select>
@@ -61,7 +61,7 @@
             <tr>
               <th><a href="" title="{{ t['Sort by policy name'][language] }}" ng-click="tableCtrl.setSort('name')" class="sort" ng-class="[tableCtrl.checkSortClasses('name')]">{{ t['Policy name'][language] }}</a></th>
               <th><a href="" title="{{ t['Sort by country'][language] }}" ng-click="tableCtrl.setSort('country')" class="sort" ng-class="[tableCtrl.checkSortClasses('country')]">{{ t['Country'][language] }}</a></th>
-              <th><a href="" title="{{ t['Sort by state / province'][language] }}" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">{{ t['State / province'][language] }}</a></th>
+              <th><a href="" title="{{ t['Sort by state'][language] }}" ng-click="tableCtrl.setSort('state')" class="sort" ng-class="[tableCtrl.checkSortClasses('state')]">{{ t['State'][language] }}</a></th>
               <th>{{ t['Policy Mechanism'][language] }}</th>
               <th><a href="" title="{{ t['Sort by status'][language] }}" ng-click="tableCtrl.setSort('status')" class="sort" ng-class="[tableCtrl.checkSortClasses('status')]">{{ t['Status'][language] }}</a></th>
             </tr>

@@ -1,49 +1,43 @@
 ---
 layout: country
-
 id: za
 title: South Africa
-
 region: africa
-grid: on
+grid: 'on'
+published: true
 ---
-South Africa's power sector continues to be dominated by an aging coal-fired power plant fleet that accounts for 85% of the energy mix. Their reliability has become a major issue: the national utility Eskom has maintenance backlogs, which means it can only run around two-thirds of its installed capacity. As a result, rolling black-outs plague the system. Dependence on fossil fuels is starting to change, however, with 1.3GW of renewable capacity added under the flagship Renewable Energy Independent Power Producer Programme (REIPPP).
+In recent years the South African energy sector has experienced contrasting fortunes. The successful implementation of the Renewable Energy Independent Power Producer Programme (REIPPP) has sat alongside the economically damaging effects of rolling blackouts brought on by the maintenance backlog of an ageing coal-fired power fleet. In 2010, South Africa released its Integrated Resource Plan, which outlines the country’s energy build-out strategy to 2030. Under the plan, the country seeks to increase its power capacity from 43GW to 89.5GW, with wind, PV and solar thermal making up as much as 20% of the mix, compared with 5.5% at end-2015.
 
-In 2010, South Africa released its Integrated Resource Plan which outlines the country’s energy build-out strategy to 2030. Under the plan the country seeks to increase its power capacity from 43GW to 89.5GW, with renewables making up as much as 20% of the mix. Wind and solar PV make up the largest portions of the renewables mix, receiving 9.2GW and 8.4GW, respectively. 
+Eskom, the national utility, generates about 95% of South Africa’s power and is the sole purchaser of electricity in the country. The state-owned company has had financial troubles, exacerbated by the general state of the South African economy – to the point that if South Africa’s credit rating were to be lowered Eskom might have to look outside the capital markets to meet funding requirements. Rolling blackouts, or load shedding, were commonplace in 2015, but in early 2016 Eskom announced that no blackouts would be scheduled for the foreseeable future. Indeed, Eskom would claim this positive rhetoric is possible due to shake-ups in management and improved transparency at the utility, yet critics would argue that reduced power demand brought on by a sluggish economy is the reason that South Africa will have sufficient energy to meet the needs of the 88% of the population that is connected to the electricity grid.
 
-The 2010 plan is considered somewhat outdated due to a slowdown in economic growth and costs associated with various technologies. An updated plan was released in 2013 which reduced the capacity target to 81GW, but this was never promulgated. 
-Eskom is the country's single largest generator, with over 95% of the market share, and is the sole buyer of electricity in the country. It also runs the transmission and the majority of the distribution system, with municipalities distributing within their regions.
+Independent power producers (IPPs) are beginning to carve out market share with renewable projects, a trend that looks set to continue as the Department of Energy adapts the reverse auction process used in REIPPP to conventional power projects such as coal and gas while still awarding new renewable projects.
 
-South African energy regulator NERSA started to implement a feed-in tariff in April 2009. However, by August 2011 this was abandoned in favor of reverse auctions under the REIPPP. Eskom also has had a demand-side management programme since 2008 offering incentives for energy efficient technologies.
+The 800MW initial stage of the new Eskom-owned Medupi coal power station was officially opened in August 2015. In December 2015, the Cabinet approved the start of the 9.6GW nuclear-energy procurement programme.
 
-The REIPPP means independent power producers are starting to increase their share. Outside of the REIPPP the government has launched tenders for coal, gas and cogeneration totalling 6.4GW as the country seeks to reduce Eskom’s load-shedding episodes. One of the more controversial government plans is to procure a new generation of nuclear plants, with a decision on a tender for up to 9.6GW slated for the coming months. 
+In mid-2015, the 4<sup>th</sup> round of the REIPPP programme culminated in the announcement of 26 projects as preferred bidders, putting 2.2GW of mostly wind and PV solar projects on track for prospective commissioning between 2017 and 2019. The 5th round is set to be opened for proposals by the end of Q2 of the 2016 financial year.
 
-In 2014, South Africa began to reap the rewards of the REIPPP tenders, with the total installed renewable capacity surpassing 1.3GW. The largest contributor was solar PV with 774MW, followed by wind with 570MW. 
+In October 2015, the winners of the first round of the small projects auction were announced. The 10 winning projects amount to 49MW, with a combined value of ZAR 1.5bn. The small projects REIPPP is planned to add 200MW of generation capacity over four rounds.
+In May 2016, the DOE requested expressions of interest for 1,500MW of solar thermal or PV solar to be developed in the Northern Cape with a focus on developing local manufacturing over the course of what the department has named “The Solar Parks Project”.
 
-While 2014 investment figures were down compared to previous years, this is due to Round 3 projects undergoing a staggered financial close. This is a different approach compared to previous years where all the projects had the same date to reach financial close. The main reason behind this was to protect the South African rand, which around financial close would experience large spikes due to the hedging activity taking place.
+In a dramatic turn of events, in August 2016, Eskom cast the future of the South African renewable sector into doubt by refusing to sign new PPAs unless the grid operator is given more control of the prices that are agreed to through the auction process. Eskom is the sole off-taker for IPPs and refusing to formalise agreements places financial strain on the IPPs, investors and equipment suppliers while Eskom is still able to purchase electricity from the power purchasing division of the utility.
 
-South Africa ran three REIPPP tenders in 2014: the Round 3b for solar thermal in March, the small-scale programme in April and Round 4 of the programme in August. Round 3b saw 200MW of solar thermal capacity up for grabs, which was awarded in January 2015. The small-scale programme commenced in April 2014 and will have four submission windows of 50MW each for projects between 1-5MW. Round 4 submissions opened in August 2014 with 1.1GW available; wind received 590MW of the available capacity and PV 400MW. 
+The coal and gas IPP auctions have proceeded with only minor delays. A call for manifestation of interest for 600MW of gas capacity has opened May 2016 . It was published along with the announcement that the gas programme would be increased to a total of 3,126MW. In October 2016, the first two successful bidders for the coal IPP programme were announced, adding a combined 863.3MW to the list of power projects in development.
 
-While the REIPPP has experienced a number of delays surrounding bid announcements, overall the program to-date has procured 6.3GW of renewables, with the majority under construction or yet to be financed. In comparison to the large scale REIPPP, the small scale programme has struggled due to the upfront transaction costs of bidding, but this is set to change with a new financing facility set up to reduce those costs for small developers. 
+Eskom is also expanding conventional power capacity with the 800MW initial stage of the new Medupi coal power station being officially opened in August 2015. The Ingula Pumped Storage Scheme launched the first of four 333MW units in in July 2016 and construction continues on the delayed 4,800MW Kusile Coal Power Station.
 
-The main reason for the delays surrounds Eskom and its cash flow issues, which have resulted in slow progress in constructing new substations and connecting projects to the grid. The utility’s cash shortages stem from its historically suppressed tariffs. It has sought rate increases, some of which have been rejected while others were approved at smaller-than-requested levels. 
+In December 2015, the Cabinet approved the start of the highly controversial 9.6GW nuclear-energy procurement programme. The nuclear energy plan would ultimately provide 13% of South Africa’s 2030 generating capacity. The plan has been widely criticised for using large, out-dated technology, offering overly favourable terms to the Russian-owned project developers and displaying early sign of impropriety from the government officials who negotiated the deal. Request for proposals were deferred by the Department of Energy in September 2016 to provide more time to consult the many aggrieved public and private stakeholders.
 
-South Africa’s expansion of renewable capacity grew further in 2015, when the government awarded 2.2GW of renewables under the Round 4 bidding window and announced it will be running an expedited bidding window to procure a further 1.8GW. In April 2015, the government announced it would seek to procure a further 6.3GW of renewables, predominantly made up of wind and solar. With the addition of this South Africa is on track to reach its 2030 target under the Integrated Renewables Plan. 
+The biofuels blending mandate was supposed to come into force in October 2015, but as of May 2016 the government had not released the pricing or final position paper. Still, a regulatory framework is expected to be submitted at some stage during 2016. The carbon tax which is expected to come into force in 2016/17 is perhaps one of the more controversial policies in the country due to the large financial implications for Eskom and the mining sector.
 
-Biofuels blending was to come into force in October 2015, but as of Q2 2015 the government had not released the pricing or final position paper. The government is currently revamping the funding incentives due to the decline in crude oil prices. The initial target will seek to have biofuels make up 2% of the country’s current motor fuel demand of 400m litres.  
 
-A carbon tax, which is expected to come into force in 2016, is perhaps one of the more controversial policies in the country due to the large financial implications for Eskom and the mining sector. Also planned are rules for net metering and small-scale embedded generation. While some municipalities have opened the distribution system or are running pilot projects, the national regulator and Eskom seem to be dragging their feet in implementing the mechanisms. A possible reason behind this would be the further loss of revenue for Eskom. 
+###Score summary
 
-South Africa offers other incentives including grants-for-equity in large-scale manufacturers, debt and equity financing for green initiatives and tax incentives for manufacturers and developers of large-scale projects. Since the launch of the REIPPP and manufacturing incentives, the country has seen its clean energy manufacturing sector flourish. In the solar sector the country now has a number of module and inverter production facilities, and blade and tower manufacturers are active within the wind sector.
+South Africa scored 2.21 in Climatescope 2016, ranking it 5<sup>th</sup> on the list of countries overall, one place lower than in 2015. Its highest finish was on Greenhouse Gas Management Activities Parameter IV.
 
-#### Score Summary
+On Enabling Framework Parameter I, South Africa’s score suffered a fairly significant fall and the country dropped twenty-six places to rank 32<sup>nd</sup>. This was due to, among other things, slower growth in the rate of clean energy installation and generation.
 
-South Africa scored 1.91 in Climatescope 2015, ranking it 4th on the list of countries overall, one place lower than in 2014. Its highest finish was on Low-Carbon Business & Clean Energy Value Chains Parameter III. 
+In contrast, its score on Clean Energy Investment and Climate Financing Parameter II increased more than threefold and it climbed eighteen places to 6<sup>th</sup> thanks to more than $4bn of new investment in the sector in 2015.
 
-On Enabling Framework Parameter I, South Africa climbed to 6th place among all nations in 2015, compared with 36th in 2014. This jump reflected strong growth in the amount of installed clean energy generating capacity. 
+South Africa’s score on Low-Carbon Business & Clean Energy Value Chains Parameter III edged up slightly. It was ranked 3<sup>rd</sup> globally, a reflection of the number and variety of companies (including financial institutions) serving its clean energy sector.
 
-On Clean Energy Investment and Climate Financing Parameter II, however, the country plummeted to 24th place on the list, having been second overall in 2014. This largely reflected a fall – or rather, delays – in new clean energy investment.
-
-South Africa ranked fourth overall on Parameter III thanks to its well-developed financial sector and relatively high number of service providers. 
-
-On Greenhouse Gas Management Activities Parameter IV the country ranked 6th overall reflecting its offset project activity and high level of corporate awareness.
+On Greenhouse Gas Management Activities Parameter IV, South Africa’s score rose sharply and it took the number one spot globally. It was very strong on all three categories – carbon offsets, carbon policy and carbon policy.

@@ -1,43 +1,35 @@
 ---
 layout: country
-
 id: ke
 title: Kenya
-
 region: africa
-grid: off
+grid: 'off'
+published: true
 ---
-Kenya has ambitious energy objectives, aiming to reach just under 22.7GW of power-generating capacity by 2033, under the Least-Cost Power Development Plan 2013-33. Clean energy sources are to play an important role in this development, with 45% of the capacity to use renewables (including large hydro but excluding solar). In comparison, Kenya had some 2.2GW of power-generating capacity at end-2014, of which a third was renewable. In large part, this ambition is driven by healthy economic growth, which saw on-grid peak power demand climb 60% between 2006 and 2014.
 
-The East African country surpassed Japan in December to become the eighth-largest producer of geothermal energy after the state-owned generator KenGen commissioned a further 280MW of capacity. Kenya enjoys extensive clean energy resources, with 10GW of geothermal and 3GW of small hydro potential, according to the draft National Energy Policy. Unlike previous versions, this draft does not set out new targets to 2030 for all technologies. Instead, it still aims for 5.5GW of geothermal capacity by that year but only includes goals to end-2016 for other renewable energy sources. These goals were part of the government’s plan to reach 5GW of power-generating capacity, to include 1.9GW of geothermal, 635MW of wind and 44MW of biomass cogeneration.
+Kenya has ambitious renewable energy targets underlined by the 30% emission reduction target it submitted to the UN, a relatively stable power supply and a stable policy framework that have attracted a large pipeline of developers. Clean energy (excluding large hydro) accounted for 46% of total power generation in 2015.
 
-The single largest project under development is a 310MW wind farm near Lake Turkana, in northwest Kenya. This is a truly flagship project having taken nearly 10 years and a dozen investors to reach financial close in 2014. The developers broke ground in July 2015, with an estimated commissioning date of 2017. A forthcoming 428km overhead transmission line – funded by the government – will connect the project to Suswa, some 100km from Nairobi.
+The liberalisation of the generation market has seen 13 independent power producers cut into KenGen’s market share, and the government has mandated Ketraco to compete with Kenya Power on transmission. A drop of demand growth and increasing installed capacity have created a generation oversupply of more than 700MW over peak demand in 2015.
 
-Government-owned Geothermal Development Company (GDC), is working to fast-track the development of Kenya’s geothermal resources and plans to replicate a model whereby it conducts the risky and expensive, early-stage exploration and drilling. It then selects by tender the independent power producers (IPP) that will take the project to commissioning. The GDC has become somewhat of a regional center for geothermal, assisting neighboring countries with exploration of their resources and training their workers.
+One of the most noteworthy successes in Kenya’s power sector is in geothermal. The nation attracts private investors to exploit the underground heat by letting the government-owned Geothermal Development Company take on the risky and expensive exploration work and tender verified sites off to independent developers. The technology accounted for 27% of installed capacity in 2015.
+As new capacity build has continued, demand growth has slowed. Peak demand in the 2014-15 financial year stood at 1,512MW, only 3% above the previous year, or less than half the average pace of growth observed in the four prior years. As a result, supply interruptions have become rare.
 
-Kenya’s power market has been partly unbundled. Kenya Power is responsible for all functions except generation and a small share of transmission. State-owned KETRACO, which was set up in 2008, develops and operates new transmission lines. Though Kenya has more IPPs than many of its neighbors, KenGen still had 70% of power-generating capacity at end-2014. The new National Energy Policy and Bill, which are due to go to Parliament in 2015, propose a raft of measures to separate generation, distribution and retail functions, with a separate unit to be set up in either Kenya Power or KETRACO to become the system operator.
+As all renewable energy sources benefit from subsidies in the form of a FiT, the current oversupply reduces the incentive to rush large renewables projects to commissioning. By far the largest clean energy project currently under construction is the 310MW Lake Turkana wind farm, which is expected to come online in 2018. Several other wind projects are in early planning stages, but are not expected to see a breakthrough soon.
 
-The legislative framework behind the energy sector has been under review since 2011, when a new constitution passed many powers to the county level. The new policy and bill should help spur investment in clean energy, as the draft released in January 2015 proposed the introduction of net metering. Policymakers’ original goal had been to incorporate legislation on all energy sources in one bill. However, what was one became two, and now five, pieces of legislation, including local content regulations for energy projects. As of H2 2015, they were under consideration in parliament.
+There are also a handful of large solar projects, typically around 40MW, expected to sign PPAs at the feed-in-tariff of $0.12/kWh later this year. Once built, these projects will be among the largest PV plants in sub-Saharan Africa. The projects coming after them will likely benefit from agreed amendments to the default PPA template. Several of these projects have been held back due to difficulties in securing large plots of land, and these difficulties are likely to remain for future projects. The stamina and risk appetite required to overcome these challenges, combined with slowing power demand growth, casts a shadow on the more than 900MW of PV projects whose initial ‘expression of interest’ has been approved.
 
-The new rules lay out the minimum proportion of goods or services that must come from domestic sources. This could bode well for PV and wind manufacturers in Kenya, such as Ubbink – one of the few solar module makers in East Africa. On the down side, the proposal to implement a range of biofuel blending requirements did not survive through to the latest version of the Policy.
+As utility-scale projects face a lengthy planning process, developers have started to target captive generation projects. The approval process for on-site power generation up to 1MW is far simpler. The generation technology of choice is typically solar.
+More than half of Kenya’s homes are not connected to the national grid. Several programmes to expand distribution lines, reach remote villages, and maximise the utilisation of existing transformers by connecting people within their immediate reach or in informal settlements underneath them have started to make a dent in this number. Kenya’s electrification rate rose from 26% in 2012 to 47% of the population connected to Kenya Power’s main grid or mini-grids as of mid-2015. The remainder has become one of the best-served off-grid populations in the world, with some of the most advanced pay-as-you-go solar home system companies.
 
-Kenya’s main tool to incentivize renewable energy development is the feed-in tariff, which has spurred some renewables build – though some developers have said the FiTs are not high enough for them to recover costs, in particular for solar projects. IPPs had 1.2GW of wind projects online or in development as of March 2015, together with 272MW of geothermal, 221MW of solar and 28MW of small hydro. 
-
-After two rounds of revision, three more technologies (biogas, geothermal and solar PV) have been included in the feed-in tariff and some rates have been increased. The feed-in tariff review that was due to take place last year was not held, but the Ministry of Energy has said it is scheduled to begin in Q4 2015. In the meantime, the government is working on a proposal to implement renewable energy auctions, though there is a question of whether Kenya’s renewables market and the required financing structures are sufficiently mature for such a policy mechanism.
-
-Kenya has made significant progress in increasing electricity access by extending the grid and off-grid projects (both diesel and renewable). As a result, electrification rates have nearly doubled since 2010, to around 30% by end-2014. Overall, the country now aims to reach universal electricity access by 2020, after the government brought forward the deadline by a decade.
-
-Among the African countries, Kenya hosts the second highest number of carbon offset projects after South Africa. As part of
-its Intended Nationally Determined Contribution (INDC) in the run up to the Paris climate conference, the country committed to cutting greenhouse gas emissions by 30% relative to business as usual by 2013.
 
 #### Score Summary
 
-Kenya scored 1.74 in Climatescope 2015, placing it 6th on the list of countries overall. Among the 19 African nations, it was second only to South Africa. Its highest ranking was on Enabling Framework Parameter I.
+Kenya scored 2.01 in Climatescope 2016, placing it 10th on the list of countries overall, down four from 2015. Among the 19 African nations, it ranked 3<sup>rd</sup>, behind only South Africa and Uganda. Its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
 
-Kenya ranked 5th on Parameter I overall, and second in Africa, thanks to the presence of an extensive policy framework for clean energy as well as its distributed and energy access policies.
+The country saw a slight improvement in its score on Enabling Framework Parameter I, performing particularly well on the Distributed Energy Framework and Energy Access Policies indicators. It was also rewarded for the 691MW of installed clean energy capacity. Nevertheless, it slid six places to 11<sup>th</sup>.
 
-On Clean Energy Investment and Climate Financing Parameter II, the country’s score improved, though it dropped one place on the overall ranking. It advanced with the largest wind financing in sub-Saharan Africa in 2014.
+On Clean Energy Investment and Climate Financing Parameter II, Kenya’s score improved thanks to the relatively high volume ($484m) of investment in 2015. However, this was somewhat offset by the scarcity of loans and grants, and the high average cost of debt. The country fell one place to 14<sup>th</sup>. 
 
-Kenya’s score on Low-Carbon Business & Clean Energy Value Chains Parameter III also dipped, however it still has a comparatively high number of clean energy service providers and value chains. 
+Kenya did well on Parameter III thanks to the large number of service providers and diversity of the sector’s value chains. Its score was marginally lower than in 2015 and its rank remained unchanged at 9<sup>th</sup> place. 
 
-On Greenhouse Gas Management Activities Parameter IV, Kenya was ranked 16th overall. It scored relatively well for its carbon offsetting activities. 
+The country took 12<sup>th</sup> position on Greenhouse Gas Management Activities Parameter IV, up four places from the previous year. Its score rose in 2016, reflecting an increase in carbon-offsetting activities and corporate awareness initiatives.
