@@ -5,7 +5,7 @@ title: "Press Release: With new pledges and new projects, developing countries t
 weight: 1
 description: Key group of emerging nations builds 18% more renewable capacity than wealthier countries and four in five have now set national clean energy targets
 ---
-__Key group of emerging nations builds 18% more renewable capacity than wealthier countries and four in five have now set national clean energy targets.__
+<p><center><strong>Key group of emerging nations builds 18% more renewable capacity than wealthier countries and four in five have now set national clean energy targets.</strong></center></p>
 
 _London and Washington, 15 December 2016_ – Developing countries have made unprecedented pledges to consume more clean energy tomorrow even as they are leading the way today with record new wind and solar project completions, the latest edition of Climatescope concludes.
 
