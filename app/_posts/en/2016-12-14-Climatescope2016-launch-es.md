@@ -7,7 +7,7 @@ description: Un grupo clave de naciones emergentes construye 18% más capacidad 
 ---
 <p><center><strong>Un grupo clave de naciones emergentes construye 18% más capacidad de energía renovable que los países desarrollados. Cuatro de cada cinco ahora tienen metas nacionales de energías limpias.</strong></center></p>
 
-_Londres y Washington, 15 de diciembre de 2016_ - Los países desarrollados han establecido compromisos sin precedentes para consumir más energías limpias en el futuro, incluso cuando actualmente lideran en las instalaciones de proyectos de energía eólica y solar, de acuerdo al último estudio de Climatescope.
+_Londres y Washington, 15 de diciembre de 2016_ - Los países en vía de desarrollo han establecido compromisos sin precedentes para consumir más energías limpias en el futuro, incluso cuando actualmente lideran en las instalaciones de proyectos de energía eólica y solar, de acuerdo al último estudio de Climatescope.
 
 Climatescope, el índice y herramienta en línea que evalúa la competitividad en el mercado de la energía limpia entre los países en desarrollo, apoyado por los gobiernos de Estados Unidos y el Reino Unido ofrece una representación detallada sobre la actividad en temas de energías limpias en 58 mercados emergentes en África, Asia, América Latina y el Caribe. El grupo incluye las principales naciones en desarrollo como China, Egipto, Pakistán, Brasil, Chile, México, Kenia, Tanzania y Sudáfrica, entre otros. Los usuarios pueden visitar www.global-climatescope.org y utilizar el sitio para conocer más sobre las políticas públicas en energías limpias y las actividades de naciones individuales, descargar grandes paquetes de datos y compararlos por país.
 
