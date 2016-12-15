@@ -32,7 +32,7 @@
 // The element to be centered, can also be of any width and height
 .modal__inner {
   position: relative;
-  width: 46rem;
+  width: 42rem;
   display: inline-block;
   vertical-align: middle;
   margin: 4rem 0;
@@ -40,11 +40,11 @@
   background-color: #fff;
   box-shadow: 4px 4px 0 0 rgba($primary-color, 0.2);
   border-radius: $global-radius;
-  padding: 4rem 12rem 4rem 6rem;
+  padding: 4rem 8rem 2rem 4rem;
   text-align: left;
   @media #{$large-up} {
     width: 100%;
-    max-width: 46rem;
+    max-width: 42rem;
   }
   &:after {
     content:'';
