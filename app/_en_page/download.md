@@ -55,7 +55,7 @@ arrange: full
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" title="Go to page">Methodology</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2015-methodology-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2016-methodology-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
   </tbody>
@@ -74,25 +74,25 @@ arrange: full
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/topic/enabling-framework" title="Go to page">Enabling framework</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/topic/climatescope-2016-topic-1.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/topic/climatescope-2016-topic-1.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/topic/financing-and-investment" title="Go to page">Financing and investment</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/topic/climatescope-2016-topic-2.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/topic/climatescope-2016-topic-2.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/topic/value-chains" title="Go to page">Value chains</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/topic/climatescope-2016-topic-3.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/topic/climatescope-2016-topic-3.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/topic/ghg-management" title="Go to page">Greenhouse Gas Management</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/topic/climatescope-2016-topic-4.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/topic/climatescope-2016-topic-4.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
   </tbody>
@@ -111,19 +111,19 @@ arrange: full
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/region/africa" title="Go to page">Africa and Middle East</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/regions/climatescope-2016-africa-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/regions/climatescope-2016-africa-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/region/asia" title="Go to page">Asia</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/regions/climatescope-2016-asia-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/regions/climatescope-2016-asia-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/region/lac" title="Go to page">Latin American and the Caribbean</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/regions/climatescope-2016-lac-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/regions/climatescope-2016-lac-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
   </tbody>
