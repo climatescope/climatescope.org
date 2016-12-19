@@ -27,7 +27,7 @@ Jamaica scored 1.41 in Climatescope 2016, a considerable improvement on the 0.81
 
 The country’s score on Enabling Framework Parameter I was 1.19, a modest improvement on the year before. It was placed in the bottom half of the order (36<sup>th</sup>), highlighting the fact that there were no new capacity additions in 2015.
 
-Jamaica took 3rd place globally on Parameter II with a score of 2.03. The jump from 40th in 2015 was fuelled by $208m of investment.  There had been almost zero investment in the previous four years.
+Jamaica took 4th place globally on Parameter II with a score of 2.03. The jump from 40th in 2015 was fuelled by $208m of investment.  There had been almost zero investment in the previous four years.
 
 On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country scored 0.78, which was unchanged from the previous year and put it 49<sup>th</sup> place. A scattering of project developers and engineers were present on the island nation. 
 
