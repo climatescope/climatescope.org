@@ -31,10 +31,12 @@ description: Test blog post description
 ### Chile
 
 <strong> Ministerio de Energía, 15 December 2016 </strong>
+
 [Chile ha obtenido el primer lugar latinoamericano en ranking global de energías renovables] (https://twitter.com/MinEnergia/status/809416465950605312)
 
 
 <strong> Ministerio de Energía, 15 December 2016 </strong>
+
 [Chile lidera inversión en energías renovables] (http://www.energia.gob.cl/tema-de-interes/chile-lidera-ranking)
 
 
