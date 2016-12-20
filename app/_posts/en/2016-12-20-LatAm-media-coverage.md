@@ -26,3 +26,15 @@ description: Test blog post description
 <strong> Investe São Paulo, 16 December 2016 </strong>
 
 [Países emergentes lideram adoção de energia renovável no mundo] (http://www.investe.sp.gov.br/noticia/paises-emergentes-lideram-adocao-de-energia-renovavel-no-mundo/)
+
+
+### Chile
+
+<strong> Ministerio de Energía, 15 December 2016 </strong>
+[Chile ha obtenido el primer lugar latinoamericano en ranking global de energías renovables] (https://twitter.com/MinEnergia/status/809416465950605312)
+
+
+<strong> Ministerio de Energía, 15 December 2016 </strong>
+[Chile lidera inversión en energías renovables] (http://www.energia.gob.cl/tema-de-interes/chile-lidera-ranking)
+
+
