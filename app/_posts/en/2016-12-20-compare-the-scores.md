@@ -1,9 +1,8 @@
 ---
-published: false 
-postId: test
-title: Test blog post
+postId: 2016-12-20-compare-the-scores
+title: Climatescope 2014 to 2016 - compare the scores!
 
-description: Test blog post description
+description: Climatescope 2014 to 2016 - compare the scores!
 ---
 ## Climatescope 2014 to 2016 - compare the scores!
 
