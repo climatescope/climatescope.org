@@ -8,9 +8,7 @@ description: Test blog post description
 ## CLIMATESCOPE IN THE MEDIA - LATIN AMERICA
 
 ### Brazil
-<strong> Exame, 15 December 2016 </strong>
-
-[Países emergentes lideram adoção de energia renovável no mundo] (http://exame.abril.com.br/economia/paises-emergentes-lideram-adocao-de-energia-renovavel-no-mundo/)
+<strong> Exame, 15 December 2016: </strong> [Países emergentes lideram adoção de energia renovável no mundo] (http://exame.abril.com.br/economia/paises-emergentes-lideram-adocao-de-energia-renovavel-no-mundo/)
 
 
 
