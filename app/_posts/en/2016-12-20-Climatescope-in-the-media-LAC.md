@@ -56,4 +56,3 @@ description: Test blog post description
 
 [México atrajo inversión récord para energía limpia en 2015] (http://energiaenmexico.notimex.com.mx/nota/282717)
 
-
