@@ -5,7 +5,7 @@ title: Test blog post
 
 description: Test blog post description
 ---
-## Latin America media coverage 
+## CLIMATESCOPE IN THE MEDIA - LATIN AMERICA
 
 ### Brazil
 <strong> Exame, 15 December 2016 </strong>
