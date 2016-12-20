@@ -47,4 +47,12 @@ description: Test blog post description
 
 ### Mexico
 
+<strong> El Financiero | Bloomberg TV, 15 December 2016 </strong>
+
+[Países emergentes están haciendo mucho más que desarrollados en materia de energía renovable] (https://www.youtube.com/watch?v=ejobZMKMuZk)
+
+<strong> Notimex, 15 December 2016 </strong>
+
+[México atrajo inversión récord para energía limpia en 2015] (http://energiaenmexico.notimex.com.mx/nota/282717)
+
 
