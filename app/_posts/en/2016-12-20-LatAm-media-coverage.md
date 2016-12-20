@@ -40,3 +40,11 @@ description: Test blog post description
 [Chile lidera inversión en energías renovables] (http://www.energia.gob.cl/tema-de-interes/chile-lidera-ranking)
 
 
+<strong> El Mostrador, 16 December 2016 </strong>
+
+[La energía solar por primera vez cuesta menos que la eólica] (http://www.elmostrador.cl/mercados/2016/12/16/la-energia-solar-por-primera-vez-cuesta-menos-que-la-eolica/)
+
+
+### Mexico
+
+
