@@ -1,4 +1,5 @@
 ---
+published: true
 postId: 2016-12-20-compare-the-scores
 title: Climatescope 2014 to 2016 - compare the scores!
 
