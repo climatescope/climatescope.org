@@ -1,9 +1,8 @@
 ---
-published: false 
-postId: test
-title: Test blog post
+postId: CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
+title: CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 
-description: Test blog post description
+description: CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 ---
 ## CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 
