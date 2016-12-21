@@ -8,7 +8,8 @@ description: CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 
 ### Mexico
 
-<a href="https://www.youtube.com/watch?v=ejobZMKMuZk"><strong> El Financiero | Bloomberg TV, 15 December 2016</strong></a>
+<strong> El Financiero | Bloomberg TV, 15 December 2016</strong>
+<a href="https://www.youtube.com/watch?v=ejobZMKMuZk">Países emergentes están haciendo mucho más que desarrollados en materia de energía renovable</a>
 
 <strong> Notimex, 15 December 2016 </strong>
  
