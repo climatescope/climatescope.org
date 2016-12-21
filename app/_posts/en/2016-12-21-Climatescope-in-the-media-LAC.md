@@ -5,7 +5,7 @@ title: Test blog post
 
 description: Test blog post description
 ---
-## CLIMATESCOPE IN THE MEDIA - LATIN AMERICA
+## CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 
 ### Mexico
 
