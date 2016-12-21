@@ -12,21 +12,21 @@ description: CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 
 <a href="https://www.youtube.com/watch?v=ejobZMKMuZk">Países emergentes están haciendo mucho más que desarrollados en materia de energía renovable</a>
 
-<strong> Notimex, 15 December 2016 </strong>
- 
-[México atrajo inversión récord para energía limpia en 2015] (http://energiaenmexico.notimex.com.mx/nota/282717)
 
+<strong> Notimex, 15 December 2016 </strong>
+
+<a href="http://energiaenmexico.notimex.com.mx/nota/282717">México atrajo inversión récord para energía limpia en 2015</a>
+ 
 
 ### Chile
 
 <strong> Ministerio de Energía, 15 December 2016 </strong>
 
-[Chile ha obtenido el primer lugar latinoamericano en ranking global de energías renovables] (https://twitter.com/MinEnergia/status/809416465950605312)
-
+<a href="https://twitter.com/MinEnergia/status/809416465950605312">Chile ha obtenido el primer lugar latinoamericano en ranking global de energías renovables</a>
 
 <strong> Ministerio de Energía, 15 December 2016 </strong>
 
-[Chile lidera inversión en energías renovables] (http://www.energia.gob.cl/tema-de-interes/chile-lidera-ranking)
+<a href="http://www.energia.gob.cl/tema-de-interes/chile-lidera-ranking">Chile lidera inversión en energías renovables</a>
 
 
 <strong> El Mostrador, 16 December 2016 </strong>
