@@ -39,11 +39,12 @@ description: Climatescope in the media - Latin America highlights
 
 <a href="http://www.emol.com/noticias/Economia/2016/12/20/836440/Informe-de-Bloomberg-ubica-a-Chile-como-el-pais-que-mas-invierte-en-energias-limpias-de-America-Latina.html">Informe de Bloomberg ubica a Chile como el país que más invierte en energías limpias de América Latina. La Presidenta Bachelet celebró la noticia.</a>
 
+
 ### Brazil
 
 <strong> Exame, 15 December 2016 </strong> 
 
-[Países emergentes lideram adoção de energia renovável no mundo] (http://exame.abril.com.br/economia/paises-emergentes-lideram-adocao-de-energia-renovavel-no-mundo/)
+<a href="http://exame.abril.com.br/economia/paises-emergentes-lideram-adocao-de-energia-renovavel-no-mundo/">Países emergentes lideram adoção de energia renovável no mundo</a>
 
 
 <strong> Uol Economia, 15 December 2016 </strong>
@@ -53,7 +54,7 @@ description: Climatescope in the media - Latin America highlights
 
 <strong> O Globo, 16 December 2016 </strong>
 
-[Pela Primeira vez, usinas solares se tornam mais baratas que eólicas] (http://oglobo.globo.com/sociedade/sustentabilidade/pela-primeira-vez-usinas-solares-se-tornam-mais-baratas-que-eolicas-20659887)
+<a href="http://oglobo.globo.com/sociedade/sustentabilidade/pela-primeira-vez-usinas-solares-se-tornam-mais-baratas-que-eolicas-20659887">Pela Primeira vez, usinas solares se tornam mais baratas que eólicas</a>
 
 
 <strong> Investe São Paulo, 16 December 2016 </strong>
