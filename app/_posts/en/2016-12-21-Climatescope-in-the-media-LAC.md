@@ -1,8 +1,8 @@
 ---
 postId: Climatescope-in-the-media-LAC
-title: CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
+title: Climatescope in the media - Latin America highlights
 
-description: CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
+description: Climatescope in the media - Latin America highlights
 ---
 ## CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 
