@@ -11,7 +11,7 @@ description: CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 <a href="https://www.youtube.com/watch?v=ejobZMKMuZk"><strong> El Financiero | Bloomberg TV, 15 December 2016</strong></a>
 
 <strong> Notimex, 15 December 2016 </strong>
-
+ 
 [México atrajo inversión récord para energía limpia en 2015] (http://energiaenmexico.notimex.com.mx/nota/282717)
 
 
