@@ -40,6 +40,10 @@ description:
 <a href="http://www.emol.com/noticias/Economia/2016/12/20/836440/Informe-de-Bloomberg-ubica-a-Chile-como-el-pais-que-mas-invierte-en-energias-limpias-de-America-Latina.html">Informe de Bloomberg ubica a Chile como el país que más invierte en energías limpias de América Latina. La Presidenta Bachelet celebró la noticia.</a>
 
 
+<strong> CNN en Espanõl, 22 December 2016 </strong>
+
+<a href="http://cnnespanol.cnn.com/video/cnnee-chile-lider-latinoamericano-que-mas-invierte-en-la-lucha-contra-el-cambio-cliamatico/#0">Chile: el país latinoamericano que más invierte en la lucha contra el cambio climático</a>
+
 ### Brazil
 
 <strong> Exame, 15 December 2016 </strong> 
