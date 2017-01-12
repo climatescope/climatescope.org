@@ -1,5 +1,5 @@
 ---
-published: false 
+published: true 
 postId: test
 title: Test blog post
 
