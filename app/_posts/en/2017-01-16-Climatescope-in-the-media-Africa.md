@@ -28,7 +28,7 @@ description:
 
 <strong> The Business Dispatch, 15 December 2016 </strong>
 
-<a href=" http://bit.ly/2h7iNa9"> Clean Energy Policies Becoming More Widely Adopted Across Sub-Saharan Africa</a>
+<a href="http://bit.ly/2h7iNa9"> Clean Energy Policies Becoming More Widely Adopted Across Sub-Saharan Africa</a>
 
 <strong> The Nerve Africa, 15 December 2016 </strong>
 
@@ -42,18 +42,14 @@ description:
 
 <strong> BizCommunity, 29 December 2016 </strong> 
 
-<a href=" http://bit.ly/2icSd3Q"> Climatescope – developing countries take clean energy lead</a>
+<a href="http://bit.ly/2icSd3Q"> Climatescope – developing countries take clean energy lead</a>
 
 ### Pan-Africa
 
 <strong> AFP, 21 December 2016 </strong>
 
-<a href=" http://bit.ly/2h9JX2v"> In Uganda huge solar plant beams power, hope to rural Uganda </a>
+<a href="http://bit.ly/2h9JX2v"> In Uganda huge solar plant beams power, hope to rural Uganda </a>
 
 <strong> All Africa 27 December 2016 </strong> 
 
 <a href="http://bit.ly/2iyu8Sd"> East Africa: Region Leads in Clean Energy Uptake Across Africa – Report</a>
-
-
-
-
