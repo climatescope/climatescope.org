@@ -89,12 +89,12 @@ description:
 
 <strong>無料株価情報 ADVFN, 16 December 2016</strong>
 
-<a href=" http://jp.advfn.com/p.php?pid=nmona&article=73150884">新しい公約と新しいプロジェクトで、開発途上国がクリーンエネルギーを世界的にリード (With new pledges and projects, developing countries lead the world in clean energy)</a>
+<a href="http://jp.advfn.com/p.php?pid=nmona&article=73150884">新しい公約と新しいプロジェクトで、開発途上国がクリーンエネルギーを世界的にリード (With new pledges and projects, developing countries lead the world in clean energy)</a>
 
 
 <strong> スマートジャパン IT Media Japan, 26 December 2016</strong>
 
-<a href=" http://www.itmedia.co.jp/smartjapan/articles/1612/26/news088.html ">自然エネルギー：日本の投資がアフリカへ、躍り出る途上国の再エネ (Renewable Energy: Japan makes investment in Africa)</a>
+<a href="http://www.itmedia.co.jp/smartjapan/articles/1612/26/news088.html ">自然エネルギー：日本の投資がアフリカへ、躍り出る途上国の再エネ (Renewable Energy: Japan makes investment in Africa)</a>
 
 
 <strong>日経テクノロジーオンライン Nikkei Technology Online, December 2016</strong>
