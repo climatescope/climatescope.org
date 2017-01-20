@@ -6,8 +6,6 @@ title: HOW CAN PAY-AS-YOU-GO SOLAR BE FINANCED?
 description: Test blog post description
 ---
 
-##<b>HOW CAN PAY-AS-YOU-GO SOLAR BE FINANCED?</b>
-
 Pay-as-you-go solar companies are the start-up community’s proposed answer to the challenge of 1.2bn people living outside the reach of the electricity grid. To scale, they need debt capital. Lots of it. Some operators are creating structured finance products to cut costs and address more potential investors.
 
 Pay-as-you-go solar companies retail solar home systems to power basic appliances, primarily in East and West Africa. The systems are sold against a small upfront payment and regular ‘top-ups’, usually sent via low-cost mobile money services. The leading companies, including M-Kopa, Off-Grid Electric, d.Light, BBOXX, Nova Lumos and Mobisol, have raised more than $360m and serve about 700,000 customers – a microscopic fraction of the addressable market.
