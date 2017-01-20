@@ -1,7 +1,7 @@
 ---
-published: false 
-postId: test
-title: Test blog post
+published: true 
+postId: PAYG solar
+title: PAYG solar finance
 
 description: Test blog post description
 ---
