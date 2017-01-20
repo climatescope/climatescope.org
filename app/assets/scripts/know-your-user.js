@@ -1,9 +1,4 @@
 (function() {
-  // Setup parse and its models.
-  Parse.initialize("UU4YIQ2yfOv3fjzEboDuvTWI73IlQ1BAugR04mR9", "HJdnmGWPrEwGs4PG8kohU172V2CIZcm3UpQCNTl8");
-
-  var KnowYourUserResponse = Parse.Object.extend("KnowYourUserResponse");
-
   var modal = $('[data-modal="know-your-user"]');
 
   // Close the modal before opening the file.
@@ -47,13 +42,15 @@
     }
 
     if (!errored) {
-      var knowYourUserResponse = new KnowYourUserResponse();
-      knowYourUserResponse.save({
+      var data = JSON.stringify({
         'usefulness': usefulness,
         'usage': usage,
-        'organization': organization
-      }, {
-        success: function(knowYourUserResponse) {
+        'organization': organization,
+        'createdAt': (new Date()).toString()
+      });
+
+      $.post('https://climatescope-8fdf8.firebaseio.com/KnowYourUser.json', data)
+        .done(function () {
           // Store cookie.
           createCookie('CS_kown_your_user__submit', 'complete', null, CS.domain);
 
@@ -72,11 +69,11 @@
 
           // Open url.
           window.location = url;
-        },
-        error: function(knowYourUserResponse, error) {
+        })
+        .fail(function (error) {
           alert('An error occurred while saving your response.');
-        }
-      });
+          console.error('firebase post', error);
+        });
     }
   });
 
