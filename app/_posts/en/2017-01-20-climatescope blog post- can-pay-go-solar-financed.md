@@ -1,7 +1,7 @@
 ---
 published: true 
 postId: PAYG solar
-title: PAYG solar finance
+title: HOW CAN PAY-AS-YOU-GO SOLAR BE FINANCED?
 
 description: Test blog post description
 ---
