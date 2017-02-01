@@ -1,11 +1,10 @@
 ---
-published: false 
-postId: test
+published: true 
+postId: Jordan renewables
 title: Test blog post
 
-description: Test blog post description
+description: JORDAN’S MA’AN DEVELOPMENT AREA: HOW RENEWABLE ENERGY CAN BOLSTER THE ECONOMY
 ---
-##<b>JORDAN’S MA’AN DEVELOPMENT AREA: HOW RENEWABLE ENERGY CAN BOLSTER THE ECONOMY</b>
 
 A two-hour car journey south from Amman on Jordan’s Desert Highway takes us to Ma’an. This is a city of 50,000 people and is one of the five development areas announced in Jordan to promote economic activity. It has become a case-study of how government support for renewable energy investment can give a boost to the local economy. Ma’an Development Area (MDA), managed by Ma’an Development Co. (MDC), hosts solar projects that range from small domestic systems to large utility-scale plants that cover five square kilometres and has drawn $400m of investment. 
 
