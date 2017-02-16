@@ -73,7 +73,6 @@ Six countries covered in Climatescope have already published their Action Agenda
 
 <a href="https://www.se4all-africa.org/fileadmin/uploads/se4all/Documents/Country_IPs/Investment_Prospectus_SE4All_The_Gambia_FINAL__1_.pdf">Gambia</a>.
 
-<a href="https://www.se4all-africa.org/fileadmin/uploads/se4all/Documents/Annual_Report/SEforALL_Africa_Hub_-_ANNUAL_REPORT_2015-2016.pdf">Link to the recent SEforALL Africa Hub Annual Report</a>
 
 ### About SEforAll 
 
@@ -83,5 +82,5 @@ SEforAll is an initiative that brings together stakeholders from government, the
 2.	Double the global rate of improvement in energy efficiency.
 3.	Double the share of renewable energy in the global energy mix
 
-
+<a href="https://www.se4all-africa.org/fileadmin/uploads/se4all/Documents/Annual_Report/SEforALL_Africa_Hub_-_ANNUAL_REPORT_2015-2016.pdf">Link to the recent SEforALL Africa Hub Annual Report</a>
 
