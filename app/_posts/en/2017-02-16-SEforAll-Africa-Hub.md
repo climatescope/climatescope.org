@@ -5,8 +5,6 @@ title: A GROWING NUMBER OF AFRICAN GOVERNMENTS TAKE CONCRETE STEPS TO ACCOMPANY 
 description: 
 ---
 
-## A GROWING NUMBER OF AFRICAN GOVERNMENTS TAKE CONCRETE STEPS TO ACCOMPANY THE DEVELOPMENT OF CLEAN ENERGY WITH THE SUPPORT OF THE SE4ALL AFRICA HUB
-
 The Sustainable Energy for All (SE4All) Africa Hub is a partnership of African institutions hosted by the African Development Bank, working to coordinate and facilitate the development of clean energy in African countries. It supports countries in the region to create a series of coherent steps aimed at assessing existing conditions, setting long-term objectives and promoting investment opportunities in the energy sector.
 
 The Gap Analysis is the first step in the SE4All country actions and it has been implemented in almost all Sub Saharan African countries since 2012. The Action Agenda is a strategy-driven document acting as an umbrella for energy sector development at the national level and the implementation framework for the Sustainable Development Goal 7 on energy. It is currently in development or has been finalized in more than 25 Sub Saharan Africa countries. The Investment Prospectuses provide an approach to carrying out the Country Action Agenda, by identifying and developing a set of programs and projects, including their investment requirements, which can be presented to potential private and public investors. 
