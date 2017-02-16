@@ -1,8 +1,8 @@
 ---
 postId: SEforAll-Africa-Hub
-title: SEforAll - Africa Hub
+title: A GROWING NUMBER OF AFRICAN GOVERNMENTS TAKE CONCRETE STEPS TO ACCOMPANY THE DEVELOPMENT OF CLEAN ENERGY WITH THE SUPPORT OF THE SE4ALL AFRICA HUB
 
-description: A growing number of African governments take concrete steps to accompany the development of clean energy with the support of the SE4All Africa Hub
+description: 
 ---
 
 ## A GROWING NUMBER OF AFRICAN GOVERNMENTS TAKE CONCRETE STEPS TO ACCOMPANY THE DEVELOPMENT OF CLEAN ENERGY WITH THE SUPPORT OF THE SE4ALL AFRICA HUB
