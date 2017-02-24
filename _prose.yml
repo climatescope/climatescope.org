@@ -123,6 +123,18 @@ prose:
           element: "text"
           label: "Region weight"
           help: "Used to order the regions in the menu. Each one must have a different value."
+
+    ## REGION
+    "app/_en_offgrid":
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Page name"
+          placeholder: "Page name"
     
     ## PAGE
     "app/_en_page":
