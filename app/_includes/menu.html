@@ -18,6 +18,9 @@
           {% assign pg = site[col_name] | where:"id","summary" | first %}
           <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['More about the key findings'][language] }}">{{ t['Key findings'][language] }}</a>
         </li>
+        <li>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/offgrid-quarterly/q1-2017" title="Read the Offgrid Quarterly">Offgrid Quarterly</a>
+        </li>
       </ul>
       <h6 class="dropdown-title">{{ t['Topics'][language] }}</h6>
       <ul class="dropdown-menu" role="menu">
