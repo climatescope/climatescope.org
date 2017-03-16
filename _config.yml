@@ -142,3 +142,10 @@ collections:
     i18n:
       en: en_page
       es: es_page
+
+  en_offgrid:
+    output: true
+    permalink: /en/offgrid-quarterly/:path/
+    lang: en
+    i18n:
+      en: en_page
