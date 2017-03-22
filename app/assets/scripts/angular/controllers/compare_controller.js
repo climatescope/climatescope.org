@@ -95,6 +95,8 @@
 
           loadPolicyData(_self.compareSelected[c]);
 
+          loadIndicatorValue(_self.compareSelected[c]);
+
           // This chart doesn't need data preparation.
           loadChartData('carbon-offset-projects', _self.compareSelected[c]);
 
@@ -141,7 +143,19 @@
         countryData.policyCount = data.metaData.totalResults;
         }
       );
-    }
+    };
+
+    var loadIndicatorValue = function(countryData) {
+      countryData.getIndicatorValue = function(indicator) {
+        var value = formatThousands(indicator.value) + indicator.unit;
+        return value;
+      }
+
+      var url = CS.domain + '/' + CS.lang + '/api/countries-profile/' + countryData.iso + '.json';
+      $http.get(url).success(function(data) {
+        countryData.macrodata = data;
+      });
+    };
 
     var getCountry = function(prop, val) {
       for (var i in _self.countries) {

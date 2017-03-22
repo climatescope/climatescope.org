@@ -797,16 +797,23 @@ a:active{
       top: -0.5rem;
     }
   }
-    @media #{$xlarge-up} {
-      dt {
-        width: 75%;
-        left: 25%;
-      }
-      dd {
-        width: 25%;
-        left: -75%;
-      }
+  .compare-stat__macrodata {
+    font-size: 1rem;
+  }
+  @media #{$xlarge-up} {
+    dt {
+      width: 75%;
+      left: 25%;
     }
+    dd {
+      width: 25%;
+      left: -75%;
+    }
+  }
+}
+
+.stats-list__macrodata {
+  margin-top: 2rem;
 }
 
 #section-switch {

@@ -79,6 +79,15 @@
         </div>
 
         <!-- START params-->
+        <div class="row--full">
+          <dl class="stats-list stats-list__macrodata ng-scope">
+
+            <dt ng-repeat-start="indicator in compareCtrl.compareSelected[0].macrodata.indicators">%% indicator.name %%</dt>
+            <dd ng-repeat-end class="compare-stat__macrodata">%% compareCtrl.compareSelected[0].getIndicatorValue(indicator) %%</dd>
+
+          </dl>
+        </div>
+
         <div class="params" ng-if="compareCtrl.compareSelected[0]">
           <div class="param-details param-2">
             <div class="param-details__header">
@@ -232,6 +241,15 @@
         </div>
 
         <!-- START params-->
+        <div class="row--full">
+          <dl class="stats-list stats-list__macrodata ng-scope">
+
+            <dt ng-repeat-start="indicator in compareCtrl.compareSelected[1].macrodata.indicators">%% indicator.name %%</dt>
+            <dd ng-repeat-end class="compare-stat__macrodata">%% compareCtrl.compareSelected[1].getIndicatorValue(indicator) %%</dd>
+
+          </dl>
+        </div>
+
         <div class="params" ng-if="compareCtrl.compareSelected[1]">
           <div class="param-details param-2">
             <div class="param-details__header">
