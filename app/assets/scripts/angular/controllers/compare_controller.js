@@ -91,6 +91,8 @@
             // END stack values and compute the y domain.
           });
 
+          loadChartData('value-chains', _self.compareSelected[c]);
+
           loadPolicyData(_self.compareSelected[c]);
 
           // This chart doesn't need data preparation.
