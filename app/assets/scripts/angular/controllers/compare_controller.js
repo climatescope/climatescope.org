@@ -91,6 +91,8 @@
             // END stack values and compute the y domain.
           });
 
+          loadPolicyData(_self.compareSelected[c]);
+
           // This chart doesn't need data preparation.
           loadChartData('carbon-offset-projects', _self.compareSelected[c]);
 
@@ -126,6 +128,17 @@
           callback(chartName, countryData);
         }
       });
+    };
+
+    var loadPolicyData = function(countryData) {
+      setupPolicyStatsVizMethods(countryData);
+      var url = CS.policyProxy + '/policy?country=' + countryData.iso;
+
+      $http.get(url).success(function(data) {
+        countryData.countPolicyTypes(data.listData);
+        countryData.policyCount = data.metaData.totalResults;
+        }
+      );
     }
 
     var getCountry = function(prop, val) {

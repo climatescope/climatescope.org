@@ -127,6 +127,28 @@
             </div>
           </div>
 
+          <div class="param-details param-3">
+            <div class="param-details__header">
+              <div class="param-details__heading">
+                <h1 class="param-details__title">{{ t['Policies'][language] }}</h1>
+              </div>
+            </div>
+
+            <div class="policies-type-stats">
+
+              <a class="bttn bttn-m bttn-cta policies-bttn-va" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country=%% compareCtrl.compareSelected[0].iso %%" title="{{ t['View policies'][language] }}">{{ t['View all'][language] }} <span class="badge">%% compareCtrl.compareSelected[0].policyCount %%</span></a>
+
+              <ul class="policies-type-list">
+                <li class="policies-type-wrapper" ng-repeat="mecha in compareCtrl.compareSelected[0].pMechanisms">
+
+                  <div class="policy-type" ng-if="mecha.count == 0"><span>%% mecha.name %%</span></div>
+                  <a class="policy-type active" ng-if="mecha.count > 0" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country=%% compareCtrl.compareSelected[0].iso %%" title="{{ t['View policies'][language] }}"><span>%% mecha.name %%</span></a>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div class="param-details param-4">
             <div class="param-details__header">
               <div class="param-details__heading">
@@ -226,6 +248,28 @@
                 <figcaption>{{ t['Clean energy investments'][language] }}</figcaption>
                 <div class="chart-std clean-energy-investments" init-chart="clean_energy_investments" chart-data="compareCtrl.compareSelected[1].chartData['clean-energy-investments']"><!-- Chart --></div>
               </figure>
+            </div>
+          </div>
+
+          <div class="param-details param-3">
+            <div class="param-details__header">
+              <div class="param-details__heading">
+                <h1 class="param-details__title">{{ t['Policies'][language] }}</h1>
+              </div>
+            </div>
+
+            <div class="policies-type-stats">
+
+              <a class="bttn bttn-m bttn-cta policies-bttn-va" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country=%% compareCtrl.compareSelected[1].iso %%" title="{{ t['View policies'][language] }}">{{ t['View all'][language] }} <span class="badge">%% compareCtrl.compareSelected[0].policyCount %%</span></a>
+
+              <ul class="policies-type-list">
+                <li class="policies-type-wrapper" ng-repeat="mecha in compareCtrl.compareSelected[1].pMechanisms">
+
+                  <div class="policy-type" ng-if="mecha.count == 0"><span>%% mecha.name %%</span></div>
+                  <a class="policy-type active" ng-if="mecha.count > 0" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country=%% compareCtrl.compareSelected[1].iso %%" title="{{ t['View policies'][language] }}"><span>%% mecha.name %%</span></a>
+
+                </li>
+              </ul>
             </div>
           </div>
 
