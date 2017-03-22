@@ -27,8 +27,8 @@ layout: base
         {{content}}
       </div>
       <div class="col--main">
-        {% assign blogPosts = (site.posts | where:"lang",language) %}
-        {% include pager.html posts=blogPosts for='blog' %}
+        {% assign blogPosts = site.en_offgrid-quarterly %}
+        {% include pager.html posts=blogPosts for='en_offgrid-quarterly' %}
       </div>
     </div>
   </div>
