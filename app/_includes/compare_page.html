@@ -242,10 +242,10 @@
 
             <div class="policies-type-stats">
 
-              <a class="bttn bttn-m bttn-cta policies-bttn-va" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country=%% compareCtrl.compareSelected[1].iso %%" title="{{ t['View policies'][language] }}">{{ t['View all'][language] }} <span class="badge">%% compareCtrl.compareSelected[0].policyCount %%</span></a>
+              <a class="bttn bttn-m bttn-cta policies-bttn-va" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country=%% compareCtrl.compareSelected[1].iso %%" title="{{ t['View policies'][language] }}">{{ t['View all'][language] }} <span class="badge">%% compareCtrl.compareSelected[1].policyCount %%</span></a>
 
               <ul class="policies-type-list">
-                <li class="policies-type-wrapper" ng-repeat="mecha in compareCtrl.compareSelected[0].pMechanisms">
+                <li class="policies-type-wrapper" ng-repeat="mecha in compareCtrl.compareSelected[1].pMechanisms">
 
                   <div class="policy-type" ng-if="mecha.count == 0"><span>%% mecha.name %%</span></div>
                   <a class="policy-type active" ng-if="mecha.count > 0" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country=%% compareCtrl.compareSelected[1].iso %%" title="{{ t['View policies'][language] }}"><span>%% mecha.name %%</span></a>
