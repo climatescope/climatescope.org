@@ -80,12 +80,19 @@
 
         <!-- START params-->
         <div class="row--full">
-          <dl class="stats-list stats-list__macrodata ng-scope">
 
-            <dt ng-repeat-start="indicator in compareCtrl.compareSelected[0].macrodata.indicators">%% indicator.name %%</dt>
-            <dd ng-repeat-end class="compare-stat__macrodata">%% compareCtrl.compareSelected[0].getIndicatorValue(indicator) %%</dd>
+            <div class="param-details__header param-details__meta-title">
+              <div class="param-details__heading">
+                <h1 class="param-details__title">Country Statistics</h1>
+              </div>
+            </div>
 
-          </dl>
+            <dl class="stats-list stats-list__macrodata ng-scope">
+
+              <dt ng-repeat-start="indicator in compareCtrl.compareSelected[0].macrodata.indicators">%% indicator.name %%</dt>
+              <dd ng-repeat-end class="compare-stat__macrodata">%% compareCtrl.compareSelected[0].getIndicatorValue(indicator) %%</dd>
+
+            </dl>
         </div>
 
         <div class="params" ng-if="compareCtrl.compareSelected[0]">
@@ -139,8 +146,15 @@
                     <p>{{ t['There is no fuel data for this Country / State.'][language] }}</p>
                   </div>
                 </div>
-
               </figure>
+            </div>
+
+            <div class="power-sector">
+              <h2 class="param-details__sectitle">{{ t['Power sector structure'][language] }}</h2>
+              <div class="top-questions" power-chart="compareCtrl.compareSelected[0].chartData['power-sector-1']"><!-- Angular directive -   cs_directives.js --></div>
+              <div power-chart="compareCtrl.compareSelected[0].chartData['power-sector-2']"><!-- Angular directive - cs_directives.js --></div>
+              <div power-chart="compareCtrl.compareSelected[0].chartData['power-sector-3']"><!-- Angular directive - cs_directives.js --></div>
+              <div power-chart="compareCtrl.compareSelected[0].chartData['power-sector-4']"><!-- Angular directive - cs_directives.js --></div>
             </div>
           </div>
 
@@ -242,6 +256,12 @@
 
         <!-- START params-->
         <div class="row--full">
+          <div class="param-details__header param-details__meta-title">
+            <div class="param-details__heading">
+              <h1 class="param-details__title">Country Statistics</h1>
+            </div>
+          </div>
+
           <dl class="stats-list stats-list__macrodata ng-scope">
 
             <dt ng-repeat-start="indicator in compareCtrl.compareSelected[1].macrodata.indicators">%% indicator.name %%</dt>
@@ -303,6 +323,14 @@
                 </div>
 
               </figure>
+            </div>
+
+            <div class="power-sector">
+              <h2 class="param-details__sectitle">{{ t['Power sector structure'][language] }}</h2>
+              <div class="top-questions" power-chart="compareCtrl.compareSelected[1].chartData['power-sector-1']"><!-- Angular directive -   cs_directives.js --></div>
+              <div power-chart="compareCtrl.compareSelected[1].chartData['power-sector-2']"><!-- Angular directive - cs_directives.js --></div>
+              <div power-chart="compareCtrl.compareSelected[1].chartData['power-sector-3']"><!-- Angular directive - cs_directives.js --></div>
+              <div power-chart="compareCtrl.compareSelected[1].chartData['power-sector-4']"><!-- Angular directive - cs_directives.js --></div>
             </div>
           </div>
 

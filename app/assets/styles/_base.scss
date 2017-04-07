@@ -1105,6 +1105,17 @@ a:active{
     overflow: visible;
   }
 
+  .param-details__meta-title {
+    margin-top: 3rem;
+  }
+
+  .compare-chart_fix {
+    width: 3rem;
+    @media #{$xlarge-up} {
+      width: 5rem;
+    }
+  }
+
   .placeholder {
     font-family: $brand-font-family;
     border: 1px dashed tint($primary-color, 90%);

@@ -111,6 +111,11 @@
             chart__price_attractiveness_electricity.prepareDataCompare(_self.compareSelected, chartName);
             // END compute the x domain.
           });
+
+          loadChartData('power-sector-1', _self.compareSelected[c]);
+          loadChartData('power-sector-2', _self.compareSelected[c]);
+          loadChartData('power-sector-3', _self.compareSelected[c]);
+          loadChartData('power-sector-4', _self.compareSelected[c]);
         }
       }
     };

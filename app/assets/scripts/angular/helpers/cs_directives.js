@@ -64,7 +64,7 @@
           '<thead>',
             '<tr>',
               '<th><span class="visually-hidden">%% \'Question\' | translate %%</span></th>',
-              '<th ng-repeat="key in data.meta[\'label-x\']">%% key %%</th>',
+              '<th class="compare-chart_fix" ng-repeat="key in data.meta[\'label-x\']">%% key %%</th>',
             '</tr>',
           '</thead>',
           '<tbody>',
