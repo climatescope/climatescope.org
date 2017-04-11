@@ -465,9 +465,30 @@ $circle-gutter: 0.5rem;
 
       &:after {
         margin-top: 0.5rem;
+        padding-top: 0.5rem;
         width: 100%;
         font-size: 2rem;
         text-align: center;
+      }
+    }
+
+    .card-title__compare {
+      float: initial;
+      text-align: initial;
+      position: relative;
+      width: 100%;
+      clear: both;
+      height: 2rem;
+      padding-top: 6px;
+
+      &:after {
+        margin-top: 0;
+        font-size: 1.5rem;
+        position: absolute;
+        width: auto;
+        padding: 0;
+        top: 0;
+        right: 0;
       }
     }
 
@@ -477,9 +498,15 @@ $circle-gutter: 0.5rem;
       border-left: 1px solid tint($primary-color, 68%);
     }
 
+    .card-content__compare {
+      width: 100%;
+      border-top: 1px solid tint($primary-color, 68%);
+      border-left: 0;
+      padding: 1rem 0 0.5rem;
+    }
+
     .card-icon {
       color: tint($primary-color, 38%);
-      padding-top: 0.5rem;
     }
 
     &.biofuels .card-title:after { @extend .collecticon-leaf; @extend .card-icon }
@@ -518,6 +545,11 @@ $circle-gutter: 0.5rem;
           }
         }
       }
+    }
+
+    .available-list__compare {
+      margin-bottom: 0;
+      padding: 0;
     }
 
     .available-list {

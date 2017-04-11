@@ -91,6 +91,12 @@
             // END stack values and compute the y domain.
           });
 
+          loadChartData('value-chains', _self.compareSelected[c]);
+
+          loadPolicyData(_self.compareSelected[c]);
+
+          loadIndicatorValue(_self.compareSelected[c]);
+
           // This chart doesn't need data preparation.
           loadChartData('carbon-offset-projects', _self.compareSelected[c]);
 
@@ -105,6 +111,11 @@
             chart__price_attractiveness_electricity.prepareDataCompare(_self.compareSelected, chartName);
             // END compute the x domain.
           });
+
+          loadChartData('power-sector-1', _self.compareSelected[c]);
+          loadChartData('power-sector-2', _self.compareSelected[c]);
+          loadChartData('power-sector-3', _self.compareSelected[c]);
+          loadChartData('power-sector-4', _self.compareSelected[c]);
         }
       }
     };
@@ -126,7 +137,30 @@
           callback(chartName, countryData);
         }
       });
-    }
+    };
+
+    var loadPolicyData = function(countryData) {
+      setupPolicyStatsVizMethods(countryData);
+      var url = CS.policyProxy + '/policy?country=' + countryData.iso;
+
+      $http.get(url).success(function(data) {
+        countryData.countPolicyTypes(data.listData);
+        countryData.policyCount = data.metaData.totalResults;
+        }
+      );
+    };
+
+    var loadIndicatorValue = function(countryData) {
+      countryData.getIndicatorValue = function(indicator) {
+        var value = formatThousands(indicator.value) + indicator.unit;
+        return value;
+      }
+
+      var url = CS.domain + '/' + CS.lang + '/api/countries-profile/' + countryData.iso + '.json';
+      $http.get(url).success(function(data) {
+        countryData.macrodata = data;
+      });
+    };
 
     var getCountry = function(prop, val) {
       for (var i in _self.countries) {
