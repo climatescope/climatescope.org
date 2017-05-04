@@ -143,9 +143,9 @@ collections:
       en: en_page
       es: es_page
 
-  en_offgrid-quarterly:
+  en_off-grid-quarterly:
     output: true
-    permalink: /en/offgrid-quarterly/:path/
+    permalink: /en/off-grid-quarterly/:path/
     layout: blog
     lang: en
     i18n:
