@@ -39,3 +39,35 @@
   $opacity-ie: $opacity * 100;
   filter: alpha(opacity=$opacity-ie); //IE8
 }
+
+// stacked chart graphics
+
+@mixin stackedColor($inputColor) {
+  &.area {
+    fill: $inputColor;
+  }
+  &.area-line {
+    stroke: shade($inputColor, 15%);
+    stroke-opacity: 1;
+  }
+  &.area-line-points circle{
+    stroke: none;
+    fill: shade($inputColor, 15%);
+  }
+}
+
+@mixin focusCircles($field, $inputColor) {
+  &.non-#{$field} .inner {
+    stroke: none;
+    fill: tint($inputColor, 75%);
+  }
+}
+
+@mixin legendColors($field, $inputColor) {
+  &.param-#{$field}:before {
+    background: $inputColor;
+  }
+  &.param-non-#{$field}:before {
+    background: tint($inputColor, 90%);
+  }
+}
