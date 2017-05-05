@@ -1,0 +1,40 @@
+<section class="layout--hub compare" ng-app="quarterlyApp" ng-controller="quarterlyController as qrtrCtrl">
+
+  <header class="layout--page__header">
+    <div class="row--contained">
+      <div class="layout--page__heading">
+        <h1 class="layout--page__title">{{ t['Off-grid Quarterly'][language] }}</h1>
+      </div>
+
+      <div class="layout--hub__tools" init-dropdown>
+        {% include actions_menu.html download_exc=true %}
+      </div>
+    </div>
+  </header>
+
+  <div class="layout--page__body">
+    <div class="row--contained">
+  
+      <div class="col--main">
+        <ul class="ctas-list">
+          <li ng-repeat="post in qrtrCtrl.posts">
+            <article>
+              <h4><a class="blog-post-title" href="%% post.url %%" alt="View post">%% post.title %%</a></h4>
+              <p>%% post.description %%</p>
+              <a class="bttn bttn-m bttn-cta go" href="%% post.url %%" title="{{ t['Read more'][language] }}">{{ t['Read more'][language] }}</a>
+              <hr>
+            </article>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col--sec">
+        <section class="sec-section">
+          <h2 class="sec-section__title">Get in touch</h2>
+          <p>Please <a href="mailto:climatescope@bloomberg.net">reach out</a> if you would like us to write about a particular topic, or have something to share.</p>
+        </section>
+      </div>
+
+    </div>
+  </div> <!-- END layout--hub__body -->
+</section>
