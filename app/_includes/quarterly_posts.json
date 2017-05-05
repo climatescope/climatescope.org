@@ -1,6 +1,6 @@
 [
   {% assign comma = false %}
-  {% assign posts = (site.en_off-grid-quarterly) %}
+  {% assign posts = (site.en_off-grid) %}
   {% for post in posts reversed %}
   {% unless post.hidden == true %}
     {% if comma %},{% endif %}

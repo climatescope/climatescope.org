@@ -143,10 +143,9 @@ collections:
       en: en_page
       es: es_page
 
-  en_off-grid-quarterly:
+  en_off-grid:
     output: true
     permalink: /en/off-grid-quarterly/:path/
-    layout: blog
     lang: en
     i18n:
       en: en_page
