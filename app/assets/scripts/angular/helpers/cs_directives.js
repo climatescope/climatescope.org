@@ -58,6 +58,25 @@
       scope: {
         data: '=powerChart'
       },
+      link: function(scope, element, attrs) {
+        scope.makePopup = function(question, row) {
+          var dataCopy = angular.copy(scope.data);
+          var chartPopover = new DSPopover();
+          var thisClass = '.' + dataCopy.iso + '-' + question;
+          var thisElm = $(thisClass);
+
+          var top = thisElm.offset().top + 20;
+          var left = thisElm.offset().left + (thisElm.width() / 2)
+
+          if (dataCopy.data[row].note != "") {
+            chartPopover.setContent(dataCopy.data[row].note, 'top power-chart-tooltip').show(left, top);
+          }
+        };
+
+        scope.clearPopup = function() {
+          $('.power-chart-tooltip').remove();
+        };
+      },
       template: function() {
         var t = [
         '<table>',
@@ -68,7 +87,7 @@
             '</tr>',
           '</thead>',
           '<tbody>',
-            '<tr ng-repeat="question in data.data">',
+            '<tr ng-repeat="question in data.data" ng-mouseover="makePopup(question.id, $index)" ng-mouseout="clearPopup()" class="power-chart-row {{ data.iso }}-{{question.id}}">',
               '<td>%% question.name %%</td>',
               '<td ng-repeat="key in data.meta[\'label-x\']" ng-init="isActive = question.values[0].value == $index" ng-class="{active: isActive}"><span ng-if="isActive">x</span></td>',
             '</tr>',
