@@ -523,6 +523,11 @@ a:active{
   }
 }
 
+.layout--explorer-iframe {
+  max-width: 1000px;
+  margin: 4rem auto 6rem;
+}
+
 .col--main {
   @include col(8/12);
   margin-bottom: 3rem;
