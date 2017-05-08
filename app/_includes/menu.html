@@ -19,9 +19,6 @@
           <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['More about the key findings'][language] }}">{{ t['Key findings'][language] }}</a>
         </li>
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-data-explorer" title="Use the Offgrid Data Explorer">Off-grid Data Explorer</a>
-        </li>
-        <li>
           <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-quarterly/" title="Read the Off-grid Quarterly">Off-grid Quarterly</a>
         </li>
       </ul>
@@ -51,6 +48,9 @@
     <a href="#" title="{{ t['Explore our resources'][language] }}" class="dropdown-toggle caret" data-toggle="dropdown">{{ t['Resources'][language] }}</a>
     <div class="dropdown-content">
       <ul class="dropdown-menu" role="menu">
+        <li>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-data-hub" title="Use the Off-grid Data Hub">Off-grid Data Hub</a>
+        </li>
         <li>
           {% assign pg = site.pages | where:"id","policies" | where:"lang",language | first %}
           <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['Browse the policy database'][language] }}">{{ t['Policies'][language] }}</a>
