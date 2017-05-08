@@ -61,6 +61,31 @@ description: Climatescope a unique country-by-country assessment, interactive re
           </div>
         </section>
 
+        <section class="featured-section">
+          <h1 class="featured-section__title">Off-grid Quarterly Updates</h1>
+          <div class="featured-section__body">
+            <div class="prose-intro">
+              <p></p>
+            </div>
+
+            <ol class="latest-updates-list">
+              {% assign quarterlyPosts = site.en_off-grid %}
+              {% for post in quarterlyPosts reversed %}
+              {% unless post.hidden == true %}
+              <li class="update-wrapper">
+                <article class="update">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View update">
+                    <p class="update__date">{{ post.date | date: '%b %-d, %Y' }}</p>
+                    <h1 class="update__title">{{ post.title }}</h1>
+                  </a>
+                </article>
+              </li>
+              {% endunless %}
+              {% endfor %}
+            </ol>
+          </div>
+        </section>
+
         <section class="featured-section policies-block">
           <h1 class="featured-section__title">Policies</h1>
           <div class="featured-section__body">
@@ -70,6 +95,34 @@ description: Climatescope a unique country-by-country assessment, interactive re
           </div>
           <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/policies" title="{{ t['View all'][language] }}" class="bttn bttn-success go">{{ t['View all'][language] }}</a>
         </section>
+
+        <section class="featured-section recent-tweets">
+          <h1 class="featured-section__title">Mailing List</h1>
+
+          <form action="//global-climatescope.us14.list-manage.com/subscribe/post?u=f7420b38cc86494fc1ab6cb31&amp;id=e17a5880bd" method="post" id="mc-embedded-subscribe-form" name="subscribe-form">
+            <div class="prose-intro">
+              <p class="form-description">
+                {{ t['The Climatescope website will be updated with new content throughout the year. Sign up here and be the first to discover new insights into clean energy in emerging markets'][language] }}
+              </p>
+            </div>
+
+            <div class="form-control">
+              <p class="update__date">{{ t['Email Address'][language] }}</p>
+              <input type="email" value="" name="EMAIL" id="email">
+            </div>
+            <div id="mce-responses">
+              <p class="response error" id="mce-error-response" style="display:none"></p>
+              <p class="response success" id="mce-success-response" style="display:none"></p>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f7420b38cc86494fc1ab6cb31_e17a5880bd" tabindex="-1" value=""></div>
+
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="bttn bttn-success">
+          </form>
+
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+        </section>
+
       </div>
 
       <div class="featured-col">
@@ -94,9 +147,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
           </div>
           <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" title="{{ t['View all'][language] }}" class="bttn bttn-success go">{{ t['View all'][language] }}</a>
         </section>
-      </div>
 
-      <div class="featured-col">
         <section class="featured-section recent-tweets">
           <h1 class="featured-section__title">Recent tweets</h1>
           <div class="featured-section__body">
@@ -105,7 +156,9 @@ description: Climatescope a unique country-by-country assessment, interactive re
           </div>
           <a href="https://twitter.com/search?q=climatescope" title="{{ t['View all'][language] }}" class="bttn bttn-success go" target="_blank" rel="external">{{ t['View all'][language] }}</a>
         </section>
+
       </div>
+
     </div>
   </div>
 </section>
