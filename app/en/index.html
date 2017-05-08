@@ -108,11 +108,11 @@ description: Climatescope a unique country-by-country assessment, interactive re
 
             <div class="form-control">
               <p class="update__date">{{ t['Email Address'][language] }}</p>
-              <input type="email" value="" name="EMAIL" id="email">
+              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" aria-required="true">
             </div>
             <div id="mce-responses">
-              <p class="response error" id="mce-error-response" style="display:none"></p>
-              <p class="response success" id="mce-success-response" style="display:none"></p>
+              <div class="mce-response" id="mce-error-response" style="display:none">asdf asdf </div>
+              <div class="mce-response" id="mce-success-response" style="display:none">asdf asdf asdf</div>
             </div>
             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f7420b38cc86494fc1ab6cb31_e17a5880bd" tabindex="-1" value=""></div>
@@ -121,6 +121,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
           </form>
 
           <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
         </section>
 
       </div>
