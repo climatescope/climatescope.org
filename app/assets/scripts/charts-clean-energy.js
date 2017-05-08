@@ -69,8 +69,9 @@ function chart__clean_energy_investments(element, chartData) {
   // Define xAxis function.
   var xAxis = d3.svg.axis()
     .scale(x)
+    .ticks(6)
     .tickFormat(function(d) {
-      return d.toString().substr(2);
+      return d.toString();
     })
     .orient("bottom");
 
