@@ -106,7 +106,18 @@
       fill: tint($primary-color, 75%);
     }
   }
-  
+  .solar          { @include stackedColor($infograph-color-a); }
+  .biomass        { @include stackedColor($infograph-color-b); }
+  .large-hydro    { @include stackedColor($infograph-color-c); }
+  .small-hydro    { @include stackedColor($infograph-color-d); }
+  .geothermal     { @include stackedColor($infograph-color-e); }
+  .nuclear        { @include stackedColor($infograph-color-f); }
+  .wind           { @include stackedColor($infograph-color-g); }
+  .other-fossil   { @include stackedColor($infograph-color-h); }
+  .coal           { @include stackedColor($infograph-color-i); }
+  .natural-gas    { @include stackedColor($infograph-color-j); }
+  .oil-diesel     { @include stackedColor($infograph-color-k); }
+
   .focus-elements {
     .focus-line {
       stroke: $primary-color;
@@ -118,25 +129,33 @@
         fill: #FFF;
         stroke-width: 0.5;
       }
-      &.non-clean-energy .inner {
-        stroke: none;
-        fill: tint($primary-color, 75%);
-      }
-      &.clean-energy .inner {
-        stroke: none;
-        fill: shade($infograph-color-a, 15%);
-      }
+      @include focusCircles('solar', $infograph-color-a);
+      @include focusCircles('biomass', $infograph-color-b);
+      @include focusCircles('large-hydro', $infograph-color-c);
+      @include focusCircles('small-hydro', $infograph-color-d);
+      @include focusCircles('geothermal', $infograph-color-e);
+      @include focusCircles('nuclear', $infograph-color-f);
+      @include focusCircles('wind', $infograph-color-g);
+      @include focusCircles('other-fossil', $infograph-color-h);
+      @include focusCircles('coal', $infograph-color-i);
+      @include focusCircles('natural-gas', $infograph-color-j);
+      @include focusCircles('oil-diesel', $infograph-color-k);
     }
   }
   
   .chart-legend {
     dt {
-      &.param-clean-energy:before {
-        background: $infograph-color-a;
-      }
-      &.param-non-clean-energy:before {
-        background: tint($primary-color, 90%);
-      }
+      @include legendColors('solar', $infograph-color-a);
+      @include legendColors('biomass', $infograph-color-b);
+      @include legendColors('large-hydro', $infograph-color-c);
+      @include legendColors('small-hydro', $infograph-color-d);
+      @include legendColors('geothermal', $infograph-color-e);
+      @include legendColors('nuclear', $infograph-color-f);
+      @include legendColors('wind', $infograph-color-g);
+      @include legendColors('other-fossil', $infograph-color-h);
+      @include legendColors('coal', $infograph-color-i);
+      @include legendColors('natural-gas', $infograph-color-j);
+      @include legendColors('oil-diesel', $infograph-color-k);
     }
   }
 }
@@ -361,12 +380,13 @@
 
 .chart-legend {
   dt {
+    text-align: left;
     position: relative;
     @extend .hd-label;
     @extend .truncated;
     margin-left: 6.5rem;
     line-height: 1.5rem;
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 1.5rem;
     &:before {
       position: absolute;
       top: 50%;
@@ -437,6 +457,10 @@
   z-index: 100;
 }
 
+.chart-note__power {
+  margin: 1rem 0;
+  text-align: left;
+}
 
 $circle-size: 0.625rem;
 $circle-gutter: 0.5rem;
@@ -465,9 +489,30 @@ $circle-gutter: 0.5rem;
 
       &:after {
         margin-top: 0.5rem;
+        padding-top: 0.5rem;
         width: 100%;
         font-size: 2rem;
         text-align: center;
+      }
+    }
+
+    .card-title__compare {
+      float: initial;
+      text-align: initial;
+      position: relative;
+      width: 100%;
+      clear: both;
+      height: 2rem;
+      padding-top: 6px;
+
+      &:after {
+        margin-top: 0;
+        font-size: 1.5rem;
+        position: absolute;
+        width: auto;
+        padding: 0;
+        top: 0;
+        right: 0;
       }
     }
 
@@ -477,9 +522,15 @@ $circle-gutter: 0.5rem;
       border-left: 1px solid tint($primary-color, 68%);
     }
 
+    .card-content__compare {
+      width: 100%;
+      border-top: 1px solid tint($primary-color, 68%);
+      border-left: 0;
+      padding: 1rem 0 0.5rem;
+    }
+
     .card-icon {
       color: tint($primary-color, 38%);
-      padding-top: 0.5rem;
     }
 
     &.biofuels .card-title:after { @extend .collecticon-leaf; @extend .card-icon }
@@ -518,6 +569,11 @@ $circle-gutter: 0.5rem;
           }
         }
       }
+    }
+
+    .available-list__compare {
+      margin-bottom: 0;
+      padding: 0;
     }
 
     .available-list {
