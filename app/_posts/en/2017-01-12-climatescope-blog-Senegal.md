@@ -1,7 +1,7 @@
 ---
-published: false 
-postId: test
-title: Test blog post
+published: true 
+postId: Senegal offgrid
+title: Senegal villages light up fast with household solar products
 
 description: Test blog post description
 ---

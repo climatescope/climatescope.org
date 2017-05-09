@@ -17,7 +17,7 @@ Since 2015, two other microgrids have started providing electricity and are proj
 
 While Haiti does not have specific legislation mandating microgrids, private companies are seeking to expand distributed generation on the island. Additionally, the United Nations’ Sustainable Energy for All programme has undertaken to install another 80 such projects in Haiti and sell 1.5m clean energy products by 2020. Companies on the island are providing small lighting and energy systems powered by solar, biomass and mini-hydro.
 
-On 30 September 2020, Haiti submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, in which it committed unconditionally to cut greenhouse gas (GHG) emissions by 5% below the business as usual (BAU) scenario by 2030. This unconditional target represents a total emission reduction of 10MtCO2e by 2030. The country also committed to a further reduction of GHG emissions by 26% below the BAU scenario by 2030 conditional upon international support. This represents a total reduction of 35.24MtCO2e by 2030.
+On 30 September 2015, Haiti submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, in which it committed unconditionally to cut greenhouse gas (GHG) emissions by 5% below the business as usual (BAU) scenario by 2030. This unconditional target represents a total emission reduction of 10MtCO2e by 2030. The country also committed to a further reduction of GHG emissions by 26% below the BAU scenario by 2030 conditional upon international support. This represents a total reduction of 35.24MtCO2e by 2030.
 
 
 ###Score summary 

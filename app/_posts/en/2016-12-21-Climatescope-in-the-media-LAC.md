@@ -2,7 +2,7 @@
 postId: Climatescope-in-the-media-LAC
 title: Climatescope in the media - Latin America highlights
 
-description: Climatescope in the media - Latin America highlights
+description: 
 ---
 ## CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 
