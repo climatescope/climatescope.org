@@ -106,17 +106,17 @@
       fill: tint($primary-color, 75%);
     }
   }
-  .wind           { @include stackedColor($infograph-color-h); }
   .solar          { @include stackedColor($infograph-color-a); }
-  .small-hydro    { @include stackedColor($infograph-color-j); }
-  .other-fossil   { @include stackedColor($infograph-color-d); }
-  .oil-diesel     { @include stackedColor($infograph-color-g); }
-  .nuclear        { @include stackedColor($infograph-color-f); }
-  .natural-gas    { @include stackedColor($infograph-color-b); }
+  .biomass        { @include stackedColor($infograph-color-b); }
   .large-hydro    { @include stackedColor($infograph-color-c); }
+  .small-hydro    { @include stackedColor($infograph-color-d); }
   .geothermal     { @include stackedColor($infograph-color-e); }
-  .coal           { @include stackedColor($infograph-color-k); }
-  .biomass        { @include stackedColor($infograph-color-i); }
+  .nuclear        { @include stackedColor($infograph-color-f); }
+  .wind           { @include stackedColor($infograph-color-g); }
+  .other-fossil   { @include stackedColor($infograph-color-h); }
+  .coal           { @include stackedColor($infograph-color-i); }
+  .natural-gas    { @include stackedColor($infograph-color-j); }
+  .oil-diesel     { @include stackedColor($infograph-color-k); }
 
   .focus-elements {
     .focus-line {
@@ -129,33 +129,33 @@
         fill: #FFF;
         stroke-width: 0.5;
       }
-      @include focusCircles('wind', $infograph-color-h);
       @include focusCircles('solar', $infograph-color-a);
-      @include focusCircles('small-hydro', $infograph-color-j);
-      @include focusCircles('other-fossil', $infograph-color-d);
-      @include focusCircles('oil-diesel', $infograph-color-g);
-      @include focusCircles('nuclear', $infograph-color-f);
-      @include focusCircles('natural-gas', $infograph-color-b);
+      @include focusCircles('biomass', $infograph-color-b);
       @include focusCircles('large-hydro', $infograph-color-c);
+      @include focusCircles('small-hydro', $infograph-color-d);
       @include focusCircles('geothermal', $infograph-color-e);
-      @include focusCircles('coal', $infograph-color-k);
-      @include focusCircles('biomass', $infograph-color-i);
+      @include focusCircles('nuclear', $infograph-color-f);
+      @include focusCircles('wind', $infograph-color-g);
+      @include focusCircles('other-fossil', $infograph-color-h);
+      @include focusCircles('coal', $infograph-color-i);
+      @include focusCircles('natural-gas', $infograph-color-j);
+      @include focusCircles('oil-diesel', $infograph-color-k);
     }
   }
   
   .chart-legend {
     dt {
-      @include legendColors('wind', $infograph-color-h);
       @include legendColors('solar', $infograph-color-a);
-      @include legendColors('small-hydro', $infograph-color-j);
-      @include legendColors('other-fossil', $infograph-color-d);
-      @include legendColors('oil-diesel', $infograph-color-g);
-      @include legendColors('nuclear', $infograph-color-f);
-      @include legendColors('natural-gas', $infograph-color-b);
+      @include legendColors('biomass', $infograph-color-b);
       @include legendColors('large-hydro', $infograph-color-c);
+      @include legendColors('small-hydro', $infograph-color-d);
       @include legendColors('geothermal', $infograph-color-e);
-      @include legendColors('coal', $infograph-color-k);
-      @include legendColors('biomass', $infograph-color-i);
+      @include legendColors('nuclear', $infograph-color-f);
+      @include legendColors('wind', $infograph-color-g);
+      @include legendColors('other-fossil', $infograph-color-h);
+      @include legendColors('coal', $infograph-color-i);
+      @include legendColors('natural-gas', $infograph-color-j);
+      @include legendColors('oil-diesel', $infograph-color-k);
     }
   }
 }
@@ -457,6 +457,10 @@
   z-index: 100;
 }
 
+.chart-note__power {
+  margin: 1rem 0;
+  text-align: left;
+}
 
 $circle-size: 0.625rem;
 $circle-gutter: 0.5rem;
