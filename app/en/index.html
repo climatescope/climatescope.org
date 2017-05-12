@@ -26,12 +26,12 @@ description: Climatescope a unique country-by-country assessment, interactive re
           <div class="prose-intro">
             <p><strong>NEW</strong> BNEF's outlook on the off-grid market.</p>
           </div>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-quarterly" title="{{ t['View all'][language] }}" class="bttn bttn-success go">Off-grid Quarterly</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-quarterly" title="{{ t['View all'][language] }}" class="bttn bttn-new go">Off-grid Quarterly</a>
 
           <div class="prose-intro">
             <p><strong>NEW</strong> Explore data about the off-grid market.</p>
           </div>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-data-hub" title="{{ t['View all'][language] }}" class="bttn bttn-success go">Off-grid Data Hub</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-data-hub" title="{{ t['View all'][language] }}" class="bttn bttn-new go">Off-grid Data Hub</a>
 
           <div class="prose-intro">
             <p>Analyze more than 800 clean energy policies.</p>
@@ -87,7 +87,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
           <div class="featured-section__body">
             <ol class="latest-updates-list">
               {% assign posts = (site.posts | where:"lang",language) %}
-              {% for post in posts limit:4 %}
+              {% for post in posts limit:5 %}
               {% unless post.hidden == true %}
               <li class="update-wrapper">
                 <article class="update">
