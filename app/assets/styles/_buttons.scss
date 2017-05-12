@@ -104,6 +104,13 @@ input[type=submit] {
   box-shadow: none;
 }
 
+.bttn-new,
+.bttn-new:hover,
+.bttn-new:visited {
+  @include bttn-variation(#f99d6c);
+  color: #fff;
+}
+
 // SIZES
 
 // Small (24px)
