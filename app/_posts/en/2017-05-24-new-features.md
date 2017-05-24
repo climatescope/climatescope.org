@@ -7,7 +7,7 @@ description:
 
 Dear members of the Climatescope community, 
 
-Thank you for the interest you have shown over the years in [Global-Climatescope.org](/en/)  The site has attracted tens of thousands of visitors since the re-launch in December 2016, tracking the energy transition in emerging markets. We are pleased to announce a series of new enhancements. 
+Thank you for the interest you have shown over the years in Global-Climatescope.org. The site has attracted tens of thousands of visitors since the re-launch in December 2016, tracking the energy transition in emerging markets. We are pleased to announce a series of new enhancements. 
 
 ### WHAT'S NEW
 
