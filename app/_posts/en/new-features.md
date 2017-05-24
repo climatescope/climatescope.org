@@ -4,6 +4,7 @@ title: New features!
 
 description: 
 ---
+[Climatescope methodology](/en/methodology/)
 
 Dear members of the Climatescope community, 
 
@@ -11,7 +12,7 @@ Thank you for the interest you have shown over the years in Global-Climatescope.
 
 ### WHAT's NEW
 
-## Quarterly Off-grid Market Outlooks 
+## [Quarterly Off-grid Market Outlooks](/en/off-grid-quarterly/) 
 Discover the latest developments in distributed energy and electrification in emerging or remote markets, put together every quarter by Bloomberg New Energy Finance’s new Frontier Power team. Find them under Insights > Off-grid Quarterly 
 
 The Off-grid Data Hub
@@ -31,6 +32,8 @@ Use the tool to compare where countries stack up in Climatescope. The tool now i
 
 ## Policy library
 The library contains well over 800 policies described in simple language and links to underlying texts such as legislation and regulation. The library now has a new filter that allows you to sort policies by the most important renewable energy policy types, such as auctions or feed-in tariffs. 
+
+Figure 2
 
 ### KEEP IN TOUCH
 The Climatescope team regularly publishes new content: discover more or sign up to the mailing list via the homepage.
