@@ -17,7 +17,7 @@ Discover the latest developments in distributed energy and electrification in em
 ## [The Off-grid Data Hub](/en/off-grid-data-hub/) 
 For the first time, the data hub allows users to discover all of Climatescope dedicated ‘off-grid’ sub-indicators. These include qualitative and quantitative information, such as energy access policies and budgets, mini-grid development regulation, electricity prices and pico-solar market access conditions. Find it under Resources > [Off-grid Data Hub](/en/off-grid-data-hub/) 
 
-![NF - Fig1](/assets/images/content/TITLE1.png)
+![NF - Fig1](/assets/images/content/CS2016_blog_new_features_fig1.png)
 
 ### IMPROVEMENTS
 
@@ -32,7 +32,7 @@ Use the tool to compare where countries stack up in Climatescope. The [tool](/en
 ## [Policy library](/en/policies/#/)
 The library contains well over 800 policies described in simple language and links to underlying texts such as legislation and regulation. The library now has a new filter that allows you to sort policies by the most important renewable energy policy types, such as auctions or feed-in tariffs. 
 
-![NF - Fig2](/assets/images/content/TITLE.png)
+![NF - Fig2](/assets/images/content/CS2016_blog_new_features_fig1.png)
 
 ### KEEP IN TOUCH
 The Climatescope team regularly publishes new content: [discover more](/en/blog/) or sign up to the mailing list via the [homepage](/en/).
