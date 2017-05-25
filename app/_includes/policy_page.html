@@ -23,7 +23,7 @@
             </select>
           </div>
           
-          <div class="control">
+          <div class="control narrow">
             <label class="control-title" for="policy_state">{{ t['State'][language] }}</label>
             <select class="sllt sllt-m" id="policy_state" name="policy_state" ng-model="filterCtrl.filters.state" ng-options="value.id as value.name for value in filterCtrl.getSelectOptsState(filterCtrl.filterData.state)" ng-disabled="!filterCtrl.getSelectOptsState(filterCtrl.filterData.state).length">
               <option value="">{{ t['All'][language] }}</option>
@@ -31,13 +31,20 @@
           </div>
             
           <div class="control">
-            <label class="control-title" class="control-title" for="policy_status">{{ t['Status'][language] }}</label>
+            <label class="control-title" for="policy_mechanism">Mechanism</label>
+            <select class="sllt sllt-m" id="policy_mechanism" name="policy_mechanism" ng-model="filterCtrl.filters.mechanism" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.mechanism)">
+              <option value="">{{ t['All'][language] }}</option>
+            </select>
+          </div>
+
+          <div class="control">
+            <label class="control-title" for="policy_status">{{ t['Status'][language] }}</label>
             <select class="sllt sllt-m" id="policy_status" name="policy_status" ng-model="filterCtrl.filters.status" ng-options="value.id as value.name for value in filterCtrl.getSelectOpts(filterCtrl.filterData.status)">
               <option value="">All</option>
             </select>
           </div>
           
-          <div class="control">
+          <div class="control wide">
             <button ng-click="filterCtrl.disableFilters()" class="bttn bttn-default bttn-m restart hide-txt"><span>{{ t['Reset'][language] }}</span></button>
             <button ng-click="filterCtrl.apply()" class="bttn bttn-dark bttn-m">{{ t['Filter'][language] }}</button>
           </div>
