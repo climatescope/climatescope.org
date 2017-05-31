@@ -12,7 +12,7 @@ Yet specific focus on solutions for rural electrification, including specific in
 
 FIGURE 1
 
-![Figure 1](/assets/images/content/CS2016_blog_powerforall_fig1.png)
+![Figure 1](climatescope.org/app/assets/images/content/CS2016_blog_powerforall_fig1.png)
 
 [A groundbreaking report](https://static1.squarespace.com/static/532f79fae4b07e365baf1c64/t/58e3f73ce4fcb5a3a0989855/1491334979777/Decentralized-Renewables-From-Promise-to-Progress-March-2017.pdf) recently released by Power for All centers on new quantitative and qualitative analysis from the [Platform for Energy Access Knowledge (PEAK)](https://rael.berkeley.edu/project/the-platform-for-energy-access-knowledge/) —a joint project between the Renewable and Appropriate Energy Laboratory (RAEL), University of California, Berkeley and the Power for All campaign that answers this question. PEAK conducted a two-tiered empirical analysis of the five most active DRE markets in the world (Kenya, Ethiopia, Tanzania, India and Bangladesh) using best available data to provide practical insight into policy priorities for such countries. From the bottom-up, the research team surveyed DRE practitioners operating in these markets to identify the policies and regulations that have most influence on local operations. From top-down, the team observed correlation between policy performance and market growth for these countries, finding that statistical relationships corroborate the experiences and perspectives of practitioners.
 
