@@ -1,8 +1,9 @@
 ---
+published: true
 postId: new-features
 title: New features!
 
-description: 
+description: New features
 ---
 
 Dear members of the Climatescope community, 
@@ -14,8 +15,12 @@ Thank you for the interest you have shown over the years in Global-Climatescope.
 ## [Quarterly Off-grid Market Outlooks](/en/off-grid-quarterly/) 
 Discover the latest developments in distributed energy and electrification in emerging or remote markets, put together every quarter by Bloomberg New Energy Finance’s new Frontier Power team. Find them under Insights > [Off-grid Quarterly](/en/off-grid-quarterly/)  
 
+![Figure 1](/assets/images/content/CS2016_blog_new_features_fig1.png)
+
 ## [The Off-grid Data Hub](/en/off-grid-data-hub/) 
 For the first time, the data hub allows users to discover all of Climatescope dedicated ‘off-grid’ sub-indicators. These include qualitative and quantitative information, such as energy access policies and budgets, mini-grid development regulation, electricity prices and pico-solar market access conditions. Find it under Resources > [Off-grid Data Hub](/en/off-grid-data-hub/) 
+
+![Figure 2](/assets/images/content/CS2016_blog_new_features_fig2.png)
 
 ### IMPROVEMENTS
 
