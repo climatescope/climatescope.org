@@ -1,5 +1,5 @@
 ---
-published: false 
+published: true
 postId: POWER FOR ALL
 title: TAPPING INTO DATA TO TACKLE ELECTRICITY POVERTY
 
