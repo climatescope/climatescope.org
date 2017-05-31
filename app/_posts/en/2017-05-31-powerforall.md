@@ -10,8 +10,6 @@ An estimated 1.2 billion people – 16% of the global population – do not have
 
 Yet specific focus on solutions for rural electrification, including specific inclusion of distributed renewable energy (DRE), are not commonly reflected in national policy. In fact, 77% of low energy access (LEA) countries - those where less than half the rural population has access to electricity - do not have DRE targets and more than a third have no national energy access targets at all. So if LEA countries desire to establish frameworks that quickly catalyze development of the DRE sector in-country, what are the most critical elements of an early stage policy portfolio? What is the formula for ‘jump starting’ the sector?
 
-FIGURE 1
-
 ![Figure 1](/assets/images/content/CS2016_blog_powerforall_fig1.png)
 
 [A groundbreaking report](https://static1.squarespace.com/static/532f79fae4b07e365baf1c64/t/58e3f73ce4fcb5a3a0989855/1491334979777/Decentralized-Renewables-From-Promise-to-Progress-March-2017.pdf) recently released by Power for All centers on new quantitative and qualitative analysis from the [Platform for Energy Access Knowledge (PEAK)](https://rael.berkeley.edu/project/the-platform-for-energy-access-knowledge/) —a joint project between the Renewable and Appropriate Energy Laboratory (RAEL), University of California, Berkeley and the Power for All campaign that answers this question. PEAK conducted a two-tiered empirical analysis of the five most active DRE markets in the world (Kenya, Ethiopia, Tanzania, India and Bangladesh) using best available data to provide practical insight into policy priorities for such countries. From the bottom-up, the research team surveyed DRE practitioners operating in these markets to identify the policies and regulations that have most influence on local operations. From top-down, the team observed correlation between policy performance and market growth for these countries, finding that statistical relationships corroborate the experiences and perspectives of practitioners.
@@ -30,8 +28,6 @@ But more than just identifying what policies are behind rapid rural energy acces
 *	<strong>Ending the implementation gap:</strong> institute decentralized energy in integrated energy planning so that grid extension, mini-grids, and tandalone systems are given equal consideration
 *	<strong>Instituting collaborative policy design:</strong> DRE multi-stakeholder-led policy-making that includes government, private sector, funding and civil society actors
  
-FIGURE 2
-
 ![Figure 2](/assets/images/content/CS2016_blog_powerforall_fig2.png)
 
 DRE offers an unprecedented opportunity to accelerate the transition to modern energy services, especially in remote areas, by complementing or substituting centralized systems while also offering significant co-benefits such as improved health, positive impacts on income growth, women’s empowerment, distributive equity and climate resilience. In fact, DRE systems already provide energy services to millions of people, with market penetration increasing annually. GOGLA estimates that pico-solar products alone (defined as products having a PV panel smaller than 10W) currently reach over 89 million people, serving a total of over 19 million households, and thereby improving energy access for 7% of the total off-grid population. 
