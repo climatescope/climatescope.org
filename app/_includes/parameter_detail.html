@@ -76,10 +76,17 @@
     <div ng-if="param.id == 1 && detailsCtrl.grid == 'off'" class="power-sector">
       <h2 class="param-details__sectitle">Offgrid power sector structure</h2>
       <p class="chart-note chart-note__power">Hover over sub-indicator to see more information for this country.</p>
-      <div class="top-questions" power-chart="detailsCtrl.chartData['power-sector-offgrid-1']"><!-- Angular directive -   cs_directives.js --></div>
-      <div power-chart="detailsCtrl.chartData['power-sector-offgrid-2']"><!-- Angular directive - cs_directives.js --></div>
-      <div power-chart="detailsCtrl.chartData['power-sector-offgrid-3']"><!-- Angular directive - cs_directives.js --></div>
-      <div power-chart="detailsCtrl.chartData['power-sector-offgrid-4']"><!-- Angular directive - cs_directives.js --></div>
+      <div class="table-wrapper expandable" data-hook="expand-offgrid">
+        <div class="expandable-wrapper">
+          <div class="top-questions" power-chart="detailsCtrl.chartData['power-sector-offgrid-1']"><!-- Angular directive -   cs_directives.js --></div>
+          <div power-chart="detailsCtrl.chartData['power-sector-offgrid-2']"><!-- Angular directive - cs_directives.js --></div>
+          <div power-chart="detailsCtrl.chartData['power-sector-offgrid-3']"><!-- Angular directive - cs_directives.js --></div>
+          <div power-chart="detailsCtrl.chartData['power-sector-offgrid-4']"><!-- Angular directive - cs_directives.js --></div>
+        </div>
+      </div>
+      <div class="param-details__table-actions">
+        <a class="bttn bttn-cta" href="" ng-click="detailsCtrl.toggleExpandable('[data-hook=\'expand-offgrid\']', $event)" title="{{ t['View more'][language] }}">{{ t['View more'][language] }}</a>
+      </div>
     </div>
 
     <div class="param-details__table">
