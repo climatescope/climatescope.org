@@ -121,6 +121,7 @@
     var _self = this;
     // Data.
     this.parameters = [];
+    this.grid = 'off';
     this.chartData = {
       'clean-energy-investments': null,
       'installed-capacity': null,
@@ -132,7 +133,12 @@
       'power-sector-1': null,
       'power-sector-2': null,
       'power-sector-3': null,
-      'power-sector-4': null
+      'power-sector-4': null,
+
+      'power-sector-offgrid-1': null,
+      'power-sector-offgrid-2': null,
+      'power-sector-offgrid-3': null,
+      'power-sector-offgrid-4': null
     };
 
     setupCommonParamDetailTableMethods(_self);
@@ -199,6 +205,30 @@
     $http.get(url).success(function(data) {
       _self.chartData['power-sector-4'] = data;
     });
+
+    if (CS.grid === 'off') {
+      url = CS.domain + '/' + CS.lang + '/api/auxiliary/power-sector-offgrid-1/' + CS.countryId + '.json';
+      $http.get(url).success(function(data) {
+        _self.chartData['power-sector-offgrid-1'] = data;
+      });
+
+      url = CS.domain + '/' + CS.lang + '/api/auxiliary/power-sector-offgrid-2/' + CS.countryId + '.json';
+      $http.get(url).success(function(data) {
+        _self.chartData['power-sector-offgrid-2'] = data;
+      });
+
+      url = CS.domain + '/' + CS.lang + '/api/auxiliary/power-sector-offgrid-3/' + CS.countryId + '.json';
+      $http.get(url).success(function(data) {
+        _self.chartData['power-sector-offgrid-3'] = data;
+      });
+
+      url = CS.domain + '/' + CS.lang + '/api/auxiliary/power-sector-offgrid-4/' + CS.countryId + '.json';
+      $http.get(url).success(function(data) {
+        _self.chartData['power-sector-offgrid-4'] = data;
+      });
+    } else {
+      _self.grid = 'on';
+    };
 
   }]);
   

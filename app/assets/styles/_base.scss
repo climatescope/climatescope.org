@@ -1044,9 +1044,16 @@ a:active{
       margin-bottom: 0.5rem;
     }
     .control {
-      @include col(3/12);
+      @include col(5/24);
       select {
         width: 100%;
+      }
+      .sllt {
+        font-size: 0.875rem;
+        padding-left: 0.25rem;
+      }
+      &.narrow {
+        @include col(4/24);
       }
     }
     .control:last-child {
