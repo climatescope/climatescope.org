@@ -29,27 +29,27 @@ As in 2015, Climatescope 2016 assessed nations ranging from lowest income to tho
 The goal of the off-grid effort is to level the playing field so that all countries can be compared in the fairest possible manner against one another in a single 58-country list. In addition, visitors to www.global-climatescope.org can examine the specific off-grid focus indicators in detail if they choose and compare in isolation the 23 nations that were assessed using this methodology.
 To determine which countries are assessed using the off-grid focus methodology, a 0-5 scoring system was once again applied. Five factors contributed at different weightings to this score; those that score a 2.5 or higher are considered “off-grid focus countries”.
 
-Factor: Electrification rate	
+* Factor: Electrification rate	
 Question: What percentage of a country’s population is not currently connected to the power grid?	
 Criteria/score: A country with a low enough proportion connected received a score of 2.	
 Data source: International Energy Agency
 
-Factor: Number of national power outages
+* Factor: Number of national power outages
 Question: How many power outages did the country experience in the most recent year for which there is complete data?	
 Criteria/score: A country with a sufficiently large enough number of outages scored 1. 
 Data source: World Bank
 
-Factor: Duration of outages
+* Factor: Duration of outages
 Question: What was the average length of time a typical grid outage lasted?	
 Criteria/score: A country where outages lasted sufficient durations scored 1.
 Data source: World Bank
 
-Factor: Power transmission losses	
+* Factor: Power transmission losses	
 Question: What are the typical line losses?
 Criteria/score: A country where transmission losses exceeded a certain threshold scored 0.5	
 Data source: World Bank
 
-Factor: Human Development Index	
+* Factor: Human Development Index	
 Question: How is the country classified in the UNDP’s HDI?	
 Criteria/score:A country classified “Low Development” scored 0.5	
 Data source: UNDP
