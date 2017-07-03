@@ -20,7 +20,7 @@
     "gulp-uglifyjs": "~0.6.0",
     "js-yaml": "^3.2.6",
     "lodash": "^3.5.0",
-    "run-sequence": "~1.0.2"
+    "run-sequence": "^2.0.0"
   },
   "scripts": {
     "postinstall": "[ -f _config-dev.yml ] || echo 'domain: http://localhost:3000\npath_prefix:' > _config-dev.yml",
