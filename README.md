@@ -1,5 +1,5 @@
 # Climatescope
-The [Climatescope](http://global-climatescope.org) is a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide. It is a project by [UK AID](https://www.gov.uk/government/organisations/department-for-international-development), [Power Africa](http://www.usaid.gov/powerafrica), [BNEF](http://www.newenergyfinance.com/) and the [Multilateral Investment Fund](http://www.fomin.org/)
+The [Climatescope](http://global-climatescope.org) is a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide. It is a project by [BNEF](http://www.newenergyfinance.com/), [UK AID](https://www.gov.uk/government/organisations/department-for-international-development), and developed by [Development Seed](http://developmentseed.org). Previous editions were also supported by [Power Africa](http://www.usaid.gov/powerafrica), and the [Multilateral Investment Fund](http://www.fomin.org/).
 
 ![Homepage of the climatescope 2015](https://cloud.githubusercontent.com/assets/1016701/13225969/2b679a26-d987-11e5-96c4-282484d5d645.png)
 
@@ -15,8 +15,6 @@ Copyright (c) 2014. Multilateral Investment Fund, Inter-American Development Ban
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](http://www.gnu.org/licenses/gpl-3.0.txt) for more details.
-
-===
 
 # Development
 
