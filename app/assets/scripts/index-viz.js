@@ -132,9 +132,6 @@ $(document).ready(function() {
     var undef = void 0;
 
     var countryListUrl = CS.domain + '/' + CS.lang + '/api/countries.json';
-    if (CS.regionId) {
-      countryListUrl = CS.domain + '/' + CS.lang + '/api/regions/' + CS.regionId + '.json';
-    }
 
     // two switches to detect whether marker is clicked,
     // and whether mouse is over tooltip

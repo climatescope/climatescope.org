@@ -22,26 +22,6 @@
           <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-quarterly/" title="Read the Off-grid Quarterly">Off-grid Quarterly</a>
         </li>
       </ul>
-      <h6 class="dropdown-title">{{ t['Topics'][language] }}</h6>
-      <ul class="dropdown-menu" role="menu">
-        {% assign col_name = site.collections['en_parameter'].i18n[language] %}
-        {% assign sorted_params = (site[col_name] | sort: 'weight') %}
-        {% for topic in sorted_params %}
-        <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}{{ topic.url }}" title="{{ t['More about'][language] }} {{ topic.title }}" class="param-{{ topic.id }}">{{ topic.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      <h6 class="dropdown-title">{{ t['Regions'][language] }}</h6>
-      <ul class="dropdown-menu" role="menu">
-        {% assign col_name = site.collections['en_region'].i18n[language] %}
-        {% assign sorted_regions = (site[col_name] | sort: 'weight') %}
-        {% for region in sorted_regions %}
-        <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}{{ region.url }}" title="{{ t['See detailed data on'][language] }} {{ region.title }}">{{ region.title }}</a>
-        </li>
-        {% endfor %}
-      </ul>
     </div>
   </li>
   <li class="dropdown">
