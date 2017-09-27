@@ -1,4 +1,4 @@
 # Domain and path_prefix are needed for IE9 CORS.
 # More in: https://github.com/developmentseed/climatescope/issues/221
-domain:         https://s3-us-west-2.amazonaws.com
-path_prefix:    /climatescope-staging
+domain:         http://climatescope-staging.s3-website-us-west-2.amazonaws.com
+path_prefix:
