@@ -329,15 +329,16 @@ a:active{
   font-size: 1.5rem;
   margin-bottom: 0;
   line-height: 1;
+  color: #fff;
 
   em {
     font-style: normal;
-    color: #fff;
+    opacity: 0.64;
   }
 
   a, a:visited {
     display: block;
-    color: $secondary-color;
+    color: inherit;
   }
 }
 
