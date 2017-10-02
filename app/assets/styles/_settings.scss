@@ -8,8 +8,8 @@ $rem-base: 16px;
 $base-line-height: 150%;
 
 // We use these as default colors throughout
-$primary-color: #000;                            	  // black
-$secondary-color: #77bc1f;                          // green
+$primary-color: #153442;                            // Big Stone
+$secondary-color: #4b8c6e;                          // Viridian
 $tertiary-color: #C3D500;                          	// light green
 $quaternary-color: #00925F;                         // dark green
 $alert-color: #D85D3F;                              // red
@@ -17,21 +17,21 @@ $success-color: $secondary-color;                   // same as $secondary-color
 $warning-color: #F4A432;                            // yellow
 $info-color: #499DD2;                               // blue
 
-$infograph-color-a: #F0C30E;						// yellow				solar
-$infograph-color-b: #62A60A;						// dark green		biomass
-$infograph-color-c: #008FBE;						// blue					large hydro
-$infograph-color-d: #9090c4;						// pblue				small hydro
-$infograph-color-e: #83549a;						// purp					geothermal
-$infograph-color-f: #eb4d4a;						// red					nuclear
-$infograph-color-g: #92d4ee;						// lblue				wind
-$infograph-color-h: #af856e;						// brown				fossil
-$infograph-color-i: #a8a8a8;						// light grey		coal
-$infograph-color-j: #f99d6c;						// orange				natural gas
-$infograph-color-k: #625959;						// grey					oil
+$infograph-color-a: #F0C30E;						            // yellow				solar
+$infograph-color-b: #62A60A;						            // dark green		biomass
+$infograph-color-c: #008FBE;						            // blue					large hydro
+$infograph-color-d: #9090c4;						            // pblue				small hydro
+$infograph-color-e: #83549a;						            // purp					geothermal
+$infograph-color-f: #eb4d4a;						            // red					nuclear
+$infograph-color-g: #92d4ee;						            // lblue				wind
+$infograph-color-h: #af856e;						            // brown				fossil
+$infograph-color-i: #a8a8a8;						            // light grey		coal
+$infograph-color-j: #f99d6c;						            // orange				natural gas
+$infograph-color-k: #625959;						            // grey					oil
 
 // We use these to control various global styles
 $body-bg: tint($primary-color, 95%);
-$body-font-color: tint($primary-color, 20%);
+$body-font-color: tint($primary-color, 8%);
 $body-font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $body-font-weight: normal;
 $body-font-style: normal;
