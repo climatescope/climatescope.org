@@ -288,6 +288,7 @@ a:active{
     background: rgba($primary-color, 0.4);
     z-index: 1;
     content: '';
+    pointer-events: none;
   }
 
   .row--contained {
@@ -314,14 +315,20 @@ a:active{
 // SITE HEADER
 
 #site-headline {
-  @include span(12/12);
   @extend .antialiased;
   font-family: $brand-font-family;
   margin-bottom: 1rem;
 
   @media #{$xlarge-up} {
-    @include col(4/12);
     margin-bottom: 0;
+  }
+
+  .site-header--global & {
+    @include span(12/12);
+
+    @media #{$xlarge-up} {
+      @include col(4/12);
+    }
   }
 }
 
@@ -340,13 +347,27 @@ a:active{
     display: block;
     color: inherit;
   }
+
+  .site-header--home & {
+    @extend .visually-hidden;
+  }
 }
 
 #prime-nav {
   @include span(12/12);
 
-  @media #{$xlarge-up} {
-    @include col(8/12);
+  .site-header--home & {
+    @media #{$xlarge-up} {
+      @include col(8/12, $offset: 2/12);
+      text-align: center;
+    }
+  }
+
+  .site-header--global & {
+    @media #{$xlarge-up} {
+      @include col(8/12);
+      text-align: right;
+    }
   }
 
   @media print {
@@ -372,13 +393,17 @@ a:active{
 }
 
 .global-menu {
-  float: left;
+  display: inline-block;
   list-style: none;
   padding: 0;
   margin: 0;
 
+  &, * {
+    vertical-align: top;
+  }
+
   > li {
-    float: left;
+    display: inline-block;
     margin: 0 0 0 2rem;
     &:first-child {
       margin-left: 0;
@@ -396,10 +421,6 @@ a:active{
 
   .open > .dropdown-toggle {
     @include opacity(0.4);
-  }
-
-  @media #{$xlarge-up} {
-    float: right;
   }
 
   .topics {
