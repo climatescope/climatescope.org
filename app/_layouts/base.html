@@ -72,19 +72,7 @@
   <![endif]-->
 
   <div id="site-canvas">
-    <header id="site-header" role="banner">
-      <div class="row--contained">
-        <div id="site-headline">
-          <h1 id="site-title"><a title="{{ site.name[language] }} {{ site.edition }}" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/">{{ site.name[language] }} <em>{{ site.edition }}</em></a></h1>
-        </div>
-        <nav id="prime-nav" role="navigation">
-          {% include menu.html %}
-        </nav>
-      </div>
-      {% if page.id == 'index' %}
-        {% include intro.html %}
-      {% endif %}
-    </header>
+    {% include header.html %}
 
     <main id="site-body" role="main">
       {{ content }}
