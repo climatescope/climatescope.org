@@ -275,7 +275,7 @@ a:active{
 #site-header {
   position: relative;
   padding: 2rem 0;
-  background: $quaternary-color url(../images/layout/cover-img-2016.jpg) no-repeat center bottom;
+  background: $body-font-color url(../images/layout/hero-17-p1.jpg) no-repeat center bottom;
   background-size: cover;
   color: #fff;
 
@@ -285,7 +285,7 @@ a:active{
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba(shade($quaternary-color, 92%), 0.4);
+    background: rgba($primary-color, 0.4);
     z-index: 1;
     content: '';
   }
