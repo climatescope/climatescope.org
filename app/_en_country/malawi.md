@@ -25,6 +25,7 @@ The National Energy Policy (NEP), delayed from November 2016, is due to be enfor
 
 The government submitted Malawi's Nationally Determined Contribution (NDC) in September 2015, listing a set of mitigation and adaption activities, conditional and unconditional, that would reduce emissions per capita to 0.7-0.8 tCO2e by 2030, as opposed to a forecasted business-as-usual scenario of 1.5 tCO2 per capita (47% lower). However, no specific target has been established.
 
+
 #### Score Summary
 
 Malawi scored 0.89 in Climatescope 2016, placing it 46<sup>th</sup> on the list of countries overall. This was a decline of thirteen places on the previous year and reflected a fall in its scores on both Enabling Framework Parameter I and Greenhouse Gas Management Activities Parameter IV.
