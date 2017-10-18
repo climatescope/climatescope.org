@@ -7,7 +7,7 @@ grid: 'on'
 published: true
 ---
 
-In recent years, a lack of financing alternatives, distorting subsidies, low power prices and counterparty risk have presented major hurdles to Argentina’s quest for investments in the clean energy sector. With Mauricio Macri’s election as president in December 2015, there is hope for a turnaround.
+In recent years, a lack of financing alternatives, distorting subsidies, low power prices and counterparty risk have presented major hurdles to Argentina’s quest for investments in the clean energy sector. With Mauricio Macri’s election as president in December 2015, there is hope for a turnaround.(Insert edit)
 
 Law 27.191, published on 31 March 2016, is the main policy supporting Argentina’s development of renewables. It established the country’s renewables mandate and introduced a feed-in tariff scheme and two tax incentives – a VAT rebate and accelerated depreciation. Law 27.191 set an 8% target for renewable electricity consumption by 2017 and a 20% renewable energy target by 2025.
 
