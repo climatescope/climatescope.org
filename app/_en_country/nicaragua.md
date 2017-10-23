@@ -7,18 +7,21 @@ grid: 'on'
 published: true
 ---
 
-Nicaragua has set a non-binding 91% renewable energy generation target by 2027. Renewable energy developers enjoy a full range of tax breaks, including import duty, VAT and income tax exemptions. Distributors must allocate a percentage to renewable power in tenders for electricity.
+Nicaragua has a diversified renewable matrix. In 2016, 47% of the 4.7TWh generated in the country came from biomass, geothermal, solar, small hydro and wind. Fossil fuel plants were still Nicaragua’s main source of electricity and were responsible for 52% of total generation in that year. Large hydro accounted for the remaining 1%. 
 
-Nicaragua has a diversified renewable matrix. In 2015, 49% of the 4.6TWh generated in the country came from biomass, geothermal, solar, small hydro and wind. Fossil fuel plants were still Nicaragua’s main source of electricity and were responsible for 50% of total generation in that year. Large hydro accounted for the remaining 1%. According to the November 2013 national plan for electricity expansion, Nicaragua established an interim renewables goal of 74% by 2018 in the course of attaining its voluntary target of 91% of energy generation by 2027. Large hydro qualifies toward attainment of these goals. 
+Renewable energy developers enjoy a full range of tax breaks, including import duty, VAT and income tax exemptions. Distributors must allocate a percentage to renewable power in tenders for electricity.
 
-In 2014, Nicaragua had one of the lowest electrification rates (80%) in Latin America and the Caribbean. This fact, along with the country’s high average retail electricity price ($0.21/kWh), could represent an opportunity for renewable energy development, especially in rural areas, where only 54% of the population had access to electricity.
+In January 2017, Nicaragua’s Ministry of Energy and Mines updated the Plan for Electric Generation Expansion 2016-2030 with a non-binding 73% renewable energy generation target by 2030. The plan also establishes interim renewables goals of 55% by 2018 and 64% by 2023. Large hydro qualifies toward goal attainment. 
 
-In April 2016, the government announced that they will invest $10m in renewable energy projects during the year. In the same month, South Korea’s government confirmed it will loan $33.3m to the government of Nicaragua for the development of solar projects in 164 rural communities.
-Electricity generation can also be contracted through bilateral contracts between generators and distributors and/or large consumers. The Instituto Nicaragüense de Energía (INE) regulates transmission and distribution with tariffs, while generators may compete freely in the market. The Comité Nacional de Despacho de Carga is Nicaragua’s electricity market operator, while the Ministry of Energy and Mines (MEM) oversees energy policy and planning.
+Nicaragua’s high average retail electricity prices ($0.22/kWh) are largely due to its dependency on imported fossil fuels for generation. Renewable energy development is key to improving energy security and reducing generation costs. 
 
-Law 532 is Nicaragua’s main policy supporting renewable development. It mandates set-asides for renewable energy in tenders. Sectors given priority are biomass, geothermal, hydro, wind and solar. INE is responsible for defining the percentage allocated for renewables in tenders based on MEM’s strategic expansion plan. Generators that do not have contracts with distributors or large consumers may sell their power in the spot market, where they can receive a price determined by near-term supply and demand conditions. The law also offers a variety of tax incentives for renewable projects. In addition to national exemptions, developers receive a reduction on municipal taxes.
+Electricity generation can be contracted through bilateral contracts between generators and distributors and/or large consumers. The Instituto Nicaragüense de Energía (INE) regulates transmission and distribution tariffs, while generators may compete freely in the market. The Comité Nacional de Despacho de Carga (CNDC) is Nicaragua’s electricity market operator, while the Ministry of Energy and Mines (MEM) oversees energy policy and planning.
 
-In 2015, the government implemented reference prices for renewable energy technologies in order to improve the competitiveness of clean energy sources in the country. These reference prices apply to biomass, geothermal, hydro, solar and wind projects. Prices vary from $66-$80 per MWh (lowest range) for wind projects up to $103-$118 per MWh (highest range) for solar plants.
+Law 532 is Nicaragua’s main policy supporting renewable development. It mandates set-asides for renewable energy in tenders. Sectors given priority are biomass, geothermal, hydro, wind and solar. 
+
+INE is responsible for defining the percentage allocated for renewables in tenders based on MEM’s strategic expansion plan. Generators that do not have contracts with distributors or large consumers may sell their power in the spot market, where they can receive a price determined by near-term supply and demand conditions. The law also offers a variety of tax incentives for renewable projects. In addition to national exemptions, developers receive a reduction on municipal taxes.
+
+Since 2015, the government establishes reference prices for renewable energy technologies in order to improve the competitiveness of clean energy sources in the country. In June 2017, the reference prices were updated, the maximum price for solar projects was reduced from $118/MWh to $70/MWh. Reference prices also apply to biomass ($80/MWh), geothermal ($92/MWh), hydro ($107/MWh) and wind projects ($80/MWh).
 
 
 ###Score summary
