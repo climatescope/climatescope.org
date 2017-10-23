@@ -80,14 +80,11 @@
   </div>
 
   {% if page.id == 'index' %}
-  <div class="row--contained row--contained-alt">
-    <div class="intro-block">
-      <h2 class="intro-block__title">Which emerging market is the most attractive for clean energy investment?</h2>
-      <div class="intro-block__body">
-        <p class="cta-wrapper">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/results" class="bttn bttn-success bttn-l go" title="{{ t['Get the results'][language] }}">{{ t['Get the results'][language] }}</a>
-        </p>
-      </div>
+  <div class="intro-block">
+    <div class="intro-block__header"><img width="310" height="112" alt="Climatescope 2017 logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/cs2017-logo-stacked-neg.svg" /></div>
+    <div class="intro-block__body">
+      <h3 class="intro-block__body-title">Which emerging market is the most attractive for clean energy investment?</h3>
+      <p><a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/results" class="bttn bttn-ghost bttn-l go" title="View the results">Find out</a></p>
     </div>
   </div>
   {% endif %}

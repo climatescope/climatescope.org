@@ -16,6 +16,7 @@ body {
   font-weight: $body-font-weight;
   font-style: $body-font-style;
   min-width: 768px;
+  
   @media print {
     body {
       margin: 2cm 0;

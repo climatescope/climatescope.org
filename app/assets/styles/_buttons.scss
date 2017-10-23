@@ -63,6 +63,19 @@ input[type=submit] {
 // VARIATIONS
 
 // Default (Gray)
+.bttn-ghost,
+.bttn-ghost:hover,
+.bttn-ghost:visited {
+  background: rgba(#fff, 0.32);
+  box-shadow: none;
+  color: #fff;
+}
+
+.bttn-ghost:hover {
+  background: rgba(#fff, 0.48);
+}
+
+// Default (Gray)
 .bttn-default,
 .bttn-default:hover,
 .bttn-default:visited {
