@@ -75,7 +75,6 @@ $(document).ready(function() {
           '<article class="tooltip-inner">',
             '<header class="tooltip__header">',
               '<h1 class="tooltip__title"><a href="' + CS.countryIndex[d.iso] +'" title="' + CS.t("View country") + '">' + d.name + '</a></h1>',
-              '<p class="tooltip__subtitle">' + d.region.name + '</p>',
               grid_code,
               '<a href="#" title="' + CS.t("Close") + '" class="close" onClick="return false;"><span>' + CS.t("Close") + '</span></a>',
             '</header>',
