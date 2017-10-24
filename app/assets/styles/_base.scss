@@ -303,10 +303,12 @@ a:active{
 }
 
 #site-footer {
+  font-family: $brand-font-family;
   background: tint($primary-color, 95%);
-  padding: 2rem 0;
+  padding: ($global-spacing * 2) 0;
   position: relative;
   z-index: 2000;
+
   @media print {
     display: none;
   }
@@ -1172,70 +1174,76 @@ a:active{
 
 
 // SITE FOOTER
-#site-footer {
-  ul {
-    display: inline-block;
+
+
+// #comp-nav {
+//   display: block;
+//   overflow: hidden;
+
+//   .ftr-menu {
+//     list-style: none;
+//     padding: 1rem 0;
+//     margin: 0;
+
+//     > li {
+//       float: left;
+//       margin: 0 2rem 0 0;
+//     }
+
+//     > li > a {
+//       display: block;
+//       font-family: $brand-font-family;
+//       font-weight: $brand-font-bold;
+//       text-transform: uppercase;
+//       color: inherit;
+//     }
+
+//     li:last-child {
+//       margin-right: 0;
+//     }
+//   }
+// }
+
+.ftr-nav {
+  @include col(4/12);
+}
+
+.ftr-nav__block {
+  @include col(6/12);
+}
+
+.ftr-title {
+ @extend .hd-label;
+ margin-bottom: $global-spacing / 2;
+}
+
+.ftr-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: $brand-font-bold;
+
+  a {
+    display: block;
+    color: inherit;
   }
-  @media #{$xlarge-up} {
-    text-align: center;
-  }
+}
+
+.ftr-supporters {
+  @include col(4/12);
 }
 
 .ftr-credits {
-  display: inline-block;
+  padding-top: $global-spacing * 2;
+  margin-top: $global-spacing * 2;
+  color: rgba($primary-color, 0.48);
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  box-shadow: inset 0 2px 0 0 rgba($primary-color, 0.08);
 
-  h1 {
-    color: tint($primary-color, 60%);
-    font-size: 0.875rem;
-    font-weight: $body-font-weight;
+  * {
     margin-bottom: 0;
-    line-height: 1rem;
-  }
-
-  &.current {
-    margin-right: 1.5rem;
-  }
-
-  @media #{$xlarge-up} {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-}
-
-#comp-nav {
-  display: block;
-  overflow: hidden;
-
-  .ftr-menu {
-    list-style: none;
-    padding: 1rem 0;
-    margin: 0;
-
-    > li {
-      float: left;
-      margin: 0 2rem 0 0;
-    }
-
-    > li > a {
-      display: block;
-      font-family: $brand-font-family;
-      font-weight: $brand-font-bold;
-      text-transform: uppercase;
-      color: inherit;
-    }
-
-    li:last-child {
-      margin-right: 0;
-    }
-  }
-}
-
-#ftr-copyright {
-  .copyright {
-    font-family: $brand-font-family;
-    color: tint($primary-color, 60%);
-    margin-bottom: 0;
-    font-size: 0.85rem;
   }
 }
 
@@ -1244,26 +1252,36 @@ a:active{
 .logo-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 0 (-$global-spacing);
+  margin: 0;
   overflow: hidden;
 
   li {
     display: inline-block;
-    margin: $global-spacing;
+    margin: 0 0 $global-spacing $global-spacing;
+    vertical-align: top;
+
+    .ftr-supporters & {
+      @include col(6/12, $cycle: 2);
+      
+      &:nth-last-child(1),
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
+    }
   }
 
   li:last-child {
     margin-right: 0;
   }
 
-  .label {
-    @extend .hd-label;
-    line-height: 1rem;
-    display: block;
-  }
-
   a {
     display: block;
+    text-align: center;
+    background: rgba($primary-color, 0.04);
+    border-radius: $global-radius;
+    padding: $global-spacing / 2;
+    min-height: 4rem;
+    line-height: 4rem;
   }
 
   span {
@@ -1274,13 +1292,13 @@ a:active{
     width: auto;
     max-width: 100%;
     max-height: 3rem;
-    vertical-align: top;
-    opacity: 0.8;
+    opacity: 0.64;
+    vertical-align: middle;
   }
 
   /* Compensate Bloomberg logo proportions and alignment */
   .logo-bnef img {
-    transform: translate(0, 0.5em);
+    // transform: translate(0, 0.5em);
     max-height: 1.75rem;
   }
 

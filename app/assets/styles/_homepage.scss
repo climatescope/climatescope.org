@@ -53,9 +53,14 @@
     }
   }
 
-  @media #{$xlarge-up} {
+  @media #{$large-up} {
     padding-top: $global-spacing * 4;
     padding-bottom: $global-spacing * 2;
+  }
+
+  @media #{$xlarge-up} {
+    padding-top: $global-spacing * 6;
+    padding-bottom: $global-spacing * 4;
   }
 }
 
