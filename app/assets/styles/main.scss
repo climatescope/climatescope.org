@@ -36,9 +36,10 @@
 @import "map";
 
 // Climatescope's pages
-@import "homepage";
-@import "region";
-@import "topic";
+@import "pages/homepage";
+@import "pages/region";
+@import "pages/topic";
+@import "pages/updates";
 
 // Climatescope's blocks
 @import "sec-content";
