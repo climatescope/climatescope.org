@@ -34,27 +34,8 @@ function setupCommonCountryListMethods(scope) {
   // infinite digest loop because the chart directive will watch for changes,
   // and the value is returned by the function is not bound to the scope.
   scope.computeTrendlineData = function(country) {
-    // Calculate the y domain across all countries.
-    var allValues = [];
-    $.each(scope.countries, function (i, country) {
-      $.each(country.score, function (i, score) {
-        allValues.push(score.value);
-      })
-    });
-
-    // Compute the global y domain.
-    var ymin = d3.min(allValues);
-    var ymax = d3.max(allValues);
-    // Give the domain some margin.
-    ymin -= ((ymax - ymin) * 0.1);
-    ymax += ((ymax - ymin) * 0.1);
-
     country.trendline = {
       id: country.iso,
-      globalY: {
-        min: ymin,
-        max: ymax,
-      },
       data: country.score
     };
   };

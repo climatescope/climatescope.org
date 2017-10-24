@@ -73,7 +73,30 @@ function chart__trendline(element, chartData) {
     // the domain from one.
     x.domain(d3.extent(chart_data, function(d) { return d.year; }));
 
-    y.domain([all_data.globalY.min, all_data.globalY.max]);
+    // Compute the y domain.
+    // If there is no data for a year, the y min will be set to 0
+    var ymin = d3.min(chart_data, function (d) {
+      if (d.value === null) {
+        return 0;
+      } else {
+        return d.value;
+      }
+    });
+
+    var ymax = d3.max(chart_data, function (d) { return d.value });
+
+    // Give the domain some margin.
+    ymin -= ((ymax - ymin) * 0.1);
+    ymax += ((ymax - ymin) * 0.1);
+
+    // When the values don't change ensure that the line is
+    // more or less centered.
+    if (ymin == 0 && ymax == 0) {
+      ymin = -1;
+      ymax = 1;
+    }
+
+    y.domain([ymin, ymax]);
     
     // Groups to hold the focus circles.
     // One group per line. Will hold two circles:
