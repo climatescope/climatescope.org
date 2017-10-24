@@ -92,7 +92,9 @@ $(document).ready(function() {
       angular.forEach(countries, function(country) {
         // Update params and calc score for every year.
         angular.forEach(country.score, function(score, index) {
-          score.value = updateParams(country.parameters, index);
+          if (score.value !== null) {
+            score.value = updateParams(country.parameters, index);
+          }
         });
 
         // Compute trendline data.

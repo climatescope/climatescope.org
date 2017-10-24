@@ -72,14 +72,23 @@ function chart__trendline(element, chartData) {
     // Since the years are the same for all the data, just create
     // the domain from one.
     x.domain(d3.extent(chart_data, function(d) { return d.year; }));
-    
+
     // Compute the y domain.
-    var ymin = d3.min(chart_data, function (d) { return d.value });
+    // If there is no data for a year, the y min will be set to 0
+    var ymin = d3.min(chart_data, function (d) {
+      if (d.value === null) {
+        return 0;
+      } else {
+        return d.value;
+      }
+    });
+
     var ymax = d3.max(chart_data, function (d) { return d.value });
 
     // Give the domain some margin.
     ymin -= ((ymax - ymin) * 0.1);
     ymax += ((ymax - ymin) * 0.1);
+
     // When the values don't change ensure that the line is
     // more or less centered.
     if (ymin == 0 && ymax == 0) {
@@ -153,7 +162,8 @@ function chart__trendline(element, chartData) {
 
         // Tooltip content.
         var value_doc = chart_data[doc_index];
-        var content = '<p class="trendline__tooltip">' + value_doc.year + ' &mdash; ' + round(value_doc.value, 2) + '</p>';
+        var value = value_doc.value === null ? 'n/a' : round(value_doc.value, 2);
+        var content = '<p class="trendline__tooltip">' + value_doc.year + ' &mdash; ' + value + '</p>';
 
         // Compute the paramId for the class.
         // id will be [pram_id].[indicator_id]
@@ -212,20 +222,26 @@ function chart__trendline(element, chartData) {
       .attr("class", function(d, i) { return "trendline " + klass; });
 
     // Terminal circle.
-    var terminal_circle = line_group.selectAll("circle")
-      .data([chart_data[chart_data.length - 1]]);
+    var circles = line_group.selectAll("circle")
+      .data(chart_data);
 
     // Handle new.
-    terminal_circle.enter()
+    circles.enter()
       .append("circle")
-      .attr("r", 3);
+      .attr("r", function (d, i) {
+        return i === chart_data.length - 1 ? 3 : 2;
+      });
     // Remove old.
-    terminal_circle.exit().remove();
+    circles.exit().remove();
     // Update current.
-    terminal_circle
+    circles
       .attr("cx", function(d) { return x(d.year); })
       .attr("cy", function(d) { return y(d.value); })
-      .attr("class", function(d, i) { return "trendline-end " + klass; });
+      .attr("class", function(d, i) {
+        return i === chart_data.length - 1
+          ? "trendline-point-end " + klass
+          : "trendline-point " + klass;
+      });
 
   };
 
