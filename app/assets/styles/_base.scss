@@ -1306,11 +1306,14 @@ a:active{
   padding: 0;
   margin: 0;
   overflow: hidden;
+  font-size: 0;
 
   li {
     display: inline-block;
-    margin: 0 0 $global-spacing $global-spacing;
+    margin: 0 $global-spacing $global-spacing 0;
     vertical-align: top;
+    width: 100%;
+    max-width: 12rem;
 
     .ftr-supporters & {
       @include col(6/12, $cycle: 2);
@@ -1331,7 +1334,7 @@ a:active{
     text-align: center;
     background: rgba($primary-color, 0.04);
     border-radius: $global-radius;
-    padding: $global-spacing / 2;
+    padding: ($global-spacing / 2) $global-spacing;
     min-height: 4rem;
     line-height: 4rem;
   }
@@ -1344,7 +1347,7 @@ a:active{
     width: auto;
     max-width: 100%;
     max-height: 3rem;
-    opacity: 0.64;
+    opacity: 0.8;
     vertical-align: middle;
   }
 
