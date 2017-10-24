@@ -274,6 +274,7 @@ a:active{
 }
 
 #site-header {
+  @extend .antialiased;
   position: relative;
   padding: 2rem 0;
   background: $body-font-color url(../images/layout/hero-17-p1.jpg) no-repeat center bottom;
@@ -1213,8 +1214,8 @@ a:active{
 }
 
 .ftr-title {
- @extend .hd-label;
- margin-bottom: $global-spacing / 2;
+  @extend .hd-label;
+  margin-bottom: $global-spacing / 2;
 }
 
 .ftr-menu {

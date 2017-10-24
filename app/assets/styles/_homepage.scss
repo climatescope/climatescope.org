@@ -4,8 +4,8 @@
 // Intro Block
 
 .intro-block {
-  display: flex;
-  @extend .row--contained, .antialiased;
+  @extend .row--contained;
+  z-index: 2 !important;
   color: #fff;
   padding-top: $global-spacing * 2;
   padding-bottom: $global-spacing;
