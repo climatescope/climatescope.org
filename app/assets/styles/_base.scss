@@ -1253,6 +1253,24 @@ a:active{
 .newsletter-form {
   position: relative;
 
+  .form__input-group {
+    position: relative;
+  }
+
+  .form__control {
+    padding: 0.5rem 7.25rem 0.5rem 0.75rem;
+    border-radius: $base-border-radius;
+  }
+
+  .bttn {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    z-index: 2;
+    border-radius: $base-border-radius;
+    width: 6.5rem;
+  }
+
   .form__help {
     margin-bottom: -1.5rem;
 
@@ -1260,6 +1278,11 @@ a:active{
       margin-bottom: 0;
     }
   }
+}
+
+.ftr-note {
+  margin-bottom: $global-spacing / 2;
+  color: rgba($base-color, 0.48);
 }
 
 .ftr-credits {
