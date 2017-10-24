@@ -1237,8 +1237,28 @@ a:active{
 .ftr-newsletter-subs {
   @include col(4/12);
 
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  .form {
+    margin-bottom: 0;
+  }
+
   .form__label {
     @extend .visually-hidden;
+  }
+}
+
+.newsletter-form {
+  position: relative;
+
+  .form__help {
+    margin-bottom: -1.5rem;
+
+    > * {
+      margin-bottom: 0;
+    }
   }
 }
 

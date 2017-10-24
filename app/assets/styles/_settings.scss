@@ -17,6 +17,9 @@ $success-color: $secondary-color;                   // same as $secondary-color
 $warning-color: #F4A432;                            // yellow
 $info-color: #499DD2;                               // blue
 
+$base-color: $primary-color;
+$base-alpha-color: rgba($base-color, 0.12);
+
 $infograph-color-a: #F0C30E;						            // yellow				solar
 $infograph-color-b: #62A60A;						            // dark green		biomass
 $infograph-color-c: #008FBE;						            // blue					large hydro
@@ -45,6 +48,8 @@ $brand-font-bold: 700;
 $global-radius: 0.25rem;
 $global-rounded: 60rem;
 
+$base-border-radius: $global-radius;
+
 // Spacing
 $global-spacing: 1rem;
 
@@ -52,6 +57,8 @@ $global-spacing: 1rem;
 %global-text-shadow {
   text-shadow: 0 1px 0 rgba($primary-color, 0.4);
 }
+
+$base-border-width: 2px;
 
 // Media Query Ranges
 $small-range: (0, 543px);
