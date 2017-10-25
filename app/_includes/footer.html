@@ -5,30 +5,59 @@
 
 <footer id="site-footer" role="contentinfo">
   <div class="row--contained">
-    <section class="ftr-credits current">
-      <h1>{{ t['Supporters'][language] }}</h1>
-      <ul class="logo-list">
-        <li><a class="logo-ukaid" href="https://www.gov.uk/government/organisations/department-for-international-development" title="{{ t['Visit UK Aid'][language] }}"  target="_blank"><img width="118" height="128" alt="{{ t['UK Aid logo'][language] }}" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-ukaid-flat-pos.svg" /><span>{{ t['UK Aid'][language] }}</span></a></li>
-        <li><a class="logo-usaid" href="http://www.usaid.gov" title="Visit USAID"  target="_blank"><img width="288" height="128" alt="USAID logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-usaid-flat-pos.svg" /><span>USAID</span></a></li>
-        <li><a class="logo-bnef" href="http://www.newenergyfinance.com/" title="{{ t['Visit Bloomberg'][language] }}"  target="_blank"><img width="552" height="128" alt="{{ t['Bloomberg logo'][language] }}" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-bnef-flat-pos.svg" /><span>{{ t['Bloomberg'][language] }}</span></a></li>
-      </ul>
-    </section>
-    <section class="ftr-credits previous">
-      <h1>{{ t['Previous supporters'][language] }}</h1>
-      <ul class="logo-list">
-        <li><a class="logo-fomin" href="http://www.fomin.org/" title="{{ t['Visit Fomin'][language] }}"  target="_blank"><img width="208" height="128" alt="{{ t['Fomin logo'][language] }}" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-fomin-en-flat-pos.svg" /> <span>{{ t['Fomin'][language] }}</span></a></li>
-         <li><a class="logo-powerafrica" href="http://www.usaid.gov/powerafrica" title="{{ t['Visit Power Africa'][language] }}"  target="_blank"><img width="288" height="128" alt="{{ t['Power Africa logo'][language] }}" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-powerafrica-flat-pos.svg" /><span>{{ t['Power Africa'][language] }}</span></a></li>
-      </ul>
-    </section>
-    <nav id="comp-nav">
-      <ul class="ftr-menu">
-        <li><a href="http://2015.global-climatescope.org" title="{{ t['Visit 2015 Edition'][language] }}" target="_blank" rel="external">{{ t['2015 Edition'][language] }}</a></li>
-        <li><a href="http://2014.global-climatescope.org" title="{{ t['Visit 2014 Edition'][language] }}" target="_blank" rel="external">{{ t['2014 Edition'][language] }}</a></li>
-        <li><a href="{{ site.domain }}{{ site.path_prefix }}{{ contact.url }}" title="{{ t['View contact'][language] }}">{{ t['Contact'][language] }}</a></li>
-      </ul>
+    <nav class="ftr-nav">
+      <div class="ftr-nav__block">
+        <h2 class="ftr-title">Browse</h2>
+        <ul class="ftr-menu">
+          <li><a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/results" title="View results">Results</a></li>
+          <li><a href="#" title="View insights">Insights</a></li>
+          <li><a href="#" title="View tools">Tools</a></li>
+          <li><a href="{{ site.domain }}{{ site.path_prefix }}{{ contact.url }}" title="View contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="ftr-nav__block">
+        <h2 class="ftr-title">Editions</h2>
+        <ul class="ftr-menu">
+          <li><a href="http://2016.global-climatescope.org" title="Visit 2016 Edition" target="_blank" rel="external">2016</a></li>
+          <li><a href="http://2015.global-climatescope.org" title="Visit 2015 Edition" target="_blank" rel="external">2015</a></li>
+          <li><a href="http://2014.global-climatescope.org" title="Visit 2014 Edition" target="_blank" rel="external">2014</a></li>
+        </ul>
+      </div>
     </nav>
-    <section id="ftr-copyright">
-      <p class="copyright">2012 - 2017 {{ t['Climatescope copyright and disclaimer'][language] }}: <a href="{{ site.domain }}{{ site.path_prefix }}{{ license.url }}" title="{{ t['About the license'][language] }}">{{ t['license'][language] }}</a></p>
+
+    <section class="ftr-newsletter-subs">
+      <h2 class="ftr-title">Stay up to date</h2>
+      <p class="ftr-note">Subscribe to the mailing list.</p>
+      <form class="form newsletter-form" action="//global-climatescope.us14.list-manage.com/subscribe/post?u=f7420b38cc86494fc1ab6cb31&amp;id=e17a5880bd" method="post" id="mc-embedded-subscribe-form" name="subscribe-form">
+        <div class="form__group">
+          <label class="form__label" for="mce-EMAIL">Email</label>
+          <div class="form__input-group">
+            <input type="email" name="EMAIL" class="form__control required email" id="mce-EMAIL" aria-required="true" placeholder="Email" />
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f7420b38cc86494fc1ab6cb31_e17a5880bd" tabindex="-1" value=""></div>
+            <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="bttn bttn-success"><span>Subscribe</span></button>
+          </div>
+          <div class="form__help" id="mce-responses">
+            <p class="mce-response" id="mce-error-response" style="display:none">Something went wrong.</p>
+            <p class="mce-response" id="mce-success-response" style="display:none">You're now subscribed!</p>
+          </div>
+        </div>
+      </form>
+      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     </section>
+
+    <section class="ftr-supporters">
+      <h2 class="ftr-title">Supporters</h2>
+      <ul class="logo-list">
+        <li><a class="logo-ukaid" href="https://www.gov.uk/government/organisations/department-for-international-development" title="Visit UK Aid"  target="_blank"><img width="118" height="128" alt="UK Aid logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-ukaid-flat-pos.svg" /><span>UK Aid</span></a></li>
+        <li><a class="logo-bnef" href="http://www.newenergyfinance.com/" title="Visit Bloomberg"  target="_blank"><img width="552" height="128" alt="Bloomberg logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-bnef-flat-pos.svg" /><span>Bloomberg</span></a></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="ftr-credits">
+    <div class="row--contained">
+      <p>2012-{{ site.edition }} Climatescope. <a href="{{ site.domain }}{{ site.path_prefix }}{{ license.url }}" title="About the license'">View license</a>.</p>
+    </div>
   </div>
 </footer>

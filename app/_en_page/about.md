@@ -18,88 +18,49 @@ In 2016, the project was supported by the UK Department for International Develo
 
 ***
 
-### PROJECT DIRECTOR
+### Project director
 Ethan Zindler
 
-### PROJECT MANAGER
+### Project manager
 Dario Traum 
 
-### PROJECT COORDINATORS
-Ashish Sethia, 
-Itamar Orlandi, 
-Lilian Alves, 
-Luiza Demôro, 
-Maggie Kuang, 
-Nico Tyabji, 
-Sara Giordano.
+### Project coordinators
+Ashish Sethia, Itamar Orlandi, Lilian Alves, Luiza Demôro, Maggie Kuang, Nico Tyabji, Sara Giordano.
 
-### EDITORS
-Angus McCrone, 
-Ben Vickers, 
-Bryony Collins, 
-Rohan Boyle, 
-Vandana Gombar.
+### Editors
+Angus McCrone, Ben Vickers, Bryony Collins, Rohan Boyle, Vandana Gombar.
 
-### RESEARCHERS & DATA GATHERING
+### Researchers & data gathering
 
 #### Africa and Middle East
-Andrew Grant, 
-Ben Gidlow, 
-James Sprinz, 
-Joe Byrne, 
-Jonas Rooze, 
-Keegan Kruger, 
-Kieron Stopforth, 
-Kyle Harrison, 
-Lara Hayim, 
-Monne Depratere, 
-Nicole Aspinall, 
-Tom Harries, 
-Victoria Cuming, 
-Will Nelson.
+Andrew Grant, Ben Gidlow, James Sprinz, Joe Byrne, Jonas Rooze, Keegan Kruger, Kieron Stopforth, Kyle Harrison, Lara Hayim, Monne Depratere, Nicole Aspinall, Tom Harries, Victoria Cuming, Will Nelson.
 
 #### Asia
-Atin Jain, 
-Jacky Lilinshtein, 
-Janis Hoberg, 
-Katya Sharavzhamtsyna, 
-Luke Mills, 
-Muhammad Altamash, 
-Steph Munro, 
-Yvonne Liu.
+Atin Jain, Jacky Lilinshtein, Janis Hoberg, Katya Sharavzhamtsyna, Luke Mills, Muhammad Altamash, Steph Munro, Yvonne Liu.
 
 #### Latin America and Caribbean
-Ana Verena Lima,
-Helena Chung,
-Laura Castro,
-Raphael Barbosa Correa.
+Ana Verena Lima, Helena Chung,Laura Castro, Raphael Barbosa Correa.
 
-### LEAD MODELLING ANALYST
+### Lead modelling analyst
 Ulimmeh Ezekiel
 
-### POLICY EXPERT PANEL
+### Policy expert panel
 Abbas Bilgrami, Juniper Advisors Ltd; Ángeles Mora Sanchez, Gamesa; Anna Czajkowska, Nest; Anna Paola Minervini; Barbara Rubim; Brian Whitesides; Brindusa Fidanza, The Ground_Up Project; Carlos Barria; Paul Bertheau; Chris Twomey; Dario Abramskiehn, CPI; David Lecoque; Deepak Gupta; Dominique Auverlot; Alex Avila; Florian Fritzsche; Gabriela da Rocha Oliveira; Hannah Murdock; Hugo Lucas, Factor; Rupesh Madlani; Jane Wilkinson, CPI; John Fenton; Jonathan Myrtle; K G Chamila Jayasekara; Laurence Mulliez; Lisa Jacobson; Manuel Garmendia Zarandona, Gamesa; Michael Weber; Miguel Martinez Rodriguez; Federico Mazza, CPI; Mike Gratwicke; Ming Yang; Nathan Moore; Patrick D'addario, Fiorello H. LaGuardia Foundation; Phillip Brown; Rachel Ross, Allotrope Partners; Riquel Mitma; Ruggero Paterno; Sam Miles; Tobias Rinke; Victoria Healey; Vincent Delporte; Yasemin Erboy Ruff, United Nations Foundation.
 
-###SPECIAL THANKS
-Arlinda Mezini, 
-Benjamin Kafri, 
-Dharshan Wignarajah, 
-Eve Ottlakan, 
-Flow Bohl, 
-Jon Moore, 
-Karen Johnson, 
-Kathleen Auth, 
-María Hilda Rivera, 
-Max Duluc, 
-Noemi Glickman, 
-and the many energy sector stakeholders our analyst team has met during research trips.
+### Special thanks
+Arlinda Mezini, Benjamin Kafri, Dharshan Wignarajah, Eve Ottlakan, Flow Bohl, Jon Moore, Karen Johnson, Kathleen Auth, María Hilda Rivera, Max Duluc, Noemi Glickman, and the many energy sector stakeholders our analyst team has met during research trips.
 
-### CREDITS
+### Credits
 All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
 
-<h3 class="hd-label adjacent-bottom">Developed by</h3>
+### Previous supporters
 <ul class="logo-list">
-  <li>
-    <a class="logo-devseed" href="http://developmentseed.org/" title="Visit Development Seed" target="_blank"><img width="750" height="128" alt="Development Seed logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-devseed-flat-pos.svg" /><span>Development Seed</span></a>
-  </li>
+  <li><a class="logo-fomin" href="http://www.fomin.org/" title="" target="_blank"><img width="208" height="128" alt="" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-fomin-en-flat-pos.svg"><span>Multilateral Investment Fund</span></a></li>
+  <li><a class="logo-powerafrica" href="http://www.usaid.gov/powerafrica" title="Visit Power Africa" target="_blank"><img width="288" height="128" alt="Power Africa logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-powerafrica-flat-pos.svg"><span>Power Africa</span></a></li>
+  <li><a class="logo-usaid" href="http://www.usaid.gov" title="Visit USAID"  target="_blank"><img width="288" height="128" alt="USAID logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-usaid-flat-pos.svg" /><span>USAID</span></a></li>
+</ul>
+
+### Developed by
+<ul class="logo-list">
+  <li><a class="logo-devseed" href="http://developmentseed.org/" title="Visit Development Seed" target="_blank"><img width="750" height="128" alt="Development Seed logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/logo-devseed-flat-pos.svg" /><span>Development Seed</span></a></li>
 </ul>

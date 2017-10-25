@@ -14,16 +14,9 @@
   
   {% include meta.html %}
 
-  <link rel="shortcut icon" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon.png" />
-  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon-152x152.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/favicon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/android-chrome.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/apple-touch-icon.png" />
 
   <link type="text/plain" rel="author" href="{{ site.domain }}{{ site.path_prefix }}/humans.txt" />
   <link rel="stylesheet" href="{{ site.domain }}{{ site.path_prefix }}/assets/styles/main.css">
@@ -72,19 +65,7 @@
   <![endif]-->
 
   <div id="site-canvas">
-    <header id="site-header" role="banner">
-      <div class="row--contained">
-        <div id="site-headline">
-          <h1 id="site-title"><a title="{{ site.name[language] }} {{ site.edition }}" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/">{{ site.name[language] }} <em>{{ site.edition }}</em></a></h1>
-        </div>
-        <nav id="prime-nav" role="navigation">
-          {% include menu.html %}
-        </nav>
-      </div>
-      {% if page.id == 'index' %}
-        {% include intro.html %}
-      {% endif %}
-    </header>
+    {% include header.html %}
 
     <main id="site-body" role="main">
       {{ content }}
