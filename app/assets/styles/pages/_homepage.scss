@@ -2,6 +2,15 @@
    Homepage
    ========================================================================== */
 
+.layout--home {
+  &__body {
+    padding: ($global-spacing * 2) 0;
+
+    @media #{$xlarge-up} {
+      padding: ($global-spacing * 4) 0;
+    }
+  }
+}
 
 /* Intro block
    ========================================================================== */
@@ -68,14 +77,23 @@
 }
 
 
-// Featured columns
+/* Featured content
+   ========================================================================== */
 
-.featured-col--4 {
-  @include col(4/12);
+.featured-col--main {
+  @include col(7/12);
+
+  @media #{$xlarge-up} {
+    @include col(8/12);
+  }
 }
 
-.featured-col--8 {
-  @include col(8/12);
+.featured-col--sec {
+  @include col(5/12);
+
+  @media #{$xlarge-up} {
+    @include col(4/12);
+  }
 }
 
 .featured-section {
@@ -103,46 +121,11 @@
   margin-bottom: $global-spacing;
 }
 
-// Featured block
-
-.featured-block {
-  a.bttn {
-    margin-bottom: 1.5rem;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-// Compare results block
-
-.prose-intro {
-  font-family: $brand-font-family;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  margin-bottom: $global-spacing;
-
-  > *:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.compare-results-block {
-  .control-title {
-    @extend .visually-hidden;
-  }
-
-  .control:not(:last-child) {
-    margin-bottom: $global-spacing;
-
-    select {
-      width: 100%;
-    }
-  }
-}
 
 
-// Policies
+
+
+
 
 
 // Latest updates
@@ -182,42 +165,6 @@
 .update__date {
   @extend .hd-label;
   margin: 0;
-}
-
-// Intro video modal
-
-
-#modal-intro-video {
-
-  .modal__inner {
-    overflow: hidden;
-  }
-
-  .modal__title {
-    @extend .visually-hidden;
-  }
-
-  .modal__inner {
-    padding: 0 6rem 0 0;
-  }
-}
-
-.embed-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-}
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 
@@ -267,7 +214,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background: rgba($primary-color, 0.4);
+      background: rgba($primary-color, 0.32);
       z-index: 1;
       content: '';
       pointer-events: none;
@@ -278,6 +225,16 @@
     }
   }
 }
+
+.feat-tool--darkplus {
+  > a {
+
+    &::after {
+      background: rgba($primary-color, 0.64);
+    }
+  }
+}
+
 
 .feat-tool__title {
   font-size: 0.875rem;
@@ -305,4 +262,40 @@
 
 #feat-tool-compare a {
   background-image: url(../images/content/feat-tools/feat-tool-thumb--compare.jpg);
+}
+
+
+/* Intro video modal
+   ========================================================================== */
+
+#modal-intro-video {
+  .modal__inner {
+    overflow: hidden;
+  }
+
+  .modal__title {
+    @extend .visually-hidden;
+  }
+
+  .modal__inner {
+    padding: 0 6rem 0 0;
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

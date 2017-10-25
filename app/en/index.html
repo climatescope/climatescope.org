@@ -20,18 +20,18 @@ description: Climatescope a unique country-by-country assessment, interactive re
 
   <div class="layout--home__body">
     <div class="row--contained">
-      <div class="featured-col featured-col--8">
+      <div class="featured-col featured-col--main">
 
         <section class="featured-section">
-          <h1 class="featured-section__title">Latest updates</h1>
+          <h1 class="featured-section__title">Updates</h1>
           <div class="featured-section__body">
             <ol class="latest-updates-list">
               {% assign posts = (site.posts | where:"lang",language) %}
-              {% for post in posts limit:5 %}
+              {% for post in posts limit:4 %}
               {% unless post.hidden == true %}
               <li class="update-wrapper">
                 <article class="update">
-                  <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View update">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View more">
                     <p class="update__date">{{ post.date | date: '%b %-d, %Y' }}</p>
                     <h1 class="update__title">{{ post.title }}</h1>
                   </a>
@@ -45,15 +45,23 @@ description: Climatescope a unique country-by-country assessment, interactive re
         </section>
 
         <section class="featured-section featured-block">
-          <h1 class="featured-section__title">Insights</h1>
-          <div class="prose-intro">
-            <p><strong>NEW</strong> BNEF's outlook on the off-grid market.</p>
+          <h1 class="featured-section__title">Off-grid Quarterly</h1>
+          <div class="featured-section__body">
+            <ol class="latest-updates-list">
+              <li class="update-wrapper">
+                <article class="update">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}{{ language }}/off-grid-quarterly/q3-2017/" title="View more">
+                    <h1 class="update__title">3Q 2017 Off-grid and mini-grid market outlook</h1>
+                  </a>
+                </article>
+              </li>
+            </ol>
           </div>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-quarterly" title="{{ t['View all'][language] }}" class="bttn bttn-success go">Off-grid Quarterly</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-quarterly" title="{{ t['View all'][language] }}" class="bttn bttn-success go">View all</a>
         </section>
       </div>
 
-      <div class="featured-col featured-col--4">
+      <div class="featured-col featured-col--sec">
         <section class="featured-section">
           <h1 class="featured-section__title">Tools</h1>
           <div class="featured-section__body">
@@ -67,7 +75,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
                 </article>
               </li>
               <li>
-                <article class="feat-tool" id="feat-tool-ogdatahub">
+                <article class="feat-tool feat-tool--darkplus" id="feat-tool-ogdatahub">
                   <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-data-hub" title="View policy database">
                     <h1 class="feat-tool__title">Discover the Data Hub</h1>
                     <p class="feat-tool__summary">All dedicated off-grid sub-indicatores.</p>
