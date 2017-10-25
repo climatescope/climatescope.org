@@ -12,6 +12,7 @@
   }
 }
 
+
 /* Intro block
    ========================================================================== */
 
@@ -97,9 +98,9 @@
 }
 
 .featured-section {
-  padding-bottom: $global-spacing * 1.25;
-  margin-bottom: $global-spacing * 1.25;
-  box-shadow: 0 1px 0 0 rgba($primary-color, 0.08);
+  padding-bottom: $global-spacing * 1.5;
+  margin-bottom: $global-spacing * 1.5;
+  box-shadow: 0 2px 0 0 rgba($primary-color, 0.08);
 
   &:last-child {
     margin: 0;
@@ -119,52 +120,6 @@
 
 .featured-section__body {
   margin-bottom: $global-spacing;
-}
-
-
-
-
-
-
-
-
-// Latest updates
-
-.latest-updates-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.update-wrapper {
-  padding-bottom: $global-spacing;
-  margin-bottom: $global-spacing;
-  box-shadow: 0 1px 0 0 rgba($primary-color, 0.08);
-
-  &:last-child {
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-  }
-}
-
-.update {
-  > a {
-    display: block;
-    color: inherit;
-  }
-}
-
-.update__title {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin: 0;
-  font-weight: 400;
-}
-
-.update__date {
-  @extend .hd-label;
-  margin: 0;
 }
 
 

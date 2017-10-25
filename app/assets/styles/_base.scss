@@ -29,7 +29,7 @@ body {
 
 a {
   cursor: pointer;
-  color: $secondary-color;
+  color: $link-color;
   text-decoration: none;
   @include transform(translateZ(0));
   @include transition-property(opacity);
@@ -57,6 +57,12 @@ a:active{
   outline: none;
   @include transform(translate(0, 1px));
 }
+
+.link-wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+
 
 // Row
 
@@ -1408,20 +1414,110 @@ a:active{
   }
 }
 
-\:article,
-\:aside,
-\:details,
-\:figcaption,
-\:figure,
-\:footer,
-\:header,
-\:hgroup,
-\:main,
-\:nav,
-\:section,
-\:summary {
-  display: block;
+
+/* Entry list
+   ========================================================================== */
+
+.entry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    padding: 0 0 ($global-spacing * 1.5) 0;
+    margin: 0 0 ($global-spacing * 1.5) 0;
+    box-shadow: 0 1px 0 0 rgba($primary-color, 0.08);
+  }
+
+  > li:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
 }
+
+.entry__contents {
+  position: relative;
+  z-index: 1;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+a.entry__contents {
+  color: inherit;
+}
+
+.entry__header {
+  margin-bottom: $global-spacing;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.entry__headline {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.entry__title {
+  @include heading(1.25rem);
+  text-transform: none;
+
+  a.entry__contents & {
+    color: $link-color;
+  }
+
+  a.link-wrapper & {
+    margin-bottom: 0;
+  }
+
+  @media #{$xlarge-up} {
+    @include heading(1.5rem);
+  }
+}
+
+.entry__subtitle {
+  font-family: $brand-font-family;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgba($base-color, 0.48);
+  font-size: 0.875rem;
+  line-height: 1rem;
+  margin: ($global-spacing / 4) 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.entry__body {
+  margin-bottom: $global-spacing;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.entry__prose {
+  font-family: $brand-font-family;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: rgba($base-color, 0.64);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
 
 // IE<8
 
