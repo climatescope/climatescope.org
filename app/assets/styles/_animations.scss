@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+@keyframes hero-animation {
+  from {
+    background-position: center top;
+  }
+  to {
+    background-position: center bottom;
+  }
+}

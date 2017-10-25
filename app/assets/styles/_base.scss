@@ -280,34 +280,49 @@ a:active{
   background: #fff;
 }
 
-#site-header {
+.site-header {
   @extend .antialiased;
   position: relative;
   padding: 2rem 0;
-  background: $body-font-color url(../images/layout/hero-17-p1.jpg) no-repeat center bottom;
-  background-size: cover;
+  background-color: $body-font-color;
   color: #fff;
 
+  &::before,
   &::after {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: rgba($primary-color, 0.4);
-    z-index: 1;
     content: '';
     pointer-events: none;
   }
 
+  &::before {
+    background-image: url(../images/layout/hero-17-comp.jpg);
+    background-repeat: no-repeat;
+    z-index: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  &::after {
+    background: rgba($primary-color, 0.4);
+    z-index: 2;
+  }
+
   .row--contained {
     position: relative;
-    z-index: 3;
+    z-index: 4;
   }
 
   .row--contained-alt {
-    z-index: 2;
+    z-index: 3;
   }
+}
+
+.site-header--global::before {
+  background-position: center middle;
+  background-size: cover;
 }
 
 #site-footer {
