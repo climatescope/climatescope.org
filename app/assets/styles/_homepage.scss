@@ -220,3 +220,62 @@
   width: 100%;
   height: 100%;
 }
+
+
+// 2017 update modal
+
+[data-modal="2017-update"] {
+  .modal__title {
+    margin-bottom: 0;
+  }
+}
+
+.counter {
+  display: inline-block;
+  box-shadow: inset 0 0 0 2px rgba($primary-color, 0.08);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.75rem 0.25rem 0.25rem;
+  font-size: 0;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+  background: rgba($primary-color, 0.04);
+
+  * {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 2rem;
+  }
+
+  span {
+    @extend .antialiased;
+    position: relative;
+    border-radius: 0.25rem;
+    background: $body-font-color;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 1.75rem;
+    color: #fff;
+    font-weight: $brand-font-bold;
+    margin: 0 0.125rem 0 0;
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      content: '';
+      background: #fff;
+      height: 1px;
+      width: 100%;
+      transform: translate(0, -50%);
+    }
+  }
+
+  span:last-of-type {
+    margin-right: 0.5rem;
+  }
+
+  strong {
+    font-size: 1rem;
+  }
+}
