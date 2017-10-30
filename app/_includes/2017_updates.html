@@ -2,11 +2,22 @@
   <div class="modal__inner">
     <header class="modal__header">
       <h1 class="modal__title">Get ready for the Climatescope 2017</h1>
-      <p class="counter"><time datetime="2017-11-30"><span class="">2</span><span>8</span> <strong>days left</strong></time></p>
+      <p class="counter"><time datetime="2017-11-30"><span data-hook="launch-days:0">2</span><span data-hook="launch-days:1">8</span> <strong>days left</strong></time></p>
+      <script>
+        var launchDay = new Date('2017-11-28');
+        var diff = launchDay.getTime() - (new Date()).getTime();
+        diff = Math.ceil(diff / 86400 / 1000);
+
+        var nums = diff.toString().split('');
+        if (nums.length === 1) nums.unshift('0');
+
+        document.querySelector('[data-hook="launch-days:0"]').innerText = nums[0];
+        document.querySelector('[data-hook="launch-days:1"]').innerText = nums[1];
+      </script>
+
       <a class="close" title="Close" data-modal-dismiss><span>Close</span></a>
     </header>
     <div class="modal__body">
-
       <form action="//global-climatescope.us14.list-manage.com/subscribe/post?u=f7420b38cc86494fc1ab6cb31&amp;id=e17a5880bd" method="post" id="mc-embedded-subscribe-form" name="subscribe-form">
         <p class="form-description">A new edition of the Global Climatescope will launch soon. Sign up here and be the first to discover new insights into clean energy in emerging markets.</p>
 
@@ -27,6 +38,5 @@
     </div>
   </div>
 </section>
-
 
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>  
