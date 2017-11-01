@@ -7,7 +7,7 @@ grid: 'off'
 published: true
 ---
 
-The first utility-scale solar PV projects developed under the 2010 Renewable Energy Orientation Law have been connected to Senegal’s the grid. The country is well on track to hit its target of 20% renewable energy generation capacity by end-2017. 
+The first utility-scale solar PV projects developed under the 2010 Renewable Energy Orientation Law have been connected to Senegal’s grid. The country is well on track to hit its target of 20% renewable energy generation capacity by end-2017. 
 
 The first two renewable energy projects of the country, totalling 50MW, were connected to the grid in early 2017. Another 94MW are under construction and will be connected by the end of the year. In October 2017 the government issued an open tender for solar projects with a combined capacity of 100MW. This project is part of the Scaling Solar initiative led by the IFC. A 150MW wind project is also in the pipeline and will be built in stages of 50MW starting in 2018. Finally, an additional hydroelectric dam is in the making: Senegal will receive 80MW of the 240MW Kaléta dam when it is completed at end-2018. These projects will complement the country’s existing coal, diesel and hydro-electric power generation. They were all awarded to new producers entering an energy market that is becoming less dominated by Senelec, the national electricity operator.
 
