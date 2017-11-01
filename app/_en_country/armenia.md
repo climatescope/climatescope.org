@@ -21,3 +21,15 @@ Armenia plans to follow the renewables support policy standards of the European 
 
 On September 22, 2015 Government of Republic of Armenia submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, committing to cap emissions at 633 million tons of carbon dioxide equivalent for the 2015-2050, and at 5.4 tons per capita annually. The INDC records points out that in 2010, Armenia’s GHG emissions comprised 2.14 tons per capita, and that the country would aim to limit emissions to 2.07 tons per capita by 2050 provided it receives adequate international financial and technical assistance.
 
+
+Score Summary
+
+Armenia’s score of 0.81 in Climatescope 2017 placed it 56th out of the 71 countries assessed worldwide, and 11th among the 17 Asian nations. The country is reliant on fuel imports, having no oil or gas reserves of its own, and its energy sector is partially unbundled and open to private participants. This is the first year in which the country has been included in the project.
+
+Armenia was strongest on Enabling Framework Parameter I, taking 39th position. Its score of 1.16 was supported by the presence of a renewable energy target, a feed-in tariff programme, a net metering scheme and tax relief incentives. It was also bolstered by the presence of private players and its partially unbundled generation, transmission and distribution operations. 
+
+In contrast, it took 59th place on Clean Energy Investment and Climate Financing Parameter II, putting it within the bottom quartile of the countries assessed. This reflects the absence of investment in clean energy in 2016, and just $9.4m since 2010. A small volume of loans and grants has been made available to the sector in recent years.
+
+The country took 46th place on Low-Carbon Business & Clean Energy Value Chains Parameter III. Its score was supported by the presence of banks, funds and impact funds, but weakened by the dearth of clean energy value chains and service providers.
+
+On Greenhouse Gas Management Activities Parameter IV, Armenia ranked 55th. This reflected a lack of a domestic climate change policy and corporate awareness. Its Intended Nationally Determined Contribution submitted to the UN in 2015 outlines a target to reduce carbon emissions.
