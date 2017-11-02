@@ -22,7 +22,7 @@ Armenia plans to follow the renewables support policy standards of the European 
 On September 22, 2015 Government of Republic of Armenia submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, committing to cap emissions at 633 million tons of carbon dioxide equivalent for the 2015-2050, and at 5.4 tons per capita annually. The INDC records points out that in 2010, Armenia’s GHG emissions comprised 2.14 tons per capita, and that the country would aim to limit emissions to 2.07 tons per capita by 2050 provided it receives adequate international financial and technical assistance.
 
 
-Score summary
+###Score summary
 
 Armenia’s score of 0.81 in Climatescope 2017 placed it 56th out of the 71 countries assessed worldwide, and 11th among the 17 Asian nations. The country is reliant on fuel imports, having no oil or gas reserves of its own, and its energy sector is partially unbundled and open to private participants. This is the first year in which the country has been included in the project.
 
