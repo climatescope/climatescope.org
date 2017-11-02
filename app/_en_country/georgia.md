@@ -17,3 +17,16 @@ Nearly 100% of the Georgian population has access to electricity, which is procu
 Electricity is distributed and sold by three private, regional monopolies. The Georgian energy regulator (GNERC) introduced in November 2016 new direction on retail net metering: distributed generation is now paid the retail rate until a customer’s generation exceeds consumption on an annual basis, at which point customers are paid a wholesale rate for the excess. In 2016, residential retail rates averaged approximately 144 Georgian lari per megawatt hour, while spot wholesale priced averaged about 107 lari per megawatt hour.
 
 Georgia’s Intended Nationally Determined Contribution (INDC) to the UNFCCC states that the country aims for a 15% emissions reduction below business-as-usual by 2030 (equivalent to a 34% reduction in emission intensity). The INDC covers energy, industrial processes and product use, agriculture, and waste.
+
+
+###Score summary
+
+Georgia ranked 41st with a score of 1.11 on Climatescope 2017, the first year it has been included in the project. The mountainous former Soviet Republic relies on hydropower for around 80% of its power and is in the process of liberalising and unbundling the different segments of its power sector. It performed marginally better on Low-Carbon Business & Clean Energy Value Chains Parameter III than the three other parameters.
+
+On Enabling Framework Parameter I, the country was placed 34th overall. Its score is supported by the presence of a clean energy feed-in tariff, net metering and a renewable energy development fund. It is also supported by the ongoing deregulation of existing assets, development of a new market structure and the country’s 360MW of installed small hydro capacity.
+
+Georgia took 33rd position on Clean Energy Investment and Climate Financing Parameter II, putting it in the top 50% of countries assessed. On the positive side, $23m of asset finance for wind projects was recorded in 2016 and a total of $139m (mainly in small hydro) since 2012. On the negative side, there are no loan and grant programmes.  
+
+On Parameter III the country was 32nd. Its score was aided by the presence of banks and funds active in the clean energy sector, and a large variety of service providers, but undermined by the relatively small number of value chains represented by the country’s clean energy companies. 
+Georgia was placed 33rd on Greenhouse Gas Management Activities Parameter IV. It scored highly on the Nationally Determined Contribution, owing to its aim to reduce emissions across the economy by 15% below ‘business as usual’ by 2030, but was let down by the lack of a domestic climate change policy.
+
