@@ -19,4 +19,16 @@ Access to finance, red tape and high costs also continue to hold back Belarus’
 
 Belarus is facing concerns of a supply shortage in electricity due both to rising demand and historical underinvestment in supply. In the 3rd Edition of the Concept of Energy Security published in December 2015, Belarus lays out targets to see energy intensity fall 37% from 2010 levels by 2035. Energy efficiency is one means by which Belarus hopes to address its electricity shortages. Reducing overall energy demand is also expected to help reduce dependence on Russian imports: Belarus has adopted a target to import only 70% of primary energy consumption by 2035, down from 85% today.
 
-On 25 September, 2015, the Government of Republic of Belarus submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, committing to unconditionally reduce its emissions by 28% from 1990 levels by 2030. The country introduced a number of domestic legislation setting targets and regulation aimed at ensuring that it can meet its international commitments. 
+On 25 September, 2015, the Government of Republic of Belarus submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, committing to unconditionally reduce its emissions by 28% from 1990 levels by 2030. The country introduced a number of domestic legislation setting targets and regulation aimed at ensuring that it can meet its international commitments.
+
+###Score summary
+Belarus scored 0.78 on Climatescope 2017 – its first year in the project – earning it 58th place among the 71 nations assessed worldwide. The country’s power sector is controlled by a state-owned monopoly and its subsidiaries, although private entities are allowed to operate. Its best performance, by a wide margin, was on Greenhouse Gas Management Activities Parameter IV.
+
+On Enabling Framework Parameter I, Belarus scored 0.82 and was ranked 58th. This reflected a number of weaknesses, including the absence of a clean energy target, power auctions and net metering, and the continued state ownership of the large majority of the power sector. On the other hand, the presence of feed-in tariffs and tax incentives was supportive.
+
+Belarus performed poorly on Clean Energy Investment and Climate Financing Parameter II, taking 66th place. The lack of local investment as well as loan and grant programmes was a downward factor. However, the $27m invested in solar projects in 2016, part of the $267m clean energy total since 2012, gave the score some support.
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country also performed poorly taking 61st position. This was a consequence of the absence of service providers and the low number of clean energy businesses active in the country. 
+
+In contrast, Belarus excelled on Greenhouse Gas Management Activities Parameter IV with a score of 1.85 that put in 8th place globally. This reflects its commitment to unconditionally reduce its greenhouse gases emissions by 28% below its 1990 level by 2030, and the introduction of domestic legislation in support of this goal.
+
