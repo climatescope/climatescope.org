@@ -8,7 +8,7 @@ region: africa
 ---
 
 
-Score summary
+###Score summary
 
 Azerbaijan’s score of 0.79 placed it 57th out of the 71 nations in Climatescope 2017, the first time it has been included in the project. It ranked seventh among the 12 former Soviet Republics assessed, just behind its neighbours, Armenia and Georgia. The country was strongest on Greenhouse Gas Management Activities Parameter IV.
 
@@ -19,5 +19,3 @@ Azerbaijan ranked 60th on Clean Energy Investment and Climate Financing Paramete
 The country’s performance on Low-Carbon Business & Clean Energy Value Chains Parameter III was stronger than in the first two parameters. It was placed 28th position thanks to the wide variety of solar, wind, small hydro and biomass power companies present, and fairly broad range of service providers, including financial and legal advisers. The lack of diversity in financial institutions was a weakness. 
 
 Azerbaijan’s strength on Parameter IV put it in 25th place. The country has no climate change policy, incentives or regulations and there is no corporate awareness of the issue, but it performed well in the Nationally Determined Contribution category thanks to its commitment to reduce greenhouse gas emissions by 35% by 2030 compared with 1990 levels.
-
-
