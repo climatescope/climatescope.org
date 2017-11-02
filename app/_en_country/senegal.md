@@ -25,12 +25,13 @@ On September 26, 2015, Senegal submitted its Intended Nationally Determined Cont
 
 ###Score summary
 
-Senegal scored 1.09 in Climatescope 2016, placing it 38<sup>th</sup> on the list of countries overall, down two places compared with 2015. Its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
+Senegal saw a dramatic improvement in its performance in Climatescope 2017. The country scored 1.68, ranking it 11th worldwide, a leap of 27 places compared with the previous year. Among the 19 African nations assessed, it climbed from 13th to third. The jump reflected a vastly improved score on Clean Energy Investment and Climate Financing Parameter II.
 
-On Enabling Framework Parameter I, the country’s score increased and it jumped eight places to 23<sup>rd</sup>, owing to a somewhat improved tax environment and strengthened distributed energy framework.
+On Enabling Framework Parameter I, Senegal was placed 31st, down from 23rd the year before. The score was supported by clean energy policies, including a clean energy target and energy auctions. It was also boosted by the country’s framework for distributed energy, plus its partially unbundled and privatised power sector, but hampered by a lack of installed clean energy capacity.
 
-The country placed 57<sup>th</sup> on Clean Energy Investment and Climate Financing Parameter II, above only Cote d’Ivoire. Nevertheless, its score rose more than threefold to 0.07, reflecting a big increase in the volume of clean energy investment in 2015.
+On Parameter II the country was third globally in 2017, up from 57th last year. This transformation reflected the injection of $393m into wind and solar power generating infrastructure, compared with $26m of solar investment recorded the previous year. The presence of loan and grant programmes bolstered the score, as did the low average cost of debt. 
 
-Senegal’s score on Parameter III improved and it climbed four places to 21<sup>st</sup>, thanks to an increase in the number of clean energy value chains and types of financial institution serving the sector.
+Senegal took 21st position on Low-Carbon Business & Clean Energy Value Chains Parameter III, unchanged from 2016. The variety of financial institutions active in the country’s clean energy sector was a positive factor. Set against this was the relatively low number of value chains and renewable energy service companies. 
 
-On Greenhouse Gas Management Activities Parameter IV, the country sank eight places owing to a slight deterioration in its carbon-offsetting activities. It ranked 49<sup>th</sup> on this parameter in 2016.
+On Greenhouse Gas Management Activities Parameter IV, the country fell one place to 50th. The lack of a domestic climate change policy weakened its score, as did low levels of corporate awareness. Although it plans to reduce emissions in line with its Intended Nationally Determined Contribution, the scale of ambition is relatively modest.  
+
