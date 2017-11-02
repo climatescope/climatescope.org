@@ -23,12 +23,13 @@ South Africa is a signatory to the UNFCCC Paris Agreement and in its Intended Na
 
 ###Score summary
 
-South Africa scored 2.21 in Climatescope 2016, ranking it 5<sup>th</sup> on the list of countries overall, one place lower than in 2015. Its highest finish was on Greenhouse Gas Management Activities Parameter IV.
+South Africa slipped down the order for the third year running. In 2014, it was ranked third, in 2015 it dropped to fourth, last year it was fifth and on Climatescope 2017 it was placed sixth with a score of 1.97. The country still tops the list of 19 African nations, above Kenya and Senegal. It experienced modest declines on all four parameters.
 
-On Enabling Framework Parameter I, South Africa’s score suffered a fairly significant fall and the country dropped twenty-six places to rank 32<sup>nd</sup>. This was due to, among other things, slower growth in the rate of clean energy installation and generation.
+On Enabling Framework Parameter I, it sank six places to 38th. This reflects a relatively weak clean energy policy environment (there is no net metering or feed-in tariffs, for example) and an unreformed, state-dominated power sector. In contrast, it benefited from the addition of large volumes of new wind and solar power generating capacity in 2016.
 
-In contrast, its score on Clean Energy Investment and Climate Financing Parameter II increased more than threefold and it climbed eighteen places to 6<sup>th</sup> thanks to more than $4bn of new investment in the sector in 2015.
+The country retreated seven places on Clean Energy Investment and Climate Financing Parameter II to 13th as the volume of money flowing into the sector declined dramatically (to slightly less than $900m from more than $4bn the previous year). Conversely, the score was supported by the country’s relatively low average cost of debt and considerable local investment.
 
-South Africa’s score on Low-Carbon Business & Clean Energy Value Chains Parameter III edged up slightly. It was ranked 3<sup>rd</sup> globally, a reflection of the number and variety of companies (including financial institutions) serving its clean energy sector.
+The country’s smallest decline came on Low-Carbon Business & Clean Energy Value Chains Parameter III. It slipped one place to fourth, behind China, Brazil and Mexico. The country has a comprehensive range of financial institutions and service providers and a wide variety of engineering and manufacturing enterprises in all sectors, bar geothermal. 
 
-On Greenhouse Gas Management Activities Parameter IV, South Africa’s score rose sharply and it took the number one spot globally. It was very strong on all three categories – carbon offsets, carbon policy and carbon policy.
+South Africa also ranked fourth on Greenhouse Gas Management Activities Parameter IV, having taken the number one position the previous year. Its score reflected its relatively ambitious Nationally Determined Contribution, the presence of climate change regulations as well as a high level of corporate awareness.
+
