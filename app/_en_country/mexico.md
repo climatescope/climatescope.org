@@ -27,12 +27,13 @@ Ahead of the United Nations Framework Convention on Climate Change meeting in Pa
 
 ###Score summary
 
-Mexico scored 2.02 in Climatescope 2016 (up from 1.72 in the previous survey), ranking it 9<sup>th</sup> overall, two places below its position in 2015. The country’s lowest position was on Enabling Framework Parameter I, but it was also the scene of some improvement. 
+Mexico climbed five places on Climatescope 2017 to rank fourth out of the 71 nations assessed, below only China, Brazil and Jordan. Its score of 2.03 put it ahead of Chile, Uruguay and South Africa, all of which were in the top five in 2016. Despite its overall improvement, the country declined on two out of four parameters. It was strongest on Greenhouse Gas Management Activities Parameter IV.
 
-It took 29<sup>th</sup> place on Parameter I, an increase of three places, and its score jumped to 1.37 from 1.10. This reflected an improvement in its power sector structure, specifically the privatisation and unbundling of the power utility and introduction of a wholesale power market. 
+It was weakest on Enabling Framework Parameter I, dropping three places to 32nd. The absence of key clean energy policies, such as feed-in tariffs and net metering, was offset by the ongoing modernisation of the country’s power sector and the 25% growth in clean energy generating capacity to almost 6.5GW in 2016.
 
-On Clean Energy Investment and Climate Financing Parameter II, its score climbed from 0.85 the previous year to 1.54 and it edged up one place to 11<sup>th</sup>. This was thanks chiefly to the seismic investment of $4.1bn, mainly in wind.
- 
-Mexico’s score on Low-Carbon Business & Clean Energy Value Chains Parameter III was unchanged at 3.84 and it remained in 7<sup>th</sup> place. Some 27 value chains were identified and five types of financial institution.
+On Clean Energy Investment and Climate Financing Parameter II, the country dropped seven places to 18th. A decline in investment to $1.36bn (compared with $4.35bn in 2016) put downward pressure on the score, as did the low volume of investment from local sources. On the positive side, the score was boosted by the low cost of debt.
 
-On Greenhouse Gas Management Activities Parameter IV it took 6<sup>th</sup> position thanks to a strong set of clean energy policies and its carbon offsetting activities.
+The country jumped four places to third globally on Low-Carbon Business & Clean Energy Value Chains Parameter III. Developers and engineering firms are present in nearly all renewable energy sectors, as are a wide variety of service providers (including lawyers, insurers and technical consultants) and financial institutions.
+
+On Parameter IV, it was the top-ranked country, up from sixth the previous year. This reflects an ambitious domestic climate change policy, including a target to achieve 35% of electricity generation from renewables by 2024, and a Nationally Determined Contribution that pledges unconditionally to cut emissions by 25% compared with ‘business as usual’ levels by 2030.
+
