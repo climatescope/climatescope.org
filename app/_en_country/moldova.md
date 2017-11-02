@@ -19,3 +19,17 @@ Moldova’s new renewables energy law introduced a target of 10% renewables in g
 To date renewables activity in Moldova has been supported by the European Bank for Reconstruction and Development through its Sustainable Energy Financing Facility which offers lending for energy efficiency and renewable energy projects. Up to 20% of the loan may be awarded as a grant depending on the contribution to greenhouse gas reduction of the project. The facility has a capital of 42 million euros awarded through local partner institutions. 250 projects have already been approved, primarily in energy efficiency as the country’s energy intensity is three times higher than the European average.
 
 On 25 September, 2015, the Government of Republic of Moldova submitted its Intended Nationally Determined Contribution (INDC) to the United Nations, unconditionally committing to absolute reduction of its 1990 greenhouse gas emissions by 64 to 67% by 2030. This could increase to 78% provided financial ($5 billion) and technical support is provided by the international community.
+
+
+###Score summary
+
+Moldova’s score of 0.86 in Climatescope 2017 – the first time it has been included in the project – placed it 51st among the 71 nations surveyed. The country depends on a single 2.5GW natural gas, oil and coal-fired plant located in the disputed break-away territory of Transnistria for almost 80% of its power. Its best performance was on Greenhouse Gas Management Activities Parameter IV.
+
+On Enabling Framework Parameter I, it was ranked 51st. The ongoing modernisation of its power structure, including the separation and liberalisation of its generation, distribution and retail operations, bolstered its score, as did the presence of a feed-in tariffs and tax incentives. Less than 10MW of clean energy capacity has been installed since 2010.
+
+The country performed poorly on Clean Energy Investment and Climate Financing Parameter II, ranking 57th overall. This reflected the absence of clean energy investment since 2010, as well as the lack of loan and grant programmes. On the positive side, the country’s 14.28% average cost of debt lent the score a modest degree of support. 
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, it was placed 49th. Clean energy businesses, mainly engineers and project developers, represent 10 value chains nationally, out of a possible total of 38. Service providers were less well represented, with just three types in evidence out of a possible total of 20. 
+
+Moldova performed well on Parameter IV, taking 23rd place. This reflected its ambitious Intended Nationally Determined Contribution to cut greenhouse gas emissions by 64-67% below its 1990 level by 2030. The lack of a domestic climate change policy undermined the score, however.
+
