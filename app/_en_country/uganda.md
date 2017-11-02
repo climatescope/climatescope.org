@@ -23,12 +23,13 @@ The solar PV market in Uganda has steadily grown over the last 15 years with new
 
 ###Score summary
 
-Uganda scored 2.05 in Climatescope 2016, up from 1.68 the previous year. This increase carried it two places higher to rank 7<sup>th</sup> overall. Its best performance came on Low-Carbon Business & Clean Energy Value Chains Parameter III.
+Uganda was placed 17th on Climatescope 2017, down from seventh in 2016. Its score of 1.47 ranked it fifth among the 19 African nations assessed, having taken second place last year, behind only South Africa. The land-locked East African nation saw dramatic declines on both Clean Energy Investment and Climate Financing Parameter II as well as Greenhouse Gas Management Activities Parameter IV. 
 
-On Enabling Framework Parameter I, Uganda’s score sank by a small margin. The sector’s low barriers to entry and the relative strength of its clean energy policy environment are supportive factors.
+In contrast, the country gained nine places on Enabling Framework Parameter I to take 10th overall. This reflected the presence of supportive clean energy policies, including feed-in tariffs, and the ongoing unbundling and privatisation of its power sector structure. Installed renewable capacity grew 16% in 2016 to 172MW (mostly small hydro and biomass plants), yet the output from these assets declined by a small margin.
 
-On Parameter II, the country’s score more than doubled thanks to a sharp rise in the volume of investment to $189m in 2015, compared with approximately $50m across all sectors over the last four years.
+On Parameter II, the country plummeted 21 places to 30th as the volume of funds flowing into the sector slumped by 73% to $76m (from $284m the previous year). Other factors dragging the score lower included the country’s high average cost of debt (22.6%) and lack of local investment.
 
-Uganda ranked 8<sup>th</sup> on Low-Carbon Business & Clean Energy Value Chains Parameter III. Its score is supported by its distributed energy sector, both in terms of the diversity of the value chains present and number of service providers.
+Uganda also dropped out of the top 10 on Low-Carbon Business & Clean Energy Value Chains Parameter III, sliding five places to 13th. The country’s relatively small renewable equipment manufacturing base weakened the score, but the presence of a wide range of service providers offset this somewhat. 
 
-On Greenhouse Gas Management Activities Parameter IV it scored higher owing to improvements in its carbon policies. It ranked 13<sup>th</sup> globally, and 3<sup>rd</sup> in Africa behind South Africa and Kenya.
+On Parameter IV the country suffered a steep decline, tumbling 34 places to 47th from 13th a year earlier. The country has not incorporated an emissions reduction strategy into its Nationally Determined Contribution and does not have a domestic climate change policy. 
+
