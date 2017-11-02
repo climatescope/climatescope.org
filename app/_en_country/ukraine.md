@@ -31,3 +31,16 @@ Ukraine’s Association Agreement with the EU requires the country to have an em
 The State Agency for Energy Efficiency (SAEE) has undertaken a broad campaign to raise awareness and investment in energy efficiency, both in local heat and power companies and in residential blocks.
 
 Ukrgasbank, a state-controlled bank that is facing privatization, has adopted a strategy to specialize in green investments. With the support of the IFC, it has set up an in-house specialist unit that serves businesses in renewable energy and energy efficiency projects. The bank has a loan portfolio of 450 large residential blocks that are implementing energy efficiency measures.
+
+###Score summary
+
+Ukraine was ranked 40th on Climatescope 2017, the first year it has been included in the project. Its score of 1.13 placed it ahead of its northern neighbour Belarus, but behind Russia. The latter’s annexation of Crimea in 2014 and continued tensions in the east of the country have had an impact on coal and gas supplies. It was strongest on Greenhouse Gas Management Activities Parameter IV.
+
+In contrast, the country’s performance on Enabling Framework Parameter I was weak. Its score placed it 63rd out of the 71 nations assessed, reflecting the absence of clean energy policies, such as tax incentives and net metering, as well as high barriers to private sector participation. In addition, the sector has achieved only partial unbundling and the power utilities have not been privatised.
+
+The country took 26th place globally on Clean Energy Investment and Climate Financing Parameter II. Since 2012, more than $2.6bn has been invested in renewables, mainly in wind and solar. The rate of investment fell sharply in 2014, with just $113m recorded in 2016. The absence of loan and grant programmes in the country were negative factors. 
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, Ukraine took 24th position. The score was supported by the presence of development and engineering value chains in the solar, wind, biomass and small hydro sectors, and a wide variety of financial and legal service providers.
+
+The country ranked 10th globally on Parameter IV owing to its ambitious Nationally Determined Contribution. It aims to reduce emissions to below 60% of 1990 emissions levels by 2030 and will cover all five emissions sectors.
+
