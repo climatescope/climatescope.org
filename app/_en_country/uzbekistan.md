@@ -16,3 +16,17 @@ Power generation capacity in Uzbekistan is dominated by fossil fuels which accou
 These changes are a first sign that the country’s new president, Shavkat Mirziyoyev who replaced Islam Karimov who headed the state for 25 years in 2016, is seeking to tackle the country’s energy sector challenges. It is still unclear under which power sector structure and regulation Uzbekistan will attempt to modernize its electricity generation and transport infrastructure. The first two solar PV projects developed with the support of the Asian Development Bank were also put on hold and being reviewed as a result of the reorganization of the sector. 
 
 The June 2017 announcements also went some way towards starting renewable energy sector activity in the country. Renewables project of size of up to 30MW can be set up for self-generation and are allowed to sell their excess electricity back to the grid or directly to other large consumers. Low retail electricity prices (131.4 sum per kWh as of October 2016, equivalent to around $ 25 cents per kWh at the June 2016 official exchange rate) are a clear disincentive to self-generation, however, the decreasing reliability of retail electricity supply and falling cost of renewables could lead some companies to install their own power supplies. The presidential order also introduced a duty exemption for renewables project until 2022.
+
+###Score summary
+
+Uzbekistan scored 0.54 and was placed 67th in Climatescope 2017, the first time it has been included in the project. The land-locked former Soviet Central Asia Republic ranked 16th out of the 17 Asian countries assessed, ahead of its southern neighbour Turkmenistan. Its best performance was on Greenhouse Gas Management Activities Parameter IV.
+
+The country’s power sector is run by a state-owned monopoly, although there are tentative signs of reform under the new president. Abundant oil and gas reserves mean it is energy self-sufficient and the government is able to subsidise electricity prices.
+
+On Enabling Framework Parameter I, the country scored 0.69 and was placed 65th. This reflects the absence of any renewable energy generating infrastructure and the state’s domination of the power sector. The recent introduction of a renewable energy target, net metering and tax incentives are positive factors. 
+
+Uzbekistan ranked last among the 70 nations that scored points on Clean Energy Investment and Climate Financing Parameter II. This was on account of its limited investment history –just one deal has been recorded since 2010, a $164m loan made in 2013 for the construction of solar projects. 
+
+On Low-Carbon Business & Clean Energy Value Chains Parameter III the country’s performance was slightly more robust, taking 55th place. There are just six clean energy value chains represented (all are in the small hydro and solar sectors) and four different types of service providers. 
+Uzbekistan was ranked 47th on Greenhouse Gas Management Activities Parameter IV. Its score was boosted by its Intended Nationally Determined Contribution to reduce emissions and the presence of climate change incentives and regulations, but dampened by the lack of corporate awareness. 
+
