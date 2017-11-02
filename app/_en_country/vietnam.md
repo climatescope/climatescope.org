@@ -17,12 +17,13 @@ Nonetheless, existing incentives have failed to boost the industry and developme
 
 ###Score summary
 
-Vietnam scored 1.56 in Climatescope 2016, up from 1.28 in the previous survey. This improvement moved it five places up the order to 17<sup>th</sup> position on the list of countries overall. Its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
+Vietnam gained seven places to rank 10th globally on Climatescope 2017. Its score of 1.80 ranked it above all 17 Asian nations, apart from China and India. The country was placed in the top 10 worldwide on three out of the four parameters, with its best performance and biggest improvement being on Clean Energy Investment and Climate Financing Parameter II.
 
-On Enabling Parameter I, the country’s score was almost unchanged, yet it fell five places to 40<sup>th</sup>. Clean energy policies, such as feed-in tariffs and an energy target supported the score, but the absence of a distributed energy framework was a weakness. 
+The country’s worst performance was on Enabling Framework Parameter I. It dropped five places to 45th, reflecting its largely unreformed power sector (with its state-owned utilities and only partially unbundled operations) as well as gaps in its clean energy policy framework. On the positive side, it has introduced feed-in tariffs and tax incentives.
 
-Vietnam’s score on Clean Energy Investment and Climate Financing Parameter II more than doubled from last year and the country took 20<sup>th</sup> position in the ranking. 
+In contrast, Vietnam took seventh place worldwide on Parameter II, compared with 20th the previous year. Clean energy investment of $682m in 2016 was an increase of more than 100% on 2016. Additional positive factors include the low average cost of debt (7.12%) and the high level of local investment (more than one-third of the almost $1.5bn invested in the sector since 2012).
 
-On Parameter III, the country’s score increased and it was ranked 10<sup>th</sup> globally, up from 14<sup>th</sup> the year before. It has value chains in every clean energy sector, and four varieties of financial institutions serve the clean energy sector.
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country was ranked 10th, unchanged from 2016. Its score was supported by the wide variety of manufacturing businesses present in each of the renewable power sectors, apart from geothermal, and the wealth of clean energy service providers, such as bankers, lawyers and insurers. 
 
-On Greenhouse Gas Management Activities Parameter IV, its score increased in the Carbon Policy category, thanks to the introduction of a GHG emissions reduction target and a carbon tax. It was placed 14<sup>th</sup>.
+Vietnam was placed 9th on Greenhouse Gas Management Activities Parameter IV, a gain of five places compared with 2016. This reflects the goals set out in its Nationally Determined Contribution to reduce emissions by 8% compared with ‘business as usual’ by 2030, rising to 25% with the assistance of international aid. The country also has an ambitious domestic climate change policy. 
+
