@@ -25,5 +25,17 @@ The country also plans to build as much as 12.5GW of nuclear power capacity by 2
 
 Turkey is also completing trials for integrating its electricity network with that of continental Europe and should soon become a full member of the European Network of Transmission System Operators for Electricity. In the drive for liberalization, the government has privatized all 21 distribution companies. A fully competitive retail market was expected to be in place this year, although progress on this front has been slow. 
 
-Turkey’s Intended Nationally Determined Contribution (INDC) states a 21% reduction target in greenhouse gas emissions by 2030, compared to a business-as-usual scenario from a base year of 2012. Energy makes up 70% of Turkey’s emissions and hence emphasis on coal plants in future years might make it challenging to reach this target.   
+Turkey’s Intended Nationally Determined Contribution (INDC) states a 21% reduction target in greenhouse gas emissions by 2030, compared to a business-as-usual scenario from a base year of 2012. Energy makes up 70% of Turkey’s emissions and hence emphasis on coal plants in future years might make it challenging to reach this target.
+
+###Score summary
+
+Turkey’s score of 1.58 on Climatescope 2017 placed it 15th among the 71 nations assessed. The country’s power sector has undergone major reform over the last decade, including unbundling of all market segments and partial liberalisation of generation and distribution. This is the first time Turkey has been included in the project. It was strongest on Low-Carbon Business & Clean Energy Value Chains Parameter III.
+
+On Enabling Framework Parameter I, the country scored 1.30 and was ranked 33rd. The score was supported by the presence of a clean energy target, energy auctions and feed-in tariffs. It was also boosted by recent market reforms and the system’s relative openness to independent power producers. Installed clean energy generation capacity jumped by about 2GW in 2016 to 14.5GW.
+
+Turkey took 20th spot worldwide on Clean Energy Investment and Climate Financing Parameter II. This reflected the recent influx of funds into the sector – almost $1.6bn was invested in 2016, mainly in wind and geothermal, increasing the total since 2012 by 17% to $10.8bn. 
+
+On Parameter III the country performed well, taking 9th place globally thanks to its well-developed clean energy sector. It boasts some 36 different value chains, from wind blade manufacturing to biofuel blending and distribution, and 20 types of service provider. In contrast, banks are the only type of financial institution serving the sector.
+
+Turkey was placed 29th on Greenhouse Gas Management Activities Parameter IV. Its score was supported by the relatively ambitious Nationally Determined Contribution to reduce emissions by 21% by 2030 compared with ‘business as usual’. The absence of domestic climate change policy dragged the score down.
 
