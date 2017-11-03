@@ -229,12 +229,8 @@
     margin-bottom: 2rem;
   }
 
-  .modal__title {
-    margin-bottom: 0.5rem;
-    
-    strong {
-      display: block;
-    }
+  .modal__headline {
+    margin-bottom: 1.5rem;
   }
 
   .entry-list li {
@@ -263,6 +259,7 @@
   font-size: 0;
   text-transform: uppercase;
   background: rgba($primary-color, 0.04);
+  margin: 0;
 
   * {
     display: inline-block;

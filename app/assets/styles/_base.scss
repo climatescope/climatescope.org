@@ -56,6 +56,12 @@ a:active{
   @include transform(translate(0, 1px));
 }
 
+.link-wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
 // Row
 
 .row {

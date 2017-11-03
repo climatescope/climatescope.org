@@ -3,7 +3,6 @@
     <header class="modal__header">
       <div class="modal__headline">
         <h1 class="modal__title">Climatescope 2017</h1>
-        <p class="modal__intro">The new edition is coming soon but as the nations of the world are meeting in Bonn two years after the Paris Agreement, Climatescope reveals that both investment and climate policy efforts are lagging behind...</p>
       </div>
       <div class="modal__actions">
         <p class="counter"><time datetime="2017-11-30"><span data-hook="launch-days:0">2</span><span data-hook="launch-days:1">8</span> <strong>days left</strong></time></p>
@@ -19,6 +18,9 @@
           document.querySelector('[data-hook="launch-days:1"]').innerText = nums[1];
         </script>
       </div>
+      <div class="modal__intro">
+        <p>The new edition is coming soon but as the nations of the world are meeting in Bonn two years after the Paris Agreement, Climatescope reveals that both investment and climate policy efforts are lagging behind...</p>
+      </div>
       <a class="close" title="Close" data-modal-dismiss><span>Close</span></a>
     </header>
 
@@ -32,15 +34,14 @@
       </div>
 
       <div class="modal__section">
-        <h2 class="modal__section-title">Read the updates</h2>
+        <h2 class="modal__section-title">Read the insights</h2>
 
         <ol class="entry-list">   
           <li>
             <article class="entry entry--short update">
               <div class="entry__contents">
                 <header class="entry__header">
-                  <p class="entry__subtitle">Nov 03, 2017</p>
-                  <a href="http://localhost:3000/en/blog/2017/06/26/GSMA" title="View more" class="link-wrapper">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/insights/climate-policy" title="View more" class="link-wrapper">
                     <h1 class="entry__title">Find out about Climate Policy</h1>
                   </a>
                 </header>
@@ -58,8 +59,7 @@
             <article class="entry entry--short update">
               <div class="entry__contents">
                 <header class="entry__header">
-                  <p class="entry__subtitle">Nov 03, 2017</p>
-                  <a href="http://localhost:3000/en/blog/2017/05/31/powerforall" title="View more" class="link-wrapper">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/insights/emerging-markets-investment" title="View more" class="link-wrapper">
                     <h1 class="entry__title">Find out about Investment</h1>
                   </a>
                 </header>
