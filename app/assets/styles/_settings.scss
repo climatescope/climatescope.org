@@ -17,6 +17,11 @@ $success-color: $secondary-color;                   // same as $secondary-color
 $warning-color: #F4A432;                            // yellow
 $info-color: #499DD2;                               // blue
 
+$base-color: $primary-color;
+$base-alpha-color: rgba($base-color, 0.12);
+
+$link-color: $secondary-color;
+
 $infograph-color-a: #F0C30E;						// yellow				solar
 $infograph-color-b: #62A60A;						// dark green		biomass
 $infograph-color-c: #008FBE;						// blue					large hydro

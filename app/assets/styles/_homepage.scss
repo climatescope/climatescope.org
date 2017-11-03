@@ -236,6 +236,18 @@
       display: block;
     }
   }
+
+  .entry-list li {
+    @include col(6/12);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+  }
+
+  .entry__title {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
 }
 
 .counter {
