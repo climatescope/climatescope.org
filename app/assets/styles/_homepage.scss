@@ -199,7 +199,7 @@
   }
 
   .modal__inner {
-    padding: 0 6rem 0 0;
+    padding: 0 4rem 0 0;
   }
 }
 
@@ -247,6 +247,11 @@
   .entry__title {
     font-size: 1.25rem;
     line-height: 1.5rem;
+  }
+
+  .embed-container {
+    overflow: hidden;
+    border-radius: 4px;
   }
 }
 

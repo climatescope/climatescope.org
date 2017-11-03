@@ -40,12 +40,13 @@
   background-color: #fff;
   box-shadow: 4px 4px 0 0 rgba($primary-color, 0.2);
   border-radius: $global-radius;
-  padding: 4rem 8rem 2rem 4rem;
+  padding: 2rem 6rem 2rem 2rem;
   text-align: left;
 
   @media #{$large-up} {
     width: 100%;
     max-width: 42rem;
+    padding: 3rem 7rem 3rem 3rem;
   }
 
   &:after {
@@ -55,18 +56,12 @@
     bottom: 0;
     right: 0;
     z-index: 1;
-    width: 6rem;
+    width: 4rem;
     background: $secondary-color;
     border-radius: 0 $global-radius $global-radius 0;
   }
 
   .modal--large & {
-    padding: 4rem 8rem 4rem 4rem;
-
-    &:after {
-      width: 4rem;
-    }
-
     @media #{$large-up} {
       max-width: 56rem;
     }
@@ -121,6 +116,7 @@
   &__title {
     @extend .hd-l;
   }
+
   .close {
     position: absolute;
     top: 1rem;
@@ -149,6 +145,7 @@
 }
 
 .modal__header {
+  display: -ms-flexbox; /* TWEENER - IE 10 */
   display: flex;
   width: 100%;
 
@@ -158,6 +155,8 @@
 }
 
 .modal__headline {
+  padding-right: 2rem;
+
   > *:last-child {
     margin-bottom: 0;
   }
@@ -169,6 +168,7 @@
 }
 
 .modal__actions {
+  -ms-flex: 1 1 auto; /* IE 10 */
   flex: 1 1 auto;
   text-align: right;
   font-size: 0;
