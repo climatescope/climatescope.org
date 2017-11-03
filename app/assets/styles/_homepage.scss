@@ -230,7 +230,15 @@
   }
 
   .modal__headline {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .modal__title {
+    small {
+      display: block;
+      line-height: 1;
+      font-size: 1.25rem;
+    }
   }
 
   .entry-list li {
@@ -245,9 +253,11 @@
     line-height: 1.5rem;
   }
 
-  .embed-container {
+  .video-wrapper {
     overflow: hidden;
     border-radius: 4px;
+    max-width: 36rem;
+    margin: 0 auto;
   }
 }
 
