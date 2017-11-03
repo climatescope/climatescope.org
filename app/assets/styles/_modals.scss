@@ -42,10 +42,12 @@
   border-radius: $global-radius;
   padding: 4rem 8rem 2rem 4rem;
   text-align: left;
+
   @media #{$large-up} {
     width: 100%;
     max-width: 42rem;
   }
+
   &:after {
     content:'';
     position: absolute;
@@ -56,6 +58,18 @@
     width: 6rem;
     background: $secondary-color;
     border-radius: 0 $global-radius $global-radius 0;
+  }
+
+  .modal--large & {
+    padding: 4rem 8rem 4rem 4rem;
+
+    &:after {
+      width: 4rem;
+    }
+
+    @media #{$large-up} {
+      max-width: 56rem;
+    }
   }
 }
 
@@ -132,6 +146,33 @@
   &__footer {
     margin-top: 2rem;
   }
+}
+
+.modal__header {
+  display: flex;
+  width: 100%;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.modal__headline {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.modal__intro {
+  font-size: 1.25rem;
+  line-height: 1.75rem; 
+}
+
+.modal__actions {
+  flex: 1 1 auto;
+  text-align: right;
+  font-size: 0;
+  white-space: nowrap;
 }
 
 // Modal 2016
