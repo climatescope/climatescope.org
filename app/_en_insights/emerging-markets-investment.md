@@ -22,7 +22,7 @@ Since 2010, emerging markets have accounted for a larger share of global clean e
 
 * Latin America has attracted the largest and steadiest flow of investment from overseas funders, topping $3 billion every year since 2010. The region has benefited from the use of tenders for clean power delivery contracts, which provide investors greater market certainty. 
 
-* The recent slowdown is potentially troubling news for policy-makers as it comes eight years after developed nations pledged to commit $100 billion annually by 2020 to lesser developed countries to address climate change. That promise was reiterated at Paris two years ago. However, there is little to suggest that long-term goal is near to being met.
+* The recent slowdown is potentially troubling news for policy-makers as it comes eight years after developed nations pledged to commit $100 billion annually by 2020 to lesser developed countries to address climate change. That promise was reiterated at Paris two years ago. However, there is little to suggest that long-term goal is near to being met. 
 
 **Figure 1:** Clean energy asset finance in emerging markets, 2010-2016
 
