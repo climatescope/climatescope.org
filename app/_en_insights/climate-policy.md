@@ -152,14 +152,52 @@ Whatever the exact figure, a far smaller total of $41 billion was invested in cl
 
 *Source: Bloomberg New Energy Finance. Note: includes wind, solar, hydro up to 50MW, Geothermal, biomass and waste and biofuels.*
 
+Thanks to an energy reform and recent introduction of power auctions, new build renewable energy investment in Mexico jumped nearly four-fold from 2016 to 3Q 2017. In Argentina, despite little activity in prior years, investment is rising due to recent market reforms and the establishment of policy frameworks.  As of 3Q 2017, the country had attracted $1.7 billion for renewable energy plants this calendar year. That matches the total raised over the prior six years. 
+
+<b>Higher power sector emissions and unambitious targets</b>
+
+Bangladesh, Trinidad & Tobago, Turkey, Ukraine and Vietnam are Climatescope countries where over 10% of total emissions come from the power sector. But these nations have relatively unambitious emissions reduction targets. Such high power sector emissions actually present policy-makers opportunities to craft more aggressive emissions control goals. 
+
+To justify their relatively unambitious pledges on CO2 emissions, these nations have for themselves projected relatively steep rates of emissions growth under what they call BAU scenarios. These BAU lines are set so high they are easy for these countries to limbo under with the actual pledges they have made to control emissions. 
+
+Vietnam’s BAU scenario, for example, assumes that emissions will grow nearly 800% by 2030 compared to 2000 levels. The country’s unconditional target aims to limit this growth to 694% and its conditional target to 629% (Figure 10). Turkey and Lebanon predict less dramatic jumps, but still expect emissions to grow respectively 235% and 184% over the same period. This is far from our estimated trend , which suggests 449% emissions growth in Vietnam from 2000 to 2030, 107% in Turkey and 90% in Lebanon. 
+
+These comparably unambitious targets and seemingly unreasonable BAU scenarios mean that these countries barely need to take any future action to meet their NDC goals. In fact, they can do even less than they would under any reasonable BAU scenario. 
+
+Vietnam, for instance, appears to be taking this to heart. From 2011 to 2016, the country added 12GW of new coal capacity. The record year for additions (3.3GW) came in 2015 when it submitted its NDC ahead of the Paris negotiations. As of December 2016, coal accounted for a third of Vietnam’s 43.6GW capacity. Strong production from large hydro plants have depressed the coal plants' capacity factors and helped somewhat on emissions. Still, in 2016 coal represented one third of all power produced – and most of it came from plants built since the turn of the decade that stand to generate for decades to come. The country did also add 11GW of new large and small hydro capacity over that period, it should be noted, but virtually no wind or solar capacity.
+
+<b>Figure 10:</b> Emissions trends, targets and NDC BAU scenarios rebased to 100
+
+![Figure 10](/assets/images/content/insights/policy/CS2017_Climate_Figure10.jpg)
+
+*Source: International Energy Agency, UNFCCC, Climatescope. Note: Turkey does not have conditional target.*
+
+By comparison, Turkey has made somewhat more progress in diversifying its energy matrix. From 2011 to 2016 the country added 5GW of wind and 832MW of solar while implementing a package of supportive renewable energy policies. However, this has not been enough to keep pace with rapid overall growth in power demand.  As a result, the share of the country's generation from coal grew from 29% in 2015 to 34% (92TWh) in 2016 – its highest rate in six years. 
+
+<b>Figure 11:</b> Vietnam (left) and Turkey (right) capacity additions (left axis) and share of coal generation (right axis)
+
+![Figure 11](/assets/images/content/insights/policy/CS2017_Climate_Figure11.jpg)
+
+*Source: EVN, Republic of Turkey Ministry of Energy and Natural Resources, Bloomberg New Energy Finance*
+
+### <b>CASE STUDIES</b>
+
+### Latin America and Caribbean
+
+Under the submitted NDCs, Latin America and the Caribbean is the only Climatescope region which collectively would achieve absolute expected emissions cuts if its combined conditional target is met. It is also the region where renewables stand to make the biggest potential impact toward countries meeting their NDC obligations. We estimate<sup>9</sup>  that under a reasonable BAU scenario Latin America and Caribbean emissions will grow from 4,531MtCO2e in 2012  to 4,924MtCO2e in 2030 with over 15% (731MtCO2e) of this growth expected to come from the power sector. In the scenario, the region will need to cut emissions 344MtCO2e by 2030 to reach its collective unconditional target and 798 MtCO2e to achieve its collective conditional target (Figure 12). 
+
+<b>Figure 12:</b> Emissions trend and targets in Latin America and Caribbean
+
+![Figure 12](/assets/images/content/insights/policy/CS2017_Climate_Figure12.jpg)
+
+*Source: International Energy Agency, UNFCCC, Climatescope. Note: includes 26 Latin America and Caribbean countries. Trend has been derived using historical emissions from 2000 to 2012. Targets were rebased to International Energy Agency’s figures for consistency purpose.*
 
 
 
 ...
 
-![Figure 10](/assets/images/content/insights/policy/CS2017_Climate_Figure10.jpg)
-![Figure 11](/assets/images/content/insights/policy/CS2017_Climate_Figure11.jpg)
-![Figure 12](/assets/images/content/insights/policy/CS2017_Climate_Figure12.jpg)
+
+
 ![Figure 13](/assets/images/content/insights/policy/CS2017_Climate_Figure13.jpg)
 ![Figure 14](/assets/images/content/insights/policy/CS2017_Climate_Figure14.jpg)
 
@@ -174,6 +212,6 @@ ___________________________________
 <sup>5</sup>Estimate based on emissions trend calculated using historical emissions from 2000-2012.
 <sup>6</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Solar
 <sup>7</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Wind
-<sup> </sup>
-<sup> </sup>
-<sup> </sup>
+<sup>8</sup>Estimate based on 2000-2012 emissions.
+<sup>9</sup>Estimate based on emissions trend calculated using historical emissions from 2000-2012.
+<sup>10</sup>International Energy Agency. Latest data available.
