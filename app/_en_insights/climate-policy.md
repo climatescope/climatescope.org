@@ -22,6 +22,7 @@ The 2015 Paris Agreement saw virtually every nation on earth pledge to address t
 *Source: International Energy Agency, Bloomberg New Energy Finance. Note: the full list of Climatescope countries is available in the appendices.*
 
 ### <b>INTRODUCTION</b>
+## <b>INTRODUCTION</b>
 
 Climatescope is an annual project Bloomberg New Energy Finance undertakes to assess comprehensively conditions for deploying capital in emerging market nations. This year, the survey covers 71 countries in Latin America, Africa, Eastern Europe, and Asia (see appendices for full country list). A critical component of any such analysis involves understanding the policy frameworks in these nations.  Complete assessments of every Climatescope nation, including their policy regimens, will be made public on November 28, 2017 and coincide with the BNEF annual APAC Future of Energy Summit in Shanghai.
 
@@ -140,7 +141,7 @@ Using BNEF's current global benchmark capex for wind and solar, we estimate that
 
 <b>Table 1:</b> Potential power sector emissions mitigation scenarios in Climatescope countries with relatively high power sector emissions and comparably ambitious targets
 
-![Table 1](/assets/images/content/insights/policy/CS2017_Table1.jpg)
+![Table 1](/assets/images/content/insights/policy/CS2017_Table1.jpg) 
 
 *Source: International Energy Agency, IRENA, Bloomberg New Energy Finance. Note: includes Belarus, Jordan, Chile, Moldova, Mexico, Azerbaijan and Argentina.  Note: In order to arrive to the collective scenario, we have calculated each country separately, using BNEF’s benchmark capacity factor and capex for each nation/region. Solar capacity factors range from 16% to 24% and wind capacity factors range from 25% to 47%, depending on the country.*
 
