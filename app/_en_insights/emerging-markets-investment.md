@@ -275,15 +275,21 @@ The final section of this analysis presents the top providers of foreign investm
 
 ## Top international investors - overview
 
+
 ![Table 4](/assets/images/content/insights/investment/CS2017_INV_Table 4.JPG)
+
 
 ![Table 5](/assets/images/content/insights/investment/CS2017_INV_Table 5.JPG)
 
+
 ![Table 6](/assets/images/content/insights/investment/CS2017_INV_Table 6.JPG)
+
 
 ![Table 7](/assets/images/content/insights/investment/CS2017_INV_Table 7.JPG)
 
+
 ![Table 8](/assets/images/content/insights/investment/CS2017_INV_Table 8.JPG)
+
 
 ___________________________________
 _<sup>1</sup> The pledge made by wealthier countries at the Copenhagen climate talks in 2009 was to deploy $100bn per year to help poorer nations address all aspects of climate change, including both mitigation and adaptation.  That is much broader than simply clean energy finance flows.  Still, renewables stand to play a critical part in mitigation, particularly as these countries seek to grow their economies and expand their consumption of electricity._
