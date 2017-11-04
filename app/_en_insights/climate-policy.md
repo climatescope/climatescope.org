@@ -36,11 +36,31 @@ A note on methodology: The research in this note draws primarily from data that 
 
 ### <b>Ther Paris Promises</b>
 
+Among the most noteworthy achievements of the Paris Agreement was that it included virtually every developing country in the world. Between them, non-OECD nations accounted for 68% of total global CO2 emissions in 2012 (the last year for which complete data is available). China alone was responsible for a quarter of emissions and India 10%. The 71 nations surveyed for Climatescope (which included China and India, among others) serve as a useful proxy for all non-OECD nations<sup>1</sup>; between them, they account for 60% of the total GHG emissions worldwide (Figure 1). 
+
+Moreover, less developed nations are where CO2 emissions are poised to grow fastest as they encompass some of the most dynamic economies in the world. BNEF estimates in its 2016 New Energy Outlook that power sector CO2 emissions from non-OECD countries will grow by nearly a quarter by 2040. By comparison, OECD countries are expected to see their power sector emissions drop by approximately half over that same time. There is no question that implementation of emission control policies must be a cornerstone of any serious global climate change mitigation effort. 
+
+Unfortunately, however, most countries that made promises under Paris have yet to follow through by implementing meaningful domestic policies to foster emissions reductions and, in turn, bolster clean energy growth. Of 71 countries surveyed by BNEF, nearly all have submitted Nationally Determined Contributions, but just 54 (76%) have included actual emissions reduction targets and only 18% have implemented domestic laws to address climate change (Figure 2).
+
+Without such policies in place, investors are inevitably reluctant to deploy capital. The Copenhagen Accord, signed by the parties to the United Nation Framework Convention on Climate Change (UNFCCC) at COP15 in December 2009, saw developed countries promise to provide $100 billion in long-term financing annually to less developed countries to support the reduction of greenhouse gas emissions and promote adaptation to climate change. This commitment was reiterated in the 2015 Paris Agreement.
+
+At Paris, 19 Climatescope countries presented "conditional" emissions control goals explicitly predicated on the condition that wealthier countries would follow through on the $100 billion promise. Another 25 of the 71 countries essentially submitted two pledges: one "unconditional" that they planned to follow through on regardless of the $100 billion and another, more aggressive, conditional goal to be achieved only if wealthier nations provided financing.  The rest promised to follow through unconditionally – regardless of whether the $100 billion comes through (Figure 2). 
+
+<b>Figure 2:</b>Climate polices and emission reduction targets’ conditionality
+   
+![Figure 2](/assets/images/content/insights/policy/CS2017_Climate_Figure2.jpg)
+
+*Source:UNFCCC, Bloomberg New Energy Finance*
+
+In terms of the pledges themselves, the 54 nations’ emissions goals can be characterized as follows (Figure 3): 
+* <b>Absolute targets.</b> Commitments made relative to total actual emissions in a base year and therefore a commitment to an absolute reduction. Fourteen Climatescope countries submitted absolute targets. Brazil, for example, has committed to reduce its GHG emissions by 37% from 2005 levels by 2025.
+* <b>Intensity targets.</b> Commitments made relative to greenhouse emissions per unit of a country's GDP. Seven Climatescope countries submitted intensity targets. China, for example, has committed to reduce the level of GHG emissions per unit of GDP by 60-65% from 2005 levels by 2030. This would allow for a tripling of emissions from 2005 levels over the period if the economy grows by 5% a year.
+* <b>Business-as-usual targets (BAU).</b> Commitments relative to a future BAU scenario, which takes into consideration future economic and population growth. A total of 33 Climatescope countries submitted BAU targets. Côte d’Ivoire, for example, has committed to reduce GHG emissions by 28% below its BAU trajectory by 2030. This would allow for around a 150% increase in emissions from current levels.
+
 
 ...
 
-![Figure 1](/assets/images/content/insights/policy/CS2017_Climate_Figure1.jpg)
-![Figure 2](/assets/images/content/insights/policy/CS2017_Climate_Figure2.jpg)
+
 ![Figure 3](/assets/images/content/insights/policy/CS2017_Climate_Figure3.jpg)
 ![Figure 4](/assets/images/content/insights/policy/CS2017_Climate_Figure4.jpg)
 ![Figure 5](/assets/images/content/insights/policy/CS2017_Climate_Figure5.jpg)
@@ -56,3 +76,6 @@ A note on methodology: The research in this note draws primarily from data that 
 ![Table 1](/assets/images/content/insights/policy/CS2017_Table1.jpg)
 ![Table 2](/assets/images/content/insights/policy/CS2017_Table2.jpg)
 ![Table 3](/assets/images/content/insights/policy/CS2017_Table3.jpg)
+
+
+<sup>1</sup>Climatescope countries were responsible for 84% of all non-OECD emissions in 2012 and 86% of power/heat sector emissions from the non-OECD 
