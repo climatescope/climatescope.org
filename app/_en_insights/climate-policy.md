@@ -212,7 +212,7 @@ Using BNEF’s latest benchmark capex for wind and solar, we estimate that this 
 
 ![Figure 13](/assets/images/content/insights/policy/CS2017_Climate_Figure13.jpg)
 
-*Source: Bloomberg New Energy Finance.  
+*Source: Bloomberg New Energy Finance.*  
 
 ### Chile
 
