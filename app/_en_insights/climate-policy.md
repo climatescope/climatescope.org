@@ -110,8 +110,11 @@ We then sought to consider which countries may have the greatest potential to le
 The countries illustrated in Figure 7 can essentially be divided into one of four categories:
  
 <b>1.	Countries with relatively high power sector emissions and ambitious targets</b> (top right). These nations offer the greatest potential opportunity for renewables as outlined under the NDC. In each, power sector emissions account for more than 10% of overall emissions. Each has set ambitious targets of cutting emissions below BAU, which will require appropriate mitigation targets.
+
 <b>2.	Countries with relatively high power sector emissions but unambitious targets</b> (bottom right). These nations also have power sectors that account for more than 10% of overall emissions. However, potential for clean energy could be limited insofar as the national goal is concerned as the government has set a CO2 goal no better than its projected BAU. 
+
 <b>3.	Countries with low power sector emissions and unambitious targets</b> (bottom left). The power sector in these nations accounts for relatively limited emissions currently. These are also among the poorest nations surveyed under Climatescope meaning that as they grow their power sector emissions should rise. However, these nations also have unambitious CO2 control targets, suggesting that such growth could well be fueled by fossil generation. 
+
 <b>4.	Countries with low power sector emissions but ambitious targets</b> (top left). The power sector in these nations account for a relatively small share of total emissions but the country has proposed to travel an emissions path below BAU. This suggests that such improvements could come from addressing emissions from land use, land-use change and forestry (LULUCF) sectors, rather than power. 
 
 <b>Figure 7:</b> NDC targets ambitions and share of emissions from power sector by country. 
