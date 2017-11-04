@@ -274,10 +274,15 @@ Half of the Netherlands’ contribution to international investment into emergin
 The final section of this analysis presents the top providers of foreign investment into clean energy projects in emerging markets. The analysis is based on over 2300 deals BNEF tracked in across 106 emerging markets for a combined value of $162 billion. 
 
 ## Top international investors - overview
+
 ![Table 4](/assets/images/content/insights/investment/CS2017_INV_Table 4.JPG)
+
 ![Table 5](/assets/images/content/insights/investment/CS2017_INV_Table 5.JPG)
+
 ![Table 6](/assets/images/content/insights/investment/CS2017_INV_Table 6.JPG)
+
 ![Table 7](/assets/images/content/insights/investment/CS2017_INV_Table 7.JPG)
+
 ![Table 8](/assets/images/content/insights/investment/CS2017_INV_Table 8.JPG)
 
 ___________________________________
