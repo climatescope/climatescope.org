@@ -19,17 +19,22 @@ The 2015 Paris Agreement saw virtually every nation on earth pledge to address t
 * Climatescope countries with relatively low power sector emissions and the most unambitious targets included Bangladesh, Trinidad & Tobago, Turkey, Ukraine and Vietnam. In these nations, over 10% of total emissions come from the power sector. But they have relatively unambitious emissions reduction targets. Such high power sector emissions present policy-makers opportunities to craft more aggressive emissions control goals. 
 
 <b>Figure 1:</b>Climatescope countries GHG emissions and the rest of the world, 2012
+
 ![Figure 1](/assets/images/content/insights/policy/CS2017_Climate_Figure1.jpg)
+
 *Source: International Energy Agency, Bloomberg New Energy Finance. Note: the full list of Climatescope countries is available in the appendices.*
 
-###<b>Introduction</b>
+### <b>Introduction</b>
 
 Climatescope is an annual project Bloomberg New Energy Finance undertakes to assess comprehensively conditions for deploying capital in emerging market nations. This year, the survey covers 71 countries in Latin America, Africa, Eastern Europe, and Asia (see appendices for full country list). A critical component of any such analysis involves understanding the policy frameworks in these nations.  Complete assessments of every Climatescope nation, including their policy regimens, will be made public on November 28, 2017 and coincide with the BNEF annual APAC Future of Energy Summit in Shanghai.
+
 Ahead of that release, this research note takes a step back to look at the policy efforts these countries have taken collectively as a group since the Paris negotiations in 2015. Under Paris, virtually all Climatescope countries agreed to control their future CO2 emissions in one manner or another. 
+
 Specifically, we look the how the Nationally Determined Contributions interface with each country's power sector. That, in turn, gives us the opportunity to consider the role clean energy can potentially play in allowing nations to achieve their NDC goals. At the end of the note, we offer a few examples of nations that have a particularly interesting potential to leverage clean energy to address their NDC ambitions. 
+
 A note on methodology: The research in this note draws primarily from data that serves as the inputs for Climatescope's Parameter IV, which assesses country-level efforts to address greenhouse gas emissions. For Climatescope 2017, BNEF has revamped the methodology for calculating each country's Parameter IV score. That methodology will be detailed upon the project's full release at the end of November at www.global-climatescope.org.
 
-###<b>Ther Paris Promises</b>
+### <b>Ther Paris Promises</b>
 
 
 ...
