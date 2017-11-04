@@ -236,7 +236,7 @@ Our three scenarios where the 23TWh would be generated from different shares of 
 
 ![Table 3](/assets/images/content/insights/policy/CS2017_Table3.jpg)
 
-*Source: IIRENA, UNFCCC, Bloomberg New Energy Finance.*
+*Source: IRENA, UNFCCC, Bloomberg New Energy Finance.*
 
 Assuming 2017 capex levels, we estimate that this would require a total of $13.4 billion. This is actually less than the total $15 billion invested in clean energy plants in Chile 2007-2016. And, as mentioned above, with PV wind costs declining this total may dramatically shrink to around $7 billion between by 2030.
 
