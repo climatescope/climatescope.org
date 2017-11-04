@@ -56,14 +56,48 @@ In terms of the pledges themselves, the 54 nations’ emissions goals can be cha
 * <b>Absolute targets.</b> Commitments made relative to total actual emissions in a base year and therefore a commitment to an absolute reduction. Fourteen Climatescope countries submitted absolute targets. Brazil, for example, has committed to reduce its GHG emissions by 37% from 2005 levels by 2025.
 * <b>Intensity targets.</b> Commitments made relative to greenhouse emissions per unit of a country's GDP. Seven Climatescope countries submitted intensity targets. China, for example, has committed to reduce the level of GHG emissions per unit of GDP by 60-65% from 2005 levels by 2030. This would allow for a tripling of emissions from 2005 levels over the period if the economy grows by 5% a year.
 * <b>Business-as-usual targets (BAU).</b> Commitments relative to a future BAU scenario, which takes into consideration future economic and population growth. A total of 33 Climatescope countries submitted BAU targets. Côte d’Ivoire, for example, has committed to reduce GHG emissions by 28% below its BAU trajectory by 2030. This would allow for around a 150% increase in emissions from current levels.
+ 
+<b>Figure 3:</b> Climatescope countries with emissions reduction targets by type 
 
+![Figure 3](/assets/images/content/insights/policy/CS2017_Climate_Figure3.jpg)
+
+*Source: UNFCC, Bloomberg New Energy Finance. Note: includes the 71 Climatescope countries, which account for 84% of all non-OECD emissions and 60% of all emissions globally as of 2012. Countries listed as "no target" were signatories to the Paris Agreement but made no explicit commitment to rein in emissions.*
+
+Finally, with global emissions rising and the planet warming, there is the important question of how swiftly these nations have moved since the Paris conference two years ago to implement domestic policies to meet their NDC commitments. In that regard, clearly much work remains to be done. As noted, just 18% of Climatescope countries have climate laws on their books to cut emissions at home and only 28% have climate related incentives in force, such as carbon prices, carbon linked taxation or funding programs for emissions reduction. While 75% of countries have set national clean energy goals, relatively few of them have established binding mechanisms such as portfolio standards to ensure those goals are hit. 
+
+Still, there have been some bright notes in terms of domestic follow-through. Brazil, Costa Rica and Pakistan are all have taken steps at home to address climate change. Concurrent with the Paris conference, Brazil enacted its National Climate Change Policy in December 2009 in line with its goal of cutting greenhouse gas emissions 36%-39% by 2020. 
+
+Costa Rica published its *Paz con la Naturaleza* program in July 2007, committing it to becoming an entirely carbon-neutral economy by 2021. Pakistan approved in March 2017 its Climate Change Act to meet its international obligations.
+
+### <b>Clean Energy and the NDCs</b>
+
+Power and heat account for the single largest share of overall CO2 emissions in Climatescope nations at 30% (Figure 4). The vast majority of this is related to power generation, largely because most of these nations have relatively mild climates and consume relatively little heat.
+
+Power/heat is also among the sectors where emissions have risen fastest over the past decade, jumping 65% from 2003 to 2012 (Figure 4). Only emissions from industrial processes and manufacturing and construction have grown faster. Combined, however, these two categories still produce far few emissions than heat/power<sup>2</sup>.
+
+<b>Figure 4:</b> Share of total emissions by sector in Climatescope countries, 2012 (left) and 10-year emissions growth rate by sector (right)
+
+![Figure 4](/assets/images/content/insights/policy/CS2017_Climate_Figure4.jpg)
+
+*Source: International Energy Agency, Bloomberg New Energy Finance.*
+
+The rapid growth for power/heat is even more significant when compared to activity in developed markets. While over the past ten years power/heat emissions in Climatescope markets jumped twice as fast as the global average, in both the U.S. and European Union they dropped 11% during the same period (Figure 5). 
+
+<b>Figure 5:</b> Ten-year power and heat emissions growth rate by country group
+
+![Figure 5](/assets/images/content/insights/policy/CS2017_Climate_Figure5.jpg)
+
+*Source: International Energy Agency, Bloomberg New Energy Finance.*
+
+This trend is poised to continue as emerging market countries see their populations grow, economies expand and electricity access rates rise. That said, the threat posed by rising power sector emissions also presents potential opportunity. The power sector has to date proven to be the segment of the economy where the most developed countries have demonstrated they can make significant improvements on emissions. There is no reason lesser developed cannot do the same. With renewables costs dropping, there would seem to be little impeding such countries from turning to clean energy as their primary source for new generation. 
+
+### NDC ambitions
 
 ...
 
 
-![Figure 3](/assets/images/content/insights/policy/CS2017_Climate_Figure3.jpg)
-![Figure 4](/assets/images/content/insights/policy/CS2017_Climate_Figure4.jpg)
-![Figure 5](/assets/images/content/insights/policy/CS2017_Climate_Figure5.jpg)
+
+
 ![Figure 6](/assets/images/content/insights/policy/CS2017_Climate_Figure6.jpg)
 ![Figure 7](/assets/images/content/insights/policy/CS2017_Climate_Figure7.jpg)
 ![Figure 8](/assets/images/content/insights/policy/CS2017_Climate_Figure8.jpg)
@@ -77,5 +111,6 @@ In terms of the pledges themselves, the 54 nations’ emissions goals can be cha
 ![Table 2](/assets/images/content/insights/policy/CS2017_Table2.jpg)
 ![Table 3](/assets/images/content/insights/policy/CS2017_Table3.jpg)
 
-
+___________________________________
 <sup>1</sup>Climatescope countries were responsible for 84% of all non-OECD emissions in 2012 and 86% of power/heat sector emissions from the non-OECD 
+<sup>2</sup> In nearly all the Climatescope countries, heat plays an insignificant role in total emissions compared to power, given the warm climate where the vast majority of these nations are located. Thus for the sake of our analysis, we use the IEA's estimate for power/heat interchangeably when discussing power sector emissions from Climatescope countries.
