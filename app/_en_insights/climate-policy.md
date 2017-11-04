@@ -238,28 +238,28 @@ Our three scenarios where the 23TWh would be generated from different shares of 
 Assuming 2017 capex levels, we estimate that this would require a total of $13.4 billion. This is actually less than the total $15 billion invested in clean energy plants in Chile 2007-2016. And, as mentioned above, with PV wind costs declining this total may dramatically shrink to around $7 billion between by 2030.
 
 ___________________________________
-<sup>1</sup>Climatescope countries were responsible for 84% of all non-OECD emissions in 2012 and 86% of power/heat sector emissions from the non-OECD. 
+*<sup>1</sup>Climatescope countries were responsible for 84% of all non-OECD emissions in 2012 and 86% of power/heat sector emissions from the non-OECD.*
 
-<sup>2</sup>In nearly all the Climatescope countries, heat plays an insignificant role in total emissions compared to power, given the warm climate where the vast majority of these nations are located. Thus for the sake of our analysis, we use the IEA's estimate for power/heat interchangeably when discussing power sector emissions from Climatescope countries.
+*<sup>2</sup>In nearly all the Climatescope countries, heat plays an insignificant role in total emissions compared to power, given the warm climate where the vast majority of these nations are located. Thus for the sake of our analysis, we use the IEA's estimate for power/heat interchangeably when discussing power sector emissions from Climatescope countries.*
 
-<sup>3</sup>Emissions trend was calculated based on emissions from 2000 to 2012.
+*<sup>3</sup>Emissions trend was calculated based on emissions from 2000 to 2012.*
 
-<sup>4</sup>South Africa is not analyzed here because of its unique target. The country has pledged that emissions will peak, plateau and decline from 2025. This language sets the South African NDC apart from other major developing countries, as it not only specifies the timing of an emissions peak but also explicitly states that emissions will decline ‘thereafter’.
+*<sup>4</sup>South Africa is not analyzed here because of its unique target. The country has pledged that emissions will peak, plateau and decline from 2025. This language sets the South African NDC apart from other major developing countries, as it not only specifies the timing of an emissions peak but also explicitly states that emissions will decline ‘thereafter’.*
 
-<sup>5</sup>Estimate based on emissions trend calculated using historical emissions from 2000-2012.
+*<sup>5</sup>Estimate based on emissions trend calculated using historical emissions from 2000-2012.*
 
-<sup>6</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Solar.
+*<sup>6</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Solar.*
 
-<sup>7</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Wind.
+*<sup>7</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Wind.*
 
-<sup>8</sup>Estimate based on 2000-2012 emissions.
+*<sup>8</sup>Estimate based on 2000-2012 emissions.*
 
-<sup>9</sup>Estimate based on emissions trend calculated using historical emissions from 2000-2012.
+*<sup>9</sup>Estimate based on emissions trend calculated using historical emissions from 2000-2012.*
 
-<sup>10</sup>International Energy Agency. Latest data available.
+*<sup>10</sup>International Energy Agency. Latest data available.*
 
-<sup>11</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Solar.
+*<sup>11</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Solar.*
 
-<sup>12</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Wind.
+*<sup>12</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Wind.*
 
-<sup>13</sup>Estimate based on 2000-2012 emissions.
+*<sup>13</sup>Estimate based on 2000-2012 emissions.*
