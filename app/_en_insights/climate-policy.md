@@ -31,7 +31,7 @@ Specifically, we look the how the Nationally Determined Contributions interface 
 
 A note on methodology: The research in this note draws primarily from data that serves as the inputs for Climatescope's Parameter IV, which assesses country-level efforts to address greenhouse gas emissions. For Climatescope 2017, BNEF has revamped the methodology for calculating each country's Parameter IV score. That methodology will be detailed upon the project's full release at the end of November at www.global-climatescope.org.
 
-## <b>Ther Paris Promises</b>
+## <b>Ther Paris promises</b>
 
 Among the most noteworthy achievements of the Paris Agreement was that it included virtually every developing country in the world. Between them, non-OECD nations accounted for 68% of total global CO2 emissions in 2012 (the last year for which complete data is available). China alone was responsible for a quarter of emissions and India 10%. The 71 nations surveyed for Climatescope (which included China and India, among others) serve as a useful proxy for all non-OECD nations<sup>1</sup>; between them, they account for 60% of the total GHG emissions worldwide (Figure 1). 
 
@@ -66,7 +66,7 @@ Still, there have been some bright notes in terms of domestic follow-through. Br
 
 Costa Rica published its *Paz con la Naturaleza* program in July 2007, committing it to becoming an entirely carbon-neutral economy by 2021. Pakistan approved in March 2017 its Climate Change Act to meet its international obligations.
 
-### <b>Clean Energy and the NDCs</b>
+### <b>Clean energy and the NDCs</b>
 
 Power and heat account for the single largest share of overall CO2 emissions in Climatescope nations at 30% (Figure 4). The vast majority of this is related to power generation, largely because most of these nations have relatively mild climates and consume relatively little heat.
 
@@ -180,7 +180,7 @@ By comparison, Turkey has made somewhat more progress in diversifying its energy
 
 *Source: EVN, Republic of Turkey Ministry of Energy and Natural Resources, Bloomberg New Energy Finance*
 
-## <b>Case Studies</b>
+## <b>Case studies</b>
 
 ### Latin America and Caribbean
 
