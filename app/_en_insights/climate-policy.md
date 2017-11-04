@@ -93,24 +93,87 @@ This trend is poised to continue as emerging market countries see their populati
 
 ### NDC ambitions
 
-...
+Given the many varieties of the pledges submitted as part of Paris, assessing the ambition of any one nation's emissions control goals is unfortunately a somewhat subjective exercise. However, it is worth undertaking when considering what tools countries might use to achieve their overall goals. 
 
+To start, we have compared each country’s projected emissions trajectory should it follow recent trends<sup>3</sup> with its stated targets in absolute amounts. The wider the gap between projected growth and target growth, the more ambitious the NDC goal. For instance, Mexico committed to unconditionally to cut greenhouse gas (GHG) emissions by 25% below a BAU scenario by 2030 they themselves projected and to a further conditional emissions cut as deep as 40%, subject to international financial and technological support. In absolute amounts this will result in a 37% emissions rise from baseline year 2000 to target year 2030 for the unconditional target and a 10% rise under the conditional target (Figure 6). However, the country's projected actual emissions path suggests a 61% rise over the same period. Mexico’s targets can thus be regarded as comparatively ambitious and will require some mitigation actions to come to fruition.
 
-
+<b>Figure 6:</b> Projected Mexico emissions vs. its NDC target, rebased to the year 2000
 
 ![Figure 6](/assets/images/content/insights/policy/CS2017_Climate_Figure6.jpg)
+
+*Source: UNFCCC, Bloomberg New Energy Finance. Note: emissions rebased to 1 for illustrative purposes. BNEF forecasts future emissions based on the average emissions growth rate seen from 2000 to 2012, the last year for which complete data exists.*
+
+### Ambitions vs. opportunities
+
+We then sought to consider which countries may have the greatest potential to leverage clean energy to meet their CO2 goals. To do this, we examined the share each country's power sector-related CO2 emissions account for compared to its total emissions. We then compared this to the relative ambition levels of each country's overall CO2 control plans we previously calculated. 
+
+The countries illustrated in Figure 7 can essentially be divided into one of four categories:
+ 
+<b>1.	Countries with relatively high power sector emissions and ambitious targets</b> (top right). These nations offer the greatest potential opportunity for renewables as outlined under the NDC. In each, power sector emissions account for more than 10% of overall emissions. Each has set ambitious targets of cutting emissions below BAU, which will require appropriate mitigation targets.
+<b>2.	Countries with relatively high power sector emissions but unambitious targets</b> (bottom right). These nations also have power sectors that account for more than 10% of overall emissions. However, potential for clean energy could be limited insofar as the national goal is concerned as the government has set a CO2 goal no better than its projected BAU. 
+<b>3.	Countries with low power sector emissions and unambitious targets</b> (bottom left). The power sector in these nations accounts for relatively limited emissions currently. These are also among the poorest nations surveyed under Climatescope meaning that as they grow their power sector emissions should rise. However, these nations also have unambitious CO2 control targets, suggesting that such growth could well be fueled by fossil generation. 
+<b>4.	Countries with low power sector emissions but ambitious targets</b> (top left). The power sector in these nations account for a relatively small share of total emissions but the country has proposed to travel an emissions path below BAU. This suggests that such improvements could come from addressing emissions from land use, land-use change and forestry (LULUCF) sectors, rather than power. 
+
+<b>Figure 7:</b> NDC targets ambitions and share of emissions from power sector by country. 
+
 ![Figure 7](/assets/images/content/insights/policy/CS2017_Climate_Figure7.jpg)
+
+*Source: International Energy Agency, UNFCCC, Climatescope. Note: Includes select Climatescope countries. When available, conditional target was used to calculate NDC target ambition. Bubble size refers to emissions from power/heat sector.*
+
+Countries that fall into quadrants three and four above present relatively limited opportunities for clean energy in terms of meeting overall country NDC goals. By contrast those in quadrants one and two offer real promise and are worth examining in greater detail.
+
+<b>Higher power sector emissions and ambitious targets</b>
+
+Azerbaijan, Argentina, Belarus, Chile, Mexico and Moldova are among the Climatescope countries where NDC targets present the greatest opportunities for renewable energy<sup>4</sup>.Together, these countries emitted a total of 1,438MtCO2e in 2012, 24% (350MtCO2e) of which came from the power/heat sector. Based on an emissions growth since 2000<sup>5</sup>, this figure will grow respectively to 1,853MtCO2e and 478MtCOe by 2030. These countries must collectively limit emissions to 1,579MtCO2e to achieve their unconditional targets and 1,131MtCO2e to achieve their conditional targets. Compared to the emissions trend, this implies reductions of 15% (277MtCO2e) and 39% (725MtCO2e), respectively (Figure 8).
+
+<b>Figure 8:</b> Emissions trends for Climatescope countries with relatively high power sector emissions and comparably ambitious targets
+
 ![Figure 8](/assets/images/content/insights/policy/CS2017_Climate_Figure8.jpg)
+
+*Source: International Energy Agency, UNFCCC, Climatescope. Note: Includes Azerbaijan, Argentina, Belarus, Chile, Mexico and Moldova. Note: Trend has been derived using historical emissions from 2000 to 2012. Targets were rebased to International Energy Agency’s figures for consistency purpose.*
+
+In effect, these nations could collectively achieve their unconditional targets by mitigating emissions from their electricity sectors alone. In terms of domestic policy-making, that means that measures intended to favor new clean energy development over fossil build, or to accelerate retirement of fossil assets could see them through to meeting their goals. Based on current share of thermal generation technologies, we estimate this could be done by avoiding 53MtCO2e from coal generation, 175MtCO2e from gas and 49MtCO2e from oil. This represents around 482TWh that would need to be replaced by zero-carbon generation.
+
+We have considered three scenarios (Table 1) under which that 482TWh in future demand would be met by different shares of solar and wind generation. In Scenario 1, the displaced fossil generation would be replaced equally by solar and wind generation. These countries would thus need to build a total 148GW of new solar capacity and 82GW of wind (for more details on specific country scenarios, see Case Studies below).
+
+Using BNEF's current global benchmark capex for wind and solar, we estimate that this would require a total of $314 billion. However, BNEF estimates that PV costs will drop around 40%<sup>6</sup> and wind capex could drop by approximately 9% from 2017 to 2030 . Therefore this could dramatically shrink to $234 billion by 2030.
+
+<b>Table 1:</b> Potential power sector emissions mitigation scenarios in Climatescope countries with relatively high power sector emissions and comparably ambitious targets
+
+![Table 1](/assets/images/content/insights/policy/CS2017_Table1.jpg)
+
+*Source: International Energy Agency, IRENA, Bloomberg New Energy Finance. Note: includes Belarus, Jordan, Chile, Moldova, Mexico, Azerbaijan and Argentina.  Note: In order to arrive to the collective scenario, we have calculated each country separately, using BNEF’s benchmark capacity factor and capex for each nation/region. Solar capacity factors range from 16% to 24% and wind capacity factors range from 25% to 47%, depending on the country.*
+
+Whatever the exact figure, a far smaller total of $41 billion was invested in clean energy in these countries from 2007 to 2016. Mexico and Chile were the leaders among these nations, recording $19 billion and $15 billion apiece, respectively. The higher level of investment is in no small part due to clear, effective policy frameworks in these countries. Argentina, Jordan, Belarus and Azerbaijan together have received only $6 billion to date. 
+
+<b>Figure 9:</b> New build renewable energy investment
+
 ![Figure 9](/assets/images/content/insights/policy/CS2017_Climate_Figure9.jpg)
+
+*Source: Bloomberg New Energy Finance. Note: includes wind, solar, hydro up to 50MW, Geothermal, biomass and waste and biofuels.*
+
+
+
+
+...
+
 ![Figure 10](/assets/images/content/insights/policy/CS2017_Climate_Figure10.jpg)
 ![Figure 11](/assets/images/content/insights/policy/CS2017_Climate_Figure11.jpg)
 ![Figure 12](/assets/images/content/insights/policy/CS2017_Climate_Figure12.jpg)
 ![Figure 13](/assets/images/content/insights/policy/CS2017_Climate_Figure13.jpg)
 ![Figure 14](/assets/images/content/insights/policy/CS2017_Climate_Figure14.jpg)
-![Table 1](/assets/images/content/insights/policy/CS2017_Table1.jpg)
+
 ![Table 2](/assets/images/content/insights/policy/CS2017_Table2.jpg)
 ![Table 3](/assets/images/content/insights/policy/CS2017_Table3.jpg)
 
 ___________________________________
-<sup>1</sup>Climatescope countries were responsible for 84% of all non-OECD emissions in 2012 and 86% of power/heat sector emissions from the non-OECD 
-<sup>2</sup> In nearly all the Climatescope countries, heat plays an insignificant role in total emissions compared to power, given the warm climate where the vast majority of these nations are located. Thus for the sake of our analysis, we use the IEA's estimate for power/heat interchangeably when discussing power sector emissions from Climatescope countries.
+<sup>1</sup>Climatescope countries were responsible for 84% of all non-OECD emissions in 2012 and 86% of power/heat sector emissions from the non-OECD. 
+<sup>2</sup>In nearly all the Climatescope countries, heat plays an insignificant role in total emissions compared to power, given the warm climate where the vast majority of these nations are located. Thus for the sake of our analysis, we use the IEA's estimate for power/heat interchangeably when discussing power sector emissions from Climatescope countries.
+<sup>3</sup>Emissions trend was calculated based on emissions from 2000 to 2012.
+<sup>4</sup>South Africa is not analyzed here because of its unique target. The country has pledged that emissions will peak, plateau and decline from 2025. This language sets the South African NDC apart from other major developing countries, as it not only specifies the timing of an emissions peak but also explicitly states that emissions will decline ‘thereafter’.
+<sup>5</sup>Estimate based on emissions trend calculated using historical emissions from 2000-2012.
+<sup>6</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Solar
+<sup>7</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Wind
+<sup> </sup>
+<sup> </sup>
+<sup> </sup>
