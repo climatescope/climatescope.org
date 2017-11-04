@@ -237,6 +237,19 @@ Our three scenarios where the 23TWh would be generated from different shares of 
 
 Assuming 2017 capex levels, we estimate that this would require a total of $13.4 billion. This is actually less than the total $15 billion invested in clean energy plants in Chile 2007-2016. And, as mentioned above, with PV wind costs declining this total may dramatically shrink to around $7 billion between by 2030.
 
+### Appendix - Climatescope 2017 countries
+
+<b>Africa:</b> Botswana, Cameroon, Congo (Dem. Rep), Cote d'Ivoire, Ethiopia, Ghana, Kenya, Liberia, Malawi, Mozambique, Nigeria, Rwanda
+Senegal, Sierra Leone, South Africa, Tanzania, Uganda, Zambia, Zimbabwe.
+
+<b>Asia:</b> Armenia, Azerbaijan, Bangladesh, China, India, Indonesia, Kazakhstan, Kyrgyzstan, Mongolia, Myanmar, Nepal, Pakistan, Sri Lanka, Tajikistan, Turkmenistan, Uzbekistan, Vietnam.
+
+<b>Europe:</b>Belarus, Georgia, Moldova, Russia, Turkey, Ukraine.
+
+<b>Latin American and the Caribbean:</b> Argentina, Bahamas, Barbados, Belize, Bolivia, Brazil, Chile, Colombia,Costa Rica, Dominican Republic, Ecuador, El Salvador, Guatemala, Guyana, Haiti, Honduras, Jamaica, Mexico, Nicaragua, Panama, Paraguay, Peru, Suriname, Trinidad & Tobago, Uruguay, Venezuela.
+
+<b>Middle East:</b> Egypt, Jordan, Lebanon.
+
 ___________________________________
 *<sup>1</sup>Climatescope countries were responsible for 84% of all non-OECD emissions in 2012 and 86% of power/heat sector emissions from the non-OECD.*
 
