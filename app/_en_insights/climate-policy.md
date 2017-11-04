@@ -18,13 +18,13 @@ The 2015 Paris Agreement saw virtually every nation on earth pledge to address t
 * Latin America and the Caribbean is the only Climatescope region which would achieve absolute expected emissions cuts if its collective conditional target is met. It is also the region where renewables stand to make the biggest potential impact toward countries meeting their NDC obligations.
 * Climatescope countries with relatively low power sector emissions and the most unambitious targets included Bangladesh, Trinidad & Tobago, Turkey, Ukraine and Vietnam. In these nations, over 10% of total emissions come from the power sector. But they have relatively unambitious emissions reduction targets. Such high power sector emissions present policy-makers opportunities to craft more aggressive emissions control goals. 
 
-<b>Figure 1:</b>Climatescope countries GHG emissions and the rest of the world, 2012
+<b>Figure 1:</b> Climatescope countries GHG emissions and the rest of the world, 2012
 
 ![Figure 1](/assets/images/content/insights/policy/CS2017_Climate_Figure1.jpg)
 
 *Source: International Energy Agency, Bloomberg New Energy Finance. Note: the full list of Climatescope countries is available in the appendices.*
 
-### <b>Introduction</b>
+### <b>INTRODUCTION</b>
 
 Climatescope is an annual project Bloomberg New Energy Finance undertakes to assess comprehensively conditions for deploying capital in emerging market nations. This year, the survey covers 71 countries in Latin America, Africa, Eastern Europe, and Asia (see appendices for full country list). A critical component of any such analysis involves understanding the policy frameworks in these nations.  Complete assessments of every Climatescope nation, including their policy regimens, will be made public on November 28, 2017 and coincide with the BNEF annual APAC Future of Energy Summit in Shanghai.
 
@@ -46,11 +46,11 @@ Without such policies in place, investors are inevitably reluctant to deploy cap
 
 At Paris, 19 Climatescope countries presented "conditional" emissions control goals explicitly predicated on the condition that wealthier countries would follow through on the $100 billion promise. Another 25 of the 71 countries essentially submitted two pledges: one "unconditional" that they planned to follow through on regardless of the $100 billion and another, more aggressive, conditional goal to be achieved only if wealthier nations provided financing.  The rest promised to follow through unconditionally – regardless of whether the $100 billion comes through (Figure 2). 
 
-<b>Figure 2:</b>Climate polices and emission reduction targets’ conditionality
+<b>Figure 2:</b> Climate polices and emission reduction targets’ conditionality
    
 ![Figure 2](/assets/images/content/insights/policy/CS2017_Climate_Figure2.jpg)
 
-*Source:UNFCCC, Bloomberg New Energy Finance*
+*Source: UNFCCC, Bloomberg New Energy Finance*
 
 In terms of the pledges themselves, the 54 nations’ emissions goals can be characterized as follows (Figure 3): 
 * <b>Absolute targets.</b> Commitments made relative to total actual emissions in a base year and therefore a commitment to an absolute reduction. Fourteen Climatescope countries submitted absolute targets. Brazil, for example, has committed to reduce its GHG emissions by 37% from 2005 levels by 2025.
@@ -69,7 +69,7 @@ Still, there have been some bright notes in terms of domestic follow-through. Br
 
 Costa Rica published its *Paz con la Naturaleza* program in July 2007, committing it to becoming an entirely carbon-neutral economy by 2021. Pakistan approved in March 2017 its Climate Change Act to meet its international obligations.
 
-### <b>Clean Energy and the NDCs</b>
+### <b>CLEAN ENERGY AND THE NDCS</b>
 
 Power and heat account for the single largest share of overall CO2 emissions in Climatescope nations at 30% (Figure 4). The vast majority of this is related to power generation, largely because most of these nations have relatively mild climates and consume relatively little heat.
 
