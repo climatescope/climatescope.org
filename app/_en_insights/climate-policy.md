@@ -192,17 +192,50 @@ Under the submitted NDCs, Latin America and the Caribbean is the only Climatesco
 
 *Source: International Energy Agency, UNFCCC, Climatescope. Note: includes 26 Latin America and Caribbean countries. Trend has been derived using historical emissions from 2000 to 2012. Targets were rebased to International Energy Agency’s figures for consistency purpose.*
 
+Most notably, this means Latin America and the Caribbean can collectively achieve its unconditional target by mitigating emissions from the electricity sector alone. Based on current share of thermal generation technologies, we estimate that these countries could achieve the goal by mitigating around 128MtCO2e from oil generation, 122MtCO2e from gas and 95MtCO2e from coal, which represent around 506TWh generation per year. 
 
+We have considered three scenarios under which that 506TWh in future demand would be met by different shares of solar and wind capacity. In Scenario 1, the displaced fossil generation would be met equally by solar and wind generation, and these countries would need to build a total of 138GW of solar plants and 85GW of wind. This is eight times the region’s current wind capacity and 39 times the solar capacity as of December 2016.
 
-...
-
-
-
-![Figure 13](/assets/images/content/insights/policy/CS2017_Climate_Figure13.jpg)
-![Figure 14](/assets/images/content/insights/policy/CS2017_Climate_Figure14.jpg)
+<b>Table 2:</b> Power sector emissions mitigation scenarios in Latin America and the Caribbean  
 
 ![Table 2](/assets/images/content/insights/policy/CS2017_Table2.jpg)
+
+*Source: International Energy Agency, Bloomberg New Energy Finance. Note: includes 26 Latin America and Caribbean countries.*
+
+Using BNEF’s latest benchmark capex for wind and solar, we estimate that this would require a total of $348 billion. However, BNEF estimates that PV costs will drop around 40%<sup>11</sup> and wind capex could potentially fall 9% from 2017 to 2030 , therefore this could dramatically shrink to $256 billion by 2030<sup>12</sup>. However, it is still two-fold the $130 billion invested in clean energy in Latin America and Caribbean from 2007 to 2016.
+
+
+<b>Figure 13:</b> Latin America and Caribbean new build renewable energy investment
+
+![Figure 13](/assets/images/content/insights/policy/CS2017_Climate_Figure13.jpg)
+
+*Source: Bloomberg New Energy Finance.  
+
+### Chile
+
+In September 2015, Chile submitted its NDC to the UN, committing unconditionally to cut greenhouse gas (GHG) emissions intensity per unit of GDP by 30% from 2007 levels by 2030.
+
+The country committed to a further conditional reduction in GHG/emissions intensity. Specifically, it pledged to improve its GDP/emissions by 35-45% by 2030 if it received sufficient support from wealthier nations. In 2007 the country emitted a total of 124MtCO2e and we estimate<sup>13</sup> that would rise to 213MtCO2e by 2030. 
+
+Assuming a 3% annual increase in GDP, the country would need to limit emissions to 190MtCO2e to achieve its unconditional target and to 163MtCO2e to achieve its conditional target. This implies cutting 23MtCO2e to 50MtCO2e versus the emissions trend, respectively. 
+
+Like the Latin America and Caribbean region as a whole, Chile could potentially achieve its unconditional target entirely by mitigating emissions from its electricity sector. We estimate that the country can achieve this goal by avoiding 23MtCO2e from coal, the equivalent of 70% of the power generated from the source in 2016 (23TWh).  
+
+<b>Figure 14:</b> Chile’s emissions trend and targets
+
+![Figure 14](/assets/images/content/insights/policy/CS2017_Climate_Figure14.jpg)
+ 
+*Source: International Energy Agency, UNFCCC, Climatescope. Note: does not include emissions from LULUCF in accordance to Chile’s target. Targets assume a 3% annual increase in GDP.*
+
+Our three scenarios where the 23TWh would be generated from different shares of solar and wind capacity are in Table 3. Under Scenario 1 where the displaced fossil generation would be equally replaced by solar and wind, Chile would need to build 5GW of solar plants and 3GW of wind. This is five times the country’s solar capacity and three times the wind capacity as of December 2016.
+
+<b>Table 3:</b> Chile’s power sector emissions mitigation scenarios – unconditional target
+
 ![Table 3](/assets/images/content/insights/policy/CS2017_Table3.jpg)
+
+*Source: IIRENA, UNFCCC, Bloomberg New Energy Finance.*
+
+Assuming 2017 capex levels, we estimate that this would require a total of $13.4 billion. This is actually less than the total $15 billion invested in clean energy plants in Chile 2007-2016. And, as mentioned above, with PV wind costs declining this total may dramatically shrink to around $7 billion between by 2030.
 
 ___________________________________
 <sup>1</sup>Climatescope countries were responsible for 84% of all non-OECD emissions in 2012 and 86% of power/heat sector emissions from the non-OECD. 
@@ -210,8 +243,11 @@ ___________________________________
 <sup>3</sup>Emissions trend was calculated based on emissions from 2000 to 2012.
 <sup>4</sup>South Africa is not analyzed here because of its unique target. The country has pledged that emissions will peak, plateau and decline from 2025. This language sets the South African NDC apart from other major developing countries, as it not only specifies the timing of an emissions peak but also explicitly states that emissions will decline ‘thereafter’.
 <sup>5</sup>Estimate based on emissions trend calculated using historical emissions from 2000-2012.
-<sup>6</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Solar
-<sup>7</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Wind
+<sup>6</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Solar.
+<sup>7</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Wind.
 <sup>8</sup>Estimate based on 2000-2012 emissions.
 <sup>9</sup>Estimate based on emissions trend calculated using historical emissions from 2000-2012.
 <sup>10</sup>International Energy Agency. Latest data available.
+<sup>11</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Solar.
+<sup>12</sup>Bloomberg New Energy Finance’s New Energy Outlook 2017: Wind.
+<sup>13</sup>Estimate based on 2000-2012 emissions.
