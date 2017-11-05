@@ -83,7 +83,7 @@ The rapid growth for power/heat is even more significant when compared to activi
 ![Figure 5](/assets/images/content/insights/policy/CS2017_Climate_Figure5.jpg)
 <small>*Source: International Energy Agency, Bloomberg New Energy Finance.*</small>
 
-This trend is poised to continue as emerging market countries see their populations grow, economies expand and electricity access rates rise. That said, the threat posed by rising power sector emissions also presents potential opportunity. The power sector has to date proven to be the segment of the economy where the most developed countries have demonstrated they can make significant improvements on emissions. There is no reason lesser developed cannot do the same. <small>ith renewables costs dropping, there would seem to be little impeding such countries from turning to clean energy as their primary source for new generation. </small>
+This trend is poised to continue as emerging market countries see their populations grow, economies expand and electricity access rates rise. That said, the threat posed by rising power sector emissions also presents potential opportunity. The power sector has to date proven to be the segment of the economy where the most developed countries have demonstrated they can make significant improvements on emissions. There is no reason lesser developed cannot do the same. With renewables costs dropping, there would seem to be little impeding such countries from turning to clean energy as their primary source for new generation. 
 
 ### NDC ambitions
 
