@@ -49,7 +49,9 @@ At Paris, 19 Climatescope countries presented "conditional" emissions control go
 
 In terms of the pledges themselves, the 54 nations’ emissions goals can be characterized as follows (Figure 3): 
 * <b>Absolute targets.</b> Commitments made relative to total actual emissions in a base year and therefore a commitment to an absolute reduction. Fourteen Climatescope countries submitted absolute targets. Brazil, for example, has committed to reduce its GHG emissions by 37% from 2005 levels by 2025.
+
 * <b>Intensity targets.</b> Commitments made relative to greenhouse emissions per unit of a country's GDP. Seven Climatescope countries submitted intensity targets. China, for example, has committed to reduce the level of GHG emissions per unit of GDP by 60-65% from 2005 levels by 2030. This would allow for a tripling of emissions from 2005 levels over the period if the economy grows by 5% a year.
+
 * <b>Business-as-usual targets (BAU).</b> Commitments relative to a future BAU scenario, which takes into consideration future economic and population growth. A total of 33 Climatescope countries submitted BAU targets. Côte d’Ivoire, for example, has committed to reduce GHG emissions by 28% below its BAU trajectory by 2030. This would allow for around a 150% increase in emissions from current levels.
  
 <b>Figure 3:</b> Climatescope countries with emissions reduction targets by type 
