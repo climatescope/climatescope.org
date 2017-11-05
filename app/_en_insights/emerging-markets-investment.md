@@ -25,7 +25,6 @@ Since 2010, emerging markets have accounted for a larger share of global clean e
 * The recent slowdown is potentially troubling news for policy-makers as it comes eight years after developed nations pledged to commit $100 billion annually by 2020 to lesser developed countries to address climate change. That promise was reiterated at Paris two years ago. However, there is little to suggest that long-term goal is near to being met. 
 
 **Figure 1:** Clean energy asset finance in emerging markets, 2010-2016
-
 ![Figure 1](/assets/images/content/insights/investment/CS2017_INV_Fig1.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
@@ -33,12 +32,10 @@ Since 2010, emerging markets have accounted for a larger share of global clean e
 Since 2010, developing countries have collectively accounted for a larger share than wealthier countries of clean energy asset finance, a category that includes capital for wind, solar, geothermal, biomass and small hydro projects. Given that the majority of clean energy investment in any year is asset finance, these nations have effectively spearheaded overall growth in the sector for some time (Figure 2). China has recently become the global center of gravity for such activity, accounting for over a third of all such investment recorded from 2010-2016 (Figure 3).
 
 **Figure 2:** Clean energy asset finance
-
 ![Figure 2](/assets/images/content/insights/investment/CS2017_INV_Fig2.JPG)
 <small>_Source: Bloomberg New Energy Finance. Note: “Rest of the world” includes OECD nations minus Chile, Mexico and Turkey which are accounted for in “Other emerging markets”._</small>
 
 **Figure 3:** Emerging market clean energy investment
-
 ![Figure 3](/assets/images/content/insights/investment/CS2017_INV_Fig3.JPG)
 <small>_Source: Bloomberg New Energy Finance. Note: Public markets represent funds raised over public exchanges. VCPE is venture capital and private equity.  Asset finance is capital raised for both large- and small-scale new energy projects._</small>
 
@@ -55,12 +52,10 @@ Still, total construction costs (capex) in emerging markets tend to be higher th
 In fact, capex costs vary massively across emerging markets (Figure 4) and this wide range is likely to remain for some time as the number of countries recording regular and significant levels of clean energy investment remains relatively low (Figure 5). In any given year since 2010, no more than 27 developing countries have seen over $100 million invested into clean energy out of the 106 reviewed in this analysis. Less than half have recorded more than $500 million of clean energy investment cumulatively over 2010-2016. That $100 million is approximately enough to build one typical medium to large onshore wind or PV project. Such results suggest most developing countries have yet to attract consistent volumes of capital to scale their local clean energy sectors, achieve economies of scale, and drive down costs in the way that wealthier nations have to date.
 
 **Figure 4:** PV and onshore wind capex in developing countries
-
 ![Figure 4](/assets/images/content/insights/investment/CS2017_INV_Fig4.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
 **Figure 5:** Developing countries by asset finance volumes 
-
 ![Figure 5](/assets/images/content/insights/investment/CS2017_INV_Fig5.JPG)
 <small>_Source: Bloomberg New Energy Finance. Note: Chart depicts the total number of nations that were able to secure certain thresholds of financing in given years._</small>
 
@@ -68,12 +63,10 @@ In fact, capex costs vary massively across emerging markets (Figure 4) and this 
 As discussed, China accounts for the lion’s share of clean energy asset finance in developing countries in any given year and the country attracted 63% of all such capital over the last decade (Figure 2 and Figure 6). But others have generated significant investment as well. Brazil, India and Turkey have all recorded at least $1 billion of investment in new asset finance every year over the last ten (Figure 7). Mexico and South Africa, which complete the top six, saw more patchy investment in line with cycles in government policy or integration challenges. South Africa attracted $5.4 billion of new investment on the back of its clean energy auction program in 2012. This year, Mexico is on pace for a record having generated $3.7 billion of investment in just the first six months into 2017.
 
 **Figure 6:** Clean energy asset finance in China
-
 ![Figure 6](/assets/images/content/insights/investment/CS2017_INV_Fig6.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
 **Figure 7:** Clean energy asset finance in the next five largest emerging markets
-
 ![Figure 7](/assets/images/content/insights/investment/CS2017_INV_Fig7.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
@@ -87,7 +80,6 @@ A major difference between China and most other developing countries is that it 
 Considerably more opportunities exist for investors to deploy capital into developing nations, however. In fact, it is not uncommon for foreign capital to account for the majority of funds deployed in certain emerging markets (Figure 8). Pakistan, Jordan, and Kenya in particular have all successfully attracted the interest of international financiers in recent years.
 
 **Figure 8:** Top 30 emerging markets that attracted the largest share of foreign clean energy investment, 2010-2016
-
 ![Figure 8](/assets/images/content/insights/investment/CS2017_INV_Fig8.JPG)
 <small>_Source: Bloomberg New Energy Finance. Note: top 30 of 106 emerging markets surveyed._</small>
 
@@ -100,7 +92,6 @@ Bridging the gap between development finance and commercial finance are speciali
 Meanwhile, the largest clean energy markets can be attractive to international utilities as these are most likely to have well established renewables policies and the right wider power sector dynamics, and tend to see more equity investment. International utilities will typically partly fund projects through their balance sheets and secure debt at the corporate level or through dedicated funds with a more or less direct link to the project portfolio. Increasingly, utilities are seeking to tap the interest of institutional investors and other actors with a long-term, low-risk investment profile to sell on assets that have been commissioned while continuing to operate them (provided the market they are in appears stable enough to warrant this strategy).
 
 **Table 1:** General emerging market foreign investment profiles by investor type and market risk
-
 ![Table 1](/assets/images/content/insights/investment/CS2017_INV_Table1.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
@@ -114,7 +105,6 @@ Supporting renewables deployment in emerging markets is all the more crucial as 
 Since 2010, fossil fuel capacity additions have consistently topped clean energy adds in emerging markets though the gap has generally been shrinking (Figure 9). Meanwhile, developed economies have added more non-emitting generating capacity than fossil capacity every year over that period.
 
 **Figure 9:** Net new carbon-neutral power generating capacity additions
-
 ![Figure 9](/assets/images/content/insights/investment/CS2017_INV_Fig9.JPG)
 <small>_Source: Bloomberg New Energy Finance. Note: carbon neutral generation includes renewables plus large hydro and nuclear generation capacity._</small>
 
@@ -125,7 +115,6 @@ The most developed countries (referred hereafter as OECD countries) accounted fo
 This 25 percent drop is deeper than the 18 percent fall for all clean energy investment recorded globally. In both cases, the declines are partly explained by falling per-unit costs for renewables (lower priced PV modules and wind turbines, primarily). But the vast majority of developing countries have not scaled clean energy deployment sufficiently to enjoy the full benefits of these lower costs.  Moreover, with their incomplete or inadequate power grids and with millions of their citizens lacking complete energy access, their need for new generating capacity remains acute.
 
 **Figure 10:** Clean energy financing for projects in developing countries, by source
-
 ![Figure 10](/assets/images/content/insights/investment/CS2017_INV_Fig10.JPG)
 <small>_Source: Bloomberg New Energy Finance. Note: OECD includes all OECD members including Chile, Turkey and Mexico which also belong to the “emerging markets” in other charts._</small>
 
@@ -138,7 +127,6 @@ The 106 developing nations reviewed for this survey represent extreme diversity 
 Latin America as a region has attracted the largest and steadiest flow of clean energy investment from overseas funders (Figure 11). The region has recorded in excess of $3 billion every year since 2010. Half of the 21 countries with clean energy investment in Latin America attracted foreign investment in at least seven of the last ten years, accounting for 95 percent of the $43.4 billion of international finance flowing into the region over the period. 
 
 **Figure 11:** Foreign clean energy project capital deployed, by destination
-
 ![Figure 11](/assets/images/content/insights/investment/CS2017_INV_Fig11.JPG)
 <small>_Source: Bloomberg New Energy Finance. Note: includes only asset (project) financings_</small>
 
@@ -149,7 +137,6 @@ Latin America has been a trailblazer in the design and implementation of tenders
 The region’s strong overall performance does hide significant varied activity levels among countries, however. In Brazil, Chile, Honduras, Uruguay and Peru clean energy investment slowed in 2016 from 2015 levels. However, other countries have more recently picked up the baton, most notably Mexico.
 
 **Figure 12:** International clean energy asset finance by region
-
 ![Figure 12](/assets/images/content/insights/investment/CS2017_INV_Fig12.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
@@ -167,7 +154,6 @@ Non-EU Europe investment activity has been slow. Turkey is the largest renewable
 In line with regional trends, Brazil, Chile and Mexico are among the countries that have attracted the most foreign investment from overseas financiers since 2010 (Table 2).
 
 **Table 2:** Top destination countries for foreign investment in clean energy asset finance 
-
 ![Table 2](/assets/images/content/insights/investment/CS2017_INV_Table2.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
@@ -188,14 +174,12 @@ Pakistan has benefited from China’s ambition to become one of the largest infr
 The origin of international clean energy asset finance flows into emerging markets is highly diverse. BNEF tracked investments originating from 77 countries into the 106 markets surveyed in this analysis, linking back to where the organization’s corporate or other parent is domiciled. The European Union collectively represents the largest foreign source of investment into emerging markets clean energy projects, accounting for just over 40% of the flows recorded 2010-2016 (Figure 13). This outweighs its share of global GDP which stood at 22.8% in 2016, according to the International Monetary Fund. By comparison, the U.S. accounted for 10% of international investments into renewables in emerging markets but represented 24.7% of world GDP.  Asia is the second largest originator of investments led by the China-Japan duo ($5 billion each) and the Singapore and Hong Kong financial centers.
 
 **Figure 13:** International clean energy asset finance in emerging markets by origin
-
 ![Figure 13](/assets/images/content/insights/investment/CS2017_INV_Fig13.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
 Private sources of money accounted for twice as much non-domestic clean energy asset finance in emerging markets as public sources (Figure 14), led by high contributions from utilities and project developers (19% and 17% of investment respectively 2010-2016).Private equity firms are the largest source of capital from the non-concessionary finance community as they tend to have a higher risk appetite and be more specialized than commercial banks and insurance firms. Investment from renewable energy equipment makers and large non-energy sector companies was patchier over the period, accounting for 10%.
 
 **Figure 14:** International clean energy asset finance in emerging markets by investor type
-
 ![Figure 14](/assets/images/content/insights/investment/CS2017_INV_Fig14.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
@@ -205,21 +189,18 @@ Funding from all public sources jointly account for 34% of international clean e
 Development finance plays an important role in the funding of clean energy assets in developing countries and accounted for around a third of all international flows from 2010-2016. The goal of development finance is to deliver capital where commercial banks and others will not venture. Development institutions today are by far the largest providers of finance to clean energy projects in the world’s least developed economies (Figure 14 and Figure 15).
 
 **Figure 15:** International sources of developing country clean energy asset finance by country classification
-
 ![Figure 15](/assets/images/content/insights/investment/CS2017_INV_Fig15.JPG)
 <small>_Source: Bloomberg New Energy Finance. Note: income group classification from World Bank_</small>
 
 However, it is important to note that the very diverse group of development finance institutions (62 tracked in this analysis, Figure 16) offer investment under different conditionality and terms of reference, and that their prime purpose is to offer debt, not equity capital, in markets where it is either too costly or entirely unavailable. National development banks will also often support projects that involve companies of their country or align with its diplomatic priorities.
 
 **Figure 16:** Development bank clean energy asset finance in developing countries
-
 ![Figure 16](/assets/images/content/insights/investment/CS2017_INV_Fig16.JPG)
 <small>_Source: Bloomberg New Energy Finance_</small>
 
 This has important implications in the context of global climate negotiations and the pledge of OECD countries to mobilize $100 billion annually to address climate change in developing nations by 2020. Since this pledge was first made at Copenhagen in 2010, the rate of growth of development finance flowing to clean energy projects in developing countries has risen but not spectacularly (Figure 17).
 
 **Figure 17:** OECD sovereign and development funding of clean energy projects in developing countries and associated leverage effect
-
 ![Figure 17](/assets/images/content/insights/investment/CS2017_INV_Fig17.JPG)
 <small>_Source: Bloomberg New Energy Finance. Notes: JICA – Japan; OPIC - U.S.; KfW – Germany; AFD – France; EIB – EU; ADB – Asia; EBRD, IADB - multi-regional; AfDB – Africa; EIBC - China_</small>
 
@@ -233,7 +214,6 @@ This suggests that for clean energy to contribute its share toward the $100 bill
 Private equity companies and project developers account for the bulk of U.S. investment into emerging markets (Table 3). Including manufacturers-turned-developers such as SunEdison covers 71% of total investment from the U.S. This group of often specialized players has shown a willingness to commit high levels of equity capital across emerging markets provided a bankable PPA is at hand. These conditions were often met in India and Latin America, and a selection of other Asian markets from 2010-2016. As a result, private investors from the U.S. provided more equity capital to projects in emerging markets than investors from any other country. 
 
 **Table 3:** Largest origin country for foreign investment in clean energy asset finance in emerging markets 
-
 ![Table 3](/assets/images/content/insights/investment/CS2017_INV_Table3.JPG)
 <small>_Source: Bloomberg New Energy Finance. Note: the U.K. development institution, CDC Group, focus its finance activity on investing in funds managed by other organizations, hence the capital it has deployed does not appear here to avoid double counting. Over the 2010-2016 period, the CDC group deployed around $650 million into clean energy focused investments in Asia and Africa._</small>
 

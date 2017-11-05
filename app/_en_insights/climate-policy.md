@@ -16,7 +16,6 @@ The 2015 Paris Agreement saw virtually every nation on earth pledge to address t
 * Climatescope countries with relatively low power sector emissions and the most unambitious targets included Bangladesh, Trinidad & Tobago, Turkey, Ukraine and Vietnam. In these nations, over 10% of total emissions come from the power sector. But they have relatively unambitious emissions reduction targets. Such high power sector emissions present policy-makers opportunities to craft more aggressive emissions control goals. 
 
 **Figure 1:** Climatescope countries GHG emissions and the rest of the world, 2012
-
 ![Figure 1](/assets/images/content/insights/policy/CS2017_Climate_Figure1.jpg)
 <small>*Source: International Energy Agency, Bloomberg New Energy Finance. Note: the full list of Climatescope countries is available in the appendices.*</small>
 
@@ -43,7 +42,6 @@ Without such policies in place, investors are inevitably reluctant to deploy cap
 At Paris, 19 Climatescope countries presented "conditional" emissions control goals explicitly predicated on the condition that wealthier countries would follow through on the $100 billion promise. Another 25 of the 71 countries essentially submitted two pledges: one "unconditional" that they planned to follow through on regardless of the $100 billion and another, more aggressive, conditional goal to be achieved only if wealthier nations provided financing.  The rest promised to follow through unconditionally – regardless of whether the $100 billion comes through (Figure 2). 
 
 <b>Figure 2:</b> Climate polices and emission reduction targets’ conditionality
-   
 ![Figure 2](/assets/images/content/insights/policy/CS2017_Climate_Figure2.jpg)
 <small>*Source: UNFCCC, Bloomberg New Energy Finance*</small>
 
@@ -53,7 +51,6 @@ In terms of the pledges themselves, the 54 nations’ emissions goals can be cha
 * <b>Business-as-usual targets (BAU).</b> Commitments relative to a future BAU scenario, which takes into consideration future economic and population growth. A total of 33 Climatescope countries submitted BAU targets. Côte d’Ivoire, for example, has committed to reduce GHG emissions by 28% below its BAU trajectory by 2030. This would allow for around a 150% increase in emissions from current levels.
  
 <b>Figure 3:</b> Climatescope countries with emissions reduction targets by type 
-
 ![Figure 3](/assets/images/content/insights/policy/CS2017_Climate_Figure3.jpg)
 <small>*Source: UNFCC, Bloomberg New Energy Finance. Note: includes the 71 Climatescope countries, which account for 84% of all non-OECD emissions and 60% of all emissions globally as of 2012. Countries listed as "no target" were signatories to the Paris Agreement but made no explicit commitment to rein in emissions.*</small>
 
@@ -70,14 +67,12 @@ Power and heat account for the single largest share of overall CO2 emissions in 
 Power/heat is also among the sectors where emissions have risen fastest over the past decade, jumping 65% from 2003 to 2012 (Figure 4). Only emissions from industrial processes and manufacturing and construction have grown faster. Combined, however, these two categories still produce far few emissions than heat/power<sup>2</sup>.
 
 <b>Figure 4:</b> Share of total emissions by sector in Climatescope countries, 2012 (left) and 10-year emissions growth rate by sector (right)
-
 ![Figure 4](/assets/images/content/insights/policy/CS2017_Climate_Figure4.jpg)
 <small>*Source: International Energy Agency, Bloomberg New Energy Finance.*</small>
 
 The rapid growth for power/heat is even more significant when compared to activity in developed markets. While over the past ten years power/heat emissions in Climatescope markets jumped twice as fast as the global average, in both the U.S. and European Union they dropped 11% during the same period (Figure 5). 
 
 <b>Figure 5:</b> Ten-year power and heat emissions growth rate by country group
-
 ![Figure 5](/assets/images/content/insights/policy/CS2017_Climate_Figure5.jpg)
 <small>*Source: International Energy Agency, Bloomberg New Energy Finance.*</small>
 
@@ -90,7 +85,6 @@ Given the many varieties of the pledges submitted as part of Paris, assessing th
 To start, we have compared each country’s projected emissions trajectory should it follow recent trends<sup>3</sup> with its stated targets in absolute amounts. The wider the gap between projected growth and target growth, the more ambitious the NDC goal. For instance, Mexico committed to unconditionally to cut greenhouse gas (GHG) emissions by 25% below a BAU scenario by 2030 they themselves projected and to a further conditional emissions cut as deep as 40%, subject to international financial and technological support. In absolute amounts this will result in a 37% emissions rise from baseline year 2000 to target year 2030 for the unconditional target and a 10% rise under the conditional target (Figure 6). However, the country's projected actual emissions path suggests a 61% rise over the same period. Mexico’s targets can thus be regarded as comparatively ambitious and will require some mitigation actions to come to fruition.
 
 <b>Figure 6:</b> Projected Mexico emissions vs. its NDC target, rebased to the year 2000
-
 ![Figure 6](/assets/images/content/insights/policy/CS2017_Climate_Figure6.jpg)
 <small>*Source: UNFCCC, Bloomberg New Energy Finance. Note: emissions rebased to 1 for illustrative purposes. BNEF forecasts future emissions based on the average emissions growth rate seen from 2000 to 2012, the last year for which complete data exists.*</small>
 
@@ -109,7 +103,6 @@ The countries illustrated in Figure 7 can essentially be divided into one of fou
 <b>4.	Countries with low power sector emissions but ambitious targets</b> (top left). The power sector in these nations account for a relatively small share of total emissions but the country has proposed to travel an emissions path below BAU. This suggests that such improvements could come from addressing emissions from land use, land-use change and forestry (LULUCF) sectors, rather than power. 
 
 <b>Figure 7:</b> NDC targets ambitions and share of emissions from power sector by country. 
-
 ![Figure 7](/assets/images/content/insights/policy/CS2017_Climate_Figure7.jpg)
 <small>*Source: International Energy Agency, UNFCCC, Climatescope. Note: Includes select Climatescope countries. When available, conditional target was used to calculate NDC target ambition. Bubble size refers to emissions from power/heat sector.*</small>
 
@@ -120,7 +113,6 @@ Countries that fall into quadrants three and four above present relatively limit
 Azerbaijan, Argentina, Belarus, Chile, Mexico and Moldova are among the Climatescope countries where NDC targets present the greatest opportunities for renewable energy<sup>4</sup>.Together, these countries emitted a total of 1,438MtCO2e in 2012, 24% (350MtCO2e) of which came from the power/heat sector. Based on an emissions growth since 2000<sup>5</sup>, this figure will grow respectively to 1,853MtCO2e and 478MtCOe by 2030. These countries must collectively limit emissions to 1,579MtCO2e to achieve their unconditional targets and 1,131MtCO2e to achieve their conditional targets. Compared to the emissions trend, this implies reductions of 15% (277MtCO2e) and 39% (725MtCO2e), respectively (Figure 8).
 
 <b>Figure 8:</b> Emissions trends for Climatescope countries with relatively high power sector emissions and comparably ambitious targets
-
 ![Figure 8](/assets/images/content/insights/policy/CS2017_Climate_Figure8.jpg)
 <small>*Source: International Energy Agency, UNFCCC, Climatescope. Note: Includes Azerbaijan, Argentina, Belarus, Chile, Mexico and Moldova. Note: Trend has been derived using historical emissions from 2000 to 2012. Targets were rebased to International Energy Agency’s figures for consistency purpose.*</small>
 
@@ -131,14 +123,12 @@ We have considered three scenarios (Table 1) under which that 482TWh in future d
 Using BNEF's current global benchmark capex for wind and solar, we estimate that this would require a total of $314 billion. However, BNEF estimates that PV costs will drop around 40%<sup>6</sup> and wind capex could drop by approximately 9% from 2017 to 2030 . Therefore this could dramatically shrink to $234 billion by 2030.
 
 <b>Table 1:</b> Potential power sector emissions mitigation scenarios in Climatescope countries with relatively high power sector emissions and comparably ambitious targets
-
 ![Table 1](/assets/images/content/insights/policy/CS2017_Table1.jpg) 
 <small>*Source: International Energy Agency, IRENA, Bloomberg New Energy Finance. Note: includes Belarus, Jordan, Chile, Moldova, Mexico, Azerbaijan and Argentina.  Note: In order to arrive to the collective scenario, we have calculated each country separately, using BNEF’s benchmark capacity factor and capex for each nation/region. Solar capacity factors range from 16% to 24% and wind capacity factors range from 25% to 47%, depending on the country.*</small>
 
 Whatever the exact figure, a far smaller total of $41 billion was invested in clean energy in these countries from 2007 to 2016. Mexico and Chile were the leaders among these nations, recording $19 billion and $15 billion apiece, respectively. The higher level of investment is in no small part due to clear, effective policy frameworks in these countries. Argentina, Jordan, Belarus and Azerbaijan together have received only $6 billion to date. 
 
 <b>Figure 9:</b> New build renewable energy investment
-
 ![Figure 9](/assets/images/content/insights/policy/CS2017_Climate_Figure9.jpg)
 <small>*Source: Bloomberg New Energy Finance. Note: includes wind, solar, hydro up to 50MW, Geothermal, biomass and waste and biofuels.*</small>
 
@@ -157,14 +147,12 @@ These comparably unambitious targets and seemingly unreasonable BAU scenarios me
 Vietnam, for instance, appears to be taking this to heart. From 2011 to 2016, the country added 12GW of new coal capacity. The record year for additions (3.3GW) came in 2015 when it submitted its NDC ahead of the Paris negotiations. As of December 2016, coal accounted for a third of Vietnam’s 43.6GW capacity. Strong production from large hydro plants have depressed the coal plants' capacity factors and helped somewhat on emissions. Still, in 2016 coal represented one third of all power produced – and most of it came from plants built since the turn of the decade that stand to generate for decades to come. The country did also add 11GW of new large and small hydro capacity over that period, it should be noted, but virtually no wind or solar capacity.
 
 <b>Figure 10:</b> Emissions trends, targets and NDC BAU scenarios rebased to 100
-
 ![Figure 10](/assets/images/content/insights/policy/CS2017_Climate_Figure10.jpg)
 <small>*Source: International Energy Agency, UNFCCC, Climatescope. Note: Turkey does not have conditional target.*</small>
 
 By comparison, Turkey has made somewhat more progress in diversifying its energy matrix. From 2011 to 2016 the country added 5GW of wind and 832MW of solar while implementing a package of supportive renewable energy policies. However, this has not been enough to keep pace with rapid overall growth in power demand.  As a result, the share of the country's generation from coal grew from 29% in 2015 to 34% (92TWh) in 2016 – its highest rate in six years. 
 
 <b>Figure 11:</b> Vietnam (left) and Turkey (right) capacity additions (left axis) and share of coal generation (right axis)
-
 ![Figure 11](/assets/images/content/insights/policy/CS2017_Climate_Figure11.jpg)
 <small>*Source: EVN, Republic of Turkey Ministry of Energy and Natural Resources, Bloomberg New Energy Finance*</small>
 
@@ -175,7 +163,6 @@ By comparison, Turkey has made somewhat more progress in diversifying its energy
 Under the submitted NDCs, Latin America and the Caribbean is the only Climatescope region which collectively would achieve absolute expected emissions cuts if its combined conditional target is met. It is also the region where renewables stand to make the biggest potential impact toward countries meeting their NDC obligations. We estimate<sup>9</sup>  that under a reasonable BAU scenario Latin America and Caribbean emissions will grow from 4,531MtCO2e in 2012  to 4,924MtCO2e in 2030 with over 15% (731MtCO2e) of this growth expected to come from the power sector. In the scenario, the region will need to cut emissions 344MtCO2e by 2030 to reach its collective unconditional target and 798 MtCO2e to achieve its collective conditional target (Figure 12). 
 
 <b>Figure 12:</b> Emissions trend and targets in Latin America and Caribbean
-
 ![Figure 12](/assets/images/content/insights/policy/CS2017_Climate_Figure12.jpg)
 <small>*Source: International Energy Agency, UNFCCC, Climatescope. Note: includes 26 Latin America and Caribbean countries. Trend has been derived using historical emissions from 2000 to 2012. Targets were rebased to International Energy Agency’s figures for consistency purpose.*</small>
 
@@ -184,7 +171,6 @@ Most notably, this means Latin America and the Caribbean can collectively achiev
 We have considered three scenarios under which that 506TWh in future demand would be met by different shares of solar and wind capacity. In Scenario 1, the displaced fossil generation would be met equally by solar and wind generation, and these countries would need to build a total of 138GW of solar plants and 85GW of wind. This is eight times the region’s current wind capacity and 39 times the solar capacity as of December 2016.
 
 <b>Table 2:</b> Power sector emissions mitigation scenarios in Latin America and the Caribbean  
-
 ![Table 2](/assets/images/content/insights/policy/CS2017_Table2.jpg)
 <small>*Source: International Energy Agency, Bloomberg New Energy Finance. Note: includes 26 Latin America and Caribbean countries.*</small>
 
@@ -192,7 +178,6 @@ Using BNEF’s latest benchmark capex for wind and solar, we estimate that this 
 
 
 <b>Figure 13:</b> Latin America and Caribbean new build renewable energy investment
-
 ![Figure 13](/assets/images/content/insights/policy/CS2017_Climate_Figure13.jpg)
 <small>*Source: Bloomberg New Energy Finance.*</small>
 
@@ -207,14 +192,12 @@ Assuming a 3% annual increase in GDP, the country would need to limit emissions 
 Like the Latin America and Caribbean region as a whole, Chile could potentially achieve its unconditional target entirely by mitigating emissions from its electricity sector. We estimate that the country can achieve this goal by avoiding 23MtCO2e from coal, the equivalent of 70% of the power generated from the source in 2016 (23TWh).
 
 <b>Figure 14:</b> Chile’s emissions trend and targets
-
 ![Figure 14](/assets/images/content/insights/policy/CS2017_Climate_Figure14.jpg)
  <small>*Source: International Energy Agency, UNFCCC, Climatescope. Note: does not include emissions from LULUCF in accordance to Chile’s target. Targets assume a 3% annual increase in GDP.*</small>
 
 Our three scenarios where the 23TWh would be generated from different shares of solar and wind capacity are in Table 3. Under Scenario 1 where the displaced fossil generation would be equally replaced by solar and wind, Chile would need to build 5GW of solar plants and 3GW of wind. This is five times the country’s solar capacity and three times the wind capacity as of December 2016.
 
 <b>Table 3:</b> Chile’s power sector emissions mitigation scenarios – unconditional target
-
 ![Table 3](/assets/images/content/insights/policy/CS2017_Table3.jpg)
 <small>*Source: IRENA, UNFCCC, Bloomberg New Energy Finance.*</small>
 
