@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Clean energy anf the Paris Promises
+title: Clean energy and the Paris Promises
 description: ...
 published: true
 download_source: null 
@@ -31,7 +31,7 @@ Specifically, we look the how the Nationally Determined Contributions interface 
 
 A note on methodology: The research in this note draws primarily from data that serves as the inputs for Climatescope's Parameter IV, which assesses country-level efforts to address greenhouse gas emissions. For Climatescope 2017, BNEF has revamped the methodology for calculating each country's Parameter IV score. That methodology will be detailed upon the project's full release at the end of November at www.global-climatescope.org.
 
-## <b>Ther Paris promises</b>
+## <b>The Paris promises</b>
 
 Among the most noteworthy achievements of the Paris Agreement was that it included virtually every developing country in the world. Between them, non-OECD nations accounted for 68% of total global CO2 emissions in 2012 (the last year for which complete data is available). China alone was responsible for a quarter of emissions and India 10%. The 71 nations surveyed for Climatescope (which included China and India, among others) serve as a useful proxy for all non-OECD nations<sup>1</sup>; between them, they account for 60% of the total GHG emissions worldwide (Figure 1). 
 
