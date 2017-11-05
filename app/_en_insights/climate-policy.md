@@ -47,7 +47,9 @@ At Paris, 19 Climatescope countries presented "conditional" emissions control go
 
 In terms of the pledges themselves, the 54 nations’ emissions goals can be characterized as follows (Figure 3): 
 * <b>Absolute targets.</b> Commitments made relative to total actual emissions in a base year and therefore a commitment to an absolute reduction. Fourteen Climatescope countries submitted absolute targets. Brazil, for example, has committed to reduce its GHG emissions by 37% from 2005 levels by 2025.
+
 * <b>Intensity targets.</b> Commitments made relative to greenhouse emissions per unit of a country's GDP. Seven Climatescope countries submitted intensity targets. China, for example, has committed to reduce the level of GHG emissions per unit of GDP by 60-65% from 2005 levels by 2030. This would allow for a tripling of emissions from 2005 levels over the period if the economy grows by 5% a year.
+
 * <b>Business-as-usual targets (BAU).</b> Commitments relative to a future BAU scenario, which takes into consideration future economic and population growth. A total of 33 Climatescope countries submitted BAU targets. Côte d’Ivoire, for example, has committed to reduce GHG emissions by 28% below its BAU trajectory by 2030. This would allow for around a 150% increase in emissions from current levels.
  
 <b>Figure 3:</b> Climatescope countries with emissions reduction targets by type 
@@ -76,7 +78,7 @@ The rapid growth for power/heat is even more significant when compared to activi
 ![Figure 5](/assets/images/content/insights/policy/CS2017_Climate_Figure5.jpg)
 <small>*Source: International Energy Agency, Bloomberg New Energy Finance.*</small>
 
-This trend is poised to continue as emerging market countries see their populations grow, economies expand and electricity access rates rise. That said, the threat posed by rising power sector emissions also presents potential opportunity. The power sector has to date proven to be the segment of the economy where the most developed countries have demonstrated they can make significant improvements on emissions. There is no reason lesser developed cannot do the same. <small>ith renewables costs dropping, there would seem to be little impeding such countries from turning to clean energy as their primary source for new generation. </small>
+This trend is poised to continue as emerging market countries see their populations grow, economies expand and electricity access rates rise. That said, the threat posed by rising power sector emissions also presents potential opportunity. The power sector has to date proven to be the segment of the economy where the most developed countries have demonstrated they can make significant improvements on emissions. There is no reason lesser developed cannot do the same. With renewables costs dropping, there would seem to be little impeding such countries from turning to clean energy as their primary source for new generation. 
 
 ### NDC ambitions
 
