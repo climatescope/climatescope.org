@@ -67,6 +67,27 @@ description: Climatescope a unique country-by-country assessment, interactive re
                   </div>
                 </article>
               </li>
+
+              {% assign item = site.en_insights | where:"featured", true | first %}
+              <li>
+                <article class="entry entry--short update">
+                  <div class="entry__contents">
+                    <header class="entry__header">
+                      <p class="entry__subtitle">Explore the report</p>
+                      <a href="{{ site.domain }}{{ site.path_prefix }}{{ item.url }}" title="View more" class="link-wrapper">
+                        <h1 class="entry__title">{{ item.title }}</h1>
+                      </a>
+                    </header>
+                    {% if item.description %}
+                    <div class="entry__body">
+                      <div class="entry__prose">
+                        <p>{{ item.description }}</p>
+                      </div>
+                    </div>
+                    {% endif %}
+                  </div>
+                </article>
+              </li>
             </ol>
           </div>
         </section>

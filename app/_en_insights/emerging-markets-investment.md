@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Emerging Markets Clean Energy Investment
-description: ...
+description:
 published: true
 download_source: null 
 ---

@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Clean energy and the Paris Promises
-description: ...
+description:
 published: true
 download_source: null 
 
+featured: true
 ---
 The 2015 Paris Agreement saw virtually every nation on earth pledge to address the threat of climate change. Each country's Nationally Determined Commitment was unique, determined largely by economic and political circumstances. But nearly all presented opportunities for clean energy as zero-carbon technologies must inevitably be deployed if countries want to keep their power sector emissions in check. As part of its annual Climatescope survey of 71 developing countries, Bloomberg New Energy Finance sought to examine the ambition level of these developing nation NDCs and the opportunities each commitment presents for clean energy deployment. 
 
