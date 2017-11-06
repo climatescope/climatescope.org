@@ -47,9 +47,7 @@ At Paris, 19 Climatescope countries presented "conditional" emissions control go
 
 In terms of the pledges themselves, the 54 nations’ emissions goals can be characterized as follows (Figure 3): 
 * <b>Absolute targets.</b> Commitments made relative to total actual emissions in a base year and therefore a commitment to an absolute reduction. Fourteen Climatescope countries submitted absolute targets. Brazil, for example, has committed to reduce its GHG emissions by 37% from 2005 levels by 2025.
-
 * <b>Intensity targets.</b> Commitments made relative to greenhouse emissions per unit of a country's GDP. Seven Climatescope countries submitted intensity targets. China, for example, has committed to reduce the level of GHG emissions per unit of GDP by 60-65% from 2005 levels by 2030. This would allow for a tripling of emissions from 2005 levels over the period if the economy grows by 5% a year.
-
 * <b>Business-as-usual targets (BAU).</b> Commitments relative to a future BAU scenario, which takes into consideration future economic and population growth. A total of 33 Climatescope countries submitted BAU targets. Côte d’Ivoire, for example, has committed to reduce GHG emissions by 28% below its BAU trajectory by 2030. This would allow for around a 150% increase in emissions from current levels.
  
 <b>Figure 3:</b> Climatescope countries with emissions reduction targets by type 
@@ -96,13 +94,10 @@ We then sought to consider which countries may have the greatest potential to le
 
 The countries illustrated in Figure 7 can essentially be divided into one of four categories:
  
-<b>1.	Countries with relatively high power sector emissions and ambitious targets</b> (top right). These nations offer the greatest potential opportunity for renewables as outlined under the NDC. In each, power sector emissions account for more than 10% of overall emissions. Each has set ambitious targets of cutting emissions below BAU, which will require appropriate mitigation targets.
-
-<b>2.	Countries with relatively high power sector emissions but unambitious targets</b> (bottom right). These nations also have power sectors that account for more than 10% of overall emissions. However, potential for clean energy could be limited insofar as the national goal is concerned as the government has set a CO2 goal no better than its projected BAU. 
-
-<b>3.	Countries with low power sector emissions and unambitious targets</b> (bottom left). The power sector in these nations accounts for relatively limited emissions currently. These are also among the poorest nations surveyed under Climatescope meaning that as they grow their power sector emissions should rise. However, these nations also have unambitious CO2 control targets, suggesting that such growth could well be fueled by fossil generation. 
-
-<b>4.	Countries with low power sector emissions but ambitious targets</b> (top left). The power sector in these nations account for a relatively small share of total emissions but the country has proposed to travel an emissions path below BAU. This suggests that such improvements could come from addressing emissions from land use, land-use change and forestry (LULUCF) sectors, rather than power. 
+1. <b>Countries with relatively high power sector emissions and ambitious targets</b> (top right). These nations offer the greatest potential opportunity for renewables as outlined under the NDC. In each, power sector emissions account for more than 10% of overall emissions. Each has set ambitious targets of cutting emissions below BAU, which will require appropriate mitigation targets.
+2. <b>Countries with relatively high power sector emissions but unambitious targets</b> (bottom right). These nations also have power sectors that account for more than 10% of overall emissions. However, potential for clean energy could be limited insofar as the national goal is concerned as the government has set a CO2 goal no better than its projected BAU. 
+3. <b>Countries with low power sector emissions and unambitious targets</b> (bottom left). The power sector in these nations accounts for relatively limited emissions currently. These are also among the poorest nations surveyed under Climatescope meaning that as they grow their power sector emissions should rise. However, these nations also have unambitious CO2 control targets, suggesting that such growth could well be fueled by fossil generation. 
+4. <b>Countries with low power sector emissions but ambitious targets</b> (top left). The power sector in these nations account for a relatively small share of total emissions but the country has proposed to travel an emissions path below BAU. This suggests that such improvements could come from addressing emissions from land use, land-use change and forestry (LULUCF) sectors, rather than power. 
 
 <b>Figure 7:</b> NDC targets ambitions and share of emissions from power sector by country. 
 ![Figure 7](/assets/images/content/insights/policy/CS2017_Climate_Figure7.jpg)
