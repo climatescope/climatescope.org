@@ -85,7 +85,11 @@ description: Climatescope a unique country-by-country assessment, interactive re
               {% for tool in tools limit:3 %}
               {% unless tool.hidden == true %}
               <li>
+                {% if tool.darken %}
+                <article class="feat-tool feat-tool--darken">
+                {% else %}
                 <article class="feat-tool">
+                {% endif %}
                   <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}{{tool.url}}" title="View tool page" style="background-image: url({{ site.domain }}{{ site.path_prefix }}/assets/images/content/feat-tools/{{ tool.image }});">
                     <h1 class="feat-tool__title">{{ tool.title }}</h1>
                     <p class="feat-tool__summary">{{ tool.description }}</p>

@@ -4,6 +4,7 @@ description: All dedicated off-grid sub-indicatores.
 link: /off-grid-data-hub
 
 image: feat-tool-thumb--ogdatahub.jpg
+darken: true
 
 featured: true
 ---
