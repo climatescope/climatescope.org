@@ -23,56 +23,52 @@ description: Climatescope a unique country-by-country assessment, interactive re
       <div class="featured-col featured-col--main">
 
         <section class="featured-section">
-          <h1 class="featured-section__title">Updates</h1>
+          <h1 class="featured-section__title">Insights</h1>
           <div class="featured-section__body">
             <ol class="entry-list">
-              {% assign posts = site.posts | where:"lang",language %}
-              {% for post in posts limit:2 %}
-              {% unless post.hidden == true %}
+              {% assign item = site.posts | where:"lang",language | where:"featured", true | first %}
               <li>
                 <article class="entry entry--short update">
                   <div class="entry__contents">
                     <header class="entry__header">
-                      <p class="entry__subtitle">{{ post.date | date: '%b %-d, %Y' }}</p>
-                      <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View more" class="link-wrapper">
-                        <h1 class="entry__title">{{ post.title }}</h1>
+                      <p class="entry__subtitle">Read the update: {{ item.date | date: '%b %-d, %Y' }}</p>
+                      <a href="{{ site.domain }}{{ site.path_prefix }}{{ item.url }}" title="View more" class="link-wrapper">
+                        <h1 class="entry__title">{{ item.title }}</h1>
                       </a>
                     </header>
-                    {% if post.description %}
+                    {% if item.description %}
                     <div class="entry__body">
                       <div class="entry__prose">
-                        <p>{{ post.description }}</p>
+                        <p>{{ item.description }}</p>
                       </div>
                     </div>
                     {% endif %}
                   </div>
                 </article>
               </li>
-              {% endunless %}
-              {% endfor %}
-            </ol>
-          </div>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" title="{{ t['View all'][language] }}" class="bttn bttn-success go">{{ t['View all'][language] }}</a>
-        </section>
 
-        <section class="featured-section featured-block">
-          <h1 class="featured-section__title">Off-grid Quarterly</h1>
-          <div class="featured-section__body">
-            <ol class="entry-list">
+              {% assign item = site.en_off-grid | where:"featured", true | first %}
               <li>
                 <article class="entry entry--short update">
                   <div class="entry__contents">
                     <header class="entry__header">
-                      <a href="{{ site.domain }}{{ site.path_prefix }}{{ language }}/off-grid-quarterly/q3-2017/" title="View more" class="link-wrapper">
-                        <h1 class="entry__title">3Q 2017 Off-grid and mini-grid market outlook</h1>
+                      <p class="entry__subtitle">Explore the report</p>
+                      <a href="{{ site.domain }}{{ site.path_prefix }}{{ item.url }}" title="View more" class="link-wrapper">
+                        <h1 class="entry__title">{{ item.title }}</h1>
                       </a>
                     </header>
+                    {% if item.description %}
+                    <div class="entry__body">
+                      <div class="entry__prose">
+                        <p>{{ item.description }}</p>
+                      </div>
+                    </div>
+                    {% endif %}
                   </div>
                 </article>
               </li>
             </ol>
           </div>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-quarterly" title="{{ t['View all'][language] }}" class="bttn bttn-success go">View all</a>
         </section>
       </div>
 
