@@ -76,3 +76,10 @@ collections:
     lang: en
     i18n:
       en: en_page
+
+  en_insights:
+    output: true
+    permalink: /en/insights/:path/
+    lang: en
+    i18n:
+      en: en_page

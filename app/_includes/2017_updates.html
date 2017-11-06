@@ -1,31 +1,83 @@
-<section class="modal" data-modal="2017-update">
+<section class="modal modal--large" data-modal="2017-update">
   <div class="modal__inner">
     <header class="modal__header">
-      <h1 class="modal__title">Get ready for the Climatescope 2017</h1>
+      <div class="modal__headline">
+        <h1 class="modal__title"><small>Coming soon:</small> Climatescope 2017</h1>
+      </div>
+      <div class="modal__actions">
+        <p class="counter"><time datetime="2017-11-30"><span data-hook="launch-days:0">2</span><span data-hook="launch-days:1">8</span> <strong>days left</strong></time></p>
+        <script>
+          var launchDay = new Date('2017-11-28');
+          var diff = launchDay.getTime() - (new Date()).getTime();
+          diff = Math.ceil(diff / 86400 / 1000);
+
+          var nums = diff.toString().split('');
+          if (nums.length === 1) nums.unshift('0');
+
+          document.querySelector('[data-hook="launch-days:0"]').innerText = nums[0];
+          document.querySelector('[data-hook="launch-days:1"]').innerText = nums[1];
+        </script>
+      </div>
+      <div class="modal__intro">
+        <p>Climatescope re-launches at the end of November with complete data and analysis of 71 emerging market nations.  For now, see and read about the high-level findings below.</p>
+      </div>
       <a class="close" title="Close" data-modal-dismiss><span>Close</span></a>
     </header>
+
     <div class="modal__body">
 
-      <form action="//global-climatescope.us14.list-manage.com/subscribe/post?u=f7420b38cc86494fc1ab6cb31&amp;id=e17a5880bd" method="post" id="mc-embedded-subscribe-form" name="subscribe-form">
-        <p class="form-description">A new edition of the Global Climatescope will launch soon. Sign up here and be the first to discover new insights into clean energy in emerging markets.</p>
-
-        <div class="form-control">
-          <label class="form-label">Email Address</label>
-          <input type="email" value="" name="EMAIL" id="email">
+      <div class="modal__section">
+        <h2 class="modal__section-title">Watch the video</h2>
+        <div class="video-wrapper">
+          <div class="embed-container">
+            <iframe src="https://player.vimeo.com/video/240195012" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          </div>
         </div>
-        <div id="mce-responses">
-          <p class="response error" id="mce-error-response" style="display:none"></p>
-          <p class="response success" id="mce-success-response" style="display:none"></p>
-        </div>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f7420b38cc86494fc1ab6cb31_e17a5880bd" tabindex="-1" value=""></div>
+      </div>
 
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="bttn bttn-success">
-        <a href="#" title="" target="_blank" data-download="no-thank-you" class="subscribe-no">No thanks, I'll check back on my own</a>
-      </form>
+      <div class="modal__section">
+        <h2 class="modal__section-title">Read the insights</h2>
+
+        <ol class="entry-list">   
+          <li>
+            <article class="entry entry--short update">
+              <div class="entry__contents">
+                <header class="entry__header">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/insights/climate-policy" title="View more" class="link-wrapper">
+                    <h1 class="entry__title">Find out about Climate Policy</h1>
+                  </a>
+                </header>
+                
+                <div class="entry__body">
+                  <div class="entry__prose">
+                    <p>Read more about the ambition level of developing nation NDCs and the opportunities each commitment presents for clean energy deployment.</p>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="entry entry--short update">
+              <div class="entry__contents">
+                <header class="entry__header">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/insights/emerging-markets-investment" title="View more" class="link-wrapper">
+                    <h1 class="entry__title">Find out about Investment</h1>
+                  </a>
+                </header>
+                
+                <div class="entry__body">
+                  <div class="entry__prose">
+                    <p>This analysis reviews clean energy financing in 106 emerging market nations and explores why capital flows appear to have slowed recently.</p>
+                  </div>
+                </div>
+                
+              </div>
+            </article>
+          </li>
+        </ol>
+      </div>
+
     </div>
   </div>
 </section>
-
-
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>  
