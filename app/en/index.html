@@ -26,7 +26,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
           <h1 class="featured-section__title">Updates</h1>
           <div class="featured-section__body">
             <ol class="entry-list">
-              {% assign posts = (site.posts | where:"lang",language) %}
+              {% assign posts = site.posts | where:"lang",language %}
               {% for post in posts limit:2 %}
               {% unless post.hidden == true %}
               <li>
@@ -81,30 +81,19 @@ description: Climatescope a unique country-by-country assessment, interactive re
           <h1 class="featured-section__title">Tools</h1>
           <div class="featured-section__body">
             <ul class="tools-list">
+              {% assign tools = site.tools | where:"featured",true %}
+              {% for tool in tools limit:3 %}
+              {% unless tool.hidden == true %}
               <li>
-                <article class="feat-tool" id="feat-tool-policies">
-                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/policies" title="View policy database">
-                    <h1 class="feat-tool__title">Analyse Policy Database</h1>
-                    <p class="feat-tool__summary">800+ policies to improve clean energy development.</p>
+                <article class="feat-tool">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}{{tool.url}}" title="View tool page" style="background-image: url({{ site.domain }}{{ site.path_prefix }}/assets/images/content/feat-tools/{{ tool.image }});">
+                    <h1 class="feat-tool__title">{{ tool.title }}</h1>
+                    <p class="feat-tool__summary">{{ tool.description }}</p>
                   </a>
                 </article>
               </li>
-              <li>
-                <article class="feat-tool feat-tool--darkplus" id="feat-tool-ogdatahub">
-                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-data-hub" title="View policy database">
-                    <h1 class="feat-tool__title">Discover the Data Hub</h1>
-                    <p class="feat-tool__summary">All dedicated off-grid sub-indicatores.</p>
-                  </a>
-                </article>
-              </li>
-              <li>
-                <article class="feat-tool" id="feat-tool-compare">
-                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/compare" title="View policy database">
-                    <h1 class="feat-tool__title">Compare results</h1>
-                    <p class="feat-tool__summary">Choose a country or state to view results side by side.</p>
-                  </a>
-                </article>
-              </li>
+              {% endunless %}
+              {% endfor %}
             </ul>
           </div>
         </section>

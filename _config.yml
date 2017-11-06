@@ -83,3 +83,6 @@ collections:
     lang: en
     i18n:
       en: en_page
+
+  tools:
+    output: false
