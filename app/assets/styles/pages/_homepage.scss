@@ -196,7 +196,7 @@
   }
 }
 
-.feat-tool--darkplus {
+.feat-tool--darken {
   > a {
 
     &::after {
@@ -221,19 +221,6 @@
   font-weight: $brand-font-bold;
   margin-bottom: 0;
 }
-
-#feat-tool-policies a {
-  background-image: url(../images/content/feat-tools/feat-tool-thumb--policies.jpg);
-}
-
-#feat-tool-ogdatahub a {
-  background-image: url(../images/content/feat-tools/feat-tool-thumb--ogdatahub.jpg);
-}
-
-#feat-tool-compare a {
-  background-image: url(../images/content/feat-tools/feat-tool-thumb--compare.jpg);
-}
-
 
 /* Intro video modal
    ========================================================================== */
