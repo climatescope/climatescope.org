@@ -98,7 +98,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
           <h1 class="featured-section__title">Tools</h1>
           <div class="featured-section__body">
             <ul class="tools-list">
-              {% assign tools = site.tools | where:"featured",true %}
+              {% assign tools = site.en_tools | where:"featured",true %}
               {% for tool in tools limit:3 %}
               {% unless tool.hidden == true %}
               <li>
@@ -107,7 +107,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
                 {% else %}
                 <article class="feat-tool">
                 {% endif %}
-                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}{{tool.url}}" title="View tool page" style="background-image: url({{ site.domain }}{{ site.path_prefix }}/assets/images/content/feat-tools/{{ tool.image }});">
+                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}{{ tool.link }}" title="View tool page" style="background-image: url({{ site.domain }}{{ site.path_prefix }}/assets/images/content/feat-tools/{{ tool.image }});">
                     <h1 class="feat-tool__title">{{ tool.title }}</h1>
                     <p class="feat-tool__summary">{{ tool.description }}</p>
                   </a>
