@@ -22,18 +22,3 @@ The power market is still government-controlled and mostly not unbundled. In 201
 Off-grid efforts are still at relatively early stage. The government is slowly starting to make plans, including targets for solar lanterns and solar home systems. But the regulatory picture is not clear – the regulator, the Ethiopian Energy Authority, is still working on regulation for off-grid power and mini-grids. There is a clear priority in the country towards grid extension, which is even reflected in government metrics. The targets prioritize greater 'grid coverage' (ie, running transmission lines near villages) over actual household connections.
 
 Climate change is a high priority for the government. It set out climate targets in its Climate Resilient Green Economy plan, which covers most sectors. It will be delivered by the Ministry of Environment and Climate Change, whose representatives sit in other government departments and ensure projects and regulations meet climate goals.
-
-###Score summary
-
-Ethiopia scored 1.29 in Climatescope 2016, placing it 32<sup>nd</sup> overall, a drop of six places compared with the previous year. The country’s best performance was on Clean Energy Investment and Climate Financing Parameter II.
-
-On Enabling Framework Parameter I, it slipped three places to 33<sup>rd</sup> despite achieving a slightly higher score than in 2015. This reflected a relatively robust set of energy access policies, including a well-funded rural electrification program, and off-grid financing facilities.
-
-Ethiopia’s score on Parameter II jumped to 0.94 from 0.53 in 2015, elevating the country seven places to 18<sup>th</sup>. This reflected an increase in clean energy investment to $108m from almost zero. The relatively low average cost of debt was another positive factor.
-
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country fell six places to 22<sup>nd</sup> owing to a slight decline in the number of value chains with active companies.
-
-The introduction of an emissions reduction target produced an improvement in its score on Greenhouse Gas Management Activities Parameter IV. However, this was not sufficient to maintain its ranking and it slid eight places to 43<sup>rd</sup>.
-
-___________________________
-<sup>1</sup> For example, private firms are now able to bid to provide services for a sector whose infrastructure decisions are still broadly governed by state planners.
