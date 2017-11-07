@@ -9,11 +9,23 @@ description: Climatescope a unique country-by-country assessment, interactive re
 ---
 {% assign language = page.lang %}
 {% assign t = site.data.i18n_strings %}
-<section class="layout--results">
+<section class="layout--results" ng-app="globalApp">
   <header class="layout--results__header sticky" id="parameters-controls">
     <div class="row--contained">
       <div class="layout--results__heading">
-        <h1 class="layout--results__title">{{ page.title }}</h1>
+        <h1 class="layout--results__title">
+          <span>{{ page.title }} for</span> 
+          <em class="dropdown" ng-controller="ResultsPageController as resPage">
+            <a href="#" title="Explore the tools" class="dropdown-toggle caret" data-toggle="dropdown"><span>%% resPage.selectedRegion %%</span></a>
+            <div class="dropdown-content">
+              <ul class="dropdown-menu" role="menu">
+                <li ng-repeat="opt in resPage.options">
+                  <a href="%% resPage.getPath('{{ site.domain }}{{ site.path_prefix }}/{{ language }}/results/', opt) %%" title="View %% opt.name %% results">%% opt.name %%</a>
+                </li>
+              </ul>
+            </div>
+          </em>
+        </h1>
       </div>
       <div class="layout--results__tools" init-dropdown>
         {% include actions_menu.html download_exc=true %}
@@ -30,7 +42,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
 
     <div class="row--contained">
       {% include url_index.html %}
-      <div ng-app="globalApp" ng-controller="CountryListController as countryTable" ng-cloak>
+      <div ng-controller="CountryListController as countryTable" ng-cloak data-hook="countryScope">
         {% include country_list_table.html %}
       </div>
     </div>
