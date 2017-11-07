@@ -24,7 +24,8 @@ $(document).ready(function() {
         center: [-15.6230, -59.0625]
       }
     };
-    var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
+    var region = getQueryString().region;
+    var mapConf = region ?  mapSettings[region] : mapSettings.world;
     var map = L.mapbox.map('index-viz')
           .setView(mapConf.center, mapConf.zoom)
 
@@ -155,9 +156,15 @@ $(document).ready(function() {
     // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
       land = topojson.feature(geography, geography.objects.centroids).features;
+      indicators = countryRank;
 
-      // If there's a region, the countries are inside an object.
-      indicators = CS.regionId ? countryRank.countries : countryRank;
+      // Filter countries if region is set on the url.
+      var region = getQueryString().region;
+      if (region) {
+        indicators = indicators.filter(function(o) {
+          return o.region.id === region;
+        });
+      }
 
       // Sort parameters.
       $.each(indicators, function(index, country) {

@@ -16,7 +16,15 @@
 
     var url = CS.domain + '/' + CS.lang + '/api/countries.json';
     $http.get(url).success(function(data) {
-      _self.countries = data;
+      // Filter countries if region is set on the url.
+      var region = getQueryString().region;
+      if (region) {
+        _self.countries = data.filter(function(o) {
+          return o.region.id === region;
+        });
+      } else {
+        _self.countries = data;
+      }
     });
     
   }]);
