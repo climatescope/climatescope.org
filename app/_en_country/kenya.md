@@ -24,15 +24,3 @@ One of the most noteworthy successes in Kenya’s power sector is in geothermal.
 As utility-scale projects face a lengthy planning process, developers have started to target captive generation projects. The approval process for on-site power generation up to 1MW is far simpler and all projects below 3MW do not require a generation permit, which can be a lengthy process to obtain. The generation technology of choice is typically solar, although small hydro has been favoured in some regions – especially by the Kenya Tea Development Agency. 
 
 More than half of Kenya’s homes are not connected to the national grid. Several programs exist to expand distribution lines, reach remote villages, and maximize the utilization of existing transformers by connecting people within their immediate reach or in informal settlements underneath, often subsidized by DFIs. These have started to make an impact on energy access numbers. Kenya’s electrification rate rose from 26% in 2012 to 55% as of mid-2016. Mini-grid capacity is rapidly growing in Kenya, despite uncertainties around geographic territory clauses in distribution tariffs. Kenya has become one of the best-served off-grid populations in the world, featuring some of the most advanced pay-as-you-go solar home system companies and innovative business models for mini-grid development.
-
-#### Score Summary
-
-Kenya scored 2.01 in Climatescope 2016, placing it 10th on the list of countries overall, down four from 2015. Among the 19 African nations, it ranked 3<sup>rd</sup>, behind only South Africa and Uganda. Its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
-
-The country saw a slight improvement in its score on Enabling Framework Parameter I, performing particularly well on the Distributed Energy Framework and Energy Access Policies indicators. It was also rewarded for the 691MW of installed clean energy capacity. Nevertheless, it slid six places to 11<sup>th</sup>.
-
-On Clean Energy Investment and Climate Financing Parameter II, Kenya’s score improved thanks to the relatively high volume ($484m) of investment in 2015. However, this was somewhat offset by the scarcity of loans and grants, and the high average cost of debt. The country fell one place to 14<sup>th</sup>. 
-
-Kenya did well on Parameter III thanks to the large number of service providers and diversity of the sector’s value chains. Its score was marginally lower than in 2015 and its rank remained unchanged at 9<sup>th</sup> place. 
-
-The country took 12<sup>th</sup> position on Greenhouse Gas Management Activities Parameter IV, up four places from the previous year. Its score rose in 2016, reflecting an increase in carbon-offsetting activities and corporate awareness initiatives.
