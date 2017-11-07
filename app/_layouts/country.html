@@ -49,12 +49,16 @@ conf:
       <div class="description-inner expandable" data-hook="expand-description">
         <div class="expandable-wrapper">
           {{ content }}
-          <div id="score-summary" class="chart-std score-summary" init-chart="score-summary" chart-data="descCtrl.chartSummary"><!-- Chart --></div>
         </div>
       </div>
 
       <div class="prose-copy-actions">
         <a class="bttn bttn-cta" href="" ng-init="descCtrl.checkExpandable('[data-hook=\'expand-description\']')" ng-click="descCtrl.toggleExpandable('[data-hook=\'expand-description\']', $event)" title="{{ t['View more'][language] }}">{{ t['View more'][language] }}</a>
+      </div>
+
+      <div class="prose-copy-graph">
+        <h2>{{ t['Performance over time'][language] }}</h2>
+        <div id="score-summary" class="chart-std score-summary" init-chart="score-summary" chart-data="descCtrl.chartSummary"><!-- Chart --></div>
       </div>
 
     </div>
