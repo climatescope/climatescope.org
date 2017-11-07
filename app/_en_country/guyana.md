@@ -18,15 +18,3 @@ The government of Guyana is developing a strategy for the introduction of renewa
 Approximately 82% of the country’s 0.8 million population is connected to the grid, with the highest concentration in urban areas. To help increase access to electricity among the rural population, the government launched several initiatives, most of which promote the use of photovoltaic installations supplied by small-scale private companies. The Hinterland Electrification Program (HEP) was created in 2005 under the Unserved Areas Electrification Program and installed 11,000 65-Watt photovoltaic solar home systems from 2011 to 2014. As of January 2015, 200 communities had benefited from the HEP.
 
 Since 2012, the government of Guyana has exempted machinery and equipment that generate or utilize power from renewable sources from value-added tax and import duties. This is the only renewable energy incentive in force. In May 2016, the government of Guyana submitted its revised Intended Nationally Determined Contribution (INDC) to the United Nations, outlining conditional and unconditional policies and measures to reduce emissions from the forest and energy sectors.
-
-###Score summary 
-
-Guyana scored 0.67 in Climatescope 2016, an increase of 0.13 on its tally in the 2015 survey. It took 54<sup>th</sup> place on the list of 58 countries, a decline of three from the previous year. The country performed relatively poorly on all four parameters, ranking between 46<sup>th</sup> and 58<sup>th</sup> on each.
-
-Its score on Enabling Framework Parameter I increased to 1.00 from 0.78, but it slipped one place to 46<sup>th</sup> position. Its weakness stems from a lack of coherent clean energy policy and the absence of project development since 2010.
-
-Guyana’s score on Clean Energy Investment and Climate Financing Parameter II fell slightly, and it dropped fourteen places to 48<sup>th</sup>. There is no record of any investment in the sector between 2010 and 2015. However, the average cost of debt (at 12.89%) did offer a small degree of support. 
-
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country’s score was unchanged at 0.07, which put it in 58<sup>th</sup> position. Guyana’s only clean energy company in 2015 was a biomass project developer.
-
-On Greenhouse Gas Management Activities Parameter IV, its score rose and yet it dropped six places to 46<sup>th</sup>. The presence of a GHG emissions reduction target was one of few positive attributes.
