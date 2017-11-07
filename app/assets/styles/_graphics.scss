@@ -269,6 +269,117 @@
   }
 }
 
+.score-summary {
+  .area-line-group {
+    fill: none;
+  }
+
+  .country {
+    &.area-line {
+      stroke: $primary-color;
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: $primary-color;
+    }
+  }
+  .enabling-framework {
+    &.area-line {
+      stroke: shade($infograph-color-a, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-a, 32%);
+    }
+  }
+  .financing-investments {
+    &.area-line {
+      stroke: shade($infograph-color-b, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-b, 32%);
+    }
+  }
+  .value-chains {
+    &.area-line {
+      stroke: shade($infograph-color-c, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-c, 32%);
+    }
+  }
+  .ghg-management {
+    &.area-line {
+      stroke: shade($infograph-color-d, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-d, 32%);
+    }
+  }
+
+  .focus-elements {
+    .focus-line {
+      stroke: $primary-color;
+      stroke-opacity: 0.2;
+      stroke-width: 0.5;
+    }
+    .focus-circles {
+      .outer {
+        fill: #FFF;
+        stroke-width: 0.5;
+      }
+      &.country .inner {
+        stroke: none;
+        fill: $primary-color;
+      }
+      &.enabling-framework .inner {
+        stroke: none;
+        fill: $infograph-color-a;
+      }
+      &.financing-investments .inner {
+        stroke: none;
+        fill: $infograph-color-b;
+      }
+      &.value-chains .inner {
+        stroke: none;
+        fill: $infograph-color-c;
+      }
+      &.ghg-management .inner {
+        stroke: none;
+        fill: $infograph-color-d;
+      }
+    }
+  }
+
+  .chart-legend {
+    dt {
+      &.param-country:before {
+        background: $primary-color;
+      }
+      &.param-enabling-framework:before {
+        background: $infograph-color-a;
+      }
+      &.param-financing-investments:before {
+        background: $infograph-color-b;
+      }
+      &.param-value-chains:before {
+        background: $infograph-color-c;
+      }
+      &.param-ghg-management:before {
+        background: $infograph-color-d;
+      }
+    }
+  }
+}
+
 .chart-trendline {
   position: relative;
   height: 2rem;
@@ -411,12 +522,19 @@
   dd {
     float: left;
     clear: left;
-    width: 4rem;
+    width: 4.5rem;
     text-align: right;
     margin-top: -1.5rem;
     font-family: $brand-font-family;
     font-weight: $brand-font-bold;
     line-height: 1.5rem;
+    small {
+      font-weight: normal;
+      font-size: 0.85rem;
+      color: tint($primary-color, 60%);
+      margin-left: 0.5rem;
+      float: right;
+    }
   }
 }
 
