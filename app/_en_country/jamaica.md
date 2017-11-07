@@ -25,14 +25,3 @@ On November 27, 2015, the government of Jamaica submitted its Intended Nationall
 Jamaica also committed to a 10% below BAU target, subject to international support, especially for the expansion of its energy efficiency initiatives. Jamaica’s target covers only actions in the energy and transportation sectors, and its conditional goals are based on enhanced implementation of the National Energy Plan.
 
 
-### Score Summary
-
-Jamaica scored 1.41 in Climatescope 2016, a considerable improvement on the 0.81 it earned in the previous survey, and it climbed fifteen places to 24<sup>th</sup>. Much of the impetus for its buoyant performance was derived from a strong result in Clean Energy Investment and Climate Financing Parameter II.
-
-The country’s score on Enabling Framework Parameter I was 1.19, a modest improvement on the year before. It was placed in the bottom half of the order (36<sup>th</sup>), highlighting the fact that there were no new capacity additions in 2015.
-
-Jamaica took 4th place globally on Parameter II with a score of 2.03. The jump from 40th in 2015 was fuelled by $208m of investment.  There had been almost zero investment in the previous four years.
-
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country scored 0.78, which was unchanged from the previous year and put it 49<sup>th</sup> place. A scattering of project developers and engineers were present on the island nation. 
-
-Jamaica ranked 40<sup>th</sup> on Greenhouse Gas Management Activities Parameter IV with a score of 1.37 that was hampered by a lack of clean energy policies, but buoyed up by its Clean Development Mechanism activities.
