@@ -34,15 +34,3 @@ The “electricity for all” strategy which aims to connect a million homes by 
 Other than a reduced rate of VAT for solar panels, there are no official incentives for renewable energy. Lack of regulation creates opportunities for private companies such as PEGAfrica and ZECI (a joint venture between EDF and Off-Grid Electric) to enter the market and sell solar home systems via mobile money payments. PEGAfrica only started operating in Cote d’Ivoire at the start of 2017 and is already experiencing significant demand for the SunKing products it sells.
 The country also produces significant biomass feedstock on cocoa, coffee, sugar, and palm oil plantations. Some factories have been using biomass to generate electricity for their own consumption for years. However, the development of the 46MW Biokala biomass plant by Ivorian agro-industrial group SIFCA has been delayed due to indecision about the price at which it will sell power to the grid. 
 
-
-###Score summary
-
-Côte D’Ivoire scored 0.71 in Climatescope 2016, which was identical to its performance the previous year, but insufficient to maintain its position amid rising standards in many of the nations surveyed. The country dropped 10 places to 52<sup>nd</sup> overall and was lowest among the 19 African nations surveyed. 
-
-The country dropped eighteen places to 47<sup>th</sup>, on Enabling Framework Parameter I, reflecting slower growth in demand for power among other factors. Set against this, lower taxes on clean energy goods boosted the country’s Barriers indicator.
- 
-Côte D’Ivoire was placed last among the 58 nations on Clean Energy Investment and Climate Financing Parameter II, reflecting the very low level of investment to date.
-
-The country ranked 38<sup>th</sup> on Low-Carbon Business & Clean Energy Value Chains Parameter III, one place lower than last year. However, the presence of a number of clean energy value chains and service providers helped to prop up its score.
-
-On Greenhouse Gas Management Activities Parameter IV, the country ranked a very poor 53<sup>rd</sup> overall, ahead of only Liberia among the African nations surveyed.
