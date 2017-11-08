@@ -278,6 +278,7 @@
     &.area-line {
       stroke: $primary-color;
       stroke-opacity: 1;
+      stroke-width: 2;
     }
     &.area-line-points circle{
       stroke: none;

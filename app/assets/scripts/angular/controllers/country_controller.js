@@ -76,7 +76,7 @@
       // Global country score
       var valuesData = [{
         id: 'country',
-        name: 'Country',
+        name: 'Overall score',
         values: data.score
       }];
 
