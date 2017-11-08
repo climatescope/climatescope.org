@@ -38,7 +38,7 @@
       </ul>
     </div>
 
-    <div class="param-details__graph">
+    <div class="param-details__graph" ng-if="param.id == 1 || param.id == 2">
       <figure ng-if="param.id == 1" class="chart-wrapper">
         <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
         <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
@@ -57,10 +57,6 @@
         <figcaption>{{ t['Clean energy investments'][language] }}</figcaption>
         <div id="clean-energy-investments" class="chart-std clean-energy-investments" init-chart="clean_energy_investments" chart-data="detailsCtrl.chartData['clean-energy-investments']"><!-- Chart --></div>
         <p class="chart-note">Cumulative; see <a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology">methodology</a> for details</p>
-      </figure>
-      <figure ng-if="param.id == 4" class="chart-wrapper">
-        <figcaption>{{ t['Carbon offset'][language] }}</figcaption>
-        <div id="carbon-offset" class="chart-std carbon-offset" init-chart="carbon_offset" chart-data="detailsCtrl.chartData['carbon-offset']"><!-- Chart --></div>
       </figure>
     </div>
 

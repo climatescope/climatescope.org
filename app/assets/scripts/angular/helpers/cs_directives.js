@@ -22,9 +22,6 @@
           case 'clean_energy_investments':
             chart = chart__clean_energy_investments(element[0], dataCopy);
           break;
-          case 'carbon_offset':
-            chart = chart__carbon_offset(element[0], dataCopy);
-          break;
           case 'trendline':
             chart = chart__trendline(element[0], dataCopy);
           break;
