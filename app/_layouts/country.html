@@ -72,6 +72,15 @@ conf:
 
         {% include policies_stats.html %}
 
+        <nav class="sec-nav" ng-if="statsCtrl.states.length > 0">
+          <h2 class="sec-nav__title">States</h2>
+          <ul class="sec-menu">
+            <li ng-repeat="state in statsCtrl.states">
+              <a href="%% statsCtrl.getStateUrl(state) %%" title="{{ t['Go to state page'][language] }}">%% state.name %%</a>
+            </li>
+          </ul>
+        </nav>
+
     </div>
   
   </div>
