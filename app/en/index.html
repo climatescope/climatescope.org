@@ -93,28 +93,36 @@ description: Climatescope a unique country-by-country assessment, interactive re
         </section>
       </div>
 
-      <div class="featured-col featured-col--sec">
+      <div class="featured-col featured-col--sec" ng-app="globalApp">
         <section class="featured-section">
           <h1 class="featured-section__title">Tools</h1>
           <div class="featured-section__body">
-            <ul class="tools-list">
-              {% assign tools = site.en_tools | where:"featured",true %}
-              {% for tool in tools limit:3 %}
-              {% unless tool.hidden == true %}
-              <li>
-                {% if tool.darken %}
-                <article class="feat-tool feat-tool--darken">
-                {% else %}
-                <article class="feat-tool">
-                {% endif %}
-                  <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}{{ tool.link }}" title="View tool page" style="background-image: url({{ site.domain }}{{ site.path_prefix }}/assets/images/content/feat-tools/{{ tool.image }});">
-                    <h1 class="feat-tool__title">{{ tool.title }}</h1>
-                    <p class="feat-tool__summary">{{ tool.description }}</p>
+            <script>
+              // Include tools to be picked up by angular.
+              CS.toolsData = [
+                {% assign tools = site.en_tools %}
+                {% for tool in tools %}
+                {% unless tool.hidden == true %}
+                  {
+                    title: '{{ tool.title }}',
+                    description: '{{ tool.description }}',
+                    image: {% if tool.image %} '{{ site.domain }}{{ site.path_prefix }}/assets/images/content/feat-tools/{{ tool.image }}' {% else %} null {% endif %},
+                    darken: {% if tool.darken %} true {% else %} false {% endif %},
+                    link: '{{ site.domain }}{{ site.path_prefix }}/{{ language }}{{ tool.link }}'
+                  },
+                {% endunless %}
+                {% endfor %}
+              ];
+            </script>
+            <ul class="tools-list" ng-controller="ToolsListController as todoList">
+              <li ng-repeat="tool in todoList.tools" ng-cloak>
+                <article ng-class="{'feat-tool': true, 'feat-tool--darken': tool.darken}">
+                  <a href="%% tool.link %%" title="View tool page" ng-style="tool.image ? {'background-image': 'url(' + tool.image + ')'} : ''">
+                    <h1 class="feat-tool__title">%% tool.title %%</h1>
+                    <p class="feat-tool__summary">%% tool.description %%</p>
                   </a>
                 </article>
               </li>
-              {% endunless %}
-              {% endfor %}
             </ul>
           </div>
         </section>
