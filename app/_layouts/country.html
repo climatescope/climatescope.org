@@ -88,38 +88,38 @@ conf:
   <div class="row--contained">
     
     <!-- Template for the In Detail tab -->
-    <script type="text/ng-template" id="in_detail.html">
+    <script type="text/ng-template" id="enabling-framework.html">
       <section id="country-detail">
         {% include parameter_detail.html %}
       </section>
     </script>
-    
-    <!-- Template for the States tab -->
-    <script type="text/ng-template" id="states.html">
-      {% include state_list_table.html %}
-    </script>
-    
-    <!-- Template for the Case Study tab -->
-    <!-- <script type="text/ng-template" id="case_study.html">
-      <section id="country-case-study">
-        <h1 class="visually-hidden">Case Study</h1>
-        <div class="prose">
-          <p>Case Study content</p>
-        </div>
+
+    <script type="text/ng-template" id="financing-investments.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
       </section>
-    </script> -->
-    
+    </script>
+
+    <script type="text/ng-template" id="value-chains.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <script type="text/ng-template" id="ghg-management.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
     <!-- END TEMPLATES -->
     
-    {% if has_states %}
     <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="CountryTabsController as navCtrl">
-      <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="{{ t['View in detail'][language] }}">{{ t['In detail'][language] }}</a></li>
-      {% if page.id == 'in' %}
-        <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="{{ t['View states'][language] }}">{{ t['States'][language] }}</a></li>
-      {% endif %}
-      <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li> -->
+      <li ng-class="{active: navCtrl.isActive('enabling-framework')}"><a href="#/enabling-framework" title="{{ t['View Enabling framework'][language] }}">{{ t['Enabling framework'][language] }}</a></li>
+      <li ng-class="{active: navCtrl.isActive('financing-investments')}"><a href="#/financing-investments" title="{{ t['View Financing & Investment'][language] }}">{{ t['Financing & Investment'][language] }}</a></li>
+      <li ng-class="{active: navCtrl.isActive('value-chains')}"><a href="#/value-chains" title="{{ t['View Value Chains'][language] }}">{{ t['Value Chains'][language] }}</a></li>
+      <li ng-class="{active: navCtrl.isActive('ghg-management')}"><a href="#/ghg-management" title="{{ t['View GHG Management'][language] }}">{{ t['GHG Management'][language] }}</a></li>
     </ul>
-    {% endif %}
     <div ng-view></div>
   
   </div>
