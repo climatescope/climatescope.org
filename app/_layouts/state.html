@@ -65,8 +65,39 @@ conf:
   </div>
 
   <div class="row--contained">
-    <section id="state-detail" ng-controller="DetailsController as detailsCtrl">
-      {% include parameter_detail.html %}
-    </section>
+    <!-- Template for the In Detail tab -->
+    <script type="text/ng-template" id="enabling-framework.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <script type="text/ng-template" id="financing-investments.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <script type="text/ng-template" id="value-chains.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <script type="text/ng-template" id="ghg-management.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <!-- END TEMPLATES -->
+    <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="StateTabsController as navCtrl">
+      <li ng-class="{active: navCtrl.isActive('enabling-framework')}"><a href="#/enabling-framework" title="{{ t['View Enabling framework'][language] }}">{{ t['Enabling framework'][language] }}</a></li>
+      <li ng-class="{active: navCtrl.isActive('financing-investments')}"><a href="#/financing-investments" title="{{ t['View Financing & Investment'][language] }}">{{ t['Financing & Investment'][language] }}</a></li>
+      <li ng-class="{active: navCtrl.isActive('value-chains')}"><a href="#/value-chains" title="{{ t['View Value Chains'][language] }}">{{ t['Value Chains'][language] }}</a></li>
+      <li ng-class="{active: navCtrl.isActive('ghg-management')}"><a href="#/ghg-management" title="{{ t['View GHG Management'][language] }}">{{ t['GHG Management'][language] }}</a></li>
+    </ul>
+    <div ng-view></div>
+
   </div>
 </div>
