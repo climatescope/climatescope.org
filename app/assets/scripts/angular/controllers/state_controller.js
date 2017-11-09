@@ -259,4 +259,14 @@
 
   }]);
 
+  app.controller('ActionsMenuController', ['$rootScope', '$scope', '$location', function($rootScope, $scope, $location) {
+    $rootScope.$on('$locationChangeSuccess', function() {
+      var currentPath = $location.url();
+      $scope.getUrl = function (baseUrl) {
+        return encodeURIComponent(baseUrl + '#' + currentPath);
+      }
+      // Update language switcher url.
+      updateLangSwitcherUrl(currentPath);
+    });
+  }]);
 })();
