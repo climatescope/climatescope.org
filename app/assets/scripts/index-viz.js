@@ -4,24 +4,9 @@ $(document).ready(function() {
 
     var mapSettings = {
       'world': {
-        mapId: 'climatescope/ciw2u8z4j001x2jl91e0cmk62',
+        mapId: 'climatescope/cj9szsu6f2i752ss0aysk818a',
         zoom: 2,
         center: [0, 0]
-      },
-      'africa': {
-        mapId: 'climatescope/ciw2ut4ed00642kr34v3l4ltg',
-        zoom: 2,
-        center: [10, 0]
-      },
-      'asia': {
-        mapId: 'climatescope/ciw2ut9ji000z2jr16qiwz5p7',
-        zoom: 3,
-        center: [20.63278, 104.0625]
-      },
-      'lac': {
-        mapId: 'climatescope/ciw2v7gwp00202jl9fpka83pf',
-        zoom: 2,
-        center: [-15.6230, -59.0625]
       }
     };
     var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
