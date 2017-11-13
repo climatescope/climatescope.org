@@ -6,6 +6,15 @@ grid: 'on'
 published: true
 region: africa
 ---
+Azerbaijan’s economy is going through turbulent times as lower oil prices and OPEC-wide production cuts are taking a toll on revenue and the country’s currency. Despite considerable initial ambition for renewables development, activity in the sector is being held back by a lack of clarity in the regulatory framework.
+
+In 2011, Azerbaijan set itself the target to reach 20% renewables in power generation by 2020, and 9.7% in final energy consumption. The goals were designed to be aligned with the European Union’s 2020 climate and energy package as part of Azerbaijan’s cooperation with the block under the European Neighborhood Policy and the Council of Europe. As of 2017, it has become clear that the goals will not be met as issues around tariffs, grid connection and the responsibilities of various power sector actors remain unresolved.
+
+The first efforts to introduce a regulatory framework conducive to renewables growth in Azerbaijan came early and were in line with the country’s good resources, notably for wind. The energy sector laws developed between 1996 and 1999 already introduced feed-in tariffs for wind and small hydro and allowed for priority access to the grid. However, this initial effort was not combined with renewables development targets for Azernergy, the vertically integrated state-owned utility that has controlled the energy sector for most of the time since the country’s 1991 independence. In 2009, the Agency for Alternative and Renewable Energy Sources was created to jumpstart activity in the sector. 
+
+The agency successfully developed the country’s first renewable energy projects and PV manufacturing plant, however, much of the clean energy generated has not been able to get onto the main grid as a dispute with the Tariff Authority and Azernerji remains unresolved. The government took new actions in 2016 to start the unbundling of the power sector and is aiming to open up generation to the participation of independent power producers. This could in theory create more opportunities for renewables developers, especially in areas away from the Baku peninsula where existing power sector infrastructure is aging. However, the level of resolve and pace at which the government is expected to liberalize the sector is uncertain in light of the wider challenges the country is going through.
+
+Azerbaijan is a signatory of the Paris agreement. The country committed to reduce its emissions by 35% from their 1990 levels by 2030, unconditionally.    
 
 
 ###Score summary
