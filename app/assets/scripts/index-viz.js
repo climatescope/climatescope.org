@@ -7,9 +7,35 @@ $(document).ready(function() {
         mapId: 'climatescope/cj9szsu6f2i752ss0aysk818a',
         zoom: 2,
         center: [0, 0]
+      },
+      'africa': {
+        mapId: 'climatescope/cj9yg7oz97lkm2sp7qn934ute',
+        zoom: 3,
+        center: [-8.146, 18.457]
+      },
+      'asia': {
+        mapId: 'climatescope/cj9yg7k8c7lf42rtcaqtl9yif',
+        zoom: 3,
+        center: [20.63278, 104.0625]
+      },
+      'eu': {
+        mapId: 'climatescope/cj9ygdq897lma2sqpn4gyaocy',
+        zoom: 3,
+        center: [55.1286,69.873]
+      },
+      'lac': {
+        mapId: 'climatescope/cj9ygdaua5bqu2rnv8buwrlfv',
+        zoom: 2,
+        center: [-15.6230, -59.0625]
+      },
+      'me': {
+        mapId: 'climatescope/cj9ygdumj7l392sk61075ommt',
+        zoom: 5,
+        center: [29, 33.892]
       }
     };
-    var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
+    var region = getQueryString().region;
+    var mapConf = region ?  mapSettings[region] : mapSettings.world;
     var map = L.mapbox.map('index-viz')
           .setView(mapConf.center, mapConf.zoom)
 
@@ -17,7 +43,7 @@ $(document).ready(function() {
 
     L.mapbox.accessToken = "pk.eyJ1IjoiY2xpbWF0ZXNjb3BlIiwiYSI6ImNpdzJmb2dwcjBhMzQyenBia2E1azBjODUifQ.9I6shKgqM1xeBA13VX5a4g"
 
-    L.mapbox.styleLayer('mapbox://styles/' + mapConf.mapId, {
+    L.mapbox.styleLayer(`mapbox://styles/${mapConf.mapId}`, {
                           minZoom: 1,
                           bounds: [
                             [84.812743, -178.629215],
@@ -55,7 +81,7 @@ $(document).ready(function() {
         });
 
         var grid_code = d.grid == 'on' ? '<em class="label-grid label-grid-on" data-title="' + CS.t("On-grid") + '"><span>' + CS.t("On-grid") + '</span></em>' : '<em class="label-grid label-grid-off" data-title="' + CS.t("Off-grid") + '"><span>' + CS.t("Off-grid") + '</span></em>';
-
+        console.log(d)
         return [
           '<article class="tooltip-inner">',
             '<header class="tooltip__header">',
@@ -68,7 +94,7 @@ $(document).ready(function() {
               '<dl class="params-legend">',
                 '<dt>' + CS.t("Global rank") + '</dt>',
                 '<dd>' + d.score[0].overall_ranking + '</dd>',
-                '<dt>' + CS.t("Global score") + '</dt>',
+                '<dt>' + CS.t("Score") + '</dt>',
                 '<dd>' + formatThousands(d.score[0].value, 2) + '</dd>',
                 param_code,
               '</dl>',
@@ -140,9 +166,15 @@ $(document).ready(function() {
     // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
       land = topojson.feature(geography, geography.objects.centroids).features;
+      indicators = countryRank;
 
-      // If there's a region, the countries are inside an object.
-      indicators = CS.regionId ? countryRank.countries : countryRank;
+      // Filter countries if region is set on the url.
+      var region = getQueryString().region;
+      if (region) {
+        indicators = indicators.filter(function(o) {
+          return o.region.id === region;
+        });
+      }
 
       // Sort parameters.
       $.each(indicators, function(index, country) {

@@ -65,3 +65,13 @@ function formatThousands(number, decimals) {
   }
   return d3.format(',.' + decimals + 'f')(number);
 }
+
+function getQueryString() {
+  var query = window.location.search.substring(1);
+  var pieces = query.split('&');
+  return pieces.reduce(function(acc, piece) {
+    var split = piece.split('=');
+    acc[split[0]] = split[1];
+    return acc;
+  }, {});
+}
