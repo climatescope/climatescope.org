@@ -37,7 +37,7 @@ $(document).ready(function() {
 
     L.mapbox.accessToken = "pk.eyJ1IjoiY2xpbWF0ZXNjb3BlIiwiYSI6ImNpdzJmb2dwcjBhMzQyenBia2E1azBjODUifQ.9I6shKgqM1xeBA13VX5a4g"
 
-    L.mapbox.styleLayer('mapbox://styles/climatescope/ciw2u8z4j001x2jl91e0cmk62', {
+    L.mapbox.styleLayer('mapbox://styles/climatescope/cj9szsu6f2i752ss0aysk818a', {
                           minZoom: 1,
                           bounds: [
                             [84.812743, -178.629215],
