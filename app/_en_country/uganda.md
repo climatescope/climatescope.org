@@ -20,16 +20,3 @@ Credit-enhancement and support instruments are available to the private sector f
 Uganda has one of the lowest electrification rates in Africa, remaining at 18.2% in 2016. Under the Strategy and Plan covering 2013-22, the Rural Electrification Agency aims to connect over 1.4m customers to the main grid. The Agency plans to increase today’s 7% rural electrification rate to 26% by 2022, with the ultimate goal of universal access by 2035. It is also in the process of building micro-grids to connect an additional 144,000 off-grid customers via solar PV, micro-hydro and biomass generation financed by private developers or local communities.
 
 The solar PV market in Uganda has steadily grown over the last 15 years with new players, including foreign investors, entering the market. The lack of grid access in rural areas and the growth of telecoms, which facilitates mobile payment and monitoring systems, are structural factor that have benefited off-grid solar development. Policy measures such as tax exemptions for equipment for solar and wind generation and subsidies for end-users have also supported expansion of the sector. However, many players complain that these mechanisms are poorly implemented, often creating additional challenges. Biofuels production has been lacklustre to date. However a biofuels blending bill has been introduced by the government and is expected to pass into law in 2017. This should support development of production capacity on top of an 18mLpa bioethanol plant that was commissioned in September 2016.
-
-###Score summary
-
-Uganda was placed 17th on Climatescope 2017, down from seventh in 2016. Its score of 1.47 ranked it fifth among the 19 African nations assessed, having taken second place last year, behind only South Africa. The land-locked East African nation saw dramatic declines on both Clean Energy Investment and Climate Financing Parameter II as well as Greenhouse Gas Management Activities Parameter IV. 
-
-In contrast, the country gained nine places on Enabling Framework Parameter I to take 10th overall. This reflected the presence of supportive clean energy policies, including feed-in tariffs, and the ongoing unbundling and privatisation of its power sector structure. Installed renewable capacity grew 16% in 2016 to 172MW (mostly small hydro and biomass plants), yet the output from these assets declined by a small margin.
-
-On Parameter II, the country plummeted 21 places to 30th as the volume of funds flowing into the sector slumped by 73% to $76m (from $284m the previous year). Other factors dragging the score lower included the country’s high average cost of debt (22.6%) and lack of local investment.
-
-Uganda also dropped out of the top 10 on Low-Carbon Business & Clean Energy Value Chains Parameter III, sliding five places to 13th. The country’s relatively small renewable equipment manufacturing base weakened the score, but the presence of a wide range of service providers offset this somewhat. 
-
-On Parameter IV the country suffered a steep decline, tumbling 34 places to 47th from 13th a year earlier. The country has not incorporated an emissions reduction strategy into its Nationally Determined Contribution and does not have a domestic climate change policy. 
-
