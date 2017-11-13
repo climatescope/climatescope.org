@@ -37,15 +37,3 @@ Zambia is part of the Southern Africa Power Pool and trades energy with the othe
 Zambia’s levels of access to energy are low: 74% of people live without access to electricity. The Rural Electrification Agency (REA) is charged with raising rural energy access from 3.1% in 2003 to 51% in 2030, under a masterplan finalised in 2008. National access is about 26% today and the REA estimates 4.4% in rural areas. The government estimated that REA would require $50m/year to meet its 2030 goals. Unfortunately, the Agency is hugely underfunded, receiving approx. $12.3m in the 2016 budget. There is a lot of commercial interest in the off-grid market – several companies are selling solar lanterns, home systems and products at different sizes and price points.
 
 Zambia is a signatory to the UNFCCC Paris Agreement (albeit a few months later than most of the other nations). In its Intended Nationally Determined Contribution (INDC), it committed to a total emissions reduction of 38 mega tonnes CO2(eq), or 47%. It estimates a budget of $50 billion by 2030 to meet these goals, with $35 billion of this coming from external sources. The three pillars of its plan are sustainable forest management, sustainable agriculture and renewable energy and energy efficiency. The Interim Inter-Ministerial Climate Change Secretariat has responsibility for co-ordinating climate change adaptation and mitigation efforts in the country and is part of the Ministry of Finance.
-
-###Score summary
-
-Zambia scored 1.07 in Climatescope 2016, a slight increase on the previous year and a reflection of an improved performance on Enabling Framework Parameter I. Overall, however, the country slid five places to 39<sup>th</sup>.
-
-On Parameter I, Zambia’s score increased, thanks partly to improvements in its distributed clean energy framework and partly because of a better performance on the Barriers indicator, specifically the reduction in import duty.
-
-The country’s score on Clean Energy Investment and Climate Financing Parameter II saw a modest increase. However, it dropped four places to 43<sup>rd</sup>, a ranking that reflects an absence of investment since 2011 and relatively high interest rates.
-
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Zambia’s score declined marginally and lost five places to rank 28<sup>th</sup>. The number of clean energy value chains present in the country fell slightly. 
-
-On Greenhouse Gas Management Activities Parameter IV, the country’s score increased slightly thanks to the introduction of an emissions reduction target. It ranked 25<sup>th</sup> globally, three places lower than in 2015.
