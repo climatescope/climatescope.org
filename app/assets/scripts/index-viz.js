@@ -4,26 +4,32 @@ $(document).ready(function() {
 
     var mapSettings = {
       'world': {
+        mapId: 'climatescope/cj9szsu6f2i752ss0aysk818a',
         zoom: 2,
         center: [0, 0]
       },
       'africa': {
+        mapId: 'climatescope/cj9yg7oz97lkm2sp7qn934ute',
         zoom: 3,
         center: [-8.146, 18.457]
       },
       'asia': {
+        mapId: 'climatescope/cj9yg7k8c7lf42rtcaqtl9yif',
         zoom: 3,
         center: [20.63278, 104.0625]
       },
       'eu': {
+        mapId: 'climatescope/cj9ygdq897lma2sqpn4gyaocy',
         zoom: 3,
         center: [55.1286,69.873]
       },
       'lac': {
+        mapId: 'climatescope/cj9ygdaua5bqu2rnv8buwrlfv',
         zoom: 2,
         center: [-15.6230, -59.0625]
       },
       'me': {
+        mapId: 'climatescope/cj9ygdumj7l392sk61075ommt',
         zoom: 5,
         center: [29, 33.892]
       }
@@ -37,7 +43,7 @@ $(document).ready(function() {
 
     L.mapbox.accessToken = "pk.eyJ1IjoiY2xpbWF0ZXNjb3BlIiwiYSI6ImNpdzJmb2dwcjBhMzQyenBia2E1azBjODUifQ.9I6shKgqM1xeBA13VX5a4g"
 
-    L.mapbox.styleLayer('mapbox://styles/climatescope/cj9szsu6f2i752ss0aysk818a', {
+    L.mapbox.styleLayer(`mapbox://styles/${mapConf.mapId}`, {
                           minZoom: 1,
                           bounds: [
                             [84.812743, -178.629215],
