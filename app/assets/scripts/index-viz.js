@@ -422,6 +422,12 @@ $(document).ready(function() {
 
       var keys = $.map(land[0].rank.parameters, function(d) { return d.id; });
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
+        // Update param weight to update the tooltip.
+        for (var j = 0; j < land[i].rank.parameters.length; j++) {
+          var p = land[i].rank.parameters[j];
+          p.weight = weight['param-' + p.id] / 100;
+        }
+
         d = land[i].parameters;
 
         land[i].rank.score[0].value = (
