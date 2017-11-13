@@ -75,7 +75,7 @@ $(document).ready(function() {
         });
 
         var grid_code = d.grid == 'on' ? '<em class="label-grid label-grid-on" data-title="' + CS.t("On-grid") + '"><span>' + CS.t("On-grid") + '</span></em>' : '<em class="label-grid label-grid-off" data-title="' + CS.t("Off-grid") + '"><span>' + CS.t("Off-grid") + '</span></em>';
-
+        console.log(d)
         return [
           '<article class="tooltip-inner">',
             '<header class="tooltip__header">',
@@ -88,7 +88,7 @@ $(document).ready(function() {
               '<dl class="params-legend">',
                 '<dt>' + CS.t("Global rank") + '</dt>',
                 '<dd>' + d.score[0].overall_ranking + '</dd>',
-                '<dt>' + CS.t("Global score") + '</dt>',
+                '<dt>' + CS.t("Score") + '</dt>',
                 '<dd>' + formatThousands(d.score[0].value, 2) + '</dd>',
                 param_code,
               '</dl>',
