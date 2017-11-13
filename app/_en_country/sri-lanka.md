@@ -19,15 +19,3 @@ The CEB has also been expanding its grid (which is currently at 98% electrificat
 2016 saw important growth for solar PV in Sri Lanka, with 40 MW of grid-scale additions and an estimated 50 MW of rooftop mounted systems throughout the country. The government has set forth its ‘Battle for Solar’ program, which offers different schemes, including an attractive feed-in tariff for rooftop solar systems. 60 additional 1MW projects are currently being tendered by the CEB, although is unclear if the relative small scale of the projects will attract competitive offers.
 
 The power sector in Sri Lanka is somewhat monopolistic, with the transmission and distribution companies completely state-owned. There is a significant presence of private players in generation, however, development permits have proved difficult to obtain due to authorization that is required from a number of relevant land and environmental agencies as well as from the CEB itself, which has cited concerns regarding system balancing and stability. The Sustainable Energy Authority is currently tasked with mitigating these barriers by helping developers identify sites, carry out feasibility and technical studies and ultimately obtain permits.
-
-###Score summary
-
-Sri Lanka scored 1.38 in Climatescope 2016, a slight improvement on its score the previous year. Nevertheless, it dropped two places to 27<sup>th</sup> on the list of countries overall. Its strongest performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
-
-On Enabling Framework Parameter I, Sri Lanka’s score increased and it gained two places to rank 38<sup>th</sup>. The score was supported by its clean energy policies, such as net metering, but limited by the lack of a clean energy rural electrification programme and energy access policies.
-
-Sri Lanka’s score on Clean Energy Investment and Climate Financing Parameter II fell and it dropped fourteen places down the order to rank 25<sup>th</sup>. This chiefly reflected the absence of any new investment, loans or grants in the sector in 2015. 
-
-On Parameter III, the country’s score was marginally lower than in 2015, unchanged at 12<sup>th</sup> place. The relatively high number of value chains and service providers was offset by a lack of activity in the distributed energy sector.
-
-On Greenhouse Gas Management Activities Parameter IV, Sri Lanka’s score increased sharply and it climbed seventeen  places to rank 28<sup>th</sup>. Its solid performance was largely due to the introduction of a raft of carbon policies, including a GHG emissions reduction target.
