@@ -21,14 +21,3 @@ Stakeholders in the sector in Nigeria welcome the new regulation for a market th
 
 In 2015 it was estimated that Nigeria was emitting 2 tons of CO2e per capita per year, which the government expects to rise to 3.4 tons of CO2e per capita by 2030 under its business as usual (BAU) scenario. The unconditional BAU target is to reduce emissions by 20% by 2030 and the conditional target is to reduce emissions by 45%. Nigeria's BAU target covers all six key mitigation measures of the greenhouse gases covered by the Kyoto protocol. The focus of emission reduction activities is put on energy efficiency, ending flaring in fossil fuel extraction activities, agriculture, transport and the deployment of renewable energy.
 
-#### Score summary
-
-Nigeria scored 1.34 in Climatescope 2016 and ranked 30<sup>th</sup> on the list of countries overall. This was a descent of eighteen places and largely reflected the country’s low score on Clean Energy Investment and Climate Financing Parameter II, which plummeted in the absence of new investment.
- 
-On Enabling Framework Parameter I, the country’s score fell slightly and the country dropped twelve places in the ranking. Nevertheless, the Policy and Regulation category saw some modest improvements, for instance in its tax regime and distributed energy framework.
-
-In a reversal of the scenario in the previous year, Nigeria’s score on Parameter II tumbled to less than a quarter of its 2015 tally as new investment failed to materialise. It dropped forty-four places to rank 51<sup>st</sup> out of the 58 nations surveyed for Climatescope 2016.
-
-The country score on Low-Carbon Business & Clean Energy Value Chains Parameter III remained unchanged, ranking 13<sup>th</sup> and fourth amongst African nations.
-
-Nigeria’s only positive performance was on Greenhouse Gas Management Activities Parameter IV. It climbed seven places to 24<sup>th</sup> thanks to improved scores in the Corporate Awareness category.
