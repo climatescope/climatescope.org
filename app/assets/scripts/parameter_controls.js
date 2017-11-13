@@ -49,7 +49,7 @@ $(document).ready(function() {
 
   check_sticky();
 
-  var appElement = document.querySelector('[ng-app=globalApp]');
+  var appElement = document.querySelector('[data-hook=countryScope]');
   var globalAppScope = angular.element(appElement).scope();
   // Slider group for homepage.
   $('.slider-group').sliderGroup({

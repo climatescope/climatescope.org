@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Results
+   ========================================================================== */
+
+.layout--results__title {
+  white-space: normal;
+
+  > * {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  em {
+    font-style: normal;
+
+    > a {
+      display: inline-block;
+      vertical-align: top;
+
+      span {
+        @extend .truncated;
+        max-width: 24rem;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+  }
+
+  .dropdown-toggle::after {
+    font-size: 2rem;
+  }
+
+  .dropdown-content {
+    text-transform: none;
+  }
+}

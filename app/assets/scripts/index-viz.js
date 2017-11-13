@@ -4,27 +4,32 @@ $(document).ready(function() {
 
     var mapSettings = {
       'world': {
-        mapId: 'climatescope/ciw2u8z4j001x2jl91e0cmk62',
         zoom: 2,
         center: [0, 0]
       },
       'africa': {
-        mapId: 'climatescope/ciw2ut4ed00642kr34v3l4ltg',
-        zoom: 2,
-        center: [10, 0]
+        zoom: 3,
+        center: [-8.146, 18.457]
       },
       'asia': {
-        mapId: 'climatescope/ciw2ut9ji000z2jr16qiwz5p7',
         zoom: 3,
         center: [20.63278, 104.0625]
       },
+      'eu': {
+        zoom: 3,
+        center: [55.1286,69.873]
+      },
       'lac': {
-        mapId: 'climatescope/ciw2v7gwp00202jl9fpka83pf',
         zoom: 2,
         center: [-15.6230, -59.0625]
+      },
+      'me': {
+        zoom: 5,
+        center: [29, 33.892]
       }
     };
-    var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
+    var region = getQueryString().region;
+    var mapConf = region ?  mapSettings[region] : mapSettings.world;
     var map = L.mapbox.map('index-viz')
           .setView(mapConf.center, mapConf.zoom)
 
@@ -32,7 +37,7 @@ $(document).ready(function() {
 
     L.mapbox.accessToken = "pk.eyJ1IjoiY2xpbWF0ZXNjb3BlIiwiYSI6ImNpdzJmb2dwcjBhMzQyenBia2E1azBjODUifQ.9I6shKgqM1xeBA13VX5a4g"
 
-    L.mapbox.styleLayer('mapbox://styles/' + mapConf.mapId, {
+    L.mapbox.styleLayer('mapbox://styles/climatescope/ciw2u8z4j001x2jl91e0cmk62', {
                           minZoom: 1,
                           bounds: [
                             [84.812743, -178.629215],
@@ -155,9 +160,15 @@ $(document).ready(function() {
     // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
       land = topojson.feature(geography, geography.objects.centroids).features;
+      indicators = countryRank;
 
-      // If there's a region, the countries are inside an object.
-      indicators = CS.regionId ? countryRank.countries : countryRank;
+      // Filter countries if region is set on the url.
+      var region = getQueryString().region;
+      if (region) {
+        indicators = indicators.filter(function(o) {
+          return o.region.id === region;
+        });
+      }
 
       // Sort parameters.
       $.each(indicators, function(index, country) {

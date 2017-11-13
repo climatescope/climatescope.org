@@ -16,12 +16,80 @@
 
     var url = CS.domain + '/' + CS.lang + '/api/countries.json';
     $http.get(url).success(function(data) {
-      _self.countries = data;
+      // Filter countries if region is set on the url.
+      var region = getQueryString().region;
+      if (region) {
+        _self.countries = data.filter(function(o) {
+          return o.region.id === region;
+        });
+      } else {
+        _self.countries = data;
+      }
     });
   }]);
 
   app.controller('ToolsListController', function() {
     this.tools = arrayShuffle(CS.toolsData).slice(0, 3);
+  });
+
+  app.controller('ResultsPageController', function() {
+    var _self = this;
+
+    this.options = [
+      {
+        id: null,
+        name: 'All regions'
+      },
+      {
+        id: 'asia',
+        name: 'Asia'
+      },
+      {
+        id: 'africa',
+        name: 'Africa'
+      },
+      {
+        id: 'eu',
+        name: 'Europe'
+      },
+      {
+        id: 'lac',
+        name: 'Latin America and The Caribbean'
+      },
+      {
+        id: 'me',
+        name: 'Middle East'
+      }
+    ];
+
+    this.getPath = function (base, opt) {
+      if (opt.id) {
+        return base + '?region=' + opt.id;
+      }
+
+      return base;
+    };
+
+    switch (getQueryString().region) {
+      case 'asia':
+        this.selectedRegion = 'Asia';
+        break;
+      case 'africa':
+        this.selectedRegion = 'Africa';
+        break;
+      case 'eu':
+        this.selectedRegion = 'Europe';
+        break;
+      case 'lac':
+        this.selectedRegion = 'Latin America and The Caribbean';
+        break;
+      case 'me':
+        this.selectedRegion = 'Middle East';
+        break;
+      default:
+        this.selectedRegion = 'All regions';
+        break;
+    }
   });
 })();
 
