@@ -64,7 +64,8 @@ conf:
     </div>
   
     <div class="col--sec prose-copy" ng-controller="StatsController as statsCtrl" ng-cloak>
-        <h2>{{ t['Performance'][language] }}</h2>
+      <section class="sec-section">
+        <h2 class="sec-section__title">{{ t['Performance'][language] }}</h2>
         <dl class="stats-list">
           <dt>{{ t['Overall Rank'][language] }}</dt>
           <dd>%% statsCtrl.countryStats.overall_ranking | leadingZero:2 %%</dd>
@@ -74,18 +75,29 @@ conf:
         <ul class="ctas-list">
           <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/compare/#?compare={{ page.id }}" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
         </ul>
+      </section>
 
-        {% include policies_stats.html %}
+      <section class="sec-section policies-type-stats">
+        <h2 class="sec-section__title">{{ t['Policies'][language] }}</h2>
+        <ul class="policies-type-list">
+          <li class="policies-type-wrapper" ng-repeat="mecha in statsCtrl.pMechanisms">
+            <div class="policy-type" ng-if="mecha.count == 0"><span>%% mecha.name %%</span></div>
+            <a class="policy-type active" ng-if="mecha.count > 0" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.id | upcase }}" title="{{ t['View policies'][language] }}"><span>%% mecha.name %%</span></a>
+          </li>
+        </ul>
+        <ul class="ctas-list">
+          <li><a class="bttn bttn-m bttn-cta policies-bttn-va" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.id | upcase }}" title="{{ t['View policies'][language] }}">{{ t['View all'][language] }} <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
+        </ul>
+      </section>
 
-        <nav class="sec-nav" ng-if="statsCtrl.states.length > 0">
-          <h2 class="sec-nav__title">States</h2>
-          <ul class="sec-menu">
-            <li ng-repeat="state in statsCtrl.states">
-              <a href="%% statsCtrl.getStateUrl(state) %%" title="{{ t['Go to state page'][language] }}">%% state.name %%</a>
-            </li>
-          </ul>
-        </nav>
-
+      <nav class="sec-nav" ng-if="statsCtrl.states.length > 0">
+        <h2 class="sec-nav__title">States</h2>
+        <ul class="sec-menu">
+          <li ng-repeat="state in statsCtrl.states">
+            <a href="%% statsCtrl.getStateUrl(state) %%" title="{{ t['Go to state page'][language] }}">%% state.name %%</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   
   </div>
