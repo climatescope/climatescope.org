@@ -94,10 +94,18 @@ conf:
 
     <!-- END TEMPLATES -->
     <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="StateTabsController as navCtrl">
-      <li ng-class="{active: navCtrl.isActive('enabling-framework')}"><a href="#/enabling-framework" title="{{ t['View Enabling framework'][language] }}">{{ t['Enabling framework'][language] }}</a></li>
-      <li ng-class="{active: navCtrl.isActive('financing-investments')}"><a href="#/financing-investments" title="{{ t['View Financing & Investment'][language] }}">{{ t['Financing & Investment'][language] }}</a></li>
-      <li ng-class="{active: navCtrl.isActive('value-chains')}"><a href="#/value-chains" title="{{ t['View Value Chains'][language] }}">{{ t['Value Chains'][language] }}</a></li>
-      <li ng-class="{active: navCtrl.isActive('ghg-management')}"><a href="#/ghg-management" title="{{ t['View GHG Management'][language] }}">{{ t['GHG Management'][language] }}</a></li>
+      <li ng-class="{active: navCtrl.isActive('enabling-framework')}">
+        <a href="#/enabling-framework" title="{{ t['View Enabling framework'][language] }}"><span>Enabling</span> <span>framework</span></a>
+      </li>
+      <li ng-class="{active: navCtrl.isActive('financing-investments')}">
+        <a href="#/financing-investments" title="{{ t['View Financing & Investment'][language] }}"><span>Financing &</span> <span>Investment</span></a>
+      </li>
+      <li ng-class="{active: navCtrl.isActive('value-chains')}">
+        <a href="#/value-chains" title="{{ t['View Value Chains'][language] }}"><span>Value</span> <span>Chains</span></a>
+      </li>
+      <li ng-class="{active: navCtrl.isActive('ghg-management')}">
+        <a href="#/ghg-management" title="{{ t['View GHG Management'][language] }}"><span>GHG</span> <span>Management</span></a>
+      </li>
     </ul>
     <div ng-view></div>
 
