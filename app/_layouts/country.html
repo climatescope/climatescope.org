@@ -77,18 +77,7 @@ conf:
         </ul>
       </section>
 
-      <section class="sec-section policies-type-stats">
-        <h2 class="sec-section__title">{{ t['Policies'][language] }}</h2>
-        <ul class="policies-type-list">
-          <li class="policies-type-wrapper" ng-repeat="mecha in statsCtrl.pMechanisms">
-            <div class="policy-type" ng-if="mecha.count == 0"><span>%% mecha.name %%</span></div>
-            <a class="policy-type active" ng-if="mecha.count > 0" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.id | upcase }}" title="{{ t['View policies'][language] }}"><span>%% mecha.name %%</span></a>
-          </li>
-        </ul>
-        <ul class="ctas-list">
-          <li><a class="bttn bttn-m bttn-cta policies-bttn-va" href="{{ site.domain }}{{ site.path_prefix }}/en/policies/#/?country={{ page.id | upcase }}" title="{{ t['View policies'][language] }}">{{ t['View all'][language] }} <span class="badge">%% statsCtrl.policyCount %%</span></a></li>
-        </ul>
-      </section>
+      {% include policies_stats.html %}
 
       <nav class="sec-nav" ng-if="statsCtrl.states.length > 0">
         <h2 class="sec-nav__title">States</h2>

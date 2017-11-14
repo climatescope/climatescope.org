@@ -48,16 +48,18 @@ conf:
     </div>
 
     <div class="col--sec prose-copy" ng-controller="StatsController as statsCtrl" ng-cloak>
-      <h2>{{ t['Performance'][language] }}</h2>
-      <dl class="stats-list">
-        <dt>{{ t['State Rank'][language] }}</dt>
-        <dd>%% statsCtrl.stateStats.state_ranking | leadingZero:2 %%</dd>
-        <dt>{{ t['Score'][language] }}</dt>
-        <dd>%% statsCtrl.stateStats.value | round:2 %%</dd>
-      </dl>
-      <ul class="ctas-list">
-        <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/compare/#?compare={{ page.id }}" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
-      </ul>
+      <section class="sec-section">
+        <h2 class="sec-section__title">{{ t['Performance'][language] }}</h2>
+        <dl class="stats-list">
+          <dt>{{ t['State Rank'][language] }}</dt>
+          <dd>%% statsCtrl.stateStats.state_ranking | leadingZero:2 %%</dd>
+          <dt>{{ t['Score'][language] }}</dt>
+          <dd>%% statsCtrl.stateStats.value | round:2 %%</dd>
+        </dl>
+        <ul class="ctas-list">
+          <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/compare/#?compare={{ page.id }}" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
+        </ul>
+      </section>
 
       {% include policies_stats.html %}
 
