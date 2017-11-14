@@ -101,7 +101,7 @@
           </thead>
           <tbody ng-repeat="ind_group in param.indicator_groups">
             <tr>
-              <th class="cell-hd" colspan="5">%% ind_group.name %%</th>
+              <th class="cell-hd" colspan="6">%% ind_group.name %%</th>
             </tr>
             <tr ng-repeat="ind in ind_group.indicators" ng-class="{disabled: !ind.active}">
               <td class="cell-ind">%% ind.name %%</td>
