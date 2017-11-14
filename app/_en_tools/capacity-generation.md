@@ -3,5 +3,6 @@ title: Capacity Generation
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 link: /capacity-generation
 
-image:
+image: feat-tool-thumb--capacity-generation.jpg
+darken: true
 ---

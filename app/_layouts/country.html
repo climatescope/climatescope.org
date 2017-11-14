@@ -28,7 +28,7 @@ conf:
     CS.countryHasStates = {{has_states}};
 </script>
 
-<div ng-app="countryApp">
+<div>
   <div class="row--full intro">
     <div class="row--contained">
       <dl class="meta-details" ng-controller="ProfileController as profCtrl" ng-cloak>
@@ -64,7 +64,8 @@ conf:
     </div>
   
     <div class="col--sec prose-copy" ng-controller="StatsController as statsCtrl" ng-cloak>
-        <h2>{{ t['Performance'][language] }}</h2>
+      <section class="sec-section">
+        <h2 class="sec-section__title">{{ t['Performance'][language] }}</h2>
         <dl class="stats-list">
           <dt>{{ t['Overall Rank'][language] }}</dt>
           <dd>%% statsCtrl.countryStats.overall_ranking | leadingZero:2 %%</dd>
@@ -74,9 +75,18 @@ conf:
         <ul class="ctas-list">
           <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/compare/#?compare={{ page.id }}" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
         </ul>
+      </section>
 
-        {% include policies_stats.html %}
+      {% include policies_stats.html %}
 
+      <nav class="sec-nav" ng-if="statsCtrl.states.length > 0">
+        <h2 class="sec-nav__title">States</h2>
+        <ul class="sec-menu">
+          <li ng-repeat="state in statsCtrl.states">
+            <a href="%% statsCtrl.getStateUrl(state) %%" title="{{ t['Go to state page'][language] }}">%% state.name %%</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   
   </div>
@@ -84,38 +94,46 @@ conf:
   <div class="row--contained">
     
     <!-- Template for the In Detail tab -->
-    <script type="text/ng-template" id="in_detail.html">
+    <script type="text/ng-template" id="enabling-framework.html">
       <section id="country-detail">
         {% include parameter_detail.html %}
       </section>
     </script>
-    
-    <!-- Template for the States tab -->
-    <script type="text/ng-template" id="states.html">
-      {% include state_list_table.html %}
-    </script>
-    
-    <!-- Template for the Case Study tab -->
-    <!-- <script type="text/ng-template" id="case_study.html">
-      <section id="country-case-study">
-        <h1 class="visually-hidden">Case Study</h1>
-        <div class="prose">
-          <p>Case Study content</p>
-        </div>
+
+    <script type="text/ng-template" id="financing-investments.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
       </section>
-    </script> -->
-    
+    </script>
+
+    <script type="text/ng-template" id="value-chains.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <script type="text/ng-template" id="ghg-management.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
     <!-- END TEMPLATES -->
     
-    {% if has_states %}
     <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="CountryTabsController as navCtrl">
-      <li ng-class="{active: navCtrl.isActive('details')}"><a href="#/details" title="{{ t['View in detail'][language] }}">{{ t['In detail'][language] }}</a></li>
-      {% if page.id == 'in' %}
-        <li ng-class="{active: navCtrl.isActive('states')}"><a href="#/states" title="{{ t['View states'][language] }}">{{ t['States'][language] }}</a></li>
-      {% endif %}
-      <!-- <li ng-class="{active: navCtrl.isActive('case_study')}"><a href="#/case-study" title="Case study">Case study</a></li> -->
+      <li ng-class="{active: navCtrl.isActive('enabling-framework')}">
+        <a href="#/enabling-framework" title="{{ t['View Enabling framework'][language] }}"><span>Enabling</span> <span>framework</span></a>
+      </li>
+      <li ng-class="{active: navCtrl.isActive('financing-investments')}">
+        <a href="#/financing-investments" title="{{ t['View Financing & Investment'][language] }}"><span>Financing &</span> <span>Investment</span></a>
+      </li>
+      <li ng-class="{active: navCtrl.isActive('value-chains')}">
+        <a href="#/value-chains" title="{{ t['View Value Chains'][language] }}"><span>Value</span> <span>Chains</span></a>
+      </li>
+      <li ng-class="{active: navCtrl.isActive('ghg-management')}">
+        <a href="#/ghg-management" title="{{ t['View GHG Management'][language] }}"><span>GHG</span> <span>Management</span></a>
+      </li>
     </ul>
-    {% endif %}
     <div ng-view></div>
   
   </div>

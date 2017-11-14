@@ -871,6 +871,14 @@ a:active{
 
 #section-switch {
   margin-bottom: 3rem;
+
+  a span {
+    display: block;
+
+    @media #{$xlarge-up} {
+      display: inline-block;
+    }
+  }
 }
 
 .layout--entry.country,

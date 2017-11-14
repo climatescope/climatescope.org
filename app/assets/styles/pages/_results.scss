@@ -3,7 +3,16 @@
    ========================================================================== */
 
 .layout--results__title {
-  white-space: normal;
+  display: block;
+  white-space: nowrap;
+
+  > span {
+    display: block;
+
+    @media #{$xlarge-up} {
+      display: inline-block;
+    }
+  }
 
   > * {
     display: inline-block;
@@ -19,7 +28,7 @@
 
       span {
         @extend .truncated;
-        max-width: 24rem;
+        max-width: 32rem;
         display: inline-block;
         vertical-align: top;
       }
