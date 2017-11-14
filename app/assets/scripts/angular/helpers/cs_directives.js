@@ -22,14 +22,14 @@
           case 'clean_energy_investments':
             chart = chart__clean_energy_investments(element[0], dataCopy);
           break;
-          case 'carbon_offset':
-            chart = chart__carbon_offset(element[0], dataCopy);
-          break;
           case 'trendline':
             chart = chart__trendline(element[0], dataCopy);
           break;
           case 'price_attractiveness_electricity':
             chart = chart__price_attractiveness_electricity(element[0], scope.chartData);
+          break;
+          case 'score-summary':
+            chart = chart__score_summary(element[0], scope.chartData);
           break;
         }
 

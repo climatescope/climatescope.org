@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Clean energy and the Paris Promises
-description:
+description: The 2015 Paris Agreement saw virtually every nation on earth pledge to address the threat of climate change.
 published: true
 download_source: null 
 

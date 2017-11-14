@@ -6,7 +6,7 @@
 
   <thead>
     <tr>
-      <th class="th-rank"><a href="" title="{{ t['Sort by rank'][language] }}" ng-click="countryTable.setSortExpression('score[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('score[0].overall_ranking')]">{{ t['Rank'][language] }}</a></th>
+      <th class="th-rank"><a href="" title="{{ t['Sort by rank'][language] }}" ng-click="countryTable.setSortExpression('score[0].overall_ranking')" class="sort" ng-class="[countryTable.checkSortClasses('score[0].overall_ranking')]">{{ t['Global rank'][language] }}</a></th>
       <th class="th-country"><a href="" title="{{ t['Sort by country'][language] }}" ng-click="countryTable.setSortExpression('name')" class="sort" ng-class="[countryTable.checkSortClasses('name')]">{{ t['Country'][language] }}</a></th>
       <th class="th-score"><a href="" title="{{ t['Sort by global score'][language] }}" ng-click="countryTable.setSortExpression('score[0].value')" class="sort" ng-class="[countryTable.checkSortClasses('score[0].value')]">{{ t['Score'][language] }}</a></th>
       <th>{{ t['Trend'][language] }}</th>

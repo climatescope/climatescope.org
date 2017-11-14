@@ -85,3 +85,14 @@ function updateLangSwitcherUrl(new_url) {
     $(this).attr('href', url);
   });
 };
+
+
+function getQueryString() {
+  var query = window.location.search.substring(1);
+  var pieces = query.split('&');
+  return pieces.reduce(function(acc, piece) {
+    var split = piece.split('=');
+    acc[split[0]] = split[1];
+    return acc;
+  }, {});
+}

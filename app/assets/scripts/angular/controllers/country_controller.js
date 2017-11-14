@@ -56,11 +56,13 @@
   // Module
   var countryAppControllers = angular.module('countryAppControllers', []);
   
-  countryAppControllers.controller('DescriptionController', [function() {
+  countryAppControllers.controller('DescriptionController', ['CountryData', function(CountryData) {
+    var _self = this;
     var fakeScope = {};
     // We only want to get a single method out of this.
     setupCommonParamDetailTableMethods(fakeScope);
     this.toggleExpandable = fakeScope.toggleExpandable;
+    this.chartSummary = null;
 
     // Note: This is not the angular way of doing things.
     // However moving everything to a directive would prove to be to great
@@ -75,6 +77,53 @@
         $('.prose-copy-actions .bttn').remove();
       }
     };
+
+    CountryData.get(function(data) {
+      // Global country score
+      var valuesData = [{
+        id: 'country',
+        name: 'Overall score',
+        values: data.score
+      }];
+
+      var ids = [
+        null,
+        'enabling-framework',
+        'financing-investments',
+        'value-chains',
+        'ghg-management'
+      ];
+
+      valuesData = valuesData
+        .concat(data.parameters.map(function(param) {
+          return {
+            id: ids[param.id],
+            name: param.name,
+            values: param.data
+          };
+        }));
+
+      // Clone to avoid messing with the data.
+      valuesData = JSON.parse(JSON.stringify(valuesData));
+      // Reverse data.
+      valuesData = valuesData.map(function(o) {
+        o.values.reverse();
+        return o;
+      });
+
+      var chData = {
+        data: valuesData,
+        meta: {
+          'label-x': 'year',
+          'label-y': 'score',
+          title: 'Score Summary'
+        },
+        iso: data.iso,
+        name: data.name
+      };
+      chart__score_summary.prepareData(chData);
+      _self.chartSummary = chData;
+    });
   }]);
   
   countryAppControllers.controller('ProfileController', ['$http', function($http) {

@@ -44,6 +44,12 @@
                 <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-data-hub" title="Use the Off-grid Data Hub">Off-grid Data Hub</a>
               </li>
               <li>
+                <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/clean-energy-investments" title="Use the Clean Energy Investment">Clean Energy Investment</a>
+              </li>
+              <li>
+                <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/capacity-generation" title="Use the Capacity Generation">Capacity Generation</a>
+              </li>
+              <li>
                 {% assign pg = site.pages | where:"id","policies" | where:"lang",language | first %}
                 <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['Browse the policy database'][language] }}">{{ t['Policies'][language] }}</a>
               </li>
