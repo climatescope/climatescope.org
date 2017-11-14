@@ -1,14 +1,8 @@
 {% assign en_coll = site.collections[page.collection].i18n.en %}
 {% case en_coll %}
-{% when 'en_country' or 'en_state' or 'en_parameter' or 'en_region' %}
+{% when 'en_country' or 'en_state' %}
   {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/climatescope-full-2016.csv{% endcapture %}
   {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/climatescope-{{ site.edition }}-report-{{ language }}.pdf{% endcapture %}
-
-{% when 'en_region' %}
-  {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/regions/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
-
-{% when 'en_parameter' %}
-  {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/topics/climatescope-{{ site.edition }}-topic-{{ page.id }}.pdf{% endcapture %}
 
 {% endcase %}
 

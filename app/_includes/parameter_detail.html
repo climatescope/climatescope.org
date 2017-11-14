@@ -4,7 +4,7 @@
 
   <header class="param-details__header">
       <div class="param-details__heading">
-        <h1 class="param-details__title"><a href="%% detailsCtrl.getParamUrl(param) %%" title="{{ t['Go to topic page'][language] }}">%% param.name %%</a></h1>
+        <h1 class="param-details__title">%% param.name %%</h1>
       </div>
       <dl class="param-details__stats">
         <dt>{{ t['Score'][language] }}</dt>
@@ -105,7 +105,7 @@
           </thead>
           <tbody ng-repeat="ind_group in param.indicator_groups">
             <tr>
-              <th class="cell-hd" colspan="5">%% ind_group.name %%</th>
+              <th class="cell-hd" colspan="6">%% ind_group.name %%</th>
             </tr>
             <tr ng-repeat="ind in ind_group.indicators" ng-class="{disabled: !ind.active}">
               <td class="cell-ind">%% ind.name %%</td>

@@ -17,14 +17,11 @@ exclude:
 
 name:
   en:           Climatescope
-  es:           Climascopio
 description:
   en:           The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
-  es:           El Climascopio es un análisis a fondo de 55 países a nivel mundial y un informe e índice interactivo que evalúa el clima de inversión para las energías limpias.
 keywords:
   en:           Climatescope, Clean Energy, Investment, Latin America and the Caribbean, Climate Change, Investment Climate, Green Economy, Greenhouse Gas Management, Carbon Management, Clean Energy, Low-Carbon Business, Value Chain, Renewables, Climate Financing, Multilateral Investment Fund, Inter-American Development Bank, Bloomberg New Energy Finance, DfiD, Power Africa
-  es:           Climascopio, Energía Limpia, Inversion, América Latina y el Caribe, Cambio Climático, Clima de Inversión, Economía Verde, Gestión Gases de Efecto Invernadero, Negocios de Bajo Carbono, Energía Limpia, Cadenas de Valor, Financiamiento Climático, Renovables, Fondo Multilateral de Inversiones, Banco Interamericano de Desarrollo, Bloomberg New Energy Finance, DfiD, Power Africa
-edition:        2016
+edition:        2017
 
 defaults:
   ## Start blog defaults
@@ -45,87 +42,26 @@ defaults:
       layout: blog
   -
     scope:
-      path: "es"
-      type: "posts"
-    values:
-      permalink: /es/blog/:year/:month/:day/:title
-      layout: blog
-  -
-    scope:
       path: "_posts/en"
     values:
       lang: en
-  -
-    scope:
-      path: "_posts/es"
-    values:
-      lang: es
+
   ## END blog defaults
 
 collections:
-  en_region:
-    output: true
-    permalink: /en/region/:path/
-    lang: en
-    i18n:
-      en: en_region
-      es: es_region
-    
-  es_region:
-    output: true
-    permalink: /es/region/:path/
-    lang: es
-    i18n:
-      en: en_region
-      es: es_region
-      
   en_country:
     output: true
     permalink: /en/country/:path/
     lang: en
     i18n:
       en: en_country
-      es: es_country
-      
-  es_country:
-    output: true
-    permalink: /es/pais/:path/
-    lang: es
-    i18n:
-      en: en_country
-      es: es_country
-      
+
   en_state:
     output: true
     permalink: /en/country/:path/
     lang: en
     i18n:
       en: en_state
-      es: es_state
-      
-  es_state:
-    output: true
-    permalink: /es/pais/:path/
-    lang: es
-    i18n:
-      en: en_state
-      es: es_state
-      
-  en_parameter:
-    output: true
-    permalink: /en/topic/:path/
-    lang: en
-    i18n:
-      en: en_parameter
-      es: es_parameter
-      
-  es_parameter:
-    output: true
-    permalink: /es/tema/:path/
-    lang: es
-    i18n:
-      en: en_parameter
-      es: es_parameter
 
   en_page:
     output: true
@@ -133,26 +69,23 @@ collections:
     lang: en
     i18n:
       en: en_page
-      es: es_page
-      
-  es_page:
-    output: true
-    permalink: /es/:path/
-    lang: es
-    i18n:
-      en: en_page
-      es: es_page
 
   en_off-grid:
     output: true
     permalink: /en/off-grid-quarterly/:path/
     lang: en
     i18n:
-      en: en_page
+      en: en_off-grid
 
   en_insights:
     output: true
     permalink: /en/insights/:path/
     lang: en
     i18n:
-      en: en_page
+      en: en_insights
+
+  en_tools:
+    output: false
+    lang: en
+    i18n:
+      en: en_tools

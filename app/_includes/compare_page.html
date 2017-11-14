@@ -65,11 +65,11 @@
           <em class="label-grid label-grid-off" ng-if="compareCtrl.compareSelected[0].grid == 'off'"><span>{{ t['Off-grid'][language] }}</span></em>
 
           <dl class="stats-list">
-            <dt>{{ t['Global rank'][language] }}</dt>
+            <dt>{{ t['Rank'][language] }}</dt>
             <dd>%% (compareCtrl.compareSelected[0].score[0].overall_ranking | round:2)  || '-' %%</dd>
             <dt>{{ t['State Rank'][language] }}</dt>
             <dd>%% (compareCtrl.compareSelected[0].score[0].state_ranking | round:2)  || '-' %%</dd>
-            <dt>{{ t['Global score'][language] }}</dt>
+            <dt>{{ t['Score'][language] }}</dt>
             <dd>%% compareCtrl.compareSelected[0].score[0].value | round:2 %%</dd>
 
             <dt ng-repeat-start="param in compareCtrl.compareSelected[0].parameters" ng-class="'param-' + param.id">%% param.name %%</dt>

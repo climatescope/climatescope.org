@@ -3,7 +3,7 @@ published: true
 postId: POWER FOR ALL
 title: Tapping Into Data to Tackle Electricity Poverty - POWER FOR ALL
 
-description: Tapping Into Data to Tackle Electricity Poverty - POWER FOR ALL
+description: An estimated 1.2 billion people do not have access to electricity and more than 95% of those living without electricity are in countries in sub-Saharan Africa and developing Asia.
 ---
 
 An estimated 1.2 billion people – 16% of the global population – do not have access to electricity and more than 95% of those living without electricity are in countries in sub-Saharan Africa and developing Asia, and they are predominantly in rural areas (around 80% of the world’s unelectrified total). While still far from complete, progress in providing electrification in urban areas has outpaced that in rural areas two to one since 2000. So achieving universal energy access and unlocking its subsequent benefits will invariably require a concerted focus on serving rural communities.

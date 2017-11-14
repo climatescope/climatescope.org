@@ -75,7 +75,6 @@ $(document).ready(function() {
           '<article class="tooltip-inner">',
             '<header class="tooltip__header">',
               '<h1 class="tooltip__title"><a href="' + CS.countryIndex[d.iso] +'" title="' + CS.t("View country") + '">' + d.name + '</a></h1>',
-              '<p class="tooltip__subtitle">' + d.region.name + '</p>',
               grid_code,
               '<a href="#" title="' + CS.t("Close") + '" class="close" onClick="return false;"><span>' + CS.t("Close") + '</span></a>',
             '</header>',
@@ -132,9 +131,6 @@ $(document).ready(function() {
     var undef = void 0;
 
     var countryListUrl = CS.domain + '/' + CS.lang + '/api/countries.json';
-    if (CS.regionId) {
-      countryListUrl = CS.domain + '/' + CS.lang + '/api/regions/' + CS.regionId + '.json';
-    }
 
     // two switches to detect whether marker is clicked,
     // and whether mouse is over tooltip
