@@ -931,12 +931,12 @@ a:active{
   }
   @media #{$xlarge-up} {
     .media {
-      margin: -2rem 4rem -2rem 0;
+      margin: -2rem 0 -2rem 0;
     }
   }
   @media #{$xxlarge-up} {
     .media {
-      margin: -2rem 6rem -2rem 0;
+      margin: -2rem 0 -2rem 0;
     }
   }
 }

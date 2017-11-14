@@ -7,6 +7,7 @@
       container: container,
       attributionControl: false,
       interactive: false,
+      logoPosition: 'bottom-right',
       style: {
         version: 8,
         sources: {
@@ -57,7 +58,7 @@
               'visibility': 'visible',
               'text-field': '{name}',
               'text-font': [
-                'Open Sans Regular'
+                'Arial Unicode MS Regular'
               ],
               'text-offset': [0, -1]
             },
@@ -78,7 +79,7 @@
         [bbox[0], bbox[1]],
         [bbox[2], bbox[3]]
       ], {
-        padding: {top: 10, bottom: 10, left: 10, right: 10}
+        padding: {top: 10, bottom: 10, left: 0, right: 0}
       })
     });
   }  
