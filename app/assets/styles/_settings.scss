@@ -22,17 +22,17 @@ $base-alpha-color: rgba($base-color, 0.12);
 
 $link-color: $secondary-color;
 
-$infograph-color-a: #C3AC4B;						            // yellow				solar
-$infograph-color-b: #4B9A94;						            // turquoise		biomass
-$infograph-color-c: #146786;						            // blue					large hydro
-$infograph-color-d: #8B6D91;						            // purple				small hydro
-$infograph-color-e: #83549a;						            // purp					geothermal
-$infograph-color-f: #eb4d4a;						            // red					nuclear
-$infograph-color-g: #92d4ee;						            // lblue				wind
-$infograph-color-h: #af856e;						            // brown				fossil
-$infograph-color-i: #a8a8a8;						            // light grey		coal
-$infograph-color-j: #f99d6c;						            // orange				natural gas
-$infograph-color-k: #625959;						            // grey					oil
+$infograph-color-a: #C3AC4B;                        // yellow       solar
+$infograph-color-b: #4B9A94;                        // turquoise    biomass
+$infograph-color-c: #146786;                        // blue         large hydro
+$infograph-color-d: #8B6D91;                        // purple       small hydro
+$infograph-color-e: #83549a;                        // purp         geothermal
+$infograph-color-f: #eb4d4a;                        // red          nuclear
+$infograph-color-g: #92d4ee;                        // lblue        wind
+$infograph-color-h: #af856e;                        // brown        fossil
+$infograph-color-i: #a8a8a8;                        // light grey   coal
+$infograph-color-j: #f99d6c;                        // orange       natural gas
+$infograph-color-k: #625959;                        // grey         oil
 
 // We use these to control various global styles
 $body-bg: tint($primary-color, 95%);
