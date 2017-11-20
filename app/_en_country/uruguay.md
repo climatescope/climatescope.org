@@ -25,12 +25,13 @@ Other renewable energy incentives include a value added tax exemption for wind g
 
 ###Score summary
 
-Uruguay scored 2.29 in Climatescope 2016, a substantial increase on its 2015 tally of 1.69. The country climbed four places to rank 4<sup>th</sup> overall, and most notably, it took the number one spot globally on Enabling Framework Parameter I.
+Uruguay dropped five places on Climatescope 2017 to rank ninth with a score of 1.83. The country, which is reliant on large hydro schemes for much of its power, was placed fourth among the 26 Latin American and Caribbean nations assessed, down from third the previous year. It was weaker on all but one of the four parameters, and was strongest on Enabling Framework Parameter I. 
 
-The country’s score on Parameter I was 2.55, up from 2.04 the year before. This world-beating total reflected the presence of policies such as tax incentives and auctions, as well as its supportive power sector structure. 
+It took third place worldwide on Parameter I, relinquishing the top spot to Rwanda. The country’s high score reflects the presence of policies such as net metering and tax incentives, and its openness to independent power producers, among other things. It also reflects the 28% increase in installed capacity (predominantly wind) to 1.7GW in 2016. 
 
-On Clean Energy Investment and Climate Financing Parameter II, Uruguay took 3<sup>rd</sup> place with a score of 2.14. Slightly more than $1.3bn was invested in the sector in 2015, a similar amount to the two previous years.
+On Clean Energy Investment and Climate Financing Parameter II, Uruguay slid three places to sixth. The volume of investment remained high at $1.12bn in 2016, but this represented a decline of 36% compared with the $1.75bn invested the previous year. The absence of loans and grants undermined the score, as did the relatively high average cost of debt. 
 
-The country scored 1.41 and was placed 31<sup>st</sup> on Low-Carbon Business & Clean Energy Value Chains Parameter III, its lowest position in 2016. Several project developers were present, but very little equipment manufacturing.
+The country took 31st place on Low-Carbon Business & Clean Energy Value Chains Parameter III, unchanged on the previous year. While there are engineers and project developers in most renewable energy sectors, there are few equipment manufacturing businesses. Similarly, the country is not well served by service providers. 
 
-On Greenhouse Gas Management Activities Parameter IV, Uruguay was ranked 8<sup>th</sup> thanks to its considerable carbon-offsetting activities and policies, including a GHG emissions reduction target and Partnership for Market Readiness initiatives.
+On Greenhouse Gas Management Activities Parameter IV, Uruguay fell from eighth place in 2016 to 46th overall. The country does not have any domestic climate change policies, regulations or incentives in place. However, its Nationally Determined Contribution has set an unconditional target to cut emissions per unit of GDP by 25% by 2030, compared with 1990 levels.
+

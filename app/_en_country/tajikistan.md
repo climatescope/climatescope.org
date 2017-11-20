@@ -16,15 +16,3 @@ Tajikistan struggles with power shortages in winter, when the large hydro plants
 On 25 June 2013, the Asian Development Bank approved a $10 million grant to Tajikistan for the promotion of smart green energy solutions (SGES) in households through soft loans. The Ministry of Finance has established a project management unit to channel the funds to micro-finance institutions (MFIs). The grant includes project implementation support of $1.2 million, and $8.8 million for five-year local currency credit lines to selected MFIs that will then channel funds to rural households. The interest rate on the credit lines will be the National Bank of Tajikistan refinancing rate, currently 9% but it will be reset annually. The MFIs will also tie up with NGOs, suppliers and manufacturers of SGES. The fund works well for energy-efficiency projects: rural residents have been making use of the credit line to install plastic windows and doors. However, for renewable technologies it has proved less effective: only eight solar PV installations of 2-3kW each have been supported by the scheme so far. This is due to the high cost of the equipment and still expensive credit of 24-26% APR.
 
 Tajikistan also extends various tax benefits to hydro plant developers. Imported goods for the construction of hydropower stations are exempt from VAT and customs duty. For the period of construction of a hydropower station, the builders and construction contractors (including employees) that are not citizens of Tajikistan are exempt from VAT, profit tax, minimum income tax, as well as land, road, vehicle, real estate and social tax. Also, manufacturers, irrespective of the goods produced, are exempt from profit tax for a number of years after registration, based on the amount of investment they make.
-
-###Score summary
-
-Tajikistan scored 0.67 in Climatescope 2016, a minor improvement on the previous year. It placed 53<sup>rd</sup> on the list of countries overall, seven places lower than in 2015. Its best performance by far was on Greenhouse Gas Management Activities Parameter IV.
-
-On Enabling Parameter I, the country’s score slid. Its weakness in this area – it ranked 56<sup>th</sup> out of 58 countries – reflects its unreformed state-owned power system, with minimal clean energy and distributed energy policies. 
-
-Tajikistan also placed 56<sup>th</sup> on Clean Energy Investment and Climate Financing Parameter II. Between 2011 and 2015, its clean energy sector did not attract any investment, and only a very small volume of loans and grants. The average cost of debt is very high at almost 26%.
-
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country’s score fell and it lost eight places to take 54<sup>th</sup>. The only sector represented among the handful of value chains is small hydro. 
-
-Tajikistan’s score more than doubled on Parameter IV and it rose seventeen places to rank 22<sup>nd</sup>. This was largely due to the introduction of an emission reduction target and market-based policies to deliver GHG mitigation.

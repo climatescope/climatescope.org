@@ -27,12 +27,13 @@ According to Jordan’s Intended Nationally Determined Contribution (INDC) commi
 
 ###Score summary
 
-Jordan scored 1.87 in Climatescope 2016. It took 11<sup>th</sup> place on the list of countries overall, and its highest position was on Enabling Framework Parameter I.
+Jordan’s score of 2.17 was one of the stand-out performances of Climatescope 2017. It climbed eight places to rank third globally, behind only Brazil and China. It overtook Chile, Uruguay and South Africa, all of which were in placed in the top five in 2016. Its biggest improvement was on Greenhouse Gas Management Activities Parameter IV.
 
-On Parameter I, the country took 4<sup>th</sup> place globally, with a score of 2.32. It has a wide-ranging set of policies that include utility regulation, clean energy targets, tax incentives, capacity auctions and net metering.
+On Enabling Framework Parameter I, Jordan maintained its top five ranking. It climbed from fourth place to second with a score of 2.28, being narrowly beaten to the top spot by Rwanda. It performed well thanks to the presence of numerous clean energy policies, such as net metering and tax incentives. Its score was also boosted by the addition of almost 200MW of wind and more than 400MW of solar capacity in 2016. 
 
-Jordan ranked 10<sup>th</sup> overall on Clean Energy Investment and Climate Financing Parameter II. This reflects substantial recent investment ($409m in 2015), which increased the total invested in the sector since 2011 by 44.5%.
+Jordan was ranked number one globally on Clean Energy Investment and Climate Financing Parameter II, up from 10th last year. This reflected the more than $1.1bn invested in new solar, wind and biomass power generating capacity. Additional positive factors included the country’s low average cost of debt, the presence of loan and grant programmes and the fact that local investors are putting money into the sector.
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country’s relatively high score reflected the presence of a number of clean energy value chains and service companies. It took 27<sup>th</sup> place globally. 
+The country’s worst performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III. It took 38th place, a decline of 11 places from 2016, reflecting the low number of renewable energy equipment manufacturing businesses and dearth of companies offering services such as testing and certification. 
 
-On Greenhouse Gas Management Activities Parameter IV, Jordan was placed 45<sup>th</sup> overall. It has set a GHG emissions reduction target and is engaged in carbon-offsetting activity.
+Jordan jumped 25 places on Parameter IV to rank 20th. Its Nationally Determined Contribution sets a goal to reduce its emissions by 14% below ‘business as usual’ by 2030 (conditional on international financial aid), or by 1.5% unconditionally. This goal is not backed up by a long-term strategy or a domestic climate change policy.
+

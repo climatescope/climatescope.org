@@ -23,14 +23,3 @@ The Dominican Republic also has a net metering program, which allows retail elec
 
 On August 18, 2015, the government of the Dominican Republic submitted its Intended Nationally Determined Contribution to the United Nations, committing to cut greenhouse gas (GHG) emissions by 25% by 2030, compared with 2010 levels. This reduction is conditional upon favorable and predictable support, feasible climate finance mechanisms and corrections to the failures of existing market mechanisms. To achieve the target, an estimated $17 million of mitigation actions in the energy, transport, forestry, tourism, solid waste and cement sectors will be required.
 
-###Score summary
-
-The Dominican Republic scored 1.20 in Climatescope 2016, an improvement of 0.18 on its total the year before. It edged down two places to 34<sup>th</sup> on the list of 58 nations, and its biggest improvement was on Clean Energy Investment and Climate Financing Parameter II.
-
-The country’s score on Enabling Framework Parameter I increased by 0.20 to 1.46, and it was placed 24<sup>th</sup>, unchanged from the previous survey. It has a supportive power sector structure that is open to independent power producers and has finance available. 
-
-On Parameter II the Dominican Republic scored 0.73, a dramatic improvement on its score of 0.26 the year before that saw it jump eighteen places to 24<sup>th</sup>. This reflected $126m of new investment, all of which went to finance wind projects. 
-
-The Dominican Republic’s score edged slightly higher on Low-Carbon Business & Clean Energy Value Chains Parameter III, but it slipped one spot to 49<sup>th</sup>. There is a scattering of manufacturers and project developers present, but no service providers. 
-
-The country’s score fell on Greenhouse Gas Management Activities Parameter IV and it dropped seven places to 19<sup>th</sup>. It was strongest in the Carbon Offsetting category.

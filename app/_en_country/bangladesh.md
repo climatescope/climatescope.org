@@ -21,14 +21,3 @@ The government has pledged to tender sites on its own land, and there are around
 
 The government’s grid extension programme means officially 74% of people have electricity access as of 2015. But this disguises chronic power shortages and load shedding. The Infrastructure Development Company Limited (IDCOL) has successfully rolled out solar home systems by financing partner organisations to offer 3-year micro-credit to end consumers. There is high potential for more recent IDCOL programmes on solar irrigation, and to a lesser extent mini-grids. The government’s “500MW by 2016” solar programme is moving slowly, with around 150MW of utility-scale project having been tendered.
 
-###Score summary
-
-Bangladesh scored 1.40 in Climatescope 2016, placing it 25<sup>th</sup> among countries overall. Its score was higher than on the previous year’s survey, yet it dropped one place on the list. Its best performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
-
-On Enabling Framework Parameter I, Bangladesh was placed 25<sup>th</sup>.The country’s off-grid policies, in particular those related to energy access and distributed power, supported its score in this category. 
-
-On Clean Energy Investment and Climate Financing Parameter II, its score dropped as new money for the sector failed to materialise in 2015. It was ranked a relatively poor 45<sup>th</sup>.
-
-Bangladesh’s score on Low-Carbon Business & Clean Energy Value Chains Parameter III edged slightly higher and it was placed 16<sup>th</sup>, reflecting the presence of a relatively large number of value chains and service providers. 
-
-On Parameter IV its score increased and it took 18<sup>th</sup> place as further corporate awareness initiatives and carbon mitigation measures were introduced.

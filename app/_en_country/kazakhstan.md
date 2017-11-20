@@ -20,3 +20,20 @@ The government is embarking upon a renewed liberalisation agenda that seeks to m
 
 The development of the renewable project pipeline has been slow, despite the rush to secure power purchasing agreements (PPA). To date, more than 100 projects with a cumulative capacity of over 3GW have signed PPAs, but many developers have not conducted the necessary work to ensure their projects are viable. Developers have also found it difficult to bank projects even with the award of a PPA, as uncertainty persists around the creditworthiness of the Financial Settlement Center (the government counterparty through which fixed tariffs will be paid) and the volatility of the Kazakh Tenge. The government has moved to solve these problems by capitalising the FSC and indexing fixed tariffs to inflation and the USD/KZT exchange rate, but it remains to be seen if these changes will ameliorate the perceived financial risks.
 A further complication is that the government has stated its intention to move away from fixed tariffs and towards competitive auctions. It is currently unclear what the timeline will be for auctions to be introduced, or what will happen to the existing pipeline of projects awarded fixed tariff PPAs. Projects much be commissioned within 36 months of being awarded a PPA, so it may be the case that auctions are gradually introduced as undeveloped capacity falls out of the project pipeline over time.
+
+
+###Score summary
+
+Kazakhstan scored 0.82 in Climatescope 2017, placing it 54th out of the 71 countries assessed worldwide and 10th among the 17 Asian nations surveyed. It was the highest ranked of the five former Soviet Central Asian Republics, four of which are included in the project for the first time. The country’s strongest performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
+
+The country’s power sector is dominated by a single state-owned utility generator and a state-run transmission monopoly. Private sector participation is permitted, but the barriers to entry are high.
+
+On Enabling Framework Parameter I, Kazakhstan scored 0.84 and was ranked 56th overall. The country has put supportive measures in place, but they have been relatively ineffectual to date. Weaknesses include concerns about the creditworthiness of the body tasked with delivering the feed-in tariff subsidies, and the distant target date of 2050 to achieve 50% of power from renewables. 
+The country’s worst performance was on Clean Energy Investment and Climate Financing Parameter II. It scored 0.20, ranking it in the bottom 10 globally. This reflects the absence of investment in 2016. However, since 2012, there has been investment of almost $500m in the country as well as loans and grants of $221m.
+
+On Parameter III, it scored 1.95 and took 33rd place overall, placing it in top 50% of the countries assessed. This reflects the wide range of financial institutions involved in clean energy and the presence of a variety of on-grid clean energy service providers.
+
+The country also performed relatively well on Greenhouse Gas Management Activities Parameter IV, managing 36th place. This was partly thanks its signing of the Paris Agreement in 2015 and establishment of a Nationally Determined Contribution. The lack of a domestic climate change policy undermined its score, however. 
+
+
+

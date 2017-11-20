@@ -20,15 +20,3 @@ India ratified the Paris agreement on October 2, 2016. The Intended Nationally D
 A tax of INR 400 ($ 6.24) is levied on each metric ton of coal imported or produced in India and is placed in the National Clean Energy Fund (NCEF). The tax makes coal more expensive and helps mobilise funds that can be used for promotion of renewable energy and the environment, however it remains unclear to whom and how they will be distributed. This tax is expected to create an additional income of $3.9 billion for the federal government in 2016-17. Between 2010-11 and 2016-17, $1.8 billion was allocated to MNRE from the NCEF.
 
 The National Mission for Enhanced Energy Efficiency (NMEEE), one of the eight missions under the National Action Plan on Climate Change (NAPCC), has created policies to incentivise energy efficiency initiatives. It targets total avoided capacity addition of almost 20GW and fuel savings of approximately 23 million metric tons per year. The ministry of Power along with the India Smart Grid Force also started 14 smart grid projects and one Smart City R&D platform. In the transport sector, the government intends to have an electric vehicle policy in place by December 2017 with the aim to achieve an extremely ambitious goal of an all-electric vehicle fleet by 2030.
-
-###Score summary
-
-India scored 2.17 in Climatescope 2016, an improvement on its score the previous year. This placed it 6<sup>th</sup> on the list of countries overall, down one from the previous year. Its strongest performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
-
-On Enabling Framework Parameter I, India scored 1.85 and gained two places to rank 9<sup>th</sup>. This reflected, among other things, a number of positive features in its power sector structure, such as independent power transmission and a wholesale power market.
-
-India ranked 15<sup>th</sup> on Clean Energy Investment and Climate Financing Parameter II. It saw $11.2bn of new money in 2015, which was split almost evenly between the wind and solar sectors, and up from approximately $9bn in 2014.
-
-On Parameter III, the country placed 2<sup>nd</sup> globally, behind only China. Its clean energy sector is exceptionally well developed, with 34 value chains and 19 service providers. 
-
-The country’s score on Greenhouse Gas Management Activities Parameter IV improved thanks, in part, to an increase in Clean Development Mechanism activities. It was ranked 9<sup>th</sup>.

@@ -32,12 +32,13 @@ Curtailment of renewables appeared in Chile in August 2015. Since then, wind and
 
 ###Score summary
 
-Chile scored 2.36 in Climatescope 2016, placing it 2<sup>nd</sup> on the list of 58 countries, beneath only China. (In 2015, it managed 3<sup>rd</sup> with a score of 1.97.) The country was in the top 10 on all parameters, and achieved its highest ranking on Greenhouse Gas Management Activities Parameter IV.
+Chile dropped five places on Climatescope 2017. Its score of 1.96 placed it seventh out of the 71 nations surveyed, down from second the year before. Among the 26 Latin American and Caribbean nations surveyed, it ranked behind only Brazil and Mexico. Its performance was weaker on three out of the four parameters.
 
-On Enabling Framework Parameter I, Chile earned a higher score, but it slipped three places to 7<sup>th</sup>. It has a supportive power structure, for instance it is open to independent power producers, and importantly it added more than 3GW of clean energy capacity in 2015.
+On Enabling Framework Parameter I, it fell to 15th from seventh the previous year. The presence of a wholesale power market, sector unbundling and privatisation of utilities supported the score. Clean energy policies, including net metering and tax incentives, were also positive. Set against these factors was a 4.2% decline in the volume of renewable power generated in 2016. 
 
-The country’s score more than doubled on Clean Energy Investment and Climate Financing Parameter II and it climbed from 8<sup>th</sup> to 5<sup>th</sup> position. This reflected $3.3bn of new investment, chiefly in solar.
+Chile’s best performance was on Clean Energy Investment and Climate Financing Parameter II. It took 10th place, having been fifth in 2016. This partially reflected a 72% drop in the volume of financing recorded to $1,208m from $4,321m in the preceding 12 months. The country’s low average cost of debt and swap rate were supportive, as was the volume of local investment.
 
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Chile’s score improved slightly but its position in the ranking remained the same. The country is served by a wide variety of manufacturers and developers.  
+The only parameter on which Chile did not decline was Low-Carbon Business & Clean Energy Value Chains Parameter III. It remained in 11th place owing to the wide range of financial institutions and service providers present, as well as the 22 value chains that cover at least some aspects of all sectors.
 
-The country’s score on Parameter IV jumped to 3.21 from 3.05, and it took 2<sup>nd</sup> place globally, behind only South Africa with 3.39. It has adopted a broad range of carbon policies and is engaged in considerable carbon offsetting activity.
+Chile’s most dramatic decline was on Greenhouse Gas Management Activities Parameter IV, where it descended from second place last year to 16th. The score received support from the coverage, type and ambition of its Nationally Determined Contribution, but was let down by the lack of a domestic climate change policy.
+

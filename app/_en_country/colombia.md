@@ -25,15 +25,3 @@ On the international stage, Colombia has committed to cut its CO2 emissions agai
 In its INDC, the government also pledged a further reduction of GHG emissions by 30% below the BAU scenario by 2030. However, this target is conditioned to the direct financial support from wealthier nations. Since 2013, Colombia has been working on developing a system for monitoring, reporting and verification for GHG emission reductions and climate financing. As of May 2017, the country was in the process of defining the objectives, mitigation measures and principles of the system.
 
 In June 2016, Colombia’s Ministry of Mines and Energy (UPME) published a roadmap for directing smart grid investment through 2030. The plan focuses on four areas: smart metering roll-out, distribution automation, distributed energy integration and electric vehicle adoption. UPME anticipates that by 2030 the planned investment will reduce outages from an average of 29.5 hours per year per Colombian household to 5.4 hours.
-
-###Score summary
-
-Colombia scored 1.45 in Climatescope 2016, placing it 22<sup>nd</sup> on the list of 58 countries, down from 19<sup>th</sup>  the previous year. Its score in 2015 was 1.39. The country achieved it highest ranking on Greenhouse Gas Management Activities Parameter IV.
-
-On Enabling Framework Parameter I, Colombia’s score made modest gains but it slipped one spot to 27<sup>th</sup>. An additional energy access policy and a modest increase in the volume of installed capacity were supportive factors. 
-
-The country’s score on Clean Energy Investment and Climate Financing Parameter II fell slightly, and it slid eleven places to 39<sup>th</sup>. This reflects the absence of new investment in 2015, having seen more than $100m in each of the two preceding years, as well as a slight rise in the average cost of debt. 
-
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Colombia’s score rose slightly but its ranking dropped by one place to rank 23<sup>rd</sup>. A wide range of value chains are covered.  
-
-The country’s score on Parameter IV was slightly lower, and it fell two notches to a still-strong 7<sup>th</sup>. It has adopted a broad range of carbon policies and has engaged in considerable carbon offsetting activity.

@@ -21,15 +21,3 @@ The auctions have been the main driver for renewable energy investment in the co
 
 In 2015, the first auctioned projects started to come online. The country’s first wind farm, of 53MW, was commissioned in April, and a 23MW wind farm came online in December. Additionally, two large-scale PV plants (30MW and 50MW) and four hydro plants (totaling 40MW) were commissioned, increasing the country’s renewable share.
 
-
-###Score summary
-
-Guatemala scored 1.49 in Climatescope 2016, an increase of 0.09 on its total the year before. It placed 21<sup>st</sup> overall, down three from its position in the previous survey. The country’s strongest performance by far was on Enabling Framework Parameter I.
-
-Its score on Parameter I increased to 2.11 from 1.34, and it gained thirteen places to 6<sup>th</sup> position. This reflects the addition of 1,144MW of new capacity, mainly in the form of biomass and small hydro, and supportive policies, including net metering and energy auctions.
-
-In contrast, Guatemala’s score plunged on Clean Energy Investment and Climate Financing Parameter II, and it sank to 26<sup>th</sup> place, having been 4<sup>th</sup> in 2015. Investment of $95m was recorded, down sharply from more than $600m in 2015. 
-
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country’s score was unchanged at 1.22, which put it in 40<sup>th</sup> place on par with El Salvador and down five from the year before. A few manufacturers and developers are present in the country.
-
-On Greenhouse Gas Management Activities Parameter IV, Guatemala’s score rose and it gained two places to 21<sup>st</sup>. Its carbon offsetting activity helped to support its position, which was limited by a lack of carbon policies.

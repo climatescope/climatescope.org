@@ -18,15 +18,3 @@ The government does not lack of incentives to expedite the licensing process as 
 Historically, this situation has created a boon for retailers of diesel gensets and even, despite it being illegal, retailers of electricity produced by groups of diesel gensets. Together they are estimated to generate around 23% of the electricity consumed in Lebanon. However, this has also driven adoption of small scale PV solutions which are estimated to account for more than 20MW of installed capacity in 2016 with at least a further 10MW in development. The national energy efficiency and renewable energy action, an initiative of 
 
 Lebanon’s central bank the Banque du Liban, was decisive in kicking off activity in the sector. The programme which involves 20 commerfcial banksoffers quasi-interest free loans (around 0.6%) of up to $20m that can be combined to grants for periods of no more than 14 years including a grace period of up to 4 years and 6 months. The government expects that between 50MW and 170MW of distributed solar PV capacity will be installed by 2020.
-
-###Score summary
-
-Lebanon scored 1.02 in Climatescope 2016, placing it 40<sup>th</sup> on the list of countries overall. Its highest ranking was on Low-Carbon Business & Clean Energy Value Chains Parameter III.
-
-On Enabling Framework Parameter I, the country ranked 51<sup>st</sup> , reflecting its low power prices and small volume of clean energy generating capacity. It has energy generation targets and a policy on net metering, as well as debt/equity incentives.
-
-On Clean Energy Investment and Climate Financing Parameter II, Lebanon took 32<sup>nd</sup>  place, thanks chiefly to the relatively low average cost of debt at around 7%. There is no record of any clean energy investment between 2011 and 2015. 
-
-Lebanon performed well on Parameter III – it ranked 26<sup>th</sup>  overall – thanks to the diversity of the sector’s value chains and the number of service providers. 
-
-The country took 33<sup>rd</sup>  position on Greenhouse Gas Management Activities Parameter IV. Its score was supported by a strong showing on the Clean Development Mechanism indicator and the presence of a GHG emissions reduction target.

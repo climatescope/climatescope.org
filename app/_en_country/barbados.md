@@ -21,14 +21,3 @@ Barbados’ electricity market is managed by the Barbados Light & Power Company 
 
 While electricity demand is expected to grow by an average of 1.2% per year, 104MW of installed capacity is scheduled for retirement over the next three years. In 2012, the Barbados Declaration on Achieving Sustainable Energy for All in Small Island Developing States included a commitment to increase the share of renewable energy in its energy mix. It set a non-legally binding target to get 29% of all electricity consumption from renewable sources by 2029. In addition, it committed to achieving efficiency savings, and set an indicative target to reduce consumption by 22% below a business as usual scenario by 2029. 
 
-###Score summary
-
-Barbados scored 0.94 in Climatescope 2016, a marked increase on the previous year. It gained one place to rank 43<sup>rd</sup> on the list of countries overall, but jumped eleven  notches on Enabling Framework Parameter I.
-
-Its score on Parameter I increased to 1.20 in the current survey from 0.74 in 2015, putting it in 35<sup>th</sup> place. Low import duties on clean energy goods and tax incentives were among the positive factors, while a fall in the island’s average retail electricity prices was negative.
-
-Barbados also ranked  36<sup>th</sup>  on Clean Energy Investment and Climate Financing Parameter II, unchanged from 2015. Its relatively low average cost of debt (8.06%) helped to support this score.
-
-The Low-Carbon Business & Clean Energy Value Chains Parameter III score was marginally higher, but the country dropped three positions to 44<sup>th</sup>. The availability of corporate finance was one positive factor.
-
-On Greenhouse Gas Management Activities Parameter IV, Barbados placed 48<sup>th</sup>, a weak performance that reflected its lack of carbon-offsetting activity, among other issues.

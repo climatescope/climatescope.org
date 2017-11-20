@@ -25,12 +25,12 @@ Egypt was one of the few countries without a quantitative emission target in its
 
 ###Score summary
 
-Egypt scored 0.97 in Climatescope 2016 and it took 42<sup>nd</sup> place on the list of countries overall. Its best performance was on Greenhouse Gas Management Activities Parameter IV.
+Egypt gained 23 places on Climatescope 2017 to rank 19th out of the 71 nations assessed. Its score of 1.41 placed it above Lebanon but below Jordan, the only other Middle Eastern nations included in the project. The country saw gains on three out of four parameters, with its best performance and biggest improvement being on Clean Energy Investment and Climate Financing Parameter II.
 
-On Enabling Framework Parameter I, the country scored 1.03 and ranked 42<sup>nd</sup>. The presence of a clean energy rural electrification programme helped to support its score, as did its well-developed set of clean energy policies, including feed-in tariffs and net metering.
+On Enabling Framework Parameter I, Egypt claimed 35th position, up from 42nd the year before. The score took impetus from the country’s several clean energy policies, including tax incentives and utility regulation, but was held back by the largely unreformed, state-run power sector and lack of new installation in 2016. 
 
-On Clean Energy Investment and Climate Financing Parameter II, Egypt ranked 42<sup>nd</sup>. No new investment was recorded in 2015, yet some $330m has been committed since 2011. The average cost of debt is relatively low at 11.6%. 
+Egypt took 9th place on Parameter II, a dramatic improvement from the previous year when it was 42nd. This reflects investment of $745m in new wind infrastructure in 2016, compared with zero renewable energy investment the year before, and the fact that some $174m of the total $1,083m invested in the sector since 2010 came from local investors. 
 
-The country placed 30<sup>th</sup> on Low-Carbon Business & Clean Energy Value Chains Parameter III. Its score of 1.46 reflected the relative diversity of its clean energy value chains, plus the presence of a number of companies servicing the sector, including financial institutions.
+On Low-Carbon Business & Clean Energy Value Chains Parameter III, the country was ranked 26th, up from 30th in 2016. Strong points include the presence of a wide variety of financial and legal service providers, as well as several types of equipment manufacturers and engineering firms in the wind, solar and small hydro sectors. 
 
-On Parameter IV, Egypt took 30<sup>th</sup> position. The country is engaged in some carbon off-setting activities and has put in place initiatives to boost corporate awareness.
+Egypt sank 24 places on Greenhouse Gas Management Activities Parameter IV to rank 54th. Its poor performance reflects the country’s decision not to submit an emissions reduction target as part of its Nationally Determined Contribution and its lack of a domestic climate change policy.

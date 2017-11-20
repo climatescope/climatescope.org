@@ -26,14 +26,3 @@ On March 1, 2017, BPL announced the recommencement of the country’s Small Scal
 In November 2015, the government submitted its Intended Nationally Determined Contribution (INDC) to the United Nations. The document reaffirms the islands’ energy target and commits conditionally to cut greenhouse gas (GHG) emissions by 30% below the business-as-usual (BAU) scenario by 2030. The commitment depends on international support in the form of finance, investment, technology development and transfer as well as capacity-building. The cost of implementing the mitigation actions required to achieve the goal is estimated at $900 million.
 
 
-###Score summary
-
-Bahamas gained three places in Climatescope 2016 to take 50<sup>th</sup> position with a score of 0.75. The country’s 2015 score was 0.48. Its biggest improvement was on Enabling Framework Parameter I. 
-
-On Enabling Framework Parameter I, the country placed 55<sup>th</sup>, reflecting the lack of supportive policies, and almost total absence of clean energy development to date.
-
-Bahamas placed 22<sup>nd</sup> on Clean Energy Investment and Climate Financing Parameter II, its highest ranking in this survey. A positive factor was its low (4.75%) average cost of debt.
-
-On Parameter III, the country ranked 53<sup>rd</sup>, two places down from last year. The sector had just five clean energy value chains and one financial institution.
-
-It took 51<sup>st</sup> position on Greenhouse Gas Management Activities Parameter IV, a decline from 49<sup>th</sup> the year before. Among its few attributes in this area is a GHG emissions reduction target.

@@ -18,3 +18,18 @@ The auction program grants fixed 15-year capacity payments to projects in order 
 One deterrent to additional renewable energy build has been the ambitious local content requirements, which have risen to 45% for small hydro, 65% for wind and 70% for solar. Another deterrent has been the weak ruble, though the government passed a decree to correct for exposure to currency volatility in 2015.
 
 As part of its intended nationally determined contribution (INDC), Russia intends to limit greenhouse-gas emissions to 70-75% of 1990 levels by 2030, subject to the inclusion of forestry. However, as Russia’s emissions decreased dramatically after the collapse of the Soviet Union and have since remained below 70% of 1990 levels, Russia is on track to meet this target even if its emissions continue to grow. Russia’s climate actions are little more than political gestures, and the government is in no hurry to ratify the Paris Agreement.
+
+
+###Score summary
+
+Russia’s score of 1.22 on Climatescope 2017 – the first time it has been surveyed by the project – ranked it 34th worldwide, above the 11 other post-Soviet States. A period of reform has seen the country’s formerly vertically integrated utilities unbundled and partially privatised. It was strongest on Low-Carbon Business & Clean Energy Value Chains Parameter III.
+
+In contrast, it was weakest on Enabling Framework Parameter I. Its score of 0.86 placed it 54th out of the 71 nations surveyed, partly a reflection of the lack of policies to encourage clean energy development, and partly due to slow growth of new capacity – just 187MW of renewable power has been added since 2010. Its score did draw some support from the ongoing reform of its power sector.
+
+On Clean Energy Investment and Climate Financing Parameter II, Russia took 46th position. The absence of investment in the sector between 2010 and 2016 was offset (to a small extent) by the somewhat favourable interest swap rate of 7.89%.
+
+The country scored highly on Parameter III, securing seventh place globally. This performance reflects the wide range of value chains present in all renewable sectors (apart from geothermal) as well as the full suite of clean energy service providers. It also speaks of the wide range of financial institutions active in the sector.
+
+On Greenhouse Gas Management Activities Parameter IV, the country was placed 37th. Its Nationally Determined Contribution aims to limit anthropogenic greenhouse gas emissions to 70-75% of 1990 levels by 2030, which is only moderately ambitious considering its emissions are already below 1990 levels. The score was negatively impacted by the absence of a domestic clean energy policy.
+
+

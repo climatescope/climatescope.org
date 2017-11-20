@@ -21,14 +21,3 @@ conservation.
 Belize held its first tender in 2013. It aimed to contract 75MW of power, of which 60MW was open to bidders across all energy sources, while 15MW was reserved exclusively for solar and wind. By June 2014, PUC had received 22 bid submissions, and 20 were approved for the next step. On March 6, 2015, PUC chose a few projects for further negotiations. Among these were two small hydro projects, with a combined capacity of 21.8MW. As of May 2017, there was no further information about whether contracts had been signed between BEL and the respective bidders.
 
 
-###Score summary
-
-Belize scored 1.13 in Climatescope 2016, up from 0.81 the year before. It gained one place to rank 37<sup>th</sup> on the list of countries overall, and its best performance was on Enabling Framework Parameter I.
-
-The country’s score on Parameter I improved and it jumped thirteen places to rank 14<sup>th</sup>. Supportive aspects of its policy and regulatory environment include availability of finance and establishment of a national energy target.
-
-Belize’s score on Clean Energy Investment and Climate Financing Parameter II more than doubled to 0.56, and it rose sixteen places to 28<sup>th</sup>, despite the absence of any investment in the sector since 2010. The average cost of debt was relatively low at 10.3% in 2015. 
-
-The country’s weakest performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III. It scored 0.46, unchanged from the previous year, and took 55<sup>th</sup> place, reflecting the scarcity of clean energy companies.
-
-On Greenhouse Gas Management Activities Parameter IV, it ranked 34<sup>th</sup>, scoring strongly in the Carbon Offsets category but poorly on carbon policy.

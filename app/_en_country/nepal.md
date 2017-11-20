@@ -25,14 +25,3 @@ Nepal has seen some financial innovation. In its hydro sector, several Nepali hy
 
 The country’s energy sector however faces serious challenges. NEA’s financial situation is precarious, with an estimated 2016 net loss of 12 billion Nepalese rupees, which risks its ability to pay for Indian imports. There is lack of clear communication between where NEA expects transmission to be built, and where AEPC selects projects to provide subsidies to. Damages and delays caused by two disastrous earthquakes and flooding continue to cast a shadow on the sector. Many of the multi-year licenses for a potential hydro site have been hoarded for future gain, instead of being used to actually build projects. Investors also highlight the difficulties encountered in receiving the renewable energy subsidy.
 
-###Score summary
-
-Nepal scored 1.54 in Climatescope 2016, which was slightly lower than its score the previous year. It ranked 18<sup>th</sup> on the list of countries overall, down eight places from the previous year. Its strongest performance was on Enabling Framework Parameter I.
-
-The country’s score on Parameter I increased to 1.83. It ranked 10th<sup>th</sup> on the list of countries overall, up eight places from the previous year. A supportive distributed clean energy framework and the addition of 368MW of new renewable capacity in 2015 were positive factors.
-
-On Clean Energy Investment and Climate Financing Parameter II, Nepal’s score plummeted and the country dropped to 31<sup>st</sup> place from 3<sup>rd</sup> in 2015. This reflected the absence of new investment.
-
-Its score increased on Low-Carbon Business & Clean Energy Value Chains Parameter III, and its position in the ranks remained unchanged in 15<sup>th</sup> place. There is a wide range of financial institutions present, as well as value chains in most areas of the distributed clean energy sector.
-
-On Greenhouse Gas Management Activities Parameter IV, Nepal’s score rose and it was ranked 36<sup>th</sup>. It is engaged in some carbon offsetting activities, but has no carbon policies in place.

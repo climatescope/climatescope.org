@@ -21,15 +21,3 @@ As for off-grid, the government fell short of the 50,000 solar units targeted in
 The country is betting on several new IPP hydro projects and thermal projects to fulfil the bulk of its capacity expansion plans to 2030. The 130MW Joule Africa Bumbuna Phase II (hydro) and the 57MW Copperbelt Energy (thermal) projects nearing financial close will be part of this. If Bumbuna Phase II goes ahead, then commissioning can be expected no earlier than 2021 at an estimated cost of around $675 million. The Bankasoka (2.2MW) and Charlotte (2MW) small hydro projects have been completed by Hunan Group and handed over to the EGTC (Electricity Generation and Transmission Corp.). Grid-connected solar is optimistically expected to materialize in 2017 since the government signed PPAs with two different developers – Infinity-E and SolarEra. The first has secured a PPA for a 6MW plant due in early 2018, whereas SolarEra has signed a PPA for 5MW in 2017 and 20MW (solar and diesel hybrid) due in late 2018. The Infinity-E project was funded by the Abu Dhabi Fund for Development, but the financing for SolarEra’s projects is yet to be secured despite a PPA signed in 2015.
 
 Since its separation from the national utility in 2015, EDSA (Electricity Distribution and Supply Authority) has improved its revenue collection by transitioning from post to pre-paid meters. Current penetration is estimated at around 85% of customers. This is particularly welcome news for investors considering the off-taker risk and creditworthiness of PPAs for proposed clean energy projects in the country.
-
-#### Score Summary
-
-Sierra Leone scored 1.35 in Climatescope 2016, which was significantly higher than in 2015. It placed 28<sup>th</sup> on the list of countries overall, and its best performance was on Clean Energy Investment and Climate Financing Parameter II.
-
-On Enabling Framework Parameter I, Sierra Leone’s score rose slightly thanks to growth in installed capacity and the introduction of a number of energy access policies. However, this was not enough to prevent it from dropping down six places to 34<sup>th</sup> position.
-
-The country was strong on Parameter II – its score rose threefold and climbed nineteen places to rank 8<sup>th</sup> overall. This reflected the comparatively high level of investment ($382m) between 2011 and 2015.
-
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, Sierra Leone maintained the same score as in 2015. This was supported by the presence of value chains in the biomass, biofuels and small hydro sectors.
-
-On Greenhouse Gas Management Activities Parameter IV, Sierra Leone’s score jumped from 0.27 to 1.39, partly owing to the introduction of new carbon policies and increased carbon-offsetting activity.

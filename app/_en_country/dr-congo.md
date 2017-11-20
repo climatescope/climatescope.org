@@ -37,15 +37,3 @@ The size of the country, the abundance of renewable resources (hydro, biomass, s
 The roll-out of ‘Pay as you Go’ solutions is still at the early stages, compared to Kenya and Nigeria, though some solar developers and solar shops are starting to adopt this mechanism. We expect this option to be widely available across several parts of DRC soon.
 
 The DRC has no specific incentives for renewable energy projects. Imports of goods such as solar lanterns, and solar panels are subject to an import duty of 10%, an additional VAT of 16% and other import-related taxes. Overall, duties can go up to 40%. Exemptions on import duties and various taxes and levies can be obtained under the country’s investment code for a period of three to five years.
-
-###Score summary
-
-The DRC scored 0.74 in Climatescope 2016, an increase on the previous year. It placed 51<sup>st</sup>, overall and second last among the 19 African nations surveyed, above only Cote D’Ivoire. The country’s best performance by far was on Greenhouse Gas Management Activities Parameter IV.
-
-On Enabling Framework Parameter I, the DRC ranked 53<sup>rd</sup>. This reflected, among other things, its unbundled power sector and the lack of a clean energy rural electrification programme.
-
-It was also weak on Clean Energy Investment and Climate Financing Parameter II, taking 54<sup>th</sup> position. The clean energy sector has not attracted any investment since 2010, and the average cost of debt is high.
-
-On Low-Carbon Business & Clean Energy Value Chains Parameter III, the DRC fell four places to 51<sup>st</sup>, highlighting weaknesses such as the absence of clean energy service providers. 
-
-On Parameter IV, the country gained six places to rank 23<sup>rd</sup>, thanks to strength in the carbon-offsetting category and the establishment of organisations dedicated to building corporate awareness.

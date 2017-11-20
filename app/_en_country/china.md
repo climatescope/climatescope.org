@@ -49,15 +49,3 @@ In May 2017, China issued the oil and gas reform plan, which aims to revamp the 
 Carbon trading
 
 2017 marks the first year that China will formally launch its national emissions trading scheme (ETS). Besides the original seven pilot markets (Beijing, Shanghai, Shenzhen, Guangdong, Hubei, Chonqing and Tianjin), various other provinces have also launched or are preparing the structure of their (ETS) markets. Despite trying to push for the inclusion of more sectors, thus far it appears that in the initial launch, only aluminum, cement, and power sectors will be covered. Rules in terms of inter-trading between regional markets, and national standards for offsets imports and province level carbon caps have still not been determined. Pilot markets are competing and lobbying to get their market's standards recognized as the national standards. Furthermore, there is a temporary halt on approving new offsets (China Certified Emissions Reductions) as regulators are worried that too many projects are getting through. Prices and trading volumes remain low across operating pilots, and there is still a lot of uncertainty around the national market launch this year.
-
-###Score summary
-
-China scored 2.53 in Climatescope 2016 and was placed 1<sup>st</sup> on the list of 58 countries for the third consecutive year. Its score was better than its tally the year before, and considerably higher than that of Chile, which took second spot with a score of 2.36. China was ranked among the top three countries on all parameters except Enabling Framework Parameter I.
-
-The country’s score on Parameter I improved thanks to its range of clean energy policies and the presence of a rural electrification programme. However, the fact that it placed 17<sup>th</sup> reflected a lack of policy support for off-grid power projects. 
-
-On Clean Energy Investment and Climate Financing Parameter II, China scored 2.19 and was ranked 2<sup>nd</sup> globally, behind only Honduras. This represented a sharp improvement in its score, a reflection of the more than $114bn invested in 2015, up from approximately $90bn the year before.
-
-As in the previous two years, China topped the rankings on Low-Carbon Business & Clean Energy Value Chains Parameter III with a perfect score of 5.00, considerably ahead of 2<sup>nd</sup> place India with 4.42. China has consistently invested heavily in its value chain segments.
-
-On Greenhouse Gas Management Activities Parameter IV, China scored 3.06 and took 3<sup>rd</sup> place globally, down from 1<sup>st</sup> in 2015. Carbon trading schemes are being rolled out in selected regions.
