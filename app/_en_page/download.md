@@ -28,7 +28,7 @@ arrange: full
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2016.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">Excel <span class="badge">7Mb</span></a>
         </li>
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/data/climatescope-full-2016.csv" title="Download raw data in CSV format" class="bttn bttn-success download data-download">CSV <span class="badge">0.2Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/data/climatescope-full-2017.csv" title="Download raw data in CSV format" class="bttn bttn-success download data-download">CSV <span class="badge">0.3Mb</span></a>
         </li>
       </ul>
     </div>
@@ -70,7 +70,10 @@ arrange: full
       <p>Download the full Climatescope report.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2015-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download"> 2015 (PDF) <span class="badge">4Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2016-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download"> 2016 (PDF) <span class="badge">9Mb</span></a>
+        </li>
+        <li>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2015-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download"> 2015 (PDF) <span class="badge">6Mb</span></a>
         </li>
         <li>
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2014-report-en.pdf.zip" title="Download full report in PDF" class="bttn bttn-success download data-download"> 2014 (PDF) <span class="badge">6Mb</span></a>
@@ -91,13 +94,16 @@ arrange: full
       <p>Download the complete set of underlying data.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2015.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">2015 (Excel) <span class="badge">7Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2016.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">2016 (Excel) <span class="badge">6Mb</span></a>
         </li>
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2014.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">2014 (Excel) <span class="badge">7Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2015.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">2015 (Excel) <span class="badge">6Mb</span></a>
         </li>
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2013.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">2013 (Excel) <span class="badge">7Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2014.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">2014 (Excel) <span class="badge">5Mb</span></a>
+        </li>
+        <li>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2013.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">2013 (Excel) <span class="badge">1Mb</span></a>
         </li>
       </ul>
     </div>
