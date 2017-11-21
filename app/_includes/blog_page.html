@@ -15,16 +15,25 @@
     <div class="row--contained">
   
       <div class="col--main">
-        <ul class="ctas-list">
+        <ol class="entry-list">
           <li ng-repeat="post in blogCtrl.posts">
-            <article>
-              <h4><a class="blog-post-title" href="%% post.url %%" alt="View post">%% post.title %%</a></h4>
-              <p>%% post.description %%</p>
-              <a class="bttn bttn-m bttn-cta go" href="%% post.url %%" title="{{ t['Read more'][language] }}">{{ t['Read more'][language] }}</a>
-              <hr>
+            <article class="entry entry--short update">
+              <div class="entry__contents">
+                <header class="entry__header">
+                  <p class="entry__subtitle">%% post.date %%</p>
+                  <a href="%% post.url %%" title="View more" class="link-wrapper">
+                    <h1 class="entry__title">%% post.title %%</h1>
+                  </a>
+                </header>
+                <div class="entry__body" ng-if="post.description">
+                  <div class="entry__prose">
+                    <p>%% post.description %%</p>
+                  </div>
+                </div>
+              </div>
             </article>
           </li>
-        </ul>
+        </ol>
 
         <ul class="bttn-group bttn-page-nav">
           <li>
@@ -40,6 +49,15 @@
         <section class="sec-section">
           <h2 class="sec-section__title">Get in touch</h2>
           <p>Please <a href="mailto:climatescope@bloomberg.net">reach out</a> if you would like us to write about a particular topic, or have something to share.</p>
+        </section>
+
+        <section class="sec-section">
+          <h2 class="sec-section__title">Recent tweets</h2>
+          <div class="recent-tweets">
+            <a class="twitter-timeline"  href="https://twitter.com/search?f=tweets&q=climatescope" data-widget-id="802127681433272320" data-tweet-limit="3" data-chrome="noheader nofooter noborders noscrollbar transparent" data-link-color="#77bc1f">Tweets about climatescope</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <a href="https://twitter.com/search?q=climatescope" title="{{ t['View all'][language] }}" class="bttn bttn-success go" target="_blank" rel="external">{{ t['View all'][language] }}</a>
         </section>
       </div>
 

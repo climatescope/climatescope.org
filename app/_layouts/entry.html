@@ -12,7 +12,13 @@ layout: base
   {% capture custom_class %}param-{{ page.id }}{% endcapture %}
 {% endif %}
 
+{% if layout.conf.type == 'country' %}
+<article class="layout--entry {{ layout.conf.type }} {{ custom_class }}" ng-app="countryApp">
+{% elsif layout.conf.type == 'state' %}
+<article class="layout--entry {{ layout.conf.type }} {{ custom_class }}" ng-app="stateApp">
+{% else %}
 <article class="layout--entry {{ layout.conf.type }} {{ custom_class }}">
+{% endif %}
   <header class="layout--entry__header">
     <div class="row--contained">
       <div class="layout--entry__heading">
@@ -48,7 +54,7 @@ layout: base
         <em class="label-grid label-grid-off"><span>{{ t['Off-grid'][language] }}</span></em>
         {% endif %}
       </div>
-      <div class="layout--entry__tools">
+      <div class="layout--entry__tools" data-hook="entry-actions-menu" ng-controller="ActionsMenuController">
         {% include actions_menu.html %}
       </div>
     </div>

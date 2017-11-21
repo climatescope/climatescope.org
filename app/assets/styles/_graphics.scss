@@ -72,9 +72,6 @@
   background: #fff;
 }
 
-
-
-
 .installed-capacity {
   .area-line-group {
     fill: none;
@@ -269,11 +266,127 @@
   }
 }
 
+.score-summary {
+  .area-line-group {
+    fill: none;
+  }
+
+  .country {
+    &.area-line {
+      stroke: $primary-color;
+      stroke-opacity: 1;
+      stroke-width: 2;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: $primary-color;
+    }
+  }
+  .enabling-framework {
+    &.area-line {
+      stroke: shade($infograph-color-a, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-a, 32%);
+    }
+  }
+  .financing-investments {
+    &.area-line {
+      stroke: shade($infograph-color-b, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-b, 32%);
+    }
+  }
+  .value-chains {
+    &.area-line {
+      stroke: shade($infograph-color-c, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-c, 32%);
+    }
+  }
+  .ghg-management {
+    &.area-line {
+      stroke: shade($infograph-color-d, 32%);
+      stroke-opacity: 1;
+    }
+    &.area-line-points circle{
+      stroke: none;
+      fill: shade($infograph-color-d, 32%);
+    }
+  }
+
+  .focus-elements {
+    .focus-line {
+      stroke: $primary-color;
+      stroke-opacity: 0.2;
+      stroke-width: 0.5;
+    }
+    .focus-circles {
+      .outer {
+        fill: #FFF;
+        stroke-width: 0.5;
+      }
+      &.country .inner {
+        stroke: none;
+        fill: $primary-color;
+      }
+      &.enabling-framework .inner {
+        stroke: none;
+        fill: $infograph-color-a;
+      }
+      &.financing-investments .inner {
+        stroke: none;
+        fill: $infograph-color-b;
+      }
+      &.value-chains .inner {
+        stroke: none;
+        fill: $infograph-color-c;
+      }
+      &.ghg-management .inner {
+        stroke: none;
+        fill: $infograph-color-d;
+      }
+    }
+  }
+
+  .chart-legend {
+    dt {
+      &.param-country:before {
+        background: $primary-color;
+      }
+      &.param-enabling-framework:before {
+        background: $infograph-color-a;
+      }
+      &.param-financing-investments:before {
+        background: $infograph-color-b;
+      }
+      &.param-value-chains:before {
+        background: $infograph-color-c;
+      }
+      &.param-ghg-management:before {
+        background: $infograph-color-d;
+      }
+    }
+  }
+}
+
 .chart-trendline {
   position: relative;
   height: 2rem;
   width: 100%;
   max-width: 8rem;
+
+  .chart-container {
+    cursor: help;
+  }
 
   .trendline {
     stroke: tint($primary-color, 32%);
@@ -294,7 +407,9 @@
     }
   }
 
-  .trendline-end {
+  .trendline-point,
+  .trendline-point-end {
+    pointer-events: none;
     stroke: none;
     fill: tint($primary-color, 32%);
     // Parameter trendlines.
@@ -313,6 +428,9 @@
   }
 
   .focus-elements {
+    * {
+      pointer-events: none;
+    }
     .focus-line {
       stroke: $primary-color;
       stroke-opacity: 0.2;
@@ -402,12 +520,19 @@
   dd {
     float: left;
     clear: left;
-    width: 4rem;
+    width: 4.5rem;
     text-align: right;
     margin-top: -1.5rem;
     font-family: $brand-font-family;
     font-weight: $brand-font-bold;
     line-height: 1.5rem;
+    small {
+      font-weight: normal;
+      font-size: 0.85rem;
+      color: tint($primary-color, 60%);
+      margin-left: 0.5rem;
+      float: right;
+    }
   }
 }
 
@@ -640,6 +765,7 @@ $circle-gutter: 0.5rem;
 
 .policies-type-stats {
   padding-right: 1rem;
+  
 
   .policies-bttn-va {
     margin-bottom: 0.5rem;
@@ -648,17 +774,16 @@ $circle-gutter: 0.5rem;
   .policies-type-list {
     list-style: none;
     overflow: hidden;
-    margin: 0;
+    margin-bottom: 0 0 $global-spacing 0;
     padding: 0;
 
     .policies-type-wrapper {
       @include col(6/12, $cycle: 2);
+      margin-bottom: $global-spacing;
 
       @media #{$xxlarge-up} {
         @include col(4/12, $uncycle: 2, $cycle: 3);
       }
-
-      margin-bottom: 1rem;
 
       .policy-type {
         color: $primary-color;

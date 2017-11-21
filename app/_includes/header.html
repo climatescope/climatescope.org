@@ -1,0 +1,98 @@
+{% if page.id == 'index' %}
+<header id="site-header" class="site-header site-header--home" role="banner">
+{% else %}
+<header id="site-header" class="site-header site-header--global" role="banner">
+{% endif %}
+
+  <div class="row--contained">
+    <div id="site-headline">
+      <h1 id="site-title"><a title="{{ site.name[language] }} {{ site.edition }}" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/">{{ site.name[language] }} <em>{{ site.edition }}</em></a></h1>
+    </div>
+
+    <nav id="prime-nav" role="navigation">
+      <ul class="global-menu">
+        <li>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/" title="{{ t['Go home'][language] }}">{{ t['Home'][language] }}</a>
+        </li>
+        <li>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/results" title="{{ t['The global index'][language] }}">{{ t['Results'][language] }}</a>
+        </li>
+        <li class="dropdown">
+          <a href="#" title="{{ t['Explore our insights'][language] }}" class="dropdown-toggle caret" data-toggle="dropdown">{{ t['Insights'][language] }}</a>
+          <div class="dropdown-content">
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                {% assign pg = site.pages | where:"id","blog" | where:"lang",language | first %}
+                <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['View blog posts'][language] }}">{{ t['Blog'][language] }}</a>
+              </li>
+              <li>
+                {% assign col_name = site.collections['en_page'].i18n[language] %}
+                {% assign pg = site[col_name] | where:"id","summary" | first %}
+                <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['More about the key findings'][language] }}">{{ t['Key findings'][language] }}</a>
+              </li>
+              <li>
+                <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-quarterly/" title="Read the Off-grid Quarterly">Off-grid Quarterly</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#" title="Explore the tools" class="dropdown-toggle caret" data-toggle="dropdown">Tools</a>
+          <div class="dropdown-content">
+            <ul class="dropdown-menu" role="menu">
+              <li>
+                <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-data-hub" title="Use the Off-grid Data Hub">Off-grid Data Hub</a>
+              </li>
+              <li>
+                <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/clean-energy-investments" title="Use the Clean Energy Investment">Clean Energy Investment</a>
+              </li>
+              <li>
+                <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/capacity-generation" title="Use the Capacity Generation">Capacity Generation</a>
+              </li>
+              <li>
+                {% assign pg = site.pages | where:"id","policies" | where:"lang",language | first %}
+                <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url | remove:'index.html' }}" title="{{ t['Browse the policy database'][language] }}">{{ t['Policies'][language] }}</a>
+              </li>
+              <li>
+                {% assign col_name = site.collections['en_page'].i18n[language] %}
+                {% assign pg = site[col_name] | where:"id","download" | first %}
+                <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['Download the data and report'][language] }}">{{ t['Download'][language] }}</a>
+              </li>
+              <li>
+                {% assign col_name = site.collections['en_page'].i18n[language] %}
+                {% assign pg = site[col_name] | where:"id","about" | first %}
+                <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['More about Climatescope'][language] }}">{{ t['About Climatescope'][language] }}</a>
+              </li>
+              <li>
+                {% assign col_name = site.collections['en_page'].i18n[language] %}
+                {% assign pg = site[col_name] | where:"id","methodology" | first %}
+                <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['More about the methodology'][language] }}">{{ t['Methodology'][language] }}</a>
+              </li>
+              <li>
+                {% assign col_name = site.collections['en_page'].i18n[language] %}
+                {% assign pg = site[col_name] | where:"id","license" | first %}
+                <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['About the license'][language] }}">{{ t['License'][language] }}</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          {% assign col_name = site.collections['en_page'].i18n[language] %}
+          {% assign pg = site[col_name] | where:"id","contact" | first %}
+          <a href="{{ site.domain }}{{ site.path_prefix }}{{ pg.url }}" title="{{ t['Contact us'][language] }}">{{ t['Contact'][language] }}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  {% if page.id == 'index' %}
+  <div class="intro-block">
+    <div class="intro-block__header"><img width="310" height="112" alt="Climatescope 2017 logo" src="{{ site.domain }}{{ site.path_prefix }}/assets/images/layout/cs2017-logo-stacked-neg.svg" /></div>
+    <div class="intro-block__body">
+      <h3 class="intro-block__body-title">Which emerging market is the most attractive for clean energy investment?</h3>
+      <p><a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/results" class="bttn bttn-ghost bttn-l go" title="View the results">Find out</a></p>
+    </div>
+  </div>
+  {% endif %}
+
+</header>

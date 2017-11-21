@@ -11,26 +11,6 @@
     });
     return arr;
   };
-  
-  // When switching languages the url must reflect the current one
-  // otherwise the page will not load properly.
-  // This is done with jQuery because it's outside the angular scope.
-  var updateLangSwitcherUrl = function(new_url) {
-    $('.lang-menu a').each(function() {
-      var url;
-      // If the original url is set return it.
-      if ($(this).data('orig_href')) {
-        url = $(this).data('orig_href');
-      }
-      // Otherwise store it and return the href value.
-      else {
-        url = $(this).attr('href');
-        $(this).data('orig_href', url);
-      }
-      url += '#' + new_url;
-      $(this).attr('href', url);
-    });
-  };
 
   var app = angular.module('policyApp', ['ngRoute', 'ui.bootstrap'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('%%');
@@ -199,9 +179,12 @@
     });
 
     $rootScope.$on('$locationChangeSuccess', function() {
-      $scope.currentPath = $location.url();
+      var currentPath = $location.url();
+      $scope.getUrl = function (baseUrl) {
+        return encodeURIComponent(baseUrl + '#' + currentPath);
+      }
       // Update language switcher url.
-      updateLangSwitcherUrl($location.url());
+      updateLangSwitcherUrl(currentPath);
     });
 
   }]);
@@ -318,10 +301,12 @@
   }]);
 
   app.controller('policyController', ['$http', '$routeParams', '$location', '$scope', function($http, $routeParams, $location, $scope) {
+    var currentPath = $location.url();
+    $scope.getUrl = function (baseUrl) {
+      return encodeURIComponent(baseUrl + '#' + currentPath);
+    }
     // Update language switcher url.
-    $scope.currentPath = $location.url();
-    // Update language switcher url.
-    updateLangSwitcherUrl($location.url());
+    updateLangSwitcherUrl(currentPath);
 
     var _self = this;
     this.policy = {};

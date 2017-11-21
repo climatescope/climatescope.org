@@ -1,9 +1,65 @@
 (function(){
-  var app = angular.module('stateApp', ['ui.bootstrap', 'mathFilters', 'csDirectives'], function($interpolateProvider) {
+  var app = angular.module('stateApp', ['ngRoute', 'ui.bootstrap', 'mathFilters', 'csDirectives'], function($interpolateProvider) {
     $interpolateProvider.startSymbol('%%');
     $interpolateProvider.endSymbol('%%');
   });
-  
+
+  app.config(['$routeProvider', function($routeProvider) {
+    $routeProvider.when('/enabling-framework', {
+        templateUrl: 'enabling-framework.html',
+        controller: 'EnablingFrameworkTabController',
+        controllerAs: 'detailsCtrl',
+        activeTab: 'enabling-framework'
+      })
+      .when('/financing-investments', {
+        templateUrl: 'financing-investments.html',
+        controller: 'FinancingInvestmentsTabController',
+        controllerAs: 'detailsCtrl',
+        activeTab: 'financing-investments'
+      })
+      .when('/value-chains', {
+        templateUrl: 'value-chains.html',
+        controller: 'ValueChainsTabController',
+        controllerAs: 'detailsCtrl',
+        activeTab: 'value-chains'
+      })
+      .when('/ghg-management', {
+        templateUrl: 'ghg-management.html',
+        controller: 'GhgManagementTabController',
+        controllerAs: 'detailsCtrl',
+        activeTab: 'ghg-management'
+      })
+      .otherwise({
+        redirectTo: '/enabling-framework'
+      });
+  }]);
+
+  // Controller for the navigation to activate the right tab.
+  app.controller('StateTabsController', ['$http', '$route', function($http, $route) {
+    this.isActive = function(name) {
+      return ($route.current) ? $route.current.activeTab == name : false;
+    };
+  }]);
+
+  // Service to provide data. Uses a simple cache to avoid making
+  // several requests.
+  app.factory('StateData', ['$http', function($http) {
+    var cache;
+    this.get = function(cb) {
+      if (cache) {
+        cb(cache);
+      }
+      else {
+        var url = CS.domain + '/' + CS.lang + '/api/countries/' + CS.stateId + '.json';
+        $http.get(url).success(function(data) {
+          cache = data;
+          cb(data);
+        });
+      }
+    };
+    return this;
+  }]);
+
   app.controller('DescriptionController', [function() {
     var fakeScope = {};
     // We only want to get a single method out of this.
@@ -24,19 +80,15 @@
       }
     };
   }]);
-  
-  // Controller for the DETAILS
-  app.controller('DetailsController', ['$http', function($http) {
+
+  app.controller('EnablingFrameworkTabController', ['$http', '$route', 'StateData', function($http, $route, StateData) {
     var _self = this;
     // Data.
     this.parameters = [];
     this.chartData = {
-      'clean-energy-investments': null,
       'installed-capacity': null,
-      'carbon-offset': null,
       'price-attractiveness-electricity': null,
       'price-attractiveness-fuel': null,
-      'value-chains': null,
 
       'power-sector-1': null,
       'power-sector-2': null,
@@ -46,9 +98,8 @@
 
     setupCommonParamDetailTableMethods(_self);
 
-    var url = CS.domain + '/' + CS.lang + '/api/countries/' + CS.stateId + '.json';
-    $http.get(url).success(function(data) {
-      _self.parameters = data.parameters;
+    StateData.get(function(data) {
+      _self.parameters = [data.parameters[0]];
     });
 
     // The following lines load the data for each of the charts.
@@ -56,28 +107,11 @@
     // This is done by calling the prepareData(). This function is implemented
     // on each of the chart's files.
     var url = null;
-    url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + CS.stateId + '.json';
-    $http.get(url).success(function(data) {
-      // Data for this chart requires preparation.
-      chart__clean_energy_investments.prepareData(data);
-      _self.chartData['clean-energy-investments'] = data;
-    });
-
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/installed-capacity/' + CS.stateId + '.json';
     $http.get(url).success(function(data) {
       // Data for this chart requires preparation.
       chart__installed_capacity.prepareData(data);
       _self.chartData['installed-capacity'] = data;
-    });
-
-    url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset-projects/' + CS.stateId + '.json';
-    $http.get(url).success(function(data) {
-      _self.chartData['carbon-offset'] = data;
-    });
-
-    url = CS.domain + '/' + CS.lang + '/api/auxiliary/value-chains/' + CS.stateId + '.json';
-    $http.get(url).success(function(data) {
-      _self.chartData['value-chains'] = data;
     });
 
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-electricity/' + CS.stateId + '.json';
@@ -109,7 +143,83 @@
     $http.get(url).success(function(data) {
       _self.chartData['power-sector-4'] = data;
     });
+  }]);
 
+  app.controller('FinancingInvestmentsTabController', ['$http', '$route', 'StateData', function($http, $route, StateData) {
+    var _self = this;
+    // Data.
+    this.parameters = [];
+    this.chartData = {
+      'clean-energy-investments': null
+    }
+
+    setupCommonParamDetailTableMethods(_self);
+
+    StateData.get(function(data) {
+      _self.parameters = [data.parameters[1]];
+    });
+
+    // The following lines load the data for each of the charts.
+    // Some of the data needs to be processed before being sent to the chart.
+    // This is done by calling the prepareData(). This function is implemented
+    // on each of the chart's files.
+    var url = null;
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      // Data for this chart requires preparation.
+      chart__clean_energy_investments.prepareData(data);
+      _self.chartData['clean-energy-investments'] = data;
+    });
+  }]);
+
+  app.controller('ValueChainsTabController', ['$http', '$route', 'StateData', function($http, $route, StateData) {
+    var _self = this;
+    // Data.
+    this.parameters = [];
+    this.chartData = {
+      'value-chains': null
+    }
+
+    setupCommonParamDetailTableMethods(_self);
+
+    StateData.get(function(data) {
+      _self.parameters = [data.parameters[2]];
+    });
+
+    // The following lines load the data for each of the charts.
+    // Some of the data needs to be processed before being sent to the chart.
+    // This is done by calling the prepareData(). This function is implemented
+    // on each of the chart's files.
+    var url = null;
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/value-chains/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      _self.chartData['value-chains'] = data;
+    });
+  }]);
+
+  app.controller('GhgManagementTabController', ['$http', '$route', 'StateData', function($http, $route, StateData) {
+    var _self = this;
+    // Data.
+    this.parameters = [];
+    this.chartData = {
+      'carbon-offset': null
+    }
+
+    setupCommonParamDetailTableMethods(_self);
+
+    StateData.get(function(data) {
+      _self.parameters = [data.parameters[3]];
+    });
+
+    // The following lines load the data for each of the charts.
+    // Some of the data needs to be processed before being sent to the chart.
+    // This is done by calling the prepareData(). This function is implemented
+    // on each of the chart's files.
+    var url = null;
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset-projects/' + CS.stateId + '.json';
+    $http.get(url).success(function(data) {
+      _self.chartData['carbon-offset'] = data;
+    });
   }]);
 
   app.controller('ProfileController', ['$http', function($http) {
@@ -149,4 +259,14 @@
 
   }]);
 
+  app.controller('ActionsMenuController', ['$rootScope', '$scope', '$location', function($rootScope, $scope, $location) {
+    $rootScope.$on('$locationChangeSuccess', function() {
+      var currentPath = $location.url();
+      $scope.getUrl = function (baseUrl) {
+        return encodeURIComponent(baseUrl + '#' + currentPath);
+      }
+      // Update language switcher url.
+      updateLangSwitcherUrl(currentPath);
+    });
+  }]);
 })();
