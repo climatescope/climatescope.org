@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Whitepaper - Distributed Energy in Emerging Markets
+title: Distributed Energy in Emerging Markets
 description: This report summarizes the highlights from Bloomberg New Energy Finance’s research on distributed energy in emerging markets undertaken in the last year.
 published: true
 download_source: null 
