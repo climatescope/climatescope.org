@@ -44,7 +44,7 @@ Distributed energy, led by PV and storage, is starting to become a notable force
 ## The big picture
 
 ### Non-OECD countries buy most solar panels from China
-Renewables, and in particular solar, are not rich-world luxuries anymore. Countries in Asia, Africa and Latin America now collectively buy more PV equipment from China than OECD countries. The trend is primarily driven by India, and as a distant second, Pakistan. Africa is not (yet) seeing the growth. Not a single country in Sub-Saharan Africa was among the top-10 buyers of PV panels in 1H 2017.  The vast majority of PV panels will be installed in utility-scale solar farms. The small-scale and rooftop PV market outside the OECD and China was about 0.7-1GW in 2015 and 2016.
+Renewables, and in particular solar, are not rich-world luxuries anymore. Countries in Asia, Africa and Latin America now collectively buy more PV equipment from China than OECD countries. The trend is primarily driven by India, and as a distant second, Pakistan. Africa is not (yet) seeing the growth. Not a single country in Sub-Saharan Africa was among the top-10 buyers of PV panels in 1H 2017.  The vast majority of PV panels will be installed in utility-scale solar farms. The small-scale and rooftop PV market outside the OECD and China was about 0.7-1GW in 2015 and 2016. 
 
 **PV exports from China to emerging countries**
 ![Figure 2](/assets/images/content/insights/frontier-power/Off-grid_Fig2.jpg)
