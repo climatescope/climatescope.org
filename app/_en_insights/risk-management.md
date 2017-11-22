@@ -10,10 +10,8 @@ featured: false
 
 Every renewable energy project entails risk, but one in an emerging market can bring more and different types of risk. There is no one-size-fits-all solution, although there are many instruments available on the market – for a price. And sometimes a tool is not necessary. This commentary focuses on the higher and different risks faced when developing a renewables project in the 71 emerging markets covered by the 2017 Global Climatescope project (the red lightning bolts in Figure 1).
 
-**Figure 1:** Renewable project risks 
-
-== add figure == 	
-
+**Figure 1:** Renewable project risks
+![Figure 1](/assets/images/content/insights/risk-management/CS2017_risk_fig1.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 ### Key findings
@@ -31,9 +29,7 @@ Every renewable energy project entails risk, but one in an emerging market can b
 *	Sometimes the risk mitigation is mostly out of the hands of the developer: the government can help manage currency fluctuation for developers by paying tariffs in U.S. dollars (eg, Chile) or using a fixed exchange rate (eg, Ghana, Jordan). 
 
 **Figure 2:** Renewables developers’ technological and geographic diversification in emerging markets
-
-== add figure == 	
-
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig2.jpg)
 <small>*Source: Bloomberg New Energy Finance. Note: Covers Climatescope countries only. Large and small hydro counts as one technology. Mainstream includes Lekela Power.*</small>
 
 ## Political risk
@@ -47,9 +43,7 @@ Wind and solar capacity additions in Ukraine ground to a halt in 2014, with the 
 Investors began to return to the market in 2016 when the economy stabilized and the government made some favorable changes to the green tariff.  
 
 **Figure 3:** Ukraine wind and solar additions
-
-== add figure == 	
-
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig3.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 The main strategy for mitigating political risk in the power sector is to buy some form of targeted insurance or guarantee. For example, the World Bank’s Multilateral Investment Guarantee Agency (MIGA) supplied political risk insurance for the 47MW Rajamandala small hydro project in Indonesia. Instead, a renewables project may rely simply on a bilateral investment treaty between the project and developer’s home countries. Where there is no such treaty, investors may sign host government agreements with stabilization clauses specifying that for the duration of the project, the relevant legislation will remain the same. Such clauses may also require the government indemnify investors of the cost of complying with any changes in law. One renewable energy example was in Ukraine with regard to the renewables feed-in tariff. 
@@ -81,9 +75,7 @@ Participants in South Africa’s renewables auction program have faced considera
 There are a few mechanisms to protect the developer against PPA risk, with one being a partial risk or credit guarantee (see below). However, such instruments bring the challenges outlined above, as well as only being applicable where the offtaker is state-owned. Another way to mitigate PPA risk is for a developer to sign a put-and-call option agreement with the government (Figure 4). In April 2017, the Nigerian government signed such deals with two local solar developers, which are planning to build two PV plants totaling 120MW. This West African nation has risen to 24th place in Climatescope 2017 from 30th in the 2016 edition. 
 
 **Figure 4:** Example structure of a put-and-call option agreement
-
-== add figure == 	
-
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig4.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 On the down side, such agreements can be expensive and some countries such as Russia do not recognize put or call options. In addition, the termination payments will depend on the reason why the PPA ended. In the case of Nigeria, the outstanding debt will be paid back in full but the equity investment may be recovered in full or impaired, depending on the case of the termination. 
@@ -97,9 +89,7 @@ When it launched its RenovAr renewables auction program a few years ago, investo
 Developing countries account for 46 of the 50 most volatile currencies over the last five years (Figure 5). Currency fluctuation or devaluation risk for a renewables project arises from the mismatch between the currency of payment in the PPA and that of obligations for operating expenses, taxes, loan repayments on the one hand, and dividend payments and profit repatriation on the other. Developers and investors will therefore try to mitigate the risk or price it into their tariffs. Problems can also arise if the PPA tariff uses a fixed exchange rate (see box).
 
 **Figure 5:** Top three most volatile currencies relative to the U.S. dollar in the last five years
-
-== add figure == 	
-
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig5.jpg)
 <small>*Source: Bloomberg*</small>
 
 ### Currency fluctuation risk: Egypt
@@ -107,26 +97,38 @@ Developing countries account for 46 of the 50 most volatile currencies over the 
 The Egyptian pound has halved relative to the U.S. dollar since currency controls were scrapped in November 2016 (Figure 6).  Feed-in tariff participants are partially shielded from the currency risk as the majority of the dollar-denominated tariff is paid (in pounds) at the prevailing exchange rate. However, another part (30% for PV, 40% for wind) is paid at a fixed exchange rate. This fixed rate, of 8.88 pounds per dollar is far from the current rate, which has stabilized at around 17-18 pounds since March. 
 
 **Figure 6:** USD: EGP exchange rate
-
-== add figure == 	
-
-<small>*Source: Bloomberg *</small>
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig6.jpg)
+<small>*Source: Bloomberg*</small>
 
 One of the main areas of exposure to currency risk relates to the source of financing. Developers can therefore help mitigate these risks by:
 
 * Obtaining debt financing in local currency and using domestic equipment. 
-
 * Taking on a loan denominated in local currency from a lender based outside the host country. 
-
 *	Securing a local-currency loan and hedging the risk by using an international hedge provider such as the TCX Currency Fund.
-
 *	Using a back-to-back structure where the developer borrows from an outside lender in the form of dollar-denominated loan and uses the dollar proceeds of the loan as collateral to obtain a local-currency-denominated loan from a local bank. 
 
 A developer may purchase a sometimes expensive risk-hedging instrument such as a currency swap (Figure 7). Forward/futures contracts are easier to manage and have a lower upfront cost but locking in a fixed forward price can be expensive if the currency moves against the contract holder. Options offer more flexibility, although premiums can be high. 
 
+**Figure 7:** 
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig7.jpg)
+<small>*...*</small>
 
-**Figure:** 
+**Figure 8:** 
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig8.jpg)
+<small>*...*</small>
 
-== add figure == 	
+**Figure 9:** 
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig9.jpg)
+<small>*...*</small>
 
-<small>**</small>
+**Figure 10:** 
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig10.jpg)
+<small>*...*</small>
+
+**Figure 11:** 
+![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig11.jpg)
+<small>*...*</small>
+
+**Table 1:** 
+![Table](/assets/images/content/insights/risk-management/CS2017_risk_tab1.jpg)
+<small>*...*</small>
