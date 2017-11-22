@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Policies for the energy transition: lessons learned in emerging markets
+title: Policies for the energy transition - lessons learned in emerging markets
 description: Here we assess the clean energy landscape of the 71 countries studied for Climatescope by examining both the unique challenges they face and the novel policies they have crafted to overcome them.
 published: true
 download_source: null 
@@ -9,23 +9,22 @@ featured: false
 ---
 
 As the energy transition gains pace and strength, emerging market nations are leading the way, not just in terms of investment and deployment, but with innovative policy-making as well. Here we assess the clean energy landscape of the 71 countries studied for Climatescope by examining both the unique challenges they face and the novel policies they have crafted to overcome them.
-* This year's Climatescope rankings reveal three general country groups: 
+
+* This year's Climatescope rankings reveal three general country groups:  
   - The Slow-Starters, which have recorded little to no clean energy activity to date. 
   - The Capacity-Builders, which are actively building policy frameworks that are showing results or could soon. 
   - The Ceiling-Hitters, which have taken positive policy steps and attracted investment but have recently seen activity actually stall due to larger structural issues. 
 * Renewables targets in combination with auctions or feed-in tariff are the initial policy measures that have enabled the majority Capacity-Builders to move into this group and can be credited for most of the $709 billion invested across the 71 Climatescope countries between 2011 and 2016.
 * The experience of the Ceiling-Hitters and some Capacity-Builders highlights the importance of taking a comprehensive approach to energy sector policy making to account for rapidly evolving demand patterns and the progress renewables have achieved. Ceiling-Hitter nations also often highlight the large investments required to expand grids and, in turn, ease renewable integration. At the other end of the spectrum, the right policies in markets with low electrification rates can avoid the need for large capital projects by instead supporting cost-effective distributed energy. 
 * In light of the dual challenges of improving energy access and addressing climate change, the fact that no less than 27 countries can still be considered Slow-Starters is alarming. National governments and development organizations are today spoiled for choices when it comes to policy lessons learned in developing nations.
-* Country level examples of policy innovation include:
+* Country level examples of policy innovation include:  
   - Mexico and its novel reverse tender system, which advantages developers who choose to build projects in under-supplied regions while disadvantaging those who go where supply is already abundant.
   - China and its plan to invest $270 billion to improve transmission and distribution through 2020, including 144GW of long-distance high-voltage lines. China is also slowly liberalizing its power markets so that buyers and sellers may someday negotiate not just on price but also, importantly, on the volume of electricity to be delivered.
   - Central America and its SIEPAC regional grid and accompanying Mercado Eléctrico Regional, which are enabling clean energy to flow freely across national borders to the region's seven nations. 
   - Peru and Rwanda, whose efforts to boost energy access include holding tenders in which off-grid developers/distributors compete for the right to provide electricity to millions, and other initiatives. Peru has already boosted its rural electrification rate from 29% in 2015 to over 78%.
   
 **Figure 1:** non-OECD and OECD generation forecast
-
-== add figure 1 == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig1.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 ## Clean energy policy and deployment
@@ -33,16 +32,12 @@ As the energy transition gains pace and strength, emerging market nations are le
 Since 2010, developing countries have collectively accounted for a larger share of clean energy investment and deployment than wealthier countries. 2015 was a record year for both investment and installations with $165 billion (Figure 2) flowing to the sector and 67GW of generation capacity added to power systems across the 71 emerging markets reviewed in Climatescope (Figure 3). The sharp reduction in investment in 2016, the year following the Paris climate conference where over 200 nations came together and agreed to address climate change, is troubling. However, there is also evidence suggesting that 2017 and 2018 could see activity pick up again. Record investment in onshore wind in 2014 and 2015 is likely to translate into strong build in 2017 as there is a lag between when capital is deployed and projects are completed. Investment volumes in solar is where cost reduction impacts are most evident<sup>1</sup> and yearly installation levels continue to grow from record to record even when dollar volumes don’t rise. 
 
 **Figure 2:** Annual clean energy investment in Climatescope countries
-
-== add figure 2 == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig2.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 
 **Figure 3:** Annual clean energy deployment in Climatescope countries
-
-== add figure == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig3.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 Growing renewables deployment in emerging markets is all the more critical as they also lead in building the most new fossil fuel capacity to meet the demands of their growing economies (Figure 4). Unlike developing countries, the world’s most developed countries are decarbonizing their energy systems at a much faster pace thanks to the combination of flat demand, fossil fuel power plant retirements and more affordable renewables.
@@ -50,9 +45,7 @@ Growing renewables deployment in emerging markets is all the more critical as th
 The current scale of renewables activity was brought about by conducive policy environments in a group of front-running countries. China met the European Union’s and its own early renewables deployment ambition by introducing generous feed-in tariffs and massively supporting growth of its renewables technology manufacturing capacity. Brazil ambitioned to fuel what was an economic boom from 2002-2011 at least in part with clean energy and introduced a program to hold auctions for clean power delivery contracts.  Such tender systems are rapidly becoming the norm in top tier markets around the world.
 
 **Figure 4:** Net carbon-neutral capacity additions by country group
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig4.jpg)
 <small>*Source: Bloomberg New Energy Finance. Note: Chart depicts total new build of fossil generation (coal, gas, and oil) minus total new-build carbon-neutral capacity (wind, solar, geothermal, hydropower, other renewables and nuclear) for each set of nations.*</small>
 
 Yet, the 2016 investment figures indicate that a number of the busiest renewables markets of recent years are hitting what appear to be ceilings as the infrastructure and regulation needed to integrate all this capacity is being deployed. The data also highlight that clean energy investment is concentrated in a relatively small group of nations with the number of emerging markets recording in excess of $100 million in investment in any one year stagnating at around 27 since 2010. 
@@ -64,9 +57,7 @@ This note focuses on the policies that have enabled countries to jump-start clea
 Evidence from the 71 countries reviewed for Climatescope is clear: countries where responsibility for generation, transmission and distribution rest with a single fully-integrated monopolistic company are generally not conducive to renewables investment (Table 1). In fact, countries with such structures often have difficulty attracting private capital in general.
 
 **Table 1:** Renewables investment in Climatescope countries by power market concentration and unbundling group 
-
-== add table  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_tab1.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 From 2012-2016, just $831 million in clean energy capital was deployed in countries with power systems monopolized by a single state-owned player<sup>2</sup>. That represents just 0.1% of all funds deployed during that period for renewables. There are certainly reasons why incumbent monopolistic utilities might resist liberalization and the associated proliferation of renewables.  They need look no further than developed countries where major utility companies are being challenged by wind and solar, in particular.  Conversely, for policy-makers, the most obvious rational for liberalizing generation is to foster competition, attract clean energy, and see prices drop for consumers. 
@@ -74,9 +65,7 @@ From 2012-2016, just $831 million in clean energy capital was deployed in countr
 Liberalizing the generation segment of the market need not preclude state-owned companies from participating in renewables development. Brazil and China are both examples where majority state-owned companies are co-existing with and competing against private project developers. Many majority state-owned utilities from developed and developing countries are now also using their size to invest internationally (ADD LINK FOR INVESTMENT PIECE).
 
 **Figure 5:** Countries with clean energy policies implemented
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig5.jpg)
 <small>*Source: Bloomberg New Energy Finance.  Note: Policies implemented indicates that the policy has been legislatively approved and all relevant regulations have been promulgated.*</small>
 
 Beyond market liberalization, renewables typically require additional support to gain a foothold in new markets, particularly where incumbent, fossil-produced power is being subsidized. Climatescope has been tracking the implementation of such policies in a growing list of developing countries (Figure 5), starting with Latin American nations in 2012.  More countries were added in 2015 and this the list year expanded to 71 countries in Latin America, Middle East and North Africa, and Asia.    
@@ -96,9 +85,7 @@ Beyond market liberalization, renewables typically require additional support to
 The popularity of clean energy auctions has grown globally to developing and developed nations alike, but the trend clearly began in emerging markets (Figure 6). Contracts auctioned globally more than doubled from 12.9GW in 2015 to 34.2GW in 2016, and the 2016 volume was already matched in the first six months of 2017. 
 
 **Figure 6:** Cumulative global auctioned capacity
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig6.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 Policy-makers and developers alike are generally attracted to well-organized auctions because, at their best, they offer transparency, foster competition, and produce affordably-priced power contracts. This has resulted in dramatic cost reductions across the vast majority of the markets where they have been introduced (Figure 7). Auctions for solar power delivery contracts in particular have allowed governments to reap benefits from continued cost declines from the trend toward commoditization of photovoltaic modules. 
@@ -106,17 +93,13 @@ Policy-makers and developers alike are generally attracted to well-organized auc
 Progress for onshore wind sector has trended similarly to larger infrastructure projects as wind project costs are more linked to local operating conditions, which can often be difficult in emerging markets (ADD LINK TP RISK ANALYSIS). Nevertheless, it is important to note that clearing prices alone do not show the full extent of the progress made in the wind industry which has delivered remarkable improvements in capacity factors thanks to ever bigger turbines and better wind forecasting. 
 
 **Figure 7:** Global clean energy auction clearing prices and awarded contract volumes
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig7.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 Record low auctions prices for solar and wind are turning the century-old cost relationship between fossil fuel and renewables upside down in a rapidly growing number of markets. India’s adoption of auctions has given birth to the most competitive renewables market in the world.
 
 **Figure 8:** Levelized cost of electricity of super-critical coal power generation by coal transport distance in India and select 2017 PV and onshore wind auction prices
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig8.jpg)
 <small>*Source: Bloomberg New Energy Finance. Note: Solar Energy Corporation of India (SECI)*</small>
 
 Receiving bids to provide 10 times as much power as tendered was the norm in most solar auctions in India in 2016 where more than 4GW being auctioned. High competition has resulted in solar and wind project developers committing to deliver electricity at prices below the cost of coal generation by 2020 (Figure 8). These bids have major implications for India, the coal industry, and the world at large given India’s current and future role in CO2 emissions. The Indian government has already responded to these bids by reducing its coal-fired power generating ambitions in favor of renewables. 
@@ -134,15 +117,11 @@ In light of the dual challenges of improving energy access and addressing climat
 Most of the 16 nations that scored 1.75 (out of 5) or higher in this year's survey have taken key policy steps to attract investment and deploy large volumes of renewables successfully.  These countries have recorded clean energy investment and deployment activity at least equivalent and sometimes larger than those seen in Germany, the self-proclaimed energy transition global leader, or the U.S. (Figure 9 and Figure 10).
 
 **Figure 9:** Renewables as share of total generation
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig9.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 **Figure 10:** Renewables investment relative to economy size
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig10.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 One of the main challenges to increasing renewables at this pace is their technical and financial integration with the energy system and the economy at large. Indeed, renewables deployment targets to date have seldom been designed with overall electricity supply and demand dynamics in mind. Sometimes decisions are taken in two or more different ministries which both want the best for the portfolio of sectors they oversee. 
@@ -154,18 +133,13 @@ A comprehensive approach to energy policy-making has always been critical.  But 
 As they grow and mature, economies tend to become more energy efficient. For most developed countries, this is the result progressing away from energy-intensive industrial activity to more services-oriented activities. The energy efficiency of emerging market nations is expected to catch up with wealthier countries as they grow and shift toward services (Figure 11).
 
 **Figure 11:** OECD vs. non-OECD projected electricity intensity: BNEF Outlook
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig11.jpg)
 <small>*Source: Bloomberg New Energy Finance New Energy Outlook 2017*</small>
 
 However, rapid development in technology and the increasing digitalization brought about by the Internet are challenging the theory of a steady transition from agriculture to industry and to services. Countries like India, Nigeria, Morocco or Kenya are all home to booming IT sectors while their industrial activity is seeing more modest growth. The electricity consumption of electronics has gone through an efficiency revolution of its own since the 1990s. A typical set of home appliances consumes less than a third of the energy it did back then (Figure 12).
 
-
 **Figure 12:** Home appliance energy consumption and efficiency improvements
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig12.jpg)
 <small>*Source: Bloomberg New Energy Finance, Energy Use Calculator, Shah 2014. Note: assumes 2.25 hours of TV consumption per day on a 30W LED TV vs 110W CRT and 22” ceiling fans running five hours per day on 32W vs 59W.*</small>
 
 The aggregate impact of these improvements is huge. Two decades ago, meeting the basic power needs of the 1.2 billion people without access would require just under 500TWh per year – equivalent to the demand of a mid-sized G20 country such as South Korea. With modern appliances, the same service today would require just under 30% of what it did back then. 
@@ -179,9 +153,7 @@ By default, regulators and utilities have tended to be overly bullish about futu
 Figure 13 shows the challenges Indonesia’s state-owned utility Perusahaan Listrik Negar (PLN) has had forecasting demand in recent years. The growth rate it forecasts for the next decade is 30-90% higher than growth seen in the last decade. This is despite the fact that Indonesia has seen less expansion of energy-intensive manufacturing in recent years than in less intensive telecommunications. The utility’s miscalculations have had severe consequences on the financial balances in the energy sector. PLN is heavily indebted and is considered at risk of default by the country’s finance ministry despite receiving large, repeated capital injections. This in turn creates challenges for renewables development simply because funds are lacking and adding them to an already oversupplied system would further reduce the utilization of the existing generation fleet. 
 
 **Figure 13:** Indonesia effective electricity demand vs. Perusahaan Listrik Negara (PLN) projections
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig13.jpg)
 <small>*Source: PLN, Bloomberg New Energy Finance*</small>
 
 ### India’s search for load
@@ -189,9 +161,7 @@ Figure 13 shows the challenges Indonesia’s state-owned utility Perusahaan List
 One positive response to the challenge of over-supply is to add demand by expanding energy access to populations yet to be connected to the grid. Along those lines, India’s government has paired its large-renewables procurement goal with a $14.2 billion electrification program which has the ambitious goal of electrifying all the villages in the country by the end of 2017, and to enter all homes by year-end 2018 (Figure 14 and Figure 15). The plan is expected to provide an additional 80TWh of electricity and boost demand 7% from 2016 levels. 
 
 **Figures 14 and 15:** India village electrification vs. target (left) and India household electrification vs. target (right)
-
-== add figure == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig14-15.jpg)
 <small>*Source: Bloomberg New Energy Finance, Rural Electrification Corporation. Note: the achievement (in %) is against the target of villages for the respective state which was un-electrified on April 1, 2015. The number of villages electrified is as per the data reported by the Rural Electrification Corporation in November 2017. The number of households is as per the data reported by the Rural Electrification Corporation in November 2017 and represents only rural households.*</small>
 
 Distances between demand centers and where renewable power generation makes most sense add a further layer of complexity. Locations with the best solar radiation or strongest winds are best can be inhospitable even uninhabitable. This forces policy-makers to come up with novel solutions.
@@ -203,9 +173,7 @@ Much of China’s installed 244GW of solar and wind has been deployed in the cou
 Record deployment in China has led to rising curtailment rates and losses of revenues for generators in the most affected regions (Figure 16). At 17% for onshore wind in 2016, and 10% for solar, China’s renewables curtailment levels are the worst in the world. The size of the government’s response is in line with the ambition of adding over 100GW of generating capacity to the system every year. Between 2016 and 2020, China aims to invest $270 billion in its transmission and distribution networks (3% of 2016 GDP). The budget includes investment in 144GW of long-distance high-voltage transmission lines, by far the largest deployment of such infrastructure in the world to date. In July 2016, the Chinese government also introduced an “onshore wind investment risk alert” which effectively put a hold on new build in the western provinces with high curtailment. A similar mechanism was introduced for solar in the summer of 2017. As a result, BNEF expects western curtailment risk to fall by 2020. 
 
 **Figure 16:**  China generation curtailment risk
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig16.jpg)
 <small>*Source: Bloomberg New Energy Finance and  Climateworks “Mapping China Renewables Curtailment and Coal Risks” (ADD LINK)*</small>
 
 Governments with lofty renewables goals today can look to China as an example of why policy supports should often have some degree of geographic specificity. But the country is also in the process of demonstrating how geographic biases can get resolved longer term. 
@@ -221,9 +189,7 @@ After being received by the regulator, each bid is adjusted for the purposes of 
 The first three auctions held in Mexico have succeeded in addressing many of the supply imbalances reported by the regulator (Figure 17). In the first auction, nodal differences ranged from +$10.7 to -$34.3. This $45 gap between highest and the lowest nodes decisively affected the winning projects list. Half of the contracts awarded in this first auction went to projects located in the two states with the highest nodal discounts: Yucatán and Baja California Sur. The third auction held a year later saw the range between nodes reduced to $13.5 as a result of the success of the previous rounds. 
 
 **Figure 17:** Mexico’s first (left) and third (right) auction’s nodal price adjustments 
-
-== add figure == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig17.jpg)
 <small>*Source: CENACE, Bloomberg New Energy Finance.*</small>
 
 In addition to incentivizing renewables build where it’s needed most, Mexico’s energy policy seeks to facilitate clean energy integration through ambitious transmission network expansion and modernization. Among the goals: connecting Baja California’s isolated grid to the central system and increasing interconnection with the U.S<sup>3</sup>. The plan targets installation of 19 new transmission lines for over 31GW of capacity to take total transmission capacity to 74GW. Here too, Mexico is planning to fully leverage competition by awarding build and transfer contracts for the development of the new lines in five auctions. The full set of measures aims to attract $21 billion of investment into transmission and distribution networks by 2031.
@@ -236,10 +202,8 @@ An important hurdle to wider adoption of wholesale markets in developing countri
 
 As discussed, renewables growth tends to correlate directly with the presence of multiple generators competing on price (Table 1). Wholesale markets foster such competition and ensure that what clean generation is on the grid gets used optimally. The price signals delivered by the exchanges are essential indicators for market participants and regulators alike to understand supply/demand balances across days, weeks, seasons or even geographies if nodal prices are used (see Figure 17 for the example in Mexico). These are critical feedback loops for policy-makers wishing to understand the impact of adding large volumes of renewables and mitigating risks of poor forecasting and over procurement.
 
-**Figure 18:** Wholesale power exchanges in emerging markets 
-
-== add figure  == 	
-
+**Figure 18:** Wholesale power exchanges in emerging markets
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig18.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 Another essential feature of wholesale power exchanges is that their clearing mechanisms are generally based on the principal of rewarding least-cost marginal units of power. As renewables typically have near zero operating costs, they are usually the first dispatched, before nuclear, coal or gas. This allows clean energy consumption to be maximized within the constraints of demand and available transmission capacity.
@@ -247,9 +211,7 @@ Another essential feature of wholesale power exchanges is that their clearing me
 Nowhere are the economic and environmental benefits of truly open wholesale power exchange ready to be realized more than in China, home to the world’s largest power grid and 244GW of renewables capacity. Currently, China’s electricity market is essentially semi-liberalized. The price of power to be delivered from generator to distributor can be negotiated but the volumes of power to be sold cannot. Instead, they are set by regulators annually using quotas. That stands potentially to change gradually (Figure 19) and when it does, a far more fluid and flexible market will be born. 
 
 **Figure 19:** Illustrative power dispatch mechanisms in China
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig19.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 For now, however, provincial power capacity development plans are dictated by expected economic growth rates outlined in government Five Year Plans, and dispatch quotas by local government on an annual basis. Given that predicting how quickly Chinese GDP will expand is always difficult and that the relationship between economic growth and electricity demand is tenuous, this is a deeply flawed system. Not surprisingly then, large volumes of clean energy generation go wasted in China while power continues to get bought from even the least efficient coal plants. 
@@ -265,9 +227,7 @@ In the EU, member states are targeting to reach interconnection capacity at leas
 One of the most advanced regional grid integration efforts in developing countries is the SIEPAC grid, which spans seven countries in Central America and is facilitated by the Mercado Eléctrico Regional (MER) power exchange. Interconnection between these tiny countries has existed for many years, however, cross-border flows really ramped in 2013 once the MER was implemented alongside rules that enabled generators and distribution companies to clearly benefit from access to a larger power pool. Since 2013, activity on the MER has grown almost continuously and has allowed around 7TWh to be traded across the region (Figure 20).
 
 **Figure 20:** Central America power market exports (left) and imports (right) 
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig20.jpg)
 <small>*Source: Ente Operador Regional, Bloomberg New Energy Finance*</small>
 
 Regional integration has significantly contributed to energy security, affordability and renewables integration in MER’s seven country members. Guatemala is the region’s top net power exporter, with 706GWh or 6% of the electricity generated in the country finding revenue in interconnected markets in 2016. Meanwhile El Salvador, the largest importer, has been able to rely on 740GWh of imports in 2016, equivalent to 13% of the electricity generated in the country that year. And there are signs that benefits are already feeding back to end consumers and the environment. Five of the seven countries in the region saw retail prices fall since 2013, and three have been able to reduce the utilization of their fossil fuel generation fleet.   
@@ -287,15 +247,11 @@ Here too, wholesale markets allow for a better visualization of these dynamics (
 The issue of ballooning subsidy bills can be managed so long as funding is well organized. For example, in Europe, most markets that socialized the cost of subsidies by funding them through explicit levies on the consumption of fossil fuels or retail electricity bills avoided retroactive cuts of renewables subsidies. Countries that accumulated an unfunded budget deficit on the other hand reduced support retroactively, shaking investor confidence. This issue is also materializing in emerging markets that have deployed massive amounts of renewables.
 
 **Figure 21:** Renewables tariffs and wholesale power prices 
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig21.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 **Figure 22:** Retail tariff structure
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig22.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 China, for example, has subsidy commitments towards renewables developers in excess of $15 billion a year as of 2017 which are supposed to be funded through a $27.49MWh levy on industrial and commercial retail electricity prices. However, the revenue generated from the levy falls short of the total subsidy bill and the country’s renewable energy fund is accumulating debt owed to renewables developers who are now awaiting payments. Figure 22 shows how subsidies for fossil fuels, renewables and on retail power prices impact the financial balances of an energy system and can lead to the creation tariff deficits. One solution: increase the levy, or extend it to cover the agricultural and residential sector. However, China’s government is wary of the impact this could have on the competitiveness of its industry and the response of the population. 
@@ -305,9 +261,7 @@ China, for example, has subsidy commitments towards renewables developers in exc
 Politicians worldwide are well familiar with the political challenges caused by rising retail power prices rise. In emerging markets, with their lowest-income households, this is particularly true. So it is unsurprising that many of these nations have enshrined subsidies intended to keep power prices in check. All but seven of the 71 countries reviewed in Climatescope have regulations in places that distort and lower retail power prices.
 
 **Figure 23:** Residential power prices in Climatescope countries and select residential levelized costs of electricity for residential photovoltaic systems
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig23.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 
 In the majority of countries, deficits created by these subsidies land on the books of state-owned utilities. In the best cases, budget holes are plugged by cash injections from government budgets. In most cases, however, the shortfalls simply create financial distress for utilities. 
@@ -315,9 +269,7 @@ In the majority of countries, deficits created by these subsidies land on the bo
 This, in turns, creates increased risk for developers looking to sell their power to the utility and get reliably compensated. Climatescope assesses and rates off-taker risk in each of its countries by reviewing the financial positions of utilities and whether its national government has historically plugged budget holes with capital injections (Figure 24).
 
 **Figure 24:**  Off-take risk in Climatescope countries
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig24.jpg)
 <small>*Source: Bloomberg New Energy Finance. Note: BNEF assessed offtaker risk as part of the Climatescope project, taking into account the relevant company’s financial history, sovereign guarantees and perception among players in the market. See full methodology (ADD MET LINK).*</small>
 
 The map highlights the relatively high risks all across emerging markets, with Sub-Saharan Africa and Central Asia particularly challenging. However, these regions are also home to two important examples of how public-policy interventions can reduce off-take risk and spur clean energy growth.
@@ -335,15 +287,11 @@ energy savings and guaranteeing affordability to the poorest households. Pamir r
 The pace of the smart meter roll-out and the impact it has had on collection rates in combination with new tariff structure and 24 hours service availability has been staggering (Figure 25 and Figure 26). In contrast to the incumbent utility it replaced, Pamir's cash flows have been positive since 2009. This transformation has decisively contributed to the socio-economic development of the region. The number of SMEs in the area has jumped 53% since Pamir took over the concession, further contributing to revenue growth for the utility.
 
 **Figure 25:** Pamir Energy (Tajikistan) re-metering program 
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig25.jpg)
 <small>*Source: Pamir Energy, Bloomberg New Energy Finance*</small>
 
 **Figure 26:** Pamir Energy (Tajikistan) sales collection rate
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig26.jpg)
 <small>*Source: Pamir Energy, Bloomberg New Energy Finance. Note: Collection rates larger than 100% are indicative of when the utility recovers arrears.*</small>
 
 From a technical perspective, the impact achieved by Pamir is replicable in other emerging markets. However, the approach of Pamir requires considerable investment in changing the culture of power sector stakeholders, from the utility to the end consumer.  
@@ -357,9 +305,7 @@ In Africa, financing for small-scale solar projects, including debt for distribu
 Still, diesel generators have long been the technology of choice in areas where reliable grid electricity is unavailable. In 2015, developing countries bought and installed about 600,000 units annually, totaling an estimated 29GW of capacity. About half of this is in units smaller than 0.3MW. There is a mature market and supply chain to sell, fuel and maintain this kit. Despite usually being competitive with diesel, solar currently has less than 3% of the market for distributed energy capacity in developing countries, well short of its potential (Figure 27).  
 
 **Figure 27:** Power capacity additions in developing countries in 2015
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig27.jpg)
 <small>*Source: Bloomberg New Energy Finance, PGS Consulting. Note: Developing countries includes the majority of non-OECD countries excluding China, Russia and other non-OECD countries with very reliable electricity grids. 2015 is the last year for which complete data is available.*</small>
 
 Most truly off-grid activity to date has been led by entrepreneurs, impact investors and venture capitalists deploying innovative solutions at smallest scale. Governments can be helpful to these efforts or simply bystanders.  In the worst of cases, they have been obstacles to progress. 
@@ -367,9 +313,7 @@ Most truly off-grid activity to date has been led by entrepreneurs, impact inves
 Climatescope profiles a numbers of nations that have set ambitious targets for off-grid electrification. **Peru**, for example, managed to rapidly boost rural electrification rates thanks to its well organized and adequately funded plan. The country published its General Rural Electrification Law in 2006, allocating $1.3 billion split across mini-grids, PV systems, grid extensions, small-hydro plants, wind projects and investment in utilities to strengthen their rural electrification efforts. As a result, from 2006 to 2015, Peru extended electricity access to 3.4 million people, raising its rural electrification rate from 29% in 2006 to 78% in 2015 (Figure 28). The government is now focused on providing full access by 2025. 
 
 **Figure 28:** Peru rural electrification budget and rural electrification rate
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig28.jpg)
 <small>*Source: OSINERGMIN, Bloomberg New Energy Finance. Note: 2006-2015 budget break-down was estimated based on Peru’s national energy plan 2004-2013 and PNER 2009-2018.*</small>
 
 Key to Peru’s success has been the government's recognition of the changing roles each component of its strategy can play over time as technology costs evolve and as conditions change between regions. For example, the cost of mini-grids rises the further villages are located from central infrastructure and the smaller demand is. Meanwhile, the costs of solar systems has dropped by three quarters since the program started. Both trends were taken into account when developing the electrification budget for 2016-2020. More funds were made available for PV systems through an auction awarding a contract to supply and operate the systems. Under the arrangement, winner and private developer Ergon Peru must install 150,000 PV systems by July 2019.  
@@ -391,9 +335,7 @@ When looking at the story of Latin American countries, Brazil, Chile and Mexico 
 China and India, the two largest consumer markets in the world, have committed to the most ambitious electric vehicle sales targets set globally. China is working on the introduction of a carbon market. India could soon follow with recent air pollution levels in New Delhi frequently climbing to levels 12 times over the maximum limit set by the World Health Organization. Latin American countries, led by Brazil, have pledged unconditionally to reduce their emissions by 2030 under the Paris Agreement despite ambitioning to continue to grow their economies at rapid pace. In the Middle-East, Jordan, a country that has not been able to rely on vast fossil fuel resources like most of its neighbors is paving the way in the large-scale deployment of renewables. And markets across Sub-Saharan Africa are starting to leverage the solar cost revolution with the aim of leapfrogging some of the fossil fuel and transmission grid investments typical of past growth models. 
 
 **Figure 29:** Non-OECD economic electricity generation forecast
-
-== add figure  == 	
-
+![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig29.jpg)
 <small>*Source: OSINERGMIN, Bloomberg New Energy Finance.*</small>
 
 The continuation of the renewable technology revolution stands to radically transform the energy mix of future economic growth. BNEF’s 2017 New Energy Outlook forecasts that non-OECD countries will reach an impressive 50% of renewables in generation by 2040 if the economics of different technologies are left to play out against each other without policy intervention (Figure 29).  The removal of policy from the forecasts is of particular relevance in non-OECD countries as too often governments there are slow in recognizing the seismic shift brought about by cheap renewables, often with the aim of protecting the interest of incumbent monopolies. 
