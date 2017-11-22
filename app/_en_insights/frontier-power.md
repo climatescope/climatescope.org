@@ -14,7 +14,7 @@ This report summarizes the highlights from Bloomberg New Energy Finance’s rese
 
 **The big picture**
 
-* Non-OECD countries now buy most solar panels from China
+* Non-OECD countries now buy most solar panels from [China](/en/county/china)
 * It takes less energy to power the next billion than to run Malaysia
 * Distributed systems don’t need to be cheaper, just ready sooner
 * The largest solar deal in Africa this year was off the grid
