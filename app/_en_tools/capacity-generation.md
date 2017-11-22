@@ -1,6 +1,6 @@
 ---
 title: Capacity Generation
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+description: Who has the most (and least) clean energy on line today?
 link: /capacity-generation
 
 image: feat-tool-thumb--capacity-generation.jpg
