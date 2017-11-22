@@ -8,9 +8,10 @@ Climatescope seeks to bring quantitative rigor to the basic question of what mak
 
 Climatescope ranks countries on their past, present, and future ability to attract investment for clean energy companies and projects. Clean energy is defined as biofuels, biomass & waste, geothermal, solar, wind and small hydro (up to 50MW). While a number of Climatescope nations have historically embraced large hydro generation to meet local power needs, this study focused exclusively on newer sources of low-carbon generation, both because they are often technologically cutting edge and because they can generally be deployed far faster than large hydro projects, which can take years or even decades to commission. By comparison, wind projects can be sited and erected in as little as two to three years. Utility-scale solar photovoltaic projects can be constructed in as little as six months and distributed photovoltaic systems can be added to rooftops in a day or less. In short, these technologies are poised to make – and in many cases are already making – near immediate impact on energy supply and access in the developing world. Climatescope sought to assess how ready these countries are to embrace them.
 
-In this 5<sup>th</sup> edition, the project includes three new Middle East and North Africa (MENA) countries: Egypt, Jordan and Lebanon.  
-Climatescope’s index once again consists of four overarching parameters. Beneath these parameters are 50 data inputs, or indicators. Some indicators consist of a single data input but many consist of multiple data points that have been synthesized into a single figure. Each indicator counts toward a country’s final score but these are not weighted equally. Scores range from 0 to a maximum of 5.
-The final score a country receives under Climatescope is determined by a weighted combination of its four parameter scores. For 2016, the weighting of these parameters remains as it was in 2015:
+In this 6<sup>th</sup> edition, the project includes thirteen new countries spread across Central Asia and Europe.
+
+Climatescope’s index once again consists of four overarching parameters. Beneath these parameters are 50 indicators. Some indicators consist of a single data input but many consist of multiple data points that have been synthesized into a single figure. Each indicator counts toward a country’s final score but these are not weighted equally. Scores range from 0 to a maximum of 5.
+The final score a country receives under Climatescope is determined by a weighted combination of its four parameter scores. For 2017, the weighting of these parameters remains as it was in 2016:
 
 * Enabling Framework Parameter I – 40%
 
@@ -25,7 +26,7 @@ The entire Climatescope model can be viewed at www.global-climatescope.org  wher
 
 ###ACCOUNTING FOR LESSER DEVELOPED NATIONS THROUGH THE “OFF-GRID FOCUS” METHODOLOGY
 
-As in 2015, Climatescope 2016 assessed nations ranging from lowest income to those firmly considered “middle income”. As a result, Climatescope 2016 once again includes a special, augmented “off-grid focus” methodology that includes seven special indicators, with weightings adjusted in the model accordingly. These indicators were taken into account alongside the other “on-grid” indicators for a sub-set of 23 Climatescope nations: 18 in Africa, one in Latin America and Caribbean, and four in Asia.
+As in 2015 and 2016, Climatescope 2017 assessed nations ranging from lowest income to those firmly considered “middle income”. As a result, Climatescope 2017 once again includes a special, augmented “off-grid focus” methodology that includes seven special indicators, with weightings adjusted in the model accordingly. These indicators were taken into account alongside the other “on-grid” indicators for a sub-set of 23 Climatescope nations: 18 in Africa, one in Latin America and Caribbean, and four in Asia.
 The goal of the off-grid effort is to level the playing field so that all countries can be compared in the fairest possible manner against one another in a single 58-country list. In addition, visitors to www.global-climatescope.org can examine the specific off-grid focus indicators in detail if they choose and compare in isolation the 23 nations that were assessed using this methodology.
 To determine which countries are assessed using the off-grid focus methodology, a 0-5 scoring system was once again applied. Five factors contributed at different weightings to this score; those that score a 2.5 or higher are considered “off-grid focus countries”.
 
@@ -72,7 +73,7 @@ For 2016, the Climatescope methodology for off-grid countries was refined, build
 
 ### SCORING APPROACHES
 
-Scoring approaches employed in the first four editions of Climatescope were also used for this 2015 edition. These include:
+Scoring approaches employed in the first five editions of Climatescope were also used for this 2017 edition. These include:
 
 * Indexing – The Climatescope index is based entirely on a 0-5 scoring system, with 5 representing the highest possible score. Using the indexing approach, the country with the maximum output for a given indicator, after levelization in most cases, received the highest score in the index (5). 
 
@@ -86,14 +87,13 @@ This methodology is better suited than indexing for qualitative assessments such
 
 ***
 
-## [ENABLING FRAMEWORK]({{ site.domain }}{{ site.path_prefix }}/en/topic/enabling-framework/ "Go to Enabling Framework topic page")
-{: .hd-param-1}
+## ENABLING FRAMEWORK
 
 The Enabling Framework parameter encompasses fundamental structures and market conditions typically required for a given country to attract investment and interest from financiers, project developers, or independent power producers looking to develop new low-carbon projects, companies or manufacturing facilities. It also takes into account how amenable such structures are to the deployment of distributed generation capacity, such as mini-grids, or residential wind or solar systems.
 
 A welcoming enabling framework is one where: a comprehensive, effective and stable set of rules are in place; the power market structure encourages and adequately rewards new market entrants; the private and public sectors foster universal access to clean and sustainable energy in rural or isolated communities; clean energy penetration of the power and primary energy matrices is ever increasing; adequate price signals are available; and growing demand for power and rapid electrification combine to create a substantial market.
 
-A total of 18 indicators serve as the inputs into Parameter I. These fall into four categories: Policy and Regulation, Clean Energy Penetration, Price Attractiveness, and Market Size Expectation. Each category contributed with varying weights to the overall Enabling Framework parameter score. Scoring for Parameter I is completed with 5 indicators applied exclusively to countries which were assessed under the off-grid focus methodology.
+A total of 22 indicators serve as the inputs into Parameter I. These fall into four categories: Policy and Regulation, Clean Energy Penetration, Price Attractiveness, and Market Size Expectation. Each category contributed with varying weights to the overall Enabling Framework parameter score. Scoring for Parameter I is completed with 5 indicators applied exclusively to countries which were assessed under the off-grid focus methodology.
 
 ###POLICY & REGULATION
 
@@ -118,7 +118,7 @@ It should be noted that in the cases of the Indian states, the overall policy sc
 
 A fundamental assumption underlies the power sector structure indicator: a liberalized power market is more conducive to attracting investment in renewable energy development than a tightly controlled market. This indicator seeks to gauge the degree of liberalization in a country’s power market.
 
-To derive the power sector score, 15 specific questions were asked about a country’s power market, with possible scores of low, medium, and high per question with a maximum possible score for any country of 5. As these questions were relatively non-qualitative, Bloomberg New Energy Finance conducted primary research on the power market structures for all 64 countries, states and provinces and assigned the scores on each question for each.
+To derive the power sector score, 16 specific questions were asked about a country’s power market, with possible scores of low, medium, and high per question with a maximum possible score for any country of 5. As these questions were relatively non-qualitative, Bloomberg New Energy Finance conducted primary research on the power market structures for all 71 countries on each question for each.
 
 #### <b>Distributed energy regulatory framework</b>
 
@@ -131,7 +131,7 @@ The third indicator in the Policy & Regulation category of Parameter I assesses 
 
 #### <b>Energy access policies</b>
 
-The energy access policies indicator was applied only to countries analyzed under the off-grid focus methodology. Like the distributed energy regulatory framework indicator discussed above, this indicator relied on a series of 14 questions BNEF analysts asked about individual nations and answered after local consultation. All but three of these were scored in a manner similar to the approach used for the distributed energy regulatory framework indicator. Two questions simply looked at the amount an individual government has budgeted for its rural electrification program and one of question looked at the base upfront cost for a new grid connection for a household near the grid.
+The energy access policies indicator was applied only to countries analyzed under the off-grid focus methodology. Like the distributed energy regulatory framework indicator discussed above, this indicator relied on a series of 13 questions BNEF analysts asked about individual nations and answered after local consultation. All but three of these were scored in a manner similar to the approach used for the distributed energy regulatory framework indicator. Two questions simply looked at the amount an individual government has budgeted for its rural electrification program and one of question looked at the base upfront cost for a new grid connection for a household near the grid.
 	      
 #### <b>Policy barriers</b>
 
@@ -176,8 +176,7 @@ Finally, for the off-grid focus countries, the population using solid fuels for 
 
 ***
 
-## [CLEAN ENERGY INVESTMENT & CLIMATE FINANCING]({{ site.domain }}{{ site.path_prefix }}/en/topic/financing-and-investment/ "Go to Clean Energy Investment & Climate Financing topic page")
-{: .hd-param-2}
+## CLEAN ENERGY INVESTMENT & CLIMATE FINANCING
 
 Few investors are comfortable with being the first to invest in a new technology or a new region. To rank a country’s ability to attract low carbon investment, it is important to assess its achievements in that regard to date. The Clean Energy Investment and Climate Financing parameter tracks historic investment activity in a given country while laying out financing conditions for future commitments.
 In all, Parameter II comprises 9 indicators distributed across three categories: Amount Invested, Fund Sources and Cost of Debt. Each of these three categories contributed with varying weights to the overall Clean Energy Investment and Climate Financing parameter score. The green microfinance indicator which was part of the Climatescope methodology in the past was removed in 2016.
@@ -185,13 +184,13 @@ In all, Parameter II comprises 9 indicators distributed across three categories:
 ###AMOUNT INVESTED
 
 The Amount Invested category consists of two indicators related to historic financial commitments to low-carbon companies and projects: cumulative clean energy investment and clean energy investment growth rate. The timeframe used was 2011 to 2015. The category contributes to 51% of the score for this parameter.
-Data sources employed in the category were drawn from BNEF’s proprietary Industry Intelligence database ‒ the world’s most accurate database of clean energy and carbon investment activity. The database contains detailed information on funds invested in clean energy projects larger than 1MW and technologies, grants, venture, private equity and corporate finance transactions, and project financing. The Amount Invested methodology follows that employed in Climatescope 2015.
+Data sources employed in the category were drawn from BNEF’s proprietary Industry Intelligence database ‒ the world’s most accurate database of clean energy and carbon investment activity. The database contains detailed information on funds invested in clean energy projects larger than 1MW and technologies, grants, venture, private equity and corporate finance transactions, and project financing. The Amount Invested methodology follows that employed in Climatescope 2016.
 
 #### <b>Cumulative clean energy investment</b>
 
 The clean energy investment indicator of the Amount Invested category includes four metrics related to the investment type: asset finance, corporate finance, venture capital and private equity investment. All three investment-type metrics were aggregated to derive the total cumulative clean energy investment figure. Data points underlying these metrics are available online for the purpose of external analysis.
 
-Note that the total clean energy investment indicator accounts for cumulative commitments from 2011 through 2015. Investment commitments follow different orders of magnitude because of the variation in the size of the 58 Climatescope countries. Thus, countries were ranked for this indicator based on the value of total clean energy investments as a percentage of GDP to ensure standardization. Once investments were benchmarked by the size of the economy, countries were ranked using the indexing approach. The country with the highest share of cumulative clean energy investment relative to the size of its economy was set as the benchmark with a score of 5; all other country scores were derived based on their relative position to 5.
+Note that the total clean energy investment indicator accounts for cumulative commitments from 2012 through 2016. Investment commitments follow different orders of magnitude because of the variation in the size of the 58 Climatescope countries. Thus, countries were ranked for this indicator based on the value of total clean energy investments as a percentage of GDP to ensure standardization. Once investments were benchmarked by the size of the economy, countries were ranked using the indexing approach. The country with the highest share of cumulative clean energy investment relative to the size of its economy was set as the benchmark with a score of 5; all other country scores were derived based on their relative position to 5.
 
 #### <b>Clean energy investment growth rate</b>
 
@@ -221,8 +220,7 @@ This category also included an indicator reflecting swap rates in each of the co
 
 ***
 
-## [LOW-CARBON BUSINESS & CLEAN ENERGY VALUE CHAINS]({{ site.domain }}{{ site.path_prefix }}/en/topic/value-chains/ "Go to Low-Carbon Business & Clean Energy Value Chains topic page")
-{: .hd-param-3} 
+## LOW-CARBON BUSINESS & CLEAN ENERGY VALUE CHAINS
 
 A nation’s ability to attract capital and accelerate low-carbon energy deployment is partly contingent on how many segments of key value chains it has in place. Parameter III sought to take this into account. It included three indicators, with an additional two indicators related to distributed energy companies for the off-grid focus countries.
 
@@ -240,86 +238,63 @@ The financial institutions indicator tracked how many types of financial service
 
 ***
 
-## [GREENHOUSE GAS MANAGEMENT ACTIVITIES]({{ site.domain }}{{ site.path_prefix }}/en/topic/ghg-management/ "Go to LGreenhouse Gas Management Activities topic page")
-{: .hd-param-4}
+## GREENHOUSE GAS MANAGEMENT ACTIVITIES
 
-The Greenhouse Gas (GHG) Management Activities parameter aims to assess the status, risk and potential for carbon offset project activity in a given country. Favourable actions and conditions for this parameter included: a solid track record of commissioned Clean Development Mechanism (CDM) or other offset projects; high success rates for projects seeking CDM accreditation; ample opportunities for further offset project development; forward-looking federal or state-level policies or actions aimed at curbing GHG emissions; and progressive actions from private sector players to adopt projects and measures to reduce carbon footprints.
-A total of 14 unique indicators serve as inputs into Parameter IV. These are arranged into three categories: Carbon Offsets, Carbon Policy and Corporate Awareness. The Carbon Offset category measures what countries have done to develop offset projects and measures their potential to continue into the future. It holds the greatest weight toward the overall Parameter IV score at 40%. The other two categories account for 30% apiece.
+Climatescope’s parameter IV methodology was updated in 2017 to account for the commitments made by over 200 nations at the COP21 UNFCCC meeting held in Paris in December 2015. A total of 14 unique indicators now serve as inputs to calculate the score for this Parameter. These are arranged into three categories: National Determined Contributions (NDC), Domestic Policy and Corporate Awareness. 
 
-###CARBON OFFSETS
+### National Determined Contributions (NDC)
+The NDC category accounts for 40% of the Parameter IV score. It focuses on the ambition of each country's international emissions reduction pledges made under the Paris Agreement. It includes five distinct indicators. Each indicator contributes with varying weights in turn to the category, parameter and overall score. 
 
-The Carbon Offsets category comprises three distinct indicators assessing the historic activity of CDM and other offset project types in a given country, the risk projects will fail to gain CDM accreditation or approval, and offset project potential considering existing capacity in each country to support further project development. Each indicator contributes with varying weights in turn to the category, parameter and overall score. Each country’s Carbon Offset category score was derived by multiplying a “raw” score for each indicator by that indicator’s weighting, then aggregating the three final scores.
+#### NDC - type of target 
+Every country’s NDC is built around a headline goal. The Paris Agreement does not specify what a country must include in its NDC, and a number of different types of NDC targets have emerged. This sub-indicator scores the countries on the type of targets that they have submitted. The highest score goes to countries that have adopted an absolute target, followed by Business as usual (BAU) targets, peak targets, and intensity targets. If the country’s NDC does not include a specific emissions related target it scores 0.
 
-####<b>Historic activity</b>
+#### NDC - target coverage
+This indicator scores the emissions coverage of each country’s NDC target. Coverage is determined by the combination of sectoral coverage and coverage across the six ‘Kyoto’ greenhouse gases. Sectors include energy, industrial process and product use, agriculture, waste and Land use, land-use change and forestry (LULUCF). Gases include CO2, CH4, N2O, PFC, HFC and S6F.
 
-The historic activity indicator investigates whether a country has CDM projects or other types of voluntary offset projects in place. It also assesses the depth of a country’s current project pipeline by tracking sectors covered by these offset projects as well as the volume of current and expected credit issuance.
+#### Long term strategy
+Article 4 of the Paris Agreement asks that countries communicate a ‘long-term low greenhouse gas emission development strategy’. These strategies should be submitted by 2020. A number of countries have already made their submissions, which shows notable effort to comply with the spirit of the Paris Agreement. Countries that have communicated a long-term strategy to UNFCCC received 1 while others received 0.
 
-While several offset project schemes exist, data was gathered from the main three: the UN CDM, the Verified Carbon Standard and the Gold Standard. The data for these three schemes were more comprehensive and reliable than the data available on projects in other programs. Still, the CDM represented the vast majority of projects in place for almost all countries.
+#### Ambition of NDC: intensity & absolute emissions
+The 2030 ambition of each country's NDC emissions reduction pledges was measured against trends in emissions over the last 15 years, and in absolute amounts. The more a country's target take him below the trend the highe the score and inversely. 
 
-Metrics captured for this indicator include the number of credit scheme types, projects and sectors available in each country, and the volume of credits issued or expected to be generated by offset projects. The score awarded for each of these four metrics was binary: a country could receive either 1 or 0. Each metric was categorized as “above or equal average” or “below average” compared with the region as a whole. A country was given a score of 1 for each metric considered above average. The maximum mark a country could obtain for this indicator was therefore four.
+### Domestic Policy
+The Domestic Policy category accounts for 30% of Parameter IV and scores countries for the domestic policies they have put in place to reducegreenhouse gas emissions. It covers five policy and regulation types. 
 
-For example, Brazil had 409 carbon offset projects, which means 0.00000097 per tonne of CO2 equivalent in 2013 while the average across all countries was 0.00000141. Thus Brazil received a score of 0 for the metric assessing number of projects because it had a higher CO2 profile than the average. A separate example: 2,206,277.2 credits were recorded as having actually been issued or expected to have been issued for projects in Chile, which means 0.03 credits per tonne of CO2 equivalent. Meanwhile, the Climatescope average for this metric was 0.03 credits per tonne of CO2 equivalent. Thus Chile received a score of 1 for meeting the regional mean.
+#### Climate change policy
+The score awarded for this indicator was binary. Countries that have an explicit domestic climate change law received 1 while others received a 0.
 
-####<b>CDM risk</b>
+#### Scope of domestic policy
+This indicator measures the coverage of domestic policy in terms of share of total emissions.
 
-The CDM risk indicator assessed the likelihood that CDM offset projects in a given country fail to get commissioned or otherwise fail to gain accreditation or local approval. It also took into account the average processing time for project registration within CDM. Given the limited data available for other offset project types for the purposes of this analysis, CDM project risk was tracked exclusively.
-The CDM risk indicator incorporated three distinct metrics: (1) the average number of failures per active CDM project, (2) the average number of restarts per CDM project, and (3) the number of days it takes for a project to successfully complete the registration process. The scoring system for the first two metrics ‒ number of project failures and restarts – followed the scoring system used for the metrics in the carbon offsets historic activity indicator. Each country was categorized as above or below average compared with all other Climatescope nations, provinces and states. Above average geographies received 1’s and below-average nations received 0’s. This calculation was done separately for both the number of project failures and number of project restarts.
+#### Climate change regulations
+This indicator measures whether the country has the following regulations in force. The score awarded for each of the sub-indicators below is binary and regulations must explicitly target emissions reduction.
+* Fuel standards;
+* Emission standards for power plants;
+* Industrial emissions standards;
+* Vehicle emissions standards;
+* Buildings emissions standards;
+* Product emissions standards;
+* Appliance emissions standards;
+* Emissions disclosure requirements for products and/or businesses.
 
-The metric assessing CDM registration processing times examined two distinct phases of project development to measure how swiftly or slowly countries moved to bring projects to completion. The metric first took into account phase I, the period from when a project submits a letter to a host country government for approval until when it completes validation, and phase II, the period from when the project moves from validation to when it gets officially registered in the CDM.
+#### Climate change incentives
+This indicator measures whether the country has the following climate change incentives in force. The score awarded for each of the sub-indicators below is binary and incentives must explicitly target emissions reduction.
+* Carbon pricing
+* Carbon linked taxation;
+* Subsidies of funding programmes for emissions reductions.
 
-The average number of days taken to complete the two phases of the CDM registration process for all Climatescope countries was calculated. From this, an average among all for each phase was then derived. The above/below average scoring system was then applied. If the average number of days taken for projects to be awarded validation for phase I and registration for phase II fell below the regional average, the country in question received a score of 1. Those with above-average durations received a zero.
-The standard deviations from the first and second phases for each country were then compared with the average standard deviations for each phase across all Climatescope countries, provinces and states. If the standard deviation for phase I fell below the regional average, the country was awarded an additional mark of 1 and vice-versa if it fell above the average. The same process was applied to phase II.
+#### Climate change prioritization
+This indicator measures to what extent climate actions is a priority for the current government. 
 
-Six was the maximum score a given country could achieve in the CDM risk indicator, comprising the aggregated scores from failures, restarts, phase I duration, phase I standard deviation, phase II duration and phase II standard deviation. The CDM risk indicator has a 25% weighting toward the Carbon Offset category and a 1.5% impact on a country’s overall Climatescope score.
+### Corporate Awareness
+Accounting for 30% of the Parameter IV score, the Corporate Awareness category evaluates the level of environmental awareness among companies in a given country. It covers four independent indicators pertaining to voluntary corporate actions, each of which was equally weighted at 25%.
 
-####<b>Potential for developing emission offset projects</b>
-
-The project potential indicator assessed opportunities for developing emission offset projects in a given country. Carbon intensive economies – those with high emissions per unit of GDP, or those highly inefficient in their use of energy generally – have significant abatement opportunities. This indicator aims to assess the size of this opportunity by examining three metrics:
-
-* Abatement potential from energy efficiency, measured by the energy use per kilogram of oil equivalent per $1,000 GDP 
-
-* Anthropogenic methane emissions 
-
-* High global warming potential gas emissions from nitrous oxide (N2O) and three main types of fluorinated gases hydrofluorocarbons (HFCs), perfluorocarbons (PFCs), and sulfur hexafluoride (SF6) measured by ktCO2 emissions from 2010.
-
-Each country could receive a 1 or 0 score per metric, allowing a total maximum for this indicator of three points. Using the indexing approach, the country with the maximum output for a given metric received the highest score in the ranking for that metric. All other countries’ outputs were mapped relative to the maximum score. The final indicator score was derived by summing the metric scores. This indicator had a 25% impact on the Carbon Offsets category and a 1.5% impact on a country’s overall Climatescope score.
-
-###CARBON POLICY CATEGORY
-
-The carbon policy category of Parameter IV sought to evaluate public policies and initiatives Climatescope countries have undertaken to reduce greenhouse gas emissions. This category covers four broad but interrelated indicators that answer the following questions:
-
-* Did the country submit an Intended National Determined Contribution (INDC) with emissions reductions targets?
-
-* Does it have a greenhouse-gas (GHG) registry? 
-
-* Does it have or is the country planning to develop market-based instruments to cut GHG emissions? 
-
-* Is it an “implementing country participant” of the Partnership for Market Readiness (PMR) or has it committed to the Nationally Appropriate Mitigation Action (NAMA) policies and actions?
-
-These four indicators measure if a country has implemented or legislated specific emission reduction policies, and if so, what actions have been undertaken. Each of these indicators contributed a different weight to the overall Carbon Policy category and thus had a varied net weight on the overall Climatescope index. 
-
-The INDC emissions reduction target indicator was added in 2016 to reflect on the commitments made by countries at the United Nations Framework Convention on Climate Change meeting in Paris in December 2015. It has the strongest contribution to the carbon policy category score with a weight of 42%. One was the maximum score a country could achieve on this indicator. The mark consisted of two metrics: Business as usual (BAU)/intensity targets and absolute targets. If a BAU or intensity goal is in place, the country obtained a mark of 0.5; if an absolute target has been announced, the country obtained a mark of 1. The GHG country registry indicator accounted for 25% of the Policy category score. The maximum points a country could receive on this indicator was three based on the following: if a country is planning to establish a GHG registry it received 0.5 points, if a country has a voluntary registry in place is got 2 points, and if a country has a mandatory registry in place it got the maximum of 3 points.
-
-The PMR & NAMA indicator was also responsible for 25% of the category score. It incorporates two metrics accounting for three points each: the World Bank’s Partnership for Market Readiness (PMR) and the Nationally Appropriate Mitigation Actions (NAMA) registry.  If a country is officially an “implementing country participant” of the PMR ‒ a forum for collective innovation and actions to support capacity building to scale up climate mitigation ‒ and has one or more projects under preparationstage, it received 2 points. If the country has at least one project implemented in the programme it received 3 points. Additionally, if the country has at least one NAMA project in the implementation stage it got the maximum of 3 points. If it has one or more projects in the development stage, the country received 2 points.  
-
-The GHG market-based instruments was the least significant indicator within this category, with a mere 8% weight. The maximum a country could obtain in this indicator was 1 whereas it received 0.5 points if it has plans to develop an emissions trading system and/or a crediting mechanism.
-
-###CORPORATE AWARENESS
-
-Accounting for 30% of the Parameter IV score, the Corporate Awareness category evaluates the level of environmental awareness among companies in a given country. It covers six independent indicators pertaining to voluntary corporate actions, each of which was equally weighted at 17%:
-
-#### <b>Global reporting initiative</b>
-
+#### Global Reporting Initiative
 The GHG Global Reporting Initiative indicator investigated whether companies in a country voluntarily reported their emissions to the Global Reporting Initiative (GRI), using the initiative’s online database. The number of companies in Bloomberg’s Environmental, Social and Governance (ESG) database was used as a proxy for the total number of companies in a given country. The indicator score was derived by dividing the number of companies reporting to the GRI by the total number of companies in a given country (i.e., those listed in the ESG database). The maximum ratio for the region was obtained by compiling the same dataset across all countries. If the country ratio was greater than the maximum ratio for all, the country received 1 point; if it was lower, it received 0.
 
-####<b>Principle of responsible investment</b>
-
+#### Principle of Responsive Investment
 The Principles of Responsible Investment indicator assessed how many asset owners in a given country are represented among the signatories of the UN’s Principles for Responsible Investment (PRI) ‒ a network of investors working to put into practice the six voluntary and aspirational principles. The PRI database was used to count the number of asset owners, investment managers and professional service partners who signed up to the initiative. The same scoring method used in the GRI indicator was applied to the Principles indicator. The maximum point a country received was 1 if its maximum ratio fell above the maximum ratio for all countries.
 
-####<b>Energy efficiency initiatives & emission reduction policies</b>   
-
-The energy efficiency initiatives and emission reduction policies indicators each looked at how many companies reported dedicated initiatives based on the Bloomberg ESG database. The number of companies reporting energy efficiency or emission reduction initiatives to Bloomberg’s Environment, Social and Governance database (ESG) was counted. The data was levelized by dividing the number of companies reporting these initiatives by the number of active companies in a given country on the Bloomberg terminal. These fields in the Bloomberg terminal are maintained by a team of outsourced vendors, contracted by Bloomberg. The team combs annual reports and sustainability reports, looking for any of the following three indications to determine whether a company is serious about its energy efficiency initiatives: the initiatives merit more than a passing mention in the annual or sustainability report; there is more than one initiative related to energy efficiency; there is numeric metric associated with the initiative (e.g., quantified goal).
-
-####<b>Capacity building: Environmentally focused business training & think thanks</b>  
-
-These two indicators were binary. Primary research was conducted to trace if there was at least one environmentally-focused business training program in place and think tank. The country received the maximum score for each of these indicators if it had one of these entities.
+#### Energy Efficiency Initiatives & Emission Reduction Policies
+The Principles of Responsible Investment indicator assessed how many asset owners in a given country are represented among the signatories of the UN’s Principles for Responsible Investment (PRI) ‒ a network of investors working to put into practice the six voluntary and aspirational principles. The PRI database was used to count the number of asset owners, investment managers and professional service partners who signed up to the initiative. The same scoring method used in the GRI indicator was applied to the Principles indicator. The maximum point a country received was 1 if its maximum ratio fell above the maximum ratio for all countries.
+Spread across Central Asia and Europe

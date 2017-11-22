@@ -4,17 +4,17 @@ layout: page
 title : About Climatescope
 id: about
 ---
-Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment condition for clean energy and climate-related investment worldwide.
+Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment conditions for clean energy and climate-related investments worldwide.
 
-It profiles 58 countries worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy. 
+It profiles 71 countries worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy.
 
-Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to where clean energy can go tomorrow.
+Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future.
 
-This marks the fifth year of the Climatescope project. In 2012 and 2013, Climatescope focused exclusively on Latin America and the Caribbean. The first edition was developed by the Multilateral Investment Fund of the Inter-American Development Bank Group in partnership with Bloomberg New Energy Finance. 
+This marks the sixth year of the Climatescope project. In 2012 and 2013, Climatescope focused exclusively on Latin America and the Caribbean. The first edition was developed by the Multilateral Investment Fund of the Inter-American Development Bank Group in partnership with Bloomberg New Energy Finance.
 
-In 2014, the UK Department for International Development and the US Agency for International Development have joined as supporters and advisors. The project has been expanded to include 58 countries, states, and provinces in sub-Saharan Africa and Asia. Bloomberg New Energy Finance serves as research partner and author of the report.
+From 2014 to 2016, the UK Department for International Development and the US Agency for International Development  joined as supporters and advisors. The project was expanded to include 58 countries, states, and provinces in sub-Saharan Africa and Asia.  The coverage was expanded further to include three countries from the Middle-East and North Africa, as well as with an updated methodology for the off-grid energy coverage.
 
-In 2016, the project was supported by the UK Department for International Development and the US Agency for International Development. The coverage was expanded further to include three countries from the Middle-East and North Africa, as well as with an updated methodology for the off-grid energy coverage.
+In the last year, Climatescope has expanded to include 13 additional countries in Central Europe and Asia, bringing the total number of countries to 71. The project is supported by the UK Department for International Development, and Bloomberg New Energy Finance serves as research partner and author of the report.
 
 ***
 
@@ -24,31 +24,44 @@ Ethan Zindler
 ### Project manager
 Dario Traum 
 
-### Project coordinators
-Ashish Sethia, Itamar Orlandi, Lilian Alves, Luiza Demôro, Maggie Kuang, Nico Tyabji, Sara Giordano.
+### Lead Analyst
+Luiza Demôro
 
-### Editors
-Angus McCrone, Ben Vickers, Bryony Collins, Rohan Boyle, Vandana Gombar.
+### Head of Off-Grid Analysis
+Itamar Orlandi
 
-### Researchers & data gathering
-
-#### Africa and Middle East
-Andrew Grant, Ben Gidlow, James Sprinz, Joe Byrne, Jonas Rooze, Keegan Kruger, Kieron Stopforth, Kyle Harrison, Lara Hayim, Monne Depratere, Nicole Aspinall, Tom Harries, Victoria Cuming, Will Nelson.
-
-#### Asia
-Atin Jain, Jacky Lilinshtein, Janis Hoberg, Katya Sharavzhamtsyna, Luke Mills, Muhammad Altamash, Steph Munro, Yvonne Liu.
-
-#### Latin America and Caribbean
-Ana Verena Lima, Helena Chung,Laura Castro, Raphael Barbosa Correa.
-
-### Lead modelling analyst
+### Lead Modeller 
 Ulimmeh Ezekiel
 
+### Project Coordinator
+Yvette Osikilo
+
+### Editors
+Angus McCrone, Ben Vickers, Bryony Collins, Vandana Gombar.
+
+### Research & Data Gathering
+
+#### Africa and Middle East
+Meredith Annex, Thea Bronlund, Bryony Collins, Victoria Cuming, Isabelle Edwards, Ulimmeh Ezekiel, Raksha Gosai, Andrew Grant, Conor Hanley, Tom Harries, Kyle Harrison, Lara Hayim, Takehiro Kawahara, Keegan Kruger, Eleonore Lazat, Daniel McLaughlin, Pietro Radoia, Dean Hope Robertson, Kieron Stopforth
+
+#### Asia
+Richard Chatterton, Shantanu Jaiswal, Jacqueline Lilinshtein, Sophie Lu, Diego Marquina, Alex Morgan, Steph Munro, Itamar Orlandi, Arvind Pidaparthi, Abhishek Rohatgi, Johana Typloltova 
+
+#### Europe
+Nick Albanese, Katya Sharavzhamtsyna, Nick Steckler, Ben Vickers.
+
+#### Latin America and Caribbean
+Laura Castro, Helena Chung, Raphael Barbosa Correa, Ana Verena Lima.
+
 ### Policy expert panel
-Abbas Bilgrami, Juniper Advisors Ltd; Ángeles Mora Sanchez, Gamesa; Anna Czajkowska, Nest; Anna Paola Minervini; Barbara Rubim; Brian Whitesides; Brindusa Fidanza, The Ground_Up Project; Carlos Barria; Paul Bertheau; Chris Twomey; Dario Abramskiehn, CPI; David Lecoque; Deepak Gupta; Dominique Auverlot; Alex Avila; Florian Fritzsche; Gabriela da Rocha Oliveira; Hannah Murdock; Hugo Lucas, Factor; Rupesh Madlani; Jane Wilkinson, CPI; John Fenton; Jonathan Myrtle; K G Chamila Jayasekara; Laurence Mulliez; Lisa Jacobson; Manuel Garmendia Zarandona, Gamesa; Michael Weber; Miguel Martinez Rodriguez; Federico Mazza, CPI; Mike Gratwicke; Ming Yang; Nathan Moore; Patrick D'addario, Fiorello H. LaGuardia Foundation; Phillip Brown; Rachel Ross, Allotrope Partners; Riquel Mitma; Ruggero Paterno; Sam Miles; Tobias Rinke; Victoria Healey; Vincent Delporte; Yasemin Erboy Ruff, United Nations Foundation.
+Tabaré 	Arroyo Currás, Dominique Auverlot, Alex Avila, Carlos Barria, Michael Barry, Dr Fred Beach,
+Yasmina Benmessaoud , Paul Bertheau, Phillip Brown, Albert Butare, Ben Caldecott, Phillip Caplan,
+Maria D. Carvalho, Tracey Crowe, Anna Czajkowska, Patrick D'Addario, Vincent	 Delporte, Michel Di Capua, Manon Dufour,Yasemin Erboy Ruff, John R. Fenton, Dr Florian Fritzsche, Magdalena  García Mora, Joby Gaudet, Milena Gonzalez Vasquez, Michael  Gratwicke, Dave Grossman, Christopher  Head, Victoria  Healy, Andrew  Herndon, Lisa  Jacobson, Timothy Juliani, Furkat Kadyrov, James  Koehler, Ken Locklin, Bill Loveless, Rupesh Madlani, Aditi  Maheshwari, Irina Markina, Miguel	Martines Rodriguez, Quinn McGovern, Yvonne McIntyre, Naki Mendoza, Samuel  Miles, Nathan Moore, Marco Antonio Morales, Brian  O'Hanlon, Ruggero Paterno, Graham  Pugh, Alexis  Raichoudhury, Tobias	Rinke,
+Rachel Ross, John  Romankiewicz, Bárbara Rubim, Meghan  Sapp, Andrew  Shapiro, Varun Sivaram, V Subramanian, Philippe Tallon, Liang Tang, Zephyr Taylor, Chris Twomey, Nico Tyabji, Candace Vahlsing,
+Arnaldo	 Vieira de Carvalho Jr., Michael	Waldron, Markus Walther, Emily Wann, Brian Whitesides, Marcus	 Wiemann, Dan Woynillowicz, Nitin Zamre, Dr Fang Zhang.
 
 ### Special thanks
-Arlinda Mezini, Benjamin Kafri, Dharshan Wignarajah, Eve Ottlakan, Flow Bohl, Jon Moore, Karen Johnson, Kathleen Auth, María Hilda Rivera, Max Duluc, Noemi Glickman, and the many energy sector stakeholders our analyst team has met during research trips.
+Serina Ng, Jon Moore, Dharshan Wignarajah, Arlinda Mezini, Benjamin Kafri, Eve Ottlakan, Flow Bohl, Jon Moore, Max Duluc, Noemi Glickman, and the many energy sector stakeholders that our analyst teams met during research trips.
 
 ### Credits
 All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
