@@ -1,7 +1,7 @@
 ---
 layout: page
-title: key findings Title
-description: key findings Description
+title: Climatescope 2017 - Overview
+description: Overview of Climatescope 2017 key findings, insights and tools
 published: true
 download_source: null 
 
