@@ -43,7 +43,7 @@ $(document).ready(function() {
 
     L.mapbox.accessToken = "pk.eyJ1IjoiY2xpbWF0ZXNjb3BlIiwiYSI6ImNpdzJmb2dwcjBhMzQyenBia2E1azBjODUifQ.9I6shKgqM1xeBA13VX5a4g"
 
-    L.mapbox.styleLayer(`mapbox://styles/${mapConf.mapId}`, {
+    L.mapbox.styleLayer('mapbox://styles/' + mapConf.mapId, {
                           minZoom: 1,
                           bounds: [
                             [84.812743, -178.629215],
