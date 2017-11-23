@@ -95,7 +95,7 @@ A welcoming enabling framework is one where: a comprehensive, effective and stab
 
 A total of 22 indicators serve as the inputs into Parameter I. These fall into four categories: Policy and Regulation, Clean Energy Penetration, Price Attractiveness, and Market Size Expectation. Each category contributed with varying weights to the overall Enabling Framework parameter score. Scoring for Parameter I is completed with 5 indicators applied exclusively to countries which were assessed under the off-grid focus methodology.
 
-###POLICY & REGULATION
+### POLICY & REGULATION
 
 The Policy and Regulation category includes four specific indicators for all nations in the survey: clean energy policies, power sector structure, clean energy rural electrification, and policy barriers. For nations assessed under the off-grid focus methodology, the scope of the policy barriers was extended and two additional indicators were taken into account: distributed regulatory framework and energy access policies. 
 
@@ -148,7 +148,7 @@ In 2015, the method for calculating a country’s final clean energy capacity ra
 
 Data for all six indicators comprising the clean energy penetration category were derived from primary sources, including websites and publications from energy ministries, power market regulators, system operators and utilities. Whenever possible, 2015 data were employed for Climatescope. Growth rates were calculated based on changes between the latest two years for which data were available.
 
-###PRICE ATTRACTIVENESS
+### PRICE ATTRACTIVENESS
 
 The price attractiveness category of indicators takes an accounting of local electricity prices and, in the case of countries being analysed under the off-grid focus methodology, the price of fuels used to power small-scale generators. The general principle: higher priced energy markets are generally more attractive for clean energy development and deployment as clean energy is all the more cost-competitive.
 In all, BNEF collected data on the following four classes of electricity tariff in every country where it was available:
@@ -166,7 +166,7 @@ The final price attractiveness score was derived in one of two ways depending on
 First, for the on-grid focus countries, two electricity prices were used to determine a price attractiveness score: the average spot price in the country and a composite “average retail price”. The spot price was derived simply by taking the average seen over the course of a year (all times of day and year included) in a given market. The second was derived by taking the average of the residential, commercial, and industrial prices seen in that country over the prior year to determine the retail price. Each of these scores were then given equal weighting toward the final price attractiveness score. Many countries do not have spot markets for electricity trading, however. In those countries, the retail price alone was used to determine the price attractiveness score. Finally, for off-grid focus countries, additional fuel sources for distributed power generation and lighting were taken into account: kerosene and diesel. BNEF collected average prices for these fuels on a US dollar per litter basis in 2015. Again, the guiding principle was that higher priced fuel makes a market more attractive for investors as renewables become all the more cost-competitive.
 BNEF then used the indexing approach to determine 0-5 scores. The country with the highest prices received the highest score (5). All other nations were then benchmarked against that nation.
 
-###MARKET SIZE EXPECTATIONS CATEGORY
+### MARKET SIZE EXPECTATIONS CATEGORY
 
 Markets poised for growth are attractive to clean energy investors. Recent strong growth in power demand, a high percentage of the population without access to reliable electricity, or a high number of citizens reliant on solid fuels for cooking all potential opportunities for clean energy deployment. The Market Size Expectations category sought to measure countries with such characteristics through three indicators, two of which applied to all nations surveyed and one specifically intended to take into account conditions in lesser developed countries.
 
@@ -181,7 +181,7 @@ Finally, for the off-grid focus countries, the population using solid fuels for 
 Few investors are comfortable with being the first to invest in a new technology or a new region. To rank a country’s ability to attract low carbon investment, it is important to assess its achievements in that regard to date. The Clean Energy Investment and Climate Financing parameter tracks historic investment activity in a given country while laying out financing conditions for future commitments.
 In all, Parameter II comprises 9 indicators distributed across three categories: Amount Invested, Fund Sources and Cost of Debt. Each of these three categories contributed with varying weights to the overall Clean Energy Investment and Climate Financing parameter score. The green microfinance indicator which was part of the Climatescope methodology in the past was removed in 2016.
 
-###AMOUNT INVESTED
+### AMOUNT INVESTED
 
 The Amount Invested category consists of two indicators related to historic financial commitments to low-carbon companies and projects: cumulative clean energy investment and clean energy investment growth rate. The timeframe used was 2011 to 2015. The category contributes to 51% of the score for this parameter.
 Data sources employed in the category were drawn from BNEF’s proprietary Industry Intelligence database ‒ the world’s most accurate database of clean energy and carbon investment activity. The database contains detailed information on funds invested in clean energy projects larger than 1MW and technologies, grants, venture, private equity and corporate finance transactions, and project financing. The Amount Invested methodology follows that employed in Climatescope 2016.
@@ -196,7 +196,7 @@ Note that the total clean energy investment indicator accounts for cumulative co
 
 Similarly, the growth rate for the clean energy investment indicator took into account the same five-year period and was based on compound annual growth rates. Scoring was also derived by using the index approach with the country with the highest compound six-year annual growth rate receiving the maximum score of 5. Since 2015, the maximum growth rate used in the indexing is capped at 150%. There was a simple reason for this: one country that prior to 2014 had seen virtually zero clean investment technically saw its growth rate hit 583% in 2014 thanks to a small level of investment in the year. Having all other countries benchmarked against this 583% would have badly hurt them all (even nations that had posted otherwise remarkable growth rates of 100% or more). As a result, a cap of 150% was used for this particular benchmarking/indexing exercise.
 
-###FUND SOURCES
+### FUND SOURCES
 
 The sources of funds category contributed 26% to the Parameter II score. Its two unique indicators – loans grants and local investment by local players – each made up half of the parameter weight and contributed 3% apiece to the overall Climatescope score.
 
@@ -212,7 +212,7 @@ Investors were classified by the country in which they are registered in all ins
 
 To illustrate the methodology, consider the 2012 $130m financing of the 100.8MW Satara wind farm in Panama. In this specific transaction only $41.42m – not the entire financial commitment to the project – was recorded toward the total value of investments by local players for Panama.
 
-###COST OF DEBT
+### COST OF DEBT
 
 Financing conditions in a given country are fundamental for developers and investors alike. The cost of debt category is made up of two indicators related to financing conditions for utility-scale renewable projects or investments into low-carbon manufacturing capacity or firms. These indicators are average cost of debt and average swap rate by country; each contributed equally to the overall category score. Each indicator had a 2.6% net weight toward the overall Climatescope score. Data on the average cost of debt available to project was sourced from the lending interest rate dataset form the World Bank and from information gathered from developers. Where data was not available, the country’s central bank rate was used.
 
@@ -224,15 +224,15 @@ This category also included an indicator reflecting swap rates in each of the co
 
 A nation’s ability to attract capital and accelerate low-carbon energy deployment is partly contingent on how many segments of key value chains it has in place. Parameter III sought to take this into account. It included three indicators, with an additional two indicators related to distributed energy companies for the off-grid focus countries.
 
-###SERVICE PROVIDERS
+### SERVICE PROVIDERS
 
 A well-developed local presence of service providers for the low-carbon economy, including firms involved in legal and marketing services, project development and ancillary services is imperative to propel and sustain the development of clean energy. Points were given if the country had at least one provider in each sub-sector. For the off-grid focus countries, a separate indicator for those service providers specifically related to distributed clean energy is taken into consideration.
 
-###SECTOR VALUE CHAINS
+### SECTOR VALUE CHAINS
 
 The clean energy sector value chains indicator tracked the presence of six distinct sector value chains – and their subsectors – in each country, biofuels, biomass & waste, geothermal, small hydro, solar and wind. Combining all segments yielded a maximum possible score of 40 points per country. Nations were awarded 1 point per segment they had in place. A strong manufacturing base is imperative for attracting investment and producing the necessary equipment to help expand clean energy capacity. For the off-grid focus countries, we added a separate indicator for those companies that operate within the distributed clean energy sectors.
 
-###FINANCIAL INSTITUTIONS
+### FINANCIAL INSTITUTIONS
 
 The financial institutions indicator tracked how many types of financial service providers such as banks, corporate finance institutions, investment funds, impact funds and private equity and venture capital funds invested in the low-carbon sector. Primary research was conducted to assess if at least one of these four types of financial institutions was active in a given country. Each type of lender could receive at most 1 point. Thus 5 points were the maximum for this indicator – a sign that the country has the ability to supply funds needed for the industry to grow. This indicator contributes 25% to the overall Parameter III score.
 
