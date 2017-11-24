@@ -27,6 +27,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
           <div class="featured-section__body">
             <ol class="entry-list">
               {% assign item = site.posts | where:"lang",language | where:"featured", true | first %}
+              {% if item %}
               <li>
                 <article class="entry entry--short update">
                   <div class="entry__contents">
@@ -46,8 +47,10 @@ description: Climatescope a unique country-by-country assessment, interactive re
                   </div>
                 </article>
               </li>
+              {% endif %}
 
               {% assign item = site.en_off-grid | where:"featured", true | first %}
+              {% if item %}
               <li>
                 <article class="entry entry--short update">
                   <div class="entry__contents">
@@ -67,8 +70,10 @@ description: Climatescope a unique country-by-country assessment, interactive re
                   </div>
                 </article>
               </li>
+              {% endif %}
 
-              {% assign item = site.en_insights | where:"featured", true | first %}
+              {% assign insights = site.en_insights | where:"featured", true %}
+              {% for item in insights %}
               <li>
                 <article class="entry entry--short update">
                   <div class="entry__contents">
@@ -88,6 +93,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
                   </div>
                 </article>
               </li>
+              {% endfor %}
             </ol>
           </div>
         </section>

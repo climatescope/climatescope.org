@@ -5,7 +5,7 @@ description: Here we assess the clean energy landscape of the 71 countries studi
 published: true
 download_source: null 
 
-featured: false
+featured: true
 ---
 
 As the energy transition gains pace and strength, emerging market nations are leading the way, not just in terms of investment and deployment, but with innovative policy-making as well. Here we assess the clean energy landscape of the 71 countries studied for Climatescope by examining both the unique challenges they face and the novel policies they have crafted to overcome them.
