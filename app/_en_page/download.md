@@ -13,7 +13,7 @@ arrange: full
       <p>Download the full Climatescope 2016 report.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2016-report-en.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">PDF <span class="badge">6Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2017-report-en.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">PDF <span class="badge">5Mb</span></a>
         </li>
       </ul>
     </div>
@@ -25,7 +25,7 @@ arrange: full
       <p>Download the Climatescope model and raw data.</p>
       <ul class="download-list">
         <li>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2016.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">Excel <span class="badge">7Mb</span></a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/model/climatescope-2017.xlsm" title="Download Climatescope model in Excel format" class="bttn bttn-success download data-download">Excel <span class="badge">8Mb</span></a>
         </li>
         <li>
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/data/climatescope-full-2017.csv" title="Download raw data in CSV format" class="bttn bttn-success download data-download">CSV <span class="badge">0.3Mb</span></a>
@@ -49,13 +49,13 @@ arrange: full
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/summary" title="Go to page">Key Findings</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2016-key-findings-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2017-key-findings-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
       <tr>
         <td class="cell-section"><a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology" title="Go to page">Methodology</a></td>
         <td class="cell-download">
-          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2016-methodology-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
+          <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/docs/climatescope-2017-methodology-en.pdf" title="Download report in PDF format" class="bttn bttn-s bttn-success download data-download">Report (PDF)</a>
         </td>
       </tr>
   </tbody>
