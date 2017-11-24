@@ -41,10 +41,10 @@
     <div class="param-details__graph" ng-if="param.id == 1 || param.id == 2">
       <figure ng-if="param.id == 1" class="chart-wrapper">
         <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
-        <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
+        <p class="chart-subhead">{{ t['Electricity 2016'][language] }}</p>
         <div id="price-attractiveness-e" class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-electricity']"><!-- Chart --></div>
 
-        <p class="chart-subhead" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" >{{ t['Fuel 2014'][language] }}</p>
+        <p class="chart-subhead" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" >{{ t['Fuel 2016'][language] }}</p>
         <div id="price-attractiveness-fuel" class="chart-std price-attractiveness-fuel" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-fuel']"><!-- Chart --> </div>
 
         <p class="chart-note">All prices average; see <a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology">methodology</a> for details</p>

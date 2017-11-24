@@ -132,16 +132,16 @@
               <figure class="chart-wrapper">
                 <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
                 <div class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="compareCtrl.compareSelected[0].chartData['price-attractiveness-electricity']">
-                  <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
+                  <p class="chart-subhead">{{ t['Electricity 2016'][language] }}</p>
                   <!-- Chart -->
                 </div>
 
                 <div class="chart-std price-attractiveness-fuel" ng-if="compareCtrl.isFuelChartAvailable(0)" init-chart="price_attractiveness_electricity" chart-data="compareCtrl.compareSelected[0].chartData['price-attractiveness-fuel']">
-                 <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
+                 <p class="chart-subhead">{{ t['Fuel 2016'][language] }}</p>
                  <!-- Chart -->
                 </div>
                 <div class="chart-std price-attractiveness-fuel" ng-if="!compareCtrl.isFuelChartAvailable(0)">
-                  <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
+                  <p class="chart-subhead">{{ t['Fuel 2016'][language] }}</p>
                   <div class="placeholder">
                     <p>{{ t['There is no fuel data for this Country / State.'][language] }}</p>
                   </div>
