@@ -8,8 +8,8 @@ $rem-base: 16px;
 $base-line-height: 150%;
 
 // We use these as default colors throughout
-$primary-color: #153442;                            // Big Stone
-$secondary-color: #4b8c6e;                          // Viridian
+$primary-color: #0D2029;                            // Big Stone
+$secondary-color: #509b75;                          // Viridian
 $tertiary-color: #C3D500;                          	// light green
 $quaternary-color: #00925F;                         // dark green
 $alert-color: #D85D3F;                              // red
@@ -22,10 +22,10 @@ $base-alpha-color: rgba($base-color, 0.12);
 
 $link-color: $secondary-color;
 
-$infograph-color-a: #C3AC4B;                        // yellow       solar
-$infograph-color-b: #4B9A94;                        // turquoise    biomass
-$infograph-color-c: #146786;                        // blue         large hydro
-$infograph-color-d: #8B6D91;                        // purple       small hydro
+$infograph-color-a: #EABD00;                        // yellow       solar
+$infograph-color-b: #32B79D;                        // turquoise    biomass
+$infograph-color-c: #0B90AF;                        // blue         large hydro
+$infograph-color-d: #645D9C;                        // purple       small hydro
 $infograph-color-e: #83549a;                        // purp         geothermal
 $infograph-color-f: #eb4d4a;                        // red          nuclear
 $infograph-color-g: #92d4ee;                        // lblue        wind
@@ -35,8 +35,8 @@ $infograph-color-j: #f99d6c;                        // orange       natural gas
 $infograph-color-k: #625959;                        // grey         oil
 
 // We use these to control various global styles
-$body-bg: tint($primary-color, 95%);
-$body-font-color: tint($primary-color, 8%);
+$body-bg: tint($primary-color, 96%);
+$body-font-color: tint($primary-color, 12%);
 $body-font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $body-font-weight: normal;
 $body-font-style: normal;
