@@ -69,18 +69,28 @@
     });
 
     map.on('load', function () {
-      var feats = map.querySourceFeatures('countries', {sourceLayer: 'climatescope-admin0-polygons-716yo8'});
-      var currentCountry = feats.find(function (f) { return f.properties.iso === CS.countryId});
-      if (!currentCountry) {
-        console.warn('Country not found on source:', CS.countryId);
+      if (CS.countryId === 'bb') {
+        // Barbados is too small to be in querySourceFeatures when zoomed out
+        map.fitBounds([
+          [ -59.685974, 13.021283 ],
+          [ -59.372177, 13.358890 ]
+        ], {
+          padding: {top: 10, bottom: 10, left: 0, right: 0}
+        })
+      } else {
+        var feats = map.querySourceFeatures('countries', {sourceLayer: 'climatescope-admin0-polygons-716yo8'});
+        var currentCountry = feats.find(function (f) { return f.properties.iso === CS.countryId});
+        if (!currentCountry) {
+          console.warn('Country not found on source:', CS.countryId);
+        }
+        var bbox = turf.bbox(currentCountry);
+        map.fitBounds([
+          [bbox[0], bbox[1]],
+          [bbox[2], bbox[3]]
+        ], {
+          padding: {top: 10, bottom: 10, left: 0, right: 0}
+        })
       }
-      var bbox = turf.bbox(currentCountry);
-      map.fitBounds([
-        [bbox[0], bbox[1]],
-        [bbox[2], bbox[3]]
-      ], {
-        padding: {top: 10, bottom: 10, left: 0, right: 0}
-      })
     });
   }  
 })();
