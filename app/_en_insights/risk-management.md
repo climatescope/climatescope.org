@@ -3,7 +3,7 @@ layout: page
 title: How to Mitigate Renewables Risks in Emerging Markets
 description: This commentary focuses on the higher and different risks faced when developing a renewables project in the 71 emerging markets covered by Climatescope
 published: true
-download_source: null 
+download_source: /en/download/insights/climatescope-2017-renewables-risks.pdf
 
 featured: true
 ---

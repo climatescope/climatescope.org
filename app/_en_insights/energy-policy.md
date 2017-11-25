@@ -3,7 +3,7 @@ layout: page
 title: Policies for the energy transition - lessons learned in emerging markets
 description: Here we assess the clean energy landscape of the 71 countries studied for Climatescope by examining both the unique challenges they face and the novel policies they have crafted to overcome them.
 published: true
-download_source: null 
+download_source: /en/download/insights/climatescope-2017-energy-transition.pdf
 
 featured: true
 ---
