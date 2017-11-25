@@ -121,6 +121,7 @@ prose:
           placeholder: "Page name"
       - name: "featured"
         field:
+          label: "Featured"
           element: "checkbox"
           help: "Feature this post on the frontpage"
           value: false
@@ -165,6 +166,7 @@ prose:
           help: "Small description of the post. Will show up on the post list."
       - name: "featured"
         field:
+          label: "Featured"
           element: "checkbox"
           help: "Feature this post on the frontpage"
           value: false
@@ -187,10 +189,12 @@ prose:
           placeholder: "Insight description"
       - name: "published"
         field:
+          label: "Published"
           element: "checkbox"
           value: true
       - name: "featured"
         field:
+          label: "Featured"
           element: "checkbox"
           help: "Feature this post on the frontpage"
           value: false
