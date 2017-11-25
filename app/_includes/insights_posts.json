@@ -1,0 +1,19 @@
+[
+  {% assign comma = false %}
+  {% assign posts = (site.en_insights) %}
+  {% for post in posts reversed %}
+  {% unless post.published == false %}
+    {% if comma %},{% endif %}
+    {% assign comma = true %}
+    {
+      "type": "insights",
+      "title": "{{ post.title | escape_once }}",
+      "date": "{{ post.date | date: '%Y/%m/%d' }}",
+      "dateFormatted": "{{ post.date | date: '%b %-d, %Y' }}",
+      "url": "{{ site.domain }}{{ site.path_prefix }}{{ post.url }}",
+      "author": "{{ post.author }}",
+      "description": "{{ post.description | escape_once }}"
+    }
+  {% endunless %}
+  {% endfor %}
+]
