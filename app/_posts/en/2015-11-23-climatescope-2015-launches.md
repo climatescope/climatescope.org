@@ -4,7 +4,7 @@ title: Climatescope 2015 goes live!
 
 description: This year's edition of Climatescope officially goes live on 23 November. Read the official press release here.
 
-featured: true
+featured: false
 ---
  
 ### TOPPING WEALTHIER NATIONS, KEY EMERGING MARKETS ATTRACT RECORD $126BN IN CLEAN ENERGY INVESTMENT

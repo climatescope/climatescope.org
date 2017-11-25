@@ -3,9 +3,9 @@ layout: page
 title: How to Mitigate Renewables Risks in Emerging Markets
 description: This commentary focuses on the higher and different risks faced when developing a renewables project in the 71 emerging markets covered by Climatescope
 published: true
-download_source: null 
+download_source: /en/download/insights/climatescope-2017-renewables-risks.pdf
 
-featured: false
+featured: true
 ---
 
 Every renewable energy project entails risk, but one in an emerging market can bring more and different types of risk. There is no one-size-fits-all solution, although there are many instruments available on the market – for a price. And sometimes a tool is not necessary. This commentary focuses on the higher and different risks faced when developing a renewables project in the 71 emerging markets covered by the 2017 Global Climatescope project (the red lightning bolts in Figure 1).

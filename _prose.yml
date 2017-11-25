@@ -119,6 +119,12 @@ prose:
           element: "text"
           label: "Page name"
           placeholder: "Page name"
+      - name: "featured"
+        field:
+          label: "Featured"
+          element: "checkbox"
+          help: "Feature this post on the frontpage"
+          value: false
     
     ## PAGE
     "app/_en_page":
@@ -158,3 +164,41 @@ prose:
           element: "textarea"
           label: "Description"
           help: "Small description of the post. Will show up on the post list."
+      - name: "featured"
+        field:
+          label: "Featured"
+          element: "checkbox"
+          help: "Feature this post on the frontpage"
+          value: false
+
+    ## INSIGHTS
+    "app/_en_insights":
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title insight"
+          placeholder: "Insight title"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description insight"
+          placeholder: "Insight description"
+      - name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: true
+      - name: "featured"
+        field:
+          label: "Featured"
+          element: "checkbox"
+          help: "Feature this post on the frontpage"
+          value: false
+      - name: "download_source"
+        field:
+          element: "text"
+          label: "Add a download link"

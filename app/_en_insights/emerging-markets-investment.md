@@ -3,7 +3,8 @@ layout: page
 title: Emerging Markets Clean Energy Investment
 description:
 published: true
-download_source: null 
+featured: true
+download_source: /en/download/insights/climatescope-2017-clean-energy-investment.pdf
 ---
 Since 2010, emerging markets have accounted for a larger share of global clean energy investment than the rest of the world. But from 2015 to 2016, these countries recorded their deepest year-on-year decline ever, in dollar terms. This analysis reviews clean energy financing in 106 emerging market nations and explores why capital flows appear to have slowed recently.
 

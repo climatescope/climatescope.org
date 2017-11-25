@@ -12,7 +12,7 @@ layout: base
   <header class="layout--page__header">
     <div class="row--contained">
       <div class="layout--page__heading">
-        <h1 class="layout--page__title">Off-grid Quarterly Reports</h1>
+        <h1 class="layout--page__title">Insights</h1>
         <p class="hd-label">{{ page.date | date: '%b %-d, %Y' }}</p>
       </div>
       <div class="layout--page__tools">
@@ -27,8 +27,8 @@ layout: base
         {{content}}
       </div>
       <div class="col--main">
-        {% assign blogPosts = site.en_off-grid %}
-        {% include pager.html posts=blogPosts for='en_off-grid' reversed %}
+        {% assign posts = site.en_insight %}
+        {% include pager.html posts=posts for='en_insights' reversed %}
       </div>
     </div>
   </div>
