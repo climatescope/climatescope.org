@@ -6,6 +6,7 @@ published: true
 download_source: /en/download/insights/climatescope-2017-energy-transition.pdf
 
 featured: true
+frontpage_order: 20
 ---
 
 As the energy transition gains pace and strength, emerging market nations are leading the way, not just in terms of investment and deployment, but with innovative policy-making as well. Here we assess the clean energy landscape of the 71 countries studied for Climatescope by examining both the unique challenges they face and the novel policies they have crafted to overcome them.

@@ -72,7 +72,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
               </li>
               {% endif %}
 
-              {% assign insights = site.en_insights | where:"featured", true %}
+              {% assign insights = site.en_insights | where:"featured", true | sort: 'frontpage_order' %}
               {% for item in insights %}
               <li>
                 <article class="entry entry--short update">

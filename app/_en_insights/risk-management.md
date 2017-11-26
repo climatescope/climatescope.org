@@ -6,6 +6,7 @@ published: true
 download_source: /en/download/insights/climatescope-2017-renewables-risks.pdf
 
 featured: true
+frontpage_order: 40
 ---
 
 Every renewable energy project entails risk, but one in an emerging market can bring more and different types of risk. There is no one-size-fits-all solution, although there are many instruments available on the market – for a price. And sometimes a tool is not necessary. This commentary focuses on the higher and different risks faced when developing a renewables project in the 71 emerging markets covered by the 2017 Global Climatescope project (the red lightning bolts in Figure 1).
