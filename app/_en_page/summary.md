@@ -86,20 +86,20 @@ None of these issues stands to be resolved entirely in the short-term but there 
 
 **This Climatescope website is intended to be the most in-depth public resource for understanding clean energy conditions in emerging nations.  Users are invited to:**
 
-* Watch a short video explaining high-level trends.
+* Watch a [short video](https://vimeo.com/240195012) explaining high-level trends.
 
-* Learn about all non-OECD clean energy finance flows. 
+* Learn about all [non-OECD clean energy finance flows](/en/insights/emerging-markets-investment). 
 
-* Understand developing nation climate policies in the context of the Paris Agreement.
+* Understand developing nation [climate policies in the context of the Paris Agreement](/en/insights/climate-policy).
 
-* Discover the lessons learned for energy transition policies in emerging markets.
+* Discover the lessons learned for [energy transition policies in emerging markets](/en/insights/energy-policy).
 
-* Understand strategies to mitigate the risks of operating in developing countries.
+* Understand strategies to [mitigate the risks of operating in developing countries](/en/insights/risk-management).
 
-* Assess clean energy policies in Climatescope nations at a high level then drill down through the policy library.
+* Assess [clean energy policies in Climatescope nations](/en/insights/energy-policy) at a high level then drill down through the policy library.
 
-* See how individual countries scored in the Climatescope survey, then learn more about each by clicking on an interactive map, or compare nations. 
+* See [how individual countries scored in the Climatescope survey](/en/results/), then learn more about each by clicking on an [interactive map](/en/results/), or [compare nations](/en/compare/). 
 
-* Analyze country-level conditions for off-grid clean energy development through a new data hub.
+* Analyze country-level conditions for off-grid clean energy development through a [new data hub](/en/off-grid-data-hub/).
 
 * And explore more insights, tools and regular updates at [global-climatescope.org](http://www.global-climatescope.org)
