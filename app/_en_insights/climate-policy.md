@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Clean Energy and the Paris Promises
-description: The 2015 Paris Agreement saw virtually every nation on earth pledge to address the threat of climate change. Here we examine the ambition level of developing nation NDCs and the opportunities each commitment presents for clean energy deployment.
+description: Every Climatescope nation signed the 2015 Paris Agreement to address climate change.  But which countries followed through with the needed policies at home? Which haven't?
 published: true
 download_source: null 
 
