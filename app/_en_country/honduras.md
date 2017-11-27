@@ -21,5 +21,5 @@ Honduras also uses auctions to contract new power capacity. In 2010, ENEE held a
 
 ###Score summary
 
-
+The country’s weakest performance was on Low-Carbon Business & Clean Energy Value Chains Parameter III. It tumbled 16 places to rank 48th, partly due to the absence of clean energy service providers, such as insurers and lawyers, and the scarcity of equipment manufacturers. 
 
