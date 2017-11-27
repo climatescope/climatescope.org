@@ -10,7 +10,7 @@ arrange: full
   <li>
     <div class="well well-l download download-pdf">
       <h2>Full Report</h2>
-      <p>Download the full Climatescope 2016 report.</p>
+      <p>Download the full Climatescope 2017 report.</p>
       <ul class="download-list">
         <li>
           <a href="{{ site.domain }}{{ site.path_prefix }}/en/download/reports/climatescope-2016-report-en.pdf" title="Download full report in PDF" class="bttn bttn-success download data-download">PDF <span class="badge">6Mb</span></a>
