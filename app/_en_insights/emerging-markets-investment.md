@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Emerging Markets Clean Energy Investment
-description: Since 2010, emerging markets have accounted for a larger share of global clean energy investment than the rest of the world. This analysis reviews clean energy financing in 106 emerging market nations and explores why capital flows appear to have slowed recently.
+description: Since 2010, emerging markets have accounted for a larger share of global clean energy investment than the rest of the world combined. But fund flows have recently slowed. This analysis explores why.
 published: true
 download_source: null 
 ---
