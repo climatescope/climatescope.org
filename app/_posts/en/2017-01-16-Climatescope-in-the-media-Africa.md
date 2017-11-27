@@ -1,6 +1,6 @@
 ---
 postId: Climatescope-in-the-media-Africa
-title: Climatescope in the media - Africa highlights
+title: Climatescope in the Media - Africa Highlights
 
 description: 
 ---
