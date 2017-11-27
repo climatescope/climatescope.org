@@ -12,7 +12,7 @@ before_install:
   - chmod +x ./.build_scripts/deploy.sh
 
 script:
-  - if [[ $TRAVIS_BRANCH == master ]]; then npm run build; elif [[ $TRAVIS_BRANCH == v2017 ]]; then npm run stage; fi
+  - if [[ $TRAVIS_BRANCH == master ]]; then npm run build; elif [[ $TRAVIS_BRANCH == develop ]]; then npm run stage; fi
 
 deploy:
   - provider: script
@@ -30,4 +30,4 @@ deploy:
     local-dir: _site
     skip-cleanup: true
     on:
-      branch: v2017
+      branch: develop
