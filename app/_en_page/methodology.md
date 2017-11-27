@@ -268,19 +268,30 @@ This indicator measures the coverage of domestic policy in terms of share of tot
 
 #### Climate change regulations
 This indicator measures whether the country has the following regulations in force. The score awarded for each of the sub-indicators below is binary and regulations must explicitly target emissions reduction.
+
 * Fuel standards;
+
 * Emission standards for power plants;
+
 * Industrial emissions standards;
+
 * Vehicle emissions standards;
+
 * Buildings emissions standards;
+
 * Product emissions standards;
+
 * Appliance emissions standards;
+
 * Emissions disclosure requirements for products and/or businesses.
 
 #### Climate change incentives
 This indicator measures whether the country has the following climate change incentives in force. The score awarded for each of the sub-indicators below is binary and incentives must explicitly target emissions reduction.
-* Carbon pricing
+
+* Carbon pricing;
+
 * Carbon linked taxation;
+
 * Subsidies of funding programmes for emissions reductions.
 
 #### Climate change prioritization
