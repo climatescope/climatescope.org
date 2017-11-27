@@ -65,11 +65,11 @@
           <em class="label-grid label-grid-off" ng-if="compareCtrl.compareSelected[0].grid == 'off'"><span>{{ t['Off-grid'][language] }}</span></em>
 
           <dl class="stats-list">
-            <dt>{{ t['Global rank'][language] }}</dt>
+            <dt>{{ t['Rank'][language] }}</dt>
             <dd>%% (compareCtrl.compareSelected[0].score[0].overall_ranking | round:2)  || '-' %%</dd>
             <dt>{{ t['State Rank'][language] }}</dt>
             <dd>%% (compareCtrl.compareSelected[0].score[0].state_ranking | round:2)  || '-' %%</dd>
-            <dt>{{ t['Global score'][language] }}</dt>
+            <dt>{{ t['Score'][language] }}</dt>
             <dd>%% compareCtrl.compareSelected[0].score[0].value | round:2 %%</dd>
 
             <dt ng-repeat-start="param in compareCtrl.compareSelected[0].parameters" ng-class="'param-' + param.id">%% param.name %%</dt>
@@ -132,16 +132,16 @@
               <figure class="chart-wrapper">
                 <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
                 <div class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="compareCtrl.compareSelected[0].chartData['price-attractiveness-electricity']">
-                  <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
+                  <p class="chart-subhead">{{ t['Electricity 2016'][language] }}</p>
                   <!-- Chart -->
                 </div>
 
                 <div class="chart-std price-attractiveness-fuel" ng-if="compareCtrl.isFuelChartAvailable(0)" init-chart="price_attractiveness_electricity" chart-data="compareCtrl.compareSelected[0].chartData['price-attractiveness-fuel']">
-                 <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
+                 <p class="chart-subhead">{{ t['Fuel 2016'][language] }}</p>
                  <!-- Chart -->
                 </div>
                 <div class="chart-std price-attractiveness-fuel" ng-if="!compareCtrl.isFuelChartAvailable(0)">
-                  <p class="chart-subhead">{{ t['Fuel 2014'][language] }}</p>
+                  <p class="chart-subhead">{{ t['Fuel 2016'][language] }}</p>
                   <div class="placeholder">
                     <p>{{ t['There is no fuel data for this Country / State.'][language] }}</p>
                   </div>
@@ -200,20 +200,6 @@
                 </li>
               </ul>
             </figure>
-          </div>
-
-          <div class="param-details param-4">
-            <div class="param-details__header">
-              <div class="param-details__heading">
-                <h1 class="param-details__title">{{ t['GHG Management'][language] }}</h1>
-              </div>
-            </div>
-            <div class="param-details__body">
-              <figure class="chart-wrapper">
-                <figcaption>{{ t['Carbon offset'][language] }}</figcaption>
-                <div class="chart-std carbon-offset" init-chart="carbon_offset" chart-data="compareCtrl.compareSelected[0].chartData['carbon-offset-projects']"><!-- Chart --></div>
-              </figure>
-            </div>
           </div>
         </div>
         <!-- END params-->
@@ -377,20 +363,6 @@
                 </li>
               </ul>
             </figure>
-          </div>
-
-          <div class="param-details param-4">
-            <div class="param-details__header">
-              <div class="param-details__heading">
-                <h1 class="param-details__title">{{ t['GHG Management'][language] }}</h1>
-              </div>
-            </div>
-            <div class="param-details__body">
-              <figure class="chart-wrapper">
-                <figcaption>{{ t['Carbon offset'][language] }}</figcaption>
-                <div class="chart-std carbon-offset" init-chart="carbon_offset" chart-data="compareCtrl.compareSelected[1].chartData['carbon-offset-projects']"><!-- Chart --></div>
-              </figure>
-            </div>
           </div>
         </div>
         <!-- END params-->

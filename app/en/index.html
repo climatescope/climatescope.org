@@ -20,130 +20,120 @@ description: Climatescope a unique country-by-country assessment, interactive re
 
   <div class="layout--home__body">
     <div class="row--contained">
-      <div class="featured-col">
-        <section class="featured-section featured-block">
-          <h1 class="featured-section__title">Featured</h1>
-          <div class="prose-intro">
-            <p><strong>NEW</strong> BNEF's outlook on the off-grid market.</p>
-          </div>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-quarterly" title="{{ t['View all'][language] }}" class="bttn bttn-new go">Off-grid Quarterly</a>
+      <div class="featured-col featured-col--main">
 
-          <div class="prose-intro">
-            <p><strong>NEW</strong> Explore data about the off-grid market.</p>
-          </div>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/off-grid-data-hub" title="{{ t['View all'][language] }}" class="bttn bttn-new go">Off-grid Data Hub</a>
-
-          <div class="prose-intro">
-            <p>Analyze more than 800 clean energy policies.</p>
-          </div>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/policies" title="{{ t['View all'][language] }}" class="bttn bttn-success go">Policy Database</a>
-        </section>
-
-        <section class="featured-section compare-results-block">
-          <h1 class="featured-section__title">Compare results</h1>
-
-          <div class="featured-section__body">
-            <div class="prose-intro">
-              <p>Choose a Country or State to view results side by side.</p>
-            </div>
-
-            <div ng-app="compareApp" ng-controller="compareControllerSelector as compareCtrlSelector" class="compare-controls">
-              <div class="control">
-                <label class="control-title" for="country_with">{{ t['Country / state'][language] }}</label>
-                  <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrlSelector.compare[0]">
-                  <option value="">{{ t['Choose location A'][language] }}</option>
-
-                  <option ng-repeat-start="country in compareCtrlSelector.countries" ng-value="country.iso" ng-selected="country.iso == compareCtrlSelector.compare[0]">%% country.name %%</option>
-                  <optgroup ng-repeat-end ng-if="country.states.length" label="%% compareCtrlSelector.getOptgroupLabel(country) %%">
-                    <option ng-repeat="state in country.states" ng-value="state.iso" ng-selected="state.iso == compareCtrlSelector.compare[0]">%% state.name %%</option>
-                  </optgroup>
-                </select>
-              </div>
-
-              <div class="control">
-                <label class="control-title" for="country_with">{{ t['Country / state'][language] }}</label>
-                  <select class="sllt sllt-m admin-select" id="country_with" name="country_with" ng-model="compareCtrlSelector.compare[1]">
-                  <option value="">{{ t['Choose location B'][language] }}</option>
-
-                  <option ng-repeat-start="country in compareCtrlSelector.countries" ng-value="country.iso" ng-selected="country.iso == compareCtrlSelector.compare[1]">%% country.name %%</option>
-                  <optgroup ng-repeat-end ng-if="country.states.length" label="%% compareCtrlSelector.getOptgroupLabel(country) %%">
-                    <option ng-repeat="state in country.states" ng-value="state.iso" ng-selected="state.iso == compareCtrlSelector.compare[1]">%% state.name %%</option>
-                  </optgroup>
-                </select>
-              </div>
-
-              <div class="control">
-                <a class="bttn bttn-success go" ng-href="%% compareCtrlSelector.getCompareUrl() %%" title="{{ t['Compare with'][language] }}">{{ t['Compare'][language] }}</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-      </div>
-
-      <div class="featured-col">
         <section class="featured-section">
-          <h1 class="featured-section__title">Latest updates</h1>
+          <h1 class="featured-section__title">Insights</h1>
           <div class="featured-section__body">
-            <ol class="latest-updates-list">
-              {% assign posts = (site.posts | where:"lang",language) %}
-              {% for post in posts limit:5 %}
-              {% unless post.hidden == true %}
-              <li class="update-wrapper">
-                <article class="update">
-                  <a href="{{ site.domain }}{{ site.path_prefix }}{{ post.url }}" title="View update">
-                    <p class="update__date">{{ post.date | date: '%b %-d, %Y' }}</p>
-                    <h1 class="update__title">{{ post.title }}</h1>
-                  </a>
+            <ol class="entry-list">
+              {% assign item = site.posts | where:"lang",language | where:"featured", true | first %}
+              {% if item %}
+              <li>
+                <article class="entry entry--short update">
+                  <div class="entry__contents">
+                    <header class="entry__header">
+                      <p class="entry__subtitle">Read the update: {{ item.date | date: '%b %-d, %Y' }}</p>
+                      <a href="{{ site.domain }}{{ site.path_prefix }}{{ item.url }}" title="View more" class="link-wrapper">
+                        <h1 class="entry__title">{{ item.title }}</h1>
+                      </a>
+                    </header>
+                    {% if item.description %}
+                    <div class="entry__body">
+                      <div class="entry__prose">
+                        <p>{{ item.description }}</p>
+                      </div>
+                    </div>
+                    {% endif %}
+                  </div>
                 </article>
               </li>
-              {% endunless %}
+              {% endif %}
+
+              {% assign item = site.en_off-grid | where:"featured", true | first %}
+              {% if item %}
+              <li>
+                <article class="entry entry--short update">
+                  <div class="entry__contents">
+                    <header class="entry__header">
+                      <p class="entry__subtitle">Explore the report</p>
+                      <a href="{{ site.domain }}{{ site.path_prefix }}{{ item.url }}" title="View more" class="link-wrapper">
+                        <h1 class="entry__title">{{ item.title }}</h1>
+                      </a>
+                    </header>
+                    {% if item.description %}
+                    <div class="entry__body">
+                      <div class="entry__prose">
+                        <p>{{ item.description }}</p>
+                      </div>
+                    </div>
+                    {% endif %}
+                  </div>
+                </article>
+              </li>
+              {% endif %}
+
+              {% assign insights = site.en_insights | where:"featured", true | sort: 'frontpage_order' %}
+              {% for item in insights %}
+              <li>
+                <article class="entry entry--short update">
+                  <div class="entry__contents">
+                    <header class="entry__header">
+                      <p class="entry__subtitle">Explore the report</p>
+                      <a href="{{ site.domain }}{{ site.path_prefix }}{{ item.url }}" title="View more" class="link-wrapper">
+                        <h1 class="entry__title">{{ item.title }}</h1>
+                      </a>
+                    </header>
+                    {% if item.description %}
+                    <div class="entry__body">
+                      <div class="entry__prose">
+                        <p>{{ item.description }}</p>
+                      </div>
+                    </div>
+                    {% endif %}
+                  </div>
+                </article>
+              </li>
               {% endfor %}
             </ol>
           </div>
-          <a href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/blog" title="{{ t['View all'][language] }}" class="bttn bttn-success go">{{ t['View all'][language] }}</a>
         </section>
-
       </div>
 
-      <div class="featured-col">
-
-        <section class="featured-section recent-tweets">
-          <h1 class="featured-section__title">Stay up to date</h1>
-
-          <form action="//global-climatescope.us14.list-manage.com/subscribe/post?u=f7420b38cc86494fc1ab6cb31&amp;id=e17a5880bd" method="post" id="mc-embedded-subscribe-form" name="subscribe-form">
-            <div class="form-control">
-              <p class="update__date">{{ t['Email Address'][language] }}</p>
-              <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" aria-required="true">
-            </div>
-            <div id="mce-responses">
-              <div class="mce-response" id="mce-error-response" style="display:none">asdf asdf </div>
-              <div class="mce-response" id="mce-success-response" style="display:none">asdf asdf asdf</div>
-            </div>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f7420b38cc86494fc1ab6cb31_e17a5880bd" tabindex="-1" value=""></div>
-
-            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="bttn bttn-success">
-          </form>
-
-          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-
-        </section>
-
-
-        <section class="featured-section recent-tweets">
-          <h1 class="featured-section__title">Recent tweets</h1>
+      <div class="featured-col featured-col--sec" ng-app="globalApp">
+        <section class="featured-section">
+          <h1 class="featured-section__title">Tools</h1>
           <div class="featured-section__body">
-            <a class="twitter-timeline"  href="https://twitter.com/search?f=tweets&q=climatescope" data-widget-id="802127681433272320" data-tweet-limit="3" data-chrome="noheader nofooter noborders noscrollbar transparent" data-link-color="#77bc1f">Tweets about climatescope</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            <script>
+              // Include tools to be picked up by angular.
+              CS.toolsData = [
+                {% assign tools = site.en_tools %}
+                {% for tool in tools %}
+                {% unless tool.hidden == true %}
+                  {
+                    title: '{{ tool.title }}',
+                    description: '{{ tool.description }}',
+                    image: {% if tool.image %} '{{ site.domain }}{{ site.path_prefix }}/assets/images/content/feat-tools/{{ tool.image }}' {% else %} null {% endif %},
+                    darken: {% if tool.darken %} true {% else %} false {% endif %},
+                    link: '{{ site.domain }}{{ site.path_prefix }}/{{ language }}{{ tool.link }}'
+                  },
+                {% endunless %}
+                {% endfor %}
+              ];
+            </script>
+            <ul class="tools-list" ng-controller="ToolsListController as todoList">
+              <li ng-repeat="tool in todoList.tools" ng-cloak>
+                <article ng-class="{'feat-tool': true, 'feat-tool--darken': tool.darken}">
+                  <a href="%% tool.link %%" title="View tool page" ng-style="tool.image ? {'background-image': 'url(' + tool.image + ')'} : ''">
+                    <h1 class="feat-tool__title">%% tool.title %%</h1>
+                    <p class="feat-tool__summary">%% tool.description %%</p>
+                  </a>
+                </article>
+              </li>
+            </ul>
           </div>
-          <a href="https://twitter.com/search?q=climatescope" title="{{ t['View all'][language] }}" class="bttn bttn-success go" target="_blank" rel="external">{{ t['View all'][language] }}</a>
         </section>
-
       </div>
 
     </div>
   </div>
 </section>
-
-{% include 2017_updates.html %}

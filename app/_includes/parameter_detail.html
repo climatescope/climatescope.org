@@ -4,7 +4,7 @@
 
   <header class="param-details__header">
       <div class="param-details__heading">
-        <h1 class="param-details__title"><a href="%% detailsCtrl.getParamUrl(param) %%" title="{{ t['Go to topic page'][language] }}">%% param.name %%</a></h1>
+        <h1 class="param-details__title">%% param.name %%</h1>
       </div>
       <dl class="param-details__stats">
         <dt>{{ t['Score'][language] }}</dt>
@@ -38,13 +38,13 @@
       </ul>
     </div>
 
-    <div class="param-details__graph">
+    <div class="param-details__graph" ng-if="param.id == 1 || param.id == 2">
       <figure ng-if="param.id == 1" class="chart-wrapper">
         <figcaption>{{ t['Price Attractiveness'][language] }}</figcaption>
-        <p class="chart-subhead">{{ t['Electricity 2014'][language] }}</p>
+        <p class="chart-subhead">{{ t['Electricity 2016'][language] }}</p>
         <div id="price-attractiveness-e" class="chart-std price-attractiveness-e" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-electricity']"><!-- Chart --></div>
 
-        <p class="chart-subhead" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" >{{ t['Fuel 2014'][language] }}</p>
+        <p class="chart-subhead" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" >{{ t['Fuel 2016'][language] }}</p>
         <div id="price-attractiveness-fuel" class="chart-std price-attractiveness-fuel" ng-if="detailsCtrl.chartData['price-attractiveness-fuel'].data[0].values[0].value != 0" init-chart="price_attractiveness_electricity" chart-data="detailsCtrl.chartData['price-attractiveness-fuel']"><!-- Chart --> </div>
 
         <p class="chart-note">All prices average; see <a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology">methodology</a> for details</p>
@@ -53,14 +53,11 @@
         <figcaption>{{ t['Installed capacity'][language] }}</figcaption>
         <div id="installed-capacity" class="chart-std installed-capacity" init-chart="installed_capacity" chart-data="detailsCtrl.chartData['installed-capacity']"><!-- Chart --></div>
       </figure>
-      <figure ng-if="param.id == 2" class="chart-wrapper">
+      <!-- Clean energy investments is not present on the state pages (which have ISO code of more than 2 characters) -->
+      <figure ng-if="param.id == 2 && detailsCtrl.chartData['clean-energy-investments'].iso.length === 2" class="chart-wrapper">
         <figcaption>{{ t['Clean energy investments'][language] }}</figcaption>
         <div id="clean-energy-investments" class="chart-std clean-energy-investments" init-chart="clean_energy_investments" chart-data="detailsCtrl.chartData['clean-energy-investments']"><!-- Chart --></div>
         <p class="chart-note">Cumulative; see <a href="{{ site.domain }}{{ site.path_prefix }}/en/methodology">methodology</a> for details</p>
-      </figure>
-      <figure ng-if="param.id == 4" class="chart-wrapper">
-        <figcaption>{{ t['Carbon offset'][language] }}</figcaption>
-        <div id="carbon-offset" class="chart-std carbon-offset" init-chart="carbon_offset" chart-data="detailsCtrl.chartData['carbon-offset']"><!-- Chart --></div>
       </figure>
     </div>
 
@@ -76,53 +73,39 @@
     <div ng-if="param.id == 1 && detailsCtrl.grid == 'off'" class="power-sector">
       <h2 class="param-details__sectitle">Offgrid power sector structure</h2>
       <p class="chart-note chart-note__power">Hover over sub-indicator to see more information for this country.</p>
-      <div class="table-wrapper expandable" data-hook="expand-offgrid">
-        <div class="expandable-wrapper">
-          <div class="top-questions" power-chart="detailsCtrl.chartData['power-sector-offgrid-1']"><!-- Angular directive -   cs_directives.js --></div>
-          <div power-chart="detailsCtrl.chartData['power-sector-offgrid-2']"><!-- Angular directive - cs_directives.js --></div>
-          <div power-chart="detailsCtrl.chartData['power-sector-offgrid-3']"><!-- Angular directive - cs_directives.js --></div>
-          <div power-chart="detailsCtrl.chartData['power-sector-offgrid-4']"><!-- Angular directive - cs_directives.js --></div>
-        </div>
-      </div>
-      <div class="param-details__table-actions">
-        <a class="bttn bttn-cta" href="" ng-click="detailsCtrl.toggleExpandable('[data-hook=\'expand-offgrid\']', $event)" title="{{ t['View more'][language] }}">{{ t['View more'][language] }}</a>
-      </div>
+      <div class="top-questions" power-chart="detailsCtrl.chartData['power-sector-offgrid-1']"><!-- Angular directive -   cs_directives.js --></div>
+      <div power-chart="detailsCtrl.chartData['power-sector-offgrid-2']"><!-- Angular directive - cs_directives.js --></div>
+      <div power-chart="detailsCtrl.chartData['power-sector-offgrid-3']"><!-- Angular directive - cs_directives.js --></div>
+      <div power-chart="detailsCtrl.chartData['power-sector-offgrid-4']"><!-- Angular directive - cs_directives.js --></div>
     </div>
 
     <div class="param-details__table">
       <h2 class="param-details__sectitle">{{ t['Indicators'][language] }}</h2>
-      <div class="table-wrapper expandable" data-hook="table-expand-%%param.id%%">
-        <table class="table detailed-data expandable-wrapper">
-          <thead>
-            <tr>
-              <th><span class="visually-hidden">{{ t['Parameter'][language] }}</span></th>
-              <th>{{ t['Rank'][language] }}</th>
-              <th>{{ t['Score'][language] }}</th>
-              <th>{{ t['Trend'][language] }}</th>
-              <th>{{ t['Value'][language] }}</th>
-              <th><span class="visually-hidden">{{ t['Info'][language] }}</span></th>
-            </tr>
-          </thead>
-          <tbody ng-repeat="ind_group in param.indicator_groups">
-            <tr>
-              <th class="cell-hd" colspan="5">%% ind_group.name %%</th>
-            </tr>
-            <tr ng-repeat="ind in ind_group.indicators" ng-class="{disabled: !ind.active}">
-              <td class="cell-ind">%% ind.name %%</td>
-              <td class="cell-rank">%% ind.data[0].overall_ranking || '-' %%</td>
-              <td class="cell-score">%% ind.data[0].value | thousands:3 %%</td>
-              <td class="cell-trendline"><div ng-if="ind.active" init-chart="trendline" class="chart-trendline" chart-data="ind"><!-- Chart --></div></td>
-              <td class="cell-score">%% (ind.data[0].raw.value | thousands:2) || '-' %%<sup>%% ind.data[0].raw.unit %%</sup></td>
-              <td class="cell-info"><a href="" title="{{ t['About this indicator'][language] }}" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>{{ t['Info'][language] }}</span></a></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="param-details__table-actions">
-        <a class="bttn bttn-cta" href="" ng-click="detailsCtrl.toggleExpandable('[data-hook=\'table-expand-' + param.id + '\']', $event)" title="{{ t['View more'][language] }}">{{ t['View more'][language] }}</a>
-      </div>
-
+      <table class="table detailed-data">
+        <thead>
+          <tr>
+            <th><span class="visually-hidden">{{ t['Parameter'][language] }}</span></th>
+            <th>{{ t['Rank'][language] }}</th>
+            <th>{{ t['Score'][language] }}</th>
+            <th>{{ t['Trend'][language] }}</th>
+            <th>{{ t['Value'][language] }}</th>
+            <th><span class="visually-hidden">{{ t['Info'][language] }}</span></th>
+          </tr>
+        </thead>
+        <tbody ng-repeat="ind_group in param.indicator_groups">
+          <tr>
+            <th class="cell-hd" colspan="6">%% ind_group.name %%</th>
+          </tr>
+          <tr ng-repeat="ind in ind_group.indicators" ng-class="{disabled: !ind.active}">
+            <td class="cell-ind">%% ind.name %%</td>
+            <td class="cell-rank">%% ind.data[0].overall_ranking || '-' %%</td>
+            <td class="cell-score">%% ind.data[0].value | thousands:3 %%</td>
+            <td class="cell-trendline"><div ng-if="ind.active" init-chart="trendline" class="chart-trendline" chart-data="ind"><!-- Chart --></div></td>
+            <td class="cell-score">%% (ind.data[0].raw.value | thousands:2) || '-' %%<sup>%% ind.data[0].raw.unit %%</sup></td>
+            <td class="cell-info"><a href="" title="{{ t['About this indicator'][language] }}" tooltip-animation="false" tooltip-placement="left" tooltip-html-unsafe="%% detailsCtrl.getTooltipContent(ind) %%"><span>{{ t['Info'][language] }}</span></a></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
   </div>

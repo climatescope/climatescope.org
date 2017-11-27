@@ -1,21 +1,33 @@
 language: node_js
 node_js:
-- '0.12'
+- '4'
 
 env:
   global:
   - DEPLOY_BRANCH=master
+  - STAGING_BRANCH=v2017
   - secure: "uYdQRkIMLm9zOnOhCLnczYEhmj9vAdomAbh8/qIDxFLQ5l0fBTlpKTggsxUIZ06MPEFyAlQ7TVpLsPEPy9VwyIi9AE4PHTgo5iHFb1tiU92wmJew470lH8t92mGAP2CebcPf6cCqLBC8+i8uRl1w8USZGeqW+RJtlMwHlK9xBMo="
 
 before_install:
-- chmod +x ./.build_scripts/deploy.sh
+  - chmod +x ./.build_scripts/deploy.sh
 
 script:
-- npm run build
+  - if [[ $TRAVIS_BRANCH == master ]]; then npm run build; elif [[ $TRAVIS_BRANCH == develop ]]; then npm run stage; fi
 
 deploy:
-  provider: script
-  skip_cleanup: true
-  script: .build_scripts/deploy.sh
-  on:
-    branch: ${DEPLOY_BRANCH}
+  - provider: script
+    skip_cleanup: true
+    script: .build_scripts/deploy.sh
+    on:
+      branch: master
+  - provider: s3
+    access_key_id: AKIAIPCUDO7FIUH2RIUA
+    secret_access_key:
+      secure: S9itQQi8xhj/AHQIsnrntmBvVLgz8wds9NlsHXRhS0IZ1KNMZooYcfrkMrApB6j26vNvR2Ty4JgjJ/QYOhZSWTb8w0oi9Fo8KM+1c3E5OIFD7Kom/EveeJZiCk3oK098F9pLa9fO/vftjHwaF8IvfoTbJz/aNPvDQ1yAhb0TmEM=
+    bucket: climatescope-staging
+    region: us-west-2
+    acl: public_read
+    local-dir: _site
+    skip-cleanup: true
+    on:
+      branch: develop

@@ -15,15 +15,8 @@
   {% endunless %}
 {% endif %}
 
-{% assign en_coll = site.collections[page.collection].i18n.en %}
-{% case en_coll %}
-{% when 'en_country' or 'en_state' %}
-  {% capture meta_image %}{{ site.domain }}{{ site.path_prefix }}/assets/images/content/maps/{{ page.id }}.png{% endcapture %}
-{% when 'en_region' %}
-  {% capture meta_image %}{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/region-meta-img-{{ page.id }}.jpg{% endcapture %}
-{% endcase %}
+{% capture meta_image %}{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/default-meta-image.jpg{% endcapture %}
 
-{% capture meta_def_image %}{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/og-image-{{ language }}.jpg{% endcapture %}
 <title>{{ meta_title }}</title>
 <meta name="description" content="{{ meta_description }}" />
 <meta name="keywords" content="{{ site.keywords[language] }}">
@@ -33,14 +26,10 @@
 
 <!-- Twiter Cards -->
 <meta name="twitter:card" content="summary">
-<!-- <meta name="twitter:site" content="@{{ site.data.flipside.twitter }}"> -->
+<meta name="twitter:site" content="@BloombergNEF">
 <meta name="twitter:title" content="{{ meta_title }}">
 <meta property="twitter:description" content="{{ meta_description }}" />
-{% if meta_image %}
-  <meta property="twitter:image" content="{{ meta_image }}" />
-{% else %}
-  <meta property="twitter:image" content="{{ meta_def_image }}" />
-{% endif %}
+<meta property="twitter:image" content="{{ meta_image }}" />
 <!--/ Twiter Cards -->
 
 <!-- Open Graph -->
@@ -49,8 +38,5 @@
 <meta property="og:title" content="{{ meta_title }}" />
 <meta property="og:url" content="{{ site.domain }}{{ site.path_prefix }}{{ page.url | remove:'index.html' }}" />
 <meta property="og:description" content="{{ meta_description }}" />
-{% if meta_image %}
-  <meta property="og:image" content="{{ meta_image }}" />
-{% endif %}
-<meta property="og:image" content="{{ meta_def_image }}" />
+<meta property="og:image" content="{{ meta_image }}" />
 <!--/ Open Graph -->

@@ -5,26 +5,32 @@
   });
 
   app.config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/details', {
-        templateUrl: 'in_detail.html',
-        controller: 'DetailsTabController',
+    $routeProvider.when('/enabling-framework', {
+        templateUrl: 'enabling-framework.html',
+        controller: 'EnablingFrameworkTabController',
         controllerAs: 'detailsCtrl',
-        activeTab: 'details'
+        activeTab: 'enabling-framework'
       })
-      .when('/states', {
-        templateUrl: 'states.html',
-        controller: 'StatesTabController',
-        controllerAs: 'statesCtrl',
-        activeTab: 'states'
+      .when('/financing-investments', {
+        templateUrl: 'financing-investments.html',
+        controller: 'FinancingInvestmentsTabController',
+        controllerAs: 'detailsCtrl',
+        activeTab: 'financing-investments'
       })
-     // .when('/case-study', {
-     //   templateUrl: 'case_study.html',
-     //   controller: 'CaseStudyTabController',
-     //   controllerAs: 'caseStudyCtrl',
-     //   activeTab: 'case_study'
-     // })
+      .when('/value-chains', {
+        templateUrl: 'value-chains.html',
+        controller: 'ValueChainsTabController',
+        controllerAs: 'detailsCtrl',
+        activeTab: 'value-chains'
+      })
+      .when('/ghg-management', {
+        templateUrl: 'ghg-management.html',
+        controller: 'GhgManagementTabController',
+        controllerAs: 'detailsCtrl',
+        activeTab: 'ghg-management'
+      })
       .otherwise({
-        redirectTo: '/details'
+        redirectTo: '/enabling-framework'
       });
   }]);
 
@@ -50,11 +56,13 @@
   // Module
   var countryAppControllers = angular.module('countryAppControllers', []);
   
-  countryAppControllers.controller('DescriptionController', [function() {
+  countryAppControllers.controller('DescriptionController', ['CountryData', function(CountryData) {
+    var _self = this;
     var fakeScope = {};
     // We only want to get a single method out of this.
     setupCommonParamDetailTableMethods(fakeScope);
     this.toggleExpandable = fakeScope.toggleExpandable;
+    this.chartSummary = null;
 
     // Note: This is not the angular way of doing things.
     // However moving everything to a directive would prove to be to great
@@ -69,6 +77,53 @@
         $('.prose-copy-actions .bttn').remove();
       }
     };
+
+    CountryData.get(function(data) {
+      // Global country score
+      var valuesData = [{
+        id: 'country',
+        name: 'Overall score',
+        values: data.score
+      }];
+
+      var ids = [
+        null,
+        'enabling-framework',
+        'financing-investments',
+        'value-chains',
+        'ghg-management'
+      ];
+
+      valuesData = valuesData
+        .concat(data.parameters.map(function(param) {
+          return {
+            id: ids[param.id],
+            name: param.name,
+            values: param.data
+          };
+        }));
+
+      // Clone to avoid messing with the data.
+      valuesData = JSON.parse(JSON.stringify(valuesData));
+      // Reverse data.
+      valuesData = valuesData.map(function(o) {
+        o.values.reverse();
+        return o;
+      });
+
+      var chData = {
+        data: valuesData,
+        meta: {
+          'label-x': 'year',
+          'label-y': 'score',
+          title: 'Score Summary'
+        },
+        iso: data.iso,
+        name: data.name
+      };
+      chart__score_summary.prepareData(chData);
+      _self.chartSummary = chData;
+    });
   }]);
   
   countryAppControllers.controller('ProfileController', ['$http', function($http) {
@@ -92,8 +147,10 @@
     var _self = this;
     // Data.
     this.countryStats = {};
+    this.states = [];
 
     setupPolicyStatsVizMethods(this);
+    setupCommonCountryListMethods(_self);
 
     // Requests.
     var url = CS.policyProxy + '/policy?country=' + CS.countryId.toUpperCase();
@@ -105,6 +162,7 @@
     // Temporarily use country data on the sidebar.
     CountryData.get(function(data) {
       _self.countryStats = data.score[0];
+      _self.states = data.states;
     });
 
   }]);
@@ -115,20 +173,16 @@
       return ($route.current) ? $route.current.activeTab == name : false;
     };
   }]);
-  
-  // Controller for the DETAILS TAB
-  countryAppControllers.controller('DetailsTabController', ['$http', '$route', 'CountryData', function($http, $route, CountryData) {
+
+  countryAppControllers.controller('EnablingFrameworkTabController', ['$http', '$route', 'CountryData', function($http, $route, CountryData) {
     var _self = this;
     // Data.
     this.parameters = [];
     this.grid = 'off';
     this.chartData = {
-      'clean-energy-investments': null,
       'installed-capacity': null,
-      'carbon-offset': null,
       'price-attractiveness-electricity': null,
       'price-attractiveness-fuel': null,
-      'value-chains': null,
 
       'power-sector-1': null,
       'power-sector-2': null,
@@ -144,7 +198,7 @@
     setupCommonParamDetailTableMethods(_self);
 
     CountryData.get(function(data) {
-      _self.parameters = data.parameters;
+      _self.parameters = [data.parameters[0]];
     });
 
     // The following lines load the data for each of the charts.
@@ -152,23 +206,12 @@
     // This is done by calling the prepareData(). This function is implemented
     // on each of the chart's files.
     var url = null;
-    url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + CS.countryId + '.json';
-    $http.get(url).success(function(data) {
-      // Data for this chart requires preparation.
-      chart__clean_energy_investments.prepareData(data);
-      _self.chartData['clean-energy-investments'] = data;
-    });
 
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/installed-capacity/' + CS.countryId + '.json';
     $http.get(url).success(function(data) {
       // Data for this chart requires preparation.
       chart__installed_capacity.prepareData(data);
       _self.chartData['installed-capacity'] = data;
-    });
-
-    url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset-projects/' + CS.countryId + '.json';
-    $http.get(url).success(function(data) {
-      _self.chartData['carbon-offset'] = data;
     });
 
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-electricity/' + CS.countryId + '.json';
@@ -179,11 +222,6 @@
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/price-attractiveness-fuel/' + CS.countryId + '.json';
     $http.get(url).success(function(data) {
       _self.chartData['price-attractiveness-fuel'] = data;
-    });
-
-    url = CS.domain + '/' + CS.lang + '/api/auxiliary/value-chains/' + CS.countryId + '.json';
-    $http.get(url).success(function(data) {
-      _self.chartData['value-chains'] = data;
     });
 
     url = CS.domain + '/' + CS.lang + '/api/auxiliary/power-sector-1/' + CS.countryId + '.json';
@@ -229,34 +267,94 @@
     } else {
       _self.grid = 'on';
     };
-
   }]);
-  
-  // Controller for the STATES TAB
-  countryAppControllers.controller('StatesTabController', ['$http', '$route', '$location', 'CountryData', function($http, $route, $location, CountryData) {
-    var _self = this;
-    // Data
-    this.states = [];
-    this.countryId = CS.countryId;
-    // If there are no states for the country redirect.
-    if (!CS.countryHasStates) {
-      $location.path('/details');
-    }
 
-    setupCommonCountryListMethods(_self);
-    // Set sort.
-    this.setSort('score[0].value');
+  countryAppControllers.controller('FinancingInvestmentsTabController', ['$http', '$route', 'CountryData', function($http, $route, CountryData) {    var _self = this;
+    // Data.
+    this.parameters = [];
+    this.grid = 'off';
+    this.chartData = {
+      'clean-energy-investments': null
+    };
+
+    setupCommonParamDetailTableMethods(_self);
 
     CountryData.get(function(data) {
-      _self.states = data.states;
+      _self.parameters = [data.parameters[1]];
     });
 
-  }]);
-  
-  // Controller for the CASE STUDY TAB
-  countryAppControllers.controller('CaseStudyTabController', ['$http', '$route', function($http, $route) {
-    // code;
+    // The following lines load the data for each of the charts.
+    // Some of the data needs to be processed before being sent to the chart.
+    // This is done by calling the prepareData(). This function is implemented
+    // on each of the chart's files.
+    var url = null;
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/clean-energy-investments/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      // Data for this chart requires preparation.
+      chart__clean_energy_investments.prepareData(data);
+      _self.chartData['clean-energy-investments'] = data;
+    });
   }]);
 
+  countryAppControllers.controller('ValueChainsTabController', ['$http', '$route', 'CountryData', function($http, $route, CountryData) {    var _self = this;
+    // Data.
+    this.parameters = [];
+    this.grid = 'off';
+    this.chartData = {
+      'value-chains': null
+    };
 
+    setupCommonParamDetailTableMethods(_self);
+
+    CountryData.get(function(data) {
+      _self.parameters = [data.parameters[2]];
+    });
+
+    // The following lines load the data for each of the charts.
+    // Some of the data needs to be processed before being sent to the chart.
+    // This is done by calling the prepareData(). This function is implemented
+    // on each of the chart's files.
+    var url = null;
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/value-chains/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      _self.chartData['value-chains'] = data;
+    });
+  }]);
+
+  countryAppControllers.controller('GhgManagementTabController', ['$http', '$route', 'CountryData', function($http, $route, CountryData) {
+    var _self = this;
+    // Data.
+    this.parameters = [];
+    this.grid = 'off';
+    this.chartData = {
+      'carbon-offset': null
+    };
+
+    setupCommonParamDetailTableMethods(_self);
+
+    CountryData.get(function(data) {
+      _self.parameters = [data.parameters[3]];
+    });
+
+    // The following lines load the data for each of the charts.
+    // Some of the data needs to be processed before being sent to the chart.
+    // This is done by calling the prepareData(). This function is implemented
+    // on each of the chart's files.
+    var url = null;
+    url = CS.domain + '/' + CS.lang + '/api/auxiliary/carbon-offset-projects/' + CS.countryId + '.json';
+    $http.get(url).success(function(data) {
+      _self.chartData['carbon-offset'] = data;
+    });
+  }]);
+
+  countryAppControllers.controller('ActionsMenuController', ['$rootScope', '$scope', '$location', function($rootScope, $scope, $location) {
+    $rootScope.$on('$locationChangeSuccess', function() {
+      var currentPath = $location.url();
+      $scope.getUrl = function (baseUrl) {
+        return encodeURIComponent(baseUrl + '#' + currentPath);
+      }
+      // Update language switcher url.
+      updateLangSwitcherUrl(currentPath);
+    });
+  }]);
 })();

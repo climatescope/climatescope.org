@@ -12,6 +12,12 @@
   }
 }
 
+.sec-section {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .sec-section__title {
   @extend .hd-xs;
 }

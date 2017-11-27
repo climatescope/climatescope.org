@@ -48,16 +48,18 @@ conf:
     </div>
 
     <div class="col--sec prose-copy" ng-controller="StatsController as statsCtrl" ng-cloak>
-      <h2>{{ t['Performance'][language] }}</h2>
-      <dl class="stats-list">
-        <dt>{{ t['State Rank'][language] }}</dt>
-        <dd>%% statsCtrl.stateStats.state_ranking | leadingZero:2 %%</dd>
-        <dt>{{ t['Score'][language] }}</dt>
-        <dd>%% statsCtrl.stateStats.value | round:2 %%</dd>
-      </dl>
-      <ul class="ctas-list">
-        <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/compare/#?compare={{ page.id }}" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
-      </ul>
+      <section class="sec-section">
+        <h2 class="sec-section__title">{{ t['Performance'][language] }}</h2>
+        <dl class="stats-list">
+          <dt>{{ t['State Rank'][language] }}</dt>
+          <dd>%% statsCtrl.stateStats.state_ranking | leadingZero:2 %%</dd>
+          <dt>{{ t['Score'][language] }}</dt>
+          <dd>%% statsCtrl.stateStats.value | round:2 %%</dd>
+        </dl>
+        <ul class="ctas-list">
+          <li><a class="bttn bttn-cta go" href="{{ site.domain }}{{ site.path_prefix }}/{{ language }}/compare/#?compare={{ page.id }}" title="{{ t['Compare with'][language] }}">{{ t['Compare with'][language] }}</a></li>
+        </ul>
+      </section>
 
       {% include policies_stats.html %}
 
@@ -65,8 +67,47 @@ conf:
   </div>
 
   <div class="row--contained">
-    <section id="state-detail" ng-controller="DetailsController as detailsCtrl">
-      {% include parameter_detail.html %}
-    </section>
+    <!-- Template for the In Detail tab -->
+    <script type="text/ng-template" id="enabling-framework.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <script type="text/ng-template" id="financing-investments.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <script type="text/ng-template" id="value-chains.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <script type="text/ng-template" id="ghg-management.html">
+      <section id="country-detail">
+        {% include parameter_detail.html %}
+      </section>
+    </script>
+
+    <!-- END TEMPLATES -->
+    <ul class="nav nav-tabs" role="tablist" id="section-switch" ng-controller="StateTabsController as navCtrl">
+      <li ng-class="{active: navCtrl.isActive('enabling-framework')}">
+        <a href="#/enabling-framework" title="{{ t['View Enabling framework'][language] }}"><span>Enabling</span> <span>framework</span></a>
+      </li>
+      <li ng-class="{active: navCtrl.isActive('financing-investments')}">
+        <a href="#/financing-investments" title="{{ t['View Financing & Investment'][language] }}"><span>Financing &</span> <span>Investment</span></a>
+      </li>
+      <li ng-class="{active: navCtrl.isActive('value-chains')}">
+        <a href="#/value-chains" title="{{ t['View Value Chains'][language] }}"><span>Value</span> <span>Chains</span></a>
+      </li>
+      <li ng-class="{active: navCtrl.isActive('ghg-management')}">
+        <a href="#/ghg-management" title="{{ t['View GHG Management'][language] }}"><span>GHG</span> <span>Management</span></a>
+      </li>
+    </ul>
+    <div ng-view></div>
+
   </div>
 </div>

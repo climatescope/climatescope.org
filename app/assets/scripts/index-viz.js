@@ -4,27 +4,38 @@ $(document).ready(function() {
 
     var mapSettings = {
       'world': {
-        mapId: 'climatescope/ciw2u8z4j001x2jl91e0cmk62',
+        mapId: 'climatescope/cj9szsu6f2i752ss0aysk818a',
         zoom: 2,
         center: [0, 0]
       },
       'africa': {
-        mapId: 'climatescope/ciw2ut4ed00642kr34v3l4ltg',
-        zoom: 2,
-        center: [10, 0]
+        mapId: 'climatescope/cj9yg7oz97lkm2sp7qn934ute',
+        zoom: 3,
+        center: [-8.146, 18.457]
       },
       'asia': {
-        mapId: 'climatescope/ciw2ut9ji000z2jr16qiwz5p7',
+        mapId: 'climatescope/cj9yg7k8c7lf42rtcaqtl9yif',
         zoom: 3,
         center: [20.63278, 104.0625]
       },
+      'eu': {
+        mapId: 'climatescope/cj9ygdq897lma2sqpn4gyaocy',
+        zoom: 3,
+        center: [55.1286,69.873]
+      },
       'lac': {
-        mapId: 'climatescope/ciw2v7gwp00202jl9fpka83pf',
+        mapId: 'climatescope/cj9ygdaua5bqu2rnv8buwrlfv',
         zoom: 2,
         center: [-15.6230, -59.0625]
+      },
+      'me': {
+        mapId: 'climatescope/cj9ygdumj7l392sk61075ommt',
+        zoom: 5,
+        center: [29, 33.892]
       }
     };
-    var mapConf = CS.regionId ?  mapSettings[CS.regionId] : mapSettings.world;
+    var region = getQueryString().region;
+    var mapConf = region ?  mapSettings[region] : mapSettings.world;
     var map = L.mapbox.map('index-viz')
           .setView(mapConf.center, mapConf.zoom)
 
@@ -70,12 +81,11 @@ $(document).ready(function() {
         });
 
         var grid_code = d.grid == 'on' ? '<em class="label-grid label-grid-on" data-title="' + CS.t("On-grid") + '"><span>' + CS.t("On-grid") + '</span></em>' : '<em class="label-grid label-grid-off" data-title="' + CS.t("Off-grid") + '"><span>' + CS.t("Off-grid") + '</span></em>';
-
+        console.log(d)
         return [
           '<article class="tooltip-inner">',
             '<header class="tooltip__header">',
               '<h1 class="tooltip__title"><a href="' + CS.countryIndex[d.iso] +'" title="' + CS.t("View country") + '">' + d.name + '</a></h1>',
-              '<p class="tooltip__subtitle">' + d.region.name + '</p>',
               grid_code,
               '<a href="#" title="' + CS.t("Close") + '" class="close" onClick="return false;"><span>' + CS.t("Close") + '</span></a>',
             '</header>',
@@ -84,7 +94,7 @@ $(document).ready(function() {
               '<dl class="params-legend">',
                 '<dt>' + CS.t("Global rank") + '</dt>',
                 '<dd>' + d.score[0].overall_ranking + '</dd>',
-                '<dt>' + CS.t("Global score") + '</dt>',
+                '<dt>' + CS.t("Score") + '</dt>',
                 '<dd>' + formatThousands(d.score[0].value, 2) + '</dd>',
                 param_code,
               '</dl>',
@@ -132,9 +142,6 @@ $(document).ready(function() {
     var undef = void 0;
 
     var countryListUrl = CS.domain + '/' + CS.lang + '/api/countries.json';
-    if (CS.regionId) {
-      countryListUrl = CS.domain + '/' + CS.lang + '/api/regions/' + CS.regionId + '.json';
-    }
 
     // two switches to detect whether marker is clicked,
     // and whether mouse is over tooltip
@@ -159,9 +166,15 @@ $(document).ready(function() {
     // .defer(d3.json, 'en/api/countries.json')
     .await(function(error, geography, countryRank) {
       land = topojson.feature(geography, geography.objects.centroids).features;
+      indicators = countryRank;
 
-      // If there's a region, the countries are inside an object.
-      indicators = CS.regionId ? countryRank.countries : countryRank;
+      // Filter countries if region is set on the url.
+      var region = getQueryString().region;
+      if (region) {
+        indicators = indicators.filter(function(o) {
+          return o.region.id === region;
+        });
+      }
 
       // Sort parameters.
       $.each(indicators, function(index, country) {
@@ -426,6 +439,12 @@ $(document).ready(function() {
 
       var keys = $.map(land[0].rank.parameters, function(d) { return d.id; });
       for(var d = {}, i = 0, ii = land.length; i < ii; ++i) {
+        // Update param weight to update the tooltip.
+        for (var j = 0; j < land[i].rank.parameters.length; j++) {
+          var p = land[i].rank.parameters[j];
+          p.weight = weight['param-' + p.id] / 100;
+        }
+
         d = land[i].parameters;
 
         land[i].rank.score[0].value = (

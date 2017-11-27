@@ -1,6 +1,6 @@
 ---
 postId: Climatescope-in-the-media-Europe-and-US-highlights
-title: Climatescope in the media – Europe and US highlights
+title: Climatescope in the Media – Europe and US Highlights
 
 description: 
 ---
