@@ -1,7 +1,7 @@
 ---
 published: true
 postId: POWER FOR ALL
-title: Tapping Into Data to Tackle Electricity Poverty - POWER FOR ALL
+title: Tapping Into Data to Tackle Electricity Poverty
 
 description: An estimated 1.2 billion people do not have access to electricity and more than 95% of those living without electricity are in countries in sub-Saharan Africa and developing Asia.
 ---
