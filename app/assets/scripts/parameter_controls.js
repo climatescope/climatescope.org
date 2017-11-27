@@ -49,7 +49,7 @@ $(document).ready(function() {
 
   check_sticky();
 
-  var appElement = document.querySelector('[ng-app=globalApp]');
+  var appElement = document.querySelector('[data-hook=countryScope]');
   var globalAppScope = angular.element(appElement).scope();
   // Slider group for homepage.
   $('.slider-group').sliderGroup({
@@ -92,7 +92,9 @@ $(document).ready(function() {
       angular.forEach(countries, function(country) {
         // Update params and calc score for every year.
         angular.forEach(country.score, function(score, index) {
-          score.value = updateParams(country.parameters, index);
+          if (score.value !== null) {
+            score.value = updateParams(country.parameters, index);
+          }
         });
 
         // Compute trendline data.

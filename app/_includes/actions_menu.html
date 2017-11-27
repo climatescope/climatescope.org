@@ -1,14 +1,8 @@
 {% assign en_coll = site.collections[page.collection].i18n.en %}
 {% case en_coll %}
-{% when 'en_country' or 'en_state' or 'en_parameter' or 'en_region' %}
+{% when 'en_country' or 'en_state' %}
   {% capture csvlink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/data/climatescope-full-2016.csv{% endcapture %}
   {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/climatescope-{{ site.edition }}-report-{{ language }}.pdf{% endcapture %}
-
-{% when 'en_region' %}
-  {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/regions/climatescope-{{ site.edition }}-{{ page.id }}-{{ language }}.pdf{% endcapture %}
-
-{% when 'en_parameter' %}
-  {% capture pdflink %}{{ site.domain }}{{ site.path_prefix }}/{{ language }}/download/reports/topics/climatescope-{{ site.edition }}-topic-{{ page.id }}.pdf{% endcapture %}
 
 {% endcase %}
 
@@ -39,8 +33,8 @@
     <a href="#" title="{{ t['Share on social networks'][language] }}" class="bttn bttn-success dropdown-toggle share" data-toggle="dropdown">{{ t['Share'][language] }}</a>
     <div class="dropdown-content dropdown-content-right">
       <ul class="dropdown-menu" role="menu">
-        <li><a href="https://twitter.com/share?url={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" class="has-icon twitter" ng-href="https://twitter.com/share?url={{ site.domain }}{{ site.path_prefix }}{{ page.url }}#%% currentPath %%" target="_blank" title="{{ t['Share on Twitter'][language] }}">{{ t['Twitter'][language] }}</a></li>
-        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" class="has-icon facebook" ng-href="https://www.facebook.com/sharer/sharer.php?u={{ site.domain }}{{ site.path_prefix }}{{ page.url }}#%% currentPath %%" target="_blank" title="{{ t['Share on Facebook'][language] }}">{{ t['Facebook'][language] }}</a></li>
+        <li><a href="https://twitter.com/share?url={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" class="has-icon twitter" ng-href="https://twitter.com/share?url=%% getUrl('{{ site.domain }}{{ site.path_prefix }}{{ page.url }}') %%" target="_blank" title="{{ t['Share on Twitter'][language] }}">{{ t['Twitter'][language] }}</a></li>
+        <li><a href="https://www.facebook.com/sharer.php?u={{ site.domain }}{{ site.path_prefix }}{{ page.url }}" class="has-icon facebook" ng-href="https://www.facebook.com/sharer.php?u=%% getUrl('{{ site.domain }}{{ site.path_prefix }}{{ page.url }}') %%" target="_blank" title="{{ t['Share on Facebook'][language] }}">{{ t['Facebook'][language] }}</a></li>
       </ul>
     </div>
   </li>

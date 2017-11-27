@@ -229,7 +229,10 @@
       }
 
       // Update url of share options.
-      $scope.currentPath = $location.url();
+      var currentPath = $location.url();
+      $scope.getUrl = function (baseUrl) {
+        return encodeURIComponent(baseUrl + '#' + currentPath);
+      }
 
       computeSelected();
       handleCharts();

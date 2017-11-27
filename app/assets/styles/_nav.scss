@@ -20,10 +20,12 @@
 
 .nav-tabs {
   border-bottom: 2px solid tint($primary-color, 90%);
+
   > li {
     float: left;
     margin-bottom: -2px;
   }
+
   > li > .category,
   > li > a {
     color: inherit;
@@ -33,8 +35,9 @@
     margin-right: 4px;
     border: 2px solid transparent;
     border-radius: $global-radius $global-radius 0 0;
-    padding: 0.5rem 2rem;
+    padding: ($global-spacing / 2) $global-spacing;
   }
+
   > li.active > a,
   > li.active > a:hover,
   > li.active > a:focus {

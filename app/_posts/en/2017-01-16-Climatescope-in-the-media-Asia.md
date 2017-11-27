@@ -1,6 +1,6 @@
 ---
 postId: Climatescope-in-the-media-Asia
-title: Climatescope in the media - Asia highlights
+title: Climatescope in the Media - Asia Highlights
 
 description: 
 ---

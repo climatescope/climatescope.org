@@ -65,3 +65,34 @@ function formatThousands(number, decimals) {
   }
   return d3.format(',.' + decimals + 'f')(number);
 }
+
+// When switching languages the url must reflect the current one
+// otherwise the page will not load properly.
+// This is done with jQuery because it's outside the angular scope.
+function updateLangSwitcherUrl(new_url) {
+  $('.lang-menu a').each(function() {
+    var url;
+    // If the original url is set return it.
+    if ($(this).data('orig_href')) {
+      url = $(this).data('orig_href');
+    }
+    // Otherwise store it and return the href value.
+    else {
+      url = $(this).attr('href');
+      $(this).data('orig_href', url);
+    }
+    url += '#' + new_url;
+    $(this).attr('href', url);
+  });
+};
+
+
+function getQueryString() {
+  var query = window.location.search.substring(1);
+  var pieces = query.split('&');
+  return pieces.reduce(function(acc, piece) {
+    var split = piece.split('=');
+    acc[split[0]] = split[1];
+    return acc;
+  }, {});
+}

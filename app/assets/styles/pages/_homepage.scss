@@ -1,0 +1,258 @@
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+
+
+.site-header--home::before {
+  background-position: center middle;
+  background-size: 100%;
+
+  @media #{$large-up} {
+    background-position: center top;
+    animation: hero-animation 32s 1s ease-in-out 1 forwards;
+  }
+
+  @media #{$xlarge-up} {
+    padding: ($global-spacing * 4) 0;
+  }
+}
+
+.layout--home {
+  &__body {
+    padding: ($global-spacing * 2) 0;
+
+    @media #{$xlarge-up} {
+      padding: ($global-spacing * 3) 0;
+    }
+  }
+}
+
+
+/* Intro block
+   ========================================================================== */
+
+.intro-block {
+  @extend .row--contained;
+  z-index: 3 !important;
+  color: #fff;
+  padding-top: $global-spacing * 2;
+  padding-bottom: $global-spacing;
+
+  &__header {
+    @include col(4/12);
+    text-align: right;
+
+    img {
+      margin-top: 0.5rem;
+      vertical-align: top;
+      width: 100%;
+      height: auto;
+
+      @media #{$xlarge-up} {
+        max-width: 80%;
+      }
+    }
+  }
+
+  &__body {
+    @include col(8/12);
+    font-family: $brand-font-family;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+
+    @media #{$xlarge-up} {
+      @include col(6/12);
+    }
+  }
+
+  &__body-title {
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+    font-size: 2rem;
+    line-height: 1;
+    text-transform: none;
+
+    @media #{$xlarge-up} {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media #{$large-up} {
+    padding-top: $global-spacing * 4;
+    padding-bottom: $global-spacing * 2;
+  }
+
+  @media #{$xlarge-up} {
+    padding-top: $global-spacing * 6;
+    padding-bottom: $global-spacing * 4;
+  }
+}
+
+
+/* Featured content
+   ========================================================================== */
+
+.featured-col--main {
+  @include col(7/12);
+
+  @media #{$xlarge-up} {
+    @include col(8/12);
+  }
+}
+
+.featured-col--sec {
+  @include col(5/12);
+
+  @media #{$xlarge-up} {
+    @include col(4/12);
+  }
+}
+
+.featured-section {
+  padding-bottom: $global-spacing * 1.5;
+  margin-bottom: $global-spacing * 1.5;
+  box-shadow: 0 2px 0 0 rgba($primary-color, 0.08);
+
+  &:last-child {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.featured-section__title {
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.featured-section__body {
+  margin-bottom: $global-spacing;
+}
+
+
+/* Tools list
+   ========================================================================== */
+
+.tools-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li:not(:last-child) {
+    margin: 0 0 $global-spacing 0;
+
+    @media #{$xlarge-up} {
+      margin-bottom: $global-spacing * 2;
+    }
+  }
+}
+
+.feat-tool {
+  @extend .antialiased;
+  color: #fff;
+  border-radius: $base-border-radius;
+  overflow: hidden;
+  font-family: $brand-font-family;
+
+  > a {
+    position: relative;
+    display: block;
+    padding: $global-spacing;
+    color: inherit;
+    background-color: $body-font-color;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../images/content/feat-tools/feat-tool-thumb--other.jpg);
+
+    > * {
+      position: relative;
+      z-index: 3;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba($primary-color, 0.32);
+      z-index: 1;
+      content: '';
+      pointer-events: none;
+    }
+
+    @media #{$xlarge-up} {
+      padding: $global-spacing * 2;
+    }
+  }
+}
+
+.feat-tool--darken {
+  > a {
+
+    &::after {
+      background: rgba($primary-color, 0.8);
+    }
+  }
+}
+
+
+.feat-tool__title {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  opacity: 0.64;
+  margin: 0;
+}
+
+.feat-tool__summary {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: $brand-font-bold;
+  margin-bottom: 0;
+}
+
+/* Intro video modal
+   ========================================================================== */
+
+#modal-intro-video {
+  .modal__inner {
+    overflow: hidden;
+  }
+
+  .modal__title {
+    @extend .visually-hidden;
+  }
+
+  .modal__inner {
+    padding: 0 6rem 0 0;
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

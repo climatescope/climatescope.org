@@ -16,16 +16,25 @@
     <div class="row--contained">
   
       <div class="col--main">
-        <ul class="ctas-list">
+        <ol class="entry-list">
           <li ng-repeat="post in qrtrCtrl.posts">
-            <article>
-              <h4><a class="blog-post-title" href="%% post.url %%" alt="View post">%% post.title %%</a></h4>
-              <p>%% post.description %%</p>
-              <a class="bttn bttn-m bttn-cta go" href="%% post.url %%" title="{{ t['Read more'][language] }}">{{ t['Read more'][language] }}</a>
-              <hr>
+            <article class="entry entry--short update">
+              <div class="entry__contents">
+                <header class="entry__header">
+                  <p class="entry__subtitle">%% post.date %%</p>
+                  <a href="%% post.url %%" title="View more" class="link-wrapper">
+                    <h1 class="entry__title">%% post.title %%</h1>
+                  </a>
+                </header>
+                <div class="entry__body" ng-if="post.description">
+                  <div class="entry__prose">
+                    <p>%% post.description %%</p>
+                  </div>
+                </div>
+              </div>
             </article>
           </li>
-        </ul>
+        </ol>
       </div>
 
       <div class="col--sec">
