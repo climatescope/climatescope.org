@@ -72,7 +72,7 @@ What is perhaps most disconcerting about the obstacles that are confronting clea
 
 Still, there are signs that some of these nations are taking important steps to address issues that have served to slow development. In China, which has seen some of the most severe wind/solar curtailment, regulators are designing various mechanisms to reduce renewable curtailment and rapidly spending billions to expand high-voltage transmission capacity, for instance. We now anticipate a bumper year of 2017 new energy investment and 2016's decline may ultimately be remembered as the result of short-term policy uncertainty. More such efforts will doubt be required in coming months if clean energy's momentum from 2010-2015 is to be regained.
 
-### Important Progress Off the Grid 
+**Important Progress Off the Grid**
 
 While large-scale renewables are encountering some growing pains, the opportunities for smaller-scale clean energy applications widened in 2016. Indeed, the potential for clean distributed sources to expand energy access to millions, potentially even billions, is becoming more apparent every day.
 
@@ -84,7 +84,7 @@ In India, the number of solar irrigation pumps installed more than doubled from 
 Even independent off-grid power sector players encounter hindrances, however. State-run utilities are not necessarily enthusiastic about their activities and in the worst cases can regard them as rivals to potential expansions of the hub-and-spoke grid.  Governments regularly complain that micro-grid power tariffs do not match those offered by the state-run utility. 
 None of these issues stands to be resolved entirely in the short-term but there have been recent positive examples of policy-makers seeking to foster organized growth of off-grid supplied power. Rwanda’s Electricity Access Rollout Program (EARP), for instance, seeks to dramatically boost electricity access in the country to 70% by June 2018 from just 30% as of May 2017. While that ambitious target will likely be difficult to achieve, the program already has shown results; Rwanda’s electrification rate jumped from 20% in 2015 to 30% to 2016. The government now plans to hold a tender to contract a single firm to distribute PV systems en masse to the country's poorest citizens.
 
-### This Climatescope website is intended to be the most in-depth public resource for understanding clean energy conditions in emerging nations.  Users are invited to:
+**This Climatescope website is intended to be the most in-depth public resource for understanding clean energy conditions in emerging nations.  Users are invited to:**
 
 * Watch a short video explaining high-level trends.
 

@@ -1,6 +1,6 @@
 ---
 postId: SEforAll-Africa-Hub
-title: A GROWING NUMBER OF AFRICAN NATIONS TAKE CONCRETE STEPS IN FAVOUR OF RENEWABLES WITH THE SUPPORT OF SEforALL
+title: A Growing Number of African Nations Take Concrete Steps in Favour of Renewables With the Support of SEforAll
 
 description: 
 ---

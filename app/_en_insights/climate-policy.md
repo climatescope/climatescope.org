@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Clean energy and the Paris Promises
-description: The 2015 Paris Agreement saw virtually every nation on earth pledge to address the threat of climate change.
+title: Clean Energy and the Paris Promises
+description: Every Climatescope nation signed the 2015 Paris Agreement to address climate change.  But which countries followed through with the needed policies at home? Which haven't?
 published: true
 download_source: /en/download/insights/climatescope-2017-paris-promises.pdf
 
