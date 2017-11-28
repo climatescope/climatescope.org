@@ -7,7 +7,7 @@ grid: 'on'
 published: true
 ---
 
-China has the largest power generation fleet in the world, with 1,614GW of installed capacity. Total new installations in 2016 slowed down to 120GW, caused by lower wind, hydro, and thermal capacity additions. China did build a record 30GW of solar PV last year, along with 23GW of wind and 12GW of hydro. New thermal capacity installs saw a significant slow down to 48GW (of which 38GW were lignite plants), as new legislation mandated much tighter restrictions on coal.
+China has the largest power generation fleet in the world, with 1,614GW of installed capacity. Total new installations in 2016 slowed down to 120GW, caused by lower wind, hydro, and thermal capacity additions. China did build a record 27GW of solar PV last year, along with 23GW of wind and 12GW of hydro. New thermal capacity installs saw a significant slow down to 48GW (of which 38GW were lignite plants), as new legislation mandated much tighter restrictions on coal.
 
 The country saw a rebound in power demand growth in 2016, the first year of its 13th Five-year-plan (FYP) period (2016-2020), from a record low of less than 1% in 2015 to 5.2% in 2016. The next few years of capacity growth is planned keeping in mind the various energy targets that have been under discussion since 2013. China has confirmed the following targets as it transitions to a more sustainable trajectory of growth: 
 1) Reducing carbon intensity by 40-45% below 2005 levels by 2020, and 60-65% by 2030 (binding)
