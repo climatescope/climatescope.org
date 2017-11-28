@@ -163,7 +163,7 @@ One positive response to the challenge of over-supply is to add demand by expand
 
 **Figures 14 and 15:** India village electrification vs. target (left) and India household electrification vs. target (right)
 ![Figure](/assets/images/content/insights/energy-policy/CS2017_policy_fig14-15.jpg)
-<small>*Source: Bloomberg New Energy Finance, Rural Electrification Corporation. Note: the achievement (in %) is against the target of villages for the respective state which was un-electrified on April 1, 2015. The number of villages electrified is as per the data reported by the Rural Electrification Corporation in November 2017. The number of households is as per the data reported by the Rural Electrification Corporation in November 2017 and represents only rural households.*</small>
+<small>*Source: Bloomberg New Energy Finance, Rural Electrification Corporation. Note: the achievement (in %) is against the target of villages set in 2015 for the respective states using data on electrification as of April 1, 2015. The number of villages electrified is as per the data reported by the Rural Electrification Corporation in November 2017. The number of households is as per the data reported by the Rural Electrification Corporation in November 2017 and represents only rural households.*</small>
 
 Distances between demand centers and where renewable power generation makes most sense add a further layer of complexity. Locations with the best solar radiation or strongest winds are best can be inhospitable even uninhabitable. This forces policy-makers to come up with novel solutions.
 
