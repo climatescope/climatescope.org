@@ -61,7 +61,7 @@ Rachel Ross, John  Romankiewicz, Bárbara Rubim, Meghan  Sapp, Andrew  Shapiro, 
 Arnaldo	 Vieira de Carvalho Jr., Michael	Waldron, Markus Walther, Emily Wann, Brian Whitesides, Marcus	 Wiemann, Dan Woynillowicz, Nitin Zamre, Dr Fang Zhang.
 
 ### Special thanks
-Serina Ng, Jon Moore, Dharshan Wignarajah, Arlinda Mezini, Benjamin Kafri, Eve Ottlakan, Flow Bohl, Jon Moore, Max Duluc, Noemi Glickman, and the many energy sector stakeholders that our analyst teams met during research trips.
+Serina Ng, Jon Moore, Dharshan Wignarajah, Sara Giordano, Nico Tyabji, Arlinda Mezini, Benjamin Kafri, Eve Ottlakan, Flow Bohl, Max Duluc, Noemi Glickman, and the many energy sector stakeholders that our analyst teams met during research trips.
 
 ### Credits
 All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
