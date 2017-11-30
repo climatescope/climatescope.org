@@ -30,5 +30,5 @@ In contrast, the country gained nine places on Enabling Framework Parameter I to
 On Parameter II, the country plummeted 21 places to 30th as the volume of funds flowing into the sector slumped by 73% to $76m (from $284m the previous year). Other factors dragging the score lower included the country’s high average cost of debt (22.6%) and lack of local investment.
 Uganda also dropped out of the top 10 on Low-Carbon Business & Clean Energy Value Chains Parameter III, sliding five places to 13th. The country’s relatively small renewable equipment manufacturing base weakened the score, but the presence of a wide range of service providers offset this somewhat. 
 
-On Parameter IV the country suffered a steep decline, tumbling 34 places to 47th from 13th a year earlier. The country has not incorporated an emissions reduction strategy into its Nationally Determined Contribution and does not have a domestic climate change policy. 
+On Parameter IV the country suffered a steep decline, tumbling 34 places to 47th from 13th a year earlier. The country was one of the first to submit its Nationally Determined Contribution but it has limited regulations in place to control emissions in its domestic policy framework. 
 
