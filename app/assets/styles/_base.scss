@@ -1206,35 +1206,6 @@ a:active{
 
 // SITE FOOTER
 
-
-// #comp-nav {
-//   display: block;
-//   overflow: hidden;
-
-//   .ftr-menu {
-//     list-style: none;
-//     padding: 1rem 0;
-//     margin: 0;
-
-//     > li {
-//       float: left;
-//       margin: 0 2rem 0 0;
-//     }
-
-//     > li > a {
-//       display: block;
-//       font-family: $brand-font-family;
-//       font-weight: $brand-font-bold;
-//       text-transform: uppercase;
-//       color: inherit;
-//     }
-
-//     li:last-child {
-//       margin-right: 0;
-//     }
-//   }
-// }
-
 .ftr-nav {
   @include col(4/12);
 }
@@ -1374,17 +1345,10 @@ a:active{
   }
 
   img {
-    width: auto;
-    max-width: 100%;
+    width: 100%;
     max-height: 3rem;
     opacity: 0.8;
     vertical-align: middle;
-  }
-
-  /* Compensate Bloomberg logo proportions and alignment */
-  .logo-bnef img {
-    // transform: translate(0, 0.5em);
-    // max-height: 1.75rem;
   }
 
   /* Compensate USAID logo proportions and alignment */
