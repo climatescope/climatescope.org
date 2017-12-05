@@ -17,26 +17,26 @@
 
 {% capture meta_image %}{{ site.domain }}{{ site.path_prefix }}/assets/images/meta/default-meta-image.jpg{% endcapture %}
 
-<title>{{ meta_title }}</title>
+<meta charset="utf-8">
 <meta name="description" content="{{ meta_description }}" />
 <meta name="keywords" content="{{ site.keywords[language] }}">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<!-- Twiter Cards -->
+<title>{{ meta_title }}</title>
+
+<!-- Twiter -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@BloombergNEF">
 <meta name="twitter:title" content="{{ meta_title }}">
 <meta property="twitter:description" content="{{ meta_description }}" />
 <meta property="twitter:image" content="{{ meta_image }}" />
-<!--/ Twiter Cards -->
+<!--/ Twiter -->
 
-<!-- Open Graph -->
+<!-- OG -->
 <meta property="og:site_name" content="{{ site.name[language] }} {{ site.edition }}" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ meta_title }}" />
 <meta property="og:url" content="{{ site.domain }}{{ site.path_prefix }}{{ page.url | remove:'index.html' }}" />
 <meta property="og:description" content="{{ meta_description }}" />
 <meta property="og:image" content="{{ meta_image }}" />
-<!--/ Open Graph -->
+<!--/ OG -->
