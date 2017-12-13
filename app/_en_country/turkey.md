@@ -19,7 +19,7 @@ Hefty licensing fees have stopped the utility-scale licensed PV sector from taki
 
 Turkey should build 2GW of wind projects each year to hit its 2023 target. This is looking challenging. License applications for 2GW of projects have been postponed twice from April 2016 to April 2018. There is a shortage of opportunities to develop projects apart from the 1GW RERA wind auction planned for the summer of 2017.that was held in August 2017 and featured local content requirements. The auction saw interest from all major wind turbine manufacturers and had a winning price of $34.8/MWh fixed for 15 years. 
 
-Turkey imports most of its natural gas from Russia, Iran and Azerbaijan through pipelines, and from Nigeria and Algeria as LNG. It also secures some supplies in the LNG spot market. The Trans-Anatolian Pipeline or TANAP – which will transport gas from Azerbaijan to Turkey and Europe – is slated to be operational by 2020. Construction began in 2015.
+Turkey imports most of its natural gas from Russia, Iran and Azerbaijan through pipelines, and from Nigeria and Algeria as LNG. It also secures some supplies in the LNG spot market. The Trans-Anatolian Pipeline or TANAP – which will transport gas from Azerbaijan to Turkey – is slated to make the first gas delivery in 2018. Construction began in 2015.
 
 The country also plans to build as much as 12.5GW of nuclear power capacity by 2023, but the concepts for the three proposed plants have been battered with setbacks. Only the 4.8GW Russian-backed plant is close to start of construction, but it has also seen delays and is unlikely to be commissioned before 2025.
 
