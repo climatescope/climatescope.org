@@ -60,6 +60,9 @@ Maria D. Carvalho, Tracey Crowe, Anna Czajkowska, Patrick D'Addario, Vincent	 De
 Rachel Ross, John  Romankiewicz, Bárbara Rubim, Meghan  Sapp, Andrew  Shapiro, Varun Sivaram, V Subramanian, Philippe Tallon, Liang Tang, Zephyr Taylor, Chris Twomey, Nico Tyabji, Candace Vahlsing,
 Arnaldo	 Vieira de Carvalho Jr., Michael	Waldron, Markus Walther, Emily Wann, Brian Whitesides, Marcus	 Wiemann, Dan Woynillowicz, Nitin Zamre, Dr Fang Zhang.
 
+### Communications Manager
+Veronika Henze
+
 ### Special thanks
 Serina Ng, Jon Moore, Dharshan Wignarajah, Sara Giordano, Nico Tyabji, Arlinda Mezini, Benjamin Kafri, Eve Ottlakan, Flow Bohl, Max Duluc, Noemi Glickman, and the many energy sector stakeholders that our analyst teams met during research trips.
 
