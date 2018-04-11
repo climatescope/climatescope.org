@@ -8,7 +8,7 @@
   function($http, $filter, $rootScope, $scope, $location) {
     var _self = this;
 
-    var _perPage = 4;
+    var _perPage = 10;
     var _curPage = 1;
     var _allPosts = [];
     var _totalPages = 0;

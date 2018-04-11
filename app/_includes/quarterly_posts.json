@@ -1,6 +1,6 @@
 [
   {% assign comma = false %}
-  {% assign posts = (site.en_off-grid) %}
+  {% assign posts = (site.en_off-grid) | sort:'date'%}
   {% for post in posts reversed %}
   {% unless post.hidden == true %}
     {% if comma %},{% endif %}
@@ -8,7 +8,7 @@
     {
       "type": "quarterly",
       "title": "{{ post.title | escape_once }}",
-      "date": "{{ post.date | date: '%Y/%m/%d' }}",
+      "date": "{{ post.date | date: '%Y-%m-%d' }}",
       "dateFormatted": "{{ post.date | date: '%b %-d, %Y' }}",
       "url": "{{ site.domain }}{{ site.path_prefix }}{{ post.url }}",
       "author": "{{ post.author }}",
