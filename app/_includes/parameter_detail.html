@@ -63,7 +63,7 @@
 
     <div ng-if="param.id == 1" class="power-sector">
       <h2 class="param-details__sectitle">{{ t['Power sector structure'][language] }}</h2>
-      <p class="chart-note chart-note__power">Hover over sub-indicator to see more information for this country.</p>
+      <!-- <p class="chart-note chart-note__power">Hover over sub-indicator to see more information for this country.</p> -->
       <div class="top-questions" power-chart="detailsCtrl.chartData['power-sector-1']"><!-- Angular directive -   cs_directives.js --></div>
       <!--
       <div power-chart="detailsCtrl.chartData['power-sector-2']"><!-- Angular directive - cs_directives.js --</div>
@@ -74,7 +74,7 @@
 
     <div ng-if="param.id == 1 && detailsCtrl.grid == 'off'" class="power-sector">
       <h2 class="param-details__sectitle">Offgrid power sector structure</h2>
-      <p class="chart-note chart-note__power">Hover over sub-indicator to see more information for this country.</p>
+      <!-- <p class="chart-note chart-note__power">Hover over sub-indicator to see more information for this country.</p> -->
       <div class="top-questions" power-chart="detailsCtrl.chartData['power-sector-offgrid-1']"><!-- Angular directive -   cs_directives.js --></div>
       <!--
       <div power-chart="detailsCtrl.chartData['power-sector-offgrid-2']"><!-- Angular directive - cs_directives.js </div>
