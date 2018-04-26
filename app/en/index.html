@@ -49,7 +49,7 @@ description: Climatescope a unique country-by-country assessment, interactive re
               </li>
               {% endif %}
 
-              {% assign item = site.en_off-grid | where:"featured", true | first %}
+              {% assign item = site.en_off-grid | where:"featured", true | sort:"date" | last %}
               {% if item %}
               <li>
                 <article class="entry entry--short update">
