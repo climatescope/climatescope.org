@@ -3,82 +3,46 @@ jobs:
   build:
     docker:
       - image: developmentseed/developmentseed.org:slim
-    working_directory: ~/developmentseed.github.com
+
+    working_directory: ~/repo
 
     environment:
-      - PRODUCTION_BRANCH: publish
-      - GH_BRANCH: master
-      - GH_REF: git@github.com:developmentseed/developmentseed.github.com.git
-      - GH_NAME: "Development Seed"
-      - GH_EMAIL: "dev@developmentseed.org"
+      - PRODUCTION_BRANCH: v2018
 
     steps:
       - checkout
 
-      # restore cache
+      # Download and cache dependencies
       - restore_cache:
           keys:
-            - developmentseedorg-{{ .Branch }}-{{ checksum "package.json" }}
-            - developmentseedorg-{{ .Branch }}
-            - developmentseedorg
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
 
-      - run:
-          name: Installing Dependencies
-          command: |
-            yarn install --unsafe-perm
+      - run: yarn install
 
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run:
-          name: Running Test
-          command: |
-            yarn test
-
-      - run:
-          name: Compressing images
-          command: |
-             if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
-               yarn images
-             else
-               echo "Skip compressing images"
-             fi
-
+      - run: yarn test
 
       - run:
           name: Building site
           command: |
-             if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
-               yarn build
-             else
-               echo "Skip building site"
-             fi
-
-      - add_ssh_keys:
-          fingerprints:
-             - "91:52:74:4b:a5:48:3d:dc:5d:f0:38:37:c8:45:d5:5f"
-      - run:
-         name: Deploying to Github
-         command: |
             if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
-               cd _site
-               git init
-               git config user.name "$GH_NAME"
-               git config user.email "$GH_EMAIL"
-               touch .nojekyll # Add this so GitHub doesn't try and build site
-               git add .
-               git commit -m "CI deploy [skip ci]"
-               git remote add origin $GH_REF
-               git push origin --force --quiet HEAD:$GH_BRANCH
-               rm -rf .git
-             else
-               echo "Skip deploying to Github"
+              yarn build
+            else
+              echo "Skip building site"
             fi
 
-      # save node_module folders
-      - save_cache:
-          key: developmentseedorg-{{ .Branch }}-{{ checksum "package.json" }}
-          paths:
-            - ~/developmentseed.github.com/node_modules
-            - ~/developmentseed.github.com/src/assets/bower_components
-            - ~/developmentseed.github.com/src/assets/graphics/content
-            - ~/developmentseed.github.com/.tmp
-
+      - run:
+          name: Deploy to Surge
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
+              cp ./dist/index.html ./dist/200.html
+              ./node_modules/surge/lib/cli.js --project ./dist --domain climatescope.surge.sh
+            else
+              echo "Not the branch you're looking for, skipping deploy"
+            fi
