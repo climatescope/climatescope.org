@@ -8,7 +8,7 @@ input[type=reset],
 input[type=submit] {
   -webkit-appearance: button;
   cursor: pointer;
-  @include transform(translateZ(0));
+  transform: translateZ(0);
 }
 
 .bttn {
@@ -22,7 +22,7 @@ input[type=submit] {
   border: 0;
   background-image: none;
   text-transform: uppercase;
-  @include user-select(none);
+  user-select: none;
   line-height: 1.5rem;
   font-size: 1rem;
   padding: 0.25rem 0.75rem;
@@ -34,28 +34,28 @@ input[type=submit] {
   &.active {
     box-shadow: inset 0 2px 0 0 rgba($primary-color, 0.16);
     outline: none;
-    @include transform(translate(0));
+    transform: translate(0);
   }
   &:hover {
-    @include opacity(1);
+    opacity: 1;
   }
   &.disabled, &[disabled] {
     pointer-events: none;
     cursor: not-allowed;
-    @include opacity(0.6);
+    opacity: 0.6;
     box-shadow: none;
   }
-  @include transition-property(background-color);
-  @include transition-duration(0.2s);
-  @include transition-timing-function(ease);
-  @include transition-delay(0);
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0;
   @media print {
     display: none;
   }
   &[rel~="external"]:after {
     @extend .collecticon-s-new-window;
     font-size: 1rem;
-    @include opacity(0.4);
+    opacity: 0.4;
     margin-left: 0.25rem;
   }
 }
@@ -168,7 +168,7 @@ input[type=submit] {
 .bttn {
   &:after {
     margin-left: 0.25rem;
-    @include opacity(0.4);
+    opacity: 0.4;
     font-size: 1rem;
   }
   &:before {

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/assets/graphics/meta/favicon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/graphics/meta/android-chrome.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/graphics/meta/apple-touch-icon.png" />
+
+    <!-- build:css /assets/styles/vendor.css -->
+    <!-- endbuild -->
+    <!-- build:css /assets/styles/main.css -->
+    <link href="/assets/styles/main.css" rel="stylesheet" />
+    <!-- endbuild -->
+    <link rel="author" href="{{ site.baseurl }}/humans.txt" type="text/plain" />
+
+    <script>
+      // Send config values from jekyll to javascript.
+      window.CS = {
+        config: {
+          baseurl: '{{ site.baseurl }}'
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <div id="app-container"><!-- Content via React App --></div>
+
+    <!-- build:js /assets/scripts/vendor.js -->
+    <script src="/assets/scripts/vendor.js"></script>
+    <!-- endbuild -->
+    <!-- build:js /assets/scripts/bundle.js -->
+    <script src="/assets/scripts/bundle.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

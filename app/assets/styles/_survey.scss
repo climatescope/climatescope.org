@@ -14,13 +14,13 @@
   box-shadow: 0 0 0 4px rgba($primary-color, 0.05);
   background-clip: padding-box;
 
-  @include transition-property(opacity, transform);
-  @include transition-duration(0.32s, 0.32s);
-  @include transition-timing-function(ease, ease);
-  @include transition-delay(0, 0);
+  transition-property: opacity, transform;
+  transition-duration: 0.32s, 0.32s;
+  transition-timing-function: ease, ease;
+  transition-delay: 0, 0;
 
   @include opacity(0);
-  @include transform(translate(0, 100%));
+  transform: translate(0, 100%);
   
   h1 {
     font-size: 1rem;
@@ -57,6 +57,6 @@
 
   &.revealed {
     @include opacity(1);
-    @include transform(translate(0, 0));
+    transform: translate(0, 0);
   }
 }

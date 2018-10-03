@@ -594,7 +594,7 @@ $circle-gutter: 0.5rem;
   font-family: $brand-font-family;
 
   .card-wrapper {
-    @include col(6/12, $cycle: 2);
+    @include column(6/12, $cycle: 2);
     margin-bottom: 1rem;
   }
 
@@ -604,7 +604,7 @@ $circle-gutter: 0.5rem;
     padding: 1rem;
 
     .card-title {
-      @include col(4/12, $gutter: 0);
+      @include column(4/12, $gutter: 0);
       margin-bottom: 0;
       font-size: 1rem;
       line-height: 1;
@@ -642,7 +642,7 @@ $circle-gutter: 0.5rem;
     }
 
     .card-content {
-      @include col(8/12, $gutter: 0);
+      @include column(8/12, $gutter: 0);
       padding-left: 1rem;
       border-left: 1px solid tint($primary-color, 68%);
     }
@@ -778,11 +778,11 @@ $circle-gutter: 0.5rem;
     padding: 0;
 
     .policies-type-wrapper {
-      @include col(6/12, $cycle: 2);
+      @include column(6/12, $cycle: 2);
       margin-bottom: $global-spacing;
 
       @media #{$xxlarge-up} {
-        @include col(4/12, $uncycle: 2, $cycle: 3);
+        @include column(4/12, $cycle: 3);
       }
 
       .policy-type {

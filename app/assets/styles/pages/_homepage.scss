@@ -39,7 +39,7 @@
   padding-bottom: $global-spacing;
 
   &__header {
-    @include col(4/12);
+    @include column(4/12);
     text-align: right;
 
     img {
@@ -55,7 +55,7 @@
   }
 
   &__body {
-    @include col(8/12);
+    @include column(8/12);
     font-family: $brand-font-family;
     font-size: 1.25rem;
     line-height: 1.5rem;
@@ -65,7 +65,7 @@
     }
 
     @media #{$xlarge-up} {
-      @include col(6/12);
+      @include column(6/12);
     }
   }
 
@@ -97,18 +97,18 @@
    ========================================================================== */
 
 .featured-col--main {
-  @include col(7/12);
+  @include column(7/12);
 
   @media #{$xlarge-up} {
-    @include col(8/12);
+    @include column(8/12);
   }
 }
 
 .featured-col--sec {
-  @include col(5/12);
+  @include column(5/12);
 
   @media #{$xlarge-up} {
-    @include col(4/12);
+    @include column(4/12);
   }
 }
 

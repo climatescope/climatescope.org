@@ -18,47 +18,42 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 # Development
 
-### Environment
+## Install Project Dependencies
 To set up the development environment for this website, you'll need to install the following on your system:
 
-- [Node (v0.12) and npm](http://nodejs.org/)
-- Ruby and [Bundler](http://bundler.io/), preferably through something like [rvm](https://rvm.io/)
+- [Node](http://nodejs.org/) v8.11 (To manage multiple node versions we recommend [nvm](https://github.com/creationix/nvm))
+- [Yarn](https://yarnpkg.com/) Package manager
+- Ruby and [Bundler](http://bundler.io/). Highly suggest using [rvm](https://rvm.io/)
 
-After these basic requirements are met, run the following commands in the website's folder:
-```
-$ npm install
-```
-Will also run `bundle install`
+### Install Application Dependencies
 
-### Getting started
-
+If you use [`nvm`](https://github.com/creationix/nvm), activate the desired Node version:
 ```
-$ npm run serve
-```
-Compiles the compass files, javascripts, and launches the server making the site available at `http://localhost:3000/`
-The system will watch files and execute tasks whenever one of them changes.
-The site will automatically refresh since it is bundled with livereload.
-
-The `_config-dev.yml` file will be loaded alongside `_config.yml`.
-
-### Other commands
-Clean the compiled site. I.e. the `_site` folder
-```
-$ npm run clean
+nvm install
 ```
 
-Compile the compass files, javascripts, and builds the jekyll site using `_config-dev.yml`.
-Use this instead of ```npm run serve``` if you don't want to watch.
+Install Node modules:
 ```
-$ npm run compile
-```
-
-Compiles the site loading the `_config-stage.yml` alongside `_config.yml`. The javascript files will be minified.
-```
-$ npm run stage
+yarn install
 ```
 
-Compiles the site loading the `_config-prod.yml` alongside `_config.yml`. The javascript files will be minified.
-```
-$ npm run prod
-```
+This will then automatically run `bundle install` to install the ruby gems.
+
+
+### Jekyll configurations and environment variables
+
+There are 3 files to configure jekyll that get loaded according to the environment the app is being built for:
+- _config.yml - production settings
+- _config-stage.yml - overrides the production settings for staging server
+- _config-dev.yml - local (development) overrides. This file is gitignored, so you can safely change it without polluting the repo.
+
+
+### Javascript configurations and environment variables
+
+At times, it may be necessary to include options/variables specific to `production`, `staging` or `local` in the code. To handle this, there is a master config.js file. This file should not be modified.  Instead, modify one of:
+
+- config/production.js - production settings
+- config/staging.js - overrides the production settings for staging server
+- config/local.js - local (development) overrides. This file is gitignored, so you can safely change it without polluting the repo.
+
+When developing locally with `yarn serve`, the default will be to use `production.js` (with overrides from `local.js`).

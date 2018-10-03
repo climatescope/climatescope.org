@@ -41,11 +41,11 @@ $tooltip-arr-size: 1rem;
   display: block;
   position: absolute;
   z-index: 1070;
-  @include transform(translate3d(0, 0, 0));
-  @include transition-property(opacity, margin, visibility);
-  @include transition-duration(0.1s, 0.1s, 0.1s);
-  @include transition-timing-function(ease, ease, linear);
-  @include transition-delay(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition-property: opacity, margin, visibility;
+  transition-duration: 0.1s, 0.1s, 0.1s;
+  transition-timing-function: ease, ease, linear;
+  transition-delay: 0, 0, 0;
 }
 
 .tooltip {

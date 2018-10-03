@@ -1,91 +1,12 @@
-safe:           false
-source:         app
-
-# Domain and path_prefix are neede for IE9 CORS.
-# More in: https://github.com/flipside-org/climatescope/issues/221
-domain:         http://global-climatescope.org
-path_prefix:    
-
-# Address of climatescope's proxy server.
-# pdbproxy:       http://pdbproxy.global-climatescope.org
-pdbproxy:       https://services.bnef.com/public-api
-
+source: app
 exclude:
   - assets/scripts
-  - assets/vendor
   - assets/styles
+  - assets/icons
+baseurl: http://global-climatescope.org
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-name:
-  en:           Climatescope
-description:
-  en:           The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
-keywords:
-  en:           Climatescope, Clean Energy, Investment, Latin America and the Caribbean, Climate Change, Investment Climate, Green Economy, Greenhouse Gas Management, Carbon Management, Clean Energy, Low-Carbon Business, Value Chain, Renewables, Climate Financing, Multilateral Investment Fund, Inter-American Development Bank, Bloomberg New Energy Finance, DfiD, Power Africa
-edition:        2017
-
-defaults:
-  ## Start blog defaults
-
-  # WTF explanation:
-  # Apparently when using system variables (like permalink and layout)
-  # it's only possible to set them by type (and a subpath is accepted)
-  # Any other variable (like language in this case) must be set by full path
-  # otherwise it won't be picked up. That's the reason behind this redundancy.
-  # 
-  # Why you ask? Because reasons.
-  -
-    scope:
-      path: "en"
-      type: "posts"
-    values:
-      permalink: /en/blog/:year/:month/:day/:title
-      layout: blog
-  -
-    scope:
-      path: "_posts/en"
-    values:
-      lang: en
-
-  ## END blog defaults
-
-collections:
-  en_country:
-    output: true
-    permalink: /en/country/:path/
-    lang: en
-    i18n:
-      en: en_country
-
-  en_state:
-    output: true
-    permalink: /en/country/:path/
-    lang: en
-    i18n:
-      en: en_state
-
-  en_page:
-    output: true
-    permalink: /en/:path/
-    lang: en
-    i18n:
-      en: en_page
-
-  en_off-grid:
-    output: true
-    permalink: /en/off-grid-quarterly/:path/
-    lang: en
-    i18n:
-      en: en_off-grid
-
-  en_insights:
-    output: true
-    permalink: /en/insights/:path/
-    lang: en
-    i18n:
-      en: en_insights
-
-  en_tools:
-    output: false
-    lang: en
-    i18n:
-      en: en_tools
+# SEO defaults:
+# Everything is handled through javascript. Check assets/scripts/config

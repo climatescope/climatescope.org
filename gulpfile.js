@@ -1,29 +1,200 @@
-var gulp = require('gulp');
-var cp = require('child_process');
-var runSequence = require('run-sequence');
-var compass = require('gulp-compass');
-var uglify = require('gulp-uglifyjs');
-var clean = require('gulp-clean');
-var browserSync = require('browser-sync');
-var concat = require('gulp-concat');
-var plumber = require('gulp-plumber');
-var cp = require('child_process');
+'use strict';
 
-////////////////////////////////////////////////////////////////////////////////
-//------------------------- Collecticon tasks --------------------------------//
-//--------------------- (Font generation related) ----------------------------//
-//----------------------------------------------------------------------------//
+const fs = require('fs');
+const cp = require('child_process');
+const defaultsdeep = require('lodash.defaultsdeep');
+const gulp = require('gulp');
+const $ = require('gulp-load-plugins')();
+const del = require('del');
+const browserSync = require('browser-sync');
+const reload = browserSync.reload;
+const watchify = require('watchify');
+const browserify = require('browserify');
+const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
+const log = require('fancy-log');
+const YAML = require('yamljs');
+const SassString = require('node-sass').types.String;
+const notifier = require('node-notifier');
+const runSequence = require('run-sequence');
+const through2 = require('through2');
 
+// /////////////////////////////////////////////////////////////////////////////
+// --------------------------- Variables -------------------------------------//
+// ---------------------------------------------------------------------------//
+
+// The package.json
+var pkg;
+
+// Environment
+// Set the correct environment, which controls what happens in config.js
+if (!process.env.DS_ENV) {
+  if (!process.env.CIRCLE_BRANCH || process.env.CIRCLE_BRANCH !== process.env.PRODUCTION_BRANCH) {
+    process.env.DS_ENV = 'staging';
+  } else {
+    process.env.DS_ENV = 'production';
+  }
+}
+
+var prodBuild = false;
+
+// /////////////////////////////////////////////////////////////////////////////
+// ------------------------- Helper functions --------------------------------//
+// ---------------------------------------------------------------------------//
+
+function readPackage () {
+  pkg = JSON.parse(fs.readFileSync('package.json'));
+}
+readPackage();
+
+// /////////////////////////////////////////////////////////////////////////////
+// ------------------------- Callable tasks ----------------------------------//
+// ---------------------------------------------------------------------------//
+
+gulp.task('default', ['clean'], function () {
+  prodBuild = true;
+  gulp.start('build');
+});
+
+gulp.task('serve', ['vendorScripts', 'javascript', 'styles', 'jekyll'], function () {
+  browserSync({
+    port: 3000,
+    server: {
+      baseDir: ['.tmp', '_site'],
+      routes: {
+        '/node_modules': './node_modules'
+      }
+    }
+  });
+  // watch for changes
+  gulp.watch([
+    'app/**/*.html',
+    'app/**/*.md',
+    'app/assets/graphics/**/*',
+    '!app/assets/icons/collecticons/**/*'
+  ], ['jekyll', reload]);
+
+  gulp.watch('app/assets/styles/**/*.scss', ['styles']);
+  // If templates change trigger the js task that will render the templates.
+  gulp.watch('app/assets/templates/*.ejs', ['javascript']);
+  gulp.watch('package.json', ['vendorScripts']);
+  gulp.watch('app/assets/icons/collecticons/**', ['collecticons']);
+});
+
+gulp.task('clean', function () {
+  return del(['.tmp', '_site']);
+});
+
+// /////////////////////////////////////////////////////////////////////////////
+// ------------------------- Browserify tasks --------------------------------//
+// ------------------- (Not to be called directly) ---------------------------//
+// ---------------------------------------------------------------------------//
+
+// Compiles the user's script files to bundle.js.
+// When including the file in the index.html we need to refer to bundle.js not
+// main.js
+gulp.task('javascript', function () {
+  var watcher = watchify(browserify({
+    entries: ['./app/assets/scripts/main.js'],
+    debug: true,
+    cache: {},
+    packageCache: {},
+    fullPaths: true
+  }), {poll: true});
+
+  function bundler () {
+    if (pkg.dependencies) {
+      watcher.external(Object.keys(pkg.dependencies));
+    }
+    return watcher.bundle()
+      .on('error', function (e) {
+        notifier.notify({
+          title: 'Oops! Browserify errored:',
+          message: e.message
+        });
+        console.log('Javascript error:', e);
+        if (prodBuild) {
+          process.exit(1);
+        }
+        // Allows the watch to continue.
+        this.emit('end');
+      })
+      .pipe(source('bundle.js'))
+      .pipe(buffer())
+      // Source maps.
+      .pipe($.sourcemaps.init({loadMaps: true}))
+      .pipe($.sourcemaps.write('./'))
+      .pipe(gulp.dest('.tmp/assets/scripts'))
+      .pipe(reload({stream: true}));
+  }
+
+  watcher
+    .on('log', log)
+    .on('update', bundler);
+
+  return bundler();
+});
+
+// Vendor scripts. Basically all the dependencies in the package.js.
+// Therefore be careful and keep the dependencies clean.
+gulp.task('vendorScripts', function () {
+  // Ensure package is updated.
+  readPackage();
+  var vb = browserify({
+    debug: true,
+    require: pkg.dependencies ? Object.keys(pkg.dependencies) : []
+  });
+  return vb.bundle()
+    .on('error', log.bind(log, 'Browserify Error'))
+    .pipe(source('vendor.js'))
+    .pipe(buffer())
+    .pipe($.sourcemaps.init({loadMaps: true}))
+    .pipe($.sourcemaps.write('./'))
+    .pipe(gulp.dest('.tmp/assets/scripts/'))
+    .pipe(reload({stream: true}));
+});
+
+// /////////////////////////////////////////////////////////////////////////////
+// -------------------------- Jekyll tasks -----------------------------------//
+// ---------------------------------------------------------------------------//
+gulp.task('jekyll', function (done) {
+  var args = ['exec', 'jekyll', 'build'];
+
+  switch (process.env.DS_ENV) {
+    case 'development':
+      args.push('--config=_config.yml,_config-dev.yml');
+      break;
+    case 'staging':
+      args.push('--config=_config.yml,_config-stage.yml');
+      break;
+    case 'production':
+      args.push('--config=_config.yml');
+      break;
+  }
+
+  return cp.spawn('bundle', args, {stdio: 'inherit'})
+    .on('close', done);
+});
+
+// /////////////////////////////////////////////////////////////////////////////
+// ------------------------- Collecticon tasks -------------------------------//
+// --------------------- (Font generation related) ---------------------------//
+// ---------------------------------------------------------------------------//
 gulp.task('collecticons', function (done) {
   var args = [
     'node_modules/collecticons-processor/bin/collecticons.js',
     'compile',
-    'app/assets/graphics/collecticons/',
+    'app/assets/icons/collecticons/',
     '--font-embed',
-    '--font-dest', 'app/assets/fonts/collecticons',
-//    '--font-types', 'woff',
+    '--font-dest', 'app/assets/fonts',
+    '--font-name', 'Collecticons',
+    '--font-types', 'woff',
     '--style-format', 'sass',
-    '--style-dest', 'app/assets/styles/',
+    '--style-dest', 'app/assets/styles/core/',
+    '--style-name', 'collecticons',
+    '--class-name', 'collecticon',
+    '--author-name', 'Development Seed',
+    '--author-url', 'https://developmentseed.org/',
     '--no-preview'
   ];
 
@@ -31,216 +202,103 @@ gulp.task('collecticons', function (done) {
     .on('close', done);
 });
 
-
-////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////
-//-------------------------- Copy tasks --------------------------------------//
-//----------------------------------------------------------------------------//
-
-// Copy from the .tmp to _site directory.
-// To reduce build times the assets are compiles at the same time as jekyll
-// renders the site. Once the rendering has finished the assets are copied.
-gulp.task('copy:assets', function(done) {
-  return gulp.src('.tmp/assets/**')
-    .pipe(gulp.dest('_site/assets'));
+// //////////////////////////////////////////////////////////////////////////////
+// --------------------------- Helper tasks -----------------------------------//
+// ----------------------------------------------------------------------------//
+gulp.task('build', function () {
+  runSequence(['vendorScripts', 'javascript', 'collecticons'], ['styles', 'jekyll'], ['html', 'images:imagemin'], function () {
+    return gulp.src('_site/**/*')
+      .pipe($.size({title: 'build', gzip: true}))
+      .pipe($.exit());
+  });
 });
 
-////////////////////////////////////////////////////////////////////////////////
-//--------------------------- Assets tasks -----------------------------------//
-//----------------------------------------------------------------------------//
-
-gulp.task('compass', function() {
-  return gulp.src('app/assets/styles/*.scss')
-    .pipe(plumber())
-    .pipe(compass({
-      css: '.tmp/assets/styles',
-      sass: 'app/assets/styles',
-      style: 'expanded',
-      sourcemap: true,
-      require: ['sass-css-importer'],
-      bundle_exec: true
-    }))
-    .on('error', function(err) {
+gulp.task('styles', function () {
+  return gulp.src('app/assets/styles/main.scss')
+    .pipe($.plumber(function (e) {
+      notifier.notify({
+        title: 'Oops! Sass errored:',
+        message: e.message
+      });
+      console.log('Sass error:', e.toString());
+      if (prodBuild) {
+        process.exit(1);
+      }
+      // Allows the watch to continue.
       this.emit('end');
-    })
-    .pipe(browserSync.reload({stream:true}));
+    }))
+    .pipe($.sourcemaps.init())
+    .pipe($.sass({
+      outputStyle: 'expanded',
+      precision: 10,
+      functions: {
+        'urlencode($url)': function (url) {
+          var v = new SassString();
+          v.setValue(encodeURIComponent(url.getValue()));
+          return v;
+        }
+      },
+      includePaths: require('bourbon').includePaths.concat('node_modules/jeet')
+    }))
+    .pipe($.sourcemaps.write())
+    .pipe(gulp.dest('.tmp/assets/styles'))
+    .pipe(reload({stream: true}));
 });
 
-// Dependencies.
-gulp.task('compress:deps:map', function() {
-  // deps.js
+// After being rendered by jekyll process the html files. (merge css files, etc)
+gulp.task('html', function () {
+  const prodConf = YAML.load('_config.yml');
+  const stageConf = YAML.load('_config-stage.yml');
+  const jkConf = defaultsdeep({}, stageConf, prodConf);
+
+  return gulp.src('_site/**/*.html')
+    .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
+    .pipe(cacheUseref())
+    // Do not compress comparisons, to avoid MapboxGLJS minification issue
+    // https://github.com/mapbox/mapbox-gl-js/issues/4359#issuecomment-286277540
+    .pipe($.if('*.js', $.uglify({compress: {comparisons: false}})))
+    .pipe($.if('*.css', $.csso()))
+    .pipe($.if(/\.(css|js)$/, $.rev()))
+    .pipe($.revRewrite({prefix: jkConf.baseurl}))
+    .pipe(gulp.dest('_site'));
+});
+
+gulp.task('images:imagemin', function () {
   return gulp.src([
-      'app/assets/scripts/vendor/map-dependencies/*.js',
-      'app/assets/vendor/mapbox/mapbox.js'
-    ])
-    .pipe(plumber())
-    .pipe(uglify('map-dependencies.min.js'))
-    .pipe(gulp.dest('.tmp/assets/scripts/vendor'));
+    '_site/assets/graphics/content/**/*'
+  ])
+    .pipe($.imagemin([
+      $.imagemin.gifsicle({interlaced: true}),
+      $.imagemin.jpegtran({progressive: true}),
+      $.imagemin.optipng({optimizationLevel: 5}),
+      // don't remove IDs from SVGs, they are often used
+      // as hooks for embedding and styling.
+      $.imagemin.svgo({plugins: [{cleanupIDs: false}]})
+    ]))
+    .pipe(gulp.dest('_site/assets/graphics'));
 });
 
-gulp.task('compress:deps:angular', function() {
-  // deps.js
-  return gulp.src([
-      'app/assets/scripts/vendor/angular.min.js',
-      'app/assets/scripts/vendor/angular-route.min.js'
-    ])
-    .pipe(plumber())
-    .pipe(uglify('angular-deps.min.js'))
-    .pipe(gulp.dest('.tmp/assets/scripts/vendor'));
-});
-
-// Loose dependencies
-// They need to be loaded individually
-gulp.task('copy:deps', function(done) {
-  return gulp.src([
-    'app/assets/scripts/vendor/modernizr.custom.2.8.3.js',
-    'app/assets/scripts/vendor/selectivizr-1.0.3b.js',
-    'app/assets/scripts/vendor/respond.min.js',
-    'app/assets/scripts/vendor/rem.min.js',
-    'app/assets/scripts/vendor/jquery-1.11.0.min.js',
-    'app/assets/scripts/vendor/jquery-2.1.0.min.js',
-    'app/assets/scripts/vendor/boxsizing.htc'
-    ])
-    .pipe(gulp.dest('.tmp/assets/scripts/vendor'));
-});
-gulp.task('copy:deps:imgs', function(done) {
-  return gulp.src([
-    'app/assets/vendor/mapbox/images/*.{png,svg,jpg}'
-    ])
-    .pipe(gulp.dest('.tmp/assets/styles/images'));
-});
-// Aggregate the tasks above.
-gulp.task('dependencies', function(done) {
-  runSequence(['compress:deps:map', 'compress:deps:angular', 'copy:deps', 'copy:deps:imgs'], done);
-});
-
-gulp.task('compress:main', function() {
-  // main.min.js
-  var task = gulp.src([
-      'app/assets/scripts/vendor/parse-1.6.7.min.js',
-      'app/assets/scripts/*.js',
-      'app/assets/scripts/angular/**/*.js',
-      'app/assets/vendor/noUiSlider/jquery.nouislider.min.js',
-      'app/assets/scripts/vendor/jquery.once.min.js',
-      'app/assets/vendor/flexslider/jquery.flexslider.js',
-      'app/assets/scripts/vendor/d3.v3.min.js',
-      'app/assets/scripts/vendor/turf-build.js'
-    ])
-    .pipe(plumber());
-
-    if (environment == 'development') {
-      task = task.pipe(concat('main.min.js'));
+/**
+ * Caches the useref files.
+ * Avoid sending repeated js and css files through the minification pipeline.
+ * This happens when there are multiple html pages to process.
+ */
+function cacheUseref () {
+  let files = {
+    // path: content
+  };
+  return through2.obj(function (file, enc, cb) {
+    const path = file.relative;
+    if (files[path]) {
+      // There's a file in cache. Check if it's the same.
+      const prev = files[path];
+      if (Buffer.compare(file.contents, prev) !== 0) {
+        this.push(file);
+      }
+    } else {
+      files[path] = file.contents;
+      this.push(file);
     }
-    else {
-      task = task.pipe(uglify('main.min.js', {
-        outSourceMap: true,
-        mangle: false
-      }));
-    }
-
-    return task.pipe(gulp.dest('.tmp/assets/scripts'));
-});
-
-
-// Build the jekyll website.
-gulp.task('jekyll', function (done) {
-  var args = ['exec', 'jekyll', 'build'];
-
-  switch (environment) {
-    case 'development':
-      args.push('--config=_config.yml,_config-dev.yml');
-    break;
-    case 'stage':
-      args.push('--config=_config.yml,_config-stage.yml');
-    break;
-    case 'production':
-      args.push('--config=_config.yml');
-    break;
-  }
-
-  return cp.spawn('bundle', args, {stdio: 'inherit'})
-    .on('close', done);
-});
-
-// Build the jekyll website.
-// Reload all the browsers.
-gulp.task('jekyll:rebuild', ['jekyll'], function () {
-  browserSync.reload();
-});
-
-// Main build task
-// Builds the site. Destination --> _site
-gulp.task('build', function(done) {
-  runSequence(['collecticons'], ['jekyll', 'compress:main', 'dependencies', 'compass'], ['copy:assets'], done);
-});
-
-// Default task.
-gulp.task('default', function(done) {
-  runSequence('build', done);
-});
-
-gulp.task('serve', ['build'], function () {
-  browserSync({
-    port: 3000,
-    server: {
-      baseDir: ['.tmp', '_site']
-    }
+    cb();
   });
-
-  gulp.watch(['./app/assets/fonts/**/*', './app/assets/images/**/*'], function() {
-    runSequence('jekyll', browserReload);
-  });
-
-  gulp.watch('app/assets/styles/**/*.scss', function() {
-    runSequence('compass');
-  });
-
-  gulp.watch('app/assets/graphics/collecticons/*.svg', function() {
-    runSequence('collecticons', 'compass');
-  });
-
-  gulp.watch(['./app/assets/scripts/**/*.js', '!./app/assets/scripts/vendor/**/*'], function() {
-    runSequence('compress:main', browserReload);
-  });
-
-  gulp.watch(['app/assets/scripts/vendor/**/*'], function() {
-    runSequence('dependencies', browserReload);
-  });
-
-  gulp.watch(['app/**/*.html', 'app/**/*.md', 'app/**/*.json', 'app/**/*.geojson', '_config*'], function() {
-    runSequence('jekyll', browserReload);
-  });
-
-});
-
-var shouldReload = true;
-gulp.task('no-reload', function(done) {
-  shouldReload = false;
-  runSequence('serve', done);
-});
-
-var environment = 'development';
-gulp.task('prod', function(done) {
-  environment = 'production';
-  runSequence('clean', 'build', done);
-});
-gulp.task('stage', function(done) {
-  environment = 'stage';
-  runSequence('clean', 'build', done);
-});
-
-// Removes jekyll's _site folder
-gulp.task('clean', function() {
-  return gulp.src(['_site', '.tmp'], {read: false})
-    .pipe(clean());
-});
-
-////////////////////////////////////////////////////////////////////////////////
-//------------------------- Helper functions ---------------------------------//
-//----------------------------------------------------------------------------//
-
-function browserReload() {
-  if (shouldReload) {
-    browserSync.reload();
-  }
 }

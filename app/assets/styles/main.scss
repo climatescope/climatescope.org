@@ -1,14 +1,36 @@
-// Make sure the charset is set appropriately
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+/**
+ * Following Necolas' Principles of writing consistent, idiomatic CSS:
+ * https://github.com/necolas/idiomatic-css
+ */
+
+/* Charset */
+
 @charset "UTF-8";
-@import "compass";
+
+
+/* Third-party
+   ========================================================================== */
+
+/**
+ * Using Bourbon for extended SASS functionality:
+ * http://bourbon.io/
+ */
+
+@import "bourbon";
+
+/**
+ * Using Jeet, a grid system designed for humans:
+ * http://jeet.gs/
+ */
+
+@import "jeet";
 
 @import "normalize";
 @import "reset";
-
-// Import Jeet grid - a grid system for humans: jeet.gs
-@import "jeet/settings";
-@import "jeet/functions";
-@import "jeet/grid";
 
 // Climatescope functions
 @import "functions";
@@ -18,7 +40,7 @@
 
 // Climatescope's global
 @import "mixins";
-@import "icons";
+@import "core/collecticons";
 @import "type";
 @import "buttons";
 @import "forms";
@@ -27,12 +49,10 @@
 @import "modals";
 @import "tables";
 @import "graphics";
-@import "CSS:./../vendor/noUiSlider/jquery.nouislider";
 @import "sliders";
 @import "base";
 @import "survey";
 @import "helpers";
-@import "CSS:./../vendor/mapbox/mapbox";
 @import "map";
 @import "animations";
 

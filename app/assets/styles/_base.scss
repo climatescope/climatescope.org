@@ -31,11 +31,11 @@ a {
   cursor: pointer;
   color: $link-color;
   text-decoration: none;
-  @include transform(translateZ(0));
-  @include transition-property(opacity);
-  @include transition-duration(0.2s);
-  @include transition-timing-function(ease);
-  @include transition-delay(0);
+  transform: translateZ(0);
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: 0;
   &[rel~="external"]:after {
     @extend .collecticon-s-new-window;
     font-size: 1rem;
@@ -55,7 +55,7 @@ a:hover {
 
 a:active{
   outline: none;
-  @include transform(translate(0, 1px));
+  transform: translate(0, 1px);
 }
 
 .link-wrapper {
@@ -132,11 +132,11 @@ a:active{
   margin: 0;
   overflow: hidden;
   > li {
-    @include col(12/12);
+    @include column(12/12);
   }
   @media #{$xlarge-up} {
      > li {
-      @include col(6/12, $cycle: 2);
+      @include column(6/12, $cycle: 2);
     }
   }
 }
@@ -299,7 +299,7 @@ a:active{
   }
 
   &::before {
-    background-image: url(../images/layout/hero-17-comp.jpg);
+    background-image: url(../graphics/layout/hero-17-comp.jpg);
     background-repeat: no-repeat;
     z-index: 1;
     transform: translate3d(0, 0, 0);
@@ -353,7 +353,7 @@ a:active{
     @include span(12/12);
 
     @media #{$xlarge-up} {
-      @include col(4/12);
+      @include column(4/12);
     }
   }
 }
@@ -384,14 +384,14 @@ a:active{
 
   .site-header--home & {
     @media #{$xlarge-up} {
-      @include col(8/12, $offset: 2/12);
+      @include column(8/12, $offset: 2/12);
       text-align: center;
     }
   }
 
   .site-header--global & {
     @media #{$xlarge-up} {
-      @include col(8/12);
+      @include column(8/12);
       text-align: right;
     }
   }
@@ -498,11 +498,11 @@ a:active{
     margin-bottom: -2px;
     position: relative;
     z-index: 2;
-    @include transform(translate3d(0, 0, 0));
-    @include transition-property(all);
-    @include transition-duration(0.2s);
-    @include transition-timing-function(ease);
-    @include transition-delay(0);
+    transform: translate3d(0, 0, 0);
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0;
     width: 100%;
     &.sticky {
       @media #{$large-up} {
@@ -558,7 +558,7 @@ a:active{
 
 .layout--hub__controls,
 .layout--results__controls {
-  @include col(12/12);
+  @include column(12/12);
   .control-title {
     @extend .hd-label;
     @extend .truncated;
@@ -577,32 +577,32 @@ a:active{
 }
 
 .col--main {
-  @include col(8/12);
+  @include column(8/12);
   margin-bottom: 3rem;
   .layout--page & {
-    @include col(12/12);
+    @include column(12/12);
   }
   @media #{$large-up} {
     .layout--page & {
-      @include col(10/12);
+      @include column(10/12);
     }
     .layout--page.full & {
-      @include col(12/12);
+      @include column(12/12);
     }
   }
   @media #{$xlarge-up} {
-    @include col(8/12);
+    @include column(8/12);
     .layout--page & {
-      @include col(8/12);
+      @include column(8/12);
     }
     .layout--page.full & {
-      @include col(12/12);
+      @include column(12/12);
     }
   }
 }
 
 .col--sec {
-  @include col(4/12);
+  @include column(4/12);
   margin-bottom: 3rem;
   .lt-ie9 & {
     margin-right: 0 !important;
@@ -611,7 +611,7 @@ a:active{
 
 .col--double {
   @media #{$medium-up} {
-    @include col(6/12);
+    @include column(6/12);
   }
   margin-bottom: 3rem;
 }
@@ -621,7 +621,7 @@ a:active{
 .layout--page,
 .layout--hub {
   &__heading {
-    @include col(6/12);
+    @include column(6/12);
     position: relative;
 
     > * {
@@ -629,7 +629,7 @@ a:active{
     }
 
     @media #{$xlarge-up} {
-      @include col(8/12);
+      @include column(8/12);
     }
   }
   &__title {
@@ -645,13 +645,13 @@ a:active{
     margin: 1rem 0 1.25rem 0;
   }
   &__tools {
-    @include col(6/12);
+    @include column(6/12);
     margin-right: 0 !important;
     @media #{$medium-up} {
       padding: 0.375rem 0;
     }
     @media #{$xlarge-up} {
-      @include col(4/12);
+      @include column(4/12);
     }
   }
 }
@@ -727,7 +727,7 @@ a:active{
     line-height: 1.25rem;
   }
   .control {
-    @include col(3/12);
+    @include column(3/12);
     &.first {
       clear: left;
     }
@@ -959,7 +959,7 @@ a:active{
     margin-bottom: 4rem;
   }
   &__heading {
-    @include col(7/12);
+    @include column(7/12);
   }
   &__title {
     @extend .hd-xs;
@@ -973,7 +973,7 @@ a:active{
     text-align: center;
   }
   &__stats {
-    @include col(5/12);
+    @include column(5/12);
     margin-bottom: 0;
     dt {
       @extend .hd-label;
@@ -1002,7 +1002,7 @@ a:active{
     }
   }
   &__table {
-    @include col(12/12);
+    @include column(12/12);
     margin-top: 3rem;
 
     &-actions {
@@ -1015,7 +1015,7 @@ a:active{
     }
   }
   &__graph {
-    @include col(12/12);
+    @include column(12/12);
     text-align: center !important;
     margin-bottom: 4%;
     .placeholder {
@@ -1023,20 +1023,20 @@ a:active{
     }
 
     .chart-wrapper {
-      @include col(6/12, $cycle: 2);
+      @include column(6/12, $cycle: 2);
 
       .param-2 &,
       .param-4 & {
-        @include col(6/12, $offset: 3/12);
+        @include column(6/12, $offset: 3/12);
       }
     }
   }
   @media #{$xlarge-up} {
     &__heading {
-      @include col(8/12);
+      @include column(8/12);
     }
     &__stats {
-      @include col(4/12);
+      @include column(4/12);
     }
     &__graph {
       .lt-ie9 & {
@@ -1084,10 +1084,10 @@ a:active{
 
 .policies.layout--entry {
   .layout--entry__heading {
-    @include col(8/12);
+    @include column(8/12);
   }
   .layout--entry__tools {
-    @include col(4/12);
+    @include column(4/12);
   }
 }
 
@@ -1100,7 +1100,7 @@ a:active{
       margin-bottom: 0.5rem;
     }
     .control {
-      @include col(5/24);
+      @include column(5/24);
       select {
         width: 100%;
       }
@@ -1109,7 +1109,7 @@ a:active{
         padding-left: 0.25rem;
       }
       &.narrow {
-        @include col(4/24);
+        @include column(4/24);
       }
     }
     .control:last-child {
@@ -1207,11 +1207,11 @@ a:active{
 // SITE FOOTER
 
 .ftr-nav {
-  @include col(4/12);
+  @include column(4/12);
 }
 
 .ftr-nav__block {
-  @include col(6/12);
+  @include column(6/12);
 }
 
 .ftr-title {
@@ -1232,11 +1232,11 @@ a:active{
 }
 
 .ftr-supporters {
-  @include col(4/12);
+  @include column(4/12);
 }
 
 .ftr-newsletter-subs {
-  @include col(4/12);
+  @include column(4/12);
 
   > *:last-child {
     margin-bottom: 0;
@@ -1317,7 +1317,7 @@ a:active{
     max-width: 12rem;
 
     .ftr-supporters & {
-      @include col(6/12, $cycle: 2);
+      @include column(6/12, $cycle: 2);
       
       &:nth-last-child(1),
       &:nth-last-child(2) {

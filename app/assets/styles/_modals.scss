@@ -72,37 +72,37 @@
 .modal {
   @include opacity(0);
   visibility: hidden;
-  @include transform(translate3d(0, 0, 0));
-  @include transition-property(opacity, visibility);
-  @include transition-duration(0.2s, 0.2s);
-  @include transition-timing-function(ease, linear);
-  @include transition-delay(0.1s, 0.1s);
+  transform: translate3d(0, 0, 0);
+  transition-property: opacity, visibility;
+  transition-duration: 0.2s, 0.2s;
+  transition-timing-function: ease, linear;
+  transition-delay: 0.1s, 0.1s;
 
   &__inner {
     @include opacity(0);
     margin-top: -4rem;
     visibility: hidden;
-    @include transform(translate3d(0, 0, 0));
-    @include transition-property(opacity, visibility, margin-top);
-    @include transition-duration(0.2s, 0.2s, 0.2s);
-    @include transition-timing-function(ease, linear, ease);
-    @include transition-delay(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition-property: opacity, visibility, margin-top;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    transition-timing-function: ease, linear, ease;
+    transition-delay: 0, 0, 0;
   }
   
   &.revealed {
-    @include transition-property(opacity, visibility);
-    @include transition-duration(0.2s, 0.2s);
-    @include transition-timing-function(ease, linear);
-    @include transition-delay(0, 0);
+    transition-property: opacity, visibility;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease, linear;
+    transition-delay: 0, 0;
     
     @include opacity(1);
     visibility: visible;
     
     .modal__inner {
-      @include transition-property(opacity, visibility, margin-top);
-      @include transition-duration(0.2s, 0.2s, 0.2s);
-      @include transition-timing-function(ease, linear, ease);
-      @include transition-delay(0.1s, 0.1s, 0.1s);
+      transition-property: opacity, visibility, margin-top;
+      transition-duration: 0.2s, 0.2s, 0.2s;
+      transition-timing-function: ease, linear, ease;
+      transition-delay: 0.1s, 0.1s, 0.1s;
       
       @include opacity(1);
       margin-top: 2rem;
