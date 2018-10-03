@@ -1,8 +1,6 @@
 'use script'
-import fetch from 'isomorphic-fetch'
-import { safeLoadFront } from 'yaml-front-matter'
-
 import { baseurl } from '../config'
+import { fetchJSON } from './utils'
 
 // /////////////////////////////////////////////////////////////////////////////
 // Actions
@@ -25,8 +23,8 @@ export function receivePage (id, data, error = null) {
   return { type: RECEIVE_PAGE, id, data, error, receivedAt: Date.now() }
 }
 
-export function fetchPage (what, id) {
-  const key = `${what}-${id}`
+export function fetchPage (page) {
+  const key = page
   return async function (dispatch, getState) {
     const pageState = getState().staticPages[key]
     if (pageState && pageState.fetched && !pageState.error) {
@@ -36,16 +34,9 @@ export function fetchPage (what, id) {
     dispatch(requestPage(key))
 
     try {
-      const url = what === 'project'
-        ? `${baseurl}/assets/content/projects/${id}/index.md`
-        : `${baseurl}/assets/content/pages/${id}.md`
-      const response = await fetch(url)
-      if (response.status >= 400) throw new Error(response.statusText)
-
-      const content = await response.text()
-      const yaml = safeLoadFront(content)
-
-      return dispatch(receivePage(key, yaml))
+      const url = `${baseurl}/api/${page}.json`
+      const content = await fetchJSON(url)
+      return dispatch(receivePage(key, content))
     } catch (error) {
       console.log('error', error)
       return dispatch(receivePage(key, null, error))

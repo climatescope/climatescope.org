@@ -9,6 +9,7 @@ import store from './utils/store'
 import history from './utils/history'
 
 import Home from './views/home'
+import StaticPage from './views/static-page'
 import UhOh from './views/uhoh'
 
 // Root component. Used by the router.
@@ -17,6 +18,7 @@ const Root = () => (
     <Router history={history}>
       <Switch>
         <Route exact path='/' component={Home}/>
+        <Route exact path='/:page' component={StaticPage}/>
         <Route path='*' component={UhOh} />
       </Switch>
     </Router>

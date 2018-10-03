@@ -2,6 +2,7 @@
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { Link } from 'react-router-dom'
+
 import NavGlobalMenu from './nav-global-menu'
 
 import { environment, appTitle } from '../config'
@@ -14,7 +15,9 @@ export default class PageHeader extends React.PureComponent {
           <div id='site-headline'>
             <h1 id='site-title'><Link to='/' title='View homepage'><span>{appTitle}</span></Link></h1>
           </div>
-          <NavGlobalMenu />
+          <nav id='prime-nav' role='navigation'>
+            <NavGlobalMenu forHeader />
+          </nav>
         </div>
       </header>
     )

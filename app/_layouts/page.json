@@ -1,0 +1,5 @@
+{
+  "id": {{page.id | jsonify}},
+  "title": {{page.title | jsonify}},
+  "content": {{page.content | jsonify}}
+}

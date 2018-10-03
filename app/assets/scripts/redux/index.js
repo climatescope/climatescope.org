@@ -1,8 +1,10 @@
 'use strict'
 import { combineReducers } from 'redux'
 
+import staticPages from './static-page'
+
 export const reducers = {
-  main: () => ({})
+  staticPages
 }
 
 export default combineReducers(reducers)

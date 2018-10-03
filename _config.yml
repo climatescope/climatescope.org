@@ -10,3 +10,7 @@ kramdown:
 
 # SEO defaults:
 # Everything is handled through javascript. Check assets/scripts/config
+
+collections:
+  pages:
+    output: true
