@@ -53,7 +53,7 @@ input[type=submit] {
     display: none;
   }
   &[rel~="external"]:after {
-    @extend .collecticon-s-new-window;
+    @extend %collecticon-s-new-window;
     font-size: 1rem;
     opacity: 0.4;
     margin-left: 0.25rem;
@@ -186,13 +186,13 @@ input[type=submit] {
       @extend .visually-hidden;
     }
   }
-  &.go:after { @extend .collecticon-s-arr-right; }
-  &.back:before { @extend .collecticon-s-arr-left; }
-  &.all:after { @extend .collecticon-menu; }
-  &.download:before { @extend .collecticon-download; }
-  &.share:before { @extend .collecticon-share; }
-  &.restart:before { @extend .collecticon-refresh; }
-  &.play:after { @extend .collecticon-circle-play; }
+  &.go:after { @extend %collecticon-s-arr-right; }
+  &.back:before { @extend %collecticon-s-arr-left; }
+  &.all:after { @extend %collecticon-menu; }
+  &.download:before { @extend %collecticon-download; }
+  &.share:before { @extend %collecticon-share; }
+  &.restart:before { @extend %collecticon-refresh; }
+  &.play:after { @extend %collecticon-circle-play; }
   .badge {
     background-color: rgba($primary-color, 0.15);
   }

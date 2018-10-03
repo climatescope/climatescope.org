@@ -35,14 +35,14 @@
         margin-left: 0.25rem;
       }
       &.sort-none:after {
-        @extend .collecticon-sort;
+        @extend %collecticon-sort;
       }
       &.sort-asc:after {
-        @extend .collecticon-sort-asc;
+        @extend %collecticon-sort-asc;
         
       }
       &.sort-desc:after {
-        @extend .collecticon-sort-desc;
+        @extend %collecticon-sort-desc;
       }
     }
   }
@@ -81,7 +81,7 @@
     font-size: 0.875rem;
     line-height: 1.5rem;
     &:after {
-      @extend .collecticon-s-arr-down;
+      @extend %collecticon-s-arr-down;
       font-size: 1rem;
       margin-left: 0.125rem;
       @include opacity(0.6);
@@ -89,7 +89,7 @@
   }
 
   .open .expand-toggle:after {
-    @extend .collecticon-s-arr-up;
+    @extend %collecticon-s-arr-up;
   }
 
   tr.disabled {
@@ -178,7 +178,7 @@
       height: 1.5rem;
       text-align: center;
       &:before {
-        @extend .collecticon-circle-info;
+        @extend %collecticon-circle-info;
       }
       span {
         @extend .visually-hidden;

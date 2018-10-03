@@ -236,12 +236,12 @@ select.form__control:focus {
 }
 
 .switch-inner:before {
-  @extend .collecticon-lock;
+  @extend %collecticon-lock;
   padding-left: 0.5rem;
 }
 
 .switch-inner:after {
-  @extend .collecticon-unlock;
+  @extend %collecticon-unlock;
   padding-right: 0.5rem;
   text-align: right;
 }

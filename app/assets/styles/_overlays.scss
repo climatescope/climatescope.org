@@ -89,7 +89,7 @@ $tooltip-arr-size: 1rem;
 .tooltip-map.top {
   margin-top: -($tooltip-arr-size/2);
   .tooltip-inner:before {
-    @extend .collecticon-triangle-down;
+    @extend %collecticon-triangle-down;
     bottom: -0.625rem;
     left: 50%;
     margin-left: -($tooltip-arr-size/2);
@@ -101,7 +101,7 @@ $tooltip-arr-size: 1rem;
 .tooltip-map.right {
   margin-left: $tooltip-arr-size/2;
   .tooltip-inner:before {
-    @extend .collecticon-triangle-left;
+    @extend %collecticon-triangle-left;
     left: -0.625rem;
     top: 50%;
     margin-top: -($tooltip-arr-size/2);
@@ -113,7 +113,7 @@ $tooltip-arr-size: 1rem;
 .tooltip-map.bottom {
   margin-top: $tooltip-arr-size/2;
   .tooltip-inner:before {
-    @extend .collecticon-triangle-up;
+    @extend %collecticon-triangle-up;
     top: -0.625rem;
     left: 50%;
     margin-left: -($tooltip-arr-size/2);
@@ -125,7 +125,7 @@ $tooltip-arr-size: 1rem;
 .tooltip-map.left {
   margin-left: -($tooltip-arr-size/2);
   .tooltip-inner:before {
-    @extend .collecticon-triangle-right;
+    @extend %collecticon-triangle-right;
     right: -0.625rem;
     top: 50%;
     margin-top: -($tooltip-arr-size/2);
@@ -191,7 +191,7 @@ $tooltip-arr-size: 1rem;
       @extend .visually-hidden;
     }
     &:before {
-      @extend .collecticon-s-cancel;
+      @extend %collecticon-s-cancel;
     }
   }
 }
@@ -220,7 +220,7 @@ $tooltip-arr-size: 1rem;
 .dropdown-toggle {
   &.caret {
     &:after {
-      @extend .collecticon-s-arr-down;
+      @extend %collecticon-s-arr-down;
       @include opacity(0.4);
       font-size: 1rem;
       margin-left: 0.25rem;
@@ -262,7 +262,7 @@ $tooltip-arr-size: 1rem;
   }
 
   &::before {
-    @extend .collecticon-triangle-up;
+    @extend %collecticon-triangle-up;
     position: absolute;
     z-index: 15;
     top: -0.625rem;
@@ -326,10 +326,10 @@ $tooltip-arr-size: 1rem;
     }
   }
 
-  &.twitter:before { @extend .collecticon-twitter; }
-  &.facebook:before { @extend .collecticon-facebook; }
-  &.pdf:before { @extend .collecticon-file-pdf; }
-  &.source:before { @extend .collecticon-file-src-dat; }
+  &.twitter:before { @extend %collecticon-twitter; }
+  &.facebook:before { @extend %collecticon-facebook; }
+  &.pdf:before { @extend %collecticon-file-pdf; }
+  &.source:before { @extend %collecticon-file-src-dat; }
 }
 
 .dropdown-menu > li > a:hover,

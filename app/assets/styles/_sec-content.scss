@@ -40,7 +40,7 @@
     padding: $global-spacing ($global-spacing * 2) $global-spacing 0;
 
     &::after {
-      @extend .collecticon-s-arr-right;
+      @extend %collecticon-s-arr-right;
       position: absolute;
       top: 50%;
       transform: translate(0, -50%);

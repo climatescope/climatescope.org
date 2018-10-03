@@ -37,7 +37,7 @@ a {
   transition-timing-function: ease;
   transition-delay: 0;
   &[rel~="external"]:after {
-    @extend .collecticon-s-new-window;
+    @extend %collecticon-s-new-window;
     font-size: 1rem;
     @include opacity(0.4);
     margin-left: 0.25rem;
@@ -106,8 +106,8 @@ a:active{
       line-height: 1;
     }
   }
-  &.download-pdf:after { @extend .collecticon-file-pdf; }
-  &.download-data:after { @extend .collecticon-file-src-dat; }
+  &.download-pdf:after { @extend %collecticon-file-pdf; }
+  &.download-data:after { @extend %collecticon-file-src-dat; }
 }
 
 .well-l {
@@ -156,7 +156,7 @@ a:active{
   font-style: normal;
   border-radius: $global-rounded;
   &:before {
-    @extend .collecticon-power;
+    @extend %collecticon-power;
     font-size: 1rem;
   }
   span {
@@ -548,7 +548,7 @@ a:active{
     display: inline-block;
     color: tint($primary-color, 40%);
     &:before {
-      @extend .collecticon-refresh;
+      @extend %collecticon-refresh;
     }
     span {
       @extend .visually-hidden;

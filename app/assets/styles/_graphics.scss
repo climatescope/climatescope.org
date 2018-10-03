@@ -658,12 +658,12 @@ $circle-gutter: 0.5rem;
       color: tint($primary-color, 38%);
     }
 
-    &.biofuels .card-title:after { @extend .collecticon-leaf; @extend .card-icon }
-    &.small-hydro .card-title:after { @extend .collecticon-drop; @extend .card-icon }
-    &.solar .card-title:after { @extend .collecticon-sun; @extend .card-icon}
-    &.geothermal .card-title:after { @extend .collecticon-flame; @extend .card-icon}
-    &.biomass .card-title:after { @extend .collecticon-trashcan_2; @extend .card-icon}
-    &.wind .card-title:after { @extend .collecticon-wind; @extend .card-icon}
+    &.biofuels .card-title:after { @extend %collecticon-leaf; @extend .card-icon }
+    &.small-hydro .card-title:after { @extend %collecticon-drop; @extend .card-icon }
+    &.solar .card-title:after { @extend %collecticon-sun; @extend .card-icon}
+    &.geothermal .card-title:after { @extend %collecticon-flame; @extend .card-icon}
+    &.biomass .card-title:after { @extend %collecticon-trashcan_2; @extend .card-icon}
+    &.wind .card-title:after { @extend %collecticon-wind; @extend .card-icon}
 
     .available-list,
     .non-available-list {

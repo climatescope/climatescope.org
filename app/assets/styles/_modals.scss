@@ -131,7 +131,7 @@
       @extend .visually-hidden;
     }
     &:before {
-      @extend .collecticon-s-cancel;
+      @extend %collecticon-s-cancel;
     }
   }
   &__body {

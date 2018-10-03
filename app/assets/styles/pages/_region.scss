@@ -15,7 +15,7 @@
   }
 
   &::after {
-    @extend .collecticon-s-arr-down;
+    @extend %collecticon-s-arr-down;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);

@@ -56,12 +56,19 @@
 @import "map";
 @import "animations";
 
+/* Global
+   ========================================================================== */
+
+@import "global/drops";
+
 // Climatescope's pages
 @import "pages/homepage";
 @import "pages/results";
 @import "pages/region";
 @import "pages/topic";
 @import "pages/updates";
+
+
 
 // Climatescope's blocks
 @import "sec-content";
