@@ -1,24 +1,26 @@
 'use strict'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import App from './app'
 
 export default class UhOh extends React.Component {
   render () {
     return (
-      <App className='page--uhoh'>
-        <article className='inpage inpage--uhoh'>
-          <header className='inpage__header'>
-            <div className='inner'>
-              <div className='inpage__headline'>
-                <h1 className='inpage__title'>Page not found</h1>
+      <App>
+        <article className='layout--page'>
+          <header className='layout--page__header'>
+            <div className='row--contained'>
+              <div className='layout--page__heading'>
+                <h1 className='layout--page__title'>Page not found</h1>
               </div>
             </div>
           </header>
-          <div className='inpage__body'>
-            <div className='inner'>
-              <div className='prose'>
-                <p>The requested page does not exist or may have been removed.</p>
+          <div className='layout--page__body'>
+            <div className='row--contained'>
+              <div className='col--main prose-copy'>
+                <p>We were not able to find the page you're looking for.</p>
+                <p><Link className='bttn bttn-cta go' to='/' title='Go back to Global Index'>Take me home</Link></p>
               </div>
             </div>
           </div>
