@@ -260,7 +260,8 @@ gulp.task('html', function () {
     .pipe(cacheUseref())
     // Do not compress comparisons, to avoid MapboxGLJS minification issue
     // https://github.com/mapbox/mapbox-gl-js/issues/4359#issuecomment-286277540
-    .pipe($.if('*.js', $.uglify({ compress: { comparisons: false } })))
+    // https://github.com/mishoo/UglifyJS2/issues/1609 -> Just until gulp-uglify updates
+    .pipe($.if('*.js', $.uglify({ compress: { comparisons: false, collapse_vars: false } })))
     .pipe($.if('*.css', $.csso()))
     .pipe($.if(/\.(css|js)$/, $.rev()))
     .pipe($.revRewrite({ prefix: jkConf.baseurl }))
