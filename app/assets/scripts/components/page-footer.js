@@ -44,7 +44,6 @@ export default class PageFooter extends React.PureComponent {
           <section className='ftr-supporters'>
             <h2 className='ftr-title'>Supporters</h2>
             <ul className='logo-list'>
-              <li><a className='logo-ukaid' href='https://www.gov.uk/government/organisations/department-for-international-development' title='Visit UK Aid' target='_blank'><img width='118' height='128' alt='UK Aid logo' src='/assets/graphics/layout/logo-ukaid-flat-pos.svg' /><span>UK Aid</span></a></li>
               <li><a className='logo-bnef' href='http://www.newenergyfinance.com/' title='Visit Bloomberg' target='_blank'><img width='480' height='110' alt='Bloomberg New Energy Finance logo' src='/assets/graphics/layout/logo-bnef-flat-pos.svg' /><span>Bloomberg</span></a></li>
             </ul>
           </section>

@@ -74,6 +74,7 @@ All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eo
   <li><a class="logo-fomin" href="http://www.fomin.org/" title="" target="_blank"><img width="208" height="128" alt="" src="{{ site.baseurl }}/assets/graphics/layout/logo-fomin-en-flat-pos.svg"><span>Multilateral Investment Fund</span></a></li>
   <li><a class="logo-powerafrica" href="http://www.usaid.gov/powerafrica" title="Visit Power Africa" target="_blank"><img width="288" height="128" alt="Power Africa logo" src="{{ site.baseurl }}/assets/graphics/layout/logo-powerafrica-flat-pos.svg"><span>Power Africa</span></a></li>
   <li><a class="logo-usaid" href="http://www.usaid.gov" title="Visit USAID"  target="_blank"><img width="288" height="128" alt="USAID logo" src="{{ site.baseurl }}/assets/graphics/layout/logo-usaid-flat-pos.svg" /><span>USAID</span></a></li>
+  <li><a className='logo-ukaid' href='https://www.gov.uk/government/organisations/department-for-international-development' title='Visit UK Aid' target='_blank'><img width='118' height='128' alt='UK Aid logo' src='{{ site.baseurl }}/assets/graphics/layout/logo-ukaid-flat-pos.svg' /><span>UK Aid</span></a></li>
 </ul>
 
 ### Developed by
