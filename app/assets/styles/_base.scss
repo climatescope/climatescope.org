@@ -350,7 +350,7 @@ a:active{
   }
 
   .site-header--global & {
-    @include span(12/12);
+    @include column(12/12);
 
     @media #{$xlarge-up} {
       @include column(4/12);
