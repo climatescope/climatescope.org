@@ -251,9 +251,11 @@ gulp.task('styles', function () {
 
 // After being rendered by jekyll process the html files. (merge css files, etc)
 gulp.task('html', function () {
-  const prodConf = YAML.load('_config.yml')
-  const stageConf = YAML.load('_config-stage.yml')
-  const jkConf = defaultsdeep({}, stageConf, prodConf)
+  let jkConf = YAML.load('_config.yml')
+  if (process.env.DS_ENV === 'staging') {
+    const stageConf = YAML.load('_config-stage.yml')
+    jkConf = defaultsdeep({}, stageConf, jkConf)
+  }
 
   return gulp.src('_site/**/*.html')
     .pipe($.useref({ searchPath: ['.tmp', 'app', '.'] }))

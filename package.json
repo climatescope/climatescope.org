@@ -19,7 +19,7 @@
     "install": "bundle install --path bundle/cache",
     "postinstall": "[ -f app/assets/scripts/config/local.js ] || echo \"'use strict';\n\nexport default {\n  environment: 'development'\n};\" > app/assets/scripts/config/local.js && [ -f _config-dev.yml ] || echo 'baseurl: http://localhost:3000' > _config-dev.yml",
     "serve": "gulp collecticons && DS_ENV=development NODE_ENV=development gulp serve",
-    "build-stage": "([ ! -z $PATH ] && echo \"baseurl: $DEPLOY_URL\" >> _config-stage.yml || true) && DS_ENV=staging NODE_ENV=staging node --max-old-space-size=4096 ./node_modules/gulp/bin/gulp.js",
+    "build-stage": "DS_ENV=staging NODE_ENV=staging node --max-old-space-size=4096 ./node_modules/gulp/bin/gulp.js",
     "build": "DS_ENV=production NODE_ENV=production node --max-old-space-size=4096 ./node_modules/gulp/bin/gulp.js",
     "lint": "eslint app/assets/scripts/ --ext .js",
     "test": "echo 'No tests' && exit 0"

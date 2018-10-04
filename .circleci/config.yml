@@ -7,7 +7,8 @@ jobs:
     working_directory: ~/repo
 
     environment:
-      - PRODUCTION_BRANCH: v2018
+      - STAGING_BRANCH: v2018
+      - PRODUCTION_BRANCH: master
 
     steps:
       - checkout
@@ -33,6 +34,8 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
               yarn build
+            elif [ "${CIRCLE_BRANCH}" == "${STAGING_BRANCH}" ]; then
+              yarn build-stage
             else
               echo "Skip building site"
             fi
@@ -40,9 +43,9 @@ jobs:
       - run:
           name: Deploy to Surge
           command: |
-            if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
-              cp ./dist/index.html ./dist/200.html
-              ./node_modules/surge/lib/cli.js --project ./dist --domain climatescope.surge.sh
+            if [ "${CIRCLE_BRANCH}" == "${STAGING_BRANCH}" ]; then
+              cp ./_site/index.html ./_site/200.html
+              ./node_modules/surge/lib/cli.js --project ./_site --domain climatescope.surge.sh
             else
               echo "Not the branch you're looking for, skipping deploy"
             fi

@@ -1,4 +1,1 @@
-# Build previews are done with netlify.
-# On yarn build the baseurl is appended to this file fron the `DEPLOY_URL`
-# environment variables.
-# baseurl: DEPLOY_URL
+baseurl: http://climatescope.surge.sh
