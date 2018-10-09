@@ -37,3 +37,65 @@ export function shuffleArray ([...arr]) {
   }
   return arr
 }
+
+/**
+ * Converts an object to array.
+ *
+ * @param {object} obj Object to convert to array
+ */
+export function objectToArray (obj) {
+  return Object.keys(obj).map(k => obj[k])
+}
+
+/**
+ * Initializes an array containing the numbers in the specified range where
+ * start and end are inclusive with their common difference step.
+ *
+ * @param {number} end
+ * @param {number} start Default value of 0
+ * @param {number} step Default value of 0
+ *
+ * @returns {array}
+ */
+export function initializeArrayWithRange (end, start = 0, step = 1) {
+  return Array.from({ length: Math.ceil((end - start + 1) / step) }, (v, i) => i * step + start)
+}
+
+/**
+ * Wraps the api result with helpful functions.
+ * To be used in the state selector.
+ *
+ * @param {object} stateData Object as returned from an api request. Expected to
+ *                           be in the following format:
+ *                           {
+ *                             fetched: bool,
+ *                             fetching: bool,
+ *                             data: object,
+ *                             error: null | error
+ *                           }
+ *
+ * @returns {object}
+ * {
+ *   raw(): retuns the data as is.
+ *   isReady(): Whether or not the fetching finished and was fetched.
+ *   hasError(): Whether the resquest finished with an error.
+ *   getData(): Returs the data. If the data has a results list will return that
+ *   getMeta(): If there's a meta object it will be returned
+ *
+ * As backward compatibility all data properties are accessible directly.
+ * }
+ */
+export function wrapApiResult (stateData) {
+  const { fetched, fetching, data, error } = stateData
+  const ready = fetched && !fetching
+  return {
+    raw: () => stateData,
+    isReady: () => ready,
+    hasError: () => ready && !!error,
+    getData: (def = {}) => ready ? (data.results || data) : def,
+    getMeta: (def = {}) => ready ? data.meta : def,
+
+    // As backward compatibility
+    ...stateData
+  }
+}

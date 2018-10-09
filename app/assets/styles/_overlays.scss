@@ -390,3 +390,19 @@ $tooltip-arr-size: 1rem;
   color: #777777;
   white-space: nowrap;
 }
+
+.tootltip-table {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: $brand-font-family;
+  color: $base-color;
+
+  max-width: 20rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: $global-radius;
+  box-shadow: 4px 4px 0 rgba($primary-color, 0.05);
+  background-clip: padding-box;
+}
