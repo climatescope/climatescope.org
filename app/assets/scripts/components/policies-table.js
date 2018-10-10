@@ -7,6 +7,7 @@ import c from 'classnames'
 
 import { environment } from '../config'
 import { initializeArrayWithRange } from '../utils/utils'
+import { LoadingSkeleton } from '../components/loading-skeleton'
 
 export default class PoliciesTable extends React.PureComponent {
   componentDidUpdate () {
@@ -68,10 +69,10 @@ export default class PoliciesTable extends React.PureComponent {
   renderLoadingRows () {
     return initializeArrayWithRange(10).map(v => (
       <tr key={v}>
-        <td className='cell--loading'><span></span></td>
-        <td className='cell--loading'><span></span></td>
-        <td className='cell--loading'><span></span></td>
-        <td className='cell--loading'><span></span></td>
+        <td><LoadingSkeleton /></td>
+        <td><LoadingSkeleton /></td>
+        <td><LoadingSkeleton /></td>
+        <td><LoadingSkeleton /></td>
       </tr>
     ))
   }

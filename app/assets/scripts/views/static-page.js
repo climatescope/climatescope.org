@@ -5,11 +5,12 @@ import { connect } from 'react-redux'
 
 import { environment } from '../config'
 import { fetchPage } from '../redux/static-page'
-import { getFromState } from '../utils/utils'
+import { getFromState, wrapApiResult } from '../utils/utils'
 
 import App from './app'
 import UhOh from './uhoh'
 import DangerouslySetScriptContent from '../components/dangerous-script-content'
+import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-skeleton'
 // import Share from '../components/share'
 
 class StaticPage extends React.Component {
@@ -24,8 +25,8 @@ class StaticPage extends React.Component {
   }
 
   render () {
-    const { error, data, fetched, receivedAt } = this.props.page
-    if (error) {
+    const { hasError, data, isReady, receivedAt } = this.props.page
+    if (hasError()) {
       return <UhOh />
     }
 
@@ -35,7 +36,9 @@ class StaticPage extends React.Component {
           <header className='layout--page__header'>
             <div className='row--contained'>
               <div className='layout--page__heading'>
-                <h1 className='layout--page__title'>{ data.title }</h1>
+                <h1 className='layout--page__title'>
+                  {isReady() ? data.title : <LoadingSkeleton width={2 / 3} size='large' type='heading' inline />}
+                </h1>
               </div>
               <div className='layout--page__tools'>
                 {/* {% include actions_menu.html download_exc=true %} */}
@@ -46,7 +49,17 @@ class StaticPage extends React.Component {
           <div className='layout--page__body'>
             <div className='row--contained'>
               <div className='col--main prose-copy'>
-                {fetched && <DangerouslySetScriptContent key={receivedAt} dangerousContent={data.content} />}
+                {isReady() ? (
+                  <DangerouslySetScriptContent key={receivedAt} dangerousContent={data.content} />
+                ) : (
+                  <LoadingSkeletonGroup>
+                    <LoadingSkeleton width={1 / 3} />
+                    <LoadingSkeleton />
+                    <LoadingSkeleton />
+                    <LoadingSkeleton />
+                    <LoadingSkeleton width={3 / 4} />
+                  </LoadingSkeletonGroup>
+                )}
               </div>
             </div>
           </div>
@@ -67,7 +80,7 @@ if (environment !== 'production') {
 
 function mapStateToProps (state, props) {
   return {
-    page: getFromState(state.staticPages, props.match.params.page)
+    page: wrapApiResult(getFromState(state.staticPages, props.match.params.page))
   }
 }
 
