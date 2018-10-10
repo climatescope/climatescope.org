@@ -191,7 +191,7 @@ class Download extends React.Component {
                   </thead>
                   <tbody>
                     {downloadSections.map(section => (
-                      <tr>
+                      <tr key={section.sectionUrl}>
                         <td className="cell-section"><Link to={section.sectionUrl} title={`View ${section.sectionUrl} page`}>{section.sectionName}</Link></td>
                         <td className="cell-download">
                           <a href={section.downloadUrl} title={section.downloadTitle} className="bttn bttn-s bttn-success download data-download">{section.downloadName}</a>
