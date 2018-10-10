@@ -3,7 +3,7 @@ import { combineReducers } from 'redux'
 import qs from 'qs'
 
 import { policyDbUrl } from '../config'
-import { fetchDispatchCacheFactory } from './utils'
+import { fetchDispatchCacheFactory, baseAPIReducer } from './utils'
 import { objectToArray } from '../utils/utils'
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -52,33 +52,7 @@ const filtersReducerInitialState = {
 }
 
 function filtersReducer (state = filtersReducerInitialState, action) {
-  switch (action.type) {
-    case INVALIDATE_POLICY_FILTERS:
-      return state
-    case REQUEST_POLICY_FILTERS:
-      return {
-        fetching: true,
-        fetched: false,
-        data: {}
-      }
-    case RECEIVE_POLICY_FILTERS:
-      let st = {
-        fetching: false,
-        fetched: true,
-        receivedAt: action.receivedAt,
-        data: {},
-        error: null
-      }
-
-      if (action.error) {
-        st.error = action.error
-      } else {
-        st.data = action.data
-      }
-
-      return st
-  }
-  return state
+  return baseAPIReducer(state, action, 'POLICY_FILTERS')
 }
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -135,33 +109,7 @@ const policiesReducerInitialState = {
 }
 
 function policiesReducer (state = policiesReducerInitialState, action) {
-  switch (action.type) {
-    case INVALIDATE_POLICIES:
-      return state
-    case REQUEST_POLICIES:
-      return {
-        fetching: true,
-        fetched: false,
-        data: {}
-      }
-    case RECEIVE_POLICIES:
-      let st = {
-        fetching: false,
-        fetched: true,
-        receivedAt: action.receivedAt,
-        data: {},
-        error: null
-      }
-
-      if (action.error) {
-        st.error = action.error
-      } else {
-        st.data = action.data
-      }
-
-      return st
-  }
-  return state
+  return baseAPIReducer(state, action, 'POLICIES')
 }
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -207,38 +155,10 @@ const initialState = {
 }
 
 function policyReducer (state = initialState, action) {
-  switch (action.type) {
-    case INVALIDATE_POLICY:
-      const { [action.id]: _, ...rest } = state
-      return rest
-    case REQUEST_POLICY:
-      return {
-        ...state,
-        [action.id]: {
-          fetching: true,
-          fetched: false,
-          data: {}
-        }
-      }
-    case RECEIVE_POLICY:
-      let st = {
-        fetching: false,
-        fetched: true,
-        receivedAt: action.receivedAt,
-        data: {},
-        error: null
-      }
-
-      if (action.error) {
-        st.error = action.error
-      } else {
-        st.data = action.data
-      }
-
-      state = { ...state, [action.id]: st }
-      break
+  return {
+    ...state,
+    [action.id]: baseAPIReducer(state, action, 'POLICY')
   }
-  return state
 }
 
 // /////////////////////////////////////////////////////////////////////////////

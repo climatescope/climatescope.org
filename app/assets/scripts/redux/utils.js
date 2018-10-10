@@ -31,3 +31,33 @@ export function fetchDispatchCacheFactory ({ statePath, url, requestFn, receiveF
     }
   }
 }
+
+export function baseAPIReducer (state, action, actionName) {
+  switch (action.type) {
+    case `INVALIDATE_${actionName}`:
+      return state
+    case `REQUEST_${actionName}`:
+      return {
+        fetching: true,
+        fetched: false,
+        data: {}
+      }
+    case `RECEIVE_${actionName}`:
+      let st = {
+        fetching: false,
+        fetched: true,
+        receivedAt: action.receivedAt,
+        data: {},
+        error: null
+      }
+
+      if (action.error) {
+        st.error = action.error
+      } else {
+        st.data = action.data
+      }
+
+      return st
+  }
+  return state
+}

@@ -1,6 +1,6 @@
 'use script'
 import { baseurl } from '../config'
-import { fetchDispatchCacheFactory } from './utils'
+import { fetchDispatchCacheFactory, baseAPIReducer } from './utils'
 
 // /////////////////////////////////////////////////////////////////////////////
 // Actions
@@ -45,36 +45,8 @@ const initialState = {
 }
 
 export default function reducer (state = initialState, action) {
-  switch (action.type) {
-    case INVALIDATE_PAGE:
-      const { [action.id]: _, ...rest } = state
-      return rest
-    case REQUEST_PAGE:
-      return {
-        ...state,
-        [action.id]: {
-          fetching: true,
-          fetched: false,
-          data: {}
-        }
-      }
-    case RECEIVE_PAGE:
-      let st = {
-        fetching: false,
-        fetched: true,
-        receivedAt: action.receivedAt,
-        data: {},
-        error: null
-      }
-
-      if (action.error) {
-        st.error = action.error
-      } else {
-        st.data = action.data
-      }
-
-      state = { ...state, [action.id]: st }
-      break
+  return {
+    ...state,
+    [action.id]: baseAPIReducer(state, action, 'PAGE')
   }
-  return state
 }
