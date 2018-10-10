@@ -1,6 +1,6 @@
 'use script'
 import { baseurl } from '../config'
-import { fetchJSON } from './utils'
+import { fetchDispatchCacheFactory } from './utils'
 
 // /////////////////////////////////////////////////////////////////////////////
 // Actions
@@ -24,24 +24,12 @@ export function receivePage (id, data, error = null) {
 }
 
 export function fetchPage (page) {
-  const key = page
-  return async function (dispatch, getState) {
-    const pageState = getState().staticPages[key]
-    if (pageState && pageState.fetched && !pageState.error) {
-      return dispatch(receivePage(key, pageState.data))
-    }
-
-    dispatch(requestPage(key))
-
-    try {
-      const url = `${baseurl}/api/${page}.json`
-      const content = await fetchJSON(url)
-      return dispatch(receivePage(key, content))
-    } catch (error) {
-      console.log('error', error)
-      return dispatch(receivePage(key, null, error))
-    }
-  }
+  return fetchDispatchCacheFactory({
+    statePath: ['staticPages', page],
+    url: `${baseurl}/api/${page}.json`,
+    requestFn: requestPage.bind(this, page),
+    receiveFn: receivePage.bind(this, page)
+  })
 }
 
 // /////////////////////////////////////////////////////////////////////////////

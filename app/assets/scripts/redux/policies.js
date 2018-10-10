@@ -1,9 +1,9 @@
 'use script'
 import { combineReducers } from 'redux'
-import qs from 'qs';
+import qs from 'qs'
 
 import { policyDbUrl } from '../config'
-import { fetchJSON } from './utils'
+import { fetchDispatchCacheFactory } from './utils'
 import { objectToArray } from '../utils/utils'
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -27,28 +27,17 @@ export function receivePolicyFilters (data, error = null) {
 }
 
 export function fetchPolicyFilters () {
-  return async function (dispatch, getState) {
-    const dataState = getState().policies.filters
-    if (dataState && dataState.fetched && !dataState.error) {
-      return dispatch(receivePolicyFilters(dataState.data))
-    }
-
-    dispatch(requestPolicyFilters())
-
-    try {
-      const url = `${policyDbUrl}/policy/filter`
-      const response = await fetchJSON(url)
-      const content = {
-        country: objectToArray(response.country),
-        status: objectToArray(response.status),
-        mechanism: objectToArray(response.mechanism)
-      }
-      return dispatch(receivePolicyFilters(content))
-    } catch (error) {
-      console.log('error', error)
-      return dispatch(receivePolicyFilters(null, error))
-    }
-  }
+  return fetchDispatchCacheFactory({
+    statePath: 'policies.filters',
+    url: `${policyDbUrl}/policy/filter`,
+    requestFn: requestPolicyFilters,
+    receiveFn: receivePolicyFilters,
+    mutator: (response) => ({
+      country: objectToArray(response.country),
+      status: objectToArray(response.status),
+      mechanism: objectToArray(response.mechanism)
+    })
+  })
 }
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -113,37 +102,25 @@ export function receivePolicies (data, error = null) {
 }
 
 export function fetchPolicies (filters) {
-  return async function (dispatch, getState) {
-    const dataState = getState().policies.policiesList
-    if (dataState && dataState.fetched && !dataState.error) {
-      return dispatch(receivePolicies(dataState.data))
-    }
-
-    dispatch(requestPolicies())
-
-    let qsFilters = {
-      limit: 50,
-      offset: 0,
-      ...filters
-    }
-
-    try {
-      const url = `${policyDbUrl}/policy?${qs.stringify(qsFilters)}`
-      const response = await fetchJSON(url)
-      const content = {
-        meta: {
-          total: response.metaData.totalResults,
-          page: filters.offset / filters.limit + 1,
-          limit: filters.limit
-        },
-        results: response.listData
-      }
-      return dispatch(receivePolicies(content))
-    } catch (error) {
-      console.log('error', error)
-      return dispatch(receivePolicies(null, error))
-    }
+  const qsFilters = {
+    limit: 50,
+    offset: 0,
+    ...filters
   }
+  return fetchDispatchCacheFactory({
+    statePath: 'policies.policiesList',
+    url: `${policyDbUrl}/policy?${qs.stringify(qsFilters)}`,
+    requestFn: requestPolicies,
+    receiveFn: receivePolicies,
+    mutator: (response) => ({
+      meta: {
+        total: response.metaData.totalResults,
+        page: qsFilters.offset / qsFilters.limit + 1,
+        limit: qsFilters.limit
+      },
+      results: response.listData
+    })
+  })
 }
 
 // /////////////////////////////////////////////////////////////////////////////
