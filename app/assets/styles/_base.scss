@@ -1667,3 +1667,30 @@ a.entry__contents {
   text-align: center;
   margin-bottom: 1rem;
 }
+
+
+/* Loadings */
+
+.lsk__group {
+  margin-bottom: 2rem;
+
+  & > .lsk__item {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.lsk__item {
+  display: block;
+  background: tint($primary-color, 90%);
+  height: 1rem;
+  width: 100%;
+  animation: pulse 0.8s ease 0s infinite alternate;
+}
+
+.lsk__item--large {
+  height: 2.25rem;
+}
+
+.lsk__item--heading {
+  background: tint($primary-color, 80%);
+}

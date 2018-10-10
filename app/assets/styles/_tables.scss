@@ -205,14 +205,6 @@
     top: 0.25rem;
     vertical-align: super;
   }
-
-  .cell--loading span {
-    display: block;
-    background: tint($primary-color, 90%);
-    height: 1rem;
-    width: 100%;
-    animation: pulse 0.8s ease 0s infinite alternate;
-  }
 }
 
 .power-chart-row {
@@ -221,20 +213,4 @@
 
 .param-4 .param-details__table {
   margin-top: 0;
-}
-
-/* Pulse
-   ========================================================================== */
-
-/**
- * Usage: animation: pulse 0.8s ease 0s infinite alternate;
- */
-
- @keyframes pulse {
-  0% {
-    opacity: 0.24;
-  }
-  100% {
-    opacity: 1;
-  }
 }
