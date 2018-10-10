@@ -12,6 +12,7 @@ import Home from './views/home'
 import StaticPage from './views/static-page'
 import Download from './views/download'
 import Policies from './views/policies-hub'
+import Policy from './views/policies-page'
 import UhOh from './views/uhoh'
 
 // Root component. Used by the router.
@@ -21,6 +22,7 @@ const Root = () => (
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route exact path='/download' component={Download}/>
+        <Route exact path='/policies/:policyId' component={Policy}/>
         <Route exact path='/policies' component={Policies}/>
         <Route exact path='/:page' component={StaticPage}/>
         <Route path='*' component={UhOh} />

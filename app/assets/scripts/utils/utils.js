@@ -1,4 +1,5 @@
 'use strict'
+import React from 'react'
 import get from 'lodash.get'
 
 /**
@@ -98,4 +99,19 @@ export function wrapApiResult (stateData) {
     // As backward compatibility
     ...stateData
   }
+}
+
+export function reactNl2Br (str) {
+  const newlineRegex = /(\r\n|\r|\n)/g
+  if (typeof str === 'number') {
+    return str
+  } else if (typeof str !== 'string') {
+    return ''
+  }
+
+  return str.split(newlineRegex).map((line, index) => (
+    line.match(newlineRegex)
+      ? React.createElement('br', { key: index })
+      : line
+  ))
 }

@@ -163,11 +163,90 @@ function policiesReducer (state = policiesReducerInitialState, action) {
   }
   return state
 }
+
+// /////////////////////////////////////////////////////////////////////////////
+// Actions
+// /////////////////////////////////////////////////////////////////////////////
+
+export const REQUEST_POLICY = 'REQUEST_POLICY'
+export const RECEIVE_POLICY = 'RECEIVE_POLICY'
+export const INVALIDATE_POLICY = 'INVALIDATE_POLICY'
+
+export function invalidatePolicy (id) {
+  return { type: INVALIDATE_POLICY, id }
+}
+
+export function requestPolicy (id) {
+  return { type: REQUEST_POLICY, id }
+}
+
+export function receivePolicy (id, data, error = null) {
+  return { type: RECEIVE_POLICY, id, data, error, receivedAt: Date.now() }
+}
+
+export function fetchPolicy (policyId) {
+  return fetchDispatchCacheFactory({
+    statePath: ['policies', 'individualPolicies', policyId],
+    url: `${policyDbUrl}/policy/${policyId}`,
+    requestFn: requestPolicy.bind(this, policyId),
+    receiveFn: receivePolicy.bind(this, policyId)
+  })
+}
+
+// /////////////////////////////////////////////////////////////////////////////
+// Reducer
+// /////////////////////////////////////////////////////////////////////////////
+
+const initialState = {
+  // policyId: {
+  //   fetching: false,
+  //   fetched: false,
+  //   error: null,
+  //   data: {}
+  // }
+}
+
+function policyReducer (state = initialState, action) {
+  switch (action.type) {
+    case INVALIDATE_POLICY:
+      const { [action.id]: _, ...rest } = state
+      return rest
+    case REQUEST_POLICY:
+      return {
+        ...state,
+        [action.id]: {
+          fetching: true,
+          fetched: false,
+          data: {}
+        }
+      }
+    case RECEIVE_POLICY:
+      let st = {
+        fetching: false,
+        fetched: true,
+        receivedAt: action.receivedAt,
+        data: {},
+        error: null
+      }
+
+      if (action.error) {
+        st.error = action.error
+      } else {
+        st.data = action.data
+      }
+
+      state = { ...state, [action.id]: st }
+      break
+  }
+  return state
+}
+
 // /////////////////////////////////////////////////////////////////////////////
 // Combine reducers and export
 // /////////////////////////////////////////////////////////////////////////////
 
 export default combineReducers({
   filters: filtersReducer,
-  list: policiesReducer
+  list: policiesReducer,
+  individualPolicies: policyReducer
 })
