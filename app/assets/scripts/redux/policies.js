@@ -155,10 +155,7 @@ const initialState = {
 }
 
 function policyReducer (state = initialState, action) {
-  return {
-    ...state,
-    [action.id]: baseAPIReducer(state, action, 'POLICY')
-  }
+  return baseAPIReducer(state, action, 'POLICY')
 }
 
 // /////////////////////////////////////////////////////////////////////////////

@@ -1,6 +1,13 @@
 'use script'
 import get from 'lodash.get'
 
+/**
+ * Performs a request to the given url returning the response in json format
+ * or throwing an error.
+ *
+ * @param {string} url Url to query
+ * @param {object} options Options for fecth
+ */
 export async function fetchJSON (url, options) {
   try {
     const response = await fetch(url, options)
@@ -12,6 +19,18 @@ export async function fetchJSON (url, options) {
   }
 }
 
+/**
+ * Performs a query to the given url dispatching the appropriate actions.
+ * If there's data in the state, that is used instead.
+ *
+ * @param {object} options Options.
+ * @param {string} options.statePath Path to where data is on the state.
+ * @param {string} options.url Url to query.
+ * @param {func} options.requestFn Request action to dispatch.
+ * @param {func} options.receiveFn Receive action to dispatch.
+ * @param {func} options.mutator Function to change the response before sending
+ *                               it to the receive function.
+ */
 export function fetchDispatchCacheFactory ({ statePath, url, requestFn, receiveFn, mutator }) {
   mutator = mutator || (v => v)
   return async function (dispatch, getState) {
@@ -32,7 +51,19 @@ export function fetchDispatchCacheFactory ({ statePath, url, requestFn, receiveF
   }
 }
 
-export function baseAPIReducer (state, action, actionName) {
+/**
+ * Base reducer for an api request.
+ *
+ * Uses the following actions:
+ * - INVALIDATE_<actionName>
+ * - REQUEST_<actionName>
+ * - RECEIVE_<actionName>
+ *
+ * @param {object} state The state.
+ * @param {object} action The action.
+ * @param {string} actionName The action name to use as suffix
+ */
+function APIReducer (state, action, actionName) {
   switch (action.type) {
     case `INVALIDATE_${actionName}`:
       return state
@@ -60,4 +91,24 @@ export function baseAPIReducer (state, action, actionName) {
       return st
   }
   return state
+}
+
+/**
+ * Base reducer for an api request, taking into account the action.id
+ * If it exists it will store in the state under that path. Allows for
+ * page caching.
+ *
+ * @see APIReducer()
+ *
+ * @param {object} state The state.
+ * @param {object} action The action.
+ * @param {string} actionName The action name to use as suffix
+ */
+export function baseAPIReducer (state, action, actionName) {
+  return typeof action.id === 'undefined'
+    ? APIReducer(state, action, actionName)
+    : {
+      ...state,
+      [action.id]: APIReducer(state, action, actionName)
+    }
 }

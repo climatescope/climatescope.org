@@ -45,8 +45,5 @@ const initialState = {
 }
 
 export default function reducer (state = initialState, action) {
-  return {
-    ...state,
-    [action.id]: baseAPIReducer(state, action, 'PAGE')
-  }
+  return baseAPIReducer(state, action, 'PAGE')
 }
