@@ -9,9 +9,68 @@ import { environment } from '../config'
 import { fetchPage } from '../redux/static-page'
 
 import App from './app'
+import { SliderControlGroup } from '../components/slider-controls'
 // import Share from '../components/share'
 
 class Results extends React.Component {
+  constructor (props) {
+    super(props)
+
+    // Bindings
+    this.onWeightsResetClick = this.onWeightsResetClick.bind(this)
+    this.onSliderGroupChange = this.onSliderGroupChange.bind(this)
+
+    this.sliders = [
+      {
+        id: 'enabling-framework',
+        name: 'Enabling framework',
+        startingValue: 40
+      },
+      {
+        id: 'financing',
+        name: 'Financing & Investment',
+        startingValue: 30
+      },
+      {
+        id: 'val-chains',
+        name: 'Value Chains',
+        startingValue: 15
+      },
+      {
+        id: 'ghg',
+        name: 'GHG Management',
+        startingValue: 15
+      }
+    ]
+
+    this.state = {
+      sliders: this.getInitialSliderState()
+    }
+  }
+
+  getInitialSliderState () {
+    return this.sliders.reduce((acc, v) => ({
+      ...acc,
+      [v.id]: {
+        value: v.startingValue,
+        locked: false
+      }
+    }), {})
+  }
+
+  onWeightsResetClick (e) {
+    e.preventDefault()
+    this.setState({
+      sliders: this.getInitialSliderState()
+    })
+  }
+
+  onSliderGroupChange (sliderValues) {
+    this.setState({
+      sliders: sliderValues
+    })
+  }
+
   render () {
     return (
       <App>
@@ -27,6 +86,17 @@ class Results extends React.Component {
                 {/* {% include actions_menu.html download_exc=true %} */}
               </div>
               <div className='layout--results__controls'>
+                <div id='vis-controls' className='slider-group'>
+                  <h2 className='prime-title'>Calculate your own score</h2>
+                  <a href='#' className='reset' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
+
+                  <SliderControlGroup
+                    sliders={this.sliders}
+                    values={this.state.sliders}
+                    onChange={this.onSliderGroupChange}
+                  />
+
+                </div>
               </div>
             </div>
           </header>

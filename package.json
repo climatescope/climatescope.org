@@ -98,6 +98,7 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
+    "create-react-class": "^15.6.3",
     "d3": "^5.7.0",
     "isomorphic-fetch": "^2.2.1",
     "lodash.defaultsdeep": "^4.6.0",
@@ -111,6 +112,7 @@
     "react-paginate": "^5.2.4",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
+    "react-slider": "^0.11.2",
     "react-tether": "^1.0.2",
     "react-tooltip": "^3.8.4",
     "react-transition-group": "^2.5.0",

@@ -45,7 +45,62 @@ export function shuffleArray ([...arr]) {
  * @param {object} obj Object to convert to array
  */
 export function objectToArray (obj) {
-  return Object.keys(obj).map(k => obj[k])
+  return Object.keys(obj).map(k => {
+    // If the value is an object include the key
+    return isPlainObject(obj[k])
+      ? { ...obj[k], __key: k }
+      : obj[k]
+  })
+}
+
+/**
+ * Checks if the provided value is an object created by the Object constructor.
+ *
+ * Check if the provided value is truthy, use typeof to check if it is an
+ * object and Object.constructor to make sure the constructor is
+ * equal to Object.
+ *
+ * @param {object} obj Object to check
+ */
+export function isPlainObject (val) {
+  return !!val && typeof val === 'object' && val.constructor === Object
+}
+
+/**
+ * Returns the sum of an array, after mapping each element to a value using the
+ * provided function.
+ *
+ * @param {array} arr The array of objects to sum
+ * @param {function|string} fn The key for the value of the function to
+ *                             access it.
+ */
+export function sumBy (arr, fn) {
+  return arr.reduce((acc, val, i, all) => acc + (typeof fn === 'function' ? fn(val, i, all) : val[fn]), 0)
+}
+
+/**
+ * Rounds a number to a specified amount of decimals.
+ *
+ * @param {number} value The value to round
+ * @param {number} decimals The number of decimals to keep. Default to 2
+ */
+export function round (value, decimals = 2) {
+  return Math.round(value * Math.pow(10, decimals)) / Math.pow(10, decimals)
+}
+
+/**
+ * Divides a number and distributes the remainder.
+ * Example 5 / 3 = [2, 2, 1]
+ *
+ * @param {number} dividend Dividend
+ * @param {number} divisor Divisor
+ *
+ * @return {array}
+ */
+export function distributedDivision (dividend, divisor) {
+  const intRes = Math.floor(dividend / divisor)
+  const reminder = dividend % divisor
+  return Array.from({ length: divisor }).map((_, i) => i < reminder ? intRes + 1 : intRes)
 }
 
 /**
@@ -101,6 +156,14 @@ export function wrapApiResult (stateData) {
   }
 }
 
+/**
+ * Converts line breaks to React <br> components
+ * From https://github.com/yosuke-furukawa/react-nl2br
+ *
+ * @param {string} str The string to convert
+ *
+ * @returns {array}
+ */
 export function reactNl2Br (str) {
   const newlineRegex = /(\r\n|\r|\n)/g
   if (typeof str === 'number') {

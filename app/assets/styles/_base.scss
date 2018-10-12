@@ -735,16 +735,16 @@ a:active{
   .slider {
     margin-bottom: 0.75rem;
   }
-  .control.param-1 .noUi-connect {
+  .control.param-1 .slider .bar-0 {
     background: $infograph-color-a;
   }
-  .control.param-2 .noUi-connect {
+  .control.param-2 .slider .bar-0 {
     background: $infograph-color-b;
   }
-  .control.param-3 .noUi-connect {
+  .control.param-3 .slider .bar-0 {
     background: $infograph-color-c;
   }
-  .control.param-4 .noUi-connect {
+  .control.param-4 .slider .bar-0 {
     background: $infograph-color-d;
   }
   .slider-value {
