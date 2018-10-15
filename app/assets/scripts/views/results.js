@@ -4,6 +4,7 @@ import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import c from 'classnames'
+import { StickyContainer, Sticky } from 'react-sticky'
 
 import { environment } from '../config'
 import { fetchPage } from '../redux/static-page'
@@ -71,43 +72,56 @@ class Results extends React.Component {
     })
   }
 
+  renderHeaderFn ({ style, isSticky }) {
+    const klass = c('layout--results__header', {
+      'sticky': isSticky
+    })
+
+    return (
+      <header id='parameters-controls' className={klass} style={style}>
+        <div className='row--contained'>
+          <div className='layout--results__heading'>
+            <h1 className='layout--results__title'>
+              <span>Results</span>
+            </h1>
+          </div>
+          <div className='layout--results__tools'>
+            {/* {% include actions_menu.html download_exc=true %} */}
+          </div>
+          <div className='layout--results__controls'>
+            <div id='vis-controls' className='slider-group'>
+              <h2 className='prime-title'>Calculate your own score</h2>
+              <a href='#' className='reset' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
+
+              <SliderControlGroup
+                sliders={this.sliders}
+                values={this.state.sliders}
+                onChange={this.onSliderGroupChange}
+              />
+
+            </div>
+          </div>
+        </div>
+      </header>
+    )
+  }
+
   render () {
     return (
       <App>
-        <section className='layout--results' ng-app='globalApp'>
-          <header className='layout--results__header sticky' id='parameters-controls'>
+        <StickyContainer>
+          <section className='layout--results' ng-app='globalApp'>
+            <Sticky>
+              {(props) => this.renderHeaderFn(props)}
+            </Sticky>
+            <div className='layout--results__body'>
+              <div id='index-viz' className='row--full intro'>MAP</div>
             <div className='row--contained'>
-              <div className='layout--results__heading'>
-                <h1 className='layout--results__title'>
-                  <span>Results</span>
-                </h1>
-              </div>
-              <div className='layout--results__tools'>
-                {/* {% include actions_menu.html download_exc=true %} */}
-              </div>
-              <div className='layout--results__controls'>
-                <div id='vis-controls' className='slider-group'>
-                  <h2 className='prime-title'>Calculate your own score</h2>
-                  <a href='#' className='reset' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
-
-                  <SliderControlGroup
-                    sliders={this.sliders}
-                    values={this.state.sliders}
-                    onChange={this.onSliderGroupChange}
-                  />
-
-                </div>
+                Table
               </div>
             </div>
-          </header>
-
-          <div className='layout--results__body'>
-            <div id='index-viz' className='row--full intro'>MAP</div>
-            <div className='row--contained'>
-              Table
-            </div>
-          </div>
-        </section>
+          </section>
+        </StickyContainer>
       </App>
     )
   }
