@@ -12,30 +12,45 @@ import { mbtoken, environment } from '../config'
 // set once
 mapboxgl.accessToken = mbtoken
 
-const buildMarker = (country, value) => {
+/**
+ * Create a maker to use on the map.
+ * It adds over mouse events to show the marker tooltip. The marker passes
+ * the country id to the tooltip which will be used to know what content to
+ * render on the tooltip.
+ *
+ * @param {string} countryId Country id. This will be passes to the tooltip
+ * @param {number} value Value to show on the marker. Optional. If not provided
+ *                       the marker will not be highlighted
+ *
+ * @returns {node} DOM element to use as marker
+ */
+const buildMarker = (countryId, value) => {
   const el = document.createElement('div')
   el.style.cursor = 'pointer'
 
   if (value) {
     render((
-      <div className='country-marker highlight' data-tip={country} data-for='marker-tip'>
+      <div className='country-marker highlight' data-tip={countryId} data-for='marker-tip'>
         {value < 10 ? `0${value}` : value}
       </div>
     ), el)
   } else {
-    render(<div className='country-marker' data-tip={country} data-for='marker-tip' />, el)
+    render(<div className='country-marker' data-tip={countryId} data-for='marker-tip' />, el)
   }
 
+  // Add a property to the dom element containing the element to which the
+  // tooltip is attached.
   el.markerTip = el.querySelector('.country-marker')
 
+  // Mouse and touch envents to show and hide the tooltip.
   el.onmouseover = () => {
+    ReactTooltip.show(el.markerTip)
+  }
+  el.ontouchstart = () => {
     ReactTooltip.show(el.markerTip)
   }
   el.onmouseout = () => {
     ReactTooltip.hide(el.markerTip)
-  }
-  el.ontouchstart = () => {
-    ReactTooltip.show(el.markerTip)
   }
 
   return el
@@ -72,6 +87,7 @@ export default class ResultsMap extends React.Component {
     this.map.on('load', () => {
       this.mapLoaded = true
 
+      // TODO: Contruct markers dynamically.
       const marker1 = buildMarker('PT', 2)
       const marker2 = buildMarker('ES')
 
@@ -82,22 +98,25 @@ export default class ResultsMap extends React.Component {
         .setLngLat([5, 5])
         .addTo(this.map)
 
+      // Call the map move event debouces with a leading execution to ensure
+      // that the tooltip get's hidden as fast as possible.
       const onMapMove = () => {
+        // TODO: Hide markers dynamically.
         ReactTooltip.hide(marker1.markerTip)
         ReactTooltip.hide(marker2.markerTip)
       }
-
       this.map.on('move', debounce(onMapMove, 100, { leading: true, trailing: false }))
     })
   }
 
   renderPopover () {
-    const popoverContent = (country) => {
+    // TODO: Add marker popover content.
+    const popoverContent = (countryId) => {
       return (
         <article className='tooltip-inner'>
           <header className='tooltip__header'>
             <h1 className='tooltip__title'>
-              <a href='http://global-climatescope.org/en/country/uruguay/' title='View country'>Uruguay {country}</a>
+              <a href='http://global-climatescope.org/en/country/uruguay/' title='View country'>Uruguay {countryId}</a>
             </h1>
             <em className='label-grid label-grid-on' data-title='On-grid'>
               <span>On-grid</span>

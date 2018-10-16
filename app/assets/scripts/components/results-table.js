@@ -118,11 +118,11 @@ export default class ResultsTable extends React.PureComponent {
   }
 
   renderParamGraphTooltip () {
-    const popoverContent = (country) => {
+    const popoverContent = (countryId) => {
       return (
         <article className='tooltip-inner'>
           <dl className='params-legend'>
-            <dt className='param-1'>{country}</dt>
+            <dt className='param-1'>{countryId}</dt>
             <dd>3.00<small>20%</small></dd>
             <dt className='param-2'>Param 2</dt>
             <dd>3.20<small>20%</small></dd>
