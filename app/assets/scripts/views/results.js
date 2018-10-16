@@ -11,6 +11,7 @@ import { fetchPage } from '../redux/static-page'
 
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
+import ResultsMap from '../components/results-map'
 // import Share from '../components/share'
 
 class Results extends React.Component {
@@ -115,7 +116,7 @@ class Results extends React.Component {
               {(props) => this.renderHeaderFn(props)}
             </Sticky>
             <div className='layout--results__body'>
-              <div id='index-viz' className='row--full intro'>MAP</div>
+              <ResultsMap />
             <div className='row--contained'>
                 Table
               </div>

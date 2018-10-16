@@ -39,14 +39,17 @@ $tooltip-arr-size: 1rem;
 .tooltip-map,
 .tooltip {
   display: block;
-  position: absolute;
-  z-index: 1070;
-  transform: translate3d(0, 0, 0);
-  transition-property: opacity, margin, visibility;
-  transition-duration: 0.1s, 0.1s, 0.1s;
-  transition-timing-function: ease, ease, linear;
-  transition-delay: 0, 0, 0;
+  font-size: 0.875rem;
+  pointer-events: all;
+  // position: absolute;
+  // z-index: 1070;
+  // transform: translate3d(0, 0, 0);
+  // transition-property: opacity, margin, visibility;
+  // transition-duration: 0.1s, 0.1s, 0.1s;
+  // transition-timing-function: ease, ease, linear;
+  // transition-delay: 0, 0, 0;
 }
+
 
 .tooltip {
   filter: alpha(opacity=0);
@@ -85,8 +88,8 @@ $tooltip-arr-size: 1rem;
 }
 
 // Placement
-.tooltip.top,
-.tooltip-map.top {
+.tooltip.place-top,
+.tooltip-map.place-top {
   margin-top: -($tooltip-arr-size/2);
   .tooltip-inner:before {
     @extend %collecticon-triangle-down;
@@ -97,8 +100,8 @@ $tooltip-arr-size: 1rem;
   }
 }
 
-.tooltip.right,
-.tooltip-map.right {
+.tooltip.place-right,
+.tooltip-map.place-right {
   margin-left: $tooltip-arr-size/2;
   .tooltip-inner:before {
     @extend %collecticon-triangle-left;
@@ -109,8 +112,8 @@ $tooltip-arr-size: 1rem;
   }
 }
 
-.tooltip.bottom,
-.tooltip-map.bottom {
+.tooltip.place-bottom,
+.tooltip-map.place-bottom {
   margin-top: $tooltip-arr-size/2;
   .tooltip-inner:before {
     @extend %collecticon-triangle-up;
@@ -121,8 +124,8 @@ $tooltip-arr-size: 1rem;
   }
 }
 
-.tooltip.left,
-.tooltip-map.left {
+.tooltip.place-left,
+.tooltip-map.place-left {
   margin-left: -($tooltip-arr-size/2);
   .tooltip-inner:before {
     @extend %collecticon-triangle-right;
@@ -131,6 +134,13 @@ $tooltip-arr-size: 1rem;
     margin-top: -($tooltip-arr-size/2);
     text-shadow: 1px 0 tint($primary-color, 85%);
   }
+}
+
+.tooltip-map.place-top,
+.tooltip-map.place-right,
+.tooltip-map.place-bottom,
+.tooltip-map.place-left {
+  padding: 0 !important;
 }
 
 .tooltip-arrow {

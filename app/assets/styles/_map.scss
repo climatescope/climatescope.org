@@ -1,35 +1,51 @@
 // MAP
 
-// MARKERS
+$highlight-marker-size: 2rem;
+$highlight-marker-border: 6px;
+$marker-size: 0.625rem;
+$marker-border: 4px;
 
-circle {
-  stroke: $primary-color;
-  stroke-linecap: round;
-  stroke-opacity: 0.15;
-  .country-marker & {
-    stroke-width: 4px;
-    fill: $secondary-color;
-  }
-  .rank-marker & {
-    stroke-width: 6px;
-    fill: $secondary-color;
-  }
-  .highlight & {
-    fill: shade($secondary-color, 20%);
-  }
-}
 
-.rank-marker {
+.country-marker {
+  @extend .antialiased;
+  width: $marker-size;
+  height: $marker-size;
+  background: $secondary-color;
+  border-radius: $global-rounded;
+  text-align: center;
   font-family: $brand-font-family;
   font-weight: $brand-font-bold;
-  @extend .antialiased;
-  text {
-    fill: #fff;
-    text-anchor: middle;
-    font-size: 1rem;
-    pointer-events: none;
+  color: #fff;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -($marker-border / 2);
+    left: -($marker-border / 2);;
+    width: calc(#{$marker-size} + #{$marker-border});
+    height: calc(#{$marker-size} + #{$marker-border});
+    border-radius: $global-rounded;
+    border: $marker-border solid rgba($primary-color, 0.15);
   }
 }
+
+.country-marker.highlight {
+  width: $highlight-marker-size;
+  height: $highlight-marker-size;
+  background: shade($secondary-color, 20%);
+  line-height: $highlight-marker-size;
+
+  &::before {
+    top: -($highlight-marker-border / 2);
+    left: -($highlight-marker-border / 2);;
+    width: calc(#{$highlight-marker-size} + #{$highlight-marker-border});
+    height: calc(#{$highlight-marker-size} + #{$highlight-marker-border});
+    border-width: $highlight-marker-border;
+  }
+}
+
+
 
 .light-stroke {
   stroke: #fff;
@@ -48,8 +64,9 @@ circle {
   background-clip: padding-box;
 }
 
-.leaflet-control-container {
+.mapboxgl-control-container {
   @include center($max-width);
+  position: relative;
   padding-left: 1rem;
   padding-right: 1rem;
   @media #{$medium-up} {
@@ -59,21 +76,5 @@ circle {
   @media #{$large-up} {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-}
-
-.leaflet-left.leaflet-top {
-  top: 1rem;
-}
-
-.leaflet-left.leaflet-bottom {
-  bottom: 1rem;
-}
-
-.leaflet-left.leaflet-top,
-.leaflet-left.leaflet-bottom {
-  left: auto;
-  .leaflet-control {
-    margin: 0;
   }
 }
