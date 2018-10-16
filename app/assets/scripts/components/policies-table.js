@@ -83,7 +83,7 @@ export default class PoliciesTable extends React.PureComponent {
       if (data.length === 1) return data[0].name
 
       return (
-        <div data-for='array-field' data-tip={data.map(o => o.name).join(', ')}>
+        <div data-for='array-field-tooltip' data-tip={data.map(o => o.name).join(', ')}>
           {data[0].name}
           {data.length > 1 ? <small>+ {data.length - 1}</small> : null}
         </div>
@@ -104,6 +104,26 @@ export default class PoliciesTable extends React.PureComponent {
     })
   }
 
+  renderTooltip () {
+    const popoverContent = (tipContent) => {
+      return (
+        <article className='tooltip-inner'>
+          {tipContent}
+        </article>
+      )
+    }
+
+    return (
+      <ReactTooltip
+        id='array-field-tooltip'
+        effect='solid'
+        type='custom'
+        className='tooltip'
+        getContent={popoverContent}
+      />
+    )
+  }
+
   render () {
     if (!this.props.loading && !this.props.policies.length) return null
 
@@ -119,12 +139,7 @@ export default class PoliciesTable extends React.PureComponent {
             }
           </tbody>
         </table>
-        <ReactTooltip
-          id='array-field'
-          className='tootltip-table'
-          effect='solid'
-          type='custom'
-        />
+        {this.renderTooltip()}
       </>
     )
   }
