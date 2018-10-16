@@ -12,6 +12,7 @@ import { fetchPage } from '../redux/static-page'
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
 import ResultsMap from '../components/results-map'
+import ResultsTable from '../components/results-table'
 // import Share from '../components/share'
 
 class Results extends React.Component {
@@ -117,8 +118,13 @@ class Results extends React.Component {
             </Sticky>
             <div className='layout--results__body'>
               <ResultsMap />
-            <div className='row--contained'>
-                Table
+              <div className='row--contained' style={{ height: '100vh' }}>
+                <ResultsTable
+                  sortField={'rank'}
+                  sortDirection={'asc'}
+                  onSort={() => {}}
+                  loading={false}
+                />
               </div>
             </div>
           </section>
