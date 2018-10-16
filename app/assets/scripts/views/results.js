@@ -7,12 +7,14 @@ import c from 'classnames'
 import { StickyContainer, Sticky } from 'react-sticky'
 
 import { environment } from '../config'
+import QsState from '../utils/qs-state'
 import { fetchPage } from '../redux/static-page'
 
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
 import ResultsMap from '../components/results-map'
 import ResultsTable from '../components/results-table'
+import Dropdown from '../components/dropdown'
 // import Share from '../components/share'
 
 class Results extends React.Component {
@@ -46,7 +48,43 @@ class Results extends React.Component {
       }
     ]
 
+    this.regions = [
+      {
+        id: 'all',
+        name: 'All regions'
+      },
+      {
+        id: 'asia',
+        name: 'Asia'
+      },
+      {
+        id: 'africa',
+        name: 'Africa'
+      },
+      {
+        id: 'eu',
+        name: 'Europe'
+      },
+      {
+        id: 'lac',
+        name: 'Latin America and The Caribbean'
+      },
+      {
+        id: 'me',
+        name: 'Middle East'
+      }
+    ]
+
+    this.qsState = new QsState({
+      region: {
+        accessor: 'region',
+        default: 'all',
+        validator: this.regions.map(r => r.id)
+      }
+    })
+
     this.state = {
+      ...this.qsState.getState(this.props.location.search.substr(1)),
       sliders: this.getInitialSliderState()
     }
   }
@@ -74,6 +112,44 @@ class Results extends React.Component {
     })
   }
 
+  onRegionClick (regionId, e) {
+    e.preventDefault()
+    this.setState({
+      region: regionId
+    }, () => {
+      // Update location.
+      const qString = this.qsState.getQs(this.state)
+      this.props.history.push({ search: qString })
+    })
+  }
+
+  renderTitle () {
+    const triggerText = this.regions.find(r => r.id === this.state.region).name
+
+    return (
+      <h1 className='layout--results__title'>
+        <span>Results for&nbsp;</span>
+        <em>
+          <Dropdown
+            className='dropdown-content'
+            triggerElement='a'
+            triggerClassName='dropdown-toggle caret'
+            triggerActiveClassName='button--active'
+            triggerText={triggerText}
+            triggerTitle='Filter by region'
+            direction='down'
+            alignment='center' >
+            <ul className='dropdown-menu'>
+              {this.regions.map(r => (
+                <li key={r.id}><a href='#' title={`view ${r.name} results`} onClick={this.onRegionClick.bind(this, r.id)} data-hook='dropdown:close'>{r.name}</a></li>
+              ))}
+            </ul>
+          </Dropdown>
+        </em>
+      </h1>
+    )
+  }
+
   renderHeaderFn ({ style, isSticky }) {
     const klass = c('layout--results__header', {
       'sticky': isSticky
@@ -83,9 +159,7 @@ class Results extends React.Component {
       <header id='parameters-controls' className={klass} style={style}>
         <div className='row--contained'>
           <div className='layout--results__heading'>
-            <h1 className='layout--results__title'>
-              <span>Results</span>
-            </h1>
+            {this.renderTitle()}
           </div>
           <div className='layout--results__tools'>
             {/* {% include actions_menu.html download_exc=true %} */}
@@ -137,6 +211,8 @@ class Results extends React.Component {
 if (environment !== 'production') {
   Results.propTypes = {
     fetchPage: T.func,
+    location: T.object,
+    history: T.object,
     match: T.object,
     page: T.object
   }
