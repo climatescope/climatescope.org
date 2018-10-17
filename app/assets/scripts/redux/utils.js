@@ -1,6 +1,12 @@
 'use script'
 import get from 'lodash.get'
 
+function delay (millis) {
+  return new Promise(resolve => {
+    setTimeout(resolve, millis)
+  })
+}
+
 /**
  * Performs a request to the given url returning the response in json format
  * or throwing an error.
@@ -31,11 +37,12 @@ export async function fetchJSON (url, options) {
  * @param {func} options.mutator Function to change the response before sending
  *                               it to the receive function.
  */
-export function fetchDispatchCacheFactory ({ statePath, url, requestFn, receiveFn, mutator }) {
+export function fetchDispatchCacheFactory ({ statePath, url, requestFn, receiveFn, mutator, __devDelay }) {
   mutator = mutator || (v => v)
   return async function (dispatch, getState) {
     const pageState = get(getState(), statePath)
     if (pageState && pageState.fetched && !pageState.error) {
+      if (__devDelay) await delay(__devDelay)
       return dispatch(receiveFn(pageState.data))
     }
     dispatch(requestFn())
@@ -43,8 +50,10 @@ export function fetchDispatchCacheFactory ({ statePath, url, requestFn, receiveF
     try {
       const response = await fetchJSON(url)
       const content = mutator(response)
+      if (__devDelay) await delay(__devDelay)
       return dispatch(receiveFn(content))
     } catch (error) {
+      if (__devDelay) await delay(__devDelay)
       console.log('error', error)
       return dispatch(receiveFn(null, error))
     }
