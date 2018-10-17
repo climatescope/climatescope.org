@@ -5,31 +5,34 @@ import c from 'classnames'
 
 import { environment } from '../config'
 
-export const LoadingSkeletonGroup = ({ children }) => (
-  <div className='lsk__group'>{children}</div>
+export const LoadingSkeletonGroup = ({ children, style }) => (
+  <div className='lsk__group' style={style}>{children}</div>
 )
 
 if (environment !== 'production') {
   LoadingSkeletonGroup.propTypes = {
+    style: T.object,
     children: T.node
   }
 }
 
-export const LoadingSkeleton = ({ type, size, width, inline }) => {
+export const LoadingSkeleton = ({ type, size, width, inline, style }) => {
   width = width || 1
   const k = c('lsk__item', {
     [`lsk__item--${type}`]: !!type,
     [`lsk__item--${size}`]: !!size
   })
-  let style = { width: `${width * 100}%` }
-  if (inline) {
-    style.display = 'inline-block'
+  style = {
+    ...style,
+    width: `${width * 100}%`,
+    display: inline ? 'inline-block' : 'block'
   }
   return <span className={k} style={style} />
 }
 
 if (environment !== 'production') {
   LoadingSkeleton.propTypes = {
+    style: T.object,
     type: T.string,
     size: T.string,
     width: T.number,
