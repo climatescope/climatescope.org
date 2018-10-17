@@ -39,10 +39,10 @@ export default class ResultsTable extends React.PureComponent {
         value: 'Global rank'
       },
       {
-        id: 'country',
+        id: 'geography',
         sortable: true,
-        title: 'Sort by country',
-        value: 'Country'
+        title: 'Sort by geography',
+        value: 'Geography'
       },
       {
         id: 'score',
@@ -103,7 +103,7 @@ export default class ResultsTable extends React.PureComponent {
       <tr>
         <td className='cell-rank'>001</td>
         <td className='cell-country'>
-          <Link to='' title='Go to country page'>Country Name</Link>
+          <Link to='' title='Go to geography page'>Geography Name</Link>
         </td>
         <td>3.25</td>
         <td className='cell-trendline'>¿trendline?</td>

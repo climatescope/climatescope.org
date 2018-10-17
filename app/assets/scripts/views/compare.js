@@ -122,7 +122,7 @@ class Compare extends React.Component {
             <SelectControl
               key={`country-${i}`}
               id={`country-${i}`}
-              label='Country'
+              label='Geography'
               options={options}
               selectedOption={this.state.countries[i]}
               onChange={this.onCountryValueChange.bind(this, i)}
@@ -233,7 +233,7 @@ class CountryCompare extends React.PureComponent {
   renderInactive () {
     return (
       <div className='placeholder'>
-        <p>Nothing to compare. Choose a Country</p>
+        <p>Nothing to compare. Choose a Geography.</p>
       </div>
     )
   }

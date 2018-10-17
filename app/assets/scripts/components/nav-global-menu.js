@@ -24,7 +24,7 @@ class NavGlobalMenu extends React.PureComponent {
             direction='down'
             alignment='center' >
             <ul className='dropdown-menu'>
-              <li><Link data-hook='dropdown:close' to='/compare' title='View results side by side'>Country Comparison</Link></li>
+              <li><Link data-hook='dropdown:close' to='/compare' title='View results side by side'>Geography Comparison</Link></li>
               <li><Link data-hook='dropdown:close' to='/off-grid-data-hub' title='Use the Off-grid Data Hub'>Off-grid Data Hub</Link></li>
               <li><Link data-hook='dropdown:close' to='/clean-energy-investments' title='Use the Clean Energy Investment'>Clean Energy Investment</Link></li>
               <li><Link data-hook='dropdown:close' to='/capacity-generation' title='Use the Capacity Generation'>Capacity Generation</Link></li>
