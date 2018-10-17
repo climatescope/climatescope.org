@@ -11,7 +11,7 @@ import { getFromState, wrapApiResult, reactNl2Br } from '../utils/utils'
 import App from './app'
 import UhOh from './uhoh'
 import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-skeleton'
-// import Share from '../components/share'
+import ShareOptions from '../components/share'
 
 class PolicyPage extends React.Component {
   componentDidMount () {
@@ -187,7 +187,9 @@ class PolicyPage extends React.Component {
                 </p>
               </div>
               <div className='layout--entry__tools'>
-                {/* {% include actions_menu.html download_exc=true %} */}
+                <ul className='actions-menu'>
+                  <li><ShareOptions url={window.location.toString()} /></li>
+                </ul>
               </div>
             </div>
           </header>

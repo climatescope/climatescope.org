@@ -2,20 +2,18 @@
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 import c from 'classnames'
 import { StickyContainer, Sticky } from 'react-sticky'
 
 import { environment } from '../config'
 import QsState from '../utils/qs-state'
-import { fetchPage } from '../redux/static-page'
 
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
 import ResultsMap from '../components/results-map'
 import ResultsTable from '../components/results-table'
 import Dropdown from '../components/dropdown'
-// import Share from '../components/share'
+import ShareOptions from '../components/share'
 
 class Results extends React.Component {
   constructor (props) {
@@ -162,7 +160,9 @@ class Results extends React.Component {
             {this.renderTitle()}
           </div>
           <div className='layout--results__tools'>
-            {/* {% include actions_menu.html download_exc=true %} */}
+            <ul className='actions-menu'>
+              <li><ShareOptions url={window.location.toString()} /></li>
+            </ul>
           </div>
           <div className='layout--results__controls'>
             <div id='vis-controls' className='slider-group'>
@@ -210,7 +210,6 @@ class Results extends React.Component {
 
 if (environment !== 'production') {
   Results.propTypes = {
-    fetchPage: T.func,
     location: T.object,
     history: T.object,
     match: T.object,

@@ -11,7 +11,7 @@ import App from './app'
 import UhOh from './uhoh'
 import DangerouslySetScriptContent from '../components/dangerous-script-content'
 import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-skeleton'
-// import Share from '../components/share'
+import ShareOptions from '../components/share'
 
 class StaticPage extends React.Component {
   componentDidMount () {
@@ -41,7 +41,9 @@ class StaticPage extends React.Component {
                 </h1>
               </div>
               <div className='layout--page__tools'>
-                {/* {% include actions_menu.html download_exc=true %} */}
+                <ul className='actions-menu'>
+                  <li><ShareOptions url={window.location.toString()} /></li>
+                </ul>
               </div>
             </div>
           </header>

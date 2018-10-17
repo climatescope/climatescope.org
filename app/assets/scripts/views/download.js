@@ -9,7 +9,7 @@ import { fetchPage } from '../redux/static-page'
 import { getFromState } from '../utils/utils'
 
 import App from './app'
-// import Share from '../components/share'
+import ShareOptions from '../components/share'
 
 const downloadData = {
   full: [
@@ -156,7 +156,9 @@ class Download extends React.Component {
                 <h1 className='layout--page__title'>Download</h1>
               </div>
               <div className='layout--page__tools'>
-                {/* {% include actions_menu.html download_exc=true %} */}
+                <ul className='actions-menu'>
+                  <li><ShareOptions url={window.location.toString()} /></li>
+                </ul>
               </div>
             </div>
           </header>

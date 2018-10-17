@@ -12,6 +12,7 @@ import QsState from '../utils/qs-state'
 import App from './app'
 import SelectControl from '../components/form-select-control'
 import PoliciesTable from '../components/policies-table'
+import ShareOptions from '../components/share'
 
 /**
  * Map the values from the policies filter api to the correct format expected
@@ -263,6 +264,9 @@ class Policies extends React.Component {
               </div>
 
               <div className='layout--hub__tools'>
+                <ul className='actions-menu'>
+                  <li><ShareOptions url={window.location.toString()} /></li>
+                </ul>
               </div>
               {this.renderControls()}
             </div>
