@@ -109,7 +109,7 @@ export default class ResultsTable extends React.PureComponent {
         <td className='cell-trendline'>¿trendline?</td>
         <td>
           <ParameterGraph
-            parameters={[{ id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }]}
+            parameters={[{ id: 1 }, { id: 2 }, { id: 3 }]}
           />
         </td>
         <td><em data-title='on-grid' className='label-grid label-grid-on'><span>on</span></em></td>
@@ -122,14 +122,12 @@ export default class ResultsTable extends React.PureComponent {
       return (
         <article className='tooltip-inner'>
           <dl className='params-legend'>
-            <dt className='param-1'>{countryId}</dt>
+            <dt className='param-1'>Fundamentals</dt>
             <dd>3.00<small>20%</small></dd>
-            <dt className='param-2'>Param 2</dt>
+            <dt className='param-2'>Opportunities</dt>
             <dd>3.20<small>20%</small></dd>
-            <dt className='param-3'>Param 3</dt>
+            <dt className='param-3'>Experience</dt>
             <dd>3.40<small>20%</small></dd>
-            <dt className='param-4'>Param 4</dt>
-            <dd>3.60<small>20%</small></dd>
           </dl>
         </article>
       )

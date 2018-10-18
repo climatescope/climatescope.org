@@ -128,14 +128,12 @@ export default class ResultsMap extends React.Component {
               <dd>9</dd>
               <dt>Score</dt>
               <dd>1.83</dd>
-              <dt className='param-1'>Enabling framework</dt>
-              <dd> 2.15 <small>40%</small>
-              </dd><dt className='param-2'>Financing and Investments</dt>
-              <dd> 1.99 <small>30%</small>
-              </dd><dt className='param-3'>Value chains</dt>
-              <dd> 2.04 <small>15%</small>
-              </dd><dt className='param-4'>GHG management</dt>
-              <dd> 0.47 <small>15%</small></dd>
+              <dt className='param-1'>Fundamentals</dt>
+              <dd>2.15 <small>40%</small></dd>
+              <dt className='param-2'>Opportunities</dt>
+              <dd>1.99 <small>30%</small></dd>
+              <dt className='param-3'>Experience</dt>
+              <dd>2.04 <small>15%</small></dd>
             </dl>
             <a href='http://global-climatescope.org/en/country/uruguay/' className='bttn bttn-cta go' title='View country'>View country</a>
           </div>

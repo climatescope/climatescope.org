@@ -25,24 +25,19 @@ class Results extends React.Component {
 
     this.sliders = [
       {
-        id: 'enabling-framework',
-        name: 'Enabling framework',
+        id: 'fundamentals',
+        name: 'Fundamentals',
         startingValue: 40
       },
       {
-        id: 'financing',
-        name: 'Financing & Investment',
-        startingValue: 30
+        id: 'opportunities',
+        name: 'Opportunities',
+        startingValue: 40
       },
       {
-        id: 'val-chains',
-        name: 'Value Chains',
-        startingValue: 15
-      },
-      {
-        id: 'ghg',
-        name: 'GHG Management',
-        startingValue: 15
+        id: 'experience',
+        name: 'Experience',
+        startingValue: 20
       }
     ]
 
