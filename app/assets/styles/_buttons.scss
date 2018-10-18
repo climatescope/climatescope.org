@@ -166,6 +166,13 @@ input[type=submit] {
 // ICONS & BADGES
 
 .bttn {
+  &::before,
+  &::after,
+  > * {
+    vertical-align: top;
+    display: inline-block;
+    line-height: inherit !important;
+  }
   &:after {
     margin-left: 0.25rem;
     opacity: 0.4;

@@ -234,6 +234,8 @@ $tooltip-arr-size: 1rem;
       @include opacity(0.4);
       font-size: 1rem;
       margin-left: 0.25rem;
+      line-height: inherit;
+      vertical-align: top;
     }
   }
 

@@ -158,6 +158,8 @@ a:active{
   &:before {
     @extend %collecticon-power;
     font-size: 1rem;
+    line-height: inherit;
+    vertical-align: top;
   }
   span {
     margin: 0 0.5rem 0 0;
@@ -549,6 +551,8 @@ a:active{
     color: tint($primary-color, 40%);
     &:before {
       @extend %collecticon-refresh;
+      line-height: inherit;
+      vertical-align: top;
     }
     span {
       @extend .visually-hidden;
@@ -568,6 +572,10 @@ a:active{
   }
   @media print {
     display: none;
+  }
+
+  .control .bttn:not(:last-child) {
+    margin-right: 0.5rem;
   }
 }
 
@@ -727,7 +735,7 @@ a:active{
     line-height: 1.25rem;
   }
   .control {
-    @include column(3/12);
+    @include column(4/12);
     &.first {
       clear: left;
     }
