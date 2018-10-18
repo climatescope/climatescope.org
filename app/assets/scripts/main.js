@@ -11,6 +11,7 @@ import history from './utils/history'
 import Home from './views/home'
 import StaticPage from './views/static-page'
 import Download from './views/download'
+import Library from './views/library'
 import Policies from './views/policies-hub'
 import Policy from './views/policies-page'
 import Results from './views/results'
@@ -25,6 +26,7 @@ const Root = () => (
         <Route exact path='/' component={Home}/>
         <Route exact path='/results' component={Results}/>
         <Route exact path='/download' component={Download}/>
+        <Route exact path='/library' component={Library}/>
         <Route path='/compare/:country*' component={Compare}/>
         <Route exact path='/policies/:policyId' component={Policy}/>
         <Route exact path='/policies' component={Policies}/>
