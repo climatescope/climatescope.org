@@ -5,8 +5,6 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { environment } from '../config'
-import { fetchPage } from '../redux/static-page'
-import { getFromState } from '../utils/utils'
 
 import App from './app'
 import ShareOptions from '../components/share'
@@ -231,24 +229,12 @@ class Download extends React.Component {
   }
 }
 
-if (environment !== 'production') {
-  Download.propTypes = {
-    fetchPage: T.func,
-    match: T.object,
-    page: T.object
-  }
-}
-
 function mapStateToProps (state, props) {
-  return {
-    page: getFromState(state.staticPages, props.match.params.page)
-  }
+  return {}
 }
 
 function dispatcher (dispatch) {
-  return {
-    fetchPage: (...args) => dispatch(fetchPage(...args))
-  }
+  return {}
 }
 
 export default connect(mapStateToProps, dispatcher)(Download)
