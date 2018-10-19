@@ -1688,3 +1688,85 @@ a.entry__contents {
 .lsk__item--heading {
   background: tint($primary-color, 80%);
 }
+
+
+/* Color Cards
+   ========================================================================== */
+.ccard {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.ccard__contents {
+  display: block;
+  flex: 1 0;
+  padding: $global-spacing;
+  background: tint($primary-color, 90%);
+  transition: all 0.16s ease 0s;
+
+  > *:last-child{
+    margin-bottom: 0;
+  }
+ 
+  &:hover {
+    box-shadow: 0.5rem 0.5rem 0 0 $success-color;
+  }
+
+  .ccard__title {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem; 
+  }
+
+  .ccard__description {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem; 
+  }
+}
+
+.ccard--tools .ccard__contents {
+  background: #336077;
+  color: #fff;
+
+  &:hover {
+    box-shadow: 0.5rem 0.5rem 0 0 shade(#336077, 32%);;
+  }
+}
+
+
+/* Tools
+   ========================================================================== */
+
+.tools {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: $global-spacing * 2;
+  display: flex;
+  flex-flow: row wrap;
+
+  .tools__list-item {
+    @include column(6/12, $cycle: 2);
+    display: flex;
+    flex: 0 1 auto;
+    margin-top: $global-spacing * 2;
+    min-height: 8rem;
+
+    @media #{$large-up} {
+      @include column(4/12, $cycle: 3);
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3) {
+      @media #{$large-up} {
+        margin-top: 0;
+      }
+    }
+  }
+}
