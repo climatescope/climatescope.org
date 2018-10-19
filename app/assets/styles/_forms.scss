@@ -233,6 +233,7 @@ select.form__control:focus {
   height: 1.5rem;
   padding: 0;
   color: tint($primary-color, 40%);
+  line-height: inherit;
 }
 
 .switch-inner:before {

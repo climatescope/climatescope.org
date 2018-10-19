@@ -19,24 +19,34 @@ class NavGlobalMenu extends React.PureComponent {
             triggerElement='a'
             triggerClassName='dropdown-toggle caret'
             triggerActiveClassName='button--active'
-            triggerText='Tools'
-            triggerTitle='Explore the tools'
+            triggerText='Insights & Tools'
+            triggerTitle='Explore the Insights & Tools'
             direction='down'
             alignment='center' >
             <ul className='dropdown-menu'>
-              <li><Link data-hook='dropdown:close' to='/compare' title='View results side by side'>Country Comparison</Link></li>
-              <li><Link data-hook='dropdown:close' to='/off-grid-data-hub' title='Use the Off-grid Data Hub'>Off-grid Data Hub</Link></li>
-              <li><Link data-hook='dropdown:close' to='/clean-energy-investments' title='Use the Clean Energy Investment'>Clean Energy Investment</Link></li>
-              <li><Link data-hook='dropdown:close' to='/capacity-generation' title='Use the Capacity Generation'>Capacity Generation</Link></li>
-              <li><Link data-hook='dropdown:close' to='/policies' title='Browse the policy database'>Policies</Link></li>
-              <li><Link data-hook='dropdown:close' to='/download' title='Download the data and report'>Download</Link></li>
-              <li><Link data-hook='dropdown:close' to='/about' title='More about Climatescope'>About Climatescope</Link></li>
-              <li><Link data-hook='dropdown:close' to='/methodology' title='More about the methodology'>Methodology</Link></li>
-              <li><Link data-hook='dropdown:close' to='/license' title='About the license'>License</Link></li>
+              <li><Link data-hook='dropdown:close' to='/key-findings' title='View key findings'>Key Findings</Link></li>
+              <li><Link data-hook='dropdown:close' to='/library' title='View content library'>Content Library</Link></li>
             </ul>
           </Dropdown>
         </li>
-        <li><Link to='/contact' title='Contact us'>Contact</Link></li>
+        <li className='dropdown'>
+          <Dropdown
+            className='dropdown-content'
+            triggerElement='a'
+            triggerClassName='dropdown-toggle caret'
+            triggerActiveClassName='button--active'
+            triggerText='About'
+            triggerTitle='Explore Climatescope'
+            direction='down'
+            alignment='center' >
+            <ul className='dropdown-menu'>
+              <li><Link data-hook='dropdown:close' to='/about' title='More about Climatescope'>Behind Climatescope</Link></li>
+              <li><Link data-hook='dropdown:close' to='/methodology' title='More about the methodology'>Methodology</Link></li>
+              <li><Link data-hook='dropdown:close' to='/license' title='About the license'>License</Link></li>
+              <li><Link data-hook='dropdown:close' to='/contact' title='Contact us'>Contact</Link></li>
+            </ul>
+          </Dropdown>
+        </li>
       </ul>
     )
   }
@@ -45,6 +55,7 @@ class NavGlobalMenu extends React.PureComponent {
     return (
       <ul className='ftr-menu'>
         <li><Link to='/results' title='The global index'>Results</Link></li>
+        <li><Link to='/library' title='View content library'>Content Library</Link></li>
         <li><Link to='/about' title='More about Climatescope'>About</Link></li>
         <li><Link to='/contact' title='Contact us'>Contact</Link></li>
       </ul>

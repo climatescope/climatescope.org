@@ -41,11 +41,12 @@ export default class Dropdown extends React.Component {
   }
 
   _bodyListener (e) {
+    const attrHook = (el) => el.getAttribute ? el.getAttribute('data-hook') : null
     // Get the dropdown that is a parent of the clicked element. If any.
     let theSelf = e.target
     if (theSelf.tagName === 'BODY' ||
         theSelf.tagName === 'HTML' ||
-        e.target.getAttribute('data-hook') === 'dropdown:close') {
+        attrHook(theSelf) === 'dropdown:close') {
       this.close()
       return
     }
@@ -56,16 +57,16 @@ export default class Dropdown extends React.Component {
     // TODO: Unveil whatever black magic is at work here.
     if (theSelf.tagName === 'SPAN' &&
         theSelf.parentNode === this.triggerRef &&
-        theSelf.parentNode.getAttribute('data-hook') === 'dropdown:btn') {
+        attrHook(theSelf.parentNode) === 'dropdown:btn') {
       return
     }
     if (theSelf.tagName === 'SPAN' &&
-        theSelf.parentNode.getAttribute('data-hook') === 'dropdown:close') {
+        attrHook(theSelf.parentNode) === 'dropdown:close') {
       this.close()
       return
     }
 
-    if (theSelf && theSelf.getAttribute('data-hook') === 'dropdown:btn') {
+    if (theSelf && attrHook(theSelf) === 'dropdown:btn') {
       if (theSelf !== this.triggerRef) {
         this.close()
       }
@@ -73,7 +74,7 @@ export default class Dropdown extends React.Component {
     }
 
     do {
-      if (theSelf && theSelf.getAttribute('data-hook') === 'dropdown:content') {
+      if (theSelf && attrHook(theSelf) === 'dropdown:content') {
         break
       }
       theSelf = theSelf.parentNode

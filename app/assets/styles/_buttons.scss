@@ -166,6 +166,13 @@ input[type=submit] {
 // ICONS & BADGES
 
 .bttn {
+  &::before,
+  &::after,
+  > * {
+    vertical-align: top;
+    display: inline-block;
+    line-height: inherit !important;
+  }
   &:after {
     margin-left: 0.25rem;
     opacity: 0.4;
@@ -236,6 +243,35 @@ input[type=submit] {
   > .bttn + .bttn,
   &.bttn-list > li + li {
     margin-left: -1px;
+  }
+}
+
+.bttn-group--vertical {
+  > .bttn {
+    clear: both;
+  //   width: 100%;
+    border-radius: $base-border-radius;
+  }
+
+  > .bttn:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    clip-path: inset(-100% -100% 0 -100%);
+  }
+
+  > .bttn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    clip-path: inset(0 -100% -100% -100%);
+  }
+
+  > .bttn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    clip-path: inset(0 -100%);
+  }
+
+  > .bttn + .bttn {
+    margin-top: -$base-border-width;
   }
 }
 

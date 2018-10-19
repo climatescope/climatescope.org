@@ -5,12 +5,9 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { environment } from '../config'
-import { fetchPage } from '../redux/static-page'
-import { getFromState } from '../utils/utils'
 
 import App from './app'
-// import Share from '../components/share'
-
+import ShareOptions from '../components/share'
 const downloadData = {
   full: [
     {
@@ -94,23 +91,6 @@ const downloadData = {
   ]
 }
 
-const downloadSections = [
-  {
-    sectionName: 'Key Findings',
-    sectionUrl: '/summary',
-    downloadTitle: 'Download report in PDF format',
-    downloadName: 'Report (PDF)',
-    downloadUrl: '/assets/data/docs/climatescope-2017-key-findings-en.pdf'
-  },
-  {
-    sectionName: 'Methodology',
-    sectionUrl: '/methodology',
-    downloadTitle: 'Download report in PDF format',
-    downloadName: 'Report (PDF)',
-    downloadUrl: '/assets/data/docs/climatescope-2017-methodology-en.pdf'
-  }
-]
-
 const DownloadWell = ({ type, title, description, items }) => (
   <div className={`well well-l download download-${type}`}>
     <h2>{title}</h2>
@@ -145,7 +125,25 @@ if (environment !== 'production') {
   }
 }
 
-class Download extends React.Component {
+const ToolCard = ({ url, linkTitle, title, description }) => (
+  <article className='ccard ccard--tools'>
+    <Link to={url} title={linkTitle} className='ccard__contents'>
+      <h1 className='ccard__title'>{title}</h1>
+      <p className='ccard__description'>{description}</p>
+    </Link>
+  </article>
+)
+
+if (environment !== 'production') {
+  ToolCard.propTypes = {
+    url: T.string,
+    linkTitle: T.string,
+    title: T.string,
+    description: T.string
+  }
+}
+
+class Library extends React.Component {
   render () {
     return (
       <App>
@@ -153,10 +151,12 @@ class Download extends React.Component {
           <header className='layout--page__header'>
             <div className='row--contained'>
               <div className='layout--page__heading'>
-                <h1 className='layout--page__title'>Download</h1>
+                <h1 className='layout--page__title'>Content library</h1>
               </div>
               <div className='layout--page__tools'>
-                {/* {% include actions_menu.html download_exc=true %} */}
+                <ul className='actions-menu'>
+                  <li><ShareOptions url={window.location.toString()} /></li>
+                </ul>
               </div>
             </div>
           </header>
@@ -164,6 +164,52 @@ class Download extends React.Component {
           <div className='layout--page__body'>
             <div className='row--contained'>
               <div className='col--main prose-copy'>
+
+                <h2>Tools</h2>
+                <ul className='tools'>
+                  <li className='tools__list-item'>
+                    <ToolCard
+                      url='/compare'
+                      linkTitle='View results side by side'
+                      title='Geography Comparison'
+                      description='Pick any two nations, see how they compare'
+                    />
+                  </li>
+                  <li className='tools__list-item'>
+                    <ToolCard
+                      url='/off-grid-data-hub'
+                      linkTitle='Use the Off-grid Data Hub'
+                      title='Off-grid Data Hub'
+                      description='Energy access rates, fuel prices, other key distributed power data'
+                    />
+                  </li>
+                  <li className='tools__list-item'>
+                    <ToolCard
+                      url='/clean-energy-investments'
+                      linkTitle='Use the Clean Energy Investment'
+                      title='Clean Energy Investment'
+                      description='Who backs clean energy in emerging markets?'
+                    />
+                  </li>
+                  <li className='tools__list-item'>
+                    <ToolCard
+                      url='/capacity-generation'
+                      linkTitle='Use the Capacity Generation'
+                      title='Capacity Generation'
+                      description='Who has the most (and least) clean enery today?'
+                    />
+                  </li>
+                  <li className='tools__list-item'>
+                    <ToolCard
+                      url='/policies'
+                      linkTitle='Browse the policy database'
+                      title='Policies'
+                      description='800+ policies to improve clean enery development'
+                    />
+                  </li>
+                </ul>
+
+                <h2>Download</h2>
                 <ul className="well-list">
                   <li>
                     <DownloadWell
@@ -180,27 +226,6 @@ class Download extends React.Component {
                       items={downloadData.model} />
                   </li>
                 </ul>
-
-                <h2>Download by section</h2>
-                <table className="table download-table">
-                  <thead>
-                    <tr>
-                      <th className="th-section">Section</th>
-                      <th className="th-download">Download</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {downloadSections.map(section => (
-                      <tr>
-                        <td className="cell-section"><Link to={section.sectionUrl} title={`View ${section.sectionUrl} page`}>{section.sectionName}</Link></td>
-                        <td className="cell-download">
-                          <a href={section.downloadUrl} title={section.downloadTitle} className="bttn bttn-s bttn-success download data-download">{section.downloadName}</a>
-                        </td>
-                      </tr>
-
-                    ))}
-                  </tbody>
-                </table>
 
                 <h2>Previous editions</h2>
                 <ul className="well-list">
@@ -230,23 +255,18 @@ class Download extends React.Component {
 }
 
 if (environment !== 'production') {
-  Download.propTypes = {
-    fetchPage: T.func,
-    match: T.object,
-    page: T.object
+  Library.propTypes = {
   }
 }
 
 function mapStateToProps (state, props) {
   return {
-    page: getFromState(state.staticPages, props.match.params.page)
   }
 }
 
 function dispatcher (dispatch) {
   return {
-    fetchPage: (...args) => dispatch(fetchPage(...args))
   }
 }
 
-export default connect(mapStateToProps, dispatcher)(Download)
+export default connect(mapStateToProps, dispatcher)(Library)

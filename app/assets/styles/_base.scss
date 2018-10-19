@@ -158,6 +158,8 @@ a:active{
   &:before {
     @extend %collecticon-power;
     font-size: 1rem;
+    line-height: inherit;
+    vertical-align: top;
   }
   span {
     margin: 0 0.5rem 0 0;
@@ -231,16 +233,13 @@ a:active{
       border-radius: $global-rounded;
     }
     &.param-1:before {
-      background: $infograph-color-a;
+      background: $parameter-color-a;
     }
     &.param-2:before {
-      background: $infograph-color-b;
+      background: $parameter-color-b;
     }
     &.param-3:before {
-      background: $infograph-color-c;
-    }
-    &.param-4:before {
-      background: $infograph-color-d;
+      background: $parameter-color-c;
     }
   }
   dd {
@@ -465,16 +464,13 @@ a:active{
         border-radius: $global-rounded;
       }
       &.param-1:before {
-        background: $infograph-color-a;
+        background: $parameter-color-a;
       }
       &.param-2:before {
-        background: $infograph-color-b;
+        background: $parameter-color-b;
       }
       &.param-3:before {
-        background: $infograph-color-c;
-      }
-      &.param-4:before {
-        background: $infograph-color-d;
+        background: $parameter-color-c;
       }
     }
   }
@@ -549,6 +545,8 @@ a:active{
     color: tint($primary-color, 40%);
     &:before {
       @extend %collecticon-refresh;
+      line-height: inherit;
+      vertical-align: top;
     }
     span {
       @extend .visually-hidden;
@@ -568,6 +566,10 @@ a:active{
   }
   @media print {
     display: none;
+  }
+
+  .control .bttn:not(:last-child) {
+    margin-right: 0.5rem;
   }
 }
 
@@ -727,7 +729,7 @@ a:active{
     line-height: 1.25rem;
   }
   .control {
-    @include column(3/12);
+    @include column(4/12);
     &.first {
       clear: left;
     }
@@ -735,17 +737,14 @@ a:active{
   .slider {
     margin-bottom: 0.75rem;
   }
-  .control.param-1 .noUi-connect {
-    background: $infograph-color-a;
+  .control.param-1 .slider .bar-0 {
+    background: $parameter-color-a;
   }
-  .control.param-2 .noUi-connect {
-    background: $infograph-color-b;
+  .control.param-2 .slider .bar-0 {
+    background: $parameter-color-b;
   }
-  .control.param-3 .noUi-connect {
-    background: $infograph-color-c;
-  }
-  .control.param-4 .noUi-connect {
-    background: $infograph-color-d;
+  .control.param-3 .slider .bar-0 {
+    background: $parameter-color-c;
   }
   .slider-value {
     @extend .hd-xxs;
@@ -826,16 +825,13 @@ a:active{
       border-radius: $global-rounded;
     }
     &.param-1:before {
-      background: $infograph-color-a;
+      background: $parameter-color-a;
     }
     &.param-2:before {
-      background: $infograph-color-b;
+      background: $parameter-color-b;
     }
     &.param-3:before {
-      background: $infograph-color-c;
-    }
-    &.param-4:before {
-      background: $infograph-color-d;
+      background: $parameter-color-c;
     }
   }
   dd {
@@ -1046,10 +1042,9 @@ a:active{
   }
 }
 
-.param-details.param-1 .param-details__header { border-bottom-color: $infograph-color-a; }
-.param-details.param-2 .param-details__header { border-bottom-color: $infograph-color-b; }
-.param-details.param-3 .param-details__header { border-bottom-color: $infograph-color-c; }
-.param-details.param-4 .param-details__header { border-bottom-color: $infograph-color-d; }
+.param-details.param-1 .param-details__header { border-bottom-color: $parameter-color-a; }
+.param-details.param-2 .param-details__header { border-bottom-color: $parameter-color-b; }
+.param-details.param-3 .param-details__header { border-bottom-color: $parameter-color-c; }
 
 
 // LAYOUT: ENTRY
@@ -1073,10 +1068,9 @@ a:active{
   }
 }
 
-.parameter.param-1 .layout--entry__title:before { background: $infograph-color-a; }
-.parameter.param-2 .layout--entry__title:before { background: $infograph-color-b; }
-.parameter.param-3 .layout--entry__title:before { background: $infograph-color-c; }
-.parameter.param-4 .layout--entry__title:before { background: $infograph-color-d; }
+.parameter.param-1 .layout--entry__title:before { background: $parameter-color-a; }
+.parameter.param-2 .layout--entry__title:before { background: $parameter-color-b; }
+.parameter.param-3 .layout--entry__title:before { background: $parameter-color-c; }
 
 
 // LAYOUT: ENTRY/HUB
@@ -1666,4 +1660,113 @@ a.entry__contents {
 .prose-copy-actions {
   text-align: center;
   margin-bottom: 1rem;
+}
+
+
+/* Loadings */
+
+.lsk__group {
+  margin-bottom: 2rem;
+
+  & > .lsk__item {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.lsk__item {
+  display: block;
+  background: tint($primary-color, 90%);
+  height: 1rem;
+  width: 100%;
+  animation: pulse 0.8s ease 0s infinite alternate;
+}
+
+.lsk__item--large {
+  height: 2.25rem;
+}
+
+.lsk__item--heading {
+  background: tint($primary-color, 80%);
+}
+
+
+/* Color Cards
+   ========================================================================== */
+.ccard {
+  display: flex;
+  flex: 1;
+  width: 100%;
+}
+
+.ccard__contents {
+  display: block;
+  flex: 1 0;
+  padding: $global-spacing;
+  background: tint($primary-color, 90%);
+  transition: all 0.16s ease 0s;
+
+  > *:last-child{
+    margin-bottom: 0;
+  }
+ 
+  &:hover {
+    box-shadow: 0.5rem 0.5rem 0 0 $success-color;
+  }
+
+  .ccard__title {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem; 
+  }
+
+  .ccard__description {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.5rem; 
+  }
+}
+
+.ccard--tools .ccard__contents {
+  background: #336077;
+  color: #fff;
+
+  &:hover {
+    box-shadow: 0.5rem 0.5rem 0 0 shade(#336077, 32%);;
+  }
+}
+
+
+/* Tools
+   ========================================================================== */
+
+.tools {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: $global-spacing * 2;
+  display: flex;
+  flex-flow: row wrap;
+
+  .tools__list-item {
+    @include column(6/12, $cycle: 2);
+    display: flex;
+    flex: 0 1 auto;
+    margin-top: $global-spacing * 2;
+    min-height: 8rem;
+
+    @media #{$large-up} {
+      @include column(4/12, $cycle: 3);
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3) {
+      @media #{$large-up} {
+        margin-top: 0;
+      }
+    }
+  }
 }
