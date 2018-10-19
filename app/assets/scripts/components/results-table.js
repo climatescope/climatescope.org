@@ -6,7 +6,7 @@ import ReactTooltip from 'react-tooltip'
 import c from 'classnames'
 
 import { environment } from '../config'
-import { initializeArrayWithRange } from '../utils/utils'
+import { initializeArrayWithRange, padNumber } from '../utils/utils'
 import { LoadingSkeleton } from './loading-skeleton'
 
 const ParameterGraph = ({ parameters }) => (
@@ -99,22 +99,25 @@ export default class ResultsTable extends React.PureComponent {
   }
 
   renderRows () {
-    return (
-      <tr>
-        <td className='cell-rank'>001</td>
-        <td className='cell-country'>
-          <Link to='' title='Go to geography page'>Geography Name</Link>
-        </td>
-        <td>3.25</td>
-        <td className='cell-trendline'>¿trendline?</td>
-        <td>
-          <ParameterGraph
-            parameters={[{ id: 1 }, { id: 2 }, { id: 3 }]}
-          />
-        </td>
-        <td><em data-title='on-grid' className='label-grid label-grid-on'><span>on</span></em></td>
-      </tr>
-    )
+    const rows = initializeArrayWithRange(105)
+    return rows.map(r => {
+      return (
+        <tr key={r}>
+          <td className='cell-rank'>{padNumber(r + 1, 3)}</td>
+          <td className='cell-country'>
+            <Link to='' title='Go to geography page'>Geography Name</Link>
+          </td>
+          <td>3.25</td>
+          <td className='cell-trendline'>¿trendline?</td>
+          <td>
+            <ParameterGraph
+              parameters={[{ id: 1 }, { id: 2 }, { id: 3 }]}
+            />
+          </td>
+          <td><em data-title='on-grid' className='label-grid label-grid-on'><span>on</span></em></td>
+        </tr>
+      )
+    })
   }
 
   renderParamGraphTooltip () {

@@ -187,7 +187,7 @@ class Results extends React.Component {
             </Sticky>
             <div className='layout--results__body'>
               <ResultsMap />
-              <div className='row--contained' style={{ height: '100vh' }}>
+              <div className='row--contained'>
                 <ResultsTable
                   sortField={'rank'}
                   sortDirection={'asc'}

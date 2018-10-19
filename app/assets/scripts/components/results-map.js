@@ -8,6 +8,7 @@ import debounce from 'lodash.debounce'
 import { render } from 'react-dom'
 
 import { mbtoken, environment } from '../config'
+import { padNumber } from '../utils/utils';
 
 // set once
 mapboxgl.accessToken = mbtoken
@@ -30,9 +31,7 @@ const buildMarker = (countryId, value) => {
 
   if (value) {
     render((
-      <div className='country-marker highlight' data-tip={countryId} data-for='marker-tip'>
-        {value < 10 ? `0${value}` : value}
-      </div>
+      <div className='country-marker highlight' data-tip={countryId} data-for='marker-tip'>{padNumber(value, 3)}</div>
     ), el)
   } else {
     render(<div className='country-marker' data-tip={countryId} data-for='marker-tip' />, el)
@@ -92,7 +91,7 @@ export default class ResultsMap extends React.Component {
       this.mapLoaded = true
 
       // TODO: Contruct markers dynamically.
-      const marker1 = buildMarker('BR', 2)
+      const marker1 = buildMarker('BR', 8)
       const marker2 = buildMarker('CD')
 
       new mapboxgl.Marker(marker1)
