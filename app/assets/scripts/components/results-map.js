@@ -65,8 +65,9 @@ export default class ResultsMap extends React.Component {
     this.map = new mapboxgl.Map({
       center: [0, 0],
       container: this.refs.mapEl,
-      style: 'mapbox://styles/mapbox/streets-v9',
-      zoom: 4,
+      style: 'mapbox://styles/devseed/cjnfxlqb408x82spm5qcnrpav',
+      minZoom: 2,
+      zoom: 2,
       pitchWithRotate: false,
       dragRotate: false
     })
@@ -91,14 +92,14 @@ export default class ResultsMap extends React.Component {
       this.mapLoaded = true
 
       // TODO: Contruct markers dynamically.
-      const marker1 = buildMarker('PT', 2)
-      const marker2 = buildMarker('ES')
+      const marker1 = buildMarker('BR', 2)
+      const marker2 = buildMarker('CD')
 
       new mapboxgl.Marker(marker1)
-        .setLngLat([0, 0])
+        .setLngLat([-53.091638161221866, -10.781071947389492])
         .addTo(this.map)
       new mapboxgl.Marker(marker2)
-        .setLngLat([5, 5])
+        .setLngLat([23.65005956282201, -2.878351386823894])
         .addTo(this.map)
 
       // Call the map move event debouces with a leading execution to ensure
@@ -119,7 +120,7 @@ export default class ResultsMap extends React.Component {
         <article className='tooltip-inner'>
           <header className='tooltip__header'>
             <h1 className='tooltip__title'>
-              <a href='http://global-climatescope.org/en/country/uruguay/' title='View country'>Uruguay {countryId}</a>
+              <a href='#' title='View country'>{countryId}</a>
             </h1>
             <em className='label-grid label-grid-on' data-title='On-grid'>
               <span>On-grid</span>
@@ -138,7 +139,7 @@ export default class ResultsMap extends React.Component {
               <dt className='param-3'>Experience</dt>
               <dd>2.04 <small>15%</small></dd>
             </dl>
-            <a href='http://global-climatescope.org/en/country/uruguay/' className='bttn bttn-cta go' title='View country'>View country</a>
+            <a href='#' className='bttn bttn-cta go' title='View country'>View country</a>
           </div>
         </article>
       )
