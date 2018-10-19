@@ -8,7 +8,7 @@ import debounce from 'lodash.debounce'
 import { render } from 'react-dom'
 
 import { mbtoken, environment } from '../config'
-import { padNumber } from '../utils/utils';
+import { padNumber } from '../utils/utils'
 
 // set once
 mapboxgl.accessToken = mbtoken

@@ -19,6 +19,12 @@ const ParameterGraph = ({ parameters }) => (
   </div>
 )
 
+if (environment !== 'production') {
+  ParameterGraph.propTypes = {
+    parameters: T.array
+  }
+}
+
 export default class ResultsTable extends React.PureComponent {
   componentDidUpdate () {
     ReactTooltip.rebuild()

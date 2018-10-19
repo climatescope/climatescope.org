@@ -1,6 +1,6 @@
 'use strict'
 import React from 'react'
-import { PropTypes as T } from 'prop-types'
+// import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
