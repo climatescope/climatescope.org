@@ -24,6 +24,8 @@ const through2 = require('through2')
 // --------------------------- Variables -------------------------------------//
 // ---------------------------------------------------------------------------//
 
+const bs = browserSync.create()
+
 // The package.json
 var pkg
 
@@ -58,7 +60,7 @@ gulp.task('default', ['clean'], function () {
 })
 
 gulp.task('serve', ['vendorScripts', 'javascript', 'styles', 'jekyll'], function () {
-  browserSync({
+  bs.init({
     port: 3000,
     server: {
       baseDir: ['.tmp', '_site'],
@@ -76,7 +78,7 @@ gulp.task('serve', ['vendorScripts', 'javascript', 'styles', 'jekyll'], function
     'app/**/*.md',
     'app/assets/graphics/**/*',
     '!app/assets/icons/collecticons/**/*'
-  ], ['jekyll', reload])
+  ], ['jekyll', bs.reload()])
 
   gulp.watch('app/assets/styles/**/*.scss', ['styles'])
   // If templates change trigger the js task that will render the templates.
@@ -129,7 +131,7 @@ gulp.task('javascript', function () {
       .pipe($.sourcemaps.init({ loadMaps: true }))
       .pipe($.sourcemaps.write('./'))
       .pipe(gulp.dest('.tmp/assets/scripts'))
-      .pipe(reload({ stream: true }))
+      .pipe(bs.stream())
   }
 
   watcher
@@ -155,7 +157,7 @@ gulp.task('vendorScripts', function () {
     .pipe($.sourcemaps.init({ loadMaps: true }))
     .pipe($.sourcemaps.write('./'))
     .pipe(gulp.dest('.tmp/assets/scripts/'))
-    .pipe(reload({ stream: true }))
+    .pipe(bs.stream())
 })
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -246,7 +248,7 @@ gulp.task('styles', function () {
     }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/assets/styles'))
-    .pipe(reload({ stream: true }))
+    .pipe(bs.stream())
 })
 
 // After being rendered by jekyll process the html files. (merge css files, etc)
