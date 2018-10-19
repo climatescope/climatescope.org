@@ -56,11 +56,11 @@ export default class ResultsTable extends React.PureComponent {
         title: 'Sort by score',
         value: 'Score'
       },
-      {
-        id: 'trend',
-        sortable: false,
-        value: 'Trend'
-      },
+      // {
+      //   id: 'trend',
+      //   sortable: false,
+      //   value: 'Trend'
+      // },
       {
         id: 'graph',
         sortable: false,
@@ -114,7 +114,7 @@ export default class ResultsTable extends React.PureComponent {
             <Link to='' title='Go to geography page'>Geography Name</Link>
           </td>
           <td>3.25</td>
-          <td className='cell-trendline'>¿trendline?</td>
+          {/* <td className='cell-trendline'>¿trendline?</td> */}
           <td>
             <ParameterGraph
               parameters={[{ id: 1 }, { id: 2 }, { id: 3 }]}
