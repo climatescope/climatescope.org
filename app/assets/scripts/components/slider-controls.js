@@ -103,9 +103,9 @@ export class SliderControlGroup extends React.PureComponent {
 
     // Total of other sliders.
     const otherTotalVal = sumBy(objectToArray(updatedVals), val => val.__key === id ? 0 : val.value)
-    // Maximun allowed value to ensure that it doesn't go over 100.
-    const maxAllowed = 100 - otherTotalVal
-    updatedVals = updateValueProp(updatedVals, id, 'value', Math.min(sliderVal, maxAllowed))
+    // Allowed value to ensure that the sum doesn't go over or below 100.
+    const allowedSliderVal = 100 - otherTotalVal
+    updatedVals = updateValueProp(updatedVals, id, 'value', allowedSliderVal)
 
     // Trigger change.
     onChange(updatedVals)
