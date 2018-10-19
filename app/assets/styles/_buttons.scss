@@ -246,6 +246,35 @@ input[type=submit] {
   }
 }
 
+.bttn-group--vertical {
+  > .bttn {
+    clear: both;
+  //   width: 100%;
+    border-radius: $base-border-radius;
+  }
+
+  > .bttn:first-child:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    clip-path: inset(-100% -100% 0 -100%);
+  }
+
+  > .bttn:last-child:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    clip-path: inset(0 -100% -100% -100%);
+  }
+
+  > .bttn:not(:first-child):not(:last-child) {
+    border-radius: 0;
+    clip-path: inset(0 -100%);
+  }
+
+  > .bttn + .bttn {
+    margin-top: -$base-border-width;
+  }
+}
+
 .bttn-page-nav {
   padding: 2rem 0 3rem 0;
 }

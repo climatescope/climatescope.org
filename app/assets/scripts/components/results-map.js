@@ -81,6 +81,9 @@ export default class ResultsMap extends React.Component {
     // Disable map rotation using touch rotation gesture.
     this.map.touchZoomRotate.disableRotation()
 
+    // Disable scroll zoom
+    this.map.scrollZoom.disable()
+
     // Remove compass.
     document.querySelector('.mapboxgl-ctrl .mapboxgl-ctrl-compass').remove()
 
