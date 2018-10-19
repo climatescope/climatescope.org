@@ -114,10 +114,9 @@ h6, .hd-xxs {
   color: $primary-color;
 }
 
-.hd-param-1:before { background: $infograph-color-a; }
-.hd-param-2:before { background: $infograph-color-b; }
-.hd-param-3:before { background: $infograph-color-c; }
-.hd-param-4:before { background: $infograph-color-d; }
+.hd-param-1:before { background: $parameter-color-a; }
+.hd-param-2:before { background: $parameter-color-b; }
+.hd-param-3:before { background: $parameter-color-c; }
 
 [class*=' hd-'], [class^='hd-'] {
   b {

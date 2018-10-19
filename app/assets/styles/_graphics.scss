@@ -38,20 +38,17 @@
   }
 
   li.param-1 {
-    background-color: $infograph-color-a;
+    background-color: $parameter-color-a;
   }
 
   li.param-2 {
-    background-color: $infograph-color-b;
+    background-color: $parameter-color-b;
   }
 
   li.param-3 {
-    background-color: $infograph-color-c;
+    background-color: $parameter-color-c;
   }
 
-  li.param-4 {
-    background-color: $infograph-color-d;
-  }
   @media print {
     height: auto;
     list-style-type: disc; 
