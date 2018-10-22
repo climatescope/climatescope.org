@@ -273,6 +273,10 @@ a:active{
   }
 }
 
+#index-vis {
+  position: relative;
+}
+
 // STRUCTURE
 
 #app-container {
@@ -1471,34 +1475,6 @@ a.entry__contents {
 
   > *:last-child {
     margin-bottom: 0;
-  }
-}
-
-
-
-// IE8
-.lt-ie9 {
-  #index-viz {
-    display: none;
-  }
-}
-
-.eq-ie8 #ie8-nocando {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: 1900;
-  padding: 1rem;
-  color: tint($primary-color, 60%);
-  background: tint($primary-color, 20%);
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  text-align: center;
-
-  p {
-    margin: 0;
-    padding: 0;
   }
 }
 

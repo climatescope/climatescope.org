@@ -1,0 +1,117 @@
+/* ==========================================================================
+   Global: inpage
+   ========================================================================== */
+
+.inpage__header {
+  position: relative;
+  overflow: hidden;
+
+  > .inner {
+    @extend .row--contained;
+    position: relative;
+    z-index: 2;
+  }
+
+  .page--has-hero & {
+    @extend .antialiased;
+    color: #fff;
+    background: $base-color;
+    padding: ($global-spacing * 8) 0 ($global-spacing * 6) 0;
+  }
+}
+
+.inpage__headline {
+  margin-bottom: $global-spacing * 2;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.inpage__subtitle {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  margin: ($global-spacing / 4) 0;
+  font-family: $brand-font-family;
+  font-weight: $brand-font-bold;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+.inpage__details {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-column-end: span 8;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: ($global-spacing * 2) ($global-spacing * 6);
+    font-family: $brand-font-family;
+    font-weight: $brand-font-bold;
+
+    strong {
+      display: block;
+      font-size: 2rem;
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    
+    sub {
+      font-size: 50%;
+      vertical-align: 0.25em;
+    }
+
+    span {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      display: block;
+    }
+  }
+  
+  li {
+  }
+}
+
+.inpage__hero {
+  margin: 0;
+  padding: 0;
+
+  &, &-item {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-caption {
+    @extend .visually-hidden;
+  }
+}
+
+.inpage__body {
+  > .inner {
+    @extend .row--contained;
+  }
+}

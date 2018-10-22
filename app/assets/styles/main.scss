@@ -60,6 +60,9 @@
    ========================================================================== */
 
 @import "global/drops";
+@import "global/page";
+@import "global/inpage";
+
 
 // Climatescope's pages
 @import "pages/homepage";
@@ -68,15 +71,18 @@
 @import "pages/topic";
 @import "pages/updates";
 
-
-
 // Climatescope's blocks
 @import "sec-content";
 
-// Climatescope's print
-@import "print";
+/* Geographies
+   ========================================================================== */
+
+@import "geographies/single";
 
 // Vendor
 @import "vendor/react-tooltip";
 @import "vendor/react-paginate";
 @import "vendor/mapbox-gl";
+
+// Climatescope's print
+@import "print";

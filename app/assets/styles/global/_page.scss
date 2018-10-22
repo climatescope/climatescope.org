@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Global: page
+   ========================================================================== */
+
+.page__header,
+.site-header {
+  .page--has-hero & {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
