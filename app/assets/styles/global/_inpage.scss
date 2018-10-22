@@ -4,7 +4,6 @@
 
 .inpage__header {
   position: relative;
-  overflow: hidden;
 
   > .inner {
     @extend .row--contained;
@@ -21,7 +20,12 @@
 }
 
 .inpage__headline {
-  margin-bottom: $global-spacing * 2;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  > * {
+    grid-column: auto / span 8;
+  }
 
   > *:last-child {
     margin-bottom: 0;
@@ -49,46 +53,37 @@
   }
 }
 
+.inpage__title {
+  margin-bottom: $global-spacing * 2;
+}
+
 .inpage__details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: ($global-spacing * 2) ($global-spacing * 6);
+  font-family: $brand-font-family;
+  font-weight: $brand-font-bold;
 
-  > *:last-child {
-    margin-bottom: 0;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-column-end: span 8;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: ($global-spacing * 2) ($global-spacing * 6);
-    font-family: $brand-font-family;
-    font-weight: $brand-font-bold;
-
-    strong {
-      display: block;
-      font-size: 2rem;
-      line-height: 1;
-      margin-bottom: 0.25rem;
-    }
-    
-    sub {
-      font-size: 50%;
-      vertical-align: 0.25em;
-    }
-
-    span {
-      text-transform: uppercase;
-      font-size: 0.75rem;
-      line-height: 1rem;
-      display: block;
-    }
+  strong {
+    display: block;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0.25rem;
   }
   
-  li {
+  sub {
+    font-size: 50%;
+    vertical-align: 0.25em;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    display: block;
   }
 }
 
@@ -110,7 +105,24 @@
   }
 }
 
+.inpage__nav {
+  background: #fff;
+  box-shadow: 0 1px 0 0 $base-alpha-color;
+
+  > .inner {
+    @extend .row--contained;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .inpage__body {
+  padding: ($global-spacing * 6) 0;
+
   > .inner {
     @extend .row--contained;
   }

@@ -3,6 +3,7 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { StickyContainer, Sticky } from 'react-sticky'
 
 import { environment } from '../config'
 
@@ -10,6 +11,20 @@ import App from './app'
 import GeographyMap from '../components/geography-map'
 
 class Geography extends React.Component {
+  renderNavFn ({ style }) {
+    return (
+      <nav className='inpage__nav' style={style}>
+        <div className='inner'>
+          <ul>
+            <li><a href='#'>Item number 1</a></li>
+            <li><a href='#'>Item number 2</a></li>
+            <li><a href='#'>Item number 3</a></li>
+          </ul>
+        </div>
+      </nav>
+    )
+  }
+
   render () {
     return (
       <App className='page--has-hero'>
@@ -22,9 +37,7 @@ class Geography extends React.Component {
                   <Link to='/results' title='View results page'>View all markets</Link>
                 </p>
                 <h1 className='inpage__title'>Geography {this.props.match.params.geoIso}</h1>
-              </div>
-              <div className='inpage__details'>
-                <ul>
+                <ul className='inpage__details'>
                   <li>
                     <strong>26.28<sub>$Bn</sub></strong>
                     <span>GDP</span>
@@ -61,11 +74,17 @@ class Geography extends React.Component {
             <GeographyMap />
           </header>
 
-          <div className='inpage__body'>
-            <div className='inner'>
-              The content
+          <StickyContainer>
+            <Sticky>
+              {(props) => this.renderNavFn(props)}
+            </Sticky>
+
+            <div className='inpage__body'>
+              <div className='inner'>
+                The content
+              </div>
             </div>
-          </div>
+          </StickyContainer>
 
         </article>
       </App>
