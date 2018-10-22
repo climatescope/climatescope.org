@@ -68,15 +68,21 @@
 @import "pages/topic";
 @import "pages/updates";
 
-
-
 // Climatescope's blocks
 @import "sec-content";
 
 // Climatescope's print
 @import "print";
 
-// Vendor
+
+/* Playground
+   ========================================================================== */
+
+@import "playground/global";
+
+
+/* Vendor
+   ========================================================================== */
 @import "vendor/react-tooltip";
 @import "vendor/react-paginate";
 @import "vendor/mapbox-gl";
