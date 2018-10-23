@@ -79,7 +79,15 @@
 
 @import "geographies/single";
 
-// Vendor
+
+/* Playground
+   ========================================================================== */
+
+@import "playground/global";
+
+
+/* Vendor
+   ========================================================================== */
 @import "vendor/react-tooltip";
 @import "vendor/react-paginate";
 @import "vendor/mapbox-gl";

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Playground: Global
+   ========================================================================== */
+
+.par-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $global-spacing * 2;
+  background: yellow;
+}
+
+.par-section__header {
+  grid-column: auto / span 3;
+  grid-row: span 1;
+}
+
+.info-card--large {
+  grid-column: auto / span 3;
+  grid-row: span 1;
+}
+
+.info-card--medium {
+  grid-column: auto / span 2;
+  grid-row: span 1;
+}
