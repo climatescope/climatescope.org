@@ -51,6 +51,8 @@ $brand-font-family: "Klavika", "Helvetica Neue", Helvetica, Arial, "Lucida Grand
 $brand-font-weight: normal;
 $brand-font-bold: 700;
 
+$base-font-color: $body-font-color;
+
 // We use these to make sure border radius matches unless we want it different.
 $global-radius: 0.25rem;
 $global-rounded: 60rem;

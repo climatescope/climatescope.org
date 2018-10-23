@@ -80,9 +80,123 @@ class Geography extends React.Component {
             </Sticky>
 
             <div className='inpage__body'>
-              <div className='inner'>
-                The content
-              </div>
+
+
+              <section className='par-section par-section--alpha'>
+                <div className='par-section__contents'>
+                  <header className='par-section__header'>
+                    <h1 className='par-section__title'>Section title</h1>
+                    <div className='par-section__description'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </header>
+
+                  <article className='info-card info-card--large info-card-1'>
+                    <h1 className='info-card__title'>Card title</h1>
+                    <div className='info-card__statement'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
+                    </div>
+                  </article>
+
+                  <article className='info-card info-card--small info-card--dark info-card-2'>
+                    <h1 className='info-card__title'>Card title</h1>
+                    <div className='info-card__statement'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
+                    </div>
+                  </article>
+
+                  <article className='info-card info-card--small info-card--light info-card-3'>
+                    <h1 className='info-card__title'>Card title</h1>
+                    <div className='info-card__statement'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
+                    </div>
+                  </article>
+
+                  <article className='info-card info-card--small info-card--dark info-card-4'>
+                    <h1 className='info-card__title'>Card title</h1>
+                    <div className='info-card__statement'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
+                    </div>
+                  </article>
+
+                  <article className='info-card info-card--medium info-card--dark info-card-5'>
+                    <h1 className='info-card__title'>Card title</h1>
+                    <div className='info-card__statement'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
+                    </div>
+                  </article>
+                </div>
+              </section>
+
+
+              <section className='par-section par-section--alpha'>
+                <div className='par-section__contents'>
+                  <header className='par-section__header'>
+                    <h1 className='par-section__title'>Section title</h1>
+                    <div className='par-section__description'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                  </header>
+
+                  <article className='info-card info-card--small info-card--light'>
+                    <h1 className='info-card__title'>Card title</h1>
+                    <div className='info-card__statement'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
+                    </div>
+                  </article>
+
+                  <article className='info-card info-card--small info-card--dark'>
+                    <h1 className='info-card__title'>Card title</h1>
+                    <div className='info-card__statement'>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
+                    </div>
+                  </article>
+
+                  <article className='info-card info-card--large'>
+                    <h1 className='info-card__title visually-hidden'>Features</h1>
+                    <table className='feature-table'>
+                      <thead>
+                        <tr>
+                          <th><span className='visually-hidden'>Feature</span></th>
+                          <th>Yes</th>
+                          <th>No</th>
+                          <th>Somewhat</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>
+                            <h2>Standardized PPAS</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                          </th>
+                          <td><span className='feature-checked'>Checked</span></td>
+                          <td><span className='feature-unchecked'>Unchecked</span></td>
+                          <td><span className='feature-unchecked'>Unchecked</span></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <h2>PPAS of sufficient duration</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+                          </th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <th>
+                            <h2>Purchase obligation</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor?</p>
+                          </th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </article>
+                </div>
+              </section>
+
             </div>
           </StickyContainer>
 

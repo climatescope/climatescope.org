@@ -2,7 +2,45 @@
    Geographies: single
    ========================================================================== */
 
-.page--geography {
-  .site-header {
+.inpage--geography {
+  .inpage__body {
+    padding: 0;
+  }
+}
+
+.par-section {
+  padding: ($global-spacing * 6) 0;
+
+  &:nth-child(odd) {
+    background: #fff;
+  }
+
+  &:nth-child(even) {
+    background: tint($base-color, 96%);
+  }
+}
+
+.par-section__contents {
+  @extend .row--contained;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: $global-spacing * 2;
+}
+
+.par-section__header {
+  grid-column: auto / span 3;
+  grid-row: span 1;
+}
+
+.par-section__title {
+  @include heading(1.75rem); // 28px
+  text-transform: none;
+}
+
+.par-section__description {
+  color: tint($base-color, 48%);
+
+  > *:last-child {
+    margin-bottom: 0;
   }
 }
