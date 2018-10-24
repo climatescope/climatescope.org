@@ -27,7 +27,7 @@ export function receiveCountries (data, error = null) {
 export function fetchCountries () {
   return fetchDispatchCacheFactory({
     statePath: 'countries.countriesList',
-    url: `${baseurl}/api/countries.json`,
+    url: `${baseurl}/api/results.json`,
     requestFn: requestCountries,
     receiveFn: receiveCountries
   })
@@ -71,7 +71,7 @@ export function receiveCountry (id, data, error = null) {
 export function fetchCountry (countryId) {
   return fetchDispatchCacheFactory({
     statePath: ['countries', 'individualCountries', countryId],
-    url: `${baseurl}/api/countries/${countryId}.json`,
+    url: `${baseurl}/api/results/${countryId}.json`,
     requestFn: requestCountry.bind(this, countryId),
     receiveFn: receiveCountry.bind(this, countryId)
   })

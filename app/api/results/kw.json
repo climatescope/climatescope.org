@@ -1,0 +1,56 @@
+{
+  "name": "Kuwait",
+  "region": {
+    "id": "mena",
+    "name": "Middle East and North Africa"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "weight": 0.4,
+      "name": "fundamentals",
+      "data": [
+        {
+          "rank": 72,
+          "value": 1.6865501804,
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "weight": 0.4,
+      "name": "opportunities",
+      "data": [
+        {
+          "rank": 13,
+          "value": 1.4061882843,
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "weight": 0.2,
+      "name": "experience",
+      "data": [
+        {
+          "rank": 93,
+          "value": 0.3028271567,
+          "year": 2018
+        }
+      ]
+    }
+  ],
+  "score": {
+    "data": [
+      {
+        "rank": 71,
+        "value": 1.2705289504,
+        "year": 2018
+      }
+    ]
+  },
+  "grid": "on",
+  "iso": "kw"
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Central African Republic",
+  "region": {
+    "id": "africa",
+    "name": "Africa"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "weight": 0.4,
+      "name": "fundamentals",
+      "data": [
+        {
+          "rank": 95,
+          "value": 1.0578823954,
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "weight": 0.4,
+      "name": "opportunities",
+      "data": [
+        {
+          "rank": 82,
+          "value": 0.6417986804,
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "weight": 0.2,
+      "name": "experience",
+      "data": [
+        {
+          "rank": 12,
+          "value": 2.0784375,
+          "year": 2018
+        }
+      ]
+    }
+  ],
+  "score": {
+    "data": [
+      {
+        "rank": 77,
+        "value": 1.2090002428,
+        "year": 2018
+      }
+    ]
+  },
+  "grid": "off",
+  "iso": "cf"
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Brazil",
+  "region": {
+    "id": "lac",
+    "name": "Latin America and the Caribbean"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "weight": 0.4,
+      "name": "fundamentals",
+      "data": [
+        {
+          "rank": 1,
+          "value": 3.4778359325,
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "weight": 0.4,
+      "name": "opportunities",
+      "data": [
+        {
+          "rank": 19,
+          "value": 1.2383158146,
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "weight": 0.2,
+      "name": "experience",
+      "data": [
+        {
+          "rank": 15,
+          "value": 1.9056190861,
+          "year": 2018
+        }
+      ]
+    }
+  ],
+  "score": {
+    "data": [
+      {
+        "rank": 3,
+        "value": 2.5249016914,
+        "year": 2018
+      }
+    ]
+  },
+  "grid": "on",
+  "iso": "br"
+}

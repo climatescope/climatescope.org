@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Armenia",
+    "region": {
+      "id": "asia",
+      "name": "Asia"
+    },
+    "topics": [
+      {
+        "id": "fundamentals",
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 25,
+            "value": 2.5105642677,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "opportunities",
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 76,
+            "value": 0.7137393934,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "experience",
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 28,
+            "value": 1.5740603201,
+            "year": 2018
+          }
+        ]
+      }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 26,
+          "value": 1.8272320622,
+          "year": 2018
+        }
+      ]
+    },
+    "grid": "on",
+    "iso": "am"
+  },
+  {
+    "name": "Brazil",
+    "region": {
+      "id": "lac",
+      "name": "Latin America and the Caribbean"
+    },
+    "topics": [
+      {
+        "id": "fundamentals",
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 1,
+            "value": 3.4778359325,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "opportunities",
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 19,
+            "value": 1.2383158146,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "experience",
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 15,
+            "value": 1.9056190861,
+            "year": 2018
+          }
+        ]
+      }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 3,
+          "value": 2.5249016914,
+          "year": 2018
+        }
+      ]
+    },
+    "grid": "on",
+    "iso": "br"
+  },
+  {
+    "name": "Central African Republic",
+    "region": {
+      "id": "africa",
+      "name": "Africa"
+    },
+    "topics": [
+      {
+        "id": "fundamentals",
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 95,
+            "value": 1.0578823954,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "opportunities",
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 82,
+            "value": 0.6417986804,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "experience",
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 12,
+            "value": 2.0784375,
+            "year": 2018
+          }
+        ]
+      }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 77,
+          "value": 1.2090002428,
+          "year": 2018
+        }
+      ]
+    },
+    "grid": "off",
+    "iso": "cf"
+  },
+  {
+    "name": "Kuwait",
+    "region": {
+      "id": "mena",
+      "name": "Middle East and North Africa"
+    },
+    "topics": [
+      {
+        "id": "fundamentals",
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 72,
+            "value": 1.6865501804,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "opportunities",
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 13,
+            "value": 1.4061882843,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "experience",
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 93,
+            "value": 0.3028271567,
+            "year": 2018
+          }
+        ]
+      }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 71,
+          "value": 1.2705289504,
+          "year": 2018
+        }
+      ]
+    },
+    "grid": "on",
+    "iso": "kw"
+  },
+  {
+    "name": "Ukraine",
+    "region": {
+      "id": "eu",
+      "name": "Europe"
+    },
+    "topics": [
+      {
+        "id": "fundamentals",
+        "weight": 0.4,
+        "name": "fundamentals",
+        "data": [
+          {
+            "rank": 55,
+            "value": 1.9878023674,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "opportunities",
+        "weight": 0.4,
+        "name": "opportunities",
+        "data": [
+          {
+            "rank": 32,
+            "value": 1.1093728049,
+            "year": 2018
+          }
+        ]
+      },
+      {
+        "id": "experience",
+        "weight": 0.2,
+        "name": "experience",
+        "data": [
+          {
+            "rank": 48,
+            "value": 1.1800076588,
+            "year": 2018
+          }
+        ]
+      }
+    ],
+    "score": {
+      "data": [
+        {
+          "rank": 56,
+          "value": 1.5662462996,
+          "year": 2018
+        }
+      ]
+    },
+    "grid": "on",
+    "iso": "ua"
+  }
+]

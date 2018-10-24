@@ -1,0 +1,56 @@
+{
+  "name": "Armenia",
+  "region": {
+    "id": "asia",
+    "name": "Asia"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "weight": 0.4,
+      "name": "fundamentals",
+      "data": [
+        {
+          "rank": 25,
+          "value": 2.5105642677,
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "weight": 0.4,
+      "name": "opportunities",
+      "data": [
+        {
+          "rank": 76,
+          "value": 0.7137393934,
+          "year": 2018
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "weight": 0.2,
+      "name": "experience",
+      "data": [
+        {
+          "rank": 28,
+          "value": 1.5740603201,
+          "year": 2018
+        }
+      ]
+    }
+  ],
+  "score": {
+    "data": [
+      {
+        "rank": 26,
+        "value": 1.8272320622,
+        "year": 2018
+      }
+    ]
+  },
+  "grid": "on",
+  "iso": "am"
+}
