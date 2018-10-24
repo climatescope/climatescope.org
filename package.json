@@ -105,6 +105,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.defaultsdeep": "^4.6.0",
     "lodash.get": "^4.4.2",
+    "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
     "mapbox-gl": "^0.50.0",
     "qs": "^6.5.2",

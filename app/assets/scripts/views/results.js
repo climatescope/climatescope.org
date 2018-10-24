@@ -3,10 +3,13 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import c from 'classnames'
+import orderBy from 'lodash.orderby'
 import { StickyContainer, Sticky } from 'react-sticky'
 
 import { environment } from '../config'
 import QsState from '../utils/qs-state'
+import { fetchCountries } from '../redux/countries'
+import { wrapApiResult } from '../utils/utils'
 
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
@@ -22,6 +25,7 @@ class Results extends React.Component {
     // Bindings
     this.onWeightsResetClick = this.onWeightsResetClick.bind(this)
     this.onSliderGroupChange = this.onSliderGroupChange.bind(this)
+    this.onSortChange = this.onSortChange.bind(this)
 
     this.sliders = [
       {
@@ -78,7 +82,11 @@ class Results extends React.Component {
 
     this.state = {
       ...this.qsState.getState(this.props.location.search.substr(1)),
-      sliders: this.getInitialSliderState()
+      sliders: this.getInitialSliderState(),
+      sort: {
+        field: 'rank',
+        dir: 'asc'
+      }
     }
   }
 
@@ -90,6 +98,10 @@ class Results extends React.Component {
         locked: false
       }
     }), {})
+  }
+
+  componentDidMount () {
+    this.props.fetchCountries()
   }
 
   onWeightsResetClick (e) {
@@ -113,6 +125,12 @@ class Results extends React.Component {
       // Update location.
       const qString = this.qsState.getQs(this.state)
       this.props.history.push({ search: qString })
+    })
+  }
+
+  onSortChange (field, dir) {
+    this.setState({
+      sort: { field, dir }
     })
   }
 
@@ -177,6 +195,46 @@ class Results extends React.Component {
     )
   }
 
+  renderResultsTable () {
+    const { isReady, getData } = this.props.countriesList
+    const { sliders } = this.state
+
+    let tableData = getData([]).map(geography => {
+      const topics = geography.topics.map(t => {
+        return {
+          id: t.id,
+          name: t.name,
+          // The first is always the most recent year.
+          value: t.data[0].value,
+          weight: sliders[t.id].value
+        }
+      })
+      return {
+        iso: geography.iso,
+        name: geography.name,
+        grid: geography.grid === 'on',
+        topics,
+        score: topics.reduce((acc, t) => acc + t.value * (t.weight / 100), 0)
+      }
+    })
+
+    // Sort by the score.
+    tableData = orderBy(tableData, 'score', 'desc')
+
+    // Add the rank. After scoring, the rank is the index.
+    tableData = tableData.map((geography, idx) => ({ ...geography, rank: idx + 1 }))
+
+    return (
+      <ResultsTable
+        sortField={this.state.sort.field}
+        sortDirection={this.state.sort.dir}
+        data={tableData}
+        onSort={this.onSortChange}
+        loading={!isReady()}
+      />
+    )
+  }
+
   render () {
     return (
       <App>
@@ -188,12 +246,7 @@ class Results extends React.Component {
             <div className='layout--results__body'>
               <ResultsMap />
               <div className='row--contained'>
-                <ResultsTable
-                  sortField={'rank'}
-                  sortDirection={'asc'}
-                  onSort={() => {}}
-                  loading={false}
-                />
+                {this.renderResultsTable()}
               </div>
             </div>
           </section>
@@ -205,20 +258,22 @@ class Results extends React.Component {
 
 if (environment !== 'production') {
   Results.propTypes = {
-    location: T.object,
     history: T.object,
-    match: T.object,
-    page: T.object
+    location: T.object,
+    fetchCountries: T.func,
+    countriesList: T.object
   }
 }
 
 function mapStateToProps (state, props) {
   return {
+    countriesList: wrapApiResult(state.countries.list)
   }
 }
 
 function dispatcher (dispatch) {
   return {
+    fetchCountries: (...args) => dispatch(fetchCountries(...args))
   }
 }
 

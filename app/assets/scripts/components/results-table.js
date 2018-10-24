@@ -3,17 +3,18 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { Link } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
+import orderBy from 'lodash.orderby'
 import c from 'classnames'
 
 import { environment } from '../config'
-import { initializeArrayWithRange, padNumber } from '../utils/utils'
+import { initializeArrayWithRange, padNumber, round } from '../utils/utils'
 import { LoadingSkeleton } from './loading-skeleton'
 
-const ParameterGraph = ({ parameters }) => (
+const ParameterGraph = ({ countryIso, data }) => (
   <div className='table-graph'>
-    <ul className='table-bar' data-tip='countryid' data-for='param-graph-tooltip'>
-      {parameters.map(param => (
-        <li key={param.id} className={`param-${param.id}`} style={{ width: '20%' }}><span className='visually-hidden'>10</span>&nbsp;</li>
+    <ul className='table-bar' data-tip={countryIso} data-for='param-graph-tooltip'>
+      {data.map(({ id, value, weight }, idx) => (
+        <li key={id} className={`param-${idx + 1}`} style={{ width: `${value * (weight / 100) * (100 / 5)}%` }}><span className='visually-hidden'>{value}</span>&nbsp;</li>
       ))}
     </ul>
   </div>
@@ -21,7 +22,8 @@ const ParameterGraph = ({ parameters }) => (
 
 if (environment !== 'production') {
   ParameterGraph.propTypes = {
-    parameters: T.array
+    countryIso: T.string,
+    data: T.array
   }
 }
 
@@ -32,8 +34,14 @@ export default class ResultsTable extends React.PureComponent {
 
   onSort (field, e) {
     e.preventDefault()
-    const { sortDirection, onSort } = this.props
-    onSort(field, sortDirection === 'asc' ? 'desc' : 'asc')
+    const { sortField, sortDirection, onSort } = this.props
+    if (sortField === field) {
+      // Same field, change direction.
+      onSort(sortField, sortDirection === 'asc' ? 'desc' : 'asc')
+    } else {
+      // Different fields, reset direction.
+      onSort(field, 'asc')
+    }
   }
 
   renderTableHeader () {
@@ -45,7 +53,7 @@ export default class ResultsTable extends React.PureComponent {
         value: 'Global rank'
       },
       {
-        id: 'geography',
+        id: 'name',
         sortable: true,
         title: 'Sort by geography',
         value: 'Geography'
@@ -56,11 +64,6 @@ export default class ResultsTable extends React.PureComponent {
         title: 'Sort by score',
         value: 'Score'
       },
-      // {
-      //   id: 'trend',
-      //   sortable: false,
-      //   value: 'Trend'
-      // },
       {
         id: 'graph',
         sortable: false,
@@ -105,38 +108,47 @@ export default class ResultsTable extends React.PureComponent {
   }
 
   renderRows () {
-    const rows = initializeArrayWithRange(105)
-    return rows.map(r => {
+    const { data, sortField, sortDirection } = this.props
+    const rows = orderBy(data, sortField, sortDirection)
+
+    return rows.map(({ iso, score, rank, name, topics, grid }) => {
       return (
-        <tr key={r}>
-          <td className='cell-rank'>{padNumber(r + 1, 3)}</td>
+        <tr key={iso}>
+          <td className='cell-rank'>{padNumber(rank, 3)}</td>
           <td className='cell-country'>
-            <Link to='' title='Go to geography page'>Geography Name</Link>
+            <Link to={`/results/${iso}`} title={`Go to ${name} page`}>{name}</Link>
           </td>
-          <td>3.25</td>
-          {/* <td className='cell-trendline'>¿trendline?</td> */}
+          <td>{round(score)}</td>
           <td>
             <ParameterGraph
-              parameters={[{ id: 1 }, { id: 2 }, { id: 3 }]}
+              countryIso={iso}
+              data={topics}
             />
           </td>
-          <td><em data-title='on-grid' className='label-grid label-grid-on'><span>on</span></em></td>
+          <td>
+            <em data-title={grid ? 'on-grid' : 'off-grid'} className={c('label-grid', { 'label-grid-on': grid, 'label-grid-off': !grid })}>
+              <span>{grid ? 'on' : 'off'}</span>
+            </em>
+          </td>
         </tr>
       )
     })
   }
 
   renderParamGraphTooltip () {
-    const popoverContent = (countryId) => {
+    const popoverContent = (countryIso) => {
+      if (!countryIso) return null
+      const country = this.props.data.find(c => c.iso === countryIso)
+
       return (
         <article className='tooltip-inner'>
           <dl className='params-legend'>
-            <dt className='param-1'>Fundamentals</dt>
-            <dd>3.00<small>20%</small></dd>
-            <dt className='param-2'>Opportunities</dt>
-            <dd>3.20<small>20%</small></dd>
-            <dt className='param-3'>Experience</dt>
-            <dd>3.40<small>20%</small></dd>
+            {country.topics.map(({ id, name, value, weight }, idx) => (
+              <React.Fragment key={idx}>
+                <dt className={`param-${idx + 1}`}>{name}</dt>
+                <dd>{round(value)}<small>{weight}%</small></dd>
+              </React.Fragment>
+            ))}
           </dl>
         </article>
       )
@@ -174,9 +186,10 @@ export default class ResultsTable extends React.PureComponent {
 
 if (environment !== 'production') {
   ResultsTable.propTypes = {
+    onSort: T.func,
     sortField: T.string,
     sortDirection: T.string,
-    loading: T.bool,
-    onSort: T.func
+    data: T.array,
+    loading: T.bool
   }
 }
