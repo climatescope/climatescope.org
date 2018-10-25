@@ -17,41 +17,30 @@ export default class GeographyMap extends React.Component {
   initMap () {
     this.map = new mapboxgl.Map({
       container: this.refs.mapEl,
-      style: 'mapbox://styles/devseed/cjna3z2oq3t8e2rppvva47o0e',
+      style: 'mapbox://styles/climatescope/cjnoj0lpf1b7d2sqqp31ef6c9',
       minZoom: 2,
       zoom: 2,
       center: [-60.646, -26.153],
       interactive: false
     })
 
-    window.map = this.map
-
-    // this.map.addControl(new mapboxgl.NavigationControl(), 'top-left')
-
-    // // Disable map rotation using right click + drag.
-    // this.map.dragRotate.disable()
-
-    // // Disable map rotation using touch rotation gesture.
-    // this.map.touchZoomRotate.disableRotation()
-
-    // // Disable scroll zoom
-    // this.map.scrollZoom.disable()
-
-    // // Remove compass.
-    // document.querySelector('.mapboxgl-ctrl .mapboxgl-ctrl-compass').remove()
-
     this.map.on('load', () => {
       this.mapLoaded = true
-      const countryISO = 'PRY'
+      const geoISO = this.props.geographyISO
+
+      this.map.setFilter('ne-countries-contour', ['==', 'ISO_A2', geoISO])
+      this.map.setFilter('ne-countries', ['!=', 'ISO_A2', geoISO])
+      this.map.setFilter('ne-capitals-bullet', ['==', 'ISO_A2', geoISO])
+      this.map.setFilter('ne-capitals-label', ['==', 'ISO_A2', geoISO])
 
       // Get the width of the map to calculate the offset.
       // It's limited to the max content width of 1280px
       const mapWidth = Math.min(1280, this.refs.mapEl.getBoundingClientRect().width)
 
-      const feats = this.map.querySourceFeatures('composite', { sourceLayer: 'countries-9fgbap' })
-      const currentCountry = feats.find(f => f.properties.ISO_A3 === countryISO)
+      const feats = this.map.querySourceFeatures('composite', { sourceLayer: 'ne_10m_admin_0_countries-aqr028' })
+      const currentCountry = feats.find(f => f.properties.ISO_A2 === geoISO)
       if (!currentCountry) {
-        console.warn('Country not found on source:', countryISO)
+        console.warn('Country not found on source:', geoISO)
       }
       const bounds = bbox(currentCountry)
       this.map.fitBounds([ [bounds[0], bounds[1]], [bounds[2], bounds[3]] ], {
@@ -74,8 +63,6 @@ export default class GeographyMap extends React.Component {
 
 if (environment !== 'production') {
   GeographyMap.propTypes = {
-    fetchPage: T.func,
-    match: T.object,
-    page: T.object
+    geographyISO: T.string
   }
 }

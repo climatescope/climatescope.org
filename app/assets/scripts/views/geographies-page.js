@@ -7,11 +7,15 @@ import { StickyContainer, Sticky } from 'react-sticky'
 import { configureAnchors } from 'react-scrollable-anchor'
 
 import { environment } from '../config'
+import { fetchCountry } from '../redux/countries'
+import { getFromState, wrapApiResult } from '../utils/utils'
 
 import App from './app'
+import UhOh from './uhoh'
 import Dropdown from '../components/dropdown'
 import GeographyMap from '../components/geography-map'
 import { ParSection, ParSectionHeader, AreaBeta, AreaAlpha, ParCard } from '../components/geography-params'
+import { LoadingSkeleton } from '../components/loading-skeleton'
 
 configureAnchors({ offset: -76 })
 
@@ -119,7 +123,24 @@ if (environment !== 'production') {
 }
 
 class Geography extends React.Component {
+  componentDidMount () {
+    this.props.fetchCountry(this.props.match.params.geoIso)
+  }
+
+  componentDidUpdate (prevProps) {
+    if (prevProps.match.params.geoIso !== this.props.match.params.geoIso) {
+      this.props.fetchCountry(this.props.match.params.geoIso)
+    }
+  }
+
   render () {
+    const { isReady, hasError, getData } = this.props.country
+    const country = getData()
+
+    if (hasError()) {
+      return <UhOh />
+    }
+
     return (
       <App className='page--has-hero'>
         <article className='inpage inpage--geography'>
@@ -130,7 +151,9 @@ class Geography extends React.Component {
                 <p className='inpage__subtitle'>
                   <Link to='/results' title='View results page'>View all markets</Link>
                 </p>
-                <h1 className='inpage__title'>Geography {this.props.match.params.geoIso}</h1>
+                <h1 className='inpage__title'>
+                  {isReady() ? country.name : <LoadingSkeleton size='large' type='heading' inline />}
+                </h1>
                 <ul className='inpage__details'>
                   <li>
                     <strong>26.28<sub>$Bn</sub></strong>
@@ -164,7 +187,9 @@ class Geography extends React.Component {
                 </ul>
               </div>
             </div>
-            <GeographyMap />
+            <GeographyMap
+              geographyISO={isReady() ? country.iso.toUpperCase() : ''}
+            />
           </header>
 
           <StickyContainer>
@@ -390,17 +415,20 @@ class Geography extends React.Component {
 
 if (environment !== 'production') {
   Geography.propTypes = {
-    match: T.object
+    match: T.object,
+    country: T.object
   }
 }
 
 function mapStateToProps (state, props) {
   return {
+    country: wrapApiResult(getFromState(state.countries.individualCountries, props.match.params.geoIso))
   }
 }
 
 function dispatcher (dispatch) {
   return {
+    fetchCountry: (...args) => dispatch(fetchCountry(...args))
   }
 }
 
