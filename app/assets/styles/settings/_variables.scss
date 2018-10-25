@@ -19,7 +19,7 @@ $info-color: #499DD2;                                   // Blue
 
 /* Helpers */
 
-$link-color: $primary-color;
+$link-color: $accent-color;
 $base-alpha-color: rgba($base-color, 0.08);
 
 /* Infographic */
@@ -53,7 +53,7 @@ $heading-font-family: "Klavika", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $heading-font-light: 300;
 $heading-font-regular: 400;
 $heading-font-bold: 700;
-$heading-font-weight: $heading-font-regular;
+$heading-font-weight: $heading-font-bold;
 
 
 /* Decoration
@@ -64,7 +64,7 @@ $heading-font-weight: $heading-font-regular;
 $base-border-radius: 0.25rem;
 $full-border-radius: 100vh;
 
-$base-border-width: 2px;
+$base-border-width: 1px;
 
 
 /* Sizing, spacing and media queries
@@ -82,7 +82,7 @@ $global-spacing: 1rem;
 
 /* Rows */
 
-$row-min-width: 320px;
+$row-min-width: 768px;
 $row-max-width: 1280px;
 $jeet-max-width: $row-max-width; // reset jeet.gs max width
 

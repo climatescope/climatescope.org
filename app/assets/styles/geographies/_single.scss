@@ -21,7 +21,7 @@
 }
 
 .par-section__contents {
-  @extend .row--centered;
+  @extend .row, .row--centered;
   display: grid;
   grid-gap: $global-spacing * 2;
 }

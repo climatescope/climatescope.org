@@ -17,7 +17,9 @@
   text-shadow: none;
   border: 0;
   border-radius: $base-border-radius;
-  font-weight: $base-font-bold;
+  text-transform: uppercase;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
   cursor: pointer;
 
   /* States */

@@ -10,8 +10,8 @@ import { environment, appEdition } from '../config'
 export default class PageFooter extends React.PureComponent {
   render () {
     return (
-      <footer id='site-footer' role='contentinfo'>
-        <div className='row--contained'>
+      <footer className='page__footer' role='contentinfo'>
+        <div className='inner'>
           <nav className='ftr-nav'>
             <div className='ftr-nav__block'>
               <h2 className='ftr-title'>Browse</h2>
@@ -50,7 +50,7 @@ export default class PageFooter extends React.PureComponent {
         </div>
 
         <div className='ftr-credits'>
-          <div className='row--contained'>
+          <div className='inner'>
             <p>2012-{appEdition} Climatescope. <Link to='/license' title='About the license'>View license</Link>.</p>
           </div>
         </div>

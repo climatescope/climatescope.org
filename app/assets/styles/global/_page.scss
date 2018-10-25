@@ -2,17 +2,145 @@
    Global: page
    ========================================================================== */
 
-.page__header,
-.site-header {
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+/* Header
+   ========================================================================== */
+
+.page__header {
+  @extend .antialiased;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  padding: ($global-spacing) 0;
+  background: $accent-color;
+  color: #fff;
+
+  /* Animation */
+  animation: reveal 0.32s ease 0s 1;
+
+  @include media(large-up) {
+    padding: ($global-spacing * 2) 0;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    pointer-events: none;
+  }
+
+  &::before {
+    background-image: url(../graphics/layout/hero-17-comp.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    z-index: 1;
+  }
+
+  &::after {
+    background: rgba($base-color, 0.48);
+    z-index: 2;
+  }
+
   .page--has-hero & {
     position: absolute;
-    width: 100%;
-    z-index: 100;
     background: none;
+    color: #fff;
 
     &::before,
     &::after {
       display: none;
     }
   }
+
+  > * {
+    position: relative;
+    z-index: 3;
+  }
+
+  > .inner {
+    @extend .row, .row--centered;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.page__title {
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include media(large-up) {
+    font-size: 1.5rem;
+  }
+
+  a {
+    display: block;
+  }
+
+  em {
+    font-style: normal;
+    opacity: 0.64;
+  }
+}
+
+.page__prime-nav {
+  display: flex;
+  margin: 0 0 0 auto;
+  color: inherit;
+  padding-left: $global-spacing;
+}
+
+
+/* Global menu */
+
+.global-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  margin: 0;
+  padding-left: $global-spacing;
+
+  > *:not(:last-child) {
+    margin-right: $global-spacing / 2;
+  }
+}
+
+.global-menu__link {
+  @extend .button, .button--achromic-plain;
+
+  &--active {
+    @extend .button--active;
+  }
+}
+
+
+/* Body
+   ========================================================================== */
+
+.page__body {
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+
+  /* Animation */
+  animation: reveal 0.48s ease 0s 1;
 }
