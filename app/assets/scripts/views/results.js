@@ -31,18 +31,15 @@ class Results extends React.Component {
     this.sliders = [
       {
         id: 'fundamentals',
-        name: 'Fundamentals',
-        startingValue: 50
+        name: 'Fundamentals'
       },
       {
         id: 'opportunities',
-        name: 'Opportunities',
-        startingValue: 25
+        name: 'Opportunities'
       },
       {
         id: 'experience',
-        name: 'Experience',
-        startingValue: 25
+        name: 'Experience'
       }
     ]
 
@@ -68,7 +65,7 @@ class Results extends React.Component {
     return this.sliders.reduce((acc, v) => ({
       ...acc,
       [v.id]: {
-        value: v.startingValue,
+        value: 0,
         locked: false
       }
     }), {})
@@ -76,6 +73,27 @@ class Results extends React.Component {
 
   componentDidMount () {
     this.props.fetchGeographies()
+      .then(() => {
+        // Update slider starting values.
+        const { isReady, getData } = this.props.geographiesList
+        if (isReady()) {
+          // All geographies have the same topics. Acess 1st one.
+          const topics = getData()[0].topics
+          let sliders = this.state.sliders
+          // Update the slider values.
+          topics.forEach(t => {
+            sliders = {
+              ...sliders,
+              [t.id]: {
+                ...sliders[t.id],
+                value: t.weight * 100
+              }
+            }
+          })
+
+          this.setState({ sliders })
+        }
+      })
   }
 
   onWeightsResetClick (e) {
