@@ -21,25 +21,25 @@ mapboxgl.accessToken = mbtoken
 /**
  * Create a maker to use on the map.
  * It adds over mouse events to show the marker tooltip. The marker passes
- * the country id to the tooltip which will be used to know what content to
+ * the geography iso to the tooltip which will be used to know what content to
  * render on the tooltip.
  *
- * @param {string} countryId Country id. This will be passes to the tooltip
+ * @param {string} geoId Geography id. This will be passes to the tooltip
  * @param {number} value Value to show on the marker. Optional. If not provided
  *                       the marker will not be highlighted
  *
  * @returns {node} DOM element to use as marker
  */
-const buildMarker = (countryId, value) => {
+const buildMarker = (geoId, value) => {
   const el = document.createElement('div')
   el.style.cursor = 'pointer'
 
   if (value) {
     render((
-      <div className='country-marker highlight' data-tip={countryId} data-for='marker-tip'>{padNumber(value, 3)}</div>
+      <div className='country-marker highlight' data-tip={geoId} data-for='marker-tip'>{padNumber(value, 3)}</div>
     ), el)
   } else {
-    render(<div className='country-marker' data-tip={countryId} data-for='marker-tip' />, el)
+    render(<div className='country-marker' data-tip={geoId} data-for='marker-tip' />, el)
   }
 
   // Add a property to the dom element containing the element to which the
@@ -73,7 +73,7 @@ export default class ResultsMap extends React.Component {
 
   componentDidUpdate (prevProps) {
     if (!isEqual(this.props.highlightISO, prevProps.highlightISO)) {
-      this.setHighlightedCountries(this.props.highlightISO)
+      this.setHighlightedGeographies(this.props.highlightISO)
     }
 
     if (this.mapLoaded && !isEqual(this.props.bounds, prevProps.bounds)) {
@@ -85,9 +85,9 @@ export default class ResultsMap extends React.Component {
     }
   }
 
-  setHighlightedCountries (countries) {
+  setHighlightedGeographies (geographies) {
     if (!this.mapLoaded) return
-    this.map.setFilter('ne-countries-highlight', ['in', 'ISO_A2', ...countries])
+    this.map.setFilter('ne-countries-highlight', ['in', 'ISO_A2', ...geographies])
   }
 
   renderMarkers () {
@@ -99,11 +99,11 @@ export default class ResultsMap extends React.Component {
     // TODO: Use a centroid file instead of the features as they're not reliable.
     const feats = this.map.querySourceFeatures('composite', { sourceLayer: 'ne_10m_admin_0_countries-aqr028' })
     this.markers = this.props.data.map((geo, idx) => {
-      const currentCountry = feats.find(f => f.properties.ISO_A2 === geo.iso)
-      if (!currentCountry) {
-        console.warn('Country not found on source:', geo.iso)
+      const currentGeo = feats.find(f => f.properties.ISO_A2 === geo.iso)
+      if (!currentGeo) {
+        console.warn('Geography not found on source:', geo.iso)
       }
-      const location = turfCenter(currentCountry)
+      const location = turfCenter(currentGeo)
 
       // Only the top 10 are big markers.
       const marker = idx < 10 ? buildMarker(geo.iso, geo.rank) : buildMarker(geo.iso)
@@ -149,7 +149,7 @@ export default class ResultsMap extends React.Component {
     this.map.on('load', () => {
       this.mapLoaded = true
 
-      this.setHighlightedCountries(this.props.highlightISO)
+      this.setHighlightedGeographies(this.props.highlightISO)
       this.map.fitBounds(this.props.bounds)
 
       this.renderMarkers()

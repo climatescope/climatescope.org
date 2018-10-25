@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { environment } from '../config'
-import { fetchCountries, fetchCountry } from '../redux/countries'
+import { fetchGeographies, fetchGeography } from '../redux/geographies'
 import { wrapApiResult, initializeArrayWithRange, getFromState } from '../utils/utils'
 
 import App from './app'
@@ -13,7 +13,7 @@ import ShareOptions from '../components/share'
 import SelectControl from '../components/form-select-control'
 import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-skeleton'
 
-const getCountriesFromUrl = (params = '') => {
+const getGeoISOFromUrl = (params = '') => {
   const split = params.split('/')
     .map(c => c.toLowerCase())
 
@@ -23,9 +23,9 @@ const getCountriesFromUrl = (params = '') => {
   ]
 }
 
-const getValidatedCountriesFromUrl = (countries, params) => {
-  return getCountriesFromUrl(params)
-    .map(c => countries.find(country => country.iso === c) ? c : 'none')
+const getValidatedGeoISOFromUrl = (geographies, params) => {
+  return getGeoISOFromUrl(params)
+    .map(c => geographies.find(geo => geo.iso === c) ? c : 'none')
 }
 
 class Compare extends React.Component {
@@ -41,74 +41,74 @@ class Compare extends React.Component {
 
   getInitialState () {
     return {
-      countries: getCountriesFromUrl()
+      geographies: getGeoISOFromUrl()
     }
   }
 
   componentDidMount () {
-    this.props.fetchCountries()
+    this.props.fetchGeographies()
       .then(() => {
-        if (!this.props.countriesList.isReady()) return
+        if (!this.props.geographiesList.isReady()) return
 
-        // Replace the countries on the state with the ones from the url if they
+        // Replace the geographies on the state with the ones from the url if they
         // pass validation.
-        const validCountries = this.props.countriesList.getData()
-        const selectedCountries = getValidatedCountriesFromUrl(validCountries, this.props.match.params.country)
-        this.setState({ countries: selectedCountries })
+        const validGeographies = this.props.geographiesList.getData()
+        const selectedGeographies = getValidatedGeoISOFromUrl(validGeographies, this.props.match.params.geoIsos)
+        this.setState({ geographies: selectedGeographies })
         // Update url with correct values.
-        this.setCompareUrl(selectedCountries, 'replace')
+        this.setCompareUrl(selectedGeographies, 'replace')
 
-        // Fetch country data.
-        selectedCountries.forEach(c => {
-          c !== 'none' && this.props.fetchCountry(c)
+        // Fetch geography data.
+        selectedGeographies.forEach(c => {
+          c !== 'none' && this.props.fetchGeography(c)
         })
       })
   }
 
-  setCompareUrl (countries, type = 'push') {
-    if (countries.every(c => c === 'none')) {
+  setCompareUrl (isos, type = 'push') {
+    if (isos.every(c => c === 'none')) {
       this.props.history[type]('/compare')
     } else {
-      this.props.history[type](`/compare/${countries.join('/')}`)
+      this.props.history[type](`/compare/${isos.join('/')}`)
     }
   }
 
-  onCountryValueChange (idx, e) {
+  onGeoSelectValueChange (idx, e) {
     const val = e.target.value
 
     this.setState({
       // Replace index in array.
       // https://medium.com/@giltayar/immutably-setting-a-value-in-a-js-array-or-how-an-array-is-also-an-object-55337f4d6702
-      countries: Object.assign([...this.state.countries], { [idx]: val })
+      geographies: Object.assign([...this.state.geographies], { [idx]: val })
     })
   }
 
   onCompareClick (e) {
     e.preventDefault()
-    this.setCompareUrl(this.state.countries)
-    this.state.countries.forEach(c => {
-      c !== 'none' && this.props.fetchCountry(c)
+    this.setCompareUrl(this.state.geographies)
+    this.state.geographies.forEach(c => {
+      c !== 'none' && this.props.fetchGeography(c)
     })
   }
 
   onCompareReset (e) {
     e.preventDefault()
     this.setState(this.getInitialState(), () => {
-      this.setCompareUrl(this.state.countries)
+      this.setCompareUrl(this.state.geographies)
     })
   }
 
   renderFatalError () {
-    return this.props.countriesList.hasError()
+    return this.props.geographiesList.hasError()
       ? <p>Something went wrong. Try again later.</p>
       : null
   }
 
   renderControls () {
     // Error is handled in the main render function.
-    if (this.props.countriesList.hasError()) return null
+    if (this.props.geographiesList.hasError()) return null
 
-    const data = this.props.countriesList.getData([])
+    const data = this.props.geographiesList.getData([])
 
     const options = [
       { value: 'none', label: 'Choose location' },
@@ -120,12 +120,12 @@ class Compare extends React.Component {
         <form>
           {initializeArrayWithRange(1).map(i => (
             <SelectControl
-              key={`country-${i}`}
-              id={`country-${i}`}
+              key={`geo-${i}`}
+              id={`geo-${i}`}
               label='Geography'
               options={options}
-              selectedOption={this.state.countries[i]}
-              onChange={this.onCountryValueChange.bind(this, i)}
+              selectedOption={this.state.geographies[i]}
+              onChange={this.onGeoSelectValueChange.bind(this, i)}
             />
           ))}
           <div className='control'>
@@ -137,31 +137,31 @@ class Compare extends React.Component {
     )
   }
 
-  renderCountries () {
-    const { match, countriesList, countryA, countryB } = this.props
+  renderGeographies () {
+    const { match, geographiesList, geoA, geoB } = this.props
     // Error is handled in the main render function.
-    if (countriesList.hasError()) return null
+    if (geographiesList.hasError()) return null
 
-    const urlCountries = getCountriesFromUrl(match.params.country)
+    const urlGeo = getGeoISOFromUrl(match.params.geoIsos)
 
     return (
       <>
         <div className='col--double'>
-          <CountryCompare
-            active={urlCountries[0] !== 'none'}
-            error={countryA.hasError()}
-            loading={!countryA.isReady()}
-            source={countryA.getData()}
-            target={countryB.getData()}
+          <GeographyCompare
+            active={urlGeo[0] !== 'none'}
+            error={geoA.hasError()}
+            loading={!geoA.isReady()}
+            source={geoA.getData()}
+            target={geoB.getData()}
           />
         </div>
         <div className='col--double'>
-          <CountryCompare
-            active={urlCountries[1] !== 'none'}
-            error={countryB.hasError()}
-            loading={!countryB.isReady()}
-            source={countryB.getData()}
-            target={countryA.getData()}
+          <GeographyCompare
+            active={urlGeo[1] !== 'none'}
+            error={geoB.hasError()}
+            loading={!geoB.isReady()}
+            source={geoB.getData()}
+            target={geoA.getData()}
           />
         </div>
       </>
@@ -189,7 +189,7 @@ class Compare extends React.Component {
           <div className='layout--hub__body'>
             <div className='row--contained'>
               {this.renderFatalError()}
-              {this.renderCountries()}
+              {this.renderGeographies()}
             </div>
           </div>
         </section>
@@ -200,36 +200,36 @@ class Compare extends React.Component {
 
 if (environment !== 'production') {
   Compare.propTypes = {
-    fetchCountries: T.func,
-    fetchCountry: T.func,
+    fetchGeographies: T.func,
+    fetchGeography: T.func,
     match: T.object,
     history: T.object,
-    countriesList: T.object,
-    countryA: T.object,
-    countryB: T.object
+    geographiesList: T.object,
+    geoA: T.object,
+    geoB: T.object
   }
 }
 
 function mapStateToProps (state, props) {
-  const params = getCountriesFromUrl(props.match.params.country)
+  const params = getGeoISOFromUrl(props.match.params.geoIsos)
 
   return {
-    countriesList: wrapApiResult(state.countries.list),
-    countryA: wrapApiResult(getFromState(state.countries.individualCountries, params[0])),
-    countryB: wrapApiResult(getFromState(state.countries.individualCountries, params[1]))
+    geographiesList: wrapApiResult(state.geographies.list),
+    geoA: wrapApiResult(getFromState(state.geographies.individualGeographies, params[0])),
+    geoB: wrapApiResult(getFromState(state.geographies.individualGeographies, params[1]))
   }
 }
 
 function dispatcher (dispatch) {
   return {
-    fetchCountries: (...args) => dispatch(fetchCountries(...args)),
-    fetchCountry: (...args) => dispatch(fetchCountry(...args))
+    fetchGeographies: (...args) => dispatch(fetchGeographies(...args)),
+    fetchGeography: (...args) => dispatch(fetchGeography(...args))
   }
 }
 
 export default connect(mapStateToProps, dispatcher)(Compare)
 
-class CountryCompare extends React.PureComponent {
+class GeographyCompare extends React.PureComponent {
   renderInactive () {
     return (
       <div className='placeholder'>
@@ -241,7 +241,7 @@ class CountryCompare extends React.PureComponent {
   renderError () {
     return (
       <div className='placeholder'>
-        <p>An error occurred loading the country. Try again.</p>
+        <p>An error occurred loading the geography. Try again.</p>
       </div>
     )
   }
@@ -297,7 +297,7 @@ class CountryCompare extends React.PureComponent {
 }
 
 if (environment !== 'production') {
-  CountryCompare.propTypes = {
+  GeographyCompare.propTypes = {
     active: T.bool,
     error: T.bool,
     loading: T.bool,

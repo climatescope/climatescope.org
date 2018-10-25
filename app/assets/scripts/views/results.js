@@ -8,7 +8,7 @@ import { StickyContainer, Sticky } from 'react-sticky'
 
 import { environment } from '../config'
 import QsState from '../utils/qs-state'
-import { fetchCountries } from '../redux/countries'
+import { fetchGeographies } from '../redux/geographies'
 import { wrapApiResult } from '../utils/utils'
 import { regions } from '../utils/constants'
 
@@ -32,17 +32,17 @@ class Results extends React.Component {
       {
         id: 'fundamentals',
         name: 'Fundamentals',
-        startingValue: 40
+        startingValue: 50
       },
       {
         id: 'opportunities',
         name: 'Opportunities',
-        startingValue: 40
+        startingValue: 25
       },
       {
         id: 'experience',
         name: 'Experience',
-        startingValue: 20
+        startingValue: 25
       }
     ]
 
@@ -75,7 +75,7 @@ class Results extends React.Component {
   }
 
   componentDidMount () {
-    this.props.fetchCountries()
+    this.props.fetchGeographies()
   }
 
   onWeightsResetClick (e) {
@@ -109,7 +109,7 @@ class Results extends React.Component {
   }
 
   getRankedGeographies () {
-    const { getData } = this.props.countriesList
+    const { getData } = this.props.geographiesList
     const { sliders, region } = this.state
 
     let tableData = getData([])
@@ -207,7 +207,7 @@ class Results extends React.Component {
   }
 
   renderResultsTable () {
-    const { isReady } = this.props.countriesList
+    const { isReady } = this.props.geographiesList
 
     return (
       <ResultsTable
@@ -255,20 +255,20 @@ if (environment !== 'production') {
   Results.propTypes = {
     history: T.object,
     location: T.object,
-    fetchCountries: T.func,
-    countriesList: T.object
+    fetchGeographies: T.func,
+    geographiesList: T.object
   }
 }
 
 function mapStateToProps (state, props) {
   return {
-    countriesList: wrapApiResult(state.countries.list)
+    geographiesList: wrapApiResult(state.geographies.list)
   }
 }
 
 function dispatcher (dispatch) {
   return {
-    fetchCountries: (...args) => dispatch(fetchCountries(...args))
+    fetchGeographies: (...args) => dispatch(fetchGeographies(...args))
   }
 }
 

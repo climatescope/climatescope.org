@@ -12,8 +12,8 @@ import get from 'lodash.get'
  *
  * Example:
  * {
- *  country: {
- *    accessor: 'filters.country',
+ *  field: {
+ *    accessor: 'filters.field',
  *    hydrator: (v) => v,
  *    default: 'all',
  *    validator: [1, 2, 3]
@@ -36,8 +36,8 @@ import get from 'lodash.get'
 export default class QsState {
   constructor (definition) {
     // {
-    //   country: {
-    //     accessor: 'filters.country',
+    //   field: {
+    //     accessor: 'filters.field',
     //     hydrator: () => {}
     //     default: 'all',
     //     validator: [1, 2, 3]

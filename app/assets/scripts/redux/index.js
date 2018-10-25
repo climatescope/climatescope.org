@@ -3,12 +3,12 @@ import { combineReducers } from 'redux'
 
 import staticPages from './static-page'
 import policies from './policies'
-import countries from './countries'
+import geographies from './geographies'
 
 export const reducers = {
   staticPages,
   policies,
-  countries
+  geographies
 }
 
 export default combineReducers(reducers)

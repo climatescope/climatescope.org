@@ -31,8 +31,8 @@ export default class PoliciesTable extends React.PureComponent {
       {
         id: 'country',
         sortable: true,
-        title: 'Sort by country',
-        value: 'Country'
+        title: 'Sort by geography',
+        value: 'Geography'
       },
       {
         id: 'mechanism',

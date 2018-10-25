@@ -7,7 +7,7 @@ import { StickyContainer, Sticky } from 'react-sticky'
 import { configureAnchors } from 'react-scrollable-anchor'
 
 import { environment } from '../config'
-import { fetchCountry } from '../redux/countries'
+import { fetchGeography } from '../redux/geographies'
 import { getFromState, wrapApiResult } from '../utils/utils'
 
 import App from './app'
@@ -124,18 +124,18 @@ if (environment !== 'production') {
 
 class Geography extends React.Component {
   componentDidMount () {
-    this.props.fetchCountry(this.props.match.params.geoIso)
+    this.props.fetchGeography(this.props.match.params.geoIso)
   }
 
   componentDidUpdate (prevProps) {
     if (prevProps.match.params.geoIso !== this.props.match.params.geoIso) {
-      this.props.fetchCountry(this.props.match.params.geoIso)
+      this.props.fetchGeography(this.props.match.params.geoIso)
     }
   }
 
   render () {
-    const { isReady, hasError, getData } = this.props.country
-    const country = getData()
+    const { isReady, hasError, getData } = this.props.geography
+    const geography = getData()
 
     if (hasError()) {
       return <UhOh />
@@ -152,7 +152,7 @@ class Geography extends React.Component {
                   <Link to='/results' title='View results page'>View all markets</Link>
                 </p>
                 <h1 className='inpage__title'>
-                  {isReady() ? country.name : <LoadingSkeleton size='large' type='heading' inline />}
+                  {isReady() ? geography.name : <LoadingSkeleton size='large' type='heading' inline />}
                 </h1>
                 <ul className='inpage__details'>
                   <li>
@@ -188,7 +188,7 @@ class Geography extends React.Component {
               </div>
             </div>
             <GeographyMap
-              geographyISO={isReady() ? country.iso.toUpperCase() : ''}
+              geographyISO={isReady() ? geography.iso.toUpperCase() : ''}
             />
           </header>
 
@@ -416,19 +416,19 @@ class Geography extends React.Component {
 if (environment !== 'production') {
   Geography.propTypes = {
     match: T.object,
-    country: T.object
+    geography: T.object
   }
 }
 
 function mapStateToProps (state, props) {
   return {
-    country: wrapApiResult(getFromState(state.countries.individualCountries, props.match.params.geoIso))
+    geography: wrapApiResult(getFromState(state.geographies.individualGeographies, props.match.params.geoIso))
   }
 }
 
 function dispatcher (dispatch) {
   return {
-    fetchCountry: (...args) => dispatch(fetchCountry(...args))
+    fetchGeography: (...args) => dispatch(fetchGeography(...args))
   }
 }
 

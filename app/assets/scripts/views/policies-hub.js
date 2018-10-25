@@ -181,7 +181,7 @@ class Policies extends React.Component {
       <div className='layout--hub__controls'>
         <form>
           <SelectControl
-            label='Country'
+            label='Geography'
             id='policy_country'
             options={country}
             selectedOption={this.state.filters.country}

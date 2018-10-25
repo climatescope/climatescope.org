@@ -28,7 +28,7 @@ const Root = () => (
         <Route exact path='/results' component={Results}/>
         <Route exact path='/results/:geoIso' component={Geography}/>
         <Route exact path='/library' component={Library}/>
-        <Route path='/compare/:country*' component={Compare}/>
+        <Route path='/compare/:geoIsos*' component={Compare}/>
         <Route exact path='/policies/:policyId' component={Policy}/>
         <Route exact path='/policies' component={Policies}/>
         <Route exact path='/playground' component={Playground}/>

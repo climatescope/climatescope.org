@@ -38,11 +38,11 @@ export default class GeographyMap extends React.Component {
       const mapWidth = Math.min(1280, this.refs.mapEl.getBoundingClientRect().width)
 
       const feats = this.map.querySourceFeatures('composite', { sourceLayer: 'ne_10m_admin_0_countries-aqr028' })
-      const currentCountry = feats.find(f => f.properties.ISO_A2 === geoISO)
-      if (!currentCountry) {
-        console.warn('Country not found on source:', geoISO)
+      const currentGeo = feats.find(f => f.properties.ISO_A2 === geoISO)
+      if (!currentGeo) {
+        console.warn('Geography not found on source:', geoISO)
       }
-      const bounds = bbox(currentCountry)
+      const bounds = bbox(currentGeo)
       this.map.fitBounds([ [bounds[0], bounds[1]], [bounds[2], bounds[3]] ], {
         padding: { top: 32, bottom: 32, left: 0, right: 0 },
         // Offset pf 1/4

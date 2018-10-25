@@ -98,10 +98,10 @@ class PolicyPage extends React.Component {
     )
   }
 
-  renderCountries (policy) {
+  renderGeographies (policy) {
     return (
       <section className='blk'>
-        <h1>Countries</h1>
+        <h1>Geographies</h1>
         <ul>
           {policy.country.map(country => (
             <li key={country.name}>{country.name}</li>
@@ -203,7 +203,7 @@ class PolicyPage extends React.Component {
                   {this.renderSubsectors(policy)}
                 </div>
                 <div className='col--sec'>
-                  {this.renderCountries(policy)}
+                  {this.renderGeographies(policy)}
                   {this.renderAttributes(policy)}
                 </div>
               </div>
