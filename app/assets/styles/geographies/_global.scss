@@ -18,9 +18,9 @@ Geographies: global
 }
 
 .info-card__statement {
-  font-family: $brand-font-family;
+  font-family: $heading-font-family;
   margin-bottom: $global-spacing;
-  
+
   > *:last-child {
     margin-bottom: 0;
   }
@@ -32,9 +32,11 @@ Geographies: global
 
 .info-card--large {
   grid-column: auto / span 2;
-  @media #{$large-up} {
+
+  @include media(large-up) {
     grid-column: auto / span 3;
   }
+
   grid-row: span 1;
 }
 
@@ -54,7 +56,7 @@ Geographies: global
 
 .info-card--light {
   background: tint($base-color, 96%);
-  
+
   .par-section:nth-child(even) & {
     background: #fff;
   }
@@ -74,8 +76,8 @@ Geographies: global
   width: 100%;
   max-width: 100%;
   box-shadow: 0 1px 0 0 tint($base-color, 88%), 0 -1px 0 0 tint($base-color, 88%);
-  font-family: $brand-font-family;
-  
+  font-family: $heading-font-family;
+
   th, td  {
     padding: $global-spacing;
     box-shadow: inset 0 -1px 0 0 tint($base-color, 88%);
@@ -116,24 +118,24 @@ Geographies: global
   .feature-unchecked {
     @extend .visually-hidden;
   }
-  
+
   th:first-child,
   td:first-child {
     padding-left: $global-spacing;
   }
-  
+
   th:last-child,
   td:last-child {
     padding-right: $global-spacing;
   }
-  
+
   thead tr {
     background: #fff;
   }
-  
+
   thead th {
     font-size: 1.5rem;
-    font-weight: $brand-font-bold;
+    font-weight: $heading-font-bold;
     line-height: 1.75rem;
     vertical-align: bottom;
   }
@@ -142,17 +144,17 @@ Geographies: global
     &:nth-of-type(odd) {
       background: tint($base-color, 96%);
     }
-    
+
     &:nth-of-type(even) {
       background: #fff;
     }
   }
-  
+
   tbody tr:last-child td,
   tbody tr:last-child th {
     box-shadow: none;
   }
-  
+
   tfoot td {
     box-shadow: inset 0 2px 0 0 $base-alpha-color;
   }

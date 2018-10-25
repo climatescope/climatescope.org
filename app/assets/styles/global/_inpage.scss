@@ -6,7 +6,7 @@
   position: relative;
 
   > .inner {
-    @extend .row--contained;
+    @extend .row--centered;
     position: relative;
     z-index: 2;
   }
@@ -36,8 +36,8 @@
   font-size: 0.875rem;
   line-height: 1rem;
   margin: ($global-spacing / 4) 0;
-  font-family: $brand-font-family;
-  font-weight: $brand-font-bold;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-bold;
 
   &:first-child {
     margin-top: 0;
@@ -64,8 +64,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: ($global-spacing * 2) ($global-spacing * 6);
-  font-family: $brand-font-family;
-  font-weight: $brand-font-bold;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-bold;
 
   strong {
     display: block;
@@ -73,7 +73,7 @@
     line-height: 1;
     margin-bottom: 0.25rem;
   }
-  
+
   sub {
     font-size: 50%;
     vertical-align: 0.25em;
@@ -110,7 +110,7 @@
   box-shadow: 0 1px 0 0 $base-alpha-color;
 
   > .inner {
-    @extend .row--contained;
+    @extend .row--centered;
   }
 
   ul {
@@ -124,6 +124,6 @@
   padding: ($global-spacing * 6) 0;
 
   > .inner {
-    @extend .row--contained;
+    @extend .row--centered;
   }
 }

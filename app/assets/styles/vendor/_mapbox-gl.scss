@@ -77,7 +77,7 @@ Vendor: Mapbox GL
 .mapboxgl-ctrl-group {
   height: inherit;
   pointer-events: none;
-  
+
   > * {
     pointer-events: auto;
   }
@@ -179,13 +179,13 @@ a.mapboxgl-ctrl-logo {
   font-size: 0.75rem;
   line-height: 1.25rem;
   border-radius: $base-border-radius;
-  
+
   .mapboxgl-ctrl-bottom-left & {
     margin: 0 0 (-$global-spacing) (-$global-spacing);
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  
+
   .mapboxgl-ctrl-bottom-right & {
     margin: 0 0 (-$global-spacing) 0;
     border-top-right-radius: 0;
@@ -259,7 +259,7 @@ a.mapboxgl-ctrl-logo {
   display: flex;
   will-change: transform;
   pointer-events: none;
-  
+
   /* Animation */
   animation: reveal 0.24s ease 0s 1;
 }
@@ -424,18 +424,18 @@ a.mapboxgl-ctrl-logo {
 }
 
 .mapboxgl-ctrl-group {
-  @extend .bttn-group--vertical;
-  
+  @extend .button-group--vertical;
+
   > button {
-    @extend .bttn, .bttn-s, .bttn-light, .hide-txt;
+    @extend .button, .button--small, .button--base-raised-light, .button--text-hidden;
     display: block;
     min-width: 0;
     font-size: 0;
-    
+
     &.mapboxgl-ctrl-zoom-in:before {
       @extend %collecticon-sm-plus;
     }
-    
+
     &.mapboxgl-ctrl-zoom-out:before {
       @extend %collecticon-sm-minus;
     }
@@ -446,7 +446,7 @@ a.mapboxgl-ctrl-logo {
   > * {
     margin-bottom: $global-spacing;
   }
-  
+
   > *:last-child {
     margin-bottom: 0;
   }

@@ -20,7 +20,7 @@
 
   .previous a,
   .next a {
-    @extend .bttn, .bttn-default;
+    @extend .button, .button--base-raised-light;
     text-decoration: none;
     text-transform: uppercase;
   }
@@ -42,11 +42,11 @@
       float: left;
 
       &.active .pages__page {
-        @extend .bttn-default:active;
+        @extend .button--active;
       }
 
       .pages__page {
-        @extend .bttn, .bttn-default;
+        @extend .button, .button--base-raised-light;
         border-radius: 0;
       }
     }
@@ -54,7 +54,7 @@
 
   .break {
     .pages__page {
-      @extend .bttn;
+      @extend .button;
       border-radius: 0;
       background: tint($base-color, 92%);
       opacity: 1;
@@ -63,7 +63,7 @@
   }
 
   li.disabled a {
-    @extend .bttn.disabled;
+    @extend .disabled;
   }
 }
 

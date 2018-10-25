@@ -21,7 +21,7 @@
 }
 
 .par-section__contents {
-  @extend .row--contained;
+  @extend .row--centered;
   display: grid;
   grid-gap: $global-spacing * 2;
 }
@@ -31,7 +31,8 @@
     display: grid;
     grid-gap: $global-spacing * 2;
     grid-template-columns: repeat(2, 1fr);
-    @media #{$large-up} {
+
+    @include media(large-up) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
@@ -45,7 +46,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media #{$large-up} {
+  @include media(large-up) {
     .par-section__contents {
       grid-template-columns: repeat(4, 1fr);
     }
@@ -119,7 +120,7 @@
 
   a {
     font-size: 0.875rem;
-    font-family: $brand-font-family;
+    font-family: $heading-font-family;
     color: inherit;
   }
 }
@@ -131,10 +132,10 @@
 
 /* Card organization
    ========================================================================== */
-  
+
 #section-clean-enery-policy {
   .info-card-1 {
-    
+
   }
 
   .info-card-2 {
@@ -143,6 +144,6 @@
   }
 
   .info-card-3 {
-    
+
   }
 }

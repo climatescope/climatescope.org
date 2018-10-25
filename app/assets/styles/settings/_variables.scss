@@ -1,0 +1,97 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* Colors
+   ========================================================================== */
+
+$base-color: #0D2029;                                   // Big Stone
+$accent-color: #509b75;                                 // Viridian
+$primary-color: #C3D500;                                // Light green
+$secondary-color: #00925F;                              // Dark green
+
+/* State */
+
+$danger-color: #D85D3F;                                 // Red
+$success-color: $secondary-color;                       // Same as $secondary-color
+$warning-color: #F4A432;                                // Yellow
+$info-color: #499DD2;                                   // Blue
+
+/* Helpers */
+
+$link-color: $primary-color;
+$base-alpha-color: rgba($base-color, 0.08);
+
+/* Infographic */
+
+$alpha-color: #4CB5AE;                                  // Turquoise
+$beta-color: #F39C12;                                   // Orange
+$gama-color: #C0392B;                                   // Pomegranate (red)
+
+
+/* Typography
+   ========================================================================== */
+
+$root-font-size: 16px;
+
+$base-font-color: tint($base-color, 16%);
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-style: normal;
+$base-font-light: 300;
+$base-font-light-italic: 300i;
+$base-font-regular: 400;
+$base-font-regular-italic: 400i;
+$base-font-bold: 700;
+$base-font-bold-italic: 700i;
+$base-font-weight: $base-font-regular;
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+
+$code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$heading-font-family: "Klavika", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-light: 300;
+$heading-font-regular: 400;
+$heading-font-bold: 700;
+$heading-font-weight: $heading-font-regular;
+
+
+/* Decoration
+   ========================================================================== */
+
+/* Border radius */
+
+$base-border-radius: 0.25rem;
+$full-border-radius: 100vh;
+
+$base-border-width: 2px;
+
+
+/* Sizing, spacing and media queries
+   ========================================================================== */
+
+/* Sizing */
+
+$page-header-y: 0 !default;
+$navigator-y: 16rem !default;
+$storm-pane-x: 32rem !default;
+
+/* Spacing */
+
+$global-spacing: 1rem;
+
+/* Rows */
+
+$row-min-width: 320px;
+$row-max-width: 1280px;
+$jeet-max-width: $row-max-width; // reset jeet.gs max width
+
+/* Media queries */
+
+$xsmall-range: (0, 543px);
+$small-range: (544px, 767px);
+$medium-range: (768px, 991px);
+$large-range: (992px, 1199px);
+$xlarge-range: (1200px);
+
+$screen: "only screen";

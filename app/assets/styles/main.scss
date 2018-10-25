@@ -29,50 +29,51 @@
 
 @import "jeet";
 
-@import "normalize";
-@import "reset";
+/**
+ * Normalize.css, a modern, HTML5-ready alternative to CSS resets:
+ * http://necolas.github.io/normalize.css/
+ */
 
-// Climatescope functions
-@import "functions";
+@import "vendor/normalize";
 
-// Climatescope settings
-@import "settings";
+/**
+ * Kenneth Ormandy's OpenType features—ligatures, kerning, and more—to Normalize.css:
+ * https://github.com/kennethormandy/normalize-opentype.css
+ */
 
-// Climatescope's global
-@import "mixins";
-@import "core/collecticons";
-@import "type";
-@import "buttons";
-@import "forms";
-@import "nav";
-@import "overlays";
-@import "modals";
-@import "tables";
-@import "graphics";
-@import "sliders";
-@import "base";
-@import "survey";
-@import "helpers";
-@import "map";
-@import "animations";
+@import "vendor/normalize-opentype";
+
+
+/* Settings
+   ========================================================================== */
+
+@import "settings/variables";
+@import "settings/functions";
+@import "settings/mixins";
+
+
+/* Core
+   ========================================================================== */
+
+@import "core/base";
+@import "core/collecticons"; // Webfont icon library: Collecticons
+@import "core/webfont-klavika"; // Webfont: Klavika
+@import "core/typography";
+@import "core/tables";
+@import "core/media";
+@import "core/skins";
+@import "core/animation";
+
 
 /* Global
    ========================================================================== */
 
+@import "global/buttons";
+@import "global/forms";
 @import "global/drops";
 @import "global/page";
 @import "global/inpage";
 
-
-// Climatescope's pages
-@import "pages/homepage";
-@import "pages/results";
-@import "pages/region";
-@import "pages/topic";
-@import "pages/updates";
-
-// Climatescope's blocks
-@import "sec-content";
 
 /* Geographies
    ========================================================================== */
@@ -87,11 +88,15 @@
 @import "playground/global";
 
 
+/* Core (...cont)
+   ========================================================================== */
+
+@import "core/utilities";
+
+
 /* Vendor
    ========================================================================== */
+
 @import "vendor/react-tooltip";
 @import "vendor/react-paginate";
 @import "vendor/mapbox-gl";
-
-// Climatescope's print
-@import "print";

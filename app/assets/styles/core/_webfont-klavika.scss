@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Webfont: Klavika
+   ========================================================================== */
+
+/**
+ * Font licensed to MIF for use on *.global-climatescope.*
+ */
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Regular'
+  src: url("../fonts/klavika/KlavikaWebBasicRegular.woff") format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Regular Italic'
+  src: url("../fonts/klavika/KlavikaWebBasicRegularItalic.woff") format('woff');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Bold'
+  src: url("../fonts/klavika/KlavikaWebBasicBold.woff") format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Klavika'; // 'Klavika Bold Italic'
+  src: url("../fonts/klavika/KlavikaWebBasicBoldItalic.woff") format('woff');
+  font-style: italic;
+  font-weight: 700;
+}
