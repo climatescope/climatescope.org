@@ -7,7 +7,7 @@ import App from './app'
 export default class UhOh extends React.Component {
   render () {
     return (
-      <App>
+      <App pageTitle='Not Found' >
         <article className='layout--page'>
           <header className='layout--page__header'>
             <div className='row--contained'>

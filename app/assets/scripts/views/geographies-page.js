@@ -142,7 +142,7 @@ class Geography extends React.Component {
     }
 
     return (
-      <App className='page--has-hero'>
+      <App className='page--has-hero' pageTitle={geography.name} >
         <article className='inpage inpage--geography'>
 
           <header className='inpage__header'>

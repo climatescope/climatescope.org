@@ -170,7 +170,7 @@ class Compare extends React.Component {
 
   render () {
     return (
-      <App>
+      <App pageTitle='Compare' >
         <section className='layout--hub compare'>
           <header className='layout--hub__header'>
             <div className='row--contained'>

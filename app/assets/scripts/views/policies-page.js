@@ -174,7 +174,7 @@ class PolicyPage extends React.Component {
     }
 
     return (
-      <App>
+      <App pageTitle='Policy' >
         <article className='layout--entry policies'>
           <header className='layout--entry__header'>
             <div className='row--contained'>

@@ -31,7 +31,7 @@ class StaticPage extends React.Component {
     }
 
     return (
-      <App>
+      <App pageTitle={data.title} >
         <article className='layout--page'>
           <header className='layout--page__header'>
             <div className='row--contained'>

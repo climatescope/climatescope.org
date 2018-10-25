@@ -246,7 +246,7 @@ class Results extends React.Component {
     const activeRegion = regions.find(r => r.id === region)
 
     return (
-      <App>
+      <App pageTitle='Results' >
         <StickyContainer>
           <section className='layout--results' ng-app='globalApp'>
             <Sticky>

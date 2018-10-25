@@ -254,7 +254,7 @@ class Policies extends React.Component {
 
   render () {
     return (
-      <App>
+      <App pageTitle='Policies' >
         <section className='layout--hub policies'>
           <header className='layout--hub__header'>
             <div className='row--contained'>

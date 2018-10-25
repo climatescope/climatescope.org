@@ -146,7 +146,7 @@ if (environment !== 'production') {
 class Library extends React.Component {
   render () {
     return (
-      <App>
+      <App pageTitle='Content Library' >
         <article className='layout--page full'>
           <header className='layout--page__header'>
             <div className='row--contained'>
