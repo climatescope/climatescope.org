@@ -1,14 +1,19 @@
 'use strict'
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
+import { Link } from 'react-router-dom'
 import mapboxgl from 'mapbox-gl'
 import ReactTooltip from 'react-tooltip'
 import debounce from 'lodash.debounce'
+import isEqual from 'lodash.isequal'
+import turfCenter from '@turf/center'
 
 import { render } from 'react-dom'
 
 import { mbtoken, environment } from '../config'
-import { padNumber } from '../utils/utils'
+import { padNumber, round } from '../utils/utils'
+import OnGrid from './on-grid'
+import { ParameterBreakdown } from './parameters'
 
 // set once
 mapboxgl.accessToken = mbtoken
@@ -56,22 +61,72 @@ const buildMarker = (countryId, value) => {
 }
 
 export default class ResultsMap extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.markers = []
+  }
+
   componentDidMount () {
     this.initMap()
+  }
+
+  componentDidUpdate (prevProps) {
+    if (!isEqual(this.props.highlightISO, prevProps.highlightISO)) {
+      this.setHighlightedCountries(this.props.highlightISO)
+    }
+
+    if (this.mapLoaded && !isEqual(this.props.bounds, prevProps.bounds)) {
+      this.map.fitBounds(this.props.bounds)
+    }
+
+    if (!isEqual(this.props.data, prevProps.data)) {
+      this.renderMarkers()
+    }
+  }
+
+  setHighlightedCountries (countries) {
+    if (!this.mapLoaded) return
+    this.map.setFilter('ne-countries-highlight', ['in', 'ISO_A2', ...countries])
+  }
+
+  renderMarkers () {
+    if (!this.mapLoaded) return
+
+    // Clear previous markers.
+    this.markers.forEach(m => m.remove())
+
+    // TODO: Use a centroid file instead of the features as they're not reliable.
+    const feats = this.map.querySourceFeatures('composite', { sourceLayer: 'ne_10m_admin_0_countries-aqr028' })
+    this.markers = this.props.data.map((geo, idx) => {
+      const currentCountry = feats.find(f => f.properties.ISO_A2 === geo.iso)
+      if (!currentCountry) {
+        console.warn('Country not found on source:', geo.iso)
+      }
+      const location = turfCenter(currentCountry)
+
+      // Only the top 10 are big markers.
+      const marker = idx < 10 ? buildMarker(geo.iso, geo.rank) : buildMarker(geo.iso)
+
+      return new mapboxgl.Marker(marker)
+        .setLngLat(location.geometry.coordinates)
+        .addTo(this.map)
+    })
   }
 
   initMap () {
     this.map = new mapboxgl.Map({
       center: [0, 0],
       container: this.refs.mapEl,
-      style: 'mapbox://styles/devseed/cjnfxlqb408x82spm5qcnrpav',
-      minZoom: 2,
+      style: 'mapbox://styles/climatescope/cjnn8lhdz04252rqkmbu8uexz',
       zoom: 2,
       pitchWithRotate: false,
+      renderWorldCopies: false,
       dragRotate: false
     })
 
     window.map = this.map
+    window.ReactTooltip = ReactTooltip
 
     this.map.addControl(new mapboxgl.NavigationControl(), 'top-left')
 
@@ -90,55 +145,45 @@ export default class ResultsMap extends React.Component {
     this.map.on('load', () => {
       this.mapLoaded = true
 
-      // TODO: Contruct markers dynamically.
-      const marker1 = buildMarker('BR', 8)
-      const marker2 = buildMarker('CD')
+      this.setHighlightedCountries(this.props.highlightISO)
+      this.map.fitBounds(this.props.bounds)
 
-      new mapboxgl.Marker(marker1)
-        .setLngLat([-53.091638161221866, -10.781071947389492])
-        .addTo(this.map)
-      new mapboxgl.Marker(marker2)
-        .setLngLat([23.65005956282201, -2.878351386823894])
-        .addTo(this.map)
+      this.renderMarkers()
 
       // Call the map move event debouces with a leading execution to ensure
       // that the tooltip get's hidden as fast as possible.
       const onMapMove = () => {
-        // TODO: Hide markers dynamically.
-        ReactTooltip.hide(marker1.markerTip)
-        ReactTooltip.hide(marker2.markerTip)
+        this.markers.forEach(m => ReactTooltip.hide(m.markerTip))
       }
       this.map.on('move', debounce(onMapMove, 100, { leading: true, trailing: false }))
     })
   }
 
   renderPopover () {
-    // TODO: Add marker popover content.
-    const popoverContent = (countryId) => {
+    const popoverContent = (geographyIso) => {
+      const geography = this.props.data.find(geography => geography.iso === geographyIso)
+      if (!geography) return null
+
+      const { iso, score, rank, name, topics, grid } = geography
+
       return (
         <article className='tooltip-inner'>
           <header className='tooltip__header'>
             <h1 className='tooltip__title'>
-              <a href='#' title='View country'>{countryId}</a>
+              <Link to={`/results/${iso}`} title={`View ${name} page`}>{name}</Link>
             </h1>
-            <em className='label-grid label-grid-on' data-title='On-grid'>
-              <span>On-grid</span>
-            </em>
+            <OnGrid isOnGrid={grid} />
           </header>
           <div className='tooltip__body'>
-            <dl className='params-legend'>
+            <ParameterBreakdown
+              className='params-legend'
+              data={topics} >
               <dt>Global rank</dt>
-              <dd>9</dd>
+              <dd>{rank}</dd>
               <dt>Score</dt>
-              <dd>1.83</dd>
-              <dt className='param-1'>Fundamentals</dt>
-              <dd>2.15 <small>40%</small></dd>
-              <dt className='param-2'>Opportunities</dt>
-              <dd>1.99 <small>30%</small></dd>
-              <dt className='param-3'>Experience</dt>
-              <dd>2.04 <small>15%</small></dd>
-            </dl>
-            <a href='#' className='bttn bttn-cta go' title='View country'>View country</a>
+              <dd>{round(score)}</dd>
+            </ParameterBreakdown>
+            <Link to={`/results/${iso}`} className='bttn bttn-cta go' title={`View ${name} page`}>{name}</Link>
           </div>
         </article>
       )
@@ -168,8 +213,8 @@ export default class ResultsMap extends React.Component {
 
 if (environment !== 'production') {
   ResultsMap.propTypes = {
-    fetchPage: T.func,
-    match: T.object,
-    page: T.object
+    highlightISO: T.array,
+    bounds: T.array,
+    data: T.array
   }
 }

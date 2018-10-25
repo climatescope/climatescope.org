@@ -10,6 +10,7 @@ import { environment } from '../config'
 import QsState from '../utils/qs-state'
 import { fetchCountries } from '../redux/countries'
 import { wrapApiResult } from '../utils/utils'
+import { regions } from '../utils/constants'
 
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
@@ -45,38 +46,11 @@ class Results extends React.Component {
       }
     ]
 
-    this.regions = [
-      {
-        id: 'all',
-        name: 'All regions'
-      },
-      {
-        id: 'asia',
-        name: 'Asia'
-      },
-      {
-        id: 'africa',
-        name: 'Africa'
-      },
-      {
-        id: 'eu',
-        name: 'Europe'
-      },
-      {
-        id: 'lac',
-        name: 'Latin America and The Caribbean'
-      },
-      {
-        id: 'me',
-        name: 'Middle East'
-      }
-    ]
-
     this.qsState = new QsState({
       region: {
         accessor: 'region',
         default: 'all',
-        validator: this.regions.map(r => r.id)
+        validator: regions.map(r => r.id)
       }
     })
 
@@ -134,8 +108,45 @@ class Results extends React.Component {
     })
   }
 
+  getRankedGeographies () {
+    const { getData } = this.props.countriesList
+    const { sliders, region } = this.state
+
+    let tableData = getData([])
+      // Filter by active region
+      .filter(geography => {
+        return region === 'all' ? true : geography.region.id === region
+      })
+      .map(geography => {
+        const topics = geography.topics.map(t => {
+          return {
+            id: t.id,
+            name: t.name,
+            // The first is always the most recent year.
+            value: t.data[0].value,
+            weight: sliders[t.id].value
+          }
+        })
+        return {
+          iso: geography.iso.toUpperCase(),
+          name: geography.name,
+          grid: geography.grid === 'on',
+          topics,
+          score: topics.reduce((acc, t) => acc + t.value * (t.weight / 100), 0)
+        }
+      })
+
+    // Sort by the score.
+    tableData = orderBy(tableData, 'score', 'desc')
+
+    // Add the rank. After scoring, the rank is the index.
+    tableData = tableData.map((geography, idx) => ({ ...geography, rank: idx + 1 }))
+
+    return tableData
+  }
+
   renderTitle () {
-    const triggerText = this.regions.find(r => r.id === this.state.region).name
+    const triggerText = regions.find(r => r.id === this.state.region).name
 
     return (
       <h1 className='layout--results__title'>
@@ -151,7 +162,7 @@ class Results extends React.Component {
             direction='down'
             alignment='center' >
             <ul className='dropdown-menu'>
-              {this.regions.map(r => (
+              {regions.map(r => (
                 <li key={r.id}><a href='#' title={`view ${r.name} results`} onClick={this.onRegionClick.bind(this, r.id)} data-hook='dropdown:close'>{r.name}</a></li>
               ))}
             </ul>
@@ -196,39 +207,13 @@ class Results extends React.Component {
   }
 
   renderResultsTable () {
-    const { isReady, getData } = this.props.countriesList
-    const { sliders } = this.state
-
-    let tableData = getData([]).map(geography => {
-      const topics = geography.topics.map(t => {
-        return {
-          id: t.id,
-          name: t.name,
-          // The first is always the most recent year.
-          value: t.data[0].value,
-          weight: sliders[t.id].value
-        }
-      })
-      return {
-        iso: geography.iso,
-        name: geography.name,
-        grid: geography.grid === 'on',
-        topics,
-        score: topics.reduce((acc, t) => acc + t.value * (t.weight / 100), 0)
-      }
-    })
-
-    // Sort by the score.
-    tableData = orderBy(tableData, 'score', 'desc')
-
-    // Add the rank. After scoring, the rank is the index.
-    tableData = tableData.map((geography, idx) => ({ ...geography, rank: idx + 1 }))
+    const { isReady } = this.props.countriesList
 
     return (
       <ResultsTable
         sortField={this.state.sort.field}
         sortDirection={this.state.sort.dir}
-        data={tableData}
+        data={this.getRankedGeographies()}
         onSort={this.onSortChange}
         loading={!isReady()}
       />
@@ -236,6 +221,12 @@ class Results extends React.Component {
   }
 
   render () {
+    const { region } = this.state
+
+    const rankedGeographies = this.getRankedGeographies()
+    const highlightISO = rankedGeographies.map(g => g.iso)
+    const activeRegion = regions.find(r => r.id === region)
+
     return (
       <App>
         <StickyContainer>
@@ -244,7 +235,11 @@ class Results extends React.Component {
               {(props) => this.renderHeaderFn(props)}
             </Sticky>
             <div className='layout--results__body'>
-              <ResultsMap />
+              <ResultsMap
+                bounds={activeRegion.bounds}
+                highlightISO={highlightISO}
+                data={rankedGeographies}
+              />
               <div className='row--contained'>
                 {this.renderResultsTable()}
               </div>

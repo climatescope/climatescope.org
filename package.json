@@ -97,6 +97,7 @@
   },
   "dependencies": {
     "@turf/bbox": "^6.0.1",
+    "@turf/center": "^6.0.1",
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
     "create-react-class": "^15.6.3",
@@ -105,6 +106,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.defaultsdeep": "^4.6.0",
     "lodash.get": "^4.4.2",
+    "lodash.isequal": "^4.5.0",
     "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
     "mapbox-gl": "^0.50.0",

@@ -9,23 +9,8 @@ import c from 'classnames'
 import { environment } from '../config'
 import { initializeArrayWithRange, padNumber, round } from '../utils/utils'
 import { LoadingSkeleton } from './loading-skeleton'
-
-const ParameterGraph = ({ countryIso, data }) => (
-  <div className='table-graph'>
-    <ul className='table-bar' data-tip={countryIso} data-for='param-graph-tooltip'>
-      {data.map(({ id, value, weight }, idx) => (
-        <li key={id} className={`param-${idx + 1}`} style={{ width: `${value * (weight / 100) * (100 / 5)}%` }}><span className='visually-hidden'>{value}</span>&nbsp;</li>
-      ))}
-    </ul>
-  </div>
-)
-
-if (environment !== 'production') {
-  ParameterGraph.propTypes = {
-    countryIso: T.string,
-    data: T.array
-  }
-}
+import OnGrid from './on-grid'
+import { ParameterGraph, ParameterBreakdown } from './parameters'
 
 export default class ResultsTable extends React.PureComponent {
   componentDidUpdate () {
@@ -121,14 +106,12 @@ export default class ResultsTable extends React.PureComponent {
           <td>{round(score)}</td>
           <td>
             <ParameterGraph
-              countryIso={iso}
+              geographyIso={iso}
               data={topics}
             />
           </td>
           <td>
-            <em data-title={grid ? 'on-grid' : 'off-grid'} className={c('label-grid', { 'label-grid-on': grid, 'label-grid-off': !grid })}>
-              <span>{grid ? 'on' : 'off'}</span>
-            </em>
+            <OnGrid isOnGrid={grid} />
           </td>
         </tr>
       )
@@ -136,20 +119,16 @@ export default class ResultsTable extends React.PureComponent {
   }
 
   renderParamGraphTooltip () {
-    const popoverContent = (countryIso) => {
-      if (!countryIso) return null
-      const country = this.props.data.find(c => c.iso === countryIso)
+    const popoverContent = (geographyIso) => {
+      const geography = this.props.data.find(c => c.iso === geographyIso)
+      if (!geography) return null
 
       return (
         <article className='tooltip-inner'>
-          <dl className='params-legend'>
-            {country.topics.map(({ id, name, value, weight }, idx) => (
-              <React.Fragment key={idx}>
-                <dt className={`param-${idx + 1}`}>{name}</dt>
-                <dd>{round(value)}<small>{weight}%</small></dd>
-              </React.Fragment>
-            ))}
-          </dl>
+          <ParameterBreakdown
+            className='params-legend'
+            data={geography.topics}
+          />
         </article>
       )
     }
