@@ -112,6 +112,10 @@ export default class ResultsMap extends React.Component {
         .setLngLat(location.geometry.coordinates)
         .addTo(this.map)
     })
+
+    // After the markers are rendered we need to rebind the react tooltips.
+    // This needs to be done on next tick or it won't work.
+    setTimeout(() => { ReactTooltip.rebuild() }, 1)
   }
 
   initMap () {
@@ -183,7 +187,7 @@ export default class ResultsMap extends React.Component {
               <dt>Score</dt>
               <dd>{round(score)}</dd>
             </ParameterBreakdown>
-            <Link to={`/results/${iso}`} className='bttn bttn-cta go' title={`View ${name} page`}>{name}</Link>
+            <Link to={`/results/${iso}`} className='bttn bttn-cta go' title={`View ${name} page`}>View Geography</Link>
           </div>
         </article>
       )
