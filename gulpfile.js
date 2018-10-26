@@ -76,9 +76,10 @@ gulp.task('serve', ['vendorScripts', 'javascript', 'styles', 'jekyll'], function
   gulp.watch([
     'app/**/*.html',
     'app/**/*.md',
+    'app/api/**/*',
     'app/assets/graphics/**/*',
     '!app/assets/icons/collecticons/**/*'
-  ], ['jekyll', bs.reload()])
+  ], ['jekyll', bs.reload])
 
   gulp.watch('app/assets/styles/**/*.scss', ['styles'])
   // If templates change trigger the js task that will render the templates.
