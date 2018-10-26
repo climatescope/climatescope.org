@@ -464,17 +464,6 @@ abbr[title] {
   font-weight: $heading-font-regular;
 }
 
-.heading-deco {
-  &::after {
-    content: '';
-    width: 2rem;
-    height: $base-border-width;
-    background: $base-font-color;
-    display: block;
-    margin: calc(0.5em - #{$base-border-width}) 0 0 0;
-  }
-}
-
 h1 {
   @include heading(1.75rem);   // 28
 }

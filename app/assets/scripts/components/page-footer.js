@@ -33,9 +33,9 @@ export default class PageFooter extends React.PureComponent {
             <form className='form newsletter-form' action='' method='post' id='mc-embedded-subscribe-form' name='subscribe-form'>
               <div className='form__group'>
                 <label className='form__label'>Email</label>
-                <div className='form__input-group'>
+                <div className='form__input-group form__input-group--medium'>
                   <input type='email' name='EMAIL' className='form__control required email' id='mce-EMAIL' aria-required='true' placeholder='Email' />
-                  <button type='submit' name='subscribe' id='mc-embedded-subscribe' className='bttn bttn-success disabled'><span>Subscribe</span></button>
+                  <button type='submit' name='subscribe' id='mc-embedded-subscribe' className='newsletter-button'><span>Subscribe</span></button>
                 </div>
               </div>
             </form>
