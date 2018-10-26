@@ -315,7 +315,7 @@
       right: $global-spacing / 2;
       font-size: 1rem;
       line-height: 1.5rem;
-      opacity: 0.48;
+      color: $link-color;
       width: 1.5rem;
       text-align: center;
     }
@@ -348,7 +348,7 @@
     padding-left: $global-spacing * 2.75;
 
     &::before,
-    > [class^="uisi-"] {
+    > [class^="collecticon-"] {
       position: absolute;
       z-index: 1;
       top: $global-spacing / 4;
@@ -357,6 +357,7 @@
       line-height: 1.5rem;
       width: 1.5rem;
       text-align: center;
+      color: $link-color;
     }
   }
 }
@@ -391,4 +392,20 @@
   > *:last-child {
     margin-bottom: 0;
   }
+}
+
+
+/* drop menu icons
+   ========================================================================== */
+
+/**
+ * "dpi-" prefix stands for "drop menu icons"
+ */
+
+.dpi-twitter::before {
+  @extend %collecticon-brand-twitter;
+}
+
+.dpi-facebook::before {
+  @extend %collecticon-brand-facebook;
 }

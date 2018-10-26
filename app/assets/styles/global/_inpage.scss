@@ -5,12 +5,15 @@
 .inpage__header {
   position: relative;
   padding: ($global-spacing * 4) 0;
-  box-shadow: 0 $base-border-width 0 0 $base-alpha-color;
+  box-shadow: 0 2px 0 0 $base-alpha-color;
 
   > .inner {
     @extend .row, .row--centered;
     position: relative;
     z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 ($global-spacing * 2);
   }
 
   .page--has-hero & {
@@ -19,15 +22,14 @@
     background: $base-color;
     padding: ($global-spacing * 8) 0 ($global-spacing * 6) 0;
   }
+
+  .inpage--single & {
+    padding: ($global-spacing * 2) 0;
+  }
 }
 
 .inpage__headline {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-
-  > * {
-    grid-column: auto / span 8;
-  }
+  grid-column: 1 / span 8;
 
   > *:last-child {
     margin-bottom: 0;
@@ -56,9 +58,13 @@
 }
 
 .inpage__title {
-  @extend .heading, .heading--xlarge;
+  @extend .heading--xlarge;
   margin-bottom: $global-spacing * 2;
 }
+
+
+/* Details
+   ========================================================================== */
 
 .inpage__details {
   list-style: none;
@@ -90,11 +96,16 @@
   }
 }
 
+
+/* Hero
+   ========================================================================== */
+
 .inpage__hero {
   margin: 0;
   padding: 0;
 
-  &, &-item {
+  &,
+  &-item {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -181,6 +192,37 @@
   }
 }
 
+
+/* Actions
+   ========================================================================== */
+
+.inpage__actions {
+  grid-column: auto / span 4;
+  justify-self: end;
+  align-self: center;
+}
+
+/**
+ * "ipa-" prefix stands for "inpage action"
+ */
+
+[class^="ipa-"],
+[class*=" ipa-"] {
+  @extend .button, .button--primary-raised-dark;
+}
+
+.ipa-share::before {
+  @extend %collecticon-share;
+}
+
+.ipa-download::before {
+  @extend %collecticon-download-2;
+}
+
+
+/* Nav
+   ========================================================================== */
+
 .inpage__nav {
   background: #fff;
   box-shadow: 0 1px 0 0 $base-alpha-color;
@@ -196,10 +238,23 @@
   }
 }
 
+
+
+/* Body
+   ========================================================================== */
+
 .inpage__body {
   padding: ($global-spacing * 4) 0;
 
   > .inner {
     @extend .row, .row--centered;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 ($global-spacing * 2);
   }
+}
+
+.col--main {
+  grid-column: 1 / span 8;
+
 }

@@ -19,7 +19,7 @@ class Home extends React.Component {
             <div className='inner'>
               <div className='inpage__headline'>
                 <h1 className='inpage__title'>Which emerging market is most atractive for clear energy investment?</h1>
-                <p><Link to='/resuts' className='home-cta-button' title='View results'><span>Find out</span></Link></p>
+                <p><Link to='/results' className='home-cta-button' title='View results'><span>Find out</span></Link></p>
               </div>
             </div>
 
