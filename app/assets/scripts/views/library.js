@@ -147,23 +147,21 @@ class Library extends React.Component {
   render () {
     return (
       <App pageTitle='Content Library' >
-        <article className='layout--page full'>
-          <header className='layout--page__header'>
-            <div className='row--contained'>
-              <div className='layout--page__heading'>
-                <h1 className='layout--page__title'>Content library</h1>
+        <article className='inpage inpage--library'>
+          <header className='inpage__header'>
+            <div className='inner'>
+              <div className='inpage__headline'>
+                <h1 className='inpage__title'>Content library</h1>
               </div>
-              <div className='layout--page__tools'>
-                <ul className='actions-menu'>
-                  <li><ShareOptions url={window.location.toString()} /></li>
-                </ul>
+              <div className='inpage__actions'>
+                <ShareOptions url={window.location.toString()} />
               </div>
             </div>
           </header>
 
-          <div className='layout--page__body'>
-            <div className='row--contained'>
-              <div className='col--main prose-copy'>
+          <div className='inpage__body'>
+            <div className='inner'>
+              <div className='col--main prose'>
 
                 <h2>Tools</h2>
                 <ul className='tools'>

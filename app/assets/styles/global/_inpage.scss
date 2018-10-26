@@ -4,7 +4,7 @@
 
 .inpage__header {
   position: relative;
-  padding: ($global-spacing * 4) 0;
+  padding: ($global-spacing * 2) 0;
   box-shadow: 0 2px 0 0 $base-alpha-color;
 
   > .inner {
@@ -14,10 +14,6 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 0 ($global-spacing * 2);
-  }
-
-  .inpage--single & {
-    padding: ($global-spacing * 2) 0;
   }
 
   .page--has-hero & {
@@ -256,5 +252,4 @@
 
 .col--main {
   grid-column: 1 / span 8;
-
 }
