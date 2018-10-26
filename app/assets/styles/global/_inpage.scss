@@ -6,7 +6,6 @@
   position: relative;
   padding: ($global-spacing * 2) 0;
   box-shadow: 0 2px 0 0 $base-alpha-color;
-  text-shadow: 0 0 8px rgba($base-color, 0.64);
 
   > .inner {
     @extend .row, .row--centered;
@@ -22,6 +21,7 @@
     color: #fff;
     background: $base-color;
     padding: ($global-spacing * 8) 0 ($global-spacing * 6) 0;
+    text-shadow: 0 0 8px rgba($base-color, 0.64);
   }
 }
 
