@@ -101,7 +101,7 @@ export default class ResultsTable extends React.PureComponent {
 
       return (
         <tr key={iso}>
-          <td className='cell-rank'>{hasScore ? padNumber(rank, 3) : '--'}</td>
+          <td className='cell-rank'>{hasScore ? padNumber(rank, 2) : '--'}</td>
           <td className='cell-country'>
             <Link to={`/results/${iso}`} title={`Go to ${name} page`}>{name}</Link>
           </td>

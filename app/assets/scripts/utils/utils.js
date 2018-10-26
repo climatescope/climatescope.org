@@ -192,3 +192,15 @@ export function reactNl2Br (str) {
       : line
   ))
 }
+
+/**
+ * Compare strings ignoring the case.
+ *
+ * @param {string} a String 1
+ * @param {string} b String 2
+ */
+export function equalsIgnoreCase (a, b) {
+  a = typeof a === 'string' ? a.toLowerCase() : a
+  b = typeof b === 'string' ? b.toLowerCase() : b
+  return a === b
+}

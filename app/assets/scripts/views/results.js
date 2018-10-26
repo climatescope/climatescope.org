@@ -10,7 +10,7 @@ import { StickyContainer, Sticky } from 'react-sticky'
 
 import { environment } from '../config'
 import QsState from '../utils/qs-state'
-import { fetchGeographies } from '../redux/geographies'
+import { fetchGeographies, fetchGeographiesMeta } from '../redux/geographies'
 import { wrapApiResult } from '../utils/utils'
 import { regions } from '../utils/constants'
 
@@ -66,6 +66,7 @@ class Results extends React.Component {
 
   componentDidMount () {
     this.props.fetchGeographies()
+    this.props.fetchGeographiesMeta()
   }
 
   onWeightsResetClick (e) {
@@ -238,6 +239,7 @@ class Results extends React.Component {
               <ResultsMap
                 bounds={activeRegion.bounds}
                 highlightISO={highlightISO}
+                meta={this.props.geoMeta.getData([])}
                 data={rankedGeographies}
               />
               <div className='row--contained'>
@@ -256,7 +258,9 @@ if (environment !== 'production') {
     history: T.object,
     location: T.object,
     fetchGeographies: T.func,
+    fetchGeographiesMeta: T.func,
     geographiesList: T.object,
+    geoMeta: T.object,
     sliders: T.array
   }
 }
@@ -286,13 +290,15 @@ function mapStateToProps (state, props) {
 
   return {
     sliders,
-    geographiesList
+    geographiesList,
+    geoMeta: wrapApiResult(state.geographies.meta)
   }
 }
 
 function dispatcher (dispatch) {
   return {
-    fetchGeographies: (...args) => dispatch(fetchGeographies(...args))
+    fetchGeographies: (...args) => dispatch(fetchGeographies(...args)),
+    fetchGeographiesMeta: (...args) => dispatch(fetchGeographiesMeta(...args))
   }
 }
 

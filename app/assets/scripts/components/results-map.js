@@ -6,12 +6,11 @@ import mapboxgl from 'mapbox-gl'
 import ReactTooltip from 'react-tooltip'
 import debounce from 'lodash.debounce'
 import isEqual from 'lodash.isequal'
-import turfCenter from '@turf/center'
 
 import { render } from 'react-dom'
 
 import { mbtoken, environment } from '../config'
-import { padNumber, round } from '../utils/utils'
+import { padNumber, round, equalsIgnoreCase } from '../utils/utils'
 import OnGrid from './on-grid'
 import { ParameterBreakdown } from './parameters'
 
@@ -36,7 +35,7 @@ const buildMarker = (geoId, value) => {
 
   if (value) {
     render((
-      <div className='country-marker highlight' data-tip={geoId} data-for='marker-tip'>{padNumber(value, 3)}</div>
+      <div className='country-marker highlight' data-tip={geoId} data-for='marker-tip'>{padNumber(value, 2)}</div>
     ), el)
   } else {
     render(<div className='country-marker' data-tip={geoId} data-for='marker-tip' />, el)
@@ -83,6 +82,10 @@ export default class ResultsMap extends React.Component {
     if (!isEqual(this.props.data, prevProps.data)) {
       this.renderMarkers()
     }
+
+    if (!isEqual(this.props.meta, prevProps.meta)) {
+      this.renderMarkers()
+    }
   }
 
   setHighlightedGeographies (geographies) {
@@ -91,35 +94,32 @@ export default class ResultsMap extends React.Component {
   }
 
   renderMarkers () {
-    if (!this.mapLoaded) return
+    if (!this.mapLoaded || !this.props.data.length || !this.props.meta.length) return
 
     // Clear previous markers.
     this.markers.forEach(m => m.remove())
 
-    // TODO: Use a centroid file instead of the features as they're not reliable.
-    const feats = this.map.querySourceFeatures('composite', { sourceLayer: 'ne_10m_admin_0_countries-aqr028' })
-
     let highlightedMarkers = 0
 
     const markersToAdd = this.props.data.reduce((acc, geo) => {
-      const currentGeo = feats.find(f => f.properties.ISO_A2 === geo.iso)
+      console.log('geo', geo);
+      const currentGeo = this.props.meta.find(m => equalsIgnoreCase(m.iso, geo.iso))
       if (!currentGeo) {
-        console.warn('Geography not found on source:', geo.iso)
+        console.warn('Geography not found on meta data:', geo.iso)
         return acc
       }
-      const location = turfCenter(currentGeo)
 
       // Only the first 10 with scores are big markers.
       if (geo.score && highlightedMarkers < 10) {
         highlightedMarkers++
         const marker = new mapboxgl.Marker(buildMarker(geo.iso, geo.rank))
-          .setLngLat(location.geometry.coordinates)
+          .setLngLat(currentGeo.center)
         // If the marker is of the highlighted type add to the end of the array
         // to ensure that it will be added later to the map staying on top.
         return acc.concat(marker)
       } else {
         const marker = new mapboxgl.Marker(buildMarker(geo.iso))
-          .setLngLat(location.geometry.coordinates)
+          .setLngLat(currentGeo.center)
         // Add normal markers to the beginning on the array to ensure that
         // they're added first to the map.
         return [marker].concat(acc)
@@ -183,7 +183,7 @@ export default class ResultsMap extends React.Component {
 
   renderPopover () {
     const popoverContent = (geographyIso) => {
-      const geography = this.props.data.find(geography => geography.iso === geographyIso)
+      const geography = this.props.data.find(geography => equalsIgnoreCase(geography.iso, geographyIso))
       if (!geography) return null
 
       const { iso, score, rank, name, topics, grid } = geography
@@ -250,6 +250,7 @@ if (environment !== 'production') {
   ResultsMap.propTypes = {
     highlightISO: T.array,
     bounds: T.array,
-    data: T.array
+    data: T.array,
+    meta: T.array
   }
 }

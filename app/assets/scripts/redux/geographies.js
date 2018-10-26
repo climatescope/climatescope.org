@@ -3,6 +3,7 @@ import { combineReducers } from 'redux'
 
 import { fetchDispatchCacheFactory, baseAPIReducer } from './utils'
 import { baseurl } from '../config'
+import turfCenter from '@turf/center'
 
 // /////////////////////////////////////////////////////////////////////////////
 // Actions
@@ -95,10 +96,87 @@ function geographyReducer (state = geographyReducerInitialState, action) {
 }
 
 // /////////////////////////////////////////////////////////////////////////////
+// Actions
+// /////////////////////////////////////////////////////////////////////////////
+
+export const REQUEST_GEOGRAPHIES_META = 'REQUEST_GEOGRAPHIES_META'
+export const RECEIVE_GEOGRAPHIES_META = 'RECEIVE_GEOGRAPHIES_META'
+export const INVALIDATE_GEOGRAPHIES_META = 'INVALIDATE_GEOGRAPHIES_META'
+
+export function invalidateGeographiesMeta () {
+  return { type: INVALIDATE_GEOGRAPHIES_META }
+}
+
+export function requestGeographiesMeta () {
+  return { type: REQUEST_GEOGRAPHIES_META }
+}
+
+export function receiveGeographiesMeta (data, error = null) {
+  return { type: RECEIVE_GEOGRAPHIES_META, data, error, receivedAt: Date.now() }
+}
+
+export function fetchGeographiesMeta () {
+  return fetchDispatchCacheFactory({
+    statePath: 'geographiesMeta.geographiesMetaList',
+    url: `${baseurl}/api/geographies.json`,
+    requestFn: requestGeographiesMeta,
+    receiveFn: receiveGeographiesMeta,
+    mutator: (response) => {
+      return response.map(r => {
+        if (!r.bbox) throw new Error('No bbox found for ' + r.name)
+        const west = r.bbox[0]
+        const south = r.bbox[1]
+        const east = r.bbox[2]
+        const north = r.bbox[3]
+        const lowLeft = [west, south]
+        const topLeft = [west, north]
+        const topRight = [east, north]
+        const lowRight = [east, south]
+
+        return {
+          ...r,
+          bounds: [ lowLeft, topRight ],
+          center: turfCenter({
+            type: 'Feature',
+            geometry: {
+              type: 'Polygon',
+              coordinates: [
+                [
+                  lowLeft,
+                  lowRight,
+                  topRight,
+                  topLeft,
+                  lowLeft
+                ]
+              ]
+            }
+          }).geometry.coordinates
+        }
+      })
+    }
+  })
+}
+
+// /////////////////////////////////////////////////////////////////////////////
+// Reducer
+// /////////////////////////////////////////////////////////////////////////////
+
+const geographiesMetaReducerInitialState = {
+  fetching: false,
+  fetched: false,
+  error: null,
+  data: []
+}
+
+function geographiesMetaReducer (state = geographiesMetaReducerInitialState, action) {
+  return baseAPIReducer(state, action, 'GEOGRAPHIES_META')
+}
+// /////////////////////////////////////////////////////////////////////////////
 // Combine reducers and export
 // /////////////////////////////////////////////////////////////////////////////
 
 export default combineReducers({
   list: geographiesReducer,
-  individualGeographies: geographyReducer
+  individualGeographies: geographyReducer,
+  meta: geographiesMetaReducer
 })

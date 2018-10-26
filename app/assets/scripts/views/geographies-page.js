@@ -7,8 +7,8 @@ import { StickyContainer, Sticky } from 'react-sticky'
 import { configureAnchors } from 'react-scrollable-anchor'
 
 import { environment } from '../config'
-import { fetchGeography } from '../redux/geographies'
-import { getFromState, wrapApiResult } from '../utils/utils'
+import { fetchGeography, fetchGeographiesMeta } from '../redux/geographies'
+import { getFromState, wrapApiResult, equalsIgnoreCase } from '../utils/utils'
 
 import App from './app'
 import UhOh from './uhoh'
@@ -125,12 +125,20 @@ if (environment !== 'production') {
 class Geography extends React.Component {
   componentDidMount () {
     this.props.fetchGeography(this.props.match.params.geoIso)
+    this.props.fetchGeographiesMeta()
   }
 
   componentDidUpdate (prevProps) {
     if (prevProps.match.params.geoIso !== this.props.match.params.geoIso) {
       this.props.fetchGeography(this.props.match.params.geoIso)
     }
+  }
+
+  getGeoBounds (iso) {
+    const { hasError, getData } = this.props.geoMeta
+    if (hasError()) return []
+    const geo = getData([]).find(m => equalsIgnoreCase(m.iso, iso))
+    return geo ? geo.bounds : []
   }
 
   render () {
@@ -188,6 +196,7 @@ class Geography extends React.Component {
               </div>
             </div>
             <GeographyMap
+              geographyBounds={this.getGeoBounds(geography.iso)}
               geographyISO={isReady() ? geography.iso.toUpperCase() : ''}
             />
           </header>
@@ -416,19 +425,22 @@ class Geography extends React.Component {
 if (environment !== 'production') {
   Geography.propTypes = {
     match: T.object,
-    geography: T.object
+    geography: T.object,
+    geoMeta: T.object
   }
 }
 
 function mapStateToProps (state, props) {
   return {
-    geography: wrapApiResult(getFromState(state.geographies.individualGeographies, props.match.params.geoIso))
+    geography: wrapApiResult(getFromState(state.geographies.individualGeographies, props.match.params.geoIso)),
+    geoMeta: wrapApiResult(state.geographies.meta)
   }
 }
 
 function dispatcher (dispatch) {
   return {
-    fetchGeography: (...args) => dispatch(fetchGeography(...args))
+    fetchGeography: (...args) => dispatch(fetchGeography(...args)),
+    fetchGeographiesMeta: (...args) => dispatch(fetchGeographiesMeta(...args))
   }
 }
 

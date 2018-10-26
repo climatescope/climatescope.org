@@ -2,7 +2,7 @@
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import mapboxgl from 'mapbox-gl'
-import bbox from '@turf/bbox'
+import isEqual from 'lodash.isequal'
 
 import { mbtoken, environment } from '../config'
 
@@ -14,10 +14,43 @@ export default class GeographyMap extends React.Component {
     this.initMap()
   }
 
+  componentDidUpdate (prevProps) {
+    if (!isEqual(this.props.geographyISO, prevProps.geographyISO)) {
+      this.fitGeographyBounds()
+    }
+
+    if (!isEqual(this.props.geographyBounds, prevProps.geographyBounds)) {
+      this.fitGeographyBounds()
+    }
+  }
+
   componentWillUnmount () {
     if (this.map) {
       this.map.remove()
     }
+  }
+
+  fitGeographyBounds () {
+    if (!this.mapLoaded || !this.props.geographyBounds.length) return
+
+    // Get the width of the map to calculate the offset.
+    // It's limited to the max content width of 1280px
+    const mapWidth = Math.min(1280, this.refs.mapEl.getBoundingClientRect().width)
+    this.map.fitBounds(this.props.geographyBounds, {
+      padding: { top: 32, bottom: 32, left: 0, right: 0 },
+      // Offset pf 1/4
+      offset: [mapWidth / 4, 0]
+    })
+  }
+
+  highlightGeography () {
+    if (!this.mapLoaded || !this.props.geographyISO) return
+    const geoISO = this.props.geographyISO
+
+    this.map.setFilter('ne-countries-contour', ['==', 'ISO_A2', geoISO])
+    this.map.setFilter('ne-countries', ['!=', 'ISO_A2', geoISO])
+    this.map.setFilter('ne-capitals-bullet', ['==', 'ISO_A2', geoISO])
+    this.map.setFilter('ne-capitals-label', ['==', 'ISO_A2', geoISO])
   }
 
   initMap () {
@@ -32,28 +65,8 @@ export default class GeographyMap extends React.Component {
 
     this.map.on('load', () => {
       this.mapLoaded = true
-      const geoISO = this.props.geographyISO
-
-      this.map.setFilter('ne-countries-contour', ['==', 'ISO_A2', geoISO])
-      this.map.setFilter('ne-countries', ['!=', 'ISO_A2', geoISO])
-      this.map.setFilter('ne-capitals-bullet', ['==', 'ISO_A2', geoISO])
-      this.map.setFilter('ne-capitals-label', ['==', 'ISO_A2', geoISO])
-
-      // Get the width of the map to calculate the offset.
-      // It's limited to the max content width of 1280px
-      const mapWidth = Math.min(1280, this.refs.mapEl.getBoundingClientRect().width)
-
-      const feats = this.map.querySourceFeatures('composite', { sourceLayer: 'ne_10m_admin_0_countries-aqr028' })
-      const currentGeo = feats.find(f => f.properties.ISO_A2 === geoISO)
-      if (!currentGeo) {
-        console.warn('Geography not found on source:', geoISO)
-      }
-      const bounds = bbox(currentGeo)
-      this.map.fitBounds([ [bounds[0], bounds[1]], [bounds[2], bounds[3]] ], {
-        padding: { top: 32, bottom: 32, left: 0, right: 0 },
-        // Offset pf 1/4
-        offset: [mapWidth / 4, 0]
-      })
+      this.fitGeographyBounds()
+      this.highlightGeography()
     })
   }
 
@@ -69,6 +82,7 @@ export default class GeographyMap extends React.Component {
 
 if (environment !== 'production') {
   GeographyMap.propTypes = {
-    geographyISO: T.string
+    geographyISO: T.string,
+    geographyBounds: T.array
   }
 }
