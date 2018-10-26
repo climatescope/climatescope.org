@@ -18,13 +18,9 @@
   position: relative;
   width: 100%;
   z-index: 1000;
-  padding: ($global-spacing) 0;
+  padding: ($global-spacing * 2) 0;
   background: $accent-color;
   color: #fff;
-
-  @include media(large-up) {
-    padding: ($global-spacing * 2) 0;
-  }
 
   &::before,
   &::after {
