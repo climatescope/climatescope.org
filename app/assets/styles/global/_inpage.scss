@@ -16,15 +16,15 @@
     grid-gap: 0 ($global-spacing * 2);
   }
 
+  .inpage--single & {
+    padding: ($global-spacing * 2) 0;
+  }
+
   .page--has-hero & {
     @extend .antialiased;
     color: #fff;
     background: $base-color;
     padding: ($global-spacing * 8) 0 ($global-spacing * 6) 0;
-  }
-
-  .inpage--single & {
-    padding: ($global-spacing * 2) 0;
   }
 }
 
