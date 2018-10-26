@@ -2,13 +2,22 @@
    Home: global
    ========================================================================== */
 
-.home-cta-button {
-  @extend .button, .button--xlarge, .button--achromic-glass;
-}
-
 .inpage--home {
   .inpage__title {
     @include heading(2.5rem, xlarge-up);
     text-transform: none;
   }
+
+  .col--main {
+    grid-column: 1 / span 9;
+  }
+
+  .col--sec {
+    grid-column: auto / span 3;
+  }
+}
+
+
+.home-cta-button {
+  @extend .button, .button--xlarge, .button--achromic-glass;
 }

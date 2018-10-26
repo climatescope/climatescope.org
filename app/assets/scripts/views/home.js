@@ -36,7 +36,7 @@ class Home extends React.Component {
 
           <div className='inpage__body'>
             <div className='inner'>
-              <div className='featured-col featured-col--main'>
+              <div className='col--main'>
 
                 <section className='featured-section'>
                   <h1 className='featured-section__title'>Insights</h1>
@@ -65,7 +65,7 @@ class Home extends React.Component {
                 </section>
               </div>
 
-              <div className='featured-col featured-col--sec'>
+              <div className='col--sec'>
                 <ToolsList />
               </div>
 
