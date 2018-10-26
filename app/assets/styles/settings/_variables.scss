@@ -5,21 +5,21 @@
 /* Colors
    ========================================================================== */
 
-$base-color: #0D2029;                                   // Big Stone
-$accent-color: #509b75;                                 // Viridian
-$primary-color: #C3D500;                                // Light green
-$secondary-color: #00925F;                              // Dark green
+$base-color: #0D2029;                                   // Big stone
+$accent-color: #32746D;                                 // Myrtle green
+$primary-color: #02A87C;                                // Jade
+$secondary-color: #21617A;                              // Blumine
 
 /* State */
 
 $danger-color: #D85D3F;                                 // Red
-$success-color: $secondary-color;                       // Same as $secondary-color
+$success-color: $primary-color;                         // Same as $primary-color
 $warning-color: #F4A432;                                // Yellow
 $info-color: #499DD2;                                   // Blue
 
 /* Helpers */
 
-$link-color: $accent-color;
+$link-color: $primary-color;
 $base-alpha-color: rgba($base-color, 0.08);
 
 /* Infographic */
