@@ -21,6 +21,7 @@
   padding: ($global-spacing * 2) 0;
   background: $accent-color;
   color: #fff;
+  text-shadow: 0 0 8px rgba($base-color, 0.64);
 
   &::before,
   &::after {
@@ -119,6 +120,7 @@
 
 .global-menu__link {
   @extend .button, .button--achromic-plain;
+  text-shadow: 0 0 8px rgba($base-color, 0.64);
 
   &--active {
     @extend .button--active;

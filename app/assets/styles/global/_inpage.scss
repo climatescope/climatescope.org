@@ -6,6 +6,7 @@
   position: relative;
   padding: ($global-spacing * 2) 0;
   box-shadow: 0 2px 0 0 $base-alpha-color;
+  text-shadow: 0 0 8px rgba($base-color, 0.64);
 
   > .inner {
     @extend .row, .row--centered;
@@ -55,6 +56,7 @@
 
 .inpage__title {
   @extend .heading--xlarge;
+  text-transform: uppercase;
   margin-bottom: $global-spacing * 2;
 }
 
@@ -74,7 +76,7 @@
 
   strong {
     display: block;
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 1;
     margin-bottom: 0.25rem;
   }

@@ -9,6 +9,6 @@
 .inpage--home {
   .inpage__title {
     @include heading(2.5rem, xlarge-up);
-    margin-bottom: $global-spacing * 2;
+    text-transform: none;
   }
 }
