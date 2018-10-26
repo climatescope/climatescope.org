@@ -147,15 +147,13 @@
   font-family: $heading-font-family;
   background: tint($base-color, 95%);
   padding: ($global-spacing * 2) 0;
-  // position: relative;
-  // z-index: 2000;
 
   @include media(large-up) {
     padding: ($global-spacing * 2) 0;
   }
 
   > .inner {
-    @extend .row;
+    @extend .row, .row--centered;
 
     > *:last-child {
       margin-bottom: 0
