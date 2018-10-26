@@ -14,6 +14,12 @@ export default class GeographyMap extends React.Component {
     this.initMap()
   }
 
+  componentWillUnmount () {
+    if (this.map) {
+      this.map.remove()
+    }
+  }
+
   initMap () {
     this.map = new mapboxgl.Map({
       container: this.refs.mapEl,

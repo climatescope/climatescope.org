@@ -8,18 +8,19 @@ import { environment } from '../config'
 /**
  * Renders the on grid icon
  *
- * @param {boolean} isOnGrid Whether or not is on grid
+ * @param {boolean} grid Whether or not is on grid
  */
-export default function OnGrid ({ isOnGrid }) {
+export default function OnGrid ({ grid }) {
+  if (grid === null) return null
   return (
-    <em data-title={isOnGrid ? 'on-grid' : 'off-grid'} className={c('label-grid', { 'label-grid-on': isOnGrid, 'label-grid-off': !isOnGrid })}>
-      <span>{isOnGrid ? 'on' : 'off'}</span>
+    <em data-title={grid ? 'on-grid' : 'off-grid'} className={c('label-grid', { 'label-grid-on': grid, 'label-grid-off': !grid })}>
+      <span>{grid ? 'on' : 'off'}</span>
     </em>
   )
 }
 
 if (environment !== 'production') {
   OnGrid.propTypes = {
-    isOnGrid: T.bool
+    grid: T.bool
   }
 }

@@ -97,21 +97,23 @@ export default class ResultsTable extends React.PureComponent {
     const rows = orderBy(data, sortField, sortDirection)
 
     return rows.map(({ iso, score, rank, name, topics, grid }) => {
+      const hasScore = !!score
+
       return (
         <tr key={iso}>
-          <td className='cell-rank'>{padNumber(rank, 3)}</td>
+          <td className='cell-rank'>{hasScore ? padNumber(rank, 3) : '--'}</td>
           <td className='cell-country'>
             <Link to={`/results/${iso}`} title={`Go to ${name} page`}>{name}</Link>
           </td>
-          <td>{round(score)}</td>
+          <td>{hasScore ? round(score) : '--'}</td>
           <td>
             <ParameterGraph
               geographyIso={iso}
-              data={topics}
+              data={topics || []}
             />
           </td>
           <td>
-            <OnGrid isOnGrid={grid} />
+            <OnGrid grid={grid} />
           </td>
         </tr>
       )
@@ -123,12 +125,18 @@ export default class ResultsTable extends React.PureComponent {
       const geography = this.props.data.find(c => c.iso === geographyIso)
       if (!geography) return null
 
+      const hasTopics = geography.topics && geography.topics.length
+
       return (
         <article className='tooltip-inner'>
-          <ParameterBreakdown
-            className='params-legend'
-            data={geography.topics}
-          />
+          {hasTopics ? (
+            <ParameterBreakdown
+              className='params-legend'
+              data={geography.topics}
+            />
+          ) : (
+            <p>There is no data for this geography.</p>
+          )}
         </article>
       )
     }

@@ -136,7 +136,7 @@ class Results extends React.Component {
         return region === 'all' ? true : geography.region.id === region
       })
       .map(geography => {
-        const topics = geography.topics.map(t => {
+        const topics = (geography.topics || []).map(t => {
           return {
             id: t.id,
             name: t.name,
@@ -145,12 +145,22 @@ class Results extends React.Component {
             weight: sliders[t.id].value
           }
         })
+
+        // Convert `on` to `true`, `off` to `false` and everything
+        // else to `null`
+        const grid = geography.grid === 'on'
+          ? true
+          : geography.grid === 'off'
+            ? false
+            : null
+
         return {
           iso: geography.iso.toUpperCase(),
           name: geography.name,
-          grid: geography.grid === 'on',
+          grid,
           topics,
           score: topics.reduce((acc, t) => acc + t.value * (t.weight / 100), 0)
+          // score: null
         }
       })
 

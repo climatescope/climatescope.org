@@ -98,19 +98,37 @@ export default class ResultsMap extends React.Component {
 
     // TODO: Use a centroid file instead of the features as they're not reliable.
     const feats = this.map.querySourceFeatures('composite', { sourceLayer: 'ne_10m_admin_0_countries-aqr028' })
-    this.markers = this.props.data.map((geo, idx) => {
+
+    let highlightedMarkers = 0
+
+    const markersToAdd = this.props.data.reduce((acc, geo) => {
       const currentGeo = feats.find(f => f.properties.ISO_A2 === geo.iso)
       if (!currentGeo) {
         console.warn('Geography not found on source:', geo.iso)
+        return acc
       }
       const location = turfCenter(currentGeo)
 
-      // Only the top 10 are big markers.
-      const marker = idx < 10 ? buildMarker(geo.iso, geo.rank) : buildMarker(geo.iso)
+      // Only the first 10 with scores are big markers.
+      if (geo.score && highlightedMarkers < 10) {
+        highlightedMarkers++
+        const marker = new mapboxgl.Marker(buildMarker(geo.iso, geo.rank))
+          .setLngLat(location.geometry.coordinates)
+        // If the marker is of the highlighted type add to the end of the array
+        // to ensure that it will be added later to the map staying on top.
+        return acc.concat(marker)
+      } else {
+        const marker = new mapboxgl.Marker(buildMarker(geo.iso))
+          .setLngLat(location.geometry.coordinates)
+        // Add normal markers to the beginning on the array to ensure that
+        // they're added first to the map.
+        return [marker].concat(acc)
+      }
+    }, [])
 
-      return new mapboxgl.Marker(marker)
-        .setLngLat(location.geometry.coordinates)
-        .addTo(this.map)
+    // Add the markers to the map on the correct order.
+    this.markers = markersToAdd.map(m => {
+      return m.addTo(this.map)
     })
 
     // After the markers are rendered we need to rebind the react tooltips.
@@ -169,6 +187,7 @@ export default class ResultsMap extends React.Component {
       if (!geography) return null
 
       const { iso, score, rank, name, topics, grid } = geography
+      const hasScore = !!score
 
       return (
         <article className='tooltip-inner'>
@@ -176,17 +195,29 @@ export default class ResultsMap extends React.Component {
             <h1 className='tooltip__title'>
               <Link to={`/results/${iso}`} title={`View ${name} page`}>{name}</Link>
             </h1>
-            <OnGrid isOnGrid={grid} />
+            <OnGrid grid={grid} />
           </header>
           <div className='tooltip__body'>
-            <ParameterBreakdown
-              className='params-legend'
-              data={topics} >
-              <dt>Global rank</dt>
-              <dd>{rank}</dd>
-              <dt>Score</dt>
-              <dd>{round(score)}</dd>
-            </ParameterBreakdown>
+            {hasScore ? (
+              <ParameterBreakdown
+                className='params-legend'
+                data={topics} >
+                <dt>Global rank</dt>
+                <dd>{rank}</dd>
+                <dt>Score</dt>
+                <dd>{round(score)}</dd>
+              </ParameterBreakdown>
+            ) : (
+              <>
+                <dl className='params-legend'>
+                  <dt>Global rank</dt>
+                  <dd>--</dd>
+                  <dt>Score</dt>
+                  <dd>--</dd>
+                </dl>
+                <p>There is no data for this geography.</p>
+              </>
+            )}
             <Link to={`/results/${iso}`} className='bttn bttn-cta go' title={`View ${name} page`}>View Geography</Link>
           </div>
         </article>
