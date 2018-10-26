@@ -1,15 +1,15 @@
 /* ==========================================================================
-   Geographies: single
+   Results: single
    ========================================================================== */
 
-.inpage--geography {
+.inpage--results.inpage--single {
   .inpage__body {
     padding: 0;
   }
 }
 
 .par-section {
-  padding: ($global-spacing * 6) 0;
+  padding: ($global-spacing * 4) 0;
 
   &:nth-child(odd) {
     background: #fff;

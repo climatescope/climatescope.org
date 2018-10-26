@@ -4,6 +4,8 @@
 
 .inpage__header {
   position: relative;
+  padding: ($global-spacing * 4) 0;
+  box-shadow: 0 $base-border-width 0 0 $base-alpha-color;
 
   > .inner {
     @extend .row, .row--centered;
@@ -54,6 +56,7 @@
 }
 
 .inpage__title {
+  @extend .heading, .heading--xlarge;
   margin-bottom: $global-spacing * 2;
 }
 
@@ -100,7 +103,80 @@
     bottom: 0;
   }
 
-  &-caption {
+  img {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+  }
+}
+
+.inpage__hero--cover {
+  &::after {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($base-color, 0.16);
+    content: '';
+  }
+}
+
+.inpage__hero-caption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 5;
+
+  @include media(large-up) {
+    right: 2rem;
+    bottom: 2rem;
+  }
+
+  .info,
+  .info:visited {
+    position: relative;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
+    font-size: 1rem;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover::before {
+      opacity: 0.64;
+    }
+
+    &::before {
+      @extend %collecticon-circle-information;
+      opacity: 0.32;
+      line-height: inherit;
+    }
+
+    &::after {
+      top: 50%;
+      bottom: auto;
+      left: auto;
+      right: 2rem;
+      margin: 0;
+      transform: translate(0, -50%);
+    }
+
+    > * {
+      @extend .visually-hidden;
+    }
+  }
+
+  .inpage__hero--map & {
     @extend .visually-hidden;
   }
 }
@@ -121,7 +197,7 @@
 }
 
 .inpage__body {
-  padding: ($global-spacing * 6) 0;
+  padding: ($global-spacing * 4) 0;
 
   > .inner {
     @extend .row, .row--centered;

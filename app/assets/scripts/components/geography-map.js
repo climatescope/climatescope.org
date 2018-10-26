@@ -72,7 +72,7 @@ export default class GeographyMap extends React.Component {
 
   render () {
     return (
-      <figure className='inpage__hero'>
+      <figure className='inpage__hero inpage__hero--map'>
         <div className='inpage__hero-item' ref='mapEl' />
         <figcaption className='inpage__hero-caption'>Geography map</figcaption>
       </figure>

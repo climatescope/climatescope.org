@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Home: global
+   ========================================================================== */
+
+.home-cta-button {
+  @extend .button, .button--xlarge, .button--achromic-glass;
+}
+
+.inpage--home {
+  .inpage__title {
+    @include heading(2.5rem, xlarge-up);
+    margin-bottom: $global-spacing * 2;
+  }
+}
