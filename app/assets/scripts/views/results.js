@@ -4,6 +4,8 @@ import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import c from 'classnames'
 import orderBy from 'lodash.orderby'
+import get from 'lodash.get'
+import isEqual from 'lodash.isequal'
 import { StickyContainer, Sticky } from 'react-sticky'
 
 import { environment } from '../config'
@@ -19,6 +21,14 @@ import ResultsTable from '../components/results-table'
 import Dropdown from '../components/dropdown'
 import ShareOptions from '../components/share'
 
+const getSliderState = (sliders) => sliders.reduce((acc, v) => ({
+  ...acc,
+  [v.id]: {
+    value: v.startingValue,
+    locked: false
+  }
+}), {})
+
 class Results extends React.Component {
   constructor (props) {
     super(props)
@@ -27,21 +37,6 @@ class Results extends React.Component {
     this.onWeightsResetClick = this.onWeightsResetClick.bind(this)
     this.onSliderGroupChange = this.onSliderGroupChange.bind(this)
     this.onSortChange = this.onSortChange.bind(this)
-
-    this.sliders = [
-      {
-        id: 'fundamentals',
-        name: 'Fundamentals'
-      },
-      {
-        id: 'opportunities',
-        name: 'Opportunities'
-      },
-      {
-        id: 'experience',
-        name: 'Experience'
-      }
-    ]
 
     this.qsState = new QsState({
       region: {
@@ -53,7 +48,7 @@ class Results extends React.Component {
 
     this.state = {
       ...this.qsState.getState(this.props.location.search.substr(1)),
-      sliders: this.getInitialSliderState(),
+      sliders: {},
       sort: {
         field: 'rank',
         dir: 'asc'
@@ -61,45 +56,22 @@ class Results extends React.Component {
     }
   }
 
-  getInitialSliderState () {
-    return this.sliders.reduce((acc, v) => ({
-      ...acc,
-      [v.id]: {
-        value: 0,
-        locked: false
-      }
-    }), {})
+  static getDerivedStateFromProps (props, state) {
+    // Construct the slider state the first time.
+    if (!isEqual(state.sliders, {})) return null
+    return {
+      sliders: getSliderState(props.sliders)
+    }
   }
 
   componentDidMount () {
     this.props.fetchGeographies()
-      .then(() => {
-        // Update slider starting values.
-        const { isReady, getData } = this.props.geographiesList
-        if (isReady()) {
-          // All geographies have the same topics. Acess 1st one.
-          const topics = getData()[0].topics
-          let sliders = this.state.sliders
-          // Update the slider values.
-          topics.forEach(t => {
-            sliders = {
-              ...sliders,
-              [t.id]: {
-                ...sliders[t.id],
-                value: t.weight * 100
-              }
-            }
-          })
-
-          this.setState({ sliders })
-        }
-      })
   }
 
   onWeightsResetClick (e) {
     e.preventDefault()
     this.setState({
-      sliders: this.getInitialSliderState()
+      sliders: getSliderState(this.props.sliders)
     })
   }
 
@@ -137,12 +109,13 @@ class Results extends React.Component {
       })
       .map(geography => {
         const topics = (geography.topics || []).map(t => {
+          const weight = get(sliders, [t.id, 'value'], 0)
           return {
             id: t.id,
             name: t.name,
             // The first is always the most recent year.
             value: t.data[0].value,
-            weight: sliders[t.id].value
+            weight
           }
         })
 
@@ -160,7 +133,6 @@ class Results extends React.Component {
           grid,
           topics,
           score: topics.reduce((acc, t) => acc + t.value * (t.weight / 100), 0)
-          // score: null
         }
       })
 
@@ -222,8 +194,8 @@ class Results extends React.Component {
               <a href='#' className='reset' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
 
               <SliderControlGroup
-                sliders={this.sliders}
-                values={this.state.sliders}
+                sliders={this.props.sliders}
+                values={this.state.sliders || {}}
                 onChange={this.onSliderGroupChange}
               />
 
@@ -284,13 +256,37 @@ if (environment !== 'production') {
     history: T.object,
     location: T.object,
     fetchGeographies: T.func,
-    geographiesList: T.object
+    geographiesList: T.object,
+    sliders: T.array
   }
 }
 
 function mapStateToProps (state, props) {
+  const geographiesList = wrapApiResult(state.geographies.list)
+
+  // Compute slider options
+  const { isReady, getData } = geographiesList
+  let sliders = [
+    // {
+    //   id: 'fundamentals',
+    //   name: 'Fundamentals',
+    //   startingValue: 0
+    // }
+  ]
+
+  if (isReady()) {
+    // All geographies have the same topics. Acess 1st one.
+    const topics = getData()[0].topics
+    sliders = topics.map(t => ({
+      id: t.id,
+      name: t.name,
+      startingValue: t.weight * 100
+    }))
+  }
+
   return {
-    geographiesList: wrapApiResult(state.geographies.list)
+    sliders,
+    geographiesList
   }
 }
 
