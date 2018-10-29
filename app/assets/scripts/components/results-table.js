@@ -155,7 +155,7 @@ export default class ResultsTable extends React.PureComponent {
   render () {
     return (
       <>
-        <table className='table country-table'>
+        <table className='table results-table'>
           {this.renderTableHeader()}
           <tbody>
             {

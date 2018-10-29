@@ -150,9 +150,8 @@ class Geography extends React.Component {
     }
 
     return (
-      <App className='page--has-hero' pageTitle={geography.name} >
+      <App className='page--has-hero' pageTitle={geography.name}>
         <article className='inpage inpage--single inpage--results'>
-
           <header className='inpage__header'>
             <div className='inner'>
               <div className='inpage__headline'>

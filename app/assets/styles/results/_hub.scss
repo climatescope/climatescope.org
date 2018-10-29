@@ -1,3 +1,223 @@
 /* ==========================================================================
    Results: Hub
    ========================================================================== */
+
+.inpage--hub.inpage--results {
+  .inpage__header {
+    padding-bottom: 0;
+
+    em {
+      font-style: inherit;
+
+      span {
+        @extend .truncated;
+        max-width: 32rem;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .drop__toggle--caret::after {
+      font-size: 2rem;
+    }
+  }
+
+  .inpage__body {
+    padding-top: 0;
+  }
+}
+
+
+/* Parameter controls
+   ========================================================================== */
+
+.inpage__nav {
+  .prime-title {
+    @extend .heading--xxsmall;
+    float: left;
+    margin: 0 0.5rem 1.25rem 0;
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .reset {
+    float: left;
+    margin-top: 0 !important;
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+  }
+
+  .control {
+    @include column(4/12);
+
+    &.first {
+      clear: left;
+    }
+  }
+
+  .control-title {
+    @extend .heading-alt, .truncated;
+    width: 100%;
+    margin-bottom: 0.75rem;
+    display: block;
+  }
+
+  .control .bttn:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  .slider {
+    margin-bottom: 0.75rem;
+  }
+
+  .control.param-1 .slider .bar-0 {
+    background: $parameter-color-a;
+  }
+
+  .control.param-2 .slider .bar-0 {
+    background: $parameter-color-b;
+  }
+
+  .control.param-3 .slider .bar-0 {
+    background: $parameter-color-c;
+  }
+
+  .slider-value {
+    @extend .heading--xxsmall;
+    float: left;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .lock {
+    float: right;
+  }
+}
+
+
+/* Map viz
+   ========================================================================== */
+
+.results-map-viz {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 ($global-spacing * 2) 0;
+
+  .media__item {
+    position: relative;
+    height: 20rem;
+    background: tint($base-color, 96%);
+  }
+
+  .media__caption {
+    @extend .visually-hidden;
+  }
+}
+
+$highlight-marker-size: 2rem;
+$highlight-marker-border: 6px;
+$marker-size: 0.625rem;
+$marker-border: 4px;
+
+.country-marker {
+  @extend .antialiased;
+  width: $marker-size;
+  height: $marker-size;
+  background: $secondary-color;
+  border-radius: $full-border-radius;
+  text-align: center;
+  font-size: 0.875rem;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-bold;
+  color: #fff;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -($marker-border / 2);
+    left: -($marker-border / 2);;
+    width: calc(#{$marker-size} + #{$marker-border});
+    height: calc(#{$marker-size} + #{$marker-border});
+    border-radius: $full-border-radius;
+    border: $marker-border solid rgba($primary-color, 0.15);
+  }
+}
+
+.country-marker.highlight {
+  width: $highlight-marker-size;
+  height: $highlight-marker-size;
+  background: shade($secondary-color, 20%);
+  line-height: $highlight-marker-size;
+
+  &::before {
+    top: -($highlight-marker-border / 2);
+    left: -($highlight-marker-border / 2);;
+    width: calc(#{$highlight-marker-size} + #{$highlight-marker-border});
+    height: calc(#{$highlight-marker-size} + #{$highlight-marker-border});
+    border-width: $highlight-marker-border;
+  }
+}
+
+.light-stroke {
+  stroke: #fff;
+  stroke-opacity: 0.85;
+}
+
+/* Controls */
+
+.bttn-group.map-country-toggle {
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: $base-border-radius;
+  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  background-clip: padding-box;
+}
+
+.mapboxgl-control-container {
+  @include center($row-max-width);
+  position: relative;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include media(medium-up) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include media(large-up) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+
+/* Table viz
+   ========================================================================== */
+
+.inpage--hub.inpage--results {
+  .col--main {
+    grid-column: 1 / span 12;
+  }
+}
+
+.table {
+  .cell-rank,
+  .cell-country,
+  .cell-section,
+  .cell-policy-name {
+    font-weight: $heading-font-bold;
+  }
+
+  .avg {
+    float: right;
+  }
+
+  sup {
+    margin-left: 0.25rem;
+    top: 0.25rem;
+    vertical-align: super;
+  }
+}

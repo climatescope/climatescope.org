@@ -166,6 +166,7 @@ export default class ResultsMap extends React.Component {
 
     this.map.on('load', () => {
       this.mapLoaded = true
+      this.map.setPaintProperty('background', 'background-opacity', 0)
 
       this.setHighlightedGeographies(this.props.highlightISO)
       this.map.fitBounds(this.props.bounds)
@@ -239,8 +240,12 @@ export default class ResultsMap extends React.Component {
   render () {
     return (
       <>
-        <div id='index-viz' className='row--full intro' ref='mapEl' />
-        {this.renderPopover()}
+        <figure className='results-map-viz media'>
+          <div className='media__item' ref='mapEl'>
+            {this.renderPopover()}
+          </div>
+          <figcaption className='media__caption'>Top and bottom ten geographies</figcaption>
+        </figure>
       </>
     )
   }
