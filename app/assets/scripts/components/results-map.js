@@ -102,7 +102,6 @@ export default class ResultsMap extends React.Component {
     let highlightedMarkers = 0
 
     const markersToAdd = this.props.data.reduce((acc, geo) => {
-      console.log('geo', geo);
       const currentGeo = this.props.meta.find(m => equalsIgnoreCase(m.iso, geo.iso))
       if (!currentGeo) {
         console.warn('Geography not found on meta data:', geo.iso)
