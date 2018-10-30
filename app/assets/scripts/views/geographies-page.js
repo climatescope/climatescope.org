@@ -160,7 +160,10 @@ class Geography extends React.Component {
                 </p>
                 <h1 className='inpage__title'>
                   {isReady() ? geography.name : <LoadingSkeleton size='large' type='heading' inline />}
+
+                  <small class="label label--negative label--grid"><span>On-grid</span></small>
                 </h1>
+
                 <ul className='inpage__details'>
                   <li>
                     <strong>26.28<sub>$Bn</sub></strong>

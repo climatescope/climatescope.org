@@ -58,6 +58,11 @@
   @extend .heading--xlarge;
   text-transform: uppercase;
   margin-bottom: $global-spacing * 2;
+
+  .label {
+    vertical-align: 0.35em;
+    margin: 0 ($global-spacing / 2);
+  }
 }
 
 

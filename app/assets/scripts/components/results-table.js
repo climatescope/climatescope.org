@@ -35,7 +35,7 @@ export default class ResultsTable extends React.PureComponent {
         id: 'rank',
         sortable: true,
         title: 'Sort by rank',
-        value: 'Global rank'
+        value: 'Rank'
       },
       {
         id: 'name',
@@ -69,10 +69,10 @@ export default class ResultsTable extends React.PureComponent {
             if (!o.sortable) return <th className={`th-${o.id}`} key={o.id}>{o.value}</th>
 
             const { sortField, sortDirection } = this.props
-            const klass = c('sort', {
-              'sort-none': sortField !== o.id,
-              'sort-asc': sortField === o.id && sortDirection === 'asc',
-              'sort-desc': sortField === o.id && sortDirection === 'desc'
+            const klass = c('table__sort', {
+              'table__sort--none': sortField !== o.id,
+              'table__sort--asc': sortField === o.id && sortDirection === 'asc',
+              'table__sort--desc': sortField === o.id && sortDirection === 'desc'
             })
             return <th className={`th-${o.id}`} key={o.id}><a href='#' title={o.title} className={klass} onClick={this.onSort.bind(this, o.id)}>{o.value}</a></th>
           })}
@@ -101,10 +101,10 @@ export default class ResultsTable extends React.PureComponent {
 
       return (
         <tr key={iso}>
-          <td className='cell-rank'>{hasScore ? padNumber(rank, 2) : '--'}</td>
-          <td className='cell-country'>
+          <th className='cell-rank'>{hasScore ? padNumber(rank, 2) : '--'}</th>
+          <th className='cell-country'>
             <Link to={`/results/${iso}`} title={`Go to ${name} page`}>{name}</Link>
-          </td>
+          </th>
           <td>{hasScore ? round(score) : '--'}</td>
           <td>
             <ParameterGraph

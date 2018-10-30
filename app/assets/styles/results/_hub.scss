@@ -203,21 +203,40 @@ $marker-border: 4px;
   }
 }
 
-.table {
-  .cell-rank,
-  .cell-country,
-  .cell-section,
-  .cell-policy-name {
-    font-weight: $heading-font-bold;
+.results-table {
+  table-layout: fixed;
+
+  td, th {
+    break-word: word-wrap;
   }
 
-  .avg {
-    float: right;
+  .th-rank {
+    width: 6rem;
+  }
+
+  .th-name {
+    width: 15rem;
+  }
+
+  .th-score {
+    width: 7rem;
+  }
+
+  .th-graph {
+    width: auto;
+  }
+
+  .th-grid {
+    width: 5rem;
   }
 
   sup {
     margin-left: 0.25rem;
     top: 0.25rem;
     vertical-align: super;
+  }
+
+  .label {
+    @extend .label--text-hidden;
   }
 }
