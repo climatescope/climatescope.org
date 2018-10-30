@@ -51,3 +51,61 @@
 .table-nested .table-bar {
   background: #fff;
 }
+
+
+/* Legends
+   ========================================================================== */
+
+.par-legend {
+  dt {
+    @extend .heading-alt, .truncated;
+    position: relative;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    color: tint($base-color, 56%);
+    margin: 0 0 0 5.5rem;
+    padding: 0 0 0 1rem;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 1;
+      margin-top: -0.25rem;
+      content: '';
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: $full-border-radius;
+    }
+  }
+
+  dd {
+    float: left;
+    width: 4.5rem;
+    clear: left;
+    margin-top: -1.5rem;
+    font-family: $heading-font-family;
+    font-weight: $heading-font-bold;
+    line-height: 1.5rem;
+
+    small {
+      font-weight: normal;
+      font-size: 0.875rem;
+      color: tint($base-color, 56%);
+      margin-left: 0.5rem;
+      float: right;
+    }
+  }
+}
+
+.legend__key--par-1::before {
+  background: $parameter-color-a;
+}
+
+.legend__key--par-2::before {
+  background: $parameter-color-b;
+}
+
+.legend__key--par-3::before {
+  background: $parameter-color-c;
+}

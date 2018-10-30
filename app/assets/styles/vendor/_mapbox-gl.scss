@@ -92,6 +92,8 @@ Vendor: Mapbox GL
 
 .mapboxgl-ctrl-group {
   @extend .button-group, .button-group--vertical;
+  box-shadow: ($base-border-width * 2) ($base-border-width * 2) 0 rgba($base-color, 0.06);
+  border-radius: $base-border-radius;
 
   > button {
     @extend .button, .button--base-raised-light, .button--text-hidden;

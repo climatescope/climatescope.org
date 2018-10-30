@@ -455,6 +455,7 @@ abbr[title] {
   font-feature-settings: "pnum" 0; // Use proportional numbers
   font-family: $heading-font-family;
   font-weight: $heading-font-regular;
+  text-transform: uppercase;
 }
 
 h1 {

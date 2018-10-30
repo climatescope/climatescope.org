@@ -105,6 +105,12 @@
   @include button-variation($primary-color, "raised", "light");
 }
 
+/* Primary Raised Semi-dark */
+
+.button--primary-raised-semidark {
+  @include button-variation($primary-color, "raised", "semidark");
+}
+
 /* Primary Raised Dark */
 
 .button--primary-raised-dark {

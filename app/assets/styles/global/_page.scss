@@ -212,27 +212,6 @@
 }
 
 .newsletter-form {
-  position: relative;
-
-  .form__input-group {
-    position: relative;
-  }
-
-  .form__control {
-    padding: 0.5rem 7.25rem 0.5rem 0.75rem;
-    border-radius: $base-border-radius;
-  }
-
-  .newsletter-button {
-    @extend .button, .button--primary-raised-dark;
-    position: absolute;
-    top: 0.25rem;
-    right: 0.25rem;
-    z-index: 2;
-    border-radius: $base-border-radius;
-    width: 6.5rem;
-  }
-
   .form__help {
     margin-bottom: -1.5rem;
 

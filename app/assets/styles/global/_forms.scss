@@ -550,7 +550,6 @@ label[for] {
 
 .form__option--custom-radio,
 .form__option--custom-checkbox {
-
   input {
     @extend .visually-hidden;
   }
@@ -623,6 +622,8 @@ label[for] {
    ========================================================================== */
 
 .form__option--switch {
+  margin-top: 0;
+
   input {
     @extend .visually-hidden;
   }
