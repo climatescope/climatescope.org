@@ -59,6 +59,8 @@
    ========================================================================== */
 
 @mixin heading($font-size, $max-media: small-up) {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
   font-size: $font-size;
   line-height: $font-size + 0.5;
 
@@ -106,6 +108,14 @@
       $bg-color: tint($color, 100%);
       $bg-color-hover: tint($color, 96%);
       $bg-color-active: tint($color, 92%);
+      $shadow-color: rgba($base-color, 0.12);
+    }
+
+    @else if $brightness == "semidark" {
+      $text-color: $color;
+      $bg-color: tint($color, 88%);
+      $bg-color-hover: tint($color, 84%);
+      $bg-color-active: tint($color, 80%);
       $shadow-color: rgba($base-color, 0.12);
     }
 

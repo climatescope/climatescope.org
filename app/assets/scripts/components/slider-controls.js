@@ -44,14 +44,14 @@ export class SliderControl extends React.PureComponent {
     const { title, id, value, locked, className, onSliderChange } = this.props
     return (
       <div className={c('control', className, id)}>
-        <h3 className='control-title'>{title}</h3>
+        <h3 className='control__title'>{title}</h3>
         <ReactSlider value={value} withBars disabled={locked} onChange={onSliderChange} />
         <span className={c('slider-value', id)}>{round(value, 0)}%</span>
-        <label className='switch lock' htmlFor={`switch-${id}`}>
-          <input type='checkbox' name='switch' className='switch-checkbox' id={`switch-${id}`} checked={locked} onChange={this.onLockClick} />
-          <span className='switch-inner'></span>
-          <span className='switch-switch'></span>
-          <span className='swtich-text'>Lock</span>
+
+        <label htmlFor={`switch-${id}`} className='form__option form__option--text-hidden form__option--switch fos-lock' title='Toggle lock/unlock'>
+          <input type='checkbox' name={`switch-${id}`} id={`switch-${id}`} checked={locked} onChange={this.onLockClick} />
+          <span className='form__option__ui'></span>
+          <span className='form__option__text'>Lock</span>
         </label>
       </div>
     )

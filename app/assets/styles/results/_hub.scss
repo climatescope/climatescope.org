@@ -31,67 +31,78 @@
 /* Parameter controls
    ========================================================================== */
 
-.inpage__nav {
-  .prime-title {
-    @extend .heading--xxsmall;
-    float: left;
-    margin: 0 0.5rem 1.25rem 0;
-    font-size: 1rem;
-    line-height: 1.25rem;
+.par-controls {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: ($global-spacing) ($global-spacing * 2);
+}
+
+.par-controls__headline {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  grid-column: 1 / span 12;
+}
+
+.par-controls__title {
+  @include heading(1rem);
+  text-transform: uppercase;
+  margin: 0 ($global-spacing / 4) 0 0;
+}
+
+.par-controls__reset-button {
+  @extend .button, .button--small, .button--base-plain, .button--text-hidden;
+
+  &::before {
+    @extend %collecticon-arrow-loop;
   }
+}
 
-  .reset {
-    float: left;
-    margin-top: 0 !important;
-    width: 1.25rem;
-    height: 1.25rem;
-    line-height: 1.25rem;
-  }
+.control {
+  grid-column: auto / span 4;
+  grid-row: 2 / auto;
+}
 
-  .control {
-    @include column(4/12);
+.control__title {
+  @extend .heading-alt;
+  font-weight: $heading-font-regular;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: tint($base-color, 56%);
+  margin-bottom: 0.75rem;
+}
 
-    &.first {
-      clear: left;
-    }
-  }
+.control .button:not(:last-child) {
+  margin-right: 0.5rem;
+}
 
-  .control-title {
-    @extend .heading-alt, .truncated;
-    width: 100%;
-    margin-bottom: 0.75rem;
-    display: block;
-  }
+.slider {
+  margin-bottom: 0.75rem;
+}
 
-  .control .bttn:not(:last-child) {
-    margin-right: 0.5rem;
-  }
+.control.param-1 .slider .bar-0 {
+  background: $parameter-color-a;
+}
 
-  .slider {
-    margin-bottom: 0.75rem;
-  }
+.control.param-2 .slider .bar-0 {
+  background: $parameter-color-b;
+}
 
-  .control.param-1 .slider .bar-0 {
-    background: $parameter-color-a;
-  }
+.control.param-3 .slider .bar-0 {
+  background: $parameter-color-c;
+}
 
-  .control.param-2 .slider .bar-0 {
-    background: $parameter-color-b;
-  }
+.slider-value {
+  @include heading(1.25rem);
+  float: left;
+  margin-bottom: 0;
+}
 
-  .control.param-3 .slider .bar-0 {
-    background: $parameter-color-c;
-  }
-
-  .slider-value {
-    @extend .heading--xxsmall;
-    float: left;
-    line-height: 1.5rem;
-    margin-bottom: 0;
-  }
-
-  .lock {
+.control {
+  .form__option {
     float: right;
+    margin: 0;
   }
 }
 
@@ -238,5 +249,7 @@ $marker-border: 4px;
 
   .label {
     @extend .label--text-hidden;
+    margin: 0.125rem 0;
+    vertical-align: top;
   }
 }

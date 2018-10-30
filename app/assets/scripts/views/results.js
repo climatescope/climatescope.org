@@ -181,16 +181,16 @@ class Results extends React.Component {
     return (
       <nav className={klass} style={style}>
         <div className='inner'>
-          <div id='vis-controls' className='slider-group'>
-            <h2 className='prime-title'>Calculate your own score</h2>
-            <a href='#' className='reset' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
-
+          <div className='par-controls'>
+            <div className='par-controls__headline'>
+              <h2 className='par-controls__title'>Calculate your own score</h2>
+              <a href='#' className='par-controls__reset-button' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
+            </div>
             <SliderControlGroup
               sliders={this.props.sliders}
               values={this.state.sliders || {}}
               onChange={this.onSliderGroupChange}
             />
-
           </div>
         </div>
       </nav>
