@@ -5,7 +5,7 @@
 .inpage__header {
   position: relative;
   padding: ($global-spacing * 2) 0;
-  box-shadow: 0 2px 0 0 $base-alpha-color;
+  box-shadow: 0 $base-border-width 0 0 $base-alpha-color;
 
   > .inner {
     @extend .row, .row--centered;
@@ -231,7 +231,7 @@
   z-index: 10;
   background: #fff;
   padding: ($global-spacing * 2) 0;
-  box-shadow: 0 2px 0 0 $base-alpha-color;
+  box-shadow: 0 $base-border-width 0 0 $base-alpha-color;
 
   > .inner {
     @extend .row, .row--centered;

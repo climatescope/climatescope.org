@@ -8,10 +8,11 @@
 
     em {
       font-style: inherit;
+      white-space: nowrap;
 
       span {
         @extend .truncated;
-        max-width: 32rem;
+        max-width: 24rem;
         display: inline-block;
         vertical-align: top;
       }
@@ -126,55 +127,28 @@
   }
 }
 
-$highlight-marker-size: 2rem;
-$highlight-marker-border: 6px;
-$marker-size: 0.625rem;
-$marker-border: 4px;
-
 .country-marker {
   @extend .antialiased;
-  width: $marker-size;
-  height: $marker-size;
-  background: $secondary-color;
+  width: 0.5rem;
+  height: 0.5rem;
   border-radius: $full-border-radius;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-family: $heading-font-family;
   font-weight: $heading-font-bold;
   color: #fff;
-
-  &::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -($marker-border / 2);
-    left: -($marker-border / 2);;
-    width: calc(#{$marker-size} + #{$marker-border});
-    height: calc(#{$marker-size} + #{$marker-border});
-    border-radius: $full-border-radius;
-    border: $marker-border solid rgba($primary-color, 0.15);
-  }
+  background: shade($link-color, 28%);
+  box-shadow: 0 0 0 $base-border-width $base-alpha-color;
+  line-height: 0.5rem;
+  vertical-align: middle;
 }
 
 .country-marker.highlight {
-  width: $highlight-marker-size;
-  height: $highlight-marker-size;
-  background: shade($secondary-color, 20%);
-  line-height: $highlight-marker-size;
-
-  &::before {
-    top: -($highlight-marker-border / 2);
-    left: -($highlight-marker-border / 2);;
-    width: calc(#{$highlight-marker-size} + #{$highlight-marker-border});
-    height: calc(#{$highlight-marker-size} + #{$highlight-marker-border});
-    border-width: $highlight-marker-border;
-  }
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
 }
 
-.light-stroke {
-  stroke: #fff;
-  stroke-opacity: 0.85;
-}
 
 /* Controls */
 
@@ -188,20 +162,10 @@ $marker-border: 4px;
 }
 
 .mapboxgl-control-container {
-  @include center($row-max-width);
+  @extend .row, .row--centered;
   position: relative;
-  padding-left: 1rem;
-  padding-right: 1rem;
-
-  @include media(medium-up) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  @include media(large-up) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+  height: 100%;
+  pointer-events: none;
 }
 
 
