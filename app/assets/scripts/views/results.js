@@ -232,22 +232,22 @@ class Results extends React.Component {
             </div>
           </header>
           <StickyContainer>
-          <Sticky>
-            {(props) => this.renderHeaderFn(props)}
-          </Sticky>
-          <div className='inpage__body'>
-            <ResultsMap
-              bounds={activeRegion.bounds}
-              highlightISO={highlightISO}
-              meta={this.props.geoMeta.getData([])}
-              data={rankedGeographies}
-            />
-            <div className='inner'>
-              <div className='col col--main'>
-                {this.renderResultsTable()}
+            <Sticky>
+              {(props) => this.renderHeaderFn(props)}
+            </Sticky>
+            <div className='inpage__body'>
+              <ResultsMap
+                bounds={activeRegion.bounds}
+                highlightISO={highlightISO}
+                meta={this.props.geoMeta.getData([])}
+                data={rankedGeographies}
+              />
+              <div className='inner'>
+                <div className='col col--main'>
+                  {this.renderResultsTable()}
+                </div>
               </div>
             </div>
-          </div>
           </StickyContainer>
         </section>
       </App>

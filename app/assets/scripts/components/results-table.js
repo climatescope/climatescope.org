@@ -130,16 +130,23 @@ export default class ResultsTable extends React.PureComponent {
       const hasTopics = geography.topics && geography.topics.length
 
       return (
-        <article className='tooltip-inner'>
-          {hasTopics ? (
-            <ParameterBreakdown
-              className='params-legend'
-              data={geography.topics}
-            />
-          ) : (
-            <p>There is no data for this geography.</p>
-          )}
-        </article>
+        <div className='popover__contents'>
+          <header className='popover__header visually-hidden'>
+            <div className='popover__headline'>
+              <h1 className='popover__title'>Topic breakdown</h1>
+            </div>
+          </header>
+          <div className='popover__body'>
+            {hasTopics ? (
+              <ParameterBreakdown
+                className='legend par-legend'
+                data={geography.topics}
+              />
+            ) : (
+              <p>There is no data for this geography.</p>
+            )}
+          </div>
+        </div>
       )
     }
 
@@ -148,7 +155,8 @@ export default class ResultsTable extends React.PureComponent {
         id='param-graph-tooltip'
         effect='solid'
         type='custom'
-        className='tooltip'
+        className='popover popover--table'
+        wrapper='article'
         getContent={popoverContent}
       />
     )

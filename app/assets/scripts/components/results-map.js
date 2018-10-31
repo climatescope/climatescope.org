@@ -192,21 +192,19 @@ export default class ResultsMap extends React.Component {
       const hasScore = !!score
 
       return (
-        <article className='popover__contents'>
+        <div className='popover__contents'>
           <header className='popover__header'>
             <div className='popover__headline'>
-              <h1 className='tooltip__title'>
+              <h1 className='popover__title'>
                 <Link to={`/results/${iso}`} title={`View ${name} page`}>{name}</Link><OnGrid grid={grid} />
               </h1>
             </div>
-            <div className='popover__header-toolbar'>
-              <a href="#" title="Close" class="tba-xmark tba--text-hidden"><span>Close</span></a>
-            </div>
+            {/* <div className='popover__header-toolbar'><a href='#' title='Close' className='tba-xmark tba--text-hidden'><span>Close</span></a></div> */}
           </header>
-          <div className='tooltip__body'>
+          <div className='popover__body'>
             {hasScore ? (
               <ParameterBreakdown
-                className='params-legend'
+                className='legend par-legend'
                 data={topics} >
                 <dt>Global rank</dt>
                 <dd>{rank}</dd>
@@ -224,9 +222,11 @@ export default class ResultsMap extends React.Component {
                 <p>There is no data for this geography.</p>
               </>
             )}
-            <Link to={`/results/${iso}`} className='bttn bttn-cta go' title={`View ${name} page`}>View Geography</Link>
           </div>
-        </article>
+          <footer className='popover__footer'>
+            <Link to={`/results/${iso}`} className='popover__cta' title={`View ${name} page`}>View more</Link>
+          </footer>
+        </div>
       )
     }
 
@@ -237,6 +237,7 @@ export default class ResultsMap extends React.Component {
         type='custom'
         delayHide={100}
         className='popover popover--map'
+        wrapper='article'
         getContent={popoverContent}
       />
     )

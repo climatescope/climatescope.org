@@ -2,24 +2,11 @@
    Global: Charts
    ========================================================================== */
 
-.table-graph {
-  position: relative;
-  margin: 0.125rem 0;
 
-  .avg {
-    position: absolute;
-    top: -25%;
-    left: 0;
-    z-index: 1;
-    height: 150%;
-    width: 1px;
-    background: $base-color;
-    opacity: 0.2;
-  }
-}
+/* Bars
+   ========================================================================== */
 
-.table-bar {
-  list-style-type: none;
+.stack-bar {
   overflow: hidden;
   border-radius: $base-border-radius;
   height: 1.25rem;
@@ -29,27 +16,23 @@
   margin: 0;
   cursor: help;
 
-  li {
+  dd {
     float: left;
     height: 100%;
     box-shadow: inset 0 2px 0 0 rgba($base-color, 0.1);
   }
 
-  li.param-1 {
+  dd.param-1 {
     background-color: $parameter-color-a;
   }
 
-  li.param-2 {
+  dd.param-2 {
     background-color: $parameter-color-b;
   }
 
-  li.param-3 {
+  dd.param-3 {
     background-color: $parameter-color-c;
   }
-}
-
-.table-nested .table-bar {
-  background: #fff;
 }
 
 

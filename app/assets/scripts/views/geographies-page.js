@@ -17,6 +17,7 @@ import Dropdown from '../components/dropdown'
 import GeographyMap from '../components/geography-map'
 import { ParSection, ParSectionHeader, AreaBeta, AreaAlpha, ParCard } from '../components/geography-params'
 import { LoadingSkeleton } from '../components/loading-skeleton'
+import OnGrid from '../components/on-grid'
 
 configureAnchors({ offset: -76 })
 
@@ -151,7 +152,7 @@ class Geography extends React.Component {
     }
 
     return (
-      <App className='page--has-hero' pageTitle={geography.name}>
+      <App className='page--has-hero' pageTitle={geography.name || 'Geograpghy'} >
         <article className='inpage inpage--single inpage--results'>
           <header className='inpage__header'>
             <div className='inner'>
@@ -161,7 +162,7 @@ class Geography extends React.Component {
                 </p>
                 <h1 className='inpage__title'>
                   {isReady() ? geography.name : <LoadingSkeleton size='large' type='heading' inline />}
-                  <small class="label label--negative label--grid"><span>On-grid</span></small>
+                  {isReady() && <OnGrid grid={geography.grid} theme='negative' />}
                 </h1>
 
                 <ul className='inpage__details'>

@@ -4,7 +4,7 @@ import qs from 'qs'
 
 import { policyDbUrl } from '../config'
 import { fetchDispatchCacheFactory, baseAPIReducer } from './utils'
-import { objectToArray } from '../utils/utils'
+import { objectToArray } from '../utils/array'
 
 // /////////////////////////////////////////////////////////////////////////////
 // Actions

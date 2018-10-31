@@ -107,9 +107,11 @@ export default class PoliciesTable extends React.PureComponent {
   renderTooltip () {
     const popoverContent = (tipContent) => {
       return (
-        <article className='tooltip-inner'>
-          {tipContent}
-        </article>
+        <div className='popover__contents'>
+          <div className='popover__body'>
+            {tipContent}
+          </div>
+        </div>
       )
     }
 
@@ -118,7 +120,8 @@ export default class PoliciesTable extends React.PureComponent {
         id='array-field-tooltip'
         effect='solid'
         type='custom'
-        className='tooltip'
+        className='popover'
+        wrapper='article'
         getContent={popoverContent}
       />
     )
