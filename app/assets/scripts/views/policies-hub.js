@@ -178,35 +178,33 @@ class Policies extends React.Component {
     const status = prepareFilter(data.status)
 
     return (
-      <div className='layout--hub__controls'>
-        <form>
-          <SelectControl
-            label='Geography'
-            id='policy_country'
-            options={country}
-            selectedOption={this.state.filters.country}
-            onChange={this.onFilterFieldChange.bind(this, 'country')}
-          />
-          <SelectControl
-            label='Mechanism'
-            id='policy_mechanism'
-            options={mechanism}
-            selectedOption={this.state.filters.mechanism}
-            onChange={this.onFilterFieldChange.bind(this, 'mechanism')}
-          />
-          <SelectControl
-            label='Status'
-            id='policy_status'
-            options={status}
-            selectedOption={this.state.filters.status}
-            onChange={this.onFilterFieldChange.bind(this, 'status')}
-          />
-          <div className='control wide'>
-            <button className='bttn bttn-default bttn-m restart hide-txt' onClick={this.onFilterReset}><span>Reset</span></button>
-            <button className='bttn bttn-dark bttn-m' onClick={this.onFilterClick}>Filter</button>
-          </div>
-        </form>
-      </div>
+      <form className='form pol-controls'>
+        <SelectControl
+          label='Geography'
+          id='policy_country'
+          options={country}
+          selectedOption={this.state.filters.country}
+          onChange={this.onFilterFieldChange.bind(this, 'country')}
+        />
+        <SelectControl
+          label='Mechanism'
+          id='policy_mechanism'
+          options={mechanism}
+          selectedOption={this.state.filters.mechanism}
+          onChange={this.onFilterFieldChange.bind(this, 'mechanism')}
+        />
+        <SelectControl
+          label='Status'
+          id='policy_status'
+          options={status}
+          selectedOption={this.state.filters.status}
+          onChange={this.onFilterFieldChange.bind(this, 'status')}
+        />
+        <div className='form__actions'>
+          <button className='pol-controls__button-reset' onClick={this.onFilterReset} title='Reset selection'><span>Reset</span></button>
+          <button className='pol-controls__button-submit' onClick={this.onFilterClick} title='Apply filter selection'><span>Filter</span></button>
+        </div>
+      </form>
     )
   }
 
@@ -270,7 +268,9 @@ class Policies extends React.Component {
             </div>
           </header>
           <nav className='inpage__nav' role='navigation'>
-            {this.renderControls()}
+            <div className='inner'>
+              {this.renderControls()}
+            </div>
           </nav>
           <div className='inpage__body'>
             <div className='inner'>
