@@ -452,9 +452,9 @@ abbr[title] {
 }
 
 .heading-alt {
-  font-feature-settings: "pnum" 0; // Use proportional numbers
   font-family: $heading-font-family;
   font-weight: $heading-font-regular;
+  font-feature-settings: "pnum" 0; // Use proportional numbers
   text-transform: uppercase;
 }
 

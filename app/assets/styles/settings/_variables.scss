@@ -35,7 +35,7 @@ $parameter-color-c: #645D9C;
 $root-font-size: 16px;
 
 $base-font-color: tint($base-color, 16%);
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: 'Open Sans';
 $base-font-style: normal;
 $base-font-light: 300;
 $base-font-light-italic: 300i;
@@ -43,13 +43,13 @@ $base-font-regular: 400;
 $base-font-regular-italic: 400i;
 $base-font-bold: 700;
 $base-font-bold-italic: 700i;
-$base-font-weight: $base-font-regular;
+$base-font-weight: $base-font-light;
 $base-font-size: 1rem;
 $base-line-height: 1.5;
 
 $code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 
-$heading-font-family: "Klavika", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$heading-font-family: 'Titillium Web', sans-serif;
 $heading-font-light: 300;
 $heading-font-regular: 400;
 $heading-font-bold: 700;
