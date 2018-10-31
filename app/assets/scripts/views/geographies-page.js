@@ -5,6 +5,8 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { StickyContainer, Sticky } from 'react-sticky'
 import { configureAnchors } from 'react-scrollable-anchor'
+import get from 'lodash.get'
+import memoize from 'lodash.memoize'
 
 import { environment } from '../config'
 import { fetchGeography, fetchGeographiesMeta } from '../redux/geographies'
@@ -17,9 +19,20 @@ import Dropdown from '../components/dropdown'
 import GeographyMap from '../components/geography-map'
 import { ParSection, ParSectionHeader, AreaBeta, AreaAlpha, ParCard } from '../components/geography-params'
 import { LoadingSkeleton } from '../components/loading-skeleton'
+import AreaChart, { computeAreaChartData } from '../components/area-chart'
 import OnGrid from '../components/on-grid'
 
 configureAnchors({ offset: -76 })
+
+const memoizedComputeAreaChartData = memoize(computeAreaChartData, (data, pass, cacheKey) => cacheKey)
+
+const renewableTypes = [
+  'Biomass & Waste',
+  'Geothermal',
+  'Small Hydro',
+  'Solar',
+  'Wind'
+]
 
 class NavBar extends React.PureComponent {
   constructor (props) {
@@ -125,6 +138,22 @@ if (environment !== 'production') {
 }
 
 class Geography extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      installedChart: this.getInitialChartState(),
+      powerGenChart: this.getInitialChartState()
+    }
+  }
+
+  getInitialChartState () {
+    return {
+      hover: false,
+      hoverDateValue: null
+    }
+  }
+
   componentDidMount () {
     this.props.fetchGeography(this.props.match.params.geoIso)
     this.props.fetchGeographiesMeta()
@@ -136,11 +165,43 @@ class Geography extends React.Component {
     }
   }
 
+  onInteractionEvent (chart, name, date) {
+    switch (name) {
+      case 'over':
+        this.setState({ [chart]: { hover: true, hoverDateValue: null } })
+        break
+      case 'out':
+        this.setState({ [chart]: { hover: false, hoverDateValue: null } })
+        break
+      case 'move':
+        if (!this.state[chart].hoverDateValue || this.state[chart].hoverDateValue.getFullYear() !== date.getFullYear()) {
+          this.setState({ [chart]: { hover: true, hoverDateValue: date } })
+        }
+        break
+    }
+  }
+
   getGeoBounds (iso) {
     const { hasError, getData } = this.props.geoMeta
     if (hasError()) return []
     const geo = getData([]).find(m => equalsIgnoreCase(m.iso, iso))
     return geo ? geo.bounds : []
+  }
+
+  getChartData (name) {
+    const { receivedAt, getData } = this.props.geography
+
+    const chart = get(getData(), 'charts', []).find(o => o.meta.title === name)
+    const title = get(chart, ['meta', 'title'], '')
+    return memoizedComputeAreaChartData(chart, renewableTypes, `${title}-${receivedAt}`)
+  }
+
+  getPowerGenerarionChart () {
+    const { receivedAt, getData } = this.props.geography
+
+    const chart = get(getData(), 'charts', []).find(o => o.meta.title === 'Power generation')
+    const title = get(chart, ['meta', 'title'], '')
+    return memoizedComputeAreaChartData(chart, renewableTypes, `${title}-${receivedAt}`)
   }
 
   render () {
@@ -150,6 +211,9 @@ class Geography extends React.Component {
     if (hasError()) {
       return <UhOh />
     }
+
+    const installedChart = this.getChartData('Installed capacity')
+    const powerGenChart = this.getChartData('Power generation')
 
     return (
       <App className='page--has-hero' pageTitle={geography.name || 'Geograpghy'} >
@@ -220,10 +284,19 @@ class Geography extends React.Component {
                 </AreaAlpha>
                 <AreaBeta>
                   <ParCard
-                    title='Card title'
-                    description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.'
+                    title='Installed capacity since 2010'
                     size='large'
-                  />
+                  >
+                    <AreaChart
+                      onBisectorEvent={this.onInteractionEvent.bind(this, 'installedChart')}
+                      interactionData={this.state.installedChart}
+                      xLabel={installedChart.xLabel}
+                      yLabel={installedChart.yLabel}
+                      yDomain={installedChart.yDomain}
+                      xDomain={installedChart.xDomain}
+                      data={installedChart.data}
+                    />
+                  </ParCard>
                   <ParCard
                     title='Card title'
                     description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.'
@@ -242,11 +315,21 @@ class Geography extends React.Component {
                     size='small'
                     theme='dark'
                   />
+
                   <ParCard
-                    title='Card title'
-                    description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?'
+                    title='Power generation since 2010'
                     size='medium'
-                  />
+                  >
+                    <AreaChart
+                      onBisectorEvent={this.onInteractionEvent.bind(this, 'powerGenChart')}
+                      interactionData={this.state.powerGenChart}
+                      xLabel={powerGenChart.xLabel}
+                      yLabel={powerGenChart.yLabel}
+                      yDomain={powerGenChart.yDomain}
+                      xDomain={powerGenChart.xDomain}
+                      data={powerGenChart.data}
+                    />
+                  </ParCard>
                 </AreaBeta>
               </ParSection>
 

@@ -92,3 +92,236 @@
 .legend__key--par-3::before {
   background: $parameter-color-c;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$infograph-color-a: #EABD00;                        // yellow       solar
+$infograph-color-b: #32B79D;                        // turquoise    biomass
+$infograph-color-c: #0B90AF;                        // blue         large hydro
+$infograph-color-d: #645D9C;                        // purple       small hydro
+$infograph-color-e: #83549a;                        // purp         geothermal
+$infograph-color-f: #eb4d4a;                        // red          nuclear
+$infograph-color-g: #92d4ee;                        // lblue        wind
+$infograph-color-h: #af856e;                        // brown        fossil
+$infograph-color-i: #a8a8a8;                        // light grey   coal
+$infograph-color-j: #f99d6c;                        // orange       natural gas
+$infograph-color-k: #625959;                        // grey         oil
+
+
+.data-canvas-debug {
+  fill: none;
+  // fill: rgba(red, 0.16);
+}
+
+.trigger-rect {
+  fill: none;
+  // fill: rgba(green, 0.16) !important;
+}
+
+.schart__graph {
+  height: 25rem;
+}
+
+.schart {
+  position: relative;
+  margin: 0;
+  margin-bottom: $global-spacing * 2;
+
+  .chart-label,
+  .axis text {
+    fill: tint($base-color, 48%);
+    font-family: $heading-font-family;
+    font-size: 0.875rem;
+  }
+
+  .axis line {
+    stroke: tint($base-color, 48%);
+    stroke-dasharray: 1px 2px
+  }
+
+  .bisector-interact {
+    fill: none;
+    stroke: $base-color;
+    stroke-width: 1px;
+  }
+
+  // Area charts.
+  .area__line {
+    fill: none;
+    stroke-width: 2px;
+  }
+
+  .area__circle {
+    fill: #fff;
+    stroke-width: 2px;
+  }
+
+  .area:nth-child(1) {
+    .area__path {
+      fill: rgba($infograph-color-a, 0.5);
+    }
+    .area__circle,
+    .area__line {
+      stroke: $infograph-color-a;
+    }
+    .area__circle.active {
+      fill: $infograph-color-a;
+      stroke: #fff;
+    }
+  }
+  .area:nth-child(2) {
+    .area__path {
+      fill: rgba($infograph-color-b, 0.5);
+    }
+    .area__circle,
+    .area__line {
+      stroke: $infograph-color-b;
+    }
+    .area__circle.active {
+      fill: $infograph-color-b;
+      stroke: #fff;
+    }
+  }
+  .area:nth-child(3) {
+    .area__path {
+      fill: rgba($infograph-color-c, 0.5);
+    }
+    .area__circle,
+    .area__line {
+      stroke: $infograph-color-c;
+    }
+    .area__circle.active {
+      fill: $infograph-color-c;
+      stroke: #fff;
+    }
+  }
+  .area:nth-child(4) {
+    .area__path {
+      fill: rgba($infograph-color-d, 0.5);
+    }
+    .area__circle,
+    .area__line {
+      stroke: $infograph-color-d;
+    }
+    .area__circle.active {
+      fill: $infograph-color-d;
+      stroke: #fff;
+    }
+  }
+  .area:nth-child(5) {
+    .area__path {
+      fill: rgba($infograph-color-e, 0.5);
+    }
+    .area__circle,
+    .area__line {
+      stroke: $infograph-color-e;
+    }
+    .area__circle.active {
+      fill: $infograph-color-e;
+      stroke: #fff;
+    }
+  }
+  .area:nth-child(6) {
+    .area__path {
+      fill: rgba($infograph-color-f, 0.5);
+    }
+    .area__circle,
+    .area__line {
+      stroke: $infograph-color-f;
+    }
+    .area__circle.active {
+      fill: $infograph-color-f;
+      stroke: #fff;
+    }
+  }
+}
+
+
+
+
+
+
+.schart__popover {
+  // @extend %drop-skin;
+  // padding: $global-spacing;
+  // width: $global-spacing * 11;
+  transition: all 0.16s ease;
+  visibility: visible;
+  opacity: 1;
+
+  // > *:last-child {
+  //   margin-bottom: 0;
+  // }
+
+  // h1 {
+  //   @include heading(0.75rem);
+  //   margin-bottom: $global-spacing / 2;
+  // }
+
+  // dl {
+  //   > *:last-child {
+  //     margin-bottom: 0;
+  //   }
+  // }
+
+  // dt {
+  //   font-size: 0.75rem;
+  //   line-height: 1rem;
+  //   margin-bottom: $global-spacing / 4;
+  // }
+
+  // dd {
+  //   font-size: 0.875rem;
+  //   line-height: 1rem;
+  //   margin-bottom: $global-spacing / 2;
+  // }
+}
+
+.popover-trans-appear {
+  opacity: 0;
+
+  &.schart__popover--right {
+    transform: translate(-16%, 0);
+  }
+
+  &.schart__popover--left {
+    transform: translate(16%, 0);
+  }
+}
+
+.popover-trans-appear-active {
+  opacity: 1;
+  transform: translate(0) !important;
+}
+
+.popover-trans-exit {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.popover-trans-exit-active {
+  opacity: 0;
+
+  &.schart__popover--right {
+    transform: translate(-16%, 0)
+  }
+
+  &.schart__popover--left {
+    transform: translate(16%, 0)
+  }
+}
