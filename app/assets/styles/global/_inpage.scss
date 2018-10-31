@@ -75,6 +75,7 @@
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: $global-spacing;
+  color: tint($base-color, 48%);
 
   > *:last-child {
     margin-bottom: 0;

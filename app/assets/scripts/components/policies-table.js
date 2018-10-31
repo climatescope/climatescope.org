@@ -54,10 +54,10 @@ export default class PoliciesTable extends React.PureComponent {
             if (!o.sortable) return <th key={o.id}>{o.value}</th>
 
             const { sortField, sortDirection } = this.props
-            const klass = c('sort', {
-              'sort-none': sortField !== o.id,
-              'sort-asc': sortField === o.id && sortDirection === 'asc',
-              'sort-desc': sortField === o.id && sortDirection === 'desc'
+            const klass = c('table__sort', {
+              'table__sort--none': sortField !== o.id,
+              'table__sort--asc': sortField === o.id && sortDirection === 'asc',
+              'table__sort--desc': sortField === o.id && sortDirection === 'desc'
             })
             return <th key={o.id}><a href='#' title={o.title} className={klass} onClick={this.onSort.bind(this, o.id)}>{o.value}</a></th>
           })}
@@ -93,9 +93,9 @@ export default class PoliciesTable extends React.PureComponent {
     return this.props.policies.map(policy => {
       return (
         <tr key={policy.id}>
-          <td className='cell-policy-name'>
+          <th>
             <Link to={`/policies/${policy.id}`} title='Go to policy page'>{policy.name}</Link>
-          </td>
+          </th>
           <td>{renderArrayField(policy.country)}</td>
           <td>{renderArrayField(policy.type.mechanism)}</td>
           <td>{policy.status.name}</td>
