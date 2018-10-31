@@ -68,7 +68,7 @@ class NavBar extends React.PureComponent {
           {isSticky ? (
             <div className='sections-nav__headline'>
               <p className='sections-nav__subtitle'>
-                <Link to='/results' title='View results page'>View all markets</Link>
+                <Link to='/results' title='View results page'><span>View all markets</span></Link>
               </p>
               <h1 className='sections-nav__title'>Democratic Republic of Congo</h1>
             </div>

@@ -180,7 +180,7 @@ class PolicyPage extends React.Component {
             <div className='inner'>
               <div className='inpage__headline'>
                 <p className='inpage__subtitle'>
-                  <Link to='/policies' title='Browse the policy database'>Policies</Link>
+                  <Link to='/policies' title='Browse the policy database'><span>View all policies</span></Link>
                 </p>
                 <h1 className='inpage__title'>
                   {isReady() ? policy.name : <LoadingSkeleton size='large' type='heading' inline />}
