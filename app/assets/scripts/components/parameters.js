@@ -3,7 +3,7 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 
 import { environment } from '../config'
-import { round } from '../utils/utils'
+import { round } from '../utils/math'
 
 /**
  * Renders a parameter bar

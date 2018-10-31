@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 import c from 'classnames'
 
 import { environment, baseurl } from '../config'
-import { shuffleArray } from '../utils/utils'
 
 import App from './app'
 
@@ -137,7 +136,7 @@ class ToolsList extends React.PureComponent {
       }
     ]
 
-    this.tools = shuffleArray(toolsList).slice(0, 3)
+    this.tools = toolsList.slice(0, 3)
   }
 
   render () {

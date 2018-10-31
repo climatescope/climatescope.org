@@ -7,10 +7,12 @@ import orderBy from 'lodash.orderby'
 import c from 'classnames'
 
 import { environment } from '../config'
-import { initializeArrayWithRange, padNumber, round } from '../utils/utils'
 import { LoadingSkeleton } from './loading-skeleton'
 import OnGrid from './on-grid'
 import { ParameterGraph, ParameterBreakdown } from './parameters'
+import { padNumber } from '../utils/string'
+import { round } from '../utils/math'
+import { initializeArrayWithRange } from '../utils/array'
 
 export default class ResultsTable extends React.PureComponent {
   componentDidUpdate () {

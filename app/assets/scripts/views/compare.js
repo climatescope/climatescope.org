@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom'
 
 import { environment } from '../config'
 import { fetchGeographies, fetchGeography } from '../redux/geographies'
-import { wrapApiResult, initializeArrayWithRange, getFromState } from '../utils/utils'
+import { wrapApiResult, getFromState } from '../utils/utils'
+import { initializeArrayWithRange } from '../utils/array'
 
 import App from './app'
 import ShareOptions from '../components/share'

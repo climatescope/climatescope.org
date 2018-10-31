@@ -10,9 +10,10 @@ import isEqual from 'lodash.isequal'
 import { render } from 'react-dom'
 
 import { mbtoken, environment } from '../config'
-import { padNumber, round, equalsIgnoreCase } from '../utils/utils'
 import OnGrid from './on-grid'
 import { ParameterBreakdown } from './parameters'
+import { equalsIgnoreCase, padNumber } from '../utils/string'
+import { round } from '../utils/math'
 
 // set once
 mapboxgl.accessToken = mbtoken

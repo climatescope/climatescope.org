@@ -6,7 +6,8 @@ import { connect } from 'react-redux'
 
 import { environment } from '../config'
 import { fetchPolicy } from '../redux/policies'
-import { getFromState, wrapApiResult, reactNl2Br } from '../utils/utils'
+import { wrapApiResult, getFromState } from '../utils/utils'
+import { reactNl2Br } from '../utils/string'
 
 import App from './app'
 import UhOh from './uhoh'

@@ -6,8 +6,8 @@ import ReactTooltip from 'react-tooltip'
 import c from 'classnames'
 
 import { environment } from '../config'
-import { initializeArrayWithRange } from '../utils/utils'
 import { LoadingSkeleton } from '../components/loading-skeleton'
+import { initializeArrayWithRange } from '../utils/array'
 
 export default class PoliciesTable extends React.PureComponent {
   componentDidUpdate () {

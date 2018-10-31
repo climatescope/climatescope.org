@@ -5,7 +5,8 @@ import c from 'classnames'
 import ReactSlider from 'react-slider'
 
 import { environment } from '../config'
-import { objectToArray, sumBy, round, distributedDivision } from '../utils/utils'
+import { round, sumBy, distributedDivision } from '../utils/math'
+import { objectToArray } from '../utils/array'
 
 /**
  * Updates the value of the given prop or a slider and returns a new

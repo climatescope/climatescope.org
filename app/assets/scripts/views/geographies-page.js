@@ -8,7 +8,8 @@ import { configureAnchors } from 'react-scrollable-anchor'
 
 import { environment } from '../config'
 import { fetchGeography, fetchGeographiesMeta } from '../redux/geographies'
-import { getFromState, wrapApiResult, equalsIgnoreCase } from '../utils/utils'
+import { equalsIgnoreCase } from '../utils/string'
+import { wrapApiResult, getFromState } from '../utils/utils'
 
 import App from './app'
 import UhOh from './uhoh'
