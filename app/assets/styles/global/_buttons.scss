@@ -237,8 +237,7 @@
 }
 
 
-/* ==========================================================================
-   Button groups
+/* Button  group
    ========================================================================== */
 
 .button-group {
@@ -311,5 +310,17 @@
 
   > .button + .button {
     margin-top: -$base-border-width;
+  }
+}
+
+
+/* Global cases
+   ========================================================================== */
+
+.button-prose-cta {
+  @extend .button, .button--large, .button--primary-raised-dark;
+
+  &::after {
+    @extend %collecticon-sm-chevron-right;
   }
 }
