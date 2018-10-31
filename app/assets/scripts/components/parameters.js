@@ -14,13 +14,14 @@ import { round } from '../utils/math'
  */
 export function ParameterGraph ({ geographyIso, data }) {
   return (
-    <div className='table-graph'>
-      <ul className='table-bar' data-tip={geographyIso} data-for='param-graph-tooltip'>
-        {data.map(({ id, value, weight }, idx) => (
-          <li key={id} className={`param-${idx + 1}`} style={{ width: `${value * (weight / 100) * (100 / 5)}%` }}><span className='visually-hidden'>{value}</span>&nbsp;</li>
-        ))}
-      </ul>
-    </div>
+    <dl className='stack-bar' data-tip={geographyIso} data-for='param-graph-tooltip'>
+      {data.map(({ id, value, weight }, idx) => (
+        <React.Fragment key={id}>
+          <dt className='visually-hidden'>{id}</dt>
+          <dd className={`param-${idx + 1}`} style={{ width: `${value * (weight / 100) * (100 / 5)}%` }}><span className='visually-hidden'>{value}</span>&nbsp;</dd>
+        </React.Fragment>
+      ))}
+    </dl>
   )
 }
 
@@ -45,7 +46,7 @@ export function ParameterBreakdown ({ className, children, data }) {
       {children}
       {data.map(({ id, name, value, weight }, idx) => (
         <React.Fragment key={id}>
-          <dt className={`param-${idx + 1}`}>{name}</dt>
+          <dt className={`legend__key--par-${idx + 1}`}>{name}</dt>
           <dd>{round(value)}<small>{weight}%</small></dd>
         </React.Fragment>
       ))}
