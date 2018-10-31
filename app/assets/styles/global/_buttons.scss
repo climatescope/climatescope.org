@@ -318,7 +318,7 @@
    ========================================================================== */
 
 .button-prose-cta {
-  @extend .button, .button--large, .button--primary-raised-dark;
+  @extend .button, .button--primary-raised-dark;
 
   &::after {
     @extend %collecticon-sm-chevron-right;

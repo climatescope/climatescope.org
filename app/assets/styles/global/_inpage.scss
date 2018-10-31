@@ -58,10 +58,13 @@
   @extend .heading--xlarge;
   text-transform: uppercase;
   margin-bottom: $global-spacing * 2;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 
   .label {
-    vertical-align: 0.35em;
     margin: 0 ($global-spacing / 2);
+    padding: ($global-spacing / 4) $global-spacing;
   }
 }
 
@@ -266,4 +269,47 @@
 
 .col--main {
   grid-column: 1 / span 8;
+}
+
+.col--sec {
+  grid-column: auto / span 4;
+}
+
+.col--full {
+  grid-column: 1 / span 12;
+}
+
+
+.blk {
+  padding-bottom: $global-spacing * 2;
+  margin-bottom: $global-spacing * 2;
+  box-shadow: 0 1px 0 0 $base-alpha-color;
+
+  > h1 {
+    @extend .heading--xxsmall;
+  }
+
+  dl {
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  dd {
+    margin-bottom: ($global-spacing / 2);
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+  }
 }

@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .popover {
-  width: 20rem;
+  width: 18rem;
 }
 
 .popover__contents {
@@ -49,9 +49,12 @@
 }
 
 .popover__title {
-  @include heading(1.25rem);
+  @include heading(1rem);
   text-transform: uppercase;
   margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
 
   a,
   a:visited {
@@ -60,8 +63,7 @@
 
   .label {
     @extend .label--text-hidden;
-    vertical-align: -0.125em;
-    margin: 0 ($global-spacing / 8);
+    margin: ($global-spacing / 8);
   }
 }
 

@@ -25,7 +25,7 @@ export default class Playground extends React.Component {
                   <div className='popover__contents'>
                     <header className='popover__header'>
                       <div className='popover__headline'>
-                        <h1 className='popover__title'><a title='View Philippines page' href='/results/PH'>Philippines</a> <small className='label label--grid'><span>On-grid</span></small></h1>
+                        <h1 className='popover__title'><a title='View Philippines page' href='/results/PH'>Showcasing is a really long title</a> <small className='label label--grid'><span>On-grid</span></small></h1>
                       </div>
                       <div className='popover__header-toolbar'><a href='#' title='Close' className='tba-xmark tba--text-hidden'><span>Close</span></a></div>
                     </header>
