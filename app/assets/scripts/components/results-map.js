@@ -166,6 +166,8 @@ export default class ResultsMap extends React.Component {
 
     this.map.on('load', () => {
       this.mapLoaded = true
+      this.map.setPaintProperty('background', 'background-opacity', 0)
+      this.map.setPaintProperty('ne-countries-highlight', 'fill-color', '#02A87C')
 
       this.setHighlightedGeographies(this.props.highlightISO)
       this.map.fitBounds(this.props.bounds)
@@ -190,12 +192,16 @@ export default class ResultsMap extends React.Component {
       const hasScore = !!score
 
       return (
-        <article className='tooltip-inner'>
-          <header className='tooltip__header'>
-            <h1 className='tooltip__title'>
-              <Link to={`/results/${iso}`} title={`View ${name} page`}>{name}</Link>
-            </h1>
-            <OnGrid grid={grid} />
+        <article className='popover__contents'>
+          <header className='popover__header'>
+            <div className='popover__headline'>
+              <h1 className='tooltip__title'>
+                <Link to={`/results/${iso}`} title={`View ${name} page`}>{name}</Link><OnGrid grid={grid} />
+              </h1>
+            </div>
+            <div className='popover__header-toolbar'>
+              <a href="#" title="Close" class="tba-xmark tba--text-hidden"><span>Close</span></a>
+            </div>
           </header>
           <div className='tooltip__body'>
             {hasScore ? (
@@ -230,7 +236,7 @@ export default class ResultsMap extends React.Component {
         effect='solid'
         type='custom'
         delayHide={100}
-        className='tooltip-map'
+        className='popover popover--map'
         getContent={popoverContent}
       />
     )
@@ -239,8 +245,12 @@ export default class ResultsMap extends React.Component {
   render () {
     return (
       <>
-        <div id='index-viz' className='row--full intro' ref='mapEl' />
-        {this.renderPopover()}
+        <figure className='results-map-viz media'>
+          <div className='media__item' ref='mapEl'>
+            {this.renderPopover()}
+          </div>
+          <figcaption className='media__caption'>Top and bottom ten geographies</figcaption>
+        </figure>
       </>
     )
   }

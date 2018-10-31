@@ -7,20 +7,21 @@ import App from './app'
 export default class UhOh extends React.Component {
   render () {
     return (
-      <App pageTitle='Not Found' >
-        <article className='layout--page'>
-          <header className='layout--page__header'>
-            <div className='row--contained'>
-              <div className='layout--page__heading'>
-                <h1 className='layout--page__title'>Page not found</h1>
+      <App pageTitle='Page not found' >
+        <article className='inpage'>
+          <header className='inpage__header'>
+            <div className='inner'>
+              <div className='inpage__headline'>
+                <h1 className='inpage__title'>Page not found</h1>
               </div>
             </div>
           </header>
-          <div className='layout--page__body'>
-            <div className='row--contained'>
-              <div className='col--main prose-copy'>
-                <p>We were not able to find the page you're looking for.</p>
-                <p><Link className='bttn bttn-cta go' to='/' title='Go back to Global Index'>Take me home</Link></p>
+          <div className='inpage__body'>
+            <div className='inner'>
+              <div className='col col--main prose'>
+                <p>We were not able to find the page you're looking for. It may have been archived or removed.</p>
+                <p>You might find an older snapshot of this page at the <a href='http://archive.org/web/' title='Find on Internet Archive'>Internet Archive</a>.<br /> If you think this page should be here let us know via <a href='mailto:climatescope@bloomberg.net' title='Send us an email'>email</a>.</p>
+                <p><Link className='button-prose-cta' to='/' title='View'><span>Visit the homepage</span></Link></p>
               </div>
             </div>
           </div>

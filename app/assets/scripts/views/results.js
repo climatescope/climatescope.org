@@ -150,21 +150,21 @@ class Results extends React.Component {
     const triggerText = regions.find(r => r.id === this.state.region).name
 
     return (
-      <h1 className='layout--results__title'>
+      <h1 className='inpage__title'>
         <span>Results for&nbsp;</span>
         <em>
           <Dropdown
-            className='dropdown-content'
+            className='regions-drop'
             triggerElement='a'
-            triggerClassName='dropdown-toggle caret'
+            triggerClassName='drop__toggle drop__toggle--caret'
             triggerActiveClassName='button--active'
             triggerText={triggerText}
             triggerTitle='Filter by region'
             direction='down'
-            alignment='center' >
-            <ul className='dropdown-menu'>
+            alignment='left' >
+            <ul className='drop__menu drop__menu--select'>
               {regions.map(r => (
-                <li key={r.id}><a href='#' title={`view ${r.name} results`} onClick={this.onRegionClick.bind(this, r.id)} data-hook='dropdown:close'>{r.name}</a></li>
+                <li key={r.id}><a href='#' title={`view ${r.name} results`} onClick={this.onRegionClick.bind(this, r.id)} data-hook='dropdown:close' className={c('drop__menu-item', { 'drop__menu-item--active': r.id === this.state.region })}>{r.name}</a></li>
               ))}
             </ul>
           </Dropdown>
@@ -174,36 +174,26 @@ class Results extends React.Component {
   }
 
   renderHeaderFn ({ style, isSticky }) {
-    const klass = c('layout--results__header', {
+    const klass = c('inpage__nav', {
       'sticky': isSticky
     })
 
     return (
-      <header id='parameters-controls' className={klass} style={style}>
-        <div className='row--contained'>
-          <div className='layout--results__heading'>
-            {this.renderTitle()}
-          </div>
-          <div className='layout--results__tools'>
-            <ul className='actions-menu'>
-              <li><ShareOptions url={window.location.toString()} /></li>
-            </ul>
-          </div>
-          <div className='layout--results__controls'>
-            <div id='vis-controls' className='slider-group'>
-              <h2 className='prime-title'>Calculate your own score</h2>
-              <a href='#' className='reset' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
-
-              <SliderControlGroup
-                sliders={this.props.sliders}
-                values={this.state.sliders || {}}
-                onChange={this.onSliderGroupChange}
-              />
-
+      <nav className={klass} style={style}>
+        <div className='inner'>
+          <div className='par-controls'>
+            <div className='par-controls__headline'>
+              <h2 className='par-controls__title'>Calculate your own score</h2>
+              <a href='#' className='par-controls__reset-button' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
             </div>
+            <SliderControlGroup
+              sliders={this.props.sliders}
+              values={this.state.sliders || {}}
+              onChange={this.onSliderGroupChange}
+            />
           </div>
         </div>
-      </header>
+      </nav>
     )
   }
 
@@ -229,25 +219,37 @@ class Results extends React.Component {
     const activeRegion = regions.find(r => r.id === region)
 
     return (
-      <App pageTitle='Results' >
-        <StickyContainer>
-          <section className='layout--results' ng-app='globalApp'>
-            <Sticky>
-              {(props) => this.renderHeaderFn(props)}
-            </Sticky>
-            <div className='layout--results__body'>
-              <ResultsMap
-                bounds={activeRegion.bounds}
-                highlightISO={highlightISO}
-                meta={this.props.geoMeta.getData([])}
-                data={rankedGeographies}
-              />
-              <div className='row--contained'>
+      <App pageTitle='Results'>
+        <section className='inpage inpage--hub inpage--results'>
+          <header className='inpage__header'>
+            <div className='inner'>
+              <div className='inpage__headline'>
+                {this.renderTitle()}
+              </div>
+              <div className='inpage__actions'>
+                <ShareOptions url={window.location.toString()} />
+              </div>
+            </div>
+          </header>
+          <StickyContainer>
+          <Sticky>
+            {(props) => this.renderHeaderFn(props)}
+          </Sticky>
+          <div className='inpage__body'>
+            <ResultsMap
+              bounds={activeRegion.bounds}
+              highlightISO={highlightISO}
+              meta={this.props.geoMeta.getData([])}
+              data={rankedGeographies}
+            />
+            <div className='inner'>
+              <div className='col col--main'>
                 {this.renderResultsTable()}
               </div>
             </div>
-          </section>
-        </StickyContainer>
+          </div>
+          </StickyContainer>
+        </section>
       </App>
     )
   }

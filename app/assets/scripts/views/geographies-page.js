@@ -69,7 +69,7 @@ class NavBar extends React.PureComponent {
           {isSticky ? (
             <div className='sections-nav__headline'>
               <p className='sections-nav__subtitle'>
-                <Link to='/results' title='View results page'>View all markets</Link>
+                <Link to='/results' title='View results page'><span>View all markets</span></Link>
               </p>
               <h1 className='sections-nav__title'>Democratic Republic of Congo</h1>
             </div>
@@ -151,9 +151,8 @@ class Geography extends React.Component {
     }
 
     return (
-      <App className='page--has-hero' pageTitle={geography.name} >
+      <App className='page--has-hero' pageTitle={geography.name}>
         <article className='inpage inpage--single inpage--results'>
-
           <header className='inpage__header'>
             <div className='inner'>
               <div className='inpage__headline'>
@@ -162,7 +161,9 @@ class Geography extends React.Component {
                 </p>
                 <h1 className='inpage__title'>
                   {isReady() ? geography.name : <LoadingSkeleton size='large' type='heading' inline />}
+                  <small class="label label--negative label--grid"><span>On-grid</span></small>
                 </h1>
+
                 <ul className='inpage__details'>
                   <li>
                     <strong>26.28<sub>$Bn</sub></strong>

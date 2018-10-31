@@ -255,37 +255,40 @@ class Policies extends React.Component {
   render () {
     return (
       <App pageTitle='Policies' >
-        <section className='layout--hub policies'>
-          <header className='layout--hub__header'>
-            <div className='row--contained'>
-              <div className='layout--hub__heading'>
-                <h1 className='layout--hub__title'>Policies</h1>
-                <p className='layout--hub__lead'>Analyze more than 800 policies intended to spur clean energy development in the nations and states surveyed by Climatescope.</p>
+        <section className='inpage inpage--hub inpage--policies'>
+          <header className='inpage__header'>
+            <div className='inner'>
+              <div className='inpage__headline'>
+                <h1 className='inpage__title'>Policies</h1>
+                <div className='inpage__introduction'>
+                  <p className='inpage__lead'>Analyze more than 800 policies intended to spur clean energy development in the nations and states surveyed by Climatescope.</p>
+                </div>
               </div>
-
-              <div className='layout--hub__tools'>
-                <ul className='actions-menu'>
-                  <li><ShareOptions url={window.location.toString()} /></li>
-                </ul>
+              <div className='inpage__actions'>
+                <ShareOptions url={window.location.toString()} />
               </div>
-              {this.renderControls()}
             </div>
           </header>
-          <div className='layout--hub__body'>
-            <div className='row--contained'>
-              {this.renderFatalError()}
+          <nav className='inpage__nav' role='navigation'>
+            {this.renderControls()}
+          </nav>
+          <div className='inpage__body'>
+            <div className='inner'>
+              <div className='col col--full prose'>
+                {this.renderFatalError()}
 
-              {this.renderNoResults()}
+                {this.renderNoResults()}
 
-              <PoliciesTable
-                sortField={this.state.sort.field}
-                sortDirection={this.state.sort.direction}
-                loading={!this.props.policiesList.isReady()}
-                policies={this.props.policiesList.getData([])}
-                onSort={this.onPolicyTableSort}
-              />
+                <PoliciesTable
+                  sortField={this.state.sort.field}
+                  sortDirection={this.state.sort.direction}
+                  loading={!this.props.policiesList.isReady()}
+                  policies={this.props.policiesList.getData([])}
+                  onSort={this.onPolicyTableSort}
+                />
 
-              {this.renderPagination()}
+                {this.renderPagination()}
+              </div>
             </div>
           </div>
         </section>

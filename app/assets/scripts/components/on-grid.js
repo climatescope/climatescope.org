@@ -13,9 +13,9 @@ import { environment } from '../config'
 export default function OnGrid ({ grid }) {
   if (grid === null) return null
   return (
-    <em data-title={grid ? 'on-grid' : 'off-grid'} className={c('label-grid', { 'label-grid-on': grid, 'label-grid-off': !grid })}>
-      <span>{grid ? 'on' : 'off'}</span>
-    </em>
+    <small data-title={grid ? 'On-grid' : 'Off-grid'} className={c('label label--grid', { 'label--disabled': !grid })}>
+      <span>{grid ? 'On-grid' : 'Off-grid'}</span>
+    </small>
   )
 }
 

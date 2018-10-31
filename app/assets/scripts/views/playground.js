@@ -6,65 +6,48 @@ import App from './app'
 export default class Playground extends React.Component {
   render () {
     return (
-      <App>
-        <article className='layout--page full'>
-          <header className='layout--page__header'>
-            <div className='row--contained'>
-              <div className='layout--page__heading'>
-                <h1 className='layout--page__title'>Playground</h1>
+      <App className='page--playground'>
+        <article className='inpage'>
+          <header className='inpage__header'>
+            <div className='inner'>
+              <div className='inpage__headline'>
+                <h1 className='inpage__title'>Playground</h1>
               </div>
             </div>
           </header>
 
-          <div className='layout--page__body'>
-            <div className='row--contained'>
-              <div className='col--main prose-copy'>
+          <div className='inpage__body'>
+            <div className='inner'>
+              <div className='col col--main'>
                 <p>Testing out new components.</p>
 
-                <section className='par-section par-section--alpha'>
-                  <header className='par-section__header'>
-                    <h1 className='par-section__title'>Section title</h1>
-                    <div className='par-section__description'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <article className='popover popover--static' id='marker-tip'>
+                  <div className='popover__contents'>
+                    <header className='popover__header'>
+                      <div className='popover__headline'>
+                        <h1 className='popover__title'><a title='View Philippines page' href='/results/PH'>Showcasing is a really long title</a> <small className='label label--grid'><span>On-grid</span></small></h1>
+                      </div>
+                      <div className='popover__header-toolbar'><a href='#' title='Close' className='tba-xmark tba--text-hidden'><span>Close</span></a></div>
+                    </header>
+                    <div className='popover__body'>
+                      <dl className='legend par-legend'>
+                        <dt>Rank</dt>
+                        <dd>10</dd>
+                        <dt>Score</dt>
+                        <dd>2.16</dd>
+                        <dt className='legend__key--par-1'>Fundamentals</dt>
+                        <dd>2.95 <small>50%</small></dd>
+                        <dt className='legend__key--par-2'>Opportunities</dt>
+                        <dd>1.18 <small>25%</small></dd>
+                        <dt className='legend__key--par-3'>Experience</dt>
+                        <dd>1.56 <small>25%</small></dd>
+                      </dl>
                     </div>
-                  </header>
-
-                  <article className='info-card info-card--large info-card--plain info-card-1'>
-                    <h1 className='info-card__title'>Card title</h1>
-                    <div className='info-card__statement'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
-                    </div>
-                  </article>
-
-                  <article className='info-card info-card--small info-card--dark info-card-2'>
-                    <h1 className='info-card__title'>Card title</h1>
-                    <div className='info-card__statement'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
-                    </div>
-                  </article>
-
-                  <article className='info-card info-card--small info-card--dark info-card-3'>
-                    <h1 className='info-card__title'>Card title</h1>
-                    <div className='info-card__statement'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
-                    </div>
-                  </article>
-
-                  <article className='info-card info-card--small info-card--dark info-card-4'>
-                    <h1 className='info-card__title'>Card title</h1>
-                    <div className='info-card__statement'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
-                    </div>
-                  </article>
-
-                  <article className='info-card info-card--medium info-card--dark info-card-5'>
-                    <h1 className='info-card__title'>Card title</h1>
-                    <div className='info-card__statement'>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur?</p>
-                    </div>
-                  </article>
-                </section>
-
+                    <footer className='popover__footer'>
+                      <a className='popover__cta' title='View Philippines page' href='/results/PH'><span>View more</span></a>
+                    </footer>
+                  </div>
+                </article>
 
               </div>
             </div>

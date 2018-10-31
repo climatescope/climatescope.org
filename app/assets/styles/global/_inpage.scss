@@ -5,7 +5,7 @@
 .inpage__header {
   position: relative;
   padding: ($global-spacing * 2) 0;
-  box-shadow: 0 2px 0 0 $base-alpha-color;
+  box-shadow: 0 $base-border-width 0 0 $base-alpha-color;
 
   > .inner {
     @extend .row, .row--centered;
@@ -26,6 +26,7 @@
 }
 
 .inpage__headline {
+  position: relative;
   grid-column: 1 / span 8;
 
   > *:last-child {
@@ -33,31 +34,51 @@
   }
 }
 
-.inpage__subtitle {
-  font-size: 0.875rem;
-  line-height: 1rem;
-  margin: ($global-spacing / 4) 0;
-  font-family: $heading-font-family;
-  font-weight: $heading-font-bold;
+.inpage__title {
+  @include heading(2.5rem);
+  text-transform: uppercase;
+  margin-bottom: $global-spacing;
 
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: underline;
+  .label {
+    margin: 0.625rem ($global-spacing / 2);
+    padding: ($global-spacing / 4) $global-spacing;
   }
 }
 
-.inpage__title {
-  @extend .heading--xlarge;
-  text-transform: uppercase;
-  margin-bottom: $global-spacing * 2;
+.inpage__subtitle {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  margin: 0 0 ($global-spacing / 4) 0;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-bold;
+
+  a {
+    @extend .button, .button--small, .button--base-plain;
+    margin: 0 0 (-$global-spacing / 4) (-$global-spacing / 2);
+
+    &::after {
+      @extend %collecticon-sm-chevron-right;
+      font-size: 0.875rem;
+      margin: 0;
+    }
+
+    .page--has-hero & {
+      @extend .button--achromic-plain;
+    }
+  }
+
+}
+
+.inpage__introduction {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-regular;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin-bottom: $global-spacing;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -197,7 +218,8 @@
 .inpage__actions {
   grid-column: auto / span 4;
   justify-self: end;
-  align-self: center;
+  align-self: flex-start;
+  padding: ($global-spacing / 2) 0;
 }
 
 /**
@@ -222,8 +244,15 @@
    ========================================================================== */
 
 .inpage__nav {
+  position: relative;
+  z-index: 10;
   background: #fff;
-  box-shadow: 0 1px 0 0 $base-alpha-color;
+  padding: ($global-spacing * 2) 0;
+  box-shadow: 0 $base-border-width 0 0 $base-alpha-color;
+
+  &.sticky {
+    box-shadow: 0 0 0 ($base-border-width / 2) rgba($base-color, 0.08), 0 ($base-border-width * 2) 0 0 rgba($base-color, 0.06);
+  }
 
   > .inner {
     @extend .row, .row--centered;
@@ -254,4 +283,47 @@
 
 .col--main {
   grid-column: 1 / span 8;
+}
+
+.col--sec {
+  grid-column: auto / span 4;
+}
+
+.col--full {
+  grid-column: 1 / span 12;
+}
+
+
+.blk {
+  padding-bottom: $global-spacing * 2;
+  margin-bottom: $global-spacing * 2;
+  box-shadow: 0 1px 0 0 $base-alpha-color;
+
+  > h1 {
+    @extend .heading--xxsmall;
+  }
+
+  dl {
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  dd {
+    margin-bottom: ($global-spacing / 2);
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+  }
 }

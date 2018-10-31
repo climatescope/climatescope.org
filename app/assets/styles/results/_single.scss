@@ -3,6 +3,13 @@
    ========================================================================== */
 
 .inpage--results.inpage--single {
+  .inpage__title {
+    margin-bottom: $global-spacing * 3;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+
   .inpage__body {
     padding: 0;
   }
