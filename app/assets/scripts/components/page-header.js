@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom'
 
 import NavGlobalMenu from './nav-global-menu'
 
-import { environment, appTitle } from '../config'
+import { environment, appTitle, appEdition } from '../config'
 
 export default class PageHeader extends React.PureComponent {
   render () {
     return (
-      <header id='site-header' className='site-header site-header--global' role='banner'>
-        <div className='row--contained'>
-          <div id='site-headline'>
-            <h1 id='site-title'><Link to='/' title='View homepage'><span>{appTitle}</span></Link></h1>
+      <header className='page__header' role='banner'>
+        <div className='inner'>
+          <div className='page__headline'>
+            <h1 className='page__title'><Link to='/' title='View page'>{appTitle} <em>{appEdition}</em></Link></h1>
           </div>
-          <nav id='prime-nav' role='navigation'>
+          <nav className='page__prime-nav nav' role='navigation'>
             <NavGlobalMenu forHeader />
           </nav>
         </div>

@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Results: single
+   ========================================================================== */
+
+.inpage--results.inpage--single {
+  .inpage__body {
+    padding: 0;
+  }
+}
+
+.par-section {
+  padding: ($global-spacing * 4) 0;
+
+  &:nth-child(odd) {
+    background: #fff;
+  }
+
+  &:nth-child(even) {
+    background: tint($base-color, 96%);
+  }
+}
+
+.par-section__contents {
+  @extend .row, .row--centered;
+  display: grid;
+  grid-gap: $global-spacing * 2;
+}
+
+.par-section--linear {
+  .area-beta {
+    display: grid;
+    grid-gap: $global-spacing * 2;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media(large-up) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.par-section--split {
+  .area-alpha,
+  .area-beta {
+    display: grid;
+    grid-gap: $global-spacing * 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media(large-up) {
+    .par-section__contents {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .area-alpha,
+    .area-beta {
+      display: block;
+
+      > *:not(:last-child) {
+        margin-bottom: $global-spacing * 2;
+      }
+    }
+
+    .area-alpha {
+      grid-column: auto / span 3;
+    }
+
+    .area-beta {
+      grid-column-start: 4;
+    }
+  }
+}
+
+.par-section__header {
+  grid-column: auto / span 3;
+  grid-row: span 1;
+}
+
+.par-section__title {
+  @include heading(1.75rem); // 28px
+  text-transform: none;
+}
+
+.par-section__description {
+  color: tint($base-color, 48%);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Navigation
+   ========================================================================== */
+
+.sections-nav {
+  padding: $global-spacing;
+
+  > .inner {
+    display: flex;
+    align-items: end;
+  }
+}
+
+.sections-nav__subtitle {
+  @extend .inpage__subtitle;
+}
+
+.sections-nav__title {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+
+.sections-nav__sections-menu-wrapper {
+  flex: 1;
+}
+
+.sections-nav__sections-menu {
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    font-size: 0.875rem;
+    font-family: $heading-font-family;
+    color: inherit;
+  }
+}
+
+.sections-nav__tools {
+  margin: 0 0 0 auto;
+}
+
+
+/* Card organization
+   ========================================================================== */
+
+#section-clean-enery-policy {
+  .info-card-1 {
+
+  }
+
+  .info-card-2 {
+    // grid-column-start: 4;
+    // grid-row-start: 1;
+  }
+
+  .info-card-3 {
+
+  }
+}

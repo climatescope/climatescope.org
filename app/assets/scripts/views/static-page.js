@@ -32,25 +32,23 @@ class StaticPage extends React.Component {
 
     return (
       <App pageTitle={data.title} >
-        <article className='layout--page'>
-          <header className='layout--page__header'>
-            <div className='row--contained'>
-              <div className='layout--page__heading'>
-                <h1 className='layout--page__title'>
+        <article className='inpage inpage--single'>
+          <header className='inpage__header'>
+            <div className='inner'>
+              <div className='inpage__headline'>
+                <h1 className='inpage__title'>
                   {isReady() ? data.title : <LoadingSkeleton width={2 / 3} size='large' type='heading' inline />}
                 </h1>
               </div>
-              <div className='layout--page__tools'>
-                <ul className='actions-menu'>
-                  <li><ShareOptions url={window.location.toString()} /></li>
-                </ul>
+              <div className='inpage__actions'>
+                <ShareOptions url={window.location.toString()} />
               </div>
             </div>
           </header>
 
-          <div className='layout--page__body'>
-            <div className='row--contained'>
-              <div className='col--main prose-copy'>
+          <div className='inpage__body'>
+            <div className='inner'>
+              <div className='col--main prose'>
                 {isReady() ? (
                   <DangerouslySetScriptContent key={receivedAt} dangerousContent={data.content} />
                 ) : (

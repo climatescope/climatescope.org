@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Global: Pop
+   ========================================================================== */
+
+*[data-title]:hover {
+  position: relative;
+
+  &::after {
+    @extend .antialiased, .truncated;
+    content: attr(data-title);
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    z-index: 1400;
+    width: auto;
+    max-width: 12rem;
+    padding: 0 0.5rem;
+    background: rgba($base-color, 0.80);
+    border-radius: $base-border-radius;
+    margin-top: 0.25rem;
+    transform: translate(-50%, 0);
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-family: $heading-font-family;
+    font-weight: $base-font-regular;
+    font-style: $base-font-style;
+  }
+}

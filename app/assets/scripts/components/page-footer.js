@@ -10,8 +10,8 @@ import { environment, appEdition } from '../config'
 export default class PageFooter extends React.PureComponent {
   render () {
     return (
-      <footer id='site-footer' role='contentinfo'>
-        <div className='row--contained'>
+      <footer className='page__footer' role='contentinfo'>
+        <div className='inner'>
           <nav className='ftr-nav'>
             <div className='ftr-nav__block'>
               <h2 className='ftr-title'>Browse</h2>
@@ -33,9 +33,9 @@ export default class PageFooter extends React.PureComponent {
             <form className='form newsletter-form' action='' method='post' id='mc-embedded-subscribe-form' name='subscribe-form'>
               <div className='form__group'>
                 <label className='form__label'>Email</label>
-                <div className='form__input-group'>
+                <div className='form__input-group form__input-group--medium'>
                   <input type='email' name='EMAIL' className='form__control required email' id='mce-EMAIL' aria-required='true' placeholder='Email' />
-                  <button type='submit' name='subscribe' id='mc-embedded-subscribe' className='bttn bttn-success disabled'><span>Subscribe</span></button>
+                  <button type='submit' name='subscribe' id='mc-embedded-subscribe' className='newsletter-button'><span>Subscribe</span></button>
                 </div>
               </div>
             </form>
@@ -50,7 +50,7 @@ export default class PageFooter extends React.PureComponent {
         </div>
 
         <div className='ftr-credits'>
-          <div className='row--contained'>
+          <div className='inner'>
             <p>2012-{appEdition} Climatescope. <Link to='/license' title='About the license'>View license</Link>.</p>
           </div>
         </div>
