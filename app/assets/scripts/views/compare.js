@@ -117,7 +117,7 @@ class Compare extends React.Component {
     ]
 
     return (
-      <form className='form compare-controls'>
+      <form className='form controls compare-controls'>
         {initializeArrayWithRange(1).map(i => (
           <SelectControl
             key={`geo-${i}`}
@@ -129,8 +129,8 @@ class Compare extends React.Component {
           />
         ))}
         <div className='form__actions'>
-          <button className='compare-controls__button-reset' onClick={this.onCompareReset} title='Reset selection'><span>Reset</span></button>
-          <button className='compare-controls__button-submit' onClick={this.onCompareClick} title='Apply selection'><span>Compare</span></button>
+          <button className='controls__button-reset' onClick={this.onCompareReset} title='Reset selection'><span>Reset</span></button>
+          <button className='controls__button-submit' onClick={this.onCompareClick} title='Apply selection'><span>Compare</span></button>
         </div>
       </form>
     )

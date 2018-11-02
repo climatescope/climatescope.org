@@ -39,6 +39,9 @@
   @if $arg == large-up {
     @media #{$screen} and (min-width: lower-bound($large-range)) { @content; }
   }
+  @if $arg == large-down {
+    @media #{$screen} and (max-width: upper-bound($large-range)) { @content; }
+  }
   @if $arg == large-only {
     @media #{$screen} and (min-width: lower-bound($large-range)) and (max-width: upper-bound($large-range)) { @content; }
   }

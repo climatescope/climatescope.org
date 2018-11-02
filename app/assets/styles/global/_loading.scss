@@ -29,3 +29,20 @@
 .lsk__item--heading {
   background: rgba($base-color, 0.08);
 }
+
+
+/* Placeholder
+   ========================================================================== */
+
+.placeholder {
+  font-family: $heading-font-family;
+  border: 1px dashed $base-alpha-color;
+  padding: ($global-spacing * 8) ($global-spacing * 2);
+  text-align: center;
+  color: tint($base-color, 56%);
+  border-radius: $base-border-radius;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -36,6 +36,7 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: ($global-spacing) ($global-spacing * 2);
+  flex: 1 1 auto;
 }
 
 .par-controls__headline {

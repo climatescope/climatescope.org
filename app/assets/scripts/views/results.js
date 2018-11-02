@@ -162,6 +162,7 @@ class Results extends React.Component {
             triggerTitle='Filter by region'
             direction='down'
             alignment='left' >
+            <h6 className='drop__title'>Select region</h6>
             <ul className='drop__menu drop__menu--select'>
               {regions.map(r => (
                 <li key={r.id}><a href='#' title={`view ${r.name} results`} onClick={this.onRegionClick.bind(this, r.id)} data-hook='dropdown:close' className={c('drop__menu-item', { 'drop__menu-item--active': r.id === this.state.region })}>{r.name}</a></li>
@@ -174,12 +175,8 @@ class Results extends React.Component {
   }
 
   renderHeaderFn ({ style, isSticky }) {
-    const klass = c('inpage__nav', {
-      'sticky': isSticky
-    })
-
     return (
-      <nav className={klass} style={style}>
+      <nav className={c('inpage__nav nav', { 'inpage__nav--sticky': isSticky })} style={style} role='navigation'>
         <div className='inner'>
           <div className='par-controls'>
             <div className='par-controls__headline'>
