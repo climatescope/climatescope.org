@@ -28,6 +28,10 @@
   &::after{
     margin-left: 0.25rem;
   }
+
+  &[data-tip] {
+    cursor: help;
+  }
 }
 
 

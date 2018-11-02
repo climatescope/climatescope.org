@@ -2,6 +2,7 @@
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import c from 'classnames'
+import ReactTooltip from 'react-tooltip'
 
 import { environment } from '../config'
 
@@ -11,11 +12,17 @@ import { environment } from '../config'
  * @param {boolean} grid Whether or not is on grid
  * @param {string} theme Theme to use
  */
-export default function OnGrid ({ grid, theme }) {
+export default function OnGrid ({ grid, theme, noTip }) {
   if (grid === null || grid === '') return null
   grid = typeof grid === 'string' ? grid === 'on' : grid
+
+  const popoverInfo = noTip ? {} : {
+    'data-tip': grid ? 'On-grid' : 'Off-grid',
+    'data-for': 'on-grid-tooltip'
+  }
+
   return (
-    <small data-title={grid ? 'On-grid' : 'Off-grid'} className={c('label label--grid', { 'label--disabled': !grid, [`label--${theme}`]: !!theme })}>
+    <small className={c('label label--grid', { 'label--disabled': !grid, [`label--${theme}`]: !!theme })} {...popoverInfo}>
       <span>{grid ? 'On-grid' : 'Off-grid'}</span>
     </small>
   )
@@ -26,4 +33,17 @@ if (environment !== 'production') {
     grid: T.oneOfType([T.bool, T.string]),
     theme: T.string
   }
+}
+
+export function OnGridTooltip () {
+  return (
+    <ReactTooltip
+      id='on-grid-tooltip'
+      effect='solid'
+      type='custom'
+      className='popover popover--compact'
+      wrapper='article'
+      getContent={(content) => <div className='popover__contents'>{content}</div>}
+    />
+  )
 }

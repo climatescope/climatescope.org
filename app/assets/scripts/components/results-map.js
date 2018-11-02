@@ -189,44 +189,16 @@ export default class ResultsMap extends React.Component {
       if (!geography) return null
 
       const { iso, score, rank, name, topics, grid } = geography
-      const hasScore = !!score
 
       return (
-        <div className='popover__contents'>
-          <header className='popover__header'>
-            <div className='popover__headline'>
-              <h1 className='popover__title'>
-                <Link to={`/results/${iso}`} title={`View ${name} page`}>{name}</Link><OnGrid grid={grid} />
-              </h1>
-            </div>
-            {/* <div className='popover__header-toolbar'><a href='#' title='Close' className='tba-xmark tba--text-hidden'><span>Close</span></a></div> */}
-          </header>
-          <div className='popover__body'>
-            {hasScore ? (
-              <ParameterBreakdown
-                className='legend par-legend'
-                data={topics} >
-                <dt>Global rank</dt>
-                <dd>{rank}</dd>
-                <dt>Score</dt>
-                <dd>{round(score)}</dd>
-              </ParameterBreakdown>
-            ) : (
-              <>
-                <dl className='params-legend'>
-                  <dt>Global rank</dt>
-                  <dd>--</dd>
-                  <dt>Score</dt>
-                  <dd>--</dd>
-                </dl>
-                <p>There is no data for this geography.</p>
-              </>
-            )}
-          </div>
-          <footer className='popover__footer'>
-            <Link to={`/results/${iso}`} className='popover__cta' title={`View ${name} page`}>View more</Link>
-          </footer>
-        </div>
+        <PopoverContent
+          iso={iso}
+          rank={rank}
+          name={name}
+          topics={topics}
+          grid={grid}
+          score={score}
+        />
       )
     }
 
@@ -263,5 +235,71 @@ if (environment !== 'production') {
     bounds: T.array,
     data: T.array,
     meta: T.array
+  }
+}
+
+class PopoverContent extends React.PureComponent {
+  componentDidMount () {
+    // Rebuild tooltips to ensure the on grid appears.
+    ReactTooltip.rebuild()
+  }
+
+  componentDidUpdate () {
+    // Rebuild tooltips to ensure the on grid appears.
+    ReactTooltip.rebuild()
+  }
+
+  render () {
+    const { iso, score, rank, name, topics, grid } = this.props
+    const hasScore = !!score
+
+    return (
+      <div className='popover__contents'>
+        <header className='popover__header'>
+          <div className='popover__headline'>
+            <h1 className='popover__title'>
+              <Link to={`/results/${iso}`} title={`View ${name} page`}>{name}</Link><OnGrid grid={grid} />
+            </h1>
+          </div>
+          {/* <div className='popover__header-toolbar'><a href='#' title='Close' className='tba-xmark tba--text-hidden'><span>Close</span></a></div> */}
+        </header>
+        <div className='popover__body'>
+          {hasScore ? (
+            <ParameterBreakdown
+              className='legend par-legend'
+              data={topics} >
+              <dt>Global rank</dt>
+              <dd>{rank}</dd>
+              <dt>Score</dt>
+              <dd>{round(score)}</dd>
+            </ParameterBreakdown>
+          ) : (
+            <>
+              <dl className='params-legend'>
+                <dt>Global rank</dt>
+                <dd>--</dd>
+                <dt>Score</dt>
+                <dd>--</dd>
+              </dl>
+              <p>There is no data for this geography.</p>
+            </>
+          )}
+        </div>
+        <footer className='popover__footer'>
+          <Link to={`/results/${iso}`} className='popover__cta' title={`View ${name} page`}>View more</Link>
+        </footer>
+      </div>
+    )
+  }
+}
+
+if (environment !== 'production') {
+  PopoverContent.propTypes = {
+    iso: T.string,
+    rank: T.number,
+    name: T.string,
+    topics: T.array,
+    grid: T.bool,
+    score: T.number
   }
 }

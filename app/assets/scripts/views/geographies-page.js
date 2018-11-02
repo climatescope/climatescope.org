@@ -226,7 +226,7 @@ class Geography extends React.Component {
                 </p>
                 <h1 className='inpage__title'>
                   {isReady() ? geography.name : <LoadingSkeleton size='large' type='heading' inline />}
-                  {isReady() && <OnGrid grid={geography.grid} theme='negative' />}
+                  {isReady() && <OnGrid grid={geography.grid} theme='negative' noTip />}
                 </h1>
 
                 <ul className='inpage__details'>
