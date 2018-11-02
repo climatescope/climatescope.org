@@ -94,44 +94,61 @@
 }
 
 
+/* Area Chart
+   ========================================================================== */
 
+/* Area chart gradients */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$infograph-color-a: #EABD00;                        // yellow       solar
-$infograph-color-b: #32B79D;                        // turquoise    biomass
-$infograph-color-c: #0B90AF;                        // blue         large hydro
-$infograph-color-d: #645D9C;                        // purple       small hydro
-$infograph-color-e: #83549a;                        // purp         geothermal
-$infograph-color-f: #eb4d4a;                        // red          nuclear
-$infograph-color-g: #92d4ee;                        // lblue        wind
-$infograph-color-h: #af856e;                        // brown        fossil
-$infograph-color-i: #a8a8a8;                        // light grey   coal
-$infograph-color-j: #f99d6c;                        // orange       natural gas
-$infograph-color-k: #625959;                        // grey         oil
-
-
-.data-canvas-debug {
-  fill: none;
-  // fill: rgba(red, 0.16);
+.stop--start {
+  stop-opacity: 0.16;
+}
+.stop--end {
+  stop-opacity: 0;
 }
 
-.trigger-rect {
-  fill: none;
-  // fill: rgba(green, 0.16) !important;
+#area-gradient-1 .stop {
+  stop-color: $infograph-color-a
 }
+#area-gradient-2 .stop {
+  stop-color: $infograph-color-b
+}
+#area-gradient-3 .stop {
+  stop-color: $infograph-color-c
+}
+#area-gradient-4 .stop {
+  stop-color: $infograph-color-d
+}
+#area-gradient-5 .stop {
+  stop-color: $infograph-color-e
+}
+#area-gradient-6 .stop {
+  stop-color: $infograph-color-f
+}
+
+
+/* Popover params */
+
+.legend__key--val-1::before {
+  background: $infograph-color-a;
+}
+.legend__key--val-2::before {
+  background: $infograph-color-b;
+}
+.legend__key--val-3::before {
+  background: $infograph-color-c;
+}
+.legend__key--val-4::before {
+  background: $infograph-color-d;
+}
+.legend__key--val-5::before {
+  background: $infograph-color-e;
+}
+.legend__key--val-6::before {
+  background: $infograph-color-f;
+}
+
+
+/* Chart */
 
 .schart__graph {
   height: 25rem;
@@ -173,7 +190,7 @@ $infograph-color-k: #625959;                        // grey         oil
 
   .area:nth-child(1) {
     .area__path {
-      fill: rgba($infograph-color-a, 0.5);
+      fill: url(#area-gradient-1)
     }
     .area__circle,
     .area__line {
@@ -186,7 +203,7 @@ $infograph-color-k: #625959;                        // grey         oil
   }
   .area:nth-child(2) {
     .area__path {
-      fill: rgba($infograph-color-b, 0.5);
+      fill: url(#area-gradient-2)
     }
     .area__circle,
     .area__line {
@@ -199,7 +216,7 @@ $infograph-color-k: #625959;                        // grey         oil
   }
   .area:nth-child(3) {
     .area__path {
-      fill: rgba($infograph-color-c, 0.5);
+      fill: url(#area-gradient-3)
     }
     .area__circle,
     .area__line {
@@ -212,7 +229,7 @@ $infograph-color-k: #625959;                        // grey         oil
   }
   .area:nth-child(4) {
     .area__path {
-      fill: rgba($infograph-color-d, 0.5);
+      fill: url(#area-gradient-4)
     }
     .area__circle,
     .area__line {
@@ -225,7 +242,7 @@ $infograph-color-k: #625959;                        // grey         oil
   }
   .area:nth-child(5) {
     .area__path {
-      fill: rgba($infograph-color-e, 0.5);
+      fill: url(#area-gradient-5)
     }
     .area__circle,
     .area__line {
@@ -238,7 +255,7 @@ $infograph-color-k: #625959;                        // grey         oil
   }
   .area:nth-child(6) {
     .area__path {
-      fill: rgba($infograph-color-f, 0.5);
+      fill: url(#area-gradient-6)
     }
     .area__circle,
     .area__line {
@@ -251,77 +268,12 @@ $infograph-color-k: #625959;                        // grey         oil
   }
 }
 
-
-
-
-
-
-.schart__popover {
-  // @extend %drop-skin;
-  // padding: $global-spacing;
-  // width: $global-spacing * 11;
-  transition: all 0.16s ease;
-  visibility: visible;
-  opacity: 1;
-
-  // > *:last-child {
-  //   margin-bottom: 0;
-  // }
-
-  // h1 {
-  //   @include heading(0.75rem);
-  //   margin-bottom: $global-spacing / 2;
-  // }
-
-  // dl {
-  //   > *:last-child {
-  //     margin-bottom: 0;
-  //   }
-  // }
-
-  // dt {
-  //   font-size: 0.75rem;
-  //   line-height: 1rem;
-  //   margin-bottom: $global-spacing / 4;
-  // }
-
-  // dd {
-  //   font-size: 0.875rem;
-  //   line-height: 1rem;
-  //   margin-bottom: $global-spacing / 2;
-  // }
+.data-canvas-debug {
+  fill: none;
+  // fill: rgba(red, 0.16);
 }
 
-.popover-trans-appear {
-  opacity: 0;
-
-  &.schart__popover--right {
-    transform: translate(-16%, 0);
-  }
-
-  &.schart__popover--left {
-    transform: translate(16%, 0);
-  }
-}
-
-.popover-trans-appear-active {
-  opacity: 1;
-  transform: translate(0) !important;
-}
-
-.popover-trans-exit {
-  opacity: 1;
-  transform: translate(0);
-}
-
-.popover-trans-exit-active {
-  opacity: 0;
-
-  &.schart__popover--right {
-    transform: translate(-16%, 0)
-  }
-
-  &.schart__popover--left {
-    transform: translate(16%, 0)
-  }
+.trigger-rect {
+  fill: none;
+  // fill: rgba(green, 0.16) !important;
 }

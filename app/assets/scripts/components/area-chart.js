@@ -84,7 +84,13 @@ class AreaChart extends React.Component {
 
   initChart () {
     const { top, left, innerLeft } = this.margin
+
+    // ---------------------------------------------------
+    // Structure
+
     this.svg = select(this.container.el).append('svg').attr('class', 'chart')
+
+    this.svg.append('defs')
 
     this.dataCanvas = this.svg.append('g')
       .attr('class', 'data-canvas')
@@ -100,7 +106,9 @@ class AreaChart extends React.Component {
       .attr('class', 'data-areas data-layer')
       .attr('transform', `translate(${innerLeft},0)`)
 
-    // Axis.
+    // ---------------------------------------------------
+    // Axis
+
     this.svg.append('g')
       .attr('class', 'x axis')
 
@@ -124,6 +132,9 @@ class AreaChart extends React.Component {
     this.dataCanvas.append('g')
       .attr('class', 'bisector-circles')
 
+    // ---------------------------------------------------
+    // Interaction
+
     // Trigger area.
     this.svg.append('rect')
       .attr('class', 'trigger-rect')
@@ -131,6 +142,32 @@ class AreaChart extends React.Component {
       .style('pointer-events', 'all')
       .attr('transform', `translate(${left},${top})`)
       .call(this.setupTriggerMouse.bind(this))
+  }
+
+  addAreaGradientDefs (props) {
+    // Add as many gradients as data layers.
+    const { data } = props
+
+    const gradients = this.svg.select('defs').selectAll('linearGradient')
+      .data(data)
+
+    gradients.exit().remove()
+
+    const entering = gradients.enter()
+      .append('linearGradient')
+      .attr('id', (d, i) => `area-gradient-${i + 1}`)
+      .attr('x1', '0%')
+      .attr('y1', '0%')
+      .attr('x2', '0%')
+      .attr('y2', '100%')
+
+    entering.append('stop')
+      .attr('offset', 0)
+      .attr('class', 'stop stop--start')
+
+    entering.append('stop')
+      .attr('offset', 1)
+      .attr('class', 'stop stop--end')
   }
 
   drawXAxis (scale) {
@@ -229,6 +266,10 @@ class AreaChart extends React.Component {
     svg.select('.data-canvas-debug')
       .attr('width', width)
       .attr('height', height)
+
+    // ---------------------------------------------------
+    // Style
+    this.addAreaGradientDefs(props)
 
     // ---------------------------------------------------
     // Append Axis.
@@ -348,11 +389,11 @@ class AreaChart extends React.Component {
           <div className='popover__contents'>
             <div className='popover__body'>
               <dl className='legend par-legend'>
-                {data.map(d => {
+                {data.map((d, i) => {
                   const val = d.values.find(v => v.year === year).value
                   return (
                     <React.Fragment key={d.name}>
-                      <dt>{d.name}</dt>
+                      <dt className={`legend__key--val-${i + 1}`}>{d.name}</dt>
                       <dd>{val === null ? '--' : round(val)}</dd>
                     </React.Fragment>
                   )
