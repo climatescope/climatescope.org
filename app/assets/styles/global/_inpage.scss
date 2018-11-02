@@ -279,6 +279,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 0 ($global-spacing * 2);
+    justify-content: flex-start;
   }
 }
 
@@ -294,6 +295,10 @@
   grid-column: 1 / span 12;
 }
 
+.col--diptic {
+  grid-column: auto / span 6;
+  grid-row: 1 / auto;
+}
 
 .blk {
   padding-bottom: $global-spacing * 2;
