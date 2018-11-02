@@ -111,13 +111,13 @@ class NavBar extends React.PureComponent {
             ) : (
               <ul className='sections-menu'>
                 {this.menuItems.map(item => (
-                  <li key={item.id} className='sections-menu__item'><a href={`#${item.id}`} title={item.title}  className='sections-menu__link'><span>{item.label}</span></a></li>
+                  <li key={item.id} className='sections-menu__item'><a href={`#${item.id}`} title={item.title} className='sections-menu__link'><span>{item.label}</span></a></li>
                 ))}
               </ul>
             )}
           </div>
           <div className='inpage__actions'>
-            <button type='button' className='ipa-print' Title='Print content'><span>Print</span></button>
+            <button type='button' className='ipa-print' title='Print content' onClick={() => window.print() }><span>Print</span></button>
             <ShareOptions url={window.location.toString()} />
           </div>
         </div>

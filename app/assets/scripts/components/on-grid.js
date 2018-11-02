@@ -2,7 +2,6 @@
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import c from 'classnames'
-import ReactTooltip from 'react-tooltip'
 
 import { environment } from '../config'
 

@@ -302,7 +302,7 @@ class AreaChart extends React.Component {
     }
   }
 
-  componentWillReceiveProps (nextProps) {
+  componentWillReceiveProps (nextProps) { // eslint-disable-line
     const nIact = nextProps.interactionData
     const pIact = this.props.interactionData
 

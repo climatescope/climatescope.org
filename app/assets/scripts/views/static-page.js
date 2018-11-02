@@ -49,7 +49,7 @@ class StaticPage extends React.Component {
 
           <div className='inpage__body'>
             <div className='inner'>
-              <div className={c('col', {'col--main': !data.embedded, 'col--full': data.embedded})}>
+              <div className={c('col', { 'col--main': !data.embedded, 'col--full': data.embedded })}>
                 {isReady() ? (
                   <DangerouslySetScriptContent key={receivedAt} dangerousContent={data.content} />
                 ) : (
