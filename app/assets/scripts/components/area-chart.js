@@ -11,6 +11,7 @@ import { scaleTime, scaleLinear } from 'd3-scale'
 import { environment } from '../config'
 import { splitArray } from '../utils/array'
 import { dateFromYear } from '../utils/utils'
+import { round } from '../utils/math'
 
 import SizeAwareElement from './size-aware-element'
 
@@ -62,7 +63,7 @@ class AreaChart extends React.Component {
 
       // Since we just need access to the year, we can just invert the scale.
       // In this case there's no need for a bisector.
-      const mouseX = mouse(this)[0]
+      const [ mouseX ] = mouse(this)
       const mouseYear = xScale.invert(mouseX).getFullYear()
       const [minDate, maxDate] = xScale.domain()
 
@@ -258,16 +259,6 @@ class AreaChart extends React.Component {
         .attr('x1', xPos)
         .attr('x2', xPos)
     }
-
-    // // Bisector select
-    // if (selectedDateValue) {
-    //   const xPos = this.xScale(new Date(selectedDateValue))
-    //   dataCanvas.select('.bisector-select')
-    //     .attr('y2', 0)
-    //     .attr('y1', height)
-    //     .attr('x1', xPos)
-    //     .attr('x2', xPos)
-    // }
   }
 
   componentWillReceiveProps (nextProps) {
@@ -303,29 +294,38 @@ class AreaChart extends React.Component {
 
   renderPopover () {
     const { dataCanvas, xScale } = this
+    const { innerLeft } = this.margin
     const { data, interactionData: { hoverDateValue, hover } } = this.props
 
-    if (!hoverDateValue || !this.componentEl) return
+    if (!hoverDateValue || !this.componentEl) return <div />
 
     const year = hoverDateValue.getFullYear()
 
     const { x, y, width } = this.componentEl.getBoundingClientRect()
     const matrix = dataCanvas.node().getScreenCTM()
-      .translate(xScale(hoverDateValue), 0)
+      .translate(xScale(hoverDateValue) + innerLeft, 0)
 
-    const popoverWidth = 176
-    let posY = matrix.f - y + 48 // 3rem
+    const popoverWidth = 288
+    const popoverBisectorMargin = 16
+    let posY = matrix.f - y + 48 // 3rem top margin
     let posX = matrix.e - x
 
     let dirClassName
 
-    if (posX + popoverWidth + 8 > width) {
+    if (posX + popoverWidth + popoverBisectorMargin > width) {
       // Flip.
-      posX -= popoverWidth + 8
-      dirClassName = 'schart__popover--left'
+      const tryPosX = posX - popoverWidth - popoverBisectorMargin
+      dirClassName = 'place-left'
+      if (tryPosX < 0) {
+        // Doesn't fit. Center and leave it.
+        posX -= popoverWidth / 2
+        dirClassName = 'place-center'
+      } else {
+        posX = tryPosX
+      }
     } else {
-      posX += 8
-      dirClassName = 'schart__popover--right'
+      posX += popoverBisectorMargin
+      dirClassName = 'place-right'
     }
 
     const style = {
@@ -342,21 +342,26 @@ class AreaChart extends React.Component {
         appear={true}
         unmountOnExit={true}
         classNames='popover-trans'
-        timeout={{ enter: 300, exit: 300 }}>
-        <article className={`popover ${dirClassName} `} style={style}>
+        timeout={{ enter: 30000, exit: 300 }}>
+
+        <article className={`popover ${dirClassName} popover--chart`} style={style}>
           <div className='popover__contents'>
             <div className='popover__body'>
               <dl className='legend par-legend'>
-                {data.map(d => (
-                  <React.Fragment key={d.name}>
-                    <dt>{d.name}</dt>
-                    <dd>{d.values.find(v => v.year === year).value}</dd>
-                  </React.Fragment>
-                ))}
+                {data.map(d => {
+                  const val = d.values.find(v => v.year === year).value
+                  return (
+                    <React.Fragment key={d.name}>
+                      <dt>{d.name}</dt>
+                      <dd>{val === null ? '--' : round(val)}</dd>
+                    </React.Fragment>
+                  )
+                })}
               </dl>
             </div>
           </div>
         </article>
+
       </CSSTransition>
     )
   }

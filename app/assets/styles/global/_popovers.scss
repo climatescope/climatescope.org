@@ -147,3 +147,32 @@
   justify-content: flex-end;
   flex: 1 1 auto;
 }
+
+
+
+/*
+  React specific styles to handle animations.
+ */
+
+.popover--chart {
+  width: 18rem;
+  transition: opacity .16s ease, transform .16s ease, left .16s ease, right .16s ease;
+}
+
+.popover-trans-enter,
+.popover-trans-appear {
+  opacity: 0;
+
+  &.popover-trans-enter-active,
+  &.popover-trans-appear-active {
+    opacity: 1;
+  }
+}
+
+.popover-trans-exit {
+  opacity: 1;
+
+  &.popover-trans-exit-active {
+    opacity: 0;
+  }
+}

@@ -168,10 +168,10 @@ class Geography extends React.Component {
   onInteractionEvent (chart, name, date) {
     switch (name) {
       case 'over':
-        this.setState({ [chart]: { hover: true, hoverDateValue: null } })
+        this.setState({ [chart]: { ...this.state[chart], hover: true } })
         break
       case 'out':
-        this.setState({ [chart]: { hover: false, hoverDateValue: null } })
+        this.setState({ [chart]: { ...this.state[chart], hover: false } })
         break
       case 'move':
         if (!this.state[chart].hoverDateValue || this.state[chart].hoverDateValue.getFullYear() !== date.getFullYear()) {
