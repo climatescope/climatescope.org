@@ -1,19 +1,16 @@
 'use strict'
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
-import { Link } from 'react-router-dom'
+import { render } from 'react-dom'
 import mapboxgl from 'mapbox-gl'
 import ReactTooltip from 'react-tooltip'
 import debounce from 'lodash.debounce'
 import isEqual from 'lodash.isequal'
 
-import { render } from 'react-dom'
-
 import { mbtoken, environment } from '../config'
-import OnGrid from './on-grid'
-import { ParameterBreakdown } from './parameters'
 import { equalsIgnoreCase, padNumber } from '../utils/string'
-import { round } from '../utils/math'
+
+import MapPopover from './results-map-popover'
 
 // set once
 mapboxgl.accessToken = mbtoken
@@ -183,44 +180,12 @@ export default class ResultsMap extends React.Component {
     })
   }
 
-  renderPopover () {
-    const popoverContent = (geographyIso) => {
-      const geography = this.props.data.find(geography => equalsIgnoreCase(geography.iso, geographyIso))
-      if (!geography) return null
-
-      const { iso, score, rank, name, topics, grid } = geography
-
-      return (
-        <PopoverContent
-          iso={iso}
-          rank={rank}
-          name={name}
-          topics={topics}
-          grid={grid}
-          score={score}
-        />
-      )
-    }
-
-    return (
-      <ReactTooltip
-        id='marker-tip'
-        effect='solid'
-        type='custom'
-        delayHide={100}
-        className='popover popover--map'
-        wrapper='article'
-        getContent={popoverContent}
-      />
-    )
-  }
-
   render () {
     return (
       <>
         <figure className='results-map-viz media'>
           <div className='media__item' ref='mapEl'>
-            {this.renderPopover()}
+            <MapPopover data={this.props.data} />
           </div>
           <figcaption className='media__caption'>Top and bottom ten geographies</figcaption>
         </figure>
@@ -235,71 +200,5 @@ if (environment !== 'production') {
     bounds: T.array,
     data: T.array,
     meta: T.array
-  }
-}
-
-class PopoverContent extends React.PureComponent {
-  componentDidMount () {
-    // Rebuild tooltips to ensure the on grid appears.
-    ReactTooltip.rebuild()
-  }
-
-  componentDidUpdate () {
-    // Rebuild tooltips to ensure the on grid appears.
-    ReactTooltip.rebuild()
-  }
-
-  render () {
-    const { iso, score, rank, name, topics, grid } = this.props
-    const hasScore = !!score
-
-    return (
-      <div className='popover__contents'>
-        <header className='popover__header'>
-          <div className='popover__headline'>
-            <h1 className='popover__title'>
-              <Link to={`/results/${iso}`} title={`View ${name} page`}>{name}</Link><OnGrid grid={grid} />
-            </h1>
-          </div>
-          {/* <div className='popover__header-toolbar'><a href='#' title='Close' className='tba-xmark tba--text-hidden'><span>Close</span></a></div> */}
-        </header>
-        <div className='popover__body'>
-          {hasScore ? (
-            <ParameterBreakdown
-              className='legend par-legend'
-              data={topics} >
-              <dt>Global rank</dt>
-              <dd>{rank}</dd>
-              <dt>Score</dt>
-              <dd>{round(score)}</dd>
-            </ParameterBreakdown>
-          ) : (
-            <>
-              <dl className='params-legend'>
-                <dt>Global rank</dt>
-                <dd>--</dd>
-                <dt>Score</dt>
-                <dd>--</dd>
-              </dl>
-              <p>There is no data for this geography.</p>
-            </>
-          )}
-        </div>
-        <footer className='popover__footer'>
-          <Link to={`/results/${iso}`} className='popover__cta' title={`View ${name} page`}>View more</Link>
-        </footer>
-      </div>
-    )
-  }
-}
-
-if (environment !== 'production') {
-  PopoverContent.propTypes = {
-    iso: T.string,
-    rank: T.number,
-    name: T.string,
-    topics: T.array,
-    grid: T.bool,
-    score: T.number
   }
 }

@@ -7,7 +7,6 @@ import orderBy from 'lodash.orderby'
 import get from 'lodash.get'
 import isEqual from 'lodash.isequal'
 import { StickyContainer, Sticky } from 'react-sticky'
-import { OnGridTooltip } from '../components/on-grid'
 
 import { environment } from '../config'
 import QsState from '../utils/qs-state'
@@ -250,7 +249,6 @@ class Results extends React.Component {
               </div>
             </div>
           </StickyContainer>
-          <OnGridTooltip />
         </section>
       </App>
     )

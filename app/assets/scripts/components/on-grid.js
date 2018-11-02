@@ -18,7 +18,7 @@ export default function OnGrid ({ grid, theme, noTip }) {
 
   const popoverInfo = noTip ? {} : {
     'data-tip': grid ? 'On-grid' : 'Off-grid',
-    'data-for': 'on-grid-tooltip'
+    'data-for': 'popover-compact'
   }
 
   return (
@@ -33,17 +33,4 @@ if (environment !== 'production') {
     grid: T.oneOfType([T.bool, T.string]),
     theme: T.string
   }
-}
-
-export function OnGridTooltip () {
-  return (
-    <ReactTooltip
-      id='on-grid-tooltip'
-      effect='solid'
-      type='custom'
-      className='popover popover--compact'
-      wrapper='article'
-      getContent={(content) => <div className='popover__contents'>{content}</div>}
-    />
-  )
 }

@@ -2,6 +2,7 @@
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import c from 'classnames'
+import ReactTooltip from 'react-tooltip'
 
 import { environment, appTitle, appEdition, appDescription } from '../config'
 
@@ -36,6 +37,14 @@ class App extends React.Component {
         <main className='page__body' role='main'>
           {children}
         </main>
+        <ReactTooltip
+          id='popover-compact'
+          effect='solid'
+          type='custom'
+          className='popover popover--compact'
+          wrapper='article'
+          getContent={(content) => <div className='popover__contents'>{content}</div>}
+        />
         <PageFooter location={location} />
       </div>
     )
