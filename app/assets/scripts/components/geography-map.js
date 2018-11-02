@@ -5,11 +5,18 @@ import mapboxgl from 'mapbox-gl'
 import isEqual from 'lodash.isequal'
 
 import { mbtoken, environment } from '../config'
+import SizeAwareElement from './size-aware-element'
 
 // set once
 mapboxgl.accessToken = mbtoken
 
 export default class GeographyMap extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.resizeListener = this.resizeListener.bind(this)
+  }
+
   componentDidMount () {
     this.initMap()
   }
@@ -70,12 +77,19 @@ export default class GeographyMap extends React.Component {
     })
   }
 
+  resizeListener () {
+    this.map && this.map.resize()
+  }
+
   render () {
     return (
-      <figure className='inpage__hero inpage__hero--map'>
+      <SizeAwareElement
+        element='figure'
+        className='inpage__hero inpage__hero--map'
+        onChange={this.resizeListener}>
         <div className='inpage__hero-item' ref='mapEl' />
         <figcaption className='inpage__hero-caption'>Geography map</figcaption>
-      </figure>
+      </SizeAwareElement>
     )
   }
 }
