@@ -75,7 +75,7 @@ class NavBar extends React.PureComponent {
   }
 
   render () {
-    const { isSticky, style, currentItem } = this.props
+    const { isSticky, style, currentItem, geography } = this.props
 
     const activeItem = (this.menuItems.find(i => i.id === currentItem) || { label: 'Sections' })
 
@@ -87,7 +87,7 @@ class NavBar extends React.PureComponent {
               <p className='nav__subtitle'>
                 <Link to='/results' title='View results page'><span>View all markets</span></Link>
               </p>
-              <h1 className='nav__title'>Democratic Republic of Congo</h1>
+              <h1 className='nav__title'>{this.props.geography.name}</h1>
             </div>
           ) : null}
           <div className='nav__block'>
@@ -130,6 +130,7 @@ if (environment !== 'production') {
   NavBar.propTypes = {
     currentItem: T.string,
     isSticky: T.bool,
+    geography: T.object,
     style: T.object
   }
 }
@@ -267,7 +268,7 @@ class Geography extends React.Component {
 
           <StickyContainer>
             <Sticky>
-              {(props) => <NavBar {...props} currentItem={this.props.location.hash.substr(1)} />}
+              {(props) => <NavBar {...props} currentItem={this.props.location.hash.substr(1)} geography={geography} />}
             </Sticky>
 
             <div className='inpage__body'>
