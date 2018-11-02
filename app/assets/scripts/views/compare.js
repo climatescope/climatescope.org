@@ -117,24 +117,22 @@ class Compare extends React.Component {
     ]
 
     return (
-      <div className='layout--hub__controls'>
-        <form>
-          {initializeArrayWithRange(1).map(i => (
-            <SelectControl
-              key={`geo-${i}`}
-              id={`geo-${i}`}
-              label='Geography'
-              options={options}
-              selectedOption={this.state.geographies[i]}
-              onChange={this.onGeoSelectValueChange.bind(this, i)}
-            />
-          ))}
-          <div className='control'>
-            <button className='bttn bttn-default bttn-m restart hide-txt' onClick={this.onCompareReset}><span>Reset</span></button>
-            <button className='bttn bttn-dark bttn-m' onClick={this.onCompareClick}>Compare</button>
-          </div>
-        </form>
-      </div>
+      <form className='form controls compare-controls'>
+        {initializeArrayWithRange(1).map(i => (
+          <SelectControl
+            key={`geo-${i}`}
+            id={`geo-${i}`}
+            label='Geography'
+            options={options}
+            selectedOption={this.state.geographies[i]}
+            onChange={this.onGeoSelectValueChange.bind(this, i)}
+          />
+        ))}
+        <div className='form__actions'>
+          <button className='controls__button-reset' onClick={this.onCompareReset} title='Reset selection'><span>Reset</span></button>
+          <button className='controls__button-submit' onClick={this.onCompareClick} title='Apply selection'><span>Compare</span></button>
+        </div>
+      </form>
     )
   }
 
@@ -147,7 +145,7 @@ class Compare extends React.Component {
 
     return (
       <>
-        <div className='col--double'>
+        <div className='col col--diptic prose'>
           <GeographyCompare
             active={urlGeo[0] !== 'none'}
             error={geoA.hasError()}
@@ -156,7 +154,7 @@ class Compare extends React.Component {
             target={geoB.getData()}
           />
         </div>
-        <div className='col--double'>
+        <div className='col col--diptic prose'>
           <GeographyCompare
             active={urlGeo[1] !== 'none'}
             error={geoB.hasError()}
@@ -171,24 +169,27 @@ class Compare extends React.Component {
 
   render () {
     return (
-      <App pageTitle='Compare' >
-        <section className='layout--hub compare'>
-          <header className='layout--hub__header'>
-            <div className='row--contained'>
-              <div className='layout--hub__heading'>
-                <h1 className='layout--hub__title'>Compare</h1>
+      <App>
+        <section className='inpage inpage--compare'>
+          <header className='inpage__header'>
+            <div className='inner'>
+              <div className='inpage__headline'>
+                <h1 className='inpage__title'>Compare</h1>
               </div>
-              <div className='layout--hub__tools'>
-                <ul className='actions-menu'>
-                  <li><ShareOptions url={window.location.toString()} /></li>
-                </ul>
+              <div className='inpage__actions'>
+                <ShareOptions url={window.location.toString()} />
               </div>
-              {this.renderControls()}
             </div>
           </header>
 
-          <div className='layout--hub__body'>
-            <div className='row--contained'>
+          <nav className='inpage__nav' role='navigation'>
+            <div className='inner'>
+              {this.renderControls()}
+            </div>
+          </nav>
+
+          <div className='inpage__body'>
+            <div className='inner'>
               {this.renderFatalError()}
               {this.renderGeographies()}
             </div>

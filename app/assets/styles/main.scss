@@ -70,6 +70,7 @@
 @import 'global/buttons';
 @import 'global/toolbar';
 @import 'global/forms';
+@import 'global/controls';
 @import 'global/drops';
 @import 'global/popovers';
 @import 'global/charts';
@@ -83,6 +84,12 @@
    ========================================================================== */
 
 @import 'home/global';
+
+
+/* Static
+   ========================================================================== */
+
+@import 'static/global';
 
 
 /* Results
@@ -106,6 +113,12 @@
 @import 'policies/single';
 
 
+/* Policies
+   ========================================================================== */
+
+@import 'compare/global';
+
+
 /* Playground
    ========================================================================== */
 
@@ -123,5 +136,5 @@
 
 @import 'vendor/react-tooltip';
 @import 'vendor/react-paginate';
+@import 'vendor/react-slider';
 @import 'vendor/mapbox-gl';
-@import 'vendor/sliders';

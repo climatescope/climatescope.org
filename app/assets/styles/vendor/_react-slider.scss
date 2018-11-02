@@ -22,19 +22,16 @@
   cursor: pointer;
 }
 
-// Handles and cursors
-
 .slider .handle {
   @extend .button--base-raised-semidark;
   transform: translate(0, -0.5rem);
   width: 1.5rem;
   height: 1.5rem;
   border-radius: $full-border-radius;
-  cursor: w-resize;
+  cursor: ew-resize;
   transition: opacity 0.24s ease 0s;
 }
 
-// Disabled state
 .slider.disabled {
   opacity: 1;
   pointer-events: auto;

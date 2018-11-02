@@ -178,7 +178,7 @@ class Policies extends React.Component {
     const status = prepareFilter(data.status)
 
     return (
-      <form className='form pol-controls'>
+      <form className='form controls pol-controls'>
         <SelectControl
           label='Geography'
           id='policy_country'
@@ -201,8 +201,8 @@ class Policies extends React.Component {
           onChange={this.onFilterFieldChange.bind(this, 'status')}
         />
         <div className='form__actions'>
-          <button className='pol-controls__button-reset' onClick={this.onFilterReset} title='Reset selection'><span>Reset</span></button>
-          <button className='pol-controls__button-submit' onClick={this.onFilterClick} title='Apply filter selection'><span>Filter</span></button>
+          <button className='controls__button-reset' onClick={this.onFilterReset} title='Reset selection'><span>Reset</span></button>
+          <button className='controls__button-submit' onClick={this.onFilterClick} title='Apply filter selection'><span>Filter</span></button>
         </div>
       </form>
     )

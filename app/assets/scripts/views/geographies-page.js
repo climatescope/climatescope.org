@@ -7,6 +7,7 @@ import { StickyContainer, Sticky } from 'react-sticky'
 import { configureAnchors } from 'react-scrollable-anchor'
 import get from 'lodash.get'
 import memoize from 'lodash.memoize'
+import c from 'classnames'
 
 import { environment } from '../config'
 import { fetchGeography, fetchGeographiesMeta } from '../redux/geographies'
@@ -14,6 +15,7 @@ import { equalsIgnoreCase } from '../utils/string'
 import { wrapApiResult, getFromState } from '../utils/utils'
 
 import App from './app'
+import ShareOptions from '../components/share'
 import UhOh from './uhoh'
 import Dropdown from '../components/dropdown'
 import GeographyMap from '../components/geography-map'
@@ -78,50 +80,45 @@ class NavBar extends React.PureComponent {
     const activeItem = (this.menuItems.find(i => i.id === currentItem) || { label: 'Sections' })
 
     return (
-      <nav className='inpage__nav sections-nav' style={style}>
+      <nav className={c('inpage__nav nav', { 'inpage__nav--sticky': isSticky })} style={style} role='navigation'>
         <div className='inner'>
           {isSticky ? (
-            <div className='sections-nav__headline'>
-              <p className='sections-nav__subtitle'>
+            <div className='nav__headline'>
+              <p className='nav__subtitle'>
                 <Link to='/results' title='View results page'><span>View all markets</span></Link>
               </p>
-              <h1 className='sections-nav__title'>Democratic Republic of Congo</h1>
+              <h1 className='nav__title'>Democratic Republic of Congo</h1>
             </div>
           ) : null}
-          <div className='sections-nav__sections-menu-wrapper'>
+          <div className='nav__block'>
             {isSticky ? (
               <Dropdown
                 className='dropdown-content'
                 triggerElement='a'
-                triggerClassName='dropdown-toggle caret'
+                triggerClassName='nav__drop-trigger'
                 triggerActiveClassName='button--active'
                 triggerText={activeItem.label}
                 triggerTitle='Jump to section'
                 direction='down'
-                alignment='center' >
-                <ul className='dropdown-menu'>
+                alignment='left' >
+                <h6 className='drop__title'>Jump to section</h6>
+                <ul className='drop__menu drop__menu--select'>
                   {this.menuItems.map(item => (
-                    <li key={item.id}><a data-hook='dropdown:close' href={`#${item.id}`} title={item.title}>{item.label}</a></li>
+                    <li key={item.id}><a data-hook='dropdown:close' href={`#${item.id}`} title={item.title} className={c('drop__menu-item', { 'drop__menu-item--active': item.id === activeItem.id })}>{item.label}</a></li>
                   ))}
                 </ul>
               </Dropdown>
             ) : (
-              <ul className='sections-nav__sections-menu'>
+              <ul className='sections-menu'>
                 {this.menuItems.map(item => (
-                  <li key={item.id}><a href={`#${item.id}`} title={item.title}>{item.label}</a></li>
+                  <li key={item.id} className='sections-menu__item'><a href={`#${item.id}`} title={item.title}  className='sections-menu__link'><span>{item.label}</span></a></li>
                 ))}
               </ul>
             )}
           </div>
-          <div className='sections-nav__tools'>
-            <ul className='actions-menu'>
-              <li>
-                <button className='bttn bttn-success download'>Print</button>
-              </li>
-              <li>
-                <button className='bttn bttn-success share'>Share</button>
-              </li>
-            </ul>
+          <div className='inpage__actions'>
+            <button type='button' className='ipa-print' Title='Print content'><span>Print</span></button>
+            <ShareOptions url={window.location.toString()} />
           </div>
         </div>
       </nav>
