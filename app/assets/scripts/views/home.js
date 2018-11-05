@@ -36,11 +36,9 @@ class Home extends React.Component {
           <div className='inpage__body'>
             <div className='inner'>
               <div className='col--main'>
-
                 <section className='featured-section'>
                   <h1 className='featured-section__title'>Insights</h1>
                   <div className='featured-section__body'>
-
                     <ol className='entry-list'>
                       <li className='entry-list__item'>
                         <article className='entry entry--short update'>
@@ -63,12 +61,37 @@ class Home extends React.Component {
                   </div>
                 </section>
               </div>
-
               <div className='col--sec'>
                 <ToolsList />
               </div>
-
             </div>
+            <section className='fold fold--editions'>
+              <div className='fold__contents'>
+                <header className='fold__header'>
+                  <h1 className='fold__title'>About Climatescope</h1>
+                  <div className='fold__lead'>
+                    <p>Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the feature.</p>
+                  </div>
+                </header>
+                <div className='fold__body'>
+                  <h2>View or download previous reports</h2>
+                  <ul className='editions-menu'>
+                    <li className='editions-menu__item'>
+                      <a href='http://2014.global-climatescope.org' title='View 2014 Edition' className='editions-menu__link'><span>2014</span></a>
+                    </li>
+                    <li className='editions-menu__item'>
+                      <a href='http://2015.global-climatescope.org' title='View 2015 Edition' className='editions-menu__link'><span>2015</span></a>
+                    </li>
+                    <li className='editions-menu__item'>
+                      <a href='http://2016.global-climatescope.org' title='View 2016 Edition' className='editions-menu__link'><span>2016</span></a>
+                    </li>
+                    <li className='editions-menu__item'>
+                      <a href='http://2017.global-climatescope.org' title='View 2017 Edition' className='editions-menu__link'><span>2017</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
           </div>
         </section>
       </App>
