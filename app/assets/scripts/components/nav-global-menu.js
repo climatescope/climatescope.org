@@ -53,11 +53,43 @@ class NavGlobalMenu extends React.PureComponent {
 
   renderFooterMenu () {
     return (
-      <ul className='ftr-menu'>
-        <li><Link to='/results' title='The global index'>Results</Link></li>
-        <li><Link to='/library' title='View content library'>Content Library</Link></li>
-        <li><Link to='/about' title='More about Climatescope'>About</Link></li>
-        <li><Link to='/contact' title='Contact us'>Contact</Link></li>
+      <ul className='footer-menu' id='footer-menu'>
+        <li className='footer-menu__item'><Link to='/' title='View' className='footer-menu__link'>Home</Link></li>
+        <li className='footer-menu__item'><Link to='/results' title='View' className='footer-menu__link'>Results</Link></li>
+        <li className='footer-menu__item drop'>
+          <Dropdown
+            className=''
+            triggerElement='a'
+            triggerClassName='drop__toggle drop__toggle--caret footer-menu__link'
+            triggerActiveClassName='button--active'
+            triggerText='Insights & Tools'
+            triggerTitle='Explore the Insights & Tools'
+            direction='up'
+            alignment='left' >
+            <ul className='drop__menu'>
+              <li><Link data-hook='dropdown:close' to='/key-findings' title='View' className='drop__menu-item'>Key Findings</Link></li>
+              <li><Link data-hook='dropdown:close' to='/library' title='View' className='drop__menu-item'>Content Library</Link></li>
+            </ul>
+          </Dropdown>
+        </li>
+        <li className='footer-menu__item'>
+          <Dropdown
+            className=''
+            triggerElement='a'
+            triggerClassName='drop__toggle drop__toggle--caret footer-menu__link'
+            triggerActiveClassName='button--active'
+            triggerText='About'
+            triggerTitle='Explore Climatescope'
+            direction='up'
+            alignment='left' >
+            <ul className='drop__menu'>
+              <li><Link data-hook='dropdown:close' to='/about' title='View' className='drop__menu-item'>Behind Climatescope</Link></li>
+              <li><Link data-hook='dropdown:close' to='/methodology' title='View' className='drop__menu-item'>Methodology</Link></li>
+              <li><Link data-hook='dropdown:close' to='/license' title='View' className='drop__menu-item'>License</Link></li>
+              <li><Link data-hook='dropdown:close' to='/contact' title='View' className='drop__menu-item'>Contact</Link></li>
+            </ul>
+          </Dropdown>
+        </li>
       </ul>
     )
   }

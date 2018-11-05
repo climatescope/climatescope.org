@@ -50,7 +50,7 @@
   }
 
   .fold__body {
-    grid-column: 8 / span 4;
+    grid-column: 8 / span 3;
 
     h2 {
       text-transform: uppercase;
@@ -80,7 +80,9 @@
     @extend .button--active;
   }
 
-  span {
-    box-shadow: 0 2px 0 0 rgba(#fff, 0.32);
+  &::after {
+    @extend %collecticon-pop-up;
+    opacity: 0.32;
+    margin-left: 0.125rem;
   }
 }

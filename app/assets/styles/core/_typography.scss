@@ -370,7 +370,7 @@ hr,
   background: none;
   width: 80%;
   max-width: 16rem;
-  margin: ($global-spacing / 4) auto;
+  margin: ($global-spacing / 4) 0;
   background: transparent linear-gradient(transparent, $base-alpha-color, transparent) 50% / auto $base-border-width repeat-x;
 }
 
@@ -379,7 +379,7 @@ hr,
 .prose {
   > hr,
   >.hr {
-    margin: $global-spacing auto;
+    margin: $global-spacing 0;
   }
 }
 

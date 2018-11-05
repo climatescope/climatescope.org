@@ -74,7 +74,7 @@ class Home extends React.Component {
                   </div>
                 </header>
                 <div className='fold__body'>
-                  <h2>View or download previous reports</h2>
+                  <h2>View or download our previous reports</h2>
                   <ul className='editions-menu'>
                     <li className='editions-menu__item'>
                       <a href='http://2014.global-climatescope.org' title='View 2014 Edition' className='editions-menu__link'><span>2014</span></a>
