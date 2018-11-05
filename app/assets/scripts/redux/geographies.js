@@ -27,7 +27,7 @@ export function receiveGeographies (data, error = null) {
 
 export function fetchGeographies () {
   return fetchDispatchCacheFactory({
-    statePath: 'geographies.geographiesList',
+    statePath: 'geographies.list',
     url: `${baseurl}/api/results.json`,
     requestFn: requestGeographies,
     receiveFn: receiveGeographies
@@ -117,7 +117,7 @@ export function receiveGeographiesMeta (data, error = null) {
 
 export function fetchGeographiesMeta () {
   return fetchDispatchCacheFactory({
-    statePath: 'geographiesMeta.geographiesMetaList',
+    statePath: 'geographies.meta',
     url: `${baseurl}/api/geographies.json`,
     requestFn: requestGeographiesMeta,
     receiveFn: receiveGeographiesMeta,
@@ -171,6 +171,7 @@ const geographiesMetaReducerInitialState = {
 function geographiesMetaReducer (state = geographiesMetaReducerInitialState, action) {
   return baseAPIReducer(state, action, 'GEOGRAPHIES_META')
 }
+
 // /////////////////////////////////////////////////////////////////////////////
 // Combine reducers and export
 // /////////////////////////////////////////////////////////////////////////////

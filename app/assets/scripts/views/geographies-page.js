@@ -75,7 +75,7 @@ class NavBar extends React.PureComponent {
   }
 
   render () {
-    const { isSticky, style, currentItem, geography } = this.props
+    const { isSticky, style, currentItem } = this.props
 
     const activeItem = (this.menuItems.find(i => i.id === currentItem) || { label: 'Sections' })
 
@@ -186,18 +186,9 @@ class Geography extends React.Component {
     return geo ? geo.bounds : []
   }
 
-  getChartData (name) {
+  getChartData (id) {
     const { receivedAt, getData } = this.props.geography
-
-    const chart = get(getData(), 'charts', []).find(o => o.meta.title === name)
-    const title = get(chart, ['meta', 'title'], '')
-    return memoizedComputeAreaChartData(chart, renewableTypes, `${title}-${receivedAt}`)
-  }
-
-  getPowerGenerarionChart () {
-    const { receivedAt, getData } = this.props.geography
-
-    const chart = get(getData(), 'charts', []).find(o => o.meta.title === 'Power generation')
+    const chart = get(getData(), 'charts', []).find(o => o.id === id)
     const title = get(chart, ['meta', 'title'], '')
     return memoizedComputeAreaChartData(chart, renewableTypes, `${title}-${receivedAt}`)
   }
@@ -210,8 +201,8 @@ class Geography extends React.Component {
       return <UhOh />
     }
 
-    const installedChart = this.getChartData('Installed capacity')
-    const powerGenChart = this.getChartData('Power generation')
+    const installedChart = this.getChartData('installedCapacity')
+    const powerGenChart = this.getChartData('powerGeneration')
 
     return (
       <App className='page--has-hero' pageTitle={geography.name || 'Geograpghy'} >

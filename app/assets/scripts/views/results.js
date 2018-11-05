@@ -100,8 +100,10 @@ class Results extends React.Component {
   }
 
   getRankedGeographies () {
-    const { getData } = this.props.geographiesList
+    const { getData, hasError } = this.props.geographiesList
     const { sliders, region } = this.state
+
+    if (hasError()) return []
 
     let tableData = getData([])
       // Filter by active region
@@ -210,6 +212,28 @@ class Results extends React.Component {
 
   render () {
     const { region } = this.state
+    const { hasError } = this.props.geographiesList
+
+    if (hasError()) {
+      return (
+        <App pageTitle='Results'>
+          <section className='inpage inpage--hub'>
+            <header className='inpage__header'>
+              <div className='inner'>
+                <div className='inpage__headline'><h1 className='inpage__title'>Results</h1></div>
+              </div>
+            </header>
+            <div className='inpage__body'>
+              <div className='inner'>
+                <div className='col col--main prose'>
+                  <p>Something went wrong. Try again later.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </App>
+      )
+    }
 
     const rankedGeographies = this.getRankedGeographies()
     const highlightISO = rankedGeographies.map(g => g.iso)
@@ -268,7 +292,7 @@ function mapStateToProps (state, props) {
   const geographiesList = wrapApiResult(state.geographies.list)
 
   // Compute slider options
-  const { isReady, getData } = geographiesList
+  const { isReady, hasError, getData } = geographiesList
   let sliders = [
     // {
     //   id: 'fundamentals',
@@ -277,7 +301,7 @@ function mapStateToProps (state, props) {
     // }
   ]
 
-  if (isReady()) {
+  if (isReady() && !hasError()) {
     // All geographies have the same topics. Acess 1st one.
     const topics = getData()[0].topics
     sliders = topics.map(t => ({
