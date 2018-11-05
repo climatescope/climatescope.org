@@ -10,7 +10,7 @@ import memoize from 'lodash.memoize'
 import c from 'classnames'
 
 import { environment } from '../config'
-import { fetchGeography, fetchGeographiesMeta } from '../redux/geographies'
+import { fetchGeography, fetchGeographiesMeta, fetchChartsMeta } from '../redux/geographies'
 import { equalsIgnoreCase } from '../utils/string'
 import { wrapApiResult, getFromState } from '../utils/utils'
 
@@ -155,6 +155,7 @@ class Geography extends React.Component {
   componentDidMount () {
     this.props.fetchGeography(this.props.match.params.geoIso)
     this.props.fetchGeographiesMeta()
+    this.props.fetchChartsMeta()
   }
 
   componentDidUpdate (prevProps) {
@@ -499,6 +500,9 @@ class Geography extends React.Component {
 
 if (environment !== 'production') {
   Geography.propTypes = {
+    fetchGeography: T.func,
+    fetchGeographiesMeta: T.func,
+    fetchChartsMeta: T.func,
     match: T.object,
     geography: T.object,
     geoMeta: T.object
@@ -508,14 +512,16 @@ if (environment !== 'production') {
 function mapStateToProps (state, props) {
   return {
     geography: wrapApiResult(getFromState(state.geographies.individualGeographies, props.match.params.geoIso)),
-    geoMeta: wrapApiResult(state.geographies.meta)
+    geoMeta: wrapApiResult(state.geographies.meta),
+    chartsMeta: wrapApiResult(state.geographies.chartsMeta)
   }
 }
 
 function dispatcher (dispatch) {
   return {
     fetchGeography: (...args) => dispatch(fetchGeography(...args)),
-    fetchGeographiesMeta: (...args) => dispatch(fetchGeographiesMeta(...args))
+    fetchGeographiesMeta: (...args) => dispatch(fetchGeographiesMeta(...args)),
+    fetchChartsMeta: (...args) => dispatch(fetchChartsMeta(...args))
   }
 }
 
