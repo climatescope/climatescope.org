@@ -7,7 +7,6 @@ const gulp = require('gulp')
 const $ = require('gulp-load-plugins')()
 const del = require('del')
 const browserSync = require('browser-sync')
-const reload = browserSync.reload
 const watchify = require('watchify')
 const browserify = require('browserify')
 const source = require('vinyl-source-stream')
@@ -249,7 +248,8 @@ gulp.task('styles', function () {
     }))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/assets/styles'))
-    .pipe(bs.stream())
+    // https://browsersync.io/docs/gulp#gulp-sass-maps
+    .pipe(bs.stream({ match: '**/*.css' }))
 })
 
 // After being rendered by jekyll process the html files. (merge css files, etc)
