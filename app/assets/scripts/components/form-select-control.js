@@ -17,9 +17,9 @@ export default class SelectControl extends React.PureComponent {
     } = this.props
 
     return (
-      <div className={c('control', className)}>
-        <label className='control-title' htmlFor={id}>{label}</label>
-        <select className='sllt sllt-m' id={id} name={id} value={selectedOption} onChange={onChange}>
+      <div className={c('form__group', className)}>
+        <label className='form__label' htmlFor={id}>{label}</label>
+        <select className='form__control' id={id} name={id} value={selectedOption} onChange={onChange}>
           {options.map(o => <option key={o.value} value={o.value}>{o.label}</option>)}
         </select>
       </div>

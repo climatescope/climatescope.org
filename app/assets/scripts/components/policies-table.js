@@ -6,8 +6,8 @@ import ReactTooltip from 'react-tooltip'
 import c from 'classnames'
 
 import { environment } from '../config'
-import { initializeArrayWithRange } from '../utils/utils'
 import { LoadingSkeleton } from '../components/loading-skeleton'
+import { initializeArrayWithRange } from '../utils/array'
 
 export default class PoliciesTable extends React.PureComponent {
   componentDidUpdate () {
@@ -31,8 +31,8 @@ export default class PoliciesTable extends React.PureComponent {
       {
         id: 'country',
         sortable: true,
-        title: 'Sort by country',
-        value: 'Country'
+        title: 'Sort by geography',
+        value: 'Geography'
       },
       {
         id: 'mechanism',
@@ -54,10 +54,10 @@ export default class PoliciesTable extends React.PureComponent {
             if (!o.sortable) return <th key={o.id}>{o.value}</th>
 
             const { sortField, sortDirection } = this.props
-            const klass = c('sort', {
-              'sort-none': sortField !== o.id,
-              'sort-asc': sortField === o.id && sortDirection === 'asc',
-              'sort-desc': sortField === o.id && sortDirection === 'desc'
+            const klass = c('table__sort', {
+              'table__sort--none': sortField !== o.id,
+              'table__sort--asc': sortField === o.id && sortDirection === 'asc',
+              'table__sort--desc': sortField === o.id && sortDirection === 'desc'
             })
             return <th key={o.id}><a href='#' title={o.title} className={klass} onClick={this.onSort.bind(this, o.id)}>{o.value}</a></th>
           })}
@@ -93,9 +93,9 @@ export default class PoliciesTable extends React.PureComponent {
     return this.props.policies.map(policy => {
       return (
         <tr key={policy.id}>
-          <td className='cell-policy-name'>
+          <th>
             <Link to={`/policies/${policy.id}`} title='Go to policy page'>{policy.name}</Link>
-          </td>
+          </th>
           <td>{renderArrayField(policy.country)}</td>
           <td>{renderArrayField(policy.type.mechanism)}</td>
           <td>{policy.status.name}</td>
@@ -107,9 +107,11 @@ export default class PoliciesTable extends React.PureComponent {
   renderTooltip () {
     const popoverContent = (tipContent) => {
       return (
-        <article className='tooltip-inner'>
-          {tipContent}
-        </article>
+        <div className='popover__contents'>
+          <div className='popover__body'>
+            {tipContent}
+          </div>
+        </div>
       )
     }
 
@@ -118,7 +120,8 @@ export default class PoliciesTable extends React.PureComponent {
         id='array-field-tooltip'
         effect='solid'
         type='custom'
-        className='tooltip'
+        className='popover'
+        wrapper='article'
         getContent={popoverContent}
       />
     )

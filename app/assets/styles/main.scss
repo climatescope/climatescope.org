@@ -9,7 +9,7 @@
 
 /* Charset */
 
-@charset "UTF-8";
+@charset 'UTF-8';
 
 
 /* Third-party
@@ -20,63 +20,121 @@
  * http://bourbon.io/
  */
 
-@import "bourbon";
+@import 'bourbon';
 
 /**
  * Using Jeet, a grid system designed for humans:
  * http://jeet.gs/
  */
 
-@import "jeet";
+@import 'jeet';
 
-@import "normalize";
-@import "reset";
+/**
+ * Normalize.css, a modern, HTML5-ready alternative to CSS resets:
+ * http://necolas.github.io/normalize.css/
+ */
 
-// Climatescope functions
-@import "functions";
+@import 'vendor/normalize';
 
-// Climatescope settings
-@import "settings";
+/**
+ * Kenneth Ormandy's OpenType features—ligatures, kerning, and more—to Normalize.css:
+ * https://github.com/kennethormandy/normalize-opentype.css
+ */
 
-// Climatescope's global
-@import "mixins";
-@import "core/collecticons";
-@import "type";
-@import "buttons";
-@import "forms";
-@import "nav";
-@import "overlays";
-@import "modals";
-@import "tables";
-@import "graphics";
-@import "sliders";
-@import "base";
-@import "survey";
-@import "helpers";
-@import "map";
-@import "animations";
+@import 'vendor/normalize-opentype';
+
+
+/* Settings
+   ========================================================================== */
+
+@import 'settings/variables';
+@import 'settings/functions';
+@import 'settings/mixins';
+
+
+/* Core
+   ========================================================================== */
+
+@import 'core/base';
+@import 'core/collecticons'; // Webfont icon library: Collecticons
+@import 'core/typography';
+@import 'core/tables';
+@import 'core/media';
+@import 'core/skins';
+@import 'core/animation';
+
 
 /* Global
    ========================================================================== */
 
-@import "global/drops";
+@import 'global/buttons';
+@import 'global/toolbar';
+@import 'global/forms';
+@import 'global/controls';
+@import 'global/drops';
+@import 'global/popovers';
+@import 'global/charts';
+@import 'global/labels';
+@import 'global/loading';
+@import 'global/page';
+@import 'global/inpage';
 
-// Climatescope's pages
-@import "pages/homepage";
-@import "pages/results";
-@import "pages/region";
-@import "pages/topic";
-@import "pages/updates";
+
+/* Home
+   ========================================================================== */
+
+@import 'home/global';
 
 
+/* Static
+   ========================================================================== */
 
-// Climatescope's blocks
-@import "sec-content";
+@import 'static/global';
 
-// Climatescope's print
-@import "print";
 
-// Vendor
-@import "vendor/react-tooltip";
-@import "vendor/react-paginate";
-@import "vendor/mapbox-gl";
+/* Results
+   ========================================================================== */
+
+@import 'results/global';
+@import 'results/hub';
+@import 'results/single';
+
+
+/* Library
+   ========================================================================== */
+
+@import 'library/global';
+
+
+/* Policies
+   ========================================================================== */
+
+@import 'policies/hub';
+@import 'policies/single';
+
+
+/* Policies
+   ========================================================================== */
+
+@import 'compare/global';
+
+
+/* Playground
+   ========================================================================== */
+
+@import 'playground/global';
+
+
+/* Core (...cont)
+   ========================================================================== */
+
+@import 'core/utilities';
+
+
+/* Vendor
+   ========================================================================== */
+
+@import 'vendor/react-tooltip';
+@import 'vendor/react-paginate';
+@import 'vendor/react-slider';
+@import 'vendor/mapbox-gl';

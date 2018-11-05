@@ -10,40 +10,40 @@ import { environment } from '../config'
 class NavGlobalMenu extends React.PureComponent {
   renderHeaderMenu () {
     return (
-      <ul className='global-menu'>
-        <li><Link to='/' title='Go home'>Home</Link></li>
-        <li><Link to='/results' title='The global index'>Results</Link></li>
-        <li className='dropdown'>
+      <ul className='global-menu' id='global-menu'>
+        <li className='global-menu__item'><Link to='/' title='View' className='global-menu__link'>Home</Link></li>
+        <li className='global-menu__item'><Link to='/results' title='View' className='global-menu__link'>Results</Link></li>
+        <li className='global-menu__item drop'>
           <Dropdown
-            className='dropdown-content'
+            className=''
             triggerElement='a'
-            triggerClassName='dropdown-toggle caret'
+            triggerClassName='drop__toggle drop__toggle--caret global-menu__link'
             triggerActiveClassName='button--active'
             triggerText='Insights & Tools'
             triggerTitle='Explore the Insights & Tools'
             direction='down'
-            alignment='center' >
-            <ul className='dropdown-menu'>
-              <li><Link data-hook='dropdown:close' to='/key-findings' title='View key findings'>Key Findings</Link></li>
-              <li><Link data-hook='dropdown:close' to='/library' title='View content library'>Content Library</Link></li>
+            alignment='right' >
+            <ul className='drop__menu'>
+              <li><Link data-hook='dropdown:close' to='/key-findings' title='View' className='drop__menu-item'>Key Findings</Link></li>
+              <li><Link data-hook='dropdown:close' to='/library' title='View' className='drop__menu-item'>Content Library</Link></li>
             </ul>
           </Dropdown>
         </li>
-        <li className='dropdown'>
+        <li className='global-menu__item'>
           <Dropdown
-            className='dropdown-content'
+            className=''
             triggerElement='a'
-            triggerClassName='dropdown-toggle caret'
+            triggerClassName='drop__toggle drop__toggle--caret global-menu__link'
             triggerActiveClassName='button--active'
             triggerText='About'
             triggerTitle='Explore Climatescope'
             direction='down'
-            alignment='center' >
-            <ul className='dropdown-menu'>
-              <li><Link data-hook='dropdown:close' to='/about' title='More about Climatescope'>Behind Climatescope</Link></li>
-              <li><Link data-hook='dropdown:close' to='/methodology' title='More about the methodology'>Methodology</Link></li>
-              <li><Link data-hook='dropdown:close' to='/license' title='About the license'>License</Link></li>
-              <li><Link data-hook='dropdown:close' to='/contact' title='Contact us'>Contact</Link></li>
+            alignment='right' >
+            <ul className='drop__menu'>
+              <li><Link data-hook='dropdown:close' to='/about' title='View' className='drop__menu-item'>Behind Climatescope</Link></li>
+              <li><Link data-hook='dropdown:close' to='/methodology' title='View' className='drop__menu-item'>Methodology</Link></li>
+              <li><Link data-hook='dropdown:close' to='/license' title='View' className='drop__menu-item'>License</Link></li>
+              <li><Link data-hook='dropdown:close' to='/contact' title='View' className='drop__menu-item'>Contact</Link></li>
             </ul>
           </Dropdown>
         </li>

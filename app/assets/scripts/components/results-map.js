@@ -1,14 +1,16 @@
 'use strict'
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
+import { render } from 'react-dom'
 import mapboxgl from 'mapbox-gl'
 import ReactTooltip from 'react-tooltip'
 import debounce from 'lodash.debounce'
-
-import { render } from 'react-dom'
+import isEqual from 'lodash.isequal'
 
 import { mbtoken, environment } from '../config'
-import { padNumber } from '../utils/utils'
+import { equalsIgnoreCase, padNumber } from '../utils/string'
+
+import MapPopover from './results-map-popover'
 
 // set once
 mapboxgl.accessToken = mbtoken
@@ -16,25 +18,25 @@ mapboxgl.accessToken = mbtoken
 /**
  * Create a maker to use on the map.
  * It adds over mouse events to show the marker tooltip. The marker passes
- * the country id to the tooltip which will be used to know what content to
+ * the geography iso to the tooltip which will be used to know what content to
  * render on the tooltip.
  *
- * @param {string} countryId Country id. This will be passes to the tooltip
+ * @param {string} geoId Geography id. This will be passes to the tooltip
  * @param {number} value Value to show on the marker. Optional. If not provided
  *                       the marker will not be highlighted
  *
  * @returns {node} DOM element to use as marker
  */
-const buildMarker = (countryId, value) => {
+const buildMarker = (geoId, value) => {
   const el = document.createElement('div')
   el.style.cursor = 'pointer'
 
   if (value) {
     render((
-      <div className='country-marker highlight' data-tip={countryId} data-for='marker-tip'>{padNumber(value, 3)}</div>
+      <div className='country-marker highlight' data-tip={geoId} data-for='marker-tip'>{padNumber(value, 2)}</div>
     ), el)
   } else {
-    render(<div className='country-marker' data-tip={countryId} data-for='marker-tip' />, el)
+    render(<div className='country-marker' data-tip={geoId} data-for='marker-tip' />, el)
   }
 
   // Add a property to the dom element containing the element to which the
@@ -56,22 +58,94 @@ const buildMarker = (countryId, value) => {
 }
 
 export default class ResultsMap extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.markers = []
+  }
+
   componentDidMount () {
     this.initMap()
+  }
+
+  componentDidUpdate (prevProps) {
+    if (!isEqual(this.props.highlightISO, prevProps.highlightISO)) {
+      this.setHighlightedGeographies(this.props.highlightISO)
+    }
+
+    if (this.mapLoaded && !isEqual(this.props.bounds, prevProps.bounds)) {
+      this.map.fitBounds(this.props.bounds)
+    }
+
+    if (!isEqual(this.props.data, prevProps.data)) {
+      this.renderMarkers()
+    }
+
+    if (!isEqual(this.props.meta, prevProps.meta)) {
+      this.renderMarkers()
+    }
+  }
+
+  setHighlightedGeographies (geographies) {
+    if (!this.mapLoaded) return
+    this.map.setFilter('ne-countries-highlight', ['in', 'ISO_A2', ...geographies])
+  }
+
+  renderMarkers () {
+    if (!this.mapLoaded || !this.props.data.length || !this.props.meta.length) return
+
+    // Clear previous markers.
+    this.markers.forEach(m => m.remove())
+
+    let highlightedMarkers = 0
+
+    const markersToAdd = this.props.data.reduce((acc, geo) => {
+      const currentGeo = this.props.meta.find(m => equalsIgnoreCase(m.iso, geo.iso))
+      if (!currentGeo) {
+        console.warn('Geography not found on meta data:', geo.iso)
+        return acc
+      }
+
+      // Only the first 10 with scores are big markers.
+      if (geo.score && highlightedMarkers < 10) {
+        highlightedMarkers++
+        const marker = new mapboxgl.Marker(buildMarker(geo.iso, geo.rank))
+          .setLngLat(currentGeo.center)
+        // If the marker is of the highlighted type add to the end of the array
+        // to ensure that it will be added later to the map staying on top.
+        return acc.concat(marker)
+      } else {
+        const marker = new mapboxgl.Marker(buildMarker(geo.iso))
+          .setLngLat(currentGeo.center)
+        // Add normal markers to the beginning on the array to ensure that
+        // they're added first to the map.
+        return [marker].concat(acc)
+      }
+    }, [])
+
+    // Add the markers to the map on the correct order.
+    this.markers = markersToAdd.map(m => {
+      return m.addTo(this.map)
+    })
+
+    // After the markers are rendered we need to rebind the react tooltips.
+    // This needs to be done on next tick or it won't work.
+    setTimeout(() => { ReactTooltip.rebuild() }, 1)
   }
 
   initMap () {
     this.map = new mapboxgl.Map({
       center: [0, 0],
       container: this.refs.mapEl,
-      style: 'mapbox://styles/devseed/cjnfxlqb408x82spm5qcnrpav',
-      minZoom: 2,
+      style: 'mapbox://styles/climatescope/cjnn8lhdz04252rqkmbu8uexz',
       zoom: 2,
       pitchWithRotate: false,
+      renderWorldCopies: false,
       dragRotate: false
     })
 
     window.map = this.map
+    window.ReactTooltip = ReactTooltip
 
     this.map.addControl(new mapboxgl.NavigationControl(), 'top-left')
 
@@ -89,78 +163,32 @@ export default class ResultsMap extends React.Component {
 
     this.map.on('load', () => {
       this.mapLoaded = true
+      this.map.setPaintProperty('background', 'background-opacity', 0)
+      this.map.setPaintProperty('ne-countries-highlight', 'fill-color', '#02A87C')
 
-      // TODO: Contruct markers dynamically.
-      const marker1 = buildMarker('BR', 8)
-      const marker2 = buildMarker('CD')
+      this.setHighlightedGeographies(this.props.highlightISO)
+      this.map.fitBounds(this.props.bounds)
 
-      new mapboxgl.Marker(marker1)
-        .setLngLat([-53.091638161221866, -10.781071947389492])
-        .addTo(this.map)
-      new mapboxgl.Marker(marker2)
-        .setLngLat([23.65005956282201, -2.878351386823894])
-        .addTo(this.map)
+      this.renderMarkers()
 
       // Call the map move event debouces with a leading execution to ensure
       // that the tooltip get's hidden as fast as possible.
       const onMapMove = () => {
-        // TODO: Hide markers dynamically.
-        ReactTooltip.hide(marker1.markerTip)
-        ReactTooltip.hide(marker2.markerTip)
+        this.markers.forEach(m => ReactTooltip.hide(m.markerTip))
       }
       this.map.on('move', debounce(onMapMove, 100, { leading: true, trailing: false }))
     })
   }
 
-  renderPopover () {
-    // TODO: Add marker popover content.
-    const popoverContent = (countryId) => {
-      return (
-        <article className='tooltip-inner'>
-          <header className='tooltip__header'>
-            <h1 className='tooltip__title'>
-              <a href='#' title='View country'>{countryId}</a>
-            </h1>
-            <em className='label-grid label-grid-on' data-title='On-grid'>
-              <span>On-grid</span>
-            </em>
-          </header>
-          <div className='tooltip__body'>
-            <dl className='params-legend'>
-              <dt>Global rank</dt>
-              <dd>9</dd>
-              <dt>Score</dt>
-              <dd>1.83</dd>
-              <dt className='param-1'>Fundamentals</dt>
-              <dd>2.15 <small>40%</small></dd>
-              <dt className='param-2'>Opportunities</dt>
-              <dd>1.99 <small>30%</small></dd>
-              <dt className='param-3'>Experience</dt>
-              <dd>2.04 <small>15%</small></dd>
-            </dl>
-            <a href='#' className='bttn bttn-cta go' title='View country'>View country</a>
-          </div>
-        </article>
-      )
-    }
-
-    return (
-      <ReactTooltip
-        id='marker-tip'
-        effect='solid'
-        type='custom'
-        delayHide={100}
-        className='tooltip-map'
-        getContent={popoverContent}
-      />
-    )
-  }
-
   render () {
     return (
       <>
-        <div id='index-viz' className='row--full intro' ref='mapEl' />
-        {this.renderPopover()}
+        <figure className='results-map-viz media'>
+          <div className='media__item' ref='mapEl'>
+            <MapPopover data={this.props.data} />
+          </div>
+          <figcaption className='media__caption'>Top and bottom ten geographies</figcaption>
+        </figure>
       </>
     )
   }
@@ -168,8 +196,9 @@ export default class ResultsMap extends React.Component {
 
 if (environment !== 'production') {
   ResultsMap.propTypes = {
-    fetchPage: T.func,
-    match: T.object,
-    page: T.object
+    highlightISO: T.array,
+    bounds: T.array,
+    data: T.array,
+    meta: T.array
   }
 }

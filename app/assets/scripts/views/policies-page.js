@@ -6,7 +6,8 @@ import { connect } from 'react-redux'
 
 import { environment } from '../config'
 import { fetchPolicy } from '../redux/policies'
-import { getFromState, wrapApiResult, reactNl2Br } from '../utils/utils'
+import { wrapApiResult, getFromState } from '../utils/utils'
+import { reactNl2Br } from '../utils/string'
 
 import App from './app'
 import UhOh from './uhoh'
@@ -98,10 +99,10 @@ class PolicyPage extends React.Component {
     )
   }
 
-  renderCountries (policy) {
+  renderGeographies (policy) {
     return (
       <section className='blk'>
-        <h1>Countries</h1>
+        <h1>Geographies</h1>
         <ul>
           {policy.country.map(country => (
             <li key={country.name}>{country.name}</li>
@@ -174,41 +175,43 @@ class PolicyPage extends React.Component {
     }
 
     return (
-      <App>
-        <article className='layout--entry policies'>
-          <header className='layout--entry__header'>
-            <div className='row--contained'>
-              <div className='layout--entry__heading'>
-                <h1 className='layout--entry__title'>
+      <App pageTitle='Policy' >
+        <article className='inpage inpage--single inpage--policies'>
+          <header className='inpage__header'>
+            <div className='inner'>
+              <div className='inpage__headline'>
+                <p className='inpage__subtitle'>
+                  <Link to='/policies' title='Browse the policy database'><span>View all policies</span></Link>
+                </p>
+                <h1 className='inpage__title'>
                   {isReady() ? policy.name : <LoadingSkeleton size='large' type='heading' inline />}
                 </h1>
-                <p className='layout--entry__subtitle'>
-                  <Link to='/policies' title='Browse the policy database'>Policies</Link>
-                </p>
               </div>
-              <div className='layout--entry__tools'>
-                <ul className='actions-menu'>
-                  <li><ShareOptions url={window.location.toString()} /></li>
-                </ul>
+              <div className='inpage__actions'>
+                <ShareOptions url={window.location.toString()} />
               </div>
             </div>
           </header>
 
-          <div className='layout--entry__body'>
+          <div className='inpage__body'>
             {isReady() ? (
-              <div className='row--contained'>
-                <div className='col--main'>
+              <div className='inner'>
+                <div className='col col--main prose'>
                   {this.renderOverview(policy)}
                   {this.renderPolicyActions(policy)}
                   {this.renderSubsectors(policy)}
                 </div>
-                <div className='col--sec'>
-                  {this.renderCountries(policy)}
+                <div className='col--sec prose'>
+                  {this.renderGeographies(policy)}
                   {this.renderAttributes(policy)}
                 </div>
               </div>
             ) : (
-              this.renderLoadingSkeleton()
+              <div className='inner'>
+                <div className='col col--full prose'>
+                  {this.renderLoadingSkeleton()}
+                </div>
+              </div>
             )}
           </div>
 

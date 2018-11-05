@@ -246,7 +246,7 @@ export default class Dropdown extends React.Component {
         // targetAttachment is the trigger
         targetAttachment={tetherTargetAttachment}
         constraints={[{
-          to: 'scrollParent',
+          to: 'window',
           attachment: 'together'
         }]}>
         {this.renderTriggerElement()}

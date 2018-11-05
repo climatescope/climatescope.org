@@ -3,27 +3,16 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { Link } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
+import orderBy from 'lodash.orderby'
 import c from 'classnames'
 
 import { environment } from '../config'
-import { initializeArrayWithRange, padNumber } from '../utils/utils'
 import { LoadingSkeleton } from './loading-skeleton'
-
-const ParameterGraph = ({ parameters }) => (
-  <div className='table-graph'>
-    <ul className='table-bar' data-tip='countryid' data-for='param-graph-tooltip'>
-      {parameters.map(param => (
-        <li key={param.id} className={`param-${param.id}`} style={{ width: '20%' }}><span className='visually-hidden'>10</span>&nbsp;</li>
-      ))}
-    </ul>
-  </div>
-)
-
-if (environment !== 'production') {
-  ParameterGraph.propTypes = {
-    parameters: T.array
-  }
-}
+import OnGrid from './on-grid'
+import { ParameterGraph, ParameterBreakdown } from './parameters'
+import { padNumber } from '../utils/string'
+import { round } from '../utils/math'
+import { initializeArrayWithRange } from '../utils/array'
 
 export default class ResultsTable extends React.PureComponent {
   componentDidUpdate () {
@@ -32,8 +21,14 @@ export default class ResultsTable extends React.PureComponent {
 
   onSort (field, e) {
     e.preventDefault()
-    const { sortDirection, onSort } = this.props
-    onSort(field, sortDirection === 'asc' ? 'desc' : 'asc')
+    const { sortField, sortDirection, onSort } = this.props
+    if (sortField === field) {
+      // Same field, change direction.
+      onSort(sortField, sortDirection === 'asc' ? 'desc' : 'asc')
+    } else {
+      // Different fields, reset direction.
+      onSort(field, 'asc')
+    }
   }
 
   renderTableHeader () {
@@ -42,10 +37,10 @@ export default class ResultsTable extends React.PureComponent {
         id: 'rank',
         sortable: true,
         title: 'Sort by rank',
-        value: 'Global rank'
+        value: 'Rank'
       },
       {
-        id: 'geography',
+        id: 'name',
         sortable: true,
         title: 'Sort by geography',
         value: 'Geography'
@@ -56,11 +51,6 @@ export default class ResultsTable extends React.PureComponent {
         title: 'Sort by score',
         value: 'Score'
       },
-      // {
-      //   id: 'trend',
-      //   sortable: false,
-      //   value: 'Trend'
-      // },
       {
         id: 'graph',
         sortable: false,
@@ -81,10 +71,10 @@ export default class ResultsTable extends React.PureComponent {
             if (!o.sortable) return <th className={`th-${o.id}`} key={o.id}>{o.value}</th>
 
             const { sortField, sortDirection } = this.props
-            const klass = c('sort', {
-              'sort-none': sortField !== o.id,
-              'sort-asc': sortField === o.id && sortDirection === 'asc',
-              'sort-desc': sortField === o.id && sortDirection === 'desc'
+            const klass = c('table__sort', {
+              'table__sort--none': sortField !== o.id,
+              'table__sort--asc': sortField === o.id && sortDirection === 'asc',
+              'table__sort--desc': sortField === o.id && sortDirection === 'desc'
             })
             return <th className={`th-${o.id}`} key={o.id}><a href='#' title={o.title} className={klass} onClick={this.onSort.bind(this, o.id)}>{o.value}</a></th>
           })}
@@ -105,40 +95,58 @@ export default class ResultsTable extends React.PureComponent {
   }
 
   renderRows () {
-    const rows = initializeArrayWithRange(105)
-    return rows.map(r => {
+    const { data, sortField, sortDirection } = this.props
+    const rows = orderBy(data, sortField, sortDirection)
+
+    return rows.map(({ iso, score, rank, name, topics, grid }) => {
+      const hasScore = !!score
+
       return (
-        <tr key={r}>
-          <td className='cell-rank'>{padNumber(r + 1, 3)}</td>
-          <td className='cell-country'>
-            <Link to='' title='Go to geography page'>Geography Name</Link>
-          </td>
-          <td>3.25</td>
-          {/* <td className='cell-trendline'>¿trendline?</td> */}
+        <tr key={iso}>
+          <th className='cell-rank'>{hasScore ? padNumber(rank, 2) : '--'}</th>
+          <th className='cell-country'>
+            <Link to={`/results/${iso}`} title={`Go to ${name} page`}>{name}</Link>
+          </th>
+          <td>{hasScore ? round(score) : '--'}</td>
           <td>
             <ParameterGraph
-              parameters={[{ id: 1 }, { id: 2 }, { id: 3 }]}
+              geographyIso={iso}
+              data={topics || []}
             />
           </td>
-          <td><em data-title='on-grid' className='label-grid label-grid-on'><span>on</span></em></td>
+          <td>
+            <OnGrid grid={grid} />
+          </td>
         </tr>
       )
     })
   }
 
   renderParamGraphTooltip () {
-    const popoverContent = (countryId) => {
+    const popoverContent = (geographyIso) => {
+      const geography = this.props.data.find(c => c.iso === geographyIso)
+      if (!geography) return null
+
+      const hasTopics = geography.topics && geography.topics.length
+
       return (
-        <article className='tooltip-inner'>
-          <dl className='params-legend'>
-            <dt className='param-1'>Fundamentals</dt>
-            <dd>3.00<small>20%</small></dd>
-            <dt className='param-2'>Opportunities</dt>
-            <dd>3.20<small>20%</small></dd>
-            <dt className='param-3'>Experience</dt>
-            <dd>3.40<small>20%</small></dd>
-          </dl>
-        </article>
+        <div className='popover__contents'>
+          <header className='popover__header visually-hidden'>
+            <div className='popover__headline'>
+              <h1 className='popover__title'>Topic breakdown</h1>
+            </div>
+          </header>
+          <div className='popover__body'>
+            {hasTopics ? (
+              <ParameterBreakdown
+                className='legend par-legend'
+                data={geography.topics}
+              />
+            ) : (
+              <p>There is no data for this geography.</p>
+            )}
+          </div>
+        </div>
       )
     }
 
@@ -147,7 +155,8 @@ export default class ResultsTable extends React.PureComponent {
         id='param-graph-tooltip'
         effect='solid'
         type='custom'
-        className='tooltip'
+        className='popover popover--table'
+        wrapper='article'
         getContent={popoverContent}
       />
     )
@@ -156,7 +165,7 @@ export default class ResultsTable extends React.PureComponent {
   render () {
     return (
       <>
-        <table className='table country-table'>
+        <table className='table results-table'>
           {this.renderTableHeader()}
           <tbody>
             {
@@ -174,9 +183,10 @@ export default class ResultsTable extends React.PureComponent {
 
 if (environment !== 'production') {
   ResultsTable.propTypes = {
+    onSort: T.func,
     sortField: T.string,
     sortDirection: T.string,
-    loading: T.bool,
-    onSort: T.func
+    data: T.array,
+    loading: T.bool
   }
 }

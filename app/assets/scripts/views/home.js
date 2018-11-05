@@ -6,33 +6,43 @@ import { Link } from 'react-router-dom'
 import c from 'classnames'
 
 import { environment, baseurl } from '../config'
-import { shuffleArray } from '../utils/utils'
 
 import App from './app'
 
 class Home extends React.Component {
   render () {
     return (
-      <App>
-        <section className='layout--home'>
-          <header className='layout--home__header visually-hidden'>
-            <div className='row--contained'>
-              <div className='layout--home__heading'>
-                <h1 className='layout--home__title'>Home</h1>
+      <App className='page--has-hero'>
+        <section className='inpage inpage--home'>
+          <header className='inpage__header'>
+            <div className='inner'>
+              <div className='inpage__headline'>
+                <h1 className='inpage__title'>Which emerging market is most atractive for clear energy investment?</h1>
+                <p><Link to='/results' className='home-cta-button' title='View results'><span>Find out</span></Link></p>
               </div>
             </div>
+
+            <figure className='inpage__hero inpage__hero--cover'>
+              <div className='inpage__hero-item'>
+                <img src='../assets/graphics/layout/hero--cover.jpg' width='1920' height='1280' alt='Illustration' />
+              </div>
+              <figcaption className='inpage__hero-caption'>
+                <a href='https://landsat.visibleearth.nasa.gov/view.php?id=92412' data-tip="Image by NASA's Landsat Then and Now" data-for='popover-compact' className='info'><span>Image by NASA's Landsat Then and Now</span></a>
+              </figcaption>
+            </figure>
+
           </header>
 
-          <div className='layout--home__body'>
-            <div className='row--contained'>
-              <div className='featured-col featured-col--main'>
+          <div className='inpage__body'>
+            <div className='inner'>
+              <div className='col--main'>
 
                 <section className='featured-section'>
                   <h1 className='featured-section__title'>Insights</h1>
                   <div className='featured-section__body'>
 
                     <ol className='entry-list'>
-                      <li>
+                      <li className='entry-list__item'>
                         <article className='entry entry--short update'>
                           <div className='entry__contents'>
                             <header className='entry__header'>
@@ -54,7 +64,7 @@ class Home extends React.Component {
                 </section>
               </div>
 
-              <div className='featured-col featured-col--sec'>
+              <div className='col--sec'>
                 <ToolsList />
               </div>
 
@@ -126,7 +136,7 @@ class ToolsList extends React.PureComponent {
       }
     ]
 
-    this.tools = shuffleArray(toolsList).slice(0, 3)
+    this.tools = toolsList.slice(0, 3)
   }
 
   render () {

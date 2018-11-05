@@ -1,0 +1,137 @@
+/* ==========================================================================
+   Results: single
+   ========================================================================== */
+
+.inpage--results.inpage--single {
+  .inpage__title {
+    margin-bottom: $global-spacing * 3;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+  }
+
+  .inpage__body {
+    padding: 0;
+  }
+
+  .inpage__actions {
+    padding: 0;
+    margin-left: auto;
+    align-self: flex-end;
+  }
+
+  [class^="ipa-"],
+  [class*=" ipa-"] {
+    @include media(large-down) {
+      padding-left: 0;
+      padding-right: 0;
+
+      &::before {
+        margin: 0;
+      }
+
+      span {
+        font-size: 0;
+      }
+    }
+  }
+}
+
+.par-section {
+  padding: ($global-spacing * 4) 0;
+
+  &:nth-child(odd) {
+    background: #fff;
+  }
+
+  &:nth-child(even) {
+    background: tint($base-color, 96%);
+  }
+}
+
+.par-section__contents {
+  @extend .row, .row--centered;
+  display: grid;
+  grid-gap: $global-spacing * 2;
+}
+
+.par-section--linear {
+  .area-beta {
+    display: grid;
+    grid-gap: $global-spacing * 2;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media(large-up) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+.par-section--split {
+  .area-alpha,
+  .area-beta {
+    display: grid;
+    grid-gap: $global-spacing * 2;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media(large-up) {
+    .par-section__contents {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .area-alpha,
+    .area-beta {
+      display: block;
+
+      > *:not(:last-child) {
+        margin-bottom: $global-spacing * 2;
+      }
+    }
+
+    .area-alpha {
+      grid-column: auto / span 3;
+    }
+
+    .area-beta {
+      grid-column-start: 4;
+    }
+  }
+}
+
+.par-section__header {
+  grid-column: auto / span 3;
+  grid-row: span 1;
+}
+
+.par-section__title {
+  @include heading(1.75rem); // 28px
+  text-transform: none;
+}
+
+.par-section__description {
+  color: tint($base-color, 48%);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/* Card organization
+   ========================================================================== */
+
+#section-clean-enery-policy {
+  .info-card-1 {
+
+  }
+
+  .info-card-2 {
+    // grid-column-start: 4;
+    // grid-row-start: 1;
+  }
+
+  .info-card-3 {
+
+  }
+}

@@ -9,10 +9,16 @@
 
  .__react_component_tooltip {
   z-index: 99999 !important;
+  pointer-events: auto !important;
+  padding: 0 !important;
 
   &.show {
     opacity: 1 !important;
   }
+}
+
+.__react_component_tooltip.place-top {
+  margin-top: -0.5rem;
 }
 
 .__react_component_tooltip.type-dark {

@@ -8,69 +8,31 @@
  */
 
 .pagination {
-  @extend .clearfix;
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: $global-spacing * 2;
-
-  > li {
-    float: left;
-  }
+  display: flex;
+  justify-content: center;
 
   .previous a,
   .next a {
-    @extend .bttn, .bttn-default;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  .previous a {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .next a {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  .pages {
-    @extend .clearfix;
-
-    &__wrapper {
-      float: left;
-
-      &.active .pages__page {
-        @extend .bttn-default:active;
-      }
-
-      .pages__page {
-        @extend .bttn, .bttn-default;
-        border-radius: 0;
-      }
-    }
-  }
-
-  .break {
-    .pages__page {
-      @extend .bttn;
-      border-radius: 0;
-      background: tint($base-color, 92%);
-      opacity: 1;
-      pointer-events: none;
-    }
+    @extend .button, .button--base-plain;
   }
 
   li.disabled a {
-    @extend .bttn.disabled;
+    @extend .disabled;
   }
 }
 
-.pagination-wrapper {
-  text-align: center;
-  .pagination {
-    display: inline-block;
-    margin-bottom: 0;
+.pages__page {
+  @extend .button, .button--base-plain;
+
+  .active & {
+    @extend .button--active, .button--base-raised-semidark;
+  }
+
+  .break & {
+    opacity: 1;
+    pointer-events: none;
   }
 }

@@ -15,6 +15,8 @@ import Policies from './views/policies-hub'
 import Policy from './views/policies-page'
 import Results from './views/results'
 import Compare from './views/compare'
+import Geography from './views/geographies-page'
+import Playground from './views/playground'
 import UhOh from './views/uhoh'
 
 // Root component. Used by the router.
@@ -24,10 +26,12 @@ const Root = () => (
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route exact path='/results' component={Results}/>
+        <Route exact path='/results/:geoIso' component={Geography}/>
         <Route exact path='/library' component={Library}/>
-        <Route path='/compare/:country*' component={Compare}/>
+        <Route path='/compare/:geoIsos*' component={Compare}/>
         <Route exact path='/policies/:policyId' component={Policy}/>
         <Route exact path='/policies' component={Policies}/>
+        <Route exact path='/playground' component={Playground}/>
         <Route exact path='/:page' component={StaticPage}/>
         <Route path='*' component={UhOh} />
       </Switch>
