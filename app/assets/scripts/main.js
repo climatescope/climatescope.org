@@ -8,6 +8,8 @@ import { Router, Route, Switch } from 'react-router-dom'
 import store from './utils/store'
 import history from './utils/history'
 
+import RedirectRoute from './redirect-route'
+
 import Home from './views/home'
 import StaticPage from './views/static-page'
 import Library from './views/library'
@@ -24,6 +26,7 @@ const Root = () => (
   <Provider store={store}>
     <Router history={history}>
       <Switch>
+        <RedirectRoute path='/en/:path*' />
         <Route exact path='/' component={Home}/>
         <Route exact path='/results' component={Results}/>
         <Route exact path='/results/:geoIso' component={Geography}/>
