@@ -39,22 +39,22 @@ class Home extends React.Component {
                 <section className='featured-section'>
                   <h1 className='featured-section__title'>Insights</h1>
                   <div className='featured-section__body'>
-                    <ol className='entry-list'>
-                      <li className='entry-list__item'>
-                        <article className='entry entry--short update'>
-                          <div className='entry__contents'>
-                            <header className='entry__header'>
-                              <p className='entry__subtitle'>Read the update: date</p>
-                              <a href='' title='View more' className='link-wrapper'>
-                                <h1 className='entry__title'>Entry title</h1>
-                              </a>
+                    <ol className='card-list'>
+                      <li className='card-list__item'>
+                        <article className='card card--short insight'>
+                          <a href='#' title='View more'className='card__contents'>
+                            <header className='card__header'>
+                              <div className='card__headline'>
+                                <p className='card__subtitle'>Explore the Report</p>
+                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
+                              </div>
                             </header>
-                            <div className='entry__body'>
-                              <div className='entry__prose'>
-                                <p>The data for this list will come from Medium</p>
+                            <div className='card__body'>
+                              <div className='card__prose'>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
                               </div>
                             </div>
-                          </div>
+                          </a>
                         </article>
                       </li>
                     </ol>
@@ -62,7 +62,7 @@ class Home extends React.Component {
                 </section>
               </div>
               <div className='col--sec'>
-                <ToolsList />
+                <p>Twitter feed.</p>
               </div>
             </div>
             <section className='fold fold--editions'>

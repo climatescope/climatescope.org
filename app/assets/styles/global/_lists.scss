@@ -2,6 +2,26 @@
    Global: lists
    ========================================================================== */
 
+/* Card list
+   ========================================================================== */
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: ($global-spacing * 2) ($global-spacing * 2);
+
+  > * {
+    grid-column: auto / span 4;
+  }
+}
+
+
+/* Logo list
+   ========================================================================== */
+
 .logo-list {
   list-style: none;
   padding: 0;
