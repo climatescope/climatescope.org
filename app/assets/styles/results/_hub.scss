@@ -221,3 +221,10 @@
     margin: 0.125rem 0;
   }
 }
+
+.popover__body .empty {
+  @extend .heading-alt;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: tint($base-color, 56%);
+}

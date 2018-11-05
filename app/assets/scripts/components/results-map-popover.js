@@ -112,13 +112,13 @@ class MapPopoverContent extends React.PureComponent {
             </ParameterBreakdown>
           ) : (
             <>
-              <dl className='params-legend'>
+              <dl className='legend par-legend'>
                 <dt>Global rank</dt>
                 <dd>--</dd>
                 <dt>Score</dt>
                 <dd>--</dd>
               </dl>
-              <p>There is no data for this geography.</p>
+              <p className='empty'>There is no data for this geography</p>
             </>
           )}
         </div>
