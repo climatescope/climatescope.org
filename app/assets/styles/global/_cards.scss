@@ -8,7 +8,6 @@
   font-size: $base-font-size;
   line-height: $base-line-height;
   text-align: left;
-
   flex: 1;
   min-width: 0;
 
@@ -112,7 +111,7 @@ a.card__contents {
 
 .card__header {
   display: flex;
-  margin-bottom: $global-spacing * 3;
+  margin-bottom: $global-spacing * 2.5;
   align-items: flex-start;
 
   > *:not(:first-child) {
@@ -150,9 +149,9 @@ a.card__contents {
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: $heading-font-bold;
-  margin: $global-spacing 0;
+  margin: 0.75rem 0;
 
-  a.card__contents & {
+  a & {
     color: $link-color;
   }
 
@@ -182,7 +181,7 @@ a.card__contents {
 .card__prose {
   font-size: 1rem;
   line-height: 1.5rem;
-  color: tint($base-color, 48%);
+  opacity: 0.80;
 
   > *:last-child {
     margin-bottom: 0;
@@ -199,6 +198,16 @@ a.card__contents {
   }
 }
 
+.card__go-link {
+  @extend .button, .button--small, .button--base-plain;
+  margin-left: -0.5rem;
+
+  &::after {
+    @extend %collecticon-sm-chevron-right;
+    margin-left: 0.125rem;
+  }
+}
+
 
 /* Card header toolbar
    ========================================================================== */
@@ -207,4 +216,25 @@ a.card__contents {
   @extend .toolbar, .toolbar--small;
   justify-content: flex-end;
   flex: 1 1 auto;
+}
+
+
+/* Card modifiers
+   ========================================================================== */
+
+.card--featured {
+  @extend .antialiased;
+  color: #fff;
+
+  .card__contents {
+    background: $primary-color;
+  }
+
+  .card__go-link {
+    @extend .button--achromic-plain;
+  }
+}
+
+.card--featured a .card__subtitle {
+  color: inherit;
 }

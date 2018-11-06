@@ -3,6 +3,10 @@
    ========================================================================== */
 
 .inpage--home {
+  .inpage__header {
+    box-shadow: none;
+  }
+
   .inpage__title {
     @include heading(2.5rem, xlarge-up);
     text-transform: none;
@@ -27,6 +31,40 @@
 
 .home-cta-button {
   @extend .button, .button--xlarge, .button--achromic-glass;
+}
+
+
+/* Featured sections
+   ========================================================================== */
+
+.fsection__title {
+  @include heading(1.5rem);
+  margin-bottom: $global-spacing * 2;
+}
+
+.topics-list {
+  list-style: none;
+  margin: 0 0 $global-spacing 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.25rem;
+
+  > * {
+    margin: 0 ($global-spacing / 4) ($global-spacing / 4) 0;
+  }
+}
+
+.topic-link {
+  @extend .label, .label--reversed;
+  vertical-align: top;
+  font-size: 0.75rem;
+
+  .card--featured & {
+    color: #fff !important;
+  }
 }
 
 

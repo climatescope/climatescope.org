@@ -36,33 +36,161 @@ class Home extends React.Component {
           <div className='inpage__body'>
             <div className='inner'>
               <div className='col--main'>
-                <section className='featured-section'>
-                  <h1 className='featured-section__title'>Insights</h1>
-                  <div className='featured-section__body'>
-                    <ol className='card-list'>
-                      <li className='card-list__item'>
-                        <article className='card card--short insight'>
-                          <a href='#' title='View more'className='card__contents'>
-                            <header className='card__header'>
-                              <div className='card__headline'>
+                <section className='fsection'>
+                  <h1 className='fsection__title'>Insights</h1>
+                  <ol className='card-list'>
+                    <li className='card-list__item'>
+                      <article className='card card--short card--featured insight'>
+                        <div className='card__contents'>
+                          <header className='card__header'>
+                            <div className='card__headline'>
+                              <a href='#' title='Read insight' className='link-wrapper'>
                                 <p className='card__subtitle'>Explore the Report</p>
                                 <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
-                              </div>
-                            </header>
-                            <div className='card__body'>
-                              <div className='card__prose'>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                              </div>
+                              </a>
                             </div>
-                          </a>
-                        </article>
-                      </li>
-                    </ol>
-                  </div>
+                          </header>
+                          <div className='card__body'>
+                            <div className='card__prose'>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                            </div>
+                          </div>
+                          <footer>
+                            <h2 className='visually-hidden'>Topics</h2>
+                            <ul className='topics-list'>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
+                            </ul>
+                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
+                          </footer>
+                        </div>
+                      </article>
+                    </li>
+
+                    <li className='card-list__item'>
+                      <article className='card card--short insight'>
+                        <div className='card__contents'>
+                          <header className='card__header'>
+                            <div className='card__headline'>
+                              <a href='#' title='Read insight' className='link-wrapper'>
+                                <p className='card__subtitle'>Explore the Report</p>
+                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
+                              </a>
+                            </div>
+                          </header>
+                          <div className='card__body'>
+                            <div className='card__prose'>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                            </div>
+                          </div>
+                          <footer>
+                            <h2 className='visually-hidden'>Topics</h2>
+                            <ul className='topics-list'>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
+                            </ul>
+                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
+                          </footer>
+                        </div>
+                      </article>
+                    </li>
+
+                    <li className='card-list__item'>
+                      <article className='card card--short insight'>
+                        <div className='card__contents'>
+                          <header className='card__header'>
+                            <div className='card__headline'>
+                              <a href='#' title='Read insight' className='link-wrapper'>
+                                <p className='card__subtitle'>Explore the Report</p>
+                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
+                              </a>
+                            </div>
+                          </header>
+                          <div className='card__body'>
+                            <div className='card__prose'>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                            </div>
+                          </div>
+                          <footer>
+                            <h2 className='visually-hidden'>Topics</h2>
+                            <ul className='topics-list'>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
+                            </ul>
+                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
+                          </footer>
+                        </div>
+                      </article>
+                    </li>
+
+                    <li className='card-list__item'>
+                      <article className='card card--short insight'>
+                        <div className='card__contents'>
+                          <header className='card__header'>
+                            <div className='card__headline'>
+                              <a href='#' title='Read insight' className='link-wrapper'>
+                                <p className='card__subtitle'>Explore the Report</p>
+                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
+                              </a>
+                            </div>
+                          </header>
+                          <div className='card__body'>
+                            <div className='card__prose'>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                            </div>
+                          </div>
+                          <footer>
+                            <h2 className='visually-hidden'>Topics</h2>
+                            <ul className='topics-list'>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
+                            </ul>
+                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
+                          </footer>
+                        </div>
+                      </article>
+                    </li>
+
+                    <li className='card-list__item'>
+                      <article className='card card--short insight'>
+                        <div className='card__contents'>
+                          <header className='card__header'>
+                            <div className='card__headline'>
+                              <a href='#' title='Read insight' className='link-wrapper'>
+                                <p className='card__subtitle'>Explore the Report</p>
+                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
+                              </a>
+                            </div>
+                          </header>
+                          <div className='card__body'>
+                            <div className='card__prose'>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                            </div>
+                          </div>
+                          <footer>
+                            <h2 className='visually-hidden'>Topics</h2>
+                            <ul className='topics-list'>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
+                              <li><a href='#' class="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
+                            </ul>
+                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
+                          </footer>
+                        </div>
+                      </article>
+                    </li>
+                  </ol>
                 </section>
               </div>
               <div className='col--sec'>
-                <p>Twitter feed.</p>
+                <section className='fsection'>
+                  <h1 className='fsection__title'>Tweets</h1>
+                  <p>Twitter feed.</p>
+                </section>
               </div>
             </div>
             <section className='fold fold--editions'>

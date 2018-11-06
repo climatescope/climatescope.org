@@ -12,9 +12,14 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: ($global-spacing * 2) ($global-spacing * 2);
+  justify-items: stretch;
 
   > * {
     grid-column: auto / span 4;
+  }
+
+  .card {
+    height: 100%;
   }
 }
 
