@@ -3,6 +3,7 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { CSSTransition } from 'react-transition-group'
 import isEqual from 'lodash.isequal'
+import memoize from 'lodash.memoize'
 import { area, line } from 'd3-shape'
 import { select, mouse } from 'd3-selection'
 import { axisBottom, axisLeft } from 'd3-axis'
@@ -611,3 +612,14 @@ export const computeAreaChartData = (data, passThrough) => {
     yLabel: data.meta['label-y']
   }
 }
+
+/**
+ * Memoized version of computeAreaChartData
+ *
+ * @see computeAreaChartData()
+ *
+ * @param {array} data Data as coming from the api
+ * @param {array} passThrough Types to keep. The other will be merged into others.
+ * @param {string} cacheKey Unique cache key for the memoization
+ */
+export const memoizedComputeAreaChartData = memoize(computeAreaChartData, (data, pass, cacheKey) => cacheKey)

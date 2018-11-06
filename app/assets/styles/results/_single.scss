@@ -49,6 +49,14 @@
   }
 }
 
+.par-section-loading {
+  @extend .row, .row--centered;
+
+  *:last-child {
+    margin-bottom: 0
+  }
+}
+
 /*
   Define the grid areas according to the type of section we have and the
   media query.
