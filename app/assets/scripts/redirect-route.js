@@ -8,6 +8,22 @@ import { environment } from './config'
 import UhOh from './views/uhoh'
 
 const redirectPaths = {
+  // Static:
+  '/en': '/',
+  '/en/results': '/results',
+  '/en/contact': '/contact',
+  '/en/about': '/about',
+  '/en/methodology': '/methodology',
+  '/en/license': '/license',
+  '/en/compare': '/compare',
+  '/en/off-grid-data-hub': '/off-grid-data-hub',
+  '/en/clean-energy-investments': '/clean-energy-investments',
+  '/en/capacity-generation': '/capacity-generation',
+  '/en/policies': '/policies',
+  '/en/download': '/library',
+  '/en/summary': '/key-findings',
+
+  // Countries:
   '/en/country/argentina': '/results/ar',
   '/en/country/armenia': '/results/am',
   '/en/country/azerbaijan': '/results/az',
@@ -94,7 +110,7 @@ export default function RedirectRoute () {
       return null
     }
 
-    return <Redirect push to={match} />
+    return <Redirect to={match} />
   }} />
 }
 

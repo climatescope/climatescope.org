@@ -26,7 +26,7 @@ const Root = () => (
   <Provider store={store}>
     <Router history={history}>
       <Switch>
-        <RedirectRoute path='/en/:path*' />
+        <RedirectRoute path='/en(/:path*)?' />
         <Route exact path='/' component={Home}/>
         <Route exact path='/results' component={Results}/>
         <Route exact path='/results/:geoIso' component={Geography}/>
