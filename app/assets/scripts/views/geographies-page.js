@@ -13,6 +13,8 @@ import { environment } from '../config'
 import { fetchGeography, fetchGeographiesMeta, fetchChartsMeta } from '../redux/geographies'
 import { equalsIgnoreCase } from '../utils/string'
 import { wrapApiResult, getFromState } from '../utils/utils'
+import { initializeArrayWithRange } from '../utils/array'
+import { round } from '../utils/math'
 
 import App from './app'
 import ShareOptions from '../components/share'
@@ -194,6 +196,31 @@ class Geography extends React.Component {
     return memoizedComputeAreaChartData(chart, renewableTypes, `${title}-${receivedAt}`)
   }
 
+  renderProfile () {
+    const { isReady, getData } = this.props.geography
+    const geography = getData()
+
+    return (
+      <ul className='inpage__details'>
+        {isReady() ? (
+          geography.profile.map(o => (
+            <li key={o.id}>
+              <strong>{round(o.value)}<sub>{o.unit}</sub></strong>
+              <span>{o.name}</span>
+            </li>
+          ))
+        ) : (
+          initializeArrayWithRange(5).map(o => (
+            <li key={o}>
+              <strong><LoadingSkeleton theme='light' size='large' width={3 / 4} /></strong>
+              <span><LoadingSkeleton theme='light' size='small' width={1 / 3} /></span>
+            </li>
+          ))
+        ) }
+      </ul>
+    )
+  }
+
   render () {
     const { isReady, hasError, getData } = this.props.geography
     const geography = getData()
@@ -215,41 +242,10 @@ class Geography extends React.Component {
                   <Link to='/results' title='View results page'>View all markets</Link>
                 </p>
                 <h1 className='inpage__title'>
-                  {isReady() ? geography.name : <LoadingSkeleton size='large' type='heading' inline />}
+                  {isReady() ? geography.name : <LoadingSkeleton theme='light' size='large' type='heading' inline />}
                   {isReady() && <OnGrid grid={geography.grid} theme='negative' noTip />}
                 </h1>
-
-                <ul className='inpage__details'>
-                  <li>
-                    <strong>26.28<sub>$Bn</sub></strong>
-                    <span>GDP</span>
-                  </li>
-                  <li>
-                    <strong>41.49<sub>M</sub></strong>
-                    <span>Population</span>
-                  </li>
-                  <li>
-                    <strong>18<sub>%</sub></strong>
-                    <span>Share of emissions from the heat and power sector</span>
-                  </li>
-
-                  <li>
-                    <strong>41.49<sub>M</sub></strong>
-                    <span>Population</span>
-                  </li>
-                  <li>
-                    <strong>18<sub>%</sub></strong>
-                    <span>Share of emissions from the heat and power sector</span>
-                  </li>
-                  <li>
-                    <strong>41.49<sub>M</sub></strong>
-                    <span>Population</span>
-                  </li>
-                  <li>
-                    <strong>18<sub>%</sub></strong>
-                    <span>Share of emissions from the heat and power sector</span>
-                  </li>
-                </ul>
+                {this.renderProfile()}
               </div>
             </div>
             <GeographyMap
