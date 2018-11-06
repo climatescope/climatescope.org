@@ -20,14 +20,14 @@
   height: 1rem;
   width: 100%;
   animation: pulse 0.8s ease 0s infinite alternate;
+
+  &.lsk__item--light {
+    background: rgba(#fff, 0.48);
+  }
 }
 
 .lsk__item--large {
   height: 2.25rem;
-}
-
-.lsk__item--heading {
-  background: rgba($base-color, 0.08);
 }
 
 
