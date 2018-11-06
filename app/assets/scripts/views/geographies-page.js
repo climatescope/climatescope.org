@@ -17,14 +17,13 @@ import { initializeArrayWithRange } from '../utils/array'
 import { round } from '../utils/math'
 
 import App from './app'
-import ShareOptions from '../components/share'
 import UhOh from './uhoh'
-import Dropdown from '../components/dropdown'
 import GeographyMap from '../components/geography-map'
 import { ParSection, ParSectionHeader, AreaBeta, AreaAlpha, ParCard } from '../components/geography-params'
 import { LoadingSkeleton } from '../components/loading-skeleton'
 import AreaChart, { computeAreaChartData } from '../components/area-chart'
 import OnGrid from '../components/on-grid'
+import NavBar from '../components/geography-nav-bar'
 
 configureAnchors({ offset: -76 })
 
@@ -37,106 +36,6 @@ const renewableTypes = [
   'Solar',
   'Wind'
 ]
-
-class NavBar extends React.PureComponent {
-  constructor (props) {
-    super(props)
-
-    this.menuItems = [
-      {
-        id: 'power-market',
-        title: 'Jump to section Power Market',
-        label: 'Power Market'
-      },
-      {
-        id: 'clean-energy-policy',
-        title: 'Jump to section Clean Energy Policy',
-        label: 'Clean Energy Policy'
-      },
-      {
-        id: 'clean-energy-investment',
-        title: 'Jump to section Clean Energy Investment',
-        label: 'Clean Energy Investment'
-      },
-      {
-        id: 'price-environment',
-        title: 'Jump to section Price environment',
-        label: 'Price environment'
-      },
-      {
-        id: 'doing-business',
-        title: 'Jump to section Doing Business',
-        label: 'Doing Business'
-      },
-      {
-        id: 'barriers',
-        title: 'Jump to section Barriers',
-        label: 'Barriers'
-      }
-    ]
-  }
-
-  render () {
-    const { isSticky, style, currentItem } = this.props
-
-    const activeItem = (this.menuItems.find(i => i.id === currentItem) || { label: 'Sections' })
-
-    return (
-      <nav className={c('inpage__nav nav', { 'inpage__nav--sticky': isSticky })} style={style} role='navigation'>
-        <div className='inner'>
-          {isSticky ? (
-            <div className='nav__headline'>
-              <p className='nav__subtitle'>
-                <Link to='/results' title='View results page'><span>View all markets</span></Link>
-              </p>
-              <h1 className='nav__title'>{this.props.geography.name}</h1>
-            </div>
-          ) : null}
-          <div className='nav__block'>
-            {isSticky ? (
-              <Dropdown
-                className='dropdown-content'
-                triggerElement='a'
-                triggerClassName='nav__drop-trigger'
-                triggerActiveClassName='button--active'
-                triggerText={activeItem.label}
-                triggerTitle='Jump to section'
-                direction='down'
-                alignment='left' >
-                <h6 className='drop__title'>Jump to section</h6>
-                <ul className='drop__menu drop__menu--select'>
-                  {this.menuItems.map(item => (
-                    <li key={item.id}><a data-hook='dropdown:close' href={`#${item.id}`} title={item.title} className={c('drop__menu-item', { 'drop__menu-item--active': item.id === activeItem.id })}>{item.label}</a></li>
-                  ))}
-                </ul>
-              </Dropdown>
-            ) : (
-              <ul className='sections-menu'>
-                {this.menuItems.map(item => (
-                  <li key={item.id} className='sections-menu__item'><a href={`#${item.id}`} title={item.title} className='sections-menu__link'><span>{item.label}</span></a></li>
-                ))}
-              </ul>
-            )}
-          </div>
-          <div className='inpage__actions'>
-            <button type='button' className='ipa-print' title='Print content' onClick={() => window.print() }><span>Print</span></button>
-            <ShareOptions url={window.location.toString()} />
-          </div>
-        </div>
-      </nav>
-    )
-  }
-}
-
-if (environment !== 'production') {
-  NavBar.propTypes = {
-    currentItem: T.string,
-    isSticky: T.bool,
-    geography: T.object,
-    style: T.object
-  }
-}
-
 class Geography extends React.Component {
   constructor (props) {
     super(props)
