@@ -3,6 +3,7 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { Timeline } from 'react-twitter-widgets'
 
 import { environment, baseurl } from '../config'
 import { downloadData } from '../utils/constants'
@@ -189,7 +190,16 @@ class Home extends React.Component {
               <div className='col--sec'>
                 <section className='fsection'>
                   <h1 className='fsection__title'>Tweets</h1>
-                  <p>Twitter feed.</p>
+                  <Timeline
+                    dataSource={{
+                      sourceType: 'profile',
+                      screenName: 'BloombergNEF'
+                    }}
+                    options={{
+                      chrome: 'noheader noborders',
+                      height: '1000'
+                    }}
+                  />
                 </section>
               </div>
             </div>
