@@ -7,6 +7,7 @@
 
 .info-card {
   overflow: hidden;
+  border-radius: $base-border-radius;
 
   > *:last-child {
     margin-bottom: 0;

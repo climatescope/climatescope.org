@@ -5,91 +5,10 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { environment } from '../config'
+import { downloadData } from '../utils/constants'
 
 import App from './app'
 import ShareOptions from '../components/share'
-const downloadData = {
-  full: [
-    {
-      url: '/assets/data/reports/climatescope-2017-report-en.pdf',
-      title: 'Download full report in PDF',
-      label: 'PDF',
-      size: '5Mb'
-    }
-  ],
-  model: [
-    {
-      url: '/assets/data/model/climatescope-2017.xlsm',
-      title: 'Download Climatescope model in Excel format',
-      label: 'Excel',
-      size: '8Mb'
-    },
-    {
-      url: '/assets/data/climatescope-full-2017.csv',
-      title: 'Download raw data in CSV format',
-      label: 'CSV',
-      size: '0.3Mb'
-    }
-  ],
-  fullPrevious: [
-    {
-      url: '/assets/data/reports/climatescope-2016-report-en.pdf',
-      title: 'Download full report in PDF',
-      label: '2016 (PDF)',
-      size: '9Mb'
-    },
-    {
-      url: '/assets/data/reports/climatescope-2015-report-en.pdf',
-      title: 'Download full report in PDF',
-      label: '2015 (PDF)',
-      size: '6Mb'
-    },
-    {
-      url: '/assets/data/reports/climatescope-2014-report-en.pdf',
-      title: 'Download full report in PDF',
-      label: '2014 (PDF)',
-      size: '6Mb'
-    },
-    {
-      url: '/assets/data/reports/climatescope-2013-report-en.pdf',
-      title: 'Download full report in PDF',
-      label: '2013 (PDF)',
-      size: '10Mb'
-    },
-    {
-      url: '/assets/data/reports/climatescope-2012-report-en.pdf',
-      title: 'Download full report in PDF',
-      label: '2012 (PDF)',
-      size: '9Mb'
-    }
-  ],
-  sourcePrevious: [
-    {
-      url: '/assets/data/model/climatescope-2016.xlsm',
-      title: 'Download Climatescope model in Excel format',
-      label: '2016 (Excel)',
-      size: '6Mb'
-    },
-    {
-      url: '/assets/data/model/climatescope-2015.xlsm',
-      title: 'Download Climatescope model in Excel format',
-      label: '2015 (Excel)',
-      size: '6Mb'
-    },
-    {
-      url: '/assets/data/model/climatescope-2014.xlsm',
-      title: 'Download Climatescope model in Excel format',
-      label: '2014 (Excel)',
-      size: '5Mb'
-    },
-    {
-      url: '/assets/data/model/climatescope-2013.xlsm',
-      title: 'Download Climatescope model in Excel format',
-      label: '2013 (Excel)',
-      size: '1Mb'
-    }
-  ]
-}
 
 const DownloadWell = ({ type, title, description, items }) => (
   <div className={`well well-l download download-${type}`}>
