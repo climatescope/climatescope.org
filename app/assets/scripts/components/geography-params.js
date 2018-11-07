@@ -233,6 +233,7 @@ export const renderParArea = (area, sectionDef, chartsMeta, chartsData, reactCom
         }
       }
     } catch (error) {
+      if (!error.handled) console.error(error)
       return renderParCardError(el, error.message)
     }
   })
@@ -271,7 +272,7 @@ const renderParCardError = (chart, error) => {
  * @param {object} chart Chart data
  */
 const renderParCardAnswer = (chart) => {
-  const answer = chart.data.value.toString()
+  const answer = (chart.data.value || '').toString()
   return (
     <ParCard
       key={chart.id}
@@ -280,15 +281,19 @@ const renderParCardAnswer = (chart) => {
       size={chart.size}
       theme={'light'}
     >
+      {chart.data.value === null ? (
+        <p className='card-absolute'>N/A</p>
+      ) : (
+        <dl className='card-answer-options'>
+          {chart.options.map(opt => (
+            <React.Fragment key={opt.id}>
+              <dt className={c({ 'answer-checked': opt.id === answer, 'answer-unchecked': opt.id !== answer })}>{opt.label}</dt>
+              <dd>{opt.id === answer ? 'Checked' : 'Unchecked'}</dd>
+            </React.Fragment>
+          ))}
+        </dl>
+      )}
 
-      <dl className='card-answer-options'>
-        {chart.options.map(opt => (
-          <React.Fragment key={opt.id}>
-            <dt className={c({ 'answer-checked': opt.id === answer, 'answer-unchecked': opt.id !== answer })}>{opt.label}</dt>
-            <dd>{opt.id === answer ? 'Checked' : 'Unchecked'}</dd>
-          </React.Fragment>
-        ))}
-      </dl>
     </ParCard>
   )
 }
@@ -428,10 +433,12 @@ const renderParCardAbsoluteGroup = (chart) => {
             <dl className='card-percent'>
               <dt>{child.name}</dt>
               <dd>
-                <span>{child.data.value}%</span>
-                <div className='card-percent-bar'>
-                  {child.data.value > 0 && <div style={{ height: `${child.data.value}%` }}></div>}
-                </div>
+                <span>{child.data.value === null ? 'N/A' : `${child.data.value}%`}</span>
+                {child.data.value !== null && (
+                  <div className='card-percent-bar'>
+                    {child.data.value > 0 && <div style={{ height: `${child.data.value}%` }}></div>}
+                  </div>
+                )}
               </dd>
             </dl>
           </li>
@@ -488,6 +495,7 @@ const getChartDef = (arr, ids, groupId) => {
   try {
     return getFromArray(arr, ids)
   } catch (error) {
+    error.handled = true
     error.message = `Definition not found for chart [${error.data.join(', ')}]` + (groupId ? ` in group [${groupId}]` : '')
     throw error
   }
@@ -512,6 +520,7 @@ const getChartData = (arr, ids, groupId) => {
   try {
     return getFromArray(arr, ids)
   } catch (error) {
+    error.handled = true
     error.message = `Data not found for chart [${error.data.join(', ')}]` + (groupId ? ` in group [${groupId}]` : '')
     throw error
   }
