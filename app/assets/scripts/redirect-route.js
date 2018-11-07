@@ -98,6 +98,28 @@ const redirectPaths = {
 
   // Blog:
   '/en/blog': 'https://medium.com/climatescope',
+  '/en/blog/2017/11/28/PR': 'https://medium.com/climatescope/solar-capacity-jumps-by-more-than-half-in-developing-nations-press-release-1eb8235a6c4',
+  '/en/blog/2017/11/06/PR': 'https://medium.com/climatescope/efforts-to-address-climate-through-clean-energy-lag-in-emerging-markets-press-release-d5f0e6ca5bf0',
+  '/en/blog/2017/06/26/GSMA': 'https://medium.com/climatescope/the-symbiotic-relationship-between-payg-solar-and-mobile-money-ecosystems-b98286df0e56',
+  '/en/blog/2017/05/31/powerforall': 'https://medium.com/climatescope/tapping-into-data-to-tackle-electricity-poverty-46f213ec0793',
+  '/en/blog/2017/02/16/SEforAll-Africa-Hub': 'https://medium.com/climatescope/a-growing-number-of-african-nations-take-concrete-steps-in-favour-of-renewables-with-the-support-70512624f57e',
+  '/en/blog/2017/02/01/Jordan%20MAAN/': 'https://medium.com/climatescope/how-renewable-energy-can-bolster-the-economy-in-jordan-2e2421db5f90',
+  '/en/blog/2017/01/20/climatescope%20blog%20post-%20can-pay-go-solar-financed': 'https://medium.com/climatescope/how-can-pay-as-go-solar-be-financed-f18791648a15',
+  '/en/blog/2017/01/16/Climatescope-in-the-media-Europe-and-US': 'https://medium.com/climatescope/climatescope-in-the-media-europe-and-us-highlights-bbfd7d59197',
+  '/en/blog/2017/01/16/Climatescope-in-the-media-Asia': 'https://medium.com/climatescope/climatescope-in-the-media-asia-highlights-a41eb6118f57',
+  '/en/blog/2017/01/16/Climatescope-in-the-media-Africa': 'https://medium.com/climatescope/climatescope-in-the-media-africa-highlights-bc88aaa324df',
+  '/en/blog/2017/01/12/climatescope-blog-Senegal': 'https://medium.com/climatescope/senegal-villages-light-up-fast-with-household-solar-products-41b58dca5037',
+  '/en/blog/2016/12/21/Climatescope-in-the-media-LAC': 'https://medium.com/climatescope/climatescope-in-the-media-latin-america-highlights-f467197c1e4a',
+  '/en/blog/2016/12/21/Climatescope-2016-webinar': 'https://medium.com/climatescope/climatescope-2016-webinar-clean-energy-in-emerging-markets-970ccd9a55e5',
+  '/en/blog/2016/12/20/compare-the-scores': 'https://medium.com/climatescope/climatescope-2014-to-2016-compare-the-scores-46a00499166c',
+  '/en/blog/2016/12/15/Climatescope2016-launch': 'https://medium.com/climatescope/press-release-with-new-pledges-and-new-projects-developing-countries-take-clean-energy-lead-dff167536eb2',
+  '/en/blog/2016/12/14/Climatescope2016-launch-pt': 'https://medium.com/climatescope/press-release-com-novos-compromissos-e-projetos-pa%C3%ADses-em-desenvolvimento-assumem-a-lideran%C3%A7a-9d34b3c58c63',
+  '/en/blog/2016/12/14/Climatescope2016-launch-es': 'https://medium.com/climatescope/press-release-con-nuevos-compromisos-y-proyectos-los-pa%C3%ADses-en-v%C3%ADas-de-desarrollo-adquieren-una-578c35c65c79',
+  '/en/blog/2016/12/13/Climatescope2015-data-visual': 'https://medium.com/climatescope/discover-the-highlights-of-last-years-climatescope-80a3e33038c2',
+  '/en/blog/2016/06/02/climatescope-update-westafrica': 'https://medium.com/climatescope/mixed-results-for-west-africa-in-climatescope-2015-7605ac6564b7',
+  '/en/blog/2016/03/15/climatescope-update-Uganda-GetFit': 'https://medium.com/climatescope/how-ugandas-get-fit-policy-attracted-clean-energy-investors-160047604ed0',
+  '/en/blog/2016/02/24/climatescope-blog-South-Africa': 'https://medium.com/climatescope/another-year-in-the-top-5-for-south-africa-df5b1b870236',
+  '/en/blog/2015/11/23/climatescope-2015-launches': 'https://medium.com/climatescope/climatescope-2015-goes-live-928e544093ad',
 
   // Insights:
   '/en/insights/risk-management': 'https://medium.com/climatescope/how-to-mitigate-renewables-risks-in-emerging-markets-514b6afade97',
