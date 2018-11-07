@@ -94,6 +94,63 @@
 }
 
 
+/* Answer Chart
+   ========================================================================== */
+
+.card-answer-options {
+  dt {
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: tint($base-color, 56%);
+    margin: 0 0 0.5rem 0;
+    padding: 0 0 0 2rem;
+    font-family: $base-font-family;
+    text-transform: none;
+
+    &.answer-checked {
+      color: $base-color;
+      font-weight: $base-font-bold;
+    }
+
+    &::before {
+      top: 1rem;
+      transform: translate(0, -50%);
+      position: absolute;
+      left: 0;
+      z-index: 1;
+      content: '';
+      width: 1rem;
+      height: 1rem;
+      border-radius: $full-border-radius;
+      border: 2px solid tint($base-color, 56%);
+    }
+
+    &.answer-checked {
+      &::before {
+        border-color: $base-color;
+      }
+
+      &::after {
+        position: absolute;
+        top: 1rem;
+        left: 0.5rem;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        content: '';
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: $full-border-radius;
+        background: $base-color;
+      }
+    }
+  }
+
+  dd {
+    @extend .visually-hidden;
+  }
+}
+
 /* Area Chart
    ========================================================================== */
 

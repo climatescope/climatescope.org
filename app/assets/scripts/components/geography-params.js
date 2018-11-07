@@ -7,6 +7,10 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 import { environment } from '../config'
 import AreaChart, { memoizedComputeAreaChartData } from './area-chart'
 
+// /////////////////////////////////////////////////////////////////////////////
+// React Components
+// /////////////////////////////////////////////////////////////////////////////
+
 // Containers to have a named wrapper.
 export const AreaAlpha = ({ children }) => children
 export const AreaBeta = ({ children }) => children
@@ -109,6 +113,10 @@ if (environment !== 'production') {
   }
 }
 
+// /////////////////////////////////////////////////////////////////////////////
+// Layout render functions
+// /////////////////////////////////////////////////////////////////////////////
+
 /**
  * Renders the specified parameter section
  *
@@ -141,54 +149,89 @@ export const renderParArea = (area, sectionDef, chartsMeta, chartsData, reactCom
       )
     }
 
-    // Reconcile chart data, i.e. merge all in an object.
-    // Find the definition and data of the chart to render.
-    const chartDef = chartsMeta.find(def => def.id === el.id)
-    const chartData = chartsData.find(data => data.id === el.id)
-    if (!chartDef) {
-      return renderParCardError(el, `Definition not found for chart [${el.id}]`)
-    }
+    try {
+      const [chartDef] = getChartDef(chartsMeta, el.id)
 
-    if (!chartData) {
-      return renderParCardError(el, `Data not found for chart [${el.id}]`)
-    }
+      // Group elements mut be handled differently.
+      if (chartDef.type === 'group') {
+        // Get all children.
+        const chartDefChildren = getChartDef(chartsMeta, chartDef.children, el.id)
+        // Unique children types.
+        const uniqueTypes = chartDefChildren.reduce((acc, def) => (
+          acc.indexOf(def.type) === -1 ? acc.concat(def.type) : acc
+        ), [])
 
-    return renderParCard({
-      ...chartDef,
-      data: chartData,
-      size: el.size
-    }, reactComponent)
+        if (uniqueTypes.length !== 1) {
+          throw new Error(`All the indicators of group [${chartDef.id}] must be of same type. Types found: [${uniqueTypes.join(', ')}]`)
+        }
+
+        // Get the chart group data.
+        const [chartGroupData] = getChartData(chartsData, chartDef.id)
+
+        // Reconcile the data of the children.
+        let childrenWithoutData = []
+        const reconciledChildren = chartDefChildren.map(child => {
+          try {
+            // TODO: Change the approach to get the data. Show get the data
+            // from the global definition, not the children.
+            const [d] = getChartData(chartGroupData.data, child.id, chartDef.id)
+            return { ...child, data: d }
+          } catch (error) {
+            childrenWithoutData = childrenWithoutData.concat(error.data)
+          }
+        })
+
+        // Children with no data.
+        if (childrenWithoutData.length) {
+          throw new Error(`Data not found for chart [${childrenWithoutData.join(', ')}] in group [${chartDef.id}]`)
+        }
+
+        // Reconcile the data of the group and children.
+        const reconciledData = {
+          ...chartDef,
+          ...chartGroupData,
+          size: el.size,
+          children: reconciledChildren
+        }
+
+        // Children are all the same type. Render based off of that
+        switch (uniqueTypes[0]) {
+          case 'answer':
+            return renderParCardAnswerGroup(reconciledData)
+          default:
+            console.warn(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
+            throw new Error(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
+        }
+      } else {
+        const [chartData] = getChartDef(chartsData, el.id)
+
+        // Reconcile chart data, i.e. merge all in an object.
+        const reconciledData = {
+          ...chartDef,
+          data: chartData,
+          size: el.size
+        }
+
+        switch (reconciledData.type) {
+          case 'answer':
+            return renderParCardAnswer(reconciledData)
+          case 'timeSeries':
+            return renderParCardTimeSeries(reconciledData, reactComponent)
+          default:
+            console.warn(`Unable to render chart type [${reconciledData.type}] for chart [${reconciledData.id}]`)
+            throw new Error(`Unable to render chart type [${reconciledData.type}] for chart [${reconciledData.id}]`)
+        }
+      }
+    } catch (error) {
+      return renderParCardError(el, error.message)
+    }
   })
-
-  // Fitler out empty sections.
-  if (!areaContents.filter(Boolean).length) return null
 
   return (
     <AreaElement>
       {areaContents}
     </AreaElement>
   )
-}
-
-/**
- * Renders the correct card type taking into account the layout definition and
- * the chart data.
- *
- * @param {object} chart Chart data
- * @param {react} reactComponent The react component. Needed for the interative
- *                               charts that need access to the state and other
- *                               functions.
- */
-export const renderParCard = (chart, reactComponent) => {
-  switch (chart.type) {
-    case 'answer':
-      return renderParCardAnswer(chart, reactComponent)
-    case 'timeSeries':
-      return renderParCardTimeSeries(chart, reactComponent)
-    default:
-      console.warn(`Unrecognized chart type [${chart.type}] for chart [${chart.id}]`)
-      return renderParCardError(chart, `Unrecognized chart type [${chart.type}] for chart [${chart.id}]`)
-  }
 }
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -216,11 +259,9 @@ const renderParCardError = (chart, error) => {
  * Renders an "answer" card type.
  *
  * @param {object} chart Chart data
- * @param {react} reactComponent The react component. Needed for the interative
- *                               charts that need access to the state and other
- *                               functions.
  */
-const renderParCardAnswer = (chart, reactComponent) => {
+const renderParCardAnswer = (chart) => {
+  const answer = chart.data.value.toString()
   return (
     <ParCard
       key={chart.id}
@@ -229,6 +270,14 @@ const renderParCardAnswer = (chart, reactComponent) => {
       size={chart.size}
       theme={'light'}>
 
+      <dl className='card-answer-options'>
+        {chart.options.map(opt => (
+          <React.Fragment key={opt.id}>
+            <dt className={c({ 'answer-checked': opt.id === answer, 'answer-unchecked': opt.id !== answer })}>{opt.label}</dt>
+            <dd>{opt.id === answer ? 'Checked' : 'Unchecked'}</dd>
+          </React.Fragment>
+        ))}
+      </dl>
     </ParCard>
   )
 }
@@ -270,4 +319,131 @@ const renderParCardTimeSeries = (chart, reactComponent) => {
       />
     </ParCard>
   )
+}
+
+/**
+ * Renders an group of "answer" card type.
+ *
+ * @param {object} chart Chart data
+ */
+const renderParCardAnswerGroup = (chart) => {
+  const options = chart.children.reduce((acc, child) => {
+    return child.options.reduce((acc2, opt) => {
+      return acc2.indexOf(opt.label) === -1 ? acc2.concat(opt.label) : acc2
+    }, acc)
+  }, [])
+
+  return (
+    <ParCard
+      key={chart.id}
+      hiddenTitle={chart.name}
+      size={chart.size}>
+
+      <table className='feature-table'>
+        <thead>
+          <tr>
+            <th><span className='visually-hidden'>Feature</span></th>
+            {options.map(o => <th key={o}>{o}</th>)}
+          </tr>
+        </thead>
+        <tbody>
+          {chart.children.map(child => {
+            // The label for this child value. We can't use ids because they're
+            // not consisten.
+            const dataOptLabel = child.options.find(opt => opt.id === child.data.value.toString()).label
+            return (
+              <tr key={child.id}>
+                <th>
+                  <h2>{child.name}</h2>
+                  <p>{child.description}</p>
+                </th>
+                {options.map(o => (
+                  <td key={o}>
+                    <strong className={c({ 'feature-checked': o === dataOptLabel, 'feature-unchecked': o !== dataOptLabel })}><span>{o === dataOptLabel ? 'Checked' : 'Unchecked'}</span></strong>
+                  </td>
+                ))}
+              </tr>
+            )
+          })}
+        </tbody>
+      </table>
+
+    </ParCard>
+  )
+}
+
+// /////////////////////////////////////////////////////////////////////////////
+// Utils functions
+// /////////////////////////////////////////////////////////////////////////////
+
+/**
+ * Gets the objects that match the given ids.
+ * Throws an error if any id is missing.
+ *
+ * @throws Error
+ *
+ * @param {array} arr The array from which to get the data. Assumes every object
+ *                    has an `id` property.
+ * @param {array|string} ids Ids to search for.
+ *
+ * @returns array
+ */
+const getFromArray = (arr, ids) => {
+  ids = [].concat(ids)
+  const found = arr.filter(o => ids.indexOf(o.id) !== -1)
+  // If all good.
+  if (found.length === ids.length) return found
+
+  const missingIds = ids.filter(id => !found.find(f => f.id === id))
+  const err = new Error('Missing ids')
+  err.data = missingIds
+  throw err
+}
+
+/**
+ * Same as getFromArray() but with an error message customized for
+ * chart definition data.
+ *
+ * @see getFromArray()
+ * @throws Error
+ *
+ * @param {array} arr The array from which to get the data. Assumes every object
+ *                    has an `id` property.
+ * @param {array|string} ids Ids to search for.
+ * @param {string} groupId (optional) Id of the chart group the data is for,
+ *                         if any.
+ *
+ * @returns array
+ */
+const getChartDef = (arr, ids, groupId) => {
+  try {
+    return getFromArray(arr, ids)
+  } catch (error) {
+    error.message = `Definition not found for chart [${error.data.join(', ')}]` + (groupId ? ` in group [${groupId}]` : '')
+    throw error
+  }
+}
+
+/**
+ * Same as getFromArray() but with an error message customized for
+ * chart data.
+ *
+ * @see getFromArray()
+ * @throws Error
+ *
+ * @param {array} arr The array from which to get the data. Assumes every object
+ *                    has an `id` property.
+ * @param {array|string} ids Ids to search for.
+ * @param {string} groupId (optional) Id of the chart group the data is for,
+ *                         if any.
+ *
+ * @returns array
+ */
+const getChartData = (arr, ids, groupId) => {
+  try {
+    return getFromArray(arr, ids)
+  } catch (error) {
+    error.message = `Data not found for chart [${error.data.join(', ')}]` + (groupId ? ` in group [${groupId}]` : '')
+    throw error
+  }
 }
