@@ -108,9 +108,23 @@
     font-family: $base-font-family;
     text-transform: none;
 
+    .info-card--par-fundamentals & {
+      color: shade($parameter-color-a, 24%);
+    }
+    .info-card--par-opportunities & {
+      color: shade($parameter-color-b, 24%);
+    }
+    .info-card--par-experiences & {
+      color: shade($parameter-color-c, 24%);
+    }
+
     &.answer-checked {
       color: $base-color;
       font-weight: $base-font-bold;
+      
+      .info-card--par & {
+        color: #fff;
+      }
     }
 
     &::before {
@@ -124,11 +138,24 @@
       height: 1rem;
       border-radius: $full-border-radius;
       border: 2px solid tint($base-color, 56%);
+
+      .info-card--par-fundamentals & {
+        border-color: shade($parameter-color-a, 24%);
+      }
+      .info-card--par-opportunities & {
+        border-color: shade($parameter-color-b, 24%);
+      }
+      .info-card--par-experiences & {
+        border-color: shade($parameter-color-c, 24%);
+      }
     }
 
     &.answer-checked {
       &::before {
         border-color: $base-color;
+        .info-card--par & {
+          border-color: #fff;
+        }
       }
 
       &::after {
@@ -142,6 +169,10 @@
         height: 0.5rem;
         border-radius: $full-border-radius;
         background: $base-color;
+        
+        .info-card--par & {
+          background: #fff;
+        }
       }
     }
   }
@@ -205,10 +236,30 @@
     align-items: end;
     background: tint($base-color, 80%);
 
+    .info-card--par-fundamentals & {
+      background: shade($parameter-color-a, 8%);
+    }
+    .info-card--par-opportunities & {
+      background: shade($parameter-color-b, 8%);
+    }
+    .info-card--par-experiences & {
+      background: shade($parameter-color-c, 8%);
+    }
+
     > div {
       width: 100%;
       min-height: 1px;
       background: tint($base-color, 56%);
+
+      .info-card--par-fundamentals & {
+        background: shade($parameter-color-a, 24%);
+      }
+      .info-card--par-opportunities & {
+        background: shade($parameter-color-b, 24%);
+      }
+      .info-card--par-experiences & {
+        background: shade($parameter-color-c, 24%);
+      }
     }
   }
 }

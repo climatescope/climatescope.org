@@ -86,12 +86,16 @@ if (environment !== 'production') {
  *                      construct the class `info-card--${size}`.
  * @param {string} theme The theme of the card (light|dark). Used to
  *                      construct the class `info-card--${theme}`.
+ * @param {string} topic The topic of the card. Used to construct
+ *                      the class `info-card--par-${topic}`.
  * @param {node} children Content of the card.
  */
-export const ParCard = ({ title, hiddenTitle, description, size, theme, children }) => (
+export const ParCard = ({ title, hiddenTitle, description, size, theme, topic, children }) => (
   <article className={c('info-card', {
     [`info-card--${size}`]: !!size,
-    [`info-card--${theme}`]: !!theme
+    [`info-card--${theme}`]: !!theme,
+    'info-card--par': !!topic,
+    [`info-card--par-${topic}`]: !!topic
   })}>
     <h1 className={c('info-card__title', { 'visually-hidden': hiddenTitle })}>{title || hiddenTitle}</h1>
     {description ? (
@@ -110,6 +114,7 @@ if (environment !== 'production') {
     description: T.string,
     size: T.string,
     theme: T.string,
+    topic: T.string,
     children: T.node
   }
 }

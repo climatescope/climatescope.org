@@ -70,6 +70,28 @@
   color: #fff;
 }
 
+.info-card--par {
+  padding: $global-spacing * 2;
+}
+
+.info-card--par-fundamentals {
+  @extend .antialiased;
+  background: $parameter-color-a;
+  color: #fff;
+}
+
+.info-card--par-opportunities {
+  @extend .antialiased;
+  background: $parameter-color-b;
+  color: #fff;
+}
+
+.info-card--par-experiences {
+  @extend .antialiased;
+  background: $parameter-color-c;
+  color: #fff;
+}
+
 
 /* Feature table
 ========================================================================== */
