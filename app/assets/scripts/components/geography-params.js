@@ -6,6 +6,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 import { environment } from '../config'
 import AreaChart, { memoizedComputeAreaChartData } from './area-chart'
+import { round } from '../utils/math'
 
 // /////////////////////////////////////////////////////////////////////////////
 // React Components
@@ -198,6 +199,8 @@ export const renderParArea = (area, sectionDef, chartsMeta, chartsData, reactCom
         switch (uniqueTypes[0]) {
           case 'answer':
             return renderParCardAnswerGroup(reconciledData)
+          case 'absolute':
+            return renderParCardAbsoluteGroup(reconciledData)
           default:
             console.warn(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
             throw new Error(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
@@ -215,6 +218,8 @@ export const renderParArea = (area, sectionDef, chartsMeta, chartsData, reactCom
         switch (reconciledData.type) {
           case 'answer':
             return renderParCardAnswer(reconciledData)
+          case 'absolute':
+            return renderParCardAbsolute(reconciledData)
           case 'timeSeries':
             return renderParCardTimeSeries(reconciledData, reactComponent)
           default:
@@ -268,7 +273,8 @@ const renderParCardAnswer = (chart) => {
       title={chart.name}
       description={chart.description || null}
       size={chart.size}
-      theme={'light'}>
+      theme={'light'}
+    >
 
       <dl className='card-answer-options'>
         {chart.options.map(opt => (
@@ -278,6 +284,30 @@ const renderParCardAnswer = (chart) => {
           </React.Fragment>
         ))}
       </dl>
+    </ParCard>
+  )
+}
+
+/**
+ * Renders an "absolute" card type.
+ *
+ * @param {object} chart Chart data
+ */
+const renderParCardAbsolute = (chart) => {
+  const val = chart.data.value
+  return (
+    <ParCard
+      key={chart.id}
+      title={chart.name}
+      description={chart.description || null}
+      size={chart.size}
+      theme={'light'}
+    >
+
+      <p className='card-absolute'>
+        {isNaN(Number(val)) ? val : round(val)}
+        {chart.unit && <small>{chart.unit}</small>}
+      </p>
     </ParCard>
   )
 }
@@ -368,6 +398,40 @@ const renderParCardAnswerGroup = (chart) => {
         </tbody>
       </table>
 
+    </ParCard>
+  )
+}
+
+/**
+ * Renders an group of "absolute" card type.
+ *
+ * @param {object} chart Chart data
+ */
+const renderParCardAbsoluteGroup = (chart) => {
+  return (
+    <ParCard
+      key={chart.id}
+      title={chart.name}
+      description={chart.description || null}
+      size={chart.size}
+      theme={'light'}
+    >
+
+      <ul className='card-percent-list'>
+        {chart.children.map(child => (
+          <li key={child.id}>
+            <dl className='card-percent'>
+              <dt>{child.name}</dt>
+              <dd>
+                <span>{child.data.value}%</span>
+                <div className='card-percent-bar'>
+                  {child.data.value > 0 && <div style={{ height: `${child.data.value}%` }}></div>}
+                </div>
+              </dd>
+            </dl>
+          </li>
+        ))}
+      </ul>
     </ParCard>
   )
 }

@@ -1,7 +1,7 @@
 'use strict'
 export default [
   {
-    id: 'power-marker',
+    id: 'power-market',
     title: 'Power Market',
     type: 'linear',
     areaAlpha: [
@@ -71,7 +71,7 @@ export default [
         size: 'medium'
       },
       {
-        id: 'foreign investment',
+        id: 'foreignInvestment',
         size: 'small'
       },
       {
@@ -99,7 +99,7 @@ export default [
         size: 'small'
       },
       {
-        id: 'electricity price data',
+        id: 'electricityPrice',
         size: 'small'
       }
     ]
@@ -115,11 +115,11 @@ export default [
     ],
     areaBeta: [
       {
-        id: 'average VAT',
+        id: 'averageVAT',
         size: 'small'
       },
       {
-        id: 'import duties',
+        id: 'importDuties',
         size: 'small'
       }
     ]
