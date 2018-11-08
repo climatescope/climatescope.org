@@ -134,13 +134,13 @@ class Geography extends React.Component {
     }
 
     // Any data being visualized is considered a chart.
-    const charts = getDataGeo().charts
+    const geography = getDataGeo()
     const chartMeta = getDataCMeta()
 
     return layoutDef.map(sec => (
       <ParSection key={sec.id} id={sec.id} type={sec.type}>
-        {renderParArea('alpha', sec, chartMeta, charts, this)}
-        {renderParArea('beta', sec, chartMeta, charts, this)}
+        {renderParArea('alpha', sec, chartMeta, geography, this)}
+        {renderParArea('beta', sec, chartMeta, geography, this)}
       </ParSection>
     ))
   }

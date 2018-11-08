@@ -129,13 +129,15 @@ if (environment !== 'production') {
  * @param {string} area Area to render (alpha|beta)
  * @param {object} sectionDef Definition of the section being rendered.
  * @param {object} chartsMeta Definition of all charts.
- * @param {array} chartsData Chart data
+ * @param {object} geography Geography data. Must have a `charts` key with data.
  * @param {react} reactComponent The react component. Needed for the interative
  *                               charts that need access to the state and other
  *                               functions.
  */
-export const renderParArea = (area, sectionDef, chartsMeta, chartsData, reactComponent) => {
+export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComponent) => {
   if (['alpha', 'beta'].indexOf(area) === -1) return null
+
+  const chartsData = geography.charts
 
   const AreaElement = area === 'alpha' ? AreaAlpha : AreaBeta
   const key = area === 'alpha' ? 'areaAlpha' : 'areaBeta'
@@ -230,7 +232,10 @@ export const renderParArea = (area, sectionDef, chartsMeta, chartsData, reactCom
           case 'average':
             return renderParCardAbsolute(reconciledData)
           case 'timeSeries':
-            return renderParCardTimeSeries(reconciledData, reactComponent)
+            // Iso + chart id works as a cache key because the data is never
+            // going to be updated. If in the future this changes then the cache
+            // key needs to be dynamic.
+            return renderParCardTimeSeries(reconciledData, reactComponent, `${geography.iso}-${chartDef.id}`)
           default:
             console.warn(`Unable to render chart type [${reconciledData.type}] for chart [${reconciledData.id}]`)
             throw new Error(`Unable to render chart type [${reconciledData.type}] for chart [${reconciledData.id}]`)
@@ -333,12 +338,10 @@ const renderParCardAbsolute = (chart) => {
  * @param {react} reactComponent The react component. Needed for the interative
  *                               charts that need access to the state and other
  *                               functions.
+ * @param {string} chart Data memoize key
  */
-const renderParCardTimeSeries = (chart, reactComponent) => {
-  // Chart id works as a cache key because the data is never going to be
-  // updated. If in the future this changes then the cache key needs to
-  // be dynamic.
-  const chartData = memoizedComputeAreaChartData(chart.data, chart.mainDataLayers, chart.id)
+const renderParCardTimeSeries = (chart, reactComponent, key) => {
+  const chartData = memoizedComputeAreaChartData(chart.data, chart.mainDataLayers, key)
   return (
     <ParCard
       key={chart.id}
