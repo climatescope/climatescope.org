@@ -73,6 +73,14 @@ if (environment !== 'production') {
 }
 
 class Home extends React.Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      twitterLoaded: false
+    }
+  }
+
   componentDidMount () {
     this.props.fetchMediumPosts()
   }
@@ -144,16 +152,38 @@ class Home extends React.Component {
               <div className='col--sec'>
                 <section className='fsection'>
                   <h1 className='fsection__title'>Tweets</h1>
-                  <Timeline
-                    dataSource={{
-                      sourceType: 'profile',
-                      screenName: 'BloombergNEF'
-                    }}
-                    options={{
-                      chrome: 'noheader noborders',
-                      height: '1000'
-                    }}
-                  />
+                  {!this.state.twitterLoaded && (
+                    <>
+                      <LoadingSkeletonGroup>
+                        <LoadingSkeleton type='heading' width={3 / 4} />
+                        <LoadingSkeleton type='heading' width={2 / 3} />
+                        <LoadingSkeleton />
+                        <LoadingSkeleton />
+                        <LoadingSkeleton />
+                        <LoadingSkeleton width={1 / 4} />
+                      </LoadingSkeletonGroup>
+
+                      <LoadingSkeletonGroup>
+                        <LoadingSkeleton type='heading' width={1 / 3} />
+                        <LoadingSkeleton />
+                        <LoadingSkeleton />
+                        <LoadingSkeleton width={1 / 4} />
+                      </LoadingSkeletonGroup>
+                    </>
+                  )}
+                  <div style={{ display: this.state.twitterLoaded ? 'block' : 'none' }}>
+                    <Timeline
+                      dataSource={{
+                        sourceType: 'profile',
+                        screenName: 'BloombergNEF'
+                      }}
+                      options={{
+                        chrome: 'noheader noborders',
+                        height: '1000'
+                      }}
+                      onLoad={() => this.setState({ twitterLoaded: true })}
+                    />
+                  </div>
                 </section>
               </div>
             </div>
