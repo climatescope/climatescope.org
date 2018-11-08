@@ -66,7 +66,9 @@ export function fetchDispatchCacheFactory ({ statePath, url, requestFn, receiveF
 }
 
 /**
- * Base reducer for an api request.
+ * Base reducer for an api request, taking into account the action.id
+ * If it exists it will store in the state under that path. Allows for
+ * page caching.
  *
  * Uses the following actions:
  * - INVALIDATE_<actionName>
@@ -77,16 +79,22 @@ export function fetchDispatchCacheFactory ({ statePath, url, requestFn, receiveF
  * @param {object} action The action.
  * @param {string} actionName The action name to use as suffix
  */
-function APIReducer (state, action, actionName) {
+export function baseAPIReducer (state, action, actionName) {
+  const hasId = typeof action.id !== 'undefined'
   switch (action.type) {
     case `INVALIDATE_${actionName}`:
-      return state
+      return hasId
+        ? { [action.id]: state }
+        : state
     case `REQUEST_${actionName}`:
-      return {
+      const changeReq = {
         fetching: true,
         fetched: false,
         data: {}
       }
+      return hasId
+        ? { [action.id]: changeReq }
+        : changeReq
     case `RECEIVE_${actionName}`:
       let st = {
         fetching: false,
@@ -102,27 +110,9 @@ function APIReducer (state, action, actionName) {
         st.data = action.data
       }
 
-      return st
+      return hasId
+        ? { [action.id]: st }
+        : st
   }
   return state
-}
-
-/**
- * Base reducer for an api request, taking into account the action.id
- * If it exists it will store in the state under that path. Allows for
- * page caching.
- *
- * @see APIReducer()
- *
- * @param {object} state The state.
- * @param {object} action The action.
- * @param {string} actionName The action name to use as suffix
- */
-export function baseAPIReducer (state, action, actionName) {
-  return typeof action.id === 'undefined'
-    ? APIReducer(state, action, actionName)
-    : {
-      ...state,
-      [action.id]: APIReducer(state, action, actionName)
-    }
 }
