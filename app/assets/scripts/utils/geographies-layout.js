@@ -1,4 +1,13 @@
 'use strict'
+
+const renewableTypes = [
+  'Biomass & Waste',
+  'Geothermal',
+  'Small Hydro',
+  'Solar',
+  'Wind'
+]
+
 export default [
   {
     id: 'power-market',
@@ -12,7 +21,8 @@ export default [
     areaBeta: [
       {
         id: 'installedCapacity',
-        size: 'large'
+        size: 'large',
+        mainDataLayers: renewableTypes
       },
       {
         id: 'utilityPrivatisation',
@@ -28,7 +38,8 @@ export default [
       },
       {
         id: 'powerGeneration',
-        size: 'medium'
+        size: 'medium',
+        mainDataLayers: renewableTypes
       }
     ]
   },
@@ -67,8 +78,9 @@ export default [
     ],
     areaBeta: [
       {
-        id: 'cleanEnergyInvestments',
-        size: 'medium'
+        id: 'cleanEnergyInvestment',
+        size: 'medium',
+        mainDataLayers: [/* Empty keeps all */]
       },
       {
         id: 'foreignInvestment',

@@ -20,7 +20,7 @@ class AreaChart extends React.Component {
   constructor (props) {
     super(props)
     this.componentEl = null
-    this.margin = { top: 32, right: 32, bottom: 36, left: 80, innerLeft: 32, innerRight: 32 }
+    this.margin = { top: 32, right: 32, bottom: 44, left: 80, innerLeft: 32, innerRight: 32 }
     // Control whether the chart was rendered.
     // The size aware element fires a onChange event once it is rendered
     // But at that time the chart is not ready yet so we can't update the size.
@@ -173,7 +173,7 @@ class AreaChart extends React.Component {
 
   drawXAxis (scale) {
     const { top, left, innerLeft } = this.margin
-    const { height } = this.getSize()
+    const { height, width } = this.getSize()
     const { svg } = this
 
     const xAxis = axisBottom(scale)
@@ -185,6 +185,14 @@ class AreaChart extends React.Component {
 
     xAxisEl.select('.domain').remove()
     xAxisEl.selectAll('.tick line').remove()
+
+    // Check if there a need to rotate the labels.
+    const labelSize = 48
+    const neededSize = scale.ticks().length * labelSize
+    xAxisEl.selectAll('text')
+      .style('text-anchor', neededSize > width ? 'end' : 'middle')
+      .attr('dx', neededSize > width ? '-0.8em' : '')
+      .attr('transform', neededSize > width ? 'rotate(-65)' : '')
   }
 
   drawYAxis (scale) {
@@ -232,7 +240,7 @@ class AreaChart extends React.Component {
     const { top, bottom, right, left, innerLeft, innerRight } = this.margin
     const { width, height } = this.getSize()
     const { svg, dataCanvas } = this
-    const { yDomain, xDomain, xLabel, yLabel, interactionData: { hover, hoverDateValue } } = props
+    const { data, yDomain, xDomain, xLabel, yLabel, interactionData: { hover, hoverDateValue } } = props
 
     // ---------------------------------------------------
     // Functions
@@ -261,6 +269,7 @@ class AreaChart extends React.Component {
 
     // Set the data to use to get the correct index.
     svg.select('.trigger-rect')
+      .datum(data)
       .attr('width', width)
       .attr('height', height + top)
 
@@ -391,7 +400,8 @@ class AreaChart extends React.Component {
             <div className='popover__body'>
               <dl className='legend par-legend'>
                 {data.map((d, i) => {
-                  const val = d.values.find(v => v.year === year).value
+                  const datum = d.values.find(v => v.year === year)
+                  const val = datum ? datum.value : null
                   return (
                     <React.Fragment key={d.name}>
                       <dt className={`legend__key--val-${i + 1}`}>{d.name}</dt>
@@ -446,10 +456,12 @@ function chartArea () {
     .x(d => _xScale(d.date))
     .y0(d => _yScale(d.d0))
     .y1(d => _yScale(d.d1))
+    .defined(d => d.value !== null)
 
   const lineFn = line()
     .x(d => _xScale(d.date))
     .y(d => _yScale(d.d1))
+    .defined(d => d.value !== null)
 
   function chartArea (selection) {
     const data = selection.data()
@@ -488,7 +500,7 @@ function chartArea () {
     // ---------------------------------------------------
     // Line
     const circle = selection.selectAll('.area__circle')
-      .data(values)
+      .data(values.filter(d => d.value !== null))
 
     // Remove old.
     circle.exit().remove()
@@ -530,7 +542,14 @@ function chartArea () {
 export const computeAreaChartData = (data, passThrough) => {
   if (!data) return { yDomain: [], xDomain: [], data: [], xLabel: '', yLabel: '' }
 
-  const { left: toKeep, right: toGroup } = splitArray(data.data, item => passThrough.indexOf(item.name) !== -1)
+  // If passThrough is empty, keep all.
+  const { left: toKeep, right: toGroup } = splitArray(data.data, item => passThrough.length ? passThrough.indexOf(item.name) !== -1 : true)
+
+  // Sort the toKeep.
+  toKeep.sort((a, b) => {
+    const sum = (v) => v.reduce((acc, o) => acc + o.value, 0)
+    return sum(a.values) > sum(b.values) ? 1 : -1
+  })
 
   const others = {
     name: 'Other',
@@ -557,16 +576,9 @@ export const computeAreaChartData = (data, passThrough) => {
     }, [])
   }
 
-  // Sort the toKeep.
-  toKeep.sort((a, b) => {
-    const sum = (v) => v.reduce((acc, o) => acc + o.value, 0)
-    return sum(a.values) > sum(b.values) ? 1 : -1
-  })
-
-  const chartData = [
-    others,
-    ...toKeep
-  ]
+  const chartData = others.values.length
+    ? [others, ...toKeep]
+    : toKeep
 
   // I'll stack my own data.
   // D3's method for stacking data returns an array and it's not easy to use

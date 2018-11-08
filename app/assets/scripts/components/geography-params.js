@@ -194,10 +194,13 @@ export const renderParArea = (area, sectionDef, chartsMeta, chartsData, reactCom
 
         // Reconcile the data of the group and children.
         const reconciledData = {
-          ...chartDef,
-          ...chartGroupData,
-          size: el.size,
+          ...el, // Layout definition.
+          ...chartDef, // Chart definition.
+          ...chartGroupData, // Chart data for the group.
           children: reconciledChildren
+          // Foreach child:
+          // Chart definition.
+          // Chart data.
         }
 
         // Children are all the same type. Render based off of that
@@ -215,15 +218,16 @@ export const renderParArea = (area, sectionDef, chartsMeta, chartsData, reactCom
 
         // Reconcile chart data, i.e. merge all in an object.
         const reconciledData = {
-          ...chartDef,
-          data: chartData,
-          size: el.size
+          ...el, // Layout definition.
+          ...chartDef, // Chart definition.
+          data: chartData // Chart data.
         }
 
         switch (reconciledData.type) {
           case 'answer':
             return renderParCardAnswer(reconciledData)
           case 'absolute':
+          case 'average':
             return renderParCardAbsolute(reconciledData)
           case 'timeSeries':
             return renderParCardTimeSeries(reconciledData, reactComponent)
@@ -331,17 +335,10 @@ const renderParCardAbsolute = (chart) => {
  *                               functions.
  */
 const renderParCardTimeSeries = (chart, reactComponent) => {
-  const renewableTypes = [
-    'Biomass & Waste',
-    'Geothermal',
-    'Small Hydro',
-    'Solar',
-    'Wind'
-  ]
   // Chart id works as a cache key because the data is never going to be
   // updated. If in the future this changes then the cache key needs to
   // be dynamic.
-  const chartData = memoizedComputeAreaChartData(chart.data, renewableTypes, chart.id)
+  const chartData = memoizedComputeAreaChartData(chart.data, chart.mainDataLayers, chart.id)
   return (
     <ParCard
       key={chart.id}
