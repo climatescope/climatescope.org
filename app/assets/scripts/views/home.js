@@ -4,13 +4,112 @@ import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { Timeline } from 'react-twitter-widgets'
+import c from 'classnames'
 
 import { environment, baseurl } from '../config'
 import { downloadData } from '../utils/constants'
+import { fetchMediumPosts } from '../redux/medium'
+import { wrapApiResult } from '../utils/utils'
+import { initializeArrayWithRange } from '../utils/array'
 
 import App from './app'
+import { LoadingSkeletonGroup, LoadingSkeleton } from '../components/loading-skeleton'
+
+const MediumCard = ({ isLoading, isFeatured, title, url, description, tags }) => (
+  <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
+    <div className='card__contents'>
+      {isLoading ? (
+        <LoadingSkeletonGroup>
+          <LoadingSkeleton size='large' type='heading' width={3 / 4} />
+          <LoadingSkeleton />
+          <LoadingSkeleton />
+          <LoadingSkeleton width={1 / 4} style={{ marginBottom: '4rem' }} />
+          <LoadingSkeleton width={2 / 3} />
+          <LoadingSkeleton width={1 / 4} />
+        </LoadingSkeletonGroup>
+      ) : (
+        <>
+          <header className='card__header'>
+            <div className='card__headline'>
+              <a href={url} title='Read insight' className='link-wrapper'>
+                <p className='card__subtitle'>Explore the Report</p>
+                <h1 className='card__title'>{title}</h1>
+              </a>
+            </div>
+          </header>
+          <div className='card__body'>
+            <div className='card__prose'>
+              <p>{description}</p>
+            </div>
+          </div>
+          <footer>
+            {tags.length && (
+              <>
+                <h2 className='visually-hidden'>Topics</h2>
+                <ul className='topics-list'>
+                  {tags.map(t => (
+                    <li key={t.id}><a href={t.url} className="topic-link" title='Browse Insights by Topic'><span>{t.name}</span></a></li>
+                  ))}
+                </ul>
+              </>
+            )}
+            <a href={url} title='Read insight' className='card__go-link'><span>Read article</span></a>
+          </footer>
+        </>
+      )}
+    </div>
+  </article>
+)
+
+if (environment !== 'production') {
+  MediumCard.propTypes = {
+    isLoading: T.bool,
+    isFeatured: T.bool,
+    title: T.string,
+    url: T.string,
+    description: T.string,
+    tags: T.array
+  }
+}
 
 class Home extends React.Component {
+  componentDidMount () {
+    this.props.fetchMediumPosts()
+  }
+
+  renderMediumPosts () {
+    const { isReady, getData, hasError } = this.props.mediumPosts
+    const posts = getData([])
+
+    if (hasError()) {
+      return <p>Something went wrong. Try again.</p>
+    }
+
+    return (
+      <ol className='card-list'>
+        {isReady() ? (
+          posts.map((post, i) => (
+            <li key={post.id} className='card-list__item'>
+              <MediumCard
+                isFeatured={i === 0}
+                title={post.title}
+                url={post.url}
+                description={post.description}
+                tags={post.tags}
+              />
+            </li>
+          ))
+        ) : (
+          initializeArrayWithRange(2).map(i => (
+            <li key={i} className='card-list__item'>
+              <MediumCard isLoading />
+            </li>
+          ))
+        )}
+      </ol>
+    )
+  }
+
   render () {
     return (
       <App className='page--has-hero'>
@@ -39,152 +138,7 @@ class Home extends React.Component {
               <div className='col--main'>
                 <section className='fsection'>
                   <h1 className='fsection__title'>Insights</h1>
-                  <ol className='card-list'>
-                    <li className='card-list__item'>
-                      <article className='card card--short card--featured insight'>
-                        <div className='card__contents'>
-                          <header className='card__header'>
-                            <div className='card__headline'>
-                              <a href='#' title='Read insight' className='link-wrapper'>
-                                <p className='card__subtitle'>Explore the Report</p>
-                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
-                              </a>
-                            </div>
-                          </header>
-                          <div className='card__body'>
-                            <div className='card__prose'>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                            </div>
-                          </div>
-                          <footer>
-                            <h2 className='visually-hidden'>Topics</h2>
-                            <ul className='topics-list'>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
-                            </ul>
-                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
-                          </footer>
-                        </div>
-                      </article>
-                    </li>
-
-                    <li className='card-list__item'>
-                      <article className='card card--short insight'>
-                        <div className='card__contents'>
-                          <header className='card__header'>
-                            <div className='card__headline'>
-                              <a href='#' title='Read insight' className='link-wrapper'>
-                                <p className='card__subtitle'>Explore the Report</p>
-                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
-                              </a>
-                            </div>
-                          </header>
-                          <div className='card__body'>
-                            <div className='card__prose'>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                            </div>
-                          </div>
-                          <footer>
-                            <h2 className='visually-hidden'>Topics</h2>
-                            <ul className='topics-list'>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
-                            </ul>
-                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
-                          </footer>
-                        </div>
-                      </article>
-                    </li>
-
-                    <li className='card-list__item'>
-                      <article className='card card--short insight'>
-                        <div className='card__contents'>
-                          <header className='card__header'>
-                            <div className='card__headline'>
-                              <a href='#' title='Read insight' className='link-wrapper'>
-                                <p className='card__subtitle'>Explore the Report</p>
-                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
-                              </a>
-                            </div>
-                          </header>
-                          <div className='card__body'>
-                            <div className='card__prose'>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                            </div>
-                          </div>
-                          <footer>
-                            <h2 className='visually-hidden'>Topics</h2>
-                            <ul className='topics-list'>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
-                            </ul>
-                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
-                          </footer>
-                        </div>
-                      </article>
-                    </li>
-
-                    <li className='card-list__item'>
-                      <article className='card card--short insight'>
-                        <div className='card__contents'>
-                          <header className='card__header'>
-                            <div className='card__headline'>
-                              <a href='#' title='Read insight' className='link-wrapper'>
-                                <p className='card__subtitle'>Explore the Report</p>
-                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
-                              </a>
-                            </div>
-                          </header>
-                          <div className='card__body'>
-                            <div className='card__prose'>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                            </div>
-                          </div>
-                          <footer>
-                            <h2 className='visually-hidden'>Topics</h2>
-                            <ul className='topics-list'>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
-                            </ul>
-                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
-                          </footer>
-                        </div>
-                      </article>
-                    </li>
-
-                    <li className='card-list__item'>
-                      <article className='card card--short insight'>
-                        <div className='card__contents'>
-                          <header className='card__header'>
-                            <div className='card__headline'>
-                              <a href='#' title='Read insight' className='link-wrapper'>
-                                <p className='card__subtitle'>Explore the Report</p>
-                                <h1 className='card__title'>Lorem ipsum dolor sit amet</h1>
-                              </a>
-                            </div>
-                          </header>
-                          <div className='card__body'>
-                            <div className='card__prose'>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                            </div>
-                          </div>
-                          <footer>
-                            <h2 className='visually-hidden'>Topics</h2>
-                            <ul className='topics-list'>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Energy</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Investment</span></a></li>
-                              <li><a href='#' className="topic-link" title='Brose Insights by Topic'><span>Policies</span></a></li>
-                            </ul>
-                            <a href='#' title='Read insight' className='card__go-link'><span>Read article</span></a>
-                          </footer>
-                        </div>
-                      </article>
-                    </li>
-                  </ol>
+                  {this.renderMediumPosts()}
                 </section>
               </div>
               <div className='col--sec'>
@@ -232,20 +186,23 @@ class Home extends React.Component {
 
 if (environment !== 'production') {
   Home.propTypes = {
+    fetchMediumPosts: T.func,
     location: T.object,
-    history: T.object
+    history: T.object,
+    mediumPosts: T.object
   }
 }
 
 function mapStateToProps (state) {
   return {
+    mediumPosts: wrapApiResult(state.medium.postList)
   }
 }
 
 function dispatcher (dispatch) {
   return {
+    fetchMediumPosts: (...args) => dispatch(fetchMediumPosts(...args))
   }
 }
 
 export default connect(mapStateToProps, dispatcher)(Home)
-
