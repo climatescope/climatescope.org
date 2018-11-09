@@ -54,7 +54,7 @@ export default [
     ],
     areaBeta: [
       {
-        id: 'availability of policies',
+        id: 'availabilityPolicies',
         size: 'medium'
       },
       {

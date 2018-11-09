@@ -205,8 +205,15 @@
   list-style: none;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+
+  .info-card--small & {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .info-card--medium & {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
 }
 
 .card-percent {
@@ -263,6 +270,14 @@
     }
   }
 }
+
+/* Overrides for availability of policies */
+.chart-availability-policies {
+  .card-percent-bar {
+    height: 10rem;
+  }
+}
+
 
 /* Area Chart
    ========================================================================== */

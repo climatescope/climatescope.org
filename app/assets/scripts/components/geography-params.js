@@ -5,8 +5,10 @@ import c from 'classnames'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 import { environment } from '../config'
-import AreaChart, { memoizedComputeAreaChartData } from './area-chart'
 import { round } from '../utils/math'
+
+import AreaChart, { memoizedComputeAreaChartData } from './area-chart'
+import AvailabilityOfPolicies from './con--availability-polices'
 
 // /////////////////////////////////////////////////////////////////////////////
 // React Components
@@ -158,6 +160,17 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
     }
 
     try {
+      // Policies is a special element that needs to access specific data.
+      if (el.id === 'availabilityPolicies') {
+        return (
+          <AvailabilityOfPolicies
+            key={el.id}
+            geoIso={geography.iso}
+            size={el.size}
+          />
+        )
+      }
+
       const [chartDef] = getChartDef(chartsMeta, el.id)
 
       // Group elements mut be handled differently.
