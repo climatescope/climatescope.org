@@ -54,10 +54,10 @@ export const regions = [
 export const downloadData = {
   full: [
     {
-      url: '/assets/data/reports/climatescope-2017-report-en.pdf',
+      url: '/assets/data/reports/climatescope-2018-report-en.pdf',
       title: 'Download full report in PDF',
-      label: 'PDF',
-      size: '5Mb'
+      label: '2018 (PDF)',
+      size: '?Mb'
     }
   ],
   model: [
@@ -75,6 +75,12 @@ export const downloadData = {
     }
   ],
   fullPrevious: [
+    {
+      url: '/assets/data/reports/climatescope-2017-report-en.pdf',
+      title: 'Download full report in PDF',
+      label: '2017 (PDF)',
+      size: '5Mb'
+    },
     {
       url: '/assets/data/reports/climatescope-2016-report-en.pdf',
       title: 'Download full report in PDF',
@@ -133,3 +139,59 @@ export const downloadData = {
     }
   ]
 }
+
+export const medium = {
+  pages: [
+    {
+      url: 'https://medium.com/climatescope/insights',
+      title: 'View insights section',
+      label: 'Insights',
+      description: 'Lorem ipsum dolor sit amet'
+    },
+    {
+      url: 'https://medium.com/climatescope/updates',
+      title: 'View updates section',
+      label: 'Updates',
+      description: 'Lorem ipsum dolor sit amet'
+    },
+    {
+      url: 'https://medium.com/climatescope/off-grid-quarterly',
+      title: 'View Off Grid Quarterly section',
+      label: 'Off Grid Quarterly',
+      description: 'Lorem ipsum dolor sit amet'
+    }
+  ]
+}
+
+export const tools = [
+  {
+    url: '/compare',
+    title: 'View results side by side',
+    label: 'Geography Comparison',
+    description: 'Pick any two nations, see how they compare'
+  },
+  {
+    url: '/off-grid-data-hub',
+    title: 'Use the Off-grid Data Hub',
+    label: 'Off-grid Data Hub',
+    description: 'Energy access rates, fuel prices, other key distributed power data'
+  },
+  {
+    url: '/clean-energy-investments',
+    title: 'Use the Clean Energy Investment',
+    label: 'Clean Energy Investment',
+    description: 'Who backs clean energy in emerging markets?'
+  },
+  {
+    url: '/capacity-generation',
+    title: 'Use the Capacity Generation',
+    label: 'Capacity Generation',
+    description: 'Who has the most (and least) clean enery today?'
+  },
+  {
+    url: '/policies',
+    title: 'Browse the policy database',
+    label: 'Policies',
+    description: '800+ policies to improve clean enery development'
+  }
+]

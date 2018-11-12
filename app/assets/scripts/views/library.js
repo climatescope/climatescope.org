@@ -2,13 +2,14 @@
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
+import c from 'classnames'
 
 import { environment } from '../config'
-import { downloadData } from '../utils/constants'
+import { downloadData, medium, tools } from '../utils/constants'
 
 import App from './app'
 import ShareOptions from '../components/share'
+import SmartLink from '../components/smart-link'
 
 const DownloadWell = ({ type, title, description, items }) => (
   <div className={`well well-l download download-${type}`}>
@@ -44,23 +45,54 @@ if (environment !== 'production') {
   }
 }
 
-const ToolCard = ({ url, linkTitle, title, description }) => (
-  <article className='ccard ccard--tools'>
-    <Link to={url} title={linkTitle} className='ccard__contents'>
-      <h1 className='ccard__title'>{title}</h1>
-      <p className='ccard__description'>{description}</p>
-    </Link>
+const LibCard = ({ url, subtitle, linkTitle, footerTitle, title, description, isFeatured }) => (
+  <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
+    <div className='card__contents'>
+      <header className='card__header'>
+        <div className='card__headline'>
+          <SmartLink to={url} title={linkTitle} className='link-wrapper'>
+            <p className='card__subtitle'>{subtitle}</p>
+            <h1 className='card__title'>{title}</h1>
+          </SmartLink>
+        </div>
+      </header>
+      {description && (
+        <div className='card__body'>
+          <div className='card__prose'>
+            <p>{description}</p>
+          </div>
+        </div>
+      )}
+      <footer>
+        <SmartLink to={url} title={linkTitle} className='card__go-link'><span>{footerTitle}</span></SmartLink>
+      </footer>
+    </div>
   </article>
 )
 
 if (environment !== 'production') {
-  ToolCard.propTypes = {
+  LibCard.propTypes = {
+    isFeatured: T.bool,
     url: T.string,
     linkTitle: T.string,
     title: T.string,
-    description: T.string
+    description: T.string,
+    subtitle: T.string,
+    footerTitle: T.string
   }
 }
+
+const ToolCard = (props) => (
+  <LibCard {...props} subtitle='Tool' footerTitle='Explore the tool' />
+)
+
+const MediumCard = (props) => (
+  <LibCard {...props} subtitle='Medium' footerTitle='View archive' />
+)
+
+const ReportCard = (props) => (
+  <LibCard {...props} subtitle='Report' footerTitle='Download report' />
+)
 
 class Library extends React.Component {
   render () {
@@ -82,84 +114,55 @@ class Library extends React.Component {
             <div className='inner'>
               <div className='col--main prose'>
 
+                <h2 className='visually-hidden'>Medium</h2>
+                <ul className='library__list'>
+                  {medium.pages.map(({ url, title, label, description }) => (
+                    <li key={url} className='library__list-item'>
+                      <MediumCard
+                        url={url}
+                        linkTitle={title}
+                        title={label}
+                        description={description}
+                      />
+                    </li>
+                  ))}
+                </ul>
+
                 <h2>Tools</h2>
-                <ul className='tools'>
-                  <li className='tools__list-item'>
-                    <ToolCard
-                      url='/compare'
-                      linkTitle='View results side by side'
-                      title='Geography Comparison'
-                      description='Pick any two nations, see how they compare'
-                    />
-                  </li>
-                  <li className='tools__list-item'>
-                    <ToolCard
-                      url='/off-grid-data-hub'
-                      linkTitle='Use the Off-grid Data Hub'
-                      title='Off-grid Data Hub'
-                      description='Energy access rates, fuel prices, other key distributed power data'
-                    />
-                  </li>
-                  <li className='tools__list-item'>
-                    <ToolCard
-                      url='/clean-energy-investments'
-                      linkTitle='Use the Clean Energy Investment'
-                      title='Clean Energy Investment'
-                      description='Who backs clean energy in emerging markets?'
-                    />
-                  </li>
-                  <li className='tools__list-item'>
-                    <ToolCard
-                      url='/capacity-generation'
-                      linkTitle='Use the Capacity Generation'
-                      title='Capacity Generation'
-                      description='Who has the most (and least) clean enery today?'
-                    />
-                  </li>
-                  <li className='tools__list-item'>
-                    <ToolCard
-                      url='/policies'
-                      linkTitle='Browse the policy database'
-                      title='Policies'
-                      description='800+ policies to improve clean enery development'
-                    />
-                  </li>
+                <ul className='library__list'>
+                  {tools.map(({ url, title, label, description }) => (
+                    <li key={url} className='library__list-item'>
+                      <ToolCard
+                        url={url}
+                        linkTitle={title}
+                        title={label}
+                        description={description}
+                      />
+                    </li>
+                  ))}
                 </ul>
 
-                <h2>Download</h2>
-                <ul className="well-list">
-                  <li>
-                    <DownloadWell
-                      type='pdf'
-                      title='Full Report'
-                      description='Download the full Climatescope 2017 report.'
-                      items={downloadData.full} />
-                  </li>
-                  <li>
-                    <DownloadWell
-                      type='data'
-                      title='Model'
-                      description='Download the Climatescope model and raw data.'
-                      items={downloadData.model} />
-                  </li>
-                </ul>
-
-                <h2>Previous editions</h2>
-                <ul className="well-list">
-                  <li>
-                    <DownloadWell
-                      type='pdf'
-                      title='Full Report'
-                      description='Download the full Climatescope report.'
-                      items={downloadData.fullPrevious} />
-                  </li>
-                  <li>
-                    <DownloadWell
-                      type='data'
-                      title='Source Data'
-                      description='Download the complete set of underlying data.'
-                      items={downloadData.sourcePrevious} />
-                  </li>
+                <h2>Reports</h2>
+                <ul className='library__list library__list--small'>
+                  {downloadData.full.map(({ url, title, label, description }) => (
+                    <li key={url} className='library__list-item'>
+                      <ReportCard
+                        isFeatured
+                        url={url}
+                        linkTitle={title}
+                        title={label}
+                      />
+                    </li>
+                  ))}
+                  {downloadData.fullPrevious.map(({ url, title, label, description }) => (
+                    <li key={url} className='library__list-item'>
+                      <ReportCard
+                        url={url}
+                        linkTitle={title}
+                        title={label}
+                      />
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
