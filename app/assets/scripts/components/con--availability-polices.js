@@ -8,6 +8,7 @@ import c from 'classnames'
 import { environment } from '../config'
 import { wrapApiResult, getFromState } from '../utils/utils'
 import { fetchPolicyCountryStats } from '../redux/policies'
+import { LoadingSkeletonGroup, LoadingSkeleton } from './loading-skeleton'
 
 // Connected component.
 
@@ -30,10 +31,20 @@ class AvailabilityOfPolicies extends React.PureComponent {
       <article className={c('info-card info-card--light chart-availability-policies', {
         [`info-card--${size}`]: !!size
       })}>
-        <h1 className='info-card__title'>Availability of policies</h1>
-        <Link to={`/policies?country=${geoIso}`} title='View all geography policies'>View all policies{isReady() && ` (${total})`}</Link>
+        <div className='info-card__headline'>
+          <h1 className='info-card__title'>Availability of policies</h1>
+          <Link to={`/policies?country=${geoIso}`} title='View all geography policies'>View all policies{isReady() && ` (${total})`}</Link>
+        </div>
+
         {hasError() && (
           <p>Something went wrong. Try again.</p>
+        )}
+
+        {!isReady() && (
+          <LoadingSkeletonGroup style={{ marginTop: '2rem' }}>
+            <LoadingSkeleton size='large' width={1 / 8} />
+            <LoadingSkeleton width={1 / 4} style={{ height: '10rem' }} />
+          </LoadingSkeletonGroup>
         )}
 
         {isReady() && !hasError() && (

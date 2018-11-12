@@ -14,6 +14,15 @@
   }
 }
 
+.info-card__headline {
+  display: flex;
+  font-family: $heading-font-family;
+
+  .info-card__title {
+    flex: 1 0;
+  }
+}
+
 .info-card__title {
   font-size: 1rem;
   line-height: 1.25rem;
