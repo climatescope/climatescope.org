@@ -189,10 +189,11 @@ export function fetchPolicyCountryStats (countryIso) {
       // The values of mechanisms will be changed by reference.
       let mechanisms = [
         { count: 0, name: 'Auctions and tenders', id: 'Auctions and tenders' },
+        { count: 0, name: 'Energy target', id: 'Energy target' },
         { count: 0, name: 'Feed-in tariff or premium', id: 'Feed-in tariff or premium' },
-        { count: 0, name: 'Utility regulation', id: 'Utility regulation' },
-        { count: 0, name: 'Equity Finance Mechanism', id: 'Equity Finance Mechanism' },
-        { count: 0, name: 'Tax-based Mechanism', id: 'Tax-based Mechanism' }
+        { count: 0, name: 'Net metering', id: 'Net metering' },
+        { count: 0, name: 'Tax-based Mechanism', id: 'Tax-based Mechanism' },
+        { count: 0, name: 'Utility regulation', id: 'Utility regulation' }
       ]
 
       response.listData.forEach(policy => {

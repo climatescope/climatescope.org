@@ -212,13 +212,17 @@
   }
   .info-card--medium & {
     grid-template-columns: repeat(6, 1fr);
+    
+    @include media(large-only) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
-
 }
 
 .card-percent {
   display: flex;
   flex-flow: column-reverse;
+  min-width: 4rem;
 
   dd {
     font-family: $heading-font-family;
