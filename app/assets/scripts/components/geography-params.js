@@ -301,7 +301,7 @@ const renderParCardAnswer = (chart) => {
       title={chart.name}
       description={chart.description || null}
       size={chart.size}
-      theme={'light'}
+      topic={chart.topic}
     >
       {chart.data.value === null ? (
         <p className='card-absolute'>N/A</p>
@@ -333,7 +333,7 @@ const renderParCardAbsolute = (chart) => {
       title={chart.name}
       description={chart.description || null}
       size={chart.size}
-      theme={'light'}
+      topic={chart.topic}
     >
 
       <p className='card-absolute'>
@@ -359,6 +359,7 @@ const renderParCardTimeSeries = (chart, reactComponent, key) => {
     <ParCard
       key={chart.id}
       title={chart.name}
+      description={chart.description || null}
       size={chart.size}
     >
       <AreaChart
@@ -437,7 +438,7 @@ const renderParCardAbsoluteGroup = (chart) => {
       title={chart.name}
       description={chart.description || null}
       size={chart.size}
-      theme={'light'}
+      topic={chart.topic}
     >
 
       <ul className='card-percent-list'>
