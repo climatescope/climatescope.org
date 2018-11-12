@@ -294,7 +294,7 @@ const renderParCardError = (chart, error) => {
  * @param {object} chart Chart data
  */
 const renderParCardAnswer = (chart) => {
-  const answer = (chart.data.value || '').toString()
+  const answer = chart.data.value + ''
   return (
     <ParCard
       key={chart.id}
@@ -402,11 +402,25 @@ const renderParCardAnswerGroup = (chart) => {
         </thead>
         <tbody>
           {chart.children.map(child => {
+            if (child.data.value === null) return null
+            const answer = child.data.value + ''
             // The label for this child value. We can't use ids because they're
-            // not consisten.
-            const dataOptLabel = child.options.find(opt => opt.id === child.data.value.toString()).label
+            // not consistent.
+            const dataOpt = child.options.find(opt => opt.id === answer)
+            if (!dataOpt) {
+              return (
+                <tr key={child.id}>
+                  <th>
+                    <h2>Chart Error</h2>
+                    <p>The chart [{child.id}] has a value of [{child.data.value}] which is not found in options [{child.options.map(o => o.id).join(', ')}]</p>
+                  </th>
+                  <td colSpan='3'></td>
+                </tr>
+              )
+            }
+            const dataOptLabel = dataOpt.label
             return (
-              <tr key={child.id}>
+              <tr key={child.id} className={c({ [`feature-table__line--par-${child.topic}`]: !!child.topic })}>
                 <th>
                   <h2>{child.name}</h2>
                   <p>{child.description}</p>

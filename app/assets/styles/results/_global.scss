@@ -96,7 +96,7 @@
   color: #fff;
 }
 
-.info-card--par-experiences {
+.info-card--par-experience {
   @extend .antialiased;
   background: $parameter-color-c;
   color: #fff;
@@ -195,5 +195,23 @@
 
   *:last-child {
     margin-bottom: 0;
+  }
+
+  .feature-table__line--par-fundamentals {
+    h2 {
+      color: $parameter-color-a
+    }
+  }
+
+  .feature-table__line--par-opportunities {
+    h2 {
+      color: $parameter-color-b
+    }
+  }
+
+  .feature-table__line--par-experience {
+    h2 {
+      color: $parameter-color-c
+    }
   }
 }
