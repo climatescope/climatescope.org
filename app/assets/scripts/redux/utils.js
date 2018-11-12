@@ -84,7 +84,7 @@ export function baseAPIReducer (state, action, actionName) {
   switch (action.type) {
     case `INVALIDATE_${actionName}`:
       return hasId
-        ? { [action.id]: state }
+        ? { ...state, [action.id]: state }
         : state
     case `REQUEST_${actionName}`:
       const changeReq = {
@@ -93,7 +93,7 @@ export function baseAPIReducer (state, action, actionName) {
         data: {}
       }
       return hasId
-        ? { [action.id]: changeReq }
+        ? { ...state, [action.id]: changeReq }
         : changeReq
     case `RECEIVE_${actionName}`:
       let st = {
@@ -111,7 +111,7 @@ export function baseAPIReducer (state, action, actionName) {
       }
 
       return hasId
-        ? { [action.id]: st }
+        ? { ...state, [action.id]: st }
         : st
   }
   return state
