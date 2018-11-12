@@ -123,6 +123,10 @@ export default [
     areaAlpha: [
       {
         id: 'sectionHeader'
+      },
+      {
+        id: 'doingBusinessFeatures',
+        size: 'large'
       }
     ],
     areaBeta: [
@@ -143,6 +147,10 @@ export default [
     areaAlpha: [
       {
         id: 'sectionHeader'
+      },
+      {
+        id: 'barriersFeatures',
+        size: 'large'
       }
     ],
     areaBeta: [
