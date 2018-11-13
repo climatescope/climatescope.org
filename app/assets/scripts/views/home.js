@@ -157,8 +157,15 @@ class Home extends React.Component {
                 </section>
               </div>
               <div className='col--sec'>
-                <section className='fsection'>
-                  <h1 className='fsection__title'>Tweets</h1>
+                <section className='fsection fsection--tweets'>
+                  <header className='fsection__header'>
+                    <div className='fsection__headline'>
+                      <h1 className='fsection__title'>Tweets</h1>
+                    </div>
+                    <div className='fsection__actions'>
+                      <a href='https://twitter.com/BloombergNEF' title='View all tweets' className='fsa-go'><span>View all</span></a>
+                    </div>
+                  </header>
                   {!this.state.twitterLoaded && (
                     <>
                       <LoadingSkeletonGroup>
@@ -178,15 +185,15 @@ class Home extends React.Component {
                       </LoadingSkeletonGroup>
                     </>
                   )}
-                  <div style={{ display: this.state.twitterLoaded ? 'block' : 'none' }}>
+                  <div style={{ display: this.state.twitterLoaded ? 'block' : 'none' }} className='timeline-wrapper'>
                     <Timeline
                       dataSource={{
                         sourceType: 'profile',
                         screenName: 'BloombergNEF'
                       }}
                       options={{
-                        chrome: 'noheader noborders',
-                        height: '1000'
+                        chrome: 'noheader noborders nofooter noscrollbar',
+                        height: '100%'
                       }}
                       onLoad={() => this.setState({ twitterLoaded: true })}
                     />
