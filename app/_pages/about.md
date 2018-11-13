@@ -22,7 +22,7 @@ In the last year, Climatescope has expanded to include 13 additional countries i
 Ethan Zindler
 
 ### Project manager
-Dario Traum 
+Dario Traum
 
 ### Lead Analyst
 Luiza Demôro
@@ -30,7 +30,7 @@ Luiza Demôro
 ### Head of Off-Grid Analysis
 Itamar Orlandi
 
-### Lead Modeller 
+### Lead Modeller
 Ulimmeh Ezekiel
 
 ### Project Coordinator
@@ -45,7 +45,7 @@ Angus McCrone, Ben Vickers, Bryony Collins, Vandana Gombar.
 Meredith Annex, Thea Bronlund, Bryony Collins, Victoria Cuming, Isabelle Edwards, Ulimmeh Ezekiel, Raksha Gosai, Andrew Grant, Conor Hanley, Tom Harries, Kyle Harrison, Lara Hayim, Takehiro Kawahara, Keegan Kruger, Eleonore Lazat, Daniel McLaughlin, Pietro Radoia, Dean Hope Robertson, Kieron Stopforth
 
 #### Asia
-Richard Chatterton, Shantanu Jaiswal, Jacqueline Lilinshtein, Sophie Lu, Diego Marquina, Alex Morgan, Steph Munro, Itamar Orlandi, Arvind Pidaparthi, Abhishek Rohatgi, Johana Typloltova 
+Richard Chatterton, Shantanu Jaiswal, Jacqueline Lilinshtein, Sophie Lu, Diego Marquina, Alex Morgan, Steph Munro, Itamar Orlandi, Arvind Pidaparthi, Abhishek Rohatgi, Johana Typloltova
 
 #### Europe
 Nick Albanese, Katya Sharavzhamtsyna, Nick Steckler, Ben Vickers.
@@ -74,7 +74,6 @@ All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eo
   <li><a class="logo-fomin" href="http://www.fomin.org/" title="" target="_blank"><img width="208" height="128" alt="" src="{{ site.baseurl }}/assets/graphics/layout/logo-fomin-en-flat-pos.svg"><span>Multilateral Investment Fund</span></a></li>
   <li><a class="logo-powerafrica" href="http://www.usaid.gov/powerafrica" title="Visit Power Africa" target="_blank"><img width="288" height="128" alt="Power Africa logo" src="{{ site.baseurl }}/assets/graphics/layout/logo-powerafrica-flat-pos.svg"><span>Power Africa</span></a></li>
   <li><a class="logo-usaid" href="http://www.usaid.gov" title="Visit USAID"  target="_blank"><img width="288" height="128" alt="USAID logo" src="{{ site.baseurl }}/assets/graphics/layout/logo-usaid-flat-pos.svg" /><span>USAID</span></a></li>
-  <li><a className='logo-ukaid' href='https://www.gov.uk/government/organisations/department-for-international-development' title='Visit UK Aid' target='_blank'><img width='118' height='128' alt='UK Aid logo' src='{{ site.baseurl }}/assets/graphics/layout/logo-ukaid-flat-pos.svg' /><span>UK Aid</span></a></li>
 </ul>
 
 ### Developed by

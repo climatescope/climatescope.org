@@ -56,7 +56,8 @@
     background: rgba($base-color, 0.04);
     border-radius: $base-border-radius;
     padding: ($global-spacing / 2) ($global-spacing * 1.5);
-    width: 12rem;
+    width: 100%;
+    max-width: 12rem;
     height: 5rem;
     line-height: 4rem;
   }
