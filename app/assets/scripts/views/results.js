@@ -248,6 +248,7 @@ class Results extends React.Component {
                 {this.renderTitle()}
               </div>
               <div className='inpage__actions'>
+                <a href='#' className='ipa-download' title='Download results in PDF format'><span>Download</span></a>
                 <ShareOptions url={window.location.toString()} />
               </div>
             </div>
