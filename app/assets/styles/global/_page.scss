@@ -68,11 +68,17 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
   }
 
   a {
     color: inherit;
+  }
+}
+
+.page__headline {
+  > *:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -93,6 +99,26 @@
   em {
     font-style: normal;
     opacity: 0.64;
+  }
+}
+
+.page__subtitle {
+  @extend .heading-alt;
+  text-transform: uppercase;
+
+  a {
+    display: inline-block;
+    opacity: 0.64;
+  }
+
+  img {
+    vertical-align: middle;
+    width: auto;
+    height: 1rem;
+  }
+
+  span {
+    @extend .visually-hidden;
   }
 }
 
