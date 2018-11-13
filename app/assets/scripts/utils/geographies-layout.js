@@ -87,7 +87,7 @@ export default [
         size: 'small'
       },
       {
-        id: 'availability of finance',
+        id: 'availabilityFinance',
         size: 'small'
       }
     ]

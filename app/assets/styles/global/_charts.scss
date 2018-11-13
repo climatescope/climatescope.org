@@ -198,6 +198,32 @@
 }
 
 
+/* Range Chart
+   ========================================================================== */
+
+.range-legend {
+  dt {
+    font-size: 0.75rem;
+    position: relative;
+    line-height: 1rem;
+    margin: 0 0 0 1.5rem;
+    padding: 0 0 0 0.5rem;
+    color: #fff;
+  }
+
+  dd {
+    float: left;
+    width: 1.5rem;
+    clear: left;
+    margin-top: -1rem;
+    font-family: $heading-font-family;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #fff;
+  }
+}
+
+
 /* Absolute Group Chart
    ========================================================================== */
 

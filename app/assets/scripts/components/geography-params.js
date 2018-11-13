@@ -244,6 +244,8 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
           case 'absolute':
           case 'average':
             return renderParCardAbsolute(reconciledData)
+          case 'range':
+            return renderParCardRange(reconciledData)
           case 'timeSeries':
             // Iso + chart id works as a cache key because the data is never
             // going to be updated. If in the future this changes then the cache
@@ -339,6 +341,38 @@ const renderParCardAbsolute = (chart) => {
       <p className='card-absolute'>
         {isNaN(Number(val)) ? val : round(val)}
         {chart.unit && <small>{chart.unit}</small>}
+      </p>
+    </ParCard>
+  )
+}
+
+/**
+ * Renders an "range" card type.
+ *
+ * @param {object} chart Chart data
+ */
+const renderParCardRange = (chart) => {
+  const val = chart.data.value
+  return (
+    <ParCard
+      key={chart.id}
+      title={chart.name}
+      description={chart.description || null}
+      size={chart.size}
+      topic={chart.topic}
+    >
+
+      <dl className='range-legend'>
+        {chart.options.map(opt => (
+          <React.Fragment key={opt.id}>
+            <dt>{opt.label}</dt>
+            <dd>{opt.id}</dd>
+          </React.Fragment>
+        ))}
+      </dl>
+
+      <p className='card-absolute'>
+        {isNaN(Number(val)) ? val : round(val)}
       </p>
     </ParCard>
   )
