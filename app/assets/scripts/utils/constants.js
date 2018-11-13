@@ -195,3 +195,26 @@ export const tools = [
     description: '800+ policies to improve clean enery development'
   }
 ]
+
+export const editions = [
+  {
+    url: 'http://2014.global-climatescope.org/en/',
+    title: 'View 2014 edition of Climatescope',
+    label: '2014'
+  },
+  {
+    url: 'http://2015.global-climatescope.org/en/',
+    title: 'View 2015 edition of Climatescope',
+    label: '2015'
+  },
+  {
+    url: 'http://2016.global-climatescope.org/en/',
+    title: 'View 2016 edition of Climatescope',
+    label: '2016'
+  },
+  {
+    url: 'http://2017.global-climatescope.org/en/',
+    title: 'View 2017 edition of Climatescope',
+    label: '2017'
+  }
+]

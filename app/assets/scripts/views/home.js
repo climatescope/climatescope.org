@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom'
 import { Timeline } from 'react-twitter-widgets'
 import c from 'classnames'
 
-import { environment, baseurl } from '../config'
-import { downloadData } from '../utils/constants'
+import { environment } from '../config'
+import { editions } from '../utils/constants'
 import { fetchMediumPosts } from '../redux/medium'
 import { wrapApiResult } from '../utils/utils'
 import { initializeArrayWithRange } from '../utils/array'
@@ -196,11 +196,11 @@ class Home extends React.Component {
                   </div>
                 </header>
                 <div className='fold__body'>
-                  <h2>View or download our previous reports</h2>
+                  <h2>View or download our previous&nbsp;reports</h2>
                   <ul className='editions-menu'>
-                    {downloadData.fullPrevious.map(o => (
+                    {editions.map(o => (
                       <li key={o.url} className='editions-menu__item'>
-                        <a href={`${baseurl}${o.url}`} title={o.title} className='editions-menu__link'><span>{o.label}</span></a>
+                        <a href={o.url} title={o.title} className='editions-menu__link'><span>{o.label}</span></a>
                       </li>
                     ))}
                   </ul>

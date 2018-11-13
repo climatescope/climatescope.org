@@ -88,7 +88,7 @@
   }
 
   .fold__body {
-    grid-column: 8 / span 3;
+    grid-column: 8 / span 4;
 
     h2 {
       text-transform: uppercase;
@@ -106,7 +106,7 @@
     margin-right: $global-spacing / 2;
   }
 
-  > * {
+  > *:first-child {
     margin-left: -0.75rem;
   }
 }
