@@ -96,7 +96,7 @@ class Home extends React.Component {
     return (
       <ol className='card-list'>
         {isReady() ? (
-          posts.map((post, i) => (
+          posts.slice(0, 9).map((post, i) => (
             <li key={post.id} className='card-list__item'>
               <MediumCard
                 isFeatured={i === 0}
@@ -145,7 +145,14 @@ class Home extends React.Component {
             <div className='inner'>
               <div className='col--main'>
                 <section className='fsection'>
-                  <h1 className='fsection__title'>Insights</h1>
+                  <header className='fsection__header'>
+                    <div className='fsection__headline'>
+                      <h1 className='fsection__title'>Insights</h1>
+                    </div>
+                    <div className='fsection__actions'>
+                      <a href='https://medium.com/climatescope' title='View all insights' className='fsa-go'><span>View all</span></a>
+                    </div>
+                  </header>
                   {this.renderMediumPosts()}
                 </section>
               </div>

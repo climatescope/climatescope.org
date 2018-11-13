@@ -2,7 +2,7 @@
 import { combineReducers } from 'redux'
 
 import { fetchDispatchCacheFactory, baseAPIReducer } from './utils'
-import { baseurl } from '../config'
+import { mediumLatestUrl } from '../config'
 
 // /////////////////////////////////////////////////////////////////////////////
 // Actions
@@ -27,8 +27,7 @@ export function receiveMediumPosts (data, error = null) {
 export function fetchMediumPosts () {
   return fetchDispatchCacheFactory({
     statePath: 'medium.postList',
-    // TODO: Swap for server url.
-    url: `${baseurl}/api/medium.json`,
+    url: mediumLatestUrl,
     requestFn: requestMediumPosts,
     receiveFn: receiveMediumPosts
   })

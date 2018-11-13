@@ -171,7 +171,7 @@ a.card__contents {
 .card__body {
   flex: 1;
   width: 100%;
-  margin-bottom: $global-spacing;
+  margin-bottom: 1.5rem;
 
   > *:last-child {
     margin-bottom: 0;
@@ -179,8 +179,8 @@ a.card__contents {
 }
 
 .card__prose {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   opacity: 0.80;
 
   > *:last-child {
