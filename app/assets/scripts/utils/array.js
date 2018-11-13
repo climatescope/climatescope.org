@@ -70,3 +70,12 @@ export function objectToArray (obj) {
 export function initializeArrayWithRange (end, start = 0, step = 1) {
   return Array.from({ length: Math.ceil((end - start + 1) / step) }, (v, i) => i * step + start)
 }
+
+/**
+ * Reverse an array without mutating the original.
+ *
+ * @param {array} array The array to reverse
+ */
+export function reverse (array) {
+  return array.slice().reverse()
+}

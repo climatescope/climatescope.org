@@ -4,16 +4,41 @@ import { PropTypes as T } from 'prop-types'
 import { render } from 'react-dom'
 import mapboxgl from 'mapbox-gl'
 import ReactTooltip from 'react-tooltip'
+import c from 'classnames'
 import debounce from 'lodash.debounce'
 import isEqual from 'lodash.isequal'
 
 import { mbtoken, environment } from '../config'
 import { equalsIgnoreCase, padNumber } from '../utils/string'
+import { reverse } from '../utils/array'
+import MapboxControl from '../utils/mapbox-react-control'
 
 import MapPopover from './results-map-popover'
 
 // set once
 mapboxgl.accessToken = mbtoken
+
+/**
+ * React component for the marker highlight control.
+ * Will be added to the mapbox map as a detached control.
+ *
+ * @param {object} props React props
+ */
+const MarkersHighlight = ({ highlight, onClick }) => {
+  return (
+    <div className='rank-switcher'>
+      <button type='button' title='Highlight top 10 geographies' className={c({ 'button--active': highlight === 'top' })} onClick={() => onClick('top')}><span>Top ten</span></button>
+      <button type='button' title='Highlight bottom 10 geographies' className={c({ 'button--active': highlight === 'bottom' })} onClick={() => onClick('bottom')}><span>Bottom ten</span></button>
+    </div>
+  )
+}
+
+if (environment !== 'production') {
+  MarkersHighlight.propTypes = {
+    onClick: T.func,
+    highlight: T.string
+  }
+}
 
 /**
  * Create a maker to use on the map.
@@ -84,6 +109,12 @@ export default class ResultsMap extends React.Component {
     if (!isEqual(this.props.meta, prevProps.meta)) {
       this.renderMarkers()
     }
+
+    if (!isEqual(this.props.markersHighlight, prevProps.markersHighlight)) {
+      this.renderMarkers()
+      // Manually render dectached component
+      this.markersHighlightControl.render({ highlight: this.props.markersHighlight })
+    }
   }
 
   setHighlightedGeographies (geographies) {
@@ -99,7 +130,11 @@ export default class ResultsMap extends React.Component {
 
     let highlightedMarkers = 0
 
-    const markersToAdd = this.props.data.reduce((acc, geo) => {
+    const data = this.props.markersHighlight === 'bottom'
+      ? reverse(this.props.data)
+      : this.props.data
+
+    const markersToAdd = data.reduce((acc, geo) => {
       const currentGeo = this.props.meta.find(m => equalsIgnoreCase(m.iso, geo.iso))
       if (!currentGeo) {
         console.warn('Geography not found on meta data:', geo.iso)
@@ -141,12 +176,11 @@ export default class ResultsMap extends React.Component {
       zoom: 2,
       pitchWithRotate: false,
       renderWorldCopies: false,
-      dragRotate: false
+      dragRotate: false,
+      logoPosition: 'bottom-right'
     })
 
-    window.map = this.map
-    window.ReactTooltip = ReactTooltip
-
+    // Add zoom controls.
     this.map.addControl(new mapboxgl.NavigationControl(), 'top-left')
 
     // Disable map rotation using right click + drag.
@@ -160,6 +194,14 @@ export default class ResultsMap extends React.Component {
 
     // Remove compass.
     document.querySelector('.mapboxgl-ctrl .mapboxgl-ctrl-compass').remove()
+
+    // Country rank selector.
+    this.markersHighlightControl = new MapboxControl(MarkersHighlight, {
+      highlight: this.props.markersHighlight,
+      onClick: this.props.onMarkerHighlightChange
+    })
+
+    this.map.addControl(this.markersHighlightControl, 'bottom-left')
 
     this.map.on('load', () => {
       this.mapLoaded = true
@@ -199,6 +241,8 @@ if (environment !== 'production') {
     highlightISO: T.array,
     bounds: T.array,
     data: T.array,
-    meta: T.array
+    meta: T.array,
+    onMarkerHighlightChange: T.func,
+    markersHighlight: T.string
   }
 }

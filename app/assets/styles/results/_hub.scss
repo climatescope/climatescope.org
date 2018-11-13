@@ -168,6 +168,16 @@
   pointer-events: none;
 }
 
+.rank-switcher {
+  @extend .button-group, .button-group--horizontal;
+  box-shadow: ($base-border-width * 2) ($base-border-width * 2) 0 rgba($base-color, 0.06);
+  border-radius: $base-border-radius;
+
+  button {
+    @extend .button, .button--primary-raised-dark, .button--small;
+  }
+}
+
 
 /* Table viz
    ========================================================================== */

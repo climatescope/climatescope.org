@@ -37,6 +37,7 @@ class Results extends React.Component {
     this.onWeightsResetClick = this.onWeightsResetClick.bind(this)
     this.onSliderGroupChange = this.onSliderGroupChange.bind(this)
     this.onSortChange = this.onSortChange.bind(this)
+    this.onMarkerHighlightChange = this.onMarkerHighlightChange.bind(this)
 
     this.qsState = new QsState({
       region: {
@@ -52,7 +53,8 @@ class Results extends React.Component {
       sort: {
         field: 'rank',
         dir: 'asc'
-      }
+      },
+      markersHighlight: 'top'
     }
   }
 
@@ -67,6 +69,10 @@ class Results extends React.Component {
   componentDidMount () {
     this.props.fetchGeographies()
     this.props.fetchGeographiesMeta()
+  }
+
+  onMarkerHighlightChange (highlight) {
+    this.setState({ markersHighlight: highlight })
   }
 
   onWeightsResetClick (e) {
@@ -262,6 +268,8 @@ class Results extends React.Component {
                 highlightISO={highlightISO}
                 meta={this.props.geoMeta.getData([])}
                 data={rankedGeographies}
+                onMarkerHighlightChange={this.onMarkerHighlightChange}
+                markersHighlight={this.state.markersHighlight}
               />
               <div className='inner'>
                 <div className='col col--main'>
