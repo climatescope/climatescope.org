@@ -11,47 +11,13 @@ import App from './app'
 import ShareOptions from '../components/share'
 import SmartLink from '../components/smart-link'
 
-const DownloadWell = ({ type, title, description, items }) => (
-  <div className={`well well-l download download-${type}`}>
-    <h2>{title}</h2>
-    <p>{description}</p>
-    <ul className='download-list'>
-      {items.map(o => (
-        <li key={o.url}><DownloadButton url={o.url} title={o.title} label={o.label} size={o.size} /></li>
-      ))}
-    </ul>
-  </div>
-)
-
-if (environment !== 'production') {
-  DownloadWell.propTypes = {
-    type: T.string,
-    title: T.string,
-    description: T.string,
-    items: T.array
-  }
-}
-
-const DownloadButton = ({ url, title, label, size }) => (
-  <a href={url} title={title} className="bttn bttn-success download data-download">{label} <span className="badge">{size}</span></a>
-)
-
-if (environment !== 'production') {
-  DownloadButton.propTypes = {
-    url: T.string,
-    title: T.string,
-    label: T.string,
-    size: T.string
-  }
-}
-
 const LibCard = ({ url, subtitle, linkTitle, footerTitle, title, description, isFeatured }) => (
   <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
     <div className='card__contents'>
       <header className='card__header'>
         <div className='card__headline'>
           <SmartLink to={url} title={linkTitle} className='link-wrapper'>
-            <p className='card__subtitle'>{subtitle}</p>
+            {subtitle && <p className='card__subtitle'>{subtitle}</p>}
             <h1 className='card__title'>{title}</h1>
           </SmartLink>
         </div>
@@ -83,7 +49,7 @@ if (environment !== 'production') {
 }
 
 const ToolCard = (props) => (
-  <LibCard {...props} subtitle='Tool' footerTitle='Explore the tool' />
+  <LibCard {...props} footerTitle='Explore the tool' />
 )
 
 const MediumCard = (props) => (
@@ -91,8 +57,28 @@ const MediumCard = (props) => (
 )
 
 const ReportCard = (props) => (
-  <LibCard {...props} subtitle='Report' footerTitle='Download report' />
+  <article className={c('card card--short insight', { 'card--featured': props.isFeatured })}>
+    <div className='card__contents'>
+      <header className='card__header'>
+        <div className='card__headline'>
+          <h1 className='card__title'>{props.report.label}</h1>
+        </div>
+      </header>
+      <footer>
+        {props.report && <SmartLink to={props.report.url} title={props.report.title} className='card__go-link'><span>Download report (PDF)</span></SmartLink>}
+        {props.model && <SmartLink to={props.model.url} title={props.model.title} className='card__go-link'><span>Download model (Excel)</span></SmartLink>}
+      </footer>
+    </div>
+  </article>
 )
+
+if (environment !== 'production') {
+  ReportCard.propTypes = {
+    isFeatured: T.bool,
+    report: T.object,
+    model: T.object
+  }
+}
 
 class Library extends React.Component {
   render () {
@@ -144,22 +130,18 @@ class Library extends React.Component {
 
                 <h2>Reports</h2>
                 <ul className='library__list library__list--small'>
-                  {downloadData.full.map(({ url, title, label, description }) => (
-                    <li key={url} className='library__list-item'>
+                  <li className='library__list-item'>
+                    <ReportCard
+                      isFeatured
+                      report={downloadData.current.report}
+                      model={downloadData.current.model}
+                    />
+                  </li>
+                  {downloadData.previous.map(({ report, model }) => (
+                    <li key={report.url} className='library__list-item'>
                       <ReportCard
-                        isFeatured
-                        url={url}
-                        linkTitle={title}
-                        title={label}
-                      />
-                    </li>
-                  ))}
-                  {downloadData.fullPrevious.map(({ url, title, label, description }) => (
-                    <li key={url} className='library__list-item'>
-                      <ReportCard
-                        url={url}
-                        linkTitle={title}
-                        title={label}
+                        report={report}
+                        model={model}
                       />
                     </li>
                   ))}
