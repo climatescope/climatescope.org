@@ -3,7 +3,6 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { render } from 'react-dom'
 import mapboxgl from 'mapbox-gl'
-import ReactTooltip from 'react-tooltip'
 import c from 'classnames'
 import debounce from 'lodash.debounce'
 import isEqual from 'lodash.isequal'
@@ -13,7 +12,8 @@ import { equalsIgnoreCase, padNumber } from '../utils/string'
 import { reverse } from '../utils/array'
 import MapboxControl from '../utils/mapbox-react-control'
 
-import MapPopover from './results-map-popover'
+import MBPopover from './mapbox-popover'
+import MapPopoverContent from './results-map-popover-contents'
 
 // set once
 mapboxgl.accessToken = mbtoken
@@ -46,39 +46,25 @@ if (environment !== 'production') {
  * the geography iso to the tooltip which will be used to know what content to
  * render on the tooltip.
  *
- * @param {string} geoId Geography id. This will be passes to the tooltip
+ * @param {string} geoIso Geography iso. This will be passes to the tooltip
  * @param {number} value Value to show on the marker. Optional. If not provided
  *                       the marker will not be highlighted
  *
  * @returns {node} DOM element to use as marker
  */
-const buildMarker = (geoId, value) => {
+const buildMarker = (geoIso, value) => {
   const el = document.createElement('div')
   el.style.cursor = 'pointer'
 
   if (value) {
     render((
-      <div className='country-marker highlight' data-tip={geoId} data-for='marker-tip'>{padNumber(value, 2)}</div>
+      <div className='country-marker highlight'>{padNumber(value, 2)}</div>
     ), el)
   } else {
-    render(<div className='country-marker' data-tip={geoId} data-for='marker-tip' />, el)
+    render(<div className='country-marker' />, el)
   }
 
-  // Add a property to the dom element containing the element to which the
-  // tooltip is attached.
-  el.markerTip = el.querySelector('.country-marker')
-
-  // Mouse and touch envents to show and hide the tooltip.
-  el.onmouseover = () => {
-    ReactTooltip.show(el.markerTip)
-  }
-  el.ontouchstart = () => {
-    ReactTooltip.show(el.markerTip)
-  }
-  el.onmouseout = () => {
-    ReactTooltip.hide(el.markerTip)
-  }
-
+  MBPopover.attachMarker(el, { geoIso })
   return el
 }
 
@@ -87,6 +73,8 @@ export default class ResultsMap extends React.Component {
     super(props)
 
     this.markers = []
+
+    this.popoverRenderer = this.popoverRenderer.bind(this)
   }
 
   componentDidMount () {
@@ -162,10 +150,6 @@ export default class ResultsMap extends React.Component {
     this.markers = markersToAdd.map(m => {
       return m.addTo(this.map)
     })
-
-    // After the markers are rendered we need to rebind the react tooltips.
-    // This needs to be done on next tick or it won't work.
-    setTimeout(() => { ReactTooltip.rebuild() }, 1)
   }
 
   initMap () {
@@ -216,22 +200,42 @@ export default class ResultsMap extends React.Component {
       // Call the map move event debouces with a leading execution to ensure
       // that the tooltip get's hidden as fast as possible.
       const onMapMove = () => {
-        this.markers.forEach(m => ReactTooltip.hide(m.markerTip))
+        MBPopover.hide()
       }
       this.map.on('move', debounce(onMapMove, 100, { leading: true, trailing: false }))
     })
   }
 
+  onPopoverCloseClick (e) {
+    e.preventDefault()
+    MBPopover.hide()
+  }
+
+  popoverRenderer ({ geoIso }) {
+    const geography = this.props.data.find(geography => equalsIgnoreCase(geography.iso, geoIso))
+    if (!geography) return null
+
+    const { iso, score, rank, name, topics, grid } = geography
+    return (
+      <MapPopoverContent
+        onCloseClick={this.onPopoverCloseClick}
+        iso={iso}
+        rank={rank}
+        name={name}
+        topics={topics}
+        grid={grid}
+        score={score}
+      />
+    )
+  }
+
   render () {
     return (
-      <>
-        <figure className='results-map-viz media'>
-          <div className='media__item' ref='mapEl'>
-            <MapPopover data={this.props.data} />
-          </div>
-          <figcaption className='media__caption'>Top and bottom ten geographies</figcaption>
-        </figure>
-      </>
+      <figure className='results-map-viz media'>
+        <div className='media__item' ref='mapEl' />
+        <figcaption className='media__caption'>Top and bottom ten geographies</figcaption>
+        <MBPopover element='article' className='popover popover--map' render={this.popoverRenderer} />
+      </figure>
     )
   }
 }

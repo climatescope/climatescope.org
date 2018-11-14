@@ -3,79 +3,13 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { Link } from 'react-router-dom'
 import ReactTooltip from 'react-tooltip'
-import { createPortal } from 'react-dom'
 
 import { environment } from '../config'
 import OnGrid from './on-grid'
 import { ParameterBreakdown } from './parameters'
-import { equalsIgnoreCase } from '../utils/string'
 import { round } from '../utils/math'
 
-/**
- * Map popover
- * Inits the ReactTooltip portaling it to the .page__body.
- * This is needed because of stacking issues with the slider bar.
- *
- * Note that this is to be used by the map markers. They trigger the popover
- * according to the ReactTooltip's api.
- */
-export default class MapPopover extends React.PureComponent {
-  componentDidMount () {
-    this.el = document.querySelector('#map-popover')
-
-    if (!this.el) {
-      this.el = document.createElement('div')
-      this.el.id = '#map-popover'
-      document.querySelector('.page__body').appendChild(this.el)
-    }
-
-    // Trigger render because the container is available now.
-    this.forceUpdate()
-  }
-
-  render () {
-    if (!this.el) return null
-
-    const popoverContent = (geographyIso) => {
-      const geography = this.props.data.find(geography => equalsIgnoreCase(geography.iso, geographyIso))
-      if (!geography) return null
-
-      const { iso, score, rank, name, topics, grid } = geography
-
-      return (
-        <MapPopoverContent
-          iso={iso}
-          rank={rank}
-          name={name}
-          topics={topics}
-          grid={grid}
-          score={score}
-        />
-      )
-    }
-
-    return createPortal(
-      <ReactTooltip
-        id='marker-tip'
-        effect='solid'
-        type='custom'
-        delayHide={100}
-        className='popover popover--map'
-        wrapper='article'
-        getContent={popoverContent}
-      />,
-      this.el
-    )
-  }
-}
-
-if (environment !== 'production') {
-  MapPopover.propTypes = {
-    data: T.array
-  }
-}
-
-class MapPopoverContent extends React.PureComponent {
+export default class MapPopoverContent extends React.PureComponent {
   componentDidMount () {
     // Rebuild tooltips to ensure the on grid appears.
     ReactTooltip.rebuild()
@@ -87,7 +21,7 @@ class MapPopoverContent extends React.PureComponent {
   }
 
   render () {
-    const { iso, score, rank, name, topics, grid } = this.props
+    const { iso, score, rank, name, topics, grid, onCloseClick } = this.props
     const hasScore = !!score
 
     return (
@@ -98,7 +32,7 @@ class MapPopoverContent extends React.PureComponent {
               <Link to={`/results/${iso}`} title={`View ${name} page`}>{name}</Link><OnGrid grid={grid} />
             </h1>
           </div>
-          {/* <div className='popover__header-toolbar'><a href='#' title='Close' className='tba-xmark tba--text-hidden'><span>Close</span></a></div> */}
+          <div className='popover__header-toolbar'><a href='#' title='Close' className='tba-xmark tba--text-hidden' onClick={onCloseClick}><span>Close</span></a></div>
         </header>
         <div className='popover__body'>
           {hasScore ? (
@@ -132,6 +66,7 @@ class MapPopoverContent extends React.PureComponent {
 
 if (environment !== 'production') {
   MapPopoverContent.propTypes = {
+    onCloseClick: T.func,
     iso: T.string,
     rank: T.number,
     name: T.string,
