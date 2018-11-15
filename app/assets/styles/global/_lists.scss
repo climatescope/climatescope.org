@@ -38,6 +38,8 @@
     display: inline-block;
     margin: $global-spacing $global-spacing 0 0;
     vertical-align: top;
+    width: 100%;
+    max-width: 12rem;
 
     &:nth-child(1),
     &:nth-child(2),
@@ -56,7 +58,7 @@
     background: rgba($base-color, 0.04);
     border-radius: $base-border-radius;
     padding: ($global-spacing / 2) ($global-spacing * 1.5);
-    width: 12rem;
+    width: 100%;
     height: 5rem;
     line-height: 4rem;
   }

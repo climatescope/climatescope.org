@@ -35,9 +35,15 @@ export default class PageFooter extends React.PureComponent {
             <h2 className='footer__title'>Supporters</h2>
             <ul className='logo-list'>
               <li>
-                <a className='logo-bnef' href='http://www.newenergyfinance.com/' title='Visit Bloomberg' target='_blank'>
-                  <img width='480' height='110' src='/assets/graphics/layout/logo-bnef-flat-pos.svg' alt='Bloomberg New Energy Finance logo' />
-                  <span>Bloomberg</span>
+                <a className='logo-dfid' href='https://www.gov.uk/government/organisations/department-for-international-development' title='Visit Department for International Development' target='_blank'>
+                  <img src='/assets/graphics/layout/logo-dfid-flat-pos.svg' alt='Department for International Development logo' />
+                  <span>Department for International Development</span>
+                </a>
+              </li>
+              <li>
+                <a className='logo-ukaid' href='https://www.gov.uk/government/organisations/department-for-international-development' title='Visit UK Aid' target='_blank'>
+                  <img src='/assets/graphics/layout/logo-ukaid-flat-pos.svg' alt='UK Aid logo' />
+                  <span>UK Aid</span>
                 </a>
               </li>
             </ul>
