@@ -8,11 +8,11 @@ import get from 'lodash.get'
 import isEqual from 'lodash.isequal'
 import { StickyContainer, Sticky } from 'react-sticky'
 
-import { environment } from '../config'
+import { environment, baseurl } from '../config'
 import QsState from '../utils/qs-state'
 import { fetchGeographies, fetchGeographiesMeta } from '../redux/geographies'
 import { wrapApiResult } from '../utils/utils'
-import { regions } from '../utils/constants'
+import { regions, downloadData } from '../utils/constants'
 
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
@@ -254,7 +254,7 @@ class Results extends React.Component {
                 {this.renderTitle()}
               </div>
               <div className='inpage__actions'>
-                <a href='#' className='ipa-download' title='Download results in PDF format'><span>Download</span></a>
+                <a href={`${baseurl}${downloadData.current.model.url}`} className='ipa-download' title={downloadData.current.model.title}><span>Download</span></a>
                 <ShareOptions url={window.location.toString()} />
               </div>
             </div>
