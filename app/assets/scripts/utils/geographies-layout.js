@@ -103,7 +103,7 @@ export default [
     ],
     areaBeta: [
       {
-        id: 'wholesale power exchange',
+        id: 'sectorWholesale',
         size: 'small'
       },
       {
