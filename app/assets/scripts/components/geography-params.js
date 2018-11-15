@@ -389,14 +389,17 @@ const renderParCardRange = (chart) => {
  */
 const renderParCardTimeSeries = (chart, reactComponent, key) => {
   const chartData = memoizedComputeAreaChartData(chart.data, chart.mainDataLayers, key)
+  const hasData = chartData.data.some(l => l.values.some(v => v.value !== null))
+
   return (
     <ParCard
       key={chart.id}
       title={chart.name}
-      description={chart.description || null}
+      description={hasData ? (chart.description || null) : null}
       size={chart.size}
     >
-      <AreaChart
+      {!hasData && <p>No data is available for this chart</p>}
+      {hasData && <AreaChart
         onBisectorEvent={reactComponent.onInteractionEvent.bind(reactComponent, chart.id)}
         interactionData={reactComponent.state[chart.id]}
         xLabel={chartData.xLabel}
@@ -404,7 +407,7 @@ const renderParCardTimeSeries = (chart, reactComponent, key) => {
         yDomain={chartData.yDomain}
         xDomain={chartData.xDomain}
         data={chartData.data}
-      />
+      />}
     </ParCard>
   )
 }
@@ -436,34 +439,53 @@ const renderParCardAnswerGroup = (chart) => {
         </thead>
         <tbody>
           {chart.children.map(child => {
-            if (child.data.value === null) return null
+            let trContent
             const answer = child.data.value + ''
-            // The label for this child value. We can't use ids because they're
-            // not consistent.
             const dataOpt = child.options.find(opt => opt.id === answer)
-            if (!dataOpt) {
-              return (
-                <tr key={child.id}>
+
+            if (child.data.value === null) {
+              // Answer is null.
+              trContent = (
+                <>
+                <th>
+                  <h2>{child.name}</h2>
+                  <p>{child.description}</p>
+                </th>
+                <td colSpan={3}>No answer available</td>
+                </>
+              )
+            } else if (!dataOpt) {
+              // There is an answer but it's not one of the options.
+              trContent = (
+                <>
                   <th>
                     <h2>Chart Error</h2>
                     <p>The chart [{child.id}] has a value of [{child.data.value}] which is not found in options [{child.options.map(o => o.id).join(', ')}]</p>
                   </th>
                   <td colSpan='3'></td>
-                </tr>
+                </>
+              )
+            } else {
+              // All good.
+              const dataOptLabel = dataOpt.label
+              trContent = (
+                <>
+                  <th>
+                    <h2>{child.name}</h2>
+                    <p>{child.description}</p>
+                  </th>
+                  {options.map(o => (
+                    <td key={o}>
+                      <strong className={c({ 'feature-checked': o === dataOptLabel, 'feature-unchecked': o !== dataOptLabel })}><span>{o === dataOptLabel ? 'Checked' : 'Unchecked'}</span></strong>
+                    </td>
+                  ))}
+                </>
               )
             }
-            const dataOptLabel = dataOpt.label
+
             return (
               <tr key={child.id} className={c({ [`feature-table__line--par-${child.topic}`]: !!child.topic })}>
-                <th>
-                  <h2>{child.name}</h2>
-                  <p>{child.description}</p>
-                </th>
-                {options.map(o => (
-                  <td key={o}>
-                    <strong className={c({ 'feature-checked': o === dataOptLabel, 'feature-unchecked': o !== dataOptLabel })}><span>{o === dataOptLabel ? 'Checked' : 'Unchecked'}</span></strong>
-                  </td>
-                ))}
+                {trContent}
               </tr>
             )
           })}
