@@ -165,6 +165,11 @@
 
   thead tr {
     background: #fff;
+
+    // Invert zebra colors on even par-sections.
+    .par-section:nth-child(even) & {
+      background: tint($base-color, 96%);
+    }
   }
 
   thead th {
@@ -181,6 +186,17 @@
 
     &:nth-of-type(even) {
       background: #fff;
+    }
+
+    // Invert zebra colors on even par-sections.
+    .par-section:nth-child(even) & {
+      &:nth-of-type(odd) {
+        background: #fff;
+      }
+      
+      &:nth-of-type(even) {
+        background: tint($base-color, 96%);
+      }
     }
   }
 
