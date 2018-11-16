@@ -72,7 +72,7 @@ export function receiveGeography (id, data, error = null) {
 export function fetchGeography (geographyId) {
   return fetchDispatchCacheFactory({
     statePath: ['geographies', 'individualGeographies', geographyId],
-    url: `${baseurl}/api/results/${geographyId}.json`,
+    url: `${baseurl}/api/results/${geographyId.toLowerCase()}.json`,
     requestFn: requestGeography.bind(this, geographyId),
     receiveFn: receiveGeography.bind(this, geographyId)
   })
