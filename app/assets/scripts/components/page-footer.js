@@ -20,7 +20,7 @@ export default class PageFooter extends React.PureComponent {
           <section className='footer__block footer__block--newsletter'>
             <h2 className='footer__title'>Stay up to date</h2>
             <p>Subscribe to the mailing list.</p>
-            <form className='form newsletter-form' action='' method='post' id='mc-embedded-subscribe-form' name='subscribe-form'>
+            <form className='form newsletter-form disabled' action='' method='post' id='mc-embedded-subscribe-form' name='subscribe-form'>
               <div className='form__group'>
                 <label className='form__label'>Email</label>
                 <div className='form__input-group form__input-group--medium'>

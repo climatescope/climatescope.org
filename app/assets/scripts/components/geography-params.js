@@ -455,7 +455,7 @@ const renderParCardAnswerGroup = (chart) => {
                   <h2>{child.name}</h2>
                   <p>{child.description}</p>
                 </th>
-                <td colSpan={3}>No answer available</td>
+                <td colSpan={options.length}>No answer available</td>
                 </>
               )
             } else if (!dataOpt) {
@@ -466,7 +466,7 @@ const renderParCardAnswerGroup = (chart) => {
                     <h2>Chart Error</h2>
                     <p>The chart [{child.id}] has a value of [{child.data.value}] which is not found in options [{child.options.map(o => o.id).join(', ')}]</p>
                   </th>
-                  <td colSpan='3'></td>
+                  <td colSpan={options.length}></td>
                 </>
               )
             } else {
