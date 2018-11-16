@@ -129,6 +129,7 @@ const redirectPaths = {
   '/en/insights/climate-policy': 'https://medium.com/climatescope/clean-energy-and-the-paris-promises-e5116c1c7000',
 
   // Off grid quarterly:
+  '/en/off-grid-quarterly/q4-2018': 'https://medium.com/climatescope/4q-2018-off-grid-and-mini-grid-market-outlook-1dace7fc9087',
   '/en/off-grid-quarterly/q3-2018': 'https://medium.com/climatescope/3q-2018-off-grid-and-mini-grid-market-outlook-e4ae33657c9c',
   '/en/off-grid-quarterly/q2-2018': 'https://medium.com/climatescope/2q-2018-off-grid-and-mini-grid-market-outlook-2504a1d4abb0',
   '/en/off-grid-quarterly/1q-2018': 'https://medium.com/climatescope/1q-2018-off-grid-and-mini-grid-market-outlook-d097168dc92e',
