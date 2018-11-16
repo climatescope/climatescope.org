@@ -93,7 +93,7 @@ export default [
     ]
   },
   {
-    id: 'price-environment',
+    id: 'power-prices-and-lcoes',
     title: 'Price environment',
     type: 'linear',
     areaAlpha: [
