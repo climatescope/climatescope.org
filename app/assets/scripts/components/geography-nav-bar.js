@@ -6,6 +6,7 @@ import c from 'classnames'
 import ReactGA from 'react-ga'
 
 import { environment } from '../config'
+import geoLayoutDef from '../utils/geographies-layout'
 
 import ShareOptions from './share'
 import Dropdown from './dropdown'
@@ -14,38 +15,12 @@ export default class NavBar extends React.PureComponent {
   constructor (props) {
     super(props)
 
-    this.menuItems = [
-      {
-        id: 'power-market',
-        title: 'Jump to section Power Market',
-        label: 'Power Market'
-      },
-      {
-        id: 'clean-energy-policy',
-        title: 'Jump to section Clean Energy Policy',
-        label: 'Clean Energy Policy'
-      },
-      {
-        id: 'clean-energy-investment',
-        title: 'Jump to section Clean Energy Investment',
-        label: 'Clean Energy Investment'
-      },
-      {
-        id: 'price-environment',
-        title: 'Jump to section Price environment',
-        label: 'Price environment'
-      },
-      {
-        id: 'doing-business',
-        title: 'Jump to section Doing Business',
-        label: 'Doing Business'
-      },
-      {
-        id: 'barriers',
-        title: 'Jump to section Barriers',
-        label: 'Barriers'
-      }
-    ]
+    // Construct the menu items from the geography layout definition.
+    this.menuItems = geoLayoutDef.map(o => ({
+      id: o.id,
+      title: `Jump to section ${o.title}`,
+      label: o.title
+    }))
 
     this.onPrintClick = this.onPrintClick.bind(this)
   }
