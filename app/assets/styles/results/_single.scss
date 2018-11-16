@@ -49,59 +49,85 @@
   }
 }
 
-.par-section__contents {
+.par-section-loading {
   @extend .row, .row--centered;
-  display: grid;
-  grid-gap: $global-spacing * 2;
+
+  *:last-child {
+    margin-bottom: 0
+  }
 }
 
-.par-section--linear {
-  .area-beta {
-    display: grid;
-    grid-gap: $global-spacing * 2;
-    grid-template-columns: repeat(2, 1fr);
+/*
+  Define the grid areas according to the type of section we have and the
+  media query.
+*/
+.par-section__contents {
+  @extend .row, .row--centered;
+  // The clearfix messes with the grid system adding an extra gap because of the
+  // pseudo elements. Override them.
+  &:before,
+  &:after {
+    content: none !important;
+  }
 
+  display: grid;
+  grid-gap: $global-spacing * 2;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+
+  .par-section--linear &,
+  .par-section--split & {
+    grid-template-areas: 
+      "alpha alpha alpha alpha"
+      "beta beta beta beta";
+  }
+
+  .par-section--split & {
+    @include media(large-up) {
+      grid-template-areas: 
+        "alpha alpha alpha beta"
+        "alpha alpha alpha beta";
+    }
+  }
+}
+
+.area-alpha,
+.area-beta {
+  display: grid;
+  grid-gap: $global-spacing * 2;
+  grid-template-columns: repeat(2, 1fr);
+
+  .par-section--linear & {
     @include media(large-up) {
       grid-template-columns: repeat(4, 1fr);
     }
   }
-}
 
-.par-section--split {
-  .area-alpha,
-  .area-beta {
-    display: grid;
-    grid-gap: $global-spacing * 2;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @include media(large-up) {
-    .par-section__contents {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .area-alpha,
-    .area-beta {
+  .par-section--split & {
+    @include media(large-up) {
       display: block;
 
       > *:not(:last-child) {
         margin-bottom: $global-spacing * 2;
       }
     }
-
-    .area-alpha {
-      grid-column: auto / span 3;
-    }
-
-    .area-beta {
-      grid-column-start: 4;
-    }
   }
 }
 
+.area-alpha {
+  grid-area: alpha;
+}
+
+.area-beta {
+  grid-area: beta;
+}
+
 .par-section__header {
-  grid-column: auto / span 3;
-  grid-row: span 1;
+  grid-column: auto / span 2;
+
+  @include media(large-up) {
+    grid-column: auto / span 3;
+  }
 }
 
 .par-section__title {
@@ -114,24 +140,5 @@
 
   > *:last-child {
     margin-bottom: 0;
-  }
-}
-
-
-/* Card organization
-   ========================================================================== */
-
-#section-clean-enery-policy {
-  .info-card-1 {
-
-  }
-
-  .info-card-2 {
-    // grid-column-start: 4;
-    // grid-row-start: 1;
-  }
-
-  .info-card-3 {
-
   }
 }

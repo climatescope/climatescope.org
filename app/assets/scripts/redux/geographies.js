@@ -173,11 +173,56 @@ function geographiesMetaReducer (state = geographiesMetaReducerInitialState, act
 }
 
 // /////////////////////////////////////////////////////////////////////////////
+// Actions
+// /////////////////////////////////////////////////////////////////////////////
+
+export const REQUEST_CHARTS_META = 'REQUEST_CHARTS_META'
+export const RECEIVE_CHARTS_META = 'RECEIVE_CHARTS_META'
+export const INVALIDATE_CHARTS_META = 'INVALIDATE_CHARTS_META'
+
+export function invalidateChartsMeta () {
+  return { type: INVALIDATE_CHARTS_META }
+}
+
+export function requestChartsMeta () {
+  return { type: REQUEST_CHARTS_META }
+}
+
+export function receiveChartsMeta (data, error = null) {
+  return { type: RECEIVE_CHARTS_META, data, error, receivedAt: Date.now() }
+}
+
+export function fetchChartsMeta () {
+  return fetchDispatchCacheFactory({
+    statePath: 'meta.charts',
+    url: `${baseurl}/api/chart-meta.json`,
+    requestFn: requestChartsMeta,
+    receiveFn: receiveChartsMeta
+  })
+}
+
+// /////////////////////////////////////////////////////////////////////////////
+// Reducer
+// /////////////////////////////////////////////////////////////////////////////
+
+const chartsMetaInitialState = {
+  fetching: false,
+  fetched: false,
+  error: null,
+  data: {}
+}
+
+function chartsMetaReducer (state = chartsMetaInitialState, action) {
+  return baseAPIReducer(state, action, 'CHARTS_META')
+}
+
+// /////////////////////////////////////////////////////////////////////////////
 // Combine reducers and export
 // /////////////////////////////////////////////////////////////////////////////
 
 export default combineReducers({
   list: geographiesReducer,
   individualGeographies: geographyReducer,
-  meta: geographiesMetaReducer
+  meta: geographiesMetaReducer,
+  chartsMeta: chartsMetaReducer
 })

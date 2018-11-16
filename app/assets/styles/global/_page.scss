@@ -68,11 +68,17 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: top;
   }
 
   a {
     color: inherit;
+  }
+}
+
+.page__headline {
+  > *:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -96,13 +102,32 @@
   }
 }
 
+.page__subtitle {
+  @extend .heading-alt;
+  text-transform: uppercase;
+
+  a {
+    display: inline-block;
+  }
+
+  img {
+    vertical-align: middle;
+    width: auto;
+    height: 1rem;
+    opacity: 0.64;
+  }
+
+  span {
+    @extend .visually-hidden;
+  }
+}
+
 .page__prime-nav {
   display: flex;
   margin: 0 (-0.75rem) 0 auto;
   color: inherit;
   padding-left: $global-spacing;
 }
-
 
 /* Global menu */
 
@@ -155,6 +180,9 @@
 
   > .inner {
     @extend .row, .row--centered;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 ($global-spacing * 2);
 
     > *:last-child {
       margin-bottom: 0
@@ -162,15 +190,11 @@
   }
 }
 
-.ftr-nav {
-  @include column(4/12);
+.footer__block {
+  grid-row: 1 / auto;
 }
 
-.ftr-nav__block {
-  @include column(6/12);
-}
-
-.ftr-title {
+.footer__title {
   @extend .heading-alt;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -179,39 +203,34 @@
   margin-bottom: $global-spacing / 2;
 }
 
-.ftr-menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-weight: $heading-font-bold;
+.footer__block--nav {
+  grid-column: auto / span 4;
 
-  a {
-    display: block;
-    color: inherit;
+  @include media(large-up) {
+    grid-column: auto / span 6;
+  }
+
+  @include media(xlarge-up) {
+    grid-column: auto / span 5;
   }
 }
 
-.ftr-supporters {
-  @include column(4/12);
-}
+.footer__block--newsletter {
+  grid-column: auto / span 4;
 
-.ftr-newsletter-subs {
-  @include column(4/12);
-
-  > *:last-child {
-    margin-bottom: 0;
+  @include media(large-up) {
+    grid-column: auto / span 3;
   }
 
-  .form {
-    margin-bottom: 0;
+  p {
+    margin-bottom: $global-spacing / 2;
+    color: rgba($base-color, 0.48);
   }
 
   .form__label {
     @extend .visually-hidden;
   }
-}
 
-.newsletter-form {
   .form__help {
     margin-bottom: -1.5rem;
 
@@ -219,14 +238,35 @@
       margin-bottom: 0;
     }
   }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.ftr-note {
-  margin-bottom: $global-spacing / 2;
-  color: rgba($base-color, 0.48);
+.footer__block--supporters {
+  grid-column: auto / span 4;
+
+  @include media(large-up) {
+    grid-column: auto / span 3;
+  }
+
+  @include media(xlarge-up) {
+    grid-column: auto / span 4;
+  }
+
+  .logo-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 ($global-spacing / 2);
+
+    li {
+      margin: 0;
+    }
+  }
 }
 
-.ftr-credits {
+.footer__credits {
   padding-top: $global-spacing * 2;
   margin-top: $global-spacing * 2;
   color: rgba($base-color, 0.48);
@@ -240,75 +280,27 @@
   }
 }
 
-.logo-list {
+/* Footer menu */
+
+.footer-menu {
+  display: flex;
+  flex-flow: column nowrap;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  font-size: 0;
+  margin: 0 0 0 (-0.75rem);
 
-  li {
-    display: inline-block;
-    margin: 0 $global-spacing $global-spacing 0;
-    vertical-align: top;
-    width: 100%;
-    max-width: 12rem;
-
-    .ftr-supporters & {
-      @include column(6/12, $cycle: 2);
-
-      &:nth-last-child(1),
-      &:nth-last-child(2) {
-        margin-bottom: 0;
-      }
-    }
+  @include media(large-up) {
+    flex-flow: row nowrap;
   }
 
-  li:last-child {
-    margin-right: 0;
-  }
-
-  a {
-    display: block;
-    text-align: center;
-    background: rgba($base-color, 0.04);
-    border-radius: $base-border-radius;
-    padding: ($global-spacing / 2) $global-spacing;
-    min-height: 4rem;
-    line-height: 4rem;
-  }
-
-  span {
-    @extend .visually-hidden;
-  }
-
-  img {
-    width: auto;
-    max-height: 3rem;
-    opacity: 0.8;
-    vertical-align: middle;
-  }
-
-  /* Compensate USAID logo proportions and alignment */
-  .logo-usaid img {
-    transform: translate(0, 0.5em);
-    max-height: 1.75rem;
-  }
-
-  /* Compensate DevSeed logo proportions and alignment */
-  .logo-devseed img {
-    max-height: 2rem;
+  > *:not(:last-child) {
+    margin-right: $global-spacing / 2;
   }
 }
 
-.download-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.footer-menu__link {
+  @extend .button, .button--base-plain;
 
-  > li {
-    float: left;
-    margin: 0 0.5rem 0.5rem 0;
+  &--active {
+    @extend .button--active;
   }
 }

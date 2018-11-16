@@ -143,7 +143,7 @@ export default class ResultsTable extends React.PureComponent {
                 data={geography.topics}
               />
             ) : (
-              <p>There is no data for this geography.</p>
+              <p className='empty'>There is no data for this geography</p>
             )}
           </div>
         </div>

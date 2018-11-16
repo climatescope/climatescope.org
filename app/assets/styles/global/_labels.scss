@@ -18,8 +18,11 @@
   font-weight: $heading-font-weight;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
   background: rgba($base-color, 0.64);
+
+  &, &:visited {
+    color: #fff;
+  }
 
   &::before {
     margin-right: 0.25rem;
@@ -48,6 +51,18 @@
   &.label--disabled {
     background: rgba(#fff, 0.16);
 
+    span,
+    &::before {
+      opacity: 0.32;
+    }
+  }
+}
+
+.label--reversed {
+  background: rgba($base-color, 0.08);
+  color: $base-font-color !important;
+
+  &.label--disabled {
     span,
     &::before {
       opacity: 0.32;

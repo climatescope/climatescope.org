@@ -7,12 +7,13 @@ import orderBy from 'lodash.orderby'
 import get from 'lodash.get'
 import isEqual from 'lodash.isequal'
 import { StickyContainer, Sticky } from 'react-sticky'
+import ReactGA from 'react-ga'
 
-import { environment } from '../config'
+import { environment, baseurl } from '../config'
 import QsState from '../utils/qs-state'
 import { fetchGeographies, fetchGeographiesMeta } from '../redux/geographies'
 import { wrapApiResult } from '../utils/utils'
-import { regions } from '../utils/constants'
+import { regions, downloadData } from '../utils/constants'
 
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
@@ -37,6 +38,7 @@ class Results extends React.Component {
     this.onWeightsResetClick = this.onWeightsResetClick.bind(this)
     this.onSliderGroupChange = this.onSliderGroupChange.bind(this)
     this.onSortChange = this.onSortChange.bind(this)
+    this.onMarkerHighlightChange = this.onMarkerHighlightChange.bind(this)
 
     this.qsState = new QsState({
       region: {
@@ -52,7 +54,8 @@ class Results extends React.Component {
       sort: {
         field: 'rank',
         dir: 'asc'
-      }
+      },
+      markersHighlight: 'top'
     }
   }
 
@@ -67,6 +70,10 @@ class Results extends React.Component {
   componentDidMount () {
     this.props.fetchGeographies()
     this.props.fetchGeographiesMeta()
+  }
+
+  onMarkerHighlightChange (highlight) {
+    this.setState({ markersHighlight: highlight })
   }
 
   onWeightsResetClick (e) {
@@ -96,6 +103,14 @@ class Results extends React.Component {
   onSortChange (field, dir) {
     this.setState({
       sort: { field, dir }
+    })
+  }
+
+  onDownloadClick () {
+    ReactGA.event({
+      category: 'Data',
+      action: 'Download',
+      label: 'Model from results'
     })
   }
 
@@ -248,6 +263,7 @@ class Results extends React.Component {
                 {this.renderTitle()}
               </div>
               <div className='inpage__actions'>
+                <a href={`${baseurl}${downloadData.current.model.url}`} className='ipa-download' title={downloadData.current.model.title} onClick={this.onDownloadClick} target='_blank'><span>Download</span></a>
                 <ShareOptions url={window.location.toString()} />
               </div>
             </div>
@@ -262,6 +278,8 @@ class Results extends React.Component {
                 highlightISO={highlightISO}
                 meta={this.props.geoMeta.getData([])}
                 data={rankedGeographies}
+                onMarkerHighlightChange={this.onMarkerHighlightChange}
+                markersHighlight={this.state.markersHighlight}
               />
               <div className='inner'>
                 <div className='col col--main'>

@@ -10,7 +10,19 @@ import PageHeader from '../components/page-header'
 import PageFooter from '../components/page-footer'
 import MetaTags from '../components/meta-tags'
 
-class App extends React.Component {
+class App extends React.Component {// The App component is always remounted when the page changes, therefore
+  // scroll to the top.
+  componentDidMount () {
+    window.scrollTo(0, 0)
+  }
+
+  // Handle cases where the page is updated without changing
+  componentDidUpdate (prevProps) {
+    if (this.props.location && this.props.location.pathname !== prevProps.location.pathname) {
+      window.scrollTo(0, 0)
+    }
+  }
+
   render () {
     const { pageTitle, className, location, children } = this.props
 

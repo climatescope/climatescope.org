@@ -1,12 +1,16 @@
 'use strict'
 import 'babel-polyfill'
 import React from 'react'
+import ReactGA from 'react-ga'
 import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { Router, Route, Switch } from 'react-router-dom'
 
+import { gaTrackingID } from './config'
 import store from './utils/store'
 import history from './utils/history'
+
+import RedirectRoute from './redirect-route'
 
 import Home from './views/home'
 import StaticPage from './views/static-page'
@@ -19,11 +23,19 @@ import Geography from './views/geographies-page'
 import Playground from './views/playground'
 import UhOh from './views/uhoh'
 
+// Google analytics
+if (gaTrackingID) {
+  ReactGA.initialize(gaTrackingID)
+  ReactGA.pageview(window.location.pathname + window.location.search)
+  history.listen(location => ReactGA.pageview(location.pathname + location.search))
+}
+
 // Root component. Used by the router.
 const Root = () => (
   <Provider store={store}>
     <Router history={history}>
       <Switch>
+        <RedirectRoute path='/en(/:path*)?' />
         <Route exact path='/' component={Home}/>
         <Route exact path='/results' component={Results}/>
         <Route exact path='/results/:geoIso' component={Geography}/>

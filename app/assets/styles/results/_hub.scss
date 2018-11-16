@@ -168,6 +168,16 @@
   pointer-events: none;
 }
 
+.rank-switcher {
+  @extend .button-group, .button-group--horizontal;
+  box-shadow: ($base-border-width * 2) ($base-border-width * 2) 0 rgba($base-color, 0.06);
+  border-radius: $base-border-radius;
+
+  button {
+    @extend .button, .button--primary-raised-dark, .button--small;
+  }
+}
+
 
 /* Table viz
    ========================================================================== */
@@ -220,4 +230,11 @@
   .stack-bar {
     margin: 0.125rem 0;
   }
+}
+
+.popover__body .empty {
+  @extend .heading-alt;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: tint($base-color, 56%);
 }

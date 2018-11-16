@@ -49,10 +49,10 @@ class StaticPage extends React.Component {
 
           <div className='inpage__body'>
             <div className='inner'>
-              <div className={c('col', { 'col--main': !data.embedded, 'col--full': data.embedded })}>
-                {isReady() ? (
-                  <DangerouslySetScriptContent key={receivedAt} dangerousContent={data.content} />
-                ) : (
+              {isReady() ? (
+                <DangerouslySetScriptContent key={receivedAt} dangerousContent={data.content} className={c('col', { 'col--main prose': !data.embedded, 'col--full': data.embedded })} />
+              ) : (
+                <div className={c('col', { 'col--main prose': !data.embedded, 'col--full': data.embedded })}>
                   <LoadingSkeletonGroup>
                     <LoadingSkeleton width={1 / 3} />
                     <LoadingSkeleton />
@@ -60,8 +60,8 @@ class StaticPage extends React.Component {
                     <LoadingSkeleton />
                     <LoadingSkeleton width={3 / 4} />
                   </LoadingSkeletonGroup>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           </div>
 

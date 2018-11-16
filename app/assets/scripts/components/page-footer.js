@@ -10,27 +10,17 @@ import { environment, appEdition } from '../config'
 export default class PageFooter extends React.PureComponent {
   render () {
     return (
-      <footer className='page__footer' role='contentinfo'>
+      <footer className='page__footer footer' role='contentinfo'>
         <div className='inner'>
-          <nav className='ftr-nav'>
-            <div className='ftr-nav__block'>
-              <h2 className='ftr-title'>Browse</h2>
-              <NavGlobalMenu forFooter />
-            </div>
-            <div className='ftr-nav__block'>
-              <h2 className='ftr-title'>Editions</h2>
-              <ul className='ftr-menu'>
-                {[2017, 2016, 2015, 2014].map(ed => (
-                  <li key={ed}><a href={`http://${ed}.global-climatescope.org`} title={`Visit ${ed} Edition`} target='_blank' rel='external'>{ed}</a></li>
-                ))}
-              </ul>
-            </div>
+          <nav className='footer__block footer__block--nav nav'>
+            <h2 className='footer__title'>Browse</h2>
+            <NavGlobalMenu forFooter />
           </nav>
 
-          <section className='ftr-newsletter-subs'>
-            <h2 className='ftr-title'>Stay up to date</h2>
-            <p className='ftr-note'>Subscribe to the mailing list.</p>
-            <form className='form newsletter-form' action='' method='post' id='mc-embedded-subscribe-form' name='subscribe-form'>
+          <section className='footer__block footer__block--newsletter'>
+            <h2 className='footer__title'>Stay up to date</h2>
+            <p>Subscribe to the mailing list.</p>
+            <form className='form newsletter-form disabled' action='' method='post' id='mc-embedded-subscribe-form' name='subscribe-form'>
               <div className='form__group'>
                 <label className='form__label'>Email</label>
                 <div className='form__input-group form__input-group--medium'>
@@ -41,15 +31,26 @@ export default class PageFooter extends React.PureComponent {
             </form>
           </section>
 
-          <section className='ftr-supporters'>
-            <h2 className='ftr-title'>Supporters</h2>
+          <section className='footer__block footer__block--supporters'>
+            <h2 className='footer__title'>Supporters</h2>
             <ul className='logo-list'>
-              <li><a className='logo-bnef' href='http://www.newenergyfinance.com/' title='Visit Bloomberg' target='_blank'><img width='480' height='110' alt='Bloomberg New Energy Finance logo' src='/assets/graphics/layout/logo-bnef-flat-pos.svg' /><span>Bloomberg</span></a></li>
+              <li>
+                <a className='logo-dfid' href='https://www.gov.uk/government/organisations/department-for-international-development' title='Visit Department for International Development' target='_blank'>
+                  <img src='/assets/graphics/layout/logo-dfid-flat-pos.svg' alt='Department for International Development logo' />
+                  <span>Department for International Development</span>
+                </a>
+              </li>
+              <li>
+                <a className='logo-ukaid' href='https://www.gov.uk/government/organisations/department-for-international-development' title='Visit UK Aid' target='_blank'>
+                  <img src='/assets/graphics/layout/logo-ukaid-flat-pos.svg' alt='UK Aid logo' />
+                  <span>UK Aid</span>
+                </a>
+              </li>
             </ul>
           </section>
         </div>
 
-        <div className='ftr-credits'>
+        <div className='footer__credits'>
           <div className='inner'>
             <p>2012-{appEdition} Climatescope. <Link to='/license' title='About the license'>View license</Link>.</p>
           </div>

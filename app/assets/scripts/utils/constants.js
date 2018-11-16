@@ -50,3 +50,180 @@ export const regions = [
     ]
   }
 ]
+
+export const downloadData = {
+  current: {
+    report: {
+      url: '/assets/data/reports/climatescope-2018-report-en.pdf',
+      title: 'Download full report in PDF',
+      label: '2018',
+      size: '?Mb'
+    },
+    model: {
+      url: '/assets/data/model/climatescope-2018.xlsm',
+      title: 'Download Climatescope model in Excel format',
+      label: '2018 (Excel)',
+      size: '?Mb'
+    }
+  },
+  previous: [
+    {
+      report: {
+        url: '/assets/data/reports/climatescope-2017-report-en.pdf',
+        title: 'Download full report in PDF',
+        label: '2017',
+        size: '5Mb'
+      },
+      model: {
+        url: '/assets/data/model/climatescope-2017.xlsm',
+        title: 'Download Climatescope model in Excel format',
+        label: '2015 (Excel)',
+        size: '8Mb'
+      }
+    },
+    {
+      report: {
+        url: '/assets/data/reports/climatescope-2016-report-en.pdf',
+        title: 'Download full report in PDF',
+        label: '2016',
+        size: '9Mb'
+      },
+      model: {
+        url: '/assets/data/model/climatescope-2016.xlsm',
+        title: 'Download Climatescope model in Excel format',
+        label: '2016 (Excel)',
+        size: '6Mb'
+      }
+    },
+    {
+      report: {
+        url: '/assets/data/reports/climatescope-2015-report-en.pdf',
+        title: 'Download full report in PDF',
+        label: '2015',
+        size: '6Mb'
+      },
+      model: {
+        url: '/assets/data/model/climatescope-2015.xlsm',
+        title: 'Download Climatescope model in Excel format',
+        label: '2015 (Excel)',
+        size: '6Mb'
+      }
+    },
+    {
+      report: {
+        url: '/assets/data/reports/climatescope-2014-report-en.pdf',
+        title: 'Download full report in PDF',
+        label: '2014',
+        size: '6Mb'
+      },
+      model: {
+        url: '/assets/data/model/climatescope-2014.xlsm',
+        title: 'Download Climatescope model in Excel format',
+        label: '2014 (Excel)',
+        size: '5Mb'
+      }
+    },
+    {
+      report: {
+        url: '/assets/data/reports/climatescope-2013-report-en.pdf',
+        title: 'Download full report in PDF',
+        label: '2013',
+        size: '10Mb'
+      },
+      model: {
+        url: '/assets/data/model/climatescope-2013.xlsm',
+        title: 'Download Climatescope model in Excel format',
+        label: '2013 (Excel)',
+        size: '1Mb'
+      }
+    },
+    {
+      report: {
+        url: '/assets/data/reports/climatescope-2012-report-en.pdf',
+        title: 'Download full report in PDF',
+        label: '2012',
+        size: '9Mb'
+      },
+      model: null
+    }
+  ]
+}
+
+export const medium = {
+  pages: [
+    {
+      url: 'https://medium.com/climatescope/insights',
+      title: 'View insights section',
+      label: 'Insights',
+      description: 'Lorem ipsum dolor sit amet'
+    },
+    {
+      url: 'https://medium.com/climatescope/updates',
+      title: 'View updates section',
+      label: 'Updates',
+      description: 'Lorem ipsum dolor sit amet'
+    },
+    {
+      url: 'https://medium.com/climatescope/off-grid-quarterly',
+      title: 'View Off Grid Quarterly section',
+      label: 'Off Grid Quarterly',
+      description: 'Lorem ipsum dolor sit amet'
+    }
+  ]
+}
+
+export const tools = [
+  {
+    url: '/compare',
+    title: 'View results side by side',
+    label: 'Geography Comparison',
+    description: 'Pick any two nations, see how they compare'
+  },
+  {
+    url: '/off-grid-data-hub',
+    title: 'Use the Off-grid Data Hub',
+    label: 'Off-grid Data Hub',
+    description: 'Energy access rates, fuel prices, other key distributed power data'
+  },
+  {
+    url: '/clean-energy-investments',
+    title: 'Use the Clean Energy Investment',
+    label: 'Clean Energy Investment',
+    description: 'Who backs clean energy in emerging markets?'
+  },
+  {
+    url: '/capacity-generation',
+    title: 'Use the Capacity Generation',
+    label: 'Capacity Generation',
+    description: 'Who has the most (and least) clean enery today?'
+  },
+  {
+    url: '/policies',
+    title: 'Browse the policy database',
+    label: 'Policies',
+    description: '800+ policies to improve clean enery development'
+  }
+]
+
+export const editions = [
+  {
+    url: 'http://2014.global-climatescope.org/en/',
+    title: 'View 2014 edition of Climatescope',
+    label: '2014'
+  },
+  {
+    url: 'http://2015.global-climatescope.org/en/',
+    title: 'View 2015 edition of Climatescope',
+    label: '2015'
+  },
+  {
+    url: 'http://2016.global-climatescope.org/en/',
+    title: 'View 2016 edition of Climatescope',
+    label: '2016'
+  },
+  {
+    url: 'http://2017.global-climatescope.org/en/',
+    title: 'View 2017 edition of Climatescope',
+    label: '2017'
+  }
+]

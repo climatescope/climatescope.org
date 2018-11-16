@@ -16,11 +16,12 @@ if (environment !== 'production') {
   }
 }
 
-export const LoadingSkeleton = ({ type, size, width, inline, style }) => {
+export const LoadingSkeleton = ({ type, size, width, inline, style, theme }) => {
   width = width || 1
   const k = c('lsk__item', {
     [`lsk__item--${type}`]: !!type,
-    [`lsk__item--${size}`]: !!size
+    [`lsk__item--${size}`]: !!size,
+    [`lsk__item--${theme}`]: !!theme
   })
   style = {
     ...style,
@@ -34,6 +35,7 @@ if (environment !== 'production') {
   LoadingSkeleton.propTypes = {
     style: T.object,
     type: T.string,
+    theme: T.string,
     size: T.string,
     width: T.number,
     inline: T.bool

@@ -1,6 +1,6 @@
 {
   "name": "climatescope",
-  "version": "4.0.0-alpha2.1",
+  "version": "4.0.0-beta",
   "description": "Climatescope website",
   "repository": {
     "type": "git",
@@ -117,6 +117,7 @@
     "qs": "^6.5.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-ga": "^2.5.3",
     "react-helmet": "^5.2.0",
     "react-paginate": "^5.2.4",
     "react-redux": "^5.0.7",
@@ -127,6 +128,7 @@
     "react-tether": "^1.0.2",
     "react-tooltip": "^3.8.4",
     "react-transition-group": "^2.5.0",
+    "react-twitter-widgets": "^1.7.1",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"

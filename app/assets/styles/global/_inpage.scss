@@ -262,6 +262,13 @@
   }
 }
 
+.ipa-download {
+  @extend .button--primary-raised-dark;
+
+  &::before {
+    @extend %collecticon-download-2;
+  }
+}
 
 /* Nav
    ========================================================================== */
