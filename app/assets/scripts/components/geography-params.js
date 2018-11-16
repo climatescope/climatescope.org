@@ -3,6 +3,7 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import c from 'classnames'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import get from 'lodash.get'
 
 import { environment } from '../config'
 import { round } from '../utils/math'
@@ -150,11 +151,14 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
   const areaContents = sectionDef[key].map(el => {
     // Section headers are considered special elements.
     if (el.id === 'sectionHeader') {
+      // Get the section copy.
+      const sectionCopy = (geography.sectionCopy || []).find(o => o.id === sectionDef.id)
+      const description = get(sectionCopy, 'value', '')
       return (
         <ParSectionHeader
           key={el.id}
           title={sectionDef.title}
-          description='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+          description={description}
         />
       )
     }
