@@ -3,6 +3,7 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { Link } from 'react-router-dom'
 import c from 'classnames'
+import ReactGA from 'react-ga'
 
 import { environment } from '../config'
 
@@ -45,6 +46,17 @@ export default class NavBar extends React.PureComponent {
         label: 'Barriers'
       }
     ]
+
+    this.onPrintClick = this.onPrintClick.bind(this)
+  }
+
+  onPrintClick () {
+    ReactGA.event({
+      category: 'User action',
+      action: 'Print',
+      label: this.props.geography.name
+    })
+    window.print()
   }
 
   render () {
@@ -90,7 +102,7 @@ export default class NavBar extends React.PureComponent {
             )}
           </div>
           <div className='inpage__actions'>
-            <button type='button' className='ipa-print' title='Print content' onClick={() => window.print() }><span>Print</span></button>
+            <button type='button' className='ipa-print' title='Print content' onClick={this.onPrintClick}><span>Print</span></button>
             <ShareOptions url={window.location.toString()} />
           </div>
         </div>

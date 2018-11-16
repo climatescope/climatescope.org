@@ -7,6 +7,7 @@ import orderBy from 'lodash.orderby'
 import get from 'lodash.get'
 import isEqual from 'lodash.isequal'
 import { StickyContainer, Sticky } from 'react-sticky'
+import ReactGA from 'react-ga'
 
 import { environment, baseurl } from '../config'
 import QsState from '../utils/qs-state'
@@ -102,6 +103,14 @@ class Results extends React.Component {
   onSortChange (field, dir) {
     this.setState({
       sort: { field, dir }
+    })
+  }
+
+  onDownloadClick () {
+    ReactGA.event({
+      category: 'Data',
+      action: 'Download',
+      label: 'Model from results'
     })
   }
 
@@ -254,7 +263,7 @@ class Results extends React.Component {
                 {this.renderTitle()}
               </div>
               <div className='inpage__actions'>
-                <a href={`${baseurl}${downloadData.current.model.url}`} className='ipa-download' title={downloadData.current.model.title}><span>Download</span></a>
+                <a href={`${baseurl}${downloadData.current.model.url}`} className='ipa-download' title={downloadData.current.model.title} onClick={this.onDownloadClick} target='_blank'><span>Download</span></a>
                 <ShareOptions url={window.location.toString()} />
               </div>
             </div>

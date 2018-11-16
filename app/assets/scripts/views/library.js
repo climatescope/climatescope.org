@@ -3,8 +3,9 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import c from 'classnames'
+import ReactGA from 'react-ga'
 
-import { environment } from '../config'
+import { environment, baseurl } from '../config'
 import { downloadData, medium, tools } from '../utils/constants'
 
 import App from './app'
@@ -56,21 +57,35 @@ const MediumCard = (props) => (
   <LibCard {...props} subtitle='Medium' footerTitle='View archive' />
 )
 
-const ReportCard = (props) => (
-  <article className={c('card card--short insight', { 'card--featured': props.isFeatured })}>
-    <div className='card__contents'>
-      <header className='card__header'>
-        <div className='card__headline'>
-          <h1 className='card__title'>{props.report.label}</h1>
+class ReportCard extends React.PureComponent {
+  onDownloadClick (url) {
+    const pieces = url.split('/')
+    ReactGA.event({
+      category: 'Data',
+      action: 'Download',
+      label: pieces[pieces.length - 1]
+    })
+  }
+
+  render () {
+    const { isFeatured, report, model } = this.props
+    return (
+      <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
+        <div className='card__contents'>
+          <header className='card__header'>
+            <div className='card__headline'>
+              <h1 className='card__title'>{report.label}</h1>
+            </div>
+          </header>
+          <footer>
+            {report && <SmartLink to={baseurl + report.url} title={report.title} className='card__go-link' onClick={this.onDownloadClick.bind(this, report.url)} target='_blank'><span>Download report (PDF)</span></SmartLink>}
+            {model && <SmartLink to={baseurl + model.url} title={model.title} className='card__go-link' onClick={this.onDownloadClick.bind(this, model.url)} target='_blank'><span>Download model (Excel)</span></SmartLink>}
+          </footer>
         </div>
-      </header>
-      <footer>
-        {props.report && <SmartLink to={props.report.url} title={props.report.title} className='card__go-link'><span>Download report (PDF)</span></SmartLink>}
-        {props.model && <SmartLink to={props.model.url} title={props.model.title} className='card__go-link'><span>Download model (Excel)</span></SmartLink>}
-      </footer>
-    </div>
-  </article>
-)
+      </article>
+    )
+  }
+}
 
 if (environment !== 'production') {
   ReportCard.propTypes = {
