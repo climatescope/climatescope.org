@@ -540,8 +540,7 @@ function chartArea () {
  * @param {array} passThrough Types to keep. The other will be merged into others.
  */
 export const computeAreaChartData = (data, passThrough) => {
-  if (!data) return { yDomain: [], xDomain: [], data: [], xLabel: '', yLabel: '' }
-
+  if (!data || !data.data.length) return { yDomain: [], xDomain: [], data: [], xLabel: '', yLabel: '' }
   // If passThrough is empty, keep all.
   const { left: toKeep, right: toGroup } = splitArray(data.data, item => passThrough.length ? passThrough.indexOf(item.name) !== -1 : true)
 
