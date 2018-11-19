@@ -3,7 +3,7 @@ exclude:
   - assets/scripts
   - assets/styles
   - assets/icons
-baseurl: http://global-climatescope.org
+baseurl: //global-climatescope.org
 kramdown:
   input: GFM
   syntax_highlighter: rouge
