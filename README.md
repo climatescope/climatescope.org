@@ -56,4 +56,15 @@ At times, it may be necessary to include options/variables specific to `producti
 - config/staging.js - overrides the production settings for staging server
 - config/local.js - local (development) overrides. This file is gitignored, so you can safely change it without polluting the repo.
 
-When developing locally with `yarn serve`, the default will be to use `production.js` (with overrides from `local.js`).
+By default `production.js` is always loaded and values are overridden by `staging.js` or `local.js` according to the environment.
+
+Values overridable by environment variables are expressed between []:
+
+- appTitle - Title of the site
+- appEdition - Edition of the site
+- appDescription - Description of the site for meta purposed
+- policyDbUrl - Url for the Policy database
+- mediumLatestUrl - Url for the medium script
+- gaTrackingID - Google analytics tracking ID [GA_TRACKING_ID]
+- mailchimpUrl - Url for the mailchimp list subscription [MAILCHIMP_URL]
+- mbtoken - Mapbox token [MB_TOKEN]
