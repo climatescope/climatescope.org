@@ -226,8 +226,8 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
         switch (uniqueTypes[0]) {
           case 'answer':
             return renderParCardAnswerGroup(reconciledData)
-          case 'absolute':
-            return renderParCardAbsoluteGroup(reconciledData)
+          case 'percent':
+            return renderParCardPercentGroup(reconciledData)
           default:
             console.warn(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
             throw new Error(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
@@ -246,6 +246,7 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
           case 'answer':
             return renderParCardAnswer(reconciledData)
           case 'absolute':
+          case 'percent':
           case 'average':
             return renderParCardAbsolute(reconciledData)
           case 'range':
@@ -501,11 +502,11 @@ const renderParCardAnswerGroup = (chart) => {
 }
 
 /**
- * Renders an group of "absolute" card type.
+ * Renders an group of "percent" card type.
  *
  * @param {object} chart Chart data
  */
-const renderParCardAbsoluteGroup = (chart) => {
+const renderParCardPercentGroup = (chart) => {
   return (
     <ParCard
       key={chart.id}
