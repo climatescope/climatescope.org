@@ -31,6 +31,7 @@ if (process.env.DS_ENV !== 'staging' && process.env.DS_ENV !== 'production') {
 
 config.default.mbtoken = process.env.MB_TOKEN || config.default.mbtoken
 config.default.gaTrackingID = process.env.GA_TRACKING_ID || config.default.gaTrackingID
+config.default.mailchimpUrl = process.env.MAILCHIMP_URL || config.default.mailchimpUrl
 
 // The require doesn't play super well with es6 imports. It creates an internal
 // 'default' property. Export that.
