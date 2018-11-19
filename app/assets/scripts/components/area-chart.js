@@ -12,7 +12,7 @@ import { scaleTime, scaleLinear } from 'd3-scale'
 import { environment } from '../config'
 import { splitArray } from '../utils/array'
 import { dateFromYear } from '../utils/utils'
-import { round } from '../utils/math'
+import { formatTousands } from '../utils/math'
 
 import SizeAwareElement from './size-aware-element'
 
@@ -203,6 +203,7 @@ class AreaChart extends React.Component {
     const yAxis = axisLeft(scale)
       .ticks(Math.ceil(height / 48))
       .tickSize(-width)
+      .tickFormat(d => formatTousands(d, 0))
 
     const yAxisEl = svg.select('.y.axis')
       .attr('transform', `translate(${left},${top})`)
@@ -405,7 +406,7 @@ class AreaChart extends React.Component {
                   return (
                     <React.Fragment key={d.name}>
                       <dt className={`legend__key--val-${i + 1}`}>{d.name}</dt>
-                      <dd>{val === null ? '--' : round(val)}</dd>
+                      <dd>{val === null ? '--' : formatTousands(val, 2, true)}</dd>
                     </React.Fragment>
                   )
                 })}
