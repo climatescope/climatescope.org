@@ -111,6 +111,9 @@
   max-width: 100%;
   box-shadow: 0 1px 0 0 tint($base-color, 88%), 0 -1px 0 0 tint($base-color, 88%);
   font-family: $heading-font-family;
+  // Add 1px of margin to accommodate for the box shadow.
+  margin-top: 1px;
+  margin-bottom: 1px !important;
 
   th, td  {
     padding: $global-spacing;
@@ -165,11 +168,6 @@
 
   thead tr {
     background: #fff;
-
-    // Invert zebra colors on even par-sections.
-    .par-section:nth-child(even) & {
-      background: tint($base-color, 96%);
-    }
   }
 
   thead th {
@@ -181,21 +179,21 @@
 
   tbody tr {
     &:nth-of-type(odd) {
-      background: tint($base-color, 96%);
+      background: #fff;
     }
 
     &:nth-of-type(even) {
-      background: #fff;
+      background: tint($base-color, 96%);
     }
 
     // Invert zebra colors on even par-sections.
     .par-section:nth-child(even) & {
       &:nth-of-type(odd) {
-        background: #fff;
+        background: tint($base-color, 96%);
       }
       
       &:nth-of-type(even) {
-        background: tint($base-color, 96%);
+        background: #fff;
       }
     }
   }
@@ -206,7 +204,7 @@
   }
 
   tfoot td {
-    box-shadow: inset 0 2px 0 0 $base-alpha-color;
+    box-shadow: inset 0 2px 0 0 tint($base-color, 88%);
   }
 
   *:last-child {
