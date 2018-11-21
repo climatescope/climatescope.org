@@ -170,11 +170,14 @@
 
 .rank-switcher {
   @extend .button-group, .button-group--horizontal;
-  box-shadow: ($base-border-width * 2) ($base-border-width * 2) 0 rgba($base-color, 0.06);
+  box-shadow: $base-border-width $base-border-width 0 rgba($base-color, 0.06);
   border-radius: $base-border-radius;
+  padding: $global-spacing / 2;
+  background: #fff;
 
   button {
-    @extend .button, .button--primary-raised-dark, .button--small;
+    @extend .button, .button--base-raised-semidark, .button--small;
+    min-width: 7rem;
   }
 }
 
