@@ -79,3 +79,12 @@ export function initializeArrayWithRange (end, start = 0, step = 1) {
 export function reverse (array) {
   return array.slice().reverse()
 }
+
+/**
+ * Sort an array without mutating the original.
+ *
+ * @param {array} array The array to sort
+ */
+export function sort (array, fn) {
+  return array.slice().sort(fn)
+}

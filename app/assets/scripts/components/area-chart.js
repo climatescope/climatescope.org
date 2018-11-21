@@ -11,7 +11,7 @@ import { axisBottom, axisLeft } from 'd3-axis'
 import { scaleTime, scaleLinear } from 'd3-scale'
 
 import { environment } from '../config'
-import { splitArray } from '../utils/array'
+import { splitArray, sort } from '../utils/array'
 import { dateFromYear } from '../utils/utils'
 import { formatTousands } from '../utils/math'
 
@@ -373,6 +373,23 @@ class AreaChart extends React.Component {
       top: posY + 'px'
     }
 
+    // Prepare the data to render.
+    const dataRender = data.map(d => {
+      const datum = d.values.find(v => v.year === year)
+      const val = datum ? datum.value : null
+      return { name: d.name, value: val }
+    })
+
+    // Sort data to render.
+    const dataRenderSorted = sort(dataRender, (a, b) => {
+      // Ensure that "Other" is always at the bottom.
+      if (a.name === 'Other') return 1
+      if (b.name === 'Other') return -1
+
+      // All the others in descendent order.
+      return a.value > b.value ? -1 : 1
+    })
+
     return (
       <CSSTransition
         in={hover}
@@ -385,16 +402,12 @@ class AreaChart extends React.Component {
           <div className='popover__contents'>
             <div className='popover__body'>
               <dl className='legend par-legend'>
-                {data.map((d, i) => {
-                  const datum = d.values.find(v => v.year === year)
-                  const val = datum ? datum.value : null
-                  return (
-                    <React.Fragment key={d.name}>
-                      <dt className={`legend__key--val-${kebabcase(d.name)}`}>{d.name}</dt>
-                      <dd>{val === null ? '--' : formatTousands(val, 2, true)}</dd>
-                    </React.Fragment>
-                  )
-                })}
+                {dataRenderSorted.map(d => (
+                  <React.Fragment key={d.name}>
+                    <dt className={`legend__key--val-${kebabcase(d.name)}`}>{d.name}</dt>
+                    <dd>{d.value === null ? '--' : formatTousands(d.value, 2, true)}</dd>
+                  </React.Fragment>
+                ))}
               </dl>
             </div>
           </div>
@@ -531,7 +544,7 @@ export const computeAreaChartData = (data, passThrough) => {
   const { left: toKeep, right: toGroup } = splitArray(data.data, item => passThrough.length ? passThrough.indexOf(item.name) !== -1 : true)
 
   // Sort the toKeep.
-  toKeep.sort((a, b) => {
+  const toKeepSorted = sort(toKeep, (a, b) => {
     const sum = (v) => v.reduce((acc, o) => acc + o.value, 0)
     return sum(a.values) > sum(b.values) ? 1 : -1
   })
@@ -562,8 +575,8 @@ export const computeAreaChartData = (data, passThrough) => {
   }
 
   const chartData = others.values.length
-    ? [others, ...toKeep]
-    : toKeep
+    ? [others, ...toKeepSorted]
+    : toKeepSorted
 
   // I'll stack my own data.
   // D3's method for stacking data returns an array and it's not easy to use
