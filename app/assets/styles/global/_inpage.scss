@@ -20,7 +20,7 @@
     @extend .antialiased;
     color: #fff;
     background: $base-color;
-    padding: ($global-spacing * 8) 0 ($global-spacing * 6) 0;
+    padding: ($global-spacing * 9) 0 ($global-spacing * 6) 0;
     text-shadow: 0 0 8px rgba($base-color, 0.64);
   }
 }
