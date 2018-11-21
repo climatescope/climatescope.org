@@ -77,14 +77,14 @@
 
   .par-section--linear &,
   .par-section--split & {
-    grid-template-areas: 
+    grid-template-areas:
       "alpha alpha alpha alpha"
       "beta beta beta beta";
   }
 
   .par-section--split & {
     @include media(large-up) {
-      grid-template-areas: 
+      grid-template-areas:
         "alpha alpha alpha beta"
         "alpha alpha alpha beta";
     }
@@ -136,7 +136,7 @@
 }
 
 .par-section__description {
-  color: tint($base-color, 48%);
+  @extend .prose;
 
   > *:last-child {
     margin-bottom: 0;
