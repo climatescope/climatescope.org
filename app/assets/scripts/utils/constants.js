@@ -57,13 +57,13 @@ export const downloadData = {
       url: '/assets/data/reports/climatescope-2018-report-en.pdf',
       title: 'Download full report in PDF',
       label: '2018',
-      size: '?Mb'
+      size: '3Mb'
     },
     model: {
       url: '/assets/data/model/climatescope-2018.xlsm',
       title: 'Download Climatescope model in Excel format',
       label: '2018 (Excel)',
-      size: '?Mb'
+      size: '14Mb'
     }
   },
   previous: [
