@@ -83,14 +83,10 @@
 }
 
 .page__title {
-  font-size: 1.25rem;
-  line-height: 1;
+  font-size: 1.75rem;
+  line-height: 2rem;
   margin: 0;
   text-transform: uppercase;
-
-  @include media(large-up) {
-    font-size: 1.5rem;
-  }
 
   a {
     display: block;
@@ -104,7 +100,8 @@
 
 .page__subtitle {
   @extend .heading-alt;
-  text-transform: uppercase;
+  text-transform: none;
+  line-height: 1.25rem;
 
   a {
     display: inline-block;
