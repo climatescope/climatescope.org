@@ -4,6 +4,7 @@ import { PropTypes as T } from 'prop-types'
 import { CSSTransition } from 'react-transition-group'
 import isEqual from 'lodash.isequal'
 import memoize from 'lodash.memoize'
+import kebabcase from 'lodash.kebabcase'
 import { area, line } from 'd3-shape'
 import { select, mouse } from 'd3-selection'
 import { axisBottom, axisLeft } from 'd3-axis'
@@ -151,7 +152,7 @@ class AreaChart extends React.Component {
 
     const entering = gradients.enter()
       .append('linearGradient')
-      .attr('id', (d, i) => `area-gradient-${i + 1}`)
+      .attr('id', d => `area-gradient-${kebabcase(d.name)}`)
       .attr('x1', '0%')
       .attr('y1', '0%')
       .attr('x2', '0%')
@@ -213,7 +214,7 @@ class AreaChart extends React.Component {
     areasG.enter()
       .append('g')
       .merge(areasG)
-      .attr('class', 'area')
+      .attr('class', d => `area area--${kebabcase(d.name)}`)
       .each(function (d) {
         select(this)
           .datum(d)
@@ -389,7 +390,7 @@ class AreaChart extends React.Component {
                   const val = datum ? datum.value : null
                   return (
                     <React.Fragment key={d.name}>
-                      <dt className={`legend__key--val-${i + 1}`}>{d.name}</dt>
+                      <dt className={`legend__key--val-${kebabcase(d.name)}`}>{d.name}</dt>
                       <dd>{val === null ? '--' : formatTousands(val, 2, true)}</dd>
                     </React.Fragment>
                   )
