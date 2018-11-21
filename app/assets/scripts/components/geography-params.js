@@ -407,7 +407,6 @@ const renderParCardTimeSeries = (chart, reactComponent, key) => {
       {hasData && <AreaChart
         onBisectorEvent={reactComponent.onInteractionEvent.bind(reactComponent, chart.id)}
         interactionData={reactComponent.state[chart.id]}
-        xLabel={chartData.xLabel}
         yLabel={chartData.yLabel}
         yDomain={chartData.yDomain}
         xDomain={chartData.xDomain}

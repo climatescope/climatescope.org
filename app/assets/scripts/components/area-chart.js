@@ -20,7 +20,7 @@ class AreaChart extends React.Component {
   constructor (props) {
     super(props)
     this.componentEl = null
-    this.margin = { top: 32, right: 32, bottom: 44, left: 80, innerLeft: 32, innerRight: 32 }
+    this.margin = { top: 32, right: 0, bottom: 44, left: 80, innerLeft: 32, innerRight: 32 }
     // Control whether the chart was rendered.
     // The size aware element fires a onChange event once it is rendered
     // But at that time the chart is not ready yet so we can't update the size.
@@ -120,10 +120,6 @@ class AreaChart extends React.Component {
       .attr('class', 'chart-label chart-label-y')
       .attr('text-anchor', 'end')
       .attr('transform', `translate(${left},0)`)
-      .attr('dy', '0.71em')
-
-    this.svg.append('text')
-      .attr('class', 'chart-label chart-label-x')
       .attr('dy', '0.71em')
 
     this.dataCanvas.append('line')
@@ -241,7 +237,7 @@ class AreaChart extends React.Component {
     const { top, bottom, right, left, innerLeft, innerRight } = this.margin
     const { width, height } = this.getSize()
     const { svg, dataCanvas } = this
-    const { data, yDomain, xDomain, xLabel, yLabel, interactionData: { hover, hoverDateValue } } = props
+    const { data, yDomain, xDomain, yLabel, interactionData: { hover, hoverDateValue } } = props
 
     // ---------------------------------------------------
     // Functions
@@ -290,10 +286,6 @@ class AreaChart extends React.Component {
     // Chart label
     svg.select('.chart-label-y')
       .text(yLabel)
-    svg.select('.chart-label-x')
-      // +9 to ensure it aligns with the axis.
-      .attr('transform', `translate(${left + width},${top + height + 9})`)
-      .text(xLabel)
 
     // ---------------------------------------------------
     // Areas
