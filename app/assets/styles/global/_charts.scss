@@ -249,8 +249,12 @@
   display: flex;
   flex-flow: column-reverse;
   min-width: 4rem;
+  height: 12rem;
 
   dd {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
     font-family: $heading-font-family;
     font-weight: $heading-font-bold;
     font-size: 2.5rem;
@@ -260,6 +264,7 @@
   dt {
     font-size: 0.75rem;
     line-height: 1rem;
+    flex: 0;
 
     .info-card--par & {
       color: #fff;
@@ -267,9 +272,9 @@
   }
 
   .card-percent-bar {
-    height: 5rem;
     margin-bottom: $global-spacing / 2;
     display: flex;
+    flex: 1;
     align-items: flex-end;
     background: rgba(#000, 0.16);
 
@@ -281,10 +286,22 @@
   }
 }
 
+.card-percent--single {
+  width: 50%;
+  min-width: 7rem;
+}
+
 /* Overrides for availability of policies */
 .chart-availability-policies {
+  .card-percent {
+    height: auto;
+
+    dd {
+      min-height: 15rem;
+    }
+  }
+
   .card-percent-bar {
-    height: 12rem;
     background: rgba(#000, 0.08);
 
     > div {
@@ -293,6 +310,13 @@
   }
 }
 
+
+/* Overrides for clean energy investment */
+.chart-cleanEnergyInvestment {
+  .schart__graph {
+    height: 20rem;
+  }
+}
 
 /* Area Chart
    ========================================================================== */
