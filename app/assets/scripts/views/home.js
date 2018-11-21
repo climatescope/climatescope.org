@@ -134,9 +134,7 @@ class Home extends React.Component {
               <div className='inpage__hero-item'>
                 <img src='../assets/graphics/layout/hero--cover.jpg' width='1920' height='1280' alt='Illustration' />
               </div>
-              <figcaption className='inpage__hero-caption'>
-                <a href='https://landsat.visibleearth.nasa.gov/view.php?id=92412' data-tip="Image by NASA's Landsat Then and Now" data-for='popover-compact' className='info'><span>Image by NASA's Landsat Then and Now</span></a>
-              </figcaption>
+              <figcaption className='inpage__hero-caption'>Cover image</figcaption>
             </figure>
 
           </header>
@@ -206,7 +204,7 @@ class Home extends React.Component {
                 <header className='fold__header'>
                   <h1 className='fold__title'>About Climatescope</h1>
                   <div className='fold__lead'>
-                    <p>Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future.</p>
+                    <p>The Climatescope project involves 42  BloombergNEF analysts compiling detailed data on 103 developing nations, and making visits to 54 countries in 2018.</p>
                   </div>
                 </header>
                 <div className='fold__body'>

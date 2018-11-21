@@ -46,7 +46,7 @@
     font-size: 0.875rem;
     line-height: 1.5rem;
     color: tint($base-color, 56%);
-    margin: 0 0 0 5.5rem;
+    margin: 0 0 0 6.5rem;
     padding: 0 0 0 1rem;
 
     &::before {
@@ -64,7 +64,7 @@
 
   dd {
     float: left;
-    width: 4.5rem;
+    width: 5.5rem;
     clear: left;
     margin-top: -1.5rem;
     font-family: $heading-font-family;
@@ -249,8 +249,12 @@
   display: flex;
   flex-flow: column-reverse;
   min-width: 4rem;
+  height: 12rem;
 
   dd {
+    display: flex;
+    flex-flow: column;
+    flex: 1;
     font-family: $heading-font-family;
     font-weight: $heading-font-bold;
     font-size: 2.5rem;
@@ -260,6 +264,7 @@
   dt {
     font-size: 0.75rem;
     line-height: 1rem;
+    flex: 0;
 
     .info-card--par & {
       color: #fff;
@@ -267,9 +272,9 @@
   }
 
   .card-percent-bar {
-    height: 5rem;
     margin-bottom: $global-spacing / 2;
     display: flex;
+    flex: 1;
     align-items: flex-end;
     background: rgba(#000, 0.16);
 
@@ -281,10 +286,22 @@
   }
 }
 
+.card-percent--single {
+  width: 50%;
+  min-width: 7rem;
+}
+
 /* Overrides for availability of policies */
 .chart-availability-policies {
+  .card-percent {
+    height: auto;
+
+    dd {
+      min-height: 15rem;
+    }
+  }
+
   .card-percent-bar {
-    height: 12rem;
     background: rgba(#000, 0.08);
 
     > div {
@@ -294,57 +311,46 @@
 }
 
 
+/* Overrides for clean energy investment */
+.chart-cleanEnergyInvestment {
+  .schart__graph {
+    height: 20rem;
+  }
+}
+
 /* Area Chart
    ========================================================================== */
 
 /* Area chart gradients */
 
+$energy-type: (
+  ("solar", $infograph-solar),
+  ("wind", $infograph-wind),
+  ("small-hydro", $infograph-small-hydro),
+  ("biomass-waste", $infograph-biomass-waste),
+  ("geothermal", $infograph-geothermal),
+  ("other", $infograph-other),
+  ("investment", $infograph-geothermal)
+);
+
 .stop--start {
-  stop-opacity: 0.16;
+  stop-opacity: 0.32;
 }
 .stop--end {
   stop-opacity: 0;
 }
 
-#area-gradient-1 .stop {
-  stop-color: $infograph-color-a
+@each $type, $color in $energy-type {
+  #area-gradient-#{$type} .stop {
+    stop-color: $color;
+  }
 }
-#area-gradient-2 .stop {
-  stop-color: $infograph-color-b
-}
-#area-gradient-3 .stop {
-  stop-color: $infograph-color-c
-}
-#area-gradient-4 .stop {
-  stop-color: $infograph-color-d
-}
-#area-gradient-5 .stop {
-  stop-color: $infograph-color-e
-}
-#area-gradient-6 .stop {
-  stop-color: $infograph-color-f
-}
-
 
 /* Popover params */
-
-.legend__key--val-1::before {
-  background: $infograph-color-a;
-}
-.legend__key--val-2::before {
-  background: $infograph-color-b;
-}
-.legend__key--val-3::before {
-  background: $infograph-color-c;
-}
-.legend__key--val-4::before {
-  background: $infograph-color-d;
-}
-.legend__key--val-5::before {
-  background: $infograph-color-e;
-}
-.legend__key--val-6::before {
-  background: $infograph-color-f;
+@each $type, $color in $energy-type {
+  .legend__key--val-#{$type}::before {
+    background: $color;
+  }
 }
 
 
@@ -388,82 +394,19 @@
     stroke-width: 2px;
   }
 
-  .area:nth-child(1) {
-    .area__path {
-      fill: url(#area-gradient-1)
-    }
-    .area__circle,
-    .area__line {
-      stroke: $infograph-color-a;
-    }
-    .area__circle.active {
-      fill: $infograph-color-a;
-      stroke: #fff;
-    }
-  }
-  .area:nth-child(2) {
-    .area__path {
-      fill: url(#area-gradient-2)
-    }
-    .area__circle,
-    .area__line {
-      stroke: $infograph-color-b;
-    }
-    .area__circle.active {
-      fill: $infograph-color-b;
-      stroke: #fff;
-    }
-  }
-  .area:nth-child(3) {
-    .area__path {
-      fill: url(#area-gradient-3)
-    }
-    .area__circle,
-    .area__line {
-      stroke: $infograph-color-c;
-    }
-    .area__circle.active {
-      fill: $infograph-color-c;
-      stroke: #fff;
-    }
-  }
-  .area:nth-child(4) {
-    .area__path {
-      fill: url(#area-gradient-4)
-    }
-    .area__circle,
-    .area__line {
-      stroke: $infograph-color-d;
-    }
-    .area__circle.active {
-      fill: $infograph-color-d;
-      stroke: #fff;
-    }
-  }
-  .area:nth-child(5) {
-    .area__path {
-      fill: url(#area-gradient-5)
-    }
-    .area__circle,
-    .area__line {
-      stroke: $infograph-color-e;
-    }
-    .area__circle.active {
-      fill: $infograph-color-e;
-      stroke: #fff;
-    }
-  }
-  .area:nth-child(6) {
-    .area__path {
-      fill: url(#area-gradient-6)
-    }
-    .area__circle,
-    .area__line {
-      stroke: $infograph-color-f;
-    }
-    .area__circle.active {
-      fill: $infograph-color-f;
-      stroke: #fff;
+  @each $type, $color in $energy-type {
+    .area--#{$type} {
+      .area__path {
+        fill: url(#area-gradient-#{$type})
+      }
+      .area__circle,
+      .area__line {
+        stroke: $color;
+      }
+      .area__circle.active {
+        fill: $color;
+        stroke: #fff;
+      }
     }
   }
 }

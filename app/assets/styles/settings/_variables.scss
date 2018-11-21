@@ -24,12 +24,13 @@ $base-alpha-color: rgba($base-color, 0.08);
 
 /* Infographic */
 
-$infograph-color-a: #ecb860;
-$infograph-color-b: #82c1cc;
-$infograph-color-c: #616094;
-$infograph-color-d: #3c93f7;
-$infograph-color-e: #df7b40;
-$infograph-color-f: #4aa57f;
+$infograph-solar: #F4A432;                      // yellow       solar
+$infograph-wind: #92d4ee;                       // lblue        wind
+$infograph-small-hydro: #499DD2;                // blue         small hydro
+$infograph-biomass-waste: #02A87C;              // turquoise    biomass
+$infograph-geothermal: #83549a;                  // purp         geothermal
+$infograph-other: #a8a8a8;                      // light grey   other
+
 
 /* Parameter */
 
@@ -52,7 +53,7 @@ $base-font-regular: 400;
 $base-font-regular-italic: 400i;
 $base-font-bold: 700;
 $base-font-bold-italic: 700i;
-$base-font-weight: $base-font-light;
+$base-font-weight: $base-font-regular;
 $base-font-size: 1rem;
 $base-line-height: 1.5;
 

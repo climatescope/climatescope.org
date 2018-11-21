@@ -4,15 +4,16 @@ import { PropTypes as T } from 'prop-types'
 import { CSSTransition } from 'react-transition-group'
 import isEqual from 'lodash.isequal'
 import memoize from 'lodash.memoize'
+import kebabcase from 'lodash.kebabcase'
 import { area, line } from 'd3-shape'
 import { select, mouse } from 'd3-selection'
 import { axisBottom, axisLeft } from 'd3-axis'
 import { scaleTime, scaleLinear } from 'd3-scale'
 
 import { environment } from '../config'
-import { splitArray } from '../utils/array'
+import { splitArray, sort } from '../utils/array'
 import { dateFromYear } from '../utils/utils'
-import { round } from '../utils/math'
+import { formatTousands } from '../utils/math'
 
 import SizeAwareElement from './size-aware-element'
 
@@ -20,7 +21,7 @@ class AreaChart extends React.Component {
   constructor (props) {
     super(props)
     this.componentEl = null
-    this.margin = { top: 32, right: 32, bottom: 44, left: 80, innerLeft: 32, innerRight: 32 }
+    this.margin = { top: 24, right: 0, bottom: 24, left: 80, innerLeft: 32, innerRight: 32 }
     // Control whether the chart was rendered.
     // The size aware element fires a onChange event once it is rendered
     // But at that time the chart is not ready yet so we can't update the size.
@@ -80,7 +81,6 @@ class AreaChart extends React.Component {
       .on('mouseover', this.onMouseOver.bind(this))
       .on('mouseout', this.onMouseOut.bind(this))
       .on('mousemove', this.onBisect(this, 'move'))
-      // .on('click', this.onBisect(this, 'click'))
   }
 
   initChart () {
@@ -120,11 +120,7 @@ class AreaChart extends React.Component {
       .attr('class', 'chart-label chart-label-y')
       .attr('text-anchor', 'end')
       .attr('transform', `translate(${left},0)`)
-      .attr('dy', '0.71em')
-
-    this.svg.append('text')
-      .attr('class', 'chart-label chart-label-x')
-      .attr('dy', '0.71em')
+      .attr('dy', '1em')
 
     this.dataCanvas.append('line')
       .attr('class', 'bisector-interact')
@@ -156,7 +152,7 @@ class AreaChart extends React.Component {
 
     const entering = gradients.enter()
       .append('linearGradient')
-      .attr('id', (d, i) => `area-gradient-${i + 1}`)
+      .attr('id', d => `area-gradient-${kebabcase(d.name)}`)
       .attr('x1', '0%')
       .attr('y1', '0%')
       .attr('x2', '0%')
@@ -173,10 +169,11 @@ class AreaChart extends React.Component {
 
   drawXAxis (scale) {
     const { top, left, innerLeft } = this.margin
-    const { height, width } = this.getSize()
+    const { height } = this.getSize()
     const { svg } = this
 
     const xAxis = axisBottom(scale)
+      .ticks(5)
 
     const xAxisEl = svg.select('.x.axis')
       .attr('transform', `translate(${left + innerLeft},${height + top})`)
@@ -185,14 +182,6 @@ class AreaChart extends React.Component {
 
     xAxisEl.select('.domain').remove()
     xAxisEl.selectAll('.tick line').remove()
-
-    // Check if there a need to rotate the labels.
-    const labelSize = 48
-    const neededSize = scale.ticks().length * labelSize
-    xAxisEl.selectAll('text')
-      .style('text-anchor', neededSize > width ? 'end' : 'middle')
-      .attr('dx', neededSize > width ? '-0.8em' : '')
-      .attr('transform', neededSize > width ? 'rotate(-65)' : '')
   }
 
   drawYAxis (scale) {
@@ -203,6 +192,7 @@ class AreaChart extends React.Component {
     const yAxis = axisLeft(scale)
       .ticks(Math.ceil(height / 48))
       .tickSize(-width)
+      .tickFormat(d => formatTousands(d, 0))
 
     const yAxisEl = svg.select('.y.axis')
       .attr('transform', `translate(${left},${top})`)
@@ -224,7 +214,7 @@ class AreaChart extends React.Component {
     areasG.enter()
       .append('g')
       .merge(areasG)
-      .attr('class', 'area')
+      .attr('class', d => `area area--${kebabcase(d.name)}`)
       .each(function (d) {
         select(this)
           .datum(d)
@@ -240,7 +230,7 @@ class AreaChart extends React.Component {
     const { top, bottom, right, left, innerLeft, innerRight } = this.margin
     const { width, height } = this.getSize()
     const { svg, dataCanvas } = this
-    const { data, yDomain, xDomain, xLabel, yLabel, interactionData: { hover, hoverDateValue } } = props
+    const { data, yDomain, xDomain, yLabel, interactionData: { hover, hoverDateValue } } = props
 
     // ---------------------------------------------------
     // Functions
@@ -289,10 +279,6 @@ class AreaChart extends React.Component {
     // Chart label
     svg.select('.chart-label-y')
       .text(yLabel)
-    svg.select('.chart-label-x')
-      // +9 to ensure it aligns with the axis.
-      .attr('transform', `translate(${left + width},${top + height + 9})`)
-      .text(xLabel)
 
     // ---------------------------------------------------
     // Areas
@@ -387,6 +373,23 @@ class AreaChart extends React.Component {
       top: posY + 'px'
     }
 
+    // Prepare the data to render.
+    const dataRender = data.map(d => {
+      const datum = d.values.find(v => v.year === year)
+      const val = datum ? datum.value : null
+      return { name: d.name, value: val }
+    })
+
+    // Sort data to render.
+    const dataRenderSorted = sort(dataRender, (a, b) => {
+      // Ensure that "Other" is always at the bottom.
+      if (a.name === 'Other') return 1
+      if (b.name === 'Other') return -1
+
+      // All the others in descendent order.
+      return a.value > b.value ? -1 : 1
+    })
+
     return (
       <CSSTransition
         in={hover}
@@ -399,16 +402,12 @@ class AreaChart extends React.Component {
           <div className='popover__contents'>
             <div className='popover__body'>
               <dl className='legend par-legend'>
-                {data.map((d, i) => {
-                  const datum = d.values.find(v => v.year === year)
-                  const val = datum ? datum.value : null
-                  return (
-                    <React.Fragment key={d.name}>
-                      <dt className={`legend__key--val-${i + 1}`}>{d.name}</dt>
-                      <dd>{val === null ? '--' : round(val)}</dd>
-                    </React.Fragment>
-                  )
-                })}
+                {dataRenderSorted.map(d => (
+                  <React.Fragment key={d.name}>
+                    <dt className={`legend__key--val-${kebabcase(d.name)}`}>{d.name}</dt>
+                    <dd>{d.value === null ? '--' : formatTousands(d.value, 2, true)}</dd>
+                  </React.Fragment>
+                ))}
               </dl>
             </div>
           </div>
@@ -540,12 +539,13 @@ function chartArea () {
  * @param {array} passThrough Types to keep. The other will be merged into others.
  */
 export const computeAreaChartData = (data, passThrough) => {
-  if (!data || !data.data.length) return { yDomain: [], xDomain: [], data: [], xLabel: '', yLabel: '' }
+  const empty = { yDomain: [], xDomain: [], data: [], xLabel: '', yLabel: '' }
+  if (!data || !data.data.length) return empty
   // If passThrough is empty, keep all.
   const { left: toKeep, right: toGroup } = splitArray(data.data, item => passThrough.length ? passThrough.indexOf(item.name) !== -1 : true)
 
   // Sort the toKeep.
-  toKeep.sort((a, b) => {
+  const toKeepSorted = sort(toKeep, (a, b) => {
     const sum = (v) => v.reduce((acc, o) => acc + o.value, 0)
     return sum(a.values) > sum(b.values) ? 1 : -1
   })
@@ -575,9 +575,18 @@ export const computeAreaChartData = (data, passThrough) => {
     }, [])
   }
 
-  const chartData = others.values.length
-    ? [others, ...toKeep]
-    : toKeep
+  let chartData = others.values.length
+    ? [others, ...toKeepSorted]
+    : toKeepSorted
+
+  // Final clean up. Exclude values where all years are 0.
+  chartData = chartData.reduce((acc, o) => {
+    return o.values.every(d => d.value === 0)
+      ? acc
+      : acc.concat(o)
+  }, [])
+
+  if (!chartData.length) return empty
 
   // I'll stack my own data.
   // D3's method for stacking data returns an array and it's not easy to use

@@ -1,6 +1,6 @@
 {
   "name": "climatescope",
-  "version": "4.0.0-beta",
+  "version": "4.0.0-beta2",
   "description": "Climatescope website",
   "repository": {
     "type": "git",
@@ -110,6 +110,7 @@
     "lodash.defaultsdeep": "^4.6.0",
     "lodash.get": "^4.4.2",
     "lodash.isequal": "^4.5.0",
+    "lodash.kebabcase": "^4.1.1",
     "lodash.memoize": "^4.1.2",
     "lodash.orderby": "^4.6.0",
     "lodash.set": "^4.3.2",
@@ -119,6 +120,7 @@
     "react-dom": "^16.5.2",
     "react-ga": "^2.5.3",
     "react-helmet": "^5.2.0",
+    "react-mailchimp-subscribe": "^2.0.2",
     "react-paginate": "^5.2.4",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",

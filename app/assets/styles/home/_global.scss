@@ -10,6 +10,7 @@
   .inpage__title {
     @include heading(2.5rem, xlarge-up);
     text-transform: none;
+    margin-bottom: $global-spacing * 2;
   }
 
   .col--main {
@@ -27,10 +28,19 @@
       padding-bottom: ($global-spacing * 4);
     }
   }
+
+  .inpage__hero-caption {
+    @extend .visually-hidden;
+  }
 }
 
 .home-cta-button {
   @extend .button, .button--xlarge, .button--achromic-glass;
+  min-width: 12rem;
+
+  &::after {
+    @extend %collecticon-sm-chevron-right;
+  }
 }
 
 
@@ -44,7 +54,7 @@
   margin-bottom: $global-spacing * 2;
 
   > *:last-child {
-    margin-left: auto; 
+    margin-left: auto;
   }
 }
 
@@ -112,7 +122,7 @@
       content: '';
       pointer-events: none;
     }
-    
+
     > div {
       height: 100%;
     }

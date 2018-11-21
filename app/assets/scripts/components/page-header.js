@@ -14,7 +14,7 @@ export default class PageHeader extends React.PureComponent {
         <div className='inner'>
           <div className='page__headline'>
             <h1 className='page__title'><Link to='/' title='View page'>{appTitle} <em>{appEdition}</em></Link></h1>
-            <p className='page__subtitle'>By <a href='http://www.newenergyfinance.com/' title='Visit Bloomberg NEF'><img alt='Bloomberg New Energy Finance logo' src='/assets/graphics/layout/logo-bnef-short-flat-neg.svg' /><span>Bloomberg NEF</span></a></p>
+            <p className='page__subtitle'>by <a href='http://www.newenergyfinance.com/' title='Visit Bloomberg NEF'><img alt='Bloomberg New Energy Finance logo' src='/assets/graphics/layout/logo-bnef-short-flat-neg.svg' /><span>Bloomberg NEF</span></a></p>
           </div>
           <nav className='page__prime-nav nav' role='navigation'>
             <NavGlobalMenu forHeader />

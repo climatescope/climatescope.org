@@ -91,10 +91,11 @@ if (environment !== 'production') {
  *                      construct the class `info-card--${theme}`.
  * @param {string} topic The topic of the card. Used to construct
  *                      the class `info-card--par-${topic}`.
+ * @param {string} className Additional classnames for the card
  * @param {node} children Content of the card.
  */
-export const ParCard = ({ title, hiddenTitle, description, size, theme, topic, children }) => (
-  <article className={c('info-card', {
+export const ParCard = ({ title, hiddenTitle, description, size, theme, topic, className, children }) => (
+  <article className={c('info-card', className, {
     [`info-card--${size}`]: !!size,
     [`info-card--${theme}`]: !!theme,
     'info-card--par': !!topic,
@@ -118,6 +119,7 @@ if (environment !== 'production') {
     size: T.string,
     theme: T.string,
     topic: T.string,
+    className: T.string,
     children: T.node
   }
 }
@@ -226,8 +228,8 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
         switch (uniqueTypes[0]) {
           case 'answer':
             return renderParCardAnswerGroup(reconciledData)
-          case 'absolute':
-            return renderParCardAbsoluteGroup(reconciledData)
+          case 'percent':
+            return renderParCardPercentGroup(reconciledData)
           default:
             console.warn(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
             throw new Error(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
@@ -248,6 +250,8 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
           case 'absolute':
           case 'average':
             return renderParCardAbsolute(reconciledData)
+          case 'percent':
+            return renderParCardPercent(reconciledData)
           case 'range':
             return renderParCardRange(reconciledData)
           case 'timeSeries':
@@ -351,6 +355,36 @@ const renderParCardAbsolute = (chart) => {
 }
 
 /**
+ * Renders an "percent" card type.
+ *
+ * @param {object} chart Chart data
+ */
+const renderParCardPercent = (chart) => {
+  const val = chart.data.value
+  return (
+    <ParCard
+      key={chart.id}
+      title={chart.name}
+      description={chart.description || null}
+      size={chart.size}
+      topic={chart.topic}
+    >
+      <dl className='card-percent card-percent--single'>
+        <dt className='visually-hidden'>{chart.name}</dt>
+        <dd>
+          <span>{val === null ? 'N/A' : `${val}%`}</span>
+          {val !== null && (
+            <div className='card-percent-bar'>
+              {val > 0 && <div style={{ height: `${val}%` }}></div>}
+            </div>
+          )}
+        </dd>
+      </dl>
+    </ParCard>
+  )
+}
+
+/**
  * Renders an "range" card type.
  *
  * @param {object} chart Chart data
@@ -401,12 +435,12 @@ const renderParCardTimeSeries = (chart, reactComponent, key) => {
       title={chart.name}
       description={hasData ? (chart.description || null) : null}
       size={chart.size}
+      className={`chart-${chart.id}`}
     >
       {!hasData && <p>No data is available for this chart</p>}
       {hasData && <AreaChart
         onBisectorEvent={reactComponent.onInteractionEvent.bind(reactComponent, chart.id)}
         interactionData={reactComponent.state[chart.id]}
-        xLabel={chartData.xLabel}
         yLabel={chartData.yLabel}
         yDomain={chartData.yDomain}
         xDomain={chartData.xDomain}
@@ -501,11 +535,11 @@ const renderParCardAnswerGroup = (chart) => {
 }
 
 /**
- * Renders an group of "absolute" card type.
+ * Renders an group of "percent" card type.
  *
  * @param {object} chart Chart data
  */
-const renderParCardAbsoluteGroup = (chart) => {
+const renderParCardPercentGroup = (chart) => {
   return (
     <ParCard
       key={chart.id}

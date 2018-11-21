@@ -70,6 +70,12 @@ Vendor: Mapbox GL
 .mapboxgl-ctrl-bottom-left {
   bottom: $global-spacing;
   left: $global-spacing;
+  display: flex;
+  flex-flow: nowrap;
+
+  > * {
+    margin-right: $global-spacing / 2;
+  }
 
   @include media(large-up) {
     left: $global-spacing * 1.5;
@@ -91,13 +97,16 @@ Vendor: Mapbox GL
 }
 
 .mapboxgl-ctrl-group {
-  @extend .button-group, .button-group--vertical;
-  box-shadow: ($base-border-width * 2) ($base-border-width * 2) 0 rgba($base-color, 0.06);
+  @extend .button-group, .button-group--horizontal;
+  box-shadow: $base-border-width $base-border-width 0 rgba($base-color, 0.06);
   border-radius: $base-border-radius;
+  padding: $global-spacing / 2;
+  background: #fff;
 
   > button {
-    @extend .button, .button--base-raised-light, .button--text-hidden;
+    @extend .button, .button--small, .button--base-raised-semidark, .button--text-hidden;
     font-size: 0;
+    min-width: 2rem;
 
     &::before {
       font-size: 1rem;
