@@ -20,7 +20,7 @@ class AreaChart extends React.Component {
   constructor (props) {
     super(props)
     this.componentEl = null
-    this.margin = { top: 32, right: 0, bottom: 44, left: 80, innerLeft: 32, innerRight: 32 }
+    this.margin = { top: 24, right: 0, bottom: 24, left: 80, innerLeft: 32, innerRight: 32 }
     // Control whether the chart was rendered.
     // The size aware element fires a onChange event once it is rendered
     // But at that time the chart is not ready yet so we can't update the size.
@@ -80,7 +80,6 @@ class AreaChart extends React.Component {
       .on('mouseover', this.onMouseOver.bind(this))
       .on('mouseout', this.onMouseOut.bind(this))
       .on('mousemove', this.onBisect(this, 'move'))
-      // .on('click', this.onBisect(this, 'click'))
   }
 
   initChart () {
@@ -120,7 +119,7 @@ class AreaChart extends React.Component {
       .attr('class', 'chart-label chart-label-y')
       .attr('text-anchor', 'end')
       .attr('transform', `translate(${left},0)`)
-      .attr('dy', '0.71em')
+      .attr('dy', '1em')
 
     this.dataCanvas.append('line')
       .attr('class', 'bisector-interact')
@@ -169,10 +168,11 @@ class AreaChart extends React.Component {
 
   drawXAxis (scale) {
     const { top, left, innerLeft } = this.margin
-    const { height, width } = this.getSize()
+    const { height } = this.getSize()
     const { svg } = this
 
     const xAxis = axisBottom(scale)
+      .ticks(5)
 
     const xAxisEl = svg.select('.x.axis')
       .attr('transform', `translate(${left + innerLeft},${height + top})`)
@@ -181,14 +181,6 @@ class AreaChart extends React.Component {
 
     xAxisEl.select('.domain').remove()
     xAxisEl.selectAll('.tick line').remove()
-
-    // Check if there a need to rotate the labels.
-    const labelSize = 48
-    const neededSize = scale.ticks().length * labelSize
-    xAxisEl.selectAll('text')
-      .style('text-anchor', neededSize > width ? 'end' : 'middle')
-      .attr('dx', neededSize > width ? '-0.8em' : '')
-      .attr('transform', neededSize > width ? 'rotate(-65)' : '')
   }
 
   drawYAxis (scale) {
