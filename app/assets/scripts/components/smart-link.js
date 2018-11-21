@@ -13,7 +13,7 @@ export default class SmartLink extends React.PureComponent {
     const { to, ...props } = this.props
 
     return /^https?:\/\//.test(to)
-      ? <a href={to} {...props} />
+      ? <a href={to} {...props} target='_blank' />
       : <Link to={to} {...props} />
   }
 }
