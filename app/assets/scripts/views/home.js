@@ -134,9 +134,7 @@ class Home extends React.Component {
               <div className='inpage__hero-item'>
                 <img src='../assets/graphics/layout/hero--cover.jpg' width='1920' height='1280' alt='Illustration' />
               </div>
-              {/* <figcaption className='inpage__hero-caption'>
-                <a href='https://landsat.visibleearth.nasa.gov/view.php?id=92412' data-tip="Image by NASA's Landsat Then and Now" data-for='popover-compact' className='info'><span>Image by NASA's Landsat Then and Now</span></a>
-              </figcaption> */}
+              <figcaption className='inpage__hero-caption'>Cover image</figcaption>
             </figure>
 
           </header>
