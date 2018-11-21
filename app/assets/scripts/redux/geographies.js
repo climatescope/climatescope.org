@@ -133,6 +133,16 @@ export function fetchGeographiesMeta () {
         const topRight = [east, north]
         const lowRight = [east, south]
 
+        // Specific overrides.
+        // Russia (wraps dateline)
+        if (r.iso === 'ru') {
+          return {
+            ...r,
+            bounds: [ lowLeft, topRight ],
+            center: [ 93.8671875, 64.01449619484472 ]
+          }
+        }
+
         return {
           ...r,
           bounds: [ lowLeft, topRight ],
