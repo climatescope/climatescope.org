@@ -539,7 +539,8 @@ function chartArea () {
  * @param {array} passThrough Types to keep. The other will be merged into others.
  */
 export const computeAreaChartData = (data, passThrough) => {
-  if (!data || !data.data.length) return { yDomain: [], xDomain: [], data: [], xLabel: '', yLabel: '' }
+  const empty = { yDomain: [], xDomain: [], data: [], xLabel: '', yLabel: '' }
+  if (!data || !data.data.length) return empty
   // If passThrough is empty, keep all.
   const { left: toKeep, right: toGroup } = splitArray(data.data, item => passThrough.length ? passThrough.indexOf(item.name) !== -1 : true)
 
@@ -574,9 +575,18 @@ export const computeAreaChartData = (data, passThrough) => {
     }, [])
   }
 
-  const chartData = others.values.length
+  let chartData = others.values.length
     ? [others, ...toKeepSorted]
     : toKeepSorted
+
+  // Final clean up. Exclude values where all years are 0.
+  chartData = chartData.reduce((acc, o) => {
+    return o.values.every(d => d.value === 0)
+      ? acc
+      : acc.concat(o)
+  }, [])
+
+  if (!chartData.length) return empty
 
   // I'll stack my own data.
   // D3's method for stacking data returns an array and it's not easy to use
