@@ -20,7 +20,7 @@
     @extend .antialiased;
     color: #fff;
     background: $base-color;
-    padding: ($global-spacing * 8) 0 ($global-spacing * 6) 0;
+    padding: ($global-spacing * 9) 0 ($global-spacing * 6) 0;
     text-shadow: 0 0 8px rgba($base-color, 0.64);
   }
 }
@@ -66,7 +66,6 @@
       @extend .button--achromic-plain;
     }
   }
-
 }
 
 .inpage__introduction {
@@ -152,7 +151,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba($base-color, 0.16);
+    background: rgba($base-color, 0.32);
     content: '';
   }
 }

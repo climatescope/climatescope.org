@@ -164,9 +164,6 @@ export default class ResultsMap extends React.Component {
       logoPosition: 'bottom-right'
     })
 
-    // Add zoom controls.
-    this.map.addControl(new mapboxgl.NavigationControl(), 'top-left')
-
     // Disable map rotation using right click + drag.
     this.map.dragRotate.disable()
 
@@ -176,9 +173,6 @@ export default class ResultsMap extends React.Component {
     // Disable scroll zoom
     this.map.scrollZoom.disable()
 
-    // Remove compass.
-    document.querySelector('.mapboxgl-ctrl .mapboxgl-ctrl-compass').remove()
-
     // Country rank selector.
     this.markersHighlightControl = new MapboxControl(MarkersHighlight, {
       highlight: this.props.markersHighlight,
@@ -186,6 +180,12 @@ export default class ResultsMap extends React.Component {
     })
 
     this.map.addControl(this.markersHighlightControl, 'bottom-left')
+
+    // Add zoom controls.
+    this.map.addControl(new mapboxgl.NavigationControl(), 'bottom-left')
+
+    // Remove compass.
+    document.querySelector('.mapboxgl-ctrl .mapboxgl-ctrl-compass').remove()
 
     this.map.on('load', () => {
       this.mapLoaded = true

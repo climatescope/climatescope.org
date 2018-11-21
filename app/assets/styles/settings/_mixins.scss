@@ -117,8 +117,8 @@
     @else if $brightness == "semidark" {
       $text-color: $color;
       $bg-color: tint($color, 88%);
-      $bg-color-hover: tint($color, 84%);
-      $bg-color-active: tint($color, 80%);
+      $bg-color-hover: tint($color, 80%);
+      $bg-color-active: tint($color, 72%);
       $shadow-color: rgba($base-color, 0.12);
     }
 

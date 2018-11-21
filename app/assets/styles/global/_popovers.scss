@@ -63,7 +63,7 @@
 
   .label {
     @extend .label--text-hidden;
-    margin: ($global-spacing / 8);
+    margin: ($global-spacing / 8) ($global-spacing / 4);
   }
 }
 
