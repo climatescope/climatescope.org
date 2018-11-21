@@ -206,7 +206,7 @@ class Home extends React.Component {
                 <header className='fold__header'>
                   <h1 className='fold__title'>About Climatescope</h1>
                   <div className='fold__lead'>
-                    <p>Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future.</p>
+                    <p>The Climatescope project involves 42  BloombergNEF analysts compiling detailed data on 103 developing nations, and making visits to 54 countries in 2018.</p>
                   </div>
                 </header>
                 <div className='fold__body'>
