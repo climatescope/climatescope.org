@@ -10,6 +10,7 @@
   .inpage__title {
     @include heading(2.5rem, xlarge-up);
     text-transform: none;
+    margin-bottom: $global-spacing * 2;
   }
 
   .col--main {
@@ -35,6 +36,11 @@
 
 .home-cta-button {
   @extend .button, .button--xlarge, .button--achromic-glass;
+  min-width: 12rem;
+
+  &::after {
+    @extend %collecticon-sm-chevron-right;
+  }
 }
 
 
