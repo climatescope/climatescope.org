@@ -10,6 +10,7 @@ import geoLayoutDef from '../utils/geographies-layout'
 
 import ShareOptions from './share'
 import Dropdown from './dropdown'
+import SizeAwareElement from './size-aware-element'
 
 export default class NavBar extends React.PureComponent {
   constructor (props) {
@@ -22,7 +23,12 @@ export default class NavBar extends React.PureComponent {
       label: o.title
     }))
 
+    this.state = {
+      largeUp: false
+    }
+
     this.onPrintClick = this.onPrintClick.bind(this)
+    this.resizeListener = this.resizeListener.bind(this)
   }
 
   onPrintClick () {
@@ -34,24 +40,38 @@ export default class NavBar extends React.PureComponent {
     window.print()
   }
 
+  resizeListener ({ width }) {
+    this.setState({ largeUp: width >= 992 })
+  }
+
   render () {
     const { isSticky, style, currentItem } = this.props
 
-    const activeItem = (this.menuItems.find(i => i.id === currentItem) || { label: 'Sections' })
+    const activeItem = this.menuItems.find(i => i.id === currentItem) || {
+      label: 'Sections'
+    }
 
     return (
-      <nav className={c('inpage__nav nav', { 'inpage__nav--sticky': isSticky })} style={style} role='navigation'>
+      <SizeAwareElement
+        onChange={this.resizeListener}
+        element='nav'
+        className={c('inpage__nav nav', { 'inpage__nav--sticky': isSticky })}
+        style={style}
+        role='navigation'
+      >
         <div className='inner'>
           {isSticky ? (
             <div className='nav__headline'>
               <p className='nav__subtitle'>
-                <Link to='/results' title='View results page'><span>View all markets</span></Link>
+                <Link to='/results' title='View results page'>
+                  <span>View all markets</span>
+                </Link>
               </p>
               <h1 className='nav__title'>{this.props.geography.name}</h1>
             </div>
           ) : null}
           <div className='nav__block'>
-            {isSticky ? (
+            {isSticky || !this.state.largeUp ? (
               <Dropdown
                 className='dropdown-content'
                 triggerElement='a'
@@ -60,18 +80,38 @@ export default class NavBar extends React.PureComponent {
                 triggerText={activeItem.label}
                 triggerTitle='Jump to section'
                 direction='down'
-                alignment='left' >
+                alignment='left'
+              >
                 <h6 className='drop__title'>Jump to section</h6>
                 <ul className='drop__menu drop__menu--select'>
                   {this.menuItems.map(item => (
-                    <li key={item.id}><a data-hook='dropdown:close' href={`#${item.id}`} title={item.title} className={c('drop__menu-item', { 'drop__menu-item--active': item.id === activeItem.id })}>{item.label}</a></li>
+                    <li key={item.id}>
+                      <a
+                        data-hook='dropdown:close'
+                        href={`#${item.id}`}
+                        title={item.title}
+                        className={c('drop__menu-item', {
+                          'drop__menu-item--active': item.id === activeItem.id
+                        })}
+                      >
+                        {item.label}
+                      </a>
+                    </li>
                   ))}
                 </ul>
               </Dropdown>
             ) : (
               <ul className='sections-menu'>
                 {this.menuItems.map(item => (
-                  <li key={item.id} className='sections-menu__item'><a href={`#${item.id}`} title={item.title} className='sections-menu__link'><span>{item.label}</span></a></li>
+                  <li key={item.id} className='sections-menu__item'>
+                    <a
+                      href={`#${item.id}`}
+                      title={item.title}
+                      className='sections-menu__link'
+                    >
+                      <span>{item.label}</span>
+                    </a>
+                  </li>
                 ))}
               </ul>
             )}
@@ -99,7 +139,7 @@ export default class NavBar extends React.PureComponent {
             </Dropdown>
           </div>
         </div>
-      </nav>
+      </SizeAwareElement>
     )
   }
 }

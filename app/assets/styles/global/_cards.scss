@@ -198,14 +198,19 @@ a.card__contents {
   }
 }
 
-.card__go-link {
+.card__go-link,
+.card__download-link {
   @extend .button, .button--small, .button--base-plain;
   margin-left: -0.5rem;
+}
 
-  &::after {
-    @extend %collecticon-sm-chevron-right;
-    margin-left: 0.125rem;
-  }
+.card__go-link::after {
+  @extend %collecticon-sm-chevron-right;
+  margin-left: 0.125rem;
+}
+
+.card__download-link::before {
+  @extend %collecticon-download-2;
 }
 
 
@@ -230,7 +235,8 @@ a.card__contents {
     background: $primary-color;
   }
 
-  .card__go-link {
+  .card__go-link,
+  .card__download-link {
     @extend .button--achromic-plain;
   }
 }

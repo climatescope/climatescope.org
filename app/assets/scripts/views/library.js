@@ -78,8 +78,8 @@ class ReportCard extends React.PureComponent {
             </div>
           </header>
           <footer>
-            {report && <SmartLink to={baseurl + report.url} title={report.title} className='card__go-link' onClick={this.onDownloadClick.bind(this, report.url)} target='_blank'><span>Download report (PDF)</span></SmartLink>}
-            {model && <SmartLink to={baseurl + model.url} title={model.title} className='card__go-link' onClick={this.onDownloadClick.bind(this, model.url)} target='_blank'><span>Download model (Excel)</span></SmartLink>}
+            {report && <SmartLink to={baseurl + report.url} title={report.title} className='card__download-link' onClick={this.onDownloadClick.bind(this, report.url)} target='_blank'><span>Report (PDF)</span></SmartLink>}
+            {model && <SmartLink to={baseurl + model.url} title={model.title} className='card__download-link' onClick={this.onDownloadClick.bind(this, model.url)} target='_blank'><span>Model (Excel)</span></SmartLink>}
           </footer>
         </div>
       </article>
