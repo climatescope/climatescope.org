@@ -295,6 +295,12 @@
     padding: 0.25rem 1rem;
     color: $base-font-color;
     transition: all 0.16s ease 0s;
+    user-select: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
 
     &:hover,
     &:focus {
@@ -406,4 +412,12 @@
 
 .dpi-facebook::before {
   @extend %collecticon-brand-facebook;
+}
+
+.dpi-print::before {
+  @extend %collecticon-printer;
+}
+
+.dpi-compare::before {
+  @extend %collecticon-arrow-left-right;
 }

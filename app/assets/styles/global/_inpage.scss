@@ -253,11 +253,11 @@
   }
 }
 
-.ipa-print {
+.ipa-options {
   @extend .button--primary-raised-dark;
 
   &::before {
-    @extend %collecticon-printer;
+    @extend %collecticon-cog;
   }
 }
 

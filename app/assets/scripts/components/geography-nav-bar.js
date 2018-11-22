@@ -77,8 +77,26 @@ export default class NavBar extends React.PureComponent {
             )}
           </div>
           <div className='inpage__actions'>
-            <button type='button' className='ipa-print' title='Print content' onClick={this.onPrintClick}><span>Print</span></button>
-            <ShareOptions url={window.location.toString()} />
+            <Dropdown
+              className='dropdown-content'
+              triggerClassName='ipa-options'
+              triggerActiveClassName='button--active'
+              triggerText='Actions'
+              triggerTitle='Toggle options'
+              direction='down'
+              alignment='right' >
+              <h6 className='drop__title'>Share</h6>
+              <ul className='drop__menu drop__menu--iconified'>
+                <li><a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.toString()}`} className='drop__menu-item dpi-facebook' title='Share on Facebook' target='_blank' data-hook='dropdown:close'><span>Facebook</span></a></li>
+                <li><a href={`https://twitter.com/intent/tweet?url=${window.location.toString()}`} className='drop__menu-item dpi-twitter' title='Share on Twitter' target='_blank' data-hook='dropdown:close'><span>Twitter</span></a></li>
+              </ul>
+              <ul className='drop__menu drop__menu--iconified'>
+                <li><button className='drop__menu-item dpi-print' title='Print content' onClick={this.onPrintClick} data-hook='dropdown:close'><span>Print</span></button></li>
+              </ul>
+              <ul className='drop__menu drop__menu--iconified'>
+                <li><Link to={`/compare/${this.props.geography.iso}`} className='drop__menu-item dpi-compare' title='Compare with another Geography' data-hook='dropdown:close'><span>Compare</span></Link></li>
+              </ul>
+            </Dropdown>
           </div>
         </div>
       </nav>
