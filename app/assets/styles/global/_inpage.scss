@@ -90,8 +90,8 @@
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: ($global-spacing * 2) ($global-spacing * 6);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: ($global-spacing * 2) ($global-spacing * 3);
   font-family: $heading-font-family;
   font-weight: $heading-font-bold;
 
@@ -100,6 +100,11 @@
     font-size: 2.5rem;
     line-height: 1;
     margin-bottom: 0.25rem;
+
+    small {
+      font-size: 1rem;
+      margin: 0 0.25rem;
+    }
   }
 
   sub {
