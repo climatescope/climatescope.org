@@ -1,0 +1,53 @@
+prose:
+  ignore:
+    - /app/api
+    - /app/assets
+    - /app/index.html
+    - /app/humans.txt
+    - /app/robots.txt
+    - /app/CNAME
+    - /app/_includes
+    - /app/_layouts
+    - /app/_plugins
+    
+    
+    # In due time block _prose and _config.
+    - /_prose.yml
+    - /_config.yml
+    - /_config-dev.yml
+    - /_config-stage.yml
+    
+    # Development stuff
+    - /.gitignore
+    - /.eslint
+    - /.nvmrc
+    - /gulpfile.js
+    - /Gemfile
+    - /Gemfile.lock
+    - /LICENSE.md
+    - /README.md
+    - /package.json
+    - /.travis.yml
+    - /.bundle
+    - /.circleci
+  
+  rooturl: app
+  
+  metadata:
+    ## PAGE
+    "app/_pages":
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Page name"
+          placeholder: "Page name"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Api url"
+          placeholder: "api/page-name.json"
+          help: "The permalink must follow the 'api/page-name.json' format, where 'page-name' is lowercase with no spaces. This will reflect the page url on the final site."
