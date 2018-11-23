@@ -8,11 +8,15 @@ import { environment } from '../config'
 import { fetchGeographies, fetchGeography } from '../redux/geographies'
 import { wrapApiResult, getFromState } from '../utils/utils'
 import { initializeArrayWithRange } from '../utils/array'
+import { round } from '../utils/math'
+import { padNumber } from '../utils/string'
 
 import App from './app'
 import ShareOptions from '../components/share'
 import SelectControl from '../components/form-select-control'
 import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-skeleton'
+import OnGrid from '../components/on-grid'
+import { ParameterBreakdown } from '../components/parameters'
 
 const getGeoISOFromUrl = (params = '') => {
   const split = params.split('/')
@@ -273,25 +277,29 @@ class GeographyCompare extends React.PureComponent {
       return this.renderError()
     }
 
+    // Flatten topics.
+    const topics = source.topics.map(t => ({
+      id: t.id,
+      name: t.name,
+      weight: t.weight,
+      value: t.data[0].value
+    }))
+
     return (
       <>
-        <div className='compare--entry__heading'>
-          <h1 className='compare--entry__title'>{source.name}</h1>
+        <div className='compare--entry'>
           <p className='compare--entry__subtitle'>
-            <Link to={`/results?region=${'reg'}`} title={`Go to`}>Region Name</Link>
+            <Link to={`/results?region=${source.region.id}`} title={`View results for ${source.region.name} region`}>{source.region.name}</Link>
           </p>
-          <em className='label-grid label-grid-on'><span>On-grid</span></em>
-
-          <dl className='stats-list'>
+          <h1 className='compare--entry__title'>{source.name} <OnGrid grid={source.grid} noTip /></h1>
+          <ParameterBreakdown
+            className='legend par-legend'
+            data={topics} >
             <dt>Global rank</dt>
-            <dd>02</dd>
-            <dt>Global score</dt>
-            <dd>0.78</dd>
-
-            <dt className='param-1'>Param 1</dt>
-            <dd>10.5</dd>
-          </dl>
-
+            <dd>{padNumber(source.score.data[0].rank, 2)}</dd>
+            <dt>Score</dt>
+            <dd>{round(source.score.data[0].value)}</dd>
+          </ParameterBreakdown>
         </div>
       </>
     )
