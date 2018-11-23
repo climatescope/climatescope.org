@@ -262,7 +262,7 @@
   @extend .button--primary-raised-dark;
 
   &::before {
-    @extend %collecticon-cog;
+    @extend %collecticon-ellipsis-vertical;
   }
 }
 
