@@ -15,7 +15,11 @@
   justify-items: stretch;
 
   > * {
-    grid-column: auto / span 4;
+    grid-column: auto / span 6;
+
+    @include media(large-up) {
+      grid-column: auto / span 4;
+    }
   }
 
   .card {
@@ -26,30 +30,16 @@
 
 /* Logo list
    ========================================================================== */
-
 .logo-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 0 $global-spacing;
   list-style: none;
   padding: 0;
   margin: 0;
-  overflow: hidden;
-  font-size: 0;
 
   li {
-    display: inline-block;
-    margin: $global-spacing $global-spacing 0 0;
-    vertical-align: top;
-    width: 100%;
-    max-width: 12rem;
-
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3) {
-      margin-top: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
+    grid-column: auto / span 4;
   }
 
   a {
@@ -77,7 +67,6 @@
 
   /* Compensate USAID logo proportions and alignment */
   .logo-usaid img {
-    transform: translate(0, 0.5em);
     max-height: 1.75rem;
   }
 

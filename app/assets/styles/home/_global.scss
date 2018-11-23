@@ -14,11 +14,19 @@
   }
 
   .col--main {
-    grid-column: 1 / span 9;
+    grid-column: 1 / span 8;
+    
+    @include media(large-up) {
+      grid-column: 1 / span 9;
+    }
   }
 
   .col--sec {
-    grid-column: auto / span 3;
+    grid-column: auto / span 4;
+    
+    @include media(large-up) {
+      grid-column: auto / span 3;
+    }
   }
 
   .inpage__body {

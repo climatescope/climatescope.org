@@ -202,7 +202,10 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
             // TODO: Change the approach to get the data. Show get the data
             // from the global definition, not the children.
             const [d] = getChartData(chartGroupData.data, child.id, chartDef.id)
-            return { ...child, data: d }
+            // Check if the chart should be excluded because if only for a
+            // off-grid geography and we're dealing with a on-grid geography.
+            const excludeOffGrid = (geography.grid === 'on' || geography.grid === true) && isOffGridExclusive(child)
+            return { ...child, data: d, excludeOffGrid }
           } catch (error) {
             childrenWithoutData = childrenWithoutData.concat(error.data)
           }
@@ -236,12 +239,16 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
         }
       } else {
         const [chartData] = getChartDef(chartsData, el.id)
+        // Check if the chart should be excluded because if only for a off-grid
+        // geography and we're dealing with a on-grid geography.
+        const excludeOffGrid = (geography.grid === 'on' || geography.grid === true) && isOffGridExclusive(chartDef)
 
         // Reconcile chart data, i.e. merge all in an object.
         const reconciledData = {
           ...el, // Layout definition.
           ...chartDef, // Chart definition.
-          data: chartData // Chart data.
+          data: chartData, // Chart data.
+          excludeOffGrid
         }
 
         switch (reconciledData.type) {
@@ -481,15 +488,19 @@ const renderParCardAnswerGroup = (chart) => {
             const answer = child.data.value + ''
             const dataOpt = child.options.find(opt => opt.id === answer)
 
-            if (child.data.value === null) {
-              // Answer is null.
+            if (child.excludeOffGrid || child.data.value === null) {
+              // Only for off grid   || Answer is null.
+              const sentence = child.excludeOffGrid
+                ? 'Only applicable to off-grid countries'
+                : 'No answer available'
+
               trContent = (
                 <>
                 <th>
                   <h2>{child.name}</h2>
                   <p>{child.description}</p>
                 </th>
-                <td colSpan={options.length}>No answer available</td>
+                <td colSpan={options.length}>{sentence}</td>
                 </>
               )
             } else if (!dataOpt) {
@@ -646,4 +657,15 @@ const getChartData = (arr, ids, groupId) => {
     error.message = `Data not found for chart [${error.data.join(', ')}]` + (groupId ? ` in group [${groupId}]` : '')
     throw error
   }
+}
+
+/**
+ * Returns whether a given chart is exclusive for off-grid countries.
+ *
+ *  @param {object} chartDef Chart definition
+ *
+ * @returns boolean
+ */
+const isOffGridExclusive = (chartDef) => {
+  return ['keroseneDieselSubsidies'].indexOf(chartDef.id) !== -1
 }

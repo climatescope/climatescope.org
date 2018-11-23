@@ -8,7 +8,7 @@ import { configureAnchors } from 'react-scrollable-anchor'
 
 import { environment } from '../config'
 import { fetchGeography, fetchGeographiesMeta, fetchChartsMeta } from '../redux/geographies'
-import { equalsIgnoreCase } from '../utils/string'
+import { equalsIgnoreCase, padNumber } from '../utils/string'
 import { wrapApiResult, getFromState } from '../utils/utils'
 import { initializeArrayWithRange } from '../utils/array'
 import { round } from '../utils/math'
@@ -84,21 +84,34 @@ class Geography extends React.Component {
 
     return (
       <ul className='inpage__details'>
-        {isReady() ? (
-          geography.profile.map(o => (
-            <li key={o.id}>
-              <strong>{round(o.value)}<sub>{o.unit}</sub></strong>
-              <span>{o.name}</span>
-            </li>
-          ))
-        ) : (
-          initializeArrayWithRange(5).map(o => (
-            <li key={o}>
-              <strong><LoadingSkeleton theme='light' size='large' width={3 / 4} /></strong>
-              <span><LoadingSkeleton theme='light' size='small' width={1 / 3} /></span>
-            </li>
-          ))
-        ) }
+        {isReady() && (
+          <li>
+            <strong>
+              {padNumber(geography.score.data[0].rank, 2)}
+              <small>/</small>
+              {round(geography.score.data[0].value)}
+            </strong>
+            <span>Global rank / Score</span>
+          </li>
+        )}
+        {isReady() && geography.topics.map(o => (
+          <li key={o.id}>
+            <strong>{round(o.data[0].value)}</strong>
+            <span>{o.name} score</span>
+          </li>
+        ))}
+        {isReady() && geography.profile.map(o => (
+          <li key={o.id}>
+            <strong>{round(o.value)}<sub>{o.unit}</sub></strong>
+            <span>{o.name}</span>
+          </li>
+        ))}
+        {!isReady() && initializeArrayWithRange(6).map(o => (
+          <li key={o}>
+            <strong><LoadingSkeleton theme='light' size='large' width={3 / 4} /></strong>
+            <span><LoadingSkeleton theme='light' size='small' width={1 / 3} /></span>
+          </li>
+        ))}
       </ul>
     )
   }

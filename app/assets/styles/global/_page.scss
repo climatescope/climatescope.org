@@ -253,12 +253,8 @@
   }
 
   .logo-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 ($global-spacing / 2);
-
     li {
-      margin: 0;
+      grid-column: auto / span 6;
     }
   }
 }
