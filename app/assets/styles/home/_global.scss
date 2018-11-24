@@ -45,6 +45,7 @@
 .home-cta-button {
   @extend .button, .button--xlarge, .button--achromic-glass;
   min-width: 12rem;
+  margin-right: 1rem;
 
   &::after {
     @extend %collecticon-sm-chevron-right;

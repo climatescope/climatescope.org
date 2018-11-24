@@ -7,7 +7,7 @@ import { Timeline } from 'react-twitter-widgets'
 import c from 'classnames'
 
 import { environment } from '../config'
-import { editions } from '../utils/constants'
+import { editions, downloadData } from '../utils/constants'
 import { fetchMediumPosts } from '../redux/medium'
 import { wrapApiResult } from '../utils/utils'
 import { initializeArrayWithRange } from '../utils/array'
@@ -126,7 +126,10 @@ class Home extends React.Component {
             <div className='inner'>
               <div className='inpage__headline'>
                 <h1 className='inpage__title'>Which emerging market is most atractive for clean energy investment?</h1>
-                <p><Link to='/results' className='home-cta-button' title='View results'><span>Find out</span></Link></p>
+                <p>
+                  <Link to='/results' className='home-cta-button' title='View results'><span>Discover the ranking</span></Link>
+                  <a href={downloadData.current.report.url} className='home-cta-button' title='View results' target='_blank'><span>Read the report</span></a>
+                </p>
               </div>
             </div>
 

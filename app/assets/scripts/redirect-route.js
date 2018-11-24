@@ -133,10 +133,10 @@ const redirectPaths = {
   '/en/off-grid-quarterly/q3-2018': 'https://medium.com/climatescope/3q-2018-off-grid-and-mini-grid-market-outlook-e4ae33657c9c',
   '/en/off-grid-quarterly/q2-2018': 'https://medium.com/climatescope/2q-2018-off-grid-and-mini-grid-market-outlook-2504a1d4abb0',
   '/en/off-grid-quarterly/1q-2018': 'https://medium.com/climatescope/1q-2018-off-grid-and-mini-grid-market-outlook-d097168dc92e',
-  '/en/off-grid-quarterly/q4-2017': 'https://medium.com/climatescope/4q-2017-off-grid-and-mini-grid-market-outlook-e3f5552740c2',
-  '/en/off-grid-quarterly/q3-2017': 'https://medium.com/climatescope/3q-2017-off-grid-and-mini-grid-market-outlook-5ba98bb5bc6b',
-  '/en/off-grid-quarterly/q2-2017': 'https://medium.com/climatescope/2q-2017-off-grid-and-mini-grid-market-outlook-612fc3b7779c',
-  '/en/off-grid-quarterly/q1-2017': 'https://medium.com/climatescope/1q-2017-off-grid-and-mini-grid-market-outlook-bab39128a197'
+  '/en/off-grid-quarterly/q4-2017': 'https://medium.com/climatescope/4q-2017-off-grid-and-mini-grid-market-outlook-52da3e6826f1',
+  '/en/off-grid-quarterly/q3-2017': 'https://medium.com/climatescope/3q-2017-off-grid-and-mini-grid-market-outlook-21c2542563d',
+  '/en/off-grid-quarterly/q2-2017': 'https://medium.com/climatescope/2q-2017-off-grid-and-mini-grid-market-outlook-d35f54b66020',
+  '/en/off-grid-quarterly/q1-2017': 'https://medium.com/climatescope/1q-2017-off-grid-and-mini-grid-market-outlook-4b6fd80d18eb'
 }
 
 // Redirect handling.
