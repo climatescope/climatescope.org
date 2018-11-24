@@ -155,19 +155,19 @@ export const medium = {
       url: 'https://medium.com/climatescope/insights',
       title: 'View insights section',
       label: 'Insights',
-      description: 'Lorem ipsum dolor sit amet'
+      description: 'Check out the Insights on Medium'
     },
     {
       url: 'https://medium.com/climatescope/updates',
       title: 'View updates section',
       label: 'Updates',
-      description: 'Lorem ipsum dolor sit amet'
+      description: 'Check out the Updates on Medium'
     },
     {
       url: 'https://medium.com/climatescope/off-grid-quarterly',
       title: 'View Off Grid Quarterly section',
       label: 'Off Grid Quarterly',
-      description: 'Lorem ipsum dolor sit amet'
+      description: 'Check out the Off Grid Quarterly on Medium'
     }
   ]
 }
