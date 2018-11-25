@@ -15,7 +15,7 @@ import { initializeArrayWithRange } from '../utils/array'
 import App from './app'
 import { LoadingSkeletonGroup, LoadingSkeleton } from '../components/loading-skeleton'
 
-const MediumCard = ({ isLoading, isFeatured, title, url, description, tags }) => (
+const MediumCard = ({ isLoading, isFeatured, title, subtitle, url, description, tags }) => (
   <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
     <div className='card__contents'>
       {isLoading ? (
@@ -32,7 +32,7 @@ const MediumCard = ({ isLoading, isFeatured, title, url, description, tags }) =>
           <header className='card__header'>
             <div className='card__headline'>
               <a href={url} title='Read insight' className='link-wrapper'>
-                <p className='card__subtitle'>Explore the Report</p>
+                <p className='card__subtitle'>{subtitle}</p>
                 <h1 className='card__title'>{title}</h1>
               </a>
             </div>
@@ -66,6 +66,7 @@ if (environment !== 'production') {
     isLoading: T.bool,
     isFeatured: T.bool,
     title: T.string,
+    subtitle: T.string,
     url: T.string,
     description: T.string,
     tags: T.array
@@ -96,17 +97,29 @@ class Home extends React.Component {
     return (
       <ol className='card-list'>
         {isReady() ? (
-          posts.slice(0, 9).map((post, i) => (
-            <li key={post.id} className='card-list__item'>
-              <MediumCard
-                isFeatured={i === 0}
-                title={post.title}
-                url={post.url}
-                description={post.description}
-                tags={post.tags}
-              />
-            </li>
-          ))
+          posts.slice(0, 9).map((post, i) => {
+            // Get correct subtitle, based on tags.
+            let subtitle = 'Explore'
+            if (post.tags.find(t => t.id === 'off-grid')) {
+              subtitle = 'Market outlook'
+            } else if (post.tags.find(t => t.id === 'insights')) {
+              subtitle = 'Insight'
+            } else if (post.tags.find(t => t.id === 'updates')) {
+              subtitle = 'Updates'
+            }
+            return (
+              <li key={post.id} className='card-list__item'>
+                <MediumCard
+                  isFeatured={i === 0}
+                  title={post.title}
+                  subtitle={subtitle}
+                  url={post.url}
+                  description={post.description}
+                  tags={post.tags}
+                />
+              </li>
+            )
+          })
         ) : (
           initializeArrayWithRange(2).map(i => (
             <li key={i} className='card-list__item'>
