@@ -180,12 +180,6 @@ export const tools = [
     description: 'Pick any two nations, see how they compare'
   },
   {
-    url: '/off-grid-data-hub',
-    title: 'Use the Off-grid Data Hub',
-    label: 'Off-grid Data Hub',
-    description: 'Energy access rates, fuel prices, other key distributed power data'
-  },
-  {
     url: '/clean-energy-investments',
     title: 'Use the Clean Energy Investment',
     label: 'Clean Energy Investment',
