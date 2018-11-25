@@ -8,7 +8,6 @@ import ReactGA from 'react-ga'
 import { environment } from '../config'
 import geoLayoutDef from '../utils/geographies-layout'
 
-import ShareOptions from './share'
 import Dropdown from './dropdown'
 import SizeAwareElement from './size-aware-element'
 

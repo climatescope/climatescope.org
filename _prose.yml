@@ -32,6 +32,8 @@ prose:
     - /.circleci
   
   rooturl: app
+
+  media: app/assets/graphics/content
   
   metadata:
     ## PAGE
