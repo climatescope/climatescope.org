@@ -4,8 +4,6 @@ permalink: api/about.json
 title: About Climatescope
 published: true
 ---
-## ABOUT CLIMATESCOPE
-
 Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment conditions for clean energy in emerging markets.
 It profiles 103 markets worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy.
 Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future.
