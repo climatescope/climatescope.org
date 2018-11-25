@@ -138,7 +138,8 @@ class Home extends React.Component {
           <header className='inpage__header'>
             <div className='inner'>
               <div className='inpage__headline'>
-                <h1 className='inpage__title'>Which emerging market is most atractive for clean energy investment?</h1>
+                <h1 className='inpage__title'>Which emerging market is the most attractive for clean energy
+investment?</h1>
                 <p>
                   <Link to='/results' className='home-cta-button' title='View results'><span>Discover the ranking</span></Link>
                   <a href={downloadData.current.report.url} className='home-cta-button' title='View results' target='_blank'><span>Read the report</span></a>
@@ -224,7 +225,7 @@ class Home extends React.Component {
                   </div>
                 </header>
                 <div className='fold__body'>
-                  <h2>View or download our previous&nbsp;reports</h2>
+                  <h2>Revisit Climatescope</h2>
                   <ul className='editions-menu'>
                     {editions.map(o => (
                       <li key={o.url} className='editions-menu__item'>
