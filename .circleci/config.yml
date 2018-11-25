@@ -7,7 +7,7 @@ jobs:
     working_directory: ~/repo
 
     environment:
-      - STAGING_BRANCH: none
+      - STAGING_BRANCH: v2018
       - PRODUCTION_BRANCH: v2018
 
     steps:
@@ -30,26 +30,40 @@ jobs:
       - run: yarn test
 
       - run:
-          name: Building site
+          name: Building site staging
           command: |
-            if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
-              yarn build
-            elif [ "${CIRCLE_BRANCH}" == "${STAGING_BRANCH}" ]; then
+            if [ "${CIRCLE_BRANCH}" == "${STAGING_BRANCH}" ]; then
               yarn build-stage
             else
               echo "Skip building site"
             fi
 
       - run:
-          name: Deploy to Surge
+          name: Deploy to Surge staging
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "${STAGING_BRANCH}" ]; then
+              cp ./_site/index.html ./_site/200.html
+              ./node_modules/surge/lib/cli.js --project ./_site --domain climatescope.surge.sh
+            else
+              echo "Not the branch you're looking for, skipping deploy"
+            fi
+
+      - run:
+          name: Building site prod
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
+              yarn build
+            else
+              echo "Skip building site"
+            fi
+
+      - run:
+          name: Deploy to Surge prod
           command: |
             if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
               cp ./_site/index.html ./_site/200.html
               echo "global-climatescope.org" > ./_site/CNAME
               ./node_modules/surge/lib/cli.js --project ./_site --domain global-climatescope.org
-            elif [ "${CIRCLE_BRANCH}" == "${STAGING_BRANCH}" ]; then
-              cp ./_site/index.html ./_site/200.html
-              ./node_modules/surge/lib/cli.js --project ./_site --domain climatescope.surge.sh
             else
               echo "Not the branch you're looking for, skipping deploy"
             fi
