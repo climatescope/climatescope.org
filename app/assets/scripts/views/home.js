@@ -208,7 +208,8 @@ investment?</h1>
                       }}
                       options={{
                         chrome: 'noheader noborders nofooter noscrollbar',
-                        height: '100%'
+                        height: '100%',
+                        tweetLimit: 10
                       }}
                       onLoad={() => this.setState({ twitterLoaded: true })}
                     />
