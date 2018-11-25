@@ -1,82 +1,53 @@
 ---
 layout: page
 permalink: api/about.json
-
-title : About Climatescope
+title: About Climatescope
+published: true
 ---
-Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment conditions for clean energy and climate-related investments worldwide.
+## ABOUT CLIMATESCOPE
 
-It profiles 71 countries worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy.
-
+Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment conditions for clean energy in emerging markets.
+It profiles 103 markets worldwide and evaluates their ability to attract capital for low-carbon energy sources while building a greener economy.
 Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future.
 
-This marks the sixth year of the Climatescope project. In 2012 and 2013, Climatescope focused exclusively on Latin America and the Caribbean. The first edition was developed by the Multilateral Investment Fund of the Inter-American Development Bank Group in partnership with Bloomberg New Energy Finance.
+This marks the seventh year of the Climatescope project. In 2012 and 2013, Climatescope focused exclusively on Latin America and the Caribbean. The first edition was developed by the Multilateral Investment Fund of the Inter-American Development Bank Group in partnership with BloombergNEF.
+From 2014 to 2016, the UK Department for International Development and the US Agency for International Development joined as supporters and advisors. The project was expanded to include 58 countries, states, and provinces in sub-Saharan Africa and Asia. The coverage was expanded further to include three countries from the Middle-East and North Africa, as well as with an updated methodology for the off-grid energy coverage. In 2017, an additional 13 countries in Central Europe and Asia were added, bringing the total number of countries to 71.
 
-From 2014 to 2016, the UK Department for International Development and the US Agency for International Development  joined as supporters and advisors. The project was expanded to include 58 countries, states, and provinces in sub-Saharan Africa and Asia.  The coverage was expanded further to include three countries from the Middle-East and North Africa, as well as with an updated methodology for the off-grid energy coverage.
+For 2018, the project has been expanded and updated in two key ways. First, the total number of countries surveyed was expanded significantly to 103. This includes 100 nations classified by the Organisation for Economic Co-operation and Development (OECD) as less developed.  It also includes three countries – Chile, Mexico, and Turkey – that are an important part of the developing-nation story but are not technically classified as non-OECD. As a result of this expansion, Climatescope now offers a comprehensive snapshot of virtually all developing nations.
 
-In the last year, Climatescope has expanded to include 13 additional countries in Central Europe and Asia, bringing the total number of countries to 71. The project is supported by the UK Department for International Development, and Bloomberg New Energy Finance serves as research partner and author of the report.
-
-***
+This year's Climatescope Emerging Market Outlook represents the collective effort of 42 BloombergNEF analysts who made 54 country visits to collect data and conduct interviews. Once again, the study has been graciously supported by the U.K. Department for International Development. 
 
 ### Project director
 Ethan Zindler
-
 ### Project manager
 Dario Traum
-
 ### Lead Analyst
 Luiza Demôro
-
-### Head of Off-Grid Analysis
-Itamar Orlandi
-
 ### Lead Modeller
 Ulimmeh Ezekiel
-
 ### Project Coordinator
-Yvette Osikilo
-
+Misa Ichinose
+###Communications Manager
+Veronika Henze
 ### Editors
-Angus McCrone, Ben Vickers, Bryony Collins, Vandana Gombar.
-
+Angus McCrone, Ben Vickers
 ### Research & Data Gathering
 
-#### Africa and Middle East
-Meredith Annex, Thea Bronlund, Bryony Collins, Victoria Cuming, Isabelle Edwards, Ulimmeh Ezekiel, Raksha Gosai, Andrew Grant, Conor Hanley, Tom Harries, Kyle Harrison, Lara Hayim, Takehiro Kawahara, Keegan Kruger, Eleonore Lazat, Daniel McLaughlin, Pietro Radoia, Dean Hope Robertson, Kieron Stopforth
+**Africa and Middle East**
 
-#### Asia
-Richard Chatterton, Shantanu Jaiswal, Jacqueline Lilinshtein, Sophie Lu, Diego Marquina, Alex Morgan, Steph Munro, Itamar Orlandi, Arvind Pidaparthi, Abhishek Rohatgi, Johana Typloltova
+Ian Berryman, Hugh Bromley, Justin Commerford, Bryony Collins, Emma Champion, Victoria Cuming, Michael Daly, Helen Dewhurst, David Doherty, Ulimmeh Ezekiel, James Frith, Chris Gadomski, Ines Goncalves, Kyle Harrison, Takehiro Kawahara, Thomas Knight, Eleonore Lazat, Cecilia L’Ecluse, Daniel McLaughlin, Roseline Pole, Katherine Poseidon, Dean Hope Robertson, Dario Traum, Antoine Vagneur Jones
 
-#### Europe
-Nick Albanese, Katya Sharavzhamtsyna, Nick Steckler, Ben Vickers.
+**Asia**
 
-#### Latin America and Caribbean
-Laura Castro, Helena Chung, Raphael Barbosa Correa, Ana Verena Lima.
+Nick Albanese, Richard Chatterton, Caroline Chua, Vandana Gombar, Shantanu Jaiswal, Maggie Kuang, Jonathan Luan, Jacqueline Lilinshtein, Fauzia Marzuki,Vertis McMillan, Colleen Regan, Abhishek Rohatgi, Divya Sehgal, Jane Swarbreck, Kirti Vasta, Mohit Velamala, Hanyang Wei
 
-### Policy expert panel
-Tabaré 	Arroyo Currás, Dominique Auverlot, Alex Avila, Carlos Barria, Michael Barry, Dr Fred Beach,
-Yasmina Benmessaoud , Paul Bertheau, Phillip Brown, Albert Butare, Ben Caldecott, Phillip Caplan,
-Maria D. Carvalho, Tracey Crowe, Anna Czajkowska, Patrick D'Addario, Vincent	 Delporte, Michel Di Capua, Manon Dufour,Yasemin Erboy Ruff, John R. Fenton, Dr Florian Fritzsche, Magdalena  García Mora, Joby Gaudet, Milena Gonzalez Vasquez, Michael  Gratwicke, Dave Grossman, Christopher  Head, Victoria  Healy, Andrew  Herndon, Lisa  Jacobson, Timothy Juliani, Furkat Kadyrov, James  Koehler, Ken Locklin, Bill Loveless, Rupesh Madlani, Aditi  Maheshwari, Irina Markina, Miguel	Martines Rodriguez, Quinn McGovern, Yvonne McIntyre, Naki Mendoza, Samuel  Miles, Nathan Moore, Marco Antonio Morales, Brian  O'Hanlon, Ruggero Paterno, Graham  Pugh, Alexis  Raichoudhury, Tobias	Rinke,
-Rachel Ross, John  Romankiewicz, Bárbara Rubim, Meghan  Sapp, Andrew  Shapiro, Varun Sivaram, V Subramanian, Philippe Tallon, Liang Tang, Zephyr Taylor, Chris Twomey, Nico Tyabji, Candace Vahlsing,
-Arnaldo	 Vieira de Carvalho Jr., Michael	Waldron, Markus Walther, Emily Wann, Brian Whitesides, Marcus	 Wiemann, Dan Woynillowicz, Nitin Zamre, Dr Fang Zhang.
+**Europe**
 
-### Communications Manager
-Veronika Henze
+Julia Attwood, Tom Harries, Keegan Kruger, Nick Albanese, Ben Vickers
+Latin America and Caribbean
+Luiza Demôro, Laura Castro, Helena Chung, Rafael Borges, James Ellis, Ana Verena Lima
 
-### Special thanks
-Serina Ng, Jon Moore, Dharshan Wignarajah, Sara Giordano, Nico Tyabji, Arlinda Mezini, Benjamin Kafri, Eve Ottlakan, Flow Bohl, Max Duluc, Noemi Glickman, and the many energy sector stakeholders that our analyst teams met during research trips.
 
-### Credits
-All satellite imagery by [NASA](http://earthobservatory.nasa.gov/?eocn=topnav&eoci=logo).
+**Special thanks**
 
-### Previous supporters
-<ul class="logo-list">
-  <li><a class="logo-fomin" href="http://www.fomin.org/" title="" target="_blank"><img width="208" height="128" alt="" src="{{ site.baseurl }}/assets/graphics/layout/logo-fomin-en-flat-pos.svg"><span>Multilateral Investment Fund</span></a></li>
-  <li><a class="logo-powerafrica" href="http://www.usaid.gov/powerafrica" title="Visit Power Africa" target="_blank"><img width="288" height="128" alt="Power Africa logo" src="{{ site.baseurl }}/assets/graphics/layout/logo-powerafrica-flat-pos.svg"><span>Power Africa</span></a></li>
-  <li><a class="logo-usaid" href="http://www.usaid.gov" title="Visit USAID"  target="_blank"><img width="288" height="128" alt="USAID logo" src="{{ site.baseurl }}/assets/graphics/layout/logo-usaid-flat-pos.svg" /><span>USAID</span></a></li>
-</ul>
-
-### Developed by
-<ul class="logo-list">
-  <li><a class="logo-devseed" href="http://developmentseed.org/" title="Visit Development Seed" target="_blank"><img width="750" height="128" alt="Development Seed logo" src="{{ site.baseurl }}/assets/graphics/layout/logo-devseed-flat-pos.svg" /><span>Development Seed</span></a></li>
-</ul>
+Mike Reddaway, Serina Ng, Jon Moore, Dharshan Wignarajah, Sara Giordano, Yvette Osikilo, Nico Tyabji, Lilian Alves, Arlinda Mezini, Benjamin Kafri, Eve Ottlakan, Flow Bohl, Max Duluc, Noemi Glickman, Roshni Jaura, and the many energy sector stakeholders that our analyst teams met during research trips.
