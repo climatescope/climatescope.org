@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Global: Controls
+   ========================================================================== */
+
+.controls {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: ($global-spacing) ($global-spacing * 2);
+  align-items: end;
+
+  > * {
+    grid-column: auto / span 3;
+    margin: 0;
+  }
+
+  .form__label {
+    @extend .heading-alt;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: tint($base-color, 56%);
+  }
+
+  .form__actions {
+    > *:not(:last-child) {
+      margin-right: $global-spacing / 4;
+    }
+  }
+}
+
+.controls__button-reset {
+  @extend .button, .button--base-raised-semidark, .button--text-hidden;
+
+  &::before {
+    @extend %collecticon-arrow-loop;
+  }
+}
+
+.controls__button-submit {
+  @extend .button, .button--base-raised-semidark;
+  min-width: 5.75rem;
+}

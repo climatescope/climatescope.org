@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Policies: Hub
+   ========================================================================== */
+
+.inpage--policies.inpage--hub {
+  .inpage__header {
+    padding-bottom: 0;
+  }
+}
+
+.pol-controls {
+  > * {
+    grid-column: auto / span 3;
+    margin: 0;
+  }
+
+  .form__actions {
+    justify-self: end;
+  }
+}
+
+
+/* Table
+   ========================================================================== */
+
+.policies-table {
+  margin-bottom: $global-spacing * 2;
+}

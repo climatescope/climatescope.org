@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Global: Loading
+   ========================================================================== */
+
+/**
+ * "lsk-" prefix stands for "loading skeleton"
+ */
+
+.lsk__group {
+  margin-bottom: 2rem;
+
+  & > .lsk__item {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.lsk__item {
+  display: block;
+  background: rgba($base-color, 0.08);
+  height: 1rem;
+  width: 100%;
+  animation: pulse 0.8s ease 0s infinite alternate;
+
+  &.lsk__item--light {
+    background: rgba(#fff, 0.48);
+  }
+}
+
+.lsk__item--large {
+  height: 2.25rem;
+}
+
+.lsk__item--heading {
+  background: rgba($base-color, 0.16);
+
+  &.lsk__item--light {
+    background: rgba(#fff, 0.80);
+  }
+}
+
+
+/* Placeholder
+   ========================================================================== */
+
+.placeholder {
+  font-family: $heading-font-family;
+  border: 1px dashed $base-alpha-color;
+  padding: ($global-spacing * 8) ($global-spacing * 2);
+  text-align: center;
+  color: tint($base-color, 56%);
+  border-radius: $base-border-radius;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,101 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* Colors
+   ========================================================================== */
+
+$base-color: #22333B;                                   // Gunmetal
+$accent-color: #32746D;                                 // Myrtle green
+$primary-color: #02A87C;                                // Jade
+$secondary-color: #21617A;                              // Blumine
+
+/* State */
+
+$danger-color: #D85D3F;                                 // Red
+$success-color: $primary-color;                         // Same as $primary-color
+$warning-color: #F4A432;                                // Yellow
+$info-color: #499DD2;                                   // Blue
+
+/* Helpers */
+
+$link-color: $primary-color;
+$base-alpha-color: rgba($base-color, 0.08);
+
+/* Infographic */
+
+$infograph-solar: #F4A432;                      // yellow       solar
+$infograph-wind: #92d4ee;                       // lblue        wind
+$infograph-small-hydro: #499DD2;                // blue         small hydro
+$infograph-biomass-waste: #02A87C;              // turquoise    biomass
+$infograph-geothermal: #83549a;                  // purp         geothermal
+$infograph-other: #a8a8a8;                      // light grey   other
+
+
+/* Parameter */
+
+$parameter-color-a: #ecb860;
+$parameter-color-b: #009FB7;
+$parameter-color-c: #645D9C;
+
+
+/* Typography
+   ========================================================================== */
+
+$root-font-size: 16px;
+
+$base-font-color: tint($base-color, 16%);
+$base-font-family: 'Open Sans', sans-serif;
+$base-font-style: normal;
+$base-font-light: 300;
+$base-font-light-italic: 300i;
+$base-font-regular: 400;
+$base-font-regular-italic: 400i;
+$base-font-bold: 700;
+$base-font-bold-italic: 700i;
+$base-font-weight: $base-font-regular;
+$base-font-size: 1rem;
+$base-line-height: 1.5;
+
+$code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$heading-font-family: 'Titillium Web', sans-serif;
+$heading-font-light: 300;
+$heading-font-regular: 400;
+$heading-font-bold: 700;
+$heading-font-weight: $heading-font-bold;
+
+
+/* Decoration
+   ========================================================================== */
+
+/* Border radius */
+
+$base-border-radius: 0.25rem;
+$full-border-radius: 320rem;
+
+$base-border-width: 2px;
+
+
+/* Sizing, spacing and media queries
+   ========================================================================== */
+
+/* Spacing */
+
+$global-spacing: 1rem;
+
+/* Rows */
+
+$row-min-width: 768px;
+$row-max-width: 1280px;
+$jeet-max-width: $row-max-width; // reset jeet.gs max width
+
+/* Media queries */
+
+$xsmall-range: (0, 543px);
+$small-range: (544px, 767px);
+$medium-range: (768px, 991px);
+$large-range: (992px, 1199px);
+$xlarge-range: (1200px);
+
+$screen: "only screen";

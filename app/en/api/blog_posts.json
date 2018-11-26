@@ -1,3 +1,0 @@
----
----
-{% include blog_posts.json language="en" %}

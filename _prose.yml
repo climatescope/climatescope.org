@@ -1,17 +1,15 @@
 prose:
   ignore:
-    - /app/_data
+    - /app/api
     - /app/assets
     - /app/index.html
     - /app/humans.txt
+    - /app/robots.txt
+    - /app/CNAME
     - /app/_includes
     - /app/_layouts
+    - /app/_plugins
     
-    # These contain the API, the download and the index and policies pages.
-    # However those pages only contain markup, not content.
-    # Therefore block.
-    - /app/en
-    - /app/es
     
     # In due time block _prose and _config.
     - /_prose.yml
@@ -21,6 +19,8 @@ prose:
     
     # Development stuff
     - /.gitignore
+    - /.eslint
+    - /.nvmrc
     - /gulpfile.js
     - /Gemfile
     - /Gemfile.lock
@@ -28,106 +28,16 @@ prose:
     - /README.md
     - /package.json
     - /.travis.yml
-    - /.build_scripts
+    - /.bundle
+    - /.circleci
   
   rooturl: app
+
+  media: app/assets/graphics/content
   
   metadata:
-    # English collections.
-    ####################################
-    
-    ## COUNTRY
-    "app/_en_country":
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "country"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Country name"
-          placeholder: "Country name"
-      - name: "id"
-        field:
-          element: "text"
-          label: "Country ISO code"
-      - name: "region"
-        field:
-          element: "select"
-          label: "Region"
-          options:
-            - name: "Africa"
-              value: "africa"
-            - name: "Asia"
-              value: "asia"
-            - name: "Latin America & the Caribbean"
-              value: "lac"
-      - name: "grid"
-        field:
-          element: "select"
-          label: "Grid"
-          options:
-            - name: "On Grid"
-              value: "on"
-            - name: "Off Grid"
-              value: "off"
-    
-    ## STATE
-    "app/_en_state":
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "state"
-      - name: "title"
-        field:
-          element: "text"
-          label: "State name"
-          placeholder: "State name"
-      - name: "id"
-        field:
-          element: "text"
-          label: "State ISO code"
-      - name: "region"
-        field:
-          element: "select"
-          label: "Region"
-          options:
-            - name: "Africa"
-              value: "africa"
-            - name: "Asia"
-              value: "asia"
-            - name: "Latin America & the Caribbean"
-              value: "lac"
-      - name: "country"
-        field:
-          element: "select"
-          label: "Country this states belongs"
-          options:
-            - name: "China"
-              value: "cn"
-            - name: "India"
-              value: "in"
-
-    ## REGION
-    "app/_en_offgrid":
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Page name"
-          placeholder: "Page name"
-      - name: "featured"
-        field:
-          label: "Featured"
-          element: "checkbox"
-          help: "Feature this post on the frontpage"
-          value: false
-    
     ## PAGE
-    "app/_en_page":
+    "app/_pages":
       - name: "layout"
         field:
           element: "hidden"
@@ -137,68 +47,9 @@ prose:
           element: "text"
           label: "Page name"
           placeholder: "Page name"
-      - name: "id"
+      - name: "permalink"
         field:
           element: "text"
-          label: "Page id"
-
-    ## POSTS
-    "app/_posts/en":
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post name"
-          placeholder: "Post name"
-      - name: "postId"
-        field:
-          element: "text"
-          label: "Post id"
-          help: "All translations of a post must have the same id."
-      - name: "author"
-        field:
-          element: "text"
-          label: "Author"
-          placeholder: "Author name"
-      - name: "description"
-        field:
-          element: "textarea"
-          label: "Description"
-          help: "Small description of the post. Will show up on the post list."
-      - name: "featured"
-        field:
-          label: "Featured"
-          element: "checkbox"
-          help: "Feature this post on the frontpage"
-          value: false
-
-    ## INSIGHTS
-    "app/_en_insights":
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Title insight"
-          placeholder: "Insight title"
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description insight"
-          placeholder: "Insight description"
-      - name: "published"
-        field:
-          label: "Published"
-          element: "checkbox"
-          value: true
-      - name: "featured"
-        field:
-          label: "Featured"
-          element: "checkbox"
-          help: "Feature this post on the frontpage"
-          value: false
-      - name: "download_source"
-        field:
-          element: "text"
-          label: "Add a download link"
+          label: "Api url"
+          placeholder: "api/page-name.json"
+          help: "The permalink must follow the 'api/page-name.json' format, where 'page-name' is lowercase with no spaces. This will reflect the page url on the final site."

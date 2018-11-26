@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Global: Labels
+   ========================================================================== */
+
+.label {
+  @extend .antialiased;
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  border-radius: $full-border-radius;
+  padding: 0 0.5rem;
+  min-width: 1.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  text-transform: uppercase;
+  text-align: center;
+  background: rgba($base-color, 0.64);
+
+  &, &:visited {
+    color: #fff;
+  }
+
+  &::before {
+    margin-right: 0.25rem;
+  }
+
+  &::after{
+    margin-left: 0.25rem;
+  }
+
+  &[data-tip] {
+    cursor: help;
+  }
+}
+
+
+/* Modifiers
+   ========================================================================== */
+
+.label--disabled {
+  background: rgba($base-color, 0.32);
+}
+
+.label--negative {
+  background: rgba(#fff, 0.16);
+
+  &.label--disabled {
+    background: rgba(#fff, 0.16);
+
+    span,
+    &::before {
+      opacity: 0.32;
+    }
+  }
+}
+
+.label--reversed {
+  background: rgba($base-color, 0.08);
+  color: $base-font-color !important;
+
+  &.label--disabled {
+    span,
+    &::before {
+      opacity: 0.32;
+    }
+  }
+}
+
+
+/* Containing icons & icon modifiers
+   ========================================================================== */
+
+.label--text-hidden {
+  padding: 0;
+
+  &::after,
+  &::before {
+    margin: 0;
+  }
+
+  > *:not([class^="collecticon-"]):not([class*=" collecticon-"]) {
+    @extend .visually-hidden;
+  }
+}
+
+.label--grid {
+  &::before {
+    @extend %collecticon-spark;
+    font-size: 1rem;
+    width: 1rem;
+    display: inline-block;
+    line-height: inherit;
+    vertical-align: top;
+    margin-left: -0.25rem;
+  }
+}
