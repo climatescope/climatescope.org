@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Library: Global
+   ========================================================================== */
+
+.inpage--library {
+  .col--main {
+    grid-column: 1 / span 12;
+  }
+}
+
+
+/* Lib list
+   ========================================================================== */
+
+.library__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: $global-spacing * 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+
+  @include media(medium-up) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include media(large-up) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .library__list-item {
+    display: flex;
+    min-height: 20rem;
+  }
+
+  &.library__list--small .library__list-item {
+    min-height: auto;
+  }
+}

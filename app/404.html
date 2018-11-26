@@ -1,41 +1,41 @@
----
----
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <style>
-      h1 {
-        color: #999;
-        font-family: sans-serif;
-        font-size: 80px;
-        left: 50%;
-        margin: -50px 0 0 -150px;
-        position: absolute;
-        top: 50%;
-      }
-    </style>
-    <script>
-      // To speed up this page re-declare the readCookie function.
-      // This page is just a redirect.
-      function readCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ')
-          c = c.substring(1, c.length);
-          if (c.indexOf(nameEQ) === 0)
-            return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-      }
-      
-      var lang = readCookie('CS_lang') || 'en';
-      window.location = '{{ site.domain }}{{ site.path_prefix }}/' + lang + '/404.html';
+    <meta charset="utf-8">
+    <title>Climatescope</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. http://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // http://www.foo.tld/?p=/one/two&q=a=b~and~c=d#qwe
+      // Note: this 404.html file must be at least 512 bytes for it to work
+      // with Internet Explorer (it is currently > 512 bytes)
+
+      // If you're creating a Project Pages site and NOT using a custom domain,
+      // then set segmentCount to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part of the path, and not
+      // the real directory in which the app resides, for example:
+      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
+      // https://username.github.io/repo-name/?p=/one/two&q=a=b~and~c=d#qwe
+      // Otherwise, leave segmentCount as 0.
+      var segmentCount = 0;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +
+        l.pathname.slice(1).split('/').slice(segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+
     </script>
   </head>
   <body>
-    <h1>4 OH 4</h1>
   </body>
 </html>

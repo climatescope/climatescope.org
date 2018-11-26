@@ -16,18 +16,9 @@ UI Designer: Ricardo Mestre
 Twitter: @ricardoduplos
 Location: Lisbon, Portugal
 
-Developer: Derek Lieu
-Twitter: @dereklieu
-Location: Washington, D.C, USA
-
-Strategist: Ian Schuler
-Twitter: @ianschuler
-Location: Washington, D.C, USA
-
-
 /* SITE */
 
 Last update: {{ site.time | date: "%Y/%m/%d"}}
-Standards: HTML5, CSS3, RWD 
-Components: Bootstrap (loosely based), Modernizr, jQuery, Selectivzr, Jekyll, AngularJS, D3.js, Mapbox, Natural Earth (data), Pandas                      
-Software: Sublime Text, Eclipse, Adobe Illustrator CC, GitHub (Mac)
+Standards: HTML5, CSS3, RWD
+Components: Jekyll, React, D3.js, Mapbox, Natural Earth (data)
+Software: VsCode, Atom, Eclipse, Adobe Illustrator CC, GitHub (Mac)

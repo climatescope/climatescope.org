@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Vendor: react-tooltip
+   ========================================================================== */
+
+/**
+ * Custom *override* styles for:
+ * https://github.com/wwayne/react-tooltip
+ */
+
+ .__react_component_tooltip {
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+  padding: 0 !important;
+
+  &.show {
+    opacity: 1 !important;
+  }
+}
+
+.__react_component_tooltip.place-top {
+  margin-top: -0.5rem;
+}
+
+.__react_component_tooltip.type-dark {
+  background-color: rgba($base-color, 0.8) !important;
+}
+
+.__react_component_tooltip.type-dark.place-top:after {
+  border-top-color: rgba($base-color, 0.8) !important;
+}
