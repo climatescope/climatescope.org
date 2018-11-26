@@ -87,13 +87,14 @@ class Library extends React.Component {
 
                 <h2>Tools</h2>
                 <ul className='library__list'>
-                  {tools.map(({ url, title, label, description }) => (
+                  {tools.map(({ url, title, label, description, image }) => (
                     <li key={url} className='library__list-item'>
                       <ToolCard
                         url={url}
                         linkTitle={title}
                         title={label}
                         description={description}
+                        image={image}
                       />
                     </li>
                   ))}
