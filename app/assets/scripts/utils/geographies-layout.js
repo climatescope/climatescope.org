@@ -165,3 +165,33 @@ export default [
     ]
   }
 ]
+
+export const compareLayoutDef = [
+  {
+    id: 'installedCapacity',
+    size: 'large',
+    mainDataLayers: renewableTypes
+  },
+  {
+    id: 'powerGeneration',
+    size: 'large',
+    mainDataLayers: renewableTypes
+  },
+  {
+    id: 'availabilityPolicies',
+    size: 'large'
+  },
+  {
+    id: 'cleanEnergyInvestment',
+    size: 'large',
+    mainDataLayers: [/* Empty keeps all */]
+  },
+  {
+    id: 'electricityPrice',
+    size: 'large'
+  },
+  {
+    id: 'availabilityFinance',
+    size: 'large'
+  }
+]
