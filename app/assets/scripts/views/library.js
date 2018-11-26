@@ -11,51 +11,7 @@ import { downloadData, medium, tools } from '../utils/constants'
 import App from './app'
 import ShareOptions from '../components/share'
 import SmartLink from '../components/smart-link'
-
-const LibCard = ({ url, subtitle, linkTitle, footerTitle, title, description, isFeatured }) => (
-  <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
-    <div className='card__contents'>
-      <header className='card__header'>
-        <div className='card__headline'>
-          <SmartLink to={url} title={linkTitle} className='link-wrapper'>
-            {subtitle && <p className='card__subtitle'>{subtitle}</p>}
-            <h1 className='card__title'>{title}</h1>
-          </SmartLink>
-        </div>
-      </header>
-      {description && (
-        <div className='card__body'>
-          <div className='card__prose'>
-            <p>{description}</p>
-          </div>
-        </div>
-      )}
-      <footer>
-        <SmartLink to={url} title={linkTitle} className='card__go-link'><span>{footerTitle}</span></SmartLink>
-      </footer>
-    </div>
-  </article>
-)
-
-if (environment !== 'production') {
-  LibCard.propTypes = {
-    isFeatured: T.bool,
-    url: T.string,
-    linkTitle: T.string,
-    title: T.string,
-    description: T.string,
-    subtitle: T.string,
-    footerTitle: T.string
-  }
-}
-
-const ToolCard = (props) => (
-  <LibCard {...props} footerTitle='Explore the tool' />
-)
-
-const MediumCard = (props) => (
-  <LibCard {...props} subtitle='Medium' footerTitle='View archive' />
-)
+import { MediumCategoryCard, ToolCard } from '../components/lib-card'
 
 class ReportCard extends React.PureComponent {
   onDownloadClick (url) {
@@ -119,7 +75,7 @@ class Library extends React.Component {
                 <ul className='library__list'>
                   {medium.pages.map(({ url, title, label, description }) => (
                     <li key={url} className='library__list-item'>
-                      <MediumCard
+                      <MediumCategoryCard
                         url={url}
                         linkTitle={title}
                         title={label}
