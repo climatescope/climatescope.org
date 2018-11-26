@@ -35,7 +35,7 @@ Ulimmeh Ezekiel
 
 Misa Ichinose
 
-###Communications Manager
+### Communications Manager
 
 Veronika Henze
 
