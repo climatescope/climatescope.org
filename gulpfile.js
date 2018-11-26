@@ -66,6 +66,7 @@ gulp.task('serve', ['vendorScripts', 'javascript', 'styles', 'jekyll'], function
       routes: {
         '/node_modules': './node_modules'
       },
+      ghostMode: false,
       middleware: [
         historyApiFallback()
       ]
