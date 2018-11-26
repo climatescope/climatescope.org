@@ -9,6 +9,9 @@ jobs:
     environment:
       - STAGING_BRANCH: v2018
       - PRODUCTION_BRANCH: v2018
+      - GH_REF: git@github.com:climatescope/climatescope.org.git
+      - GH_NAME: "Development Seed"
+      - GH_EMAIL: "dev@developmentseed.org"
 
     steps:
       - checkout
@@ -28,6 +31,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: yarn test
+
+      - add_ssh_keys:
+          fingerprints:
+            - "d8:2c:2c:13:f8:dd:60:d2:e4:df:de:90:f8:55:d5:4c"
 
       - run:
           name: Building site staging
@@ -64,6 +71,23 @@ jobs:
               cp ./_site/index.html ./_site/200.html
               echo "global-climatescope.org" > ./_site/CNAME
               ./node_modules/surge/lib/cli.js --project ./_site --domain global-climatescope.org
+            else
+              echo "Not the branch you're looking for, skipping deploy"
+            fi
+
+      - run:
+          name: Deploy to GH Pages prod
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "${PRODUCTION_BRANCH}" ]; then
+              cd _site
+              git init
+              git config user.name "$GH_NAME"
+              git config user.email "$GH_EMAIL"
+              git add .
+              git commit -m "CI deploy [skip ci]"
+              git remote add origin $GH_REF
+              git push origin --force --quiet HEAD:gh-pages
+              rm -rf .git
             else
               echo "Not the branch you're looking for, skipping deploy"
             fi
