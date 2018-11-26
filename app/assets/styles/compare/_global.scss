@@ -20,7 +20,7 @@
 }
 
 .compare--entry {
-  .legend {
+  .legend--compare {
     dd, dt {
       padding-top: ($global-spacing / 2);
       padding-bottom: ($global-spacing / 2);
@@ -40,5 +40,20 @@
     dt {
       margin-left: 6.5rem;
     }
+  }
+
+  .par-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: ($global-spacing * 2) $global-spacing;
+    background: none;
+
+    .info-card {
+      min-height: 10rem;
+    }
+  }
+
+  .schart__graph {
+    height: 18rem;
   }
 }

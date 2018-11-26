@@ -236,7 +236,8 @@
   .info-card--small & {
     grid-template-columns: repeat(2, 1fr);
   }
-  .info-card--medium & {
+  .info-card--medium &,
+  .info-card--large & {
     grid-template-columns: repeat(6, 1fr);
     
     @include media(large-only) {
