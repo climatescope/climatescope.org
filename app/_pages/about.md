@@ -16,28 +16,42 @@ For 2018, the project has been expanded and updated in two key ways. First, the 
 This year's Climatescope Emerging Market Outlook represents the collective effort of 42 BloombergNEF analysts who made 54 country visits to collect data and conduct interviews. Once again, the study has been graciously supported by the U.K. Department for International Development. 
 
 ### Project director
+
 Ethan Zindler
+
 ### Project manager
+
 Dario Traum
+
 ### Lead Analyst
+
 Luiza Demôro
+
 ### Lead Modeller
+
 Ulimmeh Ezekiel
+
 ### Project Coordinator
+
 Misa Ichinose
+
 ###Communications Manager
+
 Veronika Henze
+
 ### Editors
+
 Angus McCrone, Ben Vickers
+
 ### Research & Data Gathering
 
 **Africa and Middle East**
 
-Ian Berryman, Hugh Bromley, Justin Commerford, Bryony Collins, Emma Champion, Victoria Cuming, Michael Daly, Helen Dewhurst, David Doherty, Ulimmeh Ezekiel, James Frith, Chris Gadomski, Ines Goncalves, Kyle Harrison, Takehiro Kawahara, Thomas Knight, Eleonore Lazat, Cecilia L’Ecluse, Daniel McLaughlin, Roseline Pole, Katherine Poseidon, Dean Hope Robertson, Dario Traum, Antoine Vagneur Jones
+Ian Berryman, Hugh Bromley, Justin Commerford, Bryony Collins, Emma Champion, Victoria Cuming, Michael Daly, Helen Dewhurst, David Doherty, Ulimmeh Ezekiel, James Frith, Chris Gadomski, Ines Goncalves, Kyle Harrison, Takehiro Kawahara, Thomas Knight, Eleonore Lazat, Cecilia L’Ecluse, Daniel McLaughlin, Roseline Pole, Katherine Poseidon, Dean Hope Robertson, Dario Traum, Antoine Vagneur-Jones
 
 **Asia**
 
-Nick Albanese, Richard Chatterton, Caroline Chua, Vandana Gombar, Shantanu Jaiswal, Maggie Kuang, Jonathan Luan, Jacqueline Lilinshtein, Fauzia Marzuki,Vertis McMillan, Colleen Regan, Abhishek Rohatgi, Divya Sehgal, Jane Swarbreck, Kirti Vasta, Mohit Velamala, Hanyang Wei
+Nick Albanese, Richard Chatterton, Caroline Chua, Vandana Gombar, Shantanu Jaiswal, Maggie Kuang, Jonathan Luan, Jacqueline Lilinshtein, Fauzia Marzuki, Vertis McMillan, Colleen Regan, Abhishek Rohatgi, Divya Sehgal, Jane Swarbreck, Kirti Vasta, Mohit Velamala, Hanyang Wei
 
 **Europe**
 
