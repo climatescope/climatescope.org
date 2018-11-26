@@ -11,8 +11,12 @@
   margin: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: ($global-spacing * 2) ($global-spacing * 2);
+  grid-gap: $global-spacing $global-spacing;
   justify-items: stretch;
+
+  @include media(large-up) {
+    grid-gap: ($global-spacing * 2) ($global-spacing * 2);
+  }
 
   > * {
     grid-column: auto / span 6;
