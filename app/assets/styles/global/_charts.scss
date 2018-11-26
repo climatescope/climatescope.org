@@ -249,12 +249,12 @@
   display: flex;
   flex-flow: column-reverse;
   min-width: 4rem;
-  height: 12rem;
-
+  margin: 0;
+  
   dd {
     display: flex;
     flex-flow: column;
-    flex: 1;
+    flex: 0 1 auto;
     font-family: $heading-font-family;
     font-weight: $heading-font-bold;
     font-size: 2.5rem;
@@ -274,9 +274,9 @@
   .card-percent-bar {
     margin-bottom: $global-spacing / 2;
     display: flex;
-    flex: 1;
     align-items: flex-end;
     background: rgba(#000, 0.16);
+    height: 9rem;
 
     > div {
       width: 100%;
@@ -293,16 +293,9 @@
 
 /* Overrides for availability of policies */
 .chart-availability-policies {
-  .card-percent {
-    height: auto;
-
-    dd {
-      min-height: 15rem;
-    }
-  }
-
   .card-percent-bar {
     background: rgba(#000, 0.08);
+    height: 12rem;
 
     > div {
       background: shade($parameter-color-b, 8%);
