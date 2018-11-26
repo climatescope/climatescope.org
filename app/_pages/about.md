@@ -59,7 +59,7 @@ Julia Attwood, Tom Harries, Keegan Kruger, Nick Albanese, Ben Vickers
 
 **Latin America and Caribbean**
 
-Luiza Demôro, Laura Castro, Helena Chung, Rafael Borges, James Ellis, Ana Verena Lima
+Luiza Demôro, Laura Castro, Helena Chung, Rafael Borges da Silveira, James Ellis
 
 
 **Special thanks**
