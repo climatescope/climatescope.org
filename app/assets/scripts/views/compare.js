@@ -5,11 +5,22 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { environment } from '../config'
-import { fetchGeographies, fetchGeography } from '../redux/geographies'
+import { fetchGeographies, fetchGeography, fetchChartsMeta } from '../redux/geographies'
 import { wrapApiResult, getFromState } from '../utils/utils'
 import { initializeArrayWithRange } from '../utils/array'
 import { round } from '../utils/math'
 import { padNumber } from '../utils/string'
+import { compareLayoutDef } from '../utils/geographies-layout'
+import {
+  ParCard,
+  getChartDef,
+  renderParCardError,
+  reconcileChartData,
+  renderParCardAbsolute,
+  renderParCardAnswer,
+  renderParCardPercent,
+  renderParCardRange
+} from '../components/geography-params'
 
 import App from './app'
 import ShareOptions from '../components/share'
@@ -17,6 +28,8 @@ import SelectControl from '../components/form-select-control'
 import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-skeleton'
 import OnGrid from '../components/on-grid'
 import { ParameterBreakdown } from '../components/parameters'
+import AvailabilityOfPolicies from '../components/con--availability-polices'
+import AreaChart, { memoizedComputeAreaChartData } from '../components/area-chart';
 
 const getGeoISOFromUrl = (params = '') => {
   const split = params.split('/')
@@ -51,7 +64,10 @@ class Compare extends React.Component {
   }
 
   componentDidMount () {
-    this.props.fetchGeographies()
+    Promise.all([
+      this.props.fetchChartsMeta(),
+      this.props.fetchGeographies()
+    ])
       .then(() => {
         if (!this.props.geographiesList.isReady()) return
 
@@ -156,6 +172,7 @@ class Compare extends React.Component {
             loading={!geoA.isReady()}
             source={geoA.getData()}
             target={geoB.getData()}
+            chartsMeta={this.props.chartsMeta.getData([])}
           />
         </div>
         <div className='col col--diptic prose'>
@@ -165,6 +182,7 @@ class Compare extends React.Component {
             loading={!geoB.isReady()}
             source={geoB.getData()}
             target={geoA.getData()}
+            chartsMeta={this.props.chartsMeta.getData([])}
           />
         </div>
       </>
@@ -208,11 +226,13 @@ if (environment !== 'production') {
   Compare.propTypes = {
     fetchGeographies: T.func,
     fetchGeography: T.func,
+    fetchChartsMeta: T.func,
     match: T.object,
     history: T.object,
     geographiesList: T.object,
     geoA: T.object,
-    geoB: T.object
+    geoB: T.object,
+    chartsMeta: T.object
   }
 }
 
@@ -222,20 +242,56 @@ function mapStateToProps (state, props) {
   return {
     geographiesList: wrapApiResult(state.geographies.list),
     geoA: wrapApiResult(getFromState(state.geographies.individualGeographies, params[0])),
-    geoB: wrapApiResult(getFromState(state.geographies.individualGeographies, params[1]))
+    geoB: wrapApiResult(getFromState(state.geographies.individualGeographies, params[1])),
+    chartsMeta: wrapApiResult(state.geographies.chartsMeta)
   }
 }
 
 function dispatcher (dispatch) {
   return {
     fetchGeographies: (...args) => dispatch(fetchGeographies(...args)),
-    fetchGeography: (...args) => dispatch(fetchGeography(...args))
+    fetchGeography: (...args) => dispatch(fetchGeography(...args)),
+    fetchChartsMeta: (...args) => dispatch(fetchChartsMeta(...args))
   }
 }
 
 export default connect(mapStateToProps, dispatcher)(Compare)
 
 class GeographyCompare extends React.PureComponent {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      // Charts of type timeSeries that need state access.
+      installedCapacity: this.getInitialChartTimeSeriesState(),
+      powerGeneration: this.getInitialChartTimeSeriesState(),
+      cleanEnergyInvestment: this.getInitialChartTimeSeriesState()
+    }
+  }
+
+  getInitialChartTimeSeriesState () {
+    return {
+      hover: false,
+      hoverDateValue: null
+    }
+  }
+
+  onInteractionEvent (chartId, name, date) {
+    switch (name) {
+      case 'over':
+        this.setState({ [chartId]: { ...this.state[chartId], hover: true } })
+        break
+      case 'out':
+        this.setState({ [chartId]: { ...this.state[chartId], hover: false } })
+        break
+      case 'move':
+        if (!this.state[chartId].hoverDateValue || this.state[chartId].hoverDateValue.getFullYear() !== date.getFullYear()) {
+          this.setState({ [chartId]: { hover: true, hoverDateValue: date } })
+        }
+        break
+    }
+  }
+
   renderInactive () {
     return (
       <div className='placeholder'>
@@ -265,7 +321,7 @@ class GeographyCompare extends React.PureComponent {
   }
 
   render () {
-    const { error, loading, active, source } = this.props
+    const { error, loading, active, source, target, chartsMeta } = this.props
 
     if (!active) {
       return this.renderInactive()
@@ -293,13 +349,98 @@ class GeographyCompare extends React.PureComponent {
           </p>
           <h1 className='compare--entry__title'>{source.name} <OnGrid grid={source.grid} noTip /></h1>
           <ParameterBreakdown
-            className='legend par-legend'
+            className='legend par-legend legend--compare'
             data={topics} >
             <dt>Global rank</dt>
             <dd>{padNumber(source.score.data[0].rank, 2)}</dd>
             <dt>Score</dt>
             <dd>{round(source.score.data[0].value)}</dd>
           </ParameterBreakdown>
+
+          <div className='par-section'>
+            {compareLayoutDef.map(layoutDef => {
+              try {
+                // Policies is a special element that needs to access specific data.
+                if (layoutDef.id === 'availabilityPolicies') {
+                  return (
+                    <AvailabilityOfPolicies
+                      key={layoutDef.id}
+                      geoIso={source.iso}
+                      size={layoutDef.size}
+                    />
+                  )
+                }
+
+                const [chartDef] = getChartDef(chartsMeta, layoutDef.id)
+
+                // Group elements mut be handled differently.
+                if (chartDef.type === 'group') {
+                  // Not implemented. If need check the implementation in
+                  // geography-params.js
+                  throw new Error(`Unable to render chart group [${chartDef.id}]`)
+                } else {
+                  // Reconcile chart data, i.e. merge all in an object.
+                  const reconciledData = reconcileChartData(layoutDef, chartDef, source.charts, source)
+
+                  switch (reconciledData.type) {
+                    case 'answer':
+                      return renderParCardAnswer(reconciledData)
+                    case 'absolute':
+                    case 'average':
+                      return renderParCardAbsolute(reconciledData)
+                    case 'percent':
+                      return renderParCardPercent(reconciledData)
+                    case 'range':
+                      return renderParCardRange(reconciledData)
+                    case 'timeSeries':
+                      // Compute the chart data.
+                      // Iso + chart id works as a cache key because the data is never
+                      // going to be updated. If in the future this changes then the cache
+                      // key needs to be dynamic.
+                      const chartData = memoizedComputeAreaChartData(reconciledData.data, reconciledData.mainDataLayers, `${source.iso}-${chartDef.id}`)
+                      const hasData = chartData.data.some(l => l.values.some(v => v.value !== null))
+
+                      let yDomain = chartData.yDomain
+
+                      if (hasData && target.iso) {
+                        // We have to ensure that both charts use the same domains
+                        // so we have to reconcile the data for the target as well.
+                        const reconciledDataTarget = reconcileChartData(layoutDef, chartDef, target.charts, target)
+                        // Compute the target chart data.
+                        const chartDataTarget = memoizedComputeAreaChartData(reconciledDataTarget.data, reconciledDataTarget.mainDataLayers, `${target.iso}-${chartDef.id}`)
+                        const [tmin, tmax] = chartDataTarget.yDomain
+                        yDomain = [Math.min(yDomain[0], tmin || 0), Math.max(yDomain[1], tmax || 0)]
+                      }
+
+                      return (
+                        <ParCard
+                          key={reconciledData.id}
+                          title={reconciledData.name}
+                          description={hasData ? (reconciledData.description || null) : null}
+                          size={reconciledData.size}
+                          className={`chart-${reconciledData.id}`}
+                        >
+                          {!hasData && <p>No data is available for this chart</p>}
+                          {hasData && <AreaChart
+                            onBisectorEvent={this.onInteractionEvent.bind(this, reconciledData.id)}
+                            interactionData={this.state[reconciledData.id]}
+                            yLabel={chartData.yLabel}
+                            yDomain={yDomain}
+                            xDomain={chartData.xDomain}
+                            data={chartData.data}
+                          />}
+                        </ParCard>
+                      )
+                    default:
+                      throw new Error(`Unable to render chart type [${reconciledData.type}] for chart [${reconciledData.id}]`)
+                  }
+                }
+              } catch (error) {
+                if (!error.handled) console.error(error)
+                return renderParCardError(layoutDef, error.message)
+              }
+            })}
+          </div>
         </div>
       </>
     )
@@ -312,6 +453,7 @@ if (environment !== 'production') {
     error: T.bool,
     loading: T.bool,
     source: T.object,
-    target: T.object
+    target: T.object,
+    chartsMeta: T.array
   }
 }

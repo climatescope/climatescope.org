@@ -177,25 +177,29 @@ export const tools = [
     url: '/compare',
     title: 'View results side by side',
     label: 'Geography Comparison',
-    description: 'Pick any two nations, see how they compare'
+    description: 'Pick any two nations, see how they compare',
+    image: 'feat-tool-thumb--compare.jpg'
   },
   {
     url: '/clean-energy-investments',
     title: 'Use the Clean Energy Investment',
     label: 'Clean Energy Investment',
-    description: 'Who backs clean energy in emerging markets?'
+    description: 'Who backs clean energy in emerging markets?',
+    image: 'feat-tool-thumb--clean-energy-investments.jpg'
   },
   {
     url: '/capacity-generation',
     title: 'Use the Capacity Generation',
     label: 'Capacity Generation',
-    description: 'Who has the most (and least) clean enery today?'
+    description: 'Who has the most (and least) clean enery today?',
+    image: 'feat-tool-thumb--capacity-generation.jpg'
   },
   {
     url: '/policies',
     title: 'Browse the policy database',
     label: 'Policies',
-    description: '800+ policies to improve clean enery development'
+    description: '800+ policies to improve clean enery development',
+    image: 'feat-tool-thumb--policies.jpg'
   }
 ]
 

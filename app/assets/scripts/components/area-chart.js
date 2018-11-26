@@ -302,7 +302,10 @@ class AreaChart extends React.Component {
     const nIact = nextProps.interactionData
     const pIact = this.props.interactionData
 
-    if (!isEqual(this.props.data, nextProps.data)) {
+    if (
+      !isEqual(this.props.data, nextProps.data) ||
+      !isEqual(this.props.yDomain, nextProps.yDomain)
+    ) {
       this.updateChart(nextProps)
 
       // Micro updates for performance reasons

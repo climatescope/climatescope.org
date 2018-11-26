@@ -8,7 +8,7 @@ jobs:
 
     environment:
       - STAGING_BRANCH: v2018
-      - PRODUCTION_BRANCH: v2018
+      - PRODUCTION_BRANCH: master
       - GH_REF: git@github.com:climatescope/climatescope.org.git
       - GH_NAME: "Development Seed"
       - GH_EMAIL: "dev@developmentseed.org"

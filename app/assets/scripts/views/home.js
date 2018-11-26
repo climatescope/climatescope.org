@@ -3,75 +3,15 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { Timeline } from 'react-twitter-widgets'
-import c from 'classnames'
 
 import { environment } from '../config'
-import { editions, downloadData } from '../utils/constants'
+import { editions, downloadData, tools } from '../utils/constants'
 import { fetchMediumPosts } from '../redux/medium'
 import { wrapApiResult } from '../utils/utils'
 import { initializeArrayWithRange } from '../utils/array'
 
 import App from './app'
-import { LoadingSkeletonGroup, LoadingSkeleton } from '../components/loading-skeleton'
-
-const MediumCard = ({ isLoading, isFeatured, title, subtitle, url, description, tags }) => (
-  <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
-    <div className='card__contents'>
-      {isLoading ? (
-        <LoadingSkeletonGroup>
-          <LoadingSkeleton size='large' type='heading' width={3 / 4} />
-          <LoadingSkeleton />
-          <LoadingSkeleton />
-          <LoadingSkeleton width={1 / 4} style={{ marginBottom: '4rem' }} />
-          <LoadingSkeleton width={2 / 3} />
-          <LoadingSkeleton width={1 / 4} />
-        </LoadingSkeletonGroup>
-      ) : (
-        <>
-          <header className='card__header'>
-            <div className='card__headline'>
-              <a href={url} title='Read insight' className='link-wrapper'>
-                <p className='card__subtitle'>{subtitle}</p>
-                <h1 className='card__title'>{title}</h1>
-              </a>
-            </div>
-          </header>
-          <div className='card__body'>
-            <div className='card__prose'>
-              <p>{description}</p>
-            </div>
-          </div>
-          <footer>
-            {tags.length && (
-              <>
-                <h2 className='visually-hidden'>Topics</h2>
-                <ul className='topics-list'>
-                  {tags.map(t => (
-                    <li key={t.id}><a href={t.url} className='topic-link' title='Browse Insights by Topic'><span>{t.name}</span></a></li>
-                  ))}
-                </ul>
-              </>
-            )}
-            <a href={url} title='Read insight' className='card__go-link'><span>Read article</span></a>
-          </footer>
-        </>
-      )}
-    </div>
-  </article>
-)
-
-if (environment !== 'production') {
-  MediumCard.propTypes = {
-    isLoading: T.bool,
-    isFeatured: T.bool,
-    title: T.string,
-    subtitle: T.string,
-    url: T.string,
-    description: T.string,
-    tags: T.array
-  }
-}
+import { MediumCard, ToolCard } from '../components/lib-card'
 
 class Home extends React.Component {
   constructor (props) {
@@ -175,45 +115,23 @@ investment?</h1>
                 <section className='fsection fsection--tweets'>
                   <header className='fsection__header'>
                     <div className='fsection__headline'>
-                      <h1 className='fsection__title'>Tweets</h1>
+                      <h1 className='fsection__title'>Tools</h1>
                     </div>
-                    <div className='fsection__actions'>
-                      <a href='https://twitter.com/BloombergNEF' title='View all tweets' className='fsa-go'><span>View all</span></a>
-                    </div>
+                    <div className='fsection__actions'></div>
                   </header>
-                  {!this.state.twitterLoaded && (
-                    <>
-                      <LoadingSkeletonGroup>
-                        <LoadingSkeleton type='heading' width={3 / 4} />
-                        <LoadingSkeleton type='heading' width={2 / 3} />
-                        <LoadingSkeleton />
-                        <LoadingSkeleton />
-                        <LoadingSkeleton />
-                        <LoadingSkeleton width={1 / 4} />
-                      </LoadingSkeletonGroup>
-
-                      <LoadingSkeletonGroup>
-                        <LoadingSkeleton type='heading' width={1 / 3} />
-                        <LoadingSkeleton />
-                        <LoadingSkeleton />
-                        <LoadingSkeleton width={1 / 4} />
-                      </LoadingSkeletonGroup>
-                    </>
-                  )}
-                  <div style={{ display: this.state.twitterLoaded ? 'block' : 'none' }} className='timeline-wrapper'>
-                    <Timeline
-                      dataSource={{
-                        sourceType: 'profile',
-                        screenName: 'BloombergNEF'
-                      }}
-                      options={{
-                        chrome: 'noheader noborders nofooter noscrollbar',
-                        height: '100%',
-                        tweetLimit: 10
-                      }}
-                      onLoad={() => this.setState({ twitterLoaded: true })}
-                    />
-                  </div>
+                  <ol className='card-list'>
+                    {tools.map(({ url, title, label, description, image }) => (
+                      <li key={url} className='card-list__item'>
+                        <ToolCard
+                          url={url}
+                          linkTitle={title}
+                          title={label}
+                          description={description}
+                          image={image}
+                        />
+                      </li>
+                    ))}
+                  </ol>
                 </section>
               </div>
             </div>
