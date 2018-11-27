@@ -42,6 +42,20 @@
     }
   }
 
+  // Ensure cards always span 3 cols
+  .info-card--large {
+    grid-column: auto / span 3;
+  }
+
+  // Override for availability of policies.
+  .chart-availability-policies .card-percent-list {
+    grid-template-columns: repeat(4, 1fr);
+
+    @include media(xlarge-up) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
   .par-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
