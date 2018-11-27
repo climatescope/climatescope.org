@@ -10,6 +10,6 @@ export default {
   policyDbUrl: 'https://services.bnef.com/public-api',
   mediumLatestUrl: 'https://cs-medium-latest.herokuapp.com',
   mailchimpUrl: '',
-  gaTrackingID: null,
+  gaTrackingID: 'UA-56170738-1',
   mbtoken: null
 }
