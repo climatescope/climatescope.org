@@ -348,7 +348,7 @@ class GeographyCompare extends React.PureComponent {
           <p className='compare--entry__subtitle'>
             <Link to={`/results?region=${source.region.id}`} title={`View results for ${source.region.name} region`}>{source.region.name}</Link>
           </p>
-          <h1 className='compare--entry__title'><a href='#' title='View page'>{source.name}</a> <OnGrid grid={source.grid} noTip /></h1>
+          <h1 className='compare--entry__title'><Link to={`/results/${source.iso}`} title='View page'>{source.name}</Link> <OnGrid grid={source.grid} noTip /></h1>
           <ParameterBreakdown
             className='legend par-legend legend--compare'
             data={topics} >
