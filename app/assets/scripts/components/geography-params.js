@@ -438,9 +438,9 @@ export const renderParCardAnswerGroup = (chart) => {
             const answer = child.data.value + ''
             const dataOpt = child.options.find(opt => opt.id === answer)
 
-            if (child.excludeOffGrid || child.data.value === null) {
-              // Only for off grid   || Answer is null.
-              const sentence = child.excludeOffGrid
+            if (!child.applicableByGrid || child.data.value === null) {
+              // Only for grid type   || Answer is null.
+              const sentence = child.applicableByGrid
                 ? 'Only applicable to off-grid countries'
                 : 'No answer available'
 
@@ -653,8 +653,8 @@ export const reconcileGroupChartData = (layoutDef, chartDef, chartDefChildren, c
       const [d] = getChartData(chartGroupData.data, child.id, chartDef.id)
       // Check if the chart should be excluded because if only for a
       // off-grid geography and we're dealing with a on-grid geography.
-      const excludeOffGrid = (geography.grid === 'on' || geography.grid === true) && isOffGridExclusive(child)
-      return { ...child, data: d, excludeOffGrid }
+      const applicableByGrid = isApplicableByGrid(geography, chartDef)
+      return { ...child, data: d, applicableByGrid }
     } catch (error) {
       childrenWithoutData = childrenWithoutData.concat(error.data)
     }
@@ -691,26 +691,28 @@ export const reconcileChartData = (layoutDef, chartDef, chartsData, geography) =
   const [chartData] = getChartData(chartsData, layoutDef.id)
   // Check if the chart should be excluded because if only for a off-grid
   // geography and we're dealing with a on-grid geography.
-  const excludeOffGrid = (geography.grid === 'on' || geography.grid === true) && isOffGridExclusive(chartDef)
+  const applicableByGrid = isApplicableByGrid(geography, chartDef)
 
   // Reconcile chart data, i.e. merge all in an object.
   const reconciledData = {
     ...layoutDef, // Layout definition.
     ...chartDef, // Chart definition.
     data: chartData, // Chart data.
-    excludeOffGrid
+    applicableByGrid
   }
 
   return reconciledData
 }
 
 /**
- * Returns whether a given chart is exclusive for off-grid countries.
+ * Returns whether a given chart is applicable for the geography's grid type.
  *
- *  @param {object} chartDef Chart definition
+ * @param {object} geography Geography for which the chart is.
+ * @param {object} chartDef Chart definition
  *
  * @returns boolean
  */
-const isOffGridExclusive = (chartDef) => {
-  return ['keroseneDieselSubsidies'].indexOf(chartDef.id) !== -1
+const isApplicableByGrid = (geography, chartDef) => {
+  if (chartDef['applicable-grid'] === 'both') return true
+  return geography.grid === chartDef['applicable-grid']
 }
