@@ -83,10 +83,6 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: ($global-spacing * 4);
     background: none;
-
-    .info-card {
-      min-height: 10rem;
-    }
   }
 
   .schart__graph {

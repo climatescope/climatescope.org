@@ -3,6 +3,7 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import c from 'classnames'
 
 import { environment } from '../config'
 import { fetchGeographies, fetchGeography, fetchChartsMeta } from '../redux/geographies'
@@ -418,7 +419,7 @@ class GeographyCompare extends React.PureComponent {
                           title={reconciledData.name}
                           description={hasData ? (reconciledData.description || null) : null}
                           size={reconciledData.size}
-                          className={`chart-${reconciledData.id}`}
+                          className={c(`chart-${reconciledData.id}`, { 'info-card--empty': !hasData })}
                         >
                           {!hasData && <p>No data is available for this chart</p>}
                           {hasData && <AreaChart
