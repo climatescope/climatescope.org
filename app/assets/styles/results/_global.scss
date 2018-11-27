@@ -103,6 +103,38 @@
 }
 
 
+/* Misc modifiers
+========================================================================== */
+
+.info-card--empty {
+  display: flex;
+  flex-flow: row wrap;
+
+  > * {
+    width: 100%;
+  }
+
+  p {
+    color: inherit;
+    text-align: center;
+    font-family: $heading-font-family;
+    opacity: 0.56;
+
+    &::before {
+      @extend %collecticon-chart-line;
+      font-size: 4rem;
+      display: block;
+      margin-bottom: $global-spacing * 1.5;
+      opacity: 0.56;
+    }
+  }
+}
+
+.chart-cleanEnergyInvestment {
+  min-height: 25.25rem;
+}
+
+
 /* Feature table
 ========================================================================== */
 
@@ -191,7 +223,7 @@
       &:nth-of-type(odd) {
         background: tint($base-color, 96%);
       }
-      
+
       &:nth-of-type(even) {
         background: #fff;
       }

@@ -392,7 +392,7 @@ export const renderParCardTimeSeries = (chart, reactComponent, key) => {
       title={chart.name}
       description={hasData ? (chart.description || null) : null}
       size={chart.size}
-      className={`chart-${chart.id}`}
+      className={c(`chart-${chart.id}`, { 'info-card--empty': !hasData })}
     >
       {!hasData && <p>No data is available for this chart</p>}
       {hasData && <AreaChart
