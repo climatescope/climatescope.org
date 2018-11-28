@@ -72,7 +72,7 @@ class AreaChart extends React.Component {
       // Ensure that we're within domain bounds.
       const year = Math.max(minDate.getFullYear(), Math.min(mouseYear, maxDate.getFullYear()))
 
-      cmp.props.onBisectorEvent(eventType, new Date(`${year}-01-01`))
+      cmp.props.onBisectorEvent(eventType, dateFromYear(year))
     }
   }
 
