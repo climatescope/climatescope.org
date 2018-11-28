@@ -2,10 +2,10 @@
 import get from 'lodash.get'
 
 /**
- * Constructs a date object from a year
+ * Constructs a date object from a year.
  * @param {number} y Year
  */
-export const dateFromYear = (y) => new Date(`${y}-01-01`)
+export const dateFromYear = (y) => new Date(`${y}-01-31`)
 
 /**
  * Checks if the provided value is an object created by the Object constructor.
