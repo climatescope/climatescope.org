@@ -155,19 +155,19 @@ export const medium = {
       url: 'https://medium.com/climatescope/insights',
       title: 'View insights section',
       label: 'Insights',
-      description: 'Check out the Insights on Medium'
+      description: 'In-depth reports that provide insight into key areas of the clean energy sector.'
     },
     {
       url: 'https://medium.com/climatescope/updates',
       title: 'View updates section',
       label: 'Updates',
-      description: 'Check out the Updates on Medium'
+      description: 'Brief updates on the latest developments in the clean energy sector.'
     },
     {
       url: 'https://medium.com/climatescope/off-grid-quarterly',
       title: 'View Off Grid Quarterly section',
       label: 'Off Grid Quarterly',
-      description: 'Check out the Off Grid Quarterly on Medium'
+      description: 'A quarterly publication about the outlook of distributed energy and electrification in emerging or remote markets.'
     }
   ]
 }
