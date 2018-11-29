@@ -3,8 +3,21 @@
    ========================================================================== */
 
 .inpage--library {
+
   .col--main {
     grid-column: 1 / span 12;
+
+    @include media(large-up) {
+      grid-column: 1 / span 9;
+    }
+  }
+
+  .col--sec {
+    grid-column: auto / span 12;
+
+    @include media(large-up) {
+      grid-column: auto / span 3;
+    }
   }
 }
 
@@ -26,7 +39,11 @@
   }
 
   @include media(large-up) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    &.tool {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .library__list-item {

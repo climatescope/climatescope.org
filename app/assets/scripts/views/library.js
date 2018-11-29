@@ -35,6 +35,7 @@ class ReportCard extends React.PureComponent {
           </header>
           <footer>
             {report && <SmartLink to={baseurl + report.url} title={report.title} className='card__download-link' onClick={this.onDownloadClick.bind(this, report.url)} target='_blank'><span>Report (PDF)</span></SmartLink>}
+            {report && model && <br />}
             {model && <SmartLink to={baseurl + model.url} title={model.title} className='card__download-link' onClick={this.onDownloadClick.bind(this, model.url)} target='_blank'><span>Model (Excel)</span></SmartLink>}
           </footer>
         </div>
@@ -69,9 +70,9 @@ class Library extends React.Component {
 
           <div className='inpage__body'>
             <div className='inner'>
-              <div className='col--main prose'>
+              <div className='col--main'>
 
-                <h2 className='visually-hidden'>Medium</h2>
+                <h2>Insights</h2>
                 <ul className='library__list'>
                   {medium.pages.map(({ url, title, label, description }) => (
                     <li key={url} className='library__list-item'>
@@ -80,21 +81,6 @@ class Library extends React.Component {
                         linkTitle={title}
                         title={label}
                         description={description}
-                      />
-                    </li>
-                  ))}
-                </ul>
-
-                <h2>Tools</h2>
-                <ul className='library__list'>
-                  {tools.map(({ url, title, label, description, image }) => (
-                    <li key={url} className='library__list-item'>
-                      <ToolCard
-                        url={url}
-                        linkTitle={title}
-                        title={label}
-                        description={description}
-                        image={image}
                       />
                     </li>
                   ))}
@@ -114,6 +100,23 @@ class Library extends React.Component {
                       <ReportCard
                         report={report}
                         model={model}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className='col--sec tools'>
+                <h2>Tools</h2>
+                <ul className='library__list tool'>
+                  {tools.map(({ url, title, label, description, image }) => (
+                    <li key={url} className='library__list-item tool'>
+                      <ToolCard
+                        url={url}
+                        linkTitle={title}
+                        title={label}
+                        description={description}
+                        image={image}
                       />
                     </li>
                   ))}

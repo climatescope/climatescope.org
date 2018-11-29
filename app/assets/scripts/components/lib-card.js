@@ -156,7 +156,7 @@ export const MediumCard = (props) => (
 )
 
 export const MediumCategoryCard = (props) => (
-  <LibCard {...props} subtitle='Medium'>
+  <LibCard {...props}>
     <LibCardFooter>
       <SmartLink to={props.url} title={props.linkTitle} className='card__go-link'><span>View archive</span></SmartLink>
     </LibCardFooter>
