@@ -152,22 +152,22 @@ export const downloadData = {
 export const medium = {
   pages: [
     {
+      url: 'https://medium.com/climatescope/off-grid-quarterly',
+      title: 'View Off Grid Quarterly section',
+      label: 'Off Grid Quarterly',
+      description: 'BloombergNEF\'s quarterly review of business and policy activity in the off-grid and weak-grid sectors across the globe.'
+    },
+    {
       url: 'https://medium.com/climatescope/insights',
       title: 'View insights section',
       label: 'Insights',
-      description: 'In-depth reports that provide insight into key areas of the clean energy sector.'
+      description: 'Series of research notes on what drives the energy transition globally with a focus on emerging markets. Read about how developers can mitigate risk, what tools governments have to accelerate renewables deployment, what role clean energy can play in increasing access to power, and more.'
     },
     {
       url: 'https://medium.com/climatescope/updates',
       title: 'View updates section',
       label: 'Updates',
-      description: 'Brief updates on the latest developments in the clean energy sector.'
-    },
-    {
-      url: 'https://medium.com/climatescope/off-grid-quarterly',
-      title: 'View Off Grid Quarterly section',
-      label: 'Off Grid Quarterly',
-      description: 'A quarterly publication about the outlook of distributed energy and electrification in emerging or remote markets.'
+      description: 'Archive of updates and posts from BloombergNEF and partner organisations.'
     }
   ]
 }
