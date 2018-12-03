@@ -150,15 +150,15 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
   // If there's nothing in the area, don't render it.
   if (!sectionDef[key].length) return null
 
-  const areaContents = sectionDef[key].map(el => {
+  const areaContents = sectionDef[key].map(layoutDef => {
     // Section headers are considered special elements.
-    if (el.id === 'sectionHeader') {
+    if (layoutDef.id === 'sectionHeader') {
       // Get the section copy.
       const sectionCopy = (geography.sectionCopy || []).find(o => o.id === sectionDef.id)
       const description = get(sectionCopy, 'value', '')
       return (
         <ParSectionHeader
-          key={el.id}
+          key={layoutDef.id}
           title={sectionDef.title}
           description={description}
         />
@@ -167,89 +167,39 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
 
     try {
       // Policies is a special element that needs to access specific data.
-      if (el.id === 'availabilityPolicies') {
+      if (layoutDef.id === 'availabilityPolicies') {
         return (
           <AvailabilityOfPolicies
-            key={el.id}
+            key={layoutDef.id}
             geoIso={geography.iso}
-            size={el.size}
+            size={layoutDef.size}
           />
         )
       }
 
-      const [chartDef] = getChartDef(chartsMeta, el.id)
+      const [chartDef] = getChartDef(chartsMeta, layoutDef.id)
 
       // Group elements mut be handled differently.
       if (chartDef.type === 'group') {
         // Get all children.
-        const chartDefChildren = getChartDef(chartsMeta, chartDef.children, el.id)
-        // Unique children types.
-        const uniqueTypes = chartDefChildren.reduce((acc, def) => (
-          acc.indexOf(def.type) === -1 ? acc.concat(def.type) : acc
-        ), [])
+        const chartDefChildren = getChartDef(chartsMeta, chartDef.children, layoutDef.id)
+        const childrenType = getChildrenType(chartDef.id, chartDefChildren)
 
-        if (uniqueTypes.length !== 1) {
-          throw new Error(`All the indicators of group [${chartDef.id}] must be of same type. Types found: [${uniqueTypes.join(', ')}]`)
-        }
-
-        // Get the chart group data.
-        const [chartGroupData] = getChartData(chartsData, chartDef.id)
-
-        // Reconcile the data of the children.
-        let childrenWithoutData = []
-        const reconciledChildren = chartDefChildren.map(child => {
-          try {
-            // TODO: Change the approach to get the data. Show get the data
-            // from the global definition, not the children.
-            const [d] = getChartData(chartGroupData.data, child.id, chartDef.id)
-            // Check if the chart should be excluded because if only for a
-            // off-grid geography and we're dealing with a on-grid geography.
-            const excludeOffGrid = (geography.grid === 'on' || geography.grid === true) && isOffGridExclusive(child)
-            return { ...child, data: d, excludeOffGrid }
-          } catch (error) {
-            childrenWithoutData = childrenWithoutData.concat(error.data)
-          }
-        })
-
-        // Children with no data.
-        if (childrenWithoutData.length) {
-          throw new Error(`Data not found for chart [${childrenWithoutData.join(', ')}] in group [${chartDef.id}]`)
-        }
-
-        // Reconcile the data of the group and children.
-        const reconciledData = {
-          ...el, // Layout definition.
-          ...chartDef, // Chart definition.
-          ...chartGroupData, // Chart data for the group.
-          children: reconciledChildren
-          // Foreach child:
-          // Chart definition.
-          // Chart data.
-        }
+        const reconciledData = reconcileGroupChartData(layoutDef, chartDef, chartDefChildren, chartsData, geography)
 
         // Children are all the same type. Render based off of that
-        switch (uniqueTypes[0]) {
+        switch (childrenType) {
           case 'answer':
             return renderParCardAnswerGroup(reconciledData)
           case 'percent':
             return renderParCardPercentGroup(reconciledData)
           default:
-            console.warn(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
-            throw new Error(`Unable to render children type [${uniqueTypes[0]}] for chart group [${chartDef.id}]`)
+            console.warn(`Unable to render children type [${childrenType}] for chart group [${chartDef.id}]`)
+            throw new Error(`Unable to render children type [${childrenType}] for chart group [${chartDef.id}]`)
         }
       } else {
-        const [chartData] = getChartDef(chartsData, el.id)
-        // Check if the chart should be excluded because if only for a off-grid
-        // geography and we're dealing with a on-grid geography.
-        const excludeOffGrid = (geography.grid === 'on' || geography.grid === true) && isOffGridExclusive(chartDef)
-
         // Reconcile chart data, i.e. merge all in an object.
-        const reconciledData = {
-          ...el, // Layout definition.
-          ...chartDef, // Chart definition.
-          data: chartData, // Chart data.
-          excludeOffGrid
-        }
+        const reconciledData = reconcileChartData(layoutDef, chartDef, chartsData, geography)
 
         switch (reconciledData.type) {
           case 'answer':
@@ -273,7 +223,7 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
       }
     } catch (error) {
       if (!error.handled) console.error(error)
-      return renderParCardError(el, error.message)
+      return renderParCardError(layoutDef, error.message)
     }
   })
 
@@ -294,7 +244,7 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
  * @param {object} chart Chart data.
  * @param {string} error The error to display.
  */
-const renderParCardError = (chart, error) => {
+export const renderParCardError = (chart, error) => {
   return (
     <ParCard
       key={chart.id}
@@ -310,7 +260,7 @@ const renderParCardError = (chart, error) => {
  *
  * @param {object} chart Chart data
  */
-const renderParCardAnswer = (chart) => {
+export const renderParCardAnswer = (chart) => {
   const answer = chart.data.value + ''
   return (
     <ParCard
@@ -342,7 +292,7 @@ const renderParCardAnswer = (chart) => {
  *
  * @param {object} chart Chart data
  */
-const renderParCardAbsolute = (chart) => {
+export const renderParCardAbsolute = (chart) => {
   const val = chart.data.value
   return (
     <ParCard
@@ -366,7 +316,7 @@ const renderParCardAbsolute = (chart) => {
  *
  * @param {object} chart Chart data
  */
-const renderParCardPercent = (chart) => {
+export const renderParCardPercent = (chart) => {
   const val = chart.data.value
   return (
     <ParCard
@@ -396,7 +346,7 @@ const renderParCardPercent = (chart) => {
  *
  * @param {object} chart Chart data
  */
-const renderParCardRange = (chart) => {
+export const renderParCardRange = (chart) => {
   const val = chart.data.value
   return (
     <ParCard
@@ -432,7 +382,7 @@ const renderParCardRange = (chart) => {
  *                               functions.
  * @param {string} chart Data memoize key
  */
-const renderParCardTimeSeries = (chart, reactComponent, key) => {
+export const renderParCardTimeSeries = (chart, reactComponent, key) => {
   const chartData = memoizedComputeAreaChartData(chart.data, chart.mainDataLayers, key)
   const hasData = chartData.data.some(l => l.values.some(v => v.value !== null))
 
@@ -442,7 +392,7 @@ const renderParCardTimeSeries = (chart, reactComponent, key) => {
       title={chart.name}
       description={hasData ? (chart.description || null) : null}
       size={chart.size}
-      className={`chart-${chart.id}`}
+      className={c(`chart-${chart.id}`, { 'info-card--empty': !hasData })}
     >
       {!hasData && <p>No data is available for this chart</p>}
       {hasData && <AreaChart
@@ -462,7 +412,7 @@ const renderParCardTimeSeries = (chart, reactComponent, key) => {
  *
  * @param {object} chart Chart data
  */
-const renderParCardAnswerGroup = (chart) => {
+export const renderParCardAnswerGroup = (chart) => {
   const options = chart.children.reduce((acc, child) => {
     return child.options.reduce((acc2, opt) => {
       return acc2.indexOf(opt.label) === -1 ? acc2.concat(opt.label) : acc2
@@ -488,9 +438,9 @@ const renderParCardAnswerGroup = (chart) => {
             const answer = child.data.value + ''
             const dataOpt = child.options.find(opt => opt.id === answer)
 
-            if (child.excludeOffGrid || child.data.value === null) {
-              // Only for off grid   || Answer is null.
-              const sentence = child.excludeOffGrid
+            if (!child.applicableByGrid || child.data.value === null) {
+              // Only for grid type   || Answer is null.
+              const sentence = child.applicableByGrid
                 ? 'Only applicable to off-grid countries'
                 : 'No answer available'
 
@@ -550,7 +500,7 @@ const renderParCardAnswerGroup = (chart) => {
  *
  * @param {object} chart Chart data
  */
-const renderParCardPercentGroup = (chart) => {
+export const renderParCardPercentGroup = (chart) => {
   return (
     <ParCard
       key={chart.id}
@@ -624,10 +574,11 @@ const getFromArray = (arr, ids) => {
  *
  * @returns array
  */
-const getChartDef = (arr, ids, groupId) => {
+export const getChartDef = (arr, ids, groupId) => {
   try {
     return getFromArray(arr, ids)
   } catch (error) {
+    if (!error.data) throw error
     error.handled = true
     error.message = `Definition not found for chart [${error.data.join(', ')}]` + (groupId ? ` in group [${groupId}]` : '')
     throw error
@@ -649,10 +600,11 @@ const getChartDef = (arr, ids, groupId) => {
  *
  * @returns array
  */
-const getChartData = (arr, ids, groupId) => {
+export const getChartData = (arr, ids, groupId) => {
   try {
     return getFromArray(arr, ids)
   } catch (error) {
+    if (!error.data) throw error
     error.handled = true
     error.message = `Data not found for chart [${error.data.join(', ')}]` + (groupId ? ` in group [${groupId}]` : '')
     throw error
@@ -660,12 +612,107 @@ const getChartData = (arr, ids, groupId) => {
 }
 
 /**
- * Returns whether a given chart is exclusive for off-grid countries.
+ * Ensures and returns the unique type of the children.
+ * If there is more than one type throws error.
  *
- *  @param {object} chartDef Chart definition
+ * @param {strong} chartId Id of the chart
+ * @param {array} childrenDef Definition of the chart children
+ */
+export const getChildrenType = (chartId, childrenDef) => {
+  // Unique children types.
+  const uniqueTypes = childrenDef.reduce((acc, def) => (
+    acc.indexOf(def.type) === -1 ? acc.concat(def.type) : acc
+  ), [])
+
+  if (uniqueTypes.length !== 1) {
+    throw new Error(`All the indicators of group [${chartId}] must be of same type. Types found: [${uniqueTypes.join(', ')}]`)
+  }
+
+  return uniqueTypes[0]
+}
+
+/**
+ * Reconciles the data for a group chart.
+ *
+ * @param {object} layoutDef Layout definition for the chart.
+ * @param {object} chartDef Chart definition.
+ * @param {array} chartDefChildren Chart children definition.
+ * @param {array} chartsData Chart data.
+ * @param {object} geography Geography for which the chart is.
+ */
+export const reconcileGroupChartData = (layoutDef, chartDef, chartDefChildren, chartsData, geography) => {
+  // Get the chart group data.
+  const [chartGroupData] = getChartData(chartsData, chartDef.id)
+
+  // Reconcile the data of the children.
+  let childrenWithoutData = []
+  const reconciledChildren = chartDefChildren.map(child => {
+    try {
+      // TODO: Change the approach to get the data. Show get the data
+      // from the global definition, not the children.
+      const [d] = getChartData(chartGroupData.data, child.id, chartDef.id)
+      // Check if the chart should be excluded because if only for a
+      // off-grid geography and we're dealing with a on-grid geography.
+      const applicableByGrid = isApplicableByGrid(geography, chartDef)
+      return { ...child, data: d, applicableByGrid }
+    } catch (error) {
+      childrenWithoutData = childrenWithoutData.concat(error.data)
+    }
+  })
+
+  // Children with no data.
+  if (childrenWithoutData.length) {
+    throw new Error(`Data not found for chart [${childrenWithoutData.join(', ')}] in group [${chartDef.id}]`)
+  }
+
+  // Reconcile the data of the group and children.
+  const reconciledData = {
+    ...layoutDef, // Layout definition.
+    ...chartDef, // Chart definition.
+    ...chartGroupData, // Chart data for the group.
+    children: reconciledChildren
+    // Foreach child:
+    // Chart definition.
+    // Chart data.
+  }
+
+  return reconciledData
+}
+
+/**
+ * Reconciles the data for a chart.
+ *
+ * @param {object} layoutDef Layout definition for the chart.
+ * @param {object} chartDef Chart definition.
+ * @param {array} chartsData Chart data.
+ * @param {object} geography Geography for which the chart is.
+ */
+export const reconcileChartData = (layoutDef, chartDef, chartsData, geography) => {
+  const [chartData] = getChartData(chartsData, layoutDef.id)
+  // Check if the chart should be excluded because if only for a off-grid
+  // geography and we're dealing with a on-grid geography.
+  const applicableByGrid = isApplicableByGrid(geography, chartDef)
+
+  // Reconcile chart data, i.e. merge all in an object.
+  const reconciledData = {
+    ...layoutDef, // Layout definition.
+    ...chartDef, // Chart definition.
+    data: chartData, // Chart data.
+    applicableByGrid
+  }
+
+  return reconciledData
+}
+
+/**
+ * Returns whether a given chart is applicable for the geography's grid type.
+ *
+ * @param {object} geography Geography for which the chart is.
+ * @param {object} chartDef Chart definition
  *
  * @returns boolean
  */
-const isOffGridExclusive = (chartDef) => {
-  return ['keroseneDieselSubsidies'].indexOf(chartDef.id) !== -1
+const isApplicableByGrid = (geography, chartDef) => {
+  if (chartDef['applicable-grid'] === 'both') return true
+  return geography.grid === chartDef['applicable-grid']
 }

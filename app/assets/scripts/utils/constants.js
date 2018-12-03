@@ -152,22 +152,22 @@ export const downloadData = {
 export const medium = {
   pages: [
     {
+      url: 'https://medium.com/climatescope/off-grid-quarterly',
+      title: 'View Off Grid Quarterly section',
+      label: 'Off Grid Quarterly',
+      description: 'BloombergNEF\'s quarterly review of business and policy activity in the off-grid and weak-grid sectors across the globe.'
+    },
+    {
       url: 'https://medium.com/climatescope/insights',
       title: 'View insights section',
       label: 'Insights',
-      description: 'Check out the Insights on Medium'
+      description: 'Series of research notes on what drives the energy transition globally with a focus on emerging markets. Read about how developers can mitigate risk, what tools governments have to accelerate renewables deployment, what role clean energy can play in increasing access to power, and more.'
     },
     {
       url: 'https://medium.com/climatescope/updates',
       title: 'View updates section',
       label: 'Updates',
-      description: 'Check out the Updates on Medium'
-    },
-    {
-      url: 'https://medium.com/climatescope/off-grid-quarterly',
-      title: 'View Off Grid Quarterly section',
-      label: 'Off Grid Quarterly',
-      description: 'Check out the Off Grid Quarterly on Medium'
+      description: 'Archive of updates and posts from BloombergNEF and partner organisations.'
     }
   ]
 }
@@ -177,25 +177,29 @@ export const tools = [
     url: '/compare',
     title: 'View results side by side',
     label: 'Geography Comparison',
-    description: 'Pick any two nations, see how they compare'
+    description: 'Pick any two nations, see how they compare',
+    image: 'feat-tool-thumb--compare.jpg'
   },
   {
     url: '/clean-energy-investments',
     title: 'Use the Clean Energy Investment',
     label: 'Clean Energy Investment',
-    description: 'Who backs clean energy in emerging markets?'
+    description: 'Who backs clean energy in emerging markets?',
+    image: 'feat-tool-thumb--clean-energy-investments.jpg'
   },
   {
     url: '/capacity-generation',
     title: 'Use the Capacity Generation',
     label: 'Capacity Generation',
-    description: 'Who has the most (and least) clean enery today?'
+    description: 'Who has the most (and least) clean enery today?',
+    image: 'feat-tool-thumb--capacity-generation.jpg'
   },
   {
     url: '/policies',
     title: 'Browse the policy database',
     label: 'Policies',
-    description: '800+ policies to improve clean enery development'
+    description: '800+ policies to improve clean enery development',
+    image: 'feat-tool-thumb--policies.jpg'
   }
 ]
 

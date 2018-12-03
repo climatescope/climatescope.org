@@ -56,7 +56,7 @@ a.card__contents {
 
 .card__media {
   position: relative;
-  margin: $global-spacing (- $global-spacing / 2);
+  margin: $global-spacing (- $global-spacing * 1.5);
 
   .link-wrapper {
     display: block;
@@ -72,11 +72,11 @@ a.card__contents {
   }
 
   &:first-child {
-    margin-top: (- $global-spacing / 2);
+    margin-top: (- $global-spacing * 1.5);
   }
 
   &:last-child {
-    margin-bottom: (- $global-spacing / 2) !important;
+    margin-bottom: (- $global-spacing * 1.5) !important;
   }
 }
 
@@ -92,16 +92,16 @@ a.card__contents {
     border-radius: $base-border-radius / 2;
   }
 
-  &::before {
+  &::after {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 3;
+    z-index: 2;
     content: "";
-    box-shadow: inset 0 0 0 $base-border-width $base-alpha-color;
     pointer-events: none;
+    background: rgba($base-color, 0.48)
   }
 }
 
@@ -135,6 +135,7 @@ a.card__contents {
 
 .card__title {
   @include heading(1.5rem);
+  line-height: 1.75rem;
   margin: 0;
 
   a {

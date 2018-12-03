@@ -3,8 +3,21 @@
    ========================================================================== */
 
 .inpage--library {
+
   .col--main {
     grid-column: 1 / span 12;
+
+    @include media(large-up) {
+      grid-column: 1 / span 9;
+    }
+  }
+
+  .col--sec {
+    grid-column: auto / span 12;
+
+    @include media(large-up) {
+      grid-column: auto / span 3;
+    }
   }
 }
 
@@ -26,7 +39,11 @@
   }
 
   @include media(large-up) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    &.tool {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   .library__list-item {
@@ -36,5 +53,41 @@
 
   &.library__list--small .library__list-item {
     min-height: auto;
+  }
+}
+
+.card--tool {
+  .card__header {
+    @extend .antialiased;
+    position: relative;
+    overflow: hidden;
+    margin: (- $global-spacing * 1.5) (- $global-spacing * 1.5) $global-spacing (- $global-spacing * 1.5);
+    padding: ($global-spacing * 1.5);
+    min-height: 10rem;
+    align-items: flex-end;
+    color: #fff;
+    text-shadow: 0 0 8px rgba($base-color, 0.64);
+  }
+
+  .card__headline {
+    position: relative;
+    z-index: 2;
+  }
+
+  .card__media,
+  .card__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: 0;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }

@@ -106,6 +106,15 @@
   }
 }
 
+.col--sec {
+  .card-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-list__item {
+    grid-column: auto / span 1;
+  }
+}
+
 /* Make tweeter section full height */
 .fsection--tweets {
   display: flex;
