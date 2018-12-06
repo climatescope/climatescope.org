@@ -82,6 +82,7 @@ class MailChimpNewsletter extends React.Component {
       subscribe({
         EMAIL: this.state.email
       })
+      this.setState({ email: '' })
     }
   }
 
