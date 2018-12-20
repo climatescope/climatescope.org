@@ -173,6 +173,18 @@ export const compareLayoutDef = [
     mainDataLayers: renewableTypes
   },
   {
+    id: 'utilityPrivatisation',
+    size: 'large'
+  },
+  {
+    id: 'concentrationGeneration',
+    size: 'large'
+  },
+  {
+    id: 'powerPlantFleet',
+    size: 'large'
+  },
+  {
     id: 'powerGeneration',
     size: 'large',
     mainDataLayers: renewableTypes
@@ -182,16 +194,52 @@ export const compareLayoutDef = [
     size: 'large'
   },
   {
+    id: 'gapToTarget',
+    size: 'large'
+  },
+  {
+    id: 'upcomingAuctions',
+    size: 'large'
+  },
+  {
     id: 'cleanEnergyInvestment',
     size: 'large',
     mainDataLayers: [/* Empty keeps all */]
   },
   {
-    id: 'electricityPrice',
-    size: 'large'
+    id: 'foreignInvestment',
+    size: 'medium'
   },
   {
     id: 'availabilityFinance',
+    size: 'large'
+  },
+  {
+    id: 'sectorWholesale',
+    size: 'large'
+  },
+  {
+    id: 'wholesaleDistortions',
+    size: 'large'
+  },
+  {
+    id: 'electricityPrice',
+    size: 'medium'
+  },
+  {
+    id: 'averageVAT',
+    size: 'medium'
+  },
+  {
+    id: 'importDuties',
+    size: 'medium'
+  },
+  {
+    id: 'currencyVariation',
+    size: 'large'
+  },
+  {
+    id: 'offtakerRisk',
     size: 'large'
   }
 ]
