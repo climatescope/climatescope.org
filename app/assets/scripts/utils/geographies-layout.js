@@ -208,7 +208,7 @@ export const compareLayoutDef = [
   },
   {
     id: 'foreignInvestment',
-    size: 'medium'
+    size: 'large'
   },
   {
     id: 'availabilityFinance',
@@ -224,15 +224,15 @@ export const compareLayoutDef = [
   },
   {
     id: 'electricityPrice',
-    size: 'medium'
+    size: 'large'
   },
   {
     id: 'averageVAT',
-    size: 'medium'
+    size: 'large'
   },
   {
     id: 'importDuties',
-    size: 'medium'
+    size: 'large'
   },
   {
     id: 'currencyVariation',

@@ -72,6 +72,7 @@
   .chart-availability-policies .card-percent-list {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: ($global-spacing * 2) $global-spacing;
+    padding: 0 ($global-spacing * 2);
 
     @include media(xlarge-up) {
       grid-template-columns: repeat(6, 1fr);
@@ -91,9 +92,5 @@
 
   .info-card--light {
     padding: 0;
-  }
-
-  .card-percent-list {
-    padding: 0 ($global-spacing * 2);
   }
 }
