@@ -18,6 +18,7 @@ const notifier = require('node-notifier')
 const historyApiFallback = require('connect-history-api-fallback')
 const runSequence = require('run-sequence')
 const through2 = require('through2')
+const autoprefixer = require('autoprefixer')
 
 // /////////////////////////////////////////////////////////////////////////////
 // --------------------------- Variables -------------------------------------//
@@ -247,6 +248,7 @@ gulp.task('styles', function () {
       },
       includePaths: require('bourbon').includePaths.concat('node_modules/jeet')
     }))
+    .pipe($.postcss([ autoprefixer({ grid: true }) ]))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/assets/styles'))
     // https://browsersync.io/docs/gulp#gulp-sass-maps
