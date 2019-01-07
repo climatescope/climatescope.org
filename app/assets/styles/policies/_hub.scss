@@ -9,13 +9,8 @@
 }
 
 .pol-controls {
-  > * {
-    grid-column: auto / span 3;
-    margin: 0;
-  }
-
   .form__actions {
-    justify-self: end;
+    justify-content: flex-end;
   }
 }
 
