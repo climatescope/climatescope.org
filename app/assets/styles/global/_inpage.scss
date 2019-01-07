@@ -400,7 +400,7 @@
 }
 
 .col--sec {
-  grid-column: auto / span 4;
+  grid-column: 9 / span 4;
 }
 
 .col--full {
@@ -408,8 +408,16 @@
 }
 
 .col--diptic {
-  grid-column: auto / span 6;
-  grid-row: 1 / auto;
+  grid-column-end: span 6;
+  grid-row-start: 1;
+
+  &:nth-child(1) {
+    grid-column-start: 1;
+  }
+
+  &:nth-child(2) {
+    grid-column-start: 7;
+  }
 }
 
 .blk {
