@@ -61,8 +61,20 @@
 }
 
 .control {
-  grid-column: auto / span 4;
-  grid-row: 2 / auto;
+  grid-column-end: span 4;
+  grid-row-start: 2;
+
+  &.param-1 {
+    grid-column-start: 1;
+  }
+
+  &.param-2 {
+    grid-column-start: 5;
+  }
+
+  &.param-3 {
+    grid-column-start: 9;
+  }
 }
 
 .control__title {

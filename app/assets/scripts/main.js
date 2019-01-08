@@ -1,5 +1,6 @@
 'use strict'
 import 'babel-polyfill'
+import 'isomorphic-fetch'
 import React from 'react'
 import ReactGA from 'react-ga'
 import { render } from 'react-dom'

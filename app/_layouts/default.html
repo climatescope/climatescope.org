@@ -11,7 +11,7 @@
     <!-- endbuild -->
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Titillium+Web:400,400i,700,700i" />
-   
+
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
@@ -58,6 +58,13 @@
   </head>
   <body>
     <div id="app-container"><!-- Content via React App --></div>
+
+    <script>
+      var ua = window.navigator.userAgent;
+      if (ua.indexOf('MSIE ') > 0 || ua.indexOf('Trident/') > 0) {
+        document.body.className = 'ie11-fix'
+      }
+    </script>
 
     <!-- build:js /assets/scripts/vendor.js -->
     <script src="/assets/scripts/vendor.js"></script>

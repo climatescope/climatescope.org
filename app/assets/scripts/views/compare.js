@@ -15,12 +15,16 @@ import { compareLayoutDef } from '../utils/geographies-layout'
 import {
   ParCard,
   getChartDef,
+  getChildrenType,
+  reconcileGroupChartData,
   renderParCardError,
   reconcileChartData,
   renderParCardAbsolute,
   renderParCardAnswer,
   renderParCardPercent,
-  renderParCardRange
+  renderParCardRange,
+  renderParCardAnswerGroup,
+  renderParCardPercentGroup
 } from '../components/geography-params'
 
 import App from './app'
@@ -376,9 +380,22 @@ class GeographyCompare extends React.PureComponent {
 
                 // Group elements mut be handled differently.
                 if (chartDef.type === 'group') {
-                  // Not implemented. If need check the implementation in
-                  // geography-params.js
-                  throw new Error(`Unable to render chart group [${chartDef.id}]`)
+                  // Get all children.
+                  const chartDefChildren = getChartDef(chartsMeta, chartDef.children, layoutDef.id)
+                  const childrenType = getChildrenType(chartDef.id, chartDefChildren)
+
+                  const reconciledData = reconcileGroupChartData(layoutDef, chartDef, chartDefChildren, source.charts, source.iso)
+
+                  // Children are all the same type. Render based off of that
+                  switch (childrenType) {
+                    case 'answer':
+                      return renderParCardAnswerGroup(reconciledData)
+                    case 'percent':
+                      return renderParCardPercentGroup(reconciledData)
+                    default:
+                      console.warn(`Unable to render children type [${childrenType}] for chart group [${chartDef.id}]`)
+                      throw new Error(`Unable to render children type [${childrenType}] for chart group [${chartDef.id}]`)
+                  }
                 } else {
                   // Reconcile chart data, i.e. merge all in an object.
                   const reconciledData = reconcileChartData(layoutDef, chartDef, source.charts, source)

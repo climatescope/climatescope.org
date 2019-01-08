@@ -60,6 +60,10 @@ a.card__contents {
 
   .link-wrapper {
     display: block;
+
+    &:active {
+      transform: none;
+    }
   }
 
   img {
@@ -170,7 +174,7 @@ a.card__contents {
    ========================================================================== */
 
 .card__body {
-  flex: 1;
+  flex: 1 0 auto;
   width: 100%;
   margin-bottom: 1.5rem;
 
@@ -244,4 +248,40 @@ a.card__contents {
 
 .card--featured a .card__subtitle {
   color: inherit;
+}
+
+.card--tool {
+  .card__header {
+    @extend .antialiased;
+    position: relative;
+    overflow: hidden;
+    margin: (- $global-spacing * 1.5) (- $global-spacing * 1.5) $global-spacing (- $global-spacing * 1.5);
+    padding: ($global-spacing * 1.5);
+    min-height: 10rem;
+    align-items: flex-end;
+    color: #fff;
+    text-shadow: 0 0 8px rgba($base-color, 0.64);
+  }
+
+  .card__headline {
+    position: relative;
+    z-index: 2;
+  }
+
+  .card__media,
+  .card__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    margin: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
