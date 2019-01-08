@@ -138,8 +138,8 @@ export default class MBPopover extends React.PureComponent {
     const display = {
       show: true,
       markerData: data,
-      markerX: pos.x,
-      markerY: pos.y,
+      markerX: pos.left,
+      markerY: pos.top,
       markerW: pos.width,
       markerH: pos.height
     }
