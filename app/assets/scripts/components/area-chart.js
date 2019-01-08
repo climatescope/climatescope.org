@@ -341,14 +341,14 @@ class AreaChart extends React.Component {
 
     const year = hoverDateValue.getFullYear()
 
-    const { x, y, width } = this.componentEl.getBoundingClientRect()
+    const { left, top, width } = this.componentEl.getBoundingClientRect()
     const matrix = dataCanvas.node().getScreenCTM()
       .translate(xScale(hoverDateValue) + innerLeft, 0)
 
     const popoverWidth = 288
     const popoverBisectorMargin = 16
-    let posY = matrix.f - y + 48 // 3rem top margin
-    let posX = matrix.e - x
+    let posY = matrix.f - top + 48 // 3rem top margin
+    let posX = matrix.e - left
 
     let dirClassName
 

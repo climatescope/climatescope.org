@@ -7,11 +7,26 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: ($global-spacing) ($global-spacing * 2);
-  align-items: end;
 
   > * {
-    grid-column: auto / span 3;
     margin: 0;
+    grid-column-end: span 3;
+
+    &:nth-child(1) {
+      grid-column-start: 1;
+    }
+
+    &:nth-child(2) {
+      grid-column-start: 4;
+    }
+
+    &:nth-child(3) {
+      grid-column-start: 7;
+    }
+
+    &:nth-child(4) {
+      grid-column-start: 10;
+    }
   }
 
   .form__label {
@@ -22,6 +37,11 @@
   }
 
   .form__actions {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+
     > *:not(:last-child) {
       margin-right: $global-spacing / 4;
     }

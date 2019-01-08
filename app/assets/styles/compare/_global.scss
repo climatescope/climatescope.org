@@ -8,6 +8,12 @@
   }
 }
 
+.compare-controls {
+  .form__actions {
+    justify-content: flex-start;
+  }
+}
+
 .compare--entry__subtitle {
   @extend .heading-alt;
   font-size: 0.875rem;
