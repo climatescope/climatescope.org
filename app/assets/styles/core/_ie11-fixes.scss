@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Core: IE11 Fixes
+   ========================================================================== */
+
+.ie11-fix {
+
+  .card-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 0 ($global-spacing * 2) 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    > * {
+      margin: ($global-spacing * 2) 0 0 0;
+      width: calc(100% / 2 - #{$global-spacing});
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+
+      @include media(large-up) {
+        width: calc(100% / 3 - (#{$global-spacing} * 4 / 3));
+
+        &:nth-child(3) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .col--sec {
+    .card-list__item {
+      width: 100%;
+      margin: ($global-spacing * 2) 0 0 0;
+
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .inpage--library {
+    .col--main {
+      grid-row-start: 1;
+    }
+
+    .col--sec {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-column-end: span 12;
+
+      @include media(large-up) {
+        grid-row-start: 1;
+        grid-column-start: 10;
+        grid-column-end: span 3;
+      }
+
+      .card-list__item {
+        margin: ($global-spacing * 2) 0 0 0;
+        width: calc(100% / 2 - #{$global-spacing});
+
+        &:nth-child(1) {
+          margin-top: 0;
+        }
+
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+
+        @include media(large-up) {
+          width: 100%;
+
+          &:nth-child(2) {
+            margin-top: $global-spacing * 2;
+          }
+        }
+      }
+    }
+  }
+
+}
