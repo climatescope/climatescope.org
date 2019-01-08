@@ -105,4 +105,59 @@
     }
   }
 
+  .par-section__contents {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .par-section__header {
+    margin: $global-spacing;
+
+    @include media(large-up) {
+      max-width: 75%;
+    }
+  }
+
+  .area-alpha,
+  .area-beta {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .info-card {
+    margin: $global-spacing;
+  }
+
+  .info-card--small {
+    width: calc(100% / 2 - #{$global-spacing * 2});
+  }
+
+  .info-card--medium {
+    width: 100%;
+  }
+
+  .info-card--large {
+    width: 100%;
+  }
+
+  .card-percent-list {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+
+    > * {
+      margin: 0 ($global-spacing / 2);
+      flex: 1 1 auto;
+    }
+  }
+
+  .compare--entry .par-section {
+    display: block;
+
+    .info-card {
+      width: calc(100% - #{$global-spacing * 2});
+      margin: ($global-spacing * 2) $global-spacing;
+    }
+  }
+
 }
