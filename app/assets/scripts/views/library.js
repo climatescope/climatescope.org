@@ -73,9 +73,9 @@ class Library extends React.Component {
               <div className='col--main'>
 
                 <h2>Insights</h2>
-                <ul className='library__list'>
+                <ul className='card-list'>
                   {medium.pages.map(({ url, title, label, description }) => (
-                    <li key={url} className='library__list-item'>
+                    <li key={url} className='card-list__item'>
                       <MediumCategoryCard
                         url={url}
                         linkTitle={title}
@@ -87,8 +87,8 @@ class Library extends React.Component {
                 </ul>
 
                 <h2>Reports</h2>
-                <ul className='library__list library__list--small'>
-                  <li className='library__list-item'>
+                <ul className='card-list'>
+                  <li className='card-list__item'>
                     <ReportCard
                       isFeatured
                       report={downloadData.current.report}
@@ -96,7 +96,7 @@ class Library extends React.Component {
                     />
                   </li>
                   {downloadData.previous.map(({ report, model }) => (
-                    <li key={report.url} className='library__list-item'>
+                    <li key={report.url} className='card-list__item'>
                       <ReportCard
                         report={report}
                         model={model}
@@ -108,9 +108,9 @@ class Library extends React.Component {
 
               <div className='col--sec tools'>
                 <h2>Tools</h2>
-                <ul className='library__list tool'>
+                <ul className='card-list'>
                   {tools.map(({ url, title, label, description, image }) => (
-                    <li key={url} className='library__list-item tool'>
+                    <li key={url} className='card-list__item'>
                       <ToolCard
                         url={url}
                         linkTitle={title}
