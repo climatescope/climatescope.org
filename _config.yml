@@ -7,7 +7,7 @@ baseurl: //global-climatescope.org
 
 appTitle: 'Climatescope'
 appEdition: 2018
-appDescription: 'The Climatescope a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.'
+appDescription: 'Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment conditions for clean energy in emerging markets.'
 
 kramdown:
   input: GFM
