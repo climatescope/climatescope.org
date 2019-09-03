@@ -13,6 +13,8 @@ import { initializeArrayWithRange } from '../utils/array'
 import App from './app'
 import { MediumCard, ToolCard } from '../components/lib-card'
 
+const mediumPosts = require('../../data/cs-medium-latest.json')
+
 class Home extends React.Component {
   constructor (props) {
     super(props)
@@ -23,21 +25,13 @@ class Home extends React.Component {
   }
 
   componentDidMount () {
-    this.props.fetchMediumPosts()
   }
 
   renderMediumPosts () {
-    const { isReady, getData, hasError } = this.props.mediumPosts
-    const posts = getData([])
-
-    if (hasError()) {
-      return <p>Something went wrong. Try again.</p>
-    }
-
     return (
       <ol className='card-list'>
-        {isReady() ? (
-          posts.slice(0, 9).map((post, i) => {
+        {
+          mediumPosts.slice(0, 9).map((post, i) => {
             // Get correct subtitle, based on tags.
             let subtitle = 'Explore'
             if (post.tags.find(t => t.id === 'off-grid')) {
@@ -60,13 +54,7 @@ class Home extends React.Component {
               </li>
             )
           })
-        ) : (
-          initializeArrayWithRange(2).map(i => (
-            <li key={i} className='card-list__item'>
-              <MediumCard isLoading />
-            </li>
-          ))
-        )}
+        }
       </ol>
     )
   }
@@ -164,23 +152,13 @@ investment?</h1>
 
 if (environment !== 'production') {
   Home.propTypes = {
-    fetchMediumPosts: T.func,
     location: T.object,
     history: T.object,
-    mediumPosts: T.object
   }
 }
 
-function mapStateToProps (state) {
-  return {
-    mediumPosts: wrapApiResult(state.medium.postList)
-  }
-}
+function mapStateToProps (state) { }
 
-function dispatcher (dispatch) {
-  return {
-    fetchMediumPosts: (...args) => dispatch(fetchMediumPosts(...args))
-  }
-}
+function dispatcher (dispatch) { }
 
 export default connect(mapStateToProps, dispatcher)(Home)
