@@ -23,6 +23,17 @@ export async function fetchJSON (url, options) {
   try {
     const response = await fetch(url, options)
     const json = await response.json()
+
+    if (response.status >= 400) {
+      const message = json.message ||
+        response.statusText ||
+        `Error with code ${response.status}`
+      const err = new Error(message)
+      err.statusCode = response.status
+      err.data = json
+      throw err
+    }
+
     return json
   } catch (error) {
     console.log('fetchJSON error', error)
