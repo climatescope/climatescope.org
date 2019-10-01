@@ -1,5 +1,38 @@
 [
   {
+    "id": "1d2b3c0d877f",
+    "title": "3Q 2019 OFF-GRID AND MINI-GRID MARKET OUTLOOK",
+    "url": "https://medium.com/climatescope/3q-2019-off-grid-and-mini-grid-market-outlook-1d2b3c0d877f",
+    "description": "Recent developments include an increasing number of applications for microgrids: at airports in the U.S. and elsewhere to minimize outages…",
+    "tags": [
+      {
+        "id": "energy",
+        "name": "Energy",
+        "url": "https://medium.com/tag/energy"
+      },
+      {
+        "id": "microgrid-industry",
+        "name": "Microgrid Industry",
+        "url": "https://medium.com/tag/microgrid-industry"
+      },
+      {
+        "id": "mini-grid",
+        "name": "Mini Grid",
+        "url": "https://medium.com/tag/mini-grid"
+      },
+      {
+        "id": "energy-access",
+        "name": "Energy Access",
+        "url": "https://medium.com/tag/energy-access"
+      },
+      {
+        "id": "zimbabwe",
+        "name": "Zimbabwe",
+        "url": "https://medium.com/tag/zimbabwe"
+      }
+    ]
+  },
+  {
     "id": "aabe027e9e9",
     "title": "2Q 2019 OFF-GRID AND MINI-GRID MARKET OUTLOOK",
     "url": "https://medium.com/climatescope/2q-2019-off-grid-and-mini-grid-market-outlook-aabe027e9e9",
@@ -173,24 +206,6 @@
     "title": "3Q 2018 OFF-GRID AND MINI-GRID MARKET OUTLOOK",
     "url": "https://medium.com/climatescope/3q-2018-off-grid-and-mini-grid-market-outlook-70ed47656c31",
     "description": "Microgrids and decentralized renewables are slowly moving from the fringes to the mainstream, marked by new first-of-their-kind projects…",
-    "tags": [
-      {
-        "id": "energy",
-        "name": "Energy",
-        "url": "https://medium.com/tag/energy"
-      },
-      {
-        "id": "off-grid",
-        "name": "Off Grid",
-        "url": "https://medium.com/tag/off-grid"
-      }
-    ]
-  },
-  {
-    "id": "4dcce9c0215e",
-    "title": "2Q 2018 OFF-GRID AND MINI-GRID MARKET OUTLOOK",
-    "url": "https://medium.com/climatescope/2q-2018-off-grid-and-mini-grid-market-outlook-4dcce9c0215e",
-    "description": "The fundamental outlook for decentralized energy in remote areas has improved, amid record PV shipments, rising diesel prices…",
     "tags": [
       {
         "id": "energy",
