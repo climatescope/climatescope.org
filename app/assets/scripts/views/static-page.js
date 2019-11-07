@@ -15,17 +15,17 @@ import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-ske
 import ShareOptions from '../components/share'
 
 class StaticPage extends React.Component {
-  componentDidMount () {
-    this.props.fetchPage(this.props.match.params.page)
+  componentDidMount() {
+    this.props.fetchPage(this.props.match.params.page, this.props.match.params.ctypes)
   }
 
-  componentDidUpdate (prevProps) {
+  componentDidUpdate(prevProps) {
     if (prevProps.match.params.page !== this.props.match.params.page) {
-      this.props.fetchPage(this.props.match.params.page)
+      this.props.fetchPage(this.props.match.params.page, this.props.match.params.ctypes)
     }
   }
 
-  render () {
+  render() {
     const { hasError, data, isReady, receivedAt } = this.props.page
     if (hasError()) {
       return <UhOh />
@@ -52,16 +52,16 @@ class StaticPage extends React.Component {
               {isReady() ? (
                 <DangerouslySetScriptContent key={receivedAt} dangerousContent={data.content} className={c('col', { 'col--main prose': !data.embedded, 'col--full': data.embedded })} />
               ) : (
-                <div className={c('col', { 'col--main prose': !data.embedded, 'col--full': data.embedded })}>
-                  <LoadingSkeletonGroup>
-                    <LoadingSkeleton width={1 / 3} />
-                    <LoadingSkeleton />
-                    <LoadingSkeleton />
-                    <LoadingSkeleton />
-                    <LoadingSkeleton width={3 / 4} />
-                  </LoadingSkeletonGroup>
-                </div>
-              )}
+                  <div className={c('col', { 'col--main prose': !data.embedded, 'col--full': data.embedded })}>
+                    <LoadingSkeletonGroup>
+                      <LoadingSkeleton width={1 / 3} />
+                      <LoadingSkeleton />
+                      <LoadingSkeleton />
+                      <LoadingSkeleton />
+                      <LoadingSkeleton width={3 / 4} />
+                    </LoadingSkeletonGroup>
+                  </div>
+                )}
             </div>
           </div>
 
@@ -79,13 +79,13 @@ if (environment !== 'production') {
   }
 }
 
-function mapStateToProps (state, props) {
+function mapStateToProps(state, props) {
   return {
     page: wrapApiResult(getFromState(state.staticPages, props.match.params.page))
   }
 }
 
-function dispatcher (dispatch) {
+function dispatcher(dispatch) {
   return {
     fetchPage: (...args) => dispatch(fetchPage(...args))
   }

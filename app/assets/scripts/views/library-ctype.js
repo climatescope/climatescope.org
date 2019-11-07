@@ -5,16 +5,19 @@ import { connect } from 'react-redux'
 import c from 'classnames'
 import ReactGA from 'react-ga'
 
+import { fetchLibraryContenType } from '../redux/libraryctypes'
+import { wrapApiResult, getFromState } from '../utils/utils'
 import { environment, baseurl } from '../config'
-import { downloadData,  tools,libraryCType } from '../utils/constants'
+import { tools } from '../utils/constants'
 
 import App from './app'
 import ShareOptions from '../components/share'
 import SmartLink from '../components/smart-link'
-import { MediumCategoryCard, ToolCard } from '../components/lib-card'
+import { ToolCard } from '../components/lib-card'
+
 
 class ReportCard extends React.PureComponent {
-  onDownloadClick (url) {
+  onDownloadClick(url) {
     const pieces = url.split('/')
     ReactGA.event({
       category: 'Data',
@@ -23,7 +26,7 @@ class ReportCard extends React.PureComponent {
     })
   }
 
-  render () {
+  render() {
     const { isFeatured, report, model } = this.props
     return (
       <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
@@ -52,15 +55,35 @@ if (environment !== 'production') {
   }
 }
 
-class Library extends React.Component {
-  render () {
+class LibraryCType extends React.Component {
+
+  componentDidMount() {
+    this.props.fetchLibraryContenType(this.props.match.params.ctypes)
+  }
+
+  renderNoResults() {
+    if (!this.props.libraryContenTypeList.isReady()) return null
+
+    if (!this.props.libraryContenTypeList.getData().length) {
+      return <p>No posts avaliable in this library.</p>
+    }
+  }
+  renderFatalError() {
+    return this.props.libraryContenTypeList.hasError()
+      ? <p>Something went wrong. Try again later.</p>
+      : null
+  }
+
+  render() {
+    const { isReady, hasError, getData } = this.props.libraryContenTypeList
+    const ctypesList = getData()
     return (
       <App pageTitle='Content Library' >
         <article className='inpage inpage--library'>
           <header className='inpage__header'>
             <div className='inner'>
               <div className='inpage__headline'>
-                <h1 className='inpage__title'>Content library</h1>
+                <h1 className='inpage__title'>Content library </h1>
               </div>
               <div className='inpage__actions'>
                 <ShareOptions url={window.location.toString()} />
@@ -71,38 +94,14 @@ class Library extends React.Component {
           <div className='inpage__body'>
             <div className='inner'>
               <div className='col--main'>
+              <h2>{this.props.match.params.ctypes.replace(/-/g, ' ')}</h2>
 
-                <h2>Insights</h2>
-                <ul className='card-list'>
-                  {libraryCType.pages.map(({ url, title, label, description }) => (
-                    <li key={url} className='card-list__item'>
-                      <MediumCategoryCard
-                        url={url}
-                        linkTitle={title}
-                        title={label}
-                        description={description}
-                      />
-                    </li>
-                  ))}
-                </ul>
+                {this.renderFatalError()}
 
-                <h2>Reports</h2>
+                {this.renderNoResults()}
+
                 <ul className='card-list'>
-                  <li className='card-list__item'>
-                    <ReportCard
-                      isFeatured
-                      report={downloadData.current.report}
-                      model={downloadData.current.model}
-                    />
-                  </li>
-                  {downloadData.previous.map(({ report, model }) => (
-                    <li key={report.url} className='card-list__item'>
-                      <ReportCard
-                        report={report}
-                        model={model}
-                      />
-                    </li>
-                  ))}
+                  {console.log(ctypesList)}
                 </ul>
               </div>
 
@@ -132,18 +131,22 @@ class Library extends React.Component {
 }
 
 if (environment !== 'production') {
-  Library.propTypes = {
+  LibraryCType.propTypes = {
+
   }
 }
 
-function mapStateToProps (state, props) {
+function mapStateToProps(state, props) {
   return {
-  }
-} 
-
-function dispatcher (dispatch) {
-  return {
+    libraryContenTypeList: wrapApiResult(getFromState(state.libraryct))
   }
 }
 
-export default connect(mapStateToProps, dispatcher)(Library)
+function dispatcher(dispatch) {
+  return {
+    fetchLibraryContenType: (...args) => dispatch(fetchLibraryContenType(...args))
+
+  }
+}
+
+export default connect(mapStateToProps, dispatcher)(LibraryCType)

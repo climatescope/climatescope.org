@@ -1,0 +1,20 @@
+---
+permalink: api/library/off-grid-quarterly.json
+published: true
+---
+{% assign comma = false %}
+{% assign posts = (site.pages) %}
+[
+{% for a in posts %}
+  {% unless post.hidden == true %}
+    {% if a.url contains 'api/library/off-grid-quarterly/' %}
+      {% if comma %},{% endif %}
+      {% assign comma = true %}
+      {
+        "title":"{{ a.title  }}",
+        "url":"{{ a.url }}"
+      }
+    {% endif %}
+  {% endunless %}
+{% endfor %}
+]
