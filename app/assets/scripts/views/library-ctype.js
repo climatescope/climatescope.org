@@ -6,14 +6,14 @@ import c from 'classnames'
 import ReactGA from 'react-ga'
 
 import { fetchLibraryContenType } from '../redux/libraryctypes'
-import { wrapApiResult, getFromState } from '../utils/utils'
+import { wrapApiResult } from '../utils/utils'
 import { environment, baseurl } from '../config'
 import { tools } from '../utils/constants'
 
 import App from './app'
 import ShareOptions from '../components/share'
 import SmartLink from '../components/smart-link'
-import { ToolCard } from '../components/lib-card'
+import { ToolCard, MediumCard } from '../components/lib-card'
 
 
 class ReportCard extends React.PureComponent {
@@ -73,6 +73,39 @@ class LibraryCType extends React.Component {
       ? <p>Something went wrong. Try again later.</p>
       : null
   }
+  renderMediumPosts(mediumPosts) {
+    return (
+      <ol className='card-list'>
+        {
+          Array.from(mediumPosts).map((post, i) => {
+            // Get correct subtitle, based on tags.
+            let subtitle = 'Explore'
+            if (post.tag) {
+              if (post.tags.find(t => t.id === 'off-grid')) {
+                subtitle = 'Market outlook'
+              } else if (post.tags.find(t => t.id === 'insights')) {
+                subtitle = 'Insight'
+              } else if (post.tags.find(t => t.id === 'updates')) {
+                subtitle = 'Updates'
+              }
+            }
+            return (
+              <li key={post.id} className='card-list__item'>
+                <MediumCard
+                  isFeatured={i === 0}
+                  title={post.title}
+                  subtitle={subtitle}
+                  url={post.url}
+                  description={post.description}
+                  tags={post.tags}
+                />
+              </li>
+            )
+          })
+        }
+      </ol>
+    )
+  }
 
   render() {
     const { isReady, hasError, getData } = this.props.libraryContenTypeList
@@ -94,15 +127,13 @@ class LibraryCType extends React.Component {
           <div className='inpage__body'>
             <div className='inner'>
               <div className='col--main'>
-              <h2>{this.props.match.params.ctypes.replace(/-/g, ' ')}</h2>
+                <h2>{this.props.match.params.ctypes.replace(/-/g, ' ')}</h2>
 
                 {this.renderFatalError()}
 
                 {this.renderNoResults()}
 
-                <ul className='card-list'>
-                  {console.log(ctypesList)}
-                </ul>
+                {this.renderMediumPosts(ctypesList)}
               </div>
 
               <div className='col--sec tools'>
@@ -138,7 +169,7 @@ if (environment !== 'production') {
 
 function mapStateToProps(state, props) {
   return {
-    libraryContenTypeList: wrapApiResult(getFromState(state.libraryct))
+    libraryContenTypeList: wrapApiResult(state.libraryct.list)
   }
 }
 

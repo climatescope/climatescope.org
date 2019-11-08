@@ -11,8 +11,13 @@ published: true
           {% if comma %},{% endif %}
           {% assign comma = true %}
           {
-            "title":"{{ post.title   }}",
-            "url":"{{ post.url }}"
+            "id":"{{ post.id }}",
+            "title":"{{ post.title }}",
+            "url":"{{ post.url }}",
+            "description":"{{ post.description }}",
+            "download":"{{ post.download_source }}",
+            "date":"{{ post.date }}",
+            "download_source":"{{ post.download_source }}"
           }
       {% endif %}
     {% endunless %}

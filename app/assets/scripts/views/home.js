@@ -6,14 +6,12 @@ import { Link } from 'react-router-dom'
 
 import { environment } from '../config'
 import { editions, downloadData, tools } from '../utils/constants'
-import { fetchMediumPosts } from '../redux/medium'
+import { fetchLibraryContenType } from '../redux/libraryctypes'
 import { wrapApiResult } from '../utils/utils'
-import { initializeArrayWithRange } from '../utils/array'
 
 import App from './app'
 import { MediumCard, ToolCard } from '../components/lib-card'
 
-const mediumPosts = require('../../data/cs-medium-latest.json')
 
 class Home extends React.Component {
   constructor (props) {
@@ -25,21 +23,24 @@ class Home extends React.Component {
   }
 
   componentDidMount () {
+    this.props.fetchInsight('insights')
   }
 
-  renderMediumPosts () {
+  renderMediumPosts (insights) {
     return (
       <ol className='card-list'>
         {
-          mediumPosts.slice(0, 9).map((post, i) => {
+          Array.from(insights).slice(0, 9).map((post, i) => {
             // Get correct subtitle, based on tags.
             let subtitle = 'Explore'
-            if (post.tags.find(t => t.id === 'off-grid')) {
-              subtitle = 'Market outlook'
-            } else if (post.tags.find(t => t.id === 'insights')) {
-              subtitle = 'Insight'
-            } else if (post.tags.find(t => t.id === 'updates')) {
-              subtitle = 'Updates'
+            if(post.tag){
+              if (post.tags.find(t => t.id === 'off-grid')) {
+                subtitle = 'Market outlook'
+              } else if (post.tags.find(t => t.id === 'insights')) {
+                subtitle = 'Insight'
+              } else if (post.tags.find(t => t.id === 'updates')) {
+                subtitle = 'Updates'
+              }
             }
             return (
               <li key={post.id} className='card-list__item'>
@@ -60,6 +61,8 @@ class Home extends React.Component {
   }
 
   render () {
+    const { isReady, hasError, getData } = this.props.insightList
+    const ctypesList = getData()
     return (
       <App className='page--has-hero'>
         <section className='inpage inpage--home'>
@@ -93,10 +96,10 @@ investment?</h1>
                       <h1 className='fsection__title'>Insights</h1>
                     </div>
                     <div className='fsection__actions'>
-                      <a href='https://medium.com/climatescope' title='View all insights' className='fsa-go'><span>View all</span></a>
+                      <a href='/library/insights' title='View all insights' className='fsa-go'><span>View all</span></a>
                     </div>
                   </header>
-                  {this.renderMediumPosts()}
+                  {this.renderMediumPosts(ctypesList)}
                 </section>
               </div>
               <div className='col--sec'>
@@ -157,8 +160,17 @@ if (environment !== 'production') {
   }
 }
 
-function mapStateToProps (state) { }
+function mapStateToProps (state) {
+  return {
+    insightList: wrapApiResult(state.libraryct.list)
+  }
+ }
 
-function dispatcher (dispatch) { }
+function dispatcher (dispatch) { 
+  return {
+    fetchInsight: (...args) => dispatch(fetchLibraryContenType(...args))
+
+  }
+}
 
 export default connect(mapStateToProps, dispatcher)(Home)

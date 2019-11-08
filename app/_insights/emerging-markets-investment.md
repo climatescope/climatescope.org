@@ -1,10 +1,12 @@
 ---
 layout: page
+permalink: api/library/insights/Emerging-Markets-Clean-Energy-Investment.json
 title: Emerging Markets Clean Energy Investment
+id: Emerging-Markets-Clean-Energy-Investment
 description: Since 2010, emerging markets have accounted for a larger share of global clean energy investment than the rest of the world combined. But fund flows have recently slowed. This analysis explores why.
 published: true
 download_source: /en/download/insights/climatescope-2017-clean-energy-investment.pdf
-permalink: api/library/insights/climatescope-2017-clean-energy-investment.json
+
 featured: true
 frontpage_order: 30
 ---

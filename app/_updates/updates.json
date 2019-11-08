@@ -7,14 +7,19 @@ published: true
 [
   {% for post in posts %}
     {% unless post.hidden == true %}
-    {% if post.url contains 'api/library/insights/' %}
-    {% if comma %},{% endif %}
-    {% assign comma = true %}
-    {
-      "title":"{{ post.title   }}",
-      "url":"{{ post.url }}"
-    }
-{% endif %}
+      {% if post.url contains 'api/library/updates/' %}
+          {% if comma %},{% endif %}
+          {% assign comma = true %}
+          {
+            "id":"{{ post.id }}",
+            "title":"{{ post.title }}",
+            "url":"{{ post.url }}",
+            "description":"{{ post.description }}",
+            "download":"{{ post.download_source }}",
+            "date":"{{ post.date }}",
+            "download_source":"{{ post.download_source }}"
+          }
+      {% endif %}
     {% endunless %}
   {% endfor %}
-  ]
+]

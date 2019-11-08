@@ -30,6 +30,15 @@ export function fetchLibraryContenType (ctype) {
     url: `${baseurl}/api/library/${ctype}.json`,
     requestFn: requestLibraryContenType,
     receiveFn: receiveLibraryContenType,
+    mutator: (response) => {
+      return response.map(r => {
+        const url = r.url.replace('api/','').replace('.json','')
+        return {
+          ...r,
+          url
+        }
+      })
+    }
   })
 }
 

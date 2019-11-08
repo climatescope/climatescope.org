@@ -139,7 +139,7 @@ export const MediumCard = (props) => (
   <LibCard {...props} footerTitle='Explore the tool'>
     {!props.isLoading && (
       <LibCardFooter>
-        {props.tags.length && (
+        {props.tags && (
           <>
             <h2 className='visually-hidden'>Topics</h2>
             <ul className='topics-list'>
