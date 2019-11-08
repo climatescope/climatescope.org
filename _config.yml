@@ -19,3 +19,12 @@ kramdown:
 collections:
   pages:
     output: true
+  
+  insights:
+    output: true
+  
+  off-grid-quarterly:
+    output: true
+  
+  updates:
+    output: true

@@ -1,0 +1,20 @@
+---
+permalink: api/library/updates.json
+published: true
+---
+{% assign comma = false %}
+{% assign posts = (site.updates) %}
+[
+  {% for post in posts %}
+    {% unless post.hidden == true %}
+    {% if post.url contains 'api/library/insights/' %}
+    {% if comma %},{% endif %}
+    {% assign comma = true %}
+    {
+      "title":"{{ post.title   }}",
+      "url":"{{ post.url }}"
+    }
+{% endif %}
+    {% endunless %}
+  {% endfor %}
+  ]
