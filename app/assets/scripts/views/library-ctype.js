@@ -6,7 +6,7 @@ import c from 'classnames'
 import ReactGA from 'react-ga'
 
 import { fetchLibraryContenType } from '../redux/libraryctypes'
-import { wrapApiResult } from '../utils/utils'
+import { wrapApiResult ,getFromState} from '../utils/utils'
 import { environment, baseurl } from '../config'
 import { tools } from '../utils/constants'
 
@@ -169,8 +169,7 @@ if (environment !== 'production') {
 
 function mapStateToProps(state, props) {
   return {
-    libraryContenTypeList: wrapApiResult(state.libraryct.list)
-  }
+    libraryContenTypeList: wrapApiResult(state.libraryct.list,props.match.params.ctypes)  }
 }
 
 function dispatcher(dispatch) {
