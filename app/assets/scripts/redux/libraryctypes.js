@@ -12,24 +12,24 @@ export const REQUEST_LIBRARY_CONTENTYPE = 'REQUEST_LIBRARY_CONTENTYPE'
 export const RECEIVE_LIBRARY_CONTENTYPE = 'RECEIVE_LIBRARY_CONTENTYPE'
 export const INVALIDATE_LIBRARY_CONTENTYPE = 'INVALIDATE_LIBRARY_CONTENTYPE'
 
-export function invalidateLibraryContenType(ctype) {
-  return { type: INVALIDATE_LIBRARY_CONTENTYPE, ctype }
+export function invalidateLibraryContenType (id) {
+  return { type: INVALIDATE_LIBRARY_CONTENTYPE, id }
 }
 
-export function requestLibraryContenType(ctype) {
-  return { type: REQUEST_LIBRARY_CONTENTYPE, ctype }
+export function requestLibraryContenType (id) {
+  return { type: REQUEST_LIBRARY_CONTENTYPE, id }
 }
 
-export function receiveLibraryContenType(ctype, data, error = null) {
-  return { type: RECEIVE_LIBRARY_CONTENTYPE, ctype, data, error, receivedAt: Date.now() }
+export function receiveLibraryContenType (id, data, error = null) {
+  return { type: RECEIVE_LIBRARY_CONTENTYPE, id, data, error, receivedAt: Date.now() }
 }
 
-export function fetchLibraryContenType(ctype) {
+export function fetchLibraryContenType (id) {
   return fetchDispatchCacheFactory({
-    statePath: ['libraryct.list', ctype],
-    url: `${baseurl}/api/library/${ctype}.json`,
-    requestFn: requestLibraryContenType.bind(null, ctype),
-    receiveFn: receiveLibraryContenType.bind(null, ctype),
+    statePath: ['libraryct.list', id],
+    url: `${baseurl}/api/library/${id}.json`,
+    requestFn: requestLibraryContenType.bind(null, id),
+    receiveFn: receiveLibraryContenType.bind(null, id),
     mutator: (response) => {
       return response.map(r => {
         const url = r.url.replace('api/', '').replace('.json', '')
@@ -53,7 +53,7 @@ const libraryContenTypeReducerInitialState = {
   data: {}
 }
 
-function libraryContenTypeReducer(state = libraryContenTypeReducerInitialState, action) {
+function libraryContenTypeReducer (state = libraryContenTypeReducerInitialState, action) {
   return baseAPIReducer(state, action, 'LIBRARY_CONTENTYPE')
 }
 // /////////////////////////////////////////////////////////////////////////////
@@ -61,5 +61,5 @@ function libraryContenTypeReducer(state = libraryContenTypeReducerInitialState, 
 // /////////////////////////////////////////////////////////////////////////////
 
 export default combineReducers({
-  list: libraryContenTypeReducer,
+  list: libraryContenTypeReducer
 })

@@ -3,11 +3,10 @@ permalink: api/library/off-grid-quarterly.json
 published: true
 ---
 {% assign comma = false %}
-{% assign posts = (site.off-grid-quarterly) %}
+{% assign posts = site.off-grid-quarterly %}
 [
 {% for post in posts %}
   {% unless post.hidden == true %}
-  {% if post.url contains 'api/library/off-grid-quarterly/' %}
   {% if comma %},{% endif %}
   {% assign comma = true %}
   {
@@ -19,7 +18,6 @@ published: true
     "date":"{{ post.date }}",
     "download_source":"{{ post.download_source }}"
   }
-{% endif %}
 {% endunless %}
 {% endfor %}
 ]

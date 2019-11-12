@@ -7,11 +7,10 @@ import { Link } from 'react-router-dom'
 import { environment } from '../config'
 import { editions, downloadData, tools } from '../utils/constants'
 import { fetchLibraryContenType } from '../redux/libraryctypes'
-import { wrapApiResult } from '../utils/utils'
+import { wrapApiResult, getFromState } from '../utils/utils'
 
 import App from './app'
 import { MediumCard, ToolCard } from '../components/lib-card'
-
 
 class Home extends React.Component {
   constructor (props) {
@@ -33,7 +32,7 @@ class Home extends React.Component {
           Array.from(insights).slice(0, 9).map((post, i) => {
             // Get correct subtitle, based on tags.
             let subtitle = 'Explore'
-            if(post.tag){
+            if (post.tag) {
               if (post.tags.find(t => t.id === 'off-grid')) {
                 subtitle = 'Market outlook'
               } else if (post.tags.find(t => t.id === 'insights')) {
@@ -156,17 +155,17 @@ investment?</h1>
 if (environment !== 'production') {
   Home.propTypes = {
     location: T.object,
-    history: T.object,
+    history: T.object
   }
 }
 
 function mapStateToProps (state) {
   return {
-    insightList: wrapApiResult(state.libraryct.list)
+    insightList: wrapApiResult(getFromState(state.libraryct.list, 'insights'))
   }
- }
+}
 
-function dispatcher (dispatch) { 
+function dispatcher (dispatch) {
   return {
     fetchInsight: (...args) => dispatch(fetchLibraryContenType(...args))
 

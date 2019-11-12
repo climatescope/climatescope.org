@@ -1,7 +1,7 @@
 ---
 layout: page
 published: true 
-postId: PAYG-solar
+id: PAYG-solar
 title: How Can Pay-as-Go Solar Be Financed?
 permalink: api/library/updates/PAYG-solar.json
 description: Test blog post description

@@ -6,7 +6,7 @@ import c from 'classnames'
 import ReactGA from 'react-ga'
 
 import { environment, baseurl } from '../config'
-import { downloadData,  tools,libraryCType } from '../utils/constants'
+import { downloadData, tools, libraryCType } from '../utils/constants'
 
 import App from './app'
 import ShareOptions from '../components/share'
@@ -139,7 +139,7 @@ if (environment !== 'production') {
 function mapStateToProps (state, props) {
   return {
   }
-} 
+}
 
 function dispatcher (dispatch) {
   return {

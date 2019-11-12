@@ -1,7 +1,7 @@
 ---
 layout: page
 published: true 
-postId: Jordan-Maan-Development-Area
+id: Jordan-Maan-Development-Area
 title: HOW RENEWABLE ENERGY CAN BOLSTER THE ECONOMY IN JORDAN
 permalink: api/library/updates/Jordan-Maan-Development-Area.json
 description: HOW RENEWABLE ENERGY CAN BOLSTER THE ECONOMY IN JORDAN

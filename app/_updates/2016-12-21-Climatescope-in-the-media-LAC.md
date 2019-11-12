@@ -1,6 +1,6 @@
 ---
 layout: page
-postId: Climatescope-in-the-media-LAC
+id: Climatescope-in-the-media-LAC
 title: Climatescope in the media - Latin America highlights
 permalink: api/library/updates/Climatescope-in-the-media-LAC.json
 description: 

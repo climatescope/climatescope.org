@@ -1,6 +1,6 @@
 ---
 layout: page
-postId: climatescope-2016-launch-pt
+id: climatescope-2016-launch-pt
 title: "Press Release: Com novos compromissos e projetos, países em desenvolvimento assumem a liderança global de energia limpa"
 permalink: api/library/updates/climatescope-2016-launch-pt.json
 weight: 3

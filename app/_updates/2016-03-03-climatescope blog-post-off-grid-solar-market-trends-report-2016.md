@@ -1,7 +1,7 @@
 ---
 layout: page
 published: false 
-postId: blog-post
+id: blog-post
 title: blog post
 permalink: api/library/updates/blog-post.json
 description: Off-grid solar market trends
@@ -33,16 +33,3 @@ Between cost reductions, latent consumer demand and a sales-driven push for high
 
 
 _This report was commissioned by Lighting Global, a joint initiative of IFC and the World Bank. It was produced by Lighting Global and Bloomberg New Energy Finance in partnership with the Global Off-Grid Lighting Association. For more information, please visit [HERE](https://www.lightingglobal.org/launch-of-off-grid-solar-market-trends-report-2016/)._
-
-
-
-
-
-
-
-
-
-
-
-
-

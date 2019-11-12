@@ -14,19 +14,28 @@ import DangerouslySetScriptContent from '../components/dangerous-script-content'
 import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-skeleton'
 import ShareOptions from '../components/share'
 
+const statePathFromUrl = (params) => {
+  return params.ctypes ? `library/${params.ctypes}/${params.page}` : params.page
+}
+
 class StaticPage extends React.Component {
-  componentDidMount() {
-    this.props.fetchPage(this.props.match.params.page, this.props.match.params.ctypes)
+  componentDidMount () {
+    const page = statePathFromUrl(this.props.match.params)
+    this.props.fetchPage(page)
   }
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.match.params.page !== this.props.match.params.page) {
-      this.props.fetchPage(this.props.match.params.page, this.props.match.params.ctypes)
+  componentDidUpdate (prevProps) {
+    const prevPage = statePathFromUrl(prevProps.match.params)
+    const page = statePathFromUrl(this.props.match.params)
+
+    if (prevPage !== page) {
+      this.props.fetchPage(page)
     }
   }
 
-  render() {
-    const { hasError, data, isReady, receivedAt } = this.props.page
+  render () {
+    const page = statePathFromUrl(this.props.match.params)
+    const { hasError, data, isReady, receivedAt } = this.props[page]
     if (hasError()) {
       return <UhOh />
     }
@@ -52,16 +61,16 @@ class StaticPage extends React.Component {
               {isReady() ? (
                 <DangerouslySetScriptContent key={receivedAt} dangerousContent={data.content} className={c('col', { 'col--main prose': !data.embedded, 'col--full': data.embedded })} />
               ) : (
-                  <div className={c('col', { 'col--main prose': !data.embedded, 'col--full': data.embedded })}>
-                    <LoadingSkeletonGroup>
-                      <LoadingSkeleton width={1 / 3} />
-                      <LoadingSkeleton />
-                      <LoadingSkeleton />
-                      <LoadingSkeleton />
-                      <LoadingSkeleton width={3 / 4} />
-                    </LoadingSkeletonGroup>
-                  </div>
-                )}
+                <div className={c('col', { 'col--main prose': !data.embedded, 'col--full': data.embedded })}>
+                  <LoadingSkeletonGroup>
+                    <LoadingSkeleton width={1 / 3} />
+                    <LoadingSkeleton />
+                    <LoadingSkeleton />
+                    <LoadingSkeleton />
+                    <LoadingSkeleton width={3 / 4} />
+                  </LoadingSkeletonGroup>
+                </div>
+              )}
             </div>
           </div>
 
@@ -79,13 +88,14 @@ if (environment !== 'production') {
   }
 }
 
-function mapStateToProps(state, props) {
+function mapStateToProps (state, props) {
+  const page = statePathFromUrl(props.match.params)
   return {
-    page: wrapApiResult(getFromState(state.staticPages, props.match.params.page))
+    [page]: wrapApiResult(getFromState(state.staticPages, page))
   }
 }
 
-function dispatcher(dispatch) {
+function dispatcher (dispatch) {
   return {
     fetchPage: (...args) => dispatch(fetchPage(...args))
   }

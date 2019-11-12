@@ -23,10 +23,10 @@ export function receivePage (id, data, error = null) {
   return { type: RECEIVE_PAGE, id, data, error, receivedAt: Date.now() }
 }
 
-export function fetchPage (page=null,ctypes=null) {
+export function fetchPage (page = null) {
   return fetchDispatchCacheFactory({
     statePath: ['staticPages', page],
-    url: ctypes? `${baseurl}/api/library/${ctypes}/${page}.json`: `${baseurl}/api/${page}.json`,
+    url: `${baseurl}/api/${page}.json`,
     requestFn: requestPage.bind(this, page),
     receiveFn: receivePage.bind(this, page)
   })

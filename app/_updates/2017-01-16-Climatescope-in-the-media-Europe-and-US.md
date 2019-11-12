@@ -1,6 +1,6 @@
 ---
 layout: page
-postId: Climatescope-in-the-media-Europe-and-US-highlights
+id: Climatescope-in-the-media-Europe-and-US-highlights
 title: Climatescope in the Media – Europe and US Highlights
 permalink: api/library/updates/Climatescope-in-the-media-Europe-and-US-highlights.json
 description: 
@@ -186,4 +186,3 @@ description:
 <strong> GreenBiz, 6 January 2017 </strong>
 
 <a href="http://bit.ly/2iYxPQA">The 13 top energy developments of 2016 </a>
-

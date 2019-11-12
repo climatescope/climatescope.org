@@ -6,7 +6,7 @@ import c from 'classnames'
 import ReactGA from 'react-ga'
 
 import { fetchLibraryContenType } from '../redux/libraryctypes'
-import { wrapApiResult ,getFromState} from '../utils/utils'
+import { wrapApiResult, getFromState } from '../utils/utils'
 import { environment, baseurl } from '../config'
 import { tools } from '../utils/constants'
 
@@ -15,9 +15,8 @@ import ShareOptions from '../components/share'
 import SmartLink from '../components/smart-link'
 import { ToolCard, MediumCard } from '../components/lib-card'
 
-
 class ReportCard extends React.PureComponent {
-  onDownloadClick(url) {
+  onDownloadClick (url) {
     const pieces = url.split('/')
     ReactGA.event({
       category: 'Data',
@@ -26,7 +25,7 @@ class ReportCard extends React.PureComponent {
     })
   }
 
-  render() {
+  render () {
     const { isFeatured, report, model } = this.props
     return (
       <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
@@ -56,24 +55,23 @@ if (environment !== 'production') {
 }
 
 class LibraryCType extends React.Component {
-
-  componentDidMount() {
+  componentDidMount () {
     this.props.fetchLibraryContenType(this.props.match.params.ctypes)
   }
 
-  renderNoResults() {
+  renderNoResults () {
     if (!this.props.libraryContenTypeList.isReady()) return null
 
     if (!this.props.libraryContenTypeList.getData().length) {
       return <p>No posts avaliable in this library.</p>
     }
   }
-  renderFatalError() {
+  renderFatalError () {
     return this.props.libraryContenTypeList.hasError()
       ? <p>Something went wrong. Try again later.</p>
       : null
   }
-  renderMediumPosts(mediumPosts) {
+  renderMediumPosts (mediumPosts) {
     return (
       <ol className='card-list'>
         {
@@ -107,7 +105,7 @@ class LibraryCType extends React.Component {
     )
   }
 
-  render() {
+  render () {
     const { isReady, hasError, getData } = this.props.libraryContenTypeList
     const ctypesList = getData()
     return (
@@ -167,12 +165,12 @@ if (environment !== 'production') {
   }
 }
 
-function mapStateToProps(state, props) {
+function mapStateToProps (state, props) {
   return {
-    libraryContenTypeList: wrapApiResult(state.libraryct.list,props.match.params.ctypes)  }
+    libraryContenTypeList: wrapApiResult(getFromState(state.libraryct.list, props.match.params.ctypes)) }
 }
 
-function dispatcher(dispatch) {
+function dispatcher (dispatch) {
   return {
     fetchLibraryContenType: (...args) => dispatch(fetchLibraryContenType(...args))
 

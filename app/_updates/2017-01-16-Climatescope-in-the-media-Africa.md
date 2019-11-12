@@ -1,6 +1,6 @@
 ---
 layout: page
-postId: Climatescope-in-the-media-Africa
+id: Climatescope-in-the-media-Africa
 title: Climatescope in the Media - Africa Highlights
 permalink: api/library/updates/Climatescope-in-the-media-Africa.json
 description: 

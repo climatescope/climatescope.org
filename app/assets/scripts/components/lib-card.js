@@ -28,26 +28,26 @@ export default function LibCard ({ isLoading, url, subtitle, linkTitle, title, d
             <LoadingSkeleton width={1 / 4} />
           </LoadingSkeletonGroup>
         ) : (
-          <>
-            <header className='card__header'>
-              <div className='card__headline'>
-                <SmartLink to={url} title={linkTitle} className='link-wrapper'>
-                  {subtitle && <p className='card__subtitle'>{subtitle}</p>}
-                  <h1 className='card__title'>{title}</h1>
-                </SmartLink>
-              </div>
-            </header>
-            {description && (
-              <div className='card__body'>
-                <div className='card__prose'>
-                  <p>{description}</p>
+            <>
+              <header className='card__header'>
+                <div className='card__headline'>
+                  <SmartLink to={url} title={linkTitle} className='link-wrapper'>
+                    {subtitle && <p className='card__subtitle'>{subtitle}</p>}
+                    <h1 className='card__title'>{title}</h1>
+                  </SmartLink>
                 </div>
-              </div>
-            )}
-            <footer>
-              {footerCh}
-            </footer>
-          </>
+              </header>
+              {description && (
+                <div className='card__body'>
+                  <div className='card__prose'>
+                    <p>{description}</p>
+                  </div>
+                </div>
+              )}
+              <footer>
+                {footerCh}
+              </footer>
+            </>
         )}
       </div>
     </article>
@@ -102,34 +102,34 @@ export const ToolCard = ({ isLoading, url, subtitle, linkTitle, title, descripti
           <LoadingSkeleton width={1 / 4} />
         </LoadingSkeletonGroup>
       ) : (
-        <>
-          <header className='card__header'>
-            <div className='card__headline'>
-              <SmartLink to={url} title={linkTitle} className='link-wrapper'>
-                {subtitle && <p className='card__subtitle'>{subtitle}</p>}
-                <h1 className='card__title'>{title}</h1>
-              </SmartLink>
-            </div>
-            <LibCardImage
-              linkTo={url}
-              linkTitle={linkTitle}
-              src={image}
-              width={960}
-              height={480}
-              alt='Tool cover'
-            />
-          </header>
-          {description && (
-            <div className='card__body'>
-              <div className='card__prose'>
-                <p>{description}</p>
+          <>
+            <header className='card__header'>
+              <div className='card__headline'>
+                <SmartLink to={url} title={linkTitle} className='link-wrapper'>
+                  {subtitle && <p className='card__subtitle'>{subtitle}</p>}
+                  <h1 className='card__title'>{title}</h1>
+                </SmartLink>
               </div>
-            </div>
-          )}
-          <footer>
-            <SmartLink to={url} title={linkTitle} className='card__go-link'><span>Explore the tool</span></SmartLink>
-          </footer>
-        </>
+              <LibCardImage
+                linkTo={url}
+                linkTitle={linkTitle}
+                src={image}
+                width={960}
+                height={480}
+                alt='Tool cover'
+              />
+            </header>
+            {description && (
+              <div className='card__body'>
+                <div className='card__prose'>
+                  <p>{description}</p>
+                </div>
+              </div>
+            )}
+            <footer>
+              <SmartLink to={url} title={linkTitle} className='card__go-link'><span>Explore the tool</span></SmartLink>
+            </footer>
+          </>
       )}
     </div>
   </article>

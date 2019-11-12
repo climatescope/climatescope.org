@@ -28,3 +28,6 @@ collections:
   
   updates:
     output: true
+  
+  library:
+    output: true

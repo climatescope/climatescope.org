@@ -224,4 +224,3 @@ export const editions = [
     label: '2017'
   }
 ]
-
