@@ -1,7 +1,7 @@
 ---
 layout: page
 published: false 
-id: test
+id: test-2016-03-11
 title: Test blog post
 permalink: api/library/updates/test.json
 description: Test blog post description

@@ -28,7 +28,7 @@ class ReportCard extends React.PureComponent {
   render () {
     const { isFeatured, report, model } = this.props
     return (
-      <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
+      <article className={c('card card--short insight', { 'card--featured': isFeatured })} >
         <div className='card__contents'>
           <header className='card__header'>
             <div className='card__headline'>
@@ -106,7 +106,7 @@ class LibraryCType extends React.Component {
   }
 
   render () {
-    const { isReady, hasError, getData } = this.props.libraryContenTypeList
+    const { getData } = this.props.libraryContenTypeList
     const ctypesList = getData()
     return (
       <App pageTitle='Content Library' >
@@ -161,13 +161,16 @@ class LibraryCType extends React.Component {
 
 if (environment !== 'production') {
   LibraryCType.propTypes = {
+    fetchLibraryContenType: T.func,
+    libraryContenTypeList: T.object
 
   }
 }
 
 function mapStateToProps (state, props) {
   return {
-    libraryContenTypeList: wrapApiResult(getFromState(state.libraryct.list, props.match.params.ctypes)) }
+    libraryContenTypeList: wrapApiResult(getFromState(state.libraryct.list, props.match.params.ctypes))
+  }
 }
 
 function dispatcher (dispatch) {

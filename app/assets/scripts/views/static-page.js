@@ -34,8 +34,7 @@ class StaticPage extends React.Component {
   }
 
   render () {
-    const page = statePathFromUrl(this.props.match.params)
-    const { hasError, data, isReady, receivedAt } = this.props[page]
+    const { hasError, data, isReady, receivedAt } = this.props.page
     if (hasError()) {
       return <UhOh />
     }
@@ -89,9 +88,9 @@ if (environment !== 'production') {
 }
 
 function mapStateToProps (state, props) {
-  const page = statePathFromUrl(props.match.params)
+  const nameState = statePathFromUrl(props.match.params)
   return {
-    [page]: wrapApiResult(getFromState(state.staticPages, page))
+    page: wrapApiResult(getFromState(state.staticPages, nameState))
   }
 }
 

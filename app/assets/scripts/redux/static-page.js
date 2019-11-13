@@ -23,7 +23,7 @@ export function receivePage (id, data, error = null) {
   return { type: RECEIVE_PAGE, id, data, error, receivedAt: Date.now() }
 }
 
-export function fetchPage (page = null) {
+export function fetchPage (page) {
   return fetchDispatchCacheFactory({
     statePath: ['staticPages', page],
     url: `${baseurl}/api/${page}.json`,

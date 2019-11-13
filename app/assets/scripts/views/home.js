@@ -155,7 +155,8 @@ investment?</h1>
 if (environment !== 'production') {
   Home.propTypes = {
     location: T.object,
-    history: T.object
+    history: T.object,
+    fetchInsight: T.func
   }
 }
 
