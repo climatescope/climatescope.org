@@ -1,7 +1,7 @@
 'use script'
 import { combineReducers } from 'redux'
 
-import { fetchDispatchCacheFactory, baseAPIReducer } from './utils'
+import { fetchDispatchCacheFactory, baseAPIReducer, paginateFake } from './utils'
 import { baseurl } from '../config'
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -24,20 +24,27 @@ export function receiveLibraryContenType (id, data, error = null) {
   return { type: RECEIVE_LIBRARY_CONTENTYPE, id, data, error, receivedAt: Date.now() }
 }
 
-export function fetchLibraryContenType (id) {
+export function fetchLibraryContenType (id, filters) {
+  const qsFilters = {
+    limit: 50,
+    offset: 0,
+    ...filters
+  }
   return fetchDispatchCacheFactory({
     statePath: ['libraryct.list', id],
     url: `${baseurl}/api/library/${id}.json`,
     requestFn: requestLibraryContenType.bind(null, id),
     receiveFn: receiveLibraryContenType.bind(null, id),
     mutator: (response) => {
-      return response.map(r => {
-        const url = r.url.replace('api/', '').replace('.json', '')
-        return {
-          ...r,
-          url
-        }
-      })
+      // fake paginator
+      const results = paginateFake(response, qsFilters.limit, qsFilters.offset / qsFilters.limit + 1)
+      results.forEach(r => { r.url = r.url.replace('api/', '').replace('.json', '') })
+      const meta = {
+        total: response.length,
+        page: qsFilters.offset / qsFilters.limit + 1,
+        limit: qsFilters.limit
+      }
+      return { results, meta }
     }
   })
 }
@@ -56,6 +63,7 @@ const libraryContenTypeReducerInitialState = {
 function libraryContenTypeReducer (state = libraryContenTypeReducerInitialState, action) {
   return baseAPIReducer(state, action, 'LIBRARY_CONTENTYPE')
 }
+
 // /////////////////////////////////////////////////////////////////////////////
 // Combine reducers and export
 // /////////////////////////////////////////////////////////////////////////////

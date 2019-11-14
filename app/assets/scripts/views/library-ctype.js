@@ -4,6 +4,8 @@ import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import c from 'classnames'
 import ReactGA from 'react-ga'
+import ReactPaginate from 'react-paginate'
+import QsState from '../utils/qs-state'
 
 import { fetchLibraryContenType } from '../redux/libraryctypes'
 import { wrapApiResult, getFromState } from '../utils/utils'
@@ -55,8 +57,90 @@ if (environment !== 'production') {
 }
 
 class LibraryCType extends React.Component {
-  componentDidMount () {
-    this.props.fetchLibraryContenType(this.props.match.params.ctypes)
+  constructor (props) {
+    super(props)
+
+    // Bindings.
+    this.onFilterReset = this.onFilterReset.bind(this)
+    this.onFilterClick = this.onFilterClick.bind(this)
+    this.onPageChange = this.onPageChange.bind(this)
+
+    this.qsState = new QsState({
+      page: {
+        accessor: 'page',
+        hydrator: (v) => parseInt(v),
+        default: 1,
+        validator: (v) => !isNaN(v) && v > 0
+      },
+      sortField: {
+        accessor: 'sort.field',
+        default: 'name',
+        validator: ['name', 'country', 'status']
+      },
+      sortDir: {
+        accessor: 'sort.direction',
+        default: 'asc',
+        validator: ['asc', 'desc']
+      }
+    })
+    this.state = {
+      ...this.qsState.getState(this.props.location.search.substr(1))
+    }
+    this.fetchLibraryContenType()
+  }
+
+  fetchLibraryContenType () {
+    const perPage = 9
+    return this.props.fetchLibraryContenType(
+      this.props.match.params.ctypes, {
+        limit: perPage,
+        offset: (this.state.page - 1) * perPage,
+        'sort-on': this.state.sort.field,
+        'sort-direction': this.state.sort.direction
+      })
+  }
+  updateUrlAndFetch () {
+    // Update location.
+    const qString = this.qsState.getQs(this.state)
+    this.props.history.push({ search: qString })
+    // Fetch policies.
+    return this.fetchLibraryContenType()
+  }
+
+  onFilterFieldChange (field, e) {
+    const val = e.target.value
+    this.setState({
+      filters: {
+        ...this.state.filters,
+        [field]: val
+      }
+    })
+  }
+  onFilterClick (e) {
+    e.preventDefault()
+    // Reset page and sort.
+    this.setState({
+      page: 1,
+      sort: this.qsState.getState('').sort
+    }, () => {
+      this.updateUrlAndFetch()
+    })
+  }
+  onFilterReset (e) {
+    e.preventDefault()
+    this.setState({
+      // Get the defaults.
+      ...this.qsState.getState('')
+    }, () => {
+      this.updateUrlAndFetch()
+    })
+  }
+  onPageChange ({ selected }) {
+    this.setState({
+      page: selected + 1
+    }, () => {
+      this.updateUrlAndFetch()
+    })
   }
 
   renderNoResults () {
@@ -76,7 +160,7 @@ class LibraryCType extends React.Component {
       <ol className='card-list'>
         {
           Array.from(mediumPosts).map((post, i) => {
-            // Get correct subtitle, based on tags.
+          // Get correct subtitle, based on tags.
             let subtitle = 'Explore'
             if (post.tag) {
               if (post.tags.find(t => t.id === 'off-grid')) {
@@ -105,6 +189,33 @@ class LibraryCType extends React.Component {
     )
   }
 
+  renderPagination () {
+    if (!this.props.libraryContenTypeList.isReady()) return null
+    const meta = this.props.libraryContenTypeList.getMeta()
+
+    const totalPages = Math.ceil(meta.total / meta.limit)
+    if (totalPages <= 1) return null
+
+    return (
+      <div className='pagination-wrapper'>
+        <ReactPaginate
+          previousLabel={<span>previous</span>}
+          nextLabel={<span>next</span>}
+          breakLabel={<span className='pages__page'>...</span>}
+          pageCount={totalPages}
+          forcePage={meta.page - 1}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={5}
+          onPageChange={this.onPageChange}
+          containerClassName={'pagination'}
+          subContainerClassName={'pages'}
+          pageClassName={'pages__wrapper'}
+          pageLinkClassName={'pages__page'}
+          activeClassName={'active'}
+        />
+      </div>
+    )
+  }
   render () {
     const { getData } = this.props.libraryContenTypeList
     const ctypesList = getData()
@@ -132,6 +243,8 @@ class LibraryCType extends React.Component {
                 {this.renderNoResults()}
 
                 {this.renderMediumPosts(ctypesList)}
+
+                {this.renderPagination()}
               </div>
 
               <div className='col--sec tools'>
@@ -162,7 +275,10 @@ class LibraryCType extends React.Component {
 if (environment !== 'production') {
   LibraryCType.propTypes = {
     fetchLibraryContenType: T.func,
-    libraryContenTypeList: T.object
+    filterLibraryContenType: T.func,
+    libraryContenTypeList: T.object,
+    location: T.object,
+    history: T.object
 
   }
 }
