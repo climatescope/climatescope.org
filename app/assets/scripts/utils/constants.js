@@ -152,18 +152,21 @@ export const downloadData = {
 export const libraryCType = {
   pages: [
     {
+      id: 'off-grid',
       url: '/library/off-grid-quarterly',
       title: 'View Off Grid Quarterly section',
       label: 'Off Grid Quarterly',
       description: 'BloombergNEF\'s quarterly review of business and policy activity in the off-grid and weak-grid sectors across the globe.'
     },
     {
+      id: 'insight',
       url: '/library/insights',
       title: 'View insights section',
       label: 'Insights',
       description: 'Series of research notes on what drives the energy transition globally with a focus on emerging markets. Read about how developers can mitigate risk, what tools governments have to accelerate renewables deployment, what role clean energy can play in increasing access to power, and more.'
     },
     {
+      id: 'update',
       url: '/library/updates',
       title: 'View updates section',
       label: 'Updates',
@@ -171,6 +174,7 @@ export const libraryCType = {
     }
   ]
 }
+
 export const tools = [
   {
     url: '/compare',
