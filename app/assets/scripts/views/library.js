@@ -1,16 +1,16 @@
-'use strict';
-import React from 'react';
-import { PropTypes as T } from 'prop-types';
-import c from 'classnames';
-import ReactGA from 'react-ga';
+'use strict'
+import React from 'react'
+import { PropTypes as T } from 'prop-types'
+import c from 'classnames'
+import ReactGA from 'react-ga'
 
-import { environment, baseurl } from '../config';
-import { downloadData, tools } from '../utils/constants';
+import { environment, baseurl } from '../config'
+import { downloadData, tools } from '../utils/constants'
 
-import App from './app';
-import ShareOptions from '../components/share';
-import SmartLink from '../components/smart-link';
-import { ToolCard } from '../components/lib-card';
+import App from './app'
+import ShareOptions from '../components/share'
+import SmartLink from '../components/smart-link'
+import { ToolCard } from '../components/lib-card'
 
 class ReportCard extends React.PureComponent {
   onDownloadClick (url) {

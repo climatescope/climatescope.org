@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 import { environment } from '../config'
-import { editions, downloadData, tools } from '../utils/constants'
+import { editions, tools } from '../utils/constants'
 import { fetchLibraryContenType } from '../redux/libraryctypes'
 import { wrapApiResult, getFromState } from '../utils/utils'
 
@@ -22,7 +22,11 @@ class Home extends React.Component {
   }
 
   componentDidMount () {
-    this.props.fetchInsight('insights')
+    const filter = {
+      contentype: 'insights',
+      limit: 6
+    }
+    this.props.fetchInsight(filter)
   }
 
   renderMediumPosts (insights) {
@@ -60,7 +64,7 @@ class Home extends React.Component {
   }
 
   render () {
-    const { isReady, hasError, getData } = this.props.insightList
+    const { getData } = this.props.insightList
     const ctypesList = getData()
     return (
       <App className='page--has-hero'>
@@ -71,8 +75,7 @@ class Home extends React.Component {
                 <h1 className='inpage__title'>Which emerging market is the most attractive for clean energy
 investment?</h1>
                 <p>
-                  <Link to='/results' className='home-cta-button' title='View results'><span>Discover the ranking</span></Link>
-                  <a href={downloadData.current.report.url} className='home-cta-button' title='View results' target='_blank'><span>Read the report</span></a>
+                  <Link to='/results' className='home-cta-button' title='View results'><span>Find out</span></Link>
                 </p>
               </div>
             </div>
@@ -130,11 +133,11 @@ investment?</h1>
                 <header className='fold__header'>
                   <h1 className='fold__title'>About Climatescope</h1>
                   <div className='fold__lead'>
-                    <p>The Climatescope project involves 42  BloombergNEF analysts compiling detailed data on 103 developing nations, and making visits to 54 countries in 2018.</p>
+                    <p>Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future.</p>
                   </div>
                 </header>
                 <div className='fold__body'>
-                  <h2>Revisit Climatescope</h2>
+                  <h2>View or download our previous reports</h2>
                   <ul className='editions-menu'>
                     {editions.map(o => (
                       <li key={o.url} className='editions-menu__item'>
@@ -156,13 +159,14 @@ if (environment !== 'production') {
   Home.propTypes = {
     location: T.object,
     history: T.object,
-    fetchInsight: T.func
+    fetchInsight: T.func,
+    insightList: T.object
   }
 }
 
 function mapStateToProps (state) {
   return {
-    insightList: wrapApiResult(getFromState(state.libraryct.list, 'insights'))
+    insightList: wrapApiResult(getFromState(state.libraryct, 'list'))
   }
 }
 

@@ -20,12 +20,23 @@ collections:
   pages:
     output: true
   
-  insights:
+  library:
     output: true
-  
-  off-grid-quarterly:
-    output: true
-  
-  updates:
-    output: true
-  
+# Define defaults for the different CTs of the library
+
+defaults:
+  - 
+    scope:
+      path: "_library/insights"
+    values:
+      type: "insight"
+  - 
+    scope:
+      path: "_library/updates"
+    values:
+      type: "update"
+  - 
+    scope:
+      path: "_library/off-grid"
+    values:
+      type: "off-grid"

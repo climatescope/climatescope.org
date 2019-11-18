@@ -137,6 +137,19 @@ export const ToolCard = ({ isLoading, url, subtitle, linkTitle, title, descripti
     </div>
   </article>
 )
+if (environment !== 'production') {
+  ToolCard.propTypes = {
+    isLoading: T.bool,
+    isFeatured: T.bool,
+    url: T.string,
+    linkTitle: T.string,
+    title: T.string,
+    subtitle: T.string,
+    description: T.string,
+    image: T.string,
+    children: T.node
+  }
+}
 
 export const MediumCard = (props) => (
   <LibCard {...props} footerTitle='Explore the tool'>

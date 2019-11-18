@@ -46,10 +46,11 @@ class LibraryCType extends React.Component {
   }
 
   fetchLibraryContenType () {
-    const perPage = 9
-    return this.props.fetchLibraryContenType(this.props.match.params.ctypes, {
+    const perPage = 7
+    return this.props.fetchLibraryContenType({
       limit: perPage,
-      offset: (this.state.page - 1) * perPage
+      offset: (this.state.page - 1) * perPage,
+      'contentType': this.state.contentType
     })
   }
 
@@ -64,11 +65,13 @@ class LibraryCType extends React.Component {
   onCTClick (ctId, e) {
     e.preventDefault()
     this.setState({
-      contentType: ctId
+      contentType: ctId,
+      page: 1
     }, () => {
       // Update location.
       const qString = this.qsState.getQs(this.state)
       this.props.history.push({ search: qString })
+      this.fetchLibraryContenType()
     }
     )
   }
@@ -257,9 +260,7 @@ if (environment !== 'production') {
 
 function mapStateToProps (state, props) {
   return {
-    libraryContenTypeList: wrapApiResult(
-      getFromState(state.libraryct.list, props.match.params.ctypes)
-    )
+    libraryContenTypeList: wrapApiResult(getFromState(state.libraryct, 'list'))
   }
 }
 
