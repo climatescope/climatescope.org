@@ -12,23 +12,24 @@ class NavGlobalMenu extends React.PureComponent {
     return (
       <ul className='global-menu' id='global-menu'>
         <li className='global-menu__item'><Link to='/' title='View' className='global-menu__link'>Home</Link></li>
-        <li className='global-menu__item'><Link to='/results' title='View' className='global-menu__link'>Results</Link></li>
+        <li className='global-menu__item'><Link to='/results' title='View Results' className='global-menu__link'>Results</Link></li>
         <li className='global-menu__item drop'>
           <Dropdown
             className=''
             triggerElement='a'
             triggerClassName='drop__toggle drop__toggle--caret global-menu__link'
             triggerActiveClassName='button--active'
-            triggerText='Insights & Tools'
-            triggerTitle='Explore the Insights & Tools'
+            triggerText='Insights'
+            triggerTitle='Explore the Insights'
             direction='down'
             alignment='right' >
             <ul className='drop__menu'>
+              <li><Link data-hook='dropdown:close' to='/library/insights' title='View Climatescope Insights' className='drop__menu-item'>Insights</Link></li>
               <li><Link data-hook='dropdown:close' to='/key-findings' title='View' className='drop__menu-item'>Key Findings</Link></li>
-              <li><Link data-hook='dropdown:close' to='/library' title='View' className='drop__menu-item'>Content Library</Link></li>
             </ul>
           </Dropdown>
         </li>
+        <li className='global-menu__item'><Link to='/library' title='View Tools & Reports' className='global-menu__link'>Tools & Reports</Link></li>
         <li className='global-menu__item'>
           <Dropdown
             className=''
@@ -62,16 +63,17 @@ class NavGlobalMenu extends React.PureComponent {
             triggerElement='a'
             triggerClassName='drop__toggle drop__toggle--caret footer-menu__link'
             triggerActiveClassName='button--active'
-            triggerText='Insights & Tools'
-            triggerTitle='Explore the Insights & Tools'
+            triggerText='Insights'
+            triggerTitle='Explore the Insights'
             direction='up'
             alignment='left' >
             <ul className='drop__menu'>
+              <li><Link data-hook='dropdown:close' to='/library/insights' title='View Climatescope Insights' className='drop__menu-item'>Insights</Link></li>
               <li><Link data-hook='dropdown:close' to='/key-findings' title='View' className='drop__menu-item'>Key Findings</Link></li>
-              <li><Link data-hook='dropdown:close' to='/library' title='View' className='drop__menu-item'>Content Library</Link></li>
             </ul>
           </Dropdown>
         </li>
+        <li className='footer-menu__item'><Link to='/library' title='View Tools & Reports' className='footer-menu__link'>Tools & Reports</Link></li>
         <li className='footer-menu__item'>
           <Dropdown
             className=''

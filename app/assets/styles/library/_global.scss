@@ -6,17 +6,71 @@
 
   .col--main {
     grid-column: 1 / span 12;
+  }
 
+  .card-list__item {
     @include media(large-up) {
-      grid-column: 1 / span 9;
+      grid-column: auto / span 3;
     }
   }
 
-  .col--sec {
-    grid-column: auto / span 12;
+  .inpage__header {
+    em {
+      font-style: inherit;
+      white-space: nowrap;
 
+      span {
+        @extend .truncated;
+        max-width: 24rem;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .drop__toggle--caret::after {
+      font-size: 2rem;
+    }
+  }
+
+  .card-medium--update {
+    .card__date,
+    .card__subtitle {
+      color: $infograph-solar;
+    }
+  }
+
+  .card-medium--insight {
+    .card__date,
+    .card__subtitle {
+      color: $infograph-small-hydro;
+    }
+  }
+
+  .card-medium--off-grid {
+    .card__date,
+    .card__subtitle {
+      color: $infograph-biomass-waste;
+    }
+  }
+
+  .card-list__item--hero {
+    color: #fff;
+    
     @include media(large-up) {
-      grid-column: auto / span 3;
+      grid-column: auto / span 6;
+    }
+    
+    .card__contents {
+      background-image: url('/assets/graphics/layout/lib-card-background.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .card__go-link,
+    .card__date,
+    .card__subtitle {
+      color: #fff;
     }
   }
 }
