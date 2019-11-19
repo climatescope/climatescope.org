@@ -6,15 +6,15 @@ import c from 'classnames'
 import ReactPaginate from 'react-paginate'
 import QsState from '../utils/qs-state'
 
-import { fetchLibraryContenType } from '../redux/libraryctypes'
+import { fetchLibraryContentType } from '../redux/libraryctypes'
 import { wrapApiResult, getFromState } from '../utils/utils'
 import { environment } from '../config'
+import { libraryCType } from '../utils/constants'
 
 import App from './app'
 import ShareOptions from '../components/share'
 import { MediumCard } from '../components/lib-card'
 import Dropdown from '../components/dropdown'
-import { libraryCType } from '../utils/constants'
 
 const contentTypes = libraryCType.pages
 
@@ -42,12 +42,12 @@ class LibraryCType extends React.Component {
     this.state = {
       ...this.qsState.getState(this.props.location.search.substr(1))
     }
-    this.fetchLibraryContenType()
+    this.fetchLibraryContentType()
   }
 
-  fetchLibraryContenType () {
-    const perPage = 7
-    return this.props.fetchLibraryContenType({
+  fetchLibraryContentType () {
+    const perPage = 11
+    return this.props.fetchLibraryContentType({
       limit: perPage,
       offset: (this.state.page - 1) * perPage,
       'contentType': this.state.contentType
@@ -59,7 +59,7 @@ class LibraryCType extends React.Component {
     const qString = this.qsState.getQs(this.state)
     this.props.history.push({ search: qString })
     // Fetch policies.
-    return this.fetchLibraryContenType()
+    return this.fetchLibraryContentType()
   }
 
   onCTClick (ctId, e) {
@@ -71,7 +71,7 @@ class LibraryCType extends React.Component {
       // Update location.
       const qString = this.qsState.getQs(this.state)
       this.props.history.push({ search: qString })
-      this.fetchLibraryContenType()
+      this.fetchLibraryContentType()
     }
     )
   }
@@ -143,7 +143,7 @@ class LibraryCType extends React.Component {
     if (!this.props.libraryContenTypeList.isReady()) return null
 
     if (!this.props.libraryContenTypeList.getData().length) {
-      return <p>No posts avaliable in this library.</p>
+      return <p>No posts available in this library.</p>
     }
   }
 
@@ -154,6 +154,7 @@ class LibraryCType extends React.Component {
   }
 
   renderMediumPosts (mediumPosts) {
+    const { contentType, page } = this.state
     return (
       <ol className='card-list'>
         {Array.from(mediumPosts).map((post, i) => {
@@ -168,7 +169,7 @@ class LibraryCType extends React.Component {
               key={post.id}
               className={c('card-list__item', {
                 'card-list__item--hero':
-                  i === 0 && this.state.contentType === 'all'
+                  i === 0 && contentType === 'all' && page === 1
               })}
             >
               <MediumCard
@@ -250,7 +251,7 @@ class LibraryCType extends React.Component {
 
 if (environment !== 'production') {
   LibraryCType.propTypes = {
-    fetchLibraryContenType: T.func,
+    fetchLibraryContentType: T.func,
     filterLibraryContenType: T.func,
     libraryContenTypeList: T.object,
     location: T.object,
@@ -266,8 +267,8 @@ function mapStateToProps (state, props) {
 
 function dispatcher (dispatch) {
   return {
-    fetchLibraryContenType: (...args) =>
-      dispatch(fetchLibraryContenType(...args))
+    fetchLibraryContentType: (...args) =>
+      dispatch(fetchLibraryContentType(...args))
   }
 }
 

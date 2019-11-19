@@ -3,14 +3,18 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import ReactGA from 'react-ga'
 
-import { environment } from '../config'
-import { editions, tools } from '../utils/constants'
-import { fetchLibraryContenType } from '../redux/libraryctypes'
+import { environment, baseurl } from '../config'
+import { editions, tools, downloadData, libraryCType } from '../utils/constants'
+import { fetchLibraryContentType } from '../redux/libraryctypes'
 import { wrapApiResult, getFromState } from '../utils/utils'
 
 import App from './app'
 import { MediumCard, ToolCard } from '../components/lib-card'
+import SmartLink from '../components/smart-link'
+
+const contentTypes = libraryCType.pages
 
 class Home extends React.Component {
   constructor (props) {
@@ -21,10 +25,18 @@ class Home extends React.Component {
     }
   }
 
+  onDownloadClick (url) {
+    const pieces = url.split('/')
+    ReactGA.event({
+      category: 'Data',
+      action: 'Download',
+      label: pieces[pieces.length - 1]
+    })
+  }
+
   componentDidMount () {
     const filter = {
-      contentype: 'insights',
-      limit: 6
+      limit: 9
     }
     this.props.fetchInsight(filter)
   }
@@ -35,16 +47,8 @@ class Home extends React.Component {
         {
           Array.from(insights).slice(0, 9).map((post, i) => {
             // Get correct subtitle, based on tags.
-            let subtitle = 'Explore'
-            if (post.tag) {
-              if (post.tags.find(t => t.id === 'off-grid')) {
-                subtitle = 'Market outlook'
-              } else if (post.tags.find(t => t.id === 'insights')) {
-                subtitle = 'Insight'
-              } else if (post.tags.find(t => t.id === 'updates')) {
-                subtitle = 'Updates'
-              }
-            }
+            const ctType = contentTypes.find(r => r.id === post.type)
+            const subtitle = ctType ? ctType.label : 'Explore'
             return (
               <li key={post.id} className='card-list__item'>
                 <MediumCard
@@ -66,6 +70,9 @@ class Home extends React.Component {
   render () {
     const { getData } = this.props.insightList
     const ctypesList = getData()
+
+    const currentReport = downloadData.current.report
+
     return (
       <App className='page--has-hero'>
         <section className='inpage inpage--home'>
@@ -75,7 +82,17 @@ class Home extends React.Component {
                 <h1 className='inpage__title'>Which emerging market is the most attractive for clean energy
 investment?</h1>
                 <p>
-                  <Link to='/results' className='home-cta-button' title='View results'><span>Find out</span></Link>
+                  <Link to='/results' className='home-cta-button' title='View results'><span>Ranking</span></Link>
+                  <SmartLink
+                    to={baseurl + currentReport.url}
+                    title={currentReport.title}
+                    className='home-cta-button'
+                    onClick={this.onDownloadClick.bind(this, currentReport.url)}
+                    target='_blank'
+                  >
+                    <span>Report</span>
+                  </SmartLink>
+                  <Link to='/key-findings' className='home-cta-button' title='View key findings'><span>Key findings</span></Link>
                 </p>
               </div>
             </div>
@@ -172,7 +189,7 @@ function mapStateToProps (state) {
 
 function dispatcher (dispatch) {
   return {
-    fetchInsight: (...args) => dispatch(fetchLibraryContenType(...args))
+    fetchInsight: (...args) => dispatch(fetchLibraryContentType(...args))
 
   }
 }

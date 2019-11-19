@@ -6,6 +6,10 @@
 
   .col--main {
     grid-column: 1 / span 12;
+
+    & > *:not(:last-child) {
+      margin-bottom: $global-spacing * 4;
+    }
   }
 
   .card-list__item {

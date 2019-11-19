@@ -8,23 +8,23 @@ import { baseurl } from '../config'
 // Actions
 // /////////////////////////////////////////////////////////////////////////////
 
-export const REQUEST_LIBRARY_CONTENTYPE = 'REQUEST_LIBRARY_CONTENTYPE'
-export const RECEIVE_LIBRARY_CONTENTYPE = 'RECEIVE_LIBRARY_CONTENTYPE'
-export const INVALIDATE_LIBRARY_CONTENTYPE = 'INVALIDATE_LIBRARY_CONTENTYPE'
+export const REQUEST_LIBRARY_CONTENTTYPE = 'REQUEST_LIBRARY_CONTENTTYPE'
+export const RECEIVE_LIBRARY_CONTENTTYPE = 'RECEIVE_LIBRARY_CONTENTTYPE'
+export const INVALIDATE_LIBRARY_CONTENTTYPE = 'INVALIDATE_LIBRARY_CONTENTTYPE'
 
-export function invalidateLibraryContenType () {
-  return { type: INVALIDATE_LIBRARY_CONTENTYPE }
+export function invalidateLibraryContentType () {
+  return { type: INVALIDATE_LIBRARY_CONTENTTYPE }
 }
 
-export function requestLibraryContenType () {
-  return { type: REQUEST_LIBRARY_CONTENTYPE }
+export function requestLibraryContentType () {
+  return { type: REQUEST_LIBRARY_CONTENTTYPE }
 }
 
-export function receiveLibraryContenType (data, error = null) {
-  return { type: RECEIVE_LIBRARY_CONTENTYPE, data, error, receivedAt: Date.now() }
+export function receiveLibraryContentType (data, error = null) {
+  return { type: RECEIVE_LIBRARY_CONTENTTYPE, data, error, receivedAt: Date.now() }
 }
 
-export function fetchLibraryContenType (filters) {
+export function fetchLibraryContentType (filters) {
   const qsFilters = {
     limit: 50,
     offset: 0,
@@ -34,8 +34,8 @@ export function fetchLibraryContenType (filters) {
   return fetchDispatchCacheFactory({
     statePath: ['libraryct.list'],
     url: `${baseurl}/api/library/insights.json`,
-    requestFn: requestLibraryContenType,
-    receiveFn: receiveLibraryContenType,
+    requestFn: requestLibraryContentType,
+    receiveFn: receiveLibraryContentType,
     mutator: (response) => {
       if (qsFilters.contentType !== 'all') {
         response = response.filter(i => { return i.type.includes(qsFilters.contentType) })
@@ -57,15 +57,15 @@ export function fetchLibraryContenType (filters) {
 // Reducer
 // /////////////////////////////////////////////////////////////////////////////
 
-const libraryContenTypeReducerInitialState = {
+const libraryContentTypeReducerInitialState = {
   fetching: false,
   fetched: false,
   error: null,
   data: {}
 }
 
-function libraryContenTypeReducer (state = libraryContenTypeReducerInitialState, action) {
-  return baseAPIReducer(state, action, 'LIBRARY_CONTENTYPE')
+function libraryContentTypeReducer (state = libraryContentTypeReducerInitialState, action) {
+  return baseAPIReducer(state, action, 'LIBRARY_CONTENTTYPE')
 }
 
 // /////////////////////////////////////////////////////////////////////////////
@@ -73,5 +73,5 @@ function libraryContenTypeReducer (state = libraryContenTypeReducerInitialState,
 // /////////////////////////////////////////////////////////////////////////////
 
 export default combineReducers({
-  list: libraryContenTypeReducer
+  list: libraryContentTypeReducer
 })
