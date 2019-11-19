@@ -190,7 +190,7 @@ export default class ResultsMap extends React.Component {
     this.map.on('load', () => {
       this.mapLoaded = true
       this.map.setPaintProperty('background', 'background-opacity', 0)
-      this.map.setPaintProperty('ne-countries-highlight', 'fill-color', '#02A87C')
+      this.map.setPaintProperty('ne-countries-highlight', 'fill-color', '#4b99a6')
 
       this.setHighlightedGeographies(this.props.highlightISO)
       this.map.fitBounds(this.props.bounds)
