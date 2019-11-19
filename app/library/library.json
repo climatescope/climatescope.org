@@ -3,7 +3,7 @@ permalink: api/library/insights.json
 published: true
 ---
 {% assign comma = false %}
-{% assign posts = site.library | sort:"date" %}
+{% assign posts = site.library | sort:"date" | reverse %}
 [
   {% for post in posts %}
     {% unless post.hidden == true %}
