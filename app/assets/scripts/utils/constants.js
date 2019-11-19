@@ -226,5 +226,10 @@ export const editions = [
     url: 'http://2017.global-climatescope.org/en/',
     title: 'View 2017 edition of Climatescope',
     label: '2017'
+  },
+  {
+    url: 'http://2018.global-climatescope.org/',
+    title: 'View 2018 edition of Climatescope',
+    label: '2018'
   }
 ]
