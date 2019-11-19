@@ -14,14 +14,22 @@ import DangerouslySetScriptContent from '../components/dangerous-script-content'
 import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-skeleton'
 import ShareOptions from '../components/share'
 
+const statePathFromUrl = (params) => {
+  return params.ctypes ? `library/${params.ctypes}/${params.page}` : params.page
+}
+
 class StaticPage extends React.Component {
   componentDidMount () {
-    this.props.fetchPage(this.props.match.params.page)
+    const page = statePathFromUrl(this.props.match.params)
+    this.props.fetchPage(page)
   }
 
   componentDidUpdate (prevProps) {
-    if (prevProps.match.params.page !== this.props.match.params.page) {
-      this.props.fetchPage(this.props.match.params.page)
+    const prevPage = statePathFromUrl(prevProps.match.params)
+    const page = statePathFromUrl(this.props.match.params)
+
+    if (prevPage !== page) {
+      this.props.fetchPage(page)
     }
   }
 
@@ -80,8 +88,9 @@ if (environment !== 'production') {
 }
 
 function mapStateToProps (state, props) {
+  const nameState = statePathFromUrl(props.match.params)
   return {
-    page: wrapApiResult(getFromState(state.staticPages, props.match.params.page))
+    page: wrapApiResult(getFromState(state.staticPages, nameState))
   }
 }
 

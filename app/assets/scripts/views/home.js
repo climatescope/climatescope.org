@@ -3,17 +3,18 @@ import React from 'react'
 import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import ReactGA from 'react-ga'
 
-import { environment } from '../config'
-import { editions, downloadData, tools } from '../utils/constants'
-import { fetchMediumPosts } from '../redux/medium'
-import { wrapApiResult } from '../utils/utils'
-import { initializeArrayWithRange } from '../utils/array'
+import { environment, baseurl } from '../config'
+import { editions, tools, downloadData, libraryCType } from '../utils/constants'
+import { fetchLibraryContentType } from '../redux/libraryctypes'
+import { wrapApiResult, getFromState } from '../utils/utils'
 
 import App from './app'
 import { MediumCard, ToolCard } from '../components/lib-card'
+import SmartLink from '../components/smart-link'
 
-const mediumPosts = require('../../data/cs-medium-latest.json')
+const contentTypes = libraryCType.pages
 
 class Home extends React.Component {
   constructor (props) {
@@ -24,23 +25,30 @@ class Home extends React.Component {
     }
   }
 
-  componentDidMount () {
+  onDownloadClick (url) {
+    const pieces = url.split('/')
+    ReactGA.event({
+      category: 'Data',
+      action: 'Download',
+      label: pieces[pieces.length - 1]
+    })
   }
 
-  renderMediumPosts () {
+  componentDidMount () {
+    const filter = {
+      limit: 9
+    }
+    this.props.fetchInsight(filter)
+  }
+
+  renderMediumPosts (insights) {
     return (
       <ol className='card-list'>
         {
-          mediumPosts.slice(0, 9).map((post, i) => {
+          Array.from(insights).slice(0, 9).map((post, i) => {
             // Get correct subtitle, based on tags.
-            let subtitle = 'Explore'
-            if (post.tags.find(t => t.id === 'off-grid')) {
-              subtitle = 'Market outlook'
-            } else if (post.tags.find(t => t.id === 'insights')) {
-              subtitle = 'Insight'
-            } else if (post.tags.find(t => t.id === 'updates')) {
-              subtitle = 'Updates'
-            }
+            const ctType = contentTypes.find(r => r.id === post.type)
+            const subtitle = ctType ? ctType.label : 'Explore'
             return (
               <li key={post.id} className='card-list__item'>
                 <MediumCard
@@ -60,6 +68,11 @@ class Home extends React.Component {
   }
 
   render () {
+    const { getData } = this.props.insightList
+    const ctypesList = getData()
+
+    const currentReport = downloadData.current.report
+
     return (
       <App className='page--has-hero'>
         <section className='inpage inpage--home'>
@@ -69,8 +82,17 @@ class Home extends React.Component {
                 <h1 className='inpage__title'>Which emerging market is the most attractive for clean energy
 investment?</h1>
                 <p>
-                  <Link to='/results' className='home-cta-button' title='View results'><span>Discover the ranking</span></Link>
-                  <a href={downloadData.current.report.url} className='home-cta-button' title='View results' target='_blank'><span>Read the report</span></a>
+                  <Link to='/results' className='home-cta-button' title='View results'><span>Ranking</span></Link>
+                  <SmartLink
+                    to={baseurl + currentReport.url}
+                    title={currentReport.title}
+                    className='home-cta-button'
+                    onClick={this.onDownloadClick.bind(this, currentReport.url)}
+                    target='_blank'
+                  >
+                    <span>Report</span>
+                  </SmartLink>
+                  <Link to='/key-findings' className='home-cta-button' title='View key findings'><span>Key findings</span></Link>
                 </p>
               </div>
             </div>
@@ -93,10 +115,10 @@ investment?</h1>
                       <h1 className='fsection__title'>Insights</h1>
                     </div>
                     <div className='fsection__actions'>
-                      <a href='https://medium.com/climatescope' title='View all insights' className='fsa-go'><span>View all</span></a>
+                      <a href='/library/insights' title='View all insights' className='fsa-go'><span>View all</span></a>
                     </div>
                   </header>
-                  {this.renderMediumPosts()}
+                  {this.renderMediumPosts(ctypesList)}
                 </section>
               </div>
               <div className='col--sec'>
@@ -128,11 +150,11 @@ investment?</h1>
                 <header className='fold__header'>
                   <h1 className='fold__title'>About Climatescope</h1>
                   <div className='fold__lead'>
-                    <p>The Climatescope project involves 42  BloombergNEF analysts compiling detailed data on 103 developing nations, and making visits to 54 countries in 2018.</p>
+                    <p>Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future.</p>
                   </div>
                 </header>
                 <div className='fold__body'>
-                  <h2>Revisit Climatescope</h2>
+                  <h2>View or download our previous reports</h2>
                   <ul className='editions-menu'>
                     {editions.map(o => (
                       <li key={o.url} className='editions-menu__item'>
@@ -154,11 +176,22 @@ if (environment !== 'production') {
   Home.propTypes = {
     location: T.object,
     history: T.object,
+    fetchInsight: T.func,
+    insightList: T.object
   }
 }
 
-function mapStateToProps (state) { }
+function mapStateToProps (state) {
+  return {
+    insightList: wrapApiResult(getFromState(state.libraryct, 'list'))
+  }
+}
 
-function dispatcher (dispatch) { }
+function dispatcher (dispatch) {
+  return {
+    fetchInsight: (...args) => dispatch(fetchLibraryContentType(...args))
+
+  }
+}
 
 export default connect(mapStateToProps, dispatcher)(Home)

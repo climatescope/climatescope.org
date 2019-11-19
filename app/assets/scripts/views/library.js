@@ -1,17 +1,16 @@
 'use strict'
 import React from 'react'
 import { PropTypes as T } from 'prop-types'
-import { connect } from 'react-redux'
 import c from 'classnames'
 import ReactGA from 'react-ga'
 
 import { environment, baseurl } from '../config'
-import { downloadData, medium, tools } from '../utils/constants'
+import { downloadData, tools } from '../utils/constants'
 
 import App from './app'
 import ShareOptions from '../components/share'
 import SmartLink from '../components/smart-link'
-import { MediumCategoryCard, ToolCard } from '../components/lib-card'
+import { ToolCard } from '../components/lib-card'
 
 class ReportCard extends React.PureComponent {
   onDownloadClick (url) {
@@ -26,7 +25,11 @@ class ReportCard extends React.PureComponent {
   render () {
     const { isFeatured, report, model } = this.props
     return (
-      <article className={c('card card--short insight', { 'card--featured': isFeatured })}>
+      <article
+        className={c('card card--short insight', {
+          'card--featured': isFeatured
+        })}
+      >
         <div className='card__contents'>
           <header className='card__header'>
             <div className='card__headline'>
@@ -34,9 +37,29 @@ class ReportCard extends React.PureComponent {
             </div>
           </header>
           <footer>
-            {report && <SmartLink to={baseurl + report.url} title={report.title} className='card__download-link' onClick={this.onDownloadClick.bind(this, report.url)} target='_blank'><span>Report (PDF)</span></SmartLink>}
+            {report && (
+              <SmartLink
+                to={baseurl + report.url}
+                title={report.title}
+                className='card__download-link'
+                onClick={this.onDownloadClick.bind(this, report.url)}
+                target='_blank'
+              >
+                <span>Report (PDF)</span>
+              </SmartLink>
+            )}
             {report && model && <br />}
-            {model && <SmartLink to={baseurl + model.url} title={model.title} className='card__download-link' onClick={this.onDownloadClick.bind(this, model.url)} target='_blank'><span>Model (Excel)</span></SmartLink>}
+            {model && (
+              <SmartLink
+                to={baseurl + model.url}
+                title={model.title}
+                className='card__download-link'
+                onClick={this.onDownloadClick.bind(this, model.url)}
+                target='_blank'
+              >
+                <span>Model (Excel)</span>
+              </SmartLink>
+            )}
           </footer>
         </div>
       </article>
@@ -55,7 +78,7 @@ if (environment !== 'production') {
 class Library extends React.Component {
   render () {
     return (
-      <App pageTitle='Content Library' >
+      <App pageTitle='Content Library'>
         <article className='inpage inpage--library'>
           <header className='inpage__header'>
             <div className='inner'>
@@ -71,16 +94,16 @@ class Library extends React.Component {
           <div className='inpage__body'>
             <div className='inner'>
               <div className='col--main'>
-
-                <h2>Insights</h2>
+                <h2>Tools</h2>
                 <ul className='card-list'>
-                  {medium.pages.map(({ url, title, label, description }) => (
+                  {tools.map(({ url, title, label, description, image }) => (
                     <li key={url} className='card-list__item'>
-                      <MediumCategoryCard
+                      <ToolCard
                         url={url}
                         linkTitle={title}
                         title={label}
                         description={description}
+                        image={image}
                       />
                     </li>
                   ))}
@@ -97,53 +120,17 @@ class Library extends React.Component {
                   </li>
                   {downloadData.previous.map(({ report, model }) => (
                     <li key={report.url} className='card-list__item'>
-                      <ReportCard
-                        report={report}
-                        model={model}
-                      />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              <div className='col--sec tools'>
-                <h2>Tools</h2>
-                <ul className='card-list'>
-                  {tools.map(({ url, title, label, description, image }) => (
-                    <li key={url} className='card-list__item'>
-                      <ToolCard
-                        url={url}
-                        linkTitle={title}
-                        title={label}
-                        description={description}
-                        image={image}
-                      />
+                      <ReportCard report={report} model={model} />
                     </li>
                   ))}
                 </ul>
               </div>
             </div>
           </div>
-
         </article>
       </App>
     )
   }
 }
 
-if (environment !== 'production') {
-  Library.propTypes = {
-  }
-}
-
-function mapStateToProps (state, props) {
-  return {
-  }
-}
-
-function dispatcher (dispatch) {
-  return {
-  }
-}
-
-export default connect(mapStateToProps, dispatcher)(Library)
+export default Library

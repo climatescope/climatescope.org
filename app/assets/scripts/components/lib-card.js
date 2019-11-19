@@ -11,12 +11,12 @@ import SmartLink from '../components/smart-link'
 // Containers to have a named wrapper.
 export const LibCardFooter = ({ children }) => children
 
-export default function LibCard ({ isLoading, url, subtitle, linkTitle, title, description, isFeatured, children }) {
+export default function LibCard ({ isLoading, url, subtitle, date, linkTitle, title, description, isFeatured, className, children }) {
   const ch = React.Children.toArray(children)
   const footerCh = ch.find(c => c.type === LibCardFooter)
 
   return (
-    <article className={c('card card--short', { 'card--featured': isFeatured })}>
+    <article className={c('card card--short', { 'card--featured': isFeatured }, className)}>
       <div className='card__contents'>
         {isLoading ? (
           <LoadingSkeletonGroup>
@@ -28,26 +28,27 @@ export default function LibCard ({ isLoading, url, subtitle, linkTitle, title, d
             <LoadingSkeleton width={1 / 4} />
           </LoadingSkeletonGroup>
         ) : (
-          <>
-            <header className='card__header'>
-              <div className='card__headline'>
-                <SmartLink to={url} title={linkTitle} className='link-wrapper'>
-                  {subtitle && <p className='card__subtitle'>{subtitle}</p>}
-                  <h1 className='card__title'>{title}</h1>
-                </SmartLink>
-              </div>
-            </header>
-            {description && (
-              <div className='card__body'>
-                <div className='card__prose'>
-                  <p>{description}</p>
+            <>
+              <header className='card__header'>
+                <div className='card__headline'>
+                  <SmartLink to={url} title={linkTitle} className='link-wrapper'>
+                    {subtitle && <p className='card__subtitle'>{subtitle}</p>}
+                    <h1 className='card__title'>{title}</h1>
+                  </SmartLink>
+                  {date && <p className='card__date'>{date}</p>}
                 </div>
-              </div>
-            )}
-            <footer>
-              {footerCh}
-            </footer>
-          </>
+              </header>
+              {description && (
+                <div className='card__body'>
+                  <div className='card__prose'>
+                    <p>{description}</p>
+                  </div>
+                </div>
+              )}
+              <footer className='card__footer'>
+                {footerCh}
+              </footer>
+            </>
         )}
       </div>
     </article>
@@ -58,11 +59,13 @@ if (environment !== 'production') {
   LibCard.propTypes = {
     isLoading: T.bool,
     isFeatured: T.bool,
+    className: T.string,
     url: T.string,
     linkTitle: T.string,
     title: T.string,
     description: T.string,
     subtitle: T.string,
+    date: T.string,
     footerTitle: T.string,
     children: T.node
   }
@@ -102,44 +105,57 @@ export const ToolCard = ({ isLoading, url, subtitle, linkTitle, title, descripti
           <LoadingSkeleton width={1 / 4} />
         </LoadingSkeletonGroup>
       ) : (
-        <>
-          <header className='card__header'>
-            <div className='card__headline'>
-              <SmartLink to={url} title={linkTitle} className='link-wrapper'>
-                {subtitle && <p className='card__subtitle'>{subtitle}</p>}
-                <h1 className='card__title'>{title}</h1>
-              </SmartLink>
-            </div>
-            <LibCardImage
-              linkTo={url}
-              linkTitle={linkTitle}
-              src={image}
-              width={960}
-              height={480}
-              alt='Tool cover'
-            />
-          </header>
-          {description && (
-            <div className='card__body'>
-              <div className='card__prose'>
-                <p>{description}</p>
+          <>
+            <header className='card__header'>
+              <div className='card__headline'>
+                <SmartLink to={url} title={linkTitle} className='link-wrapper'>
+                  {subtitle && <p className='card__subtitle'>{subtitle}</p>}
+                  <h1 className='card__title'>{title}</h1>
+                </SmartLink>
               </div>
-            </div>
-          )}
-          <footer>
-            <SmartLink to={url} title={linkTitle} className='card__go-link'><span>Explore the tool</span></SmartLink>
-          </footer>
-        </>
+              <LibCardImage
+                linkTo={url}
+                linkTitle={linkTitle}
+                src={image}
+                width={960}
+                height={480}
+                alt='Tool cover'
+              />
+            </header>
+            {description && (
+              <div className='card__body'>
+                <div className='card__prose'>
+                  <p>{description}</p>
+                </div>
+              </div>
+            )}
+            <footer className='card__footer'>
+              <SmartLink to={url} title={linkTitle} className='card__go-link'><span>Explore the tool</span></SmartLink>
+            </footer>
+          </>
       )}
     </div>
   </article>
 )
+if (environment !== 'production') {
+  ToolCard.propTypes = {
+    isLoading: T.bool,
+    isFeatured: T.bool,
+    url: T.string,
+    linkTitle: T.string,
+    title: T.string,
+    subtitle: T.string,
+    description: T.string,
+    image: T.string,
+    children: T.node
+  }
+}
 
 export const MediumCard = (props) => (
   <LibCard {...props} footerTitle='Explore the tool'>
     {!props.isLoading && (
       <LibCardFooter>
-        {props.tags.length && (
+        {props.tags && (
           <>
             <h2 className='visually-hidden'>Topics</h2>
             <ul className='topics-list'>
