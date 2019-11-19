@@ -8,7 +8,7 @@ base_def: &base_def
   working_directory: ~/repo
   environment:
     # Dev and Prod branches set in the workflows section. 
-    # - DEVELOPMENT_BRANCH: v2019
+    # - DEVELOPMENT_BRANCH: '2019'
     # - PRODUCTION_BRANCH: master
     - GH_REF: git@github.com:climatescope/climatescope.org.git
     - GH_NAME: "Development Seed"
@@ -138,7 +138,7 @@ workflows:
             - prepare
           filters:
             branches:
-              only: v2019
+              only: '2019'
       - deploy-surge:
           requires:
             - lint
@@ -146,7 +146,7 @@ workflows:
             - build-stage
           filters:
             branches:
-              only: v2019
+              only: '2019'
       - deploy-gh:
           requires:
             - lint
