@@ -233,3 +233,30 @@ export const editions = [
     label: '2018'
   }
 ]
+
+export const languages = [
+  {
+    id: 'en',
+    label: 'English'
+  },
+  {
+    id: 'pt',
+    label: 'Portuguese'
+  },
+  {
+    id: 'es',
+    label: 'Spanish'
+  },
+  {
+    id: 'fr',
+    label: 'French'
+  },
+  {
+    id: 'cn',
+    label: 'Chinese'
+  },
+  {
+    id: 'ru',
+    label: 'Russian'
+  }
+]

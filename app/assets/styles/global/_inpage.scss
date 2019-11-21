@@ -274,6 +274,14 @@
   }
 }
 
+.ipa-language {
+  @extend .button--primary-raised-dark;
+
+  &::after {
+    @extend %collecticon-chevron-down;
+  }
+}
+
 /* Nav
    ========================================================================== */
 

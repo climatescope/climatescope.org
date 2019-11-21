@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: api/methodology.json
+pageId: methodology
 title: Methodology
-id: methodology
 published: true
 ---
 ## Scope

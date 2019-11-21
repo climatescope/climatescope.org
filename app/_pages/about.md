@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: api/about.json
+pageId: about
 title: About Climatescope
 published: true
 ---

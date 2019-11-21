@@ -1,5 +1,46 @@
+{% comment %}
+Multilingual support for pages becomes enabled when the page has a couple of
+needed tags:
+- "pageId": the page identifier which must be the same across all language variations
+- "language": the language of the current page
+- "permalink": the permalink of a multilingual page must be `/api/<pageId>-<language>.json`
+
+Notes:
+It is recommended that the filename included the pageId and language.
+The "pageId" is always required, even if the page is not multilingual.
+The "permalink" for a non multilingual page must be `/api/<pageId>.json`
+
+Full example (front matter):
+  file: license-en.md
+    layout: page
+    permalink: api/license-en.json
+    pageId: license
+    language: en
+    title: License
+
+  file: license-pt.md
+    layout: page
+    permalink: api/license-pt.json
+    pageId: license
+    language: pt
+    title: Licença
+
+{% endcomment %}
+
+{% assign otherLangPages = site.pages | where: "pageId", page.pageId %}
 {
-  "id": {{page.id | jsonify}},
+  "id": {{page.pageId | jsonify}},
   "title": {{page.title | jsonify}},
   "content": {{page.content | jsonify}}
+  {% if otherLangPages.size > 1 and page.language %}
+  ,"language": {{page.language | jsonify}},
+  "availableLanguages": [
+    {% for p in otherLangPages %}
+      {{ p.language | jsonify}}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+  {% endif %}
 }
+
+
