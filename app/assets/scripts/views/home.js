@@ -90,7 +90,7 @@ investment?</h1>
                     onClick={this.onDownloadClick.bind(this, currentReport.url)}
                     target='_blank'
                   >
-                    <span>Report</span>
+                    <span>Full report</span>
                   </SmartLink>
                   <Link to='/key-findings' className='home-cta-button' title='View key findings'><span>Key findings</span></Link>
                 </p>
