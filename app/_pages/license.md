@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: api/license.json
+pageId: license
 title: License
-id: license
 published: true
 ---
 

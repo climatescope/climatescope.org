@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: api/key-findings.json
-
+pageId: key-findings
 title: Key Findings
 ---
 Fuelled by surging electricity demand and sinking technology costs, developing nations are today leading a global clean power transition. This marks a remarkable turnabout from a decade ago when the world's wealthiest countries accounted for the bulk of renewable investment and deployment activity. Developing nations at the time were viewed as holding enormous promise only; wind, solar, geothermal and other clean technologies were regarded as too expensive for mass deployment. 
