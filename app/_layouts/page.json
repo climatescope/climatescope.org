@@ -3,7 +3,7 @@ Multilingual support for pages becomes enabled when the page has a couple of
 needed tags:
 - "pageId": the page identifier which must be the same across all language variations
 - "language": the language of the current page
-- "permalink": the permalink of a multilingual page must be `/api/<pageId>-<language>.json`
+- "permalink": the permalink of a multilingual page (except english) must be `/api/<pageId>-<language>.json`. Since english is considered the default, the english version should not have the language included.
 
 Notes:
 It is recommended that the filename included the pageId and language.
@@ -13,7 +13,7 @@ The "permalink" for a non multilingual page must be `/api/<pageId>.json`
 Full example (front matter):
   file: license-en.md
     layout: page
-    permalink: api/license-en.json
+    permalink: api/license.json
     pageId: license
     language: en
     title: License

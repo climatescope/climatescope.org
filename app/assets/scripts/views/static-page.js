@@ -66,7 +66,7 @@ class StaticPage extends React.Component {
             return (
               <li key={lang.id}>
                 <Link
-                  to={`/${data.id}-${lang.id}`}
+                  to={l === 'en' ? `/${data.id}` : `/${data.id}-${lang.id}`}
                   className={c('drop__menu-item', {
                     'drop__menu-item--active': lang.id === currLang.id
                   })}
