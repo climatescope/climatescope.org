@@ -60,13 +60,27 @@ export const downloadData = {
       size: '3Mb'
     },
     model: {
-      url: '/assets/data/model/climatescope-2018.xlsm',
+      url: '/assets/data/model/climatescope-2019.xlsm',
       title: 'Download Climatescope model in Excel format',
-      label: '2018 (Excel)',
-      size: '14Mb'
+      label: '2019 (Excel)',
+      size: '17Mb'
     }
   },
   previous: [
+    {
+      report: {
+        url: '/assets/data/reports/climatescope-2018-report-en.pdf',
+        title: 'Download full report in PDF',
+        label: '2018',
+        size: '3Mb'
+      },
+      model: {
+        url: '/assets/data/model/climatescope-2018.xlsm',
+        title: 'Download Climatescope model in Excel format',
+        label: '2018 (Excel)',
+        size: '14Mb'
+      }
+    },
     {
       report: {
         url: '/assets/data/reports/climatescope-2017-report-en.pdf',
