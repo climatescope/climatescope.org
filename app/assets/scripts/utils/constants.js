@@ -42,8 +42,8 @@ export const regions = [
     ]
   },
   {
-    id: 'me',
-    name: 'Middle East',
+    id: 'mena',
+    name: 'Middle East and North Africa',
     bounds: [
       [ -37.8641930063429, 13.86496262709737 ],
       [ 124.64557261866406, 38.775672115626094 ]
