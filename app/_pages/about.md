@@ -50,7 +50,8 @@ Caroline Chua, Jennifer Cogburn, Isabelle Edwards, Chris Gadomski, Rohit Gadre, 
 
 #### Europe
 Sandra Esser, Sofia Maia, Daisy Maugouber, Oliver Metcalfe, Stephen Munro, Tara Narayanan
-Latin America and Caribbean
+
+#### Latin America and Caribbean
 Natalia Castilhos Rypl, Laura Castro, Helena Chung, Luiza Demôro, James Ellis, Sofia Maia, Sharon Mustri
 
 ### Special thanks
