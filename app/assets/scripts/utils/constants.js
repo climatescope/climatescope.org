@@ -54,10 +54,10 @@ export const regions = [
 export const downloadData = {
   current: {
     report: {
-      url: '/assets/data/reports/climatescope-2018-report-en.pdf',
+      url: '/assets/data/reports/climatescope-2019-report-en.pdf',
       title: 'Download full report in PDF',
-      label: '2018',
-      size: '3Mb'
+      label: '2019',
+      size: '--Mb'
     },
     model: {
       url: '/assets/data/model/climatescope-2019.xlsm',

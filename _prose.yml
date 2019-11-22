@@ -3,12 +3,14 @@ prose:
     - /app/api
     - /app/assets
     - /app/index.html
+    - /app/404.html
     - /app/humans.txt
     - /app/robots.txt
     - /app/CNAME
     - /app/_includes
     - /app/_layouts
     - /app/_plugins
+    - /app/library
     
     
     # In due time block _prose and _config.
@@ -52,4 +54,83 @@ prose:
           element: "text"
           label: "Api url"
           placeholder: "api/page-name.json"
-          help: "The permalink must follow the 'api/page-name.json' format, where 'page-name' is lowercase with no spaces. This will reflect the page url on the final site."
+          help: "The permalink must follow the 'api/<page-name>.json' format, where 'page-name' is lowercase with no spaces. This will reflect the page url on the final site. If multilingual pages are being used append '-<lang>' to page name. This does not apply to the English version. (Ex: 'api/license.json' and 'api/license-pt.json')"
+      - name: "pageId"
+        field:
+          element: "text"
+          label: "Page identifier"
+          placeholder: "page-id"
+          help: "The page identifier must be lowercase with no spaces. It has to be the same for all language variants of the same page"
+      - name: "language"
+        field:
+          element: "text"
+          label: "Page language"
+          placeholder: "pt"
+          help: "Iso 2 code of language. Leave blank if the page is not multilingual"
+    ## Library
+    "app/_library/insights":
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Page name"
+          placeholder: "Page name"
+      - name: "pageId"
+        field:
+          element: "text"
+          label: "Page identifier"
+          placeholder: "page-id"
+          help: "The page identifier must be lowercase with no spaces."
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Api url"
+          placeholder: "api/library/insights/page-name.json"
+          help: "The permalink must follow the 'api/library/insights/<page-name>.json' format, where 'page-name' is lowercase with no spaces. This will reflect the page url on the final site."
+    "app/_library/updates":
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Page name"
+          placeholder: "Page name"
+      - name: "pageId"
+        field:
+          element: "text"
+          label: "Page identifier"
+          placeholder: "page-id"
+          help: "The page identifier must be lowercase with no spaces."
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Api url"
+          placeholder: "api/library/updates/page-name.json"
+          help: "The permalink must follow the 'api/library/updates/<page-name>.json' format, where 'page-name' is lowercase with no spaces. This will reflect the page url on the final site."
+    "app/_library/off-grid":
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Page name"
+          placeholder: "Page name"
+      - name: "pageId"
+        field:
+          element: "text"
+          label: "Page identifier"
+          placeholder: "page-id"
+          help: "The page identifier must be lowercase with no spaces."
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Api url"
+          placeholder: "api/library/off-grid/page-name.json"
+          help: "The permalink must follow the 'api/library/off-grid/<page-name>.json' format, where 'page-name' is lowercase with no spaces. This will reflect the page url on the final site."
