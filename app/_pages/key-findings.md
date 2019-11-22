@@ -23,7 +23,7 @@ Below is a synopsis of Climatescope 2019’s key findings by topic areas.
 - **Excluding China, new clean energy installations in emerging markets grew 21% and reached a new record, with 36GW comissioned in 2018, up from 30GW in 2017.** This is twice the clean energy capacity added in 2015 and three times the capacity installed in 2013.
 - **Despite progress, the transition is not moving nearly fast enough to address the climate challenge.** In the 102 non-China/India economies surveyed by Climatescope, just 38% of new 2018 capacity added was clean. In almost half the 83 markets that recorded capacity growth in 2018, fossil fuels represented the main technology type deployed. 
 
-### FIGURE 1 and 2
+![Figure 1 and 2](/assets/graphics/content/key-findings/fig1-2.png)
 
 ### Investment
 Capital inflows in support of clean energy power-generating projects tell a similar story. Like capacity additions, investment has been concentrated in traditional markets which saw significant drops in 2018. Meanwhile, a slew of new nations saw clean energy boomlets in 2018 and set new records for investment. 
@@ -35,7 +35,7 @@ Capital inflows in support of clean energy power-generating projects tell a simi
 - **Development banks represent the largest single foreign investor group and deployed a record volume of capital for clean energy in 2018.**  These institutions, which include the World Bank and others, invested $6.5 billion, up from $4.5 billion in 2017. 
 - **Italian utility Enel remains the top overall provider of capital to clean energy assets in developing countries with $7.6 billion invested to date.** The World Bank, Germany’s KfW and the U.S. Overseas Private Investment Corporation remain familiar names in the top ranks of clean energy investors between 2009 and 2018.
 
-### FIGURE 3 and 4
+![Figure 3 and 4](/assets/graphics/content/key-findings/fig3-4.png)
 
 ### Growth drivers
 
@@ -47,7 +47,7 @@ Still, this is not the case everywhere. In Turkey and in the nations of Southeas
 
 - **The cost-competitiveness of renewables in developing countries has historically been hampered by higher-priced domestic capital.** As renewable power projects are capital-intensive, the cost of finance available to project developers has historically resulted in  segregation between wealthy and less developed nations. In OECD countries, the benchmark weighted average cost of capital (WACC) BNEF tracked for wind and PV projects in 2017-18 ranged from 2.0-7.1%. In emerging economies, the benchmark ranged from 4.4-15%.
 
-### FIGURE 5 and 6
+![Figure 5 and 6](/assets/graphics/content/key-findings/fig5-6.png)
 
 - **Lowering the cost of capital is one of the most effective ways to accelerate the crossover points between clean energy and both fossil fuel-fired plants.** BNEF has identified that subsidized capital has the potential to substantially speed the transition from fossil-fuelled power generation to renewable energy in developing economies.
 - **Policy action will be required in markets where newly built clean energy plants cannot yet undercut the economics of existing fossil plants on an LCOE basis.** So far, Chile is the only emerging market where the government and utilities have made serious commitments to phasing out coal generation.
