@@ -201,13 +201,13 @@ export const tools = [
     url: '/clean-energy-investments',
     title: 'Use the Clean Energy Investment',
     label: 'Clean Energy Investment',
-    description: 'Who backs clean energy in emerging markets?',
+    description: 'Tracking cross-border finance flows',
     image: 'feat-tool-thumb--clean-energy-investments.jpg'
   },
   {
     url: '/capacity-generation',
     title: 'Use the Capacity Generation',
-    label: 'Capacity Generation',
+    label: 'Capacity & Generation',
     description: 'Who has the most (and least) clean energy today?',
     image: 'feat-tool-thumb--capacity-generation.jpg'
   },
