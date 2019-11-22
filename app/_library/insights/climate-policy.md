@@ -6,7 +6,7 @@ id: Clean-Energy-and-the-Paris-Promises
 description: Every Climatescope nation signed the 2015 Paris Agreement to address climate change.  But which countries followed through with the needed policies at home? Which haven't?
 published: true
 download_source: /en/download/insights/climatescope-2017-paris-promises.pdf
-
+date: 2017-11-14
 featured: false
 frontpage_order: 10
 ---

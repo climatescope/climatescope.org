@@ -4,6 +4,7 @@ title: "Press Release: With new pledges and new projects, developing countries t
 permalink: api/library/updates/climatescope-2016-launch-en.json
 weight: 1
 description: Key group of emerging nations builds 18% more renewable capacity than wealthier countries and four in five have now set national clean energy targets
+date: 2016-12-15
 ---
 <p><center><strong>Key group of emerging nations builds 18% more renewable capacity than wealthier countries and four in five have now set national clean energy targets.</strong></center></p>
 

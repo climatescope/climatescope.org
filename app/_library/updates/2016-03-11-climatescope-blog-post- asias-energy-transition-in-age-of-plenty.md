@@ -5,6 +5,7 @@ id: test-2016-03-11
 title: Test blog post
 permalink: api/library/updates/test.json
 description: Test blog post description
+date: 2016-03-11
 ---
 
 ##ASIA’S ENERGY TRANSITION IN AN AGE OF PLENTY

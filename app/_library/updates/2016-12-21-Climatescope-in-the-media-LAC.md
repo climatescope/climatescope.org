@@ -4,6 +4,7 @@ id: Climatescope-in-the-media-LAC
 title: Climatescope in the media - Latin America highlights
 permalink: api/library/updates/Climatescope-in-the-media-LAC.json
 description: 
+date: 2016-12-21
 ---
 ## CLIMATESCOPE IN THE MEDIA - LATIN AMERICA HIGHLIGHTS
 

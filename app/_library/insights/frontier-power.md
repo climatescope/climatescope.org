@@ -6,7 +6,7 @@ id: frontier-power
 description: This report summarizes the highlights from Bloomberg New Energy Finance’s research on distributed energy in emerging markets undertaken in the last year.
 published: true
 download_source: null 
-
+date: 2017-11-14
 featured: false
 ---
 ## Summary

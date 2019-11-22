@@ -5,6 +5,7 @@ id: blog-post
 title: blog post
 permalink: api/library/updates/blog-post.json
 description: Off-grid solar market trends
+date: 2016-03-03
 ---
 
 

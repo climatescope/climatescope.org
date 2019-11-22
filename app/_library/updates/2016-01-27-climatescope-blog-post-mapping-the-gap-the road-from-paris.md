@@ -5,6 +5,7 @@ id: test
 title: Test blog post
 permalink: api/library/updates/test.json
 description: mapping the gap -the road from paris
+date: 2016-01-27
 ---
 
 ##<b>MAPPING THE GAP: THE ROAD FROM PARIS</b>

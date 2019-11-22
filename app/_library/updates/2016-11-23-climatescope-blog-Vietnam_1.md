@@ -5,6 +5,7 @@ id: test
 title: Test blog post
 permalink: api/library/updates/test.json
 description: Test blog post description
+date: 2016-11-23
 ---
 ## <b>THE NEXT FIFTEEN YEARS THAT WILL (RE)DEFINE VIETNAM’S ENERGY INDUSTRY</b>
 

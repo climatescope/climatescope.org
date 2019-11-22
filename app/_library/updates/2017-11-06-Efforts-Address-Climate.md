@@ -5,6 +5,7 @@ id: Efforts-Address-Climate
 title: Efforts to Address Climate Through Clean Energy Lag in Emerging Markets (Press Release)
 permalink: api/library/updates/Efforts-Address-Climate.json
 description: Two years post-Paris, Climatescope research from Bloomberg New Energy Finance highlights slowing investment from OECD countries and limited policy-making follow-through in non-OECD nations.
+date: 2017-11-06
 ---
 <b>Two years post-Paris, Climatescope research from Bloomberg New Energy Finance highlights slowing investment from OECD countries and limited policy-making follow-through in non-OECD nations.</b>
 

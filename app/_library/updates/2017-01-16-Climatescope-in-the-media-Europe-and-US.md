@@ -4,6 +4,7 @@ id: Climatescope-in-the-media-Europe-and-US-highlights
 title: Climatescope in the Media – Europe and US Highlights
 permalink: api/library/updates/Climatescope-in-the-media-Europe-and-US-highlights.json
 description: 
+date: 2017-01-16
 ---
 ## CLIMATESCOPE IN THE MEDIA – EUROPE AND US HIGHLIGHTS
 

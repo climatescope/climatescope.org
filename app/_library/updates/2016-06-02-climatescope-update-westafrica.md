@@ -4,6 +4,7 @@ id: 2016-06-02-climatescope-update-westafrica
 title: Mixed results for West Africa in Climatescope 2015 
 permalink: api/library/updates/2016-06-02-climatescope-update-westafrica.json
 description: West Africa is home to some of the most vibrant economies on the continent. But is this reflected in the clean energy sector? 
+date: 2016-06-02
 ---
 ##<b>WEST AFRICA IN CLIMATESCOPE 2015</b>
 

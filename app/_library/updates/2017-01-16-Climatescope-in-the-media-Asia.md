@@ -4,6 +4,7 @@ id: Climatescope-in-the-media-Asia
 title: Climatescope in the Media - Asia Highlights
 permalink: api/library/updates/Climatescope-in-the-media-Asia.json
 description: 
+date: 2017-01-16
 ---
 ## CLIMATESCOPE IN THE MEDIA - ASIA HIGHLIGHTS
 

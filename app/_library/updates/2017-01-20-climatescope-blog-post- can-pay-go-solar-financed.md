@@ -5,6 +5,7 @@ id: PAYG-solar
 title: How Can Pay-as-Go Solar Be Financed?
 permalink: api/library/updates/PAYG-solar.json
 description: Test blog post description
+date: 2017-01-20
 ---
 
 Pay-as-you-go solar companies are the start-up community’s proposed answer to the challenge of 1.2bn people living outside the reach of the electricity grid. To scale, they need debt capital. Lots of it. Some operators are creating structured finance products to cut costs and address more potential investors.

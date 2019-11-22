@@ -5,6 +5,7 @@ id: test
 title: blog post
 permalink: api/library/updates/test.json
 description: FINANCING INDIA'S CLEAN ENERGY TRANSITION
+date: 2016-11-01
 ---
 
 ##<b>FINANCING INDIA'S CLEAN ENERGY TRANSITION</b>

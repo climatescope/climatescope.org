@@ -5,6 +5,7 @@ id: test
 title: Test blog post
 permalink: api/library/updates/test.json
 description: Test blog post description
+date: 2016-11-25
 ---
 
 ## <b>TO BOLDLY GO WHERE NO GRID HAS GONE BEFORE: THE COMPELLING CASE FOR OFF-GRID POWER IN MOZAMBIQUE</b>

@@ -4,6 +4,7 @@ id: SEforAll-Africa-Hub
 title: A Growing Number of African Nations Take Concrete Steps in Favour of Renewables With the Support of SEforAll
 permalink: api/library/updates/SEforAll-Africa-Hub.json
 description: 
+date: 2017-02-16
 ---
 
 The Sustainable Energy for All (SEforAll) Africa Hub is a partnership of African institutions hosted by the African Development Bank, working to coordinate and facilitate the development of clean energy in African countries. It supports countries in the region to create a series of coherent steps aimed at assessing existing conditions, setting long-term objectives and promoting investment opportunities in the energy sector.

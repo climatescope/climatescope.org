@@ -4,7 +4,7 @@ id: climatescope-2015-launches
 title: Climatescope 2015 goes live!
 permalink: api/library/updates/climatescope-2015-launches.json
 description: This year's edition of Climatescope officially goes live on 23 November. Read the official press release here.
-
+date: 2015-11-23
 featured: false
 ---
  

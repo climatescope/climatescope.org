@@ -5,6 +5,7 @@ title: "Solar Capacity Jumps by More than Half in Developing Nations (Press Rele
 permalink: api/library/updates/Climatescope-2017-press-release.json
 weight: 1
 description: Despite a down year for clean energy investment, 2016 photovoltaic capacity deployment scaled new heights in less developed countries.
+date: 2017-11-28
 ---
 *London, Washington D.C. and Shanghai, November 28, 2017* – New solar-powered generating capacity is growing at a crackling pace in emerging markets. The growth is fuelled by low-priced equipment and innovative new applications that are expanding energy access for millions, Bloomberg New Energy Finance (BNEF) finds in a comprehensive new study of clean energy activity in key developing nations.
 

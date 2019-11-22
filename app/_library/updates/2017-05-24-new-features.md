@@ -5,6 +5,7 @@ id: new-features
 title: New features!
 permalink: api/library/updates/new-features.json
 description: New features
+date: 2017-05-24
 ---
 
 Dear members of the Climatescope community, 
