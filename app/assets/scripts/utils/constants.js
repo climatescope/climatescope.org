@@ -57,7 +57,7 @@ export const downloadData = {
       url: '/assets/data/reports/climatescope-2019-report-en.pdf',
       title: 'Download full report in PDF',
       label: '2019',
-      size: '--Mb'
+      size: '2Mb'
     },
     model: {
       url: '/assets/data/model/climatescope-2019.xlsm',
