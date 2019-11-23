@@ -16,6 +16,7 @@ import RedirectRoute from './redirect-route'
 import Home from './views/home'
 import StaticPage from './views/static-page'
 import Library from './views/library'
+import LibraryCType from './views/library-ctype'
 import Policies from './views/policies-hub'
 import Policy from './views/policies-page'
 import Results from './views/results'
@@ -40,6 +41,8 @@ const Root = () => (
         <Route exact path='/' component={Home}/>
         <Route exact path='/results' component={Results}/>
         <Route exact path='/results/:geoIso' component={Geography}/>
+        <Route exact path='/library/:ctypes/:page' component={StaticPage}/>
+        <Route exact path='/library/:ctypes' component={LibraryCType}/>
         <Route exact path='/library' component={Library}/>
         <Route path='/compare/:geoIsos*' component={Compare}/>
         <Route exact path='/policies/:policyId' component={Policy}/>

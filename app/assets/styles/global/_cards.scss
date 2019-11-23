@@ -169,6 +169,12 @@ a.card__contents {
   }
 }
 
+.card__date {
+  @extend .heading-alt;
+  font-weight: $heading-font-bold;
+  margin: 0.75rem 0 0 0;
+}
+
 
 /* Card body
    ========================================================================== */
@@ -198,6 +204,8 @@ a.card__contents {
    ========================================================================== */
 
 .card__footer {
+  margin-top: auto;
+
   > *:last-child {
     margin-bottom: 0;
   }

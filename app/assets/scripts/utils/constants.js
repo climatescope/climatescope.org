@@ -42,8 +42,8 @@ export const regions = [
     ]
   },
   {
-    id: 'me',
-    name: 'Middle East',
+    id: 'mena',
+    name: 'Middle East and North Africa',
     bounds: [
       [ -37.8641930063429, 13.86496262709737 ],
       [ 124.64557261866406, 38.775672115626094 ]
@@ -54,19 +54,33 @@ export const regions = [
 export const downloadData = {
   current: {
     report: {
-      url: '/assets/data/reports/climatescope-2018-report-en.pdf',
+      url: '/assets/data/reports/climatescope-2019-report-en.pdf',
       title: 'Download full report in PDF',
-      label: '2018',
-      size: '3Mb'
+      label: '2019',
+      size: '2Mb'
     },
     model: {
-      url: '/assets/data/model/climatescope-2018.xlsm',
+      url: '/assets/data/model/climatescope-2019.xlsm',
       title: 'Download Climatescope model in Excel format',
-      label: '2018 (Excel)',
-      size: '14Mb'
+      label: '2019 (Excel)',
+      size: '17Mb'
     }
   },
   previous: [
+    {
+      report: {
+        url: '/assets/data/reports/climatescope-2018-report-en.pdf',
+        title: 'Download full report in PDF',
+        label: '2018',
+        size: '3Mb'
+      },
+      model: {
+        url: '/assets/data/model/climatescope-2018.xlsm',
+        title: 'Download Climatescope model in Excel format',
+        label: '2018 (Excel)',
+        size: '14Mb'
+      }
+    },
     {
       report: {
         url: '/assets/data/reports/climatescope-2017-report-en.pdf',
@@ -149,22 +163,25 @@ export const downloadData = {
   ]
 }
 
-export const medium = {
+export const libraryCType = {
   pages: [
     {
-      url: 'https://medium.com/climatescope/off-grid-quarterly',
+      id: 'off-grid',
+      url: '/library/off-grid-quarterly',
       title: 'View Off Grid Quarterly section',
       label: 'Off Grid Quarterly',
       description: 'BloombergNEF\'s quarterly review of business and policy activity in the off-grid and weak-grid sectors across the globe.'
     },
     {
-      url: 'https://medium.com/climatescope/insights',
+      id: 'insight',
+      url: '/library/insights',
       title: 'View insights section',
       label: 'Insights',
       description: 'Series of research notes on what drives the energy transition globally with a focus on emerging markets. Read about how developers can mitigate risk, what tools governments have to accelerate renewables deployment, what role clean energy can play in increasing access to power, and more.'
     },
     {
-      url: 'https://medium.com/climatescope/updates',
+      id: 'update',
+      url: '/library/updates',
       title: 'View updates section',
       label: 'Updates',
       description: 'Archive of updates and posts from BloombergNEF and partner organisations.'
@@ -184,13 +201,13 @@ export const tools = [
     url: '/clean-energy-investments',
     title: 'Use the Clean Energy Investment',
     label: 'Clean Energy Investment',
-    description: 'Who backs clean energy in emerging markets?',
+    description: 'Tracking cross-border finance flows',
     image: 'feat-tool-thumb--clean-energy-investments.jpg'
   },
   {
     url: '/capacity-generation',
     title: 'Use the Capacity Generation',
-    label: 'Capacity Generation',
+    label: 'Capacity & Generation',
     description: 'Who has the most (and least) clean energy today?',
     image: 'feat-tool-thumb--capacity-generation.jpg'
   },
@@ -223,5 +240,37 @@ export const editions = [
     url: 'http://2017.global-climatescope.org/en/',
     title: 'View 2017 edition of Climatescope',
     label: '2017'
+  },
+  {
+    url: 'http://2018.global-climatescope.org/',
+    title: 'View 2018 edition of Climatescope',
+    label: '2018'
+  }
+]
+
+export const languages = [
+  {
+    id: 'en',
+    label: 'English'
+  },
+  {
+    id: 'pt',
+    label: 'Portuguese'
+  },
+  {
+    id: 'es',
+    label: 'Spanish'
+  },
+  {
+    id: 'fr',
+    label: 'French'
+  },
+  {
+    id: 'cn',
+    label: 'Chinese'
+  },
+  {
+    id: 'ru',
+    label: 'Russian'
   }
 ]

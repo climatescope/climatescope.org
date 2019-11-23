@@ -8,7 +8,7 @@
 
 .prose {
   font-size: $base-font-size;                           // 16px
-  line-height: $base-line-height;                       // 24px
+  line-height: 1.75;                                    // 32px
 
   > * {
     margin-bottom: $base-font-size * $base-line-height; // same as line-height
@@ -32,6 +32,14 @@
   .align-right {
     float: right;
     margin-left:  $global-spacing * 1.5;
+  }
+
+  ul, ol {
+    margin-left: $global-spacing * 3;
+
+    & > li:not(:last-child) {
+      margin-bottom: $global-spacing;
+    }
   }
 }
 

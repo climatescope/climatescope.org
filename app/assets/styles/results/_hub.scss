@@ -146,11 +146,11 @@
   height: 0.5rem;
   border-radius: $full-border-radius;
   text-align: center;
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-family: $heading-font-family;
   font-weight: $heading-font-bold;
   color: #fff;
-  background: shade($link-color, 28%);
+  background: rgba($base-color, 0.8);
   box-shadow: 0 0 0 $base-border-width $base-alpha-color;
   line-height: 0.5rem;
   vertical-align: middle;

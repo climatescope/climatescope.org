@@ -127,3 +127,18 @@ export function baseAPIReducer (state, action, actionName) {
   }
   return state
 }
+
+/**
+ * make an array fron other array, consider a number pages and page
+ *
+ * @param {array} array The list of publications.
+ * @param {int} pageSize The size for every page
+ * @param {int} pageNumber The name of page
+ */
+export function paginateFake (array, pageSize, pageNumber) {
+  --pageNumber // because pages logically start with 1, but technically with 0
+  // for paginate
+  return array.slice(pageNumber * pageSize, (pageNumber + 1) * pageSize)
+  // for one list in paginate (load more)
+  // return array.slice(0, (pageNumber + 1) * pageSize)
+}

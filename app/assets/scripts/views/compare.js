@@ -34,7 +34,7 @@ import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-ske
 import OnGrid from '../components/on-grid'
 import { ParameterBreakdown } from '../components/parameters'
 import AvailabilityOfPolicies from '../components/con--availability-polices'
-import AreaChart, { memoizedComputeAreaChartData } from '../components/area-chart';
+import AreaChart, { memoizedComputeAreaChartData } from '../components/area-chart'
 
 const getGeoISOFromUrl = (params = '') => {
   const split = params.split('/')

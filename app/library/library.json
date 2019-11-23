@@ -1,0 +1,24 @@
+---
+permalink: api/library/insights.json
+published: true
+---
+{% assign comma = false %}
+{% assign posts = site.library | sort:"date" | reverse %}
+[
+  {% for post in posts %}
+    {% unless post.hidden == true %}
+          {% if comma %},{% endif %}
+          {% assign comma = true %}
+          {
+            "id":"{{ post.id }}",
+            "title":"{{ post.title }}",
+            "url":"{{ post.url }}",
+            "description":"{{ post.description }}",
+            "download":"{{ post.download_source }}",
+            "date":"{{ post.date }}",
+            "download_source":"{{ post.download_source }}",
+            "type":"{{ post.type }}"
+          }
+    {% endunless %}
+  {% endfor %}
+]
