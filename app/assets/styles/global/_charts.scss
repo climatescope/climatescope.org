@@ -318,12 +318,16 @@
 /* Area chart gradients */
 
 $energy-type: (
-  ("solar", $infograph-solar),
-  ("wind", $infograph-wind),
-  ("small-hydro", $infograph-small-hydro),
   ("biomass-waste", $infograph-biomass-waste),
   ("geothermal", $infograph-geothermal),
+  ("small-hydro", $infograph-small-hydro),
+  ("solar", $infograph-solar),
+  ("pv", $infograph-solar),
+  ("wind-onshore", $infograph-wind),
   ("other", $infograph-other),
+  ("wind-offshore", $infograph-other),
+  ("pumped-hydro", $infograph-other),
+  ("solar-thermal", $infograph-other),
   ("investment", $infograph-geothermal)
 );
 
