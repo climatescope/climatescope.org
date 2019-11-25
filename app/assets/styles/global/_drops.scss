@@ -406,8 +406,12 @@
  * "dpi-" prefix stands for "drop menu icons"
  */
 
-.dpi-twitter::before {
+ .dpi-twitter::before {
   @extend %collecticon-brand-twitter;
+}
+
+.dpi-linkedin::before {
+  @extend %collecticon-brand-linkedin;
 }
 
 .dpi-facebook::before {
