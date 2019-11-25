@@ -13,7 +13,7 @@ const MetaTags = ({ title, description, imgUrl, children }) => {
 
       {/* Twitter */}
       <meta name='twitter:title' content={title} />
-      {imgUrl ? <meta name='twitter:image:src' content={imgUrl} /> : null}
+      {imgUrl ? <meta name='twitter:image' content={imgUrl} /> : null}
       {description ? <meta name='twitter:description' content={description} /> : null}
 
       {/* OG */}
