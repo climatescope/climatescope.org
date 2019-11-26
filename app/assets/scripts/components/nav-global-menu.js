@@ -25,7 +25,8 @@ class NavGlobalMenu extends React.PureComponent {
             alignment='right' >
             <ul className='drop__menu'>
               <li><Link data-hook='dropdown:close' to='/library/insights' title='View Climatescope Insights' className='drop__menu-item'>Insights</Link></li>
-              <li><Link data-hook='dropdown:close' to='/key-findings' title='View' className='drop__menu-item'>Key Findings</Link></li>
+              <li><Link data-hook='dropdown:close' to='/key-findings' title='View Key Findings' className='drop__menu-item'>Key Findings</Link></li>
+              <li><Link data-hook='dropdown:close' to='/press-release' title='View Press Release' className='drop__menu-item'>Press Release</Link></li>
             </ul>
           </Dropdown>
         </li>
@@ -69,7 +70,8 @@ class NavGlobalMenu extends React.PureComponent {
             alignment='left' >
             <ul className='drop__menu'>
               <li><Link data-hook='dropdown:close' to='/library/insights' title='View Climatescope Insights' className='drop__menu-item'>Insights</Link></li>
-              <li><Link data-hook='dropdown:close' to='/key-findings' title='View' className='drop__menu-item'>Key Findings</Link></li>
+              <li><Link data-hook='dropdown:close' to='/key-findings' title='View Key Findings' className='drop__menu-item'>Key Findings</Link></li>
+              <li><Link data-hook='dropdown:close' to='/press-release' title='View Press Release' className='drop__menu-item'>Press Release</Link></li>
             </ul>
           </Dropdown>
         </li>
