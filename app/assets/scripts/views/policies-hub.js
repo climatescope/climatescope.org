@@ -22,7 +22,7 @@ import ShareOptions from '../components/share'
  */
 const prepareFilter = (data = []) => ([
   { value: 'all', label: 'All' },
-  ...data.map(d => ({ value: d.id, label: d.name })).sort((a, b) => a > b ? 1 : -1)
+  ...data.map(d => ({ value: d.id, label: d.name })).sort((a, b) => a.label.localeCompare(b.label))
 ])
 
 class Policies extends React.Component {
