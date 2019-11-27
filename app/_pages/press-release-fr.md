@@ -8,9 +8,9 @@ title: Press Release
 published: true
 ---
 
-# **UN RALENTISSEMENT DU FINANCEMENT EN CHINE ENTRAÎNE UNE BAISSE DES INVESTISSEMENTS EN ENERGIES PROPRES DANS LES PAYS EN DEVELOPPEMENT**
+#**UN RALENTISSEMENT DU FINANCEMENT EN CHINE ENTRAÎNE UNE BAISSE DES INVESTISSEMENTS EN ENERGIES PROPRES DANS LES PAYS EN DEVELOPPEMENT**
 
-## **L'étude annuelle Climatescope de BloombergNEF révèle que la combustion de charbon a atteint de nouveaux sommets dans 104 marchés émergents**
+##**L'étude annuelle Climatescope de BloombergNEF révèle que la combustion de charbon a atteint de nouveaux sommets dans 104 marchés émergents**
 
 25 novembre 2019, Londres, New York, São Paulo – Les nouveaux investissements dans l'énergie éolienne et solaire ainsi que d'autres projets d'énergie propre dans les pays en développement ont chuté de manière drastique en 2018, principalement du fait d'un ralentissement du côté de la Chine. En glissement annuel, le nombre de nouvelles centrales électriques est demeuré constant mais le volume de l'électricité dérivée du charbon a atteint un nouveau sommet selon l'étude Climatescope (www.global-climatescope.org), une enquête annuelle menée par BloombergNEF (BNEF) dans 104 marchés émergents.
 
