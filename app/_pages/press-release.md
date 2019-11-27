@@ -39,3 +39,11 @@ This year’s Climatescope results suggest substantial additional work will be r
 In addition to presenting macro trends on clean energy in developing countries, Climatescope scores and ranks individual markets on their overall potential for clean energy development. For the first time since the country was included in the survey in 2014, India was the highest-scoring nation, due to a variety of factors, including supportive policies. The rest of the top five included Chile, Brazil, China, and Kenya, in that order.
 
 Climatescope is a public resource intended to help developers and investors screen opportunities, policy-makers understand policy frameworks around the globe, and researchers access timely, but difficult to collect, data. The complete Climatescope survey, including complete data sets for all 104 emerging markets, can be found at www.global-climatescope.org.
+
+**About BloombergNEF**
+
+BloombergNEF (BNEF) is a leading provider of primary research on clean energy, advanced transport, digital industry, innovative materials, and commodities. With a team of experts spread across six continents, BNEF leverages the world’s most sophisticated data sets to create clear perspectives and in-depth forecasts that frame the financial, economic and policy implications of industry-transforming trends and technologies. Available online, on mobile and on the Terminal, BNEF is powered by Bloomberg’s global network of 19,000 employees in 176 locations, reporting 5,000 news stories a day. Visit https://about.bnef.com/ or request more information.
+
+**About Bloomberg**
+
+Bloomberg, the global business and financial information and news leader, gives influential decision makers a critical edge by connecting them to a dynamic network of information, people and ideas. The company’s strength – delivering data, news and analytics through innovative technology, quickly and accurately – is at the core of the Bloomberg Terminal. Bloomberg’s enterprise solutions build on the company’s core strength: leveraging technology to allow customers to access, integrate, distribute and manage data and information across organizations more efficiently and effectively. For more information, visit Bloomberg.com/company or request a demo.
