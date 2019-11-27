@@ -8,11 +8,9 @@ title: Press Release
 published: true
 ---
 
-Press Release in Portuguese
+**#INVESTIMENTOS EM ENERGIA LIMPA EM PAÍSES EM DESENVOLVIMENTO DIMINUEM COM REDUÇÃO DE FINANCIAMENTO NA CHINA**
 
-#INVESTIMENTOS EM ENERGIA LIMPA EM PAÍSES EM DESENVOLVIMENTO DIMINUEM COM REDUÇÃO DE FINANCIAMENTO NA CHINA
-
-##Geração termelétrica a carvão tem aumento recorde em 104 mercados emergentes monitorados no estudo anual Climatescope da BloombergNEF
+**##Geração termelétrica a carvão tem aumento recorde em 104 mercados emergentes monitorados no estudo anual Climatescope da BloombergNEF**
 
 Londres, Nova York, São Paulo, 25 de novembro de 2019 – Novos investimentos em energia eólica, solar e outros projetos de energia limpa em países em desenvolvimento caíram bruscamente em 2018 devido, principalmente, à desaceleração na China. Enquanto o número de novas usinas de energia limpa construídas permaneceu estável ano após ano, o volume de eletricidade derivado do carvão alcançou nova alta recorde de acordo com o Climatescope (www.global-climatescope.org), uma pesquisa anual envolvendo 104 mercados emergentes realizada pela empresa de pesquisas BloombergNEF (BNEF).
 
