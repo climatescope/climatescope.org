@@ -8,9 +8,9 @@ title: Press Release
 published: true
 ---
 
-**# LA INVERSIÓN EN ENERGÍA LIMPIA DE LOS PAÍSES EN VÍA DESARROLLO DISMINUYÓ LIDERADO POR LA BAJA INVERSIÓN EN CHINA**
+# **LA INVERSIÓN EN ENERGÍA LIMPIA DE LOS PAÍSES EN VÍA DESARROLLO DISMINUYÓ LIDERADO POR LA BAJA INVERSIÓN EN CHINA**
 
-**## La quema de carbón alcanzó un récord histórico en 104 mercados emergentes de acuerdo  al estudio anual Climatescope  de BloombergNEF**
+## **La quema de carbón alcanzó un récord histórico en 104 mercados emergentes de acuerdo  al estudio anual Climatescope  de BloombergNEF**
 
 Londres, Nueva York, Sao Paulo, 25 de noviembre de 2019 – La inversión en energía eólica, solar, y otros proyectos de energía limpia en naciones en vía de desarrollo se redujeron drásticamente durante 2018, debido en gran parte a una desaceleración en China. Mientras que el número de plantas nuevas de generación de energía renovable completadas permanece al mismo nivel del año anterior, el volumen de energía que se obtiene del carbón ha alcanzado un récord histórico según Climatescope (www.global-climatescope.org), un estudio anual  realizado por BloombergNEF y que cubre 104 mercados emergentes. 
 
