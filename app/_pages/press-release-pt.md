@@ -43,7 +43,9 @@ Além de apresentar as tendências macro de energia limpa em países em desenvol
 O Climatescope é um recurso público que visa ajudar investidores e empreendedores a selecionar oportunidades, autoridades a compreender regulamentos em todo o mundo e pesquisadores a acessar dados recentes de difícil obtenção. A pesquisa Climatescope completa, com dados referentes a todos os 104 mercados emergentes, está disponível em www.global-climatescope.org.
 
 **Sobre BloombergNEF**
+
 BloombergNEF (BNEF) é um fornecedor líder mundial de pesquisa sobre energia limpa, transporte avançado, indústria digital, materiais inovadores e commodities. Com uma equipe de especialistas em seis continentes, a BNEF alavanca os conjuntos de dados mais sofisticados do mundo para criar perspectivas transparentes e previsões aprofundadas que concebem implicações financeiras, econômicas e políticas das tendências e tecnologias que transformam setores. BNEF está disponível online, em aparelhos móveis e no terminal e é alimentada pela rede global da Bloomberg com 19.000 funcionários em 176 locais, reportando 5.000 notícias diariamente. Visitehttps://about.bnef.com/ ou solicite mais informações.
 
 **Sobre a Bloomberg**
+
 A Bloomberg, líder mundial em notícias e informações sobre negócios, conecta influentes tomadores de decisão a uma rede dinâmica de informações, pessoas e ideias. O forte da empresa – a entrega de dados, notícias e análises por meio de tecnologia inovadora, com rapidez e precisão – é a essência do Bloomberg Terminal. É nisso que se baseiam as soluções corporativas da Bloomberg: alavancando tecnologia para que clientes possam acessar, integrar, distribuir e administrar dados e informações entre organizações de modo mais eficiente. Para mais informações, visite o site Bloomberg.com/company ou solicite uma demo.
