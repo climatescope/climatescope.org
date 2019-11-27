@@ -185,8 +185,20 @@ export const libraryCType = {
       title: 'View updates section',
       label: 'Updates',
       description: 'Archive of updates and posts from BloombergNEF and partner organisations.'
+    },
+    {
+      id: 'previous-insights',
+      url: '/library/previous-insights',
+      title: 'Previous insights section',
+      label: 'Previous insights',
+      description: 'Archive of Previous insights from BloombergNEF and partner organisations.'
     }
-  ]
+  ],
+  prevInsights: {
+    id: 'previous-insights',
+    label: 'Previous insights',
+    year: 2017
+  }
 }
 
 export const tools = [

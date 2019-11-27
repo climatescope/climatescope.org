@@ -3,7 +3,7 @@ import { combineReducers } from 'redux'
 
 import { fetchDispatchCacheFactory, baseAPIReducer, paginateFake } from './utils'
 import { baseurl } from '../config'
-
+import { libraryCType } from '../utils/constants'
 // /////////////////////////////////////////////////////////////////////////////
 // Actions
 // /////////////////////////////////////////////////////////////////////////////
@@ -37,6 +37,14 @@ export function fetchLibraryContentType (filters) {
     requestFn: requestLibraryContentType,
     receiveFn: receiveLibraryContentType,
     mutator: (response) => {
+      // Filter Previos insights
+      response.forEach(r => {
+        if (r.type === 'update' && r.date) {
+          if (new Date(r.date.slice(0, 10)).getFullYear() <= libraryCType.prevInsights.year) {
+            r.type = libraryCType.prevInsights.id
+          }
+        }
+      })
       if (qsFilters.contentType !== 'all') {
         response = response.filter(i => { return i.type.includes(qsFilters.contentType) })
       }
