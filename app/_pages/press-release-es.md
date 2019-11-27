@@ -22,7 +22,7 @@ China es el mayor emisor de CO2  en el mundo  así como el mercado más grande d
 
 Sin embargo, la disminución no se limita a China. La inversión en energía renovable en India cayó $2,4 mil millones mientras la de Brasil disminuyó a $2,7 mil millones en comparación con el año anterior. En todos los mercados emergentes encuestados, la inversión de 2018 cayó a $133 mil millones, cifra inferior no solo la cifra total de 2017, pero también la de 2015. En general, la reducción del costo de energía solar y eólica ha jugado un factor considerable en la caída del valor absoluto de inversión en economías emergentes. 
 
-(add image)
+![Figure 1](/assets/images/content/press-release/PR_Fig1_Spanish.png)
 
 "Este año, los resultados del objetivo de Climatescope han sido decepcionantes", indicó Luiza Demôro, quien gestiona el proyecto para BloombergNEF. "Sin embargo, aparte de las naciones más grandes, hemos visto algunos avances importantes y positivos, en términos de nuevas políticas, inversiones e implementación".
 

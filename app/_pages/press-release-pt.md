@@ -22,7 +22,7 @@ A China, a maior emissora de CO2 do mundo e o maior mercado consumidor de energi
 
 No entanto, essa queda não se limitou à China. Fluxos para projetos de energia limpa na Índia e no Brasil diminuíram $2,4 bilhões e $2,7 bilhões, respectivamente, em relação ao ano anterior. Investimentos caíram para $133 bilhões em 2018 em todos os mercados emergentes analisados, ficando abaixo não apenas do valor total de 2017, mas também de 2015. Em geral, a redução nos custos de construção de plantas de energia solar e eólica foi um fator importante na queda do número total de investimento em economias emergentes. 
 
-(add figure)
+![Figure 1](/assets/images/content/press-release/PR_Fig1_Portuguese.png)
 
 "Os resultados da pesquisa Climatescope deste ano são decepcionantes", disse Luiza Demôro, gerente do projeto na BloombergNEF. "No entanto, com exceção dos grandes países, observamos alguns desenvolvimentos importantes e positivos em termos de novas políticas, investimento e implementação de novos projetos."
 

@@ -22,7 +22,7 @@ China, both the world’s largest CO2 emitter and largest market for clean energ
 
 The decline was not confined to China, however. Inflows to clean energy projects in India and Brazil slipped $2.4 billion and $2.7 billion, respectively from the year prior. Across all emerging markets surveyed, 2018 investment fell to $133 billion, lower than not just the 2017 total but the 2015 figure as well. Overall, declining costs for solar and wind played a considerable factor in the fall in absolute dollar investment in emerging economies. 
 
-(add figure)
+![Figure 1](/assets/images/content/press-release/PR_Fig1_English.png)
 
 “This year’s Climatescope headline results are undeniably disappointing,” said Luiza Demôro, who manages the project for BloombergNEF. “However, apart from the very largest nations, we did see some important and positive developments, in terms of new policies, investment, and deployment.”
 

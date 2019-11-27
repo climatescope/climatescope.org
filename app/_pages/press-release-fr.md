@@ -22,7 +22,7 @@ Le rôle de la Chine, à la fois le plus important émetteur de CO2 et le plus i
 
 Cet essoufflement ne s'est pas limité à la Chine. En Inde et au Brésil, les investissements ont diminué de 2,4 et 2,7 milliards de dollars respectivement, par rapport à l'année précédente. Dans l'ensemble des marchés étudiés, les investissements sont passés à 133 milliards de dollars en 2018, tombant sous la valeur de l'année précédente et même sous celle de 2015. Cette chute généralisée des investissements, en dollars absolus, s'explique largement par la baisse des coûts associés à l'énergie solaire et éolienne.
 
-(add image)
+![Figure 1](/assets/images/content/press-release/PR_Fig1_French.png)
 
 « Cette année, les résultats affichés par Climatescope sont sans conteste décevants », a déclaré Luiza Demôro, responsable du projet Climatescope. « Mais, si nous faisons abstraction des très grands pays, nous constatons des développements positifs et significatifs en termes de nouvelles politiques, d'investissements et de déploiement. »
 
