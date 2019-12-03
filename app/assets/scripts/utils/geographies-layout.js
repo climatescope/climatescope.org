@@ -4,11 +4,8 @@ const renewableTypes = [
   'Biomass & Waste',
   'Geothermal',
   'Small Hydro',
-  'Pumped Hydro',
-  'PV',
-  'Solar Thermal',
-  'Wind Offshore',
-  'Wind Onshore'
+  'Solar',
+  'Wind'
 ]
 
 export default [
