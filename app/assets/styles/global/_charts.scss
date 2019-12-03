@@ -322,12 +322,8 @@ $energy-type: (
   ("geothermal", $infograph-geothermal),
   ("small-hydro", $infograph-small-hydro),
   ("solar", $infograph-solar),
-  ("pv", $infograph-solar),
-  ("wind-onshore", $infograph-wind),
+  ("wind", $infograph-wind),
   ("other", $infograph-other),
-  ("wind-offshore", $infograph-other),
-  ("pumped-hydro", $infograph-other),
-  ("solar-thermal", $infograph-other),
   ("investment", $infograph-geothermal)
 );
 
