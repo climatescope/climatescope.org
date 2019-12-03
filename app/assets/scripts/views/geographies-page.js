@@ -188,7 +188,7 @@ class Geography extends React.Component {
                   <div className='inpage__hero-item'>
                     <img src='../assets/graphics/layout/hero--cover.jpg' width='1920' height='1280' alt='Illustration' />
                   </div>
-                  <figcaption className='inpage__hero-caption'>Cover image</figcaption>
+                  <figcaption className='inpage__hero-caption visually-hidden'>Cover image</figcaption>
                 </figure>
                 : <GeographyMap
                   geographyBounds={this.getGeoBounds(geography.iso)}
