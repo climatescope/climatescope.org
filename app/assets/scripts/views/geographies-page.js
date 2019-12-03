@@ -182,10 +182,20 @@ class Geography extends React.Component {
                 {this.renderProfile()}
               </div>
             </div>
-            <GeographyMap
-              geographyBounds={this.getGeoBounds(geography.iso)}
-              geographyISO={isReady() ? geography.iso.toUpperCase() : ''}
-            />
+            {
+              (geography.iso === 'ru' || geography.iso === 'ua')
+                ? <figure className='inpage__hero inpage__hero--cover'>
+                  <div className='inpage__hero-item'>
+                    <img src='../assets/graphics/layout/hero--cover.jpg' width='1920' height='1280' alt='Illustration' />
+                  </div>
+                  <figcaption className='inpage__hero-caption visually-hidden'>Cover image</figcaption>
+                </figure>
+                : <GeographyMap
+                  geographyBounds={this.getGeoBounds(geography.iso)}
+                  geographyISO={isReady() ? geography.iso.toUpperCase() : ''}
+                />
+            }
+
           </header>
 
           <StickyContainer>
