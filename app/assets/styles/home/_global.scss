@@ -53,6 +53,18 @@
   }
 }
 
+.video-cta-button {
+  @extend .button, .button--xlarge, .button--achromic-glass;
+  min-width: 12rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+
+  &::after {
+    @extend %collecticons-circle-play;
+  }
+}
+
+
 
 /* Featured sections
    ========================================================================== */
