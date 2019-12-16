@@ -19,9 +19,11 @@ const contentTypes = libraryCType.pages
 class Home extends React.Component {
   constructor (props) {
     super(props)
+    this.handleOClickShowModal = this.handleOClickShowModal.bind(this)
+    this.handleOutsideClick = this.handleOutsideClick.bind(this)
 
     this.state = {
-      twitterLoaded: false
+      showModal: false
     }
   }
 
@@ -66,6 +68,43 @@ class Home extends React.Component {
       </ol>
     )
   }
+  renderModal () {
+    return (
+      <section className='modal revealed' ref={node => { this.node = node }}
+        data-modal='modal-intro-video' id='modal-intro-video'>
+        <div className='modal__inner'>
+          <header className='modal__header'>
+            <h1 className='modal__title'>Intro video</h1>
+            <a className='close' title='Close' onClick={this.handleOutsideClick} data-modal-dismiss><span>Close</span></a>
+          </header>
+          <div className='modal__body'>
+            <div className='embed-container'>
+              <iframe src='https://player.vimeo.com/video/375982143' frameBorder='0' allowFullScreen={true}
+                webkitallowfullscreen='true' mozallowfullscreen='true' ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+  handleOClickShowModal () {
+    if (!this.state.showModal) {
+      // attach/remove event handler
+      document.addEventListener('click', this.handleOutsideClick, false)
+    } else {
+      document.removeEventListener('click', this.handleOutsideClick, false)
+    }
+    this.setState(prevState => ({
+      showModal: !prevState.showModal
+    }))
+  }
+  handleOutsideClick (e) {
+    const classNameListExit = e.target.classList
+    if (!(classNameListExit.contains('revealed') || classNameListExit.contains('close'))) {
+      return
+    }
+    this.handleOClickShowModal()
+  }
 
   render () {
     const { getData } = this.props.insightList
@@ -82,6 +121,13 @@ class Home extends React.Component {
                 <h1 className='inpage__title'>Which emerging market is the most attractive for clean energy
 investment?</h1>
                 <p>
+                  <button
+                    className='video-cta-button'
+                    onClick={this.handleOClickShowModal}
+                    target='_blank'
+                  >
+                    <span>Watch video</span>
+                  </button>
                   <Link to='/results' className='home-cta-button' title='View results'><span>Ranking</span></Link>
                   <SmartLink
                     to={baseurl + currentReport.url}
@@ -167,6 +213,7 @@ investment?</h1>
             </section>
           </div>
         </section>
+        {this.state.showModal ? this.renderModal() : null}
       </App>
     )
   }
