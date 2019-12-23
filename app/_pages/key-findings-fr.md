@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: api/key-findings.json
+permalink: api/key-findings-fr.json
 pageId: key-findings
-language: en
+language: fr
 
 title: Key Findings
 published: true
