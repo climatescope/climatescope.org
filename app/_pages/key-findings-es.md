@@ -28,7 +28,7 @@ A continuación, se presenta una sinopsis de los hallazgos clave de Climatescope
 * **Excluyendo a China, las nuevas instalaciones de energía limpia en los mercados emergentes crecieron un 21% y alcanzaron un nuevo récord, con 36 GW encargados en 2018, frente a los 30 GW de 2017**. Esto es el doble de la capacidad de energía limpia añadida en 2015 y tres veces la capacidad instalada en 2013.
 * **A pesar de los progresos, la transición no está avanzando con la suficiente rapidez como para hacer frente al desafío climático.** En las 102 economías, que excluye la China e India, estudiadas por Climatescope, sólo el 38% de la nueva capacidad añadida en 2018 era limpia. En casi la mitad de los 83 mercados que registraron un crecimiento de la capacidad en 2018, los combustibles fósiles representaron el principal tipo de tecnología desplegada.
 
-ADD FIGURE
+![Figure 1 and 2](/assets/graphics/content/key-findings/es_figures_1_2.png)
 
 ### Inversión
 
@@ -42,7 +42,7 @@ Las entradas de capital en apoyo de proyectos de generación de energía limpia 
 * **Los bancos de desarrollo representan el mayor grupo de inversores extranjeros y desplegaron un volumen récord de capital para energía limpia en 2018.** Estas instituciones, entre las que se incluyen el Banco Mundial y otras, invirtieron US$6.5 mil millones, frente a los US$4.5 mil millones de 2017.
 * **La empresa italiana de servicios públicos Enel sigue siendo el principal proveedor global de capital para activos de energía limpia en los países en desarrollo, con US$7,600 millones invertidos hasta la fecha.** El Banco Mundial, el KfW de Alemania y la Corporación de Inversión Privada en el Extranjero de Estados Unidos siguen siendo nombres conocidos en las primeras posiciones de inversores en energía limpia entre 2009 y 2018.
 
-ADD FIGURE
+![Figure 3 and 4](/assets/graphics/content/key-findings/es_figures_3_4.png)
 
 ### Impulsores de crecimiento
 
@@ -54,7 +54,7 @@ Sin embargo, este no es el caso en todas partes. En Turquía y en los países de
 
 * **La competitividad de costos de las energías renovables en los países en desarrollo se ha visto históricamente obstaculizada por el aumento de los precios del capital nacional.** Como los proyectos de energía renovable requieren un uso intensivo de capital, el costo del financiamiento disponible para los desarrolladores de proyectos ha resultado históricamente en la segregación entre las naciones ricas y las menos desarrolladas. En los países de la OCDE, el costo medio ponderado del capital (WACC) que BloombergNEF (BNEF) ha monitoreado para proyectos eólicos y fotovoltaicos en 2017-18 oscila entre un 2,0% y un 7,1%. En economías emergentes, el benchmark osciló entre un 4,4% y un 15%.
 
-ADD FIGURE
+![Figure 5 and 6](/assets/graphics/content/key-findings/es_figures_5_6.png)
 
 * **La reducción del costo del capital es una de las formas más eficaces de acelerar los puntos de cruce entre plantas de energía limpia y las de combustibles fósiles.** BNEF ha identificado que el capital subsidiado tiene el potencial de acelerar sustancialmente la transición de la generación de energía a partir de combustibles fósiles a energía renovable en economías en vías de desarrollo.
 * **Será necesario adoptar medidas de política en los mercados en los que las centrales de energía limpia de nueva construcción todavía no puedan socavar la economía de las centrales fósiles existentes sobre la base de un costo nivelado de electricidad (LCOE).** Hasta ahora, Chile es el único mercado emergente en el que el gobierno y las empresas de servicios públicos se han comprometido seriamente a eliminar progresivamente la generación de carbón.

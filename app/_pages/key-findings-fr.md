@@ -27,7 +27,7 @@ Ci-dessous se trouve un résumé par sujet des principales observations tirées 
 * **En excluant la Chine, les nouvelles installations d'énergie propre dans les marchés émergents ont augmenté de 21   en 2018, pour atteindre un record de 36 GW de mises en service, contre 30 GW en 2017.** Ceci représente le double de la capacité d'énergie propre installée en 2015 et le triple de 2013.
 * **En dépit des progrès réalisés, la transition est loin d'être suffisamment rapide pour répondre au défi climatique.** Parmi les 102 économies analysées par Climatescope (hors la Chine et l'Inde), seules 38 % des nouvelles capacités ajoutées en 2018 étaient en énergie propre. Dans près de la moitié des 83 marchés qui ont connu une croissance record des capacités en 2018, les combustibles fossiles ont été le principal type de technologie employé. 
 
-ADD FIGURE
+![Figure 1 and 2](/assets/graphics/content/key-findings/fr_figures_1_2.png)
 
 ### Investissements
 
@@ -41,7 +41,7 @@ Les apports de capitaux pour des projets de production d'électricité à énerg
 * **Les banques de développement représentent le plus grand groupe d'investisseurs étrangers et ont déployé un volume de capital record pour des projets en énergie propre en 2018.** Ces institutions, qui comprennent la Banque mondiale et d'autres, ont investi 6,5 milliards de dollars, soit une augmentation par rapport aux 4,5 milliards de dollars de 2017. 
 * **La compagnie d'électricité italienne Enel demeure le premier fournisseur de capitaux pour des actifs du secteur de l'énergie propre dans les pays en développement, avec 7,6 milliards de dollars investis à ce jour.** La Banque mondiale, la banque allemande KfW et la U.S. Overseas Private Investment Corporation sont des noms familiers dans le haut des classements en matière d'investissements en énergie propre entre 2009 et 2018.
 
-ADD FIGURE
+![Figure 3 and 4](/assets/graphics/content/key-findings/fr_figures_3_4.png)
 
 ### Moteurs de croissance
 
@@ -53,7 +53,7 @@ Toutefois, cela n'est pas encore le cas partout. En Turquie et dans les pays de 
 
 * **La compétitivité du coût des énergies renouvelables dans les pays en développement a historiquement été entravée du fait du coût plus élevé du capital.** Étant donné que les projets en énergie renouvelable exigent d'engager d'énormes montants de capitaux, le coût de financement disponible aux développeurs a historiquement conduit à des disparités entre pays riches et pays moins développés. Dans les pays de l'OCDE, le benchmark du coût moyen pondéré du capital (CMPC) pour des projets d'énergie éolienne et photovoltaïque que BloombergNEF (BNEF) a suivis en 2017-18 s'est situé entre 2,0 et 7,1 %. Dans les pays émergents, le benchmark s'est situé entre 4,4 et 15 %.
 
-ADD FIGURE
+![Figure 5 and 6](/assets/graphics/content/key-findings/fr_figures_5_6.png)
 
 * **Réduire le coût du capital est une des manières les plus efficaces pour arriver plus vite à une situation où les projets d'énergie propre surpassent l'efficacité des centrales à combustibles fossiles.** BNEF a pu déterminer que les subventions ont le potentiel d'accélérer de manière substantielle la transition de centrales à combustibles fossiles en centrales à énergies renouvelables dans les économies en développement.
 * **Une action politique sera nécessaire dans les marchés où les centrales à énergie propre nouvellement construites ne peuvent pas encore rivaliser au niveau économique avec les centrales à combustibles fossiles existantes sur une base de coût actualisé de l'électricité (LCOE en anglais).** Jusqu'à présent, le Chili est le seul marché émergent où le gouvernement et les compagnies d'électricité ont pris des engagements sérieux en matière d'élimination de la production d'électricité à partir du charbon.
