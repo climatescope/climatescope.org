@@ -7,64 +7,67 @@ language: cn
 title: Key Findings
 published: true
 ---
-A cool down in China and several other major economies depressed 2018 clean energy investment across emerging nations and kept overall deployment rates flat year-on-year. Meanwhile, coal-fired generation surged in the 104 markets BloombergNEF assessed for its annual Climatescope survey. Both suggest that despite considerable recent progress, developing countries’ power sector CO2 emissions are rising rapidly.
 
-There were silver linings in 2018, of course. For the second year in a row, emerging nations built more clean than fossil-fueled power-generating capacity. Construction of new coal-fired power plants fell to its lowest level in a decade. Excluding China, clean energy installations grew by 21% year-on-year to hit a new record. And the number of emerging markets with three or more clean energy-friendly policy types on the books rose to 62 of those analyzed. All suggest policy-makers increasingly recognize that renewables are cost-competitive and worth backing. 
+由于中国和其他几个主要经济体增长降温，2018年新兴市场国家清洁能源投资承压，总体部署率与去年同期持平；同时，彭博新能源财经（BloombergNEF）对104个市场进行的Climatescope年度调查显示燃煤发电量激增。这都表明，发展中国家近年来尽管取得了长足的进步，但其电力部门二氧化碳排放却在迅速增加。
 
-Still, given the massive challenge of limiting global warming to 1.5 degrees Celsius, this year’s Climatescope offers a stark reminder of the work ahead. Rapidly growing nations that today are just as rapidly expanding their carbon footprints must reach net zero emissions by 2050. To get there, those currently leading the energy transition must keep growing their clean energy sectors while dormant renewable energy markets must also emerge.
-Below is a synopsis of Climatescope 2019’s key findings by topic areas. 
+当然，2018年也有乐观的一面。新兴国家的清洁能源发电新增装机规模连续第二年大于化石能源，新建燃煤电厂规模则跌至十年来最低水平。除中国外，清洁能源装机同比增长21％，创下新纪录。拥有三种或以上清洁能源友好政策类型的新兴市场数量上升至62个。以上都表明，决策者越来越认识到：可再生能源具有成本竞争力，值得支持。 
 
-### Capacity and generation
+尽管如此，考虑到控制全球变暖在1.5摄氏度以内的巨大挑战，今年的Climatescope调查结果也在提醒人们未来任务艰巨。当今，碳足迹快速增长的高速发展国家到2050年必须达到净零排放。为了实现这一目标，那些目前引领能源转型的国家和地区必须继续发展该领域，仍在休眠的可再生能源市场也必须投入发展。
+以下是2019年Climatescope各主题领域关键分析概要。 
 
-- **In 2018, developing nations added 201GW of new power-generating capacity to their grids with clean energy (non-large hydro renewables) accounting for just over half the total**. A total of 107GW of renewables were installed in emerging economies in 2018. 
-- **The majority of the generation that will come from the new plants commissioned in 2018 will not be clean, however**. Due to wind and solar’s lower capacity factors than coal or gas, less than half the generation from these new plants will be zero-carbon.
-- **Among the clean technologies, solar led the way with 66GW installed in 2018**, followed by wind with 29GW. Small hydro, biomass and geothermal combined saw 12GW added to emerging economies. Fossil fuel-fired capacity accounted for just a third of all new capacity added in developing nations in 2018. Large hydro and nuclear together account for 12% of the capacity installed.
-- **China predominates. Two-thirds (71GW) of all developing nation clean energy capacity was installed in China in 2018.** Still, China clean energy capacity additions slipped 7% from the year prior. 
-- **India is one of the world’s major clean energy players.** The country installed 14GW of wind and solar in 2018. While that was down from 15GW in 2017, India scored best on the Climatescope survey to finish top of the table for the first time. 
-- **New construction of coal-fired power plants fell to its lowest level in a decade in 2018.** After peaking at 84GW of new capacity added in 2015, coal commissionings plummeted to 39GW in 2018. China accounted for approximately two-thirds of this.
-- **Still, generation from burning coal in developing nations has jumped 54% since the start of this decade.** From 2017 to 2018 alone, it spiked 7%, the highest increase since 2013. In 2018, coal accounted for 47% of all power produced in developing economies.
-- **Excluding China, new clean energy installations in emerging markets grew 21% and reached a new record, with 36GW commissioned in 2018, up from 30GW in 2017.** This is twice the clean energy capacity added in 2015 and three times the capacity installed in 2013.
-- **Despite progress, the transition is not moving nearly fast enough to address the climate challenge.** In the 102 non-China/India economies surveyed by Climatescope, just 38% of new 2018 capacity added was clean. In almost half the 83 markets that recorded capacity growth in 2018, fossil fuels represented the main technology type deployed. 
+### **规模和发电**
+* **2018年，发展中国家新增发电装机201GW，其中清洁能源（除大型水电之外的可再生能源）占新增装机的一半略多一点**。当年新兴经济体可再生能源总装机容量为107GW。 
+* **然而从发电量角度考虑，2018年投产的新增电厂却无法做到发电量过半数实现零碳清洁**。这是因为风能和太阳能的利用小时数往往低于煤电和天然气发电，新增清洁能源的电力产出将达不到总量的一半。
+* **2018年太阳能装机容量66GW，为清洁发电能力新增的主力，**其次是风能29GW。新兴经济体小型水电，生物质能和地热能合计增加12GW。相比之下，化石燃料仅占2018年发展中国家新增装机的三分之一。大型水电和核电合计占总装机容量的12%。
+* **中国占据主导地位。2018年，发展中国家清洁能源总装机容量的三分之二（71GW）来自中国。**但是，中国清洁能源增长规模仍较上年下滑了7％。 
+* **印度是世界清洁能源主要市场之一。**该国2018年风电和太阳能装机达14GW。虽然相比2017年的15GW有所下降，但印度在此次Climatescope调查中得分最高，首次荣登榜首。 
+* **2018年的新建燃煤电厂规模跌至十年来最低水平。**在经历了2015年的84GW新增规模峰值之后，2018年的新投产煤电装机跌至39GW。中国约占去年煤电增量的三分之二。
+* **然而从发电量角度考虑，发展中国家的燃煤发电量十年来已跃升54％。**仅从2017年到2018年就飙升了7％，是2013年以来的最高增幅。2018年，煤电占发展中国家总发电量的47％。
+* **除中国外，新兴市场的清洁能源新增装机增长了21%，从2017年的30GW升至2018年的36GW，创历史新高。**这是2015年清洁能源新增规模的两倍，2013年新增的三倍。
+* **尽管取得了这些进展，但能源转型速度还远不足以应对气候挑战。**在Climatescope调查的102个除中国/印度以外的市场中，2018年新增装机中只有38％是清洁能源。而在2018年装机量有所增长的83个市场中，有将近一半市场采用的主要发电类型为化石燃料。 
 
-![Figure 1 and 2](/assets/graphics/content/key-findings/fig1-2.png)
+ADD FIGURE
 
-### Investment
+### 投资
+清洁能源发电项目的支持资金流入也说明了类似的情况。与新增装机类似，投资一直集中在传统市场上，而后者在2018年出现大幅下降。与此同时，许多新兴国家的清洁能源在2018年繁荣发展，并创造了投资新记录。 
 
-Capital inflows in support of clean energy power-generating projects tell a similar story. Like capacity additions, investment has been concentrated in traditional markets which saw significant drops in 2018. Meanwhile, a slew of new nations saw clean energy boomlets in 2018 and set new records for investment. 
-- **In 2018, new clean energy financing for emerging markets totalled $133 billion, down from the peak of $169 billion in 2017.** China accounted for over two-thirds of the emerging markets total and was also responsible for the majority of the 2017-2018 dip in the headline figure. In all, $36 billion less flowed into China clean energy asset finance than in 2017.
-- **Other major markets also saw steep clean energy investment drops.** India and Brazil, for instance, contributed to this global contraction by declining $2.4 and $2.7 billion, respectively from the previous year.  
-- **Clean energy investment is spiking in many less traditional clean energy markets.** When excluding the three biggest markets (China, India and Brazil), clean energy investment jumped to $34 billion in 2018 from $30 billion in 2017. Most notably, Vietnam, South Africa, Mexico and Morocco led the rankings with a combined investment of $16 billion in 2018.  
-- **The vast majority of clean energy capital deployed in emerging markets continues to come from local sources.** This is largely due to the heavy influence of domestic development banks and credit agencies in China and Brazil.
-- **Foreign direct investment (FDI) supporting clean energy set a new record in 2018.** It jumped from $22.4 billion in 2017 to $24.4 billion in 2018. EU-based organizations remain the key foreign capital provider. 
-- **Development banks represent the largest single foreign investor group and deployed a record volume of capital for clean energy in 2018.** These institutions, which include the World Bank and others, invested $6.5 billion, up from $4.5 billion in 2017. 
-- **Italian utility Enel remains the top overall provider of capital to clean energy assets in developing countries with $7.6 billion invested to date.** The World Bank, Germany’s KfW and the U.S. Overseas Private Investment Corporation remain familiar names in the top ranks of clean energy investors between 2009 and 2018.
+* **2018年，新兴市场的清洁能源新增投资总额为1,330亿美元，低于2017年的1,690亿美元峰值。**中国占新兴市场投资总额的三分之二以上，也是2017-2018年整体下降的主因。与2017年相比，流入中国清洁能源投资的总额减少了360亿美元。
+* **其他主要市场清洁能源投资也出现骤降。**例如，印度和巴西分别比上年减少了24亿美元和27亿美元。  
+* **在很多不太传统的清洁能源市场上，投资正在飙升。**除中国、印度和巴西这三个最大的市场外，其他国家的清洁能源投资从2017年的300亿美元攀升至2018年的340亿美元。值得注意的是，越南、南非、墨西哥和摩洛哥较为领先，这几国2018年的投资总计达160亿美元。  
+* **新兴市场中绝大多数清洁能源资本仍来自当地。**这主要是由于中国和巴西的开发银行和信贷机构的巨大影响。
+* **支持清洁能源的外国直接投资（FDI）在2018年创下新纪录。**从2017年的224亿美元跃升至2018年的244亿美元。来自欧盟的机构仍然是主要的外国资本提供者。 
+* **开发银行是最大的单一外国投资者类别，在2018年为清洁能源配置了创纪录的资金总量。**这些机构（包括世界银行等）投资了65亿美元，高于2017年的45亿美元。 
+* **意大利公用事业公司Enel仍然是发展中国家清洁能源资产的最大资金提供者，迄今为止已投资76亿美元。**在2009年至2018年期间，世界银行、德国KfW和美国海外私人投资公司在清洁能源投资者中名列前茅。
 
-![Figure 3 and 4](/assets/graphics/content/key-findings/fig3-4.png)
 
-### Growth drivers
+ADD FIGURE
 
-What has dictated the pace of clean energy build and investment? Certainly, subsidies remain important drivers and markets have historically expanded or contracted as renewables-friendly policies have been rolled out or scaled back.
+### 增长驱动因素
 
-Subsidies are only part of the story, however. Today, two-thirds of the world’s population lives in a country where onshore wind, utility-scale PV, or both, is the cheapest option for new bulk generation. In those nations, wind, solar, and other projects are being built because they represent the cheapest option for the next marginal megawatt of capacity.
+是什么决定了清洁能源建设和投资的步伐？补贴当然仍是重要的驱动力；随着对可再生能源友好型政策的推出或缩减，市场也经历了扩大或收缩。 
 
-Still, this is not the case everywhere. In Turkey and in the nations of Southeast Asia, for instance, coal remains a low-cost option. That country and that region combined have built 35GW of coal since 2014. In many markets, the moment when building and operating a new renewable energy plant should, in theory, trigger the retirement of an existing fossil-fueled plant could take decades to arrive. Fast-forwarding to that juncture will be critical to limiting power sector emissions from these countries.
+但是，补贴只是部分原因。如今，对于全球三分之二人口所在国，陆上风电、地面光伏或风光结合已经是新建大规模发电最便宜的选择。对于有些国家，建造风能、太阳能和其他项目是因为它们是下一兆瓦级装机容量边际成本最低的选择。
 
-- **The cost-competitiveness of renewables in developing countries has historically been hampered by higher-priced domestic capital.** As renewable power projects are capital-intensive, the cost of finance available to project developers has historically resulted in  segregation between wealthy and less developed nations. In OECD countries, the benchmark weighted average cost of capital (WACC) BNEF tracked for wind and PV projects in 2017-18 ranged from 2.0-7.1%. In emerging economies, the benchmark ranged from 4.4-15%.
+不过，并非各国都是如此。例如，在土耳其和东南亚国家，煤电仍然是一种低成本的选择；自2014年以来，这些国家和地区的新建煤电规模已达35GW。从理论上讲，在许多市场中，新建和运营可再生能源电站导致存量化石燃料电厂的退役可能仍需要数十年的时间才能实现。加速转型过程对于控制这些国家电力部门的排放至关重要。 
 
-![Figure 5 and 6](/assets/graphics/content/key-findings/fig5-6.png)
+* **发展中国家可再生能源的竞争力一直受到其国内资金成本较高的阻碍。**由于可再生能源项目是资本密集型项目，从历史上看，项目开发方可获得的融资成本问题导致了发达国家与欠发达国家间的巨大差异。在经合组织国家中，彭博新能源财经（BNEF）追踪的2017-18年度风能和光伏项目的基准加权平均资本成本（WACC）为2.0-7.1％；而在新兴经济体中，此基准范围为4.4-15％。
 
-- **Lowering the cost of capital is one of the most effective ways to accelerate the crossover points between clean energy and fossil fuel-fired plants.** BNEF has identified that subsidized capital has the potential to substantially speed the transition from fossil-fuelled power generation to renewable energy in developing economies.
-- **Policy action will be required in markets where newly built clean energy plants cannot yet undercut the economics of existing fossil plants on an levelized cost of electricity (LCOE) basis.** So far, Chile is the only emerging market where the government and utilities have made serious commitments to phasing out coal generation.
-- **An unbundled power market open to private sector participation is the first step to attract clean energy investment.** Countries where power generation is managed separately from power transmission and distribution have attracted 94% of clean energy project investment into emerging markets over the past five years. 
-- **Strong clean energy policies are also fundamental to facilitating renewable energy investment flows to emerging markets.** Auctions are the mechanism of choice to secure power contracts in nearly half of the emerging markets surveyed. Over the past ten years, these nations have awarded over 133GW of clean energy capacity in power purchase agreements (PPAs) via competitive auctions. One fourth of this was contracted in 2018 alone.
+ADD FIGURE
 
-### Climatescope rankings
+* **降低资金成本是加速清洁能源替代化石燃料发电厂的最有效方法之一。**彭博新能源财经已通过研究发现，补贴有潜力大幅加快发展中经济体从化石燃料发电到可再生能源的转换。
+* **有些市场的新建清洁能源无法在平准化度电成本（LCOE）基础上抗衡现有化石燃料电厂，这将需要采取政策措施。**目前，智利政府和公用事业部门已作出严肃承诺逐步淘汰煤电，是唯一有此举措的新兴市场国家。
+* **向私营企业开放发电领域是吸引清洁能源投资的第一步。**在过去五年中，将发电与输配电分开管理的新兴市场国家吸引了94％的清洁能源项目投资。 
+* **强有力的清洁能源政策也是促进可再生能源投资流向新兴市场的重要基础。**在近半的新兴市场中，竞价是确保电力合同的首选机制。过去的十年中，这些国家通过竞争性拍卖签署电力购买协议（PPA）配置了超过133GW的清洁能源容量；其中四分之一签署于2018年。
 
-This year's Climatescope Emerging Market Outlook represents the collective effort of 45 BloombergNEF analysts who made 23 country visits to collect data and conduct interviews. Once again, the study has been graciously supported by the U.K. Department for International Development.
+### **Climatescope排行榜**
 
-As in past years, Climatescope scored and ranked individual nations. While many of the countries that have appeared near the top of the survey's leaderboard in past years are there again this year, there have been some notable changes:
-- **India is the top scorer in this year’s Climatescope survey.** The Asian nation’s aggressive policy framework and copious capacity expansions propelled it to first place in 2019, from second in 2018. The Indian market is home to one of the world's most ambitious renewable energy targets and has held the largest ever auction for clean power generation.
-- **Chile dropped to second but scored higher than in the prior year.** Through strong clean energy policies and its commitment to phase out coal generation, Chile remains determined to transition to a cleaner matrix. In 2018, the country had 2.3GW of solar and 1.5GW of wind capacity online, representing 16% of total installed capacity.
-- **Brazil rose to third from fourth last year.** Brazil has pioneered competitive auctions to contract clean energy, which led to over 28GW of renewable energy contracted 2009-2018. With the worst of its economic crisis now behind it and four auctions expected over the next two years, clean energy appears poised for renewed growth.
-- **China ranks fourth in Climatescope, though the pace of clean energy investment growth there slowed dramatically in 2018.** A major policy revamp slowed wind and solar installations. Nonetheless, the country still scores highest of all Climatescope countries in terms of future clean energy development opportunities.
-- **Kenya appears for the first time in the Climatescope top five.** The country is gradually increasing its share of non-large hydro renewables by adding solar, wind and geothermal. In 2018, Kenya recorded its highest ever clean energy investment with $1.4 billion. Kenya also accounted for over a third of all 2018 foreign investment into sub-Saharan Africa.
+今年的《Climatescope新兴市场展望》由45位彭博新能源财经分析师合力完成；他们为收集数据和采访进行了23次实地调研。英国国际发展部再次慷慨支持了此项研究。
+
+与过去几年一样，Climatescope对各个国家进行了评分和排名。过去几年名列调查领先榜前列的许多国家今年都再次出现，不过榜单还是出现了一些显著变化：
+
+* **印度是今年Climatescope调查中得分最高的国家。**激进的政策框架和装机的大幅扩张将这个亚洲国家从2018年榜单第二名推升至2019年第一名。印度市场有着全球最雄心勃勃的可再生能源目标之一，举办了有史以来规模最大的清洁发电竞价。
+
+* **智利跌至第二，但得分高于上年。**通过强有力的清洁能源政策及逐步淘汰煤电的承诺和努力，智利仍决心转型到更清洁的能源环境。在2018年，智利已经拥有2.3GW的太阳能和1.5GW的风电，占总装机容量的16％。
+* **巴西从去年的第四名上升到第三名。**巴西率先开展了竞争性拍卖来签约清洁能源，2009-2018年签订超过28GW的可再生能源合约。由于经济危机最严重的时期已经过去，并且在未来两年内预计将进行4次竞价，清洁能源有望恢复增长。
+* **中国2018年清洁能源投资增长速度显著放缓，在Climatescope中位列第四。**中国的一项重大政策调整减缓了风能和太阳能的装机速度。尽管如此，就未来清洁能源发展机会而言，中国仍在所有Climatescope调研的国家中得分最高。
+* **肯尼亚首次进入Climatescope榜单前五名。**通过增加太阳能、风能和地热能应用，肯尼亚正在逐步增加在非水可再生能源中的份额。2018年，肯尼亚创下该国有史以来最高的清洁能源投资记录，达14亿美元。并且，在2018年撒哈拉以南非洲地区外国直接投资总额中，肯尼亚占三分之一以上。 
