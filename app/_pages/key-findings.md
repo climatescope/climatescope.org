@@ -2,7 +2,10 @@
 layout: page
 permalink: api/key-findings.json
 pageId: key-findings
+language: en
+
 title: Key Findings
+published: true
 ---
 A cool down in China and several other major economies depressed 2018 clean energy investment across emerging nations and kept overall deployment rates flat year-on-year. Meanwhile, coal-fired generation surged in the 104 markets BloombergNEF assessed for its annual Climatescope survey. Both suggest that despite considerable recent progress, developing countries’ power sector CO2 emissions are rising rapidly.
 
