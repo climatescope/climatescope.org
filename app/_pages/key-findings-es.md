@@ -1,0 +1,74 @@
+---
+layout: page
+permalink: api/key-findings-es.json
+pageId: key-findings
+language: es
+
+title: Key Findings
+published: true
+---
+
+La baja inversión en China y en varias otras importantes economías redujo la inversión total en energía limpia en 2018 en los países emergentes y mantuvo las tasas de despliegue general sin cambios con respecto al año anterior. Mientras tanto, la generación a carbón aumentó en los 104 mercados que BloombergNEF evaluó para su estudio anual Climatescope. Ambos sugieren que, a pesar de los considerables progresos recientes, las emisiones de CO2 del sector energético de los países en desarrollo están aumentando rápidamente.
+
+En 2018, por supuesto, hubo un rayo de esperanza. Por segundo año consecutivo, los países emergentes construyeron más capacidad de generación de energía limpia que la de los combustibles fósiles. La construcción de nuevas centrales eléctricas de carbón cayó a su nivel más bajo en una década. Excluyendo a China, las instalaciones de energía limpia crecieron un 21% interanual hasta alcanzar un nuevo récord. Y el número de mercados emergentes con tres o más tipos de políticas favorables a la energía limpia en los libros ascendió a 62 de los analizados. Todos sugieren que los responsables de la elaboración de políticas reconocen cada vez más que las energías renovables son competitivas en cuanto a costos y que vale la pena apoyarlas.
+
+Aun así, dado el enorme desafío de limitar el calentamiento global a 1,5 grados centígrados, el Climatescope de este año ofrece un duro recordatorio del trabajo que tenemos por delante. Los países de rápido crecimiento, que hoy en día están expandiendo con la misma rapidez su huella de carbono, deben alcanzar emisiones netas cero para el año 2050. Para lograrlo, aquellos que actualmente lideran la transición energética deben seguir creciendo en sus sectores de energía limpia, mientras que los mercados de energía renovable inactivos también deben emerger.
+
+A continuación, se presenta una sinopsis de los hallazgos clave de Climatescope 2019 por áreas temáticas.
+
+### **Capacidad y generación**
+
+* **En 2018, los países en desarrollo añadieron 201 GW de nueva capacidad de generación de energía a sus redes con energía limpia (excluyendo grandes hidroeléctricas) que representa un poco más de la mitad del total**. En 2018 se instalaron un total de 107 GW de energías renovables en economías emergentes.
+* **Sin embargo, la mayor parte de la generación que provendrá de las nuevas plantas puestas en servicio en 2018 no será limpia**. Debido a que los factores de capacidad de energía eólica y solar son más bajos que los del carbón o el gas, menos de la mitad de la generación de estas nuevas plantas será de cero emisiones de carbono.
+* **Entre la tecnología limpia, la solar lideró con 66 GW instalados en 2018,** seguida por la eólica con 29 GW. Pequeñas centrales hidroeléctricas, biomasa y geotermia combinadas añadieron 12 GW a economías emergentes. La capacidad de combustibles fósiles representó sólo un tercio de toda la nueva capacidad añadida en los países en desarrollo en 2018. Grandes centrales hidroeléctricas y nuclear representan conjuntamente el 12% de la capacidad instalada.
+* **Predomina China. Dos tercios (71 GW) de toda la capacidad de energía limpia de los países en desarrollo fue instalada en China en 2018.** Sin embargo, las adiciones de capacidad de energía limpia de China disminuyeron un 7% con respecto al año anterior.
+* **India es uno de los principales protagonistas de la energía limpia en el mundo.** El país instaló 14 GW de energía eólica y solar en 2018. A pesar de que fue menos de los 15 GW en 2017, India obtuvo la mejor puntuación en la encuesta Climatescope y por primera vez terminó en el primer puesto en tabla.
+* **La nueva construcción de centrales eléctricas de carbón cayó a su nivel más bajo en una década en 2018**. Después de alcanzar un máximo de 84 GW de nueva capacidad añadida en 2015, los encargos de carbón se desplomaron a 39 GW en 2018. China representó aproximadamente dos tercios de esta cantidad.
+* **De todos modos, la generación a partir de la quema de carbón en los países en desarrollo ha aumentado en un 54% desde el comienzo de esta década.** Solo entre 2017 y 2018, aumentó un 7%, el mayor aumento desde 2013. En 2018, el carbón representaba el 47% de toda la energía producida en las economías en vías de desarrollo.
+* **Excluyendo a China, las nuevas instalaciones de energía limpia en los mercados emergentes crecieron un 21% y alcanzaron un nuevo récord, con 36 GW encargados en 2018, frente a los 30 GW de 2017**. Esto es el doble de la capacidad de energía limpia añadida en 2015 y tres veces la capacidad instalada en 2013.
+* **A pesar de los progresos, la transición no está avanzando con la suficiente rapidez como para hacer frente al desafío climático.** En las 102 economías, que excluye la China e India, estudiadas por Climatescope, sólo el 38% de la nueva capacidad añadida en 2018 era limpia. En casi la mitad de los 83 mercados que registraron un crecimiento de la capacidad en 2018, los combustibles fósiles representaron el principal tipo de tecnología desplegada.
+
+![Figure 1 and 2](/assets/graphics/content/key-findings/es_figures_1_2.png)
+
+### Inversión
+
+Las entradas de capital en apoyo de proyectos de generación de energía limpia revelan una historia similar. Al igual que las adiciones de capacidad, la inversión se ha concentrado en los mercados tradicionales que registraron caídas significativas en 2018. Mientras tanto, una gran cantidad de nuevos países vieron el auge de la energía limpia en 2018 y establecieron nuevos récords de inversión.
+
+* **En 2018, el nuevo financiamiento de energía limpia para los mercados emergentes ascendió a un total de US$133 mil millones, lo que representa un descenso con respecto al máximo de US$169 mil millones alcanzado en 2017.** China representó más de dos tercios del total de los mercados emergentes y también fue responsable de la mayor parte de la caída de la cifra principal en 2017-2018. En total, US$36 mil millones menos se destinaron a la financiación de activos de energía limpia en China que en 2017.
+* **Otros mercados importantes también experimentaron fuertes caídas en la inversión en energía limpia**. India y Brasil, por ejemplo, contribuyeron a esta contracción mundial con una disminución de US$2.4 mil millones en India y US$2.7 mil millones en Brasil, en comparación con el año anterior.
+* **La inversión en energía limpia está aumentando en muchos mercados de energía limpia menos tradicionales.** Si se excluyen los tres mercados más grandes (China, India y Brasil), la inversión en energía limpia aumentó de US$30 mil millones en 2017 a US$34 mil millones en 2018. Más notablemente, Vietnam, Sudáfrica, México y Marruecos encabezaron los rankings con una inversión combinada de US$16 mil millones en 2018.
+* **La gran mayoría del capital de energía limpia desplegado en mercados emergentes sigue procediendo de fuentes locales.** Esto se debe en gran medida a la fuerte influencia de los bancos nacionales de desarrollo y de las agencias de crédito en China y Brasil.
+* **La inversión extranjera directa (IED) en apoyo de la energía limpia establece un nuevo récord en 2018.** Pasó de US$22.4 mil millones en 2017 a US$24.4 mil millones en 2018. Organizaciones con sede en la UE siguen siendo el principal proveedor de capital extranjero.
+* **Los bancos de desarrollo representan el mayor grupo de inversores extranjeros y desplegaron un volumen récord de capital para energía limpia en 2018.** Estas instituciones, entre las que se incluyen el Banco Mundial y otras, invirtieron US$6.5 mil millones, frente a los US$4.5 mil millones de 2017.
+* **La empresa italiana de servicios públicos Enel sigue siendo el principal proveedor global de capital para activos de energía limpia en los países en desarrollo, con US$7,600 millones invertidos hasta la fecha.** El Banco Mundial, el KfW de Alemania y la Corporación de Inversión Privada en el Extranjero de Estados Unidos siguen siendo nombres conocidos en las primeras posiciones de inversores en energía limpia entre 2009 y 2018.
+
+![Figure 3 and 4](/assets/graphics/content/key-findings/es_figures_3_4.png)
+
+### Impulsores de crecimiento
+
+¿Qué ha dictado el ritmo de la construcción y la inversión en energía limpia? Ciertamente, los subsidios siguen siendo importantes impulsores y los mercados se han expandido o contraído históricamente a medida que las políticas favorables a las energías renovables se han ido extendiendo o reduciendo. 
+
+Sin embargo, los subsidios son sólo una parte de la historia. Hoy en día, dos tercios de la población mundial vive en un país donde la energía eólica terrestre, la energía fotovoltaica o ambas, son la opción más barata para la nueva generación a granel. En esos países, se están construyendo proyectos eólicos, solares y de otro tipo porque representan la opción más barata para el próximo megavatio marginal de capacidad.
+
+Sin embargo, este no es el caso en todas partes. En Turquía y en los países del sudeste asiático, por ejemplo, el carbón sigue siendo una opción de bajo costo. Ese país y esa región juntos han construido 35 GW de carbón desde 2014. En muchos mercados, el momento en que la construcción y operación de una nueva planta de energía renovable debería, en teoría, desencadenar la retirada de una planta existente de combustibles fósiles podría tardar décadas en llegar. Para limitar las emisiones del sector energético de esos países será fundamental avanzar con rapidez hasta ese punto.
+
+* **La competitividad de costos de las energías renovables en los países en desarrollo se ha visto históricamente obstaculizada por el aumento de los precios del capital nacional.** Como los proyectos de energía renovable requieren un uso intensivo de capital, el costo del financiamiento disponible para los desarrolladores de proyectos ha resultado históricamente en la segregación entre las naciones ricas y las menos desarrolladas. En los países de la OCDE, el costo medio ponderado del capital (WACC) que BloombergNEF (BNEF) ha monitoreado para proyectos eólicos y fotovoltaicos en 2017-18 oscila entre un 2,0% y un 7,1%. En economías emergentes, el benchmark osciló entre un 4,4% y un 15%.
+
+![Figure 5 and 6](/assets/graphics/content/key-findings/es_figures_5_6.png)
+
+* **La reducción del costo del capital es una de las formas más eficaces de acelerar los puntos de cruce entre plantas de energía limpia y las de combustibles fósiles.** BNEF ha identificado que el capital subsidiado tiene el potencial de acelerar sustancialmente la transición de la generación de energía a partir de combustibles fósiles a energía renovable en economías en vías de desarrollo.
+* **Será necesario adoptar medidas de política en los mercados en los que las centrales de energía limpia de nueva construcción todavía no puedan socavar la economía de las centrales fósiles existentes sobre la base de un costo nivelado de electricidad (LCOE).** Hasta ahora, Chile es el único mercado emergente en el que el gobierno y las empresas de servicios públicos se han comprometido seriamente a eliminar progresivamente la generación de carbón.
+* **Un mercado de energía desagregado y abierto a la participación del sector privado es el primer paso para atraer inversiones en energía limpia.** Los países en los que la generación de energía se gestiona por separado de la transmisión y distribución de energía han atraído el 94% de la inversión en proyectos de energía limpia a mercados emergentes en los últimos cinco años.
+* **También es fundamental contar con políticas de energía limpia sólidas para facilitar las corrientes de inversión en energía renovable hacia los mercados emergentes.** Las subastas son el mecanismo elegido para asegurar los contratos de energía en casi la mitad de los mercados emergentes estudiados. En los últimos diez años, estos países han otorgado más de 133 GW de capacidad de energía limpia en acuerdos de compra de energía (PPA) a través de subastas competitivas. Solo en 2018 se contrató una cuarta parte de esta cantidad.
+
+### Ránkings de Climatescope
+
+El Emerging Markets Outlook (Panorama de los Mercados Emergentes) de Climatescope de este año representa el esfuerzo colectivo de 45 analistas de BloombergNEF que realizaron 23 visitas a países para recopilar datos y realizar entrevistas. Una vez más, el estudio recibió el amable apoyo del Departamento de Desarrollo Internacional del Reino Unido.
+
+Como en años anteriores, Climatescope calificó y clasificó a países individuales. Aunque muchos de los países que han aparecido cerca de la cima de la clasificación de la encuesta en los últimos años están allí de nuevo este año, ha habido algunos cambios notables:
+
+* **India es el país con mayor puntaje en la encuesta Climatescope de este año.** El agresivo marco de políticas de la nación asiática y sus abundantes expansiones de capacidad la impulsaron a ocupar el primer lugar en 2019, desde el segundo lugar en 2018. El mercado hindú es el hogar de uno de los objetivos de energía renovable más ambiciosos del mundo y ha celebrado la mayor subasta de generación de energía limpia de la historia.
+* **Chile cayó al segundo lugar, pero obtuvo una puntuación superior a la del año anterior.** A través de fuertes políticas de energía limpia y su compromiso de eliminar gradualmente la generación de carbón, Chile sigue decidido a hacer una transición hacia una matriz más limpia. En 2018, el país contaba con 2,3 GW de potencia solar y 1,5 GW de potencia eólica en línea, lo que representa el 16% de la capacidad total instalada.
+* **Brasil subió al tercer puesto desde el cuarto del año pasado.** Brasil ha sido pionero en subastas competitivas para contratar energía limpia, lo que ha llevado a más de 28 GW de energía renovable contratada entre 2009 y 2018. Con lo peor de su crisis económica ya en el pasado y cuatro subastas previstas para los próximos dos años, la energía limpia parece estar lista para un crecimiento renovado.
+* **China ocupa el cuarto lugar en Climatescope, aunque el ritmo de crecimiento de la inversión en energía limpia se redujo drásticamente en 2018.** Una política de gran envergadura renovó las lentas instalaciones eólicas y solares. No obstante, el país sigue obteniendo la puntuación más alta de todos los países de Climatescope en términos de futuras oportunidades de desarrollo de energía limpia.
+* **Kenia aparece por primera vez en los cinco principales de Climatescope.** El país está aumentando gradualmente su participación en energías hidroeléctricas no grandes mediante la adición de energía solar, eólica y geotérmica. En 2018, Kenia registró su mayor inversión en energía limpia, con US$1,400 millones. Kenia también representó más de un tercio de toda la inversión extranjera de 2018 en el África subsahariana.
