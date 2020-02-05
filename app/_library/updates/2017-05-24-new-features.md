@@ -1,7 +1,7 @@
 ---
 layout: page
 published: false
-id: new-features
+pageId: new-features
 title: New features!
 permalink: api/library/updates/new-features.json
 description: New features

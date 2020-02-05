@@ -1,6 +1,6 @@
 ---
 layout: page
-id: 2016-12-20-compare-the-scores
+pageId: 2016-12-20-compare-the-scores
 title: Climatescope 2014 to 2016 - compare the scores!
 permalink: api/library/updates/2016-12-20-compare-the-scores.json
 description: 

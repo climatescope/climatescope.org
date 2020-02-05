@@ -1,5 +1,5 @@
 ---
-id: climatescope-2016-launch-en
+pageId: climatescope-2016-launch-en
 title: "Press Release: With new pledges and new projects, developing countries take clean energy lead globally"
 permalink: api/library/updates/climatescope-2016-launch-en.json
 weight: 1

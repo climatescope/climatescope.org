@@ -1,6 +1,6 @@
 ---
 layout: page
-id: SEforAll-Africa-Hub
+pageId: SEforAll-Africa-Hub
 title: A Growing Number of African Nations Take Concrete Steps in Favour of Renewables With the Support of SEforAll
 permalink: api/library/updates/SEforAll-Africa-Hub.json
 description: 

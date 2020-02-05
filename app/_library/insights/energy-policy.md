@@ -2,10 +2,10 @@
 layout: page
 permalink: api/library/insights/energy-policy.json
 title: Policies for the Energy Transition - Lessons Learned in Emerging Markets
-id: energy-policy
+pageId: energy-policy
 description: As the energy transition gains pace and strength, emerging market nations are leading the way, not just in terms of investment and deployment, but with innovative policy-making as well. Here we assess the clean energy landscape of the 71 countries studied for Climatescope.
 published: true
-download_source: /en/download/insights/climatescope-2017-energy-transition.pdf
+download_source: /assets/data/docs/insights/climatescope-2017-energy-transition.pdf
 date: 2017-11-14
 featured: true
 frontpage_order: 20

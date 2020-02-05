@@ -1,6 +1,6 @@
 ---
 layout: page
-id: Climatescope-in-the-media-Europe-and-US-highlights
+pageId: Climatescope-in-the-media-Europe-and-US-highlights
 title: Climatescope in the Media – Europe and US Highlights
 permalink: api/library/updates/Climatescope-in-the-media-Europe-and-US-highlights.json
 description: 

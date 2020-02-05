@@ -1,6 +1,6 @@
 ---
 layout: page
-id: climatescope-2016-launch-es
+pageId: climatescope-2016-launch-es
 title: "Press Release: Con nuevos compromisos y proyectos, los países en vías de desarrollo adquieren una ventaja global en energías limpias"
 permalink: api/library/updates/climatescope-2016-launch-es.json
 weight: 2

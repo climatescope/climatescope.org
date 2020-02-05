@@ -1,7 +1,7 @@
 ---
 layout: page
 published: false 
-id: blog-post
+pageId: blog-post
 title: blog post
 permalink: api/library/updates/blog-post.json
 description: Off-grid solar market trends

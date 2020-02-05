@@ -1,7 +1,7 @@
 ---
 layout: page
 published: false 
-id: test
+pageId: test
 title: Test blog post
 permalink: api/library/updates/test.json
 description: mapping the gap -the road from paris
