@@ -1,6 +1,6 @@
 ---
 layout: page
-id: Climatescope-2017-press-release
+pageId: Climatescope-2017-press-release
 title: "Solar Capacity Jumps by More than Half in Developing Nations (Press Release)"
 permalink: api/library/updates/Climatescope-2017-press-release.json
 weight: 1

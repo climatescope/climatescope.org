@@ -2,10 +2,10 @@
 layout: page
 permalink: api/library/insights/risk-management.json
 title: How to Mitigate Renewables Risks in Emerging Markets
-id: risk-management
+pageId: risk-management
 description: Building clean energy in emerging markets poses unique risks. But policy-makers and others have devised novel solutions to address many of these.
 published: true
-download_source: /en/download/insights/climatescope-2017-renewables-risks.pdf
+download_source: /assets/data/docs/insights/climatescope-2017-renewables-risks.pdf
 date: 2017-11-14
 featured: true
 frontpage_order: 40

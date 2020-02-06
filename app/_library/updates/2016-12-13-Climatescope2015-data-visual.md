@@ -1,6 +1,6 @@
 ---
 layout: page
-id: Climatescope-2015-data-visual
+pageId: Climatescope-2015-data-visual
 title: Discover the highlights of last year's Climatescope
 permalink: api/library/updates/climatescope-2015-data-visual.json
 description: Use this interactive data visualisation to discover the highlights of the 2015 edition. 

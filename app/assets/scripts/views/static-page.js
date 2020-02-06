@@ -3,8 +3,9 @@ import { PropTypes as T } from 'prop-types'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import c from 'classnames'
+import ReactGA from 'react-ga'
 
-import { environment } from '../config'
+import { environment, baseurl } from '../config'
 import { fetchPage } from '../redux/static-page'
 import { getFromState, wrapApiResult } from '../utils/utils'
 
@@ -39,7 +40,6 @@ class StaticPage extends React.Component {
       this.props.fetchPage(page)
     }
   }
-
   renderLangSwitcher () {
     const { getData, isReady } = this.props.page
     if (!isReady()) return null
@@ -82,6 +82,26 @@ class StaticPage extends React.Component {
       </Dropdown>
     )
   }
+  onDownloadClick () {
+    ReactGA.event({
+      category: 'Data',
+      action: 'Download',
+      label: 'Download file'
+    })
+  }
+  renderDownloadButton () {
+    const { getData, isReady } = this.props.page
+    if (!isReady()) return null
+    const data = getData()
+
+    if (!data.download_source) return null
+
+    return (
+      <a href={`${baseurl}${data.download_source}`}
+        className='ipa-download' title={`${data.title}`} download
+        onClick={this.onDownloadClick} target='_blank'><span>Download</span></a>
+    )
+  }
 
   render () {
     const { hasError, getData, isReady, receivedAt } = this.props.page
@@ -111,6 +131,7 @@ class StaticPage extends React.Component {
                 </h1>
               </div>
               <div className='inpage__actions'>
+                {this.renderDownloadButton()}
                 {this.renderLangSwitcher()}
                 <ShareOptions url={window.location.toString()} />
               </div>

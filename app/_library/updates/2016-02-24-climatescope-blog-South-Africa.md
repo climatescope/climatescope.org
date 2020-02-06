@@ -1,6 +1,6 @@
 ---
 layout: page
-id: 2016-02-24-climatescope-blog-South-Africa
+pageId: 2016-02-24-climatescope-blog-South-Africa
 title: Another year in the top 5 for South Africa!
 permalink: api/library/updates/2016-02-24-climatescope-blog-South-Africa.json
 description: South Africa is one of the most active clean energy markets. Read this post to find out more.

@@ -1,7 +1,7 @@
 ---
 layout: page
 published: true
-id: POWER-FOR-ALL
+pageId: POWER-FOR-ALL
 title: Tapping Into Data to Tackle Electricity Poverty
 permalink: api/library/updates/POWER-FOR-ALL.json
 description: An estimated 1.2 billion people do not have access to electricity and more than 95% of those living without electricity are in countries in sub-Saharan Africa and developing Asia.

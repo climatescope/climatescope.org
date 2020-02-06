@@ -2,7 +2,7 @@
 layout: page
 permalink: api/library/insights/frontier-power.json
 title: Distributed Energy in Emerging Markets
-id: frontier-power
+pageId: frontier-power
 description: This report summarizes the highlights from Bloomberg New Energy Finance’s research on distributed energy in emerging markets undertaken in the last year.
 published: true
 download_source: null 

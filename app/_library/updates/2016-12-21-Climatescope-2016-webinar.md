@@ -1,6 +1,6 @@
 ---
 layout: page
-id: Climatescope-2016-webinar
+pageId: Climatescope-2016-webinar
 title: Climatescope 2016 webinar - Clean energy in emerging markets
 permalink: api/library/updates/Climatescope-2016-webinar.json
 description: Watch the video

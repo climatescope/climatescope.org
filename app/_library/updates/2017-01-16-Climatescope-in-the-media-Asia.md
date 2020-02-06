@@ -1,6 +1,6 @@
 ---
 layout: page
-id: Climatescope-in-the-media-Asia
+pageId: Climatescope-in-the-media-Asia
 title: Climatescope in the Media - Asia Highlights
 permalink: api/library/updates/Climatescope-in-the-media-Asia.json
 description: 

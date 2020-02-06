@@ -1,7 +1,7 @@
 ---
 layout: page
 published: true 
-id: Senegal-offgrid
+pageId: Senegal-offgrid
 title: Senegal villages light up fast with household solar products
 permalink: api/library/updates/Senegal-offgrid.json
 description: Test blog post description
