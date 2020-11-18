@@ -19,7 +19,6 @@ const redirectPaths = {
   '/en/off-grid-data-hub': '/off-grid-data-hub',
   '/en/clean-energy-investments': '/clean-energy-investments',
   '/en/capacity-generation': '/capacity-generation',
-  '/en/policies': '/policies',
   '/en/download': '/library',
   '/en/summary': '/key-findings',
 

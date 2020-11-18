@@ -17,8 +17,6 @@ import Home from './views/home'
 import StaticPage from './views/static-page'
 import Library from './views/library'
 import LibraryCType from './views/library-ctype'
-import Policies from './views/policies-hub'
-import Policy from './views/policies-page'
 import Results from './views/results'
 import Compare from './views/compare'
 import Geography from './views/geographies-page'
@@ -45,8 +43,6 @@ const Root = () => (
         <Route exact path='/library/:ctypes' component={LibraryCType}/>
         <Route exact path='/library' component={Library}/>
         <Route path='/compare/:geoIsos*' component={Compare}/>
-        <Route exact path='/policies/:policyId' component={Policy}/>
-        <Route exact path='/policies' component={Policies}/>
         <Route exact path='/playground' component={Playground}/>
         <Route exact path='/:page' component={StaticPage}/>
         <Route path='*' component={UhOh} />

@@ -210,13 +210,6 @@ export const tools = [
     label: 'Capacity & Generation',
     description: 'Who has the most (and least) clean energy today?',
     image: 'feat-tool-thumb--capacity-generation.jpg'
-  },
-  {
-    url: '/policies',
-    title: 'Browse the policy database',
-    label: 'Policies',
-    description: '800+ policies to improve clean energy development',
-    image: 'feat-tool-thumb--policies.jpg'
   }
 ]
 
