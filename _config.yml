@@ -6,7 +6,7 @@ exclude:
 baseurl: https://global-climatescope.org
 
 appTitle: 'Climatescope'
-appEdition: 2019
+appEdition: 2020
 appDescription: 'Climatescope is a unique country-by-country assessment, interactive report and index that evaluates the investment conditions for clean energy in emerging markets.'
 
 kramdown:
