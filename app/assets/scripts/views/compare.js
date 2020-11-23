@@ -33,7 +33,6 @@ import SelectControl from '../components/form-select-control'
 import { LoadingSkeleton, LoadingSkeletonGroup } from '../components/loading-skeleton'
 import OnGrid from '../components/on-grid'
 import { ParameterBreakdown } from '../components/parameters'
-import AvailabilityOfPolicies from '../components/con--availability-polices'
 import AreaChart, { memoizedComputeAreaChartData } from '../components/area-chart'
 
 const getGeoISOFromUrl = (params = '') => {
@@ -365,17 +364,7 @@ class GeographyCompare extends React.PureComponent {
           <div className='par-section'>
             {compareLayoutDef.map(layoutDef => {
               try {
-                // Policies is a special element that needs to access specific data.
-                if (layoutDef.id === 'availabilityPolicies') {
-                  return (
-                    <AvailabilityOfPolicies
-                      key={layoutDef.id}
-                      geoIso={source.iso}
-                      size={layoutDef.size}
-                    />
-                  )
-                }
-
+               
                 const [chartDef] = getChartDef(chartsMeta, layoutDef.id)
 
                 // Group elements mut be handled differently.
