@@ -165,8 +165,6 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
     }
 
     try {
- 
-
       const [chartDef] = getChartDef(chartsMeta, layoutDef.id)
 
       // Group elements mut be handled differently.

@@ -364,7 +364,6 @@ class GeographyCompare extends React.PureComponent {
           <div className='par-section'>
             {compareLayoutDef.map(layoutDef => {
               try {
-               
                 const [chartDef] = getChartDef(chartsMeta, layoutDef.id)
 
                 // Group elements mut be handled differently.
