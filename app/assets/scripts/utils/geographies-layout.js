@@ -54,10 +54,6 @@ export default [
     ],
     areaBeta: [
       {
-        id: 'availabilityPolicies',
-        size: 'medium'
-      },
-      {
         id: 'gapToTarget',
         size: 'small'
       },
@@ -188,10 +184,6 @@ export const compareLayoutDef = [
     id: 'powerGeneration',
     size: 'large',
     mainDataLayers: renewableTypes
-  },
-  {
-    id: 'availabilityPolicies',
-    size: 'large'
   },
   {
     id: 'gapToTarget',

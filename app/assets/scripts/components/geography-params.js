@@ -9,7 +9,6 @@ import { environment } from '../config'
 import { round } from '../utils/math'
 
 import AreaChart, { memoizedComputeAreaChartData } from './area-chart'
-import AvailabilityOfPolicies from './con--availability-polices'
 
 // /////////////////////////////////////////////////////////////////////////////
 // React Components
@@ -166,17 +165,6 @@ export const renderParArea = (area, sectionDef, chartsMeta, geography, reactComp
     }
 
     try {
-      // Policies is a special element that needs to access specific data.
-      if (layoutDef.id === 'availabilityPolicies') {
-        return (
-          <AvailabilityOfPolicies
-            key={layoutDef.id}
-            geoIso={geography.iso}
-            size={layoutDef.size}
-          />
-        )
-      }
-
       const [chartDef] = getChartDef(chartsMeta, layoutDef.id)
 
       // Group elements mut be handled differently.
