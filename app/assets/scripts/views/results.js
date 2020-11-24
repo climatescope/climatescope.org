@@ -55,7 +55,8 @@ class Results extends React.Component {
         field: 'rank',
         dir: 'asc'
       },
-      markersHighlight: 'top'
+      markersHighlight: 'top',
+      isDevelopedMarkets: false
     }
   }
 
@@ -116,7 +117,7 @@ class Results extends React.Component {
 
   getRankedGeographies () {
     const { getData, hasError } = this.props.geographiesList
-    const { sliders, region } = this.state
+    const { sliders, region, isDevelopedMarkets } = this.state
 
     if (hasError()) return []
 
@@ -124,6 +125,9 @@ class Results extends React.Component {
       // Filter by active region
       .filter(geography => {
         return region === 'all' ? true : geography.region.id === region
+      })
+      .filter(geography => {
+        return isDevelopedMarkets ? true : geography.market === 'developing market'
       })
       .map(geography => {
         const topics = (geography.topics || []).map(t => {
@@ -192,13 +196,22 @@ class Results extends React.Component {
   }
 
   renderHeaderFn ({ style, isSticky }) {
+    const { isDevelopedMarkets } = this.state
+    const spanText = isDevelopedMarkets ? 'Remove developed markets' : 'Add developed markets'
+    const buttomIco = isDevelopedMarkets ? 'ipa-market-minus' : 'ipa-market-plus'
+
     return (
       <nav className={c('inpage__nav nav', { 'inpage__nav--sticky': isSticky })} style={style} role='navigation'>
         <div className='inner'>
           <div className='par-controls'>
-            <div className='par-controls__headline'>
-              <h2 className='par-controls__title'>Calculate your own score</h2>
-              <a href='#' className='par-controls__reset-button' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
+            <div className='par-controls'>
+              <div className='par-controls__headline'>
+                <h2 className='par-controls__title'>Calculate your own score</h2>
+                <a href='#' className='par-controls__reset-button' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
+              </div>
+              <div className='par-controls__headline'>
+                <a href='#' className={buttomIco} title={spanText} onClick={() => this.setState({ isDevelopedMarkets: !isDevelopedMarkets })} ><span>{spanText}</span></a>
+              </div>
             </div>
             <SliderControlGroup
               sliders={this.props.sliders}
