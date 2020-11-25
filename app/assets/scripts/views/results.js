@@ -127,7 +127,7 @@ class Results extends React.Component {
         return region === 'all' ? true : geography.region.id === region
       })
       .filter(geography => {
-        return isDevelopedMarkets ? true : geography.market_grouping === 'developing market'
+        return isDevelopedMarkets ? true : geography.market === 'developing'
       })
       .map(geography => {
         const topics = (geography.topics || []).map(t => {
