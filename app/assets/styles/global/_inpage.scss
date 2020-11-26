@@ -281,22 +281,6 @@
     @extend %collecticon-chevron-down;
   }
 }
-
-.ipa-market-plus {
-  @extend .button--primary-raised-dark;
-
-  &::after {
-    @extend %collecticon-plus;
-  }
-}
-
-.ipa-market-minus {
-  @extend .button--primary-raised-dark;
-
-  &::after {
-    @extend %collecticon-minus;
-  }
-}
 /* Nav
    ========================================================================== */
 
