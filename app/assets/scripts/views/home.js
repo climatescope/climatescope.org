@@ -6,15 +6,11 @@ import { Link } from 'react-router-dom'
 import ReactGA from 'react-ga'
 
 import { environment, baseurl } from '../config'
-import { editions, tools, downloadData, libraryCType } from '../utils/constants'
-import { fetchLibraryContentType } from '../redux/libraryctypes'
-import { wrapApiResult, getFromState } from '../utils/utils'
+import { editions, tools, downloadData } from '../utils/constants'
 
 import App from './app'
-import { MediumCard, ToolCard } from '../components/lib-card'
+import { ToolCard } from '../components/lib-card'
 import SmartLink from '../components/smart-link'
-
-const contentTypes = libraryCType.pages
 
 class Home extends React.Component {
   constructor (props) {
@@ -36,38 +32,6 @@ class Home extends React.Component {
     })
   }
 
-  componentDidMount () {
-    const filter = {
-      limit: 9
-    }
-    this.props.fetchInsight(filter)
-  }
-
-  renderMediumPosts (insights) {
-    return (
-      <ol className='card-list'>
-        {
-          Array.from(insights).slice(0, 9).map((post, i) => {
-            // Get correct subtitle, based on tags.
-            const ctType = contentTypes.find(r => r.id === post.type)
-            const subtitle = ctType ? ctType.label : 'Explore'
-            return (
-              <li key={post.id} className='card-list__item'>
-                <MediumCard
-                  isFeatured={i === 0}
-                  title={post.title}
-                  subtitle={subtitle}
-                  url={post.url}
-                  description={post.description}
-                  tags={post.tags}
-                />
-              </li>
-            )
-          })
-        }
-      </ol>
-    )
-  }
   renderModal () {
     return (
       <section className='modal revealed' ref={node => { this.node = node }}
@@ -107,9 +71,6 @@ class Home extends React.Component {
   }
 
   render () {
-    const { getData } = this.props.insightList
-    const ctypesList = getData()
-
     const currentReport = downloadData.current.report
 
     return (
@@ -155,17 +116,6 @@ investment?</h1>
           <div className='inpage__body'>
             <div className='inner'>
               <div className='col--main'>
-                <section className='fsection'>
-                  <header className='fsection__header'>
-                    <div className='fsection__headline'>
-                      <h1 className='fsection__title'>Insights</h1>
-                    </div>
-                    <div className='fsection__actions'>
-                      <a href='/library/insights' title='View all insights' className='fsa-go'><span>View all</span></a>
-                    </div>
-                  </header>
-                  {this.renderMediumPosts(ctypesList)}
-                </section>
               </div>
               <div className='col--sec'>
                 <section className='fsection fsection--tweets'>
@@ -222,23 +172,12 @@ investment?</h1>
 if (environment !== 'production') {
   Home.propTypes = {
     location: T.object,
-    history: T.object,
-    fetchInsight: T.func,
-    insightList: T.object
+    history: T.object
   }
 }
 
-function mapStateToProps (state) {
-  return {
-    insightList: wrapApiResult(getFromState(state.libraryct, 'list'))
-  }
-}
+function mapStateToProps (state) {}
 
-function dispatcher (dispatch) {
-  return {
-    fetchInsight: (...args) => dispatch(fetchLibraryContentType(...args))
-
-  }
-}
+function dispatcher (dispatch) {}
 
 export default connect(mapStateToProps, dispatcher)(Home)
