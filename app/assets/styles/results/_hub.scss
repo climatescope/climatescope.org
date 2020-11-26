@@ -44,6 +44,16 @@
   flex-flow: row nowrap;
   align-items: center;
   grid-column: 1 / span 12;
+
+  > *:not(:last-child) {
+    margin-right: ($global-spacing * 2);
+  }
+}
+
+.par-controls__action {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
 }
 
 .par-controls__title {
