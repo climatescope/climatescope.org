@@ -197,8 +197,6 @@ class Results extends React.Component {
 
   renderHeaderFn ({ style, isSticky }) {
     const { isDevelopedMarkets } = this.state
-    const spanText = isDevelopedMarkets ? 'Remove developed markets' : 'Add developed markets'
-    const buttomIco = isDevelopedMarkets ? 'ipa-market-minus' : 'ipa-market-plus'
 
     return (
       <nav className={c('inpage__nav nav', { 'inpage__nav--sticky': isSticky })} style={style} role='navigation'>
@@ -210,7 +208,12 @@ class Results extends React.Component {
                 <a href='#' className='par-controls__reset-button' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
               </div>
               <div className='par-controls__headline'>
-                <a href='#' className={buttomIco} title={spanText} onClick={() => this.setState({ isDevelopedMarkets: !isDevelopedMarkets })} ><span>{spanText}</span></a>
+                <h2 className='par-controls__title'>Developed markets </h2>
+                <label htmlFor='switch-isDevelopedMarkets' className='form__option form__option--text-hidden form__option--switch fos-plus' title='Toggle add/remove'>
+                  <input type='checkbox' name='switch-isDevelopedMarkets' id='switch-isDevelopedMarkets' checked={isDevelopedMarkets} onChange={() => this.setState({ isDevelopedMarkets: !isDevelopedMarkets })}/>
+                  <span className='form__option__ui'></span>
+                  <span className='form__option__text'>add</span>
+                </label>
               </div>
             </div>
             <SliderControlGroup

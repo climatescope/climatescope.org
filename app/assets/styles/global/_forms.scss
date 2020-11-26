@@ -722,6 +722,17 @@ label[for] {
   }
 }
 
+.form__option.fos-plus {
+  .form__option__ui::after {
+    @extend %collecticon-plus;
+    font-size: 1rem;
+  }
+
+  &.form__option--checked .form__option__ui::after,
+  input:checked ~ .form__option__ui::after {
+    @extend %collecticon-minus;
+  }
+}
 
 /* Small case */
 
