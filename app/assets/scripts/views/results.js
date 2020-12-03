@@ -152,6 +152,7 @@ class Results extends React.Component {
         return {
           iso: geography.iso.toUpperCase(),
           name: geography.name,
+          market: geography.market,
           grid,
           topics,
           score: topics.reduce((acc, t) => acc + t.value * (t.weight / 100), 0)
@@ -161,8 +162,22 @@ class Results extends React.Component {
     // Sort by the score.
     tableData = orderBy(tableData, 'score', 'desc')
 
+    // Determine rank for developing countries only.
+    const developingRank = tableData
+      .filter(geography => geography.market === 'developing')
+      .map(geography => geography.iso)
+
     // Add the rank. After scoring, the rank is the index.
-    tableData = tableData.map((geography, idx) => ({ ...geography, rank: idx + 1 }))
+    // developingRank is used for presentation
+    tableData = tableData.map((geography, idx) => (
+      {
+        ...geography,
+        rank: idx + 1,
+        developingRank: geography.market === 'developing'
+          ? developingRank.findIndex(geo => geo === geography.iso) + 1
+          : null
+      }
+    ))
 
     return tableData
   }
@@ -267,6 +282,7 @@ class Results extends React.Component {
     }
 
     const rankedGeographies = this.getRankedGeographies()
+      .filter(geo => geo.market === 'developing')
     const highlightISO = rankedGeographies.map(g => g.iso)
     const activeRegion = regions.find(r => r.id === region)
 
