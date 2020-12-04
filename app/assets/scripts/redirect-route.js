@@ -36,7 +36,7 @@ const redirectPaths = {
   '/en/country/brazil': '/results/br',
   '/en/country/cameroon': '/results/cm',
   '/en/country/chile': '/results/cl',
-  '/en/country/china': '/results/cn',
+  '/en/country/mainland-china': '/results/cn',
   '/en/country/colombia': '/results/co',
   '/en/country/costa-rica': '/results/cr',
   '/en/country/cote-ivoire': '/results/ci',

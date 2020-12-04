@@ -35,7 +35,7 @@ A note on [methodology](/en/methodology): The research in this note draws primar
 
 ## The Paris promises
 
-Among the most noteworthy achievements of the Paris Agreement was that it included virtually every developing country in the world. Between them, non-OECD nations accounted for 68% of total global CO2 emissions in 2012 (the last year for which complete data is available). [China](/en/country/china) alone was responsible for a quarter of emissions and India 10%. The 71 nations surveyed for Climatescope (which included [China](/en/country/china) and [India](/en/country/india), among others) serve as a useful proxy for all non-OECD nations<sup>1</sup>; between them, they account for 60% of the total GHG emissions worldwide (Figure 1). 
+Among the most noteworthy achievements of the Paris Agreement was that it included virtually every developing country in the world. Between them, non-OECD nations accounted for 68% of total global CO2 emissions in 2012 (the last year for which complete data is available). [Mainland China](/en/country/mainland-china) alone was responsible for a quarter of emissions and India 10%. The 71 nations surveyed for Climatescope (which included [Mainland China](/en/country/mainland-china) and [India](/en/country/india), among others) serve as a useful proxy for all non-OECD nations<sup>1</sup>; between them, they account for 60% of the total GHG emissions worldwide (Figure 1). 
 
 Moreover, less developed nations are where CO2 emissions are poised to grow fastest as they encompass some of the most dynamic economies in the world. BNEF estimates in its 2016 New Energy Outlook that power sector CO2 emissions from non-OECD countries will grow by nearly a quarter by 2040. By comparison, OECD countries are expected to see their power sector emissions drop by approximately half over that same time. There is no question that implementation of emission control policies must be a cornerstone of any serious global climate change mitigation effort. 
 
@@ -52,7 +52,7 @@ At Paris, 19 Climatescope countries presented "conditional" emissions control go
 In terms of the pledges themselves, the 54 nations’ emissions goals can be characterized as follows (Figure 3):
 
 * __Absolute targets.__ Commitments made relative to total actual emissions in a base year and therefore a commitment to an absolute reduction. Fourteen Climatescope countries submitted absolute targets. [Brazil](/en/country/brazil), for example, has committed to reduce its GHG emissions by 37% from 2005 levels by 2025.
-* __Intensity targets.__ Commitments made relative to greenhouse emissions per unit of a country's GDP. Seven Climatescope countries submitted intensity targets. [China](/en/country/china), for example, has committed to reduce the level of GHG emissions per unit of GDP by 60-65% from 2005 levels by 2030. This would allow for a tripling of emissions from 2005 levels over the period if the economy grows by 5% a year.
+* __Intensity targets.__ Commitments made relative to greenhouse emissions per unit of a country's GDP. Seven Climatescope countries submitted intensity targets. [Mainland China](/en/country/mainland-china), for example, has committed to reduce the level of GHG emissions per unit of GDP by 60-65% from 2005 levels by 2030. This would allow for a tripling of emissions from 2005 levels over the period if the economy grows by 5% a year.
 * __Business-as-usual targets (BAU).__ Commitments relative to a future BAU scenario, which takes into consideration future economic and population growth. A total of 33 Climatescope countries submitted BAU targets. [Côte d’Ivoire](/en/country/cote-ivoire), for example, has committed to reduce GHG emissions by 28% below its BAU trajectory by 2030. This would allow for around a 150% increase in emissions from current levels.
  
 <b>Figure 3:</b> Climatescope countries with emissions reduction targets by type 
@@ -210,7 +210,7 @@ Assuming 2017 capex levels, we estimate that this would require a total of $13.4
 <b>Africa:</b> Botswana, Cameroon, Congo (Dem. Rep), Cote d'Ivoire, Ethiopia, Ghana, Kenya, Liberia, Malawi, Mozambique, Nigeria, Rwanda
 Senegal, Sierra Leone, South Africa, Tanzania, Uganda, Zambia, Zimbabwe.
 
-<b>Asia:</b> Armenia, Azerbaijan, Bangladesh, China, India, Indonesia, Kazakhstan, Kyrgyzstan, Mongolia, Myanmar, Nepal, Pakistan, Sri Lanka, Tajikistan, Turkmenistan, Uzbekistan, Vietnam.
+<b>Asia:</b> Armenia, Azerbaijan, Bangladesh, Mainland China, India, Indonesia, Kazakhstan, Kyrgyzstan, Mongolia, Myanmar, Nepal, Pakistan, Sri Lanka, Tajikistan, Turkmenistan, Uzbekistan, Vietnam.
 
 <b>Europe:</b>Belarus, Georgia, Moldova, Russia, Turkey, Ukraine.
 

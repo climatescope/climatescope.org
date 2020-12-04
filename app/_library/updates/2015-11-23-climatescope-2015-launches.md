@@ -14,7 +14,7 @@ Ahead of important round of climate talks, new study shows majority of 2014 clea
 
 London and Washington D.C., 23 November 2015 – Developing nations eclipsed the world’s wealthiest countries in 2014, attracting more clean energy investment and building more wind, solar, and other renewable power generation than ever before, according to a global assessment released today. 
 
-Climatescope, the clean energy country competitiveness index, interactive report, and online tool supported by the UK government, US government, and the Inter-American Development Bank Group offers a compelling portrait of clean energy activity in 55 emerging markets in Africa, Asia and Latin America and the Caribbean. The group includes major developing nations China, India, Pakistan, Brazil, Chile, Mexico, Kenya, Tanzania and South Africa, as well as dozens of others.  
+Climatescope, the clean energy country competitiveness index, interactive report, and online tool supported by the UK government, US government, and the Inter-American Development Bank Group offers a compelling portrait of clean energy activity in 55 emerging markets in Africa, Asia and Latin America and the Caribbean. The group includes major developing nations Mainland China, India, Pakistan, Brazil, Chile, Mexico, Kenya, Tanzania and South Africa, as well as dozens of others.  
 
 News of the rising prominence of lesser developed countries comes on the eve of an important round of UN-organized climate negotiations kicking off in Paris at the end of November.  Those talks have often focused on the question of how much capital wealthier countries should make available to lesser developed countries to address the climate challenge.
 
@@ -24,7 +24,7 @@ Climatescope's key findings include:
 
 * New investment in renewables soared in 2014 in the 55 Climatescope countries assessed to hit a record annual high of $126bn – up $35.5bn, or 39%, from 2013 levels. 
 
-* The results were substantially bolstered by the remarkable growth in China, which added 35GW of new renewable power generating capacity all on its own – more than the 2014 clean energy build in the US, UK, and France combined. 
+* The results were substantially bolstered by the remarkable growth in Mainland China, which added 35GW of new renewable power generating capacity all on its own – more than the 2014 clean energy build in the US, UK, and France combined. 
 
 * Meanwhile, “South-South” investment (funds deployed in Climatescope nations from banks or other financial institutions based in those countries) surged to $79bn in 2014 from $53bn the year prior. 
 
@@ -34,11 +34,11 @@ Climatescope's key findings include:
 
 * On a percentage basis, clean energy capacity is growing twice as quickly in Climatescope nations compared to OECD ones.
 
-Progress in 2014 was achieved despite a number of countries in the survey seeing economic growth rates slow.  Average gross domestic product growth across Climatescope nations slipped to 5.7% in 2014 from 6.4% in 2013 with the slow-down most apparent in major nations, Brazil, South Africa, and China. Despite the pullback, these three countries attracted a total of $103bn in new clean energy investment in 2014. 
+Progress in 2014 was achieved despite a number of countries in the survey seeing economic growth rates slow.  Average gross domestic product growth across Climatescope nations slipped to 5.7% in 2014 from 6.4% in 2013 with the slow-down most apparent in major nations, Brazil, South Africa, and Mainland China. Despite the pullback, these three countries attracted a total of $103bn in new clean energy investment in 2014. 
 
 The Multilateral Investment Fund (MIF) of the Inter-American Development Bank Group (IDB), the UK Government Department for International Development (DFID), and the US Agency for International Development (USAID), under President Barack Obama’s “Power Africa” initiative, commissioned Bloomberg New Energy Finance (BNEF) to analyze and rank development prospects for solar, wind, small hydro, geothermal, biomass, and other zero-carbon emitting technologies (excluding large hydro). The report provides potential investors with important information identifying countries with the greatest clean energy investment opportunities.
 
-Climatescope was first developed in 2012 by the MIF/IDB and BNEF, and initially evaluated 26 countries in Latin America and the Caribbean.  In 2014, it was expanded to include 19 countries in Africa, 10 in Asia, as well as 15 provinces in China and 10 states in India thanks to additional support from DFID and USAID.
+Climatescope was first developed in 2012 by the MIF/IDB and BNEF, and initially evaluated 26 countries in Latin America and the Caribbean.  In 2014, it was expanded to include 19 countries in Africa, 10 in Asia, as well as 15 provinces in Mainland China and 10 states in India thanks to additional support from DFID and USAID.
 
 A country’s ranking depends upon various factors: its clean energy investment policy, its market conditions, the structure of its power sector; the number and makeup of local companies operating in clean energy; and efforts toward reduction of greenhouse gas emissions. The final output is the most comprehensive, one-stop source for decision makers to learn more about the market conditions for clean energy in these regions. 
 

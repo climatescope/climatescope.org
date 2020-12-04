@@ -794,59 +794,59 @@ Cameroon,Corporate emission reduction policies,ind,0.0,0.0,0.0,0.0
 Cameroon,Capacity building – env. business training,ind,0.0,0.0,0.0,0.0
 Cameroon,Capacity building – think tanks,ind,0.0,0.0375,0.0,0.0
 Cameroon,Carbon tax,ind,0.0,0.0,,
-China,Score,score,2.51765533077,2.52511353937,2.2920717856,2.23316001679
-China,Enabling framework,param,1.69024725676,1.64487606037,1.54450661674,1.56765344621
-China,Clean energy policies,ind,0.25344,0.21504,0.253522193821,0.260089639837
-China,Power sector structure,ind,0.102814647313,0.14526043226,0.155454545455,0.1425
-China,Distributed energy framework,ind,0.0,0.0,0.0,0.0
-China,Clean energy rural electrification,ind,0.04,0.04,0.04,0.04
-China,Energy access policies,ind,0.0,0.0,0.0,0.0
-China,Barriers,ind,0.0044430786268,0.009267,0.00209881941408,0.00437392795883
-China,Clean energy installed capacity,ind,0.0527463432932,0.0494055854581,0.0367375144747,0.038915664661
-China,Growth rate of installed capacity,ind,0.0153554549013,0.029864304077,0.0224237142462,0.00019629445752
-China,Clean energy electricity generation,ind,0.0180520946517,0.015785354835,0.0171275514061,0.0134224045762
-China,Growth rate of electricity generation,ind,0.020354722256,0.0,0.0293609612499,0.00526916000094
-China,Biofuels production capacity,ind,0.00593594589218,0.00610971802782,0.00101012341726,0.00160586023381
-China,Growth rate biofuels production capacity,ind,0.0,0.0,0.0123902632996,0.0401583255421
-China,Average electricity spot prices,ind,0.0427577058,0.0280688622754,0.0,0.0260912026533
-China,Average retail electricity prices,ind,0.02019890997,0.0190384615385,0.0318526315789,0.0170007353261
-China,Average residential electricity prices,ind,0.0,0.0,0.0,0.0
-China,Average commercial electricity prices,ind,0.0,0.0,0.0,0.0
-China,Average industrial electricity prices,ind,0.0,0.0,0.0,0.0
-China,Average kerosene prices,ind,0.0,0.0,0.0,0.0
-China,Average diesel prices,ind,0.0,0.0,0.0,0.0
-China,Growth rate of power demand,ind,0.0,0.000110705676803,0.0138243283335,0.0358365616373
-China,Electrification rate,ind,0.1,0.1,0.002,0.0016016016016
-China,Population using solid fuels for cooking,ind,0.0,0.0,0.0,0.0
-China,Financing and Investments,param,2.35470521329,2.19429371742,1.45934133582,1.29208220977
-China,Clean energy investments (2011-2015),ind,0.137992246975,0.138137694928,0.0246766646463,0.0351640417094
-China,Growth rate of clean energy investments,ind,0.0651488407453,0.113130565148,0.0918139080356,0.0524381947477
-China,Asset finance investments,ind,0.0,0.0,0.0,0.0
-China,Corporate finance investments,ind,0.0,0.0,0.0,0.0
-China,VC/PE investments,ind,0.0,0.0,0.0,0.0
-China,"Loans, grants, grant programs",ind,0.00031444046828,0.0986443972019,2.8461744255e-05,0.000999060332033
-China,Local investments,ind,0.194736208213,0.135620689655,0.0377721414466,0.0971456070221
-China,Value chains,param,5.0,5.0,5.0,5.0
-China,Financial institutions in clean energy,ind,0.1875,0.1875,0.1875,0.1875
-China,Value chains by clean energy sector,ind,0.375,0.375,0.375,0.375
-China,Distributed value chains by sector,ind,0.0,0.0,0.0,0.0
-China,Clean energy service providers,ind,0.1875,0.1875,0.1875,0.1875
-China,Distributed clean energy service providers,ind,0.0,0.0,0.0,0.0
-China,GHG management,param,2.56763242716,3.05916666667,3.24311158772,3.12315983581
-China,Carbon offsets historical activity,ind,0.015,0.1125,0.075,0.075
-China,CDM risk,ind,0.03,0.075,0.0625,0.0625
-China,Carbon offsets future potential,ind,0.0,0.013,0.0191975752532,0.0191975752532
-China,GHG emissions reduction target,ind,0.0,0.046875,0.09375,0.075
-China,GHG country registry,ind,0.0525,0.0,0.05625,0.05625
-China,GHG market-based instruments,ind,0.05625,0.0375,0.0,0.0
-China,PMR & NAMA,ind,0.05625,0.009375,0.028125,0.028125
-China,Voluntary GHG reporting by corporates,ind,0.0405,0.01875,0.000889409817981,0.00180043383948
-China,Investor pressure – PRI signatories,ind,0.03375,0.000375,0.000754753087115,0.00060096627884
-China,Corporate energy efficiency initiatives,ind,0.005625,0.000375,0.0375,0.0375
-China,Corporate emission reduction policies,ind,0.000214593120409,0.036375,0.0375,0.0375
-China,Capacity building – env. business training,ind,0.000564381270903,0.03375,0.0375,0.0375
-China,Capacity building – think tanks,ind,0.0472643052985,0.0375,0.0375,0.0375
-China,Carbon tax,ind,0.0472265843845,0.0375,,
+Mainland China,Score,score,2.51765533077,2.52511353937,2.2920717856,2.23316001679
+Mainland China,Enabling framework,param,1.69024725676,1.64487606037,1.54450661674,1.56765344621
+Mainland China,Clean energy policies,ind,0.25344,0.21504,0.253522193821,0.260089639837
+Mainland China,Power sector structure,ind,0.102814647313,0.14526043226,0.155454545455,0.1425
+Mainland China,Distributed energy framework,ind,0.0,0.0,0.0,0.0
+Mainland China,Clean energy rural electrification,ind,0.04,0.04,0.04,0.04
+Mainland China,Energy access policies,ind,0.0,0.0,0.0,0.0
+Mainland China,Barriers,ind,0.0044430786268,0.009267,0.00209881941408,0.00437392795883
+Mainland China,Clean energy installed capacity,ind,0.0527463432932,0.0494055854581,0.0367375144747,0.038915664661
+Mainland China,Growth rate of installed capacity,ind,0.0153554549013,0.029864304077,0.0224237142462,0.00019629445752
+Mainland China,Clean energy electricity generation,ind,0.0180520946517,0.015785354835,0.0171275514061,0.0134224045762
+Mainland China,Growth rate of electricity generation,ind,0.020354722256,0.0,0.0293609612499,0.00526916000094
+Mainland China,Biofuels production capacity,ind,0.00593594589218,0.00610971802782,0.00101012341726,0.00160586023381
+Mainland China,Growth rate biofuels production capacity,ind,0.0,0.0,0.0123902632996,0.0401583255421
+Mainland China,Average electricity spot prices,ind,0.0427577058,0.0280688622754,0.0,0.0260912026533
+Mainland China,Average retail electricity prices,ind,0.02019890997,0.0190384615385,0.0318526315789,0.0170007353261
+Mainland China,Average residential electricity prices,ind,0.0,0.0,0.0,0.0
+Mainland China,Average commercial electricity prices,ind,0.0,0.0,0.0,0.0
+Mainland China,Average industrial electricity prices,ind,0.0,0.0,0.0,0.0
+Mainland China,Average kerosene prices,ind,0.0,0.0,0.0,0.0
+Mainland China,Average diesel prices,ind,0.0,0.0,0.0,0.0
+Mainland China,Growth rate of power demand,ind,0.0,0.000110705676803,0.0138243283335,0.0358365616373
+Mainland China,Electrification rate,ind,0.1,0.1,0.002,0.0016016016016
+Mainland China,Population using solid fuels for cooking,ind,0.0,0.0,0.0,0.0
+Mainland China,Financing and Investments,param,2.35470521329,2.19429371742,1.45934133582,1.29208220977
+Mainland China,Clean energy investments (2011-2015),ind,0.137992246975,0.138137694928,0.0246766646463,0.0351640417094
+Mainland China,Growth rate of clean energy investments,ind,0.0651488407453,0.113130565148,0.0918139080356,0.0524381947477
+Mainland China,Asset finance investments,ind,0.0,0.0,0.0,0.0
+Mainland China,Corporate finance investments,ind,0.0,0.0,0.0,0.0
+Mainland China,VC/PE investments,ind,0.0,0.0,0.0,0.0
+Mainland China,"Loans, grants, grant programs",ind,0.00031444046828,0.0986443972019,2.8461744255e-05,0.000999060332033
+Mainland China,Local investments,ind,0.194736208213,0.135620689655,0.0377721414466,0.0971456070221
+Mainland China,Value chains,param,5.0,5.0,5.0,5.0
+Mainland China,Financial institutions in clean energy,ind,0.1875,0.1875,0.1875,0.1875
+Mainland China,Value chains by clean energy sector,ind,0.375,0.375,0.375,0.375
+Mainland China,Distributed value chains by sector,ind,0.0,0.0,0.0,0.0
+Mainland China,Clean energy service providers,ind,0.1875,0.1875,0.1875,0.1875
+Mainland China,Distributed clean energy service providers,ind,0.0,0.0,0.0,0.0
+Mainland China,GHG management,param,2.56763242716,3.05916666667,3.24311158772,3.12315983581
+Mainland China,Carbon offsets historical activity,ind,0.015,0.1125,0.075,0.075
+Mainland China,CDM risk,ind,0.03,0.075,0.0625,0.0625
+Mainland China,Carbon offsets future potential,ind,0.0,0.013,0.0191975752532,0.0191975752532
+Mainland China,GHG emissions reduction target,ind,0.0,0.046875,0.09375,0.075
+Mainland China,GHG country registry,ind,0.0525,0.0,0.05625,0.05625
+Mainland China,GHG market-based instruments,ind,0.05625,0.0375,0.0,0.0
+Mainland China,PMR & NAMA,ind,0.05625,0.009375,0.028125,0.028125
+Mainland China,Voluntary GHG reporting by corporates,ind,0.0405,0.01875,0.000889409817981,0.00180043383948
+Mainland China,Investor pressure – PRI signatories,ind,0.03375,0.000375,0.000754753087115,0.00060096627884
+Mainland China,Corporate energy efficiency initiatives,ind,0.005625,0.000375,0.0375,0.0375
+Mainland China,Corporate emission reduction policies,ind,0.000214593120409,0.036375,0.0375,0.0375
+Mainland China,Capacity building – env. business training,ind,0.000564381270903,0.03375,0.0375,0.0375
+Mainland China,Capacity building – think tanks,ind,0.0472643052985,0.0375,0.0375,0.0375
+Mainland China,Carbon tax,ind,0.0472265843845,0.0375,,
 Colombia,Score,score,1.32428950418,1.44775384497,1.39196561495,1.32953238848
 Colombia,Enabling framework,param,1.3709644923,1.4038510019,1.23476878616,0.980636009613
 Colombia,Clean energy policies,ind,0.132173736772,0.11904,0.122845626035,0.0627164718937
