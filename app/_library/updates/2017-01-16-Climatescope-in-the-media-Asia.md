@@ -8,7 +8,7 @@ date: 2017-01-16
 ---
 ## CLIMATESCOPE IN THE MEDIA - ASIA HIGHLIGHTS
 
-### China
+### Mainland China
 
 <strong> 中证网CS.com.cn, 19 December 2016 </strong>
 
@@ -17,20 +17,20 @@ date: 2017-01-16
 
 <strong> 经济网ceweekly.cn, 19 December 2016</strong>
 
-<a href="http://www.ceweekly.cn/2016/1219/174726.shtml"> 彭博报告：发展中国家领跑全球清洁能源开发 中国列第一 (Developing countries take clean energy lead globally, China ranks No.1)</a>
+<a href="http://www.ceweekly.cn/2016/1219/174726.shtml"> 彭博报告：发展中国家领跑全球清洁能源开发 中国列第一 (Developing countries take clean energy lead globally, Mainland China ranks No.1)</a>
 
 
 <strong> 中金网 cngold.com.cn, 19 December 2016 </strong>
 
-<a href="http://www.cngold.com.cn/stock/20161219d1986n108398296.html">发展中国家领跑“全球清洁能源开发” 中国占比最高 (Developing countries take clean energy lead globally, China tops the ranking) </a>
+<a href="http://www.cngold.com.cn/stock/20161219d1986n108398296.html">发展中国家领跑“全球清洁能源开发” 中国占比最高 (Developing countries take clean energy lead globally, Mainland China tops the ranking) </a>
 
 
 <strong>中国能源网 cnenergy.org, 19 December 2016 </strong>
 
-<a href="http://www.cnenergy.org/hb/201612/t20161219_410044.html"> 彭博研究报告显示——发展中国家领跑全球清洁能源开发 (Bloomberg Climatescope: Developing countries take clean energy lead globally, China tops the ranking) </a>
+<a href="http://www.cnenergy.org/hb/201612/t20161219_410044.html"> 彭博研究报告显示——发展中国家领跑全球清洁能源开发 (Bloomberg Climatescope: Developing countries take clean energy lead globally, Mainland China tops the ranking) </a>
 
 
-<strong> 中国环保在线 China Environmental Protection Portal </strong>
+<strong> 中国环保在线 Mainland China Environmental Protection Portal </strong>
 
 <a href="http://www.hbzhan.com/news/detail/113661.html">习大大再度发声环保：尽可能利用清洁能源 (President Xi: Use clean energy as much as possible) </a>
 
@@ -108,7 +108,7 @@ date: 2017-01-16
 
 <strong> Metro Seoul, 20 December 2016</strong>
 
-<a href="http://www.metroseoul.co.kr/news/newsview?newscd=2016122000180">중국발 에너지 혁명…태양광 '가장 저렴한 에너지원' 되다 (China's energy revolution… Solar is the cheapest energy source) </a>
+<a href="http://www.metroseoul.co.kr/news/newsview?newscd=2016122000180">중국발 에너지 혁명…태양광 '가장 저렴한 에너지원' 되다 (Mainland China's energy revolution… Solar is the cheapest energy source) </a>
 
 
 ### Malaysia

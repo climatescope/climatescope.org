@@ -172,7 +172,7 @@ The partial risk guarantee in Lake Turkana – AfDB’s first – played an impo
 
 ## Curtailment
 
-This [risk](/en/insights/risk-management) occurs when wind and solar plants are forced to reduce their output, without compensation for curtailment. Figure 10 shows some of the hot spots for this risk. [China](/en/country/china) has the worst curtailment rates in the world, with the national average ratio in 2016 at 17% for wind and 10% for solar. Consequent financial losses amount to an estimated $3.4 billion last year. A plant experiencing the current level of curtailment in China throughout its lifetime would need to sell power at a price almost a fifth higher than expected when commissioned in order to make the anticipated rate of return.
+This [risk](/en/insights/risk-management) occurs when wind and solar plants are forced to reduce their output, without compensation for curtailment. Figure 10 shows some of the hot spots for this risk. [Mainland China](/en/country/mainland-china) has the worst curtailment rates in the world, with the national average ratio in 2016 at 17% for wind and 10% for solar. Consequent financial losses amount to an estimated $3.4 billion last year. A plant experiencing the current level of curtailment in Mainland  China throughout its lifetime would need to sell power at a price almost a fifth higher than expected when commissioned in order to make the anticipated rate of return.
 
 **Figure 10:** Curtailment risk in emerging markets based on Climatescope project results
 ![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig10.jpg)
@@ -180,15 +180,15 @@ This [risk](/en/insights/risk-management) occurs when wind and solar plants are 
 
 Much of the ‘mitigatability’ of this [risk](/en/insights/risk-management) lies with the government and offtaker, given that curtailment ratios are significantly affected by the power demand-supply balance, penetration of variable renewables, and the capacity and flexibility of the grid. Since investment in grid infrastructure is typically not the responsibility of renewable power generators, a developer should take into account curtailment risk (current and future) and any compensation available when deciding project site location. In many emerging markets, the offtaker covers curtailment losses as part of the electricity tariff, making the issue of curtailment a critical part of the PPA negotiations.
 
-### Curtailment risk: China (2)
+### Curtailment risk: Mainland China (2)
 
 The National Energy Administration has released maps flagging provinces with high curtailment risk. A province with a ‘red alert’ does not receive a ‘development quota’ for the following year, meaning that local government cannot approve new projects and connect capacity to the grid. 
 
 BNEF analysis indicates that the 2017 maps were too lenient. It expects the national curtailment ratio to decline in coming years. But at a provincial level, Shaanxi may see curtailment worsen by 2020 and the [risk](/en/insights/risk-management) is due to emerge in four new provinces. 
 
-Wind developers in [China](/en/country/china) have found four strategies: focus on less curtailed low wind regions with relatively stable cash flow and higher profitability; expand to overseas markets to diversify their asset portfolio; seek corporate procurement deals selling power directly to local large-scale costumers at lower prices; and lock down and accelerate good quality pipeline projects.
+Wind developers in [Mainland China](/en/country/mainland-china) have found four strategies: focus on less curtailed low wind regions with relatively stable cash flow and higher profitability; expand to overseas markets to diversify their asset portfolio; seek corporate procurement deals selling power directly to local large-scale costumers at lower prices; and lock down and accelerate good quality pipeline projects.
 
-**Figure 11:** China renewables curtailment**Figure 11:**
+**Figure 11:** Mainland China renewables curtailment**Figure 11:**
 ![Figure](/assets/images/content/insights/risk-management/CS2017_risk_fig11.jpg)
 <small>*Source: Bloomberg New Energy Finance*</small>
 

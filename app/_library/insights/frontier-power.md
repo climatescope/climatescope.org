@@ -16,7 +16,7 @@ This report summarizes the highlights from Bloomberg New Energy Finance’s rese
 
 **The big picture**
 
-* Non-OECD countries now buy most solar panels from [China](/en/county/china)
+* Non-OECD countries now buy most solar panels from [Mainland China](/en/county/mainland-china)
 * It takes less energy to power the next billion than to run Malaysia
 * Distributed systems don’t need to be cheaper, just ready sooner
 * The largest solar deal in Africa this year was off the grid
@@ -45,10 +45,10 @@ Distributed energy, led by PV and storage, is starting to become a notable force
 
 ## The big picture
 
-### Non-OECD countries buy most solar panels from China
-Renewables, and in particular solar, are not rich-world luxuries anymore. Countries in Asia, Africa and Latin America now collectively buy more PV equipment from China than OECD countries. The trend is primarily driven by India, and as a distant second, Pakistan. Africa is not (yet) seeing the growth. Not a single country in Sub-Saharan Africa was among the top-10 buyers of PV panels in 1H 2017.  The vast majority of PV panels will be installed in utility-scale solar farms. The small-scale and rooftop PV market outside the OECD and China was about 0.7-1GW in 2015 and 2016. 
+### Non-OECD countries buy most solar panels from Mainland China
+Renewables, and in particular solar, are not rich-world luxuries anymore. Countries in Asia, Africa and Latin America now collectively buy more PV equipment from Mainland China than OECD countries. The trend is primarily driven by India, and as a distant second, Pakistan. Africa is not (yet) seeing the growth. Not a single country in Sub-Saharan Africa was among the top-10 buyers of PV panels in 1H 2017.  The vast majority of PV panels will be installed in utility-scale solar farms. The small-scale and rooftop PV market outside the OECD and Mainland China was about 0.7-1GW in 2015 and 2016. 
 
-**PV exports from China to emerging countries**
+**PV exports from Mainland China to emerging countries**
 ![Figure 2](/assets/images/content/insights/frontier-power/Off-grid_Fig2.jpg)
 <small>*Source: Bloomberg New Energy Finance, Sinoimex*</small>
 
@@ -94,7 +94,7 @@ Diesel generators have long been the technology of choice in areas where reliabl
 
 **Power capacity additions in developing countries in 2015**
 ![Figure 7](/assets/images/content/insights/frontier-power/Off-grid_Fig7.jpg)
-<small>*Source: Bloomberg New Energy Finance, PGS Consulting. Note: excludes China, Russia and other non-OECD countries with very reliable electricity grids.*</small>
+<small>*Source: Bloomberg New Energy Finance, PGS Consulting. Note: excludes Mainland China, Russia and other non-OECD countries with very reliable electricity grids.*</small>
 
 ### Solar can shield African businesses from price increases
 Plagued by sporadic power outages and energy cost inflation, most businesses in Africa run costly on-site diesel generators at least part of the time. The market for small-scale diesel generators in Sub-Saharan Africa totals between 2-4GW in a typical year. Adding solar to their existing grid connection and diesel generator makes economic sense across many parts of Africa.
