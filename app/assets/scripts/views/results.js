@@ -224,7 +224,7 @@ class Results extends React.Component {
               </div>
               <div className='par-controls__action'>
                 <h2 className='par-controls__title'>Developed markets</h2>
-                <label htmlFor='switch-isDevelopedMarkets' className='form__option form__option--text-hidden form__option--switch fos-eye' title='Toggle developed countries'>
+                <label htmlFor='switch-isDevelopedMarkets' className='form__option form__option--text-hidden form__option--switch fos-eye' title='Add developed markets to the Climatescope ranking'>
                   <input type='checkbox' name='switch-isDevelopedMarkets' id='switch-isDevelopedMarkets' checked={isDevelopedMarkets} onChange={() => this.setState({ isDevelopedMarkets: !isDevelopedMarkets })}/>
                   <span className='form__option__ui'></span>
                   <span className='form__option__text'>{isDevelopedMarkets ? 'Hide developed markets' : 'Show developed markets'}</span>
