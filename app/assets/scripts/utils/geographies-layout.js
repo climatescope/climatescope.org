@@ -127,10 +127,6 @@ export default [
     ],
     areaBeta: [
       {
-        id: 'averageVAT',
-        size: 'small'
-      },
-      {
         id: 'importDuties',
         size: 'small'
       }
