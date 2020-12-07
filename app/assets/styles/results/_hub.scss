@@ -256,7 +256,7 @@
     margin: 0.125rem 0;
   }
   .is-developed{
-    color: $base-color;
+    color: tint($base-color, 56%);
   }
 }
 
