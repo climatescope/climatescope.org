@@ -152,6 +152,7 @@ class Results extends React.Component {
         return {
           iso: geography.iso.toUpperCase(),
           name: geography.name,
+          market: geography.market,
           grid,
           topics,
           score: topics.reduce((acc, t) => acc + t.value * (t.weight / 100), 0)
@@ -161,8 +162,22 @@ class Results extends React.Component {
     // Sort by the score.
     tableData = orderBy(tableData, 'score', 'desc')
 
+    // Determine rank for developing countries only.
+    const developingRank = tableData
+      .filter(geography => geography.market === 'developing')
+      .map(geography => geography.iso)
+
     // Add the rank. After scoring, the rank is the index.
-    tableData = tableData.map((geography, idx) => ({ ...geography, rank: idx + 1 }))
+    // developingRank is used for presentation
+    tableData = tableData.map((geography, idx) => (
+      {
+        ...geography,
+        rank: idx + 1,
+        developingRank: geography.market === 'developing'
+          ? developingRank.findIndex(geo => geo === geography.iso) + 1
+          : null
+      }
+    ))
 
     return tableData
   }
@@ -209,7 +224,7 @@ class Results extends React.Component {
               </div>
               <div className='par-controls__action'>
                 <h2 className='par-controls__title'>Developed markets</h2>
-                <label htmlFor='switch-isDevelopedMarkets' className='form__option form__option--text-hidden form__option--switch fos-eye' title='Toggle developed countries'>
+                <label htmlFor='switch-isDevelopedMarkets' className='form__option form__option--text-hidden form__option--switch fos-eye' title='Add developed markets to the Climatescope ranking'>
                   <input type='checkbox' name='switch-isDevelopedMarkets' id='switch-isDevelopedMarkets' checked={isDevelopedMarkets} onChange={() => this.setState({ isDevelopedMarkets: !isDevelopedMarkets })}/>
                   <span className='form__option__ui'></span>
                   <span className='form__option__text'>{isDevelopedMarkets ? 'Hide developed markets' : 'Show developed markets'}</span>
@@ -267,6 +282,7 @@ class Results extends React.Component {
     }
 
     const rankedGeographies = this.getRankedGeographies()
+      .filter(geo => geo.market === 'developing')
     const highlightISO = rankedGeographies.map(g => g.iso)
     const activeRegion = regions.find(r => r.id === region)
 

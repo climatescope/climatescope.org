@@ -132,7 +132,7 @@ export default class ResultsMap extends React.Component {
       // Only the first 10 with scores are big markers.
       if (geo.score && highlightedMarkers < 10) {
         highlightedMarkers++
-        const marker = new mapboxgl.Marker(buildMarker(geo.iso, geo.rank))
+        const marker = new mapboxgl.Marker(buildMarker(geo.iso, geo.developingRank))
           .setLngLat(currentGeo.center)
         // If the marker is of the highlighted type add to the end of the array
         // to ensure that it will be added later to the map staying on top.
@@ -215,12 +215,12 @@ export default class ResultsMap extends React.Component {
     const geography = this.props.data.find(geography => equalsIgnoreCase(geography.iso, geoIso))
     if (!geography) return null
 
-    const { iso, score, rank, name, topics, grid } = geography
+    const { iso, score, developingRank, name, topics, grid } = geography
     return (
       <MapPopoverContent
         onCloseClick={this.onPopoverCloseClick}
         iso={iso}
-        rank={rank}
+        rank={developingRank}
         name={name}
         topics={topics}
         grid={grid}
