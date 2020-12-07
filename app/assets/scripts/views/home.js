@@ -116,29 +116,19 @@ investment?</h1>
           <div className='inpage__body'>
             <div className='inner'>
               <div className='col--main'>
-              </div>
-              <div className='col--sec'>
-                <section className='fsection fsection--tweets'>
-                  <header className='fsection__header'>
-                    <div className='fsection__headline'>
-                      <h1 className='fsection__title'>Tools</h1>
-                    </div>
-                    <div className='fsection__actions'></div>
-                  </header>
-                  <ol className='card-list'>
-                    {tools.map(({ url, title, label, description, image }) => (
-                      <li key={url} className='card-list__item'>
-                        <ToolCard
-                          url={url}
-                          linkTitle={title}
-                          title={label}
-                          description={description}
-                          image={image}
-                        />
-                      </li>
-                    ))}
-                  </ol>
-                </section>
+                <ol className='card-list'>
+                  {tools.map(({ url, title, label, description, image }) => (
+                    <li key={url} className='card-list__item'>
+                      <ToolCard
+                        url={url}
+                        linkTitle={title}
+                        title={label}
+                        description={description}
+                        image={image}
+                      />
+                    </li>
+                  ))}
+                </ol>
               </div>
             </div>
             <section className='fold fold--editions'>
