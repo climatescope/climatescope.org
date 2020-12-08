@@ -295,7 +295,6 @@ class Results extends React.Component {
                 {this.renderTitle()}
               </div>
               <div className='inpage__actions'>
-                <a href={`${baseurl}${downloadData.current.model.url}`} className='ipa-download' title='Download the interactive Climatescope model' onClick={this.onDownloadClick} target='_blank'><span>Download Model</span></a>
                 <ShareOptions url={window.location.toString()} />
               </div>
             </div>
