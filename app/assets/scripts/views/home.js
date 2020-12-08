@@ -5,12 +5,11 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import ReactGA from 'react-ga'
 
-import { environment, baseurl } from '../config'
-import { editions, tools, downloadData } from '../utils/constants'
+import { environment } from '../config'
+import { editions, tools } from '../utils/constants'
 
 import App from './app'
 import { ToolCard } from '../components/lib-card'
-import SmartLink from '../components/smart-link'
 
 class Home extends React.Component {
   constructor (props) {
@@ -28,8 +27,6 @@ class Home extends React.Component {
   }
 
   render () {
-    const currentReport = downloadData.current.report
-
     return (
       <App className='page--has-hero'>
         <section className='inpage inpage--home'>
