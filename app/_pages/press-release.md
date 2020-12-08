@@ -7,7 +7,6 @@ language: en
 title: Press Release
 published: true
 ---
-
 # AFTER ATTRACTING A RECORD $32 BILLION FROM ABROAD IN 2019, CLEAN ENERGY IN EMERGING MARKETS ENDURES A ROUGH 2020
 
 ## BloombergNEF’s annual Climatescope survey illustrates investors’ pre-pandemic appetite for clean energy in developing markets; Chile finishes atop the market ranking
@@ -42,8 +41,6 @@ In 2019, support from development finance institutions, including international 
 
 As in prior years, Climatescope leverages the data it collects on developing markets to create overall scores for each. The five highest-scoring markets this year are:
 
-
-
 - **Chile**. The country set and met a 2025 clean energy mandate target of 20% and now aims for 60% by 2035. Chile was ranked 2nd in last year’s survey, and 1st in 2018.
 
 - **India**. Its government has one of the world's most ambitious renewable energy targets, aiming for 175GW by 2022. 
@@ -53,7 +50,6 @@ As in prior years, Climatescope leverages the data it collects on developing mar
 - **Jordan**. Renewable energy installations in Jordan have boomed over the past five years, with 1.5GW of PV and over 500MW of wind capacity installed in 2015-2019.
 
 - **Mainland China**. Clean energy investment in the country has been sinking since 2017 as a result of policy changes, especially the removal of generous feed-in tariffs that were the norm for much of the past decade. Still, thanks to growth and national commitment, it remains a land of enormous potential for renewables.
-
 
 Climatescope is transparent in how it scores different markets by making underlying data available to the public. The Climatescope web site ([https://global-climatescope.org](https://global-climatescope.org/)) allows users the option to rank markets based on different characteristics. This marks the 9th year BloombergNEF has researched and produced Climatescope. 
 
