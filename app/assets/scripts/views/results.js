@@ -9,11 +9,11 @@ import isEqual from 'lodash.isequal'
 import { StickyContainer, Sticky } from 'react-sticky'
 import ReactGA from 'react-ga'
 
-import { environment, baseurl } from '../config'
+import { environment } from '../config'
 import QsState from '../utils/qs-state'
 import { fetchGeographies, fetchGeographiesMeta } from '../redux/geographies'
 import { wrapApiResult } from '../utils/utils'
-import { regions, downloadData } from '../utils/constants'
+import { regions } from '../utils/constants'
 
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
@@ -295,7 +295,6 @@ class Results extends React.Component {
                 {this.renderTitle()}
               </div>
               <div className='inpage__actions'>
-                <a href={`${baseurl}${downloadData.current.model.url}`} className='ipa-download' title='Download the interactive Climatescope model' onClick={this.onDownloadClick} target='_blank'><span>Download Model</span></a>
                 <ShareOptions url={window.location.toString()} />
               </div>
             </div>
