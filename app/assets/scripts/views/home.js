@@ -40,15 +40,6 @@ class Home extends React.Component {
 investment?</h1>
                 <p>
                   <Link to='/results' className='home-cta-button' title='View results'><span>Ranking</span></Link>
-                  <SmartLink
-                    to={baseurl + currentReport.url}
-                    title={currentReport.title}
-                    className='home-cta-button'
-                    onClick={this.onDownloadClick.bind(this, currentReport.url)}
-                    target='_blank'
-                  >
-                    <span>Full report</span>
-                  </SmartLink>
                   <Link to='/key-findings' className='home-cta-button' title='View key findings'><span>Key findings</span></Link>
                 </p>
               </div>
