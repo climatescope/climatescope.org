@@ -5,11 +5,12 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import ReactGA from 'react-ga'
 
-import { environment } from '../config'
-import { editions, tools } from '../utils/constants'
+import { environment, baseurl } from '../config'
+import { editions, tools, downloadData } from '../utils/constants'
 
 import App from './app'
 import { ToolCard } from '../components/lib-card'
+import SmartLink from '../components/smart-link'
 
 class Home extends React.Component {
   constructor (props) {
@@ -27,6 +28,8 @@ class Home extends React.Component {
   }
 
   render () {
+    const currentReport = downloadData.current.report
+
     return (
       <App className='page--has-hero'>
         <section className='inpage inpage--home'>
@@ -37,6 +40,15 @@ class Home extends React.Component {
 investment?</h1>
                 <p>
                   <Link to='/results' className='home-cta-button' title='View results'><span>Ranking</span></Link>
+                  <SmartLink
+                    to={baseurl + currentReport.url}
+                    title={currentReport.title}
+                    className='home-cta-button'
+                    onClick={this.onDownloadClick.bind(this, currentReport.url)}
+                    target='_blank'
+                  >
+                    <span>Full report</span>
+                  </SmartLink>
                   <Link to='/key-findings' className='home-cta-button' title='View key findings'><span>Key findings</span></Link>
                 </p>
               </div>
