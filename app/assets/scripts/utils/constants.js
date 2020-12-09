@@ -11,7 +11,7 @@ export const regions = [
   },
   {
     id: 'asia',
-    name: 'Asia',
+    name: 'Asia-Pacific',
     bounds: [
       [ -147.09936650354584, -14.15191021774936 ],
       [ 345.53812145152574, 57.674958540828726 ]
@@ -19,7 +19,7 @@ export const regions = [
   },
   {
     id: 'africa',
-    name: 'Africa',
+    name: 'Middle East & Africa',
     bounds: [
       [ -199.8100381343629, -35.81433484642947 ],
       [ 259.83699099554127, 38.00623857719981 ]
@@ -35,18 +35,10 @@ export const regions = [
   },
   {
     id: 'lac',
-    name: 'Latin America and The Caribbean',
+    name: 'Americas',
     bounds: [
       [ -344.1508065387974, -54.042346370755524 ],
       [ 221.74106548508882, 31.70087717612357 ]
-    ]
-  },
-  {
-    id: 'mena',
-    name: 'Middle East and North Africa',
-    bounds: [
-      [ -37.8641930063429, 13.86496262709737 ],
-      [ 124.64557261866406, 38.775672115626094 ]
     ]
   }
 ]
@@ -210,13 +202,6 @@ export const tools = [
     label: 'Capacity & Generation',
     description: 'Who has the most (and least) clean energy today?',
     image: 'feat-tool-thumb--capacity-generation.jpg'
-  },
-  {
-    url: '/policies',
-    title: 'Browse the policy database',
-    label: 'Policies',
-    description: '800+ policies to improve clean energy development',
-    image: 'feat-tool-thumb--policies.jpg'
   }
 ]
 

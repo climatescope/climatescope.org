@@ -98,16 +98,16 @@ export default class ResultsTable extends React.PureComponent {
     const { data, sortField, sortDirection } = this.props
     const rows = orderBy(data, sortField, sortDirection)
 
-    return rows.map(({ iso, score, rank, name, topics, grid }) => {
-      const hasScore = !!score
+    return rows.map(({ iso, score, developingRank, name, topics, grid }) => {
+      const isDevelopingMarket = !!developingRank
 
       return (
         <tr key={iso}>
-          <th className='cell-rank'>{hasScore ? padNumber(rank, 2) : '--'}</th>
+          <th className='cell-rank'>{isDevelopingMarket ? padNumber(developingRank, 2) : ''}</th>
           <th className='cell-country'>
-            <Link to={`/results/${iso}`} title={`Go to ${name} page`}>{name}</Link>
+            <Link to={`/results/${iso}`} className={isDevelopingMarket ? '' : 'is-developed'} title={`Go to ${name} page`}>{name}</Link>
           </th>
-          <td>{hasScore ? round(score) : '--'}</td>
+          <td>{isDevelopingMarket ? round(score) : ''}</td>
           <td>
             <ParameterGraph
               geographyIso={iso}

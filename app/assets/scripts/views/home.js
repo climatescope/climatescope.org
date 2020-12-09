@@ -5,26 +5,16 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import ReactGA from 'react-ga'
 
-import { environment, baseurl } from '../config'
-import { editions, tools, downloadData, libraryCType } from '../utils/constants'
-import { fetchLibraryContentType } from '../redux/libraryctypes'
-import { wrapApiResult, getFromState } from '../utils/utils'
+import { environment } from '../config'
+import { editions, tools } from '../utils/constants'
 
 import App from './app'
-import { MediumCard, ToolCard } from '../components/lib-card'
-import SmartLink from '../components/smart-link'
-
-const contentTypes = libraryCType.pages
+import { ToolCard } from '../components/lib-card'
 
 class Home extends React.Component {
   constructor (props) {
     super(props)
-    this.handleOClickShowModal = this.handleOClickShowModal.bind(this)
-    this.handleOutsideClick = this.handleOutsideClick.bind(this)
-
-    this.state = {
-      showModal: false
-    }
+    this.state = {}
   }
 
   onDownloadClick (url) {
@@ -36,82 +26,7 @@ class Home extends React.Component {
     })
   }
 
-  componentDidMount () {
-    const filter = {
-      limit: 9
-    }
-    this.props.fetchInsight(filter)
-  }
-
-  renderMediumPosts (insights) {
-    return (
-      <ol className='card-list'>
-        {
-          Array.from(insights).slice(0, 9).map((post, i) => {
-            // Get correct subtitle, based on tags.
-            const ctType = contentTypes.find(r => r.id === post.type)
-            const subtitle = ctType ? ctType.label : 'Explore'
-            return (
-              <li key={post.id} className='card-list__item'>
-                <MediumCard
-                  isFeatured={i === 0}
-                  title={post.title}
-                  subtitle={subtitle}
-                  url={post.url}
-                  description={post.description}
-                  tags={post.tags}
-                />
-              </li>
-            )
-          })
-        }
-      </ol>
-    )
-  }
-  renderModal () {
-    return (
-      <section className='modal revealed' ref={node => { this.node = node }}
-        data-modal='modal-intro-video' id='modal-intro-video'>
-        <div className='modal__inner'>
-          <header className='modal__header'>
-            <h1 className='modal__title'>Intro video</h1>
-            <a className='close' title='Close' onClick={this.handleOutsideClick} data-modal-dismiss><span>Close</span></a>
-          </header>
-          <div className='modal__body'>
-            <div className='embed-container'>
-              <iframe src='https://player.vimeo.com/video/375982143' frameBorder='0' allowFullScreen={true}
-                webkitallowfullscreen='true' mozallowfullscreen='true' ></iframe>
-            </div>
-          </div>
-        </div>
-      </section>
-    )
-  }
-  handleOClickShowModal () {
-    if (!this.state.showModal) {
-      // attach/remove event handler
-      document.addEventListener('click', this.handleOutsideClick, false)
-    } else {
-      document.removeEventListener('click', this.handleOutsideClick, false)
-    }
-    this.setState(prevState => ({
-      showModal: !prevState.showModal
-    }))
-  }
-  handleOutsideClick (e) {
-    const classNameListExit = e.target.classList
-    if (!(classNameListExit.contains('revealed') || classNameListExit.contains('close'))) {
-      return
-    }
-    this.handleOClickShowModal()
-  }
-
   render () {
-    const { getData } = this.props.insightList
-    const ctypesList = getData()
-
-    const currentReport = downloadData.current.report
-
     return (
       <App className='page--has-hero'>
         <section className='inpage inpage--home'>
@@ -121,23 +36,7 @@ class Home extends React.Component {
                 <h1 className='inpage__title'>Which emerging market is the most attractive for clean energy
 investment?</h1>
                 <p>
-                  <button
-                    className='video-cta-button'
-                    onClick={this.handleOClickShowModal}
-                    target='_blank'
-                  >
-                    <span>Watch video</span>
-                  </button>
                   <Link to='/results' className='home-cta-button' title='View results'><span>Ranking</span></Link>
-                  <SmartLink
-                    to={baseurl + currentReport.url}
-                    title={currentReport.title}
-                    className='home-cta-button'
-                    onClick={this.onDownloadClick.bind(this, currentReport.url)}
-                    target='_blank'
-                  >
-                    <span>Full report</span>
-                  </SmartLink>
                   <Link to='/key-findings' className='home-cta-button' title='View key findings'><span>Key findings</span></Link>
                 </p>
               </div>
@@ -155,40 +54,19 @@ investment?</h1>
           <div className='inpage__body'>
             <div className='inner'>
               <div className='col--main'>
-                <section className='fsection'>
-                  <header className='fsection__header'>
-                    <div className='fsection__headline'>
-                      <h1 className='fsection__title'>Insights</h1>
-                    </div>
-                    <div className='fsection__actions'>
-                      <a href='/library/insights' title='View all insights' className='fsa-go'><span>View all</span></a>
-                    </div>
-                  </header>
-                  {this.renderMediumPosts(ctypesList)}
-                </section>
-              </div>
-              <div className='col--sec'>
-                <section className='fsection fsection--tweets'>
-                  <header className='fsection__header'>
-                    <div className='fsection__headline'>
-                      <h1 className='fsection__title'>Tools</h1>
-                    </div>
-                    <div className='fsection__actions'></div>
-                  </header>
-                  <ol className='card-list'>
-                    {tools.map(({ url, title, label, description, image }) => (
-                      <li key={url} className='card-list__item'>
-                        <ToolCard
-                          url={url}
-                          linkTitle={title}
-                          title={label}
-                          description={description}
-                          image={image}
-                        />
-                      </li>
-                    ))}
-                  </ol>
-                </section>
+                <ol className='card-list'>
+                  {tools.map(({ url, title, label, description, image }) => (
+                    <li key={url} className='card-list__item'>
+                      <ToolCard
+                        url={url}
+                        linkTitle={title}
+                        title={label}
+                        description={description}
+                        image={image}
+                      />
+                    </li>
+                  ))}
+                </ol>
               </div>
             </div>
             <section className='fold fold--editions'>
@@ -213,7 +91,6 @@ investment?</h1>
             </section>
           </div>
         </section>
-        {this.state.showModal ? this.renderModal() : null}
       </App>
     )
   }
@@ -222,23 +99,12 @@ investment?</h1>
 if (environment !== 'production') {
   Home.propTypes = {
     location: T.object,
-    history: T.object,
-    fetchInsight: T.func,
-    insightList: T.object
+    history: T.object
   }
 }
 
-function mapStateToProps (state) {
-  return {
-    insightList: wrapApiResult(getFromState(state.libraryct, 'list'))
-  }
-}
+function mapStateToProps (state) {}
 
-function dispatcher (dispatch) {
-  return {
-    fetchInsight: (...args) => dispatch(fetchLibraryContentType(...args))
-
-  }
-}
+function dispatcher (dispatch) {}
 
 export default connect(mapStateToProps, dispatcher)(Home)

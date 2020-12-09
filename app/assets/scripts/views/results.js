@@ -9,11 +9,11 @@ import isEqual from 'lodash.isequal'
 import { StickyContainer, Sticky } from 'react-sticky'
 import ReactGA from 'react-ga'
 
-import { environment, baseurl } from '../config'
+import { environment } from '../config'
 import QsState from '../utils/qs-state'
 import { fetchGeographies, fetchGeographiesMeta } from '../redux/geographies'
 import { wrapApiResult } from '../utils/utils'
-import { regions, downloadData } from '../utils/constants'
+import { regions } from '../utils/constants'
 
 import App from './app'
 import { SliderControlGroup } from '../components/slider-controls'
@@ -55,7 +55,8 @@ class Results extends React.Component {
         field: 'rank',
         dir: 'asc'
       },
-      markersHighlight: 'top'
+      markersHighlight: 'top',
+      isDevelopedMarkets: false
     }
   }
 
@@ -116,7 +117,7 @@ class Results extends React.Component {
 
   getRankedGeographies () {
     const { getData, hasError } = this.props.geographiesList
-    const { sliders, region } = this.state
+    const { sliders, region, isDevelopedMarkets } = this.state
 
     if (hasError()) return []
 
@@ -124,6 +125,9 @@ class Results extends React.Component {
       // Filter by active region
       .filter(geography => {
         return region === 'all' ? true : geography.region.id === region
+      })
+      .filter(geography => {
+        return isDevelopedMarkets ? true : geography.market === 'developing'
       })
       .map(geography => {
         const topics = (geography.topics || []).map(t => {
@@ -148,6 +152,7 @@ class Results extends React.Component {
         return {
           iso: geography.iso.toUpperCase(),
           name: geography.name,
+          market: geography.market,
           grid,
           topics,
           score: topics.reduce((acc, t) => acc + t.value * (t.weight / 100), 0)
@@ -157,8 +162,22 @@ class Results extends React.Component {
     // Sort by the score.
     tableData = orderBy(tableData, 'score', 'desc')
 
+    // Determine rank for developing countries only.
+    const developingRank = tableData
+      .filter(geography => geography.market === 'developing')
+      .map(geography => geography.iso)
+
     // Add the rank. After scoring, the rank is the index.
-    tableData = tableData.map((geography, idx) => ({ ...geography, rank: idx + 1 }))
+    // developingRank is used for presentation
+    tableData = tableData.map((geography, idx) => (
+      {
+        ...geography,
+        rank: idx + 1,
+        developingRank: geography.market === 'developing'
+          ? developingRank.findIndex(geo => geo === geography.iso) + 1
+          : null
+      }
+    ))
 
     return tableData
   }
@@ -192,13 +211,25 @@ class Results extends React.Component {
   }
 
   renderHeaderFn ({ style, isSticky }) {
+    const { isDevelopedMarkets } = this.state
+
     return (
       <nav className={c('inpage__nav nav', { 'inpage__nav--sticky': isSticky })} style={style} role='navigation'>
         <div className='inner'>
           <div className='par-controls'>
             <div className='par-controls__headline'>
-              <h2 className='par-controls__title'>Calculate your own score</h2>
-              <a href='#' className='par-controls__reset-button' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
+              <div className='par-controls__action'>
+                <h2 className='par-controls__title'>Calculate your own score</h2>
+                <a href='#' className='par-controls__reset-button' title='Reset topic weights' onClick={this.onWeightsResetClick}><span>Reset</span></a>
+              </div>
+              <div className='par-controls__action'>
+                <h2 className='par-controls__title'>Developed markets</h2>
+                <label htmlFor='switch-isDevelopedMarkets' className='form__option form__option--text-hidden form__option--switch fos-eye' title='Add developed markets to the Climatescope ranking'>
+                  <input type='checkbox' name='switch-isDevelopedMarkets' id='switch-isDevelopedMarkets' checked={isDevelopedMarkets} onChange={() => this.setState({ isDevelopedMarkets: !isDevelopedMarkets })}/>
+                  <span className='form__option__ui'></span>
+                  <span className='form__option__text'>{isDevelopedMarkets ? 'Hide developed markets' : 'Show developed markets'}</span>
+                </label>
+              </div>
             </div>
             <SliderControlGroup
               sliders={this.props.sliders}
@@ -251,6 +282,7 @@ class Results extends React.Component {
     }
 
     const rankedGeographies = this.getRankedGeographies()
+      .filter(geo => geo.market === 'developing')
     const highlightISO = rankedGeographies.map(g => g.iso)
     const activeRegion = regions.find(r => r.id === region)
 
@@ -263,7 +295,6 @@ class Results extends React.Component {
                 {this.renderTitle()}
               </div>
               <div className='inpage__actions'>
-                <a href={`${baseurl}${downloadData.current.model.url}`} className='ipa-download' title='Download the interactive Climatescope model' onClick={this.onDownloadClick} target='_blank'><span>Download Model</span></a>
                 <ShareOptions url={window.location.toString()} />
               </div>
             </div>

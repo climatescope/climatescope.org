@@ -54,10 +54,6 @@ export default [
     ],
     areaBeta: [
       {
-        id: 'availabilityPolicies',
-        size: 'medium'
-      },
-      {
         id: 'gapToTarget',
         size: 'small'
       },
@@ -85,10 +81,6 @@ export default [
       {
         id: 'foreignInvestment',
         size: 'small'
-      },
-      {
-        id: 'availabilityFinance',
-        size: 'small'
       }
     ]
   },
@@ -104,10 +96,6 @@ export default [
     areaBeta: [
       {
         id: 'sectorWholesale',
-        size: 'small'
-      },
-      {
-        id: 'wholesaleDistortions',
         size: 'small'
       },
       {
@@ -129,16 +117,7 @@ export default [
         size: 'large'
       }
     ],
-    areaBeta: [
-      {
-        id: 'averageVAT',
-        size: 'small'
-      },
-      {
-        id: 'importDuties',
-        size: 'small'
-      }
-    ]
+    areaBeta: []
   },
   {
     id: 'barriers',
@@ -190,10 +169,6 @@ export const compareLayoutDef = [
     mainDataLayers: renewableTypes
   },
   {
-    id: 'availabilityPolicies',
-    size: 'large'
-  },
-  {
     id: 'gapToTarget',
     size: 'large'
   },
@@ -211,27 +186,11 @@ export const compareLayoutDef = [
     size: 'large'
   },
   {
-    id: 'availabilityFinance',
-    size: 'large'
-  },
-  {
     id: 'sectorWholesale',
     size: 'large'
   },
   {
-    id: 'wholesaleDistortions',
-    size: 'large'
-  },
-  {
     id: 'electricityPrice',
-    size: 'large'
-  },
-  {
-    id: 'averageVAT',
-    size: 'large'
-  },
-  {
-    id: 'importDuties',
     size: 'large'
   },
   {
