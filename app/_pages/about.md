@@ -45,7 +45,8 @@ Bryony Collins, Vandana Gombar, Angus McCrone, Stephen Munro, Richard Stubbe, Be
 
 #### Africa and Middle East
 Kwasi Ampofo, Melina Bartels, Ian Berryman, Imogen Brown, Emma Champion, Jennifer Cogburn, Bryony Collins, Luiza Demôro, Isabelle Edwards, James Ellis, Sandra Esser, Uilmmeh Ezekiel, Andrew Grant, Eva Marina Isla, Emily Jackson, Brianna Lazerwitz, Jinghong Lyu, Sofia Maia and Antoine Vagneur-Jones.
-Americas
+
+#### Americas
 Melina Bartels, Laura Castro, Helena Chung, Luiza Demôro, James Ellis, Brianna Lazerwitz, Sofia Maia and Natalia Rypl.
 
 #### Asia-Pacific
