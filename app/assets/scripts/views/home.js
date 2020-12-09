@@ -89,7 +89,7 @@ investment?</h1>
                     <p>Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future.</p>
                   </div>
                 </header>
-                <div className='fold__body'>
+                {/* <div className='fold__body'>
                   <h2>View or download our previous reports</h2>
                   <ul className='editions-menu'>
                     {editions.map(o => (
@@ -98,7 +98,7 @@ investment?</h1>
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
               </div>
             </section>
           </div>
