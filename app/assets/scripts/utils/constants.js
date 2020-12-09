@@ -46,19 +46,27 @@ export const regions = [
 export const downloadData = {
   current: {
     report: {
-      url: '/assets/data/reports/climatescope-2019-report-en.pdf',
+      url: '/assets/data/reports/climatescope-2020-report-en.pdf',
       title: 'Download full report in PDF',
-      label: '2019',
-      size: '2Mb'
-    },
-    model: {
-      url: '/assets/data/model/climatescope-2019.xlsm',
-      title: 'Download Climatescope model in Excel format',
-      label: '2019 (Excel)',
-      size: '17Mb'
+      label: '2020',
+      size: '5Mb'
     }
   },
   previous: [
+    {
+      report: {
+        url: '/assets/data/reports/climatescope-2019-report-en.pdf',
+        title: 'Download full report in PDF',
+        label: '2019',
+        size: '2Mb'
+      },
+      model: {
+        url: '/assets/data/model/climatescope-2019.xlsm',
+        title: 'Download Climatescope model in Excel format',
+        label: '2019 (Excel)',
+        size: '17Mb'
+      }
+    },
     {
       report: {
         url: '/assets/data/reports/climatescope-2018-report-en.pdf',
