@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import ReactGA from 'react-ga'
 
 import { environment, baseurl } from '../config'
-import { editions, tools, downloadData } from '../utils/constants'
+import { tools, downloadData } from '../utils/constants'
 
 import App from './app'
 import { ToolCard } from '../components/lib-card'
