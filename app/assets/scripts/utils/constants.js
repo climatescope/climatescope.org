@@ -266,4 +266,9 @@ export const languages = [
     id: 'ru',
     label: 'Russian'
   }
+  ,
+  {
+    id: 'ko',
+    label: 'Korean'
+  }
 ]
