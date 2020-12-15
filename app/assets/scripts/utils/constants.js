@@ -50,6 +50,12 @@ export const downloadData = {
       title: 'Download full report in PDF',
       label: '2020',
       size: '5Mb'
+    },
+    model: {
+      url: '/assets/data/model/climatescope-2020.xlsm',
+      title: 'Download Climatescope model in Excel format',
+      label: '2020 (Excel)',
+      size: '28Mb'
     }
   },
   previous: [
