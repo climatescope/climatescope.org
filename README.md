@@ -43,21 +43,9 @@ npm install
 
 ### Javascript configurations and environment variables
 
-At times, it may be necessary to include options/variables specific to `production`, `staging` or `local` in the code. To handle this, there is a master config.js file. This file should not be modified.  Instead, modify one of:
+In order to run the app, you will need to provide a site url and a mapbox token.
 
-- config/production.js - production settings
-- config/staging.js - overrides the production settings for staging server
-- config/local.js - local (development) overrides. This file is gitignored, so you can safely change it without polluting the repo.
-
-By default `production.js` is always loaded and values are overridden by `staging.js` or `local.js` according to the environment.
-
-Values overridable by environment variables are expressed between []:
-
-- appTitle - Title of the site
-- appEdition - Edition of the site
-- appDescription - Description of the site for meta purposed
-- policyDbUrl - Url for the Policy database
-- mediumLatestUrl - Url for the medium script
-- gaTrackingID - Google analytics tracking ID [GA_TRACKING_ID]
-- mailchimpUrl - Url for the mailchimp list subscription [MAILCHIMP_URL]
-- mbtoken - Mapbox token [MB_TOKEN]
+```
+SITE_URL=https://global-climatescope.org/
+MAPBOX_TOKEN=
+```
