@@ -5,33 +5,32 @@ import {
   Text,
   Flex,
   Stack,
-  Tab,
-  IconButton,
+  // Tab,
   Divider,
 } from "@chakra-ui/react"
 import dayjs from "dayjs"
 
-import { Link } from "@components/Link"
+import { Link, LinkBox, LinkOverlay } from "@components/Link"
 import SEO from "@components/SEO"
 import { ChevronRight } from "@components/Icon"
 import SimpleGrid from "@components/SimpleGrid"
 
-const BlogTab = ({ tabName }) => {
-  return (
-    <Tab
-      px={4}
-      color="gray.300"
-      fontWeight={600}
-      borderBottomWidth="0.1875rem"
-      borderColor="brand.900"
-      _focus={{ bg: "brand.900", boxShadow: "outline" }}
-      _active={{ bg: "brand.900" }}
-      _selected={{ color: "white", borderColor: "white" }}
-    >
-      {tabName}
-    </Tab>
-  )
-}
+// const BlogTab = ({ tabName }) => {
+//   return (
+//     <Tab
+//       px={4}
+//       color="gray.300"
+//       fontWeight={600}
+//       borderBottomWidth="0.1875rem"
+//       borderColor="brand.900"
+//       _focus={{ bg: "brand.900", boxShadow: "outline" }}
+//       _active={{ bg: "brand.900" }}
+//       _selected={{ color: "white", borderColor: "white" }}
+//     >
+//       {tabName}
+//     </Tab>
+//   )
+// }
 
 const BlogBanner = () => {
   return (
@@ -65,7 +64,7 @@ const BlogLandingPage = ({ allPosts }) => {
           {allPosts.map((post) => {
             const date = dayjs(post.date).format("MMMM D, YYYY")
             return (
-              <Box key={post.title}>
+              <LinkBox key={post.title}>
                 <SimpleGrid columns={8} py={10}>
                   <Box gridColumn={["1 / -1", null, null, "1 / 3"]}>
                     <Text
@@ -83,30 +82,25 @@ const BlogLandingPage = ({ allPosts }) => {
                     spacing={6}
                   >
                     <Stack spacing={3}>
-                      <Link href={`/blog/${post.slug}`}>
-                        <Heading fontSize="2xl">{post.title}</Heading>
-                      </Link>
+                      <Heading fontSize="2xl">
+                        <LinkOverlay href={`/blog/${post.slug}`}>
+                          {post.title}
+                        </LinkOverlay>
+                      </Heading>
                       <Text color="gray.600">{post.description}</Text>
                     </Stack>
                   </Stack>
 
                   <Flex
                     display={["none", null, null, null, "flex"]}
-                    gridColumn="7 / -1"
+                    gridColumn="-2 / -1"
                     justifyContent="flex-end"
                   >
-                    <Link href={`/blog/${post.slug}`} mr={2}>
-                      <IconButton
-                        icon={<ChevronRight size={20} strokeWidth={2} />}
-                        borderRadius="full"
-                        colorScheme="gray"
-                        variant="ghost"
-                      />
-                    </Link>
+                    <ChevronRight size={24} strokeWidth={2} />
                   </Flex>
                 </SimpleGrid>
                 <Divider />
-              </Box>
+              </LinkBox>
             )
           })}
         </Stack>
