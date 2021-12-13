@@ -2,7 +2,7 @@ import { Container, Stack } from "@chakra-ui/react"
 
 import SEO from "@components/SEO"
 
-export default function Page({ metaData, ...restProps }) {
+export default function AboutPage({ metaData, ...restProps }) {
   return (
     <>
       <SEO title={metaData.title} />

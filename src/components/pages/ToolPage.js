@@ -3,7 +3,7 @@ import { Container, Stack } from "@chakra-ui/react"
 import SEO from "@components/SEO"
 import extractKeyMDXParts from "@utils/extractKeyMDXParts"
 
-export default function Page({ metaData, children, ...restProps }) {
+export default function ToolPage({ metaData, children, ...restProps }) {
   const { heading, subHeading, textBody } = extractKeyMDXParts(children, {
     subHeading: true,
   })
