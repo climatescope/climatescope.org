@@ -94,7 +94,13 @@ export const theme = extendTheme(
       "2xl": "96em",
     },
     components: {
+      Button: buttonTheme,
+      Container: containerTheme,
+      Link: linkTheme,
       Heading: headingTheme,
+      Tabs: tabsTheme,
+      Text: textTheme,
+      Select: selectTheme,
     },
   },
   withDefaultColorScheme({ colorScheme: "brand" })

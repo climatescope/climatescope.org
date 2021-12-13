@@ -3,13 +3,18 @@ import SEO from "@components/SEO"
 
 import getMarketCounts from "@utils/getMarketCounts"
 import createMarketSummary from "@utils/createMarketSummary"
+import MarketPage from "@components/pages/MarketPage"
 
 export default function MarketPageWrapper({ market, marketCounts }) {
   const summary = createMarketSummary(market)
   return (
     <>
       <SEO title={market.name} description={summary} />
-      {`Market page ${market.name}`}
+      <MarketPage
+        market={market}
+        summary={summary}
+        marketCounts={marketCounts}
+      />
     </>
   )
 }

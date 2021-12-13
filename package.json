@@ -16,13 +16,14 @@
   },
   "homepage": "http://global-climatescope.org/",
   "scripts": {
-    "develop": "npm run prepareImages && next",
-    "build": "next build",
+    "develop": "npm run buildNavigation && npm run prepareImages && next",
+    "build": "npm run buildNavigation && next build",
     "start": "next start",
-    "export": "npm run prepareImages && next build && next export",
+    "export": "npm run buildNavigation && npm run prepareImages && next build && next export",
     "serve": "serve out",
     "clean": "rm -Rf out && rm -Rf .next",
     "prepareImages": "node ./scripts/images.js",
+    "buildNavigation": "node ./scripts/navigation.js",
     "test": "echo 'No tests' && exit 0"
   },
   "engines": {

@@ -5,6 +5,7 @@ import { getServerData } from "@utils/api/server"
 import { useClientData } from "@utils/api/client"
 
 import SEO from "@components/SEO"
+import ResultsPage from "@components/pages/ResultsPage"
 
 const { publicRuntimeConfig } = getConfig()
 const basePath = publicRuntimeConfig.basePath
@@ -14,7 +15,7 @@ const ResultsPageWrapper = ({ dataPreview }) => {
   return (
     <>
       <SEO title="Results" />
-      {"Results page"}
+      <ResultsPage clientData={clientData} dataPreview={dataPreview} />
     </>
   )
 }

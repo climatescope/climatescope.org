@@ -3,8 +3,9 @@ import getMarketCounts from "@utils/getMarketCounts"
 import getSpotlightMarkets from "@utils/getSpotlightMarkets"
 
 import SEO from "@components/SEO"
+import IndexPage from "@components/pages/IndexPage"
 
-export default function IndexPage({
+export default function IndexPageWrapper({
   marketCounts,
   spotlightMarkets,
   globeInsights,
@@ -12,12 +13,17 @@ export default function IndexPage({
   const metaData = {
     indicatorCount: 163,
     marketCounts,
+    countryCounts: marketCounts,
   }
 
   return (
     <>
       <SEO />
-      {"Index page"}
+      <IndexPage
+        globeInsights={globeInsights}
+        countriesSpotlight={spotlightMarkets}
+        metaData={metaData}
+      />
     </>
   )
 }
