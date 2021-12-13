@@ -11,18 +11,20 @@ const AboutLandingPage = ({ allPages }) => {
       <Container as="main">
         <SimpleGrid columns={8} pt={10} pb={40}>
           <Stack spacing={10} gridColumn={["1 / -1", null, null, "2 / span 5"]}>
-            <Heading fontSize={["3xl", null, "5xl"]}>{"About"}</Heading>
-            <Text variant="subtitle">
+            <Heading fontSize={["3xl", null, "5xl"]} maxW="45rem">
+              {"About"}
+            </Heading>
+            <Text variant="subtitle" maxW="45rem">
               {
                 "2021 marks the tenth year of Climatescope. The project has significantly evolved over a decade and expanded to new markets and sectors."
               }
             </Text>
-            <Text fontSize={["md", null, "lg"]}>
+            <Text fontSize={["md", null, "lg"]} maxW="45rem">
               {
                 "Climatescope is a unique market assessment, interactive report and index that evaluates the conditions for energy transition investment globally and evaluates their ability to attract capital for low-carbon technologies while building a greener economy. It also provides a snapshot of where clean energy policy and finance stand today and a guide to what can happen in the future. This year, BNEF gathered detailed information on 136 markets globally, or 107 emerging markets and 29 developed nations. Climatescope 2021 also expanded from a power focus, to a wider energy transition scope, including power, transport and buildings."
               }
             </Text>
-            <Text fontSize={["md", null, "lg"]}>
+            <Text fontSize={["md", null, "lg"]} maxW="45rem">
               {
                 "Climatescope encompasses nearly every nation in the world with over 2 million inhabitants. Developed markets are defined as OECD countries minus Chile, Colombia, Costa Rica, Mexico and Turkey. These five are part of the OECD, but remain attractive emerging markets for clean energy development. Developing markets include all non-OECD nations, plus these five countries."
               }

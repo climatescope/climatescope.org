@@ -34,6 +34,9 @@ const imageTypes = {
   cover: {
     sizes: ["md", "lg"],
   },
+  chart: {
+    sizes: ["md", "lg"],
+  },
 
   /**
    * Custom breakpoints are also possible

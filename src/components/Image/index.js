@@ -11,7 +11,7 @@ const Image = ({
   ratio = 3 / 2,
   alt = "",
   sizes,
-  bg = "gray.50",
+  bg = "white",
   breakpoints,
   caption,
   ...restProps
