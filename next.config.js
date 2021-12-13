@@ -13,6 +13,10 @@ module.exports = withPlugins(
   [[withMDX, { pageExtensions: ["js", "jsx", "md", "mdx"] }]],
   {
     trailingSlash: true,
+    env: {
+      MAILCHIMP_ADDRESS: process.env.MAILCHIMP_ADDRESS || "",
+      MAILCHIMP_TIMEOUT: 3500,
+    },
     basePath: process.env.BASE_PATH || "",
     publicRuntimeConfig: {
       basePath: process.env.BASE_PATH || "",

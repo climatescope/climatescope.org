@@ -41,6 +41,8 @@
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@next/mdx": "^11.1.0",
+    "email-validator": "^2.0.4",
+    "jsonp": "^0.2.1",
     "@reach/combobox": "^0.16.1",
     "@turf/centroid": "^6.5.0",
     "@turf/turf": "^6.5.0",

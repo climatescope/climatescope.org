@@ -1,8 +1,17 @@
-import { Container, Stack, Divider, Box, Text } from "@chakra-ui/react"
+import {
+  Container,
+  Heading,
+  Text,
+  Stack,
+  HStack,
+  Divider,
+  Box,
+} from "@chakra-ui/react"
 
 import { Link } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
 import Reports from "@components/pages/IndexPage/Reports"
+import Newsletter from "@components/Newsletter"
 
 const toExclude = ["/reports", "/tools"]
 
@@ -11,6 +20,24 @@ const SiteFooter = ({ navigation }) => {
     <Box bg="gray.50">
       <Container>
         <Reports />
+      </Container>
+
+      <Container maxW="container.lg" py={16}>
+        <SimpleGrid columns={[1, null, 2]}>
+          <Stack spacing={5}>
+            <Heading fontSize="4xl" maxW="60rem">
+              {"Stay up to date"}
+            </Heading>
+            <Text fontSize="xl">
+              {
+                "Subscribe to our mailing list to get the latest news about Climatescope directly in your inbox."
+              }
+            </Text>
+          </Stack>
+          <Box>
+            <Newsletter />
+          </Box>
+        </SimpleGrid>
       </Container>
 
       <Divider borderColor="gray.100" />

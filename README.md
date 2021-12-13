@@ -67,9 +67,10 @@ npm run serve
 
 ### Javascript configurations and environment variables
 
-In order to run the app, you will need to provide a site url and a mapbox token. You can do this via a `.env.local` file.
+In order to run the app, you will need to provide a site url and a mapbox token, as well as a mailchimp address. You can do this via a `.env.local` file.
 
 ```
 SITE_URL=https://global-climatescope.org/
 MAPBOX_TOKEN=
+MAILCHIMP_ADDRESS=
 ```
