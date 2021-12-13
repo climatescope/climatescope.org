@@ -1,12 +1,13 @@
 import { getPages } from "@utils/api/server"
 
 import SEO from "@components/SEO"
+import BlogLandingPage from "@components/pages/BlogLandingPage"
 
 export default function BlogPage({ allPosts }) {
   return (
     <>
       <SEO title="Blog" />
-      {"Blog "}
+      <BlogLandingPage allPosts={allPosts} />
     </>
   )
 }

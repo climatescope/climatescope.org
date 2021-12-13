@@ -6,7 +6,6 @@ export default function MarketsPageWrapper({ markets }) {
   return (
     <>
       <SEO title="Markets" />
-      {"All markets"}
     </>
   )
 }

@@ -151,6 +151,7 @@ export default function SectorPage({ metaData, children, ...restProps }) {
                   lineHeight="shorter"
                   fontWeight={700}
                   mt={1}
+                  textTransform="uppercase"
                 >
                   {"On this page"}
                 </Text>

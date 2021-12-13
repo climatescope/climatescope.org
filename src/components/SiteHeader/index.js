@@ -12,6 +12,7 @@ import {
   ModalBody,
   VisuallyHidden,
   Divider,
+  useTheme,
 } from "@chakra-ui/react"
 import { useRouter } from "next/router"
 
@@ -24,6 +25,7 @@ import Logo from "./Logo"
 const includedLinks = ["/results", "/themes", "/tools", "/sectors", "/about"]
 
 const SiteHeader = ({ navigation }) => {
+  const { colors } = useTheme()
   const finalRef = useRef()
   const initialRef = useRef()
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -41,7 +43,12 @@ const SiteHeader = ({ navigation }) => {
   )
 
   return (
-    <Box>
+    <Box
+      style={{
+        background: route === "/blog" ? colors.brand[900] : "white",
+        color: route === "/blog" ? "white" : "inherit",
+      }}
+    >
       <Container>
         <HStack
           h={["4.5rem", null, null, "6rem"]}
@@ -73,6 +80,7 @@ const SiteHeader = ({ navigation }) => {
               size="lg"
               flex="none"
               rightIcon={<DownloadIcon strokeWidth={1.75} />}
+              colorScheme={route === "/blog" ? "white" : "brand"}
               display={["none", "flex"]}
             >
               {"Download report"}
@@ -83,7 +91,7 @@ const SiteHeader = ({ navigation }) => {
               w="3rem"
               minW="2.5rem"
               h="3rem"
-              colorScheme="gray"
+              colorScheme={route === "/blog" ? "white" : "gray"}
               borderRadius="full"
               p={0}
             >
@@ -118,7 +126,11 @@ const SiteHeader = ({ navigation }) => {
         >
           <ModalBody p={0}>
             <Container top={0} position="sticky" bg="teal.900" zIndex={1}>
-              <HStack h={["4.5rem", null, null, "6rem"]} spacing={12} justifyContent="space-between">
+              <HStack
+                h={["4.5rem", null, null, "6rem"]}
+                spacing={12}
+                justifyContent="space-between"
+              >
                 <Logo />
 
                 <HStack

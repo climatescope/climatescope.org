@@ -132,7 +132,7 @@ const Markets = ({ countries, metaData }) => {
         justifyContent="space-between"
       >
         <Heading fontSize={["3xl", null, null, "4xl"]}>{"Emerging markets spotlight"}</Heading>
-        <Link href="/markets" variant="section" display={["none", null, "flex"]}>
+        <Link href="/results" variant="section" display={["none", null, "flex"]}>
           {"All markets"}
           <ChevronRight size={20} strokeWidth={2} />
         </Link>

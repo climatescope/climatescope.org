@@ -1,14 +1,15 @@
-import { Box, Stack, HStack, Heading, Skeleton } from "@chakra-ui/react"
+import { Box, Heading } from "@chakra-ui/react"
 
 import SimpleGrid from "@components/SimpleGrid"
-import { Link } from "@components/Link"
 import SubSectionText from "@components/pages/MarketPage/SubSectionText"
-import { ArrowRight } from "@components/Icon"
 
 const LowCarbonStrategySection = ({ title, subsections, similarMarkets }) => {
   return (
     <SimpleGrid columns={8}>
-      <Box gridColumn={["1 / -1", null, null, "2 / span 5"]} gridRow={["2", null, null, "1"]}>
+      <Box
+        gridColumn={["1 / -1", null, null, "2 / span 5"]}
+        gridRow={["2", null, null, "1"]}
+      >
         <Heading as="h2" fontSize="4xl">
           {title}
         </Heading>
@@ -24,7 +25,7 @@ const LowCarbonStrategySection = ({ title, subsections, similarMarkets }) => {
         )
       })}
 
-      <Stack
+      {/* <Stack
         as="aside"
         spacing={5}
         gridColumn={["1 / -1", null, null, "-3 / -1"]}
@@ -57,7 +58,7 @@ const LowCarbonStrategySection = ({ title, subsections, similarMarkets }) => {
             )
           })}
         </Stack>
-      </Stack>
+      </Stack> */}
     </SimpleGrid>
   )
 }
