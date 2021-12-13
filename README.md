@@ -53,7 +53,17 @@ or
 npm run export
 ```
 
-This will build the navigation, build the optimized images, build the next app, and export this app as a static website, which can then be deployed.
+This will build the navigation, build the optimized images, build the next app, and export this app as a static website into the `/out` folder, which can then be deployed. Once you have exported the app, you can test it locally by running:
+
+```
+yarn serve
+```
+
+or
+
+```
+npm run serve
+```
 
 ### Javascript configurations and environment variables
 
