@@ -1,6 +1,5 @@
+import { Heading } from "@chakra-ui/react"
 
 export default function IndexPage() {
-  return (
-    <h1>{ "Hello, Climatescope 2021!" }</h1>
-  )
+  return <Heading variant="pageTitle">{"Hello, Climatescope 2021!"}</Heading>
 }
