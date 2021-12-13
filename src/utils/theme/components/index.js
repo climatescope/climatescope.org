@@ -1,1 +1,7 @@
 export { default as headingTheme } from "./headingTheme"
+export { default as buttonTheme } from "./buttonTheme"
+export { default as containerTheme } from "./containerTheme"
+export { default as linkTheme } from "./linkTheme"
+export { default as tabsTheme } from "./tabsTheme"
+export { default as textTheme } from "./textTheme"
+export { default as selectTheme } from "./selectTheme"

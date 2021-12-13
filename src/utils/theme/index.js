@@ -3,7 +3,15 @@ import { extendTheme, withDefaultColorScheme } from "@chakra-ui/react"
 import themeColors from "./colors"
 import globalStyles from "./globalStyles"
 
-import { headingTheme } from "./components"
+import {
+  headingTheme,
+  buttonTheme,
+  containerTheme,
+  linkTheme,
+  tabsTheme,
+  textTheme,
+  selectTheme,
+} from "./components"
 
 export const colors = themeColors
 
