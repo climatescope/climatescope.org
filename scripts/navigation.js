@@ -65,8 +65,8 @@ function getPages(n = "") {
 const about = getPages("about") || []
 const themes = getPages("themes") || []
 const sectors = getPages("sectors") || []
-const tools = getPages("tools") || []
-const reports = getPages("reports") || []
+// const tools = getPages("tools") || []
+// const reports = getPages("reports") || []
 const blog = getPages("blog") || []
 const pages = getPages("") || []
 

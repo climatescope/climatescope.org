@@ -99,7 +99,7 @@ const ReportsPage = () => {
           >
             {climatescopeIssues.sort((a, b) => b.year - a.year).map((issue) => (
               <LinkBox
-                key={issue.key}
+                key={issue.year}
                 variant="card"
                 gridColumn={["span 2", null, null, "span 1"]}
               >
