@@ -7,7 +7,7 @@ const siteUrl = publicRuntimeConfig.siteUrl
 
 const SEO = ({
   title = "",
-  description = "Climatescope 2021",
+  description = "",
   cover = "cover-lg.jpg",
   type = "website" /* website | article */,
 }) => {
