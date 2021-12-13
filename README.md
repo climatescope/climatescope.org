@@ -41,9 +41,23 @@ or
 npm install
 ```
 
+Once the dependencies are installed, you can run:
+
+```
+yarn export
+```
+
+or 
+
+```
+npm run export
+```
+
+This will build the navigation, build the optimized images, build the next app, and export this app as a static website, which can then be deployed.
+
 ### Javascript configurations and environment variables
 
-In order to run the app, you will need to provide a site url and a mapbox token.
+In order to run the app, you will need to provide a site url and a mapbox token. You can do this via a `.env.local` file.
 
 ```
 SITE_URL=https://global-climatescope.org/
