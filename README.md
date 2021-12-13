@@ -1,8 +1,7 @@
 # Climatescope
-The [Climatescope](http://global-climatescope.org) is a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide. It is a project by [BNEF](http://www.newenergyfinance.com/), [UK AID](https://www.gov.uk/government/organisations/department-for-international-development), and developed by [Development Seed](http://developmentseed.org). Previous editions were also supported by [Power Africa](http://www.usaid.gov/powerafrica), and the [Multilateral Investment Fund](http://www.fomin.org/).
+The [Climatescope](http://global-climatescope.org) is a unique market-by-market assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
 
 ![Homepage of the climatescope 2019](https://user-images.githubusercontent.com/1090606/69560317-75e13200-0fa3-11ea-988d-86bbedfdd333.png)
-
 
 ## Credits
 The current Climatescope website was built by [Development Seed](http://developmentseed.org).
@@ -23,8 +22,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 To set up the development environment for this website, you'll need to install the following on your system:
 
 - [Node](http://nodejs.org/) v8.11 (To manage multiple node versions we recommend [nvm](https://github.com/creationix/nvm))
-- [Yarn](https://yarnpkg.com/) Package manager
-- Ruby and [Bundler](http://bundler.io/). Highly suggest using [rvm](https://rvm.io/)
+- [Yarn](https://yarnpkg.com/) or [Npm](https://www.npmjs.com/) Package manager
 
 ### Install Application Dependencies
 
@@ -38,16 +36,10 @@ Install Node modules:
 yarn install
 ```
 
-This will then automatically run `bundle install` to install the ruby gems.
-
-
-### Jekyll configurations and environment variables
-
-There are 3 files to configure jekyll that get loaded according to the environment the app is being built for:
-- _config.yml - production settings
-- _config-stage.yml - overrides the production settings for staging server
-- _config-dev.yml - local (development) overrides. This file is gitignored, so you can safely change it without polluting the repo.
-
+or
+```
+npm install
+```
 
 ### Javascript configurations and environment variables
 
