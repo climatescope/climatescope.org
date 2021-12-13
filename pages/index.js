@@ -3,6 +3,8 @@ import { getServerData } from "@utils/api/server"
 import getMarketCounts from "@utils/getMarketCounts"
 import getSpotlightMarkets from "@utils/getSpotlightMarkets"
 
+import SEO from "@components/SEO"
+
 export default function IndexPage({
   marketCounts,
   spotlightMarkets,
@@ -13,7 +15,12 @@ export default function IndexPage({
     marketCounts,
   }
 
-  return <Heading variant="pageTitle">{"Hello, Climatescope 2021!"}</Heading>
+  return (
+    <>
+      <SEO />
+      <Heading variant="pageTitle">{"Hello, Climatescope 2021!"}</Heading>
+    </>
+  )
 }
 
 export async function getStaticProps() {
