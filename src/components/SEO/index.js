@@ -6,7 +6,7 @@ const { publicRuntimeConfig } = getConfig()
 const siteUrl = publicRuntimeConfig.siteUrl
 
 const SEO = ({
-  title = "Climatescope 2021",
+  title = "",
   description = "Climatescope 2021",
   cover = "cover-lg.jpg",
   type = "website" /* website | article */,
@@ -16,14 +16,18 @@ const SEO = ({
   const slugUrl = siteUrl + basePath + asPath
   const coverImg = cover ? siteUrl + basePath + "images/" + cover : ""
 
+  const combinedTitle = title
+    ? `${title} | Climatescope 2021`
+    : `Climatescope 2021`
+
   return (
     <Head>
-      <title>{title}</title>
+      <title>{combinedTitle}</title>
       <meta name="description" content={description} />
 
       <meta name="og:type" content={type} />
       <meta name="og:url" content={slugUrl} />
-      <meta name="og:title" content={title} />
+      <meta name="og:title" content={combinedTitle} />
       <meta name="og:description" content={description} />
       {cover && <meta name="og:image" content={coverImg} />}
 
@@ -31,7 +35,7 @@ const SEO = ({
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content={slugUrl} />
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={combinedTitle} />
       <meta name="twitter:description" content={description} />
       {cover && <meta name="twitter:image" content={coverImg} />}
 

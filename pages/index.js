@@ -1,4 +1,3 @@
-import { Heading } from "@chakra-ui/react"
 import { getServerData } from "@utils/api/server"
 import getMarketCounts from "@utils/getMarketCounts"
 import getSpotlightMarkets from "@utils/getSpotlightMarkets"
@@ -18,7 +17,7 @@ export default function IndexPage({
   return (
     <>
       <SEO />
-      <Heading variant="pageTitle">{"Hello, Climatescope 2021!"}</Heading>
+      {"Index page"}
     </>
   )
 }
