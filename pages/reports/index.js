@@ -121,7 +121,7 @@ const ReportsPage = () => {
                       {`${issue.year}`}
                     </Text>
                     <LinkOverlay
-                      href={`https://global-climatescope.org/assets/data/reports/climatescope-${issue.year}-report-en.pdf`}
+                      href={`/downloads/climatescope-${issue.year}-report-en.pdf`}
                       target="_blank"
                     >
                       <Heading fontSize="lg" lineHeight="shorter">
@@ -131,7 +131,7 @@ const ReportsPage = () => {
                   </Stack>
                   <HStack spacing={[0, null, 3]}>
                     <ButtonLink
-                      href={`https://global-climatescope.org/assets/data/reports/climatescope-${issue.year}-report-en.pdf`}
+                      href={`/downloads/climatescope-${issue.year}-report-en.pdf`}
                       target="_blank"
                       colorScheme="gray"
                       rightIcon={<DownloadIcon size={20} />}
