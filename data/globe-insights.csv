@@ -1,0 +1,10 @@
+key,title,href,description,sector,lng,lat
+1,"Vietnam","/markets/vn","Third largest PV market in 2020",power,108.2772,14.0583
+2,"South Africa","/markets/za","Ranked among the top 10 for renewables after investment boom",power,22.9375,-30.5595
+3,"Nigeria","/markets/ng","Commissioned first on-grid renewable energy project 2021",power,8.6753,9.0820
+4,"Chile","/markets/cl","Second most attractive emerging market for renewable energy investment",power,-71.5430,-35.6751
+6,"Colombia","/markets/co","Push on clean transportation raises market attractiveness",transport,-74.2973,4.5709
+7,"Romania","/markets/ro","Clean transport targets indicate EV boom",transport,24.9668,45.9432
+8,"Singapore","/markets/sg","Aims to phase-out ICE vehicles by 2040",transport,103.8198,1.3521
+9,"Uruguay","/markets/uy","Building the first highway fully served by EV chargers in Latam",transport,-55.7658,-32.5228
+10,"Costa Rica","/markets/cr", "National decarbonization plan includes clean transport targets",transport,-83.7534,9.7489
