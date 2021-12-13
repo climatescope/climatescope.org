@@ -4,6 +4,8 @@ import { Link } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
 import Reports from "@components/pages/IndexPage/Reports"
 
+const toExclude = ["/reports", "/tools"]
+
 const SiteFooter = ({ navigation }) => {
   return (
     <Box bg="gray.50">
@@ -14,36 +16,38 @@ const SiteFooter = ({ navigation }) => {
       <Divider borderColor="gray.100" />
 
       <Container as="footer" py={14}>
-        <SimpleGrid columns={5}>
-          {navigation.map((navItem) => {
-            return (
-              <Box key={navItem.path}>
-                <Stack spacing="0.75rem">
-                  <Link href={navItem.path} fontWeight={700}>
-                    {navItem.title}
-                  </Link>
-                  <Stack spacing="0.5rem">
-                    {navItem.title === "Markets" ? (
-                      <>
-                        <Link href="/markets/ca">{"Canada"}</Link>
-                        <Link href="/markets/es">{"Spain"}</Link>
-                        <Link href="/markets/ar">{"Argentina"}</Link>
-                        <Link href="/markets/th">{"Thailand"}</Link>
-                      </>
-                    ) : (
-                      navItem.links.map((d) => {
-                        return (
-                          <Link key={d.path} href={d.path}>
-                            {d.title}
-                          </Link>
-                        )
-                      })
-                    )}
+        <SimpleGrid columns={[1, 2, 3, 5]}>
+          {navigation
+            .filter((d) => !toExclude.includes(d.path))
+            .map((navItem) => {
+              return (
+                <Box key={navItem.path}>
+                  <Stack spacing="0.75rem">
+                    <Link href={navItem.path} fontWeight={700}>
+                      {navItem.title}
+                    </Link>
+                    <Stack spacing="0.5rem">
+                      {navItem.title === "Markets" ? (
+                        <>
+                          <Link href="/markets/ca">{"Canada"}</Link>
+                          <Link href="/markets/es">{"Spain"}</Link>
+                          <Link href="/markets/ar">{"Argentina"}</Link>
+                          <Link href="/markets/th">{"Thailand"}</Link>
+                        </>
+                      ) : (
+                        navItem.links.map((d) => {
+                          return (
+                            <Link key={d.path} href={d.path}>
+                              {d.title}
+                            </Link>
+                          )
+                        })
+                      )}
+                    </Stack>
                   </Stack>
-                </Stack>
-              </Box>
-            )
-          })}
+                </Box>
+              )
+            })}
         </SimpleGrid>
       </Container>
 

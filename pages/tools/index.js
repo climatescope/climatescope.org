@@ -1,12 +1,13 @@
 import { getPages } from "@utils/api/server"
 
 import SEO from "@components/SEO"
+import ToolsPage from "@components/pages/ToolsPage"
 
-const ToolsPage = ({ allTools }) => {
+const ToolsPageWrapper = ({ allTools }) => {
   return (
     <>
       <SEO title="Tools" />
-      {"Tools"}
+      <ToolsPage tools={allTools} />
     </>
   )
 }
@@ -16,4 +17,4 @@ export async function getStaticProps() {
   return { props: { allTools } }
 }
 
-export default ToolsPage
+export default ToolsPageWrapper

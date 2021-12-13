@@ -34,7 +34,8 @@ function getShareLinks(asPath) {
   const facebookRoot = "http://facebook.com/sharer/sharer.php"
   const linkedinRoot = "http://linkedin.com/shareArticle"
 
-  const shareUrl = publicRuntimeConfig.siteUrl + asPath
+  const shareUrl =
+    publicRuntimeConfig.siteUrl + (asPath[0] === "/" ? asPath.slice(1) : asPath)
 
   const twitterShareText = `Which market is the most attractive for energy transition investment? Visit the latest #Climatescope from @BloombergNef to find out`
   const facebookShareText = `Which market is the most attractive for energy transition investment? Visit the latest #Climatescope from @BloombergNef to find out ${shareUrl}`
