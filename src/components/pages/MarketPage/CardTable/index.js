@@ -28,7 +28,7 @@ const CardTable = ({ data, sector, compact }) => {
     <Stack spacing={6}>
       <Heading fontSize="xl">{`${sector} policies`}</Heading>
       <SimpleGrid
-        columns={compact ? 1 : [2, null, null, 3]}
+        columns={compact ? 1 : [1, 2, null, 3]}
         gridColumnGap={5}
         gridRowGap={5}
       >

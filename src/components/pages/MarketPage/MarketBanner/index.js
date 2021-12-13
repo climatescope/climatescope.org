@@ -93,14 +93,14 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
             {/* <Heading fontSize="3xl" mb={3}>
               {"Overview"}
             </Heading> */}
-            <SimpleGrid columns={3} py={[5, null, null, 10]}>
+            <SimpleGrid columns={[2, 3]} py={[5, null, null, 10]}>
               {["power", "transport", "buildings"].map((d) => {
                 const sector = market.sectors.find((s) => s.id === d)
                 const score = sector.data[0].value
                 return (
                   <Stack key={d} spacing={[3, null, null, 6]}>
                     <Stack spacing={2}>
-                      <Heading textTransform="capitalize" fontSize="3xl">
+                      <Heading textTransform="capitalize" fontSize={["2xl", "3xl"]}>
                         {score ? (
                           `${score.toLocaleString("en-US", {
                             minimumFractionDigits: 2,
