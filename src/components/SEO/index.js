@@ -8,13 +8,13 @@ const siteUrl = publicRuntimeConfig.siteUrl
 const SEO = ({
   title = "Climatescope 2021",
   description = "Climatescope 2021",
-  cover = "",
+  cover = "cover-lg.jpg",
   type = "website" /* website | article */,
 }) => {
   const { basePath, asPath } = useRouter()
 
   const slugUrl = siteUrl + basePath + asPath
-  const coverImg = cover ? siteUrl + basePath + cover : ""
+  const coverImg = cover ? siteUrl + basePath + "images/" + cover : ""
 
   return (
     <Head>
