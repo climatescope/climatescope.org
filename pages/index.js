@@ -21,7 +21,7 @@ export default function IndexPageWrapper({
       <SEO />
       <IndexPage
         globeInsights={globeInsights}
-        countriesSpotlight={spotlightMarkets}
+        spotlightMarkets={spotlightMarkets}
         metaData={metaData}
       />
     </>
@@ -40,6 +40,7 @@ export async function getStaticProps() {
       marketCounts,
       spotlightMarkets,
       globeInsights,
+      resultsData,
     },
   }
 }

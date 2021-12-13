@@ -10,7 +10,7 @@ import BnefBanner from "@components/pages/IndexPage/BnefBanner"
 
 const IndexPage = ({
   globeInsights,
-  countriesSpotlight,
+  spotlightMarkets,
   metaData,
 }) => {
   return (
@@ -23,7 +23,7 @@ const IndexPage = ({
           {/* <Tools /> */}
           <Themes />
           <Markets
-            countries={countriesSpotlight}
+            markets={spotlightMarkets}
             metaData={metaData}
           />
           <BnefBanner />

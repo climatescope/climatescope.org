@@ -32,8 +32,8 @@ const getCentroid = ({ geometry }) => {
   return centroid(geometry).geometry?.coordinates?.map((d) => -d)
 }
 
-const MapPreview = ({ country, data, colors }) => {
-  const selectedIso = country.iso.toUpperCase()
+const MapPreview = ({ market, data, colors }) => {
+  const selectedIso = market.iso.toUpperCase()
 
   const isSelected = ({ properties }) => properties.ISO_A2 === selectedIso
 
@@ -97,7 +97,7 @@ const MapPreview = ({ country, data, colors }) => {
   )
 }
 
-const Markets = ({ countries, metaData }) => {
+const Markets = ({ markets, metaData }) => {
   const { colors } = useTheme()
   const [loaded, setLoaded] = useState(false)
 
@@ -108,11 +108,11 @@ const Markets = ({ countries, metaData }) => {
     return feature(data, data.objects[Object.keys(data.objects)[0]])
   }, [data])
 
-  const filteredCountries = useMemo(() => {
+  const filteredMarkets = useMemo(() => {
     return shuffle([
-      ...countries.power,
-      ...countries.transport,
-      ...countries.buildings,
+      ...markets.power,
+      ...markets.transport,
+      ...markets.buildings,
     ]).slice(0, 4)
   }, [])
 
@@ -131,21 +131,27 @@ const Markets = ({ countries, metaData }) => {
         alignItems="flex-end"
         justifyContent="space-between"
       >
-        <Heading fontSize={["3xl", null, null, "4xl"]}>{"Emerging markets spotlight"}</Heading>
-        <Link href="/results" variant="section" display={["none", null, "flex"]}>
+        <Heading fontSize={["3xl", null, null, "4xl"]}>
+          {"Emerging markets spotlight"}
+        </Heading>
+        <Link
+          href="/results"
+          variant="section"
+          display={["none", null, "flex"]}
+        >
           {"All markets"}
           <ChevronRight size={20} strokeWidth={2} />
         </Link>
       </HStack>
       {loaded ? (
-        filteredCountries.map((country) => {
+        filteredMarkets.map((market) => {
           return (
-            <LinkBox key={country.iso} gridColumn="span 2">
+            <LinkBox key={market.iso} gridColumn="span 2">
               <Stack spacing={4}>
                 <AspectRatio ratio={1}>
                   <Box pointerEvents="none">
                     {gg ? (
-                      <MapPreview country={country} data={gg} colors={colors} />
+                      <MapPreview market={market} data={gg} colors={colors} />
                     ) : null}
                   </Box>
                 </AspectRatio>
@@ -153,8 +159,10 @@ const Markets = ({ countries, metaData }) => {
                 <HStack justifyContent="space-between" alignItems="flex-start">
                   <Stack spacing={2}>
                     <Heading as="h2" fontSize="2xl">
-                      <LinkOverlay href={`/markets/${country.iso.toLowerCase()}`}>
-                        {country.name}
+                      <LinkOverlay
+                        href={`/markets/${market.iso.toLowerCase()}`}
+                      >
+                        {market.name}
                       </LinkOverlay>
                     </Heading>
                     <HStack spacing={1}>
@@ -165,13 +173,17 @@ const Markets = ({ countries, metaData }) => {
                         color="brand.700"
                         lineHeight="shorter"
                       >
-                        {`${country.score.rank}`}
+                        {`${market.rank}`}
                       </Text>
-                      <Text color="gray.300" fontWeight="600">{" / "}</Text>
+                      <Text color="gray.300" fontWeight="600">
+                        {" / "}
+                      </Text>
                       <Text color="gray.300" fontWeight="600">
                         {`${
-                          metaData.countryCounts.emerging[country.sector.toLowerCase()]
-                        } in ${country.sector}`}
+                          metaData.marketCounts.emerging[
+                            market.sector.toLowerCase()
+                          ]
+                        } in ${market.sector}`}
                       </Text>
                     </HStack>
                   </Stack>
