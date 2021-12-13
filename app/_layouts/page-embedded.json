@@ -1,6 +1,0 @@
-{
-  "id": {{page.id | jsonify}},
-  "embedded": true,
-  "title": {{page.title | jsonify}},
-  "content": {{page.content | jsonify}}
-}

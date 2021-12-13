@@ -39,6 +39,10 @@
 
 app/assets/scripts/config/local.js
 
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 ################################################
 # Dependencies
@@ -67,7 +71,6 @@ bower_components
 bundle
 test/bower_components
 
-
 ################################################
 # Node.js / NPM
 #
@@ -83,7 +86,6 @@ lib-cov
 npm-debug.log
 yarn-error.log
 
-
 ################################################
 # Apidocs
 #
@@ -91,7 +93,6 @@ yarn-error.log
 ################################################
 
 _README.md
-
 
 ################################################
 # Generated
@@ -124,3 +125,6 @@ tmp
 dist
 _site
 _config-dev.yml
+
+/.next/
+/build

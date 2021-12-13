@@ -1,8 +1,7 @@
 # Climatescope
-The [Climatescope](http://global-climatescope.org) is a unique country-by-country assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide. It is a project by [BNEF](http://www.newenergyfinance.com/), [UK AID](https://www.gov.uk/government/organisations/department-for-international-development), and developed by [Development Seed](http://developmentseed.org). Previous editions were also supported by [Power Africa](http://www.usaid.gov/powerafrica), and the [Multilateral Investment Fund](http://www.fomin.org/).
+The [Climatescope](http://global-climatescope.org) is a unique market-by-market assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
 
 ![Homepage of the climatescope 2019](https://user-images.githubusercontent.com/1090606/69560317-75e13200-0fa3-11ea-988d-86bbedfdd333.png)
-
 
 ## Credits
 The current Climatescope website was built by [Development Seed](http://developmentseed.org).
@@ -23,8 +22,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 To set up the development environment for this website, you'll need to install the following on your system:
 
 - [Node](http://nodejs.org/) v8.11 (To manage multiple node versions we recommend [nvm](https://github.com/creationix/nvm))
-- [Yarn](https://yarnpkg.com/) Package manager
-- Ruby and [Bundler](http://bundler.io/). Highly suggest using [rvm](https://rvm.io/)
+- [Yarn](https://yarnpkg.com/) or [Npm](https://www.npmjs.com/) Package manager
 
 ### Install Application Dependencies
 
@@ -38,34 +36,41 @@ Install Node modules:
 yarn install
 ```
 
-This will then automatically run `bundle install` to install the ruby gems.
+or
+```
+npm install
+```
 
+Once the dependencies are installed, you can run:
 
-### Jekyll configurations and environment variables
+```
+yarn export
+```
 
-There are 3 files to configure jekyll that get loaded according to the environment the app is being built for:
-- _config.yml - production settings
-- _config-stage.yml - overrides the production settings for staging server
-- _config-dev.yml - local (development) overrides. This file is gitignored, so you can safely change it without polluting the repo.
+or 
 
+```
+npm run export
+```
+
+This will build the navigation, build the optimized images, build the next app, and export this app as a static website into the `/out` folder, which can then be deployed. Once you have exported the app, you can test it locally by running:
+
+```
+yarn serve
+```
+
+or
+
+```
+npm run serve
+```
 
 ### Javascript configurations and environment variables
 
-At times, it may be necessary to include options/variables specific to `production`, `staging` or `local` in the code. To handle this, there is a master config.js file. This file should not be modified.  Instead, modify one of:
+In order to run the app, you will need to provide a site url and a mapbox token, as well as a mailchimp address. You can do this via a `.env.local` file.
 
-- config/production.js - production settings
-- config/staging.js - overrides the production settings for staging server
-- config/local.js - local (development) overrides. This file is gitignored, so you can safely change it without polluting the repo.
-
-By default `production.js` is always loaded and values are overridden by `staging.js` or `local.js` according to the environment.
-
-Values overridable by environment variables are expressed between []:
-
-- appTitle - Title of the site
-- appEdition - Edition of the site
-- appDescription - Description of the site for meta purposed
-- policyDbUrl - Url for the Policy database
-- mediumLatestUrl - Url for the medium script
-- gaTrackingID - Google analytics tracking ID [GA_TRACKING_ID]
-- mailchimpUrl - Url for the mailchimp list subscription [MAILCHIMP_URL]
-- mbtoken - Mapbox token [MB_TOKEN]
+```
+SITE_URL=https://global-climatescope.org/
+MAPBOX_TOKEN=
+MAILCHIMP_ADDRESS=
+```

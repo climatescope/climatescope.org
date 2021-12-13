@@ -1,3 +1,0 @@
----
-BUNDLE_PATH: "bundle/cache"
-BUNDLE_DISABLE_SHARED_GEMS: "true"
