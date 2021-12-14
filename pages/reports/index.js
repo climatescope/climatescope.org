@@ -83,7 +83,7 @@ const climatescopeIssues = [
 const ReportsPage = () => {
   return (
     <>
-      <SEO title="Climatescope 2021 | Reports" />
+      <SEO title="Reports" />
       <Container>
         <SimpleGrid columns={3} pt={10} pb={40}>
           <Box gridColumn="1 / -1">

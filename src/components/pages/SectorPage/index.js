@@ -46,7 +46,7 @@ export default function SectorPage({ metaData, children, ...restProps }) {
 
   return (
     <>
-      <SEO title={metaData.title} />
+      <SEO {...metaData} />
       <Container as="main">
         <Stack spacing={6} pb={40}>
           <SimpleGrid columns={8}>

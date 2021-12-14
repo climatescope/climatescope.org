@@ -5,7 +5,10 @@ import ThemesPage from "@components/pages/ThemesPage"
 export default function ThemesPageWrapper({ allThemes }) {
   return (
     <>
-      <SEO title="Themes" />
+      <SEO
+        title="Themes"
+        description="The energy transition investment gap is growing, despite COP26 pledges"
+      />
       <ThemesPage themes={allThemes} />
     </>
   )

@@ -14,7 +14,7 @@ const ResultsPageWrapper = ({ dataPreview }) => {
   const clientData = useClientData(`${basePath}/data/results-2021.json`)
   return (
     <>
-      <SEO title="Results" />
+      <SEO title="Results" description="Which market is the most attractive for energy transition investment?" />
       <ResultsPage clientData={clientData} dataPreview={dataPreview} />
     </>
   )
