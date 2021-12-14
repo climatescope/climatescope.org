@@ -74,8 +74,8 @@ const SiteHeader = ({ navigation }) => {
 
           <HStack spacing={3}>
             <ButtonLink
-              href="/Climatescope-2021-report.pdf"
-              download="Climatescope-2021-report.pdf"
+              href="/downloads/climatescope-2021-report.pdf"
+              download="climatescope-2021-report.pdf"
               target="_blank"
               size="lg"
               flex="none"
@@ -168,13 +168,26 @@ const SiteHeader = ({ navigation }) => {
             <Container>
               <SimpleGrid columns={[1, null, null, 8]} py={10}>
                 <Stack spacing={[5, null, 10]} gridColumn="span 2">
-                  <Box flex="1">
+                  <Stack flex="1" spacing={[5, null, 10]}>
                     <Text color="teal.100" fontSize={["md", null, "lg"]}>
                       {
                         "Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future."
                       }
                     </Text>
-                  </Box>
+                    <ButtonLink
+                      href="/downloads/climatescope-2021-report.pdf"
+                      download="climatescope-2021-report.pdf"
+                      target="_blank"
+                      size="lg"
+                      flex="none"
+                      rightIcon={<DownloadIcon strokeWidth={1.75} />}
+                      variant="outline"
+                      colorScheme="white"
+                      display={["none", "flex"]}
+                    >
+                      {"Download report"}
+                    </ButtonLink>
+                  </Stack>
                   {aboutItems.map((navItem) => {
                     return (
                       <Stack spacing={[5, null, 10]} key={navItem.path}>

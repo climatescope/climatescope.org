@@ -37,7 +37,7 @@ const SectorPageBanner = ({ findings }) => {
       })}
       <Box gridColumn={["span 4", null, "span 2", null, "span 1"]}>
         <ButtonLink
-          href="/Climatescope-2021-report.pdf"
+          href="/downloads/climatescope-2021-report.pdf"
           download="Climatescope-2021-report.pdf"
           target="_blank"
           h="6rem"
