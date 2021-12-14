@@ -9,7 +9,7 @@ export default function ToolPage({ metaData, children, ...restProps }) {
   })
   return (
     <>
-      <SEO title={metaData.title} />
+      <SEO {...metaData} />
       <Container as="main">
         <Stack
           spacing={5}

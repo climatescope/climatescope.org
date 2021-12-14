@@ -4,7 +4,6 @@ import {
   HStack,
   Box,
   Text,
-  AspectRatio,
 } from "@chakra-ui/react"
 
 import { Link, ButtonLink } from "@components/Link"
@@ -15,7 +14,7 @@ import Image from "@components/Image"
 const report = {
   id: 1,
   title: "Energy Transition Factbook",
-  href: "/Climatescope-2021-report.pdf",
+  href: "/downloads/climatescope-2021-report.pdf",
   year: 2021,
   imgSrc: "climatescope-2021-report-en-cover.jpg",
 }

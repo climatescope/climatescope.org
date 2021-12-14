@@ -31,7 +31,7 @@ const bannerActions = [
     key: 3,
     title: "2021 Full report",
     description: "Download the full report",
-    href: "/climatescope-2021-report.pdf",
+    href: "/downloads/climatescope-2021-report.pdf",
     color: "teal.800",
   },
 ]

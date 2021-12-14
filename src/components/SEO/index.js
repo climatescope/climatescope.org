@@ -17,7 +17,7 @@ const SEO = ({
   const coverImg = cover ? siteUrl + basePath + "images/" + cover : ""
 
   const combinedTitle = title
-    ? `${title} | Climatescope 2021`
+    ? `Climatescope 2021 | ${title}`
     : `Climatescope 2021`
 
   return (

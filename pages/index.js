@@ -18,7 +18,9 @@ export default function IndexPageWrapper({
 
   return (
     <>
-      <SEO />
+      <SEO
+        description="Which market is the most attractive for energy transition investment?"
+      />
       <IndexPage
         globeInsights={globeInsights}
         spotlightMarkets={spotlightMarkets}

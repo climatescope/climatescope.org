@@ -18,16 +18,27 @@ export function extractMetadata(str, slug, metaDataName = "metaData") {
     }, "") + "}"
 
   const spacelessStr = cleanData
-    .replaceAll("{ ", "{")
-    .replaceAll(", ", ",")
-    .replaceAll(" }", "}")
-    .replaceAll(": ", ":")
-    .replaceAll("\n", "")
-    .replaceAll("\t", "")
-    .replaceAll("  ", "")
+    .replaceAll("{", "{————")
+    .replaceAll("}", "————}")
+    .replaceAll(",\n", "————")
+    .split("————")
+    .map((d) => d.replaceAll("\n", "").replaceAll("\t", "").trim())
+    .reduce((acc, cur) => {
+      const cleanedLine = cur.trim()
+      if (!cur) return acc
+      if (["{", "}"].includes(cleanedLine)) return [...acc, cur]
+      const [key, ...val] = cleanedLine.split(":")
+      const cleanedValue = val.join("").trim()
+      const hasTrailingComma = cleanedValue[cleanedValue.length - 1] === ","
+      return [
+        ...acc,
+        `"${key.trim()}":${
+          hasTrailingComma ? cleanedValue : cleanedValue + ","
+        }`,
+      ]
+    }, [])
+    .join("")
     .replaceAll(",}", "}")
-    .replaceAll(/\{.+?:/g, (d) => `{"${d.slice(1, -1)}":`)
-    .replaceAll(/\,.+?:/g, (d) => `,"${d.slice(1, -1)}":`)
 
   const parsedMetaData = JSON.parse(spacelessStr)
 

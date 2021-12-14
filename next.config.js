@@ -22,6 +22,7 @@ module.exports = withPlugins(
       basePath: process.env.BASE_PATH || "",
       siteUrl: process.env.SITE_URL || "",
       mapboxToken: process.env.MAPBOX_TOKEN || "",
+      googleAnalyticsId: process.env.GOOGLE_ANALYTICS || "UA-56170738-1",
     },
   }
 )

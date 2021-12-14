@@ -40,7 +40,7 @@ export default function ThemePage({ metaData, children, ...restProps }) {
   }
   return (
     <>
-      <SEO title={`Climatescope 2021 | ${metaData.title}`} />
+      <SEO {...metaData} />
       <Container as="main">
         <Stack spacing={6} pb={40}>
           <SimpleGrid columns={8}>

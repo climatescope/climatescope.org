@@ -5,7 +5,10 @@ import AboutLandingPage from "@components/pages/AboutLandingPage"
 export default function AboutPage({ allPages }) {
   return (
     <>
-      <SEO title="About" />
+      <SEO
+        title="About"
+        description="2021 marks the tenth year of Climatescope. The project has expanded to new markets and sectors."
+      />
       <AboutLandingPage allPages={allPages} />
     </>
   )

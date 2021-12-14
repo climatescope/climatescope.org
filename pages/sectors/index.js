@@ -7,11 +7,11 @@ import SectorsPage from "@components/pages/SectorsPage"
 export default function SectorsPageWrapper({ sectors, marketCounts }) {
   return (
     <>
-      <SEO title="Sectors" />
-      <SectorsPage
-        sectors={sectors}
-        marketCounts={marketCounts}
+      <SEO
+        title="Sectors"
+        description="The energy transition investment gap is growing, despite COP26 pledges"
       />
+      <SectorsPage sectors={sectors} marketCounts={marketCounts} />
     </>
   )
 }

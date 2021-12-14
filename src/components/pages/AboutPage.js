@@ -6,7 +6,7 @@ import SimpleGrid from "@components/SimpleGrid"
 export default function AboutPage({ metaData, ...restProps }) {
   return (
     <>
-      <SEO title={metaData.title} />
+      <SEO {...metaData} />
       <Container as="main">
         <SimpleGrid columns={8} pt={10} pb={40}>
           <Stack

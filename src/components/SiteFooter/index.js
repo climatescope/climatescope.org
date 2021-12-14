@@ -83,7 +83,11 @@ const SiteFooter = ({ navigation }) => {
       <Container py={5} color="gray.600">
         <Text>
           {`© ${new Date().getFullYear()} Climatescope. `}
-          <Link href="/about/license">{"View license"}</Link>
+          <Link href="/about/license" color="brand.800">{"View license"}</Link>
+          {" and "}
+          <Link href="https://about.bnef.com/bnef-privacy-policy/" color="brand.800">
+            {"Privacy policy"}
+          </Link>
         </Text>
       </Container>
     </Box>
