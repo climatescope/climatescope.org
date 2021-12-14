@@ -15,6 +15,7 @@ export default class MyDocument extends Document {
       <Html charSet="utf-8">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+          <link rel="shortcut icon" href="/favicon.png" />
           <link
             rel="preconnect"
             href="https://fonts.gstatic.com"
