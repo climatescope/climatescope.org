@@ -3,6 +3,7 @@ const selectTheme = {
     field: {
       cursor: "pointer",
       lineHeight: "2rem",
+      whiteSpace: "nowrap",
     },
   },
   sizes: {
