@@ -91,12 +91,13 @@ const Listing = ({ data, sector }) => {
             w="6rem"
             textAlign="center"
             fontSize="sm"
+            display={["none", "table-cell"]}
           >
             {"Chart"}
           </Th>
         </Tr>
       </Thead>
-      <Tbody>
+      <Tbody position="relative">
         {data.map((d) => {
           const rank = d.masterRank
           return (
@@ -115,7 +116,11 @@ const Listing = ({ data, sector }) => {
                   </Center>
                 </Center>
               </Td>
-              <Td fontWeight={800} color="brand.700">
+              <Td
+                fontWeight={800}
+                color="brand.700"
+                position={["relative", null, "initial"]}
+              >
                 <LinkOverlay href={`/markets/${d.iso.toLowerCase()}`}>
                   {d.name}
                 </LinkOverlay>
@@ -199,7 +204,12 @@ const Listing = ({ data, sector }) => {
                   })}
                 </HStack>
               </Td>
-              <Td color="gray.100" py={0} px={3}>
+              <Td
+                color="gray.100"
+                py={0}
+                px={3}
+                display={["none", "table-cell"]}
+              >
                 <RadarChart
                   sector={sector}
                   market={d}

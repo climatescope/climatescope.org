@@ -73,7 +73,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
   const sliderVisibility = useBreakpointValue({ base: false, lg: true })
 
   return (
-    <Box as="main" py={10} minH="75vh">
+    <Box as="main" pt={10} minH="75vh">
       <Container>
         <Stack spacing={5}>
           <HStack justifyContent="space-between">

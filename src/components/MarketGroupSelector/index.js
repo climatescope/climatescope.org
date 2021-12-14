@@ -3,7 +3,8 @@ import { Select } from "@chakra-ui/react"
 const MarketGroupSelector = ({ value, onChange, ...restProps }) => {
   return (
     <Select
-      w="13rem"
+      minW="0"
+      maxW="13rem"
       variant="filled"
       colorScheme="gray"
       flex={["1", null, null, "none"]}
