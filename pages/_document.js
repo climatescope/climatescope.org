@@ -12,7 +12,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html charSet="utf-8">
+      <Html charSet="utf-8" lang="en">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com"></link>
           <link rel="shortcut icon" href="/favicon.png" />

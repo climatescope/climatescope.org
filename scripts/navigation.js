@@ -139,7 +139,9 @@ const navigation = [
   {
     title: "Blog",
     path: "/blog",
-    links: blog.map((d) => ({ title: d.title, path: `/blog/${d.slug}` })),
+    links: blog
+      .filter((d) => d.slug === "press-release-climatescope-2021")
+      .map((d) => ({ title: d.title, path: `/blog/${d.slug}` })),
   },
 ]
 
