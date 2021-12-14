@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Box, Text, Stack, Checkbox } from "@chakra-ui/react"
 
+import { Link } from "@components/Link"
 import NewsletterSignup from "@components/Newsletter/NewsletterSignup"
 import SignupInput from "@components/Newsletter/SignupInput"
 import SignupButton from "@components/Newsletter/SignupButton"
@@ -65,9 +66,11 @@ const Newsletter = () => {
           onChange={handleOptIn}
         >
           <Text mt="-0.3125rem" lineHeight="short" maxW="30rem">
-            {
-              "Send me updates about new data, tools, and features added to Climatescope"
-            }
+            {"By submitting my information, I agree to the "}
+            <Link href="https://www.bloomberg.com/notices/privacy/" color="brand.800">
+              {"privacy policy"}
+            </Link>
+            {" and to learn more about products and services from Bloomberg."}
           </Text>
         </Checkbox>
       </Stack>
