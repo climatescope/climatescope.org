@@ -18,12 +18,6 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
 
   const marketIndicators = market.indicators || []
 
-  const groupedIndicators =
-    groupBy(
-      marketIndicators.filter((d) => d.section && d.subsection),
-      (o) => `_${o.section}_${o.subsection}`
-    ) || {}
-
   const dataIndicators =
     groupBy(
       marketIndicators.filter(
@@ -126,8 +120,8 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
         </Center>
       </Stack>
 
-      <SimpleGrid columns={3}>
-        <Box>
+      <SimpleGrid columns={[4, 3]}>
+        <Box gridColumn={["span 2", "span 1"]}>
           <Text fontSize="sm" fontWeight={600} textAlign="center">
             {"Power"}
           </Text>
@@ -147,7 +141,7 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
             {formattedScores.power && `${formattedScores.power}/5`}
           </Text>
         </Box>
-        <Box>
+        <Box gridColumn={["span 2", "span 1"]}>
           <Text fontSize="sm" fontWeight={600} textAlign="center">
             {"Transport"}
           </Text>
@@ -167,7 +161,10 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
             {formattedScores.transport && `${formattedScores.transport}/5`}
           </Text>
         </Box>
-        <Box style={{ opacity: market.sectors[2].data[0].value ? 1 : 0.5 }}>
+        <Box
+          gridColumn={["2 / span 2", "span 1"]}
+          style={{ opacity: market.sectors[2].data[0].value ? 1 : 0.5 }}
+        >
           <Text fontSize="sm" fontWeight={600} textAlign="center">
             {"Buildings"}
           </Text>
