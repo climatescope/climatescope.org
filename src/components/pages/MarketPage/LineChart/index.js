@@ -1,4 +1,4 @@
-import { memo, useRef, useState, useEffect, useCallback } from "react"
+import { useRef, useState, useEffect, useCallback } from "react"
 import {
   Box,
   Heading,
@@ -131,7 +131,7 @@ const LineChart = ({
   const visible = preparedLines.map(d => ({ ...d, isVisible: true }))
 
   const xAxis = useAxis({ scale: scaleX })
-  const yAxis = useAxis({ scale: scaleY })
+  const yAxis = useAxis({ scale: scaleY, ticks: 4 })
 
   const handleTooltipShow = useCallback((data) => {
     const d = visible.map((dd) => {
@@ -345,7 +345,7 @@ function getUnit(val, unit) {
   return unitMap[unit] || v || ""
 }
 
-const LineChartWrapper = ({ width = 672, height = 378, data }) => {
+const LineChartWrapper = ({ width = 672, height = 378, data, ...restProps }) => {
   const [preparedLines, setPreparedLines] = useState([])
   const name = data?.indicator
   const series = data?.subindicators || []
@@ -356,8 +356,8 @@ const LineChartWrapper = ({ width = 672, height = 378, data }) => {
 
   const chart = useChart({ width, height })
 
-  const domainX = useExtent(domainData, "year")
-  const domainY = useExtent(domainData, "value")
+  const domainX = useExtent(domainData, "year", restProps.domainX)
+  const domainY = useExtent(domainData, "value", restProps.domainY)
 
   const scaleX = useScale({
     type: "linear",

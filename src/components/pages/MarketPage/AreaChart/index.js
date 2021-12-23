@@ -86,7 +86,7 @@ const Band = ({
   )
 }
 
-const AreaChart = ({ width = 672, height = 378, data }) => {
+const AreaChart = ({ width = 672, height = 378, data, ...restProps }) => {
   const chart = useChart({ width, height })
   const [tooltip, setTooltip] = useState({})
   const subindicators = data.subindicators || []
@@ -97,18 +97,21 @@ const AreaChart = ({ width = 672, height = 378, data }) => {
     return data.length ? [...acc, { ...cur, data, isVisible: true }] : acc
   }, [])
 
-  const domainX = extent(areas[0].data.map((d) => d.year))
+  const domainX = restProps.domainX || extent(areas[0].data.map((d) => d.year))
 
-  const maxY = range(domainX[1] - domainX[0] + 1).reduce((acc, cur) => {
-    const year = domainX[0] + cur
-    const m = areas.reduce((acc2, cur2) => {
-      const v = cur2.data.find((s) => s.year === year) || { value: 0 }
-      return acc2 + v.value
-    }, 0)
-    return acc > m ? acc : m
-  }, 0)
+  const domainY = restProps.domainY || [
+    0,
+    range(domainX[1] - domainX[0] + 1).reduce((acc, cur) => {
+      const year = domainX[0] + cur
+      const m = areas.reduce((acc2, cur2) => {
+        const v = cur2.data.find((s) => s.year === year) || { value: 0 }
+        return acc2 + v.value
+      }, 0)
+      return acc > m ? acc : m
+    }, 0),
+  ]
 
-  const domainY = [0, maxY]
+  // const domainY = [0, maxY]
 
   const scaleX = useScale({
     type: "linear",
@@ -168,7 +171,7 @@ const AreaChart = ({ width = 672, height = 378, data }) => {
     }, [])
 
   const xAxis = useAxis({ scale: scaleX })
-  const yAxis = useAxis({ scale: scaleY })
+  const yAxis = useAxis({ scale: scaleY, ticks: 4 })
 
   const colorMap = {
     "Others": colors.gray[100],
@@ -179,33 +182,36 @@ const AreaChart = ({ width = 672, height = 378, data }) => {
     "Solar PV": colors.yellow[400],
   }
 
-  const handleTooltipShow = useCallback((data) => {
-    const d = visualAreas.map((dd) => {
-      const relevantData = dd.data.find((s) => s.year === data.year) || {}
-      return {
-        name: dd.subindicator,
-        unit: dd.units,
-        ...relevantData,
-      }
-    })
-    const total = d.reduce((acc, cur) => (acc += cur.value), 0)
-    setTooltip({
-      ...data,
-      data: d
-        .map((dd) => ({
-          ...dd,
-          percentage: Math.round((100 / total) * dd.value * 100) / 100,
-        }))
-        .reverse(),
-    })
-  }, [visualAreas])
+  const handleTooltipShow = useCallback(
+    (data) => {
+      const d = visualAreas.map((dd) => {
+        const relevantData = dd.data.find((s) => s.year === data.year) || {}
+        return {
+          name: dd.subindicator,
+          unit: dd.units,
+          ...relevantData,
+        }
+      })
+      const total = d.reduce((acc, cur) => (acc += cur.value), 0)
+      setTooltip({
+        ...data,
+        data: d
+          .map((dd) => ({
+            ...dd,
+            percentage: Math.round((100 / total) * dd.value * 100) / 100,
+          }))
+          .reverse(),
+      })
+    },
+    [visualAreas]
+  )
 
   const handleTooltipHide = useCallback(() => {
     setTooltip({})
   }, [])
 
   return (
-    <Box>
+    <Stack spacing={5}>
       <Heading fontSize="xl">{`${data.indicator} (in ${unit})`}</Heading>
       <Box position="relative">
         <Box
@@ -336,7 +342,9 @@ const AreaChart = ({ width = 672, height = 378, data }) => {
                     : tick.value >= 1000
                     ? tick.value / 1000 + "K"
                     : tick.value}
-                  { i === yAxis.length - 1 ? ` ${visualAreas[0].units || ""}` : "" }
+                  {i === yAxis.length - 1
+                    ? ` ${visualAreas[0].units || ""}`
+                    : ""}
                 </text>
               </g>
             ))}
@@ -380,7 +388,7 @@ const AreaChart = ({ width = 672, height = 378, data }) => {
           </svg>
         </Box>
       </Box>
-    </Box>
+    </Stack>
   )
 }
 
