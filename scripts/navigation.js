@@ -75,7 +75,7 @@ function getPages(n = "") {
 const about = getPages("about") || []
 const themes = getPages("themes") || []
 const sectors = getPages("sectors") || []
-// const tools = getPages("tools") || []
+const tools = getPages("tools") || []
 // const reports = getPages("reports") || []
 const blog = getPages("blog") || []
 const pages = getPages("") || []
@@ -123,14 +123,14 @@ const navigation = [
     //   path: `/reports/${d.slug}`,
     // })),
   },
-  // {
-  //   title: "Tools",
-  //   path: "/tools",
-  //   links: tools.map((d) => ({
-  //     title: d.title,
-  //     path: `/tools/${d.slug}`,
-  //   })),
-  // },
+  {
+    title: "Tools",
+    path: "/tools",
+    links: tools.map((d) => ({
+      title: d.title,
+      path: `/tools/${d.slug}`,
+    })),
+  },
   {
     title: "About",
     path: "/about",

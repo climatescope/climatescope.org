@@ -1,19 +1,29 @@
-import { Stack } from "@chakra-ui/react"
+import { Box, Container, Heading } from "@chakra-ui/react"
 
-import { Link } from "@components/Link"
+import SimpleGrid from "@components/SimpleGrid"
+import ToolCard from "@components/ToolCard"
 
 export default function ToolsLandingPage({ allTools }) {
   return (
-    <Stack spacing={5}>
-      {
-        allTools.map(tool => {
-          return (
-            <Link key={tool.slug} href={`/tools/${tool.slug}`}>
-              {tool.title}
-            </Link>
-          )
-        })
-      }
-    </Stack>
+    <Container>
+      <SimpleGrid columns={2} pt={10} pb={40}>
+        <Box gridColumn="1 / -1">
+          <Heading fontSize="3rem">{"Tools"}</Heading>
+        </Box>
+        {allTools
+          .sort((a, b) => a.order - b.order)
+          .map(({ title, description, slug, src }) => {
+            return (
+              <ToolCard
+                key={slug}
+                title={title}
+                description={description}
+                slug={slug}
+                src={src}
+              />
+            )
+          })}
+      </SimpleGrid>
+    </Container>
   )
 }

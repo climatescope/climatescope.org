@@ -12,6 +12,7 @@ const IndexPage = ({
   globeInsights,
   spotlightMarkets,
   metaData,
+  allTools,
 }) => {
   return (
     <Box as="main" minH="75vh">
@@ -20,7 +21,7 @@ const IndexPage = ({
           <Banner />
           <GlobePreview globeInsights={globeInsights} />
           <Sectors metaData={metaData} />
-          {/* <Tools /> */}
+          {/* <Tools allTools={allTools} /> */}
           <Themes />
           <Markets
             markets={spotlightMarkets}
