@@ -8,8 +8,8 @@ import {
   Select,
 } from "@chakra-ui/react"
 
-// import { AddIcon, ShareIcon, PrintIcon } from "@components/Icon"
-// import { ButtonLink } from "@components/Link"
+import { ArrowRight } from "@components/Icon"
+import { ButtonLink } from "@components/Link"
 import ShareModal from "@components//ShareModal"
 import { useScrollStore } from "@utils/useScrollama"
 
@@ -83,18 +83,19 @@ const InPageNavigation = ({ market, sections }) => {
         borderBottom="0.125rem solid"
         borderColor="gray.100"
         pl={[5, null, null, 10]}
+        spacing={5}
       >
         <ShareModal />
         {/* <Button colorScheme="gray" w="2.5rem" px={0} borderRadius="full">
           <PrintIcon size={20} strokeWidth={2} />
         </Button> */}
-        {/* <ButtonLink
+        <ButtonLink
           href={`/tools/geography-comparison?market=${marketId}`}
           colorScheme="brand"
-          rightIcon={<AddIcon size={20} strokeWidth={2} />}
+          rightIcon={<ArrowRight size={20} strokeWidth={2} />}
         >
           {"Compare"}
-        </ButtonLink> */}
+        </ButtonLink>
       </HStack>
     </HStack>
   )

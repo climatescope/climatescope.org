@@ -14,11 +14,12 @@ export const ReferenceSelect = ({ allMarkets }) => {
 
   useEffect(() => {
     if (typeof window === "undefined") return
-    // if (currentMarket.iso) return
-    setCurrentMarket(market || "nl")
+    if (!market && currentMarket.iso) return
+    setCurrentMarket(market)
   }, [market])
 
   const handleChange = (e) => {
+    router.replace("/tools/geography-comparison")
     setCurrentMarket(e.target.value)
   }
 

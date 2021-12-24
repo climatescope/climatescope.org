@@ -28,7 +28,7 @@ function determineDomains(domains, markets) {
 
 const useStore = create((set, get) => ({
   currentMarket: {},
-  setCurrentMarket: async (iso) => {
+  setCurrentMarket: async (iso = "nl") => {
     const currentIso = get().currentMarket.iso
     if (currentIso === iso) return
     const currentMarket = await fetchers.json()(
