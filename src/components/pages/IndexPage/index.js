@@ -5,7 +5,7 @@ import Sectors from "@components/pages/IndexPage/Sectors"
 import Themes from "@components/pages/IndexPage/Themes"
 import Markets from "@components/pages/IndexPage/Markets"
 import GlobePreview from "@components/pages/IndexPage/GlobePreview"
-// import Tools from "@components/pages/IndexPage/Tools"
+import Tools from "@components/pages/IndexPage/Tools"
 import BnefBanner from "@components/pages/IndexPage/BnefBanner"
 
 const IndexPage = ({
@@ -21,7 +21,7 @@ const IndexPage = ({
           <Banner />
           <GlobePreview globeInsights={globeInsights} />
           <Sectors metaData={metaData} />
-          {/* <Tools allTools={allTools} /> */}
+          <Tools allTools={allTools} />
           <Themes />
           <Markets
             markets={spotlightMarkets}

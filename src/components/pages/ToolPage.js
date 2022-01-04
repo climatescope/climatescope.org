@@ -3,7 +3,13 @@ import { Container, Stack } from "@chakra-ui/react"
 import SEO from "@components/SEO"
 import extractKeyMDXParts from "@utils/extractKeyMDXParts"
 
-export default function ToolPage({ metaData, children, ...restProps }) {
+export default function ToolPage({
+  textAlign = "center",
+  alignItems = "center",
+  metaData,
+  children,
+  ...restProps
+}) {
   const { heading, subHeading, textBody } = extractKeyMDXParts(children, {
     subHeading: true,
   })
@@ -14,9 +20,9 @@ export default function ToolPage({ metaData, children, ...restProps }) {
         <Stack
           spacing={5}
           pt={10}
-          textAlign="center"
+          textAlign={textAlign}
           justifyContent="center"
-          alignItems="center"
+          alignItems={alignItems}
         >
           {heading}
           {subHeading}

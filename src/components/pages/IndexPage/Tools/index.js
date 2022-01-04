@@ -20,17 +20,19 @@ const Tools = ({ allTools }) => {
         </Link>
       </HStack>
 
-      {allTools.map(({ src, title, slug, description }) => {
-        return (
-          <ToolCard
-            key={slug}
-            title={title}
-            description={description}
-            slug={slug}
-            src={src}
-          />
-        )
-      })}
+      {allTools
+        .sort((a, b) => a.order - b.order)
+        .map(({ src, title, slug, description }) => {
+          return (
+            <ToolCard
+              key={slug}
+              title={title}
+              description={description}
+              slug={slug}
+              src={src}
+            />
+          )
+        })}
     </SimpleGrid>
   )
 }
