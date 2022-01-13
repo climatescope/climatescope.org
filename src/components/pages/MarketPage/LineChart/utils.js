@@ -8,11 +8,11 @@ export function useChart({ width, height }) {
   }
 }
 
-export function useExtent(data, val) {
+export function useExtent(data, val, defaultValue) {
   return useMemo(() =>
     // extent(data, cb) // Would "cb" need to "useCallback"?
-    extent(data, o => o[val])
-  , [data, val])
+    defaultValue || extent(data, o => o[val])
+  , [data, val, defaultValue])
 }
 
 const scales = {

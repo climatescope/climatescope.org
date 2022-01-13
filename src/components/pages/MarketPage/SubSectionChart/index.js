@@ -77,9 +77,11 @@ const SubSectionWidget = ({ section, subSection, market }) => {
                 }
               />
             </Box>
-            <Box gridColumn={["1 / -1", null, null, "2 / -2"]} py={5}>
-              <LineChart data={investmentData} />
-            </Box>
+            {investmentData && (
+              <Box gridColumn={["1 / -1", null, null, "2 / -2"]} py={5}>
+                <LineChart data={investmentData} />
+              </Box>
+            )}
             {groupedIndicators["_2_3"] &&
               groupedIndicators["_2_3"].map((d, i) => {
                 const key = `_${d.section}_${d.subsection}_${i}`
