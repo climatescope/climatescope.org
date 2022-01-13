@@ -1,11 +1,14 @@
 import { Box, Grid, Divider, Stack } from "@chakra-ui/react"
+import sortBy from "lodash/sortBy"
 
 import { useClientData } from "@utils/api/client"
 import { ReferenceSelect, ReferenceContent } from "./ReferenceMarket"
 import { ComparisonSelect, ComparisonContent } from "./ComparisonMarket"
 
 const GeographyComparison = () => {
-  const { data } = useClientData("/data/results-2021.json")
+  const { data } = useClientData("/data/results-2021.json", {}, (d) =>
+    sortBy(d, (o) => o.name)
+  )
 
   const allMarkets = data || []
 
@@ -33,7 +36,12 @@ const GeographyComparison = () => {
           display={["none", null, "block"]}
         />
 
-        <Stack spacing={5} gridRow="1 / -1" pb={5} display={["none", null, "block"]}>
+        <Stack
+          spacing={5}
+          gridRow="1 / -1"
+          pb={5}
+          display={["none", null, "block"]}
+        >
           <ComparisonSelect allMarkets={allMarkets} slot={0} />
           <ComparisonContent slot={0} allMarkets={allMarkets} />
         </Stack>

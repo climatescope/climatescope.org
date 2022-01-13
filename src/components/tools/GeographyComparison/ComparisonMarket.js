@@ -34,7 +34,7 @@ export const ComparisonSelect = ({ allMarkets, slot = 0 }) => {
         <optgroup label="Suggested markets">
           {currentMarket.similar.map(({ iso, name }) => {
             return (
-              <option key={`suggested-${iso}`} value={iso}>
+              <option key={`suggested-${iso}`} value={iso.toLowerCase()}>
                 {name}
               </option>
             )
@@ -42,14 +42,13 @@ export const ComparisonSelect = ({ allMarkets, slot = 0 }) => {
         </optgroup>
       )}
       <optgroup label="All markets">
-        {allMarkets
-          .map(({ iso, name }) => {
-            return (
-              <option key={iso} value={iso}>
-                {name}
-              </option>
-            )
-          })}
+        {allMarkets.map(({ iso, name }) => {
+          return (
+            <option key={iso} value={iso.toLowerCase()}>
+              {name}
+            </option>
+          )
+        })}
       </optgroup>
     </Select>
   )
