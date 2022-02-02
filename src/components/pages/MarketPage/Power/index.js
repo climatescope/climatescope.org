@@ -14,7 +14,6 @@ const PowerSection = ({ title, subsections, market }) => {
       </Box>
 
       {subsections.map((section) => {
-        if (section.title === "Doing business and barriers") return null
         return (
           <SimpleGrid
             key={section.key}
