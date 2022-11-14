@@ -8,7 +8,7 @@ import Image from "@components/Image"
 const report = {
   id: 1,
   title: "Power Transition Factbook",
-  href: "/downloads/climatescope-2022-report.pdf",
+  href: "/downloads/climatescope-2022-report-en.pdf",
   year: 2022,
   imgSrc: "climatescope-2022-report-en-cover.jpg",
 }

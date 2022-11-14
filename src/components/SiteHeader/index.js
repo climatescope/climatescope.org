@@ -81,7 +81,7 @@ const SiteHeader = ({ navigation }) => {
 
           <HStack spacing={3}>
             <ButtonLink
-              href="/downloads/climatescope-2022-report.pdf"
+              href="/downloads/climatescope-2022-report-en.pdf"
               download="climatescope-2022-report.pdf"
               target="_blank"
               size="lg"
@@ -94,7 +94,7 @@ const SiteHeader = ({ navigation }) => {
             </ButtonLink>
             <Button
               onClick={onOpen}
-              ref={finalRef}
+              ref={initialRef}
               w="3rem"
               minW="2.5rem"
               h="3rem"
@@ -115,9 +115,8 @@ const SiteHeader = ({ navigation }) => {
         isOpen={isOpen}
         motionPreset="none"
         initialFocusRef={initialRef}
-        finalRef={finalRef}
+        finalRef={initialRef}
       >
-        {/* <ModalOverlay /> */}
         <ModalContent
           my={0}
           maxW="100%"
@@ -156,13 +155,12 @@ const SiteHeader = ({ navigation }) => {
                 <Box>
                   <Button
                     onClick={onClose}
-                    ref={finalRef}
+                    ref={initialRef}
                     w="3rem"
                     minW="2.5rem"
                     p={0}
                     h="3rem"
                     colorScheme="whiteAlpha"
-                    ref={initialRef}
                     borderRadius="full"
                   >
                     <VisuallyHidden>{"Close navigation"}</VisuallyHidden>
@@ -182,7 +180,7 @@ const SiteHeader = ({ navigation }) => {
                       }
                     </Text>
                     <ButtonLink
-                      href="/downloads/climatescope-2022-report.pdf"
+                      href="/downloads/climatescope-2022-report-en.pdf"
                       download="climatescope-2022-report.pdf"
                       target="_blank"
                       size="lg"
@@ -245,7 +243,7 @@ const SiteHeader = ({ navigation }) => {
                           <Stack spacing={3}>
                             {navItem.links.map((d) => {
                               return (
-                                <Box key={d.path}>
+                                <Box key={d.title}>
                                   {d.title !== "Power" ? (
                                     <HStack alignItems="center">
                                       <Text
