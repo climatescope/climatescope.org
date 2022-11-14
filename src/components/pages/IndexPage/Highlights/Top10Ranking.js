@@ -15,8 +15,10 @@ export default function Top10Ranking({
     data?.data[0]?.max_value ||
     d3Max(data?.data || [], (o) => parseFloat(o.value))
 
-  const chartName = data?.name || ""
-  const chartTitle = chartName[0].toUpperCase() + chartName.slice(1)
+  const chartName = (data?.name || "").split("  ")[1]
+  const chartTitle = chartName
+    ? chartName[0].toUpperCase() + chartName.slice(1)
+    : ""
 
   return (
     <Stack spacing={5}>

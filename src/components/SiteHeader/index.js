@@ -81,8 +81,8 @@ const SiteHeader = ({ navigation }) => {
 
           <HStack spacing={3}>
             <ButtonLink
-              href="/downloads/climatescope-2021-report.pdf"
-              download="climatescope-2021-report.pdf"
+              href="/downloads/climatescope-2022-report.pdf"
+              download="climatescope-2022-report.pdf"
               target="_blank"
               size="lg"
               flex="none"
@@ -182,8 +182,8 @@ const SiteHeader = ({ navigation }) => {
                       }
                     </Text>
                     <ButtonLink
-                      href="/downloads/climatescope-2021-report.pdf"
-                      download="climatescope-2021-report.pdf"
+                      href="/downloads/climatescope-2022-report.pdf"
+                      download="climatescope-2022-report.pdf"
                       target="_blank"
                       size="lg"
                       flex="none"
