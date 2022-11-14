@@ -24,7 +24,7 @@ const Listing = ({ data, sector }) => {
     <Table
       variant="simple"
       colorScheme="gray"
-      summary="Climatescope 2021 ranking"
+      summary="Climatescope 2022 ranking"
       size="md"
     >
       <Thead>
@@ -106,7 +106,7 @@ const Listing = ({ data, sector }) => {
               key={d.iso.toLowerCase()}
               style={{ display: d.isVisible ? "table-row" : "none" }}
             >
-              <Td fontWeight={700} px={0}>
+              <Td fontWeight={600} px={0}>
                 <Center w="100%" h="100%">
                   <Center bg="gray.50" borderRadius="full" w="3rem" h="3rem">
                     {rank.toLocaleString("en-US", {
@@ -117,7 +117,7 @@ const Listing = ({ data, sector }) => {
                 </Center>
               </Td>
               <Td
-                fontWeight={800}
+                fontWeight={600}
                 color="brand.700"
                 position={["relative", null, "initial"]}
               >
@@ -126,20 +126,20 @@ const Listing = ({ data, sector }) => {
                 </LinkOverlay>
               </Td>
               <Td
-                color="gray.500"
+                color="gray.600"
                 fontWeight={600}
                 display={["none", null, "table-cell"]}
               >
                 {d.region.name}
               </Td>
-              <Td fontWeight={700}>
+              <Td fontWeight={600}>
                 {d.finalScore.toLocaleString("en-US", {
                   minimumIntegerDigits: 1,
                   minimumFractionDigits: 2,
                   maximumFractionDigits: 2,
                   useGrouping: false,
                 })}
-                <Text as="span" color="gray.500" ml={1}>
+                <Text as="span" color="gray.600" ml={1}>
                   {"/5"}
                 </Text>
               </Td>
@@ -156,6 +156,7 @@ const Listing = ({ data, sector }) => {
                   {d.weightedTopics.map(({ id, width, ...d }, i) => {
                     return (
                       <Tooltip
+                        isDisabled
                         key={id}
                         placement="top"
                         label={
@@ -171,7 +172,7 @@ const Listing = ({ data, sector }) => {
                               fontWeight={600}
                               fontSize="xs"
                               lineHeight="shorter"
-                              color="gray.500"
+                              color="gray.600"
                             >
                               {d.weightedValue.toLocaleString("en-US", {
                                 maximumFractionDigits: 2,

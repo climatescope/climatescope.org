@@ -19,9 +19,9 @@ const content = [
     order: [1, null, null, null, 2],
     title: (indicatorCount) => `${indicatorCount} indicators across 3 sectors`,
     description: (indicatorCount, marketCount) => [
-      `As of 2021, Climatescope analyses data from ${marketCount} markets across 3 sectors with a total of ${indicatorCount} indicators.`,
+      `As of 2022, Climatescope analyses data from ${marketCount} markets across 3 sectors with a total of ${indicatorCount} indicators.`,
     ],
-    action: { text: "Explore sectors", href: "/sectors" },
+    action: { text: "Explore Power", href: "/sectors/power/" },
   },
   {
     id: 2,
@@ -29,9 +29,10 @@ const content = [
     title: "Power",
     sector: "power",
     img: "energy.jpg",
-    alt: "https://unsplash.com/photos/DzCY1gDGomw",
+    alt: "https://unsplash.com/photos/Ilpf2eUPpUE",
     href: "/sectors/power",
     isNew: false,
+    comingSoon: false,
   },
   {
     id: 3,
@@ -39,9 +40,10 @@ const content = [
     title: "Transport",
     sector: "transport",
     img: "transport.jpg",
-    alt: "https://unsplash.com/photos/GlIoShgt2PQ",
+    alt: "https://unsplash.com/photos/2JvEjF0tf50",
     href: "/sectors/transport",
     isNew: true,
+    comingSoon: true,
   },
   {
     id: 4,
@@ -49,25 +51,20 @@ const content = [
     title: "Buildings",
     sector: "buildings",
     img: "buildings.jpg",
-    alt: "https://unsplash.com/photos/aJ1e3Tg4P4M",
+    alt: "https://unsplash.com/photos/MUfokL109CQ",
     href: "/sectors/buildings",
     isNew: true,
+    comingSoon: true,
   },
 ]
 
-const SummaryCard = ({
-  title,
-  description,
-  action,
-  order,
-  metaData,
-}) => {
+const SummaryCard = ({ title, description, action, order, metaData }) => {
   return (
     <Box bg="brand.900" order={order}>
       <Center fontSize="3xl" fontWeight={700} w="4rem" h="4rem" bg="white">
         {"i"}
       </Center>
-      <Center px={6} py={10}>
+      <Center px={[0, null, 6]} py={[10]}>
         <Stack spacing={6} alignItems="flex-start" color="white">
           <Heading
             as="h2"
@@ -112,6 +109,7 @@ const SectorCard = ({
   href,
   order,
   isNew,
+  comingSoon,
   metaData,
 }) => {
   return (
@@ -123,12 +121,17 @@ const SectorCard = ({
             alt={alt}
             type="sector"
             ratio={[1, 3 / 4, 1, 3 / 4]}
+            opacity={comingSoon ? "0.5" : "1"}
           />
         </Box>
         <Stack spacing={1}>
           <Heading as="h2" fontSize="2xl">
-            <LinkOverlay href={href}>{title}</LinkOverlay>
-            {isNew ? (
+            {comingSoon ? (
+              title
+            ) : (
+              <LinkOverlay href={href}>{title}</LinkOverlay>
+            )}
+            {comingSoon ? (
               <Tag
                 verticalAlign="middle"
                 ml={2}
@@ -136,7 +139,7 @@ const SectorCard = ({
                 textTransform="uppercase"
                 fontWeight={600}
               >
-                {"New"}
+                {"Coming soon"}
               </Tag>
             ) : null}
           </Heading>
@@ -146,7 +149,7 @@ const SectorCard = ({
             color="gray.500"
             fontWeight={600}
           >
-            {`${metaData.countryCounts[sector]} markets`}
+            {comingSoon ? "" : `${metaData.countryCounts[sector]} markets`}
           </Text>
         </Stack>
       </Stack>
@@ -162,8 +165,12 @@ const Sectors = ({ metaData }) => {
         alignItems="flex-end"
         justifyContent="space-between"
       >
-        <Heading fontSize={["3xl", null, null, "4xl"]}>{"Sectors"}</Heading>
-        <Link href="/sectors" variant="section" display={["none", null, "flex"]}>
+        <Heading variant="sectionTitle">{"Sectors"}</Heading>
+        <Link
+          href="/sectors"
+          variant="section"
+          display={["none", null, "flex"]}
+        >
           {"All sectors"}
           <ChevronRight size={20} strokeWidth={2} />
         </Link>

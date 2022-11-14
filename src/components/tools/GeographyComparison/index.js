@@ -6,7 +6,7 @@ import { ReferenceSelect, ReferenceContent } from "./ReferenceMarket"
 import { ComparisonSelect, ComparisonContent } from "./ComparisonMarket"
 
 const GeographyComparison = () => {
-  const { data } = useClientData("/data/results-2021.json", {}, (d) =>
+  const { data } = useClientData("/data/results-2022.json", {}, (d) =>
     sortBy(d, (o) => o.name)
   )
 

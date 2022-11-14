@@ -1,42 +1,42 @@
-import {
-  Heading,
-  Center,
-  Text,
-  Box,
-  Stack,
-  HStack,
-} from "@chakra-ui/react"
+import { Heading, Center, Text, Box, Stack, HStack } from "@chakra-ui/react"
+import getConfig from "next/config"
 
 import { LinkBox, LinkOverlay } from "@components/Link"
 import Image from "@components/Image"
 import SimpleGrid from "@components/SimpleGrid"
-import { ArrowRight } from "@components/Icon"
+import { ChevronRight, StarIcon, ChartIcon, ReportIcon } from "@components/Icon"
+
+const { publicRuntimeConfig } = getConfig()
+const year = publicRuntimeConfig.year
 
 const bannerActions = [
   {
     key: 1,
-    title: "2021 Ranking",
+    title: `${year} Ranking`,
     description: "Explore the latest ranking",
     href: "/results",
     color: "teal.800",
+    icon: "StarIcon",
   },
   {
     key: 2,
-    title: "2021 Key findings",
-    description: "Read about the key findings",
-    href: "/themes",
+    title: `${year} Highlights`,
+    description: "See this year's highlights",
+    href: "/highlights",
     color: "teal.800",
+    icon: "ChartIcon",
   },
   {
     key: 3,
-    title: "2021 Full report",
+    title: `${year} Full report`,
     description: "Download the full report",
-    href: "/downloads/climatescope-2021-report.pdf",
+    href: "/downloads/climatescope-2022-report.pdf",
     color: "teal.800",
+    icon: "ReportIcon",
   },
 ]
 
-const Banner = () => {
+export default function Banner() {
   return (
     <Stack spacing={12}>
       <SimpleGrid columns={8} gridRowGap={0}>
@@ -62,7 +62,7 @@ const Banner = () => {
             ml={1}
             textTransform="uppercase"
           >
-            {"Photo © NASA Earth Observatory by Lauren Dauphin"}
+            {"Photo © NASA Earth Observatory"}
           </Text>
         </Box>
         <Box
@@ -73,17 +73,6 @@ const Banner = () => {
           bg="white"
           boxShadow="2.5rem 0 0 0 #FFF"
         >
-          <Text
-            fontWeight={600}
-            position="absolute"
-            bg="white"
-            top="-2rem"
-            left={0}
-            pr={6}
-            pt={3}
-          >
-            {"10 years of Climatescope"}
-          </Text>
           <Heading
             fontSize={["3xl", null, "4xl", "5xl"]}
             mb="-0.5rem"
@@ -95,10 +84,13 @@ const Banner = () => {
           </Heading>
         </Box>
       </SimpleGrid>
-      <SimpleGrid columns={[16, null, 15, 16]}>
-        {bannerActions.map(({ key, title, description, href }) => {
+      <SimpleGrid columns={16}>
+        {bannerActions.map(({ key, title, description, href, icon }) => {
           return (
-            <LinkBox key={key} gridColumn={key < 2 ? ["span 16", "span 8", "span 5"] : ["span 16", "span 8", "span 5"]}>
+            <LinkBox
+              key={key}
+              gridColumn={["span 16", null, "span 8", "span 5"]}
+            >
               <HStack
                 spacing={5}
                 py={6}
@@ -107,15 +99,54 @@ const Banner = () => {
                 h="100%"
                 alignItems="flex-start"
               >
+                <Center
+                  flex="none"
+                  w="3rem"
+                  h="3rem"
+                  bg="gray.50"
+                  borderRadius="full"
+                >
+                  {icon === "StarIcon" ? (
+                    <StarIcon />
+                  ) : icon === "ChartIcon" ? (
+                    <ChartIcon />
+                  ) : (
+                    <ReportIcon />
+                  )}
+                </Center>
                 <Stack flex="1" spacing={2}>
-                  <Heading fontSize={["md", "lg", "xl"]}>
-                    <LinkOverlay href={href}>{title}</LinkOverlay>
+                  <Heading as="h3" variant="keyMessageTitle">
+                    <HStack as="span" justifyContent="space-between">
+                      <LinkOverlay
+                        href={href}
+                        sx={{ "+ .icn": { opacity: 0 } }}
+                        _hover={{
+                          "+ .icn": {
+                            transform: "translateX(0.5rem)",
+                            opacity: 1,
+                          },
+                        }}
+                        _focusVisible={{
+                          "+ .icn": {
+                            transform: "translateX(0.5rem)",
+                            opacity: 1,
+                          },
+                        }}
+                      >
+                        {title}
+                      </LinkOverlay>
+                      <Box
+                        flex="none"
+                        transition="all 0.5s ease"
+                        className="icn"
+                        aria-hidden={true}
+                      >
+                        <ChevronRight size={24} />
+                      </Box>
+                    </HStack>
                   </Heading>
-                  <Text color="gray.500" lineHeight="shorter">{description}</Text>
+                  <Text variant="keyMessageText">{description}</Text>
                 </Stack>
-                <Box flex="none">
-                  <ArrowRight size={24} />
-                </Box>
               </HStack>
             </LinkBox>
           )
@@ -124,5 +155,3 @@ const Banner = () => {
     </Stack>
   )
 }
-
-export default Banner

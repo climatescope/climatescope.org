@@ -9,11 +9,12 @@ import {
   useTheme,
 } from "@chakra-ui/react"
 import { area } from "d3-shape"
-import { range, extent } from "d3-array"
+import { range, extent, sum } from "d3-array"
 import debounce from "lodash/debounce"
+import sortBy from "lodash/sortBy"
 
 import { useChart, useScale, useAxis } from "../LineChart/utils"
-import { colors } from "@utils/theme"
+// import { colors } from "@utils/theme"
 
 function computeArea(prev, cur, scaleX, scaleY) {
   const a = cur.data.map((d) => {
@@ -86,16 +87,25 @@ const Band = ({
   )
 }
 
-const AreaChart = ({ width = 672, height = 378, data, ...restProps }) => {
+const AreaChart = ({
+  width = 672,
+  height = 378,
+  data,
+  compactTooltip,
+  ...restProps
+}) => {
+  const { colors } = useTheme()
   const chart = useChart({ width, height })
   const [tooltip, setTooltip] = useState({})
   const subindicators = data.subindicators || []
   const unit = subindicators[0]?.units || ""
 
-  const areas = subindicators.reduce((acc, cur) => {
+  const areasUnordered = subindicators.reduce((acc, cur) => {
     const data = processSubindicatorData(cur.data)
     return data.length ? [...acc, { ...cur, data, isVisible: true }] : acc
   }, [])
+
+  const areas = sortBy(areasUnordered, (o) => -sum(o.data, (d) => d.value))
 
   const domainX = restProps.domainX || extent(areas[0].data.map((d) => d.year))
 
@@ -180,6 +190,7 @@ const AreaChart = ({ width = 672, height = 378, data, ...restProps }) => {
     "Small Hydro": colors.blue[500],
     "Wind": colors.blue[200],
     "Solar PV": colors.yellow[400],
+    ...colors.indicators,
   }
 
   const handleTooltipShow = useCallback(
@@ -236,7 +247,9 @@ const AreaChart = ({ width = 672, height = 378, data, ...restProps }) => {
             spacing={2}
           >
             <Text fontWeight={600} lineHeight="short" px={4}>
-              {`${data.indicator} ${tooltip.year}`}
+              {`${data.indicator} ${tooltip.year}`}{" "}
+              {compactTooltip &&
+                `[${tooltip?.data?.length ? tooltip.data[0].unit : ""}]`}
             </Text>
 
             <Divider borderColor="gray.100" w="100%" />
@@ -271,16 +284,26 @@ const AreaChart = ({ width = 672, height = 378, data, ...restProps }) => {
                           >
                             {d.name}
                           </Text>
-                          <Text fontSize="sm" lineHeight="shorter">
+                          {!compactTooltip && (
+                            <Text fontSize="sm" lineHeight="shorter">
+                              {`${d.value.toLocaleString("en-US", {
+                                maximumFractionDigits: 1,
+                              })} ${d.unit}`}
+                            </Text>
+                          )}
+                        </Stack>
+                        {compactTooltip ? (
+                          <Text fontSize="xs" lineHeight="shorter">
                             {`${d.value.toLocaleString("en-US", {
                               maximumFractionDigits: 1,
-                            })} ${d.unit}`}
+                            })}`}
                           </Text>
-                        </Stack>
-                        <PercentageDisplay
-                          percentage={d.percentage}
-                          value={d.value}
-                        />
+                        ) : (
+                          <PercentageDisplay
+                            percentage={d.percentage}
+                            value={d.value}
+                          />
+                        )}
                       </HStack>
                     </Stack>
                   )

@@ -1,10 +1,9 @@
 key,title,href,description,sector,lng,lat
-1,"Vietnam","/markets/vn","Third largest PV market in 2020",power,108.2772,14.0583
-2,"South Africa","/markets/za","Ranked among the top 10 for renewables after investment boom",power,22.9375,-30.5595
-3,"Nigeria","/markets/ng","Commissioned first on-grid renewable energy project 2021",power,8.6753,9.0820
-4,"Chile","/markets/cl","Second most attractive emerging market for renewable energy investment",power,-71.5430,-35.6751
-6,"Colombia","/markets/co","Push on clean transportation raises market attractiveness",transport,-74.2973,4.5709
-7,"Romania","/markets/ro","Clean transport targets indicate EV boom",transport,24.9668,45.9432
-8,"Singapore","/markets/sg","Aims to phase-out ICE vehicles by 2040",transport,103.8198,1.3521
-9,"Uruguay","/markets/uy","Building the first highway fully served by EV chargers in Latam",transport,-55.7658,-32.5228
-10,"Costa Rica","/markets/cr","National decarbonization plan includes clean transport targets",transport,-83.7534,9.7489
+1,"Dominican Republic","/markets/do","Among the top five most attractive markets in Latin America for renewable energy investment",power,-70.1627,18.7357
+2,"Colombia","/markets/co","Fourth most attractive emerging market for renewable energy investment",power,-74.2973,4.5709
+3,"Chile","/markets/cl","The most attractive emerging market for renewable energy investment",power,-71.5430,-35.6751
+4,"Philippines","/markets/ph","Among top five markets globally for renewable energy policies",power,121.7740,12.8797
+5,"Brazil","/markets/br","Among top 10 markets globally for renewable energy investment in 2021",power,-51.9253,-14.2350
+6,"India","/markets/in","The second most attractive emerging market for renewable energy investment",power,78.9629,20.5937
+7,"Tanzania","/markets/tz","The most attractive African country for renewable energy investment",power,34.8888,-6.3690
+8,"Vietnam","/markets/vn","Third country globally for wind capacity additions in 2021",power,108.2772,14.0583

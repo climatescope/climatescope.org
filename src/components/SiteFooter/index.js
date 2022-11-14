@@ -3,9 +3,9 @@ import {
   Heading,
   Text,
   Stack,
-  HStack,
   Divider,
   Box,
+  Tag,
 } from "@chakra-ui/react"
 
 import { Link } from "@components/Link"
@@ -13,7 +13,7 @@ import SimpleGrid from "@components/SimpleGrid"
 import Reports from "@components/pages/IndexPage/Reports"
 import Newsletter from "@components/Newsletter"
 
-const toExclude = ["/reports", "/tools"]
+const toExclude = ["/reports", "/tools", "/markets"]
 
 const SiteFooter = ({ navigation }) => {
   return (
@@ -22,13 +22,13 @@ const SiteFooter = ({ navigation }) => {
         <Reports />
       </Container>
 
-      <Container maxW="container.lg" py={16}>
+      <Container py={20}>
         <SimpleGrid columns={[1, null, 2]}>
           <Stack spacing={5}>
-            <Heading fontSize="4xl" maxW="60rem">
+            <Heading variant="sectionTitle" maxW="60rem">
               {"Stay up to date"}
             </Heading>
-            <Text fontSize="xl">
+            <Text variant="lead">
               {
                 "Subscribe to our mailing list to get the latest news about Climatescope directly in your inbox."
               }
@@ -49,27 +49,61 @@ const SiteFooter = ({ navigation }) => {
             .map((navItem) => {
               return (
                 <Box key={navItem.path}>
-                  <Stack spacing="0.75rem">
-                    <Link href={navItem.path} fontWeight={700}>
+                  <Stack spacing="0.75rem" alignItems="flex-start">
+                    <Link href={navItem.path} variant="mainNav">
                       {navItem.title}
                     </Link>
-                    <Stack spacing="0.5rem">
-                      {navItem.title === "Markets" ? (
+                    <Stack spacing="0.5rem" alignItems="flex-start">
+                      {navItem.title === "Markets" && (
                         <>
                           <Link href="/markets/ca">{"Canada"}</Link>
                           <Link href="/markets/es">{"Spain"}</Link>
                           <Link href="/markets/ar">{"Argentina"}</Link>
                           <Link href="/markets/th">{"Thailand"}</Link>
                         </>
-                      ) : (
+                      )}
+                      {navItem.title === "Sectors" &&
                         navItem.links.map((d) => {
-                          return (
-                            <Link key={d.path} href={d.path}>
+                          return d.title == "Power" ? (
+                            <Link
+                              key={d.path}
+                              href={d.path}
+                              variant="footerLink"
+                            >
                               {d.title}
                             </Link>
+                          ) : (
+                            <Text key={d.title} variant="footerLink">
+                              {d.title}
+                              <Tag
+                                verticalAlign="middle"
+                                ml={2}
+                                size="sm"
+                                textTransform="uppercase"
+                                fontWeight={600}
+                                bg="teal.700"
+                                color="teal.100"
+                              >
+                                {"coming soon"}
+                              </Tag>
+                            </Text>
                           )
-                        })
-                      )}
+                        })}
+                      {navItem.title !== "Markets" &&
+                        navItem.title !== "Sectors" &&
+                        navItem.links.map((d) => {
+                          return (
+                            <Box key={d.path} lineHeight="short">
+                              <Link
+                                href={d.path}
+                                variant="footerLink"
+                                display="inline"
+                              >
+                                {d.title}
+                              </Link>
+                            </Box>
+                          )
+                        })}
                     </Stack>
                   </Stack>
                 </Box>
@@ -83,9 +117,14 @@ const SiteFooter = ({ navigation }) => {
       <Container py={5} color="gray.600">
         <Text>
           {`© ${new Date().getFullYear()} Climatescope. `}
-          <Link href="/about/license" color="brand.800">{"View license"}</Link>
+          <Link href="/about/license" color="brand.800">
+            {"View license"}
+          </Link>
           {" and "}
-          <Link href="https://about.bnef.com/bnef-privacy-policy/" color="brand.800">
+          <Link
+            href="https://about.bnef.com/bnef-privacy-policy/"
+            color="brand.800"
+          >
             {"Privacy policy"}
           </Link>
         </Text>

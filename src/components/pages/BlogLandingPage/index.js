@@ -9,11 +9,15 @@ import {
   Divider,
 } from "@chakra-ui/react"
 import dayjs from "dayjs"
+import getConfig from "next/config"
 
 import { Link, LinkBox, LinkOverlay } from "@components/Link"
 import SEO from "@components/SEO"
 import { ChevronRight } from "@components/Icon"
 import SimpleGrid from "@components/SimpleGrid"
+
+const { publicRuntimeConfig } = getConfig()
+const year = publicRuntimeConfig.year
 
 // const BlogTab = ({ tabName }) => {
 //   return (
@@ -55,7 +59,7 @@ const BlogBanner = () => {
 const BlogLandingPage = ({ allPosts }) => {
   return (
     <>
-      <SEO title="Climatescope 2021 | Blog" />
+      <SEO title={`Climatescope ${year} | Blog`} />
       <Box bg="brand.900" color="white">
         <BlogBanner />
       </Box>

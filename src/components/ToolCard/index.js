@@ -13,17 +13,18 @@ const ToolCard = ({ title, slug, description, src }) => {
         </Box>
         <Stack
           spacing={2}
-          gridColumn="span 3"
+          gridColumn={["span 4", null, "span 3"]}
           mt="-5.6875rem"
+          mr={10}
           pt={5}
           pr={10}
           bg="white"
           zIndex={1}
         >
-          <Heading fontSize="3xl">
+          <Heading variant="keyMessageTitle">
             <LinkOverlay href={`/tools/${slug}`}>{title}</LinkOverlay>
           </Heading>
-          <Text lineHeight="shorter" fontWeight={600} color="gray.500">
+          <Text variant="keyMessageText">
             {description}
           </Text>
         </Stack>

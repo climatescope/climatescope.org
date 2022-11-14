@@ -12,11 +12,9 @@ const publicDir = join(process.cwd(), `public`)
 
 function createSize(file, width = 300, ending = "sm") {
   const fileName = file.split(".")
-  const name = fileName.slice(0, -1).join(".") // In case the image name contains dots...
+  const name = fileName.slice(0, -1).join(".")
   const suffix = fileName.slice(-1)[0]
 
-  // Replace spaces with underscores to prevent any URI encoding issues with responsive images
-  // (see Image component for client-side fix)
   const fixedImageName = name.split(" ").join("_")
 
   sharp(join(imagesDir, file))

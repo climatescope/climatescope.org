@@ -4,10 +4,11 @@ import { useRouter } from "next/router"
 
 const { publicRuntimeConfig } = getConfig()
 const siteUrl = publicRuntimeConfig.siteUrl
+const year = publicRuntimeConfig.year
 
 const SEO = ({
   title = "",
-  description = "",
+  description = "Which market is the most attractive for energy transition investment?",
   cover = "cover-lg.jpg",
   type = "website" /* website | article */,
 }) => {
@@ -17,8 +18,8 @@ const SEO = ({
   const coverImg = cover ? siteUrl + basePath + "images/" + cover : ""
 
   const combinedTitle = title
-    ? `Climatescope 2021 | ${title}`
-    : `Climatescope 2021`
+    ? `Climatescope ${year} | ${title}`
+    : `Climatescope ${year}`
 
   return (
     <Head>

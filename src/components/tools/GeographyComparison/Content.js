@@ -92,7 +92,7 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
 
       <ProfileDivider slot={slot} />
 
-      <Stack px={5} spacing={10}>
+      {/* <Stack px={5} spacing={10}>
         <Text fontSize="4xl" fontWeight={700}>
           {formattedScores.global}
           <Text as="span" fontSize="md" ml={1} color="gray.500">
@@ -118,9 +118,29 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
             maxWidth="14rem"
           />
         </Center>
+      </Stack> */}
+      <Stack px={5} spacing={10} alignItems="center">
+        <Text fontSize="2xl" fontWeight={600} textAlign="center">
+          {"Power"}
+        </Text>
+        <RadarChart
+          sector="power"
+          market={market}
+          padding={40}
+          maxWidth="14rem"
+        />
+        <Text
+          fontSize="md"
+          lineHeight="shorter"
+          fontWeight={600}
+          color="gray.500"
+          textAlign="center"
+        >
+          {formattedScores.power && `${formattedScores.power}/5`}
+        </Text>
       </Stack>
 
-      <SimpleGrid columns={[4, 3]}>
+      {/* <SimpleGrid columns={[4, 3]}>
         <Box gridColumn={["span 2", "span 1"]}>
           <Text fontSize="sm" fontWeight={600} textAlign="center">
             {"Power"}
@@ -184,7 +204,7 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
             {formattedScores.buildings && `${formattedScores.buildings}/5`}
           </Text>
         </Box>
-      </SimpleGrid>
+      </SimpleGrid> */}
 
       <ProfileDivider slot={slot} />
 
@@ -252,7 +272,7 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
 
       <ProfileDivider slot={slot} />
 
-      <Box>
+      {/* <Box>
         <CardTable data={market.policies} sector="Transport" compact />
       </Box>
 
@@ -260,7 +280,7 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
 
       <Box>
         <CardTable data={market.policies} sector="Buildings" compact />
-      </Box>
+      </Box> */}
     </>
   )
 }

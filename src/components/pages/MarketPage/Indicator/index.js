@@ -30,7 +30,7 @@ const BooleanItems = ({ data }) => {
         style={{
           background: data.a1 ? colors.teal[100] : colors.gray[50],
           color: data.a1 ? colors.teal[900] : colors.gray[700],
-          borderColor: data.a1 ? colors.teal[900] : colors.gray[50],
+          borderColor: data.a1 ? colors.teal[500] : colors.gray[50],
         }}
       >
         <Center
@@ -104,7 +104,7 @@ const MultiItems = ({ data }) => {
         gridColumn={["span 3", null, "span 1"]}
         style={{
           background: data.a1 ? colors.purple[100] : colors.gray[50],
-          color: data.a1 ? colors.purple[700] : colors.gray[700],
+          color: data.a1 ? colors.purple[900] : colors.gray[700],
           borderColor: data.a1 ? colors.purple[500] : colors.gray[50],
         }}
       >
@@ -138,7 +138,7 @@ const MultiItems = ({ data }) => {
         gridColumn={["span 3", null, "span 1"]}
         style={{
           background: data.a2 ? colors.purple[100] : colors.gray[50],
-          color: data.a2 ? colors.purple[700] : colors.gray[700],
+          color: data.a2 ? colors.purple[900] : colors.gray[700],
           borderColor: data.a2 ? colors.purple[500] : colors.gray[50],
         }}
       >
@@ -172,7 +172,7 @@ const MultiItems = ({ data }) => {
         gridColumn={["span 3", null, "span 1"]}
         style={{
           background: data.a3 ? colors.purple[100] : colors.gray[50],
-          color: data.a3 ? colors.purple[700] : colors.gray[700],
+          color: data.a3 ? colors.purple[900] : colors.gray[700],
           borderColor: data.a3 ? colors.purple[500] : colors.gray[50],
         }}
       >
@@ -219,7 +219,7 @@ const Indicator = ({ data }) => {
       </HStack>
 
       <Collapse in={isOpen} animateOpacity>
-        <Divider />
+        <Divider borderColor="gray.100" />
         {indicator.isBoolean ? (
           <BooleanItems data={indicator} />
         ) : (

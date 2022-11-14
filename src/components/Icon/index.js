@@ -23,10 +23,57 @@ export const Icon = ({
   )
 }
 
+
+
+export const ReportIcon = (props) => {
+  return (
+    <Icon {...props}>
+        <path d="M2 5H18V23H2z" />
+        <path d="M5 1L22 1 22 21" data-color="color-2" />
+        <path d="M6 10L14 10" />
+        <path d="M6 14L14 14" />
+        <path d="M6 18L10 18" />
+    </Icon>
+  )
+}
+
+export const ChartIcon = (props) => {
+  return (
+    <Icon {...props}>
+        <path d="M1 21L23 21" data-color="color-2" />
+        <path d="M2 8H6V17H2z" />
+        <path d="M10 3H14V17H10z" />
+        <path d="M18 12H22V17H18z" />
+    </Icon>
+  )
+}
+
+export const StarIcon = (props) => {
+  return (
+    <Icon {...props}>
+      <path d="M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z" />
+    </Icon>
+  )
+}
+
 export const CheckIcon = (props) => {
   return (
     <Icon {...props}>
       <path d="M20 6L9 17 4 12" />
+    </Icon>
+  )
+}
+
+export const QuestionIcon = (props) => {
+  return (
+    <Icon {...props}>
+      <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+      <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
+      <circle
+        cx="12"
+        cy="16.5"
+        r="0.5"
+      />
     </Icon>
   )
 }

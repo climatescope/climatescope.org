@@ -29,10 +29,10 @@ const BnefBanner = () => {
             gridColumn={["span 8", null, "1 / span 5", "2 / span 4", "2 / span 3"]}
             spacing={5}
           >
-            <Heading as="h3" fontSize={["3xl", null, null, "4xl"]}>
+            <Heading as="h2" variant="sectionTitle">
               {"Additional insights "} <br /> {"from BNEF"}
             </Heading>
-            <Text fontSize="lg">
+            <Text variant="lead">
               {
                 "Explore more detailed information on global commodity markets and the disruptive technologies driving the transition to a low-carbon economy."
               }
@@ -53,12 +53,11 @@ const BnefBanner = () => {
               null,
               "6 / span 3",
               "6 / span 2",
-              "5 / span 2",
             ]}
           >
-            <Heading textTransform="uppercase" fontSize="sm" fontWeight={600}>
+            <Text variant="kicker">
               {"Powered by"}
-            </Heading>
+            </Text>
             <Link href="https://about.bnef.com/">
               <Image
                 src="bnef-logo.png"

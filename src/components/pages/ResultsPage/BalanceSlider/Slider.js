@@ -1,6 +1,7 @@
 import { memo } from "react"
-import { Box, Center } from "@chakra-ui/react"
+import { Box, Center, HStack, Tooltip, Flex } from "@chakra-ui/react"
 import ReactSlider from "react-slider"
+import { QuestionIcon } from "@components/Icon"
 
 const Slider = ({ value, onChange }) => {
   return (
@@ -9,8 +10,8 @@ const Slider = ({ value, onChange }) => {
         ".slider-thumb": { width: 0, h: "1.25rem" },
         ".slider-track": { h: "1.25rem" },
         ".slider-track-0": { color: "yellow.600", bg: "yellow.500" },
-        ".slider-track-1": { color: "teal.600", bg: "teal.500" },
-        ".slider-track-2": { color: "purple.600", bg: "purple.500" },
+        ".slider-track-1": { color: "teal.700", bg: "teal.500" },
+        ".slider-track-2": { color: "purple.600", bg: "purple.400" },
       }}
       pt="0.75rem"
       pb="1.75rem"
@@ -55,13 +56,33 @@ const Slider = ({ value, onChange }) => {
                   }}
                   transition="opacity 0.5s"
                 >
-                  <Box isTruncated fontSize="md" h="1.25rem">
-                    {
-                      ["Fundamentals", "Opportunities", "Experience"][
+                  <Tooltip
+                    label={
+                      ["This parameter encompasses a market’s key policies, market structures and barriers to investment of deployment. This includes the fundamental structures that can help renewable power, clean transport and clean technologies for heating flourish.", "This parameter examines a market’s potential to grow its supply of renewable power, clean transport and clean technologies for heating. Markets with certain prices or other conditions offer the best opportunities for clean growth.", "This parameter takes into account a market’s achievements to date across the three sectors. Markets with greater experience deploying renewable power capacity typically offer lower risks, lower technology costs and lower costs of capital for developers. This parameter includes historical deployment of clean technologies surveyed and growth rates of investment into the sectors."][
                         state.index
                       ]
                     }
-                  </Box>
+                    placement="top"
+                    hasArrow
+                    lineHeight="shorter"
+                    fontSize="sm"
+                    bg="gray.800"
+                    color="gray.50"
+                    p={4}
+                  >
+                    <Box
+                      isTruncated
+                      fontSize="md"
+                      h="1.25rem"
+                      lineHeight="1.25rem"
+                    >
+                      {
+                        ["Fundamentals", "Opportunities", "Experience"][
+                          state.index
+                        ]
+                      }
+                    </Box>
+                  </Tooltip>
                 </Box>
                 <Box
                   style={{
@@ -141,7 +162,12 @@ const Slider = ({ value, onChange }) => {
                 left={0}
                 boxShadow="0 0 0 0.25rem #FFF"
               >
-                <Center w="2.5rem" h="2.5rem" borderRadius="full" className="raised-disc">
+                <Center
+                  w="2.5rem"
+                  h="2.5rem"
+                  borderRadius="full"
+                  className="raised-disc"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"

@@ -1,18 +1,20 @@
 function prepareMarketsForSector(markets, sectorIndex) {
-  return markets
-    .filter((d) => d.sectors[sectorIndex].data[0].value)
-    .sort(
-      (a, b) =>
-        b.sectors[sectorIndex].data[0].value -
-        a.sectors[sectorIndex].data[0].value
-    )
-    .map((d, i) => ({
-      finalRank: i + 1,
-      finalScore: d.sectors[sectorIndex].data[0].value,
-      iso: d.iso,
-      name: d.name,
-      marketGrouping: d.marketGrouping,
-    }))
+  return (
+    markets
+      .filter((d) => d.sectors[sectorIndex].data[0].value)
+      .sort(
+        (a, b) =>
+          b.sectors[sectorIndex].data[0].value -
+          a.sectors[sectorIndex].data[0].value
+      )
+      .map((d, i) => ({
+        finalRank: i + 1,
+        finalScore: d.sectors[sectorIndex].data[0].value,
+        iso: d.iso,
+        name: d.name,
+        marketGrouping: d.marketGrouping,
+      }))
+  )
 }
 
 function prepareSpotlightMarket(id, markets, sectorName) {
