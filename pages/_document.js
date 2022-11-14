@@ -1,8 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from "next/document"
-import getConfig from "next/config"
+// import getConfig from "next/config"
 
-const { publicRuntimeConfig } = getConfig()
-const googleAnalyticsId = publicRuntimeConfig.googleAnalyticsId
+// const { publicRuntimeConfig } = getConfig()
+// const googleAnalyticsId = publicRuntimeConfig.googleAnalyticsId
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -22,14 +22,14 @@ export default class MyDocument extends Document {
             crossOrigin="true"
           ></link>
           <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
             rel="stylesheet"
           ></link>
           <link
             href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css"
             rel="stylesheet"
           ></link>
-          <script
+          {/* <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
           />
@@ -44,7 +44,7 @@ export default class MyDocument extends Document {
             });
           `,
             }}
-          />
+          /> */}
         </Head>
         <body>
           <Main />

@@ -1,15 +1,19 @@
 import { useState, useMemo, useEffect } from "react"
 import { Box, Stack, Heading, Text, Container } from "@chakra-ui/react"
+import getConfig from "next/config"
 
 import { ButtonLink } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
 import Globe from "./Globe"
 import InsightsList from "./InsightsList"
 
+const { publicRuntimeConfig } = getConfig()
+const year = publicRuntimeConfig.year
+
 const GlobePreview = ({
   globeInsights,
-  title = "Explore 2021 results",
-  description = "Discover our 2021 ranking of 136 most attractive markets for 3 different sectors.",
+  title = `Explore ${year} results`,
+  description = `Discover our ${year} ranking of 136 most attractive markets for the power sector.`,
   actionText = "Explore the results",
   actionHref = "/results/",
 }) => {
@@ -17,11 +21,15 @@ const GlobePreview = ({
   const [loaded, setLoaded] = useState(false)
 
   const insights = useMemo(() => {
-    const group = [
-      globeInsights.slice(0, 3),
-      globeInsights.slice(3, 6),
-      globeInsights.slice(6),
-    ][Math.floor(Math.random() * 3)]
+    const chunkedInsights = new Array(Math.ceil(globeInsights.length / 3))
+      .fill()
+      .map((d, i) => {
+        const start = i * 3
+        const insights = globeInsights.slice(start, start + 3)
+        const missingItems = globeInsights.slice(0, 3 - insights.length)
+        return [...insights, ...missingItems]
+      })
+    const group = chunkedInsights[Math.floor(Math.random() * 3)]
     return group.map(({ key, lng, lat, description, ...restProps }, i) => {
       return {
         key: parseInt(i + 1),
@@ -54,20 +62,22 @@ const GlobePreview = ({
           alignItems="center"
         >
           <Box gridColumn="span 5" px={20}>
-            {loaded && (
-              <Globe
-                currentInsight={currentInsight}
-                insights={insights}
-                setCurrentInsight={setCurrentInsight}
-              />
-            )}
+            <Box mx="auto" maxW={["24rem", null, "32rem", "40rem"]}>
+              {loaded && (
+                <Globe
+                  currentInsight={currentInsight}
+                  insights={insights}
+                  setCurrentInsight={setCurrentInsight}
+                />
+              )}
+            </Box>
           </Box>
           <Box gridColumn="span 3">
             <Stack spacing={10} alignItems="flex-start">
-              <Heading fontSize={["3xl", null, null, "4xl"]}>{title}</Heading>
-              <Text fontSize="lg" lineHeight="short" color="brand.100">
-                {description}
-              </Text>
+              <Stack spacing={5}>
+                <Heading variant="sectionTitle">{title}</Heading>
+                <Text variant="sectionSubtitleLight">{description}</Text>
+              </Stack>
               {loaded && (
                 <InsightsList
                   insights={insights}

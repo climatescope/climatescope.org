@@ -13,6 +13,7 @@ const InsightsList = ({ insights, currentInsight, setCurrentInsight }) => {
             <HStack
               p={5}
               spacing={5}
+              borderRadius="md"
               style={{
                 background:
                   currentInsight === key - 1
@@ -24,12 +25,12 @@ const InsightsList = ({ insights, currentInsight, setCurrentInsight }) => {
                 <GreenIdeaIcon strokeWidth={1.5} />
               </Box>
               <Stack spacing={1} flex="1">
-                <Heading fontSize="xl">
+                <Heading variant="keyMessageTitle" as="h3">
                   <LinkOverlay href={href} onFocus={() => setCurrentInsight(key - 1)}>
                     {title}
                   </LinkOverlay>
                 </Heading>
-                <Text lineHeight="short" color="brand.100">
+                <Text variant="keyMessageText" color="brand.100">
                   {description}
                 </Text>
               </Stack>

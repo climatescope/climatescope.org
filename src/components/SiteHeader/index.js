@@ -12,6 +12,7 @@ import {
   ModalBody,
   VisuallyHidden,
   Divider,
+  Tag,
   useTheme,
 } from "@chakra-ui/react"
 import { useRouter } from "next/router"
@@ -22,7 +23,13 @@ import SimpleGrid from "@components/SimpleGrid"
 import Logo from "./Logo"
 
 // const excludedLinks = ["/newsletter", "/countries", "/10-years-climatescope"]
-const includedLinks = ["/results", "/themes", "/tools", "/sectors", "/about"]
+const includedLinks = [
+  "/results",
+  "/highlights",
+  "/tools",
+  "/sectors",
+  "/about",
+]
 
 const SiteHeader = ({ navigation }) => {
   const { colors } = useTheme()
@@ -238,14 +245,38 @@ const SiteHeader = ({ navigation }) => {
                           <Stack spacing={3}>
                             {navItem.links.map((d) => {
                               return (
-                                <Link
-                                  key={d.path}
-                                  href={d.path}
-                                  fontSize={["md", null, "xl"]}
-                                  lineHeight="short"
-                                >
-                                  {d.title}
-                                </Link>
+                                <Box key={d.path}>
+                                  {d.title !== "Power" ? (
+                                    <HStack alignItems="center">
+                                      <Text
+                                        fontSize={["md", null, "xl"]}
+                                        lineHeight="short"
+                                      >
+                                        {d.title}
+                                      </Text>
+                                      <Tag
+                                        verticalAlign="middle"
+                                        ml={2}
+                                        size="sm"
+                                        textTransform="uppercase"
+                                        fontWeight={600}
+                                        bg="teal.700"
+                                        color="teal.100"
+                                      >
+                                        {"Coming soon"}
+                                      </Tag>
+                                    </HStack>
+                                  ) : (
+                                    <Link
+                                      key={d.path}
+                                      href={d.path}
+                                      fontSize={["md", null, "xl"]}
+                                      lineHeight="short"
+                                    >
+                                      {d.title}
+                                    </Link>
+                                  )}
+                                </Box>
                               )
                             })}
                           </Stack>

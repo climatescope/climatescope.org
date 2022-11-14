@@ -7,7 +7,7 @@ export default function AboutPage({ allPages }) {
     <>
       <SEO
         title="About"
-        description="2021 marks the tenth year of Climatescope. The project has expanded to new markets and sectors."
+        description="Climatescope is an online market assessment tool, report and index that evaluates the relative readiness of individual nations to put energy transition investment to work effectively. It provides snapshots of current clean energy policy and finance conditions that can lead to future capital deployment and project development."
       />
       <AboutLandingPage allPages={allPages} />
     </>

@@ -54,7 +54,11 @@ const useStore = create((set, get) => ({
           },
           []
         )
-        return { comparisonMarkets }
+        const domains = determineDomains(get().domains, [
+          get().currentMarket,
+          ...comparisonMarkets,
+        ])
+        return { comparisonMarkets, domains }
       })
       return
     }

@@ -13,7 +13,7 @@ const Tools = ({ allTools }) => {
         alignItems="flex-end"
         justifyContent="space-between"
       >
-        <Heading fontSize={["3xl", null, null, "4xl"]}>{"Tools"}</Heading>
+        <Heading variant="sectionTitle">{"Tools"}</Heading>
         <Link href="/tools" variant="section" display={["none", null, "flex"]}>
           {"All tools"}
           <ChevronRight size={20} strokeWidth={2} />

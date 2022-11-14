@@ -78,6 +78,14 @@ const climatescopeIssues = [
     imgSrc: "climatescope-2020-report-en-cover.jpg",
     url: "https://2020.global-climatescope.org/",
   },
+  {
+    title: "Energy transition factbook 2021",
+    year: 2021,
+    slug: "climatescope-2021-report.pdf",
+    model: "CS2021_Model.xlsm",
+    imgSrc: "climatescope-2021-report-en-cover.jpg",
+    url: "https://2021.global-climatescope.org/",
+  },
 ]
 
 const ReportsPage = () => {

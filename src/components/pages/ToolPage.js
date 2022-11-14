@@ -1,4 +1,4 @@
-import { Container, Stack } from "@chakra-ui/react"
+import { Container, Stack, Heading, Text } from "@chakra-ui/react"
 
 import SEO from "@components/SEO"
 import extractKeyMDXParts from "@utils/extractKeyMDXParts"
@@ -25,7 +25,9 @@ export default function ToolPage({
           alignItems={alignItems}
         >
           {heading}
-          {subHeading}
+          {subHeading?.props?.children && (
+            <Text variant="subtitle">{subHeading?.props?.children}</Text>
+          )}
         </Stack>
         <Stack spacing={10} pt={10} pb={20} {...restProps}>
           {textBody}

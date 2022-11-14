@@ -11,6 +11,6 @@ export default function MarketsPageWrapper({ markets }) {
 }
 
 export async function getStaticProps() {
-  const markets = await getServerData("/public/data/results-2021.json")
+  const markets = await getServerData("/public/data/results-2022.json")
   return { props: { markets } }
 }

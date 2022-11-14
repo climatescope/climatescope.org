@@ -1,10 +1,4 @@
-import {
-  Heading,
-  Stack,
-  HStack,
-  Box,
-  Text,
-} from "@chakra-ui/react"
+import { Heading, Stack, Box, Text } from "@chakra-ui/react"
 
 import { Link, ButtonLink } from "@components/Link"
 import { ViewIcon, ChevronRight } from "@components/Icon"
@@ -13,10 +7,10 @@ import Image from "@components/Image"
 
 const report = {
   id: 1,
-  title: "Energy Transition Factbook",
+  title: "Power Transition Factbook",
   href: "/downloads/climatescope-2021-report.pdf",
-  year: 2021,
-  imgSrc: "climatescope-2021-report-en-cover.jpg",
+  year: 2022,
+  imgSrc: "climatescope-2022-report-en-cover.jpg",
 }
 
 const Reports = () => {
@@ -39,49 +33,41 @@ const Reports = () => {
           py={24}
           alignItems={["left", null, "center"]}
         >
-          <Link
-            gridColumn={["span 8", null, null, "span 4"]}
-            href={report.href}
-            target="_blank"
+          <Box
+            boxShadow="lg"
+            gridColumn={["span 8", "1 / span 5", null, " 2 / span 3"]}
           >
-            <Image src={report.imgSrc} ratio={16 / 9} type="reportCover" />
-          </Link>
+            <Link href={report.href} target="_blank">
+              <Image src={report.imgSrc} ratio={1 / 1.28} type="reportCover" />
+            </Link>
+          </Box>
           <Stack gridColumn={["span 8", null, null, "span 4"]} spacing={10}>
-            <Stack spacing={5}>
-              <Stack spacing={2}>
-                <Heading
-                  as="h2"
-                  fontWeight={600}
-                  color="brand.100"
-                  lineHeight="short"
-                  fontSize="xl"
-                >
-                  {"Climatescope 2021"}
-                </Heading>
-                <Heading
-                  as="h3"
-                  fontSize={["3xl", null, null, "4xl"]}
-                  color="white"
-                >
-                  {report.title}
-                </Heading>
-              </Stack>
-
-              <Text fontSize="lg" color="brand.100">
-                {
-                  "This marks the 10th anniversary of Climatescope, BNEF’s annual assessment of energy transition opportunities. For the first time, the project has expanded its scope to include activity not just in clean power but in the decarbonization of the transportation and buildings sectors."
-                }
-              </Text>
+            <Stack spacing={2}>
+              <Text variant="kicker" color="brand.300">{"Climatescope 2022"}</Text>
+              <Heading variant="sectionTitle" color="white">
+                {report.title}
+              </Heading>
             </Stack>
-            <HStack spacing={10} color="white">
+
+            <Text variant="lead" color="brand.100">
+              {
+                "This marks the 11th anniversary of Climatescope, BNEF’s annual assessment of energy transition opportunities. The project has been expanded to include activity not just in clean power but in the decarbonization of the transportation and buildings sectors. The Power Transition Factbook is the first of three reports that composes BNEF's Energy Transition Factbook. The transport and buildings sectors reports are coming soon."
+              }
+            </Text>
+            <Stack
+              spacing={5}
+              color="white"
+              direction={["column", null, "row"]}
+            >
               <ButtonLink
                 href={report.href}
+                alignSelf="flex-start"
                 target="_blank"
                 variant="outline"
                 colorScheme="white"
                 size="lg"
-                leftIcon={
-                  <Box mr={2}>
+                rightIcon={
+                  <Box ml={2}>
                     <ViewIcon size={20} strokeWidth={2} />
                   </Box>
                 }
@@ -91,6 +77,7 @@ const Reports = () => {
               </ButtonLink>
               <ButtonLink
                 href="/reports"
+                alignSelf="flex-start"
                 variant="ghost"
                 colorScheme="white"
                 size="lg"
@@ -102,7 +89,7 @@ const Reports = () => {
               >
                 {"See all reports"}
               </ButtonLink>
-            </HStack>
+            </Stack>
           </Stack>
         </SimpleGrid>
       </Box>

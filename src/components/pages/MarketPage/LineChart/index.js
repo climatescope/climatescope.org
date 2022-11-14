@@ -125,28 +125,35 @@ const LineChart = ({
   scaleY,
   scaleBand,
   preparedLines,
+  compactTooltip,
 }) => {
   const { colors } = useTheme()
   const [tooltip, setTooltip] = useState({})
-  const visible = preparedLines.map(d => ({ ...d, isVisible: true }))
+  const visible = preparedLines.map((d) => ({ ...d, isVisible: true }))
 
   const xAxis = useAxis({ scale: scaleX })
   const yAxis = useAxis({ scale: scaleY, ticks: 4 })
 
-  const handleTooltipShow = useCallback((data) => {
-    const d = visible.map((dd) => {
-      const relevantData =
-        dd.data.flat().find((s) => s.year === data.year) || {}
-      return {
-        name: dd.subindicator,
-        unit: dd.units,
-        ...relevantData,
-      }
-    })
-    const hasData = d.reduce((acc, cur) => acc || cur.year || cur.value, false)
-    if (!hasData) return
-    setTooltip({ ...data, data: sortBy(d, (o) => -o.value) })
-  }, [visible])
+  const handleTooltipShow = useCallback(
+    (data) => {
+      const d = visible.map((dd) => {
+        const relevantData =
+          dd.data.flat().find((s) => s.year === data.year) || {}
+        return {
+          name: dd.subindicator,
+          unit: dd.units,
+          ...relevantData,
+        }
+      })
+      const hasData = d.reduce(
+        (acc, cur) => acc || cur.year || cur.value,
+        false
+      )
+      if (!hasData) return
+      setTooltip({ ...data, data: sortBy(d, (o) => -o.value) })
+    },
+    [visible]
+  )
 
   const handleTooltipHide = useCallback(() => {
     setTooltip({})
@@ -188,12 +195,27 @@ const LineChart = ({
                 tooltip.data.length &&
                 tooltip.data.map((d) => {
                   return (
-                    <Stack key={d.name} spacing={0}>
-                      <Text fontSize="sm" lineHeight="shorter" fontWeight={600}>
+                    <Stack
+                      key={d.name}
+                      spacing={0}
+                      direction={compactTooltip ? "row" : "column"}
+                      alignItems={compactTooltip ? "flex-end" : "flex-start"}
+                    >
+                      <Text
+                        fontSize="sm"
+                        lineHeight="shorter"
+                        fontWeight={600}
+                        flex={1}
+                      >
                         {d.name}
                       </Text>
-                      <Text fontSize="sm" lineHeight="shorter">
-                        {`${d.value?.toLocaleString("en-US") || ""} ${d.unit}`}
+                      <Text fontSize="sm" lineHeight="shorter" flex="none">
+                        {`${
+                          d.value?.toLocaleString("en-US", {
+                            minimumFractionDigits: 2,
+                            maximumFractionDigits: 2,
+                          }) || ""
+                        } ${d.unit}`}
                       </Text>
                     </Stack>
                   )
@@ -260,7 +282,13 @@ const LineChart = ({
             return isVisible ? (
               <g key={subindicator}>
                 {data.map((l, j) => (
-                  <Line key={j} data={l} scaleX={scaleX} scaleY={scaleY} />
+                  <Line
+                    key={j}
+                    data={l}
+                    scaleX={scaleX}
+                    scaleY={scaleY}
+                    subindicator={subindicator}
+                  />
                 ))}
                 {points.map((d) => {
                   return (
@@ -269,7 +297,7 @@ const LineChart = ({
                       cx={scaleX(d.year)}
                       cy={scaleY(d.value)}
                       r={5}
-                      fill={colors.teal[800]}
+                      fill={colors.indicators[subindicator] || colors.teal[800]}
                       stroke="#FFF"
                       strokeWidth={2}
                     />
@@ -345,7 +373,13 @@ function getUnit(val, unit) {
   return unitMap[unit] || v || ""
 }
 
-const LineChartWrapper = ({ width = 672, height = 378, data, ...restProps }) => {
+const LineChartWrapper = ({
+  width = 672,
+  height = 378,
+  data,
+  compactTooltip,
+  ...restProps
+}) => {
   const [preparedLines, setPreparedLines] = useState([])
   const name = data?.indicator
   const series = data?.subindicators || []
@@ -434,6 +468,7 @@ const LineChartWrapper = ({ width = 672, height = 378, data, ...restProps }) => 
       scaleY={scaleY}
       scaleBand={scaleBand}
       preparedLines={preparedLines}
+      compactTooltip={compactTooltip}
     />
   )
 }

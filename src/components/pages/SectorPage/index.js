@@ -112,9 +112,7 @@ export default function SectorPage({ metaData, children, ...restProps }) {
             >
               <Stack spacing={5}>
                 <Text
-                  lineHeight="shorter"
-                  fontWeight={700}
-                  textTransform="uppercase"
+                  variant="kicker"
                 >
                   {"Share"}
                 </Text>
@@ -122,37 +120,31 @@ export default function SectorPage({ metaData, children, ...restProps }) {
                   <WrapItem flex={["0", null, null, "1"]}>
                     <ShareButton platformName="twitter">
                       <VisuallyHidden>{"Share on Twitter"}</VisuallyHidden>
-                      <TwitterIcon size={20} />
+                      <TwitterIcon size={24} />
                     </ShareButton>
                   </WrapItem>
                   <WrapItem flex={["0", null, null, "1"]}>
                     <ShareButton platformName="linkedin">
                       <VisuallyHidden>{"Share on Linkedin"}</VisuallyHidden>
-                      <LinkedinIcon size={20} />
+                      <LinkedinIcon size={24} />
                     </ShareButton>
                   </WrapItem>
                   <WrapItem flex={["0", null, null, "1"]}>
                     <ShareButton platformName="facebook">
                       <VisuallyHidden>{"Share on Facebook"}</VisuallyHidden>
-                      <FacebookIcon size={20} />
+                      <FacebookIcon size={24} />
                     </ShareButton>
                   </WrapItem>
                   <WrapItem flex={["0", null, null, "1"]}>
                     <ShareButton platformName="email">
                       <VisuallyHidden>{"Share via email"}</VisuallyHidden>
-                      <EnvelopeIcon size={20} />
+                      <EnvelopeIcon size={24} />
                     </ShareButton>
                   </WrapItem>
                 </Wrap>
               </Stack>
               <Stack spacing={5} display={["none", null, null, "flex"]}>
-                <Text
-                  fontSize="lg"
-                  lineHeight="shorter"
-                  fontWeight={700}
-                  mt={1}
-                  textTransform="uppercase"
-                >
+                <Text variant="kicker">
                   {"On this page"}
                 </Text>
                 <Stack spacing={3}>
@@ -169,7 +161,7 @@ export default function SectorPage({ metaData, children, ...restProps }) {
                           href="#"
                           key={i}
                           lineHeight="shorter"
-                          style={{ fontWeight: currentStep === i ? 600 : 400 }}
+                          style={{ fontWeight: currentStep === i ? 600 : 500 }}
                           color={currentStep === i ? "teal.700" : "gray.500"}
                           cursor="pointer"
                           onClick={handleClick(i)}

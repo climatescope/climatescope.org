@@ -2,7 +2,7 @@ const globalStyles = {
   body: {
     bg: "white",
     fontFamily: "body",
-    color: "gray.900",
+    color: "gray.800",
     maxW: "100%",
     overflowX: "hidden",
   },
@@ -10,6 +10,9 @@ const globalStyles = {
     display: "block",
     width: "100%",
     height: "auto",
+  },
+  ".technology-map-tooltip": {
+    fontWeight: 600,
   },
 }
 

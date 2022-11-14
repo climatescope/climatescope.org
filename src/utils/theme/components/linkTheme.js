@@ -6,7 +6,7 @@ const linkTheme = {
     },
     mainNav: {
       fontFamily: "heading",
-      fontWeight: 700,
+      fontWeight: 600,
       fontSize: "sm",
       textTransform: "uppercase",
     },
@@ -25,6 +25,11 @@ const linkTheme = {
       "svg": {
         marginLeft: "0.5rem",
       },
+    },
+    footerLink: {
+      lineHeight: "short",
+      fontWeight: 500,
+      color: "gray.700",
     },
   },
 }

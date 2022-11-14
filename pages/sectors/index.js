@@ -18,7 +18,7 @@ export default function SectorsPageWrapper({ sectors, marketCounts }) {
 
 export async function getStaticProps() {
   const sectors = (await getPages("sectors")) || []
-  const marketsData = await getServerData(`public/data/results-2021.json`)
+  const marketsData = await getServerData(`public/data/results-2022.json`)
   const marketCounts = getMarketCounts(marketsData)
   return { props: { sectors, marketCounts } }
 }

@@ -8,7 +8,7 @@ export default function ToolsLandingPage({ allTools }) {
     <Container>
       <SimpleGrid columns={2} pt={10} pb={40}>
         <Box gridColumn="1 / -1">
-          <Heading fontSize="3rem">{"Tools"}</Heading>
+          <Heading as="h1" variant="pageTitle">{"Tools"}</Heading>
         </Box>
         {allTools
           .sort((a, b) => a.order - b.order)

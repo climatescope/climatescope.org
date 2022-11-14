@@ -1,10 +1,4 @@
-import {
-  Heading,
-  Text,
-  Box,
-  Stack,
-  Tag,
-} from "@chakra-ui/react"
+import { Heading, Text, Box, Stack, Tag } from "@chakra-ui/react"
 
 import { LinkBox, LinkOverlay } from "@components/Link"
 import Image from "@components/Image"
@@ -15,6 +9,7 @@ const SectorCard = ({
   alt,
   href,
   isNew,
+  comingSoon,
   marketCounts,
   order,
 }) => {
@@ -27,12 +22,18 @@ const SectorCard = ({
             alt={alt}
             type="sector"
             ratio={[1, 3 / 4, 1, 3 / 4]}
+            opacity={title !== "Power" ? "0.5" : "1"}
           />
         </Box>
         <Stack spacing={1}>
           <Heading as="h2" fontSize="3xl">
-            <LinkOverlay href={href}>{title}</LinkOverlay>
-            {isNew ? (
+            {comingSoon ? (
+              <span>{title}</span>
+            ) : (
+              <LinkOverlay href={href}>{title}</LinkOverlay>
+            )}
+            {/* <LinkOverlay href={href}>{title}</LinkOverlay> */}
+            {comingSoon ? (
               <Tag
                 verticalAlign="middle"
                 ml={2}
@@ -40,7 +41,7 @@ const SectorCard = ({
                 textTransform="uppercase"
                 fontWeight={600}
               >
-                {"New"}
+                {"Coming soon"}
               </Tag>
             ) : null}
           </Heading>
@@ -50,7 +51,9 @@ const SectorCard = ({
             color="gray.500"
             fontWeight={600}
           >
-            {`${marketCounts[title.toLowerCase()]} markets`}
+            {title !== "Power"
+              ? ""
+              : `${marketCounts[title.toLowerCase()]} markets`}
           </Text>
         </Stack>
       </Stack>

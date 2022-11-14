@@ -4,8 +4,13 @@ import { useRouter } from "next/router"
 import { ButtonLink } from "@components/Link"
 
 const { publicRuntimeConfig } = getConfig()
+const year = publicRuntimeConfig.year
 
-const ShareButton = ({ children, colorScheme, platformName = "twitter" }) => {
+const ShareButton = ({
+  children,
+  colorScheme = "gray",
+  platformName = "twitter",
+}) => {
   const router = useRouter()
   const shareLinks = getShareLinks(router.asPath)
   const shareUrl = shareLinks[platformName]
@@ -16,11 +21,9 @@ const ShareButton = ({ children, colorScheme, platformName = "twitter" }) => {
       px={0}
       borderRadius="full"
       variant="ghost"
-      colorScheme="gray"
-      color="gray.400"
-      _hover={{ color: "teal.700", bg: "teal.100" }}
-      _focus={{ color: "teal.700", bg: "teal.100" }}
-      _active={{ color: "teal.700", bg: "teal.100" }}
+      _hover={{ color: `${platformName}.500`, bg: "gray.50" }}
+      _focus={{ color: `${platformName}.500`, bg: "gray.50" }}
+      _active={{ color: `${platformName}.500`, bg: "gray.50" }}
       href={shareUrl}
       colorScheme={colorScheme}
     >
@@ -39,7 +42,7 @@ function getShareLinks(asPath) {
 
   const twitterShareText = `Which market is the most attractive for energy transition investment? Visit the latest #Climatescope from @BloombergNef to find out`
   const facebookShareText = `Which market is the most attractive for energy transition investment? Visit the latest #Climatescope from @BloombergNef to find out ${shareUrl}`
-  const emailSubject = "Climatescope 2021"
+  const emailSubject = `Climatescope ${year}`
   const emailBody = `Which market is the most attractive for energy transition investment? Visit the latest #Climatescope from @BloombergNef to find out ${shareUrl}`
 
   const encodedTwitterShareText = encodeURIComponent(twitterShareText)

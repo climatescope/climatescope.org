@@ -73,12 +73,31 @@ function getPages(n = "") {
 }
 
 const about = getPages("about") || []
-const themes = getPages("themes") || []
-const sectors = getPages("sectors") || []
+const sectorsRaw = getPages("sectors") || []
 const tools = getPages("tools") || []
 // const reports = getPages("reports") || []
 const blog = getPages("blog") || []
 const pages = getPages("") || []
+
+const sectors = [
+  ...sectorsRaw,
+  {
+    title: "Transport",
+    description: "",
+    path: "/sectors",
+    order: 2,
+    thumbnail: "transport.jpg",
+    cover: "transport-cover.jpg",
+  },
+  {
+    title: "Buildings",
+    description: "",
+    path: "/sectors",
+    order: 3,
+    thumbnail: "buildings.jpg",
+    cover: "buildings-cover.jpg",
+  },
+]
 
 const navigation = [
   ...pages.map((d) => {
@@ -94,34 +113,31 @@ const navigation = [
     links: [],
   },
   {
-    title: "Themes",
-    path: "/themes",
-    links: themes.map((d) => ({
-      title: d.title,
-      path: `/themes/${d.slug}`,
-    })),
+    title: "Highlights",
+    path: "/highlights",
+    links: [],
   },
   {
     title: "Sectors",
     path: "/sectors",
-    links: sectors.map((d) => ({
-      title: d.title,
-      path: `/sectors/${d.slug}`,
-    })),
+    links: sectors
+      .map((d) => ({
+        title: d.title,
+        path: `/sectors/${d.slug}`,
+        order: d.order,
+        ...d,
+      }))
+      .sort((a, b) => a.order - b.order),
   },
-  // {
-  //   title: "Markets",
-  //   path: "/markets",
-  //   links: [],
-  // },
+  {
+    title: "Markets",
+    path: "/markets",
+    links: [],
+  },
   {
     title: "Reports",
     path: "/reports",
     links: [],
-    // links: reports.map((d) => ({
-    //   title: d.title,
-    //   path: `/reports/${d.slug}`,
-    // })),
   },
   {
     title: "Tools",

@@ -7,6 +7,7 @@ import MarketPage from "@components/pages/MarketPage"
 
 export default function MarketPageWrapper({ market, marketCounts }) {
   const summary = createMarketSummary(market)
+  if (!summary) return <div>{ "Missing data..." }</div>
   return (
     <>
       <SEO title={market.name} description={summary} />
@@ -21,16 +22,16 @@ export default function MarketPageWrapper({ market, marketCounts }) {
 
 export async function getStaticProps({ params }) {
   const { slug } = params
-  const market = await getServerData(`/public/data/markets/${slug}.json`)
+  const market = await getServerData(`/public/data/markets/${slug}.json`, {}, true)
   const geos = await getServerData(`/public/data/geographies.json`)
-  const resultsData = await getServerData(`public/data/results-2021.json`)
+  const resultsData = await getServerData(`public/data/results-2022.json`)
   const marketCounts = getMarketCounts(resultsData)
   const { bbox } = geos.find((s) => s.iso === market.iso) || { bbox: [] }
   return { props: { slug, market: { ...market, bbox }, marketCounts } }
 }
 
 export async function getStaticPaths() {
-  const resultsData = await getServerData("/public/data/results-2021.json")
+  const resultsData = await getServerData("/public/data/results-2022.json")
   return {
     paths: resultsData.map(({ iso }) => ({ params: { slug: iso } })),
     fallback: false,

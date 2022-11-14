@@ -13,18 +13,7 @@ const ContentPlaceholder = ({ slot }) => {
   return (
     <>
       <ProfileDivider slot={slot} />
-      <SimpleGrid columns={3} px={5}>
-        <Stack spacing={1}>
-          <Heading
-            textTransform="uppercase"
-            fontSize="xs"
-            color="gray.500"
-            isTruncated
-          >
-            {"Score"}
-          </Heading>
-          <Skeleton h="1.5625rem" startColor="gray.50" endColor="gray.100" />
-        </Stack>
+      <SimpleGrid columns={2} px={5}>
         <Stack spacing={1}>
           <Heading
             textTransform="uppercase"
@@ -43,10 +32,11 @@ const ContentPlaceholder = ({ slot }) => {
             color="gray.500"
             isTruncated
           >
-            {"Market rank"}
+            {"Global score"}
           </Heading>
           <Skeleton h="1.5625rem" startColor="gray.50" endColor="gray.100" />
         </Stack>
+        
       </SimpleGrid>
       <ProfileDivider slot={slot} />
       <Stack px={5} spacing={10}>

@@ -97,10 +97,46 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
               {["power", "transport", "buildings"].map((d) => {
                 const sector = market.sectors.find((s) => s.id === d)
                 const score = sector.data[0].value
-                return (
+
+                const isComingSoon = d !== "power"
+
+                return isComingSoon ? (
                   <Stack key={d} spacing={[3, null, null, 6]}>
                     <Stack spacing={2}>
-                      <Heading textTransform="capitalize" fontSize={["2xl", "3xl"]}>
+                      <Heading
+                        textTransform="capitalize"
+                        fontSize={["2xl", "3xl"]}
+                      >
+                        &nbsp;
+                      </Heading>
+                      <Text
+                        fontWeight={600}
+                        lineHeight="short"
+                        color="gray.500"
+                      >
+                        {`${sector.name} score`}
+                      </Text>
+                    </Stack>
+                    <Divider />
+                    <Box>
+                      <Tag
+                        size="sm"
+                        bg="brand.500"
+                        color="brand.100"
+                        textTransform="uppercase"
+                        fontWeight={600}
+                      >
+                        {"Coming soon"}
+                      </Tag>
+                    </Box>
+                  </Stack>
+                ) : (
+                  <Stack key={d} spacing={[3, null, null, 6]}>
+                    <Stack spacing={2}>
+                      <Heading
+                        textTransform="capitalize"
+                        fontSize={["2xl", "3xl"]}
+                      >
                         {score ? (
                           `${score.toLocaleString("en-US", {
                             minimumFractionDigits: 2,

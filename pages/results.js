@@ -11,7 +11,7 @@ const { publicRuntimeConfig } = getConfig()
 const basePath = publicRuntimeConfig.basePath
 
 const ResultsPageWrapper = ({ dataPreview }) => {
-  const clientData = useClientData(`${basePath}/data/results-2021.json`)
+  const clientData = useClientData(`${basePath}/data/results-2022.json`)
   return (
     <>
       <SEO title="Results" description="Which market is the most attractive for energy transition investment?" />
@@ -21,7 +21,7 @@ const ResultsPageWrapper = ({ dataPreview }) => {
 }
 
 export async function getStaticProps() {
-  const resultsData = await getServerData(`public/data/results-2021.json`)
+  const resultsData = await getServerData(`public/data/results-2022.json`)
   const dataPreview = sortBy(
     resultsData.filter((d) => d.marketGrouping === "emerging"),
     (o) => o.marketGroupingScore.data[0].rank

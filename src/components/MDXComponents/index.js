@@ -33,7 +33,6 @@ const components = {
         w="100%"
         fontSize={["xl", null, "2xl"]}
         maxW="container.sm"
-        // pt={4}
         {...props}
       />
     )
@@ -55,7 +54,7 @@ const components = {
       <Text
         as="p"
         w="100%"
-        fontSize={["md", null, "lg"]}
+        fontSize={["md", null, "xl"]}
         maxW="container.sm"
         sx={{
           "code": {
@@ -82,7 +81,7 @@ const components = {
     const lang = langClass.split("-")[1]
     return (
       <Box w="100%" maxW="container.sm">
-        <Text py="0.5rem" px="1rem" bg="gray.200" color="gray.500">
+        <Text as="span" py="0.5rem" px="1rem" bg="gray.200" color="gray.500">
           {lang}
         </Text>
         <Box
