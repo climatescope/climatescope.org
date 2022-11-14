@@ -33,7 +33,6 @@ const includedLinks = [
 
 const SiteHeader = ({ navigation }) => {
   const { colors } = useTheme()
-  const finalRef = useRef()
   const initialRef = useRef()
   const { isOpen, onOpen, onClose } = useDisclosure()
   const { route } = useRouter()
