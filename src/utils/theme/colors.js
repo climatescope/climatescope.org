@@ -234,6 +234,8 @@ const colors = {
     "Africa": "#f8ba01",
     "Middle East": "#078D76",
 
+    "Unknown": "#778088",
+
   },
 }
 
