@@ -21,7 +21,7 @@ const AboutLandingPage = ({ allPages }) => {
             </Text>
             <Text maxW="50rem">
               {
-                "2022 marks the 11th year BloombergNEF has produced Climatescope. Over that time, the project has significantly evolved and now includes detailed information on 136 markets globally, including 107 emerging markets and 29 developed nations. While Climatescope has historically focused on just the power sector, in 2022 it has been expanded to include in-depth data on investment conditions for lower-carbon transportation and buildings."
+                "2022 marks the 11th year BloombergNEF has produced Climatescope. Over that time, the project has significantly evolved and now includes detailed information on 136 markets globally, including 107 emerging markets and 29 developed nations. While Climatescope has historically focused on just the power sector, in 2021 it has been expanded to include in-depth data on investment conditions for lower-carbon transportation and buildings."
               }
             </Text>
             <Text maxW="50rem">
