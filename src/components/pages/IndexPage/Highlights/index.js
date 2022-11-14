@@ -13,7 +13,7 @@ const Highlights = ({ miniRankingsPaths }) => {
   useEffect(() => {
     if (highlights.length) return
     Promise.all(
-      miniRankingsPaths.slice(1, 3).map((d) => {
+      miniRankingsPaths.slice(0, 2).map((d) => {
         return fetch(`/data/mini-rankings/${d}`).then((res) => res.text())
       })
     ).then((data) => {

@@ -59,8 +59,8 @@ const MarketPage = ({ market, summary, marketCounts }) => {
                   market={market}
                 />
               </Box>
-            )}
-            {buildingsCopy && (
+            )} */}
+            {/* {buildingsCopy && (
               <Box data-scroll-step="true">
                 <BuildingsSection
                   {...buildingsCopy}

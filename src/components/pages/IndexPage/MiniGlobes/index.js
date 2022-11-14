@@ -52,7 +52,7 @@ const MiniGlobesSection = ({ data }) => {
     "amer": "Americas",
     "eu": "Europe",
     "mena": "Middle East and North Africa",
-    "asia": "Asia",
+    "asia": "Asia-Pacific",
   }
   return (
     <Box

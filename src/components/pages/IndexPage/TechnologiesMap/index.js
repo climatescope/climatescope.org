@@ -45,7 +45,7 @@ function CustomGeo({ geo, relevantData }) {
       onMouseEnter={() => {
         const name = relevantData?.country || geo?.properties?.name || ""
         const value = key || ""
-        setTooltipContent(`${name} - ${value || "N/A"}`)
+        setTooltipContent(`${name} - ${value || "Not covered"}`)
       }}
       onMouseLeave={() => {
         setTooltipContent("")
@@ -261,7 +261,7 @@ const Technologies = () => {
                         <polyline points="12,8 8,12" />
                       </svg>
                     </Box>
-                    <Box fontWeight={600}>{"N/A"}</Box>
+                    <Box fontWeight={600}>{"Not covered"}</Box>
                   </HStack>
                 </Stack>
               </Box>
