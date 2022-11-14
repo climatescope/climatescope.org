@@ -39,6 +39,7 @@ const textTheme = {
       lineHeight: "shorter",
     },
     footerLink: {
+      fontSize: "md",
       lineHeight: "short",
       fontWeight: 500,
       color: "gray.700",

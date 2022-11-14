@@ -24,6 +24,7 @@ const Reports = () => {
           left="50%"
           position="relative"
           ml="-50vw"
+          bgGradient="linear(to-br, teal.800 0%, teal.900 60%)"
         />
       </Box>
       <Box gridColumn="1 / -1" gridRow="1" position="relative" color="white">
@@ -38,12 +39,19 @@ const Reports = () => {
             gridColumn={["span 8", "1 / span 5", null, " 2 / span 3"]}
           >
             <Link href={report.href} target="_blank">
-              <Image src={report.imgSrc} ratio={1 / 1.28} type="reportCover" />
+              <Image
+                src={report.imgSrc}
+                ratio={1 / 1.28}
+                type="reportCover"
+                bg="transparent"
+              />
             </Link>
           </Box>
           <Stack gridColumn={["span 8", null, null, "span 4"]} spacing={10}>
             <Stack spacing={2}>
-              <Text variant="kicker" color="brand.300">{"Climatescope 2022"}</Text>
+              <Text variant="kicker" color="brand.300">
+                {"Climatescope 2022"}
+              </Text>
               <Heading variant="sectionTitle" color="white">
                 {report.title}
               </Heading>

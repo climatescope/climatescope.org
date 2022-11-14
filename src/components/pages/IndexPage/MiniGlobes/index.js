@@ -66,7 +66,7 @@ const MiniGlobesSection = ({ data }) => {
       style={{ marginTop: 0 }}
     >
       <Container>
-        <SimpleGrid columns={2} bg="brand.900">
+        <SimpleGrid columns={2}>
           <HStack
             gridColumn="1 / -1"
             alignItems="flex-end"
@@ -77,15 +77,19 @@ const MiniGlobesSection = ({ data }) => {
                 {"Renewable energy by region"}
               </Heading>
               <Text variant="sectionSubtitleLight">
-                {"Share of renewable energy installed capacity by region in 2021"}
+                {
+                  "Share of renewable energy installed capacity by region in 2021"
+                }
               </Text>
             </Stack>
-            {/* <Link href="/" variant="section" display={["none", null, "flex"]}>
-          {"All highlights"}
-          <ChevronRight size={20} strokeWidth={2} />
-        </Link> */}
           </HStack>
-          <SimpleGrid columns={[1, 2, null, 4]} gridColumn="1 / -1" gridColumnGap={[10, null, 20]} gridRowGap={[10, null, 20]} py={10}>
+          <SimpleGrid
+            columns={[1, 2, null, 4]}
+            gridColumn="1 / -1"
+            gridColumnGap={[10, null, 20]}
+            gridRowGap={[10, null, 20]}
+            py={10}
+          >
             {data.map(({ region, value }) => {
               return (
                 <Box key={region}>
@@ -131,55 +135,6 @@ const MiniGlobesSection = ({ data }) => {
                 </Box>
               )
             })}
-
-            {/* <Box>
-          <AspectRatio ratio={1}>
-            <Box
-              bg="gray.25"
-              borderRadius="full"
-              fontSize="2xl"
-              fontWeight={700}
-            >
-              <MiniGlobe rotate={[82, -8, 0]} />
-            </Box>
-          </AspectRatio>
-        </Box>
-        <Box>
-          <AspectRatio ratio={1}>
-            <Box
-              bg="gray.25"
-              borderRadius="full"
-              fontSize="2xl"
-              fontWeight={700}
-            >
-              <MiniGlobe rotate={[-10, -45, 0]} />
-            </Box>
-          </AspectRatio>
-        </Box>
-        <Box>
-          <AspectRatio ratio={1}>
-            <Box
-              bg="gray.25"
-              borderRadius="full"
-              fontSize="2xl"
-              fontWeight={700}
-            >
-              <MiniGlobe rotate={[-25, -10, 0]} />
-            </Box>
-          </AspectRatio>
-        </Box>
-        <Box>
-          <AspectRatio ratio={1}>
-            <Box
-              bg="gray.25"
-              borderRadius="full"
-              fontSize="2xl"
-              fontWeight={700}
-            >
-              <MiniGlobe rotate={[-110, -10, 0]} />
-            </Box>
-          </AspectRatio>
-        </Box> */}
           </SimpleGrid>
         </SimpleGrid>
       </Container>

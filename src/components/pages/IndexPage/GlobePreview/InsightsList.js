@@ -21,12 +21,26 @@ const InsightsList = ({ insights, currentInsight, setCurrentInsight }) => {
                     : colors.brand[800],
               }}
             >
-              <Box bg="brand.900" color="yellow.500" flex="none" borderRadius="full" p={4}>
+              <Box
+                bg="brand.900"
+                color="yellow.500"
+                flex="none"
+                borderRadius="full"
+                p={4}
+              >
                 <GreenIdeaIcon strokeWidth={1.5} />
               </Box>
               <Stack spacing={1} flex="1">
                 <Heading variant="keyMessageTitle" as="h3">
-                  <LinkOverlay href={href} onFocus={() => setCurrentInsight(key - 1)}>
+                  <LinkOverlay
+                    href={href}
+                    onFocus={() => setCurrentInsight(key - 1)}
+                    _focusVisible={{
+                      outline: "0.125rem solid",
+                      outlineColor: "whiteAlpha.800",
+                      outlineOffset: "0.125rem",
+                    }}
+                  >
                     {title}
                   </LinkOverlay>
                 </Heading>

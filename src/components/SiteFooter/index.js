@@ -49,11 +49,11 @@ const SiteFooter = ({ navigation }) => {
             .map((navItem) => {
               return (
                 <Box key={navItem.path}>
-                  <Stack spacing="0.75rem">
+                  <Stack spacing="0.75rem" alignItems="flex-start">
                     <Link href={navItem.path} variant="mainNav">
                       {navItem.title}
                     </Link>
-                    <Stack spacing="0.5rem">
+                    <Stack spacing="0.5rem" alignItems="flex-start">
                       {navItem.title === "Markets" && (
                         <>
                           <Link href="/markets/ca">{"Canada"}</Link>
@@ -65,7 +65,11 @@ const SiteFooter = ({ navigation }) => {
                       {navItem.title === "Sectors" &&
                         navItem.links.map((d) => {
                           return d.title == "Power" ? (
-                            <Link key={d.path} href={d.path} variant="footerLink">
+                            <Link
+                              key={d.path}
+                              href={d.path}
+                              variant="footerLink"
+                            >
                               {d.title}
                             </Link>
                           ) : (
@@ -89,9 +93,15 @@ const SiteFooter = ({ navigation }) => {
                         navItem.title !== "Sectors" &&
                         navItem.links.map((d) => {
                           return (
-                            <Link key={d.path} href={d.path} variant="footerLink">
-                              {d.title}
-                            </Link>
+                            <Box key={d.path} lineHeight="short">
+                              <Link
+                                href={d.path}
+                                variant="footerLink"
+                                display="inline"
+                              >
+                                {d.title}
+                              </Link>
+                            </Box>
                           )
                         })}
                     </Stack>
