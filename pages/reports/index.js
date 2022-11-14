@@ -105,69 +105,71 @@ const ReportsPage = () => {
             gridRowGap={[10, null, 16]}
             gridColumn="1 / -1"
           >
-            {climatescopeIssues.sort((a, b) => b.year - a.year).map((issue) => (
-              <LinkBox
-                key={issue.year}
-                variant="card"
-                gridColumn={["span 2", null, null, "span 1"]}
-              >
-                <Stack spacing={4} h="100%">
-                  <Box>
-                    <Image
-                      src={issue.imgSrc}
-                      ratio={1 / 1.28}
-                      type="reportThumbnail"
-                    />
-                  </Box>
-                  <Stack spacing={1} h="100%">
-                    <Text
-                      color="gray.500"
-                      lineHeight="short"
-                      fontSize="lg"
-                      fontWeight={600}
-                    >
-                      {`${issue.year}`}
-                    </Text>
-                    <LinkOverlay
-                      href={`/downloads/climatescope-${issue.year}-report-en.pdf`}
-                      target="_blank"
-                    >
-                      <Heading fontSize="lg" lineHeight="shorter">
-                        {issue.title}
-                      </Heading>
-                    </LinkOverlay>
-                  </Stack>
-                  <HStack spacing={[0, null, 3]}>
-                    <ButtonLink
-                      href={`/downloads/climatescope-${issue.year}-report-en.pdf`}
-                      target="_blank"
-                      colorScheme="gray"
-                      rightIcon={<DownloadIcon size={20} />}
-                      display={["none", null, "flex"]}
-                    >
-                      {"Report"}
-                    </ButtonLink>
-                    {issue.year >= 2014 ? (
-                      <ButtonLink
-                        href={issue.url}
-                        colorScheme="gray"
-                        rightIcon={<ExternalIcon size={20} />}
+            {climatescopeIssues
+              .sort((a, b) => b.year - a.year)
+              .map((issue) => (
+                <LinkBox
+                  key={issue.year}
+                  variant="card"
+                  gridColumn={["span 2", null, null, "span 1"]}
+                >
+                  <Stack spacing={4} h="100%">
+                    <Box>
+                      <Image
+                        src={issue.imgSrc}
+                        ratio={1 / 1.28}
+                        type="reportThumbnail"
+                      />
+                    </Box>
+                    <Stack spacing={1} h="100%">
+                      <Text
+                        color="gray.500"
+                        lineHeight="short"
+                        fontSize="lg"
+                        fontWeight={600}
                       >
-                        {"Website"}
+                        {`${issue.year}`}
+                      </Text>
+                      <LinkOverlay
+                        href={`/downloads/climatescope-${issue.year}-report-en.pdf`}
+                        target="_blank"
+                      >
+                        <Heading fontSize="lg" lineHeight="shorter">
+                          {issue.title}
+                        </Heading>
+                      </LinkOverlay>
+                    </Stack>
+                    <HStack spacing={[0, null, 3]}>
+                      <ButtonLink
+                        href={`/downloads/climatescope-${issue.year}-report-en.pdf`}
+                        target="_blank"
+                        colorScheme="gray"
+                        rightIcon={<DownloadIcon size={20} />}
+                        display={["none", null, "flex"]}
+                      >
+                        {"Report"}
                       </ButtonLink>
-                    ) : null}
+                      {issue.year >= 2014 ? (
+                        <ButtonLink
+                          href={issue.url}
+                          colorScheme="gray"
+                          rightIcon={<ExternalIcon size={20} />}
+                        >
+                          {"Website"}
+                        </ButtonLink>
+                      ) : null}
 
-                    {/* <ButtonLink
+                      {/* <ButtonLink
                     href={`https://global-climatescope.org/assets/data/model/${issue.model}`}
                     colorScheme="gray"
                     leftIcon={<DownloadIcon size={20} />}
                   >
                     {"Model"}
                   </ButtonLink> */}
-                  </HStack>
-                </Stack>
-              </LinkBox>
-            ))}
+                    </HStack>
+                  </Stack>
+                </LinkBox>
+              ))}
           </SimpleGrid>
         </SimpleGrid>
       </Container>

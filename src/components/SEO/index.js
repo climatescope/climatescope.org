@@ -8,7 +8,7 @@ const year = publicRuntimeConfig.year
 
 const SEO = ({
   title = "",
-  description = "",
+  description = "Which market is the most attractive for energy transition investment?",
   cover = "cover-lg.jpg",
   type = "website" /* website | article */,
 }) => {

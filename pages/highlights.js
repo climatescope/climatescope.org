@@ -5,7 +5,10 @@ import HighlightsPage from "@components/pages/HighlightsPage"
 export default function HighlightsPageWrapper({ miniRankingsPaths }) {
   return (
     <>
-      <SEO title="Highlights" />
+      <SEO
+        title="Highlights"
+        description="Climatescope is BNEF's annual assessment of energy transition opportunities, covering the power, transport and buildings sectors across 136 countries. The project's 11th edition adds a new element by highlighting the top 10 markets for investment, capacity additions and policies."
+      />
       <HighlightsPage miniRankingsPaths={miniRankingsPaths} />
     </>
   )
