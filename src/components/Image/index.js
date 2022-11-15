@@ -14,6 +14,8 @@ const Image = ({
   bg = "white",
   breakpoints,
   caption,
+  captionSize = "md",
+  captionProps = {},
   ...restProps
 }) => {
   const theme = useTheme()
@@ -51,7 +53,7 @@ const Image = ({
   const sources = images.slice(1).sort((a, b) => b.bp - a.bp)
 
   return (
-    <Box {...restProps}>
+    <Box as="figure" {...restProps}>
       <AspectRatio ratio={ratio} bg={bg}>
         <Box as="picture">
           {sources.length
@@ -73,7 +75,15 @@ const Image = ({
         </Box>
       </AspectRatio>
       {caption && (
-        <Text color="gray.500" fontSize="md" mt={4}>
+        <Text
+          as="figcaption"
+          color="gray.500"
+          mt={4}
+          fontSize={captionSize}
+          lineHeight="short"
+          display="block"
+          {...captionProps}
+        >
           {caption}
         </Text>
       )}

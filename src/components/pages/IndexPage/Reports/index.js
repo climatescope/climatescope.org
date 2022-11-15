@@ -44,6 +44,7 @@ const Reports = () => {
                 ratio={1 / 1.28}
                 type="reportCover"
                 bg="transparent"
+                alt="Climatescope 2022 print report cover"
               />
             </Link>
           </Box>
