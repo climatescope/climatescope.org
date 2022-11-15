@@ -105,6 +105,9 @@ const Listing = ({ data, sector }) => {
               as={Tr}
               key={d.iso.toLowerCase()}
               style={{ display: d.isVisible ? "table-row" : "none" }}
+              transition="background 0.1s"
+              _focusWithin={{ bg: "white" }}
+              _hover={{ bg: "white" }}
             >
               <Td fontWeight={600} px={0}>
                 <Center w="100%" h="100%">
@@ -121,7 +124,13 @@ const Listing = ({ data, sector }) => {
                 color="brand.700"
                 position={["relative", null, "initial"]}
               >
-                <LinkOverlay href={`/markets/${d.iso.toLowerCase()}`}>
+                <LinkOverlay
+                  href={`/markets/${d.iso.toLowerCase()}`}
+                  _focusVisible={{
+                    outline: "0.125rem solid",
+                    outlineColor: "currentcolor",
+                  }}
+                >
                   {d.name}
                 </LinkOverlay>
               </Td>
