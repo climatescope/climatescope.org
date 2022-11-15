@@ -43,7 +43,12 @@ export default function Banner() {
         <Box gridColumn="1 / -1" position="relative">
           <Center overflow="hidden" justifyContent="flex-end">
             <Box w="100%" minW="65rem">
-              <Image src="cover.jpg" ratio={2.7 / 1} type="cover" />
+              <Image
+                src="cover.jpg"
+                alt="Climatescope 2022 cover image"
+                ratio={2.7 / 1}
+                type="cover"
+              />
             </Box>
           </Center>
           <Text

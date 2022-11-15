@@ -9,7 +9,6 @@ const textTheme = {
     subtitle: {
       fontSize: ["lg", null, "2xl"],
       lineHeight: "short",
-      // color: "gray.500",
       fontWeight: 500,
     },
     sectionSubtitle: {

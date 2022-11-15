@@ -88,11 +88,11 @@ export default function PressReleasePost({ metaData, children, ...restProps }) {
             gridRow={["3", null, null, "2"]}
           >
             <Stack
-              spacing={10}
+              spacing={[5, null, 8]}
               sx={{
                 "p:first-of-type": {
-                  color: "gray.500",
-                  fontSize: ["lg", null, "xl"],
+                  fontWeight: 500,
+                  fontSize: ["lg", null, "2xl"],
                 },
               }}
               {...restProps}
