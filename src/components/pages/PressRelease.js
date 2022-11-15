@@ -49,33 +49,38 @@ export default function PressReleasePost({ metaData, children, ...restProps }) {
             gridColumn={["1 / -1", null, null, "-3 / -1"]}
             gridRow="2"
             alignItems={["flex-start", null, null, "flex-end"]}
+            spacing={0}
           >
-            <Menu>
-              <MenuButton
-                as={Button}
-                colorScheme="gray"
-                rightIcon={<ChevronDown />}
-              >
-                {currentLanguage.label}
-              </MenuButton>
-              <MenuList borderColor="gray.50" boxShadow="lg">
-                {languages
-                  .filter((d) => d.id !== metaData.lang)
-                  .map((language) => {
-                    return (
-                      <MenuItem
-                        key={language.id}
-                        textTransform="capitalize"
-                        _hover={{ bg: "gray.50" }}
-                        _focus={{ bg: "gray.50" }}
-                        onClick={handleClick(language)}
-                      >
-                        {language.label}
-                      </MenuItem>
-                    )
-                  })}
-              </MenuList>
-            </Menu>
+            {currentLanguage && (
+              <Box>
+                <Menu>
+                  <MenuButton
+                    as={Button}
+                    colorScheme="gray"
+                    rightIcon={<ChevronDown />}
+                  >
+                    {currentLanguage.label}
+                  </MenuButton>
+                  <MenuList borderColor="gray.50" boxShadow="lg">
+                    {languages
+                      .filter((d) => d.id !== metaData.lang)
+                      .map((language) => {
+                        return (
+                          <MenuItem
+                            key={language.id}
+                            textTransform="capitalize"
+                            _hover={{ bg: "gray.50" }}
+                            _focus={{ bg: "gray.50" }}
+                            onClick={handleClick(language)}
+                          >
+                            {language.label}
+                          </MenuItem>
+                        )
+                      })}
+                  </MenuList>
+                </Menu>
+              </Box>
+            )}
           </Stack>
 
           <Box

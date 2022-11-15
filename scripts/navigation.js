@@ -1,5 +1,6 @@
 const fs = require("fs")
 const path = require("path")
+const sortBy = require("lodash/sortBy")
 
 const { join } = path
 
@@ -79,6 +80,11 @@ const tools = getPages("tools") || []
 const blog = getPages("blog") || []
 const pages = getPages("") || []
 
+const enBlogPosts = sortBy(
+  blog.filter((d) => !d.lang || d.lang === "en"),
+  (o) => -parseInt(o.date.split("-").join(""))
+)
+
 const sectors = [
   ...sectorsRaw,
   {
@@ -155,8 +161,8 @@ const navigation = [
   {
     title: "Blog",
     path: "/blog",
-    links: blog
-      .filter((d) => d.slug === "press-release-climatescope-2021")
+    links: enBlogPosts
+      .slice(0, 1)
       .map((d) => ({ title: d.title, path: `/blog/${d.slug}` })),
   },
 ]
