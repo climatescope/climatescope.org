@@ -23,15 +23,15 @@ const SEO = ({
 
   return (
     <Head>
+      <meta content="en" httpEquiv="Content-Language" />
+
       <title>{combinedTitle}</title>
       <meta name="description" content={description} />
 
-      <meta name="og:type" content={type} />
-      <meta name="og:url" content={slugUrl} />
-      <meta name="og:title" content={combinedTitle} />
-      <meta name="og:description" content={description} />
-      {cover && <meta name="og:image" content={coverImg} />}
-
+      <meta property="og:type" content={type} />
+      <meta property="og:url" content={slugUrl} />
+      <meta property="og:title" content={combinedTitle} />
+      <meta property="og:description" content={description} />
       {cover && <meta name="image" property="og:image" content={coverImg} />}
 
       <meta name="twitter:card" content="summary_large_image" />
