@@ -79,6 +79,7 @@ export default function Banner() {
           boxShadow="2.5rem 0 0 0 #FFF"
         >
           <Heading
+            as="h1"
             fontSize={["3xl", null, "4xl", "5xl"]}
             mb="-0.5rem"
             letterSpacing="-0.0625rem"
