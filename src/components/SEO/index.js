@@ -23,7 +23,7 @@ const SEO = ({
 
   return (
     <Head>
-      <meta content="en" http-equiv="Content-Language" />
+      <meta content="en" httpEquiv="Content-Language" />
 
       <title>{combinedTitle}</title>
       <meta name="description" content={description} />
