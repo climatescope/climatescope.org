@@ -29,11 +29,16 @@ export default function PressReleasePost({ metaData, children, ...restProps }) {
     subHeading: false,
   })
 
-  const currentLanguage = languages.find((s) => s.id === metaData.lang)
+  const availableLanguages = metaData.languages || []
+  const filteredLanguages = languages.filter((d) =>
+    availableLanguages.includes(d.id)
+  )
+
+  const currentLanguage = filteredLanguages.find((s) => s.id === metaData.lang)
 
   const handleClick = (language) => () => {
     const ext = language.id === "en" ? "" : `-${language.id.toLowerCase()}`
-    router.push(`/blog/press-release-climatescope-2021${ext}`)
+    router.push(`/blog/${metaData.slug}${ext}`)
   }
 
   return (
@@ -62,7 +67,7 @@ export default function PressReleasePost({ metaData, children, ...restProps }) {
                     {currentLanguage.label}
                   </MenuButton>
                   <MenuList borderColor="gray.50" boxShadow="lg">
-                    {languages
+                    {filteredLanguages
                       .filter((d) => d.id !== metaData.lang)
                       .map((language) => {
                         return (
