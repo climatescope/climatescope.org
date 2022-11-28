@@ -119,6 +119,7 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
           />
         </Center>
       </Stack> */}
+
       <Stack px={5} spacing={10} alignItems="center">
         <Text fontSize="2xl" fontWeight={600} textAlign="center">
           {"Power"}
@@ -137,6 +138,29 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
           textAlign="center"
         >
           {formattedScores.power && `${formattedScores.power}/5`}
+        </Text>
+      </Stack>
+
+      <ProfileDivider slot={slot} />
+
+      <Stack px={5} spacing={10} alignItems="center">
+        <Text fontSize="2xl" fontWeight={600} textAlign="center">
+          {"Transport"}
+        </Text>
+        <RadarChart
+          sector="transport"
+          market={market}
+          padding={40}
+          maxWidth="14rem"
+        />
+        <Text
+          fontSize="xs"
+          lineHeight="shorter"
+          fontWeight={600}
+          color="gray.500"
+          textAlign="center"
+        >
+          {formattedScores.transport && `${formattedScores.transport}/5`}
         </Text>
       </Stack>
 

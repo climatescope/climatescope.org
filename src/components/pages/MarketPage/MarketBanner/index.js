@@ -98,7 +98,7 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
                 const sector = market.sectors.find((s) => s.id === d)
                 const score = sector.data[0].value
 
-                const isComingSoon = d !== "power"
+                const isComingSoon = d === "buildings"
 
                 return isComingSoon ? (
                   <Stack key={d} spacing={[3, null, null, 6]}>

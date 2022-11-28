@@ -92,6 +92,7 @@ const AreaChart = ({
   height = 378,
   data,
   compactTooltip,
+  precision,
   ...restProps
 }) => {
   const { colors } = useTheme()
@@ -210,11 +211,14 @@ const AreaChart = ({
           .map((dd) => ({
             ...dd,
             percentage: Math.round((100 / total) * dd.value * 100) / 100,
+            // precentage:
+            //   Math.round((100 / total) * dd.value * (1 / precision)) /
+            //   (1 / precision),
           }))
           .reverse(),
       })
     },
-    [visualAreas]
+    [visualAreas, precision]
   )
 
   const handleTooltipHide = useCallback(() => {
@@ -287,7 +291,8 @@ const AreaChart = ({
                           {!compactTooltip && (
                             <Text fontSize="sm" lineHeight="shorter">
                               {`${d.value.toLocaleString("en-US", {
-                                maximumFractionDigits: 1,
+                                maximumFractionDigits:
+                                  `${precision}`.split(".")[1]?.length || 1,
                               })} ${d.unit}`}
                             </Text>
                           )}
@@ -295,7 +300,10 @@ const AreaChart = ({
                         {compactTooltip ? (
                           <Text fontSize="xs" lineHeight="shorter">
                             {`${d.value.toLocaleString("en-US", {
-                              maximumFractionDigits: 1,
+                              maximumFractionDigits:
+                                precision === 1
+                                  ? 0
+                                  : `${precision}`.split(".")[1]?.length || 1,
                             })}`}
                           </Text>
                         ) : (

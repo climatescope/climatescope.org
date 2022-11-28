@@ -54,17 +54,9 @@ const SiteFooter = ({ navigation }) => {
                       {navItem.title}
                     </Link>
                     <Stack spacing="0.5rem" alignItems="flex-start">
-                      {navItem.title === "Markets" && (
-                        <>
-                          <Link href="/markets/ca">{"Canada"}</Link>
-                          <Link href="/markets/es">{"Spain"}</Link>
-                          <Link href="/markets/ar">{"Argentina"}</Link>
-                          <Link href="/markets/th">{"Thailand"}</Link>
-                        </>
-                      )}
                       {navItem.title === "Sectors" &&
                         navItem.links.map((d) => {
-                          return d.title == "Power" ? (
+                          return d.title !== "Buildings" ? (
                             <Link
                               key={d.path}
                               href={d.path}

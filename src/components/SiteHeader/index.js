@@ -243,7 +243,7 @@ const SiteHeader = ({ navigation }) => {
                             {navItem.links.map((d) => {
                               return (
                                 <Box key={d.title}>
-                                  {d.title !== "Power" ? (
+                                  {d.title === "Buildings" ? (
                                     <HStack alignItems="center">
                                       <Text
                                         fontSize={["md", null, "xl"]}

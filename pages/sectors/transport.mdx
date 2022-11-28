@@ -1,0 +1,63 @@
+export const metaData = {
+  title: "Transport",
+  thumbnail: "transport.jpg",
+  cover: "transport-cover.jpg",
+  description: "Transport description",
+  order: 2,
+}
+
+import SectorPage from "@components/pages/SectorPage"
+export default SectorPage
+
+import { Box } from "@chakra-ui/layout"
+import SectorPageBanner from "@components/pages/SectorPage/Banner"
+import AreaChart from "@components/SectorChart/AreaChart"
+
+# Transport
+
+<SectorPageBanner
+  findings={[
+    {
+      title: "XX",
+      description: "Description",
+    },
+    {
+      title: "YY",
+      description: "Description",
+    },
+    {
+      title: "ZZ",
+      description: "Description",
+    },
+  ]}
+/>
+
+## Section 1
+
+<AreaChart
+  indicator="EV charging infrastructure"
+  unit="UNIT"
+  labelKey="country"
+  src="/transport/ev_charging_infrastructure.csv"
+  precision={1}
+/>
+
+## Section 2
+
+<AreaChart
+  indicator="EV share of new passenger vehicle sales by market"
+  labelKey="ev_share_of_annual_sales_(%)"
+  unit="%"
+  src="/transport/ev_share_of_new_passenger_vehicle_sales_by_market.csv"
+  precision={0.0001}
+/>
+
+## Section 3
+
+<AreaChart
+  indicator="EV share of new passenger vehicle sales by market"
+  labelKey="market"
+  unit="million vehicle units"
+  src="/transport/global_passenger_electric_vehicle_fleet.csv"
+  precision={0.0001}
+/>

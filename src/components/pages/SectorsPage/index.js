@@ -38,9 +38,11 @@ const SectorsPage = ({ sectors, marketCounts }) => {
                   img={sector.thumbnail}
                   marketCounts={marketCounts}
                   alt="Alt"
+                  isNew={sector.title === "Transport"}
                   href={`/sectors/${sector.slug}`}
                   order={sector.order}
-                  comingSoon={sector.title !== "Power"}
+                  comingSoon={sector.title === "Buildings"}
+                  size="lg"
                 />
               )
             })

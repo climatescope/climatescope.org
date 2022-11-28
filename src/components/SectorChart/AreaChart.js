@@ -6,9 +6,11 @@ import AreaChart from "@components/pages/MarketPage/AreaChart"
 export default function SectorAreaChart({
   src,
   indicator = "Indicator name",
-  unit = "unit",
-  precision = 1,
+  labelKey,
+  unit,
+  precision = 0.1,
   chartNotes = "",
+  compactTooltip = false,
 }) {
   const [data, setData] = useState(null)
 
@@ -18,13 +20,13 @@ export default function SectorAreaChart({
     csv(`/data/sector${src}`).then((d) => {
       const keys = Object.keys(d[0])
       const yearKeys = keys.filter((d) => !isNaN(d)).sort((a, b) => a - b)
-      const nameKey = keys.filter((d) => isNaN(d))[0]
+      const nameKey = labelKey || keys.filter((d) => isNaN(d))[0]
       const ddd = {
         indicator,
         subindicators: d.map((dd) => {
           return {
             subindicator: dd[nameKey],
-            units: unit,
+            units: unit || dd.unit,
             data: yearKeys.map((year) => ({
               color: dd[nameKey],
               year: parseInt(year),
@@ -37,15 +39,25 @@ export default function SectorAreaChart({
       }
       setData(ddd)
     })
-  }, [src])
+  }, [src, labelKey])
 
   if (!data) return null
 
   return (
     <div>
-      <AreaChart data={data} compactTooltip={false} />
+      <AreaChart
+        data={data}
+        compactTooltip={compactTooltip}
+        precision={precision}
+      />
       {chartNotes && (
-        <p style={{ fontSize: "0.875rem", color: "#778088", marginTop: "1.25rem" }}>
+        <p
+          style={{
+            fontSize: "0.875rem",
+            color: "#778088",
+            marginTop: "1.25rem",
+          }}
+        >
           {chartNotes}
         </p>
       )}

@@ -5,7 +5,7 @@ import InPageNavigation from "@components/pages/MarketPage/InPageNavigation"
 import LowCarbonStrategySection from "@components/pages/MarketPage/LowCarbonStrategy"
 import PowerSection from "@components/pages/MarketPage/Power"
 import TransportSection from "@components/pages/MarketPage/Transport"
-import BuildingsSection from "@components/pages/MarketPage/Buildings"
+// import BuildingsSection from "@components/pages/MarketPage/Buildings"
 import MarketBanner from "@components/pages/MarketPage/MarketBanner"
 import BnefBanner from "@components/pages/IndexPage/BnefBanner"
 import ComingSoonSection from "@components/pages/MarketPage/ComingSoonSection"
@@ -33,7 +33,12 @@ const MarketPage = ({ market, summary, marketCounts }) => {
             sections={[introCopy, powerCopy, transportCopy, buildingsCopy]}
           /> */}
 
-          <Stack spacing={10} ref={container}>
+          <InPageNavigation
+            market={market}
+            sections={[introCopy, powerCopy, transportCopy]}
+          />
+
+          <Stack spacing={10} ref={container} pt={[10, null, 20]}>
             {introCopy && (
               <Box data-scroll-step="true">
                 <LowCarbonStrategySection
@@ -51,7 +56,7 @@ const MarketPage = ({ market, summary, marketCounts }) => {
                 />
               </Box>
             )}
-            {/* {transportCopy && (
+            {transportCopy && (
               <Box data-scroll-step="true">
                 <TransportSection
                   {...transportCopy}
@@ -59,7 +64,7 @@ const MarketPage = ({ market, summary, marketCounts }) => {
                   market={market}
                 />
               </Box>
-            )} */}
+            )}
             {/* {buildingsCopy && (
               <Box data-scroll-step="true">
                 <BuildingsSection
@@ -74,7 +79,6 @@ const MarketPage = ({ market, summary, marketCounts }) => {
           <BnefBanner />
         </Container>
       </Box>
-      
     </>
   )
 }

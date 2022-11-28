@@ -6,11 +6,11 @@ import {
   Container,
   Stack,
   HStack,
-  // Tabs,
-  // TabList,
-  // Tab,
+  Tabs,
+  TabList,
+  Tab,
   Button,
-  // Center,
+  Center,
   Select,
   Divider,
   // useBreakpointValue,
@@ -21,10 +21,10 @@ import BalanceSlider from "@components/pages/ResultsPage/BalanceSlider"
 import Ranking from "@components/pages/ResultsPage/Ranking"
 import {
   ResetIcon,
-  // GreenIdeaIcon,
-  // BuildingsIcon,
-  // TransportIcon,
-  // GlobalRankIcon,
+  GreenIdeaIcon,
+  BuildingsIcon,
+  TransportIcon,
+  GlobalRankIcon,
   // DownloadIcon,
 } from "@components/Icon"
 import RegionSelector from "@components/RegionSelector"
@@ -90,7 +90,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
             </Text>
           </Stack>
 
-          {/* <HStack spacing={1}>
+          <HStack spacing={1}>
             <Box flex="1">
               <Select
                 mb={1}
@@ -119,7 +119,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
               >
                 <TabList>
                   {sectorNames
-                    .filter((d) => d === "power")
+                    .filter((d) => ["power", "transport"].includes(d))
                     .map((s) => {
                       return (
                         <Tab key={s}>
@@ -151,17 +151,16 @@ const ResultsPage = ({ clientData, dataPreview }) => {
               </Tabs>
             </Box>
 
-            <ViewSwitch
+            {/* <ViewSwitch
               value={view}
               onChange={(v) => setView(v)}
               h="4.5rem"
               borderBottom="0.125rem solid"
               borderColor="gray.100"
-            />
-
-          </HStack> */}
+            /> */}
+          </HStack>
         </Stack>
-        <Divider borderBottomWidth="0.125rem" mt={10} />
+        {/* <Divider borderBottomWidth="0.125rem" mt={10} /> */}
       </Container>
 
       <Box
