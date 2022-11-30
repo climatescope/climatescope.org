@@ -370,7 +370,7 @@ function getUnit(val, unit) {
     "M USD": `${v} M USD`,
     "USD/MWh": `${v} USD/MWh`,
   }
-  return unitMap[unit] || v || ""
+  return unitMap[unit] || unit ? `${v} ${unit}` : v || ""
 }
 
 const LineChartWrapper = ({

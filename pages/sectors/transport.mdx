@@ -12,6 +12,7 @@ export default SectorPage
 import { Box } from "@chakra-ui/layout"
 import SectorPageBanner from "@components/pages/SectorPage/Banner"
 import AreaChart from "@components/SectorChart/AreaChart"
+import LineChart from "@components/SectorChart/LineChart"
 
 # Transport
 
@@ -32,11 +33,27 @@ import AreaChart from "@components/SectorChart/AreaChart"
   ]}
 />
 
+## Battery pack prices
+
+First chart...
+
+<LineChart
+  indicator="Battery pack prices"
+  labelKey="label"
+  unit="$/kWh"
+  src="/transport/battery_pack_prices.csv"
+  precision={0.0001}
+  preprocessData={(d) => {
+    const data = d.reduce((a, b) => ({ ...a, [b.year]: b.pack_price }), {})
+    data.label = "Pack price"
+    return [data]
+  }}
+/>
+
 ## Section 1
 
 <AreaChart
   indicator="EV charging infrastructure"
-  unit="UNIT"
   labelKey="country"
   src="/transport/ev_charging_infrastructure.csv"
   precision={1}
@@ -60,4 +77,26 @@ import AreaChart from "@components/SectorChart/AreaChart"
   unit="million vehicle units"
   src="/transport/global_passenger_electric_vehicle_fleet.csv"
   precision={0.0001}
+/>
+
+## Electric vehicle sales
+
+Two charts...
+
+<LineChart
+  indicator="Electric vehicle sales"
+  labelKey="indicator"
+  unit="million vehicle sales"
+  src="/transport/global_passenger_electric_vehicle_sales.csv"
+  precision={0.01}
+  preprocessData={(d) => [d[0]]}
+/>
+
+<LineChart
+  indicator="Electric vehicle sales"
+  labelKey="indicator"
+  unit="%"
+  src="/transport/global_passenger_electric_vehicle_sales.csv"
+  precision={0.0001}
+  preprocessData={(d) => [d[1]]}
 />
