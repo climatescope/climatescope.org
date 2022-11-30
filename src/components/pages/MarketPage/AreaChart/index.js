@@ -305,6 +305,7 @@ const AreaChart = ({
                                   ? 0
                                   : `${precision}`.split(".")[1]?.length || 1,
                             })}`}
+                            {unit.length < 2 ? ` ${unit}` : ""}
                           </Text>
                         ) : (
                           <PercentageDisplay
