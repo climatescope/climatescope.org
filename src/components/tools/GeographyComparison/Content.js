@@ -296,13 +296,13 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
 
       <ProfileDivider slot={slot} />
 
-      {/* <Box>
+      <Box>
         <CardTable data={market.policies} sector="Transport" compact />
       </Box>
 
       <ProfileDivider slot={slot} />
 
-      <Box>
+      {/* <Box>
         <CardTable data={market.policies} sector="Buildings" compact />
       </Box> */}
     </>
