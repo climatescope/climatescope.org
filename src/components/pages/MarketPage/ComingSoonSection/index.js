@@ -27,7 +27,7 @@ const ComingSoonSection = () => {
 
           <Text fontSize="lg">
             {
-              "Sign up to get alerted when we launch the Transport and Buildings sectors."
+              "Sign up to get alerted when we launch the Buildings sector."
             }
           </Text>
           <Newsletter />
