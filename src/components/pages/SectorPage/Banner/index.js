@@ -53,7 +53,7 @@ const SectorPageBanner = ({ findings }) => {
           </Center>
           <Stack spacing={2} color="brand.900">
             <Heading variant="keyMessageTitle">
-              {"Get full report to read more about Power"}
+              {"Download full report"}
             </Heading>
             {/* <Text variant="statisticText">{"Read more about power"}</Text> */}
           </Stack>
