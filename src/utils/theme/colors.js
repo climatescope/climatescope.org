@@ -236,6 +236,24 @@ const colors = {
 
     "Unknown": "#778088",
 
+    "Japan": "#FE9E71",
+    "Rest of World": "#778088",
+    "Rest of world": "#778088",
+    "Other regions": "#778088",
+    "US": "#02BDE3",
+    "Mainland China": "#FD4A3A",
+    "India": "#CCA6F2",
+    "Southeast Asia": "#C4382D",
+    "Australia": "#EB63A9",
+    "Canada": "#01687C",
+    "South Korea": "#8B2720",
+    "Italy": "#FAE197",
+    "Global": "#06A0B1",
+    "France": "#DE9901",
+    "UK": "#016121",
+    "Rest of Europe": "#729cff",
+    "Germany": "#F8BA01",
+
   },
 }
 
