@@ -29,7 +29,8 @@ const GlobePreview = ({
         const missingItems = globeInsights.slice(0, 3 - insights.length)
         return [...insights, ...missingItems]
       })
-    const group = chunkedInsights[Math.floor(Math.random() * 3)]
+    const group =
+      chunkedInsights[Math.floor(Math.random() * chunkedInsights.length)]
     return group.map(({ key, lng, lat, description, ...restProps }, i) => {
       return {
         key: parseInt(i + 1),
