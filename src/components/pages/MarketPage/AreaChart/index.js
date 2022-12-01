@@ -285,6 +285,7 @@ const AreaChart = ({
                             fontSize="sm"
                             lineHeight="shorter"
                             fontWeight={600}
+                            textTransform="capitalize"
                           >
                             {d.name}
                           </Text>
