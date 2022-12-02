@@ -14,7 +14,8 @@ const Highlights = ({ miniRankingsPaths }) => {
     if (highlights.length) return
     Promise.all(
       miniRankingsPaths.slice(0, 2).map((d) => {
-        return fetch(`/data/mini-rankings/${d}`).then((res) => res.text())
+        const dd = encodeURIComponent(d)
+        return fetch(`/data/mini-rankings/${dd}`).then((res) => res.text())
       })
     ).then((data) => {
       setHighlights(

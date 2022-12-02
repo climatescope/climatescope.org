@@ -10,7 +10,8 @@ function MiniChart({ src }) {
 
   useEffect(() => {
     if (typeof window === "undefined") return
-    csv(`/data/mini-rankings/${src}`).then((d) => {
+    const src2 = encodeURIComponent(src)
+    csv(`/data/mini-rankings/${src2}`).then((d) => {
       const name = src.split(".csv")[0].split("_").join(" ")
       setData({
         name: name[0].toUpperCase() + name.slice(1),

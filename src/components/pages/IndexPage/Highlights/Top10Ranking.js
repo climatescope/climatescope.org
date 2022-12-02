@@ -1,6 +1,11 @@
 import { max as d3Max } from "d3-array"
 import { Heading, Box, Stack, Text, Center } from "@chakra-ui/react"
 
+function getTitle(name = "") {
+  const n = name.split(" ").slice(1).join(" ").trim()
+  return (n.slice(0, 1).toUpperCase() || "") + (n.slice(1) || "")
+}
+
 export default function Top10Ranking({
   data = {},
   limit,
@@ -15,10 +20,7 @@ export default function Top10Ranking({
     data?.data[0]?.max_value ||
     d3Max(data?.data || [], (o) => parseFloat(o.value))
 
-  const chartName = (data?.name || "").split("  ")[1]
-  const chartTitle = chartName
-    ? chartName[0].toUpperCase() + chartName.slice(1)
-    : ""
+  const chartTitle = getTitle(data?.name || "")
 
   return (
     <Stack spacing={5}>
