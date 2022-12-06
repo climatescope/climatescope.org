@@ -53,8 +53,8 @@ const content = [
     img: "buildings.jpg",
     alt: "https://unsplash.com/photos/MUfokL109CQ",
     href: "/sectors/buildings",
-    isNew: false,
-    comingSoon: true,
+    isNew: true,
+    comingSoon: false,
   },
 ]
 

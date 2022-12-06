@@ -1,12 +1,4 @@
-import {
-  Container,
-  Heading,
-  Text,
-  Stack,
-  Divider,
-  Box,
-  Tag,
-} from "@chakra-ui/react"
+import { Container, Heading, Text, Stack, Divider, Box } from "@chakra-ui/react"
 
 import { Link } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
@@ -56,7 +48,7 @@ const SiteFooter = ({ navigation }) => {
                     <Stack spacing="0.5rem" alignItems="flex-start">
                       {navItem.title === "Sectors" &&
                         navItem.links.map((d) => {
-                          return d.title !== "Buildings" ? (
+                          return (
                             <Link
                               key={d.path}
                               href={d.path}
@@ -64,21 +56,6 @@ const SiteFooter = ({ navigation }) => {
                             >
                               {d.title}
                             </Link>
-                          ) : (
-                            <Text key={d.title} variant="footerLink">
-                              {d.title}
-                              <Tag
-                                verticalAlign="middle"
-                                ml={2}
-                                size="sm"
-                                textTransform="uppercase"
-                                fontWeight={600}
-                                bg="teal.700"
-                                color="teal.100"
-                              >
-                                {"coming soon"}
-                              </Tag>
-                            </Text>
                           )
                         })}
                       {navItem.title !== "Markets" &&

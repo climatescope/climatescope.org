@@ -1,0 +1,38 @@
+export const metaData = {
+  title: "Buildings",
+  thumbnail: "buildings.jpg",
+  cover: "buildings-cover.jpg",
+  description: "Buildings description",
+  order: 3,
+}
+
+import SectorPage from "@components/pages/SectorPage"
+export default SectorPage
+
+import { Box } from "@chakra-ui/layout"
+import SectorPageBanner from "@components/pages/SectorPage/Banner"
+import AreaChart from "@components/SectorChart/AreaChart"
+import LineChart from "@components/SectorChart/LineChart"
+
+# Buildings
+
+<SectorPageBanner
+  findings={[
+    {
+      title: "XX",
+      description: "Description",
+    },
+    {
+      title: "YY",
+      description: "Description",
+    },
+    {
+      title: "ZZ",
+      description: "Description",
+    },
+  ]}
+/>
+
+## Charts
+
+Text goes here...

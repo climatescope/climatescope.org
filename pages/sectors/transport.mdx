@@ -33,9 +33,7 @@ import LineChart from "@components/SectorChart/LineChart"
   ]}
 />
 
-## Battery pack prices
-
-First chart...
+## Charts
 
 <LineChart
   indicator="Battery pack prices"
@@ -50,54 +48,41 @@ First chart...
   }}
 />
 
-## Section 1
-
 <AreaChart
-  indicator="EV charging infrastructure"
+  indicator="Cumulative global public charging connectors"
   labelKey="country"
-  src="/transport/ev_charging_infrastructure.csv"
-  precision={1}
+  src="/transport/cumulative_global_public_charging_connectors.csv"
+  precision={0.01}
 />
 
-## Section 2
-
 <AreaChart
-  indicator="EV share of new passenger vehicle sales by market"
+  indicator="EV share of new passenger vehicle sales by region"
   labelKey="ev_share_of_annual_sales_(%)"
-  unit="%"
-  src="/transport/ev_share_of_new_passenger_vehicle_sales_by_market.csv"
-  precision={0.0001}
-  compactTooltip
-/>
-
-## Section 3
-
-<AreaChart
-  indicator="EV share of new passenger vehicle sales by market"
-  labelKey="market"
   unit="million vehicle units"
-  src="/transport/global_passenger_electric_vehicle_fleet.csv"
+  src="/transport/ev_share_of_new_passenger_vehicle_sales_by_region.csv"
   precision={0.0001}
 />
-
-## Electric vehicle sales
-
-Two charts...
 
 <LineChart
-  indicator="Electric vehicle sales"
+  indicator="Global passenger EV sales"
   labelKey="indicator"
   unit="million vehicle sales"
-  src="/transport/global_passenger_electric_vehicle_sales.csv"
+  src="/transport/global_passenger_ev_sales.csv"
   precision={0.01}
-  preprocessData={(d) => [d[0]]}
 />
 
 <LineChart
-  indicator="Electric vehicle sales"
+  indicator="Global passenger EV share of sales"
   labelKey="indicator"
   unit="%"
-  src="/transport/global_passenger_electric_vehicle_sales.csv"
+  src="/transport/global_passenger_ev_share_of_sales.csv"
   precision={0.0001}
-  preprocessData={(d) => [d[1]]}
+/>
+
+<LineChart
+  indicator="Global passenger EV fleet"
+  labelKey="market"
+  unit="million vehicle units"
+  src="/transport/global_passenger_ev_fleet.csv"
+  precision={0.01}
 />
