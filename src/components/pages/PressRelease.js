@@ -37,6 +37,7 @@ export default function PressReleasePost({ metaData, children, ...restProps }) {
   const currentLanguage = filteredLanguages.find((s) => s.id === metaData.lang)
 
   const handleClick = (language) => () => {
+    console.log(language, metaData.slug)
     const ext = language.id === "en" ? "" : `-${language.id.toLowerCase()}`
     router.push(`/blog/${metaData.slug}${ext}`)
   }
