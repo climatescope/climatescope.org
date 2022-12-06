@@ -1,0 +1,34 @@
+export const metaData = {
+  title: "Buildings",
+  thumbnail: "buildings.jpg",
+  cover: "buildings-cover.jpg",
+  description:
+    "Renewables investment shifted sharply back to developing nations in 2020",
+  order: 1,
+}
+
+import SectorPage from "@components/pages/SectorPage"
+export default SectorPage
+
+import { Box } from "@chakra-ui/layout"
+import SectorPageBanner from "@components/pages/SectorPage/Banner"
+import AreaChart from "@components/SectorChart/AreaChart"
+
+# Buildings
+
+<SectorPageBanner
+  findings={[
+    {
+      title: "10.5%",
+      description: "Increase in investment in heat pumps from 2020 to 2021",
+    },
+    {
+      title: "8%",
+      description: "Average increase in residential electricity price globally",
+    },
+    {
+      title: "1/4",
+      description: "Fraction of countries surveyed where natural gas makes up more than 50% of their energy mix for heating",
+    },
+  ]}
+/>
