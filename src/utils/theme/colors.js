@@ -225,6 +225,10 @@ const colors = {
     "amer": "#02BDE3",
     "asia": "#E24234",
     "eu": "#10D5B5",
+    "MENA": "#078D76",
+    "AMER": "#02BDE3",
+    "APAC": "#E24234",
+    "EMEA": "#10D5B5",
 
     "Asia-Pacific": "#E24234",
     "Europe": "#10D5B5",
@@ -241,6 +245,7 @@ const colors = {
     "Rest of world": "#778088",
     "Other regions": "#778088",
     "US": "#02BDE3",
+    "United States": "#02BDE3",
     "Mainland China": "#FD4A3A",
     "India": "#CCA6F2",
     "Southeast Asia": "#C4382D",
