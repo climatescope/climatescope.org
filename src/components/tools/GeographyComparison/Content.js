@@ -164,6 +164,29 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
         </Text>
       </Stack>
 
+      <ProfileDivider slot={slot} />
+
+      <Stack px={5} spacing={10} alignItems="center">
+        <Text fontSize="2xl" fontWeight={600} textAlign="center">
+          {"Buildings"}
+        </Text>
+        <RadarChart
+          sector="buildings"
+          market={market}
+          padding={40}
+          maxWidth="14rem"
+        />
+        <Text
+          fontSize="xs"
+          lineHeight="shorter"
+          fontWeight={600}
+          color="gray.500"
+          textAlign="center"
+        >
+          {formattedScores.buildings && `${formattedScores.buildings}/5`}
+        </Text>
+      </Stack>
+
       {/* <SimpleGrid columns={[4, 3]}>
         <Box gridColumn={["span 2", "span 1"]}>
           <Text fontSize="sm" fontWeight={600} textAlign="center">
@@ -302,9 +325,9 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
 
       <ProfileDivider slot={slot} />
 
-      {/* <Box>
+      <Box>
         <CardTable data={market.policies} sector="Buildings" compact />
-      </Box> */}
+      </Box>
     </>
   )
 }
