@@ -13,6 +13,7 @@ import { Box } from "@chakra-ui/layout"
 import SectorPageBanner from "@components/pages/SectorPage/Banner"
 import AreaChart from "@components/SectorChart/AreaChart"
 import LineChart from "@components/SectorChart/LineChart"
+import BarChart from "@components/SectorChart/BarChart"
 
 # Transport
 
@@ -63,7 +64,7 @@ import LineChart from "@components/SectorChart/LineChart"
   precision={0.0001}
 />
 
-<LineChart
+<BarChart
   indicator="Global passenger EV sales"
   labelKey="indicator"
   unit="million vehicle sales"

@@ -74,6 +74,9 @@ const Band = ({
         height={height - 40}
         onMouseEnter={handleEnter}
         onMouseLeave={handleLeave}
+        onFocus={handleEnter}
+        onBlur={handleLeave}
+        tabIndex={0}
       />
       <rect
         x={x2 - strokeWidth / 2}

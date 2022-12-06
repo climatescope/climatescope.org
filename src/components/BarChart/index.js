@@ -117,7 +117,7 @@ const Band = ({
   )
 }
 
-const LineChart = ({
+const BarChart = ({
   title,
   chart,
   width,
@@ -249,13 +249,6 @@ const LineChart = ({
 
           {yAxis.map((tick, i) => (
             <g key={tick.value} transform="translate(0, 0)">
-              {/* <line
-                x1={0}
-                x2={-10}
-                y1={tick.offset}
-                y2={tick.offset}
-                stroke="#000"
-              /> */}
               <line
                 x1={0}
                 x2={width}
@@ -279,7 +272,6 @@ const LineChart = ({
           ))}
 
           {visible.map(({ data, subindicator, isVisible }) => {
-            const points = data.flat()
             return isVisible ? (
               <g key={subindicator}>
                 {data.map((l, j) => (
@@ -291,19 +283,6 @@ const LineChart = ({
                     subindicator={subindicator}
                   />
                 ))}
-                {points.map((d) => {
-                  return (
-                    <circle
-                      key={d.year}
-                      cx={scaleX(d.year)}
-                      cy={scaleY(d.value)}
-                      r={5}
-                      fill={colors.indicators[subindicator] || colors.teal[800]}
-                      stroke="#FFF"
-                      strokeWidth={2}
-                    />
-                  )
-                })}
               </g>
             ) : null
           })}
@@ -328,39 +307,6 @@ const LineChart = ({
           })}
         </svg>
       </Box>
-
-      {/* <Wrap spacing={2}>
-        {visible.map(({ subindicator, isVisible }) => {
-          return (
-            <WrapItem key={subindicator}>
-              <Box
-                style={{
-                  background: isVisible ? colors.teal[600] : colors.gray[50],
-                  color: isVisible ? colors.white : colors.gray[500],
-                  cursor: "pointer",
-                  userSelect: "none",
-                }}
-                px={2}
-                borderRadius="md"
-                fontSize="sm"
-                fontWeight={600}
-                color="gray.500"
-                onClick={() => {
-                  setVisible(
-                    visible.reduce((acc, cur) => {
-                      return cur.subindicator === subindicator
-                        ? [...acc, { ...cur, isVisible: !cur.isVisible }]
-                        : [...acc, cur]
-                    }, [])
-                  )
-                }}
-              >
-                {subindicator}
-              </Box>
-            </WrapItem>
-          )
-        })}
-      </Wrap> */}
     </Stack>
   )
 }
@@ -374,7 +320,7 @@ function getUnit(val, unit) {
   return unitMap[unit] || unit ? `${v} ${unit}` : v || ""
 }
 
-const LineChartWrapper = ({
+const BarChartWrapper = ({
   width = 672,
   height = 378,
   data,
@@ -460,7 +406,7 @@ const LineChartWrapper = ({
   }
 
   return (
-    <LineChart
+    <BarChart
       title={name}
       chart={chart}
       width={width}
@@ -474,7 +420,7 @@ const LineChartWrapper = ({
   )
 }
 
-const LineChartContainer = (props) => {
+const BarChartContainer = (props) => {
   const boxRef = useRef()
   const [dimensions, setDimensions] = useState({ width: 672, height: 378 })
 
@@ -492,10 +438,10 @@ const LineChartContainer = (props) => {
 
   return (
     <Box ref={boxRef}>
-      <LineChartWrapper {...dimensions} {...props} />
+      <BarChartWrapper {...dimensions} {...props} />
     </Box>
   )
 }
 
 // export default memo(LineChartContainer)
-export default LineChartContainer
+export default BarChartContainer
