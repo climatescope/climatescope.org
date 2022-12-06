@@ -25,12 +25,12 @@ import LineChart from "@components/SectorChart/LineChart"
     },
     {
       title: "8%",
-      description: "Average increase in residential electricity price globally",
+      description: "Average increase in residential electricity price globally from 2020-2021",
     },
     {
       title: "1/4",
       description:
-        "Fraction of countries surveyed where natural gas makes up more than 50% of their energy mix for heating",
+        "Countries surveyed where natural gas makes up more than 50% of their energy mix for heating",
     },
   ]}
 />
@@ -38,22 +38,25 @@ import LineChart from "@components/SectorChart/LineChart"
 ## Charts
 
 <AreaChart
-  indicator="Average residential electricity price per region 2010-2021"
+  indicator="Electrified heating investment by region"
+  labelKey="country"
+  src="/buildings/electrified_heating_investment_in_specific_countries_2014_2021.csv"
+  precision={0.01}
+  unit="$ Bn"
+/>
+
+<LineChart
+  indicator="Average residential electricity price per region"
   labelKey="region"
   src="/buildings/average_residential_electricity_price_per_region_2010_2021.csv"
   precision={0.01}
+  unit="$/MWh"
+  compactTooltip
 />
 
-<AreaChart
-  indicator="Average residential natural gas price per region 2010-2021"
+<LineChart
+  indicator="Average residential natural gas price per region"
   labelKey="region"
   src="/buildings/average_residential_natural_gas_price_per_region_2010_2021.csv"
-  precision={0.01}
-/>
-
-<AreaChart
-  indicator="Electrified heating investment in specific countries 2014-2021"
-  labelKey="country"
-  src="/buildings/electrified_heating_investment_in_specific_countries_2014_2021.csv"
   precision={0.01}
 />

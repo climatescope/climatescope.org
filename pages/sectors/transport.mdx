@@ -56,12 +56,13 @@ import BarChart from "@components/SectorChart/BarChart"
   precision={0.01}
 />
 
-<AreaChart
+<LineChart
   indicator="EV share of new passenger vehicle sales by region"
   labelKey="ev_share_of_annual_sales_(%)"
-  unit="million vehicle units"
+  unit="% of total passenger vehicle sales"
   src="/transport/ev_share_of_new_passenger_vehicle_sales_by_region.csv"
   precision={0.0001}
+  compactTooltip
 />
 
 <BarChart
@@ -80,7 +81,7 @@ import BarChart from "@components/SectorChart/BarChart"
   precision={0.0001}
 />
 
-<LineChart
+<AreaChart
   indicator="Global passenger EV fleet"
   labelKey="market"
   unit="million vehicle units"
