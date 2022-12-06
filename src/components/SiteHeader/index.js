@@ -176,7 +176,7 @@ const SiteHeader = ({ navigation }) => {
                         "Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future."
                       }
                     </Text>
-                    <ButtonLink
+                    {/* <ButtonLink
                       href="/downloads/climatescope-2022-report-en.pdf"
                       download="climatescope-2022-report.pdf"
                       target="_blank"
@@ -188,7 +188,54 @@ const SiteHeader = ({ navigation }) => {
                       display={["none", "flex"]}
                     >
                       {"Download report"}
-                    </ButtonLink>
+                    </ButtonLink> */}
+                    <Stack spacing={5}>
+              <ButtonLink
+                href="/downloads/climatescope-2022-report-en.pdf"
+                download="climatescope-2022-report.pdf"
+                target="_blank"
+                colorScheme="white"
+                size="lg"
+                leftIcon={
+                  <Box ml={2}>
+                    <DownloadIcon size={20} strokeWidth={2} />
+                  </Box>
+                }
+                spacing={6}
+              >
+                {"Power Transition Factbook"}
+              </ButtonLink>
+              <ButtonLink
+                href="/downloads/climatescope-2022-report-en.pdf"
+                download="climatescope-2022-report.pdf"
+                target="_blank"
+                colorScheme="white"
+                size="lg"
+                leftIcon={
+                  <Box ml={2}>
+                    <DownloadIcon size={20} strokeWidth={2} />
+                  </Box>
+                }
+                spacing={6}
+              >
+                {"Transport Transition Factbook"}
+              </ButtonLink>
+              <ButtonLink
+                href="/downloads/climatescope-2022-report-en.pdf"
+                download="climatescope-2022-report.pdf"
+                target="_blank"
+                colorScheme="white"
+                size="lg"
+                leftIcon={
+                  <Box ml={2}>
+                    <DownloadIcon size={20} strokeWidth={2} />
+                  </Box>
+                }
+                spacing={6}
+              >
+                {"Buildings Transition Factbook"}
+              </ButtonLink>
+            </Stack>
                   </Stack>
                   {aboutItems.map((navItem) => {
                     return (
