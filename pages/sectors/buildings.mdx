@@ -12,6 +12,8 @@ export default SectorPage
 
 import { Box } from "@chakra-ui/layout"
 import SectorPageBanner from "@components/pages/SectorPage/Banner"
+import AreaChart from "@components/SectorChart/AreaChart"
+import LineChart from "@components/SectorChart/LineChart"
 
 # Buildings
 
@@ -34,3 +36,24 @@ import SectorPageBanner from "@components/pages/SectorPage/Banner"
 />
 
 ## Charts
+
+<AreaChart
+  indicator="Average residential electricity price per region 2010-2021"
+  labelKey="region"
+  src="/buildings/average_residential_electricity_price_per_region_2010_2021.csv"
+  precision={0.01}
+/>
+
+<AreaChart
+  indicator="Average residential natural gas price per region 2010-2021"
+  labelKey="region"
+  src="/buildings/average_residential_natural_gas_price_per_region_2010_2021.csv"
+  precision={0.01}
+/>
+
+<AreaChart
+  indicator="Electrified heating investment in specific countries 2014-2021"
+  labelKey="country"
+  src="/buildings/electrified_heating_investment_in_specific_countries_2014_2021.csv"
+  precision={0.01}
+/>
