@@ -1,13 +1,13 @@
 import { Heading, Stack, Box, Text } from "@chakra-ui/react"
 
 import { Link, ButtonLink } from "@components/Link"
-import { ViewIcon, ChevronRight } from "@components/Icon"
+import { ViewIcon, ChevronRight, DownloadIcon } from "@components/Icon"
 import SimpleGrid from "@components/SimpleGrid"
 import Image from "@components/Image"
 
 const report = {
   id: 1,
-  title: "Power Transition Factbook",
+  title: "Energy Transition Factbooks",
   href: "/downloads/climatescope-2022-report-en.pdf",
   year: 2022,
   imgSrc: "climatescope-2022-report-en-cover.jpg",
@@ -60,10 +60,60 @@ const Reports = () => {
 
             <Text variant="lead" color="brand.100">
               {
-                "This marks the 11th anniversary of Climatescope, BNEF’s annual assessment of energy transition opportunities. The project has been expanded to include activity not just in clean power but in the decarbonization of the transportation and buildings sectors. The Power Transition Factbook is the first of three reports that composes BNEF's Energy Transition Factbook. The transport and buildings sectors reports are coming soon."
+                "This marks the 11th anniversary of Climatescope, BNEF’s annual assessment of energy transition opportunities. The project has been expanded to include activity not just in clean power but in the decarbonization of the transportation and buildings sectors."
               }
             </Text>
-            <Stack
+            <Stack spacing={5} w="21rem">
+              <ButtonLink
+                href={report.href}
+                alignSelf="flex-start"
+                target="_blank"
+                // variant="outline"
+                colorScheme="white"
+                size="lg"
+                leftIcon={
+                  <Box ml={2}>
+                    <DownloadIcon size={20} strokeWidth={2} />
+                  </Box>
+                }
+                spacing={6}
+              >
+                {"Power Transition Factbook"}
+              </ButtonLink>
+              <ButtonLink
+                href={report.href}
+                alignSelf="flex-start"
+                target="_blank"
+                // variant="outline"
+                colorScheme="white"
+                size="lg"
+                leftIcon={
+                  <Box ml={2}>
+                    <DownloadIcon size={20} strokeWidth={2} />
+                  </Box>
+                }
+                spacing={6}
+              >
+                {"Transport Transition Factbook"}
+              </ButtonLink>
+              <ButtonLink
+                href={report.href}
+                alignSelf="flex-start"
+                target="_blank"
+                // variant="outline"
+                colorScheme="white"
+                size="lg"
+                leftIcon={
+                  <Box ml={2}>
+                    <DownloadIcon size={20} strokeWidth={2} />
+                  </Box>
+                }
+                spacing={6}
+              >
+                {"Buildings Transition Factbook"}
+              </ButtonLink>
+            </Stack>
+            {/* <Stack
               spacing={5}
               color="white"
               direction={["column", null, "row"]}
@@ -98,7 +148,7 @@ const Reports = () => {
               >
                 {"See all reports"}
               </ButtonLink>
-            </Stack>
+            </Stack> */}
           </Stack>
         </SimpleGrid>
       </Box>
