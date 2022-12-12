@@ -119,7 +119,6 @@ const ResultsPage = ({ clientData, dataPreview }) => {
               >
                 <TabList>
                   {sectorNames
-                    .filter((d) => ["power", "transport"].includes(d))
                     .map((s) => {
                       return (
                         <Tab key={s}>

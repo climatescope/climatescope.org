@@ -1,4 +1,4 @@
-﻿position,iso,geography,value,value_max,unit
+position,iso,country,value,max_value,unit
 1,DE,Germany,2.93,5,score
 2,NL,Netherlands,2.63,5,score
 3,DK,Denmark,2.35,5,score
