@@ -10,7 +10,7 @@ const report = {
   title: "Energy Transition Factbooks",
   href: "/downloads/climatescope-2022-report-en.pdf",
   year: 2022,
-  imgSrc: "climatescope-2022-report-en-cover.jpg",
+  imgSrc: "climatescope-2022-power-report-en-cover.jpg",
 }
 
 const reports = [
@@ -19,21 +19,21 @@ const reports = [
     title: "Power Transition Factbook",
     href: "/downloads/climatescope-2022-report-en.pdf",
     year: 2022,
-    imgSrc: "climatescope-2022-report-en-cover.jpg",
+    imgSrc: "climatescope-2022-power-report-en-cover.jpg",
   },
   {
     id: 2,
     title: "Emerging Market's Electrified Transport Factbook",
     href: "/downloads/climatescope-2022-report-en.pdf",
     year: 2022,
-    imgSrc: "climatescope-2022-report-en-cover.jpg",
+    imgSrc: "climatescope-2022-transport-report-en-cover.jpg",
   },
   {
     id: 3,
     title: "Electrified Heating Factbook",
     href: "/downloads/climatescope-2022-report-en.pdf",
     year: 2022,
-    imgSrc: "climatescope-2022-report-en-cover.jpg",
+    imgSrc: "climatescope-2022-buildings-report-en-cover.jpg",
   },
 ]
 
