@@ -66,10 +66,11 @@ const Reports = () => {
           {reports.map((r) => {
             return (
               <Stack
+                key={r.id}
                 spacing={5}
                 gridColumn={["span 6", null, "span 3", " span 2"]}
               >
-                <Box key={r.id} boxShadow="lg">
+                <Box boxShadow="lg">
                   <Link href={r.href} target="_blank">
                     <Image
                       src={r.imgSrc}

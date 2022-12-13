@@ -1,11 +1,11 @@
 position,iso,country,value,unit
-1,AM,Armenia,1017.39,USD
-2,JP,Japan,1109.57,USD
-3,MD,Moldova,1201.52,USD
-4,CN,Mainland China,2000,USD
-5,CL,Chile,2338,USD
-6,AU,Australia,2373.14,USD
-7,RO,Romania,2850,USD
-8,KR,South Korea,3924.92,USD
-9,PL,Poland,3975,USD
-10,NZ,New Zealand,4337.5,USD
+1,AM,Armenia,1017.39,$ bn
+2,JP,Japan,1109.57,$ bn
+3,MD,Moldova,1201.52,$ bn
+4,CN,Mainland China,2000,$ bn
+5,CL,Chile,2338,$ bn
+6,AU,Australia,2373.14,$ bn
+7,RO,Romania,2850,$ bn
+8,KR,South Korea,3924.92,$ bn
+9,PL,Poland,3975,$ bn
+10,NZ,New Zealand,4337.5,$ bn

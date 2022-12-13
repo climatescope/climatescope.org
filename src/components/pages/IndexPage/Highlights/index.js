@@ -47,8 +47,6 @@ const Highlights = ({ miniRankingsPaths }) => {
     })
   }, miniRankingsPaths)
 
-  console.log("Highlights: ", highlights)
-
   return (
     <SimpleGrid columns={[1, null, 2]}>
       <HStack
