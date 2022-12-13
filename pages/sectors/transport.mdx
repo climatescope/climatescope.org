@@ -29,13 +29,17 @@ import BarChart from "@components/SectorChart/BarChart"
     },
     {
       title: "87%",
-      description: "Growth of global investment in clean transportation from 2020 to 2021",
+      description:
+        "Growth of global investment in clean transportation from 2020 to 2021",
     },
   ]}
   sectorName={metaData.title}
 />
 
-## Charts
+## Battery pack prices
+
+Since 2010, battery prices have fallen 89% and are nearing levels where the upfront costs of EVs can start to be competitive with internal combustion engine vehicles (ICE) without subsidies. Battery prices fell again in 2021, dropping 6% year-over-year to $132/kWh, due to growing order sizes from leading manufacturers, higher battery electric vehicle sales and the introduction of new cell and pack designs.
+Source: BloombergNEF Electric Vehicle Outlook
 
 <LineChart
   indicator="Battery pack prices"
@@ -50,12 +54,22 @@ import BarChart from "@components/SectorChart/BarChart"
   }}
 />
 
+## EV charging infrastructure
+
+There were over 1.8 million installed public charging connectors globally at the end of 2021, an increase of 35% from 2020. Mainland China remained the global leader on public charging, with 1.15 million cumulative installed connectors by the end of 2021.
+Source: BloombergNEF Electric Vehicle Outlook
+
 <AreaChart
   indicator="Cumulative global public charging connectors"
   labelKey="country"
   src="/transport/cumulative_global_public_charging_connectors.csv"
   precision={0.01}
 />
+
+## EV share of vehicle sales by market
+
+In over half of the global car market, EV adoption is still below 10% of sales. This includes countries like the US and Japan, which are still looking to catch up. Roughly 30% of the global car market is in countries where EV adoption is currently very low.
+Source: BloombergNEF Zero-Emission Vehicles Factbook
 
 <LineChart
   indicator="EV share of new passenger vehicle sales by region"
@@ -66,6 +80,11 @@ import BarChart from "@components/SectorChart/BarChart"
   compactTooltip
 />
 
+## EV global fleet
+
+The global fleet of passenger EVs keeps growing – 59% per year on average since 2015 – and by June 2022 there were over 21 million EVs on the road globally. Nearly half of that fleet (47%) is currently located in Mainland China, followed by Europe at 32%.
+Source: BloombergNEF Zero-Emission Vehicles Factbook
+
 <BarChart
   indicator="Global passenger EV sales"
   labelKey="indicator"
@@ -74,13 +93,10 @@ import BarChart from "@components/SectorChart/BarChart"
   precision={0.01}
 />
 
-<LineChart
-  indicator="Global passenger EV share of sales"
-  labelKey="indicator"
-  unit="%"
-  src="/transport/global_passenger_ev_share_of_sales.csv"
-  precision={0.0001}
-/>
+## EV global passenger sales
+
+Global passenger EV sales reached 6.6 million in 2021, more than doubling from 2020. From 2020 to 2021 alone, annual sales spiked 105%.
+Source: BloombergNEF Climatescope 2022
 
 <AreaChart
   indicator="Global passenger EV fleet"
@@ -88,4 +104,17 @@ import BarChart from "@components/SectorChart/BarChart"
   unit="million vehicle units"
   src="/transport/global_passenger_ev_fleet.csv"
   precision={0.01}
+/>
+
+## EV global passenger share of sales
+
+EV sales also accounted for 8.7% of global car sales in 2021.
+Source: BloombergNEF Climatescope 2022
+
+<LineChart
+  indicator="Global passenger EV share of sales"
+  labelKey="indicator"
+  unit="%"
+  src="/transport/global_passenger_ev_share_of_sales.csv"
+  precision={0.0001}
 />

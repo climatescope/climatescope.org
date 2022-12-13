@@ -8,8 +8,11 @@ import {
   Button,
   useDisclosure,
   Modal,
+  ModalOverlay,
   ModalContent,
+  ModalHeader,
   ModalBody,
+  ModalCloseButton,
   VisuallyHidden,
   Divider,
   useTheme,
@@ -27,6 +30,33 @@ const includedLinks = [
   "/tools",
   "/sectors",
   "/about",
+]
+
+const reports = [
+  {
+    id: 1,
+    title: "Power Transition Factbook",
+    href: "/downloads/climatescope-2022-report-en.pdf",
+    year: 2022,
+    imgSrc: "climatescope-2022-report-en-cover.jpg",
+    actionText: "Power Factbook",
+  },
+  {
+    id: 2,
+    title: "Emerging Market's Electrified Transport Factbook",
+    href: "/downloads/climatescope-2022-report-en.pdf",
+    year: 2022,
+    imgSrc: "climatescope-2022-report-en-cover.jpg",
+    actionText: "Transport Factbook",
+  },
+  {
+    id: 3,
+    title: "Electrified Heating Factbook",
+    href: "/downloads/climatescope-2022-report-en.pdf",
+    year: 2022,
+    imgSrc: "climatescope-2022-report-en-cover.jpg",
+    actionText: "Buildings Factbook",
+  },
 ]
 
 const SiteHeader = ({ navigation }) => {
@@ -77,7 +107,7 @@ const SiteHeader = ({ navigation }) => {
           </HStack>
 
           <HStack spacing={3}>
-            <ButtonLink
+            {/* <ButtonLink
               href="/downloads/climatescope-2022-report-en.pdf"
               download="climatescope-2022-report.pdf"
               target="_blank"
@@ -88,7 +118,8 @@ const SiteHeader = ({ navigation }) => {
               display={["none", "flex"]}
             >
               {"Download report"}
-            </ButtonLink>
+            </ButtonLink> */}
+            <ReportDownloadDialog />
             <Button
               onClick={onOpen}
               ref={initialRef}
@@ -190,52 +221,52 @@ const SiteHeader = ({ navigation }) => {
                       {"Download report"}
                     </ButtonLink> */}
                     <Stack spacing={5}>
-              <ButtonLink
-                href="/downloads/climatescope-2022-report-en.pdf"
-                download="climatescope-2022-report.pdf"
-                target="_blank"
-                colorScheme="white"
-                size="lg"
-                leftIcon={
-                  <Box ml={2}>
-                    <DownloadIcon size={20} strokeWidth={2} />
-                  </Box>
-                }
-                spacing={6}
-              >
-                {"Power Transition Factbook"}
-              </ButtonLink>
-              <ButtonLink
-                href="/downloads/climatescope-2022-report-en.pdf"
-                download="climatescope-2022-report.pdf"
-                target="_blank"
-                colorScheme="white"
-                size="lg"
-                leftIcon={
-                  <Box ml={2}>
-                    <DownloadIcon size={20} strokeWidth={2} />
-                  </Box>
-                }
-                spacing={6}
-              >
-                {"Transport Transition Factbook"}
-              </ButtonLink>
-              <ButtonLink
-                href="/downloads/climatescope-2022-report-en.pdf"
-                download="climatescope-2022-report.pdf"
-                target="_blank"
-                colorScheme="white"
-                size="lg"
-                leftIcon={
-                  <Box ml={2}>
-                    <DownloadIcon size={20} strokeWidth={2} />
-                  </Box>
-                }
-                spacing={6}
-              >
-                {"Buildings Transition Factbook"}
-              </ButtonLink>
-            </Stack>
+                      <ButtonLink
+                        href="/downloads/climatescope-2022-report-en.pdf"
+                        download="climatescope-2022-report.pdf"
+                        target="_blank"
+                        colorScheme="white"
+                        size="lg"
+                        leftIcon={
+                          <Box ml={2}>
+                            <DownloadIcon size={20} strokeWidth={2} />
+                          </Box>
+                        }
+                        spacing={6}
+                      >
+                        {"Power Factbook"}
+                      </ButtonLink>
+                      <ButtonLink
+                        href="/downloads/climatescope-2022-report-en.pdf"
+                        download="climatescope-2022-report.pdf"
+                        target="_blank"
+                        colorScheme="white"
+                        size="lg"
+                        leftIcon={
+                          <Box ml={2}>
+                            <DownloadIcon size={20} strokeWidth={2} />
+                          </Box>
+                        }
+                        spacing={6}
+                      >
+                        {"Transport Factbook"}
+                      </ButtonLink>
+                      <ButtonLink
+                        href="/downloads/climatescope-2022-report-en.pdf"
+                        download="climatescope-2022-report.pdf"
+                        target="_blank"
+                        colorScheme="white"
+                        size="lg"
+                        leftIcon={
+                          <Box ml={2}>
+                            <DownloadIcon size={20} strokeWidth={2} />
+                          </Box>
+                        }
+                        spacing={6}
+                      >
+                        {"Buildings Factbook"}
+                      </ButtonLink>
+                    </Stack>
                   </Stack>
                   {aboutItems.map((navItem) => {
                     return (
@@ -345,6 +376,73 @@ const SiteHeader = ({ navigation }) => {
         </ModalContent>
       </Modal>
     </Box>
+  )
+}
+
+function ReportDownloadDialog() {
+  const { route } = useRouter()
+  const initialRef = useRef()
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  return (
+    <>
+      <Button
+        href="/downloads/climatescope-2022-report-en.pdf"
+        download="climatescope-2022-report.pdf"
+        target="_blank"
+        size="lg"
+        flex="none"
+        rightIcon={<DownloadIcon strokeWidth={1.75} />}
+        colorScheme={route === "/blog" ? "white" : "brand"}
+        display={["none", "flex"]}
+        onClick={onOpen}
+      >
+        {"Download report"}
+      </Button>
+
+      <Modal
+        onClose={onClose}
+        isOpen={isOpen}
+        motionPreset="none"
+        initialFocusRef={initialRef}
+        finalRef={initialRef}
+      >
+        <ModalOverlay />
+        <ModalContent mx={4}>
+          <ModalCloseButton borderRadius="full" />
+          <ModalHeader>{"Downloads"}</ModalHeader>
+          <ModalBody px={0} pt={0} pb={1}>
+            <Stack spacing={0}>
+              {reports.map((r) => {
+                return (
+                  <Stack
+                    key={r.id}
+                    spacing={3}
+                    alignItems="flex-start"
+                    borderTop="0.0625rem solid"
+                    borderColor="gray.100"
+                    px={6}
+                    py={5}
+                  >
+                    <Text fontWeight={600} lineHeight="shorter">
+                      {r.title}
+                    </Text>
+                    <ButtonLink
+                      href="/downloads/climatescope-2022-report-en.pdf"
+                      download="climatescope-2022-report.pdf"
+                      target="_blank"
+                      leftIcon={<DownloadIcon size={20} strokeWidth={2} />}
+                      spacing={6}
+                    >
+                      {r.actionText}
+                    </ButtonLink>
+                  </Stack>
+                )
+              })}
+            </Stack>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </>
   )
 }
 
