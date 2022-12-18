@@ -1,11 +1,14 @@
 import { Stack, HStack, Text, Heading, Box, Center } from "@chakra-ui/react"
 import { DownloadIcon } from "@components/Icon"
 
-import { ButtonLink, LinkOverlay } from "@components/Link"
+import { ButtonLink } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
 
 const SectorPageBanner = ({ findings, sectorName }) => {
   if (!findings) return null
+
+  const isComingSoon = sectorName === "Buildings"
+
   return (
     <SimpleGrid
       columns={4}
@@ -27,7 +30,10 @@ const SectorPageBanner = ({ findings, sectorName }) => {
           </Stack>
         )
       })}
-      <Box gridColumn={["span 4", null, "span 2", null, "span 1"]} alignContent="stretch">
+      <Box
+        gridColumn={["span 4", null, "span 2", null, "span 1"]}
+        alignContent="stretch"
+      >
         <ButtonLink
           href="/downloads/climatescope-2022-report.pdf"
           download="Climatescope-2022-report.pdf"
@@ -39,24 +45,27 @@ const SectorPageBanner = ({ findings, sectorName }) => {
           borderRadius="lg"
           textTransform="none"
           variant="subtle"
+          isDisabled={isComingSoon}
+          pointerEvents={isComingSoon ? "none" : "all"}
+          tabIndex={isComingSoon ? -1 : 0}
         >
           <HStack>
-          <Center
-            flex="none"
-            w="3rem"
-            h="3rem"
-            bg="brand.300"
-            color="brand.900"
-            borderRadius="full"
-          >
-            <DownloadIcon />
-          </Center>
-          <Stack spacing={2} color="brand.900">
-            <Heading variant="keyMessageTitle">
-              {`Download ${sectorName} Transition Factbook`}
-            </Heading>
-            {/* <Text variant="statisticText">{"Read more about power"}</Text> */}
-          </Stack>
+            <Center
+              flex="none"
+              w="3rem"
+              h="3rem"
+              bg="brand.300"
+              color="brand.900"
+              borderRadius="full"
+            >
+              <DownloadIcon />
+            </Center>
+            <Stack spacing={2} color="brand.900">
+              <Heading variant="keyMessageTitle">
+                {`Download ${sectorName} Transition Factbook`}
+              </Heading>
+              {/* <Text variant="statisticText">{"Read more about power"}</Text> */}
+            </Stack>
           </HStack>
         </ButtonLink>
       </Box>

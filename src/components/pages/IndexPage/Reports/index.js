@@ -20,6 +20,7 @@ const reports = [
     href: "/downloads/climatescope-2022-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-power-report-en-cover.jpg",
+    isComingSoon: false,
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const reports = [
     href: "/downloads/climatescope-2022-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-transport-report-en-cover.jpg",
+    isComingSoon: false,
   },
   {
     id: 3,
@@ -34,6 +36,7 @@ const reports = [
     href: "/downloads/climatescope-2022-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-buildings-report-en-cover.jpg",
+    isComingSoon: true,
   },
 ]
 
@@ -64,14 +67,22 @@ const Reports = () => {
             </Text>
           </Stack>
           {reports.map((r) => {
+            const { isComingSoon } = r
             return (
               <Stack
                 key={r.id}
                 spacing={5}
                 gridColumn={["span 6", null, "span 3", " span 2"]}
+                style={{ opacity: isComingSoon ? 0.5 : 1 }}
               >
                 <Box boxShadow="lg">
-                  <Link href={r.href} target="_blank">
+                  <Link
+                    href={r.href}
+                    target="_blank"
+                    pointerEvents={isComingSoon ? "none" : "all"}
+                    tabIndex={isComingSoon ? -1 : 0}
+                    display="block"
+                  >
                     <Image
                       src={r.imgSrc}
                       ratio={1 / 1.28}
@@ -90,6 +101,9 @@ const Reports = () => {
                   colorScheme="white"
                   size="lg"
                   alignSelf="flex-start"
+                  isDisabled={isComingSoon}
+                  pointerEvents={isComingSoon ? "none" : "all"}
+                  tabIndex={isComingSoon ? -1 : 0}
                   leftIcon={
                     <Box ml={2}>
                       <DownloadIcon size={20} strokeWidth={2} />

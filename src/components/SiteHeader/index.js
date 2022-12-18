@@ -40,6 +40,7 @@ const reports = [
     year: 2022,
     imgSrc: "climatescope-2022-report-en-cover.jpg",
     actionText: "Power Factbook",
+    isComingSoon: false,
   },
   {
     id: 2,
@@ -48,6 +49,7 @@ const reports = [
     year: 2022,
     imgSrc: "climatescope-2022-report-en-cover.jpg",
     actionText: "Transport Factbook",
+    isComingSoon: false,
   },
   {
     id: 3,
@@ -56,6 +58,7 @@ const reports = [
     year: 2022,
     imgSrc: "climatescope-2022-report-en-cover.jpg",
     actionText: "Buildings Factbook",
+    isComingSoon: true,
   },
 ]
 
@@ -257,6 +260,9 @@ const SiteHeader = ({ navigation }) => {
                         target="_blank"
                         colorScheme="white"
                         size="lg"
+                        isDisabled
+                        pointerEvents="none"
+                        tabIndex={-1}
                         leftIcon={
                           <Box ml={2}>
                             <DownloadIcon size={20} strokeWidth={2} />
@@ -413,6 +419,7 @@ function ReportDownloadDialog() {
           <ModalBody px={0} pt={0} pb={1}>
             <Stack spacing={0}>
               {reports.map((r) => {
+                const { isComingSoon } = r
                 return (
                   <Stack
                     key={r.id}
@@ -422,6 +429,7 @@ function ReportDownloadDialog() {
                     borderColor="gray.100"
                     px={6}
                     py={5}
+                    style={{ opacity: isComingSoon ? 0.5 : 1 }}
                   >
                     <Text fontWeight={600} lineHeight="shorter">
                       {r.title}
@@ -432,6 +440,9 @@ function ReportDownloadDialog() {
                       target="_blank"
                       leftIcon={<DownloadIcon size={20} strokeWidth={2} />}
                       spacing={6}
+                      isDisabled={isComingSoon}
+                      pointerEvents={isComingSoon ? "none" : "all"}
+                      tabIndex={isComingSoon ? -1 : 0}
                     >
                       {r.actionText}
                     </ButtonLink>
