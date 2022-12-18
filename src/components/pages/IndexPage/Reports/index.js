@@ -17,15 +17,15 @@ const reports = [
   {
     id: 1,
     title: "Power Transition Factbook",
-    href: "/downloads/climatescope-2022-report-en.pdf",
+    href: "/downloads/climatescope-2022-power-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-power-report-en-cover.jpg",
     isComingSoon: false,
   },
   {
     id: 2,
-    title: "Emerging Market's Electrified Transport Factbook",
-    href: "/downloads/climatescope-2022-report-en.pdf",
+    title: "Emerging Markets Electrified Transport Factbook",
+    href: "/downloads/climatescope-2022-transport-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-transport-report-en-cover.jpg",
     isComingSoon: false,
@@ -33,7 +33,7 @@ const reports = [
   {
     id: 3,
     title: "Electrified Heating Factbook",
-    href: "/downloads/climatescope-2022-report-en.pdf",
+    href: "/downloads/climatescope-2022-buildings-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-buildings-report-en-cover.jpg",
     isComingSoon: true,
@@ -85,7 +85,7 @@ const Reports = () => {
                   >
                     <Image
                       src={r.imgSrc}
-                      ratio={1 / 1.28}
+                      ratio={1 / 1.42}
                       type="reportCover"
                       bg="transparent"
                       alt="Climatescope 2022 print report cover"
@@ -97,6 +97,7 @@ const Reports = () => {
                 </Heading>
                 <ButtonLink
                   href={r.href}
+                  download={r.title}
                   target="_blank"
                   colorScheme="white"
                   size="lg"

@@ -36,7 +36,7 @@ const reports = [
   {
     id: 1,
     title: "Power Transition Factbook",
-    href: "/downloads/climatescope-2022-report-en.pdf",
+    href: "/downloads/climatescope-2022-power-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-report-en-cover.jpg",
     actionText: "Power Factbook",
@@ -44,8 +44,8 @@ const reports = [
   },
   {
     id: 2,
-    title: "Emerging Market's Electrified Transport Factbook",
-    href: "/downloads/climatescope-2022-report-en.pdf",
+    title: "Emerging Markets Electrified Transport Factbook",
+    href: "/downloads/climatescope-2022-transport-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-report-en-cover.jpg",
     actionText: "Transport Factbook",
@@ -54,7 +54,7 @@ const reports = [
   {
     id: 3,
     title: "Electrified Heating Factbook",
-    href: "/downloads/climatescope-2022-report-en.pdf",
+    href: "/downloads/climatescope-2022-buildings-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-report-en-cover.jpg",
     actionText: "Buildings Factbook",
@@ -225,8 +225,8 @@ const SiteHeader = ({ navigation }) => {
                     </ButtonLink> */}
                     <Stack spacing={5}>
                       <ButtonLink
-                        href="/downloads/climatescope-2022-report-en.pdf"
-                        download="climatescope-2022-report.pdf"
+                        href={reports[0].href}
+                        download={reports[0].title}
                         target="_blank"
                         colorScheme="white"
                         size="lg"
@@ -237,11 +237,11 @@ const SiteHeader = ({ navigation }) => {
                         }
                         spacing={6}
                       >
-                        {"Power Factbook"}
+                        {reports[0].actionText}
                       </ButtonLink>
                       <ButtonLink
-                        href="/downloads/climatescope-2022-report-en.pdf"
-                        download="climatescope-2022-report.pdf"
+                        href={reports[1].href}
+                        download={reports[1].title}
                         target="_blank"
                         colorScheme="white"
                         size="lg"
@@ -252,11 +252,11 @@ const SiteHeader = ({ navigation }) => {
                         }
                         spacing={6}
                       >
-                        {"Transport Factbook"}
+                        {reports[1].actionText}
                       </ButtonLink>
                       <ButtonLink
-                        href="/downloads/climatescope-2022-report-en.pdf"
-                        download="climatescope-2022-report.pdf"
+                        href={reports[2].href}
+                        download={reports[2].title}
                         target="_blank"
                         colorScheme="white"
                         size="lg"
@@ -270,7 +270,7 @@ const SiteHeader = ({ navigation }) => {
                         }
                         spacing={6}
                       >
-                        {"Buildings Factbook"}
+                        {reports[2].actionText}
                       </ButtonLink>
                     </Stack>
                   </Stack>
@@ -435,8 +435,8 @@ function ReportDownloadDialog() {
                       {r.title}
                     </Text>
                     <ButtonLink
-                      href="/downloads/climatescope-2022-report-en.pdf"
-                      download="climatescope-2022-report.pdf"
+                      href={r.href}
+                      download={r.title}
                       target="_blank"
                       leftIcon={<DownloadIcon size={20} strokeWidth={2} />}
                       spacing={6}

@@ -6,7 +6,6 @@ const Line = ({ data, scaleX, scaleY, subindicator }) => {
   return (
     <g>
       {data.map((d) => {
-        console.log(d)
         const x = scaleX(d.year)
         const y1 = scaleY(d.value)
         const y2 = scaleY(0)

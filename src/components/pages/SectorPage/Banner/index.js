@@ -4,7 +4,7 @@ import { DownloadIcon } from "@components/Icon"
 import { ButtonLink } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
 
-const SectorPageBanner = ({ findings, sectorName }) => {
+const SectorPageBanner = ({ findings, sectorName, reportName }) => {
   if (!findings) return null
 
   const isComingSoon = sectorName === "Buildings"
@@ -35,8 +35,8 @@ const SectorPageBanner = ({ findings, sectorName }) => {
         alignContent="stretch"
       >
         <ButtonLink
-          href="/downloads/climatescope-2022-report.pdf"
-          download="Climatescope-2022-report.pdf"
+          href={`/downloads/climatescope-2022-${sectorName.toLowerCase()}-report.pdf`}
+          download={reportName}
           target="_blank"
           h="100%"
           justifyContent="left"
@@ -62,7 +62,7 @@ const SectorPageBanner = ({ findings, sectorName }) => {
             </Center>
             <Stack spacing={2} color="brand.900">
               <Heading variant="keyMessageTitle">
-                {`Download ${sectorName} Transition Factbook`}
+                {`Download ${sectorName} Factbook`}
               </Heading>
               {/* <Text variant="statisticText">{"Read more about power"}</Text> */}
             </Stack>
