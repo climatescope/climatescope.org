@@ -85,7 +85,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
             </Heading>
             <Text variant="subtitle">
               {
-                "Climatescope's ranking of the most attractive markets for renewable energy projects investment. Transport and buildings' rankings coming soon."
+                "Climatescope's ranking of the most attractive markets for renewable energy projects investment."
               }
             </Text>
           </Stack>
