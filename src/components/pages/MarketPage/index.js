@@ -8,7 +8,6 @@ import TransportSection from "@components/pages/MarketPage/Transport"
 import BuildingsSection from "@components/pages/MarketPage/Buildings"
 import MarketBanner from "@components/pages/MarketPage/MarketBanner"
 import BnefBanner from "@components/pages/IndexPage/BnefBanner"
-import ComingSoonSection from "@components/pages/MarketPage/ComingSoonSection"
 import { useScroller } from "@utils/useScrollama"
 
 const MarketPage = ({ market, summary, marketCounts }) => {
@@ -69,7 +68,6 @@ const MarketPage = ({ market, summary, marketCounts }) => {
                 />
               </Box>
             )}
-            <ComingSoonSection />
           </Stack>
           <BnefBanner />
         </Container>
