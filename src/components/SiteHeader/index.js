@@ -58,7 +58,7 @@ const reports = [
     year: 2022,
     imgSrc: "climatescope-2022-report-en-cover.jpg",
     actionText: "Buildings Factbook",
-    isComingSoon: true,
+    isComingSoon: false,
   },
 ]
 
@@ -260,9 +260,6 @@ const SiteHeader = ({ navigation }) => {
                         target="_blank"
                         colorScheme="white"
                         size="lg"
-                        isDisabled
-                        pointerEvents="none"
-                        tabIndex={-1}
                         leftIcon={
                           <Box ml={2}>
                             <DownloadIcon size={20} strokeWidth={2} />

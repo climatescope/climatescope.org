@@ -36,7 +36,7 @@ const reports = [
     href: "/downloads/climatescope-2022-buildings-report-en.pdf",
     year: 2022,
     imgSrc: "climatescope-2022-buildings-report-en-cover.jpg",
-    isComingSoon: true,
+    isComingSoon: false,
   },
 ]
 
@@ -67,25 +67,17 @@ const Reports = () => {
             </Text>
           </Stack>
           {reports.map((r) => {
-            const { isComingSoon } = r
             return (
               <Stack
                 key={r.id}
                 spacing={5}
                 gridColumn={["span 6", null, "span 3", " span 2"]}
-                style={{ opacity: isComingSoon ? 0.5 : 1 }}
               >
                 <Box boxShadow="lg">
-                  <Link
-                    href={r.href}
-                    target="_blank"
-                    pointerEvents={isComingSoon ? "none" : "all"}
-                    tabIndex={isComingSoon ? -1 : 0}
-                    display="block"
-                  >
+                  <Link href={r.href} target="_blank" display="block">
                     <Image
                       src={r.imgSrc}
-                      ratio={1 / 1.42}
+                      ratio={r.id === 1 ? 1/1.28 : 1 / 1.42}
                       type="reportCover"
                       bg="transparent"
                       alt="Climatescope 2022 print report cover"
@@ -102,9 +94,6 @@ const Reports = () => {
                   colorScheme="white"
                   size="lg"
                   alignSelf="flex-start"
-                  isDisabled={isComingSoon}
-                  pointerEvents={isComingSoon ? "none" : "all"}
-                  tabIndex={isComingSoon ? -1 : 0}
                   leftIcon={
                     <Box ml={2}>
                       <DownloadIcon size={20} strokeWidth={2} />

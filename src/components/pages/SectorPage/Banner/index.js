@@ -6,9 +6,6 @@ import SimpleGrid from "@components/SimpleGrid"
 
 const SectorPageBanner = ({ findings, sectorName, reportName }) => {
   if (!findings) return null
-
-  const isComingSoon = sectorName === "Buildings"
-
   return (
     <SimpleGrid
       columns={4}
@@ -45,9 +42,6 @@ const SectorPageBanner = ({ findings, sectorName, reportName }) => {
           borderRadius="lg"
           textTransform="none"
           variant="subtle"
-          isDisabled={isComingSoon}
-          pointerEvents={isComingSoon ? "none" : "all"}
-          tabIndex={isComingSoon ? -1 : 0}
         >
           <HStack>
             <Center
