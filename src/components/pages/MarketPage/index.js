@@ -8,7 +8,6 @@ import TransportSection from "@components/pages/MarketPage/Transport"
 import BuildingsSection from "@components/pages/MarketPage/Buildings"
 import MarketBanner from "@components/pages/MarketPage/MarketBanner"
 import BnefBanner from "@components/pages/IndexPage/BnefBanner"
-import ComingSoonSection from "@components/pages/MarketPage/ComingSoonSection"
 import { useScroller } from "@utils/useScrollama"
 
 const MarketPage = ({ market, summary, marketCounts }) => {
@@ -28,12 +27,12 @@ const MarketPage = ({ market, summary, marketCounts }) => {
             marketCounts={marketCounts}
           />
 
-          {/* <InPageNavigation
+          <InPageNavigation
             market={market}
             sections={[introCopy, powerCopy, transportCopy, buildingsCopy]}
-          /> */}
+          />
 
-          <Stack spacing={10} ref={container}>
+          <Stack spacing={10} ref={container} pt={[10, null, 20]}>
             {introCopy && (
               <Box data-scroll-step="true">
                 <LowCarbonStrategySection
@@ -51,7 +50,7 @@ const MarketPage = ({ market, summary, marketCounts }) => {
                 />
               </Box>
             )}
-            {/* {transportCopy && (
+            {transportCopy && (
               <Box data-scroll-step="true">
                 <TransportSection
                   {...transportCopy}
@@ -59,8 +58,8 @@ const MarketPage = ({ market, summary, marketCounts }) => {
                   market={market}
                 />
               </Box>
-            )} */}
-            {/* {buildingsCopy && (
+            )}
+            {buildingsCopy && (
               <Box data-scroll-step="true">
                 <BuildingsSection
                   {...buildingsCopy}
@@ -68,13 +67,11 @@ const MarketPage = ({ market, summary, marketCounts }) => {
                   market={market}
                 />
               </Box>
-            )} */}
-            <ComingSoonSection />
+            )}
           </Stack>
           <BnefBanner />
         </Container>
       </Box>
-      
     </>
   )
 }

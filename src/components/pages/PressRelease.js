@@ -21,6 +21,7 @@ const languages = [
   { id: "fr", label: "Français" },
   { id: "pt", label: "Portuguese" },
   { id: "ru", label: "русский" },
+  { id: "cn", label: "中文" },
 ]
 
 export default function PressReleasePost({ metaData, children, ...restProps }) {
@@ -37,6 +38,7 @@ export default function PressReleasePost({ metaData, children, ...restProps }) {
   const currentLanguage = filteredLanguages.find((s) => s.id === metaData.lang)
 
   const handleClick = (language) => () => {
+    console.log(language, metaData.slug)
     const ext = language.id === "en" ? "" : `-${language.id.toLowerCase()}`
     router.push(`/blog/${metaData.slug}${ext}`)
   }

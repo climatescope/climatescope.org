@@ -1,17 +1,44 @@
 import { Heading, Stack, Box, Text } from "@chakra-ui/react"
 
 import { Link, ButtonLink } from "@components/Link"
-import { ViewIcon, ChevronRight } from "@components/Icon"
+import { DownloadIcon } from "@components/Icon"
 import SimpleGrid from "@components/SimpleGrid"
 import Image from "@components/Image"
 
 const report = {
   id: 1,
-  title: "Power Transition Factbook",
+  title: "Energy Transition Factbooks",
   href: "/downloads/climatescope-2022-report-en.pdf",
   year: 2022,
-  imgSrc: "climatescope-2022-report-en-cover.jpg",
+  imgSrc: "climatescope-2022-power-report-en-cover.jpg",
 }
+
+const reports = [
+  {
+    id: 1,
+    title: "Power Transition Factbook",
+    href: "/downloads/climatescope-2022-power-report-en.pdf",
+    year: 2022,
+    imgSrc: "climatescope-2022-power-report-en-cover.jpg",
+    isComingSoon: false,
+  },
+  {
+    id: 2,
+    title: "Emerging Markets Electrified Transport Factbook",
+    href: "/downloads/climatescope-2022-transport-report-en.pdf",
+    year: 2022,
+    imgSrc: "climatescope-2022-transport-report-en-cover.jpg",
+    isComingSoon: false,
+  },
+  {
+    id: 3,
+    title: "Electrified Heating Factbook",
+    href: "/downloads/climatescope-2022-buildings-report-en.pdf",
+    year: 2022,
+    imgSrc: "climatescope-2022-buildings-report-en-cover.jpg",
+    isComingSoon: false,
+  },
+]
 
 const Reports = () => {
   return (
@@ -28,78 +55,57 @@ const Reports = () => {
         />
       </Box>
       <Box gridColumn="1 / -1" gridRow="1" position="relative" color="white">
-        <SimpleGrid
-          columns={8}
-          gridRowGap={10}
-          py={24}
-          alignItems={["left", null, "center"]}
-        >
-          <Box
-            boxShadow="lg"
-            gridColumn={["span 8", "1 / span 5", null, " 2 / span 3"]}
-          >
-            <Link href={report.href} target="_blank">
-              <Image
-                src={report.imgSrc}
-                ratio={1 / 1.28}
-                type="reportCover"
-                bg="transparent"
-                alt="Climatescope 2022 print report cover"
-              />
-            </Link>
-          </Box>
-          <Stack gridColumn={["span 8", null, null, "span 4"]} spacing={10}>
-            <Stack spacing={2}>
-              <Text variant="kicker" color="brand.300">
-                {"Climatescope 2022"}
-              </Text>
-              <Heading variant="sectionTitle" color="white">
-                {report.title}
-              </Heading>
-            </Stack>
-
+        <SimpleGrid columns={6} gridRowGap={[10, null, 20]} py={24}>
+          <Stack spacing={6} gridColumn={["span 6", null, null, "span 5"]}>
+            <Heading as="h2" variant="sectionTitle" color="white">
+              {report.title}
+            </Heading>
             <Text variant="lead" color="brand.100">
               {
-                "This marks the 11th anniversary of Climatescope, BNEF’s annual assessment of energy transition opportunities. The project has been expanded to include activity not just in clean power but in the decarbonization of the transportation and buildings sectors. The Power Transition Factbook is the first of three reports that composes BNEF's Energy Transition Factbook. The transport and buildings sectors reports are coming soon."
+                "This marks the 11th anniversary of Climatescope, BNEF’s annual assessment of energy transition opportunities. The project has been expanded to include activity not just in clean power but in the decarbonization of the transportation and buildings sectors."
               }
             </Text>
-            <Stack
-              spacing={5}
-              color="white"
-              direction={["column", null, "row"]}
-            >
-              <ButtonLink
-                href={report.href}
-                alignSelf="flex-start"
-                target="_blank"
-                variant="outline"
-                colorScheme="white"
-                size="lg"
-                rightIcon={
-                  <Box ml={2}>
-                    <ViewIcon size={20} strokeWidth={2} />
-                  </Box>
-                }
-                spacing={6}
-              >
-                {"Read the report"}
-              </ButtonLink>
-              <ButtonLink
-                href="/reports"
-                alignSelf="flex-start"
-                variant="ghost"
-                colorScheme="white"
-                size="lg"
-                rightIcon={
-                  <Box ml={2}>
-                    <ChevronRight size={20} strokeWidth={2} />
-                  </Box>
-                }
-              >
-                {"See all reports"}
-              </ButtonLink>
-            </Stack>
           </Stack>
+          {reports.map((r) => {
+            return (
+              <Stack
+                key={r.id}
+                spacing={5}
+                gridColumn={["span 6", null, "span 3", " span 2"]}
+              >
+                <Box boxShadow="lg">
+                  <Link href={r.href} target="_blank" display="block">
+                    <Image
+                      src={r.imgSrc}
+                      ratio={r.id === 1 ? 1/1.28 : 1 / 1.42}
+                      type="reportCover"
+                      bg="transparent"
+                      alt="Climatescope 2022 print report cover"
+                    />
+                  </Link>
+                </Box>
+                <Heading as="h3" fontSize="2xl">
+                  {r.title}
+                </Heading>
+                <ButtonLink
+                  href={r.href}
+                  download={r.title}
+                  target="_blank"
+                  colorScheme="white"
+                  size="lg"
+                  alignSelf="flex-start"
+                  leftIcon={
+                    <Box ml={2}>
+                      <DownloadIcon size={20} strokeWidth={2} />
+                    </Box>
+                  }
+                  spacing={6}
+                >
+                  {"Download factbook"}
+                </ButtonLink>
+              </Stack>
+            )
+          })}
         </SimpleGrid>
       </Box>
     </SimpleGrid>

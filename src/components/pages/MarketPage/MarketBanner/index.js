@@ -90,47 +90,11 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
             </Wrap>
           </Stack>
           <Box gridColumn="1 / -1" bg="white" boxShadow="2.5rem 0 0 #FFF">
-            {/* <Heading fontSize="3xl" mb={3}>
-              {"Overview"}
-            </Heading> */}
             <SimpleGrid columns={[2, 3]} py={[5, null, null, 10]}>
               {["power", "transport", "buildings"].map((d) => {
                 const sector = market.sectors.find((s) => s.id === d)
                 const score = sector.data[0].value
-
-                const isComingSoon = d !== "power"
-
-                return isComingSoon ? (
-                  <Stack key={d} spacing={[3, null, null, 6]}>
-                    <Stack spacing={2}>
-                      <Heading
-                        textTransform="capitalize"
-                        fontSize={["2xl", "3xl"]}
-                      >
-                        &nbsp;
-                      </Heading>
-                      <Text
-                        fontWeight={600}
-                        lineHeight="short"
-                        color="gray.500"
-                      >
-                        {`${sector.name} score`}
-                      </Text>
-                    </Stack>
-                    <Divider />
-                    <Box>
-                      <Tag
-                        size="sm"
-                        bg="brand.500"
-                        color="brand.100"
-                        textTransform="uppercase"
-                        fontWeight={600}
-                      >
-                        {"Coming soon"}
-                      </Tag>
-                    </Box>
-                  </Stack>
-                ) : (
+                return (
                   <Stack key={d} spacing={[3, null, null, 6]}>
                     <Stack spacing={2}>
                       <Heading

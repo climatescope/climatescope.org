@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import { csvParse } from "d3-dsv"
 import { Heading, HStack } from "@chakra-ui/react"
+import groupBy from "lodash/groupBy"
+import sortBy from "lodash/sortBy"
 
 import { Link } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
@@ -12,20 +14,35 @@ const Highlights = ({ miniRankingsPaths }) => {
 
   useEffect(() => {
     if (highlights.length) return
+
+    const pathsBySector = groupBy(
+      sortBy(miniRankingsPaths, (o) => +o.split("__")[1]),
+      (o) => o.split("__")[0]
+    )
+
+    const selectedPaths = [
+      pathsBySector.transport[0],
+      pathsBySector.buildings[0],
+    ]
+
     Promise.all(
-      miniRankingsPaths.slice(0, 2).map((d) => {
-        return fetch(`/data/mini-rankings/${d}`).then((res) => res.text())
+      selectedPaths.map(async (d) => {
+        const dd = encodeURIComponent(d)
+        return await fetch(`/data/mini-rankings/${dd}`).then((res) =>
+          res.text()
+        )
       })
     ).then((data) => {
       setHighlights(
-        data.map((d, i) => ({
-          name: miniRankingsPaths[i]
-            .split(".csv")
-            .join("")
-            .split("_")
-            .join(" "),
-          data: csvParse(d),
-        }))
+        data.map((d, i) => {
+          const [sector, index, name] = selectedPaths[i].split("__")
+          return {
+            name: name.split(".csv").join("").split("_").join(" "),
+            data: csvParse(d),
+            index,
+            sector,
+          }
+        })
       )
     })
   }, miniRankingsPaths)

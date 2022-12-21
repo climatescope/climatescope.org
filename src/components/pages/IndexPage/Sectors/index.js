@@ -21,7 +21,7 @@ const content = [
     description: (indicatorCount, marketCount) => [
       `As of 2022, Climatescope analyses data from ${marketCount} markets across 3 sectors with a total of ${indicatorCount} indicators.`,
     ],
-    action: { text: "Explore Power", href: "/sectors/power/" },
+    action: { text: "Explore sectors", href: "/sectors" },
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const content = [
     alt: "https://unsplash.com/photos/2JvEjF0tf50",
     href: "/sectors/transport",
     isNew: true,
-    comingSoon: true,
+    comingSoon: false,
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const content = [
     alt: "https://unsplash.com/photos/MUfokL109CQ",
     href: "/sectors/buildings",
     isNew: true,
-    comingSoon: true,
+    comingSoon: false,
   },
 ]
 
@@ -110,7 +110,7 @@ const SectorCard = ({
   order,
   isNew,
   comingSoon,
-  metaData,
+  marketCounts,
 }) => {
   return (
     <LinkBox as={Box} order={order}>
@@ -131,6 +131,17 @@ const SectorCard = ({
             ) : (
               <LinkOverlay href={href}>{title}</LinkOverlay>
             )}
+            {isNew ? (
+              <Tag
+                verticalAlign="middle"
+                ml={2}
+                size="sm"
+                textTransform="uppercase"
+                fontWeight={600}
+              >
+                {"New"}
+              </Tag>
+            ) : null}
             {comingSoon ? (
               <Tag
                 verticalAlign="middle"
@@ -138,6 +149,7 @@ const SectorCard = ({
                 size="sm"
                 textTransform="uppercase"
                 fontWeight={600}
+                colorScheme="gray"
               >
                 {"Coming soon"}
               </Tag>
@@ -149,7 +161,7 @@ const SectorCard = ({
             color="gray.500"
             fontWeight={600}
           >
-            {comingSoon ? "" : `${metaData.countryCounts[sector]} markets`}
+            {comingSoon ? "" : `${marketCounts[sector]} markets`}
           </Text>
         </Stack>
       </Stack>
@@ -180,7 +192,11 @@ const Sectors = ({ metaData }) => {
         return item.action ? (
           <SummaryCard key={id} metaData={metaData} {...item} />
         ) : (
-          <SectorCard key={id} metaData={metaData} {...item} />
+          <SectorCard
+            key={id}
+            marketCounts={metaData.countryCounts}
+            {...item}
+          />
         )
       })}
     </SimpleGrid>

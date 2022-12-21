@@ -28,9 +28,9 @@ const bannerActions = [
   },
   {
     key: 3,
-    title: `${year} Full report`,
-    description: "Download the full report",
-    href: "/downloads/climatescope-2022-report-en.pdf",
+    title: "Press release",
+    description: `${year} findings summary`,
+    href: "/blog/developing-countries-raise-their-clean-power-policy-ambitions/",
     color: "teal.800",
     icon: "ReportIcon",
   },

@@ -14,6 +14,7 @@ const globalStyles = {
   ".technology-map-tooltip": {
     fontWeight: 600,
   },
+  "rect": { outline: "none !important" },
 }
 
 export default globalStyles

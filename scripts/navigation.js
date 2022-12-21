@@ -87,22 +87,14 @@ const enBlogPosts = sortBy(
 
 const sectors = [
   ...sectorsRaw,
-  {
-    title: "Transport",
-    description: "",
-    path: "/sectors",
-    order: 2,
-    thumbnail: "transport.jpg",
-    cover: "transport-cover.jpg",
-  },
-  {
-    title: "Buildings",
-    description: "",
-    path: "/sectors",
-    order: 3,
-    thumbnail: "buildings.jpg",
-    cover: "buildings-cover.jpg",
-  },
+  // {
+  //   title: "Buildings",
+  //   description: "",
+  //   path: "/sectors",
+  //   order: 3,
+  //   thumbnail: "buildings.jpg",
+  //   cover: "buildings-cover.jpg",
+  // },
 ]
 
 const navigation = [

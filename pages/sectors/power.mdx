@@ -2,6 +2,7 @@ export const metaData = {
   title: "Power",
   thumbnail: "energy.jpg",
   cover: "energy-cover.jpg",
+  reportName: "Power Transition Factbook",
   description:
     "Renewables investment shifted sharply back to developing nations in 2020",
   order: 1,
@@ -31,6 +32,8 @@ import AreaChart from "@components/SectorChart/AreaChart"
       description: "Wind and solar's share of 2021 capacity additions",
     },
   ]}
+  sectorName={metaData.title}
+  reportName={metaData.reportName}
 />
 
 ## Capacity by technology

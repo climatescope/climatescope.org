@@ -4,8 +4,6 @@ import {
   Heading,
   Text,
   useTheme,
-  // Wrap,
-  // WrapItem,
   Skeleton,
   AspectRatio,
   Stack,
@@ -103,6 +101,9 @@ const Band = ({
         height={height - 40}
         onMouseEnter={handleEnter}
         onMouseLeave={handleLeave}
+        onFocus={handleEnter}
+        onBlur={handleLeave}
+        tabIndex={0}
       />
       <rect
         x={x2 - strokeWidth / 2}
@@ -370,7 +371,7 @@ function getUnit(val, unit) {
     "M USD": `${v} M USD`,
     "USD/MWh": `${v} USD/MWh`,
   }
-  return unitMap[unit] || v || ""
+  return unitMap[unit] || unit ? `${v} ${unit}` : v || ""
 }
 
 const LineChartWrapper = ({

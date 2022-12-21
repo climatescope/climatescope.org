@@ -22,7 +22,7 @@ const SectorCard = ({
             alt={alt}
             type="sector"
             ratio={[1, 3 / 4, 1, 3 / 4]}
-            opacity={title !== "Power" ? "0.5" : "1"}
+            opacity={comingSoon ? "0.5" : "1"}
           />
         </Box>
         <Stack spacing={1}>
@@ -33,6 +33,17 @@ const SectorCard = ({
               <LinkOverlay href={href}>{title}</LinkOverlay>
             )}
             {/* <LinkOverlay href={href}>{title}</LinkOverlay> */}
+            {isNew ? (
+              <Tag
+                verticalAlign="middle"
+                ml={2}
+                size="sm"
+                textTransform="uppercase"
+                fontWeight={600}
+              >
+                {"New"}
+              </Tag>
+            ) : null}
             {comingSoon ? (
               <Tag
                 verticalAlign="middle"
@@ -40,6 +51,7 @@ const SectorCard = ({
                 size="sm"
                 textTransform="uppercase"
                 fontWeight={600}
+                colorScheme="gray"
               >
                 {"Coming soon"}
               </Tag>
@@ -51,9 +63,7 @@ const SectorCard = ({
             color="gray.500"
             fontWeight={600}
           >
-            {title !== "Power"
-              ? ""
-              : `${marketCounts[title.toLowerCase()]} markets`}
+            {comingSoon ? "" : `${marketCounts[title.toLowerCase()]} markets`}
           </Text>
         </Stack>
       </Stack>

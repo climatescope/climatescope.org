@@ -1,10 +1,10 @@
 import { Stack, HStack, Text, Heading, Box, Center } from "@chakra-ui/react"
 import { DownloadIcon } from "@components/Icon"
 
-import { ButtonLink, LinkOverlay } from "@components/Link"
+import { ButtonLink } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
 
-const SectorPageBanner = ({ findings }) => {
+const SectorPageBanner = ({ findings, sectorName, reportName }) => {
   if (!findings) return null
   return (
     <SimpleGrid
@@ -27,10 +27,13 @@ const SectorPageBanner = ({ findings }) => {
           </Stack>
         )
       })}
-      <Box gridColumn={["span 4", null, "span 2", null, "span 1"]} alignContent="stretch">
+      <Box
+        gridColumn={["span 4", null, "span 2", null, "span 1"]}
+        alignContent="stretch"
+      >
         <ButtonLink
-          href="/downloads/climatescope-2022-report.pdf"
-          download="Climatescope-2022-report.pdf"
+          href={`/downloads/climatescope-2022-${sectorName.toLowerCase()}-report-en.pdf`}
+          download={reportName}
           target="_blank"
           h="100%"
           justifyContent="left"
@@ -41,42 +44,25 @@ const SectorPageBanner = ({ findings }) => {
           variant="subtle"
         >
           <HStack>
-          <Center
-            flex="none"
-            w="3rem"
-            h="3rem"
-            bg="brand.300"
-            color="brand.900"
-            borderRadius="full"
-          >
-            <DownloadIcon />
-          </Center>
-          <Stack spacing={2} color="brand.900">
-            <Heading variant="keyMessageTitle">
-              {"Get full report to read more about Power"}
-            </Heading>
-            {/* <Text variant="statisticText">{"Read more about power"}</Text> */}
-          </Stack>
+            <Center
+              flex="none"
+              w="3rem"
+              h="3rem"
+              bg="brand.300"
+              color="brand.900"
+              borderRadius="full"
+            >
+              <DownloadIcon />
+            </Center>
+            <Stack spacing={2} color="brand.900">
+              <Heading variant="keyMessageTitle">
+                {`Download ${sectorName} Factbook`}
+              </Heading>
+              {/* <Text variant="statisticText">{"Read more about power"}</Text> */}
+            </Stack>
           </HStack>
         </ButtonLink>
       </Box>
-      {/* <Box gridColumn={["span 4", null, "span 2", null, "span 1"]}>
-        <ButtonLink
-          href="/downloads/climatescope-2022-report.pdf"
-          download="Climatescope-2022-report.pdf"
-          target="_blank"
-          h="6rem"
-          borderRadius="none"
-          justifyContent="left"
-          whiteSpace="wrap"
-          width="100%"
-        >
-          <Text
-          >
-            {"Download report to find out more about this sector"}
-          </Text>
-        </ButtonLink>
-      </Box> */}
     </SimpleGrid>
   )
 }
