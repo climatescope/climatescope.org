@@ -1,0 +1,11 @@
+position,country,iso,region,market_grouping,value,unit,max_value
+1,Taiwan,TW,asia,developing market,3.656221613,score,5
+2,India,IN,asia,developing market,3.565933844,score,5
+3,Italy,IT,eu,developed market,3.449081052,score,5
+4,Philippines,PH,asia,developing market,3.372511448,score,5
+5,Lithuania,LT,eu,developed market,3.314426831,score,5
+6,Albania,AL,eu,developing market,3.250768859,score,5
+7,Mongolia,MN,asia,developing market,3.136410575,score,5
+8,Moldova,MD,eu,developing market,3.12236281,score,5
+9,Chile,CL,amer,developing market,3.095815426,score,5
+10,Turkey,TR,eu,developing market,3.036294061,score,5

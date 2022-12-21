@@ -1,0 +1,11 @@
+iso,region,position,country,value,unit
+CN,asia,1,Mainland China,10.574,GW
+RU,eu,2,Russia,9.965392828,GW
+US,amer,3,United States,4.7176,GW
+UZ,asia,4,Uzbekistan,2.0823184,GW
+SA,mena,5,Saudi Arabia,2,GW
+DZ,mena,6,Algeria,1.79328,GW
+BR,amer,7,Brazil,1.539566,GW
+PK,asia,8,Pakistan,1.311,GW
+IR,mena,9,Iran,0.829086631,GW
+KW,mena,10,Kuwait,0.809,GW

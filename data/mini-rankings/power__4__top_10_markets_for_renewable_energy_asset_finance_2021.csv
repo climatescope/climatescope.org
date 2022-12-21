@@ -1,0 +1,11 @@
+iso,country,region,market_grouping,position,value,unit
+CN,Mainland China,asia,developing market,1,142.17,$ bn
+US,United States,amer,developed market,2,45.48,$ bn
+JP,Japan,asia,developed market,3,16.37,$ bn
+IN,India,asia,developing market,4,10.04,$ bn
+GB,United Kingdom,eu,developed market,5,9.53,$ bn
+DE,Germany,eu,developed market,6,8.81,$ bn
+BR,Brazil,amer,developing market,7,6.95,$ bn
+KR,South Korea,asia,developed market,8,6.82,$ bn
+ES,Spain,eu,developed market,9,6.44,$ bn
+FR,France,eu,developed market,10,6.26,$ bn
