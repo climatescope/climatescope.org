@@ -1,11 +1,11 @@
-iso,region,position,country,value,unit
-CN,asia,1,Mainland China,331.04,GW
-US,amer,2,United States,121594,GW
-JP,asia,3,Japan,73.471,GW
-IN,asia,4,India,59.996,GW
-DE,eu,5,Germany,34.662,GW
-AU,asia,6,Australia,22.279,GW
-IT,eu,7,South Korea,21.03,GW
-KR,asia,8,Vietnam,19.09,GW
-ES,eu,9,Brazil,17.187,GW
-VN,asia,10,Spain,14.96,GW
+﻿iso,region,position,country,value,unit
+CN,asia,1,Mainland China,333.88,GW
+US,amer,2,United States,123.68,GW
+JP,asia,3,Japan,77.88,GW
+IN,asia,4,India,60.1,GW
+DE,eu,5,Germany,59.91,GW
+AU,asia,6,Australia,23.14,GW
+IT,eu,7,Italy,22.39,GW
+KR,asia,8,South Korea,21.45,GW
+ES,eu,9,Spain,19.09,GW
+VN,asia,10,Vietnam,19.09,GW
