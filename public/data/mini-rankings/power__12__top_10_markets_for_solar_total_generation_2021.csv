@@ -1,0 +1,11 @@
+iso,region,position,country,value,unit
+CN,asia,1,Mainland China,327047,GWh
+US,amer,2,United States,113871,GWh
+JP,asia,3,Japan,90886.44833,GWh
+IN,asia,4,India,68305.8,GWh
+DE,eu,5,Germany,50003,GWh
+AU,asia,6,Australia,28561,GWh
+VN,asia,7,Vietnam,27843,GWh
+ES,eu,8,Spain,25209.03595,GWh
+IT,eu,9,Italy,25068,GWh
+KR,asia,10,South Korea,23895,GWh
