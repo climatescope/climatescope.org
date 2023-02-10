@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import { Box, Container, Heading, Stack, Text } from "@chakra-ui/react"
 import { csv } from "d3-fetch"
-import groupBy from "lodash/groupBy"
 
 import SimpleGrid from "@components/SimpleGrid"
 import Top10Ranking from "@components/pages/IndexPage/Highlights/Top10Ranking"
@@ -37,8 +36,6 @@ function MiniChart({ src }) {
 }
 
 const HighlightsPage = ({ miniRankingsPaths }) => {
-  const grouped = groupBy(miniRankingsPaths, (o) => o.split("__")[0])
-
   return (
     <Container>
       <SimpleGrid
@@ -70,7 +67,7 @@ const HighlightsPage = ({ miniRankingsPaths }) => {
             gridRowGap={[10, null, 20]}
             gridColumnGap={20}
           >
-            {grouped.buildings.map((n) => {
+            {miniRankingsPaths.buildings.map((n) => {
               return <MiniChart key={n} src={n} />
             })}
           </SimpleGrid>
@@ -85,7 +82,7 @@ const HighlightsPage = ({ miniRankingsPaths }) => {
             gridRowGap={[10, null, 20]}
             gridColumnGap={20}
           >
-            {grouped.transport.map((n) => {
+            {miniRankingsPaths.transport.map((n) => {
               return <MiniChart key={n} src={n} />
             })}
           </SimpleGrid>
@@ -100,7 +97,7 @@ const HighlightsPage = ({ miniRankingsPaths }) => {
             gridRowGap={[10, null, 20]}
             gridColumnGap={20}
           >
-            {grouped.power.map((n) => {
+            {miniRankingsPaths.power.map((n) => {
               return <MiniChart key={n} src={n} />
             })}
           </SimpleGrid>

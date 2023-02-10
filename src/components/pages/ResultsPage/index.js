@@ -85,7 +85,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
             </Heading>
             <Text variant="subtitle">
               {
-                "Climatescope's ranking of the most attractive markets for renewable energy projects investment."
+                "Climatescope's ranking of the most attractive markets for energy transition projects investment."
               }
             </Text>
           </Stack>
@@ -118,34 +118,33 @@ const ResultsPage = ({ clientData, dataPreview }) => {
                 variant="sectorTabs"
               >
                 <TabList>
-                  {sectorNames
-                    .map((s) => {
-                      return (
-                        <Tab key={s}>
-                          <Center
-                            w="2.5rem"
-                            h="2.5rem"
-                            mr={4}
-                            bg="gray.50"
-                            borderRadius="full"
-                          >
-                            {s === "power" ? (
-                              <GreenIdeaIcon size={20} strokeWidth={2} />
-                            ) : null}
-                            {s === "transport" ? (
-                              <TransportIcon size={20} strokeWidth={2} />
-                            ) : null}
-                            {s === "buildings" ? (
-                              <BuildingsIcon size={20} strokeWidth={2} />
-                            ) : null}
-                            {s === "all sectors" ? (
-                              <GlobalRankIcon size={20} strokeWidth={2} />
-                            ) : null}
-                          </Center>
-                          {s.slice(0, 1).toUpperCase() + s.slice(1)}
-                        </Tab>
-                      )
-                    })}
+                  {sectorNames.map((s) => {
+                    return (
+                      <Tab key={s}>
+                        <Center
+                          w="2.5rem"
+                          h="2.5rem"
+                          mr={4}
+                          bg="gray.50"
+                          borderRadius="full"
+                        >
+                          {s === "power" ? (
+                            <GreenIdeaIcon size={20} strokeWidth={2} />
+                          ) : null}
+                          {s === "transport" ? (
+                            <TransportIcon size={20} strokeWidth={2} />
+                          ) : null}
+                          {s === "buildings" ? (
+                            <BuildingsIcon size={20} strokeWidth={2} />
+                          ) : null}
+                          {s === "all sectors" ? (
+                            <GlobalRankIcon size={20} strokeWidth={2} />
+                          ) : null}
+                        </Center>
+                        {s.slice(0, 1).toUpperCase() + s.slice(1)}
+                      </Tab>
+                    )
+                  })}
                 </TabList>
               </Tabs>
             </Box>
