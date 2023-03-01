@@ -1,5 +1,5 @@
 # Climatescope
-The [Climatescope](http://global-climatescope.org) is a unique market-by-market assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
+The [Climatescope](http://www.global-climatescope.org) is a unique market-by-market assessment, interactive report and index that evaluates the investment climate for climate-related investment worldwide.
 
 ![Homepage of the climatescope 2019](https://user-images.githubusercontent.com/1090606/69560317-75e13200-0fa3-11ea-988d-86bbedfdd333.png)
 
@@ -70,7 +70,7 @@ npm run serve
 In order to run the app, you will need to provide a site url and a mapbox token, as well as a mailchimp address. You can do this via a `.env.local` file.
 
 ```
-SITE_URL=https://global-climatescope.org/
+SITE_URL=https://www.global-climatescope.org/
 MAPBOX_TOKEN=
 MAILCHIMP_ADDRESS=
 ```
