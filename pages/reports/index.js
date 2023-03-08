@@ -160,7 +160,7 @@ const ReportsPage = () => {
                       ) : null}
 
                       {/* <ButtonLink
-                    href={`https://global-climatescope.org/assets/data/model/${issue.model}`}
+                    href={`https://www.global-climatescope.org/assets/data/model/${issue.model}`}
                     colorScheme="gray"
                     leftIcon={<DownloadIcon size={20} />}
                   >

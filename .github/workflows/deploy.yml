@@ -48,7 +48,7 @@ jobs:
       - name: Build
         run: yarn export
         env:
-          SITE_URL: https://global-climatescope.org/
+          SITE_URL: https://www.global-climatescope.org/
           MAILCHIMP_ADDRESS: ${{ secrets.MAILCHIMP_ADDRESS }}
           MAPBOX_TOKEN: ${{ secrets.MB_TOKEN }}
 
@@ -73,4 +73,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
           publish_branch: gh-pages
-          cname: global-climatescope.org
+          cname: www.global-climatescope.org
