@@ -14,7 +14,7 @@ const SEO = ({
 }) => {
   const { basePath, asPath } = useRouter()
 
-  const slugUrl = siteUrl + basePath + asPath
+  const slugUrl = siteUrl + basePath + (asPath[0] === "/" ? asPath.slice(1) : asPath)
   const coverImg = cover ? siteUrl + basePath + "images/" + cover : ""
 
   const combinedTitle = title
