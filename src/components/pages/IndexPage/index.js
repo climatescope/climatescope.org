@@ -8,7 +8,7 @@ import Tools from "@components/pages/IndexPage/Tools"
 import BnefBanner from "@components/pages/IndexPage/BnefBanner"
 
 import Highlights from "@components/pages/IndexPage/Highlights"
-import TechnologiesMap from "@components/pages/IndexPage/TechnologiesMap"
+// import TechnologiesMap from "@components/pages/IndexPage/TechnologiesMap"
 import MiniGlobes from "@components/pages/IndexPage/MiniGlobes"
 
 const IndexPage = ({
@@ -26,7 +26,7 @@ const IndexPage = ({
           <GlobePreview globeInsights={globeInsights} />
           <Sectors metaData={metaData} />
           <Highlights miniRankingsPaths={miniRankingsPaths} />
-          <TechnologiesMap />
+          {/* <TechnologiesMap /> */}
           <MiniGlobes data={miniGlobesData} />
           <Tools allTools={allTools} />
           <BnefBanner />
