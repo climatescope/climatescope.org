@@ -63,7 +63,6 @@ const MiniGlobesSection = ({ data }) => {
       left="50%"
       transform="translateX(-50%)"
       py={20}
-      style={{ marginTop: 0 }}
     >
       <Container>
         <SimpleGrid columns={2}>
