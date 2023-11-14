@@ -66,7 +66,12 @@ const ResultsPage = ({ clientData, dataPreview }) => {
   const [view, setView] = useState("table")
   const [sector, setSector] = useState("power")
 
-  const sectorNames = ["power", "transport", "buildings", "all sectors"]
+  const sectorNames = [
+    "power",
+    "transport",
+    // "buildings",
+    "all sectors",
+  ]
 
   const handleSectorChange = (val) => {
     setSector(sectorNames[val])
@@ -120,7 +125,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
                 <TabList>
                   {sectorNames.map((s) => {
                     return (
-                      <Tab key={s}>
+                      <Tab key={s} flex={1}>
                         <Center
                           w="2.5rem"
                           h="2.5rem"

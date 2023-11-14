@@ -90,8 +90,8 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
             </Wrap>
           </Stack>
           <Box gridColumn="1 / -1" bg="white" boxShadow="2.5rem 0 0 #FFF">
-            <SimpleGrid columns={[2, 3]} py={[5, null, null, 10]}>
-              {["power", "transport", "buildings"].map((d) => {
+            <SimpleGrid columns={2} py={[5, null, null, 10]}>
+              {["power", "transport"].map((d) => {
                 const sector = market.sectors.find((s) => s.id === d)
                 const score = sector.data[0].value
                 return (
