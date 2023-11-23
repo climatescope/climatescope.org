@@ -1,232 +1,296 @@
-import { useRef } from "react"
 import {
   Box,
   Center,
   Container,
   Stack,
+  // HStack,
   Heading,
   Text,
   SimpleGrid,
-} from "@chakra-ui/react"
+} from "@chakra-ui/layout"
+import { useTheme } from "@chakra-ui/system"
+import { extent, max } from "d3-array"
 
-import InPageNavigation from "@components/pages/MarketPage/InPageNavigation"
-import LowCarbonStrategySection from "@components/pages/MarketPage/LowCarbonStrategy"
-import PowerSection from "@components/pages/MarketPage/Power"
-import TransportSection from "@components/pages/MarketPage/Transport"
-import BuildingsSection from "@components/pages/MarketPage/Buildings"
-import MarketBanner from "@components/pages/MarketPage/MarketBanner"
-import BnefBanner from "@components/pages/IndexPage/BnefBanner"
-import { useScroller } from "@utils/useScrollama"
+import AreaChart from "@components/pages/MarketPage/AreaChart"
+import LineChart from "@components/pages/MarketPage/LineChart"
 
-const content = [
-  {
-    type: "section",
-    title: "Overview",
-    items: [
-      {
-        type: "section",
-        title: "",
-        items: [
-          {
-            type: "text",
-            text: [
-              "Chile has a cumulative score of 2.19. This puts it at rank 4 among emerging markets, and rank 22 among all markets in the climatescope ranking. Within the power ranking Chile is ranked as 1, with a score of 2.58. In the transport ranking, Chile has a score of 1.84 putting it at rank 4.",
-              "Over the past 3 years, Chile has improved in the rankings, increasing its score from XX in 2020, to YY in 2023.",
-              "Here we could compare to how the region or type of market have changed in the past three years. This could tell us whether this market performs better or worse than the average change.",
-            ],
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "section",
-    title: "Power",
-    items: [
-      {
-        type: "section",
-        title: "Power policy",
-        items: [
-          {
-            type: "text",
-            text: [
-              "Summary of the power policies chart below, focusing on policy categories represented and development from last year.",
-            ],
-          },
-          { type: "chart", title: "Power policies (multi boxes)" },
-        ],
-      },
-      {
-        type: "section",
-        title: "Power prices and costs",
-        items: [
-          {
-            type: "text",
-            text: [
-              "Summary of the electricity prices chart below, focused on price development over the past years.",
-            ],
-          },
-          { type: "chart", title: "Electricty prices (line)" },
-        ],
-      },
-      {
-        type: "section",
-        title: "Power market",
-        items: [
-          {
-            type: "text",
-            text: [
-              "Summary of installed capacity and the trends in installed capacity in the market.",
-              "Summary of electricity generation and the tendencies there.",
-            ],
-          },
-          { type: "chart", title: "Installed capacity (line)" },
-          { type: "chart", title: "Electricity generation (line)" },
-          { type: "text", text: ["Summary of the investment chart below."] },
-          { type: "chart", title: "Investment (line)" },
-          { type: "text", text: ["Notes on utility privatisation."] },
-          { type: "chart", title: "Utility privatisation (multi boxes)" },
-          { type: "text", text: ["Notes on the wholesale power market."] },
-          { type: "chart", title: "Wholesale power market (yes/no boxes)" },
-          { type: "text", text: ["Notes on the currency of PPAs"] },
-          { type: "chart", title: "Currency of PPAs (yes/no boxes)" },
-          { type: "text", text: ["Notes on bilateral power contracts."] },
-          { type: "chart", title: "Bilateral power contracts (yes/no boxes)" },
-          { type: "text", text: ["Notes on fossil fuel subsidies."] },
-          {
-            type: "chart",
-            title: "Fossil fuel price distortions - Subsidies (yes/no boxes)",
-          },
-          { type: "text", text: ["Notes on fossil fuel taxes."] },
-          {
-            type: "chart",
-            title: "Fossil fuel price distortions - Taxes (yes/no boxes)",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "section",
-    title: "Transport",
-    items: [
-      {
-        type: "section",
-        title: "EV market",
-        items: [
-          {
-            type: "text",
-            text: [
-              "Overview of EV market. Is there anything data-driven here?",
-            ],
-          },
-        ],
-      },
-      {
-        type: "section",
-        title: "EV policy",
-        items: [
-          { type: "text", text: ["Summary of transport policies chart."] },
-          { type: "chart", title: "Transport policies (multi boxes)" },
-          { type: "text", text: ["Notes on fuel economy standards.."] },
-          { type: "chart", title: "Fuel economy standards (yes/no boxes)" },
-        ],
-      },
-    ],
-  },
-]
+function RegionalComparisonChart({ title, data, market }) {
+  const { colors } = useTheme()
+  const { score, items } = data
+  const max = 5
+  const calculatePosition = (n) => (100 / max) * n
 
-function Section({ title, items, ...restProps }) {
+  const ticks = Array(max + 1)
+    .fill(0)
+    .map((d, i) => d + i)
+
   return (
-    <SimpleGrid columns={8} spacing={5} {...restProps}>
-      {title && (
-        <Heading
-          as="h2"
-          fontSize="4xl"
-          gridColumn={["1 / -1", null, null, "2 / span 5"]}
-        >
-          {title}
-        </Heading>
-      )}
-
-      {items.map((item) => (
-        <SubSection key={item.title} {...item} />
-      ))}
-    </SimpleGrid>
-  )
-}
-
-function SubSection({ title, items, ...restProps }) {
-  return (
-    <SimpleGrid
-      columns={8}
-      gridRowGap={3}
-      key={title}
-      gridColumn="1 / -1"
-      {...restProps}
-    >
-      {title && (
-        <Heading
-          as="h3"
-          fontSize="2xl"
-          gridColumn={["1 / -1", null, null, "2 / span 5"]}
-        >
-          {title}
-        </Heading>
-      )}
-
-      {items.map((content, key) => {
-        switch (content.type) {
-          case "chart":
+    <Stack spacing={5}>
+      <Heading as="h4" fontSize="2xl">
+        {title}
+      </Heading>
+      <Box h="5rem" pt="2rem">
+        <Box position="relative" h="3rem" w="100%">
+          {ticks.map((tick) => {
             return (
-              <Center
-                key={key}
-                bg="gray.100"
-                py={5}
-                gridColumn={["1 / -1", null, null, "2 / span 5"]}
+              <Box
+                key={tick}
+                position="absolute"
+                bottom="100%"
+                w="2.5rem"
+                h="2rem"
+                textAlign="center"
+                transform="translateX(-50%)"
+                fontSize="sm"
+                fontWeight={600}
+                color="gray.500"
+                style={{ left: calculatePosition(tick) + "%" }}
               >
-                <Heading as="h4" fontSize="xl">
-                  {`Chart: ${content.title}`}
-                </Heading>
-              </Center>
+                {tick}
+              </Box>
             )
-          default:
-            return content.text.map((content, i) => (
-              <Text
-                fontSize="lg"
-                key={i}
-                gridColumn={["1 / -1", null, null, "2 / span 5"]}
+          })}
+
+          <Box
+            h="3rem"
+            w="0.125rem"
+            bg="gray.500"
+            position="absolute"
+            transform="translateX(-50%)"
+            style={{ left: calculatePosition(score.average) + "%", top: 0 }}
+          />
+
+          {ticks.map((tick) => {
+            return (
+              <Box
+                key={tick}
+                h="1rem"
+                w="0.125rem"
+                bg="gray.200"
+                position="absolute"
+                transform="translateX(-50%)"
+                style={{ left: calculatePosition(tick) + "%", top: "1rem" }}
+              />
+            )
+          })}
+
+          <Box
+            position="absolute"
+            top="50%"
+            left={0}
+            right={0}
+            h="0.125rem"
+            bg="gray.200"
+            transform="translateY(-50%)"
+          />
+          {items.map((item, j) => {
+            const isHighlighted = market.iso === item.iso.toLowerCase()
+            return (
+              <Box
+                key={j}
+                h="1.25rem"
+                w="1.25rem"
+                bg="teal.500"
+                border="0.125rem solid #FFF"
+                position="absolute"
+                borderRadius="full"
+                transform="translate(-50%, -50%)"
+                style={{
+                  left: calculatePosition(item.score) + "%",
+                  top: "50%",
+                  opacity: isHighlighted ? 1 : 0.3,
+                  background: isHighlighted
+                    ? colors.teal[500]
+                    : colors.gray[500],
+                  zIndex: isHighlighted ? 2 : 1,
+                }}
               >
-                {content}
-              </Text>
-            ))
-        }
-      })}
-    </SimpleGrid>
+                {isHighlighted ? (
+                  <Box
+                    position="absolute"
+                    top="100%"
+                    left="50%"
+                    transform="translateX(-50%)"
+                    fontWeight={600}
+                    color="teal.500"
+                    whiteSpace="nowrap"
+                  >
+                    {item.name}
+                  </Box>
+                ) : (
+                  ""
+                )}
+              </Box>
+            )
+          })}
+        </Box>
+      </Box>
+    </Stack>
   )
 }
 
-const MarketPage = ({ market, summary, marketCounts }) => {
-  const [introCopy, powerCopy, transportCopy, buildingsCopy] =
-    market.sectionCopy || []
+function Section({ item, market }) {
+  switch (item.type) {
+    case "text":
+      const paragraphs = item.text.map((d) => [d].flat().join(""))
+      return (
+        <Stack spacing={10} gridColumn="2 / -3">
+          {paragraphs.map((paragraph, i) => (
+            <Text key={i}>{paragraph}</Text>
+          ))}
+        </Stack>
+      )
+    case "chart-regional-comparison":
+      return (
+        <Box gridColumn="2 / -2">
+          <RegionalComparisonChart
+            title={item.title}
+            data={item.data}
+            market={market}
+          />
+        </Box>
+      )
+    case "chart-line":
+      return (
+        <Box gridColumn="2 / -2">
+          <LineChart
+            data={{ indicator: item.title, subindicators: item.data }}
+            domainX={extent(
+              item.data.flatMap((d) => d.data),
+              (o) => o.year
+            )}
+            domainY={[
+              0,
+              max(
+                item.data.flatMap((d) => d.data),
+                (o) => o.value
+              ),
+            ]}
+          />
+        </Box>
+      )
+    case "chart-area":
+      const maxValue = max(
+        item.data[0].data.map((d, i) => {
+          const sum = item.data
+            .slice(1)
+            .map((d) => d.data[i])
+            .reduce((acc, cur) => acc + parseFloat(cur.value), 0)
+          return { year: d.year, value: d.value + sum }
+        }),
+        (o) => o.value
+      )
+      return (
+        <Box gridColumn="span 4">
+          <AreaChart
+            data={{ indicator: item.title, subindicators: item.data }}
+            domainX={[2013, 2022]}
+            domainY={[0, maxValue]}
+          />
+        </Box>
+      )
+    case "chart-boolean":
+      return (
+        <SimpleGrid columns={6} gridColumn="2 / -2" gridRowGap={4}>
+          <Box gridColumn="span 2" px={3}>
+            <Text fontWeight={600} fontSize="sm" textTransform="uppercase">
+              {"Type"}
+            </Text>
+          </Box>
+          <Box gridColumn="span 2" px={3}>
+            <Text fontWeight={600} fontSize="sm" textTransform="uppercase">
+              {"Question"}
+            </Text>
+          </Box>
+          <Box gridColumn="span 2" px={3} textAlign="right">
+            <Text fontWeight={600} fontSize="sm" textTransform="uppercase">
+              {"Availability"}
+            </Text>
+          </Box>
+          <SimpleGrid
+            columns={6}
+            gridColumn="1 / -1"
+            bg="teal.100"
+            border="0.125rem solid"
+            borderColor="teal.500"
+            color="teal.900"
+            borderRadius="md"
+            py={4}
+          >
+            <Box gridColumn="span 2" px={3}>
+              {item.title}
+            </Box>
+            <Box gridColumn="span 3" px={3}>
+              {item.data.question}
+            </Box>
+            <Box gridColumn="span 1" px={3} textAlign="right">
+              {item.data.a1 ? "YES" : "NO"}
+            </Box>
+          </SimpleGrid>
+        </SimpleGrid>
+      )
+    case "chart-multibox":
+      return (
+        <Stack spacing={6} gridColumn="2 / -2">
+          <Heading as="h4" fontSize="2xl">
+            {item.title}
+          </Heading>
+          <SimpleGrid columns={3} w="100%" gridColumnGap={6} gridRowGap={6}>
+            {item.data.map((d) => {
+              return d.answer ? (
+                <Box
+                  key={d.policy}
+                  p={3}
+                  bg="purple.100"
+                  border="0.125rem solid"
+                  borderColor="purple.500"
+                  borderRadius="md"
+                  color="purple.900"
+                >
+                  {d.policy}
+                </Box>
+              ) : (
+                <Box
+                  key={d.policy}
+                  p={3}
+                  bg="gray.50"
+                  color="gray.500"
+                  borderRadius="md"
+                >
+                  {d.policy}
+                </Box>
+              )
+            })}
+          </SimpleGrid>
+        </Stack>
+      )
 
-  const container = useRef()
-  useScroller({ container })
+    default:
+      const fontSize = { h2: "4xl", h3: "3xl", h4: "2xl" }[item.level || "h2"]
+      return (
+        <SimpleGrid columns={8} gridColumn="1 / -1">
+          <Heading as={item.level} fontSize={fontSize} gridColumn="2 / -2">
+            {item.title}
+          </Heading>
+          {item.items?.map((item, i) => {
+            return <Section key={i} item={item} market={market} />
+          })}
+        </SimpleGrid>
+      )
+  }
+}
 
-  // TODO: Remove this...
-  introCopy.title = "Overview"
-
+export default function MarketPage({ market }) {
   return (
-    <>
-      <Box as="main" pb={0} minH="75vh">
-        <Container>
-          <MarketBanner
+    <Box as="main" pb={0} minH="75vh">
+      <Container>
+        {/* <MarketBanner
             market={market}
             summary={summary}
             marketCounts={marketCounts}
-          />
+          /> */}
 
-          <InPageNavigation
+        {/* <InPageNavigation
             market={market}
             sections={[
               introCopy,
@@ -234,70 +298,32 @@ const MarketPage = ({ market, summary, marketCounts }) => {
               transportCopy,
               // buildingsCopy,
             ]}
-          />
+          /> */}
 
-          <Stack
-            spacing={10}
-            pt={[10, null, 20]}
-            pb={[10, null, 20]}
-            borderBottom="0.0625rem solid"
-            borderColor="gray.200"
-          >
-            {content.map((item) => {
-              return (
-                <Section key={item.title} data-scroll-step="true" {...item} />
-              )
-            })}
-          </Stack>
+        <SimpleGrid
+          columns={8}
+          pt={[10, null, 20]}
+          pb={[10, null, 20]}
+          borderBottom="0.0625rem solid"
+          borderColor="gray.200"
+        >
+          {market.sections.map((section, i) => {
+            return <Section key={i} item={section} market={market} />
+          })}
+        </SimpleGrid>
 
-          <Stack
-            spacing={10}
-            ref={container}
-            pt={[10, null, 20]}
-            style={{ display: "flex" }}
-          >
-            {introCopy && (
-              <Box data-scroll-step="true">
-                <LowCarbonStrategySection
-                  {...introCopy}
-                  similarMarkets={market.similar}
-                />
-              </Box>
-            )}
-            {powerCopy && (
-              <Box data-scroll-step="true">
-                <PowerSection
-                  {...powerCopy}
-                  similarMarkets={market.similar}
-                  market={market}
-                />
-              </Box>
-            )}
-            {transportCopy && (
-              <Box data-scroll-step="true">
-                <TransportSection
-                  {...transportCopy}
-                  similarMarkets={market.similar}
-                  market={market}
-                />
-              </Box>
-            )}
-            {buildingsCopy && (
-              <Box data-scroll-step="true">
-                <BuildingsSection
-                  {...buildingsCopy}
-                  similarMarkets={market.similar}
-                  market={market}
-                />
-              </Box>
-            )}
-          </Stack>
-
-          <BnefBanner />
-        </Container>
-      </Box>
-    </>
+        {/* <Stack
+          spacing={10}
+          pt={[10, null, 20]}
+          pb={[10, null, 20]}
+          borderBottom="0.0625rem solid"
+          borderColor="gray.200"
+        >
+          {market.sections.map((section, i) => {
+            return <Section key={i} item={section} />
+          })}
+        </Stack> */}
+      </Container>
+    </Box>
   )
 }
-
-export default MarketPage

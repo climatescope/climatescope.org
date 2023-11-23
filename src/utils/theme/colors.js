@@ -11,7 +11,6 @@ const colors = {
     // "800": "#004852",
     // "900": "#002D33",
 
-
     // "50": "#f2fbfb",
     // "100": "#ddf4f6",
     // "200": "#b4e8ec",
@@ -32,8 +31,7 @@ const colors = {
     "600": "#0194A7",
     "700": "#018798",
     "800": "#016C7A",
-    "900": "#003B42"
-
+    "900": "#003B42",
   },
   gray: {
     // "25": "#FAFBFB",
@@ -82,7 +80,7 @@ const colors = {
     // "700": "#C37F25",
     // "800": "#A96612",
     // "900": "#8E4D00",
-    
+
     // "50": "#fefbf2",
     // "100": "#fef4dd",
     // "200": "#fce7b4",
@@ -103,8 +101,7 @@ const colors = {
     "600": "#de9901",
     "700": "#c07901",
     "800": "#884a01",
-    "900": "#4e2600"
-
+    "900": "#4e2600",
   },
   orange: {
     "50": "#FFFFFF",
@@ -215,6 +212,11 @@ const colors = {
     "Solar thermal": "#FFA86A",
     "Wind": "#02BDE3",
 
+    // NEW COLORS:
+    "Onshore wind": "#02BDE3",
+    "Large hydro": "#01687C",
+    "Small hydro": "#01687C",
+
     "Biomass": "#10D5B5",
     "Hydro": "#01687C",
     "Solar": "#f8ba01",
@@ -258,7 +260,6 @@ const colors = {
     "UK": "#016121",
     "Rest of Europe": "#729cff",
     "Germany": "#F8BA01",
-
   },
 }
 

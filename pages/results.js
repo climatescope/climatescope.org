@@ -11,7 +11,7 @@ const { publicRuntimeConfig } = getConfig()
 const basePath = publicRuntimeConfig.basePath
 
 const ResultsPageWrapper = ({ dataPreview }) => {
-  const clientData = useClientData(`${basePath}/data/results-2022.json`)
+  const clientData = useClientData(`${basePath}/data/results-2023.json`)
   return (
     <>
       <SEO
@@ -24,7 +24,7 @@ const ResultsPageWrapper = ({ dataPreview }) => {
 }
 
 export async function getStaticProps() {
-  const resultsData = await getServerData(`public/data/results-2022.json`)
+  const resultsData = await getServerData(`public/data/results-2023.json`)
   const dataPreview = sortBy(
     resultsData.filter((d) => d.marketGrouping === "emerging"),
     (o) => o.marketGroupingScore.data[0].rank

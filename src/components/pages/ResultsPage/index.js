@@ -6,13 +6,13 @@ import {
   Container,
   Stack,
   HStack,
-  Tabs,
-  TabList,
-  Tab,
+  // Tabs,
+  // TabList,
+  // Tab,
   Button,
-  Center,
+  // Center,
   Select,
-  Divider,
+  // Divider,
   // useBreakpointValue,
 } from "@chakra-ui/react"
 import { useBreakpointValue } from "@chakra-ui/media-query"
@@ -21,10 +21,10 @@ import BalanceSlider from "@components/pages/ResultsPage/BalanceSlider"
 import Ranking from "@components/pages/ResultsPage/Ranking"
 import {
   ResetIcon,
-  GreenIdeaIcon,
-  BuildingsIcon,
-  TransportIcon,
-  GlobalRankIcon,
+  // GreenIdeaIcon,
+  // BuildingsIcon,
+  // TransportIcon,
+  // GlobalRankIcon,
   // DownloadIcon,
 } from "@components/Icon"
 import RegionSelector from "@components/RegionSelector"
@@ -68,9 +68,9 @@ const ResultsPage = ({ clientData, dataPreview }) => {
 
   const sectorNames = [
     "power",
-    "transport",
+    // "transport",
     // "buildings",
-    "all sectors",
+    // "all sectors",
   ]
 
   const handleSectorChange = (val) => {
@@ -116,7 +116,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
                     )
                   })}
               </Select>
-              <Tabs
+              {/* <Tabs
                 display={["none", null, "block"]}
                 onChange={handleSectorChange}
                 index={sectorNames.indexOf(sector)}
@@ -151,7 +151,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
                     )
                   })}
                 </TabList>
-              </Tabs>
+              </Tabs> */}
             </Box>
 
             {/* <ViewSwitch
