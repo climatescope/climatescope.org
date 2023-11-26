@@ -43,16 +43,21 @@ function MiniGlobe({ rotate = [0, 0, 0] }) {
 
 const MiniGlobesSection = ({ data }) => {
   const rotations = {
-    "amer": [82, -8, 0],
-    "eu": [-10, -45, 0],
-    "mena": [-25, -20, 0],
-    "asia": [-110, -10, 0],
+    "northamer": [82, -40, 0],
+    "emea": [-30, -40, 0],
+    "mena": [-40, -15, 0],
+    "apac": [-110, -10, 0],
+    "ssa": [-25, -5, 0],
+    "latam": [68, 17, 0],
   }
   const names = {
-    "amer": "Americas",
-    "eu": "Europe",
+    "northamer": "Northern America",
+    "apac": "Asia-Pacific",
+    "emea": "Europe",
     "mena": "Middle East and North Africa",
-    "asia": "Asia-Pacific",
+    "ssa": "Sub-Saharan Africa",
+    "latam": "Latin America",
+    
   }
   return (
     <Box
@@ -63,7 +68,6 @@ const MiniGlobesSection = ({ data }) => {
       left="50%"
       transform="translateX(-50%)"
       py={20}
-      style={{ marginTop: 0 }}
     >
       <Container>
         <SimpleGrid columns={2}>
@@ -78,7 +82,7 @@ const MiniGlobesSection = ({ data }) => {
               </Heading>
               <Text variant="sectionSubtitleLight">
                 {
-                  "Share of renewable energy installed capacity by region in 2021"
+                  "Share of installed renewable energy capacity by region in 2022"
                 }
               </Text>
             </Stack>

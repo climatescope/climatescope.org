@@ -12,8 +12,8 @@ const year = publicRuntimeConfig.year
 
 const GlobePreview = ({
   globeInsights,
-  title = `Explore ${year} results`,
-  description = `Discover our ${year} ranking of 136 most attractive markets for the power sector.`,
+  title = `Explore the ${year} results `,
+  description = `Discover our ${year} ranking of the 140 most attractive markets for the power sector.`,
   actionText = "Explore the results",
   actionHref = "/results/",
 }) => {
