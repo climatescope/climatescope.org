@@ -7,38 +7,11 @@ import Image from "@components/Image"
 
 const report = {
   id: 1,
-  title: "Energy Transition Factbooks",
-  href: "/downloads/climatescope-2022-report-en.pdf",
-  year: 2022,
-  imgSrc: "climatescope-2022-power-report-en-cover.jpg",
+  title: "Energy Transition Factbook",
+  href: "/downloads/climatescope-2023-report-en.pdf",
+  year: 2023,
+  imgSrc: "climatescope-2023-report-en-cover.jpg",
 }
-
-const reports = [
-  {
-    id: 1,
-    title: "Power Transition Factbook",
-    href: "/downloads/climatescope-2022-power-report-en.pdf",
-    year: 2022,
-    imgSrc: "climatescope-2022-power-report-en-cover.jpg",
-    isComingSoon: false,
-  },
-  {
-    id: 2,
-    title: "Emerging Markets Electrified Transport Factbook",
-    href: "/downloads/climatescope-2022-transport-report-en.pdf",
-    year: 2022,
-    imgSrc: "climatescope-2022-transport-report-en-cover.jpg",
-    isComingSoon: false,
-  },
-  {
-    id: 3,
-    title: "Electrified Heating Factbook",
-    href: "/downloads/climatescope-2022-buildings-report-en.pdf",
-    year: 2022,
-    imgSrc: "climatescope-2022-buildings-report-en-cover.jpg",
-    isComingSoon: false,
-  },
-]
 
 const Reports = () => {
   return (
@@ -54,58 +27,52 @@ const Reports = () => {
           bgGradient="linear(to-br, teal.800 0%, teal.900 60%)"
         />
       </Box>
-      <Box gridColumn="1 / -1" gridRow="1" position="relative" color="white">
-        <SimpleGrid columns={6} gridRowGap={[10, null, 20]} py={24}>
-          <Stack spacing={6} gridColumn={["span 6", null, null, "span 5"]}>
+      <Box gridColumn="2 / -2" gridRow="1" position="relative" color="white">
+        <SimpleGrid
+          columns={8}
+          gridRowGap={[10, null, 20]}
+          py={24}
+          alignItems="center"
+        >
+          <Stack gridColumn={["span 8", null, "span 4"]}>
+            <Box boxShadow="lg">
+              <Link href={report.href} target="_blank" display="block">
+                <Image
+                  src={report.imgSrc}
+                  ratio={1 / 1.42}
+                  type="reportCover"
+                  bg="transparent"
+                  alt="Climatescope 2023 print report cover"
+                />
+              </Link>
+            </Box>
+          </Stack>
+          <Stack spacing={6} gridColumn={["span 8", null, null, "span 4"]}>
             <Heading as="h2" variant="sectionTitle" color="white">
               {report.title}
             </Heading>
             <Text variant="lead" color="brand.100">
               {
-                "This marks the 11th anniversary of Climatescope, BNEF’s annual assessment of energy transition opportunities. The project has been expanded to include activity not just in clean power but in the decarbonization of the transportation and buildings sectors."
+                "This marks the 12th anniversary of Climatescope, BNEF’s annual assessment of energy transition opportunities. In recent years, the project has been expanded to include activity not just in clean power, but also in the decarbonization of transportation and buildings. "
               }
             </Text>
-          </Stack>
-          {reports.map((r) => {
-            return (
-              <Stack
-                key={r.id}
-                spacing={5}
-                gridColumn={["span 6", null, "span 3", " span 2"]}
-              >
-                <Box boxShadow="lg">
-                  <Link href={r.href} target="_blank" display="block">
-                    <Image
-                      src={r.imgSrc}
-                      ratio={r.id === 1 ? 1/1.28 : 1 / 1.42}
-                      type="reportCover"
-                      bg="transparent"
-                      alt="Climatescope 2022 print report cover"
-                    />
-                  </Link>
+            <ButtonLink
+              href={report.href}
+              download={report.title}
+              target="_blank"
+              colorScheme="white"
+              size="lg"
+              alignSelf="flex-start"
+              leftIcon={
+                <Box ml={2}>
+                  <DownloadIcon size={20} strokeWidth={2} />
                 </Box>
-                <Heading as="h3" fontSize="2xl">
-                  {r.title}
-                </Heading>
-                <ButtonLink
-                  href={r.href}
-                  download={r.title}
-                  target="_blank"
-                  colorScheme="white"
-                  size="lg"
-                  alignSelf="flex-start"
-                  leftIcon={
-                    <Box ml={2}>
-                      <DownloadIcon size={20} strokeWidth={2} />
-                    </Box>
-                  }
-                  spacing={6}
-                >
-                  {"Download factbook"}
-                </ButtonLink>
-              </Stack>
-            )
-          })}
+              }
+              spacing={6}
+            >
+              {"Download report"}
+            </ButtonLink>
+          </Stack>
         </SimpleGrid>
       </Box>
     </SimpleGrid>
