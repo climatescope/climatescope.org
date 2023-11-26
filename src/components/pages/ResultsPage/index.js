@@ -88,9 +88,9 @@ const ResultsPage = ({ clientData, dataPreview }) => {
             <Heading as="h1" variant="pageTitle">
               {"Results"}
             </Heading>
-            <Text variant="subtitle">
+            <Text variant="subtitle" style={{textWrap: "balance"}}>
               {
-                "Climatescope's ranking of the most attractive markets for energy transition projects investment."
+                "Climatescope's ranking of the most attractive markets for investment in energy transition projects."
               }
             </Text>
           </Stack>

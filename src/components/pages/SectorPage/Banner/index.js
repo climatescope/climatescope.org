@@ -32,7 +32,7 @@ const SectorPageBanner = ({ findings, sectorName, reportName }) => {
         alignContent="stretch"
       >
         <ButtonLink
-          href={`/downloads/climatescope-2022-${sectorName.toLowerCase()}-report-en.pdf`}
+          href={`/downloads/climatescope-2022-report-en.pdf`}
           download={reportName}
           target="_blank"
           h="100%"
@@ -56,7 +56,7 @@ const SectorPageBanner = ({ findings, sectorName, reportName }) => {
             </Center>
             <Stack spacing={2} color="brand.900">
               <Heading variant="keyMessageTitle">
-                {`Download ${sectorName} Factbook`}
+                {`Download Energy Transition Factbook`}
               </Heading>
               {/* <Text variant="statisticText">{"Read more about power"}</Text> */}
             </Stack>
