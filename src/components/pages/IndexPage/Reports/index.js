@@ -27,7 +27,7 @@ const Reports = () => {
           bgGradient="linear(to-br, teal.800 0%, teal.900 60%)"
         />
       </Box>
-      <Box gridColumn="2 / -2" gridRow="1" position="relative" color="white">
+      <Box gridColumn="1 / -1" gridRow="1" position="relative" color="white">
         <SimpleGrid
           columns={8}
           gridRowGap={[10, null, 20]}
@@ -39,7 +39,8 @@ const Reports = () => {
               <Link href={report.href} target="_blank" display="block">
                 <Image
                   src={report.imgSrc}
-                  ratio={1 / 1.42}
+                  // ratio={1 / 1.42}
+                  ratio={1 /0.56}
                   type="reportCover"
                   bg="transparent"
                   alt="Climatescope 2023 print report cover"
