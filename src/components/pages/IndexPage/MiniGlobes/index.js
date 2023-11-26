@@ -54,8 +54,8 @@ const MiniGlobesSection = ({ data }) => {
     "northamer": "Northern America",
     "apac": "Asia-Pacific",
     "emea": "Europe",
-    "mena": "Middle East and North Africa",
-    "ssa": "Sub-Saharan Africa",
+    "mena": "Middle East",
+    "ssa": "Africa",
     "latam": "Latin America",
     
   }
