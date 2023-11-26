@@ -44,13 +44,25 @@ import MiniChart from "@components/MiniChart"
 
 Text to be added...
 
-<MiniChart src="/data/sector/transport/global_passenger_EV_sales_2023.csv" />
+<BarChart
+  indicator="Global passenger EV sales"
+  labelKey="indicator"
+  unit="million vehicle sales"
+  src="/transport/global_passenger_EV_sales_2023.csv"
+  precision={0.01}
+/>
 
 ## EV global passenger share of sales
 
 Text to be added...
 
-<MiniChart src="/data/sector/transport/global_passenger_EV_share_of_sales_2023.csv" />
+<LineChart
+  indicator="Global passenger EV share of sales"
+  labelKey="indicator"
+  unit="%"
+  src="/transport/global_passenger_EV_share_of_sales_2023.csv"
+  precision={0.0001}
+/>
 
 ## Top 10 markets for EVs (BEV+PHEV) sales
 
