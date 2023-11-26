@@ -1,0 +1,13 @@
+key,title,href,description,sector,lng,lat
+1,"Dominican Republic","/markets/do","Among the top five most attractive markets in Latin America for renewable energy investment",power,-70.1627,18.7357
+9,"Romania","/markets/ro","Thrid most attractive market for clean transport investment",transport,24.9668,45.9432
+2,"Colombia","/markets/co","Fourth most attractive emerging market for renewable energy investment",power,-74.2973,4.5709
+10,"Uruguay","/markets/uy","Among the top 10 markets for clean transport investment",transport,-55.7658,-32.5228
+3,"Chile","/markets/cl","The most attractive emerging market for renewable energy investment",power,-71.5430,-35.6751
+11,"Mexico","/markets/mx","Second biggest market for electric vehicles in Latin America",transport,-102.5528,23.6345
+4,"Philippines","/markets/ph","Among top five markets globally for renewable energy policies",power,121.7740,12.8797
+12,"Croatia","/markets/hr","Electric vehicle target to push the market forward",transport,15.2000,45.1000
+5,"Brazil","/markets/br","Among top 10 markets globally for renewable energy investment in 2021",power,-51.9253,-14.2350
+6,"India","/markets/in","The second most attractive emerging market for renewable energy investment",power,78.9629,20.5937
+7,"Tanzania","/markets/tz","The most attractive African country for renewable energy investment",power,34.8888,-6.3690
+8,"Vietnam","/markets/vn","Third country globally for wind capacity additions in 2021",power,108.2772,14.0583

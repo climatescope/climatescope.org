@@ -14,6 +14,7 @@ export default SectorPage
 import { Box } from "@chakra-ui/layout"
 import SectorPageBanner from "@components/pages/SectorPage/Banner"
 import AreaChart from "@components/SectorChart/AreaChart"
+import MiniChart from "@components/MiniChart"
 
 # Power
 
@@ -80,3 +81,7 @@ The Asia-Pacific region led the spike in global electricity production with a 9%
   src="/power/generation_by_region.csv"
   precision={1}
 />
+
+MiniCharts can be used here too:
+
+<MiniChart src="/data/sector/power/top_10_markets_for_solar_total_capacity_2022.csv" />

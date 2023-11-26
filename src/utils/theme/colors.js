@@ -200,7 +200,7 @@ const colors = {
     "Biomass & Waste": "#10D5B5",
     "Coal": "#40454F",
     "Geothermal": "#8F4DD2",
-    "Large Hydro": "#01687C",
+    "Large Hydro": "#005673",
     "Marine": "#B70B8C",
     "Natural Gas": "#D7D9DB",
     "Nuclear": "#E24234",
@@ -209,13 +209,15 @@ const colors = {
     "Other - non-fossil": "#C9A0F2",
     "Other - non fossil": "#C9A0F2",
     "Solar PV": "#f8ba01",
+    "Solar pv": "#f8ba01",
     "Solar thermal": "#FFA86A",
-    "Wind": "#02BDE3",
+    "Wind": "rgb(13,157,219)",
 
     // NEW COLORS:
     "Onshore wind": "#02BDE3",
-    "Large hydro": "#01687C",
-    "Small hydro": "#01687C",
+    "Large hydro": "#005673",
+    "Small hydro": "#0082ac",
+    "Small Hydro": "#0082ac",
 
     "Biomass": "#10D5B5",
     "Hydro": "#01687C",

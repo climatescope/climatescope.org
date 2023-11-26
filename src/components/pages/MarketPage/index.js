@@ -130,6 +130,7 @@ function RegionalComparisonChart({ title, data, market }) {
 }
 
 function Section({ item, market }) {
+  const { colors } = useTheme()
   switch (item.type) {
     case "text":
       const paragraphs = item.text.map((d) => [d].flat().join(""))
@@ -210,12 +211,14 @@ function Section({ item, market }) {
           <SimpleGrid
             columns={6}
             gridColumn="1 / -1"
-            bg="teal.100"
             border="0.125rem solid"
-            borderColor="teal.500"
-            color="teal.900"
             borderRadius="md"
             py={4}
+            style={{
+              background: item.data.a1 ? colors.teal[100] : colors.gray[50],
+              borderColor: item.data.a1 ? colors.teal[500] : colors.gray[50],
+              color: item.data.a1 ? colors.teal[900] : colors.gray[500],
+            }}
           >
             <Box gridColumn="span 2" px={3}>
               {item.title}

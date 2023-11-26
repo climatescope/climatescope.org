@@ -1,0 +1,11 @@
+iso,region,position,country,value,unit
+CN,asia,1,Mainland China,5026.95,TWh
+IN,asia,2,India,1100.46,TWh
+US,amer,3,United States,921.20,TWh
+JP,asia,4,Japan,313.09,TWh
+KR,asia,5,South Korea,197.96,TWh
+ID,asia,6,Indonesia,190.23,TWh
+ZA,mena,7,South Africa,183.55,TWh
+DE,eu,8,Germany,162.61,TWh
+RU,asia,9,Russia,151.28,TWh
+AU,asia,10,Australia,149.77,TWh

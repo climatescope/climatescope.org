@@ -1,0 +1,11 @@
+iso,region,position,country,value,unit
+CN,asia,1,Mainland China,29.0886,GW
+IN,asia,2,India,3.685,GW
+VN,asia,3,Vietnam,3.118,GW
+ZA,mena,4,South Africa,0.8,GW
+PH,asia,5,Philippines,0.74,GW
+UZ,asia,6,Uzbekistan,0.6846816,GW
+PK,asia,7,Pakistan,0.66,GW
+ID,asia,8,Indonesia,0.368,GW
+BG,eu,9,Bulgaria,0.15,GW
+JP,asia,10,Japan,0.0847,GW
