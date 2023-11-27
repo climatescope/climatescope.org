@@ -17,9 +17,13 @@ const content = [
   {
     id: 1,
     order: [1, null, null, null, 2],
-    title: (indicatorCount) => `${indicatorCount} indicators across 3 sectors`,
-    description: (indicatorCount, marketCount) => [
-      `As of 2022, Climatescope analyses data from ${marketCount} markets across 3 sectors with a total of ${indicatorCount} indicators.`,
+    // title: (indicatorCount) => `${indicatorCount} indicators across 3 sectors`,
+    // description: (indicatorCount, marketCount) => [
+    //   `As of 2022, Climatescope analyses data from ${marketCount} markets across 3 sectors with a total of ${indicatorCount} indicators.`,
+    // ],
+    title: () => `222 indicators across three sectors`,
+    description: () => [
+      `As of 2023, Climatescope analyzes data from 140 markets across three sectors with a total of 222 indicators.`,
     ],
     action: { text: "Explore sectors", href: "/sectors" },
   },
