@@ -70,9 +70,9 @@ const MiniGlobesSection = ({ data }) => {
       py={20}
     >
       <Container>
-        <SimpleGrid columns={2}>
+        <SimpleGrid columns={8}>
           <HStack
-            gridColumn="1 / -1"
+            gridColumn={["1 / -1", null, "2 / -2"]}
             alignItems="flex-end"
             justifyContent="space-between"
           >
@@ -88,8 +88,8 @@ const MiniGlobesSection = ({ data }) => {
             </Stack>
           </HStack>
           <SimpleGrid
-            columns={[1, 2, null, 4]}
-            gridColumn="1 / -1"
+            columns={[1, 2, null, 3]}
+            gridColumn={["1 / -1", null, "2 / -2"]}
             gridColumnGap={[10, null, 20]}
             gridRowGap={[10, null, 20]}
             py={10}
