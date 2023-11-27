@@ -43,11 +43,19 @@ export async function getStaticProps() {
     `/public/data/mini-rankings`,
     ".csv"
   )
-  const miniGlobesData = await getServerData(
+  const miniGlobesDataRaw = await getServerData(
     `/public/data/share_of_renewable_energy_installed_capacity_by_region.csv`
   )
 
   const marketCounts = getMarketCounts(resultsData)
+
+  const miniGlobesData = miniGlobesDataRaw.map((d) => {
+    return {
+      region: d.region,
+      unit: d.unit,
+      value: Math.round(d["2022"] * 10) / 10,
+    }
+  })
 
   return {
     props: {

@@ -57,7 +57,6 @@ const MiniGlobesSection = ({ data }) => {
     "mena": "Middle East",
     "ssa": "Africa",
     "latam": "Latin America",
-    
   }
   return (
     <Box
@@ -72,7 +71,7 @@ const MiniGlobesSection = ({ data }) => {
       <Container>
         <SimpleGrid columns={8}>
           <HStack
-            gridColumn={["1 / -1", null, "2 / -2"]}
+            gridColumn={["1 / -1", null, "1 / -1"]}
             alignItems="flex-end"
             justifyContent="space-between"
           >
@@ -89,7 +88,7 @@ const MiniGlobesSection = ({ data }) => {
           </HStack>
           <SimpleGrid
             columns={[1, 2, null, 3]}
-            gridColumn={["1 / -1", null, "2 / -2"]}
+            gridColumn={["1 / -1", null, "1 / -1"]}
             gridColumnGap={[10, null, 20]}
             gridRowGap={[10, null, 20]}
             py={10}
@@ -98,8 +97,8 @@ const MiniGlobesSection = ({ data }) => {
               return (
                 <Box key={region}>
                   <SimpleGrid columns={1}>
-                    <Box gridColumn="1 / -1" gridRow="1">
-                      <AspectRatio ratio={1}>
+                    <Center gridColumn="1 / -1" gridRow="1">
+                      <AspectRatio ratio={1} w="100%" maxW="18rem">
                         <Box
                           bgGradient="radial(brand.800, brand.900)"
                           borderRadius="full"
@@ -109,7 +108,7 @@ const MiniGlobesSection = ({ data }) => {
                           <MiniGlobe rotate={rotations[region]} />
                         </Box>
                       </AspectRatio>
-                    </Box>
+                    </Center>
                     <Center gridColumn="1 / -1" gridRow="1" zIndex={1}>
                       <Stack
                         spacing={2}
