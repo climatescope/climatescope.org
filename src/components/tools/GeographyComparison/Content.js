@@ -28,10 +28,13 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
 
   const {
     electricity_prices,
-    electricity_generation,
+    // electricity_generation,
+    cumulative_generation,
     installed_capacity,
     investment_clean_energy,
   } = dataIndicators
+
+  const electricity_generation = cumulative_generation
 
   const investmentData = investment_clean_energy
     ? {
@@ -45,10 +48,14 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
     : null
 
   const formattedScores = {
-    global: formatScore(market.score.data[0].value),
+    // global: formatScore(market.score.data[0].value),
     power: formatScore(market.sectors[0].data[0].value),
-    transport: formatScore(market.sectors[1].data[0].value),
-    buildings: formatScore(market.sectors[2].data[0].value),
+    // transport: formatScore(market.sectors[1].data[0].value),
+    // buildings: formatScore(market.sectors[2].data[0].value),
+
+    global: "1.00",
+    transport: "1.00",
+    buildings: "1.00",
   }
 
   return (
@@ -63,10 +70,12 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
             color="gray.500"
             isTruncated
           >
-            {"Global rank"}
+            {/* {"Global rank"} */}
+            {"Power rank"}
           </Heading>
           <Text fontSize="xl" fontWeight={700} lineHeight="shorter">
-            {formatRank(market.score.data[0].rank)}
+            {/* {formatRank(market.score.data[0].rank)} */}
+            {formatRank(market.sectors[0].data[0].rank)}
             <Text color="gray.500" as="span" lineHeight="inherit">
               {`/${allMarkets.length}`}
             </Text>
@@ -79,10 +88,12 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
             color="gray.500"
             isTruncated
           >
-            {"Global score"}
+            {/* {"Global score"} */}
+            {"Power score"}
           </Heading>
           <Text fontSize="xl" fontWeight={700} lineHeight="shorter">
-            {formattedScores.global}
+            {/* {formattedScores.global} */}
+            {formattedScores.power}
             <Text color="gray.500" as="span" lineHeight="inherit">
               {`/5`}
             </Text>
@@ -143,7 +154,7 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
 
       <ProfileDivider slot={slot} />
 
-      <Stack px={5} spacing={10} alignItems="center">
+      {/* <Stack px={5} spacing={10} alignItems="center">
         <Text fontSize="2xl" fontWeight={600} textAlign="center">
           {"Transport"}
         </Text>
@@ -162,11 +173,11 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
         >
           {formattedScores.transport && `${formattedScores.transport}/5`}
         </Text>
-      </Stack>
+      </Stack> */}
 
-      <ProfileDivider slot={slot} />
+      {/* <ProfileDivider slot={slot} /> */}
 
-      <Stack px={5} spacing={10} alignItems="center">
+      {/* <Stack px={5} spacing={10} alignItems="center">
         <Text fontSize="2xl" fontWeight={600} textAlign="center">
           {"Buildings"}
         </Text>
@@ -185,7 +196,7 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
         >
           {formattedScores.buildings && `${formattedScores.buildings}/5`}
         </Text>
-      </Stack>
+      </Stack> */}
 
       {/* <SimpleGrid columns={[4, 3]}>
         <Box gridColumn={["span 2", "span 1"]}>
@@ -253,7 +264,7 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
         </Box>
       </SimpleGrid> */}
 
-      <ProfileDivider slot={slot} />
+      {/* <ProfileDivider slot={slot} /> */}
 
       <Box>
         <CardTable data={market.policies} sector="Power" compact />
@@ -323,11 +334,11 @@ const Content = ({ market, allMarkets, slot = "reference" }) => {
         <CardTable data={market.policies} sector="Transport" compact />
       </Box>
 
-      <ProfileDivider slot={slot} />
+      {/* <ProfileDivider slot={slot} />
 
       <Box>
         <CardTable data={market.policies} sector="Buildings" compact />
-      </Box>
+      </Box> */}
     </>
   )
 }

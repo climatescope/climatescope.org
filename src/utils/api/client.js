@@ -21,7 +21,7 @@ export const fetchers = {
 }
 
 export const useData = (url, options = {}, cb) => {
-  const format = url.split(".").reverse()[0]
+  const format = url.split(".").slice(-1)[0]
   const fetcher = fetchers[format]
   return useSWRImmutable(url, fetcher(cb), options)
 }
