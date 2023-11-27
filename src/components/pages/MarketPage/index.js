@@ -8,11 +8,13 @@ import {
   Text,
   SimpleGrid,
 } from "@chakra-ui/layout"
+import { Tooltip } from "@chakra-ui/tooltip"
 import { useTheme } from "@chakra-ui/system"
 import { extent, max } from "d3-array"
 
 import AreaChart from "@components/pages/MarketPage/AreaChart"
 import LineChart from "@components/pages/MarketPage/LineChart"
+import MarketBanner from "@components/pages/MarketPage/MarketBanner"
 
 function RegionalComparisonChart({ title, data, market }) {
   const { colors } = useTheme()
@@ -86,41 +88,48 @@ function RegionalComparisonChart({ title, data, market }) {
           {items.map((item, j) => {
             const isHighlighted = market.iso === item.iso.toLowerCase()
             return (
-              <Box
+              <Tooltip
                 key={j}
-                h="1.25rem"
-                w="1.25rem"
-                bg="teal.500"
-                border="0.125rem solid #FFF"
-                position="absolute"
-                borderRadius="full"
-                transform="translate(-50%, -50%)"
-                style={{
-                  left: calculatePosition(item.score) + "%",
-                  top: "50%",
-                  opacity: isHighlighted ? 1 : 0.3,
-                  background: isHighlighted
-                    ? colors.teal[500]
-                    : colors.gray[500],
-                  zIndex: isHighlighted ? 2 : 1,
-                }}
+                label={`${item.name} ${item.score}`}
+                placement="top"
+                hasArrow
               >
-                {isHighlighted ? (
-                  <Box
-                    position="absolute"
-                    top="100%"
-                    left="50%"
-                    transform="translateX(-50%)"
-                    fontWeight={600}
-                    color="teal.500"
-                    whiteSpace="nowrap"
-                  >
-                    {item.name}
-                  </Box>
-                ) : (
-                  ""
-                )}
-              </Box>
+                <Box
+                  tabIndex={0}
+                  h="1.25rem"
+                  w="1.25rem"
+                  bg="teal.500"
+                  border="0.125rem solid #FFF"
+                  position="absolute"
+                  borderRadius="full"
+                  transform="translate(-50%, -50%)"
+                  style={{
+                    left: calculatePosition(item.score) + "%",
+                    top: "50%",
+                    opacity: isHighlighted ? 1 : 0.3,
+                    background: isHighlighted
+                      ? colors.teal[500]
+                      : colors.gray[500],
+                    zIndex: isHighlighted ? 2 : 1,
+                  }}
+                >
+                  {isHighlighted ? (
+                    <Box
+                      position="absolute"
+                      top="100%"
+                      left="50%"
+                      transform="translateX(-50%)"
+                      fontWeight={600}
+                      color="teal.500"
+                      whiteSpace="nowrap"
+                    >
+                      {item.name}
+                    </Box>
+                  ) : (
+                    ""
+                  )}
+                </Box>
+              </Tooltip>
             )
           })}
         </Box>
@@ -287,11 +296,7 @@ export default function MarketPage({ market }) {
   return (
     <Box as="main" pb={0} minH="75vh">
       <Container>
-        {/* <MarketBanner
-            market={market}
-            summary={summary}
-            marketCounts={marketCounts}
-          /> */}
+        <MarketBanner market={market} summary={market.summary || ""} />
 
         {/* <InPageNavigation
             market={market}

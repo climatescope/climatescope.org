@@ -8,6 +8,7 @@ import {
   Wrap,
   WrapItem,
   Divider,
+  Center,
 } from "@chakra-ui/react"
 
 import { Link, ButtonLink } from "@components/Link"
@@ -93,11 +94,42 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
             <SimpleGrid columns={2} py={[5, null, null, 10]}>
               {["power", "transport"].map((d) => {
                 const sector = market.sectors.find((s) => s.id === d)
+
+                if (!sector) {
+                  return (
+                    <Stack key={d} spacing={[3, null, null, 6]}>
+                      <Stack spacing={2}>
+                        <Heading
+                          as="p"
+                          textTransform="capitalize"
+                          fontSize={["2xl", "3xl"]}
+                        >
+                          &nbsp;
+                        </Heading>
+                        <Text
+                          as="h3"
+                          fontWeight={600}
+                          lineHeight="short"
+                          color="gray.500"
+                        >
+                          {`${d[0].toUpperCase() + d.slice(1)} score`}
+                        </Text>
+                      </Stack>
+                      <Divider />
+                      <Center flex={1} bg="gray.25" color="gray.500">
+                        &nbsp;
+                      </Center>
+                    </Stack>
+                  )
+                }
+
                 const score = sector.data[0].value
+
                 return (
                   <Stack key={d} spacing={[3, null, null, 6]}>
                     <Stack spacing={2}>
                       <Heading
+                        as="p"
                         textTransform="capitalize"
                         fontSize={["2xl", "3xl"]}
                       >
@@ -111,6 +143,7 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
                         )}
                       </Heading>
                       <Text
+                        as="h3"
                         fontWeight={600}
                         lineHeight="short"
                         color="gray.500"
@@ -121,15 +154,16 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
                     <Divider />
                     <Box>
                       {score ? (
-                        <Box>
+                        <Center>
                           <RadarChart
                             market={market}
                             sector={d}
                             padding={40}
                             size={175}
+                            maxWidth="16rem"
                           />
-                        </Box>
-                      ) : (
+                        </Center>
+                      ) : marketCount ? (
                         <Text
                           fontSize="sm"
                           fontWeight={400}
@@ -150,6 +184,8 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
                           </Link>
                           {"."}
                         </Text>
+                      ) : (
+                        ""
                       )}
                     </Box>
                     {/* <Divider /> */}

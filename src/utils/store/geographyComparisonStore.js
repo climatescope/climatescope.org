@@ -18,7 +18,7 @@ function determineDomains(domains, markets) {
 
   return domains.map((domain) => {
     const relevant = allIndicators.filter(
-      (d) => d.indicator === domain.indicator
+      (d) => d.indicator.toLowerCase() === domain.indicator.toLowerCase()
     )
     const x = extent(relevant.flatMap((d) => d.x))
     const y = extent(relevant.flatMap((d) => d.y))
@@ -95,13 +95,23 @@ const useStore = create((set, get) => ({
       x: [0, 0],
       y: [0, 0],
     },
+    // {
+    //   indicator: "Installed Capacity",
+    //   x: [0, 0],
+    //   y: [0, 0],
+    // },
     {
-      indicator: "Installed Capacity",
+      indicator: "Installed capacity",
       x: [0, 0],
       y: [0, 0],
     },
+    // {
+    //   indicator: "Electricity Generation",
+    //   x: [0, 0],
+    //   y: [0, 0],
+    // },
     {
-      indicator: "Electricity Generation",
+      indicator: "Cumulative generation",
       x: [0, 0],
       y: [0, 0],
     },
