@@ -17,9 +17,13 @@ const content = [
   {
     id: 1,
     order: [1, null, null, null, 2],
-    title: (indicatorCount) => `${indicatorCount} indicators across 3 sectors`,
-    description: (indicatorCount, marketCount) => [
-      `As of 2022, Climatescope analyses data from ${marketCount} markets across 3 sectors with a total of ${indicatorCount} indicators.`,
+    // title: (indicatorCount) => `${indicatorCount} indicators across 3 sectors`,
+    // description: (indicatorCount, marketCount) => [
+    //   `As of 2022, Climatescope analyses data from ${marketCount} markets across 3 sectors with a total of ${indicatorCount} indicators.`,
+    // ],
+    title: () => `222 indicators across three sectors`,
+    description: () => [
+      `As of 2023, Climatescope analyzes data from 140 markets across three sectors with a total of 222 indicators.`,
     ],
     action: { text: "Explore sectors", href: "/sectors" },
   },
@@ -29,7 +33,7 @@ const content = [
     title: "Power",
     sector: "power",
     img: "energy.jpg",
-    alt: "https://unsplash.com/photos/Ilpf2eUPpUE",
+    alt: "Power sector",
     href: "/sectors/power",
     isNew: false,
     comingSoon: false,
@@ -40,7 +44,7 @@ const content = [
     title: "Transport",
     sector: "transport",
     img: "transport.jpg",
-    alt: "https://unsplash.com/photos/2JvEjF0tf50",
+    alt: "Transport sector",
     href: "/sectors/transport",
     isNew: true,
     comingSoon: false,
@@ -51,7 +55,7 @@ const content = [
     title: "Buildings",
     sector: "buildings",
     img: "buildings.jpg",
-    alt: "https://unsplash.com/photos/MUfokL109CQ",
+    alt: "Buildings sector",
     href: "/sectors/buildings",
     isNew: true,
     comingSoon: false,

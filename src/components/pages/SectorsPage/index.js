@@ -18,7 +18,7 @@ const SectorsPage = ({ sectors, marketCounts }) => {
               </Heading>
               <Text variant="subtitle">
                 {
-                  "Climatescope has been expanded for 2021 to cover three major segments of the energy transition – buildings, power and transport. Click below to learn about major investment and deployment trends in each."
+                  "Climatescope 2023 covers three major segments of the energy transition – buildings, power and transport. Learn about the major investment and deployment trends in each."
                 }
               </Text>
             </Stack>

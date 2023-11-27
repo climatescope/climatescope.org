@@ -28,9 +28,9 @@ const bannerActions = [
   },
   {
     key: 3,
-    title: "Press release",
-    description: `${year} findings summary`,
-    href: "/blog/developing-countries-raise-their-clean-power-policy-ambitions/",
+    title: "2023 Full report",
+    description: "Download the full report",
+    href: "/downloads/climatescope-2023-report-en.pdf",
     color: "teal.800",
     icon: "ReportIcon",
   },

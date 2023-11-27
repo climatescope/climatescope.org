@@ -25,8 +25,8 @@ const IndexPage = ({
           <Banner />
           <GlobePreview globeInsights={globeInsights} />
           <Sectors metaData={metaData} />
-          <Highlights miniRankingsPaths={miniRankingsPaths} />
-          <TechnologiesMap />
+          {/* <Highlights miniRankingsPaths={miniRankingsPaths} />
+          <TechnologiesMap /> */}
           <MiniGlobes data={miniGlobesData} />
           <Tools allTools={allTools} />
           <BnefBanner />
