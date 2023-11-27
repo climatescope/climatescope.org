@@ -15,6 +15,7 @@ import { extent, max } from "d3-array"
 import AreaChart from "@components/pages/MarketPage/AreaChart"
 import LineChart from "@components/pages/MarketPage/LineChart"
 import MarketBanner from "@components/pages/MarketPage/MarketBanner"
+import { CheckIcon, CancelIcon } from "@components/Icon"
 
 function RegionalComparisonChart({ title, data, market }) {
   const { colors } = useTheme()
@@ -144,7 +145,7 @@ function Section({ item, market }) {
     case "text":
       const paragraphs = item.text.map((d) => [d].flat().join(""))
       return (
-        <Stack spacing={10} gridColumn="2 / -3">
+        <Stack spacing={10} gridColumn={["1 / -1", null, "2 / -3"]}>
           {paragraphs.map((paragraph, i) => (
             <Text key={i}>{paragraph}</Text>
           ))}
@@ -152,7 +153,7 @@ function Section({ item, market }) {
       )
     case "chart-regional-comparison":
       return (
-        <Box gridColumn="2 / -2">
+        <Box gridColumn={["1 / -1", null, "2 / -2"]}>
           <RegionalComparisonChart
             title={item.title}
             data={item.data}
@@ -162,7 +163,7 @@ function Section({ item, market }) {
       )
     case "chart-line":
       return (
-        <Box gridColumn="2 / -2">
+        <Box gridColumn={["1 / -1", null, "2 / -2"]}>
           <LineChart
             data={{ indicator: item.title, subindicators: item.data }}
             domainX={extent(
@@ -191,7 +192,7 @@ function Section({ item, market }) {
         (o) => o.value
       )
       return (
-        <Box gridColumn="span 4">
+        <Box gridColumn={["span 8", null, "span 4"]}>
           <AreaChart
             data={{ indicator: item.title, subindicators: item.data }}
             domainX={[2013, 2022]}
@@ -201,18 +202,18 @@ function Section({ item, market }) {
       )
     case "chart-boolean":
       return (
-        <SimpleGrid columns={6} gridColumn="2 / -2" gridRowGap={4}>
-          <Box gridColumn="span 2" px={3}>
+        <SimpleGrid columns={6} gridColumn={["1 / -1", null, "2 / -2"]} gridRowGap={4}>
+          <Box gridColumn="span 2" px={3} display={["none", null, "inline"]}>
             <Text fontWeight={600} fontSize="sm" textTransform="uppercase">
               {"Type"}
             </Text>
           </Box>
-          <Box gridColumn="span 2" px={3}>
+          <Box gridColumn={["span 4", null, "span 2"]} px={3}>
             <Text fontWeight={600} fontSize="sm" textTransform="uppercase">
               {"Question"}
             </Text>
           </Box>
-          <Box gridColumn="span 2" px={3} textAlign="right">
+          <Box gridColumn={["span 2", null, "span 2"]} px={3} textAlign="right">
             <Text fontWeight={600} fontSize="sm" textTransform="uppercase">
               {"Availability"}
             </Text>
@@ -229,25 +230,26 @@ function Section({ item, market }) {
               color: item.data.a1 ? colors.teal[900] : colors.gray[500],
             }}
           >
-            <Box gridColumn="span 2" px={3}>
+            <Box gridColumn="span 2" px={3} display={["none", null, "inline"]}>
               {item.title}
             </Box>
-            <Box gridColumn="span 3" px={3}>
+            <Box gridColumn={["span 4", null, "span 2"]} px={3}>
               {item.data.question}
             </Box>
-            <Box gridColumn="span 1" px={3} textAlign="right">
-              {item.data.a1 ? "YES" : "NO"}
+            <Box gridColumn={["span 2", null, "span 2"]} px={3} textAlign="right">
+              {/* {item.data.a1 ? "YES" : "NO"} */}
+              {item.data.a1 ? <CheckIcon /> : <CancelIcon />}
             </Box>
           </SimpleGrid>
         </SimpleGrid>
       )
     case "chart-multibox":
       return (
-        <Stack spacing={6} gridColumn="2 / -2">
+        <Stack spacing={6} gridColumn={["1 / -1", null, "2 / -2"]}>
           <Heading as="h4" fontSize="2xl">
             {item.title}
           </Heading>
-          <SimpleGrid columns={3} w="100%" gridColumnGap={6} gridRowGap={6}>
+          <SimpleGrid columns={[1, null, 3]} w="100%" gridColumnGap={6} gridRowGap={6}>
             {item.data.map((d) => {
               return d.answer ? (
                 <Box
@@ -258,6 +260,7 @@ function Section({ item, market }) {
                   borderColor="purple.500"
                   borderRadius="md"
                   color="purple.900"
+                  fontWeight={500}
                 >
                   {d.policy}
                 </Box>
@@ -268,6 +271,7 @@ function Section({ item, market }) {
                   bg="gray.50"
                   color="gray.500"
                   borderRadius="md"
+                  fontWeight={500}
                 >
                   {d.policy}
                 </Box>
@@ -281,7 +285,7 @@ function Section({ item, market }) {
       const fontSize = { h2: "4xl", h3: "3xl", h4: "2xl" }[item.level || "h2"]
       return (
         <SimpleGrid columns={8} gridColumn="1 / -1">
-          <Heading as={item.level} fontSize={fontSize} gridColumn="2 / -2">
+          <Heading as={item.level} fontSize={fontSize} gridColumn={["1 / -1", null, "2 / -2"]}>
             {item.title}
           </Heading>
           {item.items?.map((item, i) => {
