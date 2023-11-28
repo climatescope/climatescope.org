@@ -22,7 +22,7 @@ const Tools = ({ allTools }) => {
 
       {allTools
         .sort((a, b) => a.order - b.order)
-        .map(({ src, title, slug, description }) => {
+        .map(({ title, description, slug, src }) => {
           return (
             <ToolCard
               key={slug}

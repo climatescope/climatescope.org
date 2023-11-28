@@ -37,6 +37,7 @@ const content = [
     href: "/sectors/power",
     isNew: false,
     comingSoon: false,
+    indicators: "140",
   },
   {
     id: 3,
@@ -48,6 +49,7 @@ const content = [
     href: "/sectors/transport",
     isNew: true,
     comingSoon: false,
+    indicators: "140",
   },
   {
     id: 4,
@@ -59,6 +61,7 @@ const content = [
     href: "/sectors/buildings",
     isNew: true,
     comingSoon: false,
+    indicators: "29",
   },
 ]
 
@@ -68,11 +71,11 @@ const SummaryCard = ({ title, description, action, order, metaData }) => {
       <Center fontSize="3xl" fontWeight={700} w="4rem" h="4rem" bg="white">
         {"i"}
       </Center>
-      <Center px={[0, null, 6]} py={[10]}>
+      <Center px={[3, null, 6]} py={[10]}>
         <Stack spacing={6} alignItems="flex-start" color="white">
           <Heading
             as="h2"
-            fontSize={["xl", null, null, "2xl"]}
+            fontSize="2xl"
             lineHeight="shorter"
             maxW="15rem"
           >
@@ -115,6 +118,7 @@ const SectorCard = ({
   isNew,
   comingSoon,
   marketCounts,
+  indicators,
 }) => {
   return (
     <LinkBox as={Box} order={order}>
@@ -165,7 +169,7 @@ const SectorCard = ({
             color="gray.500"
             fontWeight={600}
           >
-            {comingSoon ? "" : `${marketCounts[sector]} markets`}
+            {comingSoon ? "" : `${indicators} markets`}
           </Text>
         </Stack>
       </Stack>

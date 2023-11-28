@@ -7,7 +7,7 @@ import Image from "@components/Image"
 
 const report = {
   id: 1,
-  title: "Energy Transition Factbook",
+  title: "Power Transition Factbook",
   href: "/downloads/climatescope-2023-report-en.pdf",
   year: 2023,
   imgSrc: "climatescope-2023-report-en-cover.jpg",
@@ -34,7 +34,7 @@ const Reports = () => {
           py={24}
           alignItems="center"
         >
-          <Stack gridColumn={["span 8", null, "span 4", "span 3"]}>
+          <Stack gridColumn={["2 / -2", null, "span 4", "span 3"]}>
             <Box boxShadow="lg">
               <Link href={report.href} target="_blank" display="block">
                 <Image

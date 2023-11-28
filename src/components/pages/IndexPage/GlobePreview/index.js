@@ -62,7 +62,7 @@ const GlobePreview = ({
           gridColumnGap={[0, null, null, 6]}
           alignItems="center"
         >
-          <Box gridColumn="span 5" px={20}>
+          <Box gridColumn={["span 5", null, "span 6", "span 5"]} px={20}>
             <Box mx="auto" maxW={["24rem", null, "32rem", "40rem"]}>
               {loaded && (
                 <Globe
