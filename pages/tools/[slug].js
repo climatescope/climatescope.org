@@ -11,7 +11,7 @@ export default function ToolPage({ source }) {
     <div>
       <SEO {...frontmatter} />
       <Container as="main">
-        <Stack spacing={8} pt={10} pb={20} alignItems="center" textAlign="center">
+        <Stack spacing={10} pt={10} pb={20} alignItems="center" textAlign="center">
           <MDXRemote {...source} components={components} />
         </Stack>
       </Container>

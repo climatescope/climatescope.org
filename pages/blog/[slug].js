@@ -113,22 +113,6 @@
 //   )
 // }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import { MDXRemote } from "next-mdx-remote"
 import { Container, Stack } from "@chakra-ui/layout"
 
@@ -148,7 +132,11 @@ export default function Page({ source }) {
             spacing={10}
             gridColumn={["1 / -1", null, null, "2 / span 5"]}
             sx={{
-              "h1 + p": { color: "gray.500", fontSize: ["lg", null, "xl"] },
+              "h1 + p": {
+                fontSize: ["lg", null, "2xl"],
+                lineHeight: "short",
+                fontWeight: 500,
+              },
             }}
           >
             <MDXRemote {...source} components={components} />
