@@ -46,6 +46,17 @@ const components = {
       />
     )
   },
+  h4: (props) => {
+    return (
+      <Heading
+        as="h4"
+        w="100%"
+        fontSize={["xl", null, "xl"]}
+        maxW="container.sm"
+        {...props}
+      />
+    )
+  },
   a: (props) => {
     return (
       <Link
