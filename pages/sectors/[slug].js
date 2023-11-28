@@ -70,6 +70,7 @@ export default function SectorPage({ source }) {
               gridRow="2"
               alignSelf="start"
               top={0}
+              display={["none", null, null, "block"]}
             >
               <Stack
                 py={8}
