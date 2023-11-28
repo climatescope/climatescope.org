@@ -18,6 +18,7 @@ const IndexPage = ({
   miniRankingsPaths,
   miniGlobesData,
 }) => {
+  console.log(allTools)
   return (
     <Box as="main" minH="75vh">
       <Container>

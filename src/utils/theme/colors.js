@@ -264,6 +264,9 @@ const colors = {
     "UK": "#016121",
     "Rest of Europe": "#729cff",
     "Germany": "#F8BA01",
+
+    "developed markets": "#F47956",
+    "developing markets": "#7A7AEB",
   },
 }
 
