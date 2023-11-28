@@ -421,3 +421,13 @@ export const MethodologyIcon = (props) => {
     </Icon>
   )
 }
+
+export const CancelIcon = (props) => {
+  return (
+    <Icon {...props}>
+        <path d="M18 6L6 18" />
+        <path d="M6 6L18 18" />
+        <p />
+    </Icon>
+  )
+}

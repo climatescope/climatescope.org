@@ -34,13 +34,12 @@ const Reports = () => {
           py={24}
           alignItems="center"
         >
-          <Stack gridColumn={["span 8", null, "span 4"]}>
+          <Stack gridColumn={["span 8", null, "span 4", "span 3"]}>
             <Box boxShadow="lg">
               <Link href={report.href} target="_blank" display="block">
                 <Image
                   src={report.imgSrc}
-                  // ratio={1 / 1.42}
-                  ratio={1 /0.56}
+                  ratio={1 / 1.42}
                   type="reportCover"
                   bg="transparent"
                   alt="Climatescope 2023 print report cover"
@@ -48,7 +47,7 @@ const Reports = () => {
               </Link>
             </Box>
           </Stack>
-          <Stack spacing={6} gridColumn={["span 8", null, null, "span 4"]}>
+          <Stack spacing={6} gridColumn={["span 8", null, null, "5 / -1"]}>
             <Heading as="h2" variant="sectionTitle" color="white">
               {report.title}
             </Heading>
