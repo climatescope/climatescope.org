@@ -34,7 +34,7 @@ const Reports = () => {
           py={24}
           alignItems="center"
         >
-          <Stack gridColumn={["span 8", null, "span 4", "span 3"]}>
+          <Stack gridColumn={["2 / -2", null, "span 4", "span 3"]}>
             <Box boxShadow="lg">
               <Link href={report.href} target="_blank" display="block">
                 <Image

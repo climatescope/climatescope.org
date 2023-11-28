@@ -45,7 +45,7 @@ export default function Banner() {
             <Box w="100%" minW="65rem">
               <Image
                 src="cover.jpg"
-                alt="Climatescope 2022 cover image"
+                alt="Climatescope 2023 cover image"
                 ratio={2.7 / 1}
                 type="cover"
               />
@@ -99,9 +99,9 @@ export default function Banner() {
             >
               <HStack
                 spacing={5}
-                py={6}
+                py={[3, null, 6]}
                 borderY="0.0625rem solid"
-                borderColor="gray.100"
+                borderColor={["white", null, "gray.100"]}
                 h="100%"
                 alignItems="flex-start"
               >
