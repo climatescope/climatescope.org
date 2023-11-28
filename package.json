@@ -23,7 +23,7 @@
     "serve": "serve out",
     "clean": "rm -Rf out && rm -Rf .next",
     "prepareImages": "node ./scripts/images.js",
-    "buildNavigation": "node ./scripts/navigation.js",
+    "buildNavigation": "node ./scripts/navigation.mjs",
     "test": "echo 'No tests' && exit 0"
   },
   "engines": {
