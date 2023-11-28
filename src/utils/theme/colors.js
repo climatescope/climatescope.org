@@ -161,6 +161,20 @@ const colors = {
     "800": "#0E2A4E",
     "900": "#001D3D",
   },
+
+  cyan: {
+    "50": "#F1FBFD",
+    "100": "#D5F2FB",
+    "200": "#B4E8F8",
+    "300": "#84DBF5",
+    "400": "#0DA9D9",
+    "500": "#009CCC",
+    "600": "#0081A8",
+    "700": "#007599",
+    "800": "#005E7A",
+    "900": "#003342",
+  },
+
   twitter: {
     "400": "#39ADF4",
     "500": "#1da1f2",
@@ -265,8 +279,8 @@ const colors = {
     "Rest of Europe": "#729cff",
     "Germany": "#F8BA01",
 
-    "developed markets": "#F47956",
-    "developing markets": "#7A7AEB",
+    "developed markets": "#0DA9D9",
+    "developing markets": "#9191EE",
   },
 }
 
