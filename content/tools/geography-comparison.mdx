@@ -1,0 +1,20 @@
+export const metaData = {
+  title: "Geography comparison",
+  description: "Select up to three markets to compare them.",
+  src: "geography-comparison.jpg",
+  date: "2021-12-20",
+  order: 1,
+}
+
+import GeographyComparison from "@components/tools/GeographyComparison"
+import ToolPage from "@components/pages/ToolPage"
+
+export default function Layout({ children }) {
+  return <ToolPage>{children}</ToolPage>
+}
+
+# Geography comparison
+
+Select up to three markets to compare them across a various indicators and metrics.
+
+<GeographyComparison />

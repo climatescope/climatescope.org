@@ -27,7 +27,7 @@
     "test": "echo 'No tests' && exit 0"
   },
   "engines": {
-    "node": "16.x"
+    "node": "18.x"
   },
   "devDependencies": {
     "prettier": "^2.3.1"
@@ -58,6 +58,7 @@
     "mapbox-gl": "^2.6.0",
     "next": "^14.0.3",
     "next-compose-plugins": "^2.2.1",
+    "next-mdx-remote": "^4.4.1",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

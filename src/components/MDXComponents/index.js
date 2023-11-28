@@ -1,10 +1,11 @@
 import { Box, Heading, Text, Stack } from "@chakra-ui/react"
 
 import { Link } from "@components/Link"
+import Image from "@components/Image"
 
 const components = {
+  Image,
   h1: (props) => {
-    console.log("COMP", props)
     return (
       <Heading
         as="h1"

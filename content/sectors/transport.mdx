@@ -1,0 +1,73 @@
+export const metaData = {
+  title: "Transport",
+  thumbnail: "transport.jpg",
+  cover: "transport-cover.jpg",
+  description: "Transport description",
+  reportName: "Emerging Markets Electrified Transport Factbook",
+  order: 2,
+}
+
+import SectorPage from "@components/pages/SectorPage"
+export default SectorPage
+
+import { Box } from "@chakra-ui/layout"
+import SectorPageBanner from "@components/pages/SectorPage/Banner"
+import AreaChart from "@components/SectorChart/AreaChart"
+import LineChart from "@components/SectorChart/LineChart"
+import BarChart from "@components/SectorChart/BarChart"
+import MiniChart from "@components/MiniChart"
+
+# Transport
+
+<SectorPageBanner
+  findings={[
+    {
+      title: "10.3 million",
+      description: "EVs sold globally in 2022",
+    },
+    {
+      title: "15% ",
+      description: "2022 EV penetration in total passenger vehicle sales",
+    },
+    {
+      title: "20x",
+      description:
+        "Growth in emerging markets EV sales (excluding Mainland China) since 2017",
+    },
+  ]}
+  sectorName={metaData.title}
+  reportName={metaData.reportName}
+/>
+
+
+## EV global passenger sales
+
+Global passenger EV sales hit 10.3 million in 2022, more than tripling from two years earlier.
+
+<BarChart
+  indicator="Global passenger EV sales"
+  labelKey="indicator"
+  unit="million vehicle sales"
+  src="/transport/global_passenger_EV_sales_2023.csv"
+  precision={0.01}
+/>
+
+ In six years, the penetration of EVs in total passenger vehicle sales jumped 10-fold. EVs accounted for 15% of global car sales in 2022, up from just 1.4% in 2017.
+
+<LineChart
+  indicator="Global passenger EV share of sales"
+  labelKey="indicator"
+  unit="%"
+  src="/transport/global_passenger_EV_share_of_sales_2023.csv"
+  precision={0.0001}
+/>
+
+## EVs sales by market type
+
+In developed markets, EV sales (both battery-electric and plug-in hybrid) jumped 21% year-on-year in 2022, to 4 million, reaching over 14% of these regions' total passender car sales. The US was the top market for EV sales in this group, with over 970,000 EVs sold.
+
+<MiniChart src="/data/sector/transport/top_10_developed_markets_in_EV_sales_2022.csv" />
+
+Mainland China accounted for nearly 96% of EV sales (both battery-electric and plug-in hybrid) in emerging markets in 2022, with 6.1 million vehicles sold. Other emerging markets saw steep EV sales growth from 2021 to 2022, nearly doubling to reach a combined 208,000 units. Sales have grown more than 17-fold since 2017, though the overall figures remain small.
+
+<MiniChart src="/data/sector/transport/top_10_developing_markets_in_EV_sales_2022.csv" />
