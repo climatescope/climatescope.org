@@ -58,6 +58,7 @@ export async function getMDXPage(dir = "", slug = "") {
   )
   const options = { parseFrontmatter: true }
   const source = await serialize(content, options)
+  source.frontmatter.layout = source?.frontmatter?.layout || dir
   return source
 }
 

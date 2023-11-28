@@ -1,20 +1,11 @@
-export const metaData = {
-  title: "Power",
-  thumbnail: "energy.jpg",
-  cover: "energy-cover.jpg",
-  reportName: "Energy Transition Factbook",
-  description:
-    "Renewables investment shifted sharply back to developing nations in 2020",
-  order: 1,
-}
-
-import SectorPage from "@components/pages/SectorPage"
-export default SectorPage
-
-import { Box } from "@chakra-ui/layout"
-import SectorPageBanner from "@components/pages/SectorPage/Banner"
-import AreaChart from "@components/SectorChart/AreaChart"
-import MiniChart from "@components/MiniChart"
+---
+title: "Power"
+thumbnail: "energy.jpg"
+cover: "energy-cover.jpg"
+reportName: "Energy Transition Factbook"
+description: "Renewables investment shifted sharply back to developing nations in 2020"
+order: 1
+---
 
 # Power
 
@@ -34,8 +25,8 @@ import MiniChart from "@components/MiniChart"
         "Wind and solar's share of global power capacity additions in 2022",
     },
   ]}
-  sectorName={metaData.title}
-  reportName={metaData.reportName}
+  sectorName={"THIS IS A TITLE"}
+  reportName={"THIS IS THE REPORT NAME"}
 />
 
 ## Capacity by technology
@@ -91,6 +82,6 @@ Ten markets were responsible for 78% of all solar capacity added in 2022. Mainla
 
 ## Wind capacity additions
 
-Wind installations are concentrated in a relatively small number of economies, the top 10 of which accounted for 85% of global capacity additions in 2022. Mainland China represented 55% of all wind built, while the US, the second-biggest market, comprised 10% of the total capacity added. 
+Wind installations are concentrated in a relatively small number of economies, the top 10 of which accounted for 85% of global capacity additions in 2022. Mainland China represented 55% of all wind built, while the US, the second-biggest market, comprised 10% of the total capacity added.
 
 <MiniChart src="/data/sector/power/top_10_markets_for_wind_total_capacity_2022.csv" />

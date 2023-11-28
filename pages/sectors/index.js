@@ -1,24 +1,34 @@
-import { getPages, getServerData } from "@utils/api/server"
-import SEO from "@components/SEO"
-
+import { getServerData, getAllMDXSlugs, getMDXPage } from "@utils/api/server"
 import getMarketCounts from "@utils/getMarketCounts"
+import SEO from "@components/SEO"
 import SectorsPage from "@components/pages/SectorsPage"
 
-export default function SectorsPageWrapper({ sectors, marketCounts }) {
+export default function SectorsPageWrapper({ marketCounts, allSectors }) {
   return (
     <>
       <SEO
         title="Sectors"
         description="The energy transition investment gap is growing, despite COP26 pledges"
       />
-      <SectorsPage sectors={sectors} marketCounts={marketCounts} />
+      <SectorsPage sectors={allSectors} marketCounts={marketCounts} />
     </>
   )
 }
 
 export async function getStaticProps() {
-  const sectors = (await getPages("sectors")) || []
   const marketsData = await getServerData(`public/data/results-2022.json`)
   const marketCounts = getMarketCounts(marketsData)
-  return { props: { sectors, marketCounts } }
+
+  const allSectorNames = await getAllMDXSlugs("sectors")
+  const allSectors = await Promise.all(
+    allSectorNames.map((sectorName) => {
+      return getMDXPage("sectors", sectorName)
+    })
+  ).then((d) => {
+    return d.map((dd, i) => {
+      return { ...dd.frontmatter, slug: allSectorNames[i] }
+    })
+  })
+
+  return { props: { marketCounts, allSectors } }
 }

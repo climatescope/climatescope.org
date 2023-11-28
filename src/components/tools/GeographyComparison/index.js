@@ -40,7 +40,7 @@ const GeographyComparison = () => {
           spacing={5}
           gridRow="1 / -1"
           pb={5}
-          display={["none", null, "block"]}
+          display={["none", null, "flex"]}
         >
           <ComparisonSelect allMarkets={allMarkets} slot={0} />
           <ComparisonContent slot={0} allMarkets={allMarkets} />

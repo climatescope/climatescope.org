@@ -13,7 +13,11 @@ const components = {
         fontSize={["3xl", null, "5xl"]}
         maxW="container.sm"
         sx={{
-          "+p": { color: "#F05" },
+          "h1 + p": {
+            fontSize: ["lg", null, "2xl"],
+            lineHeight: "short",
+            fontWeight: 500,
+          },
         }}
         {...props}
       />

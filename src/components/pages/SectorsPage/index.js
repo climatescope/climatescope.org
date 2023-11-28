@@ -6,7 +6,7 @@ import SectorCard from "@components/SectorCard"
 const SectorsPage = ({ sectors, marketCounts }) => {
   return (
     <Box as="main" pt={10} pb={40} minH="75vh">
-      <Stack spacing={[10, null, 20]}>
+      <Stack spacing={[10, null, 20]} alignItems="center">
         <Container>
           <SimpleGrid columns={3}>
             <Stack
@@ -25,7 +25,7 @@ const SectorsPage = ({ sectors, marketCounts }) => {
           </SimpleGrid>
         </Container>
         <Container>
-          <SimpleGrid columns={[6, null, null, 3]}>
+          <SimpleGrid columns={[1, null, null, 3]}>
             {sectors.map((sector, i) => {
               return (
                 <SectorCard

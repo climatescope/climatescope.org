@@ -1,21 +1,11 @@
-export const metaData = {
-  title: "Buildings",
-  thumbnail: "buildings.jpg",
-  cover: "buildings-cover.jpg",
-  reportName: "Electrified Heating Factbook",
-  description:
-    "Renewables investment shifted sharply back to developing nations in 2020",
-  order: 3,
-}
-
-import SectorPage from "@components/pages/SectorPage"
-export default SectorPage
-
-import { Box } from "@chakra-ui/layout"
-import SectorPageBanner from "@components/pages/SectorPage/Banner"
-import AreaChart from "@components/SectorChart/AreaChart"
-import LineChart from "@components/SectorChart/LineChart"
-import MiniChart from "@components/MiniChart"
+---
+title: "Buildings"
+thumbnail: "buildings.jpg"
+cover: "buildings-cover.jpg"
+reportName: "Electrified Heating Factbook"
+description: "Renewables investment shifted sharply back to developing nations in 2020"
+order: 3
+---
 
 # Buildings
 
@@ -23,12 +13,12 @@ import MiniChart from "@components/MiniChart"
   findings={[
     {
       title: "8%",
-      description: "Average compound annual growth rate (CAGR) of heat pump sales in selected markets since 2012.",
+      description:
+        "Average compound annual growth rate (CAGR) of heat pump sales in selected markets since 2012.",
     },
     {
       title: "81%",
-      description:
-        "Concentration of heat pump sales in just 5 markets",
+      description: "Concentration of heat pump sales in just 5 markets",
     },
     {
       title: "83%",
@@ -36,13 +26,13 @@ import MiniChart from "@components/MiniChart"
         "Share of surveyed markets with heat pump purchase incentives in place",
     },
   ]}
-  sectorName={metaData.title}
-  reportName={metaData.reportName}
+  sectorName={"THIS IS A TITLE"}
+  reportName={"THIS IS THE REPORT NAME"}
 />
 
 ## Heat pump sales by market
 
-Global heat pump sales rose only 1% from 2021 to 2022, to 11 million, 7 percentage points less than the average compound annual growth rate since 2012. Sales remain concentrated in just five markets, with – the US, Japan, mainland China, France and Italy – together accounting for 81% of the total in 2022. 
+Global heat pump sales rose only 1% from 2021 to 2022, to 11 million, 7 percentage points less than the average compound annual growth rate since 2012. Sales remain concentrated in just five markets, with – the US, Japan, mainland China, France and Italy – together accounting for 81% of the total in 2022.
 
 <MiniChart src="/data/sector/buildings/top_10_heat_pump_sales_2022.csv" />
 

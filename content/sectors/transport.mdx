@@ -1,21 +1,11 @@
-export const metaData = {
-  title: "Transport",
-  thumbnail: "transport.jpg",
-  cover: "transport-cover.jpg",
-  description: "Transport description",
-  reportName: "Emerging Markets Electrified Transport Factbook",
-  order: 2,
-}
-
-import SectorPage from "@components/pages/SectorPage"
-export default SectorPage
-
-import { Box } from "@chakra-ui/layout"
-import SectorPageBanner from "@components/pages/SectorPage/Banner"
-import AreaChart from "@components/SectorChart/AreaChart"
-import LineChart from "@components/SectorChart/LineChart"
-import BarChart from "@components/SectorChart/BarChart"
-import MiniChart from "@components/MiniChart"
+---
+title: "Transport"
+thumbnail: "transport.jpg"
+cover: "transport-cover.jpg"
+description: "Transport description"
+reportName: "Emerging Markets Electrified Transport Factbook"
+order: 2
+---
 
 # Transport
 
@@ -35,10 +25,9 @@ import MiniChart from "@components/MiniChart"
         "Growth in emerging markets EV sales (excluding Mainland China) since 2017",
     },
   ]}
-  sectorName={metaData.title}
-  reportName={metaData.reportName}
+  sectorName={"THIS IS A TITLE"}
+  reportName={"THIS IS THE REPORT NAME"}
 />
-
 
 ## EV global passenger sales
 
@@ -52,7 +41,7 @@ Global passenger EV sales hit 10.3 million in 2022, more than tripling from two 
   precision={0.01}
 />
 
- In six years, the penetration of EVs in total passenger vehicle sales jumped 10-fold. EVs accounted for 15% of global car sales in 2022, up from just 1.4% in 2017.
+In six years, the penetration of EVs in total passenger vehicle sales jumped 10-fold. EVs accounted for 15% of global car sales in 2022, up from just 1.4% in 2017.
 
 <LineChart
   indicator="Global passenger EV share of sales"
