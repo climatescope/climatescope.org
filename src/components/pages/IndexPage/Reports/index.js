@@ -7,7 +7,7 @@ import Image from "@components/Image"
 
 const report = {
   id: 1,
-  title: "Energy Transition Factbook",
+  title: "Power Transition Factbook",
   href: "/downloads/climatescope-2023-report-en.pdf",
   year: 2023,
   imgSrc: "climatescope-2023-report-en-cover.jpg",
