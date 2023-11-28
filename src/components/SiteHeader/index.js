@@ -68,7 +68,7 @@ const SiteHeader = ({ navigation }) => {
             >
               {allNavigation.map(({ title, path }) => {
                 return (
-                  <Link key={path} href={path} variant="mainNav">
+                  <Link key={title} href={path} variant="mainNav">
                     {title}
                   </Link>
                 )
@@ -144,7 +144,7 @@ const SiteHeader = ({ navigation }) => {
                 >
                   {allNavigation.map(({ title, path }) => {
                     return (
-                      <Link key={path} href={path} variant="mainNav">
+                      <Link key={title} href={path} variant="mainNav">
                         {title}
                       </Link>
                     )
@@ -190,11 +190,10 @@ const SiteHeader = ({ navigation }) => {
                     >
                       {"Download report"}
                     </ButtonLink>
-                    
                   </Stack>
                   {aboutItems.map((navItem) => {
                     return (
-                      <Stack spacing={[5, null, 10]} key={navItem.path}>
+                      <Stack spacing={[5, null, 10]} key={navItem.title}>
                         <Link
                           href={navItem.path}
                           fontWeight={700}
@@ -209,7 +208,7 @@ const SiteHeader = ({ navigation }) => {
                             {navItem.links.map((d) => {
                               return (
                                 <Link
-                                  key={d.path}
+                                  key={d.title}
                                   href={d.path}
                                   fontSize={["md", null, "xl"]}
                                   lineHeight="short"
@@ -229,7 +228,7 @@ const SiteHeader = ({ navigation }) => {
                 <Stack spacing={[5, null, 10]} gridColumn="span 3">
                   {extendedNavigation.slice(0, 3).map((navItem) => {
                     return (
-                      <Stack spacing={[5, null, 10]} key={navItem.path}>
+                      <Stack spacing={[5, null, 10]} key={navItem.title}>
                         <Link
                           href={navItem.path}
                           fontWeight={700}
@@ -244,7 +243,6 @@ const SiteHeader = ({ navigation }) => {
                               return (
                                 <Box key={d.title}>
                                   <Link
-                                    key={d.path}
                                     href={d.path}
                                     fontSize={["md", null, "xl"]}
                                     lineHeight="short"
@@ -264,7 +262,7 @@ const SiteHeader = ({ navigation }) => {
                 <Stack spacing={[5, null, 10]} gridColumn="span 3">
                   {extendedNavigation.slice(3).map((navItem) => {
                     return (
-                      <Stack spacing={[5, null, 10]} key={navItem.path}>
+                      <Stack spacing={[5, null, 10]} key={navItem.title}>
                         <Link
                           href={navItem.path}
                           fontWeight={700}
@@ -278,7 +276,7 @@ const SiteHeader = ({ navigation }) => {
                             {navItem.links.map((d) => {
                               return (
                                 <Link
-                                  key={d.path}
+                                  key={d.title}
                                   href={d.path}
                                   fontSize={["md", null, "xl"]}
                                   lineHeight="short"

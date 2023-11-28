@@ -1,6 +1,7 @@
 // import { useEffect } from "react"
 import { MDXProvider } from "@mdx-js/react"
-import { ChakraProvider } from "@chakra-ui/react"
+// import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider } from "@chakra-ui/provider"
 
 import { theme } from "@utils/theme"
 import navigation from "@utils/navigation"

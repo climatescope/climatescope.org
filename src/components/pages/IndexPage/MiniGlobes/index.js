@@ -76,10 +76,10 @@ const MiniGlobesSection = ({ data }) => {
             justifyContent="space-between"
           >
             <Stack spacing={3}>
-              <Heading variant="sectionTitle" textWrap="balance">
+              <Heading variant="sectionTitle">
                 {"Renewable energy by region"}
               </Heading>
-              <Text variant="sectionSubtitleLight" textWrap="balance">
+              <Text variant="sectionSubtitleLight">
                 {
                   "Share of installed renewable energy capacity by region in 2022"
                 }

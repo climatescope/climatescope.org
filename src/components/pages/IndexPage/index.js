@@ -7,8 +7,8 @@ import GlobePreview from "@components/pages/IndexPage/GlobePreview"
 import Tools from "@components/pages/IndexPage/Tools"
 import BnefBanner from "@components/pages/IndexPage/BnefBanner"
 
-import Highlights from "@components/pages/IndexPage/Highlights"
-import TechnologiesMap from "@components/pages/IndexPage/TechnologiesMap"
+// import Highlights from "@components/pages/IndexPage/Highlights"
+// import TechnologiesMap from "@components/pages/IndexPage/TechnologiesMap"
 import MiniGlobes from "@components/pages/IndexPage/MiniGlobes"
 
 const IndexPage = ({
@@ -18,7 +18,6 @@ const IndexPage = ({
   miniRankingsPaths,
   miniGlobesData,
 }) => {
-  console.log(allTools)
   return (
     <Box as="main" minH="75vh">
       <Container>

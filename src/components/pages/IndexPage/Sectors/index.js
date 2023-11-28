@@ -115,7 +115,7 @@ const SectorCard = ({
   alt,
   href,
   order,
-  isNew,
+  // isNew,
   comingSoon,
   marketCounts,
   indicators,
@@ -139,7 +139,7 @@ const SectorCard = ({
             ) : (
               <LinkOverlay href={href}>{title}</LinkOverlay>
             )}
-            {isNew ? (
+            {/* {isNew ? (
               <Tag
                 verticalAlign="middle"
                 ml={2}
@@ -149,7 +149,7 @@ const SectorCard = ({
               >
                 {"New"}
               </Tag>
-            ) : null}
+            ) : null} */}
             {comingSoon ? (
               <Tag
                 verticalAlign="middle"
