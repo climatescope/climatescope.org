@@ -37,6 +37,7 @@ const content = [
     href: "/sectors/power",
     isNew: false,
     comingSoon: false,
+    indicators: "140",
   },
   {
     id: 3,
@@ -48,6 +49,7 @@ const content = [
     href: "/sectors/transport",
     isNew: true,
     comingSoon: false,
+    indicators: "140",
   },
   {
     id: 4,
@@ -59,6 +61,7 @@ const content = [
     href: "/sectors/buildings",
     isNew: true,
     comingSoon: false,
+    indicators: "29",
   },
 ]
 
@@ -115,6 +118,7 @@ const SectorCard = ({
   isNew,
   comingSoon,
   marketCounts,
+  indicators,
 }) => {
   return (
     <LinkBox as={Box} order={order}>
@@ -165,7 +169,7 @@ const SectorCard = ({
             color="gray.500"
             fontWeight={600}
           >
-            {comingSoon ? "" : `${marketCounts[sector]} markets`}
+            {comingSoon ? "" : `${indicators} markets`}
           </Text>
         </Stack>
       </Stack>
