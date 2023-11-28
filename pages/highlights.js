@@ -1,31 +1,23 @@
-import groupBy from "lodash/groupBy"
-import sortBy from "lodash/sortBy"
+// import groupBy from "lodash/groupBy"
+// import sortBy from "lodash/sortBy"
 
-import { getPathsFromDirectory } from "@utils/api/server"
+import { useClientData } from "@utils/api/client"
 import SEO from "@components/SEO"
 import HighlightsPage from "@components/pages/HighlightsPage"
 
-export default function HighlightsPageWrapper({ miniRankingsPaths }) {
+export default function HighlightsPageWrapper() {
+  const dataQuery = useClientData("/data/investment_score_chart_data.json")
   return (
     <>
       <SEO
         title="Highlights"
         description="Climatescope is BNEF's annual assessment of energy transition opportunities, covering the power, transport and buildings sectors across 136 countries. The project's 11th edition adds a new element by highlighting the top 10 markets for investment, capacity additions and policies."
       />
-      <HighlightsPage miniRankingsPaths={miniRankingsPaths} />
+      <HighlightsPage data={dataQuery.data} />
     </>
   )
 }
 
 export async function getStaticProps() {
-  const data = await getPathsFromDirectory(`/public/data/mini-rankings`, ".csv")
-
-  const miniRankingsPaths = Object.entries(
-    groupBy(data, (o) => o.split("__")[0])
-  ).reduce((acc, [key, values]) => {
-    acc[key] = sortBy(values, (s) => parseInt(s.split("__")[1]))
-    return acc
-  }, {})
-
-  return { props: { miniRankingsPaths } }
+  return { props: {} }
 }
