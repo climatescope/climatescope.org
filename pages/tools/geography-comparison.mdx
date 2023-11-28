@@ -7,9 +7,11 @@ export const metaData = {
 }
 
 import GeographyComparison from "@components/tools/GeographyComparison"
-
 import ToolPage from "@components/pages/ToolPage"
-export default ToolPage
+
+export default function Layout({ children }) {
+  return <ToolPage>{children}</ToolPage>
+}
 
 # Geography comparison
 

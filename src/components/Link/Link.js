@@ -21,6 +21,7 @@ const Link = ({
       scroll={scroll}
       shallow={shallow}
       as={hrefAs}
+      legacyBehavior
     >
       <ChakraLink {...restProps} />
     </NextLink>

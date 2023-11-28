@@ -3,9 +3,7 @@ const withPlugins = require("next-compose-plugins")
 const withMDX = require("@next/mdx")({
   extension: /\.(md|mdx)$/,
   options: {
-    remarkPlugins: [
-      [require("remark-prism"), {}],
-    ],
+    remarkPlugins: [[require("remark-prism"), {}]],
   },
 })
 

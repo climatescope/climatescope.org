@@ -1,4 +1,4 @@
-import { Container, Stack, Heading, Text } from "@chakra-ui/react"
+import { Container, Stack, Text } from "@chakra-ui/react"
 
 import SEO from "@components/SEO"
 import extractKeyMDXParts from "@utils/extractKeyMDXParts"
@@ -10,14 +10,14 @@ export default function ToolPage({
   children,
   ...restProps
 }) {
-  const { heading, subHeading, textBody } = extractKeyMDXParts(children, {
-    subHeading: true,
-  })
+  // const { heading, subHeading, textBody } = extractKeyMDXParts(children, {
+  //   subHeading: true,
+  // })
   return (
     <>
       <SEO {...metaData} />
       <Container as="main">
-        <Stack
+        {/* <Stack
           spacing={5}
           pt={10}
           textAlign={textAlign}
@@ -31,7 +31,8 @@ export default function ToolPage({
         </Stack>
         <Stack spacing={10} pt={10} pb={20} {...restProps}>
           {textBody}
-        </Stack>
+        </Stack> */}
+        {children}
       </Container>
     </>
   )

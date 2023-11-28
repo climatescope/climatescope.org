@@ -4,12 +4,16 @@ import { Link } from "@components/Link"
 
 const components = {
   h1: (props) => {
+    console.log("COMP", props)
     return (
       <Heading
         as="h1"
         w="100%"
         fontSize={["3xl", null, "5xl"]}
         maxW="container.sm"
+        sx={{
+          "+p": { color: "#F05" },
+        }}
         {...props}
       />
     )

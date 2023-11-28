@@ -21,6 +21,7 @@ const LinkOverlay = ({
       scroll={scroll}
       shallow={shallow}
       as={hrefAs}
+      legacyBehavior
     >
       <ChakraLinkOverlay {...restProps} />
     </NextLink>

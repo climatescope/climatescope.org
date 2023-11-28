@@ -21,6 +21,7 @@ const ButtonLink = ({
       scroll={scroll}
       shallow={shallow}
       as={hrefAs}
+      legacyBehavior
     >
       <Button as="a" {...restProps} />
     </NextLink>

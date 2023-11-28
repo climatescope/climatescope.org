@@ -13,8 +13,8 @@ export default function HighlightsPage({ data }) {
   const setInitialData = useHighlightsStore((state) => state.setInitialData)
 
   useEffect(() => {
-    if (typeof window === "undefined") return
-    if (!data) return null
+    if (typeof window === "undefined") return undefined
+    if (!data) return undefined
     setInitialData(data)
   }, [data])
 

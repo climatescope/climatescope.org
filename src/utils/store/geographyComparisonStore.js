@@ -1,4 +1,4 @@
-import create from "zustand"
+import { create } from "zustand"
 import getConfig from "next/config"
 import { extent } from "d3-array"
 

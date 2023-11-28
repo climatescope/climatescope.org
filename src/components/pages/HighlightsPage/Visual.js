@@ -5,62 +5,68 @@ import { scaleLinear } from "d3-scale"
 import { motion } from "framer-motion"
 
 import useHighlightsStore from "@utils/store/highlightsStore"
+import XAxis from "./XAxis"
+import YAxis from "./YAxis"
 
-function XAxis({ ticks = [], xScale, yScale, domains = {} }) {
-  return (
-    <g>
-      {ticks.map((tick) => {
-        const y0 = yScale(domains.y[0])
-        const y1 = yScale(domains.y[1])
-        return (
-          <g key={tick} transform={`translate(${xScale(tick)} 0)`}>
-            <g className="x-grid">
-              <line strokeWidth={1} stroke="#EEE" y1={y1} y2={y0} />
-            </g>
-            <line strokeWidth={2} stroke="#000" y1={y0 - 1} y2={y0 + 10} />
-            <text
-              textAnchor="middle"
-              alignmentBaseline="hanging"
-              y={y0 + 14}
-              fontSize={14}
-            >
-              {tick}
-            </text>
-          </g>
-        )
-      })}
-    </g>
-  )
-}
+// function XAxis({ ticks = [], xScale, yScale, domains = {} }) {
+//   return (
+//     <g>
+//       {ticks.map((tick) => {
+//         const y0 = yScale(domains.y[0])
+//         const y1 = yScale(domains.y[1])
+//         return (
+//           <g key={tick} transform={`translate(${xScale(tick)} 0)`}>
+//             <g className="x-grid">
+//               <line strokeWidth={1} stroke="#EEE" y1={y1} y2={y0} />
+//             </g>
+//             <line strokeWidth={2} stroke="#000" y1={y0 - 1} y2={y0 + 10} />
+//             <text
+//               textAnchor="middle"
+//               alignmentBaseline="hanging"
+//               y={y0 + 14}
+//               fontSize={14}
+//             >
+//               {tick}
+//             </text>
+//           </g>
+//         )
+//       })}
+//     </g>
+//   )
+// }
 
-function YAxis({ ticks = [], xScale, yScale, domains = {} }) {
-  return (
-    <g className="y-grid">
-      {ticks.map((tick) => {
-        const isAxis = !tick
-        return (
-          <g key={tick} transform={`translate(0 ${yScale(tick)})`}>
-            <line
-              strokeWidth={isAxis ? 2 : 1}
-              stroke={isAxis ? "#000" : "#DDD"}
-              x1={xScale(domains.x[0])}
-              x2={xScale(domains.x[1])}
-            />
-            <text
-              textAnchor="start"
-              x={xScale(domains.x[0]) + 2}
-              y={-5}
-              fontSize={14}
-            >
-              {tick / 1000}
-              {" Bn"}
-            </text>
-          </g>
-        )
-      })}
-    </g>
-  )
-}
+// function YAxis({ ticks = [], xScale, yScale, domains = {} }) {
+//   return (
+//     <g className="y-grid">
+//       {ticks.map((tick) => {
+//         const isAxis = !tick
+//         return (
+//           <g
+//             key={tick}
+//             transform={`translate(0 ${yScale(tick)})`}
+//             style={{ transition: "all 1s" }}
+//           >
+//             <line
+//               strokeWidth={isAxis ? 2 : 1}
+//               stroke={isAxis ? "#000" : "#DDD"}
+//               x1={xScale(domains.x[0])}
+//               x2={xScale(domains.x[1])}
+//             />
+//             <text
+//               textAnchor="start"
+//               x={xScale(domains.x[0]) + 2}
+//               y={-5}
+//               fontSize={14}
+//             >
+//               {tick / 1000}
+//               {" Bn"}
+//             </text>
+//           </g>
+//         )
+//       })}
+//     </g>
+//   )
+// }
 
 export default function Visual() {
   const data = useHighlightsStore((state) => state.data)
@@ -75,8 +81,6 @@ export default function Visual() {
 
   const width = dimensions.width || 800
   const height = dimensions.height || 450
-
-  console.log(yScaleZoomFactor)
 
   const xScale = useMemo(() => {
     return scaleLinear()
@@ -94,6 +98,7 @@ export default function Visual() {
     () => xScale.ticks(5),
     [width, domains, yScaleZoomFactor]
   )
+
   const yTicks = useMemo(
     () => yScale.ticks(),
     [height, domains, yScaleZoomFactor]
@@ -127,6 +132,8 @@ export default function Visual() {
 
         <YAxis
           ticks={yTicks}
+          xTicks={xTicks}
+          yTicks={yTicks}
           domains={{ x: xScale.domain(), y: yScale.domain() }}
           xScale={xScale}
           yScale={yScale}
@@ -134,6 +141,8 @@ export default function Visual() {
 
         <XAxis
           ticks={xTicks}
+          xTicks={xTicks}
+          yTicks={yTicks}
           domains={{ x: xScale.domain(), y: yScale.domain() }}
           xScale={xScale}
           yScale={yScale}
@@ -155,18 +164,13 @@ function Points({ data = [], xScale, yScale }) {
         const y = yScale(d[currentDataKey]?.value)
         if (y === undefined) return null
         return (
-          <motion.g
+          <g
             key={d.iso}
-            initial={{ x, y: yScale(0) }}
-            animate={{ x, y }}
-            transition={{
-              type: "spring",
-              duration: 0.5,
-              bounce: 0,
-            }}
+            transform={`translate(${x} ${y})`}
+            style={{ transition: "all 1s ease" }}
           >
             <circle r={8} fill={d.fill} stroke="#FFF" strokeWidth={1} />
-          </motion.g>
+          </g>
         )
       })}
     </g>
