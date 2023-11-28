@@ -24,5 +24,6 @@ module.exports = withPlugins(
       mapboxToken: process.env.MAPBOX_TOKEN || "",
       googleAnalyticsId: process.env.GOOGLE_ANALYTICS || "UA-56170738-1",
     },
+    output: "export",
   }
 )

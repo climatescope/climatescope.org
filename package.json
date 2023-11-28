@@ -19,7 +19,7 @@
     "develop": "npm run buildNavigation && npm run prepareImages && next",
     "build": "npm run buildNavigation && next build",
     "start": "next start",
-    "export": "npm run buildNavigation && npm run prepareImages && next build && next export",
+    "export": "npm run buildNavigation && npm run prepareImages && next build",
     "serve": "serve out",
     "clean": "rm -Rf out && rm -Rf .next",
     "prepareImages": "node ./scripts/images.js",

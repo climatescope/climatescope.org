@@ -1,5 +1,6 @@
 import { create } from "zustand"
 import _max from "lodash/max"
+import _sortBy from "lodash/sortBy"
 
 const useHighlightsStore = create((set) => ({
   /**
@@ -15,6 +16,9 @@ const useHighlightsStore = create((set) => ({
   currentYear: 2022,
   currentDataKey: "cumulative",
 
+  coloredBy: "",
+  highlightedMarkets: [],
+
   yScaleZoomFactor: 1,
 
   /**
@@ -24,11 +28,131 @@ const useHighlightsStore = create((set) => ({
   updateSlide: (currentSlide) => {
     // TODO: Update stuff from here to advance the story
     switch (currentSlide) {
-      case 1:
-        set({ currentSlide, yScaleZoomFactor: 1000 })
+      case "1":
+        set((state) => ({
+          currentSlide,
+          yScaleZoomFactor: 1,
+          highlightedMarkets: [],
+          coloredBy: "",
+          data: state.unfilteredData,
+        }))
+        break
+      case "2":
+        set((state) => ({
+          currentSlide,
+          yScaleZoomFactor: 1,
+          highlightedMarkets: ["us", "cn"],
+          coloredBy: "",
+          data: state.unfilteredData,
+        }))
+        break
+      case "3":
+        set((state) => ({
+          currentSlide,
+          yScaleZoomFactor: 1,
+          highlightedMarkets: [],
+          coloredBy: "marketType",
+          data: state.unfilteredData,
+        }))
+        break
+      case "4":
+        set((state) => ({
+          currentSlide,
+          yScaleZoomFactor: 1,
+          highlightedMarkets: [],
+          coloredBy: "marketType",
+          data: state.unfilteredData.filter(
+            (d) => d.marketType === "developing markets"
+          ),
+        }))
+        break
+      case "5":
+        set((state) => {
+          return {
+            currentSlide,
+            yScaleZoomFactor: 400,
+            highlightedMarkets: _sortBy(
+              state.unfilteredData.filter(
+                (d) => d.marketType === "developing markets"
+              ),
+              (o) => o.score
+            )
+              .slice(0, 15)
+              .map((d) => d.iso),
+            coloredBy: "",
+            data: state.unfilteredData.filter(
+              (d) => d.marketType === "developing markets"
+            ),
+          }
+        })
+        break
+      case "6":
+        set((state) => {
+          return {
+            currentSlide,
+            yScaleZoomFactor: 2000,
+            highlightedMarkets: _sortBy(
+              state.unfilteredData.filter(
+                (d) => d.marketType === "developing markets"
+              ),
+              (o) => o.score
+            )
+              .slice(0, 15)
+              .filter((d) => d.region === "Africa")
+              .map((d) => d.iso),
+            coloredBy: "",
+            data: state.unfilteredData.filter(
+              (d) => d.marketType === "developing markets"
+            ),
+          }
+        })
+        break
+      case "7":
+        set((state) => {
+          return {
+            currentSlide,
+            yScaleZoomFactor: 1,
+            highlightedMarkets: [],
+            coloredBy: "marketType",
+            data: state.unfilteredData.filter(
+              (d) => d.marketType === "developing markets"
+            ),
+          }
+        })
+        break
+      case "8":
+        set(() => {
+          return {
+            currentSlide,
+            yScaleZoomFactor: 1,
+            highlightedMarkets: [],
+            coloredBy: "marketType",
+            data: [{}],
+          }
+        })
+        break
+
+      // Switch to bar chart
+
+      case "9":
+        set(() => {
+          return {
+            currentSlide,
+            yScaleZoomFactor: 1,
+            highlightedMarkets: [],
+            coloredBy: "",
+            data: [{}],
+          }
+        })
         break
       default:
-        set({ currentSlide, yScaleZoomFactor: 1 })
+        set((state) => ({
+          currentSlide,
+          yScaleZoomFactor: 1, // 1000
+          highlightedMarkets: [],
+          coloredBy: "",
+          data: state.unfilteredData,
+        }))
         break
     }
   },
@@ -36,8 +160,9 @@ const useHighlightsStore = create((set) => ({
   /**
    * Data
    */
+  unfilteredData: [],
   data: [],
-  setInitialData: (data) => {
+  setInitialData: (data, slides, colors) => {
     set((state) => {
       const maxScore = _max(data, (o) => o.score)
       const maxValue = _max(
@@ -54,12 +179,15 @@ const useHighlightsStore = create((set) => ({
         y: [0, getNiceValue(maxValue)],
       }
       const colorMap = {
-        "developed markets": "#F05",
-        "developing markets": "#06F",
+        "developed markets": colors.cyan[500],
+        "developing markets": colors.purple[500],
       }
-      console.log(data)
+      const unfilteredData = data
+        .map((d) => ({ ...d, fill: colorMap[d.marketType] }))
+        .filter((d) => d.hasInvestmentData)
       return {
-        data: data.map((d) => ({ ...d, fill: colorMap[d.marketType] })),
+        data: unfilteredData,
+        unfilteredData,
         domains,
       }
     })

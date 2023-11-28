@@ -35,7 +35,7 @@ export const projections = [
     id: "south-america-north",
     name: "mercator",
     center: [-61, -17],
-    regions: ["amer"],
+    regions: ["amer", "latam"],
     countries: ["co", "br"],
   },
   {
@@ -44,14 +44,14 @@ export const projections = [
     center: [-62, -36],
     parallels: [-50, -22],
     regions: [],
-    countries: ["ar", "cl"],
+    countries: ["ar", "cl", "uy"],
   },
   {
     id: "africa-center",
     name: "mercator",
     center: [28, -19.5],
     parallels: [-32.5, -6.5],
-    regions: [],
+    regions: ["ssa"],
     countries: ["cd"],
   },
   {
@@ -90,7 +90,7 @@ export const projections = [
     id: "southeast-asia",
     name: "mercator",
     center: [118, 9],
-    regions: [],
+    regions: ["apac"],
     countries: ["id"],
   },
   {
@@ -136,8 +136,9 @@ export const projections = [
 ]
 
 export const getProjection = (iso, region) => {
-  const { name, center, parallels } = projections.find((s) =>
-    s.countries.includes(iso.toLowerCase())
-  ) || projections.find(s => s.regions.includes(region)) || projections[0]
+  const { name, center, parallels } =
+    projections.find((s) => s.countries.includes(iso.toLowerCase())) ||
+    projections.find((s) => s.regions.includes(region)) ||
+    projections[0]
   return { name, center, parallels }
 }

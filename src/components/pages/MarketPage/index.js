@@ -8,6 +8,7 @@ import {
   Text,
   SimpleGrid,
 } from "@chakra-ui/layout"
+import { VisuallyHidden } from "@chakra-ui/visually-hidden"
 import { Tooltip } from "@chakra-ui/tooltip"
 import { useTheme } from "@chakra-ui/system"
 import { extent, max } from "d3-array"
@@ -201,7 +202,54 @@ function Section({ item, market }) {
         </Box>
       )
     case "chart-boolean":
-      return (
+      return !item.data.isBoolean ? (
+        <Stack spacing={6} gridColumn={["1 / -1", null, "2 / -2"]}>
+          <Heading as="h4" fontSize="2xl">
+            {item.title}
+          </Heading>
+          <Text>{item.data.question}</Text>
+          <SimpleGrid
+            columns={[1, null, null, 3]}
+            w="100%"
+            gridColumnGap={6}
+            gridRowGap={6}
+          >
+            {[
+              { key: 1, label: item.data.q1, value: item.data.a1 },
+              { key: 2, label: item.data.q2, value: item.data.a2 },
+              { key: 3, label: item.data.q3, value: item.data.a3 },
+            ].map((d) => {
+              return d.value ? (
+                <Box
+                  key={d.label}
+                  p={3}
+                  bg="purple.100"
+                  border="0.125rem solid"
+                  borderColor="purple.500"
+                  borderRadius="md"
+                  color="purple.900"
+                  fontWeight={500}
+                >
+                  {d.label}
+                  <VisuallyHidden>{": Yes"}</VisuallyHidden>
+                </Box>
+              ) : (
+                <Box
+                  key={d.label}
+                  p={3}
+                  bg="gray.50"
+                  color="gray.500"
+                  borderRadius="md"
+                  fontWeight={500}
+                >
+                  {d.label}
+                  <VisuallyHidden>{": No"}</VisuallyHidden>
+                </Box>
+              )
+            })}
+          </SimpleGrid>
+        </Stack>
+      ) : (
         <SimpleGrid
           columns={8}
           gridColumn={["1 / -1", null, null, null, "2 / -2"]}
@@ -259,7 +307,7 @@ function Section({ item, market }) {
               fontSize={["sm", null, "md"]}
               lineHeight="short"
             >
-              {item.title}
+              <Heading as="h4">{item.title}</Heading>
             </Box>
             <Box
               gridColumn={["span 7", null, "span 4"]}
@@ -268,18 +316,33 @@ function Section({ item, market }) {
               fontSize={["sm", null, "md"]}
               lineHeight="short"
             >
-              {item.data.question}
+              <Text lineHeight="short">{item.data.question}</Text>
             </Box>
-            <Box
+            <Center
               gridColumn={["span 1", null, "7 / -1"]}
               fontWeight={500}
               px={[0, null, 3]}
               pr={[3, null, 3]}
               justifySelf={["flex-end", null, "center"]}
             >
-              {/* {item.data.a1 ? "YES" : "NO"} */}
-              {item.data.a1 ? <CheckIcon /> : <CancelIcon />}
-            </Box>
+              {item.data.a1 ? (
+                <Center
+                  w="2rem"
+                  h="2rem"
+                  bg="teal.500"
+                  color="white"
+                  borderRadius="full"
+                >
+                  <VisuallyHidden>{"Yes"}</VisuallyHidden>
+                  <CheckIcon />
+                </Center>
+              ) : (
+                <Center w="2rem" h="2rem" bg="gray.200" borderRadius="full">
+                  <VisuallyHidden>{"No"}</VisuallyHidden>
+                  <CancelIcon />
+                </Center>
+              )}
+            </Center>
           </SimpleGrid>
         </SimpleGrid>
       )

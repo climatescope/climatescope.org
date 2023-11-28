@@ -35,7 +35,6 @@ const SectorsPage = ({ sectors, marketCounts }) => {
                   img={sector.thumbnail}
                   marketCounts={marketCounts}
                   alt="Alt"
-                  isNew={["Transport", "Buildings"].includes(sector.title)}
                   href={`/sectors/${sector.slug}`}
                   order={sector.order}
                   size="lg"

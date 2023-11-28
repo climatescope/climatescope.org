@@ -25,7 +25,7 @@ const Globe = ({ insights, currentInsight, setCurrentInsight }) => {
   const xy = useMotionTemplate`${x},${y}`
 
   useEffect(() => {
-    xy.onChange((v) => {
+    xy.on("change", (v) => {
       const [lng, lat] = v.split(",")
       setXYState([-lng, -lat])
     })
@@ -83,31 +83,31 @@ const Globe = ({ insights, currentInsight, setCurrentInsight }) => {
         const tooFar = Math.sqrt(Math.pow(xDist, 2) + Math.pow(yDist, 2)) > 90
         return (
           <Marker key={d.key} coordinates={d.coordinates}>
-          {currentInsight === d.key - 1 ? (
-            <motion.circle
-              fill={colors.yellow[500]}
-              r={12}
-              initial={{ r: 12, opacity: 1 }}
-              animate={{ r: 30, opacity: 0 }}
-              transition={{ repeat: Infinity, duration: 2 }}
-            />
-          ) : null}
-          <Tooltip label={d.title} bg="brand.800">
-            <motion.circle
-              r={currentInsight === d.key - 1 ? 12 : 10}
-              fill={colors.yellow[500]}
-              stroke={colors.brand[900]}
-              strokeWidth={2}
-              style={{ cursor: "pointer" }}
-              animate={{ opacity: tooFar ? 0 : 1 }}
-              transition={{ duration: 0.25 }}
-              onClick={() => {
-                setCurrentInsight(d.key - 1)
-                router.push(d.href)
-              }}
-            />
-          </Tooltip>
-        </Marker>
+            {currentInsight === d.key - 1 ? (
+              <motion.circle
+                fill={colors.yellow[500]}
+                r={12}
+                initial={{ r: 12, opacity: 1 }}
+                animate={{ r: 30, opacity: 0 }}
+                transition={{ repeat: Infinity, duration: 2 }}
+              />
+            ) : null}
+            <Tooltip label={d.title} bg="brand.800">
+              <motion.circle
+                r={currentInsight === d.key - 1 ? 12 : 10}
+                fill={colors.yellow[500]}
+                stroke={colors.brand[900]}
+                strokeWidth={2}
+                style={{ cursor: "pointer" }}
+                animate={{ opacity: tooFar ? 0 : 1 }}
+                transition={{ duration: 0.25 }}
+                onClick={() => {
+                  setCurrentInsight(d.key - 1)
+                  router.push(d.href)
+                }}
+              />
+            </Tooltip>
+          </Marker>
         )
       })}
     </ComposableMap>

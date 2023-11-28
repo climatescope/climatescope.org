@@ -19,17 +19,25 @@ export default function Slide({ slideId = 1, children }) {
   }, [isVisible])
 
   return (
-    <Center ref={ref} h="100vh" position="relative">
-      <Box
-        bg="white"
-        borderRadius="md"
-        boxShadow="md"
-        px={10}
-        py={5}
-        maxW="40rem"
-      >
-        {children}
-      </Box>
+    <Center
+      ref={ref}
+      position="relative"
+      pointerEvents="none"
+      style={{ height: ["7", "8"].includes(slideId) ? "50vh" : "100vh" }}
+    >
+      {!["7", "8"].includes(slideId) && (
+        <Box
+          bg="white"
+          borderRadius="md"
+          boxShadow="md"
+          px={10}
+          py={5}
+          maxW="40rem"
+          pointerEvents="all"
+        >
+          {children}
+        </Box>
+      )}
     </Center>
   )
 }

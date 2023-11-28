@@ -1,5 +1,5 @@
-import { getServerData, getAllMDXSlugs, getMDXPage } from "@utils/api/server"
-import getMarketCounts from "@utils/getMarketCounts"
+import { getAllMDXSlugs, getMDXPage } from "@utils/api/server"
+// import getMarketCounts from "@utils/getMarketCounts"
 import SEO from "@components/SEO"
 import SectorsPage from "@components/pages/SectorsPage"
 
@@ -16,8 +16,21 @@ export default function SectorsPageWrapper({ marketCounts, allSectors }) {
 }
 
 export async function getStaticProps() {
-  const marketsData = await getServerData(`public/data/results-2022.json`)
-  const marketCounts = getMarketCounts(marketsData)
+  // const marketsData = await getServerData(`public/data/results-2022.json`)
+  // const marketCounts = getMarketCounts(marketsData)
+
+  const marketCounts = {
+    total: 140,
+    power: 140,
+    transport: 140,
+    buildings: 29,
+    emerging: {
+      total: 0,
+      power: 0,
+      transport: 0,
+      buildings: 0,
+    },
+  }
 
   const allSectorNames = await getAllMDXSlugs("sectors")
   const allSectors = await Promise.all(

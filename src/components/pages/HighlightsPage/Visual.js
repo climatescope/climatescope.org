@@ -1,76 +1,17 @@
 import { useMemo } from "react"
 import { Center } from "@chakra-ui/react"
+import { useTheme } from "@chakra-ui/system"
 import { useElementSize } from "usehooks-ts"
 import { scaleLinear } from "d3-scale"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 import useHighlightsStore from "@utils/store/highlightsStore"
 import XAxis from "./XAxis"
 import YAxis from "./YAxis"
-
-// function XAxis({ ticks = [], xScale, yScale, domains = {} }) {
-//   return (
-//     <g>
-//       {ticks.map((tick) => {
-//         const y0 = yScale(domains.y[0])
-//         const y1 = yScale(domains.y[1])
-//         return (
-//           <g key={tick} transform={`translate(${xScale(tick)} 0)`}>
-//             <g className="x-grid">
-//               <line strokeWidth={1} stroke="#EEE" y1={y1} y2={y0} />
-//             </g>
-//             <line strokeWidth={2} stroke="#000" y1={y0 - 1} y2={y0 + 10} />
-//             <text
-//               textAnchor="middle"
-//               alignmentBaseline="hanging"
-//               y={y0 + 14}
-//               fontSize={14}
-//             >
-//               {tick}
-//             </text>
-//           </g>
-//         )
-//       })}
-//     </g>
-//   )
-// }
-
-// function YAxis({ ticks = [], xScale, yScale, domains = {} }) {
-//   return (
-//     <g className="y-grid">
-//       {ticks.map((tick) => {
-//         const isAxis = !tick
-//         return (
-//           <g
-//             key={tick}
-//             transform={`translate(0 ${yScale(tick)})`}
-//             style={{ transition: "all 1s" }}
-//           >
-//             <line
-//               strokeWidth={isAxis ? 2 : 1}
-//               stroke={isAxis ? "#000" : "#DDD"}
-//               x1={xScale(domains.x[0])}
-//               x2={xScale(domains.x[1])}
-//             />
-//             <text
-//               textAnchor="start"
-//               x={xScale(domains.x[0]) + 2}
-//               y={-5}
-//               fontSize={14}
-//             >
-//               {tick / 1000}
-//               {" Bn"}
-//             </text>
-//           </g>
-//         )
-//       })}
-//     </g>
-//   )
-// }
+import animationConfig from "./animationConfig"
 
 export default function Visual() {
   const data = useHighlightsStore((state) => state.data)
-  const currentSlide = useHighlightsStore((state) => state.currentSlide)
 
   const padding = useHighlightsStore((state) => state.padding)
   const domains = useHighlightsStore((state) => state.domains)
@@ -105,31 +46,15 @@ export default function Visual() {
   )
 
   return (
-    <Center
-      ref={squareRef}
-      w="100%"
-      h="100vh"
-      position="sticky"
-      top={0}
-      bg="gray.100"
-    >
+    <Center ref={squareRef} w="100%" h="100vh" position="sticky" top={0}>
       <svg
         viewBox={`0 0 ${width} ${height}`}
-        width={width}
-        height={height}
         style={{
+          display: "block",
           width: "100%",
           height: "auto",
-          background: "#FFF",
-          borderTop: "0.0625rem solid #F05",
-          borderBottom: "0.0625rem solid #F05",
-          // fontFamily: "inherit",
         }}
       >
-        <text x={width / 2} y={height / 2} textAnchor="middle">
-          {`Slide ${currentSlide}`}
-        </text>
-
         <YAxis
           ticks={yTicks}
           xTicks={xTicks}
@@ -149,30 +74,154 @@ export default function Visual() {
         />
 
         <Points data={data} xScale={xScale} yScale={yScale} />
+
+        <Bars width={width} height={height} />
       </svg>
     </Center>
   )
 }
 
 function Points({ data = [], xScale, yScale }) {
+  const { colors } = useTheme()
+  const currentSlide = useHighlightsStore((state) => state.currentSlide)
   const currentDataKey = useHighlightsStore((state) => state.currentDataKey)
-  if (!data.length) return null
+  const coloredBy = useHighlightsStore((state) => state.coloredBy)
+  const highlightedMarkets = useHighlightsStore(
+    (state) => state.highlightedMarkets
+  )
+
+  if (!data.length || parseInt(currentSlide) > 9) return null
+
   return (
     <g>
-      {data.map((d) => {
-        const x = xScale(d.score)
-        const y = yScale(d[currentDataKey]?.value)
-        if (y === undefined) return null
-        return (
-          <g
-            key={d.iso}
-            transform={`translate(${x} ${y})`}
-            style={{ transition: "all 1s ease" }}
-          >
-            <circle r={8} fill={d.fill} stroke="#FFF" strokeWidth={1} />
-          </g>
-        )
-      })}
+      <AnimatePresence>
+        {data.map((d) => {
+          if (!d[currentDataKey]?.hasValue || !d.score) return null
+          const cx = xScale(d.score)
+          const cy = yScale(d[currentDataKey]?.value)
+          const isHighlighted = highlightedMarkets.includes(d.iso.toLowerCase())
+          return (
+            <motion.circle
+              key={d.iso}
+              paintOrder="stroke fill"
+              stroke="#FFF"
+              strokeWidth={1}
+              style={{
+                cursor: "pointer",
+              }}
+              initial={{
+                cx,
+                cy,
+                r: 0,
+                fill: colors.gray[500],
+                opacity: 0,
+              }}
+              animate={{
+                cx,
+                cy,
+                r: isHighlighted ? 12 : 8,
+                opacity: 1,
+                fill: isHighlighted
+                  ? colors.red[500]
+                  : coloredBy === "marketType"
+                  ? d.fill
+                  : colors.gray[300],
+              }}
+              exit={{ r: 16, opacity: 0 }}
+              transition={animationConfig}
+              onClick={() => {
+                console.log(d)
+              }}
+            />
+          )
+        })}
+      </AnimatePresence>
+    </g>
+  )
+}
+
+function Bars({ width = 0, height = 0 }) {
+  const currentSlide = useHighlightsStore((state) => state.currentSlide)
+
+  const widthIncrement = width / 5
+  const rectWidth = widthIncrement * 0.9
+  const barWidth = rectWidth / 3
+
+  if (parseInt(currentSlide) < 9) return null
+
+  return (
+    <g>
+      <BarGroup
+        x={widthIncrement * 1}
+        y={(height / 4) * 3}
+        rectWidth={rectWidth}
+        barWidth={barWidth}
+      />
+      <BarGroup
+        x={widthIncrement * 2}
+        y={(height / 4) * 3}
+        rectWidth={rectWidth}
+        barWidth={barWidth}
+      />
+      <BarGroup
+        x={widthIncrement * 3}
+        y={(height / 4) * 3}
+        rectWidth={rectWidth}
+        barWidth={barWidth}
+      />
+      <BarGroup
+        x={widthIncrement * 4}
+        y={(height / 4) * 3}
+        rectWidth={rectWidth}
+        barWidth={barWidth}
+      />
+
+      {/* <g transform={`translate(${widthIncrement * 2} ${(height / 4) * 3})`}>
+        <circle r={10} />
+        <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" />
+      </g>
+      <g transform={`translate(${widthIncrement * 3} ${(height / 4) * 3})`}>
+        <circle r={10} />
+        <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" />
+      </g>
+      <g transform={`translate(${widthIncrement * 4} ${(height / 4) * 3})`}>
+        <circle r={10} />
+        <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" />
+      </g> */}
+    </g>
+  )
+}
+
+function BarGroup({ x = 0, y = 0, rectWidth, barWidth }) {
+  return (
+    <g transform={`translate(${x} ${y})`}>
+      <circle r={10} />
+      <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" />
+      <line
+        x1={-rectWidth / 2 + barWidth / 2}
+        x2={-rectWidth / 2 + barWidth / 2}
+        y1={0}
+        y2={-20}
+        stroke="#000"
+        strokeWidth={barWidth - 2}
+        opacity={0.5}
+      />
+      <line
+        y1={0}
+        y2={-120}
+        stroke="#000"
+        strokeWidth={barWidth - 2}
+        opacity={0.5}
+      />
+      <line
+        x1={rectWidth / 2 - barWidth / 2}
+        x2={rectWidth / 2 - barWidth / 2}
+        y1={0}
+        y2={-20}
+        stroke="#000"
+        strokeWidth={barWidth - 2}
+        opacity={0.5}
+      />
     </g>
   )
 }

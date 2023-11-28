@@ -116,8 +116,17 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
                         </Text>
                       </Stack>
                       <Divider />
-                      <Center flex={1} bg="gray.25" color="gray.500">
-                        &nbsp;
+                      <Center flex={1} bg="white" color="gray.500">
+                        <Tag
+                          verticalAlign="middle"
+                          ml={2}
+                          size="sm"
+                          textTransform="uppercase"
+                          fontWeight={600}
+                          colorScheme="gray"
+                        >
+                          {"Coming soon"}
+                        </Tag>
                       </Center>
                     </Stack>
                   )
