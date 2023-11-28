@@ -3,7 +3,7 @@ import {
   Center,
   Container,
   Stack,
-  // HStack,
+  HStack,
   Heading,
   Text,
   SimpleGrid,
@@ -202,24 +202,45 @@ function Section({ item, market }) {
       )
     case "chart-boolean":
       return (
-        <SimpleGrid columns={6} gridColumn={["1 / -1", null, "2 / -2"]} gridRowGap={4}>
+        <SimpleGrid
+          columns={8}
+          gridColumn={["1 / -1", null, null, null, "2 / -2"]}
+          gridRowGap={4}
+        >
           <Box gridColumn="span 2" px={3} display={["none", null, "inline"]}>
-            <Text fontWeight={600} fontSize="sm" textTransform="uppercase">
+            <Text
+              fontWeight={600}
+              fontSize={["xs", null, "sm"]}
+              textTransform="uppercase"
+            >
               {"Type"}
             </Text>
           </Box>
-          <Box gridColumn={["span 4", null, "span 2"]} px={3}>
-            <Text fontWeight={600} fontSize="sm" textTransform="uppercase">
+          <Box gridColumn={["span 5", null, "span 3"]} px={3}>
+            <Text
+              fontWeight={600}
+              fontSize={["xs", null, "sm"]}
+              textTransform="uppercase"
+            >
               {"Question"}
             </Text>
           </Box>
-          <Box gridColumn={["span 2", null, "span 2"]} px={3} textAlign="right">
-            <Text fontWeight={600} fontSize="sm" textTransform="uppercase">
+          <Box
+            gridColumn={["span 3", null, "7 / -1"]}
+            px={3}
+            textAlign={["right", null, "center"]}
+          >
+            <Text
+              fontWeight={600}
+              // display={["none", null, "inline"]}
+              fontSize={["xs", null, "sm"]}
+              textTransform="uppercase"
+            >
               {"Availability"}
             </Text>
           </Box>
           <SimpleGrid
-            columns={6}
+            columns={8}
             gridColumn="1 / -1"
             border="0.125rem solid"
             borderRadius="md"
@@ -230,13 +251,32 @@ function Section({ item, market }) {
               color: item.data.a1 ? colors.teal[900] : colors.gray[500],
             }}
           >
-            <Box gridColumn="span 2" px={3} display={["none", null, "inline"]}>
+            <Box
+              gridColumn="span 2"
+              px={3}
+              display={["none", null, "inline"]}
+              fontWeight={500}
+              fontSize={["sm", null, "md"]}
+              lineHeight="short"
+            >
               {item.title}
             </Box>
-            <Box gridColumn={["span 4", null, "span 2"]} px={3}>
+            <Box
+              gridColumn={["span 7", null, "span 4"]}
+              px={3}
+              fontWeight={500}
+              fontSize={["sm", null, "md"]}
+              lineHeight="short"
+            >
               {item.data.question}
             </Box>
-            <Box gridColumn={["span 2", null, "span 2"]} px={3} textAlign="right">
+            <Box
+              gridColumn={["span 1", null, "7 / -1"]}
+              fontWeight={500}
+              px={[0, null, 3]}
+              pr={[3, null, 3]}
+              justifySelf={["flex-end", null, "center"]}
+            >
               {/* {item.data.a1 ? "YES" : "NO"} */}
               {item.data.a1 ? <CheckIcon /> : <CancelIcon />}
             </Box>
@@ -249,7 +289,12 @@ function Section({ item, market }) {
           <Heading as="h4" fontSize="2xl">
             {item.title}
           </Heading>
-          <SimpleGrid columns={[1, null, 3]} w="100%" gridColumnGap={6} gridRowGap={6}>
+          <SimpleGrid
+            columns={[1, null, 3]}
+            w="100%"
+            gridColumnGap={6}
+            gridRowGap={6}
+          >
             {item.data.map((d) => {
               return d.answer ? (
                 <Box
@@ -285,7 +330,11 @@ function Section({ item, market }) {
       const fontSize = { h2: "4xl", h3: "3xl", h4: "2xl" }[item.level || "h2"]
       return (
         <SimpleGrid columns={8} gridColumn="1 / -1">
-          <Heading as={item.level} fontSize={fontSize} gridColumn={["1 / -1", null, "2 / -2"]}>
+          <Heading
+            as={item.level}
+            fontSize={fontSize}
+            gridColumn={["1 / -1", null, "2 / -2"]}
+          >
             {item.title}
           </Heading>
           {item.items?.map((item, i) => {
