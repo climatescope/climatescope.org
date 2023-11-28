@@ -1,11 +1,11 @@
-2022,Country,ISO 2,unit,value,rank
-4.370411182,United States,US,$ mn,NaN,1
-2.0215,Japan,JP,$ mn,NaN,2
-1.32,China,CN,$ mn,NaN,3
-0.625797,France,FR,$ mn,NaN,4
-0.517369,Italy,IT,$ mn,NaN,5
-0.2815,Germany,DE,$ mn,NaN,6
-0.237052,Canada,CA,$ mn,NaN,7
-0.215373,Sweden,SE,$ mn,NaN,8
-0.20338,Poland,PL,$ mn,NaN,9
-0.196359,Finland,FI,$ mn,NaN,10
+country,iso,value,unit,rank
+United States,us,4.370411182,$ mn,1
+Japan,jp,2.0215,$ mn,2
+China,cn,1.32,$ mn,3
+France,fr,0.625797,$ mn,4
+Italy,it,0.517369,$ mn,5
+Germany,de,0.2815,$ mn,6
+Canada,ca,0.237052,$ mn,7
+Sweden,se,0.215373,$ mn,8
+Poland,pl,0.20338,$ mn,9
+Finland,fi,0.196359,$ mn,10
