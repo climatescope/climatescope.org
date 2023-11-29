@@ -1,10 +1,4 @@
-import {
-  getServerData,
-  // getPages,
-  getPathsFromDirectory,
-  getAllMDXSlugs,
-  getMDXPage,
-} from "@utils/api/server"
+import { getServerData, getAllMDXSlugs, getMDXPage } from "@utils/api/server"
 // import getMarketCounts from "@utils/getMarketCounts"
 
 import SEO from "@components/SEO"
@@ -50,17 +44,11 @@ export async function getStaticProps() {
     }))
   )
 
-  const resultsData = await getServerData(`public/data/results-2022.json`)
   const globeInsights = await getServerData(`/public/data/globe-insights.csv`)
-  const miniRankingsPaths = await getPathsFromDirectory(
-    `/public/data/mini-rankings`,
-    ".csv"
-  )
   const miniGlobesDataRaw = await getServerData(
     `/public/data/share_of_renewable_energy_installed_capacity_by_region.csv`
   )
 
-  // const marketCounts = getMarketCounts(resultsData)
   const marketCounts = {
     total: 140,
     power: 140,
@@ -86,9 +74,7 @@ export async function getStaticProps() {
     props: {
       marketCounts,
       globeInsights,
-      resultsData,
       allTools,
-      miniRankingsPaths,
       miniGlobesData,
     },
   }

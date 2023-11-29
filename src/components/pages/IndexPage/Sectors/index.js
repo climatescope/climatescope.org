@@ -1,17 +1,14 @@
-import {
-  Box,
-  Stack,
-  Heading,
-  Text,
-  Center,
-  HStack,
-  Tag,
-} from "@chakra-ui/react"
+import { Box, Stack, Heading, Text, Center, HStack } from "@chakra-ui/layout"
+import { Tag } from "@chakra-ui/tag"
+import getConfig from "next/config"
 
 import Image from "@components/Image"
 import { Link, LinkBox, LinkOverlay, ButtonLink } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
 import { ChevronRight } from "@components/Icon"
+
+const { publicRuntimeConfig } = getConfig()
+const year = publicRuntimeConfig.year
 
 const content = [
   {
@@ -23,7 +20,7 @@ const content = [
     // ],
     title: () => `222 indicators across three sectors`,
     description: () => [
-      `As of 2023, Climatescope analyzes data from 140 markets across three sectors with a total of 222 indicators.`,
+      `As of ${year}, Climatescope analyzes data from 140 markets across three sectors with a total of 222 indicators.`,
     ],
     action: { text: "Explore sectors", href: "/sectors" },
   },
@@ -73,12 +70,7 @@ const SummaryCard = ({ title, description, action, order, metaData }) => {
       </Center>
       <Center px={[3, null, 6]} py={[10]}>
         <Stack spacing={6} alignItems="flex-start" color="white">
-          <Heading
-            as="h2"
-            fontSize="2xl"
-            lineHeight="shorter"
-            maxW="15rem"
-          >
+          <Heading as="h2" fontSize="2xl" lineHeight="shorter" maxW="15rem">
             {title(metaData.indicatorCount)}
           </Heading>
           {description(

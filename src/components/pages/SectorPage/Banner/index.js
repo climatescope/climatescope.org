@@ -4,7 +4,8 @@ import { DownloadIcon } from "@components/Icon"
 import { ButtonLink } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
 
-const SectorPageBanner = ({ findings, sectorName, reportName }) => {
+const SectorPageBanner = ({ findings }) => {
+  const reportName = `Climatescope-2023-report-en`
   if (!findings) return null
   return (
     <SimpleGrid

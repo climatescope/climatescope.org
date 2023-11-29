@@ -1,5 +1,5 @@
 import { memo } from "react"
-import { useTheme } from "@chakra-ui/react"
+import { useTheme } from "@chakra-ui/system"
 
 const BackgroundSphere = () => {
   const { colors } = useTheme()

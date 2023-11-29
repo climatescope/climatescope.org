@@ -3,7 +3,7 @@ import { useEffect } from "react"
 const TableauWidget = () => {
   useEffect(() => {
     if (typeof window === "undefined") return
-    var divElement = document.getElementById("viz1667331592842")
+    var divElement = document.getElementById("viz1701216492462")
     var vizElement = divElement.getElementsByTagName("object")[0]
     vizElement.style.width = "100%"
     vizElement.style.height = "1027px"
@@ -15,7 +15,7 @@ const TableauWidget = () => {
   return (
     <div
       className="tableauPlaceholder"
-      id="viz1667331592842"
+      id="viz1701216492462"
       style={{ position: "relative", width: "100%" }}
     >
       <object className="tableauViz" style={{ display: "none" }}>
@@ -24,7 +24,7 @@ const TableauWidget = () => {
         <param name="site_root" value="" />
         <param
           name="name"
-          value="ClimatescopeCapacityGeneration&#47;CapacityGeneration"
+          value="EnergyCapacityGenerationinEmergingMarkets_17011920152870&#47;CapacityGeneration"
         />
         <param name="tabs" value="no" />
         <param name="toolbar" value="yes" />

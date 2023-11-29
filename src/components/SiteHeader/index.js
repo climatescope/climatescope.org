@@ -1,19 +1,10 @@
 import { useEffect, useRef } from "react"
-import {
-  HStack,
-  Stack,
-  Container,
-  Box,
-  Text,
-  Button,
-  useDisclosure,
-  Modal,
-  ModalContent,
-  ModalBody,
-  VisuallyHidden,
-  Divider,
-  useTheme,
-} from "@chakra-ui/react"
+import { HStack, Stack, Container, Box, Text, Divider } from "@chakra-ui/layout"
+import { VisuallyHidden } from "@chakra-ui/visually-hidden"
+import { useTheme } from "@chakra-ui/system"
+import { Button } from "@chakra-ui/button"
+import { Modal, ModalContent, ModalBody } from "@chakra-ui/modal"
+import { useDisclosure } from "@chakra-ui/hooks"
 import { useRouter } from "next/router"
 
 import { Link, ButtonLink } from "@components/Link"
@@ -21,13 +12,7 @@ import { DownloadIcon, CloseIcon, MenuIcon } from "@components/Icon"
 import SimpleGrid from "@components/SimpleGrid"
 import Logo from "./Logo"
 
-const includedLinks = [
-  "Results",
-  "Highlights",
-  "Tools",
-  "Sectors",
-  "About",
-]
+const includedLinks = ["Results", "Highlights", "Tools", "Sectors", "About"]
 
 const SiteHeader = ({ navigation }) => {
   const { colors } = useTheme()
@@ -35,7 +20,9 @@ const SiteHeader = ({ navigation }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const { route } = useRouter()
 
-  const allNavigation = navigation.filter((d) => includedLinks.includes(d.title))
+  const allNavigation = navigation.filter((d) =>
+    includedLinks.includes(d.title)
+  )
 
   useEffect(() => {
     onClose()
