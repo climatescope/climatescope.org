@@ -82,7 +82,7 @@ const AboutLandingPage = ({ allPages }) => {
               {"Maria Eugênia Mitri"}
             </Text>
             <Text maxW="50rem">
-              <strong>{"Regional Transition Analysts"}</strong>
+              <strong>{"Country Transition Analysts"}</strong>
               <br />
               {"Ana Paula Teixeira and Laura Foroni"}
             </Text>

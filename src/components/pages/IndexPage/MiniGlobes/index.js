@@ -81,7 +81,7 @@ const MiniGlobesSection = ({ data }) => {
               </Heading>
               <Text variant="sectionSubtitleLight">
                 {
-                  "Share of installed renewable energy capacity by region in 2022"
+                  "Share of installed renewable energy capacity by region in 2022, excluding Large Hydro"
                 }
               </Text>
             </Stack>
