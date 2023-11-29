@@ -9,7 +9,9 @@ import MiniChart from "@components/MiniChart"
 import Image from "@components/Image"
 
 function ComponentWrapper(props) {
-  return <Box gridColumn="1 / span 5" {...props} />
+  return (
+    <Box gridColumn={["1 / -1", null, "1 / -2", "1 / span 5"]} {...props} />
+  )
 }
 
 const components = {
@@ -175,30 +177,30 @@ const components = {
   },
   AreaChart: (props) => {
     return (
-      <Box gridColumn="1 / span 5">
+      <ComponentWrapper>
         <AreaChart {...props} />
-      </Box>
+      </ComponentWrapper>
     )
   },
   LineChart: (props) => {
     return (
-      <Box gridColumn="1 / span 5">
+      <ComponentWrapper>
         <LineChart {...props} />
-      </Box>
+      </ComponentWrapper>
     )
   },
   BarChart: (props) => {
     return (
-      <Box gridColumn="1 / span 5">
+      <ComponentWrapper>
         <BarChart {...props} />
-      </Box>
+      </ComponentWrapper>
     )
   },
   MiniChart: (props) => {
     return (
-      <Box gridColumn="1 / span 5">
+      <ComponentWrapper>
         <MiniChart {...props} />
-      </Box>
+      </ComponentWrapper>
     )
   },
 }
