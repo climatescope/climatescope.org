@@ -1,10 +1,16 @@
-import { Heading, Center, Text, Box, Stack, HStack } from "@chakra-ui/react"
+import { Heading, Center, Text, Box, Stack, HStack } from "@chakra-ui/layout"
 import getConfig from "next/config"
 
 import { LinkBox, LinkOverlay } from "@components/Link"
 import Image from "@components/Image"
 import SimpleGrid from "@components/SimpleGrid"
-import { ChevronRight, StarIcon, ChartIcon, ReportIcon, DownloadIcon } from "@components/Icon"
+import {
+  ChevronRight,
+  StarIcon,
+  // ChartIcon,
+  ReportIcon,
+  DownloadIcon,
+} from "@components/Icon"
 
 const { publicRuntimeConfig } = getConfig()
 const year = publicRuntimeConfig.year
@@ -29,14 +35,14 @@ const bannerActions = [
   {
     key: 2,
     title: `Press release`,
-    description: "2023 findings summary",
+    description: `${year} findings summary`,
     href: "/",
     color: "teal.800",
     icon: "ReportIcon",
   },
   {
     key: 3,
-    title: "2023 Full report",
+    title: `${year} Full report`,
     description: "Download the full report",
     href: "/downloads/climatescope-2023-report-en.pdf",
     color: "teal.800",

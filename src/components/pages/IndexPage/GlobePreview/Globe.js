@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useRouter } from "next/router"
-import { useTheme } from "@chakra-ui/react"
-import { Tooltip } from "@chakra-ui/react"
+import { useTheme } from "@chakra-ui/system"
+import { Tooltip } from "@chakra-ui/tooltip"
 import {
   ComposableMap,
   Geographies,

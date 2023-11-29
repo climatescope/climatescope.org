@@ -8,7 +8,7 @@ on:
     - 'master'
 
 env:
-  NODE: 16
+  NODE: 18
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
           access_token: ${{ github.token }}
 
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Use Node.js ${{ env.NODE }}
         uses: actions/setup-node@v1
@@ -29,24 +29,24 @@ jobs:
           node-version: ${{ env.NODE }}
 
       - name: Cache node_modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-node-modules
         with:
           path: node_modules
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package.json') }}
 
       - name: Cache out
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-out
         with:
           path: out
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.sha }}
 
       - name: Install
-        run: yarn install
+        run: npm install
 
       - name: Build
-        run: yarn export
+        run: npm run export
         env:
           SITE_URL: https://www.global-climatescope.org/
           MAILCHIMP_ADDRESS: ${{ secrets.MAILCHIMP_ADDRESS }}
@@ -58,10 +58,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Restore out cache
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache-node-modules
         with:
           path: out

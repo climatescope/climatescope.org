@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from "react"
-import { Box, Stack, Heading, Text, Container } from "@chakra-ui/react"
+import { Box, Stack, Heading, Text, Container } from "@chakra-ui/layout"
 import getConfig from "next/config"
 
 import { ButtonLink } from "@components/Link"
