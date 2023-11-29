@@ -5,7 +5,7 @@ name: Deploy GH Pages
 on:
   push:
     branches:
-    - 'master'
+      - "master"
 
 env:
   NODE: 16
@@ -26,7 +26,7 @@ jobs:
       - name: Use Node.js ${{ env.NODE }}
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ env.NODE }}
+          node-version: [18.x]
 
       - name: Cache node_modules
         uses: actions/cache@v2
@@ -43,10 +43,10 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ github.sha }}
 
       - name: Install
-        run: yarn install
+        run: npm install
 
       - name: Build
-        run: yarn export
+        run: npm export
         env:
           SITE_URL: https://www.global-climatescope.org/
           MAILCHIMP_ADDRESS: ${{ secrets.MAILCHIMP_ADDRESS }}
