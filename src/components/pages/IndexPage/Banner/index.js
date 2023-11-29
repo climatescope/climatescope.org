@@ -36,7 +36,7 @@ const bannerActions = [
     key: 2,
     title: `Press release`,
     description: `${year} findings summary`,
-    href: "/",
+    href: "blog/press-release-climatescope-2023/",
     color: "teal.800",
     icon: "ReportIcon",
   },
