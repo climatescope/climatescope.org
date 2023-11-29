@@ -38,7 +38,7 @@ const blog = await getMDXFilesFromDirectory("blog", ["blog"])
 
 const enBlogPosts = sortBy(
   blog.filter((d) => !d.lang || d.lang === "en"),
-  (o) => -parseInt(o.date.split("-").join(""))
+  (o) => -parseInt(o.date?.split("-").join(""))
 )
 
 const navigation = [
