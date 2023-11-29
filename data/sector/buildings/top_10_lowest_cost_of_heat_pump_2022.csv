@@ -1,11 +1,11 @@
 country,iso,value,unit,rank
-China,cn,1470,$ mn,1
-Sweden,se,1786,$ mn,2
-Norway,no,2297,$ mn,3
-United States,us,4948,$ mn,4
-Canada,ca,5688,$ mn,5
-Belgium,be,6321,$ mn,6
-Spain,es,6321,$ mn,7
-Czechia,cz,6434,$ mn,8
-Hungary,hu,6767,$ mn,9
-Netherlands,nl,6784,$ mn,10
+China,cn,1470,$,1
+Sweden,se,1786,$,2
+Norway,no,2297,$,3
+United States,us,4948,$,4
+Canada,ca,5688,$,5
+Belgium,be,6321,$,6
+Spain,es,6321,$,7
+Czechia,cz,6434,$,8
+Hungary,hu,6767,$,9
+Netherlands,nl,6784,$,10
