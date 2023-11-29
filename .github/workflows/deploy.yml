@@ -5,10 +5,10 @@ name: Deploy GH Pages
 on:
   push:
     branches:
-      - "master"
+    - 'master'
 
 env:
-  NODE: 16
+  NODE: 18
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
       - name: Use Node.js ${{ env.NODE }}
         uses: actions/setup-node@v1
         with:
-          node-version: [18.x]
+          node-version: ${{ env.NODE }}
 
       - name: Cache node_modules
         uses: actions/cache@v2
