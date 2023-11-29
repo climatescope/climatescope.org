@@ -7,7 +7,7 @@ export default function XAxis({ xScale, yTicks, xTicks, yScale }) {
   const currentSlide = useHighlightsStore((state) => state.currentSlide)
   return (
     <AnimatePresence>
-      {parseInt(currentSlide) < 8 && (
+      {parseInt(currentSlide) < 7 && (
         <motion.g
           intial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

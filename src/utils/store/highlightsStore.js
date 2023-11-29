@@ -98,7 +98,8 @@ const useHighlightsStore = create((set) => ({
               (o) => o.score
             )
               .slice(0, 15)
-              .filter((d) => d.region === "Africa")
+              // .filter((d) => d.region === "Africa")
+              .filter((d) => d.region === "Middle East & Africa")
               .map((d) => d.iso),
             coloredBy: "",
             data: state.unfilteredData.filter(
@@ -107,24 +108,25 @@ const useHighlightsStore = create((set) => ({
           }
         })
         break
+      // case "7":
+      //   set((state) => {
+      //     return {
+      //       currentSlide,
+      //       yScaleZoomFactor: 1,
+      //       highlightedMarkets: [],
+      //       coloredBy: "marketType",
+      //       data: state.unfilteredData.filter(
+      //         (d) => d.marketType === "developing markets"
+      //       ),
+      //     }
+      //   })
+      //   break
+
       case "7":
-        set((state) => {
-          return {
-            currentSlide,
-            yScaleZoomFactor: 1,
-            highlightedMarkets: [],
-            coloredBy: "marketType",
-            data: state.unfilteredData.filter(
-              (d) => d.marketType === "developing markets"
-            ),
-          }
-        })
-        break
-      case "8":
         set(() => {
           return {
             currentSlide,
-            yScaleZoomFactor: 1,
+            yScaleZoomFactor: 2000,
             highlightedMarkets: [],
             coloredBy: "marketType",
             data: [{}],
@@ -134,7 +136,7 @@ const useHighlightsStore = create((set) => ({
 
       // Switch to bar chart
 
-      case "9":
+      case "8":
         set(() => {
           return {
             currentSlide,
@@ -165,15 +167,7 @@ const useHighlightsStore = create((set) => ({
   setInitialData: (data, slides, colors) => {
     set((state) => {
       const maxScore = _max(data, (o) => o.score)
-      const maxValue = _max(
-        data.map((d) => {
-          // const keys = ["2018", "2019", "2020", "2021", "2022"]
-          const keys = [state.currentDataKey]
-          const allValues = keys.map((y) => d[y]).filter((dd) => dd?.hasValue)
-          const maxValue2 = _max(allValues, (o) => o.value)
-          return maxValue2?.value || 0
-        })
-      )
+      const maxValue = _max(data.map((d) => d[state.currentDataKey] || 0))
       const domains = {
         x: [0, getNiceValue(maxScore?.score)],
         y: [0, getNiceValue(maxValue)],

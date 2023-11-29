@@ -23,9 +23,9 @@ export default function Slide({ slideId = 1, children }) {
       ref={ref}
       position="relative"
       pointerEvents="none"
-      style={{ height: ["7", "8"].includes(slideId) ? "50vh" : "100vh" }}
+      style={{ height: slideId === "7" ? "75vh" : "100vh" }}
     >
-      {!["7", "8"].includes(slideId) && (
+      {slideId !== "7" && (
         <Box
           bg="white"
           borderRadius="md"

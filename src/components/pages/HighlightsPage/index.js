@@ -19,8 +19,8 @@ export default function HighlightsPage({ data, slides }) {
 
   return (
     <Container>
-      <Stack spacing={20} pt={10} textAlign="center">
-        <Stack spacing={5} alignItems="center">
+      <Stack spacing={0} pt={10} textAlign="center">
+        <Stack spacing={8} alignItems="center" pb={20}>
           <Heading as="h1" variant="pageTitle">
             {"Climatescope 2023 highlights"}
           </Heading>

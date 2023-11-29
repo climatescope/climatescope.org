@@ -7,7 +7,12 @@ export default function YAxis({ xScale, yTicks, xTicks, yScale }) {
   const x1 = xScale(xTicks[0])
   const x2 = xScale(xTicks.slice(-1)[0])
   const currentSlide = useHighlightsStore((state) => state.currentSlide)
-  const showAxis = parseInt(currentSlide) < 8
+  const showAxis = parseInt(currentSlide) < 7
+
+  // Switch from Bn to M on zoom
+  const isM = yTicks.slice(-1)[0] < 1
+  const suffix = isM ? " USD M" : " USD Bn"
+
   return (
     <g>
       <AnimatePresence mode="wait">
@@ -30,8 +35,8 @@ export default function YAxis({ xScale, yTicks, xTicks, yScale }) {
                   fontSize={14}
                   fontWeight={600}
                 >
-                  {tick / 1000}
-                  {isLast ? " USD Bn" : ""}
+                  {isM ? tick * 1000 : tick}
+                  {isLast ? suffix : ""}
                 </text>
               )
             })}
@@ -39,28 +44,29 @@ export default function YAxis({ xScale, yTicks, xTicks, yScale }) {
         )}
       </AnimatePresence>
       <AnimatePresence>
-        {showAxis && yTicks.map((tick) => {
-          const y = yScale(tick)
-          return (
-            <motion.line
-              key={tick}
-              x1={x1}
-              x2={x2}
-              y1={y}
-              y2={y}
-              stroke="#DDDDDD"
-              strokeDasharray={[2, 1]}
-              initial={{
-                y1: yScale(yTicks[0]),
-                y2: yScale(yTicks[0]),
-                opacity: 0,
-              }}
-              animate={{ y1: y, y2: y, opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={animationConfig}
-            />
-          )
-        })}
+        {showAxis &&
+          yTicks.map((tick) => {
+            const y = yScale(tick)
+            return (
+              <motion.line
+                key={tick}
+                x1={x1}
+                x2={x2}
+                y1={y}
+                y2={y}
+                stroke="#DDDDDD"
+                strokeDasharray={[2, 1]}
+                initial={{
+                  y1: yScale(yTicks[0]),
+                  y2: yScale(yTicks[0]),
+                  opacity: 0,
+                }}
+                animate={{ y1: y, y2: y, opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={animationConfig}
+              />
+            )
+          })}
       </AnimatePresence>
     </g>
   )

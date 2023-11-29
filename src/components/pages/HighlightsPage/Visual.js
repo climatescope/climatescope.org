@@ -90,15 +90,15 @@ function Points({ data = [], xScale, yScale }) {
     (state) => state.highlightedMarkets
   )
 
-  if (!data.length || parseInt(currentSlide) > 9) return null
+  if (!data.length || parseInt(currentSlide) > 8) return null
 
   return (
     <g>
       <AnimatePresence>
         {data.map((d) => {
-          if (!d[currentDataKey]?.hasValue || !d.score) return null
+          if (!d[currentDataKey] || !d.score) return null
           const cx = xScale(d.score)
-          const cy = yScale(d[currentDataKey]?.value)
+          const cy = yScale(d[currentDataKey])
           const isHighlighted = highlightedMarkets.includes(d.iso.toLowerCase())
           return (
             <motion.circle
@@ -122,10 +122,10 @@ function Points({ data = [], xScale, yScale }) {
                 r: isHighlighted ? 12 : 8,
                 opacity: 1,
                 fill: isHighlighted
-                  ? colors.red[500]
+                  ? d.fill
                   : coloredBy === "marketType"
                   ? d.fill
-                  : colors.gray[300],
+                  : colors.gray[200],
               }}
               exit={{ r: 16, opacity: 0 }}
               transition={animationConfig}
@@ -142,86 +142,138 @@ function Points({ data = [], xScale, yScale }) {
 
 function Bars({ width = 0, height = 0 }) {
   const currentSlide = useHighlightsStore((state) => state.currentSlide)
+  const padding = useHighlightsStore((state) => state.padding)
 
-  const widthIncrement = width / 5
-  const rectWidth = widthIncrement * 0.9
+  const widthIncrement = width / 4
+  const rectWidth = widthIncrement - 20
   const barWidth = rectWidth / 3
 
-  if (parseInt(currentSlide) < 9) return null
+  const showVisual = parseInt(currentSlide) > 7
+
+  const scale = scaleLinear()
+    .domain([0, 100])
+    .range([0, (height / 4) * 3 - padding.top])
 
   return (
     <g>
-      <BarGroup
-        x={widthIncrement * 1}
-        y={(height / 4) * 3}
-        rectWidth={rectWidth}
-        barWidth={barWidth}
-      />
-      <BarGroup
-        x={widthIncrement * 2}
-        y={(height / 4) * 3}
-        rectWidth={rectWidth}
-        barWidth={barWidth}
-      />
-      <BarGroup
-        x={widthIncrement * 3}
-        y={(height / 4) * 3}
-        rectWidth={rectWidth}
-        barWidth={barWidth}
-      />
-      <BarGroup
-        x={widthIncrement * 4}
-        y={(height / 4) * 3}
-        rectWidth={rectWidth}
-        barWidth={barWidth}
-      />
-
-      {/* <g transform={`translate(${widthIncrement * 2} ${(height / 4) * 3})`}>
-        <circle r={10} />
-        <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" />
-      </g>
-      <g transform={`translate(${widthIncrement * 3} ${(height / 4) * 3})`}>
-        <circle r={10} />
-        <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" />
-      </g>
-      <g transform={`translate(${widthIncrement * 4} ${(height / 4) * 3})`}>
-        <circle r={10} />
-        <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" />
-      </g> */}
+      <AnimatePresence>
+        {showVisual && (
+          <>
+            <BarGroup
+              key="bars-1-wrapper"
+              barId="bars-1"
+              x={0.5 * widthIncrement}
+              y={(height / 4) * 3}
+              rectWidth={rectWidth}
+              barWidth={barWidth}
+              scale={scale}
+              data={[
+                { key: 1, value: 56 },
+                { key: 2, value: 72 },
+                { key: 3, value: 83 },
+              ]}
+            />
+            <BarGroup
+              key="bars-2-wrapper"
+              barId="bars-2"
+              x={1.5 * widthIncrement}
+              y={(height / 4) * 3}
+              rectWidth={rectWidth}
+              barWidth={barWidth}
+              scale={scale}
+              data={[
+                { key: 1, value: 56 },
+                { key: 2, value: 34 },
+                { key: 3, value: 66 },
+              ]}
+            />
+            <BarGroup
+              key="bars-3-wrapper"
+              barId="bars-3"
+              x={2.5 * widthIncrement}
+              y={(height / 4) * 3}
+              rectWidth={rectWidth}
+              barWidth={barWidth}
+              scale={scale}
+              data={[
+                { key: 1, value: 12 },
+                { key: 2, value: 45 },
+                { key: 3, value: 92 },
+              ]}
+            />
+            <BarGroup
+              key="bars-4-wrapper"
+              barId="bars-4"
+              x={3.5 * widthIncrement}
+              y={(height / 4) * 3}
+              rectWidth={rectWidth}
+              barWidth={barWidth}
+              scale={scale}
+              data={[
+                { key: 1, value: 26 },
+                { key: 2, value: 33 },
+                { key: 3, value: 54 },
+              ]}
+            />
+          </>
+        )}
+      </AnimatePresence>
     </g>
   )
 }
 
-function BarGroup({ x = 0, y = 0, rectWidth, barWidth }) {
+function BarGroup({
+  barId = "",
+  x = 0,
+  y = 0,
+  rectWidth,
+  barWidth,
+  scale,
+  data = [],
+}) {
+  const { colors } = useTheme()
   return (
-    <g transform={`translate(${x} ${y})`}>
+    <motion.g
+      key={barId}
+      transform={`translate(${x} ${y})`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={animationConfig}
+    >
       <circle r={10} />
       <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" />
-      <line
+      <motion.line
         x1={-rectWidth / 2 + barWidth / 2}
         x2={-rectWidth / 2 + barWidth / 2}
         y1={0}
-        y2={-20}
-        stroke="#000"
+        y2={-scale(data[0].value)}
+        stroke={colors.yellow[500]}
         strokeWidth={barWidth - 2}
-        opacity={0.5}
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={animationConfig}
       />
-      <line
+      <motion.line
         y1={0}
-        y2={-120}
-        stroke="#000"
+        y2={-scale(data[1].value)}
+        stroke={colors.blue[500]}
         strokeWidth={barWidth - 2}
-        opacity={0.5}
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={animationConfig}
       />
-      <line
+      <motion.line
         x1={rectWidth / 2 - barWidth / 2}
         x2={rectWidth / 2 - barWidth / 2}
         y1={0}
-        y2={-20}
-        stroke="#000"
+        y2={-scale(data[2].value)}
+        stroke={colors.purple[500]}
         strokeWidth={barWidth - 2}
-        opacity={0.5}
+        initial={{ pathLength: 0 }}
+        animate={{ pathLength: 1 }}
+        transition={animationConfig}
       />
-    </g>
+    </motion.g>
   )
 }
