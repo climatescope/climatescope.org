@@ -46,7 +46,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm export
+        run: npm run export
         env:
           SITE_URL: https://www.global-climatescope.org/
           MAILCHIMP_ADDRESS: ${{ secrets.MAILCHIMP_ADDRESS }}
