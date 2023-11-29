@@ -22,11 +22,11 @@ import SimpleGrid from "@components/SimpleGrid"
 import Logo from "./Logo"
 
 const includedLinks = [
-  "/results",
-  "/highlights",
-  "/tools",
-  "/sectors",
-  "/about",
+  "Results",
+  "Highlights",
+  "Tools",
+  "Sectors",
+  "About",
 ]
 
 const SiteHeader = ({ navigation }) => {
@@ -35,7 +35,7 @@ const SiteHeader = ({ navigation }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const { route } = useRouter()
 
-  const allNavigation = navigation.filter((d) => includedLinks.includes(d.path))
+  const allNavigation = navigation.filter((d) => includedLinks.includes(d.title))
 
   useEffect(() => {
     onClose()

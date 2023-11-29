@@ -15,7 +15,7 @@ const IndexPage = ({
   globeInsights,
   metaData,
   allTools,
-  miniRankingsPaths,
+  // miniRankingsPaths,
   miniGlobesData,
 }) => {
   return (
