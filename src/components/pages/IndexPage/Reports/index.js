@@ -34,8 +34,8 @@ const Reports = () => {
           py={24}
           alignItems="center"
         >
-          <Stack gridColumn={["2 / -2", null, "span 4", "span 3"]}>
-            <Box boxShadow="lg">
+          <Stack gridColumn={["1 / -1", null, "span 4"]}>
+            <Box boxShadow="lg" w={["100%", null, "75%"]} margin={["0", null, "0 auto"]}>
               <Link href={report.href} target="_blank" display="block">
                 <Image
                   src={report.imgSrc}
@@ -47,7 +47,7 @@ const Reports = () => {
               </Link>
             </Box>
           </Stack>
-          <Stack spacing={6} gridColumn={["span 8", null, null, "5 / -1"]}>
+          <Stack spacing={6} gridColumn={["span 8", null, null, "span 4"]}>
             <Heading as="h2" variant="sectionTitle" color="white">
               {report.title}
             </Heading>
