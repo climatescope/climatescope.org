@@ -1,9 +1,10 @@
 import { useMemo } from "react"
-import { Center } from "@chakra-ui/react"
+import { Center, Stack, Text } from "@chakra-ui/layout"
 import { useTheme } from "@chakra-ui/system"
 import { useElementSize } from "usehooks-ts"
 import { scaleLinear } from "d3-scale"
 import { motion, AnimatePresence } from "framer-motion"
+import { Tooltip } from "@chakra-ui/tooltip"
 
 import useHighlightsStore from "@utils/store/highlightsStore"
 import XAxis from "./XAxis"
@@ -63,7 +64,6 @@ export default function Visual() {
           xScale={xScale}
           yScale={yScale}
         />
-
         <XAxis
           ticks={xTicks}
           xTicks={xTicks}
@@ -72,13 +72,22 @@ export default function Visual() {
           xScale={xScale}
           yScale={yScale}
         />
-
         <Points data={data} xScale={xScale} yScale={yScale} />
-
         <Bars width={width} height={height} />
       </svg>
     </Center>
   )
+}
+
+function getFill(d, isHighlighted, coloredBy, highlightedMarkets, colors) {
+  if (isHighlighted) {
+    if (coloredBy === "marketType") return d.fill
+    else return colors.teal[800]
+  }
+  if (highlightedMarkets.length) {
+    return colors.gray[100]
+  }
+  return coloredBy === "marketType" ? d.fill : colors.teal[700]
 }
 
 function Points({ data = [], xScale, yScale }) {
@@ -101,38 +110,76 @@ function Points({ data = [], xScale, yScale }) {
           const cy = yScale(d[currentDataKey])
           const isHighlighted = highlightedMarkets.includes(d.iso.toLowerCase())
           return (
-            <motion.circle
+            <Tooltip
+              label={
+                <Stack spacing={1} alignItems="center" p={3}>
+                  <Text
+                    fontSize="sm"
+                    fontWeight={600}
+                    lineHeight="shorter"
+                    textAlign="center"
+                  >
+                    {d.geography}
+                  </Text>
+                  <Text
+                    fontSize="sm"
+                    fontWeight={600}
+                    lineHeight="shorter"
+                    textAlign="center"
+                  >
+                    {currentSlide === "6" ? (
+                      <span>
+                        {Math.round(d.cumulative * 1000)}
+                        {" $ Mn"}
+                      </span>
+                    ) : (
+                      <span>
+                        {d.cumulative < 0.1
+                          ? Math.round(d.cumulative * 100) / 100
+                          : Math.round(d.cumulative * 10) / 10}
+                        {" $ Bn"}
+                      </span>
+                    )}
+                  </Text>
+                </Stack>
+              }
               key={d.iso}
-              paintOrder="stroke fill"
-              stroke="#FFF"
-              strokeWidth={1}
-              style={{
-                cursor: "pointer",
-              }}
-              initial={{
-                cx,
-                cy,
-                r: 0,
-                fill: colors.gray[500],
-                opacity: 0,
-              }}
-              animate={{
-                cx,
-                cy,
-                r: isHighlighted ? 12 : 8,
-                opacity: 1,
-                fill: isHighlighted
-                  ? d.fill
-                  : coloredBy === "marketType"
-                  ? d.fill
-                  : colors.gray[200],
-              }}
-              exit={{ r: 16, opacity: 0 }}
-              transition={animationConfig}
-              onClick={() => {
-                console.log(d)
-              }}
-            />
+              placement="top"
+              hasArrow
+            >
+              <motion.circle
+                paintOrder="stroke fill"
+                stroke="#FFF"
+                strokeWidth={isHighlighted ? 4 : 3}
+                style={{
+                  cursor: "pointer",
+                }}
+                initial={{
+                  cx,
+                  cy,
+                  r: 0,
+                  opacity: 0,
+                }}
+                animate={{
+                  cx,
+                  cy,
+                  r: isHighlighted ? 10 : 7,
+                  opacity: 1,
+                  fill: getFill(
+                    d,
+                    isHighlighted,
+                    coloredBy,
+                    highlightedMarkets,
+                    colors
+                  ),
+                }}
+                exit={{ r: 16, opacity: 0 }}
+                transition={animationConfig}
+                onClick={() => {
+                  console.log(d)
+                }}
+              />
+            </Tooltip>
           )
         })}
       </AnimatePresence>
@@ -143,80 +190,39 @@ function Points({ data = [], xScale, yScale }) {
 function Bars({ width = 0, height = 0 }) {
   const currentSlide = useHighlightsStore((state) => state.currentSlide)
   const padding = useHighlightsStore((state) => state.padding)
+  const visiblePolicies = useHighlightsStore((state) => state.visiblePolicies)
 
   const widthIncrement = width / 4
-  const rectWidth = widthIncrement - 20
+  const rectWidth = widthIncrement - 40
   const barWidth = rectWidth / 3
 
   const showVisual = parseInt(currentSlide) > 7
 
+  const h = height - padding.top * 2 - padding.bottom
+
   const scale = scaleLinear()
     .domain([0, 100])
-    .range([0, (height / 4) * 3 - padding.top])
+    .range([0, h - padding.top * 2])
 
   return (
     <g>
       <AnimatePresence>
-        {showVisual && (
-          <>
-            <BarGroup
-              key="bars-1-wrapper"
-              barId="bars-1"
-              x={0.5 * widthIncrement}
-              y={(height / 4) * 3}
-              rectWidth={rectWidth}
-              barWidth={barWidth}
-              scale={scale}
-              data={[
-                { key: 1, value: 56 },
-                { key: 2, value: 72 },
-                { key: 3, value: 83 },
-              ]}
-            />
-            <BarGroup
-              key="bars-2-wrapper"
-              barId="bars-2"
-              x={1.5 * widthIncrement}
-              y={(height / 4) * 3}
-              rectWidth={rectWidth}
-              barWidth={barWidth}
-              scale={scale}
-              data={[
-                { key: 1, value: 56 },
-                { key: 2, value: 34 },
-                { key: 3, value: 66 },
-              ]}
-            />
-            <BarGroup
-              key="bars-3-wrapper"
-              barId="bars-3"
-              x={2.5 * widthIncrement}
-              y={(height / 4) * 3}
-              rectWidth={rectWidth}
-              barWidth={barWidth}
-              scale={scale}
-              data={[
-                { key: 1, value: 12 },
-                { key: 2, value: 45 },
-                { key: 3, value: 92 },
-              ]}
-            />
-            <BarGroup
-              key="bars-4-wrapper"
-              barId="bars-4"
-              x={3.5 * widthIncrement}
-              y={(height / 4) * 3}
-              rectWidth={rectWidth}
-              barWidth={barWidth}
-              scale={scale}
-              data={[
-                { key: 1, value: 26 },
-                { key: 2, value: 33 },
-                { key: 3, value: 54 },
-              ]}
-            />
-          </>
-        )}
+        {showVisual &&
+          visiblePolicies.map((policy, i) => {
+            return (
+              <BarGroup
+                key={`${policy.policy}-wrapper`}
+                barId={policy.policy}
+                x={(i + 0.5) * widthIncrement}
+                y={h}
+                rectWidth={rectWidth}
+                barWidth={barWidth}
+                scale={scale}
+                data={policy.data}
+                policy={policy}
+              />
+            )
+          })}
       </AnimatePresence>
     </g>
   )
@@ -230,8 +236,10 @@ function BarGroup({
   barWidth,
   scale,
   data = [],
+  policy,
 }) {
   const { colors } = useTheme()
+  const gap = 6
   return (
     <motion.g
       key={barId}
@@ -241,39 +249,117 @@ function BarGroup({
       exit={{ opacity: 0 }}
       transition={animationConfig}
     >
-      <circle r={10} />
-      <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" />
+      <text
+        textAnchor="middle"
+        y={-scale(100) - 20}
+        fontWeight={600}
+        fill={colors.gray[800]}
+      >
+        {policy.policy}
+      </text>
+
+      {/* <circle r={10} /> */}
+      {/* <rect x={-rectWidth / 2} width={rectWidth} height={10} fill="#000" /> */}
       <motion.line
         x1={-rectWidth / 2 + barWidth / 2}
         x2={-rectWidth / 2 + barWidth / 2}
         y1={0}
         y2={-scale(data[0].value)}
-        stroke={colors.yellow[500]}
-        strokeWidth={barWidth - 2}
+        stroke={colors.cyan[700]}
+        strokeWidth={barWidth - gap}
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
-        transition={animationConfig}
+        exit={{ pathLength: 0 }}
+        transition={{ ...animationConfig, delay: 0 }}
       />
+      <motion.text
+        intial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        x={-rectWidth / 2 + barWidth / 2}
+        y={-scale(data[0].value) - 10}
+        textAnchor="middle"
+        fontWeight={600}
+        fill={colors.gray[800]}
+      >
+        {data[0].value}
+        {"%"}
+      </motion.text>
+      <text
+        x={-rectWidth / 2 + barWidth / 2}
+        y={30}
+        textAnchor="middle"
+        fontWeight={600}
+        fill={colors.gray[800]}
+      >
+        {data[0].year}
+      </text>
       <motion.line
         y1={0}
         y2={-scale(data[1].value)}
-        stroke={colors.blue[500]}
-        strokeWidth={barWidth - 2}
+        stroke={colors.purple[400]}
+        strokeWidth={barWidth - gap}
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
-        transition={animationConfig}
+        exit={{ pathLength: 0 }}
+        transition={{ ...animationConfig, delay: 0.05 }}
       />
+      <motion.text
+        intial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        x={0}
+        y={-scale(data[1].value) - 10}
+        textAnchor="middle"
+        fontWeight={600}
+        fill={colors.gray[800]}
+      >
+        {data[1].value}
+        {"%"}
+      </motion.text>
+      <text
+        x={0}
+        y={30}
+        textAnchor="middle"
+        fontWeight={600}
+        fill={colors.gray[800]}
+      >
+        {data[1].year}
+      </text>
       <motion.line
         x1={rectWidth / 2 - barWidth / 2}
         x2={rectWidth / 2 - barWidth / 2}
         y1={0}
         y2={-scale(data[2].value)}
-        stroke={colors.purple[500]}
-        strokeWidth={barWidth - 2}
+        stroke={colors.teal[300]}
+        strokeWidth={barWidth - gap}
         initial={{ pathLength: 0 }}
         animate={{ pathLength: 1 }}
-        transition={animationConfig}
+        exit={{ pathLength: 0 }}
+        transition={{ ...animationConfig, delay: 0.1 }}
       />
+      <motion.text
+        intial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        x={rectWidth / 2 - barWidth / 2}
+        y={-scale(data[2].value) - 10}
+        textAnchor="middle"
+        fontWeight={600}
+        fill={colors.gray[800]}
+      >
+        {data[2].value}
+        {"%"}
+      </motion.text>
+      <text
+        x={rectWidth / 2 - barWidth / 2}
+        y={30}
+        textAnchor="middle"
+        fontWeight={600}
+        fill={colors.gray[800]}
+      >
+        {data[2].year}
+      </text>
     </motion.g>
   )
 }

@@ -7,15 +7,16 @@ import Visual from "@components/pages/HighlightsPage/Visual"
 import StartSlide from "@components/pages/HighlightsPage/StartSlide"
 import useHighlightsStore from "@utils/store/highlightsStore"
 
-export default function HighlightsPage({ data, slides }) {
+export default function HighlightsPage({ data, policies, slides }) {
   const { colors } = useTheme()
   const setInitialData = useHighlightsStore((state) => state.setInitialData)
 
   useEffect(() => {
     if (typeof window === "undefined") return undefined
     if (!data) return undefined
-    setInitialData(data, slides, colors)
-  }, [data])
+    if (!policies) return undefined
+    setInitialData(data, policies, slides, colors)
+  }, [data, policies])
 
   return (
     <Container>
@@ -39,12 +40,12 @@ export default function HighlightsPage({ data, slides }) {
           return (
             <Slide key={slide.id} slideId={slide.id}>
               <Stack spacing={3}>
-                <Text>{slide.id || "Missing slide id"}</Text>
+                {/* <Text>{slide.id || "Missing slide id"}</Text> */}
                 <Heading>{slide.title || "Missing title"}</Heading>
                 <Text>{slide.description || "Missing description"}</Text>
-                <Text fontSize="xs">
+                {/* <Text fontSize="xs">
                   {slide.visual || "Missing visual description"}
-                </Text>
+                </Text> */}
               </Stack>
             </Slide>
           )

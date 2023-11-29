@@ -7,10 +7,10 @@ const useHighlightsStore = create((set) => ({
    * Config
    */
   padding: {
-    top: 40,
+    top: 60,
     left: 20,
     right: 20,
-    bottom: 40,
+    bottom: 60,
   },
 
   currentYear: 2022,
@@ -59,7 +59,14 @@ const useHighlightsStore = create((set) => ({
         set((state) => ({
           currentSlide,
           yScaleZoomFactor: 1,
-          highlightedMarkets: [],
+          highlightedMarkets: _sortBy(
+            state.unfilteredData.filter(
+              (d) => d.marketType === "developing markets"
+            ),
+            (o) => -o.score
+          )
+            .slice(0, 15)
+            .map((d) => d.iso),
           coloredBy: "marketType",
           data: state.unfilteredData.filter(
             (d) => d.marketType === "developing markets"
@@ -79,7 +86,7 @@ const useHighlightsStore = create((set) => ({
             )
               .slice(0, 15)
               .map((d) => d.iso),
-            coloredBy: "",
+            coloredBy: "marketType",
             data: state.unfilteredData.filter(
               (d) => d.marketType === "developing markets"
             ),
@@ -101,7 +108,7 @@ const useHighlightsStore = create((set) => ({
               // .filter((d) => d.region === "Africa")
               .filter((d) => d.region === "Middle East & Africa")
               .map((d) => d.iso),
-            coloredBy: "",
+            coloredBy: "marketType",
             data: state.unfilteredData.filter(
               (d) => d.marketType === "developing markets"
             ),
@@ -137,16 +144,57 @@ const useHighlightsStore = create((set) => ({
       // Switch to bar chart
 
       case "8":
-        set(() => {
+        set((state) => {
           return {
             currentSlide,
             yScaleZoomFactor: 1,
             highlightedMarkets: [],
             coloredBy: "",
+            visiblePolicies: state.policies.slice(0, 1),
             data: [{}],
           }
         })
         break
+
+      case "9":
+        set((state) => {
+          return {
+            currentSlide,
+            yScaleZoomFactor: 1,
+            highlightedMarkets: [],
+            coloredBy: "",
+            visiblePolicies: state.policies.slice(0, 2),
+            data: [{}],
+          }
+        })
+        break
+
+      case "10":
+        set((state) => {
+          return {
+            currentSlide,
+            yScaleZoomFactor: 1,
+            highlightedMarkets: [],
+            coloredBy: "",
+            visiblePolicies: state.policies.slice(0, 3),
+            data: [{}],
+          }
+        })
+        break
+
+      case "11":
+        set((state) => {
+          return {
+            currentSlide,
+            yScaleZoomFactor: 1,
+            highlightedMarkets: [],
+            coloredBy: "",
+            visiblePolicies: state.policies,
+            data: [{}],
+          }
+        })
+        break
+
       default:
         set((state) => ({
           currentSlide,
@@ -164,7 +212,7 @@ const useHighlightsStore = create((set) => ({
    */
   unfilteredData: [],
   data: [],
-  setInitialData: (data, slides, colors) => {
+  setInitialData: (data, policies, slides, colors) => {
     set((state) => {
       const maxScore = _max(data, (o) => o.score)
       const maxValue = _max(data.map((d) => d[state.currentDataKey] || 0))
@@ -173,19 +221,26 @@ const useHighlightsStore = create((set) => ({
         y: [0, getNiceValue(maxValue)],
       }
       const colorMap = {
-        "developed markets": colors.cyan[500],
-        "developing markets": colors.purple[500],
+        "developed markets": colors.cyan[400],
+        "developing markets": colors.purple[600],
       }
-      const unfilteredData = data
-        .map((d) => ({ ...d, fill: colorMap[d.marketType] }))
-        .filter((d) => d.hasInvestmentData)
+      const unfilteredData = _sortBy(
+        data
+          .map((d) => ({ ...d, fill: colorMap[d.marketType] }))
+          .filter((d) => d.hasInvestmentData),
+        (o) => o.score
+      )
       return {
         data: unfilteredData,
         unfilteredData,
         domains,
+        policies,
       }
     })
   },
+
+  policies: [],
+  visiblePolicies: [],
 
   /**
    * Domains + Scales

@@ -1,9 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion"
+import { useTheme } from "@chakra-ui/system"
 
 import animationConfig from "./animationConfig"
 import useHighlightsStore from "@utils/store/highlightsStore"
 
 export default function YAxis({ xScale, yTicks, xTicks, yScale }) {
+  const { colors } = useTheme()
   const x1 = xScale(xTicks[0])
   const x2 = xScale(xTicks.slice(-1)[0])
   const currentSlide = useHighlightsStore((state) => state.currentSlide)
@@ -34,6 +36,7 @@ export default function YAxis({ xScale, yTicks, xTicks, yScale }) {
                   y={y - 4}
                   fontSize={14}
                   fontWeight={600}
+                  fill={colors.gray[800]}
                 >
                   {isM ? tick * 1000 : tick}
                   {isLast ? suffix : ""}
@@ -54,7 +57,7 @@ export default function YAxis({ xScale, yTicks, xTicks, yScale }) {
                 x2={x2}
                 y1={y}
                 y2={y}
-                stroke="#DDDDDD"
+                stroke={colors.gray[200]}
                 strokeDasharray={[2, 1]}
                 initial={{
                   y1: yScale(yTicks[0]),

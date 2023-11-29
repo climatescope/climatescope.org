@@ -23,7 +23,7 @@ export default function Slide({ slideId = 1, children }) {
       ref={ref}
       position="relative"
       pointerEvents="none"
-      style={{ height: slideId === "7" ? "75vh" : "100vh" }}
+      style={{ height: slideId === "7" ? "100vh" : "100vh" }}
     >
       {slideId !== "7" && (
         <Box
@@ -32,7 +32,8 @@ export default function Slide({ slideId = 1, children }) {
           boxShadow="md"
           px={10}
           py={5}
-          maxW="40rem"
+          w="100%"
+          maxW="46rem"
           pointerEvents="all"
         >
           {children}
