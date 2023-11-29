@@ -86,7 +86,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
         <Stack spacing={[10, null, 20]}>
           <Stack spacing={5} maxW="50rem">
             <Heading as="h1" variant="pageTitle">
-              {"Results"}
+              {"Power sector results"}
             </Heading>
             <Text variant="subtitle">
               {
