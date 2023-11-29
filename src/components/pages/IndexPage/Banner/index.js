@@ -1,10 +1,16 @@
-import { Heading, Center, Text, Box, Stack, HStack } from "@chakra-ui/react"
+import { Heading, Center, Text, Box, Stack, HStack } from "@chakra-ui/layout"
 import getConfig from "next/config"
 
 import { LinkBox, LinkOverlay } from "@components/Link"
 import Image from "@components/Image"
 import SimpleGrid from "@components/SimpleGrid"
-import { ChevronRight, StarIcon, ChartIcon, ReportIcon } from "@components/Icon"
+import {
+  ChevronRight,
+  StarIcon,
+  // ChartIcon,
+  ReportIcon,
+  DownloadIcon,
+} from "@components/Icon"
 
 const { publicRuntimeConfig } = getConfig()
 const year = publicRuntimeConfig.year
@@ -18,21 +24,29 @@ const bannerActions = [
     color: "teal.800",
     icon: "StarIcon",
   },
+  // {
+  //   key: 2,
+  //   title: `${year} Highlights`,
+  //   description: "See this year's highlights",
+  //   href: "/highlights",
+  //   color: "teal.800",
+  //   icon: "ChartIcon",
+  // },
   {
     key: 2,
-    title: `${year} Highlights`,
-    description: "See this year's highlights",
-    href: "/highlights",
+    title: `Press release`,
+    description: `${year} findings summary`,
+    href: "/",
     color: "teal.800",
-    icon: "ChartIcon",
+    icon: "ReportIcon",
   },
   {
     key: 3,
-    title: "Press release",
-    description: `${year} findings summary`,
-    href: "/blog/developing-countries-raise-their-clean-power-policy-ambitions/",
+    title: `${year} Full report`,
+    description: "Download the full report",
+    href: "/downloads/climatescope-2023-report-en.pdf",
     color: "teal.800",
-    icon: "ReportIcon",
+    icon: "DownloadIcon",
   },
 ]
 
@@ -45,7 +59,7 @@ export default function Banner() {
             <Box w="100%" minW="65rem">
               <Image
                 src="cover.jpg"
-                alt="Climatescope 2022 cover image"
+                alt="Climatescope 2023 cover image"
                 ratio={2.7 / 1}
                 type="cover"
               />
@@ -99,9 +113,9 @@ export default function Banner() {
             >
               <HStack
                 spacing={5}
-                py={6}
+                py={[3, null, 6]}
                 borderY="0.0625rem solid"
-                borderColor="gray.100"
+                borderColor={["white", null, "gray.100"]}
                 h="100%"
                 alignItems="flex-start"
               >
@@ -112,12 +126,19 @@ export default function Banner() {
                   bg="gray.50"
                   borderRadius="full"
                 >
-                  {icon === "StarIcon" ? (
+                  {/* {icon === "StarIcon" ? (
                     <StarIcon />
                   ) : icon === "ChartIcon" ? (
                     <ChartIcon />
                   ) : (
                     <ReportIcon />
+                  )} */}
+                  {icon === "StarIcon" ? (
+                    <StarIcon />
+                  ) : icon === "ReportIcon" ? (
+                    <ReportIcon />
+                  ) : (
+                    <DownloadIcon />
                   )}
                 </Center>
                 <Stack flex="1" spacing={2}>

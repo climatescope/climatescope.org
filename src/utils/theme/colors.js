@@ -11,7 +11,6 @@ const colors = {
     // "800": "#004852",
     // "900": "#002D33",
 
-
     // "50": "#f2fbfb",
     // "100": "#ddf4f6",
     // "200": "#b4e8ec",
@@ -32,8 +31,7 @@ const colors = {
     "600": "#0194A7",
     "700": "#018798",
     "800": "#016C7A",
-    "900": "#003B42"
-
+    "900": "#003B42",
   },
   gray: {
     // "25": "#FAFBFB",
@@ -82,7 +80,7 @@ const colors = {
     // "700": "#C37F25",
     // "800": "#A96612",
     // "900": "#8E4D00",
-    
+
     // "50": "#fefbf2",
     // "100": "#fef4dd",
     // "200": "#fce7b4",
@@ -103,8 +101,7 @@ const colors = {
     "600": "#de9901",
     "700": "#c07901",
     "800": "#884a01",
-    "900": "#4e2600"
-
+    "900": "#4e2600",
   },
   orange: {
     "50": "#FFFFFF",
@@ -164,6 +161,20 @@ const colors = {
     "800": "#0E2A4E",
     "900": "#001D3D",
   },
+
+  cyan: {
+    "50": "#F1FBFD",
+    "100": "#D5F2FB",
+    "200": "#B4E8F8",
+    "300": "#84DBF5",
+    "400": "#0DA9D9",
+    "500": "#009CCC",
+    "600": "#0081A8",
+    "700": "#007599",
+    "800": "#005E7A",
+    "900": "#003342",
+  },
+
   twitter: {
     "400": "#39ADF4",
     "500": "#1da1f2",
@@ -203,7 +214,7 @@ const colors = {
     "Biomass & Waste": "#10D5B5",
     "Coal": "#40454F",
     "Geothermal": "#8F4DD2",
-    "Large Hydro": "#01687C",
+    "Large Hydro": "#005673",
     "Marine": "#B70B8C",
     "Natural Gas": "#D7D9DB",
     "Nuclear": "#E24234",
@@ -212,8 +223,15 @@ const colors = {
     "Other - non-fossil": "#C9A0F2",
     "Other - non fossil": "#C9A0F2",
     "Solar PV": "#f8ba01",
+    "Solar pv": "#f8ba01",
     "Solar thermal": "#FFA86A",
-    "Wind": "#02BDE3",
+    "Wind": "rgb(13,157,219)",
+
+    // NEW COLORS:
+    "Onshore wind": "#02BDE3",
+    "Large hydro": "#005673",
+    "Small hydro": "#0082ac",
+    "Small Hydro": "#0082ac",
 
     "Biomass": "#10D5B5",
     "Hydro": "#01687C",
@@ -237,6 +255,8 @@ const colors = {
 
     "Africa": "#f8ba01",
     "Middle East": "#078D76",
+    "Northern America": "#02BDE3",
+    "Latin America": "#B70B8C",
 
     "Unknown": "#778088",
 
@@ -259,6 +279,8 @@ const colors = {
     "Rest of Europe": "#729cff",
     "Germany": "#F8BA01",
 
+    "developed markets": "#0DA9D9",
+    "developing markets": "#9191EE",
   },
 }
 

@@ -1,7 +1,8 @@
 import fs from "fs/promises"
-import { join } from "path"
+import { join, extname } from "path"
 import shuffle from "lodash/shuffle"
 import { csvParse } from "d3-dsv"
+import { serialize } from "next-mdx-remote/serialize"
 
 import { extractMetadata } from "@utils/api/extractMetadata"
 import nav from "@utils/navigation"
@@ -43,4 +44,27 @@ export const getServerData = getDataPreview
 export async function getPathsFromDirectory(n, ext) {
   const slugs = await fs.readdir(join(process.cwd(), n))
   return ext ? slugs.filter((d) => d.includes(ext)) : slugs
+}
+
+/**
+ * MDX Remote helpers
+ *
+ */
+
+export async function getMDXPage(dir = "", slug = "") {
+  const content = await fs.readFile(
+    join(process.cwd(), "content", dir, `${slug}.mdx`),
+    "utf8"
+  )
+  const options = { parseFrontmatter: true }
+  const source = await serialize(content, options)
+  source.frontmatter.layout = source?.frontmatter?.layout || dir
+  return source
+}
+
+export async function getAllMDXSlugs(dir = "") {
+  const pages = await fs.readdir(join(process.cwd(), "content", dir))
+  return pages
+    .filter((d) => extname(d).includes("mdx"))
+    .map((d) => d.split(extname(d))[0])
 }

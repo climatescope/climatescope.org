@@ -1,4 +1,4 @@
-import { SimpleGrid as ChakraSimpleGrid } from "@chakra-ui/react"
+import { SimpleGrid as ChakraSimpleGrid } from "@chakra-ui/layout"
 
 const SimpleGrid = ChakraSimpleGrid
 

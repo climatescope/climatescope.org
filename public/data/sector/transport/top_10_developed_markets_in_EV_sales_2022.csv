@@ -1,0 +1,11 @@
+country,iso,value,unit,rank
+United States,us,0.97,mn,1
+Germany,de,0.85,mn,2
+UK,uk,0.4,mn,3
+France,fr,0.34,mn,4
+Sweden,se,0.17,mn,5
+Italy,it,0.16,mn,6
+South Korea,kr,0.14,mn,7
+Canada,ca,0.12,mn,8
+Netherlands,nl,0.11,mn,9
+Belgium,be,0.1,mn,10

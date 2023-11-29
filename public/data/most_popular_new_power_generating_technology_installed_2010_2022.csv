@@ -1,0 +1,137 @@
+2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,iso,country,region
+Oil,Hydro,Hydro,Hydro,None,Hydro,Hydro,Hydro,Hydro,Hydro,None,Wind,Solar,al,Albania,EUROPE
+Oil,Gas,Gas,Gas,Gas,Gas,Gas,Gas,Gas,Gas,Gas,Gas,Solar,dz,Algeria,AFRICA
+Oil,Oil,Oil,Oil,Biomass,Hydro,None,Gas,None,None,Hydro,None,Oil,ao,Angola,AFRICA
+Gas,Oil,Gas,Wind,Oil,Nuclear,Gas,Gas,Gas,Wind,Wind,Hydro,Solar,ar,Argentina,LAC
+None,Gas,Gas,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Solar,Solar,Hydro,Solar,am,Armenia,APAC
+Gas,Gas,Hydro,Solar,Solar,Solar,Solar,Solar,Solar,Solar,Solar,Solar,Solar,au,Australia,APAC
+Hydro,Gas,Wind,Wind,Wind,Hydro,Wind,Gas,Solar,Solar,Solar,Wind,Solar,at,Austria,EUROPE
+Hydro,Hydro,Gas,Gas,Gas,Gas,Gas,Gas,Wind,Wind,None,Hydro,Gas,az,Azerbaijan,APAC
+Oil,Oil,Gas,Gas,Oil,Gas,Oil,Gas,Oil,Oil,Coal,Oil,Coal,bd,Bangladesh,APAC
+Gas,Gas,Gas,Wind,Gas,Wind,Gas,Hydro,Wind,Biomass,Nuclear,Gas,Gas,by,Belarus,EUROPE
+Solar,Solar,Solar,Solar,Wind,Wind,Gas,Other - fossil,Solar,Solar,Gas,Solar,Solar,be,Belgium,EUROPE
+None,None,None,Gas,Gas,None,Gas,None,None,Gas,None,None,Solar,bj,Benin,AFRICA
+Gas,Oil,Gas,Gas,Gas,Gas,Wind,Hydro,Hydro,Gas,Oil,Gas,Gas,bo,Bolivia,LAC
+Hydro,None,Coal,None,None,Biomass,Coal,Hydro,Hydro,Wind,Hydro,Wind,Solar,ba,Bosnia and Herzegovina,EUROPE
+Gas,Oil,None,None,Coal,None,None,None,None,None,None,None,None,bw,Botswana,AFRICA
+Hydro,Hydro,Hydro,Hydro,Wind,Wind,Hydro,Wind,Wind,Solar,Solar,Solar,Solar,br,Brazil,LAC
+Hydro,Coal,Solar,Hydro,Solar,Biomass,Biomass,Coal,Gas,Gas,Solar,Solar,Solar,bg,Bulgaria,EUROPE
+Oil,None,Oil,Hydro,Oil,Oil,Solar,Solar,Solar,Solar,Oil,Oil,Solar,bf,Burkina Faso,AFRICA
+Solar,None,None,None,None,None,Oil,Gas,None,Gas,None,Gas,None,bi,Burundi,AFRICA
+None,Hydro,Hydro,Hydro,Hydro,Coal,Coal,Coal,Hydro,Coal,Oil,Solar,Coal,kh,Cambodia,APAC
+None,None,Oil,Gas,Solar,Oil,Hydro,Hydro,None,Hydro,None,None,Solar,cm,Cameroon,AFRICA
+Gas,Wind,Gas,Wind,Hydro,Wind,Hydro,Wind,Wind,Wind,Hydro,Wind,Wind,ca,Canada,AMER
+None,None,None,None,None,None,None,None,None,Hydro,None,Oil,None,cf,Central African Republic,AFRICA
+Oil,Oil,Oil,None,Oil,None,Wind,None,Oil,Oil,Oil,None,Oil,td,Chad,AFRICA
+Coal,Coal,Coal,Coal,Solar,Solar,Solar,Solar,Solar,Solar,Oil,Solar,Solar,cl,Chile,LAC
+Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Coal,Solar,Solar,Gas,Hydro,co,Colombia,LAC
+Oil,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Wind,Hydro,Geothermal,Solar,Hydro,Solar,cr,Costa Rica,LAC
+Hydro,Gas,Wind,Wind,Wind,Gas,Wind,Hydro,Hydro,Solar,Wind,Wind,Biomass,hr,Croatia,EUROPE
+Solar,Oil,Gas,Oil,Gas,Oil,Oil,Hydro,Other - fossil,Coal,Hydro,Oil,Hydro,cz,Czechia,EUROPE
+Gas,Hydro,None,None,None,Hydro,Solar,Hydro,Hydro,Oil,Hydro,None,None,cd,Democratic Republic of the Congo,AFRICA
+Wind,Wind,Solar,Wind,Oil,Solar,Wind,Biomass,Wind,Wind,Solar,Wind,Solar,dk,Denmark,EUROPE
+None,None,Oil,Wind,Oil,Solar,Wind,Gas,Solar,Coal,Solar,Solar,Solar,do,Dominican Republic,LAC
+Hydro,Gas,Gas,Gas,Hydro,Oil,Hydro,Hydro,Hydro,Hydro,Hydro,Oil,Hydro,ec,Ecuador,LAC
+Oil,Oil,Gas,Oil,Gas,Gas,Gas,Gas,Gas,Gas,Solar,Wind,Solar,eg,Egypt,AFRICA
+None,Biomass,Biomass,Oil,None,Biomass,Biomass,Solar,Solar,Solar,Solar,Solar,Gas,sv,El Salvador,LAC
+None,None,None,None,None,Oil,Solar,Oil,Solar,Solar,Solar,Solar,Solar,er,Eritrea,AFRICA
+Hydro,Hydro,Wind,Wind,None,Hydro,Hydro,Biomass,Biomass,Solar,None,Hydro,Hydro,et,Ethiopia,AFRICA
+Wind,None,Oil,Wind,Wind,Wind,Wind,Wind,Biomass,Biomass,Wind,Wind,Wind,fi,Finland,EUROPE
+Gas,Solar,Gas,Solar,Wind,Wind,Wind,Wind,Wind,Wind,Wind,Solar,Solar,fr,France,EUROPE
+None,Gas,Hydro,Hydro,Hydro,Gas,Hydro,Hydro,Hydro,Hydro,Gas,None,None,ge,Georgia,APAC
+Solar,Solar,Solar,Wind,Wind,Wind,Wind,Wind,Solar,Solar,Solar,Solar,Solar,de,Germany,EUROPE
+Gas,None,Gas,Hydro,Solar,Oil,Oil,Gas,Oil,Oil,Gas,Solar,Gas,gh,Ghana,AFRICA
+Gas,Gas,Solar,Solar,Hydro,Wind,Wind,Gas,Wind,Wind,Solar,Solar,Solar,gr,Greece,EUROPE
+Hydro,Hydro,Coal,Oil,Biomass,Coal,Hydro,Hydro,Hydro,Hydro,Hydro,Solar,Biomass,gt,Guatemala,LAC
+None,None,None,Oil,Oil,Hydro,Oil,None,None,None,None,Hydro,None,gn,Guinea,AFRICA
+Oil,Oil,Oil,None,Biomass,None,None,None,None,Hydro,Solar,None,None,ht,Haiti,LAC
+Hydro,Wind,Biomass,Hydro,Hydro,Solar,Coal,Wind,Solar,Solar,Hydro,Hydro,Oil,hn,Honduras,LAC
+Nuclear,Oil,None,Solar,Gas,Solar,Coal,Coal,Solar,Solar,Solar,Solar,Solar,hu,Hungary,EUROPE
+Coal,Coal,Coal,Coal,Coal,Coal,Coal,Solar,Solar,Solar,Solar,Solar,Solar,in,India,APAC
+Oil,Coal,Coal,Coal,Coal,Coal,Coal,Gas,Coal,Coal,Coal,Hydro,Coal,id,Indonesia,APAC
+Gas,Gas,Oil,Gas,Other - fossil,Gas,Gas,None,Gas,Oil,Gas,Hydro,Solar,iq,Iraq,MDE
+Oil,Wind,Gas,Gas,Wind,Wind,Wind,Wind,Wind,Wind,Wind,Wind,Solar,ie,Ireland,EUROPE
+Gas,Gas,Solar,Gas,Gas,Gas,Solar,Gas,Solar,Gas,Solar,Solar,Solar,il,Israel,MDE
+Solar,Solar,Solar,Solar,Solar,Solar,Solar,Solar,Wind,Solar,Solar,Solar,Solar,it,Italy,EUROPE
+Gas,None,Gas,Gas,None,Gas,Oil,Hydro,None,Gas,None,None,Gas,ci,Ivory Coast,AFRICA
+Wind,Wind,None,Solar,Solar,Hydro,Wind,Gas,Gas,Gas,Gas,Biomass,None,jm,Jamaica,LAC
+Gas,Solar,Gas,Solar,Solar,Solar,Solar,Solar,Solar,Solar,Solar,Solar,Solar,jp,Japan,APAC
+Gas,Gas,None,Gas,Oil,Gas,Solar,Solar,Gas,Solar,Solar,Gas,Solar,jo,Jordan,MDE
+Hydro,Hydro,Coal,Hydro,Coal,Solar,Coal,Hydro,Solar,Coal,Solar,Solar,Wind,kz,Kazakhstan,APAC
+Oil,Oil,Hydro,Oil,Geothermal,Oil,Solar,Hydro,Wind,Geothermal,Solar,Solar,Solar,ke,Kenya,AFRICA
+None,None,Gas,Gas,None,Gas,Gas,None,Solar,Gas,Gas,Gas,None,kw,Kuwait,MDE
+Hydro,Hydro,None,None,None,None,None,None,None,None,None,None,None,kg,Kyrgyzstan,APAC
+Hydro,Hydro,Hydro,Hydro,Hydro,Coal,None,Hydro,Hydro,Hydro,Hydro,None,Hydro,la,Laos,APAC
+Oil,None,None,None,Oil,Oil,None,Oil,None,Oil,Solar,Solar,Solar,lb,Lebanon,MDE
+None,None,None,None,None,None,None,None,None,None,None,Solar,None,ls,Lesotho,AFRICA
+Oil,Oil,Oil,None,Biomass,None,Hydro,Hydro,None,None,None,None,None,lr,Liberia,AFRICA
+Wind,Gas,Wind,Wind,Biomass,Wind,Wind,Biomass,Gas,Gas,Biomass,Gas,Solar,lt,Lithuania,EUROPE
+Oil,None,Oil,None,Oil,Oil,Oil,Oil,None,Biomass,Oil,Solar,Solar,mg,Madagascar,AFRICA
+Coal,Coal,Coal,Coal,Coal,Coal,Coal,Solar,Solar,Coal,Solar,Solar,Solar,cn,Mainland China,APAC
+None,Oil,None,Hydro,None,None,None,None,Oil,None,Hydro,Solar,Solar,mw,Malawi,AFRICA
+Gas,Hydro,Gas,Hydro,Hydro,Coal,Coal,Coal,Solar,Coal,Solar,Solar,Solar,my,Malaysia,APAC
+Oil,Oil,None,Oil,Hydro,Oil,Oil,Oil,Oil,None,None,Oil,Hydro,ml,Mali,AFRICA
+Oil,Oil,None,Hydro,Oil,Oil,Solar,Solar,Solar,Solar,None,None,None,mr,Mauritania,AFRICA
+Gas,Gas,Wind,Gas,Wind,Gas,Gas,Gas,Solar,Solar,Oil,Solar,Solar,mx,Mexico,LAC
+None,None,None,Biomass,Solar,None,Wind,Wind,Gas,None,Oil,None,Solar,md,Moldova,EUROPE
+Solar,None,None,Wind,Coal,None,Solar,Wind,Coal,Wind,None,None,None,mn,Mongolia,APAC
+Gas,Wind,Oil,Coal,Coal,Solar,Solar,Coal,Coal,Solar,Solar,Solar,Solar,ma,Morocco,AFRICA
+None,None,Gas,Gas,Hydro,Gas,Gas,Gas,Gas,Solar,None,None,Solar,mz,Mozambique,AFRICA
+Hydro,Hydro,Biomass,Hydro,Gas,Gas,Gas,Gas,Gas,Gas,Gas,Solar,Gas,mm,Myanmar,APAC
+None,Oil,None,None,None,Solar,Solar,Solar,Solar,Solar,Solar,Solar,Solar,na,Namibia,AFRICA
+Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,np,Nepal,APAC
+Gas,Gas,Solar,Gas,Solar,Solar,Coal,Wind,Solar,Solar,Solar,Solar,Solar,nl,Netherlands,EUROPE
+Geothermal,Gas,Gas,Geothermal,Geothermal,Geothermal,Wind,Other - non fossil,Geothermal,Hydro,Geothermal,Geothermal,None,nz,New Zealand,APAC
+Oil,Oil,Geothermal,Hydro,Wind,Oil,Biomass,Oil,None,Oil,None,None,Geothermal,ni,Nicaragua,LAC
+None,Oil,Oil,Oil,Oil,Oil,Oil,Oil,Oil,None,None,Oil,Oil,ne,Niger,AFRICA
+Gas,None,Gas,Gas,Gas,Gas,Gas,Gas,Gas,Solar,Solar,Solar,Solar,ng,Nigeria,AFRICA
+Gas,Solar,Hydro,Hydro,Hydro,Wind,Gas,Hydro,Solar,Solar,None,Solar,Solar,mk,North Macedonia,EUROPE
+Hydro,Hydro,Wind,Hydro,Wind,Gas,Hydro,Hydro,Wind,Wind,Wind,Wind,Wind,no,Norway,EUROPE
+Gas,None,None,Gas,Gas,Gas,Solar,Gas,Gas,Gas,Gas,Solar,Solar,om,Oman,MDE
+Gas,Gas,Oil,Hydro,Gas,Solar,Solar,Coal,Gas,Coal,Solar,Oil,Solar,pk,Pakistan,APAC
+None,None,None,None,Oil,None,Oil,None,None,None,None,None,Solar,ps,Palestine,MDE
+Oil,Hydro,Hydro,Hydro,Oil,Hydro,Wind,Solar,Gas,Solar,Hydro,Solar,Solar,pa,Panama,LAC
+None,Oil,Oil,Oil,None,None,None,None,None,Hydro,None,None,None,py,Paraguay,LAC
+Gas,Gas,Gas,Gas,Oil,Hydro,Oil,Gas,Solar,Hydro,Oil,Hydro,Wind,pe,Peru,LAC
+Coal,Hydro,Coal,Oil,Wind,Coal,Coal,Coal,Coal,Coal,Coal,Coal,Coal,ph,Philippines,APAC
+Wind,Coal,Coal,Wind,Wind,Wind,Wind,Gas,Gas,Coal,Solar,Solar,Solar,pl,Poland,EUROPE
+Wind,Hydro,Wind,Gas,Wind,Hydro,Hydro,Hydro,Solar,Solar,Solar,Solar,Hydro,pt,Portugal,EUROPE
+Gas,Biomass,Gas,Gas,None,None,None,Gas,Gas,Gas,None,Solar,Solar,qa,Qatar,MDE
+Gas,None,None,None,None,None,None,Hydro,Hydro,None,Gas,Gas,Gas,cg,Republic of the Congo,AFRICA
+Coal,Wind,Gas,Solar,Wind,Hydro,Solar,Biomass,Hydro,Hydro,Solar,Solar,Solar,ro,Romania,EUROPE
+Nuclear,Gas,Gas,Gas,Gas,Gas,Nuclear,Gas,Nuclear,Hydro,Hydro,Gas,Wind,ru,Russia,EUROPE
+Hydro,Hydro,Hydro,Hydro,Hydro,None,Gas,Oil,Hydro,Solar,Solar,Solar,Coal,rw,Rwanda,AFRICA
+Oil,Oil,Oil,Oil,Oil,Oil,Oil,Gas,Gas,Solar,Solar,Gas,Solar,sa,Saudi Arabia,MDE
+Gas,Oil,Oil,Hydro,Oil,Solar,Solar,Oil,Coal,Gas,Wind,Solar,Hydro,sn,Senegal,AFRICA
+Hydro,Hydro,Hydro,Hydro,Hydro,Hydro,Wind,Wind,Hydro,Wind,Hydro,Hydro,Oil,rs,Serbia,EUROPE
+Hydro,Oil,Oil,None,Biomass,Oil,None,Hydro,Oil,Oil,Oil,None,None,sl,Sierra Leone,AFRICA
+Gas,Solar,Gas,Gas,Gas,Gas,Solar,Gas,Solar,Solar,Solar,Solar,Solar,sg,Singapore,APAC
+Gas,Solar,Gas,Oil,Biomass,Other - non fossil,Biomass,Gas,Hydro,Gas,Solar,Gas,Solar,sk,Slovakia,EUROPE
+Solar,Solar,Solar,Solar,Oil,Gas,Biomass,Hydro,Solar,Solar,Solar,Solar,Solar,si,Slovenia,EUROPE
+None,None,Wind,None,Solar,Wind,None,Oil,None,Solar,None,None,None,so,Somalia,AFRICA
+Other - fossil,Coal,Solar,Solar,Solar,Coal,Coal,Coal,Coal,Solar,Solar,Solar,Solar,za,South Africa,AFRICA
+Gas,Gas,Nuclear,Gas,Gas,Gas,Coal,Gas,Solar,Solar,Solar,Solar,Solar,kr,South Korea,APAC
+Oil,Oil,None,None,None,None,None,None,None,Oil,None,None,None,ss,South Sudan,AFRICA
+Gas,Wind,Solar,Wind,Solar,Hydro,Wind,Solar,Solar,Solar,Solar,Solar,Solar,es,Spain,EUROPE
+Oil,Coal,Hydro,Hydro,Coal,Hydro,Oil,Oil,Solar,Oil,Wind,None,Hydro,lk,Sri Lanka,APAC
+None,None,None,None,None,Oil,Oil,Solar,Hydro,Oil,None,Oil,None,sd,Sudan,AFRICA
+Gas,Wind,Wind,Wind,Wind,Wind,Wind,Wind,Gas,Wind,Wind,Wind,Wind,se,Sweden,EUROPE
+Hydro,Gas,Solar,Solar,Solar,Solar,Solar,Biomass,Solar,Solar,Solar,Hydro,Solar,ch,Switzerland,EUROPE
+Gas,Solar,Solar,Gas,Solar,Solar,Coal,Coal,Gas,Coal,Solar,Solar,Solar,tw,Taiwan,APAC
+None,Hydro,Hydro,None,Coal,None,Coal,None,Hydro,Hydro,None,Gas,Gas,tj,Tajikistan,APAC
+Gas,None,Oil,Oil,Solar,Gas,Gas,Solar,Gas,Solar,Solar,Solar,Gas,tz,Tanzania,AFRICA
+Gas,Biomass,Oil,Gas,Gas,Gas,Gas,Biomass,Gas,Wind,Gas,Solar,Gas,th,Thailand,APAC
+Oil,None,None,None,None,None,None,None,None,None,None,Gas,None,tg,Togo,AFRICA
+None,Gas,Wind,Gas,Gas,Gas,Gas,Solar,Solar,Gas,Gas,Solar,Solar,tn,Tunisia,AFRICA
+Gas,Hydro,Hydro,Gas,Coal,Hydro,Coal,Gas,Solar,Solar,Hydro,Wind,Solar,tr,Turkey,EUROPE
+Gas,None,None,None,Gas,Gas,Gas,None,Gas,Gas,None,None,None,tm,Turkmenistan,APAC
+Oil,Hydro,Hydro,Hydro,Oil,Solar,Solar,Biomass,Hydro,Hydro,Hydro,Hydro,Hydro,ug,Uganda,AFRICA
+Hydro,Solar,Coal,Solar,Coal,Solar,Coal,Solar,Coal,Solar,Solar,Solar,Wind,ua,Ukraine,EUROPE
+Gas,Gas,Gas,Gas,Gas,Oil,Gas,Gas,Gas,Solar,Solar,Nuclear,Solar,ae,United Arab Emirates,MDE
+Gas,Biomass,Wind,Wind,Solar,Solar,Solar,Wind,Wind,Wind,Gas,Wind,Wind,gb,UK,EUROPE
+Coal,Gas,Wind,Gas,Gas,Wind,Solar,Solar,Gas,Solar,Solar,Solar,Solar,us,US,AMER
+Biomass,Solar,Oil,Biomass,Wind,Wind,Wind,Wind,Other - fossil,Solar,Solar,Solar,Solar,uy,Uruguay,LAC
+Hydro,None,Hydro,Gas,Hydro,Gas,Gas,Gas,Hydro,Coal,Hydro,Gas,Gas,uz,Uzbekistan,APAC
+Hydro,Hydro,Hydro,Coal,Coal,Coal,Hydro,Coal,Coal,Solar,Solar,Wind,Solar,vn,Vietnam,APAC
+None,Oil,Hydro,None,Oil,Coal,Coal,Oil,Solar,Solar,Solar,Hydro,Hydro,zm,Zambia,AFRICA
+Biomass,None,Hydro,Biomass,Hydro,Hydro,Oil,Hydro,Hydro,None,None,Hydro,Coal,zw,Zimbabwe,AFRICA

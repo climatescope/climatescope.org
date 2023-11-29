@@ -128,3 +128,4 @@ _config-dev.yml
 
 /.next/
 /build
+/out

@@ -1,5 +1,6 @@
 import getConfig from "next/config"
-import { useTheme, AspectRatio, Box, Text } from "@chakra-ui/react"
+import { AspectRatio, Box, Text } from "@chakra-ui/layout"
+import { useTheme } from "@chakra-ui/system"
 import { imageTypes } from "../../../images.config"
 
 const { publicRuntimeConfig } = getConfig()

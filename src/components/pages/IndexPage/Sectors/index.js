@@ -1,25 +1,26 @@
-import {
-  Box,
-  Stack,
-  Heading,
-  Text,
-  Center,
-  HStack,
-  Tag,
-} from "@chakra-ui/react"
+import { Box, Stack, Heading, Text, Center, HStack } from "@chakra-ui/layout"
+import { Tag } from "@chakra-ui/tag"
+import getConfig from "next/config"
 
 import Image from "@components/Image"
 import { Link, LinkBox, LinkOverlay, ButtonLink } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
 import { ChevronRight } from "@components/Icon"
 
+const { publicRuntimeConfig } = getConfig()
+const year = publicRuntimeConfig.year
+
 const content = [
   {
     id: 1,
     order: [1, null, null, null, 2],
-    title: (indicatorCount) => `${indicatorCount} indicators across 3 sectors`,
-    description: (indicatorCount, marketCount) => [
-      `As of 2022, Climatescope analyses data from ${marketCount} markets across 3 sectors with a total of ${indicatorCount} indicators.`,
+    // title: (indicatorCount) => `${indicatorCount} indicators across 3 sectors`,
+    // description: (indicatorCount, marketCount) => [
+    //   `As of 2022, Climatescope analyses data from ${marketCount} markets across 3 sectors with a total of ${indicatorCount} indicators.`,
+    // ],
+    title: () => `222 indicators across three sectors`,
+    description: () => [
+      `As of ${year}, Climatescope analyzes data from 140 markets across three sectors with a total of 222 indicators.`,
     ],
     action: { text: "Explore sectors", href: "/sectors" },
   },
@@ -29,10 +30,11 @@ const content = [
     title: "Power",
     sector: "power",
     img: "energy.jpg",
-    alt: "https://unsplash.com/photos/Ilpf2eUPpUE",
+    alt: "Power sector",
     href: "/sectors/power",
     isNew: false,
     comingSoon: false,
+    indicators: "140",
   },
   {
     id: 3,
@@ -40,10 +42,11 @@ const content = [
     title: "Transport",
     sector: "transport",
     img: "transport.jpg",
-    alt: "https://unsplash.com/photos/2JvEjF0tf50",
+    alt: "Transport sector",
     href: "/sectors/transport",
     isNew: true,
     comingSoon: false,
+    indicators: "140",
   },
   {
     id: 4,
@@ -51,10 +54,11 @@ const content = [
     title: "Buildings",
     sector: "buildings",
     img: "buildings.jpg",
-    alt: "https://unsplash.com/photos/MUfokL109CQ",
+    alt: "Buildings sector",
     href: "/sectors/buildings",
     isNew: true,
     comingSoon: false,
+    indicators: "29",
   },
 ]
 
@@ -64,14 +68,9 @@ const SummaryCard = ({ title, description, action, order, metaData }) => {
       <Center fontSize="3xl" fontWeight={700} w="4rem" h="4rem" bg="white">
         {"i"}
       </Center>
-      <Center px={[0, null, 6]} py={[10]}>
+      <Center px={[3, null, 6]} py={[10]}>
         <Stack spacing={6} alignItems="flex-start" color="white">
-          <Heading
-            as="h2"
-            fontSize={["xl", null, null, "2xl"]}
-            lineHeight="shorter"
-            maxW="15rem"
-          >
+          <Heading as="h2" fontSize="2xl" lineHeight="shorter" maxW="15rem">
             {title(metaData.indicatorCount)}
           </Heading>
           {description(
@@ -108,9 +107,10 @@ const SectorCard = ({
   alt,
   href,
   order,
-  isNew,
+  // isNew,
   comingSoon,
   marketCounts,
+  indicators,
 }) => {
   return (
     <LinkBox as={Box} order={order}>
@@ -131,7 +131,7 @@ const SectorCard = ({
             ) : (
               <LinkOverlay href={href}>{title}</LinkOverlay>
             )}
-            {isNew ? (
+            {/* {isNew ? (
               <Tag
                 verticalAlign="middle"
                 ml={2}
@@ -141,7 +141,7 @@ const SectorCard = ({
               >
                 {"New"}
               </Tag>
-            ) : null}
+            ) : null} */}
             {comingSoon ? (
               <Tag
                 verticalAlign="middle"
@@ -161,7 +161,7 @@ const SectorCard = ({
             color="gray.500"
             fontWeight={600}
           >
-            {comingSoon ? "" : `${marketCounts[sector]} markets`}
+            {comingSoon ? "" : `${indicators} markets`}
           </Text>
         </Stack>
       </Stack>

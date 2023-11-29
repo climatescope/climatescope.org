@@ -22,10 +22,15 @@ export default function Top10Ranking({
 
   const chartTitle = getTitle(data?.name || "")
 
+  const parsedTitle = chartTitle
+    .replace(" 2021", ", 2021")
+    .replace(" 2022", ", 2022")
+    .replace("climatescope", "Climatescope")
+
   return (
     <Stack spacing={5}>
       <Heading as="h3" fontSize={headingFontSize}>
-        {chartTitle.replace(" 2021", ", 2021")}
+        {parsedTitle}
       </Heading>
       <Stack spacing={3}>
         {data.data?.slice(0, limit || undefined).map((d, i) => {
