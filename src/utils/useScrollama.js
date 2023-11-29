@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import scrollama from "scrollama"
-import create from "zustand"
+import { create } from "zustand"
 
 export const useScrollStore = create((set) => ({
   scroller: null,

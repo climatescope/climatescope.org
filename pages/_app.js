@@ -1,10 +1,7 @@
-// import { useEffect } from "react"
-import { MDXProvider } from "@mdx-js/react"
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider } from "@chakra-ui/provider"
 
 import { theme } from "@utils/theme"
 import navigation from "@utils/navigation"
-import components from "@components/MDXComponents"
 import SiteHeader from "@components/SiteHeader"
 import SiteFooter from "@components/SiteFooter"
 // import * as ga from "@utils/ga"
@@ -26,9 +23,7 @@ function AppWrapper({ Component, pageProps, router }) {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <SiteHeader navigation={navigation} />
-      <MDXProvider components={components}>
-        <Component {...pageProps} />
-      </MDXProvider>
+      <Component {...pageProps} />
       <SiteFooter navigation={navigation} />
     </ChakraProvider>
   )

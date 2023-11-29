@@ -1,8 +1,10 @@
 import { Box, Heading, Text, Stack } from "@chakra-ui/react"
 
 import { Link } from "@components/Link"
+import Image from "@components/Image"
 
 const components = {
+  Image,
   h1: (props) => {
     return (
       <Heading
@@ -10,6 +12,13 @@ const components = {
         w="100%"
         fontSize={["3xl", null, "5xl"]}
         maxW="container.sm"
+        sx={{
+          "h1 + p": {
+            fontSize: ["lg", null, "2xl"],
+            lineHeight: "short",
+            fontWeight: 500,
+          },
+        }}
         {...props}
       />
     )
@@ -32,6 +41,17 @@ const components = {
         as="h3"
         w="100%"
         fontSize={["xl", null, "2xl"]}
+        maxW="container.sm"
+        {...props}
+      />
+    )
+  },
+  h4: (props) => {
+    return (
+      <Heading
+        as="h4"
+        w="100%"
+        fontSize={["xl", null, "xl"]}
         maxW="container.sm"
         {...props}
       />

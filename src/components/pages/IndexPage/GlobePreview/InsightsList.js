@@ -1,4 +1,5 @@
-import { Stack, HStack, Box, Heading, Text, useTheme } from "@chakra-ui/react"
+import { Stack, HStack, Box, Heading, Text } from "@chakra-ui/layout"
+import { useTheme } from "@chakra-ui/system"
 
 import { LinkBox, LinkOverlay } from "@components/Link"
 import { GreenIdeaIcon, ChevronRight } from "@components/Icon"

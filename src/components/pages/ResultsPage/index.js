@@ -6,13 +6,13 @@ import {
   Container,
   Stack,
   HStack,
-  Tabs,
-  TabList,
-  Tab,
+  // Tabs,
+  // TabList,
+  // Tab,
   Button,
-  Center,
+  // Center,
   Select,
-  Divider,
+  // Divider,
   // useBreakpointValue,
 } from "@chakra-ui/react"
 import { useBreakpointValue } from "@chakra-ui/media-query"
@@ -21,10 +21,10 @@ import BalanceSlider from "@components/pages/ResultsPage/BalanceSlider"
 import Ranking from "@components/pages/ResultsPage/Ranking"
 import {
   ResetIcon,
-  GreenIdeaIcon,
-  BuildingsIcon,
-  TransportIcon,
-  GlobalRankIcon,
+  // GreenIdeaIcon,
+  // BuildingsIcon,
+  // TransportIcon,
+  // GlobalRankIcon,
   // DownloadIcon,
 } from "@components/Icon"
 import RegionSelector from "@components/RegionSelector"
@@ -66,7 +66,12 @@ const ResultsPage = ({ clientData, dataPreview }) => {
   const [view, setView] = useState("table")
   const [sector, setSector] = useState("power")
 
-  const sectorNames = ["power", "transport", "buildings", "all sectors"]
+  const sectorNames = [
+    "power",
+    // "transport",
+    // "buildings",
+    // "all sectors",
+  ]
 
   const handleSectorChange = (val) => {
     setSector(sectorNames[val])
@@ -85,7 +90,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
             </Heading>
             <Text variant="subtitle">
               {
-                "Climatescope's ranking of the most attractive markets for energy transition projects investment."
+                "Climatescope's ranking of the most attractive markets for investment in energy transition projects."
               }
             </Text>
           </Stack>
@@ -111,7 +116,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
                     )
                   })}
               </Select>
-              <Tabs
+              {/* <Tabs
                 display={["none", null, "block"]}
                 onChange={handleSectorChange}
                 index={sectorNames.indexOf(sector)}
@@ -120,7 +125,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
                 <TabList>
                   {sectorNames.map((s) => {
                     return (
-                      <Tab key={s}>
+                      <Tab key={s} flex={1}>
                         <Center
                           w="2.5rem"
                           h="2.5rem"
@@ -146,7 +151,7 @@ const ResultsPage = ({ clientData, dataPreview }) => {
                     )
                   })}
                 </TabList>
-              </Tabs>
+              </Tabs> */}
             </Box>
 
             {/* <ViewSwitch

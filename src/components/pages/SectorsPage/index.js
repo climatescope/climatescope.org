@@ -1,4 +1,4 @@
-import { Heading, Text, Box, Container, Stack } from "@chakra-ui/react"
+import { Heading, Text, Box, Container, Stack } from "@chakra-ui/layout"
 
 import SimpleGrid from "@components/SimpleGrid"
 import SectorCard from "@components/SectorCard"
@@ -6,7 +6,7 @@ import SectorCard from "@components/SectorCard"
 const SectorsPage = ({ sectors, marketCounts }) => {
   return (
     <Box as="main" pt={10} pb={40} minH="75vh">
-      <Stack spacing={[10, null, 20]}>
+      <Stack spacing={[10, null, 20]} alignItems="center">
         <Container>
           <SimpleGrid columns={3}>
             <Stack
@@ -18,14 +18,14 @@ const SectorsPage = ({ sectors, marketCounts }) => {
               </Heading>
               <Text variant="subtitle">
                 {
-                  "Climatescope has been expanded for 2021 to cover three major segments of the energy transition – buildings, power and transport. Click below to learn about major investment and deployment trends in each."
+                  "Climatescope 2023 covers three major segments of the energy transition – buildings, power and transport. Learn about the major investment and deployment trends in each."
                 }
               </Text>
             </Stack>
           </SimpleGrid>
         </Container>
         <Container>
-          <SimpleGrid columns={[6, null, null, 3]}>
+          <SimpleGrid columns={[1, null, null, 3]}>
             {sectors.map((sector, i) => {
               return (
                 <SectorCard
@@ -35,7 +35,6 @@ const SectorsPage = ({ sectors, marketCounts }) => {
                   img={sector.thumbnail}
                   marketCounts={marketCounts}
                   alt="Alt"
-                  isNew={["Transport", "Buildings"].includes(sector.title)}
                   href={`/sectors/${sector.slug}`}
                   order={sector.order}
                   size="lg"

@@ -23,16 +23,14 @@ export const Icon = ({
   )
 }
 
-
-
 export const ReportIcon = (props) => {
   return (
     <Icon {...props}>
-        <path d="M2 5H18V23H2z" />
-        <path d="M5 1L22 1 22 21" data-color="color-2" />
-        <path d="M6 10L14 10" />
-        <path d="M6 14L14 14" />
-        <path d="M6 18L10 18" />
+      <path d="M2 5H18V23H2z" />
+      <path d="M5 1L22 1 22 21" />
+      <path d="M6 10L14 10" />
+      <path d="M6 14L14 14" />
+      <path d="M6 18L10 18" />
     </Icon>
   )
 }
@@ -40,10 +38,10 @@ export const ReportIcon = (props) => {
 export const ChartIcon = (props) => {
   return (
     <Icon {...props}>
-        <path d="M1 21L23 21" data-color="color-2" />
-        <path d="M2 8H6V17H2z" />
-        <path d="M10 3H14V17H10z" />
-        <path d="M18 12H22V17H18z" />
+      <path d="M1 21L23 21" />
+      <path d="M2 8H6V17H2z" />
+      <path d="M10 3H14V17H10z" />
+      <path d="M18 12H22V17H18z" />
     </Icon>
   )
 }
@@ -69,11 +67,7 @@ export const QuestionIcon = (props) => {
     <Icon {...props}>
       <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
       <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
-      <circle
-        cx="12"
-        cy="16.5"
-        r="0.5"
-      />
+      <circle cx="12" cy="16.5" r="0.5" />
     </Icon>
   )
 }
@@ -338,7 +332,7 @@ export const TransportIcon = (props) => {
     <Icon {...props}>
       <path d="M17.5 17.5L20 23M4 23l2.5-5.5M5.136 20.5h13.727" />
       <path d="M1 6v3M23 6v3M18.5 17.5h-13a2 2 0 01-2-2V3a2 2 0 012-2h13a2 2 0 012 2v12.5a2 2 0 01-2 2z" />
-      <path  d="M16.5 10h-9l-1-6h11l-1 6zM7.75 15a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zM16.25 15a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
+      <path d="M16.5 10h-9l-1-6h11l-1 6zM7.75 15a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5zM16.25 15a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" />
     </Icon>
   )
 }
@@ -346,12 +340,12 @@ export const TransportIcon = (props) => {
 export const GlobalRankIcon = (props) => {
   return (
     <Icon {...props}>
-        <path d="M12 9L12 15" data-color="color-2" />
-        <path d="M3 15L3 12 21 12 21 15" data-color="color-2" />
-        <circle cx="12" cy="3" r="2" />
-        <circle cx="3" cy="21" r="2" />
-        <circle cx="12" cy="21" r="2" />
-        <circle cx="21" cy="21" r="2" />
+      <path d="M12 9L12 15" />
+      <path d="M3 15L3 12 21 12 21 15" />
+      <circle cx="12" cy="3" r="2" />
+      <circle cx="3" cy="21" r="2" />
+      <circle cx="12" cy="21" r="2" />
+      <circle cx="21" cy="21" r="2" />
     </Icon>
   )
 }
@@ -410,14 +404,22 @@ export const ContactIcon = (props) => {
 export const MethodologyIcon = (props) => {
   return (
     <Icon {...props}>
-        <path d="M4 7L10 7.001" />
-        <path d="M4 16.999L10 17.001" />
-        <path d="M14 18.999L20 19" />
-        <path d="M14 14.998L20 14.999" />
-        <path d="M7.001 14L6.999 20" />
-        <path d="M15 5L19 9" />
-        <path d="M19 5L15 9" />
-        <p />
+      <path d="M4 7L10 7.001" />
+      <path d="M4 16.999L10 17.001" />
+      <path d="M14 18.999L20 19" />
+      <path d="M14 14.998L20 14.999" />
+      <path d="M7.001 14L6.999 20" />
+      <path d="M15 5L19 9" />
+      <path d="M19 5L15 9" />
+    </Icon>
+  )
+}
+
+export const CancelIcon = (props) => {
+  return (
+    <Icon {...props}>
+      <path d="M18 6L6 18" />
+      <path d="M6 6L18 18" />
     </Icon>
   )
 }

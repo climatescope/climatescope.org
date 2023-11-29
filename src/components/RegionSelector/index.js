@@ -12,11 +12,18 @@ const RegionSelector = ({ value, onChange, ...restProps }) => {
       onChange={(e) => onChange(e.target.value)}
       {...restProps}
     >
-      <option value="">{"All regions"}</option>
+      {/* <option value="">{"All regions"}</option>
       <option value="amer">{"Americas"}</option>
       <option value="asia">{"Asia-Pacific"}</option>
       <option value="eu">{"Europe"}</option>
-      <option value="mena">{"Middle East & Africa"}</option>
+      <option value="mena">{"Middle East & Africa"}</option> */}
+      <option value="">{"All regions"}</option>
+      <option value="ssa">{"Africa"}</option>
+      <option value="apac">{"Asia-Pacific"}</option>
+      <option value="emea">{"Europe"}</option>
+      <option value="latam">{"Latin America"}</option>
+      <option value="mena">{"Middle East"}</option>
+      <option value="northamer">{"Northern America"}</option>
     </Select>
   )
 }

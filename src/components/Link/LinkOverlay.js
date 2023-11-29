@@ -1,30 +1,29 @@
-import { LinkOverlay as ChakraLinkOverlay } from "@chakra-ui/react"
+import { forwardRef } from "react"
+import { LinkOverlay as ChakraLinkOverlay } from "@chakra-ui/layout"
 import NextLink from "next/link"
 
-const LinkOverlay = ({
-  href,
-  locale,
-  prefetch,
-  hrefAs,
-  replace,
-  scroll,
-  shallow,
-  ...restProps
-}) => {
-  return (
-    <NextLink
-      passHref
-      href={href}
-      locale={locale}
-      prefetch={prefetch}
-      replace={replace}
-      scroll={scroll}
-      shallow={shallow}
-      as={hrefAs}
-    >
-      <ChakraLinkOverlay {...restProps} />
-    </NextLink>
-  )
-}
+const LinkOverlay = forwardRef(
+  (
+    { href, locale, prefetch, hrefAs, replace, scroll, shallow, ...restProps },
+    ref
+  ) => {
+    return (
+      <NextLink
+        ref={ref}
+        passHref
+        href={href}
+        locale={locale}
+        prefetch={prefetch}
+        replace={replace}
+        scroll={scroll}
+        shallow={shallow}
+        as={hrefAs}
+        legacyBehavior
+      >
+        <ChakraLinkOverlay {...restProps} />
+      </NextLink>
+    )
+  }
+)
 
 export default LinkOverlay

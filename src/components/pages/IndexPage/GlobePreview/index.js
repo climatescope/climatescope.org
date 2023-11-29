@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from "react"
-import { Box, Stack, Heading, Text, Container } from "@chakra-ui/react"
+import { Box, Stack, Heading, Text, Container } from "@chakra-ui/layout"
 import getConfig from "next/config"
 
 import { ButtonLink } from "@components/Link"
@@ -12,8 +12,8 @@ const year = publicRuntimeConfig.year
 
 const GlobePreview = ({
   globeInsights,
-  title = `Explore ${year} results`,
-  description = `Discover our ${year} ranking of 136 most attractive markets for the power sector.`,
+  title = `Explore the ${year} results `,
+  description = `Discover our ${year} ranking of the 140 most attractive markets for the power sector.`,
   actionText = "Explore the results",
   actionHref = "/results/",
 }) => {
@@ -62,7 +62,7 @@ const GlobePreview = ({
           gridColumnGap={[0, null, null, 6]}
           alignItems="center"
         >
-          <Box gridColumn="span 5" px={20}>
+          <Box gridColumn={["span 5", null, "span 6", "span 5"]} px={20}>
             <Box mx="auto" maxW={["24rem", null, "32rem", "40rem"]}>
               {loaded && (
                 <Globe

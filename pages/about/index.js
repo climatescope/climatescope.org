@@ -1,4 +1,4 @@
-import { getPages } from "@utils/api/server"
+import { getAllMDXSlugs, getMDXPage } from "@utils/api/server"
 import SEO from "@components/SEO"
 import AboutLandingPage from "@components/pages/AboutLandingPage"
 
@@ -15,6 +15,14 @@ export default function AboutPage({ allPages }) {
 }
 
 export async function getStaticProps() {
-  const allPages = (await getPages("about")) || []
+  const allPageNames = await getAllMDXSlugs("about")
+  const allPages = await Promise.all(
+    allPageNames.map((n) => {
+      return getMDXPage("about", n)
+    })
+  ).then((d) => {
+    return d.map((dd, i) => ({ ...dd.frontmatter, slug: allPageNames[i] }))
+  })
+
   return { props: { allPages } }
 }

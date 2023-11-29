@@ -23,7 +23,7 @@ const ContentPlaceholder = ({ slot }) => {
           >
             {"Global rank"}
           </Heading>
-          <Skeleton h="1.5625rem" startColor="gray.50" endColor="gray.100" />
+          <Skeleton h="1.625rem" startColor="gray.50" endColor="gray.100" />
         </Stack>
         <Stack spacing={1}>
           <Heading
@@ -34,9 +34,8 @@ const ContentPlaceholder = ({ slot }) => {
           >
             {"Global score"}
           </Heading>
-          <Skeleton h="1.5625rem" startColor="gray.50" endColor="gray.100" />
+          <Skeleton h="1.625rem" startColor="gray.50" endColor="gray.100" />
         </Stack>
-        
       </SimpleGrid>
       <ProfileDivider slot={slot} />
       <Stack px={5} spacing={10}>
