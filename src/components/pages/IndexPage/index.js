@@ -1,4 +1,4 @@
-import { Box, Container, Stack } from "@chakra-ui/react"
+import { Box, Container, Stack } from "@chakra-ui/layout"
 
 import Banner from "@components/pages/IndexPage/Banner"
 import Sectors from "@components/pages/IndexPage/Sectors"

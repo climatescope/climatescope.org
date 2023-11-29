@@ -1,5 +1,5 @@
 import { forwardRef } from "react"
-import { LinkOverlay as ChakraLinkOverlay } from "@chakra-ui/react"
+import { LinkOverlay as ChakraLinkOverlay } from "@chakra-ui/layout"
 import NextLink from "next/link"
 
 const LinkOverlay = forwardRef(

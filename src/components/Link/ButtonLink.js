@@ -1,5 +1,5 @@
 import { forwardRef } from "react"
-import { Button } from "@chakra-ui/react"
+import { Button } from "@chakra-ui/button"
 import NextLink from "next/link"
 
 const ButtonLink = forwardRef(

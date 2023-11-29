@@ -1,4 +1,4 @@
-import { Heading, Text, Box, Container, Stack } from "@chakra-ui/react"
+import { Heading, Text, Box, Container, Stack } from "@chakra-ui/layout"
 
 import SimpleGrid from "@components/SimpleGrid"
 import SectorCard from "@components/SectorCard"
