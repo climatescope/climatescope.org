@@ -30,7 +30,7 @@
     "key": 4,
     "policy": "Net Metering",
     "data": [
-      { "year": 2021, "total": 107, "available": 56, "value": 49 },
+      { "year": 2021, "total": 107, "available": 52, "value": 49 },
       { "year": 2022, "total": 107, "available": 59, "value": 55 },
       { "year": 2023, "total": 110, "available": 65, "value": 59 }
     ]
