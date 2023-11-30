@@ -65,8 +65,10 @@ export default function HighlightsPage({ data, policies, slides }) {
                 )}
 
                 <Text>
-                  {description.map(({ color, fontWeight, text }) => (
-                    <span style={{ color, fontWeight }}>{text}</span>
+                  {description.map(({ color, fontWeight, text }, i) => (
+                    <span key={i} style={{ color, fontWeight }}>
+                      {text}
+                    </span>
                   ))}
                 </Text>
               </Stack>
