@@ -23,7 +23,11 @@ export default function Slide({ slideId = 1, children }) {
       ref={ref}
       position="relative"
       pointerEvents="none"
-      style={{ height: slideId === "7" ? "100vh" : "100vh" }}
+      transition="opacity 0.3s"
+      style={{
+        height: slideId === "7" ? "100vh" : "100vh",
+        opacity: isVisible ? 1 : 0,
+      }}
     >
       {slideId !== "7" && slideId !== "12" ? (
         <Box
