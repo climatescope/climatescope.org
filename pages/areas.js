@@ -7,6 +7,7 @@ import {
   Geography,
 } from "react-simple-maps"
 import { scaleSqrt } from "d3-scale"
+import { geoMollweide } from "d3-geo-projection"
 
 import { useClientData } from "@utils/api/client"
 
@@ -19,7 +20,21 @@ export default function AreasByGeography() {
   const { data, error } = useClientData(dataUrl)
   if (error) return <div>{"No data"}</div>
 
-  const sizeScale = scaleSqrt().domain([1, 175000000]).range([1, 100])
+  const sizeScale = scaleSqrt().domain([1, 175000000]).range([2, 120])
+
+  const width = 800
+  const height = 500
+
+  // const proj = geoMollweide()
+  //   .rotate([...coordinates, 0])
+  //   .translate([])
+  //   .fitExtent(
+  //     [
+  //       [padding, padding],
+  //       [400 - padding, 400 - padding],
+  //     ],
+  //     selectedGeo
+  //   )
 
   return (
     <Container pb={24}>
@@ -30,6 +45,15 @@ export default function AreasByGeography() {
               return (
                 <Marker key={geo.iso} coordinates={[geo.lon, geo.lat]}>
                   <circle r={sizeScale(geo.area)} />
+                  <text
+                    textAnchor="middle"
+                    alignmentBaseline="central"
+                    fontSize={8}
+                    fontWeight={600}
+                    fill="#FFF"
+                  >
+                    {geo.iso.toUpperCase()}
+                  </text>
                 </Marker>
               )
             })}
