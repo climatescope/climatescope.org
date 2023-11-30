@@ -14,7 +14,7 @@ export default function HighlightsPageWrapper({ slides }) {
     <>
       <SEO
         title="Highlights"
-        description="Climatescope is BNEF's annual assessment of energy transition opportunities, covering the power, transport and buildings sectors across 136 countries. The project's 11th edition adds a new element by highlighting the top 10 markets for investment, capacity additions and policies."
+        description="Climatescope is BNEF’s annual assessment of energy transition opportunities around the world. Now in its 12th year, the project surveys the power, transport and buildings sectors in 140 developing and developed markets. The 2023 edition also boasts a new deep dive into in the correlation between effective policy mechanisms and renewable energy investment."
       />
       <HighlightsPage
         data={dataQuery.data}
