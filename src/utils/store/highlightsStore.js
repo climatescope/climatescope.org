@@ -195,6 +195,19 @@ const useHighlightsStore = create((set) => ({
         })
         break
 
+      case "12":
+        set((state) => {
+          return {
+            currentSlide,
+            yScaleZoomFactor: 1,
+            highlightedMarkets: [],
+            coloredBy: "",
+            visiblePolicies: [],
+            data: [{}],
+          }
+        })
+        break
+
       default:
         set((state) => ({
           currentSlide,

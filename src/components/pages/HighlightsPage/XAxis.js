@@ -23,6 +23,17 @@ export default function XAxis({ xScale, yTicks, xTicks, yScale }) {
             y2={yScale(yTicks[0])}
             stroke={colors.gray[300]}
           />
+          <text
+            x={xScale(2.5)}
+            y={yScale(yTicks[0]) + 32}
+            alignmentBaseline="hanging"
+            fontSize={14}
+            fontWeight={600}
+            fill={colors.gray[500]}
+            textAnchor="middle"
+          >
+            {"< Power fundamentals score >"}
+          </text>
           {xTicks.slice(1).map((tick) => {
             return (
               <text

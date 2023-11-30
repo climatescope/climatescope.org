@@ -9,7 +9,7 @@ export default function Slide({ slideId = 1, children }) {
   const ref = useRef(null)
   const updateSlide = useHighlightsStore((state) => state.updateSlide)
   const entry = useIntersectionObserver(ref, {
-    threshold: 0.5,
+    threshold: slideId === "7" ? 0.25 : 0.5,
   })
   const isVisible = !!entry?.isIntersecting
 
@@ -25,13 +25,13 @@ export default function Slide({ slideId = 1, children }) {
       pointerEvents="none"
       style={{ height: slideId === "7" ? "100vh" : "100vh" }}
     >
-      {slideId !== "7" ? (
+      {slideId !== "7" && slideId !== "12" ? (
         <Box
           bg="white"
           borderRadius="md"
           boxShadow="md"
           px={10}
-          py={5}
+          py={6}
           w="100%"
           maxW="46rem"
           pointerEvents="all"
@@ -42,7 +42,7 @@ export default function Slide({ slideId = 1, children }) {
         <Box
           bg="white"
           px={10}
-          py={5}
+          py={6}
           w="100%"
           maxW="46rem"
           pointerEvents="all"

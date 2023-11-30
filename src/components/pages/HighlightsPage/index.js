@@ -37,50 +37,49 @@ export default function HighlightsPage({ data, policies, slides }) {
         <Visual />
 
         {slides.map((slide) => {
+          const colors = {
+            "developed markets": "#0DA9D9",
+            "developing markets": "#6363C4",
+          }
+          const fontWeights = {
+            "developed markets": 600,
+            "developing markets": 600,
+          }
+
+          const words = ["developed markets", "developing markets"]
+          const description = extractWords(slide.description, words).map(
+            (t) => ({
+              color: colors[t.toLowerCase()] || "inherit",
+              fontWeight: fontWeights[t.toLowerCase()] || "inherit",
+              text: t,
+            })
+          )
+
           return (
             <Slide key={slide.id} slideId={slide.id}>
-              <Stack spacing={3}>
-                {/* <Text>{slide.id || "Missing slide id"}</Text> */}
-                {slide.id === "3" ? (
-                  <>
-                    <Heading>{slide.title || "Missing title"}</Heading>
-                    <Text>{"Over the past five years, the majority of clean energy investment was directed to "} 
-                    <span style={{ color: "#0DA9D9", fontWeight: "600" }}>{"developed markets"}</span>
-                    {", while only 29 "}
-                    <span style={{ color: "#6363C4", fontWeight: "600" }}>{"developing markets"}</span>
-                    {" (excluding mainland China) attracted more than $2 billion each."}</Text>
-                  </>
+              <Stack spacing={5}>
+                {slide.id === "7" ? (
+                  <Heading fontSize="3xl">{slide.title}</Heading>
                 ) : (
-                  <>
-                    <Heading>{slide.title || "Missing title"}</Heading>
-                    <Text>{slide.description || "Missing description"}</Text>
-                  </>
+                  <Heading fontSize="xl">{slide.title}</Heading>
                 )}
 
-                {/* <Text fontSize="xs">
-                  {slide.visual || "Missing visual description"}
-                </Text> */}
-              </Stack>
-            </Slide>
-          )
-        })}
-      </Stack>
-      {/* <Stack spacing={20} pt={10} pb={40} textAlign="center">
-        {slides.slice(8).map((slide) => {
-          return (
-            <Slide key={slide.id} slideId={slide.id}>
-              <Stack spacing={3}>
-                <Text>{slide.id || "Missing slide id"}</Text>
-                <Heading>{slide.title || "Missing title"}</Heading>
-                <Text>{slide.description || "Missing description"}</Text>
-                <Text fontSize="xs">
-                  {slide.visual || "Missing visual description"}
+                <Text>
+                  {description.map(({ color, fontWeight, text }) => (
+                    <span style={{ color, fontWeight }}>{text}</span>
+                  ))}
                 </Text>
               </Stack>
             </Slide>
           )
         })}
-      </Stack> */}
+      </Stack>
     </Container>
   )
+}
+
+function extractWords(text, words = []) {
+  return words
+    .reduce((acc, word) => acc.split(word).join(`__${word}__`), text)
+    .split("__")
 }
