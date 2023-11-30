@@ -41,8 +41,22 @@ export default function HighlightsPage({ data, policies, slides }) {
             <Slide key={slide.id} slideId={slide.id}>
               <Stack spacing={3}>
                 {/* <Text>{slide.id || "Missing slide id"}</Text> */}
-                <Heading>{slide.title || "Missing title"}</Heading>
-                <Text>{slide.description || "Missing description"}</Text>
+                {slide.id === "3" ? (
+                  <>
+                    <Heading>{slide.title || "Missing title"}</Heading>
+                    <Text>{"Over the past five years, the majority of clean energy investment was directed to "} 
+                    <span style={{ color: "#0DA9D9", fontWeight: "600" }}>{"developed markets"}</span>
+                    {", while only 29 "}
+                    <span style={{ color: "#6363C4", fontWeight: "600" }}>{"developing markets"}</span>
+                    {" (excluding mainland China) attracted more than $2 billion each."}</Text>
+                  </>
+                ) : (
+                  <>
+                    <Heading>{slide.title || "Missing title"}</Heading>
+                    <Text>{slide.description || "Missing description"}</Text>
+                  </>
+                )}
+
                 {/* <Text fontSize="xs">
                   {slide.visual || "Missing visual description"}
                 </Text> */}

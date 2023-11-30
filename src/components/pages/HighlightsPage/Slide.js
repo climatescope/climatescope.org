@@ -1,6 +1,6 @@
 import { useRef, useEffect } from "react"
 
-import { Box, Center } from "@chakra-ui/react"
+import { Box, Center, Text } from "@chakra-ui/react"
 import { useIntersectionObserver } from "usehooks-ts"
 
 import useHighlightsStore from "@utils/store/highlightsStore"
