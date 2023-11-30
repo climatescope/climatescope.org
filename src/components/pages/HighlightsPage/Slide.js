@@ -25,11 +25,22 @@ export default function Slide({ slideId = 1, children }) {
       pointerEvents="none"
       style={{ height: slideId === "7" ? "100vh" : "100vh" }}
     >
-      {slideId !== "7" && (
+      {slideId !== "7" ? (
         <Box
           bg="white"
           borderRadius="md"
           boxShadow="md"
+          px={10}
+          py={5}
+          w="100%"
+          maxW="46rem"
+          pointerEvents="all"
+        >
+          {children}
+        </Box>
+      ) : (
+        <Box
+          bg="white"
           px={10}
           py={5}
           w="100%"
