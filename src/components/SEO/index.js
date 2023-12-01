@@ -1,6 +1,7 @@
 import Head from "next/head"
 import getConfig from "next/config"
 import { useRouter } from "next/router"
+import { useEffect } from "react"
 
 const { publicRuntimeConfig } = getConfig()
 const siteUrl = publicRuntimeConfig.siteUrl
@@ -11,19 +12,26 @@ const SEO = ({
   description = "Which market is the most attractive for energy transition investment?",
   cover = "cover-lg.jpg",
   type = "website" /* website | article */,
+  lang = "en",
 }) => {
   const { basePath, asPath } = useRouter()
 
-  const slugUrl = siteUrl + basePath + (asPath[0] === "/" ? asPath.slice(1) : asPath)
+  const slugUrl =
+    siteUrl + basePath + (asPath[0] === "/" ? asPath.slice(1) : asPath)
   const coverImg = cover ? siteUrl + basePath + "images/" + cover : ""
 
   const combinedTitle = title
     ? `Climatescope ${year} | ${title}`
     : `Climatescope ${year}`
 
+  useEffect(() => {
+    if (typeof window === "undefined") return undefined
+    document.documentElement.setAttribute("lang", lang)
+  }, [lang])
+
   return (
     <Head>
-      <meta content="en" httpEquiv="Content-Language" />
+      <meta content={lang} httpEquiv="Content-Language" />
 
       <title>{combinedTitle}</title>
       <meta name="description" content={description} />
