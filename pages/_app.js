@@ -19,7 +19,6 @@ function AppWrapper({ Component, pageProps, router }) {
   //     router.events.off("routeChangeComplete", handleRouteChange)
   //   }
   // }, [router.events])
-
   return (
     <ChakraProvider resetCSS theme={theme}>
       <SiteHeader navigation={navigation} />
