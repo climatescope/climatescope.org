@@ -13,7 +13,7 @@ export default function YAxis({ xScale, yTicks, xTicks, yScale }) {
 
   // Switch from Bn to M on zoom
   const isM = yTicks.slice(-1)[0] < 1
-  const suffix = isM ? " USD M" : " USD Bn"
+  const suffix = isM ? " USD M investment" : " USD Bn investment"
 
   return (
     <g>

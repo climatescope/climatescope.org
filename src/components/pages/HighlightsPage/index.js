@@ -27,7 +27,7 @@ export default function HighlightsPage({ data, policies, slides }) {
           </Heading>
           <Text variant="subtitle" maxW="58rem">
             {
-              "Climatescope is BNEF's annual assessment of energy transition opportunities, covering the power, transport and buildings sectors across 136 countries. The project's 11th edition adds a new element by highlighting the top 10 markets for investment, capacity additions and policies."
+              "Climatescope is BNEF’s annual assessment of energy transition opportunities around the world. Now in its 12th year, the project surveys the power, transport and buildings sectors in 140 developing and developed markets. The 2023 edition also boasts a new deep dive into in the correlation between effective policy mechanisms and renewable energy investment."
             }
           </Text>
         </Stack>
@@ -37,36 +37,51 @@ export default function HighlightsPage({ data, policies, slides }) {
         <Visual />
 
         {slides.map((slide) => {
-          return (
-            <Slide key={slide.id} slideId={slide.id}>
-              <Stack spacing={3}>
-                {/* <Text>{slide.id || "Missing slide id"}</Text> */}
-                <Heading>{slide.title || "Missing title"}</Heading>
-                <Text>{slide.description || "Missing description"}</Text>
-                {/* <Text fontSize="xs">
-                  {slide.visual || "Missing visual description"}
-                </Text> */}
-              </Stack>
-            </Slide>
+          const colors = {
+            "developed markets": "#0DA9D9",
+            "developing markets": "#6363C4",
+          }
+          const fontWeights = {
+            "developed markets": 600,
+            "developing markets": 600,
+          }
+
+          const words = ["developed markets", "developing markets"]
+          const description = extractWords(slide.description, words).map(
+            (t) => ({
+              color: colors[t.toLowerCase()] || "inherit",
+              fontWeight: fontWeights[t.toLowerCase()] || "inherit",
+              text: t,
+            })
           )
-        })}
-      </Stack>
-      {/* <Stack spacing={20} pt={10} pb={40} textAlign="center">
-        {slides.slice(8).map((slide) => {
+
           return (
             <Slide key={slide.id} slideId={slide.id}>
-              <Stack spacing={3}>
-                <Text>{slide.id || "Missing slide id"}</Text>
-                <Heading>{slide.title || "Missing title"}</Heading>
-                <Text>{slide.description || "Missing description"}</Text>
-                <Text fontSize="xs">
-                  {slide.visual || "Missing visual description"}
+              <Stack spacing={5}>
+                {slide.id === "7" ? (
+                  <Heading fontSize="3xl">{slide.title}</Heading>
+                ) : (
+                  <Heading fontSize="xl">{slide.title}</Heading>
+                )}
+
+                <Text>
+                  {description.map(({ color, fontWeight, text }, i) => (
+                    <span key={i} style={{ color, fontWeight }}>
+                      {text}
+                    </span>
+                  ))}
                 </Text>
               </Stack>
             </Slide>
           )
         })}
-      </Stack> */}
+      </Stack>
     </Container>
   )
+}
+
+function extractWords(text, words = []) {
+  return words
+    .reduce((acc, word) => acc.split(word).join(`__${word}__`), text)
+    .split("__")
 }
