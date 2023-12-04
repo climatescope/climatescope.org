@@ -7,14 +7,10 @@ import Tools from "@components/pages/IndexPage/Tools"
 import BnefBanner from "@components/pages/IndexPage/BnefBanner"
 
 // import TechnologiesMap from "@components/pages/IndexPage/TechnologiesMap"
+import TechnologiesCartogram from "@components/TechnologiesCartogram"
 import MiniGlobes from "@components/pages/IndexPage/MiniGlobes"
 
-const IndexPage = ({
-  globeInsights,
-  metaData,
-  allTools,
-  miniGlobesData,
-}) => {
+const IndexPage = ({ globeInsights, metaData, allTools, miniGlobesData }) => {
   return (
     <Box as="main" minH="75vh">
       <Container>
@@ -22,7 +18,7 @@ const IndexPage = ({
           <Banner />
           <GlobePreview globeInsights={globeInsights} />
           <Sectors metaData={metaData} />
-          {/* <TechnologiesMap /> */}
+          <TechnologiesCartogram />
           <MiniGlobes data={miniGlobesData} />
           <Tools allTools={allTools} />
           <BnefBanner />

@@ -63,10 +63,14 @@ export async function getStaticProps() {
   }
 
   const miniGlobesData = miniGlobesDataRaw.map((d) => {
+    const { region, unit, ...allYears } = d
     return {
-      region: d.region,
-      unit: d.unit,
-      value: Math.round(d["2022"] * 10) / 10,
+      region,
+      unit,
+      values: Object.entries(allYears).reduce((acc, cur) => {
+        acc[cur[0]] = Math.round(cur[1] * 10) / 10
+        return acc
+      }, {}),
     }
   })
 

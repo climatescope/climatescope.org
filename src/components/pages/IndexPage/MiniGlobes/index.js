@@ -1,3 +1,4 @@
+import { useRef, useState, useEffect } from "react"
 import {
   Heading,
   HStack,
@@ -10,10 +11,30 @@ import {
   useTheme,
 } from "@chakra-ui/react"
 import { ComposableMap, Geographies, Geography } from "react-simple-maps"
+import { animate, motion } from "framer-motion"
 
 import SimpleGrid from "@components/SimpleGrid"
+import CustomTimeSlider from "@components/CustomTimeSlider"
 
-function MiniGlobe({ rotate = [0, 0, 0] }) {
+function AnimatedCircle({ value = 0, thickness = 20 }) {
+  return (
+    <motion.circle
+      initial={{ pathLength: 0 }}
+      animate={{
+        pathLength: value / 100,
+      }}
+      cx={400}
+      cy={400}
+      r={400 - thickness / 2}
+      fill="none"
+      stroke="#FFF"
+      strokeWidth={thickness}
+      transform={`translate(400 400) rotate(-90) translate(-400 -400)`}
+    />
+  )
+}
+
+function MiniGlobe({ value, rotate = [0, 0, 0] }) {
   const { colors } = useTheme()
   const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/land-110m.json"
   return (
@@ -32,16 +53,20 @@ function MiniGlobe({ rotate = [0, 0, 0] }) {
                 key={geo.rsmKey}
                 geography={geo}
                 fill={colors.brand[800]}
+                tabIndex={-1}
               />
             )
           })
         }}
       </Geographies>
+      <AnimatedCircle value={value} />
     </ComposableMap>
   )
 }
 
 const MiniGlobesSection = ({ data }) => {
+  const allYears = Object.keys(data[0].values) || []
+  const [currentYear, setCurrentYear] = useState(allYears.slice(-1)[0])
   const rotations = {
     "northamer": [82, -40, 0],
     "emea": [-30, -40, 0],
@@ -58,6 +83,9 @@ const MiniGlobesSection = ({ data }) => {
     "ssa": "Africa",
     "latam": "Latin America",
   }
+
+  const handleChange = (year) => setCurrentYear(year)
+
   return (
     <Box
       position="relative"
@@ -80,9 +108,9 @@ const MiniGlobesSection = ({ data }) => {
                 {"Renewable energy by region"}
               </Heading>
               <Text variant="sectionSubtitleLight">
-                {
-                  "Share of installed renewable energy capacity by region in 2022, excluding Large Hydro"
-                }
+                {`Share of installed renewable energy capacity by region in ${
+                  currentYear || ""
+                }, excluding Large Hydro`}
               </Text>
             </Stack>
           </HStack>
@@ -93,7 +121,8 @@ const MiniGlobesSection = ({ data }) => {
             gridRowGap={[10, null, 20]}
             py={10}
           >
-            {data.map(({ region, value }) => {
+            {data.map(({ region, values }) => {
+              const value = values[currentYear] || 0
               return (
                 <Box key={region}>
                   <SimpleGrid columns={1}>
@@ -105,7 +134,7 @@ const MiniGlobesSection = ({ data }) => {
                           fontSize="2xl"
                           fontWeight={700}
                         >
-                          <MiniGlobe rotate={rotations[region]} />
+                          <MiniGlobe value={value} rotate={rotations[region]} />
                         </Box>
                       </AspectRatio>
                     </Center>
@@ -126,12 +155,7 @@ const MiniGlobesSection = ({ data }) => {
                         >
                           {names[region] || ""}
                         </Box>
-                        <Box
-                          fontSize="5xl"
-                          lineHeight="shorter"
-                          fontWeight={600}
-                          textShadow="0 0 1rem rgba(0,0,0,0.1)"
-                        >{`${parseFloat(value).toLocaleString("en-us")}%`}</Box>
+                        <AnimatedNumberBox value={value} />
                       </Stack>
                     </Center>
                   </SimpleGrid>
@@ -139,8 +163,47 @@ const MiniGlobesSection = ({ data }) => {
               )
             })}
           </SimpleGrid>
+          <Box gridColumn="1 / -1">
+            <CustomTimeSlider
+              years={allYears}
+              value={currentYear}
+              bg="blackAlpha.300"
+              onChange={handleChange}
+            />
+          </Box>
         </SimpleGrid>
       </Container>
+    </Box>
+  )
+}
+
+function AnimatedNumberBox({ value }) {
+  const boxRef = useRef(null)
+  useEffect(() => {
+    if (typeof window === "undefined") return undefined
+    const node = boxRef.current
+    if (!node) return undefined
+    const currentValue = parseFloat(node.textContent)
+    // const diff = Math.round(Math.abs(value - currentValue) * 10) / 10
+    animate(currentValue, value, {
+      // duration: diff / 10 || 0,
+      duration: 0.3,
+      onUpdate: (v) => {
+        const [n, m] = `${Math.round(v * 10) / 10}`.split(".")
+        node.textContent = `${n || 0}.${m || 0}`
+      },
+    })
+  }, [value])
+  return (
+    <Box
+      ref={boxRef}
+      fontSize="5xl"
+      lineHeight="shorter"
+      fontWeight={600}
+      textShadow="0 0 1rem rgba(0,0,0,0.1)"
+    >
+      <span ref={boxRef}>{value}</span>
+      <span>{"%"}</span>
     </Box>
   )
 }
