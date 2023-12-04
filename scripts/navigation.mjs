@@ -47,11 +47,11 @@ const navigation = [
     path: "/results",
     links: [],
   },
-  // {
-  //   title: "Highlights",
-  //   path: "/highlights",
-  //   links: [],
-  // },
+  {
+    title: "Highlights",
+    path: "/highlights",
+    links: [],
+  },
   {
     title: "Sectors",
     path: "/sectors",

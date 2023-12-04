@@ -1,9 +1,10 @@
 import { useRef, useEffect } from "react"
 
-import { Center } from "@chakra-ui/react"
+import { Center, Stack, Text } from "@chakra-ui/layout"
 import { useIntersectionObserver } from "usehooks-ts"
 
 import useHighlightsStore from "@utils/store/highlightsStore"
+import { ChevronDown } from "@components/Icon"
 
 export default function StartSlide() {
   const ref = useRef(null)
@@ -20,7 +21,10 @@ export default function StartSlide() {
 
   return (
     <Center ref={ref} position="relative">
-      {"Scroll to start"}
+      <Stack spacing={3} alignItems="center" color="gray.500">
+        <Text fontWeight={600}>{"Scroll to start"}</Text>
+        <ChevronDown size="2rem" />
+      </Stack>
     </Center>
   )
 }
