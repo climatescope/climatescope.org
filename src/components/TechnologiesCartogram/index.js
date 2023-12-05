@@ -11,6 +11,7 @@ import {
 import { useTheme } from "@chakra-ui/system"
 import { motion } from "framer-motion"
 import { Tooltip } from "@chakra-ui/tooltip"
+import _sortBy from "lodash/sortBy"
 
 import CustomTimeSlider from "@components/CustomTimeSlider"
 
@@ -18,6 +19,11 @@ export default function TechnologiesCartogram() {
   const [regions, setRegions] = useState([])
   const [years, setYears] = useState([])
   const [currentYear, setCurrentYear] = useState("")
+  const [extent, setExtent] = useState([
+    { r: 0, popValue: 0 },
+    { r: 0, popValue: 0 },
+    { r: 0, popValue: 0 },
+  ])
   const { colors } = useTheme()
 
   const technologyColors = {
@@ -37,6 +43,7 @@ export default function TechnologiesCartogram() {
 
   useEffect(() => {
     if (typeof window === "undefined") return undefined
+
     fetch(
       "/data/most_popular_new_power_generating_technology_installed_2010_2022.json"
     )
@@ -45,6 +52,26 @@ export default function TechnologiesCartogram() {
         const allYears = Object.keys(regions[0].markets[0].data).filter(
           (d) => d !== "iso"
         )
+
+        // const scale = scaleSqrt().domain([1, 1500000000]).range([4, 50])
+
+        setExtent([
+          {
+            r: 5,
+            popValue: 500000,
+            label: "500K",
+          },
+          {
+            r: 25,
+            popValue: 300000000,
+            label: "300M",
+          },
+          {
+            r: 48,
+            popValue: 1400000000,
+            label: "1.4Bn",
+          },
+        ])
         setYears(allYears)
         setCurrentYear(allYears.slice(-1)[0])
         setRegions(regions)
@@ -54,6 +81,9 @@ export default function TechnologiesCartogram() {
   const handleChange = (year) => {
     setCurrentYear(year)
   }
+
+  const width = 630
+  const height = 330 + 10
 
   return (
     <Box>
@@ -87,22 +117,33 @@ export default function TechnologiesCartogram() {
         </Wrap>
 
         <Box position="relative" userSelect="none">
-          <svg viewBox="0 0 630 330">
+          <svg viewBox={`0 0 ${width} ${height}`}>
             {regions.map((region) => {
               return (
                 <g key={region.id}>
                   {region.markets.map(({ id, x, y, r, data, name }, i) => {
                     const showId = r > 8
-                    const fill = technologyColors[data[currentYear]]
+                    const textValue = data[currentYear] || "N/A"
+                    const fill = technologyColors[textValue] || "#FFFFFF"
+                    const textFill = ["None", "N/A", "Gas", "Solar"].includes(
+                      textValue
+                    )
+                      ? colors.gray[800]
+                      : "#FFFFFF"
                     return (
                       <g key={id} transform={`translate(${x} ${y})`}>
                         <Tooltip
-                          label={`${name} - ${data[currentYear] || "N/A"}`}
+                          label={`${name} - ${textValue}`}
                           placement="top"
                           hasArrow
                         >
                           <g>
                             <motion.circle
+                              stroke={
+                                data[currentYear] ? "none" : colors.gray[200]
+                              }
+                              strokeWidth={0.75}
+                              strokeDasharray={[2, 1]}
                               initial={{ opacity: 0, fill, r: 0 }}
                               animate={{
                                 opacity: 1,
@@ -114,17 +155,24 @@ export default function TechnologiesCartogram() {
                               }}
                             />
                             {showId && (
-                              <text
+                              <motion.text
                                 textAnchor="middle"
                                 alignmentBaseline="central"
                                 fontSize={6}
                                 fontWeight={600}
-                                fill="#FFF"
+                                initial={{ opacity: 0, fill: textFill }}
+                                animate={{
+                                  opacity: 1,
+                                  fill: textFill,
+                                  transition: {
+                                    opacity: { delay: i * 0.01 },
+                                  },
+                                }}
                               >
                                 {name.length > Math.ceil(r) - 6
                                   ? id.toUpperCase()
                                   : name}
-                              </text>
+                              </motion.text>
                             )}
                           </g>
                         </Tooltip>
@@ -134,6 +182,76 @@ export default function TechnologiesCartogram() {
                 </g>
               )
             })}
+
+            <g
+              transform={`translate(${(width / 5) * 4} ${
+                height - extent[0].r - 10
+              })`}
+            >
+              <circle
+                r={extent[0].r}
+                fill="none"
+                stroke={colors.gray[300]}
+                strokeWidth={0.5}
+                strokeDasharray={[2, 1]}
+              />
+              <circle
+                cy={-extent[1].r + extent[0].r}
+                r={extent[1].r}
+                fill="none"
+                stroke={colors.gray[300]}
+                strokeWidth={0.5}
+                strokeDasharray={[2, 1]}
+              />
+              <circle
+                cy={-extent[2].r + extent[0].r}
+                r={extent[2].r}
+                fill="none"
+                stroke={colors.gray[300]}
+                strokeWidth={0.5}
+                strokeDasharray={[2, 1]}
+              />
+              <text
+                textAnchor="middle"
+                alignmentBaseline="hanging"
+                fontSize={5}
+                fontWeight={600}
+                y={extent[0].r + 3}
+                fill={colors.gray[800]}
+              >
+                {"POPULATION"}
+              </text>
+              <text
+                textAnchor="middle"
+                alignmentBaseline="central"
+                fontSize={5}
+                fontWeight={600}
+                y={-extent[0].r * 2}
+                fill={colors.gray[400]}
+              >
+                {extent[0].label}
+              </text>
+              <text
+                textAnchor="middle"
+                alignmentBaseline="central"
+                fontSize={5}
+                fontWeight={600}
+                y={-extent[1].r * 2}
+                fill={colors.gray[400]}
+              >
+                {extent[1].label}
+              </text>
+              <text
+                textAnchor="middle"
+                alignmentBaseline="central"
+                fontSize={5}
+                fontWeight={600}
+                y={-extent[2].r * 2}
+                fill={colors.gray[400]}
+              >
+                {extent[2].label}
+              </text>
+            </g>
           </svg>
         </Box>
         <Box h="2.75rem">

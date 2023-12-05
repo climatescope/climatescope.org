@@ -42,7 +42,7 @@ function MiniGlobe({ value, rotate = [0, 0, 0] }) {
       width={800}
       height={800}
       projection="geoOrthographic"
-      projectionConfig={{ scale: 390, rotate }}
+      projectionConfig={{ scale: 379, rotate }}
       style={{ width: "100%", height: "100%" }}
     >
       <Geographies geography={geoUrl}>
@@ -183,26 +183,23 @@ function AnimatedNumberBox({ value }) {
     if (typeof window === "undefined") return undefined
     const node = boxRef.current
     if (!node) return undefined
-    const currentValue = parseFloat(node.textContent)
-    // const diff = Math.round(Math.abs(value - currentValue) * 10) / 10
+    const currentValue = parseFloat(node.innerText) || 0
     animate(currentValue, value, {
-      // duration: diff / 10 || 0,
       duration: 0.3,
       onUpdate: (v) => {
         const [n, m] = `${Math.round(v * 10) / 10}`.split(".")
-        node.textContent = `${n || 0}.${m || 0}`
+        node.innerText = `${n || 0}.${m || 0}`
       },
     })
   }, [value])
   return (
     <Box
-      ref={boxRef}
       fontSize="5xl"
       lineHeight="shorter"
       fontWeight={600}
       textShadow="0 0 1rem rgba(0,0,0,0.1)"
     >
-      <span ref={boxRef}>{value}</span>
+      <span ref={boxRef} />
       <span>{"%"}</span>
     </Box>
   )
