@@ -12,7 +12,7 @@ import SimpleGrid from "@components/SimpleGrid"
 import Reports from "@components/pages/IndexPage/Reports"
 import Newsletter from "@components/Newsletter"
 
-const toExclude = ["/reports", "/tools", "/markets"]
+const toExclude = ["Reports", "Tools", "Markets"]
 
 const SiteFooter = ({ navigation }) => {
   return (
@@ -44,7 +44,7 @@ const SiteFooter = ({ navigation }) => {
       <Container as="footer" py={14}>
         <SimpleGrid columns={[1, 2, 3, 5]}>
           {navigation
-            .filter((d) => !toExclude.includes(d.path))
+            .filter((d) => !toExclude.includes(d.title))
             .map((navItem) => {
               return (
                 <Box key={navItem.title}>

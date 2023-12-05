@@ -30,7 +30,7 @@ const SiteHeader = ({ navigation }) => {
 
   const aboutItems = [navigation.find((s) => s.path === "/about")]
   const extendedNavigation = navigation.filter(
-    (d) => !["/about"].includes(d.path)
+    (d) => !["About", "Markets"].includes(d.title)
   )
 
   return (
