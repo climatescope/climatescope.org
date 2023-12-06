@@ -38,12 +38,14 @@ export default function CustomTimeSlider({
   value = "",
   onChange = () => {},
   bg = "gray.100",
+  name = "Time slider",
 }) {
   const { getRootProps, getRadioProps } = useRadioGroup({
     name: "Year",
     defaultValue: years.slice(-1)[0],
     value,
     onChange: (val) => onChange(val),
+    name,
   })
   const group = getRootProps()
   const extent = [years[0], years.slice(-1)[0]]
@@ -55,6 +57,7 @@ export default function CustomTimeSlider({
       p={1}
       borderRadius="full"
       userSelect="none"
+      name={name}
     >
       {years.map((value) => {
         const radio = getRadioProps({ value })

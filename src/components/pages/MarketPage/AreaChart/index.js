@@ -14,6 +14,8 @@ import debounce from "lodash/debounce"
 import sortBy from "lodash/sortBy"
 
 import { useChart, useScale, useAxis } from "../LineChart/utils"
+import DownloadChart from "@components/DownloadChart"
+import marketsWithThe from "@utils/marketsWithThe"
 // import { colors } from "@utils/theme"
 
 function computeArea(prev, cur, scaleX, scaleY) {
@@ -96,8 +98,11 @@ const AreaChart = ({
   data,
   compactTooltip,
   precision,
+  market,
+  downloadable = false,
   ...restProps
 }) => {
+  const chartRef = useRef(null)
   const { colors } = useTheme()
   const chart = useChart({ width, height })
   const [tooltip, setTooltip] = useState({})
@@ -230,7 +235,36 @@ const AreaChart = ({
 
   return (
     <Stack spacing={5}>
-      <Heading fontSize="xl">{`${data.indicator} (in ${unit})`}</Heading>
+      <HStack spacing={3}>
+        <Heading
+          flex={1}
+          fontSize="xl"
+        >{`${data.indicator} (in ${unit})`}</Heading>
+        {downloadable && (
+          <DownloadChart
+            chartRef={chartRef}
+            title={`${data.indicator}${
+              market
+                ? `${marketsWithThe.includes(market.iso) ? " in the" : " in"} ${
+                    market.name
+                  }`
+                : ""
+            } (in ${unit})`}
+            padding={{
+              left: 10,
+              right: 132,
+              top: 48,
+              bottom: 32,
+            }}
+            legend={visualAreas.map(({ subindicator }) => ({
+              color: colorMap[subindicator],
+              label: subindicator === "Solar pv" ? "Solar PV" : subindicator,
+            }))}
+            legendFontSize={14}
+            legendColorOpacity={0.75}
+          />
+        )}
+      </HStack>
       <Box position="relative">
         <Box
           position="absolute"
@@ -325,7 +359,7 @@ const AreaChart = ({
           </Stack>
         </Box>
         <Box fontFamily="mono">
-          <svg {...chart}>
+          <svg {...chart} ref={chartRef}>
             {xAxis.map((tick) => (
               <g key={tick.value} transform={`translate(0, ${height - 40})`}>
                 <line

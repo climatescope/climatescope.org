@@ -169,6 +169,7 @@ const MiniGlobesSection = ({ data }) => {
               value={currentYear}
               bg="blackAlpha.300"
               onChange={handleChange}
+              name="Renewable energy by region time slider"
             />
           </Box>
         </SimpleGrid>

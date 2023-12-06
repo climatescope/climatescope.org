@@ -178,6 +178,7 @@ function Section({ item, market }) {
                 (o) => o.value
               ),
             ]}
+            market={market}
           />
         </Box>
       )
@@ -198,6 +199,8 @@ function Section({ item, market }) {
             data={{ indicator: item.title, subindicators: item.data }}
             domainX={[2013, 2022]}
             domainY={[0, maxValue]}
+            market={market}
+            downloadable={true}
           />
         </Box>
       )
