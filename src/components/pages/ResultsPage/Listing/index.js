@@ -119,11 +119,7 @@ const Listing = ({ data, sector }) => {
                   </Center>
                 </Center>
               </Td>
-              <Td
-                fontWeight={600}
-                color="brand.700"
-                position={["relative", null, "initial"]}
-              >
+              <Td fontWeight={600} color="brand.700" position="relative">
                 <LinkOverlay
                   href={`/markets/${d.iso.toLowerCase()}`}
                   _focusVisible={{

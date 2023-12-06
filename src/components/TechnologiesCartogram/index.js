@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useRef, useEffect, useState } from "react"
 import {
   Box,
   HStack,
@@ -14,6 +14,7 @@ import { Tooltip } from "@chakra-ui/tooltip"
 import _sortBy from "lodash/sortBy"
 
 import CustomTimeSlider from "@components/CustomTimeSlider"
+import DownloadChart from "@components/DownloadChart"
 
 export default function TechnologiesCartogram() {
   const [regions, setRegions] = useState([])
@@ -25,6 +26,8 @@ export default function TechnologiesCartogram() {
     { r: 0, popValue: 0 },
   ])
   const { colors } = useTheme()
+
+  const chartRef = useRef(null)
 
   const technologyColors = {
     "Solar": colors.indicators["Solar"],
@@ -88,14 +91,26 @@ export default function TechnologiesCartogram() {
   return (
     <Box>
       <Stack w="100%" spacing={6}>
-        <Stack spacing={3}>
-          <Heading variant="sectionTitle">
-            {`Power-generating technologies`}
-          </Heading>
-          <Text variant="sectionSubtitle">
-            {`Most popular power-generating technologies added in ${currentYear}`}
-          </Text>
-        </Stack>
+        <HStack spacing={3} alignItems="flex-start">
+          <Stack spacing={3} flex={1}>
+            <Heading variant="sectionTitle">
+              {`Power-generating technologies`}
+            </Heading>
+            <Text variant="sectionSubtitle">
+              {`Most popular power-generating technologies added in ${currentYear}`}
+            </Text>
+          </Stack>
+          <DownloadChart
+            chartRef={chartRef}
+            title={`Power-generating technologies`}
+            subtitle={`Most popular power-generating technologies added in ${currentYear}`}
+            legend={Object.entries(technologyColors).map((d) => ({
+              color: d[1],
+              label: d[0],
+            }))}
+            padding={{ top: 48, bottom: 25, left: 0, right: 90 }}
+          />
+        </HStack>
         <Wrap spacingX={5} spacingY={0}>
           {Object.entries(technologyColors).map((d) => {
             return (
@@ -117,7 +132,7 @@ export default function TechnologiesCartogram() {
         </Wrap>
 
         <Box position="relative" userSelect="none">
-          <svg viewBox={`0 0 ${width} ${height}`}>
+          <svg ref={chartRef} viewBox={`0 0 ${width} ${height}`}>
             {regions.map((region) => {
               return (
                 <g key={region.id}>
@@ -260,6 +275,7 @@ export default function TechnologiesCartogram() {
               years={years}
               value={currentYear}
               onChange={handleChange}
+              name="Power-generating technologies time slider"
             />
           )}
         </Box>

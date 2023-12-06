@@ -1,6 +1,6 @@
 import { Heading, Stack, Box, Text } from "@chakra-ui/react"
 
-import { Link, ButtonLink } from "@components/Link"
+import { ButtonLink } from "@components/Link"
 import { DownloadIcon } from "@components/Icon"
 import SimpleGrid from "@components/SimpleGrid"
 import Image from "@components/Image"
@@ -35,16 +35,18 @@ const Reports = () => {
           alignItems="center"
         >
           <Stack gridColumn={["1 / -1", null, "span 4"]}>
-            <Box boxShadow="lg" w={["100%", null, "75%"]} margin={["0", null, "0 auto"]}>
-              <Link href={report.href} target="_blank" display="block">
-                <Image
-                  src={report.imgSrc}
-                  ratio={1 / 1.42}
-                  type="reportCover"
-                  bg="transparent"
-                  alt="Climatescope 2023 print report cover"
-                />
-              </Link>
+            <Box
+              boxShadow="lg"
+              w={["100%", null, "75%"]}
+              margin={["0", null, "0 auto"]}
+            >
+              <Image
+                src={report.imgSrc}
+                ratio={1 / 1.42}
+                type="reportCover"
+                bg="transparent"
+                alt="Climatescope 2023 print report cover"
+              />
             </Box>
           </Stack>
           <Stack spacing={6} gridColumn={["span 8", null, null, "span 4"]}>
