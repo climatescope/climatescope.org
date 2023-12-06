@@ -32,7 +32,7 @@ const imageTypes = {
     sizes: ["sm", "md", "lg"],
   },
   cover: {
-    sizes: ["md", "lg"],
+    sizes: ["lg"],
   },
   chart: {
     sizes: ["md", "lg"],
