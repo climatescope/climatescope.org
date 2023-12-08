@@ -41,6 +41,7 @@
     "@turf/turf": "^6.5.0",
     "@types/mdx": "^2.0.10",
     "@visx/pattern": "^2.10.0",
+    "@visx/text": "^3.3.0",
     "d3-array": "^3.1.1",
     "d3-dsv": "^2.0.0",
     "d3-fetch": "^2.0.0",

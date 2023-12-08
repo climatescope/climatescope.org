@@ -1,9 +1,17 @@
 import { Box, Heading, Text } from "@chakra-ui/react"
 
 import GeographyComparison from "@components/tools/GeographyComparison"
+import RankOverTime from "@components/tools/RankOverTime"
 import TableauWidget from "@components/TableauWidget"
 
 const components = {
+  RankOverTime: (props) => {
+    return(
+      <Box w="100%">
+        <RankOverTime {...props} />
+      </Box>
+    )
+  },
   GeographyComparison: (props) => {
     return (
       <Box w="100%">

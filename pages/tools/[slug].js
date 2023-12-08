@@ -7,11 +7,18 @@ import { getAllMDXSlugs, getMDXPage } from "@utils/api/server"
 
 export default function ToolPage({ source }) {
   const { frontmatter } = source
+  const isCentered = frontmatter.layout === "centered"
   return (
     <div>
       <SEO {...frontmatter} />
       <Container as="main">
-        <Stack spacing={10} pt={10} pb={20} alignItems="center" textAlign="center">
+        <Stack
+          spacing={10}
+          pt={10}
+          pb={20}
+          alignItems={isCentered ? "center" : "flex-start"}
+          textAlign={isCentered ? "center" : "left"}
+        >
           <MDXRemote {...source} components={components} />
         </Stack>
       </Container>
