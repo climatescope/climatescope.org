@@ -4,7 +4,8 @@ import { line } from "d3-shape"
 const Line = ({ data, scaleX, scaleY, subindicator }) => {
   const { colors } = useTheme()
 
-  const lineColor = colors.indicators[subindicator] || colors.teal[600]
+  const lineColor =
+    colors.indicators[subindicator] || colors.teal[600]
 
   const lineGenerator = line()
     .x((d) => scaleX(d.year))

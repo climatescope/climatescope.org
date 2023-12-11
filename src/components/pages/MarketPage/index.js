@@ -179,6 +179,7 @@ function Section({ item, market }) {
               ),
             ]}
             market={market}
+            downloadable
           />
         </Box>
       )

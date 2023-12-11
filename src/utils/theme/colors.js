@@ -281,6 +281,12 @@ const colors = {
 
     "developed markets": "#0DA9D9",
     "developing markets": "#9191EE",
+
+    "Average Commercial": "#F47956",
+    "Average Industrial": "#078D76",
+    "Average Residential": "#f8ba01",
+    "Average Electricity Price": "#0194A7",
+    "Asset Finance": "#0194A7",
   },
 }
 

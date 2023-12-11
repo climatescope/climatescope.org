@@ -176,10 +176,16 @@ const LineChart = ({
             title={title}
             padding={{
               left: 10,
-              right: 10,
+              right: 184,
               top: 48,
-              bottom: 32,
+              bottom: 40,
             }}
+            legend={visible.map((d) => ({
+              color: colors.indicators[d.subindicator] || colors.teal[600],
+              label: d.subindicator,
+            }))}
+            legendFontSize={12}
+            legendOffset={18}
           />
         )}
       </HStack>

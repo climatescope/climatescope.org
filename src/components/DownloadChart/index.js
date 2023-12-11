@@ -19,6 +19,7 @@ export default function DownloadChart({
   legend = [],
   legendFontSize = 8,
   legendColorOpacity = 1,
+  legendOffset = 0,
 }) {
   const { colors } = useTheme()
 
@@ -93,7 +94,7 @@ export default function DownloadChart({
       )
       $legend.setAttribute(
         "transform",
-        `translate(${width} ${padding.top + 8})`
+        `translate(${width + legendOffset} ${padding.top + 8})`
       )
       legend.forEach((item, i) => {
         const $legendItem = document.createElementNS(
