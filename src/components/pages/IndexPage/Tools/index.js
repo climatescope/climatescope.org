@@ -21,6 +21,7 @@ const Tools = ({ allTools }) => {
       </HStack>
 
       {allTools
+        .slice(0, 2)
         .sort((a, b) => a.order - b.order)
         .map(({ title, description, slug, src }) => {
           return (
