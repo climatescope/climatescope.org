@@ -48,7 +48,7 @@ export default function SectorLineChart({
 
   return (
     <div>
-      <LineChart data={data} compactTooltip={false} />
+      <LineChart data={data} compactTooltip={false} downloadable={true} />
     </div>
   )
 }

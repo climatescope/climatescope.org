@@ -7,12 +7,14 @@ import {
   Skeleton,
   AspectRatio,
   Stack,
+  HStack,
   Divider,
 } from "@chakra-ui/react"
 import debounce from "lodash/debounce"
 import sortBy from "lodash/sortBy"
 import { range } from "d3-array"
 
+import DownloadChart from "@components/DownloadChart"
 import { useChart, useScale, useExtent, useAxis } from "./utils"
 import Line from "./Line"
 
@@ -127,7 +129,9 @@ const LineChart = ({
   scaleBand,
   preparedLines,
   compactTooltip,
+  downloadable = false,
 }) => {
+  const chartRef = useRef(null)
   const { colors } = useTheme()
   const [tooltip, setTooltip] = useState({})
   const visible = preparedLines.map((d) => ({ ...d, isVisible: true }))
@@ -162,7 +166,23 @@ const LineChart = ({
 
   return (
     <Stack spacing={5}>
-      <Heading fontSize="xl">{title}</Heading>
+      <HStack spacing={3}>
+        <Heading fontSize="xl" flex={1}>
+          {title}
+        </Heading>
+        {downloadable && (
+          <DownloadChart
+            chartRef={chartRef}
+            title={title}
+            padding={{
+              left: 10,
+              right: 10,
+              top: 48,
+              bottom: 32,
+            }}
+          />
+        )}
+      </HStack>
       <Box position="relative">
         <Box
           position="absolute"
@@ -225,7 +245,7 @@ const LineChart = ({
           </Stack>
         </Box>
 
-        <svg {...chart} style={{ display: "block" }}>
+        <svg {...chart} ref={chartRef} style={{ display: "block" }}>
           {xAxis.map((tick) => (
             <g key={tick.value} transform={`translate(0, ${height - 40})`}>
               <line
@@ -379,6 +399,7 @@ const LineChartWrapper = ({
   height = 378,
   data,
   compactTooltip,
+  downloadable,
   ...restProps
 }) => {
   const [preparedLines, setPreparedLines] = useState([])
@@ -470,6 +491,7 @@ const LineChartWrapper = ({
       scaleBand={scaleBand}
       preparedLines={preparedLines}
       compactTooltip={compactTooltip}
+      downloadable={downloadable}
     />
   )
 }

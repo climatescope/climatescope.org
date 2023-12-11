@@ -54,6 +54,7 @@ export default function SectorAreaChart({
         data={data}
         compactTooltip={compactTooltip}
         precision={precision}
+        downloadable={true}
       />
       {chartNotes && (
         <p

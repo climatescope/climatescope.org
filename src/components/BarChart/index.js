@@ -7,12 +7,14 @@ import {
   Skeleton,
   AspectRatio,
   Stack,
+  HStack,
   Divider,
 } from "@chakra-ui/react"
 import debounce from "lodash/debounce"
 import sortBy from "lodash/sortBy"
 import { range } from "d3-array"
 
+import DownloadChart from "@components/DownloadChart"
 import { useChart, useScale, useExtent, useAxis } from "./utils"
 import Line from "./Line"
 
@@ -128,6 +130,7 @@ const BarChart = ({
   preparedLines,
   compactTooltip,
 }) => {
+  const chartRef = useRef(null)
   const { colors } = useTheme()
   const [tooltip, setTooltip] = useState({})
   const visible = preparedLines.map((d) => ({ ...d, isVisible: true }))
@@ -162,7 +165,21 @@ const BarChart = ({
 
   return (
     <Stack spacing={5}>
-      <Heading fontSize="xl">{title}</Heading>
+      <HStack spacing={3}>
+        <Heading fontSize="xl" flex={1}>
+          {title}
+        </Heading>
+        <DownloadChart
+          title={title}
+          chartRef={chartRef}
+          padding={{
+            left: 10,
+            right: 10,
+            top: 48,
+            bottom: 32,
+          }}
+        />
+      </HStack>
       <Box position="relative">
         <Box
           position="absolute"
@@ -225,7 +242,7 @@ const BarChart = ({
           </Stack>
         </Box>
 
-        <svg {...chart} style={{ display: "block" }}>
+        <svg {...chart} ref={chartRef} style={{ display: "block" }}>
           {xAxis.map((tick) => (
             <g key={tick.value} transform={`translate(0, ${height - 40})`}>
               <line
