@@ -92,9 +92,8 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
           </Stack>
           <Box gridColumn="1 / -1" bg="white" boxShadow="2.5rem 0 0 #FFF">
             <SimpleGrid columns={2} py={[5, null, null, 10]}>
-              {["power", "transport"].map((d) => {
+              {["power"].map((d) => {
                 const sector = market.sectors.find((s) => s.id === d)
-
                 if (!sector) {
                   return (
                     <Stack key={d} spacing={[3, null, null, 6]}>
@@ -201,6 +200,133 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
                   </Stack>
                 )
               })}
+
+              <Stack spacing={[3, null, null, 6]}>
+                <Stack spacing={2}>
+                  <Heading
+                    as="p"
+                    textTransform="capitalize"
+                    fontSize={["2xl", "3xl"]}
+                    color="green.400"
+                  >
+                    {"+15 places"}
+                  </Heading>
+                  <Text
+                    as="h3"
+                    fontWeight={600}
+                    lineHeight="short"
+                    color="gray.500"
+                  >
+                    {`power rank change since 2021`}
+                  </Text>
+                </Stack>
+                <Divider />
+                {/* <Center flex={1} bg="white" color="gray.500">
+                  <Tag
+                    verticalAlign="middle"
+                    ml={2}
+                    size="sm"
+                    textTransform="uppercase"
+                    fontWeight={600}
+                    colorScheme="gray"
+                  >
+                    {"Coming soon"}
+                  </Tag>
+                </Center> */}
+
+                <SimpleGrid
+                  columns={3}
+                  gridColumnGap={1}
+                  gridRowGap={0}
+                  gridTemplateRows="repeat(140, 0.125rem)"
+                >
+                  <Center
+                    gridColumn="1 / span 1"
+                    gridRow="1 / span 140"
+                    textAlign="center"
+                    bg="gray.25"
+                    color="gray.300"
+                  >
+                    {"2021"}
+                  </Center>
+                  <Center
+                    gridColumn="2 / span 1"
+                    gridRow="1 / span 140"
+                    textAlign="center"
+                    bg="gray.25"
+                    color="gray.300"
+                  >
+                    {"2022"}
+                  </Center>
+                  <Center
+                    gridColumn="3 / span 1"
+                    gridRow="1 / span 140"
+                    textAlign="center"
+                    bg="gray.25"
+                    color="gray.300"
+                  >
+                    {"2023"}
+                  </Center>
+
+                  <Box
+                    gridColumn="1 / span 1"
+                    bg="teal.600"
+                    position="relative"
+                    style={{ gridRow: `${26} / span 1` }}
+                  >
+                    <Center
+                      position="absolute"
+                      top="50%"
+                      left={0}
+                      right={0}
+                      textAlign="center"
+                      transform="translateY(-50%)"
+                    >
+                      <Center bg="teal.600" color="white" px={2}>
+                        {"26"}
+                      </Center>
+                    </Center>
+                  </Box>
+                  <Box
+                    gridColumn="2 / span 1"
+                    bg="teal.600"
+                    position="relative"
+                    style={{ gridRow: `${22} / span 1` }}
+                  >
+                    <Center
+                      position="absolute"
+                      top="50%"
+                      left={0}
+                      right={0}
+                      textAlign="center"
+                      transform="translateY(-50%)"
+                    >
+                      <Center bg="teal.600" color="white" px={2}>
+                        {"22"}
+                      </Center>
+                    </Center>
+                  </Box>
+                  <Box
+                    gridColumn="3 / span 1"
+                    bg="teal.600"
+                    position="relative"
+                    style={{ gridRow: `${market.score.data[0].rank} / span 1` }}
+                  >
+                    <Center
+                      position="absolute"
+                      top="50%"
+                      left={0}
+                      right={0}
+                      textAlign="center"
+                      transform="translateY(-50%)"
+                    >
+                      <Center bg="teal.600" color="white" px={2}>
+                        {market.score.data[0].rank}
+                      </Center>
+                    </Center>
+                  </Box>
+                </SimpleGrid>
+              </Stack>
             </SimpleGrid>
             <Divider />
           </Box>

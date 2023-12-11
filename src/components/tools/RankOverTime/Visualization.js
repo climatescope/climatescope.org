@@ -13,9 +13,12 @@ import { useStore } from "@components/tools/RankOverTime/store"
 export default function RankingOverTime({ data, width }) {
   const { colors } = useTheme()
 
+  const filteredData = _sortBy(data, (o) => o["2023"])
+  // .slice(0, 15)
+
   const rowHeight = 44
   const headerRowHeight = 40
-  const height = data.length * rowHeight + headerRowHeight
+  const height = filteredData.length * rowHeight + headerRowHeight
 
   const segmentWidth =
     width < 600
@@ -40,8 +43,6 @@ export default function RankingOverTime({ data, width }) {
 
   const w = width + padding.left + padding.right
   const h = height + padding.top + padding.bottom
-
-  const filteredData = _sortBy(data, (o) => o["2023"])
 
   return (
     <div>
