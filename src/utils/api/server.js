@@ -64,7 +64,10 @@ export async function getMDXPage(dir = "", slug = "") {
 
 export async function getAllMDXSlugs(dir = "") {
   const pages = await fs.readdir(join(process.cwd(), "content", dir))
+  // Exclude pages not to be published
+  const exclude = ["rank-over-time"]
   return pages
     .filter((d) => extname(d).includes("mdx"))
     .map((d) => d.split(extname(d))[0])
+    .filter((d) => !exclude.includes(d))
 }

@@ -21,5 +21,7 @@ export async function getStaticProps() {
   ).then((d) => {
     return d.map((dd, i) => ({ ...dd.frontmatter, slug: allToolNames[i] }))
   })
-  return { props: { allTools } }
+  return {
+    props: { allTools },
+  }
 }
