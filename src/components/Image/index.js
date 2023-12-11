@@ -20,7 +20,6 @@ const Image = ({
   ...restProps
 }) => {
   const theme = useTheme()
-
   const internalSizes = sizes || imageTypes[type].sizes || []
 
   const internalBreakpoints =
