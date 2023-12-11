@@ -10,6 +10,7 @@ import {
   Divider,
   Center,
 } from "@chakra-ui/react"
+import { useTheme } from "@chakra-ui/system"
 
 import { Link, ButtonLink } from "@components/Link"
 import SimpleGrid from "@components/SimpleGrid"
@@ -108,7 +109,7 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
                         <Text
                           as="h3"
                           fontWeight={600}
-                          lineHeight="short"
+                          lineHeight="shorter"
                           color="gray.500"
                         >
                           {`${d[0].toUpperCase() + d.slice(1)} score`}
@@ -201,132 +202,7 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
                 )
               })}
 
-              <Stack spacing={[3, null, null, 6]}>
-                <Stack spacing={2}>
-                  <Heading
-                    as="p"
-                    textTransform="capitalize"
-                    fontSize={["2xl", "3xl"]}
-                    color="green.400"
-                  >
-                    {"+15 places"}
-                  </Heading>
-                  <Text
-                    as="h3"
-                    fontWeight={600}
-                    lineHeight="short"
-                    color="gray.500"
-                  >
-                    {`power rank change since 2021`}
-                  </Text>
-                </Stack>
-                <Divider />
-                {/* <Center flex={1} bg="white" color="gray.500">
-                  <Tag
-                    verticalAlign="middle"
-                    ml={2}
-                    size="sm"
-                    textTransform="uppercase"
-                    fontWeight={600}
-                    colorScheme="gray"
-                  >
-                    {"Coming soon"}
-                  </Tag>
-                </Center> */}
-
-                <SimpleGrid
-                  columns={3}
-                  gridColumnGap={1}
-                  gridRowGap={0}
-                  gridTemplateRows="repeat(140, 0.125rem)"
-                >
-                  <Center
-                    gridColumn="1 / span 1"
-                    gridRow="1 / span 140"
-                    textAlign="center"
-                    bg="gray.25"
-                    color="gray.300"
-                  >
-                    {"2021"}
-                  </Center>
-                  <Center
-                    gridColumn="2 / span 1"
-                    gridRow="1 / span 140"
-                    textAlign="center"
-                    bg="gray.25"
-                    color="gray.300"
-                  >
-                    {"2022"}
-                  </Center>
-                  <Center
-                    gridColumn="3 / span 1"
-                    gridRow="1 / span 140"
-                    textAlign="center"
-                    bg="gray.25"
-                    color="gray.300"
-                  >
-                    {"2023"}
-                  </Center>
-
-                  <Box
-                    gridColumn="1 / span 1"
-                    bg="teal.600"
-                    position="relative"
-                    style={{ gridRow: `${26} / span 1` }}
-                  >
-                    <Center
-                      position="absolute"
-                      top="50%"
-                      left={0}
-                      right={0}
-                      textAlign="center"
-                      transform="translateY(-50%)"
-                    >
-                      <Center bg="teal.600" color="white" px={2}>
-                        {"26"}
-                      </Center>
-                    </Center>
-                  </Box>
-                  <Box
-                    gridColumn="2 / span 1"
-                    bg="teal.600"
-                    position="relative"
-                    style={{ gridRow: `${22} / span 1` }}
-                  >
-                    <Center
-                      position="absolute"
-                      top="50%"
-                      left={0}
-                      right={0}
-                      textAlign="center"
-                      transform="translateY(-50%)"
-                    >
-                      <Center bg="teal.600" color="white" px={2}>
-                        {"22"}
-                      </Center>
-                    </Center>
-                  </Box>
-                  <Box
-                    gridColumn="3 / span 1"
-                    bg="teal.600"
-                    position="relative"
-                    style={{ gridRow: `${market.score.data[0].rank} / span 1` }}
-                  >
-                    <Center
-                      position="absolute"
-                      top="50%"
-                      left={0}
-                      right={0}
-                      textAlign="center"
-                      transform="translateY(-50%)"
-                    >
-                      <Center bg="teal.600" color="white" px={2}>
-                        {market.score.data[0].rank}
-                      </Center>
-                    </Center>
-                  </Box>
-                </SimpleGrid>
-              </Stack>
+              <RankChange market={market} />
             </SimpleGrid>
             <Divider />
           </Box>
@@ -337,3 +213,153 @@ const MarketBanner = ({ market, summary, marketCounts }) => {
 }
 
 export default MarketBanner
+
+function RankChange({ market }) {
+  const { colors } = useTheme()
+  const diff =
+    market.powerRanks.length > 1
+      ? market.powerRanks.slice(-1)[0].rank -
+        market.powerRanks.slice(-2)[0].rank
+      : 0
+  const isNegative = diff > 0
+  const color = !diff
+    ? colors.gray[500]
+    : isNegative
+    ? colors.red[500]
+    : colors.green[500]
+
+  return (
+    <Stack spacing={[3, null, null, 6]}>
+      <Stack spacing={2}>
+        <Heading
+          as="p"
+          fontSize={["2xl", "3xl"]}
+          color="gray.500"
+          style={{ color }}
+        >
+          {!diff
+            ? "="
+            : `${isNegative ? "-" : "+"}${Math.abs(diff)} place${
+                Math.abs(diff) === 1 ? "" : "s"
+              }`}
+        </Heading>
+        <Text as="h3" fontWeight={600} lineHeight="shorter" color="gray.500">
+          {`Global power rank change`}
+        </Text>
+      </Stack>
+      <Divider />
+      <SimpleGrid
+        columns={market.powerRanks.length}
+        gridColumnGap={1}
+        gridRowGap={0}
+        gridTemplateRows="repeat(140, 0.125rem)"
+      >
+        {market.powerRanks.map((r, i) => {
+          return (
+            <Center
+              key={r.year}
+              gridRow="1 / span 140"
+              textAlign="center"
+              bg="gray.25"
+              color="gray.300"
+              style={{ gridColumn: `${i + 1} / span 1` }}
+            >
+              {r.year}
+            </Center>
+          )
+        })}
+        {market.powerRanks.map((r, i) => {
+          return (
+            <Box
+              key={r.year}
+              bg="teal.600"
+              position="relative"
+              style={{
+                gridColumn: `${i + 1} / span 1`,
+                gridRow: `${r.rank} / span 1`,
+              }}
+            >
+              <Center
+                position="absolute"
+                top="50%"
+                left={0}
+                right={0}
+                textAlign="center"
+                transform="translateY(-50%)"
+              >
+                <Center
+                  bg="teal.600"
+                  color="white"
+                  px={2}
+                  border="0.25rem solid"
+                  borderColor="gray.25"
+                  borderRadius="md"
+                  fontWeight={600}
+                >
+                  {r.rank}
+                </Center>
+              </Center>
+            </Box>
+          )
+        })}
+        {/* <Box
+          gridColumn="1 / span 1"
+          bg="teal.600"
+          position="relative"
+          style={{ gridRow: `${26} / span 1` }}
+        >
+          <Center
+            position="absolute"
+            top="50%"
+            left={0}
+            right={0}
+            textAlign="center"
+            transform="translateY(-50%)"
+          >
+            <Center bg="teal.600" color="white" px={2}>
+              {"26"}
+            </Center>
+          </Center>
+        </Box>
+        <Box
+          gridColumn="2 / span 1"
+          bg="teal.600"
+          position="relative"
+          style={{ gridRow: `${22} / span 1` }}
+        >
+          <Center
+            position="absolute"
+            top="50%"
+            left={0}
+            right={0}
+            textAlign="center"
+            transform="translateY(-50%)"
+          >
+            <Center bg="teal.600" color="white" px={2}>
+              {"22"}
+            </Center>
+          </Center>
+        </Box>
+        <Box
+          gridColumn="3 / span 1"
+          bg="teal.600"
+          position="relative"
+          style={{ gridRow: `${market.score.data[0].rank} / span 1` }}
+        >
+          <Center
+            position="absolute"
+            top="50%"
+            left={0}
+            right={0}
+            textAlign="center"
+            transform="translateY(-50%)"
+          >
+            <Center bg="teal.600" color="white" px={2}>
+              {market.score.data[0].rank}
+            </Center>
+          </Center>
+        </Box> */}
+      </SimpleGrid>
+    </Stack>
+  )
+}
