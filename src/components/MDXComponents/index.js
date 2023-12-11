@@ -16,7 +16,7 @@ const components = {
           "h1 + p": {
             fontSize: ["lg", null, "2xl"],
             lineHeight: "short",
-            fontWeight: 500,
+            fontWeight: 600,
           },
         }}
         {...props}
