@@ -17,8 +17,17 @@ export default function RankingOverTime({ data, width }) {
   const headerRowHeight = 40
   const height = data.length * rowHeight + headerRowHeight
 
+  const segmentWidth =
+    width < 600
+      ? width / 3.8
+      : width < 1000
+      ? width / 3.1
+      : width < 1200
+      ? width / 2.8
+      : width / 2.6
+
   const headerColumns = ["2021", "2022", "2023"].map((label, i) => {
-    const x = i * (width / 2.5) + rowHeight / 2 || 0
+    const x = i * segmentWidth + rowHeight / 2 || 0
     return { x, label }
   })
 
@@ -71,6 +80,7 @@ export default function RankingOverTime({ data, width }) {
                   d={d}
                   width={width}
                   rowHeight={rowHeight}
+                  segmentWidth={segmentWidth}
                   colors={{
                     circleFill: colors.gray[200],
                     circleStroke: "#FFF",
@@ -85,6 +95,7 @@ export default function RankingOverTime({ data, width }) {
                 width={width}
                 height={height}
                 rowHeight={rowHeight}
+                segmentWidth={segmentWidth}
               />
             </AnimatePresence>
           </g>
@@ -94,7 +105,7 @@ export default function RankingOverTime({ data, width }) {
   )
 }
 
-function Highlighted({ width, height, rowHeight }) {
+function Highlighted({ width, height, rowHeight, segmentWidth }) {
   const { colors } = useTheme()
   const highlighted = useStore((state) => state.highlighted)
   return highlighted ? (
@@ -109,6 +120,7 @@ function Highlighted({ width, height, rowHeight }) {
         d={highlighted}
         width={width}
         rowHeight={rowHeight}
+        segmentWidth={segmentWidth}
         glow
         colors={{
           circleFill: colors.teal[500],

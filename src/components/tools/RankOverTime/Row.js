@@ -4,19 +4,19 @@ import { Text } from "@visx/text"
 
 import { useStore } from "@components/tools/RankOverTime/store"
 
-const usePoints = ({ d, width, rowHeight }) => {
+const usePoints = ({ d, rowHeight, segmentWidth }) => {
   return useMemo(() => {
     const ranks = ["2021", "2022", "2023"].map((y) => d[y])
     const points = ranks
       .map((rank, j) => {
-        const x = j * (width / 2.5) + rowHeight / 2 || 0
+        const x = j * segmentWidth + rowHeight / 2 || 0
         const y = (rank - 1) * rowHeight + rowHeight / 2 || 0
-        return { rank, x, y }
+        return { rank, x, y, latestScoreValue: d.latestScoreValue }
       })
       .filter((p) => p.rank)
     const path = "M" + points.map((p) => `${p.x},${p.y}`).join("L")
     return { points, path }
-  }, [d, width, rowHeight])
+  }, [d, segmentWidth, rowHeight])
 }
 
 const names = {
@@ -31,6 +31,7 @@ function Row({
   width,
   rowHeight,
   glow = false,
+  segmentWidth,
   colors = {
     circleFill: "#DDD",
     circleStroke: "#FFF",
@@ -41,7 +42,7 @@ function Row({
   const router = useRouter()
   const setHighlighted = useStore((state) => state.setHighlighted)
 
-  const { points, path } = usePoints({ d, width, rowHeight })
+  const { points, path } = usePoints({ d, segmentWidth, rowHeight })
 
   const handleMouseEnter = () => setHighlighted(d)
   const handleMouseLeave = () => setHighlighted(null)
@@ -90,7 +91,7 @@ function Row({
       <Text
         y={lastPoint.y}
         x={lastPoint.x + rowHeight / 2 + 8}
-        width={width - (lastPoint.x + rowHeight / 2 + 8)}
+        width={width - (lastPoint.x + rowHeight / 2 + 8) - 56}
         verticalAnchor="middle"
         fontWeight={600}
         tabIndex={0}
@@ -100,6 +101,21 @@ function Row({
         onBlur={handleMouseLeave}
       >
         {d.geography || names[d.iso] || ""}
+      </Text>
+      <Text
+        y={lastPoint.y}
+        x={width - 40}
+        width={40}
+        verticalAnchor="middle"
+        fontWeight={600}
+        tabIndex={0}
+        style={{ cursor: "pointer", outline: "none" }}
+        onClick={handleGeographyClick}
+        onFocus={handleMouseEnter}
+        onBlur={handleMouseLeave}
+        opacity={0.5}
+      >
+        {lastPoint.latestScoreValue}
       </Text>
     </g>
   )
