@@ -4,7 +4,6 @@ import _groupBy from "lodash/groupBy"
 import { useTheme } from "@chakra-ui/system"
 
 import { useStore } from "@components/tools/RankOverTime/store"
-import { missingNames } from "@components/tools/RankOverTime/utils"
 
 export default function MarketLabel({ market }) {
   const { colors } = useTheme()
@@ -56,7 +55,7 @@ export default function MarketLabel({ market }) {
         overflow="hidden"
         textOverflow="ellipsis"
       >
-        {market.geography || missingNames[market.iso] || market.iso}
+        {market.geography || market.iso}
       </Box>
       <Box fontSize="xs" fontWeight={600} flex="none">
         {market.latestScoreValue.toLocaleString("en-us", {

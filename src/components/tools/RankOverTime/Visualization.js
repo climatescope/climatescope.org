@@ -103,14 +103,17 @@ export default function RankingOverTime({ data, regions }) {
             {year}
           </Center>
         ))}
-        <Center
+        <HStack
+          spacing={3}
           h="3rem"
           fontWeight={600}
           borderBottom="0.125rem solid"
           borderColor="gray.200"
+          justifyContent="space-between"
         >
-          {"Market"}
-        </Center>
+          <Box>{"2023 Rank"}</Box>
+          <Box>{"2023 Score"}</Box>
+        </HStack>
       </SimpleGrid>
       <SimpleGrid columns={4}>
         {years.map(({ year, markets }) => (
