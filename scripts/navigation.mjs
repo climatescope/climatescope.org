@@ -70,7 +70,7 @@ const navigation = [
   {
     title: "Tools",
     path: "/tools",
-    links: tools.filter(d => d.slug !== "rank-over-time"),
+    links: tools,
   },
   {
     title: "About",
