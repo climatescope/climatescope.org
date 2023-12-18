@@ -27,6 +27,8 @@ export default function MarketLabel({ market }) {
     setSelectedMarket(selectedMarket === market.iso ? "" : market.iso)
   }
 
+  const hasAsterisk = market["2023"] && !market["2021"] && !market["2022"]
+
   return (
     <HStack
       h="1rem"
@@ -56,6 +58,7 @@ export default function MarketLabel({ market }) {
         textOverflow="ellipsis"
       >
         {market.geography || market.iso}
+        {hasAsterisk ? "*" : ""}
       </Box>
       <Box fontSize="xs" fontWeight={600} flex="none">
         {market.latestScoreValue.toLocaleString("en-us", {

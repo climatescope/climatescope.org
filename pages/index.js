@@ -1,5 +1,4 @@
-import { getServerData, getAllMDXSlugs, getMDXPage } from "@utils/api/server"
-// import getMarketCounts from "@utils/getMarketCounts"
+import { getServerData, getAllMDXPages } from "@utils/api/server"
 
 import SEO from "@components/SEO"
 import IndexPage from "@components/pages/IndexPage"
@@ -32,17 +31,7 @@ export default function IndexPageWrapper({
 }
 
 export async function getStaticProps() {
-  const allToolNames = (await getAllMDXSlugs("tools")) || []
-  const allTools = await Promise.all(
-    allToolNames.map((n) => {
-      return getMDXPage("tools", n)
-    })
-  ).then((d) =>
-    d.map((dd, i) => ({
-      ...dd.frontmatter,
-      slug: allToolNames[i] || "",
-    }))
-  )
+  const allTools = await getAllMDXPages("tools", { sortBy: "order" })
 
   const globeInsights = await getServerData(`/public/data/globe-insights.csv`)
   const miniGlobesDataRaw = await getServerData(

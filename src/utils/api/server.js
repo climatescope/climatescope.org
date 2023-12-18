@@ -1,6 +1,7 @@
 import fs from "fs/promises"
 import { join, extname } from "path"
 import shuffle from "lodash/shuffle"
+import _sortBy from "lodash/sortBy"
 import { csvParse } from "d3-dsv"
 import { serialize } from "next-mdx-remote/serialize"
 
@@ -62,11 +63,27 @@ export async function getMDXPage(dir = "", slug = "") {
   return source
 }
 
-export async function getAllMDXSlugs(dir = "") {
+export async function getAllMDXPages(dir = "", options = {}) {
+  const names = (await getAllMDXSlugs(dir)) || []
+  const allItems = await Promise.all(names.map((n) => getMDXPage(dir, n))).then(
+    (d) => d.map((dd, i) => ({ ...dd.frontmatter, slug: names[i] || "" }))
+  )
+  const sortByRaw = options.sortBy || ""
+  const reverseSort = sortByRaw[0] === "-"
+  const sortBy = reverseSort ? sortByRaw.slice(1) : sortByRaw
+  return sortBy
+    ? _sortBy(allItems, (o) =>
+        reverseSort
+          ? -parseInt(`${o.order || o[sortBy] || ""}`.split("-").join(""))
+          : parseInt(`${o.order || o[sortBy] || ""}`.split("-").join(""))
+      )
+    : allItems
+}
+
+export async function getAllMDXSlugs(dir = "", exclude = []) {
   const pages = await fs.readdir(join(process.cwd(), "content", dir))
   // Exclude pages not to be published
   // const exclude = ["rank-over-time"]
-  const exclude = []
   return pages
     .filter((d) => extname(d).includes("mdx"))
     .map((d) => d.split(extname(d))[0])

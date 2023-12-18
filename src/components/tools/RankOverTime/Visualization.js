@@ -1,5 +1,5 @@
 import { useMemo } from "react"
-import { SimpleGrid, Center, Stack, HStack, Box } from "@chakra-ui/layout"
+import { SimpleGrid, Center, Stack, HStack, Text, Box } from "@chakra-ui/layout"
 import _sortBy from "lodash/sortBy"
 import _groupBy from "lodash/groupBy"
 import { Select } from "@chakra-ui/select"
@@ -129,6 +129,11 @@ export default function RankingOverTime({ data, regions }) {
           ))}
         </Stack>
       </SimpleGrid>
+      <Text mt={5} fontSize="sm" fontWeight={600} color="gray.500">
+        {
+          "*Markets were added to the ranking in 2023, and therefore do not have scores and ranks for the previous years."
+        }
+      </Text>
     </Box>
   )
 }
