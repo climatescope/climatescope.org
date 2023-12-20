@@ -18,8 +18,8 @@ export default function RankingOverTime({ data, regions }) {
     (state) => state.setSelectedMarketGroup
   )
 
-  const years = useMemo(() => {
-    return [2021, 2022, 2023].map((year) => {
+  const { years, newMarkets } = useMemo(() => {
+    const yearsData = [2021, 2022, 2023].map((year) => {
       const filteredMarkets = data
         .map((d) => ({ ...d, rank: d[year] || 0 }))
         .filter(
@@ -34,6 +34,8 @@ export default function RankingOverTime({ data, regions }) {
       }))
       return { year, markets }
     })
+    const newMarkets = data.filter((d) => d.isNew)
+    return { years: yearsData, newMarkets }
   }, [selectedRegion, selectedMarketGroup])
 
   const handleRegionChange = (e) => {
@@ -129,10 +131,14 @@ export default function RankingOverTime({ data, regions }) {
           ))}
         </Stack>
       </SimpleGrid>
-      <Text mt={5} fontSize="sm" fontWeight={600} color="gray.500">
-        {
-          "*Markets were added to the ranking in 2023, and therefore do not have scores and ranks for the previous years."
-        }
+      <Text mt={5} fontSize="sm" lineHeight="short" fontWeight={600} color="gray.500">
+        {`*${newMarkets
+          .map(
+            (d, i) => (i === newMarkets.length - 1 ? " and " : "") + d.geography
+          )
+          .join(
+            ", "
+          )} were added to the Climatescope power ranking in 2023. They do not have scores and ranks for the previous years.`}
       </Text>
     </Box>
   )
