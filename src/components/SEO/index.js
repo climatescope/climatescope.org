@@ -2,6 +2,7 @@ import Head from "next/head"
 import getConfig from "next/config"
 import { useRouter } from "next/router"
 import { useEffect } from "react"
+import { parse as parsePath } from "path"
 
 const { publicRuntimeConfig } = getConfig()
 const siteUrl = publicRuntimeConfig.siteUrl
@@ -16,9 +17,17 @@ const SEO = ({
 }) => {
   const { basePath, asPath } = useRouter()
 
+  const parsedPath = parsePath(cover || "")
+  const hasSizeExtension = ["-sm", "-md", "-lg"].includes(
+    parsedPath.name.slice(-3)
+  )
+  const fixedCover = hasSizeExtension
+    ? cover
+    : parsedPath.name + "-lg" + parsedPath.ext
+
   const slugUrl =
     siteUrl + basePath + (asPath[0] === "/" ? asPath.slice(1) : asPath)
-  const coverImg = cover ? siteUrl + basePath + "images/" + cover : ""
+  const coverImg = fixedCover ? siteUrl + basePath + "images/" + fixedCover : ""
 
   const combinedTitle = title
     ? `Climatescope ${year} | ${title}`
