@@ -49,8 +49,8 @@ jobs:
         run: npm run export
         env:
           SITE_URL: https://www.global-climatescope.org/
-          MAILCHIMP_ADDRESS: ${{ secrets.MAILCHIMP_ADDRESS }}
-          MAPBOX_TOKEN: ${{ secrets.MB_TOKEN }}
+          NEXT_PUBLIC_MAILCHIMP_ADDRESS: ${{ secrets.NEXT_PUBLIC_MAILCHIMP_ADDRESS }}
+          NEXT_PUBLIC_MAPBOX_TOKEN: ${{ secrets.MB_TOKEN }}
 
   deploy:
     runs-on: ubuntu-latest
