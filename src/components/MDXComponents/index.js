@@ -16,6 +16,7 @@ import LineChart from "@/components/LineChart"
 import AreaChart from "@/components/AreaChart"
 import RegionalComparisonChart from "@/components/RegionalComparisonChart"
 import Image from "@/components/Image"
+import { prefixMarket } from "@/utils/marketsWithThe"
 
 function formatScore(score) {
   return score.toLocaleString("en-us", {
@@ -168,7 +169,7 @@ export const marketComponents = {
 
   GeneratedContentOverview: (props) => {
     const { frontmatter, data } = useMarketContext()
-    const { market, tradebloc } = frontmatter
+    const { iso, market, tradebloc } = frontmatter
 
     const latestScores = data.score.find((s) => s.year === 2024)
     const prevScores = data.score.find((s) => s.year === 2023)
@@ -178,11 +179,15 @@ export const marketComponents = {
       powerScore.tradebloc.value - prevPowerScore.tradebloc.value
     const rankChange = prevPowerScore.tradebloc.rank - powerScore.tradebloc.rank
 
+    const marketName = prefixMarket(iso, market)
+
     const paragraph1 = [
-      `${market} has a power score of ${formatScore(powerScore.global.value)}`,
+      `${
+        marketName[0].toUpperCase() + marketName.slice(1)
+      } has a power score of ${formatScore(powerScore.global.value)}`,
       `, which puts it at rank ${powerScore.tradebloc.rank} in the ${tradebloc.name} power ranking.`,
       rankChange
-        ? ` In comparison to 2023, ${market} has ${
+        ? ` In comparison to 2023, ${marketName} has ${
             rankChange > 0 ? "improved" : "dropped"
           } in the power rankings by ${Math.abs(rankChange)} place${
             Math.abs(rankChange) === 1 ? "" : "s"
@@ -195,7 +200,7 @@ export const marketComponents = {
     const paragraph2 = [
       `At ${formatScore(
         powerScore.global.value
-      )}, the power score of ${market} is better than the regional average of 1.88 in the ${
+      )}, the power score of ${marketName} is better than the regional average of 1.88 in the ${
         frontmatter.region.name
       } region and puts it at rank ${powerScore.region.rank} in the region.`,
     ].join("")
@@ -239,7 +244,7 @@ export const marketComponents = {
   },
   GeneratedContentPowerPolicy: (props) => {
     const { frontmatter, data } = useMarketContext()
-    const { market } = frontmatter
+    const { iso, market } = frontmatter
 
     const policiesGroupedByAnswer = _groupBy(data.policies, (o) => o.answer)
     const totalCount = data.policies.length
@@ -254,9 +259,13 @@ export const marketComponents = {
         }`
       : ""
 
+    const marketName = prefixMarket(iso, market)
+
     return (
       <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
-        <Text textStyle="articleBody">{`${market} implements policies in ${
+        <Text textStyle="articleBody">{`${
+          marketName[0].toUpperCase() + marketName.slice(1)
+        } implements policies in ${
           policiesGroupedByAnswer["Available"]?.length || 0
         }/${totalCount} power policy categories tracked by Climatescope${policiesListJoined}.`}</Text>
       </Box>
@@ -272,7 +281,7 @@ export const marketComponents = {
   },
   GeneratedContentPowerPricesAndCosts: (props) => {
     const { frontmatter, data } = useMarketContext()
-    const { market } = frontmatter
+    const { iso, market } = frontmatter
 
     const prices = data.electricityPrices
 
@@ -289,6 +298,8 @@ export const marketComponents = {
     const priceRange = _sortBy(averagePrice.data, (o) => o.y_val)
     const minPrice = priceRange[0]
     const maxPrice = priceRange.slice(-1)[0]
+
+    const marketName = prefixMarket(iso, market)
 
     const change = lastPrice.y_val - prevPrice.y_val
     const changeText = change
@@ -308,9 +319,9 @@ export const marketComponents = {
     return (
       <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
         <Text textStyle="articleBody">
-          {`The average electricity price in ${market} ${changeText}. Since ${
+          {`The average electricity price in ${marketName} ${changeText}. Since ${
             yearRange[0]
-          }, the average electricity price in ${market} has fluctuated between ${formatNumber(
+          }, the average electricity price in ${marketName} has fluctuated between ${formatNumber(
             minPrice.y_val
           )} ${averagePrice.units} (${minPrice.x_val}) and ${formatNumber(
             maxPrice.y_val
@@ -352,7 +363,7 @@ export const marketComponents = {
     )
     const c = getCapacityContent({
       data: { data: capacityData },
-      objective: { default: frontmatter.market },
+      objective: { default: prefixMarket(frontmatter.iso, frontmatter.market) },
     })
 
     return (
@@ -416,7 +427,7 @@ export const marketComponents = {
     )
     const c = getCapacityContent({
       data: { data: capacityData },
-      objective: { default: frontmatter.market },
+      objective: { default: prefixMarket(frontmatter.iso, frontmatter.market) },
       measure: "electricity generated",
     })
 
@@ -459,7 +470,7 @@ export const marketComponents = {
   },
   GeneratedContentInvestment: (props) => {
     const { frontmatter, data } = useMarketContext()
-    const { market } = frontmatter
+    const { iso, market } = frontmatter
 
     if (!data.investment) return null
 
@@ -478,11 +489,17 @@ export const marketComponents = {
       investmentData.slice(-1)[0].x_val,
     ]
 
-    const maxInvestment = _maxBy(investmentData, (o) => o.y_val)
-    const minInvestment = _minBy(investmentData, (o) => o.y_val)
+    const investmentWithValues = investmentData.filter((d) => d.y_val)
+
+    if (investmentWithValues?.length < 2) return null
+
+    const maxInvestment = _maxBy(investmentWithValues, (o) => o.y_val)
+    const minInvestment = _minBy(investmentWithValues, (o) => o.y_val)
+
+    const marketName = prefixMarket(iso, market)
 
     const content = [
-      `Investment in clean energy in ${market} was around $${latestData.y_val.toLocaleString(
+      `Investment in clean energy in ${marketName} was around $${latestData.y_val.toLocaleString(
         "en-us",
         { minimumFractionDigits: 2, maximumFractionDigits: 2 }
       )} million in ${latestData.x_val}, `,

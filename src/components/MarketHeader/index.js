@@ -48,7 +48,7 @@ export default function MarketHeader({ frontmatter, data, marketCount, bbox }) {
         <Box
           gridColumn={["1 / -1", null, null, "4 / -1"]}
           gridRow="1"
-          bg="gray.500"
+          bg="gray.100"
           alignSelf="stretch"
           h="90vh"
           minH="100%"
