@@ -43,7 +43,7 @@ export default function SiteFooter() {
             </HStack> */}
             <Newsletter gridColumn={["1 / -1", null, null, "span 4"]} />
             <Divider gridColumn="1 / -1" borderColor="gray.700" />
-            <Stack spacing={5} gridColumn="span 4">
+            <Stack spacing={5} gridColumn={["1 / -1", null, "span 4"]}>
               <Link href="/results" fontSize="xl" fontWeight={600}>
                 {"Results"}
               </Link>
@@ -54,7 +54,7 @@ export default function SiteFooter() {
                 {"Tools"}
               </Link>
             </Stack>
-            <Stack spacing={5} gridColumn="span 4">
+            <Stack spacing={5} gridColumn={["1 / -1", null, "span 4"]}>
               <Link href="/reports" fontSize="xl" fontWeight={600}>
                 {"Reports"}
               </Link>
@@ -69,7 +69,7 @@ export default function SiteFooter() {
               </Link>
             </Stack>
             <Divider gridColumn="1 / -1" borderColor="gray.700" />
-            <HStack spacing={5} gridColumn="1 / -1">
+            <HStack spacing={5} gridColumn="1 / -1" flexDirection={["column", null, "row"]}>
               <HStack spacing={5} flex={1}>
                 <Link
                   href="/privacy-policy"

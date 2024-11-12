@@ -167,8 +167,8 @@ export default function ETSTool() {
             <g stroke={colors.gray[200]} strokeWidth={0.5}>
               <line
                 vectorEffect="non-scaling-stroke"
-                x1={80}
-                x2={width - 80}
+                x1={120}
+                x2={width - 120}
                 y1={height / 2}
                 y2={height / 2}
               />
@@ -183,31 +183,47 @@ export default function ETSTool() {
 
             <g fontSize={8} fontWeight={600} fill={colors.gray[500]}>
               <g transform={`translate(${width / 2} 10)`}>
-                <line x1={0} x2={0} y1={-4} y2={-10} stroke={colors.gray[200]} />
+                <line
+                  x1={0}
+                  x2={0}
+                  y1={-4}
+                  y2={-10}
+                  stroke={colors.gray[200]}
+                />
                 {/* <path d="M-4,4L0,0L4,4M0,0L0,8" stroke="#000" fill="none" /> */}
                 <text textAnchor="middle" alignmentBaseline="hanging" y={1}>
-                  {"Stronger enabling environment"}
+                  {/* {"Lower Climatescope Fundamentals score"} */}
+                  {"Higher Climatescope Fundamentals score"}
                 </text>
               </g>
 
               <g transform={`translate(${width / 2} ${height - 10})`}>
                 <line x1={0} x2={0} y1={4} y2={10} stroke={colors.gray[200]} />
                 <text textAnchor="middle" alignmentBaseline="baseline" y={-1}>
-                  {"Weaker enabling environment"}
+                  {/* {"Weaker enabling environment"} */}
+                  {"Lower Climatescope Fundamentals score"}
                 </text>
               </g>
 
               <g transform={`translate(10 ${height / 2})`}>
-                <line x1={-4} x2={-10} y1={0} y2={0} stroke={colors.gray[200]} />
+                <line
+                  x1={-4}
+                  x2={-10}
+                  y1={0}
+                  y2={0}
+                  stroke={colors.gray[200]}
+                />
                 <text textAnchor="start" alignmentBaseline="central">
-                  {"Less experience"}
+                  {/* {"Less experience"} */}
+                  {"Lower 5-year investment"}
                 </text>
               </g>
 
               <g transform={`translate(${width - 10} ${height / 2})`}>
                 <line x1={4} x2={10} y1={0} y2={0} stroke={colors.gray[200]} />
                 <text textAnchor="end" alignmentBaseline="central">
-                  {"More experience"}
+                  {/* {"Higher 5-year investment"} */}
+                  {"Higher 5-year investment"}
                 </text>
               </g>
 
@@ -336,6 +352,8 @@ export default function ETSTool() {
           borderY="0.0625rem solid"
           borderColor="gray.200"
           py={5}
+          flexDirection={["column", null, "row"]}
+          alignItems={["flex-start", null, "center"]}
         >
           {regions.slice(1).map((r) => {
             return (

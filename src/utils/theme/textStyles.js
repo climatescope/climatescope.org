@@ -1,6 +1,6 @@
 export default {
   pageHeading: {
-    fontSize: "5xl",
+    fontSize: ["3xl", null, "5xl"],
     lineHeight: "short",
     fontWeight: 700,
   },

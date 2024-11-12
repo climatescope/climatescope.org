@@ -31,38 +31,19 @@ export default function TechnologiesCartogram() {
 
   const chartRef = useRef(null)
 
-  // const technologyColors = {
-  //   // "Solar": colors.indicators["Solar"],
-  //   "Solar PV": colors.indicators["Solar"],
-  //   // "Hydro": colors.indicators["Hydro"],
-  //   "Small Hydro": colors.indicators["Hydro"],
-  //   "Large Hydro": colors.indicators["Hydro"],
-  //   "Wind": colors.indicators["Wind"],
-  //   "Biomass": colors.indicators["Biomass"],
-  //   "Geothermal": colors.indicators["Geothermal"],
-  //   "Other - non fossil": colors.indicators["Other - non fossil"],
-  //   "Nuclear": colors.indicators["Nuclear"],
-  //   "Gas": colors.indicators["Gas"],
-  //   "Oil": colors.indicators["Oil"],
-  //   "Coal": colors.indicators["Coal"],
-  //   "Other - fossil": colors.indicators["Other - fossil"],
-  //   "None": colors.gray[50],
-  // }
-
   const technologyColors = {
-    "Biomass & Waste": colors.indicators["Biomass"],
+    "Biomass & Waste": colors.indicators["Biomass & Waste"],
     "Coal": colors.indicators["Coal"],
-    "Geothermal": colors.indicators["Geothermal"],
-    "Marine": colors.indicators["Hydro"],
-    "Natural Gas": colors.indicators["Gas"],
+    "Geothermal": colors.purple[500],
+    "Marine": colors.pink[500],
+    "Natural Gas": colors.indicators["Natural Gas"],
     "Nuclear": colors.indicators["Nuclear"],
     "Wind": colors.indicators["Wind"],
     "Oil & Diesel": colors.indicators["Oil"],
-    "Other - fossil": "",
-    "Small Hydro": colors.indicators["Hydro"],
-    "Solar PV": colors.indicators["Solar"],
-    // "Solar thermal": colors.gray[200],
-    "Solar thermal": colors.yellow[600],
+    "Other - fossil": colors.indicators["Other - fossil"],
+    "Small Hydro": colors.indicators["Small Hydro"],
+    "Solar PV": colors.indicators["PV"],
+    "Solar thermal": colors.indicators["Solar thermal"],
     "None": colors.gray[50],
   }
 

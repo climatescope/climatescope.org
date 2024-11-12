@@ -143,11 +143,11 @@ export default function ResultsList({ results }) {
           borderColor="gray.100"
           sx={{
             svg: { width: "100%", height: "auto" },
-            "> *:nth-child(3)": {
+            "> *:nth-of-type(3)": {
               display: ["none", null, null, null, "block"],
             },
-            "> *:nth-child(5)": { display: ["none", null, null, "block"] },
-            "> *:nth-child(6)": { display: ["none", null, "block"] },
+            "> *:nth-of-type(5)": { display: ["none", null, null, "block"] },
+            "> *:nth-of-type(6)": { display: ["none", null, "block"] },
           }}
         >
           <Text

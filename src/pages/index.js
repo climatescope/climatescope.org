@@ -191,7 +191,7 @@ function LatestResultsPreview({ data }) {
         <GlobePreview
           globeInsights={data}
           title="Highlights"
-          description="a new kind of insight into what is really driving the energy transition in selected markets, as well as the main opportunities for – and barriers to – a low-carbon economy."
+          description="Climatescope Postcards is a series designed to offer a new kind of insight into what is really driving the energy transition in selected markets, as well as the main opportunities for – and barriers to – a low-carbon economy."
           actionText="See all highlights"
           actionHref="/highlights"
         />
