@@ -1,166 +1,560 @@
-import { Box, Heading, Text, Stack } from "@chakra-ui/react"
+import { SimpleGrid, Heading, Stack, Text, Box } from "@chakra-ui/react"
+import _groupBy from "lodash/groupBy"
+import _sortBy from "lodash/sortBy"
+import _sumBy from "lodash/sumBy"
+import _maxBy from "lodash/maxBy"
+import _minBy from "lodash/minBy"
+import { basename } from "path"
 
-import { Link } from "@components/Link"
-import Image from "@components/Image"
+import { useMarketContext } from "@/utils/MarketContext"
+import CardTable from "@/components/CardTable"
+import { Link } from "@/components/Link"
+import BooleanChart from "./BooleanChart"
+import MultiItemChart from "./MultiItemChart"
+import getCapacityContent from "@/utils/content/getCapacityContent"
+import LineChart from "@/components/LineChart"
+import AreaChart from "@/components/AreaChart"
+import RegionalComparisonChart from "@/components/RegionalComparisonChart"
+import Image from "@/components/Image"
 
-const components = {
-  Image,
-  h1: (props) => {
-    return (
-      <Heading
-        as="h1"
-        w="100%"
-        fontSize={["3xl", null, "5xl"]}
-        maxW="container.sm"
-        sx={{
-          "h1 + p": {
-            fontSize: ["lg", null, "2xl"],
-            lineHeight: "short",
-            fontWeight: 600,
-          },
-        }}
-        {...props}
-      />
-    )
+function formatScore(score) {
+  return score.toLocaleString("en-us", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })
+}
+
+export const baseComponents = {
+  h1: (props) => (
+    <Heading
+      as="h1"
+      fontSize="2xl"
+      gridColumn={["1 / -1", null, null, "2 / -2"]}
+      {...props}
+    />
+  ),
+  h2: (props) => (
+    <Heading
+      as="h2"
+      textStyle="sectionHeading"
+      gridColumn={["1 / -1", null, null, "2 / -2"]}
+      {...props}
+    />
+  ),
+  h3: (props) => (
+    <Heading
+      as="h3"
+      fontSize="2xl"
+      gridColumn={["1 / -1", null, null, "2 / -2"]}
+      {...props}
+    />
+  ),
+  h4: (props) => (
+    <Heading
+      as="h4"
+      fontSize="2xl"
+      gridColumn={["1 / -1", null, null, "2 / -2"]}
+      {...props}
+    />
+  ),
+  h5: (props) => (
+    <Heading
+      as="h5"
+      fontSize="2xl"
+      gridColumn={["1 / -1", null, null, "2 / -2"]}
+      {...props}
+    />
+  ),
+  h6: (props) => (
+    <Heading
+      as="h6"
+      fontSize="2xl"
+      gridColumn={["1 / -1", null, null, "2 / -2"]}
+      {...props}
+    />
+  ),
+  p: (props) => (
+    <Text
+      textStyle="articleBody"
+      gridColumn={["1 / -1", null, null, "2 / -3"]}
+      {...props}
+    />
+  ),
+  ul: (props) => (
+    <Stack
+      as="ul"
+      gridColumn={["1 / -1", null, null, "2 / -3"]}
+      spacing={5}
+      {...props}
+    />
+  ),
+  li: (props) => (
+    <Text
+      as="li"
+      gridColumn={["1 / -1", null, null, "2 / -3"]}
+      textStyle="articleBody"
+      ml={5}
+      {...props}
+    />
+  ),
+  a: (props) => (
+    <Link
+      color="brand.600"
+      _hover={{ color: "brand.700", textDecoration: "underline" }}
+      _focusVisible={{
+        color: "brand.600",
+        outline: "0.125rem solid currentcolor",
+        outlineOffset: "0.125rem",
+      }}
+      {...props}
+    />
+  ),
+  img: (props) => {
+    const src = basename(props.src)
+    return <Image src={src} alt={props.alt} />
   },
-  h2: (props) => {
-    return (
-      <Heading
-        as="h2"
-        w="100%"
-        fontSize={["xl", null, "2xl", "3xl"]}
-        maxW="container.sm"
-        // pt={4}
-        {...props}
-      />
-    )
-  },
-  h3: (props) => {
-    return (
-      <Heading
-        as="h3"
-        w="100%"
-        fontSize={["xl", null, "2xl"]}
-        maxW="container.sm"
-        {...props}
-      />
-    )
-  },
-  h4: (props) => {
-    return (
-      <Heading
-        as="h4"
-        w="100%"
-        fontSize={["xl", null, "xl"]}
-        maxW="container.sm"
-        {...props}
-      />
-    )
-  },
-  a: (props) => {
-    return (
-      <Link
-        fontWeight={600}
-        textDecoration="underline"
-        _hover={{ color: "teal.500" }}
-        _active={{ color: "teal.500" }}
-        _focus={{ color: "teal.500" }}
-        {...props}
-      />
-    )
-  },
-  p: (props) => {
+}
+
+export const marketComponents = {
+  GeneratedOverviewText: (props) => {
+    const { frontmatter } = useMarketContext()
     return (
       <Text
-        as="p"
-        w="100%"
-        fontSize={["md", null, "xl"]}
-        maxW="container.sm"
-        sx={{
-          "code": {
-            display: "inline-block",
-            bg: "teal.100",
-            px: "0.25rem",
-            fontSize: "0.875em",
-          },
-          "a": {
-            color: "teal.700",
-            _hover: { textDecoration: "underline" },
-            _focus: { textDecoration: "underline" },
-          },
-        }}
+        gridColumn={["1 / -1", null, null, "2 / -2"]}
         {...props}
-      />
+      >{`This is a generated overview for ${frontmatter.title}.`}</Text>
     )
   },
-  pre: (props) => {
-    const cssClasses = props?.children?.props?.className || ""
-    const langClass = cssClasses
-      .split(" ")
-      .find((s) => s.trim().split("-")[0] === "language")
-    const lang = langClass.split("-")[1]
+  GeneratedPowerText: (props) => {
+    const { frontmatter } = useMarketContext()
     return (
-      <Box w="100%" maxW="container.sm">
-        <Text as="span" py="0.5rem" px="1rem" bg="gray.200" color="gray.500">
-          {lang}
-        </Text>
-        <Box
-          as="pre"
-          bg="gray.50"
-          p="1rem"
-          overflowX="scroll"
-          overflowY="hidden"
-          fontSize={["md", null, "lg"]}
-          lineHeight="1.5rem"
-          {...props}
+      <Text
+        gridColumn={["1 / -1", null, null, "2 / -2"]}
+        {...props}
+      >{`This is generated power text for ${frontmatter.title}.`}</Text>
+    )
+  },
+  GeneratedTransportText: (props) => {
+    const { frontmatter } = useMarketContext()
+    return (
+      <Text
+        gridColumn={["1 / -1", null, null, "2 / -2"]}
+        {...props}
+      >{`This is generated transport text for ${frontmatter.title}.`}</Text>
+    )
+  },
+  MarketHeader: (props) => {
+    return (
+      <Box gridColumn={["1 / -1", null, null, "2 / -2"]}>{"Market Header"}</Box>
+    )
+  },
+  CustomChart: (props) => {
+    const { frontmatter } = useMarketContext()
+    return (
+      <Box
+        bg="brand.50"
+        border="0.0625rem solid"
+        borderColor="brand.600"
+        color="brand.600"
+        p={10}
+        gridColumn={["1 / -1", null, null, "2 / -2"]}
+        fontSize="xl"
+        {...props}
+      >
+        {`Custom chart for ${frontmatter.title}!`}
+      </Box>
+    )
+  },
+
+  GeneratedContentOverview: (props) => {
+    const { frontmatter, data } = useMarketContext()
+    const { market, tradebloc } = frontmatter
+
+    const latestScores = data.score.find((s) => s.year === 2024)
+    const prevScores = data.score.find((s) => s.year === 2023)
+    const powerScore = latestScores.sectors.find((s) => s.id === "power")
+    const prevPowerScore = prevScores.sectors.find((s) => s.id === "power")
+    const scoreChange =
+      powerScore.tradebloc.value - prevPowerScore.tradebloc.value
+    const rankChange = prevPowerScore.tradebloc.rank - powerScore.tradebloc.rank
+
+    const paragraph1 = [
+      `${market} has a power score of ${formatScore(powerScore.global.value)}`,
+      `, which puts it at rank ${powerScore.tradebloc.rank} in the ${tradebloc.name} power ranking.`,
+      rankChange
+        ? ` In comparison to 2023, ${market} has ${
+            rankChange > 0 ? "improved" : "dropped"
+          } in the power rankings by ${Math.abs(rankChange)} place${
+            Math.abs(rankChange) === 1 ? "" : "s"
+          }, from rank ${prevPowerScore.tradebloc.rank}, to rank ${
+            powerScore.tradebloc.rank
+          }.`
+        : ``,
+    ].join("")
+
+    const paragraph2 = [
+      `At ${formatScore(
+        powerScore.global.value
+      )}, the power score of ${market} is better than the regional average of 1.88 in the ${
+        frontmatter.region.name
+      } region and puts it at rank ${powerScore.region.rank} in the region.`,
+    ].join("")
+
+    return (
+      <Stack gridColumn={["1 / -1", null, null, "2 / span 5"]} spacing={5}>
+        <Text textStyle="articleBody">{paragraph1}</Text>
+        <Text textStyle="articleBody">{paragraph2}</Text>
+      </Stack>
+    )
+  },
+  PowerScoreComparison: (props) => {
+    const { frontmatter, data } = useMarketContext()
+    const regionalData = data.regionalPowerScoreData
+    if (!regionalData) return null
+
+    const preparedData = {
+      score: {
+        average:
+          regionalData.reduce(
+            (acc, cur) => acc + (cur.regionalPowerScore || 0),
+            0
+          ) / regionalData.length,
+      },
+      items: regionalData.map((d) => ({
+        iso: d.iso,
+        name: d.market,
+        score: d.regionalPowerScore,
+      })),
+    }
+
+    return (
+      <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
+        <RegionalComparisonChart
+          title="Regional comparison chart"
+          data={preparedData}
+          market={frontmatter}
         />
       </Box>
     )
   },
-  ul: (props) => {
+  GeneratedContentPowerPolicy: (props) => {
+    const { frontmatter, data } = useMarketContext()
+    const { market } = frontmatter
+
+    const policiesGroupedByAnswer = _groupBy(data.policies, (o) => o.answer)
+    const totalCount = data.policies.length
+    // const totalCount = 9
+
+    const policiesList =
+      policiesGroupedByAnswer["Available"]?.map((d) => d.policy) || []
+
+    const policiesListJoined = policiesList.length
+      ? `, including ${policiesList.slice(0, -1).join(", ")}, and ${
+          policiesList.slice(-1)[0]
+        }`
+      : ""
+
     return (
-      <Stack
-        as="ul"
-        spacing={2}
-        w="100%"
-        maxW="container.sm"
-        pl={6}
-        fontSize={["md", null, "lg"]}
-        lineHeight="2rem"
-        {...props}
-      />
+      <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
+        <Text textStyle="articleBody">{`${market} implements policies in ${
+          policiesGroupedByAnswer["Available"]?.length || 0
+        }/${totalCount} power policy categories tracked by Climatescope${policiesListJoined}.`}</Text>
+      </Box>
     )
   },
-  ol: (props) => {
+  PowerPolicies: (props) => {
+    const { data } = useMarketContext()
     return (
-      <Stack
-        as="ol"
-        spacing={5}
-        w="100%"
-        maxW="container.sm"
-        pl={6}
-        fontSize={["md", null, "lg"]}
-        lineHeight="2rem"
-        {...props}
-      />
+      <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
+        <CardTable data={data.policies} sector="power" />
+      </Box>
     )
   },
-  blockquote: (props) => {
+  GeneratedContentPowerPricesAndCosts: (props) => {
+    const { frontmatter, data } = useMarketContext()
+    const { market } = frontmatter
+
+    const prices = data.electricityPrices
+
+    if (!prices.length) return null
+
+    const averagePrice = prices.find(
+      (s) => s.subindicator === "Average Electricity Price in USD"
+    )
+
+    const lastPrice = averagePrice.data.slice(-1)[0]
+    const prevPrice = averagePrice.data.slice(-2, -1)[0]
+    const yearRange = [averagePrice.data[0].x_val, lastPrice.x_val]
+
+    const priceRange = _sortBy(averagePrice.data, (o) => o.y_val)
+    const minPrice = priceRange[0]
+    const maxPrice = priceRange.slice(-1)[0]
+
+    const change = lastPrice.y_val - prevPrice.y_val
+    const changeText = change
+      ? change > 0
+        ? `has increased from ${formatNumber(prevPrice.y_val)} ${
+            averagePrice.units
+          } in ${prevPrice.x_val} to ${formatNumber(lastPrice.y_val)} ${
+            averagePrice.units
+          } in ${lastPrice.x_val}`
+        : `has dropped from ${formatNumber(prevPrice.y_val)} ${
+            averagePrice.units
+          } in ${prevPrice.x_val} to ${formatNumber(lastPrice.y_val)} ${
+            averagePrice.units
+          } in ${lastPrice.x_val}`
+      : `has remained the same since ${prevPrice.x_val}`
+
+    return (
+      <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
+        <Text textStyle="articleBody">
+          {`The average electricity price in ${market} ${changeText}. Since ${
+            yearRange[0]
+          }, the average electricity price in ${market} has fluctuated between ${formatNumber(
+            minPrice.y_val
+          )} ${averagePrice.units} (${minPrice.x_val}) and ${formatNumber(
+            maxPrice.y_val
+          )} ${averagePrice.units} (${maxPrice.x_val}).`}
+        </Text>
+      </Box>
+    )
+  },
+  ElectricityPricesChart: (props) => {
+    const { frontmatter, data } = useMarketContext()
+    const { market } = frontmatter
+    const prices = data.electricityPrices
+
+    if (!prices?.length) return null
+
+    const preparedData = {
+      indicator: `Electricity prices for ${market}`,
+      subindicators: prices.map((d) => {
+        return {
+          ...d,
+          data: d.data.map((dd) => ({ year: dd.x_val, value: dd.y_val })),
+        }
+      }),
+    }
+
     return (
       <Box
-        as="blockquote"
-        fontWeight={700}
-        borderLeft="0.5rem solid"
-        borderColor="teal.500"
-        pl={5}
-        py={2}
-        sx={{
-          "> p": { fontFamily: "heading", fontSize: "2xl", lineHeight: "base" },
-        }}
-        {...props}
-      />
+        gridColumn={["1 / -1", null, null, "2 / span 5"]}
+        aspectRatio={16 / 9}
+      >
+        <LineChart data={preparedData} />
+      </Box>
+    )
+  },
+  GeneratedContentCapacity: (props) => {
+    const { frontmatter, data } = useMarketContext()
+    const capacityData = data.capGen.filter(
+      (d) => d.measure === "installed capacity"
+    )
+    const c = getCapacityContent({
+      data: { data: capacityData },
+      objective: { default: frontmatter.market },
+    })
+
+    return (
+      <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
+        {c.text.map((t, i) => (
+          <Text key={i} textStyle="articleBody">
+            {t}
+          </Text>
+        ))}
+      </Box>
+    )
+  },
+  CapGenCharts: (props) => {
+    const { data } = useMarketContext()
+    const { capGen } = data
+
+    if (!capGen?.length) return null
+
+    const capacityData = capGen
+      .filter((d) => d.measure === "installed capacity")
+      .map((d) => ({
+        subindicator: d.subsector,
+        units: d.units,
+        data: d.data.map((dd) => ({ year: dd.x_val, value: dd.y_val })),
+      }))
+
+    const generationData = capGen
+      .filter((d) => d.measure === "electricity generation")
+      .map((d) => ({
+        subindicator: d.subsector,
+        units: d.units,
+        data: d.data.map((dd) => ({ year: dd.x_val, value: dd.y_val })),
+      }))
+
+    return (
+      <SimpleGrid gridColumn="1 / -1" columns={2} gridGap={10}>
+        <Box>
+          <AreaChart
+            data={{
+              indicator: "Installed capacity",
+              subindicators: capacityData,
+            }}
+          />
+        </Box>
+        <Box>
+          <AreaChart
+            data={{
+              indicator: "Electricity generation",
+              subindicators: generationData,
+            }}
+          />
+        </Box>
+      </SimpleGrid>
+    )
+  },
+
+  GeneratedContentElectricityGeneration: (props) => {
+    const { frontmatter, data } = useMarketContext()
+    const capacityData = data.capGen.filter(
+      (d) => d.measure === "electricity generation"
+    )
+    const c = getCapacityContent({
+      data: { data: capacityData },
+      objective: { default: frontmatter.market },
+      measure: "electricity generated",
+    })
+
+    return (
+      <Box gridColumn={["1 / -1", null, null, "2 /span 5"]}>
+        {c.text.map((t, i) => (
+          <Text key={i} textStyle="articleBody">
+            {t}
+          </Text>
+        ))}
+      </Box>
+    )
+  },
+
+  InvestmentChart: (props) => {
+    const { data, frontmatter } = useMarketContext()
+    const { market } = frontmatter
+
+    if (!data.investment) return null
+
+    const preparedData = {
+      indicator: `Investment for ${market}`,
+      subindicators: [
+        {
+          subindicator: data.investment.deal_type,
+          units: data.investment.unit,
+          data: data.investment.data.map((d) => ({
+            year: d.x_val,
+            value: d.y_val,
+          })),
+        },
+      ],
+    }
+
+    return (
+      <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
+        <LineChart data={preparedData} />
+      </Box>
+    )
+  },
+  GeneratedContentInvestment: (props) => {
+    const { frontmatter, data } = useMarketContext()
+    const { market } = frontmatter
+
+    if (!data.investment) return null
+
+    const investmentData = data.investment.data
+    const latestData = investmentData.slice(-1)[0]
+    const prevData = investmentData.slice(-2, -1)[0]
+
+    const change = latestData.y_val - prevData.y_val
+    const changeText = change > 0 ? `an increase` : "a decrease"
+
+    const changePercentage =
+      Math.round((100 / prevData.y_val) * Math.abs(change) * 100) / 100
+
+    const yearRange = [
+      investmentData[0].x_val,
+      investmentData.slice(-1)[0].x_val,
+    ]
+
+    const maxInvestment = _maxBy(investmentData, (o) => o.y_val)
+    const minInvestment = _minBy(investmentData, (o) => o.y_val)
+
+    const content = [
+      `Investment in clean energy in ${market} was around $${latestData.y_val.toLocaleString(
+        "en-us",
+        { minimumFractionDigits: 2, maximumFractionDigits: 2 }
+      )} million in ${latestData.x_val}, `,
+      `${changeText} of ${changePercentage}% from ${
+        prevData.x_val
+      } ($${prevData.y_val.toLocaleString("en-us", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      })} million). `,
+      `Between ${yearRange[0]} and ${
+        yearRange[1]
+      }, the highest investment in clean energy was in ${
+        maxInvestment.x_val
+      } at $${maxInvestment.y_val.toLocaleString("en-us", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      })} million, `,
+      `while the lowest was in ${
+        minInvestment.x_val
+      } with $${minInvestment.y_val.toLocaleString("en-us", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      })} million.`,
+    ].join("")
+
+    return (
+      <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
+        <Text textStyle="articleBody">{content}</Text>
+      </Box>
+    )
+  },
+  UtilityPrivatisationChart: (props) => {
+    const { data } = useMarketContext()
+    const indicator = data.indicators.find(
+      (d) => d.indicator === "Utility privatisation"
+    )
+    return (
+      <Box gridColumn={["1 / -1", null, null, "2 / span 5"]}>
+        <BooleanChart question={indicator.question} data={indicator} />
+      </Box>
+    )
+  },
+  DoingBusinessAndBarriersChart: (props) => {
+    const { data } = useMarketContext()
+    const indicators = data.indicators.filter(
+      (d) => d.sector === "power" && d.section === "Doing business and barriers"
+    )
+    return (
+      <Stack gridColumn={["1 / -1", null, null, "2 / span 5"]} spacing={5}>
+        {indicators.map(({ indicator, question, a1 }) => {
+          return (
+            <MultiItemChart
+              key={indicator}
+              title={indicator}
+              question={question}
+              a1={a1 === "yes"}
+            />
+          )
+        })}
+      </Stack>
     )
   },
 }
 
-export default components
+export default {
+  ...baseComponents,
+  ...marketComponents,
+}
+
+function formatNumber(n) {
+  return n.toLocaleString("en-ud", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  })
+}

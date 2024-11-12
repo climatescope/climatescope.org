@@ -1,6 +1,6 @@
 import { Input } from "@chakra-ui/react"
 
-const SignupInput = ({ size = "lg",  bg="white", ...restProps }) => {
+const SignupInput = ({ size = "lg", ...restProps }) => {
   return (
     <Input
       type="email"
@@ -8,14 +8,21 @@ const SignupInput = ({ size = "lg",  bg="white", ...restProps }) => {
       variant="outlined"
       h="3rem"
       placeholder="Your email address"
-      border="0.125rem solid"
-      borderColor="gray.100"
+      border="0.0625rem solid"
+      borderColor="gray.500"
       px={5}
-      bg={bg}
-      _placeholder={{ color: "gray.300" }}
-      _hover={{ bg: "white" }}
-      _focus={{ borderColor: "brand.500", boxShadow: "outline" }}
-      _active={{ bg: "white" }}
+      bg="black"
+      _placeholder={{ color: "gray.700" }}
+      _hover={{ bg: "gray.900" }}
+      _focus={{
+        bg: "black",
+        borderColor: "brand.500",
+        outline: "0.0625rem solid",
+        outlineColor: "brand.500",
+        outlineOffset: "0",
+        boxShadow: "none",
+      }}
+      _active={{ bg: "gray.800" }}
       {...restProps}
     />
   )

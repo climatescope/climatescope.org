@@ -1,312 +1,198 @@
-import { useEffect, useRef } from "react"
-import { HStack, Stack, Container, Box, Text, Divider } from "@chakra-ui/layout"
-import { VisuallyHidden } from "@chakra-ui/visually-hidden"
-import { useTheme } from "@chakra-ui/system"
-import { Button } from "@chakra-ui/button"
-import { Modal, ModalContent, ModalBody } from "@chakra-ui/modal"
-import { useDisclosure } from "@chakra-ui/hooks"
-import { useRouter } from "next/router"
+import {
+  Container,
+  Box,
+  HStack,
+  Stack,
+  Button,
+  Drawer,
+  DrawerHeader,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerBody,
+  DrawerOverlay,
+  DrawerFooter,
+  useDisclosure,
+  Divider,
+} from "@chakra-ui/react"
+import { ArrowForwardIcon } from "@chakra-ui/icons"
 
-import { Link, ButtonLink } from "@components/Link"
-import { DownloadIcon, CloseIcon, MenuIcon } from "@components/Icon"
-import SimpleGrid from "@components/SimpleGrid"
-import Logo from "./Logo"
+import { NavigationIcon, DownloadIcon } from "@/components/Icon"
+import { ButtonLink, Link } from "@/components/Link"
+import ClimatescopeLogo from "@/components/Logo"
 
-const includedLinks = ["Results", "Highlights", "Tools", "Sectors", "About"]
+const navigationItems = [
+  { href: "/results", label: "Results" },
+  { href: "/highlights", label: "Highlights" },
+  { href: "/tools", label: "Tools" },
+  { href: "/about", label: "About" },
+]
 
-const SiteHeader = ({ navigation }) => {
-  const { colors } = useTheme()
-  const initialRef = useRef()
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const { route } = useRouter()
-
-  const allNavigation = navigation.filter((d) =>
-    includedLinks.includes(d.title)
-  )
-
-  useEffect(() => {
-    onClose()
-  }, [route])
-
-  const aboutItems = [navigation.find((s) => s.path === "/about")]
-  const extendedNavigation = navigation.filter(
-    (d) => !["About", "Markets"].includes(d.title)
-  )
-
+export default function SiteHeader() {
   return (
-    <Box
-      style={{
-        background: route === "/blog" ? colors.brand[900] : "white",
-        color: route === "/blog" ? "white" : "inherit",
-      }}
-    >
+    <Box as="header">
       <Container>
-        <HStack
-          h={["4.5rem", null, null, "6rem"]}
-          justifyContent="space-between"
-        >
-          <HStack spacing={[8, null, null, null, 12]}>
-            <Logo />
-            <HStack
-              as="nav"
-              spacing={10}
-              flex="1"
-              display={["none", null, null, "flex"]}
-            >
-              {allNavigation.map(({ title, path }) => {
-                return (
-                  <Link key={title} href={path} variant="mainNav">
-                    {title}
-                  </Link>
-                )
-              })}
-            </HStack>
+        <HStack spacing={10} h={20} justifyContent="space-between">
+          <Link href="/" flex="none" color="black">
+            <ClimatescopeLogo />
+          </Link>
+          <HStack
+            flex={1}
+            spacing={2}
+            fontWeight={600}
+            display={["none", null, null, "flex"]}
+          >
+            {navigationItems.map((d) => {
+              return (
+                <ButtonLink
+                  key={d.href}
+                  href={d.href}
+                  variant="ghost"
+                  colorScheme="gray"
+                  borderRadius="sm"
+                  size="lg"
+                  px={3}
+                >
+                  {d.label}
+                </ButtonLink>
+              )
+            })}
           </HStack>
-
           <HStack spacing={3}>
-            {/* <ButtonLink
-              href="/downloads/climatescope-2022-report-en.pdf"
-              download="climatescope-2022-report.pdf"
+            <ButtonLink
+              href="/downloads/climatescope-emerging-markets-power-factbook-2024.pdf"
+              download="climatescope-emerging-markets-power-factbook-2024.pdf"
               target="_blank"
+              colorScheme="gray"
               size="lg"
-              flex="none"
-              rightIcon={<DownloadIcon strokeWidth={1.75} />}
-              colorScheme={route === "/blog" ? "white" : "brand"}
-              display={["none", "flex"]}
+              borderRadius="sm"
+              rightIcon={<DownloadIcon />}
+              pr={5}
+              display={["none", null, null, null, "inline-flex"]}
             >
               {"Download report"}
-            </ButtonLink> */}
-            <ReportDownloadDialog />
-            <Button
-              onClick={onOpen}
-              ref={initialRef}
-              w="3rem"
-              minW="2.5rem"
-              h="3rem"
-              colorScheme={route === "/blog" ? "white" : "gray"}
-              borderRadius="full"
-              p={0}
-            >
-              <VisuallyHidden>{"Open navigation"}</VisuallyHidden>
-              <MenuIcon size={20} />
-            </Button>
+            </ButtonLink>
+            <NavigationDrawer />
           </HStack>
         </HStack>
       </Container>
-
-      <Modal
-        isCentered
-        onClose={onClose}
-        isOpen={isOpen}
-        motionPreset="none"
-        initialFocusRef={initialRef}
-        finalRef={initialRef}
-      >
-        <ModalContent
-          my={0}
-          maxW="100%"
-          w="100%"
-          h="100vh"
-          position="fixed"
-          top="0"
-          bottom="0"
-          borderRadius="0"
-          bg="teal.900"
-          color="white"
-          style={{ overflowY: "scroll" }}
-        >
-          <ModalBody p={0}>
-            <Container top={0} position="sticky" bg="teal.900" zIndex={1}>
-              <HStack
-                h={["4.5rem", null, null, "6rem"]}
-                spacing={12}
-                justifyContent="space-between"
-              >
-                <Logo />
-
-                <HStack
-                  spacing={10}
-                  flex="1"
-                  display={["none", null, null, "flex"]}
-                >
-                  {allNavigation.map(({ title, path }) => {
-                    return (
-                      <Link key={title} href={path} variant="mainNav">
-                        {title}
-                      </Link>
-                    )
-                  })}
-                </HStack>
-                <Box>
-                  <Button
-                    onClick={onClose}
-                    ref={initialRef}
-                    w="3rem"
-                    minW="2.5rem"
-                    p={0}
-                    h="3rem"
-                    colorScheme="whiteAlpha"
-                    borderRadius="full"
-                  >
-                    <VisuallyHidden>{"Close navigation"}</VisuallyHidden>
-                    <CloseIcon size={20} />
-                  </Button>
-                </Box>
-              </HStack>
-            </Container>
-
-            <Container>
-              <SimpleGrid columns={[1, null, null, 8]} py={10}>
-                <Stack spacing={[5, null, 10]} gridColumn="span 2">
-                  <Stack flex="1" spacing={[5, null, 10]}>
-                    <Text color="teal.100" fontSize={["md", null, "lg"]}>
-                      {
-                        "Climatescope is a snapshot of where clean energy policy and finance stand today, and a guide to what can happen in the future."
-                      }
-                    </Text>
-                    <ButtonLink
-                      href="/downloads/climatescope-2023-report-en.pdf"
-                      download="climatescope-2023-report.pdf"
-                      target="_blank"
-                      size="lg"
-                      flex="none"
-                      rightIcon={<DownloadIcon strokeWidth={1.75} />}
-                      variant="outline"
-                      colorScheme="white"
-                      display={["none", "flex"]}
-                    >
-                      {"Download report"}
-                    </ButtonLink>
-                  </Stack>
-                  {aboutItems.map((navItem) => {
-                    return (
-                      <Stack spacing={[5, null, 10]} key={navItem.title}>
-                        <Link
-                          href={navItem.path}
-                          fontWeight={700}
-                          fontSize={["xl", null, "3xl"]}
-                          lineHeight="shorter"
-                          color="teal.100"
-                        >
-                          {navItem.title}
-                        </Link>
-                        {navItem.links.length && (
-                          <Stack spacing={3}>
-                            {navItem.links.map((d) => {
-                              return (
-                                <Link
-                                  key={d.title}
-                                  href={d.path}
-                                  fontSize={["md", null, "xl"]}
-                                  lineHeight="short"
-                                  color="teal.100"
-                                >
-                                  {d.title}
-                                </Link>
-                              )
-                            })}
-                          </Stack>
-                        )}
-                        <Divider borderColor="gray.700" />
-                      </Stack>
-                    )
-                  })}
-                </Stack>
-                <Stack spacing={[5, null, 10]} gridColumn="span 3">
-                  {extendedNavigation.slice(0, 3).map((navItem) => {
-                    return (
-                      <Stack spacing={[5, null, 10]} key={navItem.title}>
-                        <Link
-                          href={navItem.path}
-                          fontWeight={700}
-                          fontSize={["xl", null, "3xl"]}
-                          lineHeight="shorter"
-                        >
-                          {navItem.title}
-                        </Link>
-                        {navItem.links.length && (
-                          <Stack spacing={3}>
-                            {navItem.links.map((d) => {
-                              return (
-                                <Box key={d.title}>
-                                  <Link
-                                    href={d.path}
-                                    fontSize={["md", null, "xl"]}
-                                    lineHeight="short"
-                                  >
-                                    {d.title}
-                                  </Link>
-                                </Box>
-                              )
-                            })}
-                          </Stack>
-                        )}
-                        <Divider borderColor="gray.700" />
-                      </Stack>
-                    )
-                  })}
-                </Stack>
-                <Stack spacing={[5, null, 10]} gridColumn="span 3">
-                  {extendedNavigation.slice(3).map((navItem) => {
-                    return (
-                      <Stack spacing={[5, null, 10]} key={navItem.title}>
-                        <Link
-                          href={navItem.path}
-                          fontWeight={700}
-                          fontSize={["xl", null, "3xl"]}
-                          lineHeight="shorter"
-                        >
-                          {navItem.title}
-                        </Link>
-                        {navItem.links.length && (
-                          <Stack spacing={3}>
-                            {navItem.links.map((d) => {
-                              return (
-                                <Link
-                                  key={d.title}
-                                  href={d.path}
-                                  fontSize={["md", null, "xl"]}
-                                  lineHeight="short"
-                                >
-                                  {d.title}
-                                </Link>
-                              )
-                            })}
-                          </Stack>
-                        )}
-                        <Divider borderColor="gray.700" />
-                      </Stack>
-                    )
-                  })}
-                </Stack>
-              </SimpleGrid>
-            </Container>
-          </ModalBody>
-        </ModalContent>
-      </Modal>
     </Box>
   )
 }
 
-function ReportDownloadDialog() {
-  const { route } = useRouter()
+function NavigationDrawer() {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
+  const navigationItems = [
+    { href: "/", label: "Home" },
+    { href: "/results", label: "Results" },
+    { href: "/highlights", label: "Highlights" },
+    { href: "/reports", label: "Reports" },
+    { href: "/tools", label: "Tools" },
+    {},
+    // { href: "/markets", label: "Markets" },
+    // { href: "/blog", label: "Blog" },
+    // {},
+    { href: "/about", label: "About Climatescope" },
+    { href: "/about/methodology", label: "Methodology" },
+    { href: "/about/license", label: "License" },
+    { href: "/about/contact", label: "Contact" },
+  ].map((d, i) => ({ key: i + 1, ...d }))
+
   return (
     <>
       <Button
-        as={Link}
-        href="/downloads/climatescope-2023-report-en.pdf"
-        // download="climatescope-2023-report.pdf"
-        target="_blank"
+        colorScheme="gray"
         size="lg"
-        flex="none"
-        rightIcon={<DownloadIcon strokeWidth={1.75} />}
-        colorScheme={route === "/blog" ? "white" : "brand"}
-        display={["none", "flex"]}
+        borderRadius="sm"
+        rightIcon={<NavigationIcon />}
+        pr={5}
+        onClick={onOpen}
       >
-        {"Download report"}
+        {"Menu"}
       </Button>
+      <Drawer isOpen={isOpen} onClose={onClose} size="sm">
+        <DrawerOverlay />
+        <DrawerContent bg="black" color="white">
+          <DrawerHeader
+            minH="5.0625rem"
+            borderBottom="0.0625rem solid"
+            borderColor="gray.700"
+          >
+            <DrawerCloseButton
+              size="lg"
+              borderRadius="full"
+              top={5}
+              _focusVisible={{
+                outline: "0.125rem solid",
+                outlineColor: "white",
+                bg: "gray.800",
+              }}
+            />
+          </DrawerHeader>
+          <DrawerBody px={0} py={0}>
+            <Stack spacing={0} py={5}>
+              {navigationItems.map((item) => {
+                return item.href ? (
+                  <ButtonLink
+                    key={item.key}
+                    href={item.href}
+                    colorScheme="gray"
+                    color="white"
+                    _hover={{
+                      bg: "gray.800",
+                      svg: { opacity: 1, transform: "translateX(0rem)" },
+                    }}
+                    _focusVisible={{
+                      bg: "gray.800",
+                      svg: { opacity: 1, transform: "translateX(0rem)" },
+                    }}
+                    _active={{
+                      bg: "gray.700",
+                      svg: { opacity: 1, transform: "translateX(0rem)" },
+                    }}
+                    variant="ghost"
+                    justifyContent="space-between"
+                    borderRadius={0}
+                    onClick={onClose}
+                    size="lg"
+                    rightIcon={<ArrowForwardIcon w="1.5rem" h="1.5rem" />}
+                    sx={{
+                      svg: {
+                        opacity: 0,
+                        transform: "translateX(-0.5rem)",
+                        transition: "all 0.3s",
+                      },
+                    }}
+                  >
+                    {item.label}
+                  </ButtonLink>
+                ) : (
+                  <Divider
+                    key={item.key}
+                    borderColor="gray.700"
+                    opacity={1}
+                    my={5}
+                  />
+                )
+              })}
+            </Stack>
+          </DrawerBody>
+          <DrawerFooter borderTop="0.0625rem solid" borderColor="gray.700">
+            <ButtonLink
+              href="/downloads/climatescope-emerging-markets-power-factbook-2024.pdf"
+              download="climatescope-emerging-markets-power-factbook-2024.pdf"
+              target="_blank"
+              colorScheme="brand"
+              size="lg"
+              borderRadius="sm"
+              rightIcon={<DownloadIcon />}
+              w="100%"
+            >
+              {"Download report"}
+            </ButtonLink>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
     </>
   )
 }
-
-export default SiteHeader

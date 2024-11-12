@@ -1,5 +1,5 @@
 import { Select } from "@chakra-ui/react"
-import { ChevronDown } from "@components/Icon"
+import { ChevronDownIcon } from "@chakra-ui/icons"
 
 const roleItems = [
   { value: "1", label: "Government" },
@@ -11,24 +11,26 @@ const roleItems = [
   { value: "64", label: "Other" },
 ]
 
-const OrganizationDropdown = ({
-  bg = "white",
-  value = "",
-  onChange,
-  ...restProps
-}) => {
+const OrganizationDropdown = ({ value = "", onChange, ...restProps }) => {
   return (
     <Select
       name="Role"
       placeholder="Select a role"
       h="3rem"
-      icon={<ChevronDown />}
-      border="0.125rem solid"
-      borderColor="gray.100"
-      bg={bg}
-      _hover={{ bg: "white" }}
-      _focus={{ borderColor: "brand.500", boxShadow: "outline" }}
-      _active={{ bg: "white" }}
+      icon={<ChevronDownIcon />}
+      border="0.0625rem solid"
+      borderColor="gray.500"
+      bg="black"
+      _hover={{ bg: "gray.900" }}
+      _focus={{
+        bg: "transparent",
+        borderColor: "brand.500",
+        boxShadow: "none",
+        outline: "0.0625rem solid",
+        outlineColor: "brand.500",
+        outlineOffset: "0",
+      }}
+      _active={{ bg: "gray.800" }}
       value={value}
       isRequired
       onChange={(e) => {

@@ -1,107 +1,97 @@
-import { extendTheme, withDefaultColorScheme } from "@chakra-ui/theme-utils"
-
-import themeColors from "./colors"
-import globalStyles from "./globalStyles"
-
 import {
-  headingTheme,
-  buttonTheme,
-  containerTheme,
-  linkTheme,
-  tabsTheme,
-  textTheme,
-  selectTheme,
-} from "./components"
+  extendTheme,
+  withDefaultColorScheme,
+  // withDefaultVariant,
+  // theme as baseTheme,
+} from "@chakra-ui/react"
+import localFont from "next/font/local"
 
-export const colors = themeColors
+import colors from "./colors"
+import components from "./components"
+import textStyles from "./textStyles"
 
-export const theme = extendTheme(
+const avenirSans = localFont({
+  display: "swap",
+  src: [
+    {
+      path: "../../pages/fonts/bb-avenir-regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../pages/fonts/bb-avenir-demi.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../pages/fonts/bb-avenir-bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-bb-avenir",
+  fallback: ["system-ui", "sans-serif"],
+})
+
+export default extendTheme(
   {
-    config: {
-      cssVarPrefix: "",
-    },
     styles: {
-      global: globalStyles,
-    },
-    fonts: {
-      body: `"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`,
-      heading: `"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`,
-    },
-    fontSizes: {
-      xs: "0.75rem",
-      sm: "0.875rem",
-      md: "1rem",
-      lg: "1.125rem",
-      xl: "1.25rem",
-      "2xl": "1.5rem",
-      "3xl": "1.875rem",
-      "4xl": "2.25rem",
-      "5xl": "3rem",
-      "6xl": "3.75rem",
-      "7xl": "4.5rem",
-      "8xl": "6rem",
-      "9xl": "8rem",
-    },
-    lineHeights: {
-      shorter: "calc(1em + 0.3125rem)",
-      short: "calc(1em + 0.625rem)",
-      base: "calc(1em + 0.75rem)",
-      tall: "calc(1em + 1rem)",
-      taller: "calc(1em + 1.25rem)",
-    },
-    letterSpacings: {
-      tighter: "-0.05em",
-      tight: "-0.025em",
-      normal: "0",
-      wide: "0.025em",
-      wider: "0.05em",
-      widest: "0.1em",
-    },
-    colors,
-    space: {
-      "2xs": "0.25rem",
-      xs: "0.5rem",
-      sm: "0.75rem",
-      md: "1rem",
-      lg: "1.25rem",
-      xl: "1.5rem",
-      "2xl": "2.5rem",
-      "3xl": "3rem",
-      "4xl": "4rem",
-      "5xl": "5rem",
-      "6xl": "6rem",
-      "7xl": "7rem",
-      "8xl": "8rem",
+      global: {
+        body: {
+          letterSpacing: "tight",
+        },
+        a: {
+          _focusVisible: {
+            outline: "0.125rem solid currentcolor",
+            outlineOffset: "0.125rem",
+            boxShadow: "none !important",
+          },
+        },
+      },
     },
     sizes: {
       container: {
-        sm: "45rem",
-        md: "65rem",
-        lg: "75rem",
-        xl: "95rem",
+        "2xl": "90rem",
       },
+    },
+    letterSpacings: {
+      normal: "0",
+      tight: "-0.0125em",
+      tighter: "-0.025em",
+      wide: "0.0125em",
+      wider: "0.025em",
+      widest: "0.5em",
     },
     radii: {
       sm: "0.125rem",
-      md: "0.25rem",
-      lg: "0.5rem",
+      md: "0.125rem",
+      lg: "0.125rem",
     },
-    breakpoints: {
-      sm: "30.0625em",
-      md: "48.0625em",
-      lg: "62em",
-      xl: "80em",
-      "2xl": "96em",
+    colors,
+    fonts: {
+      body: avenirSans.style.fontFamily,
+      heading: avenirSans.style.fontFamily,
     },
-    components: {
-      Button: buttonTheme,
-      Container: containerTheme,
-      Link: linkTheme,
-      Heading: headingTheme,
-      Tabs: tabsTheme,
-      Text: textTheme,
-      Select: selectTheme,
+    textStyles,
+    lineHeights: {
+      taller: "calc(1em + 0.75rem)",
+      tall: "calc(1em + 0.625rem)",
+      base: "calc(1em + 0.5rem)",
+      short: "calc(1em + 0.375rem)",
+      shorter: "calc(1em + 0.25rem)",
     },
+    components,
   },
-  withDefaultColorScheme({ colorScheme: "brand" })
+  withDefaultColorScheme({
+    colorScheme: "brand",
+    // components: ["Button", "Badge"],
+  }),
+  withDefaultColorScheme({
+    colorScheme: "gray",
+    components: ["Tag"],
+  })
+  // withDefaultVariant({
+  //   variant: "solid",
+  //   // components: ["Input", "NumberInput", "PinInput"],
+  // })
 )

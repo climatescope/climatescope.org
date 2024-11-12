@@ -75,8 +75,8 @@ const addToMailchimp = function addToMailchimp(
     })
   }
 
-  let endpoint = process.env.MAILCHIMP_ADDRESS // eslint-disable-line no-undef
-  const timeout = process.env.MAILCHIMP_TIMEOUT // eslint-disable-line no-undef
+  let endpoint = process.env.NEXT_PUBLIC_MAILCHIMP_ADDRESS // eslint-disable-line no-undef
+  const timeout = process.env.NEXT_PUBLIC_MAILCHIMP_TIMEOUT || 3500 // eslint-disable-line no-undef
 
   // The following tests for whether you passed in a `fields` object. If
   // there are only two params and the second is a string, then we can safely

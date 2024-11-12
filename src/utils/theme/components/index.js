@@ -1,7 +1,28 @@
-export { default as headingTheme } from "./headingTheme"
-export { default as buttonTheme } from "./buttonTheme"
-export { default as containerTheme } from "./containerTheme"
-export { default as linkTheme } from "./linkTheme"
-export { default as tabsTheme } from "./tabsTheme"
-export { default as textTheme } from "./textTheme"
-export { default as selectTheme } from "./selectTheme"
+// import { theme } from "@chakra-ui/react"
+
+import accordionTheme from "./accordionTheme"
+import buttonTheme from "./buttonTheme"
+import headingTheme from "./headingTheme"
+import tagTheme from "./tagTheme"
+import tabsTheme from "./tabsTheme"
+import containerTheme from "./containerTheme"
+import selectTheme from "./selectTheme"
+import dividerTheme from "./dividerTheme"
+import drawerTheme from "./drawerTheme"
+// import menuTheme from "./menuTheme"
+
+// console.log(theme.components.Drawer)
+// console.log(theme.components.Select.baseStyle(theme.components.Select.defaultProps))
+
+export default {
+  Accordion: accordionTheme,
+  Button: buttonTheme,
+  Heading: headingTheme,
+  Tag: tagTheme,
+  Container: containerTheme,
+  Tabs: tabsTheme,
+  Select: selectTheme,
+  Divider: dividerTheme,
+  Drawer: drawerTheme,
+  // Menu: menuTheme,
+}
