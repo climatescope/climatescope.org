@@ -30,7 +30,9 @@ const CardTable = ({ data, sector, compact }) => {
 
   return (
     <Stack spacing={6}>
-      <Heading fontSize="xl">{`${sector} policies`}</Heading>
+      <Heading fontSize="xl">{`${
+        sector[0].toUpperCase() + sector.slice(1)
+      } policies`}</Heading>
       <SimpleGrid
         columns={compact ? 1 : [1, 2, null, 3]}
         gridColumnGap={5}

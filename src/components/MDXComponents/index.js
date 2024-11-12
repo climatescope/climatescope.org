@@ -197,10 +197,36 @@ export const marketComponents = {
         : ``,
     ].join("")
 
+    const regionalData = data.regionalPowerScoreData
+
+    if (!regionalData)
+      return (
+        <Stack gridColumn={["1 / -1", null, null, "2 / span 5"]} spacing={5}>
+          <Text textStyle="articleBody">{paragraph1}</Text>
+        </Stack>
+      )
+
+    const regionalAverageScore =
+      Math.round(
+        (regionalData.reduce(
+          (acc, cur) => acc + (cur.regionalPowerScore || 0),
+          0
+        ) /
+          regionalData.length) *
+          100
+      ) / 100
+
+    const word =
+      powerScore.global.value > regionalAverageScore
+        ? "better than"
+        : powerScore.global.value === regionalAverageScore
+        ? "the same as"
+        : "worse than"
+
     const paragraph2 = [
       `At ${formatScore(
         powerScore.global.value
-      )}, the power score of ${marketName} is better than the regional average of 1.88 in the ${
+      )}, the power score of ${marketName} is ${word} than the regional average of ${regionalAverageScore} in the ${
         frontmatter.region.name
       } region and puts it at rank ${powerScore.region.rank} in the region.`,
     ].join("")
