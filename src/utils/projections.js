@@ -20,7 +20,7 @@ export const projections = [
     name: "albers",
     center: [-95, 36.75],
     parallels: [27.25, 46.25],
-    regions: [],
+    regions: ["northamer"],
     countries: ["us"],
   },
   {

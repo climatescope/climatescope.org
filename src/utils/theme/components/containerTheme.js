@@ -1,10 +1,6 @@
-const containerTheme = {
+export default {
   baseStyle: {
-    maxW: "container.xl",
-    mx: "auto",
-    px: ["1rem", "1.5rem", "2.5rem", null, "5rem"],
-    w: "100%",
+    maxW: "container.2xl",
+    px: 10,
   },
 }
-
-export default containerTheme

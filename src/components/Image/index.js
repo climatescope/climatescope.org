@@ -1,25 +1,25 @@
-import getConfig from "next/config"
-import { AspectRatio, Box, Text } from "@chakra-ui/layout"
-import { useTheme } from "@chakra-ui/system"
-import { imageTypes } from "../../../images.config"
+import { AspectRatio, Box, useTheme } from "@chakra-ui/react"
 
-const { publicRuntimeConfig } = getConfig()
-const basePath = publicRuntimeConfig.basePath
+// Set image sizes here
+// The "ending" is used to add a suffix to the image
+// and to reference it in the imageTypes "sizes" array
+import { imageTypes } from "./imageConfig"
 
-const Image = ({
+export default function Image({
   src = "cover.jpg",
   type = "default",
-  ratio = 3 / 2,
+  ratio,
   alt = "",
   sizes,
-  bg = "white",
   breakpoints,
-  caption,
-  captionSize = "md",
-  captionProps = {},
+  subFolder = "",
+  width = "100%",
+  height = "auto",
+  objectFit = "cover",
   ...restProps
-}) => {
+}) {
   const theme = useTheme()
+
   const internalSizes = sizes || imageTypes[type].sizes || []
 
   const internalBreakpoints =
@@ -31,10 +31,6 @@ const Image = ({
 
   const [name, suffix] = src.split(".")
 
-  // Replace spaces with underscores to prevent any URI encoding issues
-  // with responsive images (see scripts/images.js for build step)
-  const fixedName = name.split(" ").join("_")
-
   const images = internalSizes.reduce((acc, cur, i) => {
     if (!cur) return acc
     const bp = internalBreakpoints[i - 1] || (!i ? "base" : null)
@@ -43,52 +39,53 @@ const Image = ({
       ...acc,
       {
         bp,
-        src: `${basePath}/images/${fixedName}-${cur}.${suffix}`,
+        src: `/images${
+          subFolder ? `/${subFolder}/` : "/"
+        }${name}-${cur}.${suffix}`,
         ending: cur,
       },
     ]
   }, [])
 
-  // const baseImage = images[0]
   const sources = images.slice(1).sort((a, b) => b.bp - a.bp)
 
-  return (
-    <Box as="figure" {...restProps}>
-      <AspectRatio ratio={ratio} bg={bg}>
-        <Box as="picture">
-          {sources.length
-            ? sources.map(({ bp, src }, i) => {
-                return (
-                  <source
-                    key={bp}
-                    media={`(min-width: ${bp}px)`}
-                    srcSet={src}
-                  />
-                )
-              })
-            : null}
-          <img
-            src={images[0].src}
-            alt={alt}
-            style={{ width: "100%", height: "auto" }}
-          />
-        </Box>
-      </AspectRatio>
-      {caption && (
-        <Text
-          as="figcaption"
-          color="gray.500"
-          mt={4}
-          fontSize={captionSize}
-          lineHeight="short"
-          display="block"
-          {...captionProps}
-        >
-          {caption}
-        </Text>
-      )}
+  return !ratio ? (
+    <Box as="span" {...restProps}>
+      <Box as="picture">
+        {sources.length
+          ? sources.map(({ bp, src }, i) => {
+              return (
+                <source key={bp} media={`(min-width: ${bp}px)`} srcSet={src} />
+              )
+            })
+          : null}
+        <Box
+          as="img"
+          src={images[0].src}
+          alt={alt}
+          style={{ width, height }}
+          objectFit={objectFit}
+        />
+      </Box>
     </Box>
+  ) : (
+    <AspectRatio as="span" ratio={ratio} {...restProps}>
+      <Box as="picture">
+        {sources.length
+          ? sources.map(({ bp, src }, i) => {
+              return (
+                <source key={bp} media={`(min-width: ${bp}px)`} srcSet={src} />
+              )
+            })
+          : null}
+        <Box
+          as="img"
+          src={images[0].src}
+          alt={alt}
+          style={{ width: "100%", height: "100%" }}
+          objectFit={objectFit}
+        />
+      </Box>
+    </AspectRatio>
   )
 }
-
-export default Image

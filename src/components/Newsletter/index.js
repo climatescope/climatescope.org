@@ -1,72 +1,29 @@
-import { useState, useRef } from "react"
 import { Box, Text, Stack, Checkbox } from "@chakra-ui/react"
 
-import { Link } from "@components/Link"
-import NewsletterSignup from "@components/Newsletter/NewsletterSignup"
-import SignupInput from "@components/Newsletter/SignupInput"
-import SignupButton from "@components/Newsletter/SignupButton"
-import OrganizationDropdown from "@components/Newsletter/OrganizationDropdown"
-import addToMailchimp from "@components/Newsletter/addToMailchimp"
+import { Link } from "@/components/Link"
+import NewsletterSignup from "@/components/Newsletter/NewsletterSignup"
+import SignupInput from "@/components/Newsletter/SignupInput"
+import SignupButton from "@/components/Newsletter/SignupButton"
+import OrganizationDropdown from "@/components/Newsletter/OrganizationDropdown"
+import { useNewsletter } from "@/components/Newsletter/useNewsletter"
 
-const Newsletter = () => {
-  const checkboxRef = useRef()
-  const [GDPRConfirmation, setGDPRConfirmation] = useState(false)
-  const [email, setEmail] = useState("")
-  const [message, setMessage] = useState("")
-  const [hasError, setError] = useState(false)
-  const [organization, setOrganization] = useState("")
-
-  const handleSubmit = (evt) => {
-    evt.preventDefault()
-    if (!GDPRConfirmation) {
-      if (email && organization) {
-        setError(true)
-        setMessage("Please tick the checkbox to proceed.")
-        checkboxRef?.current?.focus()
-        return
-      } else {
-        setError(true)
-        if (email && !organization) {
-          setMessage("Type in your email address")
-          return
-        } else if (!email && organization) {
-          setMessage("Select a role")
-          return
-        } else if (!email && !organization) {
-          setMessage("Type in your email address and select a role")
-          return
-        }
-      }
-    }
-
-    addToMailchimp(email, { "group[282221]": `${organization || 64}` })
-      .then(({ msg, result }) => {
-        if (result !== "success") {
-          throw msg
-        } else {
-          setError(false)
-          setMessage(msg)
-        }
-      })
-      .catch((err) => {
-        setError(true)
-        setMessage(err)
-      })
-  }
-
-  const handleChange = (evt) => {
-    setEmail(evt.target.value)
-  }
-
-  const handleOptIn = (evt) => {
-    setGDPRConfirmation(evt.target.checked)
-  }
+const Newsletter = (props) => {
+  const {
+    onChange,
+    onOptIn,
+    onSubmit,
+    message,
+    hasError,
+    organization,
+    setOrganization,
+    checkboxRef,
+  } = useNewsletter()
 
   return (
-    <Box>
+    <Box {...props}>
       <Stack spacing="1.25rem">
-        <NewsletterSignup onSubmit={handleSubmit}>
-          <SignupInput isRequired onChange={handleChange} />
+        <NewsletterSignup onSubmit={onSubmit}>
+          <SignupInput isRequired onChange={onChange} />
           <OrganizationDropdown
             value={organization}
             onChange={setOrganization}
@@ -80,9 +37,19 @@ const Newsletter = () => {
           size="md"
           alignItems="flex-start"
           spacing="0.8125rem"
-          onChange={handleOptIn}
+          onChange={onOptIn}
+          sx={{
+            "svg": { color: "brand.1000" },
+            "input:focus + span": {
+              borderColor: "brand.500",
+              boxShadow: "none",
+              outline: "0.125rem solid",
+              outlineColor: "brand.500",
+              outlineOffset: "0.125rem",
+            },
+          }}
         >
-          <Text mt="-0.3125rem" lineHeight="short" maxW="30rem">
+          <Text mt="-0.125rem" lineHeight="short" maxW="30rem">
             {"By submitting my information, I agree to the "}
             <Link
               href="https://www.bloomberg.com/notices/privacy/"

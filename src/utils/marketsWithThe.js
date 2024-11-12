@@ -1,4 +1,4 @@
-export default [
+const marketsWithThe = [
   "bs",
   "ky",
   "cf",
@@ -23,3 +23,9 @@ export default [
   "us",
   "vi",
 ]
+
+export default marketsWithThe
+
+export function prefixMarket(iso, name) {
+  return marketsWithThe.includes(iso) ? `the ${name}` : name
+}
