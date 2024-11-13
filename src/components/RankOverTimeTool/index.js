@@ -29,9 +29,9 @@ export default function RankOverTimeTool({ data }) {
   const rankings = years.map((year) => {
     const items = _sortBy(
       data.reduce((acc, cur) => {
-        const relevantData = cur.score?.find(
-          (s) => parseInt(s.year) === parseInt(year)
-        )
+        const relevantData = cur.score
+          ?.find((s) => parseInt(s.year) === parseInt(year))
+          ?.sectors.find((s) => s.id === "power")
         if (relevantData) acc.push({ ...cur, relevantData })
         return acc
       }, []),
