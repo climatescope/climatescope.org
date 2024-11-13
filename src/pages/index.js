@@ -377,7 +377,7 @@ function FactbookPreview() {
             </Heading>
             <Text textStyle="sectionSubheading">
               {
-                "This is the 13th annual edition of Climatescope, BNEF’s annual assesment of energy transition opportunities. Until 2023, the country coverage encompassed detailed information for the power and transport sectors on 140 markets around the world (of which 30 developed markets) – or nearly every market in the world with over 2 million inhabitants."
+                "This is the 13th edition of Climatescope, BloombergNEF’s annual assessment of energy transition opportunities in emerging markets. It highlights how the energy transition is progressing in these markets and how they are harnessing the transition to boost attractiveness to outside investors."
               }
             </Text>
             <ButtonLink
