@@ -1,14 +1,9 @@
-import {
-  Box,
-  Stack,
-  HStack,
-  Container,
-  Button,
-  SimpleGrid,
-} from "@chakra-ui/react"
+import { Box, Stack, HStack, Container, SimpleGrid } from "@chakra-ui/react"
 
 import { ButtonLink } from "@/components/Link"
-import { ArrowLeftIcon, ShareIcon } from "@/components/Icon"
+import { ArrowLeftIcon } from "@/components/Icon"
+
+export { default as PageHeaderShareButton } from "@/components/ShareButton"
 
 export function PageHeader(props) {
   return (
@@ -21,7 +16,14 @@ export function PageHeader(props) {
 }
 
 export function PageHeaderContent(props) {
-  return <Stack spacing={5} py={10} gridColumn={["1 / -1", null, null, "1 / span 5"]} {...props} />
+  return (
+    <Stack
+      spacing={5}
+      py={10}
+      gridColumn={["1 / -1", null, null, "1 / span 5"]}
+      {...props}
+    />
+  )
 }
 
 export function PageHeaderSubnavigation(props) {
@@ -47,17 +49,6 @@ export function PageHeaderBackButton(props) {
       borderRadius="sm"
       leftIcon={<ArrowLeftIcon size="1.25rem" />}
       pl={3}
-      {...props}
-    />
-  )
-}
-
-export function PageHeaderShareButton(props) {
-  return (
-    <Button
-      colorScheme="gray"
-      borderRadius="sm"
-      rightIcon={<ShareIcon size="1.25rem" />}
       {...props}
     />
   )

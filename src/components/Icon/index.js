@@ -472,3 +472,45 @@ export const FactbookIcon = ({
     </SvgContainer>
   )
 }
+
+export const EmailIcon = ({
+  strokeWidth = 2,
+  fill = "none",
+  stroke = "currentcolor",
+  ...restProps
+}) => {
+  return (
+    <SvgContainer
+      strokeWidth={strokeWidth}
+      stroke={stroke}
+      fill={fill}
+      {...restProps}
+    >
+      <path d="M16 8v5a3 3 0 006 0v-1a10 10 0 10-3.92 7.94M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+    </SvgContainer>
+  )
+}
+
+export const FacebookIcon = ({
+  strokeWidth = 2,
+  fill = "currentcolor",
+  ...restProps
+}) => {
+  return (
+    <SvgContainer strokeWidth="none" stroke="none" fill={fill} {...restProps}>
+      <path d="M22.5 0c.83 0 1.5.67 1.5 1.5v21c0 .83-.67 1.5-1.5 1.5h-6v-9h3l.75-3.75H16.5v-1.5c0-1.5.75-2.25 2.25-2.25h1.5V3.75h-3c-2.76 0-4.5 2.16-4.5 5.25v2.25h-3V15h3v9H1.5A1.5 1.5 0 010 22.5v-21C0 .67.67 0 1.5 0h21z" />
+    </SvgContainer>
+  )
+}
+
+export const InstagramIcon = ({
+  strokeWidth = 2,
+  fill = "currentcolor",
+  ...restProps
+}) => {
+  return (
+    <SvgContainer strokeWidth="none" stroke="none" fill={fill} {...restProps}>
+      <path d="M16.15 2.003a5.748 5.748 0 014.231 1.65 5.782 5.782 0 011.616 4.198v8.298c0 1.732-.566 3.224-1.65 4.273a5.948 5.948 0 01-4.231 1.575h-8.23a5.881 5.881 0 01-4.191-1.575 5.799 5.799 0 01-1.691-4.307V7.851c0-3.515 2.332-5.848 5.848-5.848h8.297zm.04 1.858H7.886c-1.208 0-2.25.358-2.94 1.041a4.015 4.015 0 00-1.083 2.95v8.263c0 1.25.358 2.25 1.082 2.983a4.165 4.165 0 002.941 1.041h8.23a4.165 4.165 0 002.941-1.041 3.938 3.938 0 001.167-2.95V7.852a4.165 4.165 0 00-1.083-2.907 4.015 4.015 0 00-2.95-1.083zM12 6.801c2.825 0 5.165 2.333 5.165 5.166a5.165 5.165 0 11-5.164-5.165zm0 1.85a3.324 3.324 0 00-3.307 3.307 3.324 3.324 0 003.308 3.308 3.323 3.323 0 003.307-3.308A3.324 3.324 0 0012 8.651zm5.365-3.14a1.166 1.166 0 110 2.332 1.166 1.166 0 010-2.332z" />
+    </SvgContainer>
+  )
+}
