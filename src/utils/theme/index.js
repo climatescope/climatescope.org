@@ -37,8 +37,11 @@ export default extendTheme(
   {
     styles: {
       global: {
+        html: { maxW: "100%", overflowX: "hidden" },
         body: {
           letterSpacing: "tight",
+          maxW: "100%",
+          overflowX: "hidden",
         },
         a: {
           _focusVisible: {

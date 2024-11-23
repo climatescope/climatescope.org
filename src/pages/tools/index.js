@@ -28,19 +28,18 @@ export default function ToolsPage({ tools }) {
           </PageHeaderContent>
         </PageHeader>
         <Container>
-          <SimpleGrid columns={2} gridGap={10} pb={20}>
+          <SimpleGrid columns={[1, null, null, 2]} gridGap={10} pb={20}>
             {tools.map(({ slug, title }) => {
               const cover = slug.split("/").slice(-1)[0]
               return (
                 <LinkBox
                   key={slug}
                   as="article"
-                  bg="black"
                   display="grid"
                   gridTemplateColumns="repeat(4, 1fr)"
                   gridGap={10}
                 >
-                  <Box gridColumn="1 / -1" gridRow="1 / span 1" bg="red.500">
+                  <Box gridColumn="1 / -1" gridRow="1 / span 1">
                     <Image src={`${cover}.jpg`} ratio={3 / 2} />
                   </Box>
                   <Box

@@ -93,7 +93,10 @@ export default function TechnologiesCartogram() {
     <Box>
       <Stack w="100%" spacing={6} alignItems="center">
         <Stack spacing={4} flex={1} alignItems="center" pb={5}>
-          <Heading textStyle="sectionHeading">{`Power-generating technologies`}</Heading>
+          <Heading
+            textStyle="sectionHeading"
+            textAlign="center"
+          >{`Power-generating technologies`}</Heading>
           <Text textStyle="sectionSubheading" maxW="45rem" textAlign="center">
             {`Most popular power-generating technologies added in ${currentYear} across emerging markets covered by Climatescope`}
           </Text>

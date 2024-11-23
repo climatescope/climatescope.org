@@ -5,13 +5,13 @@ export default {
     fontWeight: 700,
   },
   pageSubheading: {
-    fontSize: "2xl",
+    fontSize: ["xl", null, "2xl"],
     lineHeight: "base",
     // color: "gray.500",
     lineHeight: "tall",
   },
   sectionHeading: {
-    fontSize: "4xl",
+    fontSize: ["2xl", null, "4xl"],
     lineHeight: "short",
     fontWeight: 700,
   },
@@ -21,7 +21,7 @@ export default {
     color: "gray.500",
   },
   cardButtonHeading: {
-    fontSize: "xl",
+    fontSize: ["lg", null, "xl"],
     lineHeight: "short",
     fontWeight: 700,
   },
@@ -31,7 +31,7 @@ export default {
     color: "gray.500",
   },
   previewCardHeading: {
-    fontSize: "2xl",
+    fontSize: ["xl", null, "2xl"],
     lineHeight: "short",
   },
   articleBody: {
