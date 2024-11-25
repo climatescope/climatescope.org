@@ -36,11 +36,6 @@ export default function SiteFooter() {
                 }
               </Text>
             </SectionHeader>
-            {/* <HStack spacing={5} gridColumn="1 / -1">
-              <Box h={12} bg="gray.900" flex={1} borderRadius="sm" />
-              <Box h={12} bg="gray.900" flex={1} borderRadius="sm" />
-              <Button size="lg">{"Subscribe"}</Button>
-            </HStack> */}
             <Newsletter gridColumn={["1 / -1", null, null, "span 4"]} />
             <Divider gridColumn="1 / -1" borderColor="gray.700" />
             <Stack spacing={5} gridColumn={["1 / -1", null, "span 4"]}>
@@ -52,6 +47,9 @@ export default function SiteFooter() {
               </Link>
               <Link href="/tools" fontSize="xl" fontWeight={600}>
                 {"Tools"}
+              </Link>
+              <Link href="/blog" fontSize="xl" fontWeight={600}>
+                {"Blog"}
               </Link>
             </Stack>
             <Stack spacing={5} gridColumn={["1 / -1", null, "span 4"]}>
@@ -69,7 +67,11 @@ export default function SiteFooter() {
               </Link>
             </Stack>
             <Divider gridColumn="1 / -1" borderColor="gray.700" />
-            <HStack spacing={5} gridColumn="1 / -1" flexDirection={["column", null, "row"]}>
+            <HStack
+              spacing={5}
+              gridColumn="1 / -1"
+              flexDirection={["column", null, "row"]}
+            >
               <HStack spacing={5} flex={1}>
                 <Link
                   href="/privacy-policy"
