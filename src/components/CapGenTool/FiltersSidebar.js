@@ -16,17 +16,35 @@ import {
   AccordionButton,
   AccordionIcon,
   AccordionPanel,
+  Checkbox,
+  CheckboxGroup,
+  Stack,
 } from "@chakra-ui/react"
+import { range } from "d3-array"
+
+import { useStore } from "./store"
 
 export default function FiltersSidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
 
-  const currentGeography = "US"
-  const setCurrentGeography = () => {}
+  // const currentGeography = "US"
+  // const setCurrentGeography = () => {}
 
-  const currentSector = ""
-  const setCurrentSector = () => {}
+  // const currentSector = ""
+  // const setCurrentSector = () => {}
+
+  const allSectors = useStore((state) => state.allSectors)
+  const allRegions = useStore((state) => state.allRegions)
+
+  const sectors = useStore((state) => state.sectors)
+  const regions = useStore((state) => state.regions)
+
+  const setPostFilters = useStore((state) => state.setPostFilters)
+
+  const allYears = range(24).map((d) => `${2000 + d}`)
+  const year = useStore((state) => state.year)
+  const setYear = useStore((state) => state.setYear)
 
   return (
     <>
@@ -55,9 +73,29 @@ export default function FiltersSidebar() {
                   </Heading>
                   <AccordionIcon boxSize={6} />
                 </AccordionButton>
-                <AccordionPanel>{"Region options"}</AccordionPanel>
+                <AccordionPanel>
+                  <CheckboxGroup
+                    defaultValue={[]}
+                    value={regions}
+                    onChange={(regions) => {
+                      setPostFilters({ regions })
+                    }}
+                  >
+                    <Stack gap={1}>
+                      {allRegions
+                        .filter((d) => d.label)
+                        .map((region) => {
+                          return (
+                            <Checkbox key={region.key} value={region.key}>
+                              {region.label}
+                            </Checkbox>
+                          )
+                        })}
+                    </Stack>
+                  </CheckboxGroup>
+                </AccordionPanel>
               </AccordionItem>
-              <AccordionItem>
+              {/* <AccordionItem>
                 <AccordionButton>
                   <Heading as="h3" fontWeight={600}>
                     {"Markets"}
@@ -75,7 +113,7 @@ export default function FiltersSidebar() {
                     <option value="Switzerland">{"Switzerland"}</option>
                   </Select>
                 </AccordionPanel>
-              </AccordionItem>
+              </AccordionItem> */}
               <AccordionItem>
                 <AccordionButton>
                   <Heading as="h3" fontWeight={600}>
@@ -84,14 +122,25 @@ export default function FiltersSidebar() {
                   <AccordionIcon boxSize={6} />
                 </AccordionButton>
                 <AccordionPanel>
-                  <Select
-                    w="auto"
-                    value={currentSector}
-                    onChange={(e) => setCurrentSector(e.target.value)}
+                  <CheckboxGroup
+                    defaultValue={[]}
+                    value={sectors}
+                    onChange={(sectors) => {
+                      setPostFilters({ sectors })
+                    }}
                   >
-                    <option value="All">{"All Sectors"}</option>
-                    <option value="Solar PV">{"Solar PV"}</option>
-                  </Select>
+                    <Stack gap={1}>
+                      {allSectors
+                        .filter((d) => d.label)
+                        .map((sector) => {
+                          return (
+                            <Checkbox key={sector.key} value={sector.key}>
+                              {sector.label}
+                            </Checkbox>
+                          )
+                        })}
+                    </Stack>
+                  </CheckboxGroup>
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem>
@@ -102,9 +151,27 @@ export default function FiltersSidebar() {
                   <AccordionIcon boxSize={6} />
                 </AccordionButton>
                 <AccordionPanel>
-                  <Select w="auto">
+                  {/* <Select w="auto">
                     <option value="All Years">{"All Years"}</option>
-                  </Select>
+                  </Select> */}
+
+                  <CheckboxGroup
+                    defaultValue={year.filter((d) => d !== "all")}
+                    onChange={(years) => {
+                      if (!years.length) setYear(["all"])
+                      else setYear(years)
+                    }}
+                  >
+                    <Stack gap={1}>
+                      {allYears.map((year) => {
+                        return (
+                          <Checkbox key={year} value={year}>
+                            {year}
+                          </Checkbox>
+                        )
+                      })}
+                    </Stack>
+                  </CheckboxGroup>
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>

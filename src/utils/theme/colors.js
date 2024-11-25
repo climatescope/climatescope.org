@@ -163,6 +163,19 @@ const colors = {
     "Average Electricity Price in USD": "#ED3124",
     "Average Wholesale": "#FFE838",
     "Asset Finance": "#00AEE5",
+
+    "Geothermal": "#7654A3",
+    "Marine": "#BD5CA3",
+    "Solar PV": "#FFC91D",
+    "None": "#F9F9F9",
+
+    "mena": "#57DB85",
+    "northamer": "#33BFEA",
+    "amer": "#33BFEA",
+    "apac": "#ED3124",
+    "emea": "#43BEAD",
+    "ssa": "#FFC91D",
+    "latam": "#BD5CA3",
   },
 
   regions: {
@@ -173,7 +186,6 @@ const colors = {
     "ssa": "#FFC91D",
     "latam": "#BD5CA3",
   },
-
 }
 
 export default colors

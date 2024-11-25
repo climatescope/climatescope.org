@@ -12,6 +12,7 @@ import {
 } from "@/components/PageHeader"
 import SEO from "@/components/SEO"
 import ETSTool from "@/components/ETSTool"
+import CapGenTool from "@/components/CapGenTool"
 import RankOverTimeTool from "@/components/RankOverTimeTool"
 
 export default function ToolPage({ source, data }) {
@@ -34,9 +35,9 @@ export default function ToolPage({ source, data }) {
             </Text>
           </PageHeaderContent>
         </PageHeader>
-        {/* {toolSlug === "energy-capacity-generation-in-emerging-markets" && (
+        {toolSlug === "energy-capacity-generation-in-emerging-markets" && (
         <CapGenTool />
-      )} */}
+      )}
         {/* {toolSlug === "geography-comparison" && <GeographyComparison />} */}
         {toolSlug === "progress-tracker-fundamentals-investments" && (
           <ETSTool />
@@ -61,7 +62,7 @@ export async function getStaticPaths() {
   const tools = await getPages({
     pageType: "tools",
     fields: ["slug", "publish"],
-    filter: (d) => d.publish,
+    // filter: (d) => d.publish,
   })
 
   return {

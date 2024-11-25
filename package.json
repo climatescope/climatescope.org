@@ -15,7 +15,7 @@
     "prepareData": "node scripts/prepareData.js",
     "prepareImages": "node scripts/prepareImages.js",
     "prepareSearchIndex": "node scripts/prepareSearchIndex.js",
-    "copyFiles": "cp content/etf-data.txt public/data/ets-data.txt",
+    "copyFiles": "cp content/etf-data.txt public/data/ets-data.txt && cp content/capacity-generation.txt public/data/capacity-generation.txt",
     "develop": "npm run copyFiles && npm run prepareImages && npm run prepareSearchIndex && next dev",
     "build": "npm run copyFiles && npm run prepareImages && npm run prepareSearchIndex && next build",
     "export": "npm run build",
