@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react"
+import { Container, Heading, SimpleGrid, Text } from "@chakra-ui/react"
 import { MDXRemote } from "next-mdx-remote"
 
 import getPage from "@/utils/api/server/getPage"
