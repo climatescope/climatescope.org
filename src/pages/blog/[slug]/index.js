@@ -17,7 +17,10 @@ export default function AboutDetailPage({ source }) {
   const { frontmatter } = source
   return (
     <>
-      <SEO title={frontmatter.title} description={frontmatter.description} />
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description || ""}
+      />
       <main>
         <PageHeader>
           <PageHeaderSubnavigation>
