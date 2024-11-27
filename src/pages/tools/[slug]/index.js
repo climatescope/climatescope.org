@@ -68,7 +68,7 @@ export async function getStaticPaths() {
   const tools = await getPages({
     pageType: "tools",
     fields: ["slug", "publish"],
-    // filter: (d) => d.publish,
+    filter: (d) => d.publish,
   })
 
   return {
