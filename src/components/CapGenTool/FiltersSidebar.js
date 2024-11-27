@@ -2,7 +2,7 @@ import { useRef } from "react"
 import {
   Heading,
   Button,
-  Select,
+  Center,
   Drawer,
   DrawerOverlay,
   DrawerContent,
@@ -16,22 +16,65 @@ import {
   AccordionButton,
   AccordionIcon,
   AccordionPanel,
+  Checkbox,
+  CheckboxGroup,
+  Stack,
+  HStack,
+  SimpleGrid,
 } from "@chakra-ui/react"
+import { range } from "d3-array"
+
+import { useStore } from "./store"
+import { FilterIcon } from "../Icon"
 
 export default function FiltersSidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
 
-  const currentGeography = "US"
-  const setCurrentGeography = () => {}
+  // const currentGeography = "US"
+  // const setCurrentGeography = () => {}
 
-  const currentSector = ""
-  const setCurrentSector = () => {}
+  // const currentSector = ""
+  // const setCurrentSector = () => {}
+
+  const allSectors = useStore((state) => state.allSectors)
+  const allRegions = useStore((state) => state.allRegions)
+
+  const sectors = useStore((state) => state.sectors)
+  const regions = useStore((state) => state.regions)
+
+  const setPostFilters = useStore((state) => state.setPostFilters)
+
+  const allYears = range(2024 - 2010).map((d) => `${2010 + d}`)
+  const year = useStore((state) => state.year)
+  const setYear = useStore((state) => state.setYear)
+
+  const filterCount =
+    year.filter((d) => d !== "all").length + regions.length + sectors.length
 
   return (
     <>
-      <Button ref={btnRef} colorScheme="gray" onClick={onOpen}>
-        {"Filters"}
+      <Button
+        ref={btnRef}
+        colorScheme="gray"
+        onClick={onOpen}
+        rightIcon={<FilterIcon size="1.25rem" />}
+      >
+        {`Filters`}
+        {filterCount ? (
+          <Center
+            w={5}
+            h={5}
+            bg="brand.500"
+            color="brand.1000"
+            ml={2}
+            borderRadius="full"
+            fontSize="xs"
+            fontWeight={600}
+          >
+            {filterCount}
+          </Center>
+        ) : null}
       </Button>
       <Drawer
         isOpen={isOpen}
@@ -44,20 +87,73 @@ export default function FiltersSidebar() {
         <DrawerContent>
           <DrawerCloseButton top={3} right={3} />
           <DrawerHeader py={4} fontWeight={700}>
-            <Heading>{"Filters"}</Heading>
+            <HStack gap={3}>
+              <Heading>{"Filters"}</Heading>
+              {filterCount ? (
+                <Center
+                  w={5}
+                  h={5}
+                  bg="gray.200"
+                  borderRadius="full"
+                  fontSize="xs"
+                  fontWeight={600}
+                >
+                  {filterCount}
+                </Center>
+              ) : null}
+            </HStack>
           </DrawerHeader>
           <DrawerBody px={0} py={0}>
             <Accordion allowMultiple>
               <AccordionItem>
                 <AccordionButton>
-                  <Heading as="h3" fontWeight={600}>
-                    {"Region"}
-                  </Heading>
+                  <HStack gap={3}>
+                    <Heading as="h3" fontWeight={600}>
+                      {"Regions"}
+                    </Heading>
+                    {regions.length ? (
+                      <Center
+                        w={5}
+                        h={5}
+                        bg="gray.200"
+                        borderRadius="full"
+                        fontSize="xs"
+                        fontWeight={600}
+                      >
+                        {regions.length}
+                      </Center>
+                    ) : null}
+                  </HStack>
+
                   <AccordionIcon boxSize={6} />
                 </AccordionButton>
-                <AccordionPanel>{"Region options"}</AccordionPanel>
+                <AccordionPanel>
+                  <CheckboxGroup
+                    defaultValue={[]}
+                    value={regions}
+                    onChange={(regions) => {
+                      setPostFilters({ regions })
+                    }}
+                  >
+                    <Stack gap={1}>
+                      {allRegions
+                        .filter((d) => d.label)
+                        .map((region) => {
+                          return (
+                            <Checkbox
+                              key={region.key}
+                              value={region.key}
+                              fontWeight={600}
+                            >
+                              {region.label}
+                            </Checkbox>
+                          )
+                        })}
+                    </Stack>
+                  </CheckboxGroup>
+                </AccordionPanel>
               </AccordionItem>
-              <AccordionItem>
+              {/* <AccordionItem>
                 <AccordionButton>
                   <Heading as="h3" fontWeight={600}>
                     {"Markets"}
@@ -75,42 +171,136 @@ export default function FiltersSidebar() {
                     <option value="Switzerland">{"Switzerland"}</option>
                   </Select>
                 </AccordionPanel>
-              </AccordionItem>
+              </AccordionItem> */}
               <AccordionItem>
                 <AccordionButton>
-                  <Heading as="h3" fontWeight={600}>
-                    {"Sectors"}
-                  </Heading>
+                  <HStack gap={3}>
+                    <Heading as="h3" fontWeight={600}>
+                      {"Sectors"}
+                    </Heading>
+                    {sectors.length ? (
+                      <Center
+                        w={5}
+                        h={5}
+                        bg="gray.200"
+                        borderRadius="full"
+                        fontSize="xs"
+                        fontWeight={600}
+                      >
+                        {sectors.length}
+                      </Center>
+                    ) : null}
+                  </HStack>
                   <AccordionIcon boxSize={6} />
                 </AccordionButton>
                 <AccordionPanel>
-                  <Select
-                    w="auto"
-                    value={currentSector}
-                    onChange={(e) => setCurrentSector(e.target.value)}
+                  <CheckboxGroup
+                    defaultValue={[]}
+                    value={sectors}
+                    onChange={(sectors) => {
+                      setPostFilters({ sectors })
+                    }}
                   >
-                    <option value="All">{"All Sectors"}</option>
-                    <option value="Solar PV">{"Solar PV"}</option>
-                  </Select>
+                    <SimpleGrid gridGap={2} columns={2}>
+                      {allSectors
+                        .filter((d) => d.label)
+                        .map((sector) => {
+                          return (
+                            <Checkbox
+                              key={sector.key}
+                              value={sector.key}
+                              fontWeight={600}
+                            >
+                              {sector.label}
+                            </Checkbox>
+                          )
+                        })}
+                    </SimpleGrid>
+                  </CheckboxGroup>
                 </AccordionPanel>
               </AccordionItem>
               <AccordionItem>
                 <AccordionButton>
-                  <Heading as="h3" fontWeight={600}>
-                    {"Years"}
-                  </Heading>
+                  <HStack gap={3}>
+                    <Heading as="h3" fontWeight={600}>
+                      {"Years"}
+                    </Heading>
+                    {year.filter((d) => d !== "all").length ? (
+                      <Center
+                        w={5}
+                        h={5}
+                        bg="gray.200"
+                        borderRadius="full"
+                        fontSize="xs"
+                        fontWeight={600}
+                      >
+                        {year.length}
+                      </Center>
+                    ) : null}
+                  </HStack>
+
                   <AccordionIcon boxSize={6} />
                 </AccordionButton>
                 <AccordionPanel>
-                  <Select w="auto">
+                  {/* <Select w="auto">
                     <option value="All Years">{"All Years"}</option>
-                  </Select>
+                  </Select> */}
+
+                  <CheckboxGroup
+                    defaultValue={year.filter((d) => d !== "all")}
+                    value={year.filter((d) => d !== "all")}
+                    onChange={(years) => {
+                      if (!years.length) setYear(["all"])
+                      else setYear(years)
+                    }}
+                  >
+                    <SimpleGrid columns={2} gridGap={2}>
+                      <Stack
+                        gap={2}
+                        style={{ fontVariantNumeric: "tabular-nums" }}
+                      >
+                        {allYears.slice(0, allYears.length / 2).map((year) => {
+                          return (
+                            <Checkbox key={year} value={year} fontWeight={600}>
+                              {year}
+                            </Checkbox>
+                          )
+                        })}
+                      </Stack>
+                      <Stack
+                        gap={2}
+                        style={{ fontVariantNumeric: "tabular-nums" }}
+                      >
+                        {allYears.slice(allYears.length / 2).map((year) => {
+                          return (
+                            <Checkbox key={year} value={year} fontWeight={600}>
+                              {year}
+                            </Checkbox>
+                          )
+                        })}
+                      </Stack>
+                    </SimpleGrid>
+                  </CheckboxGroup>
                 </AccordionPanel>
               </AccordionItem>
             </Accordion>
           </DrawerBody>
           <DrawerFooter>
-            <Button w="100%">{"Apply filters"}</Button>
+            <Stack gap={3} w="100%">
+              <Button
+                w="100%"
+                colorScheme="gray"
+                onClick={() => {
+                  setYear(["all"])
+                  setPostFilters({ regions: [], sectors: [] })
+                }}
+              >
+                {"Reset"}
+              </Button>
+              <Button w="100%" onClick={onClose}>
+                {"Apply filters"}
+              </Button>
+            </Stack>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>

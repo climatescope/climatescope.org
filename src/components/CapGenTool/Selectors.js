@@ -13,21 +13,29 @@ import {
 } from "@chakra-ui/react"
 import { ChevronDownIcon } from "@chakra-ui/icons"
 
+import { useStore } from "./store"
+
 const indicators = [
-  { value: "capacity-and-generation", label: "Capacity and generation" },
-  { value: "installed-capacity", label: "Installed capacity" },
-  { value: "eletricity-generation", label: "Eletricity generation" },
+  { value: "capgen", label: "Capacity and generation" },
+  { value: "capacity", label: "Installed capacity" },
+  { value: "generation", label: "Eletricity generation" },
 ]
 
 const groupings = [
   { value: "sector", label: "Sector" },
-  { value: "region", label: "Region" },
-  { value: "market", label: "Market" },
+  { value: "region_id", label: "Region" },
+  // { value: "market", label: "Market" },
 ]
 
 export default function Selectors() {
-  const [indicatorValue, setIndicatorValue] = useState(indicators[0])
-  const [groupingValue, setGroupingValue] = useState(groupings[0])
+  // const [indicatorValue, setIndicatorValue] = useState(indicators[0])
+  // const [groupingValue, setGroupingValue] = useState(groupings[0])
+
+  const indicatorValue = useStore((state) => state.view)
+  const setIndicatorValue = useStore((state) => state.setView)
+
+  const groupingValue = useStore((state) => state.grouping)
+  const setGroupingValue = useStore((state) => state.setGrouping)
 
   return (
     <Box py={10}>
@@ -48,7 +56,7 @@ export default function Selectors() {
                 w="100%"
                 sx={{ span: { overflow: "hidden", textOverflow: "ellipsis" } }}
               >
-                {indicatorValue.label}
+                {indicators.find((s) => s.value === indicatorValue).label}
               </MenuButton>
               <MenuList
                 minW={[null, null, "24rem"]}
@@ -81,10 +89,8 @@ export default function Selectors() {
               >
                 <MenuOptionGroup
                   type="radio"
-                  value={indicatorValue.value}
-                  onChange={(val) =>
-                    setIndicatorValue(indicators.find((s) => s.value === val))
-                  }
+                  value={indicatorValue}
+                  onChange={(val) => setIndicatorValue(val)}
                 >
                   {indicators.map(({ value, label }) => (
                     <MenuItemOption key={value} value={value}>
@@ -121,7 +127,7 @@ export default function Selectors() {
                 w="100%"
                 sx={{ span: { overflow: "hidden", textOverflow: "ellipsis" } }}
               >
-                {groupingValue.label}
+                {groupings.find((s) => s.value === groupingValue).label}
               </MenuButton>
               <MenuList
                 minW={[null, null, "24rem"]}
@@ -154,10 +160,8 @@ export default function Selectors() {
               >
                 <MenuOptionGroup
                   type="radio"
-                  value={groupingValue.value}
-                  onChange={(val) =>
-                    setGroupingValue(groupings.find((s) => s.value === val))
-                  }
+                  value={groupingValue}
+                  onChange={(val) => setGroupingValue(val)}
                 >
                   {groupings.map(({ value, label }) => (
                     <MenuItemOption key={value} value={value}>

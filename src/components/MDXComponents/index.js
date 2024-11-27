@@ -502,10 +502,11 @@ export const marketComponents = {
 
     const investmentData = data.investment.data
     const latestData = investmentData.slice(-1)[0]
+    // const prevData = investmentData.filter(d => d.y_val).slice(-2, -1)[0]
     const prevData = investmentData.slice(-2, -1)[0]
 
     const change = latestData.y_val - prevData.y_val
-    const changeText = change > 0 ? `an increase` : "a decrease"
+    const changeText = change > 0 ? `, an increase` : ", a decrease"
 
     const changePercentage =
       Math.round((100 / prevData.y_val) * Math.abs(change) * 100) / 100
@@ -528,13 +529,15 @@ export const marketComponents = {
       `Investment in clean energy in ${marketName} was around $${latestData.y_val.toLocaleString(
         "en-us",
         { minimumFractionDigits: 2, maximumFractionDigits: 2 }
-      )} million in ${latestData.x_val}, `,
-      `${changeText} of ${changePercentage}% from ${
-        prevData.x_val
-      } ($${prevData.y_val.toLocaleString("en-us", {
-        minimumFractionDigits: 2,
-        maximumFractionDigits: 2,
-      })} million). `,
+      )} million in ${latestData.x_val}`,
+      prevData.y_val
+        ? `${changeText} of ${changePercentage}% from ${
+            prevData.x_val
+          } ($${prevData.y_val.toLocaleString("en-us", {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })} million). `
+        : ". ",
       `Between ${yearRange[0]} and ${
         yearRange[1]
       }, the highest investment in clean energy was in ${

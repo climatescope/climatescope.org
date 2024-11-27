@@ -12,11 +12,16 @@ import {
 } from "@/components/PageHeader"
 import SEO from "@/components/SEO"
 import ETSTool from "@/components/ETSTool"
+import CapGenTool from "@/components/CapGenTool"
 import RankOverTimeTool from "@/components/RankOverTimeTool"
 
 export default function ToolPage({ source, data }) {
   const { frontmatter } = source
   const toolSlug = frontmatter.slug.split("/").slice(-1)[0]
+
+  const hideHeader = [
+    "energy-capacity-generation-in-emerging-markets",
+  ].includes(toolSlug)
 
   return (
     <>
@@ -27,16 +32,18 @@ export default function ToolPage({ source, data }) {
             <PageHeaderBackButton href="/tools">{"Tools"}</PageHeaderBackButton>
             <PageHeaderShareButton>{"Share"}</PageHeaderShareButton>
           </PageHeaderSubnavigation>
-          <PageHeaderContent>
-            <Heading fontSize="5xl">{frontmatter.title}</Heading>
-            <Text fontSize="2xl" color="gray.500">
-              {frontmatter.description}
-            </Text>
-          </PageHeaderContent>
+          {!hideHeader && (
+            <PageHeaderContent>
+              <Heading fontSize="5xl">{frontmatter.title}</Heading>
+              <Text fontSize="2xl" color="gray.500">
+                {frontmatter.description}
+              </Text>
+            </PageHeaderContent>
+          )}
         </PageHeader>
-        {/* {toolSlug === "energy-capacity-generation-in-emerging-markets" && (
-        <CapGenTool />
-      )} */}
+        {toolSlug === "energy-capacity-generation-in-emerging-markets" && (
+          <CapGenTool />
+        )}
         {/* {toolSlug === "geography-comparison" && <GeographyComparison />} */}
         {toolSlug === "progress-tracker-fundamentals-investments" && (
           <ETSTool />
