@@ -19,6 +19,10 @@ export default function ToolPage({ source, data }) {
   const { frontmatter } = source
   const toolSlug = frontmatter.slug.split("/").slice(-1)[0]
 
+  const hideHeader = [
+    "energy-capacity-generation-in-emerging-markets",
+  ].includes(toolSlug)
+
   return (
     <>
       <SEO title={frontmatter.title} description={frontmatter.description} />
@@ -28,16 +32,18 @@ export default function ToolPage({ source, data }) {
             <PageHeaderBackButton href="/tools">{"Tools"}</PageHeaderBackButton>
             <PageHeaderShareButton>{"Share"}</PageHeaderShareButton>
           </PageHeaderSubnavigation>
-          <PageHeaderContent>
-            <Heading fontSize="5xl">{frontmatter.title}</Heading>
-            <Text fontSize="2xl" color="gray.500">
-              {frontmatter.description}
-            </Text>
-          </PageHeaderContent>
+          {!hideHeader && (
+            <PageHeaderContent>
+              <Heading fontSize="5xl">{frontmatter.title}</Heading>
+              <Text fontSize="2xl" color="gray.500">
+                {frontmatter.description}
+              </Text>
+            </PageHeaderContent>
+          )}
         </PageHeader>
         {toolSlug === "energy-capacity-generation-in-emerging-markets" && (
-        <CapGenTool />
-      )}
+          <CapGenTool />
+        )}
         {/* {toolSlug === "geography-comparison" && <GeographyComparison />} */}
         {toolSlug === "progress-tracker-fundamentals-investments" && (
           <ETSTool />

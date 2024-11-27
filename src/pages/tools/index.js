@@ -70,6 +70,7 @@ export async function getStaticProps() {
     pageType: "tools",
     fields: ["slug", "title", "publish"],
     // filter: (d) => d.publish,
+    filter: d => d.slug !== "/tools/geography-comparison"
   })
   return {
     props: {

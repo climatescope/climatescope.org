@@ -5,9 +5,14 @@ import SelectedFilters from "./SelectedFilters"
 
 export default function Filters() {
   return (
-    <Box bg="gray.50">
+    <Box>
       <Container>
-        <HStack spacing={6} py={3}>
+        <HStack
+          spacing={6}
+          py={3}
+          borderY="0.0625rem solid"
+          borderColor="gray.200"
+        >
           <SelectedFilters />
           <FiltersSidebar />
         </HStack>

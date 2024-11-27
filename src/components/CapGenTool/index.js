@@ -4,6 +4,7 @@ import { Stack } from "@chakra-ui/react"
 import Selectors from "./Selectors"
 import Filters from "./Filters"
 import Visual from "./Visual"
+import Legend from "./Legend"
 import fetchDataset from "@/utils/api/client/fetchDataset"
 import { useStore } from "./store"
 
@@ -15,7 +16,7 @@ export default function CapGenTool() {
 
     Promise.all([
       fetchDataset("/data/capacity-generation.txt", "json"),
-      fetchDataset("/data/augmented-geographies.txt", "json")  
+      fetchDataset("/data/augmented-geographies.txt", "json"),
     ]).then(([capgenData, geographiesData]) => {
       setInitialData(capgenData, geographiesData)
     })
@@ -26,6 +27,7 @@ export default function CapGenTool() {
       <Selectors />
       <Filters />
       <Visual />
+      <Legend />
     </Stack>
   )
 }

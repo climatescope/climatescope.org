@@ -15,6 +15,7 @@ function filterDataset({
   const years = Object.keys(capacity[0])
     .filter((d) => d.startsWith("val_"))
     .map((d) => `${d.split("_")[1]}`.trim())
+    .filter((d) => parseInt(d) >= 2010)
     .filter((d) => year.includes("all") || year.includes(d))
 
   const excludedSectors = ["Storage", "undefined"]
@@ -116,22 +117,33 @@ export const useStore = create((set, get) => ({
     }))
   },
 
+  capacityUnit: "MW",
+  generationUnit: "GWh",
+
   setInitialData: (dataRaw, geographies) => {
     const geos = geographies.reduce((acc, cur) => {
       acc[cur.iso2.toLowerCase()] = cur
       return acc
     }, {})
 
-    const data = dataRaw.map((d) => {
-      const { region_id, region_name } = geos[d.iso] || {}
-      return { ...d, region_id, region_name }
-    })
+    const sectorsToExclude = ["Power exports", "Power imports", "Storage"]
+
+    const data = dataRaw
+      .map((d) => {
+        const { region_id, region_name } = geos[d.iso] || {}
+        return { ...d, region_id, region_name }
+      })
+      .filter((d) => !sectorsToExclude.includes(d.sector))
+      .filter((d) => !!d.region_id)
 
     const measures = ["installed capacity", "electricity generation"]
 
     const [capacity, generation] = measures.map((measure) =>
       data.filter((d) => d.measure === measure)
     )
+
+    const capacityUnit = capacity[0].units || capacity[0].unit || "MW"
+    const generationUnit = generation[0].units || generation[0].unit || "GWh"
 
     const filteredData = filterDataset({
       capacity,
@@ -154,6 +166,8 @@ export const useStore = create((set, get) => ({
       data: { capacity, generation },
       filteredData,
       allRegions,
+      capacityUnit,
+      generationUnit,
       allSectors,
     })
   },
