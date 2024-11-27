@@ -13,7 +13,7 @@ export const projections = [
     center: [100, 58],
     parallels: [46, 70],
     regions: [],
-    countries: ["ru"],
+    countries: ["ru", "kz"],
   },
   {
     id: "usa",
