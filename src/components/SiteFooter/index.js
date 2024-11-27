@@ -56,9 +56,6 @@ export default function SiteFooter() {
               <Link href="/reports" fontSize="xl" fontWeight={600}>
                 {"Reports"}
               </Link>
-              <Link href="/blog" fontSize="xl" fontWeight={600}>
-                {"Blog"}
-              </Link>
               <Link href="/about" fontSize="xl" fontWeight={600}>
                 {"About"}
               </Link>
@@ -74,7 +71,7 @@ export default function SiteFooter() {
             >
               <HStack spacing={5} flex={1}>
                 <Link
-                  href="/privacy-policy"
+                  href="https://about.bnef.com/bnef-privacy-policy/"
                   fontSize="md"
                   fontWeight={600}
                   flex="none"
@@ -82,12 +79,12 @@ export default function SiteFooter() {
                   {"Privacy policy"}
                 </Link>
                 <Link
-                  href="/terms-of-use"
+                  href="/about/license"
                   fontSize="md"
                   fontWeight={600}
                   flex="none"
                 >
-                  {"Terms of use"}
+                  {"License"}
                 </Link>
               </HStack>
               <Text fontSize="md" flex="none">
