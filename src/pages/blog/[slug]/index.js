@@ -105,7 +105,7 @@ export default function AboutDetailPage({
                   >
                     <MenuOptionGroup
                       type="radio"
-                      value={source.frontmatter.slug}
+                      value={frontmatter.slug}
                       onChange={(val) => router.push(val)}
                     >
                       {otherLanguageVersions.map(({ id, label, href }) => (
