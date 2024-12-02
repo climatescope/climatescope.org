@@ -76,7 +76,9 @@ export default function BlogListingPage({ pages }) {
 }
 
 export async function getStaticProps() {
-  const pagesRaw = await getPages({ pageType: "blog" })
-  const pages = pagesRaw.filter((d) => !d.slug.includes("sample-post"))
+  const pages = await getPages({
+    pageType: "blog",
+    filter: (d) => !d.slug.includes("sample-post"),
+  })
   return { props: { pages } }
 }

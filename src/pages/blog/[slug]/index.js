@@ -1,5 +1,19 @@
-import { Container, Heading, SimpleGrid, Text } from "@chakra-ui/react"
+import {
+  Container,
+  Heading,
+  SimpleGrid,
+  Text,
+  Box,
+  Menu,
+  MenuList,
+  MenuButton,
+  MenuOptionGroup,
+  MenuItemOption,
+  Button,
+} from "@chakra-ui/react"
+import { ChevronDownIcon } from "@chakra-ui/icons"
 import { MDXRemote } from "next-mdx-remote"
+import { useRouter } from "next/router"
 
 import getPage from "@/utils/api/server/getPage"
 import getPages from "@/utils/api/server/getPages"
@@ -13,8 +27,14 @@ import {
 import { baseComponents } from "@/components/MDXComponents"
 import SEO from "@/components/SEO"
 
-export default function AboutDetailPage({ source }) {
+export default function AboutDetailPage({
+  source,
+  otherLanguageVersions,
+  currentLanguageVersion,
+}) {
   const { frontmatter } = source
+  const router = useRouter()
+
   return (
     <>
       <SEO
@@ -34,14 +54,70 @@ export default function AboutDetailPage({ source }) {
         </PageHeader>
         <Container pb={20}>
           <SimpleGrid columns={8} gridGap={10}>
+            {otherLanguageVersions?.length && currentLanguageVersion ? (
+              <Box gridColumn={["1 / -1", null, null, "2 / -3"]}>
+                <Menu placement="bottom-start" matchWidth>
+                  <MenuButton
+                    as={Button}
+                    variant="solid"
+                    colorScheme="gray"
+                    fontWeight={600}
+                    rightIcon={<ChevronDownIcon boxSize={5} />}
+                    textAlign="left"
+                    overflow="hidden"
+                    w="auto"
+                    minW="12rem"
+                    sx={{
+                      span: { overflow: "hidden", textOverflow: "ellipsis" },
+                    }}
+                  >
+                    {currentLanguageVersion.label}
+                  </MenuButton>
+                  <MenuList
+                    minW={[null, null, "12rem"]}
+                    motionProps={{
+                      variants: {
+                        enter: {
+                          visibility: "visible",
+                          y: 0,
+                          opacity: 1,
+                          scale: 1,
+                          transition: {
+                            duration: 0.2,
+                            ease: [0.4, 0, 0.2, 1],
+                          },
+                        },
+                        exit: {
+                          transitionEnd: {
+                            visibility: "hidden",
+                          },
+                          y: 8,
+                          opacity: 0,
+                          scale: 1,
+                          transition: {
+                            duration: 0.1,
+                            easings: "easeOut",
+                          },
+                        },
+                      },
+                    }}
+                  >
+                    <MenuOptionGroup
+                      type="radio"
+                      value={source.frontmatter.slug}
+                      onChange={(val) => router.push(val)}
+                    >
+                      {otherLanguageVersions.map(({ id, label, href }) => (
+                        <MenuItemOption key={id} value={href}>
+                          {label}
+                        </MenuItemOption>
+                      ))}
+                    </MenuOptionGroup>
+                  </MenuList>
+                </Menu>
+              </Box>
+            ) : null}
             <MDXRemote {...source} components={baseComponents} />
-            {/* <Stack
-            spacing={10}
-            gridColumn={["1 / -1", null, null, "2 / span 5"]}
-            fontSize="lg"
-          >
-            <MDXRemote {...source} components={baseComponents} />
-          </Stack> */}
           </SimpleGrid>
         </Container>
       </main>
@@ -50,8 +126,10 @@ export default function AboutDetailPage({ source }) {
 }
 
 export async function getStaticPaths() {
-  const pagesRaw = await getPages({ pageType: "blog" })
-  const pages = pagesRaw.filter((d) => !d.slug.includes("sample-post"))
+  const pages = await getPages({
+    pageType: "blog",
+    filter: (d) => !d.slug.includes("sample-post"),
+  })
   return {
     paths: pages.map((page) => ({
       params: { slug: page.slug.split("/").pop() },
@@ -66,5 +144,38 @@ export async function getStaticProps({ params }) {
     pageType: "blog",
     slug: `/blog/${slug}`,
   })
-  return { props: { source } }
+
+  const languages = {
+    en: { id: "en", label: "English" },
+    fr: { id: "fr", label: "Français" },
+    es: { id: "es", label: "Español" },
+    pt: { id: "pt", label: "Portuguese" },
+    cn: { id: "cn", label: "中文" },
+  }
+
+  const languageExtensions = Object.keys(languages)
+
+  const slugRaw = source.frontmatter.slug
+    .split("-")
+    .filter((d) => !languageExtensions.includes(d))
+    .join("-")
+
+  const allLanguageVersions = await getPages({
+    pageType: "blog",
+    fields: ["slug"],
+    filter: (d) => d.slug.includes(slugRaw),
+  })
+
+  const otherLanguageVersions = allLanguageVersions.map((d) => {
+    const id = d.slug.split("-").slice(-1)[0]
+    const lang = languages[id] || languages.en
+    lang.href = d.slug
+    return lang
+  })
+
+  const currentLanguageVersion = otherLanguageVersions.find(
+    (s) => s.href === source.frontmatter.slug
+  )
+
+  return { props: { source, otherLanguageVersions, currentLanguageVersion } }
 }
