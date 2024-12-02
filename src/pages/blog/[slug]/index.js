@@ -40,6 +40,7 @@ export default function AboutDetailPage({
       <SEO
         title={frontmatter.title}
         description={frontmatter.description || ""}
+        lang={currentLanguageVersion.id || "en"}
       />
       <main>
         <PageHeader>
