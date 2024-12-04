@@ -1,6 +1,7 @@
 import { create } from "zustand"
 import { extent } from "d3-array"
 import _sumBy from "lodash/sumBy"
+import _sortBy from "lodash/sortBy"
 
 export const useGeographyComparisonStore = create((set, get) => ({
   isLoaded: false,
@@ -48,7 +49,7 @@ export const useGeographyComparisonStore = create((set, get) => ({
     ]
     set({
       isLoaded: true,
-      geographies: data,
+      geographies: _sortBy(data, o => o.label),
       selectedGeographies: fixDomains(selectedGeographies),
     })
   },
