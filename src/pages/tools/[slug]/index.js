@@ -14,6 +14,7 @@ import SEO from "@/components/SEO"
 import ETSTool from "@/components/ETSTool"
 import CapGenTool from "@/components/CapGenTool"
 import RankOverTimeTool from "@/components/RankOverTimeTool"
+import GeographyComparison from "@/components/GeographyComparison"
 
 export default function ToolPage({ source, data }) {
   const { frontmatter } = source
@@ -44,7 +45,9 @@ export default function ToolPage({ source, data }) {
         {toolSlug === "energy-capacity-generation-in-emerging-markets" && (
           <CapGenTool />
         )}
-        {/* {toolSlug === "geography-comparison" && <GeographyComparison />} */}
+        {toolSlug === "geography-comparison" && (
+          <GeographyComparison data={data} />
+        )}
         {toolSlug === "progress-tracker-fundamentals-investments" && (
           <ETSTool />
         )}
@@ -60,6 +63,11 @@ export async function getStaticProps({ params }) {
   const results = await getContent("results.txt", "json")
   const data = {
     "rank-over-time": results,
+    "geography-comparison": results.filter(d => d.iso !== "ru").map(
+      ({ iso, market, tradebloc, region }) => {
+        return { val: iso, label: market, tradebloc, region }
+      }
+    ),
   }
   return { props: { source, data: data[slug] || null } }
 }
@@ -68,7 +76,7 @@ export async function getStaticPaths() {
   const tools = await getPages({
     pageType: "tools",
     fields: ["slug", "publish"],
-    filter: (d) => d.publish,
+    // filter: (d) => d.publish,
   })
 
   return {

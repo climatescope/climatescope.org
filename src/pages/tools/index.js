@@ -69,7 +69,7 @@ export async function getStaticProps() {
   const tools = await getPages({
     pageType: "tools",
     fields: ["slug", "title", "publish"],
-    filter: (d) => d.publish,
+    // filter: (d) => d.publish,
   })
   return {
     props: {

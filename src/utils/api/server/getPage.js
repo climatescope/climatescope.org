@@ -1,7 +1,7 @@
 import { join, parse } from "path"
 import { serialize } from "next-mdx-remote/serialize"
 
-import getPages from "./getPages"
+import getPages from "./getPages.js"
 
 export default async function getPage({
   slug = "",

@@ -28,11 +28,19 @@ export default function RadarChart({ data, simplified = false, ...props }) {
 
   const rScale = scaleLinear().domain([0, 5]).range([0, maxRadius])
 
-  const circlePaths = [
-    createCirclePath({ r: Math.round(rScale(5) * 10000) / 10000 }),
-    createCirclePath({ r: Math.round(rScale(3) * 10000) / 10000 }),
-    createCirclePath({ r: Math.round(rScale(1) * 10000) / 10000 }),
-  ].join(" ")
+  const circlePaths = simplified
+    ? [
+        createCirclePath({ r: Math.round(rScale(5) * 10000) / 10000 }),
+        createCirclePath({ r: Math.round(rScale(3) * 10000) / 10000 }),
+        createCirclePath({ r: Math.round(rScale(1) * 10000) / 10000 }),
+      ].join(" ")
+    : [
+        createCirclePath({ r: Math.round(rScale(5) * 10000) / 10000 }),
+        createCirclePath({ r: Math.round(rScale(4) * 10000) / 10000 }),
+        createCirclePath({ r: Math.round(rScale(3) * 10000) / 10000 }),
+        createCirclePath({ r: Math.round(rScale(2) * 10000) / 10000 }),
+        createCirclePath({ r: Math.round(rScale(1) * 10000) / 10000 }),
+      ].join(" ")
 
   const linePaths = [
     `M${width / 2},${height / 2}L${getPointOnCircle(0, rScale(5), [
@@ -55,14 +63,13 @@ export default function RadarChart({ data, simplified = false, ...props }) {
     data.find((s) => s.label === "Experience"),
   ]
 
-  const trianglePath =
-    "M" +
-    [
-      getPointOnCircle(0, rScale(d2[0].value), [width / 2, height / 2]),
-      getPointOnCircle(120, rScale(d2[1].value), [width / 2, height / 2]),
-      getPointOnCircle(240, rScale(d2[2].value), [width / 2, height / 2]),
-    ].join("L") +
-    "Z"
+  const trianglePoints = [
+    getPointOnCircle(0, rScale(d2[0].value), [width / 2, height / 2]),
+    getPointOnCircle(120, rScale(d2[1].value), [width / 2, height / 2]),
+    getPointOnCircle(240, rScale(d2[2].value), [width / 2, height / 2]),
+  ]
+
+  const trianglePath = "M" + trianglePoints.join("L") + "Z"
 
   const oneThird = (2 * Math.PI) / 3
 
@@ -104,6 +111,7 @@ export default function RadarChart({ data, simplified = false, ...props }) {
       <path
         d={circlePaths}
         vectorEffect="non-scaling-stroke"
+        strokeDasharray={simplified ? [] : [5, 5]}
         transform={`translate(${width / 2} ${height / 2})`}
       />
 
@@ -118,58 +126,8 @@ export default function RadarChart({ data, simplified = false, ...props }) {
 
       {!simplified && (
         <g>
-          {[1, 3, 5].map((tick) => {
-            const [x, y] = getPointOnCircle(0, rScale(tick), [
-              width / 2,
-              height / 2,
-            ])
-            return (
-              <text
-                key={tick}
-                x={x - 0.0625}
-                y={y}
-                stroke="#FFF"
-                strokeWidth={8}
-                fontSize={1}
-                fontWeight={600}
-                fill={colors.gray[300]}
-                alignmentBaseline="central"
-                textAnchor="middle"
-                paintOrder="stroke fill"
-                vectorEffect="non-scaling-stroke"
-              >
-                {tick}
-              </text>
-            )
-          })}
-
-          {[1, 3, 5].map((tick) => {
-            const [x, y] = getPointOnCircle(120, rScale(tick), [
-              width / 2,
-              height / 2,
-            ])
-            return (
-              <text
-                key={tick}
-                x={x - 0.0625}
-                y={y}
-                stroke="#FFF"
-                strokeWidth={8}
-                fontSize={1}
-                fontWeight={600}
-                fill={colors.gray[300]}
-                alignmentBaseline="central"
-                textAnchor="middle"
-                paintOrder="stroke fill"
-                vectorEffect="non-scaling-stroke"
-              >
-                {tick}
-              </text>
-            )
-          })}
-
-          {[1, 3, 5].map((tick) => {
-            const [x, y] = getPointOnCircle(240, rScale(tick), [
+          {[1, 2, 3, 4, 5].map((tick) => {
+            const [x, y] = getPointOnCircle(180, rScale(tick), [
               width / 2,
               height / 2,
             ])
@@ -200,9 +158,24 @@ export default function RadarChart({ data, simplified = false, ...props }) {
         fill="var(--chakra-colors-brand-500)"
         fillOpacity={0.5}
         stroke="var(--chakra-colors-brand-700)"
-        strokeWidth={strokeWidth * 2}
+        strokeWidth={strokeWidth * (simplified ? 2 : 4)}
         vectorEffect="non-scaling-stroke"
       />
+
+      {!simplified &&
+        trianglePoints.map((point, i) => (
+          <circle
+            key={i}
+            cx={point[0]}
+            cy={point[1]}
+            r={0.25}
+            fill="var(--chakra-colors-brand-500)"
+            stroke="var(--chakra-colors-brand-700)"
+            strokeWidth={strokeWidth * (simplified ? 2 : 4)}
+            vectorEffect="non-scaling-stroke"
+          />
+        ))}
+
       <g transform={`translate(${width / 2} ${height / 2})`} stroke="none">
         {tooltipSegments.map((segment, i) => (
           <Tooltip

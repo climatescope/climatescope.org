@@ -10,7 +10,7 @@ import {
 
 import { CheckIcon, CloseIcon } from "@/components/Icon"
 
-export default function BooleanChart({ title, question, data }) {
+export default function BooleanChart({ title, question, data, compact }) {
   return (
     <Stack spacing={6} gridColumn={["1 / -1", null, "2 / -2"]}>
       {title && (
@@ -24,7 +24,7 @@ export default function BooleanChart({ title, question, data }) {
         </Text>
       )}
       <SimpleGrid
-        columns={[1, null, null, 3]}
+        columns={compact ? 1 : [1, null, null, 3]}
         w="100%"
         gridColumnGap={6}
         gridRowGap={6}

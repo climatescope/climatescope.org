@@ -1,7 +1,9 @@
 import { readFile } from "fs/promises"
 import { join } from "path"
 
-import convertFromBuffer from "@/utils/convertFromBuffer"
+function convertFromBuffer(content) {
+  return Buffer.from(content, "base64").toString()
+}
 
 export default async function getPages({
   pageType = "factsheets",

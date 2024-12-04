@@ -18,15 +18,17 @@ const markets = await readFile(
   JSON.parse(convertFromBuffer(d.trim().split("").reverse().join("")))
 )
 
-const searchIndex = markets.pages.map(({ slug, frontmatter }, i) => {
-  return {
-    key: i + 1,
-    label: frontmatter.market,
-    href: slug,
-    type: "market",
-    content: "",
-  }
-})
+const searchIndex = markets.pages
+  .filter((d) => !d.slug.includes("russia"))
+  .map(({ slug, frontmatter }, i) => {
+    return {
+      key: i + 1,
+      label: frontmatter.market,
+      href: slug,
+      type: "market",
+      content: "",
+    }
+  })
 
 await writeFile(
   join(process.env.PWD, "public", "data", "search-index-lite.txt"),
