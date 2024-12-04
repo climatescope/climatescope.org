@@ -50,7 +50,7 @@ export default function Image({
   const sources = images.slice(1).sort((a, b) => b.bp - a.bp)
 
   return !ratio ? (
-    <Box as="span" {...restProps}>
+    <Box as="span" display="block" {...restProps}>
       <Box as="picture">
         {sources.length
           ? sources.map(({ bp, src }, i) => {
@@ -69,8 +69,8 @@ export default function Image({
       </Box>
     </Box>
   ) : (
-    <AspectRatio as="span" ratio={ratio} {...restProps}>
-      <Box as="picture">
+    <AspectRatio as="span" display="block" ratio={ratio} {...restProps}>
+      <Box as="picture" border="1px solid">
         {sources.length
           ? sources.map(({ bp, src }, i) => {
               return (
