@@ -5,13 +5,17 @@ import { useStore } from "./store"
 export default function SelectedFilters() {
   const regions = useStore((state) => state.regions)
   const sectors = useStore((state) => state.sectors)
+  const countries = useStore((state) => state.countries)
   const year = useStore((state) => state.year)
 
   const setYear = useStore((state) => state.setYear)
   const setPostFilters = useStore((state) => state.setPostFilters)
 
   const filterCount =
-    regions.length + sectors.length + year.filter((d) => d !== "all").length
+    regions.length +
+    sectors.length +
+    countries.length +
+    year.filter((d) => d !== "all").length
 
   const keyOverrides = {
     "mena": "Middle East",
@@ -48,6 +52,18 @@ export default function SelectedFilters() {
             onClick={() => {
               setPostFilters({
                 sectors: sectors.filter((d) => d !== sector),
+              })
+            }}
+          />
+        </Tag>
+      ))}
+      {countries.map((country) => (
+        <Tag key={country}>
+          <TagLabel>{country}</TagLabel>
+          <TagCloseButton
+            onClick={() => {
+              setPostFilters({
+                countries: countries.filter((d) => d !== country),
               })
             }}
           />

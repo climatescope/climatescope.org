@@ -28,6 +28,7 @@ export default function Visual() {
 
   const regions = useStore((state) => state.regions)
   const sectors = useStore((state) => state.sectors)
+  const countries = useStore((state) => state.countries)
 
   const capacityUnit = useStore((state) => state.capacityUnit)
   const generationUnit = useStore((state) => state.generationUnit)
@@ -37,7 +38,10 @@ export default function Visual() {
 
   const { colors } = useTheme()
 
-  const capacityMaxRaw = Math.round(d3Max(capacity, (o) => o.total.value))
+  const capacityMaxRaw = Math.max(
+    1,
+    Math.ceil(d3Max(capacity, (o) => o.total.value))
+  )
   const capacityFactor = Math.pow(10, `${capacityMaxRaw}`.length - 2)
   const capacityMax =
     Math.ceil(capacityMaxRaw / capacityFactor) * capacityFactor
@@ -50,7 +54,10 @@ export default function Visual() {
 
   // const generationMax = Math.round(d3Max(generation, (o) => o.total.value))
 
-  const generationMaxRaw = Math.round(d3Max(generation, (o) => o.total.value))
+  const generationMaxRaw = Math.max(
+    1,
+    Math.ceil(d3Max(generation, (o) => o.total.value))
+  )
   const generationFactor = Math.pow(10, `${generationMaxRaw}`.length - 2)
   const generationMax =
     Math.ceil(generationMaxRaw / generationFactor) * generationFactor
@@ -70,7 +77,8 @@ export default function Visual() {
     "apac": "Asia-Pacific",
   }
 
-  const postFilters = sectors.join("-") + "-" + regions.join("-")
+  const postFilters =
+    sectors.join("-") + "-" + regions.join("-") + countries.join("-")
 
   return (
     <Container>
@@ -365,6 +373,20 @@ export default function Visual() {
                         label={
                           <Stack gap={2} p={3} direction="column-reverse">
                             {item.data.map((d) => {
+                              if (
+                                grouping === "sector" &&
+                                sectors.length &&
+                                !sectors.includes(d.key)
+                              )
+                                return null
+
+                              if (
+                                grouping === "region_id" &&
+                                regions.length &&
+                                !regions.includes(d.key)
+                              )
+                                return null
+
                               return (
                                 <HStack key={d.key} gap={10}>
                                   <HStack flex={1} gap={3}>

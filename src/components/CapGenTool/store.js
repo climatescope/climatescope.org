@@ -11,6 +11,7 @@ function filterDataset({
   grouping,
   sectors,
   regions,
+  countries,
 }) {
   const years = Object.keys(capacity[0])
     .filter((d) => d.startsWith("val_"))
@@ -42,7 +43,14 @@ function filterDataset({
           const hasRegion = regions?.length
             ? regions.includes(d.region_id)
             : true
-          return hasSector && hasRegion
+          const hasCountry = countries?.length
+            ? countries.includes(d.market)
+            : true
+          const hasCountryAndRegion =
+            countries?.length && regions?.length
+              ? hasRegion || hasCountry
+              : hasCountry && hasRegion
+          return hasSector && hasCountryAndRegion
         })
         const value = _sumBy(
           filteredItems,
@@ -64,7 +72,14 @@ function filterDataset({
           const hasRegion = regions?.length
             ? regions.includes(d.region_id)
             : true
-          return hasSector && hasRegion
+          const hasCountry = countries?.length
+            ? countries.includes(d.market)
+            : true
+          const hasCountryAndRegion =
+            countries?.length && regions?.length
+              ? hasRegion || hasCountry
+              : hasCountry && hasRegion
+          return hasSector && hasCountryAndRegion
         })
         const value = _sumBy(
           filteredItems,
@@ -97,6 +112,7 @@ export const useStore = create((set, get) => ({
         grouping: state.grouping,
         regions: state.regions,
         sectors: state.sectors,
+        countries: state.countries,
       }),
     }))
   },
@@ -113,6 +129,7 @@ export const useStore = create((set, get) => ({
         grouping: grouping,
         regions: state.regions,
         sectors: state.sectors,
+        countries: state.countries,
       }),
     }))
   },
@@ -162,6 +179,15 @@ export const useStore = create((set, get) => ({
       (o) => o.key
     )
 
+    const allCountries = _uniqBy(
+      data.map((d) => ({
+        key: d.iso,
+        label: d.market,
+        region_id: d.region_id,
+      })),
+      (o) => o.key
+    )
+
     set({
       data: { capacity, generation },
       filteredData,
@@ -169,6 +195,7 @@ export const useStore = create((set, get) => ({
       capacityUnit,
       generationUnit,
       allSectors,
+      allCountries,
     })
   },
 
@@ -181,11 +208,13 @@ export const useStore = create((set, get) => ({
 
   regions: [],
   sectors: [],
+  countries: [],
 
   allSectors: [],
   allRegions: [],
+  allCountries: [],
 
-  setPostFilters: ({ regions, sectors }) => {
+  setPostFilters: ({ regions, countries, sectors }) => {
     set((state) => {
       const filteredData = filterDataset({
         capacity: state.data.capacity,
@@ -194,10 +223,12 @@ export const useStore = create((set, get) => ({
         grouping: state.grouping,
         regions: regions || state.regions,
         sectors: sectors || state.sectors,
+        countries: countries || state.countries,
       })
       return {
         regions: regions || state.regions,
         sectors: sectors || state.sectors,
+        countries: countries || state.countries,
         filteredData,
       }
     })

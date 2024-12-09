@@ -31,17 +31,13 @@ export default function FiltersSidebar() {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const btnRef = useRef()
 
-  // const currentGeography = "US"
-  // const setCurrentGeography = () => {}
-
-  // const currentSector = ""
-  // const setCurrentSector = () => {}
-
   const allSectors = useStore((state) => state.allSectors)
   const allRegions = useStore((state) => state.allRegions)
+  const allCountries = useStore((state) => state.allCountries)
 
   const sectors = useStore((state) => state.sectors)
   const regions = useStore((state) => state.regions)
+  const countries = useStore((state) => state.countries)
 
   const setPostFilters = useStore((state) => state.setPostFilters)
 
@@ -124,7 +120,6 @@ export default function FiltersSidebar() {
                       </Center>
                     ) : null}
                   </HStack>
-
                   <AccordionIcon boxSize={6} />
                 </AccordionButton>
                 <AccordionPanel>
@@ -139,11 +134,13 @@ export default function FiltersSidebar() {
                       {allRegions
                         .filter((d) => d.label)
                         .map((region) => {
+                          // const isDisabled = countries.length
                           return (
                             <Checkbox
                               key={region.key}
                               value={region.key}
                               fontWeight={600}
+                              isDisabled={false}
                             >
                               {region.label}
                             </Checkbox>
@@ -153,6 +150,62 @@ export default function FiltersSidebar() {
                   </CheckboxGroup>
                 </AccordionPanel>
               </AccordionItem>
+
+              <AccordionItem>
+                <AccordionButton>
+                  <HStack gap={3}>
+                    <Heading as="h3" fontWeight={600}>
+                      {"Markets"}
+                    </Heading>
+                    {countries.length ? (
+                      <Center
+                        w={5}
+                        h={5}
+                        bg="gray.200"
+                        borderRadius="full"
+                        fontSize="xs"
+                        fontWeight={600}
+                      >
+                        {countries.length}
+                      </Center>
+                    ) : null}
+                  </HStack>
+                  <AccordionIcon boxSize={6} />
+                </AccordionButton>
+                <AccordionPanel>
+                  <CheckboxGroup
+                    defaultValue={[]}
+                    value={countries}
+                    onChange={(countries) => {
+                      setPostFilters({
+                        countries,
+                        // regions: [],
+                      })
+                    }}
+                  >
+                    <Stack gap={1}>
+                      {allCountries
+                        .filter((d) => d.label)
+                        .map((country) => {
+                          // const isDisabled =
+                          //  regions.length &&
+                          //  !regions.includes(country.region_id)
+                          return (
+                            <Checkbox
+                              key={country.key}
+                              value={country.label}
+                              fontWeight={600}
+                              isDisabled={false}
+                            >
+                              {country.label}
+                            </Checkbox>
+                          )
+                        })}
+                    </Stack>
+                  </CheckboxGroup>
+                </AccordionPanel>
+              </AccordionItem>
+
               {/* <AccordionItem>
                 <AccordionButton>
                   <Heading as="h3" fontWeight={600}>
@@ -292,7 +345,7 @@ export default function FiltersSidebar() {
                 colorScheme="gray"
                 onClick={() => {
                   setYear(["all"])
-                  setPostFilters({ regions: [], sectors: [] })
+                  setPostFilters({ regions: [], sectors: [], countries: [] })
                 }}
               >
                 {"Reset"}
