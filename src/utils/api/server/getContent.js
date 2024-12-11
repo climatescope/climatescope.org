@@ -14,7 +14,7 @@ export default async function getContent(name, format = "json") {
     "utf8"
   )
 
-  const converted = convertFromBuffer(contentRaw.split("").reverse().join(""))
+  const converted = `${convertFromBuffer(contentRaw.split("").reverse().join(""))}`.trim()
 
-  return format === "csv" ? csvParse(converted) : JSON.parse(converted)
+  return format === "csv" ? csvParse(converted.trim()) : JSON.parse(converted.trim())
 }
