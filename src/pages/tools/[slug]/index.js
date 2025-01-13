@@ -1,4 +1,5 @@
 import { Heading, Text, Box } from "@chakra-ui/react"
+import dynamic from "next/dynamic"
 
 import getPage from "@/utils/api/server/getPage"
 import getPages from "@/utils/api/server/getPages"
@@ -11,10 +12,28 @@ import {
   PageHeaderShareButton,
 } from "@/components/PageHeader"
 import SEO from "@/components/SEO"
-import ETSTool from "@/components/ETSTool"
-import CapGenTool from "@/components/CapGenTool"
-import RankOverTimeTool from "@/components/RankOverTimeTool"
-import GeographyComparison from "@/components/GeographyComparison"
+
+const ETSTool = dynamic(() => import("../../../components/ETSTool"), {
+  ssr: false,
+})
+
+const CapGenTool = dynamic(() => import("../../../components/CapGenTool"), {
+  ssr: false,
+})
+
+const RankOverTimeTool = dynamic(
+  () => import("../../../components/RankOverTimeTool"),
+  {
+    ssr: false,
+  }
+)
+
+const GeographyComparison = dynamic(
+  () => import("../../../components/GeographyComparison"),
+  {
+    ssr: false,
+  }
+)
 
 export default function ToolPage({ source, data }) {
   const { frontmatter } = source
@@ -63,11 +82,11 @@ export async function getStaticProps({ params }) {
   const results = await getContent("results.txt", "json")
   const data = {
     "rank-over-time": results,
-    "geography-comparison": results.filter(d => d.iso !== "ru").map(
-      ({ iso, market, tradebloc, region }) => {
+    "geography-comparison": results
+      .filter((d) => d.iso !== "ru")
+      .map(({ iso, market, tradebloc, region }) => {
         return { val: iso, label: market, tradebloc, region }
-      }
-    ),
+      }),
   }
   return { props: { source, data: data[slug] || null } }
 }
