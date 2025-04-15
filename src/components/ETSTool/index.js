@@ -59,6 +59,9 @@ export default function ETSTool() {
     ]).then((allDatasets) => {
       const onshoreWindByGeo = allDatasets[0].filter((d) => d.iso !== "cn")
       const solarByGeo = allDatasets[1].filter((d) => d.iso !== "cn")
+
+      console.log(solarByGeo)
+
       const etsParsed = allDatasets[2]
         .map((d) => {
           return {
@@ -317,8 +320,8 @@ function BubbleChart({ technology, region, year, data, domain }) {
     {
       label: {
         all: "Higher investment",
-        "solar-pv": "Higher investment",
-        "onshore-wind": "Higher investment",
+        "solar-pv": "More experience",
+        "onshore-wind": "More experience",
       },
       x: width - padding.right,
       y: height / 2,
@@ -327,8 +330,8 @@ function BubbleChart({ technology, region, year, data, domain }) {
     {
       label: {
         all: "Lower investment",
-        "solar-pv": "Lower investment",
-        "onshore-wind": "Lower investment",
+        "solar-pv": "Less experience",
+        "onshore-wind": "Less experience",
       },
       x: padding.left,
       y: height / 2,
@@ -371,7 +374,7 @@ function BubbleChart({ technology, region, year, data, domain }) {
           {labels.map(({ label, x, y, anchor }) => {
             return (
               <text
-                key={label}
+                key={label[technology.val]}
                 x={x}
                 y={y}
                 textAnchor={anchor}
@@ -388,7 +391,7 @@ function BubbleChart({ technology, region, year, data, domain }) {
           {labels.map(({ label, x, y, anchor }) => {
             return (
               <text
-                key={label}
+                key={label[technology.val]}
                 x={x}
                 y={y}
                 textAnchor={anchor}
@@ -416,7 +419,11 @@ function BubbleChart({ technology, region, year, data, domain }) {
                       <Divider borderColor="gray.500" />
                       <Stack spacing={0}>
                         <HStack spacing={5} justifyContent="space-between">
-                          <Box>{`Investment (${d.data.x_unit}):`}</Box>
+                          <Box>
+                            {technology.val === "all"
+                              ? `Investment (${d.data.x_unit}):`
+                              : d.data.x_unit}
+                          </Box>
                           <Box fontWeight={600}>
                             {(
                               Math.round(d.data.x_val * 100) / 100
