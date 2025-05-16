@@ -433,7 +433,11 @@ function BubbleChart({ technology, region, year, data, domain }) {
                         </HStack>
                         <HStack spacing={2} justifyContent="space-between">
                           <Box>
-                            {d.data.y_unit}
+                            {d.data.y_unit
+                              .toLowerCase()
+                              .includes("enabling environment score")
+                              ? "Enabling environment"
+                              : d.data.y_unit}
                             {":"}
                           </Box>
                           <Box fontWeight={600}>
