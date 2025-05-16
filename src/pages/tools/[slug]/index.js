@@ -67,9 +67,10 @@ export default function ToolPage({ source, data }) {
         {toolSlug === "geography-comparison" && (
           <GeographyComparison data={data} />
         )}
-        {toolSlug === "progress-tracker-fundamentals-investments" && (
-          <ETSTool />
-        )}
+        {[
+          "progress-tracker-fundamentals-investments",
+          "market-progress-tracker",
+        ].includes(toolSlug) && <ETSTool />}
         {toolSlug === "rank-over-time" && <RankOverTimeTool data={data} />}
       </Box>
     </>

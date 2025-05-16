@@ -218,6 +218,7 @@ export default function ETSTool() {
           domain={domain}
         />
         <Legend regions={regions} />
+        <Footnote />
       </Stack>
     </Container>
   )
@@ -320,8 +321,8 @@ function BubbleChart({ technology, region, year, data, domain }) {
     {
       label: {
         all: "Higher investment",
-        "solar-pv": "More experience",
-        "onshore-wind": "More experience",
+        "solar-pv": "Higher experience",
+        "onshore-wind": "Higher experience",
       },
       x: width - padding.right,
       y: height / 2,
@@ -330,8 +331,8 @@ function BubbleChart({ technology, region, year, data, domain }) {
     {
       label: {
         all: "Lower investment",
-        "solar-pv": "Less experience",
-        "onshore-wind": "Less experience",
+        "solar-pv": "Lower experience",
+        "onshore-wind": "Lower experience",
       },
       x: padding.left,
       y: height / 2,
@@ -442,8 +443,12 @@ function BubbleChart({ technology, region, year, data, domain }) {
                           </Box>
                         </HStack>
                         <HStack spacing={2} justifyContent="space-between">
-                          <Box>
+                          {/* <Box>
                             {`Renewables capacity (${d.data.r_unit})`}
+                            {":"}
+                          </Box> */}
+                          <Box>
+                            {`Capacity (MW)`}
                             {":"}
                           </Box>
                           <Box fontWeight={600}>
@@ -484,5 +489,15 @@ function BubbleChart({ technology, region, year, data, domain }) {
         </svg>
       ) : null}
     </Box>
+  )
+}
+
+function Footnote() {
+  return (
+    <Text color="gray.500">
+      {
+        "Adjusted axis for visualization. Bubble size refers to the country’s total installed capacity of the selected technology. ‘Enabling environment’ based on Climatescope 2024 “market enabling environment” score. ‘Experience’ refers to the share of overall capacity the technology accounts for in a country, its electrification rate, and share of private investment in the technology. MW refers to megawatts. 'All technologies' includes: Solar, Wind, Biomass and waste, Small hydro and Geothermal."
+      }
+    </Text>
   )
 }
