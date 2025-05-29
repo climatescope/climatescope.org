@@ -130,7 +130,11 @@ export default function ETSTool() {
   return (
     <Container>
       <Stack gap={10}>
-        <HStack gap={3}>
+        <HStack
+          gap={3}
+          flexDirection={["column", null, "row"]}
+          alignItems={["stretch", null, "center"]}
+        >
           <Menu>
             <MenuButton
               as={Button}
@@ -349,7 +353,7 @@ function BubbleChart({ technology, region, year, data, domain }) {
           height={height}
           style={{ width: "100%", height: "auto" }}
         >
-          <path
+          {/* <path
             d={`M${padding.left},${padding.top}L${width - padding.right},${
               padding.top
             }L${width - padding.right},${height - padding.bottom}L${
@@ -357,7 +361,7 @@ function BubbleChart({ technology, region, year, data, domain }) {
             },${height - padding.bottom}Z`}
             stroke={colors.gray[100]}
             fill="none"
-          />
+          /> */}
           <path
             d={`M${0},${height / 2}L${width},${height / 2}M${width / 2},${0}L${
               width / 2
