@@ -55,7 +55,7 @@ export default function ToolPage({ source, data }) {
           {!hideHeader && (
             <PageHeaderContent>
               <Heading fontSize="5xl">{frontmatter.title}</Heading>
-              <Text fontSize="2xl" color="gray.500">
+              <Text fontSize="2xl" lineHeight="base" color="gray.500">
                 {frontmatter.description}
               </Text>
             </PageHeaderContent>
